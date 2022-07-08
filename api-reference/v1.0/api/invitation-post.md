@@ -16,7 +16,7 @@ Use this API to create a new [invitation](../resources/invitation.md). Invitatio
 When creating a new invitation you have several options available:
 
 1. On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).
-2. When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.
+2. When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources they have been invited to.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -59,6 +59,7 @@ If successful, this method returns `201 Created` response code and [invitation](
 
 The following is an example of the request.
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -81,10 +82,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-invitation-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-invitation-post-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-invitation-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -100,6 +97,7 @@ Content-type: application/json
 ---
 
 
+
 ### Response
 
 The following is an example of the response. 
@@ -110,7 +108,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.invitation"
 } -->
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

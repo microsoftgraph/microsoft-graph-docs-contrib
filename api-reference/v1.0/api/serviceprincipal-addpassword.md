@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Add a strong password to a [servicePrincipal](../resources/serviceprincipal.md) object.
+Add a strong password or secret to a [servicePrincipal](../resources/serviceprincipal.md) object.
 
 ## Permissions
 

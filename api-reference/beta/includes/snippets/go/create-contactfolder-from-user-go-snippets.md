@@ -12,10 +12,7 @@ parentFolderId := "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA
 requestBody.SetParentFolderId(&parentFolderId)
 displayName := "Important contacts"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ContactFoldersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().ContactFolders().Post(options)
+result, err := graphClient.Me().ContactFolders().Post(requestBody)
 
 
 ```

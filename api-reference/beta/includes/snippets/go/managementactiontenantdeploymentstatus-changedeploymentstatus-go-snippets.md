@@ -18,10 +18,7 @@ managementTemplateId := "String"
 requestBody.SetManagementTemplateId(&managementTemplateId)
 status := "String"
 requestBody.SetStatus(&status)
-options := &msgraphsdk.ChangeDeploymentStatusRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().ChangeDeploymentStatus().Post(options)
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().ChangeDeploymentStatus().Post(requestBody)
 
 
 ```

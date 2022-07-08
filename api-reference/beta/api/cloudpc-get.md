@@ -1,6 +1,6 @@
 ---
 title: "Get cloudPC"
-description: "View the properties and relationships of a cloudPC object."
+description: "Read the properties and relationships of a specific cloudPC object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -38,7 +38,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 
 ## Optional query parameters
 
-This method supports `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -126,7 +126,7 @@ Content-Type: application/json
     "managedDeviceName": "A00002GI001",
     "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c8602ffff",
     "provisioningPolicyName": "Marketing provisioning policy",
-    "onPremisesConnectionName": "on-Premises connection for Marketing",
+    "onPremisesConnectionName": "Azure network connection for Marketing",
     "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cffff",
     "servicePlanName": "standard",
     "servicePlanType": "enterprise",

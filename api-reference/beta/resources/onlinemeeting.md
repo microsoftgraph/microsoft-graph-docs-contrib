@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Contains information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
-This resource supports subscribing to [change notifications](/graph/webhooks).
+This resource supports subscribing to [change notifications](/graph/webhooks). See [subscribe to online meetings](/graph/changenotifications-for-onlinemeeting) for more details.
 
 ## Methods
 
@@ -49,6 +49,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 | isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. |
 | joinWebUrl | String | The join URL of the online meeting. Read-only. |
 | joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. |
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting. This includes the organizer and the attendees. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
@@ -76,8 +77,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 
 > [!TIP]
 >
->- When creating or updating an online meeting with the value of **allowedPresenters** set to `roleIsPresenter`, include a full list of **attendees** with specified attendees' **role** set to `presenter` in the request body.
->- When creating or updating an online meeting with the value of **allowedPresenters** set to other values than `roleIsPresenter`, attendees' **role** will show as `null` in the response body.
+> When creating or updating an online meeting with **allowedPresenters** set to `roleIsPresenter`, include a full list of **attendees** with the specified attendees' **role** set to `presenter` in the request body.
 
 ### meetingChatMode values
 
@@ -113,25 +113,26 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 }-->
 ```json
 {
+  "allowAttendeeToEnableCamera": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowedPresenters": "String",
+  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
+  "allowTeamworkReactions": "Boolean",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "joinWebUrl": "String",
-  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
-  "startDateTime": "String (timestamp)",
-  "subject": "String",
-  "videoTeleconferenceId": "String",
-  "isEntryExitAnnounced": "Boolean",
-  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "String",
+  "id": "String (identifier)",  
   "isBroadcast": "Boolean",
-  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
-  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean",
-  "allowAttendeeToEnableMic": "Boolean",
-  "allowAttendeeToEnableCamera": "Boolean"
+  "isEntryExitAnnounced": "Boolean",
+  "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
+  "joinWebUrl": "String",
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
+  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
+  "startDateTime": "String (timestamp)",  
+  "subject": "String",
+  "videoTeleconferenceId": "String"
 }
 ```
 

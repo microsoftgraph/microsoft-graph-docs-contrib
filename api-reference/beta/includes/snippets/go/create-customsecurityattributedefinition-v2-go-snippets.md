@@ -24,10 +24,7 @@ type := "String"
 requestBody.SetType(&type)
 usePreDefinedValuesOnly := true
 requestBody.SetUsePreDefinedValuesOnly(&usePreDefinedValuesOnly)
-options := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(options)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(requestBody)
 
 
 ```

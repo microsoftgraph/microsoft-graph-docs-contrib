@@ -60,6 +60,12 @@ The following table shows the properties that are required when you create the a
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Valid values 1 to 99 Inherited from [aospDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-aospdeviceownercertificateprofilebase.md)|
+|subjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Certificate Subject Name Format. This collection can contain a maximum of 500 elements. Inherited from [aospDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-aospdeviceownercertificateprofilebase.md). Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
+|certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [aospDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-aospdeviceownercertificateprofilebase.md)|
+|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Scale for the Certificate Validity Period. Inherited from [aospDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-aospdeviceownercertificateprofilebase.md). Possible values are: `days`, `months`, `years`.|
+|extendedKeyUsages|[extendedKeyUsage](../resources/intune-shared-extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements. Inherited from [aospDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-aospdeviceownercertificateprofilebase.md)|
+|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Certificate Subject Alternative Name Type. This collection can contain a maximum of 500 elements. Inherited from [aospDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-aospdeviceownercertificateprofilebase.md). Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 |certificationAuthority|String|PKCS Certification Authority|
 |certificationAuthorityName|String|PKCS Certification Authority Name|
 |certificationAuthorityType|[deviceManagementCertificationAuthority](../resources/intune-deviceconfig-devicemanagementcertificationauthority.md)|Certification authority type. Possible values are: `notConfigured`, `microsoft`, `digiCert`.|
@@ -81,7 +87,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1663
+Content-length: 2075
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerPkcsCertificateProfile",
@@ -113,6 +119,18 @@ Content-length: 1663
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "renewalThresholdPercentage": 10,
+  "subjectNameFormat": "commonNameIncludingEmail",
+  "certificateValidityPeriodValue": 14,
+  "certificateValidityPeriodScale": "months",
+  "extendedKeyUsages": [
+    {
+      "@odata.type": "microsoft.graph.extendedKeyUsage",
+      "name": "Name value",
+      "objectIdentifier": "Object Identifier value"
+    }
+  ],
+  "subjectAlternativeNameType": "emailAddress",
   "certificationAuthority": "Certification Authority value",
   "certificationAuthorityName": "Certification Authority Name value",
   "certificationAuthorityType": "microsoft",
@@ -135,7 +153,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1835
+Content-Length: 2247
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerPkcsCertificateProfile",
@@ -170,6 +188,18 @@ Content-Length: 1835
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "renewalThresholdPercentage": 10,
+  "subjectNameFormat": "commonNameIncludingEmail",
+  "certificateValidityPeriodValue": 14,
+  "certificateValidityPeriodScale": "months",
+  "extendedKeyUsages": [
+    {
+      "@odata.type": "microsoft.graph.extendedKeyUsage",
+      "name": "Name value",
+      "objectIdentifier": "Object Identifier value"
+    }
+  ],
+  "subjectAlternativeNameType": "emailAddress",
   "certificationAuthority": "Certification Authority value",
   "certificationAuthorityName": "Certification Authority Name value",
   "certificationAuthorityType": "microsoft",

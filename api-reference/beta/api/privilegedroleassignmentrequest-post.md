@@ -4,7 +4,7 @@ description: "Create a privilegedroleassignmentrequest object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # Create privilegedRoleAssignmentRequest

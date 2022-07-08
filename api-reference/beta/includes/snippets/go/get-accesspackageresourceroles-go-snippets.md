@@ -11,11 +11,11 @@ requestParameters := &msgraphsdk.AccessPackageResourceRolesRequestBuilderGetQuer
 	Filter: "(originSystem%20eq%20'AadGroup'%20and%20accessPackageResource/id%20eq%20'a35bef72-a8aa-4ca3-af30-f6b2ece7208f')",
 	Expand: "accessPackageResource",
 }
-options := &msgraphsdk.AccessPackageResourceRolesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AccessPackageResourceRolesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 accessPackageCatalogId := "accessPackageCatalog-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).AccessPackageResourceRoles().Get(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).AccessPackageResourceRoles().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -14,11 +14,8 @@ description := "Connected organization new description"
 requestBody.SetDescription(&description)
 state := "configured"
 requestBody.SetState(&state)
-options := &msgraphsdk.ConnectedOrganizationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 connectedOrganizationId := "connectedOrganization-id"
-graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById(&connectedOrganizationId).Patch(options)
+graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById(&connectedOrganizationId).Patch(requestBody)
 
 
 ```

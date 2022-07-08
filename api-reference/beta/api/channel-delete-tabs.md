@@ -47,8 +47,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-#### Request
-The following is an example of the request.
+### Request
+The following is an example of a request.
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -56,8 +56,9 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
-#### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+
+### Response
+The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```

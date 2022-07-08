@@ -3,7 +3,7 @@ title: "List hostedContents"
 description: "Retrieve the list of chatMessageHostedContent objects from a message."
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.prod: microsoft-teams
 doc_type: "apiPageType"
 ---
 
@@ -181,6 +181,10 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-hostedcontentschannelmessage-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-hostedcontentschannelmessage-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

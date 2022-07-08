@@ -2,7 +2,7 @@
 title: "List children"
 description: "Get the terms from the children navigation property."
 author: vishriv
-ms.prod: "taxonomy"
+ms.prod: sites-and-lists
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---

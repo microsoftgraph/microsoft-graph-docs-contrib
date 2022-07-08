@@ -24,10 +24,7 @@ countryOrRegion := "United Kingdom"
 detail.SetCountryOrRegion(&countryOrRegion)
 postalCode := "E14 3TD"
 detail.SetPostalCode(&postalCode)
-options := &msgraphsdk.AddressesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Addresses().Post(options)
+result, err := graphClient.Me().Profile().Addresses().Post(requestBody)
 
 
 ```

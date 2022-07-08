@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.LanguagesRequestBuilderGetQueryParameters{
 	Filter: "isEnabled%20eq%20true",
 }
-options := &msgraphsdk.LanguagesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.LanguagesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Languages().Get(options)
+result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Languages().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

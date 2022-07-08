@@ -29,11 +29,8 @@ requestBody.SetDisplayName(&displayName)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.ediscovery.legalHold",
 }
-options := &msgraphsdk.LegalHoldsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHolds().Post(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHolds().Post(requestBody)
 
 
 ```

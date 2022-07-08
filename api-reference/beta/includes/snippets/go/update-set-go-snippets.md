@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewSet()
 description := "mySet"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.SetRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 setId := "set-id"
-graphClient.TermStore().SetsById(&setId).Patch(options)
+graphClient.TermStore().SetsById(&setId).Patch(requestBody)
 
 
 ```

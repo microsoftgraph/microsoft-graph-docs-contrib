@@ -30,11 +30,8 @@ transferTarget.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.invitationParticipantInfo",
 	"endpointType": "default",
 }
-options := &msgraphsdk.TransferRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(options)
+graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(requestBody)
 
 
 ```

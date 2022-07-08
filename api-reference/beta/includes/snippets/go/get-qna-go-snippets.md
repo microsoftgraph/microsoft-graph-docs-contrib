@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 qnaId := "qna-id"
-result, err := graphClient.Search().QnasById(&qnaId).Get(nil)
+result, err := graphClient.Search().QnasById(&qnaId).Get()
 
 
 ```

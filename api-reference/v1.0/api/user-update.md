@@ -88,6 +88,13 @@ In the request body, supply the values for relevant fields that should be update
 > - The following properties cannot be updated by an app with only application permissions: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
 > - To update the following properties, you must specify them in their own PATCH request, without including the other properties listed in the table above: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
 
+### Manage extensions and associated data
+
+Use this API to manage the directory, schema, and open extensions and their data for users, as follows:
+
++ Add, update and store data in the extensions for an existing user
++ For directory and schema extensions, remove any stored data by setting the value of the custom extension property to `null`. For open extensions, use the [Delete open extension](/graph/api/opentypeextension-delete) API.
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
@@ -262,7 +269,6 @@ Content-type: application/json
 ---
 
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -270,6 +276,78 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+
+
+### Example 4: Add or update the values of a schema extension for a user
+
+You can update or assign a value to a single property or all properties in the extension.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_schemaextension"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
+Content-type: application/json
+
+{
+    "ext55gb1l09_msLearnCourses": {
+        "courseType": "Admin"
+    }
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-schemaextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-schemaextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-schemaextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-schemaextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+>**Note:** To remove the value of the schema extension from the user object, set the property to `null`. For example:
+>
+>```http
+>PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
+>Content-type: application/json
+>
+>{
+>    "ext55gb1l09_msLearnCourses": null
+>}
+>```
+
+## See also
+
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

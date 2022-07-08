@@ -17,7 +17,7 @@ Retrieve the properties and relationships of a [callRecord](../resources/callrec
 
 There are two ways to get the **id** of a **callRecord**:
 
-* Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-beta) to the `/communications/callRecords` endpoint.
+* Subscribe to [change notifications](/graph/api/resources/webhooks) to the `/communications/callRecords` endpoint.
 * Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
 
 ## Permissions
@@ -247,7 +247,6 @@ Content-type: application/json
             }
         }
     ],
-    "sessions@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions(segments())",
     "sessions": [
         {
             "modalities": [
@@ -302,7 +301,6 @@ Content-type: application/json
                     }
                 }
             },
-            "segments@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions('e523d2ed-2966-4b6b-925b-754a88034cc5')/segments",
             "segments": [
                 {
                     "startDateTime": "2020-02-25T18:52:21.2169889Z",

@@ -12,11 +12,8 @@ comment := "comment-value"
 requestBody.SetComment(&comment)
 sendResponse := true
 requestBody.SetSendResponse(&sendResponse)
-options := &msgraphsdk.AcceptRequestBuilderPostOptions{
-	Body: requestBody,
-}
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Accept(event-id).Post(options)
+graphClient.Me().EventsById(&eventId).Accept(event-id).Post(requestBody)
 
 
 ```

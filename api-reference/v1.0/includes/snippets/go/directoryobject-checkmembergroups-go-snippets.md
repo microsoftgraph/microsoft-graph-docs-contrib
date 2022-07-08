@@ -15,11 +15,8 @@ requestBody.SetGroupIds( []String {
 	"f5484ab1-4d4d-41ec-a9b8-754b3957bfc7",
 	"c9103f26-f3cf-4004-a611-2a14e81b8f79",
 }
-options := &msgraphsdk.CheckMemberGroupsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 directoryObjectId := "directoryObject-id"
-result, err := graphClient.DirectoryObjectsById(&directoryObjectId).CheckMemberGroups(directoryObject-id).Post(options)
+result, err := graphClient.DirectoryObjectsById(&directoryObjectId).CheckMemberGroups(directoryObject-id).Post(requestBody)
 
 
 ```

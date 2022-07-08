@@ -26,11 +26,8 @@ authenticationConfiguration.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
 	"resourceId": "f604bd15-f785-4309-ad7c-6fad18ddb6cb",
 }
-options := &msgraphsdk.CustomAccessPackageWorkflowExtensionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 accessPackageCatalogId := "accessPackageCatalog-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).CustomAccessPackageWorkflowExtensions().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).CustomAccessPackageWorkflowExtensions().Post(requestBody)
 
 
 ```

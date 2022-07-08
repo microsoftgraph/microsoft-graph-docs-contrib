@@ -12,10 +12,7 @@ allowedAudiences := "organization"
 requestBody.SetAllowedAudiences(&allowedAudiences)
 countryCode := "NO"
 requestBody.SetCountryCode(&countryCode)
-options := &msgraphsdk.AccountRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Account().Post(options)
+result, err := graphClient.Me().Profile().Account().Post(requestBody)
 
 
 ```

@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Delete an [extensionProperty](../resources/extensionproperty.md).
+Delete an [extensionProperty](../resources/extensionproperty.md) object. You can delete only properties that aren't synced from on-premises active directory.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /applications/{id}/extensionProperties/{id}
+DELETE /applications/{application ObjectId}/extensionProperties/{id}
 ```
 
 ## Request headers

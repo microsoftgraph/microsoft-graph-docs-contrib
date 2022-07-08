@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AccessPackageResourceEnvironmentsRequestBuilderGetQueryParameters{
 	Filter: "originSystem%20eq%20'SharePointOnline'",
 }
-options := &msgraphsdk.AccessPackageResourceEnvironmentsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AccessPackageResourceEnvironmentsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceEnvironments().Get(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceEnvironments().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

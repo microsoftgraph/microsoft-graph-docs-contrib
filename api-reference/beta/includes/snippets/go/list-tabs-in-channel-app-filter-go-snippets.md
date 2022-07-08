@@ -11,12 +11,12 @@ requestParameters := &msgraphsdk.TabsRequestBuilderGetQueryParameters{
 	Expand: "teamsApp",
 	Filter: "teamsApp/id%20eq%20'com.microsoft.teamspace.tab.planner'",
 }
-options := &msgraphsdk.TabsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.TabsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 teamId := "team-id"
 channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Tabs().Get(options)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Tabs().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -23,28 +23,46 @@ scope.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetStageSettings( []AccessReviewStageSettings {
 	msgraphsdk.NewAccessReviewStageSettings(),
-	SetAdditionalData(map[string]interface{}{
-		"stageId": "1",
-		"durationInDays": ,
-		"recommendationsEnabled": false,
-		"decisionsThatWillMoveToNextStage":  []String {
-			"NotReviewed",
-			"Approve",
-		}
-		"reviewers":  []Object {
+stageId := "1"
+	SetStageId(&stageId)
+durationInDays := int32(2)
+	SetDurationInDays(&durationInDays)
+recommendationsEnabled := false
+	SetRecommendationsEnabled(&recommendationsEnabled)
+	SetDecisionsThatWillMoveToNextStage( []String {
+		"NotReviewed",
+		"Approve",
+	}
+	SetReviewers( []AccessReviewReviewerScope {
+		msgraphsdk.NewAccessReviewReviewerScope(),
+		SetAdditionalData(map[string]interface{}{
+			"query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
+			"queryType": "MicrosoftGraph",
 		}
 	}
 	msgraphsdk.NewAccessReviewStageSettings(),
-	SetAdditionalData(map[string]interface{}{
-		"stageId": "2",
-		"dependsOn":  []String {
-			"1",
+stageId := "2"
+	SetStageId(&stageId)
+	SetDependsOn( []String {
+		"1",
+	}
+durationInDays := int32(2)
+	SetDurationInDays(&durationInDays)
+recommendationsEnabled := true
+	SetRecommendationsEnabled(&recommendationsEnabled)
+	SetReviewers( []AccessReviewReviewerScope {
+		msgraphsdk.NewAccessReviewReviewerScope(),
+		SetAdditionalData(map[string]interface{}{
+			"query": "./manager",
+			"queryType": "MicrosoftGraph",
+			"queryRoot": "decisions",
 		}
-		"durationInDays": ,
-		"recommendationsEnabled": true,
-		"reviewers":  []Object {
-		}
-		"fallbackReviewers":  []Object {
+	}
+	SetFallbackReviewers( []AccessReviewReviewerScope {
+		msgraphsdk.NewAccessReviewReviewerScope(),
+		SetAdditionalData(map[string]interface{}{
+			"query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+			"queryType": "MicrosoftGraph",
 		}
 	}
 }
@@ -78,10 +96,7 @@ startDate := "2020-09-08T12:02:30.667Z"
 range.SetStartDate(&startDate)
 decisionHistoriesForReviewersEnabled := true
 settings.SetDecisionHistoriesForReviewersEnabled(&decisionHistoriesForReviewersEnabled)
-options := &msgraphsdk.DefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
 
 
 ```

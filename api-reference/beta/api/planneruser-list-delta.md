@@ -56,9 +56,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of changes to be applied to objects in the response body, and a Delta Sync link to follow.
 
-If the `deltaLink` that the caller uses is malformed, this endpoint will return HTTP 400.
+If the `@odata.deltaLink` that the caller uses is malformed, this endpoint will return HTTP 400.
 
-If the `deltaLink` that the caller uses is too old, this endpoint will return HTTP 410.
+If the `@odata.deltaLink` that the caller uses is too old, this endpoint will return HTTP 410.
 
 This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 

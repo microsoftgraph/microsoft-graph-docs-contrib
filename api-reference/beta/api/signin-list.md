@@ -17,6 +17,9 @@ Get a list of [signIn](../resources/signin.md) objects. The list contains the us
 
 The maximum and default page size is 1,000 objects and by default, the most recent sign-ins are returned first. Only sign-in events that occurred within the Azure Active Directory (Azure AD) [default retention period](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) are available.
 
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,6 +42,8 @@ In addition to the delegated permissions, the signed-in user needs to belong to 
 + Security Administrator
 + Security Operator
 + Security Reader
+
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -139,6 +144,7 @@ Content-type: application/json
       ],
       "ipAddress":"131.107.159.37",
       "clientAppUsed":"Browser",
+      "clientCredentialType": "certificate",
       "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
       "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
       "conditionalAccessStatus":"notApplied",
@@ -245,7 +251,7 @@ In this example, the response object shows the user signed in using only their p
   "name": "get_signins_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDisplayName,'Azure')&top=10
+GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDisplayName,'Azure')&$top=10
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signins-2-csharp-snippets.md)]

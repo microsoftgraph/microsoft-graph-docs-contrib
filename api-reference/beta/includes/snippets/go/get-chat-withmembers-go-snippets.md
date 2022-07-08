@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ChatRequestBuilderGetQueryParameters{
 	Expand: "members",
 }
-options := &msgraphsdk.ChatRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.ChatRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Get(options)
+result, err := graphClient.ChatsById(&chatId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

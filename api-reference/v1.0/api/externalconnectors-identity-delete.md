@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported                               |
+| Delegated (work or school account)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported                               |
-| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                 |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## HTTP request
 
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-identity-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-identity-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

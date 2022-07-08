@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve the list of [extensionProperty](../resources/extensionproperty.md) objects on an application.
+Retrieve the list of [extensionProperty](../resources/extensionproperty.md) objects on an [application](../resources/application.md).
 
 ## Permissions
 
@@ -28,12 +28,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /applications/{id}/extensionProperties
+GET /applications/{application ObjectId}/extensionProperties
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

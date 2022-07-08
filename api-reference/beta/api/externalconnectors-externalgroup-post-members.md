@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported                               |
-| Delegated (personal Microsoft account) | Not supported                               |
-| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Delegated (work or school account)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## HTTP request
 
@@ -102,6 +102,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroupmember-from--1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -167,6 +171,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroupmember-from--2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -229,6 +237,10 @@ Content-Type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroupmember-from--3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

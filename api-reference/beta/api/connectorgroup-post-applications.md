@@ -40,7 +40,7 @@ In the request body, supply a JSON representation of a [connectorGroup](../resou
 
 ## Response
 
-If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.
+If successful, this method returns `204 No Content` response code.
 
 ## Example
 ### Request

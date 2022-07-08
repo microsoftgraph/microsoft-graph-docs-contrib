@@ -17,11 +17,8 @@ notes.SetContent(&content)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"atAprovedLocation": true,
 }
-options := &msgraphsdk.ClockInRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().ClockIn(team-id).Post(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().ClockIn(team-id).Post(requestBody)
 
 
 ```

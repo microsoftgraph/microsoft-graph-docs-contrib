@@ -11,10 +11,7 @@ requestBody := msgraphsdk.NewServicePrincipalIdsRequestBody()
 requestBody.SetServicePrincipalIds( []String {
 	"9089a539-a539-9089-39a5-899039a58990",
 }
-options := &msgraphsdk.ConfirmCompromisedRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.IdentityProtection().RiskyServicePrincipals().ConfirmCompromised().Post(options)
+graphClient.IdentityProtection().RiskyServicePrincipals().ConfirmCompromised().Post(requestBody)
 
 
 ```

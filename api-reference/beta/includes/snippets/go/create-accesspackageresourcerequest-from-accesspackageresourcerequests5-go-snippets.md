@@ -16,10 +16,7 @@ accessPackageResource := msgraphsdk.NewAccessPackageResource()
 requestBody.SetAccessPackageResource(accessPackageResource)
 id := "354078e5-dbce-4894-8af4-0ab274d41662"
 accessPackageResource.SetId(&id)
-options := &msgraphsdk.AccessPackageResourceRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
 
 
 ```

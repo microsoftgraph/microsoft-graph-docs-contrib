@@ -42,11 +42,8 @@ isOnlineMeeting := true
 requestBody.SetIsOnlineMeeting(&isOnlineMeeting)
 onlineMeetingProvider := "teamsForBusiness"
 requestBody.SetOnlineMeetingProvider(&onlineMeetingProvider)
-options := &msgraphsdk.EventsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 calendarId := "calendar-id"
-result, err := graphClient.Me().CalendarsById(&calendarId).Events().Post(options)
+result, err := graphClient.Me().CalendarsById(&calendarId).Events().Post(requestBody)
 
 
 ```

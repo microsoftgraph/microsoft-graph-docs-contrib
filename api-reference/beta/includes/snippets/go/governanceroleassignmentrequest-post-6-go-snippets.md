@@ -28,11 +28,8 @@ startDateTime, err := time.Parse(time.RFC3339, "2018-05-12T23:53:55.327Z")
 schedule.SetStartDateTime(&startDateTime)
 endDateTime, err := time.Parse(time.RFC3339, "2018-08-10T23:53:55.327Z")
 schedule.SetEndDateTime(&endDateTime)
-options := &msgraphsdk.RoleAssignmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 privilegedAccessId := "privilegedAccess-id"
-result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(options)
+result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(requestBody)
 
 
 ```

@@ -1,5 +1,5 @@
 ---
-title: "List deleted items"
+title: "List deletedItems (directory objects)"
 description: "Retrieve a list of recently deleted items from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
@@ -7,13 +7,11 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List deleted items
+# List deletedItems (directory objects)
 
 Namespace: microsoft.graph
 
-Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).
-
-Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md), and [user](../resources/user.md) resources.
+Retrieve a list of recently deleted directory objects. Currently, this functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md), and [user](../resources/user.md) resources.
 
 >**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
 

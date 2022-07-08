@@ -42,10 +42,7 @@ externalId := "10002"
 requestBody.SetExternalId(&externalId)
 phone := "+1 (253) 555-0102"
 requestBody.SetPhone(&phone)
-options := &msgraphsdk.SchoolsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Education().Schools().Post(options)
+result, err := graphClient.Education().Schools().Post(requestBody)
 
 
 ```

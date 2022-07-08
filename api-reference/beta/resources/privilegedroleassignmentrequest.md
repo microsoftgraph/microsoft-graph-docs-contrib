@@ -4,7 +4,7 @@ description: "Represents the request for role assignment operations in Privilegd
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # privilegedRoleAssignmentRequest resource type (deprecated)

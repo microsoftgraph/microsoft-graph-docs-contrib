@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWiredNetworkConfiguration/rootCertificatesForServerValidation
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation
 ```
 
@@ -73,7 +74,7 @@ If successful, this method returns a `201 Created` response code and a [windows8
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWiredNetworkConfiguration/rootCertificatesForServerValidation
 Content-type: application/json
 Content-length: 1198
 

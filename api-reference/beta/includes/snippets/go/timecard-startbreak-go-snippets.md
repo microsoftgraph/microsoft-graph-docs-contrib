@@ -17,12 +17,9 @@ notes.SetContent(&content)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"atAprovedLocation": true,
 }
-options := &msgraphsdk.StartBreakRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
 timeCardId := "timeCard-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).StartBreak(team-id, timeCard-id).Post(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).StartBreak(team-id, timeCard-id).Post(requestBody)
 
 
 ```

@@ -236,7 +236,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_serviceprincipals_transitivememberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')

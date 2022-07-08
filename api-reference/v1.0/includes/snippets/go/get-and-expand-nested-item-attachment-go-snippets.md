@@ -10,12 +10,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AttachmentRequestBuilderGetQueryParameters{
 	Expand: "microsoft.graph.itemattachment/item",
 }
-options := &msgraphsdk.AttachmentRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AttachmentRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 messageId := "message-id"
 attachmentId := "attachment-id"
-result, err := graphClient.Me().MessagesById(&messageId).AttachmentsById(&attachmentId).Get(options)
+result, err := graphClient.Me().MessagesById(&messageId).AttachmentsById(&attachmentId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -2,10 +2,11 @@ name: Reference
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
-  - name: Get auth tokens
+  - name: Authentication and authorization
     items:
     - name: Overview
       href: /graph/auth/index?context=graph/api/1.0
+      displayName: authentication, authorization, authenticate, authorize
     - name: Basics
       href: /graph/auth/auth-concepts?context=graph/api/1.0
     - name: Register your app
@@ -20,42 +21,79 @@ items:
       href: /graph/auth-cloudsolutionprovider?context=graph/api/1.0
     - name: Limit mailbox access
       href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
+    - name: Resolve authorization errors
+      href: /graph/resolve-auth-errors?context=graph/api/1.0
   - name: Use the API
     items:
     - name: Overview
       href: /graph/use-the-api?context=graph/api/1.0
+      displayName: Microsoft Graph API, API, Microsoft Graph REST API, REST API
+    - name: Access data and methods
+      href: /graph/traverse-the-graph?context=graph/api/1.0
     - name: Paging
       href: /graph/paging?context=graph/api/1.0
-    - name: Use query parameters
-      href: /graph/query-parameters?context=graph/api/1.0
+    - name: Query parameters
       items:
-      - name: Use the search query parameter
-        href: /graph/search-query-parameter?context=graph/api/1.0
-      - name: Advanced query capabilities
-        href: /graph/aad-advanced-queries?context=graph/api/1.0
+        - name: Use query parameters
+          href: /graph/query-parameters?context=graph/api/1.0
+          displayName: OData query parameters, OData
+        - name: Use the search query parameter
+          href: /graph/search-query-parameter?context=graph/api/1.0
+        - name: Advanced query capabilities
+          href: /graph/aad-advanced-queries?context=graph/api/1.0
+        - name: Optimize requests with query parameters
+          href: /learn/modules/optimize-data-usage
     - name: Batching
-      displayName: Batch requests
       href: /graph/json-batching?context=graph/api/1.0
+      displayName: Batch request
     - name: Throttling
-      href: /graph/throttling?context=graph/api/1.0
+      items:
+        - name: Overview
+          href: /graph/throttling?context=graph/api/1.0
+          displayName: throttling
+        - name: Service-specific limits
+          href: /graph/throttling-limits?context=graph/api/1.0
+          displayName: throttling
+        - name: Optimize network traffic
+          href: /learn/modules/optimize-network-traffic          
+          displayName: throttling
     - name: Change notifications
-      displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
         href: /graph/api/resources/webhooks?context=graph/api/1.0
-      - name: Tutorial
+        displayName: change notifications, WebHooks, set up notifications for changes in resource data
+      - name: Change notifications tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing change notifications
-        href: /graph/webhooks-lifecycle
+        href: /graph/webhooks-lifecycle?context=graph/api/1.0
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/1.0
-      - name: Get change notifications for chat and channel messages
-        href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
+      - name: Get notifications delivered different ways (preview)
+        href: /graph/change-notifications-delivery?context=graph/api/1.0
+      - name: Change notifications for cloud printing
+        href: /graph/universal-print-webhook-notifications?context=graph/api/1.0
+      - name: Change notifications for Microsoft Teams resources
+        items:
+          - name: Notification types and payloads
+            href: /graph/teams-change-notification-in-microsoft-teams-overview?context=graph/api/1.0
+            displayName: change notifications, Teams, Microsoft Teams
+          - name: Teams and channels
+            href: /graph/teams-changenotifications-team-and-channel?context=graph/api/1.0
+          - name: Team and channel membership
+            href: /graph/teams-changenotifications-teamMembership?context=graph/api/1.0
+          - name: Chat and channel messages
+            href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
+          - name: Chat
+            href: /graph/teams-changenotifications-chat?context=graph/api/1.0
+          - name: Chat membership
+            href: /graph/teams-changenotifications-chatMembership?context=graph/api/1.0
+      - name: Change notifications for Outlook resources
+        href: /graph/outlook-change-notifications-overview?context=graph/api/1.0
     - name: Change tracking
-      displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
       items:
       - name: Overview
         href: /graph/delta-query-overview?context=graph/api/1.0
+        displayName: Delta query, track changes, change tracking
       - name: Get changes to events (example)
         href: /graph/delta-query-events?context=graph/api/1.0
       - name: Get changes to groups (example)
@@ -65,18 +103,13 @@ items:
       - name: Get changes to users (example)
         href: /graph/delta-query-users?context=graph/api/1.0
     - name: Add custom data
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-      items:
-      - name: Overview
-        href: /graph/extensibility-overview?context=graph/api/1.0
-      - name: Use open extensions (example)
-        href: /graph/extensibility-open-users?context=graph/api/1.0
-      - name: Use schema extensions (example)
-        href: /graph/extensibility-schema-groups?context=graph/api/1.0
+      displayName: directory extensions, schema extensions, open extensions, extension attributes
+      href: /graph/extensibility-overview?context=graph/api/1.0
     - name: Use Graph Explorer
       items:
       - name: Get started
         href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/1.0
+        displayName: Graph Explorer, try the API, try API
       - name: Work with Graph Explorer
         href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
     - name: Use Postman
@@ -84,13 +117,12 @@ items:
     - name: System messages
       href: /graph/system-messages?context=graph/api/1.0
   - name: Migrate
-    expanded: false
     items:
     - name: Azure AD Graph
-      displayname: Migration, Azure AD Graph
       items:
-      - name: Overview
-        href: /graph/migrate-azure-ad-graph-overview
+      - name: Migrate Azure AD Graph apps
+        href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
+        displayName: Migration, Azure AD Graph, migrate
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
       - name: "1: Review differences"
@@ -119,16 +151,28 @@ items:
           href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/1.0
       - name: "4: Deploy, test, and extend"
         href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
-      - name: Migration FAQ
+      - name: Azure AD Graph migration FAQ
         href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
+        displayName: migrate, frequently asked questions
       - name: Configure Azure AD Graph permissions
         href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
+    - name: Exchange Web Services
+      items:
+        - name: Migrate EWS apps
+          href: /graph/migrate-exchange-web-services-overview?context=graph/api/1.0
+          displayName: Migration, Exchange Web Services, EWS, migrate
+        - name: Authentication
+          href: /graph/migrate-exchange-web-services-authentication?context=graph/api/1.0
+        - name: API mapping
+          href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/1.0
   - name: Use SDKs
     items:
       - name: Overview
         href: /graph/sdks/sdks-overview?context=graph/api/1.0
-      - name: Install the SDK
+        displayName: SDK, SDKs, Microsoft Graph SDK
+      - name: Install an SDK
         href: /graph/sdks/sdk-installation?context=graph/api/1.0
+        displayName: install SDK, install SDKs, installation
       - name: Create a client
         href: /graph/sdks/create-client?context=graph/api/1.0
       - name: Customize a client
@@ -147,25 +191,29 @@ items:
         href: /graph/sdks/use-beta?context=graph/api/1.0
       - name: Use PowerShell
         items:
-          - name: Installation
-            href: /graph/powershell/installation?context=graph/api/1.0
+          - name: PowerShell overview
+            href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
+          - name: Install PowerShell SDK
+            href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
           - name: Get started
-            href: /graph/powershell/get-started?context=graph/api/1.0
-          - name: Navigating the SDK
-            href: /graph/powershell/navigating?context=graph/api/1.0
+            href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
+          - name: Navigate the PowerShell SDK
+            href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
           - name: App-only authentication
-            href: /graph/powershell/app-only?context=graph/api/1.0
+            href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
   - name: Use the toolkit
     items:
-      - name: Toolkit overview
+      - name: Overview
         href: /graph/toolkit/overview?context=graph/api/1.0
+        displayName: Microsoft Graph Toolkit, toolkit
       - name: Get started
         items:
-          - name: Overview
+          - name: Get started
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
-          - name: /graph/toolkit for React
+            displayName: Microsoft Graph Toolkit, toolkit
+          - name: Toolkit for React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
-          - name: /graph/toolkit for SPFx
+          - name: Toolkit for SPFx
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
       - name: Build your first app
         items:
@@ -189,6 +237,7 @@ items:
         items:
           - name: Using the providers
             href: /graph/toolkit/providers/providers?context=graph/api/1.0
+            displayName: Microsoft Graph Toolkit providers, toolkit provider
           - name: MSAL provider
             href: /graph/toolkit/providers/msal?context=graph/api/1.0
           - name: MSAL2 provider
@@ -199,6 +248,8 @@ items:
             href: /graph/toolkit/providers/teams?context=graph/api/1.0
           - name: Teams MSAL2 provider
             href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
+          - name: TeamsFx provider
+            href: /graph/toolkit/providers/teamsfx?context=graph/api/1.0
           - name: Electron provider
             href: /graph/toolkit/providers/electron?context=graph/api/1.0
           - name: Proxy provider
@@ -209,6 +260,7 @@ items:
         items:
           - name: Login
             href: /graph/toolkit/components/login?context=graph/api/1.0
+            displayName: Microsoft Graph toolkit components, toolkit component
           - name: Get
             href: /graph/toolkit/components/get?context=graph/api/1.0
           - name: Person
@@ -249,17 +301,21 @@ items:
     items:
     - name: Best practices
       href: /graph/best-practices-concept?context=graph/api/1.0
+      displayName: Microsoft Graph, Best practices for working with Microsoft Graph
     - name: Known issues
       href: /graph/known-issues?context=graph/api/1.0
-    - name: Changelog
+      displayName: Microsoft Graph, Known issues with Microsoft Graph
+    - name: API changelog
       href: https://developer.microsoft.com/graph/changelog
     - name: Errors
       href: /graph/errors?context=graph/api/1.0
-  - name: v1.0 reference
+      displayName: Microsoft Graph error responses and error resource types
+  - name: API v1.0 reference
     expanded: true
     items:
     - name: Overview
       href: overview.md
+      displayName: Microsoft Graph REST API v1.0 reference
     - name: Users
       items:
       - name: Overview
@@ -361,11 +417,11 @@ items:
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
         - name: List deleted users
-          href: api/directory-deleteditems-list.md 
+          href: api/directory-deleteditems-list.md
         - name: Get deleted user
           href: api/directory-deleteditems-get.md
         - name: Permanently delete user
-          href: api/directory-deleteditems-delete.md       
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted user
           href: api/directory-deleteditems-restore.md
       - name: Drive
@@ -510,7 +566,7 @@ items:
           href: api/chat-list.md
       - name: To-do tasks
         items:
-        - name: Task
+        - name: To-do task
           href: resources/todotask.md
         - name: Create task
           href: api/todotasklist-post-tasks.md
@@ -727,13 +783,13 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md  
+          href: api/directory-deleteditems-user-owned.md
         - name: Get deleted group
-          href: api/directory-deleteditems-get.md 
+          href: api/directory-deleteditems-get.md
         - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md     
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted group
-          href: api/directory-deleteditems-restore.md        
+          href: api/directory-deleteditems-restore.md
       - name: Drive
         href: resources/drive.md
         items:
@@ -838,28 +894,15 @@ items:
         - name: Certificates and secrets
           items:
           - name: Add password
+            displayName: Add secrets
             href: api/application-addpassword.md
           - name: Remove password
+            displayName: Remove secrets
             href: api/application-removepassword.md
           - name: Add key
             href: api/application-addkey.md
           - name: Remove key
             href: api/application-removekey.md
-        - name: Extensions
-          items:
-          - name: Extension property
-            href: resources/extensionproperty.md
-            items:
-            - name: List
-              href: api/application-list-extensionproperty.md
-            - name: Create
-              href: api/application-post-extensionproperty.md
-            - name: Get
-              href: api/extensionproperty-get.md
-            - name: Delete
-              href: api/extensionproperty-delete.md
-            - name: Get available extension properties
-              href: api/directoryobject-getavailableextensionproperties.md
         - name: Owners
           items:
           - name: List
@@ -931,15 +974,17 @@ items:
         - name: Certificates and secrets
           items:
           - name: Add password
+            displayName: Add secrets
             href: api/serviceprincipal-addpassword.md
           - name: Remove password
+            displayName: Remove secrets
             href: api/serviceprincipal-removepassword.md
           - name: Add key
             href: api/serviceprincipal-addkey.md
           - name: Remove key
             href: api/serviceprincipal-removekey.md
           - name: Add token signing certificate
-            href: api/serviceprincipal-addtokensigningcertificate.md  
+            href: api/serviceprincipal-addtokensigningcertificate.md
         - name: Delegated permission grants
           items:
           - name: List
@@ -1315,7 +1360,7 @@ items:
           - name: Mute participant
             href: api/participant-mute.md
           - name: Invite participants
-            href: api/participant-invite.md          
+            href: api/participant-invite.md
           - name: Start hold music
             href: api/participant-startholdmusic.md
           - name: Stop hold music
@@ -4331,7 +4376,7 @@ items:
           href: api/educationclass-update.md
         - name: Delete class
           href: api/educationclass-delete.md
-        - name: Get changes to classes
+        - name: Get delta
           href: api/educationclass-delta.md
         - name: List teachers
           href: api/educationclass-list-teachers.md
@@ -4379,9 +4424,9 @@ items:
         - name: List taught classes
           href: api/educationuser-list-taughtclasses.md
         - name: Create rubric
-          href: api/educationuser-post-rubrics.md       
+          href: api/educationuser-post-rubrics.md
         - name: List assignments
-          href: api/educationuser-list-assignments.md          
+          href: api/educationuser-list-assignments.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -4419,6 +4464,8 @@ items:
           href: api/educationassignment-put-rubric.md
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
+        - name: Get delta
+          href: api/educationassignment-delta.md
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
@@ -4442,6 +4489,8 @@ items:
           href: api/educationcategory-get.md
         - name: Delete
           href: api/educationcategory-delete.md
+        - name: Get delta
+          href: api/educationcategory-delta.md
       - name: Rubric
         href: resources/educationrubric.md
         items:
@@ -4481,11 +4530,11 @@ items:
         - name: Return submission
           href: api/educationsubmission-return.md
         - name: Reassign submission
-          href: api/educationsubmission-reassign.md          
+          href: api/educationsubmission-reassign.md
       - name: Outcome
         items:
         - name: Outcome
-          href: resources/educationoutcome.md     
+          href: resources/educationoutcome.md
         - name: Feedback outcome type
           href: resources/educationfeedbackoutcome.md
         - name: Points outcome type
@@ -4496,6 +4545,22 @@ items:
           href: api/educationoutcome-update.md
     - name: Extensions
       items:
+      - name: Overview
+        href: /graph/extensibility-overview?context=graph/api/1.0&preserve-view=true
+      - name: Directory extensions
+        displayname: Groups, Users, Applications, Organization, Devices
+        href: resources/extensionproperty.md
+        items:
+        - name: List
+          href: api/application-list-extensionproperty.md
+        - name: Create
+          href: api/application-post-extensionproperty.md
+        - name: Get
+          href: api/extensionproperty-get.md
+        - name: Delete
+          href: api/extensionproperty-delete.md
+        - name: Get available extension properties
+          href: api/directoryobject-getavailableextensionproperties.md
       - name: Open extensions
         href: resources/opentypeextension.md
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
@@ -4636,9 +4701,9 @@ items:
           href: resources/administrativeunit.md
           items:
           - name: List
-            href: api/administrativeunit-list.md
+            href: api/directory-list-administrativeunits.md
           - name: Create
-            href: api/administrativeunit-post-administrativeunits.md
+            href: api/directory-post-administrativeunits.md
           - name: Get
             href: api/administrativeunit-get.md
           - name: Update
@@ -4653,13 +4718,13 @@ items:
             href: api/administrativeunit-get-members.md
           - name: Remove a member
             href: api/administrativeunit-delete-members.md
-          - name: Add a scoped-role administrator
+          - name: Assign a role with scope
             href: api/administrativeunit-post-scopedrolemembers.md
-          - name: List scoped-role administrators
+          - name: List role assignments with scope
             href: api/administrativeunit-list-scopedrolemembers.md
-          - name: Get a scoped-role administrator
+          - name: Get a role assignment with scope
             href: api/administrativeunit-get-scopedrolemembers.md
-          - name: Remove a scoped-role administrator
+          - name: Remove a role assignment with scope
             href: api/administrativeunit-delete-scopedrolemembers.md
         - name: BitLocker recovery key
           href: resources/bitlockerrecoverykey.md
@@ -4717,9 +4782,9 @@ items:
             href: api/device-delete-registeredowners.md
           - name: Remove registered user
             href: api/device-delete-registeredusers.md
-          - name: List device groups
+          - name: List device memberships
             href: api/device-list-memberof.md
-          - name: List device transitive groups
+          - name: List device transitive memberships
             href: api/device-list-transitivememberof.md
           - name: List registered owners
             href: api/device-list-registeredowners.md
@@ -4775,6 +4840,12 @@ items:
           items:
           - name: List domains
             href: api/domain-list.md
+          - name: List domain name references
+            href: api/domain-list-domainnamereferences.md
+          - name: List service configuration records
+            href: api/domain-list-serviceconfigurationrecords.md
+          - name: List verification DNS records
+            href: api/domain-list-verificationdnsrecords.md
           - name: Create domain
             href: api/domain-post-domains.md
           - name: Delete domain
@@ -4855,15 +4926,112 @@ items:
             - name: Get
               href: api/unifiedroleassignment-get.md
             - name: Delete
-              href: api/unifiedroleassignment-delete.md            
+              href: api/unifiedroleassignment-delete.md
+          - name: Privileged identity management
+            displayName: Privileged identity management, PIM
+            href: resources/privilegedidentitymanagementv3-overview.md
+            items:
+            - name: Role assignments
+              items:
+                - name: Schedule requests
+                  href: resources/unifiedroleassignmentschedulerequest.md
+                  items:
+                    - name: List
+                      href: api/rbacapplication-list-roleassignmentschedulerequests.md
+                    - name: Create
+                      href: api/rbacapplication-post-roleassignmentschedulerequests.md
+                    - name: Get
+                      href: api/unifiedroleassignmentschedulerequest-get.md
+                    - name: Cancel
+                      href: api/unifiedroleassignmentschedulerequest-cancel.md
+                    - name: Filter by current user
+                      href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                - name: Schedules
+                  href: resources/unifiedroleassignmentschedule.md
+                  items:
+                    - name: List
+                      href: api/rbacapplication-list-roleassignmentschedules.md
+                    - name: Get
+                      href: api/unifiedroleassignmentschedule-get.md
+                    - name: Filter by current user
+                      href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+                - name: Schedule instances
+                  href: resources/unifiedroleassignmentscheduleinstance.md
+                  items:
+                    - name: List
+                      href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+                    - name: Get
+                      href: api/unifiedroleassignmentscheduleinstance-get.md
+                    - name: Filter by current user
+                      href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+            - name: Role eligibility
+              items:
+              - name: Schedule requests
+                href: resources/unifiedroleeligibilityschedulerequest.md
+                items:
+                  - name: List
+                    href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+                  - name: Create
+                    href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+                  - name: Get
+                    href: api/unifiedroleeligibilityschedulerequest-get.md
+                  - name: Cancel
+                    href: api/unifiedroleeligibilityschedulerequest-cancel.md
+                  - name: Filter by current user
+                    href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+              - name: Schedules
+                href: resources/unifiedroleeligibilityschedule.md
+                items:
+                  - name: List
+                    href: api/rbacapplication-list-roleeligibilityschedules.md
+                  - name: Get
+                    href: api/unifiedroleeligibilityschedule-get.md
+                  - name: Filter by current user
+                    href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+              - name: Schedule instances
+                href: resources/unifiedroleeligibilityscheduleinstance.md
+                items:
+                  - name: List
+                    href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+                  - name: Get
+                    href: api/unifiedroleeligibilityscheduleinstance-get.md
+                  - name: Filter by current user
+                    href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+            - name: Role management policies
+              items:
+              - name: Policies and rules
+                displayName: role management policies, Azure AD role settings
+                href: resources/unifiedrolemanagementpolicy.md
+                items:
+                - name: List
+                  href: api/policyroot-list-rolemanagementpolicies.md
+                - name: Get
+                  href: api/unifiedrolemanagementpolicy-get.md
+                - name: List rules
+                  href: api/unifiedrolemanagementpolicy-list-rules.md
+                - name: Get rule
+                  href: api/unifiedrolemanagementpolicyrule-get.md
+                - name: Update rule
+                  href: api/unifiedrolemanagementpolicyrule-update.md
+              - name: Policy assignments
+                displayName: role managemement policy assignments
+                href: resources/unifiedrolemanagementpolicyassignment.md
+                items:
+                - name: List
+                  href: api/policyroot-list-rolemanagementpolicyassignments.md
+                - name: Get
+                  href: api/unifiedrolemanagementpolicyassignment-get.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
           items:
           - name: Overview
             href: resources/authenticationmethods-overview.md
-          - name: List all methods
-            href: api/authentication-list-methods.md
+          - name: Authentication methods
+            href: resources/authenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-methods.md
           - name: FIDO2 security keys
             href: resources/fido2authenticationmethod.md
             items:
@@ -4891,17 +5059,28 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-        - name: Certificate-based auth configuration
-          href: resources/certificatebasedauthconfiguration.md
-          items:
-          - name: List
-            href: api/certificatebasedauthconfiguration-list.md
-          - name: Create
-            href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-          - name: Get
-            href: api/certificatebasedauthconfiguration-get.md
-          - name: Delete
-            href: api/certificatebasedauthconfiguration-delete.md
+          - name: Temporary Access Pass
+            href: resources/temporaryaccesspassauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-temporaryaccesspassmethods.md
+            - name: Create
+              href: api/authentication-post-temporaryaccesspassmethods.md
+            - name: Get
+              href: api/temporaryaccesspassauthenticationmethod-get.md
+            - name: Delete
+              href: api/temporaryaccesspassauthenticationmethod-delete.md
+          - name: Certificate-based auth configuration
+            href: resources/certificatebasedauthconfiguration.md
+            items:
+            - name: List
+              href: api/certificatebasedauthconfiguration-list.md
+            - name: Create
+              href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+            - name: Get
+              href: api/certificatebasedauthconfiguration-get.md
+            - name: Delete
+              href: api/certificatebasedauthconfiguration-delete.md
         - name: Conditional access
           items:
           - name: Policies
@@ -4958,6 +5137,42 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
+        - name: Cross-tenant access
+          items:
+          - name: Overview
+            href: resources/crosstenantaccesspolicy-overview.md
+          - name: Policy
+            items:
+            - name: Cross-tenant access policy
+              href: resources/crosstenantaccesspolicy.md
+            - name: Get
+              href: api/crosstenantaccesspolicy-get.md
+            - name: Update
+              href: api/crosstenantaccesspolicy-update.md
+          - name: Default settings
+            items:
+            - name: Cross-tenant access default settings
+              href: resources/crosstenantaccesspolicyconfigurationdefault.md
+            - name: Get
+              href: api/crosstenantaccesspolicyconfigurationdefault-get.md
+            - name: Update
+              href: api/crosstenantaccesspolicyconfigurationdefault-update.md
+            - name: Reset to system default
+              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+          - name: Partner settings
+            items:
+            - name: Cross-tenant access partner settings
+              href: resources/crosstenantaccesspolicyconfigurationpartner.md
+            - name: List
+              href: api/crosstenantaccesspolicy-list-partners.md
+            - name: Create
+              href: api/crosstenantaccesspolicy-post-partners.md
+            - name: Get
+              href: api/crosstenantaccesspolicyconfigurationpartner-get.md
+            - name: Update
+              href: api/crosstenantaccesspolicyconfigurationpartner-update.md
+            - name: Delete
+              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -5007,24 +5222,56 @@ items:
           items:
           - name: Identity provider base
             href: resources/identityproviderbase.md
-          - name: Built-in identity provider
-            href: resources/builtinidentityprovider.md
-          - name: Social identity provider
-            href: resources/socialidentityprovider.md
-          - name: Apple identity provider
-            href: resources/applemanagedidentityprovider.md
-          - name: List
-            href: api/identitycontainer-list-identityproviders.md
-          - name: Create
-            href: api/identitycontainer-post-identityproviders.md
-          - name: Get
-            href: api/identityproviderbase-get.md
-          - name: Update
-            href: api/identityproviderbase-update.md
-          - name: Delete
-            href: api/identityproviderbase-delete.md
-          - name: List available provider types
-            href: api/identityproviderbase-availableprovidertypes.md
+          - name: External identities
+            items:
+            - name: Built-in identity provider type
+              href: resources/builtinidentityprovider.md
+            - name: Social identity provider type
+              href: resources/socialidentityprovider.md
+            - name: Apple identity provider type
+              href: resources/applemanagedidentityprovider.md
+            - name: List available identity providers
+              href: api/identityproviderbase-availableprovidertypes.md
+            - name: List configured identity providers
+              href: api/identitycontainer-list-identityproviders.md
+            - name: Create identity provider
+              href: api/identitycontainer-post-identityproviders.md
+            - name: Get identity provider
+              href: api/identityproviderbase-get.md
+            - name: Update identity provider
+              href: api/identityproviderbase-update.md
+            - name: Delete identity provider
+              href: api/identityproviderbase-delete.md
+          - name: Domain-based external identities
+            items:
+            - name: SAML/Ws-Fed external domain federation
+              href: resources/samlorwsfedexternaldomainfederation.md
+            - name: List federated configurations
+              href: api/samlorwsfedexternaldomainfederation-list.md
+            - name: Get federated configuration
+              href: api/samlorwsfedexternaldomainfederation-get.md
+            - name: Create federated configuration
+              href: api/samlorwsfedexternaldomainfederation-post.md
+            - name: Update federated configuration
+              href: api/samlorwsfedexternaldomainfederation-update.md
+            - name: Delete federated configuration
+              href: api/samlorwsfedexternaldomainfederation-delete.md
+            - name: List domains
+              href: api/samlorwsfedexternaldomainfederation-list-domains.md
+            - name: Create externalDomainName
+              href: api/samlorwsfedexternaldomainfederation-post-domains.md
+          - name: Federation with Azure AD
+            items:
+            - name: Federated domain configuration
+              href: resources/internaldomainfederation.md
+            - name: Get
+              href: api/internaldomainfederation-get.md
+            - name: Create
+              href: api/domain-post-federationconfiguration.md
+            - name: Update
+              href: api/internaldomainfederation-update.md
+            - name: Delete
+              href: api/internaldomainfederation-delete.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type
@@ -5120,6 +5367,15 @@ items:
                 href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Temporary Access Pass policy
+              href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
             - name: Email policy
               href: resources/emailauthenticationmethodconfiguration.md
               items:
@@ -5353,18 +5609,18 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List contacted reviewers
               href: api/accessreviewinstance-list-contactedreviewers.md
-            - name: Access review instance decision item
-              displayName: access review decisions
-              href: resources/accessreviewinstancedecisionitem.md
-              items:
-              - name: Get
-                href: api/accessreviewinstancedecisionitem-get.md
-              - name: List
-                href: api/accessreviewinstance-list-decisions.md
-              - name: Update
-                href: api/accessreviewinstancedecisionitem-update.md
-              - name: Filter by current user
-                href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+          - name: Access review instance decision item
+            displayName: access review decisions
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+            - name: Get
+              href: api/accessreviewinstancedecisionitem-get.md
+            - name: List
+              href: api/accessreviewinstance-list-decisions.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
+            - name: Filter by current user
+              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
           - name: Access review history definition
             href: resources/accessreviewhistorydefinition.md
             items:
@@ -5376,7 +5632,7 @@ items:
               href: api/accessreviewset-post-historydefinitions.md
             - name: Access review history instance
               href: resources/accessreviewhistoryinstance.md
-              items: 
+              items:
               - name: List
                 href: api/accessreviewhistorydefinition-list-instances.md
               - name: Generate download URI
@@ -5444,7 +5700,7 @@ items:
             - name: Get
               href: api/approval-get.md
             - name: Filter by current user
-              href: api/approval-filterbycurrentuser.md 
+              href: api/approval-filterbycurrentuser.md
             - name: Approval stage
               items:
               - name: Approval stage
@@ -5515,6 +5771,19 @@ items:
               href: api/entitlementmanagementsettings-get.md
             - name: Update
               href: api/entitlementmanagementsettings-update.md
+          - name: Access package assignment policy
+            href: resources/accesspackageassignmentpolicy.md
+            items:
+            - name: List
+              href: api/entitlementmanagement-list-assignmentpolicies.md
+            - name: Create
+              href: api/entitlementmanagement-post-assignmentpolicies.md
+            - name: Get
+              href: api/accesspackageassignmentpolicy-get.md
+            - name: Update
+              href: api/accesspackageassignmentpolicy-update.md
+            - name: Delete
+              href: api/accesspackageassignmentpolicy-delete.md
         - name: Terms of use
           items:
           - name: Agreement
@@ -6281,6 +6550,8 @@ items:
         items:
         - name: Get site
           href: api/site-get.md
+        - name: List sites
+          href: api/site-list.md
         - name: Get lists
           href: api/list-list.md
         - name: Get item analytics
@@ -6309,6 +6580,8 @@ items:
           href: api/site-list-subsites.md
         - name: Search for sites
           href: api/site-search.md
+        - name: List operations
+          href: api/site-list-operations.md
         - name: Permissions
           href: resources/permission.md
           items:
@@ -6342,6 +6615,8 @@ items:
           href: api/list-list-contenttypes.md
         - name: Add copy of content type
           href: api/contenttype-addcopy.md
+        - name: List operations
+          href: api/list-list-operations.md
       - name: Columns
         items:
         - name: Column definition
@@ -6370,6 +6645,8 @@ items:
           href: api/contenttype-unpublish.md
         - name: Add copy to list
           href: api/contenttype-addcopy.md
+        - name: Add or sync from hub
+          href: api/contenttype-addcopyfromcontenttypehub.md
         - name: Associate with hub sites
           href: api/contenttype-associatewithhubsites.md
         - name: Copy to default content location
@@ -6378,6 +6655,8 @@ items:
           href: api/contenttype-list-columns.md
         - name: Create column
           href: api/contenttype-post-columns.md
+        - name: Get compatible from hub
+          href: api/contenttype-getcompatiblehubcontenttypes.md
       - name: List items
         href: resources/listitem.md
         items:
@@ -6393,6 +6672,12 @@ items:
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+      - name: Rich long-running operation
+        items:
+        - name: Rich long-running operation
+          href: resources/richLongRunningOperation.md
+        - name: Get
+          href: api/richlongrunningoperation-get.md
       - name: Taxonomy
         displayname: Taxonomy API
         items:
@@ -6469,6 +6754,8 @@ items:
           href: api/plannerplan-list-buckets.md
         - name: Update plan
           href: api/plannerplan-update.md
+        - name: Delete plan
+          href: api/plannerplan-delete.md
       - name: Task
         href: resources/plannertask.md
         items:
@@ -6612,11 +6899,11 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md 
+          href: api/directory-deleteditems-user-owned.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md       
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted group
           href: api/directory-deleteditems-restore.md
       - name: Channel
@@ -6655,9 +6942,9 @@ items:
         - name: List message replies
           href: api/chatmessage-list-replies.md
         - name: Provision email address
-          href: api/channel-provisionemail.md  
+          href: api/channel-provisionemail.md
         - name: Remove email address
-          href: api/channel-removeemail.md  
+          href: api/channel-removeemail.md
         - name: Remove member
           href: api/channel-delete-members.md
         - name: Reply to message
@@ -7011,9 +7298,10 @@ items:
       items:
       - name: Overview
         href: resources/todo-overview.md
-      - name: Task list
-        href: resources/todotasklist.md
+      - name: To-do task list
         items:
+        - name: To-do task list
+          href: resources/todotasklist.md
         - name: List task lists
           href: api/todo-list-lists.md
         - name: Create task list
@@ -7030,9 +7318,10 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Task
-        href: resources/todotask.md
+      - name: To-do task
         items:
+        - name: To-do task
+          href: resources/todotask.md
         - name: List tasks
           href: api/todotasklist-list-tasks.md
         - name: Create task
@@ -7049,6 +7338,19 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
+      - name: Checklist item
+        href: resources/checklistitem.md
+        items:
+        - name: List
+          href: api/todotask-list-checklistitems.md
+        - name: Create
+          href: api/todotask-post-checklistitems.md
+        - name: Get
+          href: api/checklistitem-get.md
+        - name: Update
+          href: api/checklistitem-update.md
+        - name: Delete
+          href: api/checklistitem-delete.md
       - name: Linked resource
         href: resources/linkedresource.md
         items:

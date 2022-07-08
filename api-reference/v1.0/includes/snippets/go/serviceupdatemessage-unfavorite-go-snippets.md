@@ -12,10 +12,7 @@ requestBody.SetMessageIds( []String {
 	"MC172851",
 	"MC167983",
 }
-options := &msgraphsdk.UnfavoriteRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Unfavorite().Post(options)
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().Unfavorite().Post(requestBody)
 
 
 ```

@@ -22,11 +22,8 @@ secretText := "MKTr0w1..."
 passwordCredential.SetSecretText(&secretText)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof)
-options := &msgraphsdk.AddKeyRequestBuilderPostOptions{
-	Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddKey(servicePrincipal-id).Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddKey(servicePrincipal-id).Post(requestBody)
 
 
 ```

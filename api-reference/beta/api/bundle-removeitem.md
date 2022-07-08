@@ -1,7 +1,7 @@
 ---
-author: JeremyKelley
-title: Remove item from bundle
-description: Remove item from a bundle of driveItems
+author: "JeremyKelley"
+title: "Remove item from bundle"
+description: "Remove item from a bundle of driveItems."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -35,22 +35,23 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 | Name          | Description  |
 |:------------- |:------------ |
-| Authorization | Bearer \{token\}. Required. |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
-Do not supply a request body with this method.
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, the response is `204 No Content`.
+If successful, this method returns a `204 No Content` response code.
 
-Read the [Error Responses][error-response] topic for more info about how errors are returned.
+For information about error responses, see [Microsoft Graph error responses and resource types][error-response].
 
 ## Example
 
 ### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "remove-from-bundle" } -->
@@ -82,6 +83,8 @@ DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item
 
 
 ### Response
+
+The following is an example of the response.
 
 <!-- { "blockType": "response" } -->
 
