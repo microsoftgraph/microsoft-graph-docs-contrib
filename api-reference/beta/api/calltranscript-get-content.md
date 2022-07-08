@@ -31,7 +31,7 @@ To use application permission for this API, tenant administrators must create an
 > This API is in beta and might undergo changes with respect to the request and/or response schema. Use of this API in production applications is not recommended.
 
 > [!NOTE]
-> This API would work for a meeting only if the meeting has not expired. For more details, see [Limits and specifications for Microsoft Teams] (/microsoftteams/limits-specifications-teams#meeting-expiration).
+> This API would work for a meeting only if the meeting has not expired. For more details, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 
 ## HTTP request
 
