@@ -85,7 +85,7 @@ Returns 200 OK
             "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
             "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
             "isEnabled": true,
-			 "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
+			"loginWebUrl": "https://www.linkedin.com/learning-login/teams"
         },
         {
             "id": "13727311-e7bb-470d-8b20-6a23d9030d70",
@@ -95,7 +95,7 @@ Returns 200 OK
             "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
             "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
             "isEnabled": true,
-			 "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
+			"loginWebUrl": "https://www.linkedin.com/learning-login/teams"
         }]
 }
 
