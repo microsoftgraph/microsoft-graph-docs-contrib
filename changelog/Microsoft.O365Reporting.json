@@ -1,30 +1,30 @@
 {
   "changelog": [
 		{
-			"ChangeList": [
-        {
-          "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
-          "ApiChange": "Schema",
-          "ChangedApiName": "microsoft.graph",
-          "ChangeType": "Addition",
-          "Description": "Added the [microsoft.graph](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-          "Target": "microsoft.graph"
-        },
-        {
-          "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
-          "ApiChange": "Resource",
-          "ChangedApiName": "adminReportSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [adminReportSettings](https://docs.microsoft.com/en-us/graph/api/resources/adminReportSettings?view=graph-rest-beta) resource",
-          "Target": "adminReportSettings"
-        }
-			],
-			"Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
-			"Cloud": "Prod",
-			"Version": "beta",
-			"CreatedDateTime": "2022-06-15T08:53:27.1356132Z",
-			"WorkloadArea": "Reports",
-			"SubArea": "Microsoft 365 usage reports"
+		  "ChangeList": [
+		    {
+		      "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
+		      "ApiChange": "Relationship",
+		      "ChangedApiName": "reportSettings",
+		      "ChangeType": "Addition",
+		      "Description": "Added the **reportSettings** relationship to the [admin](https://docs.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
+		      "Target": "admin"
+		    },
+		    {
+		      "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
+		      "ApiChange": "Resource",
+		      "ChangedApiName": "adminReportSettings",
+		      "ChangeType": "Addition",
+		      "Description": "Added the [adminReportSettings](https://docs.microsoft.com/en-us/graph/api/resources/adminreportsettings?view=graph-rest-beta) resource and supported methods.",
+		      "Target": "adminReportSettings"
+		    }
+		  ],
+		  "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
+		  "Cloud": "Prod",
+		  "Version": "beta",
+		  "CreatedDateTime": "2022-06-15T08:53:27.1356132Z",
+		  "WorkloadArea": "Reports",
+		  "SubArea": "Microsoft 365 usage reports"
 		},
 		{
 	  "ChangeList": [
