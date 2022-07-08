@@ -66,9 +66,10 @@ Use the Microsoft Secure Score (preview) to provide visibility into your organiz
 ### Manage your eDiscovery workflows
 
 Organizations rely on [Microsoft Purview eDiscovery](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) capabilities to meet requirements to find the truth about what happened in their organization when they need to, based on internal or external requirements such as litigation, investigation, or regulatory compliance.
-In many organizations, eDiscovery workflows are frequent, critical, and high volume. In the cases where there are common repeated tasks or a high volume of activities, the APIs will help provide a scalable way to repeat processes consistently and effectively. Many organizations handle a high volume of cases and eDiscovery requests and would prefer to automate some tasks. The  Microsoft Graph APIs for advanced eDiscovery provide API access to most functions available within the Microsoft Purview eDiscovery (premium) solution.
+In many organizations, eDiscovery workflows are frequent, critical, and high volume. In the cases where there are common repeated tasks or a high volume of activities, the APIs will help provide a scalable way to repeat processes consistently and effectively.
+Many organizations handle a high volume of cases and eDiscovery requests and would prefer to automate some tasks. The  Microsoft Graph APIs for advanced eDiscovery provide API access to most functions available within the Microsoft Purview eDiscovery (premium) solution.
+Depending on the current systems and processes in place, organizations might have various priorities for automation and integration, from upstream processes such as case creation, to downstream such as collection, review set queries, or export. Supporting workflows with APIs throughout the advanced eDiscovery workflow provides flexibility and options.
 
-Depending on the current systems and processes in place, organizations might have various priorities for automation and integration, from upstream processes such as case creation, to downstream such as collection, review set queries, or export. Supporting workflows with APIs throughout the eDiscovery (Premium) workflow provides flexibility and options.
 #### Build custom eDiscovery workflows with Microsoft Graph
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/gXqBEHy5K6E]
