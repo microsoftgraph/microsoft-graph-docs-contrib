@@ -1251,9 +1251,9 @@ Yes | No
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| LearningContent.Read.All_ |    Read Learning content | Allows the app to read data for the learning content in organization's directory. | 
+| _LearningContent.Read.All_ |    Read Learning content | Allows the app to read data for the learning content in organization's directory. | 
 Yes | No
-| LearningContent.ReadWrite.All_  |    Manage Learning content | Allows the app to upsert/read/delete data for learning content in organization's directory. | Yes | No
+| _LearningContent.ReadWrite.All_  |    Manage Learning content | Allows the app to upsert/read/delete data for learning content in organization's directory. | Yes | No
 
 ---
 ## Mail permissions
