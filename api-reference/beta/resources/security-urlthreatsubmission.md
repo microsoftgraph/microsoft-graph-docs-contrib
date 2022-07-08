@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Represent a threat submission related to a URL.
 
-It is used to submit suspected phishing urls to Microsoft 365 Defender for Office (MDO). It could also be used to submit false positive cases which should not have been blocked by MDO, e.g, safe urls.
+It is used to submit suspected phishing urls to Microsoft Defender for Office 365 (MDO). It could also be used to submit false positive cases which should not have been blocked by MDO, e.g, safe urls.
 
 Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 

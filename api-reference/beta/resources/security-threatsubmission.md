@@ -1,6 +1,6 @@
 ---
 title: "threatSubmission resource type"
-description: "Represents threat submission which is used to submit suspected email, url, file threats to Microsoft 365 Defender."
+description: "Represents threat submission which is used to submit suspected email, url, file threats to Microsoft Defender."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-It is used to submit suspected spam emails, malware emails, phish emails, malware urls, phish urls, phish email attachments and malware email attachments to Microsoft 365 Defender for Office (MDO), as well as to submit suspicious files to Microsoft 365 Defender for Endpoint (MDE).
+Represents threat submission, which is an abstract for representing suspected spam, malware, phish and blocked legitimate emails; malware, phish and blocked legitimate URLs; phish, malware and blocked legitimate email attachments to Microsoft Defender for Office 365(MDO), as well as suspicious files to Microsoft Defender for Endpoint (MDE).
 
 It could also be used to submit false positive cases that should not be blocked by MDO. For example, not junk emails, safe urls and safe email attachments.
 
