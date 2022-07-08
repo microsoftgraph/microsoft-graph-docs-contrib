@@ -1,5 +1,5 @@
 ---
-title: "reportRoot: getAttackSimulationTrainingUserCoverage"
+title: "securityReportRoot: getAttackSimulationTrainingUserCoverage"
 description: "List training coverage for users of a tenant in attack simulation and training campaigns."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
@@ -7,14 +7,12 @@ ms.prod: "reports"
 doc_type: apiPageType
 ---
 
-# reportRoot: getAttackSimulationTrainingUserCoverage
+# securityReportRoot: getAttackSimulationTrainingUserCoverage
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-ast-reportapi.md)]
-
-List [training coverage](../resources/attacksimulationtrainingusercoverage.md) for each user of a tenant in attack simulation and training campaigns.
+List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns.
 
 This function supports `@odata.nextLink` for pagination.
 
@@ -34,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /reports/getAttackSimulationTrainingUserCoverage
+GET /reports/security/getAttackSimulationTrainingUserCoverage
 ```
 
 ## Request headers
@@ -52,38 +50,37 @@ If successful, this function returns a `200 OK` response code and a [attackSimul
 ## Examples
 
 ### Request
-
-# [HTTP](#tab/http)
+The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getattacksimulationtrainingusercoverage"
+  "name": "securityreportsrootthis.getattacksimulationtrainingusercoverage"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/getAttackSimulationTrainingUserCoverage
+GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationTrainingUserCoverage
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getattacksimulationtrainingusercoverage-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/securityreportroot-getattacksimulationtrainingusercoverage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getattacksimulationtrainingusercoverage-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/securityreportroot-getattacksimulationtrainingusercoverage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getattacksimulationtrainingusercoverage-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/securityreportroot-getattacksimulationtrainingusercoverage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getattacksimulationtrainingusercoverage-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/securityreportroot-getattacksimulationtrainingusercoverage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/reportroot-getattacksimulationtrainingusercoverage-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/securityreportroot-getattacksimulationtrainingusercoverage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getattacksimulationtrainingusercoverage-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/securityreportroot-getattacksimulationtrainingusercoverage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -91,6 +88,7 @@ GET https://graph.microsoft.com/beta/reports/getAttackSimulationTrainingUserCove
 
 
 ### Response
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -103,23 +101,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "userTrainings": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.attackSimulationTrainingUserCoverage)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/reports/getAttackSimulationTrainingUserCoverage?$skiptoken=+RID%3",
+    "value": [
         {
-          "assignedDateTime": "2021-01-01T01:01:01.01Z",
-          "completionDateTime": "2021-01-02T01:01:01.01Z",
-          "trainingStatus": "Completed",
-          "displayName": "Sample Training"
+            "userTrainings": [
+                {
+                    "assignedDateTime": "2021-07-28T07:33:47.493239Z",
+                    "completionDateTime": null,
+                    "trainingStatus": "assigned",
+                    "displayName": "Phishing"
+                },
+                {
+                    "assignedDateTime": "2021-07-28T07:33:47.493239Z",
+                    "completionDateTime": 2022-01-14T03:11:58Z,
+                    "trainingStatus": "completed",
+                    "displayName": ""
+                }
+            ],
+            "attackSimulationUser": {
+                "userId": "c5e40ca7-4c09-4801-a140-5ef733d1de0e",
+                "displayName": null,
+                "email": null
+            }
         }
-      ],
-      "attackSimulationUser": {
-        "userId": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-        "displayName": "Sample User",
-        "email": "sampleuser@contoso.com"
-      }
-    }
-  ]
+    ]
 }
 ```
 

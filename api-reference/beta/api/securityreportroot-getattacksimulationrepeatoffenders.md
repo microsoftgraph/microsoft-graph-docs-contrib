@@ -1,5 +1,5 @@
 ---
-title: "reportRoot: getAttackSimulationRepeatOffenders"
+title: "securityReportRoot: getAttackSimulationRepeatOffenders"
 description: "List repeat offender users of a tenant in attack simulation and training campaigns."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
@@ -7,21 +7,14 @@ ms.prod: "reports"
 doc_type: apiPageType
 ---
 
-# reportRoot: getAttackSimulationRepeatOffenders
+# securityReportRoot: getAttackSimulationRepeatOffenders
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
-
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-ast-reportapi.md)]
 
 List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns.
 
 This function supports `@odata.nextLink` for pagination.
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /reports/getAttackSimulationRepeatOffenders
+GET /reports/security/getAttackSimulationRepeatOffenders
 ```
 
 ## Request headers
@@ -56,45 +49,44 @@ If successful, this function returns a `200 OK` response code and a [attackSimul
 ## Examples
 
 ### Request
-
-# [HTTP](#tab/http)
+The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getattacksimulationrepeatoffenders"
+  "name": "securityreportsrootthis.getattacksimulationrepeatoffenders"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/getAttackSimulationRepeatOffenders
+GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationRepeatOffenders
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getattacksimulationrepeatoffenders-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/securityreportroot-getattacksimulationrepeatoffenders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getattacksimulationrepeatoffenders-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/securityreportroot-getattacksimulationrepeatoffenders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getattacksimulationrepeatoffenders-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/securityreportroot-getattacksimulationrepeatoffenders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getattacksimulationrepeatoffenders-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/securityreportroot-getattacksimulationrepeatoffenders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/reportroot-getattacksimulationrepeatoffenders-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/securityreportroot-getattacksimulationrepeatoffenders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getattacksimulationrepeatoffenders-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/securityreportroot-getattacksimulationrepeatoffenders-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-
 ### Response
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -107,16 +99,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "repeatOffenceCount": 1,
-      "attackSimulationUser": {
-        "userId": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-        "displayName": "Sample User",
-        "email": "sampleuser@contoso.com"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.attackSimulationRepeatOffender)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/reports/getAttackSimulationRepeatOffenders?$skiptoken=+RID%3",
+    "value": [
+        {
+            "repeatOffenceCount": 5,
+            "attackSimulationUser": {
+                "userId": "6fcdab00-385b-46f2-a329-b843b49e9147",
+                "displayName": "anadi_testing",
+                "email": ""
+            }
+        },
+        {
+            "repeatOffenceCount": 638,
+            "attackSimulationUser": {
+                "userId": "478a22cd-aecc-41df-b995-88c8de17aaf5",
+                "displayName": "attacksim",
+                "email": "attacksim@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"
+            }
+        }
+    ]
 }
+
 ```
 
