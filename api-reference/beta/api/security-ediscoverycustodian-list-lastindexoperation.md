@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the ediscoveryIndexOperation resources from the lastIndexOperation navigation property.
+Get a list of the [ediscoveryIndexOperations](../resources/security-ediscoveryindexoperation.md) associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
