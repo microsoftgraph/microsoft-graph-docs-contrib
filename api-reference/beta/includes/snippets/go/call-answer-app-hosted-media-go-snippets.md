@@ -19,11 +19,8 @@ mediaConfig.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.appHostedMediaConfig",
 	"blob": "<Media Session Configuration Blob>",
 }
-options := &msgraphsdk.AnswerRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Answer().Post(options)
+graphClient.Communications().CallsById(&callId).Answer(call-id).Post(requestBody)
 
 
 ```

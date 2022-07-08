@@ -40,6 +40,10 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
+|OData-Version|4.01. Optional.|
+
+> [!NOTE]
+> To update the predefined values for a custom security attribute, you must add the **OData-Version** header and assign it the value `4.01`.
 
 ## Request body
 In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
@@ -121,7 +125,56 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Deactivate a custom security attribute
+### Example 2: Update the predefined values for a custom security attribute
+
+The following example updates the status of an existing predefined value and adds a new predefined value for a custom security attribute definition.
+
++ Attribute set: `Engineering`
++ Attribute: `Project`
++ Attribute data type: Collection of Strings
++ Update predefined value: `Baker`
++ New predefined value: `Skagit`
+
+> [!NOTE]
+> For this request, you must add the **OData-Version** header and assign it the value `4.01`.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_customsecurityattributedefinition_allowedvalues"
+}
+-->
+``` msgraph-interactive
+PATCH https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project
+Content-Type: application/json
+OData-Version: 4.01
+
+{
+    "allowedValues@delta": [
+        {
+            "id": "Baker",
+            "isActive": false
+        },
+        {
+            "id": "Skagit",
+            "isActive": true
+        }
+    ]
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Deactivate a custom security attribute
 
 The following example deactivates a custom security attribute definition.
 

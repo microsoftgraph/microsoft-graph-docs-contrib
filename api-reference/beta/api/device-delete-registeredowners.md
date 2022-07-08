@@ -32,6 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /devices/{id}/registeredOwners/{id}/$ref
 ```
+> [!CAUTION]
+> If `/$ref` is not appended to the request and the calling app has permissions to manage the user who is a registered owner of the device, the user will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. You can restore deleted users through the [Restore deleted items API](directory-deleteditems-restore.md).
 
 ## Request headers
 | Name       | Description|
@@ -71,6 +73,10 @@ DELETE https://graph.microsoft.com/beta/devices/{id}/registeredOwners/{id}/$ref
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-registeredowners-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-registeredowners-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

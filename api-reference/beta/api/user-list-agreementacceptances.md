@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of a user's [agreementAcceptance](../resources/agreementacceptance.md) objects.
+Retrieve the signed-in user's [agreementAcceptance](../resources/agreementacceptance.md) objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -27,6 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/agreementAcceptances
+
+# where the id or userPrincipalName is the signed-in user's
+
 GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
 <!--
@@ -94,16 +97,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "agreementId": "agreementId-value",
-      "userId": "userId-value",
-      "agreementFileId": "agreementFileId-value",
-      "recordedDateTime": "datetime-value",
-      "userDisplayName": "userDisplayName-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#agreementAcceptances",
+    "value": [
+        {
+            "id": "94410bbf-3d3e-4683-8149-f034e55c39dd_d4bb5206-77bf-4d5c-96b4-cf7b0ed3be98",
+            "agreementId": "94410bbf-3d3e-4683-8149-f034e55c39dd",
+            "userId": "d4bb5206-77bf-4d5c-96b4-cf7b0ed3be98",
+            "deviceId": "00000000-0000-0000-0000-000000000000",
+            "deviceDisplayName": null,
+            "deviceOSType": null,
+            "deviceOSVersion": null,
+            "agreementFileId": "08033369-8972-42a3-8533-90bbd2757a01",
+            "userDisplayName": "Megan Bowen",
+            "userPrincipalName": "MeganB@M365x43961174.OnMicrosoft.com",
+            "userEmail": "MeganB@M365x43961174.OnMicrosoft.com",
+            "recordedDateTime": "2022-03-04T14:11:22.6658376Z",
+            "expirationDateTime": null,
+            "state": "accepted"
+        }
+    ]
 }
 ```
 

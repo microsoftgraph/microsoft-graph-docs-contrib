@@ -13,11 +13,8 @@ requestBody.SetEvent(&event)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"definition@odata.bind": "https://graph.microsoft.com/v1.0/print/taskDefinitions/{taskDefinitionId}",
 }
-options := &msgraphsdk.TaskTriggersRequestBuilderPostOptions{
-	Body: requestBody,
-}
 printerId := "printer-id"
-result, err := graphClient.Print().PrintersById(&printerId).TaskTriggers().Post(options)
+result, err := graphClient.Print().PrintersById(&printerId).TaskTriggers().Post(requestBody)
 
 
 ```

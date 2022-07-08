@@ -15,12 +15,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"reminderMinutesBeforeStart": ,
 	"isReminderOn": true,
 }
-options := &msgraphsdk.ConversationThreadRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Patch(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Patch(requestBody)
 
 
 ```

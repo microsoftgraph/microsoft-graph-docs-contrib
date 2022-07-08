@@ -19,10 +19,7 @@ requestBody.SetLast(&last)
 languageTag := "en-US"
 requestBody.SetLanguageTag(&languageTag)
 requestBody.SetMaiden(nil)
-options := &msgraphsdk.NamesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Names().Post(options)
+result, err := graphClient.Me().Profile().Names().Post(requestBody)
 
 
 ```

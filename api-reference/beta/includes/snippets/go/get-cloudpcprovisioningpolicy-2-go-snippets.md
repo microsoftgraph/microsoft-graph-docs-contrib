@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.CloudPcProvisioningPolicyRequestBuilderGetQueryParameters{
 	Expand: "assignments",
 }
-options := &msgraphsdk.CloudPcProvisioningPolicyRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.CloudPcProvisioningPolicyRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 cloudPcProvisioningPolicyId := "cloudPcProvisioningPolicy-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById(&cloudPcProvisioningPolicyId).Get(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById(&cloudPcProvisioningPolicyId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

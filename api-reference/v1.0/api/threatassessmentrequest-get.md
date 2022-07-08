@@ -460,7 +460,6 @@ Content-type: application/json
         "displayName": "Ronald Admin"
       }
     },
-    "results@odata.context": "https://graph.microsoft.com/v1.0/$metadata#informationProtection/threatAssessmentRequests('11922306-b25b-4605-ff0d-08d772fcf996')/microsoft.graph.mailAssessmentRequest/results",
     "results": [
         {
             "id": "63798129-a62c-4f9e-2c6d-08d772fcfb0e",

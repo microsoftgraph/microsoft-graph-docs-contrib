@@ -7,12 +7,14 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Update baseTaskList
+# Update baseTaskList (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [taskList](../resources/tasklist.md) object.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Update the properties of a [baseTaskList](../resources/tasklist.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -69,6 +71,7 @@ Content-Type: application/json
 Content-length: 82
 
 {
+    "@odata.type": "#microsoft.graph.taskList",
     "displayName": "Travel Plan"
 }
 ```

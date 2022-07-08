@@ -19,6 +19,7 @@ $params = @{
 	}
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileAddress -UserId $userId -BodyParameter $params
 
 ```

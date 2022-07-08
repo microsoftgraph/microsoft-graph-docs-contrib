@@ -3,7 +3,7 @@ title: "freeBusyError resource type"
 description: "Represents error information from attempting to get the availability of a user, distribution list, or resource."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: calendar
 author: "harini84"
 ---
 

@@ -26,10 +26,7 @@ deviceMetadata := "deviceMetadata-value"
 requestBody.SetDeviceMetadata(&deviceMetadata)
 deviceVersion := int32(99)
 requestBody.SetDeviceVersion(&deviceVersion)
-options := &msgraphsdk.DevicesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Devices().Post(options)
+result, err := graphClient.Devices().Post(requestBody)
 
 
 ```

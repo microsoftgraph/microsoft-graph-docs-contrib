@@ -36,12 +36,9 @@ requestBody.SetFallbackReviewers( []AccessReviewReviewerScope {
 		"queryType": "MicrosoftGraph",
 	}
 }
-options := &msgraphsdk.AccessReviewInstanceRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
 accessReviewInstanceId := "accessReviewInstance-id"
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).Patch(options)
+graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).Patch(requestBody)
 
 
 ```

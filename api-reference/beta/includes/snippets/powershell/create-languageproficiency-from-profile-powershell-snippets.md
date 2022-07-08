@@ -14,6 +14,7 @@ $params = @{
 	Reading = "nativeOrBilingual"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileLanguage -UserId $userId -BodyParameter $params
 
 ```

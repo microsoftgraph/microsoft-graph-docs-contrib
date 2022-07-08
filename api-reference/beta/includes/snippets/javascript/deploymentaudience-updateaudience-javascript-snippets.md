@@ -13,25 +13,25 @@ const client = Client.init(options);
 const updateAudience = {
   addMembers: [
     {
-      '@odata.type': '#microsoft.graph.windowsUpdates.updatableAsset',
+      '@odata.type': '#microsoft.graph.windowsUpdates.azureADDevice',
       id: 'String (identifier)'
     }
   ],
   removeMembers: [
     {
-      '@odata.type': '#microsoft.graph.windowsUpdates.updatableAsset',
+      '@odata.type': '#microsoft.graph.windowsUpdates.azureADDevice',
       id: 'String (identifier)'
     }
   ],
   addExclusions: [
     {
-      '@odata.type': '#microsoft.graph.windowsUpdates.updatableAsset',
+      '@odata.type': '#microsoft.graph.windowsUpdates.azureADDevice',
       id: 'String (identifier)'
     }
   ],
   removeExclusions: [
     {
-      '@odata.type': '#microsoft.graph.windowsUpdates.updatableAsset',
+      '@odata.type': '#microsoft.graph.windowsUpdates.azureADDevice',
       id: 'String (identifier)'
     }
   ]

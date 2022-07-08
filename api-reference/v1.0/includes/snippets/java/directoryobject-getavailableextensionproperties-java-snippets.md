@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Boolean isSyncedFromOnPremises = false;
+Boolean isSyncedFromOnPremises = true;
 
 graphClient.directoryObjects()
 	.getAvailableExtensionProperties(DirectoryObjectGetAvailableExtensionPropertiesParameterSet

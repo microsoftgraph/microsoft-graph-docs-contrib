@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewRequestsRequestBody()
 requestBody.SetRequests( []SearchRequest {
 	msgraphsdk.NewSearchRequest(),
 	SetAdditionalData(map[string]interface{}{
@@ -25,10 +25,7 @@ requestBody.SetRequests( []SearchRequest {
 		}
 	}
 }
-options := &msgraphsdk.QueryRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Search().Query().Post(options)
+result, err := graphClient.Search().Query().Post(requestBody)
 
 
 ```

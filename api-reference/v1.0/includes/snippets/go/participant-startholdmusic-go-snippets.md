@@ -15,12 +15,9 @@ customPrompt.SetAdditionalData(map[string]interface{}{
 }
 clientContext := "d45324c1-fcb5-430a-902c-f20af696537c"
 requestBody.SetClientContext(&clientContext)
-options := &msgraphsdk.StartHoldMusicRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
 participantId := "participant-id"
-result, err := graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).StartHoldMusic().Post(options)
+result, err := graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).StartHoldMusic(call-id, participant-id).Post(requestBody)
 
 
 ```

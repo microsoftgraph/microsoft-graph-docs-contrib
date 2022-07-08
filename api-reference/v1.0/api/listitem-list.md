@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.date: 09/11/2017
 title: Retrieve items from a SharePoint list
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -34,9 +33,25 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
+## Request headers
+
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {code}. Required.|
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response 
+
+If successful, this method returns a `200 OK` response code and a collection of [listItem][item] objects in the response body. 
+
 ## Example
 
-#### Request
+### Request
+
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -72,7 +87,9 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 ---
 
 
-#### Response
+### Response
+
+The following is an example of the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 

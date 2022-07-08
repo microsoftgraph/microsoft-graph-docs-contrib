@@ -12,11 +12,11 @@ requestParameters := &msgraphsdk.InstancesRequestBuilderGetQueryParameters{
 	EndDateTime: "2019-04-30T09:00:00.0000000",
 	Select: "subject,bodyPreview,seriesMasterId,type,recurrence,start,end",
 }
-options := &msgraphsdk.InstancesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.InstancesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Instances().Get(options)
+result, err := graphClient.Me().EventsById(&eventId).Instances().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

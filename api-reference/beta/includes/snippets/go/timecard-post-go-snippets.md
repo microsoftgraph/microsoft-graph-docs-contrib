@@ -28,18 +28,32 @@ contentType := "text"
 notes.SetContentType(&contentType)
 requestBody.SetBreaks( []TimeCardBreak {
 	msgraphsdk.NewTimeCardBreak(),
-	SetAdditionalData(map[string]interface{}{
-		"breakId": "string",
-	}
+breakId := "string"
+	SetBreakId(&breakId)
+notes := msgraphsdk.NewItemBody()
+	SetNotes(notes)
+content := "Lunch break"
+	notes.SetContent(&content)
+contentType := "text"
+	notes.SetContentType(&contentType)
+start := msgraphsdk.NewTimeCardEvent()
+	SetStart(start)
+dateTime, err := time.Parse(time.RFC3339, "2019-03-18T02:00:00.000Z")
+	start.SetDateTime(&dateTime)
+atApprovedLocation := true
+	start.SetAtApprovedLocation(&atApprovedLocation)
+notes := msgraphsdk.NewItemBody()
+	start.SetNotes(notes)
+content := "Reduced break to make up for lost time"
+	notes.SetContent(&content)
+contentType := "text"
+	notes.SetContentType(&contentType)
 }
 requestBody.SetAdditionalData(map[string]interface{}{
 	"onBehalfOfUserId": "a3601044-a1b5-438e-b742-f78d01d68a67",
 }
-options := &msgraphsdk.TimeCardsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().Post(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().Post(requestBody)
 
 
 ```

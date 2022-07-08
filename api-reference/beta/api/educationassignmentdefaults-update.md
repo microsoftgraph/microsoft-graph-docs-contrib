@@ -121,4 +121,6 @@ Content-Type: application/json
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```
+## See also
 
+* [Specify the default channel for education assignment notifications](/graph/education-build-notificationchannelurl)

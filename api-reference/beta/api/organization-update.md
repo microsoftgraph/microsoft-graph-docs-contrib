@@ -2,7 +2,7 @@
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "KuiGithui"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Organization.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | Organization.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Organization.ReadWrite.All |
 
@@ -71,7 +71,7 @@ Here is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/{id}
+PATCH https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3
 Content-type: application/json
 
 {

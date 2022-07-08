@@ -18,10 +18,7 @@ written := "nativeOrBilingual"
 requestBody.SetWritten(&written)
 reading := "nativeOrBilingual"
 requestBody.SetReading(&reading)
-options := &msgraphsdk.LanguagesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Languages().Post(options)
+result, err := graphClient.Me().Profile().Languages().Post(requestBody)
 
 
 ```

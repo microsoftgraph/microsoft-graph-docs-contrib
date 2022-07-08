@@ -1,5 +1,5 @@
 ---
-title: "program resource type"
+title: "program resource type (deprecated)"
 description: "In the Azure AD access reviews feature, a program is a container, holding program controls. A tenant can have one or more programs.  Each control links an access review to a program, to make it easier to locate related access reviews.  "
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -7,7 +7,7 @@ ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# program resource type
+# program resource type (deprecated)
 
 Namespace: microsoft.graph
 

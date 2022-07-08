@@ -180,7 +180,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Add a member to a channel using user principal name
+### Example 3: Add an owner to a channel using user principal name
 
 #### Request
 

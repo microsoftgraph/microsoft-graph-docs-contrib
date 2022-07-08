@@ -44,13 +44,13 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "id": "guid",
-  "adminConsentDisplayName": "string",
-  "adminConsentDescription": "string",
-  "userConsentDisplayName": "string",
-  "userConsentDescription": "string",
-  "value": "string",
-  "type": "string",
+  "id": "Guid",
+  "adminConsentDisplayName": "String",
+  "adminConsentDescription": "String",
+  "userConsentDisplayName": "String",
+  "userConsentDescription": "String",
+  "value": "String",
+  "type": "String",
   "isEnabled": true
 }
 ```

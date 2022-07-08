@@ -49,12 +49,15 @@ defaultPriceType := "fixedPrice"
 requestBody.SetDefaultPriceType(&defaultPriceType)
 requestBody.SetDefaultReminders( []BookingReminder {
 	msgraphsdk.NewBookingReminder(),
+message := "Please be reminded that this service is tomorrow."
+	SetMessage(&message)
+offset := "P1D"
+	SetOffset(&offset)
+recipients := "allAttendees"
+	SetRecipients(&recipients)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.bookingReminder",
-		"message": "Please be reminded that this service is tomorrow.",
-		"offset": "P1D",
 		"recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
-		"recipients": "allAttendees",
 	}
 }
 description := "Individual bento box lunch delivery"
@@ -98,11 +101,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"defaultReminders@odata.type": "#Collection(microsoft.graph.bookingReminder)",
 	"staffMemberIds@odata.type": "#Collection(String)",
 }
-options := &msgraphsdk.ServicesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Services().Post(options)
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Services().Post(requestBody)
 
 
 ```

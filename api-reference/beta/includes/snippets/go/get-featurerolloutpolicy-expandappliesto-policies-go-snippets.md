@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.FeatureRolloutPolicyRequestBuilderGetQueryParameters{
 	Expand: "appliesTo",
 }
-options := &msgraphsdk.FeatureRolloutPolicyRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.FeatureRolloutPolicyRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 featureRolloutPolicyId := "featureRolloutPolicy-id"
-result, err := graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).Get(options)
+result, err := graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

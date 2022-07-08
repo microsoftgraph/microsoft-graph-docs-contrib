@@ -3,7 +3,7 @@ title: "printJob: cancel"
 description: Cancel a print job.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 

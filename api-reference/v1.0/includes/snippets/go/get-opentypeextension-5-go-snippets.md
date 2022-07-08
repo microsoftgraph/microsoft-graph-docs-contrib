@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.MessagesRequestBuilderGetQueryParameters{
 	Filter: "Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')",
 	Expand: "Extensions($filter=id%20eq%20'Com.Contoso.Referral')",
 }
-options := &msgraphsdk.MessagesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.MessagesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Messages().Get(options)
+result, err := graphClient.Me().Messages().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

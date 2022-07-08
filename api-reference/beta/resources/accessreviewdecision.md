@@ -1,5 +1,5 @@
 ---
-title: "accessReviewDecision resource type"
+title: "accessReviewDecision resource type (deprecated)"
 description: "The accessReviewDecision represents an Azure AD access review decision of a particular entity's access."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# accessReviewDecision resource type
+# accessReviewDecision resource type (deprecated)
 
 Namespace: microsoft.graph
 
