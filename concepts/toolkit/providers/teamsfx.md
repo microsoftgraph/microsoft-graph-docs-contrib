@@ -58,5 +58,5 @@ For a sample that shows you how to initialize the TeamsFx provider, see the [Con
 
 ## See also
 * [Get started with Microsoft Teams and Teams Toolkit development](https://aka.ms/teamsfx-docs)
-* [TeamsFx SDK document](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/teamsfx-sdk)
+* [TeamsFx SDK document](/microsoftteams/platform/toolkit/teamsfx-sdk)
 * [One Productivity Hub workshop](https://github.com/OfficeDev/OneProductivityHub-TeamsFx)
