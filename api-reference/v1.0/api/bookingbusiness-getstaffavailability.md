@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-Post /solutions/bookingBusinesses/{id}/getStaffAvailability
+POST /solutions/bookingBusinesses/{id}/getStaffAvailability
 ```
 
 ## Request header
