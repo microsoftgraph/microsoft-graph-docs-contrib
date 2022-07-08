@@ -3,7 +3,7 @@ title: "Get learningProvider"
 description: "Read the properties and relationships of a learningProvider object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "employee-experience"
 doc_type: apiPageType
 ---
 
@@ -82,7 +82,8 @@ Returns 200 OK
     "longLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
     "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
     "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
-    "isEnabled": true
+    "isEnabled": true,
+    "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
 }
 
 ```

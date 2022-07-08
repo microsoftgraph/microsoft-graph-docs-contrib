@@ -3,7 +3,7 @@ title: "Create learningProvider"
 description: "Create a new learningProvider object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "employee-experience"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ You can specify the following properties when creating a **learningProvider**.
 |:---|:---|:---|
 |displayName|String|**Display Name to be shown in Viva Learning** Required.|
 |isEnabled|Boolean|**State of the provider** Optional.|
-|loginWebUrl|String|**TODO: Add Description** Optional.|
+|loginWebUrl|String|**Authentication Url to access the courses for the provider** Optional.|
 |longLogoWebUrlForDarkTheme|String|**long logo url for the dark mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
 |longLogoWebUrlForLightTheme|String|**long logo url for the light mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering** Required.|
 |squareLogoWebUrlForDarkTheme|String|**square logo url for the dark mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
@@ -76,7 +76,8 @@ The following is an example of a request.
     "longLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
     "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
     "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
-    "isEnabled": true
+    "isEnabled": true,
+    "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
 }
 
 ```
@@ -101,7 +102,8 @@ Returns 201 - Created
     "longLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
     "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
     "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
-    "isEnabled": true
+    "isEnabled": true,
+    "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
 }
 ```
 

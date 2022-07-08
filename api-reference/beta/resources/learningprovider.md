@@ -3,7 +3,7 @@ title: "learningProvider resource type"
 description: "**TODO: Add Description**"
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "employee-experience"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Namespace: microsoft.graph
 |:---|:---|:---|
 |displayName|String|**Display Name to be shown in Viva Learning**|
 |isEnabled|Boolean|**State of the provider**|
-|loginWebUrl|String|**TODO: Add Description**|
+|loginWebUrl|String|**Authentication Url to access the courses for the provider**|
 |longLogoWebUrlForDarkTheme|String|**long logo url for the dark mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app**|
 |longLogoWebUrlForLightTheme|String|**long logo url for the light mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app**|
 |squareLogoWebUrlForDarkTheme|String|**square logo url for the dark mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app**|

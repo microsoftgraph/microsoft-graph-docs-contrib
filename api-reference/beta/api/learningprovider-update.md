@@ -3,7 +3,7 @@ title: "Update learningProvider"
 description: "Update the properties of a learningProvider object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "employee-experience"
 doc_type: apiPageType
 ---
 
@@ -46,8 +46,8 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|**Display Name to be shown in Viva Learning** Required.|
-|isEnabled|Boolean|**TODO: State of the provider** Optional.|
-|loginWebUrl|String|**TODO: Add Description** Optional.|
+|isEnabled|Boolean|**State of the provider** Optional.|
+|loginWebUrl|String|**Authentication Url to access the courses for the provider** Optional.|
 |longLogoWebUrlForDarkTheme|String|**long logo url for the dark mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
 |longLogoWebUrlForLightTheme|String|**long logo url for the light mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
 |squareLogoWebUrlForDarkTheme|String|**square logo url for the dark mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
@@ -77,7 +77,8 @@ PATCH /employeeExperience/learningProviders/{id} HTTP/1.1 Content-Type: applicat
     "longLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
     "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
     "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
-    "isEnabled": false
+    "isEnabled": false,
+    "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
 }
 
 ```

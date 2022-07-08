@@ -3,7 +3,7 @@ title: "Delete learningContent"
 description: "Deletes a learningContent object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "employee-experience"
 doc_type: apiPageType
 ---
 
