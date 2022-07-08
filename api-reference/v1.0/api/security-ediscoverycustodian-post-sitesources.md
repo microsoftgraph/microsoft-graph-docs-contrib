@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Create custodian siteSource
+# Create siteSource
 Namespace: microsoft.graph.security
 
 

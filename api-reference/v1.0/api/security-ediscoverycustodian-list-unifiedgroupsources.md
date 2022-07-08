@@ -7,12 +7,12 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# List custodian's unifiedGroupSources
+# List unifiedGroupSources
 Namespace: microsoft.graph.security
 
 
 
-Get a list of the [unifiedGroupSource](../resources/security-unifiedgroupsource.md) objects and their properties.
+Get a list of the [unifiedGroupSource](../resources/security-unifiedgroupsource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
