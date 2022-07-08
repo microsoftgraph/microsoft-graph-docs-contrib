@@ -64,9 +64,9 @@ Represents the result of a review after the threat submission is processed by Mi
 | outboundShouldBeBlocked                | The reported outgoing messages has been found malicious and Microsoft will update its machine learning based outbound filters in the coming weeks. |
 | outboundBulk                           | The reported outgoing messages has been found to be bulk and Microsoft will update its machine learning based outbound filters in the coming weeks. |
 | outboundCannotMakeDecision             | At the moment Microsoft cannot reach a verdict on the outgoing reported message and so please submit again. |
-| outboundNotRescanned                   | At the Moment Microsoft cannot reach a verdict as the message cannot be analyzed without taking outside the environment or due to other reasons. |
-| zeroHourAutoPurgeAllowed               | The reported message was zapped and allowed after delivery as the message was good. |
-| zeroHourAutoPurgeBlocked               | The Reported message was zapped and blocked after delivery as the message was bad. |
+| outboundNotRescanned                   | At the Moment Microsoft cannot reach a verdict as the message cannot be analyzed without taking it outside the environment or due to other reasons. |
+| zeroHourAutoPurgeAllowed               | The reported message was reverse zapped as after delivery the message was found to be good. |
+| zeroHourAutoPurgeBlocked               | The Reported message was zapped as after delivery the message was found to be bad. |
 | zeroHourAutoPurgeQuarantineReleased    | The Reported message was released from Quarantine despite being zapped as it turned malicious after delivery. |
 | onPremisesSkip                         | The reported message cannot be analyzed as this is went through a  onprem setup of exchange online protection. |
 | allowedByTenantAllowBlockList          | The reported message was allowed as one or more entities in the email are on the tenant allow block list. |
