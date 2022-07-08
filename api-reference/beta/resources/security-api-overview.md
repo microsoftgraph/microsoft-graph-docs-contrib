@@ -62,7 +62,7 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 **Threat assessment** - The Microsoft Graph threat assessment API helps organizations to assess the threat received by any user in a tenant. This empowers customers to report spam or suspicious emails, phishing URLs, or malware attachments they receive to Microsoft. Microsoft check the sample in question and the organizational policies in play before generating a result so that tenant administrators can understand the threat scanning verdict and adjust their organizational policy. They can also use it to report legitimate emails to prevent them from getting blocked.
 
-> **NOTE:** The **threat assessment** API set will be deprecated by the unified security [threat submission](#threat-submission) as the new version.
+> **Note:** We recommend that you use the [threat submission](https://github.com/microsoftgraph/microsoft-graph-docs/pull/16242/files#threat-submission) API instead.
 
 ## Secure Score
 
@@ -88,9 +88,9 @@ Support in other Microsoft security services will be available soon.
 
 ## Threat submission
 
-The Microsoft Graph threat submission API helps organizations to submit a threat received by any user in a tenant. This empowers customers to report spam or suspicious emails, phishing URLs, or malware attachments they receive to Microsoft. Microsoft check the sample in question by running it through the stack again and checking the organizational policies in play and even sending it to human graders for analysis before generating a result, so that tenant administrators understand the threat scanning verdict and adjust their organizational policy.  They can also use it to report legitimate emails to prevent them from getting blocked. 
+The Microsoft Graph threat submission API helps organizations to submit a threat received by any user in a tenant. This empowers customers to report spam or suspicious emails, phishing URLs, or malware attachments they receive to Microsoft. Microsoft checks the submission against the organizational policies in effect and sends it to human graders for analysis. The result then helps tenant administrators understand the threat scanning verdict and adjust their organizational policy. Admins can also use the results to report legitimate emails to prevent them from getting blocked.
 
-> **NOTE:** The new **threat submission** API will deprecate the Information Protection **threat assessment** API. This new version is a unified security threat submission which is redesigned and adds unified result support, user submission query support, tenant allow block list support, admin review support and app only mode support.
+> **Note: ** We recommend that you use this API instead of the deprecated Information Protection threat assessment API. The threat submission API provides unified security threat submission functionality and adds unified result support, user submission query support, tenant allow block list support, admin review support and app-only mode support.
 
 ## Common use cases
 
