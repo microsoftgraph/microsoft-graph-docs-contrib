@@ -119,6 +119,7 @@ Content-type: application/json
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
             "isLocationOnline": true,
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
+            "anonymousJoinWebUrl": null,
             "customerId": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
             "customerName": "Adele Vance",
             "customerEmailAddress": "adelev@proseware.com",
@@ -254,6 +255,7 @@ Content-type: application/json
                     "emailAddress": "jordanm@contoso.com",
                     "phone": "213-555-0199",
                     "notes": null,
+                    "smsNotificationsEnabled": false,
                     "location": {
                         "displayName": "Customer",
                         "locationEmailAddress": null,

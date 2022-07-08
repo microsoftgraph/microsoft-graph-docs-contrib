@@ -59,6 +59,7 @@ var bookingAppointment = new BookingAppointment
 	InvoiceUrl = "theInvoiceUrl",
 	IsLocationOnline = true,
 	OptOutOfCustomerEmail = false,
+	AnonymousJoinWebUrl = null,
 	PostBuffer = new Duration("PT10M"),
 	PreBuffer = new Duration("PT5M"),
 	Price = 10,

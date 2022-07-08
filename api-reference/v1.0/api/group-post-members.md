@@ -15,14 +15,14 @@ Add a member to a security or Microsoft 365 group through the **members** naviga
 
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
-| Object type             | Member of security groups     | Member of Microsoft 365 group |
+| Object type             | Member of security group     | Member of Microsoft 365 group |
 |-------------------------|-------------------------------|-------------------------------|
-| Users                   | ![Can be group member][Yes]   | ![Can be group member][Yes]   |
-| Security groups         | ![Can be group member][Yes]   | ![Cannot be group member][No] |
-| Microsoft 365 groups    | ![Cannot be group member][No] | ![Cannot be group member][No] |
-| Devices                 | ![Can be group member][Yes]   | ![Cannot be group member][No] |
-| Service principals      | ![Can be group member][Yes]   | ![Cannot be group member][No] |
-| Organizational contacts | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| User                   | ![Can be group member][Yes]   | ![Can be group member][Yes]   |
+| Security group         | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Microsoft 365 group    | ![Cannot be group member][No] | ![Cannot be group member][No] |
+| Device                 | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Service principal      | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Organizational contact | ![Can be group member][Yes]   | ![Cannot be group member][No] |
 
 ## Permissions
 
