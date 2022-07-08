@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [teamTemplate](https://docs.microsoft.com/en-us/graph/api/resources/teamTemplate?view=graph-rest-beta) resource",
+          "Description": "Added the [teamTemplate](https://docs.microsoft.com/en-us/graph/api/resources/teamTemplate?view=graph-rest-beta) resource.",
           "Target": "teamTemplate"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamTemplateDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [teamTemplateDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamTemplateDefinition?view=graph-rest-beta) resource",
+          "Description": "Added the [teamTemplateDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamTemplateDefinition?view=graph-rest-beta) resource.",
           "Target": "teamTemplateDefinition"
         },
         {
@@ -38,9 +38,9 @@
       "Id": "6ae53b71-88ab-4827-8e71-ab0a7bd274ed",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-05-03T02:18:43.7311444Z",
+      "CreatedDateTime": "2022-07-07T02:18:43.7311444Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": "Microsoft.Teams.Shifts"
+      "SubArea": ""
     },
   {
       "ChangeList": [
