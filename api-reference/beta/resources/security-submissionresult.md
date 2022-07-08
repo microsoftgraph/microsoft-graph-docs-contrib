@@ -81,26 +81,26 @@ Represents the result of a review after the threat submission is processed by Mi
 | blockedRecipientByTenantAllowBlockList | The reported outgoing message was blocked as the recipient is on the tenant allow block list. |
 | allowedByConnection                    | The reported message was allowed as the sending IP is on the hosted connection filter policy. |
 | blockedByConnection                    | The reported message was blocked as the sending IP is on the hosted connection filter policy. |
-| allowedByExchangeTransportRule         | The reported message was allowed as the organization has a related exchange transport rule. |
-| blockedByExchangeTransportRule         | The reported message was blocked as the organization has a related exchange transport rule. |
-| quarantineReleased                     | The reported message was blocked as intended but then released from quarantine. |
-| quarantineReleasedThenBlocked          | The reported message was blocked as intended but then released from quarantine and blocked by user setting. |
-| junkMailRuleDisabled                   | The reported message was bound to be delivered to junk, but junk folder has been disabled. |
-| allowedByUserSetting                   | The reported message was allowed due to user safe or trust sender setting. |
-| blockedByUserSetting                   | The reported message was blocked due to user blocked or trusted sender setting. |
-| allowedByTenant                        | The reported message is allowed due to tenant policy or settings. |
-| blockedByTenant                        | The reported message is blocked due to tenant policy or settings. |
-| invalidFalsePositive                   | The reported message is already allowed.                      |
-| invalidFalseNegative                   | The reported message is already blocked.                     |
-| spoofBlocked                           | The reported message has been determined as spoof by our system and blocked.                    |
-| goodReclassifiedAsBad                  | The reported message has already been determined bad by our system. |
-| goodReclassifiedAsBulk                 | The reported message has already been determined bulk by our system. |
-| goodReclassifiedAsGood                 | The reported message has already been determined good by our system. |
-| goodReclassifiedAsCannotMakeDecision   | At the moment Microsoft cannot reach a verdict on the reported message and so please submit again.   |
-| badReclassifiedAsGood                  | The reported message has already been identified as good by the system. |
-| badReclassifiedAsBulk                  | The reported message has already been identified as bulk by the system. |
-| badReclassifiedAsBad                   | The reported message has already been identified as bad by the system. |
-| badReclassifiedAsCannotMakeDecision    | At the moment Microsoft cannot reach a verdict on the reported message and so please submit again. |
+| allowedByExchangeTransportRule         | The reported message was allowed as the organization has a related exchange transport rule. Remove the exchange transport rule so that EOP/MDO can filter accordingly. |
+| blockedByExchangeTransportRule         | The reported message was blocked as the organization has a related exchange transport rule. Remove the exchange transport rule so that EOP/MDO can filter accordingly. |
+| quarantineReleased                     | The reported message was released from Quarantine despite being quarantined by EOP/MDO |
+| quarantineReleasedThenBlocked          | The reported message was blocked by user setting after being released from Quarantine. Remove the user setting so that the mail can be released to the inbox |
+| junkMailRuleDisabled                   | The reported message was bound to be delivered to the junk folder, but junk folder has been disabled. Turn on junk folder setting so that EOP/MDO can deliver emails accordingly |
+| allowedByUserSetting                   | The reported message was allowed due to user safe or trusted sender setting in outlook. Remove the safe or trusted sender setting so that EOP/MDO can filter accordingly |
+| blockedByUserSetting                   | The reported message was blocked due to user blocked or trusted sender setting in outlook. Remove the blocked or trusted sender setting so that EOP/MDO can filter accordingly |
+| allowedByTenant                        | The reported message was allowed due to tenant policy or policy action settings. Review the EOP/MDO policy or policy action settings so that EOP/MDO can filter accordingly |
+| blockedByTenant                        | The reported message was blocked due to tenant policy or policy action settings. Review the EOP/MDO policy or policy action settings so that EOP/MDO can filter accordingly |
+| invalidFalsePositive                   | The reported message is already allowed by EOP/MDO.                  |
+| invalidFalseNegative                   | The reported message is already blocked by EOP/MDO.                     |
+| spoofBlocked                           | The reported message has been determined by spoof by our system and so blocked. Create a spoof allow in Tenant allow/block list so that EOP/MDO can allow emails from this spoofed sender    |
+| goodReclassifiedAsBad                  | Microsoft finds the reported message to be malicious. Existing emails have been quarantined. The phish and malware filters will learn from this after a few weeks. Till then to block it, create a block entry in Tenant allow/block list if not done already |
+| goodReclassifiedAsBulk                 | Microsoft finds the reported message to be spam. The spam and bulk filters will learn from this after a few weeks. Till then to block it, create a block entry in Tenant allow/block list if not done already |
+| goodReclassifiedAsGood                 | Microsoft finds the reported message to be clean. If you disagree with this verdict resubmit the email. Till then to block it, create a block entry in Tenant allow/block list if not done already |
+| goodReclassifiedAsCannotMakeDecision   | Microsoft cannot reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately block it if not done already. |
+| badReclassifiedAsGood                  | Microsoft finds the reported message to be clean. Existing emails have been released. The phish and malware filters will learn from this after a few weeks. Till then to allow it, create an allow entry in Tenant allow/block list if not done already |
+| badReclassifiedAsBulk                  | Microsoft finds the reported message to be spam. The spam and bulk filters will learn from this after a few weeks. Till then to allow it, create an allow entry in Tenant allow/block list if not done already |
+| badReclassifiedAsBad                   | Microsoft finds the reported message to be malicious. If you disagree with this verdict resubmit the email. Till then to allow it, create an allow entry in Tenant allow/block list if not done already |
+| badReclassifiedAsCannotMakeDecision    | Microsoft cannot reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately allow it if not done already. |
 | unknownFutureValue                     | Any future value which is not in use now.                     |
 
 
