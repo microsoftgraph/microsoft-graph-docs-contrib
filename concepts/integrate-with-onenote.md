@@ -84,12 +84,6 @@ Find out about a few other OneNote features that are exposed only on the OneNote
 - [Use the OneNote save dialog on your webpages](/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
 - [Subscribe to webhooks](/previous-versions/office/office-365-api/how-to/onenote-sync)
 
-## API reference
-Looking for the API reference for this service?
-
-- [OneNote API in Microsoft Graph v1.0](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0&preserve-view=true)
-- [OneNote API in Microsoft Graph beta](/graph/api/resources/onenote-api-overview?view=graph-rest-beta&preserve-view=true)
-
 ## Next steps
 
 Use the [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the OneNote APIs with your own OneNote notebooks.
