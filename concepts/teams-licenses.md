@@ -120,4 +120,7 @@ The seeded capacity differs by API; see [`model=A` requirements](#modela-require
 
 In October 2021 we [communicated](https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-microsoft-graph-export-api-for-microsoft-teams-messages/#license-requirements-for-microsoft-graph-api-for-teams-export-and-dlp) upcoming charges for the consumption of these APIs; on July 5th 2022, these prices take effect as  [previously announced](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). If your applications are or will be calling any of these APIs, we require you to complete this [request form](https://aka.ms/teamsgraph/protectedApis_az) providing an active Azure subscription. When the [form](https://aka.ms/teamsgraph/protectedApis_az) has been submitted to register an application, you can continue using these APIs. We will follow up with next steps to onboard your application to billing. 
 
-Please note that the organization that owns the app registration is responsible for the payment and the Azure subscription should also be active in the same tenant. For multitenant apps, the organization might be different than the organization that runs the app.
+Please note that the organization that owns the [app registration](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+is responsible for the payment. The Azure subscription must be active in the same tenant.
+For [multitenant apps](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps), 
+the organization that owns the app registration can be different than the organization that runs the app.
