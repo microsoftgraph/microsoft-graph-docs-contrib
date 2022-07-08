@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstance: applyDecisions"
 description: "Apply decisions on an accessReviewInstance."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
