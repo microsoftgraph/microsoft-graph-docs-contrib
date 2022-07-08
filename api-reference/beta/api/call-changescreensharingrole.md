@@ -1,7 +1,7 @@
 ---
 title: "call: changeScreenSharingRole"
 description: "Allow applications to share screen content with the participants of a group call."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -88,6 +88,10 @@ Content-Length: 24
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-changescreensharingrole-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-changescreensharingrole-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

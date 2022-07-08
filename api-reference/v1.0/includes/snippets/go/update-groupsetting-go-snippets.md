@@ -15,12 +15,9 @@ requestBody.SetValues( []SettingValue {
 		"value": "true",
 	}
 }
-options := &msgraphsdk.GroupSettingRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
 groupSettingId := "groupSetting-id"
-graphClient.GroupsById(&groupId).SettingsById(&groupSettingId).Patch(options)
+graphClient.GroupsById(&groupId).SettingsById(&groupSettingId).Patch(requestBody)
 
 
 ```

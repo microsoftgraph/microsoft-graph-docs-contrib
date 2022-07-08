@@ -1,7 +1,7 @@
 ---
 title: "tenantTag: assignTag"
 description: "Assign the tenant tag to the specified managed tenants."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType

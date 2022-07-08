@@ -1,0 +1,49 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/api/unifiedroleassignmentschedulerequest-list.md",
+      "redirect_url": "/graph/api/rbacapplication-list-roleassignmentschedulerequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md",
+      "redirect_url": "/graph/api/rbacapplication-post-roleassignmentschedulerequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/unifiedroleassignmentschedule-list.md",
+      "redirect_url": "/graph/api/rbacapplication-list-roleassignmentschedules?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/unifiedroleassignmentscheduleinstance-list.md",
+      "redirect_url": "/graph/api/rbacapplication-list-roleassignmentscheduleinstances?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/unifiedroleeligibilityschedulerequest-list.md",
+      "redirect_url": "/graph/api/rbacapplication-list-roleeligibilityschedulerequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md",
+      "redirect_url": "/graph/api/rbacapplication-post-roleeligibilityschedulerequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/unifiedroleeligibilityschedule-list.md",
+      "redirect_url": "/graph/api/rbacapplication-list-roleeligibilityschedules?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/unifiedroleeligibilityscheduleinstance-list.md",
+      "redirect_url": "/graph/api/rbacapplication-list-roleeligibilityscheduleinstances?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/unifiedRoleManagementpolicyassignment-list.md",
+      "redirect_url": "/graph/api/policyroot-list-rolemanagementpolicyassignments?view=graph-rest-beta",
+      "redirect_document_id": true
+    }
+  ]
+}

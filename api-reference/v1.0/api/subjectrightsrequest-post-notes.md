@@ -17,12 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|SubjectRightsRequest.ReadWrite.All*|
+|Delegated (work or school account)|SubjectRightsRequest.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported|
-
->[!IMPORTANT]
->Permissions marked with an asterisk (*) are currently not available. For details, see [Known issues](/graph/known-issues#compliance).
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -47,7 +44,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|content|[microsoft.graph.itemBody](../resources/itembody.md)|The note content for the request|
+|content|[microsoft.graph.itemBody](../resources/itembody.md)|The note content for the request.|
 
 
 ## Response
@@ -57,6 +54,8 @@ If successful, this method returns a `201 Created` response code and an [authore
 ## Examples
 
 ### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,9 +97,10 @@ Content-Type: application/json
 
 ---
 
-
-
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

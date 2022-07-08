@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var addMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
 {
-	new Microsoft.Graph.WindowsUpdates.UpdatableAsset
+	new Microsoft.Graph.WindowsUpdates.AzureADDevice
 	{
 		Id = "String (identifier)"
 	}
@@ -16,7 +16,7 @@ var addMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
 
 var removeMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
 {
-	new Microsoft.Graph.WindowsUpdates.UpdatableAsset
+	new Microsoft.Graph.WindowsUpdates.AzureADDevice
 	{
 		Id = "String (identifier)"
 	}
@@ -24,7 +24,7 @@ var removeMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
 
 var addExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
 {
-	new Microsoft.Graph.WindowsUpdates.UpdatableAsset
+	new Microsoft.Graph.WindowsUpdates.AzureADDevice
 	{
 		Id = "String (identifier)"
 	}
@@ -32,7 +32,7 @@ var addExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
 
 var removeExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
 {
-	new Microsoft.Graph.WindowsUpdates.UpdatableAsset
+	new Microsoft.Graph.WindowsUpdates.AzureADDevice
 	{
 		Id = "String (identifier)"
 	}

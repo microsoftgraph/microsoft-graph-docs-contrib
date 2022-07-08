@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# activateService resource type
+# activateService resource type (deprecated)
 
 Namespace: microsoft.graph
 
@@ -20,8 +20,8 @@ Represents a service to be activated.
 | Property         | Type         | Description                           |
 | ----------------- | ------------ | ------------------------------------- |
 | service| String | The name of the service to activate. |
-| servicePlanId | GUID | The plan identifier of the service plan to activate. |
-| skuId | GUID | The SKU identifier of the service plan. |
+| servicePlanId | Guid | The plan identifier of the service plan to activate. |
+| skuId | Guid | The SKU identifier of the service plan. |
 
 ## JSON representation
 
@@ -37,9 +37,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-    "service": "string",
-    "skuId": "guid",
-    "servicePlanId": "guid"
+    "service": "String",
+    "skuId": "Guid",
+    "servicePlanId": "Guid"
 }
 
 ```

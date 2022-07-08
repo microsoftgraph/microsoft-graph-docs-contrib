@@ -12,10 +12,10 @@ requestParameters := &msgraphsdk.PendingAccessReviewInstancesRequestBuilderGetQu
 	Top: 100,
 	Skip: 0,
 }
-options := &msgraphsdk.PendingAccessReviewInstancesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.PendingAccessReviewInstancesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().PendingAccessReviewInstances().Get(options)
+result, err := graphClient.Me().PendingAccessReviewInstances().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

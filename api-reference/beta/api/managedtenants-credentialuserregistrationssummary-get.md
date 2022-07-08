@@ -1,7 +1,7 @@
 ---
 title: "Get credentialUserRegistrationsSummary"
 description: "Read the properties and relationships of a credentialUserRegistrationsSummary object."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
@@ -102,6 +102,7 @@ Content-Type: application/json
     "mfaAndSsprCapableUserCount": 0,
     "ssprEnabledUserCount": 1,
     "mfaRegisteredUserCount": 0,
+    "mfaExcludedUserCount": 2,
     "ssprRegisteredUserCount": 0,
     "totalUserCount": 7,
     "securityDefaultsEnabled": false,

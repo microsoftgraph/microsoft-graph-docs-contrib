@@ -1,23 +1,23 @@
 ---
-title: "Update profilephoto"
-description: "Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there"
-ms.localizationpriority: high
+title: "Update profilePhoto"
+description: "Update the photo for the signed-in user, or the specified group or contact."
+ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: ""
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
-# Update profilephoto
+# Update profilePhoto
 
 Namespace: microsoft.graph
 
-Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there
-is currently a limit of 4MB on the total size of each REST request, this limits the size of the photo
-you can add to under 4MB.
+Update the photo for the signed-in **user**, or the specified **group** or **contact**.
+
+Due to the current limit of 4 MB on the total size of each REST request, the size of the photo you can add is also limited to 4 MB. The following are the supported dimensions for HD photos on Exchange Online: `48x48`, `64x64`, `96x96`, `120x120`, `240x240`, `360x360`, `432x432`, `504x504`, and `648x648`.
 
 You can use either PATCH or PUT for this operation in version 1.0.
 
-> **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
+> **Note:** This operation supports only a user's work or school mailboxes and not personal mailboxes.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,9 +46,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)      |   Not supported.            |
 |Application      |    Contacts.ReadWrite           |
 
-> **Notes:** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service).
->
-> There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> [!NOTE]
+> 1. To update the photo of any user in the organization, your app must have the *User.ReadWrite.All* application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service). Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
+> 2. There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> 3. Updating a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -82,8 +83,8 @@ In the request body, include the binary data of the photo in the request body.
 
 If successful, this method returns a `200 OK` response code.
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -111,8 +112,9 @@ Binary data for the image
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->

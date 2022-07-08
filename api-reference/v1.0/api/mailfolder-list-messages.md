@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages
 [!INCLUDE [sample-code](../includes/snippets/go/mailfolder-get-messages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/mailfolder-get-messages-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

@@ -3,7 +3,7 @@ title: "List secureScoreControlProfiles"
 description: "Retrieve the properties and relationships of a secureScoreControlProfiles object."
 author: "preetikr"
 ms.localizationpriority: medium
-ms.prod: ""
+ms.prod: security
 doc_type: apiPageType
 ---
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-securescorecontrolprofiles-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-securescorecontrolprofiles-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

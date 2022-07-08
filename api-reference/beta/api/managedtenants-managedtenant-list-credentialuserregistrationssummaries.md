@@ -1,7 +1,7 @@
 ---
 title: "List credentialUserRegistrationsSummaries"
 description: "Get a list of the credentialUserRegistrationsSummary objects and their properties."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
@@ -105,6 +105,7 @@ Content-Type: application/json
       "mfaAndSsprCapableUserCount": 2,
       "ssprEnabledUserCount": 9,
       "mfaRegisteredUserCount": 3,
+      "mfaExcludedUserCount": 0,
       "ssprRegisteredUserCount": 2,
       "totalUserCount": 9,
       "securityDefaultsEnabled": false,
@@ -118,6 +119,7 @@ Content-Type: application/json
       "mfaAndSsprCapableUserCount": 0,
       "ssprEnabledUserCount": 1,
       "mfaRegisteredUserCount": 0,
+      "mfaExcludedUserCount": 2,
       "ssprRegisteredUserCount": 0,
       "totalUserCount": 7,
       "securityDefaultsEnabled": false,

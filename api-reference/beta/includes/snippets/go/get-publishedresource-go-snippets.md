@@ -10,12 +10,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.PublishedResourceRequestBuilderGetQueryParameters{
 	Expand: "agentGroups",
 }
-options := &msgraphsdk.PublishedResourceRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.PublishedResourceRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 publishedResourceId := "publishedResource-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResourcesById(&publishedResourceId).Get(options)
+result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResourcesById(&publishedResourceId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

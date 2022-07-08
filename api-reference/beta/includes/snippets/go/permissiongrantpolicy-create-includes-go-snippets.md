@@ -10,13 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewPermissionGrantConditionSet()
 permissionType := "delegated"
 requestBody.SetPermissionType(&permissionType)
-clientApplicationsFromVerifiedPublisherOnly := true
-requestBody.SetClientApplicationsFromVerifiedPublisherOnly(&clientApplicationsFromVerifiedPublisherOnly)
-options := &msgraphsdk.IncludesRequestBuilderPostOptions{
-	Body: requestBody,
-}
+certifiedClientApplicationsOnly := true
+requestBody.SetCertifiedClientApplicationsOnly(&certifiedClientApplicationsOnly)
 permissionGrantPolicyId := "permissionGrantPolicy-id"
-result, err := graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Includes().Post(options)
+result, err := graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Includes().Post(requestBody)
 
 
 ```

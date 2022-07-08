@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 let roleManagementPolicyAssignments = await client.api('/policies/roleManagementPolicyAssignments')
 	.version('beta')
+	.filter('scopeId eq \'/\' and scopeType eq \'Directory\'')
 	.get();
 
 ```

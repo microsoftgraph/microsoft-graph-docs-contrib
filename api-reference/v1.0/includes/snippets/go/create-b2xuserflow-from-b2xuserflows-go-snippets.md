@@ -14,10 +14,7 @@ userFlowType := "signUpOrSignIn"
 requestBody.SetUserFlowType(&userFlowType)
 userFlowTypeVersion := float32(1)
 requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion)
-options := &msgraphsdk.B2xUserFlowsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().B2xUserFlows().Post(options)
+result, err := graphClient.Identity().B2xUserFlows().Post(requestBody)
 
 
 ```

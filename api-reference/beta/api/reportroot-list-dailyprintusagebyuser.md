@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser
 [!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-endpoints-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

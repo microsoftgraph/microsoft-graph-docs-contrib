@@ -19,11 +19,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"mailNickname": "golfassist",
 	"securityEnabled": false,
 }
-options := &msgraphsdk.MembersRequestBuilderPostOptions{
-	Body: requestBody,
-}
 administrativeUnitId := "administrativeUnit-id"
-graphClient.AdministrativeUnitsById(&administrativeUnitId).Members().Post(options)
+graphClient.AdministrativeUnitsById(&administrativeUnitId).Members().Post(requestBody)
 
 
 ```

@@ -3,7 +3,7 @@ title: "Create personInterest"
 description: "Create a new personInterest."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: people
 doc_type: "apiPageType"
 ---
 
@@ -105,6 +105,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-personinterest-from-profile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-personinterest-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

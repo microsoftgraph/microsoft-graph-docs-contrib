@@ -3,7 +3,7 @@ title: "page resource type"
 description: "A page in a OneNote notebook."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: ""
+ms.prod: notes
 doc_type: resourcePageType
 ---
 

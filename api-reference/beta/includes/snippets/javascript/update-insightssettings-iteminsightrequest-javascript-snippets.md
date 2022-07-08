@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const itemInsightsSettings = {
+const insightsSettings = {
   disabledForGroup: 'edbfe4fb-ec70-4300-928f-dbb2ae86c981'
 };
 
 await client.api('/organization/{organizationId}/settings/itemInsights')
 	.version('beta')
-	.update(itemInsightsSettings);
+	.update(insightsSettings);
 
 ```

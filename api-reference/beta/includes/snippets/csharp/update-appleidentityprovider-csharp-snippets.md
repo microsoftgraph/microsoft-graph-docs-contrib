@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var identityProviderBase = new IdentityProviderBase
+var identityProviderBase = new SocialIdentityProvider
 {
 	DisplayName = "Apple"
 };

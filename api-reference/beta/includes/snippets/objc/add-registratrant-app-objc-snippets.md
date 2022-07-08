@@ -11,10 +11,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphMeetingRegistrant *meetingRegistrant = [[MSGraphMeetingRegistrant alloc] init];
-[meetingRegistrant setFirstName:@"Lisa"];
-[meetingRegistrant setLastName:@"Adkins"];
-[meetingRegistrant setEmail:@"lisa.adkins@contoso.com"];
+MSGraphMeetingRegistrantBase *meetingRegistrantBase = [[MSGraphMeetingRegistrantBase alloc] init];
+[meetingRegistrantBase setFirstName:@"Lisa"];
+[meetingRegistrantBase setLastName:@"Adkins"];
+[meetingRegistrantBase setEmail:@"lisa.adkins@contoso.com"];
 NSMutableArray *customQuestionAnswersList = [[NSMutableArray alloc] init];
 MSGraphCustomQuestionAnswer *customQuestionAnswers = [[MSGraphCustomQuestionAnswer alloc] init];
 [customQuestionAnswers setQuestionId:@"MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU="];
@@ -24,11 +24,11 @@ MSGraphCustomQuestionAnswer *customQuestionAnswers = [[MSGraphCustomQuestionAnsw
 [customQuestionAnswers setQuestionId:@"MSM5M2E2OWQ1Ni1jZTc4LTQDAwMjBfZGlkX3gwMDIwX3lvdV94MDAyMF8="];
 [customQuestionAnswers setValue:@"Internet"];
 [customQuestionAnswersList addObject: customQuestionAnswers];
-[meetingRegistrant setCustomQuestionAnswers:customQuestionAnswersList];
+[meetingRegistrantBase setCustomQuestionAnswers:customQuestionAnswersList];
 
 NSError *error;
-NSData *meetingRegistrantData = [meetingRegistrant getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:meetingRegistrantData];
+NSData *meetingRegistrantBaseData = [meetingRegistrantBase getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:meetingRegistrantBaseData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

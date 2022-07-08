@@ -10,22 +10,24 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAccessPackageResourceRoleScope()
 accessPackageResourceRole := msgraphsdk.NewAccessPackageResourceRole()
 requestBody.SetAccessPackageResourceRole(accessPackageResourceRole)
-accessPackageResourceRole.SetAdditionalData(map[string]interface{}{
-	"originId": "4",
-	"originSystem": "SharePointOnline",
-}
+originId := "4"
+accessPackageResourceRole.SetOriginId(&originId)
+originSystem := "SharePointOnline"
+accessPackageResourceRole.SetOriginSystem(&originSystem)
+accessPackageResource := msgraphsdk.NewAccessPackageResource()
+accessPackageResourceRole.SetAccessPackageResource(accessPackageResource)
+id := "53c71803-a0a8-4777-aecc-075de8ee3991"
+accessPackageResource.SetId(&id)
 accessPackageResourceScope := msgraphsdk.NewAccessPackageResourceScope()
 requestBody.SetAccessPackageResourceScope(accessPackageResourceScope)
-accessPackageResourceScope.SetAdditionalData(map[string]interface{}{
-	"id": "5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33",
-	"originId": "https://microsoft.sharepoint.com/portals/Community",
-	"originSystem": "SharePointOnline",
-}
-options := &msgraphsdk.AccessPackageResourceRoleScopesRequestBuilderPostOptions{
-	Body: requestBody,
-}
+id := "5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33"
+accessPackageResourceScope.SetId(&id)
+originId := "https://microsoft.sharepoint.com/portals/Community"
+accessPackageResourceScope.SetOriginId(&originId)
+originSystem := "SharePointOnline"
+accessPackageResourceScope.SetOriginSystem(&originSystem)
 accessPackageId := "accessPackage-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).AccessPackageResourceRoleScopes().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).AccessPackageResourceRoleScopes().Post(requestBody)
 
 
 ```

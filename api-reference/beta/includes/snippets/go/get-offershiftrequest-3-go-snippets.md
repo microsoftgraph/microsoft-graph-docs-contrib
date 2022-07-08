@@ -17,12 +17,11 @@ requestBody.SetRecipientUserId(&recipientUserId)
 headers := map[string]string{
 	"Authorization": "Bearer {token}"
 }
-options := &msgraphsdk.OfferShiftRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.OfferShiftRequestsRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().OfferShiftRequests().Post(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().OfferShiftRequests().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

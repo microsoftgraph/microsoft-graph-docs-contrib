@@ -21,27 +21,27 @@ Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
-| Method                                                   | Return type       |    Description
-|:---------------------------------------------------------|:------------------|:---------------------
-| [Create group](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a group in a term [store].
-| [Get group](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Retrieve the data of a group in a term [store].
-| [Delete group](../api/termstore-group-delete.md)                     | None |  Delete a group in a term [store].
+| Method                                                   | Return type       |    Description|
+|:---------------------------------------------------------|:------------------|:---------------------|
+| [Create group](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a group in a term [store].|
+| [Get group](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Retrieve the data of a group in a term [store].|
+| [Delete group](../api/termstore-group-delete.md)                     | None |  Delete a group in a term [store].|
 
 ## Properties
 
-| Property             | Type               | Description
-|:---------------------|:-------------------|:------------------------------------
-| createdDateTime      | DateTimeOffset     | Date and time of group creation. Read-only.
-| description          | string             | Description giving details on the term usage.
-| id                   | string             | Unique identifier of group. Read-Only.
-| displayName          | string             | Name of group.
-| scope                | string              | Returns type of group. Possible values are 'global', 'system' and 'siteCollection'.
-| parentSiteId         | string             | Id of the parent site of this group.
+| Property             | Type               | Description|
+|:---------------------|:-------------------|:------------------------------------|
+| createdDateTime      | DateTimeOffset     | Date and time of the group creation. Read-only.|
+| description          | string             | Description that gives details on the term usage.|
+| id                   | string             | Unique identifier of the group. Read-Only.|
+| displayName          | string             | Name of the group.|
+| scope                | string              | Returns the type of the group. Possible values are `global`, `system`, and `siteCollection`.|
+| parentSiteId         | string             | ID of the parent site of this group.|
 
 ## Relationships
-| Relationship       | Type                        | Description
-|:-------------------|:----------------------------|:--------------------------
-| sets           | [microsoft.graph.termStore.set][] collection | All sets under the group in a term [store].
+| Relationship       | Type                        | Description|
+|:-------------------|:----------------------------|:--------------------------|
+| sets           | [microsoft.graph.termStore.set][] collection | All sets under the group in a term [store].|
 
 ## JSON representation
 

@@ -11,12 +11,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphItemInsightsSettings *itemInsightsSettings = [[MSGraphItemInsightsSettings alloc] init];
-[itemInsightsSettings setDisabledForGroup:@"edbfe4fb-ec70-4300-928f-dbb2ae86c981"];
+MSGraphInsightsSettings *insightsSettings = [[MSGraphInsightsSettings alloc] init];
+[insightsSettings setDisabledForGroup:@"edbfe4fb-ec70-4300-928f-dbb2ae86c981"];
 
 NSError *error;
-NSData *itemInsightsSettingsData = [itemInsightsSettings getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:itemInsightsSettingsData];
+NSData *insightsSettingsData = [insightsSettings getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:insightsSettingsData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

@@ -105,18 +105,18 @@ Relationships (or navigation properties) are a key concept in Azure AD Graph and
 
 Relationships also define memberships, such as the groups a user belongs to, the members belonging to a group or a directory role, and so on.
 
-Azure AD Graph requests use `$link` to indicate relationships between resources.  In Microsoft Graph this uses the ODATA 4.01 `$ref` notation instead.
+Azure AD Graph requests use `$links` to indicate relationships between resources.  In Microsoft Graph this uses the OData  v4.01 `$ref` notation instead.
 
 The following table shows several examples:
 
 | Task | Azure AD Graph | Microsoft Graph |
 |------|----------------|-----------------|
-| Add member        | ```POST /groups/{id}/$link/members```        | ```POST /groups/{id}/members/$ref```        |
-| List member links | ```GET /groups/{id}/$link/members```         | ```GET /groups/{id}/members/$ref```         |
-| List members      | ```GET /groups/{id}/members```                | ```GET /groups/{id}/members```               |
-| Remove member     | ```DELETE /groups/{id}/$link/members/{id}``` | ```DELETE /groups/{id}/members/{id}/$ref``` |
+| Add member        | `POST /groups/{id}/$links/members`        | `POST /groups/{id}/members/$ref`        |
+| List member links | `GET /groups/{id}/$links/members`         | `GET /groups/{id}/members/$ref`         |
+| List members      | `GET /groups/{id}/members`                | `GET /groups/{id}/members`               |
+| Remove member     | `DELETE /groups/{id}/$links/members/{id}` | `DELETE /groups/{id}/members/{id}/$ref` |
 
-When migrating your apps to Microsoft Graph, look for requests that use `$link` to associate resources; change these to use `$ref` instead.
+When migrating your apps to Microsoft Graph, look for requests that use `$links` to associate resources; change these to use `$ref` instead.
 
 ## Next Steps
 

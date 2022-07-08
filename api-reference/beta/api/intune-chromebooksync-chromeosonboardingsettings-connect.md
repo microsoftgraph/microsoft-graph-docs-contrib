@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |ownerUserPrincipalName|String|Not yet documented|
-|serviceAccountCredentials|String|Not yet documented|
+|ownerAccessToken|String|Not yet documented|
 
 
 
@@ -64,11 +64,11 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/chromeOSOnboardingSettings/connect
 
 Content-type: application/json
-Content-length: 136
+Content-length: 118
 
 {
   "ownerUserPrincipalName": "Owner User Principal Name value",
-  "serviceAccountCredentials": "Service Account Credentials value"
+  "ownerAccessToken": "Owner Access Token value"
 }
 ```
 
@@ -83,6 +83,7 @@ Content-Length: 29
   "value": "inprogress"
 }
 ```
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "softwareUpdateReference resource type"
 description: "Represents specific update content."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

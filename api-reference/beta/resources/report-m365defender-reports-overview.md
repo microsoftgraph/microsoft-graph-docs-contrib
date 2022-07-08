@@ -21,8 +21,8 @@ Microsoft Defender for Office 365 belongs to the [Microsoft 365 Defender](/micro
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/overview)
-- [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
-- [Microsoft Cloud App Security](/cloud-app-security/)
+- [Microsoft Defender for Identity](/defender-for-identity/)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/)
 
 Microsoft 365 Defender is a unified enterprise defense suite that helps detect security risks, investigate attacks to an organization, and prevent harmful activities automatically. It provides a central administrators portal ([https://security.microsoft.com/](https://security.microsoft.com)) that combines protection, detection, investigation, and response to _email_, _collaboration_, _identity_, and _device_ threats.
 

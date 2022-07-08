@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.TeamsAppsRequestBuilderPostQueryParameters{
 	RequiresReview: true,
 }
-options := &msgraphsdk.TeamsAppsRequestBuilderPostOptions{
-	Q: requestParameters,
+options := &msgraphsdk.TeamsAppsRequestBuilderPostRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-graphClient.AppCatalogs().TeamsApps().Post(options)
+graphClient.AppCatalogs().TeamsApps().PostWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

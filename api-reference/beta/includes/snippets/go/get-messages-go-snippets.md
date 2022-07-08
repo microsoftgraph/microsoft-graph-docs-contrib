@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.MessagesRequestBuilderGetQueryParameters{
 	Select: "sender,subject",
 }
-options := &msgraphsdk.MessagesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.MessagesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Messages().Get(options)
+result, err := graphClient.Me().Messages().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

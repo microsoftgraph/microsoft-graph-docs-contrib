@@ -2,7 +2,7 @@
 title: "Proxy provider"
 description: "The proxy provider allows you to use your own server-side authentication with the Microsoft Graph Toolkit."
 ms.localizationpriority: medium
-author: nmetulev
+author: sebastienlevert
 ---
 
 # Proxy provider

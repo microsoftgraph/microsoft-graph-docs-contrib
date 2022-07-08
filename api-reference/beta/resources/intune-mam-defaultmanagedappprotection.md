@@ -129,6 +129,12 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |deviceLockRequired|Boolean|Defines if any kind of lock must be required on device. (android only)|
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
 |connectToVpnOnLaunch|Boolean|Whether the app should connect to the configured VPN on launch (Android only).|
+|appActionIfDevicePasscodeComplexityLessThanLow|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of low complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfDevicePasscodeComplexityLessThanMedium|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of medium complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfDevicePasscodeComplexityLessThanHigh|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of high complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
+|requireClass3Biometrics|Boolean|Require user to apply Class 3 Biometrics on their Android device.|
+|requirePinAfterBiometricChange|Boolean|A PIN prompt will override biometric prompts if class 3 biometrics are updated on the device.|
+|fingerprintAndBiometricEnabled|Boolean|Indicate to the client to enable both biometrics and fingerprints for the app.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -269,9 +275,16 @@ Here is a JSON representation of the resource.
   "wipeAfterCompanyPortalUpdateDeferralInDays": 1024,
   "deviceLockRequired": true,
   "appActionIfDeviceLockNotSet": "String",
-  "connectToVpnOnLaunch": true
+  "connectToVpnOnLaunch": true,
+  "appActionIfDevicePasscodeComplexityLessThanLow": "String",
+  "appActionIfDevicePasscodeComplexityLessThanMedium": "String",
+  "appActionIfDevicePasscodeComplexityLessThanHigh": "String",
+  "requireClass3Biometrics": true,
+  "requirePinAfterBiometricChange": true,
+  "fingerprintAndBiometricEnabled": true
 }
 ```
+
 
 
 

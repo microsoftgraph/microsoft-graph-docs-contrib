@@ -7,7 +7,7 @@ ms.prod: "sharepoint"
 description: "Search the hierarchy of items for items matching a query."
 doc_type: apiPageType
 ---
-# Search for a DriveItems within a drive
+# Search for DriveItems within a drive
 
 Namespace: microsoft.graph
 

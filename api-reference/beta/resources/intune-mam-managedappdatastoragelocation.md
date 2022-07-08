@@ -24,6 +24,8 @@ Storage locations where managed apps can potentially store their data
 |sharePoint|2|SharePoint|
 |box|3|Box|
 |localStorage|6|Local storage on the device|
+|photoLibrary|7|The device's photo library|
+
 
 
 

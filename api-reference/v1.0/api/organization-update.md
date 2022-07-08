@@ -2,7 +2,7 @@
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "KuiGithui"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Organization.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Organization.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Organization.ReadWrite.All |
 
@@ -66,7 +66,7 @@ If successful, this method returns a `204 No Content` response code.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization/{id}
+PATCH https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be684bdd3
 Content-type: application/json
 
 {
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-organization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-organization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

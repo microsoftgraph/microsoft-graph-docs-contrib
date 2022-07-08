@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewIdentityProviderBase()
 displayName := "Apple"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.IdentityProviderBaseRequestBuilderPatchOptions{
-	Body: requestBody,
+requestBody.SetAdditionalData(map[string]interface{}{
+	"@odata.type": "#microsoft.graph.socialIdentityProvider",
 }
 identityProviderBaseId := "identityProviderBase-id"
-graphClient.Identity().IdentityProvidersById(&identityProviderBaseId).Patch(options)
+graphClient.Identity().IdentityProvidersById(&identityProviderBaseId).Patch(requestBody)
 
 
 ```
