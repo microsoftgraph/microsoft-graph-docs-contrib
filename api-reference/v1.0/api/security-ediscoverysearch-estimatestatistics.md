@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 ## Response
 
 If the estimate is started successfully, this action returns a `202 Accepted` response code.
-The response will also contain a `Location` header, which contains the location of the [estimateStatisticsOperation](../resources/security-ediscoveryestimateoperation.md) that was created to handle the estimate. Check the status of the estimate operation by making a GET request to the location.
+The response will also contain a `Location` header, which contains the location of the [microsoft.graph.security.estimateStatisticsOperation](../resources/security-ediscoveryestimateoperation.md) that was created to handle the estimate. Check the status of the estimate operation by making a GET request to the location.
 
 ## Examples
 
@@ -61,7 +61,7 @@ POST https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-41
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

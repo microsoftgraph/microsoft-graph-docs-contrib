@@ -53,7 +53,7 @@ Alternatively use the webUrl directly, "dataSource": {"@odata.type": "microsoft.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object in the response body.
 
 ## Examples
 

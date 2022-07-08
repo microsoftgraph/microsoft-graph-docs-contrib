@@ -53,7 +53,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySea
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an updated [ediscoverySearch](../resources/security-ediscoverysearch.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) object in the response body.
 
 ## Examples
 
@@ -76,7 +76,7 @@ Content-Type: application/json
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

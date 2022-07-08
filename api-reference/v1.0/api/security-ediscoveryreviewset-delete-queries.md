@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /ediscoveryExportOperation/reviewSetQuery/$ref
+DELETE /security/cases/ediscoverycases/{eDiscoveryCaseId}}/reviewSets/{ediscoveryReviewSetId}/queries/{eDiscoveryReviewSetQueryId}
 ```
 
 ## Request headers
@@ -55,13 +55,13 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/ediscoveryExportOperation/reviewSetQuery
+DELETE https://graph.microsoft.com/v1.0/security/cases/ediscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/queries/b7f4961d-59b1-444f-a4ec-57f2e5c2bf21
 ```
 
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

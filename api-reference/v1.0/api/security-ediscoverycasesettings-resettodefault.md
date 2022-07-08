@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-41
 ```
 ### Response
 
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -73,5 +72,5 @@ POST https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-41
 -->
 
 ``` http
-HTTP/1.1 202 Accepted
+HTTP/1.1 200 OK
 ```

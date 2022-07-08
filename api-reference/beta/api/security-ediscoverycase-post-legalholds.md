@@ -52,7 +52,7 @@ You can specify the following properties when you create an **ediscoveryHoldPoli
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object in the response body.
 
 ## Examples
 

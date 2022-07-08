@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `204 NO CONTENT` response code and an updated [ediscoveryCase](../resources/security-ediscoverycase.md) object in the response body.
+If successful, this method returns a `204 NO CONTENT` response code and an updated [microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md) object in the response body.
 
 ## Examples
 

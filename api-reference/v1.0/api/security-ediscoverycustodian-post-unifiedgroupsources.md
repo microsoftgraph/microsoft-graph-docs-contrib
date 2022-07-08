@@ -54,7 +54,7 @@ You can specify the following properties when you create an **unifiedGroupSource
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) object in the response body.
 
 ## Examples
 

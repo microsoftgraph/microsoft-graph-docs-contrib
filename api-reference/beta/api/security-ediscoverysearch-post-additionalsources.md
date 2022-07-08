@@ -54,7 +54,7 @@ You can specify the following properties when you create a **dataSource**.
 
 ## Response
 
-If successful, this method returns a `201 Created`.
+If successful, this method returns a `201 Created` and a [microsoft.graph.security.dataSource](../resources/security-datasource.md) object in the response body.
 
 ## Examples
 

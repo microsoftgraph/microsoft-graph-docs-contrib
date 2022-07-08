@@ -52,7 +52,7 @@ You can specify the following properties when you create an **ediscoveryNoncusto
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -75,7 +75,7 @@ Content-Type: application/json
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

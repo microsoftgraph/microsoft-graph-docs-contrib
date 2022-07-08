@@ -56,7 +56,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
-### Example 1. Apply hold to multiple custodians.
+### Example 1: Apply hold to multiple custodians.
 #### Request
 The following is an example of a request.
 <!-- {
@@ -78,7 +78,6 @@ Content-Type: application/json
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -88,7 +87,7 @@ The following is an example of the response
 HTTP/1.1 202 Accepted
 ```
 
-### Example 2. Apply hold to a single custodian.
+### Example 2: Apply hold to a single custodian.
 #### Request
 The following is an example of a request.
 <!-- {
@@ -103,7 +102,6 @@ POST https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-41
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

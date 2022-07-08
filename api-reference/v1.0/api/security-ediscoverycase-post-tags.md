@@ -50,11 +50,11 @@ You can specify the following properties when you create an **ediscoveryReviewTa
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object in the response body.
 
 ## Examples
 
-### Create a tag
+### Example 1: Create a tag
 #### Request
 The following is an example of a request.
 <!-- {
@@ -107,7 +107,7 @@ Content-Type: application/json
 }
 ```
 
-### Create a tag with a parent
+### Example 2: Create a tag with a parent
 #### Request
 The following is an example of a request.
 <!-- {

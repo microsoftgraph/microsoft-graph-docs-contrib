@@ -56,7 +56,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
-### Example 1. Apply hold to multiple non-custodial data sources.
+### Example 1: Apply hold to multiple non-custodial data sources.
 #### Request
 The following is an example of a request.
 <!-- {
@@ -79,7 +79,7 @@ Content-Type: application/json
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -89,7 +89,7 @@ The following is an example of the response
 HTTP/1.1 202 Accepted
 ```
 
-### Example 2. Apply hold to a single non-custodial data source.
+### Example 2: Apply hold to a single non-custodial data source.
 #### Request
 The following is an example of a request.
 <!-- {
@@ -104,7 +104,7 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

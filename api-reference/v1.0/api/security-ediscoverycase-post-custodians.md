@@ -51,7 +51,7 @@ You can specify the following properties when you create an **ediscoveryCustodia
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object in the response body.
 
 ## Examples
 

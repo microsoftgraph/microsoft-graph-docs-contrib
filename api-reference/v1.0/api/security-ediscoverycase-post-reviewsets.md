@@ -51,7 +51,7 @@ You can specify the following properties when you create an **ediscoveryReviewSe
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object in the response body.
 
 ## Examples
 

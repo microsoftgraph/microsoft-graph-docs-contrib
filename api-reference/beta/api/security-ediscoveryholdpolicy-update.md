@@ -51,7 +51,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryH
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an updated [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object in the response body.
 
 ## Examples
 
@@ -74,7 +74,7 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
