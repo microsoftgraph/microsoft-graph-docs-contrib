@@ -1,4 +1,5 @@
 ---
+description: A starting point was created from the Microsoft Graph data connect tutorial.
 ms.localizationpriority: medium
 ---
 

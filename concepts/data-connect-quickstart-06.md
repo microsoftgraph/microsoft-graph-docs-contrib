@@ -1,4 +1,5 @@
 ---
+description: Learn how to approve or deny consent requests as a Microsoft 365 administrator using PowerShell or from the Microsoft 365 admin center.
 ms.localizationpriority: medium
 ---
 

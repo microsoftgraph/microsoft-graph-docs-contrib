@@ -1,4 +1,5 @@
 ---
+description: Learn about how Microsoft Graph data connect augments Microsoft Graph's transactional model.
 ms.localizationpriority: medium
 ---
 

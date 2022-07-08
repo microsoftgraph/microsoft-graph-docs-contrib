@@ -1,4 +1,5 @@
 ---
+description: Learn how to create an Azure Storage account for Microsoft Graph data connect to store the data extracted from Microsoft 365.
 ms.localizationpriority: medium
 ---
 

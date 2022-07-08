@@ -1,4 +1,5 @@
 ---
+description: Learn how to build your first ASP.NET project application to process the data exported from Microsoft Graph data connect.
 ms.localizationpriority: medium
 ---
 
