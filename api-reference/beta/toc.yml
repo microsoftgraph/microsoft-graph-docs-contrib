@@ -15552,6 +15552,24 @@ items:
           href: api/team-completemigration.md
         - name: List permission grants
           href: api/team-list-permissiongrants.md
+        - name: Team template
+          items:
+            - name: Team template
+              href: resources/teamtemplate.md
+            - name: List
+              href: api/teamwork-list-teamtemplates.md
+            - name: List definitions
+              href: api/teamtemplate-list-definitions.md
+        - name: Team template definition
+          items:
+            - name: Team template definition
+              href: resources/teamtemplatedefinition.md
+            - name: List
+              href: api/teamtemplate-list-definitions.md
+            - name: Get
+              href: api/teamtemplatedefinition-get.md
+            - name: Get team definition
+              href: api/teamtemplatedefinition-get-teamdefinition.md
         - name: Deleted team
           href: resources/deletedteam.md
           items:
