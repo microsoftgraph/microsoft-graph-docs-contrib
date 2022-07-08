@@ -1,6 +1,6 @@
 ---
 title: "Use Postman with the Microsoft Graph API"
-description: "Use the Microsoft Graph Postman collection to get started with Microsoft Graph APIs in minutes."
+description: "Postman is an API platform for building and using APIs. Use the Microsoft Graph Postman collection to get started with Microsoft Graph APIs."
 author: "jasonjoh"
 ms.localizationpriority: high
 ---
