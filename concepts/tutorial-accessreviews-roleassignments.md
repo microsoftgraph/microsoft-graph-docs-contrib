@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Use the access reviews API to review access to privileged roles"
-description: "Use the access reviews API to review access to privileged roles"
+description: "Learn how to use the access reviews API to periodically review users and groups with access to privileged roles, including both active and eligible roles."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -8,7 +8,7 @@ ms.prod: "governance"
 
 # Tutorial: Use the access reviews API to review access to privileged roles
 
-The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. One of the most sensitive resources in an organization is privileged roles. With a privileged role, a principal can perform administrative operations. Depending on the privileged role, some operations may have a greater effect on the security posture of the organization. Using the access reviews API, organizations can periodically attest to principals that have access to privileged roles as per the organization policy.
+The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. One of the most sensitive resources in an organization is privileged roles. With a privileged role, a principal can perform administrative operations. Depending on the privileged role, some operations might have a greater effect on the security posture of the organization. Using the access reviews API, organizations can periodically attest to principals that have access to privileged roles as per the organization policy.
 
 Contoso Limited is a growing service provider that has delegated various Azure AD administrator privileges to users, groups, and service principals in the organization. The company needs to ensure only the right assignees have access to privileged roles. The system auditors should also audit the access review history to report on the effectiveness of Contoso's internal controls.
 

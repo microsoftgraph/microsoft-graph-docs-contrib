@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph throttling guidance"
-description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
+description: "Find best practices for maintaining optimal performance of the Microsoft Graph service if an overwhelming number of requests occurs. Includes service-specific limits."
 author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -42,7 +42,7 @@ Whenever the throttling threshold is exceeded, Microsoft Graph responds with a r
 ```http
 HTTP/1.1 429 Too Many Requests
 Content-Type: application/json
-Retry-After: 2.128
+Retry-After: 10
 
 {
   "error": {
@@ -108,7 +108,8 @@ Any request can be evaluated against multiple limits, depending on the scope of 
 > [!NOTE]
 > The specific limits described here are subject to change.
 
-> **Note:** In this section, the term *tenant* refers to the Microsoft 365 organization where the application is installed. This tenant can be the same as the the one where the application was created, in the case of a single tenant application, or it can be different, in the case of a [multi-tenant application](/azure/active-directory/develop/setup-multi-tenant-app).
+> [!NOTE]
+> In this section, the term *tenant* refers to the Microsoft 365 organization where the application is installed. This tenant can be the same as the one where the application was created in the case of a single-tenant application, or it can be different in the case of a [multi-tenant application](/azure/active-directory/develop/setup-multi-tenant-app).
 
 ### Outlook service limits
 
@@ -153,7 +154,8 @@ The preceding limits apply to the following resources:
 
 You can find additional information about best practices in [OneNote API throttling and how to avoid it](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).
 
-**Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+> [!NOTE]
+> The resources listed earlier do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 ### Project Rome service limits
 
@@ -217,7 +219,8 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 | application | 150,000 requests per 20 seconds  | 70,000 requests per 5 minutes|
 | tenant | Not Applicable | 18,000 requests per 5 minutes |
 
-> **Note**: The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
+> [!NOTE]
+> The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
 
 The following table lists base request costs. Any requests not listed have a base cost of 1.
 
@@ -262,7 +265,8 @@ Other factors that affect a request cost:
 - Using `$top` with a value of less than 20 decreases cost by 1
 - Creating a user in an Azure AD B2C tenant increases cost by 4
 
-> **Note:** A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+> [!NOTE]
+> A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
 
 #### Additional headers
 
@@ -273,7 +277,8 @@ Other factors that affect a request cost:
   - Normal - Default if no value is provided. Indicates that the request is default priority.
   - High - Indicates that the request is high priority. Throttling this request causes user-visible failures.
 
-> **Note:** Should requests be throttled, low priority requests will be throttled first, normal priority requests second, and high priority requests last. Using the priority request header does not change the limits.
+> [!NOTE]
+> Should requests be throttled, low priority requests will be throttled first, normal priority requests second, and high priority requests last. Using the priority request header does not change the limits.
 
 ##### Regular responses requests
 
@@ -333,7 +338,8 @@ For email, the resource is a unique network message ID/recipient pair. For examp
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
 
-> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+> [!NOTE]
+> The resources listed earlier do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 ### Insights service limits
 
@@ -394,7 +400,7 @@ The preceding limits apply to the following resources:
 
 ### Files and lists service limits
 
-Service limits for OneDrive, OneDrive for Business, and SharePoint Online are not available. For more information, see [why can't you just tell me the exact throttling limits?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
+For service limits for OneDrive, OneDrive for Business, and SharePoint Online, see [Avoid getting throttled or blocked in SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online).
 
 The preceding information applies to the following resources:
 
@@ -418,7 +424,8 @@ The preceding limits apply to the following resources:
 
 - [dataPolicyOperation](/graph/api/resources/datapolicyoperation)
 
-> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+> [!NOTE]
+> The resources listed earlier do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### Education service limits
@@ -427,7 +434,7 @@ The preceding limits apply to the following resources:
 
 ### Excel service limits
 
-For explanations and best practices related to Excel service throttling, see [Throttling](workbook-best-practice.md#throttling). In addition, the following are some throttling limits.
+For explanations and best practices related to Excel service throttling, see [Reduce throttling errors](workbook-best-practice.md#reduce-throttling-errors). In addition, following are some throttling limits.
   
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 

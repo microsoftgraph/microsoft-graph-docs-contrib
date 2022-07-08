@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### decisionItemPrincipalResourceMembershipType values 
+
+|Member|
+|:---|
+|direct|
+|indirect|
+|unknownFutureValue|
 
 ### signInFrequencyAuthenticationType values
 
@@ -2938,6 +2945,8 @@ Possible values for user account types (group membership), per Windows definitio
 |viewer|
 |externalGuest|
 |unknownFutureValue|
+|scheduler|
+|member|
 
 ### bookingReminderRecipients values 
 

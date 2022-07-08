@@ -99,14 +99,8 @@ items:
       - name: Get changes to users (example)
         href: /graph/delta-query-users?context=graph/api/beta
     - name: Add custom data
-      items:
-      - name: Overview
-        href: /graph/extensibility-overview?context=graph/api/beta
-        displayName: add custom data, extensions, resources using extensions
-      - name: Use open extensions (example)
-        href: /graph/extensibility-open-users?context=graph/api/beta
-      - name: Use schema extensions (example)
-        href: /graph/extensibility-schema-groups?context=graph/api/beta
+      displayName: directory extensions, schema extensions, open extensions, extension attributes
+      href: /graph/extensibility-overview?context=graph/api/beta
     - name: Use Graph Explorer
       items:
       - name: Get started
@@ -979,19 +973,6 @@ items:
             href: api/application-addkey.md
           - name: Remove key
             href: api/application-removekey.md
-        - name: Extensions
-          items:
-          - name: Extension property
-            href: resources/extensionproperty.md
-            items:
-            - name: List
-              href: api/application-list-extensionproperty.md
-            - name: Create
-              href: api/application-post-extensionproperty.md
-            - name: Get
-              href: api/extensionproperty-get.md
-            - name: Delete
-              href: api/extensionproperty-delete.md
         - name: Federated identity credentials (preview)
           items:
           - name: Overview
@@ -1913,6 +1894,47 @@ items:
             href: api/ediscovery-tag-childtags.md
           - name: List tags as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
+      - name: Records management (preview)
+        items:
+        - name: Overview
+          href: resources/security-recordsManagement-overview.md
+        - name: Retention label
+          href: resources/security-retentionlabel.md
+          items:
+          - name: List
+            href: api/security-retentionlabel-list.md
+          - name: Create
+            href: api/security-retentionlabel-post.md
+          - name: Get
+            href: api/security-retentionlabel-get.md
+          - name: Update
+            href: api/security-retentionlabel-update.md
+          - name: Delete
+            href: api/security-retentionlabel-delete.md
+        - name: Retention event
+          href: resources/security-retentionevent.md
+          items:
+          - name: List
+            href: api/security-retentionevent-list.md
+          - name: Create
+            href: api/security-retentionevent-post.md
+          - name: Get
+            href: api/security-retentionevent-get.md
+          - name: Delete
+            href: api/security-retentionevent-delete.md
+        - name: Retention event type
+          href: resources/security-retentioneventtype.md
+          items:
+          - name: List
+            href: api/security-retentioneventtype-list.md
+          - name: Create
+            href: api/security-retentioneventtype-post.md
+          - name: Get
+            href: api/security-retentioneventtype-get.md
+          - name: Update
+            href: api/security-retentioneventtype-update.md
+          - name: Delete
+            href: api/security-retentioneventtype-delete.md
       - name: Subject rights request
         items:
         - name: Overview
@@ -11060,6 +11082,20 @@ items:
           href: api/educationsynchronizationerrors-get.md
     - name: Extensions
       items:
+      - name: Overview
+        href: /graph/extensibility-overview?context=graph/api/beta&preserve-view=true
+      - name: Directory extensions
+        displayname: Groups, Users, Applications, Organization, Devices
+        href: resources/extensionproperty.md
+        items:
+        - name: List
+          href: api/application-list-extensionproperty.md
+        - name: Create
+          href: api/application-post-extensionproperty.md
+        - name: Get
+          href: api/extensionproperty-get.md
+        - name: Delete
+          href: api/extensionproperty-delete.md
       - name: Open extensions
         href: resources/opentypeextension.md
         displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
@@ -12202,7 +12238,7 @@ items:
               href: api/authenticationcontextclassreference-get.md
             - name: Update
               href: api/authenticationcontextclassreference-update.md
-        - name: Cross-tenant access (preview)
+        - name: Cross-tenant access
           items:
           - name: Overview
             displayName: Cross-tenant access settings, XTAP
@@ -13263,7 +13299,6 @@ items:
         - name: Privileged Identity Management
           items:
           - name: Privileged Identity Management
-            displayName: PIM v2
             href: resources/privilegedidentitymanagement-root.md
           - name: Azure AD (deprecated)
             items:
@@ -15017,6 +15052,8 @@ items:
         items:
         - name: Site
           href: resources/site.md
+        - name: List sites
+          href: api/site-list.md
         - name: Get site
           href: api/site-get.md
         - name: Get lists
@@ -15428,6 +15465,13 @@ items:
           href: api/team-completemigration.md
         - name: List permission grants
           href: api/team-list-permissiongrants.md
+        - name: Deleted team
+          href: resources/deletedteam.md
+          items:
+          - name: List
+            href: api/teamwork-list-deletedteams.md
+          - name: Get all messages
+            href: api/deletedteam-getallmessages.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -15495,7 +15539,7 @@ items:
         - name: Delete channel
           href: api/channel-delete.md
         - name: Remove incoming channel
-          href: api/team-delete-incomingchannel.md
+          href: api/team-delete-incomingchannels.md
         - name: Add member
           href: api/channel-post-members.md
         - name: Complete migration for channel

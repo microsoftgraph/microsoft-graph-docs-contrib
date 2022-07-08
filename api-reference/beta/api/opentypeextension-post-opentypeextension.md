@@ -15,8 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties
-in a new or existing instance of a supported resource.
+Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties in a new or existing instance of a resource. You can [create an open extension](/graph/api/opentypeextension-post-opentypeextension) in a resource instance and store custom data to it all in the same operation, except for specific resources. See [known limitations of open extensions](/graph/known-issues#extensions) for more information.
 
 The table in the [Permissions](#permissions) section lists the resources that support open extensions.
 
@@ -28,8 +27,6 @@ Depending on the resource you're creating the extension in and the permission ty
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [baseTaskList](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
@@ -41,6 +38,10 @@ Depending on the resource you're creating the extension in and the permission ty
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [baseTaskList](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+<!--
+| [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
 ## HTTP request
 
