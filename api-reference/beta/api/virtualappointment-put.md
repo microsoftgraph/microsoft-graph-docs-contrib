@@ -47,7 +47,7 @@ You can specify the following properties when you create a **virtualAppointment*
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md)|The client information for the virtual appointment, including name, email, and SMS phone number. Optional.|
+|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md) collection|The client information for the virtual appointment, including name, email, and SMS phone number. Optional.|
 |appointmentClientJoinWebUrl|String|The join web URL of the virtual appointment for clients with waiting room and browser join. Optional.|
 |externalAppointmentId|String|The identifier of the appointment from the scheduling system, associated with the current virtual appointment. Optional.|
 |externalAppointmentUrl|String|The URL of the appointment resource from the scheduling system, associated with the current virtual appointment. Optional.|
