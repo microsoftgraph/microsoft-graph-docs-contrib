@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 
 
-Get the siteSource resources from the siteSources navigation property.
+Get a list of the [siteSources](../resources/security-sitesource.md) associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
