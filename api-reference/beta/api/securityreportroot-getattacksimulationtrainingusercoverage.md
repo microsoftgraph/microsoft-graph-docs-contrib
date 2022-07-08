@@ -114,7 +114,7 @@ Content-Type: application/json
                 },
                 {
                     "assignedDateTime": "2021-07-28T07:33:47.493239Z",
-                    "completionDateTime": 2022-01-14T03:11:58Z,
+                    "completionDateTime": "2022-01-14T03:11:58Z",
                     "trainingStatus": "completed",
                     "displayName": ""
                 }
