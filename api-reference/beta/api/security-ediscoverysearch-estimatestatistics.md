@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # ediscoverySearch: estimateStatistics
 Namespace: microsoft.graph.security
 
-Run an estimate of the number of emails and documents in the eDiscovery search. To learn more about searches in eDiscovery, see [Collect data for a case in Advanced eDiscovery](/microsoft-365/compliance/collecting-data-for-ediscovery).
+Run an estimate of the number of emails and documents in the eDiscovery search. To learn more about searches in eDiscovery, see [Collect data for a case in eDiscovery (Premium)](/microsoft-365/compliance/collecting-data-for-ediscovery).
 
 
 ## Permissions
