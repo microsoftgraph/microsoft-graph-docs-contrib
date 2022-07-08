@@ -1,6 +1,6 @@
 ---
 title: "callTranscript resource type"
-description: "Represents a transcript associated with a Microsoft Teams Online Meeting."
+description: "Represents a transcript associated with an online meeting."
 author: "mankadnandan"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a transcript associated to an [online meeting](onlinemeeting.md).
+Represents a transcript associated with an [online meeting](onlinemeeting.md).
 
 ## Methods
 |  Method       |  Return Type  | Description| 
