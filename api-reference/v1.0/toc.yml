@@ -5701,6 +5701,8 @@ items:
               href: api/entitlementmanagement-list-assignments.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
+            - name: Reprocess
+              href: api/accesspackageassignment-reprocess.md
           - name: Access package assignment request approval
             items:
             - name: Approval
@@ -5734,6 +5736,8 @@ items:
               href: api/accesspackageassignmentrequest-filterbycurrentuser.md
             - name: Cancel
               href: api/accesspackageassignmentrequest-cancel.md
+            - name: Reprocess
+              href: api/accesspackageassignmentrequest-reprocess.md
           - name: Access package catalog
             href: resources/accesspackagecatalog.md
             items:

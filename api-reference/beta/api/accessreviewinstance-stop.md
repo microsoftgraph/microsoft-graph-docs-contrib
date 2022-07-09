@@ -2,7 +2,7 @@
 title: "Stop accessReviewInstance"
 description: "Stop a currently active accessReviewInstance."
 ms.localizationpriority: medium
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

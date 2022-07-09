@@ -1,7 +1,7 @@
 ---
 title: "accessReviewHistoryInstance: generateDownloadUri"
 description: "Generate a URI that can be used to retrieve review history data."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

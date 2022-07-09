@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "directory",
           "ChangeType": "Addition",
-          "Description": "Updated the **deletedItems** relationship of the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource. Added support for [restoring deleted service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-beta) and [permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-beta).",
+          "Description": "Added support for [restoring deleted service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-beta) and [permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-beta).",
           "Target": "directory"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "directory",
           "ChangeType": "Addition",
-          "Description": "Updated the **deletedItems** relationship of the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource. Added support for [restoring deleted service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-1.0) and [permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-1.0).",
+          "Description": "Added support for [restoring deleted service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-1.0) and [permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-1.0).",
           "Target": "directory"
         }
       ],
@@ -35,6 +35,32 @@
       "CreatedDateTime": "2022-07-13T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6c83378e-32f7-4a90-be50-fba95f7890ae",
+          "ApiChange": "Method",
+          "ChangedApiName": "reprocess",
+          "ChangeType": "Addition",
+          "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/reprocess?view=graph-rest-1.0) method to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignment?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignment"
+        },
+        {
+          "Id": "6c83378e-32f7-4a90-be50-fba95f7890ae",
+          "ApiChange": "Method",
+          "ChangedApiName": "reprocess",
+          "ChangeType": "Addition",
+          "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/reprocess?view=graph-rest-1.0) method to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        }
+      ],
+      "Id": "6c83378e-32f7-4a90-be50-fba95f7890ae",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-08T02:09:36.1935694Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
