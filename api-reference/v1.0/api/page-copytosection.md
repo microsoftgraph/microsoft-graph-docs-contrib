@@ -47,7 +47,7 @@ In the request body, provide a JSON object that contains the parameters that you
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the `Operation-Location` endpoint to [get the status of the copy operation](onenoteoperation-get.md).
+If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).
 
 ## Example
 
