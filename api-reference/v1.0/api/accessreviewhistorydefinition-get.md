@@ -1,7 +1,7 @@
 ---
 title: "Get accessReviewHistoryDefinition"
 description: "Retrieve an accessReviewHistoryDefinition object."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
