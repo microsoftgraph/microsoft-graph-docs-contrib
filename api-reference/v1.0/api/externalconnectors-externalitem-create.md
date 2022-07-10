@@ -87,7 +87,8 @@ If successful, this method returns `200 OK` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_externalitem_from_externalConnections"
+  "name": "create_externalitem_from_externalConnections",
+  "sampleKeys": ["contosohr", "TSP228082938"]
 }
 -->
 ``` http

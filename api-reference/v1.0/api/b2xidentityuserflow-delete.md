@@ -59,7 +59,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_b2xUserFlows"
+  "name": "delete_b2xUserFlows",
+  "sampleKeys": ["B2X_1_Partner"]
 }
 -->
 

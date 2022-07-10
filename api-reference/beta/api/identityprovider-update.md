@@ -88,7 +88,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_identityprovider"
+  "name": "update_identityprovider",
+  "sampleKeys": ["Amazon-OAuth"]
 }
 -->
 
@@ -148,7 +149,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_openidconnectprovider"
+  "name": "update_openidconnectprovider",
+  "sampleKeys": ["OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a"]
 }
 -->
 

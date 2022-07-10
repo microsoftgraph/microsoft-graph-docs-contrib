@@ -55,7 +55,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_bookingappointment"
+  "name": "get_bookingappointment",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "AAMkADKnAAA="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=

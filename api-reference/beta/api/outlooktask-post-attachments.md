@@ -64,7 +64,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add_file_attachment_to_task"
+  "name": "add_file_attachment_to_task",
+  "sampleKeys": ["AAMkADAAAANXbdnAAA="]
 }-->
 
 ```http
@@ -143,7 +144,8 @@ Here is an example which attaches an event with another event as an item attachm
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add_item_attachment_to_task"
+  "name": "add_item_attachment_to_task",
+  "sampleKeys": ["AAMkADAAAANXbdnAAA="]
 }-->
 
 ```http

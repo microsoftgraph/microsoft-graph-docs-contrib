@@ -71,7 +71,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userflowlanguageconfiguration_1"
+  "name": "get_userflowlanguageconfiguration_1",
+  "sampleKeys": ["B2C_1_CustomerSignUp"]
 }
 -->
 
@@ -144,7 +145,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userflowlanguageconfiguration_filter"
+  "name": "get_userflowlanguageconfiguration_filter",
+  "sampleKeys": ["B2C_1_CustomerSignUp"]
 }
 -->
 

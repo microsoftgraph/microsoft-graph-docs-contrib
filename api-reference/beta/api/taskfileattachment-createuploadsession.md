@@ -73,7 +73,8 @@ If successful, this action returns a `200 OK` response code and a new [uploadSes
 The following is an example of a request to create an upload session.
 <!-- {
   "blockType": "request",
-  "name": "attachmentbasethis.createuploadsession"
+  "name": "attachmentbasethis.createuploadsession",
+  "sampleKeys": ["AAMDiFkfh=", "AAMkADliMm="]
 }
 -->
 ``` http

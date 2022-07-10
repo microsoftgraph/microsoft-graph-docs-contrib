@@ -51,7 +51,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_messagerule"
+  "name": "get_messagerule",
+  "sampleKeys": ["AQAAAJ5dZqA="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')

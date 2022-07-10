@@ -67,7 +67,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_userFlowAttributes"
+  "name": "update_userFlowAttributes",
+  "sampleKeys": ["extension_d09380e2b4c642b9a203fb816a04a7ad_Hobby"]
 }
 -->
 

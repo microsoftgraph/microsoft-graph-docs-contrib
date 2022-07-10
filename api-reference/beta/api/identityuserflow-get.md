@@ -59,7 +59,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityuserflow"
+  "name": "get_identityuserflow",
+  "sampleKeys": ["B2C_1_Pol1"]
 }-->
 
 ```msgraph-interactive

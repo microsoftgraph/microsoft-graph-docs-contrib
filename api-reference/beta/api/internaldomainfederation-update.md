@@ -88,7 +88,8 @@ If successful, this method returns a `200 OK` response code and an updated [inte
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_internaldomainfederation"
+  "name": "update_internaldomainfederation",
+  "sampleKeys": ["contoso.com"]
 }
 -->
 ``` http

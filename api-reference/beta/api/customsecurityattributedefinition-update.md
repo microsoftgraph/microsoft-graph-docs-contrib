@@ -76,7 +76,8 @@ The following example updates the description for a custom security attribute de
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_customsecurityattributedefinition"
+  "name": "update_customsecurityattributedefinition",
+  "sampleKeys": ["Engineering_ProjectDate"]
 }
 -->
 ``` http
@@ -142,7 +143,8 @@ The following example updates the status of an existing predefined value and add
 
 <!-- {
   "blockType": "request",
-  "name": "update_customsecurityattributedefinition_allowedvalues"
+  "name": "update_customsecurityattributedefinition_allowedvalues",
+  "sampleKeys": ["Engineering_Project"]
 }
 -->
 ``` msgraph-interactive
@@ -186,7 +188,8 @@ The following example deactivates a custom security attribute definition.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_customsecurityattributedefinition_deactivate"
+  "name": "update_customsecurityattributedefinition_deactivate",
+  "sampleKeys": ["Engineering_Project"]
 }
 -->
 ``` http

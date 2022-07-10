@@ -95,7 +95,8 @@ The request does not specify any `Prefer: outlook.body-content-type` header to i
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_event"
+  "name": "get_event",
+  "sampleKeys": ["AAMkAGIAAAoZDOFAAA="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees 
@@ -224,7 +225,8 @@ The request also uses a `$select` query parameter to return specific properties.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_event_in_text"
+  "name": "get_event_in_text",
+  "sampleKeys": ["AAMkAGI1AAAoZDOFAAA="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGI1AAAoZDOFAAA=/?$select=subject,body,bodyPreview
@@ -293,7 +295,8 @@ to return specific properties.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_event_multiple_locations"
+  "name": "get_event_multiple_locations",
+  "sampleKeys": ["AAMkADAGAADDdm4NAAA="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
@@ -435,7 +438,8 @@ The following example shows expanding a series master event of a recurring serie
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_event_seriesMaster_expansion"
+  "name": "get_event_seriesMaster_expansion",
+  "sampleKeys": ["AAMkADAGAADDdm4NAAA="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences&$expand=exceptionOccurrences

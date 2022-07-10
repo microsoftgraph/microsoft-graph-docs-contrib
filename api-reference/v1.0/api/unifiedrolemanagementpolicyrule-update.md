@@ -76,7 +76,8 @@ The following example updates a role management policy rule of type **unifiedRol
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_unifiedrolemanagementpolicyrule"
+  "name": "update_unifiedrolemanagementpolicyrule",
+  "sampleKeys": ["DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9", "Expiration_EndUser_Assignment"]
 }
 -->
 ``` http

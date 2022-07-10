@@ -88,7 +88,8 @@ The following example shows a request to update the [moderation settings](../res
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "patch_channel_with_moderationSettings"
+  "name": "patch_channel_with_moderationSettings",
+  "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2"]
 }-->
 
 ```http

@@ -61,7 +61,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_b2xuserflows_identityprovider"
+  "name": "update_b2xuserflows_identityprovider",
+  "sampleKeys": ["B2X_1_Partner"]
 }
 -->
 

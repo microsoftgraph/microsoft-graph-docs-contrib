@@ -161,7 +161,8 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_roomlist"
+  "name": "get_roomlist",
+  "sampleKeys": ["bldg1@contoso.com"]
 }-->
 
 ```msgraph-interactive

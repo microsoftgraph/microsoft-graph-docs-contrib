@@ -43,7 +43,8 @@ If successful, this method returns a `200 OK` response code and [bookingBusiness
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["Fabrikam@contoso.onmicrosoft.com"]
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Fabrikam@contoso.onmicrosoft.com

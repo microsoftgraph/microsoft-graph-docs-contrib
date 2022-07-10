@@ -77,7 +77,8 @@ If successful, this method returns a `200 OK` response code and an updated [emai
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_emailauthenticationmethod"
+  "name": "update_emailauthenticationmethod",
+  "sampleKeys": ["kim@contoso.com"]
 }
 -->
 ``` http

@@ -50,7 +50,8 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_internaldomainfederation"
+  "name": "delete_internaldomainfederation",
+  "sampleKeys": ["contoso.com"]
 }
 -->
 ``` http

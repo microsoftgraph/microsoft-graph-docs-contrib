@@ -54,7 +54,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_pinnedchatmessageinfo_from_"
+  "name": "create_pinnedchatmessageinfo_from_",
+  "sampleKeys": ["19:2da4c29f6d7041eca70b638b43d45437@thread.v2"]
 }
 -->
 ``` http

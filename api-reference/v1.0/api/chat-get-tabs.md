@@ -56,7 +56,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_tab_in_chat"
+  "name": "get_tab_in_chat",
+  "sampleKeys": ["19:ea28e88c00e94c7786b065394a61f296@thread.v2", "d731fca0-0f14-4537-971a-0ef9101ff13d"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/tabs/d731fca0-0f14-4537-971a-0ef9101ff13d?$expand=teamsApp

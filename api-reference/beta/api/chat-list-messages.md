@@ -76,7 +76,8 @@ The following is an example of the request. `$top=2` is passed to retrieve two m
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_allchatmessages_1"
+  "name": "get_allchatmessages_1",
+  "sampleKeys": ["19:2da4c29f6d7041eca70b638b43d45437@thread.v2"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$orderBy=createdDateTime desc

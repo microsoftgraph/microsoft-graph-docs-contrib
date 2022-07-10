@@ -66,7 +66,8 @@ If successful, this method returns a `200 OK` response code and a [taskFileAttac
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_taskfileattachment"
+  "name": "get_taskfileattachment",
+  "sampleKeys": ["AAMehdkfuhgAAA=", "AAMkAGUzY5QKjAAA=", "AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
 }
 -->
 ``` http

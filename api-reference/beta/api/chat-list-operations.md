@@ -59,7 +59,8 @@ If successful, this returns a `200 OK` response code and a collection of [teamsA
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_chat_operations"
+  "name": "list_chat_operations",
+  "sampleKeys": ["19:c253a29b5f694b55a6baad8e83510af7@thread.v2"]
 }
 -->
 ``` http

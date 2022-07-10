@@ -63,7 +63,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationcontextclassreference"
+  "name": "update_authenticationcontextclassreference",
+  "sampleKeys": ["c1"]
 }-->
 
 ```http

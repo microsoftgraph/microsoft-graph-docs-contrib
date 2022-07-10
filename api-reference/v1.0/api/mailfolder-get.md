@@ -129,7 +129,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["AAMkAGVmMDEzM"],
+  "sampleKeys": ["AAMkAGVmMDEzN"],
   "name": "get_mailSearchfolder"
 }-->
 

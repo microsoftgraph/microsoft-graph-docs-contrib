@@ -84,7 +84,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_unifiedroleassignmentmultiple_from_rbacapplication"
+  "name": "update_unifiedroleassignmentmultiple_from_rbacapplication",
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
 ```http

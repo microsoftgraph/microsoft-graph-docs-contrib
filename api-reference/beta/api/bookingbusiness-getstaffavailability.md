@@ -56,7 +56,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "bookingbusiness_getstaffavailability"
+  "name": "bookingbusiness_getstaffavailability",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 
 ```msgraph-interactive

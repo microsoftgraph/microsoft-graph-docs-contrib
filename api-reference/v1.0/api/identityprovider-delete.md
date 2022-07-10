@@ -57,7 +57,8 @@ The following example deletes an **identityProvider**.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete-identityprovider"
+  "name": "delete-identityprovider",
+  "sampleKeys": ["Amazon-OAuth"]
 }-->
 
 ```http

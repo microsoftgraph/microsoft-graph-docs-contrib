@@ -70,7 +70,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_educationschool"
+  "name": "update_educationschool",
+  "sampleKeys": ["10002"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/education/schools/10002

@@ -46,11 +46,11 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["98f5bdef-576a-404d-a2ea-07a3cf34af4r"],
+  "sampleKeys": ["98f5bdef-576a-404d-a2ea-07a3cf34af4"],
   "name": "delete_inferenceclassificationoverride"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4r
+DELETE https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-inferenceclassificationoverride-csharp-snippets.md)]

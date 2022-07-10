@@ -48,7 +48,8 @@ The following example upgrades an app installed in a chat.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "upgrade_installedApps_in_chat"
+  "name": "upgrade_installedApps_in_chat",
+  "sampleKeys": ["19:ea28e88c00e94c7786b065394a61f296@thread.v2", "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg="]
 }-->
 
 ```http

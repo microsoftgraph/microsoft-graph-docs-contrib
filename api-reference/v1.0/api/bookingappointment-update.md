@@ -76,7 +76,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following example changes the date of service by a day.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["AAMkADKnAAA=", "Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=

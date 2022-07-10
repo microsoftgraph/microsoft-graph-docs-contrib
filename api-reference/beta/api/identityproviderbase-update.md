@@ -100,7 +100,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_socialidentityprovider"
+  "name": "update_socialidentityprovider",
+  "sampleKeys": ["Amazon-OAUTH"]
 }
 -->
 
@@ -159,7 +160,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_openidconnectprovider"
+  "name": "update_openidconnectprovider",
+  "sampleKeys": ["OIDC-V1-Nam_AD_Test-3e393390-ed2d-4794-97f6-5c999ccc61f7"]
 }
 -->
 
@@ -222,7 +224,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_appleidentityprovider"
+  "name": "update_appleidentityprovider",
+  "sampleKeys": ["Apple-Managed-OIDC"]
 }
 -->
 

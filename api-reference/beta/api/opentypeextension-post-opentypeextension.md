@@ -302,7 +302,8 @@ extension:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_opentypeextension_2"
+  "name": "post_opentypeextension_2",
+  "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions
@@ -384,7 +385,8 @@ extension:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_opentypeextension_3"
+  "name": "post_opentypeextension_3",
+  "sampleKeys": ["f5480dfd-7d77-4d0b-ba2e-3391953cc74a", "AAMkADVl17IsAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
@@ -461,7 +463,8 @@ the **body** of the new post, and the following data for the new extension:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_opentypeextension_4"
+  "name": "post_opentypeextension_4",
+  "sampleKeys": ["37df2ff0-0de0-4c33-8aee-75289364aef6","AAQkADJizZJpEWwqDHsEpV_KA==", "AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=/reply

@@ -54,7 +54,8 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_externalconnection"
+  "name": "delete_externalconnection",
+  "sampleKeys": ["contosohr"]
 }
 -->
 ``` http

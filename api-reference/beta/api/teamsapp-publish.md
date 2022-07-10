@@ -191,7 +191,8 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
 **HTTP**
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp_3"
+  "name": "create_teamsapp_3",
+  "sampleKeys": ["a761ad07-22ef-4a53-9feb-2837c8ad4a84", "YTc2MWFkMDctMjJlZi00YTUzLTlmZWItMjgzN2M4YWQ0YTg0IyMxLjEuOCMjU3VibWl0dGVk"]
 }-->
 
 ```http

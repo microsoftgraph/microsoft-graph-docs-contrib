@@ -56,7 +56,8 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_userattributeassignments_from_b2xidentityuserflow"
+  "name": "delete_userattributeassignments_from_b2xidentityuserflow",
+  "sampleKeys": ["B2X_1_Partner", "City"]
 }
 -->
 

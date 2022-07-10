@@ -65,7 +65,8 @@ If successful, this method returns a `200 OK` response code and an updated [book
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_bookingcustomquestion"
+  "name": "update_bookingcustomquestion",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
 }
 -->
 

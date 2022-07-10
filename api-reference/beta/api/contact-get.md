@@ -72,7 +72,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_contact"
+  "name": "get_contact",
+  "sampleKeys": ["AAMkAGI2THk0AAA="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/contacts/AAMkAGI2THk0AAA=

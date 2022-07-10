@@ -76,7 +76,8 @@ If successful, this method returns `200 OK` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "domain_forcedelete"
+  "name": "domain_forcedelete",
+  "sampleKeys": ["contoso.com"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/forceDelete

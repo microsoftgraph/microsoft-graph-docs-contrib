@@ -69,7 +69,8 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_softwareoathauthenticationmethod"
+  "name": "delete_softwareoathauthenticationmethod",
+  "sampleKeys": ["kim@contoso.com"]
 }
 -->
 ``` http

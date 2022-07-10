@@ -66,7 +66,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_emailauthenticationmethod"
+  "name": "delete_emailauthenticationmethod",
+  "sampleKeys": ["kim@contoso.com"]
 }
 -->
 ``` http

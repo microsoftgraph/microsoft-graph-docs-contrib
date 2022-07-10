@@ -71,7 +71,8 @@ The following is an example of the request to update the **policyViolation** pro
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chatMessage.PatchPolicyViolation.All"
+  "name": "chatMessage.PatchPolicyViolation.All",
+  "sampleKeys": ["e1234567-e123-4276-55555-6232b0e3a89a", "a7654321-e321-0000-0000-123b0e3a00a", "19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype

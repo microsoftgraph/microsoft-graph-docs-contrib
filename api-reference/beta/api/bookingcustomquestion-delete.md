@@ -55,7 +55,8 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_bookingcustomQuestions"
+  "name": "delete_bookingcustomQuestions",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e"]
 }
 -->
 

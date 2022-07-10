@@ -57,7 +57,8 @@ The following example changes the staff member's schedule to have Mondays off.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_bookingstaffmember"
+  "name": "update_bookingstaffmember",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "8ee1c803-a1fa-406d-8259-7ab53233f148"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148

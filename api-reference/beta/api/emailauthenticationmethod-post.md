@@ -77,7 +77,8 @@ If successful, this method returns a `201 Created` response code and a new [emai
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_emailauthenticationmethod_from_"
+  "name": "create_emailauthenticationmethod_from_",
+  "sampleKeys": ["kim@contoso.com"]
 }
 -->
 ``` http

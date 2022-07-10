@@ -56,7 +56,8 @@ If successful, this method returns a `200 OK` response code and a [connectionOpe
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_connectionoperation"
+  "name": "get_connectionoperation",
+  "sampleKeys": ["contosohr"]
 }
 -->
 ``` http

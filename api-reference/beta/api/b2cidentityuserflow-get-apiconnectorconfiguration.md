@@ -69,7 +69,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_b2cuserflows-apiconnectorconfiguration"
+  "name": "get_b2cuserflows-apiconnectorconfiguration",
+  "sampleKeys": ["B2C_1_testuserflow"]
 }
 -->
 

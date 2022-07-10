@@ -76,7 +76,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "mailfolder_get_childfolders"
+  "name": "mailfolder_get_childfolders",
+  "sampleKeys": ["AAMkAGVmMDEzM"]
 }-->
 
 ```msgraph-interactive
@@ -269,7 +270,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "mailfolder_get_hiddenchildfolders"
+  "name": "mailfolder_get_hiddenchildfolders",
+  "sampleKeys": ["AAMkAGVmMDEzM"]
 }-->
 
 ```msgraph-interactive

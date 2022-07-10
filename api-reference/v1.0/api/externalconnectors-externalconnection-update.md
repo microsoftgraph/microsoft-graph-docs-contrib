@@ -62,7 +62,8 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_externalconnection"
+  "name": "update_externalconnection",
+  "sampleKeys": ["contosohr"]
 }
 -->
 ``` http

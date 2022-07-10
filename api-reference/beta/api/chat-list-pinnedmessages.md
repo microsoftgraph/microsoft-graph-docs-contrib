@@ -59,7 +59,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_pinnedchatmessageinfo"
+  "name": "list_pinnedchatmessageinfo",
+  "sampleKeys": ["19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"]
 }
 -->
 ``` http
@@ -125,7 +126,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_pinnedchatmessageinfo"
+  "name": "list_pinnedchatmessageinfo",
+  "sampleKeys": ["19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"]
 }
 -->
 ``` http

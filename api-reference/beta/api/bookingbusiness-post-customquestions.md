@@ -67,7 +67,8 @@ If successful, this method returns a `201 Created` response code and a [bookingC
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_bookingcustomquestion_from_"
+  "name": "create_bookingcustomquestion_from_",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
 }
 -->
 

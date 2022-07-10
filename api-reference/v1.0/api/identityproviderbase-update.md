@@ -84,12 +84,14 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_socialidentityprovider"
+  "name": "update_socialidentityprovider",
+  "sampleKeys": ["Amazon-OAUTH"]
 }
 -->
 
 ``` http
 PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/Amazon-OAUTH
+Content-type: application/json
 Content-type: application/json
 
 {
@@ -140,7 +142,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_appleidentityprovider"
+  "name": "update_appleidentityprovider",
+  "sampleKeys": ["Apple-Managed-OIDC"]
 }
 -->
 ``` http

@@ -56,7 +56,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_sharedwithchannelteaminfo"
+  "name": "delete_sharedwithchannelteaminfo",
+  "sampleKeys": ["19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype"]
 }
 -->
 ``` http

@@ -57,7 +57,8 @@ The following example gets the resource namespace with the identifier of `micros
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedrbacresourcenamespace"
+  "name": "get_unifiedrbacresourcenamespace",
+  "sampleKeys": ["microsoft.aad.b2c"]
 }
 -->
 ``` http

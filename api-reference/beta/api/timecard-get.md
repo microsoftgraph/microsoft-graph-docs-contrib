@@ -61,7 +61,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "timecard-get"
+  "name": "timecard-get",
+  "sampleKeys": ["TCK_cc09588d-d9d2-4fa0-85dc-2aa5ef983972"]
 }-->
 
 ```msgraph-interactive

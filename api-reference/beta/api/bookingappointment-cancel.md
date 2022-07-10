@@ -63,7 +63,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "bookingappointment_cancel"
+  "name": "bookingappointment_cancel",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "AAMkADKoAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel

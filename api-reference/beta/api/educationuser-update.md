@@ -74,7 +74,8 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_educationuser"
+  "name": "update_educationuser",
+  "sampleKeys": ["13020"]
 }-->
 
 ```http

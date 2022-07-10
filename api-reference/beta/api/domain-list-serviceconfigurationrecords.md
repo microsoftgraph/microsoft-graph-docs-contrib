@@ -60,7 +60,8 @@ If successful, this method returns a `200 OK` response code and collection of [d
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_serviceconfigurationrecords"
+  "name": "get_serviceconfigurationrecords",
+  "sampleKeys": ["contoso.com"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/domains/contoso.com/serviceConfigurationRecords

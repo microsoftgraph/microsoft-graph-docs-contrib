@@ -56,7 +56,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_ediscoveryfile"
+  "name": "get_ediscoveryfile",
+  "sampleKeys": ["000168cdf05c48d98faac7bff8719726a25da40bb2b9c369fb580b8797abf661"]
 }
 -->
 ``` http

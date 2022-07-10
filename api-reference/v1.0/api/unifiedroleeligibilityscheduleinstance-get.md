@@ -53,7 +53,8 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleE
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleeligibilityscheduleinstance"
+  "name": "get_unifiedroleeligibilityscheduleinstance",
+  "sampleKeys": ["8MYkhImhnkm70CbBdTyW1BbHHAdHgZdDpbqyEFlRzAs-1-e"]
 }
 -->
 ``` http

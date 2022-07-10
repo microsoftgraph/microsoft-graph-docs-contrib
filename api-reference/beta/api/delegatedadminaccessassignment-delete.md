@@ -53,7 +53,8 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_delegatedadminaccessassignment"
+  "name": "delete_delegatedadminaccessassignment",
+  "sampleKeys": ["72a7ae7e-4887-4e34-9755-2e1e9b26b943-63f017cb-9e0d-4f14-94bd-4871902b3409", "a9d6cf90-083a-47dc-ace2-1da98be3f344"]
 }
 -->
 ``` http

@@ -78,7 +78,8 @@ If successful, this function returns a `200 OK` response code and a [baseTask](.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "basetask_delta"
+  "name": "basetask_delta",
+  "sampleKeys": ["AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA="]
 }
 -->
 ``` http

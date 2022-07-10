@@ -61,7 +61,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add_app_in_team"
+  "name": "add_app_in_team",
+  "sampleKeys": ["87654321-0abc-zqf0-321456789q"]
 }-->
 ```http
 POST /teams/87654321-0abc-zqf0-321456789q/installedApps

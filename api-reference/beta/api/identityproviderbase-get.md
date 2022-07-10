@@ -68,7 +68,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_socialidentityprovider_from_identityproviderbase"
+  "name": "get_socialidentityprovider_from_identityproviderbase",
+  "sampleKeys": ["Amazon-OAUTH"]
 }
 -->
 
@@ -131,7 +132,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_builtinidentityprovider_from_identityproviderbase"
+  "name": "get_builtinidentityprovider_from_identityproviderbase",
+  "sampleKeys": ["MSASignup-OAUTH"]
 }
 -->
 
@@ -192,7 +194,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_openidconnectidentityprovider_from_identityproviderbase"
+  "name": "get_openidconnectidentityprovider_from_identityproviderbase",
+  "sampleKeys": ["OIDC-V1-test-icm-4470de58-86c2-4a3f-a22c-63c9366cd000"]
 }
 -->
 
@@ -266,7 +269,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_applemanagedidentityprovider_from_identityproviderbase"
+  "name": "get_applemanagedidentityprovider_from_identityproviderbase",
+  "sampleKeys": ["Apple-Managed-OIDC"]
 }
 -->
 

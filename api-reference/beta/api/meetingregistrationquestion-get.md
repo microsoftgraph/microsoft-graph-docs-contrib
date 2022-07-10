@@ -59,7 +59,8 @@ If successful, this method returns a `200 OK` response code and a [meetingRegist
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-custom-question"
+  "name": "get-custom-question",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ", "MSMxY2E2ZmE3OS1hOTY3LTQ4ZX3lvdV94MDAyMF9hX3gwMDIwX2RldmU="]
 }-->
 
 ```msgraph-interactive

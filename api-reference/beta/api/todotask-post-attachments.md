@@ -65,7 +65,8 @@ If successful, this method returns a `201 Created` response code and a [taskFile
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_taskFileAttachment_from_"
+  "name": "create_taskFileAttachment_from_",
+  "sampleKeys": ["AAMkpsDRVK=", "AAKdfjhgsjhgJ="]
 }
 -->
 ``` http

@@ -77,7 +77,7 @@ If successful, this method returns a `200 OK` response code and an updated [exte
 <!-- {
   "blockType": "request",
   "name": "update_externalitem",
-  "@odata.type": "microsoft.graph.externalConnectors.externalItem"
+  "sampleKeys": ["contosohr", "TSP228082938"]
 }
 -->
 ``` http

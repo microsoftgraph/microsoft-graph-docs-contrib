@@ -78,7 +78,8 @@ The following example shows how to enroll a signed-in registrant with the regist
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add-registratrant-user"
+  "name": "add-registratrant-user",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```http
@@ -161,7 +162,8 @@ The following example shows how to enroll an anonymous registrant with applicati
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add-registratrant-app"
+  "name": "add-registratrant-app",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```http

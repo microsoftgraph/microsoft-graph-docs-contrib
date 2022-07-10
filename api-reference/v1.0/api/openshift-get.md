@@ -60,7 +60,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_openshift_1"
+  "name": "get_openshift_1",
+  "sampleKeys": ["OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
 }-->
 
 ```msgraph-interactive

@@ -54,7 +54,8 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleA
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignmentscheduleinstance"
+  "name": "get_unifiedroleassignmentscheduleinstance",
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJ2SvT9WjGJEhR4OuaezoqU-1"]
 }
 -->
 ``` http

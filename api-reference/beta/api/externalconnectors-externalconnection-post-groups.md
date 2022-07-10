@@ -67,7 +67,8 @@ If successful, this method returns a `201 Created` response code and an **extern
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_externalgroup_from_connection"
+  "name": "create_externalgroup_from_connection",
+  "sampleKeys": ["contosohr"]
 }
 -->
 

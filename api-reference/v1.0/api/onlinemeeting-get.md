@@ -228,7 +228,7 @@ You can retrieve meeting information via meeting ID with either a user or applic
 The following request uses a user token.
 
 # [HTTP](#tab/http)
-<!-- {"blockType": "request", "name": "get-onlinemeeting-user-token"} -->
+<!-- {"blockType": "request", "name": "get-onlinemeeting-user-token","sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"]} -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
@@ -388,7 +388,8 @@ The following request uses delegated permission.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_attendee_report"
+  "name": "get_attendee_report",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"]
 }-->
 
 ```msgraph-interactive

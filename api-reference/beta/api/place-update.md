@@ -79,7 +79,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_room"
+  "name": "update_room",
+  "sampleKeys": ["cf100@contoso.com"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/places/cf100@contoso.com
@@ -185,7 +186,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_roomlist"
+  "name": "update_roomlist",
+  "sampleKeys": ["Building1RroomList@contoso.onmicrosoft.com"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/places/Building1RroomList@contoso.onmicrosoft.com

@@ -69,7 +69,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "channel_doesuserhaveaccess"
+  "name": "channel_doesuserhaveaccess",
+  "sampleKeys": ["19:33b76eea88574bd1969dca37e2b7a819@thread.skype"]
 }
 -->
 ``` http
@@ -125,7 +126,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "channel_doesuserhaveaccess_externaluser"
+  "name": "channel_doesuserhaveaccess_externaluser",
+  "sampleKeys": ["19:33b76eea88574bd1969dca37e2b7a819@thread.skype"]
 }
 -->
 ``` http
@@ -181,7 +183,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "channel_doesuserhaveaccess_usingupn"
+  "name": "channel_doesuserhaveaccess_usingupn",
+  "sampleKeys": ["19:33b76eea88574bd1969dca37e2b7a819@thread.skype"]
 }
 -->
 ``` http

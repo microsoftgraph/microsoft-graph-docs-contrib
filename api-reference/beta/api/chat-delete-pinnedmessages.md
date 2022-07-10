@@ -53,7 +53,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_pinnedchatmessageinfo"
+  "name": "delete_pinnedchatmessageinfo",
+  "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2", "1616964509832"]
 }
 -->
 ``` http

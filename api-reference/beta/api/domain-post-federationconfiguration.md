@@ -88,7 +88,8 @@ If successful, this method returns a `201 Created` response code and an [interna
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_internaldomainfederation_from_"
+  "name": "create_internaldomainfederation_from_",
+  "sampleKeys": ["contoso.com"]
 }
 -->
 

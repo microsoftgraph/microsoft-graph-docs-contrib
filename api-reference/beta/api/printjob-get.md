@@ -67,7 +67,8 @@ The following is an example of a request to get metadata for a print job.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_printjob"
+  "name": "get_printjob",
+  "sampleKeys": ["5182"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182
@@ -126,7 +127,8 @@ The following is a request to get a print job and any [tasks](../resources/print
 
 <!-- {
   "blockType": "request",
-  "name": "get_printjob_withtasks"
+  "name": "get_printjob_withtasks",
+  "sampleKeys": ["5182"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182?$expand=tasks
@@ -184,7 +186,8 @@ The following is an example of a request to get a print job and its associated d
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_printjob_withdocumentdata"
+  "name": "get_printjob_withdocumentdata",
+  "sampleKeys": ["31216"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e56cd81bd/jobs/31216?$expand=documents

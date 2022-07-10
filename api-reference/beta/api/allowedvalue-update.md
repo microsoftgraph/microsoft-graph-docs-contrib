@@ -72,7 +72,8 @@ The following example deactivates a predefined value for a custom security attri
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_allowedvalue"
+  "name": "update_allowedvalue",
+  "sampleKeys": ["Engineering_Project", "Alpine"]
 }
 -->
 ``` http

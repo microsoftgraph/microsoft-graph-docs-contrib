@@ -59,7 +59,8 @@ If successful, this method returns a `204 No Content` response code and no respo
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_domain"
+  "name": "update_domain",
+  "sampleKeys": ["contoso.com"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/domains/contoso.com

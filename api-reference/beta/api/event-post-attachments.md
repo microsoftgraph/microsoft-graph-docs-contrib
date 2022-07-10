@@ -64,7 +64,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_file_attachment_from_event_beta"
+  "name": "create_file_attachment_from_event_beta",
+  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="]
 }-->
 
 ```http
@@ -210,7 +211,8 @@ The attachment points to a folder on OneDrive.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_reference_attachment_from_event"
+  "name": "create_reference_attachment_from_event",
+  "sampleKeys": ["AAMkAGE1M88AADUv0uAAAG="]
 }-->
 
 ```http
