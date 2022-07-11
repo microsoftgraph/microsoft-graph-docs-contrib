@@ -93,7 +93,7 @@ By default, only a limited set of properties are returned ( _businessPhones, dis
   "name": "get_user_1"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
+GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd
 ```
 
 #### Response
@@ -206,7 +206,7 @@ To retrieve specific properties, use the OData `$select` query parameter. For ex
   "name": "get_user_select"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,identities
+GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd?$select=displayName,givenName,postalCode,identities
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-select-csharp-snippets.md)]

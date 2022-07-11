@@ -1,7 +1,7 @@
 ---
 title: "Get accessReviewPolicy"
 description: "Read the properties and relationships of an accessReviewPolicy object."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
