@@ -44,5 +44,6 @@ Here is a JSON representation of the resource.
 {
   "id": "string (identifier)",
   "createdDateTime": "dateTimeOffset",
+  "content": "stream"
 }
 ```
