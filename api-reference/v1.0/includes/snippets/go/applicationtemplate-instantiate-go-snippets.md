@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewDisplayNameRequestBody()
 displayName := "Azure AD SAML Toolkit"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.InstantiateRequestBuilderPostOptions{
-	Body: requestBody,
-}
 applicationTemplateId := "applicationTemplate-id"
-result, err := graphClient.ApplicationTemplatesById(&applicationTemplateId).Instantiate(applicationTemplate-id).Post(options)
+result, err := graphClient.ApplicationTemplatesById(&applicationTemplateId).Instantiate(applicationTemplate-id).Post(requestBody)
 
 
 ```

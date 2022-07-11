@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewEducationCategory()
 displayName := "Quizzes"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.AssignmentCategoriesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentCategories().Post(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentCategories().Post(requestBody)
 
 
 ```

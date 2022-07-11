@@ -1,7 +1,7 @@
 ---
 title: "Update accessReviewInstanceDecisionItem"
 description: "Update the properties of an accessReviewInstanceDecisionItem object."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

@@ -17,11 +17,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"permission": "Edit",
 	"isFolder": "True",
 }
-options := &msgraphsdk.AttachmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Attachments().Post(options)
+result, err := graphClient.Me().MessagesById(&messageId).Attachments().Post(requestBody)
 
 
 ```

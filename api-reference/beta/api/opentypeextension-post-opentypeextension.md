@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties
-in a new or existing instance of a supported resource.
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
+Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties in a new or existing instance of a resource. You can [create an open extension](/graph/api/opentypeextension-post-opentypeextension) in a resource instance and store custom data to it all in the same operation, except for specific resources. See [known limitations of open extensions](/graph/known-issues#extensions) for more information.
 
 The table in the [Permissions](#permissions) section lists the resources that support open extensions.
 
@@ -34,9 +35,13 @@ Depending on the resource you're creating the extension in and the permission ty
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [tasklist](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [baseTaskList](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+<!--
+| [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
 ## HTTP request
 
@@ -51,6 +56,8 @@ POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
+POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
+POST /users/{id|userPrincipalName}/todo/lists
 POST /users/{id|userPrincipalName}/tasks/lists/{id}/tasks
 POST /users/{id|userPrincipalName}/tasks/lists
 ```
@@ -76,6 +83,8 @@ POST /users/{id|userPrincipalName}/messages/{id}/extensions
 POST /organization/{id}/extensions
 POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
+POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
+POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 POST /users/{id|userPrincipalName}/tasks/lists/{id}/tasks/{id}/extensions
 POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
 ```
@@ -263,8 +272,6 @@ Content-type: application/json
   "webLink": "https://outlook.office.com/owa/?
 ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
   "inferenceClassification": "Focused",
-  "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages
-('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
       "@odata.type": "#microsoft.graph.openTypeExtension",
@@ -618,7 +625,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations/$entity",
     "id": "AAQkADJToRlbJ5Mg7TFM7H-j3Y=",
-    "threads@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations('AAQkADJToRlbJ5Mg7TFM7H-j3Y%3D')/threads",
     "threads": [
         {
             "id": "AAQkADJDtMUzsf_PdhAAswJOhGVsnkyDtMUzsf_Pdg=="

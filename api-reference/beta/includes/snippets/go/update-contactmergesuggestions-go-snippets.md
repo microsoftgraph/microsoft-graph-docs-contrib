@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewContactMergeSuggestions()
 isEnabled := false
 requestBody.SetIsEnabled(&isEnabled)
-options := &msgraphsdk.ContactMergeSuggestionsRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Me().Settings().ContactMergeSuggestions().Patch(options)
+graphClient.Me().Settings().ContactMergeSuggestions().Patch(requestBody)
 
 
 ```

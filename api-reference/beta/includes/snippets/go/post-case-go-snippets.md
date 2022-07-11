@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCase()
 displayName := "My Case 1"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.CasesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Compliance().Ediscovery().Cases().Post(options)
+result, err := graphClient.Compliance().Ediscovery().Cases().Post(requestBody)
 
 
 ```

@@ -12,11 +12,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"enabled": true,
 	"timeZone": "America/Chicago",
 }
-options := &msgraphsdk.ScheduleRequestBuilderPutOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Schedule().Put(options)
+graphClient.TeamsById(&teamId).Schedule().Put(requestBody)
 
 
 ```

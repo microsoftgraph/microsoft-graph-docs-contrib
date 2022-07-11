@@ -22,11 +22,8 @@ reason := "Deactivate the role"
 requestBody.SetReason(&reason)
 linkedEligibleRoleAssignmentId := "cb8a533e-02d5-42ad-8499-916b1e4822ec"
 requestBody.SetLinkedEligibleRoleAssignmentId(&linkedEligibleRoleAssignmentId)
-options := &msgraphsdk.RoleAssignmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 privilegedAccessId := "privilegedAccess-id"
-result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(options)
+result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(requestBody)
 
 
 ```

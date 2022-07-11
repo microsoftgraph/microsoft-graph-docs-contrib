@@ -16,11 +16,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"ipRanges":  []Object {
 	}
 }
-options := &msgraphsdk.NamedLocationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 namedLocationId := "namedLocation-id"
-graphClient.Identity().ConditionalAccess().NamedLocationsById(&namedLocationId).Patch(options)
+graphClient.Identity().ConditionalAccess().NamedLocationsById(&namedLocationId).Patch(requestBody)
 
 
 ```

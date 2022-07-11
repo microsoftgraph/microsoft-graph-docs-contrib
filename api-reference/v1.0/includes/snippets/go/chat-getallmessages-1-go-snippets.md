@@ -7,15 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ChatRequestBuilderGetQueryParameters{
+requestParameters := &msgraphsdk.GetAllMessagesRequestBuilderGetQueryParameters{
 	Top: 2,
 }
-options := &msgraphsdk.ChatRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.GetAllMessagesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 userId := "user-id"
-chatId := "chat-id"
-result, err := graphClient.UsersById(&userId).ChatsById(&chatId).Get(options)
+result, err := graphClient.UsersById(&userId).Chats().GetAllMessages()(user-id).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

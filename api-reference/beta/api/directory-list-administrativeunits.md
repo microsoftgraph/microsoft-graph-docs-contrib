@@ -33,6 +33,13 @@ GET /directory/administrativeUnits
 ## Optional query parameters
 This method supports the `$count`, `$select`, `$search`, `$filter`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
+### Retrieve extensions and associated data
+
+| Extension type       | Comments                                                 |
+|----------------------|----------------------------------------------------------|
+| Schema extensions    | Returned only with `$select`. Supports `$filter` (`eq`). |
+| Directory extensions | Returned by default. Supports `$filter` (`eq`).          |
+
 
 ## Request headers
 | Name      |Description|
@@ -97,20 +104,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits",
-    "value": [
-        {
-            "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
-            "deletedDateTime": null,
-            "displayName": "Seattle District Technical Schools",
-            "description": "Seattle district technical schools administration",
-            "isMemberManagementRestricted": null,
-            "visibility": "HiddenMembership",
-            "membershipRule": null,
-            "membershipType": null,
-            "membershipRuleProcessingState": null
-        }
-    ]
+  "value": [
+    {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
+    "id": "49eb93f2-a5a2-4567-ad66-76a3ebd01d84",
+    "deletedDateTime": null,
+    "displayName": "Seattle District Technical Schools",
+    "description": "Seattle district technical schools administration",
+    "visibility": null,
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipType": "Dynamic",
+    "membershipRuleProcessingState": "On"
+    }
+  ]
 }
 ```
 

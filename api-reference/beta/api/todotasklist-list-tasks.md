@@ -112,12 +112,15 @@ Content-Type: application/json
          "title":"Linked entity new task 1",
          "createdDateTime":"2020-07-08T11:15:19.9359889Z",
          "lastModifiedDateTime":"2020-07-08T11:15:20.0614375Z",
+          "categories": [
+               "Important",
+               "Urgent"
+            ],
          "id":"AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD",
          "body":{
             "content":"",
             "contentType":"text"
          },
-         "linkedResources@odata.context":"https://graph.microsoft.com/beta/$metadata#users('todoservicetest2412201901%40outlook.com')/todo/lists('35e2-35e2-721a-e235-1a72e2351a7')/tasks('AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD')/linkedResources",
          "linkedResources":[
             {
                "applicationName":"Partner App Name",

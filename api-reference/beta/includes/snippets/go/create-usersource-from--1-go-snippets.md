@@ -12,12 +12,9 @@ email := "megan@contoso.com"
 requestBody.SetEmail(&email)
 includedSources := "mailbox, site"
 requestBody.SetIncludedSources(&includedSources)
-options := &msgraphsdk.UserSourcesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
 custodianId := "custodian-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).UserSources().Post(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).UserSources().Post(requestBody)
 
 
 ```

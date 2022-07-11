@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/assignments
 GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/assignments
+GET /deviceAppManagement/windowsManagedAppProtections/{windowsManagedAppProtectionId}/assignments
 GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/assignments
 GET /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/assignments
 GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/assignments

@@ -11,11 +11,11 @@ requestParameters := &msgraphsdk.UnifiedRoleAssignmentScheduleRequestRequestBuil
 	Select: "principalId,action,roleDefinitionId",
 	Expand: "roleDefinition,activatedUsing,principal,targetSchedule",
 }
-options := &msgraphsdk.UnifiedRoleAssignmentScheduleRequestRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.UnifiedRoleAssignmentScheduleRequestRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 unifiedRoleAssignmentScheduleRequestId := "unifiedRoleAssignmentScheduleRequest-id"
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequestsById(&unifiedRoleAssignmentScheduleRequestId).Get(options)
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequestsById(&unifiedRoleAssignmentScheduleRequestId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

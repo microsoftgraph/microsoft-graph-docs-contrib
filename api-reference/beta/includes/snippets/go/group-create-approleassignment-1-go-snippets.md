@@ -14,11 +14,8 @@ resourceId := "076e8b57-bac8-49d7-9396-e3449b685055"
 requestBody.SetResourceId(&resourceId)
 appRoleId := "00000000-0000-0000-0000-000000000000"
 requestBody.SetAppRoleId(&appRoleId)
-options := &msgraphsdk.AppRoleAssignmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).AppRoleAssignments().Post(options)
+result, err := graphClient.GroupsById(&groupId).AppRoleAssignments().Post(requestBody)
 
 
 ```

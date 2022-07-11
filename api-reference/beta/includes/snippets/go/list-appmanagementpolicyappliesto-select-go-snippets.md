@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AppliesToRequestBuilderGetQueryParameters{
 	Select: "id,appId,displayName,createdDateTime",
 }
-options := &msgraphsdk.AppliesToRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AppliesToRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 appManagementPolicyId := "appManagementPolicy-id"
-result, err := graphClient.Policies().AppManagementPoliciesById(&appManagementPolicyId).AppliesTo().Get(options)
+result, err := graphClient.Policies().AppManagementPoliciesById(&appManagementPolicyId).AppliesTo().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

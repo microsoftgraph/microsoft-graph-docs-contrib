@@ -11,7 +11,7 @@ siteId := "site-id"
 listId := "list-id"
 listItemId := "listItem-id"
 documentSetVersionId := "documentSetVersion-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).DocumentSetVersionsById(&documentSetVersionId).Get(nil)
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).DocumentSetVersionsById(&documentSetVersionId).Get()
 
 
 ```

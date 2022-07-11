@@ -15,13 +15,12 @@ criteria.SetResetScope(&resetScope)
 headers := map[string]string{
 	"Authorization": "Bearer <token>"
 }
-options := &msgraphsdk.RestartRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.RestartRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
 servicePrincipalId := "servicePrincipal-id"
 synchronizationJobId := "synchronizationJob-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Restart(servicePrincipal-id, synchronizationJob-id).Post(options)
+graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Restart(servicePrincipal-id, synchronizationJob-id).PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

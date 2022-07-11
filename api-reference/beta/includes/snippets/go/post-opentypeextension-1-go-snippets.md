@@ -18,8 +18,10 @@ content := "You should be proud!"
 body.SetContent(&content)
 requestBody.SetToRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "rufus@contoso.com"
+	emailAddress.SetAddress(&address)
 }
 requestBody.SetExtensions( []Extension {
 	msgraphsdk.NewExtension(),
@@ -31,10 +33,7 @@ requestBody.SetExtensions( []Extension {
 		"dealValue": ,
 	}
 }
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Messages().Post(options)
+result, err := graphClient.Me().Messages().Post(requestBody)
 
 
 ```

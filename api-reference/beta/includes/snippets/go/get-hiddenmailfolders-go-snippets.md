@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.MailFoldersRequestBuilderGetQueryParameters{
 	IncludeHiddenFolders: true,
 }
-options := &msgraphsdk.MailFoldersRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.MailFoldersRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().MailFolders().Get(options)
+result, err := graphClient.Me().MailFolders().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

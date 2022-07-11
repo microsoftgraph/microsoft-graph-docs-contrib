@@ -14,11 +14,11 @@ requestParameters := &msgraphsdk.DevicesRequestBuilderGetQueryParameters{
 headers := map[string]string{
 	"ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.DevicesRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+options := &msgraphsdk.DevicesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+	Headers: headers,
 }
-result, err := graphClient.Devices().Get(options)
+result, err := graphClient.Devices().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

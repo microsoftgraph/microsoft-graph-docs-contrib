@@ -44,17 +44,17 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property            | Type                                               | Description                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | String                                             | Display name of the school         |
-| description         | String                                             | Description of the school          |
-| principalEmail      | String                                             | Email address of the principal     |
-| principalName       | String                                             | Name of the principal              |
-| externalPrincipalId | String                                             | Id of principal in syncing system. |
+| displayName         | String                                             | Display name of the school.        |
+| description         | String                                             | Description of the school.         |
+| principalEmail      | String                                             | Email address of the principal.    |
+| principalName       | String                                             | Name of the principal.             |
+| externalPrincipalId | String                                             | ID of principal in syncing system. |
 | highestGrade        | String                                             | Highest grade taught.              |
 | lowestGrade         | String                                             | Lowest grade taught.               |
 | schoolNumber        | String                                             | School Number.                     |
-| externalId          | String                                             | Id of school in syncing system.    |
+| externalId          | String                                             | ID of school in syncing system.    |
 | phone               | String                                             | Phone number of school.            |
-| address             | [physicalAddress](../resources/physicaladdress.md) | Address of the School.             |
+| address             | [physicalAddress](../resources/physicaladdress.md) | Address of the school.             |
 | createdBy           | [identitySet](../resources/identityset.md)         | Entity who created the school.     |
 
 ## Response
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -105,7 +105,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 The following is an example of the response.
 

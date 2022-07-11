@@ -34,10 +34,7 @@ ticketNumber := "CONTOSO:Normal-67890"
 ticketInfo.SetTicketNumber(&ticketNumber)
 ticketSystem := "MS Project"
 ticketInfo.SetTicketSystem(&ticketSystem)
-options := &msgraphsdk.RoleAssignmentScheduleRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(options)
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(requestBody)
 
 
 ```

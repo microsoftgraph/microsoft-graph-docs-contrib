@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AppRoleAssignmentsRequestBuilderGetQueryParameters{
 	Filter: "resourceId%20eq%208e881353-1735-45af-af21-ee1344582a4d",
 }
-options := &msgraphsdk.AppRoleAssignmentsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AppRoleAssignmentsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).AppRoleAssignments().Get(options)
+result, err := graphClient.UsersById(&userId).AppRoleAssignments().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

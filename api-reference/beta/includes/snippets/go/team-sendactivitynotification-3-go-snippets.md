@@ -30,16 +30,13 @@ recipient.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetTemplateParameters( []KeyValuePair {
 	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "deploymentId",
-		"value": "6788662",
-	}
-}
-options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
-	Body: requestBody,
+name := "deploymentId"
+	SetName(&name)
+value := "6788662"
+	SetValue(&value)
 }
 teamId := "team-id"
-graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(options)
+graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(requestBody)
 
 
 ```

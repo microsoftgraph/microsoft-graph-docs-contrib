@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"Prefer": "outlook.timezone="Pacific Standard Time""
 }
-options := &msgraphsdk.OutlookTaskRequestBuilderGetOptions{
-	H: headers,
+options := &msgraphsdk.OutlookTaskRequestBuilderGetRequestConfiguration{
+	Headers: headers,
 }
 outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Get(options)
+result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

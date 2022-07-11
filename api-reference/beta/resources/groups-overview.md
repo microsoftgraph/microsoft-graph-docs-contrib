@@ -26,6 +26,9 @@ Azure Active Directory (Azure AD) supports the following types of groups.
 - Mail-enabled security groups
 - Distribution groups
 
+> [!NOTE]
+> Microsoft also supports [dynamic distribution groups](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true) which cannot be managed or retrieved through Microsoft Graph.
+
 Only Microsoft 365 and security groups can be managed through the Microsoft Graph groups API. Mail-enabled and distribution groups are read-only through Microsoft Graph.
 
 In Microsoft Graph, the type of group can be identified by the settings of its **groupType**, **mailEnabled**, and **securityEnabled** properties as indicated in the table below.

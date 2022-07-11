@@ -4,7 +4,7 @@ description: "Update the role settings for the given role setting. A privilegedR
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "japere"
+author: "rkarim-ms"
 ---
 
 # Update privilegedRoleSettings

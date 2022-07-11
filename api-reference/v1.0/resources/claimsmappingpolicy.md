@@ -19,7 +19,7 @@ Represents the claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Co
 
 The number of claims and transformations that can be added to a claims-mapping policy are limited to reduce token size. Any claims schema entries or transformations that are encountered after the limit has been reached are ignored and included in the issued token. For more information about the limits, see [Properties of a claims-mapping policy definition](#properties-of-a-claims-mapping-policy-definition)
 
-For more scenario and configuration details see [How to: Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).
+For more scenario and configuration details, see [Claims mapping policy type](/azure/active-directory/develop/reference-claims-mapping-policy-type) and [How to: Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).
 
 Inherits from [stsPolicy](stsPolicy.md).
 

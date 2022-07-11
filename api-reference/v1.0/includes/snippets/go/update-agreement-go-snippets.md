@@ -12,11 +12,8 @@ displayName := "All Contoso volunteers - Terms of use"
 requestBody.SetDisplayName(&displayName)
 isViewingBeforeAcceptanceRequired := true
 requestBody.SetIsViewingBeforeAcceptanceRequired(&isViewingBeforeAcceptanceRequired)
-options := &msgraphsdk.AgreementRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 agreementId := "agreement-id"
-graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Patch(options)
+graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Patch(requestBody)
 
 
 ```

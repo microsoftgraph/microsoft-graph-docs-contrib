@@ -12,10 +12,7 @@ requestBody.SetMessageIds( []String {
 	"MC172851",
 	"MC167983",
 }
-options := &msgraphsdk.MarkReadRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkRead().Post(options)
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkRead().Post(requestBody)
 
 
 ```

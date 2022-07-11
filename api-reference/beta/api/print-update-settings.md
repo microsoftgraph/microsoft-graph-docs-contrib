@@ -3,7 +3,7 @@ title: Update printSettings
 description: Update tenant-wide settings for the Universal Print service.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 

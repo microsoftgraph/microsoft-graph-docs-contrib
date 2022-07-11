@@ -10,13 +10,13 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"Prefer": "include-unknown-enum-members"
 }
-options := &msgraphsdk.ReassignRequestBuilderPostOptions{
-	H: headers,
+options := &msgraphsdk.ReassignRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
 educationSubmissionId := "educationSubmission-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).Reassign(educationClass-id, educationAssignment-id, educationSubmission-id).Post(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).Reassign(educationClass-id, educationAssignment-id, educationSubmission-id).PostWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "List decisions (from a multi-stage access review)"
 description: "Get the decisions from a stage in a multi-stage access review."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the decisions from a stage in a multi-stage access review. The decisions in an [accessReviewStage](../resources/accessReviewStage.md) object are represented by an accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) object.
+Get the decisions from a stage in a multi-stage access review. The decisions in an [accessReviewStage](../resources/accessReviewStage.md) object are represented by an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

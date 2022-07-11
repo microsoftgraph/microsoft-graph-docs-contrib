@@ -18,10 +18,10 @@ accessType := "blocked"
 usersAndGroups.SetAccessType(&accessType)
 usersAndGroups.SetTargets( []CrossTenantAccessPolicyTarget {
 	msgraphsdk.NewCrossTenantAccessPolicyTarget(),
-	SetAdditionalData(map[string]interface{}{
-		"target": "6f546279-4da5-4b53-a095-09ea0cef9971",
-		"targetType": "group",
-	}
+target := "6f546279-4da5-4b53-a095-09ea0cef9971"
+	SetTarget(&target)
+targetType := "group"
+	SetTargetType(&targetType)
 }
 b2bDirectConnectInbound := msgraphsdk.NewCrossTenantAccessPolicyB2BSetting()
 requestBody.SetB2bDirectConnectInbound(b2bDirectConnectInbound)
@@ -31,15 +31,12 @@ accessType := "allowed"
 applications.SetAccessType(&accessType)
 applications.SetTargets( []CrossTenantAccessPolicyTarget {
 	msgraphsdk.NewCrossTenantAccessPolicyTarget(),
-	SetAdditionalData(map[string]interface{}{
-		"target": "Office365",
-		"targetType": "application",
-	}
+target := "Office365"
+	SetTarget(&target)
+targetType := "application"
+	SetTargetType(&targetType)
 }
-options := &msgraphsdk.PartnersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Post(options)
+result, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Post(requestBody)
 
 
 ```

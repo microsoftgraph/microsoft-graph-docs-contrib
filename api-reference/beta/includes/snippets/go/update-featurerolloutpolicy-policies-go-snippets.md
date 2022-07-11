@@ -16,11 +16,8 @@ isEnabled := true
 requestBody.SetIsEnabled(&isEnabled)
 isAppliedToOrganization := false
 requestBody.SetIsAppliedToOrganization(&isAppliedToOrganization)
-options := &msgraphsdk.FeatureRolloutPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 featureRolloutPolicyId := "featureRolloutPolicy-id"
-graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).Patch(options)
+graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).Patch(requestBody)
 
 
 ```

@@ -16,19 +16,16 @@ membershipType := "shared"
 requestBody.SetMembershipType(&membershipType)
 requestBody.SetMembers( []ConversationMember {
 	msgraphsdk.NewConversationMember(),
+	SetRoles( []String {
+		"owner",
+	}
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.aadUserConversationMember",
 		"user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
-		"roles":  []String {
-			"owner",
-		}
 	}
 }
-options := &msgraphsdk.ChannelsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(options)
+result, err := graphClient.TeamsById(&teamId).Channels().Post(requestBody)
 
 
 ```

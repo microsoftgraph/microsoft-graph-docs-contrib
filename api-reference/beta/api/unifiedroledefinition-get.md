@@ -182,7 +182,6 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('f189965f-f560-4c59-9101-933d4c87a91a')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": []
 }
 ```
@@ -287,7 +286,6 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('fdd7a751-b60b-444a-984c-02652fe8fa1c')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": [
         {
             "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
@@ -396,7 +394,6 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('fdd7a751-b60b-444a-984c-02652fe8fa1c')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": [
         {
             "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",

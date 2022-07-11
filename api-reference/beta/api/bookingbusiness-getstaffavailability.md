@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-Get /solutions/bookingBusinesses/{id}/getStaffAvailability
+POST /bookingBusinesses/{id}/getStaffAvailability
 ```
 
 ## Request header
@@ -60,7 +60,7 @@ The following is an example of a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
+POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
 Content-Type: application/json 
 
 { 

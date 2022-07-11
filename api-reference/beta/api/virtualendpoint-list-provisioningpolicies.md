@@ -128,7 +128,8 @@ Content-Type: application/json
       "imageType":"custom",
       "windowsSettings": {
         "language": "en-US"
-      }
+      },
+      "managedBy": "windows365"
     }
   ]
 }

@@ -13,11 +13,8 @@ requestBody.SetName(&name)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
 }
-options := &msgraphsdk.AttachmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Attachments().Post(options)
+result, err := graphClient.Me().EventsById(&eventId).Attachments().Post(requestBody)
 
 
 ```

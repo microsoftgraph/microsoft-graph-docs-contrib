@@ -1,7 +1,7 @@
 ---
 title: "List definitions"
 description: "Get a list of the accessReviewScheduleDefinition objects and their properties."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -281,7 +281,6 @@ Content-type: application/json
                     }
                 ]
             },
-            "instances@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('cc701697-762c-439a-81f5-f58d680fde76')/instances",
             "instances": []
         }
     ]

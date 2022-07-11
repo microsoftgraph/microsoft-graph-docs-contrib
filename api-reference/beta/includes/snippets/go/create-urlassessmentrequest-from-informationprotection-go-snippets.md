@@ -16,10 +16,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.urlAssessmentRequest",
 	"url": "http://test.com",
 }
-options := &msgraphsdk.ThreatAssessmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(options)
+result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(requestBody)
 
 
 ```

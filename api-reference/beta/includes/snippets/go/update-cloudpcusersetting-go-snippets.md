@@ -23,11 +23,8 @@ requestBody.SetLocalAdminEnabled(&localAdminEnabled)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.cloudPcUserSetting",
 }
-options := &msgraphsdk.CloudPcUserSettingRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 cloudPcUserSettingId := "cloudPcUserSetting-id"
-graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Patch(options)
+graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Patch(requestBody)
 
 
 ```

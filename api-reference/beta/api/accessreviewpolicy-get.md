@@ -1,7 +1,7 @@
 ---
 title: "Get accessReviewPolicy"
 description: "Read the properties and relationships of an accessReviewPolicy object."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.AccessReviews|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.AccessReview|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.Read.All, Policy.ReadWrite.AccessReviews|
+|Application|Policy.Read.All, Policy.ReadWrite.AccessReview|
 
 ## HTTP request
 

@@ -28,11 +28,8 @@ callOptions.SetAdditionalData(map[string]interface{}{
 }
 participantCapacity := int32(200)
 requestBody.SetParticipantCapacity(&participantCapacity)
-options := &msgraphsdk.AnswerRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Answer(call-id).Post(options)
+graphClient.Communications().CallsById(&callId).Answer(call-id).Post(requestBody)
 
 
 ```

@@ -108,7 +108,6 @@ Content-Type: application/json
     "userReacceptRequiredFrequency": null,
     "isViewingBeforeAcceptanceRequired": true,
     "isPerDeviceAcceptanceRequired": false,
-    "files@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/termsOfUse/agreements('94410bbf-3d3e-4683-8149-f034e55c39dd')/files",
     "files": [
         {
             "id": "08033369-8972-42a3-8533-90bbd2757a01",
