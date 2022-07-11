@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a reference to a directory object in a partner organization. Inherits from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0).
+Represents a reference to a directory object in a partner organization. Inherits from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0&preserve-view=true).
 
 ## Properties
 
@@ -20,7 +20,7 @@ Represents a reference to a directory object in a partner organization. Inherits
 |description|String| Description of the object returned. Read-only. |
 |displayName|String| Name of directory object being returned, like group or application. Read-only. |
 |externalPartnerTenantId|Guid| The tenant identifier for the partner tenant. Read-only. |
-|id|String| The unique identifier for the resource. Inherited from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Read-only. |
+|id|String| The unique identifier for the resource. Inherited from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0&preserve-view=true). Read-only. |
 |objectType|String| The type of the referenced object in the partner tenant. Read-only. |
 
 ## JSON representation
