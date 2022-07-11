@@ -57,8 +57,7 @@ The following is an example of a request.
 }-->
 
 ```http
-
-POST https://graph.microsoft.com/v1.0/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
 Content-Type: application/json
 
 { 
