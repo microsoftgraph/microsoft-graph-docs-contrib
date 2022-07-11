@@ -1687,11 +1687,9 @@ items:
           href: resources/calltranscript.md
           items:
           - name: List
-            href: api/calltranscript-list.md
+            href: api/onlinemeeting-list-transcripts.md
           - name: Get
             href: api/calltranscript-get.md
-          - name: Get content
-            href: api/calltranscript-get-content.md
         - name: Meeting registration
           href: resources/meetingregistration.md
           items:
