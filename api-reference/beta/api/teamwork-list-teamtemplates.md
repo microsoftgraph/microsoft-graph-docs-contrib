@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [teamTemplate](../resources/teamtemplate.md) objects that are available for the tenant. 
+Get the list of [teamTemplate](../resources/teamtemplate.md) objects that are available for a tenant. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Team.Create|
-|Delegated (personal Microsoft account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Team.Create|
 
 ## HTTP request
@@ -53,9 +53,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-## Example 1: Get a list of team templates
+### Example 1: Get a list of team templates
 
-### Request
+#### Request
 The following is an example of a request.
 
 
@@ -68,7 +68,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/teamwork/teamTemplates
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -97,7 +97,7 @@ Content-Type: application/json
 
 ### Example 2: Use $extend and $filter to get templateDefinitions for en-US locale
 
-### Request
+#### Request
 
 The following is an example of a request.
 
@@ -110,7 +110,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/teamwork/teamTemplates?$expand=definitions&filter=definitions/any(a:a/languageTag eq 'en-US')
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -167,7 +167,7 @@ Content-Type: application/json
                     "lastModifiedBy": null
                 }
             ]
-        },
+        }
     ]
 }
 ```
