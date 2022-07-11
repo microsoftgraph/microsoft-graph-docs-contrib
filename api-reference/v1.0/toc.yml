@@ -222,9 +222,9 @@ items:
           - name: Build a web app (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
           - name: Build a web app (React)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/1.0
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
           - name: Build a web app (Angular)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/1.0
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
           - name: Build a SharePoint web part
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
           - name: Build a Teams tab
