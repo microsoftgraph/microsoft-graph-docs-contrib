@@ -58,8 +58,9 @@ The following is an example of a request.
 
 ```http
 
-POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
-Content-Type: application/json 
+POST https://graph.microsoft.com/v1.0/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
+Content-Type: application/json
+
 { 
     "staffIds": [ 
         "311a5454-08b2-4560-ba1c-f715e938cb79" 
@@ -88,6 +89,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 { 
     "staffAvailabilityItem": [ 
         { 
