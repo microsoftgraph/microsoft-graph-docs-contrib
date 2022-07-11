@@ -161,7 +161,6 @@ The following is a JSON representation of the resource.
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",
-  "requestSignatureVerification" : {"isSignedRequestRequired":true,"allowedWeakAlgorithms":"rsaSha1"}, /*Step required if the application does not have a valid keyCredential that can be used to verify the request*/ "keyCredentials": [{"key":"{base64 public key}", "type": "AsymmetricX509Cert","usage":"Verify"}],
   "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
   "serviceManagementReference": "String",
   "signInAudience": "String",
