@@ -64,10 +64,10 @@ Here is an example of the request. It updates a range - values, number-format an
 <!-- {
   "blockType": "request",
   "name": "update_range",
-  "sampleKeys": ["Sheet1"]
+  "sampleKeys": ["sheet1"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='A1:B2')
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/sheet1/range(address='A1:B2')
 Content-type: application/json
 
 {
