@@ -20,7 +20,6 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 | serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | A container for service communications resources. Read-only. |
-| edge | [edge](edge.md) | A container for edge resources. Read-only. |
 
 
 ## JSON representation
