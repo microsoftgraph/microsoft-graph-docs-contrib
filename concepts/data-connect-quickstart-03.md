@@ -1,5 +1,4 @@
 ---
-description: Learn how to create, run, and approve an Azure Data Factory pipeline to extract data from Microsoft 365 to an Azure storage blob.
 ms.localizationpriority: medium
 ---
 

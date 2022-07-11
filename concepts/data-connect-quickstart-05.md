@@ -1,5 +1,4 @@
 ---
-description: Learn how to use the Azure Data Factory to create a pipeline that extracts data from Microsoft 365 to the Azure Storage account using Microsoft Graph data connect.
 ms.localizationpriority: medium
 ---
 

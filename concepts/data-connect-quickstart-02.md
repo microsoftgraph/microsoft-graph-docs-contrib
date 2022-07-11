@@ -1,5 +1,4 @@
 ---
-description: Learn how to configure your Microsoft 365 tenant before using Microsoft Graph data connect for the first time.
 ms.localizationpriority: medium
 ---
 
