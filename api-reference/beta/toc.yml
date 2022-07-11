@@ -222,9 +222,9 @@ items:
           - name: Build a web app (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
           - name: Build a web app (React)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/beta
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
           - name: Build a web app (Angular)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/beta
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
           - name: Build a SharePoint web part
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
           - name: Build a Teams tab
@@ -1773,7 +1773,7 @@ items:
           - name: List review sets
             href: api/ediscovery-case-list-reviewsets.md
           - name: Create review set
-            href: /api/ediscovery-case-post-reviewsets.md
+            href: api/ediscovery-case-post-reviewsets.md
           - name: Get settings
             href: api/ediscovery-casesettings-get.md
           - name: Update settings
@@ -1783,11 +1783,11 @@ items:
           - name: List source collections
             href: api/ediscovery-case-list-sourcecollections.md
           - name: Create source collection
-            href: /api/ediscovery-case-post-sourcecollections.md
+            href: api/ediscovery-case-post-sourcecollections.md
           - name: List tags
-            href: /api/ediscovery-case-list-tags.md
+            href: api/ediscovery-case-list-tags.md
           - name: Create tag
-            href: /api/ediscovery-case-post-tags.md
+            href: api/ediscovery-case-post-tags.md
         - name: Custodian
           href: resources/ediscovery-custodian.md
           items:
@@ -9785,7 +9785,7 @@ items:
           - name: Windows Hello for business PIN usage
             href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
         - name: Role-based access control (RBAC)
-          href: /resources/intune-rbac-conceptual.md
+          href: resources/intune-rbac-conceptual.md
           items:
           - name: Device and app management assigned role details
             href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
