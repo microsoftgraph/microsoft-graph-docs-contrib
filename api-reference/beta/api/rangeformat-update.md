@@ -81,7 +81,7 @@ Content-type: application/json
   "columnWidth": 135,
   "verticalAlignment": "Top",
   "rowHeight": 49,
-  "wrapText": false/sites/contoso.sharepoint.com,
+  "wrapText": false
 }
 ```
 # [C#](#tab/csharp)

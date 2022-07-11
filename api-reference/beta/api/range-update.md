@@ -63,11 +63,10 @@ Here is an example of the request. It updates a range - values, number-format an
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_range",
-  "sampleKeys": ["sheet1"]
+  "name": "update_range"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/sheet1/range(address='A1:B2')
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='A1:B2')
 Content-type: application/json
 
 {
