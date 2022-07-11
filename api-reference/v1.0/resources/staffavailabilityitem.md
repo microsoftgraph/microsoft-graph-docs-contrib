@@ -33,7 +33,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "availabilityItems": "availabilityItem",
+  "availabilityItems": [{"@odata.type": "microsoft.graph.availabilityItem"}],
   "staffId": "String"
 }
 ```
