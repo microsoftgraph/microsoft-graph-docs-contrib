@@ -5083,7 +5083,7 @@ items:
             - name: Reset
               href: api/passwordauthenticationmethod-resetpassword.md
             - name: Get operation status
-              href: api/authenticationoperation-get.md
+              href: api/longrunningoperation-get.md
         - name: Conditional access
           items:
           - name: Policies
