@@ -84,7 +84,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "microsoft.graph.cloudPcConnectivityEvent",
-      "eventDatetime": "2022-03-23T18:40:00Z",
+      "eventDateTime": "2022-03-23T18:40:00Z",
       "eventName": "DomainJoinCheck",
       "eventResult": "failure",
       "eventType": "deviceHealthCheck",
