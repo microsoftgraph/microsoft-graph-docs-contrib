@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete browserSiteList
 Namespace: microsoft.graph
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a [browserSiteList](../resources/browsersitelist.md) object.
 
@@ -55,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}
+DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}
 ```
 
 

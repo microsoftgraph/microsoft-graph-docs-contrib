@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Create browserSiteList
 Namespace: microsoft.graph
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [browserSiteList](../resources/browsersitelist.md) object.
 
@@ -65,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteLists
+POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists
 Content-Type: application/json
 Content-length: 283
 

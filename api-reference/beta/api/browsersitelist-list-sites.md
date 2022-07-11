@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List browserSites
 Namespace: microsoft.graph
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [browserSite](../resources/browsersite.md) objects and their properties.
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sites
+GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sites
 ```
 
 

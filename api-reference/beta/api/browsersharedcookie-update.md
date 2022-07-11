@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update browserSharedCookie
 Namespace: microsoft.graph
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [browserSharedCookie](../resources/browsersharedcookie.md) object.
 
@@ -67,7 +67,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCookies/{browserSharedCookieId}
+PATCH https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCookies/{browserSharedCookieId}
 Content-Type: application/json
 Content-length: 349
 

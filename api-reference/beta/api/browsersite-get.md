@@ -1,17 +1,18 @@
 ---
-title: "Get browserSharedCookie"
-description: "Read the properties and relationships of a browserSharedCookie object."
+title: "Get browserSite"
+description: "Read the properties and relationships of a browserSite object."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
 
-# Get browserSharedCookie
+# Get browserSite
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve properties and relationships for a [browserSharedCookie](../resources/browsersharedcookie.md) resource. A **browserSharedCookie** represents a cookie that can be shared between Edge and Internet Explorer mode.
+Read the properties and relationships of a [browserSite](../resources/browsersite.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCookies/{browserSharedCookieId}
+GET /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sites/{browserSiteId}
 ```
 
 ## Optional query parameters
@@ -45,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [browserSharedCookie](../resources/browsersharedcookie.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [browserSite](../resources/browsersite.md) object in the response body.
 
 ## Examples
 
@@ -53,11 +54,11 @@ If successful, this method returns a `200 OK` response code and a [browserShared
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_browsersharedcookie"
+  "name": "get_browsersite"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCookies/{browserSharedCookieId}
+GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sites/{browserSiteId}
 ```
 
 
@@ -67,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.browserSharedCookie"
+  "@odata.type": "microsoft.graph.browserSite"
 }
 -->
 ``` http
@@ -76,15 +77,16 @@ Content-Type: application/json
 
 {
     "status": "pendingEdit",
-    "id": "07f4030f-45ff-4ad1-9277-3b8f6ee74141",
-    "hostOrDomain": "www.microsoft.com",
-    "sourceEnvironment": "microsoftEdge",
-    "displayName": "Microsoft Cookie",
-    "path": "/",
-    "hostOnly": true,
-    "comment": "A cookie for microsoft.com",
-    "lastModifiedDateTime": "2022-06-29T11:32:39.6732721-04:00",
-    "createdDateTime": "2022-06-29T11:32:39.673272-04:00",
+    "id": "a22cbc85-d5d2-4e61-8414-42e6704c36f7",
+    "webUrl": "www.microsoft.com",
+    "targetEnvironment": "microsoftEdge",
+    "mergeType": "default",
+    "compatibilityMode": "default",
+    "allowRedirect": false,
+    "comment": "Updating to Edge.",
+    "lastModifiedDateTime": "2022-06-29T15:44:27.2154899Z",
+    "createdDateTime": "2022-06-29T14:51:23.8662595Z",
+    "deletedDateTime": null,
     "lastModifiedBy": {
         "user": {
             "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
@@ -95,11 +97,11 @@ Content-Type: application/json
     "history": [
         {
             "publishedDateTime": "2022-06-29T14:51:23.8662592Z",
-            "hostOrDomain": "www.microsoft.com",
-            "comment": "A cookie for InternetExplorer11",
-            "displayName": "Microsoft Cookie",
-            "sourceEnvironment": "internetExplorer11",
-            "hostOnly": true,
+            "allowRedirect": true,
+            "comment": "A site that opens in InternetExplorer11",
+            "compatibilityMode": "default",
+            "targetEnvironment": "internetExplorer11",
+            "mergeType": "default",
             "lastModifiedBy": {
                 "user": {
                     "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",

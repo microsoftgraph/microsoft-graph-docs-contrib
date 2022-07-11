@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update browserSiteList
 Namespace: microsoft.graph
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [browserSiteList](../resources/browsersitelist.md) object.
 
@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}
+PATCH https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}
 Content-Type: application/json
 Content-length: 283
 

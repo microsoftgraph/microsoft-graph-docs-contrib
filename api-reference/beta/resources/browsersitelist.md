@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents an Internet Explorer Mode site list which contains one or more [browserSite](../resources/browsersite.md) or [browserSharedCookie](../resources/browsersharedcookie.md) resources.
 
 ## Methods

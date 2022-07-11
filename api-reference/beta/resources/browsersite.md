@@ -11,6 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A `browserSite` represents a IE mode site that resides on a site list.
 

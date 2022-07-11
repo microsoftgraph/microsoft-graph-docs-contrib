@@ -11,6 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A `browserSharedCookie` represents a IE mode cookie that resides on a site list.
 
@@ -20,7 +21,7 @@ A `browserSharedCookie` represents a IE mode cookie that resides on a site list.
 |[List browserSharedCookies](../api/browsersitelist-list-sharedcookies.md)|[browserSharedCookie](../resources/browsersharedcookie.md) collection|Get a list of the [browserSharedCookie](../resources/browsersharedcookie.md) objects and their properties.|
 |[Create browserSharedCookie](../api/browsersitelist-post-sharedcookies.md)|[browserSharedCookie](../resources/browsersharedcookie.md)|Create a new [browserSharedCookie](../resources/browsersharedcookie.md) object.|
 |[Get browserSharedCookie](../api/browsersharedcookie-get.md)|[browserSharedCookie](../resources/browsersharedcookie.md)|Read the properties and relationships of a [browserSharedCookie](../resources/browsersharedcookie.md) object.|
-|[Update browserSharedCookie](../api/browsersharedcookie-update.md)|[browserSharedCookie](../resources/browsersharedcookie.md)|Update the properties of a [browserSharedCookie](../resources/browsersharedcookie.md) object.|
+|[Update browserSharedCookie](../api/browsersharedcookie-update.md)|None|Update the properties of a [browserSharedCookie](../resources/browsersharedcookie.md) object.|
 |[Delete browserSharedCookie](../api/browsersitelist-delete-sharedcookies.md)|None|Deletes a [browserSharedCookie](../resources/browsersharedcookie.md) object.|
 
 ## Properties

@@ -1,18 +1,18 @@
 ---
-title: "List browserSharedCookies"
-description: "Get a list of the browserSharedCookie objects and their properties."
+title: "Get browserSharedCookie"
+description: "Read the properties and relationships of a browserSharedCookie object."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
 
-# List browserSharedCookies
+# Get browserSharedCookie
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Get a list of the [browserSharedCookie](../resources/browsersharedcookie.md) objects and their properties.
+Retrieve properties and relationships for a [browserSharedCookie](../resources/browsersharedcookie.md) resource. A **browserSharedCookie** represents a cookie that can be shared between Edge and Internet Explorer mode.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCookies
+GET /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCookies/{browserSharedCookieId}
 ```
 
 ## Optional query parameters
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [browserSharedCookie](../resources/browsersharedcookie.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [browserSharedCookie](../resources/browsersharedcookie.md) object in the response body.
 
 ## Examples
 
@@ -54,11 +54,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_browsersharedcookie"
+  "name": "get_browsersharedcookie"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCookies
+GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCookies/{browserSharedCookieId}
 ```
 
 
@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.browserSharedCookie)"
+  "@odata.type": "microsoft.graph.browserSharedCookie"
 }
 -->
 ``` http
@@ -76,18 +76,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "value": [
+    "status": "pendingEdit",
+    "id": "07f4030f-45ff-4ad1-9277-3b8f6ee74141",
+    "hostOrDomain": "www.microsoft.com",
+    "sourceEnvironment": "microsoftEdge",
+    "displayName": "Microsoft Cookie",
+    "path": "/",
+    "hostOnly": true,
+    "comment": "A cookie for microsoft.com",
+    "lastModifiedDateTime": "2022-06-29T11:32:39.6732721-04:00",
+    "createdDateTime": "2022-06-29T11:32:39.673272-04:00",
+    "lastModifiedBy": {
+        "user": {
+            "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
+            "displayName": "Joe Smith"
+        },
+        "application": null
+    },
+    "history": [
         {
-            "status": "published",
-            "id": "07f4030f-45ff-4ad1-9277-3b8f6ee74141",
+            "publishedDateTime": "2022-06-29T14:51:23.8662592Z",
             "hostOrDomain": "www.microsoft.com",
-            "sourceEnvironment": "internetExplorer11",
+            "comment": "A cookie for InternetExplorer11",
             "displayName": "Microsoft Cookie",
-            "path": "/",
+            "sourceEnvironment": "internetExplorer11",
             "hostOnly": true,
-            "comment": "A cookie for microsoft.com",
-            "lastModifiedDateTime": "2022-06-29T11:32:39.6732721-04:00",
-            "createdDateTime": "2022-06-29T11:32:39.673272-04:00",
             "lastModifiedBy": {
                 "user": {
                     "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
@@ -95,7 +108,6 @@ Content-Type: application/json
                 },
                 "application": null
             },
-            "history": []
         }
     ]
 }

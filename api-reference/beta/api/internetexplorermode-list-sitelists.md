@@ -1,18 +1,18 @@
 ---
-title: "Get browserSiteList"
-description: "Read the properties and relationships of a browserSiteList object."
+title: "List browserSiteLists"
+description: "Get a list of the browserSiteList objects and their properties."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
 
-# Get browserSiteList
+# List browserSiteLists
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Read the properties and relationships of a [browserSiteList](../resources/browsersitelist.md) object.
+Get a list of the [browserSiteList](../resources/browsersitelist.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}
+GET /admin/edge/internetExplorerMode/siteLists
 ```
 
 ## Optional query parameters
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [browserSiteList](../resources/browsersitelist.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [browserSiteList](../resources/browsersitelist.md) objects in the response body.
 
 ## Examples
 
@@ -54,11 +54,11 @@ If successful, this method returns a `200 OK` response code and a [browserSiteLi
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_browsersitelist"
+  "name": "list_browsersitelist"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}
+GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists
 ```
 
 
@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.browserSiteList"
+  "@odata.type": "Collection(microsoft.graph.browserSiteList)"
 }
 -->
 ``` http
@@ -76,28 +76,32 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.browserSiteList",
-    "id": "e370d818-f650-5ab1-499e-5915e83f4573",
-    "description": "Production site list for devices",
-    "lastModifiedBy": {
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.browserSiteList",
+      "id": "e370d818-f650-5ab1-499e-5915e83f4573",
+      "description": "Production site list for devices",
+      "lastModifiedBy": {
         "user": {
-            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-            "displayName": "Joe Smith"
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Joe Smith"
         },
         "application": null
-    },
-    "lastModifiedDateTime": "2016-03-21T20:01:37Z",
-    "displayName": "Production Site List A",
-    "publishedBy": {
+      },
+      "lastModifiedDateTime": "2016-03-21T20:01:37Z",
+      "displayName": "Production Site List A",
+      "publishedBy": {
         "user": {
-            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-            "displayName": "Joe Smith"
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Joe Smith"
         },
         "application": null
-    },
-    "publishedDateTime": "2016-03-21T20:01:37Z",
-    "status": "published",
-    "revision": "1.0"
+      },
+      "publishedDateTime": "2016-03-21T20:01:37Z",
+      "status": "published",
+      "revision": "1.0"
+    }
+  ]
 }
 ```
 
