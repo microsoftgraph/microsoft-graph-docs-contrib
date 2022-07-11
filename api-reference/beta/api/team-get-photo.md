@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/
 
 #### Response
 
-The is an example of the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
