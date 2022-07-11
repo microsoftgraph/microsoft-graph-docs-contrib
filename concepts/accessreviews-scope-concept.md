@@ -1,7 +1,7 @@
 ---
 title: "Configure the scope of your access review using the Microsoft Graph API"
 description: "Learn how to programmatically review the access that users, service principals, or groups have to your Azure AD resources by using the Microsoft Graph API."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
@@ -177,7 +177,6 @@ The following example scopes the review to direct members of all teams who are i
 Additionally, because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams. Dynamic groups and role-assignable groups aren't included in this review.
 
 This review won't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
-
 
 ---
 

@@ -14,6 +14,10 @@ Namespace: microsoft.graph.managedTenants
 
 Get the roles that a signed-in user has through a delegated relationship across managed tenants.
 
+For information on the types of delegated relationships between a Managed Service Provider (MSP) who uses Microsoft 365 Lighthouse, and their business customers with Microsoft 365 Business Premium tenants, see the following articles on the [Partner Center](/partner-center/overview):
+- [Delegated administration privileges](/partner-center/dap-faq) (DAP)
+- [Granular delegated admin privileges](/partner-center/gdap-introduction) (GDAP)
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

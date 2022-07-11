@@ -68,7 +68,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Applications | ✔ | ➖ | ➖ |
 | Change notifications (webhooks) | ✔ | ✔ | ✔\* |
 | Delta query | ✔ | ✔ | ➖ |
-| Directory schema extensions | ✔ | ✔ | ➖ |
+| Directory extensions | ✔ | ✔ | ➖ |
 | Excel | ✔ | ➖ | ✔ |
 | Groups | ✔ | ✔ | ✔ |
 | OneDrive | ✔ | ✔\* | ✔ |
