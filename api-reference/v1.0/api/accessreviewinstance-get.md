@@ -1,7 +1,7 @@
 ---
 title: "Get accessReviewInstance"
 description: "Read the properties and relationships of an accessReviewInstance object."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

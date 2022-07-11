@@ -520,8 +520,12 @@ items:
           - name: Get system messages
             href: system-messages.md
       - name: To-do tasks
-        href: todo-concept-overview.md
         displayName: Microsoft To Do
+        items:
+          - name: Overview
+            href: todo-concept-overview.md
+          - name: Attach files to a task
+            href: todo-attachments.md
       - name: Workbooks and charts
         items:
           - name: Overview
@@ -595,8 +599,12 @@ items:
               - name: Overview
                 displayName: throttling
                 href: throttling.md
+              - name: Service-specific limits
+                displayName: throttling
+                href: throttling-limits.md
               - name: Optimize network traffic
                 href: /learn/modules/optimize-network-traffic
+                displayName: throttling
           - name: Change notifications
             items:
               - name: Overview

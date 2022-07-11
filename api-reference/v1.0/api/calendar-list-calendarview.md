@@ -1,6 +1,6 @@
 ---
 title: "List calendarView"
-description: "Get the occurrences, exceptions and single instances of events in a calendar view defined by a time range,"
+description: "Get the occurrences, exceptions and single instances of events in a calendar view defined by a time range."
 ms.localizationpriority: high
 author: "harini84"
 ms.prod: "outlook"
@@ -82,7 +82,7 @@ If the result set spans multiple pages, **calendarView** returns an **@odata.nex
 
 ## Example
 ### Request
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -119,7 +119,8 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response. 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -438,6 +438,13 @@ GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 ```
 To solve this issue, remove the `/tenants/{tenant-id}` part from the URL before you call the API to access the cross-tenant shared [channel](/graph/api/resources/channel.md).
 
+### TeamworkAppSettings permissions are not visible in the Azure portal
+The permissions TeamworkAppSettings.Read.All and TeamworkAppSettings.ReadWrite.All are currently being rolled out and might not be visible in Azure Portal yet. To consent to these permissions, please use an authorize request as follows:
+
+```http
+GET https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authorize?client_id={client-app-id}&response_type=code&scope=https://graph.microsoft.com/TeamworkAppSettings.ReadWrite.All
+```
+
 ## Users
 
 ### Encode number (#) symbols in userPrincipalName
