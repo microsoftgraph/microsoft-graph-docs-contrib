@@ -28,6 +28,7 @@ Represents a transcript associated to an [online meeting](onlinemeeting.md).
 |:---------------|:--------|:----------|
 | id| String| The transcript's unique identifier. Read-only.|
 | createdDateTime| dateTimeOffset|  Date and time at which the transcript was created. Read-only.|
+| content| Stream| A field representing the content of the transcript. Read -only.|
 
 ## JSON representation
 

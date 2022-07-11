@@ -1683,6 +1683,15 @@ items:
             items:
             - name: List
               href: api/attendancerecord-list.md
+        - name: Transcript
+          href: resources/calltranscript.md
+          items:
+          - name: List
+            href: api/calltranscript-list.md
+          - name: Get
+            href: api/calltranscript-get.md
+          - name: Get content
+            href: api/calltranscript-get-content.md
         - name: Meeting registration
           href: resources/meetingregistration.md
           items:
@@ -16152,19 +16161,7 @@ items:
         - name: List notebooks
           href: api/onenote-list-notebooks.md
         - name: Create notebook
-          href: api/onenote-post-notebooks.md
-      - name: Online meetings
-        href: resources/onlinemeeting.md
-        items:        
-        - name: Transcript
-          href: resources/calltranscript.md
-          items:
-          - name: List
-            href: api/calltranscript-list.md
-          - name: Get
-            href: api/calltranscript-get.md
-          - name: Get content
-            href: api/calltranscript-get-content.md
+          href: api/onenote-post-notebooks.md      
       - name: Resource-specific permission grants
         href: resources/resourcespecificpermissiongrant.md
         items:
