@@ -1683,7 +1683,7 @@ items:
             items:
             - name: List
               href: api/attendancerecord-list.md
-        - name: Transcript
+        - name: Call transcript
           href: resources/calltranscript.md
           items:
           - name: List
