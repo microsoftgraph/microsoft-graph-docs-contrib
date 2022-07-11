@@ -21,7 +21,7 @@ Represents an Internet Explorer Mode site list which contains one or more [brows
 |[List browserSiteLists](../api/internetexplorermode-list-sitelists.md)|[browserSiteList](../resources/browsersitelist.md) collection|Get a list of the [browserSiteList](../resources/browsersitelist.md) objects and their properties.|
 |[Create browserSiteList](../api/internetexplorermode-post-sitelists.md)|[browserSiteList](../resources/browsersitelist.md)|Create a new [browserSiteList](../resources/browsersitelist.md) object.|
 |[Get browserSiteList](../api/browsersitelist-get.md)|[browserSiteList](../resources/browsersitelist.md)|Read the properties and relationships of a [browserSiteList](../resources/browsersitelist.md) object.|
-|[Update browserSiteList](../api/browsersitelist-update.md)|[browserSiteList](../resources/browsersitelist.md)|Update the properties of a [browserSiteList](../resources/browsersitelist.md) object.|
+|[Update browserSiteList](../api/browsersitelist-update.md)|None|Update the properties of a [browserSiteList](../resources/browsersitelist.md) object.|
 |[Delete browserSiteList](../api/internetexplorermode-delete-sitelists.md)|None|Deletes a [browserSiteList](../resources/browsersitelist.md) object.|
 |[Publish a browserSiteList](../api/browsersitelist-publish.md)|[browserSiteList](../resources/browsersitelist.md)|Publish a [browserSiteList](../resources/browsersitelist.md) for devices to download.|
 

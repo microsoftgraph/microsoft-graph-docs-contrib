@@ -21,7 +21,7 @@ A `browserSite` represents a IE mode site that resides on a site list.
 |[List browserSites](../api/browsersitelist-list-sites.md)|[browserSite](../resources/browsersite.md) collection|Get a list of the [browserSite](../resources/browsersite.md) objects and their properties.|
 |[Create browserSite](../api/browsersitelist-post-sites.md)|[browserSite](../resources/browsersite.md)|Create a new [browserSite](../resources/browsersite.md) object.|
 |[Get browserSite](../api/browsersite-get.md)|[browserSite](../resources/browsersite.md)|Read the properties and relationships of a [browserSite](../resources/browsersite.md) object.|
-|[Update browserSite](../api/browsersite-update.md)|[browserSite](../resources/browsersite.md)|Update the properties of a [browserSite](../resources/browsersite.md) object.|
+|[Update browserSite](../api/browsersite-update.md)|None|Update the properties of a [browserSite](../resources/browsersite.md) object.|
 |[Delete browserSite](../api/browsersitelist-delete-sites.md)|None|Deletes a [browserSite](../resources/browsersite.md) object.|
 
 ## Properties

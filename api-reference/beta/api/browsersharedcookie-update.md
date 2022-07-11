@@ -40,22 +40,23 @@ PATCH /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCooki
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|hostOrDomain|String|The URL of the cookie. Required.|
-|sourceEnvironment|browserSharedCookieSourceEnvironment|Specifies how the cookies are shared between Microsoft Edge and Internet Explorer. The possible values are: `microsoftEdge`, `internetExplorer11`, `both`, `unknownFutureValue`. Required.|
-|displayName|String|The name of the cookie Required.|
-|path|String|The path of the cookie. Required.|
-|hostOnly|Boolean|Boolean attribute that determines whether a cookie is  a host-only or domain cookie. Required.|
-|comment|String|The comment of the cookie. Required.|
+|hostOrDomain|String|The URL of the cookie.|
+|sourceEnvironment|browserSharedCookieSourceEnvironment|Specifies how the cookies are shared between Microsoft Edge and Internet Explorer. The possible values are: `microsoftEdge`, `internetExplorer11`, `both`, `unknownFutureValue`.|
+|displayName|String|The name of the cookie.|
+|path|String|The path of the cookie.|
+|hostOnly|Boolean|Boolean attribute that determines whether a cookie is  a host-only or domain cookie.|
+|comment|String|The comment of the cookie.|
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [browserSharedCookie](../resources/browsersharedcookie.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [browserSharedCookie](../resources/browsersharedcookie.md) object in the response body.
 
 ## Examples
 
