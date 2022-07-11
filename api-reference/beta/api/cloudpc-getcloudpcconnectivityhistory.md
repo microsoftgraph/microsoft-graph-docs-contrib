@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcConnectivityHistory
+GET /deviceManagement/virtualEndpoint/cloudPCs/{id}/getCloudPcConnectivityHistory
 ```
 
 ## Request headers
@@ -79,6 +79,7 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": [
     {
