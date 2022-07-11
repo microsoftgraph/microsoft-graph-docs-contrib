@@ -18,9 +18,8 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 ## Methods
 |  Method       |  Return Type  | Description| 
 |:---------------|:--------|:----------|
-|[List callTranscripts](../api/calltranscript-list.md) | [callTranscript](callTranscript.md) collection | Get the list of transcripts associated to an Online Meeting.| 
-|[Get callTranscript](../api/calltranscript-get.md) | [callTranscript](callTranscript.md) | Read properties of a transcript.| 
-|[Get callTranscript content](../api/calltranscript-get-content.md) | [callTranscript](callTranscript.md) content bytes | Get the transcript's content bytes.| 
+|[List callTranscripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Get the list of transcripts associated to an online meeting.| 
+|[Get callTranscript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Read properties of a transcript.| 
 
 ## Properties
 
