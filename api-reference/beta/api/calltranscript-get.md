@@ -34,8 +34,8 @@ To use application permission for this API, tenant administrators must create an
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/onlineMeetings({meetingId})/transcripts({transcriptId})
-GET users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})
+GET /me/onlineMeetings({meetingId})/transcripts({transcriptId})
+GET /users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})
 ```
 
 ## Request headers
