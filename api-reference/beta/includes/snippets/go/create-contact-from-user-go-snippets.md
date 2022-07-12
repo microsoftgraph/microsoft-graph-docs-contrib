@@ -29,10 +29,10 @@ requestBody.SetEmailAddresses( []TypedEmailAddress {
 }
 requestBody.SetPhones( []Phone {
 	msgraphsdk.NewPhone(),
-	SetAdditionalData(map[string]interface{}{
-		"number": "+1 732 555 0102",
-		"type": "business",
-	}
+number := "+1 732 555 0102"
+	SetNumber(&number)
+type := "business"
+	SetType(&type)
 }
 result, err := graphClient.Me().Contacts().Post(requestBody)
 

@@ -32,11 +32,12 @@ requestBody.SetPlatforms( []DevicePlatformType {
 }
 requestBody.SetTargetedVariations( []AnswerVariant {
 	msgraphsdk.NewAnswerVariant(),
-	SetAdditionalData(map[string]interface{}{
-		"languageTag": "es-es",
-		"displayName": "Sitio de instalación Contoso",
-		"description": "Pruebe o compre Contoso hogar o negocios y vea la información del producto",
-	}
+languageTag := "es-es"
+	SetLanguageTag(&languageTag)
+displayName := "Sitio de instalación Contoso"
+	SetDisplayName(&displayName)
+description := "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
+	SetDescription(&description)
 }
 state := "published"
 requestBody.SetState(&state)

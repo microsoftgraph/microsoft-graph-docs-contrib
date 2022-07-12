@@ -25,7 +25,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |[List appointments](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingbusiness](bookingbusiness.md). |
 |[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingbusiness](bookingbusiness.md). |
 |[Get bookingAppointment](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Read the properties and relationships of **bookingAppointment** object.|
-|[Update](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)	|Update a **bookingAppointment** object. |
+|[Update](../api/bookingappointment-update.md) | None	|Update a **bookingAppointment** object. |
 |[Delete](../api/bookingappointment-delete.md) | None |Delete a **bookingAppointment** object. |
 |[Cancel](../api/bookingappointment-cancel.md)|None| Cancel a **bookingAppointment** object.|
 
@@ -34,6 +34,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
+|anonymousJoinWebUrl|String|Url of meeting to join anonymously.
 |customerEmailAddress|String|The SMTP address of the [bookingCustomer](bookingcustomer.md) who is booking the appointment.|
 |customerId|String|The ID of the [bookingCustomer](bookingcustomer.md) for this appointment. If no ID is specified when an appointment is created, then a new **bookingCustomer** object is created. Once set, you should consider the **customerId** immutable.|
 |customerLocation|[location](location.md)|Represents location information for the [bookingCustomer](bookingcustomer.md) who is booking the appointment.|
@@ -109,6 +110,7 @@ The following is a JSON representation of the resource.
   "isLocationOnline": "Boolean",
   "joinWebUrl": "String",
   "optOutOfCustomerEmail": true,
+  "anonymousJoinWebUrl": "String",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
   "price": 1024,

@@ -563,7 +563,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "schema extensions,Add custom data to groups using Schema Extensions (preview)",
           "ChangeType": "Addition",
-          "Description": "Extend Microsoft Graph with application data by using [schema extensions](extensibility-overview.md#schema-extensions).  This is supported on the following resources:, administrative unit, calendar event, device, group, message, organization, personal contact, post, user, See the following example:, [Add custom data to groups using Schema Extensions (preview)](extensibility-schema-groups.md)",
+          "Description": "Extend Microsoft Graph with application data by using [schema extensions](extensibility-overview.md#3-schema-extensions).  This is supported on the following resources:, administrative unit, calendar event, device, group, message, organization, personal contact, post, user, See the following example:, [Add custom data to groups using Schema Extensions (preview)](extensibility-schema-groups.md)",
           "Target": "schema extensions,Add custom data to groups using Schema Extensions (preview)"
         },
         {
@@ -571,7 +571,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "schema extensions",
           "ChangeType": "Addition",
-          "Description": "Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](extensibility-overview.md#schema-extensions) for details.",
+          "Description": "Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](extensibility-overview.md#3-schema-extensions) for details.",
           "Target": "schema extensions"
         }
       ],
@@ -589,7 +589,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "open extensions,Add custom data to users using open extensions (preview)",
           "ChangeType": "Addition",
-          "Description": "Added resources that support [open extensions](extensibility-overview.md#open-extensions): , administrative unit, device, group, organization, user, See the following example:, [Add custom data to users using open extensions (preview)](extensibility-open-users.md)",
+          "Description": "Added resources that support [open extensions](extensibility-overview.md#4-open-extensions): , administrative unit, device, group, organization, user, See the following example:, [Add custom data to users using open extensions (preview)](extensibility-open-users.md)",
           "Target": "open extensions,Add custom data to users using open extensions (preview)"
         }
       ],
