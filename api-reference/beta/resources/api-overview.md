@@ -1,6 +1,26 @@
-Graph APIs 
+---
+title: Introduction to Microsoft Viva Learning
+ms.author: malabikaroy
+author: malabikaroy
+manager: absri
+ms.reviewer: shirana
+ms.date: 11/02/2021
+audience: enabler, admin
+ms.topic: landing-page
+ms.custom: intro-hub-or-landing
+search.appverid: MET150
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-viva-learning
+ms.service: viva
+ms.subservice: viva-learning
+ms.localizationpriority: medium
+description: Learn how to find resources for Microsoft Viva Learning.
+---
 
- 
+# Graph APIs 
+
+
 
 Overview  
 
