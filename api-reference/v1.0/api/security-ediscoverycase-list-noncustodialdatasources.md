@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryNoncustodialDataSource"
+title: "List ediscoveryNoncustodialDataSources"
 description: "Get a list of ediscoveryNoncustodialDataSource objects."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# List ediscoveryNoncustodialDataSource
+# List ediscoveryNoncustodialDataSources
 Namespace: microsoft.graph.security
 
 
