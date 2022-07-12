@@ -183,6 +183,7 @@ The following is an example of a response.
 ```http
 HTTP/1.1 400 Bad request
 Content-type: application/json
+
 {
     "error": {
         "code": "badRequest",
@@ -245,6 +246,7 @@ The following is an example of a response.
 ```http
 HTTP/1.1 400 Bad request
 Content-type: application/json
+
 {
     "error": {
         "code": "badRequest",
