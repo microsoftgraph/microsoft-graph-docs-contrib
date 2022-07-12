@@ -26,20 +26,20 @@ Represents an external partner setting on Cloud PC.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the Cloud PC external partner setting. Read-only.|
-|partnerId|String|The external partner ID.|
 |enableConnection|Boolean|If true, external partner api will accept incoming calls from external partner.|
+|id|String|The unique identifier for the Cloud PC external partner setting. Read-only.|
 |lastSyncDateTime|DateTimeOffset|Last data sync time for this external partner. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.|
-|status|[cloudPcExternalPartnerStatus](#cloudpcexternalpartnerstatus-values)|Status of external partner.The possible values are: `notAvailable`, `available`, `healthy`, `unhealthy`, `unknownFutureValue`.|
+|partnerId|String|The external partner ID.|
+|status|[cloudPcExternalPartnerStatus](#cloudpcexternalpartnerstatus-values)|The status of the connection to the external partner. The possible values are: `notAvailable`, `available`, `healthy`, `unhealthy`, `unknownFutureValue`.|
 |statusDetails|String|Status details message.|
 
 ### cloudPcExternalPartnerStatus values 
 |Member|Description|
 |:---|:---|
-|notAvailable| Connection has not been established or customer disabled the connection.|
-|available| Connection is just enabled, no heartbeat received yet.|
-|healthy| Connection is enabled, heartbeat is being received.|
-|unhealthy| Connection is enabled, heartbeat is not being received.|
+|notAvailable| Connection has not been established or the customer disabled the connection.|
+|available| Connection has just been enabled, but no heartbeat received yet.|
+|healthy| Connection is enabled and heartbeat is being received.|
+|unhealthy| Connection is enabled and heartbeat is not being received.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
@@ -58,10 +58,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcExternalPartnerSetting",
+  "enableConnection": "Boolean",  
   "id": "String (identifier)",
-  "partnerId": "String",
-  "enableConnection": "Boolean",
   "lastSyncDateTime": "String (timestamp)",
+  "partnerId": "String",
   "status": "String",
   "statusDetails": "String"
 }

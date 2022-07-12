@@ -42,12 +42,12 @@ POST /deviceManagement/virtualEndpoint/externalPartnerSettings
 ## Request body
 In the request body, supply a JSON representation of the [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.
 
-You can specify the following properties when creating a **cloudPcExternalPartnerSetting**.
+You can specify the following properties when you create a **cloudPcExternalPartnerSetting**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|partnerId|String|The external partner ID. Required.|
 |enableConnection|Boolean|Enable or disable external partner connection. If true, external partner api will accept incoming calls from external partner. Required.|
+|partnerId|String|The external partner ID. Required.|
 
 
 
@@ -58,6 +58,9 @@ If successful, this method returns a `201 Created` response code and a [cloudPcE
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_cloudpcexternalpartnersetting_from_"
@@ -76,6 +79,9 @@ Content-Type: application/json
 
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
