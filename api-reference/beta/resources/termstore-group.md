@@ -4,7 +4,7 @@ title: Group resource type
 doc_type: "resourcePageType"
 description: "Represents a group used in a term store."
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.prod: taxonomy
 ---
 
 # Group resource type
