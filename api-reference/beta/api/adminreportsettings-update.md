@@ -1,6 +1,6 @@
 ---
 title: "Update adminReportSettings"
-description: "Update tenant-level settings for Microsoft 365 Reports."
+description: "Update tenant-level settings for Microsoft 365 reports."
 ms.localizationpriority: medium
 author: "qiwhuang"
 ms.prod: "reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update tenant-level settings for Microsoft 365 Reports.
+Update tenant-level settings for Microsoft 365 reports.
 
 ## Permissions
 
@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following is an example of a request that updates a tenant-level setting for Microsoft 365 Reports.
+The following is an example of a request that updates a tenant-level setting for Microsoft 365 reports.
 
 ### Request
 The following is an example of a request.
