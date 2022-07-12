@@ -125,11 +125,18 @@ Content-Type: application/json
             ".md", 
             ".git"
         ],
+        "idleSessionSignOut": {
+            "isEnabled": true,
+            "warnAfterInSeconds": 120,
+            "signOutAfterInSeconds": 300
+        },
         "imageTaggingOption": "basic",
         "isCommentingOnSitePagesEnabled": true,
         "isFileActivityNotificationEnabled": true,
+        "isLegacyAuthProtocolsEnabled": false,
         "isLoopEnabled": true,
         "isMacSyncAppEnabled": false,
+        "isRequireAcceptingUserToMatchInvitedUser": true,
         "isResharingByExternalUsersEnabled": true,
         "isSharePointMobileNotificationEnabled": true,
         "isSharePointNewsfeedEnabled": true,
