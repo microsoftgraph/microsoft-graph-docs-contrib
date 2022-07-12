@@ -20,7 +20,7 @@ The first step is to create an Azure AD application that will be used as the sec
 
 1. Select the **New registration** button.
 
-    ![A screenshot showing the App registrations in the Azure Active Directory service in the Azure portal.](images/data-connect-azure-aad-app-reg.png)
+    ![A screenshot showing the App registrations in the Azure Active Directory service in the Azure portal.](../concepts/images/data-connect-azure-aad-app-reg.png)
 
 1. Use the following values to create a new Azure AD application and select **Register**.
 
@@ -28,7 +28,7 @@ The first step is to create an Azure AD application that will be used as the sec
    - **Supported account types**: Accounts in this organizational directory only.
    - **Redirect URI**: Leave the default values.
 
-    ![A screenshot showing the steps to register a new application registration in the Azure portal.](images/data-connect-aad-redirect-uri.png)
+    ![A screenshot showing the steps to register a new application registration in the Azure portal.](../concepts/images/data-connect-aad-redirect-uri.png)
 
 1. Locate the **Application (client) ID** and copy it as you will need it later in this tutorial. This will be referred to as the service principal ID.
 
@@ -38,7 +38,7 @@ The first step is to create an Azure AD application that will be used as the sec
 
 1. Select the **New client secret button**. Set *Description* to any name, set **Expires** to any value in the dropdown and choose **Add**.
 
-    ![A screenshot showing the process to create a new client secret in the Azure portal.](images/data-connect-aad-certs-secrets.png)
+    ![A screenshot showing the process to create a new client secret in the Azure portal.](../concepts/images/data-connect-aad-certs-secrets.png)
 
     - After the client secret is created, make sure you save the **Value** somewhere safe, as it will no longer be available later, and you will need to create a new one.
     - This will be referenced as the service principal key.
@@ -47,4 +47,4 @@ The first step is to create an Azure AD application that will be used as the sec
 
 1. Verify that your account is listed as an owner for the application. If it isn't listed as an owner, add it.
 
-    ![A screenshot showing a user verifying that their account is set as owner for the application registration in the Azure portal.](images/data-connect-aad-app-owners.png)
+    ![A screenshot showing a user verifying that their account is set as owner for the application registration in the Azure portal.](../concepts/images/data-connect-aad-app-owners.png)
