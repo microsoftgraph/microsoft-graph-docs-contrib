@@ -57,6 +57,7 @@ Sections are loaded by default, but they can be disabled globally via the `MgtPe
 | mailMessages | `boolean` - Indicates whether the person card messages section is shown. Default value is `true`.  |
 | files | `boolean` - Indicates whether the person card files section is shown. Default value is `true`.  |
 | profile | `boolean` - Indicates whether the person card profile section is shown. Default value is `true`.  |
+| lock-tab-navigation | `boolean` - Allows the locking of navigation using tabs so that it does not flow out of the card section. Default value is `false`.  |
 
 To disable a section, simply set the property to `false` in your app initialization code:
 ```ts

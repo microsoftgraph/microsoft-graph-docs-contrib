@@ -20,15 +20,19 @@ content := "The new cafeteria is open."
 body.SetContent(&content)
 message.SetToRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "meganb@contoso.onmicrosoft.com"
+	emailAddress.SetAddress(&address)
 }
 message.SetAttachments( []Attachment {
 	msgraphsdk.NewAttachment(),
+name := "attachment.txt"
+	SetName(&name)
+contentType := "text/plain"
+	SetContentType(&contentType)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.fileAttachment",
-		"name": "attachment.txt",
-		"contentType": "text/plain",
 		"contentBytes": "SGVsbG8gV29ybGQh",
 	}
 }
