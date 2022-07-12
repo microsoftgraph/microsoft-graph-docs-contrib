@@ -47,7 +47,7 @@ PUT /teams/{id}/photo/$value
 
 ## Request body
 
-Binary data of the image.
+In the request body, include the binary data of the photo.
 Content-type : image/jpeg
 
 ## Response
