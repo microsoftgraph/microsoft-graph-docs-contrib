@@ -54,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
-### Example 1: Remove hold from multiple custodians.
+### Example 1: Remove hold from multiple custodians
 #### Request
 The following is an example of a request.
 <!-- {
@@ -86,7 +86,7 @@ The following is an example of the response
 HTTP/1.1 202 Accepted
 ```
 
-### Example 2: Remove hold from a single custodian.
+### Example 2: Remove hold from a single custodian
 #### Request
 The following is an example of a request.
 <!-- {

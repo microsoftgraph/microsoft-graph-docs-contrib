@@ -56,7 +56,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
-### Example 1: Apply hold to multiple non-custodial data sources.
+### Example 1: Apply hold to multiple non-custodial data sources
 #### Request
 The following is an example of a request.
 <!-- {
@@ -89,7 +89,7 @@ The following is an example of the response
 HTTP/1.1 202 Accepted
 ```
 
-### Example 2: Apply hold to a single non-custodial data source.
+### Example 2: Apply hold to a single non-custodial data source
 #### Request
 The following is an example of a request.
 <!-- {

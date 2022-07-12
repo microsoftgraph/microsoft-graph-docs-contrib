@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryNoncustodialDataSource"
+title: "List ediscoveryNoncustodialDataSources"
 description: "Get a list of ediscoveryNoncustodialDataSource objects."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# List ediscoveryNoncustodialDataSource
+# List ediscoveryNoncustodialDataSources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [non-custodial data sources](../resources/security-ediscoverynoncustodialdatasource.md) objects and their properties.
+Get a list of the [non-custodial data sources](../resources/security-ediscoverynoncustodialdatasource.md) and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
