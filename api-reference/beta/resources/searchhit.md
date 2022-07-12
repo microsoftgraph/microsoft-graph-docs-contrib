@@ -21,7 +21,7 @@ Represents a single result within the list of search results.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hitId|String|The internal identifier for the item.|
+|hitId|String|The internal identifier for the item. The format of the identifier varies based on the entity type. For details, see [hitId format](#hitid-format).|
 |rank|Int32|The rank or the order of the result.|
 |contentSource|String|The name of the content source which the **externalItem** is part of .|
 |summary|String|A summary of the result, if a summary is available.|
@@ -34,7 +34,7 @@ Represents a single result within the list of search results.
 |_source (deprecated)|[entity](entity.md)|Renamed as **resource**. The underlying Graph representation of the search result.|
 
 ### hitId format
-| Id Format     | Entity Type        | Description |
+| ID format     | Entity type        | Description |
 |:-------------|:------------|:------------|
 |RestId|message|Sample: AAMkAGIwMDA5MmY0LWY5ZTgtNGY5YS04NzczLWNhNjc0ZGIyZDBjYgBGAAAAAADm35sgHbzESapJ8_BjBlhEBwDAYtphe7dsRbDrOT-HAHoKAACmqNsoAADAYtphe7dsRbDrOT-HAHoKAAFsBhyEAAA=|
 |EwsId|event|Sample: AAMkAGIwMDA5MmY0LWY5ZTgtNGY5YS04NzczLWNhNjc0ZGIyZDBjYgFRAAgI232z8Q+AAEYAAAAA5t+bIB28xEmqSfPgYwZYRAcAwGLaYXu3bEWw6zk/xwB6CgAAAAABDQAAwGLaYXu3bEWw6zk/xwB6CgABGnD/jwAAEA==|
