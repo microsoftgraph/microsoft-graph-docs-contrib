@@ -2148,7 +2148,7 @@
                     "ApiChange": "Member",
                     "ChangedApiName": "resourceAvailabilityCheckNoIntuneReaderRoleError",
                     "ChangeType": "Addition",
-                    "Description": "Added the **resourceAvailabilityCheckNoIntuneReaderRoleError** member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Description": "Added the `resourceAvailabilityCheckNoIntuneReaderRoleError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
                     "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
                 },
                 {
@@ -2156,7 +2156,7 @@
                     "ApiChange": "Member",
                     "ChangedApiName": "resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation",
                     "ChangeType": "Addition",
-                    "Description": "Added the **resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation** member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Description": "Added the `resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
                     "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
                 },
                 {
@@ -2164,7 +2164,7 @@
                     "ApiChange": "Member",
                     "ChangedApiName": "resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation",
                     "ChangeType": "Addition",
-                    "Description": "Added the **resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation** member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Description": "Added the `resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
                     "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
                 }
             ],
