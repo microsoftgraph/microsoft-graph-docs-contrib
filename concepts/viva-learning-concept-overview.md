@@ -42,5 +42,5 @@ The resources in this section help the admin in your organization to set up and 
 |Learn how to set up and configure Viva Learning|[Set up Microsoft Viva Learning](https://docs.microsoft.com/en-us/viva/learning/set-up-viva-learning)|
 |Learn how to configure and manage content sources|[Manage learning content sources](https://docs.microsoft.com/en-us/viva/learning/enable-disable-search)|
 |Learn how to add your own learning content|[Add SharePoint as a content source](https://docs.microsoft.com/en-us/viva/learning/configure-sharepoint-content-source)|
-|Learn how to add content from other providers|[Add other providers as a content source]https://docs.microsoft.com/en-us/viva/learning/content-sources-365-admin-center)|
+|Learn how to add content from other providers|[Add other providers as a content source](https://docs.microsoft.com/en-us/viva/learning/content-sources-365-admin-center)|
 |Learn how to add content using Graph APIs|[Onboard using Graph APIs](api-overview.md)|
