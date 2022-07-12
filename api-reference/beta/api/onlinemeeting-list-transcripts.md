@@ -1,5 +1,5 @@
 ﻿---
-title: "List callTranscripts"
+title: "List transcripts"
 description: "Retrieve the list of transcripts associated with a Microsoft Teams Online Meeting."
 author: "mankadnandan"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List callTranscripts
+# List transcripts
 
 Namespace: microsoft.graph
 

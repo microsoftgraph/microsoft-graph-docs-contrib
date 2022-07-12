@@ -1,5 +1,5 @@
 ---
-title: "Update OneNote page content by using the OneNote API"
+title: "Update OneNote page content"
 description: "Update the content of a OneNote page by sending a PATCH request to the page's content endpoint. Then send a JSON change object in the message body."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
