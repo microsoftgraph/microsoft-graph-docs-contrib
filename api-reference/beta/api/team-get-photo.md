@@ -65,7 +65,7 @@ GET /teams/{id}/photo/$value
 
 ## Request body
 
-Do not supply a body for this request.
+Do not supply a request body for this method.
 
 ## Response
 
@@ -83,7 +83,7 @@ If successful, this method returns a `200 OK` response code, and the binary data
 
 #### Request
 
-Here is an example of the request to get the metadata of the team photo.
+The following is an example of a request to get the metadata of a team photo.
 
 <!-- {
   "blockType": "ignored",
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -118,9 +118,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get the team photo's binary data
+### Example 2: Get the binary data of a team photo
 
-Here is an example of the request to get the team photo's binary data.
+The following is an example of a request to get the binary data of a team photo.
 
 #### Request
 

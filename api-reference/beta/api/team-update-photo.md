@@ -1,6 +1,6 @@
 ---
 title: "Update team photo"
-description: "Update the photo (picture) for a team."
+description: "Update the photo (picture) of a team."
 author: "sumitgupta"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -12,27 +12,24 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the photo (picture) for a team.
+Update the photo (picture) of a team.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamSettingsReadWriteAll, GroupReadWriteAll**, DirectoryReadWriteAll** |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged)                            |
+|:---------------------------------------|:-----------------------------------------------------------------------|
+| Delegated (work or school account)     | TeamSettingsReadWriteAll, GroupReadWriteAll**, DirectoryReadWriteAll** |
+| Delegated (personal Microsoft account) | Not supported.                                                         |
+| Application                            | Not supported.                                                         |
 
- **Notes**: 
-> Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward. Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
->  This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
+
+
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
-
-### Update the photo
-
-This endpoint will update the binary data for the photo.
 
 <!-- {
   "blockType": "ignored"
@@ -44,9 +41,9 @@ PUT /teams/{id}/photo/$value
 
 ## Request headers
 
-| Header        | Value           |
-|:--------------|:--------------  |
-| Authorization | Bearer {token}. Required.  |
+| Header        | Value                     |
+|:--------------|:--------------------------|
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -55,20 +52,16 @@ Content-type : image/jpeg
 
 ## Response
 
-### Response for updating the photo
-
-If successful, this method returns a `204 NoContent` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Update the team photo
+### Request
 
-Here is an example of the request to update the team photo.
-
-#### Request
+The following is an example of a request to update a team photo.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "update_team_photo"
 }-->
 ```http
@@ -78,7 +71,15 @@ Content-type: image/jpeg
 Binary data for the image
 ```
 
-#### Response
-```
-HTTP/1.1 204 NoContent
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
 ```
