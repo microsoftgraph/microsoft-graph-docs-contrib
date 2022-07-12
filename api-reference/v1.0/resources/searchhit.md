@@ -17,15 +17,15 @@ Represents a single result within the list of search results.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|contentSource|String|The name of the content source which the **externalItem** is part of .|
-|hitId|String|The internal identifier for the item.|
+|contentSource|String|The name of the content source that the **externalItem** is part of.|
+|hitId|String|The internal identifier for the item. The format of the identifier varies based on the entity type. For details, see [hitId format](#hitid-format).|
 |rank|Int32|The rank or the order of the result.|
 |resultTemplateId|String|ID of the result template used to render the search result. This ID must map to a display layout in the **resultTemplates** dictionary that is also included in the [searchResponse](searchresponse.md).|
 |resource|[entity](entity.md)|The underlying Microsoft Graph representation of the search result.|
 |summary|String|A summary of the result, if a summary is available.|
 
 ### hitId format
-| Id Format     | Entity Type        | Description |
+| ID Format     | Entity Type        | Description |
 |:-------------|:------------|:------------|
 |RestId|message|Sample: AAMkAGIwMDA5MmY0LWY5ZTgtNGY5YS04NzczLWNhNjc0ZGIyZDBjYgBGAAAAAADm35sgHbzESapJ8_BjBlhEBwDAYtphe7dsRbDrOT-HAHoKAACmqNsoAADAYtphe7dsRbDrOT-HAHoKAAFsBhyEAAA=|
 |EwsId|event|Sample: AAMkAGIwMDA5MmY0LWY5ZTgtNGY5YS04NzczLWNhNjc0ZGIyZDBjYgFRAAgI232z8Q+AAEYAAAAA5t+bIB28xEmqSfPgYwZYRAcAwGLaYXu3bEWw6zk/xwB6CgAAAAABDQAAwGLaYXu3bEWw6zk/xwB6CgABGnD/jwAAEA==|
