@@ -28,8 +28,8 @@ The resources in this section help you learn more about what Viva Learning is an
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn more about Viva Learning |[Microsoft Viva Learning overview](https://docs.microsoft.com/en-us/viva/learning/overview-viva-learning)|
-|Learn how to get Viva Learning|[Viva Learning product page](https://www.microsoft.com/en-us/microsoft-viva/learning?activetab=pivot:overviewtab&rtc=1)|
+|Learn more about Viva Learning |[Microsoft Viva Learning overview](https://docs.microsoft.com/viva/learning/overview-viva-learning)|
+|Learn how to get Viva Learning|[Viva Learning product page](https://www.microsoft.com/microsoft-viva/learning?activetab=pivot:overviewtab&rtc=1)|
 |Find resources in the Microsoft Tech Community Resource Center|[Microsoft Viva Learning Tech Community](https://techcommunity.microsoft.com/t5/viva-learning/bd-p/VivaLearning/)|
 |Find Viva Learning guidance for end users|[Microsoft Viva Learning help](https://support.microsoft.com/office/01bfed12-c327-41e0-a68f-7fa527dcc98a)|
 
@@ -39,8 +39,8 @@ The resources in this section help the admin in your organization to set up and 
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn how to set up and configure Viva Learning|[Set up Microsoft Viva Learning](https://docs.microsoft.com/en-us/viva/learning/set-up-viva-learning)|
-|Learn how to configure and manage content sources|[Manage learning content sources](https://docs.microsoft.com/en-us/viva/learning/enable-disable-search)|
-|Learn how to add your own learning content|[Add SharePoint as a content source](https://docs.microsoft.com/en-us/viva/learning/configure-sharepoint-content-source)|
-|Learn how to add content from other providers|[Add other providers as a content source](https://docs.microsoft.com/en-us/viva/learning/content-sources-365-admin-center)|
+|Learn how to set up and configure Viva Learning|[Set up Microsoft Viva Learning](https://docs.microsoft.com/viva/learning/set-up-viva-learning)|
+|Learn how to configure and manage content sources|[Manage learning content sources](https://docs.microsoft.com/viva/learning/enable-disable-search)|
+|Learn how to add your own learning content|[Add SharePoint as a content source](https://docs.microsoft.com/viva/learning/configure-sharepoint-content-source)|
+|Learn how to add content from other providers|[Add other providers as a content source](https://docs.microsoft.com/viva/learning/content-sources-365-admin-center)|
 |Learn how to add content using Graph APIs|[Onboard using Graph APIs](api-overview.md)|
