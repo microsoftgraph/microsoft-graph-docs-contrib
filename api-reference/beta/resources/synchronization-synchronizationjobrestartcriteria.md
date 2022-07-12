@@ -18,7 +18,7 @@ Defines the scope of the [synchronizationJob: restart](../api/synchronization-sy
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|resetScope|String| Comma-separated combination of the following values: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`. Use `Full` if you want all of the options.|
+|resetScope|String| Comma-separated combination of the following values: `None`, `ConnectorDataStore`, `Escrows`, `Watermark`, `QuarantineState`, `Full`, `ForceDeletes`. <br/> <ol><li> `None`: Emulates the **Restart provisioning** option in the Azure portal. It is akin to setting the **resetScope** to include `QuarantineState`, `Watermark`, and `Escrows`. In most cases, this will meet customer needs.</li><li>`ConnectorDataStore` - Clears the underlying cache for all users. **DO NOT USE. Contact Microsoft Support for guidance.**</li><li>`Escrows` - Provisioning failures are marked as escrows and retried. Clearing escrows will stop the service from retrying failures.</li><li>`Watermark` - Removing the watermark causes the service to re-evaluate all the users again, rather than just processing changes.</li><li>`QuarantineState` - Temporarily lifts the quarantine.</li><li>Use `Full` if you want all of the options.</li><li>`ForceDeletes` - </li>|
 
 ## JSON representation
 
