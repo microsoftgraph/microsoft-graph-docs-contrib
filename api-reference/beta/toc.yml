@@ -6,6 +6,7 @@ items:
     items:
     - name: Overview
       href: /graph/auth/index?context=graph/api/beta
+      
       displayName: authentication, authorization, authenticate, authorize
     - name: Basics
       href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -9377,7 +9378,8 @@ items:
               href: api/intune-mam-windowsinformationprotection-assign.md
           - name: Windows information protection app
             href: resources/intune-mam-windowsinformationprotectionapp.md
-          - name: Windows information protection app learning summary
+          - name: Windows information protection app C
+          summary
             href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
             items:
             - name: List
@@ -11099,7 +11101,7 @@ items:
           href: api/employeeexperience-delete-learningproviders.md
         - name: List learning provider
           href: api/employeeexperience-list-learningproviders.md
-       - name: Learning Content
+      - name: Learning Content
         href: resources/learningcontent.md
         items:
         - name: Create/Update Learning Content
