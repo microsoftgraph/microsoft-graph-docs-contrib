@@ -10,8 +10,7 @@ doc_type: apiPageType
 # ediscoveryCustodian: removeHold
 Namespace: microsoft.graph.security
 
-
-Start the process of removing hold from eDiscovery custodians. After the operation is created, you can get the status of the case operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [eDiscoveryHoldOpertaion](../resources/security-ediscoveryholdoperation.md).
+Start the process of removing hold from [eDiscovery custodians](../resources/security-ediscoverycustodian.md). After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers. The location provides a URL that will return an [eDiscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

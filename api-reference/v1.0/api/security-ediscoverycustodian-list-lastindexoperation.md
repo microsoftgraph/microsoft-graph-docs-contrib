@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryIndexOperation"
+title: "List lastIndexOperation"
 description: "Get a list of the ediscoveryIndexOperations associated with an ediscoveryCustodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# List ediscoveryIndexOperation
+# List lastIndexOperation
 Namespace: microsoft.graph.security
 
 

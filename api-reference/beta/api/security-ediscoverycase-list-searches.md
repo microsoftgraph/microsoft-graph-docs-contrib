@@ -1,5 +1,5 @@
 ---
-title: "List ediscoverySearch"
+title: "List searches"
 description: "Get the list of searches from an eDiscovery case"
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# List ediscoverySearch
+# List searches
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

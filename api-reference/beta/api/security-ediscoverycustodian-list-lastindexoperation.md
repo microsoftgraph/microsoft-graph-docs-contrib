@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryIndexOperation"
+title: "List lastIndexOperation"
 description: "Get the ediscoveryIndexOperation resources from the lastIndexOperation navigation property."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# List ediscoveryIndexOperation
+# List lastIndexOperation
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,5 +1,5 @@
 ---
-title: "Create ediscoveryReviewTag"
+title: "Create tags"
 description: "Create a new ediscoveryReviewTag object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create ediscoveryReviewTag
+# Create tags
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

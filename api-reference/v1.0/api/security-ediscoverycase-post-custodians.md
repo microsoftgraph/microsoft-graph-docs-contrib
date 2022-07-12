@@ -1,5 +1,5 @@
 ---
-title: "Create ediscoveryCustodian"
+title: "Create custodians"
 description: "Create a new ediscoveryCustodian object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create ediscoveryCustodian
+# Create custodians
 Namespace: microsoft.graph.security
 
 

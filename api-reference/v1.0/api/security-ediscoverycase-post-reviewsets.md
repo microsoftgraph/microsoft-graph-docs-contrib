@@ -1,5 +1,5 @@
 ---
-title: "Create ediscoveryReviewSet"
+title: "Create reviewSets"
 description: "Create a new ediscoveryReviewSet object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create ediscoveryReviewSet
+# Create reviewSets
 Namespace: microsoft.graph.security
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Create ediscoveryNoncustodialDataSource"
+title: "Create nonCustodialDataSources"
 description: "Create a new ediscoveryNoncustodialDataSource object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create ediscoveryNoncustodialDataSource
+# Create nonCustodialDataSources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

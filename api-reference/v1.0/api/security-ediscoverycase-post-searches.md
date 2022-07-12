@@ -1,5 +1,5 @@
 ---
-title: "Create ediscoverySearch"
+title: "Create searches"
 description: "Create a new ediscoverySearch object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create ediscoverySearch
+# Create searches
 Namespace: microsoft.graph.security
 
 

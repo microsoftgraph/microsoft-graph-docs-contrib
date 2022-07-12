@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryReviewTag"
+title: "List tags"
 description: "Get the list of ediscoveryReviewTag objects from an eDiscovery case object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# List ediscoveryReviewTag
+# List tags
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
