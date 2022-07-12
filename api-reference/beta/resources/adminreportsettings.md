@@ -1,6 +1,6 @@
 ---
 title: "adminReportSettings resource type"
-description: "Represents the tenant-level settings for Microsoft 365 Reports."
+description: "Represents the tenant-level settings for Microsoft 365 reports."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the tenant-level settings for Microsoft 365 Reports.
+Represents the tenant-level settings for Microsoft 365 reports.
 
 ## Methods
 
