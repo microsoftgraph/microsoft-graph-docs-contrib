@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # List ediscoveryReviewTag
 Namespace: microsoft.graph.security
 
-Get a list of the [eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) objects and their properties.
+Get a list of [eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
