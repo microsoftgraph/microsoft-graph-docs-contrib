@@ -121,14 +121,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/callTranscript-get?view=graph-rest-beta) operation to the [callTranscript] resource.",
           "Target": "callTranscript"
-        },
-        {
-          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [get content](https://docs.microsoft.com/en-us/graph/api/callTranscript-get-content?view=graph-rest-beta) operation to the [callTranscript] resource.",
-          "Target": "callTranscript"
         }
       ],
       "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",

@@ -33,9 +33,19 @@ To use application permission for this API, tenant administrators must create an
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
+Get a single transcript of an online meeting.
+
 ```http
 GET /me/onlineMeetings({meetingId})/transcripts({transcriptId})
 GET /users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})
+```
+
+Get the content of a single transcript of an online meeting.
+
+```http
+GET me/onlineMeetings({meetingId})/transcripts({transcriptId})/content
+GET users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})/content
 ```
 
 ## Request headers
@@ -54,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 
 ## Examples
 
-### Example: Get a callTranscript
+### Example 1: Get a callTranscript
 #### Request
 <!-- {
   "blockType": "request",
@@ -84,4 +94,34 @@ Content-type: application/json
     "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
     "createdDateTime": "2021-09-17T06:09:24.8968037Z"
 }
+```
+
+### Example 2: Get a callTranscript content
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_callTranscript_content"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
+```
+#### Response
+
+Response contains bytes for the transcript in the body. `content-type` header specifies type of the transcript content.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: text/vtt
+
+WEBVTT
+
+0:0:0.0 --> 0:0:5.320
+<v User Name>This is a transcript test.</v>
 ```
