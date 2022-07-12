@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).
 
+Retrieving the transcript would return the metadata of the single transcript associated with the online meeting, where as retrieving the content of the transcript would return the stream of text associated with the transcript.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -122,6 +124,90 @@ Content-type: text/vtt
 
 WEBVTT
 
+0:0:0.0 --> 0:0:5.320
+<v User Name>This is a transcript test.</v>
+```
+
+### Example 3: Get a callTranscript content specifying $format query param
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_callTranscript_content_$format"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content?$format=text/vtt
+```
+#### Response
+
+Response contains bytes for the transcript in the body. `content-type` header specifies type of the transcript content.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: text/vtt
+WEBVTT
+0:0:0.0 --> 0:0:5.320
+<v User Name>This is a transcript test.</v>
+```
+### Example 4: Get a callTranscript content specifying Accept header
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_callTranscript_content_Accept"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
+Accept: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+```
+#### Response
+
+Response contains bytes for the transcript in the body. `Content-Type` header specifies type of the transcript content.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+0:0:0.0 --> 0:0:5.320
+User Name
+This is a transcript test.
+```
+### Example 5: Get a callTranscript content with $format getting precedence over the Accept header
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_callTranscript_content_$format_precedence"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content?$format=text/vtt
+Accept: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+```
+#### Response
+
+Response contains bytes for the transcript in the body. `Content-Type` header specifies type of the transcript content.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: text/vtt
+WEBVTT
 0:0:0.0 --> 0:0:5.320
 <v User Name>This is a transcript test.</v>
 ```
