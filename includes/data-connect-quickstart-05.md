@@ -22,13 +22,13 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     4. **Name**: dfM365toBlobStorage
     5. **Version**: V2
 
-        ![A screenshot showing the successful creation of the new Azure Data Factory service in the Azure portal.](images/data-connect-adf-create.png)
+        ![A screenshot showing the successful creation of the new Azure Data Factory service in the Azure portal.](../concepts/images/data-connect-adf-create.png)
 
     6. In the **Git configuration** tab, make sure you either configure Git or select the option _Configure Git later_.
 
 1. After the Azure Data Factory resource is created, select the **Author and Monitor** tile to launch the Azure Data Factory full screen editor.
 
-    ![A screenshot showing the Azure Portal UI for the Data Factory service. The user is clicking the Author and Monitor button.](images/data-connect-adf-auth-and-mon.png)
+    ![A screenshot showing the Azure Portal UI for the Data Factory service. The user is clicking the Author and Monitor button.](../concepts/images/data-connect-adf-auth-and-mon.png)
 
 1. Switch from the **Overview** to the **Manage** experience by selecting it from the left-hand navigation.
 
@@ -38,7 +38,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     2. Select **Azure, Self-Hosted** and select **Continue**.
     3. Select **Azure** for network environment and select **Continue**.
 
-        ![A screenshot showing the Azure Portal UI for the Data Factory service. The user is selecting the Azure option for the network environment.](images/data-connect-adf-network.png)
+        ![A screenshot showing the Azure Portal UI for the Data Factory service. The user is selecting the Azure option for the network environment.](../concepts/images/data-connect-adf-network.png)
 
     4. Use the following details to complete the form on the final screen and then select **Create**.
 
@@ -50,11 +50,11 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 1. Switch from the **Manage** to the **Author** experience by selecting it from the left-hand navigation.
 1. Create a new pipeline by selecting the **plus** icon, then **pipeline**.
 
-    ![A screenshot showing the Azure portal UI for the Data Factory service. The user is creating a new pipeline.](images/data-connect-adf-pipeline-create.png)
+    ![A screenshot showing the Azure portal UI for the Data Factory service. The user is creating a new pipeline.](../concepts/images/data-connect-adf-pipeline-create.png)
 
     - Drag the **Copy Data** activity from the **Move and Transform** section onto the design surface.
 
-        ![A screenshot showing the Azure portal UI for the Data Factory service. The user is dragging the copy data activity into the editor on the right side of the screen.](images/data-connect-adf-pipeline-copy-data.png)
+        ![A screenshot showing the Azure portal UI for the Data Factory service. The user is dragging the copy data activity into the editor on the right side of the screen.](../concepts/images/data-connect-adf-pipeline-copy-data.png)
 
     - Select the activity in the designer.
     - Select the **General** tab and give it a name and description.
@@ -65,7 +65,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     - In the activity editor pane below the designer, select the **Source** tab, then select **New**.
     - Locate the dataset **Office 365**, select it and then select the **Continue** button.
 
-        ![A screenshot showing the Azure portal UI for the Data Factory service. The user is selecting the Office 365 dataset in the UI and selecting the continue button afterwards.](images/data-connect-adf-pipeline-dataset.png)
+        ![A screenshot showing the Azure portal UI for the Data Factory service. The user is selecting the Office 365 dataset in the UI and selecting the continue button afterwards.](../concepts/images/data-connect-adf-pipeline-dataset.png)
 
     - The designer will update the **Source** tab with the Microsoft 365 connector settings.
     - Select the **Open** option next to the **Source dataset** field.
@@ -73,7 +73,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     - In the dialog that appears, enter the previously created Azure AD application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, then select **Create**.
     - Select the integration runtime you previously created in the **Connect via integration runtime** dropdown.
 
-        ![A screenshot showing the Azure portal UI for the Data Factory service. The user is configuring the integration runtime with the service principal key.](images/data-connect-adf-linked-service.png)
+        ![A screenshot showing the Azure portal UI for the Data Factory service. The user is configuring the integration runtime with the service principal key.](../concepts/images/data-connect-adf-linked-service.png)
 
     - After creating the Microsoft 365 connection, for the **Table** field, select **BasicDataSet_v0.Message_v0**.
     - Switch from **Office365Table** to **Pipeline > Source**. Use the following values for the **Date filter**.
@@ -103,7 +103,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     - Next to the **File path** field, select **Browse**.
     - Select the name of the storage container you created previously.
 
-      ![A screenshot showing the Azure portal UI for the Data Factory service. The user is configuring the container and file path in the sink properties.](images/data-connect-adf-sa-fp-config.png)
+      ![A screenshot showing the Azure portal UI for the Data Factory service. The user is configuring the container and file path in the sink properties.](../concepts/images/data-connect-adf-sa-fp-config.png)
 
 1. With the pipeline created, select the **Validate All** button at the top of the designer.
 
@@ -118,22 +118,22 @@ With the pipeline created, now it is time to run it.
 
 1. In the Azure Data Factory designer, with the pipeline open, select **Add trigger > Trigger Now**.
 
-    ![A screenshot showing the Azure portal UI for the Data Factory service to show how to activate a trigger in the pipeline.](images/data-connect-adf-run-trigger.png)
+    ![A screenshot showing the Azure portal UI for the Data Factory service to show how to activate a trigger in the pipeline.](../concepts/images/data-connect-adf-run-trigger.png)
 
 1. After starting the job, from the sidebar menu, select **Monitor** to view current running jobs.
 
 1. On the left-side navigation bar, locate the **Pipeline runs** tab and select it. Select the pipeline under the **Pipeline name** column to view the **Activity runs**. This pipeline will show as _In progress_.
 
-    ![A screenshot showing the Azure portal UI for Data Factory, it is showing the pipeline runs list.](images/data-connect-adf-pipeline-runs.png)
+    ![A screenshot showing the Azure portal UI for Data Factory, it is showing the pipeline runs list.](../concepts/images/data-connect-adf-pipeline-runs.png)
 
 1. After you are in the **Activity runs** view, go to the _Activity runs_ section, which is located in the bottom side of the page.
 
 1. Hover over the **Activity name** and select the goggles option. This will bring up the **Details** tab.
 
-    ![A screenshot showing the Azure Portal UI for Data Factory Activity Runs, the user is selecting the googles in the activity name to open the details tab.](images/data-connect-adf-pipeline-details.png)
+    ![A screenshot showing the Azure Portal UI for Data Factory Activity Runs, the user is selecting the googles in the activity name to open the details tab.](../concepts/images/data-connect-adf-pipeline-details.png)
 
 1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image. In this case you can see it is in a state of **RequestingConsent**.
 
-    ![A screenshot showing the Azure portal UI for the Data Factory service where the request's load status is set to "RequestingConsent".](images/data-connect-adf-wait-for-approval.png)
+    ![A screenshot showing the Azure portal UI for the Data Factory service where the request's load status is set to "RequestingConsent".](../concepts/images/data-connect-adf-wait-for-approval.png)
 
 1. At this point, the activity run is internally paused until someone manually approves the consent request via the Microsoft 365 admin center or via PowerShell.
