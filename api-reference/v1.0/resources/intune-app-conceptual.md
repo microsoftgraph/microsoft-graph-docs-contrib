@@ -22,7 +22,6 @@ The following Graph resources are available to manage mobile apps in Intune:
 - [Device app management](intune-apps-deviceappmanagement.md)
 - [Device app management](intune-apps-deviceappmanagement.md)
 - [Device install state](intune-books-deviceinstallstate.md)
-- [Device management](intune-androidforwork-devicemanagement.md)
 - [E-book install summary](intune-books-ebookinstallsummary.md)
 - [File encryption info](intune-apps-fileencryptioninfo.md)
 - [Install state](intune-books-installstate.md)
