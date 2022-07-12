@@ -1,6 +1,6 @@
 ---
 title: "informationProtectionAction resource type"
-description: "Describes the abtract informationProtectionAction entity."
+description: "Describes the abstract informationProtectionAction entity."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
