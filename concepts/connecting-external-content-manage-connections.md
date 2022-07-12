@@ -73,12 +73,12 @@ Before an application can add items to the search index, it must create and conf
 A Graph connector can be enabled to participate in other Microsoft 365 experiences beyond Microsoft Search.
 
 This can be done by specifying one or more content experiences (search, compliance, etc.) which your connection will participate in.
-The content experiences listed in the following table are currently supported. When calling the Graph API, reference this [flag enum description](/graph/api/enums-externalconnectors.md).
+The content experiences listed in the following table are currently supported. When calling the Graph API, reference this [flag enum description](/graph/api/enums-externalconnectors).
 
 | Content Experience Type Enum | Description |
 |-|-|
 | search | Enabling search allows your content to show up in Microsoft search results. These results are consistently formatted across different search canvases, like SharePoint and Microsoft Bing. |
-| compliance | Enabling compliance allows your content to be visible to Microsoft Purview advanced eDiscovery solution. Refer to [Microsoft Purview solutions](https://docs.microsoft.com/en-us/microsoft-365/compliance/ediscovery?view=o365-worldwide) to learn more about advanced eDiscovery solution & licensing requirements.|
+| compliance | Enabling compliance allows your content to be visible to Microsoft Purview advanced eDiscovery solution. Refer to [Microsoft Purview solutions](https://docs.microsoft.com/microsoft-365/compliance/ediscovery) to learn more about advanced eDiscovery solution & licensing requirements.|
 
 If you already know which content experiences you want your connection to partipate in, set the `enabledContentExperiences` flag enum at the time of connection creation.
 
