@@ -40,7 +40,7 @@ Represents a single result within the list of search results.
 |EwsId|event|`AAMkAGIwMDA5MmY0LWY5ZTgtNGY5YS04NzczLWNhNjc0ZGIyZDBjYgFRAAgI232z8Q+AAEYAAAAA5t+bIB28xEmqSfPgYwZYRAcAwGLaYXu3bEWw6zk/xwB6CgAAAAABDQAAwGLaYXu3bEWw6zk/xwB6CgABGnD/jwAAEA==`|
 |GUID|list, listItem| |
 |Host,GUID,GUID|site|`microsoft.sharepoint.com,a5eb6988-c9ad-44be-b3b4-d334d01066c0,4c5ce7de-dbe6-4807-9909-3018f0b83266`|
-|Encoded String|drive, driveItem, externalItem| |
+|Encoded string|drive, driveItem, externalItem| |
 |GUID@GUID|person|`userId@tenantId`|
 
 ## JSON representation
