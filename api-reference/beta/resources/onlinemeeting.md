@@ -26,6 +26,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | [Update](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
 | [Delete](../api/onlinemeeting-delete.md) | None | Delete an **onlineMeeting** object. |
 | [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties. |
+| [List transcripts of an onlineMeeting](../api/calltranscript-list.md) | [callTranscript](callTranscript.md) collection | Retrieve the list of transcript of an **onlineMeeting**. |
 
 ## Properties
 
