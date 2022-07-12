@@ -1,6 +1,6 @@
 ---
 title: "Get plannerTaskDetails"
-description: "Retrieve the properties and relationships of a plannertaskdetails object."
+description: "Retrieve the properties and relationships of a plannerTaskDetails object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a **plannertaskdetails** object.
+Retrieve the properties and relationships of a **plannerTaskDetails** object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
