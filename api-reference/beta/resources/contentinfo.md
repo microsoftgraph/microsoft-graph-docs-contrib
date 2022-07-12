@@ -1,6 +1,6 @@
 ---
 title: "contentInfo resource type (deprecated)"
-description: "Represents the current state of some information that is to be labeled."
+description: "Represents the current state of some information that is to be labeled. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

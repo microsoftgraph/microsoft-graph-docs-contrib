@@ -1,6 +1,6 @@
 ---
 title: "protectDoNotForwardAction resource type (deprecated)"
-description: "Informs the application to apply Do Not Forward protection."
+description: "Informs the application to apply Do Not Forward protection. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
