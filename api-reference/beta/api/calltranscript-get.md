@@ -151,7 +151,9 @@ Response contains bytes for the transcript in the body. `content-type` header sp
 ```http
 HTTP/1.1 200 OK
 Content-type: text/vtt
+
 WEBVTT
+
 0:0:0.0 --> 0:0:5.320
 <v User Name>This is a transcript test.</v>
 ```
@@ -179,6 +181,7 @@ Response contains bytes for the transcript in the body. `Content-Type` header sp
 ```http
 HTTP/1.1 200 OK
 Content-type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
 0:0:0.0 --> 0:0:5.320
 User Name
 This is a transcript test.
@@ -207,7 +210,9 @@ Response contains bytes for the transcript in the body. `Content-Type` header sp
 ```http
 HTTP/1.1 200 OK
 Content-type: text/vtt
+
 WEBVTT
+
 0:0:0.0 --> 0:0:5.320
 <v User Name>This is a transcript test.</v>
 ```
