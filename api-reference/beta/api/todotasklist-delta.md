@@ -62,7 +62,7 @@ _id_ property is always returned.
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
-> **Note:**In the request header, the value odata.maxpagesize should be greater than or equal to 10 to prevent no data in the response.
+> **Note:**In the request header, the value odata.maxpagesize should be greater than equal to 10 to get the correct nextLink value.
 
 ## Response
 
