@@ -29,7 +29,7 @@ There are no licensing requirements for `model=B`.
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
 > [!NOTE]
-> Starting July 5 2022, pricing events for these APIs reach general availability. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. For details, see [Payment and billing updates](#payment-and-billing-updates).
+> Active pricing events for these APIs started on July 5 2022. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. For more details, see [Payment and billing updates](#payment-and-billing-updates).
 
 ## `model=A` requirements
 
@@ -41,7 +41,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | Message sender | 800 messages per user per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) | Named user | 1600 messages per user per month per app | $0.00075 per message | The named user is the user identified in the GET request URL. Minimum charge of 1 message per API request. Seeded capacity is shared with channel export. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message |  Minimum charge of 1 message per API request. Seeded capacity is shared with chat export. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message |  Charge of 1 message per API request.Seeded capacity is shared with chat export. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
 
 ## `model=B` requirements
@@ -52,8 +52,8 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | None  | $0.00075 per notification | |
-| [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | None | $0.00075 per message |  Minimum charge of 1 message per API request. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Minimum charge of 1 message per API request. |
+| [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | None | $0.00075 per message |  Charge of 1 message per API request. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Charge of 1 message per API request. |
 
 ## Evaluation mode (default) requirements
 
@@ -62,7 +62,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A | 
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | 500 messages per month per app | N/A |  Minimum charge of 1 message per API request. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | 500 messages per month per app | N/A |  Minimum charge of 1 message per API request. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | 500 messages per month per app | N/A |  Charge of 1 message per API request. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |   N/A |  500 messages per month per app | N/A |
 
 In evaluation mode, seeded capacity is shared across all APIs. 
@@ -135,10 +135,10 @@ Please note that the organization that owns the app registration is responsible 
 
 | Scenario | Details |
 |:-----------------------|:-----------------|
-| What should I expect after providing an Azure subscription ? | We will contact you at the email provided in the request form to onboard you to billing. |
+| What should I expect after providing an Azure subscription ? | You can continue calling these APIs, we will contact the email provided in the request form to onboard the registered application to billing. |
 | Do I need to provide an Azure suscription if my application is not calling billed APIs? | Not at this moment, please refer to the request form in [protected APIs](/graph/api/teams-protected-apis)|
-| What happens if no Azure subscription is provided ? | Depending to the model that is being passed in the query parameter a license must be in place (`model=A`), if using evaluation model the seeded capacity will eventually be excedeed and a billing model needs to be provided to continue with the service. |
+| What happens if no Azure subscription is provided ? | Depending to the model that is being passed in the query parameter a license must be in place for example: (`model=A`), if using evaluation model the seeded capacity will eventually be excedeed and a billing model needs to be provided to continue with the service. |
 | How do I create an Azure subscription | An Azure subscription can be created in Azure Active Directory for the application that will be making calls to the metered APIs, [create a subscription](/manage/create-subscription#create-a-subscription) |
-| Who is responsible for the payment in case of multitenat apps | The organization that owns the app registration. |
+| Who is responsible for the payment in case of multitenat apps | The organization that owns the app registration. For example, a service provider is responsible for the payments of the applications registered under their tenant. |
 | Is there a charge when no message is returned using model A or B ? | In the event the request doesn't return a message response, a charge of 1 message will be applied for the API request. | 
 | Where can I monitor the cost ? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) [permissions](/azure/cost-management-billing/costs/assign-access-acm-data) Can use Azure Cost Analysis tool to track metered API consumption. With this tool you can track consumption per day and filter by meter, service name, resource id among other parameters. For metered APIs the resource GUID is the App Id. Resource Groups or resource Tags are not supported. |
