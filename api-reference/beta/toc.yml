@@ -14196,6 +14196,13 @@ items:
       - name: Microsoft 365 usage reports
         items:
         - name: Overview
+        - name: Settings
+          href: resources/adminreportsettings.md
+          items:
+          - name: Get
+            href: api/adminreportsettings-get.md
+          - name: Update
+            href: api/adminreportsettings-update.md
           href: resources/report.md
         - name: Microsoft Teams device usage
           href: resources/microsoft-teams-device-usage-reports.md
@@ -14457,13 +14464,6 @@ items:
             href: resources/attacksimulationtrainingusercoverage.md
           - name: Get training coverage for users
             href: api/reportroot-getattacksimulationtrainingusercoverage.md
-      - name: Settings
-        href: resources/adminreportsettings.md
-        items:
-        - name: Get
-          href: api/adminreportsettings-get.md
-        - name: Update
-          href: api/adminreportsettings-update.md
     - name: Search
       displayname: Microsoft Search API
       items:
