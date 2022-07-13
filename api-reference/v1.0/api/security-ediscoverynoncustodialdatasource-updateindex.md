@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryNoncustodialDataSource: updateIndex"
-description: "Triggers a indexOperation to make a non-custodial data source and its associated data source searchable."
+description: "Trigger an indexOperation to make a non-custodial data source and its associated data source searchable."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 
 
-Triggers a [indexOperation](../resources/security-ediscoveryIndexOperation.md)
+Triggers an [indexOperation](../resources/security-ediscoveryIndexOperation.md) to make a non-custodial data source and its associated data source searchable.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
