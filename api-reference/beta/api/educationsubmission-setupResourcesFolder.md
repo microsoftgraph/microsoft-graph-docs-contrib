@@ -142,7 +142,7 @@ Check that allowedLateSubmissions = true and the current time is less than both 
 The following is an example of a request.
 
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_setupresourcesfolder"
@@ -187,7 +187,7 @@ Check that status != submitted
 The following is an example of a request.
 
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_setupresourcesfolder"
