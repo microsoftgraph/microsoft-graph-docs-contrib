@@ -12347,7 +12347,7 @@ items:
             - name: Update
               href: api/crosstenantaccesspolicyconfigurationdefault-update.md
             - name: Reset to system default
-              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md            
           - name: Partner settings
             items:
             - name: Cross-tenant access partner settings
@@ -12361,7 +12361,7 @@ items:
             - name: Update
               href: api/crosstenantaccesspolicyconfigurationpartner-update.md
             - name: Delete
-              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
+              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md              
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -12382,6 +12382,13 @@ items:
             href: api/oauth2permissiongrant-delete.md
           - name: Get delta
             href: api/oauth2permissiongrant-delta.md
+        - name: External identities policy (preview)
+          href: resources/externalidentitiespolicy.md
+          items:
+            - name: Get
+              href: api/externalidentitiespolicy-get.md
+            - name: Update
+              href: api/externalidentitiespolicy-update.md    
         - name: Identity protection
           href: resources/identityprotection-overview.md
           items:
