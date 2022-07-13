@@ -1,7 +1,7 @@
 ---
 title: "person resource type"
 description: "An aggregation of information about a person from across mail and contacts. People can be local contacts or your organization's directory, and people from recent communications (such as email)."
-author: "Anthona"
+author: "simonhult"
 ms.localizationpriority: high
 ms.prod: "insights"
 doc_type: resourcePageType
