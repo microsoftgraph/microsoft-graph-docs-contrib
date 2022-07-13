@@ -24,7 +24,7 @@ Each [alert](security-alert.md). contains a list of related evidence.
 |remediationStatusDetails|String|Details about the remediation status.|
 |roles|[microsoft.graph.security.evidenceRole](#evidencerole-values) collection|The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role "Attacker".|
 |tags|String collection|Array of custom tags associated with an evidence instance, for example to denote a group of devices, high value assets, etc.|
-|verdict|[microsoft.graph.security.evidenceVerdict](#evidenceverdict)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
+|verdict|[microsoft.graph.security.evidenceVerdict](#evidenceverdict-values)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
 
 
 ### detectionSource values 
