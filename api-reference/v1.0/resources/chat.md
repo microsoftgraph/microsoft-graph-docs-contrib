@@ -81,7 +81,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

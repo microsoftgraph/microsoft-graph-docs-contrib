@@ -61,12 +61,12 @@ Control pagination of the search results by specifying the following two propert
 
 - **from** - An integer that indicates the 0-based starting point to list search results on the page. The default value is 0.
 
-- **size** - An integer that indicates the number of results to be returned for a page. The default value is 25.
+- **size** - An integer that indicates the number of results to be returned for a page. The default is 25 results. The maximum is 1000 results.
 
 Note the following limits if you're searching the **event** or **message** entity:
 
 - **from** must start at zero in the first page request; otherwise, the request results in an HTTP 400 `Bad request`.
-- The maximum results per page (**size**) is 25 for **message** and **event**.
+- The maximum number of results per page (**size**) is 25 for **message** and **event**.
 
 There is no upper limit for SharePoint or OneDrive items. A reasonable page size is 200. A larger page size generally incurs higher latency.
 

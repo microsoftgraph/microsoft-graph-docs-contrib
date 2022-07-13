@@ -17,11 +17,12 @@ content := "<attachment id="74d20c7f34aa4a7fb74e2b30004247c5"></attachment>"
 body.SetContent(&content)
 requestBody.SetAttachments( []ChatMessageAttachment {
 	msgraphsdk.NewChatMessageAttachment(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "74d20c7f34aa4a7fb74e2b30004247c5",
-		"contentType": "application/vnd.microsoft.card.adaptive",
-		"contentUrl": nil,
-		"content": "{
+id := "74d20c7f34aa4a7fb74e2b30004247c5"
+	SetId(&id)
+contentType := "application/vnd.microsoft.card.adaptive"
+	SetContentType(&contentType)
+	SetContentUrl(nil)
+content := "{
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
   "type": "AdaptiveCard",
   "version": "1.2",
@@ -100,10 +101,10 @@ requestBody.SetAttachments( []ChatMessageAttachment {
       ]
     }
   ]
-}",
-		"name": nil,
-		"thumbnailUrl": nil,
-	}
+}"
+	SetContent(&content)
+	SetName(nil)
+	SetThumbnailUrl(nil)
 }
 requestBody.SetHostedContents( []ChatMessageHostedContent {
 	msgraphsdk.NewChatMessageHostedContent(),

@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Graph Data Connect frequently asked questions"
-description: "Get tips that will help you take advantage of Microsoft Graph Data Connect."
+title: "Microsoft Graph Data Connect FAQ"
+description: "Find answers to frequently asked questions about how Data Connect lets developers create apps that provide managed access to at-scale Microsoft Graph datasets."
 author: "fercobo-msft"
 ms.localizationpriority: high
 ms.prod: "data-connect"
@@ -12,11 +12,11 @@ Microsoft Graph Data Connect lets developers create applications that customers 
 
 ## Is Microsoft Graph Data Connect right for me?
 
-Data Connect and the Microsoft Graph APIs provide access to the same underlying data but in very different ways. Data Connect is designed to extract large amounts of data in bulk, while the Microsoft Graph APIs are more suitable for accessing discrete sets of data in real time. In some cases, it might even make sense to combine them. For example, you might want to use Data Connect to do an initial extraction of the last year of email data, and then use the Microsoft Graph APIs to analyze emails in real time moving forward. Data Connect and the Microsoft Graph APIs are different tools for different jobs. It's important to think about which access method best fits your scenario. For more information, see [When should I use Microsoft Graph API or Data Connect](/graph/overview#when-should-i-use-microsoft-graph-api-or-data-connect).
+Data Connect and Microsoft Graph APIs provide access to the same underlying data but in very different ways. Data Connect is designed to extract large amounts of data in bulk, while Microsoft Graph APIs are more suitable for accessing discrete sets of data in real time. In some cases, it might even make sense to combine them. For example, you might want to use Data Connect to do an initial extraction of the last year of email data, and then use Microsoft Graph APIs to analyze emails in real time moving forward. Data Connect and Microsoft Graph APIs are different tools for different jobs. It's important to think about which access method best fits your scenario. For more information, see [When should I use Microsoft Graph API or Data Connect](/graph/overview#when-should-i-use-microsoft-graph-api-or-data-connect).
 
 ## Is there any initial overhead?
 
-Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. This might be a negligible cost for large amounts of data, but if this time is unacceptable for your scenario, the Microsoft Graph APIs might provide a better approach.
+Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. This might be a negligible cost for large amounts of data, but if this time is unacceptable for your scenario, Microsoft Graph APIs might provide a better approach.
 
 ## How much do I have to pay for Data Connect?
 

@@ -12,8 +12,18 @@ topic := "Take your wellness days and rest"
 requestBody.SetTopic(&topic)
 requestBody.SetThreads( []ConversationThread {
 	msgraphsdk.NewConversationThread(),
-	SetAdditionalData(map[string]interface{}{
-		"posts":  []Object {
+	SetPosts( []Post {
+		msgraphsdk.NewPost(),
+body := msgraphsdk.NewItemBody()
+		SetBody(body)
+contentType := "html"
+		body.SetContentType(&contentType)
+content := "Contoso cares about you: Rest and Recharge"
+		body.SetContent(&content)
+		SetNewParticipants( []Recipient {
+			msgraphsdk.NewRecipient(),
+			SetAdditionalData(map[string]interface{}{
+			}
 		}
 	}
 }

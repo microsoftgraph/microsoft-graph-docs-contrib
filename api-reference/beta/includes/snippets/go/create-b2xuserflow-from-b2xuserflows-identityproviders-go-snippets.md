@@ -16,11 +16,12 @@ userFlowTypeVersion := float32(1)
 requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion)
 requestBody.SetIdentityProviders( []IdentityProvider {
 	msgraphsdk.NewIdentityProvider(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "Facebook-OAuth",
-		"type": "Facebook",
-		"name": "Facebook",
-	}
+id := "Facebook-OAuth"
+	SetId(&id)
+type := "Facebook"
+	SetType(&type)
+name := "Facebook"
+	SetName(&name)
 }
 result, err := graphClient.Identity().B2xUserFlows().Post(requestBody)
 
