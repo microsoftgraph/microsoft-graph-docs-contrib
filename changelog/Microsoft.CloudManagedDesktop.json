@@ -15,15 +15,15 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "cloudPcExternalPartnerSetting",
                 "ChangeType": "Addition",
-                "Description": "Added the [cloudPcExternalPartnerSetting](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcExternalPartnerSetting?view=graph-rest-beta) resource",
+                "Description": "Added the [cloudPcExternalPartnerSetting](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcexternalpartnersetting?view=graph-rest-beta) resource and supported methods.",
                 "Target": "cloudPcExternalPartnerSetting"
               },
               {
                 "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
-                "ApiChange": "Resource",
+                "ApiChange": "Relationship",
                 "ChangedApiName": "externalPartnerSettings",
                 "ChangeType": "Addition",
-                "Description": "Added the **externalPartnerSettings** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
+                "Description": "Added the **externalPartnerSettings** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
                 "Target": "virtualEndpoint"
               }
             ],

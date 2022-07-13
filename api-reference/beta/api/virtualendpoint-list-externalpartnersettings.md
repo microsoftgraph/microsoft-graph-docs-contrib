@@ -34,7 +34,7 @@ GET /deviceManagement/virtualEndpoint/externalPartnerSettings
 ```
 
 ## Optional query parameters
-This method supports `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -51,6 +51,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_cloudpcexternalpartnersetting"
@@ -62,11 +65,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPa
 
 
 ### Response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcExternalPartnerSetting)"
+  "@odata.type": "microsoft.graph.cloudPcExternalPartnerSetting",
+  "isCollection": true
 }
 -->
 ``` http
