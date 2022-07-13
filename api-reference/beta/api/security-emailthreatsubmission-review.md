@@ -12,9 +12,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Review a threat submission. Only [emailThreatSubmission](../resources/security-emailthreatsubmission.md) submitted from end user supports **review** action.
+Review a threat submission. Only [emailThreatSubmission](../resources/security-emailthreatsubmission.md) objects submitted by end users support the review action.
 
-**Review** actions for [urlThreatSubmission](../resources/security-urlthreatsubmission.md) and [fileThreatSubmission](../resources/security-filethreatsubmission.md) are not supported for end user.
+Review actions for [urlThreatSubmission](../resources/security-urlthreatsubmission.md) and [fileThreatSubmission](../resources/security-filethreatsubmission.md) objects are not supported for end user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
