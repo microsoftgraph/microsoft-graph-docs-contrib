@@ -108,7 +108,7 @@ Content-type: application/json
         "classification": "unknown",
         "determination": "unknown",
         "serviceSource": "microsoftDefenderForEndpoint",
-        "detectionSource": "antivirus"
+        "detectionSource": "antivirus",
         "detectorId": "e0da400f-affd-43ef-b1d5-afc2eb6f2756",
         "tenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
         "title": "Suspicious execution of hidden file",

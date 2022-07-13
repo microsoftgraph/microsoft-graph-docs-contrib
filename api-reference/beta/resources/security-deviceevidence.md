@@ -22,18 +22,18 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |azureAdDeviceId|String|A unique identifier assigned to a device by Azure Active Directory (AAD) when device is AAD joined.|
-|defenderAvStatus|defenderAvStatus|State of the Defender AntiMalware engine. The possible values are: `notReporting`, `disabled`, `notUpdated`, `updated`, `unknown`, `notSupported`, `unknownFutureValue`.|
+|defenderAvStatus|[microsoft.graph.security.defenderAvStatus](#defenderavstatus-values)|State of the Defender AntiMalware engine. The possible values are: `notReporting`, `disabled`, `notUpdated`, `updated`, `unknown`, `notSupported`, `unknownFutureValue`.|
 |deviceDnsName|String|The FQDN (Fully Qualified Domain Name) for the device.|
 |firstSeenDateTime|DateTimeOffset|The date and time when the device was first seen.|
-|healthStatus|deviceHealthStatus|The health state of the device.The possible values are: `active`, `inactive`, `impairedCommunication`, `noSensorData`, `noSensorDataImpairedCommunication`, `unknown`, `unknownFutureValue`.|
+|healthStatus|[microsoft.graph.security.deviceHealthStatus](#devicehealthstatus-values)|The health state of the device.The possible values are: `active`, `inactive`, `impairedCommunication`, `noSensorData`, `noSensorDataImpairedCommunication`, `unknown`, `unknownFutureValue`.|
 |loggedOnUsers|[microsoft.graph.security.loggedOnUser](../resources/security-loggedonuser.md) collection|Users that were loggen on the machine during the time of the alert.|
 |mdeDeviceId|String|A unique identifier assigned to a device by Microsoft Defender for Endpoint.|
-|onboardingStatus|onboardingStatus|Status of machine onboarding to Microsoft Defender for Endpoint.The possible values are: `insufficientInfo`, `onboarded`, `canBeOnboarded`, `unsupported`, `unknownFutureValue`.|
+|onboardingStatus|[microsoft.graph.security.onboardingStatus](#onboardingstatus-values)|Status of machine onboarding to Microsoft Defender for Endpoint.The possible values are: `insufficientInfo`, `onboarded`, `canBeOnboarded`, `unsupported`, `unknownFutureValue`.|
 |osBuild|Int64|The build version for the OS the device is running.|
 |osPlatform|String|The OS platform the device is running.|
 |rbacGroupId|Int32|RBAC (Role Based Access Control) device group id.|
 |rbacGroupName|String|RBAC (Role Based Access Control) device group name.|
-|riskScore|deviceRiskScore|Risk score as evaluated by Microsoft Defender for Endpoint. The possible values are: `none`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|riskScore|[microsoft.graph.security.deviceRiskScore](#deviceriskscore-values)|Risk score as evaluated by Microsoft Defender for Endpoint. The possible values are: `none`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |version|String|The version of the OS platform.|
 |vmMetadata|[microsoft.graph.security.vmMetadata](../resources/security-vmmetadata.md)|Metadata of the Virtual Machine (VM) Microsoft Defender for Endpoint is running on.|
 

@@ -34,7 +34,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |recipientEmailAddress|String|Email address of the recipient, or email address of the recipient after distribution list expansion.|
 |senderIp|String|IP address of the last detected mail server that relayed the message.|
 |subject|String|Subject of the email.|
-|threatDetectionMethods|Collection of methods used to detect malware, phishing, or other threats found in the email.|
+|threatDetectionMethods|String collection|Collection of methods used to detect malware, phishing, or other threats found in the email.|
 |threats|String collection|Collection of detection names for malware or other threats found.|
 |urlCount|Int64|Number of embedded URLs in the email.|
 |urls|String collection|Collection of the URLs contained in this email.|

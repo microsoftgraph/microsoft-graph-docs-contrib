@@ -72,6 +72,7 @@ GET https://graph.microsoft.com/beta/security/alerts_v2/da637578995287051192_756
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.security.alert",
     "id": "da637551227677560813_-961444813",
@@ -87,7 +88,7 @@ Content-type: application/json
     "tenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
     "title": "Suspicious execution of hidden file",
     "description": "A hidden file has been launched. This activity could indicate a compromised host. Attackers often hide files associated with malicious tools to evade file system inspection and defenses.",
-    "recommendedActions": "Collect artifacts and determine scope\n•\tReview the machine timeline for suspicious activities that may have occurred before and after the time of the alert, and record additional related artifacts (files, IPs/URLs) \n•\tLook for the presence of relevant artifacts on other systems. Identify commonalities and differences between potentially compromised systems.\n•\tSubmit relevant files for deep analysis and review resulting detailed behavioral information.\n•\tSubmit undetected files to the MMPC malware portal\n\nInitiate containment & mitigation \n•\tContact the user to verify intent and initiate local remediation actions as needed.\n•\tUpdate AV signatures and run a full scan. The scan might reveal and remove previously-undetected malware components.\n•\tEnsure that the machine has the latest security updates. In particular, ensure that you have installed the latest software, web browser, and Operating System versions.\n•\tIf credential theft is suspected, reset all relevant users passwords.\n•\tBlock communication with relevant URLs or IPs at the organization’s perimeter."
+    "recommendedActions": "Collect artifacts and determine scope\nï¿½\tReview the machine timeline for suspicious activities that may have occurred before and after the time of the alert, and record additional related artifacts (files, IPs/URLs) \nï¿½\tLook for the presence of relevant artifacts on other systems. Identify commonalities and differences between potentially compromised systems.\nï¿½\tSubmit relevant files for deep analysis and review resulting detailed behavioral information.\nï¿½\tSubmit undetected files to the MMPC malware portal\n\nInitiate containment & mitigation \nï¿½\tContact the user to verify intent and initiate local remediation actions as needed.\nï¿½\tUpdate AV signatures and run a full scan. The scan might reveal and remove previously-undetected malware components.\nï¿½\tEnsure that the machine has the latest security updates. In particular, ensure that you have installed the latest software, web browser, and Operating System versions.\nï¿½\tIf credential theft is suspected, reset all relevant users passwords.\nï¿½\tBlock communication with relevant URLs or IPs at the organizationï¿½s perimeter."
     "category": "DefenseEvasion",
     "assignedTo": null,
     "alertWebUrl": "https://security.microsoft.com/alerts/da637551227677560813_-961444813?tid=b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",

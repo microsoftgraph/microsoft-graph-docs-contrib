@@ -22,7 +22,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|detectionStatus|detectionStatus|The status of the detection.The possible values are: `detected`, `blocked`, `prevented`, `unknownFutureValue`.|
+|detectionStatus|microsoft.graph.security.detectionStatus|The status of the detection.The possible values are: `detected`, `blocked`, `prevented`, `unknownFutureValue`.|
 |fileDetails|[microsoft.graph.security.fileDetails](../resources/security-filedetails.md)|The file details.|
 |mdeDeviceId|String|A unique identifier assigned to a device by Microsoft Defender for Endpoint.|
 

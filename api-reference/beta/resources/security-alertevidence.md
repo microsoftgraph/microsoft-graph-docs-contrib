@@ -20,11 +20,11 @@ Each [alert](security-alert.md). contains a list of related evidence.
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The time the evidence was created and added to the alert.|
-|remediationStatus|evidenceRemediationStatus|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `active`, `pendingApproval`, `declined`, `notRemediated`, `running`, `unknownFutureValue`.|
+|remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `active`, `pendingApproval`, `declined`, `notRemediated`, `running`, `unknownFutureValue`.|
 |remediationStatusDetails|String|Details about the remediation status.|
-|roles|evidenceRole collection|The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role "Attacker".|
+|roles|[microsoft.graph.security.evidenceRole](#evidencerole-values) collection|The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role "Attacker".|
 |tags|String collection|Array of custom tags associated with an evidence instance, for example to denote a group of devices, high value assets, etc.|
-|verdict|evidenceVerdict|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
+|verdict|[microsoft.graph.security.evidenceVerdict](#evidenceverdict)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
 
 
 ### detectionSource values 
@@ -79,13 +79,24 @@ Each [alert](security-alert.md). contains a list of related evidence.
 
 | Member                     | Description                                       |
 | :--------------------------| :------------------------------------------------ |
-| unknown                    | No verdict was determined for the evidence        |
+| unknown                    | No verdict was determined for the evidence.        |
 | suspicious                 | Recommended remediation actions awaiting approval.|
-| malicious                  | The evidence was determined to bo malicious.      |
+| malicious                  | The evidence was determined to be malicious.      |
 | clean                      | No threat was detected - the evidence is benign.  |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Do not use.  |
 
 
+### evidenceVerdict values 
+
+| Member                     | Description                                       |
+| :--------------------------| :------------------------------------------------ |
+| unknown                    | No verdict was determined for the evidence.|
+| suspicious                 | |
+| malicious                  | The evidence was determined to be malicious. |
+| noThreatsFound             | No threat was detected - the evidence is benign.  |
+| unknownFutureValue         | Evolvable enumeration sentinel value. Do not use.  |
+
+`unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.
 
 ## Relationships
 None.

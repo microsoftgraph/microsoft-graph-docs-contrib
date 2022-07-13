@@ -14,12 +14,12 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Metadata of the Virtual Machine (VM) Microsoft Defender for Endpoint is running on.
+Metadata of the virtual machine (VM) Microsoft Defender for Endpoint is running on.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudProvider|vmCloudProvider|The cloud provider hosting the virtual machine.The possible values are: `unknown`, `azure`, `unknownFutureValue`.|
+|cloudProvider|[microsoft.graph.security.vmCloudProvider](#vmcloudprovider-values)|The cloud provider hosting the virtual machine.The possible values are: `unknown`, `azure`, `unknownFutureValue`.|
 |resourceId|String|Unique identifier of the Azure Resource.|
 |subscriptionId|String|Unique identifier of the Azure subscription the customer tenant belongs to.|
 |vmId|String|Unique identifier of the Virtual Machine instance.|
