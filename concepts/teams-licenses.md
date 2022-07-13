@@ -12,15 +12,15 @@ This article describes the licensing and payment requirements for the Microsoft 
 
 Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model. The following APIs have consumption charges:
 
-* [Export Teams content](/graph/api/export-teams-content.md)
-* [Create subscription](/graph/api/subscription-post-subscriptions.md)
-* [Update chat message](/graph/api/chatmessage-update.md)
-* [Get channel message](/graph/api/chatmessage-get)
-* [Get message in chat](/graph/api/chatmessage-get)
+* [Change notifications: chatMessage](/graph/api/subscription-post-subscriptions)
+* [Export chat: getAllMessages](/microsoftteams/export-teams-content)
+* [Export channel: getAllMessages](/microsoftteams/export-teams-content)
+* [Update: chat message](/graph/api/chatmessage-update)
+
 
 The following licensing models are available:
 
-- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), and requires a [supported license](#required-licenses-for-modela). In the future, apps will also be required to pay for the messages they consume beyond the [seeded capacity](#seeded-capacity).
+- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), and requires a [supported license](#required-licenses-for-modela). 
 
 - [`model=B`](#modelb-requirements) is restricted to applications that do not perform a 
 [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
@@ -29,7 +29,7 @@ There are no licensing requirements for `model=B`.
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
 > [!NOTE]
-> Starting July 5 2022, pricing events for these APIs reach general availability. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. For details, see [recent updates](#recent-updates-and-price-for-additional-use).
+> Starting July 5 2022, pricing events for these APIs reach general availability. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. For details, see [Payment and billing updates](#recent-updates-and-price-for-additional-use).
 
 ## `model=A` requirements
 
@@ -92,6 +92,20 @@ for instance has a `Free trial` link underneath the `Buy` button.
 You can get a free Microsoft 365 E5 developer sandbox subscription with 25 user licenses 
 through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
+## Licensing and seeded capacity
+
+A billing model must be send in the query parameter, for example if passing `model=A` proper licensing must be in place.
+
+| Model | Sample functions | License required | Azure subscription required | 
+|:-----------|:-----------|:-----------|:-----------|
+| `model=A` | Security and Compliance | One of the following Microsoft 365 E5 eligible licenses: Microsoft 365 E5/A5/G5, Microsoft 365 E5 Security, Microsoft 365 E5 Compliance, Microsoft 365 E5 Information Protection and Governance, or Microsoft 365 E5 Information Protection & Data Loss Prevention | Yes |
+| `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc | No | Yes | 
+| `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc | No | No (seeded capacity can be exceeded) | 
+
+Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is added up and compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;apps won't run out of seeded capacity if another app runs out.
+
+The seeded capacity differs by API; see [`model=A` requirements](#modela-requirements) and [`model=B` requirements](#modelb-requirements).
+
 ## Improper licensing and evaluation mode seeded capacity exceeded
 
 In the event that improper licensing is detected, the API call will fail and data will not be returned.
@@ -110,14 +124,24 @@ in excess of the seeded capacity will fail.
 > [!NOTE]
 > A successful API call does not mean that the proper licensing is in place. Similarly, API success in evaluation mode does not guarantee the call is within seeded capacity.
 
-## Seeded capacity
+## Payment and billing updates
 
-Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is added up and compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;apps won't run out of seeded capacity if another app runs out.
+In October 2021 we [communicated](https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-microsoft-graph-export-api-for-microsoft-teams-messages/#license-requirements-for-microsoft-graph-api-for-teams-export-and-dlp) upcoming charges for the consumption of these APIs; on July 5th 2022, these prices take effect as  [previously announced](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). 
 
-The seeded capacity differs by API; see [`model=A` requirements](#modela-requirements) and [`model=B` requirements](#modelb-requirements).
+If your applications are or will be calling any of these APIs, we require you to complete this [request form](https://aka.ms/teamsgraph/protectedApis_az) providing an active Azure subscription. When the [request form](https://aka.ms/teamsgraph/protectedApis_az) has been submitted to register an application, you can continue using these APIs. We will follow up with next steps to onboard your application to billing.
 
-## Recent updates and price for additional use
+Please note that the organization that owns the app registration is responsible for the payment and the Azure subscription should also be active in the same tenant. For multitenant apps, the organization that registered the app might be different than the organization that runs the app.
 
-In October 2021 we [communicated](https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-microsoft-graph-export-api-for-microsoft-teams-messages/#license-requirements-for-microsoft-graph-api-for-teams-export-and-dlp) upcoming charges for the consumption of these APIs; on July 5th 2022, these prices take effect as  [previously announced](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). If your applications are or will be calling any of these APIs, we require you to complete this [request form](https://aka.ms/teamsgraph/protectedApis_az) providing an active Azure subscription. When the [form](https://aka.ms/teamsgraph/protectedApis_az) has been submitted to register an application, you can continue using these APIs. We will follow up with next steps to onboard your application to billing. 
+## Frequently asked questions
 
-Please note that the organization that owns the app registration is responsible for the payment and the Azure subscription should also be active in the same tenant. For multitenant apps, the organization might be different than the organization that runs the app.
+| Scenario | Details |
+|:-----------|:-----------------|
+| What should I expect after providing an Azure subscription ? | WIP |
+| What happens if no Azure subscrition is provided ? | WIP |
+| How do I create an Azure subscription | WIP |
+| Who is responsible for the payment in case of multitenat apps | The organization that owns the app registration |
+| Where can I see my billing details ? | WIP |
+
+
+
+
