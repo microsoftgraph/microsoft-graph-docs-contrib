@@ -77,7 +77,7 @@ Content-Type: application/json
 
 
 #### Response
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -102,7 +102,7 @@ POST https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-41
 
 
 #### Response
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
