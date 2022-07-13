@@ -79,6 +79,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 To update the photo for a team:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PUT /groups/{teamId}/photo/$value
 ```
@@ -95,10 +96,13 @@ In the request body, include the binary data of the photo in the request body.
 ## Response
 
 If successful, this method returns a `200 OK` response code.
+
+### To update the profile photo of a team
 If successful, this method returns a `204 NoContent` response code for updating a photo for the team.
 
-## Example
-### Request
+## Examples
+### Example 1: Update the profile photo of the user
+#### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -127,10 +131,11 @@ Binary data for the image
 
 ---
 
-### Response
+#### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response"
 } -->
@@ -138,18 +143,12 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-### Request
+### Example 2: Update the photo of a team
 
+#### Request
 The following is an example of a request to update a team photo.
 
 <!-- {
-  "type": "#page.annotation",
-  "description": "Update profilephoto",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
   "blockType": "request",
   "name": "update_team_photo"
 }-->
@@ -160,7 +159,7 @@ Content-type: image/jpeg
 Binary data for the image
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
