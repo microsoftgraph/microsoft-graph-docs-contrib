@@ -42,7 +42,7 @@ POST /security/threatSubmission/emailThreats
 ## Request body
 In the request body, supply a JSON representation of either an [emailContentThreatSubmission](../resources/security-emailcontentthreatsubmission.md) object or an [emailUrlThreatSubmission](../resources/security-emailurlthreatsubmission.md) object.
 
-The **emailContentThreatSubmission** and **emailUrlThreatSubmission** resources are both subtypes of the **emailThreatSubmission** entity and helps to make submission in different ways. 
+The **emailContentThreatSubmission** and **emailUrlThreatSubmission** resources are both subtypes of the **emailThreatSubmission** entity. Choose what to include in the request body based on the following:  
 * If you want to create a submission with the email content itself, include an **emailContentThreatSubmission** object.
 * If you want to create a submission with a URL that points to the email, include an **emailUrlThreatSubmission** object.
 
