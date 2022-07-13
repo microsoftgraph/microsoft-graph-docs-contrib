@@ -1,5 +1,5 @@
 ---
-title: "alert_v2 resource type"
+title: "alert resource type"
 description: "Represents potential security issues within a customer's tenant that Microsoft 365 Defender have identified."
 ms.date: 09/09/2021
 author: "BenAlfasi"
@@ -8,19 +8,20 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# alert_v2 resource type
+# alert resource type
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents potential security issues within a customer's tenant that Microsoft 365 Defender have identified.
+Represents potential security issues within a customer's tenant that Microsoft 365 Defender has identified.
+
 When a threat is detected, alerts are created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called an [incident](security-incident.md). Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List alerts](../api/security-list-alerts.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of the [alert](security-alert.md) objects and their properties.|
+|[List alerts_v2](../api/security-list-alerts.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of the [alert](security-alert.md) objects and their properties.|
 |[Get alert](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Read the properties and relationships of an [alert](security-alert.md) object.|
 
 
@@ -34,21 +35,21 @@ When a threat is detected, alerts are created in the system for an analyst to in
 |severity|[microsoft.graph.security.alertSeverity](#alertseverity-values)|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |classification|[microsoft.graph.security.alertClassification](#alertclassification-values)|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
 |determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
-|serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)|The product service that created this alert. Possible values are: `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftCloudAppSecurity`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `aadIdentityProtection`, `appGovernance`, `dataLossPrevention`.|
+|serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)|The service or product that created this alert. Possible values are: `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftCloudAppSecurity`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `aadIdentityProtection`, `appGovernance`, `dataLossPrevention`.|
 |detectionSource|[microsoft.graph.security.detectionSource](#detectionsource-values)|Detection technology or sensor that identified the notable component or activity.|
 |detectorId|String|The ID of the detector that triggered the alert.|
 |tenantId|String|The Azure Active Directory tenant the alert was created in.|
 |title|String|Brief identifying string value describing the alert.|
 |description|String|String value describing each alert.|
 |recommendedActions|String|Recommended response and remediation actions to take in the event this alert was generated.|
-|category|String|The attack kill-chain category the alert belongs to. Aligned with the MITRE ATT&CK framework.|
+|category|String|The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
 |assignedTo|String|Owner of the incident, or null if no owner is assigned.|
-|alertWebUrl|String|URL for the alert page in Microsoft 365 Defender portal.|
-|incidentWebUrl|String|URL for the alert page in Microsoft 365 Defender portal.|
-|actorDisplayName|String|The adversary, or activity group, that is associated with this alert.|
-|threatDisplayName|String|The thread associated with this alert.|
+|alertWebUrl|String|URL for the alert page in the Microsoft 365 Defender portal.|
+|incidentWebUrl|String|URL for the alert page in the Microsoft 365 Defender portal.|
+|actorDisplayName|String|The adversary or activity group that is associated with this alert.|
+|threatDisplayName|String|The threat associated with this alert.|
 |threatFamilyName|String|Threat family associated with this alert.|
-|mitreTechniques|`Collection(Edm.String)`|The attack techniques, as aligned with the MITRE ATT&CK framework.|
+|mitreTechniques|Collection(Edm.String)|The attack techniques, as aligned with the MITRE ATT&CK framework.|
 |createdDateTime|DateTimeOffset|Time when the alert was created.|
 |lastUpdateDateTime|DateTimeOffset|Time when the alert was last updated.|
 |resolvedDateTime|DateTimeOffset|Time when the alert was resolved.|
@@ -104,7 +105,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 
 | Member              | Description                                           |
 | :-------------------| :---------------------------------------------------- |
-| unknown		      | Unknown status. 							          |
+| unknown		          | Unknown status. 							          |
 | new                 | New alert.                                            |
 | inProgress          | The alert is in mitigation progress.                  |
 | resolved            | The alert is in resolved state.                       |
@@ -116,39 +117,39 @@ When a threat is detected, alerts are created in the system for an analyst to in
 | Value                        | Description                                    |
 | :----------------------------| :----------------------------------------------|
 | unknown                      | Unknown service source.                        |
-| microsoftDefenderForEndpoint | Microsoft Defender for Endpoint                |
-| microsoftDefenderForIdentity | Microsoft Defender for Identity                |
-| microsoftDefenderForCloudApps| Microsoft Defender for Cloud Apps              |
-| microsoftDefenderForOffice365| Microsoft Defender For Office365               |
-| microsoft365Defender         | Microsoft 365 Defender                         |
-| aadIdentityProtection        | Azure Active Directory Identity Protection     |
-| microsoftAppGovernance       | Microsoft App Governance                       |
+| microsoftDefenderForEndpoint | Microsoft Defender for Endpoint.               |
+| microsoftDefenderForIdentity | Microsoft Defender for Identity.               |
+| microsoftDefenderForCloudApps| Microsoft Defender for Cloud Apps.             |
+| microsoftDefenderForOffice365| Microsoft Defender For Office365.              |
+| microsoft365Defender         | Microsoft 365 Defender.                        |
+| aadIdentityProtection        | Azure Active Directory Identity Protection.    |
+| microsoftAppGovernance       | Microsoft app governance.                      |
 | microsoftDataLossPrevention  | Microsoft Data Loss Prevention                 |
-| unknownFutureValue           | unknownFutureValue for evolvable enums pattern.|
+| unknownFutureValue           | Evolvable enumeration sentinel value. Do not use.|
 
 
 ### detectionSource values 
 
 | Value                        | Description                                    |
 | :----------------------------| :----------------------------------------------|
-| unknown                        | Uknown status.                                               |
+| unknown                        | Unknown detection source.                                    |
 | microsoftDefenderForEndpoint   | Microsoft Defender For Endpoint.                             |
-| antivirus                      | Antivirus.                                                   |
+| antivirus                      | Antivirus software.                                          |
 | smartScreen                    | Smart Screen.                                                |
-| customTi                       | Custom TI.                                                   |
+| customTi                       | Custom threat intelligence.                                  |
 | microsoftDefenderForOffice365  | Microsoft Defender For Office 365.                           |
-| automatedInvestigation         | Automated Investigation.                                     |
+| automatedInvestigation         | Automated investigation.                                     |
 | microsoftThreatExperts         | Microsoft Threat Experts.                                    |
-| customDetection                | Custom Detection.                                            |
-| microsoftDefenderForIdentity   | Microsoft Defender For Identity.                             |
-| cloudAppSecurity               | Cloud App Security.                                          |
+| customDetection                | Custom detection.                                            |
+| microsoftDefenderForIdentity   | Microsoft Defender for Identity.                             |
+| cloudAppSecurity               | Cloud app security.                                          |
 | microsoft365Defender           | Microsoft 365 Defender.                                      |
-| azureAdIdentityProtection      | AAD Identity Protection.                                     |
-| manual                         | Manual.                                                      |
+| azureAdIdentityProtection      | Azure Active Directory Identity Protection.                  |
+| manual                         | Manual detection.                                            |
 | microsoftDataLossPrevention    | Microsoft Data Loss Prevention.                              |
-| appGovernancePolicy            | App Governance Policy.                                       |
-| appGovernanceDetection         | App Governance Detection.                                    |
-| unknownFutureValue             | unknownFutureValue for evolvable enums pattern.              |
+| appGovernancePolicy            | App governance policy.                                       |
+| appGovernanceDetection         | App governance detection.                                    |
+| unknownFutureValue             | Evolvable enumeration sentinel value. Do not use.            |
 
 
 ## Relationships

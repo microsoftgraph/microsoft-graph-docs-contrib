@@ -64,12 +64,12 @@ Individual [alerts](security-alert.md) provide valuable clues about a completed 
 You can pull [alerts](security-alert.md) from each of the services that are part of the Microsoft 365 Defender suite, and in addition combine them with the Microsoft 365 Defender [incidents](security-incident.md) for a full view into the scope of the attack. 
 
 The following services are covered by the Microsoft 365 Defender [alerts](security-alert.md):
--Microsoft 365 Defender 
--Microsoft Defender of Endpoint 
--Microsoft Defender for Office 365 
--Microsoft Defender for Identity 
--Microsoft Defender for Cloud Apps 
--Microsoft Dala Loss Prevention 
+- Microsoft 365 Defender 
+- Microsoft Defender for Endpoint 
+- Microsoft Defender for Office 365 
+- Microsoft Defender for Identity 
+- Microsoft Defender for Cloud Apps 
+- Microsoft Data Loss Prevention 
 
 ## Attack simulation and training (preview)
 
