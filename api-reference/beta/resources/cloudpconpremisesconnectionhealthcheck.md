@@ -78,11 +78,11 @@ The result of a cloud PC Azure network connection health check.
 |resourceAvailabilityCheckSubnetDelegationFailed|The selected Azure virtual network has subnet delegation which blocks the creation of a network interface (Nic). Please ask your Azure virtual network owner to modify their subnet delegation policy to allow provisioning to succeed.|
 |resourceAvailabilityCheckSubnetWithExternalResources|The selected subnet can't be used because it contains external resources. Please remove any resources that could cause conflicts and try again. Alternatively, update this Azure network connection with another subnet.|
 |resourceAvailabilityCheckResourceGroupLockedForReadonly|The selected resource group is locked and can't be modified for provisioning. Please remove this lock to allow provisioning to succeed.|
-|resourceAvailabilityCheckResourceGroupLockedForDelete|The selected resource group or its parent scope has been locked for delete actions. It may be because the IP addresses are used up. Please remove the lock and try again.|
+|resourceAvailabilityCheckResourceGroupLockedForDelete|The selected resource group or its parent scope has been locked for delete actions. It might be because the IP addresses are used up. Please remove the lock and try again.|
 |resourceAvailabilityCheckTransientServiceError|The resource availability check failed due to a transient error. Please try it again. If the issue persists, please contact customer support.|
 |resourceAvailabilityCheckNoIntuneReaderRoleError|Do not have sufficient Intune reader role to check Intune platform restriction settings.|
-|resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation|The Intune has a default Windows platform restriction policy, it may block you from provisioning.|
-|resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation|The Intune has a custom Windows platform restriction policy, it may block you from provisioning.|
+|resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation|Intune has a default Windows platform restriction policy, which might block you from provisioning.|
+|resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation|Intune has a custom Windows platform restriction policy, which might block you from provisioning.|
 |resourceAvailabilityCheckUnknownError|The resource availability check for Azure resources failed due to an unknown error. Please ensure that all Azure resources meet the prerequisites.|
 |permissionCheckNoSubscriptionReaderRole|The cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Please make sure that the cloud PC service principal has the *Reader* permissions on the subscription.|
 |permissionCheckNoResourceGroupOwnerRole|The cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Please make sure that the cloud PC service principal has the *Owner* permissions on the resource group. |
