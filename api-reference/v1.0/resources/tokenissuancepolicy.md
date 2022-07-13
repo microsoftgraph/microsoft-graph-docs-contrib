@@ -51,7 +51,7 @@ The properties form the JSON object that represents a token issuance policy. Thi
 }-->
 ``` json
 "definition": [
-    "{ \"TokenIssuancePolicy\":{\"TokenResponseSigningPolicy\":\"TokenOnly\",\"SamlTokenVersion\":\"1.1\",\"SigningAlgorithm\":\"http://www.w3.org/2001/04/xmldsig-more#rsa-sha256\",\"Version\":1}}"
+    "{ \"TokenIssuancePolicy\":{\"TokenResponseSigningPolicy\":\"TokenOnly\",\"SamlTokenVersion\":\"1.1\",\"SigningAlgorithm\":\"http://www.w3.org/2001/04/xmldsig-more#rsa-sha256\",\"Version\":\"1\",\"EmitSAMLNameFormat\": \"true\"}}"
   ]
 ```
 
@@ -62,6 +62,7 @@ The properties form the JSON object that represents a token issuance policy. Thi
 |SamlTokenVersion|String|Version of the SAML token. Supported values are: `1.1`, `2.0`. |
 |SigningAlgorithm|String|Signing algorithm use by Azure AD to sign the SAML token. Supported values are: `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`, `http://www.w3.org/2000/09/xmldsig#rsa-sha1`.|
 |Version|Integer|Set value of 1. Required.|
+| EmitSamlNameFormat | Boolean | If selected, Azure Active Directory will add an additional attribute called "NameFormat" that describes the format of the name to restricted, core, and optional claims for this application. [Learn more](/azure/active-directory/develop/reference-claims-mapping-policy-type#claim-sets) |
 
 
 ## Relationships
