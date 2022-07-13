@@ -29,7 +29,7 @@ There are no licensing requirements for `model=B`.
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
 > [!NOTE]
-> Starting July 5 2022, pricing events for these APIs reach general availability. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. For details, see [Payment and billing updates](#recent-updates-and-price-for-additional-use).
+> Starting July 5 2022, pricing events for these APIs reach general availability. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. For details, see [Payment and billing updates](#payment-and-billing-updates).
 
 ## `model=A` requirements
 
@@ -119,7 +119,6 @@ in excess of the seeded capacity will fail.
 |E5 license requirement not met| 402 (Payment Required) |`...needs a valid license to access this API...`, `...tenant needs a valid license to access this API...`|
 |Model B is not supported for Patch API| 402 (Payment Required) |`...query parameter 'model' does not support value 'B' for this API. Use billing model 'A'...`|
 |Evaluation capacity exceeded|402 (Payment Required)|`...evaluation mode capacity has been exceeded. Use a valid billing model...`|
-
 
 > [!NOTE]
 > A successful API call does not mean that the proper licensing is in place. Similarly, API success in evaluation mode does not guarantee the call is within seeded capacity.
