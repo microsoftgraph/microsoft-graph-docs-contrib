@@ -19,20 +19,10 @@ description: Learn how to find resources for Microsoft Viva Learning.
 ---
 
 # Graph APIs 
-
-
-
-Overview  
-
- 
-
-Viva Learning 
-
- 
+## Overview  
+### Viva Learning 
 
 Viva Learning is a learning platform with the following capabilities -  
-
- 
 
 Learning in the Flow of Work​ - Bring learning to the tools and platforms where users already spend their time​ 
 
@@ -40,62 +30,41 @@ Simplified Learning​ - Aggregate learning content and tools from different s
 
 Personalized and Relevant​ - Find the right content and develop new capabilities with personalized recommendations and search​ 
 
- 
-
- 
-
-Viva Learning Graph APIs  
-
- 
+## Viva Learning Graph APIs  
 
 Viva Learning Graph APIs (Application Programming Interfaces) enable any partner/ customer to seamlessly integrate their content & learner records (user assignments & completion records) from their LMS/ learning provider with Viva Learning. 
 
- 
-
 To enable these scenarios, the below Viva Learning APIs are supported - 
 
-Content Sync APIs – These APIs help sync in the learning content for a tenant within Viva Learning. 
+1. Content Sync APIs – These APIs help sync in the learning content for a tenant within Viva Learning. 
 
-Learning Record Sync (LRS) APIs – These APIs help sync in the assignment and completion records for learners.  
+2. Learning Record Sync (LRS) APIs – These APIs help sync in the assignment and completion records for learners.  
 
-Assignments sync APIs - These APIs help sync in the learner’s assignments within Viva Learning. 
+a. Assignments sync APIs - These APIs help sync in the learner’s assignments within Viva Learning. 
 
-Completion sync APIs - These APIs help sync in the learner’s completed records within Viva Learning. 
+b. Completion sync APIs - These APIs help sync in the learner’s completed records within Viva Learning. 
 
- 
+## Scenarios supported  
 
- 
-
-Scenarios supported  
-
+Picture1.png 
 Graphical user interface, text, application, chat or text message
 
 Description automatically generated 
 
- 
-
-How integrations work 
-
- 
+## How integrations work 
 
 The below diagram helps explain how the Viva Learning integrations through Out of Box Integrations (Pull model) and through Graph APIs (Push model) work -  
 
-Graphical user interface, application
-
-Description automatically generated 
+Picture2.png 
 
 Once the content metadata and learner assignment & completion records are synchronized into Viva Learning, they appear on Viva Learning (Content appears on Home page under Browse courses – Providers section; Assignments and Completed courses appear on My Learning page under Assigned to you & Completed sections respectively. 
 
- 
-
-Content sync APIs 
+## Content sync APIs 
 
 This document focuses on the Content sync APIs. 
 
-Key Terms   
-
-  
-
+### Key Terms   
+ 
 LMS – entity that stores learning content catalogs and learner’s assignment records eg SuccessFactors   
 
 Provider- entity which is trying to integrate with Viva Learning App. Eg ISV, SI Partners, Linkedin Hub  
@@ -106,11 +75,8 @@ externalId – Identifier of a learning content record in Provider’s system.�
 
 registrationId – Identifier assigned by Viva Learning on Provider registration request for a tenant  
 
- 
+## Prerequisites 
 
-Prerequisites 
-
-  
 
 Refer to these articles to learn more about Microsoft Graph:  
 
@@ -122,49 +88,42 @@ Authentication and authorization basics for Microsoft Graph - Microsoft Graph | 
 
 Other resources are also available at Microsoft Graph documentation | Microsoft Docs  
 
- 
-
-Scenarios supported 
+## Scenarios supported 
 
  
 
-Providers will be able to register with their display name, square logo url in dark mode/light mode (to be displayed in Learning Content Card), long logo url in dark/light mode to be displayed in Details page required for the content to show up for the provider in Viva Learning. The resultant id can be used to make the subsequent calls for content ingestion.  
+1. Providers will be able to register with their display name, square logo url in dark mode/light mode (to be displayed in Learning Content Card), long logo url in dark/light mode to be displayed in Details page required for the content to show up for the provider in Viva Learning. The resultant id can be used to make the subsequent calls for content ingestion.  
 
-Providers will be able to enable/disable the registered provider, update the display name for provider and logo URL’s.  
+2. Providers will be able to enable/disable the registered provider, update the display name for provider and logo URL’s.  
 
-Retrieve provider details in Viva Learning for registrationId.  
+3. Retrieve provider details in Viva Learning for registrationId.  
 
-Retrieve list of registrations in Viva Learning for the provider using Graph API  
+4. Retrieve list of registrations in Viva Learning for the provider using Graph API  
 
-Providers will be able to delete the registration for the tenant.  
+5. Providers will be able to delete the registration for the tenant.  
 
-Providers will be able to ingest their learning content through the UPSERT API exposed via. PATCH Method to make this content available within Viva Learning for consumption.  
+6. Providers will be able to ingest their learning content through the UPSERT API exposed via. PATCH Method to make this content available within Viva Learning for consumption.  
 
-Providers will be able to read the ingested content through the GET API for the tenant for the Provider registered with registrationId.  
+7. Providers will be able to read the ingested content through the GET API for the tenant for the Provider registered with registrationId.  
 
-This content would be available for Search after given SLA. (24 hours)  
+8. This content would be available for Search after given SLA. (24 hours)  
 
-Providers will be able to retrieve the properties of a learning content object   
+9. Providers will be able to retrieve the properties of a learning content object   
 
-Providers will be able to delete the ingested content through the DELETE API.  
+10. Providers will be able to delete the ingested content through the DELETE API.  
 
- 
 
 Note: For every successful API invocation Provider needs to generate Token using resource values as given below   
 
 Resource for Token acquisition:  
 
-Token acquisition needs to be done for: https://graph. microsoft.com/  
+a. Token acquisition needs to be done for: https://graph. microsoft.com/  
 
-Scope: : https://graph. microsoft.com/.default  
+b. Scope: : https://graph. microsoft.com/.default  
 
+
+## Endpoints 
  
-
-  
-
-Endpoints 
-
-  
 
 APIs  
 
@@ -229,9 +188,3 @@ Delete Learning content
 DELETE  
 
 https://graph.microsoft.com/beta/employeeExperience/learningProviders/{registrationId}/learningContents(externalId=’{externalId}’}  
-
-  
-
-  
-
-  
