@@ -1,6 +1,6 @@
 ---
 title: "Update profilephoto"
-description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact."
+description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact or team."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "people"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the photo for any user in the tenant, including the signed-in user or the specified group or contact. Because there
+Update the photo for any user in the tenant, including the signed-in user or the specified group or contact or team. Because there
 is currently a limit of 8MB on the total size of each REST request, the size of the photo you can add is limited to under 8MB.
 
 Only use PUT for this operation.
@@ -46,6 +46,18 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)      |   Contacts.ReadWrite           |
 |Delegated (personal Microsoft account)      |   Not supported.            |
 |Application      |    Contacts.ReadWrite           |
+
+### To update the profile photo of a team
+
+| Permission type                        | Permissions (from least to most privileged)                            |
+|:---------------------------------------|:-----------------------------------------------------------------------|
+| Delegated (work or school account)     | TeamSettingsReadWriteAll, GroupReadWriteAll**, DirectoryReadWriteAll** |
+| Delegated (personal Microsoft account) | Not supported.                                                         |
+| Application                            | Not supported.                                                         |
+
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
+
+
 
 > [!NOTE]
 > 1. To update the photo of any user in the organization, your app must have the *User.ReadWrite.All* application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service). Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
@@ -83,6 +95,7 @@ In the request body, include the binary data of the photo in the request body.
 ## Response
 
 If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `204 NoContent` response code for updating a photo for the team.
 
 ## Example
 ### Request
@@ -125,6 +138,40 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 ```
 
+### Request
+
+The following is an example of a request to update a team photo.
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update profilephoto",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+  "blockType": "request",
+  "name": "update_team_photo"
+}-->
+```http
+PUT https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
+Content-type: image/jpeg
+Binary data for the image
+```
+
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -138,5 +185,3 @@ HTTP/1.1 200 OK
   ]
 }
 -->
-
-
