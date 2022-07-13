@@ -1,6 +1,6 @@
 ---
 title: "classificationResult resource type (deprecated)"
-description: "Represents the result of a classification request."
+description: "Represents the result of a classification request. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

@@ -1,6 +1,6 @@
 ---
 title: "downgradeJustification resource type (deprecated)"
-description: "Represents user input on why downgrade was performed."
+description: "Represents user input on why downgrade was performed. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

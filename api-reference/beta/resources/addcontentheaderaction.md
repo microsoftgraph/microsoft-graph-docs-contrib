@@ -1,6 +1,6 @@
 ---
 title: "addContentHeaderAction resource type (deprecated)"
-description: "Represents an action that specifies the details on the content header to be added to the information, if applicable."
+description: "Represents an action that specifies the details on the content header to be added to the information, if applicable. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
