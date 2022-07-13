@@ -97,7 +97,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 #### Request
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_deleteditems"
 }-->
 ```msgraph-interactive

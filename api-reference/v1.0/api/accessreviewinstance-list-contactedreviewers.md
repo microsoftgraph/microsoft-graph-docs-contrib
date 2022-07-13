@@ -1,7 +1,7 @@
 ---
 title: "List contactedReviewers"
 description: "Get the reviewers for an access review instance."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

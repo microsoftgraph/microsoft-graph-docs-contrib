@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Domain.Read.All, Domain.ReadWrite.All|
+|Delegated (work or school account)|IdentityProvider.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|Domain.Read.All, Domain.ReadWrite.All|
+|Application|IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
 
@@ -37,7 +37,7 @@ The work or school account needs to belong to one of the following roles:
 -->
 
 ``` http
-POST /directory/federationConfigurations
+POST /directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation
 ```
 
 ## Request headers
@@ -78,7 +78,7 @@ If successful, this method returns a `201 Created` response code and a [samlOrWs
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/directory/federationConfigurations
+POST https://graph.microsoft.com/beta/directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation
 Content-Type: application/json
 
 {

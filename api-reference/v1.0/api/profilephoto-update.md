@@ -11,13 +11,13 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there
-is currently a limit of 4MB on the total size of each REST request, this limits the size of the photo
-you can add to under 4MB.
+Update the photo for the signed-in **user**, or the specified **group** or **contact**.
+
+Due to the current limit of 4 MB on the total size of each REST request, the size of the photo you can add is also limited to 4 MB. The following are the supported dimensions for HD photos on Exchange Online: `48x48`, `64x64`, `96x96`, `120x120`, `240x240`, `360x360`, `432x432`, `504x504`, and `648x648`.
 
 You can use either PATCH or PUT for this operation in version 1.0.
 
-> **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
+> **Note:** This operation supports only a user's work or school mailboxes and not personal mailboxes.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -84,7 +84,7 @@ In the request body, include the binary data of the photo in the request body.
 If successful, this method returns a `200 OK` response code.
 ## Example
 ### Request
-Here is an example of the request.
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {

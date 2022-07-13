@@ -3,6 +3,194 @@
     {
       "ChangeList": [
         {
+          "Id": "fe5f11dd-f4f3-408d-b863-f51d8218db5b",
+          "ApiChange": "Method",
+          "ChangedApiName": "getNoncompliantDevicesAndSettingsReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getNoncompliantDevicesAndSettingsReport](https://docs.microsoft.com/en-us/graph/api/deviceManagementReports?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "9271d7b7-14cd-46b6-b8bc-10919b3f2402",
+          "ApiChange": "Member",
+          "ChangedApiName": "includeDeviceDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the **includeDeviceDetails** member to the **notificationTemplateBrandingOptions** enumeration.",
+          "Target": "notificationTemplateBrandingOptions"
+        }
+      ],
+      "Id": "9271d7b7-14cd-46b6-b8bc-10919b3f2402",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-22T00:01:01.1312062Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f079903c-5d7f-4f8d-9801-27f34f1772cf",
+          "ApiChange": "Method",
+          "ChangedApiName": "getNoncompliantDevicesAndSettingsReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getNoncompliantDevicesAndSettingsReport](https://docs.microsoft.com/en-us/graph/api/deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "77ec163e-e166-4926-b301-1926283789f3",
+          "ApiChange": "Member",
+          "ChangedApiName": "includeDeviceDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the **includeDeviceDetails** member to the **notificationTemplateBrandingOptions** enumeration.",
+          "Target": "notificationTemplateBrandingOptions"
+        },
+        {
+          "Id": "bcd983a8-e6bc-46f0-9cbd-bde0e2313fce",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "deviceLicensingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceLicensingStatus** enumeration type.",
+          "Target": "deviceLicensingStatus"
+        },
+        {
+          "Id": "bcd983a8-e6bc-46f0-9cbd-bde0e2313fce",
+          "ApiChange": "Property",
+          "ChangedApiName": "batteryLevelPercentage",
+          "ChangeType": "Addition",
+          "Description": "Added the **batteryLevelPercentage** property to the [hardwareInformation](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareInformation?view=graph-rest-beta) resource.",
+          "Target": "hardwareInformation"
+        },
+        {
+          "Id": "bcd983a8-e6bc-46f0-9cbd-bde0e2313fce",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceLicensingLastErrorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceLicensingLastErrorCode** property to the [hardwareInformation](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareInformation?view=graph-rest-beta) resource.",
+          "Target": "hardwareInformation"
+        },
+        {
+          "Id": "bcd983a8-e6bc-46f0-9cbd-bde0e2313fce",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceLicensingLastErrorDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceLicensingLastErrorDescription** property to the [hardwareInformation](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareInformation?view=graph-rest-beta) resource.",
+          "Target": "hardwareInformation"
+        },
+        {
+          "Id": "bcd983a8-e6bc-46f0-9cbd-bde0e2313fce",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceLicensingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceLicensingStatus** property to the [hardwareInformation](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareInformation?view=graph-rest-beta) resource.",
+          "Target": "hardwareInformation"
+        },
+        {
+          "Id": "bcd983a8-e6bc-46f0-9cbd-bde0e2313fce",
+          "ApiChange": "Property",
+          "ChangedApiName": "productName",
+          "ChangeType": "Addition",
+          "Description": "Added the **productName** property to the [hardwareInformation](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareInformation?view=graph-rest-beta) resource.",
+          "Target": "hardwareInformation"
+        },
+        {
+          "Id": "bcd983a8-e6bc-46f0-9cbd-bde0e2313fce",
+          "ApiChange": "Property",
+          "ChangedApiName": "residentUsersCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **residentUsersCount** property to the [hardwareInformation](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareInformation?view=graph-rest-beta) resource.",
+          "Target": "hardwareInformation"
+        },
+        {
+          "Id": "bcd983a8-e6bc-46f0-9cbd-bde0e2313fce",
+          "ApiChange": "Property",
+          "ChangedApiName": "wiredIPv4Addresses",
+          "ChangeType": "Addition",
+          "Description": "Added the **wiredIPv4Addresses** property to the [hardwareInformation](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareInformation?view=graph-rest-beta) resource.",
+          "Target": "hardwareInformation"
+        },
+        {
+          "Id": "bcd983a8-e6bc-46f0-9cbd-bde0e2313fce",
+          "ApiChange": "Property",
+          "ChangedApiName": "bootstrapTokenEscrowed",
+          "ChangeType": "Addition",
+          "Description": "Added the **bootstrapTokenEscrowed** property to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "bcd983a8-e6bc-46f0-9cbd-bde0e2313fce",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceFirmwareConfigurationInterfaceManaged",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceFirmwareConfigurationInterfaceManaged** property to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "ddc87b35-7de3-45e1-9f97-f0e20c273f29",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowNonBlockingAppInstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowNonBlockingAppInstallation** property to the [windows10EnrollmentCompletionPageConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10EnrollmentCompletionPageConfiguration?view=graph-rest-beta) resource.",
+          "Target": "windows10EnrollmentCompletionPageConfiguration"
+        },
+        {
+          "Id": "26b00b11-846c-4baf-aaae-c9e08b991962",
+          "ApiChange": "Member",
+          "ChangedApiName": "enrollment",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollment** member to the **deviceManagementConfigurationTechnologies** enumeration.",
+          "Target": "deviceManagementConfigurationTechnologies"
+        },
+        {
+          "Id": "26b00b11-846c-4baf-aaae-c9e08b991962",
+          "ApiChange": "Property",
+          "ChangedApiName": "fileTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **fileTypes** property to the [deviceManagementConfigurationStringSettingValueDefinition](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationStringSettingValueDefinition?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementConfigurationStringSettingValueDefinition"
+        },
+        {
+          "Id": "9db1b1a4-b69a-4913-8794-0920943c1a3e",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceOwnerLockScreenMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceOwnerLockScreenMessage** property to the [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "9db1b1a4-b69a-4913-8794-0920943c1a3e",
+          "ApiChange": "Property",
+          "ChangedApiName": "securityCommonCriteriaModeEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityCommonCriteriaModeEnabled** property to the [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "f68a4488-3c56-49d2-8966-a257ad1a1141",
+          "ApiChange": "Property",
+          "ChangedApiName": "search",
+          "ChangeType": "Addition",
+          "Description": "Added the **search** property to the [assignmentFilterEvaluateRequest](https://docs.microsoft.com/en-us/graph/api/resources/intune-assignmentFilterEvaluateRequest?view=graph-rest-beta) resource.",
+          "Target": "assignmentFilterEvaluateRequest"
+        },
+        {
+          "Id": "168afc68-cde7-44a6-9351-bb635dfda207",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowAvailableUninstall",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowAvailableUninstall** property to the [win32LobApp](https://docs.microsoft.com/en-us/graph/api/resources/intune-win32LobApp?view=graph-rest-beta) resource.",
+          "Target": "win32LobApp"
+        }
+      ],
+      "Id": "168afc68-cde7-44a6-9351-bb635dfda207",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-21T22:22:25.0486576Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5379ae92-4f43-49a1-8a24-8ebd760e3c3c",
           "ApiChange": "Resource",
           "ChangedApiName": "deviceManagementReportSchedule",
