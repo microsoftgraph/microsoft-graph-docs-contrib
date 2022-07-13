@@ -15688,6 +15688,10 @@ items:
           href: api/channel-update-members.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Delete message
+          href: api/chatmessage-softdelete.md
+        - name: Undo message deletion
+          href: api/chatmessage-undosoftdelete.md
         - name: Check user access
           href: api/channel-doesuserhaveaccess.md
         - name: List teams sharing a channel
@@ -15766,6 +15770,10 @@ items:
           href: api/chatmessage-post-replies.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Delete message
+          href: api/chatmessage-softdelete.md
+        - name: Undo message deletion
+          href: api/chatmessage-undosoftdelete.md
         - name: Get messages across all channels
           href: api/channel-getallmessages.md
         - name: Get messages across all chats
