@@ -14196,6 +14196,7 @@ items:
       - name: Microsoft 365 usage reports
         items:
         - name: Overview
+          href: resources/report.md
         - name: Settings
           href: resources/adminreportsettings.md
           items:
@@ -14203,7 +14204,6 @@ items:
             href: api/adminreportsettings-get.md
           - name: Update
             href: api/adminreportsettings-update.md
-          href: resources/report.md
         - name: Microsoft Teams device usage
           href: resources/microsoft-teams-device-usage-reports.md
           items:
