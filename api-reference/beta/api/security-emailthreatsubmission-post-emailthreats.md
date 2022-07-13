@@ -40,12 +40,13 @@ POST /security/threatSubmission/emailThreats
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, either supply a JSON representation of the [emailContentThreatSubmission](../resources/security-emailcontentthreatsubmission.md) object or the [emailUrlThreatSubmission](../resources/security-emailurlthreatsubmission.md) object.
+In the request body, supply a JSON representation of either an [emailContentThreatSubmission](../resources/security-emailcontentthreatsubmission.md) object or an [emailUrlThreatSubmission](../resources/security-emailurlthreatsubmission.md) object.
 
-The **emailContentThreatSubmission** and **emailUrlThreatSubmission** are both subtypes of **emailThreatSubmission** entity and helps to make submission in different ways. 
-* If you want to create a submission with the email content itself, use the **emailContentThreatSubmission**.
-* If you want to create a submission with a URL which points to the email, use the **emailUrlThreatSubmission**.
-* After **emailContentThreatSubmission** and **emailUrlThreatSubmision** are created, the threat submission service just stores some metadata about the email. The email content is not stored. So, the created entity from both methods is an **emailThreatSubmission** entity.
+The **emailContentThreatSubmission** and **emailUrlThreatSubmission** resources are both subtypes of the **emailThreatSubmission** entity and helps to make submission in different ways. 
+* If you want to create a submission with the email content itself, include an **emailContentThreatSubmission** object.
+* If you want to create a submission with a URL that points to the email, include an **emailUrlThreatSubmission** object.
+
+After the **emailContentThreatSubmission** or **emailUrlThreatSubmision** objects are created, the threat submission service just stores some metadata about the email. The email content is not stored. As a result, an **emailThreatSubmission** entity is created.
 
 ## Response
 
@@ -53,7 +54,7 @@ If successful, this method returns a `201 Created` response code and an [emailTh
 
 ## Examples
 
-### Example 1: email threat submission creation with messageUrl and emailUrlThreatSubmission type
+### Example 1: Email threat submission creation with messageUrl and emailUrlThreatSubmission type
 
 #### Request
 <!-- {
@@ -129,7 +130,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: email threat submission creation with tenantAllowOrBlockListAction provided
+### Example 2: Email threat submission creation with tenantAllowOrBlockListAction provided
 
 #### Request
 ```http
@@ -211,7 +212,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: email threat submission creation with fileContent and emailContentThreatSubmission type
+### Example 3: Email threat submission creation with fileContent and emailContentThreatSubmission type
 
 #### Request
 ```http
