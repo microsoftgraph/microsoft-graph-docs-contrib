@@ -62,7 +62,7 @@ _id_ property is always returned.
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
-> **Note:**In the request header, the value odata.maxpagesize should be greater than equal to 10 to get the correct nextLink value.
+> **Note:** In the request header, the value `odata.maxpagesize` should be greater than or equal to 10 to get the correct `nextLink` value.
 
 ## Response
 
@@ -90,7 +90,7 @@ getting all the changes for that round.
 
 The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
 
-Note: The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK
