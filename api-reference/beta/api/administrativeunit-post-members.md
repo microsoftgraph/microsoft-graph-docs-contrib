@@ -55,8 +55,8 @@ POST /administrativeUnits/{id}/members
 | Content-type  | application/json. Required. |
 
 ## Request body
-### Adding an existing user or group
-In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), or [directoryObject](../resources/directoryobject.md) to be added.
+### Adding an existing user, group, or device
+In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), or [device](../resources/device.md) to be added.
 
 ### Creating a new group
 The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit. 
