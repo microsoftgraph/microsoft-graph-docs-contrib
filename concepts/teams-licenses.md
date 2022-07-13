@@ -99,8 +99,8 @@ A billing model must be send in the query parameter, for example if passing `mod
 | Model | Sample functions | License required | Azure subscription required | 
 |:-----------|:-----------|:-----------:|:-----------:|
 | `model=A` | Security and Compliance | One of the following Microsoft 365 E5 eligible licenses: Microsoft 365 E5/A5/G5, Microsoft 365 E5 Security, Microsoft 365 E5 Compliance, Microsoft 365 E5 Information Protection and Governance, or Microsoft 365 E5 Information Protection & Data Loss Prevention | Yes |
-| `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc | No | Yes | 
-| `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc | No | No (seeded capacity can be exceeded) | 
+| `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | No | Yes | 
+| `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | No | No (seeded capacity can be exceeded) | 
 
 Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is added up and compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;apps won't run out of seeded capacity if another app runs out.
 
