@@ -1,17 +1,17 @@
 ---
-title: "Authentication and authorization basics for Microsoft Graph"
-description: "To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform."
+title: "Authentication and authorization basics"
+description: "To call Microsoft Graph, you must register your app with the Microsoft identity platform, request permissions, and acquire an access token."
 author: "jackson-woods"
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
 ---
 
-# Authentication and authorization basics for Microsoft Graph
+# Authentication and authorization basics
 
 To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. The access token contains information about your app and the permissions it has to access the resources and APIs available through Microsoft Graph. To get an access token, your app must be registered with the Microsoft identity platform and be authorized by either a user or an administrator to access the Microsoft Graph resources it needs.
 
-This article provides an overview of the Microsoft identity platform, access tokens, and how your app can get access tokens.For more information about the Microsoft identity platform, see [What is the Microsoft identity platform?](/azure/active-directory/develop/v2-overview). If you know how to integrate an app with the Microsoft identity platform to get tokens, see information and samples specific to Microsoft Graph in the [Next Steps](#next-steps) section.
+This article provides an overview of the Microsoft identity platform, access tokens, and how your app can get access tokens. For more information about the Microsoft identity platform, see [What is the Microsoft identity platform?](/azure/active-directory/develop/v2-overview). If you know how to integrate an app with the Microsoft identity platform to get tokens, see information and samples specific to Microsoft Graph in the [next steps](#next-steps) section.
 
 ## Register your app with the Microsoft identity platform
 
@@ -48,26 +48,27 @@ Microsoft Graph exposes granular permissions that control the access that apps h
 
 ### Delegated and application permissions
 
-Microsoft Graph has two types of permissions.
+Microsoft Graph has two types of permissions:
 
 - **Delegated permissions** are used by apps that have a signed-in user present. For these apps, either the user or an administrator consents to the permissions that the app requests and the app can act as the signed-in user when making calls to Microsoft Graph. Some delegated permissions can be consented by non-administrative users, but some higher-privileged permissions require [administrator consent](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).  
 
 - **Application permissions** are used by apps that run without a signed-in user present. For example, apps that run as background services or daemons. Application permissions can only be [consented by an administrator](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant).
 
-**Effective permissions** are the permissions that your app has when making requests to Microsoft Graph. The effective permissions are determined by a combination of the Microsoft Graph permissions you've granted to the app, *and* the privileges of the signed-in user or the calling app. Within organizations, the policy or membership in one or more roles determine the privileges of the signed-in user or an app. It's important to understand the difference between the delegated and application permissions your app has and its effective permissions when making calls to Microsoft Graph.
+### Effective permissions
 
-#### Effective permissions in delegated vs application-only permission scenarios
+**Effective permissions** are the permissions that your app has when making requests to Microsoft Graph. The effective permissions are determined by a combination of the Microsoft Graph permissions that you granted to the app *and* the privileges of the signed-in user or the calling app. Within organizations, the policy or membership in one or more roles determine the privileges of the signed-in user or an app. It's important to understand the difference between the delegated and application permissions your app has and its effective permissions when making calls to Microsoft Graph.
 
-- For delegated permissions, the *effective permissions* of your app are the least-privileged intersection of the delegated permissions the app has been granted (by consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user.
+#### Effective permissions in delegated versus application-only permission scenarios
+
+- For delegated permissions, the effective permissions of your app are the least-privileged intersection of the delegated permissions the app has been granted (by consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user.
 
   Suppose that your app has been granted the *User.ReadWrite.All* delegated permission and calls the [Update user](/graph/api/user-update) API. This permission nominally grants your app permission to read and update the profile of every user in an organization. However, because of effective permissions, the following restrictions apply to the privileges of the signed-in user:
-  + If the signed-in user is a global administrator, your app can update the profile of every user in the organization.
-  + If the signed-in user isn't in an administrator role, your app can update *only* the profile of the signed-in user. It won't update the profiles of other users in the organization because the signed-in user doesn't have those privileges.
+  - If the signed-in user is a global administrator, your app can update the profile of every user in the organization.
+  - If the signed-in user isn't in an administrator role, your app can update *only* the profile of the signed-in user. It won't update the profiles of other users in the organization because the signed-in user doesn't have those privileges.
 
-- For application permissions, the *effective permissions* of your app are the full level of privileges implied by the permission. For example, an app that has the *User.ReadWrite.All* application permission can update the profile of every user in the organization.
+- For application permissions, the effective permissions of your app are the full level of privileges implied by the permission. For example, an app that has the *User.ReadWrite.All* application permission can update the profile of every user in the organization.
 
-##### Comparison of delegated and application permissions
-
+#### Comparison of delegated and application permissions
 
 | Item | Delegated permissions | Application permissions |
 |--|--|--|
@@ -81,7 +82,6 @@ Microsoft Graph has two types of permissions.
 :::image type="content" source="/graph/images/auth-v2/permission-types.png" alt-text="Microsoft Graph exposes delegated and application permissions but authorizes requests based on the app's effective permissions." border="true":::
 
 For a complete list of delegated and application permissions for Microsoft Graph, and which permissions require administrator consent, see the [Permissions reference](../permissions-reference.md).
-
 
 ## Access tokens
 

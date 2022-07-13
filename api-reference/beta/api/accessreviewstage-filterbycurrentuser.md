@@ -1,7 +1,7 @@
 ---
 title: "accessReviewStage: filterByCurrentUser"
 description: "Return all accessReviewStage objects for a given reviewer."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

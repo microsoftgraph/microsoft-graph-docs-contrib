@@ -1,7 +1,7 @@
 ---
 title: "Delete accessReviewScheduleDefinition"
 description: "Deletes an accessReviewScheduleDefinition object."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
