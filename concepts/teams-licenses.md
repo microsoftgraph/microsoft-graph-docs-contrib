@@ -135,11 +135,12 @@ Please note that the organization that owns the app registration is responsible 
 
 | Scenario | Details |
 |:-----------|:-----------------|
-| What should I expect after providing an Azure subscription ? | WIP |
-| What happens if no Azure subscrition is provided ? | WIP |
-| How do I create an Azure subscription | WIP |
-| Who is responsible for the payment in case of multitenat apps | The organization that owns the app registration |
-| Where can I see my billing details ? | WIP |
+| What should I expect after providing an Azure subscription ? | We will contact you at the email provided in the request form to onboard you to billing |
+| Do I need to provide an Azure suscription if I my application is not calling billed APIs? | Not at this momen, please refer to the request form in [protected APIs](/graph/api/teams-protected-apis)|
+| What happens if no Azure subscrition is provided ? | Depending to the model that is being passed in the query parameter a license must be in place (`model=A`), if using evaluation model the seeded capacity will eventually be excedeed and a billing model needs to provided to continue with the service |
+| How do I create an Azure subscription |An Azure subscription can be created in Azure Active Directory for the application that will be making calls to the metered APIs.|
+| Who is responsible for the payment in case of multitenat apps | The organization that owns the app registration (Include example) |
+| Where can I monitor the cost ? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) [permissions](/azure/cost-management-billing/costs/assign-access-acm-data) Can use Azure Cost Analysis tool to track metered API consumption. With this tool you can track consumption per day and filter by meter, service name, resource id among other parameters. For metered APIs the resource GUID is the App Id. Resource Groups or resource Tags are not supported |
 
 
 
