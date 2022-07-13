@@ -97,7 +97,7 @@ through the [Microsoft 365 Developer Program](https://developer.microsoft.com/mi
 A billing model must be send in the query parameter, for example if passing `model=A` proper licensing must be in place.
 
 | Model | Sample functions | License required | Azure subscription required | 
-|:-----------|:-----------|:-----------:|:-----------:|
+|:-----------|:-------------|:-------------|:-----------|
 | `model=A` | Security and Compliance | One of the following Microsoft 365 E5 eligible licenses: Microsoft 365 E5/A5/G5, Microsoft 365 E5 Security, Microsoft 365 E5 Compliance, Microsoft 365 E5 Information Protection and Governance, or Microsoft 365 E5 Information Protection & Data Loss Prevention | Yes |
 | `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | No | Yes | 
 | `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | No | No (seeded capacity can be exceeded) | 
@@ -134,7 +134,7 @@ Please note that the organization that owns the app registration is responsible 
 ## Frequently asked questions
 
 | Scenario | Details |
-|:-------------------|:-----------------|
+|:-----------------------|:-----------------|
 | What should I expect after providing an Azure subscription ? | We will contact you at the email provided in the request form to onboard you to billing. |
 | Do I need to provide an Azure suscription if my application is not calling billed APIs? | Not at this moment, please refer to the request form in [protected APIs](/graph/api/teams-protected-apis)|
 | What happens if no Azure subscrition is provided ? | Depending to the model that is being passed in the query parameter a license must be in place (`model=A`), if using evaluation model the seeded capacity will eventually be excedeed and a billing model needs to be provided to continue with the service. |
