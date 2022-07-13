@@ -11,8 +11,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Update a [chatMessage](../resources/chatMessage.md) object. 
+Update a [chatMessage](../resources/chatMessage.md) object.
 With the exception of the **policyViolation** property, all properties of a **chatMessage** can be updated in delegated permissions scenarios.
 Only the **policyViolation** property of a **chatMessage** can be updated in application permissions scenarios.
 
@@ -22,11 +21,11 @@ Only the **policyViolation** property of a **chatMessage** can be updated in app
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Chat.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.UpdatePolicyViolation.All for a chat message.</br>ChannelMessage.UpdatePolicyViolation.All for a channel message. |
+| Permission type                        | Permissions (from least to most privileged)                                                                            |
+|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------------|
+| Delegated (work or school account)     | Chat.ReadWrite                                                                                                         |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                         |
+| Application                            | Chat.UpdatePolicyViolation.All for a chat message.</br>ChannelMessage.UpdatePolicyViolation.All for a channel message. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -45,37 +44,43 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}?model=A
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}?model=A
 PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
 ```
-If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. 
+
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
-| Content-Type | application/json. Required. |
+| Name          | Description                 |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 For applications that use delegated permissions:
-In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, 
+In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object,
 specifying the properties that need to be changed.
 
 For applications that use application permissions:
-In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, 
+In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object,
 specifying only the **policyViolation** property.
 
-## Response body
+## Response
+
 For applications that use delegated permissions:
 If successful, this method returns a `204 NoContent` response.
 
 For applications that use application permissions:
 If successful, this method returns a `200 OK` response.
 
+### Errors
+
+[!INCLUDE [teams-model-A-only-errors](../../includes/teams-model-A-only-errors.md)]
+
 ## Example for updating policyViolation by using application permissions
 
 #### Request
 
 The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message by using application permissions.
-
 
 # [HTTP](#tab/http)
 <!-- {
