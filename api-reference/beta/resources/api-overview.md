@@ -42,9 +42,9 @@ To enable these scenarios, the below Viva Learning APIs are supported -
 
 2. Learning Record Sync (LRS) APIs – These APIs help sync in the assignment and completion records for learners.  
 
-a. Assignments sync APIs - These APIs help sync in the learner’s assignments within Viva Learning.
+    a. Assignments sync APIs - These APIs help sync in the learner’s assignments within Viva Learning.
 
-b. Completion sync APIs - These APIs help sync in the learner’s completed records within Viva Learning.
+    b. Completion sync APIs - These APIs help sync in the learner’s completed records within Viva Learning.
 
 ## Scenarios supported  
 
@@ -80,13 +80,13 @@ registrationId – Identifier assigned by Viva Learning on Provider registration
 
 Refer to these articles to learn more about Microsoft Graph:  
 
-1. Microsoft Graph Fundamentals - Learn (https://docs.microsoft.com/en-us/learn/paths/m365-msgraph-fundamentals/)  
+1. Microsoft Graph Fundamentals - Learn <https://docs.microsoft.com/en-us/learn/paths/m365-msgraph-fundamentals/> 
 
-2. Calling the Microsoft Graph API - Microsoft Graph (https://docs.microsoft.com/en-us/graph/call-api)
+2. Calling the Microsoft Graph API - Microsoft Graph <https://docs.microsoft.com/en-us/graph/call-api>
 
-3. Authentication and authorization basics for Microsoft Graph - Microsoft Graph (https://docs.microsoft.com/en-us/graph/auth/auth-concepts )
+3. Authentication and authorization basics for Microsoft Graph - Microsoft Graph <https://docs.microsoft.com/en-us/graph/auth/auth-concepts >
 
-4. Other resources are also available at Microsoft Graph documentation]  (https://docs.microsoft.com/en-us/graph/)
+4. Other resources are also available at Microsoft Graph documentation]  <https://docs.microsoft.com/en-us/graph/>
 
 ## Scenarios supported
 
@@ -114,9 +114,9 @@ Note: For every successful API invocation Provider needs to generate Token using
 
 Resource for Token acquisition:  
 
-a. Token acquisition needs to be done for: <https://graph>. microsoft.com/  
+a. Token acquisition needs to be done for: <https://graph.microsoft.com/>  
 
-b. Scope: : <https://graph>. microsoft.com/.default  
+b. Scope: : <https://graph.microsoft.com/.default>  
 
 ## Endpoints
 
