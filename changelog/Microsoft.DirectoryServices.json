@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "6c83378e-32f7-4a90-be50-fba95f7890ae",
+          "ApiChange": "Method",
+          "ChangedApiName": "reprocess",
+          "ChangeType": "Addition",
+          "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/reprocess?view=graph-rest-1.0) method to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignment?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignment"
+        },
+        {
+          "Id": "6c83378e-32f7-4a90-be50-fba95f7890ae",
+          "ApiChange": "Method",
+          "ChangedApiName": "reprocess",
+          "ChangeType": "Addition",
+          "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/reprocess?view=graph-rest-1.0) method to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        }
+      ],
+      "Id": "6c83378e-32f7-4a90-be50-fba95f7890ae",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-08T02:09:36.1935694Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicy",
@@ -11187,6 +11213,24 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-21T09:45:26.3615214Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "603c49a6-f9aa-4f90-a8ef-7725d45d8c74",
+          "ApiChange": "Property",
+          "ChangedApiName": "samlMetadataUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **samlMetadataUrl** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "603c49a6-f9aa-4f90-a8ef-7725d45d8c74",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-05T07:06:20.8129252Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }

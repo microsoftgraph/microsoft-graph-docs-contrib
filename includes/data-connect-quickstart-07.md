@@ -15,7 +15,7 @@ In this section we will be building your first ASP.NET project application for t
     1. Search **ASP.NET Web Application** in the search box and select the **ASP.NET Web Application (.NET Framework)** option.
     1. Click on **Next**.
 
-        ![A screenshot of the Visual Studio user interface showing the options to create a new project using ASP.NET Web Application.](images/data-connect-vs-create-app.png)
+        ![A screenshot of the Visual Studio user interface showing the options to create a new project using ASP.NET Web Application.](../concepts/images/data-connect-vs-create-app.png)
 
     1. Enter **EmailMetrics** for the name of the project.
     1. Select **.NET Framework 4.7.2** for the framework option.
@@ -27,34 +27,34 @@ In this section we will be building your first ASP.NET project application for t
     1. In the new **ASP.NET Web Application** project dialog, select MVC.
     1. Select **Create**.
 
-    ![A screenshot of the Visual Studio interface showing the options to choose an Model-View-Controller (MVC) ASP.NET Web application.](images/data-connect-vs-create-app-mvc.png)
+    ![A screenshot of the Visual Studio interface showing the options to choose an Model-View-Controller (MVC) ASP.NET Web application.](../concepts/images/data-connect-vs-create-app-mvc.png)
 
 ## Add and configure your Azure Storage as a Connected Service
 
 1. In the **Solution Explorer** tool window, right-click the **Connected Services** node and select **Add Connected Service**.
 
-    ![Visual-Studio-Add-Connected-Service](images/data-connect-vs-add-connected-service-sa.png)
+    ![Visual-Studio-Add-Connected-Service](../concepts/images/data-connect-vs-add-connected-service-sa.png)
 
 1. On the **Connected Services** dialog, select the green **+** sign which is located in the upper-right corner of the dialog.
 
 1. In the **Add dependency** dialog, select **Azure Storage** and select **Next**.
 
-    ![A screenshot of the Visual Studio interface showing the add dependecy dialog for the Azure Storage option.](images/data-connect-vs-add-dependency-azsa.png)
+    ![A screenshot of the Visual Studio interface showing the add dependecy dialog for the Azure Storage option.](../concepts/images/data-connect-vs-add-dependency-azsa.png)
 
 1. In the **Azure Storage** dialog, select the subscription and storage account where you exported the data in the previous exercise, select **Next**.
 
-    ![A screenshot of the Visual Studio interface showing the Configure Azure Storage, where you select the subscription and storage account.](images/data-connect-vs-configure-az-storage.png)
+    ![A screenshot of the Visual Studio interface showing the Configure Azure Storage, where you select the subscription and storage account.](../concepts/images/data-connect-vs-configure-az-storage.png)
 
 1. Provide the **Azure Storage connection** a name of **AzureStorageConnectionString** and select **Next**.
 1. Select **Finish**.
 
-    ![A screenshot of the Visual Studio interface showing the Configure Azure Storage summary.](images/data-connect-vs-configure-sa-summary.png)
+    ![A screenshot of the Visual Studio interface showing the Configure Azure Storage summary.](../concepts/images/data-connect-vs-configure-sa-summary.png)
 
 ## Create a new model class that will be used to store the email metrics
 
 1. In the  **Solution Explorer** tool window, right-click the **Models** folder and select **Add > Class**.
 
-    ![A screenshot of the Visual Studio interface showing how you can add a new class by right-clicking in the models folder.](images/data-connect-vs-add-new-model-class.png)
+    ![A screenshot of the Visual Studio interface showing how you can add a new class by right-clicking in the models folder.](../concepts/images/data-connect-vs-add-new-model-class.png)
 
 1. In the **Add New Item** dialog, select **Class**, set the name of the file to _EmailMetric.cs_ and select **Add**.
 
@@ -191,7 +191,7 @@ In this section we will be building your first ASP.NET project application for t
 
 1. In the **Add View** dialog, set the **View** name to **Index**, leave the remaining input controls to their default values, and select **Add**.
 
-    ![A screenshot of the Visual Studio interface showing how to add an new view called index.](images/data-connect-vs-add-view-index.png)
+    ![A screenshot of the Visual Studio interface showing how to add an new view called index.](../concepts/images/data-connect-vs-add-view-index.png)
 
 1. Update the markup in the new **Views > EmailMetrics > _Index.cshtml_** to the following. This will add a form with a single button that will submit an HTTP POST to the custom controller action added in the last step.
 
@@ -229,7 +229,7 @@ In this section we will be building your first ASP.NET project application for t
     - **Template**: List
     - **Model class**: EmailMetric (EmailMetric.Models)
 
-        ![A screenshot of the Visual Studio interface showing how to add an new view called ShowMetrics.](images/data-connect-vs-add-view-showmetrics.png)
+        ![A screenshot of the Visual Studio interface showing how to add an new view called ShowMetrics.](../concepts/images/data-connect-vs-add-view-showmetrics.png)
 
     >[!TIP]
     > In case you can't see the **EmailMetric** model in the dropdown box, please build the solution.
@@ -280,8 +280,8 @@ In this section we will be building your first ASP.NET project application for t
 
 1. On the **Email Metrics** page, select the **View email metrics** button.
 
-    ![A screenshot of the built ASP.NET Web application interface showing the view email metrics button.](images/data-connect-vs-select-view-metrics.png)
+    ![A screenshot of the built ASP.NET Web application interface showing the view email metrics button.](../concepts/images/data-connect-vs-select-view-metrics.png)
 
 1. When the page loads, you will see a list of emails addresses that were found among all emails with a sum of all the recipients sent between them, as shown from a small sample set in a test email extract in the following figure.
 
-    ![A screenshot of the built ASP.NET Web application interface showing the view email metrics results.](images/data-connect-vs-show-email-metrics.png)
+    ![A screenshot of the built ASP.NET Web application interface showing the view email metrics results.](../concepts/images/data-connect-vs-show-email-metrics.png)

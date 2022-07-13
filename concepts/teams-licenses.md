@@ -8,7 +8,7 @@ ms.prod: "microsoft-teams"
 
 # Licensing and payment requirements for the Microsoft Teams API
 
-This article describes the licensing and payment requirements for the Microsoft Teams API in Microsoft Graph.
+This article describes the licensing and payment requirements for the Microsoft Teams APIs in Microsoft Graph.
 
 Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model. The following APIs have consumption charges:
 
@@ -141,7 +141,3 @@ Please note that the organization that owns the app registration is responsible 
 | How do I create an Azure subscription | An Azure subscription can be created in Azure Active Directory for the application that will be making calls to the metered APIs.|
 | Who is responsible for the payment in case of multitenat apps | The organization that owns the app registration. |
 | Where can I monitor the cost ? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) [permissions](/azure/cost-management-billing/costs/assign-access-acm-data) Can use Azure Cost Analysis tool to track metered API consumption. With this tool you can track consumption per day and filter by meter, service name, resource id among other parameters. For metered APIs the resource GUID is the App Id. Resource Groups or resource Tags are not supported. |
-
-
-
-

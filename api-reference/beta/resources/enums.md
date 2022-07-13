@@ -11,6 +11,16 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+
+### teamTemplateAudience values 
+
+|Member|
+|:---|
+|organization|
+|user|
+|public|
+|unknownFutureValue|
+
 ### decisionItemPrincipalResourceMembershipType values 
 
 |Member|
