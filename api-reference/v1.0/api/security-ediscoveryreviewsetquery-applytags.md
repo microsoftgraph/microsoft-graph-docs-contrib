@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryReviewSetQuery: applyTags"
-description: "Apply tags to files in eDiscovery review set."
+description: "Apply tags to files in an eDiscovery review set."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 
 
-Apply tags to files in eDiscovery review set. [Learn more.](/microsoft-365/compliance/tagging-documents)
+Apply tags to files in an [eDiscovery review set](../resources/security-ediscoveryreviewset.md). For details, see [Tag documents in a review set in eDiscovery](/microsoft-365/compliance/tagging-documents).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -77,7 +77,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
