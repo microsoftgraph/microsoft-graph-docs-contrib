@@ -1,6 +1,6 @@
 ---
 title: "learningProvider resource type"
-description: "**TODO: Add Description**"
+description: "An entity which holds the details of the learning provider"
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-experience"
