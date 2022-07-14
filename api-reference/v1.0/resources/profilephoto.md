@@ -24,6 +24,7 @@ The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64
 |[Update profilePhoto](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo object.|
 |[Get profilePhoto of team](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Read the properties of a profile photo of team.|
 |[Update profilePhoto of team](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo of team.|
+
 > [!NOTE]
 >
 > Managing users' photos using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
