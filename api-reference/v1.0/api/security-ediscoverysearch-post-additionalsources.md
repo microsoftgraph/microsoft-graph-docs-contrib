@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 
 
-Create a new dataSource object.
+Create a new [dataSource](../resources/security-datasource.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +44,7 @@ In the request body, supply a JSON representation of the [dataSource](../resourc
 
 You can specify the following properties when you create a **dataSource**.
 
->**Note:** Either **email** or **site** are required, not both. 
+>**Note:** Either **email** or **site** is required, but not both. 
 
 |Property|Type|Description|
 |:---|:---|:---|
