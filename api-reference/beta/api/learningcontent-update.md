@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-/employeeExperience/learningProviders/{registrationId}/learningContents(externalId='{externalId}') 
+PATCH /employeeExperience/learningProviders/{registrationId}/learningContents(externalId='{externalId}') 
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ One of the following permissions is required to call this API. To learn more, in
 |isSearchable|Boolean|Indicates whether the learning content is searchable or not. The default value is `true`. Optional.|
 |languageTag|String|The language of the learning content, for example, `en-us` or `fr-fr`. Required.|
 |lastModifiedDateTime|DateTimeOffset|The date when the learning content was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
-|numberOfPages|Int32|The number of pages of the learning content, for example, Number of pages. Optional.|
+|numberOfPages|Int32|The number of pages of the learning content, for example, 9. Optional.|
 |skillTags|String collection|The skills tags associated with the learning content. Optional.|
 |sourceName|String|The source name of the learning content, such as LinkedIn Learning or Coursera. Optional.|
 |thumbnailWebUrl|String|The URL of learning content thumbnail image. Optional.|
@@ -68,7 +68,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [learningContent](../resources/learningcontent.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and an updated [learningContent](../resources/learningcontent.md) object in the response body.
 
 ## Examples
 
@@ -80,7 +80,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH /employeeExperience/learningProviders/{registrationId}/learningContents(externalId='{externalId}') 
+PATCH /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='LP4471') 
 Content-Type: application/json
 
 {
