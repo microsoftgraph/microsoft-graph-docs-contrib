@@ -6,19 +6,17 @@ ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to search Outlook messages
+# Use the Microsoft Search API to search Teams messages
 
 Use the Microsoft Search API in Microsoft Graph to search for information in Teams messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the signed-in user's Teams messages.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-A search query can include [filters](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) that end users enter in the **Search** text box in Outlook.
-
 Teams Message search also looks for attachments. The [supported file types](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for message attachment search are the same as those for SharePoint Online search.
 
-## Example 1: Search chat message
+## Example 1: Search Teams chat message
 
-The following example queries Teams chat message in the signed-in user's Teams chat storage that contain the string "contoso" in any part of the chat message (the sender name, subject, message body, or any attachments). The query returns the first 25 results. The search results are ordered by **DateTime** descending.
+The following example queries Teams chat message in the signed-in user's Teams chat storage that contain the string "test" in any part of the chat message (the sender name,  message body, or any attachments). The query returns the first 25 results. The search results are ordered by **DateTime** descending.
 
 ### Request
 
@@ -110,7 +108,7 @@ Content-Type: application/json
         "message"
       ],
       "query": {
-        "queryString": "contoso"
+        "queryString": "test"
       },
       "from": 0,
       "size": 15,
