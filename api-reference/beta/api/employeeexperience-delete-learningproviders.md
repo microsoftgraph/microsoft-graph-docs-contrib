@@ -55,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE /employeeExperience/learningProviders/{id} 
+DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70 
 ```
 
 
