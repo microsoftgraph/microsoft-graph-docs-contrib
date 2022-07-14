@@ -15280,7 +15280,15 @@ items:
             - name: Upgrade app installed in chat
               href: api/chat-teamsappinstallation-upgrade.md
             - name: Remove app from chat
-              href: api/chat-delete-installedapps.md 
+              href: api/chat-delete-installedapps.md
+        - name: App settings
+          items:
+          - name: App settings
+            href: resources/teamsappsettings.md
+          - name: Get
+            href: api/teamsappsettings-get.md
+          - name: Update
+            href: api/teamsappsettings-update.md      
         - name: Tab
           href: resources/teamstab.md
           items:
