@@ -44,7 +44,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryR
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the query. Required.|
-|contentQuery|String|The KQL query for the review set. [Learn more](/microsoft-365/compliance/review-set-search)|
+|contentQuery|String|The KQL query for the review set. For details, see [Query and filter content in a review set](/microsoft-365/compliance/review-set-search).|
 
 
 
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
