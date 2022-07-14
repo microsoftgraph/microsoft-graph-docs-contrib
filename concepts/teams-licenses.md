@@ -40,8 +40,8 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | Message sender | 800 messages per user per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
-| [Get messages across all chats for user](/graph/api/chats-getallmessages) | Named user | 1600 messages per user per month per app | $0.00075 per message | The named user is the user identified in the GET request URL. Minimum charge of 1 message per API request. Seeded capacity is shared with channel export. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message |  Charge of 1 message per API request.Seeded capacity is shared with chat export. |
+| [Get messages across all chats for user](/graph/api/chats-getallmessages) | Named user | 1600 messages per user per month per app | $0.00075 per message | The named user is the user identified in the GET request URL. Charge of 1 message per API request. Seeded capacity is shared with channel export. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message |  Charge of 1 message per API request. Seeded capacity is shared with chat export. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
 
 ## `model=B` requirements
@@ -98,7 +98,7 @@ A billing model must be send in the query parameter, for example if passing `mod
 
 | Model | Sample functions | License required | Azure subscription required | 
 |:-----------|:-------------|:-------------|:-----------|
-| `model=A` | Security and Compliance | One of the following Microsoft 365 E5 eligible licenses: Microsoft 365 E5/A5/G5, Microsoft 365 E5 Security, Microsoft 365 E5 Compliance, Microsoft 365 E5 Information Protection and Governance, or Microsoft 365 E5 Information Protection & Data Loss Prevention | Yes |
+| `model=A` | Security and Compliance | Yes (Microsoft 365 E5 eligible license) | Yes |
 | `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | No | Yes | 
 | `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | No | No (seeded capacity can be exceeded) | 
 
