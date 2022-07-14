@@ -1234,26 +1234,27 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Learning Provider permissions
+## Learning provider permissions
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _LearningProvider.Read_ |    Read Learning Provider | Allows the app to read data for learning provider in organization's directory. | Yes | No
-| _LearningProvider.ReadWrite_  |    Manage Learning Provider | Allows the app to create/update/read/delete data for learning provider in organization's directory. | Yes | No
+| _LearningProvider.Read_ |    Read learning provider | Allows the app to read data for the learning provider in the organization's directory, on behalf of the signed-in user. | Yes | No |
+| _LearningProvider.ReadWrite_  |    Manage learning provider | Allows the app to create, update, read, and delete data for the learning provider in the organization's directory, on behalf of the signed-in user. | Yes | No |
 
 
-## Learning Provider permissions
+## Learning content permissions
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _LearningContent.Read.All_ |    Read Learning content | Allows the app to read data for the learning content in organization's directory. | Yes | No
-| _LearningContent.ReadWrite.All_  |    Manage Learning content | Allows the app to upsert/read/delete data for learning content in organization's directory. | Yes | No
+| _LearningContent.Read.All_ |    Read learning content | Allows the app to read all learning content in the organization's directory, without a signed-in user. | Yes | No |
+| _LearningContent.ReadWrite.All_  |    Manage learning content | Allows the app to manage all learning content in the organization's directory, without a signed-in user. | Yes | No |
 
 ---
+
 ## Mail permissions
 
 #### Delegated permissions

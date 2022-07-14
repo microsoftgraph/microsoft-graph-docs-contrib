@@ -1,6 +1,6 @@
 ---
 title: "Delete learningProvider"
-description: "Deletes a learningProvider object."
+description: "Delete a learningProvider object."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-experience"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [learningProvider](../resources/learningprovider.md) object.
+Delete a [learningProvider](../resources/learningprovider.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,8 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|**provider.readwrite**|
-|Delegated (personal Microsoft account)|**Not Supported**|
-|Application|**Not Supported**|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -60,8 +60,7 @@ DELETE /employeeExperience/learningProviders/{id}
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

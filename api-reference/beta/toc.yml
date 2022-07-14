@@ -6,7 +6,6 @@ items:
     items:
     - name: Overview
       href: /graph/auth/index?context=graph/api/beta
-      
       displayName: authentication, authorization, authenticate, authorize
     - name: Basics
       href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -11083,15 +11082,17 @@ items:
         items:
         - name: Get
           href: api/educationsynchronizationerrors-get.md
-   - name: EmployeeExperience
-      displayName: Employee Experience
+    - name: Employee experience
+      displayName: Employee experience
       items:
       - name: Overview
         href: resources/api-overview.md
-      - name: Learning Provider
+      - name: Learning provider
         href: resources/learningprovider.md
         items:
-        - name: Create Learning Provider
+        - name: List
+          href: api/employeeexperience-list-learningproviders.md
+        - name: Create
           href: api/employeeexperience-post-learningproviders.md
         - name: Get
           href: api/learningprovider-get.md
@@ -11099,19 +11100,17 @@ items:
           href: api/learningprovider-update.md
         - name: Delete
           href: api/employeeexperience-delete-learningproviders.md
-        - name: List learning provider
-          href: api/employeeexperience-list-learningproviders.md
-      - name: Learning Content
+      - name: Learning content
         href: resources/learningcontent.md
         items:
+        - name: List
+          href: api/learningprovider-list-learningcontents.md
         - name: Create/Update Learning Content
           href: api/learningprovider-update.md
         - name: Get
           href: api/learningprovider-list-learningcontents.md
         - name: Delete
           href: api/learningprovider-delete-learningcontents.md
-        - name: List learning Content for Provider
-          href: api/learningprovider-list-learningcontents.md
     - name: Extensions
       items:
       - name: Overview

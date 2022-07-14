@@ -20,8 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|**provider.read**|
-|Delegated (personal Microsoft account)|**Not Supported**|
-|Application|**Not Supported**|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -63,7 +63,7 @@ GET /employeeExperience/learningProviders/{id}
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -72,9 +72,10 @@ The following is an example of the response
 }
 -->
 ``` http
-Returns 200 OK
+HTTP/1.1 200 OK
+Content-type: application/json
 
-{    
+{
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders/$entity",
     "id": "13727311-e7bb-470d-8b20-6a23d9030d70",
     "displayName": "LinkedInHub",
@@ -85,6 +86,5 @@ Returns 200 OK
     "isEnabled": true,
     "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
 }
-
 ```
 
