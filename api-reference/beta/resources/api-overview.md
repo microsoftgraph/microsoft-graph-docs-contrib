@@ -48,7 +48,7 @@ To enable these scenarios, the below Viva Learning APIs are supported -
 
 ## Scenarios supported  
 
-Picture1.png
+api-details.png
 Graphical user interface, text, application, chat or text message
 
 Description automatically generated
@@ -57,7 +57,7 @@ Description automatically generated
 
 The below diagram helps explain how the Viva Learning integrations through Out of Box Integrations (Pull model) and through Graph APIs (Push model) work -  
 
-Picture2.png
+learning-source-integrations.png
 
 Once the content metadata and learner assignment & completion records are synchronized into Viva Learning, they appear on Viva Learning (Content appears on Home page under Browse courses – Providers section; Assignments and Completed courses appear on My Learning page under Assigned to you & Completed sections respectively.
 
