@@ -9377,8 +9377,7 @@ items:
               href: api/intune-mam-windowsinformationprotection-assign.md
           - name: Windows information protection app
             href: resources/intune-mam-windowsinformationprotectionapp.md
-          - name: Windows information protection app C
-          summary
+          - name: Windows information protection app summary
             href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
             items:
             - name: List

@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http 
-GET /employeeExperience/learningProviders/{registrationId}/learningContents(externalId='{externalId}') 
+GET /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='LP4471') 
 ```
 
 ### Response

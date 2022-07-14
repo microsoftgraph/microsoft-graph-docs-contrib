@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**provider.readwrite**|
+|Delegated (work or school account)|**LearnnigProvider.ReadWrite**|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -56,7 +56,7 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [learningProvider](../resources/learningprovider.md) object in the response body.
+If successful, this method returns a `204 No Content` response code in the response body.
 
 ## Examples
 
@@ -68,7 +68,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH /employeeExperience/learningProviders/{id} 
+PATCH /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70
 Content-Type: application/json
 
 {
