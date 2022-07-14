@@ -22,8 +22,6 @@ The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64
 |:---|:---|:---|
 |[Get profilePhoto](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Read the properties and relationships of a profile photo object.|
 |[Update profilePhoto](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo object.|
-|[Get profilePhoto of team](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Read the properties of a profile photo of team.|
-|[Update profilePhoto of team](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo of team.|
 
 > [!NOTE]
 >
