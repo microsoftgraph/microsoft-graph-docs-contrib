@@ -45,7 +45,7 @@ PATCH /deviceManagement/virtualEndpoint/externalPartnerSettings/{cloudPcExternal
 
 |Property|Type|Description|
 |:---|:---|:---|
-|enableConnection|Boolean|Enable or disable external partner connection. If true, external partner api will accept incoming calls from external partner. Required.|
+|enableConnection|Boolean|Enable or disable the connection to an external partner. If `true`, an external partner API will accept incoming calls from external partners. Required.|
 
 
 
@@ -65,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPartnerSettings/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPartnerSettings/b3548526-e615-3785-3118-be70b3968ec5
 Content-Type: application/json
 
 {
