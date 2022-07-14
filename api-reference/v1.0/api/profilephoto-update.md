@@ -23,13 +23,13 @@ You can use either PATCH or PUT for this operation in version 1.0.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### To update the profile photo of the signed-in user
+### To update the profile photo of a contact
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   User.ReadWrite, User.ReadWrite.All           |
+|Delegated (work or school account)      |   Contacts.ReadWrite           |
 |Delegated (personal Microsoft account)      |   Not supported.            |
-|Application      |    User.ReadWrite.All           |
+|Application      |    Contacts.ReadWrite           |
 
 ### To update the profile photo of a group
 
@@ -39,14 +39,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)      |   Not supported.            |
 |Application      |    Group.ReadWrite.All           |
 
-### To update the profile photo of a contact
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   Contacts.ReadWrite           |
-|Delegated (personal Microsoft account)      |   Not supported.            |
-|Application      |    Contacts.ReadWrite           |
-
 ### To update the profile photo of a team
 
 | Permission Type | Permissions (from least to most privileged)  |
@@ -54,6 +46,14 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)        | TeamSettingsReadWriteAll |
 | Delegated (personal Microsoft account)    | Not supported.     |
 | Application                               | TeamSettingsReadWriteAll |
+
+### To update the profile photo of the signed-in user
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account)      |   User.ReadWrite, User.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   Not supported.            |
+|Application      |    User.ReadWrite.All           |
 
 > [!NOTE]
 >
@@ -96,6 +96,8 @@ In the request body, include the binary data of the photo in the request body.
 ## Response
 
 If successful, this method returns a `200 OK` response code.
+
+### To update the profile photo of a team
 If successful, this method returns a `204 NoContent` response code for updating a photo for the team.
 
 ## Example
@@ -137,7 +139,9 @@ Binary data for the image
 ### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response"
 } -->

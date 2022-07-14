@@ -22,13 +22,13 @@ Only use PUT for this operation.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### To update the profile photo of the signed-in user
+### To update the profile photo of a contact
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   User.ReadWrite, User.ReadWrite.All           |
+|Delegated (work or school account)      |   Contacts.ReadWrite           |
 |Delegated (personal Microsoft account)      |   Not supported.            |
-|Application      |    User.ReadWrite.All           |
+|Application      |    Contacts.ReadWrite           |
 
 ### To update the profile photo of a group
 
@@ -37,14 +37,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)      |   Group.ReadWrite.All           |
 |Delegated (personal Microsoft account)      |   Not supported.            |
 |Application      |    Group.ReadWrite.All           |
-
-### To update the profile photo of a contact
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   Contacts.ReadWrite           |
-|Delegated (personal Microsoft account)      |   Not supported.            |
-|Application      |    Contacts.ReadWrite           |
 
 ### To update the profile photo of a team
 
@@ -56,7 +48,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
+### To update the profile photo of the signed-in user
 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account)      |   User.ReadWrite, User.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   Not supported.            |
+|Application      |    User.ReadWrite.All           |
 
 > [!NOTE]
 > 1. To update the photo of any user in the organization, your app must have the *User.ReadWrite.All* application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service). Updating the photo of the signed-in user only requires *User.ReadWrite* permission.

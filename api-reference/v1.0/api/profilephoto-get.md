@@ -24,13 +24,13 @@ For example, if the user uploads a photo that is 504x504 pixels, all but the 648
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### To retrieve the profile photo of a user
+### To retrieve the profile photo of a contact
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
-|Delegated (personal Microsoft account)      |   User.Read, User.ReadWrite            |
-|Application      |    User.Read.All, User.ReadWrite.All           |
+|Delegated (work or school account)      |   Contacts.Read, Contacts.ReadWrite           |
+|Delegated (personal Microsoft account)      |   Contacts.Read, Contacts.ReadWrite            |
+|Application      |    Contacts.Read, Contacts.ReadWrite           |
 
 ### To retrieve the profile photo of a group
 
@@ -40,14 +40,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)      |   Not supported.            |
 |Application      |    Group.Read.All, Group.ReadWrite.All           |
 
-### To retrieve the profile photo of a contact
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   Contacts.Read, Contacts.ReadWrite           |
-|Delegated (personal Microsoft account)      |   Contacts.Read, Contacts.ReadWrite            |
-|Application      |    Contacts.Read, Contacts.ReadWrite           |
-
 ### To retrieve the profile photo of a team
 
 | Permission Type | Permissions (from least to most privileged)                   |
@@ -55,6 +47,14 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)        | TeamReadBasicAll, TeamSettingsReadAll, TeamSettingsReadWriteAll |
 | Delegated (personal Microsoft account)    | Not supported.                      |
 | Application                               | TeamReadBasicAll, TeamSettingsReadAll, TeamSettingsReadWriteAll |
+
+### To retrieve the profile photo of a user
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   User.Read, User.ReadWrite            |
+|Application      |    User.Read.All, User.ReadWrite.All           |
 
 > [!NOTE]
 > 
