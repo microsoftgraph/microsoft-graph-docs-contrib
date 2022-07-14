@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryCustodian: updateIndex"
-description: "Triggers a indexOperation to make a custodian and associated sources searchable."
+description: "Trigger an indexOperation to make a custodian and associated sources searchable."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Triggers a [indexOperation](../resources/security-ediscoveryIndexOperation.md)
+Trigger an [indexOperation](../resources/security-ediscoveryIndexOperation.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

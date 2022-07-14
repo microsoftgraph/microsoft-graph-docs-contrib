@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryNoncustodialDataSource: release"
-description: "Releases the non-custodial data source from the case."
+description: "Release the non-custodial data source from the case."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Releases the non-custodial data source from the case.
+Release the non-custodial data source from the case.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

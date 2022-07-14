@@ -1,6 +1,6 @@
 ---
 title: "Delete ediscoveryReviewSetQuery"
-description: "Deletes an ediscoveryReviewSetQuery object."
+description: "Delete an ediscoveryReviewSetQuery object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.
+Delete an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
