@@ -80,13 +80,13 @@ registrationId – Identifier assigned by Viva Learning on Provider registration
 
 Refer to these articles to learn more about Microsoft Graph:  
 
-1. Microsoft Graph Fundamentals - Learn <https://docs.microsoft.com/en-us/learn/paths/m365-msgraph-fundamentals/> 
+1. Microsoft Graph Fundamentals - Learn <https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/> 
 
-2. Calling the Microsoft Graph API - Microsoft Graph <https://docs.microsoft.com/en-us/graph/call-api>
+2. Calling the Microsoft Graph API - Microsoft Graph <https://docs.microsoft.com/graph/call-api>
 
-3. Authentication and authorization basics for Microsoft Graph - Microsoft Graph <https://docs.microsoft.com/en-us/graph/auth/auth-concepts >
+3. Authentication and authorization basics for Microsoft Graph - Microsoft Graph <https://docs.microsoft.com/graph/auth/auth-concepts >
 
-4. Other resources are also available at Microsoft Graph documentation]  <https://docs.microsoft.com/en-us/graph/>
+4. Other resources are also available at Microsoft Graph documentation]  <https://docs.microsoft.com/graph/>
 
 ## Scenarios supported
 
@@ -153,7 +153,8 @@ Url formation required: https://login.microsoftonline.com/common/oauth2/v2.0/aut
  
 For ex: 
 https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=bca1a7df-eaa5-4d78-b0fb-0a43ec711937&response_type=code&scope=https://graph.microsoft.com/.default 
-REFER FAQ for any failure. 
+
+Refer FAQ for any failure. 
   
 Accept should trigger the API  
 
@@ -185,20 +186,25 @@ ii.	Use app-only token and registrationId created in step C ii.  for ingesting t
 
 FAQ: 
 1.	Learning Content SLA: 24 hours 
-The learning content ingested would be available in Viva Learning via. search only after 24 hours of SLA.
+    The learning content ingested would be available in Viva Learning via. search only after 24 hours of SLA.
 
-Due to the current caching optimization at Viva Learning, it might take (only in few scenarios) up to 24 hours for the content to be available under Providers tab carousel. Though the content would be available for search after given SLA (24  hours currently).
+    Due to the current caching optimization at Viva Learning, it might take (only in few scenarios) up to 24 hours for the content to be available under Providers tab     carousel. Though the content would be available for search after given SLA (24  hours currently).
 
 2.	Throttle limit of Graph API 
 SLA mentioned in point 3 is subjected to Provider’s compliance with the throttle limit.
 Here are the throttle limits for Content sync Graph APIs. 
-- 1 request per second. 
-- Block limit : 500 requests in 10 mins
+    - 1 request per second. 
+    - Block limit : 500 requests in 10 mins
+
 3.	 Deleting Provider API will disable the provider and will stop rendering contents from that provider on the Viva learning App. The content for the disabled provider will be deleted within 30 days.
+
 4.	When Registration API is called there is a unique registration id for the tenant. If Provider needs to register 5 different tenants, then they need to call the registration API 5 times.
 
- The Get APIs are for validation of the ingested data by the provider and not meant for reporting needs of the tenant.6. Total number of Records for Content Ingestion capacity is 500 K based on current scale.
+5. The Get APIs are for validation of the ingested data by the provider and not meant for reporting needs of the tenant.
+
+6. Total number of Records for Content Ingestion capacity is 500K based on current scale.
+
 7. We support one Provider registration per tenant.
+
 8. The Supported Languages –Locale tags for the Content details within Viva Learning is as mentioned below.
 az-Latn-AZ,bg-BG,bn-IN,ca-ES,cs-CZ,da-DK,de-DE,el-GR,en-GB,es-ES,es-MX,et-EE,eu-ES,fi-FI,fil-PH,fr-CA,fr-FR,gl-ES,gu-IN,hi-IN,hr-HR,hu-HU,id-ID,is-IS,it-IT,ja-JP,ka-GE,kk-KZ,kn-IN,ko-KR,lt-LT,lv-LV,mk-MK,ml-IN,mr-IN,nb-NO,nl-NL,nn-NO,pl-PL,pt-BR,pt-PT,ro-RO,ru-RU,sk-SK,sl-SI,sq-AL,sr-Latn-RS,sv-SE,ta-IN,te-IN,th-TH,tr-TR,uk-UA,vi-VN,zh-CN,zh-TW
-
