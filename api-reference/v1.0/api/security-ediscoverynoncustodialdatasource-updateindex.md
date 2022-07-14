@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 
 
-Triggers an [indexOperation](../resources/security-ediscoveryIndexOperation.md) to make a non-custodial data source and its associated data source searchable.
+Trigger an [indexOperation](../resources/security-ediscoveryIndexOperation.md) to make a non-custodial data source and its associated data source searchable.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,7 +61,7 @@ POST https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-41
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
