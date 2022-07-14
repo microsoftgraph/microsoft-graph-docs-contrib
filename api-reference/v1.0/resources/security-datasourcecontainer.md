@@ -1,6 +1,6 @@
 ---
 title: "dataSourceContainer resource type"
-description: "Base class for Custodians and Non-Custodial data sources."
+description: "Base class for custodians and non-custodial data sources."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,8 +13,10 @@ Namespace: microsoft.graph.security
 
 
 
-Base class for [eDiscoveryCustodian](../resources/security-ediscoverycustodian.md) and [eDiscoveryNonCutodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md)
+Base class for the [eDiscoveryCustodian](../resources/security-ediscoverycustodian.md) and [eDiscoveryNonCutodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) resources.
+
 This is an abstract type.
+
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
@@ -23,7 +25,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|holdStatus|String|The hold status of the dataSourceContainer.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+|holdStatus|String|The hold status of the dataSourceContainer. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 |createdDateTime|DateTimeOffset|Created date and time of the dataSourceContainer entity.|
 |displayName|String|Display name of the dataSourceContainer entity.|
 |id|String|Unique identifier of the dataSourceContainer. Inherited from [entity](../resources/entity.md)|
