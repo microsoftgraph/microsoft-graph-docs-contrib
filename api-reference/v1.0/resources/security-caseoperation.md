@@ -62,8 +62,8 @@ An abstract entity that represents a long-running eDiscovery process. It contain
 | submissionFailed | Submission of the operation failed. |
 | running | The operation is currently running. |
 | succeeded | The operation was successfully completed without any errors. |
-| partiallySucceeded | The operation completed, but there were errors - See [resultInfo](../resources/resultinfo.md) for error details. |
-| failed | The operation failed - See result info for error details. |
+| partiallySucceeded | The operation completed, but there were errors. For error details, see [resultInfo](../resources/resultinfo.md). |
+| failed | The operation failed. For error details, see [resultInfo](../resources/resultinfo.md). |
 
 ## Relationships
 None.
