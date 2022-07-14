@@ -75,7 +75,7 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-c
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

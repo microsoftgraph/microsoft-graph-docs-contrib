@@ -60,7 +60,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

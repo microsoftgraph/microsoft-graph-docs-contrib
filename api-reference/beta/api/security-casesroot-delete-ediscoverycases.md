@@ -59,7 +59,7 @@ DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/22aa2acd-
 ```
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

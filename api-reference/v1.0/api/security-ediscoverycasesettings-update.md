@@ -84,7 +84,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

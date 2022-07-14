@@ -60,7 +60,7 @@ DELETE https://graph.microsoft.com/beta/security/cases/ediscoverycases/58399dff-
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
