@@ -119,6 +119,174 @@
             "CreatedDateTime": "2021-07-05T13:19:50.7960607Z",
             "WorkloadArea": "Cloud communications",
             "SubArea": "Call records"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "d7ffbbf1-db2a-46eb-ad37-fe999b7f1843",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "audioCodec",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **audioCodec** enumeration type.",
+                    "Target": "audioCodec"
+                },
+                {
+                    "Id": "d7ffbbf1-db2a-46eb-ad37-fe999b7f1843",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "networkTransportProtocol",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **networkTransportProtocol** enumeration type.",
+                    "Target": "networkTransportProtocol"
+                },
+                {
+                    "Id": "d7ffbbf1-db2a-46eb-ad37-fe999b7f1843",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "videoCodec",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **videoCodec** enumeration type.",
+                    "Target": "videoCodec"
+                },
+                {
+                    "Id": "d7ffbbf1-db2a-46eb-ad37-fe999b7f1843",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "networkTransportProtocol",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **networkTransportProtocol** property to the [networkInfo](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-networkInfo?view=graph-rest-beta) resource.",
+                    "Target": "networkInfo"
+                },
+                {
+                    "Id": "d7ffbbf1-db2a-46eb-ad37-fe999b7f1843",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "traceRouteHops",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **traceRouteHops** property to the [networkInfo](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-networkInfo?view=graph-rest-beta) resource.",
+                    "Target": "networkInfo"
+                },
+                {
+                    "Id": "d7ffbbf1-db2a-46eb-ad37-fe999b7f1843",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "traceRouteHop",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [traceRouteHop](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-traceRouteHop?view=graph-rest-beta) resource type.",
+                    "Target": "traceRouteHop"
+                }
+            ],
+            "Id": "d7ffbbf1-db2a-46eb-ad37-fe999b7f1843",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-06-06T11:36:15.7516882Z",
+            "WorkloadArea": "Cloud communications",
+            "SubArea": "Call records"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "c551ffcb-cba4-456a-9b16-e0ea541417aa",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "audioCodec",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **audioCodec** property to the [mediaStream](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-mediaStream?view=graph-rest-beta) resource.",
+                    "Target": "mediaStream"
+                },
+                {
+                    "Id": "c551ffcb-cba4-456a-9b16-e0ea541417aa",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "videoCodec",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **videoCodec** property to the [mediaStream](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-mediaStream?view=graph-rest-beta) resource.",
+                    "Target": "mediaStream"
+                }
+            ],
+            "Id": "c551ffcb-cba4-456a-9b16-e0ea541417aa",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-06-06T11:36:15.7523373Z",
+            "WorkloadArea": "Cloud communications",
+            "SubArea": "Call records"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "9fdef120-3a00-4631-bcc7-545b598437ef",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "audioCodec",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **audioCodec** enumeration type.",
+                    "Target": "audioCodec"
+                },
+                {
+                    "Id": "9fdef120-3a00-4631-bcc7-545b598437ef",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "networkTransportProtocol",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **networkTransportProtocol** enumeration type.",
+                    "Target": "networkTransportProtocol"
+                },
+                {
+                    "Id": "9fdef120-3a00-4631-bcc7-545b598437ef",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "videoCodec",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **videoCodec** enumeration type.",
+                    "Target": "videoCodec"
+                },
+                {
+                    "Id": "9fdef120-3a00-4631-bcc7-545b598437ef",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "networkTransportProtocol",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **networkTransportProtocol** property to the [networkInfo](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-networkInfo?view=graph-rest-1.0) resource.",
+                    "Target": "networkInfo"
+                },
+                {
+                    "Id": "9fdef120-3a00-4631-bcc7-545b598437ef",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "traceRouteHops",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **traceRouteHops** property to the [networkInfo](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-networkInfo?view=graph-rest-1.0) resource.",
+                    "Target": "networkInfo"
+                },
+                {
+                    "Id": "9fdef120-3a00-4631-bcc7-545b598437ef",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "traceRouteHop",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [traceRouteHop](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-traceRouteHop?view=graph-rest-1.0) resource type.",
+                    "Target": "traceRouteHop"
+                }
+            ],
+            "Id": "9fdef120-3a00-4631-bcc7-545b598437ef",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2022-06-06T11:36:15.7523426Z",
+            "WorkloadArea": "Cloud communications",
+            "SubArea": "Call records"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "9ebeadc5-42d4-4202-b0f9-2a4f607ee3fc",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "audioCodec",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **audioCodec** property to the [mediaStream](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-mediaStream?view=graph-rest-1.0) resource.",
+                    "Target": "mediaStream"
+                },
+                {
+                    "Id": "9ebeadc5-42d4-4202-b0f9-2a4f607ee3fc",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "videoCodec",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **videoCodec** property to the [mediaStream](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-mediaStream?view=graph-rest-1.0) resource.",
+                    "Target": "mediaStream"
+                }
+            ],
+            "Id": "9ebeadc5-42d4-4202-b0f9-2a4f607ee3fc",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2022-06-06T11:36:15.7523446Z",
+            "WorkloadArea": "Cloud communications",
+            "SubArea": "Call records"
         }
     ]
 }

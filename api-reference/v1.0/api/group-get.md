@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a group object.
 
-This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.
+This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and are not returned in the `$select` query.
 
 > **Note:** This request might have replication delays for groups that were recently created, updated, or deleted.
 
@@ -42,6 +42,14 @@ GET /groups/{id}
 You can use `$select` to get specific group properties, including those that are not returned by default.
 
 For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
+
+### Retrieve extensions and associated data
+
+| Extension type       | Comments                                                                       |
+|----------------------|--------------------------------------------------------------------------------|
+| Schema extensions    | Returned only with `$select`.                                                  |
+| Open extensions      | Returned through the [Get open extension](opentypeextension-get.md) operation. |
+| Directory extensions | Returned by default.                                                           |
 
 ## Request headers
 

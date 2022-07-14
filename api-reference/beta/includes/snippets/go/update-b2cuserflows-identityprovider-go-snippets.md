@@ -12,8 +12,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}",
 }
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-identityProviderId := "identityProvider-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).IdentityProvidersById(&identityProviderId).Post(requestBody)
+result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).IdentityProviders().$ref().Post(requestBody)
 
 
 ```

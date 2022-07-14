@@ -33,8 +33,18 @@ activityDomain := "work"
 timeConstraint.SetActivityDomain(&activityDomain)
 timeConstraint.SetTimeSlots( []TimeSlot {
 	msgraphsdk.NewTimeSlot(),
-	SetAdditionalData(map[string]interface{}{
-	}
+start := msgraphsdk.NewDateTimeTimeZone()
+	SetStart(start)
+dateTime := "2019-04-16T09:00:00"
+	start.SetDateTime(&dateTime)
+timeZone := "Pacific Standard Time"
+	start.SetTimeZone(&timeZone)
+end := msgraphsdk.NewDateTimeTimeZone()
+	SetEnd(end)
+dateTime := "2019-04-18T17:00:00"
+	end.SetDateTime(&dateTime)
+timeZone := "Pacific Standard Time"
+	end.SetTimeZone(&timeZone)
 }
 isOrganizerOptional := "false"
 requestBody.SetIsOrganizerOptional(&isOrganizerOptional)

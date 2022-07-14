@@ -1,5 +1,5 @@
 ---
-title: "Remove accessReview reviewer"
+title: "Remove accessReview reviewer (deprecated)"
 description: "Remove an access review reviewer."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Remove accessReview reviewer
+# Remove accessReview reviewer (deprecated)
 
 Namespace: microsoft.graph
 

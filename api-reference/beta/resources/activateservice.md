@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# activateService resource type
+# activateService resource type (deprecated)
 
 Namespace: microsoft.graph
 

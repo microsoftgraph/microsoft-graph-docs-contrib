@@ -501,6 +501,42 @@
       "CreatedDateTime": "2022-02-16T06:29:33.9252671Z",
       "WorkloadArea": "Search",
       "SubArea": "Analytics"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "09b50a1f-9206-4fef-a7d8-efd6ec0dca1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "Size",
+          "ChangeType": "Change",
+          "Description": "Add maximum page size of 1000 results for a [search query](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta).",
+          "Target": "searchRequest"
+        }
+      ],
+      "Id": "09b50a1f-9206-4fef-a7d8-efd6ec0dca1f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-25T04:11:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fd371113-6fc5-4790-bd13-788fc7231400",
+          "ApiChange": "Property",
+          "ChangedApiName": "Size",
+          "ChangeType": "Change",
+          "Description": "Add maximum page size of 1000 results for a [search query](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-1.0).",
+          "Target": "searchRequest"
+        }
+      ],
+      "Id": "fd371113-6fc5-4790-bd13-788fc7231400",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-25T04:11:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }

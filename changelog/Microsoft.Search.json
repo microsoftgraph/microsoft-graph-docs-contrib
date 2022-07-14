@@ -821,7 +821,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "connectionQuota",
           "ChangeType": "Addition",
-          "Description": "Added the [connectionQuota](https://docs.microsoft.com/en-us/graph/api/resources/connectionQuota?view=graph-rest-beta) resource and a supported method.",
+          "Description": "Added the [connectionQuota](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta) resource and a supported method.",
           "Target": "connectionQuota"
         },
         {

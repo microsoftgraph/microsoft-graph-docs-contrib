@@ -1,7 +1,7 @@
 ---
 title: "List contactedReviewers"
-description: "Get the reviewers who received notifications for an access review instance."
-author: "isabelleatmsft"
+description: "Get the reviewers for an access review instance."
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List contactedReviewers
 Namespace: microsoft.graph
 
-Get the reviewers who received notifications for an [access review instance](../resources/accessreviewinstance.md). The reviewers are represented by an [accessReviewReviewer](../resources/accessreviewreviewer.md) object. A list of zero or more objects are returned, including all of their nested properties.
+Get the reviewers for an [access review instance](../resources/accessreviewinstance.md), irrespective of whether or not they have received a notification. The reviewers are represented by an [accessReviewReviewer](../resources/accessreviewreviewer.md) object. A list of zero or more objects are returned, including all of their nested properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
