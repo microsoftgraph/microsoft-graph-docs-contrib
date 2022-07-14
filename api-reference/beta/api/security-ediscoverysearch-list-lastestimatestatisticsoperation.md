@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryEstimateOperations"
+title: "List lastEstimateStatisticsOperation"
 description: "Get the last ediscoveryEstimateOperation object and its properties."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# List ediscoveryEstimateOperations
+# List lastEstimateStatisticsOperation
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the last  [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.
+Get the last [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.
 
 >**Note:** This method only lists the last operation; it does not return a history of all operations.
 

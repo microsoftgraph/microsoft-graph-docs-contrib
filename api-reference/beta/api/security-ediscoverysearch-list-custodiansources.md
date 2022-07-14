@@ -1,6 +1,6 @@
 ---
 title: "List custodianSources"
-description: "Get the dataSource resources from the custodianSources navigation property."
+description: "Get the list of custodial data sources associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the dataSource resources from the custodianSources navigation property.
+Get the list of custodial data sources associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

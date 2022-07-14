@@ -1,6 +1,6 @@
 ---
 title: "List noncustodialSources"
-description: "Get the ediscoveryNoncustodialDataSource resources from the noncustodialSources navigation property."
+description: "Get the list of noncustodialSources associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 
 
-Get the ediscoveryNoncustodialDataSource resources from the noncustodialSources navigation property.
+Get the list of noncustodialSources associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

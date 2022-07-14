@@ -1,6 +1,6 @@
 ---
-title: "Add dataSource"
-description: "Add custodianSources by posting to the custodianSources collection."
+title: "Add custodian sources"
+description: "Create a new custodian source associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -8,12 +8,12 @@ doc_type: "apiPageType"
 ---
 
 
-# Add dataSource
+# Add custodian sources
 Namespace: microsoft.graph.security
 
 
 
-Add custodianSources by posting to the custodianSources collection.
+Create a new custodian source associated with an [eDiscovery search](../resources/security-ediscoversearch.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

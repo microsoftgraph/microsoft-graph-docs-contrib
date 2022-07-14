@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryEstimateOperations"
+title: "List lastEstimateStatisticsOperation"
 description: "Get the last ediscoveryEstimateOperation object and its properties."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# List ediscoveryEstimateOperations
+# List lastEstimateStatisticsOperation
 Namespace: microsoft.graph.security
 
 
