@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the photo for any user in the tenant, including the signed-in user or the specified group or contact. Because there
-is currently a limit of 8MB on the total size of each REST request, the size of the photo you can add is limited to under 8MB.
+Update the photo for the specified contact, group, team, or user in a tenant. The size of the photo you can update to must be under 8MB.
 
 Only use PUT for this operation.
 

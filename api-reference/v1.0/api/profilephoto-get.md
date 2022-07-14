@@ -210,7 +210,7 @@ Content-type: application/json
     "height": 1
 }
 ```
-### Example 4: Get the photo metadata
+### Example 4: Get the metadata of the team photo
 
 #### Request
 
