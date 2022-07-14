@@ -1,6 +1,6 @@
 ---
 title: "learningContent resource type"
-description: "**TODO: Add Description**"
+description: "An entity that holds learning content details"
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-experience"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+An entity that holds learning content details
 
 ## Methods
 |Method|Return type|Description|
@@ -40,7 +40,7 @@ Namespace: microsoft.graph
 |isSearchable|Boolean|Indicates whether the learning content is searchable or not. The default value is `true`. Optional.|
 |languageTag|String|The language of the learning content, for example, `en-us` or `fr-fr`. Required.|
 |lastModifiedDateTime|DateTimeOffset|The date when the learning content was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
-|numberOfPages|Int32|The number of pages of the learning content, for example, Number of pages. Optional.|
+|numberOfPages|Int32|The number of pages of the learning content, for example, 9. Optional.|
 |skillTags|String collection|The skills tags associated with the learning content. Optional.|
 |sourceName|String|The source name of the learning content, such as LinkedIn Learning or Coursera. Optional.|
 |thumbnailWebUrl|String|The URL of learning content thumbnail image. Optional.|
