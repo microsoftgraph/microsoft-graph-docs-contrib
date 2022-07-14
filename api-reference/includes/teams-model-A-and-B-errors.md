@@ -1,7 +1,6 @@
 ---
 author: MariaWissler
 ms.topic: include
-ms.date: 09/23/2021
 ---
 
 <!-- markdownlint-disable MD041-->
