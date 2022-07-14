@@ -159,28 +159,19 @@ Content-Length: 294
          "userCounts":[
             {
                "reportPeriod":7,
-               "edge":1269,
-               "edgeLegacy":114,
-               "ie":393
+               "edge":1269
             },
             {
                "reportPeriod":30,
-               "edge":1405,
-               "edgeLegacy":383,
-               "ie":708
+               "edge":1405
             },
             {
                "reportPeriod":90,
-               "edge":1482,
-               "edgeLegacy":687,
-               "ie":988
+               "edge":1482
             },
             {
                "reportPeriod":180,
-               "edge":1526,
-               "edgeLegacy":860,
-               "ie":1137
-            }
+               "edge":1526
          ]
       }
    ]

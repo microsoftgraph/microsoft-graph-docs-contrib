@@ -161,15 +161,11 @@ Content-Length: 205
          "userCounts":[
             {
                "reportDate":"2021-04-17",
-               "edge":413,
-               "edgeLegacy":11,
-               "ie":21
+               "edge":413
             },
             {
                "reportDate":"2021-04-16",
-               "edge":883,
-               "edgeLegacy":26,
-               "ie":124
+               "edge":883
             }
          ]
       }

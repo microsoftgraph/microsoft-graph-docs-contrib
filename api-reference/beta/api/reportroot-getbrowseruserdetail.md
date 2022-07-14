@@ -165,9 +165,7 @@ Content-Length: 304
          "details":[
             {
                "reportPeriod":7,
-               "edge":true,
-               "edgeLegacy":true,
-               "ie":false
+               "edge":true
             }
          ]
       }
