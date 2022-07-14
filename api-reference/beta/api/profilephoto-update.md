@@ -1,6 +1,6 @@
 ---
 title: "Update profilephoto"
-description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact."
+description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact or team."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "people"
@@ -46,6 +46,18 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)      |   Not supported.            |
 |Application      |    Contacts.ReadWrite           |
 
+### To update the profile photo of a team
+
+| Permission type                        | Permissions (from least to most privileged)                            |
+|:---------------------------------------|:-----------------------------------------------------------------------|
+| Delegated (work or school account)     | TeamSettingsReadWriteAll, GroupReadWriteAll**, DirectoryReadWriteAll** |
+| Delegated (personal Microsoft account) | Not supported.                                                         |
+| Application                            | Not supported.                                                         |
+
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
+
+
+
 > [!NOTE]
 > 1. To update the photo of any user in the organization, your app must have the *User.ReadWrite.All* application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service). Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
 > 2. There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
@@ -66,6 +78,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 To update the photo for a team:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PUT /groups/{teamId}/photo/$value
 ```
@@ -83,8 +96,12 @@ In the request body, include the binary data of the photo in the request body.
 
 If successful, this method returns a `200 OK` response code.
 
-## Example
-### Request
+### To update the profile photo of a team
+If successful, this method returns a `204 NoContent` response code for updating a photo for the team.
+
+## Examples
+### Example 1: Update the profile photo of the user
+#### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -113,15 +130,45 @@ Binary data for the image
 
 ---
 
-### Response
+#### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
+```
+
+### Example 2: Update the photo of a team
+
+#### Request
+The following is an example of a request to update a team photo.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_team_photo"
+}-->
+```http
+PUT https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
+Content-type: image/jpeg
+
+Binary data for the image
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -137,5 +184,3 @@ HTTP/1.1 200 OK
   ]
 }
 -->
-
-
