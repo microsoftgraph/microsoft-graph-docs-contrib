@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 
 
-List tags with the tag hierarchy shown.
+List [eDiscovery review tags](../resources/security-ediscoveryreviewtag.md) with the tag hierarchy shown.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/58399dff-ceb
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
