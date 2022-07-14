@@ -1,6 +1,6 @@
 ---
 title: Introduction to Microsoft Viva Learning
-ms.author: malabikaroy
+ms.author: maldas
 author: malabikaroy
 manager: absri
 ms.reviewer: shirana
@@ -26,11 +26,11 @@ description: Learn how to find resources for Microsoft Viva Learning.
 
 Viva Learning is a learning platform with the following capabilities -  
 
-Learning in the Flow of Work​ - Bring learning to the tools and platforms where users already spend their time​
+Learning in the Flow of Work - Bring learning to the tools and platforms where users already spend their time
 
-Simplified Learning​ - Aggregate learning content and tools from different sources in one central hub​
+Simplified Learning - Aggregate learning content and tools from different sources in one central hub
 
-Personalized and Relevant​ - Find the right content and develop new capabilities with personalized recommendations and search​
+Personalized and Relevant - Find the right content and develop new capabilities with personalized recommendations and search
 
 ## Viva Learning Graph APIs  
 
