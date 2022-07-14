@@ -1,21 +1,10 @@
 ---
-title: Introduction to Microsoft Viva Learning
-ms.author: malabikaroy
-author: malabikaroy
-manager: absri
-ms.reviewer: shirana
-ms.date: 11/02/2021
-audience: enabler, admin
-ms.topic: landing-page
-ms.custom: intro-hub-or-landing
-search.appverid: MET150
-ms.collection: 
-    - enabler-strategic
-    - m365initiative-viva-learning
-ms.service: viva
-ms.subservice: viva-learning
+title: "Introduction to Microsoft Viva Learning"
+description: "Learn how to find resources for Microsoft Viva Learning."
 ms.localizationpriority: medium
-description: Learn how to find resources for Microsoft Viva Learning.
+author: "malabikaroy"
+ms.prod: "employee-experience"
+doc_type: conceptualPageType
 ---
 
 # Introduction to Microsoft Viva Learning
@@ -24,9 +13,9 @@ Microsoft Viva Learning empowers employees to make learning a natural part of th
 
 ## Get started
 
-The resources in this section help you learn more about what Viva Learning is and how it can help your organization.
+The resources in this section help you to learn more about what Viva Learning is and how it can help your organization.
 
-| If you're looking for this information: | Go to this resource: |
+| If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Learn more about Viva Learning |[Microsoft Viva Learning overview](https://docs.microsoft.com/viva/learning/overview-viva-learning)|
 |Learn how to get Viva Learning|[Viva Learning product page](https://www.microsoft.com/microsoft-viva/learning?activetab=pivot:overviewtab&rtc=1)|
@@ -37,10 +26,10 @@ The resources in this section help you learn more about what Viva Learning is an
 
 The resources in this section help the admin in your organization to set up and configure Viva Learning in your Microsoft 365 environment.
 
-| If you're looking for this information: | Go to this resource: |
+| If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Learn how to set up and configure Viva Learning|[Set up Microsoft Viva Learning](https://docs.microsoft.com/viva/learning/set-up-viva-learning)|
 |Learn how to configure and manage content sources|[Manage learning content sources](https://docs.microsoft.com/viva/learning/enable-disable-search)|
 |Learn how to add your own learning content|[Add SharePoint as a content source](https://docs.microsoft.com/viva/learning/configure-sharepoint-content-source)|
 |Learn how to add content from other providers|[Add other providers as a content source](https://docs.microsoft.com/viva/learning/content-sources-365-admin-center)|
-|Learn how to add content using Graph APIs|[Onboard using Graph APIs](api-overview.md)|
+|Learn how to add content using the Viva Learning API in Microsoft Graph|[Onboard using the Viva Learning API in Microsoft Graph](api-overview.md)|

@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**Learningcontent.read.all**|
-|Delegated (personal Microsoft account)|**Not Supported**|
-|Application|**Learningcontent.read.all**|
+|Delegated (work or school account)|LearningContent.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|LearningContent.Read.All|
 
 ## HTTP request
 
@@ -59,21 +59,23 @@ The following is an example of a request.
 -->
 ``` http
 GET /employeeExperience/learningProviders/{registrationId}/learningContents(externalId='{externalId}') 
-}
 ```
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.vivaLearning.learningContent)"
+  "@odata.type": "microsoft.vivaLearning.learningContent",
+  "isCollection": true
 }
 -->
 ``` http
-Returns
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents/$entity",
     "externalId": "LP4471",

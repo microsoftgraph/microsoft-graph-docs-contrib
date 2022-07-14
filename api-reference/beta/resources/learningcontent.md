@@ -22,29 +22,29 @@ Namespace: microsoft.graph
 |[Create learningContent](../api/learningprovider-post-learningcontents.md)|[learningContent](../resources/learningcontent.md)|Create a new [learningContent](../resources/learningcontent.md) object.|
 |[Get learningContent](../api/learningcontent-get.md)|[learningContent](../resources/learningcontent.md)|Read the properties and relationships of a [learningContent](../resources/learningcontent.md) object.|
 |[Update learningContent](../api/learningcontent-update.md)|[learningContent](../resources/learningcontent.md)|Update the properties of a [learningContent](../resources/learningcontent.md) object.|
-|[Delete learningContent](../api/learningprovider-delete-learningcontents.md)|None|Deletes a [learningContent](../resources/learningcontent.md) object.|
+|[Delete learningContent](../api/learningprovider-delete-learningcontents.md)|None|Delete a [learningContent](../resources/learningcontent.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|additionalTags|String collection|**Keywords, topics, other tags associated with the Learning Content**|
-|contentWebUrl|String|**Content web url for the Learning Content**|
-|contributor|String|**Author/creator/contributor of the Learning Content**|
-|createdDateTime|DateTimeOffset|**Date the Learning Content was created in 'yyyy-MM-ddThh:mm:ssZ' in UTC**|
-|description|String|**Description/summary for Learning Content**|
-|duration|Duration|**Duration of the Learning Content in seconds**|
-|externalId|String|**External Content id for the Learning Content**|
-|format|String|**Format of the Learning Content.Ex: Course,Video,Book,Book Summary,Audiobook Summary**|
-|isActive|Boolean|**Indicates whether the content is active or not. Inactive content will not show up in UI. The default value is true**|
-|isPremium|Boolean|**Indicates whether the Learning content requires user to sign-in on the Learning provider platform or not. The default value is false**|
-|isSearchable|Boolean|**Indicates whether the Learning Content is searchable or not. The default value is true**|
-|languageTag|String|**Language of the Learning Content ex: 'en-us', 'fr-fr'**|
-|lastModifiedDateTime|DateTimeOffset|**Date the Learning Content was last modified in 'yyyy-MM-ddThh:mm:ssZ' in UTC**|
-|numberOfPages|Int32|**number of pages of the Learning Content. Ex: Number of pages**|
-|skillTags|String collection|**Skills tags associated with the Learning Content**|
-|sourceName|String|**Learning content source name like LinkedIn Learning, Coursera**|
-|thumbnailWebUrl|String|**URL of Learning Content thumbnail image**|
-|title|String|**Title of the Learning Content**|
+|additionalTags|String collection|Keywords, topics, and other tags associated with the learning content. Optional.|
+|contentWebUrl|String|The content web URL for the learning content. Required.|
+|contributor|String|The author, creator, or contributor of the learning content. Optional.|
+|createdDateTime|DateTimeOffset|The date when the learning content was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
+|description|String|The description or summary for the learning content. Optional.|
+|duration|Duration|The duration of the learning content in seconds. Optional.|
+|externalId|String|The external content ID for the learning content. Required.|
+|format|String|The format of the learning content. For example, `Course`, `Video`, `Book`, `Book Summary`, `Audiobook Summary`. Optional.|
+|isActive|Boolean|Indicates whether the content is active or not. Inactive content will not show up in the UI. The default value is `true`. Optional.|
+|isPremium|Boolean|Indicates whether the learning content requires the user to sign-in on the learning provider platform or not. The default value is `false`. Optional.|
+|isSearchable|Boolean|Indicates whether the learning content is searchable or not. The default value is `true`. Optional.|
+|languageTag|String|The language of the learning content, for example, `en-us` or `fr-fr`. Required.|
+|lastModifiedDateTime|DateTimeOffset|The date when the learning content was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
+|numberOfPages|Int32|The number of pages of the learning content, for example, Number of pages. Optional.|
+|skillTags|String collection|The skills tags associated with the learning content. Optional.|
+|sourceName|String|The source name of the learning content, such as LinkedIn Learning or Coursera. Optional.|
+|thumbnailWebUrl|String|The URL of learning content thumbnail image. Optional.|
+|title|String|The title of the learning content. Required.|
 
 ## Relationships
 None.
@@ -60,29 +60,29 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.learningContent",
-  "additionalTags": [
-    "String"
-  ],
-  "contentWebUrl": "String",
-  "contributor": "String",
-  "createdDateTime": "String (timestamp)",
-  "description": "String",
-  "duration": "String (duration)",
-  "externalId": "String",
-  "format": "String",
-  "isActive": "Boolean",
-  "isPremium": "Boolean",
-  "isSearchable": "Boolean",
-  "languageTag": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "numberOfPages": "Integer",
-  "skillTags": [
-    "String"
-  ],
-  "sourceName": "String",
-  "thumbnailWebUrl": "String",
-  "title": "String"
+    "@odata.type": "#microsoft.graph.learningContent",
+    "additionalTags": [
+        "String"
+    ],
+    "contentWebUrl": "String",
+    "contributor": "String",
+    "createdDateTime": "String (timestamp)",
+    "description": "String",
+    "duration": "String (duration)",
+    "externalId": "String",
+    "format": "String",
+    "isActive": "Boolean",
+    "isPremium": "Boolean",
+    "isSearchable": "Boolean",
+    "languageTag": "String",
+    "lastModifiedDateTime": "String (timestamp)",
+    "numberOfPages": "Integer",
+    "skillTags": [
+        "String"
+    ],
+    "sourceName": "String",
+    "thumbnailWebUrl": "String",
+    "title": "String"
 }
 ```
 

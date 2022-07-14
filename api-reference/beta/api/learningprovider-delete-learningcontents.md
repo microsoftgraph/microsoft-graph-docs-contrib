@@ -1,6 +1,6 @@
 ---
 title: "Delete learningContent"
-description: "Deletes a learningContent object."
+description: "Delete a learningContent object."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-experience"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [learningContent](../resources/learningcontent.md) object.
+Delete a [learningContent](../resources/learningcontent.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**Learningcontent.readwrite.all**|
-|Delegated (personal Microsoft account)|**Not Supported**|
-|Application|**Learningcontent.readwrite.all**|
+|Delegated (work or school account)|LearningContent.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|LearningContent.ReadWrite.All|
 
 ## HTTP request
 

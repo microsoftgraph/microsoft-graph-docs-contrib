@@ -20,8 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|**provider.readwrite**|
-|Delegated (personal Microsoft account)|**Not Supported**|
-|Application|**Not Supported**|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -45,14 +45,13 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**Display Name to be shown in Viva Learning** Required.|
-|isEnabled|Boolean|**State of the provider** Optional.|
-|loginWebUrl|String|**Authentication Url to access the courses for the provider** Optional.|
-|longLogoWebUrlForDarkTheme|String|**long logo url for the dark mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
-|longLogoWebUrlForLightTheme|String|**long logo url for the light mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
-|squareLogoWebUrlForDarkTheme|String|**square logo url for the dark mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
-|squareLogoWebUrlForLightTheme|String|**square logo url for the light mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
-
+|displayName|String|The display name that appears in Viva Learning. Required.|
+|isEnabled|Boolean|The state of the provider. Optional.|
+|loginWebUrl|String|Authentication URL to access the courses for the provider. Optional.|
+|longLogoWebUrlForDarkTheme|String|The long logo URL for the dark mode, which needs to be a publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
+|longLogoWebUrlForLightTheme|String|The long logo URL for the light mode, which needs to be a publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering  within the Viva Learning app. Required.|
+|squareLogoWebUrlForDarkTheme|String|The square logo URL for the dark mode, which needs to be a publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
+|squareLogoWebUrlForLightTheme|String|The square logo URL for the light mode, which needs to be a publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 
 
 ## Response
@@ -69,7 +68,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH /employeeExperience/learningProviders/{id} HTTP/1.1 Content-Type: application/json
+PATCH /employeeExperience/learningProviders/{id} 
+Content-Type: application/json
 
 {
     "displayName": "Microsoft",
@@ -80,12 +80,11 @@ PATCH /employeeExperience/learningProviders/{id} HTTP/1.1 Content-Type: applicat
     "isEnabled": false,
     "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
 }
-
 ```
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -93,8 +92,6 @@ The following is an example of the response
 }
 -->
 ``` http
-Returns 204 No Content
-
-
+HTTP/1.1 204 No Content
 ```
 

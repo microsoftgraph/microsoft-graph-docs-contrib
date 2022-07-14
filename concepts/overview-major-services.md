@@ -121,7 +121,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Viva Learning | Viva Learning | Microsoft Viva Learning empowers employees to make learning a natural part of the day by bringing learning into the flow of work within the tools and platforms they already use. Discover, share, and track learning across a variety of sources from a center of learning in Microsoft Teams..  | [Viva Learning overview](viva-learning-concept-overview.md) |
+| Viva Learning | Viva Learning | Microsoft Viva Learning empowers employees to make learning a natural part of the day by bringing learning into the flow of work within the tools and platforms they already use. Discover, share, and track learning across a variety of sources from a center of learning in Microsoft Teams.  | [Viva Learning overview](viva-learning-concept-overview.md) |
 
 ## Business applications
 
