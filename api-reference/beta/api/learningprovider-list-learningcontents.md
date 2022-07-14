@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET /employeeExperience/learningProviders/{registrationId}/learningContents(externalId='{externalId}') 
+GET /employeeExperience/learningProviders/{registrationId}/learningContents 
 ```
 
 
@@ -77,33 +77,61 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents/$entity",
-    "externalId": "LP4471",
-    "title":  "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
-    "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
-    "contentWebUrl": "https://docs.microsoft.com/en-us/learn/modules/manage-classes-resources-assessment-planning-beedle/",
-    "sourceName": "MSLibrary",
-    "thumbnailWebUrl": "https://syndetics.com/index.aspx?isbn=9783319672175/LC.GIF",
-    "languageTag": "en-us",
-    "numberOfPages": 10,
-    "duration": "PT20M",
-    "format": "Book",
-    "createdDateTime": "2018-01-01T00:00:00",
-    "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
-    "contributor": "Scott Simpson",
-    "additionalTags": [
-        "Create private or public teams",
-        "Add members to teams"
-    ],
-    "skillTags": [
-        "Create teams",
-        "Teams channels",
-        "Teams members"
-    ],
-    "isActive": true,
-    "isPremium": false,
-    "isSearchable": true
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents",
+    "value": [{
+        "externalId": "LP4771",
+        "title":  "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
+        "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
+        "contentWebUrl": "https://docs.microsoft.com/en-us/learn/modules/manage-classes-resources-assessment-planning-beedle/",
+        "sourceName": "MSLibrary",
+        "thumbnailWebUrl": "https://syndetics.com/index.aspx?isbn=9783319672175/LC.GIF",
+        "languageTag": "en-us",
+        "numberOfPages": 10,
+        "duration": "PDT1H",
+        "format": "Book",
+        "createdDateTime": "2018-01-01T00:00:00",
+        "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
+        "contributor": "Scott Simpson",
+        "additionalTags": [
+            "Create private or public teams",
+            "Add members to teams"
+        ],
+        "skillTags": [
+            "Create teams",
+            "Teams channels",
+            "Teams members"
+        ],
+        "isActive": true,
+        "isPremium": false,
+        "isSearchable": false
+    },
+    {
+        "externalId": "LP4772",
+        "title":  "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
+        "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
+        "contentWebUrl": "https://docs.microsoft.com/en-us/learn/modules/manage-classes-resources-assessment-planning-beedle/",
+        "sourceName": "MSLibrary",
+        "thumbnailWebUrl": "https://syndetics.com/index.aspx?isbn=9783319672175/LC.GIF",
+        "languageTag": "en-us",
+        "numberOfPages": 10,
+        "duration": "PDT1H",
+        "format": "Book",
+        "createdDateTime": "2018-01-01T00:00:00",
+        "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
+        "contributor": "Scott Simpson",
+        "additionalTags": [
+            "Create private or public teams",
+            "Add members to teams"
+        ],
+        "skillTags": [
+            "Create teams",
+            "Teams channels",
+            "Teams members"
+        ],
+        "isActive": true,
+        "isPremium": false,
+        "isSearchable": false
+    }]
 }
 
 ```
-
