@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryAddToReviewSetOperation resource type"
-description: "Adds the results of a sourceCollection to a reviewSet"
+description: "Represents an operation to add an eDiscoverySearch to an eDiscoveryReviewSet."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 
 
-Represents an operation to add a [eDiscoverySearch](../resources/security-ediscoverysearch.md) to a [eDiscoveryReviewSet](../resources/security-ediscoveryreviewset.md).
+Represents an operation to add an [eDiscoverySearch](../resources/security-ediscoverysearch.md) to an [eDiscoveryReviewSet](../resources/security-ediscoveryreviewset.md).
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
