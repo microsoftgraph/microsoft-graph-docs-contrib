@@ -1,18 +1,18 @@
 ---
-title: "Create dataSource"
-description: "Create a new dataSource object."
+title: "Add additional sources"
+description: "Create a new additional source associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create dataSource
+# Add additional sources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new dataSource object.
+Create a new [additional source](../resources/security-datasource.md) associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +44,7 @@ In the request body, supply a JSON representation of the [dataSource](../resourc
 
 You can specify the following properties when you create a **dataSource**.
 
->**Note:** Either **email** or **site** are required, not both. 
+>**Note:** Either **email** or **site** is required, but not both.
 
 |Property|Type|Description|
 |:---|:---|:---|

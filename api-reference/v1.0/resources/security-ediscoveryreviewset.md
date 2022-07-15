@@ -21,8 +21,8 @@ Represents the static set of electronically stored information collected for use
 |[List ediscoveryReviewSets](../api/security-ediscoverycase-list-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) collection|Get a list of the [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) objects and their properties.|
 |[Create ediscoveryReviewSet](../api/security-ediscoverycase-post-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Create a new [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
 |[Get ediscoveryReviewSet](../api/security-ediscoveryreviewset-get.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Read the properties and relationships of an [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
-|[addToReviewSet](../api/security-ediscoveryreviewset-addtoreviewset.md)|None|Add data from a **eDiscovery search** to a **reviewset**.|
-|[List queries](../api/security-ediscoveryreviewset-list-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) collection|Get the ediscoveryReviewSetQuery resources from the queries navigation property.|
+|[addToReviewSet](../api/security-ediscoveryreviewset-addtoreviewset.md)|None|Start the process of adding a collection from Microsoft 365 services to a [review set](../resources/security-ediscoveryreviewset.md).|
+|[List queries](../api/security-ediscoveryreviewset-list-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) collection|Get the list of [queries](../resources/security-ediscoveryreviewsetquery.md) associated with an eDiscovery review set.|
 |[Create ediscoveryReviewSetQuery](../api/security-ediscoveryreviewset-post-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Create a new ediscoveryReviewSetQuery object.|
 
 ## Properties
