@@ -97,7 +97,7 @@ Refer to these articles to learn more about Microsoft Graph: 
 |Retrieve Learning content      | GET   |<https://graph.microsoft.com/beta/employeeExperience/learningProviders/{registrationId}/learningContents>?$skip={skip}&$top={top)     |
 |Delete Learning content     | DELETE   |<https://graph.microsoft.com/beta/employeeExperience/learningProviders/{registrationId}/learningContents(externalId=’{externalId>}’}     |
 
-Follow these steps to onboard Viva Learning as mentioned below. Steps are marked in the above Flow Diagram for better understanding.
+Follow these steps to onboard Viva Learning as mentioned below.
 
 ## 1.	3rd party app creation 
  The one-time step for App creation is as mentioned below
