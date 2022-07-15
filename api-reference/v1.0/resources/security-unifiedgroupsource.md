@@ -26,8 +26,8 @@ None.
 |createdDateTime|DateTimeOffset|The date and time the **unifiedGroupSource** was created.|
 |displayName|String|The display name of the unified group, which is the name of the group.|
 |id|String|The ID of the **unifiedGroupSource**. This is not the ID of the actual group.|
-|includedSources|String|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
-|holdStatus|String|The hold status of the **unifiedGroupSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the **unifiedGroupSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 
 ## Relationships
 |Relationship|Type|Description|

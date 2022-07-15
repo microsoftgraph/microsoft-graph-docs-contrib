@@ -88,16 +88,18 @@ The following is an example of the response.
 HTTP/1.1 201 Created
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/sourceCollections('39b0bafd920e4360995c62e18a5e8a49')/additionalSources/$entity",
-    "@odata.type": "#microsoft.graph.ediscovery.siteSource",
-    "displayName": "Secret Site",
-    "createdDateTime": "2021-08-11T23:35:02.33986Z",
-    "id": "42393244-3838-4636-3437-453030334136",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/searches('c61a5860-d634-4d14-aea7-d82b6f4eb7af')/additionalSources/$entity",
+    "@odata.type": "#microsoft.graph.security.siteSource",
+    "@odata.id": "https://graph.microsoft.com/v1.0/sites/46303732-3434-4630-3832-363333363441",
+    "displayName": "Design - top secret",
+    "createdDateTime": "2022-07-15T22:45:36.1096267Z",
+    "holdStatus": "0",
+    "id": "46303732-3434-4630-3832-363333363441",
     "createdBy": {
+        "application": null,
         "user": {
-            "id": "798d8d23-2087-4e03-912e-c0d9db5cb5d2",
-            "displayName": "Edisco Admin",
-            "userPrincipalname": "ediscoadmin@contoso.com"
+            "id": null,
+            "displayName": null
         }
     }
 }

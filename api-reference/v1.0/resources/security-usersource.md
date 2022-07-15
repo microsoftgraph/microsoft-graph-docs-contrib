@@ -27,17 +27,9 @@ None.
 |displayName|String|The display name associated with the mailbox and site.|
 |email|String|Email address of the user's mailbox.|
 |id|String|The ID of the **userSource**. This is not the ID of the actual group.|
-|includedSources|String|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 |siteWebUrl|String|The URL of the user's OneDrive for Business site. Read-only.|
-|holdStatus|String|The hold status of the **userSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`.|
-### sourceType values
-
-Types of source related to the user. Includes mailbox and site by default.
-
-|Member|Description|
-|:----|-----------|
-|mailbox|Represents a mailbox.|
-|site|Represents a OneDrive for Business site.|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the **userSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`.|
 
 ### userSourceHoldStatus values
 

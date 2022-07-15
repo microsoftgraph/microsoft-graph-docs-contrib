@@ -50,7 +50,7 @@ In the context of eDiscovery, contains custodians, holds, searches, review sets,
 |id|String|The ID for the eDiscovery case. Read-only. |
 |lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|The last user who modified the case.
 |lastModifiedDateTime|DateTimeOffset|The latest date and time when the case was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|status|String|The case status. Possible values are `unknown`, `active`, `pendingDelete`, `closing`, `closed`, and `closedWithError`. For details, see the following table.
+|status|microsoft.graph.security.caseStatus|The case status. Possible values are `unknown`, `active`, `pendingDelete`, `closing`, `closed`, and `closedWithError`. For details, see the following table.
 
 ### caseStatus values
 

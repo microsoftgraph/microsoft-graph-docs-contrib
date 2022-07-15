@@ -32,8 +32,8 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |createdBy|[identitySet](../resources/identityset.md)| The user who initiated the export operation.|
 |createdDateTime|DateTimeOffset| The date and time the export was created.|
 |description|String| The description provided for the export.|
-|exportOptions|microsoft.graph.ediscovery.exportOptions| The options provided for the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
-|exportStructure|microsoft.graph.ediscovery.exportFileStructure|The options provided that specify the structure of the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
+|exportOptions|microsoft.graph.security.exportOptions| The options provided for the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|exportStructure|microsoft.graph.security.exportFileStructure|The options provided that specify the structure of the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
 |id|String| The ID for the operation. Read-only. |
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation.|

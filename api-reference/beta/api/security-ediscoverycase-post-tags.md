@@ -48,7 +48,7 @@ You can specify the following properties when you create an **ediscoveryReviewTa
 |:---|:---|:---|
 |displayName|String|Display name of the tag. Required.|
 |description|String|Description of the tag. Optional.|
-|childSelectability|String|This value controls whether the UX presents the tags as checkboxes or a radio button group. The possible values are: `One`, `Many`. Required.|
+|childSelectability|microsoft.graph.security.childSelectability|This value controls whether the UX presents the tags as checkboxes or a radio button group. The possible values are: `One`, `Many`. Required.|
 
 ## Response
 

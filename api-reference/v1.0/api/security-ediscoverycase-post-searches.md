@@ -49,7 +49,7 @@ You can specify the following properties when you create an **ediscoverySearch**
 |displayName|String|The display name of the search. Required|
 |description|String|The description of the search Optional.|
 |contentQuery|String|The query string used for the search. The query string in KQL (Keyword Query Language) format. Optional|
-|dataSourceScopes|String|The option to search across all mailboxes or sites in the tenant. The possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Optional.|
+|dataSourceScopes|microsoft.graph.security.dataSourceScopes|The option to search across all mailboxes or sites in the tenant. The possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Optional.|
 
 ## Response
 

@@ -30,11 +30,11 @@ Entity that represents ediscovery ReviewSet files.
 |id|String|The unique identifier for the file.|
 |mediaType|String|mimeType of the file. Eg: text/plain, charset=UTF-8, application/vnd.ms-outlook.|
 |name|String|The name of the file. Subject of the mail in case of email.|
-|otherProperties|String|A list of additional properties of the file like titleOfSharepointDocument, emailRecipients. [Learn more](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
-|processingStatus|String|The processing status after the item was added to a review set. The possible values are: `success`, `internalError`, `unknownError`, `processingTimeout`, `invalidFileId`, `fileSizeIsZero`, `fileSizeIsTooLarge`, `fileDepthLimitExceeded`, `fileBodyIsTooLong`, `fileTypeIsUnknown`, `fileTypeIsNotSupported`, `malformedFile`, `protectedFile`, `poisonFile`, `noReviewSetSummaryGenerated`, `extractionException`, `ocrProcessingTimeout`, `ocrFileSizeExceedsLimit`.|
+|otherProperties|microsoft.graph.security.stringValueDictionary|A list of additional properties of the file like titleOfSharepointDocument, emailRecipients. [Learn more](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
+|processingStatus|microsoft.graph.security.fileProcessingStatus|The processing status after the item was added to a review set. The possible values are: `success`, `internalError`, `unknownError`, `processingTimeout`, `invalidFileId`, `fileSizeIsZero`, `fileSizeIsTooLarge`, `fileDepthLimitExceeded`, `fileBodyIsTooLong`, `fileTypeIsUnknown`, `fileTypeIsNotSupported`, `malformedFile`, `protectedFile`, `poisonFile`, `noReviewSetSummaryGenerated`, `extractionException`, `ocrProcessingTimeout`, `ocrFileSizeExceedsLimit`.|
 |senderAuthor|String collection|The sender of the email or authors of the document.|
 |size|Int64|size of the file.|
-|sourceType|String|The original source of the content. The possible values are: `mailbox`, `site`.|
+|sourceType|microsoft.graph.security.sourceType|The original source of the content. The possible values are: `mailbox`, `site`.|
 |subjectTitle|String|The subject of the email or title of the document|
 
 ### dateTime values
