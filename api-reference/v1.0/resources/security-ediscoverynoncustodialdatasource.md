@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 
 
-Non-custodial data sources let you add data to a case without having to associate it to a custodian. To learn more, visit [Add non-custodial data sources to an eDiscovery (Premium) case
-](/microsoft-365/compliance/non-custodial-data-sources)
+Enables the addition of data to an eDiscovery case without associating it with a custodian. For details, see [Add non-custodial data sources to an eDiscovery (Premium) case](/microsoft-365/compliance/non-custodial-data-sources).
 
 
 Inherits from [dataSourceContainer](../resources/security-datasourcecontainer.md).
