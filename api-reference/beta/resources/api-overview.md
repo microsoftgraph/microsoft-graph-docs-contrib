@@ -56,10 +56,10 @@ This article focuses on the content sync APIs.
 
 Refer to these articles to learn more about Microsoft Graph:  
 
-* [Microsoft Graph Fundamentals](/learn/paths/m365-msgraph-fundamentals)
-* [Calling the Microsoft Graph API](/graph/call-api)
-* [Authentication and authorization basics for Microsoft Graph](/graph/auth/auth-concepts)
-* [Other resources are also available at the Microsoft Graph documentation](/graph/)
+* [Microsoft Graph Fundamentals](https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/)
+* [Calling the Microsoft Graph API](https://docs.microsoft.com/graph/call-api)
+* [Authentication and authorization basics for Microsoft Graph](https://docs.microsoft.com/graph/auth/auth-concepts)
+* [Other resources are also available at the Microsoft Graph documentation](⁠https://docs.microsoft.com/graph/)
 
 ## Scenarios supported
 
