@@ -20,12 +20,13 @@ The status of a long-running operation.
 None.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|createdDateTime|DateTimeOffset|The start time of the operation.|
-|id|String|The unique identifier of the operation |
-|lastActionDateTime|DateTimeOffset|The time of the last action of the operation.|
-|status|longRunningOperationStatus|The current status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+
+| Property           | Type            | Description                                                                     |
+| :----------------- | :-------------- | :-------------------------------------------------------------------------------|
+| createdDateTime    | DateTimeOffset  | The start time of the operation.                                                |
+| id                 | String          | The operation ID. Read-only. Server generated.                                  |
+| lastActionDateTime | DateTimeOffset  | The time of the last action of the operation.                                   |
+| status             | String          | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
 
 ## Relationships
 
@@ -61,8 +62,7 @@ The following is a JSON representation of the resource.
   "createdDateTime": "2018-09-06T15:58:41Z",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "lastActionDateTime": "2018-09-06T15:58:41Z",
-  "status": "completed",
-  "statusDetail": "ResetSuccess"
+  "status": "completed"
 }
 ```
 

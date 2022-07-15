@@ -1,0 +1,70 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "longRunningOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **longRunningOperationStatus** enumeration type.",
+          "Target": "longRunningOperationStatus"
+        },
+        {
+          "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordResetResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [passwordResetResponse](https://docs.microsoft.com/en-us/graph/api/resources/passwordResetResponse?view=graph-rest-1.0) resource type.",
+          "Target": "passwordResetResponse"
+        },
+        {
+          "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+          "ApiChange": "Resource",
+          "ChangedApiName": "operations",
+          "ChangeType": "Addition",
+          "Description": "Added the **operations** relationship to the [authentication](https://docs.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **passwordMethods** relationship to the [authentication](https://docs.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+          "ApiChange": "Resource",
+          "ChangedApiName": "longRunningOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [longRunningOperation](https://docs.microsoft.com/en-us/graph/api/resources/longRunningOperation?view=graph-rest-1.0) resource",
+          "Target": "longRunningOperation"
+        },
+        {
+          "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [passwordAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/passwordAuthenticationMethod?view=graph-rest-1.0) resource",
+          "Target": "passwordAuthenticationMethod"
+        },
+        {
+          "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+          "ApiChange": "Method",
+          "ChangedApiName": "resetPassword",
+          "ChangeType": "Addition",
+          "Description": "Added the [resetPassword](https://docs.microsoft.com/en-us/graph/api/authenticationMethod?view=graph-rest-1.0) method to the [authenticationMethod](https://docs.microsoft.com/en-us/graph/api/authenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "authenticationMethod"
+        }
+      ],
+      "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-23T16:02:38.715986Z",
+      "WorkloadArea": "Microsoft.StrongAuthenticationAPI",
+      "SubArea": ""
+    }
+  ]
+}
