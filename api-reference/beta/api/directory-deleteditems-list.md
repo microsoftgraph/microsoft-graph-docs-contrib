@@ -15,13 +15,15 @@ Namespace: microsoft.graph
 
 Retrieve a list of recently deleted directory objects. Currently, this functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md), and [user](../resources/user.md) resources.
 
+Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md), and [user](../resources/user.md) resources.
+
 >**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For applications:
+### For applications and service principals:
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -49,11 +51,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /directory/deleteditems/microsoft.graph.application
+GET /directory/deleteditems/microsoft.graph.servicePrincipal
 GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-This API currently supports retrieving object types of applications (`microsoft.graph.application`), groups (`microsoft.graph.group`) or users (`microsoft.graph.user`) from deleted items. The OData cast type is a required part of the URI and calling `GET /directory/deleteditems` without a type is **not** supported.
+This API currently supports retrieving object types of applications (`microsoft.graph.application`), servicePrincipals (`microsoft.graph.serviceprincipal`), groups (`microsoft.graph.group`), or users (`microsoft.graph.user`) from deleted items. The OData cast type is a required part of the URI and calling `GET /directory/deleteditems` without a type is **not** supported.
 
 ## Optional query parameters
 

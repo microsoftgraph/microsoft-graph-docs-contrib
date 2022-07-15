@@ -36,7 +36,7 @@ In this step you will create an Azure Storage account where Microsoft Graph data
         - **Assign access to**: User, group or service principal
         - **Select**: Microsoft Graph data connect Data Transfer (the name of the Azure AD application you created previously)
 
-        ![A screenshot showing the proper role assignment to the application for Microsoft Graph Data Connect in the Azure Storage account in the Azure portal.](images/data-connect-azure-storage-role.png)
+        ![A screenshot showing the proper role assignment to the application for Microsoft Graph Data Connect in the Azure Storage account in the Azure portal.](../concepts/images/data-connect-azure-storage-role.png)
 
 1. Create a new container in the **mgdcm365datastore** Azure Storage account.
 
@@ -47,4 +47,4 @@ In this step you will create an Azure Storage account where Microsoft Graph data
         - **Name**: m365mails
         - **Public access level**: Private (no anonymous access)
 
-        ![A screenshot showing the creation of a new container called m365mails in the Storage account blob containers in the Azure portal.](images/data-connect-azure-storage-container.png)
+        ![A screenshot showing the creation of a new container called m365mails in the Storage account blob containers in the Azure portal.](../concepts/images/data-connect-azure-storage-container.png)

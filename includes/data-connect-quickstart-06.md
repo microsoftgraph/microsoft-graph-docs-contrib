@@ -18,7 +18,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. In the **Data Access Request** call out, select the **Approve** button.
 
-    ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](images/data-connect-m365-approve.png)
+    ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-approve.png)
 
 # [PowerShell](#tab/PowerShell)
 
@@ -55,7 +55,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
     - Examine the list of data access requests returned. In the following image, notice there are two pending requests.
 
-        ![A screenshot showing a list of pending requests formatted as a list in a PowerShell console.](images/data-connect-ps-pending-requests.png)
+        ![A screenshot showing a list of pending requests formatted as a list in a PowerShell console.](../concepts/images/data-connect-ps-pending-requests.png)
 
 1. Approve a data access returned in the previous step by copying the Identity GUID of a request by executing the following PowerShell.
 
@@ -68,7 +68,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
 
-    ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](images/data-connect-adf-extraction-approved.png)
+    ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png)
 
 1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
@@ -88,4 +88,4 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. Select the **container** created previously in this tutorial that you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container now.
 
-    ![A screenshot showing the Azure portal UI for the Storage account service. It is showing the container where the extracted data is being stored.](images/data-connect-adf-extracted-data-in-blob.png)
+    ![A screenshot showing the Azure portal UI for the Storage account service. It is showing the container where the extracted data is being stored.](../concepts/images/data-connect-adf-extracted-data-in-blob.png)
