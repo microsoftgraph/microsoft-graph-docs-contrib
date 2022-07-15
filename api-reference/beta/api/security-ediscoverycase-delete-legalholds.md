@@ -1,6 +1,6 @@
 ---
 title: "Delete ediscoveryHoldPolicy"
-description: "Deletes an ediscoveryHoldPolicy object."
+description: "Delete an ediscoveryHoldPolicy object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.
+Delete an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

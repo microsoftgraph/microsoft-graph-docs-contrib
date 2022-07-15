@@ -23,7 +23,7 @@ Represents an eDiscovery search. For details, see [Collect data for a case in eD
 |[Create ediscoverySearch](../api/security-ediscoverycase-post-searches.md)|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|Create a new [ediscoverySearch](../resources/security-ediscoverysearch.md) object.|
 |[Get ediscoverySearch](../api/security-ediscoverysearch-get.md)|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|Read the properties and relationships of an [ediscoverySearch](../resources/security-ediscoverysearch.md) object.|
 |[Update ediscoverySearch](../api/security-ediscoverysearch-update.md)|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|Update the properties of an [ediscoverySearch](../resources/security-ediscoverysearch.md) object.|
-|[Delete ediscoverySearch](../api/security-ediscoverycase-delete-searches.md)|None|Deletes an [ediscoverySearch](../resources/security-ediscoverysearch.md) object.|
+|[Delete ediscoverySearch](../api/security-ediscoverycase-delete-searches.md)|None|Delete an [ediscoverySearch](../resources/security-ediscoverysearch.md) object.|
 |[estimateStatistics](../api/security-ediscoverysearch-estimatestatistics.md)|None|Run an estimate statistics operation on the data contained in the eDiscovery search.|
 |[purgeData](../api/security-ediscoverysearch-purgedata.md)|None|Run a purge data operation on the Teams data contained in the eDiscovery search.|
 |[List additionalSources](../api/security-ediscoverysearch-list-custodiansources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md) collection|Get the dataSource resources from the additionalSources navigation property.|

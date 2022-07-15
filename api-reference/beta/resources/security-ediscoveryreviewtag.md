@@ -22,7 +22,7 @@ Represents an eDiscovery tag, which is used to mark documents during review to s
 |[Create ediscoveryReviewTag](../api/security-ediscoverycase-post-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Create a new [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
 |[Get ediscoveryReviewTag](../api/security-ediscoveryreviewtag-get.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Read the properties and relationships of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
 |[Update ediscoveryReviewTag](../api/security-ediscoveryreviewtag-update.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Update the properties of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
-|[Delete ediscoveryReviewTag](../api/security-ediscoverycase-delete-tags.md)|None|Deletes an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
+|[Delete ediscoveryReviewTag](../api/security-ediscoverycase-delete-tags.md)|None|Delete an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
 |[asHierarchy](../api/security-ediscoveryreviewtag-ashierarchy.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|List tags organized as hierarchy.|
 
 
