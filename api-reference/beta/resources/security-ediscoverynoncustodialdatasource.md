@@ -61,9 +61,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.security.ediscoveryNoncustodialDataSource",
   "id": "String (identifier)",
   "status": "String",
-  "holdStatus": {
-    "@odata.type" : "microsoft.graph.security.dataSourceHoldStatus"
-  },
+  "holdStatus": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "releasedDateTime": "String (timestamp)",
   "displayName": "String",
