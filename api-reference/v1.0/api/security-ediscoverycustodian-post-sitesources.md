@@ -1,6 +1,6 @@
 ---
 title: "Create custodian siteSource"
-description: "Create a new custodian siteSource object."
+description: "Create a new custodian siteSource object associated with an eDiscovery custodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 
 
-Create a new [siteSource](../resources/security-sitesource.md) object.
+Create a new [siteSource](../resources/security-sitesource.md) object associated with an [eDiscovery custodian](../resources/security-ediscoverycustodian.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
