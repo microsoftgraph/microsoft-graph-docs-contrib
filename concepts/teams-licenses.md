@@ -98,7 +98,7 @@ through the [Microsoft 365 Developer Program](https://developer.microsoft.com/mi
 
 A billing model must be send in the query parameter, if passing `model=A` proper licensing must be in place.
 
-| Billing model | Sample functions | License required | Azure subscription required | 
+| Billing model | Sample functions | Seeded Capacity | License required | Azure subscription required | 
 |:-----------|:-------------|:-------------|:-----------|
 | `model=A` | Security and Compliance | Yes (Microsoft 365 E5 eligible license) | Yes |
 | `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | No | Yes | 
@@ -146,7 +146,7 @@ Please note that the organization that owns the app registration is responsible 
 * If passing `model=B` when calling metered APIs, an active Azure subscription should be provided to ensure service continuity.
 An active Azure subscription is required to ensure service continuity for most scenarios.  |
 | How do I create an Azure subscription ? | The Azure Subscription must be available in the same tenant where the App is registered in Azure Active Directory. Customers who have an existing [MCA or EA agreements](cost-management-billing/manage/programmatically-create-subscription) can get a subscription derived from their existing account. Is also possible to contact your Azure Account Owner to request a subscription.  
-Customers who do not have MCA/EA or existing subscription, can create a PAYG subscription using a credit card directly in Subscriptions - Microsoft Azure, or request pay by check or wire transfer, for other options see [Azure sales](/overview/contact-azure-sales/).
+Customers who do not have MCA/EA or existing subscription, can create a PAYG subscription using a credit card directly in Subscriptions - Microsoft Azure, or request pay by check or wire transfer, for other options see [Azure sales](/overview/contact-azure-sales/).|
 | Who is responsible for the payment in case of multitenat apps ?| The organization that owns the app registration. |
 | Is there a charge when no message is returned using `model A or B` ? | To discourage frequent [polling](/graph/api/resources/teams-api-overview?view=graph-rest-beta#polling-requirements), API requests that return an empty list of messages will be charged 1 message. In the case of `evaluation mode` the call will count towards the 500 messages per month per app allowed. | 
 | Where can I monitor the cost and billing ? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) [permissions](/azure/cost-management-billing/costs/assign-access-acm-data) can use Azure Cost Analysis tool to track metered API consumption. With this tool you can track consumption per day and filter by meter, service name, resource id among other parameters. For metered APIs the resource GUID is the App Id. Resource Groups or resource Tags are not supported. For more details refer to our [documentation](azure/cost-management-billing/) |
