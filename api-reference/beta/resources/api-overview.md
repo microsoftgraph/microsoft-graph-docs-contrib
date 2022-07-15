@@ -20,10 +20,9 @@ description: Learn how to find resources for Microsoft Viva Learning.
 
 # Graph APIs
 
-## Overview  
+## Overview
 
 ### Viva Learning
-
 Viva Learning is a learning platform with the following capabilities -  
 
 Learning in the Flow of Work - Bring learning to the tools and platforms where users already spend their time
@@ -33,7 +32,6 @@ Simplified Learning - Aggregate learning content and tools from different sour
 Personalized and Relevant - Find the right content and develop new capabilities with personalized recommendations and search
 
 ## Viva Learning Graph APIs  
-
 Viva Learning Graph APIs (Application Programming Interfaces) enable any partner/ customer to seamlessly integrate their content & learner records (user assignments & completion records) from their LMS/ learning provider with Viva Learning.
 
 To enable these scenarios, the below Viva Learning APIs are supported -
@@ -41,20 +39,17 @@ To enable these scenarios, the below Viva Learning APIs are supported -
 1. Content Sync APIs – These APIs help sync in the learning content for a tenant within Viva Learning.
 
 2. Learning Record Sync (LRS) APIs – These APIs help sync in the assignment and completion records for learners.  
-
+    
     a. Assignments sync APIs - These APIs help sync in the learner’s assignments within Viva Learning.
-
+    
     b. Completion sync APIs - These APIs help sync in the learner’s completed records within Viva Learning.
 
 ## Scenarios supported  
-
 ![An image showing the APIs supported by Viva Learning](./images/api-details.png)
 Graphical user interface, text, application, chat or text message
-
 Description automatically generated
 
 ## How integrations work
-
 The below diagram helps explain how the Viva Learning integrations through Out of Box Integrations (Pull model) and through Graph APIs (Push model) work -  
 
 ![An image showing Viva Learning integrations through Out of Box Integrations (Pull model) and through Graph APIs (Push model) work.](./images/learning-source-integrations.png)
@@ -62,14 +57,13 @@ The below diagram helps explain how the Viva Learning integrations through Out o
 Once the content metadata and learner assignment & completion records are synchronized into Viva Learning, they appear on Viva Learning (Content appears on Home page under Browse courses – Providers section; Assignments and Completed courses appear on My Learning page under Assigned to you & Completed sections respectively.
 
 ## Content sync APIs
-
 This document focuses on the Content sync APIs.
 
 ### Key Terms
-
 LMS – entity that stores learning content catalogs and learner’s assignment records eg SuccessFactors
 
 Provider- entity which is trying to integrate with Viva Learning App. Eg ISV, SI Partners, Linkedin Hub  
+
 Customer – An organization with paid Viva Learning or Viva Suite licenses seeking to connect their Viva Learning instance with one or more existing learning sources  
 
 externalId – Identifier of a learning content record in Provider’s system.  
@@ -77,7 +71,6 @@ externalId – Identifier of a learning content record in Provider’s system.�
 registrationId – Identifier assigned by Viva Learning on Provider registration request for a tenant  
 
 ## Prerequisites
-
 Refer to these articles to learn more about Microsoft Graph:  
 
 1. Microsoft Graph Fundamentals - Learn <https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/> 
@@ -89,7 +82,6 @@ Refer to these articles to learn more about Microsoft Graph: 
 4. Other resources are also available at Microsoft Graph documentation]  <https://docs.microsoft.com/graph/>
 
 ## Scenarios supported
-
 1. Providers will be able to register with their display name, square logo url in dark mode/light mode (to be displayed in Learning Content Card), long logo url in dark/light mode to be displayed in Details page required for the content to show up for the provider in Viva Learning. The resultant id can be used to make the subsequent calls for content ingestion.  
 
 2. Providers will be able to enable/disable the registered provider, update the display name for provider and logo URL’s.  
@@ -119,7 +111,6 @@ a. Token acquisition needs to be done for: <https://graph.microsoft.com/> 
 b. Scope: : <https://graph.microsoft.com/.default>  
 
 ## Endpoints
-
 | APIs:  | HttpMethod: |Endpoint: |
 |:-----|:-----|:-----|
 |New Provider Registration   | POST |<https://graph.microsoft.com/beta/employeeExperience/LearningProviders> |
@@ -143,7 +134,6 @@ C.	Add re-direct URI for the application.
 D.	From Certificates & secrets blade, upload client certificate. Note: The certificate would be used to Acquire app-only token.
 Note: As part of Registration, we are going to Allow list your AppId for the tenant. To enable content ingestion from Partner for the tenant. You should provide your App Id in the form https://aka.ms/contentsync
 
-
 ## 2.	Implement 3rd party app provisioning in customer’s tenant Azure AD 
 A.	Expose Viva Learning Admin setting in Provider client interface
 B.	Implement admin consent flow to get the Provider app provisioned in the customer tenant active directory.
@@ -160,9 +150,7 @@ Accept should trigger the API
 
 ## 3.	IMPLEMENT REGISTER PROVIDER API INTEGRATION 
                    Diagram –1: Register Provider
-
  
-
 i.	Implement admin consent re-direct URI handler. This handler would get the tenant from the successful response of admin consent URL. 
 Refer to Process Code Method of OnboardingController.cs in Azure Samples. GitHub link below in step ii.
 
@@ -175,27 +163,30 @@ ii.	Acquire Token with delegated permissions, invoke register provider API with 
 -	AppId from Token ( not a request Parameter)
 -	TenantId from token ( not a request Parameter)
 -	Isenabled
+
 For successful response- 200, registrationId for tenant is returned in response. This registrationId needs to be stored at Provider end along with tenant id. And needs to be used in consequent calls.
+
 RECOMMENDATION ON ACQUIRING TOKEN FLOW. Multi tenant client_credential use · AzureAD/microsoft-authentication-library-for-dotnet Wiki · GitHub
+
 ## 4.	IMPLEMENT REGISTER LEARNING CONTENT API INTEGRATION                
   			Diagram – 2: Push Learning Content
           
 i.	Implement a recurring application process to generate token and push learning content for the enabled tenants with application permissions.
-ii.	Use app-only token and registrationId created in step C ii.  for ingesting the learning content in Viva Learning. 
 
+ii.	Use app-only token and registrationId created in step C ii.  for ingesting the learning content in Viva Learning. 
 
 FAQ: 
 1.	Learning Content SLA: 24 hours 
     The learning content ingested would be available in Viva Learning via. search only after 24 hours of SLA.
-
+    
     Due to the current caching optimization at Viva Learning, it might take (only in few scenarios) up to 24 hours for the content to be available under Providers tab     carousel. Though the content would be available for search after given SLA (24  hours currently).
-
+    
 2.	Throttle limit of Graph API 
 SLA mentioned in point 3 is subjected to Provider’s compliance with the throttle limit.
 Here are the throttle limits for Content sync Graph APIs. 
     - 1 request per second. 
     - Block limit : 500 requests in 10 mins
-
+    
 3.	 Deleting Provider API will disable the provider and will stop rendering contents from that provider on the Viva learning App. The content for the disabled provider will be deleted within 30 days.
 
 4.	When Registration API is called there is a unique registration id for the tenant. If Provider needs to register 5 different tenants, then they need to call the registration API 5 times.
