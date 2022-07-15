@@ -77,7 +77,7 @@ Refer to these articles to learn more about Microsoft Graph: 
 >**Note:** For every successful API invocation Provider needs to generate Token using resource values as given below
 > Resource for Token acquisition:  
 >
-> * Token acquisition needs to be done for: <https://graph.microsoft.com/>  
+> * Token acquisition needs to be done ,please refer: <https://graph.microsoft.com/>  
 > * Scope: : <https://graph.microsoft.com/.default>  
 
 ## Endpoints
