@@ -34,7 +34,7 @@ The following example scopes the review to both direct and transitive members of
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user",
+    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -47,7 +47,7 @@ To review *only inactive users* assigned to the group:
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
     "inactiveDuration": "P30D",
-    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user",
+    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -61,7 +61,7 @@ The following example scopes the review to both direct and transitive members of
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user/?$filter=(userType eq 'Guest')",    
+    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user/?$filter=(userType eq 'Guest')",    
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -75,7 +75,7 @@ The following example scopes the review to only direct members of the group who 
 
 ```http
 "scope": {
-        "query": "/groups/{group id}/members",
+        "query": "/groups/{groupId}/members",
         "queryType": "MicrosoftGraph"
 }
 ```
