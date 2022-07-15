@@ -30,9 +30,6 @@ To enable these scenarios, the following Viva Learning APIs are supported.
   * Assignments sync: APIs for syncing in the learner's assignments within Viva Learning.
   * Completion sync: APIs for syncing in the learner's completed records within Viva Learning.
 
-## Scenarios supported  
-
-Description automatically generated
 
 ## How integrations work
 
