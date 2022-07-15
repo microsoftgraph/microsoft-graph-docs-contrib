@@ -32,16 +32,11 @@ To enable these scenarios, the following Viva Learning APIs are supported.
 
 ## Scenarios supported  
 
-![An image showing the APIs supported by Viva Learning](./images/api-details.png)
-Graphical user interface, text, application, chat or text message
-
 Description automatically generated
 
 ## How integrations work
 
-The following diagram helps explain how the Viva Learning integrations through out-of-the-box integrations (pull model) and through Microsoft Graph APIs (push model) work.  
-
-![An image showing Viva Learning integrations through Out of Box Integrations (Pull model) and through Graph APIs (Push model) work.](./images/learning-source-integrations.png)
+The Viva Learning integrations through out-of-the-box integrations is pull model and through Microsoft Graph APIs (push model) capability is introduced.  
 
 Once the content metadata, the learner assignment, and the completion records are synchronized into Viva Learning, they appear on Viva Learning in the following places:
 
