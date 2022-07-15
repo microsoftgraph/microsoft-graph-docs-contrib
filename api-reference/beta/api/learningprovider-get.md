@@ -3,7 +3,7 @@ title: "Get learningProvider"
 description: "Read the properties and relationships of a learningProvider object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-experience"
+ms.prod: "employee-learning"
 doc_type: apiPageType
 ---
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**LearningProvider.Read**|
+|Delegated (work or school account)|LearningProvider.Read|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 

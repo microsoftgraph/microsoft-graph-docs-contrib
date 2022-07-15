@@ -1,9 +1,9 @@
 ---
 title: "learningProvider resource type"
-description: "An entity which holds the details of the learning provider"
+description: "Represents an entity that holds the details about a learning provider."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-experience"
+ms.prod: "employee-learning"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an entity that holds the details about a learning provider.
 
 ## Methods
 |Method|Return type|Description|

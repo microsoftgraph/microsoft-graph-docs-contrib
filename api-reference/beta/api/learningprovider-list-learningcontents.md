@@ -3,7 +3,7 @@ title: "List learningContents"
 description: "Get a list of the learningContent objects and their properties."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-experience"
+ms.prod: "employee-learning"
 doc_type: apiPageType
 ---
 

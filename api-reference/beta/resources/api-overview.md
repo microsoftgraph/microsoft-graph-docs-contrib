@@ -1,21 +1,10 @@
 ---
-title: Introduction to Microsoft Viva Learning
-ms.author: maldas
-author: malabikaroy
-manager: absri
-ms.reviewer: shirana
-ms.date: 11/02/2021
-audience: enabler, admin
-ms.topic: landing-page
-ms.custom: intro-hub-or-landing
-search.appverid: MET150
-ms.collection: 
-    - enabler-strategic
-    - m365initiative-viva-learning
-ms.service: viva
-ms.subservice: viva-learning
+title: "Introduction to Microsoft Viva Learning"
+description: "Learn how to find resources for Microsoft Viva Learning."
 ms.localizationpriority: medium
-description: Learn how to find resources for Microsoft Viva Learning.
+author: "malabikaroy"
+ms.prod: "employee-learning"
+doc_type: conceptualPageType
 ---
 
 # Graph APIs
@@ -24,27 +13,22 @@ description: Learn how to find resources for Microsoft Viva Learning.
 
 ### Viva Learning
 
-Viva Learning is a learning platform with the following capabilities -  
+Viva Learning is a learning platform with the following capabilities.
 
-Learning in the Flow of Work - Bring learning to the tools and platforms where users already spend their time
+* Learning in the flow of work: Bring learning to the tools and platforms where users already spend their time
+* Simplified learning: Aggregate learning content and tools from different sources in one central hub
+* Personalized and relevant: Find the right content and develop new capabilities with personalized recommendations and search
 
-Simplified Learning - Aggregate learning content and tools from different sources in one central hub
+## Viva Learning APIs in Microsoft Graph
 
-Personalized and Relevant - Find the right content and develop new capabilities with personalized recommendations and search
+The Viva Learning APIs in Microsoft Graph enable any partner or customer to seamlessly integrate their content and learner records (user assignments and completion records) from their LMS or learning provider with Viva Learning.
 
-## Viva Learning Graph APIs  
+To enable these scenarios, the following Viva Learning APIs are supported.
 
-Viva Learning Graph APIs (Application Programming Interfaces) enable any partner/ customer to seamlessly integrate their content & learner records (user assignments & completion records) from their LMS/ learning provider with Viva Learning.
-
-To enable these scenarios, the below Viva Learning APIs are supported -
-
-1. Content Sync APIs – These APIs help sync in the learning content for a tenant within Viva Learning.
-
-2. Learning Record Sync (LRS) APIs – These APIs help sync in the assignment and completion records for learners.  
-
-    a. Assignments sync APIs - These APIs help sync in the learner’s assignments within Viva Learning.
-
-    b. Completion sync APIs - These APIs help sync in the learner’s completed records within Viva Learning.
+* Content sync: APIs for syncing in the learning content for a tenant within Viva Learning.
+* Learning record sync (LRS): APIs for syncing in the assignment and completion records for learners.  
+  * Assignments sync: APIs for syncing in the learner's assignments within Viva Learning.
+  * Completion sync: APIs for syncing in the learner's completed records within Viva Learning.
 
 ## Scenarios supported  
 
@@ -55,68 +39,54 @@ Description automatically generated
 
 ## How integrations work
 
-The below diagram helps explain how the Viva Learning integrations through Out of Box Integrations (Pull model) and through Graph APIs (Push model) work -  
+The following diagram helps explain how the Viva Learning integrations through out-of-the-box integrations (pull model) and through Microsoft Graph APIs (push model) work.  
 
 ![An image showing Viva Learning integrations through Out of Box Integrations (Pull model) and through Graph APIs (Push model) work.](./images/learning-source-integrations.png)
 
-Once the content metadata and learner assignment & completion records are synchronized into Viva Learning, they appear on Viva Learning (Content appears on Home page under Browse courses – Providers section; Assignments and Completed courses appear on My Learning page under Assigned to you & Completed sections respectively.
+Once the content metadata, the learner assignment, and the completion records are synchronized into Viva Learning, they appear on Viva Learning in the following places:
+
+* The content appears on home page under *Browse courses* – *Providers* section
+* Assignments and completed courses appear on *My Learning* page under *Assigned to you* and *Completed* sections respectively
 
 ## Content sync APIs
 
-This document focuses on the Content sync APIs.
+This article focuses on the content sync APIs.
 
-### Key Terms
+### Key terms
 
-LMS – entity that stores learning content catalogs and learner’s assignment records eg SuccessFactors
-
-Provider- entity which is trying to integrate with Viva Learning App. Eg ISV, SI Partners, Linkedin Hub  
-Customer – An organization with paid Viva Learning or Viva Suite licenses seeking to connect their Viva Learning instance with one or more existing learning sources  
-
-externalId – Identifier of a learning content record in Provider’s system.  
-
-registrationId – Identifier assigned by Viva Learning on Provider registration request for a tenant  
+* LMS: Entity that stores learning content catalogs and learner's assignment records, for example, SuccessFactors.
+* Provider: entity which is trying to integrate with the Viva Learning app. For example, ISV, SI Partners, and Linkedin Hub.
+* Customer: An organization with paid Viva Learning or Viva Suite licenses seeking to connect their Viva Learning instance with one or more existing learning sources.  
+* externalId: Identifier of a learning content record in the system of the provider.  
+* registrationId: Identifier assigned by Viva Learning on the provider registration request for a tenant.  
 
 ## Prerequisites
 
 Refer to these articles to learn more about Microsoft Graph:  
 
-1. Microsoft Graph Fundamentals - Learn <https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/> 
-
-2. Calling the Microsoft Graph API - Microsoft Graph <https://docs.microsoft.com/graph/call-api>
-
-3. Authentication and authorization basics for Microsoft Graph - Microsoft Graph <https://docs.microsoft.com/graph/auth/auth-concepts >
-
-4. Other resources are also available at Microsoft Graph documentation]  <https://docs.microsoft.com/graph/>
+* [Microsoft Graph Fundamentals](/learn/paths/m365-msgraph-fundamentals)
+* [Calling the Microsoft Graph API](/graph/call-api)
+* [Authentication and authorization basics for Microsoft Graph](/graph/auth/auth-concepts)
+* [Other resources are also available at the Microsoft Graph documentation](/graph/)
 
 ## Scenarios supported
 
-1. Providers will be able to register with their display name, square logo url in dark mode/light mode (to be displayed in Learning Content Card), long logo url in dark/light mode to be displayed in Details page required for the content to show up for the provider in Viva Learning. The resultant id can be used to make the subsequent calls for content ingestion.  
+* Providers will be able to register with their display name, square logo URL in dark mode/light mode (to be displayed in a learning content card), and long logo URL in dark/light mode to be displayed in the *Details* page which is required for the content to show up for the provider in Viva Learning. The resultant ID can be used to make the subsequent calls for content ingestion.
+* Providers will be able to enable or disable the registered provider and update the display name for the provider and logo URL's.  
+* Retrieve the details about the provider in Viva Learning for the **registrationId**.  
+* Retrieve the list of registrations in Viva Learning for the provider using the Microsoft Graph API.
+* Providers will be able to delete the registration for the tenant.  
+* Providers will be able to ingest their learning content through the UPSERT API exposed via. a PATCH method to make this content available within Viva Learning for consumption.  
+* Providers will be able to read the ingested content through the GET API for the tenant for the provider registered with a **registrationId**.  
+* This content would be available for Search after given SLA (24 hours).
+* Providers will be able to retrieve the properties of a learning content object.
+* Providers will be able to delete the ingested content through the DELETE API.
 
-2. Providers will be able to enable/disable the registered provider, update the display name for provider and logo URL’s.  
-
-3. Retrieve provider details in Viva Learning for registrationId.  
-
-4. Retrieve list of registrations in Viva Learning for the provider using Graph API  
-
-5. Providers will be able to delete the registration for the tenant.  
-
-6. Providers will be able to ingest their learning content through the UPSERT API exposed via. PATCH Method to make this content available within Viva Learning for consumption.  
-
-7. Providers will be able to read the ingested content through the GET API for the tenant for the Provider registered with registrationId.  
-
-8. This content would be available for Search after given SLA. (24 hours)  
-
-9. Providers will be able to retrieve the properties of a learning content object
-
-10. Providers will be able to delete the ingested content through the DELETE API.  
-
-Note: For every successful API invocation Provider needs to generate Token using resource values as given below
-
-Resource for Token acquisition:  
-
-a. Token acquisition needs to be done for: <https://graph.microsoft.com/>  
-
-b. Scope: : <https://graph.microsoft.com/.default>  
+>**Note:** For every successful API invocation Provider needs to generate Token using resource values as given below
+> Resource for Token acquisition:  
+>
+> * Token acquisition needs to be done for: <https://graph.microsoft.com/>  
+> * Scope: : <https://graph.microsoft.com/.default>  
 
 ## Endpoints
 
