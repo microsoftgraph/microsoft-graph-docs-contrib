@@ -174,4 +174,4 @@ Here are the throttle limits for Content sync Graph APIs.
 
 8. The Supported Languages –Locale tags for the Content details within Viva Learning is as mentioned below.
 az-Latn-AZ,bg-BG,bn-IN,ca-ES,cs-CZ,da-DK,de-DE,el-GR,en-GB,es-ES,es-MX,et-EE,eu-ES,fi-FI,fil-PH,fr-CA,fr-FR,gl-ES,gu-IN,hi-IN,hr-HR,hu-HU,id-ID,is-IS,it-IT,ja-JP,ka-GE,kk-KZ,kn-IN,ko-KR,lt-LT,lv-LV,mk-MK,ml-IN,mr-IN,nb-NO,nl-NL,nn-NO,pl-PL,pt-BR,pt-PT,ro-RO,ru-RU,sk-SK,sl-SI,sq-AL,sr-Latn-RS,sv-SE,ta-IN,te-IN,th-TH,tr-TR,uk-UA,vi-VN,zh-CN,zh-TW
-=======
+
