@@ -47,7 +47,7 @@ You can specify the following properties when you create a **dataSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.id|String|String that defines the custodial object. See the example that follows.|
+|@odata.id|String|String that defines the custodial object. See [the example](#examples) that follows.|
 
 
 

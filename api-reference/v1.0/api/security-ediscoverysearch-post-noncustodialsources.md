@@ -1,6 +1,6 @@
 ---
 title: "Add ediscoveryNoncustodialDataSource"
-description: "Add noncustodialSources by posting to the noncustodialSources collection."
+description: "Create a new non-custodial source associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 
 
-Add noncustodialSources by posting to the noncustodialSources collection.
+Create a new non-custodial source associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
