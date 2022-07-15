@@ -3,7 +3,7 @@ title: "Delete learningProvider"
 description: "Delete a learningProvider object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-experience"
+ms.prod: "employee-learning"
 doc_type: apiPageType
 ---
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**LearningProvider.ReadWrite**|
+|Delegated (work or school account)|LearningProvider.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -55,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70 
+DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/$ref
 ```
 
 

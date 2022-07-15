@@ -1,9 +1,9 @@
 ---
 title: "learningContent resource type"
-description: "An entity that holds learning content details"
+description: "Represents an entity that holds details about learning content."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-experience"
+ms.prod: "employee-learning"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An entity that holds learning content details
+Represents an entity that holds details about learning content.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List learningContents](../api/learningprovider-list-learningcontents.md)|[learningContent](../resources/learningcontent.md) collection|Get a list of the [learningContent](../resources/learningcontent.md) objects and their properties.|
-|[Create learningContent](../api/learningcontent-update.md)|[learningContent](../resources/learningcontent.md)|Create a new [learningContent](../resources/learningcontent.md) object.|
 |[Get learningContent](../api/learningcontent-get.md)|[learningContent](../resources/learningcontent.md)|Read the properties and relationships of a [learningContent](../resources/learningcontent.md) object.|
 |[Update learningContent](../api/learningcontent-update.md)|[learningContent](../resources/learningcontent.md)|Update the properties of a [learningContent](../resources/learningcontent.md) object.|
 |[Delete learningContent](../api/learningprovider-delete-learningcontents.md)|None|Delete a [learningContent](../resources/learningcontent.md) object.|

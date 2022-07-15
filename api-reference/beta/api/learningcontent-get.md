@@ -3,7 +3,7 @@ title: "Get learningContent"
 description: "Read the properties and relationships of a learningContent object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-experience"
+ms.prod: "employee-learning"
 doc_type: apiPageType
 ---
 
@@ -67,7 +67,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.vivaLearning.learningContent"
+  "@odata.type": "microsoft.graph.learningContent"
 }
 -->
 ``` http

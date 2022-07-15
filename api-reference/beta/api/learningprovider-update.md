@@ -3,7 +3,7 @@ title: "Update learningProvider"
 description: "Update the properties of a learningProvider object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-experience"
+ms.prod: "employee-learning"
 doc_type: apiPageType
 ---
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**LearnnigProvider.ReadWrite**|
+|Delegated (work or school account)|LearningProvider.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -85,7 +85,6 @@ Content-Type: application/json
 
 ### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

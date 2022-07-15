@@ -3,7 +3,7 @@ title: "Introduction to Microsoft Viva Learning"
 description: "Learn how to find resources for Microsoft Viva Learning."
 ms.localizationpriority: medium
 author: "malabikaroy"
-ms.prod: "employee-experience"
+ms.prod: "employee-learning"
 doc_type: conceptualPageType
 ---
 

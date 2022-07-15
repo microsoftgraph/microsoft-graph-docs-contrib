@@ -3,7 +3,7 @@ title: "Delete learningContent"
 description: "Delete a learningContent object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-experience"
+ms.prod: "employee-learning"
 doc_type: apiPageType
 ---
 
@@ -54,22 +54,19 @@ The following is an example of a request.
   "name": "delete_learningcontent"
 }
 -->
-``` http 
-DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='27rg2ifb28gf28')
+``` http
+DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='27rg2ifb28gf28')/$ref
 ```
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-Returns 204 No Content
-
-
+HTTP/1.1 204 No Content
 ```
 
