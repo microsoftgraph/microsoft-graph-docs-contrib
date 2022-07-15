@@ -129,10 +129,7 @@ Refer FAQ for any failure.
 Accept should trigger the API  
 
 ## 3.	IMPLEMENT REGISTER PROVIDER API INTEGRATION 
-                   Diagram –1: Register Provider
-
- 
-
+                 
 i.	Implement admin consent re-direct URI handler. This handler would get the tenant from the successful response of admin consent URL. 
 Refer to Process Code Method of OnboardingController.cs in Azure Samples. GitHub link below in step ii.
 
@@ -148,8 +145,7 @@ ii.	Acquire Token with delegated permissions, invoke register provider API with 
 For successful response- 200, registrationId for tenant is returned in response. This registrationId needs to be stored at Provider end along with tenant id. And needs to be used in consequent calls.
 RECOMMENDATION ON ACQUIRING TOKEN FLOW. Multi tenant client_credential use · AzureAD/microsoft-authentication-library-for-dotnet Wiki · GitHub
 ## 4.	IMPLEMENT REGISTER LEARNING CONTENT API INTEGRATION                
-  			Diagram – 2: Push Learning Content
-          
+  			         
 i.	Implement a recurring application process to generate token and push learning content for the enabled tenants with application permissions.
 ii.	Use app-only token and registrationId created in step C ii.  for ingesting the learning content in Viva Learning. 
 
