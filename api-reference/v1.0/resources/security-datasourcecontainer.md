@@ -51,7 +51,9 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.security.dataSourceContainer",
   "id": "String (identifier)",
   "status": "String",
-  "holdStatus": "String",
+  "holdStatus": {
+    "@odata.type" : "microsoft.graph.security.dataSourceHoldStatus"
+  },
   "lastModifiedDateTime": "String (timestamp)",
   "releasedDateTime": "String (timestamp)",
   "displayName": "String",

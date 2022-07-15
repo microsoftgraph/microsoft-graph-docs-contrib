@@ -60,7 +60,9 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.security.userSource",
   "id": "String (identifier)",
   "displayName": "String",
-  "holdStatus": "String",
+  "holdStatus": {
+    "@odata.type" : "microsoft.graph.security.dataSourceHoldStatus"
+  },
   "createdDateTime": "String (timestamp)",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
