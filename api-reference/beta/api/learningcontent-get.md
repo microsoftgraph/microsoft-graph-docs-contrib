@@ -67,7 +67,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.vivaLearning.learningContent"
+  "@odata.type": "microsoft.graph.learningContent"
 }
 -->
 ``` http
