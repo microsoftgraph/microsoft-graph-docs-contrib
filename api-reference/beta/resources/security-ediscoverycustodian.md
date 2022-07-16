@@ -70,7 +70,7 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |lastIndexOperation|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)|Operation entity that represents the latest indexing for the custodian.|
 |siteSources|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Data source entity for SharePoint sites associated with the custodian.|
 |unifiedGroupSources|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) collection|Data source entity for groups associated with the custodian.|
-|userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Data source entity for a the custodian. This is the container for a custodian's mailbox and OneDrive for Business site.|
+|userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Data source entity for a custodian. This is the container for a custodian's mailbox and OneDrive for Business site.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

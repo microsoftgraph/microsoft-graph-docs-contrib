@@ -43,7 +43,7 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |lastModifiedDateTime|DateTimeOffset|The date and time the legal hold was last modified. |
 |status|microsoft.graph.security.policyStatus|The status of the legal hold. Possible values are: `Pending`, `Error`, `Success`.|
 
-### legalHoldStatus values
+### policyStatus values
 
 |Member|Description|
 |:---|-----------|
@@ -54,8 +54,8 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|siteSources|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|**TODO: Add Description**|
-|userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|**TODO: Add Description**|
+|siteSources|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Data sources that represent SharePoint sites.|
+|userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Data sources that represent Exchange mailboxes.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

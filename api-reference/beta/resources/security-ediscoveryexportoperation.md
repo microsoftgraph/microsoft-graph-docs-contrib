@@ -40,6 +40,24 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
+### exportOptions values
+
+|Member|Description|
+|:----|-----------|
+|originalFiles|Include original files in native format. For example: docx, xlsx, pptx, doc, xlst, pptm, etc.|
+|text|Include extracted text from the original files.|
+|pdfReplacement|Replace original file with PDF version when available.|
+|fileInfo|Include metadata of original files in a load file.|
+|tags|Include tag information in fileInfo.|
+
+### exportFileStructure values
+
+|Member|Description|
+|:----|-----------|
+|None|Default file structure.|
+|directory|All files in a singe folder called NativeFiles.|
+|pst|Mails will be grouped in pst format.|
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
