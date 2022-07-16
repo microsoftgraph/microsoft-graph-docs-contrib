@@ -14638,36 +14638,18 @@ items:
             href: resources/attacksimulationrepeatoffender.md
           - name: Get repeat offenders
             href: api/securityreportroot-getattacksimulationrepeatoffenders.md
-        - name: Repeat offenders (deprecated)
-          items:
-          - name: Repeat offender
-            href: resources/attacksimulationrepeatoffender.md
-          - name: Get repeat offenders
-            href: api/reportroot-getattacksimulationrepeatoffenders.md
         - name: Simulation data
           items:
           - name: Simulation user coverage
             href: resources/attacksimulationsimulationusercoverage.md
           - name: Get simulation coverage for users
             href: api/securityreportroot-getattacksimulationsimulationusercoverage.md
-        - name: Simulation data (deprecated)
-          items:
-          - name: Simulation user coverage
-            href: resources/attacksimulationsimulationusercoverage.md
-          - name: Get simulation coverage for users
-            href: api/reportroot-getattacksimulationsimulationusercoverage.md
         - name: Training data
           items:
           - name: Training user coverage
             href: resources/attacksimulationtrainingusercoverage.md
           - name: Get training coverage for users
             href: api/securityreportroot-getattacksimulationtrainingusercoverage.md
-        - name: Training data (deprecated)
-          items:
-          - name: Training user coverage (deprecated)
-            href: resources/attacksimulationtrainingusercoverage.md
-          - name: Get training coverage for users
-            href: api/reportroot-getattacksimulationtrainingusercoverage.md
     - name: Search
       displayname: Microsoft Search API
       items:
@@ -14850,36 +14832,18 @@ items:
               href: resources/attacksimulationrepeatoffender.md
             - name: Get repeat offenders
               href: api/securityreportroot-getattacksimulationrepeatoffenders.md
-          - name: Repeat offenders (deprecated)
-            items:
-            - name: Repeat offender
-              href: resources/attacksimulationrepeatoffender.md
-            - name: Get repeat offenders
-              href: api/reportroot-getattacksimulationrepeatoffenders.md
           - name: Simulation data
             items:
             - name: Simulation user coverage
               href: resources/attacksimulationsimulationusercoverage.md
             - name: Get simulation coverage for users
               href: api/securityreportroot-getattacksimulationsimulationusercoverage.md
-          - name: Simulation data (deprecated)
-            items:
-            - name: Simulation user coverage
-              href: resources/attacksimulationsimulationusercoverage.md
-            - name: Get simulation coverage for users
-              href: api/reportroot-getattacksimulationsimulationusercoverage.md
           - name: Training data
             items:
             - name: Training user coverage
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
               href: api/securityreportroot-getattacksimulationtrainingusercoverage.md
-          - name: Training data (deprecated)
-            items:
-            - name: Training user coverage
-              href: resources/attacksimulationtrainingusercoverage.md
-            - name: Get training coverage for users
-              href: api/reportroot-getattacksimulationtrainingusercoverage.md
       - name: eDiscovery (preview)
         items:
         - name: Case
