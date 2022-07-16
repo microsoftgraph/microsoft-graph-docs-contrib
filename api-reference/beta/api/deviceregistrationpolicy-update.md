@@ -1,7 +1,7 @@
 ---
 title: "Update deviceRegistrationPolicy"
 description: "Update the properties of a deviceRegistrationPolicy object."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

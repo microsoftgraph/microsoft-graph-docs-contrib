@@ -48,8 +48,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|description|String|Description for the administrative unit.|
-|displayName|String|Display name for the administrative unit.|
+| description | String | Description for the administrative unit.|
+| displayName | String | Display name for the administrative unit. |
+| membershipRule | String | Dynamic membership rule for the administrative unit. For more about the rules that you can use for dynamic administrative units and dynamic groups, see [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).|
+| membershipRuleProcessingState | String | Used to control whether the dynamic membership rule is actively processed. Set to `On` when you want the dynamic membership rule to be active and `Paused` if you want to stop updating membership dynamically. |
+| membershipType | String | Membership type for the administrative unit. Can be `dynamic` or `assigned`. |
+| visibility | String | Visibility for the administrative unit. If not set, then the default is `public`. Can be set to `HiddenMembership`, which hides the membership from non-members. |
 
 Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **administrativeUnit** instance.
 
@@ -58,6 +62,7 @@ Since the **administrativeUnit** resource supports [extensions](/graph/extensibi
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
+The following example sets a dynamic membership rule on an existing administrative unit to include all users whose country is United States.
 
 ### Request
 
@@ -72,7 +77,9 @@ PATCH https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c
 Content-type: application/json
 
 {
-    "displayName": "Greater Seattle District Technical Schools"
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipRuleProcessingState": "On"
 }
 ```
 # [C#](#tab/csharp)

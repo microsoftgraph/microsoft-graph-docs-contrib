@@ -2,7 +2,7 @@
 title: "Update accessReviewScheduleDefinition"
 description: "Update an existing accessReviewScheduleDefinition object to change one or more of its properties."
 ms.localizationpriority: medium
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

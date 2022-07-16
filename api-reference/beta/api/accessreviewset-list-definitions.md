@@ -2,7 +2,7 @@
 title: "List definitions"
 description: "Retrieve accessReviewScheduleDefinition objects."
 ms.localizationpriority: medium
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
