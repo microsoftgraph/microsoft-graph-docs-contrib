@@ -116,3 +116,6 @@ Content-Type: application/json
 }
 ```
 
+## See also
+[securityReportRoot: getAttackSimulationRepeatOffenders](securityreportroot-getattacksimulationrepeatoffenders.md)
+
