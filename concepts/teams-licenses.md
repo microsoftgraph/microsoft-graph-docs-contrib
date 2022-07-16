@@ -98,7 +98,7 @@ through the [Microsoft 365 Developer Program](https://developer.microsoft.com/mi
 Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is added up and compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;apps won't run out of seeded capacity if another app runs out.
 
 | Billing model | Sample functions | Seeded Capacity | License required | Azure subscription required | 
-|:-----------|:-------------|:-------------|:-----------|
+|:-----------|:---------------|:---------------|:-----------|:-----------|
 | `model=A` | Security and Compliance | See [`model=A` details](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
 | `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | None | No | Yes | 
 | `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | 500 messages per month per app | No | No | 
