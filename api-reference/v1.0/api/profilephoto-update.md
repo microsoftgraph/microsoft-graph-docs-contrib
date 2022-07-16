@@ -11,11 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the photo for the specified contact, group, team, or user in a tenant. The size of the photo you can update to must be under 8MB.
+Update the photo for the specified contact, group, team, or user in a tenant. The size of the photo you can update to must be under 8 MB.
 
 Due to the current limit of 4 MB on the total size of each REST request, the size of the photo you can add is also limited to 4 MB. The following are the supported dimensions for HD photos on Exchange Online: `48x48`, `64x64`, `96x96`, `120x120`, `240x240`, `360x360`, `432x432`, `504x504`, and `648x648`.
 
-You can use either PATCH or PUT for this operation in version 1.0.
+You can use either PATCH or PUT for this operation.
 
 > **Note:** This operation supports only a user's work or school mailboxes and not personal mailboxes.
 
@@ -98,7 +98,7 @@ In the request body, include the binary data of the photo in the request body.
 If successful, this method returns a `200 OK` response code.
 
 ### To update the profile photo of a team
-If successful, this method returns a `204 NoContent` response code for updating a photo for the team.
+If successful, this method returns a `204 No Content` response code for updating a photo for the team.
 
 ## Example
 
@@ -139,8 +139,6 @@ Binary data for the image
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response"
