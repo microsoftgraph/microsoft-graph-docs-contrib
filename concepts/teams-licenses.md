@@ -101,11 +101,10 @@ A billing model must be send in the query parameter, if passing `model=A` proper
 |:-----------|:-------------|:-------------|:-----------|
 | `model=A` | Security and Compliance | See [`model=A` details](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
 | `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | None | No | Yes | 
-| `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | 500 messages per month per app | No | No (Limited to 500 messages per month per app) | 
+| `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | 500 messages per month per app | No | No (Limited to seeded capacity) | 
 
 Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is added up and compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;apps won't run out of seeded capacity if another app runs out.
 
-The seeded capacity differs by API; see [`model=A` requirements](#modela-requirements) and [`model=B` requirements](#modelb-requirements).
 
 ## Payment related errors
 
@@ -138,15 +137,10 @@ Please note that the organization that owns the app registration is responsible 
 |:---------------|:--------|
 | What should I expect after providing an Azure subscription ? | You can continue calling these metered APIs, we will contact the email provided in the request form to onboard the registered application to billing. |
 | Do I need to provide an Azure suscription if my application is not calling metered APIs ? | No. If you need to call other APIs please refer to the request form in [protected APIs](/graph/api/teams-protected-apis). |
-| What happens if no Azure subscription is provided ? | 
-&check;No payment related errors if the application is not calling metered APIs
-&check;If no model is being passed, `evaluation model` will be used by default.
-&check;If calling a metered API passing `model=A` a Microsoft 365 E5 eligible license and Azure subscription should be active.
-&check;If passing `model=B` when calling metered APIs, an active Azure subscription should be provided to ensure service continuity.
-&check;An active Azure subscription is required to ensure service continuity for most scenarios. |
+| What happens if no Azure subscription is provided ? | •  No payment related errors if the application is not calling metered APIs. <br> •  If no model is being passed, `evaluation model` will be used by default.<br> •  If calling a metered API passing `model=A` a Microsoft 365 E5 eligible license and Azure subscription should be active.<br> •  If passing `model=B` when calling metered APIs, an active Azure subscription should be provided to ensure service continuity. <br> •   An active Azure subscription is required to ensure service continuity for most scenarios. |
 | How do I create an Azure subscription ? | The Azure Subscription must be available in the same tenant where the App is registered. Customers with MCA or EA agreements can get a subscription from their existing account. Is possible to create a PAYG subscription using a credit card or pay by check or wire transfer, for details see [cost management and billing](/azure/cost-management-billing/microsoft-customer-agreement/). |
 | Who is responsible for the payment in case of multitenat apps ? | The organization that owns the app registration. |
-| Is there a charge when no message is returned using any model ? | To discourage frequent [polling](/graph/api/resources/teams-api-overview?view=graph-rest-beta#polling-requirements), API requests that return an empty list of messages will be charged 1 message. In the case of `evaluation mode` the call will count towards the 500 messages per month per app allowed. | 
-| Where can I monitor the cost and billing ? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) can use Azure Cost Analysis tool to track consumption per day or filter by meter, service name, resource id among other parameters. For more details refer to our [documentation]](/azure/cost-management-billing/microsoft-customer-agreement/). |
+| Is there a charge when no message is returned using any model ? | To discourage frequent [polling](/graph/api/resources/teams-api-overview?view=graph-rest-beta#polling-requirements), API requests that return an empty list of messages will be charged 1 message. In the case of `evaluation model` the call will count towards the 500 messages per month per app allowed. | 
+| Where can I monitor the cost and billing ? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) can use Azure Cost Analysis tool to track consumption per day or filter by meter, service name, resource id among other parameters. For more details refer to our [documentation](/azure/cost-management-billing/microsoft-customer-agreement/). |
 | Is there a volume discount ? | Flat rates apply. |  
 | Are these APIs enrolled in [Microsoft Azure Consumption Commitment (MACC) program](azure-consumption-commitment-enrollment#macc-program) ? | Not at this moment.| 
