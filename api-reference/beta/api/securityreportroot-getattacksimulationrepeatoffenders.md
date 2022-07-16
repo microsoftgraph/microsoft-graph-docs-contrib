@@ -25,6 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Reports.Read.All                            |
 
 ## HTTP request
+[!INCLUDE [attacksim-deprecate-queryurl-reportapi](../includes/attacksim-deprecate-queryurl-reportapi.md)]
 
 <!-- {
   "blockType": "ignored"
@@ -32,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /reports/security/getAttackSimulationRepeatOffenders
+GET /reports/getAttackSimulationRepeatOffenders
 ```
 
 ## Request headers

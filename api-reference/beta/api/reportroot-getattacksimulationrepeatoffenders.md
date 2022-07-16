@@ -7,16 +7,12 @@ ms.prod: "reports"
 doc_type: apiPageType
 ---
 
-# reportRoot: getAttackSimulationRepeatOffenders
+# reportRoot: getAttackSimulationRepeatOffenders (deprecated)
 Namespace: microsoft.graph
-
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
-
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-ast-reportapi.md)]
+[!INCLUDE [attacksim-deprecate-queryurl-reportapi](../includes/attacksim-deprecate-queryurl-reportapi.md)]
 
 List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns.
 
