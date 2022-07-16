@@ -29,6 +29,12 @@ None.
 |includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 |holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the **unifiedGroupSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 
+### sourceType values
+|Member|Description|
+|:----|-----------|
+| mailbox | Represents a mailbox.|
+| site | Represents a SharePoint site.|
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
