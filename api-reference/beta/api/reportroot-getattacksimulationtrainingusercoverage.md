@@ -7,12 +7,10 @@ ms.prod: "reports"
 doc_type: apiPageType
 ---
 
-# reportRoot: getAttackSimulationTrainingUserCoverage
+# reportRoot: getAttackSimulationTrainingUserCoverage (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-ast-reportapi.md)]
 
 List [training coverage](../resources/attacksimulationtrainingusercoverage.md) for each user of a tenant in attack simulation and training campaigns.
 
@@ -29,6 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+[!INCLUDE [attacksim-deprecate-queryurl-reportapi](../includes/attacksim-deprecate-queryurl-reportapi.md)]
 <!-- {
   "blockType": "ignored"
 }
