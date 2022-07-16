@@ -55,8 +55,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String",
-  "height": int32,
-  "width": int32
+  "height": 240,
+  "width": 240
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
