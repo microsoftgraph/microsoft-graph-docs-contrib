@@ -37,7 +37,7 @@ Here is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "microsoft.graph.deviceScopeActionResult",
+  "@odata.type": "#microsoft.graph.deviceScopeActionResult",
   "deviceScopeAction": "String",
   "deviceScopeId": "String",
   "status": "String",

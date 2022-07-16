@@ -1,6 +1,6 @@
 ---
 title: Use external groups to manage permissions to Microsoft Graph connectors data sources
-description: External groups let you manage permissions to view external items in a Microsoft Graph connection, and connect to data sources outside Azure AD groups.
+description: Learn how to use external groups to manage permissions to view external items in a Microsoft Graph connection and connect to data sources outside Azure AD groups.
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
@@ -9,9 +9,9 @@ ms.localizationpriority: medium
 
 # Use external groups to manage permissions to Microsoft Graph connectors data sources
 
-[External groups](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) let you manage permissions to view [external items](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) in a Microsoft Graph connection and connect to data sources outside Azure Active Directory (Azure AD) groups.
+[External groups](/graph/api/resources/externalconnectors-externalgroup) let you manage permissions to view [external items](/graph/api/resources/externalconnectors-externalitem) in a Microsoft Graph connection and connect to data sources outside Azure Active Directory (Azure AD) groups.
 
-For data sources that rely on Azure AD users and groups, you set permissions on external items by associating an access control list (ACL) with an Azure AD user and group ID when [creating](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0) or updating the external items.
+For data sources that rely on Azure AD users and groups, you set permissions on external items by associating an access control list (ACL) with an Azure AD user and group ID when [creating](/graph/api/externalconnectors-externalconnection-put-items) or updating the external items.
 
 However, for data sources that use non-Azure AD groups or group-like constructs such as Salesforce Profiles, Dynamics Business Units, SharePoint groups, ServiceNow local groups, or Confluence local groups, we recommend that you use *external groups*.
 
@@ -45,10 +45,10 @@ To use external groups in your connection, follow these steps:
 
 External groups belong to a connection. To create external groups in your connections, follow these steps:
 
-1. Use the [groups API](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) in Microsoft Graph, as shown in the following example.
+1. Use the [groups API](/graph/api/resources/group) in Microsoft Graph, as shown in the following example.
 
     > [!NOTE]
-    > The [displayName](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true#properties) and **description** are optional fields.
+    > The [displayName](/graph/api/resources/externalconnectors-externalgroup#properties) and **description** are optional fields.
 
     ```http
     POST /external/connections/{connectionId}/groups
@@ -151,7 +151,7 @@ Keep the membership of your external group up to date in Microsoft Graph. When m
 
 ### Manage external groups and membership
 
-You can use the groups API to manage your external groups and group membership. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) and [externalGroupMember](/graph/api/resources/externalconnectors-externalgroupmember?view=graph-rest-beta&preserve-view=true&viewFallbackFrom=graph-rest-1.0).
+You can use the groups API to manage your external groups and group membership. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup) and [externalGroupMember](/graph/api/resources/externalconnectors-externalgroupmember).
 
 ## Next steps
 

@@ -23,10 +23,10 @@ scope.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetReviewers( []AccessReviewReviewerScope {
 	msgraphsdk.NewAccessReviewReviewerScope(),
-	SetAdditionalData(map[string]interface{}{
-		"query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
-		"queryType": "MicrosoftGraph",
-	}
+query := "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+	SetQuery(&query)
+queryType := "MicrosoftGraph"
+	SetQueryType(&queryType)
 }
 settings := msgraphsdk.NewAccessReviewScheduleSettings()
 requestBody.SetSettings(settings)

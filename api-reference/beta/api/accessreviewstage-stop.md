@@ -2,7 +2,7 @@
 title: "accessReviewStage: stop"
 description: "Stop an access review stage that's in progress."
 ms.localizationpriority: medium
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

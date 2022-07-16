@@ -1,7 +1,7 @@
 ---
 title: "deviceRegistrationPolicy resource type"
 description: "Represents the policy scope that controls quota restrictions, additional authentication, and authorization policies for the Azure Active Directory tenant."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
