@@ -105,3 +105,5 @@ Content-Type: application/json
 }
 ```
 
+## See also
+[reportRoot: getAttackSimulationTrainingUserCoverage](reportroot-getattacksimulationtrainingusercoverage.md) (deprecated)

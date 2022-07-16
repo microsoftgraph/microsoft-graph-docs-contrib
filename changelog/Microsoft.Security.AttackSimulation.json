@@ -13,35 +13,59 @@
         {
           "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
           "ApiChange": "Resource",
-          "ChangedApiName": "securityReportsRoot",
+          "ChangedApiName": "securityReportRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [securityReportsRoot](https://docs.microsoft.com/en-us/graph/api/resources/securityReportsRoot?view=graph-rest-beta) resource",
-          "Target": "securityReportsRoot"
+          "Description": "Added the [securityReportRoot](https://docs.microsoft.com/en-us/graph/api/resources/securityReportRoot?view=graph-rest-beta) resource",
+          "Target": "securityReportRoot"
         },
         {
           "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
           "ApiChange": "Method",
           "ChangedApiName": "getAttackSimulationRepeatOffenders",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationRepeatOffenders](https://docs.microsoft.com/en-us/graph/api/securityReportsRoot?view=graph-rest-beta) method to the [securityReportsRoot](https://docs.microsoft.com/en-us/graph/api/securityReportsRoot?view=graph-rest-beta) resource.",
-          "Target": "securityReportsRoot"
+          "Description": "Added the [getAttackSimulationRepeatOffenders](https://docs.microsoft.com/en-us/graph/api/securityreportroot-getAttackSimulationRepeatOffenders?view=graph-rest-beta) method to the [securityReportRoot](https://docs.microsoft.com/en-us/graph/api/resources/securityreportroot?view=graph-rest-beta) resource.",
+          "Target": "securityReportRoot"
         },
         {
           "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
           "ApiChange": "Method",
           "ChangedApiName": "getAttackSimulationSimulationUserCoverage",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationSimulationUserCoverage](https://docs.microsoft.com/en-us/graph/api/securityReportsRoot?view=graph-rest-beta) method to the [securityReportsRoot](https://docs.microsoft.com/en-us/graph/api/securityReportsRoot?view=graph-rest-beta) resource.",
-          "Target": "securityReportsRoot"
+          "Description": "Added the [getAttackSimulationSimulationUserCoverage](https://docs.microsoft.com/en-us/graph/api/securityReportRoot-getAttackSimulationSimulationUserCoverage?view=graph-rest-beta) method to the [securityReportRoot](https://docs.microsoft.com/en-us/graph/api/resources/securityreportroot?view=graph-rest-beta) resource.",
+          "Target": "securityReportRoot"
         },
         {
           "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
           "ApiChange": "Method",
           "ChangedApiName": "getAttackSimulationTrainingUserCoverage",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationTrainingUserCoverage](https://docs.microsoft.com/en-us/graph/api/securityReportsRoot?view=graph-rest-beta) method to the [securityReportsRoot](https://docs.microsoft.com/en-us/graph/api/securityReportsRoot?view=graph-rest-beta) resource.",
-          "Target": "securityReportsRoot"
-        }
+          "Description": "Added the [getAttackSimulationTrainingUserCoverage](https://docs.microsoft.com/en-us/graph/api/securityReportRoot-getAttackSimulationTrainingUserCoverage?view=graph-rest-beta) method to the [securityReportRoot](https://docs.microsoft.com/en-us/graph/api/resources/securityReportRoot?view=graph-rest-beta) resource.",
+          "Target": "securityReportRoot"
+        },
+        {
+          "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAttackSimulationRepeatOffenders",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [getAttackSimulationRepeatOffenders](https://docs.microsoft.com/en-us/graph/api/reportroot-getattacksimulationrepeatoffenders?view=graph-rest-beta) method of the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAttackSimulationSimulationUserCoverage",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [getAttackSimulationSimulationUserCoverage](https://docs.microsoft.com/en-us/graph/api/reportroot-getattacksimulationsimulationusercoverage?view=graph-rest-beta) method of the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAttackSimulationTrainingUserCoverage",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [getAttackSimulationTrainingUserCoverage](https://docs.microsoft.com/en-us/graph/api/reportroot-getattacksimulationtrainingusercoverage?view=graph-rest-beta) method of the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        }  
       ],
       "Id": "475ac9b0-fdcb-4276-bd0d-48170d72a9e0",
       "Cloud": "Prod",

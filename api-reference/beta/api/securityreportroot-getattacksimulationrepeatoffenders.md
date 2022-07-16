@@ -100,3 +100,5 @@ Content-Type: application/json
 
 ```
 
+## See also
+[reportRoot: getAttackSimulationRepeatOffenders](reportroot-getattacksimulationrepeatoffenders.md) (deprecated)
