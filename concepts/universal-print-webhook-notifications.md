@@ -32,6 +32,7 @@ For details about how to trigger a task, see [Enable pull printing](./universal-
 
 >[!NOTE]
 >For listening to the change notifications for JobFetchable event, a **printTaskDefinition** resource is not required.
+
 >The application should handle duplicate notifications.
 
 ### Create an application to listen to notifications
