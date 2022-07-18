@@ -36,10 +36,10 @@ Represents an external partner setting on Cloud PC.
 ### cloudPcExternalPartnerStatus values 
 |Member|Description|
 |:---|:---|
-|notAvailable| Connection has not been established or the customer disabled the connection.|
-|available| Connection has just been enabled, but no heartbeat received yet.|
-|healthy| Connection is enabled and heartbeat is being received.|
-|unhealthy| Connection is enabled and heartbeat is not being received.|
+|notAvailable|The connection has not been established or the customer disabled the connection.|
+|available|The connection has just been enabled, but no heartbeat received yet.|
+|healthy|The connection is enabled and heartbeat is being received.|
+|unhealthy|The connection is enabled and heartbeat is not being received.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
