@@ -844,7 +844,7 @@ Content-Type: application/json
 To join the scheduled meeting we will need to get the thread ID, message ID, organizer ID and the tenant ID in which the meeting is scheduled.
 This information can be obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
-The values of authorization token, callback url, application ID, application name, user ID, user name and tenant ID must be replaced along with the details obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API with actual values to make the example work.
+The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced along with the details obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API with actual values to make the example work.
 
 > **Note:** This example needs the `Calls.JoinGroupCalls.All` permission or the `Calls.JoinGroupCalls.Chat` [resource-specific permission](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -1579,7 +1579,7 @@ Content-Type: application/json
 ### Example 9: Join channel meeting with service hosted media
 Meeting inside a channel requires specific details like thread ID, message ID, and organizer details that can be obtained using the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
-The values of authorization token, callback url, application ID, application name, user ID, user name and tenant ID must be replaced along with the details obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API with actual values to make the example work.
+The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced along with the details obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API with actual values to make the example work.
 
 > **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
 
@@ -1724,7 +1724,7 @@ Content-Type: application/json
 
 ### Example 10: Join channel meeting as a guest with service hosted media
 For joining a channel meeting as a guest you will need to create a guest [identity](../resources/identityset.md) and add it as the call source in the join meeting request.
-The display name is the name you want to be displayed in the meeting for your guest identity. The id may be a unique id identifying the guest identity.
+The display name is the name you want to be displayed in the meeting for your guest identity. The ID may be a unique ID identifying the guest identity.
 
 > **Note:** This example needs the `Calls.JoinGroupCallsAsGuest.All` permission.
 

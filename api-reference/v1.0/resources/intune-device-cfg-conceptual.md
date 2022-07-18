@@ -65,7 +65,6 @@ The following Graph resources are available to manage settings and features on d
 - [Device configuration user overview](intune-deviceconfig-deviceconfigurationuseroverview.md)
 - [Device configuration user status](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Device management](intune-deviceconfig-devicemanagement.md)
-- [Device management](intune-deviceconfig-devicemanagement.md)
 - [Device management settings](intune-deviceconfig-devicemanagementsettings.md)
 - [Device threat protection level](intune-deviceconfig-devicethreatprotectionlevel.md)
 - [Diagnostic data submission mode](intune-deviceconfig-diagnosticdatasubmissionmode.md)

@@ -1,6 +1,6 @@
 ---
 title: "Delete ediscoverySearch"
-description: "Deletes an ediscoverySearch object."
+description: "Delete an ediscoverySearch object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [ediscoverySearch](../resources/security-ediscoverysearch.md) object.
+Delete an [ediscoverySearch](../resources/security-ediscoverysearch.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -84,8 +84,8 @@ DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

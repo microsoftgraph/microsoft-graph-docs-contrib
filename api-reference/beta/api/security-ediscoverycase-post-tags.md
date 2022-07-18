@@ -1,5 +1,5 @@
 ---
-title: "Create ediscoveryReviewTag"
+title: "Create tags"
 description: "Create a new ediscoveryReviewTag object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create ediscoveryReviewTag
+# Create tags
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new ediscoveryReviewTag object.
+Create a new [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,21 +42,21 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.
 
-You can specify the following properties when creating an **ediscoveryReviewTag**.
+You can specify the following properties when you create an **ediscoveryReviewTag**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name of the tag. Required.|
 |description|String|Description of the tag. Optional.|
-|childSelectability|String|This value controls whether the UX presents the tags as checkboxes or a radio button group. The possible values are: `One`, `Many`. Required.|
+|childSelectability|microsoft.graph.security.childSelectability|This value controls whether the UX presents the tags as checkboxes or a radio button group. The possible values are: `One`, `Many`. Required.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object in the response body.
 
 ## Examples
 
-### Create a tag
+### Example 1: Create a tag
 #### Request
 The following is an example of a request.
 
@@ -100,7 +100,7 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ce
 
 
 #### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -133,7 +133,7 @@ Content-Type: application/json
 }
 ```
 
-### Create a tag with a parent
+### Example 2: Create a tag with a parent
 #### Request
 The following is an example of a request.
 <!-- {
@@ -154,7 +154,7 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ce
 
 
 #### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

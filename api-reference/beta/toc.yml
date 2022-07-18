@@ -222,9 +222,9 @@ items:
           - name: Build a web app (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
           - name: Build a web app (React)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/beta
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
           - name: Build a web app (Angular)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/beta
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
           - name: Build a SharePoint web part
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
           - name: Build a Teams tab
@@ -1125,6 +1125,14 @@ items:
           href: api/serviceprincipal-update.md
         - name: Delete service principal
           href: api/serviceprincipal-delete.md
+        - name: List deleted service principals
+          href: api/directory-deleteditems-list.md
+        - name: Get deleted service principal
+          href: api/directory-deleteditems-get.md
+        - name: Permanently delete service principal
+          href: api/directory-deleteditems-delete.md
+        - name: Restore deleted service principal
+          href: api/directory-deleteditems-restore.md
         - name: List createdObjects
           href: api/serviceprincipal-list-createdobjects.md
         - name: List ownedObjects
@@ -1773,7 +1781,7 @@ items:
           - name: List review sets
             href: api/ediscovery-case-list-reviewsets.md
           - name: Create review set
-            href: /api/ediscovery-case-post-reviewsets.md
+            href: api/ediscovery-case-post-reviewsets.md
           - name: Get settings
             href: api/ediscovery-casesettings-get.md
           - name: Update settings
@@ -1783,11 +1791,11 @@ items:
           - name: List source collections
             href: api/ediscovery-case-list-sourcecollections.md
           - name: Create source collection
-            href: /api/ediscovery-case-post-sourcecollections.md
+            href: api/ediscovery-case-post-sourcecollections.md
           - name: List tags
-            href: /api/ediscovery-case-list-tags.md
+            href: api/ediscovery-case-list-tags.md
           - name: Create tag
-            href: /api/ediscovery-case-post-tags.md
+            href: api/ediscovery-case-post-tags.md
         - name: Custodian
           href: resources/ediscovery-custodian.md
           items:
@@ -9785,7 +9793,7 @@ items:
           - name: Windows Hello for business PIN usage
             href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
         - name: Role-based access control (RBAC)
-          href: /resources/intune-rbac-conceptual.md
+          href: resources/intune-rbac-conceptual.md
           items:
           - name: Device and app management assigned role details
             href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -12347,7 +12355,7 @@ items:
             - name: Update
               href: api/crosstenantaccesspolicyconfigurationdefault-update.md
             - name: Reset to system default
-              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md            
           - name: Partner settings
             items:
             - name: Cross-tenant access partner settings
@@ -12361,7 +12369,7 @@ items:
             - name: Update
               href: api/crosstenantaccesspolicyconfigurationpartner-update.md
             - name: Delete
-              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
+              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md              
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -12382,6 +12390,13 @@ items:
             href: api/oauth2permissiongrant-delete.md
           - name: Get delta
             href: api/oauth2permissiongrant-delta.md
+        - name: External identities policy (preview)
+          href: resources/externalidentitiespolicy.md
+          items:
+            - name: Get
+              href: api/externalidentitiespolicy-get.md
+            - name: Update
+              href: api/externalidentitiespolicy-update.md    
         - name: Identity protection
           href: resources/identityprotection-overview.md
           items:
@@ -14829,7 +14844,7 @@ items:
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
               href: api/reportroot-getattacksimulationtrainingusercoverage.md
-      - name: eDiscovery (preview)
+      - name: eDiscovery
         items:
         - name: Case
           href: resources/security-ediscoverycase.md
@@ -14858,9 +14873,9 @@ items:
             href: api/security-ediscoverycase-list-noncustodialdatasources.md
           - name: Create non-custodial data source
             href: api/security-ediscoverycase-post-noncustodialdatasources.md
-          - name: List legal holds
+          - name: List legal holds (preview)
             href: api/security-ediscoverycase-list-legalholds.md
-          - name: Create legal hold
+          - name: Create legal hold (preview)
             href: api/security-ediscoverycase-post-legalholds.md
           - name: List searches
             href: api/security-ediscoverycase-list-searches.md
@@ -14942,7 +14957,7 @@ items:
             href: api/security-ediscoverynoncustodialdatasource-updateindex.md
           - name: Get last index operation
             href: api/security-ediscoverycustodian-list-lastindexoperation.md
-        - name: Hold policy
+        - name: Hold policy (preview)
           href: resources/security-ediscoveryholdpolicy.md
           items:
           - name: List
@@ -14978,7 +14993,7 @@ items:
             href: api/security-ediscoverycase-delete-searches.md
           - name: Estimate statistics
             href: api/security-ediscoverysearch-estimatestatistics.md
-          - name: Purge data
+          - name: Purge data (preview)
             href: api/security-ediscoverysearch-purgedata.md
           - name: List custodian sources
             href: api/security-ediscoverysearch-list-custodiansources.md
@@ -15009,7 +15024,7 @@ items:
             href: api/security-ediscoveryreviewset-get.md
           - name: Add to review set
             href: api/security-ediscoveryreviewset-addtoreviewset.md
-          - name: Export
+          - name: Export (preview)
             href: api/security-ediscoveryreviewset-export.md
             items:
               - name: Get download url
@@ -15027,16 +15042,16 @@ items:
               href: api/security-ediscoveryreviewsetquery-update.md
             - name: Delete
               href: api/security-ediscoveryreviewset-delete-queries.md
-            - name: Export
+            - name: Export (preview)
               href: api/security-ediscoveryreviewsetquery-export.md
               items:
               - name: Get download url
                 href: api/security-ediscoveryexportoperation-getdownloadurl.md
             - name: Apply tags
               href: api/security-ediscoveryreviewsetquery-applytags.md
-            - name: Run
+            - name: Run (preview)
               href: api/security-ediscoveryreviewsetquery-run.md
-          - name: File
+          - name: File (preview)
             href: resources/security-ediscoveryfile.md
             items:
             - name: List
@@ -15681,6 +15696,10 @@ items:
           href: api/channel-update-members.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Delete message
+          href: api/chatmessage-softdelete.md
+        - name: Undo message deletion
+          href: api/chatmessage-undosoftdelete.md
         - name: Check user access
           href: api/channel-doesuserhaveaccess.md
         - name: List teams sharing a channel
@@ -15759,6 +15778,10 @@ items:
           href: api/chatmessage-post-replies.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Delete message
+          href: api/chatmessage-softdelete.md
+        - name: Undo message deletion
+          href: api/chatmessage-undosoftdelete.md
         - name: Get messages across all channels
           href: api/channel-getallmessages.md
         - name: Get messages across all chats

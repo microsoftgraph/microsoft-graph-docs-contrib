@@ -101,14 +101,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.todoTaskList",
-    "id": "5daae1ed-e1ed-5daa-ede1-aa5dede1aa5d",
-    "displayName": "Monthly tasks",
-    "isOwner": "true",
-    "isShared": "false",
-    "wellknownListName": "defaultList"
-  }
+  "@odata.type": "#microsoft.graph.todoTaskList",
+  "id": "5daae1ed-e1ed-5daa-ede1-aa5dede1aa5d",
+  "displayName": "Monthly tasks",
+  "isOwner": true,
+  "isShared": false,
+  "wellknownListName": "defaultList"
 }
 ```
 
