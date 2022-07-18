@@ -1,6 +1,6 @@
 ---
 title: "reportRoot resource type"
-description: "Container for Azure AD reporting resources."
+description: "Represents a container for Azure Active Directory (Azure AD) reporting resources."
 author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Container that exposes navigation properties for Azure AD reporting resources.
+Represents a container for Azure Active Directory (Azure AD) reporting resources.
 
 ## Methods
 
@@ -33,8 +33,7 @@ Container that exposes navigation properties for Azure AD reporting resources.
 |[getCredentialUsageSummary](../api/reportroot-getcredentialusagesummary.md)|[credentialUsageSummary](../resources/credentialusagesummary.md) collection|**TODO: Add -->
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
