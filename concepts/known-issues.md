@@ -508,7 +508,8 @@ The following limitations apply to query parameters:
   * Not supported in Azure AD B2C tenants.
   * When using the `$count=true` query string when querying against directory resources, the `@odata.count` property will be present only in the first page of the paged data.
 * `$top`:
-  * For the `/messages` endpoint, `$top` can return a result set less than the specified page size in some scenarios along with a `@odata.nextLink` parameter. More items might remain in the result set, so applications should continue querying until there is no `@odata.nextLink` returned in the response body.
+  * In some scenarios, using `$top` with the `/me/messages` or `/me/mailFolders/{id}/messages` endpoint can return a result set less than the specified page size along with a `@odata.nextLink` parameter. More items might remain in the result set, so applications should continue querying until there is no `@odata.nextLink` returned in the response body.
+  * This can happen if the mailFolder contains other Exchange item types apart from messages. To avoid this, it's recommended to use $top with a specific mailFolder (like `/me/mailFolders/Inbox/messages`) which *usually* contains only messages as opposed to `/me/messages` which tries to get messages from the entire mailbox.
 * Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 
 
