@@ -30,18 +30,10 @@ To enable these scenarios, the following Viva Learning APIs are supported.
   * Assignments sync: APIs for syncing in the learner's assignments within Viva Learning.
   * Completion sync: APIs for syncing in the learner's completed records within Viva Learning.
 
-## Scenarios supported  
-
-![An image showing the APIs supported by Viva Learning](./images/api-details.png)
-Graphical user interface, text, application, chat or text message
-
-Description automatically generated
 
 ## How integrations work
 
-The following diagram helps explain how the Viva Learning integrations through out-of-the-box integrations (pull model) and through Microsoft Graph APIs (push model) work.  
-
-![An image showing Viva Learning integrations through Out of Box Integrations (Pull model) and through Graph APIs (Push model) work.](./images/learning-source-integrations.png)
+The Viva Learning integrations through out-of-the-box integrations is pull model and through Microsoft Graph APIs (push model) capability is introduced.  
 
 Once the content metadata, the learner assignment, and the completion records are synchronized into Viva Learning, they appear on Viva Learning in the following places:
 
@@ -64,10 +56,10 @@ This article focuses on the content sync APIs.
 
 Refer to these articles to learn more about Microsoft Graph:  
 
-* [Microsoft Graph Fundamentals](/learn/paths/m365-msgraph-fundamentals)
-* [Calling the Microsoft Graph API](/graph/call-api)
-* [Authentication and authorization basics for Microsoft Graph](/graph/auth/auth-concepts)
-* [Other resources are also available at the Microsoft Graph documentation](/graph/)
+* [Microsoft Graph Fundamentals](https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/)
+* [Calling the Microsoft Graph API](https://docs.microsoft.com/graph/call-api)
+* [Authentication and authorization basics for Microsoft Graph](https://docs.microsoft.com/graph/auth/auth-concepts)
+* [Other resources are also available at the Microsoft Graph documentation](https://docs.microsoft.com/graph)
 
 ## Scenarios supported
 
@@ -85,7 +77,7 @@ Refer to these articles to learn more about Microsoft Graph: 
 >**Note:** For every successful API invocation Provider needs to generate Token using resource values as given below
 > Resource for Token acquisition:  
 >
-> * Token acquisition needs to be done for: <https://graph.microsoft.com/>  
+> * Token acquisition needs to be done ,please refer: <https://graph.microsoft.com/>  
 > * Scope: : <https://graph.microsoft.com/.default>  
 
 ## Endpoints
@@ -102,7 +94,7 @@ Refer to these articles to learn more about Microsoft Graph: 
 |Retrieve Learning content      | GET   |<https://graph.microsoft.com/beta/employeeExperience/learningProviders/{registrationId}/learningContents>?$skip={skip}&$top={top)     |
 |Delete Learning content     | DELETE   |<https://graph.microsoft.com/beta/employeeExperience/learningProviders/{registrationId}/learningContents(externalId=’{externalId>}’}     |
 
-Follow these steps to onboard Viva Learning as mentioned below. Steps are marked in the above Flow Diagram for better understanding.
+Follow these steps to onboard Viva Learning as mentioned below.
 
 ## 1.	3rd party app creation 
  The one-time step for App creation is as mentioned below
@@ -113,8 +105,19 @@ C.	Add re-direct URI for the application.
 D.	From Certificates & secrets blade, upload client certificate. Note: The certificate would be used to Acquire app-only token.
 Note: As part of Registration, we are going to Allow list your AppId for the tenant. To enable content ingestion from Partner for the tenant. You should provide your App Id in the form https://aka.ms/contentsync
 
+## 2.Add permission in Multitenant Application 
+Add permission in Multitenant Application as mentioned in the table below
 
-## 2.	Implement 3rd party app provisioning in customer’s tenant Azure AD 
+| ScopeName  | DisplayName |Description |Type  | Is Admin Consent Required |Entities/APIs covered |Method |
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+| LearningContent.Read.All   | Read Learning content | Allows the app to read data for the learning content in organization's directory | Application-only | Yes | Learning Content | GET  |
+| LearningContent.ReadWrite.All  | Manage Learning content | Allows the app to upsert/read/delete data for learning content in organization's directory | Application-only | Yes | Learning Content | GET, PATCH, Delete  |
+| LearningContent.Read.All   | Read Learning content | Allows the app to read data for the learning content in organization's directory | Delegated | Yes | Learning Content | GET  |
+|LearningContent.ReadWrite.All   | Manage Learning content | Allows the app to upsert/read/delete data for learning content in organization's directory | Delegated | Yes | Learning Content | GET, PATCH, Delete  |
+| LearningProvider.Read   | Read Learning provider | Allows the app to read data for learning provider in organization's directory. | Delegated | Yes | Learning Provider | GET  |
+| LearningProvider.ReadWrite   | Manage Learning provider | Allows the app to create/update/read/delete data for learning provider in organization's directory. | Delegated | Yes | Learning Provider | GET  |
+
+## 3.	Implement 3rd party app provisioning in customer’s tenant Azure AD 
 A.	Expose Viva Learning Admin setting in Provider client interface
 B.	Implement admin consent flow to get the Provider app provisioned in the customer tenant active directory.
 To trigger the admin consent flow, launch the following url. 
@@ -128,11 +131,8 @@ Refer FAQ for any failure.
   
 Accept should trigger the API  
 
-## 3.	IMPLEMENT REGISTER PROVIDER API INTEGRATION 
-                   Diagram –1: Register Provider
-
- 
-
+## 4.	IMPLEMENT REGISTER PROVIDER API INTEGRATION 
+                 
 i.	Implement admin consent re-direct URI handler. This handler would get the tenant from the successful response of admin consent URL. 
 Refer to Process Code Method of OnboardingController.cs in Azure Samples. GitHub link below in step ii.
 
@@ -147,9 +147,8 @@ ii.	Acquire Token with delegated permissions, invoke register provider API with 
 -	Isenabled
 For successful response- 200, registrationId for tenant is returned in response. This registrationId needs to be stored at Provider end along with tenant id. And needs to be used in consequent calls.
 RECOMMENDATION ON ACQUIRING TOKEN FLOW. Multi tenant client_credential use · AzureAD/microsoft-authentication-library-for-dotnet Wiki · GitHub
-## 4.	IMPLEMENT REGISTER LEARNING CONTENT API INTEGRATION                
-  			Diagram – 2: Push Learning Content
-          
+## 5.	IMPLEMENT REGISTER LEARNING CONTENT API INTEGRATION                
+  			         
 i.	Implement a recurring application process to generate token and push learning content for the enabled tenants with application permissions.
 ii.	Use app-only token and registrationId created in step C ii.  for ingesting the learning content in Viva Learning. 
 
@@ -178,3 +177,4 @@ Here are the throttle limits for Content sync Graph APIs.
 
 8. The Supported Languages –Locale tags for the Content details within Viva Learning is as mentioned below.
 az-Latn-AZ,bg-BG,bn-IN,ca-ES,cs-CZ,da-DK,de-DE,el-GR,en-GB,es-ES,es-MX,et-EE,eu-ES,fi-FI,fil-PH,fr-CA,fr-FR,gl-ES,gu-IN,hi-IN,hr-HR,hu-HU,id-ID,is-IS,it-IT,ja-JP,ka-GE,kk-KZ,kn-IN,ko-KR,lt-LT,lv-LV,mk-MK,ml-IN,mr-IN,nb-NO,nl-NL,nn-NO,pl-PL,pt-BR,pt-PT,ro-RO,ru-RU,sk-SK,sl-SI,sq-AL,sr-Latn-RS,sv-SE,ta-IN,te-IN,th-TH,tr-TR,uk-UA,vi-VN,zh-CN,zh-TW
+

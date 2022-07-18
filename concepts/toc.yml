@@ -272,11 +272,6 @@ items:
             href: assignments-submissions-states-transition.md
           - name: Specify the default channel for assignment notifications
             href: education-build-notificationchannelurl.md
-      - name: Employee experience
-        items:
-          - name: Overview
-            href: viva-learning-concept-overview.md
-            displayName: Employee experience
       - name: Extensions
         items:
           - name: Overview
