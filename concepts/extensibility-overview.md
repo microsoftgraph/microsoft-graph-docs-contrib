@@ -470,12 +470,10 @@ The same [permissions](./permissions-reference.md) that are required to read fro
 
 For known limitations using extensions, see the [extensions section](known-issues.md#extensions) in the known issues article.
 
-## See also
+## Next steps
 
-- [Add custom properties to users using open extensions](extensibility-open-users.md)
-- [Add custom properties to groups using schema extensions](extensibility-schema-groups.md)
-- [Microsoft 365 domains](/office365/servicedescriptions/office-365-platform-service-description/domains)
-- [Adding and verifying a domain for a Microsoft 365 tenant](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [Add custom data to users using open extensions](extensibility-open-users.md)
+- [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
 
 
 <!-- Links -->
