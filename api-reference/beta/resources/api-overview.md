@@ -105,8 +105,17 @@ C.	Add re-direct URI for the application.
 D.	From Certificates & secrets blade, upload client certificate. Note: The certificate would be used to Acquire app-only token.
 Note: As part of Registration, we are going to Allow list your AppId for the tenant. To enable content ingestion from Partner for the tenant. You should provide your App Id in the form https://aka.ms/contentsync
 
+## 2.Add permission in Multitenant Application as mentioned in the table below
+| ScopeName  | DisplayName |Description |Type  | Is Admin Consent Required |Entities/APIs covered |Method |
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+| LearningContent.Read.All   | Read Learning content | Allows the app to read data for the learning content in organization's directory | Application-only | Yes | Learning Content | GET  |
+| LearningContent.ReadWrite.All  | Manage Learning content | Allows the app to upsert/read/delete data for learning content in organization's directory | Application-only | Yes | Learning Content | GET, PATCH, Delete  |
+| LearningContent.Read.All   | Read Learning content | Allows the app to read data for the learning content in organization's directory | Delegated | Yes | Learning Content | GET  |
+|LearningContent.ReadWrite.All   | Manage Learning content | Allows the app to upsert/read/delete data for learning content in organization's directory | Delegated | Yes | Learning Content | GET, PATCH, Delete  |
+| LearningProvider.Read   | Read Learning provider | Allows the app to read data for learning provider in organization's directory. | Delegated | Yes | Learning Provider | GET  |
+| LearningProvider.ReadWrite   | Manage Learning provider | Allows the app to create/update/read/delete data for learning provider in organization's directory. | Delegated | Yes | Learning Provider | GET  |
 
-## 2.	Implement 3rd party app provisioning in customer’s tenant Azure AD 
+## 3.	Implement 3rd party app provisioning in customer’s tenant Azure AD 
 A.	Expose Viva Learning Admin setting in Provider client interface
 B.	Implement admin consent flow to get the Provider app provisioned in the customer tenant active directory.
 To trigger the admin consent flow, launch the following url. 
@@ -120,7 +129,7 @@ Refer FAQ for any failure.
   
 Accept should trigger the API  
 
-## 3.	IMPLEMENT REGISTER PROVIDER API INTEGRATION 
+## 4.	IMPLEMENT REGISTER PROVIDER API INTEGRATION 
                  
 i.	Implement admin consent re-direct URI handler. This handler would get the tenant from the successful response of admin consent URL. 
 Refer to Process Code Method of OnboardingController.cs in Azure Samples. GitHub link below in step ii.
@@ -136,7 +145,7 @@ ii.	Acquire Token with delegated permissions, invoke register provider API with 
 -	Isenabled
 For successful response- 200, registrationId for tenant is returned in response. This registrationId needs to be stored at Provider end along with tenant id. And needs to be used in consequent calls.
 RECOMMENDATION ON ACQUIRING TOKEN FLOW. Multi tenant client_credential use · AzureAD/microsoft-authentication-library-for-dotnet Wiki · GitHub
-## 4.	IMPLEMENT REGISTER LEARNING CONTENT API INTEGRATION                
+## 5.	IMPLEMENT REGISTER LEARNING CONTENT API INTEGRATION                
   			         
 i.	Implement a recurring application process to generate token and push learning content for the enabled tenants with application permissions.
 ii.	Use app-only token and registrationId created in step C ii.  for ingesting the learning content in Viva Learning. 
