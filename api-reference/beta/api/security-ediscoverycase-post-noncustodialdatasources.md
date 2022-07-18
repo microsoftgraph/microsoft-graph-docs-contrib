@@ -1,5 +1,5 @@
 ---
-title: "Create ediscoveryNoncustodialDataSource"
+title: "Create nonCustodialDataSources"
 description: "Create a new ediscoveryNoncustodialDataSource object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create ediscoveryNoncustodialDataSource
+# Create nonCustodialDataSources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new ediscoveryNoncustodialDataSource object.
+Create a new [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,13 +46,15 @@ You can specify the following properties when creating an **ediscoveryNoncustodi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|dataSource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Required. Either a userSource or siteSource. For userSource, use "dataSource" : { "@odata.type" : "microsoft.graph.security.userSource", "email" : "SMTP address"}.  For site source use "dataSource" : { "@odata.type" : "microsoft.graph.security.siteSource", "site@odata.bind" : "siteId" }, where siteId can be derived from the site URL, e.g. `https://contoso.sharepoint.com/sites/HumanResources`, the Microsoft Graph request would be `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`. The ID is the first GUID listed in the ID field. Alternatively use the webUrl directly, "dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": `https://m365x809305.sharepoint.com/sites/Design-topsecret`}}
+|dataSource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Required. Either a [microsoft.graph.security.userSource](../resources/security-usersource.md) or [microsoft.graph.security.siteSource](../resources/security-sitesource.md).
 
-
+For userSource, use "dataSource" : { "@odata.type" : "microsoft.graph.security.userSource", "email" : "SMTP address"}.  
+For siteSource use "dataSource" : { "@odata.type" : "microsoft.graph.security.siteSource", "site@odata.bind" : "siteId" },
+Alternatively use the webUrl directly, "dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": `https://m365x809305.sharepoint.com/sites/Design-topsecret`}}
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object in the response body.
 
 ## Examples
 
@@ -99,7 +101,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

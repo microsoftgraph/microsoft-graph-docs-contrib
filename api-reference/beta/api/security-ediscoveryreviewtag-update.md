@@ -48,7 +48,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{ediscoveryReviewT
 |:---|:---|:---|
 |displayName|String|Display name of the tag. Required.|
 |description|String|Description of the tag. Optional.|
-|childSelectability|childSelectability|This value controls whether the UX presents the tags as checkboxes or a radio button group. The possible values are: `One`, `Many`. Required.|
+|childSelectability|microsoft.graph.security.childSelectability|This value controls whether the UX presents the tags as checkboxes or a radio button group. The possible values are: `One`, `Many`. Required.|
 
 
 ## Response
@@ -95,8 +95,8 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-c
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
