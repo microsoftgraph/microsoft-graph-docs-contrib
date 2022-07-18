@@ -26,7 +26,7 @@ Represents an external partner setting on Cloud PC.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|enableConnection|Boolean|If true, external partner api will accept incoming calls from external partner.|
+|enableConnection|Boolean|Enable or disable the connection to an external partner. If `true`, an external partner API will accept incoming calls from external partners. Required.|
 |id|String|The unique identifier for the Cloud PC external partner setting. Read-only.|
 |lastSyncDateTime|DateTimeOffset|Last data sync time for this external partner. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.|
 |partnerId|String|The external partner ID.|

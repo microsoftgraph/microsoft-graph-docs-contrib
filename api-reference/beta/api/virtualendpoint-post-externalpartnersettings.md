@@ -46,7 +46,7 @@ You can specify the following properties when you create a **cloudPcExternalPart
 
 |Property|Type|Description|
 |:---|:---|:---|
-|enableConnection|Boolean|Enable or disable external partner connection. If true, external partner api will accept incoming calls from external partner. Required.|
+|enableConnection|Boolean|Enable or disable the connection to an external partner. If `true`, an external partner API will accept incoming calls from external partners. Required.|
 |partnerId|String|The external partner ID. Required.|
 
 
