@@ -2648,6 +2648,48 @@
       "CreatedDateTime": "2022-05-03T06:10:35.3472999Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "documentSetVersionItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [documentSetVersionItem](https://docs.microsoft.com/en-us/graph/api/resources/documentSetVersionItem?view=graph-rest-1.0) resource type.",
+          "Target": "documentSetVersionItem"
+        },
+        {
+          "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "documentSetVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the [documentSetVersion](https://docs.microsoft.com/en-us/graph/api/resources/documentSetVersion?view=graph-rest-1.0) resource",
+          "Target": "documentSetVersion"
+        },
+        {
+          "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "documentSetVersions",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentSetVersions** relationship to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listItem?view=graph-rest-1.0) resource.",
+          "Target": "listItem"
+        },
+        {
+          "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added the [restore](https://docs.microsoft.com/en-us/graph/api/documentSetVersion?view=graph-rest-1.0) method to the [documentSetVersion](https://docs.microsoft.com/en-us/graph/api/documentSetVersion?view=graph-rest-1.0) resource.",
+          "Target": "documentSetVersion"
+        }
+      ],
+      "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-18T05:35:55.0887308Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
     }
   ]
 }

@@ -12,7 +12,7 @@ ms.prod: sites-and-lists
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Contains metadata about document set settings.
+Contains metadata about document set settings. A Document Set is a group of related documents that you can manage as a single entity.
 
 ## Properties
 

@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 
 Namespace: microsoft.graph
 
-Represents a document set in SharePoint.
+Represents a document set in SharePoint. A Document Set is a group of related documents that you can manage as a single entity.
 
 ## Properties
 

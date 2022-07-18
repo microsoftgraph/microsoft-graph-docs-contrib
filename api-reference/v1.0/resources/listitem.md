@@ -32,6 +32,9 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 | [Delete][]                     | No Content | Removes an item from a list.
 | [Update][]                     | [fieldValueSet][]| Update the properties on a listItem.
 | [Update column values][Update] | [fieldValueSet][]| Update column values on a listItem.
+| [List documentSetVersions](../api/listitem-list-documentsetversions.md)| Collection([documentSetVersion][]) | List all captured versions of a document set item.
+| [Create documentSetVersion](../api/listitem-post-documentsetversions.md)| [documentSetVersion][] | Create a new version of a document set item.
+| [Restore documentSetVersion](../api/documentsetversion-restore.md)| No Content | Restore the document set item to a specific version.
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -42,6 +45,7 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 
 [itemActivityStat]: itemactivitystat.md
 [fieldValueSet]: fieldvalueset.md
+[documentSetVersion]: documentSetVersion.md
 
 ## Properties
 
