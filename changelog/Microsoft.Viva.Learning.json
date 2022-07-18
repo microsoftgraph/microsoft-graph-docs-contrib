@@ -1,7 +1,15 @@
 ﻿{
   "changelog": [
     {
-      "ChangeList": [
+      "ChangeList": [      
+        {
+          "Id": "c8fe7a7c-7235-44d0-bb72-b31ca8d1b9ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "employeeExperience",
+          "ChangeType": "Addition",
+          "Description": "Added the [employeeExperience](https://docs.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource type.",
+          "Target": "employeeExperience"
+        },
         {
           "Id": "c8fe7a7c-7235-44d0-bb72-b31ca8d1b9ed",
           "ApiChange": "Resource",
