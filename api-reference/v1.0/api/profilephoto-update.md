@@ -95,14 +95,13 @@ In the request body, include the binary data of the photo in the request body.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `200 OK` response code or a `204 No Content` response code for updating the photo of a **team**.
 
-### To update the profile photo of a team
-If successful, this method returns a `204 No Content` response code for updating a photo for the team.
+## Examples
 
-## Example
+### Example 1: Update the photo of the user
 
-### Request
+#### Request
 
 The following is an example of a request.
 
@@ -136,7 +135,7 @@ Binary data for the image
 
 ---
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -147,7 +146,9 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-### Request
+### Example 2: Update the photo of a team
+
+#### Request
 
 The following is an example of a request to update a team photo.
 
@@ -162,7 +163,7 @@ Content-type: image/jpeg
 Binary data for the image
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
