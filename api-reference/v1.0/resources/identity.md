@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: "identity resource type"
 ms.localizationpriority: medium
-description: "The identity resource represents an identity of an actor."
+description: "Represents an identity of an actor."
 ms.prod: files
 doc_type: resourcePageType
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **identity** resource represents an identity of an _actor_. For example, an actor can be a user, device, or application.
+Represents an identity of an _actor_. For example, an actor can be a user, device, or application.
 
 In some circumstances, the unique identifier for the actor might not be available.
 In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
