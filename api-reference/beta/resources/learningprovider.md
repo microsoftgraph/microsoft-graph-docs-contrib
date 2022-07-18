@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
 {
     "@odata.type": "#microsoft.graph.learningProvider",
     "displayName": "String",
-    "id": "String",
+    "id": "String (identifier)",
     "isEnabled": "Boolean",
     "loginWebUrl": "String",
     "longLogoWebUrlForDarkTheme": "String",
