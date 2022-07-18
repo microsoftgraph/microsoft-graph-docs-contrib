@@ -31,6 +31,7 @@ For details about how to trigger a task, see [Enable pull printing](./universal-
 * JobFetchable: After the job has started, third-party print applications or Universal Print might do some processing (like converting XPS payload to PDF for a PDF printer). After processing is complete and the payload is ready to be downloaded by a printer, a JobFetchable event is raised for the corresponding print job.
 
 >[!NOTE]
+
 >For listening to the change notifications for JobFetchable event, a **printTaskDefinition** resource is not required.
 
 >The application should handle duplicate notifications.
