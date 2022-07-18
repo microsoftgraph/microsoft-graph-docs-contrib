@@ -27,6 +27,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 |:---|:---|:---|
 |id|String|Unique identifier for the supported region. Read-only.|
 |displayName|String|The name for the supported region. Read-only.|
+|supportedSolution|String|The supported services or solutions for the region. Read-only.|
 
 ## Relationships
 
@@ -48,6 +49,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.cloudPcSupportedRegion",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "supportedSolution": "String"
 }
 ```
