@@ -40,6 +40,9 @@ Microsoft Graph controls access to resources using permissions. You must specify
 | Vulnerable repeat offenders in a tenant | [attackSimulationRepeatOffender](attacksimulationrepeatoffender.md) | [getAttackSimulationRepeatOffenders](../api/reportroot-getattacksimulationrepeatoffenders.md) |
 | Simulation data and results for each user in a tenant | [attackSimulationSimulationUserCoverage](attacksimulationsimulationusercoverage.md) | [getAttackSimulationSimulationUserCoverage](../api/reportroot-getattacksimulationsimulationusercoverage.md) |
 | Training coverage for each user in a tenant | [attackSimulationTrainingUserCoverage](attacksimulationtrainingusercoverage.md) | [getAttackSimulationTrainingUserCoverage](../api/reportroot-getattacksimulationtrainingusercoverage.md) |
+| Vulnerable repeat offenders in a tenant | [attackSimulationRepeatOffender](attacksimulationrepeatoffender.md) | [getAttackSimulationRepeatOffenders](../api/securityreportroot-getattacksimulationrepeatoffenders.md) |
+| Simulation data and results for each user in a tenant | [attackSimulationSimulationUserCoverage](attacksimulationsimulationusercoverage.md) | [getAttackSimulationSimulationUserCoverage](../api/securityreportroot-getattacksimulationsimulationusercoverage.md) |
+| Training coverage for each user in a tenant | [attackSimulationTrainingUserCoverage](attacksimulationtrainingusercoverage.md) | [getAttackSimulationTrainingUserCoverage](../api/securityreportroot-getattacksimulationtrainingusercoverage.md) |
 
 ## Next steps
 

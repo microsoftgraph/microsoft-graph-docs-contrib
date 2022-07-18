@@ -1,5 +1,5 @@
 ---
-title: "securityReportRoot resource type"
+title: "securityReportsRoot resource type"
 description: "Container for AST reports resources."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "reports"
 doc_type: apiPageType
 ---
 
-# securityReportRoot resource type
+# securityReportsRoot resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the ability to launch a realistic phishing attack that organizations can learn from.
+Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.
 This is an abstract type.
 
 Inherits from [entity](../resources/entity.md).

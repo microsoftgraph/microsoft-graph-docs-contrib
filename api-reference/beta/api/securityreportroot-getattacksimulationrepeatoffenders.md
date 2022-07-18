@@ -77,7 +77,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.attackSimulationRepeatOffender)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/reports/getAttackSimulationRepeatOffenders?$skiptoken=+RID%3",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/reports/security/getAttackSimulationRepeatOffenders?$skiptoken=+RID%3",
     "value": [
         {
             "repeatOffenceCount": 5,

@@ -78,7 +78,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.attackSimulationTrainingUserCoverage)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/reports/getAttackSimulationTrainingUserCoverage?$skiptoken=+RID%3",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/reports/security/getAttackSimulationTrainingUserCoverage?$skiptoken=+RID%3",
     "value": [
         {
             "userTrainings": [
