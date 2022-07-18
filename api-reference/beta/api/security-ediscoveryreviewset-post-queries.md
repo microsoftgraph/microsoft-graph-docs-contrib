@@ -42,18 +42,18 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.
 
-You can specify the following properties when creating an **ediscoveryReviewSetQuery**.
+You can specify the following properties when you create an **ediscoveryReviewSetQuery**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the query. Required.|
-|contentQuery|String|The KQL query for the review set. [Learn more.](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
+|contentQuery|String|The KQL query for the review set. For details, see [Query and filter content in a review set](/microsoft-365/compliance/review-set-search).|
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object in the response body.
 
 ## Examples
 
@@ -100,7 +100,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -1,6 +1,6 @@
 ---
 title: "List additionalSources"
-description: "Get the ediscoveryNoncustodialDataSource resources from the additionalSources navigation property."
+description: "Get the list of additional sources associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the ediscovery data source resources from the additionalSources navigation property.
+Get the list of [additional sources](../resources/security-datasource.md) associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.dataSource](../resources/security-datasource.md) objects in the response body.
 
 ## Examples
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -1,6 +1,6 @@
 ---
-title: "Add ediscoveryNoncustodialDataSource"
-description: "Add noncustodialSources by posting to the noncustodialSources collection."
+title: "Add noncustodialDataSources"
+description: "Create a new non-custodial source associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -8,12 +8,12 @@ doc_type: "apiPageType"
 ---
 
 
-# Add ediscoveryNoncustodialDataSource
+# Add Add noncustodialDataSources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add noncustodialSources by posting to the noncustodialSources collection.
+Create a new non-custodial source associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +43,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object.
 
-You can specify the following properties when creating an **ediscoveryNoncustodialDataSource**.
+You can specify the following properties when you create an **ediscoveryNoncustodialDataSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -52,7 +52,7 @@ You can specify the following properties when creating an **ediscoveryNoncustodi
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -94,8 +94,8 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
