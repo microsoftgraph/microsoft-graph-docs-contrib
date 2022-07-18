@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Start the process of applying hold to eDiscovery non-custodial data sources. After the operation is created, you can get the status of the case operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [eDiscoveryHoldOpertaion](../resources/security-ediscoveryholdoperation.md).
+Start the process of applying hold on [eDiscovery non-custodial data sources](../resources/security-ediscoverynoncustodialdatasource.md). After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers. The location provides a URL that will return an [eDiscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +56,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
-### Example 1. Apply hold to multiple non-custodial data sources.
+### Example 1: Apply hold to multiple non-custodial data sources
 #### Request
 The following is an example of a request.
 
@@ -102,8 +102,8 @@ Content-Type: application/json
 
 
 #### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -113,7 +113,7 @@ The following is an example of the response
 HTTP/1.1 202 Accepted
 ```
 
-### Example 2. Apply hold to a single non-custodial data source.
+### Example 2: Apply hold to a single non-custodial data source
 #### Request
 The following is an example of a request.
 
@@ -151,8 +151,8 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 
 #### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

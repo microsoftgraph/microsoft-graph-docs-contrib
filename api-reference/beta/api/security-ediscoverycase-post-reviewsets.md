@@ -1,5 +1,5 @@
 ---
-title: "Create ediscoveryReviewSet"
+title: "Create reviewSets"
 description: "Create a new ediscoveryReviewSet object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create ediscoveryReviewSet
+# Create reviewSets
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -42,7 +42,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.
 
-You can specify the following properties when creating an **ediscoveryReviewSet**.
+You can specify the following properties when you create an **ediscoveryReviewSet**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -51,7 +51,7 @@ You can specify the following properties when creating an **ediscoveryReviewSet*
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object in the response body.
 
 ## Examples
 
@@ -97,7 +97,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

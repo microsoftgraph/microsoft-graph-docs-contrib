@@ -14873,9 +14873,9 @@ items:
             href: api/security-ediscoverycase-list-noncustodialdatasources.md
           - name: Create non-custodial data source
             href: api/security-ediscoverycase-post-noncustodialdatasources.md
-          - name: List legal holds
+          - name: List legal holds (preview)
             href: api/security-ediscoverycase-list-legalholds.md
-          - name: Create legal hold
+          - name: Create legal hold (preview)
             href: api/security-ediscoverycase-post-legalholds.md
           - name: List searches
             href: api/security-ediscoverycase-list-searches.md
@@ -14957,7 +14957,7 @@ items:
             href: api/security-ediscoverynoncustodialdatasource-updateindex.md
           - name: Get last index operation
             href: api/security-ediscoverycustodian-list-lastindexoperation.md
-        - name: Hold policy
+        - name: Hold policy (preview)
           href: resources/security-ediscoveryholdpolicy.md
           items:
           - name: List
@@ -14993,7 +14993,7 @@ items:
             href: api/security-ediscoverycase-delete-searches.md
           - name: Estimate statistics
             href: api/security-ediscoverysearch-estimatestatistics.md
-          - name: Purge data
+          - name: Purge data (preview)
             href: api/security-ediscoverysearch-purgedata.md
           - name: List custodian sources
             href: api/security-ediscoverysearch-list-custodiansources.md
@@ -15024,7 +15024,7 @@ items:
             href: api/security-ediscoveryreviewset-get.md
           - name: Add to review set
             href: api/security-ediscoveryreviewset-addtoreviewset.md
-          - name: Export
+          - name: Export (preview)
             href: api/security-ediscoveryreviewset-export.md
             items:
               - name: Get download url
@@ -15042,16 +15042,16 @@ items:
               href: api/security-ediscoveryreviewsetquery-update.md
             - name: Delete
               href: api/security-ediscoveryreviewset-delete-queries.md
-            - name: Export
+            - name: Export (preview)
               href: api/security-ediscoveryreviewsetquery-export.md
               items:
               - name: Get download url
                 href: api/security-ediscoveryexportoperation-getdownloadurl.md
             - name: Apply tags
               href: api/security-ediscoveryreviewsetquery-applytags.md
-            - name: Run
+            - name: Run (preview)
               href: api/security-ediscoveryreviewsetquery-run.md
-          - name: File
+          - name: File (preview)
             href: resources/security-ediscoveryfile.md
             items:
             - name: List
