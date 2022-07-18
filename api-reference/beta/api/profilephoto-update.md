@@ -92,10 +92,7 @@ In the request body, include the binary data of the photo in the request body.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
-
-### To update the profile photo of a team
-If successful, this method returns a `204 NoContent` response code for updating a photo for the team.
+If successful, this method returns a `200 OK` response code or a `204 No Content` response code for updating the photo of a team.
 
 ## Examples
 ### Example 1: Update the profile photo of the user
