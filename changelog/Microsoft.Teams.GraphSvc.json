@@ -507,6 +507,90 @@
       "CreatedDateTime": "2022-07-05T17:17:00.1619923Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a7335048-e158-4657-8495-2f32cc86ca9e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForTeam",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForTeam` to the read operations of [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
+          "Target": "teamsTab"
+        },
+        {
+          "Id": "a7335048-e158-4657-8495-2f32cc86ca9e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForTeam.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForTeam.All` to the read operations of [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
+          "Target": "teamsTab"
+        },
+        {
+          "Id": "a7335048-e158-4657-8495-2f32cc86ca9e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForChat",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForChat` to the read operations of [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
+          "Target": "teamsTab"
+        },
+        {
+          "Id": "a7335048-e158-4657-8495-2f32cc86ca9e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForChat.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForChat.All` to the read operations of [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
+          "Target": "teamsTab"
+        }
+      ],
+      "Id": "a7335048-e158-4657-8495-2f32cc86ca9e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-30T11:01:30.771Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2c96f0bd-2ee8-47f7-9f0a-25039532dc3b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForTeam",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForTeam` to the read operations of [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
+          "Target": "teamsTab"
+        },
+        {
+          "Id": "2c96f0bd-2ee8-47f7-9f0a-25039532dc3b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForTeam.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForTeam.All` to the read operations of [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
+          "Target": "teamsTab"
+        },
+        {
+          "Id": "2c96f0bd-2ee8-47f7-9f0a-25039532dc3b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForChat",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForChat` to the read operations of [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
+          "Target": "teamsTab"
+        },
+        {
+          "Id": "2c96f0bd-2ee8-47f7-9f0a-25039532dc3b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForChat.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForChat.All` to the read operations of [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
+          "Target": "teamsTab"
+        }
+      ],
+      "Id": "2c96f0bd-2ee8-47f7-9f0a-25039532dc3b",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-30T11:01:30.771Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
