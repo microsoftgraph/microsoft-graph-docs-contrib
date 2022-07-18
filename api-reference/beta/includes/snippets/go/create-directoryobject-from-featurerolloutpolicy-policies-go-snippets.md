@@ -12,8 +12,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": " https://graph.microsoft.com/beta/directoryObjects/2441b489-4f12-4882-b039-8f6006bd66da",
 }
 featureRolloutPolicyId := "featureRolloutPolicy-id"
-directoryObjectId := "directoryObject-id"
-graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).AppliesToById(&directoryObjectId).Post(requestBody)
+result, err := graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).AppliesTo().$ref().Post(requestBody)
 
 
 ```

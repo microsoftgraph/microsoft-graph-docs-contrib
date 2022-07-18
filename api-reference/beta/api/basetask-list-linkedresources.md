@@ -7,10 +7,12 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# List linkedResources
+# List linkedResources (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Get the [linkedResource_v2](../resources/linkedresource_v2.md) resources associated to a [baseTask](../resources/basetask.md) from the linkedResources navigation property.
 

@@ -23,16 +23,16 @@ To get change notifications for all messages and replies across channels in a te
 
 #### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChannelMessage.Read.All | beta, v1.0 |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | ChannelMessage.Read.All |
 
 #### Example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -55,16 +55,16 @@ To get change notifications for all messages across chats in a tenant, subscribe
 
 #### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Chat.Read.All | beta, v1.0 |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Chat.Read.All |
 
 #### Example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -87,18 +87,18 @@ Channel-level subscriptions also support keyword-based search via the `$search` 
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              |Supported in version |
-|:--------------------|:---------------------------------------------------------|:--------------------|
-|Delegated (work or school account) | ChannelMessage.Read.All | beta, v1.0 |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChannelMessage.Read.Group*, ChannelMessage.Read.All  | beta, v1.0 |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | ChannelMessage.Read.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 
 >**Note:** Permissions marked with * are supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### Example 1: Subscribe to all messages (and replies) in a channel
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -118,7 +118,7 @@ Content-Type: application/json
 The following request will send messages that contain `Hello` to the subscriber.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -136,7 +136,7 @@ Content-Type: application/json
 ### Example 3: Subscribe to messages (and replies) in a channel without resource data
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -154,7 +154,7 @@ Content-Type: application/json
 To get notifications only for messages where a specific user has been mentioned, you can specify the user's ID (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in this example) in the query.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -173,22 +173,20 @@ To track messages in a chat, you can create a change notification subscription a
 
 Chat-level subscriptions also support keyword-based search via the `$search` query parameter.
 
-> **Note.** Subcribing to messages in a chat is currently in preview.
-
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported in version |
-|:--------------------|:---------------------------------------------------------|:---------------------|
-|Delegated (work or school account) | Chat.Read | beta, v1.0 |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChatMessage.Read.Chat*, Chat.Read.All | beta, v1.0 |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Chat.Read |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | ChatMessage.Read.Chat*, Chat.Read.All |
 
 >**Note:** Permissions marked with * are supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) for the beta version only currently.
 
 ### Example 1: Subscribe to messages in a chat
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -208,7 +206,7 @@ Content-Type: application/json
 The following request will send messages that contain `Hello` to the subscriber.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -226,7 +224,7 @@ Content-Type: application/json
 ### Example 3: Subscribe to messages (and replies) in a chat without resource data
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
   "changeType": "created,updated",
@@ -243,7 +241,7 @@ Content-Type: application/json
 To get notifications only for messages in which a specific user has been mentioned, you can specify the user's ID (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in this example) in the query.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -262,15 +260,15 @@ To track messages across all chats a particular user is part of, you can create 
 
 User-level chat messaging subscriptions also support keyword-based search via the `$search` query parameter.
 
-> **Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported in version |
-|:--------------------|:---------------------------------------------------------|:---------------------|
-|Delegated (work or school account) | Chat.Read, Chat.ReadWrite | beta |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Chat.Read.All, Chat.ReadWrite.All | beta |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Chat.Read, Chat.ReadWrite |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Chat.Read.All, Chat.ReadWrite.All |
 
 ### Example: Subscribe to messages across all chats a particular user is part of
 

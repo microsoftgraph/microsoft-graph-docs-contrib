@@ -1,6 +1,6 @@
 ---
 title: Microsoft Graph tutorials
-description: Microsoft Graph tutorials are step-by-step training exercises that guide you through creating a basic application that accesses data via Microsoft Graph.
+description: Create a basic application that accesses data via Microsoft Graph in 30 minutes by using a step-by-step Microsoft Graph tutorial.
 author: jasonjoh
 ms.localizationpriority: high
 ---

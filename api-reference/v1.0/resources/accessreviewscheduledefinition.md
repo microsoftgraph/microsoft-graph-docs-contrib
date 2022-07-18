@@ -1,7 +1,7 @@
 ---
 title: "accessReviewScheduleDefinition resource type"
 description: "Represents the scheduling of an Azure AD access review."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

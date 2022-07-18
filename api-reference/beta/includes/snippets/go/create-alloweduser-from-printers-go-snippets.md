@@ -12,8 +12,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/users/{id}",
 }
 printerShareId := "printerShare-id"
-userId := "user-id"
-graphClient.Print().SharesById(&printerShareId).AllowedUsersById(&userId).Post(requestBody)
+result, err := graphClient.Print().SharesById(&printerShareId).AllowedUsers().$ref().Post(requestBody)
 
 
 ```

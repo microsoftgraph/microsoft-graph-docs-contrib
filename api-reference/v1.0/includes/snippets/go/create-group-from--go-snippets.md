@@ -12,8 +12,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/v1.0/groups/{groupId}",
 }
 printerShareId := "printerShare-id"
-groupId := "group-id"
-graphClient.Print().SharesById(&printerShareId).AllowedGroupsById(&groupId).Post(requestBody)
+result, err := graphClient.Print().SharesById(&printerShareId).AllowedGroups().$ref().Post(requestBody)
 
 
 ```

@@ -3,6 +3,140 @@
     {
       "ChangeList": [
         {
+          "Id": "536bbbe2-5c92-4e57-b422-5351774ce046",
+          "ApiChange": "Member",
+          "ChangedApiName": "anonymizedIPAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the `anonymizedIPAddress` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        },
+        {
+          "Id": "536bbbe2-5c92-4e57-b422-5351774ce046",
+          "ApiChange": "Member",
+          "ChangedApiName": "unfamiliarFeatures",
+          "ChangeType": "Addition",
+          "Description": "Added the `unfamiliarFeatures` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        },
+        {
+          "Id": "536bbbe2-5c92-4e57-b422-5351774ce046",
+          "ApiChange": "Member",
+          "ChangedApiName": "nationStateIPAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the `nationStateIPAddress` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        },
+        {
+          "Id": "536bbbe2-5c92-4e57-b422-5351774ce046",
+          "ApiChange": "Member",
+          "ChangedApiName": "realTimeThreatIntelligence",
+          "ChangeType": "Addition",
+          "Description": "Added the `realTimeThreatIntelligence` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        },
+        {
+          "Id": "536bbbe2-5c92-4e57-b422-5351774ce046",
+          "ApiChange": "Member",
+          "ChangedApiName": "internalGuest",
+          "ChangeType": "Addition",
+          "Description": "Added the `internalGuest` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        },
+        {
+          "Id": "536bbbe2-5c92-4e57-b422-5351774ce046",
+          "ApiChange": "Member",
+          "ChangedApiName": "b2bCollaborationGuest",
+          "ChangeType": "Addition",
+          "Description": "Added the `b2bCollaborationGuest` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        },
+        {
+          "Id": "536bbbe2-5c92-4e57-b422-5351774ce046",
+          "ApiChange": "Member",
+          "ChangedApiName": "b2bCollaborationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the `b2bCollaborationMember` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        },
+        {
+          "Id": "536bbbe2-5c92-4e57-b422-5351774ce046",
+          "ApiChange": "Member",
+          "ChangedApiName": "b2bDirectConnectUser",
+          "ChangeType": "Addition",
+          "Description": "Added the `b2bDirectConnectUser` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        },
+        {
+          "Id": "536bbbe2-5c92-4e57-b422-5351774ce046",
+          "ApiChange": "Member",
+          "ChangedApiName": "otherExternalUser",
+          "ChangeType": "Addition",
+          "Description": "Added the `otherExternalUser` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        },
+        {
+          "Id": "536bbbe2-5c92-4e57-b422-5351774ce046",
+          "ApiChange": "Member",
+          "ChangedApiName": "serviceProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvider` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        }
+      ],
+      "Id": "536bbbe2-5c92-4e57-b422-5351774ce046",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-05T22:00:19.7139376Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3e4f113d-2b6b-4bb1-9cd7-24fa265f5e2a",
+          "ApiChange": "Property",
+          "ChangedApiName": "sessionControlsNotSatisfied",
+          "ChangeType": "Addition",
+          "Description": "Added the **sessionControlsNotSatisfied** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+          "Target": "appliedConditionalAccessPolicy"
+        }
+      ],
+      "Id": "3e4f113d-2b6b-4bb1-9cd7-24fa265f5e2a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-18T23:23:47.3148004Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "96427898-c13f-4630-bd17-ee281c8e5f98",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "defaultMfaMethodType",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultMfaMethodType** enumeration type.",
+          "Target": "defaultMfaMethodType"
+        },
+        {
+          "Id": "96427898-c13f-4630-bd17-ee281c8e5f98",
+          "ApiChange": "Property",
+          "ChangedApiName": "defaultMfaMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultMfaMethod** property to the [userRegistrationDetails](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
+          "Target": "userRegistrationDetails"
+        }
+      ],
+      "Id": "96427898-c13f-4630-bd17-ee281c8e5f98",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-25T20:58:23.6080073Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6a60b3dd-cb30-4a9b-8b94-9197e17d4ba5",
           "ApiChange": "Enum type",
           "ChangedApiName": "clientCredentialType",

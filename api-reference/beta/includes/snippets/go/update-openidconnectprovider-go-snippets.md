@@ -7,12 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewIdentityProvider()
+requestBody := msgraphsdk.NewIdentityProviderBase()
 requestBody.SetAdditionalData(map[string]interface{}{
+	"@odata.type": "#microsoft.graph.socialIdentityProvider",
 	"responseType": "id_token",
 }
-identityProviderId := "identityProvider-id"
-graphClient.IdentityProvidersById(&identityProviderId).Patch(requestBody)
+identityProviderBaseId := "identityProviderBase-id"
+graphClient.Identity().IdentityProvidersById(&identityProviderBaseId).Patch(requestBody)
 
 
 ```

@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10859
+Content-Length: 11343
 
 {
   "value": [
@@ -143,6 +143,18 @@ Content-Length: 10859
         ],
         "defaultMessage": "Default Message value"
       },
+      "deviceOwnerLockScreenMessage": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+        "localizedMessages": [
+          {
+            "@odata.type": "microsoft.graph.keyValuePair",
+            "name": "Name value",
+            "value": "Value value"
+          }
+        ],
+        "defaultMessage": "Default Message value"
+      },
+      "securityCommonCriteriaModeEnabled": true,
       "factoryResetDeviceAdministratorEmails": [
         "Factory Reset Device Administrator Emails value"
       ],
@@ -314,7 +326,8 @@ Content-Length: 10859
       "workProfilePasswordMinimumSymbolCharacters": 10,
       "workProfilePasswordPreviousPasswordCountToBlock": 15,
       "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-      "workProfilePasswordRequiredType": "required"
+      "workProfilePasswordRequiredType": "required",
+      "workProfilePasswordRequireUnlock": "daily"
     }
   ]
 }

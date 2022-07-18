@@ -31,6 +31,7 @@ The **assignment** APIs are exposed in the class namespace.
 |[Delete](../api/educationassignment-delete.md) | None |Delete an **educationAssignment** object. |
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Change the state of an **educationAssignment** object from draft to published.|
 |[Set up assignment resources folder](../api/educationassignment-setupresourcesfolder.md)| string| Create a SharePoint folder (under pre-defined location) to upload files as assignment resources.|
+|[Set up assignment feedback resources folder](../api/educationassignment-setupfeedbackresourcesfolder.md)|[educationAssignment](../resources/educationassignment.md)|Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md).|
 |[List resources](../api/educationassignment-list-resources.md) |[educationAssignmentResource](educationassignmentresource.md) collection| Get an **educationAssignmentResource** object collection.|
 |[List submissions](../api/educationassignment-list-submissions.md) |[educationSubmission](educationsubmission.md) collection| Get an **educationSubmission** object collection.|
 |[List categories](../api/educationassignment-list-categories.md) |[educationCategory](educationcategory.md) collection| Get an **educationCategory** object collection.|
@@ -57,6 +58,7 @@ The **assignment** APIs are exposed in the class namespace.
 |createdDateTime|DateTimeOffset|Moment when the **assignment** was created.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |displayName|String|Name of the **assignment**.|
 |dueDateTime|DateTimeOffset|Date when the students **assignment** is due.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|feedbackResourcesFolderUrl|String|Folder URL where all the feedback file resources for this **assignment** are stored.|
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|How the **assignment** will be graded. |
 |instructions|[itemBody](itembody.md)| Instructions for the **assignment**.  This along with the display name tell the student what to do. |
 |lastModifiedBy|[identitySet](identityset.md)| Who last modified the **assignment**. |
