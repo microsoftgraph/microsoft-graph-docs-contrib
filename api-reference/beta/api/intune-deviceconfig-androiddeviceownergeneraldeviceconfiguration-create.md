@@ -87,6 +87,8 @@ The following table shows the properties that are required when you create the a
 |dataRoamingBlocked|Boolean|Indicates whether or not to block a user from data roaming.|
 |dateTimeConfigurationBlocked|Boolean|Indicates whether or not to block the user from manually changing the date or time on the device|
 |detailedHelpText|[androidDeviceOwnerUserFacingMessage](../resources/intune-deviceconfig-androiddeviceowneruserfacingmessage.md)|Represents the customized detailed help text provided to users when they attempt to modify managed settings on their device.|
+|deviceOwnerLockScreenMessage|[androidDeviceOwnerUserFacingMessage](../resources/intune-deviceconfig-androiddeviceowneruserfacingmessage.md)|Represents the customized lock screen message provided to users when they attempt to modify managed settings on their device.|
+|securityCommonCriteriaModeEnabled|Boolean|Represents the security common criteria mode enabled provided to users when they attempt to modify managed settings on their device.|
 |factoryResetDeviceAdministratorEmails|String collection|List of Google account emails that will be required to authenticate after a device is factory reset before it can be set up.|
 |factoryResetBlocked|Boolean|Indicates whether or not the factory reset option in settings is disabled.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Proxy is set up directly with host, port and excluded hosts.|
@@ -205,7 +207,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 9706
+Content-length: 10090
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -282,6 +284,18 @@ Content-length: 9706
     ],
     "defaultMessage": "Default Message value"
   },
+  "deviceOwnerLockScreenMessage": {
+    "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+    "localizedMessages": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
+        "value": "Value value"
+      }
+    ],
+    "defaultMessage": "Default Message value"
+  },
+  "securityCommonCriteriaModeEnabled": true,
   "factoryResetDeviceAdministratorEmails": [
     "Factory Reset Device Administrator Emails value"
   ],
@@ -463,7 +477,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 9878
+Content-Length: 10262
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -543,6 +557,18 @@ Content-Length: 9878
     ],
     "defaultMessage": "Default Message value"
   },
+  "deviceOwnerLockScreenMessage": {
+    "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+    "localizedMessages": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
+        "value": "Value value"
+      }
+    ],
+    "defaultMessage": "Default Message value"
+  },
+  "securityCommonCriteriaModeEnabled": true,
   "factoryResetDeviceAdministratorEmails": [
     "Factory Reset Device Administrator Emails value"
   ],

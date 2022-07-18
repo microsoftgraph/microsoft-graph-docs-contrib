@@ -1,6 +1,6 @@
 ---
 title: "Software updates with the Windows Update for Business deployment service"
-description: "Software updates are the primary type of content the deployment service deploys. You can look up in a catalog to find specific updates available to deploy."
+description: "Software updates are the primary type of content the deployment service deploys. You can look in a catalog to find specific updates that are available to deploy."
 author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -9,9 +9,9 @@ doc_type: conceptualPageType
 
 # Software updates with the Windows Update for Business deployment service
 
-Software updates are the primary type of content the deployment service deploys. You can look up in a catalog to find specific updates available to deploy.
+Software updates are the primary type of content the deployment service deploys. You can look in a catalog to find specific updates that are available to deploy.
 
-You may already be familiar with the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/) which lists software updates for Windows. The deployment service provides its own [catalog](/graph/api/resources/windowsupdates-catalog), and aggregates equivalent updates under a single [catalogEntry](/graph/api/resources/windowsupdates-catalogentry) to simplify decision making and approval workflows.
+You might already be familiar with the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/), which lists software updates for Windows. The deployment service provides its own [catalog](/graph/api/resources/windowsupdates-catalog), and aggregates equivalent updates under a single [catalogEntry](/graph/api/resources/windowsupdates-catalogentry) to simplify decision making and approval workflows.
 
 ## Windows update categories
 

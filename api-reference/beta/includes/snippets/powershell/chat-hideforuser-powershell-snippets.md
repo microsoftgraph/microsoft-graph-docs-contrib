@@ -13,6 +13,6 @@ $params = @{
 	TenantId = "2a690434-97d9-4eed-83a6-f5f13600199a"
 }
 
-Hide-MgChat -ChatId $chatId -BodyParameter $params
+Hide-MgChatForUser -ChatId $chatId -BodyParameter $params
 
 ```

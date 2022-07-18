@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Domain.Read.All, Domain.ReadWrite.All|
+|Delegated (work or school account)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|Domain.Read.All, Domain.ReadWrite.All|
+|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/directory/federationConfigurations/graph.sa
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-samlorwsfedexternaldomainfederation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-samlorwsfedexternaldomainfederation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

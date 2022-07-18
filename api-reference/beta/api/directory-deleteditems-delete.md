@@ -15,12 +15,13 @@ Namespace: microsoft.graph
 
 Permanently delete an item from [deleted items](../resources/directory.md).
 
-Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources. You can permanently delete an item from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
+Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md), and [user](../resources/user.md) resources. This API allows you to permanently delete an item from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-For applications:
+### For applications and service principals:
+
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -30,7 +31,7 @@ For applications:
 
 The requestor needs to have one of the following roles: *Global Administrator* or *Application Administrator*.
 
-For users:
+### For users:
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -40,7 +41,7 @@ For users:
 
 The signed-in user needs to have one of the following roles: *Global Administrator* or *User Administrator*.
 
-For groups:
+### For groups:
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -69,7 +70,7 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -106,7 +107,7 @@ DELETE https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473
 
 ---
 
-##### Response
+### Response
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
