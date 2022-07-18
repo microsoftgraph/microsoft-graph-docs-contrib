@@ -13,10 +13,10 @@
                 {
                     "Id": "c4286cb2-959d-4dd5-937f-3282ea626c61",
                     "ApiChange": "Property",
-                    "ChangedApiName": "cloudPcSupportedRegion",
+                    "ChangedApiName": "regionStatus",
                     "ChangeType": "Addition",
-                    "Description": "Added the **regionStatus** property to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcSupportedRegion?view=graph-rest-beta) resource.",
-                    "Target": "cloudPC"
+                    "Description": "Added the **regionStatus** property to the [cloudPcSupportedRegion](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcSupportedRegion"
                 }
             ],
             "Id": "c4286cb2-959d-4dd5-937f-3282ea626c61",

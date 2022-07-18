@@ -25,9 +25,9 @@ Represents a supported region to establish an Azure network connection for Cloud
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the supported region. Read-only.|
 |displayName|String|The name for the supported region. Read-only.|
-|regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedregionstatus-values)|The status of the supported region. Read-only.|
+|id|String|The unique identifier for the supported region. Read-only.|
+|regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedregionstatus-values)|The status of the supported region. Possible values are: `available`, `restricted`, `unavailable`, `unknownFutureValue`. Read-only.|
 
 ### cloudPcSupportedRegionStatus values
 
@@ -57,8 +57,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcSupportedRegion",
-  "id": "String (identifier)",
   "displayName": "String",
+  "id": "String (identifier)",
   "regionStatus": "microsoft.graph.cloudPcSupportedRegionStatus"
 }
 ```
