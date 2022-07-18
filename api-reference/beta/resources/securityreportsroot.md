@@ -36,14 +36,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.securityReportRoot",
+  "@odata.type": "microsoft.graph.securityReportsRoot",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.securityReportRoot",
+  "@odata.type": "#microsoft.graph.securityReportsRoot",
 }
 ```
 

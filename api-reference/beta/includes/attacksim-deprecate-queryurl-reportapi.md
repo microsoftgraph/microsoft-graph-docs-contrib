@@ -7,5 +7,10 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 >[!CAUTION]
->The query endpoints for the **getAttackSimulationRepeatOffenders**, **getAttackSimulationSimulationUserCoverage**, and **getAttackSimulationTrainingUserCoverage** methods have changed. Access these methods from the `http://graph.microsoft.com/beta/reports/security` endpoint and not the `https://graph.microsoft.com/beta/reports/` endpoint. Those methods on the latter are deprecated as of July 15, 2022, and will stop returning data starting August 20, 2022.
+>Make sure to access the following methods from the `http://graph.microsoft.com/beta/reports/security` endpoint:
+>- **getAttackSimulationRepeatOffenders**
+>- **getAttackSimulationSimulationUserCoverage**
+>- **getAttackSimulationTrainingUserCoverage** 
+>
+>The query endpoints for these methods have changed from the `http://graph.microsoft.com/beta/reports` endpoint to the `https://graph.microsoft.com/beta/reports/security` endpoint. >Methods on the `https://graph.microsoft.com/beta/reports/` endpoint are deprecated as of July 15, 2022, and will stop returning data starting August 20, 2022.
 
