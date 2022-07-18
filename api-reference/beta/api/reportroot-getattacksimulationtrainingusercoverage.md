@@ -12,11 +12,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<<<<<<< Updated upstream
-=======
-[!INCLUDE [ast-deprecate-basetaskapi](../includes/ast-deprecate-queryurl-reportapi.md)]
-
->>>>>>> Stashed changes
 List [training coverage](../resources/attacksimulationtrainingusercoverage.md) for each user of a tenant in attack simulation and training campaigns.
 
 This function supports `@odata.nextLink` for pagination.
