@@ -105,7 +105,9 @@ C.	Add re-direct URI for the application.
 D.	From Certificates & secrets blade, upload client certificate. Note: The certificate would be used to Acquire app-only token.
 Note: As part of Registration, we are going to Allow list your AppId for the tenant. To enable content ingestion from Partner for the tenant. You should provide your App Id in the form https://aka.ms/contentsync
 
-## 2.Add permission in Multitenant Application as mentioned in the table below
+## 2.Add permission in Multitenant Application 
+Add permission in Multitenant Application as mentioned in the table below
+
 | ScopeName  | DisplayName |Description |Type  | Is Admin Consent Required |Entities/APIs covered |Method |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | LearningContent.Read.All   | Read Learning content | Allows the app to read data for the learning content in organization's directory | Application-only | Yes | Learning Content | GET  |
