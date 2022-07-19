@@ -45,18 +45,17 @@ PATCH /admin/sharepoint/settings
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
-The following table shows the properties that can be edited for a [settings](../resources/tenantadmin-settings.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
 | allowedDomainGuidsForSyncApp                       | GUID collection              | Collection of trusted domain GUIDs for the OneDrive sync app.                                                                                                                                                  |
 | deletedUserPersonalSiteRetentionPeriodInDays       | Int32                        | The number of days for preserving a deleted user's OneDrive.                                                                                                                                                   |
 | excludedFileExtensionsForSyncApp                   | String collection            | Collection of file extensions not uploaded by the OneDrive sync app.                                                                                                                                           |
+| idleSessionSignOut                                 | [tenantAdmin.idleSessionSignOut](../resources/tenantadmin-idlesessionsignout.md)           | Specifies the idle session sign-out policies for the tenant.                                                                                                                                                        |
 | imageTaggingOption                                 | imageTaggingChoice           | Specifies the image tagging option for the tenant. Possible values are: `disabled`, `basic`, `enhanced`.                                                                                                       |
-| idleSessionSignOut                                 | idleSessionSignOut           | Specifies idle session signout policies for the tenant.                                                                                                                                                        |
 | isCommentingOnSitePagesEnabled                     | Boolean                      | Indicates whether comments are allowed on modern site pages in SharePoint.                                                                                                                                     |
 | isFileActivityNotificationEnabled                  | Boolean                      | Indicates whether push notifications are enabled for OneDrive events.                                                                                                                                          |
-| isLegacyAuthProtocolsEnabled                       | Boolean                      | Indicates whether the legacy authentication protocols are enabled for the tenant.                                                                                                                              |
+| isLegacyAuthProtocolsEnabled                       | Boolean                      | Indicates whether legacy authentication protocols are enabled for the tenant.                                                                                                                              |
 | isLoopEnabled                                      | Boolean                      | Indicates whether Fluid Framework is allowed on SharePoint sites.                                                                                                                                              |
 | isMacSyncAppEnabled                                | Boolean                      | Indicates whether files can be synced using the OneDrive sync app for Mac.                                                                                                                                     |
 | isRequireAcceptingUserToMatchInvitedUserEnabled    | Boolean                      | Indicates whether guests must sign in using the same account to which sharing invitations are sent.                                                                                                            |
@@ -77,8 +76,6 @@ The following table shows the properties that can be edited for a [settings](../
 | siteCreationDefaultManagedPath                     | String                       | The value of the team site managed path. This is the path under which new team sites will be created.                                                                                                          |
 | siteCreationDefaultStorageLimitInMB                | Int32                        | The default storage quota for a new site upon creation. Measured in megabytes (MB).                                                                                                                            |
 | tenantDefaultTimezone                              | String                       | The default timezone of a tenant for newly created sites.                                                                                                                                                      |
-
-
 
 
 ## Response

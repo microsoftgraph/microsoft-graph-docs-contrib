@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Addition",
-          "Description": "Added the [idleSessionSignOut](https://docs.microsoft.com/en-us/graph/api/resources/idleSessionSignOut?view=graph-rest-beta) resource type.",
+          "Description": "Added the [idleSessionSignOut](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-idlesessionsignout?view=graph-rest-beta) resource type.",
           "Target": "idleSessionSignOut"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Addition",
-          "Description": "Added the `idleSessionSignOut` property to the [settings](https://docs.microsoft.com/en-us/graph/api/resources/settings?view=graph-rest-beta) resource.",
+          "Description": "Added the **idleSessionSignOut** property to the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
           "Target": "settings"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isLegacyAuthProtocolsEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the `isLegacyAuthProtocolsEnabled` property to the [settings](https://docs.microsoft.com/en-us/graph/api/resources/settings?view=graph-rest-beta) resource.",
+          "Description": "Added the **isLegacyAuthProtocolsEnabled** property to the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
           "Target": "settings"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isRequireAcceptingUserToMatchInvitedUserEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the `isRequireAcceptingUserToMatchInvitedUserEnabled` property to the [settings](https://docs.microsoft.com/en-us/graph/api/resources/settings?view=graph-rest-beta) resource.",
+          "Description": "Added the **isRequireAcceptingUserToMatchInvitedUserEnabled** property to the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
           "Target": "settings"
         }
       ],
