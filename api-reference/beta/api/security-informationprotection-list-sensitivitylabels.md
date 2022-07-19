@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [sensitivityLabel](../resources/security-sensitivitylabel.md) resources from the **sensitivityLabels** navigation property.
+Get a list of [sensitivityLabel](../resources/security-sensitivitylabel.md) objects associated with a user or organization.
 
 ## Permissions
 
