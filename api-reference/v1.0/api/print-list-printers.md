@@ -37,7 +37,7 @@ GET /print/printers
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Exceptions
-* The `$expand` and `select` operators are supported for the `share` navigation property, but not for `jobs`.
+* The `$expand` and `$select` operators are supported for the `shares` navigation property, but not for `jobs`.
 * Some operators are not supported: `$count`, `$search`.
 
 ## Request headers

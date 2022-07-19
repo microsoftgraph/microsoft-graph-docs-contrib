@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object in the response body.
 
 ## Examples
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ceb
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

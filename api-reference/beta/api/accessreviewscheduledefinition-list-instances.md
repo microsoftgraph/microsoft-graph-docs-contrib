@@ -2,7 +2,7 @@
 title: "List instances"
 description: "Retrieve accessReviewInstance objects."
 ms.localizationpriority: medium
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

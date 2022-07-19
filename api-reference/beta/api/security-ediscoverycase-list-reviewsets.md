@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryReviewSet"
+title: "List reviewSets"
 description: "Get the ediscoveryReviewSet resources from an eDiscovery case object"
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# List ediscoveryReviewSet
+# List reviewSets
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) resources from the reviewSet navigation property.
+Get a list of [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) objects associated with an eDiscovery case.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) objects in the response body.
 
 ## Examples
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
