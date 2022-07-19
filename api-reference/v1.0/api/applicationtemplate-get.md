@@ -67,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/applicationTemplates/{id}
+GET https://graph.microsoft.com/v1.0/applicationTemplates/4f2fc37d-967b-4929-9959-fbe9c9dbccca
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplate-csharp-snippets.md)]
