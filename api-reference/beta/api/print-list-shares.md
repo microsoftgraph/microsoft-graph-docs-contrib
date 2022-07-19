@@ -35,7 +35,7 @@ GET /print/shares
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-> **Note:** Using $top=n query parameter will return **upto** `n` shares. Caller needs to use skip token to enumerate over the entire list.
+> **Note:** Using $top=n query parameter will return **up to** `n` shares. Caller needs to use skip token to enumerate over the entire list.
 
 ### Exceptions
 Some operators are not supported: `$count`, `$orderby`, `$search`.
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [printerShare](../resources/printershare.md) objects in the response body.
 
->**Note**: The response will not contain the **defaults** and **capabilities** properties. 
+>**Note**: The response will not contain the **defaults** or **capabilities** properties. 
 
 > For following scenarios, response will contain limited set of properties (id,displayName,manufacturer,model,location):
 >  - Listing printer shares on behalf of user who is not [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
