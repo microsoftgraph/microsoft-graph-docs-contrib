@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 > [!NOTE]
-> There is a [known issue](../../../concepts/known-issues.md#applicationreadwriteownedby-permission-allows-an-app-to-read-apps-it-doesnt-own) with the *Application.Read.OwnedBy* app-only permission.
+> There is a [known issue](/graph/known-issues#applicationreadwriteownedby-permission-allows-an-app-to-read-apps-it-doesnt-own) with the *Application.Read.OwnedBy* application permission.
 
 ## HTTP request
 

@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.Read.OwnedBy, Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
 
 > [!NOTE]
-> There is a [known issue](../../../concepts/known-issues.md#applicationreadwriteownedby-permission-allows-an-app-to-read-apps-it-doesnt-own) with the *Application.Read.OwnedBy* app-only permission.
+> There is a [known issue](/graph/known-issues#applicationreadwriteownedby-permission-allows-an-app-to-read-apps-it-doesnt-own) with the *Application.Read.OwnedBy* application permission.
 
 ## HTTP request
 Replace `{id}` with the **id** for the application object, also referred to as the **Object ID** in the Azure portal.
