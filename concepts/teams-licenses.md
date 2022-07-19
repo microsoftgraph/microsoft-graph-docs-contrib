@@ -42,7 +42,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | Message sender | 800 messages per user per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) | Named user | 1600 messages per user per month per app | $0.00075 per message | The named user is the user identified in the GET request URL. Requests returning an empty list, will be charged 1 message. Seeded capacity is shared with channel export. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message | Requests returning an empty list, will be charged 1 message. Seeded capacity is shared with chat export. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)| Any user in the tenant | 1600 messages per user per month per app | $0.00075 per message | Requests returning an empty list, will be charged 1 message. Seeded capacity is shared with chat export. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
 
 ## `model=B` requirements
@@ -66,8 +66,6 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |   N/A |  500 messages per month per app | N/A |
 
-In evaluation mode, seeded capacity is shared across all APIs. 
-When seeded capacity is exceeded (500 messages per month per app), metered API calls will fail with a 402 error code, and subscriptions with licensing and payment requirements will not send change notifications.
 
 ## Required licenses for `model=A` 
 
@@ -134,11 +132,11 @@ Please note that the organization that owns the app registration is responsible 
 |    Scenario    | Details |
 |:---------------|:--------|
 | What should I expect after providing an Azure subscription ? | You can continue calling these metered APIs, we will contact the email provided in the request form to onboard the registered application to billing. |
-| Do I need to provide an Azure suscription if my application is not calling metered APIs ? | No. If you need to call other APIs please refer to the request form in [protected APIs](/graph/api/teams-protected-apis). |
-| What happens if no Azure subscription is provided ? | •  No payment related errors if the application is not calling metered APIs. <br> •  If no model is being passed, `evaluation model` will be used by default.<br> •  If calling a metered API passing `model=A` a Microsoft 365 E5 eligible license and Azure subscription should be active.<br> •  If passing `model=B` when calling metered APIs, an active Azure subscription should be provided to ensure service continuity. <br> •   An active Azure subscription is required to ensure service continuity for most scenarios. |
+| Do I need to provide an Azure suscription if my application is not calling metered APIs ? | No. If you need to call other APIs please refer to the request form in [protected APIs](/graph/teams-protected-apis). |
+| What happens if no Azure subscription is provided ? | •  No payment related errors if the application is not calling metered APIs. <br> •  If no model is being passed, `evaluation model` will be used by default.<br> •  If calling a metered API passing `model=A` a Microsoft 365 E5 eligible license and Azure subscription should be provided.<br> •  If passing `model=B` when calling metered APIs, an active Azure subscription should be provided. <br> |
 | How do I create an Azure subscription ? | The Azure Subscription must be available in the same tenant where the App is registered. Customers with MCA or EA agreements can get a subscription from their existing account. Is possible to create a PAYG subscription using a credit card or pay by check or wire transfer, for details see [cost management and billing](/azure/cost-management-billing/microsoft-customer-agreement). |
 | Who is responsible for the payment in case of multitenat apps ? | The organization that owns the app registration. |
 | Is there a charge when no message is returned using any model ? | To discourage frequent [polling](/graph/api/resources/teams-api-overview), API requests that return an empty list of messages will be charged 1 message. In the case of `evaluation model` the call will count towards the 500 messages per month per app allowed. | 
-| Where can I monitor the cost and billing ? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) can use Azure Cost Analysis tool to track consumption per day or filter by meter, service name, resource id among other parameters. For more details refer to our [documentation](/azure/cost-management-billing/microsoft-customer-agreement). |
+| Where can I monitor the cost and billing ? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) can use Azure Cost Analysis tool to track consumption per day or filter by meter, service name, resource id among other parameters. For more details refer to our [documentation](/azure/cost-management-billing). |
 | Is there a volume discount ? | Flat rates apply. |  
-| Are these APIs enrolled in [Microsoft Azure Consumption Commitment (MACC) program](/azure/marketplace/azure-consumption-commitment-enrollment) ? | Not at this moment.| 
+| Are these APIs enrolled in [Microsoft Azure Consumption Commitment (MACC) program](/azure/marketplace/azure-consumption-commitment-enrollment) ? | Not at this moment.|
