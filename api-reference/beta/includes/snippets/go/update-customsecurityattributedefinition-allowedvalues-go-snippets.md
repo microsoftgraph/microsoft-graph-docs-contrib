@@ -7,19 +7,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewCustomSecurityAttributeDefinition()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"allowedValues@delta":  []Object {
-	}
-}
 headers := map[string]string{
-	"OData-Version": "4.01"
+	"OData-Version": "4.01",
 }
-options := &msgraphsdk.CustomSecurityAttributeDefinitionRequestBuilderPatchRequestConfiguration{
+configuration := &graphconfig.CustomSecurityAttributeDefinitionRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
-customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
+requestBody := graphmodels.NewCustomSecurityAttributeDefinition()
+additionalData := map[string]interface{}{
+
+
+ := graphmodels.New()
+id := "Baker"
+.SetId(&id) 
+isActive := false
+.SetIsActive(&isActive) 
+ := graphmodels.New()
+id := "Skagit"
+.SetId(&id) 
+isActive := true
+.SetIsActive(&isActive) 
+
+	allowedValues@delta := []graphmodels.Objectable {
+		,
+		,
+
+	}
+}
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").PatchWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
 
 
 ```
