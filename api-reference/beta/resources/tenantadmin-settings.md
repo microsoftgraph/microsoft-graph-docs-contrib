@@ -94,7 +94,6 @@ The following is a JSON representation of the resource.
     "availableManagedPathsForSiteCreation": ["string"],
     "deletedUserPersonalSiteRetentionPeriodInDays": "Int32",
     "excludedFileExtensionsForSyncApp": ["string"],
-    "id": "string (identifier)",
     "idleSessionSignOut": "microsoft.graph.tenantAdmin.idleSessionSignOut",
     "imageTaggingOption": "string",
     "isCommentingOnSitePagesEnabled": "boolean",

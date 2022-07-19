@@ -151,7 +151,6 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.tenantAdmin.settings",
-    "id": "e79403fa-abdf-af49-56c5-f7119d8b1948",
     "allowedDomainGuidsForSyncApp": [
         "bdd1ab9b-3fd0-4def-a761-ec8d7471732c", 
         "ad31vb6b-5zd0-7tyg-m231-kj8d6578432c"
@@ -175,7 +174,7 @@ Content-Type: application/json
     "isLegacyAuthProtocolsEnabled": true,
     "isLoopEnabled": true,
     "isMacSyncAppEnabled": false,
-    "isRequireAcceptingUserToMatchInvitedUser": true,
+    "isRequireAcceptingUserToMatchInvitedUserEnabled": true,
     "isResharingByExternalUsersEnabled": true,
     "isSharePointMobileNotificationEnabled": true,
     "isSharePointNewsfeedEnabled": true,

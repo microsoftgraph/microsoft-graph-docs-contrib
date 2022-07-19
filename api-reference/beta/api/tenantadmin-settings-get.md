@@ -136,7 +136,7 @@ Content-Type: application/json
         "isLegacyAuthProtocolsEnabled": false,
         "isLoopEnabled": true,
         "isMacSyncAppEnabled": false,
-        "isRequireAcceptingUserToMatchInvitedUser": true,
+        "isRequireAcceptingUserToMatchInvitedUserEnabled": true,
         "isResharingByExternalUsersEnabled": true,
         "isSharePointMobileNotificationEnabled": true,
         "isSharePointNewsfeedEnabled": true,
