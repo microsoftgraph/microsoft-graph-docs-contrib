@@ -9397,7 +9397,7 @@ items:
               href: api/intune-mam-windowsinformationprotection-assign.md
           - name: Windows information protection app
             href: resources/intune-mam-windowsinformationprotectionapp.md
-          - name: Windows information protection app learning summary
+          - name: Windows information protection app summary
             href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
             items:
             - name: List
@@ -16068,6 +16068,54 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
+      - name: Drive
+        href: resources/drive.md
+        items:
+        - name: Get drive
+          href: api/drive-get.md
+        - name: List children
+          href: api/driveitem-list-children.md
+      - name: Employee learning
+        displayName: Viva Learning
+        items:
+        - name: Overview
+          href: resources/viva-learning-api-overview.md
+        - name: Learning provider
+          href: resources/learningprovider.md
+          items:
+          - name: List
+            href: api/employeeexperience-list-learningproviders.md
+          - name: Create
+            href: api/employeeexperience-post-learningproviders.md
+          - name: Get
+            href: api/learningprovider-get.md
+          - name: Update
+            href: api/learningprovider-update.md
+          - name: Delete
+            href: api/employeeexperience-delete-learningproviders.md
+        - name: Learning content
+          href: resources/learningcontent.md
+          items:
+          - name: List
+            href: api/learningprovider-list-learningcontents.md
+          - name: Get
+            href: api/learningcontent-get.md
+          - name: Update
+            href: api/learningcontent-update.md
+          - name: Delete
+            href: api/learningprovider-delete-learningcontents.md
+      - name: Notes
+        href: resources/onenote.md
+        items:
+        - name: List notebooks
+          href: api/onenote-list-notebooks.md
+        - name: Create notebook
+          href: api/onenote-post-notebooks.md
+      - name: Plans
+        href: resources/plannerplan.md
+        items:
+        - name: List plans
+          href: api/plannergroup-list-plans.md
       - name: Shifts
         items:
         - name: Shift
@@ -16237,25 +16285,6 @@ items:
               href: api/workforceintegration-update.md
             - name: Delete
               href: api/workforceintegration-delete.md
-      - name: Drive
-        href: resources/drive.md
-        items:
-        - name: Get drive
-          href: api/drive-get.md
-        - name: List children
-          href: api/driveitem-list-children.md
-      - name: Plans
-        href: resources/plannerplan.md
-        items:
-        - name: List plans
-          href: api/plannergroup-list-plans.md
-      - name: Notes
-        href: resources/onenote.md
-        items:
-        - name: List notebooks
-          href: api/onenote-list-notebooks.md
-        - name: Create notebook
-          href: api/onenote-post-notebooks.md
       - name: Resource-specific permission grants
         href: resources/resourcespecificpermissiongrant.md
         items:
@@ -16264,7 +16293,7 @@ items:
         - name: List for group
           href: api/group-list-permissiongrants.md
         - name: List for chat
-          href: api/chat-list-permissiongrants.md
+          href: api/chat-list-permissiongrants.md      
     - name: To-do tasks
       displayName: Microsoft To Do
       items:
