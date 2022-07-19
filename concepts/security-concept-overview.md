@@ -29,6 +29,10 @@ The [Microsoft Graph Security API](/graph/api/resources/security-api-overview) m
 - [Get data into reports and dashboards](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – Use the [Microsoft Graph Security connector for Power BI](/power-bi/connect-data/desktop-connect-graph-security).
 - [Connect using Jupyter notebooks](https://jupyter.org/) – Find [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks).  
 
+### Submit threats and trigger whole automation flow
+
+Submit threats across security solutions more easily with a unified security threat submission API. This allows you to not only submit threats but also get threat submission results and trigger downstream alert flows. The new unified security threat submission API supports both application and delegated permissions to help you build new security solutions.
+
 ### Unify and standardize alert tracking
 
 Connect once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk using Microsoft Graph Security API connectors. For more info about solution integrations with the security API entities, see [Security solution integrations using the Microsoft Graph Security API](security-integration.md).

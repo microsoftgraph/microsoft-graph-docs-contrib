@@ -208,7 +208,6 @@ Content-Type: application/x-www-form-urlencoded
 client_id=11111111-1111-1111-1111-111111111111
 &scope=user.read%20mail.read
 &refresh_token=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq...
-&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 &grant_type=refresh_token
 &client_secret=jXoM3iz...      // NOTE: Only required for web apps
 ```
@@ -217,9 +216,8 @@ client_id=11111111-1111-1111-1111-111111111111
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | client_id     | Required              | The application ID that the [registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned your app.                                                                                                                                                                                             |
 | grant_type    | Required              | Must be `refresh_token`.                                                                                                                                                                                                                                                                                          |
-| scope         | Required              | A space-separated list of permissions (scopes). The permissions that your app requests must be equivalent to or a subset of the permissions that it requested in the original authorization_code request.                                                                                                                             |
+| scope         | Optional              | A space-separated list of permissions (scopes). The permissions that your app requests must be equivalent to or a subset of the permissions that it requested in the original authorization_code request.                                                                                                                             |
 | refresh_token | Required              | The refresh_token that you acquired during the token request.                                                                                                                                                                                                                                                     |
-| redirect_uri  | Required              | The same redirect_uri value that was used to acquire the authorization_code.                                                                                                                                                                                                                                      |
 | client_secret | Required for web apps | The client secret that you created in the app registration portal for your app. Don't use the secret in a native app, because client_secrets can’t be reliably stored on devices. It's required for web apps and web APIs, which have the ability to store the client_secret securely on the server side. |
 
 ### Response
