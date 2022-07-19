@@ -53,7 +53,7 @@ Here is an example of the request.
   "name": "get_scopedrolemember_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRoleMembers
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9-4847-bbf2-dde106594bf4/scopedRoleMembers
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedrolemember-2-csharp-snippets.md)]
