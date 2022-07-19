@@ -1,12 +1,12 @@
 ---
 title: "Add custom data to resources using extensions"
-description: "You can extend Microsoft Graph with your own application data. Add custom properties to Microsoft Graph resources without requiring an external data store."
+description: "You can extend Microsoft Graph with your own application data. Add custom properties for storing custom data in Microsoft Graph resources without requiring an external data store."
 author: "dkershaw10"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 
-# Add custom properties to resources using extensions
+# Add custom data to resources using extensions
 
 Microsoft Graph provides a single API endpoint to access rich people-centric data and insights through resources such as [user](/graph/api/resources/user) and [message](/graph/api/resources/message). You can also extend Microsoft Graph by adding custom properties to resource instances without requiring an external data store.
 
@@ -470,12 +470,10 @@ The same [permissions](./permissions-reference.md) that are required to read fro
 
 For known limitations using extensions, see the [extensions section](known-issues.md#extensions) in the known issues article.
 
-## See also
+## Next steps
 
-- [Add custom properties to users using open extensions](extensibility-open-users.md)
-- [Add custom properties to groups using schema extensions](extensibility-schema-groups.md)
-- [Microsoft 365 domains](/office365/servicedescriptions/office-365-platform-service-description/domains)
-- [Adding and verifying a domain for a Microsoft 365 tenant](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [Add custom data to users using open extensions](extensibility-open-users.md)
+- [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
 
 
 <!-- Links -->

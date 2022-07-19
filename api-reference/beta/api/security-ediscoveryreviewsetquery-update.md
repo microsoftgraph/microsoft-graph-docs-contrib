@@ -44,7 +44,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryR
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the query. Required.|
-|contentQuery|String|The KQL query for the review set. [Learn more.](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
+|contentQuery|String|The KQL query for the review set. For details, see [Query and filter content in a review set](/microsoft-365/compliance/review-set-search).|
 
 
 
@@ -62,7 +62,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSetQuery
+PATCH https://graph.microsoft.com/beta/security/cases/ediscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/queries/5f426fdc-f027-40db-b7cc-453cf06dc996
 Content-Type: application/json
 
 {
@@ -73,8 +73,8 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

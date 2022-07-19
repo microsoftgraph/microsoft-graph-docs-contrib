@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryEstimateOperations"
+title: "List lastEstimateStatisticsOperation"
 description: "Get the last ediscoveryEstimateOperation object and its properties."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# List ediscoveryEstimateOperations
+# List lastEstimateStatisticsOperation
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the last  [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.
+Get the last [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.
 
 >**Note:** This method only lists the last operation; it does not return a history of all operations.
 
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) object in the response body.
 
 ## Examples
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
