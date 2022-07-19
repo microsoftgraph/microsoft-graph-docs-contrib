@@ -15,7 +15,7 @@ You can upload the entire file, or split the file into multiple byte ranges, as 
 
 The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests. When all the binary segments of a document are uploaded, the binary file is linked to the **printDocument**.
 
-> **Note**: If your app splits a file into multiple byte ranges, the size of each byte range is recommended to be a multiple of 200 KiB unless you are using Graph SDK which requires the segment size to be multiple of 320 KiB. 
+> **Note**: If your app splits a file into multiple byte ranges, we recommend that the size of each byte range is a multiple of 200 KB unless you're using the Microsoft Graph SDK, which requires the segment size to be a multiple of 320 KB. 
 
 ## Upload a file
 
