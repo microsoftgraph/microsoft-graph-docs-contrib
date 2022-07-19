@@ -31,7 +31,7 @@
 			  "ApiChange": "Property",
 			  "ChangedApiName": "frequencyInterval",
 			  "ChangeType": "Addition",
-			  "Description": "Added the `frequencyInterval` property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
+			  "Description": "Added the **frequencyInterval** property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
 			  "Target": "signInFrequencySessionControl"
 			}
 		      ],
