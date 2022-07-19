@@ -1,5 +1,5 @@
 ---
-title: "Create open extension"
+title: "Create openTypeExtension"
 description: "Create an open extension (openTypeExtension object) and add custom properties"
 ms.localizationpriority: medium
 author: "dkershaw10"
@@ -7,7 +7,7 @@ doc_type: apiPageType
 ms.prod: "extensions"
 ---
 
-# Create open extension
+# Create openTypeExtension
 
 Namespace: microsoft.graph
 
@@ -51,15 +51,15 @@ Use the same REST request that you use to create the instance.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/events
-POST /users/{id|userPrincipalName}/messages
-POST /groups/{id}/events
-POST /groups/{id}/threads/{id}/posts/{id}/reply
-POST /users/{id|userPrincipalName}/contacts
-POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
-POST /users/{id|userPrincipalName}/todo/lists
-POST /users/{id|userPrincipalName}/tasks/lists/{id}/tasks
-POST /users/{id|userPrincipalName}/tasks/lists
+POST /users/{userId|userPrincipalName}/events
+POST /users/{userId|userPrincipalName}/messages
+POST /groups/{userId}/events
+POST /groups/{userId}/threads/{threadId}/posts/{postId}/reply
+POST /users/{userId|userPrincipalName}/contacts
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks
+POST /users/{userId|userPrincipalName}/todo/lists
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks
+POST /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 >**Note:** This syntax shows some common ways to create the supported resource instances. All other POST syntaxes
@@ -73,32 +73,26 @@ Identify the resource instance in the request and do a `POST` to the **extension
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeunits/{id}/extensions
-POST /devices/{id}/extensions
-POST /users/{id|userPrincipalName}/events/{id}/extensions
-POST /groups/{id}/extensions
-POST /groups/{id}/events/{id}/extensions
-POST /groups/{id}/threads/{id}/posts/{id}/extensions
-POST /users/{id|userPrincipalName}/messages/{id}/extensions
-POST /organization/{id}/extensions
-POST /users/{id|userPrincipalName}/contacts/{id}/extensions
-POST /users/{id|userPrincipalName}/extensions
-POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
-POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
-POST /users/{id|userPrincipalName}/tasks/lists/{id}/tasks/{id}/extensions
-POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
+POST /administrativeunits/{administrativeUnitId}/extensions
+POST /devices/{deviceId}/extensions
+POST /users/{userId|userPrincipalName}/events/{eventId}/extensions
+POST /groups/{groupId}/extensions
+POST /groups/{groupId}/events/{eventId}/extensions
+POST /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions
+POST /users/{userId|userPrincipalName}/messages/{messageId}/extensions
+POST /organization/{organizationId}/extensions
+POST /users/{userIdd|userPrincipalName}/contacts/{contactId}/extensions
+POST /users/{userId|userPrincipalName}/extensions
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}/extensions
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}/extensions
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions
 ```
 
 >**Note:** This syntax shows some common ways to identify a resource instance, in order to create an
 extension in it. All other syntaxes that allows you to identify these resource instances supports creating open extensions in them in a similar way.
 
 See the [Request body](#request-body) section about including _the extension_ in the request body.
-
-## Path parameters
-
-|**Parameter**|**Type**|**Description**|
-|:-----|:-----|:-----|
-|id|string|A unique identifier for an object in the corresponding collection. Required.|
 
 ## Request headers
 
@@ -116,7 +110,7 @@ primitive types.
 | Name       | Value |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %unique_string% |
+| extensionName | Unique string |
 
 When creating an extension in a _new_ resource instance, in addition to the
 new **openTypeExtension** object, provide a JSON representation of the relevant properties to create such a resource instance.
