@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [learningContent](../resources/learningcontent.md) objects and their properties.
+Get a list of the [learningContent](../resources/learningcontent.md) resources and their properties.
+
+This list represents the metadata of the specified provider's content in Viva Learning.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

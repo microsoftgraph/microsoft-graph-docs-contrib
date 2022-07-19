@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [learningContent](../resources/learningcontent.md) object.
+Delete the specified [learningContent](../resources/learningcontent.md) resource which represents the metadata of the specified provider's ingested content.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
