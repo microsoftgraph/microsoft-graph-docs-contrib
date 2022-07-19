@@ -1,6 +1,6 @@
 ---
 title: "tenantAllowBlockListEntryResult resource type"
-description: "Represents tenant allow block list entry result"
+description: "Represents a tenant allow block list entry result."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents result of tenant allow block list entry. It is an entry for tenant allow block list item that could be url, attachment or senders.
+Represents the result of a tenant allow block list entry. An entry for a tenant allow block list item can be a URL, attachment, or senders.
 
 ## Properties
 | Property           | Type                          | Description                                             |
