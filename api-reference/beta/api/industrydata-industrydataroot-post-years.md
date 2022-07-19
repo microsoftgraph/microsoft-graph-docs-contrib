@@ -1,19 +1,19 @@
 ---
-title: "Update yearTimePeriodDefinition"
-description: "Update the properties of a yearTimePeriodDefinition object."
+title: "Create yearTimePeriodDefinition"
+description: "Create a new yearTimePeriodDefinition object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Update yearTimePeriodDefinition
+# Create yearTimePeriodDefinition
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object.
+Create a new yearTimePeriodDefinition object.
 
 ## Permissions
 
@@ -33,8 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /external/industryData/inboundFlows/{inboundFlowId}/year
-PATCH /external/industryData/years/{yearTimePeriodDefinitionId}
+POST /external/industryData/years
 ```
 
 ## Request headers
@@ -46,7 +45,9 @@ PATCH /external/industryData/years/{yearTimePeriodDefinitionId}
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object.
+
+You can specify the following properties when creating a **yearTimePeriodDefinition**.
 
 | Property    | Type                                                                                               | Description                                                              |
 | :---------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
@@ -57,7 +58,7 @@ PATCH /external/industryData/years/{yearTimePeriodDefinitionId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object in the response body.
 
 ## Examples
 
@@ -67,12 +68,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_yeartimeperioddefinition"
+  "name": "create_yeartimeperioddefinition_from_"
 }
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inboundFlowId}/year
+POST https://graph.microsoft.com/beta/external/industryData/years
 Content-Type: application/json
 Content-length: 242
 
@@ -95,12 +96,13 @@ The following is an example of the response
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.industryData.yearTimePeriodDefinition"
 }
 -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {

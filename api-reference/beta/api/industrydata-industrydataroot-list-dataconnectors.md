@@ -1,19 +1,19 @@
 ---
-title: "industryDataRun: getStatistics"
-description: "Calculate statistics for the runGroup."
+title: "List industryDataConnector"
+description: "Get the industryDataConnector resources from the dataConnector navigation property."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# industryDataRun: getStatistics
+# List industryDataConnector
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calculate statistics for the runGroup.
+Get the industryDataConnector resources from the dataConnector navigation property.
 
 ## Permissions
 
@@ -33,8 +33,12 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /external/industryData/runs/{industryDataRunId}/getStatistics
+GET /external/industryData/inboundFlows/{inboundFlowId}/dataConnector
 ```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -48,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [industryDataRunStatistics](../resources/industrydata-industrydatarunstatistics.md) in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [industryDataConnector](../resources/industrydataconnector.md) objects in the response body.
 
 ## Examples
 
@@ -58,12 +62,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "industrydatarunthis.getstatistics"
+  "name": "list_industrydataconnector"
 }
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/runs/{industryDataRunId}/getStatistics
+GET https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inboundFlowId}/dataConnector
 ```
 
 ### Response
@@ -75,7 +79,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.industryData.industryDataRunStatistics"
+  "@odata.type": "Collection(microsoft.graph.industryData.industryDataConnector)"
 }
 -->
 
@@ -84,8 +88,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.industryData.industryDataRunStatistics"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.industryData.industryDataConnector",
+      "displayName": "String"
+    }
+  ]
 }
 ```

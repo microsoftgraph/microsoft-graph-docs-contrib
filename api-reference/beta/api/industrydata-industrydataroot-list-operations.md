@@ -1,19 +1,19 @@
 ---
-title: "industryDataRun: getStatistics"
-description: "Calculate statistics for the runGroup."
+title: "List longRunningOperations"
+description: "Get a list of the longRunningOperation objects and their properties."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# industryDataRun: getStatistics
+# List longRunningOperations
 
-Namespace: microsoft.graph.industryData
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calculate statistics for the runGroup.
+Get a list of the [longRunningOperation](../resources/longrunningoperation.md) objects and their properties.
 
 ## Permissions
 
@@ -33,8 +33,12 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /external/industryData/runs/{industryDataRunId}/getStatistics
+GET /external/industryData/operations
 ```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -48,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [industryDataRunStatistics](../resources/industrydata-industrydatarunstatistics.md) in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [longRunningOperation](../resources/longrunningoperation.md) objects in the response body.
 
 ## Examples
 
@@ -58,12 +62,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "industrydatarunthis.getstatistics"
+  "name": "list_longrunningoperation"
 }
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/runs/{industryDataRunId}/getStatistics
+GET https://graph.microsoft.com/beta/external/industryData/operations
 ```
 
 ### Response
@@ -75,7 +79,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.industryData.industryDataRunStatistics"
+  "@odata.type": "Collection(microsoft.graph.longRunningOperation)"
 }
 -->
 
@@ -84,8 +88,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.industryData.industryDataRunStatistics"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.longRunningOperation",
+      "createdDateTime": "String (timestamp)",
+      "id": "5c5670d6-a2c0-a394-ef42-882954856de5",
+      "lastActionDateTime": "String (timestamp)",
+      "resourceLocation": "String",
+      "status": "String",
+      "statusDetail": "String"
+    }
+  ]
 }
 ```

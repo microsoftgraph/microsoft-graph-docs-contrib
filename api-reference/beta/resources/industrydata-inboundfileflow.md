@@ -1,9 +1,9 @@
 ---
 title: "inboundFileFlow resource type"
 description: "This entity represents a flow to import data via a set of files into the canonical store."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "industrydata"
 doc_type: resourcePageType
 ---
 
@@ -15,40 +15,38 @@ Namespace: microsoft.graph.industryData
 
 This entity represents a flow to import data via a set of files into the canonical store.
 
-
 Inherits from [inboundFlow](../resources/industrydata-inboundflow.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List inboundFileFlows](../api/industrydata-inboundfileflow-list.md)|[microsoft.graph.industryData.inboundFileFlow](../resources/industrydata-inboundfileflow.md) collection|Get a list of the [inboundFileFlow](../resources/industrydata-inboundfileflow.md) objects and their properties.|
-|[Get inboundFileFlow](../api/industrydata-inboundfileflow-get.md)|[microsoft.graph.industryData.inboundFileFlow](../resources/industrydata-inboundfileflow.md)|Read the properties and relationships of an [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.|
-|[Update inboundFileFlow](../api/industrydata-inboundfileflow-update.md)|[microsoft.graph.industryData.inboundFileFlow](../resources/industrydata-inboundfileflow.md)|Update the properties of an [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.|
-|[Delete inboundFileFlow](../api/industrydata-inboundfileflow-delete.md)|None|Deletes an [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.|
-|[List industryDataConnector](../api/industrydata-industrydatatenant-list-dataconnectors.md)|[microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md) collection|Get the industryDataConnector resources from the dataConnector navigation property.|
-|[Add industryDataConnector](../api/industrydata-inboundfileflow-post-dataconnector.md)|[microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)|Add dataConnector by posting to the dataConnector collection.|
-|[Remove industryDataConnector](../api/industrydata-inboundfileflow-delete-dataconnector.md)|None|Remove an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.|
-|[List yearTimePeriodDefinition](../api/industrydata-inboundfileflow-list-year.md)|[microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) collection|Get the yearTimePeriodDefinition resources from the year navigation property.|
-|[Add yearTimePeriodDefinition](../api/industrydata-inboundfileflow-post-year.md)|[microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md)|Add year by posting to the year collection.|
-|[Remove yearTimePeriodDefinition](../api/industrydata-inboundfileflow-delete-year.md)|None|Remove a [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) object.|
+
+| Method                                                                  | Return type                                                                                             | Description                                                                                                         |
+| :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------ |
+| [List inboundFileFlows](../api/industrydata-inboundfileflow-list.md)    | [microsoft.graph.industryData.inboundFileFlow](../resources/industrydata-inboundfileflow.md) collection | Get a list of the [inboundFileFlow](../resources/industrydata-inboundfileflow.md) objects and their properties.     |
+| [Get inboundFileFlow](../api/industrydata-inboundfileflow-get.md)       | [microsoft.graph.industryData.inboundFileFlow](../resources/industrydata-inboundfileflow.md)            | Read the properties and relationships of an [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object. |
+| [Update inboundFileFlow](../api/industrydata-inboundfileflow-update.md) | [microsoft.graph.industryData.inboundFileFlow](../resources/industrydata-inboundfileflow.md)            | Update the properties of an [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.                 |
+| [Delete inboundFileFlow](../api/industrydata-inboundfileflow-delete.md) | None                                                                                                    | Deletes an [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.                                  |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|dataDomain|inboundDomain|The broad category of data that is being imported by this flow. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).The possible values are: `educationRostering`, `unknownFutureValue`.|
-|displayName|String|Name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md).|
-|effectiveDateTime|DateTimeOffset|The start of the time window when the flow is allowed to run. ISO 8601 format. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).|
-|expirationDateTime|DateTimeOffset|The end of the time window when the flow is allowed to run. ISO 8601 format. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).|
-|readinessStatus|readinessStatus|The state of the process from creation through to ready to do work. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md).The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`.|
+
+| Property           | Type            | Description                                                                                                                                                                                                                                                       |
+| :----------------- | :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| dataDomain         | inboundDomain   | The broad category of data that is being imported by this flow. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).The possible values are: `educationRostering`, `unknownFutureValue`.                                                       |
+| displayName        | String          | Name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md).                                                                                                                                                    |
+| effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. ISO 8601 format. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                                            |
+| expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. ISO 8601 format. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                                              |
+| readinessStatus    | readinessStatus | The state of the process from creation through to ready to do work. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md).The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|dataConnector|[industryDataConnector](../resources/industrydata-industrydataconnector.md)|The data connector in the context of which this flow will pull in data from a source system Inherited from [inboundFlow](../resources/industrydata-inboundflow.md)|
-|year|[yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md)|The year that the data being brought in via this flow applies to. ISO-8601 4-digit year. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md)|
+
+| Relationship  | Type                                                                              | Description                                                                                                                                                        |
+| :------------ | :-------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| dataConnector | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system Inherited from [inboundFlow](../resources/industrydata-inboundflow.md) |
+| year          | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. ISO-8601 4-digit year. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md)    |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -57,7 +55,8 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.industryData.inboundFileFlow",
   "displayName": "String",
@@ -67,4 +66,3 @@ The following is a JSON representation of the resource.
   "expirationDateTime": "String (timestamp)"
 }
 ```
-

@@ -1,19 +1,19 @@
 ---
-title: "Update azureDataLakeConnector"
-description: "Update the properties of an azureDataLakeConnector object."
+title: "Create industryDataConnector"
+description: "Create a new industryDataConnector object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Update azureDataLakeConnector
+# Create industryDataConnector
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object.
+Create a new [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-
+POST /external/industryData/dataConnectors
 ```
 
 ## Request headers
@@ -45,15 +45,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.
 
-| Property    | Type   | Description                                                                                                                       |
-| :---------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| displayName | String | Name of the data connector. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md). Required. |
+You can specify the following properties when creating an **industryDataConnector**.
+
+| Property    | Type   | Description                           |
+| :---------- | :----- | :------------------------------------ |
+| displayName | String | Name of the data connector. Required. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object in the response body.
 
 ## Examples
 
@@ -63,12 +65,19 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_azuredatalakeconnector"
+  "name": "create_industrydataconnector_from_"
 }
 -->
 
 ```http
+POST https://graph.microsoft.com/beta/external/industryData/dataConnectors
+Content-Type: application/json
+Content-length: 104
 
+{
+  "@odata.type": "#microsoft.graph.industryData.industryDataConnector",
+  "displayName": "String"
+}
 ```
 
 ### Response
@@ -79,16 +88,17 @@ The following is an example of the response
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.industryData.industryDataConnector"
 }
 -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
+  "@odata.type": "#microsoft.graph.industryData.industryDataConnector",
   "displayName": "String"
 }
 ```

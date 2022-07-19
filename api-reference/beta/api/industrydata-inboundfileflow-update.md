@@ -1,13 +1,14 @@
 ---
 title: "Update inboundFileFlow"
 description: "Update the properties of an inboundFileFlow object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
 # Update inboundFileFlow
+
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,13 +16,14 @@ Namespace: microsoft.graph.industryData
 Update the properties of an [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged)                 |
+| :------------------------------------- | :---------------------------------------------------------- |
+| Delegated (work or school account)     | EduAdministration.Read, EduAdministration.ReadWrite         |
+| Delegated (personal Microsoft account) | Not supported.                                              |
+| Application                            | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## HTTP request
 
@@ -29,28 +31,29 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
+
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.|
-|readinessStatus|readinessStatus|The state of the process from creation through to ready to do work. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. Required.|
-|dataDomain|inboundDomain|The broad category of data that is being imported by this flow. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). The possible values are: `educationRostering`, `unknownFutureValue`. Required.|
-|effectiveDateTime|DateTimeOffset|The start of the time window when the flow is allowed to run. ISO 8601 format. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). Required.|
-|expirationDateTime|DateTimeOffset|The end of the time window when the flow is allowed to run. ISO 8601 format. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). Optional.|
-
-
+| Property           | Type            | Description                                                                                                                                                                                                                                                                  |
+| :----------------- | :-------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName        | String          | Name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                                                     |
+| readinessStatus    | readinessStatus | The state of the process from creation through to ready to do work. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. Required. |
+| dataDomain         | inboundDomain   | The broad category of data that is being imported by this flow. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                       |
+| effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. ISO 8601 format. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). Required.                                                                                                             |
+| expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. ISO 8601 format. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). Optional.                                                                                                               |
 
 ## Response
 
@@ -59,26 +62,32 @@ If successful, this method returns a `200 OK` response code and an updated [inbo
 ## Examples
 
 ### Request
+
 The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_inboundfileflow"
 }
 -->
-``` http
+
+```http
 
 ```
 
-
 ### Response
+
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -91,4 +100,3 @@ Content-Type: application/json
   "expirationDateTime": "String (timestamp)"
 }
 ```
-

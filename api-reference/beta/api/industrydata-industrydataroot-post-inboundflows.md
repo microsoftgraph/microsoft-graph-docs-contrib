@@ -1,19 +1,19 @@
 ---
-title: "Update inboundFlow"
-description: "Update the properties of an inboundFlow object."
+title: "Create inboundFlow"
+description: "Create a new inboundFlow object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Update inboundFlow
+# Create inboundFlow
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [inboundFlow](../resources/industrydata-inboundflow.md) object.
+Create a new [inboundFlow](../resources/industrydata-inboundflow.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /external/industryData/inboundFlows/{inboundFlowId}
+POST /external/industryData/inboundFlows
 ```
 
 ## Request headers
@@ -45,7 +45,9 @@ PATCH /external/industryData/inboundFlows/{inboundFlowId}
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [inboundFlow](../resources/industrydata-inboundflow.md) object.
+
+You can specify the following properties when creating an **inboundFlow**.
 
 | Property           | Type            | Description                                                                                                                                                                                                                                                                  |
 | :----------------- | :-------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,7 +59,7 @@ PATCH /external/industryData/inboundFlows/{inboundFlowId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [inboundFlow](../resources/industrydata-inboundflow.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [inboundFlow](../resources/industrydata-inboundflow.md) object in the response body.
 
 ## Examples
 
@@ -67,12 +69,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_inboundflow"
+  "name": "create_inboundflow_from_"
 }
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inboundFlowId}
+POST https://graph.microsoft.com/beta/external/industryData/inboundFlows
 Content-Type: application/json
 Content-length: 246
 
@@ -94,12 +96,13 @@ The following is an example of the response
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.industryData.inboundFlow"
 }
 -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {

@@ -1,19 +1,19 @@
 ---
-title: "Update sourceSystemDefinition"
-description: "Update the properties of a sourceSystemDefinition object."
+title: "Create sourceSystemDefinition"
+description: "Create a new sourceSystemDefinition object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Update sourceSystemDefinition
+# Create sourceSystemDefinition
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.
+Create a new sourceSystemDefinition object.
 
 ## Permissions
 
@@ -33,8 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /external/industryData/sourceSystems/{sourceSystemDefinitionId}
-PATCH /external/industryData/dataConnectors/{industryDataConnectorId}/sourceSystem
+POST /external/industryData/sourceSystems
 ```
 
 ## Request headers
@@ -46,7 +45,9 @@ PATCH /external/industryData/dataConnectors/{industryDataConnectorId}/sourceSyst
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.
+
+You can specify the following properties when creating a **sourceSystemDefinition**.
 
 | Property             | Type                                                                                                            | Description                                                    |
 | :------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------- |
@@ -56,7 +57,7 @@ PATCH /external/industryData/dataConnectors/{industryDataConnectorId}/sourceSyst
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object in the response body.
 
 ## Examples
 
@@ -66,12 +67,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_sourcesystemdefinition"
+  "name": "create_sourcesystemdefinition_from_"
 }
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/external/industryData/sourceSystems/{sourceSystemDefinitionId}
+POST https://graph.microsoft.com/beta/external/industryData/sourceSystems
 Content-Type: application/json
 Content-length: 250
 
@@ -95,12 +96,13 @@ The following is an example of the response
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.industryData.sourceSystemDefinition"
 }
 -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {

@@ -1,13 +1,14 @@
 ---
 title: "azureDataLakeConnector: getUploadSession"
 description: "Retrieves an upload session used to supply file-based data to an inbound flow."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
 # azureDataLakeConnector: getUploadSession
+
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,13 +16,14 @@ Namespace: microsoft.graph.industryData
 Retrieves an upload session used to supply file-based data to an inbound flow.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged)                 |
+| :------------------------------------- | :---------------------------------------------------------- |
+| Delegated (work or school account)     | EduAdministration.Read, EduAdministration.ReadWrite         |
+| Delegated (personal Microsoft account) | Not supported.                                              |
+| Application                            | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## HTTP request
 
@@ -29,24 +31,28 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
+
 ```
 
 ## Function parameters
+
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
-|Parameter|Type|Description|
-|:---|:---|:---|
-|resetSession|Boolean|If true, a new fileUploadSession with an empty container will be returned.|
-
+| Parameter    | Type    | Description                                                                |
+| :----------- | :------ | :------------------------------------------------------------------------- |
+| resetSession | Boolean | If true, a new fileUploadSession with an empty container will be returned. |
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -56,27 +62,33 @@ If successful, this function returns a `200 OK` response code and a [fileUploadS
 ## Examples
 
 ### Request
+
 The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "azuredatalakeconnectorthis.getuploadsession"
 }
 -->
-``` http
+
+```http
 
 ```
 
-
 ### Response
+
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.industryData.fileUploadSession"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -86,4 +98,3 @@ Content-Type: application/json
   }
 }
 ```
-

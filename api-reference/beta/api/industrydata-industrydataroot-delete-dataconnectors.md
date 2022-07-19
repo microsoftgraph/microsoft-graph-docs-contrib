@@ -1,19 +1,19 @@
 ---
-title: "industryDataRun: getStatistics"
-description: "Calculate statistics for the runGroup."
+title: "Delete industryDataConnector"
+description: "Deletes an industryDataConnector object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# industryDataRun: getStatistics
+# Delete industryDataConnector
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calculate statistics for the runGroup.
+Deletes an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.
 
 ## Permissions
 
@@ -33,7 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /external/industryData/runs/{industryDataRunId}/getStatistics
+DELETE /external/industryData/dataConnectors/{industryDataConnectorId}/$ref
+DELETE /external/industryData/inboundFlows/{inboundFlowId}/dataConnector/$ref
 ```
 
 ## Request headers
@@ -48,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [industryDataRunStatistics](../resources/industrydata-industrydatarunstatistics.md) in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -58,12 +59,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "industrydatarunthis.getstatistics"
+  "name": "delete_industrydataconnector"
 }
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/runs/{industryDataRunId}/getStatistics
+DELETE https://graph.microsoft.com/beta/external/industryData/dataConnectors/{industryDataConnectorId}
 ```
 
 ### Response
@@ -74,18 +75,10 @@ The following is an example of the response
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.industryData.industryDataRunStatistics"
+  "truncated": true
 }
 -->
 
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": {
-    "@odata.type": "microsoft.graph.industryData.industryDataRunStatistics"
-  }
-}
+HTTP/1.1 204 No Content
 ```
