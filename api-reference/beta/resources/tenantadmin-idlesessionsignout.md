@@ -1,20 +1,27 @@
 ---
-author: lfernandez
-description: The idleSessionSignOut resource groups together the idle session sign-out policy settings for SharePoint.
-ms.date: 7/5/2022
-title: idleSessionSignOut
+title: "idleSessionSignOut resource type"
+description: "Represents the idle session sign-out policy settings for SharePoint."
+author: "lfernandez"
 ms.localizationpriority: medium
-ms.prod: files
+ms.prod: "files"
 doc_type: resourcePageType
 ---
 
-# Audio facet
+# idleSessionSignOut resource type
 
 Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **idleSessionSignOut** resource groups together the idle session sign-out policy settings for SharePoint.
+Represents the idle session sign-out policy settings for SharePoint.
+
+## Properties
+
+| Property              | Type     | Description                                                                               |
+|:----------------------|:---------|:------------------------------------------------------------------------------------------|
+| isEnabled             | Boolean  | Indicates whether the idle session sign-out policy is enabled.                            |
+| signOutAfterInSeconds | Int64    | Number of seconds of inactivity after which a user is signed out.                         |
+| warnAfterInSeconds    | Int64    | Number of seconds of inactivity after which a user is notified that they'll be signed out.|
 
 ## JSON representation
 
@@ -22,23 +29,15 @@ The **idleSessionSignOut** resource groups together the idle session sign-out po
 
 ```json
 {
-    "isEnabled": true,
-    "signOutAfterInSeconds": 300,
-    "warnAfterInSeconds": 10
+    "isEnabled": "Boolean",
+    "signOutAfterInSeconds": "Int64",
+    "warnAfterInSeconds": "Int64"
 }
 ```
 
-## Properties
-
-| Property              | Type    | Description                                                                                |
-| :-------------------- | :------ | :----------------------------------------------------------------------------------------- |
-| isEnabled             | boolean | Indicates whether idle sessions signout policy is enabled.                                 |
-| warnAfterInSeconds    | long    | Number of seconds of inactivity after which a user is notified that they'll be signed out. |
-| signOutAfterInSeconds | long    | Number of seconds of inactivity after which is a user is signed out.                       |
-
 <!-- {
   "type": "#page.annotation",
-  "description": "Idle session sign out paramters",
+  "description": "Idle session sign out parameters",
   "section": "documentation",
   "tocPath": "Resources/idleSessionSignOut"
 } -->
