@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### bookingsAvailabilityStatus values
+|Member|
+|:---|
+|available|
+|busy|
+|slotsAvailable|
+|outOfOffice|
+|unknownFutureValue|
 
 ### signInFrequencyAuthenticationType values
 

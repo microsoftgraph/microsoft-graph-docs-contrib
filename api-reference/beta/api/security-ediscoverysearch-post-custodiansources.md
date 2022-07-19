@@ -1,6 +1,6 @@
 ---
-title: "Add dataSource"
-description: "Add custodianSources by posting to the custodianSources collection."
+title: "Add custodian sources"
+description: "Create a new custodian source associated with an eDiscovery search.."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -8,12 +8,12 @@ doc_type: "apiPageType"
 ---
 
 
-# Add dataSource
+# Add custodian sources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add custodianSources by posting to the custodianSources collection.
+Create a new custodian source associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,17 +43,17 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 ## Request body
 In the request body, supply a JSON representation of the [dataSource](../resources/security-datasource.md) object.
 
-You can specify the following properties when creating a **dataSource**.
+You can specify the following properties when you create a **dataSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.id|String|String that defines the custodial object. See the example that follows.|
+|@odata.id|String|String that defines the custodial object. See [the example](#examples) that follows.|
 
 
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [dataSource](../resources/security-datasource.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -95,8 +95,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
