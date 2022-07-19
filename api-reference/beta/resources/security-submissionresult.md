@@ -1,6 +1,6 @@
 ---
 title: "submissionResult resource type"
-description: "Represents the result of a review after the threat submission is processed by Microsoft"
+description: "Represents the result of a review after the threat submission is processed by Microsoft."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -20,9 +20,9 @@ Represents the result of a review after the threat submission is processed by Mi
 |:-------------------|:-----------------------------------|:------------------------------------------------------------------------|
 | category           | submissionResultCategory           | The submission result category. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown`, `noResultAvailable` and `unkownFutureValue`. |
 | detail             | [security.submissionResultDetail](#submissionresultdetail-values)             | Specifies the additional details provided by Microsoft to substantiate their analysis result. |
-| detectedFiles      | Collection([security.submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | Specifies the files detected by Microsoft in the submitted emails|
+| detectedFiles      | Collection([security.submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | Specifies the files detected by Microsoft in the submitted emails.|
 | detectedUrls       | Collection(String)                 | Specifes the URLs detected by Microsoft in the submitted email.|
-| userMailboxSetting | [security.userMailboxSetting](#usermailboxsetting-values) | Specifies the setting for user mailbox denoted by a comma separated string. |
+| userMailboxSetting | [security.userMailboxSetting](#usermailboxsetting-values) | Specifies the setting for user mailbox denoted by a comma-separated string. |
 
 ### userMailboxSetting values
 | Member  | Description |
