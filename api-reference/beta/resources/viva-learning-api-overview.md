@@ -20,7 +20,7 @@ The employee learning API in Microsoft Graph enables apps to make content from a
 
 
 ## How do integrations work?
-As administrators, you can integrate your content and learner records (employee assignments and completed course records) from your LMS or learning provider with Viva Learning, by using out-of-the-box integrations where Viva Learning can pull content metadata and learning records from your LMS or learning provider. You can also [use the employee learning API](#use-cases-of-the-employee-learning-api-in-microsoft-graph) in Microsoft Graph to push content metadata from your LMS or learning provider into Viva Learning. 
+As administrators, you can integrate your content and learner records (employee assignments and completed course records) from your LMS or learning provider with Viva Learning, by using out-of-the-box integrations where Viva Learning can pull content metadata and learning records from your LMS or learning provider. You can also [use the employee learning API](#use-cases-for-the-employee-learning-api-in-microsoft-graph) in Microsoft Graph to push content metadata from your LMS or learning provider into Viva Learning. 
 
 When the content metadata, employee assignments, and their completed course records are uploaded to Viva Learning, they appear in Viva Learning at the following locations:
 - The content appears on the home page under the **Browse courses** – **Providers** section.
