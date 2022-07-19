@@ -3109,3 +3109,83 @@ Possible values for user account types (group membership), per Windows definitio
 |terminating|
 |terminationRequested|
 |unknownFutureValue|
+
+### longRunningOperationStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|skipped|
+|unknownFutureValue|
+
+### submissionCategory values 
+
+|Member|
+|:---|
+|notJunk|
+|spam|
+|phishing|
+|malware|
+|unknownFutureValue|
+
+### submissionClientSource values 
+
+|Member|
+|:---|
+|microsoft|
+|other|
+|unknownFutureValue|
+
+### submissionContentType values 
+
+|Member|
+|:---|
+|email|
+|url|
+|file|
+|app|
+|unknownFutureValue|
+
+### submissionResultCategory values 
+
+|Member|
+|:---|
+|notJunk|
+|spam|
+|phishing|
+|malware|
+|allowedByPolicy|
+|blockedByPolicy|
+|spoof|
+|unknown|
+|noResultAvailable|
+|unknownFutureValue|
+
+### submissionSource values 
+
+|Member|
+|:---|
+|user|
+|administrator|
+|unknownFutureValue|
+
+### tenantAllowBlockListAction values 
+
+|Member|
+|:---|
+|allow|
+|block|
+|unknownFutureValue|
+
+### tenantAllowBlockListEntryType values 
+
+|Member|
+|:---|
+|url|
+|fileHash|
+|sender|
+|recipient|
+|unknownFutureValue|
