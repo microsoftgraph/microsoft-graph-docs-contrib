@@ -14,7 +14,7 @@ Create a new [printJob](../resources/printJob.md) for a [printer](../resources/p
 
 Also creates a new [printDocument](../resources/printDocument.md) associated with the printJob.
 
-> **Note:** A user can submit upto ~10000 print jobs in 10 days.
+> **Note:** A user can submit up to ~10000 print jobs in 10 days.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
