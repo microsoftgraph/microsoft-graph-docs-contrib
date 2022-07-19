@@ -80,7 +80,7 @@ The result of a cloud PC Azure network connection health check.
 |resourceAvailabilityCheckResourceGroupLockedForReadonly|The selected resource group is locked and can't be modified for provisioning. Please remove this lock to allow provisioning to succeed.|
 |resourceAvailabilityCheckResourceGroupLockedForDelete|The selected resource group or its parent scope has been locked for delete actions. It may be because the IP addresses are used up. Please remove the lock and try again.|
 |resourceAvailabilityCheckTransientServiceError|The resource availability check failed due to a transient error. Please try it again. If the issue persists, please contact customer support.|
-|resourceAvailabilityCheckNoIntuneReaderRoleError|Do not have sufficient Intune reader role to check Intune platform restriction settings.|
+|resourceAvailabilityCheckNoIntuneReaderRoleError|The Cloud PC doesn't have sufficient permissions to check the Intune platform restriction settings. Please make sure that the Cloud PC has the reader role permission on Intune.|
 |resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation|The Intune has a default Windows platform restriction policy, it may block you from provisioning.|
 |resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation|The Intune has a custom Windows platform restriction policy, it may block you from provisioning.|
 |resourceAvailabilityCheckUnknownError|The resource availability check for Azure resources failed due to an unknown error. Please ensure that all Azure resources meet the prerequisites.|
