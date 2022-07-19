@@ -24,7 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+
+> [!NOTE]
+> There is a [known issue](../../../concepts/known-issues.md#applicationreadwriteownedby-permission-allows-an-app-to-read-apps-it-doesnt-own) with the *Application.Read.OwnedBy* app-only permission.
 
 ## HTTP request
 

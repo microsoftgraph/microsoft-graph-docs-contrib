@@ -20,10 +20,12 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
+|Application | Application.Read.OwnedBy, Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
 > [!NOTE]
 > A service principal can retrieve its own application and service principal details without being granted any application permissions.
+> There is a [known issue](../../../concepts/known-issues.md#applicationreadwriteownedby-permission-allows-an-app-to-read-apps-it-doesnt-own) with the *Application.Read.OwnedBy* app-only permission.
+
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -15,6 +15,10 @@ For information about the latest updates to the Microsoft Graph API, see the [Mi
 
 ## Applications
 
+### Application.ReadWrite.OwnedBy permission allows an app to read apps it doesn't own
+
+The _Application.ReadWrite.OwnedBy_ permission allows an app to call `GET /applications` and `GET /servicePrincipals` to list all applications and service principals in the tenant. This is a known issue that won't be resolved.
+
 ### Some limitations apply to the application and servicePrincipal resources
 
 Changes to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources are currently in development. The following is a summary of current limitations and in-development API features.

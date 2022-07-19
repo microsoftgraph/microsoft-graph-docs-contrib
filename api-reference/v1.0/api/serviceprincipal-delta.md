@@ -20,7 +20,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.All, Directory.Read.All |
+|Application | Application.Read.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
+
+> [!NOTE]
+> There is a [known issue](../../../concepts/known-issues.md#applicationreadwriteownedby-permission-allows-an-app-to-read-apps-it-doesnt-own) with the *Application.Read.OwnedBy* app-only permission.
 
 ## HTTP request
 
