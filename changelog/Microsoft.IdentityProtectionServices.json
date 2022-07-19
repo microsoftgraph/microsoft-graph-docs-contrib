@@ -23,7 +23,7 @@
 			  "ApiChange": "Property",
 			  "ChangedApiName": "authenticationType",
 			  "ChangeType": "Addition",
-			  "Description": "Added the `authenticationType` property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
+			  "Description": "Added the **authenticationType** property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
 			  "Target": "signInFrequencySessionControl"
 			},
 			{
