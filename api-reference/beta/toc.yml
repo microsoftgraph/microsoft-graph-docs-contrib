@@ -1916,7 +1916,6 @@ items:
         - name: Delete
           href: api/bookingstaffmember-delete.md
     - name: Device and app management
-      expanded: true
       items:
       - name: Browser management (preview)
         displayName: Edge, Internet Explorer, IE mode, site list
@@ -10932,6 +10931,30 @@ items:
           items:
           - name: Get
             href: api/serviceannouncementattachment-get.md
+    - name: IndustryData
+      href: resources/industrydata-industrydatatenant.md
+      expanded: true
+      items:
+        - name: Inbound Flows
+          href: resource/industrydata-inboundflow.md
+          items:
+            - name: List Inbound Flows
+              href: api/industrydata-industrydatatenant-list-inboundflows.md
+            - name: Create Inbound flow
+              href: api/industrydata-industrydatatenant-post-inboundflows.md
+            - name: Get Inbound Flow
+              href: api/industrydata-inboundflow-get.md
+            - name: Update Inbound Flow
+              href: api/industrydata-inboundflow-update.md
+            - name: Delete Inbound flow
+              href: api/industrydata-industrydatatenant-delete-inboundflows.md
+        - name: Reference Definitions
+          href: resource/industrydata-referencedefinition.md
+          items:
+            - name: List Reference Definitions
+              href: api/industrydata-industrydatatenant-list-referencedefinitions.md
+            - name: Get Reference Definitions
+              href: api/industrydata-referencedefinition-get.md
     - name: Education
       items:
       - name: Overview
