@@ -1,6 +1,6 @@
 ---
 title: "threatSubmission resource type"
-description: "Represents threat submission which is used to submit suspected email, url, file threats to Microsoft Defender."
+description: "Represents a threat submission, which is used to submit suspected email, UTL, or file threats to Microsoft Defender."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents threat submission, which is an abstract for representing suspected spam, malware, phish and blocked legitimate emails; malware, phish and blocked legitimate URLs; phish, malware and blocked legitimate email attachments to Microsoft Defender for Office 365(MDO), as well as suspicious files to Microsoft Defender for Endpoint (MDE).
+Represents a threat submission, which is an abstract type for representing suspected spam, malware, phish, and blocked legitimate emails; malware, phish and blocked legitimate URLs; phish, malware and blocked legitimate email attachments to Microsoft Defender for Office 365, and suspicious files to Microsoft Defender for Endpoint.
 
-It could also be used to submit false positive cases that should not be blocked by MDO. For example, not junk emails, safe urls and safe email attachments.
+This resource can also be used to submit false positive cases that should not be blocked by Microsoft Defender for Office 365; for example, not junk emails, safe URLs, and safe email attachments.
 
 This is an abstract type. Inherits from [entity](../resources/entity.md). Base type of [emailThreatSubmission](../resources/security-emailthreatsubmission.md), [urlThreatSubmission](../resources/security-urlthreatsubmission.md), [fileThreatSubmissin](../resources/security-filethreatsubmission.md).
 
@@ -28,7 +28,7 @@ This is an abstract type. Inherits from [entity](../resources/entity.md). Base t
 | contentType     | submissionContentType      | Specifies the type of content being submitted. The possible values are: `email`, `url`, `file`, `app` and `unkownFutureValue`.  |
 | createdBy       | [security.submissionUserIdentity](../resources/security-submissionuseridentity.md)     | Specifies who submitted the email as a threat. Supports `$filter = createdBy/email eq 'value'`. |
 | createdDateTime | DateTimeOffset  | Specifies when the threat submission was created. Supports `$filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z`.             |
-| id              | String                     | Specifies the id of threat submission. |
+| id              | String                     | Specifies the ID of threat submission. |
 | result          | [security.submissionResult](../resources/security-submissionresult.md)          | Specifies the result of the analysis performed by Microsoft.  |
 | source          | submissionSource           | Specifies the role of the submitter. Supports `$filter = source eq 'value'`. The possible values are: `administrator`,  `user` and `unkownFutureValue`.  |
 | status          | longRunningOperationStatus | Indicates whether the threat submission has been analyzed by Microsoft. Supports `$filter = status eq 'value'`. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped` and `unkownFutureValue`. |
