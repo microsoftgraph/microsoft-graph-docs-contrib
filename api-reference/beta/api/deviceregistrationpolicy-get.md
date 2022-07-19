@@ -1,7 +1,7 @@
 ---
 title: "Get deviceRegistrationPolicy"
 description: "Read the properties and relationships of a deviceRegistrationPolicy object."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

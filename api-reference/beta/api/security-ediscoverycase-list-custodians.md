@@ -43,7 +43,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
 Do not supply a request body for this method.
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) objects in the response body.
 
 ## Examples
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

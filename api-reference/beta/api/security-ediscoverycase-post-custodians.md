@@ -1,5 +1,5 @@
 ---
-title: "Create ediscoveryCustodian"
+title: "Create custodians"
 description: "Create a new ediscoveryCustodian object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create ediscoveryCustodian
+# Create custodians
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -43,7 +43,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.
 
-You can specify the following properties when creating an **ediscoveryCustodian**.
+You can specify the following properties when you create an **ediscoveryCustodian**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -51,7 +51,7 @@ You can specify the following properties when creating an **ediscoveryCustodian*
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object in the response body.
 
 ## Examples
 
@@ -97,7 +97,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
