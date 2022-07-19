@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the tenant allow-or-block list action. When admin creates email threat submission, tenant allow block list operation can also be provided. When tenant allow block list operation is provided, the threat submission will auto add related items (urls/attachments/senders) into tenant allow block list.
+Represents the tenant allow-or-block list action. When an admin creates an email threat submission, a tenant allow block list operation can also be provided. When a tenant allow block list operation is provided, the threat submission will automatically add related items (URLs, attachments, senders) to the tenant allow block list.
 
 ## Properties
 | Property           | Type                                        | Description                                                                      |
 |:-------------------|:--------------------------------------------|:---------------------------------------------------------------------------------|
-| action             | tenantAllowBlockListAction                  | Specifies whether the tenant allow block list is an allow or block. The possible values are: `allow`, `block` and `unkownFutureValue`.|
+| action             | tenantAllowBlockListAction                  | Specifies whether the tenant allow block list is an allow or block. The possible values are: `allow`, `block`, and `unkownFutureValue`.|
 | expirationDateTime | DateTimeOffset                              | Specifies when the tenant allow-block-list expires in date time.  |
 | note               | String                                      | Specifies the note added to the tenant allow block list entry in the format of string. |
-| results            | Collection([security.tenantAllowBlockListEntryResult](../resources/security-tenantallowblocklistentryresult.md)) | It contains the result of the submission which lead to the tenant allow-block-list entry creation. |
+| results            | Collection([security.tenantAllowBlockListEntryResult](../resources/security-tenantallowblocklistentryresult.md)) | Contains the result of the submission that lead to the tenant allow-block-list entry creation. |
 
 ## Relationships
 None.
