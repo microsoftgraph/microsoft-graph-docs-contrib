@@ -15560,7 +15560,7 @@ items:
         - name: Get primary channel
           href: api/team-get-primarychannel.md
         - name: Get team photo
-          href: api/team-get-photo.md
+          href: api/profilephoto-get.md
         - name: Update team photo
           href: api/profilephoto-update.md
         - name: Complete migration for team

@@ -6951,6 +6951,10 @@ items:
           href: api/user-list-joinedteams.md
         - name: Get primary channel
           href: api/team-get-primarychannel.md
+        - name: Get team photo
+          href: api/profilephoto-get.md
+        - name: Update team photo
+          href: api/profilephoto-update.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/1.0
         - name: Complete migration for team
