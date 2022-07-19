@@ -39,7 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "stageSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **stageSettings** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **stageSettings** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-1.0) resource. Defines the stages and their settings in a multi-stage access review.",
           "Target": "accessReviewScheduleDefinition"
         },
         {
@@ -47,24 +47,8 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewStage",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewStage](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewStage?view=graph-rest-1.0) resource",
+          "Description": "Added the [accessReviewStage](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewStage?view=graph-rest-1.0) resource and associated methods. Represents a stage in an [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstance?view=graph-rest-beta).",
           "Target": "accessReviewStage"
-        },
-        {
-          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
-          "ApiChange": "Method",
-          "ChangedApiName": "stop",
-          "ChangeType": "Addition",
-          "Description": "Added the [stop](https://docs.microsoft.com/en-us/graph/api/stop?view=graph-rest-1.0) method to the [stop](https://docs.microsoft.com/en-us/graph/api/stop?view=graph-rest-1.0) resource.",
-          "Target": "stop"
-        },
-        {
-          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
-          "ApiChange": "Method",
-          "ChangedApiName": "filterByCurrentUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) method to the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) resource.",
-          "Target": "filterByCurrentUser"
         }
       ],
       "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",

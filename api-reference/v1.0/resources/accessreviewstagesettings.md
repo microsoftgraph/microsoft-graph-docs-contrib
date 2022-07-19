@@ -1,6 +1,6 @@
 ---
 title: "accessReviewStageSettings resource type"
-description: "In Azure AD access reviews, the accessReviewStageSettings represents the settings of the stages associated with a multi-stage access review."
+description: "Represents the settings of the stages associated with a multi-stage access review."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -24,7 +24,7 @@ Represents the settings of the stages associated with a [multi-stage access revi
 | recommendationInsightsSettings | [accessReviewRecommendationInsightSetting](accessReviewRecommendationInsightSetting.md) collection | Determines which recommendations to show to reviewers. <br/><br/>**NOTE:** The value of this property will override the corresponding [setting](accessReviewScheduleSettings.md) on the [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) object.|
 | recommendationLookBackDuration | Duration| Optional field. Indicates the time period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from. The recommendation will be to `deny` if the user is inactive during the look back duration. For reviews of groups and Azure AD roles, any duration is accepted. For reviews of applications, 30 days is the maximum duration. If not specified, the duration is 30 days. <br/><br/>**NOTE:** The value of this property will override the corresponding [setting](accessReviewScheduleSettings.md) on the [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) object. |
 |reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Defines who the reviewers are. If none are specified, the review is a self-review (users review their own access).  For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept). <br/><br/>**NOTE:** The value of this property will override the corresponding setting on the [accessReviewScheduleDefinition](accessReviewScheduleDefinition.md). |
-|stageId|String|Unique identifier of the **accessReviewStageSettings**. The **stageId** will be used in **dependsOn** property to indicate the stage relationship. Required. |
+|stageId|String|Unique identifier of the **accessReviewStageSettings** object. The **stageId** will be used by the **dependsOn** property to indicate the stage relationship. Required. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
