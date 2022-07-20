@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 headers := map[string]string{
-	"If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
+	"If-Match": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
 }
-options := &msgraphsdk.PlannerPlanRequestBuilderDeleteRequestConfiguration{
+configuration := &graphconfig.PlannerPlanRequestBuilderDeleteRequestConfiguration{
 	Headers: headers,
 }
-plannerPlanId := "plannerPlan-id"
-graphClient.Planner().PlansById(&plannerPlanId).DeleteWithRequestConfigurationAndResponseHandler(options, nil)
+
+graphClient.Planner().PlansById("plannerPlan-id").DeleteWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.IdentityProviderBaseRequestBuilderGetQueryParameters{
-	Filter: "domains/any(x:%20x/id%20eq%20'contoso.com')",
+requestParameters := &graphconfig.IdentityProviderBaseRequestBuilderGetQueryParameters{
+	Filter: "domains/any",
 }
-options := &msgraphsdk.IdentityProviderBaseRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityProviderBaseRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-identityProviderBaseId := "identityProviderBase-id"
-result, err := graphClient.Directory().FederationConfigurationsById(&identityProviderBaseId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Directory().FederationConfigurationsById("identityProviderBase-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

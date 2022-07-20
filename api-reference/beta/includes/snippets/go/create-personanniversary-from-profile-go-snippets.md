@@ -7,11 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPersonAnnualEvent()
-type := "birthday"
-requestBody.SetType(&type)
+requestBody := graphmodels.NewPersonAnnualEvent()
+type := graphmodels.BIRTHDAY_PERSONANNUALEVENTTYPE 
+requestBody.SetType(&type) 
 date := "1980-01-08"
-requestBody.SetDate(&date)
+requestBody.SetDate(&date) 
+
 result, err := graphClient.Me().Profile().Anniversaries().Post(requestBody)
 
 

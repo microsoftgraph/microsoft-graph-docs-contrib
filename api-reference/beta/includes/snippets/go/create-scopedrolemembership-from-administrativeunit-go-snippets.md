@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewScopedRoleMembership()
+requestBody := graphmodels.NewScopedRoleMembership()
 roleId := "roleId-value"
-requestBody.SetRoleId(&roleId)
-roleMemberInfo := msgraphsdk.NewIdentity()
-requestBody.SetRoleMemberInfo(roleMemberInfo)
+requestBody.SetRoleId(&roleId) 
+roleMemberInfo := graphmodels.NewIdentity()
 id := "id-value"
-roleMemberInfo.SetId(&id)
-administrativeUnitId := "administrativeUnit-id"
-result, err := graphClient.AdministrativeUnitsById(&administrativeUnitId).ScopedRoleMembers().Post(requestBody)
+roleMemberInfo.SetId(&id) 
+requestBody.SetRoleMemberInfo(roleMemberInfo)
+
+result, err := graphClient.AdministrativeUnitsById("administrativeUnit-id").ScopedRoleMembers().Post(requestBody)
 
 
 ```

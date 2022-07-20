@@ -7,14 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAttachment()
+requestBody := graphmodels.NewAttachment()
+"@odata.type" := "#Microsoft.OutlookServices.ItemAttachment"
+requestBody.Set"@odata.type"(&"@odata.type") 
 name := "name-value"
-requestBody.SetName(&name)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
+requestBody.SetName(&name) 
+additionalData := map[string]interface{}{
+item := graphmodels.New()
+"@odata.type" := "microsoft.graph.message"
+item.Set"@odata.type"(&"@odata.type") 
+	requestBody.SetItem(item)
 }
-eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Attachments().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Me().EventsById("event-id").Attachments().Post(requestBody)
 
 
 ```
