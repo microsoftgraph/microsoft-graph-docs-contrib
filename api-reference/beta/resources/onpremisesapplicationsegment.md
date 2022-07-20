@@ -30,29 +30,21 @@ Represents [onPremisesApplicationSegment](onPremisesApplicationSegment.md) objec
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.onPremisesApplicationSegment",
-  "baseType": null
-}-->
-
-```json
+  "@odata.type": "microsoft.graph.onPremisesApplicationSegment"
+}
+-->
+``` json
 {
-"alternateUrl":"String",
-"corsConfigurations":[{"@odata.type": "microsoft.graph.corsConfiguration"}],
-"externalUrl":"String",
-"internalUrl":"String"
+  "@odata.type": "#microsoft.graph.onPremisesApplicationSegment",
+  "externalUrl": "String",
+  "internalUrl": "String",
+  "alternateUrl": "String",
+  "corsConfigurations": [
+    {
+      "@odata.type": "microsoft.graph.corsConfiguration"
+    }
+  ]
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "description": "onPremisesApplicationSegment resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
