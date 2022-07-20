@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
+
 Represents user input on why downgrade was performed. Downgrade justification might be required based on label policy configuration in Office Security and Compliance Center.
 
 ## Properties

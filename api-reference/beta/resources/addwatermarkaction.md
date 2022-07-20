@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
+
 Represents an action that specifies the details on the content watermark to be added to the information, if applicable.
 
 ## Properties
