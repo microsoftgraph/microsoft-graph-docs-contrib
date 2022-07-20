@@ -264,7 +264,7 @@ None.
 The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Application.ReadWrite.All_ except that the former allows these operations only on applications and service principals that the calling app is an owner of. Ownership is indicated by the `owners` navigation property on the target [application](/graph/api/application-list-owners?view=graph-rest-beta&preserve-view=true) or [service principal](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta&preserve-view=true) resource.
 
 > [!NOTE]
-> The _Application.ReadWrite.OwnedBy_ permission allows an app to call `GET /applications` and `GET /servicePrincipals` to list all applications and service principals in the tenant. This is a [known issue](/graph/known-issues#applicationreadwriteownedby-permission-allows-an-app-to-read-apps-it-doesnt-own) that won't be resolved.
+> The *Application.ReadWrite.OwnedBy* permission allows an app to call `GET /applications` and `GET /servicePrincipals` to list all applications and service principals in the tenant. This scope of access has been allowed for the permission.
 
 ### Example usage
 

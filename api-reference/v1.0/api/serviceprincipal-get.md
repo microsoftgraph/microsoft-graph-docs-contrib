@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!NOTE]
 > A service principal can retrieve its own application and service principal details without being granted any application permissions.
-> There is a [known issue](/graph/known-issues#applicationreadwriteownedby-permission-allows-an-app-to-read-apps-it-doesnt-own) with the *Application.ReadWrite.OwnedBy* application permission.
+> The *Application.ReadWrite.OwnedBy* permission allows an app to call `GET /applications` and `GET /servicePrincipals` to list all applications and service principals in the tenant. This scope of access has been allowed for the permission.
 
 
 ## HTTP request
