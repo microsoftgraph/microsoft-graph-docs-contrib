@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-conditionalAccessPolicyCoverageId := "conditionalAccessPolicyCoverage-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().ConditionalAccessPolicyCoveragesById(&conditionalAccessPolicyCoverageId).Get()
+
+result, err := graphClient.TenantRelationships().ManagedTenants().ConditionalAccessPolicyCoveragesById("conditionalAccessPolicyCoverage-id").Get()
 
 
 ```

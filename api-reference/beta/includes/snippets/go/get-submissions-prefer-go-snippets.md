@@ -8,14 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 headers := map[string]string{
-	"Prefer": "include-unknown-enum-members"
+	"Prefer": "include-unknown-enum-members",
 }
-options := &msgraphsdk.SubmissionsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.SubmissionsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
-educationClassId := "educationClass-id"
-educationAssignmentId := "educationAssignment-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Submissions().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Submissions().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

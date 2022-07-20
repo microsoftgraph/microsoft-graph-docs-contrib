@@ -7,19 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPersonAward()
+requestBody := graphmodels.NewPersonAward()
 description := "Lifetime Achievement award from the International Association of Branding Managers"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 displayName := "Lifetime Achievement Award For Excellence in Branding"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 issuedDate := "Date"
-requestBody.SetIssuedDate(&issuedDate)
+requestBody.SetIssuedDate(&issuedDate) 
 issuingAuthority := "International Association of Branding Management"
-requestBody.SetIssuingAuthority(&issuingAuthority)
+requestBody.SetIssuingAuthority(&issuingAuthority) 
 thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
-requestBody.SetThumbnailUrl(&thumbnailUrl)
+requestBody.SetThumbnailUrl(&thumbnailUrl) 
 webUrl := "https://www.iabm.io"
-requestBody.SetWebUrl(&webUrl)
+requestBody.SetWebUrl(&webUrl) 
+
 result, err := graphClient.Me().Profile().Awards().Post(requestBody)
 
 

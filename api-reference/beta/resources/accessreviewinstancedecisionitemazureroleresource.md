@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstanceDecisionItemAzureRoleResource resource type"
 description: "Represents Azure resource roles for which access is represented through an accessReviewInstanceDecisionItem object."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

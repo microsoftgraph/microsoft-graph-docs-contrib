@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.TimeCardsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.TimeCardsRequestBuilderGetQueryParameters{
 	Top: 2,
-	Filter: "state%20eq%20'clockedOut'",
+	Filter: "state eq 'clockedOut'",
 }
-options := &msgraphsdk.TimeCardsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TimeCardsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.TeamsById("team-id").Schedule().TimeCards().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```
