@@ -18,8 +18,8 @@ Represents the details of the Cloud PC connectivity status.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|failedHealthCheckItems|[cloudPcHealthCheckItem](../resources/cloudpchealthcheckitem.md) collection|A list of failed health check items. If `status` is `available`, this property will be empty.|
-|status|[cloudPcConnectivityStatus](#cloudpcconnectivitystatus-values)|Connectivity status of the Cloud PC. Possible values are: `unknown`, `available`, `availableWithWarning`, `unavailable`.|
+|failedHealthCheckItems|[cloudPcHealthCheckItem](../resources/cloudpchealthcheckitem.md) collection|A list of failed health check items. If the status property is `available`, this property will be empty.|
+|status|[cloudPcConnectivityStatus](#cloudpcconnectivitystatus-values)|Connectivity status of the Cloud PC. Possible values are: `unknown`, `available`, `availableWithWarning`, `unavailable` and `unknownFutureValue`.|
 |updatedDateTime|string|Datetime when the status was updated. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`. |
 
 ### cloudPcConnectivityStatus values

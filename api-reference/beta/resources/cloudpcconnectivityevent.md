@@ -20,8 +20,8 @@ Represents the details of Cloud PC connectivity event.
 |:---|:---|:---|
 |eventDateTime|DateTimeOffset|Indicates the date and time when this event was created. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
 |eventName|string|Name of the event.|
-|eventResult|[cloudPcConnectivityEventResult](#cloudpcconnectivityeventresult-values)|Result of this event. Possible values are: `unknown`, `success`, `failure`.|
-|eventType|[cloudPcConnectivityEventType](#cloudpcconnectivityeventtype-values)|Type of this event. Possible values are: `unknown`, `userConnection`, `userTroubleshooting`, `deviceHealthCheck`.|
+|eventResult|[cloudPcConnectivityEventResult](#cloudpcconnectivityeventresult-values)|Result of this event. Possible values are: `unknown`, `success`, `failure` and `unknownFutureValue`.|
+|eventType|[cloudPcConnectivityEventType](#cloudpcconnectivityeventtype-values)|Type of this event. Possible values are: `unknown`, `userConnection`, `userTroubleshooting`, `deviceHealthCheck` and `unknownFutureValue`.|
 |message|string|Additional message for this event.|
 
 ### cloudPcConnectivityEventResult values
