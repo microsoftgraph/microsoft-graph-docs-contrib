@@ -7,21 +7,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewUnifiedRoleManagementPolicyRule()
-target := msgraphsdk.NewUnifiedRoleManagementPolicyRuleTarget()
+requestBody := graphmodels.NewUnifiedRoleManagementPolicyRule()
+"@odata.type" := "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
+requestBody.Set"@odata.type"(&"@odata.type") 
+id := "Expiration_EndUser_Assignment"
+requestBody.SetId(&id) 
+target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
+"@odata.type" := "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
+target.Set"@odata.type"(&"@odata.type") 
+caller := "EndUser"
+target.SetCaller(&caller) 
+operations := []String {
+	"All",
+
+}
+target.SetOperations(operations)
+level := "Assignment"
+target.SetLevel(&level) 
+inheritableSettings := []string {
+
+}
+target.SetInheritableSettings(inheritableSettings)
+enforcedSettings := []string {
+
+}
+target.SetEnforcedSettings(enforcedSettings)
 requestBody.SetTarget(target)
-target.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget",
+additionalData := map[string]interface{}{
+	isExpirationRequired := true
+requestBody.SetIsExpirationRequired(&isExpirationRequired) 
+	"maximumDuration" : "PT1H45M", 
 }
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
-}
-options := &msgraphsdk.UnifiedRoleManagementPolicyRuleRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-unifiedRoleManagementPolicyId := "unifiedRoleManagementPolicy-id"
-unifiedRoleManagementPolicyRuleId := "unifiedRoleManagementPolicyRule-id"
-graphClient.Policies().RoleManagementPoliciesById(&unifiedRoleManagementPolicyId).RulesById(&unifiedRoleManagementPolicyRuleId).Patch(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Policies().RoleManagementPoliciesById("unifiedRoleManagementPolicy-id").RulesById("unifiedRoleManagementPolicyRule-id").Patch(requestBody)
 
 
 ```

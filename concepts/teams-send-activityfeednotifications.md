@@ -1,6 +1,6 @@
 ---
 title: "Send activity feed notifications to users in Microsoft Teams"
-description: "Send activity feed notifications to users in Microsoft Teams using Teams app and microsoft graph."
+description: "Use the Microsoft Teams activity feed notification APIs in Microsoft Graph to help keep users up to date with changes in the tools and workflows they use."
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 The Microsoft Teams activity feed enables users to triage items that require attention by notifying them of changes. You can use the activity feed notification APIs in Microsoft Graph to extend this functionality to your apps. This allows your apps to provide richer experiences and better engage users by helping to keep them up to date with changes in the tools and workflows they use.
 
-## Understanding the basics of activity feed notification
+## Understand the basics of activity feed notification
 
 Activity feed notifications in Microsoft Teams are comprised of multiple bits of information, displayed together, as shown in the following image.
 
@@ -34,7 +34,7 @@ Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). T
 
 - The Teams app manifest must have the Azure AD app ID added to the `webApplicationInfo` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - Activity types must be declared in the `activities` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
-- The Teams app must be installed for the recipient, either personally, or in a [team](/graph/api/resources/team?preserve-view=true) or [chat](/graph/api/resources/chat?preserve-view=true) they are part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation?preserve-view=true).
+- The Teams app must be installed for the recipient, either personally, or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they are part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
 
 ### Teams app manifest changes
 
@@ -43,7 +43,7 @@ This section describes the changes that need to be added to Teams app manifest. 
 ```json
 "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
 "manifestVersion": "1.7",
-````
+```
 
 #### webApplicationInfo section changes
 
@@ -60,7 +60,8 @@ This section describes the changes that need to be added to Teams app manifest. 
 |id|string|Azure AD app ID (client ID).|
 |resource|string|Resource associated with the Azure AD app. Also known as reply or redirect URL in the Azure Portal.|
 
-> **Note:** You might get an error if multiple Teams apps in the same scope (team, chat or user) are using the same Azure AD app. Make sure that you're using unique Azure AD apps.
+> [!NOTE]
+> You might get an error if multiple Teams apps in the same scope (team, chat or user) are using the same Azure AD app. Make sure that you're using unique Azure AD apps.
 
 #### activities section changes
 
@@ -88,15 +89,16 @@ This section describes the changes that need to be added to Teams app manifest. 
 |description|string|Human-readable short description. This will be visible on the Microsoft Teams client.|
 |templateText|string|Template text for the activity notification. You can declare your parameters by encapsulating parameters in `{}`.|
 
->**Note:** `actor` is a special parameter that always takes the name of the caller. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
+> [!NOTE]
+> `actor` is a special parameter that always takes the name of the caller. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
 
-### Installing the Teams app
+### Install the Teams app
 
 Teams apps can be installed in a team, a chat, or for a user personally, and can be distributed in multiple ways. For details, see [Teams app distribution methods](/microsoftteams/platform/concepts/deploy-and-publish/overview). Typically, [sideloading](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload) is preferred for development purposes. After development, you can choose the right distribution method based on whether you want to distribute to one tenant or to all tenants.
 
-You can also use [Teams app installation](/graph/api/resources/teamsappinstallation?preserve-view=true) APIs to manage Teams app installations.
+You can also use [Teams app installation](/graph/api/resources/teamsappinstallation) APIs to manage Teams app installations.
 
-## Sending activity feed notifications to users
+## Send activity feed notifications to users
 
 Because a Teams app can be installed for a user, in a team, or in a chat, the notifications can be sent in these three contexts as well:
 
@@ -104,9 +106,14 @@ Because a Teams app can be installed for a user, in a team, or in a chat, the no
 - [Send notification to user in a team](/graph/api/team-sendactivitynotification)
 - [Send notification to user](/graph/api/userteamwork-sendactivitynotification)
 
+Additionally, notifications can be sent in bulk up to 100 users at a time:
+
+* [Send notifications to multiple users in bulk](/graph/api/teamwork-sendactivitynotificationtorecipients)
+
 For details about what topics are supported for each scenario, see the specific APIs. Custom text-based topics are supported for all scenarios.
 
-> **Note:** The activity icon is based on the context the request is made in. If the request is made with delegated permissions, the user's photo appears as the avatar, while the Teams app icon appears as activity icon. In an application-only context, the Teams app icon is used as the avatar and activity icon is ommited.
+> [!NOTE]
+> The activity icon is based on the context the request is made in. If the request is made with delegated permissions, the user's photo appears as the avatar, while the Teams app icon appears as the activity icon. In an application-only context, the Teams app icon is used as the avatar and the activity icon is omitted.
 
 ### Example 1: Notify a user about a task created in a chat
 
@@ -206,7 +213,8 @@ As seen in the previous examples, you can link to different aspects of a team or
 
 The Yammer notification example shown earlier uses a custom topic because Yammer's resources are not supported by Microsoft Graph.
 
-> **Note:** `webUrl` must start with the Microsoft Teams domain (teams.microsoft.com for example).
+> [!NOTE]
+> `webUrl` must start with the Microsoft Teams domain (teams.microsoft.com for example).
 
 #### Request
 <!-- {
@@ -255,7 +263,8 @@ HTTP/1.1 204 No Content
 
 This example shows how you can send an activity feed notification to all team members. This example notifies the team members about a new event. 
 
-> **Note:** The ability to send notifications to all team members is currently only available in beta.
+> [!NOTE]
+> The ability to send notifications to all team members is currently only available in beta.
 
 #### Request
 <!-- {
@@ -298,7 +307,8 @@ HTTP/1.1 204 No Content
 
 This example shows how you can send an activity feed notification to all channel members. This example notifies the channel members about a new event. 
 
-> **Note:** The ability to send notifications to all channel members is currently only available in beta.
+> [!NOTE]
+> The ability to send notifications to all channel members is currently only available in beta.
 
 #### Request
 <!-- {
@@ -342,7 +352,8 @@ HTTP/1.1 204 No Content
 
 This example shows how you can send an activity feed notification to all chat members. This example notifies the chat members about a new event. 
 
-> **Note:** The ability to send notifications to all chat members is currently only available in beta.
+> [!NOTE]
+> The ability to send notifications to all chat members is currently only available in beta.
 
 #### Request
 <!-- {
@@ -382,7 +393,70 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## Customizing how the notifications alert you
+### Example 7: Notify multiple users about pending finance approval requests
+
+The following example shows how to send an activity feed notification to multiple users in bulk. This example notifies multiple stakeholders about pending finance approval requests.
+
+> [!NOTE]
+> The ability to send notifications to multiple users in bulk is currently only available in beta.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "teamwork_sendactivitynotificationtorecipients"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/teamwork/sendActivityNotificationToRecipients
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}"
+    },
+    "activityType": "pendingFinanceApprovalRequests",
+    "previewText": {
+        "content": "Internal spending team has a pending finance approval requests"
+    },
+    "recipients": [
+    	{
+        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+        	"userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
+    	},
+    	{
+        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+        	"userId": "ab88234e-0874-477c-9638-d144296ed04f"
+    	},
+    	{
+        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+        	"userId": "01c64f53-69aa-42c7-9b7f-9f75195d6bfc"
+    	}
+    ],
+    "templateParameters": [
+        {
+            "name": "pendingRequestCount",
+            "value": "5"
+        }
+    ] 
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+
+``` http
+HTTP/1.1 202 Accepted
+```
+
+## Customize how the notifications alert you
 
 Microsoft Teams users can customize the notifications they see in their feed, as a banner, and so on. Notifications generated through activity feed APIs can also be customized. Users can choose how they are notified via settings in Microsoft Teams. Teams apps will appear in the list for the user to choose from, as shown in the following screenshot.
 
@@ -406,15 +480,16 @@ No, a user cannot send notifications to themselves. For this scenario, use appli
 
 No, only users are allowed to change notification settings.
 
-### I installed my app, why don't I see notification settings under the user account?
+### I installed my app; why don't I see notification settings under the user account?
 
 The settings will appear after the first notification is sent by the Teams app. This reduces the number of settings that users see.
 
-### I started getting a 409 (conflict) error, how do I resolve it?
+### I started getting a 409 (conflict) error; how do I resolve it?
 
 `Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Azure AD appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error such as `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Azure AD apps for unique Teams apps. Note that you can have the same Teams app installed in multiple scopes (team + user for example).
 
 ## See also
 
-* [Best practices for using Microsoft Teams activity feed notifications](teams-activity-feed-notifications-best-practices.md)
-* [Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)
+- [Best practices for using Microsoft Teams activity feed notifications](teams-activity-feed-notifications-best-practices.md)
+- [Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)
+- [Microsoft Teams API overview](teams-concept-overview.md)

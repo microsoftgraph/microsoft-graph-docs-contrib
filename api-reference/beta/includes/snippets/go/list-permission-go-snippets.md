@@ -7,13 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.SitesRequestBuilderGetQueryParameters{
-	Search: "%7Bquery%7D",
+requestParameters := &graphconfig.SitesRequestBuilderGetQueryParameters{
+	Search: "{query}",
 }
-options := &msgraphsdk.SitesRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.SitesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Sites().Get(options)
+
+result, err := graphClient.Sites().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

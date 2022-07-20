@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	RequestType = "AdminRemove"
+	RequestType = "userAdd"
 	Assignment = @{
-		Id = "a6bb6942-3ae1-4259-9908-0133aaee9377"
+		AccessPackageId = "d7be3253-b9c6-4fab-adef-30d30de8da2b"
 	}
 }
 

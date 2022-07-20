@@ -653,7 +653,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "purgeDataOperation",
 					"ChangeType": "Addition",
-					"Description": "Added the [purgeDataOperation](https://docs.microsoft.com/en-us/graph/api/resources/purgeDataOperation?view=graph-rest-beta) resource.",
+					"Description": "Added the [purgeDataOperation](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-purgedataoperation?view=graph-rest-beta) resource.",
 					"Target": "purgeDataOperation"
 				},
 				{
@@ -661,7 +661,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "purgeData",
 					"ChangeType": "Addition",
-					"Description": "Added the [purgeData](https://docs.microsoft.com/en-us/graph/api/purgeData?view=graph-rest-beta) method to the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta) resource.",
+					"Description": "Added the [purgeData](https://docs.microsoft.com/en-us/graph/api/ediscovery-sourcecollection-purgedata?view=graph-rest-beta) method to the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta) resource.",
 					"Target": "purgeData"
 				}
 			],

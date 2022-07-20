@@ -55,16 +55,13 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannerplandetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-plannerplandetails-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-plannerplandetails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -77,6 +74,10 @@ GET https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-plannerplandetails-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-plannerplandetails-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -103,7 +104,26 @@ Content-type: application/json
     "category3": null,
     "category4": null,
     "category5": "Needs materials",
-    "category6": "Needs equipment"
+    "category6": "Needs equipment",
+    "category7": "Description of category 7",
+    "category8": "Description of category 8",
+    "category9": "Description of category 9",
+    "category10": "Description of category 10",
+    "category11": "Description of category 11",
+    "category12": "Description of category 12",
+    "category13": "Description of category 13",
+    "category14": "Description of category 14",
+    "category15": "Description of category 15",
+    "category16": "Description of category 16",
+    "category17": "Description of category 17",
+    "category18": "Description of category 18",
+    "category19": "Description of category 19",
+    "category20": "Description of category 20",
+    "category21": "Description of category 21",
+    "category22": "Description of category 22",
+    "category23": "Description of category 23",
+    "category24": "Description of category 24",
+    "category25": "Description of category 25"
   },
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

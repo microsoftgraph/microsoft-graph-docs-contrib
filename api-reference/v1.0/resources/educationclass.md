@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 | [Get educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Read the properties and relationships of an [educationClass](../resources/educationclass.md) object. |
 | [Update educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Update the properties of an [educationClass](../resources/educationclass.md) object.                 |
 | [Delete educationClass](../api/educationclass-delete.md) | None                                                        | Delete an [educationClass](../resources/educationclass.md) object.                                  |
-| [delta](../api/educationclass-delta.md)                  | [educationClass](../resources/educationclass.md) collection | Get incremental changes to the resource collection.                                                  |
+| [Get delta](../api/educationclass-delta.md)                  | [educationClass](educationclass.md) collection              | Get incremental changes for **educationClasses**.                                          |
 
 ## Properties
 

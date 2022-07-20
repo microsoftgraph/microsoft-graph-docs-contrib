@@ -13,7 +13,10 @@ const client = Client.init(options);
 const cloudPcOrganizationSettings = {
   '@odata.type': '#microsoft.graph.cloudPcOrganizationSettings',
   userAccountType: 'standardUser',
-  osVersion: 'windows11'
+  osVersion: 'windows11',
+  windowsSettings: {
+    language: 'en-US'
+  }
 };
 
 await client.api('/deviceManagement/virtualEndpoint/organizationSettings')

@@ -2,7 +2,7 @@
 title: "assignedPlan resource type"
 description: "The **assignedPlans** property of both the user entity and the organization entity is a collection of **assignedPlan**."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "jconley76"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
@@ -26,13 +26,15 @@ The **assignedPlans** property of both the [user](user.md) entity and the [organ
 
 ### capabilityStatus values
 
+The following table describes the possible statuses for the **capabilityStatus** of a subscription. The members are listed in the order of their transition if the license isn't renewed.
+
 | Member | Description	|
 |:---------------|:--------|
-| Enabled | Available for normal use. |
-| Warning | Available for normal use but is in a grace period. |
-| Suspended | Unavailable but any data associated with the capability must be preserved. |
+| Enabled | Available for normal use and assignment. |
+| Warning | Available for normal use and assignment but is in a grace period. |
+| Suspended | Unavailable for assignment but any data associated with the capability must be preserved. |
+| LockedOut | Unavailable for all administrators and users for assignment but any data associated with the capability must be preserved. This is the state after `Suspended` and if the license isn't renewed, it is the final state before the plan is `Deleted`. |
 | Deleted | Unavailable and any data associated with the capability may be deleted. |
-| LockedOut | Unavailable for all administrators and users but any data associated with the capability must be preserved. |
 
 ## JSON representation
 

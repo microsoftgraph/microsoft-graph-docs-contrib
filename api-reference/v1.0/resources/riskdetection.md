@@ -10,6 +10,7 @@ doc_type: resourcePageType
 # riskDetection resource type
 
 Namespace: microsoft.graph
+
 Represents information about a detected risk in an Azure AD tenant. 
 
 Azure AD continually evaluates [user risks](riskyuser.md) and app or user [sign-in](signin.md) risks based on various signals and machine learning. This API provides programmatic access to all risk detections in your Azure AD environment.
@@ -17,7 +18,8 @@ Azure AD continually evaluates [user risks](riskyuser.md) and app or user [sign-
 For more information about risk events, see [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 >[!NOTE]
->You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
+> 1. You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
+> 2. The availability of risk detection data is governed by the [Azure AD data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 ## Methods
 |Method|Return type|Description|
