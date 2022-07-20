@@ -1,0 +1,128 @@
+---
+title: "Update workflow"
+description: "Update the properties of a workflow object."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.localizationpriority: medium
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+doc_type: apiPageType
+---
+
+# Update workflow
+Namespace: microsoft.graph.identityGovernance
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Application|**TODO: Provide applicable permissions.**|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
+PATCH /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+
+|Property|Type|Description|
+|:---|:---|:---|
+|category|lifecycleWorkflowCategory|**TODO: Add Description** Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
+|description|String|**TODO: Add Description** Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
+|displayName|String|**TODO: Add Description** Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Required.|
+|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|**TODO: Add Description** Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
+|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
+|deletedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|isEnabled|Boolean|**TODO: Add Description** Required.|
+|isSchedulingEnabled|Boolean|**TODO: Add Description** Required.|
+|nextScheduleRunDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|version|Int32|**TODO: Add Description** Optional.|
+
+
+
+## Response
+
+If successful, this method returns a `200 OK` response code and an updated [workflow](../resources/identitygovernance-workflow.md) object in the response body.
+
+## Examples
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_workflow"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}
+Content-Type: application/json
+Content-length: 454
+
+{
+  "@odata.type": "#microsoft.graph.identityGovernance.workflow",
+  "category": "String",
+  "description": "String",
+  "displayName": "String",
+  "executionConditions": {
+    "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
+  },
+  "deletedDateTime": "String (timestamp)",
+  "isEnabled": "Boolean",
+  "isSchedulingEnabled": "Boolean",
+  "nextScheduleRunDateTime": "String (timestamp)",
+  "version": "Integer"
+}
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.identityGovernance.workflow",
+  "category": "String",
+  "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
+  "executionConditions": {
+    "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
+  "id": "9469a17e-3460-4f83-56bb-f67410655e7b",
+  "isEnabled": "Boolean",
+  "isSchedulingEnabled": "Boolean",
+  "nextScheduleRunDateTime": "String (timestamp)",
+  "version": "Integer"
+}
+```
+
