@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the process of indexing data sources, including custodians and non-custodial data sources."
+Represents the process of indexing data sources, including custodians and non-custodial data sources.
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 

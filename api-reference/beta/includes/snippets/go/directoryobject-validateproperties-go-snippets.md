@@ -7,15 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewValidatePropertiesPostRequestBody()
 entityType := "Group"
-requestBody.SetEntityType(&entityType)
+requestBody.SetEntityType(&entityType) 
 displayName := "Myprefix_test_mysuffix"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 mailNickname := "Myprefix_test_mysuffix"
-requestBody.SetMailNickname(&mailNickname)
-onBehalfOfUserId := "onBehalfOfUserId-value"
-requestBody.SetOnBehalfOfUserId(&onBehalfOfUserId)
+requestBody.SetMailNickname(&mailNickname) 
+onBehalfOfUserId := uuid.MustParse("onBehalfOfUserId-value")
+requestBody.SetOnBehalfOfUserId(&onBehalfOfUserId) 
+
 graphClient.DirectoryObjects().ValidateProperties().Post(requestBody)
 
 

@@ -42,7 +42,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHo
 ## Request body
 In the request body, supply a JSON representation of the [siteSource](../resources/security-sitesource.md) object.
 
-You can specify the following properties when creating a **siteSource**.
+You can specify the following properties when you create a **siteSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -50,7 +50,7 @@ You can specify the following properties when creating a **siteSource**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [siteSource](../resources/security-sitesource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.siteSource](../resources/security-sitesource.md) object in the response body.
 
 ## Examples
 
@@ -73,6 +73,7 @@ Content-Type: application/json
     }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-sitesource-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -93,12 +94,16 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-sitesource-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-sitesource-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

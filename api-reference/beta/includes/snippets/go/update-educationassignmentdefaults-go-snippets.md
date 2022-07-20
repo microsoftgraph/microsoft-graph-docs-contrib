@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEducationAssignmentDefaults()
-addedStudentAction := "assignIfOpen"
-requestBody.SetAddedStudentAction(&addedStudentAction)
-addToCalendarAction := "studentsAndTeamOwners"
-requestBody.SetAddToCalendarAction(&addToCalendarAction)
+requestBody := graphmodels.NewEducationAssignmentDefaults()
+addedStudentAction := graphmodels.ASSIGNIFOPEN_EDUCATIONADDEDSTUDENTACTION 
+requestBody.SetAddedStudentAction(&addedStudentAction) 
+addToCalendarAction := graphmodels.STUDENTSANDTEAMOWNERS_EDUCATIONADDTOCALENDAROPTIONS 
+requestBody.SetAddToCalendarAction(&addToCalendarAction) 
 notificationChannelUrl := "https://graph.microsoft.com/beta/teams('id')/channels('id')"
-requestBody.SetNotificationChannelUrl(&notificationChannelUrl)
-educationClassId := "educationClass-id"
-graphClient.Education().ClassesById(&educationClassId).AssignmentDefaults().Patch(requestBody)
+requestBody.SetNotificationChannelUrl(&notificationChannelUrl) 
+
+graphClient.Education().ClassesById("educationClass-id").AssignmentDefaults().Patch(requestBody)
 
 
 ```

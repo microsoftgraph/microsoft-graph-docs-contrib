@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UnifiedRoleManagementPolicyRequestBuilderGetQueryParameters{
-	Expand: "effectiveRules,rules",
+requestParameters := &graphconfig.UnifiedRoleManagementPolicyRequestBuilderGetQueryParameters{
+	Expand: [] string {"effectiveRules","rules"},
 }
-options := &msgraphsdk.UnifiedRoleManagementPolicyRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UnifiedRoleManagementPolicyRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-unifiedRoleManagementPolicyId := "unifiedRoleManagementPolicy-id"
-result, err := graphClient.Policies().RoleManagementPoliciesById(&unifiedRoleManagementPolicyId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Policies().RoleManagementPoliciesById("unifiedRoleManagementPolicy-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```
