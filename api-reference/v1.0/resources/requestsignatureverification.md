@@ -1,6 +1,6 @@
 ---
 title: "requestSignatureVerification resource type"
-description: "Specifies whether this application requires the verification of signed authentication requests"
+description: "Specifies whether this application requires the verification of signed authentication requests."
 doc_type: resourcePageType
 ---
 
