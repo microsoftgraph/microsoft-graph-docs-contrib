@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	Topic = @{
@@ -16,6 +16,10 @@ $params = @{
 	PreviewText = @{
 		Content = "New deployment requires your approval"
 	}
+	Recipient = @{
+		"@odata.type" = "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient"
+		UserId = "569363e2-4e49-4661-87f2-16f245c5d66a"
+	}
 	TemplateParameters = @(
 		@{
 			Name = "deploymentId"
@@ -24,6 +28,6 @@ $params = @{
 	)
 }
 
-Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
+Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
 ```

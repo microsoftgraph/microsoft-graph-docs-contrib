@@ -7,15 +7,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"LocalizedStrings":  []Object {
+requestBody := graphmodels.New$valuePostRequestBody()
+additionalData := map[string]interface{}{
+
+
+ := graphmodels.New()
+elementType := "UxElement"
+.SetElementType(&elementType) 
+elementId := null
+.SetElementId(&elementId) 
+stringId := "alert_message"
+.SetStringId(&stringId) 
+override := true
+.SetOverride(&override) 
+value := "Are you sure that you want to cancel your selection?"
+.SetValue(&value) 
+
+	localizedStrings := []graphmodels.Objectable {
+		,
+
 	}
 }
-b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-userFlowLanguageConfigurationId := "userFlowLanguageConfiguration-id"
-userFlowLanguagePageId := "userFlowLanguagePage-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).OverridesPagesById(&userFlowLanguagePageId).$value().Put(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").LanguagesById("userFlowLanguageConfiguration-id").OverridesPagesById("userFlowLanguagePage-id").$value().Put(requestBody)
 
 
 ```

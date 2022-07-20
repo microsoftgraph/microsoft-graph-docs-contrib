@@ -2300,6 +2300,9 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsTab.Read.All_ | Read tabs in Microsoft Teams. | Allows the app to read the Teams apps that are installed for the signed-in user, and in all teams the user is a member of. Does not give the ability to read application-specific settings.	| Yes | No |
 | _TeamsTab.ReadWrite.All_ | Read and write tabs in Microsoft Teams. | Allows the app to read, install, upgrade, and uninstall Teams apps, on behalf of the signed-in user and also for teams the user is a member of. Does not give the ability to read or write application-specific settings. 	| Yes | No |
 | _TeamsTab.Create_ | Create tabs in Microsoft Teams. | Allows the app to create tabs in any team in Microsoft Teams, on behalf of the signed-in user. This does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. | Yes | No |
+ _TeamsTab.ReadWriteSelfForChat_ | Allow the Teams app to manage only its own tabs in chats. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs in chats the signed-in user can access. | Yes | No |
+ _TeamsTab.ReadWriteSelfForTeam_ | Allow the Teams app to manage only its own tabs in teams. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs to teams the signed-in user can access. | Yes | No |
+_TeamsTab.ReadWriteSelfForUser_ | Allow the Teams app to manage only its own tabs for a user. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs for the signed-in user. | Yes | No |
 
 #### Application permissions
 
@@ -2308,6 +2311,9 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsTab.Read.All_ | Read tabs in Microsoft Teams. | Read the names and settings of tabs inside any team in Microsoft Teams, without a signed-in user. This does not give access to the content inside the tabs.	| Yes | No |
 | _TeamsTab.ReadWrite.All_ | Read and write tabs in Microsoft Teams. | Read and write tabs in any team in Microsoft Teams, without a signed-in user. This does not give access to the content inside the tabs. | Yes | No |
 | _TeamsTab.Create_ | Create tabs in Microsoft Teams. | Allows the app to create tabs in any team in Microsoft Teams, without a signed-in user. This does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. | Yes | No |
+_TeamsTab.ReadWriteSelfForChat.All_ | Allow the Teams app to manage only its own tabs for all chats. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs for any chat, without a signed-in user. | Yes | No |
+ _TeamsTab.ReadWriteSelfForTeam.All_ | Allow the Teams app to manage only its own tabs for all teams. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs for any team, without a signed-in user. | Yes | No |
+_TeamsTab.ReadWriteSelfForUser.All_ | Allow the Teams app to manage only its own tabs for all users. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs for any user, without a signed-in user. | Yes | No |
 
 ## Teams tag permissions
 

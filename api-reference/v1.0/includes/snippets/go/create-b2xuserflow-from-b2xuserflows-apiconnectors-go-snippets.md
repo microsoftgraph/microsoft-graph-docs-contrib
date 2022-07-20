@@ -7,25 +7,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewB2xIdentityUserFlow()
+requestBody := graphmodels.NewB2xIdentityUserFlow()
 id := "UserFlowWithAPIConnector"
-requestBody.SetId(&id)
-userFlowType := "signUpOrSignIn"
-requestBody.SetUserFlowType(&userFlowType)
+requestBody.SetId(&id) 
+userFlowType := graphmodels.SIGNUPORSIGNIN_USERFLOWTYPE 
+requestBody.SetUserFlowType(&userFlowType) 
 userFlowTypeVersion := float32(1)
-requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion)
-apiConnectorConfiguration := msgraphsdk.NewUserFlowApiConnectorConfiguration()
-requestBody.SetApiConnectorConfiguration(apiConnectorConfiguration)
-postFederationSignup := msgraphsdk.NewIdentityApiConnector()
+requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion) 
+apiConnectorConfiguration := graphmodels.NewUserFlowApiConnectorConfiguration()
+postFederationSignup := graphmodels.NewpostFederationSignup()
+additionalData := map[string]interface{}{
+	"@odata.id" : "https://graph.microsoft.com/v1/identity/apiConnectors/{id}", 
+}
+postFederationSignup.SetAdditionalData(additionalData)
 apiConnectorConfiguration.SetPostFederationSignup(postFederationSignup)
-postFederationSignup.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/v1/identity/apiConnectors/{id}",
+postAttributeCollection := graphmodels.NewpostAttributeCollection()
+additionalData := map[string]interface{}{
+	"@odata.id" : "https://graph.microsoft.com/v1/identity/apiConnectors/{id}", 
 }
-postAttributeCollection := msgraphsdk.NewIdentityApiConnector()
+postAttributeCollection.SetAdditionalData(additionalData)
 apiConnectorConfiguration.SetPostAttributeCollection(postAttributeCollection)
-postAttributeCollection.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/v1/identity/apiConnectors/{id}",
-}
+requestBody.SetApiConnectorConfiguration(apiConnectorConfiguration)
+
 result, err := graphClient.Identity().B2xUserFlows().Post(requestBody)
 
 

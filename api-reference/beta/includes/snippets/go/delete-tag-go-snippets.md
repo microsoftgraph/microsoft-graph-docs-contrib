@@ -7,15 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.TagRequestBuilderDeleteQueryParameters{
+requestParameters := &graphconfig.TagRequestBuilderDeleteQueryParameters{
 	Forcedelete: true,
 }
-options := &msgraphsdk.TagRequestBuilderDeleteRequestConfiguration{
+configuration := &graphconfig.TagRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-caseId := "case-id"
-tagId := "tag-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).DeleteWithRequestConfigurationAndResponseHandler(options, nil)
+
+graphClient.Compliance().Ediscovery().CasesById("case-id").TagsById("tag-id").DeleteWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```
