@@ -7,13 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAuthenticationMethodConfiguration()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
-	"allowExternalIdToUseEmailOtp": "enabled",
+requestBody := graphmodels.NewAuthenticationMethodConfiguration()
+"@odata.type" := "#microsoft.graph.emailAuthenticationMethodConfiguration"
+requestBody.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"allowExternalIdToUseEmailOtp" : "enabled", 
 }
-authenticationMethodConfigurationId := "authenticationMethodConfiguration-id"
-graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(requestBody)
 
 
 ```

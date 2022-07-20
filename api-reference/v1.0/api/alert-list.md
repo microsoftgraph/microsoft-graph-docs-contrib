@@ -46,7 +46,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 - `$top` - Returns the aggregated top results from each security API provider.  
 - `$filter`
 
-The following table lists the `$filter` keywords by each vendor name. Even though some of these products have been rebranded, the API is yet to be updated. Filter keywords will continue to use the legacy names until further notice. See the [changelog](https://developer.microsoft.com/en-us/graph/changelog) for updates.
+The following table lists the `$filter` keywords by each vendor name. Even though some of these products have been rebranded, the API is yet to be updated. Filter keywords will continue to use the legacy names until further notice. See the [changelog](https://developer.microsoft.com/graph/changelog) for updates.
 
 | Vendor name      |$filter keyword|
 |:----------|:----------|
@@ -91,16 +91,13 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/alerts
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-alerts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-alerts-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-alerts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -113,6 +110,10 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-alerts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-alerts-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
