@@ -7,7 +7,7 @@ ms.prod: "reports"
 doc_type: apiPageType
 ---
 
-# reportRoot: getAttackSimulationTrainingUserCoverage
+# reportRoot: getAttackSimulationTrainingUserCoverage (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -27,6 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+[!INCLUDE [attacksim-deprecate-queryurl-reportapi](../includes/attacksim-deprecate-queryurl-reportapi.md)]
 <!-- {
   "blockType": "ignored"
 }
@@ -122,3 +123,5 @@ Content-Type: application/json
 }
 ```
 
+## See also
+[securityReportsRoot: getAttackSimulationTrainingUserCoverage](securityreportsroot-getattacksimulationtrainingusercoverage.md)
