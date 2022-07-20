@@ -7,18 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewLinkedResource()
+requestBody := graphmodels.NewLinkedResource()
 webUrl := "https://microsoft.com"
-requestBody.SetWebUrl(&webUrl)
+requestBody.SetWebUrl(&webUrl) 
 applicationName := "Microsoft"
-requestBody.SetApplicationName(&applicationName)
+requestBody.SetApplicationName(&applicationName) 
 displayName := "Microsoft"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 externalId := "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
-requestBody.SetExternalId(&externalId)
-todoTaskListId := "todoTaskList-id"
-todoTaskId := "todoTask-id"
-result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).LinkedResources().Post(requestBody)
+requestBody.SetExternalId(&externalId) 
+
+result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").LinkedResources().Post(requestBody)
 
 
 ```
