@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAccessReview()
+requestBody := graphmodels.NewAccessReview()
 displayName := "TestReview new name"
-requestBody.SetDisplayName(&displayName)
-accessReviewId := "accessReview-id"
-graphClient.AccessReviewsById(&accessReviewId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+graphClient.AccessReviewsById("accessReview-id").Patch(requestBody)
 
 
 ```

@@ -95,8 +95,8 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Preview of the last message sent in the chat. Null if no messages have been sent in the chat. Currently, only the [list chats](../api/chat-list.md) operation supports this property.|
 | members | [conversationMember](conversationmember.md) collection | A collection of all the members in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
-| permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps for the chat.|
 | operations | [teamsAsyncOperation](teamsasyncoperation.md) collection | A collection of all the Teams async operations that ran or are running on the chat. Nullable. |
+| permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps for the chat.|
 | pinnedMessages | [pinnedChatMessageInfo](pinnedchatmessageinfo.md) collection | A collection of all the pinned messages in the chat. Nullable. |
 | tabs | [teamsTab](teamstab.md) collection | A collection of all the tabs in the chat. Nullable. |
 

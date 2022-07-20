@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.CalendarViewRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.CalendarViewRequestBuilderGetQueryParameters{
 	Start: "2018-04-30T00:00:00Z",
 	End: "2018-05-10T00:00:00Z",
 }
-options := &msgraphsdk.CalendarViewRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.CalendarViewRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).CalendarView().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.BookingBusinessesById("bookingBusiness-id").CalendarView().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

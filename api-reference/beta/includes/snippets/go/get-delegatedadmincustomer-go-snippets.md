@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-delegatedAdminCustomerId := "delegatedAdminCustomer-id"
-result, err := graphClient.TenantRelationships().DelegatedAdminCustomersById(&delegatedAdminCustomerId).Get()
+
+result, err := graphClient.TenantRelationships().DelegatedAdminCustomersById("delegatedAdminCustomer-id").Get()
 
 
 ```

@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-servicePrincipalId := "servicePrincipal-id"
-homeRealmDiscoveryPolicyId := "homeRealmDiscoveryPolicy-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).HomeRealmDiscoveryPoliciesById(&homeRealmDiscoveryPolicyId).$ref().Delete()
+
+graphClient.ServicePrincipalsById("servicePrincipal-id").HomeRealmDiscoveryPoliciesById("homeRealmDiscoveryPolicy-id").$ref().Delete()
 
 
 ```

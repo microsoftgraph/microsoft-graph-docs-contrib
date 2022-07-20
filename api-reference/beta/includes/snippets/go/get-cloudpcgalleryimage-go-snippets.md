@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-cloudPcGalleryImageId := "cloudPcGalleryImage-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().GalleryImagesById(&cloudPcGalleryImageId).Get()
+
+result, err := graphClient.DeviceManagement().VirtualEndpoint().GalleryImagesById("cloudPcGalleryImage-id").Get()
 
 
 ```

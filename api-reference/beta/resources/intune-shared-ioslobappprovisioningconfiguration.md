@@ -31,8 +31,8 @@ This topic provides descriptions of the declared methods, properties and relatio
 |[hasPayloadLinks action](../api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
 
 ## Properties
-| Property | Type | Description |
-| --- | --- | --- |
+|Property|Type|Description|
+|:---|:---|:---|
 |id|String|Key of the entity.|
 |expirationDateTime|DateTimeOffset|Optional profile expiration date and time.|
 |payloadFileName|String|Payload file name (*.mobileprovision | *.xml).|

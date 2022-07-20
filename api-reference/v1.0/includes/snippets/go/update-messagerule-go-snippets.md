@@ -7,16 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewMessageRule()
+requestBody := graphmodels.NewMessageRule()
 displayName := "Important from partner"
-requestBody.SetDisplayName(&displayName)
-actions := msgraphsdk.NewMessageRuleActions()
+requestBody.SetDisplayName(&displayName) 
+actions := graphmodels.NewMessageRuleActions()
+markImportance := graphmodels.HIGH_IMPORTANCE 
+actions.SetMarkImportance(&markImportance) 
 requestBody.SetActions(actions)
-markImportance := "high"
-actions.SetMarkImportance(&markImportance)
-mailFolderId := "mailFolder-id"
-messageRuleId := "messageRule-id"
-graphClient.Me().MailFoldersById(&mailFolderId).MessageRulesById(&messageRuleId).Patch(requestBody)
+
+graphClient.Me().MailFoldersById("mailFolder-id").MessageRulesById("messageRule-id").Patch(requestBody)
 
 
 ```
