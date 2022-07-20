@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 headers := map[string]string{
-	"Prefer": "outlook.timezone="Pacific Standard Time""
+	"Prefer": "outlook.timezone=\"Pacific Standard Time\"",
 }
-options := &msgraphsdk.OutlookTaskRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.OutlookTaskRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
-outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```
