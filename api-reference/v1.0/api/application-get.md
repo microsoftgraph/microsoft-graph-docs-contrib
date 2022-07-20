@@ -63,7 +63,7 @@ Here is an example of the request.
   "name": "get_application"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/applications/{id}
+GET https://graph.microsoft.com/v1.0/applications/acc848e9-e8ec-4feb-a521-8d58b5482e09
 ```
 
 # [C#](#tab/csharp)
