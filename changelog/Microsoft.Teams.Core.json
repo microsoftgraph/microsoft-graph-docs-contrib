@@ -2445,7 +2445,7 @@
           "ApiChange": "method",
           "ChangedApiName": "Get team photo,Update team photo",
           "ChangeType": "Addition",
-          "Description": "Added the [Get team photo](https://docs.microsoft.com/en-us/graph/api/team-get-photo?view=graph-rest-beta) and [Update team photo](https://docs.microsoft.com/en-us/graph/api/team-update-photo?view=graph-rest-beta) methods.",
+          "Description": "Added the [Get team photo](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta) and [Update team photo](https://docs.microsoft.com/en-us/graph/api/profilephoto-update?view=graph-rest-beta) methods.",
           "Target": "Get team photo,Update team photo"
         },
         {

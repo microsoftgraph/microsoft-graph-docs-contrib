@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewMailFolder()
+requestBody := graphmodels.NewMailFolder()
 displayName := "displayName-value"
-requestBody.SetDisplayName(&displayName)
-mailFolderId := "mailFolder-id"
-graphClient.Me().MailFoldersById(&mailFolderId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+graphClient.Me().MailFoldersById("mailFolder-id").Patch(requestBody)
 
 
 ```
