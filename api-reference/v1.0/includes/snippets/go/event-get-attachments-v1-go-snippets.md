@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Attachments().Get()
+
+result, err := graphClient.Me().EventsById("event-id").Attachments().Get()
 
 
 ```

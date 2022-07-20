@@ -62,26 +62,23 @@ Content-type: application/json
         "content": "Read chapter 4"
     },
     "grading": {
-        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "@odata.type": "#microsoft.graph.educationAssignmentGradeType",
         "maxPoints": 50
     },
     "assignTo": {
-        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+        "@odata.type": "#microsoft.graph.educationAssignmentGradeType"
     },
     "status": "draft",
     "allowStudentsToAddResourcesToSubmission": true
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationassignment-from-educationclass-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationassignment-from-educationclass-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-educationassignment-from-educationclass-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -94,6 +91,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-educationassignment-from-educationclass-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-educationassignment-from-educationclass-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

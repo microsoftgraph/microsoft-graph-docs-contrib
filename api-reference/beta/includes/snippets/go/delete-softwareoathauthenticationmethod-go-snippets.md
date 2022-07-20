@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-userId := "user-id"
-softwareOathAuthenticationMethodId := "softwareOathAuthenticationMethod-id"
-graphClient.UsersById(&userId).Authentication().SoftwareOathMethodsById(&softwareOathAuthenticationMethodId).Delete()
+
+graphClient.UsersById("user-id").Authentication().SoftwareOathMethodsById("softwareOathAuthenticationMethod-id").Delete()
 
 
 ```

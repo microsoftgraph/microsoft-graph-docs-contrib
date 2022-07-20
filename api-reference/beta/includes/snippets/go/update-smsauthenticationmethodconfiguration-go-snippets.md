@@ -7,16 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAuthenticationMethodConfiguration()
+requestBody := graphmodels.NewAuthenticationMethodConfiguration()
+"@odata.type" := "#microsoft.graph.smsAuthenticationMethodConfiguration"
+requestBody.Set"@odata.type"(&"@odata.type") 
 id := "Sms"
-requestBody.SetId(&id)
-state := "enabled"
-requestBody.SetState(&state)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
-}
-authenticationMethodConfigurationId := "authenticationMethodConfiguration-id"
-graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(requestBody)
+requestBody.SetId(&id) 
+state := graphmodels.ENABLED_AUTHENTICATIONMETHODSTATE 
+requestBody.SetState(&state) 
+
+graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(requestBody)
 
 
 ```

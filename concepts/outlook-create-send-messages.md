@@ -83,12 +83,12 @@ Prefer: outlook.allow-unsafe-html
 
 ## Integrate with '@' social gesture (preview)
 
-@-mentions are notifications to alert users if they are mentioned in messages. The [mention](/graph/api/resources/mention?view=graph-rest-beta&preserve-view=true) resource enables apps to set and get the common online social gesture, the '@' prefix, in emails.
+@-mentions are notifications to alert users if they are mentioned in messages. The [mention](/graph/api/resources/mention) resource enables apps to set and get the common online social gesture, the '@' prefix, in emails.
 You can:
 
-- Create @-mentions when [creating a message](/graph/api/user-post-messages?view=graph-rest-beta&preserve-view=true#request-2)
-- [Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/user-list-messages?view=graph-rest-beta&preserve-view=true#request-2)
-- [Get all the @-mention is a message](/graph/api/message-get?view=graph-rest-beta&preserve-view=true#request-2)
+- Create @-mentions when [creating a message](/graph/api/user-post-messages#request-2)
+- [Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/user-list-messages#request-2)
+- [Get all the @-mention is a message](/graph/api/message-get#request-2)
 
 ## Other shared capabilities
 
@@ -96,7 +96,7 @@ Take advantage of the following common capabilities that are shared among Micros
 
 - Subscribe to [change notifications](/graph/api/resources/webhooks) on messages when one or more types of changes occur, such as message creation or update.
 - [Track incremental changes to messages in a folder](delta-query-messages.md).
-- Create [open extensions](extensibility-overview.md#4-open-extensions) or [schema extensions](extensibility-overview.md#3-schema-extensions) to add custom data to a message instance.
+- Create [open extensions](extensibility-overview.md#open-extensions) or [schema extensions](extensibility-overview.md#schema-extensions) to add custom data to a message instance.
 - Create [extended properties](/graph/api/resources/extended-properties-overview) in a message instance to store custom data for Outlook MAPI properties, when these properties are not already exposed in the Microsoft Graph API metadata.
 
 ## Next steps
@@ -106,4 +106,4 @@ Take advantage of the following common capabilities that are shared among Micros
 - [Get shared messages](outlook-share-messages-folders.md)
 - [Send Outlook messages from another user](outlook-send-mail-from-other-user.md)
 - [Get immutable identifiers for Outlook resources](outlook-immutable-id.md)
-- [Use the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0
+- [Using the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0.

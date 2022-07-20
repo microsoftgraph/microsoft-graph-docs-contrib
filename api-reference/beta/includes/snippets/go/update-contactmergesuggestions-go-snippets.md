@@ -7,9 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewContactMergeSuggestions()
+requestBody := graphmodels.NewContactMergeSuggestions()
 isEnabled := false
-requestBody.SetIsEnabled(&isEnabled)
+requestBody.SetIsEnabled(&isEnabled) 
+
 graphClient.Me().Settings().ContactMergeSuggestions().Patch(requestBody)
 
 

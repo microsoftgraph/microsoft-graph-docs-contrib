@@ -51,7 +51,11 @@ items:
         - name: Overview
           href: /graph/throttling?context=graph/api/beta
           displayName: throttling
+        - name: Service-specific limits
+          href: /graph/throttling-limits?context=graph/api/beta
+          displayName: throttling
         - name: Optimize network traffic
+          displayName: throttling
           href: /learn/modules/optimize-network-traffic
     - name: Change notifications
       items:
@@ -218,9 +222,9 @@ items:
           - name: Build a web app (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
           - name: Build a web app (React)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/beta
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
           - name: Build a web app (Angular)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/beta
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
           - name: Build a SharePoint web part
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
           - name: Build a Teams tab
@@ -1121,6 +1125,14 @@ items:
           href: api/serviceprincipal-update.md
         - name: Delete service principal
           href: api/serviceprincipal-delete.md
+        - name: List deleted service principals
+          href: api/directory-deleteditems-list.md
+        - name: Get deleted service principal
+          href: api/directory-deleteditems-get.md
+        - name: Permanently delete service principal
+          href: api/directory-deleteditems-delete.md
+        - name: Restore deleted service principal
+          href: api/directory-deleteditems-restore.md
         - name: List createdObjects
           href: api/serviceprincipal-list-createdobjects.md
         - name: List ownedObjects
@@ -1568,7 +1580,7 @@ items:
           - name: List review sets
             href: api/ediscovery-case-list-reviewsets.md
           - name: Create review set
-            href: /api/ediscovery-case-post-reviewsets.md
+            href: api/ediscovery-case-post-reviewsets.md
           - name: Get settings
             href: api/ediscovery-casesettings-get.md
           - name: Update settings
@@ -1578,11 +1590,11 @@ items:
           - name: List source collections
             href: api/ediscovery-case-list-sourcecollections.md
           - name: Create source collection
-            href: /api/ediscovery-case-post-sourcecollections.md
+            href: api/ediscovery-case-post-sourcecollections.md
           - name: List tags
-            href: /api/ediscovery-case-list-tags.md
+            href: api/ediscovery-case-list-tags.md
           - name: Create tag
-            href: /api/ediscovery-case-post-tags.md
+            href: api/ediscovery-case-post-tags.md
         - name: Custodian
           href: resources/ediscovery-custodian.md
           items:
@@ -6188,8 +6200,6 @@ items:
             href: resources/intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md
           - name: Managed device reported app
             href: resources/intune-deviceconfig-manageddevicereportedapp.md
-          - name: Management agent type
-            href: resources/intune-deviceconfig-managementagenttype.md
           - name: Media content rating Australia
             href: resources/intune-deviceconfig-mediacontentratingaustralia.md
           - name: Media content rating Canada
@@ -7495,6 +7505,8 @@ items:
             href: resources/intune-devices-devicehealthscriptstringparameter.md
           - name: Device health script time schedule
             href: resources/intune-devices-devicehealthscripttimeschedule.md
+          - name: Device licensing status
+            href: resources/intune-devices-devicelicensingstatus.md
           - name: Device log collection request
             href: resources/intune-devices-devicelogcollectionrequest.md
           - name: Device log collection response
@@ -8146,8 +8158,6 @@ items:
             href: resources/intune-devices-manageddeviceremoteaction.md
           - name: Managed installer status
             href: resources/intune-devices-managedinstallerstatus.md
-          - name: Management agent type
-            href: resources/intune-devices-managementagenttype.md
           - name: Management state
             href: resources/intune-devices-managementstate.md
           - name: Notification message template
@@ -8985,6 +8995,16 @@ items:
               href: api/intune-mam-defaultmanagedappprotection-delete.md
             - name: Update
               href: api/intune-mam-defaultmanagedappprotection-update.md
+          - name: Device management configuration exchange online setting applicability
+            href: resources/intune-mam-devicemanagementconfigurationexchangeonlinesettingapplicability.md
+          - name: Device management configuration setting applicability
+            href: resources/intune-mam-devicemanagementconfigurationsettingapplicability.md
+          - name: Device management configuration string setting value definition
+            href: resources/intune-mam-devicemanagementconfigurationstringsettingvaluedefinition.md
+          - name: Device management configuration technologies
+            href: resources/intune-mam-devicemanagementconfigurationtechnologies.md
+          - name: Device management configuration windows setting applicability
+            href: resources/intune-mam-devicemanagementconfigurationwindowssettingapplicability.md
           - name: Device platform type
             href: resources/intune-wip-deviceplatformtype.md
           - name: Intune branding profile
@@ -9176,7 +9196,7 @@ items:
               href: api/intune-mam-windowsinformationprotection-assign.md
           - name: Windows information protection app
             href: resources/intune-mam-windowsinformationprotectionapp.md
-          - name: Windows information protection app learning summary
+          - name: Windows information protection app summary
             href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
             items:
             - name: List
@@ -9572,7 +9592,7 @@ items:
           - name: Windows Hello for business PIN usage
             href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
         - name: Role-based access control (RBAC)
-          href: /resources/intune-rbac-conceptual.md
+          href: resources/intune-rbac-conceptual.md
           items:
           - name: Device and app management assigned role details
             href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -9828,7 +9848,7 @@ items:
               href: api/intune-shared-devicecompliancepolicy-get.md
             - name: assign action
               href: api/intune-shared-devicecompliancepolicy-assign.md
-            - name: refreshDeviceComplianceReportSummarization action
+            - name: refresh action
               href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
             - name: hasPayloadLinks action
               href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -9873,6 +9893,78 @@ items:
               href: api/intune-shared-devicemanagement-enablelegacypcmanagement.md
             - name: sendCustomNotificationToCompanyPortal action
               href: api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md
+          - name: Device management configuration Azure ad trust type
+            href: resources/intune-shared-devicemanagementconfigurationazureadtrusttype.md
+          - name: Device management configuration choice setting collection instance
+            href: resources/intune-shared-devicemanagementconfigurationchoicesettingcollectioninstance.md
+          - name: Device management configuration choice setting instance
+            href: resources/intune-shared-devicemanagementconfigurationchoicesettinginstance.md
+          - name: Device management configuration choice setting value
+            href: resources/intune-shared-devicemanagementconfigurationchoicesettingvalue.md
+          - name: Device management configuration control type
+            href: resources/intune-shared-devicemanagementconfigurationcontroltype.md
+          - name: Device management configuration dependent on
+            href: resources/intune-shared-devicemanagementconfigurationdependenton.md
+          - name: Device management configuration device mode
+            href: resources/intune-shared-devicemanagementconfigurationdevicemode.md
+          - name: Device management configuration group setting collection instance
+            href: resources/intune-shared-devicemanagementconfigurationgroupsettingcollectioninstance.md
+          - name: Device management configuration group setting instance
+            href: resources/intune-shared-devicemanagementconfigurationgroupsettinginstance.md
+          - name: Device management configuration group setting value
+            href: resources/intune-shared-devicemanagementconfigurationgroupsettingvalue.md
+          - name: Device management configuration integer setting value
+            href: resources/intune-shared-devicemanagementconfigurationintegersettingvalue.md
+          - name: Device management configuration integer setting value definition
+            href: resources/intune-shared-devicemanagementconfigurationintegersettingvaluedefinition.md
+          - name: Device management configuration option definition
+            href: resources/intune-shared-devicemanagementconfigurationoptiondefinition.md
+          - name: Device management configuration platforms
+            href: resources/intune-shared-devicemanagementconfigurationplatforms.md
+          - name: Device management configuration reference setting value
+            href: resources/intune-shared-devicemanagementconfigurationreferencesettingvalue.md
+          - name: Device management configuration referred setting information
+            href: resources/intune-shared-devicemanagementconfigurationreferredsettinginformation.md
+          - name: Device management configuration secret setting value
+            href: resources/intune-shared-devicemanagementconfigurationsecretsettingvalue.md
+          - name: Device management configuration secret setting value state
+            href: resources/intune-shared-devicemanagementconfigurationsecretsettingvaluestate.md
+          - name: Device management configuration setting access types
+            href: resources/intune-shared-devicemanagementconfigurationsettingaccesstypes.md
+          - name: Device management configuration setting depended on by
+            href: resources/intune-shared-devicemanagementconfigurationsettingdependedonby.md
+          - name: Device management configuration setting group collection instance
+            href: resources/intune-shared-devicemanagementconfigurationsettinggroupcollectioninstance.md
+          - name: Device management configuration setting group instance
+            href: resources/intune-shared-devicemanagementconfigurationsettinggroupinstance.md
+          - name: Device management configuration setting instance
+            href: resources/intune-shared-devicemanagementconfigurationsettinginstance.md
+          - name: Device management configuration setting instance template reference
+            href: resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md
+          - name: Device management configuration setting occurrence
+            href: resources/intune-shared-devicemanagementconfigurationsettingoccurrence.md
+          - name: Device management configuration setting usage
+            href: resources/intune-shared-devicemanagementconfigurationsettingusage.md
+          - name: Device management configuration setting value
+            href: resources/intune-shared-devicemanagementconfigurationsettingvalue.md
+          - name: Device management configuration setting value definition
+            href: resources/intune-shared-devicemanagementconfigurationsettingvaluedefinition.md
+          - name: Device management configuration setting value template reference
+            href: resources/intune-shared-devicemanagementconfigurationsettingvaluetemplatereference.md
+          - name: Device management configuration setting visibility
+            href: resources/intune-shared-devicemanagementconfigurationsettingvisibility.md
+          - name: Device management configuration simple setting collection instance
+            href: resources/intune-shared-devicemanagementconfigurationsimplesettingcollectioninstance.md
+          - name: Device management configuration simple setting instance
+            href: resources/intune-shared-devicemanagementconfigurationsimplesettinginstance.md
+          - name: Device management configuration simple setting value
+            href: resources/intune-shared-devicemanagementconfigurationsimplesettingvalue.md
+          - name: Device management configuration string format
+            href: resources/intune-shared-devicemanagementconfigurationstringformat.md
+          - name: Device management configuration string setting value
+            href: resources/intune-shared-devicemanagementconfigurationstringsettingvalue.md
+          - name: Device management configuration windows skus
+            href: resources/intune-shared-devicemanagementconfigurationwindowsskus.md
           - name: Device management derived credential settings
             href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
             items:
@@ -9977,6 +10069,8 @@ items:
             href: resources/intune-shared-macosvppappassignmentsettings.md
           - name: Managed device owner type
             href: resources/intune-shared-manageddeviceownertype.md
+          - name: Management agent type
+            href: resources/intune-shared-managementagenttype.md
           - name: MDM windows information protection policy
             href: resources/intune-shared-mdmwindowsinformationprotectionpolicy.md
             items:
@@ -10407,6 +10501,26 @@ items:
               href: api/windowsupdates-updatableassetgroup-removemembers.md
             - name: Remove members by ID
               href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
+        - name: Resource connection
+          href: resources/windowsupdates-resourceconnection.md
+          items:
+            - name: List
+              href: api/windowsupdates-updates-list-resourceconnections.md
+            - name: Get
+              href: api/windowsupdates-resourceconnection-get.md
+            - name: Delete
+              href: api/windowsupdates-resourceconnection-delete.md
+            - name: Operational insights connection
+              href: resources/windowsupdates-operationalinsightsconnection.md
+              items:
+              - name: List
+                href: api/windowsupdates-updates-list-resourceconnections-operationalinsightsconnection.md
+              - name: Create
+                href: api/windowsupdates-updates-post-resourceconnections-operationalinsightsconnection.md
+              - name: Get
+                href: api/windowsupdates-operationalinsightsconnection-get.md
+              - name: Delete
+                href: api/windowsupdates-operationalinsightsconnection-delete.md
       - name: Multi-tenant management (preview)
         items:
         - name: Managed tenant
@@ -12060,7 +12174,7 @@ items:
             - name: Update
               href: api/crosstenantaccesspolicyconfigurationdefault-update.md
             - name: Reset to system default
-              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md            
           - name: Partner settings
             items:
             - name: Cross-tenant access partner settings
@@ -12074,7 +12188,7 @@ items:
             - name: Update
               href: api/crosstenantaccesspolicyconfigurationpartner-update.md
             - name: Delete
-              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
+              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md              
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -12095,6 +12209,13 @@ items:
             href: api/oauth2permissiongrant-delete.md
           - name: Get delta
             href: api/oauth2permissiongrant-delta.md
+        - name: External identities policy (preview)
+          href: resources/externalidentitiespolicy.md
+          items:
+            - name: Get
+              href: api/externalidentitiespolicy-get.md
+            - name: Update
+              href: api/externalidentitiespolicy-update.md    
         - name: Identity protection
           href: resources/identityprotection-overview.md
           items:
@@ -12591,120 +12712,120 @@ items:
               href: api/identityuserflow-delete.md
           - name: B2C user flows
             items:
-             - name: B2C user flow
-               href: resources/b2cidentityuserflow.md
-             - name: List
-               href: api/identitycontainer-list-b2cuserflows.md
-             - name: Create
-               href: api/identitycontainer-post-b2cuserflows.md
-             - name: Get
-               href: api/b2cidentityuserflow-get.md
-             - name: Update
-               href: api/b2cidentityuserflow-update.md
-             - name: Delete
-               href: api/b2cidentityuserflow-delete.md
-             - name: List identity providers
-               href: api/b2cidentityuserflow-list-userflowidentityproviders.md
-             - name: Add identity provider
-               href: api/b2cidentityuserflow-userflowidentityproviders-update.md
-             - name: Remove identity provider
-               href: api/b2cidentityuserflow-delete-userflowidentityproviders.md
-             - name: List identity providers (deprecated)
-               href: api/b2cidentityuserflow-list-identityproviders.md
-             - name: Add identity provider (deprecated)
-               href: api/b2cidentityuserflow-post-identityproviders.md
-             - name: Remove identity provider (deprecated)
-               href: api/b2cidentityuserflow-delete-identityproviders.md
-             - name: List user attribute assignments
-               href: api/b2cidentityuserflow-list-userattributeassignments.md
-             - name: Create user attribute assignment
-               href: api/b2cidentityuserflow-post-userattributeassignments.md
-             - name: List languages
-               href: api/b2cidentityuserflow-list-languages.md
-             - name: Create language
-               href: api/b2cidentityuserflow-put-languages.md
-             - name: Get API connectors configuration
-               href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
-             - name: Configure an API connector
-               href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
+            - name: B2C user flow
+              href: resources/b2cidentityuserflow.md
+            - name: List
+              href: api/identitycontainer-list-b2cuserflows.md
+            - name: Create
+              href: api/identitycontainer-post-b2cuserflows.md
+            - name: Get
+              href: api/b2cidentityuserflow-get.md
+            - name: Update
+              href: api/b2cidentityuserflow-update.md
+            - name: Delete
+              href: api/b2cidentityuserflow-delete.md
+            - name: List identity providers
+              href: api/b2cidentityuserflow-list-userflowidentityproviders.md
+            - name: Add identity provider
+              href: api/b2cidentityuserflow-userflowidentityproviders-update.md
+            - name: Remove identity provider
+              href: api/b2cidentityuserflow-delete-userflowidentityproviders.md
+            - name: List identity providers (deprecated)
+              href: api/b2cidentityuserflow-list-identityproviders.md
+            - name: Add identity provider (deprecated)
+              href: api/b2cidentityuserflow-post-identityproviders.md
+            - name: Remove identity provider (deprecated)
+              href: api/b2cidentityuserflow-delete-identityproviders.md
+            - name: List user attribute assignments
+              href: api/b2cidentityuserflow-list-userattributeassignments.md
+            - name: Create user attribute assignment
+              href: api/b2cidentityuserflow-post-userattributeassignments.md
+            - name: List languages
+              href: api/b2cidentityuserflow-list-languages.md
+            - name: Create language
+              href: api/b2cidentityuserflow-put-languages.md
+            - name: Get API connectors configuration
+              href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
+            - name: Configure an API connector
+              href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
           - name: Self-service sign up user flows
             items:
-             - name: Self-service sign up user flow
-               href: resources/b2xidentityuserflow.md
-             - name: List
-               href: api/identitycontainer-list-b2xuserflows.md
-             - name: Create
-               href: api/identitycontainer-post-b2xuserflows.md
-             - name: Get
-               href: api/b2xidentityuserflow-get.md
-             - name: Delete
-               href: api/b2xidentityuserflow-delete.md
-             - name: List identity providers
-               href: api/b2xidentityuserflow-list-userflowidentityproviders.md
-             - name: Add identity provider
-               href: api/b2xidentityuserflow-userflowidentityproviders-update.md
-             - name: Delete identity provider
-               href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
-             - name: List identity providers (deprecated)
-               href: api/b2xidentityuserflow-list-identityproviders.md
-             - name: Add identity provider (deprecated)
-               href: api/b2xidentityuserflow-post-identityproviders.md
-             - name: Delete identity provider (deprecated)
-               href: api/b2xidentityuserflow-delete-identityproviders.md
-             - name: List user attribute assignments
-               href: api/b2xidentityuserflow-list-userattributeassignments.md
-             - name: Create user attribute assignment
-               href: api/b2xidentityuserflow-post-userattributeassignments.md
-             - name: List languages
-               href: api/b2xidentityuserflow-list-languages.md
-             - name: Get API connectors configuration
-               href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
-             - name: Configure an API connector
-               href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
+            - name: Self-service sign up user flow
+              href: resources/b2xidentityuserflow.md
+            - name: List
+              href: api/identitycontainer-list-b2xuserflows.md
+            - name: Create
+              href: api/identitycontainer-post-b2xuserflows.md
+            - name: Get
+              href: api/b2xidentityuserflow-get.md
+            - name: Delete
+              href: api/b2xidentityuserflow-delete.md
+            - name: List identity providers
+              href: api/b2xidentityuserflow-list-userflowidentityproviders.md
+            - name: Add identity provider
+              href: api/b2xidentityuserflow-userflowidentityproviders-update.md
+            - name: Delete identity provider
+              href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
+            - name: List identity providers (deprecated)
+              href: api/b2xidentityuserflow-list-identityproviders.md
+            - name: Add identity provider (deprecated)
+              href: api/b2xidentityuserflow-post-identityproviders.md
+            - name: Delete identity provider (deprecated)
+              href: api/b2xidentityuserflow-delete-identityproviders.md
+            - name: List user attribute assignments
+              href: api/b2xidentityuserflow-list-userattributeassignments.md
+            - name: Create user attribute assignment
+              href: api/b2xidentityuserflow-post-userattributeassignments.md
+            - name: List languages
+              href: api/b2xidentityuserflow-list-languages.md
+            - name: Get API connectors configuration
+              href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+            - name: Configure an API connector
+              href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
           - name: User flow attributes
             items:
-             - name: User flow attribute
-               href: resources/identityuserflowattribute.md
-             - name: List
-               href: api/identityuserflowattribute-list.md
-             - name: Create
-               href: api/identityuserflowattribute-post.md
-             - name: Get
-               href: api/identityuserflowattribute-get.md
-             - name: Update
-               href: api/identityuserflowattribute-update.md
-             - name: Delete
-               href: api/identityuserflowattribute-delete.md
+            - name: User flow attribute
+              href: resources/identityuserflowattribute.md
+            - name: List
+              href: api/identityuserflowattribute-list.md
+            - name: Create
+              href: api/identityuserflowattribute-post.md
+            - name: Get
+              href: api/identityuserflowattribute-get.md
+            - name: Update
+              href: api/identityuserflowattribute-update.md
+            - name: Delete
+              href: api/identityuserflowattribute-delete.md
           - name: User flow attribute assignment
             items:
-             - name: User
-               href: resources/identityuserflowattributeassignment.md
-             - name: Get
-               href: api/identityuserflowattributeassignment-get.md
-             - name: Update
-               href: api/identityuserflowattributeassignment-update.md
-             - name: Delete
-               href: api/identityuserflowattributeassignment-delete.md
+            - name: User
+              ref: resources/identityuserflowattributeassignment.md
+            - name: Get
+              href: api/identityuserflowattributeassignment-get.md
+            - name: Update
+              href: api/identityuserflowattributeassignment-update.md
+            - name: Delete
+              href: api/identityuserflowattributeassignment-delete.md
           - name: User flow language configuration
             items:
-             - name: User flow language configuration
-               href: resources/userflowlanguageconfiguration.md
-             - name: Get user flow language configuration
-               href: api/userflowlanguageconfiguration-get.md
-             - name: Delete user flow language configuration
-               href: api/userflowlanguageconfiguration-delete.md
-             - name: List defaultPages
-               href: api/userflowlanguageconfiguration-list-defaultpages.md
-             - name: List overridesPages
-               href: api/userflowlanguageconfiguration-list-overridespages.md
-             - name: User flow language page
-               href: resources/userflowlanguagepage.md
-             - name: Get user flow language page
-               href: api/userflowlanguagepage-get.md
-             - name: Update user flow language page
-               href: api/userflowlanguagepage-put.md
-             - name: Delete user flow language page
-               href: api/userflowlanguagepage-delete.md
+            - name: User flow language configuration
+              href: resources/userflowlanguageconfiguration.md
+            - name: Get user flow language configuration
+              href: api/userflowlanguageconfiguration-get.md
+            - name: Delete user flow language configuration
+              href: api/userflowlanguageconfiguration-delete.md
+            - name: List defaultPages
+              href: api/userflowlanguageconfiguration-list-defaultpages.md
+            - name: List overridesPages
+              href: api/userflowlanguageconfiguration-list-overridespages.md
+            - name: User flow language page
+              href: resources/userflowlanguagepage.md
+            - name: Get user flow language page
+              href: api/userflowlanguagepage-get.md
+            - name: Update user flow language page
+              href: api/userflowlanguagepage-put.md
+            - name: Delete user flow language page
+              href: api/userflowlanguagepage-delete.md
           - name: API connectors
             items:
             - name: API connector
@@ -14088,6 +14209,13 @@ items:
         items:
         - name: Overview
           href: resources/report.md
+        - name: Settings
+          href: resources/adminreportsettings.md
+          items:
+          - name: Get
+            href: api/adminreportsettings-get.md
+          - name: Update
+            href: api/adminreportsettings-update.md
         - name: Microsoft Teams device usage
           href: resources/microsoft-teams-device-usage-reports.md
           items:
@@ -14542,7 +14670,7 @@ items:
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
               href: api/reportroot-getattacksimulationtrainingusercoverage.md
-      - name: eDiscovery (preview)
+      - name: eDiscovery
         items:
         - name: Case
           href: resources/security-ediscoverycase.md
@@ -14571,9 +14699,9 @@ items:
             href: api/security-ediscoverycase-list-noncustodialdatasources.md
           - name: Create non-custodial data source
             href: api/security-ediscoverycase-post-noncustodialdatasources.md
-          - name: List legal holds
+          - name: List legal holds (preview)
             href: api/security-ediscoverycase-list-legalholds.md
-          - name: Create legal hold
+          - name: Create legal hold (preview)
             href: api/security-ediscoverycase-post-legalholds.md
           - name: List searches
             href: api/security-ediscoverycase-list-searches.md
@@ -14599,10 +14727,10 @@ items:
         - name: Operation
           href : resources/security-caseoperation.md
           items:
-           - name: List case operations 
-             href: api/security-ediscoverycase-list-operations.md
-           - name: Get case opreation by id
-             href: api/security-caseoperation-get.md
+          - name: List case operations 
+            href: api/security-ediscoverycase-list-operations.md
+          - name: Get case opreation by id
+            href: api/security-caseoperation-get.md
         - name: Custodian
           href: resources/security-ediscoverycustodian.md
           items:
@@ -14655,7 +14783,7 @@ items:
             href: api/security-ediscoverynoncustodialdatasource-updateindex.md
           - name: Get last index operation
             href: api/security-ediscoverycustodian-list-lastindexoperation.md
-        - name: Hold policy
+        - name: Hold policy (preview)
           href: resources/security-ediscoveryholdpolicy.md
           items:
           - name: List
@@ -14691,7 +14819,7 @@ items:
             href: api/security-ediscoverycase-delete-searches.md
           - name: Estimate statistics
             href: api/security-ediscoverysearch-estimatestatistics.md
-          - name: Purge data
+          - name: Purge data (preview)
             href: api/security-ediscoverysearch-purgedata.md
           - name: List custodian sources
             href: api/security-ediscoverysearch-list-custodiansources.md
@@ -14722,7 +14850,7 @@ items:
             href: api/security-ediscoveryreviewset-get.md
           - name: Add to review set
             href: api/security-ediscoveryreviewset-addtoreviewset.md
-          - name: Export
+          - name: Export (preview)
             href: api/security-ediscoveryreviewset-export.md
             items:
               - name: Get download url
@@ -14740,16 +14868,16 @@ items:
               href: api/security-ediscoveryreviewsetquery-update.md
             - name: Delete
               href: api/security-ediscoveryreviewset-delete-queries.md
-            - name: Export
+            - name: Export (preview)
               href: api/security-ediscoveryreviewsetquery-export.md
               items:
               - name: Get download url
                 href: api/security-ediscoveryexportoperation-getdownloadurl.md
             - name: Apply tags
               href: api/security-ediscoveryreviewsetquery-applytags.md
-            - name: Run
+            - name: Run (preview)
               href: api/security-ediscoveryreviewsetquery-run.md
-          - name: File
+          - name: File (preview)
             href: resources/security-ediscoveryfile.md
             items:
             - name: List
@@ -14841,6 +14969,59 @@ items:
           href: api/tiindicator-deletetiindicators.md
         - name: Delete multiple by external ID
           href: api/tiindicator-deletetiindicatorsbyexternalid.md
+      - name: Threat submission (preview)
+        href: resources/security-threatsubmission.md
+        items:
+        - name: Email threat submission
+          href: resources/security-emailthreatsubmission.md
+          items:
+          - name: List
+            href: api/security-emailthreatsubmission-list.md
+          - name: Create
+            href: api/security-emailthreatsubmission-post-emailthreats.md
+          - name: Get
+            href: api/security-emailthreatsubmission-get.md
+          - name: Review 
+            href: api/security-emailthreatsubmission-review.md
+          - name: Email content threat submission
+            href: resources/security-emailcontentthreatsubmission.md
+          - name: Email URL threat submission
+            href: resources/security-emailurlthreatsubmission.md
+        - name: Email threat submission policy
+          href: resources/security-emailthreatsubmissionpolicy.md
+          items:
+          - name: List
+            href: api/security-emailthreatsubmissionpolicy-list.md
+          - name: Create
+            href: api/security-emailthreatsubmissionpolicy-post-emailthreatsubmissionpolicies.md
+          - name: Get
+            href: api/security-emailthreatsubmissionpolicy-get.md
+          - name: Update
+            href: api/security-emailthreatsubmissionpolicy-update.md
+          - name: Delete
+            href: api/security-emailthreatsubmissionpolicy-delete.md
+        - name: URL threat submission
+          href: resources/security-urlthreatsubmission.md
+          items:
+          - name: List
+            href: api/security-urlthreatsubmission-list.md
+          - name: Create
+            href: api/security-urlthreatsubmission-post-urlthreats.md
+          - name: Get
+            href: api/security-urlthreatsubmission-get.md
+        - name: File threat submission
+          href: resources/security-filethreatsubmission.md
+          items:
+          - name: List
+            href: api/security-filethreatsubmission-list.md
+          - name: Create
+            href: api/security-filethreatsubmission-post-filethreats.md
+          - name: Get
+            href: api/security-filethreatsubmission-get.md
+          - name: File URL threat submission
+            href: resources/security-fileurlthreatsubmission.md
+          - name: File content threat submission
+            href: resources/security-filecontentthreatsubmission.md
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
