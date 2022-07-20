@@ -117,5 +117,5 @@ Content-Type: application/json
 ```
 
 ## See also
-[securityReportRoot: getAttackSimulationRepeatOffenders](securityreportroot-getattacksimulationrepeatoffenders.md)
+[securityReportRoot: getAttackSimulationRepeatOffenders](securityreportsroot-getattacksimulationrepeatoffenders.md)
 

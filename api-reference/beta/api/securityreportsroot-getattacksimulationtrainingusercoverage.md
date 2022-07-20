@@ -1,5 +1,5 @@
 ---
-title: "securityReportRoot: getAttackSimulationTrainingUserCoverage"
+title: "securityReportsRoot: getAttackSimulationTrainingUserCoverage"
 description: "List training coverage for users of a tenant in attack simulation and training campaigns."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "reports"
 doc_type: apiPageType
 ---
 
-# securityReportRoot: getAttackSimulationTrainingUserCoverage
+# securityReportsRoot: getAttackSimulationTrainingUserCoverage
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

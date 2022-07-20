@@ -1,5 +1,5 @@
 ---
-title: "securityReportRoot: getAttackSimulationRepeatOffenders"
+title: "securityReportsRoot: getAttackSimulationRepeatOffenders"
 description: "List repeat offender users of a tenant in attack simulation and training campaigns."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "reports"
 doc_type: apiPageType
 ---
 
-# securityReportRoot: getAttackSimulationRepeatOffenders
+# securityReportsRoot: getAttackSimulationRepeatOffenders
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
