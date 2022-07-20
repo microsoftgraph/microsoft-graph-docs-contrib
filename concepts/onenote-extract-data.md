@@ -1,6 +1,6 @@
 ---
-title: "Use OneNote API div tags to extract data from captures "
-description: " Enterprise notebooks on Microsoft 365"
+title: "Use OneNote API div tags to extract data from captures"
+description: "Use the OneNote API to extract business card, recipe, and product data. Include a div that specifies the source content, extraction method, and fallback behavior in your request."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.prod: "onenote"
@@ -236,7 +236,7 @@ Specify the `extract.product` method and the `none` fallback. Also send an `a` e
 
 If you don't know the content type (business card, recipe, or product) that you're sending, you can use the unqualified `extract` method and let the OneNote API automatically detect the type. You might want to do this if your app sends different capture types.
 
-> **Note:**
+> [!NOTE]
 > If you do know the content type that you're sending, you should use the `extract.businesscard`, `extract.recipe`, or `extract.product` method. In some cases, this can help to optimize the extraction results.
  
 ### Common scenarios for unknown extractions

@@ -1,13 +1,13 @@
 ---
-title: "Microsoft Graph REST API v1.0 reference"
-description: "Welcome to Microsoft Graph REST API reference for the v1.0 endpoint."
+title: "Microsoft Graph REST API v1.0 endpoint reference"
+description: "Documentation for the Microsoft Graph REST API v1.0 endpoint, which includes APIs in general availability (GA) status. Features common use cases in v1.0."
 ms.localizationpriority: high
 author: "angelgolfer-ms"
 ms.prod: "non-product-specific"
 doc_type: conceptualPageType
 ---
 
-# Microsoft Graph REST API v1.0 reference
+# Microsoft Graph REST API v1.0 endpoint reference
 
 Welcome to Microsoft Graph REST API reference for the v1.0 endpoint.
 

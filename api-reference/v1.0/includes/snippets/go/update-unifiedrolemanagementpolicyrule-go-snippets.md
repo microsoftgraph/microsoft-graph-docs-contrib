@@ -7,33 +7,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewUnifiedRoleManagementPolicyRule()
+requestBody := graphmodels.NewUnifiedRoleManagementPolicyRule()
+"@odata.type" := "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
+requestBody.Set"@odata.type"(&"@odata.type") 
 id := "Expiration_EndUser_Assignment"
-requestBody.SetId(&id)
-target := msgraphsdk.NewUnifiedRoleManagementPolicyRuleTarget()
-requestBody.SetTarget(target)
+requestBody.SetId(&id) 
+target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
+"@odata.type" := "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
+target.Set"@odata.type"(&"@odata.type") 
 caller := "EndUser"
-target.SetCaller(&caller)
-target.SetOperations( []UnifiedRoleManagementPolicyRuleTargetOperations {
+target.SetCaller(&caller) 
+operations := []graphmodels.UnifiedRoleManagementPolicyRuleTargetOperationsable {
 	"All",
+
 }
+target.SetOperations(operations)
 level := "Assignment"
-target.SetLevel(&level)
-target.SetInheritableSettings( []string {
+target.SetLevel(&level) 
+inheritableSettings := []string {
+
 }
-target.SetEnforcedSettings( []string {
+target.SetInheritableSettings(inheritableSettings)
+enforcedSettings := []string {
+
 }
-target.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget",
+target.SetEnforcedSettings(enforcedSettings)
+requestBody.SetTarget(target)
+additionalData := map[string]interface{}{
+	isExpirationRequired := true
+requestBody.SetIsExpirationRequired(&isExpirationRequired) 
+	"maximumDuration" : "PT1H45M", 
 }
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
-	"isExpirationRequired": true,
-	"maximumDuration": "PT1H45M",
-}
-unifiedRoleManagementPolicyId := "unifiedRoleManagementPolicy-id"
-unifiedRoleManagementPolicyRuleId := "unifiedRoleManagementPolicyRule-id"
-graphClient.Policies().RoleManagementPoliciesById(&unifiedRoleManagementPolicyId).RulesById(&unifiedRoleManagementPolicyRuleId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Policies().RoleManagementPoliciesById("unifiedRoleManagementPolicy-id").RulesById("unifiedRoleManagementPolicyRule-id").Patch(requestBody)
 
 
 ```

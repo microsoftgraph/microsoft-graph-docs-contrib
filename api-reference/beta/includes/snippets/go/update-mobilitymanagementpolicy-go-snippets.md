@@ -7,18 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewMobilityManagementPolicy()
+requestBody := graphmodels.NewMobilityManagementPolicy()
+"@odata.type" := "#microsoft.graph.mobilityManagementPolicy"
+requestBody.Set"@odata.type"(&"@odata.type") 
 complianceUrl := "https://portal.mg.contoso.com/?portalAction=Compliance"
-requestBody.SetComplianceUrl(&complianceUrl)
+requestBody.SetComplianceUrl(&complianceUrl) 
 discoveryUrl := "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc"
-requestBody.SetDiscoveryUrl(&discoveryUrl)
+requestBody.SetDiscoveryUrl(&discoveryUrl) 
 termsOfUseUrl := "https://portal.mg.contoso.com/TermsofUse.aspx"
-requestBody.SetTermsOfUseUrl(&termsOfUseUrl)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.mobilityManagementPolicy",
-}
-mobilityManagementPolicyId := "mobilityManagementPolicy-id"
-graphClient.Policies().MobileAppManagementPoliciesById(&mobilityManagementPolicyId).Patch(requestBody)
+requestBody.SetTermsOfUseUrl(&termsOfUseUrl) 
+
+graphClient.Policies().MobileAppManagementPoliciesById("mobilityManagementPolicy-id").Patch(requestBody)
 
 
 ```

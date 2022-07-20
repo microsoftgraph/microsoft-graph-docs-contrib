@@ -1,22 +1,22 @@
 ---
 title: "Microsoft Purview Information Protection labeling overview"
-description: "Microsoft Purview Information Protection labeling helps organizations to classify, label, and protect data based on Office 365 Security and Compliance Center Sensitivity Labels."
+description: "Use Microsoft Purview Information Protection to classify, label, and protect data based on sensitivity labels. Learn how to use label APIs in Microsoft Graph."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
 ---
 
-# Information Protection overview
+# Microsoft Purview Information Protection labeling overview
 
-Microsoft Purview Information Protection helps organizations to classify, label, and protect data based on [sensitivity](/Office365/SecurityCompliance/sensitivity-labels). 
+Microsoft Purview Information Protection helps organizations to classify, label, and protect data based on [sensitivity labels](/Office365/SecurityCompliance/sensitivity-labels).
 
-Organizations use labels to aid:
+Organizations use labels to help:
 
 * Users in understanding the importance of information that is being handled.
-* Compliance administrators in discovering where sensitive information lives. 
+* Compliance administrators in discovering where sensitive information lives.
 * Security administrators in deploying data access and data loss prevention policies based on more rich label information.
 
-## Why integrate Microsoft Purview Information Protection? 
+## Why integrate with Microsoft Purview Information Protection?
 
 ### Integrate with the ubiquitous labeling platform, servicing millions of users and devices
 

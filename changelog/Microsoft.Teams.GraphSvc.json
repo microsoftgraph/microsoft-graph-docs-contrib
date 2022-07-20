@@ -430,14 +430,14 @@
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
-	{
+    {
       "ChangeList": [
         {
           "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce9",
           "ApiChange": "Method",
           "ChangedApiName": "sendActivityNotificationToRecipients",
           "ChangeType": "Addition",
-          "Description": "Added the [sendActivityNotificationToRecipients](https://docs.microsoft.com/en-us/graph/api/sendActivityNotificationToRecipients?view=graph-rest-beta) method to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Description": "Added the [sendActivityNotificationToRecipients](https://docs.microsoft.com/en-us/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta) method to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
           "Target": "teamwork"
         }
       ],
@@ -445,6 +445,176 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-05-24T18:54:16.6879906Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9f5e8734-31a1-4609-8c8c-590fe58e2851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profilePhoto",
+          "ChangeType": "Addition",
+          "Description": "Added the [profilePhoto](https://docs.microsoft.com/en-us/graph/api/resources/profilePhoto?view=graph-rest-1.0) resource",
+          "Target": "profilePhoto"
+        },
+        {
+          "Id": "9f5e8734-31a1-4609-8c8c-590fe58e2851",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "photo",
+          "ChangeType": "Addition",
+          "Description": "Added the **photo** navigation property to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "9f5e8734-31a1-4609-8c8c-590fe58e2851",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-05T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "33336873-57cc-453e-90da-9e735f550661",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deletedTeam",
+          "ChangeType": "Addition",
+          "Description": "Added the [deletedTeam](https://docs.microsoft.com/en-us/graph/api/resources/deletedTeam?view=graph-rest-beta) resource and a supported method.",
+          "Target": "deletedTeam"
+        },
+        {
+          "Id": "33336873-57cc-453e-90da-9e735f550661",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deletedTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the **deletedTeams** relationship to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Target": "teamwork"
+        }
+      ],
+      "Id": "33336873-57cc-453e-90da-9e735f550661",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-30T17:42:31.9059068Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e04528be-94f6-4bc5-9485-9b71da7f4804",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppSettings](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-beta) resource",
+          "Target": "teamsAppSettings"
+        },
+        {
+          "Id": "e04528be-94f6-4bc5-9485-9b71da7f4804",
+          "ApiChange": "Property",
+          "ChangedApiName": "isChatResourceSpecificConsentEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isChatResourceSpecificConsentEnabled** property to the [teamsAppSettings](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-beta) resource.",
+          "Target": "teamsAppSettings"
+        },
+        {
+          "Id": "e04528be-94f6-4bc5-9485-9b71da7f4804",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "teamsAppSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppSettings** navigation property to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource",
+          "Target": "teamwork"
+        }
+      ],
+      "Id": "e04528be-94f6-4bc5-9485-9b71da7f4804",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-18T17:17:00.1619923Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a7335048-e158-4657-8495-2f32cc86ca9e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForTeam",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForTeam` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
+          "Target": "teamsTab"
+        },
+        {
+          "Id": "a7335048-e158-4657-8495-2f32cc86ca9e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForTeam.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForTeam.All` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
+          "Target": "teamsTab"
+        },
+        {
+          "Id": "a7335048-e158-4657-8495-2f32cc86ca9e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForChat",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForChat` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
+          "Target": "teamsTab"
+        },
+        {
+          "Id": "a7335048-e158-4657-8495-2f32cc86ca9e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForChat.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForChat.All` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
+          "Target": "teamsTab"
+        }
+      ],
+      "Id": "a7335048-e158-4657-8495-2f32cc86ca9e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-18T11:01:30.771Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2c96f0bd-2ee8-47f7-9f0a-25039532dc3b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForTeam",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForTeam` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
+          "Target": "teamsTab"
+        },
+        {
+          "Id": "2c96f0bd-2ee8-47f7-9f0a-25039532dc3b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForTeam.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForTeam.All` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
+          "Target": "teamsTab"
+        },
+        {
+          "Id": "2c96f0bd-2ee8-47f7-9f0a-25039532dc3b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForChat",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForChat` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
+          "Target": "teamsTab"
+        },
+        {
+          "Id": "2c96f0bd-2ee8-47f7-9f0a-25039532dc3b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamsTab.ReadWriteSelfForChat.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForChat.All` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
+          "Target": "teamsTab"
+        }
+      ],
+      "Id": "2c96f0bd-2ee8-47f7-9f0a-25039532dc3b",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-18T11:01:30.771Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
