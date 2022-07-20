@@ -879,7 +879,7 @@ items:
         - name: Get deleted application
           href: api/directory-deleteditems-get.md
         - name: Request Signature Verification
-          href: api/requestsignatureverification.md
+          href: resources/requestsignatureverification.md
         - name: Permanently delete application
           href: api/directory-deleteditems-delete.md
         - name: Restore deleted application
