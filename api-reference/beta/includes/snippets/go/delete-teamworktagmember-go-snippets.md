@@ -7,10 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-teamId := "team-id"
-teamworkTagId := "teamworkTag-id"
-teamworkTagMemberId := "teamworkTagMember-id"
-graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).MembersById(&teamworkTagMemberId).Delete()
+
+graphClient.TeamsById("team-id").TagsById("teamworkTag-id").MembersById("teamworkTagMember-id").Delete()
 
 
 ```

@@ -7,15 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewFieldValueSet()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"Color": "Fuchsia",
-	"Quantity": ,
+requestBody := graphmodels.NewFieldValueSet()
+additionalData := map[string]interface{}{
+	"color" : "Fuchsia", 
+	"quantity" : int32(934) , 
 }
-siteId := "site-id"
-listId := "list-id"
-listItemId := "listItem-id"
-graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).Fields().Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").Fields().Patch(requestBody)
 
 
 ```
