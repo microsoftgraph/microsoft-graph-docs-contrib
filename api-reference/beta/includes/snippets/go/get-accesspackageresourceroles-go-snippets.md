@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.AccessPackageResourceRolesRequestBuilderGetQueryParameters{
-	Filter: "(originSystem%20eq%20'AadGroup'%20and%20accessPackageResource/id%20eq%20'a35bef72-a8aa-4ca3-af30-f6b2ece7208f')",
-	Expand: "accessPackageResource",
+requestParameters := &graphconfig.AccessPackageResourceRolesRequestBuilderGetQueryParameters{
+	Filter: "(originSystem eq 'AadGroup' and accessPackageResource/id eq 'a35bef72-a8aa-4ca3-af30-f6b2ece7208f')",
+	Expand: [] string {"accessPackageResource"},
 }
-options := &msgraphsdk.AccessPackageResourceRolesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.AccessPackageResourceRolesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-accessPackageCatalogId := "accessPackageCatalog-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).AccessPackageResourceRoles().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById("accessPackageCatalog-id").AccessPackageResourceRoles().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```
