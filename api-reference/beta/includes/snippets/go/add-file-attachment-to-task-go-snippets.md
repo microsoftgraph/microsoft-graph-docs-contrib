@@ -7,15 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAttachment()
+requestBody := graphmodels.NewAttachment()
+"@odata.type" := "#microsoft.graph.fileAttachment"
+requestBody.Set"@odata.type"(&"@odata.type") 
 name := "menu.txt"
-requestBody.SetName(&name)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.fileAttachment",
-	"contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk=",
+requestBody.SetName(&name) 
+additionalData := map[string]interface{}{
+	"contentBytes" : "bWFjIGFuZCBjaGVlc2UgdG9kYXk=", 
 }
-outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Attachments().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").Attachments().Post(requestBody)
 
 
 ```

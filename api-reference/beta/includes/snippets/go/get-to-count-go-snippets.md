@@ -7,19 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
-	Search: "%22displayName:wa%22%20OR%20%22displayName:ad%22",
-	Orderby: "displayName",
+headers := map[string]string{
+	"ConsistencyLevel": "eventual",
+}
+requestParameters := &graphconfig.UsersRequestBuilderGetQueryParameters{
+	Search: "\"displayName:wa\" OR \"displayName:ad\"",
+	Orderby: [] string {"displayName"},
 	Count: true,
 }
-headers := map[string]string{
-	"ConsistencyLevel": "eventual"
-}
-options := &msgraphsdk.UsersRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
+configuration := &graphconfig.UsersRequestBuilderGetRequestConfiguration{
 	Headers: headers,
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Users().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Users().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

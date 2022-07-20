@@ -94,6 +94,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime={start_
 
 Prefer: odata.maxpagesize=2
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

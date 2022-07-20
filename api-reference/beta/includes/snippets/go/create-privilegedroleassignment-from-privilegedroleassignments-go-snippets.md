@@ -7,11 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPrivilegedRoleAssignment()
+requestBody := graphmodels.NewPrivilegedRoleAssignment()
 userId := "userId-value"
-requestBody.SetUserId(&userId)
+requestBody.SetUserId(&userId) 
 roleId := "roleId-value"
-requestBody.SetRoleId(&roleId)
+requestBody.SetRoleId(&roleId) 
+
 result, err := graphClient.PrivilegedRoleAssignments().Post(requestBody)
 
 
