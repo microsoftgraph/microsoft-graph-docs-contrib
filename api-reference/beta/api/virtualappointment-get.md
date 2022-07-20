@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported.
 
 > [!NOTE]
->Virtual appointment will transition from online meeting permissions to virtual appointment permissions during the preview period. As we get closer to the transition, we'll provide additional details on the updated permission requirements and timeline.
+>Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. As we get closer to the transition, we'll provide additional details on the updated permission requirements and timeline.
 
 ## HTTP request
 
@@ -34,7 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /onlineMeeting/{onlineMeetingId}/virtualAppointment
+GET /me/onlineMeeting/{onlineMeetingId}/virtualAppointment
+GET /users/{userId}/onlineMeeting/{onlineMeetingId}/virtualAppointment
 ```
 
 ## Optional query parameters
@@ -80,6 +81,7 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+ETag: W/"ZfYdV7Meckeip07P//nwjAAADyI7NQ=="
 
 {
     "value": {

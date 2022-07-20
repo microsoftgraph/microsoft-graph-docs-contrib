@@ -16,14 +16,14 @@ Namespace: microsoft.graph
 Represents information about a virtual appointment, including the client join URL, settings, and the client information. Virtual appointments are designed for business to consume online workflows and include enhanced features such as mobile browser join and client waiting room.
 
 > [!NOTE]
-> For the preview period, customers with access to virtual appointments with their m365 licenses benefit from unlimited virtual appointment calls via the Microsoft Graph API. We'll provide additional details on the licensing requirements before the preview period ends.
+> For the preview period, customers with access to virtual appointments with their Microsoft 365 licenses benefit from unlimited virtual appointment calls via the Microsoft Graph API. We'll provide additional details on the licensing requirements before the preview period ends.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Create virtualAppointment](../api/virtualappointment-put.md)|[virtualAppointment](../resources/virtualappointment.md)|Create a new [virtualAppointment](../resources/virtualappointment.md) object.|
 |[Get virtualAppointment](../api/virtualappointment-get.md)|[virtualAppointment](../resources/virtualappointment.md)|Read the properties and relationships of a [virtualAppointment](../resources/virtualappointment.md) object.|
-|[Update virtualAppointment](../api/virtualappointment-update.md)|[virtualAppointment](../resources/virtualappointment.md)|Update the properties of a [virtualAppointment](../resources/virtualappointment.md) object.|
+|[Update virtualAppointment](../api/virtualappointment-update.md)|None|Update the properties of a [virtualAppointment](../resources/virtualappointment.md) object.|
 |[Delete virtualAppointment](../api/virtualappointment-delete.md)|None|Delete a [virtualAppointment](../resources/virtualappointment.md) object.|
 
 > [!TIP]
