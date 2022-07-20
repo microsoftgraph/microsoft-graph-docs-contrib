@@ -18,7 +18,7 @@ Represents settings that define the experience of a client user during a virtual
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowClientToJoinUsingBrowser|Boolean|Indicates if the client can use the browser to join a virtual appointment. If set to `false`, the client can only use Microsoft Teams to join. Optional.|
+|allowClientToJoinUsingBrowser|Boolean|Indicates whether the client can use the browser to join a virtual appointment. If set to `false`, the client can only use Microsoft Teams to join. Optional.|
 
 ## Relationships
 None.
