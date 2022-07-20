@@ -34,8 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /me/onlineMeeting/{onlineMeetingId}/virtualAppointment
-GET /users/{userId}/onlineMeeting/{onlineMeetingId}/virtualAppointment
+GET /me/onlineMeetings/{onlineMeetingId}/virtualAppointment
+GET /users/{userId}/onlineMeetings/{onlineMeetingId}/virtualAppointment
 ```
 
 ## Optional query parameters

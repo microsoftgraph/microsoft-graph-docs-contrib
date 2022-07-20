@@ -33,8 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PUT /me/onlineMeeting/{onlineMeetingId}/virtualAppointment
-PUT /users/{userId}/onlineMeeting/{onlineMeetingId}/virtualAppointment
+PUT /me/onlineMeetings/{onlineMeetingId}/virtualAppointment
+PUT /users/{userId}/onlineMeetings/{onlineMeetingId}/virtualAppointment
 ```
 
 ## Request headers

@@ -34,8 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /me/onlineMeeting/{onlineMeetingId}/virtualAppointment
-DELETE /users/{userId}/onlineMeeting/{onlineMeetingId}/virtualAppointment
+DELETE /me/onlineMeetings/{onlineMeetingId}/virtualAppointment
+DELETE /users/{userId}/onlineMeetings/{onlineMeetingId}/virtualAppointment
 ```
 
 ## Request headers
