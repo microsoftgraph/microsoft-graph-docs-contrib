@@ -55,7 +55,7 @@ Microsoft Graph permissions in the [Azure portal](https://portal.azure.com/) are
 User and group search capabilities allow the app to search for any user or group in an organization's directory by performing queries against the `/users` or `/groups` resource set (for example, `https://graph.microsoft.com/v1.0/users`). Both administrators and users have this capability; however, guest users do not.
 
 > [!NOTE]
-> Guest users have the same access as members enabled under External Identities > External Collaboration Settings > Guest user access. The users API works with Guest token as well.
+> Guest users have the same access as members enabled under **External Identities** > **External Collaboration Settings** > **Guest user access**. The users API works with Guest token as well.
 
 If the signed-in user is a guest user, depending on the permissions an app has been granted, it can read the profile of a specific user or group (for example, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`); however, it cannot perform queries against the `/users` or `/groups` resource set that potentially return more than a single resource.
 
