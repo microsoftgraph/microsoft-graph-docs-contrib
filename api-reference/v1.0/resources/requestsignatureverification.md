@@ -2,7 +2,7 @@
 title: "requestSignatureVerification resource type"
 description: "Specifies whether this application requires the verification of signed authentication requests."
 author: "rahul-nagraj"
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: resourcePageType
 ---
@@ -22,7 +22,7 @@ Specifies whether this application requires the verification of signed authentic
 
 ## JSON representation
 
-Here is a JSON representation of the resource. 
+Here is a JSON representation of the resource.
 
 ```json
 { 
