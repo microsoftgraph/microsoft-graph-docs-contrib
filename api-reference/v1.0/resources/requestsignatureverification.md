@@ -1,5 +1,5 @@
 ---
-title: "requestsignatureverification resource type"
+title: "RequestSignatureVerification resource type"
 description: "Specifies whether this application requires the verification of signed authentication requests."
 author: "rahul-nagraj"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: resourcePageType
 ---
 
-# requestsignatureverification resource type
+# RequestSignatureVerification resource type
 
 Namespace: microsoft.graph
 
