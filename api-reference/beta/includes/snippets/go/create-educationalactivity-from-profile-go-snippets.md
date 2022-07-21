@@ -7,51 +7,58 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEducationalActivity()
+requestBody := graphmodels.NewEducationalActivity()
 completionMonthYear := "Date"
-requestBody.SetCompletionMonthYear(&completionMonthYear)
+requestBody.SetCompletionMonthYear(&completionMonthYear) 
 endMonthYear := "Date"
-requestBody.SetEndMonthYear(&endMonthYear)
-institution := msgraphsdk.NewInstitutionData()
-requestBody.SetInstitution(institution)
-institution.SetDescription(nil)
+requestBody.SetEndMonthYear(&endMonthYear) 
+institution := graphmodels.NewInstitutionData()
+description := null
+institution.SetDescription(&description) 
 displayName := "Colorado State University"
-institution.SetDisplayName(&displayName)
-location := msgraphsdk.NewPhysicalAddress()
-institution.SetLocation(location)
-type := "business"
-location.SetType(&type)
-location.SetPostOfficeBox(nil)
+institution.SetDisplayName(&displayName) 
+location := graphmodels.NewPhysicalAddress()
+type := graphmodels.BUSINESS_PHYSICALADDRESSTYPE 
+location.SetType(&type) 
+postOfficeBox := null
+location.SetPostOfficeBox(&postOfficeBox) 
 street := "12000 E Prospect Rd"
-location.SetStreet(&street)
+location.SetStreet(&street) 
 city := "Fort Collins"
-location.SetCity(&city)
+location.SetCity(&city) 
 state := "Colorado"
-location.SetState(&state)
+location.SetState(&state) 
 countryOrRegion := "USA"
-location.SetCountryOrRegion(&countryOrRegion)
+location.SetCountryOrRegion(&countryOrRegion) 
 postalCode := "80525"
-location.SetPostalCode(&postalCode)
+location.SetPostalCode(&postalCode) 
+institution.SetLocation(location)
 webUrl := "https://www.colostate.edu"
-institution.SetWebUrl(&webUrl)
-program := msgraphsdk.NewEducationalActivityDetail()
-requestBody.SetProgram(program)
+institution.SetWebUrl(&webUrl) 
+requestBody.SetInstitution(institution)
+program := graphmodels.NewEducationalActivityDetail()
 abbreviation := "MBA"
-program.SetAbbreviation(&abbreviation)
-program.SetActivities(nil)
-program.SetAwards(nil)
+program.SetAbbreviation(&abbreviation) 
+activities := null
+program.SetActivities(&activities) 
+awards := null
+program.SetAwards(&awards) 
 description := "Master of Business Administration with a major in Entreprenuership and Finance."
-program.SetDescription(&description)
+program.SetDescription(&description) 
 displayName := "Master of Business Administration"
-program.SetDisplayName(&displayName)
-program.SetFieldsOfStudy(nil)
+program.SetDisplayName(&displayName) 
+fieldsOfStudy := null
+program.SetFieldsOfStudy(&fieldsOfStudy) 
 grade := "3.9"
-program.SetGrade(&grade)
-program.SetNotes(nil)
+program.SetGrade(&grade) 
+notes := null
+program.SetNotes(&notes) 
 webUrl := "https://biz.colostate.edu"
-program.SetWebUrl(&webUrl)
+program.SetWebUrl(&webUrl) 
+requestBody.SetProgram(program)
 startMonthYear := "Date"
-requestBody.SetStartMonthYear(&startMonthYear)
+requestBody.SetStartMonthYear(&startMonthYear) 
+
 result, err := graphClient.Me().Profile().EducationalActivities().Post(requestBody)
 
 

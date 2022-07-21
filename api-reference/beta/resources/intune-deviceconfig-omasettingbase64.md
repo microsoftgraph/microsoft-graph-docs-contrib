@@ -21,8 +21,8 @@ OMA Settings Base64 definition.
 Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
 ## Properties
-| Property | Type | Description |
-| --- | --- | --- |
+|Property|Type|Description|
+|:---|:---|:---|
 |displayName|String|Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|

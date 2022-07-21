@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.DriveItemRequestBuilderGetQueryParameters{
-	Expand: "children",
+requestParameters := &graphconfig.DriveItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"children"},
 }
-options := &msgraphsdk.DriveItemRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DriveItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-driveItemId := "driveItem-id"
-result, err := graphClient.Drive().ItemsById(&driveItemId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Drive().ItemsById("driveItem-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

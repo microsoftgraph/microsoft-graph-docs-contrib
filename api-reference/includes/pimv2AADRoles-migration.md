@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 ### Migrate to PIM v3 API for Azure AD roles (role management APIs)
 
-The PIM API for Azure AD roles has been retired and stopped returning data on May 31, 2021. Use this guidance to migrate your existing APIs to the new [role management](/graph/api/resources/privilegedidentitymanagementv3-overview.md?view=graph-rest-beta&preserve-view=true) API.
+The PIM API for Azure AD roles has been retired and stopped returning data on May 31, 2021. Use this guidance to migrate your existing APIs to the new [role management API for privileged identity management](/graph/api/resources/privilegedidentitymanagementv3-overview).
 
 | Operation | PIM v2 API | Role management APIs (PIM v3) |
 | --------- | ------------ | -------------- |

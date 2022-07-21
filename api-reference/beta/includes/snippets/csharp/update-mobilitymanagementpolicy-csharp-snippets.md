@@ -8,12 +8,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mobilityManagementPolicy = new MobilityManagementPolicy
 {
-	ComplianceUrl = "https://portal.uem.contoso.com/?portalAction=Compliance",
-	DiscoveryUrl = "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc",
-	TermsOfUseUrl = "https://portal.uem.contoso.com/TermsofUse.aspx"
+	ComplianceUrl = "https://portal.mg.contoso.com/?portalAction=Compliance",
+	DiscoveryUrl = "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc",
+	TermsOfUseUrl = "https://portal.mg.contoso.com/TermsofUse.aspx"
 };
 
-await graphClient.Policies.MobileDeviceManagementPolicies["{mobilityManagementPolicy-id}"]
+await graphClient.Policies.MobileAppManagementPolicies["{mobilityManagementPolicy-id}"]
 	.Request()
 	.UpdateAsync(mobilityManagementPolicy);
 

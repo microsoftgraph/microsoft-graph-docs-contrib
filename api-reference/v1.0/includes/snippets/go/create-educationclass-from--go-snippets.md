@@ -7,38 +7,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEducationClass()
+requestBody := graphmodels.NewEducationClass()
+"@odata.type" := "#microsoft.graph.educationClass"
+requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "String"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 mailNickname := "String"
-requestBody.SetMailNickname(&mailNickname)
+requestBody.SetMailNickname(&mailNickname) 
 description := "String"
-requestBody.SetDescription(&description)
-createdBy := msgraphsdk.NewIdentitySet()
+requestBody.SetDescription(&description) 
+createdBy := graphmodels.NewIdentitySet()
+"@odata.type" := "microsoft.graph.identitySet"
+createdBy.Set"@odata.type"(&"@odata.type") 
 requestBody.SetCreatedBy(createdBy)
-createdBy.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.identitySet",
-}
 classCode := "String"
-requestBody.SetClassCode(&classCode)
+requestBody.SetClassCode(&classCode) 
 externalName := "String"
-requestBody.SetExternalName(&externalName)
+requestBody.SetExternalName(&externalName) 
 externalId := "String"
-requestBody.SetExternalId(&externalId)
-externalSource := "String"
-requestBody.SetExternalSource(&externalSource)
+requestBody.SetExternalId(&externalId) 
+externalSource := graphmodels.STRING_EDUCATIONEXTERNALSOURCE 
+requestBody.SetExternalSource(&externalSource) 
 externalSourceDetail := "String"
-requestBody.SetExternalSourceDetail(&externalSourceDetail)
+requestBody.SetExternalSourceDetail(&externalSourceDetail) 
 grade := "String"
-requestBody.SetGrade(&grade)
-term := msgraphsdk.NewEducationTerm()
+requestBody.SetGrade(&grade) 
+term := graphmodels.NewEducationTerm()
+"@odata.type" := "microsoft.graph.educationTerm"
+term.Set"@odata.type"(&"@odata.type") 
 requestBody.SetTerm(term)
-term.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.educationTerm",
-}
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.educationClass",
-}
+
 result, err := graphClient.Education().Classes().Post(requestBody)
 
 

@@ -10,8 +10,15 @@ const options = {
 
 const client = Client.init(options);
 
-let tags = await client.api('/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags')
+const ediscoveryReviewTag = {
+    displayName: 'My tag API',
+    description: 'Use Graph API to create tags',
+    childSelectability: 'Many',
+    'parent@odata.bind':''
+};
+
+await client.api('/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags')
 	.version('beta')
-	.get();
+	.post(ediscoveryReviewTag);
 
 ```

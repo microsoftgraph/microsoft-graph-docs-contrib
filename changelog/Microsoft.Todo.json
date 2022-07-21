@@ -3,6 +3,82 @@
     {
       "ChangeList": [
         {
+          "Id": "6e441013-7739-421a-8aad-c1489b499a19",
+          "ApiChange": "Property",
+          "ChangedApiName": "startDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **startDateTime** property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
+          "Target": "todoTask"
+        }
+      ],
+      "Id": "6e441013-7739-421a-8aad-c1489b499a19",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-12T11:32:15.0505686Z",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentInfo](https://docs.microsoft.com/en-us/graph/api/resources/attachmentinfo?view=graph-rest-beta) resource type.",
+          "Target": "attachmentInfo"
+        },
+        {
+          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentSession](https://docs.microsoft.com/en-us/graph/api/resources/attachmentsession?view=graph-rest-beta) resource type.",
+          "Target": "attachmentSession"
+        },
+        {
+          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentBase](https://docs.microsoft.com/en-us/graph/api/resources/attachmentbase?view=graph-rest-beta) resource type.",
+          "Target": "attachmentBase"
+        },
+        {
+          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskFileAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [taskFileAttachment](https://docs.microsoft.com/en-us/graph/api/resources/taskfileattachment?view=graph-rest-beta) resource and supported methods.",
+          "Target": "taskFileAttachment"
+        },
+        {
+          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+          "ApiChange": "Property",
+          "ChangedApiName": "hasAttachments",
+          "ChangeType": "Addition",
+          "Description": "Added the **hasAttachments** property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "attachments",
+          "ChangeType": "Addition",
+          "Description": "Added the **attachments** relationship to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resource.",
+          "Target": "todoTask"
+        }
+      ],
+      "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-05T11:32:54.7667846Z",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "158f04e1-284b-4f2d-a55f-eb7ddc637b9f",
           "ApiChange": "Resource",
           "ChangedApiName": "checklistItem",
