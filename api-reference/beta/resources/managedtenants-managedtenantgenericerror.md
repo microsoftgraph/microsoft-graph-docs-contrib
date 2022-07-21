@@ -1,7 +1,7 @@
 ---
 title: "managedTenantGenericError resource type"
 description: "Represents a generic error for a managed tenant."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: resourcePageType

@@ -2,7 +2,7 @@
 title: "Update androidWorkProfileCompliancePolicy"
 description: "Update the properties of a androidWorkProfileCompliancePolicy object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -173,6 +173,7 @@ Content-Length: 1593
   "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
+
 
 
 

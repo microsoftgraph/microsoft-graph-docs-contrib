@@ -2,7 +2,7 @@
 title: "List windowsQualityUpdateProfiles"
 description: "List properties and relationships of the windowsQualityUpdateProfile objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -85,6 +85,7 @@ Content-Length: 827
   ]
 }
 ```
+
 
 
 

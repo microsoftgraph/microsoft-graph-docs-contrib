@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/8ddcac47-0b45-4cdb-b10a-d36a07a3dd62/assignments"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphEducationAssignment *educationAssignment = [[MSGraphEducationAssignment alloc] init];
-[educationAssignment setDueDateTime: "2014-02-01T00:00:00Z"];
-[educationAssignment setDisplayName:@"Midterm 1"];
+[educationAssignment setDueDateTime: "2021-09-07T00:00:00Z"];
+[educationAssignment setDisplayName:@"Reading test 09.03 #4"];
 MSGraphEducationItemBody *instructions = [[MSGraphEducationItemBody alloc] init];
 [instructions setContentType: [MSGraphBodyType text]];
-[instructions setContent:@"Read chapters 1 through 3"];
+[instructions setContent:@"Read chapter 4"];
 [educationAssignment setInstructions:instructions];
 MSGraphEducationAssignmentGradeType *grading = [[MSGraphEducationAssignmentGradeType alloc] init];
-[grading setMaxPoints: 100];
+[grading setMaxPoints: 50];
 [educationAssignment setGrading:grading];
 MSGraphEducationAssignmentRecipient *assignTo = [[MSGraphEducationAssignmentRecipient alloc] init];
 [educationAssignment setAssignTo:assignTo];

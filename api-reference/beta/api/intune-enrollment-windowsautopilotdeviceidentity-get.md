@@ -2,7 +2,7 @@
 title: "Get windowsAutopilotDeviceIdentity"
 description: "Read properties and relationships of the windowsAutopilotDeviceIdentity object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -64,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1189
+Content-Length: 1493
 
 {
   "value": {
@@ -89,10 +89,16 @@ Content-Length: 1189
     "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
     "azureAdDeviceId": "Azure Ad Device Id value",
     "managedDeviceId": "Managed Device Id value",
-    "displayName": "Display Name value"
+    "displayName": "Display Name value",
+    "deviceAccountUpn": "Device Account Upn value",
+    "deviceAccountPassword": "Device Account Password value",
+    "deviceFriendlyName": "Device Friendly Name value",
+    "remediationState": "noRemediationRequired",
+    "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
   }
 }
 ```
+
 
 
 

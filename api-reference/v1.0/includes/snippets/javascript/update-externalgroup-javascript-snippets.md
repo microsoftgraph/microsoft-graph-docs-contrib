@@ -15,7 +15,7 @@ const externalGroup = {
   description: 'The product marketing team'
 };
 
-await client.api('/connections/{connectionsId}/groups/{externalGroupId}')
+await client.api('/external/connections/{connectionsId}/groups/{externalGroupId}')
 	.update(externalGroup);
 
 ```

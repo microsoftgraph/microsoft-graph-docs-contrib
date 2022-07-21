@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents the printer's default settings. Check the printer's [capabilities](printercapabilities.md) to see all the values that it supports.
 
 ## Properties

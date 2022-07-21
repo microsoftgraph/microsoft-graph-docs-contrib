@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a governanceRoleAssig
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "rkarim-ms"
 ---
 
 # Get governanceRoleAssignment
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Retrieve the properties and relationships of a [governanceRoleAssignment](../resources/governanceroleassignment.md).
 
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignm
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 182
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignments/$entity",

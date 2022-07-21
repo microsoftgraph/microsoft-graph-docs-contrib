@@ -10,7 +10,12 @@ doc_type: "apiPageType"
 # authenticationMethodConfiguration resource type
 Namespace: microsoft.graph
 
-Represents an authentication method policy.
+This is an abstract type that represents the settings for each authentication method. It has the configuration of whether a specific authentication method is enabled or disabled for the tenant and which users and groups can register and use that method.
+
+The following authentication methods are derived from the **authenticationMethodConfiguration** resource type:
++ [emailAuthenticationMethodConfiguration](emailauthenticationmethodconfiguration.md)
++ [fido2AuthenticationMethodConfiguration](fido2authenticationmethodconfiguration.md)
++ [microsoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)
 
 ## Properties
 |Property|Type|Description|

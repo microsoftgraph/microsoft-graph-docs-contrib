@@ -13,7 +13,7 @@ const client = Client.init(options);
 const permission = {
   recipients: [
     {
-      email: 'ryan@contoso.org'
+      email: 'robin@contoso.org'
     }
   ],
   message: 'Here\'s the file that we\'re collaborating on.',

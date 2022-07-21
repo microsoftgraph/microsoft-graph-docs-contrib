@@ -2,7 +2,7 @@
 title: "mobileThreatDefenseConnector resource type"
 description: "Entity which represents a connection to Mobile threat defense partner."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -45,6 +45,7 @@ Entity which represents a connection to Mobile threat defense partner.
 |partnerUnsupportedOsVersionBlocked|Boolean|Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner|
 |partnerUnresponsivenessThresholdInDays|Int32|Get or Set days the per tenant tolerance to unresponsiveness for this partner integration|
 |allowPartnerToCollectIOSApplicationMetadata|Boolean|For IOS devices, allows the admin to configure whether the data sync partner may also collect metadata about installed applications from Intune|
+|allowPartnerToCollectIOSPersonalApplicationMetadata|Boolean|For IOS devices, allows the admin to configure whether the data sync partner may also collect metadata about personally installed applications from Intune|
 |microsoftDefenderForEndpointAttachEnabled|Boolean|When TRUE, configuration profile management via Microsoft Defender for Endpoint is enabled. When FALSE, configuration profile management via Microsoft Defender for Endpoint is disabled.|
 
 ## Relationships
@@ -77,9 +78,11 @@ Here is a JSON representation of the resource.
   "partnerUnsupportedOsVersionBlocked": true,
   "partnerUnresponsivenessThresholdInDays": 1024,
   "allowPartnerToCollectIOSApplicationMetadata": true,
+  "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
   "microsoftDefenderForEndpointAttachEnabled": true
 }
 ```
+
 
 
 

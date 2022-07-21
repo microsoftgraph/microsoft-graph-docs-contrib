@@ -2,7 +2,7 @@
 title: "Update windowsMobileMSI"
 description: "Update the properties of a windowsMobileMSI object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -145,6 +145,7 @@ Content-Length: 1027
   "ignoreVersionDetection": true
 }
 ```
+
 
 
 

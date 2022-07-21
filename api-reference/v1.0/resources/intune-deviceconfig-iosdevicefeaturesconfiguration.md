@@ -2,7 +2,7 @@
 title: "iosDeviceFeaturesConfiguration resource type"
 description: "iOS Device Features Configuration Profile."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -131,6 +131,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

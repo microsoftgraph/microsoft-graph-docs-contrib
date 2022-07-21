@@ -2,7 +2,7 @@
 title: "win32LobAppRule resource type"
 description: "A base complex type to store the detection or requirement rule data for a Win32 LOB app."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -38,6 +38,7 @@ Here is a JSON representation of the resource.
   "ruleType": "String"
 }
 ```
+
 
 
 

@@ -21,7 +21,6 @@ MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setDisplayName:@"Heidi Steen"];
 [identity setUser:user];
 [transferTarget setIdentity:identity];
-[transferTarget setReplacesCallId:@"replacesCallId-value"];
 payloadDictionary[@"transferTarget"] = transferTarget;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

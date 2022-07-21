@@ -14,7 +14,7 @@ const appManagementPolicy = {
  '@odata.id':'https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}'
 };
 
-await client.api('/applications/{id}/appManagementPolicies/$ref')
+await client.api('/servicePrincipals/{id}/appManagementPolicies/$ref')
 	.version('beta')
 	.post(appManagementPolicy);
 

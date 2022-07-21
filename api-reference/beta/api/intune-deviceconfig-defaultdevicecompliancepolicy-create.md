@@ -2,7 +2,7 @@
 title: "Create defaultDeviceCompliancePolicy"
 description: "Create a new defaultDeviceCompliancePolicy object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -101,6 +101,7 @@ Content-Length: 401
   "version": 7
 }
 ```
+
 
 
 

@@ -2,7 +2,7 @@
 title: "Update pfxUserCertificate"
 description: "Update the properties of a pfxUserCertificate object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -130,6 +130,7 @@ Content-Length: 789
   "eTag": "ETag value"
 }
 ```
+
 
 
 

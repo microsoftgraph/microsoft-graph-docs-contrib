@@ -2,7 +2,7 @@
 title: "Create androidForWorkCompliancePolicy"
 description: "Create a new androidForWorkCompliancePolicy object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -170,6 +170,7 @@ Content-Length: 1526
   "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
+
 
 
 

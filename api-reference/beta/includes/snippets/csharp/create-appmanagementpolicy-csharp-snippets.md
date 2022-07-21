@@ -25,7 +25,28 @@ var appManagementPolicy = new AppManagementPolicy
 			{
 				RestrictionType = AppCredentialRestrictionType.PasswordLifetime,
 				MaxLifetime = new Duration("P4DT12H30M5S"),
-				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2018-10-19T10:37:00Z")
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z")
+			},
+			new PasswordCredentialConfiguration
+			{
+				RestrictionType = AppCredentialRestrictionType.SymmetricKeyAddition,
+				MaxLifetime = null,
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z")
+			},
+			new PasswordCredentialConfiguration
+			{
+				RestrictionType = AppCredentialRestrictionType.SymmetricKeyLifetime,
+				MaxLifetime = new Duration("P4D"),
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z")
+			}
+		},
+		KeyCredentials = new List<KeyCredentialConfiguration>()
+		{
+			new KeyCredentialConfiguration
+			{
+				RestrictionType = AppKeyCredentialRestrictionType.AsymmetricKeyLifetime,
+				MaxLifetime = new Duration("P90D"),
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z")
 			}
 		}
 	}

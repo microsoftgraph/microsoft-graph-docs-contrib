@@ -2,7 +2,7 @@
 title: "Update androidForWorkSettings"
 description: "Update the properties of a androidForWorkSettings object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -111,6 +111,7 @@ Content-Length: 568
   "deviceOwnerManagementEnabled": true
 }
 ```
+
 
 
 

@@ -2,7 +2,7 @@
 title: "deviceManagementScriptUserState resource type"
 description: "Contains properties for user run state of the device management script."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -56,6 +56,7 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

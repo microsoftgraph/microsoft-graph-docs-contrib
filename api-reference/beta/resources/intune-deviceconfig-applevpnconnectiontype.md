@@ -2,7 +2,7 @@
 title: "appleVpnConnectionType enum type"
 description: "Apple VPN connection type."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -39,6 +39,7 @@ Apple VPN connection type.
 |microsoftTunnel|16|Microsoft Tunnel.|
 |netMotionMobility|17|NetMotion Mobility.|
 |microsoftProtect|18|Microsoft Protect.|
+
 
 
 

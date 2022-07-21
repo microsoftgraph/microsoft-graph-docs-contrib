@@ -15,7 +15,7 @@ var activity = "Available";
 var expirationDuration = new Duration("PT1H");
 
 await graphClient.Users["{user-id}"].Presence
-	.SetPresence(sessionId,availability,activity,expirationDuration)
+	.SetPresence(availability,activity,sessionId,expirationDuration)
 	.Request()
 	.PostAsync();
 

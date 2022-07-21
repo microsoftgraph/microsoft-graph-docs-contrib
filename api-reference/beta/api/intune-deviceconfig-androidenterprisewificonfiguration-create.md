@@ -2,7 +2,7 @@
 title: "Create androidEnterpriseWiFiConfiguration"
 description: "Create a new androidEnterpriseWiFiConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -196,6 +196,7 @@ Content-Length: 1961
   "preSharedKey": "Pre Shared Key value"
 }
 ```
+
 
 
 

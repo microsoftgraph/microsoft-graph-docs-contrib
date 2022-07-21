@@ -1,6 +1,6 @@
 ---
 title: "Use Microsoft Graph APIs to configure SAML-based single sign-on"
-description: "Learn how to save time by using the Microsoft Graph APIs to automate the configuration of SAML-based single sign-on."
+description: "Follow these steps to create and configure a SAML-based single sign-on (SSO) for your application in Azure AD using the Microsoft Graph API."
 author: "kenwith"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
@@ -15,9 +15,9 @@ This article uses an AWS Azure AD application template as an example, but you ca
 
 ## Prerequisites
 
-This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, and `User.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Microsoft Graph Explorer:
+This tutorial assumes that you are using Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, and `User.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Graph Explorer:
 
-1. Go to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+1. Go to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
 3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
 
@@ -102,7 +102,7 @@ Content-type: application/json
 #### Response
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -282,7 +282,7 @@ In this tutorial, you set `saml` as the single sign-on mode in the service princ
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91
-Content-type: servicePrincipal/json
+Content-type: application/json
 
 {
   "preferredSingleSignOnMode": "saml"
@@ -303,7 +303,7 @@ Using the **id** for the application that you recorded earlier, set the identifi
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/a9be408a-6c31-4141-8cea-52fcd4a61be8
-Content-type: applications/json
+Content-type: application/json
 
 {
   "web": {
@@ -336,7 +336,7 @@ Use the **id** for the service principal that you recorded earlier.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/serviceprincipals/a750f6cf-2319-464a-bcc3-456926736a91
-Content-type: serviceprincipals/json
+Content-type: application/json
 
 {
   "appRoles": [
@@ -415,32 +415,32 @@ Create the claims mapping policy and record the value of the **id** property to 
 
 ```http
 POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
-  "definition": [
-    "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Source\":\"user\",\"ID\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
+    "definition": [
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
     ],
-  "displayName": "AWS Claims Policy",
-  "isOrganizationDefault": false
+    "displayName": "AWS Claims Policy",
+    "isOrganizationDefault": false
 }
 ```
 
 #### Response
 
 ```http
-HTTP/1.1 201 OK
-Content-type: claimsMappingPolicies/json
+HTTP/1.1 201 Created
+Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
-  "id": "a4b35718-fd5e-4ca8-8248-a3c9934b1b78",
-  "deletedDateTime": null,
-  "definition": [
-    "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Source\":\"user\",\"ID\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
-  ],
-  "displayName": "AWS Claims Policy",
-  "isOrganizationDefault": false
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
+    "id": "4bce7ba7-466d-4239-94b8-cf4f21428ca7",
+    "deletedDateTime": null,
+    "definition": [
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
+    ],
+    "displayName": "AWS Claims Policy",
+    "isOrganizationDefault": false
 }
 ```
 
@@ -452,7 +452,7 @@ Use the **id** for the service principal that you recorded earlier to assign a c
 
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/claimsMappingPolicies/$ref
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/a4b35718-fd5e-4ca8-8248-a3c9934b1b78"
@@ -476,7 +476,7 @@ Using the **id** of the service principal that you created, create a new certifi
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/addTokenSigningCertificate
+POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/addTokenSigningCertificate
 Content-type: application/json
 
 {
@@ -488,11 +488,11 @@ Content-type: application/json
 #### Response
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.selfSignedCertificate",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.selfSignedCertificate",
   "customKeyIdentifier": "p9PEYmuKhP2oaMzGfSdNQC/9ChA=",
   "displayName": "CN=AWSContoso",
   "endDateTime": "2024-01-25T00:00:00Z",
@@ -513,7 +513,7 @@ You need to set the **preferredTokenSigningKeyThumbprint** property of the servi
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91
-Content-type: servicePrincipals/json
+Content-type: application/json
 
 {
   "preferredTokenSigningKeyThumbprint": "A7D3C4626B8A84FDA868CCC67D274D402FFD0A10"
@@ -558,13 +558,6 @@ Content-type: application/json
   "id": "040f9599-7c0f-4f94-aa75-8394c4c6ea9b",
   "businessPhones": [],
   "displayName": "MyTestUser1",
-  "givenName": null,
-  "jobTitle": null,
-  "mail": null,
-  "mobilePhone": null,
-  "officeLocation": null,
-  "preferredLanguage": null,
-  "surname": null,
   "userPrincipalName": "MyTestUser1@contoso.com"
 }
 ```
@@ -583,7 +576,7 @@ In the request body, provide these values:
 
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/appRoleAssignments
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
   "principalId": "040f9599-7c0f-4f94-aa75-8394c4c6ea9b",
@@ -597,7 +590,7 @@ Content-type: appRoleAssignments/json
 
 ```http
 HTTP/1.1 201 
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('a750f6cf-2319-464a-bcc3-456926736a91')/appRoleAssignments/$entity",
@@ -698,4 +691,4 @@ No Content - 204
 - [application](/graph/api/resources/application)
 - [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy)
 - [keyCredential](/graph/api/resources/keycredential)
-- [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta&preserve-view=true)
+- [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate)

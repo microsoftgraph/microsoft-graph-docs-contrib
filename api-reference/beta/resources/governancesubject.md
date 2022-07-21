@@ -4,7 +4,7 @@ description: "Represents users, groups, and service principals being managed in 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "rkarim-ms"
 ---
 
 # governanceSubject resource type

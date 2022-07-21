@@ -2,7 +2,7 @@
 title: "macOsVppAppAssignmentSettings resource type"
 description: "Contains properties used to assign an Mac VPP mobile app to a group."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -43,6 +43,7 @@ Here is a JSON representation of the resource.
   "uninstallOnDeviceRemoval": true
 }
 ```
+
 
 
 

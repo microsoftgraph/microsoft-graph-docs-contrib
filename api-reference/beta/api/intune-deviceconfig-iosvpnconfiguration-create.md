@@ -2,7 +2,7 @@
 title: "Create iosVpnConfiguration"
 description: "Create a new iosVpnConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -344,6 +344,7 @@ Content-Length: 3540
   "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
 }
 ```
+
 
 
 

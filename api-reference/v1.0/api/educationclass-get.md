@@ -1,6 +1,6 @@
 ---
 title: "Get educationClass"
-description: "Retrieve a class from the system"
+description: "Retrieve a class from the system."
 ms.localizationpriority: medium
 author: "mlafleur"
 ms.prod: "education"
@@ -41,16 +41,10 @@ For more information on OData query options, see [OData Query Parameters](/graph
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationClass](../resources/educationclass.md) object in the response body.
+
 ## Example
-##### Request
-Here is an example of the request.
-
-If successful, this method returns a `200 OK` response code and an [educationClass](../resources/educationclass.md) object in the response body.
-
-## Examples
-
 ### Request
-
+Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -62,6 +56,7 @@ If successful, this method returns a `200 OK` response code and an [educationCla
 ```msgraph-interactive
 GET /education/classes/{educationClassId}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -70,12 +65,20 @@ GET /education/classes/{educationClassId}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationclass-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

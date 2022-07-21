@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var externalConnection = await graphClient.Connections["{externalConnectors.externalConnection-id}"]
+var externalConnection = await graphClient.External.Connections["{externalConnectors.externalConnection-id}"]
 	.Request()
 	.GetAsync();
 

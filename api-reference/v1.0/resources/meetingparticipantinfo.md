@@ -19,7 +19,11 @@ Information about a participant in a meeting.
 | :------- | :---------------------------- | :---------------------------------------------------------------------------------- |
 | identity | [identitySet](identityset.md) | Identity information of the participant.                                            |
 | upn      | String                        | User principal name of the participant.                                             |
-| role     | onlineMeetingRole             | Specifies the participant's role in the meeting.  Possible values are `attendee`, `presenter`, and `unknownFutureValue`.|
+| role     | onlineMeetingRole             | Specifies the participant's role in the meeting.  Possible values are `attendee`, `presenter`, `producer`, and `unknownFutureValue`.|
+
+> [!TIP]
+>
+> To set the  **presenter** role of a meeting attendee when creating or updating an [onlineMeeting](onlinemeeting.md), the value of **allowedPresenters** must also be set to `roleIsPresenter`.
 
 ## JSON representation
 

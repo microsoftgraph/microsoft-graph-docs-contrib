@@ -2,7 +2,7 @@
 title: "keySize enum type"
 description: "Key Size Options."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,6 +23,7 @@ Key Size Options.
 |size1024|0|1024 Bits.|
 |size2048|1|2048 Bits.|
 |size4096|2|4096 Bits.|
+
 
 
 

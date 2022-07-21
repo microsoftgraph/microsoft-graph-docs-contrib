@@ -2,7 +2,7 @@
 title: "Update deviceCompliancePolicyAssignment"
 description: "Update the properties of a deviceCompliancePolicyAssignment object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -100,6 +100,7 @@ Content-Length: 501
   "sourceId": "Source Id value"
 }
 ```
+
 
 
 

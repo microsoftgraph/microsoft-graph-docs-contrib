@@ -2,7 +2,7 @@
 title: "remoteAssistanceSessionType enum type"
 description: "Type of the remote assist session that was held. Possible values are: `viewOnly`, `fullControl`"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,6 +23,7 @@ Type of the remote assist session that was held. Possible values are: `viewOnly`
 |viewOnly|0|This status denotes a view only session between helper and sharer.|
 |fullControl|1|This status denotes a session where helper was able to take full control of the sharer's device.|
 |elevation|2|This status denotes a session where helper was able to take administrative actions on the sharer's device.|
+
 
 
 

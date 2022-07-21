@@ -2,7 +2,7 @@
 title: "deviceComplianceScriptRulesValidationError enum type"
 description: "Error code for rule validation."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -52,6 +52,7 @@ Error code for rule validation.
 |unrecognizedLocale|29|Unrecognized locale error.|
 |unknown|30|Unknown error.|
 |remediationStringsMissing|31|Remediation strings missing error.|
+
 
 
 

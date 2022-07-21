@@ -2,7 +2,7 @@
 title: "Update androidWorkProfileVpnConfiguration"
 description: "Update the properties of a androidWorkProfileVpnConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -264,6 +264,7 @@ Content-Length: 2594
   "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
 }
 ```
+
 
 
 

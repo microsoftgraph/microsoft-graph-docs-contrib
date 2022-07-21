@@ -2,7 +2,7 @@
 title: "Get windowsInformationProtectionAppLearningSummary"
 description: "Read properties and relationships of the windowsInformationProtectionAppLearningSummary object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -73,6 +73,7 @@ Content-Length: 269
   }
 }
 ```
+
 
 
 

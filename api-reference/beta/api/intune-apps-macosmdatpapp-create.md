@@ -2,7 +2,7 @@
 title: "Create macOSMdatpApp"
 description: "Create a new macOSMdatpApp object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -148,6 +148,7 @@ Content-Length: 941
   "supersededAppCount": 2
 }
 ```
+
 
 
 

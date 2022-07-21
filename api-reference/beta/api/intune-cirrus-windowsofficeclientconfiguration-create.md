@@ -1,7 +1,7 @@
 ---
 title: "Create windowsOfficeClientConfiguration"
 description: "Create a new non-security policy with targeting groups."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dougeby"
 ms.prod: "intune"
 doc_type: apiPageType

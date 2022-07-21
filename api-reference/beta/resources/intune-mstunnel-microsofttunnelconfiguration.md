@@ -2,7 +2,7 @@
 title: "microsoftTunnelConfiguration resource type"
 description: "Entity that represents a collection of Microsoft Tunnel settings"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -42,6 +42,7 @@ Entity that represents a collection of Microsoft Tunnel settings
 |advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) collection|Additional settings that may be applied to the server|
 |lastUpdateDateTime|DateTimeOffset|When the MicrosoftTunnelConfiguration was last updated|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
+|disableUdpConnections|Boolean|When DisableUdpConnections is set, the clients and VPN server will not use DTLS connections to tansfer data.|
 
 ## Relationships
 None
@@ -85,9 +86,11 @@ Here is a JSON representation of the resource.
   "lastUpdateDateTime": "String (timestamp)",
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "disableUdpConnections": true
 }
 ```
+
 
 
 

@@ -33,7 +33,7 @@ var requests = new List<SearchRequestObject>()
 };
 
 await graphClient.Search
-	.Query(requests,null)
+	.Query(requests)
 	.Request()
 	.PostAsync();
 

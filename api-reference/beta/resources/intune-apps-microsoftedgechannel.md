@@ -2,7 +2,7 @@
 title: "microsoftEdgeChannel enum type"
 description: "The enum to specify the channels for Microsoft Edge apps."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,6 +23,7 @@ The enum to specify the channels for Microsoft Edge apps.
 |dev|0|Not yet documented|
 |beta|1|Not yet documented|
 |stable|2|Not yet documented|
+
 
 
 

@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const unifiedGroupSource = {
-  'group@odata.bind': 'https://graph.microsoft.com/v1.0/groups/b96f95c5-b1b3-4142-b039-8ac79e7d2c84',
-  includedSources: 'mailbox, site'
+    'group@odata.bind': 'https://graph.microsoft.com/v1.0/groups/93f90172-fe05-43ea-83cf-ff785a40d610',
+    includedSources: 'mailbox'
 };
 
-await client.api('/compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/unifiedGroupSources')
+await client.api('/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/unifiedGroupSources')
 	.version('beta')
 	.post(unifiedGroupSource);
 

@@ -1,7 +1,7 @@
 ---
 title: "Deployments in the Windows Update for Business deployment service"
-description: "Deployments are the foundation of the Windows Update for Business deployment service. Through a deployment you can target a set of devices to receive specific content from Windows Update, such as a software update."
-author: "Alice-at-Microsoft"
+description: "Use the Windows Update for Business deployment service to create deployments, configure settings, and set lifecycle state. Assign a device to multiple deployments."
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
@@ -19,7 +19,6 @@ Deployments have the following key aspects:
 4. State: The current state of the deployment within its lifecycle. This is represented by the **state** property of the [deploymentState](/graph/api/resources/windowsupdates-deploymentstate) type.
 
 ## Create a deployment with content and an audience
-
 
 Because content and audience are key to the definition of a deployment, you are required to assign both at the time of creation. While content and audience assignments cannot be changed later, device membership within an audience can.
 
@@ -52,21 +51,23 @@ To learn more about user experience settings, see [Deploy an expedited security 
 
 Deployments move through lifecycle states as described in the following table.
 
-| State     | Description                                                                                       |
-|-----------|---------------------------------------------------------------------------------------------------|
+| State       | Description                                                                                       |
+|-------------|---------------------------------------------------------------------------------------------------|
 | `scheduled` | The deployment is waiting for offer conditions to be met to start offering the update to devices. |
 | `offering`  | The deployment is offering the update to devices.                                                 |
 | `paused`    | The deployment is paused and prevented from offering the update to devices until it is unpaused.  |
+| `faulted`   | The deployment is not offering the update to devices due to a reason the service cannot resolve.  |
 
 
 ### Transitions
 
-| Transition                     | Condition                                |
-|--------------------------------|------------------------------------------|
-| `scheduled` → `offering`           | Scheduling condition is met.             |
-| `offering` → `scheduled`           | Scheduling condition is not met.         |
+| Transition                           | Condition                                |
+|--------------------------------------|------------------------------------------|
+| `scheduled` → `offering`             | Scheduling condition is met.             |
+| `offering` → `scheduled`             | Scheduling condition is not met.         |
 | `scheduled` or `offering` → `paused` | There is a request or automatic action to pause. |
 | `paused` → `scheduled` or `offering` | There is no longer a request or automatic action to pause. |
+| `offering`, `scheduled`, or `paused` → `faulted` | There is an error that the service cannot resolve. |
 
 ### Resource model
 
@@ -74,7 +75,7 @@ The [deployment](/graph/api/resources/windowsupdates-deployment) resource has a 
 
 The service determines the effective **value** of the deployment state as a net result of several inputs and asynchronous processes, but you can request a particular value by setting **requestedValue** as one of these inputs. Other inputs to the effective deployment state value include rollout settings and monitoring settings.
 
-## Multiple deployments
+## Assign a device to multiple deployments
 
 You can assign a device to multiple deployments at one time. These deployments can be for content of the same update category (for example all deployments are feature updates), or for content of different update categories.
 

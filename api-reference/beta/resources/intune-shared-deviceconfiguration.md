@@ -2,7 +2,7 @@
 title: "deviceConfiguration resource type"
 description: "Device Configuration."
 author: "rolyon"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

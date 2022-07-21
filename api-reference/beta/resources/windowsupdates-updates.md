@@ -1,7 +1,7 @@
 ---
 title: "updates resource type"
 description: "Entity that acts as a container for all Windows Update for Business deployment service functionality."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
@@ -25,6 +25,7 @@ Entity that acts as a container for all Windows Update for Business deployment s
 |:---|:---|:---|
 |catalog|[microsoft.graph.windowsUpdates.catalog](../resources/windowsupdates-catalog.md)|Catalog of content that can be approved for deployment by the deployment service. Read-only.|
 |deployments|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md) collection|Deployments created using the deployment service. Read-only.|
+|resourceConnections|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md) collection|Service connections to external resources such as analytics workspaces.|
 |updatableAssets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Assets registered with the deployment service that can receive updates. Read-only.|
 
 ## JSON representation

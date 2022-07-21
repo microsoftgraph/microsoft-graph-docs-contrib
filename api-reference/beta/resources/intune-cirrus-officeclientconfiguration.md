@@ -1,7 +1,7 @@
 ---
 title: "officeClientConfiguration resource type"
 description: "Office Client Configuration."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dougeby"
 ms.prod: "intune"
 doc_type: resourcePageType

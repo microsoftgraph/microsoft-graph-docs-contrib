@@ -2,7 +2,7 @@
 title: "androidSafetyNetEvaluationType enum type"
 description: "An enum representing the Android SafetyNet attestation evaluation types."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,6 +22,7 @@ An enum representing the Android SafetyNet attestation evaluation types.
 |:---|:---|:---|
 |basic|0|Default value. Typical measurements and reference data were used.|
 |hardwareBacked|1|Hardware-backed security features (such as Key Attestation) were used.|
+
 
 
 

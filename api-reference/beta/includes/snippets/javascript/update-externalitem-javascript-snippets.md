@@ -16,12 +16,11 @@ const externalItem = {
       type: 'everyone',
       value: '67a141d8-cf4e-4528-ba07-bed21bfacd2d',
       accessType: 'grant',
-      identitySource: 'azureActiveDirectory'
     }
   ]
 };
 
-await client.api('/connections/contosohr/items/TSP228082938')
+await client.api('/external/connections/contosohr/items/TSP228082938')
 	.version('beta')
 	.update(externalItem);
 

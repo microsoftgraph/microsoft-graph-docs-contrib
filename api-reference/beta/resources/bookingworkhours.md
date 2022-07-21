@@ -1,6 +1,6 @@
 ---
 title: "bookingWorkHours resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Represents the set of working hours in a single day of the week, for a bookingBusiness or bookingStaffMember."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"

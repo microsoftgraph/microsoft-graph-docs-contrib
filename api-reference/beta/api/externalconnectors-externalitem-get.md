@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
 
 ## HTTP request
 
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an [externalItem
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 ```
 
 <!-- markdownlint-disable MD024 -->
@@ -92,13 +92,11 @@ Content-type: application/json
       "type": "user",
       "value": "e811976d-83df-4cbd-8b9b-5215b18aa874",
       "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
     },
     {
-      "type": "group",
+      "type": "externalGroup",
       "value": "14m1b9c38qe647f6a",
       "accessType": "deny",
-      "identitySource": "external"
     }
   ],
   "properties": {

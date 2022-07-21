@@ -2,7 +2,7 @@
 title: "certificateDestinationStore enum type"
 description: "Possible values for the Certificate Destination Store."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,6 +23,7 @@ Possible values for the Certificate Destination Store.
 |computerCertStoreRoot|0|Computer Certificate Store - Root.|
 |computerCertStoreIntermediate|1|Computer Certificate Store - Intermediate.|
 |userCertStoreIntermediate|2|User Certificate Store - Intermediate.|
+
 
 
 

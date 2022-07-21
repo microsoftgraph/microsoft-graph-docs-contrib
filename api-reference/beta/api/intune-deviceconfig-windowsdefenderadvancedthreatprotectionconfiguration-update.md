@@ -2,7 +2,7 @@
 title: "Update windowsDefenderAdvancedThreatProtectionConfiguration"
 description: "Update the properties of a windowsDefenderAdvancedThreatProtectionConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -172,6 +172,7 @@ Content-Length: 1775
   "advancedThreatProtectionOffboardingFilename": "Advanced Threat Protection Offboarding Filename value"
 }
 ```
+
 
 
 

@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerKioskModeHomeScreenItem resource type"
 description: "Represents an item on the Android Device Owner Managed Home Screen (application, weblink or folder"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -36,6 +36,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.androidDeviceOwnerKioskModeHomeScreenItem"
 }
 ```
+
 
 
 

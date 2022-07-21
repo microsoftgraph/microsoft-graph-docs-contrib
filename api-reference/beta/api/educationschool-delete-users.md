@@ -48,9 +48,9 @@ If successful, this method returns a `204 No Content` response code and an empty
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -62,16 +62,13 @@ Here is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/education/schools/10001/users/13006
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationclass-from-educationschool-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationclass-from-educationschool-4-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-educationclass-from-educationschool-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -81,7 +78,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/users/13006
 ---
 
 
-##### Response
+### Response
 
 The following is an example of the response. 
 
