@@ -161,7 +161,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06&$select=accessReviewId,reviewedDateTime,decision,justification,recommendation,reviewedBy,target
 ```
 
 
@@ -184,18 +184,8 @@ Content-Type: application/json
     "reviewedDateTime": null,
     "decision": "NotReviewed",
     "justification": "",
-    "appliedDateTime": null,
-    "applyResult": "New",
     "recommendation": "Approve",
-    "principalLink": "https://graph.microsoft.com/v1.0/users/04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
-    "resourceLink": null,
-    "resource": null,
     "reviewedBy": {
-        "id": "00000000-0000-0000-0000-000000000000",
-        "displayName": "",
-        "userPrincipalName": ""
-    },
-    "appliedBy": {
         "id": "00000000-0000-0000-0000-000000000000",
         "displayName": "",
         "userPrincipalName": ""
@@ -204,12 +194,6 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
         "userId": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
         "userDisplayName": "Diego Siciliani",
-        "userPrincipalName": "DiegoS@contoso.com"
-    },
-    "principal": {
-        "@odata.type": "#microsoft.graph.userIdentity",
-        "id": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
-        "displayName": "Diego Siciliani",
         "userPrincipalName": "DiegoS@contoso.com"
     }
 }

@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstanceDecisionItem: filterByCurrentUser"
-description: "Retrieve all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer."
+description: "Retrieve all decision items for an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # accessReviewInstanceDecisionItem: filterByCurrentUser
 Namespace: microsoft.graph
 
-Retrieve all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer. The decision items are presented by a [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) or [accessReviewStage](../resources/accessReviewStage.md) for which the calling user is the reviewer.
+Retrieve all decision items for an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer. The decision items are represented by [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) or [accessReviewStage](../resources/accessReviewStage.md) for which the calling user is the reviewer.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,7 @@ To retrieve decisions for an instance of an access review for which the calling 
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 ```
 
-To retrieve decisions for a stage in an instance of an access review for which the calling user is the reviewer:
+To retrieve decisions for a stage in an instance of an multi-stage access review for which the calling user is the reviewer:
 <!-- {
   "blockType": "ignored"
 }
@@ -42,10 +42,11 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 >[!NOTE]
->Reviewers of multi-stage reviews can retrieve the decisions from previous stages if the **decisionHistoriesForReviewersEnabled** property is enabled in the [settings](../resources/accessreviewschedulesettings.md) of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
+>Reviewers of multi-stage reviews can retrieve the decisions from previous stages if the **decisionHistoriesForReviewersEnabled** property is enabled in the **settings** property of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
 ## Function parameters
-The following table shows the query parameters that can be used with this method.
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -53,7 +54,7 @@ The following table shows the query parameters that can be used with this method
 
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter` (`eq`), `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The default page size for this API is 100 **accessReviewInstanceDecisionItem** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
@@ -177,7 +178,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/0185aab8-9a7e-44b5-ae36-41b923c3bf87/instances/1234aab8-9a7e-5678-ae36-41b923c3bf87/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/filterByCurrentUser(on='reviewer')
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/0185aab8-9a7e-44b5-ae36-41b923c3bf87/instances/1234aab8-9a7e-5678-ae36-41b923c3bf87/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/filterByCurrentUser(on='reviewer')&$select=accessReviewId,reviewedDateTime,decision,justification,recommendation,reviewedBy,target
 ```
 
 
@@ -204,21 +205,11 @@ Content-Type: application/json
             "reviewedDateTime": "2021-05-03T19:28:25.02Z",
             "decision": "Approve",
             "justification": "Christie still needs access to the Marketing group as she works in the Marketing organization.",
-            "appliedDateTime": null,
-            "applyResult": "New",
-            "recommendation": "Deny",
-            "principalLink": "https://graph.microsoft.com/v1.0/users/1800bb2c-955d-4205-8471-3a6c3116435d",
-            "resourceLink": null,
-            "resource": null,
+            "recommendation": "Approve",
             "reviewedBy": {
                 "id": "36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
                 "displayName": "MOD Administrator",
                 "userPrincipalName": "MOD Administrator"
-            },
-            "appliedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
             },
             "target": {
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
@@ -226,12 +217,6 @@ Content-Type: application/json
                 "userDisplayName": "Christie Cline",
                 "userPrincipalName": "ChristieC@contoso.com"
             },
-            "principal": {
-                "@odata.type": "#microsoft.graph.userIdentity",
-                "id": "1800bb2c-955d-4205-8471-3a6c3116435d",
-                "displayName": "Christie Cline",
-                "userPrincipalName": "ChristieC@contoso.com"
-            }
         }
     ]
 }
