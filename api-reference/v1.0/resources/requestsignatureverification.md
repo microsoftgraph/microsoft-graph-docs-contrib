@@ -1,6 +1,9 @@
 ---
 title: "requestSignatureVerification resource type"
 description: "Specifies whether this application requires the verification of signed authentication requests."
+author: "rahulnagraj"
+ms.localizationpriority: high
+ms.prod: "applications"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +28,7 @@ Here is a JSON representation of the resource.
 { 
   "requestSignatureVerification": { 
       "isSignedRequestRequired": "Boolean", 
-              "allowedWeakAlgorithms": ["String"] 
+      "allowedWeakAlgorithms": ["String"] 
   } 
 }
 ```
