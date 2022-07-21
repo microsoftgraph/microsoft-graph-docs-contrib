@@ -7,9 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewGroupIdRequestBody()
+requestBody := graphmodels.NewRenewGroupPostRequestBody()
 groupId := "ffffffff-ffff-ffff-ffff-ffffffffffff"
-requestBody.SetGroupId(&groupId)
+requestBody.SetGroupId(&groupId) 
+
 result, err := graphClient.GroupLifecyclePolicies().RenewGroup().Post(requestBody)
 
 

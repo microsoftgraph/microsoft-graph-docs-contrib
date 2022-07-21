@@ -7,13 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewIdentityUserFlowAttribute()
+requestBody := graphmodels.NewIdentityUserFlowAttribute()
 displayName := "Hobby"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Your hobby"
-requestBody.SetDescription(&description)
-dataType := "string"
-requestBody.SetDataType(&dataType)
+requestBody.SetDescription(&description) 
+dataType := graphmodels.STRING_IDENTITYUSERFLOWATTRIBUTEDATATYPE 
+requestBody.SetDataType(&dataType) 
+
 result, err := graphClient.Identity().UserFlowAttributes().Post(requestBody)
 
 

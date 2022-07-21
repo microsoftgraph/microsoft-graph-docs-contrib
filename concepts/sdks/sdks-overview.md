@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph SDK overview"
-description: "Describes the SDKs that are available, the languages they support, and the value they provide to developers."
+description: "The Microsoft Graph SDK is available for the following languages: C#, PowerShell, TypeScript, JavaScript, Java, Go, PHP, and Python."
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
