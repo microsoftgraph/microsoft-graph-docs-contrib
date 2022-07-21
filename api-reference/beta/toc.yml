@@ -15424,6 +15424,18 @@ items:
           items:
           - name: Installed app
             href: resources/teamsappinstallation.md
+          - name: App in chat
+            items:
+            - name: List apps in chat
+              href: api/chat-list-installedapps.md
+            - name: Add app in chat
+              href: api/chat-post-installedapps.md
+            - name: Get app installed in chat
+              href: api/chat-get-installedapps.md
+            - name: Upgrade app installed in chat
+              href: api/chat-teamsappinstallation-upgrade.md
+            - name: Remove app from chat
+              href: api/chat-delete-installedapps.md  
           - name: App in team
             items:
             - name: List apps in team
@@ -15450,18 +15462,6 @@ items:
               href: api/userteamwork-teamsappinstallation-upgrade.md
             - name: Remove app for user
               href: api/userteamwork-delete-installedapps.md
-          - name: App in chat
-            items:
-            - name: List apps in chat
-              href: api/chat-list-installedapps.md
-            - name: Add app in chat
-              href: api/chat-post-installedapps.md
-            - name: Get app installed in chat
-              href: api/chat-get-installedapps.md
-            - name: Upgrade app installed in chat
-              href: api/chat-teamsappinstallation-upgrade.md
-            - name: Remove app from chat
-              href: api/chat-delete-installedapps.md
         - name: App settings
           items:
           - name: App settings
@@ -15469,7 +15469,16 @@ items:
           - name: Get
             href: api/teamsappsettings-get.md
           - name: Update
-            href: api/teamsappsettings-update.md      
+            href: api/teamsappsettings-update.md
+        - name: Resource-specific permission grants
+          href: resources/resourcespecificpermissiongrant.md
+          items:
+          - name: List for team
+            href: api/team-list-permissiongrants.md
+          - name: List for group
+            href: api/group-list-permissiongrants.md
+          - name: List for chat
+            href: api/chat-list-permissiongrants.md          
         - name: Tab
           href: resources/teamstab.md
           items:
@@ -15497,15 +15506,6 @@ items:
               href: api/chat-patch-tabs.md
             - name: Remove tab from chat
               href: api/chat-delete-tabs.md
-        - name: Resource-specific permission grants
-          href: resources/resourcespecificpermissiongrant.md
-          items:
-          - name: List for team
-            href: api/team-list-permissiongrants.md
-          - name: List for group
-            href: api/group-list-permissiongrants.md
-          - name: List for chat
-            href: api/chat-list-permissiongrants.md
       - name: Messaging
         items:
         - name: Activity feed
@@ -15839,39 +15839,26 @@ items:
               href: resources/callrecords-callrecord.md
             - name: Get
               href: api/callrecords-callrecord-get.md
-          - name: Session
+          - name: Direct routing calls
             items:
-            - name: Session
-              href: resources/callrecords-session.md
-            - name: List
-              href: api/callrecords-session-list.md
+            - name: Direct routing log row
+              href: resources/callrecords-directroutinglogrow.md
+            - name: List direct routing calls
+              href: api/callrecords-callrecord-getdirectroutingcalls.md    
           - name: PSTN calls
             items:
             - name: PSTN log row
               href: resources/callrecords-pstncalllogrow.md
             - name: List PSTN calls
               href: api/callrecords-callrecord-getpstncalls.md
-          - name: Direct routing calls
+          - name: Session
             items:
-            - name: Direct routing log row
-              href: resources/callrecords-directroutinglogrow.md
-            - name: List direct routing calls
-              href: api/callrecords-callrecord-getdirectroutingcalls.md
+            - name: Session
+              href: resources/callrecords-session.md
+            - name: List
+              href: api/callrecords-session-list.md    
         - name: Online meetings
           items:
-          - name: Online meeting
-            href: resources/onlinemeeting.md
-            items:
-            - name: Create
-              href: api/application-post-onlinemeetings.md
-            - name: Get
-              href: api/onlinemeeting-get.md
-            - name: Update
-              href: api/onlinemeeting-update.md
-            - name: Delete
-              href: api/onlinemeeting-delete.md
-            - name: Create or get
-              href: api/onlinemeeting-createorget.md
           - name: Attendance report
             href: resources/meetingAttendanceReport.md
             items:
@@ -15884,6 +15871,24 @@ items:
               items:
               - name: List
                 href: api/attendancerecord-list.md
+          - name: External meeting registration
+            href: resources/externalmeetingregistration.md
+            items:
+            - name: Create
+              href: api/externalmeetingregistration-post.md
+            - name: Get
+              href: api/externalmeetingregistration-get.md
+            - name: Delete
+              href: api/externalmeetingregistration-delete.md
+            - name: External meeting registrant
+              href: resources/externalmeetingregistrant.md
+              items:
+              - name: List
+                href: api/externalmeetingregistrant-list.md
+              - name: Create
+                href: api/externalmeetingregistrant-post.md
+              - name: Delete
+                href: api/externalmeetingregistrant-delete.md      
           - name: Meeting registration
             href: resources/meetingregistration.md
             items:
@@ -15903,25 +15908,20 @@ items:
             - name: Create
               href: api/meetingregistration-post-registrants.md
             - name: Delete
-              href: api/meetingregistrant-delete.md
-          - name: External meeting registration
-            href: resources/externalmeetingregistration.md
+              href: api/meetingregistrant-delete.md      
+          - name: Online meeting
+            href: resources/onlinemeeting.md
             items:
             - name: Create
-              href: api/externalmeetingregistration-post.md
+              href: api/application-post-onlinemeetings.md
             - name: Get
-              href: api/externalmeetingregistration-get.md
+              href: api/onlinemeeting-get.md
+            - name: Update
+              href: api/onlinemeeting-update.md
             - name: Delete
-              href: api/externalmeetingregistration-delete.md
-            - name: External meeting registrant
-              href: resources/externalmeetingregistrant.md
-              items:
-              - name: List
-                href: api/externalmeetingregistrant-list.md
-              - name: Create
-                href: api/externalmeetingregistrant-post.md
-              - name: Delete
-                href: api/externalmeetingregistrant-delete.md
+              href: api/onlinemeeting-delete.md
+            - name: Create or get
+              href: api/onlinemeeting-createorget.md
         - name: Presence 
           href: resources/presence.md
           items:
