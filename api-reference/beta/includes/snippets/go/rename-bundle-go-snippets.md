@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewDriveItem()
+requestBody := graphmodels.NewDriveItem()
 name := "Shared legal agreements"
-requestBody.SetName(&name)
-driveItemId := "driveItem-id"
-graphClient.Drive().ItemsById(&driveItemId).Patch(requestBody)
+requestBody.SetName(&name) 
+
+graphClient.Drive().ItemsById("driveItem-id").Patch(requestBody)
 
 
 ```

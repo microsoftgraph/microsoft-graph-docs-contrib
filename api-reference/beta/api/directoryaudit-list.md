@@ -91,16 +91,13 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudits-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudits-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudits-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -115,6 +112,10 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryaudits-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-directoryaudits-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -127,7 +128,6 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.directoryAudit",
-  "isCollection": true
 } -->
 
 ```http
@@ -135,48 +135,60 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
-  "value": [{
-		"id": "id",
-		"category": "UserManagement",
-		"correlationId": "da159bfb-54fa-4092-8a38-6e1fa7870e30",
-		"result": "success",
-		"resultReason": "Successfully added member to group",
-		"activityDisplayName": "Add member to group",
-		"activityDateTime": "2018-01-09T21:20:02.7215374Z",
-		"loggedByService": "Core Directory",
-		"initiatedBy": {
-			"user": {
-				"id": "7283X9ae-1a37-4937-9aex-e35d964db09b",
-				"displayName": "Jamie Doe",
-				"userPrincipalName": "jdoe@wingtiptoysonline.com",
-				"ipAddress": "127.0.0.1"
-			},
-			"app": null
-		},
-		"targetResources": [{
-			"@odata.type": "#microsoft.graph.TargetResourceGroup",
-			"id": "ef7x527d-6x92-42x4-8x6d-cfxfdfx57f95",
-			"displayName": "Example.com",
-			"modifiedProperties": [{
-				"displayName": "Action Client Name",
-				"oldValue": null,
-				"newValue": "DirectorySync"
-			}],
-			"groupType": "unifiedGroups"
-		}, {
-			"@odata.type": "#microsoft.graph.targetResourceUser",
-			"id": "1f0ex8f5-3x61-4x6b-9x50-d4xx572f2bb7",
-			"displayName": null,
-			"modifiedProperties": [],
-			"userPrincipalName": "jdoe@contoso.com"
-		}],
-		"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36",
-		"additionalDetails": [{
-			"key": "Additional Detail Name",
-			"value": "Additional Detail Value"
-		}]
-	}]
+    "id": "Directory_504a302a-8f2d-418d-b7df-bf77de6ed831_M1N6X_27777783",
+    "category": "UserManagement",
+    "correlationId": "504a302a-8f2d-418d-b7df-bf77de6ed831",
+    "result": "success",
+    "resultReason": "",
+    "activityDisplayName": "Update user",
+    "activityDateTime": "2022-06-21T23:25:00.1458248Z",
+    "loggedByService": "Core Directory",
+    "operationType": "Update",
+    "userAgent": null,
+    "initiatedBy": {
+        "app": null,
+        "user": {
+            "id": "2c940657-1026-4386-bcfd-3176637ba01f",
+            "displayName": "Test Admin",
+            "userPrincipalName": "tadmin@contoso.com",
+            "ipAddress": "",
+            "userType": "Member",
+            "homeTenantId": null,
+            "homeTenantName": null
+        }
+    },
+    "targetResources": [
+        {
+            "id": "2c940657-1026-4386-bcfd-3176637ba01f",
+            "displayName": "Test User",
+            "type": "User",
+            "userPrincipalName": "tuser@contoso.com",
+            "groupType": null,
+            "modifiedProperties": [
+                {
+                    "displayName": "StrongAuthenticationMethod",
+                    "oldValue": "[{\"MethodType\":6,\"Default\":true},{\"MethodType\":7,\"Default\":false}]",
+                    "newValue": "[{\"MethodType\":7,\"Default\":false},{\"MethodType\":6,\"Default\":true},{\"MethodType\":0,\"Default\":false},{\"MethodType\":5,\"Default\":false}]"
+                },
+                {
+                    "displayName": "Included Updated Properties",
+                    "oldValue": null,
+                    "newValue": "\"StrongAuthenticationMethod\""
+                },
+                {
+                    "displayName": "TargetId.UserType",
+                    "oldValue": null,
+                    "newValue": "\"Member\""
+                }
+            ]
+        }
+    ],
+    "additionalDetails": [
+        {
+            "key": "UserType",
+            "value": "Member"
+        }
+    ]
 }
 ```
 

@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.MessageRequestBuilderGetQueryParameters{
-	Expand: "singleValueExtendedProperties($filter=id%20eq%20'String%20%7B66f5a359-4659-4830-9070-00047ec6ac6e%7D%20Name%20Color')",
+requestParameters := &graphconfig.MessageRequestBuilderGetQueryParameters{
+	Expand: [] string {"singleValueExtendedProperties($filter=id%20eq%20'String%20%7B66f5a359-4659-4830-9070-00047ec6ac6e%7D%20Name%20Color')"},
 }
-options := &msgraphsdk.MessageRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MessageRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Me().MessagesById("message-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```
