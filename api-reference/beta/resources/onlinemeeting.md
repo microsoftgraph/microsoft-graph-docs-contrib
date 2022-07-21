@@ -118,6 +118,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
   "allowedPresenters": "String",
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
   "allowTeamworkReactions": "Boolean",
+  "anonymizeIdentityForRoles": "attendee",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
