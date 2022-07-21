@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [internalDoma
 <!-- {
   "blockType": "request",
   "name": "get_internaldomainfederation",
-  "sampleKeys": ["contoso.com"]
+  "sampleKeys": ["contoso.com", "6601d14b-d113-8f64-fda2-9b5ddda18ecc"]
 }
 -->
 ``` http

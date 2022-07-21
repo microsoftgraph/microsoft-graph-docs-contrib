@@ -230,7 +230,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2 : List hosted content for message in a chat
+### Example 3: List hosted content for message in a chat
 
 #### Request
 

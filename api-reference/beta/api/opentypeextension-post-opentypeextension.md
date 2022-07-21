@@ -547,7 +547,8 @@ in turn contains the **body** of the new post, and the following data for the ex
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_opentypeextension_5"
+  "name": "post_opentypeextension_5",
+  "sampleKeys": ["37df2ff0-0de0-4c33-8aee-75289364aef6"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/conversations

@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 <!-- {
   "blockType": "request",
   "name": "delete_externalgroup",
-  "sampleKeys": ["31bea3d537902000", "contosohr"]
+  "sampleKeys": ["contosohr", "31bea3d537902000"]
 }
 -->
 

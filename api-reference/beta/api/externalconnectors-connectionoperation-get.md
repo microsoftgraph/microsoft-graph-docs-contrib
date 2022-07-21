@@ -59,7 +59,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_connectionoperation",
-  "sampleKeys": ["contosohr"]
+  "sampleKeys": ["contosohr", "3ed1595a-4bae-43c2-acda-ef973e581323"]
 }-->
 
 ```msgraph-interactive
