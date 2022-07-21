@@ -484,7 +484,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "findTenantInformationByDomainName",
           "ChangeType": "Addition",
-          "Description": "Added the [findTenantInformationByDomainName](https://docs.microsoft.com/en-us/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-beta) resource",
+          "Description": "Added the [findTenantInformationByDomainName](https://docs.microsoft.com/en-us/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-beta) method.",
           "Target": "findTenantInformationByDomainName"
         },
         {
@@ -492,7 +492,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "findTenantInformationByTenantId",
           "ChangeType": "Addition",
-          "Description": "Added the [findTenantInformationByTenantId](https://docs.microsoft.com/en-us/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-beta) resource",
+          "Description": "Added the [findTenantInformationByTenantId](https://docs.microsoft.com/en-us/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-beta) method.",
           "Target": "findTenantInformationByTenantId"
         }
       ],
