@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstance resource type"
 description: "Represents a recurrence of an accessReviewScheduleDefinition object."
-author: "isabelleatmsft"
+author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

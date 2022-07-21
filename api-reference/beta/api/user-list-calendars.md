@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [Calendar](../resources/calendar.md) objects in the response body.
 ## Example
 ### Request
-Here is an example of the request.
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -64,16 +64,13 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendars
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-calendars-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-calendars-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-get-calendars-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -88,10 +85,15 @@ GET https://graph.microsoft.com/beta/me/calendars
 [!INCLUDE [sample-code](../includes/snippets/powershell/user-get-calendars-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-get-calendars-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

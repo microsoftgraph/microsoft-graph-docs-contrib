@@ -7,18 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewExternalItem()
-requestBody.SetAcl( []Acl {
-	msgraphsdk.NewAcl(),
-	SetAdditionalData(map[string]interface{}{
-		"type": "everyone",
-		"value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
-		"accessType": "grant",
-	}
+requestBody := graphmodels.NewExternalItem()
+
+
+acl := graphmodels.NewAcl()
+type := graphmodels.EVERYONE_ACLTYPE 
+acl.SetType(&type) 
+value := "67a141d8-cf4e-4528-ba07-bed21bfacd2d"
+acl.SetValue(&value) 
+accessType := graphmodels.GRANT_ACCESSTYPE 
+acl.SetAccessType(&accessType) 
+
+acl := []graphmodels.Aclable {
+	acl,
+
 }
-externalConnectionId := "externalConnection-id"
-externalItemId := "externalItem-id"
-graphClient.External().ConnectionsById(&externalConnectionId).ItemsById(&externalItemId).Patch(requestBody)
+requestBody.SetAcl(acl)
+
+graphClient.External().ConnectionsById("externalConnection-id").ItemsById("externalItem-id").Patch(requestBody)
 
 
 ```

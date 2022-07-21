@@ -7,40 +7,49 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewCustomSecurityAttributeDefinition()
+requestBody := graphmodels.NewCustomSecurityAttributeDefinition()
 attributeSet := "Engineering"
-requestBody.SetAttributeSet(&attributeSet)
+requestBody.SetAttributeSet(&attributeSet) 
 description := "Active projects for user"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 isCollection := true
-requestBody.SetIsCollection(&isCollection)
+requestBody.SetIsCollection(&isCollection) 
 isSearchable := true
-requestBody.SetIsSearchable(&isSearchable)
+requestBody.SetIsSearchable(&isSearchable) 
 name := "Project"
-requestBody.SetName(&name)
+requestBody.SetName(&name) 
 status := "Available"
-requestBody.SetStatus(&status)
+requestBody.SetStatus(&status) 
 type := "String"
-requestBody.SetType(&type)
+requestBody.SetType(&type) 
 usePreDefinedValuesOnly := true
-requestBody.SetUsePreDefinedValuesOnly(&usePreDefinedValuesOnly)
-requestBody.SetAllowedValues( []AllowedValue {
-	msgraphsdk.NewAllowedValue(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "Alpine",
-		"isActive": true,
-	}
-	msgraphsdk.NewAllowedValue(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "Baker",
-		"isActive": true,
-	}
-	msgraphsdk.NewAllowedValue(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "Cascade",
-		"isActive": true,
-	}
+requestBody.SetUsePreDefinedValuesOnly(&usePreDefinedValuesOnly) 
+
+
+allowedValue := graphmodels.NewAllowedValue()
+id := "Alpine"
+allowedValue.SetId(&id) 
+isActive := true
+allowedValue.SetIsActive(&isActive) 
+allowedValue1 := graphmodels.NewAllowedValue()
+id := "Baker"
+allowedValue1.SetId(&id) 
+isActive := true
+allowedValue1.SetIsActive(&isActive) 
+allowedValue2 := graphmodels.NewAllowedValue()
+id := "Cascade"
+allowedValue2.SetId(&id) 
+isActive := true
+allowedValue2.SetIsActive(&isActive) 
+
+allowedValues := []graphmodels.AllowedValueable {
+	allowedValue,
+	allowedValue1,
+	allowedValue2,
+
 }
+requestBody.SetAllowedValues(allowedValues)
+
 result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(requestBody)
 
 

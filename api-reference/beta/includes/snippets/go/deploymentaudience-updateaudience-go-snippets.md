@@ -7,37 +7,65 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAddMembers( []UpdatableAsset {
-	msgraphsdk.NewUpdatableAsset(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-		"id": "String (identifier)",
-	}
+requestBody := graphmodels.NewUpdateAudiencePostRequestBody()
+
+
+ := graphmodels.New()
+additionalData := map[string]interface{}{
+	"@odata.type" : "#microsoft.graph.windowsUpdates.azureADDevice", 
+	"id" : "String (identifier)", 
 }
-requestBody.SetRemoveMembers( []UpdatableAsset {
-	msgraphsdk.NewUpdatableAsset(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-		"id": "String (identifier)",
-	}
+.SetAdditionalData(additionalData)
+
+addMembers := []graphmodels.Objectable {
+	,
+
 }
-requestBody.SetAddExclusions( []UpdatableAsset {
-	msgraphsdk.NewUpdatableAsset(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-		"id": "String (identifier)",
-	}
+requestBody.SetAddMembers(addMembers)
+
+
+ := graphmodels.New()
+additionalData := map[string]interface{}{
+	"@odata.type" : "#microsoft.graph.windowsUpdates.azureADDevice", 
+	"id" : "String (identifier)", 
 }
-requestBody.SetRemoveExclusions( []UpdatableAsset {
-	msgraphsdk.NewUpdatableAsset(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-		"id": "String (identifier)",
-	}
+.SetAdditionalData(additionalData)
+
+removeMembers := []graphmodels.Objectable {
+	,
+
 }
-deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Audience().UpdateAudience(deployment-id).Post(requestBody)
+requestBody.SetRemoveMembers(removeMembers)
+
+
+ := graphmodels.New()
+additionalData := map[string]interface{}{
+	"@odata.type" : "#microsoft.graph.windowsUpdates.azureADDevice", 
+	"id" : "String (identifier)", 
+}
+.SetAdditionalData(additionalData)
+
+addExclusions := []graphmodels.Objectable {
+	,
+
+}
+requestBody.SetAddExclusions(addExclusions)
+
+
+ := graphmodels.New()
+additionalData := map[string]interface{}{
+	"@odata.type" : "#microsoft.graph.windowsUpdates.azureADDevice", 
+	"id" : "String (identifier)", 
+}
+.SetAdditionalData(additionalData)
+
+removeExclusions := []graphmodels.Objectable {
+	,
+
+}
+requestBody.SetRemoveExclusions(removeExclusions)
+
+graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudience(deployment-id).Post(requestBody)
 
 
 ```

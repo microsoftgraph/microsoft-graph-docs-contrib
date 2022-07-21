@@ -1,6 +1,6 @@
 ---
 title: "request resource type"
-description: "An abstract entity type to model the asynchronized request workflow to create, update, and delete an object."
+description: "Represents the details of a request in PIM or userConsentRequests."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,26 +13,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract entity type to model the asynchronized request workflow to create, update, and delete an object.
+Represents the details of a request in [PIM](privilegedidentitymanagementv3-overview.md) or [user consent request](userconsentrequest.md) APIs.
 
-Inherits from [entity](entity.md).
+Inherits from [entity](../resources/entity.md).
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalId|String|The identifier of the approval of the request.|
-|completedDateTime|DateTimeOffset|The request completion date time.|
-|createdBy|[identitySet](identityset.md)|The user who created this request.|
+|approvalId|String| The identifier of the approval of the request.  |
+|completedDateTime|DateTimeOffset| The request completion date time. |
+|createdBy|[identitySet](../resources/identityset.md)|The principal that created the request.|
 |createdDateTime|DateTimeOffset|The request creation date time.|
 |customData|String|Free text field to define any custom data for the request. Not used.|
-|status|String|The status of the request. Not nullable. The possible values are: `Canceled`, `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`, `Provisioned`, `Revoked`, and `ScheduleCreated`. Not nullable.|
-|id|String|Identifier of the request. Read-only. Not nullable. Inherited from [entity](entity.md).|
+|id|String|The unique identifier for the request object. Inherited from [entity](../resources/entity.md).|
+|status|String| The status of the request. Not nullable. The possible values are: `Canceled`, `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`, `Provisioned`, `Revoked`, and `ScheduleCreated`. Not nullable. |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|approval|[approval](../resources/approval.md)|Represents the approval object that the request is linked to.|
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -48,14 +46,13 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.request",
   "id": "String (identifier)",
-  "approvalId": "String (identifier)",
+  "status": "String",
   "completedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
+  "approvalId": "String",
+  "customData": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
-  "customData": "String",
-  "status": "String",
+  }
 }
 ```
-

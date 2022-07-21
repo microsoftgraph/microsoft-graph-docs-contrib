@@ -7,27 +7,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewDeployment()
-settings := msgraphsdk.NewDeploymentSettings()
-requestBody.SetSettings(settings)
-monitoring := msgraphsdk.NewMonitoringSettings()
+requestBody := graphmodels.NewDeployment()
+"@odata.type" := "#microsoft.graph.windowsUpdates.deployment"
+requestBody.Set"@odata.type"(&"@odata.type") 
+settings := graphmodels.NewDeploymentSettings()
+"@odata.type" := "microsoft.graph.windowsUpdates.windowsDeploymentSettings"
+settings.Set"@odata.type"(&"@odata.type") 
+monitoring := graphmodels.NewMonitoringSettings()
+
+
+monitoringRule := graphmodels.NewMonitoringRule()
+signal := graphmodels.ROLLBACK_MONITORINGSIGNAL 
+monitoringRule.SetSignal(&signal) 
+threshold := int32(5)
+monitoringRule.SetThreshold(&threshold) 
+action := graphmodels.PAUSEDEPLOYMENT_MONITORINGACTION 
+monitoringRule.SetAction(&action) 
+
+monitoringRules := []graphmodels.MonitoringRuleable {
+	monitoringRule,
+
+}
+monitoring.SetMonitoringRules(monitoringRules)
 settings.SetMonitoring(monitoring)
-monitoring.SetMonitoringRules( []MonitoringRule {
-	msgraphsdk.NewMonitoringRule(),
-	SetAdditionalData(map[string]interface{}{
-		"signal": "rollback",
-		"threshold": ,
-		"action": "pauseDeployment",
-	}
-}
-settings.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-}
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.windowsUpdates.deployment",
-}
-deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Patch(requestBody)
+requestBody.SetSettings(settings)
+
+graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Patch(requestBody)
 
 
 ```

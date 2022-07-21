@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test",
-	"@odata.type": "#microsoft.graph.identityProvider",
+requestBody := graphmodels.New$refPostRequestBody()
+additionalData := map[string]interface{}{
+	"@odata.id" : "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test", 
+	"@odata.type" : "#microsoft.graph.identityProvider", 
 }
-b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
-identityProviderBaseId := "identityProviderBase-id"
-graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserFlowIdentityProvidersById(&identityProviderBaseId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").UserFlowIdentityProviders().$ref().Patch(requestBody)
 
 
 ```

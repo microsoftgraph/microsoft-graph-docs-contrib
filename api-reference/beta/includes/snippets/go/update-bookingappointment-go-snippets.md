@@ -7,40 +7,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewBookingAppointment()
-end := msgraphsdk.NewDateTimeTimeZone()
+requestBody := graphmodels.NewBookingAppointment()
+"@odata.type" := "#microsoft.graph.bookingAppointment"
+requestBody.Set"@odata.type"(&"@odata.type") 
+end := graphmodels.NewDateTimeTimeZone()
+"@odata.type" := "#microsoft.graph.dateTimeTimeZone"
+end.Set"@odata.type"(&"@odata.type") 
+dateTime := "2018-05-06T12:30:00.0000000+00:00"
+end.SetDateTime(&dateTime) 
+timeZone := "UTC"
+end.SetTimeZone(&timeZone) 
 requestBody.SetEnd(end)
+invoiceDate := graphmodels.NewDateTimeTimeZone()
+"@odata.type" := "#microsoft.graph.dateTimeTimeZone"
+invoiceDate.Set"@odata.type"(&"@odata.type") 
 dateTime := "2018-05-06T12:30:00.0000000+00:00"
-end.SetDateTime(&dateTime)
+invoiceDate.SetDateTime(&dateTime) 
 timeZone := "UTC"
-end.SetTimeZone(&timeZone)
-end.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.dateTimeTimeZone",
-}
-invoiceDate := msgraphsdk.NewDateTimeTimeZone()
+invoiceDate.SetTimeZone(&timeZone) 
 requestBody.SetInvoiceDate(invoiceDate)
-dateTime := "2018-05-06T12:30:00.0000000+00:00"
-invoiceDate.SetDateTime(&dateTime)
-timeZone := "UTC"
-invoiceDate.SetTimeZone(&timeZone)
-invoiceDate.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.dateTimeTimeZone",
-}
-start := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetStart(start)
+start := graphmodels.NewDateTimeTimeZone()
+"@odata.type" := "#microsoft.graph.dateTimeTimeZone"
+start.Set"@odata.type"(&"@odata.type") 
 dateTime := "2018-05-06T12:00:00.0000000+00:00"
-start.SetDateTime(&dateTime)
+start.SetDateTime(&dateTime) 
 timeZone := "UTC"
-start.SetTimeZone(&timeZone)
-start.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.dateTimeTimeZone",
-}
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.bookingAppointment",
-}
-bookingBusinessId := "bookingBusiness-id"
-bookingAppointmentId := "bookingAppointment-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).AppointmentsById(&bookingAppointmentId).Patch(requestBody)
+start.SetTimeZone(&timeZone) 
+requestBody.SetStart(start)
+
+graphClient.BookingBusinessesById("bookingBusiness-id").AppointmentsById("bookingAppointment-id").Patch(requestBody)
 
 
 ```

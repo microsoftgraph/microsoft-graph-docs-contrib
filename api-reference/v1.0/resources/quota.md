@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Quota
+title: quota
 ms.localizationpriority: medium
-description: "The quota resource provides details about space constrains on a Drive resource."
-ms.prod: ""
+description: "The quota resource provides details about space constrains on a drive resource."
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# Quota resource type
+# quota resource type
 
 Namespace: microsoft.graph
 
-The **quota** resource provides details about space constrains on a [Drive](drive.md) resource.
+The **quota** resource provides details about space constrains on a [drive](drive.md) resource.
 
 ## JSON representation
 

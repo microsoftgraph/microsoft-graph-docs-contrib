@@ -185,6 +185,56 @@
       "CreatedDateTime": "2022-03-30T23:33:05.8733913Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "40f1802b-57ee-463b-98f0-3127c867310f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "delegatedAdminRelationshipOperationStatus",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **delegatedAdminRelationshipOperationStatus** enumeration type.",
+          "Target": "delegatedAdminRelationshipOperationStatus"
+        },
+        {
+          "Id": "40f1802b-57ee-463b-98f0-3127c867310f",
+          "ApiChange": "Member",
+          "ChangedApiName": "succeeded",
+          "ChangeType": "Addition",
+          "Description": "Added the **succeeded** member to the **delegatedAdminRelationshipRequestStatus** enumeration.",
+          "Target": "delegatedAdminRelationshipRequestStatus"
+        },
+        {
+          "Id": "40f1802b-57ee-463b-98f0-3127c867310f",
+          "ApiChange": "Member",
+          "ChangedApiName": "complete",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `complete` member from the **delegatedAdminRelationshipRequestStatus** enumeration.",
+          "Target": "delegatedAdminRelationshipRequestStatus"
+        },
+        {
+          "Id": "40f1802b-57ee-463b-98f0-3127c867310f",
+          "ApiChange": "Property",
+          "ChangedApiName": "status",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **status** property of [delegatedAdminRelationshipOperation](https://docs.microsoft.com/graph/api/resources/delegatedadminrelationshipoperation?view=graph-rest-beta) from **delegatedAdminRelationshipOperationStatus** to **longRunningOperationStatus**.",
+          "Target": "delegatedAdminRelationshipOperation"
+        },
+        {
+          "Id": "40f1802b-57ee-463b-98f0-3127c867310f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "longRunningOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **longRunningOperationStatus** enumeration type.",
+          "Target": "longRunningOperationStatus"
+        }
+      ],
+      "Id": "40f1802b-57ee-463b-98f0-3127c867310f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-17T11:15:46.2343525Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }

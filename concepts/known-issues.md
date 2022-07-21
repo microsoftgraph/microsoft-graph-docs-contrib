@@ -1,6 +1,6 @@
 ---
 title: "Known issues with Microsoft Graph"
-description: "This article describes known issues with Microsoft Graph."
+description: "This article describes known issues and limitations with Microsoft Graph and provides workarounds when possible."
 author: "MSGraphDocsVTeam"
 ms.localizationpriority: high
 ---
@@ -17,7 +17,7 @@ For information about the latest updates to the Microsoft Graph API, see the [Mi
 
 ### Some limitations apply to the application and servicePrincipal resources
 
-Changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) resources are currently in development. The following is a summary of current limitations and in-development API features.
+Changes to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources are currently in development. The following is a summary of current limitations and in-development API features.
 
 Current limitations:
 
@@ -52,7 +52,8 @@ We are working to fix this issue as soon as possible, so that pre-consent will w
 
 In the meantime, to unblock development and testing, you can use the following workaround.
 
->**Note:** This is not a permanent solution and is only intended to unblock development. This workaround will not be required after the issue is fixed. This workaround does not need to be undone after the fix is in place.
+> [!NOTE]
+> This is not a permanent solution and is only intended to unblock development. This workaround will not be required after the issue is fixed. This workaround does not need to be undone after the fix is in place.
 
 1. Open an Azure AD v2 PowerShell session and connect to your `customer` tenant by entering your admin credentials into the sign-in window. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).
 
@@ -153,6 +154,10 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 ### View meeting details menu is not available on Microsoft Teams client
 
 The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
+
+### Presenter role cannot be assigned to non-Azure AD participants
+
+Assigning the `presenter` or `coorganizer` role to users who are not registered in Azure Active Directory is not currently supported. Such requests will be accepted by the [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) method, but the role will not be applied when the participant joins the online meeting. The [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) method will reject the request and return a `400 Bad Request` error. 
 
 ## Contacts
 
@@ -313,6 +318,10 @@ The [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) API might re
 
 In the future, either permission will be sufficient to call both methods.
 
+### Linux-based devices can't be updated by an app with application permissions
+
+When an app with application permissions attempts to update any properties of the device object where the **operationSystem** property is `linux`, apart from the **extensionAttributes** property, the [Update device](/graph/api/device-update) API returns a `400 Bad request` error code with the error message "Properties other than ExtendedAttribute1..15 can be modified only on windows devices.". Use delegated permissions to update the properties of Linux-based devices.
+
 ## JSON batching
 
 ### Nested batches are not supported
@@ -429,6 +438,13 @@ GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 ```
 To solve this issue, remove the `/tenants/{tenant-id}` part from the URL before you call the API to access the cross-tenant shared [channel](/graph/api/resources/channel.md).
 
+### TeamworkAppSettings permissions are not visible in the Azure portal
+The permissions TeamworkAppSettings.Read.All and TeamworkAppSettings.ReadWrite.All are currently being rolled out and might not be visible in Azure Portal yet. To consent to these permissions, please use an authorize request as follows:
+
+```http
+GET https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authorize?client_id={client-app-id}&response_type=code&scope=https://graph.microsoft.com/TeamworkAppSettings.ReadWrite.All
+```
+
 ## Users
 
 ### Encode number (#) symbols in userPrincipalName
@@ -461,6 +477,10 @@ The [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions) shoul
 ### Incomplete objects are returned when using getByIds request
 
 Requesting objects using [Get directory objects from a list of IDs](/graph/api/directoryobject-getbyids) should return full objects. However, currently [user](/graph/api/resources/user) objects on the v1.0 endpoint are returned with a limited set of properties. As a temporary workaround, when you use the operation in combination with the `$select` query option, more complete [user](/graph/api/resources/user) objects will be returned. This behavior is not in accordance with the OData specifications. Because this behavior might be updated in the future, use this workaround only when you provide `$select=` with all the properties you are interested in, and only if future breaking changes to this workaround are acceptable.
+
+### showInAddressList property is out of sync with Microsoft Exchange
+
+When querying users through Microsoft Graph, the **showInAddressList** property may not indicate the same status shown in Microsoft Exchange. We recommend you manage this functionality directly with Microsoft Exchange through the Microsoft 365 admin center and not to use this property in Microsoft Graph.
 
 ## Query parameters 
 

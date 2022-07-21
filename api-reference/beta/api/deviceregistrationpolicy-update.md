@@ -1,7 +1,7 @@
 ---
 title: "Update deviceRegistrationPolicy"
 description: "Update the properties of a deviceRegistrationPolicy object."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -67,6 +67,8 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_deviceregistrationpolicy"
@@ -96,6 +98,21 @@ Content-Type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-deviceregistrationpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-deviceregistrationpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-deviceregistrationpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
