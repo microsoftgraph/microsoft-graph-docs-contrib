@@ -7,13 +7,13 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Reprovision a cloudpc for user
+# Reprovision a Cloud PC for user
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reprovision a specific [cloudPC](../resources/cloudpc.md) device that is attributed to the signed-in user.
+Reprovision a specific [Cloud PC](../resources/cloudpc.md) device that is attributed to the signed-in user.
 
 ## Permissions
 

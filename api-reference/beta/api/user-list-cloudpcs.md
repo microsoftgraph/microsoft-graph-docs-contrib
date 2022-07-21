@@ -1,18 +1,18 @@
 ---
-title: "List cloudPCs for user"
-description: "List the cloudPC devices that are attributed to the signed-in user."
+title: "List Cloud PCs for user"
+description: "List the Cloud PCs devices that are attributed to the signed-in user."
 author: "andrewku0409"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# List cloudPCs
+# List Cloud PCs
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user. 
+List the [Cloud PC](../resources/cloudpc.md) devices that are attributed to the signed-in user. 
 
 >[!NOTE]
 >This operation returns only the following properties: **id**, **displayName**, **imageDisplayName**, **servicePlanId**, **servicePlanName**, **servicePlanType**, **status**, **lastModifiedDateTime**, **aadDeviceId**, **statusDetails**, **gracePeriodEndDateTime**.
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [cloudPC](../resources/cloudpc.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [Cloud PC](../resources/cloudpc.md) objects in the response body.
 
 ## Examples
 

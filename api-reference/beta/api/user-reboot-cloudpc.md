@@ -7,13 +7,13 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Reboot cloudPC for user
+# Reboot Cloud PC for user
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reboot a specific [cloudPC](../resources/cloudpc.md) device that is attributed to the signed-in user.
+Reboot a specific [Cloud PC](../resources/cloudpc.md) device that is attributed to the signed-in user.
 
 ## Permissions
 
