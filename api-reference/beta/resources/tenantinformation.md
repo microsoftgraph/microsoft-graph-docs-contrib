@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Information about your Azure AD tenant that is publicly displayed to users in other Azure AD tenants.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 | defaultDomainName | String | Primary domain name of an Azure AD tenant. |
@@ -24,10 +25,13 @@ Information about your Azure AD tenant that is publicly displayed to users in ot
 | tenantId | String | Unique identifier of an Azure AD tenant. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -35,6 +39,7 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.tenantInformation",
@@ -44,4 +49,3 @@ The following is a JSON representation of the resource.
   "tenantId": "String"
 }
 ```
-

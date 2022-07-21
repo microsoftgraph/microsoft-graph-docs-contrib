@@ -219,14 +219,6 @@
         {
           "Id": "ef87b9b4-839f-44a5-b0d7-956a9869307c",
           "ApiChange": "Resource",
-          "ChangedApiName": "tenantRelationshipRoot",
-          "ChangeType": "Addition",
-          "Description": "Added the [tenantRelationshipRoot](https://docs.microsoft.com/en-us/graph/api/resources/tenantrelationshiproot?view=graph-rest-beta) resource and related methods. This resource exposes methods to retrieve basic identification information about Azure AD tenants.",
-          "Target": "tenantRelationshipRoot"
-        },
-        {
-          "Id": "ef87b9b4-839f-44a5-b0d7-956a9869307c",
-          "ApiChange": "Resource",
           "ChangedApiName": "tenantInformation",
           "ChangeType": "Addition",
           "Description": "Added the [tenantInformation](https://docs.microsoft.com/en-us/graph/api/resources/tenantinformation?view=graph-rest-beta) resource. This complex type exposes basic identification information for your Azure AD tenant that is publicly displayed to users in other Azure AD tenants.",
@@ -237,8 +229,8 @@
           "ApiChange": "Permission",
           "ChangedApiName": "CrossTenantInformation.ReadBasic.All",
           "ChangeType": "Addition",
-          "Description": "Added the `CrossTenantInformation.ReadBasic.All` delegated and application permissions to read basic tenant information through the methods exposed by the [tenantRelationshipRoot](https://docs.microsoft.com/en-us/graph/api/resources/tenantrelationshiproot?view=graph-rest-beta) resource.",
-          "Target": "tenantRelationshipRoot"
+          "Description": "Added the `CrossTenantInformation.ReadBasic.All` delegated and application permissions to read basic tenant information through the methods exposed by the [findTenantInformation](https://docs.microsoft.com/en-us/graph/api/resources/findtenantinformation?view=graph-rest-beta) resource.",
+          "Target": "findTenantInformation"
         },
         {
           "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
