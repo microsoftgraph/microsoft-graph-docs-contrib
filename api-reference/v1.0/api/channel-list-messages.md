@@ -80,7 +80,8 @@ The following is an example of the request with $top query option and without op
   "blockType": "request",
   "name": "get_listchannelmessages_1"
 }-->
-```msgraph-interactive
+
+```http
 GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?top=3
 ```
 
@@ -279,7 +280,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_listchannelmessages_2"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?$top=3
 
 Prefer: include-unknown-enum-members
@@ -481,7 +482,7 @@ The following request uses `$top` to return one channel message per page, and `$
   "blockType": "request",
   "name": "get_listchannelmessages_3"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?$top=1&$expand=replies
 ```
 

@@ -57,7 +57,7 @@ The following is an example of the request.
   "name": "get_certificatebasedauthconfiguration"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfiguration/{id}
 ```
 
