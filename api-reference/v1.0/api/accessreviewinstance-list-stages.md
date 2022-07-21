@@ -1,5 +1,5 @@
 ---
-title: "List stages"
+title: "List stages (of an access review)"
 description: "Retrieve the stages in a multi-stage access review instance."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List stages
+# List stages (of an access review)
 Namespace: microsoft.graph
 
 Retrieve the stages in a multi-stage access review instance.
