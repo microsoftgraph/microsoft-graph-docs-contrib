@@ -1854,7 +1854,7 @@
 		"Id": "c666366b-0cc2-49eb-b433-921507a1206d",
 		"Cloud": "prd",
 		"Version": "beta",
-		"CreatedDateTime": "2022-06-29T00:00:00",
+		"CreatedDateTime": "2022-07-22T00:00:00",
 		"WorkloadArea": "Reports",
 		"SubArea": "Microsoft 365 usage reports"
 	}
