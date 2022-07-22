@@ -11273,6 +11273,56 @@
     {
       "ChangeList": [
         {
+          "Id": "249d7bc8-219c-44b5-9738-c1134b4c1e24",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "featureTargetType",
+          "ChangeType": "Addition",
+          "Description": "Added the **featureTargetType** enumeration type.",
+          "Target": "featureTargetType"
+        },
+        {
+          "Id": "249d7bc8-219c-44b5-9738-c1134b4c1e24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethodFeatureConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationMethodFeatureConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodFeatureConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "authenticationMethodFeatureConfiguration"
+        },
+        {
+          "Id": "249d7bc8-219c-44b5-9738-c1134b4c1e24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "featureTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [featureTarget](https://docs.microsoft.com/en-us/graph/api/resources/featureTarget?view=graph-rest-1.0) resource type.",
+          "Target": "featureTarget"
+        },
+        {
+          "Id": "249d7bc8-219c-44b5-9738-c1134b4c1e24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorFeatureSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAuthenticatorFeatureSettings](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-1.0) resource type.",
+          "Target": "microsoftAuthenticatorFeatureSettings"
+        },
+        {
+          "Id": "249d7bc8-219c-44b5-9738-c1134b4c1e24",
+          "ApiChange": "Property",
+          "ChangedApiName": "featureSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `featureSettings` property to the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "249d7bc8-219c-44b5-9738-c1134b4c1e24",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-06T22:24:13.4693265Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "58b7beda-c767-4468-914b-23774fe6f181",
           "ApiChange": "EnumType",
           "ChangedApiName": "federatedIdpMfaBehavior",

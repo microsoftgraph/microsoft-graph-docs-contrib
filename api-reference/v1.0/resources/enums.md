@@ -1934,6 +1934,15 @@ Possible values for user account types (group membership), per Windows definitio
 |customer|
 |unknownFutureValue|
 
+### featureTargetType values 
+
+|Member|
+|:---|
+|group|
+|administrativeUnit|
+|role|
+|unknownFutureValue|
+
 ### serviceHealthStatus values 
 
 |Member|
