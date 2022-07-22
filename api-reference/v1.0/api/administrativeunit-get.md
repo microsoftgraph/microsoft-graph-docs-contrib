@@ -61,7 +61,7 @@ Here is an example of the request.
   "name": "get_administrativeunit"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9-4847-bbf2-dde106594bf4
 ```
 
 # [C#](#tab/csharp)
