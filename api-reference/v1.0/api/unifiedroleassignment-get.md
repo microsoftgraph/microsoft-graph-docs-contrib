@@ -86,7 +86,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReELhrmgjL6CxJqkHAeKoLUSA-11
 ```
 
 # [C#](#tab/csharp)
@@ -135,10 +135,10 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleAssignments/$entity",
-    "id": "lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1",
-    "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
-    "principalId": "4ab0b690-479b-47ff-af8f-2576cf521872",
-    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0"
+    "id": "lAPpYvVpN0KRkAEhdxReELhrmgjL6CxJqkHAeKoLUSA-1",
+    "principalId": "089a6bb8-e8cb-492c-aa41-c078aa0b5120",
+    "directoryScopeId": "/",
+    "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10"
 }
 ```
 
@@ -156,7 +156,7 @@ The following is an example of the request with the `$expand` query parameter.
   "name": "get_unifiedroleassignment"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition
 ```
 
