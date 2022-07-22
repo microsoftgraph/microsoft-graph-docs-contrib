@@ -32,6 +32,8 @@ For details about how to trigger a task, see [Enable pull printing](./universal-
 
 >[!NOTE]
 >For listening to the change notifications for JobFetchable event, a **printTaskDefinition** resource is not required.
+>
+>The application should handle duplicate notifications.
 
 ### Create an application to listen to notifications
 
@@ -199,9 +201,11 @@ For details, see [Notification endpoint validation](./webhooks.md#notification-e
 ### What are applications expected to do after receiving a change notification?
 Applications should process and acknowledge every change notification they receive. For details, see [Processing the change notification](./webhooks.md#processing-the-change-notification).
 
+### How can I validate the authenticity of notifications?
+The authenticity of notifications can either be validated using **clientState** value as described in [Processing the change notification](./webhooks.md#processing-the-change-notification) or [validating tokens in the change notification](./webhooks-with-resource-data.md#validation-tokens-in-the-change-notification).
+
 ### How can I get a list of active subscriptions?
 For details about how to retrieve a list of webhook subscriptions, see [List subscriptions](/graph/api/subscription-list).
-
 
 ## See also
 
