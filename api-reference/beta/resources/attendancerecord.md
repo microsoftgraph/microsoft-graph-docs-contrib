@@ -51,7 +51,9 @@ The following is a JSON representation of the resource.
   "totalAttendanceInSeconds": "Int32",
   "role": "String(None|Attendee|Presenter|Organizer)",
   "registrantId": "String",
-  "identity": {"@odata.type": "#microsoft.graph.identity"},
+  "identity": {
+    "@odata.type": "#microsoft.graph.identity"
+  },
   "attendanceIntervals": [
     {
       "@odata.type": "#microsoft.graph.attendanceInterval"
