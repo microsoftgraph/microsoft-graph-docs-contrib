@@ -70,7 +70,7 @@ If successful, this method returns a `201 Created` response code and a [temporar
   "name": "create_temporaryaccesspassauthenticationmethod_from_"
 }
 -->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods
 Content-Type: application/json
 

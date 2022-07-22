@@ -54,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_subscribedskus"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/subscribedSkus
 ```
 
