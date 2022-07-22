@@ -7,13 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewChecklistItem()
+requestBody := graphmodels.NewChecklistItem()
 displayName := "buy cake"
-requestBody.SetDisplayName(&displayName)
-baseTaskListId := "baseTaskList-id"
-baseTaskId := "baseTask-id"
-checklistItemId := "checklistItem-id"
-graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).ChecklistItemsById(&checklistItemId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+graphClient.Me().Tasks().ListsById("baseTaskList-id").TasksById("baseTask-id").ChecklistItemsById("checklistItem-id").Patch(requestBody)
 
 
 ```

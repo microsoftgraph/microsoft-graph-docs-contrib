@@ -11,6 +11,30 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### bookingsAvailabilityStatus values
+|Member|
+|:---|
+|available|
+|busy|
+|slotsAvailable|
+|outOfOffice|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetConfigurationAccessType values
+
+|Member|
+|:---|
+|allowed|
+|blocked|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
 ### federatedIdpMfaBehavior values
 |Member|
 |:---|

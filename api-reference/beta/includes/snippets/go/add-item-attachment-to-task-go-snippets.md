@@ -7,14 +7,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAttachment()
+requestBody := graphmodels.NewAttachment()
+"@odata.type" := "#microsoft.graph.itemAttachment"
+requestBody.Set"@odata.type"(&"@odata.type") 
 name := "Holiday event"
-requestBody.SetName(&name)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.itemAttachment",
+requestBody.SetName(&name) 
+additionalData := map[string]interface{}{
+item := graphmodels.New()
+"@odata.type" := "microsoft.graph.event"
+item.Set"@odata.type"(&"@odata.type") 
+subject := "Discuss gifts for children"
+item.SetSubject(&subject) 
+body := graphmodels.New()
+contentType := "HTML"
+body.SetContentType(&contentType) 
+content := "Let's look for funding!"
+body.SetContent(&content) 
+	item.SetBody(body)
+start := graphmodels.New()
+dateTime := "2020-01-12T18:00:00"
+start.SetDateTime(&dateTime) 
+timeZone := "Pacific Standard Time"
+start.SetTimeZone(&timeZone) 
+	item.SetStart(start)
+end := graphmodels.New()
+dateTime := "2020-01-12T19:00:00"
+end.SetDateTime(&dateTime) 
+timeZone := "Pacific Standard Time"
+end.SetTimeZone(&timeZone) 
+	item.SetEnd(end)
+	requestBody.SetItem(item)
 }
-outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Attachments().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").Attachments().Post(requestBody)
 
 
 ```

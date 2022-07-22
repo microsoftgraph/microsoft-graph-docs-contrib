@@ -440,7 +440,6 @@ The following Graph resources are available to manage settings and features on d
 - [Managed device encryption state](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [Managed device mobile app configuration setting state](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
 - [Managed device reported app](intune-deviceconfig-manageddevicereportedapp.md)
-- [Management agent type](intune-deviceconfig-managementagenttype.md)
 - [Media content rating Australia](intune-deviceconfig-mediacontentratingaustralia.md)
 - [Media content rating Canada](intune-deviceconfig-mediacontentratingcanada.md)
 - [Media content rating France](intune-deviceconfig-mediacontentratingfrance.md)

@@ -63,7 +63,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 Content-type: application/json
-Content-length: 324
+Content-length: 861
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -72,8 +72,21 @@ Content-length: 324
     "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "Vpn Configuration Id value"
+    "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings",
+    "notifications": "showReboot",
+    "restartSettings": {
+      "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
+      "gracePeriodInMinutes": 4,
+      "countdownDisplayBeforeRestartInMinutes": 6,
+      "restartNotificationSnoozeDurationInMinutes": 10
+    },
+    "installTimeSettings": {
+      "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
+      "useLocalTime": true,
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
+    },
+    "deliveryOptimizationPriority": "foreground"
   }
 }
 ```
@@ -83,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 373
+Content-Length: 910
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -93,11 +106,26 @@ Content-Length: 373
     "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "Vpn Configuration Id value"
+    "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings",
+    "notifications": "showReboot",
+    "restartSettings": {
+      "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
+      "gracePeriodInMinutes": 4,
+      "countdownDisplayBeforeRestartInMinutes": 6,
+      "restartNotificationSnoozeDurationInMinutes": 10
+    },
+    "installTimeSettings": {
+      "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
+      "useLocalTime": true,
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
+    },
+    "deliveryOptimizationPriority": "foreground"
   }
 }
 ```
+
+
 
 
 

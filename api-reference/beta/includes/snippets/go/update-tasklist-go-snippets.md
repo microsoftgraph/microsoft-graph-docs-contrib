@@ -7,14 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewBaseTaskList()
+requestBody := graphmodels.NewBaseTaskList()
+"@odata.type" := "#microsoft.graph.taskList"
+requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "Travel Plan"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.taskList",
-}
-baseTaskListId := "baseTaskList-id"
-graphClient.Me().Tasks().ListsById(&baseTaskListId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+graphClient.Me().Tasks().ListsById("baseTaskList-id").Patch(requestBody)
 
 
 ```

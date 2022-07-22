@@ -87,9 +87,10 @@ For a POST request example, see [Request (create team in migration state)](/micr
 |incomingChannels|[channel](channel.md) collection|List of [channels](../resources/channel.md) shared with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|
-|operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 
-|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. | 
+|operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |
+|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. |
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
+|photo|[profilePhoto](../resources/profilephoto.md)| The profile photo for the team. |
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](/MicrosoftTeams/get-started-with-teams-templates). |
 
 ## JSON representation
@@ -133,4 +134,3 @@ The following is a JSON representation of the resource.
 - [Use the Microsoft Graph API to work with Microsoft Teams](teams-api-overview.md)
 - [Creating a group with a team](/graph/teams-create-group-and-team)
 - [List all teams](/graph/teams-list-all-teams)
-

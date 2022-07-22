@@ -28,6 +28,7 @@ Describes which technology this setting can be deployed with
 |microsoftSense|128|Setting can be deployed through the SENSE agent channel|
 |exchangeOnline|256|Setting can be deployed through the Exchange Online agent channel|
 |linuxMdm|1024|Setting can be deployed through the Linux Mdm channel|
+|enrollment|4096|Setting can be deployed through device enrollment.|
 |unknownFutureValue|1073741824|Sentinel member for cases where the client cannot handle the new enum values.|
 
 
