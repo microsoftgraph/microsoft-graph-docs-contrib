@@ -15,7 +15,7 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 
 | Resource | Methods |
 |:---------------|:--------|
-|[team](../resources/team.md)| [List your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](../api/group-delete.md), [clone](../api/team-clone.md), [archive](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
+|[team](../resources/team.md)| [List your teams](../api/user-list-joinedteams.md), [list associated teams](../api/associatedteaminfo-list.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](../api/group-delete.md), [clone](../api/team-clone.md), [archive](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
 |[group](../resources/group.md)| [Add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [remove owner](../api/group-delete-owners.md), [get files](drive.md), [get notebook](../resources/notebook.md), [get plans](plannergroup.md), [get calendar](event.md) |
 |[channel](../resources/channel.md)|[List](../api/channel-list.md), [create](../api/channel-post.md), [read](../api/channel-get.md), [update](../api/channel-patch.md), [delete](../api/channel-delete.md)|
 |[teamsTab](../resources/teamstab.md) |[List](../api/channel-list-tabs.md), [create](../api/channel-post-tabs.md), [read](../api/channel-get-tabs.md), [update](../api/channel-patch-tabs.md), [delete](../api/channel-delete-tabs.md) |
