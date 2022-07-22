@@ -35,9 +35,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.microsoftAuthenticatorFeatureSettings",
-  "companionAppAllowedState": {
-    "@odata.type": "microsoft.graph.authenticationMethodFeatureConfiguration"
-  },
   "numberMatchingRequiredState": {
     "@odata.type": "microsoft.graph.authenticationMethodFeatureConfiguration"
   },
