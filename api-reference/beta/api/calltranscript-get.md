@@ -17,6 +17,8 @@ Retrieve a [callTranscript](../resources/calltranscript.md) object associated wi
 
 Retrieving the transcript would return the metadata of the single transcript associated with the online meeting, where as retrieving the content of the transcript would return the stream of text associated with the transcript.
 
+> **Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
