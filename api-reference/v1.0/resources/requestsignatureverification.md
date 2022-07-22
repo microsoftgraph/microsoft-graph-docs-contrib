@@ -1,5 +1,5 @@
 ---
-title: "RequestSignatureVerification resource type"
+title: "requestSignatureVerification resource type"
 description: "Specifies whether this application requires the verification of signed authentication requests."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: resourcePageType
 ---
 
-# RequestSignatureVerification resource type
+# requestSignatureVerification resource type
 
 Namespace: microsoft.graph
 
@@ -24,6 +24,14 @@ Specifies whether this application requires the verification of signed authentic
 
 Here is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.requestSignatureVerification"
+}
+-->
 ```json
 { 
   "requestSignatureVerification": { 
