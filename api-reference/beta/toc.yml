@@ -12081,13 +12081,6 @@ items:
                 href: api/unifiedrbacresourcenamespace-list-resourceactions.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
-          - name: Tenant information
-            href: resources/tenantinformation.md
-            items:
-              - name: Find tenant by domain name
-                href: api/tenantrelationship-findtenantinformationbydomainname.md
-              - name: Find tenant by tenant ID
-                href: api/tenantrelationship-findtenantinformationbytenantid.md
           - name: Privileged identity management
             displayName: Privileged identity management, PIM
             href: resources/privilegedidentitymanagementv3-overview.md
@@ -12182,6 +12175,13 @@ items:
                   href: api/policyroot-list-rolemanagementpolicyassignments.md
                 - name: Get
                   href: api/unifiedrolemanagementpolicyassignment-get.md
+        - name: Tenant information
+          href: resources/tenantinformation.md
+          items:
+            - name: Find tenant by domain name
+              href: api/tenantrelationship-findtenantinformationbydomainname.md
+            - name: Find tenant by tenant ID
+              href: api/tenantrelationship-findtenantinformationbytenantid.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
