@@ -43,7 +43,7 @@ Provide an empty json `{}` as request body for this method.
 ## Response
 If successful, this method returns a `200 Ok` response code. The body will contain the submission model.
 
-## Example 1: When assignment is valid for submission
+## Example 1: Set up a resource folder for a submission
 The following example shows how to call this API.
 
 ### Request
@@ -134,10 +134,9 @@ Content-type: application/json
     "submittedResources": []
 }
 ```
-## Example 2: When assignment is no longer open for submission
-The following example shows how to call this API.
-Check that allowedLateSubmissions = true and the current time is less than both dueDateTime & closeDateTime
-
+## Example 2: Set up a resource folder when the assignment is no longer open for submission
+The following is an example of a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment is no longer open for submission.
+>Note: Check that allowedLateSubmissions = true and the current time is less than both dueDateTime & closeDateTime
 ### Request
 The following is an example of a request.
 
@@ -179,10 +178,9 @@ Content-type: application/json
 }
 ```
 
-## Example 3: When assignment is already in submitted state
-The following example shows how to call this API.
-Check that status != submitted
-
+## Example 3: Set up a resource folder when the assignment is already in submitted state
+The following is an example of a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment has already been submitted.
+>Note: Check that status != submitted
 ### Request
 The following is an example of a request.
 
