@@ -332,7 +332,7 @@ The following example shows how to get a list of [room](../resources/room.md) ob
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
+GET https://graph.microsoft.com/v1.0/places/Building2Rooms@M365x214355.onmicrosoft.com/microsoft.graph.roomlist/rooms
 ```
 
 
@@ -358,39 +358,30 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places('bldg2%40contoso.com')/microsoft.graph.roomList/rooms",
   "value": [
     {
-      "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
-      "emailAddress": "cf200@contoso.com",
-      "displayName": "Conf Room 200",
-      "address": {
-        "street": "4567 Main Street",
-        "city": "Buffalo",
-        "state": "NY",
-        "postalCode": "98052",
-        "countryOrRegion": "USA"
-      },
-      "geoCoordinates": {
-        "latitude": 47.640568390488625,
-        "longitude": -122.1293731033802
-      },
-      "phone": "000-000-0000",
-      "nickname": "Conf Room",
-      "label": "200",
-      "capacity": 40,
-      "building": "2",
-      "floorNumber": 2,
-      "isManaged": true,
-      "isWheelChairAccessible": false,
-      "bookingType": "standard",
-      "tags": [
-        "benches",
-        "nice view"
-      ],
-      "audioDeviceName": null,
-      "videoDeviceName": null,
-      "displayDevice": "surface hub"
+      {
+            "id": "f4119db7-9a33-4bfe-a387-4444b9e7fd54",
+            "displayName": "Conf Room Rainier",
+            "address": null,
+            "geoCoordinates": null,
+            "phone": "",
+            "nickname": "Conf Room Rainier",
+            "emailAddress": "Rainier@M365x214355.onmicrosoft.com",
+            "building": null,
+            "floorNumber": null,
+            "floorLabel": null,
+            "label": null,
+            "capacity": null,
+            "bookingType": "standard",
+            "audioDeviceName": null,
+            "videoDeviceName": null,
+            "displayDeviceName": null,
+            "isWheelChairAccessible": false,
+            "tags": []
+        }
     }
   ]
 }
+
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
