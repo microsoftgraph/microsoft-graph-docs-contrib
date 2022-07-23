@@ -54,7 +54,7 @@ Here is an example of the request.
   "name": "get_messagerule"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
+GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAABHg9by8=
 ```
 
 # [C#](#tab/csharp)
