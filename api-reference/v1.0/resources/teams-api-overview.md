@@ -11,37 +11,17 @@ doc_type: conceptualPageType
 
 Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, Shifts schedules, and more.
 
-Using Microsoft graph:
+## Common use cases
 
-- Create and manage Teams, Groups and Channels.
-- Add Tabs, manage or install apps in the Microsoft Teams app catalog.
-- Create channels and chats to send and receive chat messages. 
-- Create and receive calls, call records or retrieve meeting coordinates.
-- Connect bots to calls and implement interactive voice response (IVR).
-- Create and retrieve online meetings or check users presence and activity.
-- Create and manage Workforce integration with shifts, schedules, time cards or time off in your organization. 
-
-
-
-## Key resources in Microsoft Teams
-
-| Resource | REST resources | See also |
+| Use cases | REST resources | See also |
 :-----------|:--------|:--------|
-|team| [list your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](../api/group-delete.md) | [team](../resources/team.md) |
-|group| [add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [get files](drive.md), [get notebook](../resources/notebook.md), [get plans](plannergroup.md), [get calendar](event.md) | [group](../resources/group.md) |
-|channel| [list](../api/channel-list.md), [create](../api/channel-post.md), [read](../api/channel-get.md), [delete](../api/channel-delete.md) | [channel](../resources/channel.md) |
-|teamsTab| [list](../api/channel-list-tabs.md), [create](../api/channel-post-tabs.md), [read](../api/channel-get-tabs.md), [delete](../api/channel-delete-tabs.md) | [teamsTab](../resources/teamstab.md) |
-|teamsApp| [list](../api/appcatalogs-list-teamsapps.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|[teamsApp](../resources/teamsapp.md) |
-|teamsAppInstallation| [list](../api/team-list-installedapps.md), [install](../api/team-post-installedapps.md), [upgrade](../api/team-delete-installedapps.md), [remove](../api/team-delete-installedapps.md) | [teamsappInstallation](../resources/teamsappinstallation.md) |
-|chatMessage| [list in channel](../api/channel-list-messages.md), [list in chat](../api/chat-list-messages.md), [send](../api/chatmessage-post.md), [read in channel](../api/chatmessage-get.md), [read in chat](../api/chatmessage-get.md) | [chatMessage](../resources/chatmessage.md) |
-|chat|[list](../api/chat-list.md), [read](../api/chat-get.md), [list chat members](../api/chat-list-members.md)| [chat](../resources/chat.md) | 
-|call| [answer](../api/call-answer.md), [reject](../api/call-reject.md), [mute](../api/call-mute.md), [change screen sharing role](../api/call-changescreensharingrole.md), [invite participants](../api/participant-invite.md) | [call](../resources/call.md), [call records](../resources/callrecords-api-overview.md) |
-|online meetings|[create](../api/application-post-onlinemeetings.md), [update](../api/onlinemeeting-update.md), [attendance report](../resources/meetingattendancereport.md) | [online meetings](../resources/onlinemeeting.md), [presence](../resources/presence.md) |
-|schedule| [create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) | [schedule](../resources/schedule.md) |
-|schedulingGroup| [create](../api/schedule-post-schedulinggroups.md), [list](../api/schedule-list-schedulinggroups.md), [get](../api/schedulinggroup-get.md), [delete](../api/schedulinggroup-delete.md) | [schedulingGroup](../resources/schedulinggroup.md) |
-|shift| [create](../api/schedule-post-shifts.md), [list](../api/schedule-list-shifts.md), [get](../api/shift-get.md), [delete](../api/shift-delete.md) | [shift](../resources/shift.md) |
-|timeOff| [create](../api/schedule-post-timesoff.md), [list](../api/schedule-list-timesoff.md), [get](../api/timeoff-get.md), [replace](../api/timeoff-put.md), [delete](../api/timeoff-delete.md) | [timeOff](../resources/timeoff.md) |
-|timeOffReason| [create](../api/schedule-post-timeoffreasons.md), [list](../api/schedule-list-timeoffreasons.md), [get](../api/timeoffreason-get.md), [delete](../api/timeoffreason-delete.md) | [timeOffReason](../resources/timeoffreason.md) |
+| Create and manage Teams, Groups and Channels | [Create team](../api/team-put-teams.md), [list your teams](../api/user-list-joinedteams.md), [create](../api/channel-post.md) | [Team](../resources/team.md), [channel](../resources/channel.md), [group](../resources/group.md) |
+| Add tabs, manage or install apps in the Microsoft Teams app catalog | [Create tab](../api/channel-post-tabs.md), [list tabs](../api/channel-list-tabs.md), [list apps](../api/appcatalogs-list-teamsapps.md)| [TeamsTab](../resources/teamstab.md), [teamsAppInstallation](../resources/teamsappinstallation.md) |
+| Create channels and chats to send and receive chat messages |[Create channel](../api/channel-post.md), [list](../api/channel-list.md), [send](../api/chatmessage-post.md) |[Channel](../resources/channel.md), [chat](../resources/chat.md), [chatMessage](../resources/chatmessage.md)|
+| Create and receive calls, call records or retrieve meeting coordinates |[Answer](../api/call-answer.md), [invite participants](../api/participant-invite.md) | [Call](../resources/call.md), [call records](../resources/callrecords-api-overview.md) |
+| Connect bots to calls and implement interactive voice response (IVR) |  | [IVR scenarios](../resources/calls-api-ivr-overview.md)|
+| Create and retrieve online meetings or check users presence and activity |[Create online meeting](../api/application-post-onlinemeetings.md), [attendance report](../resources/meetingattendancereport.md)|[Online meetings](../resources/onlinemeeting.md), [presence](../resources/presence.md) |
+| Create and manage workforce integration with shifts, schedules, time cards or time off in your organization | [Create workforceIntegration](../api/workforceintegration-post.md), [create schedule](../api/schedule-post-schedulinggroups.md), [create shift](../api/schedule-post-shifts.md), [create timeOff](../api/schedule-post-timesoff.md) | [WorkforceIntegration](../resources/workforceintegration.md), [schedule](../resources/schedule.md), [shift](../resources/shift.md), [timeOff](../resources/timeoff.md), [timeOffReason](../resources/timeoffreason.md)|
 
 ## Microsoft Teams limits
 

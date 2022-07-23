@@ -15413,13 +15413,13 @@ items:
             href: api/teamsapp-update.md
           - name: Delete app from catalog
             href: api/teamsapp-delete.md
-          - name: App icon
-            href: resources/teamsappicon.md
-            items:
-            - name: Get icon
-              href: api/teamsappicon-get.md
-            - name: Get hosted content
-              href: api/teamworkhostedcontent-get.md
+        - name: App icon
+          href: resources/teamsappicon.md
+          items:
+          - name: Get icon
+            href: api/teamsappicon-get.md
+          - name: Get hosted content
+            href: api/teamworkhostedcontent-get.md
         - name: App installation
           items:
           - name: Installed app
@@ -15518,6 +15518,71 @@ items:
             href: api/userteamwork-sendactivitynotification.md
           - name: Send notifications to multiple users in bulk
             href: api/teamwork-sendactivitynotificationtorecipients.md
+        - name: Channel
+          href: resources/channel.md
+          items:
+          - name: List all channels
+            href: api/team-list-allchannels.md
+          - name: List channels
+            href: api/channel-list.md
+          - name: List incoming channels
+            href: api/team-list-incomingchannels.md
+          - name: Create channel
+            href: api/channel-post.md
+          - name: Get channel
+            href: api/channel-get.md
+          - name: Update channel
+            href: api/channel-patch.md
+          - name: Delete channel
+            href: api/channel-delete.md
+          - name: Remove incoming channel
+            href: api/team-delete-incomingchannels.md
+          - name: Add member
+            href: api/channel-post-members.md
+          - name: Complete migration for channel
+            href: api/channel-completemigration.md
+          - name: Get channel message
+            href: api/chatmessage-get.md
+          - name: Get channel messages delta
+            href: api/chatmessage-delta.md
+          - name: Get files folder
+            href: api/channel-get-filesfolder.md
+          - name: Get member
+            href: api/channel-get-members.md
+          - name: Get message reply
+            href: api/chatmessage-get.md
+          - name: Get messages across all channels
+            href: api/channel-getallmessages.md
+          - name: List channel messages
+            href: api/channel-list-messages.md
+          - name: List members
+            href: api/channel-list-members.md
+          - name: List message replies
+            href: api/chatmessage-list-replies.md
+          - name: Provision email address
+            href: api/channel-provisionemail.md
+          - name: Remove email address
+            href: api/channel-removeemail.md
+          - name: Remove member
+            href: api/channel-delete-members.md
+          - name: Reply to message
+            href: api/chatmessage-post-replies.md
+          - name: Send message
+            href: api/channel-post-messages.md
+          - name: Update member role
+            href: api/channel-update-members.md
+          - name: Update message
+            href: api/chatmessage-update.md
+          - name: Check user access
+            href: api/channel-doesuserhaveaccess.md
+          - name: List teams sharing a channel
+            href: api/sharedwithchannelteaminfo-list.md
+          - name: Get team sharing a channel
+            href: api/sharedwithchannelteaminfo-get.md
+          - name: Unshare channel with team
+            href: api/sharedwithchannelteaminfo-delete.md
+          - name: List allowed members
+            href: api/sharedwithchannelteaminfo-list-allowedmembers.md    
         - name: Chat
           href: resources/chat.md
           items:
@@ -15594,101 +15659,15 @@ items:
             href: api/chatmessage-list-hostedcontents.md
           - name: Get hosted content
             href: api/chatmessagehostedcontent-get.md
-          - name: Pinned chat message
-            href: resources/pinnedChatMessageInfo.md
-            items:
-            - name: List pinned messages
-              href: api/chat-list-pinnedmessages.md
-            - name: Pin message
-              href: api/chat-post-pinnedmessages.md
-            - name: Unpin message
-              href: api/chat-delete-pinnedmessages.md
-        - name: Channel
-          href: resources/channel.md
+        - name: Pinned chat message
+          href: resources/pinnedChatMessageInfo.md
           items:
-          - name: List all channels
-            href: api/team-list-allchannels.md
-          - name: List channels
-            href: api/channel-list.md
-          - name: List incoming channels
-            href: api/team-list-incomingchannels.md
-          - name: Create channel
-            href: api/channel-post.md
-          - name: Get channel
-            href: api/channel-get.md
-          - name: Update channel
-            href: api/channel-patch.md
-          - name: Delete channel
-            href: api/channel-delete.md
-          - name: Remove incoming channel
-            href: api/team-delete-incomingchannels.md
-          - name: Add member
-            href: api/channel-post-members.md
-          - name: Complete migration for channel
-            href: api/channel-completemigration.md
-          - name: Get channel message
-            href: api/chatmessage-get.md
-          - name: Get channel messages delta
-            href: api/chatmessage-delta.md
-          - name: Get files folder
-            href: api/channel-get-filesfolder.md
-          - name: Get member
-            href: api/channel-get-members.md
-          - name: Get message reply
-            href: api/chatmessage-get.md
-          - name: Get messages across all channels
-            href: api/channel-getallmessages.md
-          - name: List channel messages
-            href: api/channel-list-messages.md
-          - name: List members
-            href: api/channel-list-members.md
-          - name: List message replies
-            href: api/chatmessage-list-replies.md
-          - name: Provision email address
-            href: api/channel-provisionemail.md
-          - name: Remove email address
-            href: api/channel-removeemail.md
-          - name: Remove member
-            href: api/channel-delete-members.md
-          - name: Reply to message
-            href: api/chatmessage-post-replies.md
-          - name: Send message
-            href: api/channel-post-messages.md
-          - name: Update member role
-            href: api/channel-update-members.md
-          - name: Update message
-            href: api/chatmessage-update.md
-          - name: Check user access
-            href: api/channel-doesuserhaveaccess.md
-          - name: List teams sharing a channel
-            href: api/sharedwithchannelteaminfo-list.md
-          - name: Get team sharing a channel
-            href: api/sharedwithchannelteaminfo-get.md
-          - name: Unshare channel with team
-            href: api/sharedwithchannelteaminfo-delete.md
-          - name: List allowed members
-            href: api/sharedwithchannelteaminfo-list-allowedmembers.md  
-        - name: Tags
-          href: resources/teamworktag.md
-          items:
-          - name: List
-            href: api/teamworktag-list.md
-          - name: Create
-            href: api/teamworktag-post.md
-          - name: Get
-            href: api/teamworktag-get.md
-          - name: Update
-            href: api/teamworktag-update.md
-          - name: Delete
-            href: api/teamworktag-delete.md
-          - name: List members
-            href: api/teamworktagmember-list.md
-          - name: Create member
-            href: api/teamworktagmember-post.md
-          - name: Get member
-            href: api/teamworktagmember-get.md
-          - name: Delete member
-            href: api/teamworktagmember-delete.md            
+          - name: List pinned messages
+            href: api/chat-list-pinnedmessages.md
+          - name: Pin message
+            href: api/chat-post-pinnedmessages.md
+          - name: Unpin message
+            href: api/chat-delete-pinnedmessages.md
         - name: Team
           href: resources/team.md
           items:
@@ -15735,7 +15714,28 @@ items:
           - name: Complete migration for team
             href: api/team-completemigration.md
           - name: List permission grants
-            href: api/team-list-permissiongrants.md
+            href: api/team-list-permissiongrants.md        
+        - name: Tags
+          href: resources/teamworktag.md
+          items:
+          - name: List
+            href: api/teamworktag-list.md
+          - name: Create
+            href: api/teamworktag-post.md
+          - name: Get
+            href: api/teamworktag-get.md
+          - name: Update
+            href: api/teamworktag-update.md
+          - name: Delete
+            href: api/teamworktag-delete.md
+          - name: List members
+            href: api/teamworktagmember-list.md
+          - name: Create member
+            href: api/teamworktagmember-post.md
+          - name: Get member
+            href: api/teamworktagmember-get.md
+          - name: Delete member
+            href: api/teamworktagmember-delete.md            
       - name: Meetings and calling
         items:       
         - name: Calls
@@ -15779,7 +15779,16 @@ items:
             - name: Keep alive
               href: api/call-keepalive.md
             - name: Log teleconference device quality data
-              href: api/call-logteleconferencedevicequality.md 
+              href: api/call-logteleconferencedevicequality.m
+          - name: Content sharing session
+            href: resources/contentsharingsession.md
+            items:
+            - name: Change screen sharing role
+              href: api/call-changescreensharingrole.md
+            - name: List
+              href: api/call-list-contentsharingsessions.md
+            - name: Get
+              href: api/contentsharingsession-get.md
           - name: IVR scenarios
             href: resources/calls-api-ivr-overview.md
             items:
@@ -15790,16 +15799,7 @@ items:
             - name: Cancel media processing
               href: api/call-cancelmediaprocessing.md
             - name: Subscribe to tone
-              href: api/call-subscribetotone.md
-          - name: Content sharing session
-            href: resources/contentsharingsession.md
-            items:
-            - name: Change screen sharing role
-              href: api/call-changescreensharingrole.md
-            - name: List
-              href: api/call-list-contentsharingsessions.md
-            - name: Get
-              href: api/contentsharingsession-get.md
+              href: api/call-subscribetotone.md    
           - name: Large gallery view operation
             items:
             - name: Add large gallery view
@@ -15939,41 +15939,6 @@ items:
             href: api/presence-clearuserpreferredpresence.md  
       - name: Shift management 
         items:
-        - name: Shift
-          href: resources/shift.md
-          items:
-          - name: List
-            href: api/schedule-list-shifts.md
-          - name: Create
-            href: api/schedule-post-shifts.md
-          - name: Get
-            href: api/shift-get.md
-          - name: Replace
-            href: api/shift-put.md
-          - name: Delete
-            href: api/shift-delete.md
-        - name: Schedule
-          href: resources/schedule.md
-          items:
-          - name: Create or replace
-            href: api/team-put-schedule.md
-          - name: Get
-            href: api/schedule-get.md
-          - name: Share
-            href: api/schedule-share.md
-        - name: Scheduling group
-          href: resources/schedulinggroup.md
-          items:
-          - name: List
-            href: api/schedule-list-schedulinggroups.md
-          - name: Create
-            href: api/schedule-post-schedulinggroups.md
-          - name: Get
-            href: api/schedulinggroup-get.md
-          - name: Replace
-            href: api/schedulinggroup-put.md
-          - name: Delete
-            href: api/schedulinggroup-delete.md
         - name: Offer shift
           href: resources/offershiftrequest.md
           items:
@@ -16013,6 +15978,41 @@ items:
             href: api/openshiftchangerequest-approve.md
           - name: Decline
             href: api/openshiftchangerequest-decline.md
+        - name: Schedule
+          href: resources/schedule.md
+          items:
+          - name: Create or replace
+            href: api/team-put-schedule.md
+          - name: Get
+            href: api/schedule-get.md
+          - name: Share
+            href: api/schedule-share.md
+        - name: Scheduling group
+          href: resources/schedulinggroup.md
+          items:
+          - name: List
+            href: api/schedule-list-schedulinggroups.md
+          - name: Create
+            href: api/schedule-post-schedulinggroups.md
+          - name: Get
+            href: api/schedulinggroup-get.md
+          - name: Replace
+            href: api/schedulinggroup-put.md
+          - name: Delete
+            href: api/schedulinggroup-delete.md       
+        - name: Shift
+          href: resources/shift.md
+          items:
+          - name: List
+            href: api/schedule-list-shifts.md
+          - name: Create
+            href: api/schedule-post-shifts.md
+          - name: Get
+            href: api/shift-get.md
+          - name: Replace
+            href: api/shift-put.md
+          - name: Delete
+            href: api/shift-delete.md
         - name: Shift preferences
           href: resources/shiftpreferences.md
           items:

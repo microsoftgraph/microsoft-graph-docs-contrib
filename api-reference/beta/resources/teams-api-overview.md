@@ -15,12 +15,16 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 
 ## Common use cases 
 
-| Create channels and chats to send and receive chat messages |[Create channel](../api/channel-post.md),[list](../api/channel-list.md),[send](../api/chatmessage-post.md) |[channel](../resources/channel.md), [chat](../resources/chat.md), [chatMessage](../resources/chatmessage.md)|
-| Use Tags to classify users or groups based on common attributes whitin a team | [list](../api/teamworkTag-list.md), [create](../api/teamworkTag-post.md) | [tag](../resources/teamworkTag.md), [tagMember](../resources/teamworkTagMember.md) |
-| Create and receive calls, call records or retrieve meeting coordinates |[answer](../api/call-answer.md), [invite participants](../api/participant-invite.md) | [call](../resources/call.md), [call records](../resources/callrecords-api-overview.md) |
+| Use cases | REST resources | See also |
+|:-----------|:--------|:--------|
+| Create and manage Teams, Groups and Channels | [Create team](../api/team-put-teams.md), [list your teams](../api/user-list-joinedteams.md), [create](../api/channel-post.md) | [Team](../resources/team.md), [channel](../resources/channel.md), [group](../resources/group.md) |
+| Add tabs, manage or install apps in the Microsoft Teams app catalog | [Create tab](../api/channel-post-tabs.md), [list tabs](../api/channel-list-tabs.md), [list apps](../api/appcatalogs-list-teamsapps.md)| [TeamsTab](../resources/teamstab.md), [teamsAppInstallation](../resources/teamsappinstallation.md) |
+| Create channels and chats to send and receive chat messages |[Create channel](../api/channel-post.md),   [list](../api/channel-list.md), [send](../api/chatmessage-post.md) |[Channel](../resources/channel.md), [chat](../resources/chat.md), [chatMessage](../resources/chatmessage.md)|
+| Use Tags to classify users or groups based on common attributes whitin a team | [List](../api/teamworkTag-list.md), [create](../api/teamworkTag-post.md) | [Tag](../resources/teamworkTag.md), [tagMember](../resources/teamworkTagMember.md) |
+| Create and receive calls, call records or retrieve meeting coordinates |[Answer](../api/call-answer.md), [invite participants](../api/participant-invite.md) | [Call](../resources/call.md), [call records](../resources/callrecords-api-overview.md) |
 | Connect bots to calls and implement interactive voice response (IVR) |  | [IVR scenarios](../resources/calls-api-ivr-overview.md)|
-| Create and retrieve online meetings or check users presence and activity |[Create online meeting](../api/application-post-onlinemeetings.md), [attendance report](../resources/meetingattendancereport.md)|[online meetings](../resources/onlinemeeting.md), [presence](../resources/presence.md) |
-| Create and manage workforce integration with shifts, schedules, time cards or time off in your organization | [create workforceIntegration](../api/workforceintegration-post.md), [create schedule](../api/schedule-post-schedulinggroups.md), [create shift](../api/schedule-post-shifts.md), [create timeOff](../api/schedule-post-timesoff.md) | [workforceIntegration](../resources/workforceintegration.md), [schedule](../resources/schedule.md), [shift](../resources/shift.md), [timeOff](../resources/timeoff.md), [timeOffReason](../resources/timeoffreason.md)|
+| Create and retrieve online meetings or check users presence and activity |[Create online meeting](../api/application-post-onlinemeetings.md), [attendance report](../resources/meetingattendancereport.md)|[Online meetings](../resources/onlinemeeting.md), [presence](../resources/presence.md) |
+| Create and manage workforce integration with shifts, schedules, time cards or time off in your organization | [Create workforceIntegration](../api/workforceintegration-post.md), [create schedule](../api/schedule-post-schedulinggroups.md), [create shift](../api/schedule-post-shifts.md), [create timeOff](../api/schedule-post-timesoff.md) | [WorkforceIntegration](../resources/workforceintegration.md), [schedule](../resources/schedule.md), [shift](../resources/shift.md), [timeOff](../resources/timeoff.md), [timeOffReason](../resources/timeoffreason.md)|
 
 ## Microsoft Teams limits
 
