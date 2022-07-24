@@ -164,6 +164,14 @@
       "ChangeList": [
         {
           "Id": "dbd62dae-abc1-419d-8322-045d266f0b45",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "weakAlgorithms",
+          "ChangeType": "Addition",
+          "Description": "Added the [weakAlgorithms](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "weakAlgorithms"
+        },
+        {
+          "Id": "dbd62dae-abc1-419d-8322-045d266f0b45",
           "ApiChange": "Resource",
           "ChangedApiName": "requestSignatureVerification",
           "ChangeType": "Addition",
