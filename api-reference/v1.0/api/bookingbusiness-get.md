@@ -44,10 +44,10 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["Fabrikam@contoso.onmicrosoft.com"]
+  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Fabrikam@contoso.onmicrosoft.com
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
 ```
 
 ### Response

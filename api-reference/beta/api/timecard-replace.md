@@ -61,7 +61,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "timecard_replace",
-  "sampleKeys": ["TCK_3cd7413f-0337-433b-9a49-da0923185b3f"]
+  "sampleKeys": ["fd15cad8-80f6-484f-9666-3caf695fbf32", "TCK_3cd7413f-0337-433b-9a49-da0923185b3f"]
 }-->
 
 ```http

@@ -59,7 +59,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "timecard-confirm",
-  "sampleKeys": ["TCK_cc09588d-d9d2-4fa0-85dc-2aa5ef983972"]
+  "sampleKeys": ["fd15cad8-80f6-484f-9666-3caf695fbf32", "TCK_cc09588d-d9d2-4fa0-85dc-2aa5ef983972"]
 }-->
 
 ```http

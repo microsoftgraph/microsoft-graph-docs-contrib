@@ -57,7 +57,7 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "get_ediscoveryfile",
-  "sampleKeys": ["000168cdf05c48d98faac7bff8719726a25da40bb2b9c369fb580b8797abf661"]
+  "sampleKeys": ["58399dff-cebe-478f-b1af-d3227f1fd645", "273f11a1-17aa-419c-981d-ff10d33e420f", "000168cdf05c48d98faac7bff8719726a25da40bb2b9c369fb580b8797abf661"]
 }
 -->
 ``` http

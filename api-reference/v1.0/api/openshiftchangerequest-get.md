@@ -61,11 +61,11 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_openshiftchangerequest_1",
-  "sampleKeys": ["SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09"]
+  "sampleKeys": ["3d88b7a2-f988-4f4b-bb34-d66df66af126", "SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
+GET https://graph.microsoft.com/v1.0/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/schedule/openShiftChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-openshiftchangerequest-1-csharp-snippets.md)]

@@ -77,7 +77,7 @@ The following example shows how to get the attendance report for an online meeti
 <!-- {
   "blockType": "request",
   "name": "get-attendanceReport-by-id",
-  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ","c9b6db1c-d5eb-427d-a5c0-20088d9b22d7"]
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ", "c9b6db1c-d5eb-427d-a5c0-20088d9b22d7"]
 }-->
 
 ```msgraph-interactive
