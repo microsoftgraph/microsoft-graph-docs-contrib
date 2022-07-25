@@ -2,7 +2,7 @@ In this step, you'll design your web app by using Microsoft Graph Toolkit compon
 
 ## Initialize the Login component
 
-In `index.html` under `<body></body>`, add the Login component inside the main div:
+In **index.html** under `<body></body>`, add the Login component inside the main div:
 
   ```html
   <mgt-login></mgt-login>
@@ -10,7 +10,7 @@ In `index.html` under `<body></body>`, add the Login component inside the main d
 
 ## Create a title and a column for the rest of the components
 
-To make our app look structured, let's create a title and a column for each feature that will be added in the One Productivity Hub moving forward. In `index.html` under `<body></body>`, add the following html code inside the div tagged with `class="features"`:
+To make our app look structured, let's create a title and a column for each feature that will be added in the One Productivity Hub moving forward. In **index.html** under `<body></body>`, add the following html code inside the div tagged with `class="features"`:
 
   ```HTML
   <div class="header"><div class="title">
@@ -51,7 +51,7 @@ Under div tagged with `class="row"`, add the File list component inside the thir
   <mgt-file-list></mgt-file-list>
   ```
 
-Make sure that the final version of `index.html` is similar with the following code snippet:
+Make sure that the final version of **index.html** is similar with the following code snippet:
 
   ```html
   <!DOCTYPE html>
@@ -127,7 +127,7 @@ Make sure that the final version of `index.html` is similar with the following c
 
 ## Style your web app with CSS
 
-1. Create `index.css` file under your project and add below CCS code:
+1. Create **index.css** file under your project and add below CCS code:
 
     ```css
     body,
@@ -206,13 +206,13 @@ Make sure that the final version of `index.html` is similar with the following c
       }
     ```
 
-1. In `index.html` under `<head></head>`, update the stylesheet link `href` as **index.css**:
+1. In **index.html** under `<head></head>`, update the stylesheet link `href` as **index.css**:
 
     ```html
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     ```
 
-1. In `index.html`, add the following HTML code in `<body></body>`:
+1. In **index.html**, add the following HTML code in `<body></body>`:
 
     ```html
     <div>

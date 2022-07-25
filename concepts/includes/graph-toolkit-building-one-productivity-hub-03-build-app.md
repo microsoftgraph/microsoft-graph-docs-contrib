@@ -10,7 +10,7 @@ In this step, you'll create a web app and enable authentication with Microsoft G
 
 ## Enable authentication with the Microsoft Graph Toolkit
 
-To use the Microsoft Graph Toolkit via mgt-loader, add the following reference in `index.html` under the `<head></head>` section:
+To use the Microsoft Graph Toolkit via mgt-loader, add the following reference in **index.html** under the `<head></head>` section:
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt@2.5.1/dist/bundle/mgt-loader.js"></script>
@@ -18,7 +18,7 @@ To use the Microsoft Graph Toolkit via mgt-loader, add the following reference i
 
 ### Initialize the MSAL2 provider
 
-1. In `index.html`, add the MSAL2 provider in the `<head></head>` section as following:
+1. In **index.html**, add the MSAL2 provider in the `<head></head>` section as following:
 
     ```HTML
     <mgt-msal2-provider 
@@ -41,7 +41,7 @@ To use the Microsoft Graph Toolkit via mgt-loader, add the following reference i
 
 1. Replace `<YOUR_CLIENT_ID>` with the client ID copied from the Azure AD application.
 
-1. Make sure that the final version of `index.html` is similar with the following code snippet:
+1. Make sure that the final version of **index.html** is similar with the following code snippet:
 
     ```html
     <!DOCTYPE html>
