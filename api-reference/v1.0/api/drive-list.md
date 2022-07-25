@@ -33,7 +33,7 @@ To list the document libraries for a group, your app requests the **drives** rel
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all", "tags": "service.graph" } -->
 
-```msgraph-interactive
+```http
 GET /groups/{groupId}/drives
 ```
 
@@ -72,7 +72,7 @@ To list the document libraries for a site, your app requests the **drives** rela
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all", "tags": "service.graph" } -->
 
-```msgraph-interactive
+```http
 GET /sites/{siteId}/drives
 ```
 
@@ -109,7 +109,7 @@ GET /sites/{siteId}/drives
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read", "tags": "service.graph" } -->
 
-```msgraph-interactive
+```http
 GET /users/{userId}/drives
 ```
 
