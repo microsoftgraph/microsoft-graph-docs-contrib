@@ -50,7 +50,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get all external partner settings
+
+#### Request
 
 The following is an example of a request.
 
@@ -64,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPa
 ```
 
 
-### Response
+#### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -96,6 +98,53 @@ Content-Type: application/json
       "lastSyncDateTime": "2020-11-03T12:43:14Z",
       "status": "available",
       "statusDetails": "The external partner is available"
+    }
+  ]
+}
+```
+
+### Example 2: Use $select to get all external partner settings
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_cloudpcexternalpartnersetting"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPartnerSettings?$select=id,partnerId,enableConnection
+```
+
+
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcExternalPartnerSetting",
+  "isCollection": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/externalPartnerSettings(id,partnerId,enableConnection)",
+  "value": [
+    {
+      "id": "b3548526-e615-3785-3118-be70b3968ec5",
+      "partnerId": "198d7140-80bb-4843-8cc4-811377a49a92",
+      "enableConnection": true
+    },
+    {
+      "id": "dc6422cb-3001-45a7-9dcd-21207eea6b0e",
+      "partnerId": "459a0e56-da26-4ba1-a729-8eeef733425b",
+      "enableConnection": true
     }
   ]
 }
