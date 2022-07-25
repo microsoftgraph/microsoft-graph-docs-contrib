@@ -3182,7 +3182,7 @@ Possible values for user account types (group membership), per Windows definitio
 |administrator|
 |unknownFutureValue|
 
-### allowedWeakAlgorithms values 
+### weakAlgorithms values 
 
 |Member|
 |:---|
