@@ -3182,6 +3182,13 @@ Possible values for user account types (group membership), per Windows definitio
 |administrator|
 |unknownFutureValue|
 
+### allowedWeakAlgorithms values 
+
+|Member|
+|:---|
+|rsaSha1|
+|unknownFutureValue|
+
 ### tenantAllowBlockListAction values 
 
 |Member|
