@@ -2,7 +2,7 @@ In this step, you'll design your web app by using Microsoft Graph Toolkit compon
 
 ## Initialize the Login component
 
-In **index.html** under `<body></body>`, add the Login component inside the main div:
+In **index.html** under `<body></body>`, add the Login component:
 
   ```html
   <mgt-login></mgt-login>
@@ -13,17 +13,19 @@ In **index.html** under `<body></body>`, add the Login component inside the main
 To make our app look structured, let's create a title and a column for each feature that will be added in the One Productivity Hub moving forward. In **index.html** under `<body></body>`, add the following html code inside the div tagged with `class="features"`:
 
   ```HTML
-  <div class="header"><div class="title">
-    <h2>One Productivity Hub</h2>
-    <div class="row"><div class="column"><h3>Calendar events</h3></div>
-    <div class="column"><h3>To-do tasks</h3></div>
-    <div class="column"><h3>Files</h3></div>
-  </div></div>
+  <div class="features">
+    <div class="header"><div class="title">
+      <h2>One Productivity Hub</h2>
+      <div class="row"><div class="column"><h3>Calendar events</h3></div>
+      <div class="column"><h3>To-do tasks</h3></div>
+      <div class="column"><h3>Files</h3></div>
+    </div></div>
   
-  <div class="row" id="content">
-    <div class="column" id="mgt-col"></div>
-    <div class="column" id="mgt-col"></div>
-    <div class="column" id="mgt-col"></div>
+    <div class="row" id="content">
+      <div class="column" id="mgt-col"></div>
+      <div class="column" id="mgt-col"></div>
+      <div class="column" id="mgt-col"></div>
+    </div>
   </div>
   ```
 
@@ -66,7 +68,7 @@ Make sure that the final version of **index.html** is similar with the following
     <script src='main.js'></script>
     <script src="https://unpkg.com/@microsoft/mgt@2.5.1/dist/bundle/mgt-loader.js"></script>
     <mgt-msal2-provider 
-        client-id="2a20d081-e42e-49a1-9fef-aead08eb53dc"
+        client-id="<YOUR_CLIENT_ID>"
         scopes="User.Read,
         User.ReadBasic.All,
         Calendars.Read,
@@ -206,7 +208,7 @@ Make sure that the final version of **index.html** is similar with the following
       }
     ```
 
-1. In **index.html** under `<head></head>`, update the stylesheet link `href` as **index.css**:
+1. In **index.html** under `<head></head>`, make sure that the the stylesheet link `href` is defined as **index.css**:
 
     ```html
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
