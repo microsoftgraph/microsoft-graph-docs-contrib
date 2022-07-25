@@ -54,17 +54,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "reboot_cloudpc"
-}
--->
-
-``` http
-POST https://graph.microsoft.com/beta/me/cloudPCs/662009bc-7732-4f6f-8726-25883518ffff/reboot
-```
-
 ### Response
 
 <!-- {

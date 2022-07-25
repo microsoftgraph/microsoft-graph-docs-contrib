@@ -54,18 +54,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "cloudpc_reprovision"
-}
--->
-
-``` http
-POST https://graph.microsoft.com/beta/me/cloudPCs/4b5ad5e0-6a0b-4ffc-818d-36bb23cf4dbd/reprovision
-```
-
 ### Response
 
 <!-- {
