@@ -7,13 +7,13 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Rename Cloud PC for user
+# Rename cloudPC for user
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rename a specific [Cloud PC](../resources/cloudpc.md) device that is attributed to the signed-in user. Use this API to update the **displayName** for the Cloud PC entity.
+Rename a specific [cloudPC](../resources/cloudpc.md) device that is attributed to the signed-in user. Use this API to update the **displayName** for the Cloud PC entity.
 
 ## Permissions
 

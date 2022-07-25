@@ -7,13 +7,13 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Troubleshoot Cloud PC for user
+# Troubleshoot cloudPc for user
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Troubleshoot a specific [Cloud PC](../resources/cloudpc.md) device that is attributed to the signed-in user. Use this API to check the health status of the Cloud PC.
+Troubleshoot a specific [cloudPC](../resources/cloudpc.md) device that is attributed to the signed-in user. Use this API to check the health status of the Cloud PC.
 
 ## Permissions
 

@@ -1,19 +1,19 @@
 ---
-title: "Get a specific Cloud PC for user"
-description: "Get a specified Cloud PC device attributed to the signed-in user"
+title: "Get a specific cloudPC for user"
+description: "Get a specified cloudPC device attributed to the signed-in user"
 author: "xinliu22"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Get Cloud PC for user
+# Get cloudPC for user
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [Cloud PC](../resources/cloudpc.md) device that is attributed to the signed-in user.
+Get a [cloudPC](../resources/cloudpc.md) device that is attributed to the signed-in user.
 
 >[!NOTE]
 >This operation returns only the following properties: **id**, **displayName**, **imageDisplayName**, **servicePlanId**, **servicePlanName**, **servicePlanType**, **status**, **lastModifiedDateTime**, **aadDeviceId**, **statusDetails**, **gracePeriodEndDateTime**.
@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a single [Cloud PC](../resources/cloudpc.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a single [cloudPC](../resources/cloudpc.md) object in the response body.
 
 ## Examples
 

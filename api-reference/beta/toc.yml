@@ -382,19 +382,19 @@ items:
         items:
         - name: Cloud PC
           href: resources/cloudpc.md
-        - name: List Cloud PCs
+        - name: List CloudPCs
           href: api/user-list-cloudpcs.md
-        - name: Get a Cloud PC
+        - name: Get a CloudPC
           href: api/user-get-cloudpc.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
-        - name: Reboot a Cloud PC
+        - name: Reboot a CloudPC
           href: api/user-reboot-cloudpc.md
-        - name: Rename a Cloud PC
+        - name: Rename a CloudPC
           href: api/user-rename-cloudpc.md
-        - name: Reprovision a Cloud PC
+        - name: Reprovision a CloudPC
           href: api/user-reprovision-cloudpc.md
-        - name: Troubleshoot a Cloud PC
+        - name: Troubleshoot a CloudPC
           href: api/user-troubleshoot-cloudpc.md
       - name: Contacts
         items:
@@ -10488,7 +10488,7 @@ items:
           items:
           - name: List cloudPCs for organization
             href: api/virtualendpoint-list-cloudpcs.md
-          - name: List Cloud PCs for user
+          - name: List cloudPCs for user
             href: api/user-list-cloudpcs.md
           - name: Get cloudPC
             href: api/cloudpc-get.md
@@ -10524,15 +10524,15 @@ items:
             href: api/manageddevice-setcloudpcreviewstatus.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
-          - name: Get single Cloud PC for user
+          - name: Get single cloudPC for user
             href: api/user-get-cloudpc.md
-          - name: Reboot Cloud PC for user
+          - name: Reboot cloudPC for user
             href: api/user-reboot-cloudpc.md
-          - name: Rename Cloud PC for user
+          - name: Rename cloudPC for user
             href: api/user-rename-cloudpc.md
-          - name: Reprovision Cloud PC for user
+          - name: Reprovision cloudPC for user
             href: api/user-reprovision-cloudpc.md
-          - name: Troubleshoot Cloud PC for user
+          - name: Troubleshoot cloudPC for user
             href: api/user-troubleshoot-cloudpc.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
