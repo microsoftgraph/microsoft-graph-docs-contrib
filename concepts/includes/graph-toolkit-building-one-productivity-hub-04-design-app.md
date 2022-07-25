@@ -213,12 +213,3 @@ Make sure that the final version of **index.html** is similar with the following
     ```html
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     ```
-
-1. In **index.html**, add the following HTML code in `<body></body>`:
-
-    ```html
-    <div>
-      <div class="features">
-      </div>
-    </div>
-    ```
