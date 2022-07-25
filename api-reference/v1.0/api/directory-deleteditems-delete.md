@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
-The requestor needs to have one of the following roles: *Global Administrator* or *Application Administrator*.
+The calling app must be assigned the *Global Administrator* or *Application Administrator* Azure AD role on behalf of the signed-in user, or the calling user must be the owner of the application.
 
 ### For users:
 
