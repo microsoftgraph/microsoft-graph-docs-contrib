@@ -14,7 +14,8 @@ Some APIs provide the option to choose a licensing and payment model via the `mo
 
 * [Export chat: getAllMessages](/microsoftteams/export-teams-content)
 * [Export channel: getAllMessages](/microsoftteams/export-teams-content)
-* [Update: chat message](/graph/api/chatmessage-update)
+* [Update chat: chatMessage](/graph/api/chatmessage-update)
+* [Update channel: chatMessage](/graph/api/chatmessage-update)
 * [Change notifications: chatMessage](/graph/api/subscription-post-subscriptions)
 * [Change notification: conversationMember](/graph/api/subscription-post-subscriptions)
 
