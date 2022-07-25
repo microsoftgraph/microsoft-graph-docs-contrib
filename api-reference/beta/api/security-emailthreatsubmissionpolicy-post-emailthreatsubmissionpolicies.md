@@ -126,7 +126,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.emailThreatSubmissionPolicy",
+  "@odata.type": "#microsoft.graph.security.emailThreatSubmissionPolicy",
   "id": "DefaultReportSubmissionPolicy",
   "isReportToMicrosoftEnabled": true,
   "isReportToCustomizedEmailAddressEnabled": false,
