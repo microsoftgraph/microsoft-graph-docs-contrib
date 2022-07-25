@@ -13,7 +13,7 @@ In this step, you'll create a web app and enable authentication with Microsoft G
 To use the Microsoft Graph Toolkit via mgt-loader, add the following reference in `index.html` under the `<head></head>` section:
 
 ```HTML
-  <script src="https://unpkg.com/@microsoft/mgt@2.5.1/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@2.5.1/dist/bundle/mgt-loader.js"></script>
 ```
 
 ### Initialize the MSAL2 provider
@@ -21,19 +21,19 @@ To use the Microsoft Graph Toolkit via mgt-loader, add the following reference i
 1. In `index.html`, add the MSAL2 provider in the `<head></head>` section as following:
 
     ```HTML
-      <mgt-msal2-provider 
-          client-id="<YOUR_CLIENT_ID>"
-          scopes="User.Read,
-          User.ReadBasic.All,
-          Calendars.Read,
-          Files.Read,
-          Files.Read.All,
-          Sites.Read.All,
-          Tasks.Read,
-          Tasks.ReadWrite,
-          People.Read,
-          User.ReadBasic.All">    
-      </mgt-msal2-provider>
+    <mgt-msal2-provider 
+        client-id="<YOUR_CLIENT_ID>"
+        scopes="User.Read,
+        User.ReadBasic.All,
+        Calendars.Read,
+        Files.Read,
+        Files.Read.All,
+        Sites.Read.All,
+        Tasks.Read,
+        Tasks.ReadWrite,
+        People.Read,
+        User.ReadBasic.All">    
+    </mgt-msal2-provider>
     ```
 
     > [!IMPORTANT]

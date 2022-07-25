@@ -4,9 +4,9 @@ In this step, you'll design your web app by using Microsoft Graph Toolkit compon
 
 In `index.html` under `<body></body>`, add the Login component inside the main div:
 
-    ```html
-    <mgt-login></mgt-login>
-    ```
+  ```html
+  <mgt-login></mgt-login>
+   ```
 
 ## Create a title and a column for the rest of the components
 
