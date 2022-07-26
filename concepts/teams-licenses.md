@@ -12,9 +12,9 @@ This article describes the licensing and payment requirements for the Microsoft 
 
 Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model. The following APIs have consumption charges:
 
-* [Export Teams content: channel and chat getAllMessages](/microsoftteams/export-teams-content)
-* [Update (DLP Patch): channel and chat chatMessage](/graph/api/chatmessage-update)
-* [Create subscription (change notifications): channel, chat chatMessage and conversationMember](/graph/api/subscription-post-subscriptions)
+* [Export Teams content](/microsoftteams/export-teams-content): channel and chat getAllMessages.
+* [Update (DLP Patch)](/graph/api/chatmessage-update): channel and chat chatMessage.
+* [Create subscription (change notifications)](/graph/api/subscription-post-subscriptions): channel, chat chatMessage and conversationMember.
 
 The following licensing models are available:
 
