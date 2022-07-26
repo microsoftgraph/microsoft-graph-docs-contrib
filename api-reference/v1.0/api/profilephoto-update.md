@@ -45,7 +45,7 @@ One of the following permissions is required to call this API. To learn more, in
 | --------------- | -------------------------------------------- |
 | Delegated (work or school account)        | TeamSettingsReadWriteAll |
 | Delegated (personal Microsoft account)    | Not supported.     |
-| Application                               | TeamSettingsReadWriteAll |
+| Application                               | Not supported. |
 
 ### To update the profile photo of the signed-in user
 
