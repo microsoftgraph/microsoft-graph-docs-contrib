@@ -281,6 +281,22 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
     > NOTE: This may require additional permissions.
 
 ---
+## Attack Simulation and Training permissions
+
+#### Delegated permissions
+
+|           Permission        |                  Display String               |                                         Description                                                    | Admin Consent Required |
+|:----------------------------|:----------------------------------------------|:-------------------------------------------------------------------------------------------------------|:-----------------------|
+| _AttackSimulation.Read.All_ |Read attack simulation data of an organization | Allows the app to read attack simulation and training data for an organization for the signed-in user. |            Yes         |
+
+
+#### Application permissions
+
+|           Permission        |                  Display String               |                                         Description                                                     | Admin Consent Required |
+|:----------------------------|:----------------------------------------------|:------------------------------------------------------------------------------------------------------- |:-----------------------|
+| _AttackSimulation.Read.All_ |Read attack simulation data of an organization | Allows the app to read attack simulation and training data for an organization without a signed-in user.|            Yes         |
+
+---
 
 ## Audit log permissions
 
