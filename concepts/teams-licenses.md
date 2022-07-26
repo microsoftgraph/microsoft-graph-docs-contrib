@@ -128,12 +128,16 @@ Please note that the organization that owns the app registration is responsible 
 
 |    Scenario    | Details |
 |:---------------|:--------|
+| Did billing actually started on July 5th ? | Yes, we are onboarding partners in phases. For continued access, please fill this [request form](https://aka.ms/teamsgraph/protectedApis_az) and provide an active Azure subscription. 
 | What should I expect after providing an Azure subscription ? | You can continue calling these metered APIs, we will contact the email provided in the request form to onboard the registered application to billing. |
 | Do I need to provide an Azure suscription if my application is not calling metered APIs ? | No. If you need to call other APIs please refer to the request form in [protected APIs](/graph/teams-protected-apis). |
 | What happens if no Azure subscription is provided ? | •  No payment related errors if the application is not calling metered APIs. <br> •  If no model is being passed, `evaluation model` will be used by default.<br> •  If calling a metered API passing `model=A` a Microsoft 365 E5 eligible license and Azure subscription should be provided.<br> •  If passing `model=B` when calling metered APIs, an active Azure subscription should be provided. <br> |
 | How do I create an Azure subscription ? | The Azure subscription must be available in the same tenant where the app is registered. Customers with MCA or EA agreements can get a subscription from their existing account. Is also possible to create a PAYG subscription using a credit card or pay by check or wire transfer, for details see [cost management and billing](/azure/cost-management-billing/microsoft-customer-agreement). |
 | Who is responsible for the payment in case of multitenat apps ? | The organization that owns the app registration. |
+| Is possible to differentiate billing from multitenant or single tenant app ? | Yes, this information must be provided as part of Azure billing details. |
 | Is there a charge when no message is returned using any model ? | To discourage frequent [polling](/graph/api/resources/teams-api-overview), API requests that return an empty list of messages will be charged 1 message. In the case of `evaluation model` the call will count towards the 500 messages per month per app allowed. | 
 | Where can I monitor the cost and billing ? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) can use Azure Cost Analysis tool to track consumption per day or filter by meter, service name, resource id among other parameters. For more details refer to our [documentation](/azure/cost-management-billing). |
 | Is there a volume discount ? | Flat rates apply. |  
 | Are these APIs enrolled in [Microsoft Azure Consumption Commitment (MACC) program](/azure/marketplace/azure-consumption-commitment-enrollment) ? | Not at this moment.|
+| Is it possible to obtain an extension, in case an organization didn't plan for this ? | We can grant a short term extension on case by case basis. Fill out this [request extension form](https://aka.ms/TeamsGraphAPIExtension) providing your Azure subscription and reach out to TeamsAPIBilling@microsoft.com. |  
+
