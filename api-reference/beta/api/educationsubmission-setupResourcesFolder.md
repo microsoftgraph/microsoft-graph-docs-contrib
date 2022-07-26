@@ -44,7 +44,7 @@ Provide an empty json `{}` as request body for this method.
 If successful, this method returns a `200 Ok` response code. The body will contain the submission model.
 
 ## Example 1: Set up a resource folder for a submission
-The following example shows how to call this API.
+The following is an example of a request that triggers the creation of a SharePoint resource folder for a submission.
 
 ### Request
 The following is an example of a request.
