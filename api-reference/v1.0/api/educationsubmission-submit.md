@@ -25,12 +25,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. | 
 
 ## Roles
-When the submission action is performed in the following role, the result is as below:
-| Role    | Result               |
+Below is the expected submission state, when submit action is performed in a role as:
+
+| Role    | Submission state               |
 |:--------------------|:---------------------------------------------------------|
-| Teacher (work or school account)  |  Submitted successfully (200 OK)  |
+| Teacher (work or school account)  |  submitted  (200 OK)  |
 | Teacher (personal Microsoft account)  |  Not supported.  |
-| Student (work or school account)  |  Submitted successfully (200 OK)  |
+| Student (work or school account)  |  submitted (200 OK)  |
 | Student (personal Microsoft account)  |  Not supported.  |
 | Application   | Not supported. | 
 
