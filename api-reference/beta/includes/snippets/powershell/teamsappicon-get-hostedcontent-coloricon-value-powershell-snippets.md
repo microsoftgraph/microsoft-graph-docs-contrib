@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
+Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId -OutFile $outFileId
 
 ```

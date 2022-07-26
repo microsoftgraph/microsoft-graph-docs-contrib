@@ -18,7 +18,7 @@ recurrence := graphmodels.New()
 pattern := graphmodels.New()
 type := "Weekly"
 pattern.SetType(&type) 
-daysOfWeek := []String {
+daysOfWeek := []string {
 	"Monday",
 	"Wednesday",
 	"Friday",

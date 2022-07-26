@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgGroupAppRoleAssignment -GroupId $groupId
+Get-MgGroupAppRoleAssignment -GroupId $groupId -OutFile $outFileId
 
 ```

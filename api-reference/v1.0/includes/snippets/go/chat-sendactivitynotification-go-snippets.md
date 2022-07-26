@@ -44,7 +44,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.ChatsById("chat-id").SendActivityNotification(chat-id).Post(requestBody)
+graphClient.ChatsById("chat-id").SendActivityNotification().Post(requestBody)
 
 
 ```
