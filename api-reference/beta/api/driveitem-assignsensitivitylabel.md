@@ -48,11 +48,20 @@ POST /users/{user-id}/drive/root:/{item-path}/assignSensitivitylabel
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-| Name                | Value                       |Description                                                                                                                |
-|:--------------------|:----------------------------|:--------------------------------------------------------------------------------------------------------------------------|
-| sensitivityLabelId  | string                      | Required. Id of the sensitivity label to be assigned, or empty string to remove the sensitivity label.                    |
-| assignmentMethod    | sensitivityAssignmentMethod | Optional. The assignment method of the label on the document. Whether the assignment of the label was done automatically, standard or as a privileged operation (The equivalent to an administrator operation).                                                                                           |
-| justificationText   | string                      | Optional. Justification text for audit purposes. Required when downgrading/removing label.                                |
+| Name                | Value                             |Description                                                                                                          |
+|:--------------------|:----------------------------------|:--------------------------------------------------------------------------------------------------------------------|
+| sensitivityLabelId  | string                            | Required. Id of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
+| assignmentMethod    | sensitivityLabelAssignmentMethod  | Optional. The assignment method of the label on the document. Whether the assignment of the label was done automatically, standard or as a privileged operation (The equivalent to an administrator operation).                                                                            |
+| justificationText   | string                            | Optional. Justification text for audit purposes. Required when downgrading/removing label.                          |
+
+### sensitivityLabelAssignmentMethod values
+
+| Member             | Description                                    |
+|:------------------ |:-----------------------------------------------|
+| standard           | The assignment method for the label is standard.|
+| privileged         | The assignment method for the label is privileged. Indicates that the label is applied manually by a user or by an admin.|
+| auto               | Indicates that the label is applied automatically by the system due to a configured policy, such as default label or auto-classification of sensitive content.|
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Response
 
