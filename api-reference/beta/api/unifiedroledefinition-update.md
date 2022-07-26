@@ -105,7 +105,8 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_unifiedroledefinition"
+  "name": "update_unifiedroledefinition",
+  "sampleKeys": ["0d55728d-3e24-4309-9b1b-5ac09921475a"]
 }-->
 
 ```http

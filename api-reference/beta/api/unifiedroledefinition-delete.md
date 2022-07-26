@@ -91,7 +91,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_unifiedroledefinition"
+  "name": "delete_unifiedroledefinition",
+  "sampleKeys": ["f189965f-f560-4c59-9101-933d4c87a91a"]
 }-->
 
 ```http

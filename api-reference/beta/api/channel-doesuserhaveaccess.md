@@ -124,7 +124,7 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "channel_doesuserhaveaccess_externaluser",
-  "sampleKeys": ["19:33b76eea88574bd1969dca37e2b7a819@thread.skype", "0fddfdc5-f319-491f-a514-be1bc1bf9ddc", "6285581f-484b-4845-9e01-60667f8b12ae", "57fb72d0-d811-46f4-8947-305e6072eaa5"]
+  "sampleKeys": ["19:33b76eea88574bd1969dca37e2b7a819@thread.skype", "0fddfdc5-f319-491f-a514-be1bc1bf9ddc", "62855810-484b-4823-9e01-60667f8b12ae", "57fb72d0-d811-46f4-8947-305e6072eaa5"]
 }
 -->
 ``` http

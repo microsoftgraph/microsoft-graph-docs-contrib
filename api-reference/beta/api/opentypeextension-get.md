@@ -244,7 +244,7 @@ The second example references an extension by its name and gets the extension in
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_2",
-  "sampleKeys": ["f5480dfd-7d77-4d0b-ba2e-3391953cc74a","AAMkADVl17IsAAA=", "Com.Contoso.Deal"]
+  "sampleKeys": ["f5480dfd-7d77-4d0b-ba2e-3391953cc74a", "AAMkADVl17IsAAA=", "Com.Contoso.Deal"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal
@@ -313,7 +313,7 @@ The filter returns the extension that has its **id** matching a fully qualified 
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_3",
-  "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="]
+  "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===", "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')

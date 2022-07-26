@@ -461,7 +461,7 @@ the **body** of the new post, and the following data for the new extension:
 <!-- {
   "blockType": "request",
   "name": "post_opentypeextension_4",
-  "sampleKeys": ["37df2ff0-0de0-4c33-8aee-75289364aef6","AAQkADJizZJpEWwqDHsEpV_KA==", "AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA="]
+  "sampleKeys": ["37df2ff0-0de0-4c33-8aee-75289364aef6", "AAQkADJizZJpEWwqDHsEpV_KA==", "AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=/reply

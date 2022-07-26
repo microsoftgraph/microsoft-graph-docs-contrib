@@ -217,7 +217,7 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "shared_channel_add_intra_tenant_member",
-  "sampleKeys": ["6a720ba5-7373-463b-bc9f-4cd04b5c6742","19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2"]
+  "sampleKeys": ["6a720ba5-7373-463b-bc9f-4cd04b5c6742", "19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2"]
 } -->
 
 ```http

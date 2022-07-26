@@ -59,7 +59,7 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "list_documentsetversion",
-  "sampleKeys": ["1","root", "Documents"]
+  "sampleKeys": ["1", "root", "Documents"]
 }
 -->
 ``` http
