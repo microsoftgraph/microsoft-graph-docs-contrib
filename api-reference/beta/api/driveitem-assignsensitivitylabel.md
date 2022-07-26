@@ -1,0 +1,106 @@
+---
+title: "driveItem: assignSensitivitylabel"
+description: "Asynchronously assigns sensitivity label to an [driveItem][item-resource]."
+author: "jaLuthra"
+ms.localizationpriority: medium
+ms.prod: "sharepoint"
+doc_type: apiPageType
+---
+
+# driveItem: assignSensitivitylabel
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Asynchronously assigns sensitivity label to an [driveItem][item-resource].
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type                        | Permissions (from least to most privileged)                                                             |
+|:--------------------------------------|:--------------------------------------------------------------------------------------------------------|
+|Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All                                               |
+|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All                                                                    |
+|Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                                                                |
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /drives/{drive-id}/items/{item-id}/assignSensitivitylabel
+POST /drives/{drive-id}/root:/{item-path}/assignSensitivitylabel
+POST /groups/{group-id}/drive/items/{item-id}/assignSensitivitylabel
+POST /groups/{group-id}/drive/root:/{item-path}/assignSensitivitylabel
+POST /me/drive/items/{item-id}/assignSensitivitylabel
+POST /me/drive/root:/{item-path}/assignSensitivitylabel
+POST /sites/{site-id}/drive/items/{item-id}/assignSensitivitylabel
+POST /sites/{site-id}/drive/root:/{item-path}/assignSensitivitylabel
+POST /users/{user-id}/drive/items/{item-id}/assignSensitivitylabel
+POST /users/{user-id}/drive/root:/{item-path}/assignSensitivitylabel
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+| Name                | Value                                          |Description                                                                                             |
+|:--------------------|:-----------------------------------------------|:-------------------------------------------------------------------------------------------------------|
+| sensitivityLabelId  | string                      | Required. Id of the sensitivity label to be assigned, or empty string to remove the sensitivity label.                    |
+| assignmentMethod    | sensitivityAssignmentMethod | Optional. The assignment method of the label on the document. Whether the assignment of the label was done automatically, standard or as a privileged operation (The equivalent to an administrator operation).                                                                                           |
+| justificationText   | string                      | Optional. Justification text for audit purposes. Required when downgrading/removing label.                                |
+
+## Response
+
+If successful, the API returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the assign sensitivity label operation, upon accepting the request.
+
+In addition to general errors that apply to Microsoft Graph, this API returns the `423 Locked` response code, which indicates that the file being accessed is locked. In such cases, the **code** property of the response object indicates the error type that blocks the operation.
+The following are the possible values for the error types.
+
+| Value                       | Description                                                                                                         |
+|:----------------------------|:--------------------------------------------------------------------------------------------------------------------|
+| fileDoubleKeyEncrypted      | Indicates that the file is protected via double key encryption; hence it cannot be opened.                          |
+| fileDecryptionNotSupported  | Indicates that the encrypted file has specific properties which do not allow these files to be opened by SharePoint.|
+| fileDecryptionDeferred      | Indicates that the file is being processed for decryption; hence it cannot be opened.                               |
+| unknownFutureValue          | Evolvable enumeration sentinel value. Do not use.                                                                   |
+
+## Examples
+
+### Request
+
+The following is an example of a request.
+
+<!-- { "blockType": "request", "name": "assignSensitivitylabel", "tags": "service.graph" } -->
+``` http
+POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivitylabel
+Content-Type: application/json
+
+{
+  "sensitivityLabelId": "5feba255-812e-446a-ac59-a7044ef827b5",
+  "assignmentMethod": "standard",
+  justificationText": "test_justification"
+}
+```
+
+
+### Response
+
+The following is an example of the response.
+
+<!-- { "blockType": "response" } -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://contoso.sharepoint.com/_api/v2.0/monitor/QXNzaWduU2Vuc2l0aXZpdHlMYWJlbCxiMzc3ODY3OS04OWQ3LTRkYmYtYjg0MC1jYWM1NzRhY2FlNmE?tempAuth=eyJ0eXAiOiJKV1QiLCJhb....
+```
+The value of the `Location` header provides a URL for a service that will return the current state of the assign sensitivity label operation.
+You can use this information to [determine when the assign sensitivity label operation has finished](/graph/long-running-actions-overview).
+
+### Remarks
+The response from the API will only indicate that the assign sensitivity label operation was accepted or rejected; for example, due to the destination filename already being in use.
+
+[item-resource]: ../resources/driveitem.md
