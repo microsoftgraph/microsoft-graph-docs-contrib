@@ -66,7 +66,6 @@ Under div tagged with `class="row"`, add the File list component inside the thir
     #root>div {
         background-color: #F3F2F1;
     }
-    
     .features {
         min-height: 80vh;
         margin: 20px;
@@ -75,25 +74,21 @@ Under div tagged with `class="row"`, add the File list component inside the thir
         border-radius: 4px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    
     .header {
         display: flex;
         background-color: #f0f0f0;
     }
-    
     .title {
         margin-top: 20px;
         margin-left: 10px;
         width: 100%;
     }
-    
     .title h2 {
         font-size: 24px;
         padding-left: 5px;
         display: inline;
         font-weight: 600;    
     }
-    
     .title h3 {
         float: left;
         width: 32%;
@@ -105,7 +100,6 @@ Under div tagged with `class="row"`, add the File list component inside the thir
         color: #8A8886;
         font-weight: 600;
     }
-    
     mgt-login {   
         margin-left: 20px;
         --avatar-size: 60px;
@@ -119,23 +113,21 @@ Under div tagged with `class="row"`, add the File list component inside the thir
         --line2-color: #8A8886;
         --line2-text-transform: none;
     }
-    
     #content, html, body {
         height: 98%; 
       }
-      
-      #mgt-col {
-        float: left;
-        width: 32%;
-        background:transparent;
-        height:500px;
-        overflow: hidden;
-        padding: 5px;
-        margin-top: 5px;
-      }
-      #mgt-col:hover {
-        overflow-y: auto;
-      }
+    #mgt-col {
+      float: left;
+      width: 32%;
+      background:transparent;
+      height:500px;
+      overflow: hidden;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    #mgt-col:hover {
+      overflow-y: auto;
+    }
     ```
 
 1. In **index.html** under `<head></head>`, define the stylesheet link `href` as **index.css**:
@@ -144,55 +136,55 @@ Under div tagged with `class="row"`, add the File list component inside the thir
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     ```
 
-Make sure that the final version of **index.html** is similar with the following code snippet:
+1. Make sure that the final version of **index.html** is similar with the following code snippet:
 
-  ```html
-  <!DOCTYPE html>
-  <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>One Productivity Hub</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <script src='main.js'></script>
-    <script src="https://unpkg.com/@microsoft/mgt@2.5.1/dist/bundle/mgt-loader.js"></script>
-    <mgt-msal2-provider 
-        client-id="<YOUR_CLIENT_ID>"
-        scopes="User.Read,
-        User.ReadBasic.All,
-        Calendars.Read,
-        Files.Read,
-        Files.Read.All,
-        Sites.Read.All,
-        Tasks.Read,
-        Tasks.ReadWrite,
-        People.Read,
-        User.ReadBasic.All">    
-    </mgt-msal2-provider>     
-  </head>
-  <body>
-    <div>
-      <mgt-login></mgt-login>
-          
-      <div class="features">
-        <div class="header"><div class="title">
-          <h2>One Productivity Hub</h2>
-          <div class="row">
-            <div class="column"><h3>Calendar events</h3></div>
-            <div class="column"><h3>To-do tasks</h3></div>
-            <div class="column"><h3>Files</h3></div>
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <title>One Productivity Hub</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+      <script src='main.js'></script>
+      <script src="https://unpkg.com/@microsoft/mgt@2.5.1/dist/bundle/mgt-loader.js"></script>
+      <mgt-msal2-provider 
+          client-id="<YOUR_CLIENT_ID>"
+          scopes="User.Read,
+          User.ReadBasic.All,
+          Calendars.Read,
+          Files.Read,
+          Files.Read.All,
+          Sites.Read.All,
+          Tasks.Read,
+          Tasks.ReadWrite,
+          People.Read,
+          User.ReadBasic.All">    
+      </mgt-msal2-provider>     
+    </head>
+    <body>
+      <div>
+        <mgt-login></mgt-login>
+            
+        <div class="features">
+          <div class="header"><div class="title">
+            <h2>One Productivity Hub</h2>
+            <div class="row">
+              <div class="column"><h3>Calendar events</h3></div>
+              <div class="column"><h3>To-do tasks</h3></div>
+              <div class="column"><h3>Files</h3></div>
+            </div>
+          </div></div>
+      
+          <div class="row" id="content">
+            <div class="column" id="mgt-col"><mgt-agenda></mgt-agenda></div>
+            <div class="column" id="mgt-col"><mgt-todo></mgt-todo></div>
+            <div class="column" id="mgt-col"><mgt-file-list></mgt-file-list></div>
           </div>
-        </div></div>
-    
-        <div class="row" id="content">
-          <div class="column" id="mgt-col"><mgt-agenda></mgt-agenda></div>
-          <div class="column" id="mgt-col"><mgt-todo></mgt-todo></div>
-          <div class="column" id="mgt-col"><mgt-file-list></mgt-file-list></div>
+            
         </div>
-          
       </div>
-    </div>
-    </body>
-    </html>
-  ```
+      </body>
+      </html>
+    ```
