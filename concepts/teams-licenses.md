@@ -27,7 +27,7 @@ There are no licensing requirements for `model=B`.
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
 > [!NOTE]
-> Active pricing events for these APIs started on July 5 2022. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. For more details, see [Payment and billing updates](#payment-and-billing-updates).
+> Active pricing events for these APIs started on July 5, 2022. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. For more details, see [Payment and billing updates] (#payment-and-billing-updates).
 
 ## `model=A` requirements
 
