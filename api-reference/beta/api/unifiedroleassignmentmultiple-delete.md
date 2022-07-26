@@ -84,7 +84,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_unifiedroleassignmentMultiple",
-  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1", "deviceManagement"]
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
 ```http
@@ -139,8 +139,7 @@ HTTP/1.1 204 No Content
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_unifiedroleassignmentMultiple_cloudpc",
-  "sampleKeys": ["cloudPC"]
+  "name": "delete_unifiedroleassignmentMultiple_cloudpc"
 }-->
 
 ```http

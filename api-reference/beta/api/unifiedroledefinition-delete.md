@@ -156,11 +156,11 @@ HTTP/1.1 204 No Content
 <!-- {
   "blockType": "request",
   "name": "delete_unifiedroledefinition_cloudpc",
-  "sampleKeys": ["cloudPc", "b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff"]
+  "sampleKeys": ["b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff"]
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions/b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff
+DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff
 ```
 
 # [C#](#tab/csharp)

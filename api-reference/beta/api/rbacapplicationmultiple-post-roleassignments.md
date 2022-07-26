@@ -87,8 +87,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedroleassignmentmultiple_from_rbacapplication",
-  "sampleKeys": ["deviceManagement"]
+  "name": "create_unifiedroleassignmentmultiple_from_rbacapplication"
 }-->
 
 ```http
@@ -171,8 +170,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedroleassignmentmultiple_intune_specific",
-  "sampleKeys": ["deviceManagement"]
+  "name": "create_unifiedroleassignmentmultiple_intune_specific"
 }-->
 
 ```http
@@ -248,8 +246,7 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedroleassignmentmultiple_from_rbacapplication_cloudpc",
-  "sampleKeys": ["cloudPC"]
+  "name": "create_unifiedroleassignmentmultiple_from_rbacapplication_cloudpc"
 }-->
 
 ```http

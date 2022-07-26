@@ -85,7 +85,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_unifiedroleassignmentmultiple_from_rbacapplication",
-  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1","deviceManagement"]
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
 ```http
@@ -147,7 +147,7 @@ HTTP/1.1 204 OK
 <!-- {
   "blockType": "request",
   "name": "update_unifiedroleassignmentmultiple_from_rbacapplication_cloudpc",
-  "sampleKeys": ["dbe9d288-fd87-41f4-b33d-b498ed207096","cloudPC"]
+  "sampleKeys": ["dbe9d288-fd87-41f4-b33d-b498ed207096"]
 }-->
 
 ```http

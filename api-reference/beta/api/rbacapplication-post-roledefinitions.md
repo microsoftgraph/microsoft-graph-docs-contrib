@@ -202,12 +202,11 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedroledefinition_from_rbacapplication_cloudpc",
-  "sampleKeys": ["cloudPc"]
+  "name": "create_unifiedroledefinition_from_rbacapplication_cloudpc"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions
+POST https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
 Content-type: application/json
 
 {

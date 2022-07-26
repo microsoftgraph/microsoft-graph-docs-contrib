@@ -264,8 +264,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_roledefinitions_cloudpc",
-  "sampleKeys": ["cloudPC"]
+  "name": "get_roledefinitions_cloudpc"
 }-->
 
 ```msgraph-interactive

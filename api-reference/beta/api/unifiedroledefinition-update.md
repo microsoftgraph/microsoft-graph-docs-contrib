@@ -188,11 +188,11 @@ Content-type: application/json
 <!-- {
   "blockType": "request",
   "name": "update_unifiedroledefinition_cloudpc",
-  "sampleKeys": ["cloudPc", "b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff"]
+  "sampleKeys": ["b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff"]
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions/b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff
+PATCH https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff
 Content-type: application/json
 
 {
