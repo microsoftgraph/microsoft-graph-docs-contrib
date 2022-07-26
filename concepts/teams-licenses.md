@@ -137,7 +137,7 @@ Please note that the organization that owns the app registration is responsible 
 | Is possible to differentiate billing from multitenant or single tenant app? | Yes, this information must be provided as part of Azure billing details. |
 | Is there a charge when no message is returned using any model? | To discourage frequent [polling](/graph/api/resources/teams-api-overview), API requests that return an empty list of messages will be charged 1 message. In the case of `evaluation model` the call will count towards the 500 messages per month per app allowed. | 
 | Where can I monitor the cost and billing? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) can use Azure Cost Analysis tool to track consumption per day or filter by meter, service name, resource ID among other parameters. For more details refer to our [documentation](/azure/cost-management-billing). |
-| Is there a volume discount ? | Flat rates apply. |  
+| Is there a volume discount? | Flat rates apply. |  
 | Are these APIs enrolled in [Microsoft Azure Consumption Commitment (MACC) program](/azure/marketplace/azure-consumption-commitment-enrollment)? | Not at this moment.|
 | Is it possible to obtain an extension, in case an organization didn't plan for this? | We can grant a short term extension on case by case basis. Fill out this [request extension form](https://aka.ms/TeamsGraphAPIExtension) providing your Azure subscription and reach out to TeamsAPIBilling@microsoft.com. |  
 
