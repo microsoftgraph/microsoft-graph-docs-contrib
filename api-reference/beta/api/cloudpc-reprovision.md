@@ -19,11 +19,21 @@ Reprovision a specific Cloud PC.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### To reprovision the cloudPC for the administrator
+
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CloudPC.ReadWrite.All|
+
+### To reprovision the cloudPC for the signed-in user
+
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | CloudPC.ReadWrite.All,CloudPC.Read.All      |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -34,6 +44,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
+POST /me/cloudPCs/{id}/reprovision
+POST /users/{userId}/cloudPCs/{id}/reprovision
 ```
 
 ## Request headers
@@ -44,6 +56,8 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
 |Content-Type|application/json. Required.|
 
 ## Request body
+
+> **Note**: Only the APIs for **admin** support request body.
 
 In the request body, supply a JSON representation of the parameters.
 
@@ -60,7 +74,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Reboot the cloudPC for the administrator
+
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -108,7 +124,33 @@ Content-length: 61
 ---
 
 
-### Response
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Reprovision the cloudPC for the signed-in user
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "user_cloudpc_reprovision"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002/reprovision
+```
+
+#### Response
 
 <!-- {
   "blockType": "response",

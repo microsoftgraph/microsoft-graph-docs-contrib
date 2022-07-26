@@ -19,11 +19,21 @@ Read the properties and relationships of a specific [cloudPC](../resources/cloud
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### To get the cloudPC for the administrator
+
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
+
+### To get the cloudPC for the signed-in user
+
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | CloudPC.ReadWrite.All,CloudPC.Read.All      |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -34,6 +44,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
+GET /me/cloudPCs{id}
+GET /users/{userId}/cloudPCs/{id}
 ```
 
 ## Optional query parameters
@@ -229,5 +241,70 @@ Content-Type: application/json
       "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
       "statusDetails": null
     }
+}
+```
+
+### Exmaple 3: Get the default properties of a Cloud PC of the signed-in user
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "user_get_cloudpc_default_properties"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "user_get_cloudpc_default_properties",
+  "@odata.type": "microsoft.graph.cloudPC"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.cloudPC",
+    "aadDeviceId": "61204a22-0ca8-11ed-861d-0242ac120002",
+    "id": "36bd4942-0ca8-11ed-861d-0242ac120002",
+    "displayName": "Demo-1",
+    "imageDisplayName": "Windows-10 19h1-evd",
+    "managedDeviceId": "70341bb0-0ca8-11ed-861d-0242ac120002",
+    "managedDeviceName": "A00002GI001",
+    "provisioningPolicyId": "7a3bdee0-0ca8-11ed-861d-0242ac120002",
+    "provisioningPolicyName": "Marketing provisioning policy",
+    "onPremisesConnectionName": "Azure network connection for Marketing",
+    "servicePlanId": "83fca22a-0ca8-11ed-861d-0242ac120002",
+    "servicePlanName": "standard",
+    "servicePlanType": "enterprise",
+    "status": "failed",
+    "statusDetails": {
+    "@odata.type": "microsoft.graph.cloudPcStatusDetails",
+    "code": "internalServerError",
+    "message": "There was an internal server error. Please contact support xxx.",
+    "additionalInformation": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "correlationId",
+          "value": "8fea34e4-0ca8-11ed-861d-0242ac120002"
+        }
+      ]
+    },
+    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+    "lastModifiedDateTime": "2020-11-03T18:14:34Z",
+    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
 }
 ```
