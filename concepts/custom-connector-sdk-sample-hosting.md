@@ -11,7 +11,7 @@ ms.date: 07/01/2022
 description: "Microsoft Graph connectors SDK Sample Hosting"
 ---
 
-# Host the Microsoft Graph connector as a windows service
+# Host the Microsoft Graph connector as a Windows service
 
 The connector executable must be always running so that the connector platform can make requests to it during the crawls or to perform any connection management operations. The executable won't be actively consuming any resources except for the times when the connector is being crawled. The rest of the time, the connector executable will just be idle.
 
