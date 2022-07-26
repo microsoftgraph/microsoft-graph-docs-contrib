@@ -172,48 +172,6 @@ items:
           - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
             displayName: Microsoft Graph connectors, connect external content
-          - name: Graph connectors SDK
-            items:
-            - name: Overview
-              href: custom-connector-sdk-overview.md
-            - name: Contracts
-              items:
-              - name: Services
-                href: custom-connector-sdk-contracts-services.md
-              - name: Connector Info API
-                href: custom-connector-sdk-contracts-connectorinfo.md
-              - name: Connection Management API
-                href: custom-connector-sdk-contracts-connectionmanagement.md
-              - name: Connector Crawler API
-                href: custom-connector-sdk-contracts-connectorcrawler.md
-              - name: Connector OAuth API
-                href: custom-connector-sdk-contracts-connectoroauth.md
-              - name: Common Models
-                href: custom-connector-sdk-contracts-common.md
-            - name: Test Utility
-              href: custom-connector-sdk-testapp.md
-            - name: Publishing a connection
-              href: custom-connector-sdk-publish.md
-            - name: Build your first custom connector
-              items:
-                - name: Overview
-                  href: custom-connector-sdk-sample-overview.md
-                - name: Develop your connector
-                  href: custom-connector-sdk-sample-create.md
-                - name: Test your connector
-                  href: custom-connector-sdk-sample-test.md
-                - name: Host the connector as a windows service
-                  href: custom-connector-sdk-sample-hosting.md
-                - name: Publish a connection
-                  href: custom-connector-sdk-sample-publish.md
-                - name: Search for results
-                  href: custom-connector-sdk-sample-search.md
-            - name: Develop connectors in multiple languages 
-              href: custom-connector-sdk-other-languages.md
-            - name: Best practices
-              href: custom-connector-sdk-best-practices.md
-            - name: Troubleshooting
-              href: custom-connector-sdk-troubleshooting.md
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
             displayName: Microsoft Graph connectors
@@ -223,6 +181,20 @@ items:
           - name: Build your first custom connector
             href: connecting-external-content-build-quickstart.yml
             displayName: connectors, Microsoft Graph connectors
+          - name: Build your first custom connector using SDK
+            items:
+              - name: Overview
+                href: custom-connector-sdk-sample-overview.md
+              - name: Develop your connector
+                href: custom-connector-sdk-sample-create.md
+              - name: Test your connector
+                href: custom-connector-sdk-sample-test.md
+              - name: Host the connector as a windows service
+                href: custom-connector-sdk-sample-hosting.md
+              - name: Publish a connection
+                href: custom-connector-sdk-sample-publish.md
+              - name: Search for results
+                href: custom-connector-sdk-sample-search.md
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
@@ -777,6 +749,34 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
+          - name: Use Graph connectors SDK
+            items:
+            - name: Overview
+              href: custom-connector-sdk-overview.md
+            - name: Contracts
+              items:
+              - name: Services
+                href: custom-connector-sdk-contracts-services.md
+              - name: Connector Info API
+                href: custom-connector-sdk-contracts-connectorinfo.md
+              - name: Connection Management API
+                href: custom-connector-sdk-contracts-connectionmanagement.md
+              - name: Connector Crawler API
+                href: custom-connector-sdk-contracts-connectorcrawler.md
+              - name: Connector OAuth API
+                href: custom-connector-sdk-contracts-connectoroauth.md
+              - name: Common Models
+                href: custom-connector-sdk-contracts-common.md
+            - name: Test Utility
+              href: custom-connector-sdk-testapp.md
+            - name: Publishing a connection
+              href: custom-connector-sdk-publish.md
+            - name: Develop connectors in multiple languages 
+              href: custom-connector-sdk-other-languages.md
+            - name: Best practices
+              href: custom-connector-sdk-best-practices.md
+            - name: Troubleshooting
+              href: custom-connector-sdk-troubleshooting.md
           - name: Use PowerShell
             items:
               - name: PowerShell overview
