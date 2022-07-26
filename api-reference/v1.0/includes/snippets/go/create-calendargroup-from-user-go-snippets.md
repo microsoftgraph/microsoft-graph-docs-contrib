@@ -7,9 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewCalendarGroup()
+requestBody := graphmodels.NewCalendarGroup()
 name := "Personal events"
-requestBody.SetName(&name)
+requestBody.SetName(&name) 
+
 result, err := graphClient.Me().CalendarGroups().Post(requestBody)
 
 

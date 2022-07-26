@@ -94,7 +94,7 @@ The status of the Delegated Admin access assignment. The status transitions are 
 
 ## Permissions
 
-To manage delegated admin relationships, the calling principal must be in the partner tenant and be granted the appropriate [granular delegated admin privileges permissions](/graph/permissions-reference#delegated-admin-relationship-permissions).
+To manage delegated admin relationships, the calling principal must be in the partner tenant and be granted the appropriate [granular delegated admin privileges permissions](/graph/permissions-reference#granular-delegated-admin-privileges-gdap-permissions).
 
 
 ## See also

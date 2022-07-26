@@ -7,12 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewSourceCollection()
+requestBody := graphmodels.NewSourceCollection()
 displayName := "Quarterly Financials search"
-requestBody.SetDisplayName(&displayName)
-caseId := "case-id"
-sourceCollectionId := "sourceCollection-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).SourceCollectionsById(&sourceCollectionId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+graphClient.Compliance().Ediscovery().CasesById("case-id").SourceCollectionsById("sourceCollection-id").Patch(requestBody)
 
 
 ```

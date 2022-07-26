@@ -7,9 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewIsSyncedFromOnPremisesRequestBody()
+requestBody := graphmodels.NewGetAvailableExtensionPropertiesPostRequestBody()
 isSyncedFromOnPremises := true
-requestBody.SetIsSyncedFromOnPremises(&isSyncedFromOnPremises)
+requestBody.SetIsSyncedFromOnPremises(&isSyncedFromOnPremises) 
+
 result, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().Post(requestBody)
 
 
