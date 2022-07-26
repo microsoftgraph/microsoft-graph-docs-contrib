@@ -51,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_workbookpivottable"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/pivotTables/{id}
 ```
 
