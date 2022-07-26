@@ -18,11 +18,11 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List documentSetVersions](../api/listitem-list-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md) collection|Get the [documentSetVersion](../resources/documentsetversion.md) resources from the **documentSetVersions** navigation property.|
-|[Create documentSetVersion](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new [documentSetVersion](../resources/documentsetversion.md) object.|
+|[List documentSetVersions](../api/listitem-list-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md) collection|Get a list of the [versions of a document set](../resources/documentsetversion.md) item in a [list](../resources/list.md).|
+|[Create documentSetVersion](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new [version of a document set](../resources/documentsetversion.md) item in a [list](../resources/list.md).|
 |[Get documentSetVersion](../api/documentsetversion-get.md)|[documentSetVersion](../resources/documentsetversion.md)|Read the properties and relationships of a [documentSetVersion](../resources/documentsetversion.md) object.|
-|[Delete documentSetVersion](../api/documentsetversion-delete.md)|None|Delete a [documentSetVersion](../resources/documentsetversion.md) object.|
-|[restore](../api/documentsetversion-restore.md)|[documentSetVersion](../resources/documentsetversion.md)|Restore a [documentSetVersion](../resources/documentsetversion.md).|
+|[Delete documentSetVersion](../api/documentsetversion-delete.md)|None|Delete a [version of a document set](../resources/documentsetversion.md) in a list.|
+|[restore](../api/documentsetversion-restore.md)|[documentSetVersion](../resources/documentsetversion.md)|Restore a [document set version](../resources/documentsetversion.md).|
 
 
 ## Properties
@@ -35,7 +35,7 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 | items     | [documentSetVersionItem](../resources/documentsetversionitem.md) collection | Items within the document set that are captured as part of this version.|
 | lastModifiedBy       | [identitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).|
 | lastModifiedDateTime | [dateTimeOffset](../resources/timestamp.md)          | Date and time when the version was last modified. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).     |
-| published            | [publicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).| 
+| published            | [publicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).|
 | shouldCaptureMinorVersion | boolean  | If `true`, minor versions of items are also captured; otherwise, only major versions will be captured. Default value is `false`.|
 
 ## Relationships

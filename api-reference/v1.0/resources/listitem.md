@@ -22,19 +22,19 @@ Column values in the list are available through the `fieldValueSet` dictionary.
 The following methods are available for **listItem** resources.
 All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`.
 
-| Method                    | Return Type | Description
-|:-------------------------------|:-------------------|:------
-| [Get][]                   | listItem| Get an item in a list.
-| [Get column values][Get]       | listItem | Get column values from listItem.
-| [Get analytics][]              | [itemAnalytics][]| Get analytics for this resource. 
-| [Get activities by interval][] | [itemActivityStat][]| Get a collection of itemActivityStats within the specified time interval.
-| [Create][]                     | listItem | Create a new listItem in a list.
-| [Delete][]                     | No Content | Removes an item from a list.
-| [Update][]                     | [fieldValueSet][]| Update the properties on a listItem.
-| [Update column values][Update] | [fieldValueSet][]| Update column values on a listItem.
-| [List documentSetVersions](../api/listitem-list-documentsetversions.md)| Collection([documentSetVersion][]) | List all captured versions of a document set item.
-| [Create documentSetVersion](../api/listitem-post-documentsetversions.md)| [documentSetVersion][] | Create a new version of a document set item.
-| [Restore documentSetVersion](../api/documentsetversion-restore.md)| No Content | Restore the document set item to a specific version.
+| Method                                                                   | Return Type                        | Description                                                               |
+|:-------------------------------------------------------------------------|:-----------------------------------|:--------------------------------------------------------------------------|
+| [Get][]                                                                  | listItem                           | Get an item in a list.                                                    |
+| [Get column values][Get]                                                 | listItem                           | Get column values from listItem.                                          |
+| [Get analytics][]                                                        | [itemAnalytics][]                  | Get analytics for this resource.                                          |
+| [Get activities by interval][]                                           | [itemActivityStat][]               | Get a collection of itemActivityStats within the specified time interval. |
+| [Create][]                                                               | listItem                           | Create a new listItem in a list.                                          |
+| [Delete][]                                                               | No Content                         | Removes an item from a list.                                              |
+| [Update][]                                                               | [fieldValueSet][]                  | Update the properties on a listItem.                                      |
+| [Update column values][Update]                                           | [fieldValueSet][]                  | Update column values on a listItem.                                       |
+| [List documentSetVersions](../api/listitem-list-documentsetversions.md)  | [documentSetVersion][] collection  | Get a list of the versions of a document set item in a list.              |
+| [Create documentSetVersion](../api/listitem-post-documentsetversions.md) | [documentSetVersion][]             | Create a new version of a document set item in a list.                    |
+| [Restore documentSetVersion](../api/documentsetversion-restore.md)       | No Content                         | Restore the document set item to a specific version.                      |
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -45,7 +45,7 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 
 [itemActivityStat]: itemactivitystat.md
 [fieldValueSet]: fieldvalueset.md
-[documentSetVersion]: documentSetVersion.md
+[documentSetVersion]: documentsetversion.md
 
 ## Properties
 

@@ -1,6 +1,6 @@
 ---
 title: "Delete documentSetVersion"
-description: "Delete a documentSetVersion object."
+description: "Delete a version of a document set in a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -15,11 +15,11 @@ Delete a [version of a document set](../resources/documentsetversion.md) in a li
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All, Sites.Selected|
+| Permission type                        | Permissions (from least to most privileged)                                  |
+|:---------------------------------------|:-----------------------------------------------------------------------------|
+| Delegated (work or school account)     | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All                 |
+| Delegated (personal Microsoft account) | Not supported.                                                               |
+| Application                            | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All, Sites.Selected |
 
 ## HTTP request
 
@@ -52,7 +52,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_documentsetversion"
+  "name": "delete_documentsetversion",
+  "sampleKeys": ["root", "Documents", "2", "1"]
 }
 -->
 ``` http
