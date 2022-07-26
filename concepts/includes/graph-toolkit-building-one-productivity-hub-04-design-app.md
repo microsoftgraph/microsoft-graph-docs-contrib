@@ -2,7 +2,7 @@ In this step, you'll design your web app by using Microsoft Graph Toolkit compon
 
 ## Initialize the Login component
 
-In **index.html** under `<body></body>`, add the Login component:
+In **index.html** under `<body></body>`, create `<div></div>` and add the Login component inside the main div:
 
   ```html
   <mgt-login></mgt-login>
@@ -10,22 +10,26 @@ In **index.html** under `<body></body>`, add the Login component:
 
 ## Create a title and a column for the rest of the components
 
-To make our app look structured, let's create a title and a column for each feature that will be added in the One Productivity Hub moving forward. In **index.html** under `<body></body>`, add the following html code inside the div tagged with `class="features"`:
+To make our app look structured, let's create a title and a column for each feature that will be added in the One Productivity Hub moving forward. In **index.html** under `<body></body>`, add the following html code inside the div, right below the login component:
 
   ```HTML
   <div class="features">
+
     <div class="header"><div class="title">
       <h2>One Productivity Hub</h2>
-      <div class="row"><div class="column"><h3>Calendar events</h3></div>
-      <div class="column"><h3>To-do tasks</h3></div>
-      <div class="column"><h3>Files</h3></div>
+      <div class="row">
+        <div class="column"><h3>Calendar events</h3></div>
+        <div class="column"><h3>To-do tasks</h3></div>
+        <div class="column"><h3>Files</h3></div>
+      </div>
     </div></div>
-  
+
     <div class="row" id="content">
       <div class="column" id="mgt-col"></div>
       <div class="column" id="mgt-col"></div>
       <div class="column" id="mgt-col"></div>
     </div>
+
   </div>
   ```
 
@@ -51,80 +55,6 @@ Under div tagged with `class="row"`, add the File list component inside the thir
 
   ```HTML
   <mgt-file-list></mgt-file-list>
-  ```
-
-Make sure that the final version of **index.html** is similar with the following code snippet:
-
-  ```html
-  <!DOCTYPE html>
-  <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>One Productivity Hub</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-  
-    <script src='main.js'></script>
-    <script src="https://unpkg.com/@microsoft/mgt@2.5.1/dist/bundle/mgt-loader.js"></script>
-    <mgt-msal2-provider 
-        client-id="<YOUR_CLIENT_ID>"
-        scopes="User.Read,
-        User.ReadBasic.All,
-        Calendars.Read,
-        Files.Read,
-        Files.Read.All,
-        Sites.Read.All,
-        Tasks.Read,
-        Tasks.ReadWrite,
-        People.Read,
-        User.ReadBasic.All">    
-    </mgt-msal2-provider>
-  </head>
-  <body>
-      
-    <div>
-      
-      <mgt-login></mgt-login>
-    
-      <div class="features">
-        <div class="header">
-          <div class="title">
-            <h2>One Productivity Hub</h2>
-  
-            <div class="row">
-              <div class="column">
-                  <h3>Calendar events</h3>
-              </div>
-              <div class="column">
-                <h3>To-do tasks</h3>
-              </div>
-              <div class="column">
-                <h3>Files</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-      
-        <div class="row" id="content">
-  
-                <div class="column" id="mgt-col">
-                  <mgt-agenda></mgt-agenda>
-                </div>
-                <div class="column" id="mgt-col">
-                  <mgt-todo></mgt-todo>
-                </div>
-                <div class="column" id="mgt-col">
-                  <mgt-file-list></mgt-file-list>
-                </div>
-        </div>
-  
-      </div>
-    </div>
-  </body>
-  </html>
-  
   ```
 
 ## Style your web app with CSS
@@ -208,8 +138,61 @@ Make sure that the final version of **index.html** is similar with the following
       }
     ```
 
-1. In **index.html** under `<head></head>`, make sure that the the stylesheet link `href` is defined as **index.css**:
+1. In **index.html** under `<head></head>`, define the stylesheet link `href` as **index.css**:
 
     ```html
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     ```
+
+Make sure that the final version of **index.html** is similar with the following code snippet:
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>One Productivity Hub</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src='main.js'></script>
+    <script src="https://unpkg.com/@microsoft/mgt@2.5.1/dist/bundle/mgt-loader.js"></script>
+    <mgt-msal2-provider 
+        client-id="<YOUR_CLIENT_ID>"
+        scopes="User.Read,
+        User.ReadBasic.All,
+        Calendars.Read,
+        Files.Read,
+        Files.Read.All,
+        Sites.Read.All,
+        Tasks.Read,
+        Tasks.ReadWrite,
+        People.Read,
+        User.ReadBasic.All">    
+    </mgt-msal2-provider>     
+  </head>
+  <body>
+    <div>
+      <mgt-login></mgt-login>
+          
+      <div class="features">
+        <div class="header"><div class="title">
+          <h2>One Productivity Hub</h2>
+          <div class="row">
+            <div class="column"><h3>Calendar events</h3></div>
+            <div class="column"><h3>To-do tasks</h3></div>
+            <div class="column"><h3>Files</h3></div>
+          </div>
+        </div></div>
+    
+        <div class="row" id="content">
+          <div class="column" id="mgt-col"><mgt-agenda></mgt-agenda></div>
+          <div class="column" id="mgt-col"><mgt-todo></mgt-todo></div>
+          <div class="column" id="mgt-col"><mgt-file-list></mgt-file-list></div>
+        </div>
+          
+      </div>
+    </div>
+    </body>
+    </html>
+  ```

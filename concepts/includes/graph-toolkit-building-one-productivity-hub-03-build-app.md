@@ -51,7 +51,7 @@ To use the Microsoft Graph Toolkit via mgt-loader, add the following reference i
       <meta http-equiv='X-UA-Compatible' content='IE=edge'>
       <title>One Productivity Hub</title>
       <meta name='viewport' content='width=device-width, initial-scale=1'>
-      <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+      <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
       <script src='main.js'></script>
     
       <script src="https://unpkg.com/@microsoft/mgt@2.5.1/dist/bundle/mgt-loader.js"></script>
