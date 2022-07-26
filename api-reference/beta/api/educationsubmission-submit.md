@@ -18,11 +18,22 @@ Indicate that a student is done with the work and is ready to hand in the assign
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
+|Permission type      | Role    |Permissions (from least to most privileged)              |
+|:--------------------|:--------|:---------------------------------------------------------|
+|Delegated (work or school account) | Teacher (work or school account)  |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegated (personal Microsoft account) | Student(work or school account)  |  Not supported.  |
+|Application |  App Only  | Not supported. | 
+
+## Roles
+When the submission action is performed in the following role, the result is as below:
+| Role    | Result               |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+| Teacher (work or school account)  |  Submitted successfully (200 OK)  |
+| Teacher (personal Microsoft account)  |  Not supported.  |
+| Student (work or school account)  |  Submitted successfully (200 OK)  |
+| Student (personal Microsoft account)  |  Not supported.  |
+| Application   | Not supported. | 
+
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

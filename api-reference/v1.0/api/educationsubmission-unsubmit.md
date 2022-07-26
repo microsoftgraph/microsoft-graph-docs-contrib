@@ -24,6 +24,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) |  Not supported.  |
 |Application | Not supported. | 
 
+## Roles
+When the submission action is performed in the following role, the result is as below:
+| Role    | Result               |
+|:--------------------|:---------------------------------------------------------|
+| Teacher (work or school account)  |  Submitted successfully (200 OK)  |
+| Teacher (personal Microsoft account)  |  Not supported.  |
+| Student (work or school account)  |  Submitted successfully (200 OK)  |
+| Student (personal Microsoft account)  |  Not supported.  |
+| Application   | Not supported. | 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
