@@ -24,15 +24,22 @@ None.
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **unifiedGroupSource**.|
 |createdDateTime|DateTimeOffset|The date and time the **unifiedGroupSource** was created.|
-|displayName|String|The display name of the unified group - This is the name of the group.|
+|displayName|String|The display name of the unified group, which is the name of the group.|
 |id|String|The ID of the **unifiedGroupSource**. This is not the ID of the actual group.|
-|includedSources|String|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
-|holdStatus|String|The hold status of the **unifiedGroupSource**.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the **unifiedGroupSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`.|
+
+### sourceType values
+|Member|Description|
+|:----|-----------|
+| mailbox | Represents a mailbox.|
+| site | Represents a SharePoint site.|
+
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|group|[group](../resources/group.md)|Represent a group.|
+|group|[group](../resources/group.md)|Represents a group.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

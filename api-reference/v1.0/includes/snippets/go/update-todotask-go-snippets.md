@@ -7,16 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTodoTask()
-dueDateTime := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetDueDateTime(dueDateTime)
+requestBody := graphmodels.NewTodoTask()
+dueDateTime := graphmodels.NewDateTimeTimeZone()
 dateTime := "2020-07-25T16:00:00"
-dueDateTime.SetDateTime(&dateTime)
+dueDateTime.SetDateTime(&dateTime) 
 timeZone := "Eastern Standard Time"
-dueDateTime.SetTimeZone(&timeZone)
-todoTaskListId := "todoTaskList-id"
-todoTaskId := "todoTask-id"
-graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).Patch(requestBody)
+dueDateTime.SetTimeZone(&timeZone) 
+requestBody.SetDueDateTime(dueDateTime)
+
+graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").Patch(requestBody)
 
 
 ```

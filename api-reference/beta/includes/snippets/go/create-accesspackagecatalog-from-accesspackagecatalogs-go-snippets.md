@@ -7,13 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAccessPackageCatalog()
+requestBody := graphmodels.NewAccessPackageCatalog()
 displayName := "sales"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "for employees working with sales and outside sales partners"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 isExternallyVisible := true
-requestBody.SetIsExternallyVisible(&isExternallyVisible)
+requestBody.SetIsExternallyVisible(&isExternallyVisible) 
+
 result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().Post(requestBody)
 
 
