@@ -91,7 +91,7 @@ Content-Type: application/json
 {
   "sensitivityLabelId": "5feba255-812e-446a-ac59-a7044ef827b5",
   "assignmentMethod": "standard",
-  justificationText": "test_justification"
+  "justificationText": "test_justification"
 }
 ```
 
