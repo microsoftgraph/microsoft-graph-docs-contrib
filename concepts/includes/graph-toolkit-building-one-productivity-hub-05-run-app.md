@@ -7,4 +7,4 @@ In this step, you will build and run the sample. This code sample be initialized
     ![Screenshot showing the One Productivity Hub sample](../images/mgt-one-productivity-hub/one-productivity-hub-overview.gif)
 
 > [!NOTE]
-> Try to add some calendar events, to-do tasks and file folders in your M365 Developer tenant account. Your "One Productivity Hub" will look awesome that way!
+> To make One Productivity Hub sample work, try to add some calendar events, to-do tasks and file folders in your M365 Developer tenant account.
