@@ -39,7 +39,7 @@ GET /identityGovernance/entitlementManagement/assignments
 
 This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response.
 
-If the caller is on behalf of a delegated user who is assigned only to catalog-specific delegated administrative roles, or the application has been assigned to catalog-specific administrative roles, the request must supply a filter to indicate a specific access package, such as: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'`.
+If the user or app is assigned only to catalog-specific administrative roles, the request must supply a filter to indicate a specific access package, such as: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'`.
 
 ### Example scenarios for using query parameters
 
