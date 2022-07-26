@@ -57,7 +57,8 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_group_3"
+  "name": "get_group_3",
+  "sampleKeys": ["1FFD3F87-9464-488A-A0EC-8FB90911182C"]
 }
 -->
 

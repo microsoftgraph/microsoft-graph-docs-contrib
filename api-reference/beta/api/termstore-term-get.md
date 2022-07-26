@@ -61,7 +61,8 @@ If successful, this method returns a `200 OK` response code and a [term](../reso
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_term_1"
+  "name": "get_term_1",
+  "sampleKeys": ["1FFD3F87-9464-488A-A0EC-8FB90911182C", "8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f","81be9856-9856-81be-5698-be815698be81"]
 } -->
 
 ``` http

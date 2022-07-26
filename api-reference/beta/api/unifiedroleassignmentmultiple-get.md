@@ -88,7 +88,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignmentmultiple_1",
-  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1", "deviceManagement"]
 }-->
 
 ```msgraph-interactive
@@ -157,7 +157,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignmentmultiple_2"
+  "name": "get_unifiedroleassignmentmultiple_2",
+  "sampleKeys": ["deviceManagement", "564ae70c-73d9-476b-820b-fb61eb7384b9"]
 }-->
 
 ```msgraph-interactive
@@ -240,7 +241,7 @@ The following is an example of the request with the `$expand` query parameter.
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignment_3",
-  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1","deviceManagement"]
 }-->
 
 ```msgraph-interactive
@@ -341,7 +342,8 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignmentmultiple_1"
+  "name": "get_unifiedroleassignmentmultiple_1",
+  "sampleKeys": ["cloudPC", "dbe9d288-fd87-41f4-b33d-b498ed207096"]
 }-->
 
 ```msgraph-interactive
@@ -415,7 +417,8 @@ The following is an example of the request with the `$expand` query parameter.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignment_3"
+  "name": "get_unifiedroleassignment_3",
+  "sampleKeys": ["dbe9d288-fd87-41f4-b33d-b498ed207096", "cloudPC"]
 }-->
 
 ```msgraph-interactive

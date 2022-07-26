@@ -147,11 +147,12 @@ Here is an example which attaches an event with another event as an item attachm
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_item_attachment_from_event"
+  "name": "create_item_attachment_from_event",
+  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="]
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
+POST https://graph.microsoft.com/beta/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
 
 {

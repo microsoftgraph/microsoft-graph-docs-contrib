@@ -60,7 +60,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "printjob-redirect",
-  "sampleKeys": ["44353"]
+  "sampleKeys": ["44353","d5ef6ec4-07ca-4212-baf9-d45be126bfbb"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353/redirect
@@ -114,10 +114,6 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
----
-
 
 ### Response
 The following is an example of the response. 

@@ -99,7 +99,7 @@ The request does not specify any `Prefer: outlook.body-content-type` header to i
   "sampleKeys": ["AAMkAGIAAAoZDOFAAA="]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees 
+GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
@@ -230,7 +230,7 @@ The request also uses a `$select` query parameter to return specific properties.
   "sampleKeys": ["AAMkAGI1AAAoZDOFAAA="]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkAGI1AAAoZDOFAAA=/?$select=subject,body,bodyPreview
+GET https://graph.microsoft.com/beta/me/events/AAMkAGI1AAAoZDOFAAA=?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text"
 ```
 
@@ -301,7 +301,7 @@ to return specific properties.
   "sampleKeys": ["AAMkADAGAADDdm4NAAA="]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
+GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
 
 # [C#](#tab/csharp)
@@ -445,7 +445,7 @@ The following example shows expanding a series master event of a recurring serie
   "sampleKeys": ["AAMkADAGAADDdm4NAAA="]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences&$expand=exceptionOccurrences
+GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences&$expand=exceptionOccurrences
 ```
 
 # [C#](#tab/csharp)

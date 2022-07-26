@@ -84,7 +84,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_unifiedroleassignmentMultiple",
-  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1", "deviceManagement"]
 }-->
 
 ```http
@@ -139,11 +139,12 @@ HTTP/1.1 204 No Content
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_unifiedroleassignmentMultiple_cloudpc"
+  "name": "delete_unifiedroleassignmentMultiple_cloudpc",
+  "sampleKeys": ["cloudPC"]
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/id
+DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/{id}
 ```
 
 # [C#](#tab/csharp)

@@ -69,7 +69,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "put_b2cuserflows-apiconnectorconfiguration_postFederationSignup",
-  "sampleKeys": ["B2C_1_testuserflow"]
+  "sampleKeys": ["B2C_1_testuserflow", "postFederationSignup"]
 }
 -->
 
@@ -93,9 +93,6 @@ Content-Type: application/json
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/put-b2cuserflows-apiconnectorconfiguration-postfederationsignup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 
@@ -123,7 +120,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "put_b2cuserflows-apiconnectorconfiguration_postAttributeCollection",
-  "sampleKeys": ["B2C_1_testuserflow"]
+  "sampleKeys": ["B2C_1_testuserflow", "postAttributeCollection"]
 }
 -->
 
@@ -176,7 +173,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "put_b2cuserflows-apiconnectorconfiguration_disable-postAttributeCollection",
-  "sampleKeys": ["B2C_1_testuserflow"]
+  "sampleKeys": ["B2C_1_testuserflow", "postAttributeCollection"]
 }
 -->
 

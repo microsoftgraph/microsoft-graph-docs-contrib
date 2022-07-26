@@ -48,7 +48,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_inferenceclassificationoverride"
+  "name": "delete_inferenceclassificationoverride",
+  "sampleKeys": ["98f5bdef-576a-404d-a2ea-07a3cf34af4"]
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4

@@ -201,7 +201,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_organizationalbranding_defaultlocale_bannerLogo"
+  "name": "get_organizationalbranding_defaultlocale_bannerLogo",
+  "sampleKeys": ["d69179bf-f4a4-41a9-a9de-249c0f2efb1d"]
 }-->
 
 ```msgraph-interactive
@@ -237,7 +238,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbranding_frlocale_bannerLogo"
+  "name": "get_organizationalbranding_frlocale_bannerLogo",
+  "sampleKeys": ["d69179bf-f4a4-41a9-a9de-249c0f2efb1d"]
 }-->
 
 ```msgraph-interactive
