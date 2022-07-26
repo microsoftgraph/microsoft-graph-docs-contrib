@@ -4,11 +4,11 @@ In this step, you will build and run the sample. This code sample be initialized
 
 1. Select **Sign in** and use your Microsoft 365 Developer Program tenant to login.
 
-    ![Screenshot showing the One Productivity Hub initial page](../images/mgt-one-productivity-hub/run-app-sign-in.gif)
+    ![Screenshot showing the One Productivity Hub initial page](../images/mgt-one-productivity-hub/run-app-sign-in.png)
 
 1. Consent the required permissions to use the application features such as viewing calendar events,to-do tasks and file folders.
 
-    ![Screenshot showing the One Productivity Hub sample](../images/mgt-one-productivity-hub/run-app-consent-permissions.gif)
+    ![Screenshot showing the permissions page](../images/mgt-one-productivity-hub/run-app-consent-permissions.png)
 
 1. To make sure that One Productivity Hub app works properly, add some calendar events, to-do tasks and file folders in your M365 Developer tenant account.
 
