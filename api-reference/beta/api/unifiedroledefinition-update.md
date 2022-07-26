@@ -187,7 +187,8 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_unifiedroledefinition_cloudpc"
+  "name": "update_unifiedroledefinition_cloudpc",
+  "sampleKeys": ["cloudPc", "b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff"]
 }-->
 
 ```http

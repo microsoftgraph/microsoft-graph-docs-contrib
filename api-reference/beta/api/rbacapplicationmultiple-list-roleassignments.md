@@ -90,7 +90,7 @@ The following is an example of the request:
 <!-- {
   "blockType": "request",
   "name": "list_unifiedroleassignmentmultiple",
-  "sampleKeys": ["9e47fc6f-2d7a-464c-944e-d3dd0de522e4"]
+  "sampleKeys": ["9e47fc6f-2d7a-464c-944e-d3dd0de522e4","deviceManagement"]
 }-->
 
 ```msgraph-interactive
@@ -167,7 +167,8 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_cloudpcunifiedroleassignmentmultiple_1"
+  "name": "list_cloudpcunifiedroleassignmentmultiple_1",
+  "sampleKeys": ["cloudPC"]
 }-->
 
 ```msgraph-interactive
@@ -257,7 +258,8 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_cloudpcunifiedroleassignmentmultiple_2"
+  "name": "list_cloudpcunifiedroleassignmentmultiple_2",
+  "sampleKeys": ["cloudPC", "b5c08161-a7af-481c-ace2-a20a69a48fb1"]
 }-->
 
 ```msgraph-interactive

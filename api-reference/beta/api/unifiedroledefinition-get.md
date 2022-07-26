@@ -477,7 +477,8 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_built-in_cloudpc_role_unifiedroledefinition"
+  "name": "get_built-in_cloudpc_role_unifiedroledefinition",
+  "sampleKeys": ["cloudPC","d40368cb-fbf4-4965-bbc1-f17b3a78e510"]
 }-->
 
 ```msgraph-interactive

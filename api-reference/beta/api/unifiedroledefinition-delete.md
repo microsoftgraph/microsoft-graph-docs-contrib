@@ -155,7 +155,8 @@ HTTP/1.1 204 No Content
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_unifiedroledefinition_cloudpc"
+  "name": "delete_unifiedroledefinition_cloudpc",
+  "sampleKeys": ["cloudPc", "b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff"]
 }-->
 
 ```http

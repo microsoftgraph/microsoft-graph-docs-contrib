@@ -202,7 +202,8 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedroledefinition_from_rbacapplication_cloudpc"
+  "name": "create_unifiedroledefinition_from_rbacapplication_cloudpc",
+  "sampleKeys": ["cloudPc"]
 }-->
 
 ```http

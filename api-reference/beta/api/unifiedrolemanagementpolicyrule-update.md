@@ -77,7 +77,7 @@ The following example updates a role management policy rule with ID `Expiration_
 <!-- {
   "blockType": "request",
   "name": "update_unifiedrolemanagementpolicyrule",
-  "sampleKeys": ["DirectoryRole_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448", "Expiration_EndUser_Assignment"]
+  "sampleKeys": ["DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9", "Expiration_EndUser_Assignment"]
 }
 -->
 ``` http
