@@ -13,7 +13,7 @@ description: "Microsoft Graph connectors SDK sample testing"
 
 # Test the Microsoft Graph connector
 
-The connector can be tested using the [TestApp utility](/concepts/custom-connector-sdk-testapp). This is a console application for testing the connector before taking it to production. It will not create any connections or ingest any data.
+The connector can be tested using the [TestApp utility](/graph/custom-connector-sdk-testapp). This is a console application for testing the connector before taking it to production. It will not create any connections or ingest any data.
 
 1. Update the ConnectionInfo.json file with the connector id, data source path and set AuthenticationKind as null. This file is found under C:\Program Files\Graph connector agent\TestApp\Config
 
@@ -67,4 +67,4 @@ The connector can be tested using the [TestApp utility](/concepts/custom-connect
 
 ## Next steps
 
-* [Deploy your connector](/concepts/custom-connector-sdk-sample-hosting)
+* [Deploy your connector](/graph/custom-connector-sdk-sample-hosting)

@@ -128,8 +128,8 @@ Follow the instructions below for hosting the connector as a windows service:
 13. Open services.msc and check that the service is in running state
     ![Screenshot9](images/connectors-sdk/service9.png)
 
-You can refer documentation for **troubleshooting** issues with hosting the connector [here](/concepts/custom-connector-sdk-troubleshooting#troubleshooting-errors-while-hosting-the-connector-as-a-windows-service).
+You can refer documentation for **troubleshooting** issues with hosting the connector [here](/graph/custom-connector-sdk-troubleshooting#troubleshooting-errors-while-hosting-the-connector-as-a-windows-service).
 
 ## Next steps
 
-* [Publish a connection for your custom connector](/concepts/custom-connector-sdk-sample-publish)
+* [Publish a connection for your custom connector](/graph/custom-connector-sdk-sample-publish)

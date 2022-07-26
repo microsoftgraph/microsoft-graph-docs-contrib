@@ -78,6 +78,6 @@ You've successfully completed the custom Microsoft Graph connector tutorial. Now
 
 ## See also
 
-* [Best practices to follow while developing your connector](/concepts/custom-connector-sdk-best-practices)
+* [Best practices to follow while developing your connector](/graph/custom-connector-sdk-best-practices)
 
-* [Troubleshooting issues with your connector](/concepts/custom-connector-sdk-troubleshooting)
+* [Troubleshooting issues with your connector](/graph/custom-connector-sdk-troubleshooting)

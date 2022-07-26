@@ -31,7 +31,7 @@ Request model for refreshing the OAuth token.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|authenticationData |[AuthenticationData](/concepts/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL, the credentials to access the data source and current token information. |
+|authenticationData |[AuthenticationData](/graph/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL, the credentials to access the data source and current token information. |
 
 #### RefreshAccessTokenResponse
 
@@ -39,5 +39,5 @@ Response model for Refresh OAuth token request.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |[OperationStatus](/concepts/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details like error messages. |
-|refreshedCredentialData |[OAuth2ClientCredentialsResponse](/concepts/custom-connector-sdk-contracts-common#oauth2clientcredentialsresponse) |Holds the refreshed token information. |
+|status |[OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details like error messages. |
+|refreshedCredentialData |[OAuth2ClientCredentialsResponse](/graph/custom-connector-sdk-contracts-common#oauth2clientcredentialsresponse) |Holds the refreshed token information. |

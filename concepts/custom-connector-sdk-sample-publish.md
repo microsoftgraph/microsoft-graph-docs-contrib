@@ -51,4 +51,4 @@ description: "Publish your first custom Microsoft Graph connector on the Microso
 
 ## Next steps
 
-* [Surface the data in search](/concepts/custom-connector-sdk-sample-search)
+* [Surface the data in search](/graph/custom-connector-sdk-sample-search)

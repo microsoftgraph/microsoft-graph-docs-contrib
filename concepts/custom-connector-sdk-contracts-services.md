@@ -17,9 +17,9 @@ In this article, you can see the services that are part of the contract protocol
 
 |Services |Description |
 |:----------|:-------------|
-|[ConnectorInfo](/concepts/custom-connector-sdk-contracts-connectorinfo) |Includes APIs to get information about the connector. If you're using the Visual Studio extension, you can use the default implementation for this service without changes. |
-|[ConnectionManagement](/concepts/custom-connector-sdk-contracts-connectionmanagement) |Contains APIs that are called during the process of **custom connector connection creation** on the Microsoft 365 admin center. |
-|[ConnectorCrawl](/concepts/custom-connector-sdk-contracts-connectorcrawler) |Includes APIs that are called during a crawl. |
-|[ConnectorOAuth](/concepts/custom-connector-sdk-contracts-connectoroauth) |Service for OAuth flows like refreshing access token during crawls. |
+|[ConnectorInfo](/graph/custom-connector-sdk-contracts-connectorinfo) |Includes APIs to get information about the connector. If you're using the Visual Studio extension, you can use the default implementation for this service without changes. |
+|[ConnectionManagement](/graph/custom-connector-sdk-contracts-connectionmanagement) |Contains APIs that are called during the process of **custom connector connection creation** on the Microsoft 365 admin center. |
+|[ConnectorCrawl](/graph/custom-connector-sdk-contracts-connectorcrawler) |Includes APIs that are called during a crawl. |
+|[ConnectorOAuth](/graph/custom-connector-sdk-contracts-connectoroauth) |Service for OAuth flows like refreshing access token during crawls. |
 
 You can download the contract protocol buffer files from the Microsoft Graph connectors SDK [contracts](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/Contracts) page in GitHub.

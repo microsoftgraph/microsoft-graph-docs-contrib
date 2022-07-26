@@ -32,10 +32,10 @@ Request model for getting items during crawl.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|customConfiguration |[CustomConfiguration](/concepts/custom-connector-sdk-contracts-common#customconfiguration) |Provides configuration data for the connector. |
-|authenticationData |[AuthenticationData](/concepts/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL and the credentials to access it. |
+|customConfiguration |[CustomConfiguration](/graph/custom-connector-sdk-contracts-common#customconfiguration) |Provides configuration data for the connector. |
+|authenticationData |[AuthenticationData](/graph/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL and the credentials to access it. |
 |crawlProgressMarker |[CrawlCheckpoint](#crawlcheckpoint) |Holds data to identify items that were processed in the last crawl. The connector returns the item's information, and it uses it if the platform crashes during the crawl. |
-|Schema |[DataSourceSchema](/concepts/custom-connector-sdk-contracts-common#datasourceschema) |Shows the schema of the connection. This property can also be used to set the value. |
+|Schema |[DataSourceSchema](/graph/custom-connector-sdk-contracts-common#datasourceschema) |Shows the schema of the connection. This property can also be used to set the value. |
 
 #### CrawlStreamBit
 
@@ -43,7 +43,7 @@ Response model that contains the item status indicating success or failure and t
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |[OperationStatus](/concepts/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and error details. |
+|status |[OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and error details. |
 |crawlItem |[CrawlItem](#crawlitem) |Shows a single item crawled from the data source. |
 |crawlProgressMarker |[CrawlCheckpoint](#crawlcheckpoint) |Identifies the item crawled from the data source. |
 
@@ -53,10 +53,10 @@ Request model for getting items during an incremental crawl.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|customConfiguration |[CustomConfiguration](/concepts/custom-connector-sdk-contracts-common#customconfiguration) |Provides configuration data for the connector. |
-|authenticationData |[AuthenticationData](/concepts/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL and the credentials to access it. |
+|customConfiguration |[CustomConfiguration](/graph/custom-connector-sdk-contracts-common#customconfiguration) |Provides configuration data for the connector. |
+|authenticationData |[AuthenticationData](/graph/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL and the credentials to access it. |
 |crawlProgressMarker |[CrawlCheckpoint](#crawlcheckpoint) |Holds data to identify items that were processed in the last crawl. The connector returns the item's information, and it uses it if the platform crashes during the crawl. |
-|schema |[DataSourceSchema](/concepts/custom-connector-sdk-contracts-common#datasourceschema) |Shows the schema of the connection. This property can also be used to set the value. |
+|schema |[DataSourceSchema](/graph/custom-connector-sdk-contracts-common#datasourceschema) |Shows the schema of the connection. This property can also be used to set the value. |
 |previousCrawlStartTimeInUtc |Timestamp |Shows the previous crawl start time in UTC. This value can be used in the first incremental crawl, but subsequent calls should use the checkpoint value. |
 
 #### IncrementalCrawlStreamBit
@@ -65,7 +65,7 @@ Response model containing the item, status indicating success/failures if any an
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |[OperationStatus](/concepts/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and error details. |
+|status |[OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and error details. |
 |crawlItem |[IncrementalCrawlItem](#incrementalcrawlitem) |Shows a single item crawled from the data source during and incremental crawl. |
 |crawlProgressMarker |[CrawlCheckpoint](#crawlcheckpoint) |Identifies the last item crawled from the data source during the last incremental crawl. |
 

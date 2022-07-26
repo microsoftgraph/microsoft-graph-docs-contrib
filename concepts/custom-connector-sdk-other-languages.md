@@ -34,12 +34,12 @@ You can develop your custom connector in languages other than C\#, following the
 
 6. Create a server, run the application and generate the executable/output binaries.
 
-7. Test the connector code using the [TestApp utility](/concepts/custom-connector-sdk-testapp).
+7. Test the connector code using the [TestApp utility](/graph/custom-connector-sdk-testapp).
 
-8. [Publish a connection](/concepts/custom-connector-sdk-publish) for your custom connector on the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add).
+8. [Publish a connection](/graph/custom-connector-sdk-publish) for your custom connector on the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add).
 
 ## See also
 
-* [Best practices to follow while developing your connector](/concepts/custom-connector-sdk-best-practices)
+* [Best practices to follow while developing your connector](/graph/custom-connector-sdk-best-practices)
 
-* [Troubleshooting issues with your connector](/concepts/custom-connector-sdk-troubleshooting)
+* [Troubleshooting issues with your connector](/graph/custom-connector-sdk-troubleshooting)

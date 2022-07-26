@@ -107,7 +107,7 @@ OperationResult enumeration members:
 
 ## OperationStatus
 
-Represents the status of an operation including error/warnings and retry details. This model is part of the response of all APIs in [ConnectionManagementService](/concepts/custom-connector-sdk-contracts-connectionmanagement) and [ConnectorCrawlerService](/concepts/custom-connector-sdk-contracts-connectorcrawler).
+Represents the status of an operation including error/warnings and retry details. This model is part of the response of all APIs in [ConnectionManagementService](/graph/custom-connector-sdk-contracts-connectionmanagement) and [ConnectorCrawlerService](/graph/custom-connector-sdk-contracts-connectorcrawler).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|

@@ -33,7 +33,7 @@ Request model to validate the authentication request to the data source.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|authenticationData |[AuthenticationData](/concepts/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL and the credentials to access it. |
+|authenticationData |[AuthenticationData](/graph/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL and the credentials to access it. |
 
 #### ValidateAuthenticationResponse
 
@@ -41,8 +41,8 @@ Response model to validate the authentication response to the data source.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |[OperationStatus](/concepts/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details like error messages. |
-|oAuth2ClientCredentialResponse |[OAuth2ClientCredentialResponse](/concepts/custom-connector-sdk-contracts-common#oauth2clientcredentialresponse) |Credential information to be sent to the connector during the crawl if OAuth flow is used (access token, refresh token etc., sent by the auth server).|
+|status |[OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details like error messages. |
+|oAuth2ClientCredentialResponse |[OAuth2ClientCredentialResponse](/graph/custom-connector-sdk-contracts-common#oauth2clientcredentialresponse) |Credential information to be sent to the connector during the crawl if OAuth flow is used (access token, refresh token etc., sent by the auth server).|
 
 #### ValidateCustomConfigurationRequest
 
@@ -50,8 +50,8 @@ Request model to validate custom configuration request information.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|customConfiguration |[CustomConfiguration](/concepts/custom-connector-sdk-contracts-common#customconfiguration) |Provides configuration data for the connector. |
-|authenticationData |[AuthenticationData](/concepts/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL and the credentials to access it. |
+|customConfiguration |[CustomConfiguration](/graph/custom-connector-sdk-contracts-common#customconfiguration) |Provides configuration data for the connector. |
+|authenticationData |[AuthenticationData](/graph/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL and the credentials to access it. |
 
 #### ValidateCustomConfigurationResponse
 
@@ -59,7 +59,7 @@ Request model to validate custom configuration response information.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |[OperationStatus](/concepts/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details like error messages. |
+|status |[OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details like error messages. |
 
 #### GetDataSourceSchemaRequest
 
@@ -67,8 +67,8 @@ Request model to get the schema request of the data source.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|customConfiguration |[CustomConfiguration](/concepts/custom-connector-sdk-contracts-common#customconfiguration) |Provides configuration data for the connector. |
-|authenticationData |[AuthenticationData](/concepts/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL and the credentials to access it. |
+|customConfiguration |[CustomConfiguration](/graph/custom-connector-sdk-contracts-common#customconfiguration) |Provides configuration data for the connector. |
+|authenticationData |[AuthenticationData](/graph/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL and the credentials to access it. |
 
 #### GetDataSourceSchemaResponse
 
@@ -76,8 +76,8 @@ Request model to get the schema response of the data source.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |[OperationStatus](/concepts/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details like error messages. |
-|dataSourceSchema |[DataSourceSchema](/concepts/custom-connector-sdk-contracts-common#datasourceschema) |Shows the data source schema.|
+|status |[OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details like error messages. |
+|dataSourceSchema |[DataSourceSchema](/graph/custom-connector-sdk-contracts-common#datasourceschema) |Shows the data source schema.|
 
 ## See also
 

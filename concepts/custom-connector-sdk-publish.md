@@ -68,6 +68,6 @@ The following steps show how to publish a connection for your custom connector:
 
 ## See also
 
-* [Best practices to follow while developing your connector](/concepts/custom-connector-sdk-best-practices)
+* [Best practices to follow while developing your connector](/graph/custom-connector-sdk-best-practices)
 
-* [Troubleshooting issues with your connector](/concepts/custom-connector-sdk-troubleshooting)
+* [Troubleshooting issues with your connector](/graph/custom-connector-sdk-troubleshooting)

@@ -18,7 +18,7 @@ In this article, you can find some of the most common issues with the Microsoft 
 ## Troubleshooting items missing from the index
 
 If previously present items are missing from the index, it could be due to the delete detection logic in the platform.
-The items missing from a success response in [OperationStatus](/concepts/custom-connector-sdk-contracts-common#operationstatus) but already in the index will be removed from the index.
+The items missing from a success response in [OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) but already in the index will be removed from the index.
 If the connector sends transient failure responses too, and more than 10% of the items have resulted in crawl failures, the items that aren't seen in the last 2 crawls will get deleted.
 
 ## Updating port mapping configuration file

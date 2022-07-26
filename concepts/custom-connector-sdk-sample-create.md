@@ -512,4 +512,4 @@ Now the connector is created and you can build and run the project.
 
 ## Next steps
 
-* [Test your connector](/concepts/custom-connector-sdk-sample-test)
+* [Test your connector](/graph/custom-connector-sdk-sample-test)

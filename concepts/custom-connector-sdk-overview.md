@@ -64,8 +64,8 @@ You can get started in C# with our sample connector or in other supported langua
 
 ## Next steps
 
-* [Learn more about the contracts](/concepts/custom-connector-sdk-contracts-services).
+* [Learn more about the contracts](/graph/custom-connector-sdk-contracts-services).
 
-* [Develop your first custom connector in C#](/concepts/custom-connector-sdk-sample-overview).
+* [Develop your first custom connector in C#](/graph/custom-connector-sdk-sample-overview).
 
-* [Develop your custom connector in other languages](/concepts/custom-connector-sdk-other-languages).
+* [Develop your custom connector in other languages](/graph/custom-connector-sdk-other-languages).

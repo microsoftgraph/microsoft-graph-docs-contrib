@@ -55,6 +55,6 @@ Specify the credentials to access the data source in the ConnectionInfo.json con
 
 ## See also
 
-* [Best practices to follow while developing your connector](/concepts/custom-connector-sdk-best-practices)
+* [Best practices to follow while developing your connector](/graph/custom-connector-sdk-best-practices)
 
-* [Troubleshooting issues with your connector](/concepts/custom-connector-sdk-troubleshooting)
+* [Troubleshooting issues with your connector](/graph/custom-connector-sdk-troubleshooting)
