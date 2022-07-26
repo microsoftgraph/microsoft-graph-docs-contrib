@@ -78,7 +78,7 @@ The following example shows a request to get the manager.
   "blockType": "request",
   "name": "get_manager_2"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
 
