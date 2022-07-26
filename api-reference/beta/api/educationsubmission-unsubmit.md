@@ -25,13 +25,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. | 
 
 ## Roles
-Below is the expected submission state, when unsubmit action is performed in a role as:
+A teacher can also unsubmit a student's assignment. Below is the expected submission state, when unsubmit action is performed in a role as:
 
 | Role    | Submission state               |
 |:--------------------|:---------------------------------------------------------|
-| Teacher (work or school account)  |  submitted  (200 OK)  |
+| Teacher (work or school account)  |  working  (200 OK)  |
 | Teacher (personal Microsoft account)  |  Not supported.  |
-| Student (work or school account)  |  submitted (200 OK)  |
+| Student (work or school account)  |  working (200 OK)  |
 | Student (personal Microsoft account)  |  Not supported.  |
 | Application   | Not supported. | 
 

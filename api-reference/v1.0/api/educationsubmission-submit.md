@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. | 
 
 ## Roles
-Below is the expected submission state, when submit action is performed in a role as:
+A teacher can also submit a student's assignment. Below is the expected submission state, when submit action is performed in a role as:
 
 | Role    | Submission state               |
 |:--------------------|:---------------------------------------------------------|
