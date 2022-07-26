@@ -3386,6 +3386,8 @@ items:
             href: resources/intune-devices-deviceoperatingsystemsummary.md
           - name: Device registration state
             href: resources/intune-devices-deviceregistrationstate.md
+          - name: Disk type
+            href: resources/intune-devices-disktype.md
           - name: Localized notification message
             href: resources/intune-notification-localizednotificationmessage.md
             items:
@@ -3501,6 +3503,8 @@ items:
               href: api/intune-devices-user-update.md
             - name: removeAllDevicesFromManagement action
               href: api/intune-devices-user-removealldevicesfrommanagement.md
+          - name: User experience analytics health state
+            href: resources/intune-devices-userexperienceanalyticshealthstate.md
           - name: Windows defender scan action result
             href: resources/intune-devices-windowsdefenderscanactionresult.md
           - name: Windows device account
