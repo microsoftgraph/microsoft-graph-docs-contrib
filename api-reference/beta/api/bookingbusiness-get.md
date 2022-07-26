@@ -55,10 +55,10 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_bookingbusiness",
-  "sampleKeys": ["Fabrikam@contoso.onmicrosoft.com"]
+  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@contoso.onmicrosoft.com
+GET https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingbusiness-csharp-snippets.md)]

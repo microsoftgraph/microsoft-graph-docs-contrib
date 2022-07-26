@@ -64,7 +64,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_b2xUserFlows_identityProviders_2",
-  "sampleKeys": ["B2X_1_PartnerSignUp","Facebook-OAUTH"]
+  "sampleKeys": ["B2X_1_PartnerSignUp", "Facebook-OAUTH"]
 }
 -->
 

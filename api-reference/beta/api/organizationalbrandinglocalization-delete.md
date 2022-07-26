@@ -56,7 +56,7 @@ The following is an example of a request to delete the `fr-FR` localization obje
 <!-- {
   "blockType": "request",
   "name": "delete_organizationalbrandinglocalization",
-  "sampleKeys": ["fr-FR"]
+  "sampleKeys": ["d69179bf-f4a4-41a9-a9de-249c0f2efb1d", "fr-FR"]
 }-->
 
 ```msgraph-interactive

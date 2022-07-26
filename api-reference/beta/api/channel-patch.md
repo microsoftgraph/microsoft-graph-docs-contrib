@@ -60,7 +60,8 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "ignored",
-  "name": "patch_channel"
+  "name": "patch_channel",
+  "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2

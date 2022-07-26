@@ -57,7 +57,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_sharedwithchannelteaminfo",
-  "sampleKeys": ["19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype"]
+  "sampleKeys": ["ece6f0a1-7ca4-498b-be79-edf6c8fc4d82", "19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype"]
 }
 -->
 ``` http

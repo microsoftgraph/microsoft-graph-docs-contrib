@@ -145,7 +145,8 @@ HTTP/1.1 204 OK
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_unifiedroleassignmentmultiple_from_rbacapplication_cloudpc"
+  "name": "update_unifiedroleassignmentmultiple_from_rbacapplication_cloudpc",
+  "sampleKeys": ["dbe9d288-fd87-41f4-b33d-b498ed207096"]
 }-->
 
 ```http

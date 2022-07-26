@@ -56,7 +56,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "permissiongrantpolicy_delete_includes",
-  "sampleKeys": ["my-custom-consent-policy","198d8d6b-ecf6-47bc-a3dd-eaa2fe0544c5"]
+  "sampleKeys": ["my-custom-consent-policy", "198d8d6b-ecf6-47bc-a3dd-eaa2fe0544c5"]
 }-->
 
 ```http

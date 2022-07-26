@@ -63,7 +63,6 @@ The following is an example of a request.
   "blockType": "request",
   "name": "get_connection",
   "sampleKeys": ["contosohr"]
-
 }-->
 
 ```msgraph-interactive
