@@ -83,7 +83,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignment",
-  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReELhrmgjL6CxJqkHAeKoLUSA-11"]
 }-->
 
 ```msgraph-interactive

@@ -68,7 +68,8 @@ If successful, this method returns a `201 Created` response code and a [virtualA
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_virtualappointment_from_"
+  "name": "create_virtualappointment_from_",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
 }
 -->
 ``` http

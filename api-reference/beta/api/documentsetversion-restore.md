@@ -56,7 +56,7 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "documentsetversionthis.restore",
-  "sampleKeys": ["2", "1"]
+  "sampleKeys": ["2", "1", "root", "Documents"]
 }
 -->
 ``` http

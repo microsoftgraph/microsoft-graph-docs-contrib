@@ -56,7 +56,7 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "delete_documentsetversion",
-  "sampleKeys": ["2", "1"]
+  "sampleKeys": ["2", "1", "root", "Documents"]
 }
 -->
 ``` http

@@ -59,7 +59,7 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "get_richlongrunningoperation",
-  "sampleKeys": ["contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE"]
+  "sampleKeys": ["contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE", "root"]
 }
 -->
 ``` http

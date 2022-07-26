@@ -66,7 +66,7 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "create_documentsetversion",
-  "sampleKeys": ["2"]
+  "sampleKeys": ["2", "root", "Documents"]
 }
 -->
 ``` http
