@@ -48,9 +48,8 @@ POST /users/{user-id}/drive/root:/{item-path}/assignSensitivitylabel
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
-| Name                | Value                                          |Description                                                                                             |
-|:--------------------|:-----------------------------------------------|:-------------------------------------------------------------------------------------------------------|
+| Name                | Value                       |Description                                                                                                                |
+|:--------------------|:----------------------------|:--------------------------------------------------------------------------------------------------------------------------|
 | sensitivityLabelId  | string                      | Required. Id of the sensitivity label to be assigned, or empty string to remove the sensitivity label.                    |
 | assignmentMethod    | sensitivityAssignmentMethod | Optional. The assignment method of the label on the document. Whether the assignment of the label was done automatically, standard or as a privileged operation (The equivalent to an administrator operation).                                                                                           |
 | justificationText   | string                      | Optional. Justification text for audit purposes. Required when downgrading/removing label.                                |
