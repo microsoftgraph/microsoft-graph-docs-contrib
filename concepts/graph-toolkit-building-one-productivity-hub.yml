@@ -10,29 +10,29 @@ metadata:
   author: aycabas
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:HTML, CSS 
-  ms.prod: Microsoft Graph Toolkit
+  ms.prod: toolkit
 items:
   - title: Build One Productivity Hub app by using Microsoft Graph Toolkit
     durationInMinutes: 5
     content: |
-      [!INCLUDE [](concepts/includes/graph-toolkit-building-one-productivity-hub-01-intro.md)]
+      [!INCLUDE [](includes/graph-toolkit-building-one-productivity-hub-01-intro.md)]
   - title: Register the application in Azure Active Directory
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](concepts/includes/graph-toolkit-building-one-productivity-hub-02-register-app.md)]
+      [!INCLUDE [](includes/graph-toolkit-building-one-productivity-hub-02-register-app.md)]
   - title: Build the application
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](concepts/includes/graph-toolkit-building-one-productivity-hub-03-build-app.md)]
+      [!INCLUDE [](includes/graph-toolkit-building-one-productivity-hub-03-build-app.md)]
   - title: Design the application
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](concepts/includes/graph-toolkit-building-one-productivity-hub-04-design-app.md)]
+      [!INCLUDE [](includes/graph-toolkit-building-one-productivity-hub-04-design-app.md)]
   - title: Run the application
     durationInMinutes: 5
     content: |
-      [!INCLUDE [](concepts/includes/graph-toolkit-building-one-productivity-hub-05-run-app.md)]
+      [!INCLUDE [](includes/graph-toolkit-building-one-productivity-hub-05-run-app.md)]
   - title: Summary
     durationInMinutes: 5
     content: |
-      [!INCLUDE [](concepts/includes/graph-toolkit-building-one-productivity-hub-06-summary.md)]
+      [!INCLUDE [](includes/graph-toolkit-building-one-productivity-hub-06-summary.md)]

@@ -8,7 +8,7 @@ After all the prerequisites are in place, you will be able to register an applic
    ![Screenshot showing Azure Active Directory App registration tab](../images/mgt-one-productivity-hub/aad-app-registration.png)
 
 1. Complete the **Register an application** form with the following values, and then select **Register**.
-   * **Name**: One Productivity Hub Sample
+   * **Name**: One Productivity Hub Demo
    * **Supported account types**: Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)
    * **Redirect URI**: Select **Single-page application (SPA)** as a type of redirect URI and place `http://localhost:3000/index.html` as a redirect URI to test locally.
 
