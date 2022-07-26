@@ -189,7 +189,7 @@ items:
                 href: custom-connector-sdk-sample-create.md
               - name: Test your connector
                 href: custom-connector-sdk-sample-test.md
-              - name: Host the connector as a windows service
+              - name: Host the connector as a Windows service
                 href: custom-connector-sdk-sample-hosting.md
               - name: Publish a connection
                 href: custom-connector-sdk-sample-publish.md
