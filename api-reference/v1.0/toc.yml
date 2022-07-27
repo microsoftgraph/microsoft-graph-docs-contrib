@@ -5606,6 +5606,8 @@ items:
             items:
             - name: List
               href: api/entitlementmanagement-list-assignments.md
+            - name: Additional access
+              href: api/accesspackageassignment-additionalaccess.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
             - name: Reprocess
