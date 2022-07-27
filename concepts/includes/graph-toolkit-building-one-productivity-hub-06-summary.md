@@ -2,4 +2,4 @@ You have successfully completed the Build One Productivity Hub app by using Micr
 
 ## Next steps
 
-To find out more about Microsoft Graph Toolkit, visit [Microsoft Graph Toolkit overview](https://docs.microsoft.com/en-us/graph/toolkit/overview).
+To find out more about Microsoft Graph Toolkit, visit [documentation](https://docs.microsoft.com/en-us/graph/toolkit/overview) or [Learning Path](https://docs.microsoft.com/en-us/learn/paths/m365-msgraph-toolkit)
