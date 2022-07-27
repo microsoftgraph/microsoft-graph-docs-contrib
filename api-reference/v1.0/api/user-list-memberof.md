@@ -71,7 +71,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id}/memberOf
+GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/memberOf
 ```
 
 # [C#](#tab/csharp)
@@ -173,7 +173,7 @@ The following is an example of the request.
   "name": "get_count_only"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/memberOf/microsoft.graph.group/$count
 ConsistencyLevel: eventual
 ```
@@ -204,7 +204,7 @@ The following is an example of the request.
   "name": "get_tier_count"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:tier"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
@@ -249,7 +249,7 @@ The following is an example of the request.
   "name": "list_users_memberof_startswith"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
