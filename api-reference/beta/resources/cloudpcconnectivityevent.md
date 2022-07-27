@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of Cloud PC connectivity event.
+Represents the details of a Cloud PC connectivity event: when and how the Cloud PC is connected, if the connect is succeeded.
 
 ## Properties
 |Property|Type|Description|
@@ -38,9 +38,9 @@ Represents the details of Cloud PC connectivity event.
 |Member|Value|Description|
 |:---|:---|:---|
 |unknown|0|The event type is unknown.|
-|userConnection|1|The event type is user connection.|
-|userTroubleshooting|2|The event type is user troubleshooting.|
-|deviceHealthCheck|3|The event type is device health check.|
+|userConnection|1|The event comes from user connecting to Cloud PC.|
+|userTroubleshooting|2|The event comes from user's troubleshooting action.|
+|deviceHealthCheck|3|The event comes from service's regular device health check.|
 |unknownFutureValue|999|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
