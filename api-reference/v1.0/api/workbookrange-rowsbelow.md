@@ -61,7 +61,7 @@ Here is an example of the request.
   "name": "workbookrange_rowsBelow",
   "idempotent": true
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
 ```
 
@@ -114,7 +114,7 @@ Here is an example of the request.
   "name": "workbookrange_rowsBelow_nocount",
   "idempotent": true
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow
 ```
 

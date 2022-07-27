@@ -48,12 +48,6 @@ To list role definitions for the directory provider:
 GET /roleManagement/directory/roleDefinitions
 ```
 
-To list role definitions for the entitlement management provider:
-<!-- { "blockType": "ignored" } -->
-```http
-GET /roleManagement/entitlementManagement/roleDefinitions
-```
-
 ## Optional query parameters
 This method supports the `$filter` (`eq` and `in` operators) OData query parameter on `id`, `displayName`, and `isBuiltIn` properties. It also supports `$expand` on the relationships. For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -226,16 +220,13 @@ Content-type: application/json
 
 #### Request
 
-
-# [HTTP](#tab/http)
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roledefinitions_entitlementmanagement_provider"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDefinitions
 ```
 

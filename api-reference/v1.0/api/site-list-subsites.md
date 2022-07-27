@@ -56,7 +56,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 ```
 
