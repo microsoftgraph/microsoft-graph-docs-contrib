@@ -62,7 +62,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "timeoffreason-get"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 

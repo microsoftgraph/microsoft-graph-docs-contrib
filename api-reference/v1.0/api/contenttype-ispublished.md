@@ -54,7 +54,7 @@ Do not supply a request body for this method.
   "name": "contenttype_ispublished"
 }
 -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
 
