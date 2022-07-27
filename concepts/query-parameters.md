@@ -18,9 +18,6 @@ Query parameters can be [OData system query options](http://docs.oasis-open.org/
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
 
-> [!NOTE]
-> [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986#section-2.2) requires that reserved characters in query strings are percent-encoded. However, this document may not show percent-encoded characters for readability. The reserved characters in query strings, such as the comma (`,`) in a `startsWith` expression, should however be percent-encoded. In some cases, you may need to double-encode the query strings.
-
 ## OData system query options
 A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query] and are supported in only GET operations.
 
@@ -59,21 +56,21 @@ The following OData 4.0 capabilities are URL segments, not query parameters.
 
 ## Encoding query parameters
 
-The values of query parameters should be percent-encoded. Many HTTP clients, browsers, and tools (such as the [Graph Explorer][graph-explorer]) will help you with this. If a query is failing, one possible cause is failure to encode the query parameter values appropriately. In some cases, you may have to double-encode the values.
+The values of query parameters should be percent-encoded as per [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986#section-2.2). For example, all reserved characters in query strings must be percent-encoded. Many HTTP clients, browsers, and tools (such as the [Graph Explorer][graph-explorer]) will help you with this. If a query is failing, one possible cause is failure to encode the query parameter values appropriately. In some cases, you may have to double-encode the values.
 
-An unencoded URL looks like this:
+For example, an unencoded URL looks like this:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 ```
 
-A properly percent-encoded URL looks like this:
+The properly percent-encoded URL looks like this:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-A double-encoded URL looks like this:
+The double-encoded URL looks like this:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith%28givenName%2C%20%27J%27%29
