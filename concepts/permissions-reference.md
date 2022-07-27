@@ -2332,6 +2332,21 @@ _TeamsTab.ReadWriteSelfForUser.All_ | Allow the Teams app to manage only its own
 | _TeamworkTag.Read.All_ | Read tags in Microsoft Teams. | Allows the app to read tags in Teams without a signed-in user | Yes | No |
 
 
+## Tenant information permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _CrossTenantInformation.ReadBasic.All_ | Read basic information about an external tenant. | Allows the app to read limited information about an external tenant, on behalf of the signed-in user.	| Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _CrossTenantInformation.ReadBasic.All_ | Read basic information about an external tenant. | Allows the app to read limited information about an external tenant, without a signed-in user.	| Yes |
+
+
 ## Terms of use permissions
 
 #### Delegated permissions
