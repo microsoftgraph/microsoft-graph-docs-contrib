@@ -6,16 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var dataSource = new SiteSource
+var dataSourceReference = new ReferenceRequestBody
 {
-	Site = new Site
-	{
-		WebUrl = "https://contoso.sharepoint.com/sites/SecretSite"
-	}
+	ODataId = "https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/userSources/c25c3914-f9f7-43ee-9cba-a25377e0cec6"
 };
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Searches["{security.ediscoverySearch-id}"].AdditionalSources
+await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Searches["{security.ediscoverySearch-id}"].CustodianSources.References
 	.Request()
-	.AddAsync(dataSource);
+	.AddAsync(dataSourceReference);
 
 ```

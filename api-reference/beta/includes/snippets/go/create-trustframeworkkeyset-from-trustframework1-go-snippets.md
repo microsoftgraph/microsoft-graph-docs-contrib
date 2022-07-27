@@ -7,9 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTrustFrameworkKeySet()
+requestBody := graphmodels.NewTrustFrameworkKeySet()
 id := "keyset1"
-requestBody.SetId(&id)
+requestBody.SetId(&id) 
+
 result, err := graphClient.TrustFramework().KeySets().Post(requestBody)
 
 

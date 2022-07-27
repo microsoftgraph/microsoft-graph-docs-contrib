@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-outlookTaskId := "outlookTask-id"
-graphClient.Me().Outlook().TasksById(&outlookTaskId).Delete()
+
+graphClient.Me().Outlook().TasksById("outlookTask-id").Delete()
 
 
 ```

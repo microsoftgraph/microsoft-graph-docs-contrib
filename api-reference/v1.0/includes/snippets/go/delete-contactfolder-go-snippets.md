@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-contactFolderId := "contactFolder-id"
-graphClient.Me().ContactFoldersById(&contactFolderId).Delete()
+
+graphClient.Me().ContactFoldersById("contactFolder-id").Delete()
 
 
 ```

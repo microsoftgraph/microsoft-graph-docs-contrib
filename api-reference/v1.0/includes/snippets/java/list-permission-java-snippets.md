@@ -6,8 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-PermissionCollectionPage permissions = graphClient.sites("{sitesId}").permissions()
-	.buildRequest()
+LinkedList<Option> requestOptions = new LinkedList<Option>();
+requestOptions.add(new QueryOption("search", "{query}"));
+
+SiteCollectionPage sites = graphClient.sites()
+	.buildRequest( requestOptions )
 	.get();
 
 ```

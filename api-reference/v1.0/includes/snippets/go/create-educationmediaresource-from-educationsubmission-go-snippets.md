@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEducationSubmissionResource()
-resource := msgraphsdk.NewEducationResource()
-requestBody.SetResource(resource)
+requestBody := graphmodels.NewEducationSubmissionResource()
+resource := graphmodels.NewEducationResource()
 displayName := "category.jpg"
-resource.SetDisplayName(&displayName)
-resource.SetAdditionalData(map[string]interface{}{
-	"fileUrl": "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RK2WLKUUBAA4ZBKXNBL6QFC2TKG",
-	"@odata.type": "#microsoft.graph.educationMediaResource",
+resource.SetDisplayName(&displayName) 
+"@odata.type" := "#microsoft.graph.educationMediaResource"
+resource.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"fileUrl" : "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RK2WLKUUBAA4ZBKXNBL6QFC2TKG", 
 }
-educationClassId := "educationClass-id"
-educationAssignmentId := "educationAssignment-id"
-educationSubmissionId := "educationSubmission-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).Resources().Post(requestBody)
+resource.SetAdditionalData(additionalData)
+requestBody.SetResource(resource)
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Resources().Post(requestBody)
 
 
 ```

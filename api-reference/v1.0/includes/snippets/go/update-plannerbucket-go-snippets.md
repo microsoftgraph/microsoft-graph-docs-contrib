@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPlannerBucket()
-name := "Development"
-requestBody.SetName(&name)
 headers := map[string]string{
-	"Prefer": "return=representation"
-	"If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
+	"Prefer": "return=representation",
+	"If-Match": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
 }
-options := &msgraphsdk.PlannerBucketRequestBuilderPatchRequestConfiguration{
+configuration := &graphconfig.PlannerBucketRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
-plannerBucketId := "plannerBucket-id"
-graphClient.Planner().BucketsById(&plannerBucketId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
+requestBody := graphmodels.NewPlannerBucket()
+name := "Development"
+requestBody.SetName(&name) 
+
+graphClient.Planner().BucketsById("plannerBucket-id").PatchWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
 
 
 ```

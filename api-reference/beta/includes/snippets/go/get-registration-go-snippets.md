@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.RegistrationRequestBuilderGetQueryParameters{
-	Expand: "microsoft.graph.meetingRegistration/customQuestions",
+requestParameters := &graphconfig.RegistrationRequestBuilderGetQueryParameters{
+	Expand: [] string {"microsoft.graph.meetingRegistration/customQuestions"},
 }
-options := &msgraphsdk.RegistrationRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.RegistrationRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-onlineMeetingId := "onlineMeeting-id"
-result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

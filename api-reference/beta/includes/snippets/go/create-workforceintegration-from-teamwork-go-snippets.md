@@ -7,23 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewWorkforceIntegration()
+requestBody := graphmodels.NewWorkforceIntegration()
 displayName := "displayName-value"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 apiVersion := int32(99)
-requestBody.SetApiVersion(&apiVersion)
-encryption := msgraphsdk.NewWorkforceIntegrationEncryption()
-requestBody.SetEncryption(encryption)
-protocol := "protocol-value"
-encryption.SetProtocol(&protocol)
+requestBody.SetApiVersion(&apiVersion) 
+encryption := graphmodels.NewWorkforceIntegrationEncryption()
+protocol := graphmodels.PROTOCOL-VALUE_WORKFORCEINTEGRATIONENCRYPTIONPROTOCOL 
+encryption.SetProtocol(&protocol) 
 secret := "secret-value"
-encryption.SetSecret(&secret)
+encryption.SetSecret(&secret) 
+requestBody.SetEncryption(encryption)
 isActive := true
-requestBody.SetIsActive(&isActive)
+requestBody.SetIsActive(&isActive) 
 url := "url-value"
-requestBody.SetUrl(&url)
-supports := "supports-value"
-requestBody.SetSupports(&supports)
+requestBody.SetUrl(&url) 
+supports := graphmodels.SUPPORTS-VALUE_WORKFORCEINTEGRATIONSUPPORTEDENTITIES 
+requestBody.SetSupports(&supports) 
+
 result, err := graphClient.Teamwork().WorkforceIntegrations().Post(requestBody)
 
 

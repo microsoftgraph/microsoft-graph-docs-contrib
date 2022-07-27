@@ -1,7 +1,7 @@
 ---
 title: "security resource type"
-description: "To connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities."
-author: "preetikr"
+description: "Connects Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities."
+author: "angelgolfer-ms"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-To connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities.
+Connects Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities.
 
 ## Methods
 None.
@@ -31,6 +31,7 @@ None.
 |secureScores | [secureScore](securescores.md) collection | Measurements of tenants’ security posture to help protect them from threats. |
 |securityactions|[securityAction](../resources/securityaction.md) collection|Actions that respond to alerts to block malicious activities.|
 |tiindicators|[tiIndicator](../resources/tiindicator.md) collection|Threat indicators sent to Microsoft that identify malicious activities.|
+|threatSubmission|[security.threatSubmission](../resources/security-threatsubmission.md)|A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
