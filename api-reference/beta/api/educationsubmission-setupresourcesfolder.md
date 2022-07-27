@@ -41,13 +41,16 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 Provide an empty json `{}` as request body for this method.
 
 ## Response
-If successful, this method returns a `200 Ok` response code. The body will contain the submission model.
+If successful, this method returns a `200 OK` response code. The body will contain the submission model.
 
-## Example 1: Set up a resource folder for a submission
+If the assignment is already in submitted state or if the assignment is no longer open for submission, this method returns a `400 Bad Request` response code.
+
+## Examples
+
+### Example 1: Set up a resource folder for a submission
+
+#### Request
 The following is an example of a request that triggers the creation of a SharePoint resource folder for a submission.
-
-### Request
-The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -79,8 +82,8 @@ Content-type: application/json
 
 ---
 
-### Response
-The following is an example of a response. 
+#### Response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -131,12 +134,11 @@ Content-type: application/json
     "submittedResources": []
 }
 ```
-## Example 2: Set up a resource folder when the assignment is no longer open for submission
-The following is an example of a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment is no longer open for submission.
->Note: Check that allowedLateSubmissions = true and the current time is less than both dueDateTime & closeDateTime
-### Request
-The following is an example of a request.
 
+### Example 2: Set up a resource folder when the assignment is no longer open for submission
+
+#### Request
+The following is an example of a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment is no longer open for submission.
 
 
 <!-- {
@@ -151,8 +153,8 @@ Content-type: application/json
 }
 ```
 
-### Response
-The following is an example of a response. 
+#### Response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -160,7 +162,7 @@ The following is an example of a response.
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
-HTTP/1.1 400 Bad request
+HTTP/1.1 400 Bad Request
 Content-type: application/json
 
 {
@@ -175,12 +177,10 @@ Content-type: application/json
 }
 ```
 
-## Example 3: Set up a resource folder when the assignment is already in submitted state
-The following is an example of a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment has already been submitted.
->Note: Check that status != submitted
-### Request
-The following is an example of a request.
+### Example 3: Set up a resource folder when the assignment is already in submitted state
 
+#### Request
+The following is an example of a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment has already been submitted.
 
 
 <!-- {
@@ -195,8 +195,8 @@ Content-type: application/json
 }
 ```
 
-### Response
-The following is an example of a response. 
+#### Response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -204,7 +204,7 @@ The following is an example of a response.
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
-HTTP/1.1 400 Bad request
+HTTP/1.1 400 Bad Request
 Content-type: application/json
 
 {
