@@ -15,11 +15,11 @@ Read the properties and relationships of a [documentSetVersion](../resources/doc
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All, Sites.Selected|
+| Permission type                        | Permissions (from least to most privileged)                                                  |
+|:---------------------------------------|:---------------------------------------------------------------------------------------------|
+| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All                 |
+| Delegated (personal Microsoft account) | Not supported.                                                                               |
+| Application                            | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All, Sites.Selected |
 
 ## HTTP request
 
@@ -55,7 +55,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_documentsetversion"
+  "name": "get_documentsetversion",
+  "sampleKeys": ["root", "Documents", "2", "1"]
 }
 -->
 ``` http
