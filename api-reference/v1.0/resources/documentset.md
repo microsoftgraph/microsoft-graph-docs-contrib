@@ -1,5 +1,4 @@
 ---
----
 title: "documentSet resource type"
 description: "Contains the metadata about the document set settings."
 author: "swapnil1993"
