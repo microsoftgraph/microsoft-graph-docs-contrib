@@ -57,8 +57,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_manager_1"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/contacts/{id}/manager
+```http
+GET https://graph.microsoft.com/v1.0/contacts/e63333f5-3d11-4026-8fe3-c0f7b044dd3a/manager
 ```
 
 # [C#](#tab/csharp)

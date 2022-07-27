@@ -51,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "planner_get_tasks"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/planner/tasks
 ```
 

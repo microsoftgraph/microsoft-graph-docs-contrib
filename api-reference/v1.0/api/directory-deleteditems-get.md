@@ -77,7 +77,7 @@ The following is an example of a request.
   "blockType": "request",
   "name": "get_directory"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
 
