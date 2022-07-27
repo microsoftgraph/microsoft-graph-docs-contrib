@@ -29,11 +29,10 @@ A teacher can also submit a student's assignment. Below is the expected submissi
 
 | Role    | Submission state               |
 |:--------------------|:---------------------------------------------------------|
-| Teacher (work or school account)  |  submitted  (200 OK)  |
+| Teacher (work or school account)  |  submitted  (200 OK) |
 | Teacher (personal Microsoft account)  |  Not supported.  |
 | Student (work or school account)  |  submitted (200 OK)  |
 | Student (personal Microsoft account)  |  Not supported.  |
-| Application   | Not supported. | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

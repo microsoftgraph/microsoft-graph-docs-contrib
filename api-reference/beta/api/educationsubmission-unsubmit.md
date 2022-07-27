@@ -33,7 +33,6 @@ A teacher can also unsubmit a student's assignment. Below is the expected submis
 | Teacher (personal Microsoft account)  |  Not supported.  |
 | Student (work or school account)  |  working (200 OK)  |
 | Student (personal Microsoft account)  |  Not supported.  |
-| Application   | Not supported. | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
