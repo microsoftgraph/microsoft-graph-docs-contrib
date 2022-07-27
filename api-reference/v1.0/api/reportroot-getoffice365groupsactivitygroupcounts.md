@@ -78,7 +78,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365groupsactivitygroupcounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityGroupCounts(period='D7')
 ```
 

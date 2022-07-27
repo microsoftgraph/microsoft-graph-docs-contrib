@@ -70,7 +70,7 @@ The following is an example of a request.
 
   
 
-```msgraph-interactive
+```http
 GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 ```
 
