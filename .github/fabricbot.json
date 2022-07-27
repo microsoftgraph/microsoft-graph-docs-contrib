@@ -2328,7 +2328,7 @@
                 {
                   "name": "labelAdded",
                   "parameters": {
-                    "label": "area: Security"
+                    "label": "area: security"
                   }
                 }
               ]
@@ -2339,7 +2339,7 @@
                 {
                   "name": "hasLabel",
                   "parameters": {
-                    "label": "area: Security"
+                    "label": "area: security"
                   }
                 },
                 {

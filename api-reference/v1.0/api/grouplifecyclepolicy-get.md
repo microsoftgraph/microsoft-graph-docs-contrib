@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and [groupLifecycleP
   "name": "get_grouplifecyclepolicy_1"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 ```
 
