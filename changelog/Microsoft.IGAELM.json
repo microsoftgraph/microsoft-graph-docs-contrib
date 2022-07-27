@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "9b5a17bc-343d-4381-a7d3-6cd7224df1f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "additionalAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [additionalAccess](https://docs.microsoft.com/en-us/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-1.0) method to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignment?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignment"
+        },
+        {
+          "Id": "9b5a17bc-343d-4381-a7d3-6cd7224df1f1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "incompatibleAccessPackages",
+          "ChangeType": "Addition",
+          "Description": "Added the **incompatibleAccessPackages** navigation property to the [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-1.0) resource.",
+          "Target": "accessPackage"
+        },
+        {
+          "Id": "9b5a17bc-343d-4381-a7d3-6cd7224df1f1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "accessPackagesIncompatibleWith",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackagesIncompatibleWith** navigation property to the [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-1.0) resource.",
+          "Target": "accessPackage"
+        },
+        {
+          "Id": "9b5a17bc-343d-4381-a7d3-6cd7224df1f1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "incompatibleGroups",
+          "ChangeType": "Addition",
+          "Description": "Added the **incompatibleGroups** navigation property on [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-1.0) resource.",
+          "Target": "accessPackage"
+        }
+      ],
+      "Id": "9b5a17bc-343d-4381-a7d3-6cd7224df1f1",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-27T00:00:00.557Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bb684132-f2ca-481a-9582-bd3de6f5c3e6",
           "ApiChange": "Resource",
           "ChangedApiName": "crossCloudAzureActiveDirectoryTarget",
