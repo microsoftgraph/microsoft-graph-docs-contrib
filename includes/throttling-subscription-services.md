@@ -10,8 +10,8 @@ ms.topic: include
 | Request type | Limit per app for all tenants | Limit per app per tenant |
 | ------------- | ----------------------------- | ----------------------------- | ------------------------ |
 | POST, PUT, DELETE, PATCH | 2000 requests per 20 seconds | 500 requests per 20 seconds |
-| GET Subscription by Id | 2000 requests per 20 seconds | 500 requests per 20 seconds |
-| GET Subscription List | 40 requests per 20 seconds | 25 requests per 20 seconds |
+| GET subscription by ID | 2000 requests per 20 seconds | 500 requests per 20 seconds |
+| List all subscriptions | 40 requests per 20 seconds | 25 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  
 
