@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the list of [chats](../resources/chat.md) that the user is part of.
+Retrieve the list of [chats](../resources/chat.md) that the user is part of, or the application has access to.
 
 ## Permissions
 
@@ -22,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.ReadBasic.All*, Chat.Read.All*, Chat.ReadWrite.All* |
+
+\* This scenario is only supported for the following call: `GET /users/{user-id | user-principal-name}/chats`
 
 ## HTTP request
 
