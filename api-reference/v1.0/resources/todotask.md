@@ -27,6 +27,8 @@ This resource supports the following:
 |[Get task](../api/todotask-get.md)|[todoTask](../resources/todotask.md)|Read the properties and relationships of a [todoTask](../resources/todotask.md) object.|
 |[Update task](../api/todotask-update.md)|[todoTask](../resources/todotask.md)|Update the properties of a [todoTask](../resources/todotask.md) object.|
 |[Delete task](../api/todotask-delete.md)|None|Deletes a [todoTask](../resources/todotask.md) object.|
+|[List checklistItems](../api/todotask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) collection|Get the **checklistItem** resources from the checklistItems navigation property.|
+|[Create checklistItem](../api/todotask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new **checklistItem** object.|
 |[List linkedResources](../api/todotask-list-linkedresources.md)|[linkedResource](../resources/linkedresource.md) collection|Get the linkedResources from the linkedResources navigation property.|
 |[Create linkedResources](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Create a new linkedResources object.|
 
@@ -34,7 +36,8 @@ This resource supports the following:
 |Property|Type|Description|
 |:---|:---|:---|
 |body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task.|
-|bodyLastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
+|bodyLastModifiedDateTime|DateTimeOffset|The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
+|categories|String collection|The categories associated with the task. Each category corresponds to the **displayName** property of an [outlookCategory](../resources/outlookcategory.md) that the user has defined.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task was finished.|
 |createdDateTime|DateTimeOffset|The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
@@ -50,9 +53,9 @@ This resource supports the following:
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|checklistItems|[checklistItem](../resources/checklistitem.md) collection|A collection of checklistItems linked to a task. |
 |extensions|[extension](extension.md) collection| The collection of open extensions defined for the task. Nullable.|
 |linkedResources|[linkedResource](../resources/linkedresource.md) collection|A collection of resources linked to the task.|
-
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -71,6 +74,7 @@ The following is a JSON representation of the resource.
   "body": {
     "@odata.type": "microsoft.graph.itemBody"
   },
+  "categories": ["string"],
   "completedDateTime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   },

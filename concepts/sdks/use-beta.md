@@ -17,7 +17,10 @@ Many of the Microsoft Graph SDKs use the [v1.0](/graph/api/overview?view=graph-r
 In order to call the beta API, you must install the [Microsoft.Graph.Beta](https://www.nuget.org/packages/Microsoft.Graph.Beta) package. Usage is the same as the `Microsoft.Graph` package.
 
 ```csharp
-using Microsoft.Graph;
+// Version 5.x
+using Microsoft.Graph.Beta;
+// Version 4.x and earlier
+// using Microsoft.Graph;
 
 // Create a new instance of GraphServiceClient.
 GraphServiceClient graphClient = new GraphServiceClient(...);

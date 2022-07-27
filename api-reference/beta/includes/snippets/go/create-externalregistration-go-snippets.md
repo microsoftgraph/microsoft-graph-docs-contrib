@@ -7,16 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.externalMeetingRegistration",
-	"allowedRegistrant": "everyone",
+requestBody := graphmodels.NewRegistrationPostRequestBody()
+additionalData := map[string]interface{}{
+	"@odata.type" : "#microsoft.graph.externalMeetingRegistration", 
+	"allowedRegistrant" : "everyone", 
 }
-options := &msgraphsdk.RegistrationRequestBuilderPostOptions{
-	Body: requestBody,
-}
-onlineMeetingId := "onlineMeeting-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Post(requestBody)
 
 
 ```

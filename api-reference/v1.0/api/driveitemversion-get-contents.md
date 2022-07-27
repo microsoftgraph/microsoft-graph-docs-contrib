@@ -1,17 +1,20 @@
 ---
-title: "Download contents of a DriveItemVersion resource"
-description: "Retrieve the contents of a specific version of a DriveItem."
+title: "Download contents of a driveItemVersion resource"
+description: "Retrieve the contents of a specific version of a driveItem."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 author: "JeremyKelley"
 doc_type: apiPageType
 ---
 
-# Download contents of a DriveItemVersion resource
+# Download contents of a driveItemVersion resource
 
 Namespace: microsoft.graph
 
-Retrieve the contents of a specific version of a [DriveItem](../resources/driveitem.md).
+Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md).
+
+>**Note:** Getting the content of the current version is not supported. To do that, use the [Download the contents of a driveItem](driveitem-get-content.md) method.
+
 
 ## Permissions
 
@@ -41,7 +44,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 Returns a `302 Found` response redirecting to a pre-authenticated download URL for the bytes of the file.
 
 To download the contents of the file your application will need to follow the `Location` header in the response.
-Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.
+Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immediately.
 
 Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
 
@@ -49,25 +52,22 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 This example retrieves a version of a file in the current user's drive.
 
-### HTTP request
+### Request
 
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read", "tags": "service.graph" } -->
 
-```msgraph-interactive
+```http
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-version-contents-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-version-contents-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-version-contents-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -93,7 +93,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive does not preserve the complete metadata for previous versions of a file.
 
-When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
+When your app retrieves the list of available versions for a file, a [driveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
 
 <!-- {
   "type": "#page.annotation",

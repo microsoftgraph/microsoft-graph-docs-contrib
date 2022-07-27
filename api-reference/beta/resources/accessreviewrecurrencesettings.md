@@ -1,5 +1,5 @@
 ---
-title: "accessReviewRecurrenceSettings resource type"
+title: "accessReviewRecurrenceSettings resource type (deprecated)"
 description: "Specifies that the access review recurs at regular intervals."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# accessReviewRecurrenceSettings resource type
+# accessReviewRecurrenceSettings resource type (deprecated)
 
 Namespace: microsoft.graph
 

@@ -61,6 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/credentialUserRegistrationsSummaries
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-credentialuserregistrationssummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -69,16 +70,16 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/credenti
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-credentialuserregistrationssummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-credentialuserregistrationssummary-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-credentialuserregistrationssummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-credentialuserregistrationssummary-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-credentialuserregistrationssummary-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -105,6 +106,7 @@ Content-Type: application/json
       "mfaAndSsprCapableUserCount": 2,
       "ssprEnabledUserCount": 9,
       "mfaRegisteredUserCount": 3,
+      "mfaExcludedUserCount": 0,
       "ssprRegisteredUserCount": 2,
       "totalUserCount": 9,
       "securityDefaultsEnabled": false,
@@ -118,6 +120,7 @@ Content-Type: application/json
       "mfaAndSsprCapableUserCount": 0,
       "ssprEnabledUserCount": 1,
       "mfaRegisteredUserCount": 0,
+      "mfaExcludedUserCount": 2,
       "ssprRegisteredUserCount": 0,
       "totalUserCount": 7,
       "securityDefaultsEnabled": false,
