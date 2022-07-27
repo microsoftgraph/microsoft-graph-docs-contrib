@@ -39,7 +39,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | Message sender | 800 messages per user per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) | Named user | 1600 messages per user per month per app | $0.00075 per message | The named user is the user identified in the GET request URL. Requests returning an empty list, will be charged 1 message. Seeded capacity is shared with channel export. |
-| [Get messages across all channels] (/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message | Requests returning an empty list will be charged 1 message. Seeded capacity is shared with chat export. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message | Requests returning an empty list will be charged 1 message. Seeded capacity is shared with chat export. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
 
 ## `model=B` requirements
@@ -94,7 +94,7 @@ Seeded capacity is the amount of capacity that an app can use before a consumpti
 
 | Billing model | Sample functions | Seeded Capacity | License required | Azure subscription required | 
 |:-----------|:---------------|:---------------|:-----------|:-----------|
-| `model=A` | Security and Compliance | See [`model=A` details](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
+| `model=A` | Security and Compliance. | See [`model=A` details](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
 | `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | None | No | Yes | 
 | `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | 500 messages per month per app | No | No | 
 
@@ -127,7 +127,7 @@ Please note that the organization that owns the app registration is responsible 
 ## Frequently asked questions
 
 |    Scenario    | Details |
-|:---------------|:--------|
+|:-------------------------|:--------|
 | Did billing actually started on July 5th? | Yes, we are onboarding partners in phases. For continued access, please fill this [request form](https://aka.ms/teamsgraph/protectedApis_az) and provide an active Azure subscription. 
 | What should I expect after providing an Azure subscription? | You can continue calling these metered APIs; we will contact the email provided in the request form to onboard the registered application to billing. |
 | Do I need to provide an Azure subscription if my application is not calling metered APIs? | Is recommended as most scenarios use metered APIs, see also: [protected APIs](/graph/teams-protected-apis). |
