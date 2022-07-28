@@ -10,7 +10,13 @@ doc_type: apiPageType
 # directoryObject: getAvailableExtensionProperties
 Namespace: microsoft.graph
 
-Return all or a filtered list of the directory extension properties that have been registered in a directory. The following entities support extension properties: **user**, **group**, **organization**, **device**, **application**, and **servicePrincipal**.
+Return all or a filtered list of the directory extension properties that have been registered in a directory.The list includes extension properties in multi-tenant apps that have been consented to in the tenant. The following entities support extension properties:
++ [user](../resources/user.md)
++ [group](../resources/group.md)
++ [administrativeUnit](../resources/administrativeunit.md)
++ [application](../resources/application.md)
++ [device](../resources/device.md)
++ [organization](../resources/organization.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
