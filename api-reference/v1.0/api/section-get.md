@@ -56,7 +56,7 @@ Here is an example of the request.
   "name": "get_section"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/onenote/sections/{id}
+GET https://graph.microsoft.com/v1.0/me/onenote/sections/1-0bc35248-e4e2-4759-ad85-89407bceccfe
 ```
 
 # [C#](#tab/csharp)

@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and [oAuth2Permissio
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0
+GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/QVzct6doFkStXRSoh_HGZcTUnzAfhaVGjK7Cv0gMgUsj54JH9PTzSqduJeO6sNiW
 ```
 
 # [C#](#tab/csharp)
