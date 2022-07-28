@@ -124,7 +124,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 | microsoft365Defender         | Microsoft 365 Defender.                        |
 | aadIdentityProtection        | Azure Active Directory Identity Protection.    |
 | microsoftAppGovernance       | Microsoft app governance.                      |
-| microsoftDataLossPrevention  | Microsoft Data Loss Prevention                 |
+| microsoftDataLossPrevention  | Microsoft Purview Data Loss Prevention         |
 | unknownFutureValue           | Evolvable enumeration sentinel value. Do not use.|
 
 
@@ -146,7 +146,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 | microsoft365Defender           | Microsoft 365 Defender.                                      |
 | azureAdIdentityProtection      | Azure Active Directory Identity Protection.                  |
 | manual                         | Manual detection.                                            |
-| microsoftDataLossPrevention    | Microsoft Data Loss Prevention.                              |
+| microsoftDataLossPrevention    | Microsoft Purview Data Loss Prevention.                      |
 | appGovernancePolicy            | App governance policy.                                       |
 | appGovernanceDetection         | App governance detection.                                    |
 | unknownFutureValue             | Evolvable enumeration sentinel value. Do not use.            |

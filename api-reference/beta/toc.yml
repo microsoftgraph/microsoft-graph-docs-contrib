@@ -14844,10 +14844,18 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
-      - name: Alerts_v2
+      - name: Alerts and incidents (preview)
         items:
-        - name: Alert_v2
-          href: resources/security-alert.md
+        - name: Alert
+          items:
+          - name: Alert 
+            href: resources/security-alert.md
+          - name: List alerts
+            href: api/security-list-alerts.md
+          - name: Get alert
+            href: api/security-alert-get.md 
+          - name: Update alert
+            href: api/security-alert-update.md
         - name: Alert Evidence
           items: 
           - name: Alert Evidence
@@ -14880,12 +14888,16 @@ items:
             href: resources/security-analyzedMessageEvidence.md
           - name: Device Evidence
             href: resources/security-deviceEvidence.md
-        - name: List alerts
-          href: api/security-list-alerts.md
-        - name: Get alert
-          href: api/security-alert-get.md 
-        - name: Update alert
-          href: api/security-alert-update.md
+        - name: Incident
+          items:
+          - name: Incident
+            href: resources/security-incident.md
+          - name: List incidents
+            href: api/security-list-incidents.md
+          - name: Get incident
+            href: api/security-incident-get.md   
+          - name: Update incident
+            href: api/security-incident-update.md
       - name: Attack simulation and training (preview)
         items:
         - name: Simulations
@@ -15162,16 +15174,6 @@ items:
             href: api/security-ediscoverycase-delete-tags.md
           - name: List tags as hierarchy
             href: api/security-ediscoveryreviewtag-ashierarchy.md
-      - name: Incidents (preview)
-        items:
-        - name: Incident
-          href: resources/security-incident.md
-        - name: List incidents
-          href: api/security-list-incidents.md
-        - name: Get incident
-          href: api/security-incident-get.md   
-        - name: Update incident
-          href: api/security-incident-update.md
       - name: Information protection
         items:
         - name: Labels

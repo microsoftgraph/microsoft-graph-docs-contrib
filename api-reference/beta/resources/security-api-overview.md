@@ -1,5 +1,5 @@
 ---
-title: "Use the Microsoft Graph Security API"
+title: "Use the Microsoft Graph security API"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
 ms.localizationpriority: high
 author: "preetikr"
@@ -7,33 +7,58 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# Use the Microsoft Graph Security API
+# Use the Microsoft Graph security API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph Security API federates queries to all onboarded security providers and aggregates responses. Use the Microsoft Graph Security API to build applications that:
+The Microsoft Graph security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph security API federates queries to all onboarded security providers and aggregates responses. Use the Microsoft Graph security API to build applications that:
 
-- Consolidate and correlate security alerts from multiple sources
-- Pull and investigate all incidents and alerts from Microsoft 365 Defender with incidents and alerts_v2 
-- Unlock contextual data to inform investigations
-- Automate security tasks, business processes, workflows, and reporting
-- Send threat indicators to Microsoft products for customized detections
-- Invoke actions to in response to new threats
-- Provide visibility into security data to enable proactive risk management
+- Consolidate and correlate security alerts from multiple sources.
+- Pull and investigate all incidents and alerts from services that are part of or integrated with Microsoft 365 Defender.
+- Unlock contextual data to inform investigations.
+- Automate security tasks, business processes, workflows, and reporting.
+- Send threat indicators to Microsoft products for customized detections.
+- Invoke actions to in response to new threats.
+- Provide visibility into security data to enable proactive risk management.
 
-The Microsoft Graph Security API includes the following key entities.
+The Microsoft Graph security API includes key resources in the following sections.
 
 ## Actions (preview)
 
-Take immediate action to defend against threats using the Microsoft Graph Security [securityAction](securityaction.md) entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with [Microsoft Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (formerly Microsoft Defender ATP) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations.
+Take immediate action to defend against threats using the [securityAction](securityaction.md) entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with [Microsoft Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (formerly Microsoft Defender ATP) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations.
 
   > **Note:** Currently security actions only support application permissions.
 
 ## Alerts
+Alerts are suspicious or malicious events or activities in a customer's tenant that Microsoft or partner security solutions have identified and flagged for action or notification. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.
 
-Alerts are potential security issues within a customer's tenant that Microsoft or partner security solutions have identified and flagged for action or notification. With the Microsoft Graph Security [alerts](alert.md) entity, you can unify and streamline management of security issues across all integrated solutions. This also enables applications to correlate alerts and context to improve threat protection and response. With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph Security API by updating your [alerts](alert.md) entity.
+The Microsoft Graph security API offers two types of alerts that make it easier to analyze attacks and determine response: 
+- [Alerts and incidents](#alerts-and-incidents-preview) (preview). Each of these alerts is programmatically represented by the [alert](security-alert.md) resource, and their collection by the [incident](security-incident.md) resource, both defined in the `microsoft.graph.security` namespace.
+- [Legacy alerts](#legacy-alerts). Each of these alerts is programmatically represented by the [alert](alert.md) resource in the `microsoft.graph` namespace.
 
-Alerts from the following providers are available via the Microsoft Graph Security API. Support for GET alerts, PATCH alerts, and Subscribe (via webhooks) is indicated in the following table.
+### Alerts and incidents (preview)
+
+These are rich [alert](security-alert.md) resources that pull alert data from services that are either part of or integrated with [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide).
+
+In addition to aggregating common alert data from security providers, these alerts consume the data to return valuable clues about a completed or ongoing attack, the impacted assets, and associated [evidence](security-alertevidence.md). They automatically correlate other alerts with the same attack techniques or the same attacker into an [incident](security-incident.md) to provide a broader context of an attack. They recommend response and remediation actions, offering consistent actionability across all the different providers. The rich content makes it easy for analysts to collectively investigate and respond to threats.
+
+Alerts from the following providers are available via these rich [alerts](security-alert.md) and **incidents**:
+- Azure Active Directory Identity Protection 
+- Microsoft 365 Defender 
+- Microsoft Defender for Cloud Apps 
+- Microsoft Defender for Endpoint 
+- Microsoft Defender for Identity 
+- Microsoft Defender for Office 365 
+- Microsoft Purview Data Loss Prevention
+
+
+### Legacy alerts
+
+These [alert](alert.md) resources federate calling of the supported Azure and Microsoft 365 Defender security providers. They aggregate alert data that’s common among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response. 
+
+With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph security API by updating your [alert](alert.md) entity.
+
+Alerts from the following providers are available via this legacy **alert** resource. Support for GET alerts, PATCH alerts, and subscribe (via webhooks) is indicated in the following table.
 
 | Security provider | <p align="center">GET alert</p>| <p align="center">PATCH alert</p>| <p align="center">Subscribe to alert</p>|
 |:------------------|:---------|:-----------|:------------------|
@@ -45,31 +70,13 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 |Microsoft 365 <ul><li> [Default](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>Custom Alert</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Azure Information Protection](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(preview)**| <p align="center">&#x2713;</p> | <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Azure Sentinel](/azure/sentinel/quickstart-get-visibility) **(preview)**| <p align="center">&#x2713;</p> | <p align="center">Not supported in Azure Sentinel </p> | <p align="center">&#x2713;</p> |
-> **Note:** New providers are continuously onboarding to the Microsoft Graph Security ecosystem. To request new providers or for extended support from existing providers, [file an issue in the Microsoft Graph Security GitHub repo](https://github.com/microsoftgraph/security-api-solutions/issues/new).
+> **Note:** New providers are continuously onboarding to the Microsoft Graph security ecosystem. To request new providers or for extended support from existing providers, [file an issue in the Microsoft Graph security GitHub repo](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
-\* File issue: Alert status gets updated across Microsoft Graph Security API integrated applications but not reflected in the provider’s management experience.
+\* File issue: Alert status gets updated across Microsoft Graph security API integrated applications but not reflected in the provider’s management experience.
 
-\*\* Microsoft Defender for Endpoint requires additional [user roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles) to those required by the Microsoft Graph Security API. Only the users in both Microsoft Defender for Endpoint and Microsoft Graph Security API roles can have access to the Microsoft Defender for Endpoint data. Because application-only authentication is not limited by this, we recommend that you use an application-only authentication token.
+\*\* Microsoft Defender for Endpoint requires additional [user roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles) to those required by the Microsoft Graph security API. Only the users in both Microsoft Defender for Endpoint and Microsoft Graph security API roles can have access to the Microsoft Defender for Endpoint data. Because application-only authentication is not limited by this, we recommend that you use an application-only authentication token.
 
 \*\*\* Microsoft Defender for Identity alerts are available via the Microsoft Defender for Cloud Apps integration. This means you will get Microsoft Defender for Identity alerts only if you have joined Unified SecOps and connected Microsoft Defender for Identity into Microsoft Defender for Cloud Apps. Learn more about [how to integrate Microsoft Defender for Identity and Microsoft Defender for Cloud Apps](/azure-advanced-threat-protection/atp-mcas-integration).
-
-## Alerts_v2 (preview)
-
-Microsoft 365 Defender is a unified pre and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
-
-Microsoft 365 services and apps create  alerts  when they detect a suspicious or malicious event or activity.
-
-Individual [alerts](security-alert.md) provide valuable clues about a completed or ongoing attack, with rich content of the impacted assets and associated [evidence](security-alertevidence.md).
-
-You can pull [alerts](security-alert.md) from each of the services that are part of the Microsoft 365 Defender suite, and in addition combine them with the Microsoft 365 Defender [incidents](security-incident.md) for a full view into the scope of the attack. 
-
-The following services are covered by the Microsoft 365 Defender [alerts](security-alert.md):
-- Microsoft 365 Defender 
-- Microsoft Defender for Endpoint 
-- Microsoft Defender for Office 365 
-- Microsoft Defender for Identity 
-- Microsoft Defender for Cloud Apps 
-- Microsoft Data Loss Prevention 
 
 ## Attack simulation and training (preview)
 
@@ -107,20 +114,20 @@ The  [incident](security-incident.md) resource and its APIs allow you to sort 
 
 ## Secure Score
 
-[Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you have done to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The Microsoft Graph Security [secureScore](securescores.md) and [secureScoreControlProfile](securescorecontrolprofiles.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score would be after you adopt security features.
+[Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you have done to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The [secureScore](securescores.md) and [secureScoreControlProfile](securescorecontrolprofiles.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score would be after you adopt security features.
 
 ## Threat intelligence indicators (preview)
 
 Threat indicators, also referred to as indicators of compromise (IoCs), represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers can generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. These indicators are then used in various security tools to defend against related threats.
 
-The Microsoft Graph Security [tiIndicators](tiindicator.md) entity allows customers to feed threat indicators to Microsoft security solutions to enable block and alert actions on malicious activity or allow, which suppresses actions for indicators determined not to be relevant to an organization. When sending indicators, both the Microsoft solution that will utilize the indicator and the action to be taken on that indicator are specified.
+The [tiIndicators](tiindicator.md) entity allows customers to feed threat indicators to Microsoft security solutions to enable block and alert actions on malicious activity or allow, which suppresses actions for indicators determined not to be relevant to an organization. When sending indicators, both the Microsoft solution that will utilize the indicator and the action to be taken on that indicator are specified.
 
 You can integrate the [tiIndicator](tiindicator.md) entity into your application or use one of the following integrated threat intelligence platforms (TIP):
 
 - [Palo Alto Networks MineMeld Threat Intelligence Sharing](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/minemeld)
 - [MISP Open Source Threat Intelligence Platform](http://www.misp-project.org/) available through the [TI sample](https://aka.ms/tipmispsample)
 
-Threat indicators sent via the Microsoft Graph Security API are available today in the following products:
+Threat indicators sent via the Microsoft Graph security API are available today in the following products:
 
 - [Azure Sentinel](/azure/sentinel/overview) – Enables you to correlate threat indicators with log data to get alerts on malicious activity.
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) – Enables you to alert and/or block on threat indicators associated with malicious activity. You can also allow an indicator for ignoring the indicator from automated investigations. For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
@@ -135,7 +142,7 @@ The Microsoft Graph threat submission API helps organizations to submit a threat
 
 ## Common use cases
 
-The following are some of the most popular requests for working with the Microsoft Graph Security API.
+The following are some of the most popular requests for working with the Microsoft Graph security API.
 
 | **Use cases**   | **REST resources** | **Try it in Graph Explorer** |
 |:---------------|:--------|:----------|
@@ -186,14 +193,14 @@ The following are some of the most popular requests for working with the Microso
 |Update email threat submission policy|[Update emailThreatSubmissionPolicy](../api/security-emailthreatsubmission-post-emailthreats.md)|[https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/security/threatSubmission/emailThreatSubmissionPolicies/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Delete email threat submission policy|[Delete emailThreatSubmissionPolicy](../api/security-emailthreatsubmissionpolicy-delete.md)|[https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/threatSubmission/emailThreatSubmissionPolicies/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com)|
 
-You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph Security API entities.
+You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for these API sets.
 
 ## Next steps
 
-The Microsoft Graph Security API can open up new ways for you to engage with different security solutions from Microsoft and partners. Follow these steps to get started:
+The Microsoft Graph security API can open up new ways for you to engage with different security solutions from Microsoft and partners. Follow these steps to get started:
 
 - Drill down into [alerts](alert.md), [tiIndicator](tiindicator.md) (preview), [securityAction](securityaction.md) (preview), [secureScore](securescores.md), and [secureScoreControlProfiles](securescorecontrolprofiles.md).
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
@@ -203,7 +210,7 @@ Need more ideas? See [how some of our partners are using Microsoft Graph](https:
 
 ## See also
 
-[Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to these Microsoft Graph Security API samples:
+[Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to these Microsoft Graph security API samples:
 
 - [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
 - [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
@@ -211,9 +218,9 @@ Need more ideas? See [how some of our partners are using Microsoft Graph](https:
 - [PowerShell sample](https://aka.ms/graphsecuritypowershellsample)
 - [Other samples or contribute a new sample](https://aka.ms/graphsecurityapicode)
 
-Explore other options to connect with the Microsoft Graph Security API:
+Explore other options to connect with the Microsoft Graph security API:
 
-- [Microsoft Graph Security connectors for Logic Apps, Flow and Power Apps](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security)
+- [Microsoft Graph security connectors for Logic Apps, Flow and Power Apps](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security)
 - [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks)
 
 Engage with the community:

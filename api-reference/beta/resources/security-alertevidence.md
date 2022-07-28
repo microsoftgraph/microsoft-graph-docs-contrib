@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Each [alert](security-alert.md). contains a list of related evidence.
+Evidence related to an [alert](security-alert.md).
 
 ## Properties
 |Property|Type|Description|
@@ -96,7 +96,6 @@ Each [alert](security-alert.md). contains a list of related evidence.
 | noThreatsFound             | No threat was detected - the evidence is benign.  |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Do not use.  |
 
-`unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.
 
 ## Relationships
 None.
