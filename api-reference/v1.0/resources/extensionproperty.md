@@ -40,6 +40,7 @@ Inherits from [directoryObject](directoryobject.md).
 | [List extensionProperties](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List directory extensions on an application object. |
 | [Get extensionProperty](../api/extensionproperty-get.md) | [extensionProperty](extensionProperty.md) collection | Get a directory extension an application object. |
 | [Delete extensionProperty](../api/extensionproperty-delete.md) | None | Delete directory extension from an application object. You can delete only directory extensions that aren't synced from on-premises active directory. |
+| [Get available extensions](../api/directoryobject-getavailableextensionproperties.md) | [extensionProperty](extensionProperty.md) collection | Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps. |
 
 > [!TIP]
 > 1. To set a value for the extension property to an instance of a resource that is specified in **targetObjects**, use the Update operation of the resource. For example, the [Update user](../api/user-update.md) API to set the value for a user.
