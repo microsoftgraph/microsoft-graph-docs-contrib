@@ -10,7 +10,7 @@ doc_type: apiPageType
 # directoryObject: getAvailableExtensionProperties
 Namespace: microsoft.graph
 
-Return all or a filtered list of the directory extension properties that have been registered in a directory.The list includes extension properties in multi-tenant apps that have been consented to in the tenant. The following entities support extension properties:
+Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps. The following entities support extension properties:
 + [user](../resources/user.md)
 + [group](../resources/group.md)
 + [administrativeUnit](../resources/administrativeunit.md)
