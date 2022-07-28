@@ -12359,7 +12359,7 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
-          - name: Authentication context class references
+          - name: Protection levels
             items:
             - name: Authentication context class references
               href: resources/authenticationcontextclassreference.md
