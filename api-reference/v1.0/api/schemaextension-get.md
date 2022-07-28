@@ -51,8 +51,8 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_schemaextension"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
+```http
+GET https://graph.microsoft.com/v1.0/schemaExtensions/extcivhhslh_sbtest1
 ```
 
 # [C#](#tab/csharp)
@@ -94,16 +94,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id":"graphlearn_test",
-    "description": "Yet another test schema",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#schemaExtensions/$entity",
+    "id": "extcivhhslh_sbtest1",
+    "description": "SbGraph test extensions",
     "targetTypes": [
-        "User", "Group"
+        "contact",
+        "group"
     ],
-    "status": "InDevelopment",
-    "owner": "24d3b144-21ae-4080-943f-7067b395b913",
+    "status": "Available",
+    "owner": "da033fe6-d48e-435d-8014-e98a4b166900",
     "properties": [
         {
-            "name": "testName",
+            "name": "customerType",
             "type": "String"
         }
     ]

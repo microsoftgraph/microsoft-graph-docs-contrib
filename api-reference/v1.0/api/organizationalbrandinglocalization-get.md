@@ -58,7 +58,7 @@ The following is an example of the request.
   "name": "get_organizationalbrandinglocalization"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 ```
 
@@ -135,7 +135,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_organizationalbrandinglocalization_locale_signInPageText"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/organization/99b24e1b-abec-4598-9d63-a2baf0a3cea1/branding/localizations/fr-FR/signInPageText
 ```
 
@@ -202,7 +202,7 @@ The following is an example of the request.
   "name": "get_organizationalbranding_defaultlocale_bannerLogo"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/default/bannerLogo
 ```
 
@@ -238,7 +238,7 @@ The following is an example of the request.
   "name": "get_organizationalbranding_frlocale_bannerLogo"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/default/bannerLogo
 ```
 

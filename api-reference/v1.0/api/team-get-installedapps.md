@@ -63,7 +63,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET /teams/{id}/installedApps/{id}
+GET https://graph.microsoft.com/v1.0/teams/02bd9fd6-8f93-4758-87c3-1fb73740a315/installedApps/MDJiZDlmZDYtOGY5My00NzU4LTg3YzMtMWZiNzM3NDBhMzE1IyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=
 ```
 
 # [C#](#tab/csharp)
@@ -131,7 +131,7 @@ The following is an example of the request.
   "name": "get_installed_teams_apps_expand"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps/{id}?$expand=teamsAppDefinition
 ```
 

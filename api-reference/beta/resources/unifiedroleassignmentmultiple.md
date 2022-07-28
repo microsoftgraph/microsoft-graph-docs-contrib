@@ -2,7 +2,7 @@
 title: "unifiedRoleAssignmentMultiple resource type"
 description: "A role definition assigned to an array of principals (typically a user) over an array of scope."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
