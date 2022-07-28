@@ -2445,7 +2445,7 @@
           "ApiChange": "method",
           "ChangedApiName": "Get team photo,Update team photo",
           "ChangeType": "Addition",
-          "Description": "Added the [Get team photo](https://docs.microsoft.com/en-us/graph/api/team-get-photo?view=graph-rest-beta) and [Update team photo](https://docs.microsoft.com/en-us/graph/api/team-update-photo?view=graph-rest-beta) methods.",
+          "Description": "Added the [Get team photo](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta) and [Update team photo](https://docs.microsoft.com/en-us/graph/api/profilephoto-update?view=graph-rest-beta) methods.",
           "Target": "Get team photo,Update team photo"
         },
         {
@@ -5195,6 +5195,119 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-03T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Member",
+          "ChangedApiName": "shared",
+          "ChangeType": "Addition",
+          "Description": "Added the `shared` member to the **channelMembershipType** enumeration.",
+          "Target": "channelMembershipType"
+        },{
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Member",
+          "ChangedApiName": "teamifyGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `teamifyGroup` member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Member",
+          "ChangedApiName": "createChannel",
+          "ChangeType": "Addition",
+          "Description": "Added the `createChannel` member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "associatedTeamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [associatedTeamInfo](https://docs.microsoft.com/en-us/graph/api/resources/associatedTeamInfo?view=graph-rest-1.0) resource and a supported method.",
+          "Target": "associatedTeamInfo"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sharedWithTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharedWithTeams** relationship to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharedWithChannelTeamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharedWithChannelTeamInfo](https://docs.microsoft.com/en-us/graph/api/resources/sharedWithChannelTeamInfo?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "sharedWithChannelTeamInfo"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "allChannels",
+          "ChangeType": "Addition",
+          "Description": "Added the **allChannels** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "incomingChannels",
+          "ChangeType": "Addition",
+          "Description": "Added the **incomingChannels** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamInfo](https://docs.microsoft.com/en-us/graph/api/resources/teamInfo?view=graph-rest-1.0) resource type.",
+          "Target": "teamInfo"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "associatedTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the **associatedTeams** relationship to the [userTeamwork](https://docs.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-1.0) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Method",
+          "ChangedApiName": "doesUserHaveAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [doesUserHaveAccess](https://docs.microsoft.com/en-us/graph/api/channel?view=graph-rest-1.0) method to the [channel](https://docs.microsoft.com/en-us/graph/api/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-22T09:24:30.6932815Z", 
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },

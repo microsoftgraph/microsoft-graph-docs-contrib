@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-windowsProtectionStateId := "windowsProtectionState-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().WindowsProtectionStatesById(&windowsProtectionStateId).Get()
+
+result, err := graphClient.TenantRelationships().ManagedTenants().WindowsProtectionStatesById("windowsProtectionState-id").Get()
 
 
 ```
