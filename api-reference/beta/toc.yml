@@ -14832,18 +14832,6 @@ items:
           href: api/securityaction-get.md
         - name: Cancel security action
           href: api/securityaction-cancelsecurityaction.md
-      - name: Alerts
-        items:
-        - name: Alert
-          href: resources/alert.md        
-        - name: List alerts
-          href: api/alert-list.md
-        - name: Get alert
-          href: api/alert-get.md
-        - name: Update alert
-          href: api/alert-update.md
-        - name: Update multiple alerts
-          href: api/alert-updatealerts.md
       - name: Alerts and incidents (preview)
         items:
         - name: Alert
@@ -15211,6 +15199,18 @@ items:
             href: api/informationprotection-post-threatassessmentrequests.md
           - name: Get
             href: api/threatassessmentrequest-get.md
+      - name: Legacy alerts
+        items:
+        - name: Alert
+          href: resources/alert.md        
+        - name: List alerts
+          href: api/alert-list.md
+        - name: Get alert
+          href: api/alert-get.md
+        - name: Update alert
+          href: api/alert-update.md
+        - name: Update multiple alerts
+          href: api/alert-updatealerts.md
       - name: Secure scores
         href: resources/securescores.md
         items:
