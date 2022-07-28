@@ -1,6 +1,6 @@
 ---
 title: "extensionProperty resource type (directory extensions)"
-description: "Represents a directory extension"
+description: "Represents a directory extension."
 ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
