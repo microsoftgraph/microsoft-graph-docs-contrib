@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/assignments/{accessPackageAssignme
 
 ## Optional query parameters
 
-This method supports the `$expand` OData query parameter to expand the relationships, to retrieve the `accessPackage`, `target` and `assignmentPolicy`.  For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` OData query parameter to expand the `accessPackage`, `target` and `assignmentPolicy`. It also supports the `$select` query parameter. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
