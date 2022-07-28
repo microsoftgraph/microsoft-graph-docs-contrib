@@ -1,17 +1,17 @@
 ---
-title: "Create extensionProperty"
-description: "Create a new extensionProperty."
+title: "Create extensionProperty (directory extension)"
+description: "Create a new directory extension."
 ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
-# Create extensionProperty
+# Create extensionProperty (directory extension)
 
 Namespace: microsoft.graph
 
-Create a new [extensionProperty](../resources/extensionproperty.md) definition. You can use this operation to add a custom property value to the targeted object type defined in the **extensionProperty**, using standard creation and update requests to the target object.
+Create a new directory extension definition, represented by an [extensionProperty](../resources/extensionproperty.md) object.
 
 ## Permissions
 
