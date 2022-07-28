@@ -21,7 +21,7 @@ The Microsoft Graph security API provides a unified interface and schema to inte
 - Invoke actions to in response to new threats.
 - Provide visibility into security data to enable proactive risk management.
 
-The Microsoft Graph security API includes key resources in the following sections.
+The Microsoft Graph security API provides key features as described in the following sections.
 
 ## Actions (preview)
 
@@ -54,7 +54,7 @@ Alerts from the following security providers are available via these rich alerts
 
 ### Legacy alerts
 
-These [alert](alert.md) resources federate calling of the supported Azure and Microsoft 365 Defender security providers. They aggregate alert data that’s common among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response. 
+These [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate alert data that’s common among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response. 
 
 With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph security API by updating your **alert** entity.
 
