@@ -62,7 +62,7 @@ Here is an example of the request.
   "isComposable": true,
   "name": "worksheet_usedrange"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange
 ```
 
@@ -110,7 +110,7 @@ Here is an example of the request.
   "isComposable": true,
   "name": "worksheet_usedrange_valuesonly"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange(valuesOnly=true)
 ```
 

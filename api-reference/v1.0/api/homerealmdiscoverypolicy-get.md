@@ -64,7 +64,7 @@ The following is an example of the request.
   "name": "get_homerealmdiscoverypolicy"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/{id}
 ```
 
