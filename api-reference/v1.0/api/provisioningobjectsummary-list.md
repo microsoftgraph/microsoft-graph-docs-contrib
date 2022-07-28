@@ -100,7 +100,7 @@ The following is an example of the request.
   "name": "list_provisioningobjectsummary"
 } -->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 ```
 
@@ -262,7 +262,7 @@ The following is an example of the request.
   "name": "list_provisioningobjectsummary_error"
 } -->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 ```
 

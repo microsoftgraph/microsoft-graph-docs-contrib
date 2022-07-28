@@ -60,7 +60,7 @@ The following example retrieves all **identityProvider**.
   "name": "list-identityproviders"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/identityProviders
 ```
 

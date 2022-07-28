@@ -80,7 +80,7 @@ The following is an example of the request.
   "name": "reportroot_getonedriveactivityfilecounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOneDriveActivityFileCounts(period='D7')
 ```
 

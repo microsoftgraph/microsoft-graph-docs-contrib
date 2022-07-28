@@ -2,7 +2,7 @@
 title: "Get unifiedRoleDefinition"
 description: "Retrieve the properties and relationships of a unifiedRoleDefinition object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -55,7 +55,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
 
