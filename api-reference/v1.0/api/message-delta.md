@@ -50,9 +50,7 @@ GET /users/{id}/mailfolders/{id}/messages/delta?changeType=deleted
 
 ## Query parameters
 
-Tracking changes in messages incurs a round of one or more **delta** function calls. If you use any query parameter 
-(other than `$deltatoken` and `$skiptoken`), you must specify 
-it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
+Tracking changes in messages incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`) that is an OData system query option or the custom query option _changeType_, you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
 into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. 
 You only need to specify any desired query parameters once upfront. 
 In subsequent requests, simply copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already 
