@@ -118,7 +118,7 @@ This resource supports:
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
-|extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable. Supports `$expand` and `$filter` (`eq` when counting empty collections).|
+|extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable. Supports `$expand` and `$filter` (`eq` and `ne` when counting empty collections and only with [advanced query parameters](/graph/aad-advanced-queries)).|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. Read-only. Nullable. Supports `$expand`.|
 
 ## JSON representation
