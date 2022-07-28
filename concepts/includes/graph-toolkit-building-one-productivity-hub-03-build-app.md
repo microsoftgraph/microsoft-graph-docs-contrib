@@ -10,15 +10,15 @@ In this step, you'll create a web app and enable authentication with Microsoft G
 
 ## Enable authentication with the Microsoft Graph Toolkit
 
-To use the Microsoft Graph Toolkit via mgt-loader, add the following reference in **index.html** under the `<head></head>` section:
+To use the Microsoft Graph Toolkit via mgt-loader, add the following reference in **index.html** under the `<body></body>` section:
 
 ```HTML
-<script src="https://unpkg.com/@microsoft/mgt@2.5.1/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
 ```
 
 ### Initialize the MSAL2 provider
 
-1. In **index.html**, add the MSAL2 provider in the `<head></head>` section as following:
+1. In **index.html**, add the MSAL2 provider in the `<body></body>` section as following:
 
     ```HTML
     <mgt-msal2-provider 
@@ -53,9 +53,9 @@ To use the Microsoft Graph Toolkit via mgt-loader, add the following reference i
       <meta name='viewport' content='width=device-width, initial-scale=1'>
       <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
       <script src='main.js'></script>
-    
-      <script src="https://unpkg.com/@microsoft/mgt@2.5.1/dist/bundle/mgt-loader.js"></script>
-    
+    </head>
+    <body>
+      <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
       <mgt-msal2-provider 
           client-id="<YOUR_CLIENT_ID>"
           scopes="User.Read,
@@ -69,10 +69,6 @@ To use the Microsoft Graph Toolkit via mgt-loader, add the following reference i
           People.Read,
           User.ReadBasic.All">    
       </mgt-msal2-provider>
-    
-    </head>
-    <body>
-       
     </body>
     </html>
     ```

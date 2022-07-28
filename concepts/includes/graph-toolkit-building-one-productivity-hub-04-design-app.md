@@ -2,7 +2,7 @@ In this step, you'll design your web app by using Microsoft Graph Toolkit compon
 
 ## Initialize the Login component
 
-In **index.html** under `<body></body>`, create `<div></div>` and add the Login component inside the main div:
+In **index.html** inside the `<body></body>`, create `<div></div>` right under the provider and add the Login component inside the div:
 
   ```html
   <mgt-login></mgt-login>
@@ -147,8 +147,10 @@ Under div tagged with `class="row"`, add the File list component inside the thir
       <title>One Productivity Hub</title>
       <meta name='viewport' content='width=device-width, initial-scale=1'>
       <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-      <script src='main.js'></script>
-      <script src="https://unpkg.com/@microsoft/mgt@2.5.1/dist/bundle/mgt-loader.js"></script>
+      <script src='main.js'></script> 
+    </head>
+    <body>
+      <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
       <mgt-msal2-provider 
           client-id="<YOUR_CLIENT_ID>"
           scopes="User.Read,
@@ -161,9 +163,7 @@ Under div tagged with `class="row"`, add the File list component inside the thir
           Tasks.ReadWrite,
           People.Read,
           User.ReadBasic.All">    
-      </mgt-msal2-provider>     
-    </head>
-    <body>
+      </mgt-msal2-provider>    
       <div>
         <mgt-login></mgt-login>
             
