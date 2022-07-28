@@ -54,7 +54,6 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackageassignment"
