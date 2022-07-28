@@ -1,6 +1,6 @@
 ---
 title: "List extensionProperties (directory extensions)"
-description: "Retrieve a list of extensionproperty objects."
+description: "Retrieve a list of directory extension definitions."
 ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
