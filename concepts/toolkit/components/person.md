@@ -68,6 +68,7 @@ You can use several properties to customize the component.
 | line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `mail`.|
 | line3-property  | line3Property  | Sets the property of the personDetails to use for the third line of text. Default is `jobTitle`.|
 | show-presence   | showPresence   | Set flag to display person presence - default is `false`.|
+| usage | usage | Allows you to specify where the component is being used in order to add customized personalization for it. Currently only supports "people" as used in the people component. |
 
 ## CSS custom properties
 
