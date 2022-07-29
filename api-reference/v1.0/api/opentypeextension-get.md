@@ -156,7 +156,7 @@ First, by its name:
   "sampleKeys": ["Com.Contoso.Referral", "AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "get_opentypeextension_1"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
@@ -232,7 +232,7 @@ The second example references an extension by its name and gets the extension in
   "sampleKeys": ["Com.Contoso.Deal", "f5480dfd-7d77-4d0b-ba2e-3391953cc74a", "AAMkADVl17IsAAA="],
   "name": "get_opentypeextension_2"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal/
 ```
 
@@ -301,7 +301,7 @@ The filter returns the extension that has its **id** matching a fully qualified 
   "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "get_opentypeextension_3"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
 
@@ -426,7 +426,7 @@ The fourth example references an extension by its fully qualified name and gets 
   "blockType": "request",
   "name": "get_opentypeextension_4"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 ```
 
@@ -500,7 +500,7 @@ expands them by including the extension. The filter returns extensions that has 
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
 

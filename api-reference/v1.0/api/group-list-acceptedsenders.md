@@ -67,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
+GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/acceptedSenders
 ```
 
 # [C#](#tab/csharp)

@@ -12175,6 +12175,13 @@ items:
                   href: api/policyroot-list-rolemanagementpolicyassignments.md
                 - name: Get
                   href: api/unifiedrolemanagementpolicyassignment-get.md
+        - name: Tenant information
+          href: resources/tenantinformation.md
+          items:
+            - name: Find tenant by domain name
+              href: api/tenantrelationship-findtenantinformationbydomainname.md
+            - name: Find tenant by tenant ID
+              href: api/tenantrelationship-findtenantinformationbytenantid.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
@@ -14719,19 +14726,19 @@ items:
           - name: Repeat offender
             href: resources/attacksimulationrepeatoffender.md
           - name: Get repeat offenders
-            href: api/reportroot-getattacksimulationrepeatoffenders.md
+            href: api/securityreportsroot-getattacksimulationrepeatoffenders.md
         - name: Simulation data
           items:
           - name: Simulation user coverage
             href: resources/attacksimulationsimulationusercoverage.md
           - name: Get simulation coverage for users
-            href: api/reportroot-getattacksimulationsimulationusercoverage.md
+            href: api/securityreportsroot-getattacksimulationsimulationusercoverage.md
         - name: Training data
           items:
           - name: Training user coverage
             href: resources/attacksimulationtrainingusercoverage.md
           - name: Get training coverage for users
-            href: api/reportroot-getattacksimulationtrainingusercoverage.md
+            href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
     - name: Search
       displayname: Microsoft Search API
       items:
@@ -14913,20 +14920,20 @@ items:
             - name: Repeat offender
               href: resources/attacksimulationrepeatoffender.md
             - name: Get repeat offenders
-              href: api/reportroot-getattacksimulationrepeatoffenders.md
+              href: api/securityreportsroot-getattacksimulationrepeatoffenders.md
           - name: Simulation data
             items:
             - name: Simulation user coverage
               href: resources/attacksimulationsimulationusercoverage.md
             - name: Get simulation coverage for users
-              href: api/reportroot-getattacksimulationsimulationusercoverage.md
+              href: api/securityreportsroot-getattacksimulationsimulationusercoverage.md
           - name: Training data
             items:
             - name: Training user coverage
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
-              href: api/reportroot-getattacksimulationtrainingusercoverage.md
-      - name: eDiscovery
+              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+      - name: eDiscovery (preview)
         items:
         - name: Case
           href: resources/security-ediscoverycase.md

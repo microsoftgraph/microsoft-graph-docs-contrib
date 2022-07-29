@@ -204,7 +204,7 @@ Content-type: application/json
   "name": "get_groupsettings_for_a_group"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings
 ```
 

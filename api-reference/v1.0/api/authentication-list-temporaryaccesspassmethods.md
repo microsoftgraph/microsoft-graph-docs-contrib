@@ -76,7 +76,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_temporaryaccesspassauthenticationmethod"
 }
 -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods
 ```
 

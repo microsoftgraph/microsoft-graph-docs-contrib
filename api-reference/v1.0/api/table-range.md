@@ -55,7 +55,7 @@ The following is an example of the request.
   "name": "table_range",
   "idempotent": true
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/range
 ```
 

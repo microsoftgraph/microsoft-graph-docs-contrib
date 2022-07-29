@@ -66,7 +66,7 @@ The following is an example of the request.
   "name": "get_devices_transitivememberof"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 ```
 
@@ -137,7 +137,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "get_count_only"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf/$count
 ConsistencyLevel: eventual
 ```
@@ -166,7 +166,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "get_video_count"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$search="displayName:Video"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
@@ -211,7 +211,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "list_devices_transitivememberof_startswith"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
