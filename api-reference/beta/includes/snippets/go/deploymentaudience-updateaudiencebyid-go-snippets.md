@@ -7,26 +7,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewUpdateAudienceByIdPostRequestBody()
 memberEntityType := "String"
-requestBody.SetMemberEntityType(&memberEntityType)
-requestBody.SetAddMembers( []String {
+requestBody.SetMemberEntityType(&memberEntityType) 
+addMembers := []String {
 	"String",
+
 }
-requestBody.SetRemoveMembers( []String {
+requestBody.SetAddMembers(addMembers)
+removeMembers := []String {
 	"String",
+
 }
-requestBody.SetAddExclusions( []String {
+requestBody.SetRemoveMembers(removeMembers)
+addExclusions := []String {
 	"String",
+
 }
-requestBody.SetRemoveExclusions( []String {
+requestBody.SetAddExclusions(addExclusions)
+removeExclusions := []String {
 	"String",
+
 }
-options := &msgraphsdk.UpdateAudienceByIdRequestBuilderPostOptions{
-	Body: requestBody,
-}
-deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Audience().UpdateAudienceById().Post(options)
+requestBody.SetRemoveExclusions(removeExclusions)
+
+graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudienceById(deployment-id).Post(requestBody)
 
 
 ```

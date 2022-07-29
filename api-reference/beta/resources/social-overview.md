@@ -86,7 +86,7 @@ Feature: Analytics (preview)
 
 Use the analytics API to get activity statistics and related settings for a user:
 
-- [settings](../resources/settings.md): For the analytics API to return results for a user, the current user analytics settings must show a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
+- [settings](../resources/settings.md): For the analytics API to return results for a user, the current user analytics settings must show a valid Microsoft Viva Insights license, be opted in to using Viva Insights, and have a cloud-hosted mailbox that’s graph-enabled.
 - [activityStatistics](../resources/activitystatistics.md): Gets data for the last complete week (or the specified time range) for the Microsoft 365 activities that a user spent time on, including the number of hours spent on [calls](callactivitystatistics.md), [chats (instant messages)](chatactivitystatistics.md), [email](emailactivitystatistics.md), and [meetings](meetingactivitystatistics.md) during and outside of working hours and the number of hours available for [focused work](focusactivitystatistics.md).
 
 ## What's new

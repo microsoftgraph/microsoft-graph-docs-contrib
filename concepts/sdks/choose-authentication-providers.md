@@ -89,14 +89,14 @@ const {
     AuthCodeMSALBrowserAuthenticationProviderOptions
 } = require("@microsoft/microsoft-graph-client/authProviders/authCodeMsalBrowser");
 
-const options: AuthCodeMSALBrowserAuthenticationProviderOptions: {
+const options: AuthCodeMSALBrowserAuthenticationProviderOptions = {
     account: account, // the AccountInfo instance to acquire the token for.
     interactionType: InteractionType.PopUp, // msal-browser InteractionType
     scopes: ["user.read", "mail.send"] // example of the scopes to be passed
 }
 
 // Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
-const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
+const authProvider = new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
 ```
 
 ### Using @azure/identity for server-side applications
@@ -170,7 +170,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -234,7 +234,7 @@ var graphClient = new GraphServiceClient(clientSecretCredential, scopes);
 ### Using a client certificate
 
 ```csharp
-var scopes = new[] { "User.Read" };
+var scopes = new[] { "https://graph.microsoft.com/.default" };
 
 // Multi-tenant apps can use "common",
 // single-tenant apps must use the tenant ID from the Azure portal
@@ -327,7 +327,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -560,7 +560,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -754,7 +754,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -856,7 +856,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 

@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1219
+Content-Length: 1213
 
 {
   "value": {
@@ -96,7 +96,7 @@ Content-Length: 1219
     "workFromAnywhereHealthState": "insufficientData",
     "appHealthState": "insufficientData",
     "resourcePerformanceHealthState": "insufficientData",
-    "batteryHealthHealthState": "insufficientData"
+    "batteryHealthState": "insufficientData"
   }
 }
 ```

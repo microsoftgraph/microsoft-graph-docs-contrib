@@ -10,6 +10,10 @@ $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcUserSetting"
 	DisplayName = "Example"
 	SelfServiceEnabled = $true
+	RestorePointSetting = @{
+		FrequencyInHours = 16
+		UserRestoreEnabled = $true
+	}
 	LocalAdminEnabled = $false
 }
 

@@ -1,7 +1,7 @@
 ---
 title: "List userRegistrationDetails"
 description: "Get a list of the authentication methods registered for the user as defined in the userRegistrationDetails object."
-author: "danielwood95"
+author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
@@ -51,6 +51,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_userregistrationdetails"
@@ -59,6 +61,33 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrationDetails
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-userregistrationdetails-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-userregistrationdetails-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-userregistrationdetails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-userregistrationdetails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-userregistrationdetails-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-userregistrationdetails-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
@@ -74,23 +103,55 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.userRegistrationDetails",
-      "id": "6832a83d-2ef9-c5f5-9a2d-f2761d7ff317",
-      "userDisplayName": "String",
-      "userPrincipalName": "String",
-      "isMfaRegistered": "Boolean",
-      "isMfaCapable": "Boolean",
-      "isSsprRegistered": "Boolean",
-      "isSsprEnabled": "Boolean",
-      "isSsprCapable": "Boolean",
-      "isPasswordlessCapable": "Boolean",
-      "methodsRegistered": [
-        "String"
-      ]
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#reports/authenticationMethods/userRegistrationDetails",
+    "value": [
+        {
+            "id": "86462606-fde0-4fc4-9e0c-a20eb73e54c6",
+            "userPrincipalName": "AlexW@Contoso.com",
+            "userDisplayName": "Alex Wilber",
+            "isSsprRegistered": false,
+            "isSsprEnabled": false,
+            "isSsprCapable": false,
+            "isMfaRegistered": true,
+            "isMfaCapable": true,
+            "isPasswordlessCapable": false,
+            "methodsRegistered": [
+                "microsoftAuthenticatorPush",
+                "softwareOneTimePasscode"
+            ],
+            "defaultMethod": "microsoftAuthenticatorPush"
+        },
+        {
+            "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
+            "userPrincipalName": "AllanD@Contoso.com",
+            "userDisplayName": "Allan Deyoung",
+            "isSsprRegistered": false,
+            "isSsprEnabled": false,
+            "isSsprCapable": false,
+            "isMfaRegistered": false,
+            "isMfaCapable": false,
+            "isPasswordlessCapable": false,
+            "methodsRegistered": [],
+            "defaultMethod": ""    
+        },
+        {
+            "id": "c8096958-797c-44fa-8fde-a6fb62567cf0",
+            "userPrincipalName": "BiancaP@Contoso.com",
+            "userDisplayName": "Bianca Pisani",
+            "isSsprRegistered": true,
+            "isSsprEnabled": false,
+            "isSsprCapable": false,
+            "isMfaRegistered": true,
+            "isMfaCapable": true,
+            "isPasswordlessCapable": false,
+            "methodsRegistered": [
+                "mobilePhone",
+                "microsoftAuthenticatorPush",
+                "softwareOneTimePasscode"
+            ],
+            "defaultMethod": "mobilePhone"
+        }
+    ]
 }
 ```
 

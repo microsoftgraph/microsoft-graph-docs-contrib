@@ -18,6 +18,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |:---|:---|:---|
 |[List accessPackageAssignments](../api/entitlementmanagement-list-assignments.md)|[accessPackageAssignment](accesspackageassignment.md) collection|Retrieve a list of **accessPackageAssignment** objects. |
 |[filterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects filtered on the signed-in user.|
+|[reprocess](../api/accesspackageassignment-reprocess.md) | None | Automatically reevaluate and enforce a user’s assignments for a specific access package.|
 
 > [!NOTE]
 > To create or remove an access package assignment for a user, use the [create an accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) method.
@@ -36,6 +37,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |:---|:---|:---|
 |accessPackage|[accessPackage](accesspackage.md)|Read-only. Nullable. Supports `$filter` (`eq`) on the **id** property and `$expand` query parameters.|
 |target|[accessPackageSubject](accesspackagesubject.md)|The subject of the access package assignment. Read-only. Nullable. Supports `$expand`. Supports `$filter` (`eq`) on **objectId**.|
+|assignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)|Read-only. Supports `$filter` (`eq`) on the **id** property and `$expand` query parameters.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

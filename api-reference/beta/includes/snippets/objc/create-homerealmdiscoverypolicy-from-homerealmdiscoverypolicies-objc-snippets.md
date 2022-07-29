@@ -13,7 +13,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphHomeRealmDiscoveryPolicy *homeRealmDiscoveryPolicy = [[MSGraphHomeRealmDiscoveryPolicy alloc] init];
 NSMutableArray *definitionList = [[NSMutableArray alloc] init];
-[definitionList addObject: @"definition-value"];
+[definitionList addObject: @"{"HomeRealmDiscoveryPolicy":
+     {"AccelerateToFederatedDomain":true,
+      "PreferredDomain":"federated.example.edu",
+      "AlternateIdLogin":{"Enabled":true}}}"];
 [homeRealmDiscoveryPolicy setDefinition:definitionList];
 [homeRealmDiscoveryPolicy setDisplayName:@"displayName-value"];
 [homeRealmDiscoveryPolicy setIsOrganizationDefault: true];

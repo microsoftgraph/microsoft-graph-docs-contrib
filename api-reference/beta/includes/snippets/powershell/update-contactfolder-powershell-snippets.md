@@ -11,6 +11,7 @@ $params = @{
 	DisplayName = "displayName-value"
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserContactFolder -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
 
 ```

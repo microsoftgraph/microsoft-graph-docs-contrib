@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var profile = await graphClient.Me.Profile
 	.Request()
-	.Expand("skills($select=displayName)")
+	.Expand("names($select=first,last),skills($select=displayName)")
 	.GetAsync();
 
 ```

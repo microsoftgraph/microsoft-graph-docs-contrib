@@ -2,7 +2,7 @@
 title: "Use the Microsoft Graph Toolkit with React"
 description: "Get started using the Microsoft Graph Toolkit in a React application."
 ms.localizationpriority: medium
-author: waldekmastykarz
+author: sebastienlevert
 ---
 
 # Use the Microsoft Graph Toolkit with React

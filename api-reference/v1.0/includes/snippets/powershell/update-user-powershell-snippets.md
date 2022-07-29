@@ -13,6 +13,7 @@ $params = @{
 	OfficeLocation = "18/2111"
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUser -UserId $userId -BodyParameter $params
 
 ```

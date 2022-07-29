@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewBaseTaskList()
+requestBody := graphmodels.NewBaseTaskList()
+"@odata.type" := "#microsoft.graph.taskList"
+requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "Shopping list"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ListsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Tasks().Lists().Post(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Me().Tasks().Lists().Post(requestBody)
 
 
 ```

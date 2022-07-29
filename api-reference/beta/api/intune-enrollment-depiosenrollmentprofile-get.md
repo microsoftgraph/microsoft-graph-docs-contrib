@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2526
+Content-Length: 2569
 
 {
   "value": {
@@ -127,7 +127,8 @@ Content-Length: 2526
     "temporarySessionTimeoutInSeconds": 0,
     "userSessionTimeoutInSeconds": 11,
     "passcodeLockGracePeriodInSeconds": 0,
-    "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
+    "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+    "userlessSharedAadModeEnabled": true
   }
 }
 ```

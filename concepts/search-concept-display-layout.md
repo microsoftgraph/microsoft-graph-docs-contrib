@@ -1,15 +1,15 @@
 ---
-ms.author: "yiwenwang"
-title: "Use the Microsoft Search API in Microsoft Graph to render display layout"
-description: "Use the Microsoft Search API in Microsoft Graph to display search results in different ways."
+title: "Use the Microsoft Search API to manage layout templates for search results"
+description: "Use the Microsoft Search API in Microsoft Graph to display search results in different ways by using the Adaptive Card template and Microsoft 365 admin center."
 author: "yiwenwang"
+ms.author: "yiwenwang"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API in Microsoft Graph to render display layout (preview)
+# Use the Microsoft Search API to manage layout templates for search results
 
-A search display layout or result type is a rule that causes distinct kinds of search results to be displayed in different ways in search result pages. It consists of the following: 
+You can use the Microsoft Search API in Microsoft Graph to manage layout templates for search results. A search display layout or result type is a rule that causes distinct kinds of search results to be displayed in different ways in search result pages. It consists of the following:
 
 - One or more characteristics or conditions to compare each search result against, such as the result source or content type of the search result.
 - A display template to use for search results that meet the conditions. The display template controls the way in which all results that meet the conditions appear and behave on a search results page. 
@@ -22,7 +22,7 @@ Customers can customize their search result type in the [Microsoft 365 admin cen
 
 The following example shows how to get the display layouts or result templates for rendering the search results by setting the **enableResultTemplate** property to `true` in the request contract.
 
-The reponse shows three search hits, two of them related, with the **resultTemplateId** 1603900360618_5XCBK2OXG, and the other one with the **resultTemplateId** 1603900360618_5XCBK2OXP. These IDs match with one of the keys of the two display layouts contained in the **resultTemplates** dictionary that's included within the response contract. Using the result template IDs, you can determine which display layout to use to render each search result.
+The response shows three search hits, two of them related, with the **resultTemplateId** 1603900360618_5XCBK2OXG, and the other one with the **resultTemplateId** 1603900360618_5XCBK2OXP. These IDs match with one of the keys of the two display layouts contained in the **resultTemplates** dictionary that's included within the response contract. Using the result template IDs, you can determine which display layout to use to render each search result.
 
 ### Request
 
@@ -456,6 +456,7 @@ The following example shows how to use Adaptive Card templating to render search
 </html>
 ```
 
-## Next steps
+## See also
 
-- [Use the Microsoft Search API](/graph/api/resources/search-api-overview)
+- [Create a layout to customize search results](/microsoftsearch/customize-results-layout)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

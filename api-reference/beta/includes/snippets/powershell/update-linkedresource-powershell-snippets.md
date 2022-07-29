@@ -13,6 +13,7 @@ $params = @{
 	DisplayName = "Microsoft"
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -LinkedResourceId $linkedResourceId -BodyParameter $params
 
 ```
