@@ -93,7 +93,7 @@ The following is an example of the request.
   "name": "reportroot_getemailappusageuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getEmailAppUsageUserDetail(period='D7')
 ```
 

@@ -57,7 +57,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "educationschool_get_users"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/users
 ```
 

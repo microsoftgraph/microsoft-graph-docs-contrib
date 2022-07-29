@@ -58,7 +58,7 @@ The following is an example of the request.
   "name": "get_replies"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments/{id}/replies
 ```
 
