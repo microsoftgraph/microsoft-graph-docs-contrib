@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [chats](../resources/chat.md) that the user is part of, or the application has access to.
+Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
 ## Permissions
 

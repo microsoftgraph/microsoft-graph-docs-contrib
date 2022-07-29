@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the list of [chats](../resources/chat.md) that the user is part of, or the application has access to.
+Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
 ## Permissions
 
