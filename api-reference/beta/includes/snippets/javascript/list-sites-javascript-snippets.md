@@ -12,8 +12,6 @@ const client = Client.init(options);
 
 let sites = await client.api('/sites')
 	.version('beta')
-	.filter('siteCollection/root ne null')
-	.select('siteCollection,webUrl')
 	.get();
 
 ```

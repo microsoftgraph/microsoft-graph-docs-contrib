@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewOnlineMeeting()
-lobbyBypassSettings := msgraphsdk.NewLobbyBypassSettings()
-requestBody.SetLobbyBypassSettings(lobbyBypassSettings)
+requestBody := graphmodels.NewOnlineMeeting()
+lobbyBypassSettings := graphmodels.NewLobbyBypassSettings()
 isDialInBypassEnabled := true
-lobbyBypassSettings.SetIsDialInBypassEnabled(&isDialInBypassEnabled)
-onlineMeetingId := "onlineMeeting-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Patch(requestBody)
+lobbyBypassSettings.SetIsDialInBypassEnabled(&isDialInBypassEnabled) 
+requestBody.SetLobbyBypassSettings(lobbyBypassSettings)
+
+graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Patch(requestBody)
 
 
 ```

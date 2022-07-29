@@ -7,12 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTeamworkTagMember()
+requestBody := graphmodels.NewTeamworkTagMember()
 userId := "97f62344-57dc-409c-88ad-c4af14158ff5"
-requestBody.SetUserId(&userId)
-teamId := "team-id"
-teamworkTagId := "teamworkTag-id"
-result, err := graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Members().Post(requestBody)
+requestBody.SetUserId(&userId) 
+
+result, err := graphClient.TeamsById("team-id").TagsById("teamworkTag-id").Members().Post(requestBody)
 
 
 ```

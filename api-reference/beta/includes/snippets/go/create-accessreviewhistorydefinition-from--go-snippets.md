@@ -7,53 +7,68 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAccessReviewHistoryDefinition()
+requestBody := graphmodels.NewAccessReviewHistoryDefinition()
 displayName := "Last quarter's group reviews April 2021"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetDecisions( []AccessReviewHistoryDecisionFilter {
+requestBody.SetDisplayName(&displayName) 
+decisions := []graphmodels.AccessReviewHistoryDecisionFilterable {
 	"approve",
 	"deny",
 	"dontKnow",
 	"notReviewed",
 	"notNotified",
+
 }
-scheduleSettings := msgraphsdk.NewAccessReviewHistoryScheduleSettings()
-requestBody.SetScheduleSettings(scheduleSettings)
+requestBody.SetDecisions(decisions)
+scheduleSettings := graphmodels.NewAccessReviewHistoryScheduleSettings()
 reportRange := "P1M"
-scheduleSettings.SetReportRange(&reportRange)
-recurrence := msgraphsdk.NewPatternedRecurrence()
-scheduleSettings.SetRecurrence(recurrence)
-pattern := msgraphsdk.NewRecurrencePattern()
-recurrence.SetPattern(pattern)
-type := "monthly"
-pattern.SetType(&type)
+scheduleSettings.SetReportRange(&reportRange) 
+recurrence := graphmodels.NewPatternedRecurrence()
+pattern := graphmodels.NewRecurrencePattern()
+type := graphmodels.MONTHLY_RECURRENCEPATTERNTYPE 
+pattern.SetType(&type) 
 interval := int32(1)
-pattern.SetInterval(&interval)
-range := msgraphsdk.NewRecurrenceRange()
-recurrence.SetRange(range)
-type := "noEnd"
-range.SetType(&type)
+pattern.SetInterval(&interval) 
+recurrence.SetPattern(pattern)
+range := graphmodels.NewRecurrenceRange()
+type := graphmodels.NOEND_RECURRENCERANGETYPE 
+range.SetType(&type) 
 startDate := "2018-08-03T21:02:30.667Z"
-range.SetStartDate(&startDate)
-range.SetAdditionalData(map[string]interface{}{
-	"count": ,
+range.SetStartDate(&startDate) 
+additionalData := map[string]interface{}{
+	"count" : int32(0) , 
 }
-requestBody.SetScopes( []AccessReviewScope {
-	msgraphsdk.NewAccessReviewScope(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.accessReviewQueryScope",
-		"queryType": "MicrosoftGraph",
-		"query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
-		"queryRoot": nil,
-	}
-	msgraphsdk.NewAccessReviewScope(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.accessReviewQueryScope",
-		"queryType": "MicrosoftGraph",
-		"query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
-		"queryRoot": nil,
-	}
+range.SetAdditionalData(additionalData)
+recurrence.SetRange(range)
+scheduleSettings.SetRecurrence(recurrence)
+requestBody.SetScheduleSettings(scheduleSettings)
+
+
+accessReviewScope := graphmodels.NewAccessReviewScope()
+additionalData := map[string]interface{}{
+	"@odata.type" : "#microsoft.graph.accessReviewQueryScope", 
+	"queryType" : "MicrosoftGraph", 
+	"query" : "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')", 
+	queryRoot := null
+accessReviewScope.SetQueryRoot(&queryRoot) 
 }
+accessReviewScope.SetAdditionalData(additionalData)
+accessReviewScope1 := graphmodels.NewAccessReviewScope()
+additionalData := map[string]interface{}{
+	"@odata.type" : "#microsoft.graph.accessReviewQueryScope", 
+	"queryType" : "MicrosoftGraph", 
+	"query" : "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')", 
+	queryRoot := null
+accessReviewScope1.SetQueryRoot(&queryRoot) 
+}
+accessReviewScope1.SetAdditionalData(additionalData)
+
+scopes := []graphmodels.AccessReviewScopeable {
+	accessReviewScope,
+	accessReviewScope1,
+
+}
+requestBody.SetScopes(scopes)
+
 result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(requestBody)
 
 

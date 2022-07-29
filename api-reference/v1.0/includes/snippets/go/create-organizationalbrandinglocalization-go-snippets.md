@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewOrganizationalBrandingLocalization()
+requestBody := graphmodels.NewOrganizationalBrandingLocalization()
 backgroundColor := "#00000F"
-requestBody.SetBackgroundColor(&backgroundColor)
+requestBody.SetBackgroundColor(&backgroundColor) 
 id := "fr-FR"
-requestBody.SetId(&id)
+requestBody.SetId(&id) 
 signInPageText := " "
-requestBody.SetSignInPageText(&signInPageText)
-organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Branding().Localizations().Post(requestBody)
+requestBody.SetSignInPageText(&signInPageText) 
+
+result, err := graphClient.OrganizationById("organization-id").Branding().Localizations().Post(requestBody)
 
 
 ```
