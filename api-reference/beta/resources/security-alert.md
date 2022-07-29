@@ -18,6 +18,8 @@ Represents potential security issues within a customer's tenant that Microsoft 3
 
 When a threat is detected, alerts are created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called an [incident](security-incident.md). Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 
+[!INCLUDE [alerts-callout-two-types](../includes/alerts-callout-two-types.md)]
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
