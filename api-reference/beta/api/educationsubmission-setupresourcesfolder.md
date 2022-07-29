@@ -82,7 +82,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 The following is an example of the response. 
 
 <!-- {
@@ -134,11 +134,11 @@ Content-type: application/json
     "submittedResources": []
 }
 ```
+
 ### Example 2: Set up a resource folder when the assignment is no longer open for submission
 
 #### Request
 The following is an example of a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment is no longer open for submission.
-
 
 
 <!-- {
@@ -153,8 +153,8 @@ Content-type: application/json
 }
 ```
 
-### Response
-The following is an example of a response. 
+#### Response
+The following is an example of the response. 
 
 <!-- {
   "blockType": "response",
@@ -162,7 +162,7 @@ The following is an example of a response.
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
-HTTP/1.1 400 Bad request
+HTTP/1.1 400 Bad Request
 Content-type: application/json
 
 {
@@ -183,7 +183,6 @@ Content-type: application/json
 The following is an example of a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment has already been submitted.
 
 
-
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_setupresourcesfolder"
@@ -196,7 +195,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 The following is an example of the response. 
 
 <!-- {
@@ -205,7 +204,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
-HTTP/1.1 400 Bad request
+HTTP/1.1 400 Bad Request
 Content-type: application/json
 
 {
