@@ -50,7 +50,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true` to specify that only extension properties that are synced from the on-premises directory should be returned; `false` to specify that only extension properties that are not synced from the on-premises directory should be returned. If the parameter is omitted, all extension properties (both synced and non-synced) are returned.|
+|isSyncedFromOnPremises|Boolean|`true` to specify that only extension properties that are synced from the on-premises directory should be returned; `false` to specify that only extension properties that are not synced from the on-premises directory should be returned. If the parameter is omitted, all extension properties (both synced and non-synced) are returned. Optional.|
 
 
 ## Response
@@ -69,11 +69,6 @@ If successful, this action returns a `200 OK` response code and an [extensionPro
 -->
 ``` http
 POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProperties
-Content-Type: application/json
-
-{
-  "isSyncedFromOnPremises": true
-}
 ```
 
 # [C#](#tab/csharp)
