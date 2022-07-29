@@ -28,9 +28,9 @@ When a threat is detected, alerts are created in the system for an analyst to in
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier to represent the alert.|
-|providerAlertId|String|The ID of the alert as it appears in the provider product that generated the alert.|
-|incidentId|String|Unique identifier to represent the [incident](security-incident.md) this alert is associated with.|
+|id|String|Unique identifier to represent the **alert** resource.|
+|providerAlertId|String|The ID of the alert as it appears in the security provider product that generated the alert.|
+|incidentId|String|Unique identifier to represent the [incident](security-incident.md) this **alert** resource is associated with.|
 |status|[microsoft.graph.security.alertStatus](#alertstatus-values)|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
 |severity|[microsoft.graph.security.alertSeverity](#alertseverity-values)|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |classification|[microsoft.graph.security.alertClassification](#alertclassification-values)|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
@@ -43,7 +43,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 |description|String|String value describing each alert.|
 |recommendedActions|String|Recommended response and remediation actions to take in the event this alert was generated.|
 |category|String|The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
-|assignedTo|String|Owner of the incident, or null if no owner is assigned.|
+|assignedTo|String|Owner of the **incident**, or null if no owner is assigned.|
 |alertWebUrl|String|URL for the alert page in the Microsoft 365 Defender portal.|
 |incidentWebUrl|String|URL for the alert page in the Microsoft 365 Defender portal.|
 |actorDisplayName|String|The adversary or activity group that is associated with this alert.|
@@ -124,7 +124,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 | microsoft365Defender         | Microsoft 365 Defender.                        |
 | aadIdentityProtection        | Azure Active Directory Identity Protection.    |
 | microsoftAppGovernance       | Microsoft app governance.                      |
-| microsoftDataLossPrevention  | Microsoft Purview Data Loss Prevention         |
+| microsoftDataLossPrevention  | Microsoft Purview Data Loss Prevention.        |
 | unknownFutureValue           | Evolvable enumeration sentinel value. Do not use.|
 
 
@@ -135,9 +135,9 @@ When a threat is detected, alerts are created in the system for an analyst to in
 | unknown                        | Unknown detection source.                                    |
 | microsoftDefenderForEndpoint   | Microsoft Defender For Endpoint.                             |
 | antivirus                      | Antivirus software.                                          |
-| smartScreen                    | Smart Screen.                                                |
+| smartScreen                    | Microsoft Defender SmartScreen.                              |
 | customTi                       | Custom threat intelligence.                                  |
-| microsoftDefenderForOffice365  | Microsoft Defender For Office 365.                           |
+| microsoftDefenderForOffice365  | Microsoft Defender for Office 365.                           |
 | automatedInvestigation         | Automated investigation.                                     |
 | microsoftThreatExperts         | Microsoft Threat Experts.                                    |
 | customDetection                | Custom detection.                                            |
