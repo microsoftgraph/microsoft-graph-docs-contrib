@@ -1,6 +1,6 @@
 ---
 title: "Delete browserSharedCookie"
-description: "Delete a browserSharedCookie object."
+description: "Delete a browserSharedCookie from the site list."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [browserSharedCookie](../resources/browsersharedcookie.md) object.
+Delete a [browserSharedCookie](../resources/browsersharedcookie.md) from the site list.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -89,7 +89,8 @@ DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteList
 
 
 #### Response
-The following is an example of the response. The status is changed to `pendingDelete` and the shared cookie must be published to fully remove.
+The following is an example of the response where the status has changed to
+`pendingDelete` but the shared cookie is still published. You must publish the shared cookie to fully remove it from the site list.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
