@@ -2,7 +2,7 @@
 title: "Get subscription"
 description: "Retrieve the properties and relationships of a subscription."
 ms.localizationpriority: high
-author: "Jumaodhiss"
+author: "jumasure"
 ms.prod: "change-notifications"
 doc_type: apiPageType
 ---

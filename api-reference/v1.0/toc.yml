@@ -4480,27 +4480,27 @@ items:
         href: resources/opentypeextension.md
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: Create open extension
+        - name: Create
           href: api/opentypeextension-post-opentypeextension.md
-        - name: Get open extension
+        - name: Get
           href: api/opentypeextension-get.md
-        - name: Update open extension
+        - name: Update
           href: api/opentypeextension-update.md
-        - name: Delete open extension
+        - name: Delete
           href: api/opentypeextension-delete.md
       - name: Schema extensions
         href: resources/schemaextension.md
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: List schema extensions
+        - name: List
           href: api/schemaextension-list.md
-        - name: Create schema extension
+        - name: Create
           href: api/schemaextension-post-schemaextensions.md
-        - name: Get schema extension
+        - name: Get
           href: api/schemaextension-get.md
-        - name: Update schema extension
+        - name: Update
           href: api/schemaextension-update.md
-        - name: Delete schema extension
+        - name: Delete
           href: api/schemaextension-delete.md
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
@@ -5524,6 +5524,19 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List contacted reviewers
               href: api/accessreviewinstance-list-contactedreviewers.md
+          - name: Access review stage
+            href: resources/accessreviewstage.md
+            items:
+              - name: List
+                href: api/accessreviewinstance-list-stages.md
+              - name: Get
+                href: api/accessreviewstage-get.md
+              - name: Update
+                href: api/accessreviewstage-update.md
+              - name: Filter by current user
+                href: api/accessreviewstage-filterbycurrentuser.md
+              - name: Stop
+                href: api/accessreviewstage-stop.md
           - name: Access review instance decision item
             displayName: access review decisions
             href: resources/accessreviewinstancedecisionitem.md
