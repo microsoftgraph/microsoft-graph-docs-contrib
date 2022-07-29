@@ -32,7 +32,7 @@ With Graph Explorer, you can make requests to the Microsoft Graph APIs to retrie
 
 ## Retrieve data in Graph Explorer
 
-To run a GET request in Graph Explorer, you don't have to be signed in. You can retrieve sample data from the default sample tenant.
+To run a GET request in Graph Explorer, you don't have to sign in. You can retrieve sample data from the default sample tenant.
 
 :::image type="content" source="./images/get-request.png" alt-text="Screenshot of a sample request in Graph Explorer." border="true":::
 
