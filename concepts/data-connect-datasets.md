@@ -66,6 +66,10 @@ Data connect supports several datasets today, including Azure Active Directory, 
 
 ### OneDrive and SharePoint Online
 
+Please consider that these datasets are available after 48 hours (about 2 days). For instance, you can query data for 07/01 starting on 07/03.  
+
+This data is available for only the past 21 days (about 3 weeks). For instance, if you would like to query data for 07/01, you can do so from 07/03 to 07/24. 
+
 | Dataset name | Description | Sample and Schema | Billing |
 |--|--|--|--|
 | DocumentSharingDataset_v0_Preview | Contains information about sharing permissions of documents. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/DocumentSharingDataset_v0_Preview.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/DocumentSharingDataset_v0_Preview.md)</li></ul> | [Free (under preview only)](https://azure.microsoft.com/pricing/details/graph-data-connect/). These datasets will be available to those in Preview. You will need to join the Graph TAP program using the signup form at https://aka.ms/GraphTAPForm  and request to join the Preview.  |
