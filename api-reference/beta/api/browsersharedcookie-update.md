@@ -41,7 +41,7 @@ PATCH /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCooki
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
 |Property|Type|Description|
@@ -56,7 +56,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an updated [browserSharedCookie](../resources/browsersharedcookie.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -65,16 +65,17 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "update_browsersharedcookie"
+  "sampleKeys": ["20579923-e6c8-425a-b728-47f43c10bc05", "972a5778-df43-45fd-9c2a-5dd944c7a1ce"]
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCookies/{browserSharedCookieId}
+PATCH https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/20579923-e6c8-425a-b728-47f43c10bc05/sharedCookies/972a5778-df43-45fd-9c2a-5dd944c7a1ce
 Content-Type: application/json
 Content-length: 349
 
 {
   "hostOrDomain": "www.microsoft.com",
-  "sourceEnvironment": "micrsoftEdge",
+  "sourceEnvironment": "microsoftEdge",
   "displayName": "Microsoft Cookie",
   "path": "/",
   "hostOnly": true,

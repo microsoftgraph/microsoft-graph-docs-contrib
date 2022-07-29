@@ -51,11 +51,12 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_browsersitelist"
+  "name": "delete_browsersitelist",
+  "sampleKeys": ["36ba61eb-c492-4283-a38b-963a1dbb2f69"]
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}
+DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/36ba61eb-c492-4283-a38b-963a1dbb2f69
 ```
 
 

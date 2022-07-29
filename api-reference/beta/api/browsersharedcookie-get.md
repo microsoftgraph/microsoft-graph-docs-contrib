@@ -1,6 +1,6 @@
 ---
 title: "Get browserSharedCookie"
-description: "Read the properties and relationships of a browserSharedCookie object."
+description: "Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode"
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve properties and relationships for a [browserSharedCookie](../resources/browsersharedcookie.md) resource. A **browserSharedCookie** represents a cookie that can be shared between Edge and Internet Explorer mode.
+Get a [session cookie](../resources/browsersharedcookie.md) that can be shared between a Microsoft Edge process and an Internet Explorer process, while using [Internet Explorer mode](/deployedge/edge-ie-mode).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,11 +54,12 @@ If successful, this method returns a `200 OK` response code and a [browserShared
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_browsersharedcookie"
+  "name": "get_browsersharedcookie",
+  "sampleKeys": ["147713b8-4df2-4717-93a3-bfb1ebb54881", "07f4030f-45ff-4ad1-9277-3b8f6ee74141"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCookies/{browserSharedCookieId}
+GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/147713b8-4df2-4717-93a3-bfb1ebb54881/sharedCookies/07f4030f-45ff-4ad1-9277-3b8f6ee74141
 ```
 
 

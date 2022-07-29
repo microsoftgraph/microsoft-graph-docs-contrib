@@ -40,7 +40,7 @@ PATCH /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
 |Property|Type|Description|
@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an updated [browserSiteList](../resources/browsersitelist.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -60,11 +60,12 @@ If successful, this method returns a `204 No Content` response code and an updat
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_browsersitelist"
+  "name": "update_browsersitelist",
+  "sampleKeys": ["36ba61eb-c492-4283-a38b-963a1dbb2f69"]
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}
+PATCH https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/36ba61eb-c492-4283-a38b-963a1dbb2f69
 Content-Type: application/json
 Content-length: 283
 

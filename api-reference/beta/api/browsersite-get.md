@@ -1,6 +1,6 @@
 ---
 title: "Get browserSite"
-description: "Read the properties and relationships of a browserSite object."
+description: "Get a browserSite that is in Internet Explorer mode"
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [browserSite](../resources/browsersite.md) object.
+Get a [browserSite](../resources/browsersite.md) that is in [Internet Explorer mode](/deployedge/edge-ie-mode).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,11 +54,12 @@ If successful, this method returns a `200 OK` response code and a [browserSite](
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_browsersite"
+  "name": "get_browsersite",
+  "sampleKeys": ["20579923-e6c8-425a-b728-47f43c10bc05", "a22cbc85-d5d2-4e61-8414-42e6704c36f7"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sites/{browserSiteId}
+GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/20579923-e6c8-425a-b728-47f43c10bc05/sites/a22cbc85-d5d2-4e61-8414-42e6704c36f7
 ```
 
 

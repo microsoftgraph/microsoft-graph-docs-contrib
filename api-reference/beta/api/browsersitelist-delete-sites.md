@@ -53,11 +53,12 @@ If the site was not previously published then this method returns a `204 No Cont
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_browsersite"
+  "name": "delete_browsersite",
+  "sampleKeys": ["07f4030f-45ff-4ad1-9277-3b8f6ee74141", "a22cbc85-d5d2-4e61-8414-42e6704c36f7"]
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sites/{browserSiteId}
+DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/07f4030f-45ff-4ad1-9277-3b8f6ee74141/sites/a22cbc85-d5d2-4e61-8414-42e6704c36f7
 ```
 
 
@@ -79,11 +80,12 @@ HTTP/1.1 204 No Content
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_browsersite"
+  "name": "delete_browsersite",
+  "sampleKeys": ["07f4030f-45ff-4ad1-9277-3b8f6ee74141", "a22cbc85-d5d2-4e61-8414-42e6704c36f7"]
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sites/{browserSiteId}
+DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/07f4030f-45ff-4ad1-9277-3b8f6ee74141/sites/a22cbc85-d5d2-4e61-8414-42e6704c36f7
 ```
 
 

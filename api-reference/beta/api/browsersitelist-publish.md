@@ -58,11 +58,12 @@ If successful, this action returns a `200 OK` response code and a [browserSiteLi
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "browsersitelist_publish"
+  "name": "browsersitelist_publish",
+  "sampleKeys": ["36ba61eb-c492-4283-a38b-963a1dbb2f69"]
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/publish
+POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/36ba61eb-c492-4283-a38b-963a1dbb2f69/publish
 
 {
     "revision": "1.0"
@@ -114,11 +115,12 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "browsersitelist_publish"
+  "name": "browsersitelist_publish",
+  "sampleKeys": ["36ba61eb-c492-4283-a38b-963a1dbb2f69"]
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/publish
+POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/36ba61eb-c492-4283-a38b-963a1dbb2f69/publish
 
 {
     "revision": "1.0",

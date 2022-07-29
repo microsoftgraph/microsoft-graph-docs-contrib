@@ -54,11 +54,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_browsersite"
+  "name": "list_browsersite",
+  "sampleKeys": ["e370d818-f650-5ab1-499e-5915e83f4573"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sites
+GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/e370d818-f650-5ab1-499e-5915e83f4573/sites
 ```
 
 

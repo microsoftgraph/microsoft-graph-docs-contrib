@@ -65,11 +65,12 @@ If successful, this method returns a `201 Created` response code and a [browserS
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_browsersite"
+  "name": "create_browsersite",
+  "sampleKeys": ["e370d818-f650-5ab1-499e-5915e83f4573"]
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sites
+POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/e370d818-f650-5ab1-499e-5915e83f4573/sites
 Content-Type: application/json
 Content-length: 387
 
