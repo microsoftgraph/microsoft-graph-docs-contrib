@@ -46,12 +46,12 @@ You can specify the following properties when creating a **browserSharedCookie**
 
 |Property|Type|Description|
 |:---|:---|:---|
-|hostOrDomain|String|The URL of the cookie. Required.|
-|sourceEnvironment|browserSharedCookieSourceEnvironment|Specifies how the cookies are shared between Microsoft Edge and Internet Explorer. The possible values are: `microsoftEdge`, `internetExplorer11`, `both`, `unknownFutureValue`. Required.|
-|displayName|String|The name of the cookie. Required.|
-|path|String|The path of the cookie. Required.|
-|hostOnly|Boolean|Boolean attribute that determines whether a cookie is  a host-only or domain cookie. Required.|
 |comment|String|The comment of the cookie. Required.|
+|displayName|String|The name of the cookie. Required.|
+|hostOnly|Boolean|Boolean attribute that determines whether a cookie is  a host-only or domain cookie. Required.|
+|hostOrDomain|String|The URL of the cookie. Required.|
+|path|String|The path of the cookie. Required.|
+|sourceEnvironment|browserSharedCookieSourceEnvironment|Specifies how the cookies are shared between Microsoft Edge and Internet Explorer. The possible values are: `microsoftEdge`, `internetExplorer11`, `both`, `unknownFutureValue`. Required.|
 
 ## Response
 

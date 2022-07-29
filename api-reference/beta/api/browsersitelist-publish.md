@@ -45,8 +45,9 @@ In the request body, omitting both sites and shared cookies in the publishes the
 |Property|Type|Description|
 |:---|:---|:---|
 |revision|String|The revision of the site list to publish. Required.|
-|sites|[browserSite](../resources/browsersite.md) collection|The collection of sites to publish. Optional. Only requires the site ID. All other fields are ignored.|
 |sharedCookies|[browserSharedCookie](../resources/browsersharedcookie.md) collection|The collection of shared cookies to publish. OPtional. Only requires the shared cookie ID. All other fields are ignored.|
+|sites|[browserSite](../resources/browsersite.md) collection|The collection of sites to publish. Optional. Only requires the site ID. All other fields are ignored.|
+
 
 ## Response
 
