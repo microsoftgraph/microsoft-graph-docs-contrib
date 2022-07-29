@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-POST /identityGovernance/entitlementManagement/accessPackageAssignments/{id}/reprocess 
+POST /identityGovernance/entitlementManagement/assignments/{id}/reprocess 
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ The following is an example of the request.
   "name": "reprocess_accesspackageassignments"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignments/d82eb508-acc4-43cc-bcf1-7c1c4a2c073b/reprocess
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignments/d82eb508-acc4-43cc-bcf1-7c1c4a2c073b/reprocess
 ```
 
 ### Response
