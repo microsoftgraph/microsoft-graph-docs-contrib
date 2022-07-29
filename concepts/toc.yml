@@ -138,15 +138,6 @@ items:
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
-      - name: Cloud communications
-        items:
-          - name: Overview
-            href: cloud-communications-concept-overview.md
-            displayName: cloud communications
-          - name: Get started
-            href: cloud-communications-get-started.md
-          
-          
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
@@ -477,6 +468,12 @@ items:
           - name: Overview
             href: teams-concept-overview.md
             displayName: teams, team, teamwork, Microsoft Teams
+          - name: Activity feed notifications
+            items:
+              - name: Send activity feed notifications
+                href: teams-send-activityfeednotifications.md
+              - name: Best practices
+                href: teams-activity-feed-notifications-best-practices.md  
           - name: Call records
             href: cloud-communications-callrecords.md  
           - name: Create a group and team
@@ -491,6 +488,8 @@ items:
             href: cloud-communication-online-meeting-application-access-policy.md    
           - name: Configure built-in tabs
             href: teams-configuring-builtin-tabs.md
+          - name: Get system messages
+            href: system-messages.md  
           - name: List all teams
             href: teams-list-all-teams.md
           - name: Licensing and payment models
@@ -500,24 +499,17 @@ items:
           - name: Online meeting artifacts and permissions
             href: cloud-communications-online-meeting-artifacts.md       
           - name: Protected APIs
-            href: teams-protected-apis.md  
+            href: teams-protected-apis.md 
+          - name: Register a bot
+            href: cloud-communications-get-started.md   
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context  
           - name: Subscribe to change notifications for online meetings
             href: changenotifications-for-onlinemeeting.md
           - name: Supported call types
             href: cloud-communications-calls.md
-
-          - name: Activity feed notifications
-            items:
-              - name: Send activity feed notifications
-                href: teams-send-activityfeednotifications.md
-              - name: Best practices
-                href: teams-activity-feed-notifications-best-practices.md
           - name: Subscribe to change notifications
             href: teams-change-notification-in-microsoft-teams-overview.md
-          - name: Get system messages
-            href: system-messages.md
       - name: To-do tasks
         displayName: Microsoft To Do
         items:
