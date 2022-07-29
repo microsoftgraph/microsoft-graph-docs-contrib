@@ -60,7 +60,7 @@ The following is an example of the request.
   "name": "group_list_permission_grants"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/14c981a4-dca9-4565-bae6-e13ada8861be/permissionGrants
+GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/permissionGrants
 ```
 
 # [C#](#tab/csharp)

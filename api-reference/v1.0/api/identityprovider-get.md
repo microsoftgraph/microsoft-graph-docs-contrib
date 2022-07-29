@@ -60,7 +60,7 @@ The following example retrieves a specific **identityProvider**.
   "name": "get-identityprovider"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```
 

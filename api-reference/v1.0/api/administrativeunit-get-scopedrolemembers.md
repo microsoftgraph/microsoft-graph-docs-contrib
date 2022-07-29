@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_scopedrolemember_1"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRoleMembers/{id}
 ```
 
