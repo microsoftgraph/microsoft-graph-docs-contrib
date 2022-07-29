@@ -81,13 +81,11 @@ Content-length: 387
     "allowRedirect": false,
     "comment": "Updating to Edge."
 }
-
 ```
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

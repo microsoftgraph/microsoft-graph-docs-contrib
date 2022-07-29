@@ -1,6 +1,6 @@
 ---
 title: "Delete browserSharedCookie"
-description: "Deletes a browserSharedCookie object."
+description: "Delete a browserSharedCookie object."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [browserSharedCookie](../resources/browsersharedcookie.md) object.
+Delete a [browserSharedCookie](../resources/browsersharedcookie.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,11 +43,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If the shared cookie was not previously published then this method returns a `204 No Content` response code on a successful delete. If the shared cookie was previously published then this method returns a `200 OK` response code and a [browserSiteList](../resources/browsersitelist.md) object in the response body with the status as `pendingDelete`. The shared cookie must then be published to fully remove the shared cookie from the site list.
+If the shared cookie was not previously published, then this method returns a `204 No Content` response code on a successful delete. If the shared cookie was previously published, then this method returns a `200 OK` response code and a [browserSiteList](../resources/browsersitelist.md) object in the response body with the status as `pendingDelete`. The shared cookie must then be published to fully remove the shared cookie from the site list.
 
 ## Examples
 
-### Example 1: Shared cookie that was not previously published.
+### Example 1: Delete a shared cookie that was not previously published
 
 #### Request
 The following is an example of a request.
@@ -63,8 +63,7 @@ DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteList
 
 
 #### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -74,7 +73,7 @@ The following is an example of the response
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Shared cookie that was previously published.
+### Example 2: Delete a shared cookie that was previously published
 
 #### Request
 The following is an example of a request.
@@ -90,8 +89,7 @@ DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteList
 
 
 #### Response
-The following is an example of the response. The status is changed to 
-`pendingDelete` and the shared cookie must be published to fully remove.
+The following is an example of the response. The status is changed to `pendingDelete` and the shared cookie must be published to fully remove.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

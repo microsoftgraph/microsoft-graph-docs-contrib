@@ -1,6 +1,6 @@
 ---
 title: "Delete browserSite"
-description: "Deletes a browserSite object."
+description: "Delete a browserSite object."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [browserSite](../resources/browsersite.md) object.
+Delete a [browserSite](../resources/browsersite.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +63,7 @@ DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteList
 
 
 #### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

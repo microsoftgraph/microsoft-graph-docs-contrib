@@ -50,7 +50,7 @@ PATCH /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCooki
 |sourceEnvironment|browserSharedCookieSourceEnvironment|Specifies how the cookies are shared between Microsoft Edge and Internet Explorer. The possible values are: `microsoftEdge`, `internetExplorer11`, `both`, `unknownFutureValue`.|
 |displayName|String|The name of the cookie.|
 |path|String|The path of the cookie.|
-|hostOnly|Boolean|Boolean attribute that determines whether a cookie is  a host-only or domain cookie.|
+|hostOnly|Boolean|Determines whether a cookie is a host-only or domain cookie.|
 |comment|String|The comment of the cookie.|
 
 
@@ -85,8 +85,7 @@ Content-length: 349
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
