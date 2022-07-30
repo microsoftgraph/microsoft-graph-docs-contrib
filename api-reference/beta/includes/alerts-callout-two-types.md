@@ -7,9 +7,6 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 >[!NOTE]
->The Microsoft Graph security API in the beta version offers two types of alerts that make analyzing attacks and determining response easier:
->- Alerts and incidents
->- Legacy alerts
->
+>This resource is one of the two types of alerts that the beta version of the Microsoft Graph security API offers. 
 >For more information, see [alerts](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#alerts).
 
