@@ -23,9 +23,9 @@ When a threat is detected, alerts are created in the system for an analyst to in
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List alerts_v2](../api/security-list-alerts.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of the [alert](security-alert.md) objects and their properties.|
-|[Get alert](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Read the properties and relationships of an [alert](security-alert.md) object.|
-
+|[List alerts_v2](../api/security-list-alerts.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of [alert](../resources/security-alert.md) resources that have been created to track suspicious activities in an organization.|
+|[Get alert](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Get the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
+|[Update alert](../api/security-alert-update.md)|[microsoft.graph.security.alert](../resources/security-alert.md)|Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
 
 ## Properties
 |Property|Type|Description|

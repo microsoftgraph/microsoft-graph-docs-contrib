@@ -32,7 +32,7 @@ Take immediate action to defend against threats using the [securityAction](secur
 ## Alerts
 Alerts are suspicious or malicious events or activities in a customer's tenant that Microsoft or partner security solutions have identified and flagged for action or notification. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.
 
-The Microsoft Graph security API in the beta version offers two types of alerts that make analyzing attacks and determining response easier: 
+The beta version of the security API offers two types of alerts that make analyzing attacks and determining response easier: 
 - [Alerts and incidents](#alerts-and-incidents-preview) (preview) - these [alert](security-alert.md) resources and their collections - [incident](security-incident.md) resources - are defined in the `microsoft.graph.security` namespace.
 - [Legacy alerts](#legacy-alerts) - these [alert](alert.md) resources are defined in the `microsoft.graph` namespace.
 

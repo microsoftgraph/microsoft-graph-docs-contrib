@@ -14844,37 +14844,37 @@ items:
             href: api/security-alert-get.md 
           - name: Update alert
             href: api/security-alert-update.md
-        - name: Alert Evidence
+        - name: Alert evidence
           items: 
-          - name: Alert Evidence
+          - name: Alert evidence
             href: resources/security-alertevidence.md
-          - name: User Evidence
+          - name: User evidence
             href: resources/security-userEvidence.md
-          - name: File Evidence
+          - name: File evidence
             href: resources/security-fileEvidence.md
-          - name: Process Evidence
+          - name: Process evidence
             href: resources/security-processEvidence.md
-          - name: Ip Evidence
+          - name: IP evidence
             href: resources/security-ipEvidence.md
-          - name: Url Evidence
+          - name: URL evidence
             href: resources/security-urlEvidence.md
-          - name: Registry Key Evidence
+          - name: Registry key evidence
             href: resources/security-registryKeyEvidence.md
-          - name: Registry Value Evidence
+          - name: Registry value evidence
             href: resources/security-registryValueEvidence.md
-          - name: Oauth Application Evidence
+          - name: OAuth application evidence
             href: resources/security-oauthApplicationEvidence.md
-          - name: Cloud Application Evidence
+          - name: Cloud application evidence
             href: resources/security-cloudApplicationEvidence.md
-          - name: Security Group Evidence
+          - name: Security group evidence
             href: resources/security-securityGroupEvidence.md
-          - name: Mailbox Evidence
+          - name: Mailbox evidence
             href: resources/security-mailboxEvidence.md
-          - name: Mail Cluster Evidence
+          - name: Mail cluster evidence
             href: resources/security-mailClusterEvidence.md
-          - name: Analyzed Message Evidence
+          - name: Analyzed message evidence
             href: resources/security-analyzedMessageEvidence.md
-          - name: Device Evidence
+          - name: Device evidence
             href: resources/security-deviceEvidence.md
         - name: Incident
           items:
