@@ -52,11 +52,12 @@ If successful, this method returns a `200 OK` response code and an [incident](..
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["2972395"],
   "name": "get_incident"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/incidents/{incidentId}
+GET https://graph.microsoft.com/beta/security/incidents/2972395
 ```
 
 

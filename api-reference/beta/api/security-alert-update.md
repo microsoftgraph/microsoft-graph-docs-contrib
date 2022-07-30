@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [alert_v2](../resources/security-alert.md) object.
+Update the properties of an [alert](../resources/security-alert.md) object in an organization by specifying the alert **id** property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,11 +62,12 @@ If successful, this method returns a `200 OK` response code and an updated [aler
 The following is an example of a request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["da637551227677560813_-961444813"],
   "name": "update_alert_v2"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/alerts_v2/{alertId}
+PATCH https://graph.microsoft.com/beta/security/alerts_v2/da637551227677560813_-961444813
 Content-Type: application/json
 Content-length: 2450
 

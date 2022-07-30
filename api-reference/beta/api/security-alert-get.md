@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [alert](../resources/security-alert.md) object.
+Get the properties and relationships of an [alert](../resources/security-alert.md) in an organization by specifying the alert **id** property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,6 +52,7 @@ If successful, this method returns a `200 OK` response code and an [alert](../re
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["da637578995287051192_756343937"],
   "name": "get_security_alert"
 }
 -->

@@ -64,11 +64,12 @@ If successful, this method returns a `200 OK` response code and an updated [inci
 The following is an example of a request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["2972395"],
   "name": "update_incident"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/incidents/{incidentId}
+PATCH https://graph.microsoft.com/beta/security/incidents/2972395
 Content-Type: application/json
 
 {
