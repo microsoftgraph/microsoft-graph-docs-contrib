@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /roleManagement/directory/roleAssignmentScheduleRequests
 ```
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_unifiedroleassignmentschedulerequest"
 }
 -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests
 ```
 
@@ -157,7 +157,7 @@ Content-Type: application/json
   "name": "list_unifiedroleassignmentschedulerequest_expand_relationships"
 }
 -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests?$select=principalId,action,roleDefinitionId&$expand=roleDefinition,activatedUsing,principal,targetSchedule
 ```
 

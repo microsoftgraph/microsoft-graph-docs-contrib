@@ -49,7 +49,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_buckets_2"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/buckets
 ```
 

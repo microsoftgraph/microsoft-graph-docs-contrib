@@ -54,7 +54,7 @@ Here is an example of the request.
   "name": "get_outlookcategory"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7
+GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/feafe4e8-52ff-488a-817f-cfea7e43ff8b
 ```
 
 # [C#](#tab/csharp)

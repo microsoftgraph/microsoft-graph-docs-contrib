@@ -7,10 +7,12 @@ ms.prod: "reports"
 doc_type: apiPageType
 ---
 
-# reportRoot: getAttackSimulationRepeatOffenders
+# reportRoot: getAttackSimulationRepeatOffenders (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [attacksim-deprecate-queryurl-reportapi](../includes/attacksim-deprecate-queryurl-reportapi.md)]
 
 List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns.
 
@@ -114,4 +116,7 @@ Content-Type: application/json
   ]
 }
 ```
+
+## See also
+[securityReportsRoot: getAttackSimulationRepeatOffenders](securityreportsroot-getattacksimulationrepeatoffenders.md)
 

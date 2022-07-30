@@ -58,7 +58,7 @@ Here is an example of the request.
   "name": "notebook_get_sectiongroups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sectionGroups
+GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/1-e13f257d-78c6-46cf-ae8c-13686517ac5f/sectionGroups
 ```
 
 # [C#](#tab/csharp)

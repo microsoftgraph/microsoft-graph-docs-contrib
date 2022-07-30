@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and collection of [g
   "name": "get_grouplifecyclepolicies"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/groupLifecyclePolicies
 ```
 

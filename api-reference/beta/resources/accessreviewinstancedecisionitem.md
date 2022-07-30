@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstanceDecisionItem resource type"
 description: "Represents a decision on a user's access on an accessReviewInstance."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

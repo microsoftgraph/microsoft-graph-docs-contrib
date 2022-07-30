@@ -60,8 +60,8 @@ GET /groups/{group-id}/sites/root
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all" } -->
 
-```msgraph-interactive
-GET /sites/{site-id}
+```http
+GET https://graph.microsoft.com/v1.0/sites/{site-id}
 ```
 
 # [C#](#tab/csharp)

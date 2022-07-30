@@ -62,7 +62,7 @@ Here is an example of the request.
   "name": "message_get_attachments_v1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA=/attachments
 ```
 
 # [C#](#tab/csharp)
