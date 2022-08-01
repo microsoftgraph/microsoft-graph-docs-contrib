@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to search content using query templates
+# Search Content in Microsoft Search API With Application Permission
 
 Application permission is different from delegated permission. It will support the application owner to search all content in their SharePoint sites.
 
@@ -136,4 +136,9 @@ Content-type: application/json
 }
 ```
 
-## How to get region GUID?
+## How to get region value?
+Use your tenant admin account, and paste the link in your browser.
+https://{Host}/_api/GeoTenantInstanceInformationCollection
+sample:
+https://contoso.sharepoint.com/_api/GeoTenantInstanceInformationCollection
+Then paste the instance id as the value of region.
