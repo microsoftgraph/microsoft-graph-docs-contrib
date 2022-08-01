@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [browserSite](../resources/browsersite.md) that is in [Internet Explorer mode](https://docs.microsoft.com/en-us/deployedge/edge-ie-mode).
+Get a [browserSite](../resources/browsersite.md) that is in [Internet Explorer mode](https://docs.microsoft.com/deployedge/edge-ie-mode).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
