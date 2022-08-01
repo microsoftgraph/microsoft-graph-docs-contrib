@@ -53,7 +53,7 @@ The sidebar allows you to access the main features of Graph Explorer:
 
 ### Get started with Microsoft Graph APIs
 
-To get started with Microsoft Graph and get yourself familiar with using Graph Explorer, the **Sample queries** feature provides a set of queries categorized by service that you can select and run.
+To get started with Microsoft Graph and get yourself familiar with Graph Explorer, the **Sample queries** feature provides a set of queries categorized by service that you can select and run.
 
 ![Screenshot of the sample queries tab](./images/sample-queries-screenshot.png)
 
