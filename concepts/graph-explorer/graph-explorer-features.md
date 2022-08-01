@@ -65,7 +65,7 @@ The Resources feature allows you to explore the resources on Microsoft Graph in 
 
 ![Screenshot of the resources tab](./images/resources-tab-screenshot.png)
 
-With Resources Explorer, you can export a collection of resources you are interested in, into a Postman collection:
+With the **Resources** tab you can export a collection of resources into a Postman collection:
 
 1. From the kebab menu next to the resource, select **Add to collection**.
 1. Once you complete adding resources, click on the **Preview collection** button.
