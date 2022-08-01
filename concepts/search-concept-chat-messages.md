@@ -14,11 +14,12 @@ Use the Microsoft Search API in Microsoft Graph to search for information in Tea
 
 Teams Message search also looks for attachments. The [supported file types](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for message attachment search are the same as those for SharePoint Online search.
 
-## Example 1: Search Teams chat message
+## Examples
+### Example 1: Search Teams chat message
 
 The following example queries Teams chat message in the signed-in user's Teams chat storage that contain the string "test" in any part of the chat message (the sender name,  message body, or any attachments). The query returns the first 25 results. The search results are ordered by **DateTime** descending.
 
-### Request
+#### Request
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -40,7 +41,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response, which contains one message that matches the search criterion.
 
@@ -90,12 +91,12 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Search top results messages
+### Example 2: Search top results messages
 
 The following example uses the search query shown in Example 1, and sorts the results by relevance. 
 
 <!-- markdownlint-disable MD024 -->
-### Request
+#### Request
 
 ```HTTP
 POST https://graph.microsoft.com/v1.0/search/query
@@ -118,7 +119,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -166,12 +167,12 @@ Content-type: application/json
 }
 ```
 
-## Example 3: Search Teams Message with KQL
+### Example 3: Search Teams Message with KQL
 
 The following example show you search a message which contains 'contoso' that bob sent to alice after 2022-07-14
 
 <!-- markdownlint-disable MD024 -->
-### Request
+#### Request
 
 ```HTTP
 POST https://graph.microsoft.com/v1.0/search/query
