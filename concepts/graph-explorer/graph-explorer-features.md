@@ -70,7 +70,7 @@ With the **Resources** tab you can export a collection of resources into a Postm
 1. From the kebab menu next to the resource, select **Add to collection**.
 1. Once you complete adding resources, click on the **Preview collection** button.
 1. From the collection view, you can review the resources and remove any if you chose to.
-1. Click on the **Download Postman collection** to download your collection.
+1. Click on **Download Postman collection** to download your collection.
 
 ![Screenshot of the preview collection screen](./images/download-collection-screenshot.png)
 
