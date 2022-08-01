@@ -36,7 +36,7 @@ To run a GET request in Graph Explorer, you don't have to sign in. You can retri
 
 :::image type="content" source="./images/get-request.png" alt-text="Screenshot of a sample request in Graph Explorer." border="true":::
 
-To create the request, you can either select a sample query which fills in the query field or you can choose to manually type your request in the field.
+To create the request, you can either select a sample query from the menu at the left, which fills in the query field, or you can choose to manually type your request in the field.
 Once you run the request, you will get the HTTP response code and the response will be displayed in the response preview area.
 
 When you sign in to Graph Explorer and run the same query, the response is returned with real data from the tenant that you signed in to.
