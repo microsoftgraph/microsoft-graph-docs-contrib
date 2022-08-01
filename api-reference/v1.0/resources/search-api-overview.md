@@ -163,8 +163,22 @@ The search API has the following limitations:
 
 - The **query** method is defined to allow passing a collection of one or more **searchRequest** instances at once. However, the service currently supports only a single [searchRequest](./searchrequest.md) at a time.
 
-- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is for SharePoint and OneDrive entityTypes: **driveItem**, **drive**, **site**, **list**, **listItem**.
-Any combinations involving **message**, **event**, SharePoint and OneDrive types , or **externalItem** are currently not supported.  
+- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently not support combination for each entity type.
+
+| Entity Type |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     | site       |
+|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|
+|  message    |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |
+| chatMessage |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |
+|    drive    |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|  driveItem  |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|   event     |     -      |     -      |      -      |       -    |    True    |       -     |      -     |    -       |      -     |     -      |
+|externalItem |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|   list      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|  listItem   |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|   person    |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |
+|    site     |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+
+  When combine SharePoint and OneDrive entityTypes: **driveItem**, **drive**, **site**, **list**, **listItem** with externalItem, it only support all connections      **(/external/connections/*)** and all SharePoint and OneDrive entity types combination.
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
