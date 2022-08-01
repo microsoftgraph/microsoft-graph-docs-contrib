@@ -1,6 +1,6 @@
 ---
 title: "Delete browserSite"
-description: "Delete a browserSite from the site list."
+description: "Delete a browserSite from a browserSiteList."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [browserSite](../resources/browsersite.md) from the site list.
+Delete a [browserSite](../resources/browsersite.md) from a [browserSiteList](../resources/browsersitelist.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,11 +43,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If the site was not previously published then this method returns a `204 No Content` response code on a successful delete. If the site was previously published then this method returns a `200 OK` response code and a [browserSiteList](../resources/browsersitelist.md) object in the response body with the status as `pendingDelete`. The site must then be published to fully remove the site from the site list.
+If the site was not previously published, then this method returns a `204 No Content` response code on a successful delete. If the site was previously published, then this method returns a `200 OK` response code and a [browserSiteList](../resources/browsersitelist.md) object in the response body with the status as `pendingDelete`. You must then publish the site to fully remove it from the site list.
 
 ## Examples
 
-### Example 1: Site that was not previously published.
+### Example 1: Delete a site that was not previously published
 
 #### Request
 The following is an example of a request.
@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteList
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -74,7 +73,7 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Site that was previously published.
+### Example 2: Delete a site that was previously published
 
 #### Request
 The following is an example of a request.
@@ -90,8 +89,7 @@ DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteList
 
 
 #### Response
-The following is an example of the response where the status has changed to
-`pendingDelete` but the site is still published. You must publish the site to fully remove it from the site list.
+The following is an example of the response where the status has changed to `pendingDelete` but the site is still published. You must publish the site to fully remove it from the site list.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

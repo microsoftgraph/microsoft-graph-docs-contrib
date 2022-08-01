@@ -46,12 +46,12 @@ PATCH /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCooki
 
 |Property|Type|Description|
 |:---|:---|:---|
-|hostOrDomain|String|The URL of the cookie.|
-|sourceEnvironment|browserSharedCookieSourceEnvironment|Specifies how the cookies are shared between Microsoft Edge and Internet Explorer. The possible values are: `microsoftEdge`, `internetExplorer11`, `both`, `unknownFutureValue`.|
-|displayName|String|The name of the cookie.|
-|path|String|The path of the cookie.|
-|hostOnly|Boolean|Determines whether a cookie is a host-only or domain cookie.|
 |comment|String|The comment of the cookie.|
+|displayName|String|The name of the cookie.|
+|hostOnly|Boolean|Determines whether a cookie is a host-only or domain cookie.|
+|hostOrDomain|String|The URL of the cookie.|
+|path|String|The path of the cookie.|
+|sourceEnvironment|browserSharedCookieSourceEnvironment|Specifies how the cookies are shared between Microsoft Edge and Internet Explorer. The possible values are: `microsoftEdge`, `internetExplorer11`, `both`, `unknownFutureValue`.|
 
 
 ## Response
@@ -79,7 +79,7 @@ Content-length: 349
   "displayName": "Microsoft Cookie",
   "path": "/",
   "hostOnly": true,
-  "comment": "Updating source environment.",
+  "comment": "Updating source environment."
 }
 ```
 

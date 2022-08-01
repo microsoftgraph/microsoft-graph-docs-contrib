@@ -42,13 +42,12 @@ POST /admin/edge/internetExplorerMode/siteLists
 ## Request body
 In the request body, supply a JSON representation of the [browserSiteList](../resources/browsersitelist.md) object.
 
-You can specify the following properties when creating a **browserSiteList**.
+You can specify the following properties when you create a **browserSiteList**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description for the site list. Required.|
 |displayName|String|Display name of the site list. Required.|
-
 
 
 ## Response
@@ -77,7 +76,7 @@ Content-length: 283
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -90,22 +89,22 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.browserSiteList",
-  "id": "36ba61eb-c492-4283-a38b-963a1dbb2f69",
-  "revision": "",
-  "displayName": "Production Site List A",
-  "description": "Production site list for team A",
-  "lastModifiedDateTime": "2022-06-28T18:05:05.9569126Z",
-  "publishedDateTime": null,
-  "status": "draft",
-  "lastModifiedBy": {
-      "user": {
-          "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
-          "displayName": "Joe Smith"
-      },
-      "application": null
-  },
-  "publishedBy": null,
+    "@odata.type": "#microsoft.graph.browserSiteList",
+    "id": "36ba61eb-c492-4283-a38b-963a1dbb2f69",
+    "revision": "",
+    "displayName": "Production Site List A",
+    "description": "Production site list for team A",
+    "lastModifiedDateTime": "2022-06-28T18:05:05.9569126Z",
+    "publishedDateTime": null,
+    "status": "draft",
+    "lastModifiedBy": {
+        "user": {
+            "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
+            "displayName": "Joe Smith"
+        },
+        "application": null
+    },
+    "publishedBy": null
 }
 ```
 

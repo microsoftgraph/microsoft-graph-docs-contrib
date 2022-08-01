@@ -1,6 +1,6 @@
 ---
 title: "Delete browserSharedCookie"
-description: "Delete a browserSharedCookie from the site list."
+description: "Delete a browserSharedCookie from a browserSiteList."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [browserSharedCookie](../resources/browsersharedcookie.md) from the site list.
+Delete a [browserSharedCookie](../resources/browsersharedcookie.md) from a [browserSiteList](../resources/browsersitelist.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If the shared cookie was not previously published, then this method returns a `204 No Content` response code on a successful delete. If the shared cookie was previously published, then this method returns a `200 OK` response code and a [browserSiteList](../resources/browsersitelist.md) object in the response body with the status as `pendingDelete`. The shared cookie must then be published to fully remove the shared cookie from the site list.
+If the shared cookie was not previously published, then this method returns a `204 No Content` response code on a successful delete. If the shared cookie was previously published, then this method returns a `200 OK` response code and a [browserSiteList](../resources/browsersitelist.md) object in the response body with the status as `pendingDelete`. You must then publish the shared cookie to fully remove it from the site list.
 
 ## Examples
 
@@ -54,7 +54,8 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "delete_browsersharedcookie",
-  "@odata.type": "microsoft.graph.browserSharedCookie"
+  "@odata.type": "microsoft.graph.browserSharedCookie",
+  "sampleKeys": ["7cf831d2-8a9b-4826-b120-911566f6fd6a", "07b4cc32-237f-4a1a-9d7f-531efc26220e"]
 }
 -->
 ``` http
@@ -89,8 +90,7 @@ DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteList
 
 
 #### Response
-The following is an example of the response where the status has changed to
-`pendingDelete` but the shared cookie is still published. You must publish the shared cookie to fully remove it from the site list.
+The following is an example of the response where the **status** has changed to `pendingDelete` but the shared cookie is still published. You must publish the shared cookie to fully remove it from the site list.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

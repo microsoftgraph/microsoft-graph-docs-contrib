@@ -42,13 +42,13 @@ POST /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedCookie
 ## Request body
 In the request body, supply a JSON representation of the [browserSharedCookie](../resources/browsersharedcookie.md) object.
 
-You can specify the following properties when creating a **browserSharedCookie**.
+You can specify the following properties when you create a **browserSharedCookie**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |comment|String|The comment of the cookie. Required.|
 |displayName|String|The name of the cookie. Required.|
-|hostOnly|Boolean|Boolean attribute that determines whether a cookie is  a host-only or domain cookie. Required.|
+|hostOnly|Boolean|Determines whether a cookie is a host-only or domain cookie. Required.|
 |hostOrDomain|String|The URL of the cookie. Required.|
 |path|String|The path of the cookie. Required.|
 |sourceEnvironment|browserSharedCookieSourceEnvironment|Specifies how the cookies are shared between Microsoft Edge and Internet Explorer. The possible values are: `microsoftEdge`, `internetExplorer11`, `both`, `unknownFutureValue`. Required.|
@@ -84,7 +84,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
