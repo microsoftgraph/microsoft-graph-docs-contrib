@@ -124,7 +124,7 @@ Graph Explorer allows you to see Microsoft Graph Toolkit components that corresp
 
 ### Adaptive cards integration
 
-[Adaptive cards](https://adaptivecards.io/) are platform-agnostic snippets of UI, authored in JSON, that apps and services can openly exchange. When you run a query and an adaptive card is available, a blue dot appears on the **Adaptive cards** tab.
+[Adaptive cards](https://adaptivecards.io/) are platform-agnostic snippets of UI, authored in JSON, that apps and services can openly exchange. A blue dot on the **Adaptive cards** tab indicates that an adaptive card is available for the selected query.
 
 ![Screenshot of the adaptive cards tab in Graph Explorer with the response details highlighted](./images/adaptive-cards-screenshot.png)
 
