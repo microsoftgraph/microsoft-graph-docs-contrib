@@ -87,7 +87,7 @@ All queries you run in Graph Explorer are saved for 30 days in the **History** t
 
 ![Screenshot of the History tab](./images/history-tab-screenshot.png)
 
-To share queries that you run, select the **Share** button situated next to the Run query button, and then select **Copy**. This copies a link to share that allows others to see your query and the results.
+To share queries that you run, select the **Share** button situated next to the Run query button, and then select **Copy**. This copies a shareable link that allows others to see your query and the results.
 
 ![Screenshot of Graph Explorer with the Share and Copy options highlighted](./images/share-query-screenshot.png)
 
