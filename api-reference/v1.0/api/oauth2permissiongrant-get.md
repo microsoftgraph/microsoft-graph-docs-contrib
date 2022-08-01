@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and [oAuth2Permissio
 <!-- {
   "blockType": "request",
   "name": "get_oAuth2Permissiongrant",
-  "sampleKeys": ["AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0"]
+  "sampleKeys": ["QVzct6doFkStXRSoh_HGZcTUnzAfhaVGjK7Cv0gMgUsj54JH9PTzSqduJeO6sNiW"]
 }-->
 
 ```msgraph-interactive

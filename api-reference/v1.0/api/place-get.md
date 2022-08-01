@@ -142,7 +142,7 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 <!-- {
   "blockType": "request",
   "name": "get_roomlist",
-  "sampleKeys": ["bldg1@contoso.com"]
+  "sampleKeys": ["Building2Rooms@M365x214355.onmicrosoft.com"]
 }-->
 
 ```msgraph-interactive
