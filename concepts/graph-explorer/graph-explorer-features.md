@@ -61,7 +61,7 @@ The query box will be populated by the selected query. You can then make the req
 
 ### Explore all of the Microsoft Graph resources
 
-The Resources feature allows you to explore the resources on Microsoft Graph in their entirety, on both v1.0 and beta versions . Navigate the tree to view a specific resource or alternatively, you can search for it.
+The Resources feature allows you to explore the resources on Microsoft Graph in their entirety, on both v1.0 and beta versions. Navigate the tree to browse for a specific resource or, alternatively, use the search bar to find it.
 
 ![Screenshot of the resources tab](./images/resources-tab-screenshot.png)
 
