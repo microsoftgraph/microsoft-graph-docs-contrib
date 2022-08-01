@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRbacResourceAction"
 description: "Read the properties and relationships of an unifiedRbacResourceAction object."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

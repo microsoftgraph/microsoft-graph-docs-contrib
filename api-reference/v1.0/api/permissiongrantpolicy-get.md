@@ -65,7 +65,7 @@ The following is an example of the request.
   "sampleKeys": ["microsoft-user-default-low"]
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-user-default-low
 ```
 

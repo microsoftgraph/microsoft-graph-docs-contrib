@@ -224,7 +224,7 @@ The following is an example of the request. This request requires the **Consiste
   "name": "get_groups_withlicenseerrors_count"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/groups?$count=true&$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ConsistencyLevel: eventual
 ```
