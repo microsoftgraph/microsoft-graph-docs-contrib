@@ -12,10 +12,9 @@ Application permission is different from delegated permission. It will support t
 
 
 ## Example
+Search with application permission has the permission to access all contents which stored in the SharePoint site.
 
-Search with application permission is designed not allow to search across all [GEOs](https://docs.microsoft.com/en-us/microsoft-365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365?view=o365-worldwide), it requires that developers must specify a GEO in search request.
-
-Application permission owns the permission to access all files which stored in the sharepoint site.
+Search with application permission is only allow to search in one specific [GEO](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365?view=o365-worldwide), it requires that developers to specify a GEO region value in the search request.
 
 ### Request
 
@@ -137,8 +136,7 @@ Content-type: application/json
 ```
 
 ## How to get region value?
-Use your tenant admin account, and paste the link in your browser.
-https://{Host}/_api/GeoTenantInstanceInformationCollection
-sample:
-https://contoso.sharepoint.com/_api/GeoTenantInstanceInformationCollection
+Use your tenant admin account, and paste the link in your browser: ( https://{Host}/_api/GeoTenantInstanceInformationCollection ).
 Then paste the instance id as the value of region.
+### sample
+https://contoso.sharepoint.com/_api/GeoTenantInstanceInformationCollection
