@@ -118,7 +118,7 @@ On top of query related features, the main work area also contains:
 
 The [Microsoft Graph Toolkit](../toolkit/overview.md) is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional, with built-in providers that authenticate with and fetch data from Microsoft Graph.
 
-Graph Explorer allows you to see Microsoft Graph Toolkit components that correspond to the API queries. A blue dot on the **Toolkit component** tab indicates that the Toolkit provides a component for the currently specified REST API query in Graph Explorer. You can conveniently copy the code for the component to your app.
+Graph Explorer allows you to visualize Microsoft Graph Toolkit components that correspond to the API queries. A blue dot on the **Toolkit component** tab indicates that the Toolkit provides a component for the currently specified REST API query in Graph Explorer. You can conveniently copy the code for the component to your app.
 
 ![Screenshot showing the Toolkit components tab](./images/toolkit-screenshot.png)
 
