@@ -76,7 +76,7 @@ With the **Resources** tab you can export a collection of resources into a Postm
 
 ### Store and share queries
 
-Queries that are run in Graph Explorer are saved for 30 days on the **History** tab. On the **History** tab, you can:
+All queries you run in Graph Explorer are saved for 30 days in the **History** tab. In the **History** tab, you can:
 
 - Export all history items in **.har** format.
 - Delete all history items.
