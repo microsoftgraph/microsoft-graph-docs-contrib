@@ -181,7 +181,7 @@ items:
           - name: Build your first custom connector
             href: connecting-external-content-build-quickstart.yml
             displayName: connectors, Microsoft Graph connectors
-          - name: Build your first custom connector using SDK
+          - name: Build your first custom connector using connectors SDK
             items:
               - name: Overview
                 href: custom-connector-sdk-sample-overview.md
@@ -749,7 +749,7 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
-          - name: Use Graph connectors SDK
+          - name: Use the connectors SDK
             items:
             - name: Overview
               href: custom-connector-sdk-overview.md
@@ -757,17 +757,17 @@ items:
               items:
               - name: Services
                 href: custom-connector-sdk-contracts-services.md
-              - name: Connector Info API
+              - name: Connector info APIs
                 href: custom-connector-sdk-contracts-connectorinfo.md
-              - name: Connection Management API
+              - name: Connection management APIs
                 href: custom-connector-sdk-contracts-connectionmanagement.md
-              - name: Connector Crawler API
+              - name: Connector crawler APIs
                 href: custom-connector-sdk-contracts-connectorcrawler.md
-              - name: Connector OAuth API
+              - name: Connector OAuth APIs
                 href: custom-connector-sdk-contracts-connectoroauth.md
-              - name: Common Models
+              - name: Common models
                 href: custom-connector-sdk-contracts-common.md
-            - name: Test Utility
+            - name: Test utility
               href: custom-connector-sdk-testapp.md
             - name: Publishing a connection
               href: custom-connector-sdk-publish.md

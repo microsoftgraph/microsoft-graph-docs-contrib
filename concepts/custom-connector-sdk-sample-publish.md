@@ -1,13 +1,10 @@
 ---
 title: "Publish your first custom Microsoft Graph connector on the Microsoft 365 admin center"
-ms.author: rchanda
 author: rchanda1392
 manager: harshkum
-ms.audience: Admin
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-ms.date: 06/30/2022
 description: "Publish your first custom Microsoft Graph connector on the Microsoft 365 admin center"
 ---
 

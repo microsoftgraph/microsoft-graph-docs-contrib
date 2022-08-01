@@ -1,13 +1,10 @@
 ---
 title: "Develop your custom Microsoft Graph connector in C# using a template"
-ms.author: rchanda
 author: rchanda1392
 manager: harshkum
-ms.audience: Admin
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-ms.date: 07/01/2022
 description: "Microsoft Graph connectors SDK sample create connector"
 ---
 

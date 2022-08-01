@@ -1,13 +1,10 @@
 ---
 title: "Microsoft Graph connectors SDK publishing steps for custom connectors in the Microsoft 365 admin center"
-ms.author: rchanda
 author: rchanda1392
 manager: harshkum
-ms.audience: Admin
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-ms.date: 07/01/2022
 description: "Microsoft Graph connectors SDK publishing steps for custom connectors in the Microsoft 365 admin center"
 ---
 

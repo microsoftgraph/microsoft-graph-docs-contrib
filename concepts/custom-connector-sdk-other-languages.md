@@ -1,13 +1,10 @@
 ---
 title: "Microsoft Graph connectors SDK other languages"
-ms.author: rchanda
 author: rchanda1392
 manager: harshkum
-ms.audience: Admin
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-ms.date: 06/30/2022
 description: "Microsoft Graph connectors SDK other languages"
 ---
 
