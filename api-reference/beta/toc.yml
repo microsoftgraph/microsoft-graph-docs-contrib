@@ -15786,7 +15786,7 @@ items:
             - name: Keep alive
               href: api/call-keepalive.md
             - name: Log teleconference device quality data
-              href: api/call-logteleconferencedevicequality.m
+              href: api/call-logteleconferencedevicequality.md
           - name: Content sharing session
             href: resources/contentsharingsession.md
             items:

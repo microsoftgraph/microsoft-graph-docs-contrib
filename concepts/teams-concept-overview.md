@@ -98,49 +98,54 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 | [Activity feed](/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
 | [Calling and online meetings (preview)](/graph/api/resources/communications-api-overview) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
 
-##
-
-
 ## Get notified about changes
 
 Microsoft Teams supports subscribing to changes (create, update, and delete) to messages in [channels](/graph/api/resources/channel) and [chats](/graph/api/resources/chat) to allow apps to get near-instant updates. For details about how to subscribe to changes, see [Get change notifications for messages in channels and chats](teams-changenotifications-chatmessage.md).
 
 ## Handle incoming calls
 
-It can be overwhelming at times when workers receive a lot of business calls and it isn't possible, or productive, to answer all of them. A bot can serve as a front-desk assistant and handle these calls by rejecting what seem like spam calls, and redirecting (forwarding) specific calls to a different number.
+It can be overwhelming at times when an organization receives a high volume of business calls and it isn't possible, or productive, to answer all of them. A bot can serve as a front-desk assistant, handling calls by rejecting what may seem like spam calls or redirecting (forwarding) specific calls to a different number. You can use the cloud communications API to:
 
-You can use this API to:
+- [Call a bot](/graph/api/application-post-calls) through VoIP.
+- [Redirect an incoming call](/graph/api/call-redirect) to the appropriate agent if necessary.
+- [Answer](/graph/api/call-answer) or [reject](/graph/api/call-reject) a call.
+- [Play a prompt](/graph/api/call-playprompt) to inform and prompt a customer for a selection.
+- [Record a short audio clip](/graph/api/call-record) of a customer speaking.
+- [Subscribe to a tone](/graph/api/call-subscribetotone) to gather the DTMF from a customer.
+- [Transfer a customer](/graph/api/call-transfer) to an agent.
 
-- Have a user [call a bot](/graph/api/application-post-calls) through VoIP.
-- Have a bot [redirect the incoming call](/graph/api/call-redirect) to the appropriate agent if necessary.
-- Have a bot [answer](/graph/api/call-answer) or [reject](/graph/api/call-reject) the call.
+
+![Image of a bot providing options for call transfer](images/communications-ivr-transfer.png)
+
+Integrating with a natural language processing service means that the customer's speech can be analyzed for its sentiment. The bot can then respond to the customer's request accordingly.
+
+> [!NOTE]
+> You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
 
 ## Collaborate through group calls
-Enable users to engage with coworkers or customers by creating a group call so that everyone can contribute to the conversation.
+Enable users to engage with coworkers or customers by creating a group call so that everyone can contribute to the conversation. You can use the cloud communications API to:
 
-- [Creates a group call](/graph/api/application-post-calls#example-3-create-a-group-call-with-service-hosted-media) with multiple participants.
-- [Invites another bot or user](/graph/api/participant-invite) to an existing group call.
-- [Joins an existing group call](/graph/api/application-post-calls#example-5-join-scheduled-meeting-with-service-hosted-media) as a bot.
-- [Lists the participants](/graph/api/call-list-participants) in the group call.
-- [Mutes another participant](/graph/api/participant-mute).
+- [Create a group call](/graph/api/application-post-calls#example-3-create-a-group-call-with-service-hosted-media) with multiple participants.
+- [Invite a bot or a user](/graph/api/participant-invite) to an existing group call.
+- [Join an existing group call](/graph/api/application-post-calls#example-5-join-scheduled-meeting-with-service-hosted-media) as a bot.
+- [List call participants](/graph/api/call-list-participants) in the group call.
+- [Mute a participant](/graph/api/participant-mute).
 
 
 ## Set up online meetings
-Whether scheduling a meeting between a doctor and a patient or between a user and their direct reports, you can build solutions that generate meetings that users can rely on. For added flexibility, users can call other users and invite them to the meeting while it's ongoing.
+Whether scheduling a meeting between a doctor and a patient or between a user and their direct reports, is possible to build solutions that create meetings that users can rely on. For added flexibility, users can call other users and invite them to the meeting while it's ongoing. You can use the cloud communications API to:
 
-- Have a user [create an online meeting](/graph/api/application-post-onlinemeetings).
-- Have a user [retrieve the details](/graph/api/onlinemeeting-get) of an online meeting.
-- Have a bot or a user [join an online meeting](/graph/api/application-post-calls#example-5-join-scheduled-meeting-with-service-hosted-media).
+- [Create an online meeting](/graph/api/application-post-onlinemeetings).
+- [Retrieve meeting details](/graph/api/onlinemeeting-get) of an online meeting.
+- [Join an online meeting](/graph/api/application-post-calls#example-5-join-scheduled-meeting-with-service-hosted-media).
 
 ## Send reminders reliably
-To enable users to send customers a reminder for an appointment or a reminder for a payment deadline that’s approaching, you can have a bot call the customer automatically. <!--If the customer misses the call, it will leave a voicemail with the automated message. (Add this back once bot to PSTN calling works)-->
+To enable users to receive reminders for an appointment or a payment deadline that is approaching, you can have a bot call a customer automatically. <!--If a customer misses the call, the bot will leave a voicemail with the automated message. (Add this back once bot to PSTN calling works)-->.
 
-You can use the cloud communications API to build a bot that:
-
-- [Calls a customer](/graph/api/application-post-calls) on Teams.
-- [Plays a recorded prompt](/graph/api/call-playprompt) to serve as a reminder.
-- [Ends the call](/graph/api/call-delete).
+- [Call a customer](/graph/api/application-post-calls) on Teams.
+- [Play a recorded prompt](/graph/api/call-playprompt) to serve as a reminder.
+- [End a call](/graph/api/call-delete).
 
 
 ## Enable employee learning using the collaborative capabilities in Teams
@@ -149,27 +154,6 @@ Viva Learning built for Microsoft Teams and Microsoft 365 brings employee learni
 Use the employee learning APIs for Viva Learning to: 
 - Register and manage a [learning provider](/graph/api/resources/learningprovider).
 - Insert, update, retrieve, and delete [learning content](/graph/api/resources/learningcontent) metadata.
-
-## Simplify the customer service experience
-
-Whether you own a large helpdesk service or a small storefront, it can be difficult to handle multiple customer requests, especially if you don’t have any context of what problem they’re trying to solve beforehand. Handle incoming calls from customers through an **Interactive Voice Response** (IVR) system, where a bot will initially interact with them.
-
-You can build a bot that:
- 
-- [Answers a call](/graph/api/call-answer) from a customer.
-- [Ends a call](/graph/api/call-delete) with a customer.
-- [Plays a prompt](/graph/api/call-playprompt) to inform and prompt a customer for a selection.
-- [Records a short audio clip](/graph/api/call-record) of a customer speaking.
-- [Subscribes to a tone](/graph/api/call-subscribetotone) to gather the DTMF from a customer.
-- [Transfers a customer](/graph/api/call-transfer) to an agent.
-
-
-![Image of a bot providing options for call transfer](images/communications-ivr-transfer.png)
-
-Integrating with a natural language processing service means that the customer's speech can be analyzed for its sentiment. The bot can then respond to the customer's need accordingly.
-
-> [!NOTE]
-> You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
 
 ## API reference
