@@ -98,7 +98,7 @@ This area is where you will be spending most of your time on Graph Explorer. Thi
 - **Query box**: you can manually build your query.
 - **HTTP verbs**: a dropdown list of the HTTP methods.
 - **API version**: a dropdown list of the API versions available publicly.
-- **Modify permissions**: you need to consent to the right permissions to be able to run a query. Read more about [consenting to permissions](#consent-to-permissions).
+- **Modify permissions**: you need to consent to the right permissions to be able to run a query. For details, see [consenting to permissions](#consent-to-permissions).
 - **Access token**: this tab shows your access token when you're signed in. You can copy the token if you need to use it in your favorite REST client application.
 
  ![Screenshot of Graph Explorer highlighting the main work area](./images/run-query-tabs-screenshot.png)
