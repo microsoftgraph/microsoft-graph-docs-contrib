@@ -2656,7 +2656,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "documentSetVersionItem",
           "ChangeType": "Addition",
-          "Description": "Added the [documentSetVersionItem](https://docs.microsoft.com/en-us/graph/api/resources/documentSetVersionItem?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [documentSetVersionItem](https://docs.microsoft.com/en-us/graph/api/resources/documentsetversionitem?view=graph-rest-1.0) resource type.",
           "Target": "documentSetVersionItem"
         },
         {
@@ -2664,15 +2664,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "documentSetVersion",
           "ChangeType": "Addition",
-          "Description": "Added the [documentSetVersion](https://docs.microsoft.com/en-us/graph/api/resources/documentSetVersion?view=graph-rest-1.0) resource and supported methods.",
+          "Description": "Added the [documentSetVersion](https://docs.microsoft.com/en-us/graph/api/resources/documentsetversion?view=graph-rest-1.0) resource and supported methods.",
           "Target": "documentSetVersion"
         },
         {
           "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "documentSetVersions",
           "ChangeType": "Addition",
-          "Description": "Added the **documentSetVersions** relationship to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listItem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **documentSetVersions** relationship to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-1.0) resource.",
           "Target": "listItem"
         }
       ],
