@@ -64,12 +64,13 @@ GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/e
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.browserSite)"
+  "@odata.type": "microsoft.graph.browserSite",
+  "isCollection": true
 }
 -->
 ``` http
@@ -111,7 +112,7 @@ Content-Type: application/json
                             "displayName": "Joe Smith"
                         },
                         "application": null
-                    },
+                    }
                 }
             ]
         }

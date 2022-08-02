@@ -27,17 +27,17 @@ A `browserSharedCookie` represents a IE mode cookie that resides on a site list.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|comment|String|The comment for the shared cookie|
-|createdDateTime|DateTimeOffset|The date and time that the shared cookie was created|
-|displayName|String|The name of the cookie|
-|history|[browserSharedCookieHistory](../resources/browsersharedcookiehistory.md) collection|The history of modifications made to the cookie.|
-|hostOnly|Boolean|An attribute that controls whether a cookie is a host-only or domain cookie|
-|hostOrDomain|String|The URL of the cookie|
-|id|String|The unique identifier of the cookie|
+|comment|String|The comment for the shared cookie.|
+|createdDateTime|DateTimeOffset|The date and time when the shared cookie was created.|
+|displayName|String|The name of the cookie.|
+|history|[browserSharedCookieHistory](../resources/browsersharedcookiehistory.md) collection|The history of modifications applied to the cookie.|
+|hostOnly|Boolean|Controls whether a cookie is a host-only or domain cookie.|
+|hostOrDomain|String|The URL of the cookie.|
+|id|String|The unique identifier for the cookie.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The user who last modified the cookie.|
-|lastModifiedDateTime|DateTimeOffset|The date and time that the cookie was last modified.|
-|path|String|The path of the cookie|
-|sourceEnvironment|browserSharedCookieSourceEnvironment|Specifies how the cookies are shared between Microsoft Edge and Internet Explorer.The possible values are: `microsoftEdge`, `internetExplorer11`, `both`, `unknownFutureValue`.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the cookie was last modified.|
+|path|String|The path of the cookie.|
+|sourceEnvironment|browserSharedCookieSourceEnvironment|Specifies how the cookies are shared between Microsoft Edge and Internet Explorer. The possible values are: `microsoftEdge`, `internetExplorer11`, `both`, `unknownFutureValue`.|
 |status|browserSharedCookieStatus|The status of the cookie. The possible values are: `published`, `pendingAdd`, `pendingEdit`, `pendingDelete`, `unknownFutureValue`.|
 
 ## Relationships

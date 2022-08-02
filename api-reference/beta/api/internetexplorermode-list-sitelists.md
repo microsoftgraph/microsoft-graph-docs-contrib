@@ -68,7 +68,8 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.browserSiteList)"
+  "@odata.type": "microsoft.graph.browserSiteList",
+  "isCollection": true
 }
 -->
 ``` http

@@ -1,6 +1,6 @@
 ---
 title: "browserSiteList: publish"
-description: "Publish the specified site list for devices to download."
+description: "Publish the specified browserSiteList for devices to download."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Publish the specified site list for devices to download.
+Publish the specified [browserSiteList](../resources/browsersitelist.md) for devices to download.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,7 @@ In the request body, omitting both sites and shared cookies in the publishes the
 |Property|Type|Description|
 |:---|:---|:---|
 |revision|String|The revision of the site list to publish. Required.|
-|sharedCookies|[browserSharedCookie](../resources/browsersharedcookie.md) collection|The collection of shared cookies to publish. OPtional. Only requires the shared cookie ID. All other fields are ignored.|
+|sharedCookies|[browserSharedCookie](../resources/browsersharedcookie.md) collection|The collection of shared cookies to publish. Optional. Only requires the shared cookie ID. All other fields are ignored.|
 |sites|[browserSite](../resources/browsersite.md) collection|The collection of sites to publish. Optional. Only requires the site ID. All other fields are ignored.|
 
 
@@ -73,7 +73,7 @@ POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/
 
 
 #### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -126,24 +126,24 @@ POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/
 {
     "revision": "1.0",
     "sites": [
-		{
-			"id": "53e5f971-fc7b-4cd3-a1bf-34d7c0416882"
-		},
-		{
-			"id": "2e27cc86-3662-447e-b751-274fb9f869ea"
-		}
-	],
-	"sharedCookies": [
-		{
-			"id": "7f639835-23ab-4793-b1e6-1a06fad127a2"
-		}
-	]
+        {
+            "id": "53e5f971-fc7b-4cd3-a1bf-34d7c0416882"
+        },
+        {
+            "id": "2e27cc86-3662-447e-b751-274fb9f869ea"
+        }
+    ],
+    "sharedCookies": [
+        {
+            "id": "7f639835-23ab-4793-b1e6-1a06fad127a2"
+        }
+    ]
 }
 ```
 
 
 #### Response
-The following is an example of the response. The `status` will show pending if there are sites or shared cookies that you have not yet published.
+The following is an example of the response. The **status** will show `pending` if the request contains sites or shared cookies that you have not published yet.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
