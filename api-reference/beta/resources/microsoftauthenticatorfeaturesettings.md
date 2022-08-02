@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection that defines Microsoft Authenticator features and allows configuration of enablement state and targeted included and excluded groups.
+Represents Microsoft Authenticator settings such as number matching and location context, and whether they are enabled for all users or specific users only.
 
 ## Properties
 |Property|Type|Description|
