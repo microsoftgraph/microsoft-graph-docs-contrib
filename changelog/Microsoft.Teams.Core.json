@@ -5460,42 +5460,6 @@
       "CreatedDateTime": "2022-06-29T00:00:00",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
-    },
-	{
-      "ChangeList": [
-        {
-          "Id": "3309500d-415c-4c5a-8a2e-5759a1424ff1",
-          "ApiChange": "Method",
-          "ChangedApiName": "POST",
-          "ChangeType": "Addition",
-          "Description": "Fixed examples for incorrect @odata.type value in the recipient field when [sending activity feed notifications](https://docs.microsoft.com/en-us/graph/api/chat-sendactivitynotification?view=graph-rest-beta&tabs=http) to a chat and [sending activity feed notifications](https://docs.microsoft.com/en-us/graph/api/team-sendactivitynotification?view=graph-rest-beta&tabs=http) to a team.",
-          "Target": "chat"
-        }
-      ],
-      "Id": "3309500d-415c-4c5a-8a2e-5759a1424ff1",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2022-08-02T00:00:00",
-      "WorkloadArea": "Teamwork",
-      "SubArea": ""
-    },
-	{
-      "ChangeList": [
-        {
-          "Id": "120e0712-7b8b-4f21-b403-d9f908bab1fb",
-          "ApiChange": "Method",
-          "ChangedApiName": "POST",
-          "ChangeType": "Addition",
-          "Description": "Fixed examples for incorrect @odata.type value in the recipient field when [sending activity feed notifications](https://docs.microsoft.com/en-us/graph/api/chat-sendactivitynotification?view=graph-rest-v1.0&tabs=http) to a chat and [sending activity feed notifications](https://docs.microsoft.com/en-us/graph/api/team-sendactivitynotification?view=graph-rest-v1.0&tabs=http) to a team.",
-          "Target": "chat"
-        }
-      ],
-      "Id": "120e0712-7b8b-4f21-b403-d9f908bab1fb",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-08-02T00:00:00",
-      "WorkloadArea": "Teamwork",
-      "SubArea": ""
     }
   ]
 }
