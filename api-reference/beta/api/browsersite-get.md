@@ -1,6 +1,6 @@
 ---
 title: "Get browserSite"
-description: "Get a browserSite that is in Internet Explorer mode."
+description: "Get a browserSite that resides on a site list."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [browserSite](../resources/browsersite.md) that is in [Internet Explorer mode](/deployedge/edge-ie-mode).
+Get a [browserSite](../resources/browsersite.md) that resides on a [browserSiteList](../resources/browsersitelist.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

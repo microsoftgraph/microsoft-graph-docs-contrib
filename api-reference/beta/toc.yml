@@ -13589,49 +13589,49 @@ items:
               href: api/agreement-post-files.md
             - name: List localized files
               href: api/agreement-list-files.md
-    - name: Internet Explorer Mode
+    - name: Internet Explorer mode
       displayName: Cloud Site List Management for Internet Explorer (IE) Mode API
       items:
       - name: Site Lists
         href: resources/browsersitelist.md
         items:
-        - name: Get site list
-          href: api/browsersitelist-get.md
-        - name: List site lists
+        - name: List
           href: api/internetexplorermode-list-sitelists.md
-        - name: Delete site list
-          href: api/internetexplorermode-delete-sitelists.md
-        - name: Create site list
+        - name: Create
           href: api/internetexplorermode-post-sitelists.md
-        - name: Update site list
+        - name: Get
+          href: api/browsersitelist-get.md
+        - name: Update
           href: api/browsersitelist-update.md
-        - name: Publish site list
+        - name: Delete
+          href: api/internetexplorermode-delete-sitelists.md
+        - name: Publish
           href: api/browsersitelist-publish.md
       - name: Sites
         href: resources/browsersite.md
         items:
-        - name: List sites
+        - name: List
           href: api/browsersitelist-list-sites.md
-        - name: Create site
+        - name: Create
           href: api/browsersitelist-post-sites.md
-        - name: Update site
-          href: api/browsersite-update.md
-        - name: Get site
+        - name: Get
           href: api/browsersite-get.md
-        - name: Delete site
+        - name: Update
+          href: api/browsersite-update.md
+        - name: Delete
           href: api/browsersitelist-delete-sites.md
-      - name: Shared Cookies
+      - name: Shared cookies
         href: resources/browsersharedcookie.md
         items:
-        - name: List shared cookies
+        - name: List
           href: api/browsersitelist-list-sharedcookies.md
-        - name: Create shared cookie
+        - name: Create
           href: api/browsersitelist-post-sharedcookies.md
-        - name: Update shared cookie
-          href: api/browsersharedcookie-update.md
-        - name: Get shared cookie
+        - name: Get
           href: api/browsersharedcookie-get.md
-        - name: Delete shared cookie
+        - name: Update
+          href: api/browsersharedcookie-update.md
+        - name: Delete
           href: api/browsersitelist-delete-sharedcookies.md
     - name: Mail
       displayName: Outlook, Outlook mail
