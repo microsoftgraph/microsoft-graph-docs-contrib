@@ -175,7 +175,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "put_b2xuserflows-apiconnectorconfiguration_disable-postAttributeCollection",
-  "sampleKeys": ["B2X_1_testuserflow", "postAttributeCollection", "postFederationSignup", "postFederationSignup"]
+  "sampleKeys": ["B2X_1_testuserflow", "postAttributeCollection"]
 }
 -->
 
