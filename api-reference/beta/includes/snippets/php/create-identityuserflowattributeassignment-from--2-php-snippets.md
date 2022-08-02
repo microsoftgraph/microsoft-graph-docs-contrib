@@ -18,7 +18,7 @@ $requestBody->setUserInputType(new IdentityUserFlowAttributeInputType('textbox')
 
 $requestBody->setDisplayName('Shoe size');
 
-$requestBody->setUserAttributeValues(]);
+$requestBody->setUserAttributeValues([]);
 
 $userAttribute = new UserAttribute();
 $userAttribute->setId('extension_guid_shoeSize');

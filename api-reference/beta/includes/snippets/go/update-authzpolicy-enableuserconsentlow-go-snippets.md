@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAuthorizationPolicy()
-permissionGrantPolicyIdsAssignedToDefaultUserRole := []String {
+permissionGrantPolicyIdsAssignedToDefaultUserRole := []string {
 	"managePermissionGrantsForSelf.microsoft-user-default-low",
 
 }
