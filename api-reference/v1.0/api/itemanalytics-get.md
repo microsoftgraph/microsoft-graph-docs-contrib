@@ -67,7 +67,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
-```msgraph-interactive
+```http
 GET /drives/{drive-id}/items/{item-id}/analytics/allTime
 ```
 

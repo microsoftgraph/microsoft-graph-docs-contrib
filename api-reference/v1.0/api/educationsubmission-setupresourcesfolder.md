@@ -50,6 +50,11 @@ If the assignment is already in submitted state or if the assignment is no longe
 #### Request
 The following is an example of a request that triggers the creation of a SharePoint resource folder for a submission.
 
+### Example 1: Set up a resource folder for a submission
+
+#### Request
+The following is an example of a request that triggers the creation of a SharePoint resource folder for a submission.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -80,6 +85,7 @@ Content-type: application/json
 ---
 
 #### Response
+
 The following is an example of the response.
 
 <!-- {
@@ -152,6 +158,7 @@ Content-type: application/json
 
 
 #### Response
+
 The following is an example of the response.
 
 <!-- {
@@ -194,6 +201,7 @@ Content-type: application/json
 ```
 
 #### Response
+
 The following is an example of the response.
 
 <!-- {
