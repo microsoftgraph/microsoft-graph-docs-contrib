@@ -31,7 +31,7 @@ Represents a Microsoft Authenticator authentication methods policy. Authenticati
 |Relationship|Type|Description|
 |:---|:---|:---|
 |includeTargets|[microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method.|
-|featureSettings|[microsoftAuthenticatorFeatureSettings](../resources/microsoftauthenticatorfeaturesettings.md)|A collection of Microsoft Authenticator features.|
+|featureSettings|[microsoftAuthenticatorFeatureSettings](../resources/microsoftauthenticatorfeaturesettings.md)|A collection of Microsoft Authenticator settings such as number matching and location context, and whether they are enabled for all users or specific users only.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
