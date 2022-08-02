@@ -86,9 +86,9 @@ $attachmentsArray []= $attachmentsChatMessageAttachment2;
 $requestBody->setAttachments($attachmentsArray);
 
 
-$requestBody->setMentions(]);
+$requestBody->setMentions([]);
 
-$requestBody->setReactions(]);
+$requestBody->setReactions([]);
 
 
 

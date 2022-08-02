@@ -1,5 +1,5 @@
 ---
-author: "Jumaodhiss"
+author: "jumasure"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -8,6 +8,7 @@ ms.topic: include
 <!-- this file is auto-generated don't edit it manually! -->
 
 | Request type | Limit per app for all tenants | Limit per app per tenant |
+
 | ------------- | ----------------------------- | ------------------------ |
 | POST, PUT, DELETE, PATCH | 2500 requests per 20 seconds | 500 requests per 20 seconds |
 | GET Subscription by Id | 2500 requests per 20 seconds | 500 requests per 20 seconds |

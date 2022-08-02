@@ -2,7 +2,7 @@
 title: "Get subscription"
 description: "Retrieve the properties and relationships of a subscription."
 ms.localizationpriority: high
-author: "Jumaodhiss"
+author: "jumasure"
 ms.prod: "change-notifications"
 doc_type: apiPageType
 ---
@@ -106,7 +106,7 @@ Here is an example of the request.
   "name": "get_subscription"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
 

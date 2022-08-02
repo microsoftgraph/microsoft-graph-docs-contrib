@@ -32,9 +32,9 @@ $requestBody->setAddress($address);
 $geoCoordinates = new OutlookGeoCoordinates();
 $GeoCoordinates->setAltitude(null);
 
-$geoCoordinates->setLatitude(latitude);
+$geoCoordinates->setLatitude(47);
 
-$geoCoordinates->setLongitude(longitude);
+$geoCoordinates->setLongitude(-122);
 
 $GeoCoordinates->setAccuracy(null);
 

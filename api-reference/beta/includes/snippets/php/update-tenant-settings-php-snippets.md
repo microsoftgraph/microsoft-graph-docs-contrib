@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Settings();
-$requestBody->setDeletedUserPersonalSiteRetentionPeriodInDays(deletedUserPersonalSiteRetentionPeriodInDays);
+$requestBody->setDeletedUserPersonalSiteRetentionPeriodInDays(365);
 
 $requestBody->setExcludedFileExtensionsForSyncApp(['.mp3', ]);
 
@@ -22,7 +22,7 @@ $requestBody->setIsSyncButtonHiddenOnPersonalSite(false);
 
 $requestBody->setIsUnmanagedSyncAppForTenantRestricted(false);
 
-$requestBody->setPersonalSiteDefaultStorageLimitInMB(personalSiteDefaultStorageLimitInMB);
+$requestBody->setPersonalSiteDefaultStorageLimitInMB(120000);
 
 
 

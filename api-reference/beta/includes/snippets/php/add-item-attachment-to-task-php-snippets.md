@@ -15,26 +15,26 @@ $requestBody->set@odatatype('#microsoft.graph.itemAttachment');
 $requestBody->setName('Holiday event');
 
 $additionalData = [
-'item' => $requestBody = new ();
+'item' => $requestBody = new Item();
 $		requestBody->set@odatatype('microsoft.graph.event');
 
 $		requestBody->setSubject('Discuss gifts for children');
 
-$body = new ();
+$body = new Body();
 $		body->setContentType('HTML');
 
 $		body->setContent('Let\'s look for funding!');
 
 
 $requestBody->setBody($body);
-$start = new ();
+$start = new Start();
 $		start->setDateTime('2020-01-12T18:00:00');
 
 $		start->setTimeZone('Pacific Standard Time');
 
 
 $requestBody->setStart($start);
-$end = new ();
+$end = new End();
 $		end->setDateTime('2020-01-12T19:00:00');
 
 $		end->setTimeZone('Pacific Standard Time');

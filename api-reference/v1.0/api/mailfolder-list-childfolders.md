@@ -72,7 +72,7 @@ Here is an example of the request.
   "name": "mailfolder_get_childfolders"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/childFolders
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OAAuAAAAAAAiQ8W967B7TKBjgx9rVEURAQAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=/childFolders
 ```
 
 # [C#](#tab/csharp)
@@ -141,7 +141,7 @@ Here is an example of the request.
   "name": "mailfolder_get_hiddenchildfolders"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/childFolders?includeHiddenFolders=true
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OAAuAAAAAAAiQ8W967B7TKBjgx9rVEURAQAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=/childFolders?includeHiddenFolders=true
 ```
 
 # [C#](#tab/csharp)

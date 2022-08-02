@@ -20,7 +20,7 @@ credentials := []graphmodels.SynchronizationSecretKeyStringValuePairable {
 }
 requestBody.SetCredentials(credentials)
 
-graphClient.ApplicationsById("application-id").Synchronization().AcquireAccessToken(application-id).Post(requestBody)
+graphClient.ApplicationsById("application-id").Synchronization().AcquireAccessToken().Post(requestBody)
 
 
 ```

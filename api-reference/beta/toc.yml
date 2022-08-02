@@ -11226,27 +11226,27 @@ items:
         href: resources/opentypeextension.md
         displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: Create open extension
+        - name: Create
           href: api/opentypeextension-post-opentypeextension.md
-        - name: Get open extension
+        - name: Get
           href: api/opentypeextension-get.md
-        - name: Update open extension
+        - name: Update
           href: api/opentypeextension-update.md
-        - name: Delete open extension
+        - name: Delete
           href: api/opentypeextension-delete.md
       - name: Schema extensions
         href: resources/schemaextension.md
         displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: List schema extensions
+        - name: List
           href: api/schemaextension-list.md
-        - name: Create schema extension
+        - name: Create
           href: api/schemaextension-post-schemaextensions.md
-        - name: Get schema extension
+        - name: Get
           href: api/schemaextension-get.md
-        - name: Update schema extension
+        - name: Update
           href: api/schemaextension-update.md
-        - name: Delete schema extension
+        - name: Delete
           href: api/schemaextension-delete.md
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
@@ -12081,13 +12081,6 @@ items:
                 href: api/unifiedrbacresourcenamespace-list-resourceactions.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
-          - name: Tenant information
-            href: resources/tenantinformation.md
-            items:
-              - name: Find tenant by domain name
-                href: api/tenantrelationship-findtenantinformationbydomainname.md
-              - name: Find tenant by tenant ID
-                href: api/tenantrelationship-findtenantinformationbytenantid.md
           - name: Privileged identity management
             displayName: Privileged identity management, PIM
             href: resources/privilegedidentitymanagementv3-overview.md
@@ -12182,6 +12175,13 @@ items:
                   href: api/policyroot-list-rolemanagementpolicyassignments.md
                 - name: Get
                   href: api/unifiedrolemanagementpolicyassignment-get.md
+        - name: Tenant information
+          href: resources/tenantinformation.md
+          items:
+            - name: Find tenant by domain name
+              href: api/tenantrelationship-findtenantinformationbydomainname.md
+            - name: Find tenant by tenant ID
+              href: api/tenantrelationship-findtenantinformationbytenantid.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
