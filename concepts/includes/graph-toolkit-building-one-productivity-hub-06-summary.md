@@ -4,4 +4,4 @@ If you are looking for ways to advance your One Productivity Hub app, view the l
 
 ## Next steps
 
-To find out more about Microsoft Graph Toolkit, visit [documentation](https://docs.microsoft.com/en-us/graph/toolkit/overview) or [Learning Path](https://docs.microsoft.com/en-us/learn/paths/m365-msgraph-toolkit)
+To find out more about Microsoft Graph Toolkit, visit [documentation](https://docs.microsoft.com/en-us/graph/toolkit/overview) or [Learning Path](https://docs.microsoft.com/en-us/learn/paths/m365-msgraph-toolkit).
