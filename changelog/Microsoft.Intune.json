@@ -9,7 +9,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **diskType** enumeration type.",
           "Target": "diskType"
-        },
+        }, 
         {
           "Id": "4fefb14c-a22d-4e6e-9820-3e73c079a7a2",
           "ApiChange": "Enumeration",
