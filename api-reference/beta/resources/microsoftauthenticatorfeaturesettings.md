@@ -18,7 +18,7 @@ Represents Microsoft Authenticator settings such as number matching and location
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|numberMatchingRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Specifies whether the number entered into the client app must match the number presented on the Authenticator app. Value is ignored for phone sign-in notifications.|
+|numberMatchingRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Specifies whether the user needs to enter a number in the Authenticator app from the login screen to complete their login. Value is ignored for phone sign-in notifications.|
 |displayAppInformationRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Determines whether the user's Authenticator app will show them the client app they are signing into.|
 |displayLocationInformationRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Determines whether the user's Authenticator app will show them the geographic location of where the authentication request originated from.|
 
