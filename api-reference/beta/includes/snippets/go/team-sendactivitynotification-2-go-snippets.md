@@ -7,39 +7,48 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-topic := msgraphsdk.NewTeamworkActivityTopic()
-requestBody.SetTopic(topic)
-source := "entityUrl"
-topic.SetSource(&source)
+requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
+topic := graphmodels.NewTeamworkActivityTopic()
+source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
+topic.SetSource(&source) 
 value := "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/tabs/{tabId}"
-topic.SetValue(&value)
+topic.SetValue(&value) 
+requestBody.SetTopic(topic)
 activityType := "reservationUpdated"
-requestBody.SetActivityType(&activityType)
-previewText := msgraphsdk.NewItemBody()
-requestBody.SetPreviewText(previewText)
+requestBody.SetActivityType(&activityType) 
+previewText := graphmodels.NewItemBody()
 content := "You have moved up the queue"
-previewText.SetContent(&content)
-recipient := msgraphsdk.NewTeamworkNotificationRecipient()
+previewText.SetContent(&content) 
+requestBody.SetPreviewText(previewText)
+recipient := graphmodels.NewTeamworkNotificationRecipient()
+"@odata.type" := "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient"
+recipient.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"userId" : "569363e2-4e49-4661-87f2-16f245c5d66a", 
+}
+recipient.SetAdditionalData(additionalData)
 requestBody.SetRecipient(recipient)
-recipient.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
-	"userId": "569363e2-4e49-4661-87f2-16f245c5d66a",
+
+
+keyValuePair := graphmodels.NewKeyValuePair()
+name := "reservationId"
+keyValuePair.SetName(&name) 
+value := "TREEE433"
+keyValuePair.SetValue(&value) 
+keyValuePair1 := graphmodels.NewKeyValuePair()
+name := "currentSlot"
+keyValuePair1.SetName(&name) 
+value := "23"
+keyValuePair1.SetValue(&value) 
+
+templateParameters := []graphmodels.KeyValuePairable {
+	keyValuePair,
+	keyValuePair1,
+
 }
-requestBody.SetTemplateParameters( []KeyValuePair {
-	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "reservationId",
-		"value": "TREEE433",
-	}
-	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "currentSlot",
-		"value": "23",
-	}
-}
-teamId := "team-id"
-graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(requestBody)
+requestBody.SetTemplateParameters(templateParameters)
+
+graphClient.TeamsById("team-id").SendActivityNotification().Post(requestBody)
 
 
 ```

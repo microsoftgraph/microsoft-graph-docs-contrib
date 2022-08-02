@@ -7,17 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPrivilegedApproval()
+requestBody := graphmodels.NewPrivilegedApproval()
 userId := "userId-value"
-requestBody.SetUserId(&userId)
+requestBody.SetUserId(&userId) 
 roleId := "roleId-value"
-requestBody.SetRoleId(&roleId)
+requestBody.SetRoleId(&roleId) 
 approvalType := "approvalType-value"
-requestBody.SetApprovalType(&approvalType)
-approvalState := "approvalState-value"
-requestBody.SetApprovalState(&approvalState)
+requestBody.SetApprovalType(&approvalType) 
+approvalState := graphmodels.APPROVALSTATE-VALUE_APPROVALSTATE 
+requestBody.SetApprovalState(&approvalState) 
 approvalDuration := "datetime-value"
-requestBody.SetApprovalDuration(&approvalDuration)
+requestBody.SetApprovalDuration(&approvalDuration) 
+
 result, err := graphClient.PrivilegedApproval().Post(requestBody)
 
 

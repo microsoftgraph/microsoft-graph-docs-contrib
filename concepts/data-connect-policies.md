@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph Data Connect policies and billing"
-description: "Describes what policies are supported and the Data Connect billing model."
+description: "Learn about Azure policies supported for an app built with Microsoft 365 data and the bill associated with the Azure Synapse or Azure Data Factory you are using."
 author: "fercobo-msft"
 ms.localizationpriority: high
 ms.prod: "data-connect"
@@ -25,7 +25,7 @@ When you select any of the policies during Azure Marketplace publishing, the pol
 
 ## Billing
 
-A bill is associated with the Azure subscription of the Azure Data Factory you are using. The price in this new billing model is based on the number of Microsoft Graph objects that you are accessing. For more information about billing, see the [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
+A bill is associated with the Azure subscription of the Azure Synapse or Azure Data Factory you are using. The price in this new billing model is based on the number of Microsoft Graph objects that you are accessing. For more information about billing, see the [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
 
 Directory objects that are not charged are as follows:
 

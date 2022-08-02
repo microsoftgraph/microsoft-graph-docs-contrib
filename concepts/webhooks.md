@@ -1,7 +1,7 @@
 ---
 title: "Set up notifications for changes in resource data"
-description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes."
-author: "Jumaodhiss"
+description: "Microsoft Graph APIs use a webhook mechanism to deliver change notifications to clients. Client apps use change notifications to update their state upon changes."
+author: "jumasure"
 ms.prod: "non-product-specific"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -46,7 +46,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [presence][]
 - Teams [onlineMeeting][]
 - Teams [team][]
-- [todoTask][] (preview)
+- [To Do task][]
 - [user][]
 
 ### Sample scenarios
@@ -68,7 +68,8 @@ You can create a subscription for the following scenarios:
 
 Certain limits apply to Azure AD based resources (users, groups) and will generate errors when exceeded:
 
-> **Note**: These limits do not apply to resources from services other than Azure AD. For example, an app can create many more subscriptions to `message` or `event` resources, which are supported by the Exchange Online service as part of Microsoft Graph.
+> [!NOTE]
+> These limits do not apply to resources from services other than Azure AD. For example, an app can create many more subscriptions to `message` or `event` resources, which are supported by the Exchange Online service as part of Microsoft Graph.
 
 - Maximum subscription quotas:
 
@@ -86,14 +87,6 @@ When any limit is exceeded, attempts to create a subscription will result in an 
 
 ### Outlook resource limitations
 
-When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the **userPrincipalName** (UPN) in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
-
-`/users/sh.o'neal@contoso.com/messages`
-
-Use:
-
-`/users/{guid-user-id}/messages`
-
 A maximum of 1000 active subscriptions per mailbox for all applications is allowed.
 
 ### Teams resource limitations
@@ -105,6 +98,22 @@ Each Teams resource has different subscription quotas.
 
 - For subscriptions to **chatMessages** (channels or chats):
   - Per app and channel or chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
+- For subscriptions to **channels**:
+  - Per app and team combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
+- For subscriptions to **chats**:
+  - Per app and chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
+- For subscriptions to **teams**:
+  - Per app and team combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+  
+- For subscriptions to **conversationMembers**:
+  - Per app and team combination: 1 subscription
   - Per organization: 10,000 total subscriptions
 
 ## Subscription lifetime
@@ -156,7 +165,8 @@ Although `clientState` is not required, you must include it to comply with our r
 
 If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription) object in the body.
 
-> **Note:** Any query string parameter included in the **notificationUrl** property will be included in the HTTP POST request when notifications are being delivered.
+> [!NOTE]
+> Any query string parameter included in the **notificationUrl** property will be included in the HTTP POST request when notifications are being delivered.
 
 #### Notification endpoint validation
 
@@ -183,7 +193,8 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
     The client should discard the validation token after providing it in the response.
 
-    > **Important:** If the client returns an encoded validation token, the validation will fail.
+    > [!IMPORTANT]
+    > If the client returns an encoded validation token, the validation fails.
 
 Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.  
 
@@ -220,7 +231,8 @@ If successful, Microsoft Graph returns a `204 No Content` code.
 
 With a client subscribing to changes to a resource, Microsoft Graph sends a `POST` request to the notification URL whenever the resource changes. It sends notifications only for changes of the type that's specified in the subscription, for example, `created`.
 
-> **Note:** If a client has multiple subscriptions that monitor the same resource and use the same notification URL, Microsoft Graph can send multiple change notifications that correspond to different subscriptions, each showing the corresponding subscription ID. There is no guarantee that all change notifications in the `POST` request belong to a single subscription.
+> [!NOTE]
+> If a client has multiple subscriptions that monitor the same resource and use the same notification URL, Microsoft Graph can send multiple change notifications that correspond to different subscriptions, each showing the corresponding subscription ID. There is no guarantee that all change notifications in the `POST` request belong to a single subscription.
 
 ### Change notification example
 
@@ -264,7 +276,8 @@ Your process should process every change notification it receives. The following
 
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
-    > **Note:** If this isn't true, you should not consider this a valid change notification. It is possible that the change notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
+    > [!NOTE]
+    > If this isn't true, you should not consider this a valid change notification. It is possible that the change notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
 
 1. Update your application based on your business logic.
 
@@ -297,7 +310,8 @@ The following code samples are available on GitHub.
 
 You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
-> **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
+> [!NOTE]
+> The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
 ## Latency
 
@@ -326,15 +340,16 @@ The following table lists the latency to expect between an event happening in th
 |[todoTask][] | Less than 2 minutes | 15 minutes |
 |[user][] | Less than 2 minutes | 15 minutes |
 
->**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
+> [!NOTE]
+> The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 
 ## See also
 
-- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true)
-- [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0&preserve-view=true)
-- [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true)
-- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true) resource type
-- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true) resource type
+- [Subscription resource type](/graph/api/resources/subscription)
+- [Get subscription](/graph/api/subscription-get)
+- [Create subscription](/graph/api/subscription-post-subscriptions)
+- [changeNotification](/graph/api/resources/changenotification) resource type
+- [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
 - [Change notifications and change tracking tutorial](/learn/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications](./webhooks-lifecycle.md)
 
@@ -352,7 +367,7 @@ The following table lists the latency to expect between an event happening in th
 [list]: /graph/api/resources/list
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
-[todoTask]: /graph/api/resources/todotask
+[To Do task]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember

@@ -7,13 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.RoleManagementPoliciesRequestBuilderGetQueryParameters{
-	Filter: "scopeId%20eq%20'/'%20and%20scopeType%20eq%20'DirectoryRole'",
+requestParameters := &graphconfig.RoleManagementPoliciesRequestBuilderGetQueryParameters{
+	Filter: "scopeId eq '/' and scopeType eq 'DirectoryRole'",
 }
-options := &msgraphsdk.RoleManagementPoliciesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.RoleManagementPoliciesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.Policies().RoleManagementPolicies().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Policies().RoleManagementPolicies().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

@@ -7,19 +7,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewProfileCardProperty()
+requestBody := graphmodels.NewProfileCardProperty()
 directoryPropertyName := "CustomAttribute1"
-requestBody.SetDirectoryPropertyName(&directoryPropertyName)
-requestBody.SetAnnotations( []ProfileCardAnnotation {
-	msgraphsdk.NewProfileCardAnnotation(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Cost Center",
-		"localizations":  []Object {
-		}
-	}
+requestBody.SetDirectoryPropertyName(&directoryPropertyName) 
+
+
+profileCardAnnotation := graphmodels.NewProfileCardAnnotation()
+displayName := "Cost Center"
+profileCardAnnotation.SetDisplayName(&displayName) 
+
+
+displayNameLocalization := graphmodels.NewDisplayNameLocalization()
+languageTag := "ru-RU"
+displayNameLocalization.SetLanguageTag(&languageTag) 
+displayName := "центр затрат"
+displayNameLocalization.SetDisplayName(&displayName) 
+
+localizations := []graphmodels.DisplayNameLocalizationable {
+	displayNameLocalization,
+
 }
-organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Settings().ProfileCardProperties().Post(requestBody)
+profileCardAnnotation.SetLocalizations(localizations)
+
+annotations := []graphmodels.ProfileCardAnnotationable {
+	profileCardAnnotation,
+
+}
+requestBody.SetAnnotations(annotations)
+
+result, err := graphClient.OrganizationById("organization-id").Settings().ProfileCardProperties().Post(requestBody)
 
 
 ```

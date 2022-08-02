@@ -7,18 +7,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewForwardPostRequestBody()
 comment := "comment-value"
-requestBody.SetComment(&comment)
-requestBody.SetToRecipients( []Recipient {
-	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+requestBody.SetComment(&comment) 
+
+
+recipient := graphmodels.NewRecipient()
+additionalData := map[string]interface{}{
+emailAddress := graphmodels.New()
+name := "name-value"
+emailAddress.SetName(&name) 
+address := "address-value"
+emailAddress.SetAddress(&address) 
+	recipient.SetEmailAddress(emailAddress)
 }
-groupId := "group-id"
-conversationThreadId := "conversationThread-id"
-postId := "post-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Forward(group-id, conversationThread-id, post-id).Post(requestBody)
+recipient.SetAdditionalData(additionalData)
+
+toRecipients := []graphmodels.Recipientable {
+	recipient,
+
+}
+requestBody.SetToRecipients(toRecipients)
+
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Forward().Post(requestBody)
 
 
 ```

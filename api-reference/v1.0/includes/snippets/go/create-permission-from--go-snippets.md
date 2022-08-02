@@ -7,17 +7,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPermission()
-requestBody.SetRoles( []String {
+requestBody := graphmodels.NewPermission()
+roles := []string {
 	"write",
+
 }
-requestBody.SetGrantedToIdentities( []IdentitySet {
-	msgraphsdk.NewIdentitySet(),
-	SetAdditionalData(map[string]interface{}{
-	}
+requestBody.SetRoles(roles)
+
+
+identitySet := graphmodels.NewIdentitySet()
+application := graphmodels.NewIdentity()
+id := "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
+application.SetId(&id) 
+displayName := "Contoso Time Manager App"
+application.SetDisplayName(&displayName) 
+identitySet.SetApplication(application)
+
+grantedToIdentities := []graphmodels.IdentitySetable {
+	identitySet,
+
 }
-siteId := "site-id"
-result, err := graphClient.SitesById(&siteId).Permissions().Post(requestBody)
+requestBody.SetGrantedToIdentities(grantedToIdentities)
+
+result, err := graphClient.SitesById("site-id").Permissions().Post(requestBody)
 
 
 ```

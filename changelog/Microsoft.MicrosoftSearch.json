@@ -537,6 +537,42 @@
       "CreatedDateTime": "2022-05-25T04:11:04.628237Z",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c0112d11-a5ad-473c-bd83-ce6cd3d37d2c",
+          "ApiChange": "Property",
+          "ChangedApiName": "hitId",
+          "ChangeType": "Change",
+          "Description": "Changed the **hitId** format for the [message](https://docs.microsoft.com/en-us/graph/search-concept-messages) entity from REST syntax to EWS syntax.\nReplace '-' with '/' and replace '_' with '+' can format the EWS-syntax back to REST-syntax",
+          "Target": "searchResponse"
+        }
+      ],
+      "Id": "c0112d11-a5ad-473c-bd83-ce6cd3d37d2c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-14T04:11:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "266b304d-06ba-43e1-b157-f63cd0b1797e",
+          "ApiChange": "Property",
+          "ChangedApiName": "hitId",
+          "ChangeType": "Change",
+          "Description": "Changed the **hitId** format for the [message](https://docs.microsoft.com/en-us/graph/search-concept-messages) entity from REST syntax to EWS syntax.\nReplace '-' with '/' and replace '_' with '+' can format the EWS-syntax back to REST-syntax",
+          "Target": "searchResponse"
+        }
+      ],
+      "Id": "266b304d-06ba-43e1-b157-f63cd0b1797e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-14T04:11:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }

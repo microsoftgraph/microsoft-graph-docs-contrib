@@ -1,6 +1,6 @@
 ---
 title: "Datasets, regions, and sinks supported by Microsoft Graph Data Connect"
-description: "Describes the supported datasets and destination storage types that can be used with Microsoft Graph Data Connect."
+description: "Learn about the supported datasets, Microsoft 365 regions, and sink storage types that you can use with Microsoft Graph Data Connect."
 author: "fercobo-msft"
 ms.localizationpriority: high
 ms.prod: "data-connect"
@@ -8,11 +8,11 @@ ms.prod: "data-connect"
 
 # Datasets, regions, and sinks supported by Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect supports a variety of datasets, data regions, and storage locations in Microsoft Azure. This article describes the supported datasets and how to access the dataset schemas, the Microsoft 365 and Microsoft Azure regions that are supported, and the storage locations that Data Connect utilizes through Azure Data Factory.
+Microsoft Graph Data Connect supports a variety of datasets, data regions, and storage locations in Microsoft Azure. This article describes the supported datasets and how to access the dataset schemas, the Microsoft 365 and Microsoft Azure regions that are supported, and the storage locations that Data Connect utilizes through Azure Synapse or Azure Data Factory.
 
 ## Datasets
 
-Microsoft Graph Data Connect currently supports the following datasets. To view the schemas for each dataset, create a new dataset in Azure Data Factory and use the Schema tab to view it.
+Microsoft Graph Data Connect currently supports the following datasets. To view the schemas for each dataset, create a new dataset in Azure Synapse or Azure Data Factory and use the Schema tab to view it.
 
 | Dataset name | Description | Sample | Schema |
 |--------------|-------------|--------|--------|
@@ -37,7 +37,7 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 ## Regions
 
-Microsoft Graph Data Connect supports extracting data from a variety of different Microsoft 365 regions. To successfully move data from the Microsoft 365 datacenter into your Microsoft Azure storage, the Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Microsoft 365 data. 
+Microsoft Graph Data Connect supports extracting data from a variety of Microsoft 365 regions. To successfully move data from the Microsoft 365 datacenter into your Microsoft Azure storage, the Azure Synapse or Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Microsoft 365 data. 
 
 The following table indicates which Microsoft 365 regions are supported and the corresponding Azure regions required for data movement.
 
@@ -59,11 +59,11 @@ Sinks are the output location that Azure Data Factory uses to place data in Azur
 
 The following characteristics apply to sinks:
 
-- The output files are of format JSON lines. The output format is fixed, and there is no support for modifying the format of the output. However, you can use Azure Data Factory to copy the result of a Data Connect pipeline into another storage mechanism (such as Azure SQL Database).
+- The output files are of format JSON lines. The output format is fixed, and there is no support for modifying the format of the output. However, you can use Azure Synapse or Azure Data Factory to copy the result of a Data Connect pipeline into another storage mechanism (such as Azure SQL Database).
 - Service Principal authentication is the only supported authentication mechanism for all sink types in a copy activity with Microsoft 365 as the source.
 - When using Azure Storage Blob as the sink, you must ensure that your application has Storage Blob Data Contributor access to the Azure Storage Blob location.
 
 ## See also
 
-- [Azure Data Factory connector for Microsoft 365 data](/azure/data-factory/connector-office-365)
+- [Azure Synapse and Azure Data Factory connector for Microsoft 365 data](/azure/data-factory/connector-office-365)
 - [Policies and billing](data-connect-policies.md)
