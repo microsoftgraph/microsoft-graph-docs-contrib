@@ -12,7 +12,7 @@ description := "Self help community for golf"
 requestBody.SetDescription(&description) 
 displayName := "Golf Assist"
 requestBody.SetDisplayName(&displayName) 
-groupTypes := []String {
+groupTypes := []string {
 	"Unified",
 
 }

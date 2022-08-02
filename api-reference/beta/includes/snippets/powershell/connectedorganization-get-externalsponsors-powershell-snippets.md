@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgEntitlementManagementConnectedOrganizationExternalSponsor -ConnectedOrganizationId $connectedOrganizationId
+Get-MgEntitlementManagementConnectedOrganizationExternalSponsor -ConnectedOrganizationId $connectedOrganizationId -OutFile $outFileId
 
 ```

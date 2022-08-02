@@ -29,7 +29,7 @@ toRecipients := []graphmodels.Recipientable {
 }
 requestBody.SetToRecipients(toRecipients)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Forward(group-id, conversationThread-id, post-id).Post(requestBody)
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Forward().Post(requestBody)
 
 
 ```

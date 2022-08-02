@@ -18,7 +18,7 @@ $requestBody->setDescription('Allow users from configured connected organization
 
 $requestBody->setCanExtend(false);
 
-$requestBody->setDurationInDays(durationInDays);
+$requestBody->setDurationInDays(365);
 
 $requestBody->setExpirationDateTime(null);
 
@@ -39,13 +39,13 @@ $requestApprovalSettings->setIsRequestorJustificationRequired(true);
 $requestApprovalSettings->setApprovalMode('SingleStage');
 
 $approvalStagesApprovalStage1 = new ApprovalStage();
-$approvalStagesApprovalStage1->setApprovalStageTimeOutInDays(approvalStageTimeOutInDays);
+$approvalStagesApprovalStage1->setApprovalStageTimeOutInDays(14);
 
 $approvalStagesApprovalStage1->setIsApproverJustificationRequired(true);
 
 $approvalStagesApprovalStage1->setIsEscalationEnabled(false);
 
-$approvalStagesApprovalStage1->setEscalationTimeInMinutes(escalationTimeInMinutes);
+$approvalStagesApprovalStage1->setEscalationTimeInMinutes(11520);
 
 $primaryApproversUserSet1 = new UserSet();
 $primaryApproversUserSet1->set@odatatype('#microsoft.graph.groupMembers');
@@ -102,7 +102,7 @@ $additionalData = [
 'choices' => $choices1 = new ();
 $choices1->setActualValue('AZ');
 
-$choices1DisplayValue = new ();
+$choices1DisplayValue = new DisplayValue();
 $localizedTexts1 = new ();
 $localizedTexts1->setText('Arizona');
 
@@ -120,7 +120,7 @@ $choicesArray []= $choices1;
 $choices2 = new ();
 $choices2->setActualValue('CA');
 
-$choices2DisplayValue = new ();
+$choices2DisplayValue = new DisplayValue();
 $localizedTexts1 = new ();
 $localizedTexts1->setText('California');
 
@@ -138,7 +138,7 @@ $choicesArray []= $choices2;
 $choices3 = new ();
 $choices3->setActualValue('OH');
 
-$choices3DisplayValue = new ();
+$choices3DisplayValue = new DisplayValue();
 $localizedTexts1 = new ();
 $localizedTexts1->setText('Ohio');
 

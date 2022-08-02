@@ -64,7 +64,7 @@ The following is an example of the request.
   "name": "get_serviceprincipal_memberof"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/memberOf
+GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-56124728e051/memberOf
 ```
 
 # [C#](#tab/csharp)
@@ -135,7 +135,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "get_count_only"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/memberOf/$count
 ConsistencyLevel: eventual
 ```
@@ -164,7 +164,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "get_count_group_only"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/memberOf/microsoft.graph.group/$count
 ConsistencyLevel: eventual
 ```
@@ -193,7 +193,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "get_video_count"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=”displayName:Video" 
 ConsistencyLevel: eventual
 ```
@@ -242,7 +242,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "list_serviceprincipals_memberof_startswith"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')
 ConsistencyLevel: eventual
 ```

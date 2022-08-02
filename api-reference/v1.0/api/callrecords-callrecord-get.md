@@ -69,7 +69,7 @@ The following is an example of the request to get the basic details from a [call
   "name": "get_callrecord"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 ```
 
@@ -166,7 +166,7 @@ The following is an example of the request to get the full details from a [callR
   "name": "get_callrecord_expanded"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=sessions($expand=segments)
 ```
 

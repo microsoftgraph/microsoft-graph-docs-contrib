@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewDeleteTiIndicatorsPostRequestBody()
-value := []String {
+value := []string {
 	"id-value1",
 	"id-value2",
 

@@ -2,7 +2,7 @@
 title: "Update unifiedRoleDefinition"
 description: "Update the properties of a unifiedRoleDefinition object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---

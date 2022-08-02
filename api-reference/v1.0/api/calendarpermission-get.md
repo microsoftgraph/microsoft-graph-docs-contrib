@@ -72,7 +72,7 @@ The following is an example of the request.
   "name": "get_calendarpermission"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id}
 ```
 

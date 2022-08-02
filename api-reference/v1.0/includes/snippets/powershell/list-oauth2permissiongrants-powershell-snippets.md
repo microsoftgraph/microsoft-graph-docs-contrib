@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgOauth2PermissionGrant
+Get-MgOauth2PermissionGrant -OutFile $outFileId
 
 ```

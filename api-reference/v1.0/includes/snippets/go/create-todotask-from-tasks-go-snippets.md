@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewTodoTask()
 title := "A new task"
 requestBody.SetTitle(&title) 
-categories := []String {
+categories := []string {
 	"Important",
 
 }

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.SchemaExtensions
 
-Get-MgSchemaExtension -Filter "id eq 'graphlearn_test'" 
+Get-MgSchemaExtension -Filter "id eq 'graphlearn_test'"  -OutFile $outFileId
 
 ```
