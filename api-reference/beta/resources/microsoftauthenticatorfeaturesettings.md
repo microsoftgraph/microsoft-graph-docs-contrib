@@ -1,6 +1,6 @@
 ---
 title: "microsoftAuthenticatorFeatureSettings resource type"
-description: "A collection that defines Microsoft Authenticator features and allows configuration of enablement state and targeted included and excluded groups."
+description: "Represents Microsoft Authenticator settings such as number matching and location context, and whether they are enabled for all users or specific users only."
 author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -18,9 +18,9 @@ A collection that defines Microsoft Authenticator features and allows configurat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|numberMatchingRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Requires number matching for MFA notifications. Value is ignored for phone sign-in notifications.|
-|displayAppInformationRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Determines whether the user is shown application context in their Authenticator app notification. In the body of the Authenticator notification, the user will be shown the app they are signing into.|
-|displayLocationInformationRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Determines whether the user is shown geographic location context in their Authenticator app notification. In the body of the Authenticator notification, the user will be shown the location that the authentication request originated from.|
+|numberMatchingRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Specifies whether the number entered into the client app must match the number presented on the Authenticator app. Value is ignored for phone sign-in notifications.|
+|displayAppInformationRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Determines whether the user's Authenticator app will show them the client app they are signing into.|
+|displayLocationInformationRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Determines whether the user's Authenticator app will show them the geographic location of where the authentication request originated from.|
 
 ## Relationships
 None.
