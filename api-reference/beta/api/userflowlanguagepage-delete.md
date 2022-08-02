@@ -67,7 +67,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_userflowlanguagepage",
-  "sampleKeys": ["B2C_1_Customer","en","phonefactor"]
+  "sampleKeys": ["B2C_1_Customer", "en", "phonefactor"]
 }
 -->
 

@@ -688,7 +688,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_6",
-  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2", "1616990032035"]
+  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
@@ -808,7 +808,7 @@ Content-type: application/json
 }
 ```
 
-### Example 7 : @mention a channel in a channel message
+### Example 7: @mention a channel in a channel message
 
 #### Request
 The following is an example of the request. For information about how to get a list of channels in a team, see [List channels](../api/channel-list.md).
@@ -944,7 +944,7 @@ Content-type: application/json
 }
 ```
 
-### Example 8 : @mention a team in a channel message
+### Example 8: @mention a team in a channel message
 
 #### Request
 The following is an example of the request.
