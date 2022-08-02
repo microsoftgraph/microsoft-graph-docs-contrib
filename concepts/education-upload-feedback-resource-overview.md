@@ -1,8 +1,8 @@
 ---
 title: "Upload files for education assignments and submissions"
-description: "Learn how to upload a file to an assignment or a submission resource by using the education API in Microsoft Graph."
+description: "Learn how to upload a feedback file to a submission resource by using the education API in Microsoft Graph."
 ms.localizationpriority: medium
-author: "sharad-sharma-msft"
+author: "suresh-padimi"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 Resources are an integral part of education [assignments](/graph/api/resources/educationassignment) and [submissions](/graph/api/resources/educationsubmission). Teachers determine the resources to upload to an assignment folder, and students determine the resources to upload to a submission folder.
 
-This article describes how to use the education API in Microsoft Graph to upload files to an assignment or submission folder.
+This article describes how to use the education API in Microsoft Graph to upload files to  submission folder.
 
 ## Prerequisites
 
@@ -127,10 +127,10 @@ The following example shows a **fileUrl** based on this format.
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
 ```
 
-### Step 4 - Create educationAssignmentResource
-This step shows how to upload a SharePoint resource to an assignment resources folder.
+### Step 4 - Create educationFeedbackResourceOutcome
+This step shows how to upload a SharePoint resource to a submission resources folder.
 
-Use the `fileUrl` from the previous step in the request body to [Create an educationAssignmentResource](/graph/api/educationassignment-post-resources).
+Use the `fileUrl` from the previous step in the request body to [Create an educationFeedbackResourceOutcome](/graph/api/educationfeedbackresourceoutcome-post-outcomes).
 
 #### Request
 
@@ -200,6 +200,6 @@ Content-type: application/json
 
 ```
 
-You have now successfully uploaded a SharePoint resource to an assignment resources folder (and attached it to the associated assignment). You can follow similar steps to upload one or more student work resources.
+You have now successfully uploaded a  resource to a submision resources folder (and attached it to the associated submission). You can follow similar steps to upload one or more feedback resources resource to a submision resources folder (and attached it to the associated submission). You can follow similar steps to upload one or more feedback resources.
 
-For more details, see [Create educationSubmissionResource](/graph/api/educationsubmission-post-resources).
+For more details, see [Create educationFeedbackResourceOutcome](/graph/api/educationfeedbackresourceoutcome-post-outcomes).
