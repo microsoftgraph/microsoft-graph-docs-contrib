@@ -19,7 +19,7 @@ $availabilityShiftAvailability1RecurrencePattern->setType(new RecurrencePatternT
 
 $availabilityShiftAvailability1RecurrencePattern->setDaysOfWeek(['Monday', 'Wednesday', 'Friday', ]);
 
-$availabilityShiftAvailability1RecurrencePattern->setInterval(interval);
+$availabilityShiftAvailability1RecurrencePattern->setInterval(1);
 
 
 $availabilityShiftAvailability1Recurrence->setPattern($availabilityShiftAvailability1RecurrencePattern);

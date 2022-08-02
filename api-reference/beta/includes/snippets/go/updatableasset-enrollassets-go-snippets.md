@@ -12,15 +12,14 @@ updateCategory := graphmodels.STRING_UPDATECATEGORY
 requestBody.SetUpdateCategory(&updateCategory) 
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.windowsUpdates.azureADDevice", 
-	"id" : "String (identifier)", 
-}
-.SetAdditionalData(additionalData)
+updatableAsset := graphmodels.NewUpdatableAsset()
+"@odata.type" := "#microsoft.graph.windowsUpdates.azureADDevice"
+updatableAsset.Set"@odata.type"(&"@odata.type") 
+id := "String (identifier)"
+updatableAsset.SetId(&id) 
 
 assets := []graphmodels.Objectable {
-	,
+	updatableAsset,
 
 }
 requestBody.SetAssets(assets)

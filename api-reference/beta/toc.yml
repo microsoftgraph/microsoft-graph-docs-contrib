@@ -1691,6 +1691,13 @@ items:
             items:
             - name: List
               href: api/attendancerecord-list.md
+        - name: Call transcript
+          href: resources/calltranscript.md
+          items:
+          - name: List
+            href: api/onlinemeeting-list-transcripts.md
+          - name: Get
+            href: api/calltranscript-get.md
         - name: Meeting registration
           href: resources/meetingregistration.md
           items:
@@ -2712,8 +2719,6 @@ items:
               href: api/intune-apps-iosipadoswebclip-delete.md
             - name: Update
               href: api/intune-apps-iosipadoswebclip-update.md
-          - name: Key/value pair
-            href: resources/intune-androidforwork-keyvaluepair.md
           - name: macOS dmg app
             href: resources/intune-apps-macosdmgapp.md
             items:
@@ -3206,6 +3211,8 @@ items:
               href: api/intune-apps-officesuiteapp-delete.md
             - name: Update
               href: api/intune-apps-officesuiteapp-update.md
+          - name: Office suite default file format type
+            href: resources/intune-apps-officesuitedefaultfileformattype.md
           - name: Office suite install progress display level
             href: resources/intune-apps-officesuiteinstallprogressdisplaylevel.md
           - name: Office update channel
@@ -3938,6 +3945,8 @@ items:
             href: resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md
           - name: Android device owner battery plugged mode
             href: resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md
+          - name: Android device owner certificate access type
+            href: resources/intune-deviceconfig-androiddeviceownercertificateaccesstype.md
           - name: Android device owner certificate profile base
             href: resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md
             items:
@@ -4078,6 +4087,8 @@ items:
               href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-update.md
+          - name: Android device owner silent certificate access
+            href: resources/intune-deviceconfig-androiddeviceownersilentcertificateaccess.md
           - name: Android device owner system update freeze period
             href: resources/intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md
           - name: Android device owner system update install type
@@ -5166,8 +5177,6 @@ items:
             href: resources/intune-deviceconfig-deviceplatformtype.md
           - name: Device threat protection level
             href: resources/intune-deviceconfig-devicethreatprotectionlevel.md
-          - name: Device type
-            href: resources/intune-deviceconfig-devicetype.md
           - name: Device types
             href: resources/intune-deviceconfig-devicetypes.md
           - name: Diagnostic data submission mode
@@ -5293,6 +5302,8 @@ items:
               href: api/intune-grouppolicy-grouppolicyconfigurationassignment-delete.md
             - name: Update
               href: api/intune-grouppolicy-grouppolicyconfigurationassignment-update.md
+          - name: Group policy configuration ingestion type
+            href: resources/intune-grouppolicy-grouppolicyconfigurationingestiontype.md
           - name: Group policy configuration type
             href: resources/intune-grouppolicy-grouppolicyconfigurationtype.md
           - name: Group policy definition
@@ -6039,10 +6050,6 @@ items:
             href: resources/intune-deviceconfig-keytypedvaluepair.md
           - name: Key value
             href: resources/intune-deviceconfig-keyvalue.md
-          - name: Key/value pair
-            href: resources/intune-deviceconfig-keyvaluepair.md
-          - name: Key/value pair
-            href: resources/intune-deviceconfig-keyvaluepair.md
           - name: Kiosk mode managed home screen PIN complexity
             href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
           - name: Kiosk mode type
@@ -6589,8 +6596,6 @@ items:
               href: api/intune-deviceconfig-restrictedappsviolation-update.md
           - name: Retire scheduled managed device
             href: resources/intune-deviceconfig-retirescheduledmanageddevice.md
-          - name: Run state
-            href: resources/intune-deviceconfig-runstate.md
           - name: Safe search filter type
             href: resources/intune-deviceconfig-safesearchfiltertype.md
           - name: Scheduled retire state
@@ -6723,6 +6728,8 @@ items:
             href: resources/intune-deviceconfig-vpnondemandruleconnectionaction.md
           - name: VPN on demand rule connection domain action
             href: resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md
+          - name: VPN on demand rule interface type match
+            href: resources/intune-deviceconfig-vpnondemandruleinterfacetypematch.md
           - name: VPN provider type
             href: resources/intune-deviceconfig-vpnprovidertype.md
           - name: VPN proxy server
@@ -8181,8 +8188,6 @@ items:
               href: api/intune-devices-deviceshellscript-update.md
             - name: assign action
               href: api/intune-devices-deviceshellscript-assign.md
-          - name: Device type
-            href: resources/intune-devices-devicetype.md
           - name: Disk type
             href: resources/intune-devices-disktype.md
           - name: Embedded SIM activation code
@@ -8349,6 +8354,8 @@ items:
               href: api/intune-devices-manageddevice-movedevicestoou.md
             - name: removeDeviceFirmwareConfigurationInterfaceManagement action
               href: api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md
+            - name: downloadAppDiagnostics action
+              href: api/intune-devices-manageddevice-downloadappdiagnostics.md
           - name: Managed device architecture
             href: resources/intune-devices-manageddevicearchitecture.md
           - name: Managed device cleanup settings
@@ -8416,6 +8423,10 @@ items:
             href: resources/intune-esim-platformtype.md
           - name: Policy platform type
             href: resources/intune-deviceintent-policyplatformtype.md
+          - name: Powerlift download request
+            href: resources/intune-devices-powerliftdownloadrequest.md
+          - name: Powerlift incident metadata
+            href: resources/intune-devices-powerliftincidentmetadata.md
           - name: Remediation state
             href: resources/intune-devices-remediationstate.md
           - name: Remote action
@@ -8475,8 +8486,6 @@ items:
             href: resources/intune-auditing-rolescopetaginfo.md
           - name: Rotate BitLocker keys device action result
             href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
-          - name: Run state
-            href: resources/intune-devices-runstate.md
           - name: Security baseline category state summary
             href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
             items:
@@ -9207,16 +9216,6 @@ items:
               href: api/intune-mam-defaultmanagedappprotection-delete.md
             - name: Update
               href: api/intune-mam-defaultmanagedappprotection-update.md
-          - name: Device management configuration exchange online setting applicability
-            href: resources/intune-mam-devicemanagementconfigurationexchangeonlinesettingapplicability.md
-          - name: Device management configuration setting applicability
-            href: resources/intune-mam-devicemanagementconfigurationsettingapplicability.md
-          - name: Device management configuration string setting value definition
-            href: resources/intune-mam-devicemanagementconfigurationstringsettingvaluedefinition.md
-          - name: Device management configuration technologies
-            href: resources/intune-mam-devicemanagementconfigurationtechnologies.md
-          - name: Device management configuration windows setting applicability
-            href: resources/intune-mam-devicemanagementconfigurationwindowssettingapplicability.md
           - name: Device platform type
             href: resources/intune-wip-deviceplatformtype.md
           - name: Intune branding profile
@@ -9258,8 +9257,6 @@ items:
             href: resources/intune-mam-iosmobileappidentifier.md
           - name: JSON
             href: resources/intune-mam-json.md
-          - name: Key/value pair
-            href: resources/intune-mam-keyvaluepair.md
           - name: Mac app identifier
             href: resources/intune-mam-macappidentifier.md
           - name: Managed app clipboard sharing level
@@ -9408,7 +9405,7 @@ items:
               href: api/intune-mam-windowsinformationprotection-assign.md
           - name: Windows information protection app
             href: resources/intune-mam-windowsinformationprotectionapp.md
-          - name: Windows information protection app summary
+          - name: Windows information protection app learning summary
             href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
             items:
             - name: List
@@ -9804,7 +9801,7 @@ items:
           - name: Windows Hello for business PIN usage
             href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
         - name: Role-based access control (RBAC)
-          href: resources/intune-rbac-conceptual.md
+          href: /resources/intune-rbac-conceptual.md
           items:
           - name: Device and app management assigned role details
             href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -10105,78 +10102,6 @@ items:
               href: api/intune-shared-devicemanagement-enablelegacypcmanagement.md
             - name: sendCustomNotificationToCompanyPortal action
               href: api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md
-          - name: Device management configuration Azure ad trust type
-            href: resources/intune-shared-devicemanagementconfigurationazureadtrusttype.md
-          - name: Device management configuration choice setting collection instance
-            href: resources/intune-shared-devicemanagementconfigurationchoicesettingcollectioninstance.md
-          - name: Device management configuration choice setting instance
-            href: resources/intune-shared-devicemanagementconfigurationchoicesettinginstance.md
-          - name: Device management configuration choice setting value
-            href: resources/intune-shared-devicemanagementconfigurationchoicesettingvalue.md
-          - name: Device management configuration control type
-            href: resources/intune-shared-devicemanagementconfigurationcontroltype.md
-          - name: Device management configuration dependent on
-            href: resources/intune-shared-devicemanagementconfigurationdependenton.md
-          - name: Device management configuration device mode
-            href: resources/intune-shared-devicemanagementconfigurationdevicemode.md
-          - name: Device management configuration group setting collection instance
-            href: resources/intune-shared-devicemanagementconfigurationgroupsettingcollectioninstance.md
-          - name: Device management configuration group setting instance
-            href: resources/intune-shared-devicemanagementconfigurationgroupsettinginstance.md
-          - name: Device management configuration group setting value
-            href: resources/intune-shared-devicemanagementconfigurationgroupsettingvalue.md
-          - name: Device management configuration integer setting value
-            href: resources/intune-shared-devicemanagementconfigurationintegersettingvalue.md
-          - name: Device management configuration integer setting value definition
-            href: resources/intune-shared-devicemanagementconfigurationintegersettingvaluedefinition.md
-          - name: Device management configuration option definition
-            href: resources/intune-shared-devicemanagementconfigurationoptiondefinition.md
-          - name: Device management configuration platforms
-            href: resources/intune-shared-devicemanagementconfigurationplatforms.md
-          - name: Device management configuration reference setting value
-            href: resources/intune-shared-devicemanagementconfigurationreferencesettingvalue.md
-          - name: Device management configuration referred setting information
-            href: resources/intune-shared-devicemanagementconfigurationreferredsettinginformation.md
-          - name: Device management configuration secret setting value
-            href: resources/intune-shared-devicemanagementconfigurationsecretsettingvalue.md
-          - name: Device management configuration secret setting value state
-            href: resources/intune-shared-devicemanagementconfigurationsecretsettingvaluestate.md
-          - name: Device management configuration setting access types
-            href: resources/intune-shared-devicemanagementconfigurationsettingaccesstypes.md
-          - name: Device management configuration setting depended on by
-            href: resources/intune-shared-devicemanagementconfigurationsettingdependedonby.md
-          - name: Device management configuration setting group collection instance
-            href: resources/intune-shared-devicemanagementconfigurationsettinggroupcollectioninstance.md
-          - name: Device management configuration setting group instance
-            href: resources/intune-shared-devicemanagementconfigurationsettinggroupinstance.md
-          - name: Device management configuration setting instance
-            href: resources/intune-shared-devicemanagementconfigurationsettinginstance.md
-          - name: Device management configuration setting instance template reference
-            href: resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md
-          - name: Device management configuration setting occurrence
-            href: resources/intune-shared-devicemanagementconfigurationsettingoccurrence.md
-          - name: Device management configuration setting usage
-            href: resources/intune-shared-devicemanagementconfigurationsettingusage.md
-          - name: Device management configuration setting value
-            href: resources/intune-shared-devicemanagementconfigurationsettingvalue.md
-          - name: Device management configuration setting value definition
-            href: resources/intune-shared-devicemanagementconfigurationsettingvaluedefinition.md
-          - name: Device management configuration setting value template reference
-            href: resources/intune-shared-devicemanagementconfigurationsettingvaluetemplatereference.md
-          - name: Device management configuration setting visibility
-            href: resources/intune-shared-devicemanagementconfigurationsettingvisibility.md
-          - name: Device management configuration simple setting collection instance
-            href: resources/intune-shared-devicemanagementconfigurationsimplesettingcollectioninstance.md
-          - name: Device management configuration simple setting instance
-            href: resources/intune-shared-devicemanagementconfigurationsimplesettinginstance.md
-          - name: Device management configuration simple setting value
-            href: resources/intune-shared-devicemanagementconfigurationsimplesettingvalue.md
-          - name: Device management configuration string format
-            href: resources/intune-shared-devicemanagementconfigurationstringformat.md
-          - name: Device management configuration string setting value
-            href: resources/intune-shared-devicemanagementconfigurationstringsettingvalue.md
-          - name: Device management configuration windows skus
-            href: resources/intune-shared-devicemanagementconfigurationwindowsskus.md
           - name: Device management derived credential settings
             href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
             items:
@@ -10207,6 +10132,8 @@ items:
               href: api/intune-shared-devicemanagementscript-assign.md
             - name: hasPayloadLinks action
               href: api/intune-shared-devicemanagementscript-haspayloadlinks.md
+          - name: Device type
+            href: resources/intune-shared-devicetype.md
           - name: Enablement
             href: resources/intune-shared-enablement.md
           - name: Enrollment availability options
@@ -10275,6 +10202,8 @@ items:
             href: resources/intune-shared-keystorageprovideroption.md
           - name: Key usages
             href: resources/intune-shared-keyusages.md
+          - name: Key/value pair
+            href: resources/intune-shared-keyvaluepair.md
           - name: macOS LOB app assignment settings
             href: resources/intune-shared-macoslobappassignmentsettings.md
           - name: macOS VPP app assignment settings
@@ -10351,6 +10280,8 @@ items:
             href: resources/intune-shared-rgbcolor.md
           - name: Run as account type
             href: resources/intune-shared-runasaccounttype.md
+          - name: Run state
+            href: resources/intune-shared-runstate.md
           - name: Saved UI state generation options
             href: resources/intune-shared-saveduistategenerationoptions.md
           - name: Setting source type
@@ -10620,6 +10551,17 @@ items:
             href: api/cloudpcorganizationsettings-get.md
           - name: Update
             href: api/cloudpcorganizationsettings-update.md
+        - name: Cloud PC external partner setting
+          href: resources/cloudpcexternalpartnersetting.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-externalpartnersettings.md
+          - name: Get
+            href: api/cloudpcexternalpartnersetting-get.md
+          - name: Create
+            href: api/virtualendpoint-post-externalpartnersettings.md
+          - name: Update
+            href: api/cloudpcexternalpartnersetting-update.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:

@@ -56,7 +56,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_filesFolder"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/filesFolder
 ```
 

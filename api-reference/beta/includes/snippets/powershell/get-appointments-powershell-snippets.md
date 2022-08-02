@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Bookings
 
-Get-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId
+Get-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -OutFile $outFileId
 
 ```

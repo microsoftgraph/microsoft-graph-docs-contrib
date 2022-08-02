@@ -23,9 +23,9 @@ $target->setOperations(['All', ]);
 
 $target->setLevel('Assignment');
 
-$target->setInheritableSettings(]);
+$target->setInheritableSettings([]);
 
-$target->setEnforcedSettings(]);
+$target->setEnforcedSettings([]);
 
 
 $requestBody->setTarget($target);
