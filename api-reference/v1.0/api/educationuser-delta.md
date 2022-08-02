@@ -60,7 +60,7 @@ If successful, this function returns a `200 OK` response code and a [educationUs
 }
 -->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/education/users/delta
 ```
 

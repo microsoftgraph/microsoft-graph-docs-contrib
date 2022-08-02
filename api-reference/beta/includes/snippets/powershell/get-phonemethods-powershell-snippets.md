@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 # A UPN can also be used as -UserId.
-Get-MgUserAuthenticationPhoneMethod -UserId $userId
+Get-MgUserAuthenticationPhoneMethod -UserId $userId -OutFile $outFileId
 
 ```

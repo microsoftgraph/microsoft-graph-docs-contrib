@@ -62,7 +62,7 @@ The following is an example of the request.
   "name": "list_permissiongrantpolicies"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies
 ```
 

@@ -40,7 +40,7 @@ maxSilenceTimeoutInSeconds := int32(2)
 requestBody.SetMaxSilenceTimeoutInSeconds(&maxSilenceTimeoutInSeconds) 
 playBeep := true
 requestBody.SetPlayBeep(&playBeep) 
-stopTones := []String {
+stopTones := []string {
 	"#",
 	"1",
 	"*",
@@ -48,7 +48,7 @@ stopTones := []String {
 }
 requestBody.SetStopTones(stopTones)
 
-result, err := graphClient.Communications().CallsById("call-id").RecordResponse(call-id).Post(requestBody)
+result, err := graphClient.Communications().CallsById("call-id").RecordResponse().Post(requestBody)
 
 
 ```

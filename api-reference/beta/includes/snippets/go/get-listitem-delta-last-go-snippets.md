@@ -14,7 +14,7 @@ configuration := &graphconfig.DeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").Items().Delta()(site-id, list-id).GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.SitesById("site-id").ListsById("list-id").Items().Delta().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

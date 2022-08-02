@@ -19,7 +19,7 @@ requestBody.SetMembershipType(&membershipType)
 conversationMember := graphmodels.NewConversationMember()
 "@odata.type" := "#microsoft.graph.aadUserConversationMember"
 conversationMember.Set"@odata.type"(&"@odata.type") 
-roles := []String {
+roles := []string {
 	"owner",
 
 }

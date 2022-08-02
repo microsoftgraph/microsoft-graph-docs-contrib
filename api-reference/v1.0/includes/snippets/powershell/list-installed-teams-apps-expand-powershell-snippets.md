@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamInstalledApp -TeamId $teamId -ExpandProperty "teamsAppDefinition" 
+Get-MgTeamInstalledApp -TeamId $teamId -ExpandProperty "teamsAppDefinition"  -OutFile $outFileId
 
 ```

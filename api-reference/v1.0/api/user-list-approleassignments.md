@@ -142,7 +142,7 @@ Here is an example of the request to retrieve the app roles that have been assig
   "name": "user_get_approleassignments_filterby_resourceId"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/appRoleAssignments?$filter=resourceId eq 8e881353-1735-45af-af21-ee1344582a4d
 ```
 

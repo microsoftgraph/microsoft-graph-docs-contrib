@@ -53,6 +53,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |displayName|String|The string id of the category's display name|
 |isRoot|Boolean|Defines if the category is a root category|
+|ingestionSource|[ingestionSource](../resources/intune-grouppolicy-ingestionsource.md)|Defines this category's ingestion source (0 - unknown, 1 - custom, 2 - global). Possible values are: `unknown`, `custom`, `builtIn`, `unknownFutureValue`.|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
 
@@ -68,12 +69,13 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyCategories/{groupPolicyCategoryId}
 Content-type: application/json
-Content-length: 120
+Content-length: 152
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyCategory",
   "displayName": "Display Name value",
-  "isRoot": true
+  "isRoot": true,
+  "ingestionSource": "custom"
 }
 ```
 
@@ -82,12 +84,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 233
+Content-Length: 265
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyCategory",
   "displayName": "Display Name value",
   "isRoot": true,
+  "ingestionSource": "custom",
   "id": "d0641e36-1e36-d064-361e-64d0361e64d0",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }

@@ -64,7 +64,7 @@ The following is an example of the request.
   "name": "get_timeoffrequest_1"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 ```
 

@@ -15,7 +15,7 @@ $requestBody->setClientContext('d45324c1-fcb5-430a-902c-f20af696537c');
 $promptsPrompt1 = new Prompt();
 $additionalData = [
 '@odata.type' => '#microsoft.graph.mediaPrompt', 
-'mediaInfo' => $promptsPrompt1 = new ();
+'mediaInfo' => $promptsPrompt1 = new MediaInfo();
 $		promptsPrompt1->set@odatatype('#microsoft.graph.mediaInfo');
 
 $		promptsPrompt1->setUri('https://cdn.contoso.com/beep.wav');

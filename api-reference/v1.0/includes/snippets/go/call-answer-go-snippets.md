@@ -26,7 +26,7 @@ requestBody.SetAcceptedModalities(acceptedModalities)
 participantCapacity := int32(200)
 requestBody.SetParticipantCapacity(&participantCapacity) 
 
-graphClient.Communications().CallsById("call-id").Answer(call-id).Post(requestBody)
+graphClient.Communications().CallsById("call-id").Answer().Post(requestBody)
 
 
 ```
