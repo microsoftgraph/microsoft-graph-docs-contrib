@@ -57,7 +57,7 @@ You can use several properties to customize the component.
 | user-id         | userId         | Set to a user id to fetch that user's details and image from Microsoft Graph.|
 | person-query    | personQuery    | Set to a name or email of a person to search for a person in Microsoft Graph and fetch the first person's details and image.|
 | person-details  | personDetails  | Set to an object representing a person. Works with object from the people, users, contacts, or group, resources. |
-| fallback-details| fallbackDetails| Set to an object representing a person when no user/person/contact is found in the graph.
+| fallback-details| fallbackDetails| Set to an object representing a person when no user/person/contact is found in Microsoft Graph.
 | person-image    | personImage    | Set the image to show for the person. |
 | person-presence | personPresence | Set the presence for the person. |
 | fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
@@ -116,10 +116,10 @@ The following events are fired from the component.
 
 Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`line1clicked` | Fired when line1 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
-`line2clicked` | Fired when line2 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
-`line3clicked` | Fired when line3 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
-`line4clicked` | Fired when line4 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
+`line1clicked` | Fired when line1 is clicked | The `person` object which can be a Microsoft Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person), or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo. | No | No | Yes, unless you override the default template.
+`line2clicked` | Fired when line2 is clicked | The `person` object which can be a Microsoft Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person), or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo. | No | No | Yes, unless you override the default template.
+`line3clicked` | Fired when line3 is clicked | The `person` object, which can be a Microsoft Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person), or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo. | No | No | Yes, unless you override the default template.
+`line4clicked` | Fired when line4 is clicked | The `person` object, which can be a Microsoft Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person), or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo. | No | No | Yes, unless you override the default template.
 
 For more information about handling events, see [events](../customize-components/events.md).
 
@@ -131,8 +131,8 @@ The `mgt-person` component supports several [templates](../customize-components/
 | --------- | ------------ | ----------- |
 | loading | none | The template to render while the component is in a loading state. |
 | no-data | none | The template to render when no person image or data is available. | 
-| default | person: The person details object <br> `personImage`: The URL of the image <br> `personPresence`: The presence details object for person  | The default template replaces the entire component with your own. |
-| person-card | person: The person details object <br> `personImage`: The URL of the image | The template to update the mgt-person-card displayed on hover or click. |
+| default | person: The person details object <br> `personImage`: The URL of the image <br> `personPresence`: The presence details object for person.  | The default template replaces the entire component with your own. |
+| person-card | person: The person details object <br> `personImage`: The URL of the image. | The template to update the mgt-person-card displayed on hover or click. |
 | line1 | person: The person details object | The template for the first line of person metadata. |
 | line2 | person: The person details object | The template for the second line of person metadata. |
 | line3 | person: The person details object | The template for the third line of person metadata. |
@@ -207,7 +207,7 @@ The `mgt-person` component can show an `mgt-person-card` on either hover or clic
 
 | Attribute    |  Property     | Description                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| person-card | personCardInteraction | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
+| person-card | personCardInteraction | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none`. |
 
 
 For more information about templating, styling, and attributes, see [Person Card component](./person-card.md).
@@ -257,9 +257,9 @@ The control uses the global authentication provider described in the [authentica
 
 |Object store|Cached data|Remarks|
 |---------|-----------|-------|
-|`photos`|Person's photo|Used, when `avatarType` is set to `photo` and `fetchImage` is set to `true`|
-|`presence`|Person's presence|Used, when `showPresence` is set to `true`|
-|`users`|Person's user information|
+|`photos`|Person's photo|Used when `avatarType` is set to `photo` and `fetchImage` is set to `true`.|
+|`presence`|Person's presence|Used when `showPresence` is set to `true`.|
+|`users`|Person's user information.|
 
 See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
 
