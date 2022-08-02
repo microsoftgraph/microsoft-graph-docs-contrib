@@ -1,6 +1,6 @@
 ---
 title: "browserSite resource type"
-description: "Represents a IE mode site that resides on a site list."
+description: "Represents a site to use in Internet Explorer mode that resides on a site list."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A `browserSite` represents a IE mode site that resides on a site list.
+Represents a site to use in [Internet Explorer mode](/deployedge/edge-ie-mode) that resides on a [site list](../resources/browsersitelist.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -56,25 +56,25 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.browserSite",
-  "id": "String (identifier)",
   "allowRedirect": "Boolean",
-  "createdDateTime": "String (timestamp)",
+  "comment": "String",
   "compatibilityMode": "String",
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "history": [
     {
       "@odata.type": "microsoft.graph.browserSiteHistory"
     }
   ],
+  "id": "String (identifier)",
   "lastModifiedBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
   "lastModifiedDateTime": "String (timestamp)",
   "mergeType": "String",
-  "targetEnvironment": "String",
   "status": "String",
-  "webUrl": "String",
-  "comment": "String",
-  "deletedDateTime": "String (timestamp)"
+  "targetEnvironment": "String",
+  "webUrl": "String"
 }
 ```
 

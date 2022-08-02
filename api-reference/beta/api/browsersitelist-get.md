@@ -1,6 +1,6 @@
 ---
 title: "Get browserSiteList"
-description: "Read the properties and relationships of a browserSiteList object."
+description: "Get a browserSiteList that contains browserSite and browserSharedCookie resources."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [browserSiteList](../resources/browsersitelist.md) object.
+Get a [browserSiteList](../resources/browsersitelist.md) that contains [browserSite](../resources/browsersite.md) and [browserSharedCookie](../resources/browsersharedcookie.md) resources.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

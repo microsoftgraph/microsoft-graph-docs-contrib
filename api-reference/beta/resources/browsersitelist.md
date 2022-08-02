@@ -56,19 +56,19 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.browserSiteList",
-  "id": "String (identifier)",
   "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
   "lastModifiedBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
   "lastModifiedDateTime": "String (timestamp)",
-  "displayName": "String",
   "publishedBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
   "publishedDateTime": "String (timestamp)",
-  "status": "String",
-  "revision": "String"
+  "revision": "String",
+  "status": "String"
 }
 ```
 

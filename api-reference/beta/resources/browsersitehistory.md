@@ -41,13 +41,13 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.browserSiteHistory",
   "allowRedirect": "Boolean",
   "comment": "String",
+  "compatibilityMode": "String",
   "lastModifiedBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "compatibilityMode": "String",
   "mergeType": "String",
-  "targetEnvironment": "String",
-  "publishedDateTime": "String (timestamp)"
+  "publishedDateTime": "String (timestamp)",
+  "targetEnvironment": "String"
 }
 ```
 

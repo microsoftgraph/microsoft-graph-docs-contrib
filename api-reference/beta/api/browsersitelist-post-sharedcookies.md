@@ -1,6 +1,6 @@
 ---
 title: "Create browserSharedCookie"
-description: "Create a new browserSharedCookie object."
+description: "Create a new browserSharedCookie object in a browserSiteList."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [browserSharedCookie](../resources/browsersharedcookie.md) object.
+Create a new [browserSharedCookie](../resources/browsersharedcookie.md) object in a [browserSiteList](../resources/browsersitelist.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

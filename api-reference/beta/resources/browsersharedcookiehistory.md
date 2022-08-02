@@ -40,16 +40,16 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.browserSharedCookieHistory",
+  "comment": "String",
+  "displayName": "String",
+  "hostOnly": "Boolean",
+  "hostOrDomain": "String",
   "lastModifiedBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "publishedDateTime": "String (timestamp)",
-  "hostOrDomain": "String",
-  "hostOnly": "Boolean",
-  "displayName": "String",
   "path": "String",
-  "sourceEnvironment": "String",
-  "comment": "String"
+  "publishedDateTime": "String (timestamp)",
+  "sourceEnvironment": "String"
 }
 ```
 

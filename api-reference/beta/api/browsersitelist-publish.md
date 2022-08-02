@@ -37,9 +37,12 @@ POST /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/publish
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
 
 ## Request body
-In the request body, omitting both sites and shared cookies in the publishes the entire site list. Optionally, you can publish specific sites and/or shared cookies by specifying the collection of IDs.
+
+In the request body, omit both sites and share cookies to publish the entire site list. Optionally, you can publish specific sites and/or shared cookies by specifying a collection of IDs.
 
 
 |Property|Type|Description|

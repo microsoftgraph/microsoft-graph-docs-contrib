@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If the site was not previously published, then this method returns a `204 No Content` response code on a successful delete. If the site was previously published, then this method returns a `200 OK` response code and a [browserSiteList](../resources/browsersitelist.md) object in the response body with the status as `pendingDelete`. You must then publish the site to fully remove it from the site list.
+If the site was not previously published, then this method returns a `204 No Content` response code on a successful delete. If the site was previously published, then this method returns a `200 OK` response code and a [browserSiteList](../resources/browsersitelist.md) object in the response body with the status as `pendingDelete`. You must publish (for example, via the [browserSiteList: publish](../api/browsersitelist-publish.md) API) the site to fully remove it from the site list.
 
 ## Examples
 

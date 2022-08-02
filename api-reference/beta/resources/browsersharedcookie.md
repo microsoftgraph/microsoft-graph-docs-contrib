@@ -1,6 +1,6 @@
 ---
 title: "browserSharedCookie resource type"
-description: "Represents a IE mode cookie that resides on a site list."
+description: "Represents a session cookie for Internet Explorer mode that resides on a site list."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A `browserSharedCookie` represents a IE mode cookie that resides on a site list.
+Represents a session cookie for [Internet Explorer mode](/deployedge/edge-ie-mode) that resides on a [site list](../resources/browsersitelist.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -55,24 +55,24 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.browserSharedCookie",
-  "id": "String (identifier)",
-  "hostOrDomain": "String",
-  "sourceEnvironment": "String",
-  "displayName": "String",
-  "path": "String",
-  "hostOnly": "Boolean",
   "comment": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "status": "String",
   "createdDateTime": "String (timestamp)",
+  "displayName": "String",
   "history": [
     {
       "@odata.type": "microsoft.graph.browserSharedCookieHistory"
     }
-  ]
+  ],
+  "hostOnly": "Boolean",
+  "hostOrDomain": "String",
+  "id": "String (identifier)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "path": "String",
+  "sourceEnvironment": "String",
+  "status": "String"
 }
 ```
 
