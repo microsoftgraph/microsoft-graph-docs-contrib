@@ -6,7 +6,7 @@
           "Id": "204490dc-7a25-41fe-93d5-db292c8951e9",
           "ApiChange": "Property",
           "ChangedApiName": "topic",
-          "ChangeType": "Addition",
+          "ChangeType": "Change",
           "Description": "Added character limits and invalid character for chat topic.",
           "Target": "chat"
         }
@@ -24,7 +24,7 @@
           "Id": "a59546a1-c9a6-46f6-82dd-1a87b0e8813d",
           "ApiChange": "Property",
           "ChangedApiName": "topic",
-          "ChangeType": "Addition",
+          "ChangeType": "Change",
           "Description": "Added character limits and invalid character for chat topic.",
           "Target": "chat"
         }
