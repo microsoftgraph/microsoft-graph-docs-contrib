@@ -1,6 +1,6 @@
 ---
 title: "Get callTranscript"
-description: "Retrieve single callTranscript associated with a Microsoft Teams Online Meeting."
+description: "Retrieve a single callTranscript associated with a Microsoft Teams online meeting."
 author: "mankadnandan"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).
 
-Retrieving the transcript would return the metadata of the single transcript associated with the online meeting, where as retrieving the content of the transcript would return the stream of text associated with the transcript.
+Retrieving the transcript returns the metadata of the single transcript associated with the online meeting. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
 > **Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
