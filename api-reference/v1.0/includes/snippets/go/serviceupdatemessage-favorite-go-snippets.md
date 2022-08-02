@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewFavoritePostRequestBody()
-messageIds := []String {
+messageIds := []string {
 	"MC172851",
 	"MC167983",
 

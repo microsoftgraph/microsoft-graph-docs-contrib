@@ -3,18 +3,60 @@
     {
       "ChangeList": [
         {
+          "ChangeList": [
+            {
+              "Id": "bb775eb6-032d-4958-946f-a5b608a5be43",
+              "ApiChange": "Method",
+              "ChangedApiName": "assignSensitivityLabel",
+              "ChangeType": "Addition",
+              "Description": "Added the [assignSensitivityLabel](https://docs.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-beta) method to the [driveItem](https://docs.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-beta) resource.",
+              "Target": "driveItem"
+            }
+          ],
           "Id": "bb775eb6-032d-4958-946f-a5b608a5be43",
-          "ApiChange": "Method",
-          "ChangedApiName": "assignSensitivityLabel",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2022-07-28T16:49:52.2813343Z",
+          "WorkloadArea": "Files",
+          "SubArea": ""
+        },
+        {
+          "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+          "ApiChange": "Resource",
+          "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Addition",
-          "Description": "Added the [assignSensitivityLabel](https://docs.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-beta) method to the [driveItem](https://docs.microsoft.com/en-us/graph/api/driveItem?view=graph-rest-beta) resource.",
-          "Target": "driveItem"
+          "Description": "Added the [idleSessionSignOut](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-idlesessionsignout?view=graph-rest-beta) resource type.",
+          "Target": "idleSessionSignOut"
+        },
+        {
+          "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+          "ApiChange": "Property",
+          "ChangedApiName": "idleSessionSignOut",
+          "ChangeType": "Addition",
+          "Description": "Added the **idleSessionSignOut** property to the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
+        },
+        {
+          "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+          "ApiChange": "Property",
+          "ChangedApiName": "isLegacyAuthProtocolsEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isLegacyAuthProtocolsEnabled** property to the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
+        },
+        {
+          "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRequireAcceptingUserToMatchInvitedUserEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRequireAcceptingUserToMatchInvitedUserEnabled** property to the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
         }
       ],
-      "Id": "bb775eb6-032d-4958-946f-a5b608a5be43",
+      "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-07-28T16:49:52.2813343Z",
+      "CreatedDateTime": "2022-08-01T21:52:28.1485706Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     },

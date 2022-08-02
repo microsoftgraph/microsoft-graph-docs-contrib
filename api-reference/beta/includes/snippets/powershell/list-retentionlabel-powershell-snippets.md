@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityLabelRetentionLabel
+Get-MgSecurityLabelRetentionLabel -OutFile $outFileId
 
 ```

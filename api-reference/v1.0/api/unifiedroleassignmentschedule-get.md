@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleA
   "name": "get_unifiedroleassignmentschedule"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentSchedules/95c690fb-3eb3-4942-a03f-4524aed6f31e
 ```
 

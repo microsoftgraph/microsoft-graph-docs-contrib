@@ -88,7 +88,7 @@ of incremental changes since the last delta query. For an example that shows a r
   "name": "message_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OAAuAAAAAAAiQ8W967B7TKBjgx9rVEURAQAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=/messages/delta
 Prefer: odata.maxpagesize=2
 ```
 

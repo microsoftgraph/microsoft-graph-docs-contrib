@@ -14,10 +14,10 @@ $participantsInvitationParticipantInfo1 = new InvitationParticipantInfo();
 $additionalData = [
 '@odata.type' => '#microsoft.graph.invitationParticipantInfo', 
 'replacesCallId' => 'a7ebfb2d-871e-419c-87af-27290b22e8db', 
-'identity' => $participantsInvitationParticipantInfo1 = new ();
+'identity' => $participantsInvitationParticipantInfo1 = new Identity();
 $		participantsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.identitySet');
 
-$user = new ();
+$user = new User();
 $		user->set@odatatype('#microsoft.graph.identity');
 
 $		user->setId('7e1b4346-85a6-4bdd-abe3-d11c5d420efe');
@@ -39,10 +39,10 @@ $participantsInvitationParticipantInfo2 = new InvitationParticipantInfo();
 $additionalData = [
 '@odata.type' => '#microsoft.graph.invitationParticipantInfo', 
 'replacesCallId' => 'a7ebfb2d-871e-419c-87af-27290b22e8db', 
-'identity' => $participantsInvitationParticipantInfo2 = new ();
+'identity' => $participantsInvitationParticipantInfo2 = new Identity();
 $		participantsInvitationParticipantInfo2->set@odatatype('#microsoft.graph.identitySet');
 
-$user = new ();
+$user = new User();
 $		user->set@odatatype('#microsoft.graph.identity');
 
 $		user->setId('1e126418-44a0-4a94-a6f8-0efe1ad71acb');

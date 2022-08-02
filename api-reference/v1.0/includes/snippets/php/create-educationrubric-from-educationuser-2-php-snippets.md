@@ -99,7 +99,7 @@ $criteriaArray []= $criteriaRubricCriterion2;
 $qualitiesRubricQuality1->setCriteria($criteriaArray);
 
 
-$qualitiesRubricQuality1->setWeight(weight);
+$qualitiesRubricQuality1->setWeight(50.0);
 
 
 $qualitiesArray []= $qualitiesRubricQuality1;
@@ -134,7 +134,7 @@ $criteriaArray []= $criteriaRubricCriterion2;
 $qualitiesRubricQuality2->setCriteria($criteriaArray);
 
 
-$qualitiesRubricQuality2->setWeight(weight);
+$qualitiesRubricQuality2->setWeight(50.0);
 
 
 $qualitiesArray []= $qualitiesRubricQuality2;

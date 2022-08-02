@@ -114,7 +114,7 @@ schedulingPolicy.SetSendConfirmationsToOwner(&sendConfirmationsToOwner)
 timeSlotInterval := "PT1H"
 schedulingPolicy.SetTimeSlotInterval(&timeSlotInterval) 
 requestBody.SetSchedulingPolicy(schedulingPolicy)
-staffMemberIds := []String {
+staffMemberIds := []string {
 	"d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
 	"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880",
 

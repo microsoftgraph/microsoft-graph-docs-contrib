@@ -58,6 +58,7 @@ The following table shows the properties that are required when you create the m
 |upgradeAutomatically|Boolean|The site's automatic upgrade setting. True for automatic upgrades, false for manual control|
 |upgradeAvailable|Boolean|True if an upgrade is available|
 |internalNetworkProbeUrl|String|The MicrosoftTunnelSite's Internal Network Access Probe URL|
+|enableCertificatePinning|Boolean|When set to true, certificate pinning will be enforced on connections between the Microsoft Tunnel server and Microsoft Tunnel clients. When set to false, certificate pinning will be disabled.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 
@@ -72,7 +73,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites
 Content-type: application/json
-Content-length: 524
+Content-length: 561
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelSite",
@@ -85,6 +86,7 @@ Content-length: 524
   "upgradeAutomatically": true,
   "upgradeAvailable": true,
   "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
+  "enableCertificatePinning": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
@@ -96,7 +98,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 573
+Content-Length: 610
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelSite",
@@ -110,6 +112,7 @@ Content-Length: 573
   "upgradeAutomatically": true,
   "upgradeAvailable": true,
   "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
+  "enableCertificatePinning": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]

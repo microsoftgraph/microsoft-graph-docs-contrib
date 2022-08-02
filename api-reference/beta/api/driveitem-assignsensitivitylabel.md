@@ -109,6 +109,6 @@ The value of the `Location` header provides a URL for a service that will return
 You can use this information to [determine when the assign sensitivity label operation has finished](/graph/long-running-actions-overview).
 
 ### Remarks
-The response from the API will only indicate that the assign sensitivity label operation was accepted or rejected; for example, due to the destination filename already being in use.
+The response from the API will only indicate that the assign sensitivity label operation was accepted or rejected; for example, due to file type not being supported or file is double encrypted.
 
 [item-resource]: ../resources/driveitem.md

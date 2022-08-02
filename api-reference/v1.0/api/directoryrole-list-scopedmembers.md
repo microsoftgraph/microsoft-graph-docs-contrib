@@ -1,7 +1,7 @@
 ---
 title: "List scopedMembers for a directory role"
 description: "Retrieve a list of scopedRoleMembership objects for a directory role."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -47,7 +47,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Get the members of a directory role using role id
 
 #### Request
-The following is an example of a request for a directory role **id** `41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
+The following is an example of a request for a directory role **id** `43a63cc2-582b-4d81-a79d-1591f91d5558`.
 
 
 # [HTTP](#tab/http)
@@ -56,7 +56,7 @@ The following is an example of a request for a directory role **id** `41d12a2f-c
   "name": "get_scopedmembers_directoryrole"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoles/41d12a2f-caa8-4e3e-ba14-05e5102ce085/scopedMembers
+GET https://graph.microsoft.com/v1.0/directoryRoles/43a63cc2-582b-4d81-a79d-1591f91d5558/scopedMembers
 ```
 
 # [C#](#tab/csharp)
@@ -105,7 +105,7 @@ Content-type: application/json
     "value": [
         {
             "id": "LyrRQajKPk66FAXlECzghXFuYtw3SOtAvkq8KdiKEXiTwZeOU-r8RIHrq2vQ4F1wU",
-            "roleId": "41d12a2f-caa8-4e3e-ba14-05e5102ce085",
+            "roleId": "43a63cc2-582b-4d81-a79d-1591f91d5558",
             "administrativeUnitId": "dc626e71-4837-40eb-be4a-bc29d88a1178",
             "roleMemberInfo": {
                 "id": "8e97c193-ea53-44fc-81eb-ab6bd0e05d70",
@@ -128,7 +128,7 @@ The following is an example of a request for a directory role with **roleTemplat
   "blockType": "ignored",
   "name": "get_scopedmembers_directoryrole_templateId"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=fdd7a751-b60b-444a-984c-02652fe8fa1c/scopedMembers
 ```
 
