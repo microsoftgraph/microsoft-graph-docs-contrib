@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A complex type that defines, for a given authentication method, features that are allowed for the authentication method. This type also defines which single entities are included and excluded from the feature.
+Defines the features that are allowed for different authentication methods. For each authentication method, defines the users who are enabled or excluded from using the feature.
 
 ## Properties
 |Property|Type|Description|
