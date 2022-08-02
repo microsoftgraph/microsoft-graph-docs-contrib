@@ -156,7 +156,7 @@ The following is an example of the request with the `$expand` query parameter.
   "name": "get_unifiedroleassignment"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition
 ```
 

@@ -66,7 +66,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles
 ```
 
@@ -139,7 +139,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "list-album-bundles", "tags": "service.onedrive" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drive/bundles?filter=bundle/album%20ne%20null
 ```
 

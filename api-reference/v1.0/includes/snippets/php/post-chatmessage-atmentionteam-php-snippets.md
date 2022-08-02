@@ -18,7 +18,7 @@ $body->setContent('<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div
 
 $requestBody->setBody($body);
 $mentionsChatMessageMention1 = new ChatMessageMention();
-$mentionsChatMessageMention1->setId(id);
+$mentionsChatMessageMention1->setId(0);
 
 $mentionsChatMessageMention1->setMentionText('GraphTesting');
 
@@ -39,7 +39,7 @@ $mentionsArray []= $mentionsChatMessageMention1;
 $requestBody->setMentions($mentionsArray);
 
 
-$requestBody->setReactions(]);
+$requestBody->setReactions([]);
 
 
 

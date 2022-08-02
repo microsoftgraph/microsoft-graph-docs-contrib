@@ -25,7 +25,7 @@ emailAddresses := []graphmodels.EmailAddressable {
 
 }
 requestBody.SetEmailAddresses(emailAddresses)
-businessPhones := []String {
+businessPhones := []string {
 	"+1 732 555 0102",
 
 }

@@ -14,9 +14,9 @@ $requestBody->setUse('sig');
 
 $requestBody->setKty('RSA');
 
-$requestBody->setNbf(nbf);
+$requestBody->setNbf(1508969811);
 
-$requestBody->setExp(exp);
+$requestBody->setExp(1508969811);
 
 
 

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Files
 
-Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children" 
+Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"  -OutFile $outFileId
 
 ```

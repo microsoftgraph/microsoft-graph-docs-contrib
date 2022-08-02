@@ -20,13 +20,13 @@ $additionalData = [
 'offerShiftRequestsEnabled' => true,
 'timeOffRequestsEnabled' => true,
 'timeClockEnabled' => true,
-'timeClockSettings' => $requestBody = new ();
-$approvedLocation = new ();
-		$approvedLocation->setAltitude(altitude);
+'timeClockSettings' => $requestBody = new TimeClockSettings();
+$approvedLocation = new ApprovedLocation();
+		$approvedLocation->setAltitude(1024.13);
 
-		$approvedLocation->setLatitude(latitude);
+		$approvedLocation->setLatitude(26.13246);
 
-		$approvedLocation->setLongitude(longitude);
+		$approvedLocation->setLongitude(24.34616);
 
 
 $requestBody->setApprovedLocation($approvedLocation);

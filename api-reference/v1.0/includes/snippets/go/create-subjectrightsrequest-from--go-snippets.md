@@ -12,7 +12,7 @@ type := graphmodels.SUBJECTRIGHTSREQUESTTYPE_GRAPH_MICROSOFT_SUBJECTRIGHTSREQUES
 requestBody.SetType(&type) 
 dataSubjectType := graphmodels.DATASUBJECTTYPE_GRAPH_MICROSOFT_DATASUBJECTTYPE 
 requestBody.SetDataSubjectType(&dataSubjectType) 
-regulations := []String {
+regulations := []string {
 	"String",
 
 }
