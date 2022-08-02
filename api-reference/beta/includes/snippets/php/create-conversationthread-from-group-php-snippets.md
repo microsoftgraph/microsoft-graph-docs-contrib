@@ -22,7 +22,7 @@ $postsPost1Body->setContent('this is body content');
 $postsPost1->setBody($postsPost1Body);
 $newParticipantsRecipient1 = new Recipient();
 $additionalData = [
-'emailAddress' => $newParticipantsRecipient1 = new ();
+'emailAddress' => $newParticipantsRecipient1 = new EmailAddress();
 $		newParticipantsRecipient1->setName('Alex Darrow');
 
 $		newParticipantsRecipient1->setAddress('alexd@contoso.com');

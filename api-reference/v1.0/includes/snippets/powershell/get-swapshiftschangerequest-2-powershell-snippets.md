@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamScheduleSwapShiftChangeRequest -TeamId $teamId
+Get-MgTeamScheduleSwapShiftChangeRequest -TeamId $teamId -OutFile $outFileId
 
 ```

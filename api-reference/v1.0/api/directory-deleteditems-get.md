@@ -56,7 +56,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt; *Required*|
+| Authorization  | Bearer {token}. Required.|
 | Accept  | application/json |
 
 ## Request body
@@ -64,17 +64,20 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
-## Example
-##### Request
+If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
 
+## Example
+
+### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directory"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
 
@@ -104,8 +107,9 @@ GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 
 ---
 
-##### Response
-Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

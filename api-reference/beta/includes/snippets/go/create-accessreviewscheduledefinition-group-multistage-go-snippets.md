@@ -32,7 +32,7 @@ durationInDays := int32(2)
 accessReviewStageSettings.SetDurationInDays(&durationInDays) 
 recommendationsEnabled := false
 accessReviewStageSettings.SetRecommendationsEnabled(&recommendationsEnabled) 
-decisionsThatWillMoveToNextStage := []String {
+decisionsThatWillMoveToNextStage := []string {
 	"NotReviewed",
 	"Approve",
 
@@ -40,22 +40,21 @@ decisionsThatWillMoveToNextStage := []String {
 accessReviewStageSettings.SetDecisionsThatWillMoveToNextStage(decisionsThatWillMoveToNextStage)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"query" : "/users/398164b1-5196-49dd-ada2-364b49f99b27", 
-	"queryType" : "MicrosoftGraph", 
-}
-.SetAdditionalData(additionalData)
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
 
 reviewers := []graphmodels.Objectable {
-	,
+	accessReviewReviewerScope,
 
 }
 accessReviewStageSettings.SetReviewers(reviewers)
 accessReviewStageSettings1 := graphmodels.NewAccessReviewStageSettings()
 stageId := "2"
 accessReviewStageSettings1.SetStageId(&stageId) 
-dependsOn := []String {
+dependsOn := []string {
 	"1",
 
 }
@@ -66,30 +65,29 @@ recommendationsEnabled := true
 accessReviewStageSettings1.SetRecommendationsEnabled(&recommendationsEnabled) 
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"query" : "./manager", 
-	"queryType" : "MicrosoftGraph", 
-	"queryRoot" : "decisions", 
-}
-.SetAdditionalData(additionalData)
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "./manager"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
+queryRoot := "decisions"
+accessReviewReviewerScope.SetQueryRoot(&queryRoot) 
 
 reviewers := []graphmodels.Objectable {
-	,
+	accessReviewReviewerScope,
 
 }
 accessReviewStageSettings1.SetReviewers(reviewers)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"query" : "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers", 
-	"queryType" : "MicrosoftGraph", 
-}
-.SetAdditionalData(additionalData)
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
 
 fallbackReviewers := []graphmodels.Objectable {
-	,
+	accessReviewReviewerScope,
 
 }
 accessReviewStageSettings1.SetFallbackReviewers(fallbackReviewers)

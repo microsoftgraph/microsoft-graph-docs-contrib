@@ -34,7 +34,7 @@ credentials := []graphmodels.Credentialable {
 }
 requestBody.SetCredentials(credentials)
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").CreatePasswordSingleSignOnCredentials(servicePrincipal-id).Post(requestBody)
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").CreatePasswordSingleSignOnCredentials().Post(requestBody)
 
 
 ```

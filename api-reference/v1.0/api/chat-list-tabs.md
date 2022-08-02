@@ -47,7 +47,7 @@ This method supports the `$filter`, `$select`, and `$expand` [OData query parame
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [tabs](../resources/teamstab.md) objects in the response body.
 
 ## Examples
 
@@ -63,7 +63,7 @@ The following is an example of the request.
 }
 -->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs?$expand=teamsApp
 ```
 
@@ -102,7 +102,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.teamsTab)"
+  "@odata.type": "microsoft.graph.teamsTab",
+  "isCollection": true
 }
 -->
 
@@ -186,7 +187,7 @@ The following is an example of the request.
 }
 -->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs?$expand=teamsApp&$filter=teamsApp/id eq 'com.microsoft.teamspace.tab.web'
 ```
 
@@ -225,7 +226,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.teamsTab)"
+  "@odata.type": "microsoft.graph.teamsTab",
+  "isCollection": true
 }
 -->
 
@@ -265,7 +267,7 @@ Content-type: application/json
 ## See also
 
 - [List tabs in channel](channel-list-tabs.md)
-- 
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

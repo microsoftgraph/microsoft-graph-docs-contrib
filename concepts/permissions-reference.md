@@ -54,6 +54,9 @@ Microsoft Graph permissions in the [Azure portal](https://portal.azure.com/) are
 
 User and group search capabilities allow the app to search for any user or group in an organization's directory by performing queries against the `/users` or `/groups` resource set (for example, `https://graph.microsoft.com/v1.0/users`). Both administrators and users have this capability; however, guest users do not.
 
+> [!NOTE]
+> Guest users have the same access that members enabled under **External Identities** > **External Collaboration Settings** > **Guest user access** have. The users API works with guest tokens as well.
+
 If the signed-in user is a guest user, depending on the permissions an app has been granted, it can read the profile of a specific user or group (for example, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`); however, it cannot perform queries against the `/users` or `/groups` resource set that potentially return more than a single resource.
 
 With the appropriate permissions, the app can read the profiles of users or groups that it obtains by following links in navigation properties; for example, `/users/{id}/directReports` or `/groups/{id}/members`.
@@ -2330,6 +2333,21 @@ _TeamsTab.ReadWriteSelfForUser.All_ | Allow the Teams app to manage only its own
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamworkTag.ReadWrite.All_| Read and write tags in Microsoft Teams. | Allows the app to read and write tags in Teams without a signed-in user.	| Yes | No |
 | _TeamworkTag.Read.All_ | Read tags in Microsoft Teams. | Allows the app to read tags in Teams without a signed-in user | Yes | No |
+
+
+## Tenant information permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _CrossTenantInformation.ReadBasic.All_ | Read basic information about an external tenant. | Allows the app to read limited information about an external tenant, on behalf of the signed-in user.	| Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _CrossTenantInformation.ReadBasic.All_ | Read basic information about an external tenant. | Allows the app to read limited information about an external tenant, without a signed-in user.	| Yes |
 
 
 ## Terms of use permissions

@@ -436,6 +436,8 @@ items:
         items:
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: List member of
           href: api/user-list-memberof.md
         - name: List transitive member of
@@ -629,6 +631,10 @@ items:
           href: api/group-delta.md
         - name: Assign license
           href: api/group-assignlicense.md
+        - name: List joined teams
+          href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: Group setting
           href: resources/groupsetting.md
           items:
@@ -4474,27 +4480,27 @@ items:
         href: resources/opentypeextension.md
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: Create open extension
+        - name: Create
           href: api/opentypeextension-post-opentypeextension.md
-        - name: Get open extension
+        - name: Get
           href: api/opentypeextension-get.md
-        - name: Update open extension
+        - name: Update
           href: api/opentypeextension-update.md
-        - name: Delete open extension
+        - name: Delete
           href: api/opentypeextension-delete.md
       - name: Schema extensions
         href: resources/schemaextension.md
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: List schema extensions
+        - name: List
           href: api/schemaextension-list.md
-        - name: Create schema extension
+        - name: Create
           href: api/schemaextension-post-schemaextensions.md
-        - name: Get schema extension
+        - name: Get
           href: api/schemaextension-get.md
-        - name: Update schema extension
+        - name: Update
           href: api/schemaextension-update.md
-        - name: Delete schema extension
+        - name: Delete
           href: api/schemaextension-delete.md
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
@@ -5518,18 +5524,33 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List contacted reviewers
               href: api/accessreviewinstance-list-contactedreviewers.md
+          - name: Access review stage
+            href: resources/accessreviewstage.md
+            items:
+              - name: List
+                href: api/accessreviewinstance-list-stages.md
+              - name: Get
+                href: api/accessreviewstage-get.md
+              - name: Update
+                href: api/accessreviewstage-update.md
+              - name: Filter by current user
+                href: api/accessreviewstage-filterbycurrentuser.md
+              - name: Stop
+                href: api/accessreviewstage-stop.md
           - name: Access review instance decision item
-            displayName: access review decisions
+            displayName: access review decisions 
             href: resources/accessreviewinstancedecisionitem.md
             items:
-            - name: Get
-              href: api/accessreviewinstancedecisionitem-get.md
-            - name: List
+            - name: List decisions from an instance
               href: api/accessreviewinstance-list-decisions.md
-            - name: Update
-              href: api/accessreviewinstancedecisionitem-update.md
+            - name: List decisions from a stage of an instance
+              href: api/accessreviewstage-list-decisions.md
             - name: Filter by current user
               href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+            - name: Get
+              href: api/accessreviewinstancedecisionitem-get.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
           - name: Access review history definition
             href: resources/accessreviewhistorydefinition.md
             items:
@@ -5600,6 +5621,8 @@ items:
             items:
             - name: List
               href: api/entitlementmanagement-list-assignments.md
+            - name: Get
+              href: api/accesspackageassignment-get.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
             - name: Reprocess
@@ -6951,6 +6974,8 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
+        - name: List your associated teams
+          href: api/associatedteaminfo-list.md
         - name: Get primary channel
           href: api/team-get-primarychannel.md
         - name: Get team photo
@@ -6976,6 +7001,8 @@ items:
           href: api/group-delete.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: List members
           href: api/group-list-members.md
         - name: Add member
@@ -7009,8 +7036,12 @@ items:
       - name: Channel
         href: resources/channel.md
         items:
+        - name: List all channels
+          href: api/team-list-allchannels.md
         - name: List channels
           href: api/channel-list.md
+        - name: List incoming channels
+          href: api/team-list-incomingchannels.md
         - name: Create channel
           href: api/channel-post.md
         - name: Get channel
@@ -7019,6 +7050,8 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Remove incoming channel
+          href: api/team-delete-incomingchannels.md
         - name: Add member
           href: api/channel-post-members.md
         - name: Complete migration for channel
@@ -7055,6 +7088,16 @@ items:
           href: api/channel-update-members.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Check user access
+          href: api/channel-doesuserhaveaccess.md
+        - name: List teams sharing a channel
+          href: api/sharedwithchannelteaminfo-list.md
+        - name: Get team sharing a channel
+          href: api/sharedwithchannelteaminfo-get.md
+        - name: Unshare channel with team
+          href: api/sharedwithchannelteaminfo-delete.md
+        - name: List allowed members
+          href: api/sharedwithchannelteaminfo-list-allowedmembers.md
       - name: Chat
         href: resources/chat.md
         items:

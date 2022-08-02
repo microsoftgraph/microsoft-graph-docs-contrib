@@ -2,7 +2,7 @@
 title: "unifiedRoleDefinition resource type"
 description: "A unified role definition is a collection of permissions"
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---

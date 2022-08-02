@@ -69,7 +69,7 @@ The following is an example of the request.
   "name": "schedule-get"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule
+GET https://graph.microsoft.com/v1.0/teams/02bd9fd6-8f93-4758-87c3-1fb73740a315/schedule
 ```
 
 # [C#](#tab/csharp)
