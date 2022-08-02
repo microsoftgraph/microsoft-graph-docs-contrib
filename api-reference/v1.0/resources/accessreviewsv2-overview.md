@@ -2,7 +2,7 @@
 title: "Azure AD access reviews"
 description: "Use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights to Azure AD resources."
 ms.localizationpriority: medium
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: conceptualPageType
 ---
@@ -21,7 +21,7 @@ Typical customer scenarios for access reviews include:
 
 The access reviews feature, including the API, is available only with a valid purchase or trial license of Azure AD Premium P2 or EMS E5 subscription. For more information about the license requirements, see [Access reviews license requirements](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-overview-note.md)]
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
 ## Methods
 

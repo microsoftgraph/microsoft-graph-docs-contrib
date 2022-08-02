@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-skillProficiencyId := "skillProficiency-id"
-graphClient.Me().Profile().SkillsById(&skillProficiencyId).Delete()
+
+graphClient.Me().Profile().SkillsById("skillProficiency-id").Delete()
 
 
 ```

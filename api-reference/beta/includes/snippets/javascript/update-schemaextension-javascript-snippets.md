@@ -10,14 +10,30 @@ const options = {
 
 const client = Client.init(options);
 
-const user = {
-    ext55gb1l09_msLearnCourses: {
-        courseType: 'Admin'
-    }
+const schemaExtension = {
+    owner: 'ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa',
+    properties: [
+        {
+            name: 'courseId',
+            type: 'Integer'
+        },
+        {
+            name: 'courseName',
+            type: 'String'
+        },
+        {
+            name: 'courseType',
+            type: 'String'
+        },
+        {
+            name: 'courseSupervisors',
+            type: 'String'
+        }
+    ]
 };
 
-await client.api('/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e')
+await client.api('/schemaExtensions/exto6x7sfft_courses')
 	.version('beta')
-	.update(user);
+	.update(schemaExtension);
 
 ```

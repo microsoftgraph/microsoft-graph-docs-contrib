@@ -70,6 +70,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |dataRoamingBlocked|Boolean|Indicates whether or not to block a user from data roaming.|
 |dateTimeConfigurationBlocked|Boolean|Indicates whether or not to block the user from manually changing the date or time on the device|
 |detailedHelpText|[androidDeviceOwnerUserFacingMessage](../resources/intune-deviceconfig-androiddeviceowneruserfacingmessage.md)|Represents the customized detailed help text provided to users when they attempt to modify managed settings on their device.|
+|deviceOwnerLockScreenMessage|[androidDeviceOwnerUserFacingMessage](../resources/intune-deviceconfig-androiddeviceowneruserfacingmessage.md)|Represents the customized lock screen message provided to users when they attempt to modify managed settings on their device.|
+|securityCommonCriteriaModeEnabled|Boolean|Represents the security common criteria mode enabled provided to users when they attempt to modify managed settings on their device.|
 |factoryResetDeviceAdministratorEmails|String collection|List of Google account emails that will be required to authenticate after a device is factory reset before it can be set up.|
 |factoryResetBlocked|Boolean|Indicates whether or not the factory reset option in settings is disabled.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Proxy is set up directly with host, port and excluded hosts.|
@@ -274,6 +276,18 @@ Here is a JSON representation of the resource.
     ],
     "defaultMessage": "String"
   },
+  "deviceOwnerLockScreenMessage": {
+    "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+    "localizedMessages": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "String",
+        "value": "String"
+      }
+    ],
+    "defaultMessage": "String"
+  },
+  "securityCommonCriteriaModeEnabled": true,
   "factoryResetDeviceAdministratorEmails": [
     "String"
   ],

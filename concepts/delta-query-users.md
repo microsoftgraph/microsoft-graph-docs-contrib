@@ -1,7 +1,7 @@
 ---
 title: "Get incremental changes for users"
-description: "The delta query in Microsoft Graph lets you query for additions, deletions, or updates to supported resources. It is enabled through a series of delta requests. For users, the delta query enables you to discover changes without fetching the entire set of users to compare changes."
-author: "FaithOmbongi"
+description: "Use delta query to discover changes without fetching the entire set of users to compare changes. Example shows a series of requests to track changes to users."
+author: "jumasure"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -19,7 +19,7 @@ Track user changes through one or more GET requests with the **delta** function.
 - The **delta** function.
 - A [state token](./delta-query-overview.md) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
 
-## Example to track changes to users
+## Example: track changes to users
 
 The following example shows a series of requests to track changes to users:
 
@@ -38,7 +38,7 @@ Take note of the following in the responses:
 
 To track changes in the user resource, make a request and include the **delta** function as a URL segment.
 
-Take note the following items:
+Take note of the following items:
 
 - The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.
 - The initial request doesn't include a state token. State tokens will be used in subsequent requests.
@@ -184,7 +184,8 @@ Content-type: application/json
 
 If changes have occurred, a collection of changed user objects is included. The response also contains either a `@odata.nextLink` - in case there are multiple pages of changes to retrieve - or a `@odata.deltaLink`. Implement the same pattern of following the `@odata.nextLink` and persist the final `@odata.deltaLink` for future calls.
 
->**Note:** This request might have replication delays for users that were recently created, updated, or deleted. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
+> [!NOTE]
+> This request might have replication delays for users that were recently created, updated, or deleted. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
 
 ```http
 HTTP/1.1 200 OK
@@ -211,4 +212,5 @@ Content-type: application/json
 ```
 
 ## See also
-+ [Microsoft Graph delta query](delta-query-overview.md) overview.
+
+- [Microsoft Graph delta query](delta-query-overview.md) overview.
