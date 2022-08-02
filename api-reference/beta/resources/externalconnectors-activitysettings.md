@@ -1,6 +1,6 @@
 ---
 title: "activitySettings resource type"
-description: "**Collects configurable settings related to activities involving connector content."
+description: "Collects configurable settings related to activities involving connector content."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -18,7 +18,7 @@ Collects configurable settings related to activities involving connector content
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|urlToItemResolvers|[microsoft.graph.externalConnectors.urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md) collection|Specifies configurations to identify an externalItem based on a shared URL|
+|urlToItemResolvers|[microsoft.graph.externalConnectors.urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md) collection|Specifies configurations to identify an **externalItem** based on a shared URL.|
 
 ## Relationships
 None.
