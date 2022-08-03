@@ -38,7 +38,16 @@ GET /chats
 
 ## Optional query parameters
 
-This method supports the `$expand` (**members** and **lastMessagePreview** properties) and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the following [OData query parameters](/graph/query-parameters).
+
+| Name      | Description          |
+|:----------|:---------------------|
+| [$expand](/graph/query-parameters#expand-parameter)| Currently supports **members** and **lastMessagePreview** properties. |
+| [$top](/graph/query-parameters#top-parameter)| Controls the number of items per response. Maximum allowed `$top` value is 50. |
+| [$filter](/graph/query-parameters#filter-parameter)| Filters results. |
+| [$orderBy](/graph/query-parameters#orderby-parameter)  | Currently supports **lastMessagePreview/createdDateTime** in descending order. Ascending order is currently not supported.|
+
+The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
 ## Request headers
 
@@ -60,7 +69,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here is an example of the request.
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +111,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -162,7 +171,7 @@ Content-type: application/json
 ### Example 2: List all chats along with the members of each chat
 #### Request
 
-Here is an example of the request.
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -204,7 +213,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. The client shouldn't try to parse or make any assumptions about these resource IDs.
@@ -396,7 +405,7 @@ GET https://graph.microsoft.com/beta/chats?$expand=lastMessagePreview
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -557,7 +566,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of a request that will filter all the chats based on a specific member's display name.
+The following is an example of a request that will filter all the chats based on a specific member's display name.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -599,7 +608,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 
 > [!NOTE]
 > The membership ID returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
@@ -688,6 +697,74 @@ Content-type: application/json
                     "email": "parkerp@teamsgraph.onmicrosoft.com"
                 }
             ]
+        }
+    ]
+}
+```
+
+### Example 5: List all chats in order of the most to least recent chat messages
+
+#### Request
+
+The following is an example of a request. **lastMessagePreview/createdDateTime** is passed to sort chats by the most to least recent chat messages.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_chats_orderby"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats?$orderBy=lastMessagePreview/createdDateTime desc
+```
+
+---
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats",
+    "@odata.count": 2,
+    "@odata.nextLink": "https://graph.microsoft.com/beta/chats?$orderBy=lastMessagePreview%2fcreatedDateTime+desc&$skiptoken=1.kscDYs0BbsYAAAFa8ZyBqlByb3BlcnRpZXOCqVN5bmNTdGF0ZdoBRGV5SmtaV3hwZG1WeVpXUlRaV2R0Wlc1MGN5STZXM3NpYzNSaGNuUWlPaUl5TURJeExUQTRMVEUzVkRFeE9qVXpPakUxTGprd09Tc3dNRG93TUNJc0ltVnVaQ0k2SWpJd01qSXRNRFV0TUROVU1UZzZNVFU2TkRJdU16QTNLekF3T2pBd0luMHNleUp6ZEdGeWQ4APMDRTVOekF0TURFdE1ERlVNREE2BAATcggAcWlMQ0psYm2YAJB4T1Rjd0xUQXgEACJWRFQAAAQABmAA8F8xZExDSjZaWEp2VEUxVFZFUmxiR2wyWlhKbFpGTmxaMjFsYm5SeklqcGJYU3dpYzI5eWRFOXlaR1Z5SWpveExDSnBibU5zZFdSbFdtVnliMHhOVTFRaU9uUnlkV1Y5rExhc3RQYWdlU2l6ZaIyMA%3d%3d",
+    "value": [
+        {
+            "id": "19:670374fa-3b0e-4a3b-9d33-0e1bc5ff1956_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces",
+            "topic": null,
+            "createdDateTime": "2021-11-17T18:48:57.986Z",
+            "lastUpdatedDateTime": "2021-11-17T18:48:57.986Z",
+            "chatType": "oneOnOne",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A670374fa-3b0e-4a3b-9d33-0e1bc5ff1956_bfb5bb25-3a8d-487d-9828-7875ced51a30%40unq.gbl.spaces/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "2022-05-03T18:15:42.307Z"
+            }
+        },
+        {
+            "id": "19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces",
+            "topic": null,
+            "createdDateTime": "2021-05-26T00:07:00.751Z",
+            "lastUpdatedDateTime": "2021-05-26T00:07:14.894Z",
+            "chatType": "oneOnOne",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30%40unq.gbl.spaces/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": true,
+                "lastMessageReadDateTime": "2022-03-08T19:55:30.491Z"
+            }
         }
     ]
 }
