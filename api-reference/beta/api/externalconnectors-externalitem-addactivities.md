@@ -12,7 +12,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) on an [externalitem](../resources/externalconnectors-externalitem.md).
+Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an [externalitem](../resources/externalconnectors-externalitem.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -45,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|activities|[microsoft.graph.externalConnectors.externalActivity](../resources/externalconnectors-externalactivity.md) collection|Collection of activities involving an **externalItem**|
+|activities|[microsoft.graph.externalConnectors.externalActivity](../resources/externalconnectors-externalactivity.md) collection|Collection of activities involving an **externalItem**.|
 
 
 
@@ -53,11 +53,14 @@ The following table shows the parameters that can be used with this action.
 
 If successful, this action returns a `200 OK` response code and a collection of [externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivityresult.md) objects in the response body.
 
-If a `207` response is returned, it indicates only some of the added **externalActivity** instances were successfully processed. The caller should inspect the response payload looking at each **externalActivityResult**'s error field to determine why the **externalActivity** instances was not processed and what action can be taken. If the error field is null, that indicates a successful **externalActivityResult**.
+If a `207` response is returned, this indicates that only some of the added **externalActivity** instances were successfully processed. The caller should inspect the response payload, looking at the error field for each **externalActivityResult** to determine why the **externalActivity** instance was not processed and what action can be taken. If the error field is null, that indicates a successful **externalActivityResult**.
 
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "externalitemthis.addactivities"
@@ -81,6 +84,9 @@ Content-length: 190
 
 
 ### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
