@@ -129,7 +129,6 @@ These examples show how to use `$filter` to match against supported properties a
 | `ne`                                     | `/users?$filter=companyName ne null`*                                      |
 | `startsWith`                             | `/users?$filter=businessPhones/any(p:startsWith(p, '44 121'))`*            |
 | `endsWith`                               | `/users?$filter=endsWith(mail,'@outlook.com')`*                            |
-| `in`                                     | otherMails - how?                                                          |
 | `le`                                     | `groups?$filter=createdOnBehalfOf/deletedDateTime le 2021-01-02T12:00:00Z` |
 | `ge`                                     | `groups?$filter=createdOnBehalfOf/deletedDateTime ge 2021-01-02T12:00:00Z` |
 | `any` and `eq`                           | `/groups?$filter=groupTypes/any(c:c eq 'Unified')`                         |
@@ -139,7 +138,7 @@ These examples show how to use `$filter` to match against supported properties a
 | `eq` and `$count` for empty collections  | `/users?$filter=assignedLicenses/$count eq 0`*                             |
 | `ne` and `$count` for empty collections  | `/users?$filter=assignedLicenses/$count ne 0`*                             |
 | `not` and `$count` for empty collections | `/users?$filter=NOT(assignedLicenses/$count ne 0)`*                        |
-<!-- contains; `not` and `in`; -->
+<!-- contains; `in` - otherMails example; `not` and `in`; -->
 
 ### For GUID types
 
