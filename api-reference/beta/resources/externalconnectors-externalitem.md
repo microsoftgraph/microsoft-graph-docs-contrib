@@ -19,18 +19,18 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 
 | Method                                                        | Return Type                     | Description |
 |:--------------------------------------------------------------|:--------------------------------|:--|
-| [Create externalItem](../api/externalconnectors-externalconnection-put-items.md) | [externalItem](externalconnectors-externalitem.md) | Create an externalItem. |
-| [Get externalItem](../api/externalconnectors-externalitem-get.md)                | [externalItem](externalconnectors-externalitem.md) | Get an externalItem.    |
-| [Update externalItem](../api/externalconnectors-externalitem-update.md)          | [externalItem](externalconnectors-externalitem.md) | Update an externalItem. |
+| [Create externalItem](../api/externalconnectors-externalconnection-put-items.md) | [externalItem](externalconnectors-externalitem.md) | Create an **externalItem**. |
+| [Get externalItem](../api/externalconnectors-externalitem-get.md)                | [externalItem](externalconnectors-externalitem.md) | Get an **externalItem**.    |
+| [Update externalItem](../api/externalconnectors-externalitem-update.md)          | [externalItem](externalconnectors-externalitem.md) | Update an **externalItem**. |
 | [Delete externalItem](../api/externalconnectors-externalitem-delete.md)          | None                            | Delete an externalItem. |
-|[addActivities](../api/externalconnectors-externalitem-addactivities.md)|[microsoft.graph.externalConnectors.externalActivityBase](../resources/externalconnectors-externalactivityBase.md) collection|**TODO: Add Description**|
+|[addActivities](../api/externalconnectors-externalitem-addactivities.md)|[microsoft.graph.externalConnectors.externalActivityBase](../resources/externalconnectors-externalactivityBase.md) collection|Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an **externalItem**.|
 
 ## Properties
 
 | Property   | Type                     | Description                          |
 |:-----------|:-------------------------|:-------------------------------------|
 | acl        | [microsoft.graph.externalConnectors.acl](externalconnectors-acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. Required. |
-| content    | [microsoft.graph.externalConnectors.externalItemContent](externalconnectors-externalitemcontent.md) | A plain-text  representation of the contents of the item. The text in this property is full-text indexed. Optional. |
+| content    | [microsoft.graph.externalConnectors.externalItemContent](externalconnectors-externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. Optional. |
 | id         | String                   | Developer-provided unique ID of the item within the containing [externalConnection](externalconnectors-externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required. |
 | properties | Object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](externalconnectors-schema.md) defined for the [externalConnection](externalconnectors-externalconnection.md). Required. |
 
