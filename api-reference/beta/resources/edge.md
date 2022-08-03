@@ -23,7 +23,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|internetExplorerMode|[internetExplorerMode](../resources/internetexplorermode.md)|A container for [Internet Explorer mode](/deployedge/edge-ie-mode) resources.|
+|internetExplorerMode|[internetExplorerMode](../resources/internetexplorermode.md)|A container for [Internet Explorer mode](https://docs.microsoft.com/deployedge/edge-ie-mode) resources.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
