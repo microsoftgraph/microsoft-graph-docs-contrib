@@ -139,7 +139,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 ## filter parameter
 
-Use the `$filter` query parameter to retrieve just a subset of a collection. For guidance on using $filter, see [Use the $filter query parameter to filter a collection of objects](/graph/filter-query-parameter).
+Use the `$filter` query parameter to retrieve just a subset of a collection. For guidance on using `$filter`, see [Use the $filter query parameter to filter a collection of objects](/graph/filter-query-parameter).
 
 ## format parameter
 
