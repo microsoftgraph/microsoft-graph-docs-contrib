@@ -112,4 +112,4 @@ HTTP/1.1 204 No Content
 ```
 
 [!NOTE]
->PATCH returns 412 Precondition Failed if the "If-Match" value doesn't match "ETag" in the virtual appointment.
+>PATCH returns a `412 Precondition Failed` if the "If-Match" value doesn't match "ETag" in the virtual appointment.
