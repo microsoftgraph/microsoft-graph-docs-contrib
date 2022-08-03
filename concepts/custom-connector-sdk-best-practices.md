@@ -5,7 +5,7 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Microsoft Graph connectors SDK best practices"
+description: "Apply best practices when you use the Microsoft Graph connectors SDK."
 ---
 
 # Microsoft Graph connectors SDK best practices
