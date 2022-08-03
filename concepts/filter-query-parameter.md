@@ -100,7 +100,9 @@ The following article demonstrates the syntax for using the `$filter` OData quer
 These examples show how to use `$filter` to match against supported properties and relationships that are primitive types, complex types, enumeration types, or a collection of one of these types.
 
 > [!IMPORTANT]
-> Examples marked with `*` are only supported with [advanced query capabilities](/graph/aad-advanced-queries).
+> 1. Examples marked with `*` are only supported with [advanced query capabilities](/graph/aad-advanced-queries).
+>
+> 2. GUID and DateTimeOffset values aren't enclosed in quotes in `$filter` expressions.
 
 ### For single primitive types like String, Int, and dates
 
@@ -122,22 +124,22 @@ These examples show how to use `$filter` to match against supported properties a
 
 ### For a collection of primitive types
 
-| Operator (s)                             | Syntax                                                                     |
-|------------------------------------------|----------------------------------------------------------------------------|
-| `eq`                                     | `/groups?$filter=groupTypes/any(c:c eq 'Unified')`                         |
-| `not`                                    | `/groups?$filter=not groupTypes/any(c:c eq 'Unified')`*                    |
-| `ne`                                     | `/users?$filter=companyName ne null`*                                      |
-| `startsWith`                             | `/users?$filter=businessPhones/any(p:startsWith(p, '44 121'))`*            |
-| `endsWith`                               | `/users?$filter=endsWith(mail,'@outlook.com')`*                            |
-| `le`                                     | `groups?$filter=createdOnBehalfOf/deletedDateTime le 2021-01-02T12:00:00Z` |
-| `ge`                                     | `groups?$filter=createdOnBehalfOf/deletedDateTime ge 2021-01-02T12:00:00Z` |
-| `any` and `eq`                           | `/groups?$filter=groupTypes/any(c:c eq 'Unified')`                         |
-| `not` and `endsWith`                     | `/groups?$filter=NOT(endsWith(mail,'OnMicrosoft.com'))`*                   |
-| `not` and `startsWith`                   | `$filter=NOT(startsWith(mail,'Pineview'))&$count=true`*                    |
-| `not` and `eq`                           | `/groups?$filter=NOT(mail eq 'PineviewSchoolStaff@Contoso.com')`*          |
-| `eq` and `$count` for empty collections  | `/users?$filter=assignedLicenses/$count eq 0`*                             |
-| `ne` and `$count` for empty collections  | `/users?$filter=assignedLicenses/$count ne 0`*                             |
-| `not` and `$count` for empty collections | `/users?$filter=NOT(assignedLicenses/$count ne 0)`*                        |
+| Operator (s)                             | Syntax                                                                      |
+|------------------------------------------|-----------------------------------------------------------------------------|
+| `eq`                                     | `/groups?$filter=groupTypes/any(c:c eq 'Unified')`                          |
+| `not`                                    | `/groups?$filter=not groupTypes/any(c:c eq 'Unified')`*                     |
+| `ne`                                     | `/users?$filter=companyName ne null`*                                       |
+| `startsWith`                             | `/users?$filter=businessPhones/any(p:startsWith(p, '44 121'))`*             |
+| `endsWith`                               | `/users?$filter=endsWith(mail,'@outlook.com')`*                             |
+| `le`                                     | `/groups?$filter=createdOnBehalfOf/deletedDateTime le 2021-01-02T12:00:00Z` |
+| `ge`                                     | `/groups?$filter=createdOnBehalfOf/deletedDateTime ge 2021-01-02T12:00:00Z` |
+| `any` and `eq`                           | `/groups?$filter=groupTypes/any(c:c eq 'Unified')`                          |
+| `not` and `endsWith`                     | `/groups?$filter=NOT(endsWith(mail,'OnMicrosoft.com'))`*                    |
+| `not` and `startsWith`                   | `/groups?$filter=NOT(startsWith(mail,'Pineview'))&$count=true`*             |
+| `not` and `eq`                           | `/groups?$filter=NOT(mail eq 'PineviewSchoolStaff@Contoso.com')`*           |
+| `eq` and `$count` for empty collections  | `/users?$filter=assignedLicenses/$count eq 0`*                              |
+| `ne` and `$count` for empty collections  | `/users?$filter=assignedLicenses/$count ne 0`*                              |
+| `not` and `$count` for empty collections | `/users?$filter=NOT(assignedLicenses/$count ne 0)`*                         |
 <!-- contains; `in` - otherMails example; `not` and `in`; -->
 
 ### For GUID types
@@ -151,29 +153,27 @@ These examples show how to use `$filter` to match against supported properties a
 
 ### For single complex types such as relationships
 
-| Operator (s) | Syntax                                                                           |
-|--------------|----------------------------------------------------------------------------------|
+| Operator (s) | Syntax                                                                            |
+|--------------|-----------------------------------------------------------------------------------|
 | `eq`         | `/applications?$filter=createdOnBehalfOf/deletedDateTime eq 2021-01-02T12:00:00Z` |
 | `le`         | `/applications?$filter=createdOnBehalfOf/deletedDateTime le 2021-01-02T12:00:00Z` |
-| `ge`         | `/users?$filter=manager/deletedDateTime ge 2021-01-02T12:00:00Z`                 |
+| `ge`         | `/users?$filter=manager/deletedDateTime ge 2021-01-02T12:00:00Z`                  |
 
 ### For a collection of GUID types
 
-**RULE:** GUID values aren't enclosed in quotes in `$filter` queries.
-
-| Operator (s) | Syntax                                                                                            |
-|--------------|---------------------------------------------------------------------------------------------------|
-| `eq`         |  `/devices?$filter=alternativeSecurityIds/any(a:a/type ge 12345)`     |
+| Operator (s) | Syntax                                                           |
+|--------------|------------------------------------------------------------------|
+| `eq`         | `/devices?$filter=alternativeSecurityIds/any(a:a/type ge 12345)` |
 
 
 ### For a collection of complex types
 
-| Operator (s) | Syntax                                                                             |
-|--------------|------------------------------------------------------------------------------------|
-| `eq`         | `/users?$filter=authorizationInfo/certificateUserIds/any(x:x eq '9876543210@mil')` |
-| `startsWith` | `/users?$filter=authorizationInfo/certificateUserIds/any(x:startswith(x,'987654321'))` |
-| `endsWith`   | `/users?$filter=proxyAddresses/any(p:endsWith(p,'OnMicrosoft.com'))`* |
-| `le`         | `/servicePrincipals?$filter=keyCredentials/any(k:k/endDateTime le 2021-01-02T12:00:00Z)`*|
+| Operator (s) | Syntax                                                                                    |
+|--------------|-------------------------------------------------------------------------------------------|
+| `eq`         | `/users?$filter=authorizationInfo/certificateUserIds/any(x:x eq '9876543210@mil')`        |
+| `startsWith` | `/users?$filter=authorizationInfo/certificateUserIds/any(x:startswith(x,'987654321'))`    |
+| `endsWith`   | `/users?$filter=proxyAddresses/any(p:endsWith(p,'OnMicrosoft.com'))`*                     |
+| `le`         | `/servicePrincipals?$filter=keyCredentials/any(k:k/endDateTime le 2021-01-02T12:00:00Z)`* |
 | `ge`         | `/servicePrincipals?$filter=keyCredentials/any(k:k/endDateTime ge 2021-01-02T12:00:00Z)`* |
 
 
