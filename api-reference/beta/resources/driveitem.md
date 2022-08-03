@@ -22,7 +22,7 @@ There are two primary ways of addressing a **driveItem** resource:
 * By the **driveItem** unique identifier using `drive/items/{item-id}`
 * By file system path using `/drive/root:/path/to/file`
 
-For more information, see [addressing driveItems](/graph/concepts/onedrive-addressing-driveitems.md).
+For more information, see [addressing driveItems](/graph/onedrive-addressing-driveitems).
 
 **DriveItem** resources have facets modeled as properties that provide data about the driveItem's identities and capabilities.
 For example:

@@ -50,6 +50,8 @@ Inherits from [androidDeviceOwnerCertificateProfileBase](../resources/intune-dev
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune-shared-extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements. Inherited from [androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)|
 |subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Certificate Subject Alternative Name Type. Inherited from [androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md). Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 |intendedPurpose|[intendedPurpose](../resources/intune-deviceconfig-intendedpurpose.md)|Intended Purpose of the Certificate Profile - which could be Unassigned, SmimeEncryption, SmimeSigning etc. Possible values are: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
+|certificateAccessType|[androidDeviceOwnerCertificateAccessType](../resources/intune-deviceconfig-androiddeviceownercertificateaccesstype.md)|Certificate access type. Possible values are: `userApproval`, `specificApps`, `unknownFutureValue`.|
+|silentCertificateAccessDetails|[androidDeviceOwnerSilentCertificateAccess](../resources/intune-deviceconfig-androiddeviceownersilentcertificateaccess.md) collection|Certificate access information. This collection can contain a maximum of 50 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -118,7 +120,14 @@ Here is a JSON representation of the resource.
     }
   ],
   "subjectAlternativeNameType": "String",
-  "intendedPurpose": "String"
+  "intendedPurpose": "String",
+  "certificateAccessType": "String",
+  "silentCertificateAccessDetails": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSilentCertificateAccess",
+      "packageId": "String"
+    }
+  ]
 }
 ```
 

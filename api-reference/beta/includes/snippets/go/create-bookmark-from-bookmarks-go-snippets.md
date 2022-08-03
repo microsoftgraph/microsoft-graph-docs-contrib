@@ -7,45 +7,55 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewBookmark()
+requestBody := graphmodels.NewBookmark()
 displayName := "Contoso Install Site"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 webUrl := "http://www.contoso.com/"
-requestBody.SetWebUrl(&webUrl)
+requestBody.SetWebUrl(&webUrl) 
 description := "Try or buy Contoso for Home or Business and view product information"
-requestBody.SetDescription(&description)
-keywords := msgraphsdk.NewAnswerKeyword()
-requestBody.SetKeywords(keywords)
-keywords.SetKeywords( []String {
+requestBody.SetDescription(&description) 
+keywords := graphmodels.NewAnswerKeyword()
+keywords := []string {
 	"Contoso",
 	"install",
+
 }
-keywords.SetReservedKeywords( []String {
+keywords.SetKeywords(keywords)
+reservedKeywords := []string {
 	"Contoso",
+
 }
+keywords.SetReservedKeywords(reservedKeywords)
 matchSimilarKeywords := true
-keywords.SetMatchSimilarKeywords(&matchSimilarKeywords)
-requestBody.SetAvailabilityStartDateTime(nil)
-requestBody.SetAvailabilityEndDateTime(nil)
-requestBody.SetPlatforms( []DevicePlatformType {
+keywords.SetMatchSimilarKeywords(&matchSimilarKeywords) 
+requestBody.SetKeywords(keywords)
+availabilityStartDateTime := null
+requestBody.SetAvailabilityStartDateTime(&availabilityStartDateTime) 
+availabilityEndDateTime := null
+requestBody.SetAvailabilityEndDateTime(&availabilityEndDateTime) 
+platforms := []graphmodels.DevicePlatformTypeable {
 	"windows",
+
 }
-requestBody.SetTargetedVariations( []AnswerVariant {
-	msgraphsdk.NewAnswerVariant(),
-	SetAdditionalData(map[string]interface{}{
-		"languageTag": "es-ES",
-		"displayName": "Sitio de instalación Contoso",
-		"description": "Pruebe o compre Contoso hogar o negocios y vea la información del producto",
-	}
+requestBody.SetPlatforms(platforms)
+
+
+answerVariant := graphmodels.NewAnswerVariant()
+languageTag := "es-es"
+answerVariant.SetLanguageTag(&languageTag) 
+displayName := "Sitio de instalación Contoso"
+answerVariant.SetDisplayName(&displayName) 
+description := "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
+answerVariant.SetDescription(&description) 
+
+targetedVariations := []graphmodels.AnswerVariantable {
+	answerVariant,
+
 }
-requestBody.SetGroupIds( []String {
-	"groupId",
-}
-requestBody.SetPowerAppIds( []String {
-	"powerAppId",
-}
-state := "published"
-requestBody.SetState(&state)
+requestBody.SetTargetedVariations(targetedVariations)
+state := graphmodels.PUBLISHED_ANSWERSTATE 
+requestBody.SetState(&state) 
+
 result, err := graphClient.Search().Bookmarks().Post(requestBody)
 
 

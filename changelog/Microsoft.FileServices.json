@@ -3,6 +3,106 @@
     {
       "ChangeList": [
         {
+          "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+          "ApiChange": "Resource",
+          "ChangedApiName": "idleSessionSignOut",
+          "ChangeType": "Addition",
+          "Description": "Added the [idleSessionSignOut](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-idlesessionsignout?view=graph-rest-beta) resource type.",
+          "Target": "idleSessionSignOut"
+        },
+        {
+          "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+          "ApiChange": "Property",
+          "ChangedApiName": "idleSessionSignOut",
+          "ChangeType": "Addition",
+          "Description": "Added the **idleSessionSignOut** property to the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
+        },
+        {
+          "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+          "ApiChange": "Property",
+          "ChangedApiName": "isLegacyAuthProtocolsEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isLegacyAuthProtocolsEnabled** property to the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
+        },
+        {
+          "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRequireAcceptingUserToMatchInvitedUserEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRequireAcceptingUserToMatchInvitedUserEnabled** property to the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
+        }
+      ],
+      "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-01T21:52:28.1485706Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sharepoint",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharepoint** navigation property to the [admin](https://docs.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
+          "Target": "admin"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "Resource",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource type and supported methods.",
+          "Target": "settings"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharepoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharepoint](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-sharepoint?view=graph-rest-beta) resource type.",
+          "Target": "sharepoint"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "imageTaggingChoice",
+          "ChangeType": "Addition",
+          "Description": "Added the **imageTaggingChoice** enumeration type.",
+          "Target": "imageTaggingChoice"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "sharingCapabilities",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingCapabilities** enumeration type.",
+          "Target": "sharingCapabilities"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "sharingDomainRestrictionMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingDomainRestrictionMode** enumeration type.",
+          "Target": "sharingDomainRestrictionMode"
+        }
+      ],
+      "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-23T02:50:58.3570719Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8d44ba60-d170-4c53-8a45-8bb2d96fa654",
           "ApiChange": "EnumType",
           "ChangedApiName": "sensitivityLabelAssignmentMethod",
@@ -399,6 +499,24 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-30T04:37:12.404Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9601e3e1-bb2f-4b1d-b8d7-8d806b3039e2",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/listitem-delta?view=graph-rest-beta) method to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
+          "Target": "listItem"
+        }
+      ],
+      "Id": "9601e3e1-bb2f-4b1d-b8d7-8d806b3039e2",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-18T12:44:48Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },

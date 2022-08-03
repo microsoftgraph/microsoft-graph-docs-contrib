@@ -7,20 +7,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-message := msgraphsdk.NewMessage()
-requestBody.SetMessage(message)
+requestBody := graphmodels.NewCreateForwardPostRequestBody()
+message := graphmodels.Newmessage()
 isDeliveryReceiptRequested := true
-message.SetIsDeliveryReceiptRequested(&isDeliveryReceiptRequested)
-message.SetToRecipients( []Recipient {
-	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+message.SetIsDeliveryReceiptRequested(&isDeliveryReceiptRequested) 
+
+
+recipient := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
+address := "danas@contoso.onmicrosoft.com"
+emailAddress.SetAddress(&address) 
+name := "Dana Swope"
+emailAddress.SetName(&name) 
+recipient.SetEmailAddress(emailAddress)
+
+toRecipients := []graphmodels.Recipientable {
+	recipient,
+
 }
+message.SetToRecipients(toRecipients)
+requestBody.SetMessage(message)
 comment := "Dana, just want to make sure you get this; you'll need this if the project gets approved."
-requestBody.SetComment(&comment)
-messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).CreateForward(message-id).Post(requestBody)
+requestBody.SetComment(&comment) 
+
+result, err := graphClient.Me().MessagesById("message-id").CreateForward().Post(requestBody)
 
 
 ```

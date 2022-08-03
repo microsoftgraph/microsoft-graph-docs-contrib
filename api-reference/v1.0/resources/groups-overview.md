@@ -1,6 +1,6 @@
 ---
 title: "Working with groups in Microsoft Graph"
-description: "Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources."
+description: "Use the groups API to create and manage different types of groups such as Microsoft 365 groups, security groups, mail-enabled security groups, and distribution groups."
 author: "psaffaie"
 ms.localizationpriority: high
 ms.prod: "groups"
@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources.
 
-Microsoft Graph exposes the groups API to create and manage different types of groups and group functionality. 
+Microsoft Graph exposes the groups API to create and manage different types of groups and group functionality.
 
 > [!NOTE]
 > 1. Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
@@ -27,7 +27,7 @@ Azure Active Directory (Azure AD) supports the following types of groups.
 - Distribution groups
 
 > [!NOTE]
-> Microsoft also supports [dynamic distribution groups](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) which cannot be managed or retrieved through Microsoft Graph.
+> Microsoft also supports [dynamic distribution groups](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true) which cannot be managed or retrieved through Microsoft Graph.
 
 Only Microsoft 365 and security groups can be managed through the Microsoft Graph groups API. Mail-enabled and distribution groups are read-only through Microsoft Graph.
 
@@ -167,9 +167,6 @@ For more information about what guest users can do with groups, see [Compare mem
 You can use group-based licensing to assign one or more product licenses to an Azure AD group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups and Microsoft 365 groups that have `securityEnabled=TRUE`. To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## Common use cases
-
-Using Microsoft Graph, you can perform the following common operations.
-
 
 Using Microsoft Graph, you can perform the following common operations on groups.
 

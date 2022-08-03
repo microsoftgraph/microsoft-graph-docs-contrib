@@ -8,8 +8,6 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 SiteCollectionPage sites = graphClient.sites()
 	.buildRequest()
-	.filter("siteCollection/root ne null")
-	.select("siteCollection,webUrl")
 	.get();
 
 ```

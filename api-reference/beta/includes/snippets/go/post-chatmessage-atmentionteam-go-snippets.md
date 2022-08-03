@@ -7,25 +7,42 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewChatMessage()
-body := msgraphsdk.NewItemBody()
+requestBody := graphmodels.NewChatMessage()
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
+content := "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>"
+body.SetContent(&content) 
 requestBody.SetBody(body)
-contentType := "html"
-body.SetContentType(&contentType)
-content := "<div><div><at id="0">GraphTesting</at>&nbsp;Hello team</div></div>"
-body.SetContent(&content)
-requestBody.SetMentions( []ChatMessageMention {
-	msgraphsdk.NewChatMessageMention(),
-	SetAdditionalData(map[string]interface{}{
-		"id": ,
-		"mentionText": "GraphTesting",
-	}
+
+
+chatMessageMention := graphmodels.NewChatMessageMention()
+id := int32(0)
+chatMessageMention.SetId(&id) 
+mentionText := "GraphTesting"
+chatMessageMention.SetMentionText(&mentionText) 
+mentioned := graphmodels.Newmentioned()
+conversation := graphmodels.Newconversation()
+id := "68a3e365-f7d9-4a56-b499-24332a9cc572"
+conversation.SetId(&id) 
+displayName := "GraphTesting"
+conversation.SetDisplayName(&displayName) 
+conversationIdentityType := graphmodels.TEAM_TEAMWORKCONVERSATIONIDENTITYTYPE 
+conversation.SetConversationIdentityType(&conversationIdentityType) 
+mentioned.SetConversation(conversation)
+chatMessageMention.SetMentioned(mentioned)
+
+mentions := []graphmodels.ChatMessageMentionable {
+	chatMessageMention,
+
 }
-requestBody.SetReactions( []ChatMessageReaction {
+requestBody.SetMentions(mentions)
+reactions := []graphmodels.ChatMessageReactionable {
+
 }
-teamId := "team-id"
-channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(requestBody)
+requestBody.SetReactions(reactions)
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(requestBody)
 
 
 ```

@@ -2,7 +2,7 @@
 title: "changeNotificationEncryptedContent resource type"
 description: "A changeNotificationEncryptedContent object represents the encrypted data attached to a change notification."
 ms.localizationpriority: medium
-author: "Jumaodhiss"
+author: "jumasure"
 doc_type: resourcePageType
 ms.prod: "change-notifications"
 ---

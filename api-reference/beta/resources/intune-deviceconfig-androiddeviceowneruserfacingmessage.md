@@ -20,7 +20,7 @@ Represents a user-facing message with locale information as well as a default me
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|localizedMessages|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) collection|The list of <locale, message> pairs. This collection can contain a maximum of 500 elements.|
+|localizedMessages|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|The list of <locale, message> pairs. This collection can contain a maximum of 500 elements.|
 |defaultMessage|String|The default message displayed if the user's locale doesn't match with any of the localized messages|
 
 ## Relationships

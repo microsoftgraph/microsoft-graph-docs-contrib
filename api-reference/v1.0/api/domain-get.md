@@ -61,18 +61,15 @@ If successful, this method returns a `200 OK` response code and [domain](../reso
   "name": "get_domain"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/domains/contoso.com
+GET https://graph.microsoft.com/v1.0/domains/M365x214355.onmicrosoft.com
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-domain-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-domain-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-domain-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -85,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/domains/contoso.com
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-domain-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-domain-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -101,13 +102,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "authenticationType": "authenticationType-value",
-  "availabilityStatus": "availabilityStatus-value",
-  "id": "contoso.com",
-  "isAdminManaged": true,
-  "isDefault": true,
-  "isInitial": true,
-  "isRoot": true
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#domains/$entity",
+    "authenticationType": "Managed",
+    "availabilityStatus": null,
+    "id": "M365x214355.onmicrosoft.com",
+    "isAdminManaged": true,
+    "isDefault": true,
+    "isInitial": true,
+    "isRoot": true,
+    "isVerified": true,
+    "supportedServices": [
+        "Email",
+        "OfficeCommunicationsOnline"
+    ],
+    "passwordValidityPeriodInDays": null,
+    "passwordNotificationWindowInDays": null,
+    "state": null
 }
 ```
 

@@ -7,18 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTerm()
-requestBody.SetLabels( []LocalizedLabel {
-	msgraphsdk.NewLocalizedLabel(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "changedLabel",
-		"languageTag": "en-US",
-		"isDefault": true,
-	}
+requestBody := graphmodels.NewTerm()
+
+
+localizedLabel := graphmodels.NewLocalizedLabel()
+name := "changedLabel"
+localizedLabel.SetName(&name) 
+languageTag := "en-US"
+localizedLabel.SetLanguageTag(&languageTag) 
+isDefault := true
+localizedLabel.SetIsDefault(&isDefault) 
+
+labels := []graphmodels.LocalizedLabelable {
+	localizedLabel,
+
 }
-setId := "set-id"
-termId := "term-id"
-graphClient.TermStore().SetsById(&setId).TermsById(&termId).Patch(requestBody)
+requestBody.SetLabels(labels)
+
+graphClient.TermStore().SetsById("set-id").TermsById("term-id").Patch(requestBody)
 
 
 ```

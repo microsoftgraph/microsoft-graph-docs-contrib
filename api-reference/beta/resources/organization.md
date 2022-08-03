@@ -30,7 +30,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |**Schema extensions**| | |
 |[Add schema extension values](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Organization licenses**| | |
-|[activateService](../api/organization-activateservice.md) | None |  Activate a service for an organization. |
+|[activateService](../api/organization-activateservice.md) (deprecated) | None |  Activate a service for an organization. |
 |**Organizational branding**| | |
 |[Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Get the default organizational branding object. |
 |[Update organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Update the default organizational branding object. |
@@ -59,7 +59,6 @@ This resource lets you add your own data to custom properties using [extensions]
 | id | String | The tenant ID, a unique identifier representing the organization (or tenant). Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | `true` if organization is Multi-Geo enabled; `false` if organization is not Multi-Geo enabled; `null` (default). Read-only. For more information, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | String collection | Not nullable. |
-| objectType | String | A string that identifies the object type. For tenants the value is always `Company`.|
 | onPremisesLastSyncDateTime | DateTimeOffset | The time and date at which the tenant was last synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 | onPremisesSyncEnabled | Boolean | `true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; Nullable. `null` if this object has never been synced from an on-premises directory (default). |
 | postalCode | String | Postal code of the address for the organization. |
@@ -79,7 +78,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization resource. Nullable.| 
-|organizationalBranding|[organizationalBranding](organizationalbranding.md) collection| Resource to manage the default branding for the organization. Nullable.|
+|branding|[organizationalBranding](organizationalbranding.md) collection| Resource to manage the default branding for the organization. Nullable.|
 |settings|[organizationSettings](organizationsettings.md) | Retrieve the properties and relationships of organizationSettings object. Nullable.|
 
 ## JSON representation
@@ -109,7 +108,6 @@ Here is a JSON representation of the resource
   "id": "String (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "Boolean",
   "marketingNotificationEmails": ["String"],
-  "objectType": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "String",

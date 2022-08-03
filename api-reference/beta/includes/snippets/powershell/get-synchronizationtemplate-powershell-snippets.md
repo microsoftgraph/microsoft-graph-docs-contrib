@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
+Get-MgServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId -OutFile $outFileId
 
 ```
