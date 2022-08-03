@@ -63,7 +63,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OAAuAAAAAAAiQ8W967B7TKBjgx9rVEURAQAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=
 ```
 
 # [C#](#tab/csharp)
@@ -120,7 +120,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a mail search folder
+### Example 2: Get a mail sent items folder
 
 #### Request
 
@@ -135,7 +135,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzN
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OAAuAAAAAAAiQ8W967B7TKBjgx9rVEURAQAiIsqMbYjsT5e-T7KzowPTAAAAAAEJAAA=
 ```
 
 # [C#](#tab/csharp)
@@ -182,21 +182,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.mailSearchFolder",
-  "id": "AAMkAGVmMDEzN",
-  "displayName": "Get MyAnalytics",
-  "parentFolderId": "AAMkAGVmMDEzI",
-  "childFolderCount": 0,
-  "unreadItemCount": 6,
-  "totalItemCount": 6,
-  "isHidden": false,
-  "isSupported": true,
-  "includeNestedFolders": true,
-  "sourceFolderIds": [
-    "AAMkAGVmMDEzM"
-  ],
-  "filterQuery": "contains(subject, 'MyAnalytics')"
-}
+            "id": "AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OAAuAAAAAAAiQ8W967B7TKBjgx9rVEURAQAiIsqMbYjsT5e-T7KzowPTAAAAAAEJAAA=",
+            "displayName": "Sent Items",
+            "parentFolderId": "AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OAAuAAAAAAAiQ8W967B7TKBjgx9rVEURAQAiIsqMbYjsT5e-T7KzowPTAAAAAAEIAAA=",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 1,
+            "sizeInBytes": 53857,
+            "isHidden": false
+        }
 ```
 
 

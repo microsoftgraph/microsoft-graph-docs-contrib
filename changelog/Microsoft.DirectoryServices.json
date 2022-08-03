@@ -1,5 +1,31 @@
 {
-  "changelog": [	
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "6e339b5a-968a-4b2d-bfa0-c851ed3828fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "squareLogoDark",
+          "ChangeType": "Addition",
+          "Description": "Added the **squareLogoDark** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "6e339b5a-968a-4b2d-bfa0-c851ed3828fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "squareLogoDarkRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **squareLogoDarkRelativeUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        }
+      ],
+      "Id": "6e339b5a-968a-4b2d-bfa0-c851ed3828fc",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-07T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": " Identity and sign-in"
+    }, 	   
     {
       "ChangeList": [
         {
@@ -212,7 +238,58 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
-
+    {
+      "ChangeList": [
+        {
+          "Id": "eaf1d043-b258-4b47-afce-9183e50aacb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the **federatedIdentityCredentials** relationship to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        },
+        {
+          "Id": "eaf1d043-b258-4b47-afce-9183e50aacb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityCredential",
+          "ChangeType": "Addition",
+          "Description": "Added the [federatedIdentityCredential](https://docs.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-1.0) resource and associated methods. A federated identity credential is a secure method for managing an application's credentials that allows a tenant's cloud applications to access Azure AD without using secrets and certificates.",
+          "Target": "federatedIdentityCredential"
+        },
+        {
+          "Id": "eaf1d043-b258-4b47-afce-9183e50aacb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the **federatedIdentityCredentials** relationship to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "eaf1d043-b258-4b47-afce-9183e50aacb2",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-02T22:47:12.6780409Z",
+       "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3502cca7-ee24-4cbe-8d84-0210e9be406e",
+          "ApiChange": "Method",
+          "ChangedApiName": "roleAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added example to [Create unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta) for how to assign role with attribute set scope.",
+          "Target": "unifiedRoleAssignment"
+        }
+      ],
+      "Id": "3502cca7-ee24-4cbe-8d84-0210e9be406e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-09T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
     {
       "ChangeList": [
         {

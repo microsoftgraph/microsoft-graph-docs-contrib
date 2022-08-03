@@ -18,7 +18,7 @@ $body->setContent('<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></
 
 $requestBody->setBody($body);
 $mentionsChatMessageMention1 = new ChatMessageMention();
-$mentionsChatMessageMention1->setId(id);
+$mentionsChatMessageMention1->setId(0);
 
 $mentionsChatMessageMention1->setMentionText('TestTag');
 

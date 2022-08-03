@@ -80,7 +80,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/education/users/{educationUserId}/taughtClasses
 ```
 

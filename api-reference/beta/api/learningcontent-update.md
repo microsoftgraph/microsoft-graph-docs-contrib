@@ -76,6 +76,8 @@ If successful, this method returns a `202 Accepted` response code and an updated
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_learningcontent"
@@ -88,7 +90,7 @@ Content-Type: application/json
 {
     "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
     "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
-    "contentWebUrl": "https://docs.microsoft.com/en-us/learn/modules/manage-classes-resources-assessment-planning-beedle/",
+    "contentWebUrl": "https://docs.microsoft.com/learn/modules/manage-classes-resources-assessment-planning-beedle/",
     "sourceName": "MsLearn",
     "thumbnailWebUrl": "https://syndetics.com/index.aspx?isbn=9783319672175/LC.GIF",
     "languageTag": "en-us",
@@ -113,6 +115,21 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-learningcontent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-learningcontent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-learningcontent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 
 ### Response
 The following is an example of the response.
@@ -132,7 +149,7 @@ Content-Type: application/json
     "externalId": "LP4471",
     "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
     "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
-    "contentWebUrl": "https://docs.microsoft.com/en-us/learn/modules/manage-classes-resources-assessment-planning-beedle/",
+    "contentWebUrl": "https://docs.microsoft.com/learn/modules/manage-classes-resources-assessment-planning-beedle/",
     "sourceName": "MsLearn",
     "thumbnailWebUrl": "https://syndetics.com/index.aspx?isbn=9783319672175/LC.GIF",
     "languageTag": "en-us",

@@ -1,7 +1,7 @@
 ---
 title: "List directoryRoleTemplates"
 description: "Retrieve a list of directoryroletemplate objects."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

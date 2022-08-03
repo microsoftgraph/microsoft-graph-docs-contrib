@@ -55,7 +55,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_registeredowners"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners
 ```
 

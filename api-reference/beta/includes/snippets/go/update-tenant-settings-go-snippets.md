@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewSettings()
 deletedUserPersonalSiteRetentionPeriodInDays := int32(365)
 requestBody.SetDeletedUserPersonalSiteRetentionPeriodInDays(&deletedUserPersonalSiteRetentionPeriodInDays) 
-excludedFileExtensionsForSyncApp := []String {
+excludedFileExtensionsForSyncApp := []string {
 	".mp3",
 
 }

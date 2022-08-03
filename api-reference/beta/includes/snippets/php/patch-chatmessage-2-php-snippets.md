@@ -55,10 +55,10 @@ $body->setContent('<div><div>\n<div>\n<div>\n<div>\n<div><at id=\"0\">Raghav</at
 
 
 $requestBody->setBody($body);
-$requestBody->setAttachments(]);
+$requestBody->setAttachments([]);
 
 $mentionsChatMessageMention1 = new ChatMessageMention();
-$mentionsChatMessageMention1->setId(id);
+$mentionsChatMessageMention1->setId(0);
 
 $mentionsChatMessageMention1->setMentionText('Raghav');
 
@@ -87,7 +87,7 @@ $mentionsChatMessageMention1->setMentioned($mentionsChatMessageMention1Mentioned
 
 $mentionsArray []= $mentionsChatMessageMention1;
 $mentionsChatMessageMention2 = new ChatMessageMention();
-$mentionsChatMessageMention2->setId(id);
+$mentionsChatMessageMention2->setId(1);
 
 $mentionsChatMessageMention2->setMentionText('TestGlobalBot');
 
@@ -118,7 +118,7 @@ $mentionsArray []= $mentionsChatMessageMention2;
 $requestBody->setMentions($mentionsArray);
 
 
-$requestBody->setReactions(]);
+$requestBody->setReactions([]);
 
 
 

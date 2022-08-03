@@ -53,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_tablecolumn"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
 ```
 
