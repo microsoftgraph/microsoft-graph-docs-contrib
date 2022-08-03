@@ -6,7 +6,7 @@ ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
-# Use the $filter query parameter to filter a collection of objects
+# Use the $filter query parameter
 
 Microsoft Graph supports the `$filter` [OData](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html#_Toc31360955) query parameter to retrieve a subset of a collection.
 
