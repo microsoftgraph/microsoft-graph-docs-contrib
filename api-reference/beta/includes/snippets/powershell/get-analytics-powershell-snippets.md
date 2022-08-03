@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Files
 
-Get-MgDriveItemAnalytic -DriveId $driveId -DriveItemId $driveItemId
+Get-MgDriveItemAnalytic -DriveId $driveId -DriveItemId $driveItemId -OutFile $outFileId
 
 ```

@@ -500,7 +500,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status. \n\nPlease remove this label and add the **ready for content review** label to start a review. Your PR won't be reviewed until you add this label.\n\nAfter the content review is complete and the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.\n\n**Note:** Pull requests will not be merged until the **ready to merge** label is set.\n\nFor details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow)."
+              "comment": "Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status. \n\nPlease add the **ready for content review** label to start a review. Your PR won't be reviewed until you add this label.\n\nAfter the content review is complete and the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.\n\n**Note:** Pull requests will not be merged until the **ready to merge** label is set.\n\nFor details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow)."
             }
           }
         ]
@@ -2328,7 +2328,7 @@
                 {
                   "name": "labelAdded",
                   "parameters": {
-                    "label": "area: Security"
+                    "label": "area: security"
                   }
                 }
               ]
@@ -2339,7 +2339,7 @@
                 {
                   "name": "hasLabel",
                   "parameters": {
-                    "label": "area: Security"
+                    "label": "area: security"
                   }
                 },
                 {

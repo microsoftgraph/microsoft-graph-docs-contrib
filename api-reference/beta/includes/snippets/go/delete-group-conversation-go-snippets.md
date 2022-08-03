@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-groupId := "group-id"
-conversationId := "conversation-id"
-graphClient.GroupsById(&groupId).ConversationsById(&conversationId).Delete()
+
+graphClient.GroupsById("group-id").ConversationsById("conversation-id").Delete()
 
 
 ```

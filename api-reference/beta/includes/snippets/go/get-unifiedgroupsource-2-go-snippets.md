@@ -7,10 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-caseId := "case-id"
-custodianId := "custodian-id"
-unifiedGroupSourceId := "unifiedGroupSource-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).UnifiedGroupSourcesById(&unifiedGroupSourceId).Get()
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").CustodiansById("custodian-id").UnifiedGroupSourcesById("unifiedGroupSource-id").Get()
 
 
 ```

@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEducationCategory()
+requestBody := graphmodels.NewEducationCategory()
 displayName := "Quizzes"
-requestBody.SetDisplayName(&displayName)
-educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentCategories().Post(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentCategories().Post(requestBody)
 
 
 ```

@@ -7,17 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ListItemVersionRequestBuilderGetQueryParameters{
-	Expand: "fields",
+requestParameters := &graphconfig.ListItemVersionRequestBuilderGetQueryParameters{
+	Expand: [] string {"fields"},
 }
-options := &msgraphsdk.ListItemVersionRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ListItemVersionRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-siteId := "site-id"
-listId := "list-id"
-listItemId := "listItem-id"
-listItemVersionId := "listItemVersion-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).VersionsById(&listItemVersionId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").VersionsById("listItemVersion-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

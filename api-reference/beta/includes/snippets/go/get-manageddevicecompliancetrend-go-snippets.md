@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-managedDeviceComplianceTrendId := "managedDeviceComplianceTrend-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagedDeviceComplianceTrendsById(&managedDeviceComplianceTrendId).Get()
+
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagedDeviceComplianceTrendsById("managedDeviceComplianceTrend-id").Get()
 
 
 ```

@@ -54,6 +54,9 @@ Microsoft Graph permissions in the [Azure portal](https://portal.azure.com/) are
 
 User and group search capabilities allow the app to search for any user or group in an organization's directory by performing queries against the `/users` or `/groups` resource set (for example, `https://graph.microsoft.com/v1.0/users`). Both administrators and users have this capability; however, guest users do not.
 
+> [!NOTE]
+> Guest users have the same access that members enabled under **External Identities** > **External Collaboration Settings** > **Guest user access** have. The users API works with guest tokens as well.
+
 If the signed-in user is a guest user, depending on the permissions an app has been granted, it can read the profile of a specific user or group (for example, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`); however, it cannot perform queries against the `/users` or `/groups` resource set that potentially return more than a single resource.
 
 With the appropriate permissions, the app can read the profiles of users or groups that it obtains by following links in navigation properties; for example, `/users/{id}/directReports` or `/groups/{id}/members`.
@@ -893,6 +896,28 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 * _EduRoster.ReadBasic_: Classes a signed-in user attends or teaches (`GET /education/classes/{id}/members`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+
+---
+
+## Employee learning permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _LearningContent.Read.All_ |    Read learning content | Allows the app to read learning content in the organization's directory, on behalf of the signed-in user. | Yes | No |
+| _LearningContent.ReadWrite.All_  |    Manage learning content | Allows the app to manage all learning content in the organization's directory, on behalf of the signed-in user. | Yes | No |
+| _LearningProvider.Read_ |    Read learning provider | Allows the app to read data for the learning provider in the organization's directory, on behalf of the signed-in user. | Yes | No |
+| _LearningProvider.ReadWrite_  |    Manage learning provider | Allows the app to create, update, read, and delete data for the learning provider in the organization's directory, on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _LearningContent.Read.All_ |    Read learning content | Allows the app to read all learning content in the organization's directory, without a signed-in user. | Yes | No |
+| _LearningContent.ReadWrite.All_  |    Manage learning content | Allows the app to manage all learning content in the organization's directory, without a signed-in user. | Yes | No |
+
 
 ---
 
@@ -2278,6 +2303,9 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsTab.Read.All_ | Read tabs in Microsoft Teams. | Allows the app to read the Teams apps that are installed for the signed-in user, and in all teams the user is a member of. Does not give the ability to read application-specific settings.	| Yes | No |
 | _TeamsTab.ReadWrite.All_ | Read and write tabs in Microsoft Teams. | Allows the app to read, install, upgrade, and uninstall Teams apps, on behalf of the signed-in user and also for teams the user is a member of. Does not give the ability to read or write application-specific settings. 	| Yes | No |
 | _TeamsTab.Create_ | Create tabs in Microsoft Teams. | Allows the app to create tabs in any team in Microsoft Teams, on behalf of the signed-in user. This does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. | Yes | No |
+ _TeamsTab.ReadWriteSelfForChat_ | Allow the Teams app to manage only its own tabs in chats. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs in chats the signed-in user can access. | Yes | No |
+ _TeamsTab.ReadWriteSelfForTeam_ | Allow the Teams app to manage only its own tabs in teams. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs to teams the signed-in user can access. | Yes | No |
+_TeamsTab.ReadWriteSelfForUser_ | Allow the Teams app to manage only its own tabs for a user. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs for the signed-in user. | Yes | No |
 
 #### Application permissions
 
@@ -2286,6 +2314,9 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsTab.Read.All_ | Read tabs in Microsoft Teams. | Read the names and settings of tabs inside any team in Microsoft Teams, without a signed-in user. This does not give access to the content inside the tabs.	| Yes | No |
 | _TeamsTab.ReadWrite.All_ | Read and write tabs in Microsoft Teams. | Read and write tabs in any team in Microsoft Teams, without a signed-in user. This does not give access to the content inside the tabs. | Yes | No |
 | _TeamsTab.Create_ | Create tabs in Microsoft Teams. | Allows the app to create tabs in any team in Microsoft Teams, without a signed-in user. This does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. | Yes | No |
+_TeamsTab.ReadWriteSelfForChat.All_ | Allow the Teams app to manage only its own tabs for all chats. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs for any chat, without a signed-in user. | Yes | No |
+ _TeamsTab.ReadWriteSelfForTeam.All_ | Allow the Teams app to manage only its own tabs for all teams. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs for any team, without a signed-in user. | Yes | No |
+_TeamsTab.ReadWriteSelfForUser.All_ | Allow the Teams app to manage only its own tabs for all users. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs for any user, without a signed-in user. | Yes | No |
 
 ## Teams tag permissions
 
@@ -2302,6 +2333,21 @@ Taxonomy permissions are valid only on work or school accounts.
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamworkTag.ReadWrite.All_| Read and write tags in Microsoft Teams. | Allows the app to read and write tags in Teams without a signed-in user.	| Yes | No |
 | _TeamworkTag.Read.All_ | Read tags in Microsoft Teams. | Allows the app to read tags in Teams without a signed-in user | Yes | No |
+
+
+## Tenant information permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _CrossTenantInformation.ReadBasic.All_ | Read basic information about an external tenant. | Allows the app to read limited information about an external tenant, on behalf of the signed-in user.	| Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _CrossTenantInformation.ReadBasic.All_ | Read basic information about an external tenant. | Allows the app to read limited information about an external tenant, without a signed-in user.	| Yes |
 
 
 ## Terms of use permissions

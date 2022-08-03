@@ -51,7 +51,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Workbooks and charts | Excel | Lets users use Excel spreadsheets to do complex calculations, track, analyze, and visualize data, and generate professional reports. | [Excel workbooks and charts overview](excel-concept-overview.md) |
 | To-do tasks | To Do | Lets users manage their personal tasks across work and life. It is also integrated with Outlook, Teams, Planner, and Cortana, which makes it the single destination for user's personal tasks in Microsoft 365. | [To Do tasks overview](todo-concept-overview.md) |
 
-## Collaboration
+## Collaboration and employee learning
 
 <!-- Want to update links to concept overviews as they are created over time. 
 -->
@@ -61,6 +61,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Sites and lists  | SharePoint | Web-based platform for users and Microsoft 365 groups to share, organize, manage, and discover content (including lists, files, and notes). | [SharePoint sites and content overview](sharepoint-concept-overview.md) | 
 |Tasks and plans | Planner | Enables users in Microsoft 365 groups to create plans, assign tasks, and track progress. | [Planner plans and tasks overview](planner-concept-overview.md) |
 |Teamwork |  Microsoft Teams | Digital hub and chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](teams-concept-overview.md) |
+| Employee learning | Viva Learning | Empowers employees to make learning a natural part of the day by bringing learning into the flow of work within the tools and platforms of Microsoft 365 that they already use. Discover, share, and track learning across a variety of sources from a center of learning in Microsoft Teams.  | [Enable employee learning using the collaborative capabilities in Teams](teams-concept-overview.md#enable-employee-learning-using-the-collaborative-capabilities-in-teams) |
 
 ## People and workplace intelligence
 
@@ -88,7 +89,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Security integration | Azure AD Identity Protection, Azure Information Protection, Azure Security Center, Microsoft Defender for Cloud Apps, Windows Defender Advanced Threat Protection, and [more](/graph/api/resources/security-api-overview) | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](security-concept-overview.md) |
-| eDiscovery (preview) | Microsoft Purview eDiscovery (Premium) | Provides access to eDiscovery capabilities used in the process of identifying and delivering electronic information that can be used as evidence in legal cases.|[Security in Microsoft Graph](security-concept-overview.md)|
+| eDiscovery | Microsoft Purview eDiscovery (Premium) | Provides access to eDiscovery capabilities used in the process of identifying and delivering electronic information that can be used as evidence in legal cases.|[Security in Microsoft Graph](security-concept-overview.md)|
 
 ## Cross-device experiences
 

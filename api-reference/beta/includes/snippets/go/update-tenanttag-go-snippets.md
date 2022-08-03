@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTenantTag()
+requestBody := graphmodels.NewTenantTag()
 displayName := "Onboarding"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Tenants that we are currently onboarding"
-requestBody.SetDescription(&description)
-tenantTagId := "tenantTag-id"
-graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).Patch(requestBody)
+requestBody.SetDescription(&description) 
+
+graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").Patch(requestBody)
 
 
 ```

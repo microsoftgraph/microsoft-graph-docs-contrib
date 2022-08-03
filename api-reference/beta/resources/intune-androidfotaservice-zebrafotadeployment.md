@@ -76,6 +76,7 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.androidFotaDeploymentAssignment",
       "id": "String",
+      "displayName": "String",
       "target": {
         "@odata.type": "microsoft.graph.androidFotaDeploymentAssignmentTarget",
         "groupId": "String"

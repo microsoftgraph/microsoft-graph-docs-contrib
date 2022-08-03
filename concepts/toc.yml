@@ -481,7 +481,7 @@ items:
           - name: Integrated solutions
             href: security-integration.md
           - name: Information Protection
-            href: information-protection-overview.md
+            href: security-information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
       - name: Sites and lists
@@ -857,6 +857,9 @@ items:
           - name: Errors
             href: errors.md
             displayName: Microsoft Graph error responses and error resource types
+          - name: Azure AD service limits
+            displayName: Azure AD service limits and restrictions
+            href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
       - name: API v1.0 reference
         href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
         displayName: Microsoft Graph REST API v1.0 reference

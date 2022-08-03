@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-fido2AuthenticationMethodId := "fido2AuthenticationMethod-id"
-result, err := graphClient.Me().Authentication().Fido2MethodsById(&fido2AuthenticationMethodId).Get()
+
+result, err := graphClient.Me().Authentication().Fido2MethodsById("fido2AuthenticationMethod-id").Get()
 
 
 ```
