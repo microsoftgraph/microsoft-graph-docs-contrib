@@ -13,15 +13,9 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the basetype for a user interaction with an [externalitem](../resources/externalconnectors-externalitem.md).
+Represents the base type for a user interaction with an [externalitem](../resources/externalconnectors-externalitem.md).
 
 This is an abstract type. Base type of [externalActivity](../resources/externalconnectors-externalactivity.md) and [externalActivityResult](../resources/externalconnectors-externalactivityresult.md).
-
-
-
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
 
 
 ## Properties
