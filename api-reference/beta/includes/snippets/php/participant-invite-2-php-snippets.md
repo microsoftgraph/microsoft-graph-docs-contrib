@@ -13,10 +13,10 @@ $requestBody = new InvitePostRequestBody();
 $participantsInvitationParticipantInfo1 = new InvitationParticipantInfo();
 $additionalData = [
 '@odata.type' => '#microsoft.graph.invitationParticipantInfo', 
-'identity' => $participantsInvitationParticipantInfo1 = new ();
+'identity' => $participantsInvitationParticipantInfo1 = new Identity();
 $		participantsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.identitySet');
 
-$phone = new ();
+$phone = new Phone();
 $		phone->set@odatatype('#microsoft.graph.identity');
 
 $		phone->setId('+12345678901');

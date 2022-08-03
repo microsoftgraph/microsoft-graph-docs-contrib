@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgDirectorySettingTemplate
+Get-MgDirectorySettingTemplate -OutFile $outFileId
 
 ```
