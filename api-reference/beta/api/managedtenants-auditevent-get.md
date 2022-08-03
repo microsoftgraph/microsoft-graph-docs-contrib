@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [auditEvent](
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/auditEvent
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/auditEvents/{auditEventId}
 ```
 
 # [C#](#tab/csharp)
