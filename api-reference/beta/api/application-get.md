@@ -25,19 +25,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
-Applications can be retrieved with either the primary key, **id** (Object ID), or the alternate key, **appId** (Application ID).  Application ID is often referred to as Client ID.
 
-### Object ID Key
-Replace `{id}` with the **id** for the application object, also referred to as the **Object ID** in the Azure portal.
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}
-```
-
-### Application ID Key
-Replace `{appId}` with the **appId** for the application object, also referred to as the **Application (Client) ID** in the Azure portal.
-<!-- { "blockType": "ignored" } -->
-```http
 GET /applications/(appId='{appId}')
 ```
 
