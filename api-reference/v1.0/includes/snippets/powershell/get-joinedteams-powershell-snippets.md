@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 # A UPN can also be used as -UserId.
-Get-MgUserJoinedTeam -UserId $userId
+Get-MgUserJoinedTeam -UserId $userId -OutFile $outFileId
 
 ```

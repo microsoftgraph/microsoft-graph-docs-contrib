@@ -40,7 +40,7 @@ mailboxLocations := null
 requestBody.SetMailboxLocations(&mailboxLocations) 
 pauseAfterEstimate := true
 requestBody.SetPauseAfterEstimate(&pauseAfterEstimate) 
-regulations := []String {
+regulations := []string {
 	"CCPA",
 
 }

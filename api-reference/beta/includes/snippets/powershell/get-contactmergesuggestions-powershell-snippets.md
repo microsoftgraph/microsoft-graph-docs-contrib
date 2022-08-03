@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
-Get-MgUserSettingContactMergeSuggestion -UserId $userId
+Get-MgUserSettingContactMergeSuggestion -UserId $userId -OutFile $outFileId
 
 ```

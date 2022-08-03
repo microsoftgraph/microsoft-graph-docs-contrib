@@ -46,9 +46,43 @@
             "Id": "02d01ff0-4622-4e8c-b363-caa0fa50ec64",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2022-07-26T08:55:38.071541Z",
+            "CreatedDateTime": "2022-08-03T01:51:27.071541Z",
             "WorkloadArea": "Devices and apps",
-            "SubArea": "Cloud PC"
+            "SubArea": "Cloud PC"        
+        },
+        {
+            "ChangeList": [
+                {
+                  "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
+                  "ApiChange": "EnumType",
+                  "ChangedApiName": "cloudPcExternalPartnerStatus",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **cloudPcExternalPartnerStatus** enumeration type.",
+                  "Target": "cloudPcExternalPartnerStatus"
+                },
+                {
+                  "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "cloudPcExternalPartnerSetting",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [cloudPcExternalPartnerSetting](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcexternalpartnersetting?view=graph-rest-beta) resource and supported methods.",
+                  "Target": "cloudPcExternalPartnerSetting"
+                },
+                {
+                  "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
+                  "ApiChange": "Relationship",
+                  "ChangedApiName": "externalPartnerSettings",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **externalPartnerSettings** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+                  "Target": "virtualEndpoint"
+                }
+              ],
+              "Id": "d3daa450-a728-4c8a-a38e-c4aa0d3d26cf",
+              "Cloud": "Prod",
+              "Version": "beta",
+              "CreatedDateTime": "2022-08-01T05:50:11.4106474Z",
+              "WorkloadArea": "Devices and apps",
+              "SubArea": "Cloud PC"
         },
         {
             "ChangeList": [

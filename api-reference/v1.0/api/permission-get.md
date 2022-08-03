@@ -58,7 +58,7 @@ Here is an example of the request to access a permission on a folder.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read", "tags": "service.graph" } -->
 
-```msgraph-interactive
+```http
 GET /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 

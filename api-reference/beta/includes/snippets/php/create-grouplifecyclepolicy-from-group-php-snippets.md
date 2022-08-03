@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new GroupLifecyclePolicy();
-$requestBody->setGroupLifetimeInDays(groupLifetimeInDays);
+$requestBody->setGroupLifetimeInDays(100);
 
 $requestBody->setManagedGroupTypes('Selected');
 

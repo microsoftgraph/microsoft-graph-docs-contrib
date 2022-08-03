@@ -12,16 +12,13 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new EnrollAssetsPostRequestBody();
 $requestBody->setUpdateCategory(new UpdateCategory('string'));
 
-$assets1 = new ();
-$additionalData = [
-'@odata.type' => '#microsoft.graph.windowsUpdates.azureADDevice', 
-'id' => 'String (identifier)', 
-];
-$assets1->setAdditionalData($additionalData);
+$assetsUpdatableAsset1 = new UpdatableAsset();
+$assetsUpdatableAsset1->set@odatatype('#microsoft.graph.windowsUpdates.azureADDevice');
+
+$assetsUpdatableAsset1->setId('String (identifier)');
 
 
-
-$assetsArray []= $assets1;
+$assetsArray []= $assetsUpdatableAsset1;
 $requestBody->setAssets($assetsArray);
 
 

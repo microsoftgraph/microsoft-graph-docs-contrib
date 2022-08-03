@@ -64,7 +64,7 @@ The following is an example of the request.
   "name": "get_openshift_2"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShifts
 ```
 
