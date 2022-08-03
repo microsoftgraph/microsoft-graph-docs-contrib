@@ -167,7 +167,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Search Teams Message with KQL
+### Example 3: Search Teams Message with [KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 The following example show you search a message which contains 'contoso' that bob sent to alice after 2022-07-14
 
@@ -194,8 +194,57 @@ Content-Type: application/json
   ]
 }
 ```
+#### Response
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "searchTerms": [
+                "test"
+            ],
+            "hitsContainers": [
+                {
+                    "hits": [
+                        {
+                            "hitId": "AAMkAGIwMDA5MmY0LWY5ZTgtNGY5YS04NzczLWNhNjc0ZGIyZDBjYgBGAAAAAADm35sgHbzESapJ8+BjBlhEBwDAYtphe7dsRbDrOT/HAHoKAAAAAAEpAADAYtphe7dsRbDrOT/HAHoKAAFwxQGaAAA=",
+                            "rank": 1,
+                            "summary": "...Contoso Test with the TDF account",
+                            "resource": {
+                                "@odata.type": "microsoft.graph.chatMessage",
+                                "id": "1657782060227",
+                                "createdDateTime": "2022-07-15T07:01:01Z",
+                                "lastModifiedDateTime": "2022-07-15T07:01:03Z",
+                                "subject": "",
+                                "importance": "normal",
+                                "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGIwMDA5MmY0LWY5ZTgtNGY5YS04NzczLWNhNjc0ZGIyZDBjYgBGAAAAAADm35sgHbzESapJ8%2BBjBlhEBwDAYtphe7dsRbDrOT%2FHAHoKAAAAAAEpAADAYtphe7dsRbDrOT%2FHAHoKAAFwxQGaAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+                                "from": {
+                                    "emailAddress": {
+                                        "name": "bob",
+                                        "address": "bob@contoso.com"
+                                    }
+                                },
+                                "channelIdentity": {},
+                                "etag": "1657782060228",
+                                "chatId": "19:bdeff6bee3df4b159bad3fdd61aeacaa@thread.v2"
+                            }
+                        }
+                    ],
+                    "total": 1,
+                    "moreResultsAvailable": false
+                }
+            ]
+        }
+    ]
+}
+```
+
 
 #### Supported Scope Terms
+You can use below scope terms in your KQL query.
 | Scope Terms                           | Description   | Example   |
 |:-----------------------------------|:--------------|:--------------------|
 | from | Search only for messages sent by scoped person | from:bob |
