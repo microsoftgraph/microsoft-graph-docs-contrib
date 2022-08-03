@@ -63,7 +63,7 @@ The following is an example of the request.
   "name": "get_openshiftchangerequest_1"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
 ```
 
