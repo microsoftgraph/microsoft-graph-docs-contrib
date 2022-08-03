@@ -19,15 +19,15 @@ Represents a site to use in [Internet Explorer mode](/deployedge/edge-ie-mode) t
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List browserSites](../api/browsersitelist-list-sites.md)|[browserSite](../resources/browsersite.md) collection|Get a list of the [browserSite](../resources/browsersite.md) objects and their properties.|
-|[Create browserSite](../api/browsersitelist-post-sites.md)|[browserSite](../resources/browsersite.md)|Create a new [browserSite](../resources/browsersite.md) object.|
-|[Get browserSite](../api/browsersite-get.md)|[browserSite](../resources/browsersite.md)|Read the properties and relationships of a [browserSite](../resources/browsersite.md) object.|
+|[Create browserSite](../api/browsersitelist-post-sites.md)|[browserSite](../resources/browsersite.md)|Create a new [browserSite](../resources/browsersite.md) object in a [browserSiteList](../resources/browsersitelist.md).|
+|[Get browserSite](../api/browsersite-get.md)|[browserSite](../resources/browsersite.md)|Get a [browserSite](../resources/browsersite.md) that resides on a [browserSiteList](../resources/browsersitelist.md).|
 |[Update browserSite](../api/browsersite-update.md)|None|Update the properties of a [browserSite](../resources/browsersite.md) object.|
-|[Delete browserSite](../api/browsersitelist-delete-sites.md)|None|Deletes a [browserSite](../resources/browsersite.md) object.|
+|[Delete browserSite](../api/browsersitelist-delete-sites.md)|None|Delete a [browserSite](../resources/browsersite.md) from a [browserSiteList](../resources/browsersitelist.md).|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowRedirect|Boolean|Controls the behavior of redirected sites. If `true`, indicates that the site will open in IE11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain.|
+|allowRedirect|Boolean|Controls the behavior of redirected sites. If `true`, indicates that the site will open in Internet Explorer 11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain.|
 |comment|String|The comment for the site.|
 |compatibilityMode|browserSiteCompatibilityMode|Controls what compatibility setting is used for specific sites or domains. The possible values are: `default`, `internetExplorer8Enterprise`, `internetExplorer7Enterprise`, `internetExplorer11`, `internetExplorer10`, `internetExplorer9`, `internetExplorer8`, `internetExplorer7`, `internetExplorer5`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|The date and time when the site was created.|

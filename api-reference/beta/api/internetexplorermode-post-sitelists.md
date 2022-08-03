@@ -1,6 +1,6 @@
 ---
 title: "Create browserSiteList"
-description: "Create a new browserSiteList object."
+description: "Create a new browserSiteList object to support Internet Explorer mode."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [browserSiteList](../resources/browsersitelist.md) object.
+Create a new [browserSiteList](../resources/browsersitelist.md) object to support [Internet Explorer mode](/deployedge/edge-ie-mode).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
