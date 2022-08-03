@@ -144,8 +144,6 @@ These examples show how to use `$filter` to match against supported properties a
 
 ### For GUID types
 
-**RULE:** GUID values aren't enclosed in quotes in `$filter` queries.
-
 | Operator (s) | Syntax                                                                                            |
 |--------------|---------------------------------------------------------------------------------------------------|
 | `eq`         | `/servicePrincipals?$filter=appOwnerOrganizationId eq 72f988bf-86f1-41af-91ab-2d7cd011db47`*      |
