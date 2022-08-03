@@ -96,7 +96,7 @@ message TimestampCollectionType {
 
 ```
 
-**GenericType** can have one of the following types: string, int64, double, DateTime, and Boolean or a collection of strings, int64, double, and DateTime.
+**GenericType** can have one of the following types: **string**, **int64**, **double**, **DateTime**, and **Boolean** or a **collection** of **string**, **int64**, **double**, and **DateTime**.
 The following are examples of how to set these types:
 
 ```csharp
@@ -172,7 +172,7 @@ The following are examples of how to set these types:
 
 The connectors schema has the following restrictions:
 
-- **Property name**:Tthe name of the property can have a maximum of 32 characters and only alphanumeric characters are allowed.
+- **Property name**:The name of the property can have a maximum of 32 characters and only alphanumeric characters are allowed.
 - **Search annotations**:
  * Only properties of type **String** or **StringCollection** can be searchable.
  * Only properties of type **String** can be a content property.

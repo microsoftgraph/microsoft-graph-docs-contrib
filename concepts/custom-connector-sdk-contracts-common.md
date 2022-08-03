@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Graph connectors SDK contracts common models"
+title: "Microsoft Graph connectors SDK common models"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Microsoft Graph connectors SDK contracts common models"
+description: "Microsoft Graph connectors SDK common models"
 ---
 
 # Microsoft Graph connectors SDK common models
 
-In this article, you can find the Microsoft Graph connectors SDK contracts, common models.
+This article describes the common models used in the Microsoft Graph connectors SDK.
 
 ## CustomConfiguration
 
@@ -37,53 +37,53 @@ Credentials provided by the admin to access the data source. It contains the aut
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|authType |[AuthenticationType](#authenticationtype-enumeration-members) |Type of authentication information held in this object |
-|DatasourceUrl |string |Url or path to access data source - path to the resource that needs to be crawled. Example: Connection string for a database |
+|authType |[AuthenticationType](#authenticationtype-enumeration-members) |Type of authentication information held in this object. |
+|DatasourceUrl |string |URL or path to access data source - path to the resource that needs to be crawled. Example: Connection string for a database. |
 |basicCredential |[BasicCredential](#basiccredential) |Credentials in the form of username and password to access the data source. This property will be set exclusive to windowsCredential, and the authType will be set to Basic when this property is set. |
-|windowsCredential |[WindowsCredential](#windowscredential) |Credentials in the form of windows AD username, password, and domain to access the data source. This property will be set exclusive to basicCredential, and the authType will be set to Windows when this property is set. |
+|windowsCredential |[WindowsCredential](#windowscredential) |Credentials in the form of Windows AD username, password, and domain to access the data source. This property will be set exclusive to basicCredential, and the authType will be set to Windows when this property is set. |
 |oAuth2ClientCredential |[oAuth2ClientCredential](#oauth2clientcredential) |Credentials in the form of app ID and app secret for OAuth client credentials based authentication for accessing the datasource. This property will be set exclusive to oAuth2ClientCredential and the authType will be set to oAuth2ClientCredential when this property is set. |
 
 ## BasicCredential
 
-Represents basic credentials model
+Represents the basic credentials model.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|username |string |Username for accessing the data source |
-|secret |string |Secret to use with the username for accessing data source |
+|username |string |Username for accessing the data source. |
+|secret |string |Secret to use with the username for accessing data source. |
 
 ## WindowsCredential
 
-Represents windows credentials model
+Represents the windows credentials model.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|username |string | Username for accessing the data source |
-|secret |string | Secret to use with the username for accessing data source |
-|domain |string | Active Directory Domain of the account. If not provided by the admin explicitly, this property holds the value of the machine name. |
+|username |string | Username for accessing the data source. |
+|secret |string | Secret to use with the username for accessing data source. |
+|domain |string | Active Directory Domain of the account. If not provided by the admin explicitly, this property holds the value of the computer name. |
 
 ## oAuth2ClientCredential
 
-Represents credential model for oauth2 client credentials
+Represents the credential model for oauth2 client credentials.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|appId |string |Application ID/client ID for the OAuth2 application |
-|appSecret |String |Application secret/client secret for the OAuth2 application |
+|appId |string |Application ID/client ID for the OAuth2 application. |
+|appSecret |String |Application secret/client secret for the OAuth2 application. |
 |oAuth2ClientCredentialResponse |[oAuth2ClientCredentialResponse](#oauth2clientcredentialresponse) |Contains OAuth token related details. This property will be set to the response which connector sends after the first validate authentication call succeeds. |
 
 ## oAuth2ClientCredentialResponse
 
-Represents response model from auth server for OAuth2 token request. The fields present in this model are the common response fields specified in OAuth2 documentation. Additionally, idToken can be set when the auth servers support OpenIDConnect.
+Represents the response model from auth server for OAuth2 token request. The fields present in this model are the common response fields specified in OAuth2 documentation. Additionally, idToken can be set when the auth servers support OpenIDConnect.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|accessToken |string |The access token from auth server |
-|refreshToken |string |The refresh token if auth server sends it |
-tokenType |string |Type of the token – usually Bearer token for OAuth |
-expiresIn |uint64 |The expiry time of the token in unix timestamp |
-scope |string |Scopes supported by the token if auth server sends it |
-idToken |string  |The ID token if auth server supports open ID connect |
+|accessToken |string |The access token from auth server. |
+|refreshToken |string |The refresh token if auth server sends it. |
+|tokenType |string |Type of the token – usually Bearer token for OAuth. |
+|expiresIn |uint64 |The expiry time of the token in Unix timestamp. |
+|scope |string |Scopes supported by the token if auth server sends it. |
+|idToken |string  |The ID token if auth server supports open ID connect. |
 
 ## OperationResult
 
@@ -93,13 +93,13 @@ OperationResult enumeration members:
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-|Success |0 |If the operation succeeded without any error |
-|PartialSuccess |1 | operation is a success, but there's a warning message to be processed |
-|ValidationFailure |2 |One or more validations failed |
-|AuthenticationIssue |3 |Credentials provided didn't work |
-|DatasourceError |4 |Data source read error |
-|NetworkError |5 |Network operation error |
-|Canceled |6 |If Cancellation Token canceled the operation |
+|Success |0 |If the operation succeeded without any error. |
+|PartialSuccess |1 | Operation is a success, but there's a warning message to be processed. |
+|ValidationFailure |2 |One or more validations failed. |
+|AuthenticationIssue |3 |Credentials provided didn't work. |
+|DatasourceError |4 |Data source read error. |
+|NetworkError |5 |Network operation error. |
+|Canceled |6 |The cancellation token canceled the operation. |
 |TokenExpired |7 |To be used in OAuth flow when the token sent to the connector by the platform has expired. During the crawl, on receiving this status, the platform will trigger the refresh token flow and call the RefreshAccessToken method in ConnectorOAuthService. |
 
 ## OperationStatus
@@ -108,8 +108,8 @@ Represents the status of an operation including error/warnings and retry details
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|result |[OperationResult](#operationresult) |Result of the operation |
-|statusMessage |string |Custom message that can be used for logging and monitoring purposes |
+|result |[OperationResult](#operationresult) |Result of the operation. |
+|statusMessage |string |Custom message that can be used for logging and monitoring purposes. |
 |retryInfo |[RetryDetails](#retrydetails) |Retry information to be used by the framework to retry the same operation for a failed operation. If the operation succeeds or partially succeeds, it will ignore. |
 
 ## RetryType enumeration members
@@ -118,9 +118,9 @@ This enumeration is used to define the strategy for retrying in case of errors.
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-|NoRetry |0 | No retry has to be made |
-|Standard |1 | Standard retry with linear wait time will be made |
-|ExponentialBackOff |2 | Retry by exponential backoff will be made |
+|NoRetry |0 | No retry has to be made. |
+|Standard |1 | Standard retry with linear wait time will be made. |
+|ExponentialBackOff |2 | Retry by exponential backoff will be made. |
 
 ## RetryDetails
 
@@ -128,15 +128,15 @@ This model is used for communicating the retry policy where retry is required.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|type |[RetryType](#retrytype-enumeration-members) |Retry type defines the type of retry strategy required for the error |
-|numberOfRetries |uint32 |Number of retries to be done for the exception |
-|pauseBetweenRetriesInMilliseconds |uint64 |Gets pause between retries in case of standard retries |
+|type |[RetryType](#retrytype-enumeration-members) |Retry type defines the type of retry strategy required for the error. |
+|numberOfRetries |uint32 |Number of retries to be done for the exception. |
+|pauseBetweenRetriesInMilliseconds |uint64 |Gets pause between retries in case of standard retries. |
 |backoffCoefficient |float |Gets coefficient used in the calculation of Exponential Backoff. |
 |backoffRate |float |Gets the backoff Rate used in the calculation of Exponential Backoff. |
 
 ## DataSourceSchema
 
-Represents schema of properties that represent a data entity in the data source. More details on schema can be found [here](/graph/api/resources/externalconnectors-schema).
+Represents schema of properties that represent a data entity in the data source. For more details, see [schema resource type](/graph/api/resources/externalconnectors-schema).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -146,25 +146,25 @@ Represents schema of properties that represent a data entity in the data source.
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-|String |0 | property of type string |
-|Int64 |1 | property of type int64 (long) |
-|Double |2 | property of type double |
-|DateTime |3 |Property of type DateTime |
-|Boolean |4 |Property of type Boolean |
-|StringCollection |5 |Property of type of array or collection of string type |
-|Int64Collection |6 | property of the type of array or collection of long type |
-|DoubleCollection |7 |Property of type of array or collection of double type |
-|DateTimeCollection |8 |Property of type of array or collection of DateTime type |
+|String |0 | Property of type string. |
+|Int64 |1 | Property of type int64 (long). |
+|Double |2 | Property of type double. |
+|DateTime |3 |Property of type DateTime. |
+|Boolean |4 |Property of type Boolean. |
+|StringCollection |5 |Property of type of array or collection of string type. |
+|Int64Collection |6 | Property of the type of array or collection of long type. |
+|DoubleCollection |7 |Property of type of array or collection of double type. |
+|DateTimeCollection |8 |Property of type of array or collection of DateTime type. |
 
 ## SearchAnnotations enumeration members
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
 |None |0 |None |
-|IsSearchable |1 |If a property is searchable, its value is added to the full-text index. When a user performs a search, we return results if there's a search hit in one of the searchable fields or its content. For example, if the property is "Author," searching "Smith" returns items whose Author property contains "Smith." |
+|IsSearchable |1 |If a property is searchable, its value is added to the full-text index. When a user performs a search, results are returned if there's a search hit in one of the searchable fields or its content. For example, if the property is "Author," searching "Smith" returns items whose Author property contains "Smith." |
 |IsQueryable |2 |If a property is queryable, you can query against it using Knowledge Query Language (KQL). KQL consists of one or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(\*). For example, if the property is "Author," the search query can be "Author: Smith" |
 |IsRetrievable |4 |If a property is retrievable, it can return its value in search results. Any property you want to add to the display template or return from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable will increase search latency. Be selective and choose relevant properties. |
-|IsContent |8 |Content property is to identify a property that can be full text indexed. Admins will choose among the available properties, which one should be the property to be treated as content for that specific connection. More on the content property [here](/graph/connecting-external-content-manage-items#content). |
+|IsContent |8 |Content property is to identify a property that can be full text indexed. Admins will choose among the available properties, which one should be the property to be treated as content for that specific connection. For details, see [Content](/graph/connecting-external-content-manage-items#content). |
 |IsRefinable |16 |If a property is refinable, an admin can configure it as a custom filter on the Microsoft Search results page. A refinable property can't be searchable. |
 
 ## SearchPropertyLabel
@@ -198,11 +198,11 @@ Defines a single source property for an item in data source. Read more about sch
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|name |string | Name of the property |
-|type |SourcePropertyType | Data type of the property |
-|defaultSearchAnnotations |uint32 | Default search annotations for the property |
+|name |string | Name of the property. |
+|type |SourcePropertyType | Data type of the property. |
+|defaultSearchAnnotations |uint32 | Default search annotations for the property. |
 |requiredSearchAnnotations |uint32 | Required search annotations. Certain properties like "ID" is always set isQueryable true and isRetrievable true. |
-|defaultSemanticLabels |repeated SearchPropertyLabel | List of semantic labels for the source property |
+|defaultSemanticLabels |repeated SearchPropertyLabel | List of semantic labels for the source property. |
 |order |int32 |\[Optional\]Order of this source property. Used by UI for sorting the search results. |
 |label |string |\[Optional\]Label of this source property. Used by search results UI to display the label (human-readable name). |
 |aliases |repeated string |\[Optional\]List of aliases of this source property. |
