@@ -7,22 +7,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetRecipients( []DriveRecipient {
-	msgraphsdk.NewDriveRecipient(),
-	SetAdditionalData(map[string]interface{}{
-		"email": "john@contoso.com",
-	}
-	msgraphsdk.NewDriveRecipient(),
-	SetAdditionalData(map[string]interface{}{
-		"email": "ryan@external.com",
-	}
+requestBody := graphmodels.NewGrantPostRequestBody()
+
+
+driveRecipient := graphmodels.NewDriveRecipient()
+email := "john@contoso.com"
+driveRecipient.SetEmail(&email) 
+driveRecipient1 := graphmodels.NewDriveRecipient()
+email := "ryan@external.com"
+driveRecipient1.SetEmail(&email) 
+
+recipients := []graphmodels.DriveRecipientable {
+	driveRecipient,
+	driveRecipient1,
+
 }
-requestBody.SetRoles( []String {
+requestBody.SetRecipients(recipients)
+roles := []string {
 	"read",
+
 }
-sharedDriveItemId := "sharedDriveItem-id"
-result, err := graphClient.SharesById(&sharedDriveItemId).Permission().Grant(sharedDriveItem-id).Post(requestBody)
+requestBody.SetRoles(roles)
+
+result, err := graphClient.SharesById("sharedDriveItem-id").Permission().Grant().Post(requestBody)
 
 
 ```

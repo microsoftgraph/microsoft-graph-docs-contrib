@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-graphClient.DeviceManagement().ManagedDevices().BulkReprovisionCloudPc().Post()
+result, err := graphClient.DeviceManagement().ManagedDevices().BulkReprovisionCloudPc().Post()
 
 
 ```

@@ -88,6 +88,8 @@ The following table shows the properties that are required when you create the [
 |dataRoamingBlocked|Boolean|Indicates whether or not to block a user from data roaming.|
 |dateTimeConfigurationBlocked|Boolean|Indicates whether or not to block the user from manually changing the date or time on the device|
 |detailedHelpText|[androidDeviceOwnerUserFacingMessage](../resources/intune-deviceconfig-androiddeviceowneruserfacingmessage.md)|Represents the customized detailed help text provided to users when they attempt to modify managed settings on their device.|
+|deviceOwnerLockScreenMessage|[androidDeviceOwnerUserFacingMessage](../resources/intune-deviceconfig-androiddeviceowneruserfacingmessage.md)|Represents the customized lock screen message provided to users when they attempt to modify managed settings on their device.|
+|securityCommonCriteriaModeEnabled|Boolean|Represents the security common criteria mode enabled provided to users when they attempt to modify managed settings on their device.|
 |factoryResetDeviceAdministratorEmails|String collection|List of Google account emails that will be required to authenticate after a device is factory reset before it can be set up.|
 |factoryResetBlocked|Boolean|Indicates whether or not the factory reset option in settings is disabled.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Proxy is set up directly with host, port and excluded hosts.|
@@ -140,7 +142,7 @@ The following table shows the properties that are required when you create the [
 |networkEscapeHatchAllowed|Boolean|Indicates whether or not the device will allow connecting to a temporary network connection at boot time.|
 |nfcBlockOutgoingBeam|Boolean|Indicates whether or not to block NFC outgoing beam.|
 |passwordBlockKeyguard|Boolean|Indicates whether or not the keyguard is disabled.|
-|passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md) collection|List of device keyguard features to block. This collection can contain a maximum of 7 elements. Possible values are: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`.|
+|passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md) collection|List of device keyguard features to block. This collection can contain a maximum of 7 elements. Possible values are: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`, `face`, `iris`, `biometrics`.|
 |passwordExpirationDays|Int32|Indicates the amount of time that a password can be set for before it expires and a new password will be required. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Indicates the minimum length of the password required on the device. Valid values 4 to 16|
 |passwordMinimumLetterCharacters|Int32|Indicates the minimum number of letter characters required for device password. Valid values 1 to 16|
@@ -192,6 +194,7 @@ The following table shows the properties that are required when you create the [
 |workProfilePasswordPreviousPasswordCountToBlock|Int32|Indicates the length of the work profile password history, where the user will not be able to enter a new password that is the same as any password in the history. Valid values 0 to 24|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect work profile password before the device is wiped. Valid values 4 to 11|
 |workProfilePasswordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the work profile password. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
+|workProfilePasswordRequireUnlock|[androidDeviceOwnerRequiredPasswordUnlock](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordunlock.md)|Indicates the timeout period after which a work profile must be unlocked using a form of strong authentication. Possible values are: `deviceDefault`, `daily`, `unkownFutureValue`.|
 
 
 
@@ -205,7 +208,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 9658
+Content-length: 10090
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -282,6 +285,18 @@ Content-length: 9658
     ],
     "defaultMessage": "Default Message value"
   },
+  "deviceOwnerLockScreenMessage": {
+    "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+    "localizedMessages": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
+        "value": "Value value"
+      }
+    ],
+    "defaultMessage": "Default Message value"
+  },
+  "securityCommonCriteriaModeEnabled": true,
   "factoryResetDeviceAdministratorEmails": [
     "Factory Reset Device Administrator Emails value"
   ],
@@ -453,7 +468,8 @@ Content-length: 9658
   "workProfilePasswordMinimumSymbolCharacters": 10,
   "workProfilePasswordPreviousPasswordCountToBlock": 15,
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-  "workProfilePasswordRequiredType": "required"
+  "workProfilePasswordRequiredType": "required",
+  "workProfilePasswordRequireUnlock": "daily"
 }
 ```
 
@@ -462,7 +478,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9830
+Content-Length: 10262
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -542,6 +558,18 @@ Content-Length: 9830
     ],
     "defaultMessage": "Default Message value"
   },
+  "deviceOwnerLockScreenMessage": {
+    "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+    "localizedMessages": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
+        "value": "Value value"
+      }
+    ],
+    "defaultMessage": "Default Message value"
+  },
+  "securityCommonCriteriaModeEnabled": true,
   "factoryResetDeviceAdministratorEmails": [
     "Factory Reset Device Administrator Emails value"
   ],
@@ -713,7 +741,8 @@ Content-Length: 9830
   "workProfilePasswordMinimumSymbolCharacters": 10,
   "workProfilePasswordPreviousPasswordCountToBlock": 15,
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-  "workProfilePasswordRequiredType": "required"
+  "workProfilePasswordRequiredType": "required",
+  "workProfilePasswordRequireUnlock": "daily"
 }
 ```
 

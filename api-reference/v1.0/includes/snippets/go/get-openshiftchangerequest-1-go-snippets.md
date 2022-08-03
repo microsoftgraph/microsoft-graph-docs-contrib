@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-teamId := "team-id"
-openShiftChangeRequestId := "openShiftChangeRequest-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().OpenShiftChangeRequestsById(&openShiftChangeRequestId).Get()
+
+result, err := graphClient.TeamsById("team-id").Schedule().OpenShiftChangeRequestsById("openShiftChangeRequest-id").Get()
 
 
 ```

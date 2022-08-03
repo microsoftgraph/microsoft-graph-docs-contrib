@@ -21,6 +21,10 @@ Information about a participant in a meeting.
 | upn      | String                        | User principal name of the participant.                                             |
 | role     | onlineMeetingRole             | Specifies the participant's role in the meeting.  Possible values are `attendee`, `presenter`, `producer`, and `unknownFutureValue`.|
 
+> [!TIP]
+>
+> To set the  **presenter** role of a meeting attendee when creating or updating an [onlineMeeting](onlinemeeting.md), the value of **allowedPresenters** must also be set to `roleIsPresenter`.
+
 ## JSON representation
 
 The following is a JSON representation of the resource.

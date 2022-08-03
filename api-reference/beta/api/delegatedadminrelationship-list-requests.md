@@ -63,6 +63,7 @@ Each **delegatedAdminRelationshipRequest** object contains an **@odata.etag** pr
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836/requests
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-delegatedadminrelationshiprequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -71,16 +72,16 @@ GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelations
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-delegatedadminrelationshiprequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-delegatedadminrelationshiprequest-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-delegatedadminrelationshiprequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-delegatedadminrelationshiprequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-delegatedadminrelationshiprequest-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -107,7 +108,7 @@ Content-Type: application/json
       "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
       "id": "ae5a6b9e-6355-43dd-b708-48486b69c3ff",
       "action": "lockForApproval",
-      "status": "complete",
+      "status": "succeeded",
       "createdDateTime": "2022-02-01T06:14:55.5398865Z",
       "lastModifiedDateTime": "2022-02-01T06:14:55.5398865Z"
     },

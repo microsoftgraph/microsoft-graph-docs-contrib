@@ -7,17 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
-	Select: "displayName,description,mailNickname",
-}
 headers := map[string]string{
-	"Prefer": "return=minimal"
+	"Prefer": "return=minimal",
 }
-options := &msgraphsdk.DeltaRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
+requestParameters := &graphconfig.DeltaRequestBuilderGetQueryParameters{
+	Select: [] string {"displayName","description","mailNickname"},
+}
+configuration := &graphconfig.DeltaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Groups().Delta()().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Groups().Delta().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

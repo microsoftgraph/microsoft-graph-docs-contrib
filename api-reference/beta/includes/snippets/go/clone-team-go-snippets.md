@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewClonePostRequestBody()
 displayName := "Library Assist"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Self help community for library"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 mailNickname := "libassist"
-requestBody.SetMailNickname(&mailNickname)
-partsToClone := "apps,tabs,settings,channels,members"
-requestBody.SetPartsToClone(&partsToClone)
-visibility := "public"
-requestBody.SetVisibility(&visibility)
-teamId := "team-id"
-graphClient.TeamsById(&teamId).Clone(team-id).Post(requestBody)
+requestBody.SetMailNickname(&mailNickname) 
+partsToClone := graphmodels.APPS,TABS,SETTINGS,CHANNELS,MEMBERS_CLONABLETEAMPARTS 
+requestBody.SetPartsToClone(&partsToClone) 
+visibility := graphmodels.PUBLIC_TEAMVISIBILITYTYPE 
+requestBody.SetVisibility(&visibility) 
+
+graphClient.TeamsById("team-id").Clone().Post(requestBody)
 
 
 ```

@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Send(message-id).Post()
+
+graphClient.Me().MessagesById("message-id").Send().Post()
 
 
 ```

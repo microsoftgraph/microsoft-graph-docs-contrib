@@ -5,7 +5,7 @@ ms.date: 06/20/2018
 title: StoragePlanInformation
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: files
 ---
 
 # storagePlanInformation resource type

@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-unifiedRoleEligibilityScheduleRequestId := "unifiedRoleEligibilityScheduleRequest-id"
-graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequestsById(&unifiedRoleEligibilityScheduleRequestId).Cancel(unifiedRoleEligibilityScheduleRequest-id).Post()
+
+graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequestsById("unifiedRoleEligibilityScheduleRequest-id").Cancel().Post()
 
 
 ```

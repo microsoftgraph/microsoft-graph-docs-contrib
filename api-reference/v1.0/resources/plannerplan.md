@@ -21,15 +21,17 @@ The **plannerPlan** resource represents a plan in Microsoft 365. A plan can be o
 |[List buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
 |[List tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 |[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
+|[Delete](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. After it is set, this property can’t be updated. Required.|
+|createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
 |createdDateTime|DateTimeOffset|Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only. ID of the plan. It is 28 characters long and case-sensitive. [Format validation](planner-identifiers-disclaimer.md) is done on the service.|
-|owner|String|ID of the [Group](group.md) that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.|
 |title|String|Required. Title of the plan.|
-|createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
+|owner (deprecated) |String| Use the **container** property instead. ID of the [group](group.md) that owns the plan. After it is set, this property can’t be updated. This property will not return a valid group ID if the container of the plan is not a group.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -53,10 +55,15 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "container": {
+    "@odata.type": "microsoft.graph.plannerPlanContainer",
+    "containerId": "String",
+    "type": "String",
+    "url": "String"
+  },
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "owner": "String",
   "title": "String"
 }
 ```

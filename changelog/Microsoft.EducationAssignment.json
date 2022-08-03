@@ -3,6 +3,66 @@
     {
       "ChangeList": [
         {
+          "Id": "0089a052-0ffa-47ba-a8c0-9fad7f1ae0cc",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "educationFeedbackResourceOutcomeStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **educationFeedbackResourceOutcomeStatus** enumeration type.",
+          "Target": "educationFeedbackResourceOutcomeStatus"
+        },
+        {
+          "Id": "0089a052-0ffa-47ba-a8c0-9fad7f1ae0cc",
+          "ApiChange": "Property",
+          "ChangedApiName": "feedbackResourcesFolderUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **feedbackResourcesFolderUrl** property to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "0089a052-0ffa-47ba-a8c0-9fad7f1ae0cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationFeedbackResourceOutcome",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationFeedbackResourceOutcome](https://docs.microsoft.com/en-us/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-beta) resource and supported methods.",
+          "Target": "educationFeedbackResourceOutcome"
+        },
+        {
+          "Id": "0089a052-0ffa-47ba-a8c0-9fad7f1ae0cc",
+          "ApiChange": "Method",
+          "ChangedApiName": "setUpFeedbackResourcesFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the [setUpFeedbackResourcesFolder](https://docs.microsoft.com/en-us/graph/api/educationassignment-setUpFeedbackResourcesFolder?view=graph-rest-beta) method to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "0089a052-0ffa-47ba-a8c0-9fad7f1ae0cc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-03T21:16:31.1455686Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {      
+          "Id": "89d1da80-c72a-11ec-9d64-0242ac120002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationTeamsAppResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationTeamsAppResource](https://docs.microsoft.com/en-us/graph/api/resources/educationteamsappresource?view=graph-rest-beta) resource type.",
+          "Target": "educationTeamsAppResource"
+        }
+      ],
+      "Id": "89d1da80-c72a-11ec-9d64-0242ac120002",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-17T14:48:15.2227943Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a85673b2-5302-459e-94d3-15d744c3b4dd",
           "ApiChange": "Method",
           "ChangedApiName": "delta",
@@ -22,10 +82,10 @@
       "Id": "a85673b2-5302-459e-94d3-15d744c3b4dd",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-05-11T23:50:05.475343Z",
+      "CreatedDateTime": "2022-05-11T23:50:05.475343Z",          
       "WorkloadArea": "Education",
       "SubArea": ""
-    },
+    },          
     {
       "ChangeList": [
         {

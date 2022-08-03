@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgUserPresence -UserId $userId
+Get-MgUserPresence -UserId $userId -OutFile $outFileId
 
 ```

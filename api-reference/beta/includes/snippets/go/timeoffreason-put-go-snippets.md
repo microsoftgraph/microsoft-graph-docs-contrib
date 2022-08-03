@@ -7,21 +7,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"displayName": "Vacation",
-	"iconType": "plane",
-	"isActive": true,
-}
 headers := map[string]string{
-	"Prefer": "return=representation"
+	"Prefer": "return=representation",
 }
-options := &msgraphsdk.TimeOffReasonRequestBuilderPutRequestConfiguration{
+configuration := &graphconfig.TimeOffReasonRequestBuilderPutRequestConfiguration{
 	Headers: headers,
 }
-teamId := "team-id"
-timeOffReasonId := "timeOffReason-id"
-graphClient.TeamsById(&teamId).Schedule().TimeOffReasonsById(&timeOffReasonId).PutWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
+requestBody := graphmodels.NewTimeOffReason()
+additionalData := map[string]interface{}{
+	"displayName" : "Vacation", 
+	"iconType" : "plane", 
+	isActive := true
+requestBody.SetIsActive(&isActive) 
+}
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.TeamsById("team-id").Schedule().TimeOffReasonsById("timeOffReason-id").PutWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
 
 
 ```

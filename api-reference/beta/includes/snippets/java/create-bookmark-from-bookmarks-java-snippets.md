@@ -27,17 +27,11 @@ platformsList.add(DevicePlatformType.ANDROID);
 bookmark.platforms = platformsList;
 LinkedList<AnswerVariant> targetedVariationsList = new LinkedList<AnswerVariant>();
 AnswerVariant targetedVariations = new AnswerVariant();
-targetedVariations.languageTag = "es-ES";
+targetedVariations.languageTag = "es-es";
 targetedVariations.displayName = "Sitio de instalación Contoso";
 targetedVariations.description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto";
 targetedVariationsList.add(targetedVariations);
 bookmark.targetedVariations = targetedVariationsList;
-LinkedList<String> groupIdsList = new LinkedList<String>();
-groupIdsList.add("groupId");
-bookmark.groupIds = groupIdsList;
-LinkedList<String> powerAppIdsList = new LinkedList<String>();
-powerAppIdsList.add("powerAppId");
-bookmark.powerAppIds = powerAppIdsList;
 bookmark.state = AnswerState.PUBLISHED;
 
 graphClient.search().bookmarks()

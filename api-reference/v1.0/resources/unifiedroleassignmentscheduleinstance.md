@@ -32,8 +32,8 @@ Inherits from [unifiedRoleScheduleInstanceBase](../resources/unifiedroleschedule
 |id|String|The unique identifier for the **unifiedRoleAssignmentScheduleInstance** object. Inherited from [entity](../resources/entity.md).|
 |memberType|String|How the assignments is inherited. It can either be `Inherited`, `Direct`, or `Group`. It can further imply whether the **unifiedRoleAssignmentSchedule** can be managed by the caller. Supports `$filter` (`eq`, `ne`).|
 |principalId|String|Identifier of the principal that has been granted the role assignment. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). Supports `$filter` (`eq`, `ne`). |
-|roleAssignmentOriginId|String|The identifier of the role assignment in Azure AD.|
-|roleAssignmentScheduleId|String|The identifier of the **unifiedRoleAssignmentSchedule** object from which this instance was created.|
+|roleAssignmentOriginId|String|The identifier of the role assignment in Azure AD. Supports `$filter` (`eq`, `ne`).|
+|roleAssignmentScheduleId|String|The identifier of the **unifiedRoleAssignmentSchedule** object from which this instance was created. Supports `$filter` (`eq`, `ne`).|
 |roleDefinitionId|String|The identifier of the [unifiedRoleDefinition](unifiedroledefinition.md) object that is being assigned to the principal. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). Supports `$filter` (`eq`, `ne`).|
 |startDateTime|DateTimeOffset|When this instance starts.|
 

@@ -7,20 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-sourceFile := msgraphsdk.NewItemReference()
-requestBody.SetSourceFile(sourceFile)
-sharepointIds := msgraphsdk.NewSharepointIds()
-sourceFile.SetSharepointIds(sharepointIds)
+requestBody := graphmodels.NewCopyToDefaultContentLocationPostRequestBody()
+sourceFile := graphmodels.NewItemReference()
+sharepointIds := graphmodels.NewSharepointIds()
 listId := "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
-sharepointIds.SetListId(&listId)
+sharepointIds.SetListId(&listId) 
 listItemId := "2"
-sharepointIds.SetListItemId(&listItemId)
+sharepointIds.SetListItemId(&listItemId) 
+sourceFile.SetSharepointIds(sharepointIds)
+requestBody.SetSourceFile(sourceFile)
 destinationFileName := "newname.txt"
-requestBody.SetDestinationFileName(&destinationFileName)
-siteId := "site-id"
-contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).CopyToDefaultContentLocation(site-id, contentType-id).Post(requestBody)
+requestBody.SetDestinationFileName(&destinationFileName) 
+
+graphClient.SitesById("site-id").ContentTypesById("contentType-id").CopyToDefaultContentLocation().Post(requestBody)
 
 
 ```

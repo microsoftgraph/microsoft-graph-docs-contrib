@@ -7,14 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.RoleAssignmentScheduleRequestsRequestBuilderGetQueryParameters{
-	Select: "principalId,action,roleDefinitionId",
-	Expand: "roleDefinition,activatedUsing,principal,targetSchedule",
+requestParameters := &graphconfig.RoleAssignmentScheduleRequestsRequestBuilderGetQueryParameters{
+	Select: [] string {"principalId","action","roleDefinitionId"},
+	Expand: [] string {"roleDefinition","activatedUsing","principal","targetSchedule"},
 }
-options := &msgraphsdk.RoleAssignmentScheduleRequestsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.RoleAssignmentScheduleRequestsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

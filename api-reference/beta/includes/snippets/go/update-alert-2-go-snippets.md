@@ -7,35 +7,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAlert()
-assignedTo := "String"
-requestBody.SetAssignedTo(&assignedTo)
-closedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
-requestBody.SetClosedDateTime(&closedDateTime)
-requestBody.SetComments( []String {
-	"String",
-}
-feedback := "@odata.type: microsoft.graph.alertFeedback"
-requestBody.SetFeedback(&feedback)
-status := "@odata.type: microsoft.graph.alertStatus"
-requestBody.SetStatus(&status)
-requestBody.SetTags( []String {
-	"String",
-}
-vendorInformation := msgraphsdk.NewSecurityVendorInformation()
-requestBody.SetVendorInformation(vendorInformation)
-provider := "String"
-vendorInformation.SetProvider(&provider)
-vendor := "String"
-vendorInformation.SetVendor(&vendor)
 headers := map[string]string{
-	"Prefer": "return=representation"
+	"Prefer": "return=representation",
 }
-options := &msgraphsdk.AlertRequestBuilderPatchRequestConfiguration{
+configuration := &graphconfig.AlertRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
-alertId := "alert-id"
-graphClient.Security().AlertsById(&alertId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
+requestBody := graphmodels.NewAlert()
+assignedTo := "String"
+requestBody.SetAssignedTo(&assignedTo) 
+closedDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
+requestBody.SetClosedDateTime(&closedDateTime) 
+comments := []string {
+	"String",
+
+}
+requestBody.SetComments(comments)
+feedback := graphmodels.ALERTFEEDBACK_GRAPH_TYPE: MICROSOFT_@ODATA_ALERTFEEDBACK 
+requestBody.SetFeedback(&feedback) 
+status := graphmodels.ALERTSTATUS_GRAPH_TYPE: MICROSOFT_@ODATA_ALERTSTATUS 
+requestBody.SetStatus(&status) 
+tags := []string {
+	"String",
+
+}
+requestBody.SetTags(tags)
+vendorInformation := graphmodels.NewSecurityVendorInformation()
+provider := "String"
+vendorInformation.SetProvider(&provider) 
+vendor := "String"
+vendorInformation.SetVendor(&vendor) 
+requestBody.SetVendorInformation(vendorInformation)
+
+graphClient.Security().AlertsById("alert-id").PatchWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
 
 
 ```
