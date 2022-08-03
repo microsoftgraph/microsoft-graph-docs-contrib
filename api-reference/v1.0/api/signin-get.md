@@ -79,7 +79,7 @@ Here is an example of the request.
   "name": "get_signin"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/signIns/66ea54eb-6301-4ee5-be62-ff5a759b0100
 ```
 

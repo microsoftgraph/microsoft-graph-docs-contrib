@@ -33,7 +33,7 @@ $addLicensesArray []= $addLicensesAssignedLicense2;
 $requestBody->setAddLicenses($addLicensesArray);
 
 
-$requestBody->setRemoveLicenses(]);
+$requestBody->setRemoveLicenses([]);
 
 
 

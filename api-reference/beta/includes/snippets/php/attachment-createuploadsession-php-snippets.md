@@ -15,7 +15,7 @@ $attachmentItem->setAttachmentType(new AttachmentType('file'));
 
 $attachmentItem->setName('flower');
 
-$attachmentItem->setSize(size);
+$attachmentItem->setSize(3483322);
 
 
 $requestBody->setAttachmentItem($attachmentItem);

@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new TiIndicator();
 $requestBody->setAdditionalInformation('additionalInformation-after-update');
 
-$requestBody->setConfidence(confidence);
+$requestBody->setConfidence(42);
 
 $requestBody->setDescription('description-after-update');
 

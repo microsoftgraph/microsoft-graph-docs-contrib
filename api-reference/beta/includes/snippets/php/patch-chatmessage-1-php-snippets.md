@@ -53,11 +53,11 @@ $body->setContent('Edit text only');
 
 
 $requestBody->setBody($body);
-$requestBody->setAttachments(]);
+$requestBody->setAttachments([]);
 
-$requestBody->setMentions(]);
+$requestBody->setMentions([]);
 
-$requestBody->setReactions(]);
+$requestBody->setReactions([]);
 
 
 
