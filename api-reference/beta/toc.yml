@@ -15062,7 +15062,7 @@ items:
             href: api/security-ediscoveryreviewtag-ashierarchy.md
       - name: Information protection
         items:
-        - name: Labels
+        - name: Labels (deprecated)
           href: resources/informationprotectionlabel.md
           items:
           - name: List labels
@@ -15077,6 +15077,23 @@ items:
             href: api/informationprotectionlabel-evaluateremoval.md
           - name: Extract label
             href: api/informationprotectionlabel-extractlabel.md
+        - name: Sensitivity labels
+          href: resources/security-sensitivitylabel.md
+          items:
+          - name: List
+            href: api/security-informationprotection-list-sensitivitylabels.md
+          - name: Get
+            href: api/security-sensitivitylabel-get.md
+          - name: Evaluate application
+            href: api/security-sensitivitylabel-evaluateapplication.md
+          - name: Evaluate classification result
+            href: api/security-sensitivitylabel-evaluateclassificationresults.md
+          - name: Evaluate removal
+            href: api/security-sensitivitylabel-evaluateremoval.md
+          - name: Extract content label
+            href: api/security-sensitivitylabel-extractcontentlabel.md
+        - name: Label policy settings
+          href: resources/security-informationprotectionpolicysetting-get.md
         - name: Threat assessment
           items:
           - name: Overview
