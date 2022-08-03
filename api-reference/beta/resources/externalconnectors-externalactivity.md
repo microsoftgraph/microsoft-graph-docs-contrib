@@ -29,7 +29,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|performedBy|[identity](../resources/externalconnectors-identity.md)|Represents an identity used to identify who is responsible for the activity. Inherited from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).|
+|performedBy|[identity](../resources/externalconnectors-identity.md)|Represents an identity used to identify who is responsible for the activity.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
