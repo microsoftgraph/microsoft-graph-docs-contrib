@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission.
 
 Note that files must be located in this folder in order to be added as resources. Only a student in the class can determine what files to upload in a given submission-level resource folder. 
@@ -41,14 +39,21 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 Provide an empty json `{}` as request body for this method.
 
 ## Response
-If successful, this method returns a `200 Ok` response code. The body will contain the submission model.
+If successful, this method returns a `200 OK` response code. The body will contain the submission model.
 
-## Example
-The following example shows how to call this API.
+If the assignment is already in submitted state or if the assignment is no longer open for submission, this method returns a `400 Bad Request` response code.
 
-### Request
-The following is an example of a request.
+## Examples
 
+### Example 1: Set up a resource folder for a submission
+
+#### Request
+The following is an example of a request that triggers the creation of a SharePoint resource folder for a submission.
+
+### Example 1: Set up a resource folder for a submission
+
+#### Request
+The following is an example of a request that triggers the creation of a SharePoint resource folder for a submission.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -56,7 +61,7 @@ The following is an example of a request.
   "name": "educationsubmission_setupresourcesfolder"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/education/classes/b07edbef-7420-4b3d-8f7c-d599cf21e069/assignments/1e5222bd-b7d2-4d64-8a22-74b722ce2fc6/submissions/803fb5dd-3553-455f-3d94-f79fb54a1003/setUpResourcesFolder
+POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-d599cf21e069/assignments/222bd-b7d2-4d64-8a22-74b722ce2fc6/submissions/803fb5dd-3553-455f-3d94-f79fb54a1003/setUpResourcesFolder
 Content-type: application/json
 
 {
@@ -79,8 +84,9 @@ Content-type: application/json
 
 ---
 
-### Response
-The following is an example of a response. 
+#### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -92,7 +98,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('1e5222bd-b7d2-4d64-8a22-74b722ce2fc6')/submissions/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('1e5222bd-b7d2-4d64-8a22-74b722ce2fc6')/submissions/$entity",
     "status": "working",
     "submittedDateTime": null,
     "unsubmittedDateTime": null,
@@ -129,6 +135,93 @@ Content-type: application/json
     },
     "resources": [],
     "submittedResources": []
+}
+```
+
+### Example 2: Set up a resource folder when the assignment is no longer open for submission
+
+#### Request
+The following is an example of a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment is no longer open for submission.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "educationsubmission_setupresourcesfolder"
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-d599cf21e069/assignments/1e5222bd-b7d2-4d64-8a22-74b722ce2fc6/submissions/803fb5dd-3553-455f-3d94-f79fb54a1003/setUpResourcesFolder
+Content-type: application/json
+
+{
+}
+```
+
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission"
+} -->
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "badRequest",
+        "message": "Bad request.",
+        "innerError": {
+            "code": "assignmentHasBeenSubmitted",
+            "message": "Resource folder cannot be set up for assignments that are no longer open for submissions."
+        }
+    }
+}
+```
+
+### Example 3: Set up a resource folder when the assignment is already in submitted state
+
+#### Request
+The following is an example of a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment has already been submitted.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "educationsubmission_setupresourcesfolder"
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-d599cf21e069/assignments/1e5222bd-b7d2-4d64-8a22-74b722ce2fc6/submissions/803fb5dd-3553-455f-3d94-f79fb54a1003/setUpResourcesFolder
+Content-type: application/json
+
+{
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission"
+} -->
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "badRequest",
+        "message": "Bad request.",
+        "innerError": {
+            "code": "assignmentHasBeenSubmitted",
+            "message": "Resource folder cannot be set up while the submission is in the submitted state."
+        }
+    }
 }
 ```
 
