@@ -1305,7 +1305,7 @@
           "ChangeType": "Deletion",
           "Description": "Removed the **externalActivityBase** abstract type.",
           "Target": "externalItem"
-        },
+        }
       ],
       "Id": "64c31dc7-33b5-45bb-b751-760160b49ad3",
       "Cloud": "prd",
