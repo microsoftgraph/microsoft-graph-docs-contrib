@@ -1,7 +1,7 @@
 ### YamlMime:Tutorial
-title: Build One Productivity Hub app by using Microsoft Graph Toolkit
+title: Build productivity apps by using Microsoft Graph Toolkit
 metadata:
-  title: Build One Productivity Hub app by using Microsoft Graph Toolkit
+  title: Build productivity apps by using Microsoft Graph Toolkit
   description: In this tutorial, you'll build a web app to monitor your calendar events, to-do tasks and files by using Microsoft Graph Toolkit components and MSAL2 provider.
   audience: Developer
   level: Beginner
@@ -12,7 +12,7 @@ metadata:
   ms.custom: scenarios:getting-started, languages:HTML, CSS 
   ms.prod: toolkit
 items:
-  - title: Build One Productivity Hub app by using Microsoft Graph Toolkit
+  - title: Build productivity apps by using Microsoft Graph Toolkit
     durationInMinutes: 5
     content: |
       [!INCLUDE [](includes/graph-toolkit-building-one-productivity-hub-01-intro.md)]
@@ -20,7 +20,7 @@ items:
     durationInMinutes: 10
     content: |
       [!INCLUDE [](includes/graph-toolkit-building-one-productivity-hub-02-register-app.md)]
-  - title: Build the application
+  - title: Create the application
     durationInMinutes: 10
     content: |
       [!INCLUDE [](includes/graph-toolkit-building-one-productivity-hub-03-build-app.md)]

@@ -8,9 +8,7 @@ In this step, you'll create a web app and enable authentication with Microsoft G
 
 1. Select `CTRL + SPACE` and choose **HTML sample** from the options.
 
-## Enable authentication with the Microsoft Graph Toolkit
-
-To use the Microsoft Graph Toolkit via mgt-loader, add the following reference in **index.html** under the `<body></body>` section:
+1. Enable authentication with the Microsoft Graph Toolkit via mgt-loader, add the following reference in **index.html** under the `<body></body>` section:
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
@@ -26,13 +24,10 @@ To use the Microsoft Graph Toolkit via mgt-loader, add the following reference i
         scopes="User.Read,
         User.ReadBasic.All,
         Calendars.Read,
-        Files.Read,
         Files.Read.All,
         Sites.Read.All,
-        Tasks.Read,
         Tasks.ReadWrite,
-        People.Read,
-        User.ReadBasic.All">    
+        People.Read">    
     </mgt-msal2-provider>
     ```
 
@@ -56,19 +51,16 @@ To use the Microsoft Graph Toolkit via mgt-loader, add the following reference i
     </head>
     <body>
       <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
-      <mgt-msal2-provider 
-          client-id="<YOUR_CLIENT_ID>"
-          scopes="User.Read,
-          User.ReadBasic.All,
-          Calendars.Read,
-          Files.Read,
-          Files.Read.All,
-          Sites.Read.All,
-          Tasks.Read,
-          Tasks.ReadWrite,
-          People.Read,
-          User.ReadBasic.All">    
-      </mgt-msal2-provider>
+     <mgt-msal2-provider 
+        client-id="<YOUR_CLIENT_ID>"
+        scopes="User.Read,
+        User.ReadBasic.All,
+        Calendars.Read,
+        Files.Read.All,
+        Sites.Read.All,
+        Tasks.ReadWrite,
+        People.Read">    
+    </mgt-msal2-provider>
     </body>
     </html>
     ```

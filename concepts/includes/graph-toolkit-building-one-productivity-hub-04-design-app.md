@@ -2,7 +2,7 @@ In this step, you'll design your web app by using Microsoft Graph Toolkit compon
 
 ## Initialize the Login component
 
-In **index.html** inside the `<body></body>`, create `<div></div>` right under the provider and add the Login component inside the div:
+In **index.html** inside the `<body></body>`, create `<div></div>` right under the provider and add the Login component inside the div into your code block below:
 
   ```html
   <mgt-login></mgt-login>
@@ -152,18 +152,15 @@ Under div tagged with `class="row"`, add the File list component inside the thir
     <body>
       <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
       <mgt-msal2-provider 
-          client-id="<YOUR_CLIENT_ID>"
-          scopes="User.Read,
-          User.ReadBasic.All,
-          Calendars.Read,
-          Files.Read,
-          Files.Read.All,
-          Sites.Read.All,
-          Tasks.Read,
-          Tasks.ReadWrite,
-          People.Read,
-          User.ReadBasic.All">    
-      </mgt-msal2-provider>    
+        client-id="<YOUR_CLIENT_ID>"
+        scopes="User.Read,
+        User.ReadBasic.All,
+        Calendars.Read,
+        Files.Read.All,
+        Sites.Read.All,
+        Tasks.ReadWrite,
+        People.Read">    
+    </mgt-msal2-provider>   
       <div>
         <mgt-login></mgt-login>
             

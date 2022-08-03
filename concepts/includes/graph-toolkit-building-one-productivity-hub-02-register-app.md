@@ -1,4 +1,4 @@
-After all the prerequisites are in place, you will be able to register an application in the Azure Active Directory. The registration is necessary in order to authenticate the application through Microsoft Graph Toolkit MSAL2 provider and use UI components.
+Register an application in the Azure Active Directory to enable user authentication for your application.
 
 1. Go to [Azure Portal](https://portal.azure.com) and sign in with your Microsoft 365 Developer Program tenant.
 1. Select **Azure Active Directory** from the left pane.
