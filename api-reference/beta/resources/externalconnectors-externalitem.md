@@ -23,7 +23,7 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 | [Get externalItem](../api/externalconnectors-externalitem-get.md)                | [externalItem](externalconnectors-externalitem.md) | Get an **externalItem**.    |
 | [Update externalItem](../api/externalconnectors-externalitem-update.md)          | [externalItem](externalconnectors-externalitem.md) | Update an **externalItem**. |
 | [Delete externalItem](../api/externalconnectors-externalitem-delete.md)          | None                            | Delete an externalItem. |
-|[addActivities](../api/externalconnectors-externalitem-addactivities.md)|[microsoft.graph.externalConnectors.externalActivityBase](../resources/externalconnectors-externalactivityBase.md) collection|Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an **externalItem**.|
+|[addActivities](../api/externalconnectors-externalitem-addactivities.md)|[microsoft.graph.externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivity.md) collection|Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an **externalItem**.|
 
 ## Properties
 
@@ -37,7 +37,7 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 ## Relationships
 | Relationship | Type                                                     | Description |
 |:-------------|:---------------------------------------------------------|:---|
-| activities        | [microsoft.graph.externalConnectors.externalActivityBase](externalconnectors-externalactivitybase.md) collection               | Write-only property. Returns results. |
+| activities        | [microsoft.graph.externalConnectors.externalActivity](externalconnectors-externalactivity.md) collection               | Write-only property. Returns results. |
 
 ## JSON representation
 

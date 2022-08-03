@@ -16,9 +16,6 @@ Namespace: microsoft.graph.externalConnectors
 
 Represents a record of a user interaction with an [externalItem](externalconnectors-externalitem.md) object.
 
-
-Inherits from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).
-
 ## Methods
 None.
 
@@ -26,8 +23,8 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|When the particular activity occurred. Inherited from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).|
-|type|externalConnectors.externalActivityType|The type of activity performed. Inherited from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md). The possible values are: `viewed`, `modified`, `created`, `commented`, `unknownFutureValue`.|
+|startDateTime|DateTimeOffset|When the particular activity occurred.|
+|type|externalConnectors.externalActivityType|The type of activity performed. The possible values are: `viewed`, `modified`, `created`, `commented`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -38,8 +35,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.externalConnectors.externalActivity",
-  "baseType": "microsoft.graph.externalConnectors.externalActivityBase",
+  "@odata.type": "microsoft.graph.externalConnectors.externalActivity"
 }
 -->
 ``` json
