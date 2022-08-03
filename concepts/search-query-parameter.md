@@ -134,7 +134,7 @@ Azure AD resources and their relationships that derive from [directoryObject](/g
 > - The tokenized search support works only on the **displayName** and **description** fields. Any field of String type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior.
 
 For example:
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "search_groups"
@@ -146,7 +146,7 @@ GET https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo OR ma
 This looks for all groups with display names that has `one` and `video` tokens, or mail starting with `onevideo`.  
 
 `$search` can be used together with `$filter`:
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "search_filter_groups"
