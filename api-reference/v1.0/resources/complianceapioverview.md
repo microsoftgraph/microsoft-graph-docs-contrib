@@ -17,6 +17,6 @@ Use the Microsoft Graph compliance and privacy APIs to build applications that:
 
 ## Subject rights request
 
-Privacy management provides powerful subject rights requests capabilities to help you handle requests from people seeking to manage their personal data within your organization. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. Privacy management empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among your organization’s data in Exchange, SharePoint, OneDrive, and Teams. Learn more about [Microsoft 365 subject rights requests](/microsoft-365/compliance/privacy-management-subject-rights-requests).
+Microsoft Priva provides powerful subject rights requests capabilities to help you handle requests from people seeking to manage their personal data within your organization. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. Microsoft Priva empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among your organization’s data in Exchange, SharePoint, OneDrive, and Teams. Learn more about [Priva Subject Rights Requests](/microsoft-365/compliance/privacy-management-subject-rights-requests).
 
-Explore the [Microsoft 365 subject rights request APIs](subjectrightsrequest-subjectrightsrequestapioverview.md).
+Explore the [subject rights request APIs](subjectrightsrequest-subjectrightsrequestapioverview.md).

@@ -7,15 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAuthenticationContextClassReference()
+requestBody := graphmodels.NewAuthenticationContextClassReference()
 id := "c1"
-requestBody.SetId(&id)
+requestBody.SetId(&id) 
 displayName := "Contoso medium"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Medium protection level defined for Contoso policy"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 isAvailable := true
-requestBody.SetIsAvailable(&isAvailable)
+requestBody.SetIsAvailable(&isAvailable) 
+
 result, err := graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferences().Post(requestBody)
 
 

@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1766
+Content-Length: 2171
 
 {
   "value": [
@@ -106,7 +106,19 @@ Content-Length: 1766
       "bootFromExternalMedia": "enabled",
       "bootFromBuiltInNetworkAdapters": "enabled",
       "windowsPlatformBinaryTable": "enabled",
-      "simultaneousMultiThreading": "enabled"
+      "simultaneousMultiThreading": "enabled",
+      "frontCamera": "enabled",
+      "rearCamera": "enabled",
+      "infraredCamera": "enabled",
+      "microphone": "enabled",
+      "bluetooth": "enabled",
+      "wirelessWideAreaNetwork": "enabled",
+      "nearFieldCommunication": "enabled",
+      "wiFi": "enabled",
+      "usbTypeAPort": "enabled",
+      "sdCard": "enabled",
+      "wakeOnLAN": "enabled",
+      "wakeOnPower": "enabled"
     }
   ]
 }

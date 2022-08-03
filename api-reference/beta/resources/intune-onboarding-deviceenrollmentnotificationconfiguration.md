@@ -44,7 +44,8 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune-shared-devicee
 |platformType|[enrollmentRestrictionPlatformType](../resources/intune-onboarding-enrollmentrestrictionplatformtype.md)|Platform type of the Enrollment Notification. Possible values are: `allPlatforms`, `ios`, `windows`, `windowsPhone`, `android`, `androidForWork`, `mac`.|
 |templateType|[enrollmentNotificationTemplateType](../resources/intune-onboarding-enrollmentnotificationtemplatetype.md)|Template type of the Enrollment Notification. Possible values are: `email`, `push`, `unknownFutureValue`.|
 |notificationMessageTemplateId|Guid|Notification Message Template Id|
-|brandingOptions|[enrollmentNotificationBrandingOptions](../resources/intune-onboarding-enrollmentnotificationbrandingoptions.md)|Branding Options for the Enrollment Notification. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`, `includeCompanyPortalLink`, `includeDeviceDetails`.|
+|notificationTemplates|String collection|The list of notification data - <TemplateType>_<NotificationMessageTemplateId>|
+|brandingOptions|[enrollmentNotificationBrandingOptions](../resources/intune-onboarding-enrollmentnotificationbrandingoptions.md)|Branding Options for the Enrollment Notification. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`, `includeCompanyPortalLink`, `includeDeviceDetails`, `unknownFutureValue`.|
 |defaultLocale|String|DefaultLocale for the Enrollment Notification|
 
 ## Relationships
@@ -77,6 +78,9 @@ Here is a JSON representation of the resource.
   "platformType": "String",
   "templateType": "String",
   "notificationMessageTemplateId": "Guid",
+  "notificationTemplates": [
+    "String"
+  ],
   "brandingOptions": "String",
   "defaultLocale": "String"
 }

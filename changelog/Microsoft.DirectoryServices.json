@@ -1,5 +1,383 @@
 {
-  "changelog": [	
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "6e339b5a-968a-4b2d-bfa0-c851ed3828fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "squareLogoDark",
+          "ChangeType": "Addition",
+          "Description": "Added the **squareLogoDark** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "6e339b5a-968a-4b2d-bfa0-c851ed3828fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "squareLogoDarkRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **squareLogoDarkRelativeUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        }
+      ],
+      "Id": "6e339b5a-968a-4b2d-bfa0-c851ed3828fc",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-07T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": " Identity and sign-in"
+    }, 	   
+    {
+      "ChangeList": [
+        {
+          "Id": "57605124-495d-44fe-82ed-98dff8bb9c17",
+          "ApiChange": "Method",
+          "ChangedApiName": "directory",
+          "ChangeType": "Addition",
+          "Description": "Added support for [restoring deleted service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-beta) and [permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-beta).",
+          "Target": "directory"
+        }
+      ],
+      "Id": "57605124-495d-44fe-82ed-98dff8bb9c17",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-13T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cab24518-1fdb-44a8-997b-2a6a07e8e15c",
+          "ApiChange": "Method",
+          "ChangedApiName": "directory",
+          "ChangeType": "Addition",
+          "Description": "Added support for [restoring deleted service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-1.0) and [permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-1.0).",
+          "Target": "directory"
+        }
+      ],
+      "Id": "cab24518-1fdb-44a8-997b-2a6a07e8e15c",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-13T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6c83378e-32f7-4a90-be50-fba95f7890ae",
+          "ApiChange": "Method",
+          "ChangedApiName": "reprocess",
+          "ChangeType": "Addition",
+          "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/reprocess?view=graph-rest-1.0) method to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignment?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignment"
+        },
+        {
+          "Id": "6c83378e-32f7-4a90-be50-fba95f7890ae",
+          "ApiChange": "Method",
+          "ChangedApiName": "reprocess",
+          "ChangeType": "Addition",
+          "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/reprocess?view=graph-rest-1.0) method to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        }
+      ],
+      "Id": "6c83378e-32f7-4a90-be50-fba95f7890ae",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-08T02:09:36.1935694Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicy?view=graph-rest-1.0) resource and related methods. Represents the base policy in the directory for cross-tenant access settings and exposes the relationships used to define the tenant-wide default and partner-specific cross-tenant access settings.",
+          "Target": "crossTenantAccessPolicy"
+        },
+        {
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "crossTenantAccessPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossTenantAccessPolicy** relationship to the [policyRoot](https://docs.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-1.0) resource.",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantRelationshipAccessPolicyBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantRelationshipAccessPolicyBase](https://docs.microsoft.com/en-us/graph/api/resources/tenantrelationshipaccesspolicybase?view=graph-rest-1.0) resource.",
+          "Target": "tenantRelationshipAccessPolicyBase"
+        },
+        {
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyConfigurationDefault",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyConfigurationDefault](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-1.0) resource and related methods. Represents the default configuration defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyConfigurationPartner",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyConfigurationPartner](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource and related methods. Represents the partner-specific configuration that is defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyInboundTrust",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyInboundTrust](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyinboundtrust?view=graph-rest-1.0) resource. This complex type defines the conditional access claims you want to accept from other Azure AD organizations via your cross-tenant access policy configuration.",
+          "Target": "crossTenantAccessPolicyInboundTrust"
+        },
+        {
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyB2BSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyB2BSetting](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyb2bsetting?view=graph-rest-1.0) resource. This complex type defines the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration.",
+          "Target": "crossTenantAccessPolicyB2BSetting"
+        },
+        {
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyTarget](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicytarget?view=graph-rest-1.0) resource. This complex type defines whether the cross-tenant access settings are targeted to specific users, groups, or applications.",
+          "Target": "crossTenantAccessPolicyTarget"
+        },
+        {
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyTargetConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyTargetConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicytargetconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyTargetConfiguration"
+        },
+        {
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "crossTenantAccessPolicyTargetConfigurationAccessType",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossTenantAccessPolicyTargetConfigurationType** enumeration.",
+          "Target": "crossTenantAccessPolicyTargetConfigurationAccessType"
+        },
+        {
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "crossTenantAccessPolicyTargetType",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossTenantAccessPolicyTargetType** enumeration.",
+          "Target": "crossTenantAccessPolicyTargetType"
+        }
+      ],
+      "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-30T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+      {
+          "Id": "3dab5ede-46c2-4ee7-b8ce-bc09b7299e3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "links",
+          "ChangeType": "Addition",
+          "Description": "Added the **links** property to the [synchronizationJobSubject](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationjobsubject?view=graph-rest-beta) resource.",
+          "Target": "synchronizationJobSubject"
+        },
+        {
+          "Id": "3dab5ede-46c2-4ee7-b8ce-bc09b7299e3f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationLinkedObjects",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationLinkedObjects](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationlinkedobjects?view=graph-rest-beta) resource type.",
+          "Target": "synchronizationLinkedObjects"
+        }
+      ],
+      "Id": "3dab5ede-46c2-4ee7-b8ce-bc09b7299e3f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-27T06:27:32.7966576Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+{
+      "ChangeList": [
+        {
+          "Id": "fb19b0a4-779e-11ec-90d6-0242ac120003",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateServicePlan",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [activateServicePlan](https://docs.microsoft.com/en-us/graph/api/user-activateServicePlan?view=graph-rest-beta) method from the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. This method will stop returning data after June 30th, 2022.",
+          "Target": "user"
+        },
+        {
+          "Id": "fb19b0a4-779e-11ec-90d6-0242ac120003",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateService",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [activateService](https://docs.microsoft.com/en-us/graph/api/organization-activateService?view=graph-rest-beta) method from the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource. This method will stop returning data after June 30th, 2022.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "fb19b0a4-779e-11ec-90d6-0242ac120003",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-31T13:08:01.353Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "eaf1d043-b258-4b47-afce-9183e50aacb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the **federatedIdentityCredentials** relationship to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        },
+        {
+          "Id": "eaf1d043-b258-4b47-afce-9183e50aacb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityCredential",
+          "ChangeType": "Addition",
+          "Description": "Added the [federatedIdentityCredential](https://docs.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-1.0) resource and associated methods. A federated identity credential is a secure method for managing an application's credentials that allows a tenant's cloud applications to access Azure AD without using secrets and certificates.",
+          "Target": "federatedIdentityCredential"
+        },
+        {
+          "Id": "eaf1d043-b258-4b47-afce-9183e50aacb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the **federatedIdentityCredentials** relationship to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "eaf1d043-b258-4b47-afce-9183e50aacb2",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-02T22:47:12.6780409Z",
+       "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3502cca7-ee24-4cbe-8d84-0210e9be406e",
+          "ApiChange": "Method",
+          "ChangedApiName": "roleAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added example to [Create unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta) for how to assign role with attribute set scope.",
+          "Target": "unifiedRoleAssignment"
+        }
+      ],
+      "Id": "3502cca7-ee24-4cbe-8d84-0210e9be406e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-09T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a0f4e06a-44ef-4cce-89bd-d92cecc7dfe6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "memberOf",
+          "ChangeType": "Addition",
+          "Description": "Added `administrativeUnit` as a supported return type of the [List memberOf](https://docs.microsoft.com/en-us/graph/api/device-list-memberOf?view=graph-rest-1.0) method of the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "a0f4e06a-44ef-4cce-89bd-d92cecc7dfe6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "members",
+          "ChangeType": "Addition",
+          "Description": "Added `device` as a supported type for methods that query the **members** navigation property of the [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-1.0) resource. The methods are [Get member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-get-members?view=graph-rest-1.0), [List members](https://docs.microsoft.com/en-us/graph/api/administrativeunit-list-members?view=graph-rest-1.0), [Add member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-post-members?view=graph-rest-1.0), and [Remove member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-delete-members?view=graph-rest-1.0).",
+          "Target": "administrativeUnit"
+        }
+      ],
+      "Id": "a0f4e06a-44ef-4cce-89bd-d92cecc7dfe6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-02T00:00:00.2532422Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "67f39501-d577-4136-a5a9-1187a7ce9dde",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "proxyAddresses",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `endsWith` function of the `$filter` OData query parameter by the **proxyAddresses** property of the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "67f39501-d577-4136-a5a9-1187a7ce9dde",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-13T04:35:15.9351072Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "88e98c49-306f-4dce-9db9-346b419e47b0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certification",
+          "ChangeType": "Addition",
+          "Description": "Added the [certification](https://docs.microsoft.com/en-us/graph/api/resources/certification?view=graph-rest-1.0) resource type.",
+          "Target": "certification"
+        },
+        {
+          "Id": "88e98c49-306f-4dce-9db9-346b419e47b0",
+          "ApiChange": "Property",
+          "ChangedApiName": "certification",
+          "ChangeType": "Addition",
+          "Description": "Added the **certification** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "88e98c49-306f-4dce-9db9-346b419e47b0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-13T20:38:14.1082268Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e6eedf89-5935-4174-98b5-2e8200e48f19",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "proxyAddresses",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `endsWith` function of the `$filter` OData query parameter by the **proxyAddresses** property of the [group](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "e6eedf89-5935-4174-98b5-2e8200e48f19",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-13T04:35:15.9351072Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {
@@ -17,6 +395,58 @@
       "CreatedDateTime": "2022-05-05T04:35:15.9351072Z",
       "WorkloadArea": "Application",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "206e1f34-55b3-43fe-85db-1bc7551d9e0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupWritebackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupWritebackConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/groupWritebackConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "groupWritebackConfiguration"
+        },
+        {
+          "Id": "206e1f34-55b3-43fe-85db-1bc7551d9e0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "writebackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [writebackConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/writebackConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "writebackConfiguration"
+        },
+        {
+          "Id": "206e1f34-55b3-43fe-85db-1bc7551d9e0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "writebackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **writebackConfiguration** property to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource. Use this object to configure write back of cloud groups to on-premise Active Directory.",
+          "Target": "group"
+        }
+      ],
+      "Id": "206e1f34-55b3-43fe-85db-1bc7551d9e0f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-28T20:40:04.2592988Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "13a51673-7133-48f3-bdfe-e6a8309de690",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedCloudEndpoints",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedCloudEndpoints** property to the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource. Use this property to enable B2B collaboration across Azure clouds. For example, between tenants in Azure Global and Azure Government clouds, and Azure Global and Azure China clouds. ",
+          "Target": "crossTenantAccessPolicy"
+        }
+      ],
+      "Id": "13a51673-7133-48f3-bdfe-e6a8309de690",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-23T00:00:00.8027648Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -89,6 +519,100 @@
       "CreatedDateTime": "2022-05-06T22:07:03.879225Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "876b4b86-82af-4135-aabb-f37868775130",
+          "ApiChange": "Property",
+          "ChangedApiName": "loginPageTextVisibilitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **hideAccountResetCredentials** property to the [loginPageTextVisibilitySettings](https://docs.microsoft.com/en-us/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        }
+      ],
+      "Id": "876b4b86-82af-4135-aabb-f37868775130",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-06T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": " Identity and sign-in"
+    }, 	  
+    {
+      "ChangeList": [
+        {
+          "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantInformation](https://docs.microsoft.com/en-us/graph/api/resources/tenantinformation?view=graph-rest-beta) resource. This complex type exposes basic identification information for your Azure AD tenant that is publicly displayed to users in other Azure AD tenants.",
+          "Target": "tenantInformation"
+        },
+        {
+          "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
+          "ApiChange": "Permission",
+          "ChangedApiName": "CrossTenantInformation.ReadBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `CrossTenantInformation.ReadBasic.All` delegated and application permissions to query basic tenant information through the [findTenantInformationByDomainName](https://docs.microsoft.com/en-us/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-beta) and [findTenantInformationByTenantId](https://docs.microsoft.com/en-us/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-beta) methods.",
+          "Target": "findTenantInformation"
+        },
+        {
+          "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
+          "ApiChange": "Method",
+          "ChangedApiName": "findTenantInformationByDomainName",
+          "ChangeType": "Addition",
+          "Description": "Added the [findTenantInformationByDomainName](https://docs.microsoft.com/en-us/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-beta) method.",
+          "Target": "findTenantInformationByDomainName"
+        },
+        {
+          "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
+          "ApiChange": "Method",
+          "ChangedApiName": "findTenantInformationByTenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the [findTenantInformationByTenantId](https://docs.microsoft.com/en-us/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-beta) method.",
+          "Target": "findTenantInformationByTenantId"
+        }
+      ],
+      "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-21T00:00:00.0123959Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e9d0e39e-b167-4dd7-b2a2-b9ba921da487",
+          "ApiChange": "Property",
+          "ChangedApiName": "administrativeUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipRule** property to the [administrativeunit](https://docs.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "e9d0e39e-b167-4dd7-b2a2-b9ba921da487",
+          "ApiChange": "Property",
+          "ChangedApiName": "administrativeUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipRuleProcessingState** property to the [administrativeunit](https://docs.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "e9d0e39e-b167-4dd7-b2a2-b9ba921da487",
+          "ApiChange": "Property",
+          "ChangedApiName": "administrativeUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipType** property to the [administrativeunit](https://docs.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
+          "Target": "administrativeUnit"
+        }
+      ],
+      "Id": "e9d0e39e-b167-4dd7-b2a2-b9ba921da487",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-03-23T00:00:00.2532422Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory Management"
     },
     {
       "ChangeList": [
@@ -306,7 +830,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-02-16T00:00:00.2532422Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -357,6 +881,24 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-03-07T21:37:38.9468208Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b067a370-d510-480e-8e6e-975d0608be4b",
+          "ApiChange": "Method",
+          "ChangedApiName": "promote",
+          "ChangeType": "Addition",
+          "Description": "Added the [promote](https://docs.microsoft.com/en-us/graph/api/domain-promote?view=graph-rest-beta) method to the [domain](https://docs.microsoft.com/en-us/graph/api/domain?view=graph-rest-beta) resource.",
+          "Target": "domain"
+        }
+      ],
+      "Id": "b067a370-d510-480e-8e6e-975d0608be4b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-06T17:07:51.6122157Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
@@ -2730,10 +3272,10 @@
         {
           "Id": "dfddb103-d5a3-4ed3-b27f-b0d95945c7d2",
           "ApiChange": "Permission",
-          "ChangedApiName": "accessReviews",
+          "ChangedApiName": "accessReview",
           "ChangeType": "Addition",
-          "Description": "Added Policy.ReadWrite.AccessReviews permission.",
-          "Target": "accessReviews"
+          "Description": "Added Policy.ReadWrite.AccessReview permission.",
+          "Target": "accessReview"
         }
       ],
       "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
@@ -3154,6 +3696,32 @@
       "SubArea": ""
     },
     {
+      "ChangeList": [
+        {
+          "Id": "6c5c31e1-51bb-45c2-b769-4928b4977187",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalIdentitiesPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalIdentitiesPolicy](https://docs.microsoft.com/en-us/graph/api/resources/externalIdentitiesPolicy?view=graph-rest-beta) resource.",
+          "Target": "externalIdentitiesPolicy"
+        },
+        {
+          "Id": "6c5c31e1-51bb-45c2-b769-4928b4977187",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalIdentitiesPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalIdentitiesPolicy** relationship to the [policyRoot](https://docs.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Target": "policyRoot"
+        }
+      ],
+      "Id": "6c5c31e1-51bb-45c2-b769-4928b4977187",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-12T10:45:44.4043801Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+   {
       "ChangeList": [
         {
           "Id": "57281ce6-70f8-4348-8b99-9fd38d42b03d",
@@ -8486,7 +9054,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -8566,7 +9134,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-04-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -8912,7 +9480,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-07-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -10696,6 +11264,154 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-04-14T18:53:24.3466034Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f88cfa0c-1192-443d-bd7c-0dfa5b9f9c4b",
+          "ApiChange": "Property",
+          "ChangedApiName": "samlMetadataUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **samlMetadataUrl** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "f88cfa0c-1192-443d-bd7c-0dfa5b9f9c4b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-10T09:36:39.6244674Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f8162921-ecb8-40fa-a870-621b98c896e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "securityIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityIdentifier** property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "f8162921-ecb8-40fa-a870-621b98c896e0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-05T08:35:28.7105558Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },  
+    {
+      "ChangeList": [
+        {
+          "Id": "f844e84d-dab0-4fba-a9d4-1f4341fd8ae2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [temporaryAccessPassAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to configure and manage the settings of the Temporary Access Pass authentication methods policy in your tenant.",
+          "Target": "temporaryAccessPassAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "f844e84d-dab0-4fba-a9d4-1f4341fd8ae2",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-08T20:50:46.2407041Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    { 
+      "ChangeList": [
+        {
+          "Id": "e34ea993-f4f1-46c0-b78f-e87332e1685e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "temporaryAccessPassMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **temporaryAccessPassMethods** relationship to the [authentication](https://docs.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "e34ea993-f4f1-46c0-b78f-e87332e1685e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "temporaryAccessPassAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [temporaryAccessPassAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to create and manage Temporary Access Passes for users.",
+          "Target": "temporaryAccessPassAuthenticationMethod"
+        }
+      ],
+      "Id": "e34ea993-f4f1-46c0-b78f-e87332e1685e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-08T22:26:16.0457928Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "58b7beda-c767-4468-914b-23774fe6f181",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "federatedIdpMfaBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **federatedIdpMfaBehavior** enumeration type.",
+          "Target": "federatedIdpMfaBehavior"
+        },
+        {
+          "Id": "58b7beda-c767-4468-914b-23774fe6f181",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "promptLoginBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **promptLoginBehavior** enumeration type.",
+          "Target": "promptLoginBehavior"
+        },
+        {
+          "Id": "58b7beda-c767-4468-914b-23774fe6f181",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signingCertificateUpdateStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [signingCertificateUpdateStatus](https://docs.microsoft.com/en-us/graph/api/resources/signingCertificateUpdateStatus?view=graph-rest-1.0) resource type.",
+          "Target": "signingCertificateUpdateStatus"
+        },       
+        {
+          "Id": "58b7beda-c767-4468-914b-23774fe6f181",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **federationConfiguration** relationship to the [domain](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
+          "Target": "domain"
+        },
+        {
+          "Id": "58b7beda-c767-4468-914b-23774fe6f181",
+          "ApiChange": "Resource",
+          "ChangedApiName": "internalDomainFederation",
+          "ChangeType": "Addition",
+          "Description": "Added the [internalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/internalDomainFederation?view=graph-rest-1.0) resource and associated methods. Use this resource to federate your domains with Azure AD.",
+          "Target": "internalDomainFederation"
+        }        
+      ],
+      "Id": "58b7beda-c767-4468-914b-23774fe6f181",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-21T09:45:26.3615214Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "603c49a6-f9aa-4f90-a8ef-7725d45d8c74",
+          "ApiChange": "Property",
+          "ChangedApiName": "samlMetadataUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **samlMetadataUrl** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "603c49a6-f9aa-4f90-a8ef-7725d45d8c74",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-05T07:06:20.8129252Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }

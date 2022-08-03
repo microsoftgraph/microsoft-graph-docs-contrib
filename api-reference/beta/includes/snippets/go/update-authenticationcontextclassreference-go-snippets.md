@@ -7,13 +7,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAuthenticationContextClassReference()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"value":  []Object {
+requestBody := graphmodels.NewAuthenticationContextClassReference()
+additionalData := map[string]interface{}{
+
+
+ := graphmodels.New()
+displayName := "Contoso trusted locations"
+.SetDisplayName(&displayName) 
+description := "Access is only allowed from trusted locations"
+.SetDescription(&description) 
+isAvailable := true
+.SetIsAvailable(&isAvailable) 
+
+	value := []graphmodels.Objectable {
+		,
+
 	}
 }
-authenticationContextClassReferenceId := "authenticationContextClassReference-id"
-graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById(&authenticationContextClassReferenceId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById("authenticationContextClassReference-id").Patch(requestBody)
 
 
 ```

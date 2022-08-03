@@ -7,20 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewCriteriaRequestBody()
-criteria := msgraphsdk.NewSynchronizationJobRestartCriteria()
-requestBody.SetCriteria(criteria)
-resetScope := "Watermark, Escrows, QuarantineState"
-criteria.SetResetScope(&resetScope)
 headers := map[string]string{
-	"Authorization": "Bearer <token>"
+	"Authorization": "Bearer <token>",
 }
-options := &msgraphsdk.RestartRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.RestartRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-servicePrincipalId := "servicePrincipal-id"
-synchronizationJobId := "synchronizationJob-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Restart(servicePrincipal-id, synchronizationJob-id).PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
+requestBody := graphmodels.NewRestartPostRequestBody()
+criteria := graphmodels.NewSynchronizationJobRestartCriteria()
+resetScope := graphmodels.WATERMARK, ESCROWS, QUARANTINESTATE_SYNCHRONIZATIONJOBRESTARTSCOPE 
+criteria.SetResetScope(&resetScope) 
+requestBody.SetCriteria(criteria)
+
+graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Restart().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
 
 
 ```

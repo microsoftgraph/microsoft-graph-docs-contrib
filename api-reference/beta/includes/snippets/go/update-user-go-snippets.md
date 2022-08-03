@@ -7,12 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewUser()
-requestBody.SetBusinessPhones( []String {
+requestBody := graphmodels.NewUser()
+businessPhones := []string {
 	"+1 425 555 0109",
+
 }
+requestBody.SetBusinessPhones(businessPhones)
 officeLocation := "18/2111"
-requestBody.SetOfficeLocation(&officeLocation)
+requestBody.SetOfficeLocation(&officeLocation) 
+
 graphClient.Me().Patch(requestBody)
 
 

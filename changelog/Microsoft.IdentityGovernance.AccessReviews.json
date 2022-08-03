@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessReviewStageFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewStageFilterByCurrentUserOptions** enumeration type.",
+          "Target": "accessReviewStageFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "Property",
+          "ChangedApiName": "decisionHistoriesForReviewersEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **decisionHistoriesForReviewersEnabled** property to the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewScheduleSettings"
+        },
+        {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewStageSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewStageSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewStageSettings?view=graph-rest-1.0) resource type.",
+          "Target": "accessReviewStageSettings"
+        },
+        {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stages",
+          "ChangeType": "Addition",
+          "Description": "Added the **stages** relationship to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewInstance"
+        },
+        {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "Property",
+          "ChangedApiName": "stageSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **stageSettings** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-1.0) resource. Defines the stages and their settings in a multi-stage access review.",
+          "Target": "accessReviewScheduleDefinition"
+        },
+        {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewStage",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewStage](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewStage?view=graph-rest-1.0) resource and associated methods. Represents a stage in an [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstance?view=graph-rest-beta).",
+          "Target": "accessReviewStage"
+        }
+      ],
+      "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-27T00:17:11.8920753Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9d9f39ab-b84b-439f-b0fc-024ad885c1ad",
           "ApiChange": "Enum type",
           "ChangedApiName": "accessReviewHistoryDecisionFilter",
@@ -1017,6 +1075,40 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-18T19:40:43.984Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ef441c70-5467-4012-ba7b-e40e86069b11",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "decisionItemPrincipalResourceMembershipType",
+          "ChangeType": "Addition",
+          "Description": "Added the **decisionItemPrincipalResourceMembershipType** enumeration type.",
+          "Target": "decisionItemPrincipalResourceMembershipType"
+        },
+        {
+          "Id": "8b32b549-7dd3-46e4-b83e-78f77dd7245e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "decisionItemPrincipalResourceMembership",
+          "ChangeType": "Addition",
+          "Description": "Added the [decisionItemPrincipalResourceMembership](https://docs.microsoft.com/en-us/graph/api/resources/decisionItemPrincipalResourceMembership?view=graph-rest-beta) resource type. This object exposes the details of the type of membership that the principal has to the resource that's associated with the [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) object.",
+          "Target": "decisionItemPrincipalResourceMembership"
+        },
+        {
+          "Id": "b56857a4-8f4a-4d20-a3eb-281016bd81d2",
+          "ApiChange": "Property",
+          "ChangedApiName": "principalResourceMembership",
+          "ChangeType": "Addition",
+          "Description": "Added the **principalResourceMembership** property to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        }
+      ],
+      "Id": "2c08a551-95b2-43f7-a947-4afe08ea917b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-27T19:40:43.984Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }

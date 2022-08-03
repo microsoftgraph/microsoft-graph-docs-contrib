@@ -7,13 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewReviewSetQuery()
+requestBody := graphmodels.NewReviewSetQuery()
 displayName := "My Query 1 - Renamed"
-requestBody.SetDisplayName(&displayName)
-caseId := "case-id"
-reviewSetId := "reviewSet-id"
-reviewSetQueryId := "reviewSetQuery-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSetsById("reviewSet-id").QueriesById("reviewSetQuery-id").Patch(requestBody)
 
 
 ```

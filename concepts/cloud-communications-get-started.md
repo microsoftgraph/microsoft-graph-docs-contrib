@@ -1,14 +1,14 @@
 ---
-title: "Get started with cloud communications"
-description: "Learn how you can use bots to respond to your customers' needs and facilitate collaboration."
+title: "Get started with the cloud communications API"
+description: "Use the cloud communications API in Microsoft Graph to build bots for your customers. Learn how to register your bot and then manage the state of your bot."
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
-# Get started with cloud communications
+# Get started with the cloud communications API
 
-The cloud communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calling and online meetings. This article describes how you can use bots to respond to your customers' needs and facilitate collaboration.
+You can use the cloud communications API in Microsoft Graph to build bots to respond to your customers' needs and facilitate collaboration. This article describes how to register your bot and then manage the state of your bot.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ Before  you get started, it will be helpful to familiarize yourself with the fol
 
 - [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
 (Azure AD) and how the service helps employees sign in and access resources.
-- The [Azure Bot Service](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0) and its capabilities.
+- The [Azure Bot Service](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0&preserve-view=true) and its capabilities.
 
 ## Register a bot
 
@@ -45,7 +45,8 @@ A virtual machine can handle only one bot instance at a time. Because all the st
 
 The drawback is that because the bot instance is just on one machine, it isn't as resilient.
 
->**Note:** Service-hosted media bots can be stateful or stateless. Application-hosted media bots must be stateful in order to use the [Bot Media SDK](https://www.nuget.org/packages/Microsoft.Skype.Bots.Media).
+> [!NOTE]
+> Service-hosted media bots can be stateful or stateless. Application-hosted media bots must be stateful in order to use the [Bot Media SDK](https://www.nuget.org/packages/Microsoft.Skype.Bots.Media).
 
 ## Use the SDKs
 
@@ -63,3 +64,7 @@ For more examples, see the [Communications samples repository](https://microsoft
 ## Privacy and compliance
 
 In the requests to our APIs, sensitive data should not be sent in any client-side generated IDs (such as scenario IDs, request IDs, or other correlation IDs) in headers or the request body. These IDs will be logged on the server side for diagnostics.
+
+## See also
+
+- [Cloud communications API overview](cloud-communications-concept-overview.md)
