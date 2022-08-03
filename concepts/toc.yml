@@ -447,6 +447,8 @@ items:
             displayName: search
           - name: Search messages
             href: search-concept-messages.md
+          - name: Search Teams messages
+            href: search-concept-chat-messages.md
           - name: Search events
             href: search-concept-events.md
           - name: Search content in OneDrive and SharePoint
