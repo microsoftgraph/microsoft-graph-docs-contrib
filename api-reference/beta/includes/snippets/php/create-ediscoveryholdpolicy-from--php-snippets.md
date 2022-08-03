@@ -30,7 +30,7 @@ $requestBody->setUserSources@odatabind($userSources@odata.bindArray);
 'siteSources@odata.bind' => $siteSources@odatabind1 = new ();
 $	siteSources@odatabind1->set@odatatype('microsoft.graph.security.siteSource');
 
-$siteSources@odatabind1Site = new ();
+$siteSources@odatabind1Site = new Site();
 $	siteSources@odatabind1Site->setWebUrl('https://m365x809305.sharepoint.com/sites/Design-topsecret');
 
 

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Users
 
-Get-MgUser -Property "ext55gb1l09_msLearnCourses" 
+Get-MgUser -Property "ext55gb1l09_msLearnCourses"  -OutFile $outFileId
 
 ```

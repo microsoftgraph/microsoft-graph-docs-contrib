@@ -17,7 +17,7 @@ target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
 target.Set"@odata.type"(&"@odata.type") 
 caller := "EndUser"
 target.SetCaller(&caller) 
-operations := []String {
+operations := []string {
 	"All",
 
 }

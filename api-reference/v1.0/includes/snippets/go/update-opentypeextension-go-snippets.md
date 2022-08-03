@@ -15,7 +15,7 @@ additionalData := map[string]interface{}{
 	"companyName" : "Contoso", 
 	"expirationDate" : "2016-07-30T11:00:00.000Z", 
 	"dealValue" : int32(1010100) , 
-	topPicks := []String {
+	topPicks := []string {
 		"Employees only",
 		"Add spouse or guest",
 		"Add family",

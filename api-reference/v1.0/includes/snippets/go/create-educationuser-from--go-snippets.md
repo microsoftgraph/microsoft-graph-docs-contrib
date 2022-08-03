@@ -66,7 +66,7 @@ assignedPlans := []graphmodels.AssignedPlanable {
 
 }
 requestBody.SetAssignedPlans(assignedPlans)
-businessPhones := []String {
+businessPhones := []string {
 	"String",
 
 }

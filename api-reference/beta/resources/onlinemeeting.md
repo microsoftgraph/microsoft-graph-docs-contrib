@@ -26,6 +26,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | [Update](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
 | [Delete](../api/onlinemeeting-delete.md) | None | Delete an **onlineMeeting** object. |
 | [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties. |
+| [List transcripts of an onlineMeeting](../api/onlinemeeting-list-transcripts.md) | [callTranscript](callTranscript.md) collection | Retrieve the list of transcripts of an **onlineMeeting**. |
 
 ## Properties
 
@@ -95,6 +96,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
 | registration | [meetingRegistrationBase](meetingregistrationbase.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
 | meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of the latest online meeting session. Read-only. |
+| transcripts | [callTranscript](callTranscript.md) collection | The transcripts of an online meeting. Read-only. |
 
 > [!TIP]
 >

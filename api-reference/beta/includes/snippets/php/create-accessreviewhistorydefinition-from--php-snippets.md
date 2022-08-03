@@ -21,7 +21,7 @@ $scheduleSettingsRecurrence = new PatternedRecurrence();
 $scheduleSettingsRecurrencePattern = new RecurrencePattern();
 $scheduleSettingsRecurrencePattern->setType(new RecurrencePatternType('monthly'));
 
-$scheduleSettingsRecurrencePattern->setInterval(interval);
+$scheduleSettingsRecurrencePattern->setInterval(1);
 
 
 $scheduleSettingsRecurrence->setPattern($scheduleSettingsRecurrencePattern);

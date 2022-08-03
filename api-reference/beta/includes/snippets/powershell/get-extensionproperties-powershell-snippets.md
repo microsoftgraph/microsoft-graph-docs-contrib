@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgApplicationExtensionProperty -ApplicationId $applicationId
+Get-MgApplicationExtensionProperty -ApplicationId $applicationId -OutFile $outFileId
 
 ```

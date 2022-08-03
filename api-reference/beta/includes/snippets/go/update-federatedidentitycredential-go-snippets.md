@@ -16,7 +16,7 @@ subject := "a7d388c3-5e3f-4959-ac7d-786b3383006a"
 requestBody.SetSubject(&subject) 
 description := "Updated description"
 requestBody.SetDescription(&description) 
-audiences := []String {
+audiences := []string {
 	"api://AzureADTokenExchange",
 
 }
