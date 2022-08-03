@@ -1,5 +1,5 @@
 ---
-title: "Overview of federated identity credentials in Azure Active Directory (preview)"
+title: "Overview of federated identity credentials in Azure Active Directory"
 description: "Federated identity credentials allow you to access Azure and Microsoft Graph resources without having to manage secrets. This is part of workload identity federation in Azure AD."
 author: "shahzad-khalid"
 ms.localizationpriority: medium
@@ -7,11 +7,10 @@ ms.prod: "applications"
 doc_type: conceptualPageType
 ---
 
-# Overview of federated identity credentials in Azure Active Directory (preview)
+# Overview of federated identity credentials in Azure Active Directory
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Traditionally, developers use certificates or client secrets for their application's credentials to authenticate with and access services in Azure AD. To access the services in their Azure AD tenant, developers have had to store and manage application credentials outside Azure, introducing the following bottlenecks:
 
