@@ -54,8 +54,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_stage_accessreviewinstancedecisionitem"

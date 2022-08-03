@@ -58,8 +58,6 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 ### Request
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accessreviewstage_filterbycurrentuser"
