@@ -18,7 +18,7 @@ Represents an entity used to set permissions on external content added to Micros
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create identity](../api/externalconnectors-externalgroup-post-members.md)|[identity](externalconnectors-identity.md)|Create an [identity](../resources/externalconnectors-identity.md) resource for a new member in an [externalGroup](../resources/externalconnectors-externalgroup.md).|
+|[Create identity](../api/externalconnectors-externalgroup-post-members.md)|[microsoft.graph.externalConnectors.identity](externalconnectors-identity.md)|Create an [identity](../resources/externalconnectors-identity.md) resource for a new member in an [externalGroup](../resources/externalconnectors-externalgroup.md).|
 |[Delete identity](../api/externalconnectors-externalgroup-delete.md)|None|Delete an [identity](../resources/externalconnectors-identity.md) resource to remove the corresponding member from an [externalGroup](../resources/externalconnectors-externalgroup.md).|
 
 ## Properties
