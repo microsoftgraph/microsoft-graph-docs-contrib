@@ -149,13 +149,13 @@ These examples show how to use `$filter` to match against supported properties a
 | `eq`         | `/servicePrincipals?$filter=appOwnerOrganizationId eq 72f988bf-86f1-41af-91ab-2d7cd011db47`*      |
 | `not`        | `/servicePrincipals?$filter=NOT(appOwnerOrganizationId eq 72f988bf-86f1-41af-91ab-2d7cd011db47)`* |
 
-### For single complex types
+### For single complex types such as relationships
 
-| Operator (s) | Syntax                                                           |
-|--------------|------------------------------------------------------------------|
-| `eq`         |                                                                  |
-| `le`         |                                                                  |
-| `ge`         | `/users?$filter=manager/deletedDateTime ge 2021-01-02T12:00:00Z` |
+| Operator (s) | Syntax                                                                           |
+|--------------|----------------------------------------------------------------------------------|
+| `eq`         | `/applications?$filter=createdOnBehalfOf/deletedDateTime eq 2021-01-02T12:00:00Z` |
+| `le`         | `/applications?$filter=createdOnBehalfOf/deletedDateTime le 2021-01-02T12:00:00Z` |
+| `ge`         | `/users?$filter=manager/deletedDateTime ge 2021-01-02T12:00:00Z`                 |
 
 ### For a collection of GUID types
 
@@ -173,8 +173,8 @@ These examples show how to use `$filter` to match against supported properties a
 | `eq`         | `/users?$filter=authorizationInfo/certificateUserIds/any(x:x eq '9876543210@mil')` |
 | `startsWith` | `/users?$filter=authorizationInfo/certificateUserIds/any(x:startswith(x,'987654321'))` |
 | `endsWith`   | `/users?$filter=proxyAddresses/any(p:endsWith(p,'OnMicrosoft.com'))`* |
-| `le`         |  |
-| `ge`         | `/servicePrincipals?$filter=keyCredentials/any(k:k/endDateTime ge 2021-01-02T12:00:00Z)` |
+| `le`         | `/servicePrincipals?$filter=keyCredentials/any(k:k/endDateTime le 2021-01-02T12:00:00Z)`*|
+| `ge`         | `/servicePrincipals?$filter=keyCredentials/any(k:k/endDateTime ge 2021-01-02T12:00:00Z)`* |
 
 
 ## See also
