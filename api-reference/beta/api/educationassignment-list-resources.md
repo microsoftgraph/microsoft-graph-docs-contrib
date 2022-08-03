@@ -1,7 +1,7 @@
 ---
 title: "List assignment resources"
 description: "Get all the resources associated with an assignment."
-author: "dipakboyed"
+author: "suresh-padimi"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -31,6 +31,7 @@ GET /education/classes/{id}/assignments/{id}/resources
 ```
 
 ## Optional query parameters
+This method supports the  `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
