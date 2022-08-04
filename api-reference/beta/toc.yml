@@ -13589,50 +13589,6 @@ items:
               href: api/agreement-post-files.md
             - name: List localized files
               href: api/agreement-list-files.md
-    - name: Internet Explorer mode
-      displayName: Cloud Site List Management for Internet Explorer (IE) Mode API
-      items:
-      - name: Site Lists
-        href: resources/browsersitelist.md
-        items:
-        - name: List
-          href: api/internetexplorermode-list-sitelists.md
-        - name: Create
-          href: api/internetexplorermode-post-sitelists.md
-        - name: Get
-          href: api/browsersitelist-get.md
-        - name: Update
-          href: api/browsersitelist-update.md
-        - name: Delete
-          href: api/internetexplorermode-delete-sitelists.md
-        - name: Publish
-          href: api/browsersitelist-publish.md
-      - name: Sites
-        href: resources/browsersite.md
-        items:
-        - name: List
-          href: api/browsersitelist-list-sites.md
-        - name: Create
-          href: api/browsersitelist-post-sites.md
-        - name: Get
-          href: api/browsersite-get.md
-        - name: Update
-          href: api/browsersite-update.md
-        - name: Delete
-          href: api/browsersitelist-delete-sites.md
-      - name: Shared cookies
-        href: resources/browsersharedcookie.md
-        items:
-        - name: List
-          href: api/browsersitelist-list-sharedcookies.md
-        - name: Create
-          href: api/browsersitelist-post-sharedcookies.md
-        - name: Get
-          href: api/browsersharedcookie-get.md
-        - name: Update
-          href: api/browsersharedcookie-update.md
-        - name: Delete
-          href: api/browsersitelist-delete-sharedcookies.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
@@ -15436,6 +15392,50 @@ items:
           href: api/documentsetversion-delete.md
         - name: Restore
           href: api/documentsetversion-restore.md
+      - name: Internet Explorer mode
+        displayName: Cloud site list management for Internet Explorer (IE) mode APIs
+        items:
+        - name: Site list
+          href: resources/browsersitelist.md
+          items:
+          - name: List
+            href: api/internetexplorermode-list-sitelists.md
+          - name: Create
+            href: api/internetexplorermode-post-sitelists.md
+          - name: Get
+            href: api/browsersitelist-get.md
+          - name: Update
+            href: api/browsersitelist-update.md
+          - name: Delete
+            href: api/internetexplorermode-delete-sitelists.md
+          - name: Publish
+            href: api/browsersitelist-publish.md
+        - name: Site
+          href: resources/browsersite.md
+          items:
+          - name: List
+            href: api/browsersitelist-list-sites.md
+          - name: Create
+            href: api/browsersitelist-post-sites.md
+          - name: Get
+            href: api/browsersite-get.md
+          - name: Update
+            href: api/browsersite-update.md
+          - name: Delete
+            href: api/browsersitelist-delete-sites.md
+        - name: Shared cookie
+          href: resources/browsersharedcookie.md
+          items:
+          - name: List
+            href: api/browsersitelist-list-sharedcookies.md
+          - name: Create
+            href: api/browsersitelist-post-sharedcookies.md
+          - name: Get
+            href: api/browsersharedcookie-get.md
+          - name: Update
+            href: api/browsersharedcookie-update.md
+          - name: Delete
+            href: api/browsersitelist-delete-sharedcookies.md
       - name: Pages
         items:
         - name: Site page

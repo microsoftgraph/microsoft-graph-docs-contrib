@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a site list for [Internet Explorer mode](/deployedge/edge-ie-mode) that contains one or more [browserSite](../resources/browsersite.md) and [browserSharedCookie](../resources/browsersharedcookie.md) resources.
+Represents a site list for [Internet Explorer mode](https://docs.microsoft.com/deployedge/edge-ie-mode) that contains one or more [browserSite](../resources/browsersite.md) and [browserSharedCookie](../resources/browsersharedcookie.md) resources.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List browserSiteLists](../api/internetexplorermode-list-sitelists.md)|[browserSiteList](../resources/browsersitelist.md) collection|Get a list of the [browserSiteList](../resources/browsersitelist.md) objects and their properties.|
-|[Create browserSiteList](../api/internetexplorermode-post-sitelists.md)|[browserSiteList](../resources/browsersitelist.md)|Create a new [browserSiteList](../resources/browsersitelist.md) object to support [Internet Explorer mode](/deployedge/edge-ie-mode).|
+|[Create browserSiteList](../api/internetexplorermode-post-sitelists.md)|[browserSiteList](../resources/browsersitelist.md)|Create a new [browserSiteList](../resources/browsersitelist.md) object to support [Internet Explorer mode](https://docs.microsoft.com/deployedge/edge-ie-mode).|
 |[Get browserSiteList](../api/browsersitelist-get.md)|[browserSiteList](../resources/browsersitelist.md)|Get a [browserSiteList](../resources/browsersitelist.md) that contains [browserSite](../resources/browsersite.md) and [browserSharedCookie](../resources/browsersharedcookie.md) resources.|
 |[Update browserSiteList](../api/browsersitelist-update.md)|None|Update the properties of a [browserSiteList](../resources/browsersitelist.md) object.|
 |[Delete browserSiteList](../api/internetexplorermode-delete-sitelists.md)|None|Delete a [browserSiteList](../resources/browsersitelist.md) object.|
