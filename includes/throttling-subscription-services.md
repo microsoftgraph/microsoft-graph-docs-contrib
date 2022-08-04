@@ -1,5 +1,5 @@
 ---
-author: "Jumaodhiss"
+author: "jumasure"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
