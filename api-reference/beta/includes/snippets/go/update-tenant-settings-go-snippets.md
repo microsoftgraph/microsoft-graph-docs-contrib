@@ -7,22 +7,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewSettings()
+requestBody := graphmodels.NewSettings()
 deletedUserPersonalSiteRetentionPeriodInDays := int32(365)
-requestBody.SetDeletedUserPersonalSiteRetentionPeriodInDays(&deletedUserPersonalSiteRetentionPeriodInDays)
-requestBody.SetExcludedFileExtensionsForSyncApp( []String {
+requestBody.SetDeletedUserPersonalSiteRetentionPeriodInDays(&deletedUserPersonalSiteRetentionPeriodInDays) 
+excludedFileExtensionsForSyncApp := []string {
 	".mp3",
+
 }
-imageTaggingOption := "enhanced"
-requestBody.SetImageTaggingOption(&imageTaggingOption)
+requestBody.SetExcludedFileExtensionsForSyncApp(excludedFileExtensionsForSyncApp)
+imageTaggingOption := graphmodels.ENHANCED_IMAGETAGGINGCHOICE 
+requestBody.SetImageTaggingOption(&imageTaggingOption) 
+isLegacyAuthProtocolsEnabled := true
+requestBody.SetIsLegacyAuthProtocolsEnabled(&isLegacyAuthProtocolsEnabled) 
 isSitesStorageLimitAutomatic := false
-requestBody.SetIsSitesStorageLimitAutomatic(&isSitesStorageLimitAutomatic)
+requestBody.SetIsSitesStorageLimitAutomatic(&isSitesStorageLimitAutomatic) 
 isSyncButtonHiddenOnPersonalSite := false
-requestBody.SetIsSyncButtonHiddenOnPersonalSite(&isSyncButtonHiddenOnPersonalSite)
+requestBody.SetIsSyncButtonHiddenOnPersonalSite(&isSyncButtonHiddenOnPersonalSite) 
 isUnmanagedSyncAppForTenantRestricted := false
-requestBody.SetIsUnmanagedSyncAppForTenantRestricted(&isUnmanagedSyncAppForTenantRestricted)
+requestBody.SetIsUnmanagedSyncAppForTenantRestricted(&isUnmanagedSyncAppForTenantRestricted) 
 personalSiteDefaultStorageLimitInMB := int64(120000)
-requestBody.SetPersonalSiteDefaultStorageLimitInMB(&personalSiteDefaultStorageLimitInMB)
+requestBody.SetPersonalSiteDefaultStorageLimitInMB(&personalSiteDefaultStorageLimitInMB) 
+
 graphClient.Admin().Sharepoint().Settings().Patch(requestBody)
 
 

@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.PersonalContacts
 
 # A UPN can also be used as -UserId.
-Get-MgUserContactFolderContact -UserId $userId -ContactFolderId $contactFolderId
+Get-MgUserContactFolderContact -UserId $userId -ContactFolderId $contactFolderId -OutFile $outFileId
 
 ```

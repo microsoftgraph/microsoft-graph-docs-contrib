@@ -7,17 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewChangeDeploymentStatusPostRequestBody()
 tenantGroupId := "String"
-requestBody.SetTenantGroupId(&tenantGroupId)
+requestBody.SetTenantGroupId(&tenantGroupId) 
 tenantId := "String"
-requestBody.SetTenantId(&tenantId)
+requestBody.SetTenantId(&tenantId) 
 managementActionId := "String"
-requestBody.SetManagementActionId(&managementActionId)
+requestBody.SetManagementActionId(&managementActionId) 
 managementTemplateId := "String"
-requestBody.SetManagementTemplateId(&managementTemplateId)
+requestBody.SetManagementTemplateId(&managementTemplateId) 
 status := "String"
-requestBody.SetStatus(&status)
+requestBody.SetStatus(&status) 
+
 result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().ChangeDeploymentStatus().Post(requestBody)
 
 

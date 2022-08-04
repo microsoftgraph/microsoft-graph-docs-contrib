@@ -7,16 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewExtension()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.openTypeExtension",
-	"extensionName": "Com.Contoso.Referral",
-	"companyName": "Wingtip Toys",
-	"dealValue": ,
-	"expirationDate": "2015-12-03T10:00:00.000Z",
+requestBody := graphmodels.NewExtension()
+"@odata.type" := "microsoft.graph.openTypeExtension"
+requestBody.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"extensionName" : "Com.Contoso.Referral", 
+	"companyName" : "Wingtip Toys", 
+	"dealValue" : int32(500050) , 
+	"expirationDate" : "2015-12-03T10:00:00.000Z", 
 }
-messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Extensions().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Me().MessagesById("message-id").Extensions().Post(requestBody)
 
 
 ```

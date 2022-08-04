@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAdDomainPasswordRequestBody()
+requestBody := graphmodels.NewUpdateAdDomainPasswordPostRequestBody()
 adDomainPassword := "AdDomainPassword value"
-requestBody.SetAdDomainPassword(&adDomainPassword)
-cloudPcOnPremisesConnectionId := "cloudPcOnPremisesConnection-id"
-graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById(&cloudPcOnPremisesConnectionId).UpdateAdDomainPassword(cloudPcOnPremisesConnection-id).Post(requestBody)
+requestBody.SetAdDomainPassword(&adDomainPassword) 
+
+graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById("cloudPcOnPremisesConnection-id").UpdateAdDomainPassword().Post(requestBody)
 
 
 ```

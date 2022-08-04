@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2058
+Content-Length: 2104
 
 {
   "value": {
@@ -93,6 +93,7 @@ Content-Length: 2058
       {
         "@odata.type": "microsoft.graph.androidFotaDeploymentAssignment",
         "id": "Id value",
+        "displayName": "Display Name value",
         "target": {
           "@odata.type": "microsoft.graph.androidFotaDeploymentAssignmentTarget",
           "groupId": "Group Id value"

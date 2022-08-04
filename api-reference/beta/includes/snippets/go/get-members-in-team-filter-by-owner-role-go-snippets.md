@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.MembersRequestBuilderGetQueryParameters{
-	Filter: "roles/any(r:r%20eq%20'owner')",
+requestParameters := &graphconfig.MembersRequestBuilderGetQueryParameters{
+	Filter: "roles/any",
 }
-options := &msgraphsdk.MembersRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MembersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Members().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.TeamsById("team-id").Members().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

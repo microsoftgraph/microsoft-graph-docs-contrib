@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).UnsetVerifiedPublisher(application-id).Post()
+
+graphClient.ApplicationsById("application-id").UnsetVerifiedPublisher().Post()
 
 
 ```
