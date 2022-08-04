@@ -144,7 +144,7 @@ Use the following steps to interact with a request by using the PAM user experie
 
 Microsoft Graph Data Connect approval requests have particular characteristics that you should be aware of:
 
-* Approval requests are based on the Azure Synapse or Azure Data Factory, pipeline, and copy activity names. Every copy activity run verifies that the Microsoft 365 admin has approved the copy activity's request to access Office data, and validates the important parameters of the copy activity run against the parameters of the approval.
+* Approval requests are based on the Azure Synapse or Azure Data Factory, pipeline, and copy activity names. Every copy activity run verifies that the Microsoft 365 admin has approved the copy activity request to access Office data, and validates the important parameters of the copy activity run against the parameters of the approval.
 * Under certain conditions, a new approval request is automatically triggered. A Data Connect approver must approve the new request before the copy activity can access Microsoft 365 data.
 * If the parameters of the copy activity run changes, a new approval request is triggered.
 * If the Azure Synapse or Azure Data Factory, pipeline or copy activity's name change, a new approval request is triggered. For example, a new approval is required if the data table or set of columns that the copy activity is accessing changes.
