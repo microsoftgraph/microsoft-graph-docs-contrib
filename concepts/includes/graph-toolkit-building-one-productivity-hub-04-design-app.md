@@ -4,14 +4,12 @@ In this step, you'll design your web app by using Microsoft Graph Toolkit compon
 
 In **index.html** inside the `<body></body>`, add the following code under the provider.
 
-````html
-<div>
-  <mgt-login></mgt-login>
-</div>
-
   ```html
-  <mgt-login></mgt-login>
-   ```
+  <div>
+    <mgt-login />
+  </div>
+  ```
+
 
 ## Create a title and a column for the rest of the components
 
@@ -43,7 +41,7 @@ To make our app look structured, let's create a title and a column for each feat
 Under div tagged with `class="row"`, add the Agenda component inside the first column div:
 
   ```HTML
-  <mgt-agenda></mgt-agenda>
+  <mgt-agenda />
   ```
 
 ### To-do component
@@ -51,7 +49,7 @@ Under div tagged with `class="row"`, add the Agenda component inside the first c
 Under div tagged with `class="row"`, add the To-do component inside the second column div:
 
   ```HTML
-  <mgt-todo></mgt-todo>
+  <mgt-todo />
   ```
 
 ### FileList component
@@ -59,12 +57,12 @@ Under div tagged with `class="row"`, add the To-do component inside the second c
 Under div tagged with `class="row"`, add the File list component inside the third column div:
 
   ```HTML
-  <mgt-file-list></mgt-file-list>
+  <mgt-file-list />
   ```
 
 ## Style your web app with CSS
 
-1. Create **index.css** file under your project and add below CCS code:
+1. Create **index.css** file under your project and add below CSS code:
 
     ```css
     body,
@@ -135,7 +133,7 @@ Under div tagged with `class="row"`, add the File list component inside the thir
     }
     ```
 
-1. In **index.html** under `<head></head>`, define the stylesheet link `href` as **index.css**:
+1. In **index.html** inside `<head></head>`, define the stylesheet link `href` as **index.css**:
 
     ```html
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
@@ -145,48 +143,49 @@ Under div tagged with `class="row"`, add the File list component inside the thir
 
     ```html
     <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset='utf-8'>
-      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-      <title>One Productivity Hub</title>
-      <meta name='viewport' content='width=device-width, initial-scale=1'>
-      <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-      <script src='main.js'></script> 
-    </head>
-    <body>
-      <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
-      <mgt-msal2-provider 
-        client-id="<YOUR_CLIENT_ID>"
-        scopes="User.Read,
-        User.ReadBasic.All,
-        Calendars.Read,
-        Files.Read.All,
-        Sites.Read.All,
-        Tasks.ReadWrite,
-        People.Read">    
-    </mgt-msal2-provider>   
-      <div>
-        <mgt-login></mgt-login>
-            
-        <div class="features">
-          <div class="header"><div class="title">
-            <h2>One Productivity Hub</h2>
-            <div class="row">
-              <div class="column"><h3>Calendar events</h3></div>
-              <div class="column"><h3>To-do tasks</h3></div>
-              <div class="column"><h3>Files</h3></div>
-            </div>
-          </div></div>
-      
-          <div class="row" id="content">
-            <div class="column" id="mgt-col"><mgt-agenda></mgt-agenda></div>
-            <div class="column" id="mgt-col"><mgt-todo></mgt-todo></div>
-            <div class="column" id="mgt-col"><mgt-file-list></mgt-file-list></div>
-          </div>
-            
+      <html>
+      <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>One Productivity Hub</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+        <script src='main.js'></script> 
+      </head>
+      <body>
+        <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
+        <mgt-msal2-provider 
+            client-id="<YOUR_CLIENT_ID>"
+            scopes="User.Read,
+            User.ReadBasic.All,
+            Calendars.Read,
+            Files.Read,
+            Files.Read.All,
+            Sites.Read.All,
+            Tasks.Read,
+            Tasks.ReadWrite,
+            People.Read">    
+        </mgt-msal2-provider>    
+        <div>
+          <mgt-login />
         </div>
-      </div>
+        <div class="features">
+            <div class="header">
+                <div class="title">
+                    <h2>One Productivity Hub</h2>
+                    <div class="row">
+                        <div class="column"><h3>Calendar events</h3></div>
+                        <div class="column"><h3>To-do tasks</h3></div>
+                        <div class="column"><h3>Files</h3></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="content">
+                <div class="column" id="mgt-col"><mgt-agenda /></div>
+                <div class="column" id="mgt-col"><mgt-todo /></div>
+                <div class="column" id="mgt-col"><mgt-file-list /></div>
+            </div>
+        </div>
       </body>
-      </html>
+    </html>
     ```

@@ -1,5 +1,16 @@
 In this step, you will run your sample app in the browser by using Live Server.
 
+1. `CTRL + SHIFT + P`, type and select `Preferences: Open Workspace Settings (JSON)`.
+
+1. In the `settings.json` file that opens, add the following code:
+
+    ```json
+    {
+    "liveServer.settings.host": "localhost",
+    "liveServer.settings.port": 3000
+    }
+    ```
+
 1. Select `CTRL + SHIFT + P` to open the panel in Visual Studio Code, type and choose `Live Server: Open with Live Server`. Live Server will run the app in your browser.
 
 1. Select **Sign in** and use your Microsoft 365 Developer Program tenant to login.
