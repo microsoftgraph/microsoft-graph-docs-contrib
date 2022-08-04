@@ -55,7 +55,7 @@ $objectMappings1->setSourceObjectName('User');
 $objectMappings1->setTargetObjectName('User');
 
 $attributeMappings1 = new ();
-$attributeMappings1Source = new ();
+$attributeMappings1Source = new Source();
 
 $attributeMappings1->setSource($attributeMappings1Source);
 $attributeMappings1->setTargetAttributeName('userName');

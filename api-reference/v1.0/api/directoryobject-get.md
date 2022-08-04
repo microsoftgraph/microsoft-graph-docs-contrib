@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [directoryObject
   "blockType": "request",
   "name": "get_directoryobject"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ```
 

@@ -14,7 +14,7 @@ $requestBody->setComment('comment-value');
 
 $toRecipientsRecipient1 = new Recipient();
 $additionalData = [
-'emailAddress' => $toRecipientsRecipient1 = new ();
+'emailAddress' => $toRecipientsRecipient1 = new EmailAddress();
 $		toRecipientsRecipient1->setName('name-value');
 
 $		toRecipientsRecipient1->setAddress('address-value');

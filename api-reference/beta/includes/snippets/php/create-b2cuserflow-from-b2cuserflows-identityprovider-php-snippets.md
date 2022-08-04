@@ -14,7 +14,7 @@ $requestBody->setId('Customer');
 
 $requestBody->setUserFlowType(new UserFlowType('signuporsignin'));
 
-$requestBody->setUserFlowTypeVersion(userFlowTypeVersion);
+$requestBody->setUserFlowTypeVersion(3);
 
 $identityProvidersIdentityProvider1 = new IdentityProvider();
 $identityProvidersIdentityProvider1->setId('Facebook-OAuth');

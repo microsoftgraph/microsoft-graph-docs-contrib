@@ -72,7 +72,7 @@ To list the document libraries for a site, your app requests the **drives** rela
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{siteId}/drives
 ```
 

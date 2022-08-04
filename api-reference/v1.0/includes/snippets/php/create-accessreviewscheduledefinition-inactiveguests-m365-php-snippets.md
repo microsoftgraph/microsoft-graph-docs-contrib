@@ -70,15 +70,15 @@ $settings->setJustificationRequiredOnApproval(true);
 
 $settings->setRecommendationsEnabled(true);
 
-$settings->setInstanceDurationInDays(instanceDurationInDays);
+$settings->setInstanceDurationInDays(3);
 
 $settingsRecurrence = new PatternedRecurrence();
 $settingsRecurrencePattern = new RecurrencePattern();
 $settingsRecurrencePattern->setType(new RecurrencePatternType('absolutemonthly'));
 
-$settingsRecurrencePattern->setDayOfMonth(dayOfMonth);
+$settingsRecurrencePattern->setDayOfMonth(5);
 
-$settingsRecurrencePattern->setInterval(interval);
+$settingsRecurrencePattern->setInterval(3);
 
 
 $settingsRecurrence->setPattern($settingsRecurrencePattern);

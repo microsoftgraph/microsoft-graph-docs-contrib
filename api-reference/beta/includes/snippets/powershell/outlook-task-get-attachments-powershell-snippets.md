@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Users
 
-Get-MgUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId
+Get-MgUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId -OutFile $outFileId
 
 ```

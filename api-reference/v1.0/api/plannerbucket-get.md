@@ -50,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plannerbucket"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}
 ```
 
@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-plannerbucket-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-plannerbucket-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

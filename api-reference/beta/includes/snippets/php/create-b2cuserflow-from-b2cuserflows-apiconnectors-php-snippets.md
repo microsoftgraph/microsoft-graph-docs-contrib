@@ -14,7 +14,7 @@ $requestBody->setId('UserFlowWithAPIConnector');
 
 $requestBody->setUserFlowType(new UserFlowType('signuporsignin'));
 
-$requestBody->setUserFlowTypeVersion(userFlowTypeVersion);
+$requestBody->setUserFlowTypeVersion(1);
 
 $apiConnectorConfiguration = new UserFlowApiConnectorConfiguration();
 $apiConnectorConfigurationPostFederationSignup = new PostFederationSignup();

@@ -38,7 +38,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Communications().CallsById("call-id").Transfer(call-id).Post(requestBody)
+graphClient.Communications().CallsById("call-id").Transfer().Post(requestBody)
 
 
 ```

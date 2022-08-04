@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 let roleAssignments = await client.api('/roleManagement/directory/roleAssignments')
-	.filter(' principalId eq \'f1847572-48aa-47aa-96a3-2ec61904f41f\'')
+	.filter(' principalId eq \'5bde3e51-d13b-4db1-9948-fe4b109d11a7\'')
 	.get();
 
 ```
