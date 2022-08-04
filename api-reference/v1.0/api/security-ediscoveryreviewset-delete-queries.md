@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /security/cases/ediscoveryCases/{eDiscoveryCaseId}}/reviewSets/{ediscoveryReviewSetId}/queries/{eDiscoveryReviewSetQueryId}
+DELETE /security/cases/ediscoveryCases/{eDiscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/queries/{eDiscoveryReviewSetQueryId}
 ```
 
 ## Request headers
