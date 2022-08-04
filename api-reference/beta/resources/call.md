@@ -145,7 +145,7 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "activeModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
+  "activeModalities": ["String"],
   "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
   "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
   "callbackUri": "String",
@@ -153,7 +153,7 @@ The following is a JSON representation of the resource.
   "callOptions": {"@odata.type": "#microsoft.graph.outgoingCallOptions"},
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "contentSharingSessions": [{ "@odata.type": "microsoft.graph.contentSharingSession" }],
-  "direction": "incoming | outgoing",
+  "direction": "String",
   "id": "String (identifier)",
   "incomingContext": {"@odata.type": "#microsoft.graph.incomingContext"},
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
@@ -163,12 +163,12 @@ The following is a JSON representation of the resource.
   "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
   "myParticipantId": "String",
   "replacesContext": "String",
-  "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
+  "requestedModalities": ["String"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "ringingTimeoutInSeconds": 99,
-  "routingPolicies": ["none | noMissedCall | disableForwardingExceptPhone | disableForwarding | preferSkypeForBusiness"],
+  "routingPolicies": ["String"],
   "source": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
+  "state": "String",
   "subject": "String",
   "targets": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "tenantId": "String",

@@ -14,7 +14,7 @@ configuration := &graphconfig.GetScheduleRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewGetSchedulePostRequestBody()
-schedules := []String {
+schedules := []string {
 	"adelev@contoso.onmicrosoft.com",
 	"meganb@contoso.onmicrosoft.com",
 

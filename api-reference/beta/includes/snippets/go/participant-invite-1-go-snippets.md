@@ -37,7 +37,7 @@ requestBody.SetParticipants(participants)
 clientContext := "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().CallsById("call-id").Participants().Invite(call-id).Post(requestBody)
+result, err := graphClient.Communications().CallsById("call-id").Participants().Invite().Post(requestBody)
 
 
 ```

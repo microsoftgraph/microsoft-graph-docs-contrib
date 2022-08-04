@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityTriggerRetentionEvent
+Get-MgSecurityTriggerRetentionEvent -OutFile $outFileId
 
 ```

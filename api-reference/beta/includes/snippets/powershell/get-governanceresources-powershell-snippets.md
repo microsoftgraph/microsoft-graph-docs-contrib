@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgPrivilegedAccessResource -PrivilegedAccessId $privilegedAccessId
+Get-MgPrivilegedAccessResource -PrivilegedAccessId $privilegedAccessId -OutFile $outFileId
 
 ```

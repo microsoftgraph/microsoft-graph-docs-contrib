@@ -23,7 +23,7 @@ $requestorSettings->setScopeType('NoSubjects');
 
 $requestorSettings->setAcceptRequests(true);
 
-$requestorSettings->setAllowedRequestors(]);
+$requestorSettings->setAllowedRequestors([]);
 
 
 $requestBody->setRequestorSettings($requestorSettings);
@@ -36,7 +36,7 @@ $requestApprovalSettings->setIsRequestorJustificationRequired(false);
 
 $requestApprovalSettings->setApprovalMode('NoApproval');
 
-$requestApprovalSettings->setApprovalStages(]);
+$requestApprovalSettings->setApprovalStages([]);
 
 
 $requestBody->setRequestApprovalSettings($requestApprovalSettings);

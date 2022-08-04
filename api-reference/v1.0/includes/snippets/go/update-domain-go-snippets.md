@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewDomain()
 isDefault := true
 requestBody.SetIsDefault(&isDefault) 
-supportedServices := []String {
+supportedServices := []string {
 	"Email",
 	"OfficeCommunicationsOnline",
 

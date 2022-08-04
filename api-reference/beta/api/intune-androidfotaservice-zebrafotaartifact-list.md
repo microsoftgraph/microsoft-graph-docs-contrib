@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 421
+Content-Length: 464
 
 {
   "value": [
@@ -71,7 +71,8 @@ Content-Length: 421
       "osVersion": "Os Version value",
       "patchVersion": "Patch Version value",
       "boardSupportPackageVersion": "Board Support Package Version value",
-      "releaseNotesUrl": "https://example.com/releaseNotesUrl/"
+      "releaseNotesUrl": "https://example.com/releaseNotesUrl/",
+      "description": "Description value"
     }
   ]
 }
