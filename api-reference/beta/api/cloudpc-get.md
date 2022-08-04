@@ -44,7 +44,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
-GET /me/cloudPCs{id}
+GET /me/cloudPCs/{id}
 GET /users/{userId}/cloudPCs/{id}
 ```
 
