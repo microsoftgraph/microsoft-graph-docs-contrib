@@ -105,8 +105,8 @@ Limits are expressed as requests per second (rps).
 | GET /teams/```{team-id}```/members | 60 rps | 1200 rps |
 | GET /teams/```{team-id}```/channels | 60 rps | 1200 rps |
 | GET /teams/```{team-id}```/channels/```{channel-id}```/members | 60 rps | 1200 rps |
-| Get all channel messages for a team<br/>GET teams/```{teamId}```/channels/getAllMessages<br/>GET teams/```{teamId}```/channels/allMessages | 200rps | 1000rps |
-| Get all chat messages for a user<br/>GET users/```{userId}```/chats/getAllMessages<br/>GET users/```{userId}```/chats/allMessages | 200rps | 1000rps |
+| Get all channel messages for a team<br/>GET teams/```{team-id}```/channels/getAllMessages<br/>GET teams/```{team-id}```/channels/allMessages | 200rps | 1000rps |
+| Get all chat messages for a user<br/>GET users/```{user-id}```/chats/getAllMessages<br/>GET users/```{user-id}```/chats/allMessages | 200rps | 1000rps |
 | Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps |
 | Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
