@@ -146,11 +146,11 @@ Represents schema of properties that represent a data entity in the data source.
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-|String |0 | Property of type string. |
-|Int64 |1 | Property of type int64 (long). |
-|Double |2 | Property of type double. |
-|DateTime |3 |Property of type DateTime. |
-|Boolean |4 |Property of type Boolean. |
+|String |0 | Property of type **string**. |
+|Int64 |1 | Property of type **int64** (long). |
+|Double |2 | Property of type **double**. |
+|DateTime |3 |Property of type **DateTime**. |
+|Boolean |4 |Property of type **Boolean**. |
 |StringCollection |5 |Property of type of array or collection of string type. |
 |Int64Collection |6 | Property of the type of array or collection of long type. |
 |DoubleCollection |7 |Property of type of array or collection of double type. |
@@ -164,12 +164,12 @@ Represents schema of properties that represent a data entity in the data source.
 |IsSearchable |1 |If a property is searchable, its value is added to the full-text index. When a user performs a search, results are returned if there's a search hit in one of the searchable fields or its content. For example, if the property is "Author," searching "Smith" returns items whose Author property contains "Smith." |
 |IsQueryable |2 |If a property is queryable, you can query against it using Knowledge Query Language (KQL). KQL consists of one or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(\*). For example, if the property is "Author," the search query can be "Author: Smith" |
 |IsRetrievable |4 |If a property is retrievable, it can return its value in search results. Any property you want to add to the display template or return from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable will increase search latency. Be selective and choose relevant properties. |
-|IsContent |8 |Content property is to identify a property that can be full text indexed. Admins will choose among the available properties, which one should be the property to be treated as content for that specific connection. For details, see [Content](/graph/connecting-external-content-manage-items#content). |
+|IsContent |8 |Content property is to identify a property that can be full text indexed. Admins will choose among the available properties, which one should be the property to be treated as content for that specific connection. For details, see [Content property](/graph/connecting-external-content-manage-items#content). |
 |IsRefinable |16 |If a property is refinable, an admin can configure it as a custom filter on the Microsoft Search results page. A refinable property can't be searchable. |
 
 ## SearchPropertyLabel
 
-Search property labels are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. Read more [here](/graph/connecting-external-content-manage-schema#semantic-labels).
+Search property labels are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. For details, see [Semantic Labels](/graph/connecting-external-content-manage-schema#semantic-labels).
 
 ### SearchPropertyLabel enumeration members
 
@@ -194,7 +194,7 @@ Search property labels are well-known tags published by Microsoft that you can a
 
 ## SourcePropertyDefinition
 
-Defines a single source property for an item in data source. Read more about schema property definitions [here](/graph/api/resources/externalconnectors-property).
+Defines a single source property for an item in data source. For details about schema property definitions, see [property resource type](/graph/api/resources/externalconnectors-property).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
