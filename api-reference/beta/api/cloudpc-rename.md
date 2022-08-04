@@ -119,7 +119,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Reboot the cloudPC for the signed-in user
+### Example 2: Rename the cloudPC for the signed-in user
 
 #### Request
 
