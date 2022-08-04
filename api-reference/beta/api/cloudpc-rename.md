@@ -130,7 +130,7 @@ HTTP/1.1 204 No Content
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002/reboot
+POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002/rename
 ```
 
 #### Response
