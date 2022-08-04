@@ -14888,7 +14888,7 @@ items:
           - name: Extract content label
             href: api/security-sensitivitylabel-extractcontentlabel.md
           - name: Label policy settings
-            href: resources/security-informationprotectionpolicysetting-get.md
+            href: api/security-informationprotectionpolicysetting-get.md
         - name: Threat assessment
           items:
           - name: Overview
