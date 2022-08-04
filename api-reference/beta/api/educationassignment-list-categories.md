@@ -1,7 +1,7 @@
 ---
 title: "List categories"
 description: "List all the categories associated with an assignment."
-author: "suresh-padimi"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType

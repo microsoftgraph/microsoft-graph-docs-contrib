@@ -1,7 +1,7 @@
 ---
 title: "Get educationAssignment"
 description: "Get the properties and relationships of an assignment."
-author: "Suresh-Padimi"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "List assignment resources"
 description: "Get all the resources associated with an assignment."
-author: "suresh-padimi"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
