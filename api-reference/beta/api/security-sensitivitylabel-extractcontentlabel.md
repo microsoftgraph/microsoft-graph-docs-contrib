@@ -76,6 +76,8 @@ If successful, this action returns a `200 OK` response code and a [contentLabel]
 
 The following is an example of the response.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sensitivitylabelthis.extractcontentlabel"
@@ -124,6 +126,25 @@ User-agent: ContosoLOBApp/1.0
     }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/sensitivitylabelthisextractcontentlabel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/sensitivitylabelthisextractcontentlabel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sensitivitylabelthisextractcontentlabel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/sensitivitylabelthisextractcontentlabel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

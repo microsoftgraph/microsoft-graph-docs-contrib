@@ -51,7 +51,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_schemaextension"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/schemaExtensions/extcivhhslh_sbtest1
 ```
 

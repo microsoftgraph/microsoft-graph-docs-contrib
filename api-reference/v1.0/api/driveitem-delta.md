@@ -283,7 +283,7 @@ Using a timestamp in place of a token is only supported on OneDrive for Business
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-delta-timestamp", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
 ```
 

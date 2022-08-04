@@ -28,7 +28,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Get selected properties](#get-selected-properties) | **fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
-|[Sort search results](#sort-search-results)| **sort** |
+|[Sort search results](#sort-search-results)| **sortProperties** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
 |[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
 |[Search display layout](#search-display-layout) (preview)| **resultTemplateOptions**|
@@ -111,7 +111,7 @@ Search results in the response are sorted in the following default sort order:
 - **message** and **event** are sorted by date.
 - All SharePoint, OneDrive, person and connector types are sorted by relevance.
 
-The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [searchRequest](./searchrequest.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
+The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [sortProperty](sortproperty.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
 
 Note that sorting results is currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
 

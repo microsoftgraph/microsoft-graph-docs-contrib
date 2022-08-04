@@ -69,7 +69,7 @@ If successful, this function returns a `200 OK` response code and a [contentType
   "name": "site_getapplicablecontenttypesforlist"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{siteId}/getApplicableContentTypesForList(listId='{list-id}')
 ```
 
