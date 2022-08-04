@@ -15115,6 +15115,7 @@ items:
             href: api/security-sensitivitylabel-extractcontentlabel.md
         - name: Sensitivity label policy
           href: resources/security-informationprotectionpolicysetting.md
+          items:
           - name: List
           - href: api/security-informationprotectionpolicysetting-get.md
         - name: Threat assessment
