@@ -74,7 +74,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Reboot the cloudPC for the administrator
+### Example 1: Reprovision the cloudPC for the administrator
 
 #### Request
 
