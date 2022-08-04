@@ -63,9 +63,4 @@ Looking for the API reference for this service?
 ## Next steps
 
 - The [user resource type](/graph/api/resources/users).
-- Authenticate with Microsoft Graph [on behalf of a user](auth-v2-user.md) or [as a daemon or service by consent of an administrator](auth-v2-service.md).
-- Set access control and policies for users with the [Azure AD API](/graph/api/resources/azure-ad-overview).
-- Review the [permissions](permissions-reference.md) your app will need to access user data.
-
-> [!div class="nextstepaction"]
-> [Learn: Access User Data from Microsoft Graph](/learn/modules/msgraph-access-user-data)
+- Build your skills and [learn how to work with users through Microsoft Graph](/learn/modules/msgraph-access-user-data).
