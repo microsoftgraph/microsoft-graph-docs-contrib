@@ -16,12 +16,13 @@ People insights represent connections of people who are [relevant to or working 
 
 By default, the display or return of people insights is enabled for an organization. Administrators with the global administrator role can customize this behavior for an organization using REST APIs and the appropriate permissions. They can customize by setting properties of the [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) resource in the following ways:
 
-### Configure people insights via Microsoft admin center
-An administrator with the _global administrator_ role can enable or disable people insights privacy setting via toggles in admin center. The settings are available in Microsoft 365 admin center under **Settings**, **select Search & intelligence**, select **Configurations** then click the **Change** button under **People insights**
+### Configure people insights via the Microsoft 365 admin center
+
+An administrator with the _global administrator_ role can enable or disable the people insights privacy setting via a toggle. To do so, in Microsoft 365 admin center, expand **Settings**, select **Search & intelligence**, select **Configurations**, and under **People insights**, choose **Change**
 
 ![People insights admin center privacy control](images/people-insights-admin-center.png)
 
-The toggle allows the administrator to disable/enable people insights for the whole tenant, but they can disable it only for a group of users following the same steps above and searching for the group. Hit **Save** after selecting the group. 
+The **Allow your organization to use People insights** toggle allows you to enable or disable people insights for the whole tenant. Optionally, you can also disable it only for a group of users following the previous steps and searching for a specific group. Click on **Save** to save your settings.
 
 ![People insights admin center privacy control for a group](images/people-insights-admin-center-groupcontrol.png)
 
