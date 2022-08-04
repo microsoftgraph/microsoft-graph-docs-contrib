@@ -2,7 +2,7 @@
 title: "Upload files for education assignments and submissions"
 description: "Learn how to upload a feedback file to a submission resource by using the education API in Microsoft Graph."
 ms.localizationpriority: medium
-author: "suresh-padimi"
+author: "sureshpadimi88"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
