@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported.
 
 > [!NOTE]
->Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. As we get closer to the transition, we'll provide additional details on the updated permission requirements and timeline.
+> Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will provide more granular control over virtual appointment permissions. When the transition date approaches, we'll provide more details about the updated permission requirements and timeline.
 
 ## HTTP request
 
