@@ -21,15 +21,29 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Chat.ReadBasic.All*, Chat.Read.All*, Chat.ReadWrite.All* |
+
+\* This scenario is only supported for the following call: `GET /users/{user-id | user-principal-name}/chats`
 
 ## HTTP request
 
+To get the signed-in user's chats in the organization using delegated permission:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /chats
+```
+
+To get the chats of the specified user (who is the signed-in user) in the organization using delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/chats
 GET /users/{user-id | user-principal-name}/chats
-GET /chats
+```
+
+To get the chats of the specified user (who may not be signed in or is different from the signed-in user) in the organization, using application permission:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{user-id | user-principal-name}/chats
 ```
 
 ## Optional query parameters

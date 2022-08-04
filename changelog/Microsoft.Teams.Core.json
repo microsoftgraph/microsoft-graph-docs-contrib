@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "e9194248-72ef-4678-872f-99b59117edb5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for [listing a user's chats](https://docs.microsoft.com/en-us/graph/api/chat-list) in application-only context.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "e9194248-72ef-4678-872f-99b59117edb5",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-02T13:04:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "204490dc-7a25-41fe-93d5-db292c8951e9",
           "ApiChange": "Property",
           "ChangedApiName": "topic",
