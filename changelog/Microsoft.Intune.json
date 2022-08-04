@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "4fefb14c-a22d-4e6e-9820-3e73c079a7a2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "diskType",
+          "ChangeType": "Addition",
+          "Description": "Added the **diskType** enumeration type.",
+          "Target": "diskType"
+        }, 
+        {
+          "Id": "4fefb14c-a22d-4e6e-9820-3e73c079a7a2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "userExperienceAnalyticsHealthState",
+          "ChangeType": "Addition",
+          "Description": "Added the **userExperienceAnalyticsHealthState** enumeration type.",
+          "Target": "userExperienceAnalyticsHealthState"
+        },
+        {
+          "Id": "4fefb14c-a22d-4e6e-9820-3e73c079a7a2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsDevicePerformance",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsDevicePerformance](https://docs.microsoft.com/graph/api/resources/intune-userExperienceAnalyticsDevicePerformance?view=graph-rest-1.0) resource",
+          "Target": "userExperienceAnalyticsDevicePerformance"
+        },
+        {
+          "Id": "ec4e1b0d-92c4-4425-b87b-e43e654c29e1",
+          "ApiChange": "Member",
+          "ChangedApiName": "includeDeviceDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeDeviceDetails` member to the **notificationTemplateBrandingOptions** enumeration.",
+          "Target": "notificationTemplateBrandingOptions"
+        },
+        {
+          "Id": "3e539911-adf4-479e-9e19-2fcb8064100c",
+          "ApiChange": "Method",
+          "ChangedApiName": "getNoncompliantDevicesAndSettingsReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getNoncompliantDevicesAndSettingsReport](https://docs.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getnoncompliantdevicesandsettingsreport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        }
+      ],
+      "Id": "4fefb14c-a22d-4e6e-9820-3e73c079a7a2",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-25T18:53:32.7807195Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },      
+    {
+      "ChangeList": [
+        {
           "Id": "4307968f-4c6a-4b07-9b1b-3553fb1df154",
           "ApiChange": "Enumeration",
           "ChangedApiName": "officeSuiteDefaultFileFormatType",
