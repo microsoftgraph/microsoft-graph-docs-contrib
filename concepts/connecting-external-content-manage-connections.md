@@ -111,7 +111,7 @@ To change the display name, description, or enabled content experiences of an ex
 
 ## Delete a connection
 
-To remove all items that were indexed via a connection, you can [delete a connection](/graph/api/externalconnectors-externalconnection-delete).
+To remove all items that were indexed via a connection, you can [delete a connection](/graph/api/resources/externalconnectors-externalconnection-delete).
 
 ## Next steps
 
