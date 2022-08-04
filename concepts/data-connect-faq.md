@@ -16,22 +16,60 @@ Data Connect and Microsoft Graph APIs provide access to the same underlying data
 
 ## Is there any initial overhead?
 
+<!--- overhead actually takes 30 minutes, but 45 is a safer bet to say --->
+<!--- this overhead excludes consent. If there is no consent, the pipeline will continue to run but not end. Admin has up till 24 hrs to approve the request once the pipeline has started. --->
+
+<!--- admins need to approve consent within 24 hours. If admin takes > 24 hrs, the consent request dissapears, and the pipeline will fail. Consent expires and they have to restart the process and kick a new pipeline off. kick off pipeline then consent. --->
 Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. This might be a negligible cost for large amounts of data, but if this time is unacceptable for your scenario, Microsoft Graph APIs might provide a better approach.
 
+<!-- added in -->
+Please Note: Your tenant admin needs to approve and consent within 24 hours of kicking off the pipeline. If the consent is not given within 24 hours, consent will expire and your will need to restart the consent process by kicking off your pipelines again. The overhead time mentioned aboved does not include time taken in consent approval.
 ## How much do I have to pay for Data Connect?
 
 Microsoft Graph Data Connect consumption charges are billed monthly on a pay-as-you-go basis. The Data Connect billing unit is in a multiple of 1000s of objects, where 1 object maps to 1 individual instance of an entity in Microsoft 365. For example, 1 email == 1 object, 1 file == 1 object, 1 Teams chat message == 1 object, and so on. Charges are calculated by using a flat rate based on the count of per-1,000 objects extracted through the connector. There is no charge for extraction of objects from the following datasets:
 
+<!--- add the full list of datasets here --->
+<!--- we need to take a look from the dictionary if the datasets are free, Cristian to help Richa confirm datasets--->
 - BasicDataSet_v0.User
+- BasicDataSet_v0.User_v1
 - BasicDataSet_v0.MailboxSettings
 - BasicDataSet_v0.Manager
 - BasicDataSet_v0.DirectReport
+- BasicDataSet_v0.GroupDetails,
+- BasicDataSet_v0.GroupMembers,
+- BasicDataSet_v0.GroupOwners,
+- DocumentSharingDataset_v0_Preview,
+- SharePointSitesDataset_v0_Preview,
+- SharePointGroupsDataset_v0_Preview,
+- VivaInsightsDataset  
+
+## How is billing calculated?
+As mentioned earlier, customers are charged monthly. However, MGDC does not do fractionable rounding up. For example a customer has 20 extractions within the month. The customer sets each extraction to 500 rows each, so there are a total of 10,000 rows extracted. The customer will be billed at 20 units, since 500 rows /1000 rows = 0.5. Since 0.5 is a fraction, it will be rounded to 1. The customer will be billed 20 units since 1 will be multiplied by the number of extraction, which is 20.
+
+
+<!---clarify: what does billed monthly, are you charged monthly of a fixed rate or is are you paying your month's worth of extraction.
+
+ex. in one month, you 20 extractions that are 500 rows each, == 10,000 rows extracted. I would expect to build 10 units billed. But I would actually be billed at 20 units, since 500rows/1000 rows = 0.5 and then round this to 1 which becomes 20 units. There is no frationable rowing.   --->
+
+<!--- explain how discounts would work in the FAQ ~15% discounted and add formula--->
+
+<!--- Have a section on opt in dataset like Viva and ODSP- and needs to include consent for this: Talk to Himani for both --->
+
 
 ## In what regions is Data Connect available?
+<!--- we are now available in the UK/Great Britian --->
+<!--- How would multi geo tenants work? If MGDC is available is in that region, the users of that region can be extracted and it can only extracted to a sink in that region --->
+<!---  we need to give a lot of examples in this section--->
+<!--- Do we want to address ADF/Azure regions and how compatibility works with MGDC and Office region. We also need to explain how public account is closed--->
 
 Microsoft Graph Data Connect is currently available in the following regions: North America, Europe, Asia Pacific, and Australia. Other regions will follow.
 
 ## What datasets are available through Data Connect?
+
+<!--- we need to mention AAD and ODSP and Viva and mention their preview status--->
+<!--- link to the datasets page from the documentation that fernando is working on --->
+<!--- we should think about removing the MGDC datasets and 1-1 mapping sentence.   --->
+<!--- should we have an email POC? --->
 
 Microsoft Graph Data Connect currently includes the following datasets:
 
@@ -41,22 +79,28 @@ Microsoft Graph Data Connect currently includes the following datasets:
 We plan to add new datasets going forward and will disclose timelines as appropriate. However, it is unlikely that we will expose every Microsoft Graph dataset through Microsoft Graph Data Connect.
 
 ## What scenarios does Data Connect best address?
+<!--- list this in bullet point. Refer to slides that go over solution types and different scenarios. Sanath to help give Richa that info --->
+<!--- This may be a good time to publish success stories of light house. Real examples of MGDC usuage without any personal info being given away --->
 
 Organizations that can tap into the large datasets that power their productivity tools can gain tremendous insights into the challenges and opportunities they might encounter. During our public preview, we've seen customers interested in sales productivity, data archiving and management, organizational optimization, intelligent workflows, and ensuring compliance.
 
 ## Is it possible for my data to stay within the organization's subscription with Data Connect?
 
+
 Microsoft Graph Data Connect pipelines are orchestrated by Azure Data Factory, a data integration service that runs in an Azure subscription. The Azure subscription is [associated with exactly one Microsoft 365 tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). This way, the data must initially flow to an associated Azure subscription. After further minimalization and aggregation, the data can be used elsewhere.
 
+<!--- this part may change once we have a different ISV flow. Not sure if this will be relevant --->
 If you want to build an app for others to use to extract their Microsoft 365 data, you can package the app as an [Azure managed application](/azure/managed-applications/overview) and publish it to the Azure Marketplace. Then someone can deploy your app into their own Azure subscription, and the app can access data in their tenant.
 
 ## Are service principals required with Data Connect?
 
+<!--- add a link to build your own application --->
 When creating the Data Factory pipeline, you have to provide a service principal to the Microsoft 365 linked service. In Azure, a service principal is a security identity that represents an application/service (as opposed to a user). Microsoft Graph Data Connect uses this service principal as its identity when getting authorized access to your Microsoft 365 data.
 
 If you create an Azure managed application for others to use in their tenants, you still provide a service principal for the app to use. This service principal exists in your (the publisher's) tenant. However, if the app needs other service principals, your customer (the installer) creates them in their own tenant. For example, your Data Factory pipeline likely needs access to a storage resource in Azure. The customer creates the service principal with permissions to the storage account for the pipeline to use.
 
 ## How can I check for pending Privileged Access Management requests?
+
 
 Before Microsoft Graph Data Connect can copy your data, an administrator must approve a Privileged Access Management (PAM) request. PAM is the mechanism used to authorize your data pipeline access to the data in Microsoft 365. The first time you trigger a pipeline, it waits for a Microsoft 365 administrator (or appointed delegate) to approve the access request. Although the pipeline status shows **In progress**, the underlying copy activity will have a status of **ConsentPending** until approval is granted, as shown in the following screenshot.
 
