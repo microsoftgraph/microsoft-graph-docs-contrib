@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | User.Read, Organization.Read.All, User.ReadBasic.All, User.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Organization.Read.All |
 
 ## HTTP request
 
@@ -202,7 +202,7 @@ The following is an example of the request.
   "name": "get_organizationalbranding_defaultlocale_bannerLogo"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/default/bannerLogo
 ```
 

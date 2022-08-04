@@ -13,8 +13,4 @@ ms.topic: include
 | GET Subscription by Id | 2000 requests per 20 seconds | 500 requests per 20 seconds |
 | GET Subscription List | 40 requests per 20 seconds | 25 requests per 20 seconds |
 
-The preceding limits apply to the following resources:  
-
-| <!-- fake header-->                                                |
-|--------------------------------------------------------------------|
-| <ul> <li> [subscription](/graph/api/resources/subscription)  </ul> |
+The preceding limits apply to the [subscription](/graph/api/resources/subscription) resource.  

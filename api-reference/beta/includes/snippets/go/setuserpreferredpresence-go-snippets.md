@@ -15,7 +15,7 @@ requestBody.SetActivity(&activity)
 expirationDuration := "PT8H"
 requestBody.SetExpirationDuration(&expirationDuration) 
 
-graphClient.UsersById("user-id").Presence().SetUserPreferredPresence(user-id).Post(requestBody)
+graphClient.UsersById("user-id").Presence().SetUserPreferredPresence().Post(requestBody)
 
 
 ```

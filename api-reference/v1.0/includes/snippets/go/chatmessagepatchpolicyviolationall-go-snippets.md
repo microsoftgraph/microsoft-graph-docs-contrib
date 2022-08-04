@@ -14,7 +14,7 @@ generalText := "This item has been blocked by the administrator."
 policyTip.SetGeneralText(&generalText) 
 complianceUrl := "https://contoso.com/dlp-policy-page"
 policyTip.SetComplianceUrl(&complianceUrl) 
-matchedConditionDescriptions := []String {
+matchedConditionDescriptions := []string {
 	"Credit Card Number",
 
 }

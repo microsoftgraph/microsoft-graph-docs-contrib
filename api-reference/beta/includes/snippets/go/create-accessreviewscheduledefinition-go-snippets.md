@@ -25,15 +25,14 @@ scope.SetAdditionalData(additionalData)
 requestBody.SetScope(scope)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"query" : "/users/398164b1-5196-49dd-ada2-364b49f99b27", 
-	"queryType" : "MicrosoftGraph", 
-}
-.SetAdditionalData(additionalData)
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
 
 reviewers := []graphmodels.Objectable {
-	,
+	accessReviewReviewerScope,
 
 }
 requestBody.SetReviewers(reviewers)

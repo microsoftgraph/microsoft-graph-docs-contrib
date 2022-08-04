@@ -49,7 +49,7 @@ $settings->setDefaultDecisionEnabled(false);
 
 $settings->setDefaultDecision('None');
 
-$settings->setInstanceDurationInDays(instanceDurationInDays);
+$settings->setInstanceDurationInDays(1);
 
 $settings->setRecommendationsEnabled(true);
 
@@ -57,7 +57,7 @@ $settingsRecurrence = new PatternedRecurrence();
 $settingsRecurrencePattern = new RecurrencePattern();
 $settingsRecurrencePattern->setType(new RecurrencePatternType('weekly'));
 
-$settingsRecurrencePattern->setInterval(interval);
+$settingsRecurrencePattern->setInterval(1);
 
 
 $settingsRecurrence->setPattern($settingsRecurrencePattern);
