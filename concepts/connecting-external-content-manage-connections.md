@@ -78,7 +78,7 @@ The content experiences listed in the following table are currently supported. W
 | Content Experience Type Enum | Description |
 |-|-|
 | search | Enabling search allows your content to show up in Microsoft search results. These results are consistently formatted across different search canvases, like SharePoint and Microsoft Bing. |
-| compliance | Enabling compliance allows your content to be visible to Microsoft Purview advanced eDiscovery solution. Refer to [Microsoft Purview solutions](https://docs.microsoft.com/microsoft-365/compliance/ediscovery) to learn more about advanced eDiscovery solution & licensing requirements.|
+| compliance | Enabling compliance allows your content to be visible to Microsoft Purview advanced eDiscovery solution. Refer to [Microsoft Purview solutions](/microsoft-365/compliance/ediscovery) to learn more about advanced eDiscovery solution & licensing requirements.|
 
 If you already know which content experiences you want your connection to partipate in, set the `enabledContentExperiences` flag enum at the time of connection creation.
 
