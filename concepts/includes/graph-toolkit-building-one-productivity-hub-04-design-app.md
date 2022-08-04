@@ -2,7 +2,12 @@ In this step, you'll design your web app by using Microsoft Graph Toolkit compon
 
 ## Initialize the Login component
 
-In **index.html** inside the `<body></body>`, create `<div></div>` right under the provider and add the Login component inside the div into your code block below:
+In **index.html** inside the `<body></body>`, add the following code under the provider.
+
+````html
+<div>
+  <mgt-login></mgt-login>
+</div>
 
   ```html
   <mgt-login></mgt-login>
