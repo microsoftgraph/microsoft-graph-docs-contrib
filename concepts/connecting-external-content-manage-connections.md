@@ -73,7 +73,7 @@ Before an application can add items to the search index, it must create and conf
 A Graph connector can be enabled to participate in other Microsoft 365 experiences beyond Microsoft Search.
 
 This can be done by specifying one or more content experiences (search, compliance, etc.) which your connection will participate in.
-The content experiences listed in the following table are currently supported. When calling the Graph API, reference this [flag enum description](/graph/api/enums-externalconnectors).
+The content experiences listed in the following table are currently supported. When calling the Graph API, reference this [flag enum description](/graph/resources/enums-externalconnectors).
 
 | Content Experience Type Enum | Description |
 |-|-|
