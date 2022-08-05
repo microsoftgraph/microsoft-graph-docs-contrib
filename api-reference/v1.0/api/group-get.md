@@ -137,9 +137,6 @@ Content-type: application/json
     "deletedDateTime": null,
     "classification": null,
     "createdDateTime": "2017-07-31T18:56:16Z",
-    "creationOptions": [
-        "ExchangeProvisioningFlags:481"
-    ],
     "description": "Welcome to the HR Taskforce team.",
     "displayName": "HR Taskforce",
     "expirationDateTime": null,
