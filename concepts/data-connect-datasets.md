@@ -78,7 +78,7 @@ This data is available for only the past 21 days (about 3 weeks). For instance, 
 ### Viva Insights
 | Dataset name | Description | Sample and Schema | Billing |
 |--|--|--|--|
-| VivaInsightsDataset_v0  | Contains Viva Insights metrics. | <ul><li> [Sample](<<PENDING SAMPLE>>)</li><li>[Schema](<<PENDING SCHEMA>>)</li></ul> | Requires Viva Insights license |
+| VivaInsightsDataset_v0  | Contains Viva Insights metrics. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/VivaInsightsDataset_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/VivaInsightsDataSet_v0.md)</li></ul> | Requires Viva Insights license |
 
 ## Regions
 
