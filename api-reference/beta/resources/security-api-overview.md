@@ -43,7 +43,7 @@ These are [alert](security-alert.md) resources that first pull alert data from s
 Alerts from the following security providers are available via these rich alerts and incidents:
 - [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 - [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide)
-- [Microsoft Defender for Cloud Apps](/defender-cloud-apps/monitor-alerts) 
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/monitor-alerts) 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide)
 - [Microsoft Defender for Identity](/defender-for-identity/alerts-overview) 
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/overview?view=o365-worldwide)
