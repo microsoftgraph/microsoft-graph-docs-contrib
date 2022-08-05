@@ -5,7 +5,7 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Microsoft Graph connectors SDK common models"
+description: "Learn about the common models used in the Microsoft Graph connectors SDK."
 ---
 
 # Microsoft Graph connectors SDK common models
@@ -14,7 +14,7 @@ This article describes the common models used in the Microsoft Graph connectors 
 
 ## CustomConfiguration
 
-**Search Admin** provides the connector-specific custom configuration information during the connection creation. The platform doesn't manage the configuration's structure and format, and the connector developers can use a format of their choice.
+**Search Admin** provides the connector-specific custom configuration information during the connection creation. The platform doesn't manage the structure and format of the configuration. Connector developers can use a format of their choice.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -22,7 +22,7 @@ This article describes the common models used in the Microsoft Graph connectors 
 
 ## AuthenticationType enumeration members
 
-Enumeration members of the authentication type.
+The following table lists the members of the **AuthenticationType** enumeration.
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
@@ -33,7 +33,7 @@ Enumeration members of the authentication type.
 
 ## AuthenticationData
 
-Credentials provided by the admin to access the data source. It contains the authentication type, data source URL, and the credentials data.
+Contains credentials provided by the admin to access the data source, including the authentication type, data source URL, and the credentials data.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -54,27 +54,27 @@ Represents the basic credentials model.
 
 ## WindowsCredential
 
-Represents the windows credentials model.
+Represents the Windows credentials model.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |username |string | Username for accessing the data source. |
 |secret |string | Secret to use with the username for accessing data source. |
-|domain |string | Active Directory Domain of the account. If not provided by the admin explicitly, this property holds the value of the computer name. |
+|domain |string | Active Directory domain of the account. If not provided by the admin explicitly, this property holds the value of the computer name. |
 
 ## oAuth2ClientCredential
 
-Represents the credential model for oauth2 client credentials.
+Represents the credential model for OAuth2 client credentials.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
 |appId |string |Application ID/client ID for the OAuth2 application. |
 |appSecret |String |Application secret/client secret for the OAuth2 application. |
-|oAuth2ClientCredentialResponse |[oAuth2ClientCredentialResponse](#oauth2clientcredentialresponse) |Contains OAuth token related details. This property will be set to the response which connector sends after the first validate authentication call succeeds. |
+|oAuth2ClientCredentialResponse |[oAuth2ClientCredentialResponse](#oauth2clientcredentialresponse) |Contains OAuth token related details. This property will be set to the response that the connector sends after the first validate authentication call succeeds. |
 
 ## oAuth2ClientCredentialResponse
 
-Represents the response model from auth server for OAuth2 token request. The fields present in this model are the common response fields specified in OAuth2 documentation. Additionally, idToken can be set when the auth servers support OpenIDConnect.
+Represents the response model from the authentication server for the OAuth2 token request. The fields present in this model are the common response fields specified in OAuth2 documentation. Additionally, **idToken** can be set when the auth servers support **OpenIDConnect**.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -87,24 +87,22 @@ Represents the response model from auth server for OAuth2 token request. The fie
 
 ## OperationResult
 
-Enumeration containing possible values for the result of operations.
-
-OperationResult enumeration members:
+The **OperationResult** enumeration contains the possible values for operation results.
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-|Success |0 |If the operation succeeded without any error. |
+|Success |0 |The operation succeeded without any error. |
 |PartialSuccess |1 | Operation is a success, but there's a warning message to be processed. |
 |ValidationFailure |2 |One or more validations failed. |
 |AuthenticationIssue |3 |Credentials provided didn't work. |
 |DatasourceError |4 |Data source read error. |
 |NetworkError |5 |Network operation error. |
 |Canceled |6 |The cancellation token canceled the operation. |
-|TokenExpired |7 |To be used in OAuth flow when the token sent to the connector by the platform has expired. During the crawl, on receiving this status, the platform will trigger the refresh token flow and call the RefreshAccessToken method in ConnectorOAuthService. |
+|TokenExpired |7 |To be used in OAuth flow when the token sent to the connector by the platform has expired. During the crawl, on receiving this status, the platform will trigger the refresh token flow and call the **RefreshAccessToken** method in **ConnectorOAuthService**. |
 
 ## OperationStatus
 
-Represents the status of an operation including error/warnings and retry details. This model is part of the response of all APIs in [ConnectionManagementService](/graph/custom-connector-sdk-contracts-connectionmanagement) and [ConnectorCrawlerService](/graph/custom-connector-sdk-contracts-connectorcrawler).
+Represents the status of an operation, including error/warnings and retry details. This model is part of the response of all APIs in [ConnectionManagementService](/graph/custom-connector-sdk-contracts-connectionmanagement) and [ConnectorCrawlerService](/graph/custom-connector-sdk-contracts-connectorcrawler).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -132,11 +130,11 @@ This model is used for communicating the retry policy where retry is required.
 |numberOfRetries |uint32 |Number of retries to be done for the exception. |
 |pauseBetweenRetriesInMilliseconds |uint64 |Gets pause between retries in case of standard retries. |
 |backoffCoefficient |float |Gets coefficient used in the calculation of Exponential Backoff. |
-|backoffRate |float |Gets the backoff Rate used in the calculation of Exponential Backoff. |
+|backoffRate |float |Gets the backoffrRate used in the calculation of Exponential Backoff. |
 
 ## DataSourceSchema
 
-Represents schema of properties that represent a data entity in the data source. For more details, see [schema resource type](/graph/api/resources/externalconnectors-schema).
+Represents the schema of the properties that represent a data entity in the data source. For details, see [schema resource type](/graph/api/resources/externalconnectors-schema).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -169,7 +167,7 @@ Represents schema of properties that represent a data entity in the data source.
 
 ## SearchPropertyLabel
 
-Search property labels are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. For details, see [Semantic Labels](/graph/connecting-external-content-manage-schema#semantic-labels).
+Search property labels are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. For details, see [Semantic labels](/graph/connecting-external-content-manage-schema#semantic-labels).
 
 ### SearchPropertyLabel enumeration members
 
@@ -187,7 +185,7 @@ Search property labels are well-known tags published by Microsoft that you can a
 |LastModifiedByUpn |9 |[UPN](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the person who most recently edited the item in the data source. |
 |CreatedByUpn |10 |[UPN](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the person who created the item in the data source. |
 |AuthorsUpn |11 |[UPNs](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of all the people who participated/collaborated on the item in the data source. |
-|UnknownFutureValue |12 |For future-proofing, following MSGraph evolvable enums. should add all new enumerations below this one until major API version changes. |
+|UnknownFutureValue |12 |For future-proofing, following Microsoft Graph evolvable enums. Add all new enumerations below this one until major API version changes. |
 |ContainerName |13 |Name of the container. |
 |ContainerUrl |14 | The URL of the container. |
 |IconUrl | 15 |The URL of an icon. |
@@ -201,8 +199,8 @@ Defines a single source property for an item in data source. For details about s
 |name |string | Name of the property. |
 |type |SourcePropertyType | Data type of the property. |
 |defaultSearchAnnotations |uint32 | Default search annotations for the property. |
-|requiredSearchAnnotations |uint32 | Required search annotations. Certain properties like "ID" is always set isQueryable true and isRetrievable true. |
+|requiredSearchAnnotations |uint32 | Required search annotations. Certain properties like **ID** is always set to **isQueryable** `true` and **isRetrievable** `true`. |
 |defaultSemanticLabels |repeated SearchPropertyLabel | List of semantic labels for the source property. |
-|order |int32 |\[Optional\]Order of this source property. Used by UI for sorting the search results. |
-|label |string |\[Optional\]Label of this source property. Used by search results UI to display the label (human-readable name). |
-|aliases |repeated string |\[Optional\]List of aliases of this source property. |
+|order |int32 |Order of this source property. Used by UI for sorting the search results. Optional.|
+|label |string |Label of this source property. Used by search results UI to display the label (human-readable name). Optional.|
+|aliases |repeated string |List of aliases of this source property. Optional.|
