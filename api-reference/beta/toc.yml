@@ -38,12 +38,12 @@ items:
         - name: Use query parameters
           displayName: OData query parameters, OData
           href: /graph/query-parameters?context=graph/api/beta
-        - name: Use $search
-          displayName: OData query parameters, OData
-          href: /graph/search-query-parameter?context=graph/api/beta
         - name: Use $filter
           displayName: OData query parameters, OData
           href: /graph/filter-query-parameter?context=graph/api/beta
+        - name: Use $search
+          displayName: OData query parameters, OData
+          href: /graph/search-query-parameter?context=graph/api/beta
         - name: Advanced query capabilities
           displayName: OData query parameters, OData
           href: /graph/aad-advanced-queries?context=graph/api/beta
@@ -984,7 +984,7 @@ items:
             href: api/application-addkey.md
           - name: Remove key
             href: api/application-removekey.md
-        - name: Federated identity credentials (preview)
+        - name: Federated identity credentials
           displayName: Workload identity federation, workload identities
           items:
           - name: Overview
