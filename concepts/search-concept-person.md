@@ -17,10 +17,10 @@ You can can use people search by calling these two APIs:
 * /people
 
 > [!NOTE]
-> We highly recommended that users call the `/search` instead of the `/people` API. Going forward, all future investments will only be available in `/search` with `/people` moving to maintenance mode.
+> We recommended that users call the `/search` endpoint instead of the `/people` endpoint. Going forward, all future investments will only be available in the `/search` endpoint; the `/people` endpoint will be in maintenance mode.
 
 ## Returned people properties
-The people API returns the following set of properties:
+The people API returns the following set of properties.
 
 
 | Property                 | Type    |
@@ -41,7 +41,8 @@ The people API returns the following set of properties:
 | additionalOfficeLocation | String  |
 
 ## Person types
-The people API supports several people types and subtypes that users can ask for, see the table below.
+The people API supports several people types and subtypes that users can ask for. For details, see the following table.
+
 |                                             | RecipientTypeDetails  | Mailbox            | Directory          | PeopleType | PeopleSubtype            | Notes
 |---------------------------------------------|-----------------------|--------------------|--------------------|------------|--------------------------|----------------
 | Organization User                           | UserMailbox, MailUser | Y                  | Y                  | Person     | OrganizationUser         | A user that belongs to the organization
