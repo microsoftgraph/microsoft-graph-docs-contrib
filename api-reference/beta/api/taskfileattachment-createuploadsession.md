@@ -84,7 +84,6 @@ Content-Type: application/json
 
 {
   "attachmentInfo": {
-    "@odata.type": "microsoft.graph.attachmentInfo",
     "attachmentType": "file",
     "name": "flower",
     "size": 3483322
