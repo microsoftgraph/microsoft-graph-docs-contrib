@@ -11359,7 +11359,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "displayAppInformationRequiredState",
           "ChangeType": "Addition",
-          "Description": "Added the [displayAppInformationRequiredState](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource",
+          "Description": "Added the **displayAppInformationRequiredState** property to the [microsoftAuthenticatorFeatureSettings](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource.",
           "Target": "microsoftAuthenticatorFeatureSettings"
         },
         {
@@ -11367,7 +11367,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "displayLocationInformationRequiredState",
           "ChangeType": "Addition",
-          "Description": "Added the [displayLocationInformationRequiredState](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource",
+          "Description": "Added the **displayLocationInformationRequiredState** property to the [microsoftAuthenticatorFeatureSettings](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource.",
           "Target": "microsoftAuthenticatorFeatureSettings"
         },
         {
@@ -11375,7 +11375,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "numberMatchingRequiredState",
           "ChangeType": "Addition",
-          "Description": "Added the [numberMatchingRequiredState](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource",
+          "Description": "Added the **numberMatchingRequiredState** property to the [microsoftAuthenticatorFeatureSettings](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource.",
           "Target": "microsoftAuthenticatorFeatureSettings"
         },
         {
@@ -11383,7 +11383,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "featureSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [featureSettings](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the **featureSettings** property to the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) resource. This property allows you to configure Microsoft Authenticator settings such as number matching and location context, and whether they are enabled for all users or specific users only.",
           "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
         }
       ],
