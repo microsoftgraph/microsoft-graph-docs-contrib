@@ -39,17 +39,15 @@ GET /groups/{id}
 
 ## Optional query parameters
 
-You can use `$select` to get specific group properties, including those that are not returned by default.
-
-For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
-
-### Retrieve extensions and associated data
+You can use `$select` to get specific group properties, including those that are not returned by default. Extension properties also support query parameters as follows:
 
 | Extension type       | Comments                                                                       |
 |----------------------|--------------------------------------------------------------------------------|
 | Schema extensions    | Returned only with `$select`.                                                  |
 | Open extensions      | Returned through the [Get open extension](opentypeextension-get.md) operation. |
 | Directory extensions | Returned by default.                                                           |
+
+For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 
 ## Request headers
 
