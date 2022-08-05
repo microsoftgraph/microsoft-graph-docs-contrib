@@ -1,11 +1,11 @@
 ---
-title: "Microsoft Graph connectors SDK contracts connection management API and models"
+title: "Microsoft Graph connectors SDK connection management API and models"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Microsoft Graph connectors SDK contracts connection management API and models"
+description: "Learn about the connection management API and models in the Microsoft Graph connectors SDK."
 ---
 
 # Microsoft Graph connectors SDK connection management API and models
