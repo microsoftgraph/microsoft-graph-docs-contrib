@@ -26,7 +26,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
     6. In the **Git configuration** tab, make sure you either configure Git or select the option _Configure Git later_.
 
-1. After the Azure Data Factory resource is created, select the **Author and Monitor** tile to launch the Azure Data Factory full screen editor.
+1. After the Azure Data Factory resource is created, select the **Open Azure Data Factory Studio** tile to launch the Azure Data Factory full screen editor.
 
     ![A screenshot showing the Azure Portal UI for the Data Factory service. The user is clicking the Author and Monitor button.](../concepts/images/data-connect-adf-auth-and-mon.png)
 
@@ -68,8 +68,6 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
         ![A screenshot showing the Azure portal UI for the Data Factory service. The user is selecting the Office 365 dataset in the UI and selecting the continue button afterwards.](../concepts/images/data-connect-adf-pipeline-dataset.png)
 
     - The designer will update the **Source** tab with the Microsoft 365 connector settings.
-    - Select the **Open** option next to the **Source dataset** field.
-    - In the table settings, select the **Connection** tab, then the **New** button.
     - In the dialog that appears, enter the previously created Azure AD application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, then select **Create**.
     - Select the integration runtime you previously created in the **Connect via integration runtime** dropdown.
 
