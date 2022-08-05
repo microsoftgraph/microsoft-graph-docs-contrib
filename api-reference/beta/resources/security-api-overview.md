@@ -33,21 +33,21 @@ Take immediate action to defend against threats using the [securityAction](secur
 Alerts are suspicious or malicious events or activities in a customer's tenant that Microsoft or partner security providers have identified and flagged for action or notification. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is alerts from multiple security providers for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.
 
 The beta version of the security API offers two types of alerts that aggregate other alerts from security providers and make analyzing attacks and determining response easier: 
-- [Alerts and incidents](#alerts-and-incidents-preview) (preview) - these are the latest generation of [alert](security-alert.md) resources and their collections, [incident](security-incident.md) resources, defined in the `microsoft.graph.security` namespace.
-- [Legacy alerts](#legacy-alerts) - these are thr first generation of [alert](alert.md) resources, defined in the `microsoft.graph` namespace.
+- [Alerts and incidents](#alerts-and-incidents-preview) (preview) - these alerts are the latest generation in the Microsoft Graph security API. This [alert](security-alert.md) resource and its collection, [incident](security-incident.md) resource, are defined in the `microsoft.graph.security` namespace.
+- [Legacy alerts](#legacy-alerts) - these alerts are the first generation in the Microsoft Graph security API. This [alert](alert.md) resource is defined in the `microsoft.graph` namespace.
 
 ### Alerts and incidents (preview)
 
 These are [alert](security-alert.md) resources that first pull alert data from security provider services, that are either part of or integrated with [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide). Then they consume the data to return rich, valuable clues about a completed or ongoing attack, the impacted assets, and associated [evidence](security-alertevidence.md). In addition, they automatically correlate other alerts with the same attack techniques or the same attacker into an [incident](security-incident.md) to provide a broader context of an attack. They recommend response and remediation actions, offering consistent actionability across all the different providers. The rich content makes it easy for analysts to collectively investigate and respond to threats.
 
 Alerts from the following security providers are available via these rich alerts and incidents:
-- Azure Active Directory Identity Protection 
-- Microsoft 365 Defender 
-- Microsoft Defender for Cloud Apps 
-- Microsoft Defender for Endpoint 
-- Microsoft Defender for Identity 
-- Microsoft Defender for Office 365 
-- Microsoft Purview Data Loss Prevention
+- [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
+- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide)
+- [Microsoft Defender for Cloud Apps](/defender-cloud-apps/monitor-alerts) 
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide)
+- [Microsoft Defender for Identity](/defender-for-identity/alerts-overview) 
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/overview?view=o365-worldwide)
+- [Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide)
 
 
 ### Legacy alerts
