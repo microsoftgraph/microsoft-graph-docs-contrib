@@ -77,7 +77,7 @@ Enumeration fields for crawl items.
 
 #### CrawlItem
 
-Represents an entity in the data source. The maximum size allowed is 4 Mb. For example: a file, a folder or a record in a table. <!--/// Commenting this part because it is not consistent with the rest of the definitions in the doc. If the size is included here, it should be included for every item, property, etc, or add it as a special note with an indication of why is needed here-->
+Represents an entity in the data source. The maximum size allowed is 4 MB. For example: a file, a folder or a record in a table. <!--/// Commenting this part because it is not consistent with the rest of the definitions in the doc. If the size is included here, it should be included for every item, property, etc, or add it as a special note with an indication of why is needed here-->
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
