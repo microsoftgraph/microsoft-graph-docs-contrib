@@ -1,13 +1,13 @@
 ---
-title: "Upload files for education assignments and submissions"
+title: "Upload feedback files for education submissions"
 description: "Learn how to upload a feedback file to a submission resource by using the education API in Microsoft Graph."
 ms.localizationpriority: medium
-author: "sureshpadimi88"
+author: "Sureshpadimi88"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Upload files for education assignments and submissions using the Microsoft Graph API
+# Upload feedback files for education submissions using the Microsoft Graph API
 
 Resources are an integral part of education [assignments](/graph/api/resources/educationassignment) and [submissions](/graph/api/resources/educationsubmission). Teachers determine the resources to upload to an assignment folder, and students determine the resources to upload to a submission folder.
 
@@ -200,6 +200,6 @@ Content-type: application/json
 
 ```
 
-You have now successfully uploaded a  resource to a submision resources folder (and attached it to the associated submission). You can follow similar steps to upload one or more feedback resources resource to a submision resources folder (and attached it to the associated submission).
+You have now successfully uploaded a resource to a submision resources folder (and attached it to the associated submission). You can follow similar steps to upload one or more feedback resources.
 
-For more details, see [Create educationFeedbackResourceOutcome](/graph/api/educationfeedbackresourceoutcome-post-outcomes~).
+For more details, see [Create educationFeedbackResourceOutcome]("/graph/api/educationfeedbackresourceoutcome-post-outcomes").
