@@ -5,23 +5,23 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Microsoft Graph connectors SDK contracts connector crawler API and models"
+description: "Learn about the contracts connector crawler API and models in the Microsoft Graph connectors SDK."
 ---
 
-# Microsoft Graph connectors SDK Connector Crawler API and models
+# Microsoft Graph connectors SDK contracts connector crawler API and models
 
 The Microsoft Graph connectors SDK contracts connector crawler API and models are called during a crawl.
 
-## Connector Crawler API
+## Connector crawler API
 
 |Method |Parameters |Return Type |Description |
 |:----------|:-------------|:----------|:----------|
 |GetCrawlStream |[GetCrawlStreamRequest](#getcrawlstreamrequest) |[CrawlStreamBit](#crawlstreambit) as a stream |Reads data from the data source. This method will be called during full and periodic full crawls where all items should be read from the data source and returned to the platform. |
 |GetIncrementalCrawlStream |[GetIncrementalCrawlStreamRequest](#getincrementalcrawlstreamrequest) |[IncrementalCrawlStreamBit](#incrementalcrawlstreambit) as a stream |Reads data from the data source. This method is optional and will be called during incremental crawls and returns only the incremental changes in items since last incremental crawl. |
 
-### Connector Crawler Models
+### Connector crawler models
 
-The following are the connector crawler models:
+The following are the connector crawler models.
 
 #### GetCrawlStreamRequest
 
@@ -84,11 +84,10 @@ Represents an entity in the data source. The maximum size allowed is 4 MB. For e
 |itemId |string |Shows the unique ID that represents the item in the data source. |
 |contentItem |[ContentItem](#contentitem) |Shows a data item with content to ingest. For example: the content of a website. |
 |linkItem |[LinkItem](#linkitem) |Link to a content item that will be used in subsequent crawls. For example: a link to a website or a folder. |
-|itemType |[ItemType](#itemtype-enumeration-members-for-crawlitem) |Shows the type of item being sent. This model should have a contentItem **or** a linkItem set and this enumeration field should correspond to that item. |
+|itemType |[ItemType](#itemtype-enumeration-members-for-crawlitem) |Shows the type of item being sent. This model should have a **contentItem** or a **linkItem** set and this enumeration field should correspond to that item. |
 
 > [!NOTE]
->
-> * The properties linkItem and contentItem are mutually exclusive.
+> * The properties **linkItem** and **contentItem** are mutually exclusive.
 
 #### ItemType enumeration members for IncrementalCrawlItem
 
@@ -109,12 +108,11 @@ Represents an entity in the data source. For example: a file, a folder or a reco
 |itemId |string |Shows the unique ID that represents the item in the data source. |
 |contentItem |[ContentItem](#contentitem) |Shows a data item with content to ingest. For example: the content of a website. |
 |linkItem |[LinkItem](#linkitem) |Link to a content item that will be used in subsequent crawls. For example: a link to a website or a folder. |
-|deletedItem |[DeletedItem](#deleteditem) |Item that is deleted from the datasource and should be removed from the index. If deletedItem is set, contentItem or linkItem can't be set. |
-|itemType |[ItemType](#itemtype-enumeration-members-for-incrementalcrawlitem) |Shows the type of item being sent. This model should have a contentItem **or** a linkItem set and this enumeration field should correspond to that item. |
+|deletedItem |[DeletedItem](#deleteditem) |Item that is deleted from the datasource and should be removed from the index. If **deletedItem** is set, **contentItem** or **linkItem** can't be set. |
+|itemType |[ItemType](#itemtype-enumeration-members-for-incrementalcrawlitem) |Shows the type of item being sent. This model should have a **contentItem** or a **linkItem** set and this enumeration field should correspond to that item. |
 
 > [!NOTE]
->
-> * The properties linkItem, contentItem and deletedItem are mutually exclusive.
+> * The properties **linkItem**, **contentItem**, and **deletedItem** are mutually exclusive.
 
 #### ContentItem
 
@@ -128,7 +126,7 @@ Item that holds the content of the data source entity to be ingested. For exampl
 
 #### LinkItem
 
-Item that acts as a link to another item. These link items will be sent again to connector for recrawl. Example: In a folder content, files will be content items and sub folders will be link items.
+Item that acts as a link to another item. These link items will be sent again to connector for recrawl; for example, in a folder content, files will be content items and sub folders will be link items.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -172,8 +170,8 @@ Enumeration members of the principal type.
 |Member |Value |Description |
 |:----------|:-------------|:----------|
 |PT_None |0 |Indicates the default value: user. |
-|User |1 |Type of user |
-|Group |2 |Type of group |
+|User |1 |Type of user. |
+|Group |2 |Type of group. |
 |Everyone |3 |Special group to grant access to everyone. |
 |EveryoneExceptGuests |4 |Special group to grant access to everyone except guests. |
 
@@ -183,9 +181,9 @@ Enumeration members of identity source.
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-IS_None |0 |Indicates the default value: Azure Active Directory (Azure AD) |
-AzureActiveDirectory |1 |The source of identity is Azure AD |
-External |2 |The source of identity isn't Azure AD |
+IS_None |0 |Indicates the default value: Azure Active Directory (Azure AD). |
+AzureActiveDirectory |1 |The source of identity is Azure AD. |
+External |2 |The source of identity isn't Azure AD. |
 
 #### IdentityType enumeration members
 
@@ -193,10 +191,10 @@ Enumeration members of identity type.
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-|IT_None |0 |Indicates the default value: (Azure ADId) |
-|ActiveDirectorySId |1 |SID (On premise security identifier) provided by Active Directory (AD) |
-|UserPrincipalName |2 |User principal name ([UPN](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname))  |
-|AadId |3 |Azure ADId|
+|IT_None |0 |Indicates the default value: (Azure ADId). |
+|ActiveDirectorySId |1 |SID (On premise security identifier) provided by Active Directory (AD). |
+|UserPrincipalName |2 |User principal name ([UPN](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname)).  |
+|AadId |3 |Azure ADId.|
 
 #### Principal
 
@@ -204,8 +202,8 @@ Structure to store attributes of the principal (user/group).
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|type |[PrincipalType](#principaltype-enumeration-members) |Type of principal |
-|value |string |Principal value: the value of the SID, UPN, Azure ADId, etc. |
+|type |[PrincipalType](#principaltype-enumeration-members) |Type of principal. |
+|value |string |Principal value: the value of the SID, UPN, Azure ADId, and so on. |
 |identitySource |[IdentitySource](#identitysource-enumeration-members) |The source of identity. |
 |identityType |[IdentityType](#identitytype-enumeration-members) |Identity representation type. |
 |identitySourceProperties |map<string, string> |Metadata about the identity source. |
@@ -216,7 +214,7 @@ Map of the source property key and its value in the data source. It stores the p
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|values |map<string, [GenericType](#generictype)> |Holds the key and values of the properties of the item. The key is the property name and the value is property value. For example: File content have properties like title, modifiedDate etc. The properties keys will be the properties themselves and their values will be the title of the file and file modified date respectively. |
+|values |map<string, [GenericType](#generictype)> |Holds the key and values of the properties of the item. The key is the property name and the value is property value. For example, file content has properties like title, modifiedDate, and so on. The properties keys will be the properties themselves and their values will be the title of the file and file modified date respectively. |
 
 #### ContentType enumeration members
 
@@ -241,12 +239,12 @@ Value of the content property of the item, used to render search results.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|contentType |[ContentType](#contenttype-enumeration-members) |Type of the content |
-|contentValue |string |Value of the content property |
+|contentType |[ContentType](#contenttype-enumeration-members) |Type of the content. |
+|contentValue |string |Value of the content property. |
 
 #### CrawlCheckpoint
 
-Identifies the item that was crawled last. It will be saved by the platform and the checkpoint from last successful item batch will be used for resuming crawl if there is a failure or crash. The platform will send the checkpoint in the GetCrawlStream API.
+Identifies the item that was crawled last. It will be saved by the platform and the checkpoint from last successful item batch will be used for resuming crawl if there is a failure or crash. The platform will send the checkpoint in the **GetCrawlStream** API.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -256,7 +254,7 @@ Identifies the item that was crawled last. It will be saved by the platform and 
 
 #### GenericType
 
-Model to hold the supported types of values by the platform in certain fields like source property values. Only one of the below fields must be set.
+Model to hold the supported types of values by the platform in certain fields like source property values. Only one of the following fields must be set.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -264,7 +262,7 @@ Model to hold the supported types of values by the platform in certain fields li
 |intValue |int64 |Represents an int64 (long) value. |
 |doubleValue |double |Represents a double value. |
 |dateTimeValue |google.protobuf.Timestamp |Represents a dateTime value. |
-|boolValue |bool |Represents a boolean value |
+|boolValue |bool |Represents a Boolean value. |
 |stingCollectionValue |[StringCollectionType](#stringcollectiontype) |Represents a collection of strings. |
 |intCollectionValue |[IntCollectionType](#intcollectiontype) |Represents a collection of int64 (long). |
 |doubleCollectionValue |[DoubleCollectionType](#doublecollectiontype) |Represents a collection of double. |
@@ -272,7 +270,7 @@ Model to hold the supported types of values by the platform in certain fields li
 
 #### StringCollectionType
 
-Collection of string.
+Collection of strings.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
@@ -284,7 +282,7 @@ Collection of integer values.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|values |repeated int64 |Collection or array of int64 (long) values |
+|values |repeated int64 |Collection or array of int64 (long) values. |
 
 #### DoubleCollectionType
 
@@ -292,12 +290,12 @@ Collection of double values.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|values |repeated double |Collection or array of double values |
+|values |repeated double |Collection or array of double values. |
 
 #### TimestampCollectionType
 
-Collection of DateTime values.
+Collection of **DateTime** values.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|values |repeated google.protobuf.Timestamp |Collection or array of dateTime values |
+|values |repeated google.protobuf.Timestamp |Collection or array of **dateTime** values. |
