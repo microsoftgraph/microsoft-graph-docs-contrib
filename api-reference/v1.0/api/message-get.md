@@ -199,7 +199,7 @@ The next example uses a `$select` query parameter to get the Internet message he
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
   "name": "get_message_headers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 
@@ -353,7 +353,7 @@ The fourth example gets the MIME content of a message in the signed-in user's ma
   "name": "get_message_in_mime",
   "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
 } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
 

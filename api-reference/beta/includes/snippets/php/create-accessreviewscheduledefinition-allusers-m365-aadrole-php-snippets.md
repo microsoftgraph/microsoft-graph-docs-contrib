@@ -48,43 +48,35 @@ $scope->setAdditionalData($additionalData);
 
 
 $requestBody->setScope($scope);
-$reviewers1 = new ();
-$additionalData = [
-'query' => './manager', 
-'queryType' => 'MicrosoftGraph', 
-'queryRoot' => 'decisions', 
-];
-$reviewers1->setAdditionalData($additionalData);
+$reviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
+$reviewersAccessReviewReviewerScope1->setQuery('./manager');
+
+$reviewersAccessReviewReviewerScope1->setQueryType('MicrosoftGraph');
+
+$reviewersAccessReviewReviewerScope1->setQueryRoot('decisions');
 
 
-
-$reviewersArray []= $reviewers1;
+$reviewersArray []= $reviewersAccessReviewReviewerScope1;
 $requestBody->setReviewers($reviewersArray);
 
 
-$backupReviewers1 = new ();
-$additionalData = [
-'query' => '/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers', 
-'queryType' => 'MicrosoftGraph', 
-];
-$backupReviewers1->setAdditionalData($additionalData);
+$backupReviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
+$backupReviewersAccessReviewReviewerScope1->setQuery('/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers');
+
+$backupReviewersAccessReviewReviewerScope1->setQueryType('MicrosoftGraph');
 
 
-
-$backupReviewersArray []= $backupReviewers1;
+$backupReviewersArray []= $backupReviewersAccessReviewReviewerScope1;
 $requestBody->setBackupReviewers($backupReviewersArray);
 
 
-$fallbackReviewers1 = new ();
-$additionalData = [
-'query' => '/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers', 
-'queryType' => 'MicrosoftGraph', 
-];
-$fallbackReviewers1->setAdditionalData($additionalData);
+$fallbackReviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
+$fallbackReviewersAccessReviewReviewerScope1->setQuery('/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers');
+
+$fallbackReviewersAccessReviewReviewerScope1->setQueryType('MicrosoftGraph');
 
 
-
-$fallbackReviewersArray []= $fallbackReviewers1;
+$fallbackReviewersArray []= $fallbackReviewersAccessReviewReviewerScope1;
 $requestBody->setFallbackReviewers($fallbackReviewersArray);
 
 
@@ -99,7 +91,7 @@ $settings->setDefaultDecisionEnabled(true);
 
 $settings->setDefaultDecision('Recommendation');
 
-$settings->setInstanceDurationInDays(instanceDurationInDays);
+$settings->setInstanceDurationInDays(180);
 
 $settings->setAutoApplyDecisionsEnabled(true);
 
@@ -109,9 +101,9 @@ $settingsRecurrence = new PatternedRecurrence();
 $settingsRecurrencePattern = new RecurrencePattern();
 $settingsRecurrencePattern->setType(new RecurrencePatternType('absolutemonthly'));
 
-$settingsRecurrencePattern->setInterval(interval);
+$settingsRecurrencePattern->setInterval(6);
 
-$settingsRecurrencePattern->setDayOfMonth(dayOfMonth);
+$settingsRecurrencePattern->setDayOfMonth(0);
 
 
 $settingsRecurrence->setPattern($settingsRecurrencePattern);

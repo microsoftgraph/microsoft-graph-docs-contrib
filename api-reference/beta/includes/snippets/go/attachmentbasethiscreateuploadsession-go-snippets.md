@@ -19,7 +19,7 @@ size := int64(3483322)
 attachmentInfo.SetSize(&size) 
 requestBody.SetAttachmentInfo(attachmentInfo)
 
-result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").Attachments().CreateUploadSession(todoTaskList-id, todoTask-id).Post(requestBody)
+result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").Attachments().CreateUploadSession().Post(requestBody)
 
 
 ```

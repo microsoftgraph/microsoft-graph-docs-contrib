@@ -33,15 +33,22 @@ items:
     - name: Paging
       href: /graph/paging?context=graph/api/1.0
     - name: Query parameters
+      displayName: OData version 4.01, OData query parameters
       items:
         - name: Use query parameters
-          href: /graph/query-parameters?context=graph/api/1.0
           displayName: OData query parameters, OData
-        - name: Use the search query parameter
+          href: /graph/query-parameters?context=graph/api/1.0
+        - name: Use $filter
+          displayName: OData query parameters, OData
+          href: /graph/filter-query-parameter?context=graph/api/1.0
+        - name: Use $search
+          displayName: OData query parameters, OData
           href: /graph/search-query-parameter?context=graph/api/1.0
         - name: Advanced query capabilities
+          displayName: OData query parameters, OData
           href: /graph/aad-advanced-queries?context=graph/api/1.0
         - name: Optimize requests with query parameters
+          displayName: OData query parameters, OData
           href: /learn/modules/optimize-data-usage
     - name: Batching
       href: /graph/json-batching?context=graph/api/1.0
@@ -909,6 +916,39 @@ items:
             href: api/application-addkey.md
           - name: Remove key
             href: api/application-removekey.md
+        - name: Extensions
+          items:
+          - name: Extension property
+            href: resources/extensionproperty.md
+            items:
+            - name: List
+              href: api/application-list-extensionproperty.md
+            - name: Create
+              href: api/application-post-extensionproperty.md
+            - name: Get
+              href: api/extensionproperty-get.md
+            - name: Delete
+              href: api/extensionproperty-delete.md
+            - name: Get available extension properties
+              href: api/directoryobject-getavailableextensionproperties.md
+        - name: Federated identity credentials
+          displayName: Workload identity federation, workload identities
+          items:
+          - name: Overview
+            href: resources/federatedidentitycredentials-overview.md
+          - name: Federated identity credentials
+            href: resources/federatedidentitycredential.md
+            items:
+              - name: List
+                href: api/application-list-federatedidentitycredentials.md
+              - name: Create
+                href: api/application-post-federatedidentitycredentials.md
+              - name: Get
+                href: api/federatedidentitycredential-get.md
+              - name: Update
+                href: api/federatedidentitycredential-update.md
+              - name: Delete
+                href: api/federatedidentitycredential-delete.md              
         - name: Owners
           items:
           - name: List
@@ -3386,6 +3426,8 @@ items:
             href: resources/intune-devices-deviceoperatingsystemsummary.md
           - name: Device registration state
             href: resources/intune-devices-deviceregistrationstate.md
+          - name: Disk type
+            href: resources/intune-devices-disktype.md
           - name: Localized notification message
             href: resources/intune-notification-localizednotificationmessage.md
             items:
@@ -3501,6 +3543,8 @@ items:
               href: api/intune-devices-user-update.md
             - name: removeAllDevicesFromManagement action
               href: api/intune-devices-user-removealldevicesfrommanagement.md
+          - name: User experience analytics health state
+            href: resources/intune-devices-userexperienceanalyticshealthstate.md
           - name: Windows defender scan action result
             href: resources/intune-devices-windowsdefenderscanactionresult.md
           - name: Windows device account
@@ -5538,17 +5582,19 @@ items:
               - name: Stop
                 href: api/accessreviewstage-stop.md
           - name: Access review instance decision item
-            displayName: access review decisions
+            displayName: access review decisions 
             href: resources/accessreviewinstancedecisionitem.md
             items:
-            - name: Get
-              href: api/accessreviewinstancedecisionitem-get.md
-            - name: List
+            - name: List decisions from an instance
               href: api/accessreviewinstance-list-decisions.md
-            - name: Update
-              href: api/accessreviewinstancedecisionitem-update.md
+            - name: List decisions from a stage of an instance
+              href: api/accessreviewstage-list-decisions.md
             - name: Filter by current user
               href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+            - name: Get
+              href: api/accessreviewinstancedecisionitem-get.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
           - name: Access review history definition
             href: resources/accessreviewhistorydefinition.md
             items:

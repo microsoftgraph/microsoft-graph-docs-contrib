@@ -86,7 +86,7 @@ $attachmentsArray []= $attachmentsChatMessageAttachment2;
 $requestBody->setAttachments($attachmentsArray);
 
 
-$requestBody->setMentions(]);
+$requestBody->setMentions([]);
 
 $reactionsChatMessageReaction1 = new ChatMessageReaction();
 $reactionsChatMessageReaction1->setReactionType('angry');

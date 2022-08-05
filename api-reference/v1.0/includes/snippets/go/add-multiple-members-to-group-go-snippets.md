@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewGroup()
 additionalData := map[string]interface{}{
-	"members@odata.bind" := []String {
+	"members@odata.bind" := []string {
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",

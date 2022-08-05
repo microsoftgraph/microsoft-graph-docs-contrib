@@ -22,7 +22,7 @@ status := graphmodels.STRING_LEGALHOLDSTATUS
 requestBody.SetStatus(&status) 
 contentQuery := "String"
 requestBody.SetContentQuery(&contentQuery) 
-errors := []String {
+errors := []string {
 	"String",
 
 }

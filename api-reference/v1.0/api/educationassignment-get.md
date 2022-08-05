@@ -56,7 +56,7 @@ The following is an example of the request.
   "sampleKeys":["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","3c77de7f-539b-49e1-9c96-1274f2f0ee3b"],
   "name": "get_educationassignment"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b
 ```
 

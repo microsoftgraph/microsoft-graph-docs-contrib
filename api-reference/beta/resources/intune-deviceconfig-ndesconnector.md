@@ -33,6 +33,10 @@ Entity which represents an OnPrem Ndes connector.
 |lastConnectionDateTime|DateTimeOffset|Last connection time for the Ndes Connector|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes Connector Status. Possible values are: `none`, `active`, `inactive`.|
 |displayName|String|The friendly name of the Ndes Connector.|
+|machineName|String|Name of the machine running on-prem certificate connector service.|
+|enrolledDateTime|DateTimeOffset|Timestamp when on-prem certificate connector was enrolled in Intune.|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
+|connectorVersion|String|The build version of the Ndes Connector.|
 
 ## Relationships
 None
@@ -51,7 +55,13 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "lastConnectionDateTime": "String (timestamp)",
   "state": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "machineName": "String",
+  "enrolledDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "connectorVersion": "String"
 }
 ```
 

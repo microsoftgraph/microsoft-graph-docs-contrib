@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments" 
+Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"  -OutFile $outFileId
 
 ```

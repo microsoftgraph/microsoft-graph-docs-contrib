@@ -37,7 +37,7 @@ $recurrence = new PatternedRecurrence();
 $recurrencePattern = new RecurrencePattern();
 $recurrencePattern->setType(new RecurrencePatternType('weekly'));
 
-$recurrencePattern->setInterval(interval);
+$recurrencePattern->setInterval(1);
 
 $recurrencePattern->setDaysOfWeek(['Monday', ]);
 
@@ -59,23 +59,18 @@ $location->setDisplayName('Harry\'s Bar');
 
 
 $requestBody->setLocation($location);
-$attendees1 = new ();
-$additionalData = [
-'emailAddress' => $attendees1 = new ();
-$	attendees1->setAddress('AdeleV@contoso.onmicrosoft.com');
+$attendeesAttendee1 = new Attendee();
+$attendeesAttendee1EmailAddress = new EmailAddress();
+$attendeesAttendee1EmailAddress->setAddress('AdeleV@contoso.onmicrosoft.com');
 
-$	attendees1->setName('Adele Vance');
-
-
-$attendees1->setEmailAddress($emailAddress);
-
-'type' => 'required', 
-];
-$attendees1->setAdditionalData($additionalData);
+$attendeesAttendee1EmailAddress->setName('Adele Vance');
 
 
+$attendeesAttendee1->setEmailAddress($attendeesAttendee1EmailAddress);
+$attendeesAttendee1->setType(new AttendeeType('required'));
 
-$attendeesArray []= $attendees1;
+
+$attendeesArray []= $attendeesAttendee1;
 $requestBody->setAttendees($attendeesArray);
 
 

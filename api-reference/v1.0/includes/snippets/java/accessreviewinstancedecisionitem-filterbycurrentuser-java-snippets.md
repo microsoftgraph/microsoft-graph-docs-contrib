@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AccessReviewInstanceDecisionItemFilterByCurrentUserCollectionPage filterByCurrentUser = graphClient.identityGovernance().accessReviews().definitions("1234ea1c-8d12-457b-1234-a37dc59e54e0").instances("7070ea1c-8d12-457b-bd35-a37dc59e54e0").decisions()
+AccessReviewInstanceDecisionItemFilterByCurrentUserCollectionPage filterByCurrentUser = graphClient.identityGovernance().accessReviews().definitions("0185aab8-9a7e-44b5-ae36-41b923c3bf87").instances("1234aab8-9a7e-5678-ae36-41b923c3bf87").decisions()
 	.filterByCurrentUser(AccessReviewInstanceDecisionItemFilterByCurrentUserParameterSet
 		.newBuilder()
 		.withOn('reviewer')

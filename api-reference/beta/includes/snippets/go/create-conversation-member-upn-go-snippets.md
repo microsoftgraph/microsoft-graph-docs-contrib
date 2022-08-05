@@ -12,7 +12,7 @@ requestBody := graphmodels.NewConversationMember()
 requestBody.Set"@odata.type"(&"@odata.type") 
 visibleHistoryStartDateTime , err := time.Parse(time.RFC3339, "2019-04-18T23:51:43.255Z")
 requestBody.SetVisibleHistoryStartDateTime(&visibleHistoryStartDateTime) 
-roles := []String {
+roles := []string {
 	"owner",
 
 }

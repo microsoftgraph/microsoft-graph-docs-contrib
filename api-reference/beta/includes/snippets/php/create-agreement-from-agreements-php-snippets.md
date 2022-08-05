@@ -19,7 +19,7 @@ $additionalData = [
 'fileName' => 'TOU.pdf', 
 'language' => 'en', 
 'isDefault' => true,
-'fileData' => $filesAgreementFileLocalization1 = new ();
+'fileData' => $filesAgreementFileLocalization1 = new FileData();
 $		filesAgreementFileLocalization1->setData('SGVsbG8gd29ybGQ=//truncated-binary');
 
 

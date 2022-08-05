@@ -168,9 +168,6 @@ You can use group-based licensing to assign one or more product licenses to an A
 
 ## Common use cases
 
-Using Microsoft Graph, you can perform the following common operations.
-
-
 Using Microsoft Graph, you can perform the following common operations on groups.
 
 | **Use cases** | **REST resources** | **See also** |

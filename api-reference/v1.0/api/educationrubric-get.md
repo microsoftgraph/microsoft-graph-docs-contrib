@@ -60,7 +60,7 @@ The following is an example of the request.
   "name": "get_educationrubric"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
 ```
 

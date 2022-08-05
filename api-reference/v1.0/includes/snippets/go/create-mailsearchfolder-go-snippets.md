@@ -15,7 +15,7 @@ requestBody.SetDisplayName(&displayName)
 additionalData := map[string]interface{}{
 	includeNestedFolders := true
 requestBody.SetIncludeNestedFolders(&includeNestedFolders) 
-	sourceFolderIds := []String {
+	sourceFolderIds := []string {
 		"AQMkADYAAAIBDAAAAA==",
 
 	}

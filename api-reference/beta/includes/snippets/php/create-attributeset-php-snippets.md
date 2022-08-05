@@ -14,7 +14,7 @@ $requestBody->setId('Engineering');
 
 $requestBody->setDescription('Attributes for engineering team');
 
-$requestBody->setMaxAttributesPerSet(maxAttributesPerSet);
+$requestBody->setMaxAttributesPerSet(25);
 
 
 
