@@ -20,8 +20,8 @@ User account common properties.
 |Property|Type|Description|
 |:---|:---|:---|
 |accountName|String|The user account's displayed name.|
-|azureAdUserId|String|The user object Identifier in Azure AD.|
-|domainName|String|The name of the Active Directory domain the user is a member of.|
+|azureAdUserId|String|The user object identifier in Azure AD.|
+|domainName|String|The name of the Active Directory domain of which the user is a member.|
 |userPrincipalName|String|The user principal name of the account in Azure AD.|
 |userSid|String|The local security identifier of the user account.|
 

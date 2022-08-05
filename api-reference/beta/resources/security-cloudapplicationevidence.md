@@ -23,9 +23,9 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |:---|:---|:---|
 |appId|Int64|Unique identifier of the application.|
 |displayName|String|Name of the application.|
-|instanceId|Int64|Identifier of the instance of the SaaS application.|
+|instanceId|Int64|Identifier of the instance of the Software as a Service (SaaS) application.|
 |instanceName|String|Name of the instance of the SaaS application.|
-|saasAppId|Int64|The identifier of the Software as a Service (SaaS) application.|
+|saasAppId|Int64|The identifier of the SaaS application.|
 
 ## Relationships
 None.

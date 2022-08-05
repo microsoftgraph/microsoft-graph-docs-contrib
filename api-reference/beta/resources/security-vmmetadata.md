@@ -19,19 +19,19 @@ Metadata of the virtual machine (VM) Microsoft Defender for Endpoint is running 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudProvider|[microsoft.graph.security.vmCloudProvider](#vmcloudprovider-values)|The cloud provider hosting the virtual machine.The possible values are: `unknown`, `azure`, `unknownFutureValue`.|
-|resourceId|String|Unique identifier of the Azure Resource.|
+|cloudProvider|[microsoft.graph.security.vmCloudProvider](#vmcloudprovider-values)|The cloud provider hosting the virtual machine. The possible values are: `unknown`, `azure`, `unknownFutureValue`.|
+|resourceId|String|Unique identifier of the Azure resource.|
 |subscriptionId|String|Unique identifier of the Azure subscription the customer tenant belongs to.|
-|vmId|String|Unique identifier of the Virtual Machine instance.|
+|vmId|String|Unique identifier of the virtual machine instance.|
 
 
 ### vmCloudProvider values 
 
 | Member                     | Description                                    |
 | :--------------------------| :--------------------------------------------- |
-| unknown                    | uknown provider.                               |
-| azure                      | vm is hosted in microsoft azure cloud.         |
-| unknownFutureValue         | unknownFutureValue for evolvable enums pattern.|
+| unknown                    | Unknown provider.                               |
+| azure                      | The virtual machine is hosted in the Microsoft Azure cloud. |
+| unknownFutureValue         | Evolvable enumeration sentinel value. Do not use.|
 
 
 ## Relationships
