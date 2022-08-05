@@ -39,9 +39,9 @@ Contains credentials provided by the admin to access the data source, including 
 |:----------|:-------------|:----------|
 |authType |[AuthenticationType](#authenticationtype-enumeration-members) |Type of authentication information held in this object. |
 |DatasourceUrl |string |URL or path to access data source - path to the resource that needs to be crawled. Example: Connection string for a database. |
-|basicCredential |[BasicCredential](#basiccredential) |Credentials in the form of username and password to access the data source. This property will be set exclusive to windowsCredential, and the authType will be set to Basic when this property is set. |
-|windowsCredential |[WindowsCredential](#windowscredential) |Credentials in the form of Windows AD username, password, and domain to access the data source. This property will be set exclusive to basicCredential, and the authType will be set to Windows when this property is set. |
-|oAuth2ClientCredential |[oAuth2ClientCredential](#oauth2clientcredential) |Credentials in the form of app ID and app secret for OAuth client credentials based authentication for accessing the datasource. This property will be set exclusive to oAuth2ClientCredential and the authType will be set to oAuth2ClientCredential when this property is set. |
+|basicCredential |[BasicCredential](#basiccredential) |Credentials in the form of username and password to access the data source. This property will be set exclusive to **windowsCredential**, and the **authType** will be set to Basic when this property is set. |
+|windowsCredential |[WindowsCredential](#windowscredential) |Credentials in the form of Windows AD username, password, and domain to access the data source. This property will be set exclusive to **basicCredential**, and the **authType** will be set to Windows when this property is set. |
+|oAuth2ClientCredential |[oAuth2ClientCredential](#oauth2clientcredential) |Credentials in the form of app ID and app secret for OAuth client credentials based authentication for accessing the datasource. This property will be set exclusive to **oAuth2ClientCredential** and the **authType** will be set to **oAuth2ClientCredential** when this property is set. |
 
 ## BasicCredential
 
@@ -130,7 +130,7 @@ This model is used for communicating the retry policy where retry is required.
 |numberOfRetries |uint32 |Number of retries to be done for the exception. |
 |pauseBetweenRetriesInMilliseconds |uint64 |Gets pause between retries in case of standard retries. |
 |backoffCoefficient |float |Gets coefficient used in the calculation of Exponential Backoff. |
-|backoffRate |float |Gets the backoffrRate used in the calculation of Exponential Backoff. |
+|backoffRate |float |Gets the backoffRate used in the calculation of Exponential Backoff. |
 
 ## DataSourceSchema
 
