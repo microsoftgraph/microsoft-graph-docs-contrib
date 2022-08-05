@@ -45,7 +45,7 @@ After you make a request, a response is returned that includes:
 
 ## HTTP methods
 
-Microsoft Graph uses the HTTP method on your request to determine what your request is doing. The API supports the following methods.
+Microsoft Graph uses the HTTP method on your request to determine what your request is doing. Depending on the resource, the API may support operations including actions, functions, or CRUD operations described below.
 
 |**Method** |**Description**                             |
 | :----- | :------------------------------------------- |
@@ -57,6 +57,9 @@ Microsoft Graph uses the HTTP method on your request to determine what your requ
 
 * For the CRUD methods `GET` and `DELETE`, no request body is required.
 * The `POST`, `PATCH`, and `PUT` methods require a request body, usually specified in JSON format, that contains additional information, such as the values for properties of the resource.
+
+> [!IMPORTANT]
+> Write requests in the Microsoft Graph API have a 4 MB size limit. Requests exceeding that limit fail with the status code HTTP 413, and the error message "Request entity too large" or "Payload too large".
 
 ## Version
 
