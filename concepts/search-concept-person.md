@@ -8,41 +8,41 @@ ms.prod: "search"
 
 # Use the Microsoft Search API in Microsoft Graph to search people (preview)
 
-Microsoft Graph applications can use the Microsoft Search API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication, collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, search also provides fuzzy matching search support.
+Microsoft Graph applications can use the Microsoft Search API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication, collaboration patterns, and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, search also provides fuzzy matching search support.
 
 ## People APIs
 You can can use people search by calling these two APIs:
+
 * /search
 * /people
 
-We highly recommended that users call the /search API due to the following reasons:
-* Future investments - All future investments will only be availble in /search with /people moving to maintenance mode.
-
-
+> [!NOTE]
+> We recommended that users call the `/search` endpoint instead of the `/people` endpoint. Going forward, all future investments will only be available in the `/search` endpoint; the `/people` endpoint will be in maintenance mode.
 
 ## Returned people properties
-The people api returns the following set of properties:
+The people API returns the following set of properties.
 
 
-| **Response field name** | **Data type** |
-|:--------------------------|:----------------------------------------|
-|   hitId | String |
-|   rank | Integer |
-|   summary | String |
-|   displayName | String |
-|   givenName | String |
-|   surname | String |
-|   emailAddress | String |
-|   phones | String |
-|   jobTitle | String |
-|   department | String |
-|   officeLocation | String |
-|   personType | String |
-|   userPrincipalName | String |
-|   additionalOfficeLocation | String |
+| Property                 | Type    |
+|:-------------------------|:--------|
+| hitId                    | String  |
+| rank                     | Integer |
+| summary                  | String  |
+| displayName              | String  |
+| givenName                | String  |
+| surname                  | String  |
+| emailAddress             | String  |
+| phones                   | String  |
+| jobTitle                 | String  |
+| department               | String  |
+| officeLocation           | String  |
+| personType               | String  |
+| userPrincipalName        | String  |
+| additionalOfficeLocation | String  |
 
 ## Person types
-The People API supports several people types and subtypes that users can ask for, see the table below.
+The people API supports several people types and subtypes that users can ask for. For details, see the following table.
+
 |                                             | RecipientTypeDetails  | Mailbox            | Directory          | PeopleType | PeopleSubtype            | Notes
 |---------------------------------------------|-----------------------|--------------------|--------------------|------------|--------------------------|----------------
 | Organization User                           | UserMailbox, MailUser | Y                  | Y                  | Person     | OrganizationUser         | A user that belongs to the organization
