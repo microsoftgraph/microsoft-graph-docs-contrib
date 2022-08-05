@@ -1753,7 +1753,7 @@ items:
           - name: Update
             href: api/virtualappointment-update.md
           - name: Delete
-            href: api/virtualappointment-delete.md   
+            href: api/virtualappointment-delete.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -10790,7 +10790,7 @@ items:
           href: resources/managedtenants-myrole.md
           items:
           - name: List
-            href: api/managedtenants-managedtenant-list-myroles.md 
+            href: api/managedtenants-managedtenant-list-myroles.md
         - name: Tenant customized information
           href: resources/managedtenants-tenantcustomizedinformation.md
           items:
@@ -11028,7 +11028,7 @@ items:
         - name: Set up assignment resources folder
           href: api/educationassignment-setupresourcesfolder.md
         - name: Set up assignment feedback resources folder
-          href: api/educationassignment-setupfeedbackresourcesfolder.md          
+          href: api/educationassignment-setupfeedbackresourcesfolder.md
         - name: Get rubric attached to assignment
           href: api/educationassignment-get-rubric.md
         - name: List categories
@@ -11087,7 +11087,7 @@ items:
         - name: Add submission resource
           href: api/educationsubmission-post-resources.md
         - name: Add submission feedback resource outcome
-          href: api/educationfeedbackresourceoutcome-post-outcomes.md          
+          href: api/educationfeedbackresourceoutcome-post-outcomes.md
         - name: Get submission resource
           href: api/educationsubmissionresource-get.md
         - name: Delete submission resource
@@ -12342,7 +12342,7 @@ items:
             - name: Update
               href: api/crosstenantaccesspolicyconfigurationdefault-update.md
             - name: Reset to system default
-              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md            
+              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
           - name: Partner settings
             items:
             - name: Cross-tenant access partner settings
@@ -12356,7 +12356,7 @@ items:
             - name: Update
               href: api/crosstenantaccesspolicyconfigurationpartner-update.md
             - name: Delete
-              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md              
+              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -12383,7 +12383,7 @@ items:
             - name: Get
               href: api/externalidentitiespolicy-get.md
             - name: Update
-              href: api/externalidentitiespolicy-update.md    
+              href: api/externalidentitiespolicy-update.md
         - name: Identity protection
           href: resources/identityprotection-overview.md
           items:
@@ -14734,10 +14734,6 @@ items:
           items:
           - name: External activity
             href: resources/externalconnectors-externalactivity.md
-        - name: External activity base
-          items:
-          - name: External activity base
-            href: resources/externalconnectors-externalactivitybase.md
         - name: External activity result
           items:
           - name: External activity result
@@ -14909,7 +14905,7 @@ items:
         - name: Operation
           href : resources/security-caseoperation.md
           items:
-           - name: List case operations 
+           - name: List case operations
              href: api/security-ediscoverycase-list-operations.md
            - name: Get case opreation by id
              href: api/security-caseoperation-get.md
@@ -15180,7 +15176,7 @@ items:
             href: api/security-emailthreatsubmission-post-emailthreats.md
           - name: Get
             href: api/security-emailthreatsubmission-get.md
-          - name: Review 
+          - name: Review
             href: api/security-emailthreatsubmission-review.md
           - name: Email content threat submission
             href: resources/security-emailcontentthreatsubmission.md
@@ -15467,7 +15463,7 @@ items:
           - name: Create
             href: api/termStore-relation-post.md
       - name: Tenant settings
-        items: 
+        items:
           - name: Settings
             href: resources/tenantadmin-settings.md
           - name: Get settings
@@ -16291,7 +16287,7 @@ items:
         - name: List for group
           href: api/group-list-permissiongrants.md
         - name: List for chat
-          href: api/chat-list-permissiongrants.md      
+          href: api/chat-list-permissiongrants.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:
@@ -16337,7 +16333,7 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: File attachment 
+      - name: File attachment
         items:
         - name: File attachment
           href: resources/taskfileattachment.md
@@ -16454,7 +16450,7 @@ items:
           - name: Update
             href: api/linkedresource_v2-update.md
           - name: Delete
-            href: api/linkedresource_v2-delete.md        
+            href: api/linkedresource_v2-delete.md
       - name: Outlook tasks (deprecated)
         items:
         - name: Outlook task (deprecated)
