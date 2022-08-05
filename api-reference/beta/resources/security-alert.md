@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The latest generation of alerts in the Microsoft Graph security API which represents potential security issues within a customer's tenant that Microsoft 365 Defender, or a security provider integrated with Microsoft 365 Defender, has identified.
+This resource corresponds to the latest generation of alerts in the Microsoft Graph security API, representing potential security issues within a customer's tenant that Microsoft 365 Defender, or a security provider integrated with Microsoft 365 Defender, has identified.
 
 When detecting a threat, a security provider creates an alert in the system. Microsoft 365 Defender pulls this alert data from the security provider, and consumes the alert data to return valuable clues in an [alert](security-alert.md) resource about any related attack, impacted assets, and associated [evidence](security-alertevidence.md). It automatically correlates other alerts with the same attack techniques or the same attacker into an [incident](security-incident.md) to provide a broader context of an attack. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 
