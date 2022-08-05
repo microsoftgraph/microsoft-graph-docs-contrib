@@ -136,11 +136,11 @@ This resource supports:
 |appManagementPolicies|[appManagementPolicy](../resources/appManagementPolicy.md) collection| The appManagementPolicy applied to this application.|
 |calls           |[call](call.md) collection                  |Read-only. Nullable.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| The connectorGroup the application is using with Azure AD Application Proxy. Nullable.|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| Supports `$filter` (`eq` when counting empty collections). Read-only.|
 |extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable. Supports `$expand` and `$filter` (`eq` and `ne` when counting empty collections and only with [advanced query parameters](/graph/aad-advanced-queries)).|
 |federatedIdentityCredentials|[federatedIdentityCredential](federatedidentitycredential.md) collection |Federated identities for applications. Supports `$expand` and `$filter` (`eq` when counting empty collections).|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) collection|Read-only. Nullable.|
-|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. Read-only. Nullable. Supports `$expand`.|
+|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. Read-only. Nullable. Supports `$expand` and `$filter` (`eq` when counting empty collections).|
 |tokenLifetimePolicies|[tokenLifetimePolicy](tokenLifetimePolicy.md) collection|The tokenLifetimePolicies assigned to this application. Supports `$expand`.|
 
 ## JSON representation
