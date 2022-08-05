@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 The first generation of alerts in the Microsoft Graph security API which represents potential security issues within a customer's tenant that Microsoft or a partner security solution has identified. 
 
-This type of alerts federates calling of supported Azure and Microsoft 365 Defender security providers listed in [Use the Microsoft Graph security API](security-api-overview.md##legacy-alerts). It aggregates common alert data among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. 
+This type of alerts federates calling of supported Azure and Microsoft 365 Defender security providers listed in [Use the Microsoft Graph security API](security-api-overview.md#legacy-alerts). It aggregates common alert data among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. 
 
 To learn more, see the sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
