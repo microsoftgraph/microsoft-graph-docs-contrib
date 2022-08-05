@@ -46,7 +46,6 @@ Content-Type: application/json
 
 {
   "attachmentInfo": {
-    "@odata.type": "microsoft.graph.attachmentInfo",
     "attachmentType": "file",
     "name": "flower",
     "size": 3483322
@@ -80,7 +79,7 @@ Content-Type: application/json
 
 ## Step 2: Use the upload session to upload a range of bytes of the file
 
-To upload the file, or a portion of the file, make a `PUT` request to the URL returned in step 1 in the **uploadUrl** property of the **uploadSession** resource. You can upload the entire file, or split the file into multiple byte ranges. Each byte range needs to be less than 4 MB.
+To upload the file, or a portion of the file, append `/content` to the URL returned in step 1 in the **uploadUrl** property of the **uploadSession** resource and make a `PUT` request on the appended URL. You can upload the entire file, or split the file into multiple byte ranges. Each byte range needs to be less than 4 MB.
 
 Specify the request headers and the request body as described in the following sections.
 
