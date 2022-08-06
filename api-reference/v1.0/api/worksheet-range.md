@@ -54,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "worksheet_range"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='A1:B2')
 ```
 
@@ -104,7 +104,7 @@ If the optional `address` parameter is not specified, this function returns the 
   "blockType": "request",
   "name": "worksheet_range_noaddress"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range
 ```
 

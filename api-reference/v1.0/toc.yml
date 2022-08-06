@@ -33,15 +33,22 @@ items:
     - name: Paging
       href: /graph/paging?context=graph/api/1.0
     - name: Query parameters
+      displayName: OData version 4.01, OData query parameters
       items:
         - name: Use query parameters
-          href: /graph/query-parameters?context=graph/api/1.0
           displayName: OData query parameters, OData
-        - name: Use the search query parameter
+          href: /graph/query-parameters?context=graph/api/1.0
+        - name: Use $filter
+          displayName: OData query parameters, OData
+          href: /graph/filter-query-parameter?context=graph/api/1.0
+        - name: Use $search
+          displayName: OData query parameters, OData
           href: /graph/search-query-parameter?context=graph/api/1.0
         - name: Advanced query capabilities
+          displayName: OData query parameters, OData
           href: /graph/aad-advanced-queries?context=graph/api/1.0
         - name: Optimize requests with query parameters
+          displayName: OData query parameters, OData
           href: /learn/modules/optimize-data-usage
     - name: Batching
       href: /graph/json-batching?context=graph/api/1.0
@@ -925,6 +932,7 @@ items:
             - name: Get available extension properties
               href: api/directoryobject-getavailableextensionproperties.md
         - name: Federated identity credentials
+          displayName: Workload identity federation, workload identities
           items:
           - name: Overview
             href: resources/federatedidentitycredentials-overview.md
@@ -3418,6 +3426,8 @@ items:
             href: resources/intune-devices-deviceoperatingsystemsummary.md
           - name: Device registration state
             href: resources/intune-devices-deviceregistrationstate.md
+          - name: Disk type
+            href: resources/intune-devices-disktype.md
           - name: Localized notification message
             href: resources/intune-notification-localizednotificationmessage.md
             items:
@@ -3533,6 +3543,8 @@ items:
               href: api/intune-devices-user-update.md
             - name: removeAllDevicesFromManagement action
               href: api/intune-devices-user-removealldevicesfrommanagement.md
+          - name: User experience analytics health state
+            href: resources/intune-devices-userexperienceanalyticshealthstate.md
           - name: Windows defender scan action result
             href: resources/intune-devices-windowsdefenderscanactionresult.md
           - name: Windows device account

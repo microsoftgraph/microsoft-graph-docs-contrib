@@ -63,7 +63,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_shiftpreferences"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
 ```
 

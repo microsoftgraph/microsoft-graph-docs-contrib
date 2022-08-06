@@ -14,6 +14,7 @@ var settings = new Microsoft.Graph.TenantAdmin.Settings
 		".mp3"
 	},
 	ImageTaggingOption = Microsoft.Graph.TenantAdmin.ImageTaggingChoice.Enhanced,
+	IsLegacyAuthProtocolsEnabled = true,
 	IsSitesStorageLimitAutomatic = false,
 	IsSyncButtonHiddenOnPersonalSite = false,
 	IsUnmanagedSyncAppForTenantRestricted = false,
