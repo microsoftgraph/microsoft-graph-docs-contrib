@@ -69,6 +69,7 @@ The following example specifies the **id** of a **room** to get its properties.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"],
   "name": "get_room"
 }-->
 
@@ -160,17 +161,13 @@ The following example specifies the **id** of a **workspace** to get its propert
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"],
   "name": "get_workspace"
 }-->
 
 ```http
 GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
-
-
-
----
-
 
 #### Response
 
@@ -225,6 +222,7 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["bldg1@contoso.com"],
   "name": "get_roomlist"
 }-->
 

@@ -80,6 +80,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["cf100@contoso.com"],
   "name": "update_room"
 }-->
 ```http
@@ -127,8 +128,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -185,6 +185,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["ws100@contoso.com"],
   "name": "update_workspace"
 }-->
 ```http
@@ -202,15 +203,11 @@ Content-type: application/json
 ```
 
 
----
-
-
 ### Response
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -261,6 +258,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Building1RroomList@contoso.onmicrosoft.com"],
   "name": "update_roomlist"
 }-->
 ```http
@@ -319,8 +317,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
