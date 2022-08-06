@@ -59,7 +59,11 @@ Microsoft Graph uses the HTTP method on your request to determine what your requ
 * The `POST`, `PATCH`, and `PUT` methods require a request body, usually specified in JSON format, that contains additional information, such as the values for properties of the resource.
 
 > [!IMPORTANT]
-> Write requests in the Microsoft Graph API have a size limit of 4 MB. In some cases, for example, the request payload is a file which when encoded in base64 can become larger than 4 MB, the actual write request size limit is lower than 4 MB. Requests exceeding the size limit fail with the status code HTTP 413, and the error message "Request entity too large" or "Payload too large".
+> Write requests in the Microsoft Graph API have a size limit of 4 MB. 
+>
+> In some cases, the actual write request size limit is lower than 4 MB. For example, attaching a file to a user event by `POST /me/events/{id}/attachments` has a request size limit of 3 MB, because a file around 3.5 MB can become larger than 4 MB when encoded in base64.
+>
+> Requests exceeding the size limit fail with the status code HTTP 413, and the error message "Request entity too large" or "Payload too large".
 
 ## Version
 
