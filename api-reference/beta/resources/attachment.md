@@ -28,7 +28,7 @@ Outlook tasks do not support reference attachments.
 * An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
 * A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource)
 
->**Note**: If you're attaching a file to a group post, or attaching an item to an event, message, or group post, there is a limit to the size of the attachment to under 4 MB. A simple rule of thumb is to keep the file attachment under 3 MB. When a file over 3.5 MB is encoded in base64, its file size can be over 4 MB. 
+>**Note**: If you're attaching a file to a group post, or attaching an item to an event, message, or group post, limit the size of the attachment to 3 MB. 
 >
 > If you're attaching a file under 3 MB, you can [add the file attachment to a user event](../api/event-post-attachments.md), [to a message](../api/message-post-attachments.md), or [to a group post](../api/post-post-attachments.md). 
 >
@@ -46,7 +46,7 @@ The following methods apply to any of the derived types of attachments (**fileAt
 |[Add attachment to a message](../api/message-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message. This operation limits the size of the attachment you can add to under 3 MB.|
 |[Create session to attach large file](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified **message** or **event**. The file size must be between 3 MB and 150 MB.|
 |[Add attachment to an Outlook task](../api/outlooktask-post-attachments.md) (deprecated) | [attachment](attachment.md) |Add a file or item attachment to an Outlook task.|
-|[Add attachment to a post](../api/post-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a group post.|
+|[Add attachment to a post](../api/post-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a group post. This operation limits the size of the attachment you can add to under 3 MB.|
 |[List attachments of a user event](../api/event-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event in a user calendar. |
 |[List attachments of a message](../api/message-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
 |[List attachments of an Outlook task](../api/outlooktask-list-attachments.md) (deprecated) | [attachment](attachment.md) collection | Get a list of attachments for an Outlook task. |
