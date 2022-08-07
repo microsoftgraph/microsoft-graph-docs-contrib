@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgContactDirectReport -OrgContactId $orgContactId
+Get-MgContactDirectReport -OrgContactId $orgContactId -OutFile $outFileId
 
 ```

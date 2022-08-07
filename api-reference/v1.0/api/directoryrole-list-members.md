@@ -1,7 +1,7 @@
 ---
 title: "List members of a directory role"
 description: "Retrieve the list of principals that are assigned to the directory role."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_directoryrole_members_objectid"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoles/23f3b4b4-8a29-4420-8052-e4950273bbda/members
+GET https://graph.microsoft.com/v1.0/directoryRoles/43a63cc2-582b-4d81-a79d-1591f91d5558/members
 ```
 
 # [C#](#tab/csharp)
@@ -127,7 +127,7 @@ Content-type: application/json
   "name": "get_directoryrole_members_templateId"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf/members
+GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=43a63cc2-582b-4d81-a79d-1591f91d5558/members
 ```
 
 ### Response

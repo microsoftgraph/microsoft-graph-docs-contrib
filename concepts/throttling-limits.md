@@ -115,10 +115,6 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 
 ### Identity and access service limits
 
-The service limits in this section apply to the following entities:
-
-[!INCLUDE [Identity and access throttling documentation](../includes/throttling-identity-and-access.md)]
-
 #### Pattern
 
 Throttling is based on a token bucket algorithm, which works by adding individual costs of requests. The sum of request costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached, in situations when the services are under an important load or based on data volume for a specific tenant. The following table lists existing limits.
@@ -131,6 +127,8 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 
 > [!NOTE]
 > The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
+
+[!INCLUDE [Identity and access throttling documentation](../includes/throttling-identity-and-access.md)]
 
 The following table lists base request costs. Any requests not listed have a base cost of 1.
 

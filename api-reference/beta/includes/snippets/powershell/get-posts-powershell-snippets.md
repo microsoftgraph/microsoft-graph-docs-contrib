@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId
+Get-MgGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -OutFile $outFileId
 
 ```

@@ -13,7 +13,7 @@ requestBody.Set"@odata.type"(&"@odata.type")
 displayName := "Updated named location without unknown countries and regions"
 requestBody.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
-	countriesAndRegions := []String {
+	countriesAndRegions := []string {
 		"CA",
 		"IN",
 

@@ -304,6 +304,13 @@ Namespace: microsoft.graph
 |reviewer|
 |unknownFutureValue|
 
+### accessReviewStageFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
 ### volumeType values
 
 |Member|

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Compliance
 
-Get-MgComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId
+Get-MgComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -OutFile $outFileId
 
 ```

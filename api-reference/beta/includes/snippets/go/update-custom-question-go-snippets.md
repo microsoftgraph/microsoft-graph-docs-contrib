@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewMeetingRegistrationQuestion()
 answerInputType := graphmodels.RADIOBUTTON_ANSWERINPUTTYPE 
 requestBody.SetAnswerInputType(&answerInputType) 
-answerOptions := []String {
+answerOptions := []string {
 	"Software Engineer",
 	"Software Development Manager",
 	"Product Manager",

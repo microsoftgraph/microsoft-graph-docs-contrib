@@ -15,7 +15,7 @@ requestBody.SetUser(user)
 tenantId := "2a690434-97d9-4eed-83a6-f5f13600199a"
 requestBody.SetTenantId(&tenantId) 
 
-graphClient.ChatsById("chat-id").MarkChatReadForUser(chat-id).Post(requestBody)
+graphClient.ChatsById("chat-id").MarkChatReadForUser().Post(requestBody)
 
 
 ```
