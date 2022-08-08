@@ -245,6 +245,7 @@ Content-type: application/json
 
 #### Supported Scope Terms
 You can use below scope terms in your KQL query.
+
 | Scope Terms                           | Description   | Example   |
 |:-----------------------------------|:--------------|:--------------------|
 | from | Search only for messages sent by scoped person | from:bob |
