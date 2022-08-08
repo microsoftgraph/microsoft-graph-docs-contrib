@@ -61,7 +61,7 @@ The following example retrieves a specific **identityProvider**.
   "sampleKeys": ["Amazon-OAuth"]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```
 

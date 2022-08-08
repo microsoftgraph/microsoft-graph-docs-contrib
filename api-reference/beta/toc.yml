@@ -33,15 +33,22 @@ items:
     - name: Paging
       href: /graph/paging?context=graph/api/beta
     - name: Query parameters
+      displayName: OData version 4.01, OData query parameters
       items:
         - name: Use query parameters
-          href: /graph/query-parameters?context=graph/api/beta
           displayName: OData query parameters, OData
-        - name: Use the search query parameter
+          href: /graph/query-parameters?context=graph/api/beta
+        - name: Use $filter
+          displayName: OData query parameters, OData
+          href: /graph/filter-query-parameter?context=graph/api/beta
+        - name: Use $search
+          displayName: OData query parameters, OData
           href: /graph/search-query-parameter?context=graph/api/beta
         - name: Advanced query capabilities
+          displayName: OData query parameters, OData
           href: /graph/aad-advanced-queries?context=graph/api/beta
         - name: Optimize requests with query parameters
+          displayName: OData query parameters, OData
           href: /learn/modules/optimize-data-usage
     - name: Batching
       href: /graph/json-batching?context=graph/api/beta
@@ -977,7 +984,7 @@ items:
             href: api/application-addkey.md
           - name: Remove key
             href: api/application-removekey.md
-        - name: Federated identity credentials (preview)
+        - name: Federated identity credentials
           displayName: Workload identity federation, workload identities
           items:
           - name: Overview
@@ -1691,6 +1698,13 @@ items:
             items:
             - name: List
               href: api/attendancerecord-list.md
+        - name: Call transcript
+          href: resources/calltranscript.md
+          items:
+          - name: List
+            href: api/onlinemeeting-list-transcripts.md
+          - name: Get
+            href: api/calltranscript-get.md
         - name: Meeting registration
           href: resources/meetingregistration.md
           items:
@@ -1739,7 +1753,7 @@ items:
           - name: Update
             href: api/virtualappointment-update.md
           - name: Delete
-            href: api/virtualappointment-delete.md   
+            href: api/virtualappointment-delete.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -10544,6 +10558,17 @@ items:
             href: api/cloudpcorganizationsettings-get.md
           - name: Update
             href: api/cloudpcorganizationsettings-update.md
+        - name: Cloud PC external partner setting
+          href: resources/cloudpcexternalpartnersetting.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-externalpartnersettings.md
+          - name: Get
+            href: api/cloudpcexternalpartnersetting-get.md
+          - name: Create
+            href: api/virtualendpoint-post-externalpartnersettings.md
+          - name: Update
+            href: api/cloudpcexternalpartnersetting-update.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
@@ -10765,7 +10790,7 @@ items:
           href: resources/managedtenants-myrole.md
           items:
           - name: List
-            href: api/managedtenants-managedtenant-list-myroles.md 
+            href: api/managedtenants-managedtenant-list-myroles.md
         - name: Tenant customized information
           href: resources/managedtenants-tenantcustomizedinformation.md
           items:
@@ -11003,7 +11028,7 @@ items:
         - name: Set up assignment resources folder
           href: api/educationassignment-setupresourcesfolder.md
         - name: Set up assignment feedback resources folder
-          href: api/educationassignment-setupfeedbackresourcesfolder.md          
+          href: api/educationassignment-setupfeedbackresourcesfolder.md
         - name: Get rubric attached to assignment
           href: api/educationassignment-get-rubric.md
         - name: List categories
@@ -11062,7 +11087,7 @@ items:
         - name: Add submission resource
           href: api/educationsubmission-post-resources.md
         - name: Add submission feedback resource outcome
-          href: api/educationfeedbackresourceoutcome-post-outcomes.md          
+          href: api/educationfeedbackresourceoutcome-post-outcomes.md
         - name: Get submission resource
           href: api/educationsubmissionresource-get.md
         - name: Delete submission resource
@@ -12317,7 +12342,7 @@ items:
             - name: Update
               href: api/crosstenantaccesspolicyconfigurationdefault-update.md
             - name: Reset to system default
-              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md            
+              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
           - name: Partner settings
             items:
             - name: Cross-tenant access partner settings
@@ -12331,7 +12356,7 @@ items:
             - name: Update
               href: api/crosstenantaccesspolicyconfigurationpartner-update.md
             - name: Delete
-              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md              
+              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -12358,7 +12383,7 @@ items:
             - name: Get
               href: api/externalidentitiespolicy-get.md
             - name: Update
-              href: api/externalidentitiespolicy-update.md    
+              href: api/externalidentitiespolicy-update.md
         - name: Identity protection
           href: resources/identityprotection-overview.md
           items:
@@ -14705,6 +14730,14 @@ items:
             href: api/externalconnectors-schema-get.md
           - name: Update
             href: api/externalconnectors-schema-update.md
+        - name: External activity
+          items:
+          - name: External activity
+            href: resources/externalconnectors-externalactivity.md
+        - name: External activity result
+          items:
+          - name: External activity result
+            href: resources/externalconnectors-externalactivityresult.md
         - name: External item
           items:
           - name: External item
@@ -14717,6 +14750,8 @@ items:
             href: api/externalconnectors-externalitem-update.md
           - name: Delete
             href: api/externalconnectors-externalitem-delete.md
+          - name: Add activities
+            href: api/externalconnectors-externalitem-addactivities.md
         - name: External group
           items:
           - name: External group
@@ -14870,7 +14905,7 @@ items:
         - name: Operation
           href : resources/security-caseoperation.md
           items:
-           - name: List case operations 
+           - name: List case operations
              href: api/security-ediscoverycase-list-operations.md
            - name: Get case opreation by id
              href: api/security-caseoperation-get.md
@@ -15044,7 +15079,7 @@ items:
             href: api/security-ediscoveryreviewtag-ashierarchy.md
       - name: Information protection
         items:
-        - name: Labels
+        - name: Labels (deprecated)
           href: resources/informationprotectionlabel.md
           items:
           - name: List labels
@@ -15059,6 +15094,26 @@ items:
             href: api/informationprotectionlabel-evaluateremoval.md
           - name: Extract label
             href: api/informationprotectionlabel-extractlabel.md
+        - name: Sensitivity labels
+          href: resources/security-sensitivitylabel.md
+          items:
+          - name: List
+            href: api/security-informationprotection-list-sensitivitylabels.md
+          - name: Get
+            href: api/security-sensitivitylabel-get.md
+          - name: Evaluate application
+            href: api/security-sensitivitylabel-evaluateapplication.md
+          - name: Evaluate classification result
+            href: api/security-sensitivitylabel-evaluateclassificationresults.md
+          - name: Evaluate removal
+            href: api/security-sensitivitylabel-evaluateremoval.md
+          - name: Extract content label
+            href: api/security-sensitivitylabel-extractcontentlabel.md
+        - name: Sensitivity label policy
+          href: resources/security-informationprotectionpolicysetting.md
+          items:
+          - name: List
+            href: api/security-informationprotectionpolicysetting-get.md
         - name: Threat assessment
           items:
           - name: Overview
@@ -15124,7 +15179,7 @@ items:
             href: api/security-emailthreatsubmission-post-emailthreats.md
           - name: Get
             href: api/security-emailthreatsubmission-get.md
-          - name: Review 
+          - name: Review
             href: api/security-emailthreatsubmission-review.md
           - name: Email content threat submission
             href: resources/security-emailcontentthreatsubmission.md
@@ -15411,7 +15466,7 @@ items:
           - name: Create
             href: api/termStore-relation-post.md
       - name: Tenant settings
-        items: 
+        items:
           - name: Settings
             href: resources/tenantadmin-settings.md
           - name: Get settings
@@ -16235,7 +16290,7 @@ items:
         - name: List for group
           href: api/group-list-permissiongrants.md
         - name: List for chat
-          href: api/chat-list-permissiongrants.md      
+          href: api/chat-list-permissiongrants.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:
@@ -16281,7 +16336,7 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: File attachment 
+      - name: File attachment
         items:
         - name: File attachment
           href: resources/taskfileattachment.md
@@ -16398,7 +16453,7 @@ items:
           - name: Update
             href: api/linkedresource_v2-update.md
           - name: Delete
-            href: api/linkedresource_v2-delete.md        
+            href: api/linkedresource_v2-delete.md
       - name: Outlook tasks (deprecated)
         items:
         - name: Outlook task (deprecated)

@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plans_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/plans
 ```
 

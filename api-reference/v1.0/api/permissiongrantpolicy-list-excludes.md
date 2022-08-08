@@ -63,7 +63,7 @@ The following is an example of the request to retrieve the **excludes** conditio
   "sampleKeys": ["microsoft-application-admin"]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-application-admin/excludes
 ```
 

@@ -205,7 +205,7 @@ The following is an example of the request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-OIDC
 ```
 
