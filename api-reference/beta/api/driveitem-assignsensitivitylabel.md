@@ -1,5 +1,5 @@
 ---
-title: "driveItem: assignSensitivitylabel"
+title: "driveItem: assignSensitivityLabel"
 description: "Asynchronously assigns sensitivity label to an [driveItem][item-resource]."
 author: "jaLuthra"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# driveItem: assignSensitivitylabel
+# driveItem: assignSensitivityLabel
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
