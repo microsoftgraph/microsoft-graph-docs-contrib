@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|User.Read.All, User.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /organization/{organizationId}/settings/contactInsights
+PATCH /organization/{organizationId}/settings/contactInsights
 ```
 
 ## Request headers
@@ -46,8 +46,8 @@ You can specify the following properties when creating an **insightsSettings**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean|**TODO: Add Description** Optional.|
-|disabledForGroup|String|**TODO: Add Description** Optional.|
+|isEnabledInOrganization|Boolean|`true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default is `true`. Optional.|
+|disabledForGroup|String|The ID of an Azure AD group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
 
 
 
@@ -70,9 +70,8 @@ Content-Type: application/json
 Content-length: 132
 
 {
-  "@odata.type": "#microsoft.graph.insightsSettings",
-  "isEnabledInOrganization": "Boolean",
-  "disabledForGroup": "String"
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
 
@@ -91,10 +90,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.insightsSettings",
-  "id": "2387c96e-d9f4-e2c8-d164-0393ceab88d0",
-  "isEnabledInOrganization": "Boolean",
-  "disabledForGroup": "String"
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
 
