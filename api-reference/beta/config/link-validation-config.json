@@ -30,6 +30,7 @@
         "/sharepoint",
         "/troubleshoot",
         "/windows",
-        "/windows-hardware"
+        "/windows-hardware",
+        "/deployedge"
     ]
 }
