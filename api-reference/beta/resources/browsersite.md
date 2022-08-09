@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a site to use in [Internet Explorer mode](https://docs.microsoft.com/deployedge/edge-ie-mode) that resides on a [site list](../resources/browsersitelist.md).
+Represents a site to use in [Internet Explorer mode](/deployedge/edge-ie-mode) that resides on a [site list](../resources/browsersitelist.md).
 
 ## Methods
 |Method|Return type|Description|
