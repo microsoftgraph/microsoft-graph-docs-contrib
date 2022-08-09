@@ -37,7 +37,8 @@ One of the following permissions is required to call this API. To learn more, in
 The following is an example of a request to create an upload session.
 <!-- {
   "blockType": "request",
-  "name": "todo_attachment_walkthrough_createuploadsession"
+  "name": "todo_attachment_walkthrough_createuploadsession",
+  "sampleKeys": ["AAMDiFkfh=", "AAMkADliMm="]
 }
 -->
 ``` http

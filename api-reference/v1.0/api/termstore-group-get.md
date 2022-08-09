@@ -55,7 +55,8 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_group_3"
+  "name": "get_group_3",
+  "sampleKeys": ["microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74", "1FFD3F87-9464-488A-A0EC-8FB90911182C"]
 }
 -->
 
@@ -116,7 +117,8 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_group_termstore"
+  "name": "get_group_termstore",
+  "sampleKeys": ["mycompany.sharepoint.com,8f03a01c-dcfa-4aaf-9be5-b3fb48e538c1,739084f3-c0fa-46ac-b7f8-13b344781ad0", "1FFD3F87-9464-488A-A0EC-8FB90911182C"]
 }
 -->
 

@@ -62,7 +62,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityuserflowattributeassignment_2"
+  "name": "get_identityuserflowattributeassignment_2",
+  "sampleKeys": ["B2X_1_Partner"]
 }
 -->
 
@@ -149,7 +150,8 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityuserflowattributeassignment_expand_2"
+  "name": "get_identityuserflowattributeassignment_expand_2",
+  "sampleKeys": ["B2X_1_Partner"]
 }
 -->
 

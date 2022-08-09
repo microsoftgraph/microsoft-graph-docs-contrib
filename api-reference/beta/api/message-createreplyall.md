@@ -76,7 +76,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "message_createreplyall"
+  "name": "message_createreplyall",
+  "sampleKeys": ["AAMkADA1MTAAAH5JaKAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaKAAA=/createReplyAll
