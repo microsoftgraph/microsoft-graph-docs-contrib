@@ -10,35 +10,35 @@ description: "Microsoft Graph connectors SDK contracts ConnectorInfo API and mod
 
 # Microsoft Graph connectors SDK ConnectorInfo API and models
 
-The Microsoft Graph connectors SDK contracts **ConnectorInfo API** allows you to get information about the connector.
+The Microsoft Graph connectors SDK contracts **ConnectorInfo** API allows you to get information about the connector.
 
 ## ConnectorInfo API
 
 |Method |Parameters |Return Type |Description |
 |:----------|:-------------|:----------|:-------------|
-|GetBasicConnectorInfo |[GetBasicConnectorInfoRequest](#getbasicconnectorinforequest) |[GetBasicConnectorInfoResponse](#getbasicconnectorinforesponse) |Gets basic information of the connector. It's used by the platform to fetch the unique Connector ID. |
+|GetBasicConnectorInfo |[GetBasicConnectorInfoRequest](#getbasicconnectorinforequest) |[GetBasicConnectorInfoResponse](#getbasicconnectorinforesponse) |Gets basic information about the connector. Used by the platform to fetch the unique connector ID. |
 |HealthCheck |[HealthCheckRequest](#healthcheckrequest) |[HealthCheckResponse](#healthcheckresponse) |Checks communication from the platform to the connector server. |
 
-### ConnectorInfo API models
+## ConnectorInfo API models
 
-The following are the ConnectorInfo API models:
+The following sections describe the ConnectorInfo API models.
 
-#### GetBasicConnectorInfoResponse
+### GetBasicConnectorInfoResponse
 
 Response model that holds basic connector information.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|connectorId |String  |Unique identifier and guid for the connector. |
+|connectorId |String  |Unique identifier and GUID for the connector. |
 
-#### GetBasicConnectorInfoRequest
+### GetBasicConnectorInfoRequest
 
-Request model to retrieve basic connector information. This model doesn't have any properties but might be added in the future as required.
+Request model to retrieve basic connector information. This model doesn't have any properties; properties might be added in the future as required.
 
-#### HealthCheckRequest
+### HealthCheckRequest
 
-Request model for HealthCheck API. This model doesn't have any properties but might be added in the future as required.
+Request model for the **HealthCheck** API. This model doesn't have any properties; properties might be added in the future as required.
 
-#### HealthCheckResponse
+### HealthCheckResponse
 
-Response model for HealthCheck API. This model doesn't have any properties but might be added in the future as required.
+Response model for the **HealthCheck** API. This model doesn't have any properties; properties might be added in the future as required.
