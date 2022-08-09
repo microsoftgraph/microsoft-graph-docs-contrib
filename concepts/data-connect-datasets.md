@@ -67,7 +67,7 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 Please consider that these datasets are available after 48 hours (about 2 days). For instance, you can query data for 07/01 starting on 07/03.  
 
-This data is available for only the past 21 days (about 3 weeks). For instance, if you would like to query data for 07/01, you can do so from 07/03 to 07/24. 
+The data available is from the last 21 days (about three weeks). For instance, if you would like to query data for 07/01, you can do so from 07/03 to 07/24. 
 
 | Dataset name | Description | Sample and Schema | Billing |
 |--|--|--|--|
