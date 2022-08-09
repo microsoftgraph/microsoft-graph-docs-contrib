@@ -145,6 +145,40 @@ The decrypted notification payload looks like the following. The payload conform
 }
 ```
 
+## Subscribe to changes in any chat where a specific Teams app is installed (preview)
+
+To get change notifications for all changes related to any chat in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+
+> **Note.** This resource type is currently in preview.
+
+[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
+
+### Permissions
+
+| Permission type                        | Permissions (from least to most privileged)                  |
+| :------------------------------------- | :----------------------------------------------------------- |
+| Delegated (work or school account)     | Not supported.                                               |
+| Delegated (personal Microsoft account) | Not supported.                                               |
+| Application                            | Chat.ReadBasic.WhereInstalled, Chat.Read.WhereInstalled, Chat.ReadWrite.WhereInstalled |
+
+### Example
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/appCatalogs/teamsApps/386bbcdb-1e1c-4f3f-b7d0-ad7b9ea6cf7c/installedToChats",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 ### Notifications without resource data
 
 The following payload describes the information sent in the request for notifications without resource data. This particular payload signifies that a new chat has been created.

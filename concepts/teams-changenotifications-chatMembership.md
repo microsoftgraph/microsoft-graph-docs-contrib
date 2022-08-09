@@ -75,7 +75,39 @@ Content-Type: application/json
 }
 ```
 
+## Subscribe to changes in membership of any chat where a specific Teams app is installed (preview)
 
+To get change notifications for membership changes in any chat across the tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+
+> **Note.** This resource type is currently in preview.
+
+[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
+
+### Permissions
+
+| Permission type                        | Permissions (from least to most privileged)                  |
+| :------------------------------------- | :----------------------------------------------------------- |
+| Delegated (work or school account)     | Not supported.                                               |
+| Delegated (personal Microsoft account) | Not supported.                                               |
+| Application                            | ChatMember.Read.WhereInstalled, ChatMember.ReadWrite.WhereInstalled, Chat.ReadBasic.WhereInstalled, Chat.Read.WhereInstalled, Chat.ReadWrite.WhereInstalled |
+
+### Example
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/appCatalogs/teamsApps/386bbcdb-1e1c-4f3f-b7d0-ad7b9ea6cf7c/installedToChats/getAllMembers",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
 
 ### Notifications with resource data
 
