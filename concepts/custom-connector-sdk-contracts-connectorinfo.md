@@ -5,7 +5,7 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Microsoft Graph connectors SDK contracts ConnectorInfo API and models"
+description: "Learn about the Microsoft Graph connectors SDK contracts ConnectorInfo API and models."
 ---
 
 # Microsoft Graph connectors SDK ConnectorInfo API and models
