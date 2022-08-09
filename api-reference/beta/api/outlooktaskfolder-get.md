@@ -55,7 +55,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktaskfolder"
+  "name": "get_outlooktaskfolder",
+  "sampleKeys": ["AAMkADIyAAAAABrJAAA="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAAABrJAAA=

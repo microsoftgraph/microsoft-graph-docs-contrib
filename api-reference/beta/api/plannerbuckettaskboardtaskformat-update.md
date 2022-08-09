@@ -54,7 +54,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_plannerbuckettaskboardtaskformat"
+  "name": "update_plannerbuckettaskboardtaskformat",
+  "sampleKeys": ["hsOf2dhOJkqyYYZEtdzDe2QAIUCR"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/planner/tasks/hsOf2dhOJkqyYYZEtdzDe2QAIUCR/bucketTaskBoardFormat

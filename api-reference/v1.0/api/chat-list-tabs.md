@@ -59,7 +59,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_tabs_in_chat"
+  "name": "list_tabs_in_chat",
+  "sampleKeys": ["19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"]
 }
 -->
 
@@ -183,7 +184,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_tabs_in_chat_app_filter"
+  "name": "list_tabs_in_chat_app_filter",
+  "sampleKeys": ["19:d65713bc498c4a428c71ef9353e6ce20@thread.v2", "com.microsoft.teamspace.tab.web"]
 }
 -->
 

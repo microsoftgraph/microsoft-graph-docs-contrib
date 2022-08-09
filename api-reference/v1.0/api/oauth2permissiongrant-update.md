@@ -58,7 +58,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_oAuth2PermissionGrant"
+  "name": "update_oAuth2PermissionGrant",
+  "sampleKeys": ["l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk"]
 }-->
 
 ```http

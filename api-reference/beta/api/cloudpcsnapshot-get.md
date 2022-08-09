@@ -58,7 +58,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpcsnapshot"
+  "name": "get_cloudpcsnapshot",
+  "sampleKeys": ["A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8"]
 }
 -->
 ``` http
