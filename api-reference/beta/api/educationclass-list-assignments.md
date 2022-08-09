@@ -1,7 +1,7 @@
 ---
 title: "List class assignments"
 description: "Retrieve a list of assignment objects."
-author: "mmast-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -35,6 +35,7 @@ GET /education/classes/{id}/assignments
 ```
 
 ## Optional query parameters
+This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions` and `*` which includes all the previous options.
