@@ -60,7 +60,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_tabs_in_channel_app_filter_1"
+  "name": "list_tabs_in_channel_app_filter_1",
+  "sampleKeys": ["6903fa93-605b-43ef-920e-77c4729f8258", "19:33b76eea88574bd1969dca37e2b7a819@thread.skype"]
 }
 -->
 
@@ -153,7 +154,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_tabs_in_channel_app_filter_2"
+  "name": "list_tabs_in_channel_app_filter_2",
+  "sampleKeys": ["6903fa93-605b-43ef-920e-77c4729f8258", "19:33b76eea88574bd1969dca37e2b7a819@thread.skype", "com.microsoft.teamspace.tab.planner"]
 }
 -->
 

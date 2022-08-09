@@ -64,6 +64,12 @@ If successful, this method returns a `200 OK` response code and the requested [f
 ## Examples
 
 ### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_fido2authenticationmethod_1",
+  "sampleKeys": ["-2_GRUg2-HYz6_1YG4YRAQ2"]
+}
+-->
 
 ``` http
 GET https://graph.microsoft.com/v1.0/me/authentication/fido2Methods/-2_GRUg2-HYz6_1YG4YRAQ2

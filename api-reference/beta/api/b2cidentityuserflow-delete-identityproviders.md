@@ -63,7 +63,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_b2xUserFlows_identityProviders_1"
+  "name": "delete_b2xUserFlows_identityProviders_1",
+  "sampleKeys": ["B2C_1_CustomerSignUp", "Facebook-OAUTH"]
 }
 -->
 

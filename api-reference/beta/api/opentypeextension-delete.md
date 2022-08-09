@@ -84,7 +84,8 @@ The first example references an extension by its name and deletes the extension 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_opentypeextension"
+  "name": "delete_opentypeextension",
+  "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===", "Com.Contoso.Referral"]
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral/

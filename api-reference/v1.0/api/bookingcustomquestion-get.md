@@ -57,7 +57,8 @@ If successful, this method returns a `200 OK` response code and a [bookingCustom
 ### Request
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
 }
 -->
 ```http
