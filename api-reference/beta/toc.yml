@@ -414,6 +414,14 @@ items:
             href: api/contactmergesuggestions-get.md
           - name: Update
             href: api/contactmergesuggestions-update.md
+        - name: Organization Contact merge suggestions (preview)
+          items:
+          - name: Contact merge suggestions
+            href: resources/contactinsightssettings.md
+          - name: Get
+            href: api/organizationsettings-list-contactinsights.md
+          - name: Update
+            href: api/organizationsettings-update-contactinsights.md
       - name: Delegated permission grants
         items:
         - name: List delegated permission grants
