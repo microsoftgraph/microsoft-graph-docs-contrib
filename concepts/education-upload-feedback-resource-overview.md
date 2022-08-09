@@ -19,7 +19,7 @@ Before you can upload files, set up a SharePoint folder to which to upload the f
 
 ## Upload a resource
 
-The [submission setUpResourcesFolder](/graph/api/educationsubmission-setupresourcesfolder)API returns a model that contains the **resourcesFolderUrl** property.
+The [submission setUpResourcesFolder](/graph/api/educationsubmission-setupresourcesfolder) API returns a model that contains the **resourcesFolderUrl** property.
 ```http
 {
     ...
