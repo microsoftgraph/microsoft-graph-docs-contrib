@@ -69,7 +69,8 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_virtualappointment"
+  "name": "update_virtualappointment",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
 }
 -->
 ``` http

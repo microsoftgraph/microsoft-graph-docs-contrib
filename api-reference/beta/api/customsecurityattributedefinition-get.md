@@ -71,7 +71,8 @@ The following example gets a single custom security attribute definition.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_customsecurityattributedefinition"
+  "name": "get_customsecurityattributedefinition",
+  "sampleKeys": ["Engineering_ProjectDate"]
 }
 -->
 ``` http

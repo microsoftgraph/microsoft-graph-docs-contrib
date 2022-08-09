@@ -57,7 +57,8 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_virtualappointment"
+  "name": "delete_virtualappointment",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
 }
 -->
 ``` http
