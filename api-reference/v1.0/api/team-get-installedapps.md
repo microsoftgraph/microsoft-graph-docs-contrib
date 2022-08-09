@@ -59,7 +59,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_installed_teams_apps"
+  "name": "get_installed_teams_apps",
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315", "MDJiZDlmZDYtOGY5My00NzU4LTg3YzMtMWZiNzM3NDBhMzE1IyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg="]
 }-->
 
 ```msgraph-interactive

@@ -50,7 +50,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_schemaextension"
+  "name": "get_schemaextension",
+  "sampleKeys": ["graphlearn_test"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test

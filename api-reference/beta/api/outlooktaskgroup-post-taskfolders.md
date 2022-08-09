@@ -52,7 +52,8 @@ The following example creates a task folder called `Cooking` in the specified ta
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_outlooktaskfolder_from_outlooktaskgroup"
+  "name": "create_outlooktaskfolder_from_outlooktaskgroup",
+  "sampleKeys": ["AAMkADIyAAAhrbe-AAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=/taskfolders
