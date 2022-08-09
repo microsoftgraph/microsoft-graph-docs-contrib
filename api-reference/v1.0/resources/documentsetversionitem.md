@@ -1,6 +1,6 @@
 ---
 title: "documentSetVersionItem resource type"
-description: "Represents an item which is a part of a captured document set version."
+description: "Represents an item that is a part of a captured document set version."
 author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an [item](../resources/listitem.md) which is a part of a captured [documentSetVersion](../resources/documentsetversion.md).
+Represents an [item](../resources/listitem.md) that is a part of a captured [documentSetVersion](../resources/documentsetversion.md).
 
 ## Properties
 |Property|Type|Description|
