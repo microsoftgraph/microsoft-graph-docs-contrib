@@ -48,7 +48,7 @@ For a list of Office to Azure regions and their mapping please refer to [Dataset
 
 ## What datasets are available through Data Connect?
 
-We have multiple datasets available for free or are currently free in preview. Some datasets are also charged. For more information on dataset billing, please refer to [Dataset, regions, and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets) and [MGDC Pricing] (https://azure.microsoft.com/en-us/pricing/details/graph-data-connect/)
+We have multiple datasets available for free or are currently free in preview. Some datasets are also charged. For more information on dataset billing, please refer to [Dataset, regions, and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets) and [MGDC Pricing](https://azure.microsoft.com/en-us/pricing/details/graph-data-connect/)
 
 We have multiple datasets for each of the groups organized in the below
 * Teams
