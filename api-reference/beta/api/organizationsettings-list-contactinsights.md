@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|User.Read.All, User.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -78,10 +78,8 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.insightsSettings",
-      "id": "2387c96e-d9f4-e2c8-d164-0393ceab88d0",
-      "isEnabledInOrganization": "Boolean",
-      "disabledForGroup": "String"
+      "isEnabledInOrganization": true,
+      "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
     }
   ]
 }
