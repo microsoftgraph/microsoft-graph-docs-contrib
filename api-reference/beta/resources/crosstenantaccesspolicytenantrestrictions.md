@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Defines how to target your cross-tenant access policy tenant restrictions settings. Settings can be targeted to specific users, groups, or applications. You can also use keywords to target specific groups or applications.
 
-Inherits from [crossTenantAccessPolicyB2BSettings](../resources/crosstenantaccesspolicyb2bsettings.md).
+Inherits from [crossTenantAccessPolicyB2BSettings](../resources/crosstenantaccesspolicyb2bsetting.md).
 
 ## Properties
 
