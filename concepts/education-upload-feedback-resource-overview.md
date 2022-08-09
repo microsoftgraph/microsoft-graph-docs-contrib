@@ -19,7 +19,7 @@ Before you can upload files, set up a SharePoint folder to which to upload the f
 
 ## Upload a resource
 
-The [submission setUpResourcesFolder](/graph/api/educationsubmission-setupresourcesfolder)`setUpResourcesFolder` API returns a model that contains the **resourcesFolderUrl** property.
+The [submission setUpResourcesFolder](/graph/api/educationsubmission-setupresourcesfolder)API returns a model that contains the **resourcesFolderUrl** property.
 ```http
 {
     ...
@@ -201,4 +201,4 @@ Content-type: application/json
 
 You have now successfully uploaded a resource to a submision resources folder (and attached it to the associated submission). You can follow similar steps to upload one or more feedback resources.
 
-For more details, see [Create educationFeedbackResourceOutcome]("/graph/api/educationfeedbackresourceoutcome-post-outcomes").
+For more details, see [Create educationFeedbackResourceOutcome](/graph/api/educationfeedbackresourceoutcome-post-outcomes).
