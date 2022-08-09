@@ -44,11 +44,11 @@ As mentioned earlier, customers are charged monthly. However, MGDC does not do f
 
 Microsoft Graph Data Connect is currently available in the following regions: North America, Europe, Asia Pacific, United Kingdom/Great Britain, and Australia. Other regions will follow. 
 
-For a list of Office to Azure regions and their mapping please refer to [Dataset, regions and sinks] (https://docs.microsoft.com/en-us/graph/data-connect-datasets#regions).
+For a list of Office to Azure regions and their mapping please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#regions).
 
 ## What datasets are available through Data Connect?
 
-We have multiple datasets available for free or are currently free in preview. Some datasets are also charged. For more information on dataset billing, please refer to [Dataset, regions, and sinks] (https://docs.microsoft.com/en-us/graph/data-connect-datasets) and [MGDC Pricing] (https://azure.microsoft.com/en-us/pricing/details/graph-data-connect/)
+We have multiple datasets available for free or are currently free in preview. Some datasets are also charged. For more information on dataset billing, please refer to [Dataset, regions, and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets) and [MGDC Pricing] (https://azure.microsoft.com/en-us/pricing/details/graph-data-connect/)
 
 We have multiple datasets for each of the groups organized in the below
 * Teams
@@ -82,7 +82,7 @@ When creating the Azure Data Factory pipeline, you have to provide a service pri
 
 If you create an Azure managed application for others to use in their tenants, you still provide a service principal for the app to use. This service principal exists in your (the publisher's) tenant. However, if the app needs other service principals, your customer (the installer) creates them in their own tenant. For example, your Data Factory pipeline likely needs access to a storage resource in Azure. The customer creates the service principal with permissions to the storage account for the pipeline to use.
 
-For more information on building your application with Azure Data Factory or Azure Synapse please visit [here] (https://docs.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365)
+For more information on building your application with Azure Data Factory or Azure Synapse please visit [here](https://docs.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365)
 
 ## How can I check for pending Privileged Access Management requests?
 
@@ -105,7 +105,7 @@ To approve a request, users need to follow the below:
 - Users must have a Global Admin role.
 - Users must have an EXO license assigned.
 
-For more details please visit [this page] (https://docs.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1)
+For more details please visit [this page](https://docs.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1)
 
 
 ## Can I have a second user to approve PAM requests?
