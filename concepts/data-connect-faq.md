@@ -82,7 +82,7 @@ When creating the Azure Data Factory pipeline, you have to provide a service pri
 
 If you create an Azure managed application for others to use in their tenants, you still provide a service principal for the app to use. This service principal exists in your (the publisher's) tenant. However, if the app needs other service principals, your customer (the installer) creates them in their own tenant. For example, your Data Factory pipeline likely needs access to a storage resource in Azure. The customer creates the service principal with permissions to the storage account for the pipeline to use.
 
-For more information on building your application with Azure Data Factory or Azure Synapse please visit [here](https://docs.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365)
+For more information on building your application with Azure Data Factory or Azure Synapse please visit [here](https://docs.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365).
 
 ## How can I check for pending Privileged Access Management requests?
 
@@ -101,11 +101,11 @@ Additionally, PAM approval is valid for only 6 months (unless revoked) - existin
 The Data Connect documentation shows you how to use PowerShell and the PAM UX to approve PAM requests. To approve using the PAM UX, visit the PAM interface in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/Settings/PrivilegedAccess). The admin center provides an easy and user-friendly way to view and approve/deny/revoke PAM requests. You can find a link to it in the Microsoft Graph Data Connect add-in under **Settings** > **Services & Add-ins** > **Microsoft Graph Data Connect**.
 
 To approve a request, users need to follow the below:
-- When enabling MGDC, please be within the approver’s group 
+- When enabling MGDC, please be within the approver’s group.
 - Users must have a Global Admin role.
 - Users must have an EXO license assigned.
 
-For more details please visit [this page](https://docs.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1)
+For more details please visit [this page](https://docs.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1).
 
 
 ## Can I have a second user to approve PAM requests?
