@@ -61,7 +61,7 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 |--|--|--|--|
 | BasicDataSet_v0.GroupDetails_v0 | Contains a Teams Chat Group details. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/GroupDetails_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/GroupDetails_v0.md)</li></ul> | [Free](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
 | BasicDataSet_v0.GroupMembers_v0 | Contains a Teams Chat Group member details. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/GroupMembers_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/GroupMembers_v0.md)</li></ul> | [Free](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
-| BasicDataSet_v0.GroupOwners_v0 | Contains the Teams Chat Group owners details. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/GroupOwners_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/GroupOwners_v0.md)</li></ul> | [Free](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
+| BasicDataSet_v0.GroupOwners_v0 | Contains the Teams Chat Group owners' details. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/GroupOwners_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/GroupOwners_v0.md)</li></ul> | [Free](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
 
 ### OneDrive and SharePoint Online
 
