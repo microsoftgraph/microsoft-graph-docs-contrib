@@ -101,6 +101,24 @@
 		  "CreatedDateTime": "2022-03-29T10:43:26.7401281Z",
 		  "WorkloadArea": "People and workplace intelligence",
 		  "SubArea": "People"
+		},
+		{
+			"ChangeList": [
+				{
+				"Id": "109fc26e-a37d-4001-bce1-f7d72caf97b5",
+				"ApiChange": "Resource",
+				"ChangedApiName": "contactInsights",
+				"ChangeType": "Addition",
+				"Description": "Added the [contactInsights](https://docs.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource",
+				"Target": "organizationSettings"
+				}
+			],
+			"Id": "109fc26e-a37d-4001-bce1-f7d72caf97b5",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-08-08T13:58:56.9132926Z",
+			"WorkloadArea": "People and workplace intelligence",
+			"SubArea": "People"
 		}
 	]
 }
