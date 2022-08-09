@@ -5,12 +5,12 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Microsoft Graph connectors SDK contracts connector OAuth API"
+description: "Learn about the Microsoft Graph connectors SDK contracts connector OAuth API."
 ---
 
-# Microsoft Graph connectors SDK Connector OAuth API
+# Microsoft Graph connectors SDK connector OAuth API
 
-The Microsoft Graph connectors SDK contracts connector OAuth API is used for OAuth flows like refreshing access tokens during crawls.
+The Microsoft Graph connectors SDK contracts connector OAuth API is used for OAuth flows such as refreshing access tokens during crawls.
 
 ## Connector OAuth APIs
 
@@ -20,21 +20,21 @@ This API is used to generate a refreshed token from the auth server of the data 
 |:----------|:-------------|:----------|:----------|
 |RefreshAccessToken |[RefreshAccessTokenRequest](#refreshaccesstokenrequest) |[RefreshAccessTokenResponse](#refreshaccesstokenresponse) | Shows the refreshed access token. |
 
-### Connector OAuth API Models
+## Connector OAuth API models
 
-#### RefreshAccessTokenRequest
+### RefreshAccessTokenRequest
 
 Request model for refreshing the OAuth token.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|authenticationData |[AuthenticationData](/graph/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL, the credentials to access the data source and current token information. |
+|authenticationData |[AuthenticationData](/graph/custom-connector-sdk-contracts-common#authenticationdata) |Holds the data source access URL, the credentials to access the data source, and current token information. |
 
-#### RefreshAccessTokenResponse
+### RefreshAccessTokenResponse
 
-Response model for Refresh OAuth token request.
+Response model for the refresh OAuth token request.
 
 |Property |Type |Description |
 |:----------|:-------------|:----------|
-|status |[OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details like error messages. |
+|status |[OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) |Shows the status of the operation and details such as error messages. |
 |refreshedCredentialData |[OAuth2ClientCredentialsResponse](/graph/custom-connector-sdk-contracts-common#oauth2clientcredentialsresponse) |Holds the refreshed token information. |
