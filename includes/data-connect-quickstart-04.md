@@ -8,10 +8,16 @@ In this step you will create an Azure Storage account where Microsoft Graph data
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
+<!--use the same as before -->
+
 1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
 
 1. On the sidebar navigation, select **Create a resource**.
 
+<!-- performance, redundancy, and advanced can be anything -->
+<!-- region, link to mapping region. Pick Azure region that is in the O365 region from their tenant -->
+<!-- we are working on removing some of these restrictions over time #4, leave everything as default and if questions email-->
+<!-- Add screenshots -->
 1. Find the **Storage Account** resource type and use the following values to create it, then select **Review + create**.
 
     - **Subscription**: select your Azure subscription

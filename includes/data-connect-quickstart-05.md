@@ -10,6 +10,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
+<!-- Sign in with an account that can create azure resources in subscription.-->
 1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
 
 1. On the sidebar navigation, select **Create a resource**.
@@ -33,7 +34,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 1. Switch from the **Overview** to the **Manage** experience by selecting it from the left-hand navigation.
 
 1. By default, the Azure Data Factory will use an integration runtime that is auto-resolving the region. Because Data Connect requires that your source and destination, and integration runtime to exist in the same Microsoft 365 region, we recommend that you create a new integration runtime with a fixed region.
-
+<!-- 1-3, second option isnt available update with newer ADF related screenshot -->
     1. Select **Integration runtimes** > **New**.
     2. Select **Azure, Self-Hosted** and select **Continue**.
     3. Select **Azure** for network environment and select **Continue**.
@@ -47,6 +48,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
         - **Region**: select the region that matches your Microsoft 365 region
         - **Virtual network configuration (preview)**: Disabled
 
+<!-- clarify what is manage(suitcase) button and author (pencil) button, have a screenshot to explain -->
 1. Switch from the **Manage** to the **Author** experience by selecting it from the left-hand navigation.
 1. Create a new pipeline by selecting the **plus** icon, then **pipeline**.
 
@@ -63,7 +65,8 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
       - **Description**: A description you want.
 
     - In the activity editor pane below the designer, select the **Source** tab, then select **New**.
-    - Locate the dataset **Office 365**, select it and then select the **Continue** button.
+    <!-- update screenshot and M365 term -->
+    - Locate the dataset **Microsoft (Office) 365**, select it and then select the **Continue** button.
 
         ![A screenshot showing the Azure portal UI for the Data Factory service. The user is selecting the Office 365 dataset in the UI and selecting the continue button afterwards.](../concepts/images/data-connect-adf-pipeline-dataset.png)
 
@@ -73,6 +76,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
         ![A screenshot showing the Azure portal UI for the Data Factory service. The user is configuring the integration runtime with the service principal key.](../concepts/images/data-connect-adf-linked-service.png)
 
+    <!-- select is ok, we need to put screenshots here that shows the copy activity definition looks like, source dataset looks like, provide source link service. They may need to go to the activity to do that. -->
     - After creating the Microsoft 365 connection, for the **Table** field, select **BasicDataSet_v0.Message_v0**.
     - Switch from **Office365Table** to **Pipeline > Source**. Use the following values for the **Date filter**.
 
@@ -81,8 +85,9 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
       - **End time (UTC)**: select the current date
       - Select **Import schema** in the _Output columns_ section.
 
+<!-- some of the properties moved to the activity tab -->
     - Select the **Copy data** activity in the pipeline tab, then select the **Sink** tab.
-
+<!-- do we need Blob or should we have Gen 2 here? Ask Rishi what is the correct term -->
       - Select the **New** button, select **Azure Blob Storage**, and then select the **Continue** button.
       - Select **Binary** as the format for the data and then select the **Continue** button.
       - Give the dataset the name **M365JsonFile** and create new linked service if it does not exist already.

@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 <!-- markdownlint-disable MD002 MD041 -->
 
 Prior to using Microsoft Graph Data Connect for the first time, you need to configure your Microsoft 365 tenant. This involves turning on the service and configuring a security group with permissions to approve data extraction requests.
-
+<!-- remove this section and take global admin link and move it to first page -->
 ## Grant Azure AD users the Global administrator role
 
 In this step, you will ensure that two users in your Microsoft 365 tenant have the **Global administrator** role enabled.
@@ -19,12 +19,14 @@ In this step, you will setup your Microsoft 365 tenant to enable usage of Micros
 
 1. Open a browser and go to your [Microsoft 365 Admin Portal](https://admin.microsoft.com/).
 
+<!-- update Active groups screenshot -->
 1. On the sidebar navigation, select **Active Groups**.
 
     ![A screenshot showing the active groups in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-act-grp.png)
 
 1. Select the **Add a group** button.
 
+<!-- Add Distribution List -->
 1. Use the following to create the new **mail-enabled** security group and select the **Add** button.
    - **Type**: Mail-enabled security
 
@@ -37,6 +39,9 @@ In this step, you will setup your Microsoft 365 tenant to enable usage of Micros
    - **Email Prefix**: consentrequestapprovers
 
     ![A screenshot showing a user creating the email address for the previously created group in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-cons-apprv-pref.png)
+
+    <!-- 8. Both users need to have global admin roles, requester doesn't have to be in consent pipeline group
+    5. it can take some time, soften the hour language, use the language AAD has that rishi gives-->
 
 1. **It can take up to an hour** before the newly created group shows up in the list. When the group has been created, select it.
 
@@ -51,7 +56,7 @@ In this step, you will setup your Microsoft 365 tenant to enable usage of Micros
 In this step, you will enable the Microsoft Graph Data Connect service on your Microsoft 365 tenant.
 
 1. While you are still signed in to the Microsoft 365 Admin Portal, select the **Settings > Org settings** menu item.
-
+<!-- update the screenshot for 2 and entire panel for 3, himani has the screenshots-->
 1. Select the **Microsoft Graph Data Connect** service.
 
     ![A screenshot showing the "Services" in the "Org settings" blade. A user is toggling on the Microsoft Graph Data Connect service in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-mgdc-toggle.png)

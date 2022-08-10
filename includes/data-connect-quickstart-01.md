@@ -25,8 +25,8 @@ To complete this lab, you will need the following subscriptions or licenses.
    - If you do not have one, you get one (for free) by signing up to the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
    - Multiple Microsoft 365 users with emails sent and received.
    - Access to at least two accounts that meet the following requirements:
-      - Must have the **Global administrator** role assigned.
-      - Must have access to the Microsoft 365 Admin Center.
+      - Must have the **Global administrator** role assigned and must have access to the Microsoft 365 Admin Center.
+      - Have an existing EXO license and you can either get E5 instant sandbox from the Developer Program or have an existing E5 instnace.
 
 1. **Microsoft Azure subscription**
 
