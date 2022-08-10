@@ -1,18 +1,18 @@
 ---
-title: "List insightsSettings"
-description: "Get the insightsSettings resources from the contactInsights navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "Get contactMergeSuggestions"
+description: "Get the settings for contact merge suggestions in an organization."
+author: "rogoy"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# List insightsSettings
+# Get contactMergeSuggestions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the insightsSettings resources from the contactInsights navigation property.
+Get the settings for contact merge suggestions in an organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
