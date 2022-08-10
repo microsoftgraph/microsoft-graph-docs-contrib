@@ -187,10 +187,10 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Search Teams Message with [KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+### Example 3: Search Teams Message with KQL
 
 #### Supported Scope Terms
-You can use below scope terms in your KQL query.
+You can use below scope terms in your [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) query.
 
 | Scope Terms                           | Description   | Example   |
 |:-----------------------------------|:--------------|:--------------------|
