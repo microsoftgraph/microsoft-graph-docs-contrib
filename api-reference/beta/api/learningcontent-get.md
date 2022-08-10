@@ -33,6 +33,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /employeeExperience/learningProviders/{learningProviderId}/learningContents/{externalId}
 ```
 
+``` http
+GET /employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}
+```
+
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -61,6 +65,10 @@ The following is an example of a request.
 -->
 ``` http 
 GET /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='LP4471') 
+```
+
+``` http
+GET /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents/77029588-a660-46b6-ba58-3ce4d21d5678
 ```
 
 # [C#](#tab/csharp)
@@ -93,6 +101,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents/$entity",
+    "id": "77029588-a660-46b6-ba58-3ce4d21d5678",
     "externalId": "LP4471",
     "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
     "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",

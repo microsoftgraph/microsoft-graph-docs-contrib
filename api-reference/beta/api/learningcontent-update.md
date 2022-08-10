@@ -35,6 +35,10 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /employeeExperience/learningProviders/{registrationId}/learningContents(externalId='{externalId}') 
 ```
 
+``` http
+PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}
+```
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -85,6 +89,9 @@ The following is an example of a request.
 -->
 ``` http
 PATCH /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='LP4471') 
+Content-Type: application/json
+
+PATCH /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents/77029588-a660-46b6-ba58-3ce4d21d5678
 Content-Type: application/json
 
 {
@@ -146,6 +153,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents/$entity",
+    "id": "77029588-a660-46b6-ba58-3ce4d21d5678",
     "externalId": "LP4471",
     "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
     "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
