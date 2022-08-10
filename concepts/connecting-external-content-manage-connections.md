@@ -82,7 +82,7 @@ The content experiences listed in the following table are currently supported. W
 
 If you already know which content experiences you want your connection to partipate in, set the `enabledContentExperiences` flag enum at the time of connection creation.
 
-Otherwise, you can make changes to the enabled content experiences like below.
+Otherwise, you can make changes to the enabled content experiences as shown in the following example.
 ```http
 PATCH https://graph.microsoft.com/beta/external/connections/contosohelpdesk
 Content-Type: application/json
