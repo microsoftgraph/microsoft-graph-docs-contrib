@@ -1,53 +1,55 @@
 ---
-title: "Develop your custom Microsoft Graph connector in C# using a template"
+title: "Build a custom Microsoft Graph connector in C#"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Microsoft Graph connectors SDK sample create connector"
+description: "Learn how to use the Microsoft Graph connectors SDK to build a custom connector in C#."
 ---
 
-# Develop your custom Microsoft Graph connector in C# using a template
+# Build a custom Microsoft Graph connector in C#
+
+This article describes how to use the Microsoft Graph connector SDK to build a custom connector in C#.
 
 ## Prerequisites
 
-1. Download, install and complete the setup for [Microsoft Graph connector Agent](/microsoftsearch/graph-connector-agent).
-2. Install [Visual Studio](https://visualstudio.microsoft.com/) 2019 or higher with [.NET Core 3.1 SDK](https://dotnet.microsoft.com/en-us/download)
+1. Download, install, and complete the setup for the [Microsoft Graph connector agent](/microsoftsearch/graph-connector-agent).
+2. Install [Visual Studio](https://visualstudio.microsoft.com/) 2019 or later with the [.NET Core 3.1 SDK](https://dotnet.microsoft.com/en-us/download).
 3. Download the ApplianceParts.csv file from the [custom connector sample repo](https://github.com/microsoftgraph/msgraph-connectors-sdk/blob/main/C%23%20sample/ApplianceParts.csv).
 
 ## Install the extension
 
-1. Open visual studio and go to **Extensions** > **Manage extensions**
-2. Search for "**GraphConnectorsTemplate**" extension and download it
-3. Close and relaunch Visual Studio to install the template
-4. Go to **File** > **New** > **Project** and search for "GraphConnectorsTemplate". Select the template and select Next.
+1. Open Visual Studio and go to **Extensions** > **Manage extensions**.
+2. Search for the "**GraphConnectorsTemplate**" extension and download it.
+3. Close and relaunch Visual Studio to install the template.
+4. Go to **File** > **New** > **Project** and search for **GraphConnectorsTemplate**. Select the template and choose **Next**.
     ![Create project from template](images/connectors-sdk/create.png)
-5. Give a name to the project and select Next.
-6. Choose .NET Core 3.1, give a name to the connector as "CustomConnector" and select Create.
-7. The custom connector template project is created with skeleton code
+5. Provide a name for the project and choose **Next**.
+6. Choose .NET Core 3.1, name the connector **CustomConnector**, and choose **Create**.
+7. The custom connector template project is now created.
     ![Project structure from template](images/connectors-sdk/templateproject.png)
 
 ## Create the custom connector
 
-Before beginning to build the connector, follow the steps given below to install NuGet packages and create the data models that will be used in this connector.
+Before you build the connector, use the following steps to install NuGet packages and create the data models that will be used.
 
 ### Install NuGet packages
 
-1. Use the right mouse button on the project and select "Open in Terminal"
+1. Right-click the project and choose **Open in Terminal**.
 
     ![Open in Terminal](images/connectors-sdk/terminal.png)
 
-2. Run the below command
+2. Run the following command.
 
     ```dotnetcli
     dotnet add package CsvHelper --version 27.2.1
     ```
 
-### Create Data models
+### Create data models
 
-1. Create a folder called "**Models**" under "CustomConnector" and create a file AppliancePart.cs under the folder.
-2. Paste the following code in AppliancePart.cs
+1. Create a folder called "**Models**" under **CustomConnector** and create a file named AppliancePart.cs under the folder.
+2. Paste the following code in AppliancePart.cs.
 
     ```csharp
     using System;
@@ -73,9 +75,11 @@ Before beginning to build the connector, follow the steps given below to install
 
 ### Update ConnectionManagementServiceImpl.cs
 
-ConnectionManagementServiceImpl.cs has three methods to be implemented:
+You will implement three methods in ConnectionManagementServiceImpl.cs.
 
-**ValidateAuthentication**: This method is used to validate the credentials and the datasource URL provided. We need to connect to the datasource URL using the credentials provided and return success if the connection succeeds or auth failure status if the connection fails.
+#### ValidateAuthentication
+
+The **ValidateAuthentication** method is used to validate the credentials and the data source URL provided. You need to connect to the data source URL using the credentials provided and return success if the connection succeeds or auth failure status if the connection fails.
 
 1. Create a folder called "**Data**" under "CustomConnector" and create a file CsvDataLoader.cs in the folder.
 
@@ -132,15 +136,15 @@ ConnectionManagementServiceImpl.cs has three methods to be implemented:
     
     ```
 
-    The ReadRecordFromCsv method will just open the CSV file and read the first record from the file. We can use this method to validate if the provided data source URL (path of the CSV file) is valid. This connector is using anonymous auth, hence there's no validation of credentials here. If it's using any other auth type, the connection to data source must be made using the provided credentials to validate the authentication.
+    The ReadRecordFromCsv method will open the CSV file and read the first record from the file. We can Use this method to validate that the provided data source URL (path of the CSV file) is valid. This connector is using anonymous auth; therefore, credentials are not validated. If the connector uses any other auth type, the connection to the data source must be made using the credentials provided to validate the authentication.
 
-3. Add the following using directive in ConnectionManagementServiceImpl.cs
+3. Add the following using directive in ConnectionManagementServiceImpl.cs.
 
     ```csharp
     using CustomConnector.Data;
     ```
 
-4. Update the ValidateAuthentication method in ConnectionManagementServiceImpl.cs with the following code to call the ReadRecordFromCsv method of CsvDataLoader class
+4. Update the **ValidateAuthentication** method in ConnectionManagementServiceImpl.cs with the following code to call the **ReadRecordFromCsv** method of the **CsvDataLoader** class.
 
     ```csharp
     public override Task<ValidateAuthenticationResponse> ValidateAuthentication(ValidateAuthenticationRequest request, ServerCallContext context)
@@ -160,9 +164,11 @@ ConnectionManagementServiceImpl.cs has three methods to be implemented:
     
     ```
 
-**ValidateCustomConfiguration**: This method is used to validate any other parameters required for the connection. This connector we're writing doesn't require any extra parameters, hence the validation is that the extra parameters should be empty.
+#### ValidateCustomConfiguration
 
-1. Update ValidateCustomConfiguration method in ConnectionManagementServiceImpl.cs with the following code
+The **ValidateCustomConfiguration** method is used to validate any other parameters required for the connection. The connector you're building doesn't require any extra parameters; therefore, the method will validate that the extra parameters are empty.
+
+1. Update the **alidateCustomConfiguration** method in ConnectionManagementServiceImpl.cs with the following code.
 
     ```csharp
     public override Task<ValidateCustomConfigurationResponse> ValidateCustomConfiguration(ValidateCustomConfigurationRequest request, ServerCallContext context)
@@ -197,9 +203,11 @@ ConnectionManagementServiceImpl.cs has three methods to be implemented:
 
     ```
 
-**GetDataSourceSchema**: This method is used to fetch the schema for the connector:
+#### GetDataSourceSchema
 
-1. Add the following using directives in AppliancePart.cs
+The **GetDataSourceSchema** method is used to fetch the schema for the connector.
+
+1. Add the following using directives in AppliancePart.cs.
 
     ```csharp
     using Microsoft.Graph.Connectors.Contracts.Grpc;
@@ -207,7 +215,7 @@ ConnectionManagementServiceImpl.cs has three methods to be implemented:
 
     ```
 
-2. Add the following method GetSchema in AppliancePart.cs class
+2. Add the following **GetSchema** method in the AppliancePart.cs class.
 
      ```csharp
       public static DataSourceSchema GetSchema()
@@ -273,13 +281,13 @@ ConnectionManagementServiceImpl.cs has three methods to be implemented:
   
      ```
 
-3. Add the following using directive in ConnectionManagementServiceImpl.cs
+3. Add the following using directive in ConnectionManagementServiceImpl.cs.
 
     ```csharp
     using CustomConnector.Models;
     ```
 
-4. Update the GetDataSourceSchema method in ConnectionManagementServiceImpl.cs with the following code
+4. Update the **GetDataSourceSchema** method in ConnectionManagementServiceImpl.cs with the following code.
 
     ```csharp
     public override Task<GetDataSourceSchemaResponse> GetDataSourceSchema(GetDataSourceSchemaRequest request, ServerCallContext context)
@@ -306,15 +314,15 @@ ConnectionManagementServiceImpl.cs has three methods to be implemented:
 
 This class has the methods that will be called by the platform during the crawls.
 
-**GetCrawlStream**: This method will be called during the full or periodic full crawls.
+The **GetCrawlStream** method will be called during the full or periodic full crawls.
 
-1. Add the following using directive in AppliancePart.cs
+1. Add the following using directive in AppliancePart.cs.
 
     ```csharp
     using System.Globalization;
     ```
 
-2. Add the following methods in AppliancePart.cs for converting the AppliancePart record to CrawlItem
+2. Add the following methods in AppliancePart.cs to convert the **AppliancePart** record to **CrawlItem**.
 
     ```csharp
     public CrawlItem ToCrawlItem()
@@ -414,13 +422,13 @@ This class has the methods that will be called by the platform during the crawls
 
     ```
 
-3. Add the following using directive in CsvDataLoader.cs
+3. Add the following using directive in CsvDataLoader.cs.
 
     ```csharp
     using Microsoft.Graph.Connectors.Contracts.Grpc;
     ```
 
-4. Add the following method in CsvDataLoader.cs
+4. Add the following method in CsvDataLoader.cs.
 
     ```csharp
     public static IEnumerable<CrawlItem> GetCrawlItemsFromCsv(string filePath)
@@ -430,7 +438,7 @@ This class has the methods that will be called by the platform during the crawls
             {
                 csv.Context.RegisterClassMap<AppliancePartMap>();
 
-                // The GetRecords<T> method will return an IEnumerable<T> that will yield records. What this means is that only a single record is returned at a time as you iterate the records.
+                // The GetRecords<T> method will return an IEnumerable<T> that will yield records. This means that only one record is returned at a time as you iterate the records.
                 foreach (var record in csv.GetRecords<AppliancePart>())
                 {
                     yield return record.ToCrawlItem();
@@ -440,13 +448,13 @@ This class has the methods that will be called by the platform during the crawls
 
     ```
 
-5. Add the following using directive in ConnectorCrawlerServiceImpl.cs
+5. Add the following using directive in ConnectorCrawlerServiceImpl.cs.
 
     ```csharp
     using CustomConnector.Data;
     ```
 
-6. Add the following method in ConnectorCrawlerServiceImpl.cs
+6. Add the following method in ConnectorCrawlerServiceImpl.cs.
 
     ```csharp
     private CrawlStreamBit GetCrawlStreamBit(CrawlItem crawlItem)
@@ -467,7 +475,7 @@ This class has the methods that will be called by the platform during the crawls
 
     ```
 
-7. Update the GetCrawlStream method to the following
+7. Update the **GetCrawlStream** method to the following.
 
     ```csharp
     public override async Task GetCrawlStream(GetCrawlStreamRequest request, IServerStreamWriter<CrawlStreamBit> responseStream, ServerCallContext context)
@@ -509,4 +517,4 @@ Now the connector is created and you can build and run the project.
 
 ## Next steps
 
-* [Test your connector](/graph/custom-connector-sdk-sample-test)
+* [Test your connector](/graph/custom-connector-sdk-sample-test).
