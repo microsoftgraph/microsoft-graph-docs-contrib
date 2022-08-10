@@ -16,6 +16,10 @@ Namespace: microsoft.graph.externalConnectors
 Collects all configurable settings related to compliance over connector content.
 
 ## Properties
+
+> [!IMPORTANT]
+> The eDiscovery result template is only supported for Adaptive Card version 1.2 or below. Please refer to the Compliance settings section of [Create, update, and delete connections](/graph/connecting-external-content-manage-connections#compliance-settings) for more details.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |eDiscoveryResultTemplates|[microsoft.graph.externalConnectors.displayTemplate](../resources/externalconnectors-displaytemplate.md) collection|Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 eDiscovery result templates per connection.|
