@@ -169,7 +169,21 @@ Content-type: application/json
 
 ### Example 3: Search Teams Message with [KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-The following example show you search a message which contains 'contoso' that bob sent to alice after 2022-07-14
+#### Supported Scope Terms
+You can use below scope terms in your KQL query.
+
+| Scope Terms                           | Description   | Example   |
+|:-----------------------------------|:--------------|:--------------------|
+| from | Search only for messages sent by scoped person | from:bob |
+| hasAttachment      | Search only for messages which contains attachment or not | hasAttachment:true |
+| IsRead       | Search only for messages which were read or not | IsRead:true | 
+| IsMentioned        | Search only for messages which mentioned you or not | IsMentioned:true | 
+| mentions      | Search only for messages which mentioned somebody | mentions:497b7a2a9e1a48d780e82965d2fc3a81 (This is user id without '-')| 
+| sent | Search only for messages sent to scoped date range | sent > 2022-07-14 | 
+| to | Search only for messages sent to scoped person, partial supported for the 1 on 1 message | to:bob |
+
+
+The following example demonstrates how to search a message that contains 'contoso' and Bob sent to Alice after 2022-07-14.
 
 <!-- markdownlint-disable MD024 -->
 #### Request
@@ -241,22 +255,6 @@ Content-type: application/json
     ]
 }
 ```
-
-
-#### Supported Scope Terms
-You can use below scope terms in your KQL query.
-
-| Scope Terms                           | Description   | Example   |
-|:-----------------------------------|:--------------|:--------------------|
-| from | Search only for messages sent by scoped person | from:bob |
-| hasAttachment      | Search only for messages which contains attachment or not | hasAttachment:true |
-| IsRead       | Search only for messages which were read or not | IsRead:true | 
-| IsMentioned        | Search only for messages which mentioned you or not | IsMentioned:true | 
-| mentions      | Search only for messages which mentioned somebody | mentions:497b7a2a9e1a48d780e82965d2fc3a81 (This is user id without '-')| 
-| sent | Search only for messages sent to scoped date range | sent > 2022-07-14 | 
-| to | Search only for messages sent to scoped person, partial supported for the 1 on 1 message | to:bob |
-
-
 
 ## Known limitations
 
