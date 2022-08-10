@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of the Cloud PC connectivity status: if the Cloud PC is connectable, and the failed health check items if it is not.
+Represents the details of the Cloud PC connectivity status: if the Cloud PC is available, and the failed health check items if it is not.
 
 ## Properties
 |Property|Type|Description|
