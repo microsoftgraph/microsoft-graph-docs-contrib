@@ -1,12 +1,12 @@
 {
     "redirections": [
         {
-            "source_path_from_root": "/api-reference/v1.0/resources/entitlementmanagement-post-accesspackageassignmentrequests.md",
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageassignmentrequests.md",
             "redirect_url": "/graph/api/entitlementmanagement-post-assignmentrequests?view=graph-rest-1.0",
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "/api-reference/beta/resources/entitlementmanagement-post-assignmentrequests.md",
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-post-assignmentrequests.md",
             "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageassignmentrequests?view=graph-rest-beta",
             "redirect_document_id": false
         }
