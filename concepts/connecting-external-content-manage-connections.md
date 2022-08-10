@@ -103,7 +103,11 @@ Similar to enterprise search settings, you need to define how advanced eDiscover
 
 ![eDiscovery search review result example for AzureDevOps item.](./images/connectors-images/connecting-external-content-connection-settings-eDiscovery-result-example.png)
 
-The Adaptive Card format is used for rendering results in eDiscovery. Unlike for the search experience, the eDiscovery experience only supports Adaptive Card elements up to version 1.2.
+> [!IMPORTANT]
+> The Adaptive Card format is used for rendering results in eDiscovery. Unlike for the search experience, the eDiscovery experience only supports Adaptive Card elements up to version 1.2.
+
+Please ensure you select the 1.2 as the target version when configuring the eDiscovery result template in the [Adaptive Card Designer](https://adaptivecards.io/designer/).
+![AdaptiveCard Designer target version selector.](./images/connectors-images/connecting-external-content-connection-settings-adaptiveCard-target-version.png)
 
 ## Update a connection
 
