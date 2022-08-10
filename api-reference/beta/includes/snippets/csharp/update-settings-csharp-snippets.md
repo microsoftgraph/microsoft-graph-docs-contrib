@@ -6,31 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var caseSettings = new Microsoft.Graph.Ediscovery.CaseSettings
+var printSettings = new PrintSettings
 {
-	RedundancyDetection = new Microsoft.Graph.Ediscovery.RedundancyDetectionSettings
-	{
-		IsEnabled = false,
-		SimilarityThreshold = 70,
-		MinWords = 12,
-		MaxWords = 400000
-	},
-	TopicModeling = new Microsoft.Graph.Ediscovery.TopicModelingSettings
-	{
-		IsEnabled = false,
-		IgnoreNumbers = false,
-		TopicCount = 50,
-		DynamicallyAdjustTopicCount = false
-	},
-	Ocr = new Microsoft.Graph.Ediscovery.OcrSettings
-	{
-		IsEnabled = true,
-		MaxImageSize = 12000
-	}
+	DocumentConversionEnabled = true
 };
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Settings
+var print = new Print();
+print.Settings = printSettings;
+
+await graphClient.Print
 	.Request()
-	.UpdateAsync(caseSettings);
+	.UpdateAsync(print);
 
 ```

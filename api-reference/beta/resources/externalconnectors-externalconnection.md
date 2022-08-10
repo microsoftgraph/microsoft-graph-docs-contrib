@@ -33,6 +33,7 @@ A logical container to add content from an external source into Microsoft Graph.
 
 | Property           | Type                              | Description |
 |:--------------------------|:----------------------------------|:------------|
+| activitySettings|[microsoft.graph.externalConnectors.activitySettings](../resources/externalconnectors-activitysettings.md)| Collects configurable settings related to activities involving connector content.|
 | complianceSettings        |[microsoft.graph.externalConnectors.complianceSettings](../resources/externalconnectors-compliancesettings.md)| The settings required for the connection to participate in eDiscovery, such as the display templates for eDiscovery results.|
 | configuration             | [microsoft.graph.externalConnectors.configuration](externalconnectors-configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. Optional. |
 | connectorId               | String            | The Teams App ID. Optional.|
@@ -67,13 +68,24 @@ The following is a JSON representation of the resource.
   "keyProperty": "id"
 }-->
 
-```json
+``` json
 {
-  "description": "String",
+  "@odata.type": "#microsoft.graph.externalConnectors.externalConnection",
   "id": "String (identifier)",
   "ingestedItemsCount": "Int64",
   "name": "String",
-  "state": "String"
+  "description": "String",
+  "configuration": {
+    "@odata.type": "microsoft.graph.externalConnectors.configuration"
+  },
+  "state": "String",
+  "connectorId": "String",
+  "searchSettings": {
+    "@odata.type": "microsoft.graph.externalConnectors.searchSettings"
+  },
+  "activitySettings": {
+    "@odata.type": "microsoft.graph.externalConnectors.activitySettings"
+  }
 }
 ```
 

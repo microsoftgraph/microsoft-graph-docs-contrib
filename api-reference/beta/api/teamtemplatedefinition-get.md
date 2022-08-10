@@ -52,7 +52,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_teamtemplatedefinition"
+  "name": "get_teamtemplatedefinition",
+  "sampleKeys": ["com.microsoft.teams.template.ManageAProject", "Y29tLm1pY3Jvc29mdC50ZWFtcy50ZW1wbGF0ZS5NYW5hZ2VBUHJvamVjdCMjUHVibGljIyNlbi1VUw=="]
 }
 -->
 ``` http

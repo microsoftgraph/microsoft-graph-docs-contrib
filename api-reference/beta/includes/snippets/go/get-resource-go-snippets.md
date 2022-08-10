@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-onenoteResourceId := "onenoteResource-id"
-graphClient.Me().Onenote().ResourcesById(&onenoteResourceId).Content().Get()
+
+graphClient.Me().Onenote().ResourcesById("onenoteResource-id").Content().Get()
 
 
 ```

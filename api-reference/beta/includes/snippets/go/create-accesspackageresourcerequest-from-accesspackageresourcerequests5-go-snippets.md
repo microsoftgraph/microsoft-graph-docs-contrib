@@ -7,15 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAccessPackageResourceRequest()
+requestBody := graphmodels.NewAccessPackageResourceRequest()
 catalogId := "beedadfe-01d5-4025-910b-84abb9369997"
-requestBody.SetCatalogId(&catalogId)
+requestBody.SetCatalogId(&catalogId) 
 requestType := "AdminRemove"
-requestBody.SetRequestType(&requestType)
-accessPackageResource := msgraphsdk.NewAccessPackageResource()
-requestBody.SetAccessPackageResource(accessPackageResource)
+requestBody.SetRequestType(&requestType) 
+accessPackageResource := graphmodels.NewaccessPackageResource()
 id := "354078e5-dbce-4894-8af4-0ab274d41662"
-accessPackageResource.SetId(&id)
+accessPackageResource.SetId(&id) 
+requestBody.SetAccessPackageResource(accessPackageResource)
+
 result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
 
 

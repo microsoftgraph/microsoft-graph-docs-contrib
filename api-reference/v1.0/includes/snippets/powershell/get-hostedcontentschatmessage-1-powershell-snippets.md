@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
+Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId -OutFile $outFileId
 
 ```

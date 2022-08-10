@@ -7,13 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPlannerBucket()
+requestBody := graphmodels.NewPlannerBucket()
 name := "Advertising"
-requestBody.SetName(&name)
+requestBody.SetName(&name) 
 planId := "xqQg5FS2LkCp935s-FIFm2QAFkHM"
-requestBody.SetPlanId(&planId)
+requestBody.SetPlanId(&planId) 
 orderHint := " !"
-requestBody.SetOrderHint(&orderHint)
+requestBody.SetOrderHint(&orderHint) 
+
 result, err := graphClient.Planner().Buckets().Post(requestBody)
 
 
