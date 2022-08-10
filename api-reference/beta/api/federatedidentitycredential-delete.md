@@ -31,9 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 
-DELETE /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Request headers

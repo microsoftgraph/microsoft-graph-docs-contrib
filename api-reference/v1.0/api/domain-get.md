@@ -57,11 +57,11 @@ If successful, this method returns a `200 OK` response code and [domain](../reso
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["contoso.com"],
+  "sampleKeys": ["M365x214355.onmicrosoft.com"],
   "name": "get_domain"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/domains/contoso.com
+GET https://graph.microsoft.com/v1.0/domains/M365x214355.onmicrosoft.com
 ```
 
 # [C#](#tab/csharp)
@@ -78,10 +78,6 @@ GET https://graph.microsoft.com/v1.0/domains/contoso.com
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-domain-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-domain-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -102,13 +98,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "authenticationType": "authenticationType-value",
-  "availabilityStatus": "availabilityStatus-value",
-  "id": "contoso.com",
-  "isAdminManaged": true,
-  "isDefault": true,
-  "isInitial": true,
-  "isRoot": true
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#domains/$entity",
+    "authenticationType": "Managed",
+    "availabilityStatus": null,
+    "id": "M365x214355.onmicrosoft.com",
+    "isAdminManaged": true,
+    "isDefault": true,
+    "isInitial": true,
+    "isRoot": true,
+    "isVerified": true,
+    "supportedServices": [
+        "Email",
+        "OfficeCommunicationsOnline"
+    ],
+    "passwordValidityPeriodInDays": null,
+    "passwordNotificationWindowInDays": null,
+    "state": null
 }
 ```
 

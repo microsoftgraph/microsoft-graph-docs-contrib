@@ -1,7 +1,7 @@
 ---
 title: "List stages"
 description: "Retrieve the stages in a multi-stage access review instance."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

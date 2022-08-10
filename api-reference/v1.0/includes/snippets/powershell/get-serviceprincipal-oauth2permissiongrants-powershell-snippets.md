@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgServicePrincipalOauth2PermissionGrant -ServicePrincipalId $servicePrincipalId
+Get-MgServicePrincipalOauth2PermissionGrant -ServicePrincipalId $servicePrincipalId -OutFile $outFileId
 
 ```

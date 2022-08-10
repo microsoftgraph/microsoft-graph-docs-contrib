@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported.
 
 > [!NOTE]
->Virtual appointment will transition from online meeting permissions to virtual appointment permissions during the preview period. As we get closer to the transition, we'll provide additional details on the updated permission requirements and timeline.
+> Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will provide more granular control over virtual appointment permissions. When the transition date approaches, we'll provide more details about the updated permission requirements and timeline.
 
 ## HTTP request
 
@@ -34,7 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /onlineMeeting/{onlineMeetingId}/virtualAppointment
+GET /me/onlineMeetings/{onlineMeetingId}/virtualAppointment
+GET /users/{userId}/onlineMeetings/{onlineMeetingId}/virtualAppointment
 ```
 
 ## Optional query parameters
@@ -60,11 +61,12 @@ If successful, this method returns a `200 OK` response code and a [virtualAppoin
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_virtualappointment"
+  "name": "get_virtualappointment",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
+GET https://graph.microsoft.com/beta/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
 ```
 
 
@@ -80,6 +82,7 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+ETag: W/"ZfYdV7Meckeip07P//nwjAAADyI7NQ=="
 
 {
     "value": {

@@ -68,7 +68,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_attendancerecord"
+  "name": "list_attendancerecord",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ","c9b6db1c-d5eb-427d-a5c0-20088d9b22d7"]
 }
 -->
 

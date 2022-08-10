@@ -54,7 +54,7 @@ Here is an example of the request.
   "name": "get_ownedobjects_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/ownedObjects
+GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-56124728e051/ownedObjects
 ```
 
 # [C#](#tab/csharp)

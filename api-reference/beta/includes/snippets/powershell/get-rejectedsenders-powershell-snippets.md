@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupRejectedSender -GroupId $groupId
+Get-MgGroupRejectedSender -GroupId $groupId -OutFile $outFileId
 
 ```

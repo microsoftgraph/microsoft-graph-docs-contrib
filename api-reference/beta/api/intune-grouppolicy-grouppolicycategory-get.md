@@ -66,13 +66,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 262
+Content-Length: 296
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.groupPolicyCategory",
     "displayName": "Display Name value",
     "isRoot": true,
+    "ingestionSource": "custom",
     "id": "d0641e36-1e36-d064-361e-64d0361e64d0",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
   }

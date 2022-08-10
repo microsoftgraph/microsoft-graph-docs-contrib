@@ -15,7 +15,7 @@ $requestBody->setSchedulingGroupId('TAG_228940ed-ff84-4e25-b129-1b395cf78be0');
 $sharedOpenShift = new SharedOpenShift();
 $sharedOpenShift->setNotes('Inventory Management');
 
-$sharedOpenShift->setOpenSlotCount(openSlotCount);
+$sharedOpenShift->setOpenSlotCount(5);
 
 $sharedOpenShift->setDisplayName('Field shift');
 

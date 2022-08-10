@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgAccessReviewDecision -AccessReviewId $accessReviewId
+Get-MgAccessReviewDecision -AccessReviewId $accessReviewId -OutFile $outFileId
 
 ```

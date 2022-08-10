@@ -50,7 +50,8 @@ The following example shows how to call this API to acquire a pre-authenticated 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_document_value"
+  "name": "get_document_value",
+  "sampleKeys": ["46140", "fcb0bc53-a446-41d0-bfc3-5c56cdbb0f2a", "bd260b1a-044e-4ca6-afa9-17d9a587d254"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/fcb0bc53-a446-41d0-bfc3-5c56cdbb0f2a/jobs/46140/documents/bd260b1a-044e-4ca6-afa9-17d9a587d254/$value
