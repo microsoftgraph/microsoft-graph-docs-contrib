@@ -845,7 +845,7 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md
+          href: api/directory-deleteditems-getuserownedobjects.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Permanently delete group
@@ -956,7 +956,7 @@ items:
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
         - name: List deleted applications owned by user
-          href: api/directory-deleteditems-user-owned.md
+          href: api/directory-deleteditems-getuserownedobjects.md
         - name: Get deleted application
           href: api/directory-deleteditems-get.md
         - name: Permanently delete application
@@ -11701,7 +11701,7 @@ items:
           - name: Restore deleted item
             href: api/directory-deleteditems-restore.md
           - name: List deleted items owned by user
-            href: api/directory-deleteditems-user-owned.md
+            href: api/directory-deleteditems-getuserownedobjects.md
         - name: Device
           href: resources/device.md
           items:
@@ -15709,7 +15709,7 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md
+          href: api/directory-deleteditems-getuserownedobjects.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Permanently delete group
