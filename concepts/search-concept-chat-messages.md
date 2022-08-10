@@ -17,9 +17,14 @@ Teams Message search also looks for attachments. The [supported file types](/Sha
 ## Examples
 ### Example 1: Search Teams chat message
 
+#### Request
 The following example queries Teams chat message in the signed-in user's Teams chat storage that contain the string "test" in any part of the chat message (the sender name,  message body, or any attachments). The query returns the first 25 results. The search results are ordered by **DateTime** descending.
 
-#### Request
+<!-- {
+  "blockType": "request",
+  "name": "basicSearchTeamsMessage"
+}
+-->
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -42,6 +47,11 @@ Content-Type: application/json
 ```
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 
 The following is an example of the response, which contains one message that matches the search criterion.
 
@@ -93,10 +103,15 @@ Content-type: application/json
 
 ### Example 2: Search top results messages
 
-The following example uses the search query shown in Example 1, and sorts the results by relevance. 
-
 <!-- markdownlint-disable MD024 -->
 #### Request
+The following example uses the search query shown in Example 1, and sorts the results by relevance. 
+
+<!-- {
+  "blockType": "request",
+  "name": "searchTopTeamsMessage"
+}
+-->
 
 ```HTTP
 POST https://graph.microsoft.com/v1.0/search/query
@@ -120,6 +135,11 @@ Content-Type: application/json
 ```
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -183,10 +203,17 @@ You can use below scope terms in your KQL query.
 | to | Search only for messages sent to scoped person, partial supported for the 1 on 1 message | to:bob |
 
 
-The following example demonstrates how to search a message that contains 'contoso' and Bob sent to Alice after 2022-07-14.
+
 
 <!-- markdownlint-disable MD024 -->
 #### Request
+The following example demonstrates how to search a message that contains 'contoso' and Bob sent to Alice after 2022-07-14.
+
+<!-- {
+  "blockType": "request",
+  "name": "searchTeamsMessageWithKQL"
+}
+-->
 
 ```HTTP
 POST https://graph.microsoft.com/v1.0/search/query
@@ -209,6 +236,11 @@ Content-Type: application/json
 }
 ```
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 
 ```HTTP
 HTTP/1.1 200 OK
