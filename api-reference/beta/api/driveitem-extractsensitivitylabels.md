@@ -74,7 +74,7 @@ The following is an example of a request.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "extract-sensitivitylabels", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "extract-sensitivitylabels", "tags": "service.graph", "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U"] } -->
 ``` http
 POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/extractSensitivityLabels
 ```
