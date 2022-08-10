@@ -291,8 +291,8 @@ Content-type: application/json
 ## Known limitations
 
 - You can access only the signed-in user’s Teams message or the message the user is included in.
-- Search Teams API does not return full properties which defined in chatMessage, you can use [Teams Graph API](/graph/api/chatmessage-get.md) to retrieve more details of any single message
-- For Teams messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer) type contains the number of results on the page, not the total number of matching results.
+- Search Teams API does not return all properties defined in [chatMessage](/graph/api/resources/chatmessage.md), you can use [Teams Graph API](/graph/api/chatmessage-get.md) to retrieve more details of any single message.
+- For Teams messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer.md) type contains the number of results on the page, not the total number of matching results.
 - Sorting results is not supported for messages.
 - It doesn't allow to interleave with other entity types in current stage.
 
