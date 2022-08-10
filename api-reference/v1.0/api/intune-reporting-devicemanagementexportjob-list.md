@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 593
+Content-Length: 594
 
 {
   "value": [
@@ -70,7 +70,7 @@ Content-Length: 593
       "select": [
         "Select value"
       ],
-      "format": "pdf",
+      "format": "json",
       "snapshotId": "Snapshot Id value",
       "localizationType": "replaceLocalizableValues",
       "status": "notStarted",
@@ -81,6 +81,8 @@ Content-Length: 593
   ]
 }
 ```
+
+
 
 
 

@@ -7,23 +7,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewItemAddress()
+requestBody := graphmodels.NewItemAddress()
 displayName := "Home"
-requestBody.SetDisplayName(&displayName)
-detail := msgraphsdk.NewPhysicalAddress()
-requestBody.SetDetail(detail)
-type := "home"
-detail.SetType(&type)
-detail.SetPostOfficeBox(nil)
+requestBody.SetDisplayName(&displayName) 
+detail := graphmodels.NewPhysicalAddress()
+type := graphmodels.HOME_PHYSICALADDRESSTYPE 
+detail.SetType(&type) 
+postOfficeBox := null
+detail.SetPostOfficeBox(&postOfficeBox) 
 street := "221B Baker Street"
-detail.SetStreet(&street)
+detail.SetStreet(&street) 
 city := "London"
-detail.SetCity(&city)
-detail.SetState(nil)
+detail.SetCity(&city) 
+state := null
+detail.SetState(&state) 
 countryOrRegion := "United Kingdom"
-detail.SetCountryOrRegion(&countryOrRegion)
+detail.SetCountryOrRegion(&countryOrRegion) 
 postalCode := "E14 3TD"
-detail.SetPostalCode(&postalCode)
+detail.SetPostalCode(&postalCode) 
+requestBody.SetDetail(detail)
+
 result, err := graphClient.Me().Profile().Addresses().Post(requestBody)
 
 

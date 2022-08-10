@@ -52,6 +52,12 @@ If successful, this method returns a `200 OK` response code and an [externalItem
 
 ### Request
 The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_externalitem",
+  "sampleKeys": ["contosohr", "TSP228082938"]
+}
+-->
 
 ```http
 GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
@@ -63,7 +69,8 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.externalConnectors.externalItem"
 } -->
 
 ```http

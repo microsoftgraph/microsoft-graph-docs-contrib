@@ -11,6 +11,30 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### bookingsAvailabilityStatus values
+|Member|
+|:---|
+|available|
+|busy|
+|slotsAvailable|
+|outOfOffice|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetConfigurationAccessType values
+
+|Member|
+|:---|
+|allowed|
+|blocked|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
 ### federatedIdpMfaBehavior values
 |Member|
 |:---|
@@ -274,6 +298,13 @@ Namespace: microsoft.graph
 |proposed|
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
+### accessReviewStageFilterByCurrentUserOptions values 
 
 |Member|
 |:---|
@@ -1587,6 +1618,7 @@ Possible values for user account types (group membership), per Windows definitio
 | standard           | 0     |Channel inherits the list of members of the parent team.|
 | private            | 1     |Channel can have members that are a subset of all the members on the parent team.|
 | unknownFutureValue | 2     |      |
+| shared             | 3     |Members can be directly added to the channel without adding them to the team.|
 ### wellknownListName values
 | Member
 |:----------------------

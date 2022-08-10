@@ -7,17 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewConversationMember()
-requestBody.SetRoles( []string {
+requestBody := graphmodels.NewConversationMember()
+"@odata.type" := "#microsoft.graph.aadUserConversationMember"
+requestBody.Set"@odata.type"(&"@odata.type") 
+roles := []string {
+
 }
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.aadUserConversationMember",
-	"user@odata.bind": "https://graph.microsoft.com/beta/users/bc3598dd-cce4-4742-ae15-173429951408",
-	"tenantId": "a18103d1-a6ef-4f66-ac64-e4ef42ea8681",
+requestBody.SetRoles(roles)
+additionalData := map[string]interface{}{
+	"user@odata.bind" : "https://graph.microsoft.com/beta/users/bc3598dd-cce4-4742-ae15-173429951408", 
+	"tenantId" : "a18103d1-a6ef-4f66-ac64-e4ef42ea8681", 
 }
-teamId := "team-id"
-channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Members().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Members().Post(requestBody)
 
 
 ```

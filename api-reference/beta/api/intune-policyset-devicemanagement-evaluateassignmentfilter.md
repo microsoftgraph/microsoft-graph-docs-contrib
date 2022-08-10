@@ -63,7 +63,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/evaluateAssignmentFilter
 
 Content-type: application/json
-Content-length: 235
+Content-length: 266
 
 {
   "data": {
@@ -74,7 +74,8 @@ Content-length: 235
     "skip": 4,
     "orderBy": [
       "Order By value"
-    ]
+    ],
+    "search": "Search value"
   }
 }
 ```
