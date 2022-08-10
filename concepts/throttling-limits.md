@@ -182,7 +182,6 @@ Other factors that affect a request cost:
   - ResourceUnitLimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
 
 
-
 ## Identity and access data policy operation service limits
 
 | Request type | Limit per tenant |
