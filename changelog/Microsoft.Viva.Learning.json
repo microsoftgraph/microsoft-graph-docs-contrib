@@ -33,6 +33,40 @@
       "CreatedDateTime": "2022-07-19T18:53:10.1690479Z",
       "WorkloadArea": "Teamwork",
       "SubArea": "Employee learning"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1e87915b-ba79-4d40-9dec-a7777ad64f99",
+          "ApiChange": "PropertyRef",
+          "ChangedApiName": "externalId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **externalId** resource type",
+          "Target": "learningContent"
+        },
+        {
+          "Id": "1e87915b-ba79-4d40-9dec-a7777ad64f99",
+          "ApiChange": "PropertyRef",
+          "ChangedApiName": "id",
+          "ChangeType": "Addition",
+          "Description": "Added the [id](https://docs.microsoft.com/en-us/graph/api/resources/learningContent?view=graph-rest-beta) resource",
+          "Target": "learningContent"
+        },
+        {
+          "Id": "1e87915b-ba79-4d40-9dec-a7777ad64f99",
+          "ApiChange": "Property",
+          "ChangedApiName": "id",
+          "ChangeType": "Addition",
+          "Description": "Added the `id` property to the [learningContent](https://docs.microsoft.com/en-us/graph/api/resources/learningContent?view=graph-rest-beta) resource.",
+          "Target": "learningContent"
+        }
+      ],
+      "Id": "1e87915b-ba79-4d40-9dec-a7777ad64f99",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-06T12:05:38.2036346Z",
+      "WorkloadArea": "Microsoft.Viva.Learning",
+      "SubArea": ""
     }
   ]
 }
