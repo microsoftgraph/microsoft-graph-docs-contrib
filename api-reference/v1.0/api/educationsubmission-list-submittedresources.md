@@ -1,7 +1,7 @@
 ---
 title: "List submittedResources"
 description: "List the resources that have officially been submitted for grading."
-author: "sharad-sharma-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ```
 ## Optional query parameters
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
