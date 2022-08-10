@@ -423,13 +423,13 @@ items:
           href: api/user-reprocesslicenseassignment.md
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
-        - name: List deleted users
-          href: api/directory-deleteditems-list.md
-        - name: Get deleted user
+        - name: List deleted items
+          href: api/directory-deleteditems-list.md 
+        - name: Get deleted item
           href: api/directory-deleteditems-get.md
-        - name: Permanently delete user
-          href: api/directory-deleteditems-delete.md
-        - name: Restore deleted user
+        - name: Permanently delete item
+          href: api/directory-deleteditems-delete.md       
+        - name: Restore deleted item
           href: api/directory-deleteditems-restore.md
       - name: Drive
         href: resources/drive.md
@@ -6835,6 +6835,20 @@ items:
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+      - name: Document set version
+        items:
+        - name: Document set version
+          href: resources/documentsetversion.md
+        - name: List
+          href: api/listitem-list-documentsetversions.md
+        - name: Create
+          href: api/listitem-post-documentsetversions.md
+        - name: Get
+          href: api/documentsetversion-get.md
+        - name: Delete
+          href: api/documentsetversion-delete.md
+        - name: Restore
+          href: api/documentsetversion-restore.md
       - name: Rich long-running operation
         items:
         - name: Rich long-running operation
