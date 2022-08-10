@@ -73,7 +73,8 @@ The following example adds a predefined value to a custom security attribute def
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_allowedvalue"
+  "name": "create_allowedvalue",
+  "sampleKeys": ["Engineering_Project"]
 }
 -->
 ``` http

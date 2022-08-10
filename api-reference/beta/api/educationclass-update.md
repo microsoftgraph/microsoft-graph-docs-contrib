@@ -57,7 +57,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_educationclass"
+  "name": "update_educationclass",
+  "sampleKeys": ["11014"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/education/classes/11014

@@ -64,7 +64,7 @@ The following is an example of the request.
   "name": "team-put-schedule"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1/teams/{teamId}/schedule
+PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule
 Content-type: application/json
 
 {

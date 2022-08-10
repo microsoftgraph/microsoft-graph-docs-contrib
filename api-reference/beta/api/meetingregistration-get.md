@@ -60,7 +60,8 @@ If successful, this method returns a `200 OK` response code and [meetingRegistra
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-registration"
+  "name": "get-registration",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```msgraph-interactive

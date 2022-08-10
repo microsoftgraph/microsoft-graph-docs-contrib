@@ -33,7 +33,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "directory",
           "ChangeType": "Addition",
-          "Description": "Added support for [restoring deleted service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-beta) and [permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-beta).",
+          "Description": "Added support for [restoring deleted service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-beta) and [permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-beta).",
           "Target": "directory"
         }
       ],
@@ -51,7 +51,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "directory",
           "ChangeType": "Addition",
-          "Description": "Added support for [restoring deleted service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-1.0) and [permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-1.0).",
+          "Description": "Added support for [restoring deleted service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-1.0) and [permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-1.0).",
           "Target": "directory"
         }
       ],

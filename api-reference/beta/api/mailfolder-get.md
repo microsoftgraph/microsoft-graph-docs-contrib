@@ -144,7 +144,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["AAMkAGVmMDEzM"],
+  "sampleKeys": ["AAMkAGVmMDEzN"],
   "name": "get_mailSearchfolder"
 }-->
 
