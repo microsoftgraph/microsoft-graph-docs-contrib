@@ -7,17 +7,17 @@ ms.prod: "insights"
 doc_type: resourcePageType
 ---
 
-# insightsSettings resource type
+# contactMergeSuggestions resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents _settings_ to calculate and manage the display or programmatic return of a specific type of insights in an organization. The insights can be item insights, meeting hours insights, or people insights. 
 
-Item insights and [meeting hours insights](https://support.microsoft.com/office/suggested-meeting-hours-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) represent relationships between users and items such as documents, sites, and other content types in Microsoft 365. Programmatically, they are represented by the [itemInsights](iteminsights.md) resource. You can get documents that are [shared](../api/insights-list-shared.md) with a user, [trending](../api/insights-list-trending.md) around a user, or [used](../api/insights-list-used.md) by a user. You can use **insightsSettings** to [customize the privacy settings for calculating, displaying or returning item insights in an organization](/graph/insights-customize-item-insights-privacy).
+Represents _settings_ to manage the audience in an organization for whom the contact de-duplication feature is enabled in M365. The feature availability can be controlled at the organization level (i.e., Tenant) or at a security group level (i.e., a subset of the organization). 
 
-People insights represent connections of people who are relevant to or work with one another based on their public relationships. Programmatically, individual people are represented by the [person](person.md) resource. You can [use the people API to get people insights](/graph/people-example). You can use **insightsSettings** to [customize the privacy settings for displaying or returning people insights](/graph/insights-customize-people-insights-privacy).
 
-In contrast, for item insights and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1), you can also manage their calculation and visibility at a _user_ level by using the [userInsightsSettings](userinsightssettings.md) resource.
+When a contact list has multiple entries for the same individual, information is scattered across contacts or replicated with no added benefit. Contact merge suggestions allow easy merger of information into a single contact in which all information from duplicates is saved. 
+
+Additionally, users can disable/enable this feature using [contactMergeSuggestions resource type](../resources/contactmergesuggestions.md) 
 
 ## Methods
 
@@ -31,8 +31,8 @@ In contrast, for item insights and [meeting hours insights](https://support.micr
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default is `true`. Optional.|
-|disabledForGroup|String| The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
+|isEnabledInOrganization|Boolean| `true` if contact merge suggestions are enabled for the organization; `false` if it is disabled for all users without exceptions. Default is `true`. Optional.|
+|disabledForGroup|String| The ID of an Azure Active Directory group in which the contact merge suggestions are disabled for its members. Default is `empty`. Optional.|
 
 ## JSON representation
 
