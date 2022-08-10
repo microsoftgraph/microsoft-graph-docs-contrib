@@ -1,10 +1,10 @@
 ---
-author: swapnil1993
-title: documentSet resource type
-description: Contains metadata about document set settings.
+title: "documentSet resource type"
+description: "Contains the metadata about the document set settings."
+author: "swapnil1993"
 ms.localizationpriority: medium
+ms.prod: "sites-and-lists"
 doc_type: resourcePageType
-ms.prod: sites-and-lists
 ---
 
 # documentSet resource type
@@ -12,7 +12,7 @@ ms.prod: sites-and-lists
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Contains metadata about document set settings.
+Represents a document set in SharePoint. A document set is a group of related documents that you can manage as a single entity.
 
 ## Properties
 

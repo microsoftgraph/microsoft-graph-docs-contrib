@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 cloudPCId := "cloudPC-id"
-graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById(&cloudPCId).Rename(cloudPC-id).Post(nil)
+graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById(&cloudPCId).Rename(cloudPC-id).Post()
 
 
 ```

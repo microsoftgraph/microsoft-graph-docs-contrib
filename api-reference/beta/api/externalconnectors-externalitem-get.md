@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
 
 ## HTTP request
 
@@ -65,6 +65,12 @@ If successful, this method returns a `200 OK` response code and an [externalItem
 ### Request
 
 The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_externalitem",
+  "sampleKeys": ["contosohr", "TSP228082938"]
+}
+-->
 
 ```http
 GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938

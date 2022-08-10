@@ -62,8 +62,8 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |accessPackageAssignmentPolicies|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection| Read-only. Nullable. Supports `$expand`.|
 |accessPackageCatalog|[accessPackageCatalog](accesspackagecatalog.md)| Read-only. Nullable.|
 |accessPackageResourceRoleScopes|[accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection| Nullable.|
-| incompatibleAccessPackages | [accessPackage](accesspackagecatalog.md) collection | The  access packages whose assigned users are ineligible to be assigned this access package. |
-| accessPackagesIncompatibleWith | [accessPackage](accesspackagecatalog.md) collection | The access packages that are incompatible with this package. Read-only. |
+| incompatibleAccessPackages | [accessPackage](accesspackage.md) collection | The  access packages whose assigned users are ineligible to be assigned this access package. |
+| accessPackagesIncompatibleWith | [accessPackage](accesspackage.md) collection | The access packages that are incompatible with this package. Read-only. |
 | incompatibleGroups | [group](group.md) collection | The groups whose members are ineligible to be assigned this access package. |
 
 

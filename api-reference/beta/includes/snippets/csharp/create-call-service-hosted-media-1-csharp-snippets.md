@@ -27,6 +27,10 @@ var call = new Call
 	{
 		Modality.Audio
 	},
+	CallOptions = new OutgoingCallOptions
+	{
+		IsContentSharingNotificationEnabled = true
+	},
 	MediaConfig = new ServiceHostedMediaConfig
 	{
 	}

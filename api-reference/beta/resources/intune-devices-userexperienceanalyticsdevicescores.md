@@ -37,7 +37,8 @@ The user experience analytics device scores entity consolidates the various endp
 |startupPerformanceScore|Double|The user experience analytics device startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |appReliabilityScore|Double|The user experience analytics device app reliability score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |workFromAnywhereScore|Double|The user experience analytics device work From anywhere score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|batteryHealthScore|Double|The user experience analytics device battery health score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 ## Relationships
 None
@@ -61,6 +62,7 @@ Here is a JSON representation of the resource.
   "startupPerformanceScore": "4.2",
   "appReliabilityScore": "4.2",
   "workFromAnywhereScore": "4.2",
+  "batteryHealthScore": "4.2",
   "healthStatus": "String"
 }
 ```

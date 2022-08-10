@@ -7,16 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewContinuousAccessEvaluationPolicy()
+requestBody := graphmodels.NewContinuousAccessEvaluationPolicy()
+"@odata.type" := "#microsoft.graph.continuousAccessEvaluationPolicy"
+requestBody.Set"@odata.type"(&"@odata.type") 
 migrate := true
-requestBody.SetMigrate(&migrate)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.continuousAccessEvaluationPolicy",
-}
-options := &msgraphsdk.ContinuousAccessEvaluationPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(options)
+requestBody.SetMigrate(&migrate) 
+
+graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(requestBody)
 
 
 ```
