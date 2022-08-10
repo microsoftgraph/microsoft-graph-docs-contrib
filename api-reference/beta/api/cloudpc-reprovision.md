@@ -19,21 +19,11 @@ Reprovision a specific Cloud PC.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### To reprovision the cloudPC for the administrator
-
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CloudPC.ReadWrite.All|
-
-### To reprovision the cloudPC for the signed-in user
-
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | CloudPC.ReadWrite.All,CloudPC.Read.All      |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -42,10 +32,17 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
+To reprovision the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
+
 ``` http
-POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
 POST /me/cloudPCs/{id}/reprovision
 POST /users/{userId}/cloudPCs/{id}/reprovision
+```
+
+To reprovision the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
+
+``` http
+POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
 ```
 
 ## Request headers

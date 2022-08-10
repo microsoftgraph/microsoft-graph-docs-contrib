@@ -19,21 +19,11 @@ Read the properties and relationships of a specific [cloudPC](../resources/cloud
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### To get the cloudPC for the administrator
-
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
-
-### To get the cloudPC for the signed-in user
-
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | CloudPC.ReadWrite.All,CloudPC.Read.All      |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -42,10 +32,17 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
+To get the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
+
+``` http
+GET /me/cloudPCs{id}
+GET /users/{userId}/cloudPCs/{id}
+```
+
+To get the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
+
 ``` http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
-GET /me/cloudPCs/{id}
-GET /users/{userId}/cloudPCs/{id}
 ```
 
 ## Optional query parameters
