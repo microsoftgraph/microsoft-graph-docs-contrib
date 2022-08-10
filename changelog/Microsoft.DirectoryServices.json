@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "emailMethods",
           "ChangeType": "Addition",
           "Description": "Added the **emailMethods** relationship to the [authentication](https://docs.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
@@ -20,7 +20,7 @@
         },
         {
           "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "phoneMethods",
           "ChangeType": "Addition",
           "Description": "Added the **phoneMethods** relationship to the [authentication](https://docs.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
@@ -36,7 +36,7 @@
         },
         {
           "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "softwareOathMethods",
           "ChangeType": "Addition",
           "Description": "Added the **softwareOathMethods** relationship to the [authentication](https://docs.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
