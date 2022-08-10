@@ -5029,7 +5029,8 @@ items:
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete
               href: api/temporaryaccesspassauthenticationmethod-delete.md
-          - name: Certificate-based auth configuration
+          - name: Certificate-based authentication configuration
+            displayName: CBA
             href: resources/certificatebasedauthconfiguration.md
             items:
             - name: List
