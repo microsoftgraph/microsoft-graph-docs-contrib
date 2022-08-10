@@ -1,9 +1,9 @@
 ---
-title: "contactInsightsSettings resource type"
-description: "Represents privacy settings for insights."
+title: "contactMergeSuggestions resource type"
+description: "Represents contact merge suggestions for an organization."
 ms.localizationpriority: medium
-author: "simonhult"
-ms.prod: "insights"
+author: "rogoy"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -23,8 +23,8 @@ Additionally, users can disable/enable this feature using [contactMergeSuggestio
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List contactInsights](../api/organizationsettings-list-iteminsights.md) | [contactInsightsSettings](contactinsightssettings.md) | Get the _settings_ in an [insightsSettings](insightssettings.md) object for displaying item insights in an organization. |
-| [Update contactSettings](../api/insightssettings-update.md) | [contactInsightsSettings](contactinsightssettings.md) | Update the properties of an **insightsSettings** resource to manage the display or return of the specified type of insights, which can be item insights or people insights. |
+| [Get](../api/organizationsettings-list-contactmergesuggestions.md) | [contactMergeSuggestions](organizationcontactmergesuggestions.md) | Read the properties of a contactMergeSuggestions object. |
+| [Update](../api/organizationsettings-update-contactmergesuggestions.md) | [contactMergeSuggestions](organizationcontactmergesuggestions.md) | Update the properties of a contactMergeSuggestions object. |
 
 
 ## Properties
