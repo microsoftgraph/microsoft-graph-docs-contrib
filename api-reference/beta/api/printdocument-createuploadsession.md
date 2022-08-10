@@ -86,7 +86,8 @@ The following example shows how to create an upload session that you can use in 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "printdocument_createuploadsession"
+  "name": "printdocument_createuploadsession",
+  "sampleKeys": ["46207","1c879027-5120-4aaf-954a-ebfd509a3bcc", "9001bcd9-e36a-4f51-bfc6-140c3ad7f9f7"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/print/shares/1c879027-5120-4aaf-954a-ebfd509a3bcc/jobs/46207/documents/9001bcd9-e36a-4f51-bfc6-140c3ad7f9f7/createUploadSession

@@ -63,7 +63,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list-custom-questions"
+  "name": "list-custom-questions",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```msgraph-interactive

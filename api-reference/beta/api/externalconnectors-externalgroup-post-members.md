@@ -69,7 +69,8 @@ If successful, this method returns a `201 Created` response code and an **extern
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_externalgroupmember_from__1"
+  "name": "create_externalgroupmember_from__1",
+  "sampleKeys": ["31bea3d537902000", "contosohr"]
 }
 -->
 
@@ -139,7 +140,8 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_externalgroupmember_from__2"
+  "name": "create_externalgroupmember_from__2",
+  "sampleKeys": ["31bea3d537902000", "contosohr"]
 }
 -->
 
@@ -208,7 +210,8 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_externalgroupmember_from__3"
+  "name": "create_externalgroupmember_from__3",
+  "sampleKeys": ["31bea3d537902000", "contosohr"]
 }
 -->
 

@@ -55,7 +55,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "documentsetversionthis.restore"
+  "name": "documentsetversionthis.restore",
+  "sampleKeys": ["2", "1", "root", "Documents"]
 }
 -->
 ``` http

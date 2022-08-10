@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Add an [attachment](../resources/attachment.md) when creating a group post.
 
-This operation limits the size of the attachment you can add to under 4 MB.
+This operation limits the size of the attachment you can add to under 3 MB.
 
 An attachment can be one of the following types:
 

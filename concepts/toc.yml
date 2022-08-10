@@ -78,6 +78,8 @@ items:
             href: office365-groups-concept-overview.md
           - name: Configure group options
             href: group-set-options.md
+          - name: Microsoft 365 group settings
+            href: group-directory-settings.md
           - name: Manage group lifecycle
             href: /learn/modules/msgraph-access-group-data
       - name: Applications
@@ -586,12 +588,12 @@ items:
               - name: Use query parameters
                 href: query-parameters.md
                 displayName: OData query parameters, OData
-              - name: Use $search
-                displayName: OData query parameters, OData
-                href: search-query-parameter.md
               - name: Use $filter
                 displayName: OData query parameters, OData
                 href: filter-query-parameter.md
+              - name: Use $search
+                displayName: OData query parameters, OData
+                href: search-query-parameter.md
               - name: Advanced query capabilities
                 displayName: OData query parameters, OData
                 href: aad-advanced-queries.md
