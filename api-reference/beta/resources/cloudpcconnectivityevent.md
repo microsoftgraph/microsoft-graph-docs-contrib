@@ -1,6 +1,6 @@
 ---
 title: "cloudPcConnectivityEvent resource type"
-description: "Represents the details of Cloud PC connectivity event."
+description: "Describes a user connection record: when and how the Cloud PC was connected and whether the connection was successful. "
 author: "yayang3"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of a Cloud PC connectivity event: when and how the Cloud PC is connected, if the connect is succeeded.
+Describes a user connection record: when and how the Cloud PC was connected and whether the connection was successful. 
 
 ## Properties
 |Property|Type|Description|
