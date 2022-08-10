@@ -27,7 +27,7 @@ In this step, you'll create a web app and enable authentication with Microsoft G
         Files.Read,
         Files.Read.All,
         Sites.Read.All,
-        Tasks.Read
+        Tasks.Read,
         Tasks.ReadWrite,
         People.Read">    
     </mgt-msal2-provider>
