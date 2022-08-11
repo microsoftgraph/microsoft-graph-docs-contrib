@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the [
 |reportName|String|Name of the report|
 |filter|String|Filters applied on the report|
 |select|String collection|Columns selected from the report|
-|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the exported report. Possible values are: `csv`, `pdf`.|
+|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the exported report. Possible values are: `csv`, `json`.|
 |snapshotId|String|A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.|
 |localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Configures how the requested export job is localized. Possible values are: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the export job. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
@@ -72,7 +72,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 Content-type: application/json
-Content-length: 455
+Content-length: 456
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExportJob",
@@ -81,7 +81,7 @@ Content-length: 455
   "select": [
     "Select value"
   ],
-  "format": "pdf",
+  "format": "json",
   "snapshotId": "Snapshot Id value",
   "localizationType": "replaceLocalizableValues",
   "status": "notStarted",
@@ -96,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 504
+Content-Length: 505
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExportJob",
@@ -106,7 +106,7 @@ Content-Length: 504
   "select": [
     "Select value"
   ],
-  "format": "pdf",
+  "format": "json",
   "snapshotId": "Snapshot Id value",
   "localizationType": "replaceLocalizableValues",
   "status": "notStarted",
