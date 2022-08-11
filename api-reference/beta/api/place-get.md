@@ -16,10 +16,11 @@ Get the properties and relationships of a [place](../resources/place.md) object 
 
 The **place** object can be one of the following types:
 
-* A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.
-* A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
+* A [room](../resources/room.md), which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
+* A [workspace](../resources/workspace.md), which includes properties such as an email address for the workspace, and accessibility and capacity. 
+* A [room list](../resources/roomlist.md), which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
 
-Both **room** and **roomList** are derived from the [place](../resources/place.md) object. 
+The **room**, **workspace**, and **roomList** resources are derived from the **place** object.
 
 ## Permissions
 
@@ -40,9 +41,9 @@ GET /places/{id}
 ```
 
 ## Optional query parameters
-Use $select to get specific **place** properties.
+Use `$select` to get specific **place** properties.
 
-For more information on OData query options, see [OData query parameters](/graph/query-parameters).
+For more information about OData query options, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -68,8 +69,8 @@ The following example specifies the **id** of a **room** to get its properties.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_room",
-  "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"]
+  "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"],
+  "name": "get_room"
 }-->
 
 ```msgraph-interactive
@@ -143,7 +144,6 @@ Content-type: application/json
     "capacity": 50,
     "building": "1",
     "floorNumber": 1,
-    "isManaged": true,
     "isWheelChairAccessible": false,
     "bookingType": "standard",
     "tags": [
@@ -151,11 +151,70 @@ Content-type: application/json
     ],
     "audioDeviceName": null,
     "videoDeviceName": null,
-    "displayDevice": "surface hub"
+    "displayDeviceName": "surface hub"
 }
 ```
+### Example 2: Get a workspace
+#### Request
 
-### Example 2: Get a room list
+The following example specifies the **id** of a **workspace** to get its properties.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"],
+  "name": "get_workspace"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_workspace",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workspace"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+    "@odata.type": "#microsoft.graph.workspace",
+    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+    "emailAddress": "ws100@contoso.com",
+    "displayName": "Workspace 100",
+    "address": {
+      "street": "4567 Main Street",
+      "city": "Buffalo",
+      "state": "NY",
+      "postalCode": "98052",
+      "countryOrRegion": "USA"
+    },
+    "geoCoordinates": {
+      "latitude": 47.640568390488626,
+      "longitude": -122.1293731033803
+    },
+    "phone": "000-000-0000",
+    "nickname": "Workspace",
+    "label": "100",
+    "capacity": 50,
+    "building": "1",
+    "floorNumber": 1,
+    "isWheelChairAccessible": false,
+    "tags": [
+      "bean bags"
+    ]
+}
+```
+### Example 3: Get a room list
 #### Request
 
 The following example specifies the **emailAddress** of a **roomList** to get its properties.
@@ -163,8 +222,8 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_roomlist",
-  "sampleKeys": ["bldg1@contoso.com"]
+  "sampleKeys": ["bldg1@contoso.com"],
+  "name": "get_roomlist"
 }-->
 
 ```msgraph-interactive
@@ -227,7 +286,7 @@ Content-type: application/json
     "postalCode": "98052",
     "countryOrRegion": "USA"
   },
-  "geocoordinates": null,
+  "geoCoordinates": null,
   "phone": null,
   "emailAddress": "bldg1@contoso.com"
 }
