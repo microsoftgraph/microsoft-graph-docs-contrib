@@ -1,5 +1,5 @@
 ---
-title: "Host the connector as a windows service"
+title: "Host a Microsoft Graph connector as a Windows service"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
@@ -8,26 +8,29 @@ ms.prod: search
 description: "Microsoft Graph connectors SDK Sample Hosting"
 ---
 
-# Host the Microsoft Graph connector as a Windows service
+# Host a Microsoft Graph connector as a Windows service
 
-The connector executable must be always running so that the connector platform can make requests to it during the crawls or to perform any connection management operations. The executable won't be actively consuming any resources except for the times when the connector is being crawled. The rest of the time, the connector executable will just be idle.
+This article describes how to host your Microsoft Graph connector as a Windows service so that it will run continuously.
 
-One possible way to make the connector executable run always is to host it as a windows service. If the executable is registered as a windows service, the OS will take care of starting the process, and respawning it if there's a crash.
+The connector executable must be always running so that the connector platform can make requests to it during crawls or to perform any connection management operations. The executable won't be actively consuming any resources except for the times when the connector is being crawled. The rest of the time, the connector executable will just be idle.
 
-Follow the instructions below for hosting the connector as a windows service:
+One way to make the connector executable run continuously is to host it as a Windows service. If the executable is registered as a Windows service, the operating system will take care of starting the process, and respawning it if there's a crash.
 
-1. Use the right mouse button on the solution containing the custom connector project and select **Add** > **New project**
+Use the following steps to host the connector as a Windows service:
 
-2. Search for "**Worker service**" template, select it and select **Next**
-    ![Screenshot2](images/connectors-sdk/service2.png)
+1. Right-click the solution that contains the custom connector project and select **Add** > **New project**.
 
-3. Name the project as **CustomConnectorWorkerService** and select **Next**
+2. Search for the "**Worker service**" template, select it, and then choose **Next**.
 
-4. Choose **.NET core 3.1** as target framework and select on **Create**
+    ![Screenshot of the Add a new project page](images/connectors-sdk/service2.png)
 
-5. Use the right mouse button on the worker service project and select "**Open in Terminal**"
+3. Name the project **CustomConnectorWorkerService** and choose **Next**.
 
-6. Run the following commands in the terminal
+4. Choose **.NET Core 3.1** as the target framework and choose **Create**.
+
+5. Right-click the worker service project and choose **Open in Terminal**.
+
+6. Run the following commands in the terminal.
 
     ```dotnetcli
     dotnet add package Microsoft.Extensions.Hosting --version 6.0.0
@@ -35,12 +38,13 @@ Follow the instructions below for hosting the connector as a windows service:
 
     ```
 
-7. Use the right mouse button on the worker service project and select **Add** > **Project Reference**
+7. Right-click the worker service project and select **Add** > **Project Reference**.
 
-8. Select the **CustomConnector** project and select **Ok**
-    ![Screenshot7](images/connectors-sdk/service7.png)
+8. Select the **CustomConnector** project and choose **OK**.
 
-9. Replace the code in **Worker.cs** file with the following code:
+    ![Screenshot showing CustomConnector selected](images/connectors-sdk/service7.png)
+
+9. Replace the code in the **Worker.cs** file with the following code.
 
     ```csharp
     using CustomConnector.Server;
@@ -73,7 +77,7 @@ Follow the instructions below for hosting the connector as a windows service:
 
     ```
 
-10. Replace the code in **Program.cs** with the following:
+10. Replace the code in the **Program.cs** file with the following code.
 
     ```csharp
     using Microsoft.Extensions.DependencyInjection;
@@ -100,10 +104,11 @@ Follow the instructions below for hosting the connector as a windows service:
 
     ```
 
-11. Select **Release** configuration for build and build the **CustomConnectorWorkerService** project
-    ![Screenshot8](images/connectors-sdk/service8.png)
+11. Select the **Release** configuration and build the **CustomConnectorWorkerService** project.
 
-12. Run the following script to register and start the custom connector as windows service:
+    ![Screenshot showing the Release configuration selected](images/connectors-sdk/service8.png)
+
+12. Run the following script to register and start the custom connector as Windows service.
 
     ```powershell
     $ServiceName = "CustomConnector"
@@ -122,10 +127,11 @@ Follow the instructions below for hosting the connector as a windows service:
     >[!Note]
     >The service name must be unique for each unique connector.
 
-13. Open services.msc and check that the service is in running state
-    ![Screenshot9](images/connectors-sdk/service9.png)
+13. Open services.msc and verify that the service is running.
 
-You can refer documentation for **troubleshooting** issues with hosting the connector [here](/graph/custom-connector-sdk-troubleshooting#troubleshooting-errors-while-hosting-the-connector-as-a-windows-service).
+    ![Screenshot showing the CustomConnector running](images/connectors-sdk/service9.png)
+
+For any issues with hosting the connector, see [Troubleshooting errors](/graph/custom-connector-sdk-troubleshooting#troubleshooting-errors-while-hosting-the-connector-as-a-windows-service).
 
 ## Next steps
 
