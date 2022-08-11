@@ -9,8 +9,6 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCreateUploadSessionPostRequestBody()
 attachmentInfo := graphmodels.NewAttachmentInfo()
-"@odata.type" := "microsoft.graph.attachmentInfo"
-attachmentInfo.Set"@odata.type"(&"@odata.type") 
 attachmentType := graphmodels.FILE_ATTACHMENTTYPE 
 attachmentInfo.SetAttachmentType(&attachmentType) 
 name := "flower"

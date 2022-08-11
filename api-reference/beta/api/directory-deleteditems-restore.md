@@ -1,21 +1,19 @@
 ---
-title: "Restore deleted item"
-description: "Restores a recently deleted item from deleted items. "
+title: "Restore deleted item (directory object)"
+description: "Restore a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Restore deleted item
+# Restore deleted item (directory object)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restores a recently deleted item from [deleted items](../resources/directory.md). 
-
-Currently, restore deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md), and [user](../resources/user.md) resources. If an item was accidentally deleted, you can fully restore the item. This is not applicable to Security groups, which are deleted permanently.
+Restore a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). If an item was accidentally deleted, you can fully restore the item. This is not applicable to security groups, which are deleted permanently.
 
 A recently deleted item will remain available for up to 30 days. After 30 days, the item is permanently deleted.
 
