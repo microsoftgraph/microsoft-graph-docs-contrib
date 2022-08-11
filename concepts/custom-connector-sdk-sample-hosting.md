@@ -5,7 +5,7 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Microsoft Graph connectors SDK Sample Hosting"
+description: "Learn how to host your Microsoft Graph connector as a Windows service."
 ---
 
 # Host a Microsoft Graph connector as a Windows service
