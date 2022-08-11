@@ -1,6 +1,6 @@
 ---
 title: "List passwordMethods"
-description: "Retrieve a list of passwordauthenticationmethod objects."
+description: "Retrieve a user's passwordAuthenticationMethod objects. This will return exactly one object, as a user can have exactly one password."
 ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
