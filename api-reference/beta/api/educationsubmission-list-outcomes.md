@@ -2,7 +2,7 @@
 title: "List outcomes"
 description: "Retrieve a list of educationoutcome objects."
 ms.localizationpriority: medium
-author: "cristobal-buenrostro"
+author: "Sureshpadimi88"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
@@ -44,7 +44,8 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 ```
-
+## Optional query parameters
+This method supports the `$top`,and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 
 | Name      |Description|
