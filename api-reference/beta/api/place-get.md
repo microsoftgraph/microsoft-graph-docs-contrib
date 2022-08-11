@@ -20,7 +20,7 @@ The **place** object can be one of the following types:
 * A [workspace](../resources/workspace.md), which includes properties such as an email address for the workspace, and accessibility and capacity. 
 * A [room list](../resources/roomlist.md), which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
 
-**Room**, **workspace**, and **roomList** are all derived from the **place** object.
+The **room**, **workspace**, and **roomList** resources are derived from the **place** object.
 
 ## Permissions
 
