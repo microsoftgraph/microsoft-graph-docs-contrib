@@ -16,11 +16,11 @@ Get the properties and relationships of a [place](../resources/place.md) object 
 
 The **place** object can be one of the following types:
 
-* A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
-* A [workspace](../resources/workspace.md) which includes properties such as an email address for the workspace, and accessibility and capacity. 
-* A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
+* A [room](../resources/room.md), which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
+* A [workspace](../resources/workspace.md), which includes properties such as an email address for the workspace, and accessibility and capacity. 
+* A [room list](../resources/roomlist.md), which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
 
-All **room**, **workspace** and **roomList** are derived from the **place** object.
+**Room**, **workspace**, and **roomList** are all derived from the **place** object.
 
 ## Permissions
 
@@ -41,9 +41,9 @@ GET /places/{id}
 ```
 
 ## Optional query parameters
-Use $select to get specific **place** properties.
+Use `$select` to get specific **place** properties.
 
-For more information on OData query options, see [OData query parameters](/graph/query-parameters).
+For more information about OData query options, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
