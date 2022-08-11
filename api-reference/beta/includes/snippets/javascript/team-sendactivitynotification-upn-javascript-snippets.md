@@ -20,7 +20,7 @@ const sendActivityNotification = {
         content: 'You have moved up the queue'
     },
     recipient: {
-        '@odata.type': 'Microsoft.Teams.GraphSvc.aadUserNotificationRecipient',
+        '@odata.type': 'microsoft.graph.aadUserNotificationRecipient',
         userId: 'jacob@contoso.com'
     },
     templateParameters: [
