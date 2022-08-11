@@ -24,15 +24,15 @@ You can do the following for a given tenant:
 
 A **place** object can be one of the following types:
 
-* A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
-* A [workspace](../resources/workspace.md) which includes properties such as an email address for the workspace, and accessibility and capacity. 
-* A [roomList](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list. 
+* A [room](../resources/room.md), which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
+* A [workspace](../resources/workspace.md), which includes properties such as an email address for the workspace, and accessibility and capacity. 
+* A [roomList](../resources/roomlist.md), which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list. 
 
 The **room**, **workspace** and **roomList** resources are derived from the **place** object.
 
 By default, this operation returns up to 100 places per page. 
 
-Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
+Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. For details about how they compare, see [Using the places API](../resources/place.md#using-the-places-api).
 
 ## Permissions
 
@@ -82,13 +82,13 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/workspaces
 
 ## Optional query parameters
 This method supports the following query parameters to help customize the response:
-- $filter
-- $select
-- $top
-- $skip
-- $count=true
+- `$filter`
+- `$select`
+- `$top`
+- `$skip`
+- `$count=true`
 
-Use $top to customize the page size. The default page size is 100.
+Use `$top` to customize the page size. The default page size is 100.
 
 For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -250,10 +250,6 @@ The following example shows how to get all the [workspaces](../resources/workspa
 ```http
 GET https://graph.microsoft.com/beta/places/microsoft.graph.workspace
 ```
-
-
----
-
 
 #### Response
 
@@ -513,11 +509,6 @@ The following example shows how to get a list of [workspace](../resources/worksp
 ```http
 GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/workspaces
 ```
-
-
-
----
-
 
 #### Response
 
