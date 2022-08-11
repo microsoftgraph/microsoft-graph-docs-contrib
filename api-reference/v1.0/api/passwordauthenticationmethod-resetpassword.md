@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# passwordAuthenticationMethod: resetPassword
+# authenticationMethod: resetPassword
 
 Namespace: microsoft.graph
 
