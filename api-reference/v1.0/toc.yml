@@ -5072,6 +5072,10 @@ items:
           - name: Password
             href: resources/passwordauthenticationmethod.md
             items:
+            - name: List
+              href: api/authentication-list-passwordmethods.md
+            - name: Get
+              href: api/passwordauthenticationmethod-get.md
             - name: Reset
               href: api/passwordauthenticationmethod-resetpassword.md
             - name: Get operation status
