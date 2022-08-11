@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Represents a report of an item to Microsoft Defender for Office 365 for analysis, to confirm whether the item is malicious or safe. Items can include an email, email file attachment, or URL. Users can submit a report at the Microsoft 365 Defender portal (https://security.microsoft.com).
 
-This resource can represent a threat - a false negative case of an email which can be malware, phish, or spam, or an email that contains a malicious file attachment, or a malicious URL. Or it can represent a false positive case where an email, attachment, or URL is legitimate but blocked by Microsoft Defender for Office 365, for example, an email that's not junk, or an email file attachment or URL that is safe. False negative and false positive cases could have been allowed or blocked by tenant policies overriding Microsoft Defender for Office 365. 
+This resource can represent a threat - a false negative case of an email which can be malware, phish, or spam, or a malicious file attachment to an email, or a malicious URL. Or it can represent a false positive case where an email, attachment, or URL is legitimate but blocked by Microsoft Defender for Office 365, for example, an email that's not junk, or an email file attachment or URL that is safe. False negative and false positive cases could have been respectively allowed or blocked by tenant policies overriding Microsoft Defender for Office 365. 
 
 This resource is an abstract type. It is the base type for [emailThreatSubmission](../resources/security-emailthreatsubmission.md), [fileThreatSubmissin](../resources/security-filethreatsubmission.md), and [urlThreatSubmission](../resources/security-urlthreatsubmission.md).
 
