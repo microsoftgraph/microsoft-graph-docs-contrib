@@ -5524,7 +5524,25 @@
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
-	{
+    {
+      "ChangeList": [
+        {
+          "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-22T15:04:69.427Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "d63505d3-b68c-4fc0-b9d5-ec67cd05f574",
@@ -5743,18 +5761,18 @@
     {
       "ChangeList": [
         {
-          "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
-          "ApiChange": "Parameter",
-          "ChangedApiName": "chat",
+          "Id": "e473f528-d700-4803-9985-6db1bde5c17f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Chat.ReadBasic.WhereInstalled,Chat.Read.WhereInstalled,Chat.ReadWrite.WhereInstalled,ChatMember.Read.WhereInstalled,ChatMember.ReadWriteWhereInstalled",
           "ChangeType": "Addition",
-          "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
-          "Target": "chat"
+          "Description": "Added new permissions [Chat.ReadBasic.WhereInstalled](https://docs.microsoft.com/en-us/graph/permissions-reference#chat-permissions), [Chat.Read.WhereInstalled](https://docs.microsoft.com/en-us/graph/permissions-reference#chat-permissions), [Chat.ReadWrite.WhereInstalled](https://docs.microsoft.com/en-us/graph/permissions-reference#chat-permissions), [ChatMember.Read.WhereInstalled](https://docs.microsoft.com/en-us/graph/permissions-reference#chat-membership-permissions), [ChatMember.ReadWrite.WhereInstalled](https://docs.microsoft.com/en-us/graph/permissions-reference#chat-membership-permissions).",
+          "Target": "Chat.ReadBasic.WhereInstalled,Chat.Read.WhereInstalled,Chat.ReadWrite.WhereInstalled,ChatMember.Read.WhereInstalled,ChatMember.ReadWriteWhereInstalled"
         }
       ],
-      "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+      "Id": "e473f528-d700-4803-9985-6db1bde5c17f",
       "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-08-22T15:04:69.427Z",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-19T00:00:00",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
