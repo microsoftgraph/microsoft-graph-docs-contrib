@@ -126,7 +126,7 @@ Content-type: application/json
   "value": [
     {
       "id": "3ddfcfc8-9383-446f-83cc-3ab9be4be18f",
-      "emailAddress": "Kim@contoso.com"
+      "emailAddress": "KimA@contoso.com"
     }
   ]
 }
