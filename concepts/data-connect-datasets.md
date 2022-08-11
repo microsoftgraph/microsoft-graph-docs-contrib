@@ -94,7 +94,7 @@ The following table indicates which Microsoft 365 regions are supported and the 
 | **North America**  | <ul><li>Central US</li><li>East US</li><li>East US 2</li><li>North Central US</li><li>South Central US</li><li>West Central US</li><li>West US</li><li>West US 2</li></ul>                                            |
 | **United Kingdom** | <ul><li>UK South</li><li>UK West</li></ul>                     |
 
-## Sink
+## Sinks
 
 Sinks are the output location that Azure Synapse or Azure Data Factory uses to place data in Azure storage. Data Connect supports the following sink storage types:
 
