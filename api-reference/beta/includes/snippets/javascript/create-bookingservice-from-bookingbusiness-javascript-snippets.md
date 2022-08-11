@@ -74,7 +74,7 @@ const bookingService = {
     isAnonymousJoinEnabled: false
 };
 
-await client.api('/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services')
+await client.api('/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/services')
 	.version('beta')
 	.post(bookingService);
 
