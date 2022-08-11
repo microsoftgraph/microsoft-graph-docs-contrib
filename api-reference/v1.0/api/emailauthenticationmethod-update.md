@@ -1,6 +1,6 @@
 ---
 title: "Update emailAuthenticationMethod"
-description: "Update the properties of an emailAuthenticationMethod object."
+description: "Update a user's emailAuthenticationMethod object."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,9 +10,7 @@ doc_type: "apiPageType"
 # Update emailAuthenticationMethod
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Update a user's email address associated with an [email Authentication Method](../resources/emailauthenticationmethod.md) object.
+Update a user's email address represented by an [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,53 +60,31 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|emailAddress|String|Updated email address|
+|emailAddress|String|New email address.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_emailauthenticationmethod",
-  "sampleKeys": ["kim@contoso.com", "3ddfcfc8-9383-446f-83cc-3ab9be4be18f"]
+  "name": "update_emailauthenticationmethod"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
+PATCH https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
 Content-Type: application/json
 
 {
   "emailAddress": "kim@contoso.com"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-emailauthenticationmethod-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-emailauthenticationmethod-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-emailauthenticationmethod-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-emailauthenticationmethod-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-emailauthenticationmethod-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -118,20 +94,13 @@ Content-Type: application/json
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.emailAuthenticationMethod"
+  "truncated": true
 } -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "id": "3ddfcfc8-9383-446f-83cc-3ab9be4be18f",
-  "emailAddress": "kim@contoso.com"
-}
+HTTP/1.1 204 No Content
 ```
