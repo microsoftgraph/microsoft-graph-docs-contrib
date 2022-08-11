@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Get authentication operation
+# Get longRunningOperation
 
 Namespace: microsoft.graph
 
