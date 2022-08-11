@@ -21,6 +21,10 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 | HideGroupInOutlook                           | This group is hidden in Outlook experiences.                 | All groups are visible and discoverable in Outlook experiences.   |
 | SubscribeNewGroupMembers                     | Group members are subscribed to receive group conversations. | Group members do not receive group conversations.                 |
 | WelcomeEmailDisabled                         | Welcome emails are not sent to new members.                  | A welcome email is sent to a new member on joining the group.     |
+| SubscribeMembersToCalendarEventsDisabled     | Members are not subscribed to calendar events in Outlook.     | Members are not subscirbed to calendar events.
+           |
+| CalendarMemberReadOnly                       | Members can view the group calednar in Outlook but cannot make changes.   | Members can view and edit group calendar in Outlook.|
+| Connectors Disabled                          | Changes made to the group in Exchange Online are not synced back to on-premises Active Directory.  | Changes made to the group in Exchange Online are synced back to on-premises Active Directory.  |
 
 ## Provision groups
 
