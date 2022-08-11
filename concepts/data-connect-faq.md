@@ -12,23 +12,23 @@ Microsoft Graph Data Connect lets developers create applications that customers 
 
 ## Is Microsoft Graph Data Connect right for me?
 
-Microsoft Graph Data Connect and Microsoft Graph APIs provide access to the same underlying data but in very different ways. Data Connect is designed to extract large amounts of data in bulk, while Microsoft Graph APIs are more suitable for accessing discrete sets of data in real time. In some cases, it might even make sense to combine them. For example, you might want to use Data Connect to do an initial extraction of the last year of email data, and then use Microsoft Graph APIs to analyze emails in real time moving forward. Data Connect and Microsoft Graph APIs are different tools for different jobs. It's important to think about which access method best fits your scenario. For more information, see [When should I use Microsoft Graph API or Data Connect](/graph/overview#when-should-i-use-microsoft-graph-api-or-data-connect).
+Microsoft Graph Data Connect and Microsoft Graph APIs provide access to the same underlying data but in very different ways. Microsoft Graph Data Connect is designed to extract large amounts of datasets in bulk scalable to your entire organization while Microsoft Graph APIs are suitable for accessing small amount of data from select users and groups in your organization.
+
+For example, you might want to use Microsoft Graph Data Connect to do an initial extraction of the last year of email data, and then use Microsoft Graph APIs to analyze emails in real time moving forward. Microsoft Graph Data Connect and Microsoft Graph APIs are different tools for different jobs. It's important to think about which access method best fits your scenario. For more information, see [When should I use Microsoft Graph API or Microsoft Graph Data Connect](/graph/overview#when-should-i-use-microsoft-graph-api-or-data-connect).
 
 ## Is there any initial overhead?
 
-Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. This might be a negligible cost for large amounts of data, but if this time is unacceptable for your scenario, Microsoft Graph APIs might provide a better approach.
+Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. If the initial overhead is too long for your use case, please reach out to the Microsoft Graph Data Connect team at dataconnect@microsoft.com
 
 Please Note: Your tenant admin needs to approve and consent within 24 hours of kicking off the pipeline. If the consent is not given within 24 hours, consent will expire and your will need to restart the consent process by kicking off your pipelines again. The overhead time mentioned aboved does not include time taken in consent approval.
 
 ## In what regions is Microsoft Graph Data Connect available?
 
-Microsoft Graph Data Connect is currently available in the following regions: North America, Europe, Asia Pacific, United Kingdom/Great Britain, and Australia. Other regions will follow. 
+Microsoft Graph Data Connect is currently available in multiple regions across the following geographies: North America, Europe, Asia Pacific, United Kingdom/Great Britain, and Australia. Other regions will follow. 
 
 For a list of Office to Azure regions and their mapping please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#regions).
 
 ## What datasets are available through Microsoft Graph Data Connect?
-
-We have some datasets available for free or are currently free in preview. Some datasets are also charged. For more information on datasets that are available through Data Connect, please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets)
 
 We have multiple datasets for each of the groups organized in the below
 * Teams
@@ -45,9 +45,9 @@ Please note that for datasets for ODSP and Viva Insights are only available to c
 
 Microsoft Graph Data Connect consumption charges are billed monthly on a pay-as-you-go basis. The Data Connect billing unit is in a multiple of 1000s of objects, where 1 object maps to 1 individual instance of an entity in Microsoft 365. For example, 1 email == 1 object, 1 file == 1 object, 1 Teams chat message == 1 object, and so on. Charges are calculated by using a flat rate based on the count of per-1,000 objects extracted through the connector. 
 
-Please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets) for more information on which datasets are free or paid.
+We have some datasets available for free or are currently free in preview while other datasets are charged. Microsoft Graph Data Connect offers datasets across multiple different Microsoft 365 products and services. For more information on datasets that are available through Microsoft Graph Data Connect, please refer to, please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets).
 
-There is no charge for extraction of objects from the following datasets. 
+There is no charge for extraction of objects from the following datasets:
 - BasicDataSet_v0.User_v0
 - BasicDataSet_v0.User_v1
 - BasicDataSet_v0.MailboxSettings
@@ -67,21 +67,17 @@ Instead, the customer will be billed for 20 units due to Microsoft Graph Data Co
 
 ##  What can I do if a dataset is not yet supported for my tenant?
 
-For ODSP and Viva Insights datasets, MGDC pre-extracts the data and delivers only at runtime. Therefore, the tenant must explictly convey they would like these datasets so that MGDC can serve it to them. 
+As mentioned earlier, for datasets like ODPS and Viva Insights, please make sure you meet the criteria required to access these datasets mentioned in [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets). Additionally, these datasets are only available to customers who have opted in for them explicitly.
 
-For further inquires or questions, please reach out to dataconnect@microsoft.com if you recieve an error message from your pipeline run to request enabling the dataset you would like for your tenant.
+For further inquires or questions, please reach out to dataconnect@microsoft.com.
 
 ## What scenarios does Microsoft Graph Data Connect best address?
 
-Organizations that can tap into the large datasets that power their productivity tools can gain tremendous insights into the challenges and opportunities they might encounter. During our public preview, we've seen customers interested in sales productivity, data archiving and management, organizational optimization, intelligent workflows, and ensuring compliance.
+Organizations that can tap into the large datasets that power their productivity tools can gain tremendous insights into the challenges and opportunities they might encounter. We have seen customers building application across multiple scenarios like Organization networks for People Productivity Analytics, Information Oversharing for Security and Compliance analytics, Seller relationship strengths for Customer Relationship analytics, etc.
 
 ## Is it possible for my data to stay within the organization's subscription with Microsoft Graph Data Connect?
 
-Microsoft Graph Data Connect pipelines are orchestrated by Azure Data Factory, a data integration service that runs in an Azure subscription. The Azure subscription is [associated with exactly one Microsoft 365 tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). This way, the data must initially flow to an associated Azure subscription. After further minimalization and aggregation, the data can be used elsewhere.
-
-Microsoft Graph Data Connect pipelines are orchestrated by Azure Synapse or Azure Data Factory, a data integration service that runs in an Azure subscription. The Azure subscription is [associated with exactly one Microsoft 365 tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). This way, the data must initially flow to an associated Azure subscription. After further minimalization and aggregation, the data can be used elsewhere.
-
-If you want to build an app for others to use to extract their Microsoft 365 data, you can package the app as an [Azure managed application](/azure/managed-applications/overview) and publish it to the Azure Marketplace. Then someone can deploy your app into their own Azure subscription, and the app can access data in their tenant.
+Microsoft Graph Data Connect respects your organizational tenant boundary when delivering your requested datasets. Both Azure resources and Microsoft 365 services must reside within the same AAD tenancy to access your Microsoft 365 dataset. We do not enable cross tenant dataset access today.
 
 ## Are service principals required with Microsoft Graph Data Connect?
 
@@ -102,16 +98,24 @@ During development, it's a good idea to make sure that your pipeline runs aren't
 
 Please note that consent requests will expire after 24 hours if not approved and the pipeline will fail. 
 
-Additionally, PAM approval is valid for only 6 months (unless revoked), existing consent can be used if it is still valid. 
+Additionally, PAM approval is valid for only 6 months (unless revoked).
 
 ## How can I approve PAM requests via the Microsoft 365 admin center?
 
-The Microsoft Graph Data Connect documentation shows you how to use PowerShell and the PAM UX to approve PAM requests. To approve using the PAM UX, visit the PAM interface in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/Settings/PrivilegedAccess). The admin center provides an easy and user-friendly way to view and approve/deny/revoke PAM requests. You can find a link to it in the Microsoft Graph Data Connect add-in under **Settings** > **Services & Add-ins** > **Microsoft Graph Data Connect**.
+To approve using the PAM UX, visit the PAM interface in the Microsoft 365 admin center which provides an easy and user-friendly way to view and approve/deny/revoke PAM requests.
 
 To approve a request, users need to follow the below:
 - When enabling Microsoft Graph Data Connect, please be within the approver’s group.
 - Users must have a Global Admin role.
 - Users must have an EXO license assigned.
+
+Follow the below to approve/deny your PAM request:
+1. Log into the PAM interface at [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/Settings/PrivilegedAccess).
+2. Go to the sidebar on the right hand side and click on **Settings** > **Org Settings** > **Services** > **Microsoft Graph Data Connect**.
+3. Locate the request
+4. Review the request details
+5. (Optional) Add deny list scrubbing if needed
+5. Approve or Deny request as needed
 
 For more details please visit [this page](https://docs.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1).
 
@@ -125,9 +129,11 @@ A new consent request will be triggered if the scope of data changes-- such as a
 
 ## Can I have a second user to approve PAM requests?
 
-When you run a pipeline and trigger a PAM request, the request is attached to your user account that owns the service principal used by the pipeline. But even if this account is part of the approver group that you set up, you can't use it to approve the PAM request because self-approvals are not allowed. 
+When you request a dataset pipeline run, Microsoft Graph Data Connect service will verify and then trigger a PAM approval request if needed. The request is sent to the approver group defined for the tenant when enabling Microsoft Graph Data Connect in the Microsoft Admin Center. 
 
-If you try, you'll get an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed." For development, you'll want to have a second account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange Online accounts.
+However, even if this account is part of the approver group that you set up, you can't use it to approve the PAM request because self-approvals are not allowed. If you try, you'll get an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed."
+
+For development, you'll want to have a second account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange Online accounts.
 
 ## Can I deduplicate emails when needed?
 
