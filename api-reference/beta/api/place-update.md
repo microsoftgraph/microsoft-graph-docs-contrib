@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). You can identify the **room**, **workspace** or **roomList** by specifying the **id** or **emailAddress** property.
+Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). You can identify the **room**, **workspace**, or **roomList** by specifying the **id** or **emailAddress** property.
 
 ## Permissions
 
@@ -42,9 +42,9 @@ PATCH /places/{id | emailAddress}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Only one instance of a place resource (**room**, **workspace** or **roomList**) can be updated at a time. In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Only one instance of a place resource (**room**, **workspace**, or **roomList**) can be updated at a time. In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
->**Note**: A [place](../resources/place.md) object's **id**, **emailAddress**, **displayName**, and **bookingType** cannot be updated using this API.  
+>**Note**: You cannot use this API to update the **id**, **emailAddress**, **displayName**, or **bookingType** of a [place](../resources/place.md) object.  
 
 | Property               | Type                                              | Description |
 |:-----------------------|:--------------------------------------------------|:--|
