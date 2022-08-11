@@ -15173,8 +15173,13 @@ items:
         href: resources/security-threatsubmission.md
         items:
         - name: Email threat submission
-          href: resources/security-emailthreatsubmission.md
           items:
+          - name: Email threat submission
+            href: resources/security-emailthreatsubmission.md
+          - name: Email content threat submission
+            href: resources/security-emailcontentthreatsubmission.md
+          - name: Email URL threat submission
+            href: resources/security-emailurlthreatsubmission.md
           - name: List
             href: api/security-emailthreatsubmission-list.md
           - name: Create
@@ -15183,10 +15188,6 @@ items:
             href: api/security-emailthreatsubmission-get.md
           - name: Review
             href: api/security-emailthreatsubmission-review.md
-          - name: Email content threat submission
-            href: resources/security-emailcontentthreatsubmission.md
-          - name: Email URL threat submission
-            href: resources/security-emailurlthreatsubmission.md
         - name: Email threat submission policy
           href: resources/security-emailthreatsubmissionpolicy.md
           items:
@@ -15200,6 +15201,19 @@ items:
             href: api/security-emailthreatsubmissionpolicy-update.md
           - name: Delete
             href: api/security-emailthreatsubmissionpolicy-delete.md
+        - name: File threat submission
+          href: resources/security-filethreatsubmission.md
+          items:
+          - name: File content threat submission
+            href: resources/security-filecontentthreatsubmission.md
+          - name: File URL threat submission
+            href: resources/security-fileurlthreatsubmission.md
+          - name: List
+            href: api/security-filethreatsubmission-list.md
+          - name: Create
+            href: api/security-filethreatsubmission-post-filethreats.md
+          - name: Get
+            href: api/security-filethreatsubmission-get.md
         - name: URL threat submission
           href: resources/security-urlthreatsubmission.md
           items:
@@ -15209,19 +15223,6 @@ items:
             href: api/security-urlthreatsubmission-post-urlthreats.md
           - name: Get
             href: api/security-urlthreatsubmission-get.md
-        - name: File threat submission
-          href: resources/security-filethreatsubmission.md
-          items:
-          - name: List
-            href: api/security-filethreatsubmission-list.md
-          - name: Create
-            href: api/security-filethreatsubmission-post-filethreats.md
-          - name: Get
-            href: api/security-filethreatsubmission-get.md
-          - name: File URL threat submission
-            href: resources/security-fileurlthreatsubmission.md
-          - name: File content threat submission
-            href: resources/security-filecontentthreatsubmission.md
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
