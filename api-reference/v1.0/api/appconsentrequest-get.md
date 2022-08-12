@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an [appConsentRe
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentRequests/af330b30-dd59-4482-a848-0fd81b0438ed
+GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentRequests/7322e5f3-0f15-4eb8-9e82-2029e8622f5d
 ```
 
 # [C#](#tab/csharp)
