@@ -11385,6 +11385,22 @@
           "ChangeType": "Addition",
           "Description": "Added the **featureSettings** property to the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) resource. This property allows you to configure Microsoft Authenticator settings such as number matching and location context, and whether they are enabled for all users or specific users only.",
           "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
+        },
+	{
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayAppInformationRequiredState",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **displayAppInformationRequiredState** property of the [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta) resource. Use the **displayAppInformationRequiredState** property of the [microsoftAuthenticatorFeatureSettings](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource instead.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Property",
+          "ChangedApiName": "numberMatchingRequiredState",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **numberMatchingRequiredState** property of the [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta) resource. Use the **numberMatchingRequiredState** property of the [microsoftAuthenticatorFeatureSettings](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource instead.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
         }
       ],
       "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
