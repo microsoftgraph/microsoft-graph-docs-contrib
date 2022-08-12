@@ -8,7 +8,7 @@ ms.prod: "data-connect"
 
 # Datasets, regions, and sinks supported by Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect supports a variety of datasets, data regions, and storage locations in Microsoft Azure. This article describes the supported datasets and how to access the dataset schemas, the Microsoft 365 and Microsoft Azure regions that are supported, and the storage locations that Data Connect utilizes through Azure Synapse or Azure Data Factory.
+Microsoft Graph Data Connect supports a variety of datasets, data regions, and storage locations in Microsoft Azure. This article describes the supported datasets and how to access the dataset schemas, the Microsoft 365 and Microsoft Azure regions that are supported, and the storage locations that Microsoft Graph Data Connect utilizes through Azure Synapse or Azure Data Factory.
 
 ## Datasets
 
@@ -73,7 +73,7 @@ The data available is from the last 21 days (about three weeks). For instance, i
 |--|--|--|--|
 | DocumentSharingDataset_v0_Preview | Contains information about sharing permissions of documents. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/DocumentSharingDataset_v0_Preview.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/DocumentSharingDataset_v0_Preview.md)</li></ul> | [Free (under preview only)](https://azure.microsoft.com/pricing/details/graph-data-connect/). These datasets will be available to those in Preview. You must join the Graph TAP program using the signup form at https://aka.ms/GraphTAPForm  and request to join the Preview.  |
 | SharePointSitesDataset_v0_Preview | Contains information about SharePoint sites. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/SharePointSitesDataset_v0_Preview.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/SharePointSitesDataset_v0_Preview.md)</li></ul> | [Free (under preview only)](https://azure.microsoft.com/pricing/details/graph-data-connect/). These datasets will be available to those in Preview. You will need to join the Graph TAP program using the signup form at https://aka.ms/GraphTAPForm  and request to join the Preview.  |
-|VivaInsightsDataSet_v0  | Contains SharePoint group information, including details about group members.   | <ul><li> [Sample](https://github.com/niblak/dataconnect-solutions/blob/vivaarmtemplates/sampledatasets/VivaInsightsDataset_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/SharePointGroupsDataset_v0_Preview.md)</li></ul> | [Free (under preview only)](https://azure.microsoft.com/pricing/details/graph-data-connect/). These datasets will be available to those in Preview. You must join the Graph TAP program using the signup form at https://aka.ms/GraphTAPForm  and request to join the Preview. |
+|SharePointGroupsDataset_v0_Preview | Contains SharePoint group information, including details about group members.   | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/SharePointGroupsDataset_v0_Preview.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/SharePointGroupsDataset_v0_Preview.md)</li></ul> | [Free (under preview only)](https://azure.microsoft.com/pricing/details/graph-data-connect/). These datasets will be available to those in Preview. You must join the Graph TAP program using the signup form at https://aka.ms/GraphTAPForm  and request to join the Preview. |
 
 ### Viva Insights
 | Dataset name | Description | Sample and Schema | Billing |
@@ -96,7 +96,7 @@ The following table indicates which Microsoft 365 regions are supported and the 
 
 ## Sinks
 
-Sinks are the output location that Azure Synapse or Azure Data Factory uses to place data in Azure storage. Data Connect supports the following sink storage types:
+Sinks are the output location that Azure Synapse or Azure Data Factory uses to place data in Azure storage. Microsoft Graph Data Connect supports the following sink storage types:
 
 - [Azure Data Lake Storage Gen1](/azure/data-lake-store/data-lake-store-overview)
 - [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction)
@@ -104,7 +104,7 @@ Sinks are the output location that Azure Synapse or Azure Data Factory uses to p
 
 The following characteristics apply to sinks:
 
-- The output files are of format JSON lines. The output format is fixed, and there is no support for modifying the format of the output. However, you can use Azure Synapse or Azure Data Factory to copy the result of a Data Connect pipeline into another storage mechanism (such as Azure SQL Database).
+- The output files are of format JSON lines. The output format is fixed, and there is no support for modifying the format of the output. However, you can use Azure Synapse or Azure Data Factory to copy the result of a Microsoft Graph Data Connect pipeline into another storage mechanism (such as Azure SQL Database).
 - Service Principal authentication is the only supported authentication mechanism for all sink types in a copy activity with Microsoft 365 as the source.
 - When using Azure Storage Blob as the sink, you must ensure that your application has Storage Blob Data Contributor access to the Azure Storage Blob location.
 
