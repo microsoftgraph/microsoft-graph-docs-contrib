@@ -737,7 +737,7 @@ The following example creates an access review with the following settings:
 
 <!-- {
   "blockType": "request",
-  "name": "create_accessReviewScheduleDefinition"
+  "name": "create_accessReviewScheduleDefinition_insights"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
