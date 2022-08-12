@@ -45,7 +45,7 @@ The following table describes the types available to query and the supported per
 
 | EntityType | Permission scope required to access the items| Source| Comment|
 |:------------------|:---------|:---------|:---------|
-|[chatMessage](chatmessage.md)|Chat.Read, Chat.ReadWrite, ChannelMessage.Read.All|Teams|Teams messages|
+|[chatMessage](chatmessage.md)|Chat.Read, Chat.ReadWrite, ChannelMessage.Read.All|Teams|Teams messages.|
 |[message](message.md)|Mail.Read, Mail.ReadWrite| Exchange Online| Email messages.|
 |[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange Online|Calendar events. |
 |[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document libraries.|
