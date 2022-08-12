@@ -6,28 +6,26 @@ ms.localizationpriority: medium
 
 In this step you will create an Azure Storage account where Microsoft Graph data connect will store the data extracted from Microsoft 365 for further processing.
 
+<!-- //TODO for Gladys: Please add updated screenshots for the ALL the instructions below (Step #1 screenshot needed and re use step #2 screenshot will be re used once you take a screenshot for that) -->
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
-<!--use the same as before -->
-
+<!--//TODO for Richa: to replace the verbiage here. -->
 1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
 
 1. On the sidebar navigation, select **Create a resource**.
 
-<!-- performance, redundancy, and advanced can be anything -->
-<!-- region, link to mapping region. Pick Azure region that is in the O365 region from their tenant -->
-<!-- we are working on removing some of these restrictions over time #4, leave everything as default and if questions email-->
-<!-- Add screenshots -->
-1. Find the **Storage Account** resource type and use the following values to create it, then select **Review + create**.
+<!-- //TODO for Richa: Omce Gladys inputs the screenshots for basics, Add another step mention "leave everything as default and if questions email" and leave it as a note in the UX-->
+<!-- //TODO for Gladys:  Please refer to the recording from 8/10 at 35:30. https://microsoft-my.sharepoint-df.com/:v:/p/rimisra/Ece8TG9_TWxNonTpW33djOcB_nqngu_sDmZB587iUlvK7w?e=eaIPzm.  For the screen grab we want #4 below. This screengrab will be an extra step before the one below for storage account. -->
+1. Find the **Storage Account** resource type and use the following values to create it, then select **Review + create**. For **Performance**, **Redundancy**, and **Advanced Tab**, the values for these fields are an example. You can pick any of the options presented. 
 
     - **Subscription**: select your Azure subscription
     - **Resource group**: GraphDataConnect (or select an existing resource group)
     - **Storage account name**: mgdcm365datastore
-    - **Region**: pick an Azure region in the same region as your Microsoft 365 region
-    - **Performance**: Standard
-    - **Redundancy**: Geo-redundant storage (GRS)
+    - **Region**: [pick an Azure region in the same region as your Microsoft 365 region](https://docs.microsoft.com/en-us/graph/data-connect-datasets#regions)
+    - **Performance**: Standard 
+    - **Redundancy**: Geo-redundant storage (GRS) 
     - **Advanced tab**:
-      - **Access tier**: Hot
+      - **Access tier**: Hot 
 
 1. Review that the settings match those shown in the previous step and select **Create**.
 

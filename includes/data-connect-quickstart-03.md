@@ -12,9 +12,9 @@ The first step is to create an Azure AD application that will be used as the sec
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
-<!-- role required is AAD admin role, Rishi to send action item on verbiage for this. replace global admin and remove Microsoft 365-->
+<!-- //TODO for Richa: role required is AAD admin role, Rishi to send action item on verbiage for this. replace global admin and remove Microsoft 365-->
 
-1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
+1. Sign in using an account with **Azure Active Directory admin** rights to your Azure tenant.
 
 1. On the sidebar navigation, select **Azure Active Directory** (Azure AD).
 
@@ -34,14 +34,14 @@ The first step is to create an Azure AD application that will be used as the sec
 
     ![A screenshot showing the steps to register a new application registration in the Azure portal.](../concepts/images/data-connect-aad-redirect-uri.png)
 
-<!-- add screenshot for 7 and 8, use the test tenant that gladys has, change fercobo-->
+<!--//TODO for Gladys: Please add screenshot for bullet points 7 and 8 (Application ID and Directory ID). This can be done with the test tenant. Please make sure to remove "Fercobo-mgdc-app" from the screenshot below.-->
 1. Locate the **Application (client) ID** and copy it as you will need it later in this tutorial. This will be referred to as the service principal ID.
 
 1. Locate the **Directory (tenant) ID** and copy it as you will need it later in this tutorial. This will be referred to as the tenant ID.
 
 1. On the sidebar navigation, select **Certificates and secrets** under **Manage**.
 
-<!-- change the fercobo screenshot,  -->
+<!--//TODO for Gladys: change the fercobo screenshot -->
 1. Select the **New client secret button**. Set *Description* to any name, set **Expires** to any value in the dropdown and choose **Add**.
 
     ![A screenshot showing the process to create a new client secret in the Azure portal.](../concepts/images/data-connect-aad-certs-secrets.png)
@@ -49,9 +49,10 @@ The first step is to create an Azure AD application that will be used as the sec
     - After the client secret is created, make sure you save the **Value** somewhere safe, as it will no longer be available later, and you will need to create a new one.
     - This will be referenced as the service principal key.
 
-<!-- -->
+<!--//TODO for Richa: Update titles for buttons once Gladys sends screenshots -->
 1. On the sidebar navigation for the application, select **Owners**.
 
+<!--//TODO for Gladys: Please take the update screenshot for the instruction below.-->
 1. Verify that your account is listed as an owner for the application. If it isn't listed as an owner, add it.
 
     ![A screenshot showing a user verifying that their account is set as owner for the application registration in the Azure portal.](../concepts/images/data-connect-aad-app-owners.png)

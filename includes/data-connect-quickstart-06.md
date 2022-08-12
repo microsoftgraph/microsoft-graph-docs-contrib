@@ -4,9 +4,13 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
+<!--//TODO for Richa: Fix the title to be OR not AND-->
+
 A Microsoft 365 administrator has the ability to approve or deny consent requests. This can be done via the Microsoft 365 Admin Center or programmatically via PowerShell.
 
 ## Approve consent requests
+
+<!--//TODO for Gladys: Customers are confused from 1 to 2. Incase you dont have the link handy, how customers can get there from portal to priviledges access, Need screenshot to explain the transition between #1 and #2.-->
 
 # [Microsoft 365 Admin Center](#tab/Microsoft365)
 
@@ -19,6 +23,8 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 1. In the **Data Access Request** call out, select the **Approve** button.
 
     ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-approve.png)
+
+    <!--//TODO for Gladys or Richa: test whether these powershell commands are still right, if commands are right, screenshots are fine-->
 
 # [PowerShell](#tab/PowerShell)
 
@@ -76,8 +82,10 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 ## Verify extracted data from Microsoft 365 to Azure Storage Blob
 
+
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
+<!--//TODO for Richa: replace #2 with the verbiage before. Ask Rishi if that's from page 3 or page 5 -->
 1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
 
 1. On the sidebar navigation, select the **All resources** menu item.

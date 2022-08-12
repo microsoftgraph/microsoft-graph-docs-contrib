@@ -8,10 +8,15 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
 ## Create an Azure Data Factory pipeline
 
+<!-- TODO for Richa and Gladys: Work on same page for Synapse.Richa writes out content and Gladys to help with screenshot. We can do switch off simillar to powershell page>
+
+<!--//TODO for Richa: Add Azure IR selection, maybe to 7b where Gladys will have an updated screenshot. Talk to Rishi and Cristian where the IR selection should be in the docs below. -->
+
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
-<!-- Sign in with an account that can create azure resources in subscription.-->
-1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
+<!-- //TODO for Richa: Check verbiage with Rishi. This can be anybody who has the ADF access.-->
+
+1. Sign in with an account that has priviledges to create Azure resources with your subscription.
 
 1. On the sidebar navigation, select **Create a resource**.
 
@@ -34,7 +39,8 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 1. Switch from the **Overview** to the **Manage** experience by selecting it from the left-hand navigation.
 
 1. By default, the Azure Data Factory will use an integration runtime that is auto-resolving the region. Because Data Connect requires that your source and destination, and integration runtime to exist in the same Microsoft 365 region, we recommend that you create a new integration runtime with a fixed region.
-<!-- 1-3, second option isnt available update with newer ADF related screenshot -->
+<!-- //TODO for Gladys: 1-3 is outdated in the UX so we need a screenshot to replace this. Please refer to the recording at 42:00- 45:00 for more info  -->
+<!-- //TODO for Richa: replace the steps to match the screenshot given from Gladys.This step will be change per screenshots since ADF has updated the screenshots -->
     1. Select **Integration runtimes** > **New**.
     2. Select **Azure, Self-Hosted** and select **Continue**.
     3. Select **Azure** for network environment and select **Continue**.
@@ -48,8 +54,8 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
         - **Region**: select the region that matches your Microsoft 365 region
         - **Virtual network configuration (preview)**: Disabled
 
-<!-- clarify what is manage(suitcase) button and author (pencil) button, have a screenshot to explain -->
-1. Switch from the **Manage** to the **Author** experience by selecting it from the left-hand navigation.
+<!--//TODO for Gladys: The verbiage for Manage and Author is confusing based on the icons so we need a screenshot with a red box around the pencil (Author) and toolbox (Manage)-->
+1. Switch from the **Manage (toolbox icon)** to the **Author (pencil icon)** experience by selecting it from the left-hand navigation.
 1. Create a new pipeline by selecting the **plus** icon, then **pipeline**.
 
     ![A screenshot showing the Azure portal UI for the Data Factory service. The user is creating a new pipeline.](../concepts/images/data-connect-adf-pipeline-create.png)
@@ -65,7 +71,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
       - **Description**: A description you want.
 
     - In the activity editor pane below the designer, select the **Source** tab, then select **New**.
-    <!-- update screenshot and M365 term -->
+    <!-- //TODO for Gladys. Please update screenshot and M365 term so that it has the current M365 verbiage. I think this is in your doc already but not sure -->
     - Locate the dataset **Microsoft (Office) 365**, select it and then select the **Continue** button.
 
         ![A screenshot showing the Azure portal UI for the Data Factory service. The user is selecting the Office 365 dataset in the UI and selecting the continue button afterwards.](../concepts/images/data-connect-adf-pipeline-dataset.png)
@@ -75,9 +81,10 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     - Select the integration runtime you previously created in the **Connect via integration runtime** dropdown.
 
         ![A screenshot showing the Azure portal UI for the Data Factory service. The user is configuring the integration runtime with the service principal key.](../concepts/images/data-connect-adf-linked-service.png)
-
-    <!-- select is ok, we need to put screenshots here that shows the copy activity definition looks like, source dataset looks like, provide source link service. They may need to go to the activity to do that. -->
+   
     - After creating the Microsoft 365 connection, for the **Table** field, select **BasicDataSet_v0.Message_v0**.
+     
+     <!--// TODO for Gladys: select is basicdataset message instruction is ok, we need to put screenshots here that shows the copy activity definition looks like, source dataset looks like, provide source link service. They may need to go to the activity to do that. Please refer to the recording at 48:30 - 52:00 for what screenshots need to be taken specifically. Need screenshot for what copy activity def is, source dataset and what source link services needed for dataset are. -->
     - Switch from **Office365Table** to **Pipeline > Source**. Use the following values for the **Date filter**.
 
       - **Column name**: CreatedDateTime
@@ -85,9 +92,9 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
       - **End time (UTC)**: select the current date
       - Select **Import schema** in the _Output columns_ section.
 
-<!-- some of the properties moved to the activity tab -->
+<!--//TODO for Gladys: We need screenshots for the properties below which are no longer in the instructions below. Some of the properties moved to the activity tab. Please refer to the recording at 48:30 - 52:00 for details. -->
     - Select the **Copy data** activity in the pipeline tab, then select the **Sink** tab.
-<!-- do we need Blob or should we have Gen 2 here? Ask Rishi what is the correct term -->
+<!--//TODO for Richa: do we need Blob or should we have Gen 2 here? Ask Rishi what is the correct term -->
       - Select the **New** button, select **Azure Blob Storage**, and then select the **Continue** button.
       - Select **Binary** as the format for the data and then select the **Continue** button.
       - Give the dataset the name **M365JsonFile** and create new linked service if it does not exist already.

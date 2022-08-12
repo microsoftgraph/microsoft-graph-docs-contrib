@@ -4,13 +4,13 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-Microsoft Graph Data Connect augments Microsoft Graph’s transactional model with an intelligent way to access rich data at scale. The data covers how workers communicate, collaborate, and manage their time across all the applications and services in Microsoft 365. Ideal for big data and machine learning, Data Connect allows you to develop applications for analytics, intelligence, and business process optimization by extending Microsoft 365 data into Azure. By integrating in this way, you'll be able to take advantage of the vast suite of compute, storage in Azure while staying compliant with industry standards and keeping your data secure.
+Microsoft Graph Data Connect augments Microsoft Graph’s transactional model with an intelligent way to access rich data at scale. The data covers how workers communicate, collaborate, and manage their time across all the applications and services in Microsoft 365. Ideal for big data and machine learning, Microsoft Graph Data Connect allows you to develop applications for analytics, intelligence, and business process optimization by extending Microsoft 365 data into Azure. By integrating in this way, you'll be able to take advantage of the vast suite of compute, storage in Azure while staying compliant with industry standards and keeping your data secure.
 
 ![This image explains the applied data controls between Microsoft 365 data into the Azure cloud, as well as the output data.](../concepts/images/data-connect-mgdc-capabilities.PNG)
 
 Microsoft Graph Data Connect uses Azure Data Factory to copy Microsoft 365 data to your application’s storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Microsoft Azure, letting you access the most applicable development and hosting tools available. Data Connect also grants a more granular control and consent model: you can manage data, see who is accessing it, and request specific properties of an entity. This enhances the Microsoft Graph model, which grants or denies applications access to entire entities.
 
-You can use Data Connect to enable machine learning scenarios for your organization.. In these scenarios, you can create applications that provide valuable information to your stakeholders, train machine learning models, and even perform forecasting based on large amounts of acquired data.
+You can use Microsoft Graph Data Connect to enable machine learning scenarios for your organization. In these scenarios, you can create applications that provide valuable information to your stakeholders, train machine learning models, and even perform forecasting based on large amounts of acquired data.
 
 ## Get started
 
@@ -18,23 +18,28 @@ In this tutorial, you will be creating your first Microsoft Graph Data Connect a
 
 ### Prerequisites
 
-To complete this lab, you will need the following subscriptions or licenses.
+To complete this lab, you will need the following subscriptions or licenses. Please ensure the below:
+- The Azure subscription must be in the same tenant as the Microsoft 365 tenant, as Microsoft Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants.
+- Your Microsoft 365 and Azure tenants must be in the same Microsoft Azure Active Directory tenancy.
+- Ensure that two users in your Microsoft 365 tenant have the **Global administrator** role enabled. More information can be found here: [Global Administrator built-in role](/azure/active-directory/roles/permissions-reference#global-administrator).
+
 
 1. **Microsoft 365 tenancy**
 
    - If you do not have one, you get one (for free) by signing up to the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
    - Multiple Microsoft 365 users with emails sent and received.
    - Access to at least two accounts that meet the following requirements:
-      - Must have the **Global administrator** role assigned and must have access to the Microsoft 365 Admin Center.
-      - Have an existing EXO license and you can either get E5 instant sandbox from the Developer Program or have an existing E5 instnace.
+      - Must have the **Global administrator** role assigned to you in order to have access to the [Microsoft 365 Admin Center](https://admin.microsoft.com/).
+      - Must have an **existing EXO license with E5 skew**.
+         - An E5 instant default sandbox is provided for free from the Microsoft 365 Developer Program or you can also use your own existing E5 instance.
 
 1. **Microsoft Azure subscription**
 
    - If you do not have one, you can get one (for free) in our [Azure website](https://azure.microsoft.com/free/).
    - The account used to sign in must have the **Global administrator** role granted to it.
-   - The Azure subscription must be in the same tenant as the Microsoft 365 tenant, as Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants.
-   - Your Microsoft 365 and Azure tenants must be in the same Microsoft Azure Active Directory tenancy.
+   - Ensure your Azure subscription is in the same tenant as Microsoft 365 tenant and noth tenants must be in the same Microsodt Azure Active Directory tenancy.
 
+<!--This can stay for now, please update this once we remove the ASP.NET page-->
 1. Make sure you have [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine.
 
 > [!NOTE]
