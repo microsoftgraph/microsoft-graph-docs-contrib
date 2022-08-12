@@ -92,7 +92,6 @@ items:
           - name: Manage delegated permissions
             displayName: assign delegated permissions
             href: permissions-delegated-grant-msgraph.md
-            displayName: applications, apps
           - name: Automate SAML-based SSO configuration
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
