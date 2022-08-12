@@ -13,8 +13,8 @@ $requestBody = new EducationOutcome();
 $requestBody->set@odatatype('#microsoft.graph.educationFeedbackOutcome');
 
 $additionalData = [
-'feedback' => $requestBody = new ();
-$text = new ();
+'feedback' => $requestBody = new Feedback();
+$text = new Text();
 $		text->setContent('This is feedback for the assignment as a whole.');
 
 $		text->setContentType('text');

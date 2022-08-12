@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2385
+Content-Length: 2624
 
 {
   "value": {
@@ -125,6 +125,13 @@ Content-Length: 2385
         "@odata.type": "microsoft.graph.customSubjectAlternativeName",
         "sanType": "emailAddress",
         "name": "Name value"
+      }
+    ],
+    "certificateAccessType": "specificApps",
+    "silentCertificateAccessDetails": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerSilentCertificateAccess",
+        "packageId": "Package Id value"
       }
     ]
   }

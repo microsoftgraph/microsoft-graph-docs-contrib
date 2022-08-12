@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | User.Read, Organization.Read.All, User.ReadBasic.All, User.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Organization.Read.All |
 
 ## HTTP request
 
@@ -57,7 +57,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandinglocalization"
+  "name": "get_organizationalbrandinglocalization",
+  "sampleKeys": ["fr-FR", "d69179bf-f4a4-41a9-a9de-249c0f2efb1d"]
 }-->
 
 ```msgraph-interactive
@@ -133,6 +134,7 @@ Content-Type: application/json
     "headerBackgroundColor": null,
     "signInPageText": "Contoso",
     "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
+    "squareLogoDarkRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",    
     "usernameHintText": " ",
     "loginPageTextVisibilitySettings": {
       "hideCannotAccessYourAccount": false,
@@ -154,7 +156,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandinglocalization_locale_signInPageText"
+  "name": "get_organizationalbrandinglocalization_locale_signInPageText",
+  "sampleKeys": ["fr-FR", "99b24e1b-abec-4598-9d63-a2baf0a3cea1"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/99b24e1b-abec-4598-9d63-a2baf0a3cea1/branding/localizations/fr-FR/signInPageText
@@ -256,7 +259,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbranding_frlocale_bannerLogo"
+  "name": "get_organizationalbranding_frlocale_bannerLogo",
+  "sampleKeys": ["d69179bf-f4a4-41a9-a9de-249c0f2efb1d"]
 }-->
 
 ```msgraph-interactive

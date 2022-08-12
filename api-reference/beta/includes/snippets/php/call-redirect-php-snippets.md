@@ -13,10 +13,10 @@ $requestBody = new RedirectPostRequestBody();
 $targetsInvitationParticipantInfo1 = new InvitationParticipantInfo();
 $additionalData = [
 '@odata.type' => '#microsoft.graph.invitationParticipantInfo', 
-'identity' => $targetsInvitationParticipantInfo1 = new ();
+'identity' => $targetsInvitationParticipantInfo1 = new Identity();
 $		targetsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.identitySet');
 
-$phone = new ();
+$phone = new Phone();
 $		phone->set@odatatype('#microsoft.graph.identity');
 
 $		phone->setId('+12345678901');

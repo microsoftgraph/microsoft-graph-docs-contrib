@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId $simulationAutomationId
+Get-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId $simulationAutomationId -OutFile $outFileId
 
 ```

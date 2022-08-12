@@ -10,23 +10,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new FindMeetingTimesPostRequestBody();
-$attendees1 = new ();
-$additionalData = [
-'type' => 'required', 
-'emailAddress' => $attendees1 = new ();
-$		attendees1->setName('Alex Wilbur');
+$attendeesAttendeeBase1 = new AttendeeBase();
+$attendeesAttendeeBase1->setType(new AttendeeType('required'));
 
-$		attendees1->setAddress('alexw@contoso.onmicrosoft.com');
+$attendeesAttendeeBase1EmailAddress = new EmailAddress();
+$attendeesAttendeeBase1EmailAddress->setName('Alex Wilbur');
 
-
-$attendees1->setEmailAddress($emailAddress);
-
-];
-$attendees1->setAdditionalData($additionalData);
+$attendeesAttendeeBase1EmailAddress->setAddress('alexw@contoso.onmicrosoft.com');
 
 
+$attendeesAttendeeBase1->setEmailAddress($attendeesAttendeeBase1EmailAddress);
 
-$attendeesArray []= $attendees1;
+$attendeesArray []= $attendeesAttendeeBase1;
 $requestBody->setAttendees($attendeesArray);
 
 
@@ -35,16 +30,13 @@ $locationConstraint->setIsRequired(false);
 
 $locationConstraint->setSuggestLocation(false);
 
-$locations1 = new ();
-$additionalData = [
-'resolveAvailability' => false,
-'displayName' => 'Conf room Hood', 
-];
-$locations1->setAdditionalData($additionalData);
+$locationsLocationConstraintItem1 = new LocationConstraintItem();
+$locationsLocationConstraintItem1->setResolveAvailability(false);
+
+$locationsLocationConstraintItem1->setDisplayName('Conf room Hood');
 
 
-
-$locationsArray []= $locations1;
+$locationsArray []= $locationsLocationConstraintItem1;
 $locationConstraint->setLocations($locationsArray);
 
 

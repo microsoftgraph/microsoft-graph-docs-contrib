@@ -49,15 +49,16 @@ GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unifi
 
 The `$search` query parameter supports tokenization only on the **displayName** and **description** fields and requires the **ConsistencyLevel** header. Fields other than **displayName** and **description** default to `$filter` `startswith` behavior.
 
-For more information on OData query options, see [OData query parameters](/graph/query-parameters). For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
-### Retrieve extensions and associated data
+Extension properties also support query parameters as follows:
 
 | Extension type       | Comments                      |
 |----------------------|-------------------------------|
 | Schema extensions    | Returned only with `$select`. |
 | Open extensions      | Returned only with `$expand`. |
 | Directory extensions | Returned by default.          |
+
+For more information on OData query options, see [OData query parameters](/graph/query-parameters). For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
 
 ## Request headers
 

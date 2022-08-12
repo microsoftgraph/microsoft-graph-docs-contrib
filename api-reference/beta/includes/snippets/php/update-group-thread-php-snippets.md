@@ -13,7 +13,7 @@ $requestBody = new ConversationThread();
 $additionalData = [
 'originalStartTimeZone' => 'originalStartTimeZone-value', 
 'originalEndTimeZone' => 'originalEndTimeZone-value', 
-'responseStatus' => $requestBody = new ();
+'responseStatus' => $requestBody = new ResponseStatus();
 $		requestBody->setResponse('');
 
 $		requestBody->setTime('datetime-value');

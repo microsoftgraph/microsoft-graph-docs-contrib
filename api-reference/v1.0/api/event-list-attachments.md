@@ -76,10 +76,11 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "event_get_attachments_v1"
+  "name": "event_get_attachments_v1",
+  "sampleKeys": ["AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAAa_WKzAAA="]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
+GET https://graph.microsoft.com/v1.0/me/events/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAAa_WKzAAA=/attachments
 ```
 
 # [C#](#tab/csharp)
@@ -122,20 +123,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.fileAttachment",
-      "contentType": "contentType-value",
-      "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
-      "contentId": "null",
-      "lastModifiedDateTime": "datetime-value",
-      "id": "id-value",
-      "isInline": false,
-      "name": "name-value",
-      "size": 99
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/events('AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAAa_WKzAAA%3D')/attachments",
+    "value": []
 }
 ```
 

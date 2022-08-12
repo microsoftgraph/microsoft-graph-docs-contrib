@@ -40,7 +40,7 @@ displayName := "Are you a developer?"
 .SetDisplayName(&displayName) 
 answerInputType := "radioButton"
 .SetAnswerInputType(&answerInputType) 
-answerOptions := []String {
+answerOptions := []string {
 	"Yes",
 	"No",
 

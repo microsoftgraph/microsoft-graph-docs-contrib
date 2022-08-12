@@ -88,7 +88,8 @@ If successful, this method returns a `200 OK` response code and a [meetingAttend
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-attendanceReport-by-id"
+  "name": "get-attendanceReport-by-id",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ", "2c2c2454-7613-4d6e-9c7c-4cf7a6cdce89"]
 }-->
 
 ```msgraph-interactive
@@ -186,7 +187,8 @@ The following request uses delegated permission.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_attendance_report"
+  "name": "get_attendance_report",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"]
 }-->
 
 ```msgraph-interactive

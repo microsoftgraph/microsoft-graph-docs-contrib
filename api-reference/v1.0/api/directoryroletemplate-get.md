@@ -1,7 +1,7 @@
 ---
 title: "Get directoryRoleTemplate"
 description: "Retrieve the properties and relationships of a directoryroletemplate object."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "get_directoryroletemplate"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/{id}
+GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/62e90394-69f5-4237-9190-012177145e10
 ```
 
 # [C#](#tab/csharp)
@@ -91,9 +91,11 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoleTemplates/$entity",
+    "id": "62e90394-69f5-4237-9190-012177145e10",
+    "deletedDateTime": null,
+    "description": "Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.",
+    "displayName": "Global Administrator"
 }
 ```
 

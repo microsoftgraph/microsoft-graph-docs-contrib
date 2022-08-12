@@ -118,7 +118,7 @@ Content-Type: application/json
       "state": "delivered",
       "status": "Delivered",
       "createdDateTime": "2021-01-19T20:02:23.907Z",
-      "completedDate": "2021-01-19T20:02:40.97Z",
+      "completedDateTime": "2021-01-19T20:02:40.97Z",
       "schedule": {
         "@odata.type": "microsoft.graph.entitlementManagementSchedule"
       }

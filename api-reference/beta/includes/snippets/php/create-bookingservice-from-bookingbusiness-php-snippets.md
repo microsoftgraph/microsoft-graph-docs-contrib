@@ -65,7 +65,7 @@ $defaultLocation->setAdditionalData($additionalData);
 
 
 $requestBody->setDefaultLocation($defaultLocation);
-$requestBody->setDefaultPrice(defaultPrice);
+$requestBody->setDefaultPrice(10);
 
 $requestBody->setDefaultPriceType(new BookingPriceType('fixedprice'));
 

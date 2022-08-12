@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAuthorizationPolicy()
 defaultUserRolePermissions := graphmodels.NewDefaultUserRolePermissions()
-permissionGrantPoliciesAssigned := []String {
+permissionGrantPoliciesAssigned := []string {
 	"managePermissionGrantsForSelf.microsoft-user-default-low",
 
 }

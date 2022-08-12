@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DeviceManagement.Functions
 
-Get-MgDeviceManagementManagedDeviceCloudPcReviewStatus -ManagedDeviceId $managedDeviceId
+Get-MgDeviceManagementManagedDeviceCloudPcReviewStatus -ManagedDeviceId $managedDeviceId -OutFile $outFileId
 
 ```

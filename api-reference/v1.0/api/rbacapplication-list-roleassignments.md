@@ -2,7 +2,7 @@
 title: "List unifiedRoleAssignments"
 description: "Get a list of unifiedRoleAssignment objects."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -225,7 +225,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$filter = principalId eq 'f1847572-48aa-47aa-96a3-2ec61904f41f'
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$filter = principalId eq '5bde3e51-d13b-4db1-9948-fe4b109d11a7'
 ```
 
 # [C#](#tab/csharp)

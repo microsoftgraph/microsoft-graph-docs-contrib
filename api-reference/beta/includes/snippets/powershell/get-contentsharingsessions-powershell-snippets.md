@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgCommunicationCallContentSharingSession -CallId $callId
+Get-MgCommunicationCallContentSharingSession -CallId $callId -OutFile $outFileId
 
 ```

@@ -41,29 +41,23 @@ $scope->setAdditionalData($additionalData);
 
 
 $requestBody->setScope($scope);
-$reviewers1 = new ();
-$additionalData = [
-'query' => './owners', 
-'queryType' => 'MicrosoftGraph', 
-];
-$reviewers1->setAdditionalData($additionalData);
+$reviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
+$reviewersAccessReviewReviewerScope1->setQuery('./owners');
+
+$reviewersAccessReviewReviewerScope1->setQueryType('MicrosoftGraph');
 
 
-
-$reviewersArray []= $reviewers1;
+$reviewersArray []= $reviewersAccessReviewReviewerScope1;
 $requestBody->setReviewers($reviewersArray);
 
 
-$fallbackReviewers1 = new ();
-$additionalData = [
-'query' => '/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f', 
-'queryType' => 'MicrosoftGraph', 
-];
-$fallbackReviewers1->setAdditionalData($additionalData);
+$fallbackReviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
+$fallbackReviewersAccessReviewReviewerScope1->setQuery('/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f');
+
+$fallbackReviewersAccessReviewReviewerScope1->setQueryType('MicrosoftGraph');
 
 
-
-$fallbackReviewersArray []= $fallbackReviewers1;
+$fallbackReviewersArray []= $fallbackReviewersAccessReviewReviewerScope1;
 $requestBody->setFallbackReviewers($fallbackReviewersArray);
 
 
@@ -76,15 +70,15 @@ $settings->setJustificationRequiredOnApproval(true);
 
 $settings->setRecommendationsEnabled(true);
 
-$settings->setInstanceDurationInDays(instanceDurationInDays);
+$settings->setInstanceDurationInDays(3);
 
 $settingsRecurrence = new PatternedRecurrence();
 $settingsRecurrencePattern = new RecurrencePattern();
 $settingsRecurrencePattern->setType(new RecurrencePatternType('absolutemonthly'));
 
-$settingsRecurrencePattern->setDayOfMonth(dayOfMonth);
+$settingsRecurrencePattern->setDayOfMonth(5);
 
-$settingsRecurrencePattern->setInterval(interval);
+$settingsRecurrencePattern->setInterval(3);
 
 
 $settingsRecurrence->setPattern($settingsRecurrencePattern);

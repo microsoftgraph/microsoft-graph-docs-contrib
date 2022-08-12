@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /security/cases/ediscoverycases/{eDiscoveryCaseId}/reviewSets/{eDiscoveryReviewSetId}/addToReviewSet
+POST /security/cases/ediscoveryCases/{eDiscoveryCaseId}/reviewSets/{eDiscoveryReviewSetId}/addToReviewSet
 ```
 
 ## Request headers
@@ -72,7 +72,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/security/cases/ediscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/addToReviewSet
+POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/addToReviewSet
 Content-Type: application/json
 
 {
