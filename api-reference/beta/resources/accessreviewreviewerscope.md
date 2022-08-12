@@ -1,6 +1,6 @@
 ---
 title: "accessReviewReviewerScope resource type"
-description: "Represents who will review an access review."
+description: "Represents reviewers of an access review or user consent requests."
 author: "zhusijia26"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The **accessReviewReviewerScope** defines who will review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) or [user and app consent requests](consentrequests-overview.md). 
+The **accessReviewReviewerScope** defines who will review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) or [user consent requests](consentrequests-overview.md). 
 
 Reviewers can be specified as a static list of users (that is, specific users, group owners, and group members) or dynamically in which every user is reviewed by their manager, group or application owners. To create a self-review (where users review their own access) in Azure AD access reviews, the **reviewers** property of the [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) should be an empty collection.
 

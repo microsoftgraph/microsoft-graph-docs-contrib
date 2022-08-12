@@ -1,6 +1,6 @@
 ---
 title: "appConsentRequest resource type"
-description: "Represents the consent request that a user creates when they request to access an app or to grant permissions to an app."
+description: "Represents the request that a user creates when they request the tenant admin for consent to access an app or to grant permissions to an app."
 author: "psignoret"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the consent request that a user creates when they request to access an app or to grant permissions to an app. The details include the app that the user wants access to be granted to on their behalf, the permissions that the user is requesting, and the details of the [userConsentRequest](userconsentrequest.md).
+Represents the request that a user creates when they request the tenant admin for consent to access an app or to grant permissions to an app. The details include the app that the user wants access to be granted to on their behalf and the permissions that the user is requesting.
 
 The user can create a consent request when an app or a permission requires admin authorization and only when the [admin consent workflow](adminconsentrequestpolicy.md) is enabled.
 
