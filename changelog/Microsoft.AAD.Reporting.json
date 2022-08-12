@@ -1849,40 +1849,6 @@
       "CreatedDateTime": "2017-03-01T00:00:00",
       "WorkloadArea": "Reports",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "ddbf91b6-c15b-4ef1-b412-b7ccc3b481c1",
-          "ApiChange": "Resource",
-          "ChangedApiName": "membershipOutlierInsight",
-          "ChangeType": "Addition",
-          "Description": "Added the [membershipOutlierInsight](https://docs.microsoft.com/en-us/graph/api/resources/membershipOutlierInsight?view=graph-rest-beta) resource type.",
-          "Target": "membershipOutlierInsight"
-        },
-        {
-          "Id": "ddbf91b6-c15b-4ef1-b412-b7ccc3b481c1",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "outlierMemberType",
-          "ChangeType": "Addition",
-          "Description": "Added the **outlierMemberType** enumeration type.",
-          "Target": "membershipOutlierInsight"
-        },
-        {
-          "Id": "ddbf91b6-c15b-4ef1-b412-b7ccc3b481c1",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "outlierContainerType",
-          "ChangeType": "Addition",
-          "Description": "Added the **outlierContainerType** enumeration type.",
-          "Target": "outlierContainerType"
-        }
-      ],
-      "Id": "ddbf91b6-c15b-4ef1-b412-b7ccc3b481c1",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2022-06-24T19:40:43.984Z",
-      "WorkloadArea": "Reports",
-      "SubArea": ""
     }
   ]
 }

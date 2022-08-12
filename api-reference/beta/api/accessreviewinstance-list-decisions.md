@@ -271,90 +271,6 @@ Content-type: application/json
                      "descriptionForAdmins": "Hello world"
                 }
             }
-        },
-        {
-            "id": "fa73e90b-5bf1-45fd-a182-35ce5fc0674d",
-            "principal": {
-                    "odata.type": "#microsoft.graph.userIdentity",
-                    "id": "a6c7aecb-cbfd-4763-87ef-e91b4bd509d9",
-                    "displayName": "Adele Vance",
-                    "userPrincipalName": "adele@contoso.com"            
-            },
-            "resource": {
-                "odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAzureRoleResource",              
-                "id": "f1edce7a-edad-49fb-83eb-b7f1eda48dd2",
-                "displayName": "Global Administrator",
-                "type": "azureRole",
-                "scope": {
-                    "id": "b649368b-d667-40c6-acc9-b45b822a3037",
-                    "displayName": "Hello world",
-                    "type": "subscription"
-                }
-            },
-            "instance": {
-                "startDate": "2018-08-03T21:02:30.667Z",
-                "endDate": "2018-08-05T21:02:30.667Z",
-                "definition": {
-                     "displayName": "Hello world",
-                     "descriptionForAdmins": "Hello world"
-                }
-            }
-        },
-        {
-            "id": "fa73e90b-5bf1-45fd-a182-35ce5fc0674d",
-            "principal": {
-                    "odata.type": "#microsoft.graph.userIdentity",
-                    "id": "a6c7aecb-cbfd-4763-87ef-e91b4bd509d9",
-                    "displayName": "John Doe",
-                    "userPrincipalName": "johndoe@contoso.com"            
-            },
-            "resource": {
-                "odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAzureRoleResource",              
-                "id": "f1edce7a-edad-49fb-83eb-b7f1eda48dd2",
-                "displayName": "Global Administrator",
-                "type": "azureRole",
-                "scope": {
-                    "id": "b649368b-d667-40c6-acc9-b45b822a3037",
-                    "displayName": "Hello world",
-                    "type": "subscription"
-                }
-            },
-            "instance": {
-                "startDate": "2018-08-03T21:02:30.667Z",
-                "endDate": "2018-08-05T21:02:30.667Z",
-                "definition": {
-                     "displayName": "Hello world",
-                     "descriptionForAdmins": "Hello world"
-                }
-            }
-        },
-        {
-            "id": "2e8e717b-a857-49f0-918a-013cf0415456",
-            "principal": {
-                    "odata.type": "#microsoft.graph.userIdentity",
-                    "id": "a6c7aecb-cbfd-4763-87ef-e91b4bd509d9",
-                    "displayName": "John Doe 1",
-                    "userPrincipalName": "johndoe1@contoso.com"            
-            },
-            "resource": {
-                "odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAzureRoleResource",              
-                "id": "20a97808-56dd-490a-97a9-73bf2344cce7",
-                "displayName": "Hello world",
-                "type": "azureRole",
-                "scope": {
-                    "id": "b649368b-d667-40c6-acc9-b45b822a3037",
-                    "displayName": "Hello world",
-                    "type": "subscription"
-                }
-            },
-            "instance": {
-                "startDate": "2018-08-03T21:02:30.667Z",
-                "endDate": "2018-08-05T21:02:30.667Z",
-                "definition": {
-                     "displayName": "Hello world",
-                     "descriptionForAdmins": "Hello world"
-                }
-            }
         }
     ]
 }
@@ -364,7 +280,6 @@ Content-type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessreviewinstancedecisionitem_expandinsights"
@@ -415,29 +330,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0')/instances('6444d4fd-ab55-4608-8cf9-c6702d172bcc')/decisions",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0')/instances('6444d4fd-ab55-4608-8cf9-c6702d172bcc')/decisions(insights())",
     "@odata.count": 2,
     "value": [
         {
             "id": "e6cafba0-cbf0-4748-8868-0810c7f4cc06",
             "accessReviewId": "6444d4fd-ab55-4608-8cf9-c6702d172bcc",
-            "reviewedDateTime": null,
-            "decision": "NotReviewed",
-            "justification": "",
-            "appliedDateTime": null,
             "applyResult": "New",
             "recommendation": "Approve",
             "principalLink": "https://graph.microsoft.com/v1.0/users/04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
             "resourceLink": "https://graph.microsoft.com/v1.0/groups/98f41dad-68d5-42f6-a50f-ddd75c5c5539",
             "reviewedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
+                "id": "00000000-0000-0000-0000-000000000000"
             },
             "appliedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
+                "id": "00000000-0000-0000-0000-000000000000"
             },
             "resource": {
                 "id": "98f41dad-68d5-42f6-a50f-ddd75c5c5539",
@@ -446,9 +353,7 @@ Content-Type: application/json
             },
             "principal": {
                 "@odata.type": "#microsoft.graph.userIdentity",
-                "id": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
-                "displayName": "Diego Siciliani",
-                "userPrincipalName": "DiegoS@contoso.com"
+                "id": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf"
             },
             "insights@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0')/instances('6444d4fd-ab55-4608-8cf9-c6702d172bcc')/decisions('e6cafba0-cbf0-4748-8868-0810c7f4cc06')/insights",
             "insights": [
