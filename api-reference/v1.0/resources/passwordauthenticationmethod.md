@@ -22,7 +22,7 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |:-------------|:------------|:------------|
 |[List passwordMethod](../api/authentication-list-passwordmethods.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) collection | Read the properties and relationships of a user's **passwordAuthenticationMethod** objects. |
 |[Get passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Read the properties and relationships of a user's **passwordAuthenticationMethod** object. |
-|[Reset password](../api/passwordauthenticationmethod-resetpassword.md)|None|Reset a user's password in the cloud and, if synced, on-premises.|
+|[Reset password](../api/authenticationmethod-resetpassword.md)|None|Reset a user's password in the cloud and, if synced, on-premises.|
 
 ## Properties
 

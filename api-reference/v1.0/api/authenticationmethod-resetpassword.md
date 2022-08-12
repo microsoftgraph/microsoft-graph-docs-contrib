@@ -1,5 +1,5 @@
 ---
-title: "passwordAuthenticationMethod: resetPassword"
+title: "authenticationMethod: resetPassword"
 description: "Reset a user's password."
 ms.localizationpriority: medium
 author: "zhvolosh"
@@ -59,10 +59,11 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 |newPassword|String|The new password. Required for tenants with hybrid password scenarios. If omitted for a cloud-only password, the system returns a system-generated password. This is a unicode string with no other encoding. It is validated against the tenant's banned password system before acceptance, and must adhere to the tenant's cloud and/or on-premises password requirements.|
+|requireChangeOnNextSignIn|Boolean | Specifies whether the user must change their password at their next sign in.|
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and a **Location** header with a URL to check the status of the reset operation.
+If successful, this method returns a `202 Accepted` response code and a [passwordResetResponse](../resources/passwordresetresponse.md) in the response body. The response body may also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
 
 If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
 
@@ -157,11 +158,11 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 202 ACCEPTED
-Location: https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/operations/77bafe36-3ac0-4f89-96e4-a4a5a48da851?aadgdc=DUB02P&aadgsu=ssprprod-a
+Location: https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/operations/77bafe36-3ac0-4f89-96e4-a4a5a48da851?aadgdc=DUB02P&aadgsu=ssprprod-a
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.passwordResetResponse",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordResetResponse",
     "newPassword": "Cuyo5459"
 }
 ```

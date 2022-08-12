@@ -77,6 +77,9 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_passwordauthenticationmethod"
 }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490
+```
 
 
 ### Response
@@ -96,6 +99,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('67273bfa-5cd8-477a-acf7-e13ff81ebf70')/authentication/passwordMethods/$entity",
   "id": "28c10230-6103-485e-b985-444c60001490",
   "password": null,
   "creationDateTime": null

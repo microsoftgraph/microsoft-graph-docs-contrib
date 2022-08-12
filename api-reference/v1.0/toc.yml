@@ -5077,7 +5077,7 @@ items:
             - name: Get
               href: api/passwordauthenticationmethod-get.md
             - name: Reset
-              href: api/passwordauthenticationmethod-resetpassword.md
+              href: api/authenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/longrunningoperation-get.md
           - name: Temporary Access Pass

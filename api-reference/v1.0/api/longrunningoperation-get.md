@@ -12,7 +12,7 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 
-Retrieve the status of a long-running operation, represented by a [longRunningOperation](../resources/longrunningoperation.md) object. A long-running operation is initiated when you [reset a user's password](passwordauthenticationmethod-resetpassword.md). This resource type is also the base type for the richLongRunningOperation object that represents the status of a long-running operation on a [site](../resources/site.md) or a [list](../resources/list.md).
+Retrieve the status of a long-running operation, represented by a [longRunningOperation](../resources/longrunningoperation.md) object. A long-running operation is initiated when you [reset a user's password](authenticationmethod-resetpassword.md). This resource type is also the base type for the richLongRunningOperation object that represents the status of a long-running operation on a [site](../resources/site.md) or a [list](../resources/list.md).
 
 The possible states of the long-running operation are `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue` where `succeeded` and `failed` are terminal states.
 
@@ -68,11 +68,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_operation"
+  "name": "get_longrunningoperation"
 }-->
 
 ```msgraph-interactive
-GET /users/{id | userPrincipalName}/authentication/operations/{id}
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
 ### Response
@@ -84,7 +84,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.operation"
+  "@odata.type": "microsoft.graph.longRunningOperation"
 } -->
 
 ```http

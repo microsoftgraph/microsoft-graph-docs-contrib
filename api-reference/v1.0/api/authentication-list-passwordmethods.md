@@ -79,7 +79,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/authentication/passwordMethods
+GET https://graph.microsoft.com/v1.0/me/authentication/passwordMethods
 ```
 
 ### Response
@@ -100,13 +100,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "28c10230-6103-485e-b985-444c60001490",
-      "password": null,
-      "creationDateTime": null
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('67273bfa-5cd8-477a-acf7-e13ff81ebf70')/authentication/passwordMethods",
+    "value": [
+        {
+            "id": "28c10230-6103-485e-b985-444c60001490",
+            "password": null,
+            "createdDateTime": null
+        }
+    ]
 }
 ```
 

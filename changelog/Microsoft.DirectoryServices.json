@@ -197,42 +197,6 @@
     {
       "ChangeList": [
         {
-          "Id": "57605124-495d-44fe-82ed-98dff8bb9c17",
-          "ApiChange": "Method",
-          "ChangedApiName": "directory",
-          "ChangeType": "Addition",
-          "Description": "Added support for [restoring deleted service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-beta) and [permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-beta).",
-          "Target": "directory"
-        }
-      ],
-      "Id": "57605124-495d-44fe-82ed-98dff8bb9c17",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2022-07-13T00:00:00.000Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "cab24518-1fdb-44a8-997b-2a6a07e8e15c",
-          "ApiChange": "Method",
-          "ChangedApiName": "directory",
-          "ChangeType": "Addition",
-          "Description": "Added support for [restoring deleted service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-1.0) and [permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/directory-deleteditems-delete?view=graph-rest-1.0).",
-          "Target": "directory"
-        }
-      ],
-      "Id": "cab24518-1fdb-44a8-997b-2a6a07e8e15c",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-07-13T00:00:00.000Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "6c83378e-32f7-4a90-be50-fba95f7890ae",
           "ApiChange": "Method",
           "ChangedApiName": "reprocess",

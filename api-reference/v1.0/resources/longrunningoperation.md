@@ -46,7 +46,6 @@ Here is a JSON representation of the resource.
   "status": "String",
   "statusDetail": "String"
 }
-}
 ```
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
