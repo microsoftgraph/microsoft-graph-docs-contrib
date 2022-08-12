@@ -33,9 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Global administrator
-* Privileged authentication administrator
-* Authentication administrator
+* Global Administrator
+* Privileged Authentication Administrator
+* Authentication Administrator
 
 ## HTTP request
 
@@ -90,7 +90,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
+POST https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 Content-type: application/json
 
 {
@@ -111,7 +111,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 202 Accepted
 Content-type: application/json
-Location: https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/operations/88e7560c-9ebf-435c-8089-c3998ac1ec51?aadgdc=DUB02P&aadgsu=ssprprod-a
+Location: https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/operations/88e7560c-9ebf-435c-8089-c3998ac1ec51?aadgdc=DUB02P&aadgsu=ssprprod-a
 
 {}
 ```
@@ -140,16 +140,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
-```
-# [C#](#tab/csharp)
-
-# [JavaScript](#tab/javascript)
-
-
-# [Objective-C](#tab/objc)
-
-# [Java](#tab/java)
+POST https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 
 
 #### Response

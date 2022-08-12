@@ -1,6 +1,6 @@
 ---
-title: "Get authentication operation"
-description: "Retrieve the properties and relationships of an operation object."
+title: "Get longRunningOperation"
+description: "Retrieve the status of a long-running operation."
 ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"

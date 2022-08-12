@@ -1,6 +1,6 @@
 ---
 title: "Get passwordAuthenticationMethod"
-description: "Retrieve the properties and relationships of passwordauthenticationmethod object."
+description: "Retrieve a user's passwordAuthenticationMethod object."
 ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 
-Retrieve the properties and relationships of a [password authentication method](../resources/passwordauthenticationmethod.md) object. 
+Retrieve a password that's registered to a user, represented by a [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) object. For security, the password itself will never be returned in the object and the **password** property is always `null`.
 
 ## Permissions
 
@@ -35,10 +35,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global administrator
-* Global reader
-* Privileged authentication administrator
-* Authentication administrator (only sees masked phone numbers)
+* Global Administrator
+* Global Reader
+* Privileged Authentication Administrator
+* Authentication Administrator
 
 ## HTTP request
 
