@@ -2,7 +2,7 @@
 title: "group: validateProperties"
 description: "Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "psaffaie"
 ms.prod: "groups"
 doc_type: "apiPageType"
 ---
@@ -11,9 +11,10 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.  Clients can use this API to determine whether a display name or mail nickname is valid before trying to [update](group-update.md) a Microsoft 365 group. To validate the properties before creating a group, use the [directoryobject:validateProperties](directoryobject-validateproperties.md) function.
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies. Clients can use this API to determine whether a display name or mail nickname is valid before trying to [update](group-update.md) a Microsoft 365 group. To validate the properties before creating a group, use the [directoryobject:validateProperties](directoryobject-validateproperties.md) function.
 
 The following policy validations are performed for the display name and mail nickname properties:
+
 1. Validate the prefix and suffix naming policy
 2. Validate the custom banned words policy
 
@@ -23,36 +24,39 @@ This API only returns the first validation failure that is encountered. If the p
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Group.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Group.Read.All, Group.ReadWrite.All         |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
-``` http
+
+```http
 POST /groups/{id}/validateProperties
 ```
 
 ## Request headers
 
-| Name           | Description      |
-|:---------------|:-----------------|
-| Authorization  | Bearer {token}. Required.    |
-| Content-Type   | application/json |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type   |Description|
-|:---------------|:--------|:----------|
-|displayName|String| The display name of the group to validate. The property is not individually required. However, at least one property (**displayName** or **mailNickname**) is required. |
-|mailNickname|String| The mail nickname of the group to validate. The property is not individually required. However, at least one property (**displayName** or **mailNickname**) is required. |
-|onBehalfOfUserId|Guid| The ID of the user to impersonate when calling the API. The validation results are for the **onBehalfOfUserId's** attributes and roles. |
+| Parameter        | Type   | Description                                                                                                                                                              |
+| :--------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName      | String | The display name of the group to validate. The property is not individually required. However, at least one property (**displayName** or **mailNickname**) is required.  |
+| mailNickname     | String | The mail nickname of the group to validate. The property is not individually required. However, at least one property (**displayName** or **mailNickname**) is required. |
+| onBehalfOfUserId | Guid   | The ID of the user to impersonate when calling the API. The validation results are for the **onBehalfOfUserId's** attributes and roles.                                  |
 
 ## Response
+
 If successful and there are no validation errors, the method returns `204 No Content` response code. It does not return anything in the response body.
 
 If the request is invalid, the method returns `400 Bad Request` response code. An error message with details about the invalid request is returned in the response body.
@@ -62,16 +66,19 @@ If there is a validation error. The method returns `422 Unprocessable Entity` re
 ## Examples
 
 ### Example 1: Successful validation request
+
 This is an example of a successful validation request.
 
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_validateproperties"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
 
@@ -81,16 +88,13 @@ Content-type: application/json
   "onBehalfOfUserId": "onBehalfOfUserId-value"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -107,21 +111,24 @@ Content-type: application/json
 
 ---
 
-
 #### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Request with validation errors
+
 This is an example of a request with validation errors.
 
 #### Request
-``` http
+
+```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
 
@@ -132,6 +139,7 @@ Content-type: application/json
 ```
 
 #### Response
+
 ```http
 HTTP/1.1 422
 Content-type: application/json
@@ -166,4 +174,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

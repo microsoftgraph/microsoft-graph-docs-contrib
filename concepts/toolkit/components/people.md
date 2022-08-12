@@ -2,7 +2,7 @@
 title: "People component in the Microsoft Graph Toolkit"
 description: "You can use the `mgt-people` web component to display a group of people or contacts by using their photos or initials."
 ms.localizationpriority: medium
-author: nmetulev
+author: sebastienlevert
 ---
 
 # People component in the Microsoft Graph Toolkit

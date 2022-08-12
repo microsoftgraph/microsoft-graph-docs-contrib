@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1946
+Content-Length: 2382
 
 {
   "value": {
@@ -101,6 +101,18 @@ Content-Length: 1946
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "renewalThresholdPercentage": 10,
+    "subjectNameFormat": "commonNameIncludingEmail",
+    "certificateValidityPeriodValue": 14,
+    "certificateValidityPeriodScale": "months",
+    "extendedKeyUsages": [
+      {
+        "@odata.type": "microsoft.graph.extendedKeyUsage",
+        "name": "Name value",
+        "objectIdentifier": "Object Identifier value"
+      }
+    ],
+    "subjectAlternativeNameType": "emailAddress",
     "certificationAuthority": "Certification Authority value",
     "certificationAuthorityName": "Certification Authority Name value",
     "certificationAuthorityType": "microsoft",

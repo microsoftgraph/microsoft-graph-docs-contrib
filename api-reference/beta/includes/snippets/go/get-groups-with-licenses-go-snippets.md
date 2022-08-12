@@ -7,14 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.GroupsRequestBuilderGetQueryParameters{
-	Select: "id,assignedLicenses",
+requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
+	Select: [] string {"id","assignedLicenses"},
 	Filter: "assignedLicenses/any()",
 }
-options := &msgraphsdk.GroupsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.GroupsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Groups().Get(options)
+
+result, err := graphClient.Groups().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

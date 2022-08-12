@@ -9,6 +9,9 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 CloudPcOrganizationSettings cloudPcOrganizationSettings = new CloudPcOrganizationSettings();
 cloudPcOrganizationSettings.userAccountType = CloudPcUserAccountType.STANDARD_USER;
 cloudPcOrganizationSettings.osVersion = CloudPcOperatingSystem.WINDOWS11;
+CloudPcWindowsSettings windowsSettings = new CloudPcWindowsSettings();
+windowsSettings.language = "en-US";
+cloudPcOrganizationSettings.windowsSettings = windowsSettings;
 
 graphClient.deviceManagement().virtualEndpoint().organizationSettings()
 	.buildRequest()

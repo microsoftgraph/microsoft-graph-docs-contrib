@@ -27,7 +27,7 @@ ServicePrincipals that don’t have any existing valid certificates (i.e.: no ce
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All, Application.ReadWrite.All, Directory.ReadWrite.All   |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | None.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -90,6 +90,7 @@ Content-type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -145,6 +146,7 @@ Content-type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

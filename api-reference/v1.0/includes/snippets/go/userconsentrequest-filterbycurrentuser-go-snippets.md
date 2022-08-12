@@ -7,15 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UserConsentRequestRequestBuilderGetQueryParameters{
-	Filter: "%20(status%20eq%20'Completed')",
+requestParameters := &graphconfig.UserConsentRequestRequestBuilderGetQueryParameters{
+	Filter: " ",
 }
-options := &msgraphsdk.UserConsentRequestRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.UserConsentRequestRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-appConsentRequestId := "appConsentRequest-id"
-userConsentRequestId := "userConsentRequest-id"
-result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById(&appConsentRequestId).UserConsentRequestsById(&userConsentRequestId).Get(options)
+
+result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById("appConsentRequest-id").UserConsentRequestsById("userConsentRequest-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

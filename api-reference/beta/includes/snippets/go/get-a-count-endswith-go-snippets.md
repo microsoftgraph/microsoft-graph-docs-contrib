@@ -7,19 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
+headers := map[string]string{
+	"ConsistencyLevel": "eventual",
+}
+requestParameters := &graphconfig.UsersRequestBuilderGetQueryParameters{
 	Filter: "endswith(mail,'a@contoso.com')",
-	Orderby: "userPrincipalName",
+	Orderby: [] string {"userPrincipalName"},
 	Count: true,
 }
-headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+configuration := &graphconfig.UsersRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
 }
-options := &msgraphsdk.UsersRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
-}
-result, err := graphClient.Users().Get(options)
+
+result, err := graphClient.Users().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

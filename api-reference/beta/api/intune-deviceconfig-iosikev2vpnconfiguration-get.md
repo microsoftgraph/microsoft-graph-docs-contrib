@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6087
+Content-Length: 6222
 
 {
   "value": {
@@ -148,7 +148,11 @@ Content-Length: 6087
         "domains": [
           "Domains value"
         ],
-        "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
+        "probeRequiredUrl": "https://example.com/probeRequiredUrl/",
+        "interfaceTypeMatch": "ethernet",
+        "dnsServerAddressMatch": [
+          "Dns Server Address Match value"
+        ]
       }
     ],
     "providerType": "appProxy",

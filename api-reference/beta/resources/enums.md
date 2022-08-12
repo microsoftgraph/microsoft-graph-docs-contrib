@@ -11,6 +11,73 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+
+### teamTemplateAudience values 
+
+|Member|
+|:---|
+|organization|
+|user|
+|public|
+|unknownFutureValue|
+
+### decisionItemPrincipalResourceMembershipType values 
+
+|Member|
+|:---|
+|direct|
+|indirect|
+|unknownFutureValue|
+
+### signInFrequencyAuthenticationType values
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### signInFrequencyInterval values
+
+|Member|
+|:---|
+|timeBased|
+|everyTime|
+
+#### authenticationProtocol values
+
+|Member|
+|:---|
+|wsFed|
+|saml|
+|unknownFutureValue|
+
+#### federatedIdpMfaBehavior values
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
+#### promptLoginBehavior values
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|disabled|
+|unknownFutureValue|
+
+### bookingsAvailabilityStatus values
+
+|Member|
+|:-----|
+|available|
+|busy|
+|slotsAvailable|
+|outOfOffice|
+|unknownFutureValue|
+
 ### accessPackageCustomExtensionHandlerStatus values 
 
 |Member|
@@ -101,6 +168,7 @@ Namespace: microsoft.graph
 |saml11|
 |saml20|
 |unknownFutureValue|
+|remoteDesktopToken|
 
 ### protocolType values 
 
@@ -473,6 +541,16 @@ Namespace: microsoft.graph
 |screenSharing|
 |unknownFutureValue|
 
+### endpointType values
+
+|Member|
+|:---|
+|default|
+|voicemail|
+|skypeForBusiness|
+|skypeForBusinessVoipPhone|
+|unknownFutureValue|
+
 ### kerberosSignOnMappingAttributeType values
 
 |Member|
@@ -554,6 +632,37 @@ Namespace: microsoft.graph
 |alternateMobilePhone|
 |mobilePhoneAndSMS|
 |unknownFutureValue|
+
+
+### defaultMfaMethodType values 
+
+
+
+|Member|
+|:---|
+|none|
+|mobilePhone|
+|alternateMobilePhone|
+|officePhone|
+|microsoftAuthenticatorPush|
+|softwareOneTimePasscode|
+|unknownFutureValue|
+
+
+### clientCredentialType values 
+
+
+
+|Member|
+|:---|
+|none|
+|clientSecret|
+|clientAssertion|
+|federatedIdentityCredential|
+|managedIdentity|
+|certificate|
+|unknownFutureValue|
+
 
 ### azureADLicenseType values
 
@@ -876,6 +985,15 @@ Namespace: microsoft.graph
 |returned|
 |unknownFutureValue|
 |reassigned|
+
+### educationFeedbackResourceOutcomeStatus values
+|Member|
+|:---|
+|notPublished|
+|pendingPublish|
+|published|
+|failedPublish|
+|unknownFutureValue|
 
 ### externalEmailOtpState values
 
@@ -1755,7 +1873,7 @@ Possible feedback values on the alert provided by an analyst.
 
 ### registryHive values
 
-Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
+Enum for registry hives as defined by [Registry Hives](/windows/desktop/sysinfo/registry-hives).
 
 | Member                  | Value | Description                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -2189,6 +2307,16 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 |deviceFilterIncludeRuleNotMatched|
 |allDeviceStates|
+|anonymizedIPAddress|
+|unfamiliarFeatures|
+|nationStateIPAddress|
+|realTimeThreatIntelligence|
+|internalGuest|
+|b2bCollaborationGuest|
+|b2bCollaborationMember|
+|b2bDirectConnectUser|
+|otherExternalUser|
+|serviceProvider|
 
 ### signInAccessType values 
 
@@ -2695,6 +2823,7 @@ Possible values for user account types (group membership), per Windows definitio
 |skypeUser|
 |phoneUser|
 |unknownFutureValue|
+|emailUser|
 
 ### callRecordingStatus values
 
@@ -2704,23 +2833,6 @@ Possible values for user account types (group membership), per Windows definitio
 |failure|
 |initial|
 |chunkFinished|
-|unknownFutureValue|
-
-### simulationStatus values
-
-|Member|
-|:---|
-|unknown|
-|draft|
-|inProgress|
-|scheduled|
-|completed|
-|partiallyCompleted|
-|failed|
-|cancelled|
-|excluded|
-|deleted|
-|included|
 |unknownFutureValue|
 
 ### payloadDeliveryPlatform values
@@ -2863,6 +2975,8 @@ Possible values for user account types (group membership), per Windows definitio
 |viewer|
 |externalGuest|
 |unknownFutureValue|
+|scheduler|
+|member|
 
 ### bookingReminderRecipients values 
 
@@ -2945,4 +3059,143 @@ Possible values for user account types (group membership), per Windows definitio
 |running|
 |succeeded|
 |failed|
+|unknownFutureValue|
+
+### delegatedAdminAccessAssignmentStatus values 
+
+|Member|
+|:---|
+|pending|
+|active|
+|deleting|
+|deleted|
+|error|
+|unknownFutureValue|
+
+### delegatedAdminAccessContainerType values 
+
+|Member|
+|:---|
+|securityGroup|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipOperationType values 
+
+|Member|
+|:---|
+|delegatedAdminAccessAssignmentUpdate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestAction values 
+
+|Member|
+|:---|
+|lockForApproval|
+|terminate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestStatus values 
+
+|Member|
+|:---|
+|created|
+|pending|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipStatus values 
+
+|Member|
+|:---|
+|activating|
+|active|
+|approvalPending|
+|approved|
+|created|
+|expired|
+|expiring|
+|terminated|
+|terminating|
+|terminationRequested|
+|unknownFutureValue|
+
+### longRunningOperationStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|skipped|
+|unknownFutureValue|
+
+### submissionCategory values 
+
+|Member|
+|:---|
+|notJunk|
+|spam|
+|phishing|
+|malware|
+|unknownFutureValue|
+
+### submissionClientSource values 
+
+|Member|
+|:---|
+|microsoft|
+|other|
+|unknownFutureValue|
+
+### submissionContentType values 
+
+|Member|
+|:---|
+|email|
+|url|
+|file|
+|app|
+|unknownFutureValue|
+
+### submissionResultCategory values 
+
+|Member|
+|:---|
+|notJunk|
+|spam|
+|phishing|
+|malware|
+|allowedByPolicy|
+|blockedByPolicy|
+|spoof|
+|unknown|
+|noResultAvailable|
+|unknownFutureValue|
+
+### submissionSource values 
+
+|Member|
+|:---|
+|user|
+|administrator|
+|unknownFutureValue|
+
+### tenantAllowBlockListAction values 
+
+|Member|
+|:---|
+|allow|
+|block|
+|unknownFutureValue|
+
+### tenantAllowBlockListEntryType values 
+
+|Member|
+|:---|
+|url|
+|fileHash|
+|sender|
+|recipient|
 |unknownFutureValue|
