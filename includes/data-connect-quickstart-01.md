@@ -32,7 +32,7 @@ To complete this lab, you will need the following subscriptions or licenses.
 
    - If you do not have one, you can get one (for free) in our [Azure website](https://azure.microsoft.com/free/).
    - The account used to sign in must have the **Global administrator** role granted to it.
-   - The Azure subscription must be in the same tenant as the Microsoft 365 tenant, as Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants.
+   - The Azure subscription must be in the same tenant as the Microsoft 365 tenant, as Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants. If your Azure subscription is not in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Azure Active Directory in your Microsoft 365 tenant. To do so, follow the steps listed in [Associate or add an Azure subscription to your Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
    - Your Microsoft 365 and Azure tenants must be in the same Microsoft Azure Active Directory tenancy.
 
 1. Make sure you have [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine.
