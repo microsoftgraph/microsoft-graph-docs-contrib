@@ -37,13 +37,15 @@ We have multiple datasets for each of the groups organized in the below
 * One Drive/Sharepoint (ODSP)
 * Viva Insights
 
-We plan to add new datasets going forward and will disclose timelines as appropriate. 
+New datasets are added to Microsoft Graph Data Connect on a regular basis. Please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets) for the complete list.
 
-Please note that for datasets for ODSP and Viva Insights are only available to customers in preview or ones that have the Viva Insights license respectively. These datasets are only available to customers who have opted in for those datasets.
+## Which datasets are in Preview and which ones are in General Availability?
+
+Datasets under the ODSP and Viva Insights section are currently available for customers in Preview or have the Viva Insights license respectively. For more information on how to sign up for Preview for certain datasets, please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets).
 
 ## How much do I have to pay for Microsoft Graph Data Connect?
 
-Microsoft Graph Data Connect consumption charges are billed monthly on a pay-as-you-go basis. The Data Connect billing unit is in a multiple of 1000s of objects, where 1 object maps to 1 individual instance of an entity in Microsoft 365. For example, 1 email == 1 object, 1 file == 1 object, 1 Teams chat message == 1 object, and so on. Charges are calculated by using a flat rate based on the count of per-1,000 objects extracted through the connector. 
+Microsoft Graph Data Connect consumption charges are billed monthly on a pay-as-you-go basis. The Data Connect billing unit is in a multiple of 1000s of objects, where 1 object maps to 1 individual instance of an entity in Microsoft 365. For example, 1 email == 1 object, 1 file == 1 object, 1 Teams chat message == 1 object, and so on. 
 
 We have some datasets available for free or are currently free in preview while other datasets are charged. Microsoft Graph Data Connect offers datasets across multiple different Microsoft 365 products and services. For more information on datasets that are available through Microsoft Graph Data Connect, please refer to, please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets).
 
@@ -59,11 +61,11 @@ There is no charge for extraction of objects from the following datasets:
 
 ## How is billing calculated?
 
-As mentioned earlier, customers are charged monthly. However, Microsoft Graph Data Connect does fractionable rounding up. Each extraction is billed separately, which may impact the monthly bill due to fractional rounding up.
+Customers are charged monthly and Microsoft Graph Data Connect does fractionable rounding up. Additionally, each pipeline run is billed separately.
 
-For example, a customer has 20 extractions within the month, each yielding 500 rows. In total, the customer extracted 10,000 rows that month. However, their bill will not simply be 10,000 rows/1000 rows = 10 units. 
+For example, a customer has 20 pipeline runs within the month, each yielding 500 rows. In total, the customer runs pipelines for 10,000 rows that month. However, their bill will not simply be 10,000 rows/1000 rows = 10 units. 
 
-Instead, the customer will be billed for 20 units due to Microsoft Graph Data Connect rounding up fraction. Since 500 rows /1000 rows = 0.5 and 0.5 is a fraction, it will be rounded to 1. The customer will be billed one unit per extraction, resulting in 20 units billed in total.
+Instead, the customer will be billed for 20 units due to Microsoft Graph Data Connect rounding up fraction. Since 500 rows /1000 rows = 0.5 and 0.5 is a fraction, it will be rounded to 1. The customer will be billed one unit per pipeline run, resulting in 20 units billed in total.
 
 ##  What can I do if a dataset is not yet supported for my tenant?
 
