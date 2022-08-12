@@ -1,73 +1,71 @@
 ---
-title: "Microsoft Graph connectors SDK troubleshooting"
+title: "Troubleshoot issues with the Microsoft Graph connectors SDK"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Microsoft Graph connectors SDK troubleshooting"
+description: "Learn how to troubleshoot issues with the Microsoft Graph connectors SDK."
 ---
 
-# Microsoft Graph connectors SDK troubleshooting
+# Troubleshoot issues with the Microsoft Graph connectors SDK
 
-In this article, you can find some of the most common issues with the Microsoft Graph connectors SDK, and how to troubleshoot them.
+This article describes some of the most common issues with the Microsoft Graph connectors SDK, and how to troubleshoot them.
 
-## Troubleshooting items missing from the index
+## Items missing from the index
 
-If previously present items are missing from the index, it could be due to the delete detection logic in the platform.
-The items missing from a success response in [OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) but already in the index will be removed from the index.
-If the connector sends transient failure responses too, and more than 10% of the items have resulted in crawl failures, the items that aren't seen in the last 2 crawls will get deleted.
+If items that previously existed are missing from the index, this might be due to the delete detection logic in the platform. Items missing from a success response in [OperationStatus](/graph/custom-connector-sdk-contracts-common#operationstatus) that are already in the index will be removed from the index.
 
-## Updating port mapping configuration file
+If the connector sends transient failure responses, and more than 10% of the items resulted in crawl failures, items that aren't included in the last two crawls will be deleted.
 
-When the connector needs to run on a different port, the port map configuration file has to be updated with the new values. Whenever port map configuration file is edited the GCA service must be restarted for the changes to take effect. To restart this, open services.msc and restart GcaHostService:
+## Handle connector port changes
 
-![Services window](images/connectors-sdk/services.png)
+When the connector needs to run on a different port, you need to update the port map configuration file with the new values. When you edit the port map configuration file, you must restart the GCA service for the changes to take effect. To restart the service, open services.msc and restart **GcaHostService**.
 
-## Troubleshooting connector service unavailability
+![Screenshot of the services window with GcaHostService running](images/connectors-sdk/services.png)
 
-If the crawls are failing with connector unavailable on specified port, check the following scenarios:  
+## Connector service is unavailable
 
-1. The connector is indeed running on the specified port and hasn't crashed or got stuck.
+If the crawls are failing with a connector unavailable on specified port error, verify the following:  
 
+1. The connector is indeed running on the specified port and hasn't crashed and isn't stuck.
 2. The port specified in the port map configuration file is correct.
+3. If the port map configuration file has been edited, be sure to restart **GcaHostService**.
 
-3. If the port map configuration file has been edited, make sure that the GcaHostService was restarted as mentioned in [Updating port mapping configuration](#updating-port-mapping-configuration-file).
+## Handle RPC errors
 
-## Handling RPC errors
+If you see any RPC errors during the communication between the Microsoft Graph connector agent platform and the connector, you can look up the error codes on the [status codes](https://grpc.github.io/grpc/core/md_doc_statuscodes.html) page.
 
-If you see any RPC errors during the communication between the Graph connector Agent platform and the connector, check [this](https://grpc.github.io/grpc/core/md_doc_statuscodes.html) page to see the explanation of RPC error codes.
+If the error code is **Unknown**, there's likely an unhandled exception in your connector code. Make sure that you send a response with success/failure operation status in all cases.
 
-If the error code is Unknown, the most likely reason is that there's some unhandled exception in your connector code. Make sure you provide a proper response is sent with success/failure operation status in all cases.
+## Errors with hosting a connector as a Windows service
 
-## Troubleshooting errors while hosting the connector as a windows service
+### Service failed to start due to Access denied error
 
-### Starting service failed due to Access denied error
+Use the following steps to make sure that the path of the executable is accessible to the LocalSystem account.
 
-Make sure the path of the executable is accessible to Local System account.
+1. Right-click the folder that contains the executable and choose **Properties**.
 
-1. Select and hold (or right-click) the folder containing the executable and choose Properties.
+2. Open the **Security** tab and under **Group or user names**, choose **Edit**.
 
-2. Open Security tab and select on Edit under Group or user names
+    ![Screenshot of the Edit button on the Security tab](images/connectors-sdk/troubleshoot1.png)
 
-    ![Screenshot10](images/connectors-sdk/troubleshoot1.png)
+3. Choose **Add**.
 
-3. Select on Add
+   ![Screenshot of the Security tab with the Add button selected](images/connectors-sdk/troubleshoot2.png)
 
-   ![Screenshot11](images/connectors-sdk/troubleshoot2.png)
+4. Enter LOCAL SERVICE as the object name and choose **Check Names**.
 
-4. Enter LOCAL SERVICE as the object name and select on Check Names
+    ![Screenshot of the Object name field with Local Service input](images/connectors-sdk/troubleshoot3.png)
 
-    ![Screenshot12](images/connectors-sdk/troubleshoot3.png)
+5. Choose **OK** on each dialog box.
 
-5. Select OK in all the dialog boxes.
+### Service fails to start with any error
 
-### Starting service fails with any error
+If the service fails to start, check the event viewer error logs. Open the event viewer and go to **Windows logs > Application** and **Windows logs > System**.
 
-Check the error logs from event viewer. Search for event viewer app and open it. Check for error logs under **Windows logs > Application** and **Windows logs > System**
-
-![Screenshot13](images/connectors-sdk/troubleshoot4.png)
+![Screenshot of the error logs in the event viewer](images/connectors-sdk/troubleshoot4.png)
 
 ## See also
 
-* [Best practices to follow while developing your connector](/graph/custom-connector-sdk-best-practices)
+* [Best practices](/graph/custom-connector-sdk-best-practices)
