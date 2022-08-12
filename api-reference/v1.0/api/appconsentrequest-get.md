@@ -107,13 +107,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests/$entity",
     "id": "7322e5f3-0f15-4eb8-9e82-2029e8622f5d",
     "appId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
     "appDisplayName": "Graph Explorer",
     "consentType": "Dynamic",
     "pendingScopes": [],
-    "userConsentRequests@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('7322e5f3-0f15-4eb8-9e82-2029e8622f5d')/userConsentRequests",
+    "userConsentRequests@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('7322e5f3-0f15-4eb8-9e82-2029e8622f5d')/userConsentRequests",
     "userConsentRequests": []
 }
 ```
