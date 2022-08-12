@@ -47,7 +47,7 @@ In this step, you will setup your Microsoft 365 tenant to enable usage of Micros
 
 In this step, you will enable the Microsoft Graph Data Connect service on your Microsoft 365 tenant.
 
-1. While you are still signed in to the Microsoft 365 Admin Portal, select the **Settings > Org settings** menu item.
+1. While you are still signed in to the Microsoft 365 Admin Portal, select the **Settings > Org settings** menu item. You might have to click **Show all** before you are able to view **Settings**.
 
 1. Select the **Microsoft Graph Data Connect** service.
 
