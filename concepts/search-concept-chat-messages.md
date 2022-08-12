@@ -12,13 +12,13 @@ Use the Microsoft Search API in Microsoft Graph to search for information in Tea
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-Teams Message search also looks for attachments. The [supported file types](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for message attachment search are the same as those for SharePoint Online search.
+Teams message search also looks for attachments. The [supported file types](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for message attachment search are the same as those for SharePoint Online search.
 
 ## Examples
 ### Example 1: Search Teams chat message
 
 #### Request
-The following example queries Teams chat message in the signed-in user's Teams chat storage that contain the string "test" in any part of the chat message (the sender name,  message body, or any attachments). The query returns the first 25 results. The search results are ordered by **DateTime** descending.
+The following example queries Teams chat messages in the signed-in user's Teams chat storage that contain the string "test" in any part of the chat message (the sender name,  message body, or any attachments). The query returns the first 25 results. The search results are ordered by descending **dateTime**.
 
 <!-- {
   "blockType": "request",
@@ -189,25 +189,25 @@ Content-type: application/json
 
 ### Example 3: Search Teams Message with KQL
 
-#### Supported Scope Terms
-You can use below scope terms in your [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) query.
+#### Supported scope terms
+You can use the following  scope terms in your [Keyword Query Language (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) query.
 
 | Scope Terms                           | Description   | Example   |
 |:-----------------------------------|:--------------|:--------------------|
-| from | Search only for messages sent by scoped person | from:bob |
-| hasAttachment      | Search only for messages which contains attachment or not | hasAttachment:true |
-| IsRead       | Search only for messages which were read or not | IsRead:true | 
-| IsMentioned        | Search only for messages which mentioned you or not | IsMentioned:true | 
-| mentions      | Search only for messages which mentioned somebody | mentions:497b7a2a9e1a48d780e82965d2fc3a81 (This is user id without '-')| 
-| sent | Search only for messages sent to scoped date range | sent > 2022-07-14 | 
-| to | Search only for messages sent to scoped person, partial supported for the 1 on 1 message | to:bob |
+| from | Search only for messages sent by scoped person. | from:bob |
+| hasAttachment      | Search only for messages that contain or don't containt attachments. | hasAttachment:true |
+| IsRead       | Search only for messages that were or were not read. | IsRead:true | 
+| IsMentioned        | Search only for messages that did or did not mention you. | IsMentioned:true | 
+| mentions      | Search only for messages that mentioned somebody. | mentions:497b7a2a9e1a48d780e82965d2fc3a81 (This is user id without '-')| 
+| sent | Search only for messages sent to the scoped date range. | sent > 2022-07-14 | 
+| to | Search only for messages sent to the scoped person, partially supported for the 1-on-1 message. | to:bob |
 
 
 
 
 <!-- markdownlint-disable MD024 -->
 #### Request
-The following example demonstrates how to search a message that contains 'contoso' and Bob sent to Alice after 2022-07-14.
+The following example shows how to search a message that contains Contoso that Bob sent to Alice after 2022-07-14.
 
 <!-- {
   "blockType": "request",
@@ -290,11 +290,11 @@ Content-type: application/json
 
 ## Known limitations
 
-- You can access only the signed-in user’s Teams message or the message the user is included in.
-- Search Teams API does not return all properties defined in [chatMessage](/graph/api/resources/chatmessage.md), you can use [Teams Graph API](/graph/api/chatmessage-get.md) to retrieve more details of any single message.
+- You can access only the signed-in user's Teams message or the message the user is included in.
+- The search Teams API does not return all properties defined in [chatMessage](/graph/api/resources/chatmessage.md).You can use the [Teams API](/graph/api/chatmessage-get.md) to retrieve more details about any single message.
 - For Teams messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer.md) type contains the number of results on the page, not the total number of matching results.
 - Sorting results is not supported for messages.
-- It doesn't allow to interleave with other entity types in current stage.
+- You can't use this API with other entity types at this time.
 
 
 ## Next steps
