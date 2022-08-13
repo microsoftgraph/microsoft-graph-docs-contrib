@@ -14379,9 +14379,10 @@ items:
         items:
         - name: Overview
           href: resources/report.md
-        - name: Settings
-          href: resources/adminreportsettings.md
+        - name: Admin report settings
           items:
+          - name: Admin report settings
+            href: resources/adminreportsettings.md
           - name: Get
             href: api/adminreportsettings-get.md
           - name: Update
