@@ -14,13 +14,13 @@ This article describes how to host your Microsoft Graph connector as a Windows s
 
 The connector executable must be always running so that the connector platform can make requests to it during crawls or to perform any connection management operations. The executable won't be actively consuming any resources except for the times when the connector is being crawled. The rest of the time, the connector executable will just be idle.
 
-One way to make the connector executable run continuously is to host it as a Windows service. If the executable is registered as a Windows service, the operating system will take care of starting the process, and respawning it if there's a crash.
+One way to make the connector executable run continuously is to host it as a Windows service. If the executable is registered as a Windows service, the operating system will take care of starting the process, and restarting it if the system crashes.
 
 Use the following steps to host the connector as a Windows service:
 
 1. Right-click the solution that contains the custom connector project and select **Add** > **New project**.
 
-2. Search for the "**Worker service**" template, select it, and then choose **Next**.
+2. Search for the **Worker service** template, select it, and then choose **Next**.
 
     ![Screenshot of the Add a new project page](images/connectors-sdk/service2.png)
 
