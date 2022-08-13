@@ -1,5 +1,5 @@
 ---
-title: "Test the Microsoft Graph connector"
+title: "Test your Microsoft Graph connector"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.prod: search
 description: "Follow the steps in this article to test the custom connector you built using the Microsoft Graph connectors SDK."
 ---
 
-# Test the Microsoft Graph connector
+# Test your Microsoft Graph connector
 
 You can use the [TestApp utility](/graph/custom-connector-sdk-testapp) to test your Microsoft Graph connector. This is a console application that is used to test connector before deployment. It will not create any connections or ingest any data.
 
@@ -17,6 +17,7 @@ Use the following steps to test your connector:
 1. Update the ConnectionInfo.json file with the connector ID and data source path, and set **AuthenticationKind** to `null`. This file is located in the following folder: C:\Program Files\Graph connector agent\TestApp\Config.
 
     a. The provider ID is generated for each project and is located in the ConnectorInfoServiceImpl.cs file.
+    
     ![Screenshot of the ConnectorInfoServiceImpl.cs file showing the location of the Provider ID.](images/connectors-sdk/providerid.png)
 
     b. The datasource path is the path where you downloaded the ApplianceParts.csv file.
@@ -47,6 +48,7 @@ Use the following steps to test your connector:
     ```
 
 2. Update the CustomConnectorPortMap.json file with the port mapping of the connector. This file located in the following folder C:\Program Files\Graph connector agent. Update this file with an entry for the connector ID (which you identified in the ConnectorInfoServiceImpl.cs file in the previous step) and the port, which is defined in the ConnectorServer.cs file.
+
 ![Screenshot of the ConnectorServer.cs file showing the port location](images/connectors-sdk/portmap.png)
 
     ```json
@@ -61,8 +63,6 @@ Use the following steps to test your connector:
 4. Make sure the connector is running.
 
 5. Test the connector using options 1, 2, and 3 in GraphConnectorAgentTest.exe.
-
-![Screenshot showing the GraphConnectorAgentTest.exe test run.](images/connectors-sdk/test.png)
 
 ## Next steps
 
