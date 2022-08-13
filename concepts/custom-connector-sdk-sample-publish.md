@@ -10,7 +10,9 @@ description: "Learn how to publish a custom Microsoft Graph connector to the Mic
 
 # Publish your custom Microsoft Graph connector
 
-Ths article describes how to publish your custom Microsoft Graph connector to the Microsoft 365 admin center. To publish your connector, use the following steps:
+Ths article describes how to publish your custom Microsoft Graph connector to the Microsoft 365 admin center. 
+
+To publish your connector, use the following steps:
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
