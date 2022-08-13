@@ -21,15 +21,16 @@ This article describes how to use the Microsoft Graph connector SDK to build a c
 ## Install the extension
 
 1. Open Visual Studio and go to **Extensions** > **Manage extensions**.
-2. Search for the "**GraphConnectorsTemplate**" extension and download it.
+2. Search for the **GraphConnectorsTemplate** extension and download it.
 3. Close and relaunch Visual Studio to install the template.
 4. Go to **File** > **New** > **Project** and search for **GraphConnectorsTemplate**. Select the template and choose **Next**.
-    ![Create project from template](images/connectors-sdk/create.png)
+    ![Screenshot of the Create project from template page in Visual Studio](images/connectors-sdk/create.png)
 5. Provide a name for the project and choose **Next**.
 6. Choose .NET Core 3.1, name the connector **CustomConnector**, and choose **Create**.
 7. The custom connector template project is now created.
-    ![Project structure from template](images/connectors-sdk/templateproject.png)
 
+    ![Screenshot of the CustomConnector project structure in Visual Studio](images/connectors-sdk/templateproject.png)
+    
 ## Create the custom connector
 
 Before you build the connector, use the following steps to install NuGet packages and create the data models that will be used.
@@ -37,9 +38,6 @@ Before you build the connector, use the following steps to install NuGet package
 ### Install NuGet packages
 
 1. Right-click the project and choose **Open in Terminal**.
-
-    ![Open in Terminal](images/connectors-sdk/terminal.png)
-
 2. Run the following command.
 
     ```dotnetcli
@@ -48,7 +46,7 @@ Before you build the connector, use the following steps to install NuGet package
 
 ### Create data models
 
-1. Create a folder called "**Models**" under **CustomConnector** and create a file named AppliancePart.cs under the folder.
+1. Create a folder called **Models** under **CustomConnector** and create a file named AppliancePart.cs under the folder.
 2. Paste the following code in AppliancePart.cs.
 
     ```csharp
@@ -81,7 +79,7 @@ You will implement three methods in ConnectionManagementServiceImpl.cs.
 
 The **ValidateAuthentication** method is used to validate the credentials and the data source URL provided. You need to connect to the data source URL using the credentials provided and return success if the connection succeeds or auth failure status if the connection fails.
 
-1. Create a folder called "**Data**" under "CustomConnector" and create a file CsvDataLoader.cs in the folder.
+1. Create a folder called **Data** under CustomConnector and create a file CsvDataLoader.cs in the folder.
 
 2. Copy the following code to CsvDataLoader.cs:
 
@@ -513,8 +511,7 @@ The **GetCrawlStream** method will be called during the full or periodic full cr
     ```
 
 Now the connector is created and you can build and run the project.
-![Project run output](images/connectors-sdk/run.png)
 
 ## Next steps
 
-* [Test your connector](/graph/custom-connector-sdk-sample-test).
+* [Test your connector](/graph/custom-connector-sdk-sample-test)
