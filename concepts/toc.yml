@@ -181,19 +181,19 @@ items:
           - name: Build your first custom connector
             href: connecting-external-content-build-quickstart.yml
             displayName: connectors, Microsoft Graph connectors
-          - name: Build your first custom connector using connectors SDK
+          - name: Build your first custom connector using SDK
             items:
               - name: Overview
                 href: custom-connector-sdk-sample-overview.md
-              - name: Develop your connector
+              - name: Build the connector
                 href: custom-connector-sdk-sample-create.md
-              - name: Test your connector
+              - name: Test the connector
                 href: custom-connector-sdk-sample-test.md
               - name: Host the connector as a Windows service
                 href: custom-connector-sdk-sample-hosting.md
-              - name: Publish a connection
+              - name: Publish the connector
                 href: custom-connector-sdk-sample-publish.md
-              - name: Search for results
+              - name: Surface the data in search
                 href: custom-connector-sdk-sample-search.md
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
@@ -757,7 +757,7 @@ items:
               items:
               - name: Services
                 href: custom-connector-sdk-contracts-services.md
-              - name: Connector info APIs
+              - name: ConnectorInfo API
                 href: custom-connector-sdk-contracts-connectorinfo.md
               - name: Connection management APIs
                 href: custom-connector-sdk-contracts-connectionmanagement.md
@@ -769,9 +769,9 @@ items:
                 href: custom-connector-sdk-contracts-common.md
             - name: Test utility
               href: custom-connector-sdk-testapp.md
-            - name: Publishing a connection
+            - name: Publish a connector
               href: custom-connector-sdk-publish.md
-            - name: Develop connectors in multiple languages 
+            - name: Develop connectors in other languages 
               href: custom-connector-sdk-other-languages.md
             - name: Best practices
               href: custom-connector-sdk-best-practices.md
