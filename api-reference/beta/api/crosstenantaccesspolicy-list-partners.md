@@ -54,8 +54,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_crosstenantaccesspolicyconfigurationpartner"
@@ -111,11 +109,11 @@ Content-Type: application/json
           ]
         }
       },
-      "tenantRestrictions":
+      "tenantRestrictions": 
       {
-        "usersAndGroups":
+        "usersAndGroups": 
         {
-          "accessType": "allowed",
+          "accessType": "blocked",
           "targets": [
             {
               "target": "AllUsers",
@@ -123,9 +121,9 @@ Content-Type: application/json
             }
           ]
         },
-        "applications":
+        "applications": 
         {
-          "accessType": "allowed",
+          "accessType": "blocked",
           "targets": [
             {
               "target": "AllApplications",

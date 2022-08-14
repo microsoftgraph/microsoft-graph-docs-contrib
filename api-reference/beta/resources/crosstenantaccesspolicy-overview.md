@@ -19,12 +19,14 @@ In the traditional Azure AD B2B collaboration, any invited user from an organiza
 
 Granular controls let you determine the users, groups, and apps, both in your organization and in external organizations, that can participate in Azure AD B2B collaboration and Azure AD B2B direct connect and Azure AD Tenant Restrictions. These controls are implemented through:
 
-+ **Default cross-tenant access settings** which set the baseline inbound, outbound access and tenant restrictions settings.
-    + In Azure AD B2B collaboration, both access settings are enabled by default. This means all your users can be invited to external organizations, and all your users can invite external users.
-    + In Azure AD B2B direct connect, both access settings are disabled by default.
++ **Default cross-tenant access settings** which set the baseline settings for inbound and outbound access and tenant restrictions.
+    + In Azure AD B2B collaboration, both inbound and outbound access settings are enabled by default. This means all your users can be invited to external organizations, and all your users can invite external users.
+    + In Azure AD B2B direct connect, both inbound and outbound access settings are disabled by default.
     + The service default settings may be updated.
-    + In Tenant Restrictions, both access settings are disabled by default.
-+ **Partner-specific access settings** which allow you to configure customized settings for individual organizations. For the configured organizations, this configuration takes precedence over the default settings. Therefore, while Azure AD B2B collaboration and Azure AD B2B direct connect might be disabled across your organization by default, you can enable these features for a specific external organization. Similarly, while Tenant Restrictions settings might be set to blocked across your organization users accessing external organization by default, you can create partner specific configuration and have different settings for a specific external organization.
+    + In Tenant Restrictions, all access settings are disabled by default.
+    + The service default settings may be updated.
+
++ **Partner-specific access settings** which allow you to configure customized settings for individual organizations. For the configured organizations, this configuration takes precedence over the default settings. Therefore, while Azure AD B2B collaboration, Azure AD B2B direct connect, and tenant restrictions might be disabled across your organization, you can enable these features for a specific external organization.
 
 > [!IMPORTANT]
 > 

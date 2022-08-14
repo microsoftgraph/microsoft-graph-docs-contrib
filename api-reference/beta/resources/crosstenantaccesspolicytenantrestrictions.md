@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessPolicyTenantRestrictions resource type"
-description: "Defines how to configure Azure AD Tenant Restrictions settings for your organization users accessing external organizations using external idenities on your network or devices.Settings can be targeted to specific users, groups, or applications."
+description: "Defines how to configure Azure AD tenant restrictions settings. Tenant restrictions give you control over the external organizations that your users can access from your network or devices when they use external identities. The settings can be targeted to specific users, groups, or applications."
 author: "vimrang"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines how to target your cross-tenant access policy tenant restrictions settings. Settings can be targeted to specific users, groups, or applications. You can also use keywords to target specific groups or applications.
+Defines how to target your tenant restrictions settings. Tenant restrictions give you control over the external organizations that your users can access from your network or devices when they use external identities. Settings can be targeted to specific users, groups, or applications.
 
 Inherits from [crossTenantAccessPolicyB2BSettings](../resources/crosstenantaccesspolicyb2bsetting.md).
 

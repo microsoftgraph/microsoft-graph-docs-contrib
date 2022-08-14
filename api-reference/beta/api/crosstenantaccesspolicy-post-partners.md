@@ -67,8 +67,6 @@ If successful, this method returns a `201 Created` response code and a [crossTen
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_crosstenantaccesspolicyconfigurationpartner_from_"
@@ -114,7 +112,7 @@ Content-Type: application/json
       "accessType": "allowed",
       "targets": [
         {
-          "target": "3e546789-6tg7-4b53-a095-07er8nbh7689",
+          "target": "6f546279-4da5-4b53-a095-09ea0cef9971",
           "targetType": "group"
         }
       ]
@@ -186,7 +184,7 @@ Content-Type: application/json
       "accessType": "allowed",
       "targets": [
         {
-          "target": "3e546789-6tg7-4b53-a095-07er8nbh7689",
+          "target": "6f546279-4da5-4b53-a095-09ea0cef9971",
           "targetType": "group"
         }
       ]
