@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-passwordAuthenticationMethodId := "passwordAuthenticationMethod-id"
-result, err := graphClient.Me().Authentication().PasswordMethodsById(&passwordAuthenticationMethodId).Get()
+
+result, err := graphClient.Me().Authentication().PasswordMethodsById("passwordAuthenticationMethod-id").Get()
 
 
 ```

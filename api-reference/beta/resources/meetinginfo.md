@@ -15,17 +15,16 @@ Namespace: microsoft.graph
 
 This is an abstract class that contains meeting specific information.
  
-To join an existing meeting, you must either specify the [organizerMeetingInfo](organizermeetinginfo.md) 
-in combination with the [chatInfo](./chatinfo.md), or just the
-the [tokenMeetingInfo](tokenmeetinginfo.md).
+To join an existing meeting, you must either specify the [organizerMeetingInfo](organizermeetinginfo.md) in combination with the [chatInfo](./chatinfo.md), the [tokenMeetingInfo](tokenmeetinginfo.md), or the [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md).
 
 
 ## Derived types
 
-| Type                                                 | Description                                                         |
-|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| [organizerMeetingInfo](./organizermeetinginfo.md)    | Details about the organizer of the meeting                          |
-| [tokenMeetingInfo](tokenmeetinginfo.md)              | An encrypted token that contains the information about the meeting  |
+| Type                                                    | Description                                                         |
+|:--------------------------------------------------------|:--------------------------------------------------------------------|
+| [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md) | Contains the **joinMeetingId** and **passcode** of the meeting.     |
+| [organizerMeetingInfo](./organizermeetinginfo.md)       | Details about the organizer of the meeting.                         |
+| [tokenMeetingInfo](tokenmeetinginfo.md)                 | An encrypted token that contains the information about the meeting. |
 
 ## JSON representation
 

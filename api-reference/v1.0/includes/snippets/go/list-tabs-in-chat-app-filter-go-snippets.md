@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.TabsRequestBuilderGetQueryParameters{
-	Expand: "teamsApp",
-	Filter: "teamsApp/id%20eq%20'com.microsoft.teamspace.tab.web'",
+requestParameters := &graphconfig.TabsRequestBuilderGetQueryParameters{
+	Expand: [] string {"teamsApp"},
+	Filter: "teamsApp/id eq 'com.microsoft.teamspace.tab.web'",
 }
-options := &msgraphsdk.TabsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TabsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Tabs().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.ChatsById("chat-id").Tabs().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

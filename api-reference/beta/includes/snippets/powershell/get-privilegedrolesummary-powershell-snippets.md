@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgPrivilegedRoleSummary -PrivilegedRoleId $privilegedRoleId
+Get-MgPrivilegedRoleSummary -PrivilegedRoleId $privilegedRoleId -OutFile $outFileId
 
 ```

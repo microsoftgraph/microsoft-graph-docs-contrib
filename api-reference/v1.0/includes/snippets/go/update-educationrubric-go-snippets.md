@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEducationRubric()
+requestBody := graphmodels.NewEducationRubric()
 displayName := "Example Credit Rubric after display name patch"
-requestBody.SetDisplayName(&displayName)
-educationRubricId := "educationRubric-id"
-graphClient.Education().Me().RubricsById(&educationRubricId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+graphClient.Education().Me().RubricsById("educationRubric-id").Patch(requestBody)
 
 
 ```

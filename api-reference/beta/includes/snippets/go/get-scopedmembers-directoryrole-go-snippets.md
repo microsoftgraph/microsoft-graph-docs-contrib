@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-directoryRoleId := "directoryRole-id"
-result, err := graphClient.DirectoryRolesById(&directoryRoleId).ScopedMembers().Get()
+
+result, err := graphClient.DirectoryRolesById("directoryRole-id").ScopedMembers().Get()
 
 
 ```

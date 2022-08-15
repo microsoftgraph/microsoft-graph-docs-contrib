@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 294
+Content-Length: 330
 
 {
   "value": [
@@ -69,6 +69,7 @@ Content-Length: 294
       "@odata.type": "#microsoft.graph.groupPolicyUploadedCategory",
       "displayName": "Display Name value",
       "isRoot": true,
+      "ingestionSource": "custom",
       "id": "7e373e80-3e80-7e37-803e-377e803e377e",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
     }

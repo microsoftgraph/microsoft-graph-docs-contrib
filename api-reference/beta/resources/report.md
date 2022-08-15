@@ -19,6 +19,10 @@ For details about the settings that govern identification/de-identification of i
 
 Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Azure Active Directory (Azure AD) portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Reports permissions](/graph/permissions-reference#reports-permissions).
 
+## Settings
+
+In Microsoft 365 reports, user information such as usernames, groups, and sites is concealed; actual values are not displayed. You can use the [adminReportSettings ](../resources/adminreportsettings.md) API to control the display of user information in the reports.
+
 ## Cloud deployments
 
 The following table shows the availability for each API across all cloud deployments.

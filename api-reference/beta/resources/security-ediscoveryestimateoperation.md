@@ -22,7 +22,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String| The type of action the operation represents. Possible values are: `addToReviewSet`,`applyTags`,`contentExport`,`convertToPdf`,`estimateStatistics`, `purgeData`|
+|action|microsoft.graph.security.caseAction| The type of action the operation represents. Possible values are: `addToReviewSet`,`applyTags`,`contentExport`,`convertToPdf`,`estimateStatistics`, `purgeData`|
 |completedDateTime|DateTimeOffset|The date and time the operation was completed. Read-only. |
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the operation. Read-only. |
 |createdDateTime|DateTimeOffset|The date and time the operation was started. Read-only.|
@@ -33,7 +33,7 @@ None.
 |percentProgress|Int32|The progress of the operation. Read-only. |
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. |
 |siteCount|Int32|The number of mailboxes that had search hits.|
-|status|String| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+|status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 |unindexedItemCount|Int64|The estimated count of unindexed items for the collection.|
 |unindexedItemsSize|Int64|The estimated size of unindexed items for the collection.|
 

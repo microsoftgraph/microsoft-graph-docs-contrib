@@ -18,8 +18,10 @@ Possible values for the file format of a report
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|csv|0|Comma-separated values|
-|pdf|1|Portable Document Format|
+|csv|0|CSV Format|
+|json|1|JSON Format|
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "extensionProperty resource type"
+title: "extensionProperty resource type (directory extensions)"
 description: "Represents a directory extension"
 ms.localizationpriority: medium
 author: "keylimesoda"
@@ -7,31 +7,41 @@ ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 
-# extensionProperty resource type
+# extensionProperty resource type (directory extensions)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a directory extension that can be used to add a custom property to directory objects without requiring an external data store. For example, if an organization has a line of business (LOB) application that requires a Skype ID for each user in the directory, Microsoft Graph can be used to register a new property named skypeId on the directory’s User object, and then write a value to the new property for a specific user.
+Represents a **directory extension** that can be used to add a custom property to directory objects without requiring an external data store. For example, if an organization has a line of business (LOB) application that requires a Skype ID for each user in the directory, Microsoft Graph can be used to register a new property named skypeId on the directory’s User object, and then write a value to the new property for a specific user. Directory extensions can also be available in multi-tenant apps that have been consented to in the tenant.
 
-Extensions can be added to [user](user.md), [group](group.md), [organization](organization.md), [device](device.md), [application](application.md) resources. Only 100 extension values, across *all* types and *all* applications, can be written to any single Azure AD resource.
+Directory extensions can be added to following directory objects:
++ [user](../resources/user.md)
++ [group](../resources/group.md)
++ [administrativeUnit](../resources/administrativeunit.md)
++ [application](../resources/application.md)
++ [device](../resources/device.md)
++ [organization](../resources/organization.md)
+
+Only 100 extension values, across *all* types and *all* applications, can be written to any single Azure AD resource instance.
+
+Use this resource and associated methods to manage the directory extension definitions. To manage the directory extension data on the extended resource instance, use the same REST request that you use to manage the resource instance.
+
+For more information about Microsoft Graph extensibility, see [Add custom properties to resources using extensions](/graph/extensibility-overview).
 
 Inherits from [directoryObject](directoryobject.md).
 
-> [!IMPORTANT]
-> Azure AD schema extensions described here are available in Microsoft Graph for backwards compatibility reasons only.
-> It allows you to use Microsoft Graph to continue to manage extension properties added through Azure AD Graph (deprecated) or [Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect).
-> For new custom extensions, we recommend that you use Microsoft Graph schema extensions for [adding custom data to resources](/graph/extensibility-overview).
+> [!NOTE]
+> Extensions created through Azure AD Graph (deprecated) and custom data synchronized from on-premises Active Directory using Azure AD Connect Sync are represented as directory extensions in Microsoft Graph.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
-| [List extensionProperties](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
-| [Get extensionProperty](../api/extensionproperty-get.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
-| [Delete extensionProperty](../api/extensionproperty-delete.md) | None | Delete an extension property from an application object. |
+| [Create extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create a directory extension on an application object. |
+| [List extensionProperties](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List directory extensions on an application object. |
+| [Get extensionProperty](../api/extensionproperty-get.md) | [extensionProperty](extensionProperty.md) collection | Get a directory extension an application object. |
+| [Delete extensionProperty](../api/extensionproperty-delete.md) | None | Delete directory extension from an application object. You can delete only directory extensions that aren't synced from on-premises active directory. |
 
 > [!TIP]
 > 1. To set a value for the extension property to an instance of a resource that is specified in **targetObjects**, use the Update operation of the resource. For example, the [Update user](../api/user-update.md) API to set the value for a user.
@@ -45,8 +55,8 @@ Inherits from [directoryObject](directoryobject.md).
 |dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>|
 |deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object hasn't been deleted. Inherited from [directoryObject](directoryobject.md).|
 |isSyncedFromOnPremises|Boolean| Indicates if this extension property was synced from on-premises active directory using Azure AD Connect. Read-only. |
-|name|String| Name of the extension property. Not nullable. |
-|targetObjects|String collection| Following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|name|String| Name of the extension property. Not nullable. Supports `$filter` (`eq`).|
+|targetObjects|String collection| Following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`AdministrativeUnit`</li><li>`Application`</li><li>`Device`</li><li>`Organization`</li></ul>|
 
 ## Relationships
 
@@ -78,6 +88,10 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
+
+## See also
+
++ [Add custom properties to resources using extensions](/graph/extensibility-overview)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

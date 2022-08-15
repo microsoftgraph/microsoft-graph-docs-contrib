@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 Represents an ADMX longDecimalTextBox element and an ADMX longDecimal element.
 
 
-Inherits from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
+Inherits from [groupPolicyUploadedPresentation](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md)
 
 ## Methods
 |Method|Return Type|Description|

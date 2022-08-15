@@ -28,6 +28,7 @@ Inherits from [deviceManagementConfigurationSettingValueDefinition](../resources
 |maximumLength|Int64|Maximum length of string. Valid values 0 to 87516|
 |minimumLength|Int64|Minimum length of string. Valid values 0 to 87516|
 |isSecret|Boolean|Specifies whether the setting needs to be treated as a secret. Settings marked as yes will be encrypted in transit and at rest and will be displayed as asterisks when represented in the UX.|
+|fileTypes|String collection|Supported file types for this setting.|
 
 ## Relationships
 None
@@ -46,7 +47,10 @@ Here is a JSON representation of the resource.
   "inputValidationSchema": "String",
   "maximumLength": 1024,
   "minimumLength": 1024,
-  "isSecret": true
+  "isSecret": true,
+  "fileTypes": [
+    "String"
+  ]
 }
 ```
 

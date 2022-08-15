@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-printerId := "printer-id"
-graphClient.Print().PrintersById(&printerId).RestoreFactoryDefaults(printer-id).Post()
+
+graphClient.Print().PrintersById("printer-id").RestoreFactoryDefaults().Post()
 
 
 ```

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgDirectoryRoleScopedMember -DirectoryRoleId $directoryRoleId
+Get-MgDirectoryRoleScopedMember -DirectoryRoleId $directoryRoleId -OutFile $outFileId
 
 ```
