@@ -1,9 +1,9 @@
 ---
 title: "customTaskExtensionCallbackData resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "custom task extension call back data properties"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,20 +13,22 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A resource type that reports the status of the custom task extension callback data.
 
 Inherits from [customExtensionData](../resources/customextensiondata.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|operationStatus|customTaskExtensionCallbackOperationStatus|**TODO: Add Description**.The possible values are: `completed`, `failed`, `unknownFutureValue`.|
+|operationStatus|customTaskExtensionCallbackOperationStatus|The operation status of the Custom Task extension callback configuration call.The possible values are: `completed`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -39,4 +41,3 @@ The following is a JSON representation of the resource.
   "operationStatus": "String"
 }
 ```
-

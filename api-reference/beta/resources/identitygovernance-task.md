@@ -1,9 +1,9 @@
 ---
 title: "task resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Methods, properties, and relationships of the task resource type"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A resource type for tasks within workflows created using Lifecycle Workflows. These are the actions a workflow will take when triggered.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List tasks](../api/identitygovernance-taskprocessingresult-list-task.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get a list of the [task](../resources/identitygovernance-task.md) objects and their properties.|
@@ -30,24 +30,27 @@ Inherits from [entity](../resources/entity.md).
 |[Create taskProcessingResult](../api/identitygovernance-task-post-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md)|Create a new taskProcessingResult object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|arguments|[microsoft.graph.keyValuePair](../resources/intune-keyvaluepair.md) collection|**TODO: Add Description**|
-|category|lifecycleTaskCategory|**TODO: Add Description**.The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
-|continueOnError|Boolean|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|executionSequence|Int32|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isEnabled|Boolean|**TODO: Add Description**|
-|taskDefinitionId|String|**TODO: Add Description**|
+|arguments|[microsoft.graph.keyValuePair](../resources/intune-keyvaluepair.md) collection|Arguments included within the task.|
+|category|lifecycleTaskCategory|The category of the task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|continueOnError|Boolean|A boolean value that determines if the failure of this task stops the subsequent workflows from running.|
+|description|String|A string that describes the purpose of the task for administrative use.|
+|displayName|String|A unique string that identifies the task.|
+|executionSequence|Int32|An integer that states in what order the task will run in a workflow.|
+|id|String|Identifier used for individually addressing a specific task. Inherited from [entity](../resources/entity.md).|
+|isEnabled|Boolean|A boolean value that denotes whether the task is set to run or not.|
+|taskDefinitionId|String|A string that allows built-in workflow tasks to run.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|**TODO: Add Description**|
+|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The processing result of the task.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -75,4 +78,3 @@ The following is a JSON representation of the resource.
   "taskDefinitionId": "String"
 }
 ```
-

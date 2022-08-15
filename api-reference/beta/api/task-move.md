@@ -8,20 +8,22 @@ doc_type: apiPageType
 ---
 
 # task: move
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Move a task object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|LifecycleWorkflows.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|LifecycleWorkflows.ReadWrite.All|
 
 ## HTTP request
 
@@ -34,21 +36,21 @@ POST ** Entity URI for microsoft.graph.task not found/move
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|destinationTaskListId|String|**TODO: Add Description**|
-
-
+|destinationTaskListId|String|The baseTaskList where the baseTask object must be moved to.|
 
 ## Response
 
@@ -57,6 +59,7 @@ If successful, this action returns a `200 OK` response code and a [baseTask](../
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -73,8 +76,8 @@ Content-length: 41
 }
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -114,4 +117,3 @@ Content-Type: application/json
   }
 }
 ```
-

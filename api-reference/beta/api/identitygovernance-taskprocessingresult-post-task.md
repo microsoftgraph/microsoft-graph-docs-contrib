@@ -1,13 +1,14 @@
 ---
 title: "Create task"
 description: "Create a new task object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
 # Create task
+
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,13 +16,14 @@ Namespace: microsoft.graph.identityGovernance
 Create a new [task](../resources/identitygovernance-task.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|LifecycleWorkflows.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|LifecycleWorkflows.ReadWrite.All|
 
 ## HTTP request
 
@@ -34,12 +36,14 @@ POST /workflowBase/tasks
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [task](../resources/identitygovernance-task.md) object.
 
 You can specify the following properties when creating a **task**.
@@ -55,8 +59,6 @@ You can specify the following properties when creating a **task**.
 |isEnabled|Boolean|**TODO: Add Description** Required.|
 |taskDefinitionId|String|**TODO: Add Description** Required.|
 
-
-
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [task](../resources/identitygovernance-task.md) object in the response body.
@@ -64,6 +66,7 @@ If successful, this method returns a `201 Created` response code and a [task](..
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -92,8 +95,8 @@ Content-length: 365
 }
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -123,4 +126,3 @@ Content-Type: application/json
   "taskDefinitionId": "String"
 }
 ```
-

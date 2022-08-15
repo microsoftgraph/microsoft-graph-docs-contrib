@@ -1,9 +1,9 @@
 ---
 title: "lifecycleWorkflowsContainer resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Methods, properties, and relationships for the lifecycleWorkflowsContainer resource"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A resource type noting a Lifecycle Workflows instance.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List lifecycleWorkflowsContainers](../api/identitygovernance-list-lifecycleworkflows.md)|[microsoft.graph.identityGovernance.lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) collection|Get a list of the [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) objects and their properties.|
@@ -40,21 +40,24 @@ Inherits from [entity](../resources/entity.md).
 |[Create workflowTemplate](../api/identitygovernance-lifecycleworkflowscontainer-post-workflowtemplates.md)|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md)|Create a new workflowTemplate object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|id|String|Identifier used for individually addressing the lifecycleworkflowscontainer. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|customTaskExtensions|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) collection|**TODO: Add Description**|
-|deletedItems|[deletedItemContainer](../resources/deleteditemcontainer.md)|**TODO: Add Description**|
-|settings|[lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md)|**TODO: Add Description**|
-|taskDefinitions|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) collection|**TODO: Add Description**|
-|workflows|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) collection|**TODO: Add Description**|
-|workflowTemplates|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md) collection|**TODO: Add Description**|
+|customTaskExtensions|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) collection|The **customTaskExtension** instance.|
+|deletedItems|[deletedItemContainer](../resources/deleteditemcontainer.md)|Deleted workflows in your Lifecycle Workflows instance.|
+|settings|[lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md)|The settings of the Lifecycle Workflows instance.|
+|taskDefinitions|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) collection|The definition of tasks within the Lifecycle Workflows instance.|
+|workflows|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) collection|The workflows in the Lifecycle Workflows instance.|
+|workflowTemplates|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md) collection|The workflow templates in the Lifecycle Workflow instance. |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -70,4 +73,3 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-

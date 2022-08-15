@@ -1,9 +1,9 @@
 ---
 title: "userSummary resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "properties of the userSummary resource type"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,21 +13,24 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A resource type that notes the summary for users processed by a workflow created using Lifecycle Workflows. Gives a list of failed, successful, and total tasks processed for users in numbered form.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|failedTasks|Int32|**TODO: Add Description**|
-|failedUsers|Int32|**TODO: Add Description**|
-|successfulUsers|Int32|**TODO: Add Description**|
-|totalTasks|Int32|**TODO: Add Description**|
-|totalUsers|Int32|**TODO: Add Description**|
+|failedTasks|Int32|Numerical count of failed tasks for users processed by a workflow.|
+|failedUsers|Int32|Numerical count of failed users processed by a workflow.|
+|successfulUsers|Int32|Numerical count of successful users processed by a workflow.|
+|totalTasks|Int32|Numerical count of total tasks for users processed by a workflow.|
+|totalUsers|Int32|Numerical count of total users processed by a workflow.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -44,4 +47,3 @@ The following is a JSON representation of the resource.
   "totalUsers": "Integer"
 }
 ```
-

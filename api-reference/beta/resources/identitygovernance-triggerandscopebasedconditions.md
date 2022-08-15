@@ -1,9 +1,9 @@
 ---
 title: "triggerAndScopeBasedConditions resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "properties of the triggerAndScopeBasedConditions resource type"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,21 +13,23 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A resource type noting the trigger and scope for the execution conditions of a workflow created using Lifecycle Workflows. These determine who the workflow runs for, and what sets off the workflow to run.
 
 Inherits from [workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|scope|[microsoft.graph.subjectSet](../resources/subjectset.md)|**TODO: Add Description**|
-|trigger|[microsoft.graph.identityGovernance.workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md)|**TODO: Add Description**|
+|scope|[microsoft.graph.subjectSet](../resources/subjectset.md)|Defines who the workflow runs for.|
+|trigger|[microsoft.graph.identityGovernance.workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md)|Sets a workflow to run.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -45,4 +47,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

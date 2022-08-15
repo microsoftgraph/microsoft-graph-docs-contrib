@@ -1,9 +1,9 @@
 ---
 title: "ruleBasedSubjectSet resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "description of the rule based subject set resource type"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -15,18 +15,20 @@ Namespace: microsoft.graph.identityGovernance
 
 **TODO: Add Description**
 
-
 Inherits from [subjectSet](../resources/subjectset.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|rule|String|**TODO: Add Description**|
+|rule|String|The rule for the subject set.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -39,4 +41,3 @@ The following is a JSON representation of the resource.
   "rule": "String"
 }
 ```
-

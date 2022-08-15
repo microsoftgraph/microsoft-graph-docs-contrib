@@ -1,13 +1,14 @@
 ---
 title: "Create linkedResource_v2"
 description: "Create a new linkedResource_v2 object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
 # Create linkedResource_v2
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,13 +16,14 @@ Namespace: microsoft.graph
 Create a new linkedResource_v2 object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|LifecycleWorkflows.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|LifecycleWorkflows.ReadWrite.All|
 
 ## HTTP request
 
@@ -34,24 +36,24 @@ POST /users/{usersId}/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/linkedReso
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [linkedResource_v2](../resources/linkedresource_v2.md) object.
 
 You can specify the following properties when creating a **linkedResource_v2**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|webUrl|String|**TODO: Add Description** Optional.|
-|applicationName|String|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Optional.|
-|externalId|String|**TODO: Add Description** Optional.|
-
-
+|webUrl|String|Deep link to the **linkedResource**. Optional.|
+|applicationName|String|Field indicating the app name of the source that is sending the linkedResource. Optional.|
+|displayName|String|Field indicating the title of the **linkedResource**. Optional.|
+|externalId|String|Id of the object that is associated with this task on the third-party/partner system. Optional.|
 
 ## Response
 
@@ -60,6 +62,7 @@ If successful, this method returns a `201 Created` response code and a [linkedRe
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -80,8 +83,8 @@ Content-length: 169
 }
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -103,4 +106,3 @@ Content-Type: application/json
   "externalId": "String"
 }
 ```
-

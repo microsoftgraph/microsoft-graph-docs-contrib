@@ -1,9 +1,9 @@
 ---
 title: "runSummary resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "A description of the runSummary resource type"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,20 +13,23 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A resource type denoting a summary of workflow runs, which is every time a workflow runs. Successful, unsuccessful, and total workflow runs and tasks are noted.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|failedRuns|Int32|**TODO: Add Description**|
-|failedTasks|Int32|**TODO: Add Description**|
-|successfulRuns|Int32|**TODO: Add Description**|
-|totalRuns|Int32|**TODO: Add Description**|
+|failedRuns|Int32|The number of failed workflow runs.|
+|failedTasks|Int32|The number of failed tasks of a workflow.|
+|successfulRuns|Int32|The number of successful workflow runs.|
+|totalRuns|Int32|The total number of runs for a workflow.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -42,4 +45,3 @@ The following is a JSON representation of the resource.
   "totalRuns": "Integer"
 }
 ```
-

@@ -1,9 +1,9 @@
 ---
 title: "workflowBase resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Methods, properties, and relationships of the workflowBase resource type"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -14,9 +14,10 @@ Namespace: microsoft.graph.identityGovernance
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **TODO: Add Description**
-This is an abstract type.
+A resource type noting workflowBase created using Lifecycle Workflows. Workflows, when triggered by execution conditions, automate parts of the lifecycle management process using tasks. These tasks can either be built-in tasks, or a custom task can be called using the custom task extension.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List workflowBases](../api/identitygovernance-workflowbase-list.md)|[microsoft.graph.identityGovernance.workflowBase](../resources/identitygovernance-workflowbase.md) collection|Get a list of the [workflowBase](../resources/identitygovernance-workflowbase.md) objects and their properties.|
@@ -37,25 +38,28 @@ This is an abstract type.
 |[Create userProcessingResult](../api/identitygovernance-workflowbase-post-userprocessingresults.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md)|Create a new userProcessingResult object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|category|lifecycleWorkflowCategory|**TODO: Add Description**.The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+|category|lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset|The date and time a workflow was created.|
+|description|String|A string that describes the purpose of the workflow.|
+|displayName|String|A string to identify the workflow. |
+|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines when and for who the workflow will run.|
+|lastModifiedDateTime|DateTimeOffset|The last time the workflow was modified.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|createdBy|[user](../resources/user.md)|**TODO: Add Description**|
-|lastModifiedBy|[user](../resources/user.md)|**TODO: Add Description**|
-|runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|**TODO: Add Description**|
-|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|**TODO: Add Description**|
-|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|**TODO: Add Description**|
+|createdBy|[user](../resources/user.md)|The user who created the workflow.|
+|lastModifiedBy|[user](../resources/user.md)|The user who last modified the workflow.|
+|runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|A history of every time a workflow ran|
+|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow.|
+|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|The results of a user processed by the workflow.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -77,4 +81,3 @@ The following is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-

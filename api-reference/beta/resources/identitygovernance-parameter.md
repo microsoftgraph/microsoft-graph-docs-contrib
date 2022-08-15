@@ -1,9 +1,9 @@
 ---
 title: "parameter resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "*parameter resource type properties"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,19 +13,22 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A resource type denoting the parameters of workflows created using Lifecycle Workflows.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description**|
-|values|String collection|**TODO: Add Description**|
-|valueType|valueType|**TODO: Add Description**.The possible values are: `enum`, `string`, `int`, `bool`, `unknownFutureValue`.|
+|name|String|The name of the parameter.|
+|values|String collection|The values of the parameter.|
+|valueType|valueType|The value type of the parameter. The possible values are: `enum`, `string`, `int`, `bool`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -42,4 +45,3 @@ The following is a JSON representation of the resource.
   "valueType": "String"
 }
 ```
-

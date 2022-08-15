@@ -1,13 +1,14 @@
 ---
 title: "Create deletedItemContainer"
 description: "Create a new deletedItemContainer object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
 # Create deletedItemContainer
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,13 +16,14 @@ Namespace: microsoft.graph
 Create a new [deletedItemContainer](../resources/deleteditemcontainer.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|LifecycleWorkflows.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|LifecycleWorkflows.ReadWrite.All|
 
 ## HTTP request
 
@@ -34,20 +36,20 @@ POST ** Collection URI for microsoft.graph.deletedItemContainer not found
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [deletedItemContainer](../resources/deleteditemcontainer.md) object.
 
 You can specify the following properties when creating a **deletedItemContainer**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-
-
 
 ## Response
 
@@ -56,6 +58,7 @@ If successful, this method returns a `201 Created` response code and a [deletedI
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -72,8 +75,8 @@ Content-length: 62
 }
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -91,4 +94,3 @@ Content-Type: application/json
   "id": "98dd1b78-10c9-23e6-38c9-53955064efe6"
 }
 ```
-

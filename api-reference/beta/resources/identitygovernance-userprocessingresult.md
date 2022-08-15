@@ -1,9 +1,9 @@
 ---
 title: "userProcessingResult resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Methods, properties, and relationships of the userProcessingResult resource type*"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A resource type denoting user processing results for users processed by workflows created using Lifecycle Workflows. Total tasks are shown along with individual results for unprocessed  tasks, and processing status for the results.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List userProcessingResults](../api/identitygovernance-run-list-userprocessingresults.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Get a list of the [userProcessingResult](../resources/identitygovernance-userprocessingresult.md) objects and their properties.|
@@ -35,26 +35,29 @@ Inherits from [entity](../resources/entity.md).
 |[Create taskProcessingResult](../api/identitygovernance-userprocessingresult-post-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md)|Create a new taskProcessingResult object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|**TODO: Add Description**|
-|failedTasksCount|Int32|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|processingStatus|lifecycleWorkflowProcessingStatus|**TODO: Add Description**.The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
-|scheduledDateTime|DateTimeOffset|**TODO: Add Description**|
-|startedDateTime|DateTimeOffset|**TODO: Add Description**|
-|totalTasksCount|Int32|**TODO: Add Description**|
-|totalUnprocessedTasksCount|Int32|**TODO: Add Description**|
-|workflowExecutionType|workflowExecutionType|**TODO: Add Description**.The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`.|
-|workflowVersion|Int32|**TODO: Add Description**|
+|completedDateTime|DateTimeOffset|The date and time of a completed user processing result.|
+|failedTasksCount|Int32|Numerical count of failed tasks for users processed.|
+|id|String|Identifier used for individually addressing a specific user processing result. Inherited from [entity](../resources/entity.md).|
+|processingStatus|lifecycleWorkflowProcessingStatus|The processing status of a .The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
+|scheduledDateTime|DateTimeOffset|The time and date of a scheduled workflow to be processed for a user.|
+|startedDateTime|DateTimeOffset|The date and time when a user processing result was started.|
+|totalTasksCount|Int32|Numerical count of total tasks.|
+|totalUnprocessedTasksCount|Int32|Numerical count of unprocessed tasks for a user.|
+|workflowExecutionType|workflowExecutionType|The workflow execution type of a workflow. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`.|
+|workflowVersion|Int32|The workflow version.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|subject|[user](../resources/user.md)|**TODO: Add Description**|
-|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|**TODO: Add Description**|
+|subject|[user](../resources/user.md)|User the processing result is being run for|
+|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|task processing information that is ran for a user being returned in the results.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -79,4 +82,3 @@ The following is a JSON representation of the resource.
   "workflowVersion": "Integer"
 }
 ```
-

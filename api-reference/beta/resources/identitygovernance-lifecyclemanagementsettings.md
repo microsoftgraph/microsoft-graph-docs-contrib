@@ -1,9 +1,9 @@
 ---
 title: "lifecycleManagementSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "The lifecycleManagementSettings methods, properties, and relationships"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A resource type noting the lifecycle management settings for a workflow created with Lifecycle Workflows.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List lifecycleManagementSettings](../api/identitygovernance-lifecycleworkflowscontainer-list-settings.md)|[microsoft.graph.identityGovernance.lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md) collection|Get a list of the [lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md) objects and their properties.|
@@ -28,15 +28,18 @@ Inherits from [entity](../resources/entity.md).
 |[Delete lifecycleManagementSettings](../api/identitygovernance-lifecycleworkflowscontainer-delete-settings.md)|None|Deletes a [lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|workflowScheduleIntervalInHours|Int32|**TODO: Add Description**|
+|id|String|Identifier used for individually addressing Lifecycle Management settings. Inherited from [entity](../resources/entity.md).|
+|workflowScheduleIntervalInHours|Int32|The schedule the workflow is set to run based in hour form.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -53,4 +56,3 @@ The following is a JSON representation of the resource.
   "workflowScheduleIntervalInHours": "Integer"
 }
 ```
-

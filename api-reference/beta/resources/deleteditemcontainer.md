@@ -1,9 +1,9 @@
 ---
 title: "deletedItemContainer resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Methods, properties, and relationships of the deletedItemContainer resource type"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A resource type that contains deleted workflows created using Lifecycle Workflows during the period before they are permanently deleted.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List deletedItemContainers](../api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md)|[deletedItemContainer](../resources/deleteditemcontainer.md) collection|Get a list of the [deletedItemContainer](../resources/deleteditemcontainer.md) objects and their properties.|
@@ -30,16 +30,19 @@ Inherits from [entity](../resources/entity.md).
 |[Create workflow](../api/deleteditemcontainer-post-workflows.md)|[workflow](../resources/identitygovernance-workflow.md)|Create a new workflow object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|id|String|Identifier used for individually addressing the deletedItemContainer. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|workflows|[workflow](../resources/identitygovernance-workflow.md) collection|**TODO: Add Description**|
+|workflows|[workflow](../resources/identitygovernance-workflow.md) collection|Deleted workflows that end up in the deletedItemsContainer.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -55,4 +58,3 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-

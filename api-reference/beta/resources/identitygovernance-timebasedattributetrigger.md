@@ -1,9 +1,9 @@
 ---
 title: "timeBasedAttributeTrigger resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Properties of the timeBasedAttributeTrigger resource type"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,21 +13,23 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A resource type noting the time based trigger attribute of an execution condition of a workflow created using Lifecycle Workflows.
 
 Inherits from [workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|offsetInDays|Int32|**TODO: Add Description**|
-|timeBasedAttribute|workflowTriggerTimeBasedAttribute|**TODO: Add Description**.The possible values are: `employeeHireDate`, `unknownFutureValue`.|
+|offsetInDays|Int32|The number of days from the time based attribute for which a workflow is triggered.|
+|timeBasedAttribute|workflowTriggerTimeBasedAttribute|The event triggering the execution of a workflow.The possible values are: `employeeHireDate`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -41,4 +43,3 @@ The following is a JSON representation of the resource.
   "timeBasedAttribute": "String"
 }
 ```
-

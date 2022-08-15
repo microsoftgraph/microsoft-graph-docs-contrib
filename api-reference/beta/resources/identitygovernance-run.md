@@ -1,9 +1,9 @@
 ---
 title: "run resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "description of the runs resource type methods, properties, and relationships"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A resource type denoting the runs of a workflow created using Lifecycle Workflows. This includes every time a workflow has run, its successfully and unsuccessful runs, its successful and unsuccessful tasks, and its total number of runs.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List runs](../api/identitygovernance-workflow-list-runs.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Get a list of the [run](../resources/identitygovernance-run.md) objects and their properties.|
@@ -26,11 +26,12 @@ Inherits from [entity](../resources/entity.md).
 |[Get run](../api/identitygovernance-run-get.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md)|Read the properties and relationships of a [run](../resources/identitygovernance-run.md) object.|
 |[Update run](../api/identitygovernance-run-update.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md)|Update the properties of a [run](../resources/identitygovernance-run.md) object.|
 |[Delete run](../api/identitygovernance-workflow-delete-runs.md)|None|Deletes a [run](../resources/identitygovernance-run.md) object.|
-|[summary](../api/identitygovernance-run-summary.md)|[microsoft.graph.identityGovernance.runSummary](../resources/identitygovernance-runsummary.md)|**TODO: Add Description**|
+|[summary](../api/identitygovernance-run-summary.md)|[microsoft.graph.identityGovernance.runSummary](../resources/identitygovernance-runsummary.md)|Get the summary of workflows run object.|
 |[List userProcessingResults](../api/identitygovernance-run-list-userprocessingresults.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Get the userProcessingResult resources from the userProcessingResults navigation property.|
 |[Create userProcessingResult](../api/identitygovernance-run-post-userprocessingresults.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md)|Create a new userProcessingResult object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|**TODO: Add Description**|
@@ -47,11 +48,13 @@ Inherits from [entity](../resources/entity.md).
 |workflowExecutionType|workflowExecutionType|**TODO: Add Description**.The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|**TODO: Add Description**|
+|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|The user processing results of a workflow run.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -78,4 +81,3 @@ The following is a JSON representation of the resource.
   "workflowExecutionType": "String"
 }
 ```
-

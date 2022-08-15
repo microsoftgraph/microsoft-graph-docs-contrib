@@ -1,9 +1,9 @@
 ---
 title: "workflowExecutionConditions resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Workflow execution conditions resource type information"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -14,16 +14,19 @@ Namespace: microsoft.graph.identityGovernance
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **TODO: Add Description**
-This is an abstract type.
+This is an abstract type noting the workflow execution conditions. Execution conditions define who and when a workflow will run.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -35,4 +38,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.identityGovernance.workflowExecutionConditions"
 }
 ```
-

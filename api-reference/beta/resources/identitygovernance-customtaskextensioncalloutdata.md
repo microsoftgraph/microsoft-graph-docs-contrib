@@ -1,9 +1,9 @@
 ---
 title: "customTaskExtensionCalloutData resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Custom Task Extension callout data"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,24 +13,27 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A resource type that represents the call-out data of the Custom Task Extension.
 
 
 Inherits from [customExtensionData](../resources/customextensiondata.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|subject|[user](../resources/user.md)|**TODO: Add Description**|
-|task|[task](../resources/identitygovernance-task.md)|**TODO: Add Description**|
-|taskProcessingresult|[taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md)|**TODO: Add Description**|
-|workflow|[workflow](../resources/identitygovernance-workflow.md)|**TODO: Add Description**|
+|subject|[user](../resources/user.md)|The user which created the workflow.|
+|task|[task](../resources/identitygovernance-task.md)|The task associated with the Custom Task Extension.|
+|taskProcessingresult|[taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md)|The task processing result of the Custom Task Extension.|
+|workflow|[workflow](../resources/identitygovernance-workflow.md)|The workflow the Custom Task Extension is part of.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

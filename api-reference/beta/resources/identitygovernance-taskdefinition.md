@@ -1,9 +1,9 @@
 ---
 title: "taskDefinition resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Methods, properties, and relationships of the taskDefinition resource type"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A resource type denoting the task definitions of Lifecycle Workflows. These define the built-in tasks that can be used to construct workflows created with Lifecycle Workflows.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List taskDefinitions](../api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md)|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) collection|Get a list of the [taskDefinition](../resources/identitygovernance-taskdefinition.md) objects and their properties.|
@@ -28,20 +28,23 @@ Inherits from [entity](../resources/entity.md).
 |[Delete taskDefinition](../api/identitygovernance-lifecycleworkflowscontainer-delete-taskdefinitions.md)|None|Deletes a [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|category|lifecycleTaskCategory|**TODO: Add Description**.The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
-|continueOnError|Boolean|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|parameters|[microsoft.graph.identityGovernance.parameter](../resources/identitygovernance-parameter.md) collection|**TODO: Add Description**|
-|version|Int32|**TODO: Add Description**|
+|category|lifecycleTaskCategory|The category of the task definition. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|continueOnError|Boolean|A boolean value that determines if the failure of the task definition stops the subsequent workflows from running.|
+|description|String|A string that describes the purpose of the task definition for administrative use.|
+|displayName|String|A unique string that identifies the task definition.|
+|id|String|Identifier used for individually addressing a specific task definition. Inherited from [entity](../resources/entity.md).|
+|parameters|[microsoft.graph.identityGovernance.parameter](../resources/identitygovernance-parameter.md) collection|The parameter of the task definition.|
+|version|Int32|An integer noting the version of the task definition.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -67,4 +70,3 @@ The following is a JSON representation of the resource.
   "version": "Integer"
 }
 ```
-
