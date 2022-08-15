@@ -18,7 +18,7 @@ Defines a single group, Azure AD role, or administrative unit that is included o
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The ID of the entity that's targeted in the include or exclude rule. Additional possible value is: `all_users`.|
+|id|String|The ID of the entity that's targeted in the include or exclude rule or `all_users` to target all users.|
 |targetType|featureTargetType|The kind of entity that's targeted. The possible values are: `group`, `administrativeUnit`, `role`, `unknownFutureValue`.|
 
 ## Relationships
