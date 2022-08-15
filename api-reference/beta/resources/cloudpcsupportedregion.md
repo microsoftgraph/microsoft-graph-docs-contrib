@@ -25,10 +25,10 @@ Represents a supported region to establish an Azure network connection for Cloud
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the supported region. Read-only.|
 |displayName|String|The name for the supported region. Read-only.|
+|id|String|The unique identifier for the supported region. Read-only.|
 |regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedregionstatus-values)|The status of the supported region. Possible values are: `available`, `restricted`, `unavailable`, `unknownFutureValue`. Read-only.|
-|supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported services or solutions for the region. The possible values are: windows365, devBox, unknownFutureValue. Read-only.|
+|supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported services or solutions for the region. The possible values are: `windows365`, `devBox`, `unknownFutureValue`. Read-only.|
 
 ### cloudPcSupportedRegionStatus values
 
@@ -60,7 +60,6 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.cloudPcSupportedRegion",
   "displayName": "String",
   "id": "String (identifier)",
-  "displayName": "String",
   "regionStatus": "microsoft.graph.cloudPcSupportedRegionStatus",
   "supportedSolution": "String"
 }
