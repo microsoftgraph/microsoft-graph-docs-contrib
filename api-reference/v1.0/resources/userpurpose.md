@@ -24,7 +24,7 @@ Represents the user's recipient or mailbox type in Exchange Online. Used to diff
 |user|A user account with a mailbox in the local forest.|
 |linked|A mailbox linked to a user account in another forest.|
 |shared|A mailbox shared by two or more user accounts.|
-|room|A mailbox the represents a conference room.|
+|room|A mailbox that represents a conference room.|
 |equipment|A mailbox that represents a piece of equipment.|
 |others|A mailbox was found but the user purpose is different from the ones specified in the previous scenarios.|
 
