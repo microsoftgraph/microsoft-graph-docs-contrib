@@ -1,6 +1,6 @@
 ---
 title: "run: summary"
-description: "**TODO: Add Description**"
+description: "How to get a summary of runs for a lifecycle workflow"
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Provides a summary of workflow runs.
 
 ## Permissions
 

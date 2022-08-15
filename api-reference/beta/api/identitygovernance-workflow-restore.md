@@ -1,9 +1,9 @@
 ---
 title: "workflow: restore"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Restore a lifecycle workflow"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 **TODO: Add Description**
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -35,11 +36,13 @@ POST /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -49,6 +52,7 @@ If successful, this action returns a `200 OK` response code and a [workflow](../
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -58,7 +62,6 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}/restore
 ```
-
 
 ### Response
 The following is an example of the response
@@ -93,4 +96,3 @@ Content-Type: application/json
   }
 }
 ```
-

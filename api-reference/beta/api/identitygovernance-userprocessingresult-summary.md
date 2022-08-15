@@ -1,20 +1,22 @@
 ---
 title: "userProcessingResult: summary"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
 # userProcessingResult: summary
+
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Provides a user processing summary result.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,6 +36,7 @@ GET /workflowBase/userProcessingResults/summary
 ```
 
 ## Function parameters
+
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
@@ -44,11 +47,13 @@ The following table shows the parameters that can be used with this function.
 
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -58,6 +63,7 @@ If successful, this function returns a `200 OK` response code and a [userSummary
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -68,8 +74,8 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/workflowBase/userProcessingResults/summary(startDateTime=String (timestamp),endDateTime=String (timestamp))
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -88,4 +94,3 @@ Content-Type: application/json
   }
 }
 ```
-

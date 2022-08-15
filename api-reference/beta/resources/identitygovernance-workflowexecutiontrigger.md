@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+
 This is an abstract type noting the workflow execution trigger. Workflow triggers defines when a workflow runs.
 
 ## Properties

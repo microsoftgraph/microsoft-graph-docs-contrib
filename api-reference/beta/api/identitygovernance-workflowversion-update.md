@@ -44,7 +44,6 @@ PATCH /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}
 
 ## Request body
 
-
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|

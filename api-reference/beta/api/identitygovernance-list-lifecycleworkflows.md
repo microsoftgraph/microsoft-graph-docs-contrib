@@ -36,23 +36,27 @@ GET ** Collection URI for microsoft.graph.identityGovernance.lifecycleWorkflowsC
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [lifecycleWorkflowsContainer](../resources/lifecycleworkflowscontainer.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) objects in the response body.
 
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -63,8 +67,8 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.identityGovernance.lifecycleWorkflowsContainer not found
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -86,4 +90,3 @@ Content-Type: application/json
   ]
 }
 ```
-

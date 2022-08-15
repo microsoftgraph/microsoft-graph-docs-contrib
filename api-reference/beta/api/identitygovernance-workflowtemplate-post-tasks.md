@@ -50,7 +50,7 @@ You can specify the following properties when creating a **task**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|arguments|[microsoft.graph.keyValuePair](../resources/intune-keyvaluepair.md) collection|**TODO: Add Description** Required.|
+|arguments|[microsoft.graph.keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|**TODO: Add Description** Required.|
 |category|lifecycleTaskCategory|**TODO: Add Description**. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
 |continueOnError|Boolean|**TODO: Add Description** Required.|
 |description|String|**TODO: Add Description** Optional.|
