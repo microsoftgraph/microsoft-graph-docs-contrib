@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 
-Get-MgRoleManagementEntitlementManagementRoleDefinition
+Get-MgRoleManagementEntitlementManagementRoleDefinition -OutFile $outFileId
 
 ```

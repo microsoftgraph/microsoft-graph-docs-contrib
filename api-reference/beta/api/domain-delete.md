@@ -59,7 +59,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_domain"
+  "name": "delete_domain",
+  "sampleKeys": ["contoso.com"]
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/domains/contoso.com

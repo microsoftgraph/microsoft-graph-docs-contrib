@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgUserAuthenticationTemporaryAccessPassMethod -UserId $userId
+Get-MgUserAuthenticationTemporaryAccessPassMethod -UserId $userId -OutFile $outFileId
 
 ```

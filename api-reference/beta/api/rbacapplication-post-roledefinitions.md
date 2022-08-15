@@ -2,7 +2,7 @@
 title: "Create roleDefinitions"
 description: "Create a new unifiedRoleDefinition object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -206,7 +206,7 @@ Content-type: application/json
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions
+POST https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
 Content-type: application/json
 
 {

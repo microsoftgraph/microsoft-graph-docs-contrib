@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let schemaExtension = await client.api('/schemaExtensions/graphlearn_test')
+let schemaExtension = await client.api('/schemaExtensions/extcivhhslh_sbtest1')
 	.get();
 
 ```

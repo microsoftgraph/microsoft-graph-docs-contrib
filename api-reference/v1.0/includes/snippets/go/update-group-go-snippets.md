@@ -12,7 +12,7 @@ description := "Library Assist"
 requestBody.SetDescription(&description) 
 displayName := "Library Assist"
 requestBody.SetDisplayName(&displayName) 
-groupTypes := []String {
+groupTypes := []string {
 	"Unified",
 
 }

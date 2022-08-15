@@ -20,7 +20,7 @@ configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DevicesById("device-id").TransitiveMemberOf().Group(device-id).GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.DevicesById("device-id").TransitiveMemberOf().Group().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

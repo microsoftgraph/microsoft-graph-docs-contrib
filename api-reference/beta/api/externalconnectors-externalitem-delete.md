@@ -65,7 +65,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_externalitem"
+  "name": "delete_externalitem",
+  "sampleKeys": ["contosohr", "TSP228082938"]
 }-->
 
 ```http

@@ -49,7 +49,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationuser_from_educationclass_2"
+  "name": "create_educationuser_from_educationclass_2",
+  "sampleKeys": ["11017"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11017/teachers/$ref

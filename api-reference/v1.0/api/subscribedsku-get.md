@@ -53,7 +53,7 @@ Here is an example of the request.
   "name": "get_subscribedsku"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/subscribedSkus/{id}
+GET https://graph.microsoft.com/v1.0/subscribedSkus/dcd219dd-bc68-4b9b-bf0b-4a33a796be35_c7df2760-2c81-4ef7-b578-5b5392b571df
 ```
 
 # [C#](#tab/csharp)
