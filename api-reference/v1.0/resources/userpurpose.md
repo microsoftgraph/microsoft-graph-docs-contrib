@@ -11,7 +11,7 @@ author: "abheek-das"
 
 Namespace: microsoft.graph
 
-The purpose of the mailbox. Used to differentiate a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online.
+Represents the user's recipient or mailbox type in Exchange Online. Used to differentiate a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online.
 
 ## Properties
 |Property|Type|Description|
@@ -24,9 +24,9 @@ The purpose of the mailbox. Used to differentiate a mailbox for a single user fr
 |user|A user account with a mailbox in the local forest.|
 |linked|A mailbox linked to a user account in another forest.|
 |shared|A mailbox shared by two or more user accounts.|
-|room|A mailbox representing a conference room.|
-|equipment|A mailbox representing a piece of equipment.|
-|others|Mailbox found but user purpose is different from the ones specified above.|
+|room|A mailbox the represents a conference room.|
+|equipment|A mailbox that represents a piece of equipment.|
+|others|A mailbox was found but the user purpose is different from the ones specified in the previous scenarios.|
 
 ## JSON representation
 
