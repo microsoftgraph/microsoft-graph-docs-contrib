@@ -14798,7 +14798,7 @@ items:
           - name: Alert 
             href: resources/security-alert.md
           - name: List alerts
-            href: api/security-list-alerts.md
+            href: api/security-list-alerts_v2.md
           - name: Get alert
             href: api/security-alert-get.md 
           - name: Update alert

@@ -23,42 +23,42 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List alerts_v2](../api/security-list-alerts.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of [alert](../resources/security-alert.md) resources that have been created to track suspicious activities in an organization.|
+|[List alerts_v2](../api/security-list-alerts_v2.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of [alert](../resources/security-alert.md) resources that have been created to track suspicious activities in an organization.|
 |[Get alert](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Get the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
 |[Update alert](../api/security-alert-update.md)|[microsoft.graph.security.alert](../resources/security-alert.md)|Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier to represent the **alert** resource.|
-|providerAlertId|String|The ID of the alert as it appears in the security provider product that generated the alert.|
-|incidentId|String|Unique identifier to represent the [incident](security-incident.md) this **alert** resource is associated with.|
-|status|[microsoft.graph.security.alertStatus](#alertstatus-values)|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
-|severity|[microsoft.graph.security.alertSeverity](#alertseverity-values)|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
-|classification|[microsoft.graph.security.alertClassification](#alertclassification-values)|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
-|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
-|serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)|The service or product that created this alert. Possible values are: `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftCloudAppSecurity`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `aadIdentityProtection`, `appGovernance`, `dataLossPrevention`.|
+|actorDisplayName|String|The adversary or activity group that is associated with this alert.|
+|alertWebUrl|String|URL for the alert page in the Microsoft 365 Defender portal.|
+|assignedTo|String|Owner of the **incident**, or null if no owner is assigned.|
+|category|String|The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
+|classification|[microsoft.graph.security.alertClassification](#alertclassification-values)|Specifies whether the alert represents a true threat. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
+|comments|[microsoft.graph.security.alertComment](security-alertComment.md) collection|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
+|createdDateTime|DateTimeOffset|Time when Microsoft 365 Defender created the alert.|
+|description|String|String value describing each alert.|
 |detectionSource|[microsoft.graph.security.detectionSource](#detectionsource-values)|Detection technology or sensor that identified the notable component or activity.|
 |detectorId|String|The ID of the detector that triggered the alert.|
-|tenantId|String|The Azure Active Directory tenant the alert was created in.|
-|title|String|Brief identifying string value describing the alert.|
-|description|String|String value describing each alert.|
-|recommendedActions|String|Recommended response and remediation actions to take in the event this alert was generated.|
-|category|String|The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
-|assignedTo|String|Owner of the **incident**, or null if no owner is assigned.|
-|alertWebUrl|String|URL for the alert page in the Microsoft 365 Defender portal.|
+|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)|Specifies the result of the investigation, whether the alert represents a true attack and if so, the nature of the attack. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|evidence|[microsoft.graph.security.alertEvidence](security-alertEvidence.md) collection|Collection of evidence related to the alert.|
+|firstActivityDateTime|DateTimeOffset|The earliest activity associated with the alert.|
+|id|String|Unique identifier to represent the **alert** resource.|
+|incidentId|String|Unique identifier to represent the [incident](security-incident.md) this **alert** resource is associated with.|
 |incidentWebUrl|String|URL for the alert page in the Microsoft 365 Defender portal.|
-|actorDisplayName|String|The adversary or activity group that is associated with this alert.|
+|lastActivityDateTime|DateTimeOffset|The oldest activity associated with the alert.|
+|lastUpdateDateTime|DateTimeOffset|Time when the alert was last updated at Microsoft 365 Defender.|
+|mitreTechniques|Collection(Edm.String)|The attack techniques, as aligned with the MITRE ATT&CK framework.|
+|providerAlertId|String|The ID of the alert as it appears in the security provider product that generated the alert.|
+|recommendedActions|String|Recommended response and remediation actions to take in the event this alert was generated.|
+|resolvedDateTime|DateTimeOffset|Time when the alert was resolved.|
+|serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)|The service or product that created this alert. Possible values are: `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftCloudAppSecurity`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `aadIdentityProtection`, `appGovernance`, `dataLossPrevention`.|
+|severity|[microsoft.graph.security.alertSeverity](#alertseverity-values)|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|status|[microsoft.graph.security.alertStatus](#alertstatus-values)|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
+|tenantId|String|The Azure Active Directory tenant the alert was created in.|
 |threatDisplayName|String|The threat associated with this alert.|
 |threatFamilyName|String|Threat family associated with this alert.|
-|mitreTechniques|Collection(Edm.String)|The attack techniques, as aligned with the MITRE ATT&CK framework.|
-|createdDateTime|DateTimeOffset|Time when the alert was created.|
-|lastUpdateDateTime|DateTimeOffset|Time when the alert was last updated.|
-|resolvedDateTime|DateTimeOffset|Time when the alert was resolved.|
-|firstActivityDateTime|DateTimeOffset|The earliest activity associated with the alert.|
-|lastActivityDateTime|DateTimeOffset|The oldest activity associated with the alert.|
-|comments|[microsoft.graph.security.alertComment](security-alertComment.md) collection|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
-|evidence|[microsoft.graph.security.alertEvidence](security-alertEvidence.md) collection|Collection of evidence related to the alert.|
+|title|String|Brief identifying string value describing the alert.|
 
 ### alertClassification values 
 
@@ -107,7 +107,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 
 | Member              | Description                                           |
 | :-------------------| :---------------------------------------------------- |
-| unknown		          | Unknown status. 							          |
+| unknown		      | Unknown status. 							          |
 | new                 | New alert.                                            |
 | inProgress          | The alert is in mitigation progress.                  |
 | resolved            | The alert is in resolved state.                       |
@@ -124,7 +124,6 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | microsoftDefenderForCloudApps| Microsoft Defender for Cloud Apps.             |
 | microsoftDefenderForOffice365| Microsoft Defender For Office365.              |
 | microsoft365Defender         | Microsoft 365 Defender.                        |
-| aadIdentityProtection        | Azure Active Directory Identity Protection.    |
 | microsoftAppGovernance       | Microsoft app governance.                      |
 | microsoftDataLossPrevention  | Microsoft Purview Data Loss Prevention.        |
 | unknownFutureValue           | Evolvable enumeration sentinel value. Do not use.|

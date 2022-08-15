@@ -343,7 +343,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "List",
 					"ChangeType": "Addition",
-					"Description": "Added the [List alerts](https://docs.microsoft.com/en-us/graph/api/security-list-alerts?view=graph-rest-beta) operation.",
+					"Description": "Added the [List alerts](https://docs.microsoft.com/en-us/graph/api/security-list-alerts_v2?view=graph-rest-beta) operation.",
 					"Target": "alert"
 				}
 			],

@@ -19,9 +19,9 @@ Email sender common properties.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the sender|
-|domainName|String|Sender domain|
-|emailAddress|String|Sender email address|
+|displayName|String|The name of the sender.|
+|domainName|String|Sender domain.|
+|emailAddress|String|Sender email address.|
 
 ## Relationships
 None.
