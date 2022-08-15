@@ -84,11 +84,9 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
       - Select the **New** button, select **Azure Blob Storage**, and then select the **Continue** button.
       - Select **Binary** as the format for the data and then select the **Continue** button.
-      - Give the dataset the name **M365JsonFile** and create new linked service if it does not exist already.
-
-    - In the table select the **Connection** tab, then select **New**.
-    - Set the following values in the dialog, then select **Finish**.
-
+      - Give the dataset the name **M365JsonFile** and create new linked service.
+      - Click **Select** under **Linked service** and then click **+New**.
+      - Set the following values in the dialog, then select **Create**.
         - **Authentication type**: Service principal
         - **Azure subscription**: Select all
         - **Storage account name**: mgdcm365datastore
@@ -98,7 +96,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
         - **Service principal key**: enter the hashed key of the Azure AD application you previously created
 
     - Next to the **File path** field, select **Browse**.
-    - Select the name of the storage container you created previously.
+    - Select the name of the storage container you created previously and select **OK**.
 
       ![A screenshot showing the Azure portal UI for the Data Factory service. The user is configuring the container and file path in the sink properties.](../concepts/images/data-connect-adf-sa-fp-config.png)
 
