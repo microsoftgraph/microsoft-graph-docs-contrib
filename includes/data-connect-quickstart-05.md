@@ -111,7 +111,7 @@ With the pipeline created, now it is time to run it.
 > [!NOTE]
 > It can take several minutes for the consent request to appear and it is not uncommon for the entire process (start, requesting consent and after approving the consent completing the pipeline run) to take over 40 minutes.
 
-1. In the Azure Data Factory designer, with the pipeline open, select **Add trigger > Trigger Now**.
+1. In the Azure Data Factory designer, with the pipeline open, select **Add trigger > Trigger Now**, and then select **OK**.
 
     ![A screenshot showing the Azure portal UI for the Data Factory service to show how to activate a trigger in the pipeline.](../concepts/images/data-connect-adf-run-trigger.png)
 
@@ -127,7 +127,7 @@ With the pipeline created, now it is time to run it.
 
     ![A screenshot showing the Azure Portal UI for Data Factory Activity Runs, the user is selecting the googles in the activity name to open the details tab.](../concepts/images/data-connect-adf-pipeline-details.png)
 
-1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image. In this case you can see it is in a state of **RequestingConsent**.
+1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image. In this case you can see it is in a state of **ConsentPending**. Close the **Details** dialog.
 
     ![A screenshot showing the Azure portal UI for the Data Factory service where the request's load status is set to "RequestingConsent".](../concepts/images/data-connect-adf-wait-for-approval.png)
 
