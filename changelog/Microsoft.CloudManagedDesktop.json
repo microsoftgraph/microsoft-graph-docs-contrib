@@ -2148,7 +2148,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "azureStorageContainerName",
                     "ChangeType": "Addition",
-                    "Description": "Added the `azureStorageContainerName` property to the [cloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcReviewStatus?view=graph-rest-beta) resource.",
+                    "Description": "Added the **azureStorageContainerName** property to the [cloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcreviewstatus?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReviewStatus"
                 }
             ],
