@@ -37,9 +37,11 @@ Microsoft Graph controls access to resources using permissions. You must specify
 
 | Kinds of data          | Resource                                | API         |
 |:---------------------- |:--------------------------------------- |:------------|
-| Vulnerable repeat offenders in a tenant | [attackSimulationRepeatOffender](attacksimulationrepeatoffender.md) | [getAttackSimulationRepeatOffenders](../api/reportroot-getattacksimulationrepeatoffenders.md) |
-| Simulation data and results for each user in a tenant | [attackSimulationSimulationUserCoverage](attacksimulationsimulationusercoverage.md) | [getAttackSimulationSimulationUserCoverage](../api/reportroot-getattacksimulationsimulationusercoverage.md) |
-| Training coverage for each user in a tenant | [attackSimulationTrainingUserCoverage](attacksimulationtrainingusercoverage.md) | [getAttackSimulationTrainingUserCoverage](../api/reportroot-getattacksimulationtrainingusercoverage.md) |
+| Vulnerable repeat offenders in a tenant | [attackSimulationRepeatOffender](attacksimulationrepeatoffender.md) | [getAttackSimulationRepeatOffenders](../api/securityreportsroot-getattacksimulationrepeatoffenders.md) |
+| Simulation data and results for each user in a tenant | [attackSimulationSimulationUserCoverage](attacksimulationsimulationusercoverage.md) | [getAttackSimulationSimulationUserCoverage](../api/securityreportsroot-getattacksimulationsimulationusercoverage.md) |
+| Training coverage for each user in a tenant | [attackSimulationTrainingUserCoverage](attacksimulationtrainingusercoverage.md) | [getAttackSimulationTrainingUserCoverage](../api/securityreportsroot-getattacksimulationtrainingusercoverage.md) |
+
+[!INCLUDE [attacksim-deprecate-queryurl-reportapi](../includes/attacksim-deprecate-queryurl-reportapi.md)]
 
 ## Next steps
 

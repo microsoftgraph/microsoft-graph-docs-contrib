@@ -9,7 +9,9 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 $params = @{
 	DisplayName = "Seattle District Technical Schools"
 	Description = "Seattle district technical schools administration"
-	Visibility = "HiddenMembership"
+	MembershipType = "Dynamic"
+	MembershipRule = "(user.country -eq "United States")"
+	MembershipRuleProcessingState = "On"
 }
 
 New-MgAdministrativeUnit -BodyParameter $params

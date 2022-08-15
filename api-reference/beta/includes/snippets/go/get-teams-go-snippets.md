@@ -7,14 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.TeamsRequestBuilderGetQueryParameters{
-	Filter: "displayName%20eq%20'A%20Contoso%20Team'",
-	Select: "id,description",
+requestParameters := &graphconfig.TeamsRequestBuilderGetQueryParameters{
+	Filter: "displayName eq 'A Contoso Team'",
+	Select: [] string {"id","description"},
 }
-options := &msgraphsdk.TeamsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.TeamsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Teams().Get(options)
+
+result, err := graphClient.Teams().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

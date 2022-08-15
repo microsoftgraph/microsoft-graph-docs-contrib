@@ -53,6 +53,9 @@ The following table shows the parameters that can be used with this action.
 |addressableUserName|String|Not yet documented|
 |groupTag|String|Not yet documented|
 |displayName|String|Not yet documented|
+|deviceAccountUpn|String|Not yet documented|
+|deviceAccountPassword|String|Not yet documented|
+|deviceFriendlyName|String|Not yet documented|
 
 
 
@@ -67,13 +70,16 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/updateDeviceProperties
 
 Content-type: application/json
-Content-length: 187
+Content-length: 354
 
 {
   "userPrincipalName": "User Principal Name value",
   "addressableUserName": "Addressable User Name value",
   "groupTag": "Group Tag value",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "deviceAccountUpn": "Device Account Upn value",
+  "deviceAccountPassword": "Device Account Password value",
+  "deviceFriendlyName": "Device Friendly Name value"
 }
 ```
 

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgServicePrincipalOwner -ServicePrincipalId $servicePrincipalId
+Get-MgServicePrincipalOwner -ServicePrincipalId $servicePrincipalId -OutFile $outFileId
 
 ```

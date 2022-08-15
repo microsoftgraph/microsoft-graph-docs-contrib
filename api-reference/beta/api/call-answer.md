@@ -1,7 +1,7 @@
 ---
 title: "call: answer"
 description: "Answer an incoming call."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -22,9 +22,9 @@ You do not need any permissions to answer a peer-to-peer call. You need one of t
 
 | Permission type | Permissions (from least to most privileged)                 |
 | :-------------- | :-----------------------------------------------------------|
-| Delegated (work or school account)     | Not Supported                        |
-| Delegated (personal Microsoft account) | Not Supported                        |
-| Application     | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All |
+| Delegated (work or school account)     | Not supported.                       |
+| Delegated (personal Microsoft account) | Not supported.                       |
+| Application     | Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All     |
 
 > **Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission. You must have at least one of the following permissions to ensure that the `source` in the incoming call notification is decrypted: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. The `source` is the caller info in the incoming call notification. Without at least one of these permissions, the `source` will remain encrypted.
 
@@ -49,6 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 | :-----------------  | :-----------------------------------------                                                                                           | :----------------------------------------------------------------------------------------------------------------------------------------------                                                                     |
 | callbackUri         | String                                                                                                                               | Allows bots to provide a specific callback URI for the concurrent call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`. |
 | acceptedModalities  | String collection                                                                                                                    | The list of accept modalities. Possible value are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call.                                                                                      |
+| callOptions            | [incomingCallOptions](../resources/incomingcalloptions.md)                                                         | The call options.   |
 | mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | The media configuration. Required.                                                                                                                                                                                 |
 | participantCapacity | Int                                                                                                                                  | The number of participant that the application can handle for the call, for [Teams policy-based recording](/MicrosoftTeams/teams-recording-policy) scenario.                                                     |
 
@@ -58,7 +59,7 @@ This method returns a `202 Accepted` response code.
 ## Examples
 The following example shows how to call this API.
 
-##### Request
+#### Request
 The following example shows the request.
 
 # [HTTP](#tab/http)
@@ -80,10 +81,13 @@ Content-Length: 211
   "acceptedModalities": [
     "audio"
   ],
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.incomingCallOptions",
+    "isContentSharingNotificationEnabled": true
+  },
   "participantCapacity": 200
 }
 ```
-This blob is the serialized configuration for media sessions which is generated from the media SDK.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
@@ -91,10 +95,6 @@ This blob is the serialized configuration for media sessions which is generated 
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-answer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -109,10 +109,14 @@ This blob is the serialized configuration for media sessions which is generated 
 [!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/call-answer-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
+#### Response
 Here is an example of the response. 
 
 <!-- {
@@ -124,7 +128,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 1: Answer a Peer-to-Peer VoIP call with service hosted media
 
-##### Notification - incoming
+#### Notification - incoming
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -193,7 +197,7 @@ Content-Type: application/json
 }
 ```
 
-##### Request
+#### Request
 
 <!-- {
   "blockType": "ignored",
@@ -222,7 +226,7 @@ Content-Type: application/json
 }
 ```
 
-##### Response
+#### Response
 <!-- {
   "blockType": "response"
 } -->
@@ -230,7 +234,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -260,7 +264,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - established
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -292,7 +296,7 @@ Content-Type: application/json
 
 ### Example 2: Answer VOIP call with application hosted media
 
-##### Notification - incoming
+#### Notification - incoming
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -348,7 +352,7 @@ Content-Type: application/json
 }
 ```
 
-##### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -369,16 +373,13 @@ Content-Type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-app-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-app-hosted-media-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-answer-app-hosted-media-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -393,10 +394,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-app-hosted-media-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/call-answer-app-hosted-media-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response"
@@ -405,7 +410,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -435,7 +440,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - established
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -460,6 +465,54 @@ Content-Type: application/json
         "@odata.etag": "W/\"5445\"",
         "state": "established"
       }
+    }
+  ]
+}
+```
+
+#### Notification - content sharing started
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions/2765eb15-01f8-47c6-b12b-c32111a4a86f"
+    }
+  ]
+}
+```
+
+#### Notification - content sharing ended
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions/2765eb15-01f8-47c6-b12b-c32111a4a86f"
     }
   ]
 }

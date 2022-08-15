@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Files
 
-Get-MgUserDrive -UserId $userId
+Get-MgUserDrive -UserId $userId -OutFile $outFileId
 
 ```

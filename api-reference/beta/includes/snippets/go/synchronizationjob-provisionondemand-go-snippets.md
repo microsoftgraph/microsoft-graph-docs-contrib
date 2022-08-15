@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewParametersRequestBody()
 requestBody.SetParameters( []SynchronizationJobApplicationParameters {
 	msgraphsdk.NewSynchronizationJobApplicationParameters(),
 	SetAdditionalData(map[string]interface{}{
@@ -21,7 +21,7 @@ options := &msgraphsdk.ProvisionOnDemandRequestBuilderPostOptions{
 }
 servicePrincipalId := "servicePrincipal-id"
 synchronizationJobId := "synchronizationJob-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).ProvisionOnDemand().Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).ProvisionOnDemand(servicePrincipal-id, synchronizationJob-id).Post(options)
 
 
 ```
