@@ -7,14 +7,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "userPurpose",
           "ChangeType": "Addition",
-          "Description": "Added the **userPurpose** property to [mailboxSettings](https://docs.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-1.0) entity.",
+          "Description": "Added the **userPurpose** property to the [mailboxSettings](https://docs.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-1.0) resource.",
           "Target": "mailboxSettings"
         }
       ],
       "Id": "eebbe000-313f-4698-87b1-651a9e75f114",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-02-07T00:00:00.000Z",
+      "CreatedDateTime": "2022-08-15T00:00:00.000Z",
       "WorkloadArea": "Mail",
       "SubArea": ""
     },
@@ -25,14 +25,22 @@
           "ApiChange": "Property",
           "ChangedApiName": "userPurpose",
           "ChangeType": "Change",
-          "Description": "Added the **userPurpose** property to [mailboxSettings](https://docs.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-1.0) entity.",
+          "Description": "Renamed the **mailboxRecipientType** enumeration as **userPurpose**.",
+          "Target": "mailboxSettings"
+        },
+        {
+          "Id": "aaed27af-4717-4e50-8c8a-a5c7f87c0491",
+          "ApiChange": "Property",
+          "ChangedApiName": "userPurpose",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `unknown` member from the **userPurpose** enumeration.",
           "Target": "mailboxSettings"
         }
       ],
       "Id": "aaed27af-4717-4e50-8c8a-a5c7f87c0491",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2022-02-07T00:00:00.000Z",
+      "CreatedDateTime": "2022-08-15T00:00:00.000Z",
       "WorkloadArea": "Mail",
       "SubArea": ""
     },
