@@ -16,7 +16,7 @@ Represents the user's recipient or mailbox type in Exchange Online. Used to diff
 ## Properties
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|value|[userPurpose](#userpurpose-values)|Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `user`, `linked`, `shared`, `room`, `equipment`, and `others`. See the next section for more information.|
+|value|[userPurpose](#userpurpose-values)|Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `user`, `linked`, `shared`, `room`, `equipment`, and `others`. For more information, see [userPurpose values](#userpurpose-values).|
 
 ### userPurpose values
 |Member|Description|
