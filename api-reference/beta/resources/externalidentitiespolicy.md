@@ -55,3 +55,5 @@ The following is a JSON representation of the resource.
 }
 ```
 
+## See also
++ [Leave an organization as an external user](/azure/active-directory/external-identities/leave-the-organization)
