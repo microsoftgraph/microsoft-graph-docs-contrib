@@ -35,7 +35,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests
 
 ## Optional query parameters
 
-This method supports the `$select`, `$skip`, `$top`, `$filter`, and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$skip`, `$top`, `$filter` (`eq`), and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

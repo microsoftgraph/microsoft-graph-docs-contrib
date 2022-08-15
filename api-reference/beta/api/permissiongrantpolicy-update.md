@@ -62,7 +62,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_permissiongrantpolicy"
+  "name": "update_permissiongrantpolicy",
+  "sampleKeys": ["my-custom-consent-policy"]
 }-->
 
 ```msgraph-interactive
