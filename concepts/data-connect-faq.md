@@ -20,11 +20,11 @@ For example, you might want to use Microsoft Graph Data Connect to do an initial
 
 Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. If the initial overhead is too long for your use case, please reach out to the Microsoft Graph Data Connect team at dataconnect@microsoft.com
 
-Please Note: Your tenant admin needs to approve and consent within 24 hours of kicking off the pipeline. If the consent is not given within 24 hours, consent will expire and your will need to restart the consent process by kicking off your pipelines again. The overhead time mentioned aboved does not include time taken in consent approval.
+Please Note: Your tenant admin will need to approve and consent within 24 hours of kicking off the pipeline. If the consent is not given within 24 hours, it will expire and you will need to restart the consent process by kicking off your pipelines again. The overhead time mentioned aboved does not include time taken in consent approval.
 
 ## In what regions is Microsoft Graph Data Connect available?
 
-Microsoft Graph Data Connect is currently available in multiple regions across the following geographies: North America, Europe, Asia Pacific, United Kingdom/Great Britain, and Australia. Other regions will follow. 
+Microsoft Graph Data Connect is currently available in multiple regions across the following geographies: North America, Europe, Asia Pacific, United Kingdom/Great Britain, and Australia. Other regions will soon follow and will be updated promptly.
 
 For a list of Office to Azure regions and their mapping please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#regions).
 
@@ -41,13 +41,13 @@ New datasets are added to Microsoft Graph Data Connect on a regular basis. Pleas
 
 ## Which datasets are in Preview and which ones are in General Availability?
 
-Datasets under the ODSP and Viva Insights section are currently available for customers in Preview or have the Viva Insights license respectively. For more information on how to sign up for Preview for certain datasets, please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets).
+Datasets under the ODSP and Viva Insights section are currently available for customers in Preview or for those who have the Viva Insights license respectively. For more information on how to sign up for Preview for certain datasets, please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets).
 
 ## How much do I have to pay for Microsoft Graph Data Connect?
 
 Microsoft Graph Data Connect consumption charges are billed monthly on a pay-as-you-go basis. The Data Connect billing unit is in a multiple of 1000s of objects, where 1 object maps to 1 individual instance of an entity in Microsoft 365. For example, 1 email == 1 object, 1 file == 1 object, 1 Teams chat message == 1 object, and so on. 
 
-We have some datasets available for free or are currently free in preview while other datasets are charged. Microsoft Graph Data Connect offers datasets across multiple different Microsoft 365 products and services. For more information on datasets that are available through Microsoft Graph Data Connect, please refer to, please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets).
+We have some datasets available for free or are currently free in preview while other datasets are charged. Microsoft Graph Data Connect offers datasets across multiple different Microsoft 365 products and services. For more information on datasets that are available through Microsoft Graph Data Connect, please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets). For more information about billing, see the [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
 
 There is no charge for extraction of objects from the following datasets:
 - BasicDataSet_v0.User_v0
@@ -61,7 +61,7 @@ There is no charge for extraction of objects from the following datasets:
 
 ## How is billing calculated?
 
-Customers are charged monthly and Microsoft Graph Data Connect does fractionable rounding up. Additionally, each pipeline run is billed separately.
+Microsoft Graph Data Connect charges customers on a monthly basis and also does fractionable rounding up when calculating the bill. Please note that each pipeline run is billed separately.
 
 For example, a customer has 20 pipeline runs within the month, each yielding 500 rows. In total, the customer runs pipelines for 10,000 rows that month. However, their bill will not simply be 10,000 rows/1000 rows = 10 units. 
 
@@ -69,7 +69,7 @@ Instead, the customer will be billed for 20 units due to Microsoft Graph Data Co
 
 ##  What can I do if a dataset is not yet supported for my tenant?
 
-As mentioned earlier, for datasets like ODPS and Viva Insights, please make sure you meet the criteria required to access these datasets mentioned in [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets). Additionally, these datasets are only available to customers who have opted in for them explicitly.
+For datasets like ODPS and Viva Insights, please make sure you meet the criteria required to access these datasets mentioned in [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets). Additionally, these datasets are only available to customers who have opted in for them explicitly.
 
 For further inquires or questions, please reach out to dataconnect@microsoft.com.
 
@@ -92,15 +92,15 @@ For more information on building your application with Azure Synapse or Azure Da
 
 ## How can I check for pending Privileged Access Management (PAM) requests?
 
-Before Microsoft Graph Data Connect can copy your data, an administrator must approve a Privileged Access Management (PAM) request. PAM is the mechanism used to authorize your data pipeline access to the data in Microsoft 365. The first time you trigger a pipeline, it waits for a Microsoft 365 administrator (or appointed delegate) to approve the access request. Although the pipeline status shows **In progress**, the underlying copy activity will have a status of **ConsentPending** until approval is granted, as shown in the following screenshot.
+Before Microsoft Graph Data Connect can copy your data, an administrator must approve a Privileged Access Management (PAM) request. PAM is the mechanism used to authorize your data pipeline access to the data in Microsoft 365. 
+
+The first time you trigger a pipeline, it waits for a Microsoft 365 administrator (or appointed delegate) to approve the access request. Although the pipeline status shows **In progress**, the underlying copy activity will have a status of **ConsentPending** until approval is granted, as shown in the following screenshot.
 
 ![Screenshot of the pipeline run status pane with a status of ConsentPending](images/data-connect-tips.png)
 
 During development, it's a good idea to make sure that your pipeline runs aren't stuck on **ConsentPending**, especially after you make a change to your pipeline. For example, if you add an additional field to the schema, the next pipeline run issues a new PAM request that has to be approved. Don't waste time waiting on a pipeline that's waiting for your approval.
 
-Please note that consent requests will expire after 24 hours if not approved and the pipeline will fail. 
-
-Additionally, PAM approval is valid for only 6 months (unless revoked).
+Please note that consent requests will expire after 24 hours if not approved and the pipeline will fail. Additionally, PAM approval is valid for only 6 months (unless revoked).
 
 ## How can I approve PAM requests via the Microsoft 365 admin center?
 
@@ -112,6 +112,7 @@ To approve a request, users need to follow the below:
 - Users must have an EXO license assigned.
 
 Follow the below to approve/deny your PAM request:
+
 1. Log into the PAM interface at [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/Settings/PrivilegedAccess).
 2. Go to the sidebar on the right hand side and click on **Settings** > **Org Settings** > **Services** > **Microsoft Graph Data Connect**.
 3. Locate the request
@@ -129,7 +130,7 @@ As long as the scope of the data being extracted remains the same for datasets, 
 
 A new consent request will be triggered if the scope of data changes-- such as adding new dataset, selecting more columns, or adding other users. A new consent can also be triggered when changing the pipeline or activity name in Azure Synapse or Azure Data Factory.
 
-## Can I have a second user to approve PAM requests?
+## Why do I need a second user to approve PAM requests?
 
 When you request a dataset pipeline run, Microsoft Graph Data Connect service will verify and then trigger a PAM approval request if needed. The request is sent to the approver group defined for the tenant when enabling Microsoft Graph Data Connect in the Microsoft Admin Center. 
 
