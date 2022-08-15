@@ -68,7 +68,7 @@ The following is a JSON representation of the resource.
     "lastActiveDateTime": "DateTimeOffset",
     "lastModifiedDateTime": "DateTimeOffset",
     "startedDateTime": "DateTimeOffset",
-    "status": "String (EnumType)",
+    "status": "String",
     "userTimezone": "String"
 }
 ```
