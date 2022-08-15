@@ -56,7 +56,7 @@ You can specify the following properties when creating a **user**.
 |ageGroup|String|**TODO: Add Description** Optional.|
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|**TODO: Add Description** Required.|
 |assignedPlans|[assignedPlan](../resources/assignedplan.md) collection|**TODO: Add Description** Required.|
-|authorizationInfo|[authorizationInfo](../resources/authorizationinfo.md)|**TODO: Add Description** Optional.|
+|authorizationInfo|[authorizationInfo](../resources/authorizationpolicy.md)|**TODO: Add Description** Optional.|
 |businessPhones|String collection|**TODO: Add Description** Required.|
 |city|String|**TODO: Add Description** Optional.|
 |companyName|String|**TODO: Add Description** Optional.|
@@ -119,7 +119,7 @@ You can specify the following properties when creating a **user**.
 |userType|String|**TODO: Add Description** Optional.|
 |mailboxSettings|[mailboxSettings](../resources/mailboxsettings.md)|**TODO: Add Description** Optional.|
 |deviceEnrollmentLimit|Int32|**TODO: Add Description** Required.|
-|print|[userPrint](../resources/intune-userprint.md)|**TODO: Add Description** Optional.|
+|print|[userPrint](../resources/print.md)|**TODO: Add Description** Optional.|
 |aboutMe|String|**TODO: Add Description** Optional.|
 |birthday|DateTimeOffset|**TODO: Add Description** Required.|
 |hireDate|DateTimeOffset|**TODO: Add Description** Required.|

@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [workflowVersion](../resources/workflowversion.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [workflowVersion](../resources/identitygovernance-workflowversion.md) objects in the response body.
 
 ## Examples
 
