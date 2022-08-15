@@ -50,8 +50,8 @@ Here is a JSON representation of the resource.
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
   "timeFormat": "string",
   "timeZone": "string",
-  "workingHours": {"@odata.type": "microsoft.graph.workingHours"},
-  "userPurpose": {"@odata.type": "microsoft.graph.userPurpose"}
+  "userPurpose": {"@odata.type": "microsoft.graph.userPurpose"},
+  "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
 }
 
 ```
