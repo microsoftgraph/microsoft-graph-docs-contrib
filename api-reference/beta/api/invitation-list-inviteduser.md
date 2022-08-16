@@ -208,7 +208,7 @@ Content-Type: application/json
       },
       "deviceEnrollmentLimit": "Integer",
       "print": {
-        "@odata.type": "microsoft.graph.userPrint"
+        "@odata.type": "microsoft.graph.Print"
       },
       "aboutMe": "String",
       "birthday": "String (timestamp)",

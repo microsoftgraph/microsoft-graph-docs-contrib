@@ -198,7 +198,7 @@ Content-length: 4431
       },
       "deviceEnrollmentLimit": "Integer",
       "print": {
-        "@odata.type": "microsoft.graph.userPrint"
+        "@odata.type": "microsoft.graph.Print"
       },
       "aboutMe": "String",
       "birthday": "String (timestamp)",

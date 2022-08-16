@@ -119,7 +119,7 @@ You can specify the following properties when creating a **user**.
 |userType|String|**TODO: Add Description** Optional.|
 |mailboxSettings|[mailboxSettings](../resources/mailboxsettings.md)|**TODO: Add Description** Optional.|
 |deviceEnrollmentLimit|Int32|**TODO: Add Description** Required.|
-|print|[userPrint](../resources/print.md)|**TODO: Add Description** Optional.|
+|print|[Print](../resources/print.md)|**TODO: Add Description** Optional.|
 |aboutMe|String|**TODO: Add Description** Optional.|
 |birthday|DateTimeOffset|**TODO: Add Description** Required.|
 |hireDate|DateTimeOffset|**TODO: Add Description** Required.|
@@ -273,7 +273,7 @@ Content-length: 3735
   },
   "deviceEnrollmentLimit": "Integer",
   "print": {
-    "@odata.type": "microsoft.graph.userPrint"
+    "@odata.type": "microsoft.graph.Print"
   },
   "aboutMe": "String",
   "birthday": "String (timestamp)",
@@ -437,7 +437,7 @@ Content-Type: application/json
   },
   "deviceEnrollmentLimit": "Integer",
   "print": {
-    "@odata.type": "microsoft.graph.userPrint"
+    "@odata.type": "microsoft.graph.Print"
   },
   "aboutMe": "String",
   "birthday": "String (timestamp)",
