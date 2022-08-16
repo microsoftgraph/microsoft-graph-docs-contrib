@@ -34,18 +34,17 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|**TODO: Add Description**|
-|failedTasksCount|Int32|**TODO: Add Description**|
-|failedUsersCount|Int32|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastUpdatedDateTime|DateTimeOffset|**TODO: Add Description**|
-|processingStatus|lifecycleWorkflowProcessingStatus|**TODO: Add Description**.The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
-|scheduledDateTime|DateTimeOffset|**TODO: Add Description**|
-|startedDateTime|DateTimeOffset|**TODO: Add Description**|
-|successfulUsersCount|Int32|**TODO: Add Description**|
-|totalUnprocessedTasksCount|Int32|**TODO: Add Description**|
-|totalUsersCount|Int32|**TODO: Add Description**|
-|workflowExecutionType|workflowExecutionType|**TODO: Add Description**.The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`.|
+|completedDateTime|DateTimeOffset|The date time that the run completed. Optional.|
+|failedTasksCount|Int32|The number of tasks that failed in the run execution. Required.|
+|failedUsersCount|Int32|The number of users that failed in the run execution. Required.|
+|lastUpdatedDateTime|DateTimeOffset|The datetime that the run was last updated. Optional.|
+|processingStatus|lifecycleWorkflowProcessingStatus|The run execution status. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. Required.|
+|startedDateTime|DateTimeOffset|The date time that the run execution started. Optional.|
+|scheduledDateTime|DateTimeOffset|The date time that the run is scheduled to be executed for a workflow. Required.|
+|successfulUsersCount|Int32|The number of successfully completed users in the run. Required.|
+|totalUsersCount|Int32|The total number of users in the workflow execution. Required.|
+|totalUnprocessedTasksCount|Int32|The total number of unprocessed tasks in the run execution. Required.|
+|workflowExecutionType|workflowExecutionType|The execution type of the workflows associated with the run. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`. Required.|
 
 ## Relationships
 

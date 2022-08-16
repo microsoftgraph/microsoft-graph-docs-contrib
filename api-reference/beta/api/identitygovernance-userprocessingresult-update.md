@@ -48,15 +48,15 @@ PATCH /workflowBase/userProcessingResults/{userProcessingResultId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|failedTasksCount|Int32|**TODO: Add Description** Required.|
-|processingStatus|lifecycleWorkflowProcessingStatus|**TODO: Add Description**. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. Required.|
-|scheduledDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|startedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|totalTasksCount|Int32|**TODO: Add Description** Required.|
-|totalUnprocessedTasksCount|Int32|**TODO: Add Description** Required.|
-|workflowExecutionType|workflowExecutionType|**TODO: Add Description**. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`. Required.|
-|workflowVersion|Int32|**TODO: Add Description** Required.|
+|completedDateTime|DateTimeOffset|The date time that the workflow execution for a user completed. Optional.|
+|failedTasksCount|Int32|The number of tasks that failed in the workflow execution. Required.|
+|processingStatus|lifecycleWorkflowProcessingStatus|The workflow execution status. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. Required.|
+|scheduledDateTime|DateTimeOffset|The date time that the workflow is scheduled to be executed for a user. Required.|
+|startedDateTime|DateTimeOffset|The date time that the workflow execution started. Optional.|
+|totalTasksCount|Int32|The total number of tasks that in the workflow execution. Required.|
+|totalUnprocessedTasksCount|Int32|The total number of unprocessed tasks for the workflow. Required.|
+|workflowExecutionType|workflowExecutionType|Describes the execution type of the workflow. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`. Required.|
+|workflowVersion|Int32|The version of the workflow that was executed. Required.|
 
 ## Response
 
