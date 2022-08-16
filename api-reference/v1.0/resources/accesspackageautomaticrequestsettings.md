@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Specifies if automatic assignments should be enabled, specify grace period before removal and if targets must be removed if they longer match the membership rule specified under `specificAllowedTargets` setting of the access package policy.
+Specifies if automatic assignments should be enabled, specify grace period before removal and if targets must be removed if they longer match the membership rule specified under `specificAllowedTargets` setting of an [access package assignment policy](accesspackageassignmentpolicy.md).
 
 ## Properties
 |Property|Type|Description|
