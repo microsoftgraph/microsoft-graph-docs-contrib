@@ -17,7 +17,7 @@ Specifies if automatic assignments should be enabled, specify grace period befor
 |Property|Type|Description|
 |:---|:---|:---|
 |gracePeriodBeforeAccessRemoval|Duration|The number of days access must be retained before the target's access is revoked once they leave the allowed target scope.|
-|removeAccessWhenTargetLeavesAllowedTargets|Boolean|Indicates whether automatic assignment must be removed for targets who move out of the allowed target scope.|
+|removeAccessWhenTargetLeavesAllowedTargets|Boolean|If set to true, then when a target leaves the allowed target scope, their automatic assignment will be ended.|
 |requestAccessForAllowedTargets|Boolean|Indicates whether automatic assignments must happen for allowed targets.|
 
 ## Relationships
