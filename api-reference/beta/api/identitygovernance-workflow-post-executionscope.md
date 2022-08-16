@@ -127,7 +127,7 @@ You can specify the following properties when creating a **user**.
 |mySite|String|The mysite associated with the user. Optional.|
 |pastProjects|String collection|The last projects associated with the user Optional.|
 |preferredName|String|The preferred name of the user. Optional.|
-|responsibilities|A list for the user to enumerate their responsibilities. Optional.|
+|responsibilities|String collection|A list for the user to enumerate their responsibilities. Optional.|
 |schools|String collection|A list for the user to enumerate the schools they have attended. Optional.|
 |skills|String collection|A list for the user to enumerate their skills. Optional.|
 
