@@ -10430,6 +10430,8 @@ items:
             href: api/cloudpc-changeuseraccounttype.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Get connectivity history
+            href: api/cloudpc-getcloudpcconnectivityhistory.md
           - name: Get launch info for user
             href: api/cloudpc-getcloudpclaunchinfo.md
           - name: Get remote action results
