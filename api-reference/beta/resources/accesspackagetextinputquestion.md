@@ -45,6 +45,7 @@ The following is a JSON representation of the resource.
   "text": {
     "@odata.type": "microsoft.graph.accessPackageLocalizedContent"
   },
+  "regexPattern": "String",
   "sequence": "Integer",
   "isSingleLineQuestion": "Boolean"
 }
