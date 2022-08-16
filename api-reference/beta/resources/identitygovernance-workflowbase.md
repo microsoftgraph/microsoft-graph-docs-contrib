@@ -40,7 +40,7 @@ A resource type noting workflowBase created using Lifecycle Workflows. Workflows
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|category|String|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|The date and time a workflow was created.|
 |description|String|A string that describes the purpose of the workflow.|
 |displayName|String|A string to identify the workflow. |

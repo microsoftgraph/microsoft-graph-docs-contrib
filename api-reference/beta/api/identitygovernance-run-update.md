@@ -52,13 +52,13 @@ PATCH /workflowBase/runs/{runId}
 |failedTasksCount|Int32|The number of tasks that failed in the run execution. Required.|
 |failedUsersCount|Int32|The number of users that failed in the run execution. Required.|
 |lastUpdatedDateTime|DateTimeOffset|The datetime that the run was last updated. Optional.|
-|processingStatus|lifecycleWorkflowProcessingStatus|The run execution status. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. Required.|
+|processingStatus|String|The run execution status. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. Required.|
 |startedDateTime|DateTimeOffset|The date time that the run execution started. Optional.|
 |scheduledDateTime|DateTimeOffset|The date time that the run is scheduled to be executed for a workflow. Required.|
 |successfulUsersCount|Int32|The number of successfully completed users in the run. Required.|
 |totalUsersCount|Int32|The total number of users in the workflow execution. Required.|
 |totalUnprocessedTasksCount|Int32|The total number of unprocessed tasks in the run execution. Required.|
-|workflowExecutionType|workflowExecutionType|The execution type of the workflows associated with the run. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`. Required.|
+|workflowExecutionType|String|The execution type of the workflows associated with the run. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`. Required.|
 
 ## Response
 

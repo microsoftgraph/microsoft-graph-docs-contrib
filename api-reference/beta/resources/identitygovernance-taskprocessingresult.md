@@ -42,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|The date and time of when a task is created.|
 |failureReason|String|The reason why a task failed.|
 |id|String|Identifier used for individually addressing a specific task processing result. Inherited from [entity](../resources/entity.md).|
-|processingStatus|lifecycleWorkflowProcessingStatus|The processing status of a task. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
+|processingStatus|String|The processing status of a task. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
 |startedDateTime|DateTimeOffset|The date and time when a task is started.|
 
 ## Relationships

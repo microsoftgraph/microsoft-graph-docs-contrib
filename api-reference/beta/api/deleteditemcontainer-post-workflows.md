@@ -50,7 +50,7 @@ You can specify the following properties when creating a **workflow**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|lifecycleWorkflowCategory|The category of the HR function supported by the workflows created using this template. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
+|category|String|The category of the HR function supported by the workflows created using this template. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
 |createdDateTime|DateTimeOffset|The date time when the `workflow` was versioned. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
 |description|String|The description of the `workflow` or `workflowVersion`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
 |displayName|String|The display name of the `workflow` or `workflowVersion`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Required.|

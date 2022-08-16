@@ -48,7 +48,7 @@ PATCH /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|lifecycleWorkflowCategory|The category of the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
+|category|String|The category of the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
 |createdDateTime|DateTimeOffset|The date and time a workflow was created. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
 |description|String|A string that describes the purpose of the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
 |displayName|String|A string to identify the workflow.Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Required.|

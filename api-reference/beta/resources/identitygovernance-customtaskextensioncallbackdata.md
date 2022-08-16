@@ -15,13 +15,13 @@ Namespace: microsoft.graph.identityGovernance
 
 A resource type that reports the status of the custom task extension callback data.
 
-Inherits from [customExtensionData](../resources/customextensiondata.md).
+Inherits from [customExtensionData](../resources/identitygovernance-customTaskExtensionCallbackData.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|operationStatus|customTaskExtensionCallbackOperationStatus|The operation status of the Custom Task extension callback configuration call.The possible values are: `completed`, `failed`, `unknownFutureValue`.|
+|operationStatus|String|The operation status of the Custom Task extension callback configuration call.The possible values are: `completed`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 

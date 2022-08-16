@@ -41,12 +41,12 @@ Inherits from [entity](../resources/entity.md).
 |completedDateTime|DateTimeOffset|The date and time of a completed user processing result.|
 |failedTasksCount|Int32|Numerical count of failed tasks for users processed.|
 |id|String|Identifier used for individually addressing a specific user processing result. Inherited from [entity](../resources/entity.md).|
-|processingStatus|lifecycleWorkflowProcessingStatus|The processing status of a .The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
+|processingStatus|String|The processing status of a .The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
 |scheduledDateTime|DateTimeOffset|The time and date of a scheduled workflow to be processed for a user.|
 |startedDateTime|DateTimeOffset|The date and time when a user processing result was started.|
 |totalTasksCount|Int32|Numerical count of total tasks.|
 |totalUnprocessedTasksCount|Int32|Numerical count of unprocessed tasks for a user.|
-|workflowExecutionType|workflowExecutionType|The workflow execution type of a workflow. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`.|
+|workflowExecutionType|String|The workflow execution type of a workflow. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`.|
 |workflowVersion|Int32|The workflow version.|
 
 ## Relationships

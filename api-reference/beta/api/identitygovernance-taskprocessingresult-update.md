@@ -52,7 +52,7 @@ PATCH /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}
 |completedDateTime|DateTimeOffset|The date time when `taskProcessingResult` execution ended. Optional.|
 |createdDateTime|DateTimeOffset|The date time when the `taskProcessingResult` was created. Required.|
 |failureReason|String|Describes why the `taskProcessingResult` has failed. Optional.|
-|processingStatus|lifecycleWorkflowProcessingStatus|Describes the execution status of the `taskProcessingResult`. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. Required.|
+|processingStatus|String|Describes the execution status of the `taskProcessingResult`. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. Required.|
 |startedDateTime|DateTimeOffset|The date time when `taskProcessingResult` execution started. Optional.|
 
 ## Response
