@@ -50,14 +50,14 @@ You can specify the following properties when creating a **task**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|arguments|[microsoft.graph.keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|**TODO: Add Description** Required.|
-|category|lifecycleTaskCategory|**TODO: Add Description**. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
-|continueOnError|Boolean|**TODO: Add Description** Required.|
-|description|String|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Required.|
-|executionSequence|Int32|**TODO: Add Description** Required.|
-|isEnabled|Boolean|**TODO: Add Description** Required.|
-|taskDefinitionId|String|**TODO: Add Description** Required.|
+|arguments|[microsoft.graph.keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|Contains the user specified arguments necessary to execute the task. Required.|
+|category|lifecycleTaskCategory|The category of the HR function that can use this task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
+|continueOnError|Boolean|Determines if task can block workflow execution on error. Required.|
+|description|String|The description of the `task`. Optional.|
+|displayName|String|The display name of the `task`. Required.|
+|executionSequence|Int32|Determines the ordering of the tasks within the workflow. Required.|
+|isEnabled|Boolean|Whether the `task` is enabled in the workflow. Required.|
+|taskDefinitionId|String|The unique identifier for the `taskDefinition`. Required.|
 
 ## Response
 

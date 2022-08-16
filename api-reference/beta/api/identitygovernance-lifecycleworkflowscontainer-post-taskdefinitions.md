@@ -50,12 +50,13 @@ You can specify the following properties when creating a **taskDefinition**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|lifecycleTaskCategory|**TODO: Add Description**. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
-|continueOnError|Boolean|**TODO: Add Description** Required.|
-|description|String|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Required.|
-|parameters|[microsoft.graph.identityGovernance.parameter](../resources/identitygovernance-parameter.md) collection|**TODO: Add Description** Required.|
-|version|Int32|**TODO: Add Description** Required.|
+|category|lifecycleTaskCategory|The category of the task definition. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|continueOnError|Boolean|A boolean value that determines if the failure of the task definition stops the subsequent workflows from running.|
+|description|String|A string that describes the purpose of the task definition for administrative use.|
+|displayName|String|A unique string that identifies the task definition.|
+|id|String|Identifier used for individually addressing a specific task definition. Inherited from [entity](../resources/entity.md).|
+|parameters|[microsoft.graph.identityGovernance.parameter](../resources/identitygovernance-parameter.md) collection|The parameter of the task definition.|
+|version|Int32|An integer noting the version of the task definition.|
 
 ## Response
 
