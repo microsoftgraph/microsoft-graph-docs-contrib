@@ -56,7 +56,7 @@ You can specify the following properties when creating a **user**.
 |ageGroup|String|**TODO: Add Description** Optional.|
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|**TODO: Add Description** Required.|
 |assignedPlans|[assignedPlan](../resources/assignedplan.md) collection|**TODO: Add Description** Required.|
-|authorizationInfo|[authorizationInfo](../resources/authorizationPolicy.md)|**TODO: Add Description** Optional.|
+|authorizationPolicy|[authorizationPolicy](../resources/authorizationPolicy.md)|**TODO: Add Description** Optional.|
 |businessPhones|String collection|**TODO: Add Description** Required.|
 |city|String|**TODO: Add Description** Optional.|
 |companyName|String|**TODO: Add Description** Optional.|
