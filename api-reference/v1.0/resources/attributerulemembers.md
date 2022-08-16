@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Identifies a collection of users in the tenant who will be assigned the access package automatically based on the specified membership rule.
 
-Used in the specificAllowedTargets setting of an access package assignment policy.
+Used in the specificAllowedTargets setting of an [access package assignment policy](accesspackageassignmentpolicy.md).
 Inherits from [subjectSet](subjectset.md).
 
 ## Properties
