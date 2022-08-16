@@ -13549,6 +13549,113 @@ items:
                 href: api/governanceroleassignmentrequest-update.md
               - name: Cancel
                 href: api/governanceroleassignmentrequest-cancel.md
+        - name: Lifecycle Workflows
+          href: resources/lifecycleworkflows-overview.md
+          items:
+          - name: Workflows
+            href: resources/identitygovernance-workflow.md
+            items:
+            - name: List
+              href: api/deleteditemcontainer-list-workflows.md
+            - name: Create
+              href: api/deleteditemcontainer-post-workflows.md
+            - name: Get
+              href: api/identitygovernance-workflow-get.md
+            - name: Update
+              href: api/identitygovernance-workflow-update.md
+            - name: Delete
+              href: api/deleteditemcontainer-delete-workflows.md
+          - name: DeletedItemContainer
+            href: resources/deleteditemcontainer.md
+            items:
+            - name: List
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
+            - name: Create
+              href: api/identitygovernance-lifecycleworkflowscontainer-post-deleteditems.md
+            - name: Get
+              href: api/deleteditemcontainer-get.md
+            - name: Update
+              href: api/deleteditemcontainer-update.md
+            - name: Delete
+              href: api/identitygovernance-lifecycleworkflowscontainer-delete-deleteditems.md
+          - name: Run
+            href: resources/identitygovernance-run.md
+            items:
+            - name: List
+              href: api/identitygovernance-workflow-list-runs.md
+            - name: Create
+              href: api/identitygovernance-workflow-post-runs.md
+            - name: Get
+              href: api/identitygovernance-run-get.md
+            - name: Update
+              href: api/identitygovernance-run-update.md
+            - name: Delete
+              href: api/identitygovernance-workflow-delete-runs.md
+          - name: Task
+            href: resources/identitygovernance-task.md
+            items:
+            - name: List
+              href: api/identitygovernance-taskprocessingresult-list-task.md
+            - name: Create
+              href: api/identitygovernance-taskprocessingresult-post-task.md
+            - name: Get
+              href: api/identitygovernance-task-get.md
+            - name: Update
+              href: api/identitygovernance-task-update.md
+            - name: Delete
+              href: api/identitygovernance-taskprocessingresult-delete-task.md
+          - name: TaskDefinition
+            href: resources/identitygovernance-taskdefinition.md
+            items:
+            - name: List
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
+            - name: Create
+              href: api/identitygovernance-lifecycleworkflowscontainer-post-taskdefinitions.md
+            - name: Get
+              href: api/identitygovernance-taskdefinition-get.md
+            - name: Update
+              href: api/identitygovernance-taskdefinition-update.md
+            - name: Delete
+              href: api/identitygovernance-lifecycleworkflowscontainer-delete-taskdefinitions.md
+          - name: TaskProcessingResult
+            href: resources/identitygovernance-taskprocessingresult.md
+            items:
+            - name: List
+              href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
+            - name: Create
+              href: api/identitygovernance-userprocessingresult-post-taskprocessingresults.md
+            - name: Get
+              href: api/identitygovernance-taskprocessingresult-get.md
+            - name: Update
+              href: api/identitygovernance-taskprocessingresult-update.md
+            - name: Delete
+              href: api/identitygovernance-userprocessingresult-delete-taskprocessingresults.md
+          - name: userProcessingResult
+            href: resources/identitygovernance-userprocessingresult.md
+            items:
+            - name: List
+              href: api/identitygovernance-run-list-userprocessingresults.md
+            - name: Create
+              href: api/identitygovernance-run-post-userprocessingresults.md
+            - name: Get
+              href: api/identitygovernance-userprocessingresult-get.md
+            - name: Update
+              href: api/identitygovernance-userprocessingresult-update.md
+            - name: Delete
+              href: api/identitygovernance-run-delete-userprocessingresults.md
+          - name: WorkflowTemplate
+            href: resources/identitygovernance-workflowtemplate.md
+            items:
+            - name: List
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md
+            - name: Create
+              href: api/identitygovernance-lifecycleworkflowscontainer-post-workflowtemplates.md
+            - name: Get
+              href: api/identitygovernance-workflowtemplate-get.md
+            - name: Update
+              href: api/identitygovernance-workflowtemplate-update.md
+            - name: Delete
+              href: api/identitygovernance-lifecycleworkflowscontainer-delete-workflowtemplates.md
         - name: Terms of use
           items:
           - name: Agreement
