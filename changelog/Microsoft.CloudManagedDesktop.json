@@ -2324,6 +2324,40 @@
             "CreatedDateTime": "2022-08-15T06:58:17.7596296Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
+        },
+      {
+            "ChangeList": [
+                {
+                    "Id": "00dff431-bb18-4a62-8fb6-828335fc1495",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckNoIntuneReaderRoleError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckNoIntuneReaderRoleError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "00dff431-bb18-4a62-8fb6-828335fc1495",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "00dff431-bb18-4a62-8fb6-828335fc1495",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "00dff431-bb18-4a62-8fb6-828335fc1495",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-08-15T07:46:26.039Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
         }
     ]
 }
