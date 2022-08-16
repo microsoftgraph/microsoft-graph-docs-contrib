@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let caseSettings = await client.api('/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/settings')
+let settings = await client.api('/admin/sharepoint/settings')
 	.version('beta')
 	.get();
 

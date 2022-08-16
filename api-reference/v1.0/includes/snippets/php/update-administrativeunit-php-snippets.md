@@ -1,0 +1,20 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```php
+
+<?php
+
+// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$requestBody = new AdministrativeUnit();
+$requestBody->setDisplayName('Greater Seattle District Technical Schools');
+
+
+
+$graphServiceClient->directory()->administrativeUnitsById('administrativeUnit-id')->patch($requestBody);
+
+
+```

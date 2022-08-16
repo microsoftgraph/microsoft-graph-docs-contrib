@@ -78,6 +78,8 @@ items:
             href: office365-groups-concept-overview.md
           - name: Configure group options
             href: group-set-options.md
+          - name: Microsoft 365 group settings
+            href: group-directory-settings.md
           - name: Manage group lifecycle
             href: /learn/modules/msgraph-access-group-data
       - name: Applications
@@ -447,6 +449,8 @@ items:
             displayName: search
           - name: Search messages
             href: search-concept-messages.md
+          - name: Search Teams messages
+            href: search-concept-chat-messages.md
           - name: Search events
             href: search-concept-events.md
           - name: Search content in OneDrive and SharePoint
@@ -481,7 +485,7 @@ items:
           - name: Integrated solutions
             href: security-integration.md
           - name: Information Protection
-            href: information-protection-overview.md
+            href: security-information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
       - name: Sites and lists
@@ -520,8 +524,12 @@ items:
           - name: Get system messages
             href: system-messages.md
       - name: To-do tasks
-        href: todo-concept-overview.md
         displayName: Microsoft To Do
+        items:
+          - name: Overview
+            href: todo-concept-overview.md
+          - name: Attach files to a task
+            href: todo-attachments.md
       - name: Workbooks and charts
         items:
           - name: Overview
@@ -577,15 +585,22 @@ items:
           - name: Paging
             href: paging.md
           - name: Query parameters
+            displayName: OData version 4.01, OData query parameters
             items:
               - name: Use query parameters
                 href: query-parameters.md
                 displayName: OData query parameters, OData
-              - name: Use the search query parameter
+              - name: Use $filter
+                displayName: OData query parameters, OData
+                href: filter-query-parameter.md
+              - name: Use $search
+                displayName: OData query parameters, OData
                 href: search-query-parameter.md
               - name: Advanced query capabilities
+                displayName: OData query parameters, OData
                 href: aad-advanced-queries.md
               - name: Optimize requests with query parameters
+                displayName: OData query parameters, OData
                 href: /learn/modules/optimize-data-usage
           - name: Batching
             href: json-batching.md
@@ -595,8 +610,12 @@ items:
               - name: Overview
                 displayName: throttling
                 href: throttling.md
+              - name: Service-specific limits
+                displayName: throttling
+                href: throttling-limits.md
               - name: Optimize network traffic
                 href: /learn/modules/optimize-network-traffic
+                displayName: throttling
           - name: Change notifications
             items:
               - name: Overview
@@ -849,6 +868,9 @@ items:
           - name: Errors
             href: errors.md
             displayName: Microsoft Graph error responses and error resource types
+          - name: Azure AD service limits
+            displayName: Azure AD service limits and restrictions
+            href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
       - name: API v1.0 reference
         href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
         displayName: Microsoft Graph REST API v1.0 reference

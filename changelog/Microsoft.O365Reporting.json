@@ -1,6 +1,32 @@
 {
   "changelog": [
-	{
+		{
+		  "ChangeList": [
+		    {
+		      "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
+		      "ApiChange": "Relationship",
+		      "ChangedApiName": "reportSettings",
+		      "ChangeType": "Addition",
+		      "Description": "Added the **reportSettings** relationship to the [admin](https://docs.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
+		      "Target": "admin"
+		    },
+		    {
+		      "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
+		      "ApiChange": "Resource",
+		      "ChangedApiName": "adminReportSettings",
+		      "ChangeType": "Addition",
+		      "Description": "Added the [adminReportSettings](https://docs.microsoft.com/en-us/graph/api/resources/adminreportsettings?view=graph-rest-beta) resource and supported methods.",
+		      "Target": "adminReportSettings"
+		    }
+		  ],
+		  "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
+		  "Cloud": "Prod",
+		  "Version": "beta",
+		  "CreatedDateTime": "2022-07-18T08:53:27.1356132Z",
+		  "WorkloadArea": "Reports",
+		  "SubArea": "Microsoft 365 usage reports"
+		},
+		{
 	  "ChangeList": [
 		{
 			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
@@ -1854,7 +1880,7 @@
 		"Id": "c666366b-0cc2-49eb-b433-921507a1206d",
 		"Cloud": "prd",
 		"Version": "beta",
-		"CreatedDateTime": "2021-06-29T00:00:00",
+		"CreatedDateTime": "2022-07-22T00:00:00",
 		"WorkloadArea": "Reports",
 		"SubArea": "Microsoft 365 usage reports"
 	}

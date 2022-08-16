@@ -7,13 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
-	Select: "ext55gb1l09_msLearnCourses",
+requestParameters := &graphconfig.UsersRequestBuilderGetQueryParameters{
+	Select: [] string {"ext55gb1l09_msLearnCourses"},
 }
-options := &msgraphsdk.UsersRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UsersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.Users().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Users().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```
