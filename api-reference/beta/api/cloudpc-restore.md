@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: restore"
-description: "Restore a specific Cloud PC. When IT admins want to restore a Cloud PC device to a previous state, they can use this API to trigger a restore remote action for Cloud PC. This API needs a parameter indicating the snapshot id to tell service which snapshot to restore this Cloud PC to."
+description: "Restore a specific Cloud PC."
 author: "xumzheng"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -51,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|cloudPcSnapshotId|String|The snapshot id of Cloud PC to restore to previous state.|
+|cloudPcSnapshotId|String|The unique identifier for the snapshot of the Cloud PC device at a specific point in time.|
 
 ## Response
 
@@ -61,9 +61,12 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
-  "name": "cloudpc_restore"
+  "name": "cloudpc_restore",
+  "sampleKeys": ["4b5ad5e0-6a0b-4ffc-818d-36bb23cf4dbd"]
 }
 -->
 
@@ -73,12 +76,14 @@ Content-Type: application/json
 Content-length: 37
 
 {
-  "cloudPcSnapshotId": "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8"
+    "cloudPcSnapshotId": "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8"
 }
 ```
 
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
