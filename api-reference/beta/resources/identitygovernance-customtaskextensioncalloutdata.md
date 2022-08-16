@@ -15,8 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 A resource type that represents the call-out data of the Custom Task Extension.
 
-
-Inherits from [customExtensionData](../resources/customextensiondata.md).
+Inherits from [customExtensionData](../resources/identitygovernance-customTaskExtensionCalloutData.md).
 
 ## Properties
 
@@ -45,4 +44,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCalloutData"
 }
 ```
-

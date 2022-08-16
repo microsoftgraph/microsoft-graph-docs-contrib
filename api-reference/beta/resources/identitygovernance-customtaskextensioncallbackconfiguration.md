@@ -13,8 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+the custom task extension callback configuration resource type
 
 Inherits from [customExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).
 
@@ -22,7 +21,7 @@ Inherits from [customExtensionCallbackConfiguration](../resources/identitygovern
 
 |Property|Type|Description|
 |:---|:---|:---|
-|timeoutDuration|Duration|**TODO: Add Description** Inherited from [customExtensionEndpointConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).|
+|timeoutDuration|Duration|The time duration before the **customTaskExtensionCallbackConfiguration** times out. Inherited from [customExtensionEndpointConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).|
 
 ## Relationships
 

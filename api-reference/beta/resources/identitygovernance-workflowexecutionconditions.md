@@ -13,7 +13,6 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
 This is an abstract type noting the workflow execution conditions. Execution conditions define who and when a workflow will run.
 
 ## Properties

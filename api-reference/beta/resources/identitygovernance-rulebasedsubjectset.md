@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The rule-based subject set resource type.
 
 Inherits from [subjectSet](../resources/subjectset.md).
 

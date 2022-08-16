@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 A resource type that reports the status of the custom task extension callback data.
 
-Inherits from [customExtensionData](../resources/customextensiondata.md).
+Inherits from [customExtensionData](../resources/identitygovernance-customextensiondata.md).
 
 ## Properties
 
