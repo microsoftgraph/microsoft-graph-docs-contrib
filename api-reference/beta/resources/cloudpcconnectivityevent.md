@@ -1,6 +1,6 @@
 ---
 title: "cloudPcConnectivityEvent resource type"
-description: "Describes a user connection record: when and how the Cloud PC was connected and whether the connection was successful. "
+description: "Describes a user connection record, including when and how the Cloud PC was connected and whether the connection was successful. "
 author: "yayang3"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a user connection record: when and how the Cloud PC was connected and whether the connection was successful. 
+Describes a user connection record, including when and how the Cloud PC was connected and whether the connection was successful. 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |eventDateTime|DateTimeOffset|Indicates the date and time when this event was created. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
 |eventName|string|Name of the event.|
-|eventResult|[cloudPcConnectivityEventResult](#cloudpcconnectivityeventresult-values)|Result of this event. Possible values are: `unknown`, `success`, `failure` and `unknownFutureValue`.|
-|eventType|[cloudPcConnectivityEventType](#cloudpcconnectivityeventtype-values)|Type of this event. Possible values are: `unknown`, `userConnection`, `userTroubleshooting`, `deviceHealthCheck` and `unknownFutureValue`.|
+|eventResult|[cloudPcConnectivityEventResult](#cloudpcconnectivityeventresult-values)|Result of this event. Possible values are: `unknown`, `success`, `failure`, and `unknownFutureValue`.|
+|eventType|[cloudPcConnectivityEventType](#cloudpcconnectivityeventtype-values)|Type of this event. Possible values are: `unknown`, `userConnection`, `userTroubleshooting`, `deviceHealthCheck`, and `unknownFutureValue`.|
 |message|string|Additional message for this event.|
 
 ### cloudPcConnectivityEventResult values
