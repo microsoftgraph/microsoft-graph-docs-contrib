@@ -48,7 +48,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, working hours, or user purpose:
+To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, working hours, or user's recipient or mailbox type i.e. user purpose:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
