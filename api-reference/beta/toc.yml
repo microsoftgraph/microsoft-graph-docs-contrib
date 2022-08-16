@@ -1530,10 +1530,12 @@ items:
         items:
           - name: Place
             href: resources/place.md
-          - name: Room type
+          - name: Room
             href: resources/room.md
-          - name: Room list type
+          - name: Room list
             href: resources/roomlist.md
+          - name: Workspace
+            href: resources/workspace.md
           - name: List places
             href: api/place-list.md
           - name: Get place
