@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-userId := "user-id"
-result, err := graphClient.UsersById(&userId).ReprocessLicenseAssignment(user-id).Post()
+
+result, err := graphClient.UsersById("user-id").ReprocessLicenseAssignment().Post()
 
 
 ```

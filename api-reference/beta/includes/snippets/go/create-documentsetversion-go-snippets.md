@@ -7,15 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewDocumentSetVersion()
+requestBody := graphmodels.NewDocumentSetVersion()
 comment := "v1"
-requestBody.SetComment(&comment)
+requestBody.SetComment(&comment) 
 shouldCaptureMinorVersion := false
-requestBody.SetShouldCaptureMinorVersion(&shouldCaptureMinorVersion)
-siteId := "site-id"
-listId := "list-id"
-listItemId := "listItem-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).DocumentSetVersions().Post(requestBody)
+requestBody.SetShouldCaptureMinorVersion(&shouldCaptureMinorVersion) 
+
+result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").DocumentSetVersions().Post(requestBody)
 
 
 ```

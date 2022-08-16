@@ -7,15 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewDomain()
+requestBody := graphmodels.NewDomain()
 isDefault := true
-requestBody.SetIsDefault(&isDefault)
-requestBody.SetSupportedServices( []String {
+requestBody.SetIsDefault(&isDefault) 
+supportedServices := []string {
 	"Email",
 	"OfficeCommunicationsOnline",
+
 }
-domainId := "domain-id"
-graphClient.DomainsById(&domainId).Patch(requestBody)
+requestBody.SetSupportedServices(supportedServices)
+
+graphClient.DomainsById("domain-id").Patch(requestBody)
 
 
 ```

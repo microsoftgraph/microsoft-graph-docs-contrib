@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getBrowserUserCounts"
-description: "Get a report that provides the trend in usage for the number of active users using Microsoft Edge, Microsoft Edge Legacy, and Internet Explorer when used to access the Microsoft 365 services over a selected period."
+description: "Get a report that provides the trend in usage for the number of active users using Microsoft Edge when used to access the Microsoft 365 services over a selected period."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report that provides the trend in usage for the number of active users using Microsoft Edge, Microsoft Edge Legacy, and Internet Explorer when used to access the Microsoft 365 services over a selected period.
+Get a report that provides the trend in usage for the number of active users using Microsoft Edge when used to access the Microsoft 365 services over a selected period.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
 
@@ -73,8 +73,6 @@ The CSV file has the following headers for columns:
 - Report Period
 - Report Date
 - Edge
-- Edge Legacy
-- Internet Explorer
 
 ### JSON
 
@@ -120,7 +118,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date, Report Period, Report Date, Edge, Edge Legacy, Internet Explorer
+Report Refresh Date, Report Period, Report Date, Edge
 ```
 
 ### Example 2: JSON output
@@ -163,15 +161,11 @@ Content-Length: 205
          "userCounts":[
             {
                "reportDate":"2021-04-17",
-               "edge":413,
-               "edgeLegacy":11,
-               "ie":21
+               "edge":413
             },
             {
                "reportDate":"2021-04-16",
-               "edge":883,
-               "edgeLegacy":26,
-               "ie":124
+               "edge":883
             }
          ]
       }

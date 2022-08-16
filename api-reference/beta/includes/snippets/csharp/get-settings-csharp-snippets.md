@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var caseSettings = await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Settings
+var settings = await graphClient.Admin.Sharepoint.Settings
 	.Request()
 	.GetAsync();
 

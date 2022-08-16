@@ -7,14 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewApprovalStage()
+requestBody := graphmodels.NewApprovalStage()
 reviewResult := "Approve"
-requestBody.SetReviewResult(&reviewResult)
+requestBody.SetReviewResult(&reviewResult) 
 justification := "OK"
-requestBody.SetJustification(&justification)
-approvalId := "approval-id"
-approvalStageId := "approvalStage-id"
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentApprovalsById(&approvalId).StagesById(&approvalStageId).Patch(requestBody)
+requestBody.SetJustification(&justification) 
+
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentApprovalsById("approval-id").StagesById("approvalStage-id").Patch(requestBody)
 
 
 ```

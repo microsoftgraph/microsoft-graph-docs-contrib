@@ -1,7 +1,7 @@
 ---
 title: "unifiedRbacResourceNamespace resource type"
 description: "Represents the namespace of the area to which the role permission belongs to."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

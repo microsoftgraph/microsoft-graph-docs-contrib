@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 261
+Content-Length: 484
 
 {
   "value": {
@@ -71,7 +71,13 @@ Content-Length: 261
     "id": "e71fa706-a706-e71f-06a7-1fe706a71fe7",
     "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
     "state": "active",
-    "displayName": "Display Name value"
+    "displayName": "Display Name value",
+    "machineName": "Machine Name value",
+    "enrolledDateTime": "2016-12-31T23:59:43.797191-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "connectorVersion": "Connector Version value"
   }
 }
 ```
