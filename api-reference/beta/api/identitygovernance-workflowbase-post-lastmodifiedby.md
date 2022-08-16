@@ -183,9 +183,9 @@ Content-length: 3735
     "@odata.type": "microsoft.graph.customSecurityAttributeValue"
   },
   "department": "String",
-  "deviceKeys": [
+  "device": [
     {
-      "@odata.type": "microsoft.graph.deviceKey"
+      "@odata.type": "microsoft.graph.device"
     }
   ],
   "displayName": "String",
@@ -347,9 +347,9 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.customSecurityAttributeValue"
   },
   "department": "String",
-  "deviceKeys": [
+  "device": [
     {
-      "@odata.type": "microsoft.graph.deviceKey"
+      "@odata.type": "microsoft.graph.device"
     }
   ],
   "displayName": "String",

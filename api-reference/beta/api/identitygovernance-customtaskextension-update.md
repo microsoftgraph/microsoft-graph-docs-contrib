@@ -53,7 +53,7 @@ PATCH /identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskExt
 |description|String|The description of the `customTaskExtension`. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |displayName|String|The display name of the `customTaskExtension` Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |endpointConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The endpoint configuration for a custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|callbackConfiguration|[microsoft.graph.customExtensionCallbackConfiguration](../resources/customextensionendpointconfiguration.md)|The callback configuration for a custom extension.  Optional.|
+|callbackConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The callback configuration for a custom extension.  Optional.|
 |createdDateTime|DateTimeOffset|The date and time the `customTaskExtension` was created. Optional.|
 |lastModifiedDateTime|DateTimeOffset|The last date and time the `customTaskExtension` was modified. Optional.|
 
@@ -124,7 +124,7 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
   },
   "callbackConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration"
+    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
   },
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)"

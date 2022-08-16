@@ -81,7 +81,7 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
   },
   "callbackConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration"
+    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
   },
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)"
