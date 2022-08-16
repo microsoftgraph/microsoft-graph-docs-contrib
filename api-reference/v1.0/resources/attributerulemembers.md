@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 
 
-Used in the specificAllowedTargets setting of an access package assignment policy. The  `@odata.type` value `#microsoft.graph.attributeRuleMembers` identifies a collection of users in the tenant who will be assigned the access package automatically based on the specified membership rule.
+Identifies a collection of users in the tenant who will be assigned the access package automatically based on the specified membership rule.
+
+Used in the specificAllowedTargets setting of an access package assignment policy.
 Inherits from [subjectSet](subjectset.md).
 
 ## Properties
