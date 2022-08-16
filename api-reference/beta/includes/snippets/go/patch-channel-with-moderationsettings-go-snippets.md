@@ -7,24 +7,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewChannel()
+requestBody := graphmodels.NewChannel()
 displayName := "UpdateChannelModeration"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Update channel moderation."
-requestBody.SetDescription(&description)
-moderationSettings := msgraphsdk.NewChannelModerationSettings()
-requestBody.SetModerationSettings(moderationSettings)
-userNewMessageRestriction := "moderators"
-moderationSettings.SetUserNewMessageRestriction(&userNewMessageRestriction)
-replyRestriction := "everyone"
-moderationSettings.SetReplyRestriction(&replyRestriction)
+requestBody.SetDescription(&description) 
+moderationSettings := graphmodels.NewChannelModerationSettings()
+userNewMessageRestriction := graphmodels.MODERATORS_USERNEWMESSAGERESTRICTION 
+moderationSettings.SetUserNewMessageRestriction(&userNewMessageRestriction) 
+replyRestriction := graphmodels.EVERYONE_REPLYRESTRICTION 
+moderationSettings.SetReplyRestriction(&replyRestriction) 
 allowNewMessageFromBots := true
-moderationSettings.SetAllowNewMessageFromBots(&allowNewMessageFromBots)
+moderationSettings.SetAllowNewMessageFromBots(&allowNewMessageFromBots) 
 allowNewMessageFromConnectors := true
-moderationSettings.SetAllowNewMessageFromConnectors(&allowNewMessageFromConnectors)
-teamId := "team-id"
-channelId := "channel-id"
-graphClient.TeamsById(&teamId).ChannelsById(&channelId).Patch(requestBody)
+moderationSettings.SetAllowNewMessageFromConnectors(&allowNewMessageFromConnectors) 
+requestBody.SetModerationSettings(moderationSettings)
+
+graphClient.TeamsById("team-id").ChannelsById("channel-id").Patch(requestBody)
 
 
 ```

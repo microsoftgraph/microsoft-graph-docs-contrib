@@ -7,24 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewExtension()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.outlookServices.openTypeExtension",
-	"extensionName": "Com.Contoso.Estimate",
-	"companyName": "Contoso",
-	"expirationDate": "2016-07-30T11:00:00.000Z",
-	"DealValue": ,
-	"topPicks":  []String {
+requestBody := graphmodels.NewExtension()
+"@odata.type" := "#microsoft.outlookServices.openTypeExtension"
+requestBody.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"extensionName" : "Com.Contoso.Estimate", 
+	"companyName" : "Contoso", 
+	"expirationDate" : "2016-07-30T11:00:00.000Z", 
+	"dealValue" : int32(1010100) , 
+	topPicks := []string {
 		"Employees only",
 		"Add spouse or guest",
 		"Add family",
+
 	}
 }
-groupId := "group-id"
-conversationThreadId := "conversationThread-id"
-postId := "post-id"
-extensionId := "extension-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).ExtensionsById(&extensionId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").ExtensionsById("extension-id").Patch(requestBody)
 
 
 ```

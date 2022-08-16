@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAllowedValue()
+requestBody := graphmodels.NewAllowedValue()
 id := "Alpine"
-requestBody.SetId(&id)
+requestBody.SetId(&id) 
 isActive := "true"
-requestBody.SetIsActive(&isActive)
-customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).AllowedValues().Post(requestBody)
+requestBody.SetIsActive(&isActive) 
+
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").AllowedValues().Post(requestBody)
 
 
 ```

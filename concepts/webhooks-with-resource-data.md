@@ -1,7 +1,7 @@
 ---
 title: "Set up change notifications that include resource data"
 description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Change notifications can include resource properties."
-author: "Jumaodhiss"
+author: "jumasure"
 ms.prod: "non-product-specific"
 ms.localizationpriority: high
 ---
@@ -34,6 +34,7 @@ Available in the v1.0 and beta endpoints:
 - New or changed messages in all Teams channels: `/teams/getAllMessages`
 - New or changed messages in a specific Teams chat: `/chats/{id}/messages`
 - New or changed messages in all Teams chats: `/chats/getAllMessages`
+- New or changed messages in all Teams chats a particular user is part of: `/users/{id}/chats/getAllMessages`
 - New or changed members in all Teams chats: `/chats/getAllMembers`
 - New or changed members in a specific Teams chat: `/chats/{id}/members`
 - New or changed chat across the entire tenant: `/chats`
