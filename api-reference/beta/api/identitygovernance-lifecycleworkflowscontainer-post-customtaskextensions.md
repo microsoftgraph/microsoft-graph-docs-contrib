@@ -92,7 +92,7 @@ Content-length: 588
     "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
   },
   "callbackConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration"
+    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
   }
 }
 ```

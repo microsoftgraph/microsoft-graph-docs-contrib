@@ -97,7 +97,7 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
     },
     "callbackConfiguration": {
-      "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration"
+      "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

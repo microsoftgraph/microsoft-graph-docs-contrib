@@ -38,7 +38,7 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|callbackConfiguration|[microsoft.graph.customExtensionCallbackConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for setting up a callback from the logic app to the Custom Task Extension.|
+|callbackConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for setting up a callback from the logic app to the Custom Task Extension.|
 |clientConfiguration|[microsoft.graph.customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define how long Azure AD can wait for a connection to a logic app, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |createdDateTime|DateTimeOffset|Custom Task Extension created date and time|
 |description|String|A string that describes the purpose of the custom task extension for administrative use. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|

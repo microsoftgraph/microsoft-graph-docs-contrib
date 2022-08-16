@@ -22,7 +22,7 @@ Inherits from [customExtensionCallbackConfiguration](../resources/identitygovern
 
 |Property|Type|Description|
 |:---|:---|:---|
-|timeoutDuration|Duration|**TODO: Add Description** Inherited from [customExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).|
+|timeoutDuration|Duration|**TODO: Add Description** Inherited from [customExtensionEndpointConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).|
 
 ## Relationships
 
