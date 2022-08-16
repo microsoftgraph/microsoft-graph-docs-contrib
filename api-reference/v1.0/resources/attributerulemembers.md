@@ -20,7 +20,7 @@ Used in the specificAllowedTargets setting of an access package assignment polic
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|A description of the membership rule.|
-|membershipRule|String|The rule that determines members for this access package. For more information about the syntax of the membership rule, see [Membership Rules syntax](/azure/active-directory/enterprise-users/groups-dynamic-membership).|
+|membershipRule|String|Determines the allowed target users for this policy. For more information about the syntax of the membership rule, see [Membership Rules syntax](/azure/active-directory/enterprise-users/groups-dynamic-membership).|
 
 ## Relationships
 None.
