@@ -51,7 +51,7 @@ You can specify the following properties when creating a **task**.
 |Property|Type|Description|
 |:---|:---|:---|
 |arguments|[microsoft.graph.keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|Arguments included within the task.|
-|category|lifecycleTaskCategory|The category of the task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|category|String|The category of the task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
 |continueOnError|Boolean|A boolean value that determines if the failure of this task stops the subsequent workflows from running.|
 |description|String|A string that describes the purpose of the task for administrative use.|
 |displayName|String|A unique string that identifies the task.|

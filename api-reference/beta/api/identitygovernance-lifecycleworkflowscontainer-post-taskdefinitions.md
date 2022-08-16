@@ -50,7 +50,7 @@ You can specify the following properties when creating a **taskDefinition**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|lifecycleTaskCategory|The category of the task definition. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|category|String|The category of the task definition. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
 |continueOnError|Boolean|A boolean value that determines if the failure of the task definition stops the subsequent workflows from running.|
 |description|String|A string that describes the purpose of the task definition for administrative use.|
 |displayName|String|A unique string that identifies the task definition.|

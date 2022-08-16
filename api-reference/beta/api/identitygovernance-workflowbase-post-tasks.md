@@ -51,7 +51,7 @@ You can specify the following properties when creating a **task**.
 |Property|Type|Description|
 |:---|:---|:---|
 |arguments|[microsoft.graph.keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|Contains the user specified arguments necessary to execute the task. Required.|
-|category|lifecycleTaskCategory|The category of the HR function that can use this task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
+|category|String|The category of the HR function that can use this task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
 |continueOnError|Boolean|Determines if task can block workflow execution on error. Required.|
 |description|String|The description of the `task`. Optional.|
 |displayName|String|The display name of the `task`. Required.|
