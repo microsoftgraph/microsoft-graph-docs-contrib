@@ -50,11 +50,11 @@ You can specify the following properties when creating a **taskProcessingResult*
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|failureReason|String|**TODO: Add Description** Optional.|
-|processingStatus|lifecycleWorkflowProcessingStatus|**TODO: Add Description**. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. Required.|
-|startedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|completedDateTime|DateTimeOffset| The date time when `taskProcessingResult` execution ended. Optional.|
+|createdDateTime|DateTimeOffset|The date time when the `taskProcessingResult` was created. Required.|
+|failureReason|String|Describes why the `taskProcessingResult` has failed. Optional.|
+|processingStatus|lifecycleWorkflowProcessingStatus|Describes the execution status of the `taskProcessingResult`. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. Required.|
+|startedDateTime|DateTimeOffset|The date time when `taskProcessingResult` execution started. Optional.|
 
 ## Response
 
