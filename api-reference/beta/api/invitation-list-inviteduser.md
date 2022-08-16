@@ -102,8 +102,8 @@ Content-Type: application/json
           "@odata.type": "microsoft.graph.assignedPlan"
         }
       ],
-      "authorizationInfo": {
-        "@odata.type": "microsoft.graph.authorizationInfo"
+      "authorizationPolicy": {
+        "@odata.type": "microsoft.graph.authorizationPolicy"
       },
       "businessPhones": [
         "String"

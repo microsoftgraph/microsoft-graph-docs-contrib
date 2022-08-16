@@ -168,8 +168,8 @@ Content-length: 3735
       "@odata.type": "microsoft.graph.assignedPlan"
     }
   ],
-  "authorizationInfo": {
-    "@odata.type": "microsoft.graph.authorizationInfo"
+  "authorizationPolicy": {
+    "@odata.type": "microsoft.graph.authorizationPolicy"
   },
   "businessPhones": [
     "String"
@@ -331,8 +331,8 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.assignedPlan"
     }
   ],
-  "authorizationInfo": {
-    "@odata.type": "microsoft.graph.authorizationInfo"
+  "authorizationPolicy": {
+    "@odata.type": "microsoft.graph.authorizationPolicy"
   },
   "businessPhones": [
     "String"
