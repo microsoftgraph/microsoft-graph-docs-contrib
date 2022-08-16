@@ -16,13 +16,13 @@ Namespace: microsoft.graph.identityGovernance
 **TODO: Add Description**
 
 
-Inherits from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).
+Inherits from [customExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|timeoutDuration|Duration|**TODO: Add Description** Inherited from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).|
+|timeoutDuration|Duration|**TODO: Add Description** Inherited from [customExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).|
 
 ## Relationships
 
