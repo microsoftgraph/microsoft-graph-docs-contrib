@@ -50,14 +50,15 @@ You can specify the following properties when creating a **task**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|arguments|[microsoft.graph.keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|**TODO: Add Description** Required.|
-|category|lifecycleTaskCategory|**TODO: Add Description**. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
-|continueOnError|Boolean|**TODO: Add Description** Required.|
-|description|String|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Required.|
-|executionSequence|Int32|**TODO: Add Description** Required.|
-|isEnabled|Boolean|**TODO: Add Description** Required.|
-|taskDefinitionId|String|**TODO: Add Description** Required.|
+|arguments|[microsoft.graph.keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|Arguments included within the task.|
+|category|lifecycleTaskCategory|The category of the task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|continueOnError|Boolean|A boolean value that determines if the failure of this task stops the subsequent workflows from running.|
+|description|String|A string that describes the purpose of the task for administrative use.|
+|displayName|String|A unique string that identifies the task.|
+|executionSequence|Int32|An integer that states in what order the task will run in a workflow.|
+|id|String|Identifier used for individually addressing a specific task. Inherited from [entity](../resources/entity.md).|
+|isEnabled|Boolean|A boolean value that denotes whether the task is set to run or not.|
+|taskDefinitionId|String|A string that allows built-in workflow tasks to run.|
 
 ## Response
 
