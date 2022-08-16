@@ -55,7 +55,7 @@ You can specify the following properties when creating a **customTaskExtension**
 |description|String|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |displayName|String|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |endpointConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|callbackConfiguration|[microsoft.graph.customExtensionCallbackConfiguration](../resources/customextensionendpointconfiguration.md)|**TODO: Add Description** Optional.|
+|callbackConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|**TODO: Add Description** Optional.|
 |createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
 |lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
 
