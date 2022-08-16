@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of the Cloud PC connectivity status: if the Cloud PC is available, and the failed health check items if it is not.
+Represents the details of the Cloud PC connectivity status, including whether the Cloud PC is available, and if not, the failed health check items.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |failedHealthCheckItems|[cloudPcHealthCheckItem](../resources/cloudpchealthcheckitem.md) collection|A list of failed health check items. If the status property is `available`, this property will be empty.|
-|status|[cloudPcConnectivityStatus](#cloudpcconnectivitystatus-values)|Connectivity status of the Cloud PC. Possible values are: `unknown`, `available`, `availableWithWarning`, `unavailable` and `unknownFutureValue`.|
+|status|[cloudPcConnectivityStatus](#cloudpcconnectivitystatus-values)|Connectivity status of the Cloud PC. Possible values are: `unknown`, `available`, `availableWithWarning`, `unavailable`, and `unknownFutureValue`.|
 |updatedDateTime|string|Datetime when the status was updated. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`. |
 
 ### cloudPcConnectivityStatus values
