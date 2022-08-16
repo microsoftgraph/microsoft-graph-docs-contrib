@@ -8,7 +8,7 @@ Microsoft Graph Data Connect augments Microsoft Graph’s transactional model wi
 
 ![This image explains the applied data controls between Microsoft 365 data into the Azure cloud, as well as the output data.](../concepts/images/data-connect-mgdc-capabilities.PNG)
 
-Microsoft Graph Data Connect uses Azure Data Factory to copy Microsoft 365 data to your application’s storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Microsoft Azure, letting you access the most applicable development and hosting tools available. Data Connect also grants a more granular control and consent model: you can manage data, see who is accessing it, and request specific properties of an entity. This enhances the Microsoft Graph model, which grants or denies applications access to entire entities.
+Microsoft Graph Data Connect uses Azure Synapse or Azure Data Factory to copy Microsoft 365 data to your application’s storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Microsoft Azure, letting you access the most applicable development and hosting tools available. Data Connect also grants a more granular control and consent model: you can manage data, see who is accessing it, and request specific properties of an entity. This enhances the Microsoft Graph model, which grants or denies applications access to entire entities.
 
 You can use Data Connect to enable machine learning scenarios for your organization.. In these scenarios, you can create applications that provide valuable information to your stakeholders, train machine learning models, and even perform forecasting based on large amounts of acquired data.
 

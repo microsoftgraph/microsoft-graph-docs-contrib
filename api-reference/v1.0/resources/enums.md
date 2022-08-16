@@ -20,6 +20,21 @@ Namespace: microsoft.graph
 |outOfOffice|
 |unknownFutureValue|
 
+### signInFrequencyAuthenticationType values
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### signInFrequencyInterval values
+
+|Member|
+|:---|
+|timeBased|
+|everyTime|
+
 ### crossTenantAccessPolicyTargetConfigurationAccessType values
 
 |Member|

@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 BookingService bookingService = new BookingService();
 bookingService.defaultDuration = DatatypeFactory.newInstance().newDuration("PT30M");
 
-graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").services("57da6774-a087-4d69-b0e6-6fb82c339976")
+graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com").services("57da6774-a087-4d69-b0e6-6fb82c339976")
 	.buildRequest()
 	.patch(bookingService);
 

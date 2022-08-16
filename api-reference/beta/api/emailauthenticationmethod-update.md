@@ -46,7 +46,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-PUT /users/{id | userPrincipalName}/authentication/emailMethods/{id}
+PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 ```
 
 ## Request headers
@@ -82,7 +82,7 @@ If successful, this method returns a `200 OK` response code and an updated [emai
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
+PATCH https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
 Content-Type: application/json
 
 {
