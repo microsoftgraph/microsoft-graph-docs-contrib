@@ -50,17 +50,17 @@ You can specify the following properties when creating a **workflow**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|lifecycleWorkflowCategory|**TODO: Add Description** Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
-|displayName|String|**TODO: Add Description** Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Required.|
-|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|**TODO: Add Description** Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|isEnabled|Boolean|**TODO: Add Description** Required.|
-|isSchedulingEnabled|Boolean|**TODO: Add Description** Required.|
-|nextScheduleRunDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|version|Int32|**TODO: Add Description** Optional.|
+|category|lifecycleWorkflowCategory|The category of the HR function supported by the workflows created using this template. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Required.|
+|createdDateTime|DateTimeOffset|The date time when the `workflow` was versioned. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
+|description|String|The description of the `workflow` or `workflowVersion`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
+|displayName|String|The display name of the `workflow` or `workflowVersion`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Required.|
+|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)| Conditions describing when to execute the workflow and the criteria to identify in-scope subject set. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
+|lastModifiedDateTime|DateTimeOffset|The date time when the `workflow` was last modified. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
+|deletedDateTime|DateTimeOffset|Null when the object is active, but the time is stamped when the object is deleted. Optional.|
+|isEnabled|Boolean|Whether the `task` is enabled in the workflow. If disabled, this means that the task does not get executed. Required.|
+|isSchedulingEnabled|Boolean|If true, the workflow engine executes the `workflow` on the schedule defined by tenant settings. Required.|
+|nextScheduleRunDateTime|DateTimeOffset|The date time when the `workflow` is expected to run next based on the schedule interval Optional.|
+|version|Int32|The current version number of the `workflow`. Optional.|
 
 ## Response
 

@@ -48,14 +48,14 @@ PATCH /identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskExt
 
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|clientConfiguration|[microsoft.graph.customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|displayName|String|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|endpointConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|callbackConfiguration|[microsoft.graph.customExtensionCallbackConfiguration](../resources/customextensionendpointconfiguration.md)|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for the `customTaskExtension`. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|clientConfiguration|[microsoft.graph.customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The client configuration for a custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|description|String|The description of the `customTaskExtension`. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|displayName|String|The display name of the `customTaskExtension` Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|endpointConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The endpoint configuration for a custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|callbackConfiguration|[microsoft.graph.customExtensionCallbackConfiguration](../resources/customextensionendpointconfiguration.md)|The callback configuration for a custom extension.  Optional.|
+|createdDateTime|DateTimeOffset|The date and time the `customTaskExtension` was created. Optional.|
+|lastModifiedDateTime|DateTimeOffset|The last date and time the `customTaskExtension` was modified. Optional.|
 
 ## Response
 

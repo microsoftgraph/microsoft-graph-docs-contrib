@@ -1,6 +1,6 @@
 ---
 title: "customTaskExtensionCallbackConfiguration resource type"
-description: "**TODO: Add Description**"
+description: "custom task extension resource type"
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

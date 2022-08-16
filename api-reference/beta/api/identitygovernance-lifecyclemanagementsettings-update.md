@@ -48,7 +48,7 @@ PATCH /identityGovernance/lifecycleWorkflows/settings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|workflowScheduleIntervalInHours|Int32|**TODO: Add Description** Required.|
+|workflowScheduleIntervalInHours|Int32|The workflow schedule interval. Required.|
 
 ## Response
 

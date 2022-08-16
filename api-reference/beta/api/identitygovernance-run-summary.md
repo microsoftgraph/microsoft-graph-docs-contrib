@@ -42,8 +42,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|**TODO: Add Description**|
-|endDateTime|DateTimeOffset|**TODO: Add Description**|
+|startDateTime|DateTimeOffset|The start date and time of the workflow run|
+|endDateTime|DateTimeOffset|The end date and time of the workflow run|
 
 ## Request headers
 
