@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-OrganizationalBrandingLocalizationCollectionPage localizations = graphClient.organization("84841066-274d-4ec0-a5c1-276be684bdd3").branding().localizations()
+OrganizationalBrandingLocalizationCollectionPage localizations = graphClient.organization("dcd219dd-bc68-4b9b-bf0b-4a33a796be35").branding().localizations()
 	.buildRequest()
 	.get();
 

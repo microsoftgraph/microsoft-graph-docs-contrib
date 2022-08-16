@@ -7,25 +7,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPrivilegedRoleAssignmentRequest()
+requestBody := graphmodels.NewPrivilegedRoleAssignmentRequest()
 duration := "2"
-requestBody.SetDuration(&duration)
+requestBody.SetDuration(&duration) 
 reason := "Activate the role for business purpose"
-requestBody.SetReason(&reason)
+requestBody.SetReason(&reason) 
 ticketNumber := "234"
-requestBody.SetTicketNumber(&ticketNumber)
+requestBody.SetTicketNumber(&ticketNumber) 
 ticketSystem := "system"
-requestBody.SetTicketSystem(&ticketSystem)
-schedule := msgraphsdk.NewGovernanceSchedule()
+requestBody.SetTicketSystem(&ticketSystem) 
+schedule := graphmodels.NewGovernanceSchedule()
+startDateTime , err := time.Parse(time.RFC3339, "2018-02-08T02:35:17.903Z")
+schedule.SetStartDateTime(&startDateTime) 
 requestBody.SetSchedule(schedule)
-startDateTime, err := time.Parse(time.RFC3339, "2018-02-08T02:35:17.903Z")
-schedule.SetStartDateTime(&startDateTime)
 type := "UserAdd"
-requestBody.SetType(&type)
+requestBody.SetType(&type) 
 assignmentState := "Active"
-requestBody.SetAssignmentState(&assignmentState)
+requestBody.SetAssignmentState(&assignmentState) 
 roleId := "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
-requestBody.SetRoleId(&roleId)
+requestBody.SetRoleId(&roleId) 
+
 result, err := graphClient.PrivilegedRoleAssignmentRequests().Post(requestBody)
 
 

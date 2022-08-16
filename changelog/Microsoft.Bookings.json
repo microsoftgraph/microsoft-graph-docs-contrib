@@ -1,6 +1,48 @@
 {
     "changelog": [
         {
+          "ChangeList": [
+            {
+              "Id": "430bb9e9-f76e-45ef-a23d-6c5cc16c3a94",
+              "ApiChange": "Enumeration",
+              "ChangedApiName": "bookingsAvailabilityStatus",
+              "ChangeType": "Addition",
+              "Description": "Added the **bookingsAvailabilityStatus** enumeration type.",
+              "Target": "bookingsAvailabilityStatus"
+            },
+            {
+              "Id": "430bb9e9-f76e-45ef-a23d-6c5cc16c3a94",
+              "ApiChange": "Resource",
+              "ChangedApiName": "availabilityItem",
+              "ChangeType": "Addition",
+              "Description": "Added the [availabilityItem](https://docs.microsoft.com/en-us/graph/api/resources/availabilityItem?view=graph-rest-1.0) resource type.",
+              "Target": "availabilityItem"
+            },
+            {
+              "Id": "430bb9e9-f76e-45ef-a23d-6c5cc16c3a94",
+              "ApiChange": "Resource",
+              "ChangedApiName": "staffAvailabilityItem",
+              "ChangeType": "Addition",
+              "Description": "Added the [staffAvailabilityItem](https://docs.microsoft.com/en-us/graph/api/resources/staffAvailabilityItem?view=graph-rest-1.0) resource type.",
+              "Target": "staffAvailabilityItem"
+            },
+            {
+              "Id": "430bb9e9-f76e-45ef-a23d-6c5cc16c3a94",
+              "ApiChange": "Method",
+              "ChangedApiName": "getStaffAvailability",
+              "ChangeType": "Addition",
+              "Description": "Added the [getStaffAvailability](https://docs.microsoft.com/en-us/graph/api/bookingBusiness-getstaffavailability?view=graph-rest-1.0) method to the [bookingBusiness](https://docs.microsoft.com/en-us/graph/api/bookingBusiness?view=graph-rest-1.0) resource.",
+              "Target": "bookingBusiness"
+            }
+          ],
+          "Id": "430bb9e9-f76e-45ef-a23d-6c5cc16c3a94",
+          "Cloud": "Prod",
+          "Version": "v1.0",
+          "CreatedDateTime": "2022-07-18T10:05:00.1406908Z",
+          "WorkloadArea": "Customer booking",
+          "SubArea": ""
+        },
+        {
             "ChangeList": [ 
               {
                 "Id": "ee987293-c132-4e6a-ae6e-2dc77054c47c",

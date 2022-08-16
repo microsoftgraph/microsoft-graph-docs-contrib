@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 # A UPN can also be used as -UserId.
-Get-MgUserScopedRoleMemberOf -UserId $userId
+Get-MgUserScopedRoleMemberOf -UserId $userId -OutFile $outFileId
 
 ```

@@ -7,16 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAccessReviewInstanceDecisionItem()
+requestBody := graphmodels.NewAccessReviewInstanceDecisionItem()
 decision := "Approve"
-requestBody.SetDecision(&decision)
+requestBody.SetDecision(&decision) 
 justification := "This person is still on my team"
-requestBody.SetJustification(&justification)
-accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
-accessReviewInstanceId := "accessReviewInstance-id"
-accessReviewStageId := "accessReviewStage-id"
-accessReviewInstanceDecisionItemId := "accessReviewInstanceDecisionItem-id"
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).StagesById(&accessReviewStageId).DecisionsById(&accessReviewInstanceDecisionItemId).Patch(requestBody)
+requestBody.SetJustification(&justification) 
+
+graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").StagesById("accessReviewStage-id").DecisionsById("accessReviewInstanceDecisionItem-id").Patch(requestBody)
 
 
 ```

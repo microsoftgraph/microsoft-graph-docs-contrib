@@ -7,16 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPersonInterest()
-requestBody.SetCategories( []String {
+requestBody := graphmodels.NewPersonInterest()
+categories := []string {
 	"Sports",
+
 }
+requestBody.SetCategories(categories)
 description := "World's greatest football club"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 displayName := "Chelsea FC"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 webUrl := "https://www.chelseafc.com"
-requestBody.SetWebUrl(&webUrl)
+requestBody.SetWebUrl(&webUrl) 
+
 result, err := graphClient.Me().Profile().Interests().Post(requestBody)
 
 

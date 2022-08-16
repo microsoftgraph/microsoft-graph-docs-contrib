@@ -7,15 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewUnifiedRoleEligibilityScheduleRequest()
+requestBody := graphmodels.NewUnifiedRoleEligibilityScheduleRequest()
 action := "adminRemove"
-requestBody.SetAction(&action)
+requestBody.SetAction(&action) 
 roleDefinitionId := "8424c6f0-a189-499e-bbd0-26c1753c96d4"
-requestBody.SetRoleDefinitionId(&roleDefinitionId)
+requestBody.SetRoleDefinitionId(&roleDefinitionId) 
 directoryScopeId := "/"
-requestBody.SetDirectoryScopeId(&directoryScopeId)
+requestBody.SetDirectoryScopeId(&directoryScopeId) 
 principalId := "071cc716-8147-4397-a5ba-b2105951cc0b"
-requestBody.SetPrincipalId(&principalId)
+requestBody.SetPrincipalId(&principalId) 
+
 result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(requestBody)
 
 

@@ -49,21 +49,19 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_schemaextension"
+  "name": "get_schemaextension",
+  "sampleKeys": ["graphlearn_test"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
+GET https://graph.microsoft.com/v1.0/schemaExtensions/extcivhhslh_sbtest1
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schemaextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schemaextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-schemaextension-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -76,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-schemaextension-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -93,16 +95,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id":"graphlearn_test",
-    "description": "Yet another test schema",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#schemaExtensions/$entity",
+    "id": "extcivhhslh_sbtest1",
+    "description": "SbGraph test extensions",
     "targetTypes": [
-        "User", "Group"
+        "contact",
+        "group"
     ],
-    "status": "InDevelopment",
-    "owner": "24d3b144-21ae-4080-943f-7067b395b913",
+    "status": "Available",
+    "owner": "da033fe6-d48e-435d-8014-e98a4b166900",
     "properties": [
         {
-            "name": "testName",
+            "name": "customerType",
             "type": "String"
         }
     ]

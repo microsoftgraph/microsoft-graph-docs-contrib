@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 750
+Content-Length: 828
 
 {
   "value": {
@@ -82,6 +82,9 @@ Content-Length: 750
     "platformType": "ios",
     "templateType": "push",
     "notificationMessageTemplateId": "eba3ed57-ed57-eba3-57ed-a3eb57eda3eb",
+    "notificationTemplates": [
+      "Notification Templates value"
+    ],
     "brandingOptions": "includeCompanyLogo",
     "defaultLocale": "Default Locale value"
   }

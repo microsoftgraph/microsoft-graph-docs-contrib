@@ -7,16 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewExtensionProperty()
+requestBody := graphmodels.NewExtensionProperty()
 name := "jobGroup"
-requestBody.SetName(&name)
+requestBody.SetName(&name) 
 dataType := "String"
-requestBody.SetDataType(&dataType)
-requestBody.SetTargetObjects( []String {
+requestBody.SetDataType(&dataType) 
+targetObjects := []string {
 	"User",
+
 }
-applicationId := "application-id"
-result, err := graphClient.ApplicationsById(&applicationId).ExtensionProperties().Post(requestBody)
+requestBody.SetTargetObjects(targetObjects)
+
+result, err := graphClient.ApplicationsById("application-id").ExtensionProperties().Post(requestBody)
 
 
 ```

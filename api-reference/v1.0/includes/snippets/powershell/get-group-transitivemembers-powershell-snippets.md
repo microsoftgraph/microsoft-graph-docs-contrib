@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupTransitiveMember -GroupId $groupId
+Get-MgGroupTransitiveMember -GroupId $groupId -OutFile $outFileId
 
 ```

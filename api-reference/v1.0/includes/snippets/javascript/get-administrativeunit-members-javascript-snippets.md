@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let directoryObject = await client.api('/directory/administrativeUnits/c5729e7c-988e-417b-b287-14f5bd4711d8/members/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac')
+let directoryObject = await client.api('/directory/administrativeUnits/8a07f5a8-edc9-4847-bbf2-dde106594bf4/members/5bde3e51-d13b-4db1-9948-fe4b109d11a7')
 	.get();
 
 ```
