@@ -11,7 +11,7 @@ author: "abheek-das"
 
 Namespace: microsoft.graph
 
-Represents the user's recipient or mailbox type in Exchange Online. Used to differentiate a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online.
+Represents the user's recipient or mailbox type in Exchange Online. Differentiates a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online.
 
 ## Properties
 |Property|Type|Description|
