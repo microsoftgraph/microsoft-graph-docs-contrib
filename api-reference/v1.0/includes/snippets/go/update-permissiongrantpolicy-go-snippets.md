@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPermissionGrantPolicy()
+requestBody := graphmodels.NewPermissionGrantPolicy()
 displayName := "Custom permission grant policy"
-requestBody.SetDisplayName(&displayName)
-permissionGrantPolicyId := "permissionGrantPolicy-id"
-graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+graphClient.Policies().PermissionGrantPoliciesById("permissionGrantPolicy-id").Patch(requestBody)
 
 
 ```

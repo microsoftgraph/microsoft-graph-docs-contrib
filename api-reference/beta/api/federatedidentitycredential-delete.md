@@ -31,9 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 
-DELETE /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Request headers
@@ -61,16 +61,13 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/d9b7bf1e-429e-4678-8132-9b00c9846cc4
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-federatedidentitycredential-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-federatedidentitycredential-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-federatedidentitycredential-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -83,6 +80,10 @@ DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff3
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-federatedidentitycredential-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-federatedidentitycredential-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

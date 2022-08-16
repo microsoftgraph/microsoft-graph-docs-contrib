@@ -84,7 +84,7 @@ The following is an example of the request.
   "name": "reportroot_getemailappusageappsusercounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getEmailAppUsageAppsUserCounts(period='D7')
 ```
 

@@ -13,9 +13,10 @@ var call = new Call
 	{
 		Identity = new IdentitySet
 		{
-			AdditionalData = new Dictionary<string, object>()
+			ApplicationInstance = new Identity
 			{
-				{"applicationInstance", "{\"@odata.type\":\"#microsoft.graph.identity\",\"displayName\":\"Calling Bot\",\"id\":\"3d913abb-aec0-4964-8fa6-3c6850c4f278\"}"}
+				DisplayName = "Calling Bot",
+				Id = "3d913abb-aec0-4964-8fa6-3c6850c4f278"
 			}
 		},
 		CountryCode = null,
@@ -29,9 +30,9 @@ var call = new Call
 		{
 			Identity = new IdentitySet
 			{
-				AdditionalData = new Dictionary<string, object>()
+				Phone = new Identity
 				{
-					{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
+					Id = "+12345678901"
 				}
 			}
 		}

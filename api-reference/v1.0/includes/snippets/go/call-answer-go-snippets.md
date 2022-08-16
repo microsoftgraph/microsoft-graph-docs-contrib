@@ -7,22 +7,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewAnswerPostRequestBody()
 callbackUri := "callbackUri-value"
-requestBody.SetCallbackUri(&callbackUri)
-mediaConfig := msgraphsdk.NewMediaConfig()
+requestBody.SetCallbackUri(&callbackUri) 
+mediaConfig := graphmodels.NewMediaConfig()
+"@odata.type" := "#microsoft.graph.appHostedMediaConfig"
+mediaConfig.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"blob" : "<Media Session Configuration Blob>", 
+}
+mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
-mediaConfig.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.appHostedMediaConfig",
-	"blob": "<Media Session Configuration Blob>",
-}
-requestBody.SetAcceptedModalities( []Modality {
+acceptedModalities := []graphmodels.Modalityable {
 	"audio",
+
 }
+requestBody.SetAcceptedModalities(acceptedModalities)
 participantCapacity := int32(200)
-requestBody.SetParticipantCapacity(&participantCapacity)
-callId := "call-id"
-graphClient.Communications().CallsById(&callId).Answer(call-id).Post(requestBody)
+requestBody.SetParticipantCapacity(&participantCapacity) 
+
+graphClient.Communications().CallsById("call-id").Answer().Post(requestBody)
 
 
 ```
