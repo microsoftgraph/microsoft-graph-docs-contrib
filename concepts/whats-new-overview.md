@@ -15,12 +15,26 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ## August 2022: New and generally available
 
+### Applications
+Use [federated identity credentials](/graph/api/resources/federatedidentitycredential) to manage an application's credentials and allow an organization's cloud applications to access Azure AD without using secrets and certificates.
+
+### Identity and access | Identity and sign-in
+- GA of [authentication methods](/graph/api/resources/authenticationmethods-overview) including [email](/graph/api/resources/emailauthenticationmethod), [password](/graph/api/resources/passwordauthenticationmethod), [phone](/graph/api/resources/phoneauthenticationmethod), and [software OATH](/graph/api/resources/softwareoathauthenticationmethod). 
+- [Reset a user password](/graph/api/passwordauthenticationmethod-resetpassword) and [get the operation status](/graph/api/authenticationoperation-get) for a [long-running operation](/graph/api/resources/longrunningoperation).
+- Manage [session controls](/graph/api/resources/conditionalaccesssessioncontrols) to enforce signin frequency in a [conditional access policy](/graph/api/resources/conditionalaccesspolicy).
+
+### Sites and lists
+Manage the [version history of a document set](/graph/api/resources/documentsetversion) in SharePoint, allowing apps to capture the document set (folder) and its contents (documents) at a point in time.
+
 ### Teamwork
 - Limit a [chat](/graph/api/resources/chat) title to a maximum of 255 characters and characters that are _not_ the colon. 
 - [List](/graph/api/chat-list) the chats of a specific user who may not be signed in or is different from the signed-in user, using application permissions.
 
 
 ## August 2022: New in preview only
+
+### Calendar | Places
+[Get](/graph/api/place-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/place-update?view=graph-rest-beta&preserve-view=true) a [workspace](/graph/api/resources/workspace?view=graph-rest-beta&preserve-view=true) in a tenant.
 
 ### Cloud communications | Online meeting
 [Get](/graph/api/calltranscript-get?view=graph-rest-beta&preserve-view=true) a specific [transcript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) or all the transcipts of an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
@@ -30,6 +44,9 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 - The [idle session sign-out policy settings](/graph/api/resources/tenantadmin-idlesessionsignout?view=graph-rest-beta&preserve-view=true) for SharePoint.
 - Whether legacy authentication protocols are enabled for the tenant.
 - Whether guests must sign in using the same account to which sharing invitations are sent.
+
+### Reports | Identity and access reports
+[Get](/graph/api/userregistrationdetails-get?view=graph-rest-beta&preserve-view=true) more details about [authentication registration by users](/graph/api/resources/userregistrationdetails?view=graph-rest-beta&preserve-view=true) in a tenant - whether a user is a member or guest, and whether the user has an admininstrator role in the tenant.
 
 ### Teamwork
 [List](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true) and sort chats in descending order.
