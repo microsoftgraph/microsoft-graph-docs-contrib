@@ -61,6 +61,9 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "allowedTargetScope": "String",
+  "automaticRequestSettings": {
+    "@odata.type": "microsoft.graph.accessPackageAutomaticRequestSettings"
+  },
   "specificAllowedTargets": [
     {
       "@odata.type": "microsoft.graph.singleUser"
