@@ -11546,6 +11546,32 @@
       "CreatedDateTime": "2022-07-05T07:06:20.8129252Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f83352fd-760c-4c73-bf6b-1510ee7bb4dc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalaccesspolicy",
+          "ChangeType": "Change",
+          "Description": "Added the **applicationFilter** property to the [conditionalAccessApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessapplications?view=graph-rest-beta) resource.",
+          "Target": "Conditional Access"
+        },
+        {
+          "Id": "f83352fd-760c-4c73-bf6b-1510ee7bb4dc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalaccesspolicy",
+          "ChangeType": "Change",
+          "Description": "Added the **servicePrincipalFilter** property to the [conditionalAccessClientApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessclientapplications?view=graph-rest-beta) resource.",
+          "Target": "Conditional Access"
+        }
+      ],
+      "Id": "f83352fd-760c-4c73-bf6b-1510ee7bb4dc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-15T07:06:20.8129252Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
