@@ -67,6 +67,10 @@ For example, a customer has 20 pipeline runs within the month, each yielding 500
 
 Instead, the customer will be billed for 20 units due to Microsoft Graph Data Connect rounding up fraction. Since 500 rows /1000 rows = 0.5 and 0.5 is a fraction, it will be rounded to 1. The customer will be billed one unit per pipeline run, resulting in 20 units billed in total.
 
+## Does my current Azure discount apply to Microsoft Graph Data Connect's monthly bill?
+
+Microsoft Graph Data Connect is offered through Azure and is currently available to Microsoft 365 customers. Your existing discounts can be applied to Microsoft Graph Data Connect's charges since the it is billed through Azure. For any further questions or inquiries, please reach out to your account manager on more information.
+
 ##  What can I do if a dataset is not yet supported for my tenant?
 
 For datasets like ODPS and Viva Insights, please make sure you meet the criteria required to access these datasets mentioned in [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets). Additionally, these datasets are only available to customers who have opted in for them explicitly.
