@@ -50,8 +50,8 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
         - **Description**: enter a description
         - **Region**: select the region that matches your Microsoft 365 region
         - **Virtual network configuration (preview)**: Disabled
-
-1. Switch from the **Manage (toolbox icon)** to the **Author (pencil icon)** experience by selecting it from the left-hand navigation.
+*
+1. Switch from the **Manage** (toolbox icon) to the **Author** (pencil icon) experience by selecting it from the left-hand navigation.
 1. Create a new pipeline by selecting the **plus** icon, then **pipeline**.
 
     ![A screenshot showing the Azure portal UI for the Data Factory service. The user is creating a new pipeline.](../concepts/images/data-connect-adf-pipeline-create.png)

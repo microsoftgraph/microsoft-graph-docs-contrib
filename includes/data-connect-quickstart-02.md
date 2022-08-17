@@ -24,8 +24,7 @@ In this step, you will setup your Microsoft 365 tenant to enable usage of Micros
     ![A screenshot showing a user selecting the mail-enabled security for a new group in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-sec-distr-new.png)
 
    - **Name**: Consent Request Approvers
-    <!-- //TODO for Gladys: Please make sure the screenshot flow below matches the flow of the new screenshots above-->
-    <!-- //TODO for Richa: Update the titles of the button based on the screenshots from Gladys -->
+
     ![A screenshot showing a user is giving the group a name of "Consent Request Approvers" in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-cons-apprv.png)
 
    - **Email Prefix**: consentrequestapprovers

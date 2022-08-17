@@ -48,6 +48,11 @@ The first step is to create an Azure AD application that will be used as the sec
 
 1. On the sidebar navigation for the application, select **Owners**.
 
-1. Verify that your account is listed as an owner for the application. If it isn't listed as an owner, add it.
+1. Please ensure your account meets the following requirements to be an owner for the application:
+    - Be a valid user account within the tenant.
+    - You must have a valid and working E5 subscription/license. 
+    - You need to have an Exchange Online assigned (must have a mailbox).
+
+1. Verify that your account is listed as an owner for the application. If it isn't listed as an owner, add it. 
 
     ![A screenshot showing a user verifying that their account is set as owner for the application registration in the Azure portal.](../concepts/images/data-connect-aad-app-owners-new.png)
