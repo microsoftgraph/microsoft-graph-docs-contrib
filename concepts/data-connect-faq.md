@@ -70,7 +70,7 @@ The Data Connect documentation shows you how to use PowerShell and the PAM UX to
 
 ## Can I have a second user to approve PAM requests?
 
-When you run a pipeline and trigger a PAM request, the request is attached to your user account that owns the service principal used by the pipeline. But even if this account is part of the approver group that you set up, you can't use it to approve the PAM request because self-approvals are not allowed. If you try, you'll get an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed." For development, you'll want to have a second account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange Online accounts.
+When you run a pipeline and trigger a PAM request, the request is attached to your user account that owns the service principal used by the pipeline. Even if the  account is part of the approver group that you set up, you can't use it to approve the PAM request because self-approvals are not allowed. If you try, you'll get an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed." For development, you'll want to have a second account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange Online accounts.
 
 ## Can I deduplicate emails when needed?
 
