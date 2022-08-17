@@ -31,7 +31,7 @@ This resource supports:
 |[Delete application](../api/application-delete.md) | None |Delete application object. |
 |[Get delta](../api/application-delta.md)|[application](application.md)|Get newly created, updated, or deleted applications without performing a full read of the entire resource collection.|
 |[List deleted applications](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
-| [List deleted applications owned by user](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | Retrieve the applications deleted in the tenant in the last 30 days and that are owned by a user. |
+| [List deleted applications owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the applications deleted in the tenant in the last 30 days and that are owned by a user. |
 |[Get deleted application](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
 |[Permanently delete application](../api/directory-deleteditems-delete.md) | None | Permanently delete an applications. |
 |[Restore deleted application](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
