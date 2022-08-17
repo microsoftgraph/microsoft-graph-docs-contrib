@@ -32,7 +32,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 |:---|:---|:---|
 |actorDisplayName|String|The adversary or activity group that is associated with this alert.|
 |alertWebUrl|String|URL for the alert page in the Microsoft 365 Defender portal.|
-|assignedTo|String|Owner of the **incident**, or null if no owner is assigned.|
+|assignedTo|String|Owner of the **alert**, or null if no owner is assigned.|
 |category|String|The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
 |classification|[microsoft.graph.security.alertClassification](#alertclassification-values)|Specifies whether the alert represents a true threat. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
 |comments|[microsoft.graph.security.alertComment](security-alertComment.md) collection|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
@@ -45,7 +45,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 |firstActivityDateTime|DateTimeOffset|The earliest activity associated with the alert.|
 |id|String|Unique identifier to represent the **alert** resource.|
 |incidentId|String|Unique identifier to represent the [incident](security-incident.md) this **alert** resource is associated with.|
-|incidentWebUrl|String|URL for the alert page in the Microsoft 365 Defender portal.|
+|incidentWebUrl|String|URL for the incident page in the Microsoft 365 Defender portal.|
 |lastActivityDateTime|DateTimeOffset|The oldest activity associated with the alert.|
 |lastUpdateDateTime|DateTimeOffset|Time when the alert was last updated at Microsoft 365 Defender.|
 |mitreTechniques|Collection(Edm.String)|The attack techniques, as aligned with the MITRE ATT&CK framework.|
