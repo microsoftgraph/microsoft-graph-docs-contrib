@@ -12,9 +12,7 @@ The first step is to create an Azure AD application that will be used as the sec
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
-<!-- //TODO for Richa: role required is AAD admin role, Rishi to send action item on verbiage for this. replace global admin and remove Microsoft 365-->
-
-1. Sign in using an account with **Azure Active Directory admin** rights to your Azure tenant.
+1. Sign in using an account with [**Application Administrator**] (https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator) or [**Application Developer**] (https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer) role to your Azure portal.
 
 1. On the sidebar navigation, select **Azure Active Directory** (Azure AD).
 
@@ -24,9 +22,8 @@ The first step is to create an Azure AD application that will be used as the sec
 
     ![A screenshot showing the App registrations in the Azure Active Directory service in the Azure portal.](../concepts/images/data-connect-azure-aad-app-reg.png)
 
-    <!-- Must only use single tenant as thats supported by MGDC-->
 
-1. Use the following values to create a new Azure AD application and select **Register**.
+1. Use the following values to create a new Azure AD application and select **Register**. Please note: MGDC only supports single tenant as of now.
 
    - **Name**: Microsoft Graph Data Connect Data Transfer
    - **Supported account types**: Accounts in this organizational directory only.
@@ -34,25 +31,23 @@ The first step is to create an Azure AD application that will be used as the sec
 
     ![A screenshot showing the steps to register a new application registration in the Azure portal.](../concepts/images/data-connect-aad-redirect-uri.png)
 
-<!--//TODO for Gladys: Please add screenshot for bullet points 7 and 8 (Application ID and Directory ID). This can be done with the test tenant. Please make sure to remove "Fercobo-mgdc-app" from the screenshot below.-->
 1. Locate the **Application (client) ID** and copy it as you will need it later in this tutorial. This will be referred to as the service principal ID.
 
 1. Locate the **Directory (tenant) ID** and copy it as you will need it later in this tutorial. This will be referred to as the tenant ID.
 
+![A screenshot showing application and tenant id.](../concepts/images/data-connect-app-tenant-new.png)
+
 1. On the sidebar navigation, select **Certificates and secrets** under **Manage**.
 
-<!--//TODO for Gladys: change the fercobo screenshot -->
 1. Select the **New client secret button**. Set *Description* to any name, set **Expires** to any value in the dropdown and choose **Add**.
 
-    ![A screenshot showing the process to create a new client secret in the Azure portal.](../concepts/images/data-connect-aad-certs-secrets.png)
+    ![A screenshot showing the process to create a new client secret in the Azure portal.](../concepts/images/data-connect-aad-certs-secrets-new.png)
 
     - After the client secret is created, make sure you save the **Value** somewhere safe, as it will no longer be available later, and you will need to create a new one.
     - This will be referenced as the service principal key.
 
-<!--//TODO for Richa: Update titles for buttons once Gladys sends screenshots -->
 1. On the sidebar navigation for the application, select **Owners**.
 
-<!--//TODO for Gladys: Please take the update screenshot for the instruction below.-->
 1. Verify that your account is listed as an owner for the application. If it isn't listed as an owner, add it.
 
-    ![A screenshot showing a user verifying that their account is set as owner for the application registration in the Azure portal.](../concepts/images/data-connect-aad-app-owners.png)
+    ![A screenshot showing a user verifying that their account is set as owner for the application registration in the Azure portal.](../concepts/images/data-connect-aad-app-owners-new.png)

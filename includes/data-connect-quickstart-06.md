@@ -10,13 +10,15 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 ## Approve consent requests
 
-<!--//TODO for Gladys: Customers are confused from 1 to 2. Incase you dont have the link handy, how customers can get there from portal to priviledges access, Need screenshot to explain the transition between #1 and #2.-->
-
 # [Microsoft 365 Admin Center](#tab/Microsoft365)
 
 1. Open a browser and go to your [Microsoft 365 Admin Portal](https://admin.microsoft.com).
 
 1. To approve or deny consent requests, go to [Privileged Access](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess).
+
+    ![A screenshot showing priviledged access in the Microsoft 365 admin center.](../concepts/images/data-connect-consent-request-a-new.png)
+
+    ![A screenshot showing priviledged access in the Microsoft 365 admin center.](../concepts/images/data-connect-consent-request-b-new.png)
 
 1. Select a pending **Data Access Request**.
 
@@ -85,8 +87,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
-<!--//TODO for Richa: replace #2 with the verbiage before. Ask Rishi if that's from page 3 or page 5 -->
-1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
+1. Sign in using an account with [**Application Administrator**] (https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator) or [**Application Developer**] (https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer) role to your Azure portal.
 
 1. On the sidebar navigation, select the **All resources** menu item.
 

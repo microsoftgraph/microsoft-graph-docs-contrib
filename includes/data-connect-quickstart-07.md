@@ -50,6 +50,17 @@ In this section we will be building your first ASP.NET project application for t
 
     ![A screenshot of the Visual Studio interface showing the Configure Azure Storage summary.](../concepts/images/data-connect-vs-configure-sa-summary.png)
 
+## How to add connection string to Web.Config file at root level
+
+1. Add the code below to the Web.config file (the one at the root level). It is NOT the one under the Views folder. 
+2. Please Note: This should be added between </appSettings> and <system.web>
+    ```csharp
+    <connectionStrings>
+    <add name="AzureStorageConnectionString" connectionString="DefaultEndpointsProtocol="COPY FROM THE CONNECTION STRING FOUND IN YOUR AZURE STORAGE ACCOUNT-ACCESS KEYS –CONNECTION STRING"/>
+    </connectionStrings>
+    ```
+
+
 ## Create a new model class that will be used to store the email metrics
 
 1. In the  **Solution Explorer** tool window, right-click the **Models** folder and select **Add > Class**.
