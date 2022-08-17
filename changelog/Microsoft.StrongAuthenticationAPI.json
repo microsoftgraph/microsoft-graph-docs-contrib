@@ -47,8 +47,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-08-12T00:00:38.715986Z",
-      "WorkloadArea": "Microsoft.StrongAuthenticationAPI",
-      "SubArea": ""
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
