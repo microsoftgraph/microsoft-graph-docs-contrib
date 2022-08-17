@@ -12,7 +12,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
-1. Sign in using an account with [**Application Administrator**] (https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator) or [**Application Developer**] (https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer) role to your Azure portal. Please make sure your account has priviledges to create Azure resources within your subscription.
+1. Sign in using an account with **[Application Administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal. Please make sure your account has priviledges to create Azure resources within your subscription.
 
 1. On the sidebar navigation, select **Create a resource**.
 
