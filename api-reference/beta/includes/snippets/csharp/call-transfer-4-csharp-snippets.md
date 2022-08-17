@@ -11,9 +11,9 @@ var transferTarget = new InvitationParticipantInfo
 	EndpointType = EndpointType.Default,
 	Identity = new IdentitySet
 	{
-		AdditionalData = new Dictionary<string, object>()
+		Phone = new Identity
 		{
-			{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
+			Id = "+12345678901"
 		}
 	},
 	ReplacesCallId = "e5d39592-99bd-4db8-bca8-30fb894ec51d",
