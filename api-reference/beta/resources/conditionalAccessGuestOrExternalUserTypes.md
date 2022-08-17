@@ -40,7 +40,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "guestOrExternalUserTypes": {"@odata.type": "microsoft.graph.conditionalAccessGuestOrExternalUserTypes"},
-  "externalTenants": {"@odata.type": "microsoft.graph.conditionalAccessExternalTenants"}
+  "membershipKind": {"@odata.type": "microsoft.graph.conditionalAccessExternalTenantsMembershipKind"}
 }
 ```
