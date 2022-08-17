@@ -26,7 +26,7 @@ Please note: Your tenant admin will need to approve and consent within 24 hours 
 
 Microsoft Graph Data Connect is currently available in multiple regions across the following geographies: North America, Europe, Asia Pacific, United Kingdom/Great Britain, and Australia. Other regions will soon follow and will be updated promptly.
 
-For a list of Office to Azure regions and their mapping please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#regions).
+For a list of Office to Azure regions and their mapping please refer to [Dataset, regions and sinks](/concepts/data-connect-datasets.md#regions).
 
 ## What datasets are available through Microsoft Graph Data Connect?
 
@@ -37,17 +37,17 @@ We have multiple datasets for each of the groups organized in the below
 * One Drive/Sharepoint (ODSP)
 * Viva Insights
 
-New datasets are added to Microsoft Graph Data Connect on a regular basis. Please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets) for the complete list.
+New datasets are added to Microsoft Graph Data Connect on a regular basis. Please refer to [Dataset, regions and sinks](/concepts/data-connect-datasets.md) for the complete list.
 
 ## Which datasets are in Preview and which ones are in General Availability?
 
-Datasets under the ODSP and Viva Insights section are currently available for customers in Preview or for those who have the Viva Insights license respectively. For more information on how to sign up for Preview for certain datasets, please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets).
+Datasets under the ODSP and Viva Insights section are currently available for customers in Preview or for those who have the Viva Insights license respectively. For more information on how to sign up for Preview for certain datasets, please refer to [Dataset, regions and sinks](/concepts/data-connect-datasets.md#datasets).
 
 ## How much do I have to pay for Microsoft Graph Data Connect?
 
 Microsoft Graph Data Connect consumption charges are billed monthly on a pay-as-you-go basis. The Data Connect billing unit is in a multiple of 1000s of objects, where 1 object maps to 1 individual instance of an entity in Microsoft 365. For example, 1 email == 1 object, 1 file == 1 object, 1 Teams chat message == 1 object, and so on. 
 
-We have some datasets available for free or are currently free in preview while other datasets are charged. Microsoft Graph Data Connect offers datasets across multiple different Microsoft 365 products and services. For more information on datasets that are available through Microsoft Graph Data Connect, please refer to [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets). For more information about billing, see the [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
+We have some datasets available for free or are currently free in preview while other datasets are charged. Microsoft Graph Data Connect offers datasets across multiple different Microsoft 365 products and services. For more information on datasets that are available through Microsoft Graph Data Connect, please refer to [Dataset, regions and sinks](concepts/data-connect-datasets.md#datasets). For more information about billing, see the [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
 
 There is no charge for extraction of objects from the following datasets:
 - BasicDataSet_v0.User_v0
@@ -73,7 +73,7 @@ Microsoft Graph Data Connect is offered through Azure and is currently available
 
 ##  What can I do if a dataset is not yet supported for my tenant?
 
-For datasets like ODPS and Viva Insights, please make sure you meet the criteria required to access these datasets mentioned in [Dataset, regions and sinks](https://docs.microsoft.com/en-us/graph/data-connect-datasets#datasets). Additionally, these datasets are only available to customers who have opted in for them explicitly.
+For datasets like ODPS and Viva Insights, please make sure you meet the criteria required to access these datasets mentioned in [Dataset, regions and sinks](/concepts/data-connect-datasets.md#datasets). Additionally, these datasets are only available to customers who have opted in for them explicitly.
 
 For further inquires or questions, please reach out to dataconnect@microsoft.com.
 
@@ -91,7 +91,7 @@ When creating the Azure Synapse or Data Factory pipeline, you have to provide a 
 
 If you create an Azure managed application for others to use in their tenants, you still provide a service principal for the app to use. This service principal exists in your (the publisher's) tenant. However, if the app needs other service principals, your customer (the installer) creates them in their own tenant. For example, your Azure Synapse or Azure Data Factory pipeline likely needs access to a storage resource in Azure. The customer creates the service principal with permissions to the storage account for the pipeline to use.
 
-For more information on building your application with Azure Synapse or Azure Data Factory please visit [here](https://docs.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365).
+For more information on building your application with Azure Synapse or Azure Data Factory please visit [here](/concepts/data-connect-quickstart?tabs=Microsoft365).
 
 
 ## How can I check for pending Privileged Access Management (PAM) requests?
@@ -124,7 +124,7 @@ Follow the below to approve/deny your PAM request:
 5. (Optional) Add deny list scrubbing if needed
 5. Approve or Deny request as needed
 
-For more details please visit [this page](https://docs.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1).
+For more details please visit [this page](/concepts/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1).
 
 ## Will every pipeline run trigger a new consent request?
  
