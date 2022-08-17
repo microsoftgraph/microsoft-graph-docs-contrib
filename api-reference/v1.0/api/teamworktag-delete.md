@@ -1,7 +1,7 @@
 ---
 title: "Delete teamworkTag"
 description: "Deletes a teamworkTag object."
-author: "anniecolonna"
+author: "sekeatin"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
 doc_type: apiPageType

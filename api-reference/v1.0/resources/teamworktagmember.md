@@ -1,7 +1,7 @@
 ---
 title: "teamworkTagMember resource type"
 description: "Represents a user in a team who has a tag applied to them."
-author: "anniecolonna"
+author: "sekeatin"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
 doc_type: resourcePageType
