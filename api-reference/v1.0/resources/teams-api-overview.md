@@ -29,6 +29,8 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 |[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [list](../api/schedule-list-shifts.md), [get](../api/shift-get.md), [replace](../api/shift-put.md), [delete](../api/shift-delete.md) |
 |[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [list](../api/schedule-list-timesoff.md), [get](../api/timeoff-get.md), [replace](../api/timeoff-put.md), [delete](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [list](../api/schedule-list-timeoffreasons.md), [get](../api/timeoffreason-get.md), [replace](../api/timeoffreason-put.md), [delete](../api/timeoffreason-delete.md) |
+|[tag](../resources/teamworkTag.md)|[Create](../api/teamworkTag-post.md), [List](../api/teamworkTag-list.md), [Get](../api/teamworkTag-get.md), [Update](../api/teamworkTag-update.md), [Delete](../api/teamworkTag-delete.md)|
+|[tagMember](../resources/teamworkTagMember.md)|[Create](../api/teamworkTagMember-post.md), [List](../api/teamworkTagMember-list.md), [Get](../api/teamworkTagMember-get.md), [Delete](../api/teamworkTagMember-delete.md)|
 
 ## Microsoft Teams limits
 

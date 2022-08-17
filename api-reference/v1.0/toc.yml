@@ -7263,6 +7263,25 @@ items:
           href: api/chats-getallmessages.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
+      - name: Tags
+        href: resources/teamworktag.md 
+        items:     
+        - name: List tags
+          href: api/teamworktag-list.md
+        - name: Create tag
+          href: api/teamworktag-post.md
+        - name: Get tag
+          href: api/teamworktag-get.md
+        - name: Update tag
+          href: api/teamworktag-update.md
+        - name: Delete tag
+          href: api/teamworktag-delete.md
+        - name: List members
+          href: api/teamworktagmember-list.md
+        - name: Get member
+          href: api/teamworktagmember-get.md
+        - name: Delete member
+          href: api/teamworktagmember-delete.md
       - name: App
         items:
         - name: App in catalog

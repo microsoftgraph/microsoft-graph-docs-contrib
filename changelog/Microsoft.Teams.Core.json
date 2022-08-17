@@ -5533,6 +5533,120 @@
       "CreatedDateTime": "2022-08-02T15:04:59.427Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkTag](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTag?view=graph-rest-1.0) resource type and associated methods.",
+          "Target": "teamworkTag"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkTagMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagMember?view=graph-rest-1.0) resource type and associated methods.",
+          "Target": "teamworkTagMember"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamworkTagType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamworkTagType** enumeration type.",
+          "Target": "teamworkTagType"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Property",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [tags](https://docs.microsoft.com/en-us/graph/api/teamworktag-create?view=graph-rest-1.0) navigation property to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource type, enabling tags to be added with increased reliability and lower latency.",
+          "Target": "teamworkTag,team"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete teamworkTag](https://docs.microsoft.com/en-us/graph/api/teamworktag-delete?view=graph-rest-1.0) method.",
+          "Target": "teamworkTag"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get teamworkTag](https://docs.microsoft.com/en-us/graph/api/teamworktag-get?view=graph-rest-1.0) method.",
+          "Target": "teamworkTag"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Added the [List teamworkTags](https://docs.microsoft.com/en-us/graph/api/teamworktag-list?view=graph-rest-1.0) method.",
+          "Target": "teamworkTag"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create teamworkTag](https://docs.microsoft.com/en-us/graph/api/teamworktag-post?view=graph-rest-1.0) method.",
+          "Target": "teamworkTag"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update teamworkTag](https://docs.microsoft.com/en-us/graph/api/teamworktag-update?view=graph-rest-1.0) method.",
+          "Target": "teamworkTag"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/teamworktagmember-delete?view=graph-rest-1.0) method.",
+          "Target": "teamworkTagMember"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/teamworktagmember-get?view=graph-rest-1.0) method.",
+          "Target": "teamworkTagMember"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Added the [List teamworkTagMembers](https://docs.microsoft.com/en-us/graph/api/teamworktagmember-list?view=graph-rest-1.0) method.",
+          "Target": "teamworkTagMember"
+        },
+        {
+          "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/teamworktagmember-post?view=graph-rest-1.0) method.",
+          "Target": "teamworkTagMember"
+        }
+      ],
+      "Id": "7903FE4E-05C7-410A-8F26-0875323D871B",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-08-17T12:29:40.401Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
