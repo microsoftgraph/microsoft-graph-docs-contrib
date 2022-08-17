@@ -8,13 +8,9 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
 ## Create an Azure Data Factory pipeline
 
-<!-- TODO for Richa and Gladys: Work on same page for Synapse.Richa writes out content and Gladys to help with screenshot. We can do switch off simillar to powershell page>
-
-<!--//TODO for Richa: Add Azure IR selection, maybe to 7b where Gladys will have an updated screenshot. Talk to Rishi and Cristian where the IR selection should be in the docs below. -->
+<!-- TODO for Richa and Gladys: Work on same page for Synapse.Richa writes out content and Gladys to help with screenshot. We can do switch off simillar to powershell page -->
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
-
-<!-- //TODO for Richa: Check verbiage with Rishi. This can be anybody who has the ADF access.-->
 
 1. Sign in using an account with [**Application Administrator**] (https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator) or [**Application Developer**] (https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer) role to your Azure portal. Please make sure your account has priviledges to create Azure resources within your subscription.
 
@@ -41,8 +37,8 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 1. By default, the Azure Data Factory will use an integration runtime that is auto-resolving the region. Because Data Connect requires that your source and destination, and integration runtime to exist in the same Microsoft 365 region, we recommend that you create a new integration runtime with a fixed region.
     1. Select **Integration runtimes** > **New**.
     2. Select **Azure, Self-Hosted** and select **Continue**
-    
-    ![A screenshot showing the Azure Portal UI for the Data Factory service. The user is clicking the Author and Monitor button.] (../concepts/images/data-connect-adf-integration-runtime-b-new.png)
+
+        ![A screenshot showing the Azure Portal UI for the Data Factory service. The user is selecting the Azure option for the network environment.](../concepts/images/data-connect-adf-integration-runtime-b-new.png)
     
     3. Select **Azure** for network environment and select **Continue**.
 
@@ -92,7 +88,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
       - Select **Import schema** in the _Output columns_ section.
     
     <!-- //TODO for Gladys: We need screenshots for the properties below which are no longer in the instructions below. Some of the properties moved to the activity tab. Please refer to the recording at 48:30 - 52:00 for details. -->
-    
+
     - Select the **Copy data** activity in the pipeline tab, then select the **Sink** tab.
       - Select the **New** button, select **Azure Blob Storage** or **Azure Data Lake Gen2**, and then select the **Continue** button.
       - Select **Binary** as the format for the data and then select the **Continue** button.
