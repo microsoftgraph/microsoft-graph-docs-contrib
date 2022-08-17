@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST ** Collection URI for microsoft.graph.identityGovernance.lifecycleManagementSettings not found
+POST /identityGovernance/lifecycleWorkflows/settings
 ```
 
 ## Request headers

@@ -22,7 +22,7 @@ Inherits from [workflowExecutionTrigger](../resources/identitygovernance-workflo
 |Property|Type|Description|
 |:---|:---|:---|
 |offsetInDays|Int32|The number of days from the time based attribute for which a workflow is triggered.|
-|timeBasedAttribute|workflowTriggerTimeBasedAttribute|The event triggering the execution of a workflow.The possible values are: `employeeHireDate`, `unknownFutureValue`.|
+|timeBasedAttribute|String|The event triggering the execution of a workflow.The possible values are: `employeeHireDate`, `unknownFutureValue`.|
 
 ## Relationships
 
