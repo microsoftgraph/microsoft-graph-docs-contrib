@@ -32,6 +32,15 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
+To troubleshoot the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
+
+``` http
+POST /me/cloudPCs/{cloudPCId}/troubleshoot
+POST /users/{userId}/cloudPCs/{cloudPCId}/troubleshoot
+```
+
+To troubleshoot the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
+
 ``` http
 POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/troubleshoot
 ```
@@ -94,6 +103,32 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/
 
 
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Troubleshoot the cloudPC for the signed-in user
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "user_troubleshoot_cloudpc"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002/troubleshoot
+```
+
+#### Response
 
 <!-- {
   "blockType": "response",
