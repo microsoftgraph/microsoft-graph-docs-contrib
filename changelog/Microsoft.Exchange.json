@@ -72,19 +72,19 @@
       "ChangeList": [
         {
           "Id": "aaed27af-4717-4e50-8c8a-a5c7f87c0491",
-          "ApiChange": "Property",
-          "ChangedApiName": "userPurpose",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "mailboxRecipientType",
           "ChangeType": "Change",
           "Description": "Renamed the **mailboxRecipientType** enumeration as **userPurpose**.",
-          "Target": "mailboxSettings"
+          "Target": "userPurpose"
         },
         {
           "Id": "aaed27af-4717-4e50-8c8a-a5c7f87c0491",
-          "ApiChange": "Property",
-          "ChangedApiName": "userPurpose",
+          "ApiChange": "Member",
+          "ChangedApiName": "mailboxRecipientType",
           "ChangeType": "Deletion",
           "Description": "Removed the `unknown` member from the **userPurpose** enumeration.",
-          "Target": "mailboxSettings"
+          "Target": "userPurpose"
         }
       ],
       "Id": "aaed27af-4717-4e50-8c8a-a5c7f87c0491",
