@@ -28,7 +28,7 @@ Inherits from [customExtensionData](../resources/identitygovernance-customTaskEx
 |:---|:---|:---|
 |subject|[user](../resources/user.md)|The user which created the workflow.|
 |task|[task](../resources/identitygovernance-task.md)|The task associated with the Custom Task Extension.|
-|taskProcessingresult|[identitygovernance-taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md)|The task processing result of the Custom Task Extension.|
+|taskProcessingresult|[taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md)|The task processing result of the Custom Task Extension.|
 |workflow|[workflow](../resources/identitygovernance-workflow.md)|The workflow the Custom Task Extension is part of.|
 
 ## JSON representation
