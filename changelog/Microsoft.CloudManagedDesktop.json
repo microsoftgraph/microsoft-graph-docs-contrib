@@ -2402,7 +2402,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "restore",
                 "ChangeType": "Addition",
-                "Description": "Added the [restore](https://docs.microsoft.com/en-us/graph/api/intune-cloudPC?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/intune-cloudPC?view=graph-rest-beta) resource.",
+                "Description": "Added the [restore](https://docs.microsoft.com/en-us/graph/api/cloudpc-restore?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                 "Target": "cloudPC"
               }
             ],
