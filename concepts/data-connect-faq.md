@@ -47,7 +47,7 @@ Datasets under the ODSP and Viva Insights section are currently available for cu
 
 Microsoft Graph Data Connect consumption charges are billed monthly on a pay-as-you-go basis. The Data Connect billing unit is in a multiple of 1000s of objects, where 1 object maps to 1 individual instance of an entity in Microsoft 365. For example, 1 email == 1 object, 1 file == 1 object, 1 Teams chat message == 1 object, and so on. 
 
-We have some datasets available for free or are currently free in preview while other datasets are charged. Microsoft Graph Data Connect offers datasets across multiple different Microsoft 365 products and services. For more information on datasets that are available through Microsoft Graph Data Connect, please refer to [Dataset, regions and sinks](concepts/data-connect-datasets.md#datasets). For more information about billing, see the [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
+We have some datasets available for free or are currently free in preview while other datasets are charged. Microsoft Graph Data Connect offers datasets across multiple different Microsoft 365 products and services. For more information on datasets that are available through Microsoft Graph Data Connect, please refer to [Dataset, regions and sinks](/concepts/data-connect-datasets.md#datasets). For more information about billing, see the [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
 
 There is no charge for extraction of objects from the following datasets:
 - BasicDataSet_v0.User_v0
