@@ -1,6 +1,6 @@
 ---
-title: "Update alert_v2"
-description: "Update the properties of an alert_v2 object."
+title: "Update alert"
+description: "Update the properties of an alert object."
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Update alert_v2
+# Update alert
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

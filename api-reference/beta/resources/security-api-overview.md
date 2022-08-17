@@ -30,7 +30,7 @@ Take immediate action to defend against threats using the [securityAction](secur
   > **Note:** Currently security actions only support application permissions.
 
 ## Alerts
-Alerts are suspicious or malicious events or activities in a customer's tenant that Microsoft or partner security providers have identified and flagged for action or notification. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is alerts from multiple security providers for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.
+Alerts are suspicious activities in a customer's tenant that Microsoft or partner security providers have identified and flagged for action. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is alerts from multiple security providers for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.
 
 The beta version of the security API offers two types of alerts that aggregate other alerts from security providers and make analyzing attacks and determining response easier: 
 - [Alerts and incidents](#alerts-and-incidents-preview) (preview) - these are the latest generation of alerts in the Microsoft Graph security API. They are represented by the [alert](security-alert.md) resource and its collection, [incident](security-incident.md) resource, defined in the `microsoft.graph.security` namespace.
@@ -38,7 +38,7 @@ The beta version of the security API offers two types of alerts that aggregate o
 
 ### Alerts and incidents (preview)
 
-These [alert](security-alert.md) resources first pull alert data from security provider services, that are either part of or integrated with [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide). Then they consume the data to return rich, valuable clues about a completed or ongoing attack, the impacted assets, and associated [evidence](security-alertevidence.md). In addition, they automatically correlate other alerts with the same attack techniques or the same attacker into an [incident](security-incident.md) to provide a broader context of an attack. They recommend response and remediation actions, offering consistent actionability across all the different providers. The rich content makes it easy for analysts to collectively investigate and respond to threats.
+These [alert](security-alert.md) resources first pull alert data from security provider services, that are either part of or integrated with [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide). Then they consume the data to return rich, valuable clues about a completed or ongoing attack, the impacted assets, and associated [evidence](security-alertevidence.md). In addition, they automatically correlate other alerts with the same attack techniques or the same attacker into an [incident](security-incident.md) to provide a broader context of an attack. They recommend response and remediation actions, offering consistent actionability across all the different providers. The rich content makes it easier for analysts to collectively investigate and respond to threats.
 
 Alerts from the following security providers are available via these rich alerts and incidents:
 - [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
@@ -143,7 +143,7 @@ The Microsoft Graph threat submission API helps organizations to submit a threat
 
 The following are some of the most popular requests for working with the Microsoft Graph security API.
 
-| **Use cases**   | **REST resources** | **Try it in Graph Explorer** |
+| **Use cases**   | **REST operations** | **Try it in Graph Explorer** |
 |:---------------|:--------|:----------|
 | **Actions (preview)**|||
 | Get security action | [Get security action](../api/securityaction-get.md)|[https://graph.microsoft.com/beta/security/securityActions/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
@@ -151,11 +151,11 @@ The following are some of the most popular requests for working with the Microso
 |Create security actions|[Create security actions](../api/securityactions-post.md)|[https://graph.microsoft.com/beta/security/securityActions](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Cancel security action|[Cancel security actions](../api/securityaction-cancelsecurityaction.md)| [https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecurityAction](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions/{id}/cancelSecurityAction&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
 | **Alerts and incidents (preview)**|||
+| List alerts | [List alerts](../api/security-list-alerts_v2.md) | [https://graph.microsoft.com/beta/security/alerts_v2](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts_v2&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Update alert | [Update alert](../api/security-alert-update.md) | [https://graph.microsoft.com/beta/security/alerts/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
 | List incidents | [List incidents](../api/security-list-incidents.md) | [https://graph.microsoft.com/beta/security/incidents](https://developer.microsoft.com/graph/graph-explorer?request=security/incidents&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | List incidents with alerts| [List incidents](../api/security-list-incidents.md) | [https://graph.microsoft.com/beta/security/incidents?$expand=alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/incidents?$expand=alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | Update incident | [Update incident](../api/security-incident-update.md) | [https://graph.microsoft.com/beta/security/incidents/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/incidents/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
-| List alerts | [List alerts](../api/security-list-alerts_v2.md) | [https://graph.microsoft.com/beta/security/alerts_v2](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts_v2&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
-| Update alert | [Update alert](../api/security-alert-update.md) | [https://graph.microsoft.com/beta/security/alerts/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
 | **Attack simulation and training (preview)**|||
 |List simulations|[List simulations](../api/attacksimulationroot-list-simulations.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Get simulation overview report|[Get simulation overview report](../api/simulationreportoverview-get.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/overview](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations/{id}/report/overview&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
