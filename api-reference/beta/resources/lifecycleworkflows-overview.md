@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Azure AD Lifecycle Workflows is a new Azure AD Identity Governance service that enables organizations to manage Azure AD users by automating these three basic lifecycle processes:
 
-Typical customer scenarios for access reviews include:
+Typical customer scenarios for Lifecycle Workflows include:
 
 - **Joiner**:  When an individual comes into scope of needing access. An example is a new employee joining a company or organization.
 - **Mover**: When an individual moves between boundaries within an organization. This movement may require more access or authorization. An example would be a user who was in marketing is now a member of the sales organization.
@@ -27,7 +27,7 @@ Note that the Lifecycle Workflows feature, including the API, is included in Azu
 
 ## Methods
 
-The following table lists the methods that you can use to interact with access review-related resources.
+The following table lists the methods that you can use to interact with Lifecycle Workflows-related resources.
 
 |Method|Return type|Description|
 |:---|:---|:---|
