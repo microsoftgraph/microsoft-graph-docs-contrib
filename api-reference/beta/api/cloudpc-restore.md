@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a specific Cloud PC. When IT admins want to restore a Cloud PC device to a previous state, they can use this API to trigger a restore remote action for Cloud PC. This API needs a parameter indicating the snapshot id to tell service which snapshot to restore this Cloud PC to.
+Restore a specific Cloud PC. Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
 ## Permissions
 
