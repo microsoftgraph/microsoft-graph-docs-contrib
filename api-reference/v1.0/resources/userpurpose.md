@@ -19,14 +19,15 @@ Represents the user's recipient or mailbox type in Exchange Online. Differentiat
 |value|[userPurpose](#userpurpose-values)|Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `user`, `linked`, `shared`, `room`, `equipment`, and `others`. For more information, see [userPurpose values](#userpurpose-values).|
 
 ### userPurpose values
-|Member|Description|
-|:---------------|:--------|
-|user|A user account with a mailbox in the local forest.|
-|linked|A mailbox linked to a user account in another forest.|
-|shared|A mailbox shared by two or more user accounts.|
-|room|A mailbox that represents a conference room.|
-|equipment|A mailbox that represents a piece of equipment.|
-|others|A mailbox was found but the user purpose is different from the ones specified in the previous scenarios.|
+| Member    | Description                                                                                              |
+|:----------|:---------------------------------------------------------------------------------------------------------|
+| user      | A user account with a mailbox in the local forest.                                                       |
+| linked    | A mailbox linked to a user account in another forest.                                                    |
+| shared    | A mailbox shared by two or more user accounts.                                                           |
+| room      | A mailbox that represents a conference room.                                                             |
+| equipment | A mailbox that represents a piece of equipment.                                                          |
+| others    | A mailbox was found but the user purpose is different from the ones specified in the previous scenarios. |
+
 
 ## JSON representation
 
@@ -42,7 +43,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "value": "string"
+    "value": "String"
 }
 ```
 

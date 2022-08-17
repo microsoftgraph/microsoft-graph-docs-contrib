@@ -43,6 +43,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## HTTP request
+
 To get all the mailbox settings for a user:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -50,7 +51,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, working hours, or user's recipient or mailbox type i.e. user purpose:
+To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, working hours, or user's recipient or mailbox type (for example, user purpose):
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -77,6 +78,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 GET /me/mailboxSettings/userPurpose
 GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 ```
+
 ## Optional query parameters
 This method supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
@@ -103,10 +105,13 @@ If successful, this method returns a `200 OK` response code and one of the follo
 
 ## Examples
 
-### Example 1
-#### Request 
-The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for automatic replies, date format, 
-locale (language and country/region), time format, time zone, working hours, and user purpose.
+### Example 1: Get all mailbox settings of the signed-in user's mailbox
+
+Get all the mailbox settings of the signed-in user's mailbox that include settings for automatic replies, date format, locale (language and country/region), time format, time zone, working hours, and user purpose.
+
+#### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -132,8 +137,9 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings
 ---
 
 #### Response
-The response includes all the mailbox settings of the signed-in user. 
-Note: The response object shown here might be shortened for readability.
+
+The following is an example of the response that includes all mailbox settings of the signed-in user.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -188,9 +194,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2
+### Example 2: Get specifically the automatic replies settings of the signed-in user's mailbox
+
 #### Request
-The second example gets specifically the automatic replies settings of the signed-in user's mailbox.
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -216,8 +224,8 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 ---
 
 #### Response
-The response includes only the automatic replies settings. 
-Note: The response object shown here might be shortened for readability.
+The following is an example of the response that includes only the automatic replies settings.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -245,9 +253,11 @@ Content-type: application/json
 }
 ```
 
-### Example 3
+### Example 3: Get specifically the working hour settings of the signed-in user's mailbox
+
 #### Request
-The third example gets specifically the working hour settings of the signed-in user's mailbox.
+
+The following is an example of a request.
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3"
@@ -256,8 +266,8 @@ The third example gets specifically the working hour settings of the signed-in u
 GET https://graph.microsoft.com/beta/me/mailboxSettings/workingHours
 ```
 #### Response
-The response includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md). 
-Note: The response object shown here might be shortened for readability.
+The following is an example of the response that includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",
@@ -304,9 +314,11 @@ Content-type: application/json
 }
 ```
 
-### Example 4
+### Example 4: Get specifically the user purpose settings of the signed-in user's mailbox
+
 #### Request
-The fourth example gets specifically the [user purpose](../resources/userpurpose.md) settings of the signed-in user's mailbox.
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -332,7 +344,8 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 ---
 
 #### Response
-The response includes only the [user purpose](../resources/userpurpose.md) settings.
+
+The following is an example of the response that includes only the [user purpose](../resources/userpurpose.md) settings.
 
 <!-- {
   "blockType": "response",

@@ -29,7 +29,7 @@ You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update
 |timeFormat|string|The time format for the user's mailbox.|
 |timeZone|string|The default time zone for the user's mailbox.|
 |workingHours|[workingHours](workinghours.md)|The days of the week and hours in a specific time zone that the user works.|
-|userPurpose|[userPurpose](userpurpose.md)|The purpose of the mailbox. Used to differentiate a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online. Read only.|
+|userPurpose|[userPurpose](userpurpose.md)|The purpose of the mailbox. Differentiates a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online. Read only.|
 
 ## JSON representation
 

@@ -59,6 +59,22 @@
           "ChangeType": "Addition",
           "Description": "Added the **userPurpose** property to the [mailboxSettings](https://docs.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-1.0) resource.",
           "Target": "mailboxSettings"
+        },
+        {
+          "Id": "eebbe000-313f-4698-87b1-651a9e75f114",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userPurpose",
+          "ChangeType": "Addition",
+          "Description": "Added the [userPurpose](https://docs.microsoft.com/en-us/graph/api/resources/userpurpose?view=graph-rest-1.0) resource type.",
+          "Target": "userPurpose"
+        },
+        {
+          "Id": "eebbe000-313f-4698-87b1-651a9e75f114",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "userPurpose",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPurpose** enumeration type.",
+          "Target": "userPurpose"
         }
       ],
       "Id": "eebbe000-313f-4698-87b1-651a9e75f114",
