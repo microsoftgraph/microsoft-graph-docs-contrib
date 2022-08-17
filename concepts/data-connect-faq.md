@@ -12,7 +12,7 @@ Microsoft Graph Data Connect lets developers create applications that customers 
 
 ## Is Microsoft Graph Data Connect right for me?
 
-Microsoft Graph Data Connect and Microsoft Graph APIs provide access to the same underlying data but in very different ways. Microsoft Graph Data Connect is designed to extract large amounts of datasets in bulk scalable to your entire organization while Microsoft Graph APIs are suitable for accessing small amount of data from select users and groups in your organization.
+Microsoft Graph Data Connect and Microsoft Graph APIs provide access to the same underlying data but in very different ways. Microsoft Graph Data Connect is designed to extract large amounts of datasets in bulk, scalable to your entire organization; while Microsoft Graph APIs are suitable for accessing small amount of data from selected users and groups in your organization.
 
 For example, you might want to use Microsoft Graph Data Connect to do an initial extraction of the last year of email data, and then use Microsoft Graph APIs to analyze emails in real time moving forward. Microsoft Graph Data Connect and Microsoft Graph APIs are different tools for different jobs. It's important to think about which access method best fits your scenario. For more information, see [When should I use Microsoft Graph API or Microsoft Graph Data Connect](/graph/overview#when-should-i-use-microsoft-graph-api-or-data-connect).
 
@@ -20,7 +20,7 @@ For example, you might want to use Microsoft Graph Data Connect to do an initial
 
 Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. If the initial overhead is too long for your use case, please reach out to the Microsoft Graph Data Connect team at dataconnect@microsoft.com
 
-Please Note: Your tenant admin will need to approve and consent within 24 hours of kicking off the pipeline. If the consent is not given within 24 hours, it will expire and you will need to restart the consent process by kicking off your pipelines again. The overhead time mentioned aboved does not include time taken in consent approval.
+Please note: Your tenant admin will need to approve and consent within 24 hours of kicking off the pipeline. If the consent is not given within 24 hours, it will expire and you will need to restart the consent process by kicking off your pipelines again. The overhead time mentioned aboved does not include time taken in consent approval.
 
 ## In what regions is Microsoft Graph Data Connect available?
 
