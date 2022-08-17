@@ -26,8 +26,9 @@ You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update
 |language|[localeInfo](localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
 |timeFormat|string|The time format for the user's mailbox.|
 |timeZone|string|The default time zone for the user's mailbox.|
-|userPurpose|[userPurpose](userpurpose.md)|The purpose of the mailbox. Used to differentiate a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online. Read-only.|
+|userPurpose|[userPurpose](userpurpose.md)|The purpose of the mailbox. Differentiates a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online. Read-only.|
 |workingHours|[workingHours](workinghours.md)|The days of the week and hours in a specific time zone that the user works.|
+
 ## JSON representation
 
 Here is a JSON representation of the resource.
