@@ -9,9 +9,9 @@ ms.custom: template-how-to
 
 # Grant and revoke API delegated permissions using Microsoft Graph
 
-When you grant API permissions to a client app in Azure Active Directory (Azure AD), the permission grants are recorded as objects that can be accessed, updated, or deleted like any other. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview) and can be useful for automation scenarios, bulk management, or other custom operations in your organization. You can also use Microsoft Graph to revoke the permission grants for an app.
+When you grant API permissions to a client app in Azure Active Directory (Azure AD), the permission grants are recorded as objects that can be accessed, updated, or deleted like your data. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview) and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
-In this guide, you'll learn how to grant and revoke delegated permissions for an app. Delegated permissions, also called scopes or OAuth2 permissions, allow an app to call an API on behalf of a signed-in user.
+In this guide, you'll learn how to grant and revoke delegated permissions for an app using Microsoft Graph. **Delegated permissions**, also called *scopes* or *OAuth2 permissions*, allow an app to call an API on behalf of a signed-in user.
 
 > [!CAUTION]
 > Be careful! Permissions granted programmatically are not subject to review or confirmation. They take effect immediately.
@@ -20,13 +20,16 @@ In this guide, you'll learn how to grant and revoke delegated permissions for an
 
 To complete these instructions, you need the following resources and privileges:
 
-1. A working Azure AD tenant, and you must complete the following steps:
+1. A working Azure AD tenant.
+2. You'll run the requests in this article as a user. You must complete the following steps:
     1. Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
-    2. In the app you've signed in to, consent to the `Application.ReadWrite.All`, `DelegatedPermissionGrant.ReadWrite.All` delegated permissions.
+    2. In the app you've signed in to, consent to the `Application.ReadWrite.All`, `DelegatedPermissionGrant.ReadWrite.All` delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
     3. Get the object ID of the client service principal to which you'll grant delegated permissions on behalf of a user. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`.
 
+<!--
 > [!CAUTION]
 > The `DelegatedPermissionGrant.ReadWrite.All` permission allows an app or service to manage permission grants and elevate privileges for any app or user in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
+-->
 
 ## Step 1: Get the delegated permissions of the resource service principal
 
@@ -46,7 +49,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'M
 
 ### Response
 
-The following is an example of the response.
+The following object is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -95,7 +98,11 @@ Content-type: application/json
 
 ## Step 2: Grant a delegated permission to the client service principal on behalf of a user
 
-In this step, you'll grant your app, on behalf of a user, a delegated permission that's exposed by Microsoft Graph, thereby creating an **delegated permission grant**. From Step 1, the object ID of Microsoft Graph is `7ea9e944-71ce-443d-811c-71e8047b557a` and the delegated permissions `User.Read.All` and `Group.Read.All` are identified by IDs `a154be20-db9c-4678-8ab7-66f6cc099a59` and `5f8c59db-677d-491f-a6b8-5f174b11ec1d` respectively. The principal is a user identified by ID `3fbd929d-8c56-4462-851e-0eb9a7b3a2a5`.
+In this step, you'll grant your app, on behalf of a user, a delegated permission that's exposed by Microsoft Graph, thereby creating an **delegated permission grant**. 
+
++ From Step 1, the object ID of Microsoft Graph in the tenant is `7ea9e944-71ce-443d-811c-71e8047b557a`
++ The delegated permissions `User.Read.All` and `Group.Read.All` are identified by the globally unique IDs `a154be20-db9c-4678-8ab7-66f6cc099a59` and `5f8c59db-677d-491f-a6b8-5f174b11ec1d` respectively.
++ The principal is a user identified by ID `3fbd929d-8c56-4462-851e-0eb9a7b3a2a5`.
 
 <!-- {
   "blockType": "request",
@@ -114,10 +121,11 @@ Content-Type: application/json
 }
 ```
 
-Alternatively, you can choose to grant consent on behalf of all users in the tenant. The request body is similar to the previous request body except with the following changes:
+While the preceding request grants consent on behalf of a single user, you can choose to grant consent on behalf of all users in the tenant. The request body is similar to the previous request body except with the following changes:
 - The **consentType** is `AllPrincipals`, indicating that you're consenting on behalf of all users in the tenant.
 - The **principalId** property isn't supplied or can be `null`.
-An example request body is as follows:
+
+An example request body for granting consent on behalf all users is as follows:
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
@@ -154,9 +162,9 @@ Content-type: application/json
 }
 ```
 
-If you granted consent for all users in the tenant, the **consentType** in the response object would be `AllPrincipals` and the **principalId** would be `null`.
+If you granted consent for all users in the tenant, the **consentType** in the response object would be `AllPrincipals`, and the **principalId** would be `null`.
 
-To confirm the delegated permissions assigned to the service principal on behalf of user ID `3fbd929d-8c56-4462-851e-0eb9a7b3a2a5`, you run the following request.
+To confirm the delegated permissions assigned to the service principal on behalf of the user, you run the following request.
 
 ### Request
 
@@ -193,7 +201,7 @@ Content-type: application/json
 }
 ```
 
-## Step 3 : Revoke delegated permissions granted to the service principal on behalf of a user
+## Step 3 [Optional]: Revoke delegated permissions granted to a service principal on behalf of a user
 
 If a service principal has been granted multiple delegated permission grants on behalf of a user, you can choose to revoke either one or some grant or all grants.
 
