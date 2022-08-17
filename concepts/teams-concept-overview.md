@@ -68,7 +68,7 @@ and [Teams PowerShell cmdlets](/microsoftteams/teams-powershell-overview) are bu
 
 ## Deploy apps to teams
 
-[List the teams in your tenant](teams-list-all-teams.md), and [install apps](../api-reference/v1.0/resources/teamsappinstallation.md) to them. [Create tabs](../api-reference/v1.0/resources/teamstab.md)  in channels to give users easy access to apps.
+[List the teams in your tenant](teams-list-all-teams.md), and [install apps](../api-reference/v1.0/resources/teamsappinstallation) to them. [Create tabs](../api-reference/v1.0/resources/teamstab)  in channels to give users easy access to apps.
 
 ## Use Microsoft Graph in any kind of app
 
