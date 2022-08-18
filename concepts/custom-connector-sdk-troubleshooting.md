@@ -48,13 +48,9 @@ Use the following steps to make sure that the path of the executable is accessib
 
 2. Open the **Security** tab and under **Group or user names**, choose **Edit**.
 
-    ![Screenshot of the Edit button on the Security tab](images/connectors-sdk/troubleshoot1.png)
-
 3. Choose **Add**.
 
-   ![Screenshot of the Security tab with the Add button selected](images/connectors-sdk/troubleshoot2.png)
-
-4. Enter LOCAL SERVICE as the object name and choose **Check Names**.
+4. Enter 'LOCAL SERVICE' as the object name and choose **Check Names**.
 
     ![Screenshot of the Object name field with Local Service input](images/connectors-sdk/troubleshoot3.png)
 

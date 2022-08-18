@@ -33,7 +33,7 @@ The test utility has three options:
 
 To stop the utility from crawling the data source, close and restart the GraphConnectorAgentTest executable file. You can then choose a different test option, or retest an option after you update the connector code or the configuration files.
 
-![Screenshot of the test utitlity ouptut showing that the crawl is completed](images/connectors-sdk/testcomplete.png)
+![Screenshot of the test utility output showing test scenarios and that the crawl is completed](images/connectors-sdk/testcomplete.png)
 
 ## How does the GraphConnectorAgentTest executable file work?
 

@@ -21,17 +21,13 @@ To create and enable a search vertical at the organization level, sign in to the
 
      ![Screenshot of the "Name the vertical" section](images/connectors-sdk/build11.png)
 
-   * **Content source**: The connector created with the app (Parts Inventory).
+   * **Content source**: The custom connector created with the sample code (Parts Inventory).
 
      ![Screenshot of the "Content source" section](images/connectors-sdk/build12.png)
 
    * **Add a query**: Leave blank.
 
-     ![Screenshot of the "Add a query" section](images/connectors-sdk/build13.png)
-
    * **Filters**: Leave blank.
-
-     ![Screenshot of the "Filters" section](images/connectors-sdk/build14.png)
 
 ## Create a result type
 
@@ -44,21 +40,19 @@ To create a result type:
 
      ![Screenshot of the "Name the result type" section](images/connectors-sdk/build15.png)
 
-   * **Content source**: The connector created in the app.
+   * **Content source**: The custom connector created with the sample code.
 
      ![Screenshot of the "Select a content source" section](images/connectors-sdk/build16.png)
 
    * **Rules**: None
 
-     ![Screenshot of the "Set rules" section](images/connectors-sdk/build17.png)
-
    * Paste contents of [result-type.json](https://github.com/microsoftgraph/msgraph-connectors-sdk/blob/main/C%23%20sample/ResultType.json) into the layout designer textbox.
 
      ![Screenshot of the "Design layout" section](images/connectors-sdk/build18.png)
 
-## Search for results
+## Test the results in a search
 
-In this step, you'll search for parts in SharePoint.
+In this step, you'll verify that you've successfully added your data to Microsoft Graph by searching for parts in SharePoint. To verify your data:
 
 1. Go to the root SharePoint site for your tenant.
 2. Using the search box at the top of the page, search for **hinge**.
@@ -68,10 +62,6 @@ In this step, you'll search for parts in SharePoint.
 3. When the search completes with 0 results, select the **Appliance Parts** tab. Results from the connector are displayed.
 
    ![Example of search results for the word hinge with results showing on the Appliance Parts tab.](images/connectors-sdk/build20.png)
-
-## Summary
-
-You've successfully completed the custom Microsoft Graph connector tutorial. Now you've created a custom connector and used it to power Microsoft Search.
 
 ## See also
 
