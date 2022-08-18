@@ -1,7 +1,7 @@
 ---
 title: "Update teamworkTag"
 description: "Update the properties of a teamworkTag object."
-author: "sekeatin"
+author: "seankeating"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
 doc_type: apiPageType

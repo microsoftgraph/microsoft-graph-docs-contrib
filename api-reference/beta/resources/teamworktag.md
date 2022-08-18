@@ -1,7 +1,7 @@
 ---
 title: "teamworkTag resource type"
 description: "Represents a tag associated with a team."
-author: "sekeatin"
+author: "seankeating"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
 doc_type: resourcePageType
