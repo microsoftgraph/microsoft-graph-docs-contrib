@@ -33,9 +33,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageAutomaticRequestSettings",
-  "requestAccessForAllowedTargets": "Boolean",
-  "removeAccessWhenTargetLeavesAllowedTargets": "Boolean",
-  "gracePeriodBeforeAccessRemoval": "String (duration)"
+  "requestAccessForAllowedTargets": "Boolean"
 }
 ```
 

@@ -77,11 +77,7 @@ Content-Type: application/json
   "displayName": "All Users",
   "description": "All users can request for access to the directory.",
   "allowedTargetScope": "allDirectoryUsers",
-  "automaticRequestSettings": {
-      "requestAccessForAllowedTargets": true,
-      "removeAccessWhenTargetLeavesAllowedTargets": true,
-      "gracePeriodBeforeAccessRemoval": null
-  },
+  "automaticRequestSettings": null,
   "specificAllowedTargets": [],
   "expiration": {
       "type": "noExpiration"
