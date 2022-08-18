@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkTagMember",
-  "ID": "String (Identifier)",
+  "Id": "String (Identifier)",
   "displayName": "String",
   "tenantID": "String",
   "userID": "String"
