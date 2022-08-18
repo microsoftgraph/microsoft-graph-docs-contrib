@@ -27,9 +27,9 @@ Represents a user in a team to whom a tag is applied.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The member's display name.|
-|ID|String|ID of the member.|
-|tenantID|String|The ID of the tenant that the tag member is a part of.|
-|userID|String|The user ID of the member.|
+|id|String|ID of the member.|
+|tenantId|String|The ID of the tenant that the tag member is a part of.|
+|userId|String|The user ID of the member.|
 
 ## Relationships
 None.
@@ -38,7 +38,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "ID",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamworkTagMember",
   "baseType": "microsoft.graph.entity",
   "openType": false
@@ -47,10 +47,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkTagMember",
-  "Id": "String (Identifier)",
+  "id": "String (Identifier)",
   "displayName": "String",
-  "tenantID": "String",
-  "userID": "String"
+  "tenantId": "String",
+  "userId": "String"
 }
 ```
 
