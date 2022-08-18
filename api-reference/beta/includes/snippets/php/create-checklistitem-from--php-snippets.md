@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Final sign-off from the team');
 
 
 
-$requestResult = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasksById('todoTask-id')->checklistItems()->post($requestBody);
+$requestResult = $graphServiceClient->me()->tasks()->listsById('baseTaskList-id')->tasksById('baseTask-id')->checklistItems()->post($requestBody);
 
 
 ```
