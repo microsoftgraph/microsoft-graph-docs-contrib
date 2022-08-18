@@ -25,7 +25,7 @@ The header allows you to sign in, view the tenant you are using and access your 
 
 ### Consent to permissions
 
-The user or administrator must grant Graph Explorer the correct permissions by using a consent process to access data in Microsoft Graph. You can consent to permissions in Graph Explorer by choosing either the **Modify permissions** tab or the **Consent to permissions** option under the profile avatar when you’re signed in. The **Modify permissions** tab lists all the permissions that you need to run the query in the address bar.
+The user or administrator must grant Graph Explorer the correct permissions by using a consent process to access data in Microsoft Graph. You can consent to permissions in Graph Explorer by choosing either the **Modify permissions** tab or the **Consent to permissions** option under the profile avatar when you’re signed in. The **Modify permissions** tab lists all the permissions that might let you run the query in the address bar. When possible, choose the least privileged permission.
 
 To consent to permissions:
 
