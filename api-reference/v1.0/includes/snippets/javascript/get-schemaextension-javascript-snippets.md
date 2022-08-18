@@ -10,7 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let schemaExtension = await client.api('/schemaExtensions/extcivhhslh_sbtest1')
+let user = await client.api('/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e')
+	.select('ext55gb1l09_msLearnCourses')
 	.get();
 
 ```
