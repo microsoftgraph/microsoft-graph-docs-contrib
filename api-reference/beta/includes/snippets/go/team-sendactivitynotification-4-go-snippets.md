@@ -9,31 +9,25 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
-source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
+source := graphmodels.TEXT_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
-value := "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+value := "Deployment Approvals Channel"
 topic.SetValue(&value) 
+webUrl := "https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000"
+topic.SetWebUrl(&webUrl) 
 requestBody.SetTopic(topic)
-activityType := "pendingFinanceApprovalRequests"
+activityType := "deploymentApprovalRequired"
 requestBody.SetActivityType(&activityType) 
 previewText := graphmodels.NewItemBody()
-content := "Internal spending team has a pending finance approval requests"
+content := "New deployment requires your approval"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
-recipient := graphmodels.NewTeamworkNotificationRecipient()
-"@odata.type" := "microsoft.graph.teamMembersNotificationRecipient"
-recipient.Set"@odata.type"(&"@odata.type") 
-additionalData := map[string]interface{}{
-	"teamId" : "e8bece96-d393-4b9b-b8da-69cedef1a7e7", 
-}
-recipient.SetAdditionalData(additionalData)
-requestBody.SetRecipient(recipient)
 
 
 keyValuePair := graphmodels.NewKeyValuePair()
-name := "pendingRequestCount"
+name := "deploymentId"
 keyValuePair.SetName(&name) 
-value := "5"
+value := "6788662"
 keyValuePair.SetValue(&value) 
 
 templateParameters := []graphmodels.KeyValuePairable {
@@ -42,7 +36,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.TeamsById("team-id").SendActivityNotification().Post(requestBody)
+graphClient.UsersById("user-id").Teamwork().SendActivityNotification().Post(requestBody)
 
 
 ```

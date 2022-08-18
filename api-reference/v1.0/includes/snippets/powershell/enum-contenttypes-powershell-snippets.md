@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSiteListContentType -SiteId $siteId -ListId $listId -OutFile $outFileId
+Get-MgSiteContentType -SiteId $siteId -OutFile $outFileId
 
 ```
