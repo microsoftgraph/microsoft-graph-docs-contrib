@@ -50,6 +50,6 @@ In this step, you will enable the Microsoft Graph Data Connect service on your M
 
 1. Select the checkbox that says **turn Microsoft Graph Data Connect on or off for your entire organization** to enable Data Connect.
 
-    ![A screenshot showing the checkbox you have to tick in order to enable Data Connect for your entire organization.](../data-connect-m365-consent-approver-new.png)
+    ![A screenshot showing the checkbox you have to tick in order to enable Data Connect for your entire organization.](concepts/images/data-connect-m365-consent-approver-new.png)  
 
 1. Enter **Consent Request Approvers** (or the name of the group you created previously) in the **group of users to make approval decisions** and select **Save**.
