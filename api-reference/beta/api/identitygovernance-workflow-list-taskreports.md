@@ -1,19 +1,19 @@
 ---
-title: "List tasks"
-description: "Get the task resources from the tasks navigation property."
+title: "List taskReports"
+description: "Get a list of the taskReport objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List tasks
+# List taskReports
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the task resources from the tasks navigation property.
+Get a list of the [taskReport](../resources/identitygovernance-taskreport.md) objects and their properties.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks
+GET /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/taskReports
 ```
 
 ## Optional query parameters
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [task](../resources/identitygovernance-task.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [taskReport](../resources/identitygovernance-taskreport.md) objects in the response body.
 
 ## Examples
 
@@ -60,11 +60,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_task"
+  "name": "list_taskreport"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/taskReports
 ```
 
 ### Response
@@ -74,7 +74,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.identityGovernance.task)"
+  "@odata.type": "Collection(microsoft.graph.identityGovernance.taskReport)"
 }
 -->
 ``` http
@@ -84,20 +84,17 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.identityGovernance.task",
-      "id": "b39b46f2-4400-96b6-aa94-04a47fe063e8",
-      "arguments": [
-        {
-          "@odata.type": "microsoft.graph.keyValuePair"
-        }
-      ],
-      "category": "String",
-      "continueOnError": "Boolean",
-      "description": "String",
-      "displayName": "String",
-      "executionSequence": "Integer",
-      "isEnabled": "Boolean",
-      "taskDefinitionId": "String"
+      "@odata.type": "#microsoft.graph.identityGovernance.taskReport",
+      "id": "b48de895-9e13-28a3-663c-70068a6262a9",
+      "runId": "String",
+      "processingStatus": "String",
+      "successfulUsersCount": "Integer",
+      "failedUsersCount": "Integer",
+      "unprocessedUsersCount": "Integer",
+      "totalUsersCount": "Integer",
+      "startedDateTime": "String (timestamp)",
+      "completedDateTime": "String (timestamp)",
+      "lastUpdatedDateTime": "String (timestamp)"
     }
   ]
 }

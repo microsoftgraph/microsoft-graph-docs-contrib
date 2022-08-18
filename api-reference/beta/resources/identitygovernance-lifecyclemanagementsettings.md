@@ -21,11 +21,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List lifecycleManagementSettings](../api/identitygovernance-lifecycleworkflowscontainer-list-settings.md)|[microsoft.graph.identityGovernance.lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md) collection|Get a list of the [lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md) objects and their properties.|
-|[Create lifecycleManagementSettings](../api/identitygovernance-lifecycleworkflowscontainer-post-settings.md)|[microsoft.graph.identityGovernance.lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md)|Create a new [lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md) object.|
 |[Get lifecycleManagementSettings](../api/identitygovernance-lifecyclemanagementsettings-get.md)|[microsoft.graph.identityGovernance.lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md)|Read the properties and relationships of a [lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md) object.|
 |[Update lifecycleManagementSettings](../api/identitygovernance-lifecyclemanagementsettings-update.md)|[microsoft.graph.identityGovernance.lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md)|Update the properties of a [lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md) object.|
-|[Delete lifecycleManagementSettings](../api/identitygovernance-lifecycleworkflowscontainer-delete-settings.md)|None|Deletes a [lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md) object.|
 
 ## Properties
 

@@ -22,10 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List taskDefinitions](../api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md)|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) collection|Get a list of the [taskDefinition](../resources/identitygovernance-taskdefinition.md) objects and their properties.|
-|[Create taskDefinition](../api/identitygovernance-lifecycleworkflowscontainer-post-taskdefinitions.md)|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md)|Create a new [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.|
 |[Get taskDefinition](../api/identitygovernance-taskdefinition-get.md)|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md)|Read the properties and relationships of a [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.|
-|[Update taskDefinition](../api/identitygovernance-taskdefinition-update.md)|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md)|Update the properties of a [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.|
-|[Delete taskDefinition](../api/identitygovernance-lifecycleworkflowscontainer-delete-taskdefinitions.md)|None|Deletes a [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.|
 
 ## Properties
 

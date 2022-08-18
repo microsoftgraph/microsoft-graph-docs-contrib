@@ -26,12 +26,6 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |[Get customTaskExtension](../api/identitygovernance-customtaskextension-get.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md)|Read the properties and relationships of a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
 |[Update customTaskExtension](../api/identitygovernance-customtaskextension-update.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md)|Update the properties of a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
 |[Delete customTaskExtension](../api/identitygovernance-lifecycleworkflowscontainer-delete-customtaskextensions.md)|None|Deletes a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
-|[List user](../api/invitation-list-inviteduser.md)|[microsoft.graph.user](../resources/user.md) collection|Get the user resources from the createdBy navigation property.|
-|[Add user](../api/identitygovernance-customtaskextension-post-createdby.md)|[microsoft.graph.user](../resources/user.md)|Add createdBy by posting to the createdBy collection.|
-|[Remove user](../api/identitygovernance-customtaskextension-delete-createdby.md)|None|Remove a [user](../resources/user.md) object.|
-|[List user](../api/invitation-list-inviteduser.md)|[microsoft.graph.user](../resources/user.md) collection|Get the user resources from the lastModifiedBy navigation property.|
-|[Add user](../api/identitygovernance-customtaskextension-post-lastmodifiedby.md)|[microsoft.graph.user](../resources/user.md)|Add lastModifiedBy by posting to the lastModifiedBy collection.|
-|[Remove user](../api/identitygovernance-customtaskextension-delete-lastmodifiedby.md)|None|Remove a [user](../resources/user.md) object.|
 
 ## Properties
 

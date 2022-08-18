@@ -1,19 +1,19 @@
 ---
-title: "List tasks"
-description: "Get the task resources from the tasks navigation property."
+title: "List taskProcessingResults"
+description: "Get the taskProcessingResult resources from the taskProcessingResults navigation property."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List tasks
+# List taskProcessingResults
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the task resources from the tasks navigation property.
+Get the taskProcessingResult resources from the taskProcessingResults navigation property.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks
+GET /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/taskReports/{taskReportId}/taskProcessingResults
 ```
 
 ## Optional query parameters
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [task](../resources/identitygovernance-task.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) objects in the response body.
 
 ## Examples
 
@@ -60,11 +60,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_task"
+  "name": "list_taskprocessingresult"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/taskReports/{taskReportId}/taskProcessingResults
 ```
 
 ### Response
@@ -74,7 +74,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.identityGovernance.task)"
+  "@odata.type": "Collection(microsoft.graph.identityGovernance.taskProcessingResult)"
 }
 -->
 ``` http
@@ -84,20 +84,13 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.identityGovernance.task",
-      "id": "b39b46f2-4400-96b6-aa94-04a47fe063e8",
-      "arguments": [
-        {
-          "@odata.type": "microsoft.graph.keyValuePair"
-        }
-      ],
-      "category": "String",
-      "continueOnError": "Boolean",
-      "description": "String",
-      "displayName": "String",
-      "executionSequence": "Integer",
-      "isEnabled": "Boolean",
-      "taskDefinitionId": "String"
+      "@odata.type": "#microsoft.graph.identityGovernance.taskProcessingResult",
+      "id": "9d903f8d-4f30-482f-9927-15f6dc48891d",
+      "completedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "failureReason": "String",
+      "processingStatus": "String",
+      "startedDateTime": "String (timestamp)"
     }
   ]
 }

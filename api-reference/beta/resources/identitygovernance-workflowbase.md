@@ -23,18 +23,10 @@ A resource type noting workflowBase created using Lifecycle Workflows. Workflows
 |[Get workflowBase](../api/identitygovernance-workflowbase-get.md)|[microsoft.graph.identityGovernance.workflowBase](../resources/identitygovernance-workflowbase.md)|Read the properties and relationships of a [workflowBase](../resources/identitygovernance-workflowbase.md) object.|
 |[Update workflowBase](../api/identitygovernance-workflowbase-update.md)|[microsoft.graph.identityGovernance.workflowBase](../resources/identitygovernance-workflowbase.md)|Update the properties of a [workflowBase](../resources/identitygovernance-workflowbase.md) object.|
 |[Delete workflowBase](../api/identitygovernance-workflowbase-delete.md)|None|Deletes a [workflowBase](../resources/identitygovernance-workflowbase.md) object.|
-|[List user](../api/invitation-list-inviteduser.md)|[microsoft.graph.user](../resources/user.md) collection|Get the user resources from the createdBy navigation property.|
-|[Add user](../api/identitygovernance-workflowbase-post-createdby.md)|[microsoft.graph.user](../resources/user.md)|Add createdBy by posting to the createdBy collection.|
-|[Remove user](../api/identitygovernance-workflowbase-delete-createdby.md)|None|Remove a [user](../resources/user.md) object.|
-|[List user](../api/invitation-list-inviteduser.md)|[microsoft.graph.user](../resources/user.md) collection|Get the user resources from the lastModifiedBy navigation property.|
-|[Add user](../api/identitygovernance-workflowbase-post-lastmodifiedby.md)|[microsoft.graph.user](../resources/user.md)|Add lastModifiedBy by posting to the lastModifiedBy collection.|
-|[Remove user](../api/identitygovernance-workflowbase-delete-lastmodifiedby.md)|None|Remove a [user](../resources/user.md) object.|
 |[List runs](../api/identitygovernance-workflow-list-runs.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Get the run resources from the runs navigation property.|
-|[Create run](../api/identitygovernance-workflowbase-post-runs.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md)|Create a new run object.|
 |[List tasks](../api/identitygovernance-taskprocessingresult-list-task.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get the task resources from the tasks navigation property.|
 |[Create task](../api/identitygovernance-workflowbase-post-tasks.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|Create a new task object.|
 |[List userProcessingResults](../api/identitygovernance-run-list-userprocessingresults.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Get the userProcessingResult resources from the userProcessingResults navigation property.|
-|[Create userProcessingResult](../api/identitygovernance-workflowbase-post-userprocessingresults.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md)|Create a new userProcessingResult object.|
 
 ## Properties
 

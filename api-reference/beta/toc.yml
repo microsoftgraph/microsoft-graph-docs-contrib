@@ -13591,7 +13591,7 @@ items:
               href: api/deleteditemcontainer-update.md
             - name: Delete
               href: api/identitygovernance-lifecycleworkflowscontainer-delete-deleteditems.md
-          - name: CustomTaskExtension
+          - name: Custom Task Extension
             href: resources/identitygovernance-customtaskextension.md
             items:
             - name: List
@@ -13630,7 +13630,7 @@ items:
               href: api/identitygovernance-task-update.md
             - name: Delete
               href: api/identitygovernance-taskprocessingresult-delete-task.md
-          - name: TaskDefinition
+          - name: Task Definition
             href: resources/identitygovernance-taskdefinition.md
             items:
             - name: List
@@ -13643,7 +13643,7 @@ items:
               href: api/identitygovernance-taskdefinition-update.md
             - name: Delete
               href: api/identitygovernance-lifecycleworkflowscontainer-delete-taskdefinitions.md
-          - name: TaskProcessingResult
+          - name: Task Processing Result
             href: resources/identitygovernance-taskprocessingresult.md
             items:
             - name: List
@@ -13656,7 +13656,7 @@ items:
               href: api/identitygovernance-taskprocessingresult-update.md
             - name: Delete
               href: api/identitygovernance-userprocessingresult-delete-taskprocessingresults.md
-          - name: UserProcessingResult
+          - name: User Processing Result
             href: resources/identitygovernance-userprocessingresult.md
             items:
             - name: List
@@ -13669,7 +13669,7 @@ items:
               href: api/identitygovernance-userprocessingresult-update.md
             - name: Delete
               href: api/identitygovernance-run-delete-userprocessingresults.md
-          - name: Lifecyclemanagementsettings
+          - name: Lifecycle management settings
             href: resources/identitygovernance-lifecyclemanagementsettings.md
             items:
             - name: List

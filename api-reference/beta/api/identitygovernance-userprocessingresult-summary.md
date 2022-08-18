@@ -58,7 +58,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [userSummary](../resources/identitygovernance-usersummary.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [usersProcessingSummary](../resources/identitygovernance-usersprocessingsummary.md) in the response body.
 
 ## Examples
 
@@ -71,7 +71,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/workflowBase/userProcessingResults/summary(startDateTime=String (timestamp),endDateTime=String (timestamp))
+GET https://graph.microsoft.com/beta/workflowBase/userProcessingResults/summary(startDateTime=String(timestamp),endDateTime=String(timestamp))
 ```
 
 ### Response
@@ -81,7 +81,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.identityGovernance.userSummary"
+  "@odata.type": "microsoft.graph.identityGovernance.usersProcessingSummary"
 }
 -->
 ``` http
@@ -90,7 +90,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "microsoft.graph.identityGovernance.userSummary"
+    "@odata.type": "microsoft.graph.identityGovernance.usersProcessingSummary"
   }
 }
 ```

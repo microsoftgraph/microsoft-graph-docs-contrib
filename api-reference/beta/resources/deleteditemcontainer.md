@@ -21,11 +21,6 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deletedItemContainers](../api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md)|[deletedItemContainer](../resources/deleteditemcontainer.md) collection|Get a list of the [deletedItemContainer](../resources/deleteditemcontainer.md) objects and their properties.|
-|[Create deletedItemContainer](../api/identitygovernance-lifecycleworkflowscontainer-post-deleteditems.md)|[deletedItemContainer](../resources/deleteditemcontainer.md)|Create a new [deletedItemContainer](../resources/deleteditemcontainer.md) object.|
-|[Get deletedItemContainer](../api/deleteditemcontainer-get.md)|[deletedItemContainer](../resources/deleteditemcontainer.md)|Read the properties and relationships of a [deletedItemContainer](../resources/deleteditemcontainer.md) object.|
-|[Update deletedItemContainer](../api/deleteditemcontainer-update.md)|[deletedItemContainer](../resources/deleteditemcontainer.md)|Update the properties of a [deletedItemContainer](../resources/deleteditemcontainer.md) object.|
-|[Delete deletedItemContainer](../api/identitygovernance-lifecycleworkflowscontainer-delete-deleteditems.md)|None|Deletes a [deletedItemContainer](../resources/deleteditemcontainer.md) object.|
 |[List workflows](../api/deleteditemcontainer-list-workflows.md)|[workflow](../resources/identitygovernance-workflow.md) collection|Get the workflow resources from the workflows navigation property.|
 |[Create workflow](../api/deleteditemcontainer-post-workflows.md)|[workflow](../resources/identitygovernance-workflow.md)|Create a new workflow object.|
 

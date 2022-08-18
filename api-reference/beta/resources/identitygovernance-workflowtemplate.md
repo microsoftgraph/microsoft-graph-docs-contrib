@@ -22,12 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List workflowTemplates](../api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md)|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md) collection|Get a list of the [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) objects and their properties.|
-|[Create workflowTemplate](../api/identitygovernance-lifecycleworkflowscontainer-post-workflowtemplates.md)|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md)|Create a new [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) object.|
 |[Get workflowTemplate](../api/identitygovernance-workflowtemplate-get.md)|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md)|Read the properties and relationships of a [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) object.|
-|[Update workflowTemplate](../api/identitygovernance-workflowtemplate-update.md)|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md)|Update the properties of a [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) object.|
-|[Delete workflowTemplate](../api/identitygovernance-lifecycleworkflowscontainer-delete-workflowtemplates.md)|None|Deletes a [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) object.|
-|[List tasks](../api/identitygovernance-taskprocessingresult-list-task.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get the task resources from the tasks navigation property.|
-|[Create task](../api/identitygovernance-workflowtemplate-post-tasks.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|Create a new task object.|
 
 ## Properties
 
