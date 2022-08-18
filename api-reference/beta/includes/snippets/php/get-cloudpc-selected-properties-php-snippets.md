@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new CloudPCRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new CloudPCRequestBuilderGetQueryParameters();
-$queryParameters->select = ["id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult"];
+$queryParameters->select = ["id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult"];
 
 $requestConfiguration->queryParameters = $queryParameters;
 

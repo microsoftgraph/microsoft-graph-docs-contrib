@@ -107,7 +107,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreatSubmission/$entity",
-  "@odata.type": "#microsoft.graph.emailUrlThreatSubmission",
+  "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "spam",
   "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",

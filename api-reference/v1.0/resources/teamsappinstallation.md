@@ -48,6 +48,8 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the perso
 
 ## JSON representation
 
+The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppInstallation",
