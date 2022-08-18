@@ -58,7 +58,8 @@ If successful, this method returns a `200 OK` response code and a [baseTaskList]
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_basetasklist"
+  "name": "get_basetasklist",
+  "sampleKeys": ["AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAADG6BbDxY"]
 }
 -->
 ``` http

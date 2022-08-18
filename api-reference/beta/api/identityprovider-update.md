@@ -88,7 +88,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_identityprovider"
+  "name": "update_identityprovider",
+  "sampleKeys": ["Amazon-OAuth"]
 }
 -->
 
@@ -115,6 +116,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-identityprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -144,7 +149,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_openidconnectprovider"
+  "name": "update_openidconnectprovider",
+  "sampleKeys": ["OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a"]
 }
 -->
 
@@ -171,6 +177,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-openidconnectprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-openidconnectprovider-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

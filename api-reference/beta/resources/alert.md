@@ -1,6 +1,6 @@
 ---
 title: "alert resource type"
-description: "Represents potential security issues within a customer's tenant that Microsoft or partner security solutions have identified. Use alerts to unify and streamline security issue management across all integrated solutions. To learn more, see the sample queries in Graph Explorer."
+description: "Represents potential security issues within a customer's tenant that Microsoft or partner security solutions have identified."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
@@ -13,9 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents potential security issues within a customer's tenant that Microsoft or partner security solutions have identified. Use alerts to unify and streamline security issue management across all integrated solutions. To learn more, see the sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+This resource corresponds to the first generation of alerts in the Microsoft Graph security API, representing potential security issues within a customer's tenant that Microsoft or a partner security solution has identified. 
 
-Alerts can be retrieved from different security providers listed in the [Microsoft Graph Security Overview](security-api-overview.md).
+This type of alerts federates calling of supported Azure and Microsoft 365 Defender security providers listed in [Use the Microsoft Graph security API](security-api-overview.md#legacy-alerts). It aggregates common alert data among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. 
+
+To learn more, see the sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+
+[!INCLUDE [alerts-callout-two-types](../includes/alerts-callout-two-types.md)]
 
 ## Methods
 

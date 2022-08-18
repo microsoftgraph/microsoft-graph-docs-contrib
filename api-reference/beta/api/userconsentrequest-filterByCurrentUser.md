@@ -42,7 +42,7 @@ The following table shows the parameters that can be used with this function.
 |on|consentRequestFilterByCurrentUserOptions|Filter to query userConsentRequest objects for an appConsentRequest object for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
 
 ## Optional query parameters
-This function supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This function supports the `$filter` and `$select` OData query parameters to help customize the response.For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
