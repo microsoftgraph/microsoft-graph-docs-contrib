@@ -48,6 +48,7 @@ POST /users/{user-id}/drive/root:/{item-path}/assignSensitivityLabel
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+In the request body, provide Id for sensitivity label which is supposed to be assigned to given file. Details about required and optional input parameters can be referred from here:
 | Name                | Value                                                                                                                                             |Description                                                                                                          |
 |:--------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|
 | sensitivityLabelId  | string                                                                                                                                            | Required. Id of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
