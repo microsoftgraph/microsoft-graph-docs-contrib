@@ -70,7 +70,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/workflowBase/runs/summary(startDateTime=String (timestamp),endDateTime=String (timestamp))
+GET https://graph.microsoft.com/beta/workflowBase/runs/summary(startDateTime=String{timestamp},endDateTime=String{timestamp})
 ```
 
 ### Response
