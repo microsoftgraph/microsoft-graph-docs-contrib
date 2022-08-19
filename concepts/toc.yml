@@ -569,7 +569,7 @@ items:
             href: auth-v2-service.md
           - name: Permissions
             items:
-            - name: Permissions overview
+            - name: Overview
               href: permissions-overview.md
             - name: Permissions reference
               displayName: Microsoft Graph permissions list

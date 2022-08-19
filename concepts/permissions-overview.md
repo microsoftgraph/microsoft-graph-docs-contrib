@@ -8,34 +8,48 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 # Overview of Microsoft Graph permissions
 
-For the Microsoft identity platform to authorize your app to access data through Microsoft Graph, the app must be granted the permissions it needs.
+For the Microsoft identity platform to authorize your app to access data through Microsoft Graph, the app must be granted the permissions it needs. Microsoft Graph exposes granular permissions that help you control the access that apps have to Microsoft Graph resources, like users, groups, and mail.
 
-This topic introduces Microsoft Graph permissions and provides guidance for using the permissions in your app. To see the full list of permissions that Microsoft Graph exposes, see the [Microsoft Graph permissions reference](permissions-reference.md).
+This topic introduces Microsoft Graph permissions and provides guidance for using the permissions. To see the full list of permissions that Microsoft Graph exposes, see the [Microsoft Graph permissions reference](permissions-reference.md).
 
-To learn more about how permissions work, and watch the following video.
+To learn more about how permissions work, watch the following video.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM]
 
 
-## Microsoft Graph permission types
 
-Microsoft Graph exposes two types of permissions to support its [delegated and app-only access scenarios](/graph/auth/auth-concepts#access-scenarios). These are **delegated permissions** and **application permissions**.
+
+Microsoft Graph exposes granular permissions that control the access that apps have to Microsoft Graph resources, like users, groups, and mail. As a developer, you decide which Microsoft Graph permissions to request for your app based on the access scenario and the operations you want to perform.
+
+Microsoft Graph exposes two types of permissions for the supported [access scenarios](#access-scenarios): *delegated permissions* and *application permissions*. Delegated permissions, also called *scopes*, allow the application to act on behalf of the signed-in user. Application permissions, also called *app roles*, allow the app to access data on its own, without a signed-in user.
+
+When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, your app is given access to the resources and APIs that it has requested. For apps that access resources and APIs without a signed-in user, the application permissions can be pre-consented to by an administrator when the app is installed.
+
+
+
+
+## Permission types
+
+An app can call Microsoft Graph either on behalf of a signed-in user or under its own identity, without a signed in user. To support these [access scenarios](/graph/auth/auth-concepts#access-scenarios), Microsoft Graph exposes *delegated permissions* and *application permissions*.
+
 
 ### Delegated permissions
 
-**Delegated permissions**, also called **scopes**, are used in the delegated access scenario. They're permissions that allow the application to act on behalf of a signed-in user. The application will never be able to access anything the signed-in user couldn't access.
+*Delegated permissions*, also called *scopes*, are used in the delegated access scenario. They're permissions that allow the application to act on behalf of a signed-in user. The application will never be able to access anything the signed-in user couldn't access.
 
 For example, an application has been granted the *Files.Read.All* delegated permission on behalf of Tom, the user. The application will only be able to read all files in the organization that Tom can already access.
 
-In a delegated access scenario, an app may allow users to sign in with their Microsoft accounts, work or school accounts, or allow both account types. All delegated permissions are valid for work or school accounts, but not all are valid for Microsoft accounts. In the [Microsoft Graph permissions reference](permissions-reference.md), the *Microsoft Account supported* table columns indicate delegated permissions that are valid for Microsoft accounts.
+In a delegated access scenario, an app may allow users to sign in with their Microsoft accounts, work or school accounts, or allow both account types. All delegated permissions are valid for work or school accounts, but not all are valid for Microsoft accounts. Use the [Microsoft Graph permissions reference](permissions-reference.md) to identify delegated permissions that are valid for Microsoft accounts.
 
-When a user signs in to an app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If consent is granted, the app is given access to the resources and APIs that it has requested.
+When a user signs in to an app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, the app is given access to the resources and APIs that it has requested.
 
 ### Application permissions
 
-**Application permissions**, also called **app roles**, are used in the direct access scenario, without a signed-in user present. The application will be able to access any data that the permission is associated with. For example, an application granted the *Files.Read.All* application permission will be able to read any file in the organization.
+*Application permissions*, also called *app roles*, are used in the direct access scenario, without a signed-in user present. The application will be able to access any data that the permission is associated with. For example, an application granted the *Files.Read.All* application permission will be able to read any file in the organization.
 
 For apps that access resources and APIs without a signed-in user, the application permissions can be pre-consented to by an administrator when the app is installed. Only an administrator can consent to application permissions.
+
+To perform some operations, Microsoft Graph may enforce additional controls over the privileges that the application has. This control may be enforced through a role-based access control system such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview). Therefore, the app may require role assignments in addition to Microsoft Graph permissions before it can perform the specified operations.
 
 #### Comparison of delegated and application permissions
 
@@ -47,15 +61,15 @@ For apps that access resources and APIs without a signed-in user, the applicatio
 | Other names | <li> Scopes <li>OAuth2 permissions | <li> App roles <li>App-only permissions <li>Direct access permissions  |
 | Result of consent | [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant) | [appRoleAssignment](/graph/api/resources/approleassignment) |
 
-:::image type="content" source="/graph/images/auth-v2/permission-types.png" alt-text="Microsoft Graph exposes delegated and application permissions but authorizes requests based on the app's effective permissions." border="true":::
+<!--:::image type="content" source="/graph/images/auth-v2/permission-types.png" alt-text="Microsoft Graph exposes delegated and application permissions but authorizes requests based on the app's effective permissions." border="true":::-->
 
-## Microsoft Graph permissions naming pattern
+## Permissions naming pattern
 
 Microsoft Graph permissions are named in the following pattern: *{resource}*.*{operation}*.*{constraint}* where:
 
 | Value          | Description                                                                                                                                                                                                                  | Examples                                                           |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| `{resource}`   | Refers to a Microsoft Graph resource object to which the permission allows access. For example, the `user` resource.                                                                                                         | `user`, `application`, or `group`                                 |
+| `{resource}`   | Refers to a Microsoft Graph resource to which the permission allows access. For example, the `user` resource.                                                                                                         | `user`, `application`, or `group`                                 |
 | `{operation}`  | Refers to the Microsoft Graph API operations that are allowed on the data that's exposed by the resource. For example, `Read` for read operations only,  or `ReadWrite` for create, update, and delete operations.          | `Read`, `ReadBasic`, `ReadWrite`, `Create`, `Manage`, or `Migrate` |
 | `{constraint}` | Determines the potential extent of access an app will have within the directory. This value may not be explicitly declared. When undeclared, the default constraint is limited to data that's owned by the signed-in user. | `All`, `AppFolder`, `OwnedBy`, `Selected`, `Shared`, `Hidden`      |
 
@@ -66,8 +80,6 @@ Examples:
 + *Member.Read.Hidden* - Allows the app to read hidden memberships
 
 For the full list of permissions exposed by Microsoft Graph, see the [Microsoft Graph permissions reference](permissions-reference.md).
-
-
 
 ## Limited information returned for inaccessible member objects
 
@@ -123,7 +135,7 @@ The following is an example of the response:
 
 Microsoft Graph exposes granular permissions that allow an app to request only the permissions it requires to function. This allows you to apply the **principle of least privilege** when assigning and granting permissions to an app.
 
-For example, to read only the profile information of the signed-in user, an app requires only the `User.Read` permission, which is the least privileged permission to access user information. Granting the `User.ReadWrite` permission to the app makes it over-privileged because the app is now granted permissions for actions it doesn't need to perform.
+For example, consider an app that needs to only read the profile information of the signed-in user. The app requires only the `User.Read` permission, which is the least privileged permission to access user information. Granting the app the `User.ReadWrite` permission makes it over-privileged because the app is now granted permissions for actions it doesn't need to perform.
 
 Granting an application more privileges than it needs is a poor security practice that exposes an app to unauthorized and unintended access to data or operations. Also, requiring more permissions than necessary may cause users to refrain from consenting to an app, affecting an app's adoption and usage.
 
@@ -133,10 +145,11 @@ Apply the principle of least privilege when assigning and granting Microsoft Gra
 
 [!INCLUDE [microsoft-graph-permissions-limits](includes/msgraph-permissions-limits.md)]
 
-
 ## Permissions availability status
 
 Microsoft Graph permissions in the [Azure portal](https://portal.azure.com/) are generally available for all apps to use. Permissions that are deprecated are no longer visible in the Azure portal, cannot be granted to apps, and no longer grant access that they may previously allowed.
+
+You can also read Microsoft Graph permissions programmatically through the [Get servicePrincipal](/graph/api/serviceprincipal-list.md) API.
 
 ## See also
 

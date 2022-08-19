@@ -17,7 +17,7 @@ items:
       href: /graph/auth-v2-service?context=graph/api/beta
     - name: Permissions
       items:
-      - name: Permissions overview
+      - name: Overview
         href: /graph/permissions-overview?context=graph/api/beta
       - name: Permissions reference
         displayName: Microsoft Graph permissions list
