@@ -48,11 +48,11 @@ POST /users/{user-id}/drive/root:/{item-path}/assignSensitivityLabel
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-| Name                | Value                                                                 |Description                                                                                                          |
-|:--------------------|:----------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|
-| sensitivityLabelId  | string                                                                | Required. Id of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
-| assignmentMethod    | [sensitivityLabelAssignmentMethod ][sensitivityLabelAssignmentMethod] | Optional. The assignment method of the label on the document. Whether the assignment of the label was done automatically, standard or as a privileged operation (The equivalent to an administrator operation).                                                                                                                                                                                                         |
-| justificationText   | string                                                                | Optional. Justification text for audit purposes. Required when downgrading/removing label.                          |
+| Name                | Value                                                                                                                                             |Description                                                                                                          |
+|:--------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|
+| sensitivityLabelId  | string                                                                                                                                            | Required. Id of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
+| assignmentMethod    | [sensitivityLabelAssignmentMethod ](/graph/api/resources/sensitivitylabelassignment?view=graph-rest-beta#sensitivitylabelassignmentmethod-values) | Optional. The assignment method of the label on the document. Whether the assignment of the label was done automatically, standard or as a privileged operation (The equivalent to an administrator operation).                                                                                                                                                                                                           |
+| justificationText   | string                                                                                                                                            | Optional. Justification text for audit purposes. Required when downgrading/removing label.                          |
 
 ## Response
 
@@ -104,4 +104,3 @@ You can use this information to [determine when the assign sensitivity label ope
 The response from the API will only indicate that the assign sensitivity label operation was accepted or rejected; for example, due to file type not being supported or file is double encrypted.
 
 [item-resource]: ../resources/driveitem.md
-[sensitivityLabelAssignmentMethod]: graph/api/resources/sensitivitylabelassignment?view=graph-rest-beta#sensitivitylabelassignmentmethod-values
