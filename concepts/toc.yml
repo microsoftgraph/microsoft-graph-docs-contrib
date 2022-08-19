@@ -513,11 +513,11 @@ items:
           - name: Online meeting artifacts and permissions
             href: cloud-communications-online-meeting-artifacts.md
         - name: Change notifications
-            items:
-            - name: Subscribe to change notifications
-              href: teams-change-notification-in-microsoft-teams-overview.md
-            - name: Subscribe to change notifications for online meetings
-              href: changenotifications-for-onlinemeeting.md    
+          items:
+          - name: Subscribe to change notifications
+            href: teams-change-notification-in-microsoft-teams-overview.md
+          - name: Subscribe to change notifications for online meetings
+            href: changenotifications-for-onlinemeeting.md    
         - name: Licensing and payment models
           href: teams-licenses.md       
         - name: Protected APIs
