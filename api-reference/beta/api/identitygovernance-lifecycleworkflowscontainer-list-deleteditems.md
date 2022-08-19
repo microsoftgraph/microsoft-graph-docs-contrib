@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [deletedItemContainer](../resources/deleteditemcontainer.md) objects and their properties.
+Get a list of the deleted [deletedItemContainer](../resources/deleteditemcontainer.md) objects and their properties.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.deletedItemContainer not found
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/
 ```
 
 ## Optional query parameters
@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.deletedItemContainer not found
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows
 ```
 
 ### Response

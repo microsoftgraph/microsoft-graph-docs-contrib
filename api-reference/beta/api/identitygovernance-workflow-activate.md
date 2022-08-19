@@ -1,7 +1,7 @@
 ---
 title: "workflow: activate"
-description: "AlexFilipin"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "workflow activate allows a workflow to be run on demand"
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+activate a[workflow](../resources/identitygovernance-workflow.md) object.
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|LifecycleWorkflows.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|LifecycleWorkflows.ReadWrite.All|
 
 ## HTTP request
 
@@ -33,25 +33,24 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/activate
-POST /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/activate
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|subjects|[microsoft.graph.user](../resources/user.md) collection|**TODO: Add Description**|
-
-
+|subjects|[microsoft.graph.user](../resources/user.md) collection|The subjects for who the workflow is activated for.|
 
 ## Response
 
@@ -60,6 +59,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -225,8 +225,8 @@ Content-length: 4431
 }
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -237,4 +237,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-

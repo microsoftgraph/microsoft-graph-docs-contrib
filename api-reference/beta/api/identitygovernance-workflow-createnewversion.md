@@ -1,6 +1,6 @@
 ---
 title: "workflow: createNewVersion"
-description: "**TODO: Add Description**"
+description: "the create new version of a workflow call"
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -8,20 +8,22 @@ doc_type: apiPageType
 ---
 
 # workflow: createNewVersion
+
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Create a new version of the [workflow](../resources/identitygovernance-workflow.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|LifecycleWorkflows.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|LifecycleWorkflows.ReadWrite.All|
 
 ## HTTP request
 
@@ -31,25 +33,25 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/createNewVersion
-POST /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/createNewVersion
+
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|workflow|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|**TODO: Add Description**|
-
-
+|workflow|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|The workflow having a new version of it created.|
 
 ## Response
 
@@ -58,6 +60,7 @@ If successful, this action returns a `200 OK` response code and a [workflow](../
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -90,8 +93,8 @@ Content-length: 631
 }
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -124,4 +127,3 @@ Content-Type: application/json
   }
 }
 ```
-
