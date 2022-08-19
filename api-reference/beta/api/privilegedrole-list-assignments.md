@@ -58,7 +58,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_assignments"
+  "name": "get_assignments_forrole"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoles/{id}/assignments

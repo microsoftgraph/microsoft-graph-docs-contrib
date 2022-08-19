@@ -59,7 +59,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_authenticationcontextclassreference"
+  "name": "get_conditionalAccess_authenticationcontextclassreference"
 }-->
 
 ```msgraph-interactive

@@ -62,7 +62,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "ediscoverynoncustialdatasource.applyhold"
+  "name": "ediscoverynoncustialdatasource.applyhold_caseID"
 }
 -->
 ``` http
@@ -124,7 +124,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "ediscoverynoncustialdatasource.applyhold"
+  "name": "ediscoverynoncustialdatasource_applyhold_single_noncustodial_datasource"
 }
 -->
 ``` http

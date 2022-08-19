@@ -312,7 +312,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbranding_frlocale_bannerLogo"
+  "name": "get_organizationalbranding_for_default_locale_bannerLogo_notset"
 }-->
 
 ```msgraph-interactive

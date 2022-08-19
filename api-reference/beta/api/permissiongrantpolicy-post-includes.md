@@ -61,7 +61,7 @@ In this example, *all* delegated permissions for client apps that are from verif
 <!-- {
   "blockType": "request",
   "truncated": true,
-  "name": "permissiongrantpolicy_create_includes"
+  "name": "permissiongrantpolicy_create_includes_for_verified_publishers"
 }-->
 
 ```http
@@ -140,7 +140,7 @@ In this example, *all* delegated permissions for all client apps that are Micros
 <!-- {
   "blockType": "request",
   "truncated": true,
-  "name": "permissiongrantpolicy_create_includes"
+  "name": "permissiongrantpolicy_create_includes_for_M365_certified"
 }-->
 
 ```http

@@ -56,7 +56,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_usersource"
+  "name": "list_usersource_for_custodian"
 }
 -->
 ``` http

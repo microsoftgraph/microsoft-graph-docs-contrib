@@ -62,7 +62,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_teams"
+  "name": "get_teams_in_org"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams
@@ -141,7 +141,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_teams"
+  "name": "get_teams_filter_top"
 }-->
 
 ```msgraph-interactive
@@ -217,7 +217,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_teams"
+  "name": "get_teams_filter_select"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams?$filter=displayName eq 'A Contoso Team'&$select=id,description
