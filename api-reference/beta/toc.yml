@@ -13641,6 +13641,20 @@ items:
               href: api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
             - name: Get Task Definition
               href: api/identitygovernance-taskdefinition-get.md 
+          - name: Custom Task Extension
+            items:
+            - name: Custom Task Extension
+              href: resources/identitygovernance-customtaskextension.md
+            - name: List Custom Task Extensions
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions.md
+            - name: Get Custom Task Extensions
+              href: api/identitygovernance-customtaskextension-get.md
+            - name: Create Custom Task Extensions
+              href: api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions.md
+            - name: Update Custom Task Extensions
+              href: api/identitygovernance-customtaskextension-update.md
+            - name: Delete Custom Task Extensions
+              href: api/identitygovernance-lifecycleworkflowscontainer-delete-customtaskextensions.md    
           - name: Lifecycle Management Settings
             items:
             - name: Lifecycle Management Settings
