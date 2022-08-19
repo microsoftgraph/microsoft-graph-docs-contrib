@@ -1,6 +1,6 @@
 ---
 title: "driveItem: assignSensitivityLabel"
-description: "Asynchronously assigns sensitivity label to an [driveItem][item-resource]."
+description: "Asynchronously assigns sensitivity label to a driveItem."
 author: "jaLuthra"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
