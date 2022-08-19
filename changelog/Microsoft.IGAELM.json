@@ -233,7 +233,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "regexPattern",
           "ChangeType": "Addition",
-          "Description": "Added the `regexPattern` property to the [accessPackageTextInputQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageTextInputQuestion?view=graph-rest-beta) resource.",
+          "Description": "Added the **regexPattern** property to the [accessPackageTextInputQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageTextInputQuestion?view=graph-rest-beta) resource.",
           "Target": "accessPackageTextInputQuestion"
         }
       ],
