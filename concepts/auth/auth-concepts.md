@@ -9,9 +9,9 @@ ms.custom: graphiamtop20
 
 # Authentication and authorization basics
 
-To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. The access token contains information about your app and the permissions it has to access the resources and APIs available through Microsoft Graph. To get an access token, your app must be registered with the Microsoft identity platform and be authorized by either a user or an administrator to access the Microsoft Graph resources it needs.
+To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. The access token contains information about your app and the permissions it has to access the resources and APIs available through Microsoft Graph. To get an access token, your app must be registered with the Microsoft identity platform and be authorized by either a user, or an administrator, to access the Microsoft Graph resources that it wants to access.
 
-This article provides an overview of the Microsoft identity platform, access tokens, and how your app can get access tokens. For more information about the Microsoft identity platform, see [What is the Microsoft identity platform?](/azure/active-directory/develop/v2-overview). If you know how to integrate an app with the Microsoft identity platform to get tokens, see information and samples specific to Microsoft Graph in the [next steps](#next-steps) section.
+This article provides an overview of the Microsoft identity platform, access tokens, and how your app can get access tokens. For more information about the Microsoft identity platform, see [What is the Microsoft identity platform?](/azure/active-directory/develop/v2-overview). If you know how to integrate an app with the Microsoft identity platform to get tokens, see information and samples specific to Microsoft Graph in the [next steps](#see-also) section.
 
 ## Register your app with the Microsoft identity platform
 
@@ -37,7 +37,7 @@ In this access scenario, a user has signed into a client application and the cli
 
 Delegated access requires *delegated permissions*, also referred to as *scopes*. Scopes are permissions that are exposed by a given resource and they represent the operations that an app can perform on behalf of a user.
 
-Because both the app and the user must be authorized to make the request, the resource grants the client app the delegated permissions, for the client app to access data on behalf of the specified user. For the user, the actions that they can perform on the resource relies on the privileges that they been granted to access the resource. For example, the user might be the owner of the resource, or they might be assigned a particular role through a role-based access control system (RBAC) such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview).
+Because both the app and the user must be authorized to make the request, the resource grants the client app the delegated permissions, for the client app to access data on behalf of the specified user. For the user, the actions that they can perform on the resource rely on the privileges that they have to access the resource. For example, the user might be the owner of the resource, or they might be assigned a particular role through a role-based access control system (RBAC) such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview).
 
 ### Direct access (app-only access)
 
@@ -51,7 +51,7 @@ Microsoft Graph exposes granular permissions that control the access that apps h
 
 Microsoft Graph exposes two types of permissions for the supported [access scenarios](#access-scenarios): *delegated permissions* and *application permissions*. Delegated permissions, also called *scopes*, allow the application to act on behalf of the signed-in user. Application permissions, also called *app roles*, allow the app to access data on its own, without a signed-in user.
 
-When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, your app is given access to the resources and APIs that it has requested. For apps that access resources and APIs without a signed-in user, the application permissions can be pre-consented to by an administrator when the app is installed.
+When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, your app is given access to the resources, and APIs that it has requested. For apps that access resources and APIs without a signed-in user, the application permissions can be pre-consented to by an administrator when the app is installed.
 
 [!INCLUDE [auth-use-least-privileged](../../includes/auth-use-least-privileged.md)]
 
@@ -59,7 +59,7 @@ For more information about Microsoft Graph permissions and how to use them, see 
 
 ## Access tokens
 
-An application makes an authentication request to get access tokens which it uses to call an API. Access tokens that are issued by the Microsoft identity platform contain information (claims) that web APIs secured by the Microsoft identity platform, such as Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. The caller should treat access tokens as opaque strings because the contents of the token are intended for the API only. When calling Microsoft Graph, always protect access tokens by transmitting them over a secure channel that uses transport layer security (TLS).
+An application makes an authentication request to get access tokens that it uses to call an API. Access tokens that are issued by the Microsoft identity platform contain information (claims). Web APIs secured by the Microsoft identity platform, such as Microsoft Graph, use the claims to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. The caller should treat access tokens as opaque strings because the contents of the token are intended for the API only. When calling Microsoft Graph, always protect access tokens by transmitting them over a secure channel that uses transport layer security (TLS).
 
 The following example shows a Microsoft identity platform access token:
 
@@ -75,7 +75,7 @@ Host: graph.microsoft.com
 Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
 ```
 
-Access tokens are a kind of **security token** that the Microsoft identity platform provides. They are short-lived but with variable default lifetimes.
+Access tokens are a kind of **security token** that the Microsoft identity platform provides. They're short-lived but with variable default lifetimes.
 
 ### Get an access token
 
@@ -95,6 +95,6 @@ You don't need to use an authentication library to get an access token. To learn
 
 - [Microsoft identity platform documentation](/azure/active-directory/develop/).
 - [Choose a Microsoft Graph authentication provider based on scenario](../sdks/choose-authentication-providers.md).
-- [Overview of Microsoft Graph permissions](permissions-overview.md).
+- [Overview of Microsoft Graph permissions](/graph/permissions-overview).
 - Use the [Get started](https://developer.microsoft.com/graph/get-started) page to find the libraries, samples, training content, and other resources for your favorite platform.
 - See our [Microsoft Graph samples](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=) on GitHub.
