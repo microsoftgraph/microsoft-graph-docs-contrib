@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /workflowBase/userProcessingResults/summary
+GET /workflow/userProcessingResults/summary
 ```
 
 ## Function parameters
@@ -44,7 +44,6 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|The start date and time of the user processing result summary.|
 |endDateTime|DateTimeOffset|The end date and time of the user processing result summary|
-
 
 ## Request headers
 
