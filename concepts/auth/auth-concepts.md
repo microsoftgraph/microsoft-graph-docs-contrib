@@ -26,8 +26,8 @@ For more information, see [Register an application with the Microsoft identity p
 ## Access scenarios
 
 The method that an app uses to authenticate with the Microsoft identity platform will depend on how you want the app to access the data. This access can be in one of two ways:
-+ **Delegated access**, acting on behalf of a signed-in user.
-+ **Direct access**, acting with its own identity.
++ **Delegated access**, an app acting on behalf of a signed-in user.
++ **Direct access**, an app acting with its own identity.
 
 :::image type="content" source="../images/access-scenarios.png" alt-text="Illustration of delegated access and direct access scenarios in the Microsoft identity platform.":::
 
