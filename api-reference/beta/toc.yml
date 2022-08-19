@@ -13626,8 +13626,6 @@ items:
               href: api/identitygovernance-taskprocessingresult-post-task.md
             - name: Get
               href: api/identitygovernance-task-get.md
-            - name: Update
-              href: api/identitygovernance-task-update.md
             - name: Delete
               href: api/identitygovernance-taskprocessingresult-delete-task.md
           - name: Task Definition
