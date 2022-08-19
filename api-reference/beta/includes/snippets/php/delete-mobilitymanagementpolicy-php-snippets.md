@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->policies()->mobileAppManagementPoliciesById('mobilityManagementPolicy-id')->delete();
+$graphServiceClient->policies()->mobileDeviceManagementPoliciesById('mobilityManagementPolicy-id')->delete();
 
 
 ```
