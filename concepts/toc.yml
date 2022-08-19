@@ -447,6 +447,10 @@ items:
           - name: Overview
             href: search-concept-overview.md
             displayName: search
+          - name: Search bookmarks
+            href: search-concept-bookmark.md
+          - name: Search acronyms
+            href: search-concept-acronym.md
           - name: Search messages
             href: search-concept-messages.md
           - name: Search Teams messages
