@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_mobilitymanagementpolicy_forID"
+  "name": "delete_mobilitymanagementpolicy_forID_device"
 }
 -->
 
