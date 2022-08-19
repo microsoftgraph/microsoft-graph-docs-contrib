@@ -57,7 +57,7 @@ The following table shows the properties that are required when you create the u
 |bootScore|Int32|The user experience analytics device boot score.|
 |coreBootTimeInMs|Int32|The user experience analytics device core boot time in milliseconds.|
 |groupPolicyBootTimeInMs|Int32|The user experience analytics device group policy boot time in milliseconds.|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 |loginScore|Int32|The user experience analytics device login score.|
 |coreLoginTimeInMs|Int32|The user experience analytics device core login time in milliseconds.|
 |groupPolicyLoginTimeInMs|Int32|The user experience analytics device group policy login time in milliseconds.|

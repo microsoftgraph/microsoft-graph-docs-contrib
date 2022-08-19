@@ -7,12 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAuthorizationPolicy()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"guestUserRole": "2af84b1e-32c8-42b7-82bc-daa82404023b",
+requestBody := graphmodels.NewAuthorizationPolicy()
+additionalData := map[string]interface{}{
+	"guestUserRole" : "2af84b1e-32c8-42b7-82bc-daa82404023b", 
 }
-authorizationPolicyId := "authorizationPolicy-id"
-graphClient.Policies().AuthorizationPolicyById(&authorizationPolicyId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Policies().AuthorizationPolicyById("authorizationPolicy-id").Patch(requestBody)
 
 
 ```

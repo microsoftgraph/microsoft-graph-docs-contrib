@@ -22,14 +22,14 @@ Represents an eDiscovery tag, which is used to mark documents during review to s
 |[Create ediscoveryReviewTag](../api/security-ediscoverycase-post-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Create a new [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
 |[Get ediscoveryReviewTag](../api/security-ediscoveryreviewtag-get.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Read the properties and relationships of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
 |[Update ediscoveryReviewTag](../api/security-ediscoveryreviewtag-update.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Update the properties of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
-|[Delete ediscoveryReviewTag](../api/security-ediscoverycase-delete-tags.md)|None|Deletes an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
+|[Delete ediscoveryReviewTag](../api/security-ediscoverycase-delete-tags.md)|None|Delete an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
 |[asHierarchy](../api/security-ediscoveryreviewtag-ashierarchy.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|List tags organized as hierarchy.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|childSelectability|String|Indicates whether a single or multiple child tags can be associated with a document. Possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group.|
+|childSelectability|microsoft.graph.security.childSelectability|Indicates whether a single or multiple child tags can be associated with a document. Possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the tag.|
 |description|String|The description for the tag.|
 |displayName|String|Display name of the tag.|

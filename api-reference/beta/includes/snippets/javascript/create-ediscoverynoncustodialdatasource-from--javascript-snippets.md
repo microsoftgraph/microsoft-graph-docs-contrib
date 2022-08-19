@@ -10,17 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-const ediscoveryNoncustodialDataSource = {
-    dataSource: {
-        '@odata.type': 'microsoft.graph.security.siteSource',
-        site: {
-            webUrl: 'https://m365x809305.sharepoint.com/sites/Design-topsecret'
-        }
-    }
-};
-
-await client.api('/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialDataSources')
+let noncustodialDataSources = await client.api('/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources')
 	.version('beta')
-	.post(ediscoveryNoncustodialDataSource);
+	.expand('dataSource')
+	.get();
 
 ```

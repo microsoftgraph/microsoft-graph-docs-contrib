@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
-Get-MgUserTodoList -UserId $userId
+Get-MgUserTodoList -UserId $userId -OutFile $outFileId
 
 ```

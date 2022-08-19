@@ -24,13 +24,13 @@ For example, if the user uploads a photo that is 504x504 pixels, all but the 648
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### To retrieve the profile photo of a user
+### To retrieve the profile photo of a contact
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
-|Delegated (personal Microsoft account)      |   User.Read, User.ReadWrite            |
-|Application      |    User.Read.All, User.ReadWrite.All           |
+|Delegated (work or school account)      |   Contacts.Read, Contacts.ReadWrite           |
+|Delegated (personal Microsoft account)      |   Contacts.Read, Contacts.ReadWrite            |
+|Application      |    Contacts.Read, Contacts.ReadWrite           |
 
 ### To retrieve the profile photo of a group
 
@@ -40,13 +40,21 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)      |   Not supported.            |
 |Application      |    Group.Read.All, Group.ReadWrite.All           |
 
-### To retrieve the profile photo of a contact
+### To retrieve the profile photo of a team
+
+| Permission Type | Permissions (from least to most privileged)                   |
+| --------------- | ------------------------------------------------------------- |
+| Delegated (work or school account)        | TeamReadBasicAll, TeamSettingsReadAll, TeamSettingsReadWriteAll |
+| Delegated (personal Microsoft account)    | Not supported.                      |
+| Application                               | TeamReadBasicAll, TeamSettingsReadAll, TeamSettingsReadWriteAll |
+
+### To retrieve the profile photo of a user
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   Contacts.Read, Contacts.ReadWrite           |
-|Delegated (personal Microsoft account)      |   Contacts.Read, Contacts.ReadWrite            |
-|Application      |    Contacts.Read, Contacts.ReadWrite           |
+|Delegated (work or school account)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   User.Read, User.ReadWrite            |
+|Application      |    User.Read.All, User.ReadWrite.All           |
 
 > [!NOTE]
 > 
@@ -67,6 +75,7 @@ GET /me/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+GET /team/{id}/photo/$value
 ```
 
 ### Get the metadata of the photo
@@ -81,6 +90,7 @@ GET /me/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contacts/{id}/photo
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
+GET /team/{id}/photo
 ```
 
 ### Get the metadata for a specific photo size
@@ -200,6 +210,61 @@ Content-type: application/json
     "height": 1
 }
 ```
+### Example 4: Get the metadata of the team photo
+
+#### Request
+
+Here is an example of the request to get the metadata of the team photo.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team_photo_metadata"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo
+```
+
+#### Response
+
+Here is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo",
+    "@odata.mediaContentType": "image/jpeg",
+    "@odata.mediaEtag": "\"BA09D118\"",
+    "id": "240X240",
+    "width": 240,
+    "height": 240
+}
+```
+
+### Example 5: Get the team photo's binary data
+
+Here is an example of the request to get the team photo's binary data.
+
+#### Request
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team_photo"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
+```
+
+#### Response
+
+Contains the binary data of the requested photo. The HTTP response code is 200.
 
 ## Using the binary data of the requested photo
 

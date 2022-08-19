@@ -7,14 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewItemPublication()
+requestBody := graphmodels.NewItemPublication()
 publisher := "International Association of Branding Management Publishing"
-requestBody.SetPublisher(&publisher)
+requestBody.SetPublisher(&publisher) 
 thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
-requestBody.SetThumbnailUrl(&thumbnailUrl)
-userId := "user-id"
-itemPublicationId := "itemPublication-id"
-graphClient.UsersById(&userId).Profile().PublicationsById(&itemPublicationId).Patch(requestBody)
+requestBody.SetThumbnailUrl(&thumbnailUrl) 
+
+graphClient.UsersById("user-id").Profile().PublicationsById("itemPublication-id").Patch(requestBody)
 
 
 ```

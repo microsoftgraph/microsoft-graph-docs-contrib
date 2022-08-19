@@ -7,7 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	DisplayName = "Greater Seattle District Technical Schools"
+	MembershipType = "Dynamic"
+	MembershipRule = "(user.country -eq "United States")"
+	MembershipRuleProcessingState = "On"
 }
 
 Update-MgAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params

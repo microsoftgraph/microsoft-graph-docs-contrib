@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-Get-MgDeviceManagementVirtualEndpointServicePlan
+Get-MgDeviceManagementVirtualEndpointServicePlan -OutFile $outFileId
 
 ```

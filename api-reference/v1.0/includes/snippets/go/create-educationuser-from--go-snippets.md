@@ -7,106 +7,122 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEducationUser()
-primaryRole := "String"
-requestBody.SetPrimaryRole(&primaryRole)
+requestBody := graphmodels.NewEducationUser()
+"@odata.type" := "#microsoft.graph.educationUser"
+requestBody.Set"@odata.type"(&"@odata.type") 
+primaryRole := graphmodels.STRING_EDUCATIONUSERROLE 
+requestBody.SetPrimaryRole(&primaryRole) 
 middleName := "String"
-requestBody.SetMiddleName(&middleName)
-externalSource := "String"
-requestBody.SetExternalSource(&externalSource)
+requestBody.SetMiddleName(&middleName) 
+externalSource := graphmodels.STRING_EDUCATIONEXTERNALSOURCE 
+requestBody.SetExternalSource(&externalSource) 
 externalSourceDetail := "String"
-requestBody.SetExternalSourceDetail(&externalSourceDetail)
-residenceAddress := msgraphsdk.NewPhysicalAddress()
+requestBody.SetExternalSourceDetail(&externalSourceDetail) 
+residenceAddress := graphmodels.NewPhysicalAddress()
+"@odata.type" := "microsoft.graph.physicalAddress"
+residenceAddress.Set"@odata.type"(&"@odata.type") 
 requestBody.SetResidenceAddress(residenceAddress)
-residenceAddress.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.physicalAddress",
-}
-mailingAddress := msgraphsdk.NewPhysicalAddress()
+mailingAddress := graphmodels.NewPhysicalAddress()
+"@odata.type" := "microsoft.graph.physicalAddress"
+mailingAddress.Set"@odata.type"(&"@odata.type") 
 requestBody.SetMailingAddress(mailingAddress)
-mailingAddress.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.physicalAddress",
-}
-student := msgraphsdk.NewEducationStudent()
+student := graphmodels.NewEducationStudent()
+"@odata.type" := "microsoft.graph.educationStudent"
+student.Set"@odata.type"(&"@odata.type") 
 requestBody.SetStudent(student)
-student.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.educationStudent",
-}
-teacher := msgraphsdk.NewEducationTeacher()
+teacher := graphmodels.NewEducationTeacher()
+"@odata.type" := "microsoft.graph.educationTeacher"
+teacher.Set"@odata.type"(&"@odata.type") 
 requestBody.SetTeacher(teacher)
-teacher.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.educationTeacher",
-}
-createdBy := msgraphsdk.NewIdentitySet()
+createdBy := graphmodels.NewIdentitySet()
+"@odata.type" := "microsoft.graph.identitySet"
+createdBy.Set"@odata.type"(&"@odata.type") 
 requestBody.SetCreatedBy(createdBy)
-createdBy.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.identitySet",
-}
 accountEnabled := "Boolean"
-requestBody.SetAccountEnabled(&accountEnabled)
-requestBody.SetAssignedLicenses( []AssignedLicense {
-	msgraphsdk.NewAssignedLicense(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "microsoft.graph.assignedLicense",
-	}
+requestBody.SetAccountEnabled(&accountEnabled) 
+
+
+assignedLicense := graphmodels.NewAssignedLicense()
+additionalData := map[string]interface{}{
+	"@odata.type" : "microsoft.graph.assignedLicense", 
 }
-requestBody.SetAssignedPlans( []AssignedPlan {
-	msgraphsdk.NewAssignedPlan(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "microsoft.graph.assignedPlan",
-	}
+assignedLicense.SetAdditionalData(additionalData)
+
+assignedLicenses := []graphmodels.AssignedLicenseable {
+	assignedLicense,
+
 }
-requestBody.SetBusinessPhones( []String {
+requestBody.SetAssignedLicenses(assignedLicenses)
+
+
+assignedPlan := graphmodels.NewAssignedPlan()
+additionalData := map[string]interface{}{
+	"@odata.type" : "microsoft.graph.assignedPlan", 
+}
+assignedPlan.SetAdditionalData(additionalData)
+
+assignedPlans := []graphmodels.AssignedPlanable {
+	assignedPlan,
+
+}
+requestBody.SetAssignedPlans(assignedPlans)
+businessPhones := []string {
 	"String",
+
 }
+requestBody.SetBusinessPhones(businessPhones)
 department := "String"
-requestBody.SetDepartment(&department)
+requestBody.SetDepartment(&department) 
 displayName := "String"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 givenName := "String"
-requestBody.SetGivenName(&givenName)
+requestBody.SetGivenName(&givenName) 
 mail := "String"
-requestBody.SetMail(&mail)
+requestBody.SetMail(&mail) 
 mailNickname := "String"
-requestBody.SetMailNickname(&mailNickname)
+requestBody.SetMailNickname(&mailNickname) 
 mobilePhone := "String"
-requestBody.SetMobilePhone(&mobilePhone)
+requestBody.SetMobilePhone(&mobilePhone) 
 passwordPolicies := "String"
-requestBody.SetPasswordPolicies(&passwordPolicies)
-passwordProfile := msgraphsdk.NewPasswordProfile()
+requestBody.SetPasswordPolicies(&passwordPolicies) 
+passwordProfile := graphmodels.NewPasswordProfile()
+"@odata.type" := "microsoft.graph.passwordProfile"
+passwordProfile.Set"@odata.type"(&"@odata.type") 
 requestBody.SetPasswordProfile(passwordProfile)
-passwordProfile.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.passwordProfile",
-}
 officeLocation := "String"
-requestBody.SetOfficeLocation(&officeLocation)
+requestBody.SetOfficeLocation(&officeLocation) 
 preferredLanguage := "String"
-requestBody.SetPreferredLanguage(&preferredLanguage)
-requestBody.SetProvisionedPlans( []ProvisionedPlan {
-	msgraphsdk.NewProvisionedPlan(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "microsoft.graph.provisionedPlan",
-	}
+requestBody.SetPreferredLanguage(&preferredLanguage) 
+
+
+provisionedPlan := graphmodels.NewProvisionedPlan()
+additionalData := map[string]interface{}{
+	"@odata.type" : "microsoft.graph.provisionedPlan", 
 }
-refreshTokensValidFromDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
-requestBody.SetRefreshTokensValidFromDateTime(&refreshTokensValidFromDateTime)
+provisionedPlan.SetAdditionalData(additionalData)
+
+provisionedPlans := []graphmodels.ProvisionedPlanable {
+	provisionedPlan,
+
+}
+requestBody.SetProvisionedPlans(provisionedPlans)
+refreshTokensValidFromDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
+requestBody.SetRefreshTokensValidFromDateTime(&refreshTokensValidFromDateTime) 
 showInAddressList := "Boolean"
-requestBody.SetShowInAddressList(&showInAddressList)
+requestBody.SetShowInAddressList(&showInAddressList) 
 surname := "String"
-requestBody.SetSurname(&surname)
+requestBody.SetSurname(&surname) 
 usageLocation := "String"
-requestBody.SetUsageLocation(&usageLocation)
+requestBody.SetUsageLocation(&usageLocation) 
 userPrincipalName := "String"
-requestBody.SetUserPrincipalName(&userPrincipalName)
+requestBody.SetUserPrincipalName(&userPrincipalName) 
 userType := "String"
-requestBody.SetUserType(&userType)
-onPremisesInfo := msgraphsdk.NewEducationOnPremisesInfo()
+requestBody.SetUserType(&userType) 
+onPremisesInfo := graphmodels.NewEducationOnPremisesInfo()
+"@odata.type" := "microsoft.graph.educationOnPremisesInfo"
+onPremisesInfo.Set"@odata.type"(&"@odata.type") 
 requestBody.SetOnPremisesInfo(onPremisesInfo)
-onPremisesInfo.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.educationOnPremisesInfo",
-}
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.educationUser",
-}
+
 result, err := graphClient.Education().Users().Post(requestBody)
 
 
