@@ -1,5 +1,5 @@
 ---
-title: "driveItem: assignSensitivitylabel"
+title: "driveItem: assignSensitivityLabel"
 description: "Asynchronously assigns sensitivity label to an [driveItem][item-resource]."
 author: "jaLuthra"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# driveItem: assignSensitivitylabel
+# driveItem: assignSensitivityLabel
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -30,16 +30,16 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /drives/{drive-id}/items/{item-id}/assignSensitivitylabel
-POST /drives/{drive-id}/root:/{item-path}/assignSensitivitylabel
-POST /groups/{group-id}/drive/items/{item-id}/assignSensitivitylabel
-POST /groups/{group-id}/drive/root:/{item-path}/assignSensitivitylabel
-POST /me/drive/items/{item-id}/assignSensitivitylabel
-POST /me/drive/root:/{item-path}/assignSensitivitylabel
-POST /sites/{site-id}/drive/items/{item-id}/assignSensitivitylabel
-POST /sites/{site-id}/drive/root:/{item-path}/assignSensitivitylabel
-POST /users/{user-id}/drive/items/{item-id}/assignSensitivitylabel
-POST /users/{user-id}/drive/root:/{item-path}/assignSensitivitylabel
+POST /drives/{drive-id}/items/{item-id}/assignSensitivityLabel
+POST /drives/{drive-id}/root:/{item-path}/assignSensitivityLabel
+POST /groups/{group-id}/drive/items/{item-id}/assignSensitivityLabel
+POST /groups/{group-id}/drive/root:/{item-path}/assignSensitivityLabel
+POST /me/drive/items/{item-id}/assignSensitivityLabel
+POST /me/drive/root:/{item-path}/assignSensitivityLabel
+POST /sites/{site-id}/drive/items/{item-id}/assignSensitivityLabel
+POST /sites/{site-id}/drive/root:/{item-path}/assignSensitivityLabel
+POST /users/{user-id}/drive/items/{item-id}/assignSensitivityLabel
+POST /users/{user-id}/drive/root:/{item-path}/assignSensitivityLabel
 ```
 
 ## Request headers
@@ -48,24 +48,16 @@ POST /users/{user-id}/drive/root:/{item-path}/assignSensitivitylabel
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-| Name                | Value                             |Description                                                                                                          |
-|:--------------------|:----------------------------------|:--------------------------------------------------------------------------------------------------------------------|
-| sensitivityLabelId  | string                            | Required. Id of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
-| assignmentMethod    | sensitivityLabelAssignmentMethod  | Optional. The assignment method of the label on the document. Whether the assignment of the label was done automatically, standard or as a privileged operation (The equivalent to an administrator operation).                                                                            |
-| justificationText   | string                            | Optional. Justification text for audit purposes. Required when downgrading/removing label.                          |
-
-### sensitivityLabelAssignmentMethod values
-
-| Member             | Description                                    |
-|:------------------ |:-----------------------------------------------|
-| standard           | The assignment method for the label is standard.|
-| privileged         | The assignment method for the label is privileged. Indicates that the label is applied manually by a user or by an admin.|
-| auto               | Indicates that the label is applied automatically by the system due to a configured policy, such as default label or auto-classification of sensitive content.|
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+| Name                | Value                                                                 |Description                                                                                                          |
+|:--------------------|:----------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|
+| sensitivityLabelId  | string                                                                | Required. Id of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
+| assignmentMethod    | [sensitivityLabelAssignmentMethod ][sensitivityLabelAssignmentMethod] | Optional. The assignment method of the label on the document. Whether the assignment of the label was done automatically, standard or as a privileged operation (The equivalent to an administrator operation).                                                                                                                                                                                                         |
+| justificationText   | string                                                                | Optional. Justification text for audit purposes. Required when downgrading/removing label.                          |
 
 ## Response
 
-If successful, the API returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the assign sensitivity label operation, upon accepting the request.
+If successful, the API returns response code `202 Accepted` with empty response body, the `Location` header will provide url to fetch operation details.
+For more details about how to monitor progress of assign sensitivity label operation, please refer to [monitoring long running operations](/graph/long-running-actions-overview).
 
 In addition to general errors that apply to Microsoft Graph, this API returns the `423 Locked` response code, which indicates that the file being accessed is locked. In such cases, the **code** property of the response object indicates the error type that blocks the operation.
 The following are the possible values for the error types.
@@ -83,9 +75,9 @@ The following are the possible values for the error types.
 
 The following is an example of a request.
 
-<!-- { "blockType": "request", "name": "assignSensitivitylabel", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "assignSensitivityLabel", "tags": "service.graph" } -->
 ``` http
-POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivitylabel
+POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivityLabel
 Content-Type: application/json
 
 {
@@ -112,3 +104,4 @@ You can use this information to [determine when the assign sensitivity label ope
 The response from the API will only indicate that the assign sensitivity label operation was accepted or rejected; for example, due to file type not being supported or file is double encrypted.
 
 [item-resource]: ../resources/driveitem.md
+[sensitivityLabelAssignmentMethod]: graph/api/resources/sensitivitylabelassignment?view=graph-rest-beta#sensitivitylabelassignmentmethod-values
