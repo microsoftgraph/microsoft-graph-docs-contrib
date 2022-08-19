@@ -33,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
-GET /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}
 ```
 
 ## Optional query parameters

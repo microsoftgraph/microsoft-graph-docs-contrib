@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/versions
+POST /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/createNewVersion
 ```
 
 ## Request headers
@@ -58,7 +58,6 @@ You can specify the following properties when creating a **workflowVersion**.
 |lastModifiedDateTime|DateTimeOffset|The time and date a workflow was last modified. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
 |versionNumber|Int32|The version of the workflow.|
 
-
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [workflowVersion](../resources/identitygovernance-workflowversion.md) object in the response body.
@@ -74,7 +73,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/versions
+POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}/createNewVersion
 Content-Type: application/json
 Content-length: 307
 

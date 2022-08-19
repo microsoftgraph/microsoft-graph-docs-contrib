@@ -13565,121 +13565,88 @@ items:
               href: api/identitygovernance-workflow-update.md
             - name: Delete
               href: api/deleteditemcontainer-delete-workflows.md
-          - name: WorkflowTemplate
-            href: resources/identitygovernance-workflowtemplate.md
-            items:
-            - name: List
-              href: api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md
-            - name: Create
-              href: api/identitygovernance-lifecycleworkflowscontainer-post-workflowtemplates.md
-            - name: Get
-              href: api/identitygovernance-workflowtemplate-get.md
-            - name: Update
-              href: api/identitygovernance-workflowtemplate-update.md
-            - name: Delete
-              href: api/identitygovernance-lifecycleworkflowscontainer-delete-workflowtemplates.md
-          - name: DeletedItemContainer
-            href: resources/deleteditemcontainer.md
-            items:
-            - name: List
+            - name: activate
+              href: api/identitygovernance-workflow-activate.md
+            - name: List deleted workflows
               href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
-            - name: Create
-              href: api/identitygovernance-lifecycleworkflowscontainer-post-deleteditems.md
-            - name: Get
-              href: api/deleteditemcontainer-get.md
-            - name: Update
-              href: api/deleteditemcontainer-update.md
-            - name: Delete
-              href: api/identitygovernance-lifecycleworkflowscontainer-delete-deleteditems.md
-          - name: Custom Task Extension
-            href: resources/identitygovernance-customtaskextension.md
-            items:
-            - name: List
-              href: api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions.md
-            - name: Create
-              href: api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions.md
-            - name: Get
-              href: api/identitygovernance-customtaskextension-get.md
-            - name: Update
-              href: api/identitygovernance-customtaskextension-update.md
-            - name: Delete
-              href: api/identitygovernance-lifecycleworkflowscontainer-delete-customtaskextensions.md
-          - name: Run
-            href: resources/identitygovernance-run.md
-            items:
-            - name: List
-              href: api/identitygovernance-workflow-list-runs.md
-            - name: Create
-              href: api/identitygovernance-workflow-post-runs.md
-            - name: Get
-              href: api/identitygovernance-run-get.md
-            - name: Update
-              href: api/identitygovernance-run-update.md
-            - name: Delete
-              href: api/identitygovernance-workflow-delete-runs.md
-          - name: Task
-            href: resources/identitygovernance-task.md
-            items:
-            - name: List
+            - name: List tasks
               href: api/identitygovernance-taskprocessingresult-list-task.md
-            - name: Create
-              href: api/identitygovernance-taskprocessingresult-post-task.md
-            - name: Get
-              href: api/identitygovernance-task-get.md
-            - name: Delete
-              href: api/identitygovernance-taskprocessingresult-delete-task.md
+            - name: List of versions
+              href: api/identitygovernance-workflow-list-versions.md
+              items:
+              - name: Create new workflow version 
+                href: api/identitygovernance-workflow-post-versions.md
+            - name: Reporting
+              items:
+              - name: Overview
+                href: resources/lifecycleworkflows-reporting-overview.md
+              - name: User Processing Result
+                href: resources/lifecycleworkflows-userprocessingresult.md
+                items:
+                - name: get user processing results summary
+                  href: api/identitygovernance-userprocessingresult-summary.md
+                - name: list user processing results
+                  href: api/identitygovernance-run-list-userprocessingresults.md
+                - name: Get User Processing Results summary
+                  href: api/identitygovernance-userprocessingresult-get.md
+                - name: list task processing results for a user processing results summary
+                  href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
+            - name: Task Reports
+              href: resources/ideneitygovernance-taskreport.md 
+              items:
+              - name: list task reports
+                href: api/identitygovernance-workflow-list-taskreports.md
+              - name: Get task reports
+                href: api/identitygovernance-taskreport-get.md
+              - name: get task processing results for a task report
+                href: api/identitygovernance-task-list-taskprocessingresults.md    
+            - name: Workflow runs
+              href: resources/identitygovernance-run.md
+              items:
+              - name: get workflow run summary
+                href: api/identitygovernance-run-summary.md
+              - name: list workflow runs
+                href: api/identitygovernance-workflow-list-runs.md
+              - name: Get workflow runs
+                href: api/identitygovernance-run-get.md
+              - name: list user processing results for a run
+                href: api/identitygovernance-run-list-userprocessingresults.md   
+            - name: Task Processing Result
+              href: resources/identitygovernance-taskprocessingresult.md
+              items:  
+              - name: list task processing results
+                href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
+              - name: Get task processing results
+                href: api/identitygovernance-taskprocessingresult-get.md
+              - name: Resume the task processing summary
+                href: api/identitygovernance-taskprocessingresult-resume.md
+          - name: Workflow Templates
+            items: 
+            - name: Workflow Templates
+              href: resources/identitygovernance-workflowtemplate.md
+              items:
+              - name: list workflow templates
+                href: api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md
+              - name: get workflow templates
+                href: api/identitygovernance-workflowtemplate-get.md
           - name: Task Definition
-            href: resources/identitygovernance-taskdefinition.md
             items:
-            - name: List
-              href: api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
-            - name: Create
-              href: api/identitygovernance-lifecycleworkflowscontainer-post-taskdefinitions.md
-            - name: Get
-              href: api/identitygovernance-taskdefinition-get.md
-            - name: Update
-              href: api/identitygovernance-taskdefinition-update.md
-            - name: Delete
-              href: api/identitygovernance-lifecycleworkflowscontainer-delete-taskdefinitions.md
-          - name: Task Processing Result
-            href: resources/identitygovernance-taskprocessingresult.md
+            - name: Task Definition
+              href: resources/identitygovernance-taskdefinition.md
+              items:
+              - name: list task definition
+                href: api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
+              - name: get task definition
+                href: api/identitygovernance-taskdefinition-get.md 
+          - name: Lifecycle Management Settings
             items:
-            - name: List
-              href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
-            - name: Create
-              href: api/identitygovernance-userprocessingresult-post-taskprocessingresults.md
-            - name: Get
-              href: api/identitygovernance-taskprocessingresult-get.md
-            - name: Update
-              href: api/identitygovernance-taskprocessingresult-update.md
-            - name: Delete
-              href: api/identitygovernance-userprocessingresult-delete-taskprocessingresults.md
-          - name: User Processing Result
-            href: resources/identitygovernance-userprocessingresult.md
-            items:
-            - name: List
-              href: api/identitygovernance-run-list-userprocessingresults.md
-            - name: Create
-              href: api/identitygovernance-run-post-userprocessingresults.md
-            - name: Get
-              href: api/identitygovernance-userprocessingresult-get.md
-            - name: Update
-              href: api/identitygovernance-userprocessingresult-update.md
-            - name: Delete
-              href: api/identitygovernance-run-delete-userprocessingresults.md
-          - name: Lifecycle management settings
-            href: resources/identitygovernance-lifecyclemanagementsettings.md
-            items:
-            - name: List
-              href: api/identitygovernance-lifecycleworkflowscontainer-list-settings.md
-            - name: Create
-              href: api/identitygovernance-lifecycleworkflowscontainer-post-settings.md
-            - name: Get
-              href: api/identitygovernance-lifecyclemanagementsettings-get.md
-            - name: Update
-              href: api/identitygovernance-lifecyclemanagementsettings-update.md
-            - name: Delete
-              href: api/identitygovernance-lifecycleworkflowscontainer-delete-settings.md
+            - name: Lifecycle Management Settings
+              href: resources/identitygovernance-lifecyclemanagementsettings.md
+              items:
+              - name: get settings
+                href: api/identitygovernance-lifecyclemanagementsettings-get.md
+              - name: update settings
+                href: api/identitygovernance-lifecyclemanagementsettings-update.md                       
         - name: Terms of use
           items:
           - name: Agreement
