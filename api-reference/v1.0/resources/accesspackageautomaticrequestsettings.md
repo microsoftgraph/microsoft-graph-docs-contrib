@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAutomaticRequestSettings resource type"
-description: "Specifies if automatic assignments should be enabled, specify grace period before removal and if targets must be removed if they longer match the membership rule specified under `specificAllowedTargets` setting of the access package policy."
+description: "Specifies information about an automatic access package assignment."
 author: "fsheik"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,14 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Specifies if automatic assignments should be enabled, specify grace period before removal and if targets must be removed if they longer match the membership rule specified under `specificAllowedTargets` setting of an [access package assignment policy](accesspackageassignmentpolicy.md).
+Specifies information about an automatic access package assignment. 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|gracePeriodBeforeAccessRemoval|Duration|The number of days once a target leaves the allowed target scope that their automatic assignment will be retained before their assignment is ended.|
-|removeAccessWhenTargetLeavesAllowedTargets|Boolean|If set to true, then when a target leaves the allowed target scope, their automatic assignment will be ended.|
-|requestAccessForAllowedTargets|Boolean|If set to true, then automatic assignments will be created for targets in the allowed target scope.|
+|gracePeriodBeforeAccessRemoval|Duration|The number of days that an automatic assignment will be retained before the assignment is ended after a target leaves the allowed target scope.|
+|removeAccessWhenTargetLeavesAllowedTargets|Boolean|If set to `true`, when a target leaves the allowed target scope, the automatic assignment will be ended.|
+|requestAccessForAllowedTargets|Boolean|If set to `true`, automatic assignments will be created for targets in the allowed target scope.|
 
 ## Relationships
 None.
