@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /workflowBase/runs/summary
+GET /workflow/runs/summary
 ```
 
 ## Function parameters
@@ -70,7 +70,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/workflowBase/runs/summary(startDateTime=String{timestamp},endDateTime=String{timestamp})
+GET https://graph.microsoft.com/beta/workflow/runs/summary(startDateTime=String{timestamp},endDateTime=String{timestamp})
 ```
 
 ### Response

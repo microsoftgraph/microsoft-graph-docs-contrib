@@ -33,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
-PATCH /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}
 ```
 
 ## Request headers

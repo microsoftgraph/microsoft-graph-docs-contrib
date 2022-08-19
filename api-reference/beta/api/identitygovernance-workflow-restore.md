@@ -8,11 +8,12 @@ doc_type: apiPageType
 ---
 
 # workflow: restore
+
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Restore a workflow that has been deleted.
 
 ## Permissions
 
@@ -20,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All|
 
 ## HTTP request
 
@@ -32,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/restore
-POST /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/restore
 ```
 
 ## Request headers

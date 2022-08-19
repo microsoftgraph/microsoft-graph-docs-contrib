@@ -22,18 +22,9 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List workflowVersions](../api/identitygovernance-workflow-list-versions.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md) collection|Get a list of the [workflowVersion](../resources/identitygovernance-workflowversion.md) objects and their properties.|
-|[Create workflowVersion](../api/identitygovernance-workflow-post-versions.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md)|Create a new [workflowVersion](../resources/identitygovernance-workflowversion.md) object.|
 |[Get workflowVersion](../api/identitygovernance-workflowversion-get.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md)|Read the properties and relationships of a [workflowVersion](../resources/identitygovernance-workflowversion.md) object.|
 |[Update workflowVersion](../api/identitygovernance-workflowversion-update.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md)|Update the properties of a [workflowVersion](../resources/identitygovernance-workflowversion.md) object.|
 |[Delete workflowVersion](../api/identitygovernance-workflow-delete-versions.md)|None|Deletes a [workflowVersion](../resources/identitygovernance-workflowversion.md) object.|
-|[List user](../api/invitation-list-inviteduser.md)|[microsoft.graph.user](../resources/user.md) collection|Get the user resources from the createdBy navigation property.|
-|[Add user](../api/identitygovernance-workflowversion-post-createdby.md)|[microsoft.graph.user](../resources/user.md)|Add createdBy by posting to the createdBy collection.|
-|[Remove user](../api/identitygovernance-workflowversion-delete-createdby.md)|None|Remove a [user](../resources/user.md) object.|
-|[List user](../api/invitation-list-inviteduser.md)|[microsoft.graph.user](../resources/user.md) collection|Get the user resources from the lastModifiedBy navigation property.|
-|[Add user](../api/identitygovernance-workflowversion-post-lastmodifiedby.md)|[microsoft.graph.user](../resources/user.md)|Add lastModifiedBy by posting to the lastModifiedBy collection.|
-|[Remove user](../api/identitygovernance-workflowversion-delete-lastmodifiedby.md)|None|Remove a [user](../resources/user.md) object.|
-|[List runs](../api/identitygovernance-workflow-list-runs.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Get the run resources from the runs navigation property.|
-|[Create run](../api/identitygovernance-workflowversion-post-runs.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md)|Create a new run object.|
 |[List tasks](../api/identitygovernance-taskprocessingresult-list-task.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get the task resources from the tasks navigation property.|
 |[Create task](../api/identitygovernance-workflowversion-post-tasks.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|Create a new task object.|
 |[List userProcessingResults](../api/identitygovernance-run-list-userprocessingresults.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Get the userProcessingResult resources from the userProcessingResults navigation property.|
