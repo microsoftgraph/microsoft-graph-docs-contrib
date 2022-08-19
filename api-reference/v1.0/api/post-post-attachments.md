@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Add an [attachment](../resources/attachment.md) when creating a group post.
 
-This operation limits the size of the attachment you can add to under 4 MB.
+This operation limits the size of the attachment you can add to under 3 MB.
 
 An attachment can be one of the following types:
 
@@ -247,7 +247,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-reference-attachment-with-post-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

@@ -78,7 +78,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "message_createforward"
+  "name": "message_createforward",
+  "sampleKeys": ["AAMkADA1MTAAAH5JaLAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/createForward

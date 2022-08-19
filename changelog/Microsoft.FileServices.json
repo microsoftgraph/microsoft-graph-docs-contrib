@@ -2708,6 +2708,40 @@
       "CreatedDateTime": "2022-05-03T06:10:35.3472999Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "documentSetVersionItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [documentSetVersionItem](https://docs.microsoft.com/en-us/graph/api/resources/documentsetversionitem?view=graph-rest-1.0) resource type.",
+          "Target": "documentSetVersionItem"
+        },
+        {
+          "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "documentSetVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the [documentSetVersion](https://docs.microsoft.com/en-us/graph/api/resources/documentsetversion?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "documentSetVersion"
+        },
+        {
+          "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "documentSetVersions",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentSetVersions** relationship to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-1.0) resource.",
+          "Target": "listItem"
+        }
+      ],
+      "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-09T05:35:55.0887308Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
     }
   ]
 }

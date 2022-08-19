@@ -17,6 +17,8 @@ excludedFileExtensionsForSyncApp := []string {
 requestBody.SetExcludedFileExtensionsForSyncApp(excludedFileExtensionsForSyncApp)
 imageTaggingOption := graphmodels.ENHANCED_IMAGETAGGINGCHOICE 
 requestBody.SetImageTaggingOption(&imageTaggingOption) 
+isLegacyAuthProtocolsEnabled := true
+requestBody.SetIsLegacyAuthProtocolsEnabled(&isLegacyAuthProtocolsEnabled) 
 isSitesStorageLimitAutomatic := false
 requestBody.SetIsSitesStorageLimitAutomatic(&isSitesStorageLimitAutomatic) 
 isSyncButtonHiddenOnPersonalSite := false

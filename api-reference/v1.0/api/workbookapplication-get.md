@@ -51,7 +51,7 @@ Here is an example of a request.
   "blockType": "request",
   "name": "get_workbookApplication"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/application
 ```
 

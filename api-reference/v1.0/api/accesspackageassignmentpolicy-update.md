@@ -46,6 +46,7 @@ PUT /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageA
 |displayName|String|The display name of the policy.|
 |description|String|The description of the policy.|
 |allowedTargetScope|allowedTargetScope|Who is allowed to request the access package through this policy. The possible values are: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`.|
+|automaticRequestSettings|[accessPackageAutomaticRequestSettings](../resources/accessPackageAutomaticRequestSettings.md)|This property is only present for an auto assignment policy; if absent, this is a request-based policy.|
 |specificAllowedTargets|[subjectSet](../resources/subjectset.md) collection|The principals that can be assigned access from an access package through this policy.|
 |expiration|[expirationPattern](../resources/expirationpattern.md)|The expiration date for assignments created in this policy.|
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Provides additional settings to select who can create a request for an access package assignment through this policy, and what they can include in their request.|
@@ -76,6 +77,7 @@ Content-Type: application/json
   "displayName": "All Users",
   "description": "All users can request for access to the directory.",
   "allowedTargetScope": "allDirectoryUsers",
+  "automaticRequestSettings": null,
   "specificAllowedTargets": [],
   "expiration": {
       "type": "noExpiration"
