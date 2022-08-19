@@ -16,8 +16,6 @@ Specifies information about an automatic access package assignment.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|gracePeriodBeforeAccessRemoval|Duration|The number of days that an automatic assignment will be retained before the assignment is ended after a target leaves the allowed target scope.|
-|removeAccessWhenTargetLeavesAllowedTargets|Boolean|If set to `true`, when a target leaves the allowed target scope, the automatic assignment will be ended.|
 |requestAccessForAllowedTargets|Boolean|If set to `true`, automatic assignments will be created for targets in the allowed target scope.|
 
 ## Relationships
