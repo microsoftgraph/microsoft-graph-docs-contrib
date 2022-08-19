@@ -469,51 +469,59 @@ items:
         displayName: Planner
       - name: Teamwork and communications
         items:
-          - name: Overview
-            href: teams-concept-overview.md
-            displayName: teams, team, teamwork, Microsoft Teams
-          - name: Activity feed notifications
-            items:
-              - name: Send activity feed notifications
-                href: teams-send-activityfeednotifications.md
-              - name: Best practices
-                href: teams-activity-feed-notifications-best-practices.md  
+        - name: Overview
+          href: teams-concept-overview.md
+          displayName: teams, team, teamwork, Microsoft Teams
+        - name: Activity feed notifications
+          items:
+          - name: Send activity feed notifications
+            href: teams-send-activityfeednotifications.md
+          - name: Best practices
+            href: teams-activity-feed-notifications-best-practices.md
+        - name: Application access and tabs 
+            items:        
+            - name: Configure application access
+              href: cloud-communication-online-meeting-application-access-policy.md    
+            - name: Configure built-in tabs
+              href: teams-configuring-builtin-tabs.md
+            - name: Get system messages
+              href: system-messages.md      
+        - name: Bots  
+          items:
+          - name: Manage bot phone numbers
+            href: cloud-communications-phone-number.md
+          - name: Register a bot
+            href: cloud-communications-get-started.md   
+          - name: Send proactive messages with a bot
+            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context      
+        - name: Calls, groups, teams, online meetings 
+          items:      
           - name: Call records
             href: cloud-communications-callrecords.md  
+          - name: Supported call types
+            href: cloud-communications-calls.md    
           - name: Create a group and team
             href: teams-create-group-and-team.md
+          - name: List all teams
+            href: teams-list-all-teams.md   
           - name: Create or join online meetings
-            href: cloud-communications-online-meetings.md  
+            href: cloud-communications-online-meetings.md 
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
           - name: Choose a media hosting option
             href: cloud-communications-media.md
-          - name: Configure application access
-            href: cloud-communication-online-meeting-application-access-policy.md    
-          - name: Configure built-in tabs
-            href: teams-configuring-builtin-tabs.md
-          - name: Get system messages
-            href: system-messages.md  
-          - name: List all teams
-            href: teams-list-all-teams.md
-          - name: Licensing and payment models
-            href: teams-licenses.md 
-          - name: Manage bot phone numbers
-            href: cloud-communications-phone-number.md  
           - name: Online meeting artifacts and permissions
-            href: cloud-communications-online-meeting-artifacts.md       
-          - name: Protected APIs
-            href: teams-protected-apis.md 
-          - name: Register a bot
-            href: cloud-communications-get-started.md   
-          - name: Send proactive messages with a bot
-            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context  
-          - name: Subscribe to change notifications for online meetings
-            href: changenotifications-for-onlinemeeting.md
-          - name: Supported call types
-            href: cloud-communications-calls.md
-          - name: Subscribe to change notifications
-            href: teams-change-notification-in-microsoft-teams-overview.md
+            href: cloud-communications-online-meeting-artifacts.md
+        - name: Change notifications
+            items:
+            - name: Subscribe to change notifications
+              href: teams-change-notification-in-microsoft-teams-overview.md
+            - name: Subscribe to change notifications for online meetings
+              href: changenotifications-for-onlinemeeting.md    
+        - name: Licensing and payment models
+          href: teams-licenses.md       
+        - name: Protected APIs
+          href: teams-protected-apis.md 
       - name: To-do tasks
         displayName: Microsoft To Do
         items:
