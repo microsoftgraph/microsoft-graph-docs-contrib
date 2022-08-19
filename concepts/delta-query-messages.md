@@ -12,10 +12,9 @@ Delta query lets you query for additions, deletions, or updates to messages in a
 [delta](/graph/api/message-delta) function calls. Delta data enables you to maintain
 and synchronize a local store of a user's messages without having to fetch the entire set of the user's messages from the server every time.
 
-Delta query supports both full synchronization that retrieves all of the messages in a folder (for example, the user's Inbox),
-and incremental synchronization that retrieves all of the messages that have changed in that folder since
-the last synchronization. Typically, you would do an initial full synchronization of all the messages in a folder, and
-subsequently, get incremental changes to that folder periodically.
+Synchronizing message items in a local store can use the **delta** query for both the initial full synchronization along with subsequent incremental synchronizations. Typically, you would do an initial full synchronization of all the messages in a folder (for example, the user's Inbox), and then, get incremental changes to that folder periodically.
+
+To get incremental changes of only a certain type - created, updated, or deleted since the initial sync - do an initial round of synchronization of all the messages in the folder, and then get incremental changes of the specific type in subsequent rounds. Specify the desired change type as a query option in the initial **delta** request; Microsoft Graph automatically encodes any OData and custom query options into the @odata.nextLink or @odata.deltaLink provided in the response.
 
 ## Track message changes in a folder
 
