@@ -51,7 +51,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |customTaskExtensions|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) collection|The **customTaskExtension** instance.|
 |deletedItems|[deletedItemContainer](../resources/deleteditemcontainer.md)|Deleted workflows in your Lifecycle Workflows instance.|
-|settings|[lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md)|The settings of the Lifecycle Workflows instance.|
+|settings|[microsoft.graph.identityGovernance.lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md)|The settings of the Lifecycle Workflows instance.|
 |taskDefinitions|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) collection|The definition of tasks within the Lifecycle Workflows instance.|
 |workflows|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) collection|The workflows in the Lifecycle Workflows instance.|
 |workflowTemplates|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md) collection|The workflow templates in the Lifecycle Workflow instance. |

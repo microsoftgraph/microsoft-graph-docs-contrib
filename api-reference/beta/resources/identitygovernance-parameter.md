@@ -21,7 +21,7 @@ A resource type denoting the parameters of workflows created using Lifecycle Wor
 |:---|:---|:---|
 |name|String|The name of the parameter.|
 |values|String collection|The values of the parameter.|
-|valueType|valueType|The value type of the parameter. The possible values are: `enum`, `string`, `int`, `bool`, `unknownFutureValue`.|
+|valueType|String|The value type of the parameter. The possible values are: `enum`, `string`, `int`, `bool`, `unknownFutureValue`.|
 
 ## Relationships
 

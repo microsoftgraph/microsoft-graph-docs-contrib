@@ -45,7 +45,7 @@ Inherits from [entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |task|[task](../resources/identitygovernance-task.md)|The tasks in the report.|
-|taskDefinition|[taskDefinition](../resources/identitygovernance-taskdefinition.md)|The task definition of tasks in the report.|
+|taskDefinition|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md)|The task definition of tasks in the report.|
 |taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The task processing results of the tasks in the report.|
 
 ## JSON representation
