@@ -357,7 +357,7 @@ GET /sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-
 
 The following is an example of the response.
 
-<!-- { "blockType": "response", "name": "get-delta-latest", "isEmpty": true, "@odata.type": "microsoft.graph.listItem", "isCollection": true } -->
+<!-- { "blockType": "response", "name": "get-delta-latest_datalink_tokenislatest", "isEmpty": true, "@odata.type": "microsoft.graph.listItem", "isCollection": true } -->
 
 ```http
 HTTP/1.1 200 OK
