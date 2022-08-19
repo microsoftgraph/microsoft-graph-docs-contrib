@@ -67,7 +67,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments
 Content-type: application/json
-Content-length: 540
+Content-length: 973
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -78,8 +78,19 @@ Content-length: 540
     "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
-    "useDeviceContext": true
+    "@odata.type": "microsoft.graph.winGetAppAssignmentSettings",
+    "notifications": "showReboot",
+    "restartSettings": {
+      "@odata.type": "microsoft.graph.winGetAppRestartSettings",
+      "gracePeriodInMinutes": 4,
+      "countdownDisplayBeforeRestartInMinutes": 6,
+      "restartNotificationSnoozeDurationInMinutes": 10
+    },
+    "installTimeSettings": {
+      "@odata.type": "microsoft.graph.winGetAppInstallTimeSettings",
+      "useLocalTime": true,
+      "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
+    }
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -91,7 +102,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 589
+Content-Length: 1022
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -103,13 +114,26 @@ Content-Length: 589
     "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
-    "useDeviceContext": true
+    "@odata.type": "microsoft.graph.winGetAppAssignmentSettings",
+    "notifications": "showReboot",
+    "restartSettings": {
+      "@odata.type": "microsoft.graph.winGetAppRestartSettings",
+      "gracePeriodInMinutes": 4,
+      "countdownDisplayBeforeRestartInMinutes": 6,
+      "restartNotificationSnoozeDurationInMinutes": 10
+    },
+    "installTimeSettings": {
+      "@odata.type": "microsoft.graph.winGetAppInstallTimeSettings",
+      "useLocalTime": true,
+      "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
+    }
   },
   "source": "policySets",
   "sourceId": "Source Id value"
 }
 ```
+
+
 
 
 
