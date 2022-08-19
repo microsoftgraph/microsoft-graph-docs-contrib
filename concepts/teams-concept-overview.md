@@ -134,14 +134,14 @@ Enable users to engage with coworkers or customers by creating a group call so t
 
 
 ## Set up online meetings
-Whether scheduling a meeting between a doctor and a patient or between a user and their direct reports, is possible to build solutions that create meetings that users can rely on. For added flexibility, users can call other users and invite them to the meeting while it's ongoing. You can use the cloud communications API to:
+Whether scheduling a meeting between a doctor and a patient or between a user and their direct reports, it is possible to build solutions that create meetings that users can rely on. For added flexibility, users can call other users and invite them to the meeting while it's ongoing. You can use the cloud communications API to:
 
 - [Create an online meeting](/graph/api/application-post-onlinemeetings).
 - [Retrieve meeting details](/graph/api/onlinemeeting-get) of an online meeting.
 - [Join an online meeting](/graph/api/application-post-calls#example-5-join-scheduled-meeting-with-service-hosted-media).
 
 ## Send reminders reliably
-To enable users to receive reminders for an appointment or a payment deadline that is approaching, you can have a bot call a customer automatically. <!--If a customer misses the call, the bot will leave a voicemail with the automated message. (Add this back once bot to PSTN calling works)-->.
+To enable users to receive reminders for an appointment or a payment deadline that is approaching, you can have a bot call a customer automatically.<!--If a customer misses the call, the bot will leave a voicemail with the automated message.(Add this back once bot to PSTN calling works)--> 
 
 - [Call a customer](/graph/api/application-post-calls) on Teams.
 - [Play a recorded prompt](/graph/api/call-playprompt) to serve as a reminder.
