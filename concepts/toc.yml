@@ -479,13 +479,13 @@ items:
           - name: Best practices
             href: teams-activity-feed-notifications-best-practices.md
         - name: Application access and tabs 
-            items:        
-            - name: Configure application access
-              href: cloud-communication-online-meeting-application-access-policy.md    
-            - name: Configure built-in tabs
-              href: teams-configuring-builtin-tabs.md
-            - name: Get system messages
-              href: system-messages.md      
+          items:        
+          - name: Configure application access
+            href: cloud-communication-online-meeting-application-access-policy.md    
+          - name: Configure built-in tabs
+            href: teams-configuring-builtin-tabs.md
+          - name: Get system messages
+            href: system-messages.md      
         - name: Bots  
           items:
           - name: Manage bot phone numbers
