@@ -33,15 +33,22 @@ items:
     - name: Paging
       href: /graph/paging?context=graph/api/1.0
     - name: Query parameters
+      displayName: OData version 4.01, OData query parameters
       items:
         - name: Use query parameters
-          href: /graph/query-parameters?context=graph/api/1.0
           displayName: OData query parameters, OData
-        - name: Use the search query parameter
+          href: /graph/query-parameters?context=graph/api/1.0
+        - name: Use $filter
+          displayName: OData query parameters, OData
+          href: /graph/filter-query-parameter?context=graph/api/1.0
+        - name: Use $search
+          displayName: OData query parameters, OData
           href: /graph/search-query-parameter?context=graph/api/1.0
         - name: Advanced query capabilities
+          displayName: OData query parameters, OData
           href: /graph/aad-advanced-queries?context=graph/api/1.0
         - name: Optimize requests with query parameters
+          displayName: OData query parameters, OData
           href: /learn/modules/optimize-data-usage
     - name: Batching
       href: /graph/json-batching?context=graph/api/1.0
@@ -416,13 +423,13 @@ items:
           href: api/user-reprocesslicenseassignment.md
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
-        - name: List deleted users
-          href: api/directory-deleteditems-list.md
-        - name: Get deleted user
+        - name: List deleted items
+          href: api/directory-deleteditems-list.md 
+        - name: Get deleted item
           href: api/directory-deleteditems-get.md
-        - name: Permanently delete user
-          href: api/directory-deleteditems-delete.md
-        - name: Restore deleted user
+        - name: Permanently delete item
+          href: api/directory-deleteditems-delete.md       
+        - name: Restore deleted item
           href: api/directory-deleteditems-restore.md
       - name: Drive
         href: resources/drive.md
@@ -436,6 +443,8 @@ items:
         items:
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: List member of
           href: api/user-list-memberof.md
         - name: List transitive member of
@@ -629,6 +638,10 @@ items:
           href: api/group-delta.md
         - name: Assign license
           href: api/group-assignlicense.md
+        - name: List joined teams
+          href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: Group setting
           href: resources/groupsetting.md
           items:
@@ -783,7 +796,7 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md
+          href: api/directory-deleteditems-getuserownedobjects.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Permanently delete group
@@ -875,7 +888,7 @@ items:
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
         - name: List deleted applications owned by user
-          href: api/directory-deleteditems-user-owned.md
+          href: api/directory-deleteditems-getuserownedobjects.md
         - name: Get deleted application
           href: api/directory-deleteditems-get.md
         - name: Permanently delete application
@@ -903,6 +916,39 @@ items:
             href: api/application-addkey.md
           - name: Remove key
             href: api/application-removekey.md
+        - name: Extensions
+          items:
+          - name: Extension property
+            href: resources/extensionproperty.md
+            items:
+            - name: List
+              href: api/application-list-extensionproperty.md
+            - name: Create
+              href: api/application-post-extensionproperty.md
+            - name: Get
+              href: api/extensionproperty-get.md
+            - name: Delete
+              href: api/extensionproperty-delete.md
+            - name: Get available extension properties
+              href: api/directoryobject-getavailableextensionproperties.md
+        - name: Federated identity credentials
+          displayName: Workload identity federation, workload identities
+          items:
+          - name: Overview
+            href: resources/federatedidentitycredentials-overview.md
+          - name: Federated identity credentials
+            href: resources/federatedidentitycredential.md
+            items:
+              - name: List
+                href: api/application-list-federatedidentitycredentials.md
+              - name: Create
+                href: api/application-post-federatedidentitycredentials.md
+              - name: Get
+                href: api/federatedidentitycredential-get.md
+              - name: Update
+                href: api/federatedidentitycredential-update.md
+              - name: Delete
+                href: api/federatedidentitycredential-delete.md              
         - name: Owners
           items:
           - name: List
@@ -1292,9 +1338,9 @@ items:
         items:
         - name: Place
           href: resources/place.md
-        - name: Room type
+        - name: Room
           href: resources/room.md
-        - name: Room list type
+        - name: Room list
           href: resources/roomlist.md
         - name: List places
           href: api/place-list.md
@@ -3380,6 +3426,8 @@ items:
             href: resources/intune-devices-deviceoperatingsystemsummary.md
           - name: Device registration state
             href: resources/intune-devices-deviceregistrationstate.md
+          - name: Disk type
+            href: resources/intune-devices-disktype.md
           - name: Localized notification message
             href: resources/intune-notification-localizednotificationmessage.md
             items:
@@ -3495,6 +3543,8 @@ items:
               href: api/intune-devices-user-update.md
             - name: removeAllDevicesFromManagement action
               href: api/intune-devices-user-removealldevicesfrommanagement.md
+          - name: User experience analytics health state
+            href: resources/intune-devices-userexperienceanalyticshealthstate.md
           - name: Windows defender scan action result
             href: resources/intune-devices-windowsdefenderscanactionresult.md
           - name: Windows device account
@@ -4474,27 +4524,27 @@ items:
         href: resources/opentypeextension.md
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: Create open extension
+        - name: Create
           href: api/opentypeextension-post-opentypeextension.md
-        - name: Get open extension
+        - name: Get
           href: api/opentypeextension-get.md
-        - name: Update open extension
+        - name: Update
           href: api/opentypeextension-update.md
-        - name: Delete open extension
+        - name: Delete
           href: api/opentypeextension-delete.md
       - name: Schema extensions
         href: resources/schemaextension.md
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: List schema extensions
+        - name: List
           href: api/schemaextension-list.md
-        - name: Create schema extension
+        - name: Create
           href: api/schemaextension-post-schemaextensions.md
-        - name: Get schema extension
+        - name: Get
           href: api/schemaextension-get.md
-        - name: Update schema extension
+        - name: Update
           href: api/schemaextension-update.md
-        - name: Delete schema extension
+        - name: Delete
           href: api/schemaextension-delete.md
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
@@ -4661,7 +4711,7 @@ items:
           - name: Restore deleted item
             href: api/directory-deleteditems-restore.md
           - name: List deleted items owned by user
-            href: api/directory-deleteditems-user-owned.md
+            href: api/directory-deleteditems-getuserownedobjects.md
         - name: Device
           href: resources/device.md
           items:
@@ -4959,6 +5009,15 @@ items:
               href: api/microsoftauthenticatorauthenticationmethod-get.md
             - name: Delete
               href: api/microsoftauthenticatorauthenticationmethod-delete.md
+          - name: Software OATH token
+            href: resources/softwareOathAuthenticationMethod.md
+            items:
+            - name: List
+              href: api/authentication-list-softwareoathmethods.md
+            - name: Get
+              href: api/softwareOathAuthenticationMethod-get.md
+            - name: Delete
+              href: api/softwareOathAuthenticationMethod-delete.md
           - name: Windows Hello for Business
             href: resources/windowshelloforbusinessauthenticationmethod.md
             items:
@@ -4968,6 +5027,59 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
+          - name: Phone
+            href: resources/phoneauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-phonemethods.md
+            - name: Get
+              href: api/phoneauthenticationmethod-get.md
+            - name: Update
+              href: api/phoneauthenticationmethod-update.md
+            - name: Delete
+              href: api/phoneauthenticationmethod-delete.md
+            - name: Add
+              href: api/authentication-post-phonemethods.md
+            - name: Enable SMS sign-in
+              href: api/phoneauthenticationmethod-enablesmssignin.md
+            - name: Disable SMS sign-in
+              href: api/phoneauthenticationmethod-disablesmssignin.md
+          - name: Email
+            href: resources/emailauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-emailmethods.md
+            - name: Get
+              href: api/emailauthenticationmethod-get.md
+            - name: Update
+              href: api/emailauthenticationmethod-update.md
+            - name: Delete
+              href: api/emailauthenticationmethod-delete.md
+            - name: Add
+              href: api/authentication-post-emailmethods.md
+          - name: Certificate-based auth configuration
+            displayName: CBA
+            href: resources/certificatebasedauthconfiguration.md
+            items:
+            - name: List
+              href: api/certificatebasedauthconfiguration-list.md
+            - name: Create
+              href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+            - name: Get
+              href: api/certificatebasedauthconfiguration-get.md
+            - name: Delete
+              href: api/certificatebasedauthconfiguration-delete.md
+          - name: Password
+            href: resources/passwordauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-passwordmethods.md
+            - name: Get
+              href: api/passwordauthenticationmethod-get.md
+            - name: Reset
+              href: api/authenticationmethod-resetpassword.md
+            - name: Get operation status
+              href: api/longrunningoperation-get.md
           - name: Temporary Access Pass
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
@@ -4979,17 +5091,6 @@ items:
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete
               href: api/temporaryaccesspassauthenticationmethod-delete.md
-          - name: Certificate-based auth configuration
-            href: resources/certificatebasedauthconfiguration.md
-            items:
-            - name: List
-              href: api/certificatebasedauthconfiguration-list.md
-            - name: Create
-              href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-            - name: Get
-              href: api/certificatebasedauthconfiguration-get.md
-            - name: Delete
-              href: api/certificatebasedauthconfiguration-delete.md
         - name: Conditional access
           items:
           - name: Policies
@@ -5518,18 +5619,33 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List contacted reviewers
               href: api/accessreviewinstance-list-contactedreviewers.md
+          - name: Access review stage
+            href: resources/accessreviewstage.md
+            items:
+              - name: List
+                href: api/accessreviewinstance-list-stages.md
+              - name: Get
+                href: api/accessreviewstage-get.md
+              - name: Update
+                href: api/accessreviewstage-update.md
+              - name: Filter by current user
+                href: api/accessreviewstage-filterbycurrentuser.md
+              - name: Stop
+                href: api/accessreviewstage-stop.md
           - name: Access review instance decision item
-            displayName: access review decisions
+            displayName: access review decisions 
             href: resources/accessreviewinstancedecisionitem.md
             items:
-            - name: Get
-              href: api/accessreviewinstancedecisionitem-get.md
-            - name: List
+            - name: List decisions from an instance
               href: api/accessreviewinstance-list-decisions.md
-            - name: Update
-              href: api/accessreviewinstancedecisionitem-update.md
+            - name: List decisions from a stage of an instance
+              href: api/accessreviewstage-list-decisions.md
             - name: Filter by current user
               href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+            - name: Get
+              href: api/accessreviewinstancedecisionitem-get.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
           - name: Access review history definition
             href: resources/accessreviewhistorydefinition.md
             items:
@@ -5600,6 +5716,8 @@ items:
             items:
             - name: List
               href: api/entitlementmanagement-list-assignments.md
+            - name: Get
+              href: api/accesspackageassignment-get.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
             - name: Reprocess
@@ -6768,6 +6886,20 @@ items:
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+      - name: Document set version
+        items:
+        - name: Document set version
+          href: resources/documentsetversion.md
+        - name: List
+          href: api/listitem-list-documentsetversions.md
+        - name: Create
+          href: api/listitem-post-documentsetversions.md
+        - name: Get
+          href: api/documentsetversion-get.md
+        - name: Delete
+          href: api/documentsetversion-delete.md
+        - name: Restore
+          href: api/documentsetversion-restore.md
       - name: Rich long-running operation
         items:
         - name: Rich long-running operation
@@ -6951,6 +7083,8 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
+        - name: List your associated teams
+          href: api/associatedteaminfo-list.md
         - name: Get primary channel
           href: api/team-get-primarychannel.md
         - name: Get team photo
@@ -6976,6 +7110,8 @@ items:
           href: api/group-delete.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: List members
           href: api/group-list-members.md
         - name: Add member
@@ -6999,7 +7135,7 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md
+          href: api/directory-deleteditems-getuserownedobjects.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Permanently delete group
@@ -7009,8 +7145,12 @@ items:
       - name: Channel
         href: resources/channel.md
         items:
+        - name: List all channels
+          href: api/team-list-allchannels.md
         - name: List channels
           href: api/channel-list.md
+        - name: List incoming channels
+          href: api/team-list-incomingchannels.md
         - name: Create channel
           href: api/channel-post.md
         - name: Get channel
@@ -7019,6 +7159,8 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Remove incoming channel
+          href: api/team-delete-incomingchannels.md
         - name: Add member
           href: api/channel-post-members.md
         - name: Complete migration for channel
@@ -7055,6 +7197,16 @@ items:
           href: api/channel-update-members.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Check user access
+          href: api/channel-doesuserhaveaccess.md
+        - name: List teams sharing a channel
+          href: api/sharedwithchannelteaminfo-list.md
+        - name: Get team sharing a channel
+          href: api/sharedwithchannelteaminfo-get.md
+        - name: Unshare channel with team
+          href: api/sharedwithchannelteaminfo-delete.md
+        - name: List allowed members
+          href: api/sharedwithchannelteaminfo-list-allowedmembers.md
       - name: Chat
         href: resources/chat.md
         items:

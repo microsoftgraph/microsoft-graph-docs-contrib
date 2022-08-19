@@ -10,15 +10,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new ApplyTagsPostRequestBody();
-$tagsToAdd1 = new ();
-$additionalData = [
-'id' => 'b4798d14-748d-468e-a1ec-96a2b1d49677', 
-];
-$tagsToAdd1->setAdditionalData($additionalData);
+$tagsToAddTag1 = new Tag();
+$tagsToAddTag1->setId('b4798d14-748d-468e-a1ec-96a2b1d49677');
 
 
-
-$tagsToAddArray []= $tagsToAdd1;
+$tagsToAddArray []= $tagsToAddTag1;
 $requestBody->setTagsToAdd($tagsToAddArray);
 
 

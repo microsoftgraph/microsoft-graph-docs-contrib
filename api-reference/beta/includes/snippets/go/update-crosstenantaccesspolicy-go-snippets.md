@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCrossTenantAccessPolicy()
-allowedCloudEndpoints := []String {
+allowedCloudEndpoints := []string {
 	"microsoftonline.us",
 	"partner.microsoftonline.cn",
 

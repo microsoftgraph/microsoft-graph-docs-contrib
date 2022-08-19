@@ -68,7 +68,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationuser_2"
+  "name": "get_educationuser_2",
+  "sampleKeys": ["13012"]
 }-->
 
 ```msgraph-interactive

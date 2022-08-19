@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
-Get-MgUserMessage -UserId $userId -Property "subject,body,bodyPreview,uniqueBody" 
+Get-MgUserMessage -UserId $userId -Property "subject,body,bodyPreview,uniqueBody"  -OutFile $outFileId
 
 ```

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Users
 
-Get-MgUserMemberOf -UserId $userId
+Get-MgUserMemberOf -UserId $userId -OutFile $outFileId
 
 ```

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgAppCatalogTeamApp -Filter "distributionMethod eq 'organization'" 
+Get-MgAppCatalogTeamApp -Filter "distributionMethod eq 'organization'"  -OutFile $outFileId
 
 ```

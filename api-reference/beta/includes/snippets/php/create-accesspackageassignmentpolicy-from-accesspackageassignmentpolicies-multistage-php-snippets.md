@@ -18,7 +18,7 @@ $requestBody->setDescription('Allow users from configured connected organization
 
 $requestBody->setCanExtend(false);
 
-$requestBody->setDurationInDays(durationInDays);
+$requestBody->setDurationInDays(365);
 
 $requestBody->setExpirationDateTime(null);
 
@@ -27,7 +27,7 @@ $requestorSettings->setScopeType('AllExistingConnectedOrganizationSubjects');
 
 $requestorSettings->setAcceptRequests(true);
 
-$requestorSettings->setAllowedRequestors(]);
+$requestorSettings->setAllowedRequestors([]);
 
 
 $requestBody->setRequestorSettings($requestorSettings);
@@ -41,13 +41,13 @@ $requestApprovalSettings->setIsRequestorJustificationRequired(true);
 $requestApprovalSettings->setApprovalMode('Serial');
 
 $approvalStagesApprovalStage1 = new ApprovalStage();
-$approvalStagesApprovalStage1->setApprovalStageTimeOutInDays(approvalStageTimeOutInDays);
+$approvalStagesApprovalStage1->setApprovalStageTimeOutInDays(14);
 
 $approvalStagesApprovalStage1->setIsApproverJustificationRequired(true);
 
 $approvalStagesApprovalStage1->setIsEscalationEnabled(true);
 
-$approvalStagesApprovalStage1->setEscalationTimeInMinutes(escalationTimeInMinutes);
+$approvalStagesApprovalStage1->setEscalationTimeInMinutes(11520);
 
 $primaryApproversUserSet1 = new UserSet();
 $primaryApproversUserSet1->set@odatatype('#microsoft.graph.groupMembers');
@@ -93,13 +93,13 @@ $approvalStagesApprovalStage1->setEscalationApprovers($escalationApproversArray)
 
 $approvalStagesArray []= $approvalStagesApprovalStage1;
 $approvalStagesApprovalStage2 = new ApprovalStage();
-$approvalStagesApprovalStage2->setApprovalStageTimeOutInDays(approvalStageTimeOutInDays);
+$approvalStagesApprovalStage2->setApprovalStageTimeOutInDays(14);
 
 $approvalStagesApprovalStage2->setIsApproverJustificationRequired(true);
 
 $approvalStagesApprovalStage2->setIsEscalationEnabled(true);
 
-$approvalStagesApprovalStage2->setEscalationTimeInMinutes(escalationTimeInMinutes);
+$approvalStagesApprovalStage2->setEscalationTimeInMinutes(11520);
 
 $primaryApproversUserSet1 = new UserSet();
 $primaryApproversUserSet1->set@odatatype('#microsoft.graph.groupMembers');
@@ -158,9 +158,9 @@ $accessReviewSettings->setReviewerType('Self');
 
 $accessReviewSettings->setStartDateTime(new DateTime('2020-04-01T07:59:59.998Z'));
 
-$accessReviewSettings->setDurationInDays(durationInDays);
+$accessReviewSettings->setDurationInDays(25);
 
-$accessReviewSettings->setReviewers(]);
+$accessReviewSettings->setReviewers([]);
 
 
 $requestBody->setAccessReviewSettings($accessReviewSettings);

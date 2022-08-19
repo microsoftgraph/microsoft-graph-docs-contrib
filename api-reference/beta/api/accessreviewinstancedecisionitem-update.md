@@ -2,7 +2,7 @@
 title: "Update accessReviewInstanceDecisionItem"
 description: "Update an existing accessReviewInstanceDecisionItem object for which the calling user is the reviewer."
 ms.localizationpriority: medium
-author: "zhusijia26"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

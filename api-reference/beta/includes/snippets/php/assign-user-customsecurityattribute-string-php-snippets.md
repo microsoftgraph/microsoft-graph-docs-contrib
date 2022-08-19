@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new User();
 $customSecurityAttributes = new CustomSecurityAttributeValue();
 $additionalData = [
-'Engineering' => $customSecurityAttributes = new ();
+'Engineering' => $customSecurityAttributes = new Engineering();
 $		customSecurityAttributes->set@odatatype('#Microsoft.DirectoryServices.CustomSecurityAttributeValue');
 
 $		customSecurityAttributes->setProjectDate('2022-10-01');
