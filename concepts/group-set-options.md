@@ -18,10 +18,12 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 | Supported values for resourceBehaviorOptions | Description                                                  | Default if not set                                                |
 | :------------------------------------------- | :----------------------------------------------------------- | :---------------------------------------------------------------- |
 | AllowOnlyMembersToPost                       | Only group _members_ can post conversations to the group.    | Any user in the organization can post conversations to the group. |
+| CalendarMemberReadOnly                       | Members can view the group calendar in Outlook but cannot make changes.   | Members can view and edit the group calendar in Outlook.|
+| ConnectorsDisabled                          | Changes made to the group in Exchange Online are not synced back to on-premises Active Directory.  | Changes made to the group in Exchange Online are synced back to on-premises Active Directory.  |
 | HideGroupInOutlook                           | This group is hidden in Outlook experiences.                 | All groups are visible and discoverable in Outlook experiences.   |
+| SubscribeMembersToCalendarEventsDisabled     | Members are not subscribed to the group's calendar events in Outlook.     | Members are not subscribed to the group's calendar events. |
 | SubscribeNewGroupMembers                     | Group members are subscribed to receive group conversations. | Group members do not receive group conversations.                 |
 | WelcomeEmailDisabled                         | Welcome emails are not sent to new members.                  | A welcome email is sent to a new member on joining the group.     |
-
 ## Provision groups
 
 **resourceProvisioningOptions** is a string collection that specifies group resources to be provisioned as part of the Microsoft 365 group. These resources can be specified during group creation or update.

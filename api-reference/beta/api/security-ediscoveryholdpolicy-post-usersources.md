@@ -42,17 +42,17 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHo
 ## Request body
 In the request body, supply a JSON representation of the [userSource](../resources/security-usersource.md) object.
 
-You can specify the following properties when creating a **userSource**.
+You can specify the following properties when you create a **userSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |email|String|SMTP address of the user.|
-|includedSources|String|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [userSource](../resources/security-usersource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.userSource](../resources/security-usersource.md) object in the response body.
 
 ## Examples
 
@@ -74,6 +74,7 @@ Content-Type: application/json
     "includedSources": "mailbox, site"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-usersource-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,12 +95,16 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-usersource-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-usersource-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

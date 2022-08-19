@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-printerShareId := "printerShare-id"
-groupId := "group-id"
-graphClient.Print().SharesById(&printerShareId).AllowedGroupsById(&groupId).$ref().Delete()
+
+graphClient.Print().SharesById("printerShare-id").AllowedGroupsById("group-id").$ref().Delete()
 
 
 ```

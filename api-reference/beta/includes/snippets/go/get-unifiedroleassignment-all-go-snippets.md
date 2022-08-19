@@ -7,18 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.TransitiveRoleAssignmentsRequestBuilderGetQueryParameters{
-	Count: true,
-	Filter: "principalId%20eq%20'2c7936bc-3517-40f3-8eda-4806637b6516'",
-}
 headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+	"ConsistencyLevel": "eventual",
 }
-options := &msgraphsdk.TransitiveRoleAssignmentsRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
+requestParameters := &graphconfig.TransitiveRoleAssignmentsRequestBuilderGetQueryParameters{
+	Count: true,
+	Filter: "principalId eq '2c7936bc-3517-40f3-8eda-4806637b6516'",
+}
+configuration := &graphconfig.TransitiveRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.RoleManagement().Directory().TransitiveRoleAssignments().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.RoleManagement().Directory().TransitiveRoleAssignments().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

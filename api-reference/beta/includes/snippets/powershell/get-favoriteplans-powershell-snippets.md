@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Planner
 
 # A UPN can also be used as -UserId.
-Get-MgUserPlannerFavoritePlan -UserId $userId
+Get-MgUserPlannerFavoritePlan -UserId $userId -OutFile $outFileId
 
 ```

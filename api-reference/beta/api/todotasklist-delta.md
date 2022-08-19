@@ -62,6 +62,8 @@ _id_ property is always returned.
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
+> **Note:** In the request header, the value `odata.maxpagesize` should be greater than or equal to 10 to get the correct `nextLink` value.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and [todoTaskList](../resources/todotasklist.md) collection object in the response body.
@@ -77,7 +79,7 @@ The main differences between tracking **todoTaskList** and tracking **todoTask**
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/beta/me/todo/lists/delta
-Prefer: odata.maxpagesize=2
+Prefer: odata.maxpagesize=12
 ```
 ### Response
 
@@ -88,7 +90,7 @@ getting all the changes for that round.
 
 The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
 
-Note: The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK

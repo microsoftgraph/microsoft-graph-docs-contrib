@@ -107,16 +107,13 @@ Content-Type: application/json
     ] 
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -129,6 +126,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -172,7 +173,7 @@ Content-Type: application/json
         "content": "You have moved up the queue"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
@@ -225,7 +226,7 @@ Content-Type: application/json
         "content": "You have moved up the queue"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "jacob@contoso.com"
     },
     "templateParameters": [
@@ -240,16 +241,13 @@ Content-Type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-upn-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-upn-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-upn-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -262,6 +260,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-upn-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-upn-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -303,7 +305,7 @@ Content-Type: application/json
         "content": "New deployment requires your approval"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [

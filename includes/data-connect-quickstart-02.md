@@ -19,13 +19,13 @@ In this step, you will setup your Microsoft 365 tenant to enable usage of Micros
 
 1. Open a browser and go to your [Microsoft 365 Admin Portal](https://admin.microsoft.com/).
 
-1. On the sidebar navigation, select **Active Groups**.
+1. On the sidebar navigation, select **Active teams & Groups**.
 
     ![A screenshot showing the active groups in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-act-grp.png)
 
 1. Select the **Add a group** button.
 
-1. Use the following to create the new **mail-enabled** security group and select the **Add** button.
+1. Use the following to create the new **mail-enabled** security group.
    - **Type**: Mail-enabled security
 
     ![A screenshot showing a user selecting the mail-enabled security for a new group in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-mail-sec.png)
@@ -34,23 +34,20 @@ In this step, you will setup your Microsoft 365 tenant to enable usage of Micros
 
     ![A screenshot showing a user is giving the group a name of "Consent Request Approvers" in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-cons-apprv.png)
 
+   - **Owners**: Click **Assign owners** in the right pane and add at least one owner for the group.
+   - **Members**: Click **Add members** and add the two users that you enabled the **Global administrator** role to this group.
    - **Email Prefix**: consentrequestapprovers
 
     ![A screenshot showing a user creating the email address for the previously created group in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-cons-apprv-pref.png)
 
-1. **It can take up to an hour** before the newly created group shows up in the list. When the group has been created, select it.
+1. Finally click **Create group**. It can take up to an hour** before the newly created group shows up in the list. 
 
-1. Go to the **Active groups** option again and search for the group you just created.
-
-1. Select the group and in the **Members** tab, select **View all and manage members**.
-
-1. Add the two users that you enabled the **Global administrator** role to this new group.
 
 ## Enable Microsoft Graph Data Connect in your Microsoft 365 tenant
 
 In this step, you will enable the Microsoft Graph Data Connect service on your Microsoft 365 tenant.
 
-1. While you are still signed in to the Microsoft 365 Admin Portal, select the **Settings > Org settings** menu item.
+1. While you are still signed in to the Microsoft 365 Admin Portal, select the **Settings > Org settings** menu item. You might have to click **Show all** before you are able to view **Settings**.
 
 1. Select the **Microsoft Graph Data Connect** service.
 
