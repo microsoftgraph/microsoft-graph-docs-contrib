@@ -67,7 +67,8 @@ The following is an example of the request. You must include the **owner** prope
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_schemaextension"
+  "name": "update_schemaextension",
+  "sampleKeys": ["exto6x7sfft_courses"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/schemaExtensions/exto6x7sfft_courses

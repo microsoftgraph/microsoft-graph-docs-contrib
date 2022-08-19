@@ -11,7 +11,7 @@ var checklistItem = new ChecklistItem
 	DisplayName = "Final sign-off from the team"
 };
 
-await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].ChecklistItems
+await graphClient.Me.Tasks.Lists["{baseTaskList-id}"].Tasks["{baseTask-id}"].ChecklistItems
 	.Request()
 	.AddAsync(checklistItem);
 

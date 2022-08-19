@@ -45,6 +45,7 @@ PATCH /deviceManagement/virtualEndpoint/organizationSettings
 
 |Property|Type|Description|
 |:---|:---|:---|
+|enableMEMAutoEnroll|Boolean|Specifies whether new Cloud PCs will be automatically enrolled in Microsoft Endpoint Manager(MEM). The default value is `false`. Optional.|
 |osVersion|cloudPcOperatingSystem|The version of the operating system (OS) to provision on Cloud PCs. The possible values are: `windows10`, `windows11`, `unknownFutureValue`. Optional.|
 |userAccountType|cloudPcUserAccountType|The account type of the user on provisioned Cloud PCs. The possible values are: `standardUser`, `administrator`, `unknownFutureValue`. Optional.|
 |windowsSettings|cloudPcWindowsSettings|The settings to apply to Windows while creating Cloud PCs for this organization. The default language value is `en-US`.|
@@ -71,17 +72,14 @@ Content-length: 127
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
-  "userAccountType": "standardUser",
+  "enableMEMAutoEnroll": true,
   "osVersion": "windows11",
+  "userAccountType": "standardUser",
   "windowsSettings": {
     "language": "en-US"
   }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-cloudpcorganizationsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-cloudpcorganizationsettings-javascript-snippets.md)]

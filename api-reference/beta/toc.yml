@@ -33,15 +33,22 @@ items:
     - name: Paging
       href: /graph/paging?context=graph/api/beta
     - name: Query parameters
+      displayName: OData version 4.01, OData query parameters
       items:
         - name: Use query parameters
-          href: /graph/query-parameters?context=graph/api/beta
           displayName: OData query parameters, OData
-        - name: Use the search query parameter
+          href: /graph/query-parameters?context=graph/api/beta
+        - name: Use $filter
+          displayName: OData query parameters, OData
+          href: /graph/filter-query-parameter?context=graph/api/beta
+        - name: Use $search
+          displayName: OData query parameters, OData
           href: /graph/search-query-parameter?context=graph/api/beta
         - name: Advanced query capabilities
+          displayName: OData query parameters, OData
           href: /graph/aad-advanced-queries?context=graph/api/beta
         - name: Optimize requests with query parameters
+          displayName: OData query parameters, OData
           href: /learn/modules/optimize-data-usage
     - name: Batching
       href: /graph/json-batching?context=graph/api/beta
@@ -384,8 +391,18 @@ items:
           href: resources/cloudpc.md
         - name: List cloudPCs
           href: api/user-list-cloudpcs.md
+        - name: Get cloudPC
+          href: api/cloudpc-get.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
+        - name: Reboot
+          href: api/cloudpc-reboot.md
+        - name: Rename
+          href: api/cloudpc-rename.md
+        - name: Reprovision
+          href: api/cloudpc-reprovision.md
+        - name: Troubleshoot
+          href: api/cloudpc-troubleshoot.md
       - name: Contacts
         items:
         - name: Contact
@@ -448,13 +465,13 @@ items:
           href: api/user-reprocesslicenseassignment.md
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
-        - name: List deleted users
+        - name: List deleted items
           href: api/directory-deleteditems-list.md
-        - name: Get deleted user
+        - name: Get deleted item
           href: api/directory-deleteditems-get.md
-        - name: Permanently delete user
+        - name: Permanently delete item
           href: api/directory-deleteditems-delete.md
-        - name: Restore deleted user
+        - name: Restore deleted item
           href: api/directory-deleteditems-restore.md
       - name: Drive
         href: resources/drive.md
@@ -838,7 +855,7 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md
+          href: api/directory-deleteditems-getuserownedobjects.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Permanently delete group
@@ -949,7 +966,7 @@ items:
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
         - name: List deleted applications owned by user
-          href: api/directory-deleteditems-user-owned.md
+          href: api/directory-deleteditems-getuserownedobjects.md
         - name: Get deleted application
           href: api/directory-deleteditems-get.md
         - name: Permanently delete application
@@ -977,7 +994,7 @@ items:
             href: api/application-addkey.md
           - name: Remove key
             href: api/application-removekey.md
-        - name: Federated identity credentials (preview)
+        - name: Federated identity credentials
           displayName: Workload identity federation, workload identities
           items:
           - name: Overview
@@ -1513,10 +1530,12 @@ items:
         items:
           - name: Place
             href: resources/place.md
-          - name: Room type
+          - name: Room
             href: resources/room.md
-          - name: Room list type
+          - name: Room list
             href: resources/roomlist.md
+          - name: Workspace
+            href: resources/workspace.md
           - name: List places
             href: api/place-list.md
           - name: Get place
@@ -1541,232 +1560,8 @@ items:
           href: api/subscription-update.md
         - name: Delete
           href: api/subscription-delete.md
-        - name: Change notification collection
           href: resources/changenotificationcollection.md
     - name: Compliance
-      displayName: Compliance API, Microsoft Graph Compliance API
-      items:
-      - name: Overview
-        href: resources/complianceapioverview.md
-      - name: eDiscovery (preview)
-        items:
-        - name: Overview
-          href: resources/ediscovery-eDiscoveryapioverview.md
-        - name: eDiscovery case
-          href: resources/ediscovery-case.md
-          items:
-          - name: List
-            href: api/ediscovery-case-list.md
-          - name: Create
-            href: api/ediscovery-case-post.md
-          - name: Get
-            href: api/ediscovery-case-get.md
-          - name: Update
-            href: api/ediscovery-case-update.md
-          - name: Delete
-            href: api/ediscovery-case-delete.md
-          - name: Close
-            href: api/ediscovery-case-close.md
-          - name: Reopen
-            href: api/ediscovery-case-reopen.md
-          - name: List custodians
-            href: api/ediscovery-case-list-custodians.md
-          - name: Create custodian
-            href: api/ediscovery-case-post-custodians.md
-          - name: List legal holds
-            href: api/ediscovery-case-list-legalholds.md
-          - name: Create legal hold
-            href: api/ediscovery-case-post-legalholds.md
-          - name: List review sets
-            href: api/ediscovery-case-list-reviewsets.md
-          - name: Create review set
-            href: api/ediscovery-case-post-reviewsets.md
-          - name: Get settings
-            href: api/ediscovery-casesettings-get.md
-          - name: Update settings
-            href: api/ediscovery-casesettings-update.md
-          - name: Reset to default
-            href: api/ediscovery-casesettings-resettodefault.md
-          - name: List source collections
-            href: api/ediscovery-case-list-sourcecollections.md
-          - name: Create source collection
-            href: api/ediscovery-case-post-sourcecollections.md
-          - name: List tags
-            href: api/ediscovery-case-list-tags.md
-          - name: Create tag
-            href: api/ediscovery-case-post-tags.md
-        - name: Custodian
-          href: resources/ediscovery-custodian.md
-          items:
-          - name: List
-            href: api/ediscovery-case-list-custodians.md
-          - name: Create
-            href: api/ediscovery-case-post-custodians.md
-          - name: Get
-            href: api/ediscovery-custodian-get.md
-          - name: Update
-            href: api/ediscovery-custodian-update.md
-          - name: Activate
-            href: api/ediscovery-custodian-activate.md
-          - name: Release
-            href: api/ediscovery-custodian-release.md
-        - name: Legal hold
-          href: resources/ediscovery-legalhold.md
-          items:
-          - name: List
-            href: api/ediscovery-case-list-legalholds.md
-          - name: Create
-            href: api/ediscovery-case-post-legalholds.md
-          - name: Get
-            href: api/ediscovery-legalhold-get.md
-          - name: Update
-            href: api/ediscovery-legalhold-update.md
-          - name: Delete
-            href: api/ediscovery-legalhold-delete.md
-        - name: Non-custodial data sources
-          href: resources/ediscovery-noncustodialdatasource.md
-          items:
-          - name: List
-            href: api/ediscovery-noncustodialdatasource-list.md
-          - name: Create
-            href: api/ediscovery-noncustodialdatasource-post.md
-          - name: Get
-            href: api/ediscovery-noncustodialdatasource-get.md
-          - name: List datasource
-            href: api/ediscovery-noncustodialdatasource-list-datasource.md
-          - name: Release
-            href: api/ediscovery-noncustodialdatasource-release.md
-        - name: Review set
-          href: resources/ediscovery-reviewset.md
-          items:
-          - name: List
-            href: api/ediscovery-case-list-reviewsets.md
-          - name: Create
-            href: api/ediscovery-case-post-reviewsets.md
-          - name: Get
-            href: api/ediscovery-reviewset-get.md
-        - name: Review set query
-          href: resources/ediscovery-reviewsetquery.md
-          items:
-          - name: List
-            href: api/ediscovery-reviewsetquery-list.md
-          - name: Create
-            href: api/ediscovery-reviewsetquery-post.md
-          - name: Get
-            href: api/ediscovery-reviewsetquery-get.md
-          - name: Update
-            href: api/ediscovery-reviewsetquery-update.md
-          - name: Delete
-            href: api/ediscovery-reviewsetquery-delete.md
-          - name: Apply tags
-            href: api/ediscovery-reviewsetquery-applytags.md
-        - name: Source collection
-          href: resources/ediscovery-sourcecollection.md
-          items:
-          - name: List
-            href: api/ediscovery-case-list-sourcecollections.md
-          - name: Create
-            href: api/ediscovery-case-post-sourcecollections.md
-          - name: Get
-            href: api/ediscovery-sourcecollection-get.md
-          - name: Update
-            href: api/ediscovery-sourcecollection-update.md
-          - name: Delete
-            href: api/ediscovery-sourcecollection-delete.md
-          - name: List custodian sources
-            href: api/ediscovery-sourcecollection-list-custodiansources.md
-          - name: Add custodian sources
-            href: api/ediscovery-sourcecollection-post-custodiansources.md
-          - name: List additional sources
-            href: api/ediscovery-sourcecollection-list-additionalsources.md
-          - name: Add additional sources
-            href: api/ediscovery-sourcecollection-post-additionalsources.md
-          - name: Estimate statistics
-            href: api/ediscovery-sourcecollection-estimatestatistics.md
-          - name: List add to review set operations
-            href: api/ediscovery-sourcecollection-list-addtoreviewsetoperation.md
-          - name: List last estimate operation
-            href: api/ediscovery-sourcecollection-list-lastestimatestatisticsoperation.md
-          - name: Purge data
-            href: api/ediscovery-sourcecollection-purgedata.md
-        - name: Tag
-          href: resources/ediscovery-tag.md
-          items:
-          - name: List
-            href: api/ediscovery-case-list-tags.md
-          - name: Create
-            href: api/ediscovery-case-post-tags.md
-          - name: Get
-            href: api/ediscovery-tag-get.md
-          - name: Update
-            href: api/ediscovery-tag-update.md
-          - name: Delete
-            href: api/ediscovery-tag-delete.md
-          - name: List child tags
-            href: api/ediscovery-tag-childtags.md
-          - name: List tags as hierarchy
-            href: api/ediscovery-tag-ashierarchy.md
-      - name: Records management (preview)
-        items:
-        - name: Overview
-          href: resources/security-recordsManagement-overview.md
-        - name: Retention label
-          href: resources/security-retentionlabel.md
-          items:
-          - name: List
-            href: api/security-retentionlabel-list.md
-          - name: Create
-            href: api/security-retentionlabel-post.md
-          - name: Get
-            href: api/security-retentionlabel-get.md
-          - name: Update
-            href: api/security-retentionlabel-update.md
-          - name: Delete
-            href: api/security-retentionlabel-delete.md
-        - name: Retention event
-          href: resources/security-retentionevent.md
-          items:
-          - name: List
-            href: api/security-retentionevent-list.md
-          - name: Create
-            href: api/security-retentionevent-post.md
-          - name: Get
-            href: api/security-retentionevent-get.md
-          - name: Delete
-            href: api/security-retentionevent-delete.md
-        - name: Retention event type
-          href: resources/security-retentioneventtype.md
-          items:
-          - name: List
-            href: api/security-retentioneventtype-list.md
-          - name: Create
-            href: api/security-retentioneventtype-post.md
-          - name: Get
-            href: api/security-retentioneventtype-get.md
-          - name: Update
-            href: api/security-retentioneventtype-update.md
-          - name: Delete
-            href: api/security-retentioneventtype-delete.md
-      - name: Subject rights request
-        items:
-        - name: Overview
-          href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
-        - name: Subject rights request
-          href: resources/subjectrightsrequest.md
-          items:
-          - name: List
-            href: api/subjectrightsrequest-list.md
-          - name: Create
-            href: api/subjectrightsrequest-post.md
-          - name: Get
-            href: api/subjectrightsrequest-get.md
-          - name: Update
-            href: api/subjectrightsrequest-update.md
-          - name: Get final report
-            href: api/subjectrightsrequest-getfinalreport.md
-          - name: Get final attachment
-            href: api/subjectrightsrequest-getfinalattachment.md
-          - name: List notes
             href: api/subjectrightsrequest-list-notes.md
           - name: Create note
             href: api/subjectrightsrequest-post-notes.md
@@ -10204,6 +9999,8 @@ items:
             href: api/cloudpc-changeuseraccounttype.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Get connectivity history
+            href: api/cloudpc-getcloudpcconnectivityhistory.md
           - name: Get launch info for user
             href: api/cloudpc-getcloudpclaunchinfo.md
           - name: Get remote action results
@@ -10564,7 +10361,7 @@ items:
           href: resources/managedtenants-myrole.md
           items:
           - name: List
-            href: api/managedtenants-managedtenant-list-myroles.md 
+            href: api/managedtenants-managedtenant-list-myroles.md
         - name: Tenant customized information
           href: resources/managedtenants-tenantcustomizedinformation.md
           items:
@@ -10802,7 +10599,7 @@ items:
         - name: Set up assignment resources folder
           href: api/educationassignment-setupresourcesfolder.md
         - name: Set up assignment feedback resources folder
-          href: api/educationassignment-setupfeedbackresourcesfolder.md          
+          href: api/educationassignment-setupfeedbackresourcesfolder.md
         - name: Get rubric attached to assignment
           href: api/educationassignment-get-rubric.md
         - name: List categories
@@ -10861,7 +10658,7 @@ items:
         - name: Add submission resource
           href: api/educationsubmission-post-resources.md
         - name: Add submission feedback resource outcome
-          href: api/educationfeedbackresourceoutcome-post-outcomes.md          
+          href: api/educationfeedbackresourceoutcome-post-outcomes.md
         - name: Get submission resource
           href: api/educationsubmissionresource-get.md
         - name: Delete submission resource
@@ -11475,7 +11272,7 @@ items:
           - name: Restore deleted item
             href: api/directory-deleteditems-restore.md
           - name: List deleted items owned by user
-            href: api/directory-deleteditems-user-owned.md
+            href: api/directory-deleteditems-getuserownedobjects.md
         - name: Device
           href: resources/device.md
           items:
@@ -11993,7 +11790,7 @@ items:
             href: resources/emailauthenticationmethod.md
             items:
             - name: List
-              href: api/emailauthenticationmethod-list.md
+              href: api/authentication-list-emailmethods.md
             - name: Get
               href: api/emailauthenticationmethod-get.md
             - name: Update
@@ -12001,7 +11798,7 @@ items:
             - name: Delete
               href: api/emailauthenticationmethod-delete.md
             - name: Add
-              href: api/emailauthenticationmethod-post.md
+              href: api/authentication-post-emailmethods.md
           - name: Password
             href: resources/passwordauthenticationmethod.md
             items:
@@ -12010,10 +11807,11 @@ items:
             - name: Get
               href: api/passwordauthenticationmethod-get.md
             - name: Reset
-              href: api/passwordauthenticationmethod-resetpassword.md
+              href: api/authenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/authenticationoperation-get.md
-        - name: Certificate-based auth configuration
+        - name: Certificate-based authentication configuration
+          displayName: CBA
           href: resources/certificatebasedauthconfiguration.md
           items:
           - name: List
@@ -12116,7 +11914,7 @@ items:
             - name: Update
               href: api/crosstenantaccesspolicyconfigurationdefault-update.md
             - name: Reset to system default
-              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md            
+              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
           - name: Partner settings
             items:
             - name: Cross-tenant access partner settings
@@ -12130,7 +11928,7 @@ items:
             - name: Update
               href: api/crosstenantaccesspolicyconfigurationpartner-update.md
             - name: Delete
-              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md              
+              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -12157,7 +11955,7 @@ items:
             - name: Get
               href: api/externalidentitiespolicy-get.md
             - name: Update
-              href: api/externalidentitiespolicy-update.md    
+              href: api/externalidentitiespolicy-update.md
         - name: Identity protection
           href: resources/identityprotection-overview.md
           items:
@@ -12409,6 +12207,7 @@ items:
               - name: Delete
                 href: api/fido2authenticationmethodconfiguration-delete.md
             - name: X509 certificate
+              displayName: certificate-based authentication, CBA
               href: resources/x509Certificateauthenticationmethodconfiguration.md
               items:
               - name: Get
@@ -14151,9 +13950,10 @@ items:
         items:
         - name: Overview
           href: resources/report.md
-        - name: Settings
-          href: resources/adminreportsettings.md
+        - name: Admin report settings
           items:
+          - name: Admin report settings
+            href: resources/adminreportsettings.md
           - name: Get
             href: api/adminreportsettings-get.md
           - name: Update
@@ -14508,10 +14308,6 @@ items:
           items:
           - name: External activity
             href: resources/externalconnectors-externalactivity.md
-        - name: External activity base
-          items:
-          - name: External activity base
-            href: resources/externalconnectors-externalactivitybase.md
         - name: External activity result
           items:
           - name: External activity result
@@ -14558,8 +14354,9 @@ items:
       - name: Overview
         href: resources/security-api-overview.md
       - name: Actions (preview)
-        href: resources/securityaction.md
         items:
+        - name: Action
+          href: resources/securityaction.md
         - name: List security actions
           href: api/securityactions-list.md
         - name: Create security action
@@ -14568,17 +14365,60 @@ items:
           href: api/securityaction-get.md
         - name: Cancel security action
           href: api/securityaction-cancelsecurityaction.md
-      - name: Alerts
-        href: resources/alert.md
+      - name: Alerts and incidents (preview)
         items:
-        - name: List alerts
-          href: api/alert-list.md
-        - name: Get alert
-          href: api/alert-get.md
-        - name: Update alert
-          href: api/alert-update.md
-        - name: Update multiple alerts
-          href: api/alert-updatealerts.md
+        - name: Alert
+          items:
+          - name: Alert 
+            href: resources/security-alert.md
+          - name: List alerts
+            href: api/security-list-alerts_v2.md
+          - name: Get alert
+            href: api/security-alert-get.md 
+          - name: Update alert
+            href: api/security-alert-update.md
+        - name: Alert evidence
+          items: 
+          - name: Alert evidence
+            href: resources/security-alertevidence.md
+          - name: Analyzed message evidence
+            href: resources/security-analyzedMessageEvidence.md
+          - name: Cloud application evidence
+            href: resources/security-cloudApplicationEvidence.md
+          - name: Device evidence
+            href: resources/security-deviceEvidence.md
+          - name: File evidence
+            href: resources/security-fileEvidence.md
+          - name: IP evidence
+            href: resources/security-ipEvidence.md
+          - name: Mailbox evidence
+            href: resources/security-mailboxEvidence.md
+          - name: Mail cluster evidence
+            href: resources/security-mailClusterEvidence.md
+          - name: OAuth application evidence
+            href: resources/security-oauthApplicationEvidence.md
+          - name: Process evidence
+            href: resources/security-processEvidence.md
+          - name: Registry key evidence
+            href: resources/security-registryKeyEvidence.md
+          - name: Registry value evidence
+            href: resources/security-registryValueEvidence.md
+          - name: Security group evidence
+            href: resources/security-securityGroupEvidence.md
+          - name: URL evidence
+            href: resources/security-urlEvidence.md
+          - name: User evidence
+            href: resources/security-userEvidence.md
+        - name: Incident
+          items:
+          - name: Incident
+            href: resources/security-incident.md
+          - name: List incidents
+            href: api/security-list-incidents.md
+          - name: Get incident
+            href: api/security-incident-get.md   
+          - name: Update incident
+            href: api/security-incident-update.md
       - name: Attack simulation and training (preview)
         items:
         - name: Simulations
@@ -14683,7 +14523,7 @@ items:
         - name: Operation
           href : resources/security-caseoperation.md
           items:
-          - name: List case operations 
+          - name: List case operations
             href: api/security-ediscoverycase-list-operations.md
           - name: Get case opreation by id
             href: api/security-caseoperation-get.md
@@ -14809,8 +14649,8 @@ items:
           - name: Export (preview)
             href: api/security-ediscoveryreviewset-export.md
             items:
-              - name: Get download url
-                href: api/security-ediscoveryexportoperation-getdownloadurl.md
+            - name: Get download url
+              href: api/security-ediscoveryexportoperation-getdownloadurl.md
           - name: Query
             href: resources/security-ediscoveryreviewsetquery.md
             items:
@@ -14887,7 +14727,10 @@ items:
             href: api/security-sensitivitylabel-evaluateremoval.md
           - name: Extract content label
             href: api/security-sensitivitylabel-extractcontentlabel.md
-          - name: Label policy settings
+        - name: Sensitivity label policy
+          href: resources/security-informationprotectionpolicysetting.md
+          items:
+          - name: List
             href: api/security-informationprotectionpolicysetting-get.md
         - name: Threat assessment
           items:
@@ -14909,6 +14752,18 @@ items:
             href: api/informationprotection-post-threatassessmentrequests.md
           - name: Get
             href: api/threatassessmentrequest-get.md
+      - name: Legacy alerts
+        items:
+        - name: Alert
+          href: resources/alert.md        
+        - name: List alerts
+          href: api/alert-list.md
+        - name: Get alert
+          href: api/alert-get.md
+        - name: Update alert
+          href: api/alert-update.md
+        - name: Update multiple alerts
+          href: api/alert-updatealerts.md
       - name: Secure scores
         href: resources/securescores.md
         items:
@@ -14946,20 +14801,21 @@ items:
         href: resources/security-threatsubmission.md
         items:
         - name: Email threat submission
-          href: resources/security-emailthreatsubmission.md
           items:
+          - name: Email threat submission
+            href: resources/security-emailthreatsubmission.md
+          - name: Email content threat submission
+            href: resources/security-emailcontentthreatsubmission.md
+          - name: Email URL threat submission
+            href: resources/security-emailurlthreatsubmission.md
           - name: List
             href: api/security-emailthreatsubmission-list.md
           - name: Create
             href: api/security-emailthreatsubmission-post-emailthreats.md
           - name: Get
             href: api/security-emailthreatsubmission-get.md
-          - name: Review 
+          - name: Review
             href: api/security-emailthreatsubmission-review.md
-          - name: Email content threat submission
-            href: resources/security-emailcontentthreatsubmission.md
-          - name: Email URL threat submission
-            href: resources/security-emailurlthreatsubmission.md
         - name: Email threat submission policy
           href: resources/security-emailthreatsubmissionpolicy.md
           items:
@@ -14973,6 +14829,19 @@ items:
             href: api/security-emailthreatsubmissionpolicy-update.md
           - name: Delete
             href: api/security-emailthreatsubmissionpolicy-delete.md
+        - name: File threat submission
+          href: resources/security-filethreatsubmission.md
+          items:
+          - name: File content threat submission
+            href: resources/security-filecontentthreatsubmission.md
+          - name: File URL threat submission
+            href: resources/security-fileurlthreatsubmission.md
+          - name: List
+            href: api/security-filethreatsubmission-list.md
+          - name: Create
+            href: api/security-filethreatsubmission-post-filethreats.md
+          - name: Get
+            href: api/security-filethreatsubmission-get.md
         - name: URL threat submission
           href: resources/security-urlthreatsubmission.md
           items:
@@ -14982,19 +14851,6 @@ items:
             href: api/security-urlthreatsubmission-post-urlthreats.md
           - name: Get
             href: api/security-urlthreatsubmission-get.md
-        - name: File threat submission
-          href: resources/security-filethreatsubmission.md
-          items:
-          - name: List
-            href: api/security-filethreatsubmission-list.md
-          - name: Create
-            href: api/security-filethreatsubmission-post-filethreats.md
-          - name: Get
-            href: api/security-filethreatsubmission-get.md
-          - name: File URL threat submission
-            href: resources/security-fileurlthreatsubmission.md
-          - name: File content threat submission
-            href: resources/security-filecontentthreatsubmission.md
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
@@ -15241,7 +15097,7 @@ items:
           - name: Create
             href: api/termStore-relation-post.md
       - name: Tenant settings
-        items: 
+        items:
           - name: Settings
             href: resources/tenantadmin-settings.md
           - name: Get settings
@@ -15479,6 +15335,35 @@ items:
               href: api/chat-patch-tabs.md
             - name: Remove tab from chat
               href: api/chat-delete-tabs.md
+      - name: Employee learning
+        displayName: Viva Learning
+        items:
+        - name: Overview
+          href: resources/viva-learning-api-overview.md
+        - name: Learning provider
+          href: resources/learningprovider.md
+          items:
+          - name: List
+            href: api/employeeexperience-list-learningproviders.md
+          - name: Create
+            href: api/employeeexperience-post-learningproviders.md
+          - name: Get
+            href: api/learningprovider-get.md
+          - name: Update
+            href: api/learningprovider-update.md
+          - name: Delete
+            href: api/employeeexperience-delete-learningproviders.md
+        - name: Learning content
+          href: resources/learningcontent.md
+          items:
+          - name: List
+            href: api/learningprovider-list-learningcontents.md
+          - name: Get
+            href: api/learningcontent-get.md
+          - name: Update
+            href: api/learningcontent-update.md
+          - name: Delete
+            href: api/learningprovider-delete-learningcontents.md         
       - name: Messaging
         items:
         - name: Activity feed
@@ -16124,7 +16009,7 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: File attachment 
+      - name: File attachment
         items:
         - name: File attachment
           href: resources/taskfileattachment.md
@@ -16241,7 +16126,7 @@ items:
           - name: Update
             href: api/linkedresource_v2-update.md
           - name: Delete
-            href: api/linkedresource_v2-delete.md        
+            href: api/linkedresource_v2-delete.md
       - name: Outlook tasks (deprecated)
         items:
         - name: Outlook task (deprecated)

@@ -4024,6 +4024,58 @@
           }
         ]
       }
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "IssueResponder",
+      "subCapability": "PullRequestCommentResponder",
+      "version": "1.0",
+      "config": {
+        "conditions": {
+          "operator": "and",
+          "operands": [
+            {
+              "name": "isActivitySender",
+              "parameters": {
+                "user": {
+                  "type": "author"
+                }
+              }
+            },
+            {
+              "name": "isOpen",
+              "parameters": {}
+            },
+            {
+              "name": "commentContains",
+              "parameters": {
+                "commentPattern": "#sign-off"
+              }
+            }
+          ]
+        },
+        "eventType": "pull_request",
+        "eventNames": [
+          "issue_comment"
+        ],
+        "taskName": "Add ready for content review label if author comments #sign-off",
+        "actions": [
+          {
+            "name": "addLabel",
+            "parameters": {
+              "label": "ready for content review"
+            }
+          },
+          {
+            "name": "moveToProjectColumn",
+            "parameters": {
+              "isOrgProject": true,
+              "projectName": "Microsoft Graph Docs Content Review Queue",
+              "columnName": "Ready for review"
+            }
+          }
+        ]
+      }
     }
   ],
   "userGroups": []

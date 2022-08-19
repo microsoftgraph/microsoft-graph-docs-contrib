@@ -54,7 +54,8 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_externalitem"
+  "name": "delete_externalitem",
+  "sampleKeys": ["contosohr", "TSP228082938"]
 }
 -->
 ``` http
