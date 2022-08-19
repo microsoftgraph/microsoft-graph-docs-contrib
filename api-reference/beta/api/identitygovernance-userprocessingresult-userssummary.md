@@ -71,7 +71,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/workflowBase/userProcessingResults/userSsummary(startDateTime=String{timestamp},endDateTime=String{timestamp})
+GET https://graph.microsoft.com/beta/workflowBase/userProcessingResults/usersSummary(startDateTime=String{timestamp},endDateTime=String{timestamp})
 ```
 
 ### Response
