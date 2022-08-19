@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 
-```msgraph-interactive
+```
 GET https://graph.microsoft.com/v1.0/me/authentication/methods
 ```
 

@@ -7,12 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTeamsTab()
+requestBody := graphmodels.NewTeamsTab()
 displayName := "My Contoso Tab - updated again"
-requestBody.SetDisplayName(&displayName)
-chatId := "chat-id"
-teamsTabId := "teamsTab-id"
-graphClient.ChatsById(&chatId).TabsById(&teamsTabId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+graphClient.ChatsById("chat-id").TabsById("teamsTab-id").Patch(requestBody)
 
 
 ```

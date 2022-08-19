@@ -49,6 +49,7 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune-shared-devicee
 |installProgressTimeoutInMinutes|Int32|Set installation progress timeout in minutes|
 |allowDeviceUseOnInstallFailure|Boolean|Allow the user to continue using the device on installation failure|
 |selectedMobileAppIds|String collection|Selected applications to track the installation status|
+|allowNonBlockingAppInstallation|Boolean|Install all required apps as non blocking apps during white glove|
 |trackInstallProgressForAutopilotOnly|Boolean|Only show installation progress for Autopilot enrollment scenarios|
 |disableUserStatusTrackingAfterFirstUser|Boolean|Only show installation progress for first user post enrollment|
 
@@ -89,6 +90,7 @@ Here is a JSON representation of the resource.
   "selectedMobileAppIds": [
     "String"
   ],
+  "allowNonBlockingAppInstallation": true,
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true
 }

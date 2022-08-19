@@ -1,7 +1,7 @@
 ---
 title: "Get incremental changes for groups"
-description: "The delta query in Microsoft Graph lets you query for additions, deletions, or updates to supported resources. It's enabled through a series of delta requests. For groups, the delta query enables you to discover changes without fetching the entire set of groups to compare changes."
-author: "FaithOmbongi"
+description: "Use delta query to discover changes without fetching the entire set of groups to compare changes. Example shows a series of requests to track changes to groups."
+author: "jumasure"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -19,15 +19,7 @@ Track groups changes through one or more GET requests with the **delta** functio
 - The **delta** function.
 - A [state token](./delta-query-overview.md) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
 
-## Example to track changes to groups
-
-The following example shows a series  requests to track changes to groups:
-
-1. [Initial request](#initial-request) and [response](#initial-response)
-2. [nextLink request](#nextlink-request) and [response](#nextlink-response)
-3. [Final nextLink request](#final-nextlink-request) and [response](#final-nextlink-response)
-4. [deltaLink request](#deltalink-request) and [deltaLink response](#deltalink-response)
-
+## Example: track changes to groups
 
 The following example shows a series of requests to track changes to groups:
 
@@ -46,7 +38,7 @@ Take note of the following in the responses:
 
 To track changes in the group resource, make a request and include the **delta** function as a URL segment.
 
-Take note the following items:
+Take note of the following items:
 
 - The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.
 - The optional `$select` query parameter is also used to show how group members can be retrieved together with group objects. This allows tracking of membership changes, such as when users are added or removed from groups.
@@ -94,7 +86,8 @@ Content-type: application/json
 }
 ```
 
->**Note:** The `members@delta` property is included in the first group object - **All Company** - and contains the two current members of the group. **sg-HR** does not contain that property because the group does not have any members.
+> [!NOTE]
+> The `members@delta` property is included in the first group object - **All Company** - and contains the two current members of the group. **sg-HR** does not contain that property because the group does not have any members.
 
 ### nextLink request
 
@@ -209,7 +202,8 @@ Content-type: application/json
 
 If changes have occurred, a collection of changed groups is included. The response also contains either a `@odata.nextLink` - in case there are multiple pages of changes to retrieve - or a `@odata.deltaLink`. Implement the same pattern of following the `@odata.nextLink` and persist the final `@odata.deltaLink` for future calls.
 
->**Note:** This request might have replication delays for groups that were recently created, updated, or deleted. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
+> [!NOTE]
+> This request might have replication delays for groups that were recently created, updated, or deleted. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
 
 ```http
 HTTP/1.1 200 OK
@@ -241,7 +235,7 @@ Content-type: application/json
 }
 ```
 
-Some things to note about the example response above:
+Some things to note about the previous example response:
 
 - The objects are returned with the same set of properties originally specified via the `$select` query parameter.
 
@@ -257,7 +251,8 @@ Some things to note about the example response above:
 
 The `members@delta` property is included in group objects by default, when the `$select` query parameter hasn't been specified, or when the `$select=members` parameter is explicitly specified. For groups with many members, it's possible that all members can't fit into a single response. Implement the following pattern to handle such cases.
 
->**Note:** This pattern applies to both the initial retrieval of group state as well as to subsequent calls to get delta changes.
+> [!NOTE]
+> This pattern applies to both the initial retrieval of group state as well as to subsequent calls to get delta changes.
 
 Let's assume you're running the following delta query - either to capture the initial full state of groups, or later on to get delta changes:
 

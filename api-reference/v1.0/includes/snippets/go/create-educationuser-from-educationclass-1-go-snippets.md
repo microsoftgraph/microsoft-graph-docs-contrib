@@ -7,13 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/v1.0/education/users/13015",
-}
-educationClassId := "educationClass-id"
-educationUserId := "educationUser-id"
-graphClient.Education().ClassesById(&educationClassId).MembersById(&educationUserId).Post(requestBody)
+requestBody := graphmodels.NewReferenceCreate()
+"@odata.id" := "https://graph.microsoft.com/v1.0/education/users/13015"
+requestBody.Set"@odata.id"(&"@odata.id") 
+
+graphClient.Education().ClassesById("educationClass-id").Members().$ref().Post(requestBody)
 
 
 ```

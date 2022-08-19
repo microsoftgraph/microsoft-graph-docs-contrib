@@ -7,21 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderGetQueryParameters{
+headers := map[string]string{
+	"ConsistencyLevel": "eventual",
+}
+requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
 	Count: true,
-	OrderBy: "displayName",
+	OrderBy: [] string {"displayName"},
 	Filter: "startswith(displayName,%20'A')",
 }
-headers := map[string]string{
-	"ConsistencyLevel": "eventual"
-}
-options := &msgraphsdk.DirectoryObjectRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
+configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
+	QueryParameters: requestParameters,
 }
-deviceId := "device-id"
-directoryObjectId := "directoryObject-id"
-result, err := graphClient.DevicesById(&deviceId).MemberOfById(&directoryObjectId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.DevicesById("device-id").MemberOf().Group().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

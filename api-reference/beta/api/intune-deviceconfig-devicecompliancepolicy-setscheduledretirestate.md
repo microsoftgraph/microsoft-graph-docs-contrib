@@ -67,7 +67,7 @@ Content-type: application/json
 Content-length: 95
 
 {
-  "state": "comfirmRetire",
+  "state": "confirmRetire",
   "managedDeviceIds": [
     "Managed Device Ids value"
   ]

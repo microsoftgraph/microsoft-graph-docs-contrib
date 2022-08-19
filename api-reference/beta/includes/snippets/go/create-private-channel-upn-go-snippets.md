@@ -7,28 +7,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewChannel()
-membershipType := "private"
-requestBody.SetMembershipType(&membershipType)
+requestBody := graphmodels.NewChannel()
+"@odata.type" := "#Microsoft.Graph.channel"
+requestBody.Set"@odata.type"(&"@odata.type") 
+membershipType := graphmodels.PRIVATE_CHANNELMEMBERSHIPTYPE 
+requestBody.SetMembershipType(&membershipType) 
 displayName := "My First Private Channel"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "This is my first private channels"
-requestBody.SetDescription(&description)
-requestBody.SetMembers( []ConversationMember {
-	msgraphsdk.NewConversationMember(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.aadUserConversationMember",
-		"user@odata.bind": "https://graph.microsoft.com/beta/users('jacob@contoso.com')",
-		"roles":  []String {
-			"owner",
-		}
-	}
+requestBody.SetDescription(&description) 
+
+
+conversationMember := graphmodels.NewConversationMember()
+"@odata.type" := "#microsoft.graph.aadUserConversationMember"
+conversationMember.Set"@odata.type"(&"@odata.type") 
+roles := []string {
+	"owner",
+
 }
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#Microsoft.Graph.channel",
+conversationMember.SetRoles(roles)
+additionalData := map[string]interface{}{
+	"user@odata.bind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')", 
 }
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(requestBody)
+conversationMember.SetAdditionalData(additionalData)
+
+members := []graphmodels.ConversationMemberable {
+	conversationMember,
+
+}
+requestBody.SetMembers(members)
+
+result, err := graphClient.TeamsById("team-id").Channels().Post(requestBody)
 
 
 ```

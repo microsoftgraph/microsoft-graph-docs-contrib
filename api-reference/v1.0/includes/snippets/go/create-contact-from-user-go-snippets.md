@@ -7,21 +7,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewContact()
+requestBody := graphmodels.NewContact()
 givenName := "Pavel"
-requestBody.SetGivenName(&givenName)
+requestBody.SetGivenName(&givenName) 
 surname := "Bansky"
-requestBody.SetSurname(&surname)
-requestBody.SetEmailAddresses( []EmailAddress {
-	msgraphsdk.NewEmailAddress(),
-	SetAdditionalData(map[string]interface{}{
-		"address": "pavelb@fabrikam.onmicrosoft.com",
-		"name": "Pavel Bansky",
-	}
+requestBody.SetSurname(&surname) 
+
+
+emailAddress := graphmodels.NewEmailAddress()
+address := "pavelb@fabrikam.onmicrosoft.com"
+emailAddress.SetAddress(&address) 
+name := "Pavel Bansky"
+emailAddress.SetName(&name) 
+
+emailAddresses := []graphmodels.EmailAddressable {
+	emailAddress,
+
 }
-requestBody.SetBusinessPhones( []String {
+requestBody.SetEmailAddresses(emailAddresses)
+businessPhones := []string {
 	"+1 732 555 0102",
+
 }
+requestBody.SetBusinessPhones(businessPhones)
+
 result, err := graphClient.Me().Contacts().Post(requestBody)
 
 

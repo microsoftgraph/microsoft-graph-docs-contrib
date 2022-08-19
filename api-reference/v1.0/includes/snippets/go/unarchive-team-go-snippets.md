@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-teamId := "team-id"
-graphClient.TeamsById(&teamId).Unarchive(team-id).Post()
+
+graphClient.TeamsById("team-id").Unarchive().Post()
 
 
 ```

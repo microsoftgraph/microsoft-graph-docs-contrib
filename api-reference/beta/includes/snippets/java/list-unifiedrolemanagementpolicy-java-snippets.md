@@ -8,6 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 UnifiedRoleManagementPolicyCollectionPage roleManagementPolicies = graphClient.policies().roleManagementPolicies()
 	.buildRequest()
+	.filter("scopeId eq '/' and scopeType eq 'DirectoryRole'")
 	.get();
 
 ```

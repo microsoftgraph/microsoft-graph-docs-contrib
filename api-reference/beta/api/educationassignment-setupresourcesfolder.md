@@ -34,12 +34,14 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer `{token}`. Required.  |
+| Authorization  | Bearer {token}. Required.  |
+| Content-Type   | application/json. Required. |
 
 ## Request body
-You need to provide an empty json `{}` as request body for this method.
+In the request body, supply an empty JSON object `{}` for this method.
+
 ## Response
-If successful, this method returns a 200 Ok response code and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) object in the request body.
+If successful, this method returns a `200 OK` response code and an [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) object in the request body.
 
 If the specified **assignment** already has a folder, this method returns a `400 Bad request` and an error response.
 
@@ -63,16 +65,13 @@ Content-type: application/json
 {
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-setupresourcesfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-setupresourcesfolder-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-setupresourcesfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -83,7 +82,7 @@ Content-type: application/json
 
 ---
 ### Response
-The following is an example of a response. 
+The following is an example of the response. 
 
 <!-- {
   "blockType": "response",

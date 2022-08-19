@@ -63,10 +63,10 @@ The following table shows the properties that are required when you create the w
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Chassis type of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|Platform of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`, `intuneAosp`.|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`, `intuneAosp`.|
 |osVersion|String|Operating system version of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easDeviceId|String|Exchange ActiveSync Id of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -130,6 +130,8 @@ The following table shows the properties that are required when you create the w
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) collection|List of properties of the ChromeOS Device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|bootstrapTokenEscrowed|Boolean|Reports if the managed device has an escrowed Bootstrap Token. This is only for macOS devices. To get, include BootstrapTokenEscrowed in the select clause and query with a device id. If FALSE, no bootstrap token is escrowed. If TRUE, the device has escrowed a bootstrap token with Intune. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceFirmwareConfigurationInterfaceManaged|Boolean|Indicates whether the device is DFCI managed. When TRUE the device is DFCI managed. When FALSE, the device is not DFCI managed. The default value is FALSE. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 
 
@@ -143,7 +145,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices
 Content-type: application/json
-Content-length: 8625
+Content-length: 9099
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -191,7 +193,16 @@ Content-length: 8625
     "esimIdentifier": "Esim Identifier value",
     "systemManagementBIOSVersion": "System Management BIOSVersion value",
     "tpmManufacturer": "Tpm Manufacturer value",
-    "tpmVersion": "Tpm Version value"
+    "tpmVersion": "Tpm Version value",
+    "wiredIPv4Addresses": [
+      "Wired IPv4Addresses value"
+    ],
+    "batteryLevelPercentage": 7.333333333333333,
+    "residentUsersCount": 2,
+    "productName": "Product Name value",
+    "deviceLicensingStatus": "licenseRefreshPending",
+    "deviceLicensingLastErrorCode": 12,
+    "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -344,7 +355,9 @@ Content-length: 8625
       "updatable": true
     }
   ],
-  "enrollmentProfileName": "Enrollment Profile Name value"
+  "enrollmentProfileName": "Enrollment Profile Name value",
+  "bootstrapTokenEscrowed": true,
+  "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
 
@@ -353,7 +366,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 8674
+Content-Length: 9148
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -402,7 +415,16 @@ Content-Length: 8674
     "esimIdentifier": "Esim Identifier value",
     "systemManagementBIOSVersion": "System Management BIOSVersion value",
     "tpmManufacturer": "Tpm Manufacturer value",
-    "tpmVersion": "Tpm Version value"
+    "tpmVersion": "Tpm Version value",
+    "wiredIPv4Addresses": [
+      "Wired IPv4Addresses value"
+    ],
+    "batteryLevelPercentage": 7.333333333333333,
+    "residentUsersCount": 2,
+    "productName": "Product Name value",
+    "deviceLicensingStatus": "licenseRefreshPending",
+    "deviceLicensingLastErrorCode": 12,
+    "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -555,7 +577,9 @@ Content-Length: 8674
       "updatable": true
     }
   ],
-  "enrollmentProfileName": "Enrollment Profile Name value"
+  "enrollmentProfileName": "Enrollment Profile Name value",
+  "bootstrapTokenEscrowed": true,
+  "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
 
