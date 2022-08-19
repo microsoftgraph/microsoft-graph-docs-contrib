@@ -243,6 +243,40 @@
       "CreatedDateTime": "2022-03-08T00:00:00.557Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "20ffd6e1-49e1-413d-9b7a-f5e33fd497d7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAutomaticRequestSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAutomaticRequestSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAutomaticRequestSettings?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAutomaticRequestSettings"
+        },
+        {
+          "Id": "20ffd6e1-49e1-413d-9b7a-f5e33fd497d7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeRuleMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeRuleMembers](https://docs.microsoft.com/en-us/graph/api/resources/attributeRuleMembers?view=graph-rest-1.0) resource type.",
+          "Target": "attributeRuleMembers"
+        },
+        {
+          "Id": "20ffd6e1-49e1-413d-9b7a-f5e33fd497d7",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticRequestSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `automaticRequestSettings` property to the [accessPackageAssignmentPolicy](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentPolicy"
+        }
+      ],
+      "Id": "20ffd6e1-49e1-413d-9b7a-f5e33fd497d7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-18T23:01:54.7629865Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     }
   ]
 }
