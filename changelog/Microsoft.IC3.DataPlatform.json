@@ -24,7 +24,7 @@
             "Version": "beta",
             "CreatedDateTime": "2022-07-01T06:16:18.4859577Z",
             "WorkloadArea": "Cloud communications",
-            "SubArea": "Online meeting"
+            "SubArea": "Call records"
         },
         {
             "ChangeList": [
@@ -50,7 +50,7 @@
             "Version": "v1.0",
             "CreatedDateTime": "2022-07-01T06:16:18.4866441Z",
             "WorkloadArea": "Cloud communications",
-            "SubArea": "Online meeting"
+            "SubArea": "Call records"
         },
         {
             "ChangeList": [
