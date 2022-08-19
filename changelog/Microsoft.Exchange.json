@@ -4,11 +4,11 @@
       "ChangeList": [
         {
           "Id": "3163e72c-3807-4dc3-909f-33421d2c69e0",
-          "ApiChange": "Property",
-          "ChangedApiName": "changeType",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the **changeType** property to [messages:delta](https://docs.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-1.0&tabs=http) entity.",
-          "Target": "message"
+          "Description": "Added support for the custom query option `changeType` on the [delta](https://docs.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-1.0) method of [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-v1.0).",
+          "Target": "delta"
         }
       ],
       "Id": "3163e72c-3807-4dc3-909f-33421d2c69e0",
@@ -22,11 +22,11 @@
       "ChangeList": [
         {
           "Id": "72f09c64-d6f2-4d48-a138-6fa514803a86",
-          "ApiChange": "Property",
-          "ChangedApiName": "changeType",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the **changeType** property to [messages:delta](https://docs.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-1.0&tabs=http) entity.",
-          "Target": "message"
+          "Description": "Added support for the custom query option `changeType` on the [delta](https://docs.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-beta) method of [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta).",
+          "Target": "delta"
         }
       ],
       "Id": "72f09c64-d6f2-4d48-a138-6fa514803a86",
