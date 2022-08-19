@@ -24,7 +24,7 @@ When a user signs in to your app they, or, in some cases, an administrator, are 
 
 ## Permission types
 
-An app can call Microsoft Graph either on behalf of a signed-in user or under its own identity, without a signed in user. To support these [access scenarios](/graph/auth/auth-concepts#access-scenarios), Microsoft Graph exposes *delegated permissions* and *application permissions*.
+An app can call Microsoft Graph either on behalf of a signed-in user or under its own identity, without a signed in user. To support these [access scenarios](/graph/auth/auth-concepts), Microsoft Graph exposes *delegated permissions* and *application permissions*.
 
 ### Delegated permissions
 
