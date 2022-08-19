@@ -31,8 +31,8 @@ The following [Azure AD roles](/azure/active-directory/roles/permissions-referen
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
-| Read | LifecycleWorkflows.Read.All or LifecycleWorkflows.ReadWrite.All | Global Administrator, Global Reader, Security Administrator, Security Reader or User Administrator |
-| Create, Update or Delete | LifecycleWorkflows.ReadWrite.All | Global Administrator or User Administrator |
+| Read | LifecycleWorkflows.Read.All or LifecycleWorkflows.ReadWrite.All | Global Admin, Global Reader or Lifecycle Workflows Administrator |
+| Create, Update or Delete | LifecycleWorkflows.ReadWrite.All | Global Administrator or Lifecycle Workflows Administrator |
 
 ## See also
 
