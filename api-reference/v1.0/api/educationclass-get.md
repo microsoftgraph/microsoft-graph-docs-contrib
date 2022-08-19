@@ -30,9 +30,8 @@ GET /education/classes/{id}
 
 ## Optional query parameters
 This method supports the `$top`, `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-You can use `$select` to get specific group properties, including those that are not returned by default.
 
-For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|

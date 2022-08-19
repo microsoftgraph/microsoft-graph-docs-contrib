@@ -41,7 +41,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/submissions/d1bee293-d8bb-48d4-af3e-c8cb0e3c7fe7/outcomes
 ```
 ## Optional query parameters
-This method supports the `$top`,and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$top`,and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
