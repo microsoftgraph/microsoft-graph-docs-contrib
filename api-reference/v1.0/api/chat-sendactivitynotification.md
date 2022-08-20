@@ -74,7 +74,7 @@ This example shows how you can send an activity feed notification for a new task
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification"
+  "name": "chat_sendactivitynotification_createdinchat"
 }
 -->
 ``` http
@@ -147,7 +147,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification"
+  "name": "chat_sendactivitynotification_entityurl_fortopic"
 }
 -->
 ``` http
@@ -270,7 +270,7 @@ As shown in the previous examples, you can link to different aspects of the chat
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification"
+  "name": "chat_sendactivitynotification_topicsourcetotext"
 }
 -->
 ``` http

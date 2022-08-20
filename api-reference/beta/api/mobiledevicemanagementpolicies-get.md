@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [mobilityManag
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_mobilitymanagementpolicy"
+  "name": "get_mobilitymanagementpolicy_forID_device"
 }
 -->
 

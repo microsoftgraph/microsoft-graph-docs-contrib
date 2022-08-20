@@ -60,7 +60,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_cloudpcexternalpartnersetting"
+  "name": "list_cloudpcexternalpartnersetting_and_properties"
 }
 -->
 ``` http
@@ -142,7 +142,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_cloudpcexternalpartnersetting"
+  "name": "list_cloudpcexternalpartnersetting_usingselect"
 }
 -->
 ``` http

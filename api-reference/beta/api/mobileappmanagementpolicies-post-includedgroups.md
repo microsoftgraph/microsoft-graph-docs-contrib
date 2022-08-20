@@ -62,7 +62,7 @@ If successful, this method returns a `204 No Content` response code and a [group
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_group_from_groups"
+  "name": "create_mobileManagementPolicy_group_from_groups"
 }
 -->
 

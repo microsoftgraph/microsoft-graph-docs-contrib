@@ -61,7 +61,7 @@ Note the following limits if you're searching the **event** or **message** entit
 - **from** must start at zero in the first page request; otherwise, the request results in an HTTP 400 `Bad request`.
 - The maximum number of results per page (**size**) is 25 for **message** and **event**. 
 
-There is no upper limit for SharePoint or OneDrive items. A reasonable page size is 200. A larger page size generally incurs higher latency.
+The upper limit for SharePoint or OneDrive items is 1000. A reasonable page size is 200. A larger page size generally incurs higher latency.
 
 Best practices:
 

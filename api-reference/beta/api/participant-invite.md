@@ -68,7 +68,7 @@ The following examples show how to call this API.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "participant-invite-1"
+  "name": "call_participant-invite"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/invite

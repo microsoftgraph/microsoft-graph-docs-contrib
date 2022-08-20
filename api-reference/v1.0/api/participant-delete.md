@@ -52,7 +52,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete-participant"
+  "name": "delete-participant_active"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{id}
@@ -115,7 +115,7 @@ HTTP/1.1 204 No Content
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "participant-invite-1"
+  "name": "participant-invite-nonactive-participant"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/invite
@@ -212,7 +212,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete-participant"
+  "name": "delete-participant_before-added-to-roster"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{id}

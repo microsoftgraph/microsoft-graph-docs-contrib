@@ -56,7 +56,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_datasource"
+  "name": "list_datasources_associated_withediscover_search_return_collection"
 }
 -->
 ``` http
