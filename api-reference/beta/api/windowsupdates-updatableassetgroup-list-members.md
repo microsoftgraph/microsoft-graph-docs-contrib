@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_updatableasset"
+  "name": "list_updatableasset_for_updategroupID"
 }
 -->
 ``` http

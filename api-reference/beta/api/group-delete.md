@@ -59,7 +59,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_group"
+  "name": "delete_group_byID"
 }-->
 
 ```http

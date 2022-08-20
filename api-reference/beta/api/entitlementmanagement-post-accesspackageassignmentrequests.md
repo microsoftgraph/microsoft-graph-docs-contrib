@@ -68,7 +68,7 @@ The following is an example of the request for a direct assignment, in which the
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_1"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_admin_add"
 }-->
 
 ```http
@@ -149,7 +149,7 @@ The following is an example of a request where the requestor provided answers to
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_2"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_requestor_answer_to_approver"
 }-->
 
 ```http
@@ -320,7 +320,7 @@ The following example shows how to request an access package and provide justifi
 
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_justification_provided"
 }-->
 
 ```http
@@ -387,7 +387,7 @@ The following example shows how to remove an assignment.
 
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_remove_assignment"
 }-->
 
 ```http
@@ -437,7 +437,7 @@ The following is an example of the request for a direct assignment, in which the
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_5"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_direct_assignment"
 }-->
 
 ```http

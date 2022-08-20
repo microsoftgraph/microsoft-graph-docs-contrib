@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_serviceannouncementattachment",
+  "name": "list_attachments_for_servicemessage",
   "sampleKeys" : ["MC54091"]
 }
 -->
@@ -134,7 +134,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_serviceannouncementattachment",
+  "name": "list_zip_of_serviceannouncementattachment",
   "sampleKeys" : ["MC54091"]
 }
 -->

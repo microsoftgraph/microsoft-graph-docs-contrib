@@ -61,7 +61,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_ediscoveryreviewtag_from_"
+  "name": "create_ediscoveryreviewtag_ID_tags"
 }
 -->
 ``` http
@@ -137,7 +137,7 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_ediscoveryreviewtag_from_"
+  "name": "create_ediscoveryreviewtag_with_a_parent"
 }
 -->
 ``` http

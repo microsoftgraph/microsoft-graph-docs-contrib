@@ -58,7 +58,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "identityprovider_availableprovidertypes"
+  "name": "identityprovider_availableprovidertypes_azure_AD_dir"
 }
 -->
 

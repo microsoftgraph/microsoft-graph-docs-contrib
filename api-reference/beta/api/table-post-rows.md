@@ -74,7 +74,7 @@ Here is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ", "Table1"],
-  "name": "tablerowcollection_add_1"
+  "name": "insert_2_rows"
 }-->
 
 ```http
@@ -138,7 +138,7 @@ Here is an example of the async request. Note that `202 Accepted` will only happ
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ", "Table1"],
-  "name": "tablerowcollection_add_1"
+  "name": "tablerowcollection_add_sync_request"
 }-->
 
 ```http

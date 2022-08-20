@@ -320,7 +320,7 @@ The following is an example of a request.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "sites.read", "target": "action", "sampleKeys": ["contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE","22e03ef3-6ef4-424d-a1d3-92a337807c30"] } -->
+<!-- { "blockType": "request", "name": "get-delta-latest_datalink_tokenislatest", "scope": "sites.read", "target": "action", "sampleKeys": ["contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE","22e03ef3-6ef4-424d-a1d3-92a337807c30"] } -->
 
 ```msgraph-interactive
 GET /sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/22e03ef3-6ef4-424d-a1d3-92a337807c30/items/delta?token=latest
@@ -357,7 +357,7 @@ GET /sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-
 
 The following is an example of the response.
 
-<!-- { "blockType": "response", "name": "get-delta-latest", "isEmpty": true, "@odata.type": "microsoft.graph.listItem", "isCollection": true } -->
+<!-- { "blockType": "response", "name": "get-delta-latest_datalink_tokenislatest", "isEmpty": true, "@odata.type": "microsoft.graph.listItem", "isCollection": true } -->
 
 ```http
 HTTP/1.1 200 OK

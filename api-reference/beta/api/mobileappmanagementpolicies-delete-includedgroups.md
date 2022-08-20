@@ -58,7 +58,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_group"
+  "name": "delete_group_groupID"
 }
 -->
 
