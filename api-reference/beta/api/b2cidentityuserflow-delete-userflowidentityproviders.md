@@ -62,7 +62,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_b2xUserFlows_userflowIdentityProviders",
+  "name": "delete_identity_b2cUserFlows_userflow_userflowIdentityProviders",
   "sampleKeys": ["B2C_test_signin_signup", "MSA-OIDC"]
 }
 -->

@@ -63,7 +63,7 @@ GET /sites?$filter=siteCollection/root ne null
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "list-sites" } -->
+<!-- { "blockType": "request", "name": "list-sites_for_keywords" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
@@ -136,7 +136,7 @@ Content-type: application/json
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "list-sites", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get_a_listofsites", "scopes": "sites.read.all" } -->
 
 ```msgraph-interactive
 GET /sites

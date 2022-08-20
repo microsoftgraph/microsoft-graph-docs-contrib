@@ -58,7 +58,7 @@ If successful, this action returns a `200 OK` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "settings_resettodefault"
+  "name": "settings_resettodefault_value"
 }
 -->
 

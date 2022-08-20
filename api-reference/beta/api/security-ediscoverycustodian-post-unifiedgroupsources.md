@@ -65,7 +65,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedgroupsource_from_"
+  "name": "create_unifiedgroupsource_for_associated_custodain"
 }
 -->
 ``` http
@@ -150,7 +150,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedgroupsource_from_"
+  "name": "create_unifiedgroupsource_withgroup_odata_bind"
 }
 -->
 ``` http
