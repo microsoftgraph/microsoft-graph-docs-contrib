@@ -71,7 +71,7 @@ The following is an example of the request for a direct assignment, in which the
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_1"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_alreadyindir"
 }-->
 
 ```http
@@ -147,7 +147,7 @@ The following example shows how to remove an assignment.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_forID"
 }-->
 
 ```http
@@ -222,7 +222,7 @@ The following example shows how a user can request an access package assignment 
 
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_packageID"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests

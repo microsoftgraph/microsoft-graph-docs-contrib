@@ -61,7 +61,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "ediscoverycustodianthis.applyhold"
+  "name": "ediscoverycustodianthis.applyhold_ID_custodians"
 }
 -->
 ``` http
@@ -121,7 +121,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "ediscoverycustodianthis.applyhold"
+  "name": "ediscoverycustodianthis.applyhold_singlecustodian"
 }
 -->
 ``` http

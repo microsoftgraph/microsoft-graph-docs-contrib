@@ -62,7 +62,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_ediscoverynoncustodialdatasource_from_"
+  "name": "create_ediscoverycases_noncustodialdatasource"
 }
 -->
 ``` http

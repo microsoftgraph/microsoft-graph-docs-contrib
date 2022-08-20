@@ -149,7 +149,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_openidconnectprovider",
+  "name": "update_openidconnectprovider_Azure_AD_B2C",
   "sampleKeys": ["OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a"]
 }
 -->

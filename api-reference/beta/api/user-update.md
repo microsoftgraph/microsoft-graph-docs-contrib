@@ -371,7 +371,7 @@ You can update or assign a value to a single property or all properties in the e
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_schemaextension"
+  "name": "update_schemaextension_properties"
 }-->
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e

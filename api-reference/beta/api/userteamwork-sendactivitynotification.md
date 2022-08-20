@@ -141,7 +141,7 @@ If you want to link an aspect that is not represented by Microsoft Graph, or you
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_4"
+  "name": "team_sendactivitynotification_for_customer_topic"
 }
 -->
 ``` http

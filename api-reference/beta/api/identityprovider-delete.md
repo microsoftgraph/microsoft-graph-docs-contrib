@@ -59,7 +59,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_identityprovider"
+  "name": "delete_identityprovider_forID"
 }
 -->
 

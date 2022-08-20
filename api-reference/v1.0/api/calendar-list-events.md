@@ -68,7 +68,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "calendar_list_events"
+  "name": "listingcalendarevents"
 }-->
 
 ```msgraph-interactive
@@ -139,7 +139,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "calendar_list_events"
+  "name": "calendar_list_events_filteronsubject"
 }-->
 
 ```msgraph-interactive
