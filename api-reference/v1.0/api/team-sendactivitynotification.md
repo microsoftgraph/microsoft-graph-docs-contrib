@@ -79,7 +79,7 @@ This example shows how you can send an activity feed notification for a team. Th
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_pending_fin_approval_request"
 }
 -->
 ``` http
@@ -156,7 +156,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_to_user_about_tab"
 }
 -->
 ``` http
@@ -287,7 +287,7 @@ As seen in the previous examples, you can link to different aspects of the team.
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_custom_topic"
 }
 -->
 ``` http

@@ -155,7 +155,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chat_group"
+  "name": "create_a_group_chat"
 }
 -->
 ``` http
@@ -406,7 +406,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chat_group"
+  "name": "create_chat_group_with_tenant_guest_user"
 }
 -->
 ``` http
