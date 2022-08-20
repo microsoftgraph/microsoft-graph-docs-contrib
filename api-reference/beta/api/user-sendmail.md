@@ -1,5 +1,5 @@
 ---
-title: "Send mail"
+title: "user: sendMail"
 description: "Send the message specified in the request body using either JSON or MIME format."
 author: "abheek-das"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Send mail
+# user: sendMail
 
 Namespace: microsoft.graph
 

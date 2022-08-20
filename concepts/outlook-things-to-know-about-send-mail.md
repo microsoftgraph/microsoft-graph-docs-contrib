@@ -1,52 +1,53 @@
 ---
-title: "Things to know about sendMail"
+title: "Explainer: How does sendMail work?"
 description: "Different steps involved in sending email using Microsoft Graph API till delivery."
 author: "abheek-das"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
-# Things to know about sendMail
-Sending email is a multi-step process. Most of the steps take place after the sendMail Microsoft Graph call has returned. Here is a simple summary of what typically 
+# Explainer: How does sendMail work?
+Sending email incurs a multi-step process. Most of the steps take place after the [sendMail](/graph/api/user-sendmail) method has returned. Here is a summary of what typically 
 happens.
 
-## 1. Create a new message in sender's mailbox
-Microsoft Graph creates a new message (typically in the sender's Drafts folder), copies message content, recipients, and attachments from the JSON request to it, and 
-saves it. If successful, the sendMail API returns a 2xx status.
+## 1. Creating a new message in sender's mailbox
+Outlook creates a new message typically in the sender's Drafts folder, then copies the message content, recipients, and attachments from the JSON request to it, and 
+saves it. If successful, the **sendMail** method returns an HTTP response status code in the 2xx category.
 
-If the sender provided MIME content, it is copied to a single property in the new message. Additionally, MIME content is parsed and copied to message properties, plus 
-the recipient and attachment tables. When complete, the sendMail API returns a 2xx status.
+If the sender provided MIME content, Outlook copies it to a single property in the new message. Outlook then parses the MIME content and copies relevant content to message properties and  
+the recipients and attachments tables. When complete, the **sendMail** method returns a 2xx status code.
 
-This step may fail if (for example) the sender's mailbox is full, or the network connection to the sender's server is down, or for other more exotic reasons. In that 
-case, the sendMail API returns a 4xx or 5xx status.
+This step may fail for reasons such as the sender's mailbox is full, or the network connection to the sender's server is down. If the method fails, it returns a 4xx or 5xx status code accordingly.
 
 Once step 1 is complete, your app's direct interaction with Microsoft Graph is over.
 
-## 2. Transport is notified of new outbound mail
+## 2. Notifying transport service of new outbound message
 Next, M365 notifies its transport service that a new message is available for pickup.
 
-## 3. The outbound message is copied to the transport pipeline
+## 3. Copying outbound message to transport pipeline
 Next, the transport process reads message content from the sender's mailbox, converts it to MIME format, and stores it into the transport pipeline. If the sender 
-provided MIME content, then it is copied more or less intact; otherwise, transport serializes the message properties to construct MIME content.
+provided MIME content, the transport process copies the MIME content more or less intact. Otherwise, the transport process serializes the message properties to construct MIME content.
 
-If step 3 fails, transport constructs a non-delivery report message and places it in the sender's inbox.
+If step 3 fails, the transport process constructs a non-delivery report message and places it in the sender's Inbox.
 
-## 4. The original message is moved to the Sent Items folder
-After all of this succeeds, transport calls back to store to accept responsibility for the message. In response, the Exchange store updates the message and (typically) 
+## 4. Moving original message to the Sent Items folder
+After all of this succeeds, transport calls back to the store to assume responsibility for the message. In response, the Exchange store updates the message and 
 moves it from the Drafts folder to the Sent Items folder. (Depending on optional message properties, it may move to a different folder or delete the message instead.)
 
-## 5. The transport pipeline performs policy evaluation and routing
+## 5. Performing policy evaluation and routing
 The next steps taken by transport include policy enforcement, routing, and next-hop delivery. Transport examines recipient email addresses and buckets them according 
-to what the initial routing hop has to be. Invalid recipient addresses may be are detected at this point; for those, a non-delivery report will be mailed back to the 
+to what the initial routing hop has to be. Transport detects invalid recipient addresses at this point, for which transport mails the non-delivery reports back to the 
 sender. Transport then applies policies configured by tenant administrators. Such policies may reject the message based on its content, store additional copies, and 
-so on. After applying policy, transport fans out a copy of the message to each next-hop destination. More detail about the transport flow may be found at [mail flow 
+so on. After applying policy, transport fans out a copy of the message to each next-hop destination. For more details about the transport flow, see [mail flow 
 and the transport pipeline](https://docs.microsoft.com/en-us/Exchange/mail-flow/mail-flow?view=exchserver-2019&viewFallbackFrom=exchonline-ww).
 
-## 6. The message is delivered to its recipient(s)
-M365 transport may or may not be responsible for final delivery to all recipients. That depends on whether or not those recipients have M365 mailboxes.
+## 6. Delivering message to recipients
+M365 transport may or may not be responsible for final delivery to all recipients. That depends on whether or not those recipients have Exchange Online mailboxes.
 
-## 7. Report messages are optionally delivered to the sender
-Non-delivery reports are generated at the point where a responsible transport component (possibly not an M365 component) decides that one or more recipient email 
-addresses are non-deliverable. Delivery reports are generated at the same point, but only if the sender explicitly requested them. Read and non-read notifications 
-may be generated by the recipient's email service, by the recipient's email client, or not at all. They're sent back to the sender accordingly. More detail about 
-report messages may be found at [DSNs and NDRs in Exchange Server](https://docs.microsoft.com/en-us/exchange/mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages?view=exchserver-2019).
+## 7. Delivering report messages to sender
+A few services are involved in generating delivery reports and sending them to the sender accordingly:
+- When a responsible transport component, which can be a Microsoft 365 or non-Microsoft 365 component, determines that one or more recipient email 
+addresses are non-deliverable, the component generates non-delivery reports. 
+- At the same time, the transport component generates delivery reports if the sender explicitly requested them. 
+- The recipient's email service or email client may generate read and non-read notifications, or not at all. 
+For more details about report messages, see [DSNs and NDRs in Exchange Server](https://docs.microsoft.com/en-us/exchange/mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages?view=exchserver-2019).
