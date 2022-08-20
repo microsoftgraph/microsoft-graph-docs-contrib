@@ -65,7 +65,7 @@ Use the `$top` parameter to specify the number of assignments to be returned. Th
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_assignments_delta"
+  "name": "get_assignments_delta_query_support"
 }-->
 
 ```msgraph-interactive
@@ -226,7 +226,7 @@ Use the `@odata.nextLink` value from the previous call for this request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_assignments_delta"
+  "name": "get_assignments_delta_nextlink"
 }-->
 
 ```msgraph-interactive
@@ -387,7 +387,7 @@ Use the `@odata.deltaLink` value from the previous call for this request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_assignments_delta"
+  "name": "get_assignments_delta_delatlink"
 }-->
 
 ```msgraph-interactive

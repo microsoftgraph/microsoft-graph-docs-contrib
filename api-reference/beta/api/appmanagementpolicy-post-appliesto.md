@@ -60,7 +60,7 @@ The following is an example of the request to assign an appManagementPolicy to a
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "assign_appliesTo"
+  "name": "ApplicationsAppManagementPolicies"
 }-->
 
 ```msgraph-interactive
@@ -118,7 +118,7 @@ The following is an example of the request to assign an appManagementPolicy to a
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "assign_appliesTo"
+  "name": "servicePrincipals_appManagementPolicy"
 }-->
 
 ``` http

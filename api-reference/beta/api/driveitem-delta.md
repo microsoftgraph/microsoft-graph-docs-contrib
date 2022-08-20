@@ -259,7 +259,7 @@ Using `delta` is the only way to guarantee that you've read all of the data you 
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-with_latest_token", "scope": "files.read", "target": "action" } -->
 
 ```msgraph-interactive
 GET /me/drive/root/delta?token=latest

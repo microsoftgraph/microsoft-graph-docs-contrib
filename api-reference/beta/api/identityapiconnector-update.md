@@ -74,7 +74,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_identityapiconnector"
+  "name": "update_identityapiconnector_forandID"
 }
 -->
 
@@ -143,7 +143,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_identityapiconnector"
+  "name": "update_identityapiconnector_forspecific_ID"
 }
 -->
 

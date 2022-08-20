@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [mobi
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_mobilitymanagementpolicy"
+  "name": "update_mobilitymanagementpolicy_forID"
 }
 -->
 

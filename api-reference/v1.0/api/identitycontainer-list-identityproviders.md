@@ -66,7 +66,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviderbase"
+  "name": "get_identityproviderbase_Azure_AD_tenant"
 }
 -->
 
@@ -144,7 +144,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviderbase"
+  "name": "get_identityproviderbase_2"
 }
 -->
 

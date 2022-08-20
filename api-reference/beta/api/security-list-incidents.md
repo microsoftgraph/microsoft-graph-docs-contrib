@@ -77,7 +77,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_incident"
+  "name": "list_incident_for_defender"
 }
 -->
 ``` http
@@ -135,7 +135,7 @@ Content-Type: application/json
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_incident"
+  "name": "list_incident_with_theri_alerts"
 }
 -->
 ``` http
