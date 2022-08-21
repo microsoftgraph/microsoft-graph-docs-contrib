@@ -39,7 +39,7 @@ request to the next **delta** function call for the same folder. A `@odata.delta
 signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL
 when you begin the next round.
 
-See the [example](#example-synchronize-messages-in-a-folder) to learn how to use the `@odata.nextLink` and `@odata.deltaLink` URLs.
+See the [example](#example-1-synchronize-messages-in-a-folder) to learn how to use the `@odata.nextLink` and `@odata.deltaLink` URLs.
 
 ### Use query parameters in a delta query for messages
 
@@ -487,7 +487,7 @@ synchronization is complete for the time being for this folder. Save and use the
 
 ### Synchronize messages in the same folder in the next round based on specified change type
 
-Using the `@odata.deltaLink` from the [last request](#sample_second_request_specifying_changetype) in the last round,
+Using the `@odata.deltaLink` from the [last response](#sample-second-response-with-specified-change-type) in the last round,
 you will be able to get only those messages that have been added in that folder since then.
 Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:
 
