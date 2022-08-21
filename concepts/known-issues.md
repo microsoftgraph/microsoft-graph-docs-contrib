@@ -507,6 +507,7 @@ The following limitations apply to query parameters:
 * `$count`:
   * Not supported in Azure AD B2C tenants.
   * When using the `$count=true` query string when querying against directory resources, the `@odata.count` property will be present only in the first page of the paged data.
+  * Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs (deprecated)
