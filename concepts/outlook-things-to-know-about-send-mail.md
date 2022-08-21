@@ -14,15 +14,14 @@ happens.
 Outlook creates a new message typically in the sender's Drafts folder, then copies the message content, recipients, and attachments from the JSON request to it, and 
 saves it. If successful, the **sendMail** method returns an HTTP response status code in the 2xx category.
 
-If the sender provided MIME content, Outlook copies it to a single property in the new message. Outlook then parses the MIME content and copies relevant content to message properties and  
-the recipients and attachments tables. When complete, the **sendMail** method returns a 2xx status code.
+If the sender provided MIME content, Exchange Online copies it to a single property in the new message. Exchange Online then parses the MIME content and copies relevant content to message properties and the recipients and attachments tables. When complete, the **sendMail** method returns a `202 Accepted` status code.
 
 This step may fail for reasons such as the sender's mailbox is full, or the network connection to the sender's server is down. If the method fails, it returns a 4xx or 5xx status code accordingly.
 
 Once step 1 is complete, your app's direct interaction with Microsoft Graph is over.
 
 ## 2. Notifying transport service of new outbound message
-Next, M365 notifies its transport service that a new message is available for pickup.
+Next, Exchange Online notifies its transport service that a new message is available for pickup.
 
 ## 3. Copying outbound message to transport pipeline
 Next, the transport process reads message content from the sender's mailbox, converts it to MIME format, and stores it into the transport pipeline. If the sender 
@@ -42,11 +41,11 @@ so on. After applying policy, transport fans out a copy of the message to each n
 and the transport pipeline](https://docs.microsoft.com/en-us/Exchange/mail-flow/mail-flow?view=exchserver-2019&viewFallbackFrom=exchonline-ww).
 
 ## 6. Delivering message to recipients
-M365 transport may or may not be responsible for final delivery to all recipients. That depends on whether or not those recipients have Exchange Online mailboxes.
+Exchange Online transport may or may not be responsible for final delivery to all recipients. That depends on whether or not those recipients have Exchange Online mailboxes.
 
 ## 7. Delivering report messages to sender
 A few services are involved in generating delivery reports and sending them to the sender accordingly:
-- When a responsible transport component, which can be a Microsoft 365 or non-Microsoft 365 component, determines that one or more recipient email 
+- When a responsible transport component, which can be a Exchange Online or non-Exchange Online component, determines that one or more recipient email 
 addresses are non-deliverable, the component generates non-delivery reports. 
 - At the same time, the transport component generates delivery reports if the sender explicitly requested them. 
 - The recipient's email service or email client may generate read and non-read notifications, or not at all. 
