@@ -1,5 +1,5 @@
 ---
-title: "Update contactMergeSuggestions"
+title: "Update organizationContactMergeSuggestions"
 description: "Update the settings for contact merge suggestions in an organization."
 author: "rogoy"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Update contactMergeSuggestions
+# Update organizationContactMergeSuggestions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [contactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) object.
+Update the properties of a [organizationContactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) object.
 
 
 ## Permissions
@@ -41,9 +41,9 @@ PATCH /organization/{organizationId}/settings/contactInsights
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [contactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) object.
+In the request body, supply a JSON representation of the [organizationContactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) object.
 
-You can specify the following properties when creating the **contactMergeSuggestions** object.
+You can specify the following properties when creating the **organizationContactMergeSuggestions** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -54,7 +54,7 @@ You can specify the following properties when creating the **contactMergeSuggest
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and the [contactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) object in the response body.
+If successful, this method returns a `201 Created` response code and the [organizationContactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) object in the response body.
 
 ## Examples
 

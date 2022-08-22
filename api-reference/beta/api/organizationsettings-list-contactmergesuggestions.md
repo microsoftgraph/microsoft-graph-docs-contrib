@@ -1,5 +1,5 @@
 ---
-title: "Get contactMergeSuggestions"
+title: "Get organizationContactMergeSuggestions"
 description: "Get the settings for contact merge suggestions in an organization."
 author: "rogoy"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Get contactMergeSuggestions
+# Get organizationContactMergeSuggestions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [contactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) object.
+Read the properties and relationships of a [organizationContactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) object.
 
 
 ## Permissions
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [contactMergeSuggestionsSettings](../resources/organizationcontactmergesuggestions.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [organizationContactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) objects in the response body.
 
 ## Examples
 
@@ -69,7 +69,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.insightsSettings)"
+  "@odata.type": "microsoft.graph.insightsSettings"
 }
 -->
 ``` http

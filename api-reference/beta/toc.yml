@@ -406,7 +406,7 @@ items:
             href: api/user-list-contacts.md
           - name: List contact folders
             href: api/user-list-contactfolders.md
-        - name: User Contact merge suggestions
+        - name: User Contact merge suggestions (preview)
           items:
           - name: Contact merge suggestions
             href: resources/contactmergesuggestions.md
@@ -414,7 +414,7 @@ items:
             href: api/contactmergesuggestions-get.md
           - name: Update
             href: api/contactmergesuggestions-update.md
-        - name: Organization Contact merge suggestions
+        - name: Organization Contact merge suggestions (preview)
           items:
           - name: Contact merge suggestions
             href: resources/organizationcontactmergesuggestions.md

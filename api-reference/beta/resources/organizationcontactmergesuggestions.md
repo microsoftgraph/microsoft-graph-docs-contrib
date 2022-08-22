@@ -1,5 +1,5 @@
 ---
-title: "contactMergeSuggestions resource type"
+title: "organizationContactMergeSuggestions resource type"
 description: "Represents contact merge suggestions for an organization."
 ms.localizationpriority: medium
 author: "rogoy"
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
-# contactMergeSuggestions resource type
+# organizationContactMergeSuggestions resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +23,8 @@ Additionally, users can disable/enable this feature using [contactMergeSuggestio
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get](../api/organizationsettings-list-contactmergesuggestions.md) | [contactMergeSuggestions](organizationcontactmergesuggestions.md) | Read the properties of a contactMergeSuggestions object. |
-| [Update](../api/organizationsettings-update-contactmergesuggestions.md) | [contactMergeSuggestions](organizationcontactmergesuggestions.md) | Update the properties of a contactMergeSuggestions object. |
+| [Get](../api/organizationsettings-list-contactmergesuggestions.md) | [organizationContactMergeSuggestions](organizationcontactmergesuggestions.md) | Read the properties of a organizationContactMergeSuggestions object. |
+| [Update](../api/organizationsettings-update-contactmergesuggestions.md) | [organizationContactMergeSuggestions](organizationcontactmergesuggestions.md) | Update the properties of a organizationContactMergeSuggestions object. |
 
 
 ## Properties
