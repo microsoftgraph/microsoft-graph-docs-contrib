@@ -63,7 +63,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_settings"
+  "name": "get_settings_at_tenant_level"
 }
 -->
 ``` http
@@ -126,11 +126,18 @@ Content-Type: application/json
             ".md", 
             ".git"
         ],
+        "idleSessionSignOut": {
+            "isEnabled": true,
+            "warnAfterInSeconds": 120,
+            "signOutAfterInSeconds": 300
+        },
         "imageTaggingOption": "basic",
         "isCommentingOnSitePagesEnabled": true,
         "isFileActivityNotificationEnabled": true,
+        "isLegacyAuthProtocolsEnabled": false,
         "isLoopEnabled": true,
         "isMacSyncAppEnabled": false,
+        "isRequireAcceptingUserToMatchInvitedUserEnabled": true,
         "isResharingByExternalUsersEnabled": true,
         "isSharePointMobileNotificationEnabled": true,
         "isSharePointNewsfeedEnabled": true,

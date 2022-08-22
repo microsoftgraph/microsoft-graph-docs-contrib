@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and the collection o
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_permission"
+  "name": "list_permission_for_site"
 }
 -->
 ``` http

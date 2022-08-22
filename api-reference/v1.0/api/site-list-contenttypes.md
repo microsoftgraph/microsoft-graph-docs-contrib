@@ -54,9 +54,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "enum_contentTypes"} -->
+<!-- { "blockType": "request", "name": "enum_contentTypes_for_specified_site"} -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes
 ```
 

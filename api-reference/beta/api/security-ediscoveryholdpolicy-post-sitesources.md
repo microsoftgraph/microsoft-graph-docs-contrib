@@ -60,11 +60,11 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_sitesource_from_"
+  "name": "create_sitesource_from__weburl"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalHolds/0053a61a3b6c42738f7606791716a22a/siteSources
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalHolds/0053a61a3b6c42738f7606791716a22a/siteSources
 Content-Type: application/json
 
 {

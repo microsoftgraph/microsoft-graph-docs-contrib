@@ -226,7 +226,7 @@ Content-type: application/json
   "name": "get_roledefinitions_entitlementmanagement_provider"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDefinitions
 ```
 

@@ -69,7 +69,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "outlooktask_complete"
+  "name": "outlooktask_complete",
+  "sampleKeys": ["AAMkADA1MT15rfAAA="]
 }-->
 
 ```http

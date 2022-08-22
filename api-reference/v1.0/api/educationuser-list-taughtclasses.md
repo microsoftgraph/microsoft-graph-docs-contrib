@@ -76,11 +76,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_educationclass"
+  "name": "list_educationclass_for_userID_thaughtclass"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/users/{educationUserId}/taughtClasses
 ```
 

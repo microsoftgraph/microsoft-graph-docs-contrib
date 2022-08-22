@@ -79,7 +79,7 @@ If successful, this method returns a `200 OK` response code and collection of [g
 
 <!-- {
   "blockType": "request",
-  "name": "get_groupsettings"
+  "name": "get_groupsettings_tenant_level"
 }-->
 
 ```msgraph-interactive
@@ -204,7 +204,7 @@ Content-type: application/json
   "name": "get_groupsettings_for_a_group"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings
 ```
 

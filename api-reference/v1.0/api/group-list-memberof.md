@@ -250,7 +250,7 @@ The following is an example of the request.
   "name": "list_groups_memberof_startswith"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')
 ConsistencyLevel: eventual
 ```

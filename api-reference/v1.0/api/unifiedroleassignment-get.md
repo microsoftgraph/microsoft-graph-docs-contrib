@@ -82,7 +82,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignment"
+  "name": "get_unifiedroleassignment_givenanID",
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReELhrmgjL6CxJqkHAeKoLUSA-11"]
 }-->
 
 ```msgraph-interactive
@@ -153,10 +154,11 @@ The following is an example of the request with the `$expand` query parameter.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignment"
+  "name": "get_unifiedroleassignment_expand_relationships",
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition
 ```
 

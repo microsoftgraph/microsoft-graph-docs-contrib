@@ -41,7 +41,7 @@ resourceId := "1D6DE2D4-CD51-4309-8DAA-70768651088F"
 mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
 
-graphClient.Communications().CallsById("call-id").Answer(call-id).Post(requestBody)
+graphClient.Communications().CallsById("call-id").Answer().Post(requestBody)
 
 
 ```

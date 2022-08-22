@@ -56,14 +56,14 @@ By default, only a limited set of properties are returned ( _businessPhones, dis
 
 To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`.
 
-### Retrieve extensions and associated data
+Extension properties also support query parameters as follows:
 
-| Extension type                     | Comments                                                                                              |
-|------------------------------------|-------------------------------------------------------------------------------------------------------|
-| onPremisesExtensionAttributes 1-15 | Returned only with `$select`.                                                                         |
-| Schema extensions                  | Returned only with `$select`.                                                                         |
+| Extension type                     | Comments                                                                            |
+|------------------------------------|-------------------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Returned only with `$select`.                                                       |
+| Schema extensions                  | Returned only with `$select`.                                                       |
 | Open extensions                    | Returned only through the [Get open extension](opentypeextension-get.md) operation. |
-| Directory extensions               | Returned only with `$select`.                                                                         |
+| Directory extensions               | Returned only with `$select`.                                                       |
 
 ## Request headers
 | Header       | Value|
@@ -300,7 +300,7 @@ In this example, the ID of the schema extension is `ext55gb1l09_msLearnCourses`.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_schemaextension"
+  "name": "get_schemaextension_selectCourse"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?$select=ext55gb1l09_msLearnCourses

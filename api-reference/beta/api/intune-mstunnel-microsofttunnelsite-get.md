@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 620
+Content-Length: 659
 
 {
   "value": {
@@ -78,6 +78,7 @@ Content-Length: 620
     "upgradeAutomatically": true,
     "upgradeAvailable": true,
     "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
+    "enableCertificatePinning": true,
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ]

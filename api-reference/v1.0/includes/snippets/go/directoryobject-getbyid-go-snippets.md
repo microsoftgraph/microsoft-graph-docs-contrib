@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewGetByIdsPostRequestBody()
-ids := []String {
+ids := []string {
 	"84b80893874940a3-97b7-68513b600544",
 	"5d6059b6368d-45f8-91e18e07d485f1d0",
 
 }
 requestBody.SetIds(ids)
-types := []String {
+types := []string {
 	"user",
 
 }

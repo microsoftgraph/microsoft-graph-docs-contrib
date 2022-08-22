@@ -12,9 +12,9 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new TiIndicator();
 $requestBody->setAction(new TiAction('alert'));
 
-$requestBody->setActivityGroupNames(]);
+$requestBody->setActivityGroupNames([]);
 
-$requestBody->setConfidence(confidence);
+$requestBody->setConfidence(0);
 
 $requestBody->setDescription('This is a canary indicator for demo purpose. Take no action on any observables set in this indicator.');
 
@@ -26,13 +26,13 @@ $requestBody->setFileHashType(new FileHashType('sha256'));
 
 $requestBody->setFileHashValue('aa64428647b57bf51524d1756b2ed746e5a3f31b67cf7fe5b5d8a9daf07ca313');
 
-$requestBody->setKillChain(]);
+$requestBody->setKillChain([]);
 
-$requestBody->setMalwareFamilyNames(]);
+$requestBody->setMalwareFamilyNames([]);
 
-$requestBody->setSeverity(severity);
+$requestBody->setSeverity(0);
 
-$requestBody->setTags(]);
+$requestBody->setTags([]);
 
 $requestBody->setTargetProduct('Azure Sentinel');
 

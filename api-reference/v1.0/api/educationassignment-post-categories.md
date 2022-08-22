@@ -48,7 +48,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add_educationcategory_to_educationassignment"
+  "name": "add_educationcategory_to_educationassignment_ref"
 }-->
 
 ```http
