@@ -67,7 +67,7 @@ The following example gets the status of access package assignment requests targ
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "accesspackageassignmentrequest_filterbycurrentuser"
+  "name": "accesspackageassignmentrequest_filterbycurrentuser_ontarget"
 }
 -->
 ``` http

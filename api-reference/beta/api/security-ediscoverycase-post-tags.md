@@ -63,7 +63,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_ediscoveryreviewtag_from_"
+  "name": "create_ediscoveryreviewtag_selectibility_many"
 }
 -->
 ``` http
@@ -139,7 +139,7 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_ediscoveryreviewtag_from_"
+  "name": "create_tqag_with_a_parent"
 }
 -->
 ``` http

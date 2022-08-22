@@ -55,7 +55,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_settings"
+  "name": "update_settings_for_print"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/print/settings
