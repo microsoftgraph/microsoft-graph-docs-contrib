@@ -58,7 +58,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_assignments"
+  "name": "get_assignments_forrole"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoles/{id}/assignments
@@ -78,10 +78,6 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/assignments
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

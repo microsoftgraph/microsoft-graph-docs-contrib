@@ -62,7 +62,7 @@ The following example gets the access packages that can be requested by the sign
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "accesspackageassignmentrequest_filterByCurrentUser"
+  "name": "accesspackage_filterByCurrentUser"
 }
 -->
 ``` http

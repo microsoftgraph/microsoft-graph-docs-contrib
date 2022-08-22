@@ -70,7 +70,7 @@ The following is an example of a decision to approve access for a user.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_accessReviewInstanceDecisionItem"
+  "name": "update_decision_accessReviewInstanceDecisionItem"
 }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
@@ -125,7 +125,7 @@ HTTP/1.1 204 Accepted
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "update_accessReviewInstanceDecisionItem"
+  "name": "update_accessReviewInstanceDecisionItem_multi_stage_review"
 }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06

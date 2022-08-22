@@ -59,7 +59,7 @@ The following request returns a [serviceAnnouncementAttachment](../resources/ser
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_serviceannouncementattachment",
+  "name": "get_serviceannouncementattachment_props_relationships",
   "sampleKeys" : ["MC54091", "30356a46-ffad-47e1-acf6-40a99b1538c1"]
 }
 -->
@@ -126,7 +126,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_serviceannouncementattachment",
+  "name": "get_serviceannouncementattachment_as_file_stream",
   "sampleKeys" : ["MC54091", "30356a46-ffad-47e1-acf6-40a99b1538c1"]
 }
 -->

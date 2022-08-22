@@ -64,7 +64,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "ediscoverycustodianthis.removehold"
+  "name": "start_ediscoverycustodianthis.removehold"
 }
 -->
 ``` http
@@ -126,7 +126,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "ediscoverycustodianthis.removehold"
+  "name": "ediscoverycustodianthis.removehold_single_noncustodial_source"
 }
 -->
 ``` http
