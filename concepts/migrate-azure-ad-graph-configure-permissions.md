@@ -280,8 +280,10 @@ Create a new PowerShell script named **updatePermissions.ps1** and add the follo
 
 # [Azure AD Graph permissions only](#tab/powershell)
 [!INCLUDE [addAzureADPermissions](includes/azure-ad-graph-migration-scripts/azureadgraphpermissions.md)]
-# [Azure AD and Microsoft Graph permissions](#tab/powershell)
+# [Azure AD and Microsoft Graph permissions](#tab/powershell-1)
 [!INCLUDE [addAzureAD+MicrosoftGraphPermissions](includes/azure-ad-graph-migration-scripts/azureadgraph-microsoftgraph-permissions.md)]
+
+---
 
 Run the script using the following command.
 ```powershell
