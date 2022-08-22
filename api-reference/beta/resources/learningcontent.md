@@ -28,7 +28,7 @@ Represents the metadata of content for employee learning.
 |:---|:---|:---|
 |additionalTags|String collection|Keywords, topics, and other tags associated with the learning content. Optional.|
 |contentWebUrl|String|The content web URL for the learning content. Required.|
-|contributor|String|The author, creator, or contributor of the learning content. Optional.|
+|contributors|String collection|The authors, creators, or contributors of the learning content. Optional.|
 |createdDateTime|DateTimeOffset|The date when the learning content was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
 |description|String|The description or summary for the learning content. Optional.|
 |duration|Duration|The duration of the learning content in seconds. Optional.|
@@ -59,29 +59,32 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "@odata.type": "#microsoft.graph.learningContent",
-    "additionalTags": [
-        "String"
-    ],
-    "contentWebUrl": "String",
-    "contributor": "String",
-    "createdDateTime": "String (timestamp)",
-    "description": "String",
-    "duration": "String (duration)",
-    "externalId": "String",
-    "format": "String",
-    "isActive": "Boolean",
-    "isPremium": "Boolean",
-    "isSearchable": "Boolean",
-    "languageTag": "String",
-    "lastModifiedDateTime": "String (timestamp)",
-    "numberOfPages": "Integer",
-    "skillTags": [
-        "String"
-    ],
-    "sourceName": "String",
-    "thumbnailWebUrl": "String",
-    "title": "String"
+  "@odata.type": "#microsoft.graph.learningContent",
+  "id": "String (identifier)",
+  "externalId": "String",
+  "title": "String",
+  "contentWebUrl": "String",
+  "languageTag": "String",
+  "description": "String",
+  "sourceName": "String",
+  "thumbnailWebUrl": "String",
+  "numberOfPages": "Integer",
+  "duration": "String (duration)",
+  "format": "String",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "contributors": [
+    "String"
+  ],
+  "additionalTags": [
+    "String"
+  ],
+  "skillTags": [
+    "String"
+  ],
+  "isActive": "Boolean",
+  "isPremium": "Boolean",
+  "isSearchable": "Boolean"
 }
 ```
 
