@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/security/threatSubmission/emailThreats/{ema
 [!INCLUDE [sample-code](../includes/snippets/go/get-emailthreatsubmission-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-emailthreatsubmission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-emailthreatsubmission-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -103,7 +107,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreatSubmission/$entity",
-  "@odata.type": "#microsoft.graph.emailUrlThreatSubmission",
+  "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "spam",
   "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",

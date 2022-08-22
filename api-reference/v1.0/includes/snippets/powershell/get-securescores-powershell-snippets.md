@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecuritySecureScore -Top 1 
+Get-MgSecuritySecureScore -Top 1  -OutFile $outFileId
 
 ```

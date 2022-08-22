@@ -49,7 +49,7 @@ $settings->setJustificationRequiredOnApproval(true);
 
 $settings->setAutoReviewEnabled(false);
 
-$settings->setActivityDurationInDays(activityDurationInDays);
+$settings->setActivityDurationInDays(30);
 
 $settings->setAutoApplyReviewResultsEnabled(false);
 
@@ -60,9 +60,9 @@ $settingsRecurrenceSettings->setRecurrenceType('onetime');
 
 $settingsRecurrenceSettings->setRecurrenceEndType('endBy');
 
-$settingsRecurrenceSettings->setDurationInDays(durationInDays);
+$settingsRecurrenceSettings->setDurationInDays(0);
 
-$settingsRecurrenceSettings->setRecurrenceCount(recurrenceCount);
+$settingsRecurrenceSettings->setRecurrenceCount(0);
 
 
 $settings->setRecurrenceSettings($settingsRecurrenceSettings);

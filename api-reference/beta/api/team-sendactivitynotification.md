@@ -80,7 +80,7 @@ This example shows how you can send an activity feed notification for a team. Th
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_1"
+  "name": "team_sendactivitynotification_for_team"
 }
 -->
 ``` http
@@ -155,7 +155,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_2"
+  "name": "team_sendactivitynotification_entityurl_topic"
 }
 -->
 ``` http
@@ -172,7 +172,7 @@ Content-Type: application/json
         "content": "You have moved up the queue"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
@@ -252,7 +252,7 @@ Content-Type: application/json
         "content": "You have moved up the queue"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "jacob@contoso.com"
     },
     "templateParameters": [
@@ -315,7 +315,7 @@ As seen in the previous examples, you can link to different aspects of the team.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_3"
+  "name": "team_sendactivitynotification_set_topicsource_to_text"
 }
 -->
 ``` http
@@ -333,7 +333,7 @@ Content-Type: application/json
         "content": "New deployment requires your approval"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
@@ -393,7 +393,7 @@ This example shows how you can send an activity feed notification to all team me
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_4"
+  "name": "team_sendactivitynotification_pending_fin_approve"
 }
 -->
 

@@ -16,20 +16,18 @@ configuration := &graphconfig.FindMeetingTimesRequestBuilderPostRequestConfigura
 requestBody := graphmodels.NewFindMeetingTimesPostRequestBody()
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"type" : "required", 
-emailAddress := graphmodels.New()
+attendeeBase := graphmodels.NewAttendeeBase()
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendeeBase.SetType(&type) 
+emailAddress := graphmodels.NewEmailAddress()
 name := "Alex Wilbur"
 emailAddress.SetName(&name) 
 address := "alexw@contoso.onmicrosoft.com"
 emailAddress.SetAddress(&address) 
-	.SetEmailAddress(emailAddress)
-}
-.SetAdditionalData(additionalData)
+attendeeBase.SetEmailAddress(emailAddress)
 
 attendees := []graphmodels.Objectable {
-	,
+	attendeeBase,
 
 }
 requestBody.SetAttendees(attendees)
@@ -40,15 +38,14 @@ suggestLocation := "false"
 locationConstraint.SetSuggestLocation(&suggestLocation) 
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"resolveAvailability" : "false", 
-	"displayName" : "Conf room Hood", 
-}
-.SetAdditionalData(additionalData)
+locationConstraintItem := graphmodels.NewLocationConstraintItem()
+resolveAvailability := "false"
+locationConstraintItem.SetResolveAvailability(&resolveAvailability) 
+displayName := "Conf room Hood"
+locationConstraintItem.SetDisplayName(&displayName) 
 
 locations := []graphmodels.Objectable {
-	,
+	locationConstraintItem,
 
 }
 locationConstraint.SetLocations(locations)

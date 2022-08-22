@@ -63,7 +63,7 @@ Use the `$top` parameter to specify the number of categories to be returned. The
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_classcategories_delta"
+  "name": "get_classcategories_delta_top3"
 }-->
 
 ```msgraph-interactive
@@ -150,7 +150,7 @@ Use the `@odata.nextLink` value from the previous call for this request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_classcategories_delta"
+  "name": "get_classcategories_delta_forclassId"
 }-->
 
 ```msgraph-interactive
@@ -232,7 +232,7 @@ Use the `@odata.deltaLink` value from the previous call for this request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_classcategories_delta"
+  "name": "get_classcategories_delta_modified_created"
 }-->
 
 ```msgraph-interactive

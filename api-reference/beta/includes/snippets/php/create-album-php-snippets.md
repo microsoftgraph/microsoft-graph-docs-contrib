@@ -13,8 +13,8 @@ $requestBody = new BundlesPostRequestBody();
 $additionalData = [
 'name' => 'My Day at the Beach', 
 '@microsoft.graph.conflictBehavior' => 'rename', 
-'bundle' => $requestBody = new ();
-$album = new ();
+'bundle' => $requestBody = new Bundle();
+$album = new Album();
 
 $requestBody->setAlbum($album);
 

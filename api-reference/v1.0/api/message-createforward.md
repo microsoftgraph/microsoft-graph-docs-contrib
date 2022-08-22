@@ -141,7 +141,8 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.message",
-  "truncated": true
+  "truncated": true,
+  "sampleKeys": ["AAMkADA1MTAAAAqldOAAA="]
 } -->
 
 ```http

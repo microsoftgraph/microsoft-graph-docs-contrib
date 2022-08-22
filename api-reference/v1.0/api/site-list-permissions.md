@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)
 |:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Not supported.
+|Delegated (work or school account)     | Sites.FullControl.All
 |Delegated (personal Microsoft account) | Not supported.
 |Application                            | Sites.FullControl.All
 
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_permission"
+  "name": "list_permission_for_specifiedSite"
 }
 -->
 ``` http

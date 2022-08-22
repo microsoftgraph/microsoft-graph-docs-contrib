@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/security/cases/eDiscoveryCases/061b9a92-8926-4bd9-b41d-abf35edc7583/close')
+await client.api('/security/cases/ediscoveryCases/061b9a92-8926-4bd9-b41d-abf35edc7583/close')
 	.post();
 
 ```

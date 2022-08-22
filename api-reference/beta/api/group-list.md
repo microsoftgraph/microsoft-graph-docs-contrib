@@ -47,17 +47,17 @@ To list only Microsoft 365 groups (aka unified groups), apply a filter on **grou
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-The `$search` query parameter supports tokenization only on the **displayName** and **description** fields and requires the **ConsistencyLevel** header. Fields other than **displayName** and **description** default to `$filter` `startswith` behavior.
+The `$search` query parameter supports tokenization only on the **displayName** and **description** fields and requires the **ConsistencyLevel** header. Fields other than **displayName** and **description** default to `$filter` `startsWith` behavior.
 
-For more information on OData query options, see [OData query parameters](/graph/query-parameters). For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
-### Retrieve extensions and associated data
+Extension properties also support query parameters as follows:
 
 | Extension type       | Comments                      |
 |----------------------|-------------------------------|
 | Schema extensions    | Returned only with `$select`. |
 | Open extensions      | Returned only with `$expand`. |
 | Directory extensions | Returned by default.          |
+
+For more information on OData query options, see [OData query parameters](/graph/query-parameters). For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 
@@ -418,7 +418,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_video_count"
+  "name": "get_video_count_true"
 }-->
 
 ```msgraph-interactive
@@ -495,7 +495,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_video_count"
+  "name": "get_video_count_or_description"
 }-->
 
 ```msgraph-interactive

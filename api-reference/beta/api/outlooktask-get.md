@@ -69,7 +69,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktask_1"
+  "name": "get_outlooktask_1",
+  "sampleKeys": ["AAMkADA1MTrgAAA="]
 }-->
 
 ```msgraph-interactive
@@ -164,7 +165,8 @@ This example uses the `Prefer: outlook.timezone` header to specify that the API 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktask_2"
+  "name": "get_outlooktask_2",
+  "sampleKeys": ["AAMkADA1MHgwAAA="]
 }-->
 
 ```msgraph-interactive

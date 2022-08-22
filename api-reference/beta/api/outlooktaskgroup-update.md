@@ -56,7 +56,8 @@ The following example changes the name of a task group to "Personal Tasks".
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_outlooktaskgroup"
+  "name": "update_outlooktaskgroup",
+  "sampleKeys": ["AAMkADIyAAAhrbe-AAA="]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=

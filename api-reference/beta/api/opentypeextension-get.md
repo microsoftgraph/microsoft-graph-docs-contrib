@@ -167,10 +167,11 @@ First, by its name:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_opentypeextension_1"
+  "name": "get_opentypeextension_1",
+  "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===", "Com.Contoso.Referral"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==='/extensions/Com.Contoso.Referral
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
 # [C#](#tab/csharp)
@@ -204,7 +205,7 @@ Second, by its ID (fully qualified name):
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==='/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
 
 #### Response 1
@@ -242,7 +243,8 @@ The second example references an extension by its name and gets the extension in
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_opentypeextension_2"
+  "name": "get_opentypeextension_2",
+  "sampleKeys": ["f5480dfd-7d77-4d0b-ba2e-3391953cc74a", "AAMkADVl17IsAAA=", "Com.Contoso.Deal"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal
@@ -310,7 +312,8 @@ The filter returns the extension that has its **id** matching a fully qualified 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_opentypeextension_3"
+  "name": "get_opentypeextension_3",
+  "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===", "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
@@ -435,7 +438,8 @@ The fourth example references an extension by its fully qualified name and gets 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_opentypeextension_4"
+  "name": "get_opentypeextension_4",
+  "sampleKeys": ["37df2ff0-0de0-4c33-8aee-75289364aef6", "AAQkADJizZJpEWwqDHsEpV_KA==", "AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=", "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
@@ -506,11 +510,11 @@ expands them by including the extension. The filter returns extensions that has 
 
 
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_opentypeextension_5"
+  "name": "get_opentypeextension_5",
+  "sampleKeys": ["Com.Contoso.Referral"]
 }-->
 
 ```msgraph-interactive
@@ -542,33 +546,6 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%2
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-opentypeextension-5-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 
 
 #### Response 5

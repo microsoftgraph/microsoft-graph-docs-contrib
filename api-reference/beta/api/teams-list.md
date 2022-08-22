@@ -62,7 +62,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_teams"
+  "name": "get_teams_in_org"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/teams
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-teams-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-teams-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -137,7 +141,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_teams"
+  "name": "get_teams_filter_top"
 }-->
 
 ```msgraph-interactive
@@ -158,6 +162,10 @@ GET https://graph.microsoft.com/beta/teams?$filter=startswith(displayName, 'A')&
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-teams-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-teams-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -209,7 +217,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_teams"
+  "name": "get_teams_filter_select"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams?$filter=displayName eq 'A Contoso Team'&$select=id,description
@@ -229,6 +237,10 @@ GET https://graph.microsoft.com/beta/teams?$filter=displayName eq 'A Contoso Tea
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-teams-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-teams-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

@@ -8,7 +8,7 @@ Microsoft Graph Data Connect augments Microsoft Graph’s transactional model wi
 
 ![This image explains the applied data controls between Microsoft 365 data into the Azure cloud, as well as the output data.](../concepts/images/data-connect-mgdc-capabilities.PNG)
 
-Microsoft Graph Data Connect uses Azure Data Factory to copy Microsoft 365 data to your application’s storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Microsoft Azure, letting you access the most applicable development and hosting tools available. Data Connect also grants a more granular control and consent model: you can manage data, see who is accessing it, and request specific properties of an entity. This enhances the Microsoft Graph model, which grants or denies applications access to entire entities.
+Microsoft Graph Data Connect uses Azure Synapse or Azure Data Factory to copy Microsoft 365 data to your application’s storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Microsoft Azure, letting you access the most applicable development and hosting tools available. Data Connect also grants a more granular control and consent model: you can manage data, see who is accessing it, and request specific properties of an entity. This enhances the Microsoft Graph model, which grants or denies applications access to entire entities.
 
 You can use Data Connect to enable machine learning scenarios for your organization.. In these scenarios, you can create applications that provide valuable information to your stakeholders, train machine learning models, and even perform forecasting based on large amounts of acquired data.
 
@@ -32,7 +32,7 @@ To complete this lab, you will need the following subscriptions or licenses.
 
    - If you do not have one, you can get one (for free) in our [Azure website](https://azure.microsoft.com/free/).
    - The account used to sign in must have the **Global administrator** role granted to it.
-   - The Azure subscription must be in the same tenant as the Microsoft 365 tenant, as Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants.
+   - The Azure subscription must be in the same tenant as the Microsoft 365 tenant, as Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants. If your Azure subscription is not in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Azure Active Directory in your Microsoft 365 tenant. To do so, follow the steps listed in [Associate or add an Azure subscription to your Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
    - Your Microsoft 365 and Azure tenants must be in the same Microsoft Azure Active Directory tenancy.
 
 1. Make sure you have [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine.

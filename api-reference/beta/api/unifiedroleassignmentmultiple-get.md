@@ -2,7 +2,7 @@
 title: "Get unifiedRoleAssignmentMultiple"
 description: "Retrieve the properties and relationships of a unifiedRoleAssignmentMultiple object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -87,7 +87,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignmentmultiple_1"
+  "name": "get_unifiedroleassignmentmultiple_Intune",
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
 ```msgraph-interactive
@@ -156,7 +157,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignmentmultiple_2"
+  "name": "get_unifiedroleassignmentmultiple_in_intune_provider",
+  "sampleKeys": ["564ae70c-73d9-476b-820b-fb61eb7384b9"]
 }-->
 
 ```msgraph-interactive
@@ -238,7 +240,8 @@ The following is an example of the request with the `$expand` query parameter.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignment_3"
+  "name": "get_unifiedroleassignment_with_expand",
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
 ```msgraph-interactive
@@ -339,7 +342,8 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignmentmultiple_1"
+  "name": "get_unifiedroleassignmentmultiple_cloud_pc_provider",
+  "sampleKeys": ["dbe9d288-fd87-41f4-b33d-b498ed207096"]
 }-->
 
 ```msgraph-interactive
@@ -413,7 +417,8 @@ The following is an example of the request with the `$expand` query parameter.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignment_3"
+  "name": "get_unifiedroleassignment_cloud_pc_provider_expand",
+  "sampleKeys": ["dbe9d288-fd87-41f4-b33d-b498ed207096"]
 }-->
 
 ```msgraph-interactive
