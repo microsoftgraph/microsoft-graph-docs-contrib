@@ -494,16 +494,12 @@ items:
             href: cloud-communications-get-started.md   
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context      
-        - name: Calls, groups, teams, online meetings 
+        - name: Calls and online meetings 
           items:      
           - name: Call records
             href: cloud-communications-callrecords.md  
           - name: Supported call types
-            href: cloud-communications-calls.md    
-          - name: Create a group and team
-            href: teams-create-group-and-team.md
-          - name: List all teams
-            href: teams-list-all-teams.md   
+            href: cloud-communications-calls.md     
           - name: Create or join online meetings
             href: cloud-communications-online-meetings.md 
           - name: Choose an online meeting API
@@ -517,7 +513,13 @@ items:
           - name: Subscribe to change notifications
             href: teams-change-notification-in-microsoft-teams-overview.md
           - name: Subscribe to change notifications for online meetings
-            href: changenotifications-for-onlinemeeting.md    
+            href: changenotifications-for-onlinemeeting.md
+        - name: Groups and teams
+          teams: 
+          - name: Create a group and team
+            href: teams-create-group-and-team.md
+          - name: List all teams
+            href: teams-list-all-teams.md          
         - name: Licensing and payment models
           href: teams-licenses.md       
         - name: Protected APIs
