@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_richlongrunningoperation"
+  "name": "list_richlongrunningoperation_for_site_and_specific_list"
 }
 -->
 ``` http

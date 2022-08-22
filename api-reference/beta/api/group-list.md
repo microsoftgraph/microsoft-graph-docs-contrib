@@ -418,7 +418,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_video_count"
+  "name": "get_video_count_true"
 }-->
 
 ```msgraph-interactive
@@ -495,7 +495,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_video_count"
+  "name": "get_video_count_or_description"
 }-->
 
 ```msgraph-interactive

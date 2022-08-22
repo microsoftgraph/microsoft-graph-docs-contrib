@@ -61,7 +61,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_sitesource_from_"
+  "name": "create_sitesource_for_custodian"
 }
 -->
 ``` http

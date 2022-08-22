@@ -58,7 +58,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "identityprovider_availableprovidertypes"
+  "name": "identityprovider_availableprovidertypes_in_directory"
 }
 -->
 

@@ -165,7 +165,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_openidconnectprovider",
+  "name": "update_openidconnectprovider_forAzure_AD_B2C",
   "sampleKeys": ["OIDC-V1-Nam_AD_Test-3e393390-ed2d-4794-97f6-5c999ccc61f7"]
 }
 -->
