@@ -35,10 +35,10 @@ For more information about Microsoft Graph extensibility including limits for sc
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create](../api/schemaextension-post-schemaextensions.md) | schemaExtension |Create a schema extension definition.|
-|[List](../api/schemaextension-list.md) | schemaExtension |List the available schemaExtension definitions and their properties.|
-|[Get](../api/schemaextension-get.md) | schemaExtension |Read the properties of a specific schemaExtension definition.|
-|[Update](../api/schemaextension-update.md) | schemaExtension	|Update a schemaExtension definition. |
+|[Create](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) |Create a schema extension definition and its associated schema extension property.|
+|[List](../api/schemaextension-list.md) | [schemaExtension](schemaextension.md) |List the available schemaExtension definitions and their properties.|
+|[Get](../api/schemaextension-get.md) | [schemaExtension](schemaextension.md) |Read the properties of a specific schemaExtension definition.|
+|[Update](../api/schemaextension-update.md) | [schemaExtension](schemaextension.md)	|Update a schemaExtension definition. Use this operation to update the description, status, target types, or add more properties to the schema extension definition. |
 |[Delete](../api/schemaextension-delete.md) | None |Delete a schemaExtension definition. |
 
 ## Properties
