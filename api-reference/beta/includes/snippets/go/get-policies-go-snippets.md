@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'"
+
 requestParameters := &graphconfig.PoliciesRequestBuilderGetQueryParameters{
-	Filter: "displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.PoliciesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

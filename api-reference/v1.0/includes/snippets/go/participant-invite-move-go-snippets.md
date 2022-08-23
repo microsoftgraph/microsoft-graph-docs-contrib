@@ -12,15 +12,10 @@ requestBody := graphmodels.NewInvitePostRequestBody()
 
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.invitationParticipantInfo", 
 	"replacesCallId" : "a7ebfb2d-871e-419c-87af-27290b22e8db", 
 	"participantId" : "7d501bf1-5ee4-4605-ba92-0ae4513c611c", 
 identity := graphmodels.New()
-"@odata.type" := "#microsoft.graph.identitySet"
-identity.Set"@odata.type"(&"@odata.type") 
 user := graphmodels.New()
-"@odata.type" := "#microsoft.graph.identity"
-user.Set"@odata.type"(&"@odata.type") 
 id := "682b6c37-0729-4fab-ace6-d730d5d9137e"
 user.SetId(&id) 
 identityProvider := "AAD"

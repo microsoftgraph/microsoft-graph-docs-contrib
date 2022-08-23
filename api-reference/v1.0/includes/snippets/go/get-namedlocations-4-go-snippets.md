@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "microsoft.graph.countryNamedLocation/countriesAndRegions/any"
+
 requestParameters := &graphconfig.NamedLocationsRequestBuilderGetQueryParameters{
-	Filter: "microsoft.graph.countryNamedLocation/countriesAndRegions/any",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.NamedLocationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

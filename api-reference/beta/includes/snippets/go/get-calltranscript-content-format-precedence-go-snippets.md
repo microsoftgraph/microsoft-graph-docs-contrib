@@ -10,8 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"Accept": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
 }
+
+requestFormat := "text/vtt"
+
 requestParameters := &graphconfig.ContentRequestBuilderGetQueryParameters{
-	Format: "text/vtt",
+	Format: &requestFormat,
 }
 configuration := &graphconfig.ContentRequestBuilderGetRequestConfiguration{
 	Headers: headers,
