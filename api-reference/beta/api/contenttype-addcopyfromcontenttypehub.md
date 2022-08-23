@@ -67,7 +67,7 @@ In case of an asynchronous operation, it can take up to 70 minutes to sync or ad
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "contenttype_addcopyfromcontenttypehub"
+  "name": "contenttype_addcopyfromcontenttypehub_sync_pull"
 }
 -->
 ``` http
@@ -135,7 +135,7 @@ Content-Type: application/json
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "contenttype_addcopyfromcontenttypehub"
+  "name": "contenttype_addcopyfromcontenttypehub_async_pull"
 }
 -->
 ``` http

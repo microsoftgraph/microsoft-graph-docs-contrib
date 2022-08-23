@@ -11,34 +11,25 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new SendActivityNotificationPostRequestBody();
 $topic = new TeamworkActivityTopic();
-$topic->setSource(new TeamworkActivityTopicSource('entityurl'));
+$topic->setSource(new TeamworkActivityTopicSource('text'));
 
-$topic->setValue('https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7');
+$topic->setValue('Deployment Approvals Channel');
+
+$topic->setWebUrl('https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000');
 
 
 $requestBody->setTopic($topic);
-$requestBody->setActivityType('pendingFinanceApprovalRequests');
+$requestBody->setActivityType('deploymentApprovalRequired');
 
 $previewText = new ItemBody();
-$previewText->setContent('Internal spending team has a pending finance approval requests');
+$previewText->setContent('New deployment requires your approval');
 
 
 $requestBody->setPreviewText($previewText);
-$recipient = new TeamworkNotificationRecipient();
-$recipient->set@odatatype('microsoft.graph.teamMembersNotificationRecipient');
-
-$additionalData = [
-'teamId' => 'e8bece96-d393-4b9b-b8da-69cedef1a7e7', 
-];
-$recipient->setAdditionalData($additionalData);
-
-
-
-$requestBody->setRecipient($recipient);
 $templateParametersKeyValuePair1 = new KeyValuePair();
-$templateParametersKeyValuePair1->setName('pendingRequestCount');
+$templateParametersKeyValuePair1->setName('deploymentId');
 
-$templateParametersKeyValuePair1->setValue('5');
+$templateParametersKeyValuePair1->setValue('6788662');
 
 
 $templateParametersArray []= $templateParametersKeyValuePair1;
@@ -47,7 +38,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->teamsById('team-id')->sendActivityNotification()->post($requestBody);
+$graphServiceClient->usersById('user-id')->teamwork()->sendActivityNotification()->post($requestBody);
 
 
 ```

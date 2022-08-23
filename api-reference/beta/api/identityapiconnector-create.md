@@ -76,7 +76,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_identityapiconnector"
+  "name": "create_APIConnector_basic_auth"
 }
 -->
 
@@ -162,7 +162,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_identityapiconnector"
+  "name": "create_identityapiconnector_cert_auth"
 }
 -->
 ```http

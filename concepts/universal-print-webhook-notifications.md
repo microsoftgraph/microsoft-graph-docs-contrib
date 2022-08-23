@@ -77,7 +77,7 @@ For more details, see [Subscription resource type properties](/graph/api/resourc
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_subscription"
+  "name": "create_subscription_print_taskdefinition"
 }--> 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions 
@@ -139,7 +139,7 @@ For more details, see [Subscription resource type properties](/graph/api/resourc
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_subscription"
+  "name": "create_subscription_for_print"
 }--> 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions

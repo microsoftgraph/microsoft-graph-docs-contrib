@@ -70,7 +70,7 @@ The following is an example of a synchronous operation.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "contenttype_addcopyfromcontenttypehub",
+  "name": "contenttype_addcopyfromcontenttypehub_syncpull",
   "sampleKeys": ["Documents", "root"]
 }
 -->
@@ -147,7 +147,7 @@ The following is an example of an asynchronous operation.
 
 <!-- {
   "blockType": "request",
-  "name": "contenttype_addcopyfromcontenttypehub",
+  "name": "contenttype_addcopyfromcontenttypehub_asyncpull",
   "sampleKeys": ["Documents", "root"]
 }
 -->

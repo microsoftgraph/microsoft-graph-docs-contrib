@@ -61,7 +61,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_connection",
+  "name": "get_connection_byID",
   "sampleKeys": ["contosohr"]
 }-->
 

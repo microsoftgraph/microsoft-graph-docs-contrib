@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [caseSettings]
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_settings"
+  "name": "get_case_settings_for_caseID"
 }
 -->
 

@@ -63,7 +63,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_identityprovider"
+  "name": "delete_identityprovider_for_ID_specified"
 }
 -->
 

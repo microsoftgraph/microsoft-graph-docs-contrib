@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let externalSponsors = await client.api('/identityGovernance/entitlementManagement/assignments/{accessPackageAssignmentId}/target/connectedOrganization/externalSponsors')
+let internalSponsors = await client.api('/identityGovernance/entitlementManagement/assignments/{accessPackageAssignmentId}/target/connectedOrganization/internalSponsors')
 	.get();
 
 ```
