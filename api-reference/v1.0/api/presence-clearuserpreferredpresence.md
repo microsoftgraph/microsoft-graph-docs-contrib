@@ -1,6 +1,6 @@
 ---
 title: "presence: clearUserPreferredPresence"
-description: "Clear the user preferred presence for a user"
+description: "Clear the preferred availability and activity status for a user."
 author: "benjaminlee"
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -19,14 +19,15 @@ The following permission is required to call the API. To learn more, including h
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Presence.ReadWrite                          |
-| Delegated (personal Microsoft account) | Not Supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Presence.ReadWrite.All                      |
 
-## HTTP Request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/presence/clearUserPreferredPresence
 ```
+
 ## Request headers
 | Name          | Description                 |
 | :------------ | :-------------------------- |
@@ -35,25 +36,26 @@ POST /users/{userId}/presence/clearUserPreferredPresence
 
 ## Request body
 
-This request only contains an empty object.
+In the request body, supply an empty JSON object `{}` for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
-The following request clears the user preferred presence for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`.
+### Request
 
-#### Request
+The following is an example of a request that clears the preferred availability and activity status for a user.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "clearUserPreferredPresence"
+  "name": "clearUserPreferredPresence",
+  "sampleKeys": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3"]
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/clearUserPreferredPresence
+POST https://graph.microsoft.com/v1.0/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/clearUserPreferredPresence
 Content-Type: application/json
 
 {
@@ -75,7 +77,9 @@ Content-Type: application/json
 ---
 
 
-#### Response
+### Response
+
+The following is an example of a response.
 
 <!-- {
   "blockType": "response",

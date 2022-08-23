@@ -1,6 +1,6 @@
 ---
 title: "presence: setUserPreferredPresence"
-description: "Set the user preferred presence for a user"
+description: "Set the preferred availability and activity status for a user."
 author: "benjaminlee"
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -15,9 +15,9 @@ Set the preferred availability and activity status for a user. If the preferred 
 
 Preferred presence takes effect only when there is at least one [presence session](presence-setpresence.md#presence-sessions) of the user. Otherwise, the user's presence stays as Offline.
 
-A presence session can be created as a result of a successful [setPresence](presence-setpresence.md) operation, or if the user is signed in on a Teams client. 
+A presence session can be created as a result of a successful [setPresence](presence-setpresence.md) operation, or if the user is signed in on a Microsoft Teams client.
 
-Read more about [presence sessions](presence-setpresence.md#presence-sessions) and their [time-out and expiration](presence-setpresence.md#timeout-expiration-and-keep-alive). 
+Read more about [presence sessions](presence-setpresence.md#presence-sessions) and their [time-out and expiration](presence-setpresence.md#timeout-expiration-and-keep-alive).
 
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +25,7 @@ The following permission is required to call the API. To learn more, including h
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Presence.ReadWrite                          |
-| Delegated (personal Microsoft account) | Not Supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Presence.ReadWrite.All                      |
 
 ## HTTP Request
@@ -33,6 +33,7 @@ The following permission is required to call the API. To learn more, including h
 ```http
 POST /users/{userId}/presence/setUserPreferredPresence
 ```
+
 ## Request headers
 | Name          | Description                 |
 | :------------ | :-------------------------- |
@@ -41,13 +42,13 @@ POST /users/{userId}/presence/setUserPreferredPresence
 
 ## Request body
 
-In the request body, provide a J SON object with the following parameters.
+In the request body, provide a JSON object with the following parameters.
 
 | Parameter          | Type     | Description                                                                                                                                                                                                                                    |
 | :----------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| availability       | string   | The base presence information.                                                                                                                                                                                                                 |
-| activity           | string   | The supplemental information to availability.                                                                                                                                                                                                  |
-| expirationDuration | duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations.<br/>If not provided, a default expiration will be applied:<br/>DoNotDisturb or Busy: expires in 1 day<br/>All others: expires in 7 days |
+| availability       | String   | The base presence information.                                                                                                                                                                                                                 |
+| activity           | String   | The supplemental information to availability.                                                                                                                                                                                                  |
+| expirationDuration | Duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations.<br/>If not provided, a default expiration will be applied:<br/>- DoNotDisturb or Busy: expires in 1 day<br/>- All others: expires in 7 days |
 
 Supported combinations of **availability** and **activity** are:
 
@@ -58,25 +59,26 @@ Supported combinations of **availability** and **activity** are:
 | DoNotDisturb | DoNotDisturb | Set the user preferred presence as DoNotDisturb.    |
 | BeRightBack  | BeRightBack  | Set the user preferred presence as BeRightBack.     |
 | Away         | Away         | Set the user preferred presence as Away.            |
-| Offline      | OffWork      | Set the user preferred presence as Offline. |
+| Offline      | OffWork      | Set the user preferred presence as Offline.         |
 
 ## Response
 If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
-The following request sets the user preferred presence as DoNotDisturb for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`, with the expiration of 8 hours.
+### Request
 
-#### Request
+The following example shows a request that sets the preferred presence as DoNotDisturb for a user, with an expiration of 8 hours.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "setUserPreferredPresence"
+  "name": "setUserPreferredPresence",
+  "sampleKeys": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3"]
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setUserPreferredPresence
+POST https://graph.microsoft.com/v1.0/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setUserPreferredPresence
 Content-Type: application/json
 
 {
@@ -113,7 +115,9 @@ Content-Type: application/json
 ---
 
 
-#### Response
+### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
