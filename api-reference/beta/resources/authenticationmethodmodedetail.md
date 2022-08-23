@@ -21,10 +21,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List authenticationMethodModeDetails](../api/authenticationstrengthroot-list-authenticationmethodmodes.md)|[authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) collection|Get a list of the [authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) objects and their properties.|
-|[Create authenticationMethodModeDetail](../api/authenticationstrengthroot-post-authenticationmethodmodes.md)|[authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md)|Create a new [authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) object.|
 |[Get authenticationMethodModeDetail](../api/authenticationmethodmodedetail-get.md)|[authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md)|Read the properties and relationships of an [authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) object.|
-|[Update authenticationMethodModeDetail](../api/authenticationmethodmodedetail-update.md)|[authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md)|Update the properties of an [authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) object.|
-|[Delete authenticationMethodModeDetail](../api/authenticationstrengthroot-delete-authenticationmethodmodes.md)|None|Deletes an [authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) object.|
 
 ## Properties
 |Property|Type|Description|
