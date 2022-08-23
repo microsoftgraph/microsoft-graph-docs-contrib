@@ -40,13 +40,11 @@ POST /teams/{team-Id}/tags/{teamworkTag-Id}/members
 ## Request body
 In the request body, supply a JSON representation of the [teamworkTagMember](../resources/teamworktagmember.md) object.
 
-The following table shows the properties that are required when you create the [teamworkTagMember](../resources/teamworktagmember.md).
+The following table shows the properties that are required when you create a [teamworkTagMember](../resources/teamworktagmember.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|userId|String|User identifier of the member of the team.|
-
-
+|userId|String|The unique identifier for the member of the team.|
 
 ## Response
 
@@ -55,6 +53,8 @@ If successful, this method returns a `201 Created` response code and a [teamwork
 ## Examples
 
 ### Request
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -67,14 +67,14 @@ POST https://graph.microsoft.com/v1.0/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd
 Content-Type: application/json
 
 {
-    "userId":"97f62344-57dc-409c-88ad-c4af14158ff5"
+  "userId": "97f62344-57dc-409c-88ad-c4af14158ff5"
 }
 ```
----
-
-
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

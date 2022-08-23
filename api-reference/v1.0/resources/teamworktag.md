@@ -37,8 +37,15 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 |displayName|String|Tag name as it will appear to the user in Microsoft Teams.|
 |id|String|ID of the tag.|
 |memberCount|Int32|The number of users assigned to the tag.|
-|tagType|teamworkTagType|The type of tag. Default is standard.|
+|tagType|[teamworkTagType](../resources/teamworktag.md#teamworktagtype-values)|The type of tag. Default is standard.|
 |teamId|String|ID of the team in which the tag is defined.|
+
+
+### teamworkTagType values
+
+| Member   | Description                                                                                               |
+|:---------|:----------------------------------------------------------------------------------------------------------|
+| standard | Default type for a tag. Tags of type standard can be managed in the team by members who have permissions. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -58,12 +65,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkTag",
+  "displayName": "String",
   "id": "String (identifier)",
   "description": "String",
-  "teamId": "String",
-  "displayName": "String",
-  "memberCount": "Integer",
-  "tagType": "String"
+  "memberCount": "Int32",
+  "tagType": "String",
+  "teamId": "String"
 }
 ```
-

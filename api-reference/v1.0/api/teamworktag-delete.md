@@ -1,6 +1,6 @@
 ---
 title: "Delete teamworkTag"
-description: "Deletes a teamworkTag object."
+description: "Delete a teamworkTag object."
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -10,9 +10,9 @@ doc_type: apiPageType
 # Delete teamworkTag
 Namespace: microsoft.graph
 
-Delete a [tag](../resources/teamworktag.md) object. 
+Delete a [tag](../resources/teamworktag.md) object.
 
->**Note:** The tag will not be recoverable once it is deleted using this API.
+>**Note:** You can't recover a tab that was deleted using this API.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,17 +47,22 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
-  "name": "delete_teamworktag"
+  "name": "delete_teamworktag",
+  "sampleKeys": ["53c53217-fe77-4383-bc5a-ed4937a1aecd", "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk=="]
 }
 -->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==
 ```
----
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

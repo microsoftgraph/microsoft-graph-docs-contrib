@@ -40,11 +40,11 @@ PATCH /teams/{team-Id}/tags/{teamworkTag-Id}
 ## Request body
 In the request body, supply a JSON representation of the [teamworkTag](../resources/teamworktag.md) object.
 
-The following table shows the properties that are required when you update the [teamworkTag](../resources/teamworktag.md).
+The following table shows the properties that are required when you update a [teamworkTag](../resources/teamworktag.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the tag. The value can't be more than 40 characters.|
+|displayName|String|The name of the tag. The value can't be more than 40 characters.|
 
 ## Response
 
@@ -53,6 +53,8 @@ If successful, this method returns a `200 OK` response code and an updated [team
 ## Examples
 
 ### Request
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -68,11 +70,14 @@ Content-Type: application/json
   "displayName": "Finance"
 }
 ```
----
 
 
 
 ### Response
+
+The following is an example of the response.
+
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
