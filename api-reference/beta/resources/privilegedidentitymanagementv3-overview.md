@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # Overview of role management through the privileged identity management (PIM) API
 
-Privileged Identity Management (PIM) is a feature of **Azure AD Identity Governance** that enables you to manage, control, and monitor access to important resources in your organization. This access is enabled through privileged roles and role-based access control (RBAC) and can be granted to users, role-assignable groups, or service principals. The resources can be in Azure AD, Azure, and other Microsoft cloud services such as Microsoft 365 or Microsoft Intune.
+Privileged Identity Management (PIM) is a feature of [Azure AD Identity Governance](#see-also) that enables you to manage, control, and monitor access to important resources in your organization. This access is enabled through privileged roles and role-based access control (RBAC) and can be granted to users, role-assignable groups, or service principals. The resources can be in Azure AD, Azure, and other Microsoft cloud services such as Microsoft 365 or Microsoft Intune.
 
 The Microsoft Graph PIM API for role management allows you to govern privileged access and limit excessive access. This article introduces the governance capabilities of PIM APIs in Microsoft Graph.
 
