@@ -29,19 +29,19 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|The date and time of when a task is completed.|
-|createdDateTime|DateTimeOffset|The date and time of when a task is created. <br><br>Supports `$filter`(`lt`,`gt`) and `orderby`.|
-|failureReason|String|The reason why a task failed.|
+|completedDateTime|DateTimeOffset|The date time when `taskProcessingResult` execution ended. Value is `null` if task execution has not yet ended.|
+|createdDateTime|DateTimeOffset|The date time when the `taskProcessingResult` was created. <br><br>Supports `$filter`(`lt`,`gt`) and `orderby`.|
+|failureReason|String|Describes why the `taskProcessingResult` has failed.|
 |id|String|Identifier used for individually addressing a specific task processing result. Inherited from [entity](../resources/entity.md).|
-|processingStatus|String|The processing status of a task. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. <br><br>Supports `$filter`(`eq`).|
-|startedDateTime|DateTimeOffset|The date and time when a task is started. <br><br>Supports `$filter`(`lt`,`gt`) and `orderby`.|
+|processingStatus|String|Describes the execution status of the `taskProcessingResult`. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. <br><br>Supports `$filter`(`eq`).|
+|startedDateTime|DateTimeOffset|The date time when `taskProcessingResult` execution started. Value is `null` if task execution not yet started. <br><br>Supports `$filter`(`lt`,`gt`) and `orderby`.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|subject|[user](../resources/user.md)|The subject of the taskProcessingResult.|
-|task|[task](../resources/identitygovernance-task.md)|The task having processing results generated.|
+|subject|[user](../resources/user.md)|The unique identifier of the AAD user targeted for the `taskProcessingResult`.|
+|task|[task](../resources/identitygovernance-task.md)|The related task|
 
 ## JSON representation
 

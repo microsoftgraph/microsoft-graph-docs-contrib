@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|The date time that the run completed. Optional.|
+|completedDateTime|DateTimeOffset|The date time that the run completed. Value is `null` if the workflow hasn't completed. Optional.|
 |failedTasksCount|Int32|The number of tasks that failed in the run execution. Required.|
 |failedUsersCount|Int32|The number of users that failed in the run execution. Required.|
 |lastUpdatedDateTime|DateTimeOffset|The datetime that the run was last updated. Optional.|
@@ -46,7 +46,9 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|The user processing results of a workflow run.|
+|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|The associated individual user execution.|
+|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The related taskProcessingResults.|
+|taskReports|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) collection|The related taskProcessingReports.|
 
 ## JSON representation
 

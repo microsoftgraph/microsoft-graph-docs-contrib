@@ -26,10 +26,10 @@ Inherits from [customExtensionData](../resources/identitygovernance-customTaskEx
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|subject|[user](../resources/user.md)|The user which created the workflow.|
-|task|[task](../resources/identitygovernance-task.md)|The task associated with the Custom Task Extension.|
-|taskProcessingResult|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md)|The task processing result of the Custom Task Extension.|
-|workflow|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|The workflow the Custom Task Extension is part of.|
+|subject|[user](../resources/user.md)|The user that the `workflow` is executed for.|
+|task|[task](../resources/identitygovernance-task.md)|The task that references the custom extension making this callout.|
+|taskProcessingResult|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md)|The `taskProcessingResult` tracking the instance information of the executing `task`.|
+|workflow|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|The `workflow` associated with the task that references the custom extension that will be making the callout.|
 
 ## JSON representation
 

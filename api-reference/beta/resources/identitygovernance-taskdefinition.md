@@ -28,13 +28,13 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|String|The category of the task definition. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
-|continueOnError|Boolean|A boolean value that determines if the failure of the task definition stops the subsequent workflows from running.|
-|description|String|A string that describes the purpose of the task definition for administrative use.|
-|displayName|String|A unique string that identifies the task definition.|
-|id|String|Identifier used for individually addressing a specific task definition. Inherited from [entity](../resources/entity.md).|
-|parameters|[microsoft.graph.identityGovernance.parameter](../resources/identitygovernance-parameter.md) collection|The parameter of the task definition.|
-|version|Int32|An integer noting the version of the task definition.|
+|category|String|The category of the HR function that the tasks created using this definition can be used with. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|continueOnError|Boolean|Determines if task can block workflow execution on error.|
+|description|String|The description of the `taskDefinition`.|
+|displayName|String|The display name of the `taskDefinition`.|
+|id|String|The unique identifier for the `taskDefinition`. Inherited from [entity](../resources/entity.md).|
+|parameters|[microsoft.graph.identityGovernance.parameter](../resources/identitygovernance-parameter.md) collection|The parameters that must be supplied when creating a `task`.|
+|version|Int32|The version number of the `taskDefinition`. New records are pushed when we add support for new parameters.|
 
 ## Relationships
 

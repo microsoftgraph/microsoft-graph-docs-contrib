@@ -34,12 +34,12 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|String|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|The time and date the workflow was created. <br><br>Supports `$filter`(`lt`, `gt`) and `$orderby`.|
-|description|String|A string that describes the purpose of the workflow for administrative use.|
-|displayName|String|A unique string that identifies the workflow. <br><br>Supports `$filter`(`eq`), `orderby`, and `$search`.|
-|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines for who and when a workflow will run.|
-|lastModifiedDateTime|DateTimeOffset|The time and date a workflow was last modified. <br><br>Supports `$filter`(`lt`,`gt`) and `$orderby`.|
+|category|String|The category of the HR function supported by the workflows created using this template. A workflow can only belong to one category. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset|The date time when the `workflow` was versioned. <br><br>Supports `$filter`(`lt`, `gt`) and `$orderby`.|
+|description|String|The description of the `workflowversion`.|
+|displayName|String|The display name of the `workflowversion`. <br><br>Supports `$filter`(`eq`), `orderby`, and `$search`.|
+|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Conditions describing when to execute the workflow and the criteria to identify in-scope subject set.|
+|lastModifiedDateTime|DateTimeOffset|The date time when the `workflow` was last modified. <br><br>Supports `$filter`(`lt`,`gt`) and `$orderby`.|
 |versionNumber|Int32|The version of the workflow.|
 
 ## Relationships

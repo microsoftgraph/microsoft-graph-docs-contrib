@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Identifier used for individually addressing Lifecycle Management settings. Inherited from [entity](../resources/entity.md).|
-|workflowScheduleIntervalInHours|Int32|The schedule the workflow is set to run based in hour form.|
+|workflowScheduleIntervalInHours|Int32|The interval in hours at which the all `workflows` should be scheduled for execution. This interval has a minimum value of 1 and a maximum value of 24.|
 
 ## Relationships
 

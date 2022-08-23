@@ -30,23 +30,23 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|The date and time of a completed user processing result. <br><br>Supports `$filter`(`lt`, `gt`) and `$orderby`.|
-|failedTasksCount|Int32|Numerical count of failed tasks for users processed.|
+|completedDateTime|DateTimeOffset|The date time that the workflow execution for a user completed. Value is null if the workflow hasn't completed. <br><br>Supports `$filter`(`lt`, `gt`) and `$orderby`.|
+|failedTasksCount|Int32|The number of tasks that failed in the workflow execution.|
 |id|String|Identifier used for individually addressing a specific user processing result. Inherited from [entity](../resources/entity.md).|
-|processingStatus|String|The processing status of a .The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
-|scheduledDateTime|DateTimeOffset|The time and date of a scheduled workflow to be processed for a user.|
-|startedDateTime|DateTimeOffset|The date and time when a user processing result was started. <br><br>Supports `$filter`(`lt`, `gt`) and `$orderby`.|
-|totalTasksCount|Int32|Numerical count of total tasks.|
-|totalUnprocessedTasksCount|Int32|Numerical count of unprocessed tasks for a user.|
-|workflowExecutionType|String|The workflow execution type of a workflow. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`. <br><br>Supports `$filter`(`eq`, `ne`).|
-|workflowVersion|Int32|The workflow version.|
+|processingStatus|String|The workflow execution status. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
+|scheduledDateTime|DateTimeOffset|The date time that the workflow is scheduled to be executed for a user.|
+|startedDateTime|DateTimeOffset|The date time that the workflow execution started. Value is `null` if the workflow execution has not started. <br><br>Supports `$filter`(`lt`, `gt`) and `$orderby`.|
+|totalTasksCount|Int32|The total number of tasks that in the workflow execution.|
+|totalUnprocessedTasksCount|Int32|The total number of unprocessed tasks for the workflow.|
+|workflowExecutionType|String|Describes the execution type of the workflow. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`. <br><br>Supports `$filter`(`eq`, `ne`).|
+|workflowVersion|Int32|The version of the workflow that was executed.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|subject|[user](../resources/user.md)|User the processing result is being run for|
-|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|task processing information that is ran for a user being returned in the results.|
+|subject|[user](../resources/user.md)|The unique identifier of the AAD user targeted for the `taskProcessingResult`.|
+|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The associated individual task execution.|
 
 ## JSON representation
 

@@ -29,16 +29,16 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |category|String|The category of the workflow template.The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
-|description|String|Description of the workflow template.|
-|displayName|String|The name of the workflow template. <br><br>Supports  `orderby`.|
-|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines for who and when a workflow will run.|
-|id|String|Identifier used for individually addressing a specific workflow template. Inherited from [entity](../resources/entity.md).|
+|description|String|The description of the `workflowTemplate`.|
+|displayName|String|The display name of the `workflowTemplate`. <br><br>Supports  `orderby`.|
+|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Conditions describing when to execute the workflow and the criteria to identify in-scope subject set.|
+|id|String|The unique identifier for the `workflowTemplate`. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks within the workflow template.|
+|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Represents the configured tasks to execute and their execution sequence within a `workflow`.|
 
 ## JSON representation
 

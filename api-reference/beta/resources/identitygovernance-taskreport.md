@@ -29,24 +29,24 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|The date time that the task report completed completed.|
-|failedUsersCount|Int32|The number of tasks that failed for users.|
+|completedDateTime|DateTimeOffset|The date time that the associated run completed. Value is `null` if the run has not completed.|
+|failedUsersCount|Int32|The number of users in the run execution for which the associated task failed.|
 |id|String|A unique identifier for the task report. Inherited from [entity](../resources/entity.md).|
 |lastUpdatedDateTime|DateTimeOffset|The date and time that the task report was last updated.|
 |processingStatus|String|The task report execution status.The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
-|runId|String|The run id of the task report.|
-|startedDateTime|DateTimeOffset|The date and time that the task report execution started.|
-|successfulUsersCount|Int32|The number of successfully completed users in the task report.|
-|totalUsersCount|Int32|The total number of users in the task report.|
-|unprocessedUsersCount|Int32|The unprocessed user count of the task report.|
+|runId|String|The unique identifier of the associated run.|
+|startedDateTime|DateTimeOffset|The date time that the associated run started. Value is `null` if the run has not started.|
+|successfulUsersCount|Int32|The number of users in the run execution for which the associated task succeeded.|
+|totalUsersCount|Int32|The total number of users in the run execution for which the associated task was scheduled to execute.|
+|unprocessedUsersCount|Int32|The number of users in the run execution for which the associated task is `queued`, `in progress`, or `canceled`.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|task|[task](../resources/identitygovernance-task.md)|The tasks in the report.|
-|taskDefinition|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md)|The task definition of tasks in the report.|
-|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The task processing results of the tasks in the report.|
+|task|[task](../resources/identitygovernance-task.md)|The related taskProcessingResults.|
+|taskDefinition|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md)|The taskDefinition associated with the related task.|
+|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The related taskProcessingResults.|
 
 ## JSON representation
 

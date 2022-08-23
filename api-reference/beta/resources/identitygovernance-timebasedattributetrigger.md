@@ -21,8 +21,8 @@ Inherits from [workflowExecutionTrigger](../resources/identitygovernance-workflo
 
 |Property|Type|Description|
 |:---|:---|:---|
-|offsetInDays|Int32|The number of days from the time based attribute for which a workflow is triggered.|
-|timeBasedAttribute|String|The event triggering the execution of a workflow.The possible values are: `employeeHireDate`, `employeeLeaveDateTime`, `unknownFutureValue`.|
+|offsetInDays|Int32|How many days before or after the time-based attribute specified. For example, if the attribute is employeeHireDate and offsetInDays is -1, then the workflow should trigger 1 day before employee hire date.|
+|timeBasedAttribute|String|Determines which time-based identity property to reference. The possible values are: `employeeHireDate`, `employeeLeaveDateTime`, `unknownFutureValue`.|
 
 ## Relationships
 

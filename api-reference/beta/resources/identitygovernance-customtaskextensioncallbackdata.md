@@ -21,7 +21,7 @@ Inherits from [customExtensionData](../resources/identitygovernance-customTaskEx
 
 |Property|Type|Description|
 |:---|:---|:---|
-|operationStatus|String|The operation status of the Custom Task extension callback configuration call.The possible values are: `completed`, `failed`, `unknownFutureValue`.|
+|operationStatus|String|Allow extension provided completion status of the corresponding extension. Supported values: `completed`, `failed`.|
 
 ## Relationships
 

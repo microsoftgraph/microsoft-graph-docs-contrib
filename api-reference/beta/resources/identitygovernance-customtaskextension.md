@@ -39,14 +39,14 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |displayName|String|A unique string that identifies the custom task extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |endpointConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Details for allowing the Custom Task Extension to call the logic app. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |id|String| Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|Custom Task Extension last modified date and time.|
+|lastModifiedDateTime|DateTimeOffset|The date time the custom extension was last modified.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|createdBy|[user](../resources/user.md)|The user who created the Custom Task Extension.|
-|lastModifiedBy|[user](../resources/user.md)|The user who last modified the Custom Task Extension.|
+|createdBy|[user](../resources/user.md)|The unique identifier of the AAD user that created the `customTaskExtension`.|
+|lastModifiedBy|[user](../resources/user.md)|The unique identifier of the AAD user that modified the `customTaskExtension` last.|
 
 ## JSON representation
 
