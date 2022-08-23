@@ -67,7 +67,7 @@ The following is an example of the request. You must include the **owner** prope
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_schemaextension",
+  "name": "update_schemaextension_owner_to_appid",
   "sampleKeys": ["exto6x7sfft_courses"]
 }-->
 ```http

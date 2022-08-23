@@ -63,7 +63,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_teamtemplatedefinition"
+  "name": "list_teamtemplatedefinition_for_tenant"
 }
 -->
 ```msgraph-interactive
@@ -134,7 +134,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_teamtemplatedefinition"
+  "name": "list_teamtemplatedefinition_extend_filter"
 }
 -->
 ```msgraph-interactive

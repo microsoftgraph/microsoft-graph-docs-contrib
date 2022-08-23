@@ -27,10 +27,11 @@ In this step, you will setup your Microsoft 365 tenant to enable usage of Micros
 
     ![A screenshot showing a user is giving the group a name of "Consent Request Approvers" in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-cons-apprv.png)
 
+   - **Owners**: Click **Assign owners** in the right pane and add at least one owner for the group.
+   - **Members**: Click **Add members** and add the two users that you enabled the **Global administrator** role to this group.
    - **Email Prefix**: consentrequestapprovers
 
     ![A screenshot showing a user creating the email address for the previously created group in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-cons-apprv-pref.png)
-
 
 1. It may take some time before the newly created group shows up in the list. When the group has been created, please select it.
 
@@ -40,11 +41,14 @@ In this step, you will setup your Microsoft 365 tenant to enable usage of Micros
 
 1. Add the two users that you enabled the **Global administrator** role to this new group. Both users added into this group must have **Global adminstrator** role.
 
+1. Finally click **Create group**. It can take up to an hour before the newly created group shows up in the list. 
+
+
 ## Enable Microsoft Graph Data Connect in your Microsoft 365 tenant
 
 In this step, you will enable the Microsoft Graph Data Connect service on your Microsoft 365 tenant.
 
-1. While you are still signed in to the Microsoft 365 Admin Portal, select the **Settings > Org settings** menu item.
+1. While you are still signed in to the Microsoft 365 Admin Portal, select the **Settings > Org settings** menu item. You might have to click **Show all** before you are able to view **Settings**.
 
 1. Select the **Microsoft Graph Data Connect** service.
 

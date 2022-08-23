@@ -56,7 +56,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_caseoperation"
+  "name": "list_caseoperation_and properties"
 }
 -->
 ``` http

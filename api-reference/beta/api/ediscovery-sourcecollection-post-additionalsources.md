@@ -70,7 +70,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_datasource_from__1"
+  "name": "create_datasource_caseID_sourceCollectionID"
 }
 -->
 
@@ -144,7 +144,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "create_datasource_from__1"
+  "name": "add_site_to_additional_sources"
 }
 -->
 

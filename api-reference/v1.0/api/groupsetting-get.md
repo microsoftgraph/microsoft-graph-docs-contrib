@@ -79,7 +79,7 @@ If successful, this method returns a `200 OK` response code and [groupSetting](.
 
 <!-- {
   "blockType": "request",
-  "name": "get_groupsettings"
+  "name": "get_groupsettings_specific_group"
 }-->
 
 ```msgraph-interactive
