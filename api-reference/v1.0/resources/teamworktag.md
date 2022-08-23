@@ -11,20 +11,20 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a tag associated with a team. 
+Represents a tag associated with a team.
 
-Tags provide a flexible way for customers to classify users or groups based on a common attribute within a team. For example, a Nurse or Manager or Designer tag will enable users to reach groups of people in Teams without having to type every single name.
+Tags provide a flexible way for customers to classify users or groups based on a common attribute within a team. For example, a Nurse, Manager, or Designer tag will enable users to reach groups of people in Teams without having to type every single name.
 
-When a tag is added, users can @mention it in a channel. Everyone who has been assigned that tag will receive a notification just as they would if they were @mentioned individually. Users can also use a tag is to start a new chat with the members of that tag.
+When a tag is added, users can @mention it in a channel. Everyone who has been assigned that tag will receive a notification just as they would if they were @mentioned individually. Users can also use a tag to start a new chat with the members of that tag.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List teamworkTags](../api/teamworktag-list.md)|[**teamworkTag**](teamworktag.md) collection|Get a list of the **teamworkTag** objects and their properties.|
-|[Create teamworkTag](../api/teamworktag-post.md)|[**teamworkTag**](teamworktag.md)|Create a new **teamworkTag** object.|
-|[Get teamworkTag](../api/teamworktag-get.md)|[**teamworkTag**](teamworktag.md)|Read the properties and relationships of a **teamworkTag** object.|
-|[Update teamworkTag](../api/teamworktag-update.md)|[**teamworkTag**](teamworktag.md)|Update the properties of a **teamworkTag** object.|
-|[Delete teamworkTag](../api/teamworktag-delete.md)|None|Delete a **teamworkTag** object.|
+|[List teamworkTags](../api/teamworktag-list.md)|[teamworkTag](teamworktag.md) collection|Get a list of the [tags](../resources/teamworktag.md) objects and their properties.|
+|[Create teamworkTag](../api/teamworktag-post.md)|[teamworkTag](teamworktag.md)|Create a standard [tag](../resources/teamworktag.md) for members in a team.|
+|[Get teamworkTag](../api/teamworktag-get.md)|[teamworkTag](teamworktag.md)|Read the properties and relationships of a [tag](../resources/teamworktag.md) object.|
+|[Update teamworkTag](../api/teamworktag-update.md)|[teamworkTag](teamworktag.md)|Update the properties of a [teamworkTag](../resources/teamworktag.md) object.|
+|[Delete teamworkTag](../api/teamworktag-delete.md)|None|Delete a [tag](../resources/teamworktag.md) object.|
 |[List teamworkTagMembers](../api/teamworktagmember-list.md)|[**teamworkTagMember**](teamworktagmember.md) collection|Get a list of the members of a standard tag in a team and their properties.|
 |[Create teamworkTagMember](../api/teamworktagmember-post.md)|[**teamworkTagMember**](teamworktagmember.md)|Create a new **teamworkTagMember** object.|
 |[Get teamworkTagMember](../api/teamworktagmember-get.md)|[**teamworkTagMember**](teamworktagmember.md)|Get the properties and relationships of a member of a standard tag in a team.|

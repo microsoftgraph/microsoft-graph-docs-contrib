@@ -1,6 +1,6 @@
 ---
 title: "teamworkTagMember resource type"
-description: "Represents a user in a team who has a tag applied to them."
+description: "Represents a user in a team to whom a tag is applied."
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -16,10 +16,10 @@ Represents a user in a team to whom a tag is applied.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List teamworkTagMembers](../api/teamworktagmember-list.md)|[**teamworkTagMember**](teamworktagmember.md) collection|Get a list of the members of a standard tag in a team and their properties.|
-|[Create teamworkTagMember](../api/teamworktagmember-post.md)|[**teamworkTagMember**](teamworktagmember.md)|Create a new **teamworkTagMember** object.|
-|[Get teamworkTagMember](../api/teamworktagmember-get.md)|[**teamworkTagMember**](teamworktagmember.md)|Get the properties and relationships of a member of a standard tag in a team.|
-|[Delete teamworkTagMember](../api/teamworktagmember-delete.md)|None|Delete a member from a standard tag in the team.|
+|[List teamworkTagMembers](../api/teamworktagmember-list.md)|[teamworkTagMember](teamworktagmember.md) collection|Get a list of the [members](../resources/teamworktagmember.md) of a standard tag in a team and their properties.|
+|[Create teamworkTagMember](../api/teamworktagmember-post.md)|[teamworkTagMember](teamworktagmember.md)|Create a new [teamworkTagMember](../resources/teamworktagmember.md) object in a team.|
+|[Get teamworkTagMember](../api/teamworktagmember-get.md)|[teamworkTagMember](teamworktagmember.md)|Get the properties and relationships of a [member](../resources/teamworktagmember.md) of a standard tag in a team.|
+|[Delete teamworkTagMember](../api/teamworktagmember-delete.md)|None|Delete a [member](../resources/teamworktagmember.md) from a standard tag in a team.|
 
 ## Properties
 |Property|Type|Description|
@@ -45,8 +45,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkTagMember",
-  "id": "String (Identifier)",
   "displayName": "String",
+  "id": "String (Identifier)",
   "tenantId": "String",
   "userId": "String"
 }
