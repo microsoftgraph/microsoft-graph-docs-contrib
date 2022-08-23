@@ -12,11 +12,7 @@ doc_type: resourcePageType
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Represents _settings_ to manage the audience in an organization for whom the contact de-duplication feature is enabled in M365. The feature availability can be controlled at the organization level (i.e., Tenant) or at a security group level (i.e., a subset of the organization). 
-
-
-When a contact list has multiple entries for the same individual, information is scattered across contacts or replicated with no added benefit. Contact merge suggestions allow easy merger of information into a single contact in which all information from duplicates is saved. 
-
+Represents _settings_ to manage the audience in an organization for whom intelligent features related to contact management (e.g. duplicate contact merge suggestions) are enabled in M365. The feature availability can be controlled at the organization level (i.e., Tenant) or at a security group level (i.e., a subset of the organization). 
 
 ## Methods
 
@@ -30,8 +26,8 @@ When a contact list has multiple entries for the same individual, information is
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` if contact merge suggestions are enabled for the organization; `false` if it is disabled for all users without exceptions. Default is `true`. Optional.|
-|disabledForGroup|String| The ID of an Azure Active Directory group in which the contact merge suggestions are disabled for its members. Default is `empty`. Optional.|
+|isEnabledInOrganization|Boolean| `true` if contact insights are enabled for the organization; `false` if it is disabled for all users without exceptions. Default is `true`. Optional.|
+|disabledForGroup|String| The ID of an Azure Active Directory group in which the contact insights are disabled for its members. Default is `empty`. Optional.|
 
 ## JSON representation
 

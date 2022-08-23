@@ -414,9 +414,9 @@ items:
             href: api/contactmergesuggestions-get.md
           - name: Update
             href: api/contactmergesuggestions-update.md
-        - name: Organization Contact merge suggestions (preview)
+        - name: Organization Contact insights (preview)
           items:
-          - name: Contact merge suggestions
+          - name: Contact insights
             href: resources/organizationcontactinsights.md
           - name: Get
             href: api/organizationsettings-list-contactinsights.md

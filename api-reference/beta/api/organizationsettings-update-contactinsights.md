@@ -47,8 +47,8 @@ You can specify the following properties when creating the **organizationContact
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean|`true` if contact merge suggestions are enabled for the organization; `false` if it is disabled for all users without exceptions. Default is `true`. Optional.|
-|disabledForGroup|String|The ID of an Azure Active Directory group in which the contact merge suggestions are disabled for its members. Default is `empty`. Optional.|
+|isEnabledInOrganization|Boolean|`true` if contact insights are enabled for the organization; `false` if it is disabled for all users without exceptions. Default is `true`. Optional.|
+|disabledForGroup|String|The ID of an Azure Active Directory group in which the contact insights are disabled for its members. Default is `empty`. Optional.|
 
 
 
