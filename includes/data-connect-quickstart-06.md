@@ -4,8 +4,6 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-<!--//TODO for Richa: Fix the title to be OR not AND-->
-
 A Microsoft 365 administrator has the ability to approve or deny consent requests. This can be done via the Microsoft 365 Admin Center or programmatically via PowerShell.
 
 ## Approve consent requests

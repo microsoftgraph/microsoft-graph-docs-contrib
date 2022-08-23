@@ -8,7 +8,6 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
 ## Create an Azure Data Factory pipeline
 
-<!-- TODO for Richa and Gladys: Work on same page for Synapse.Richa writes out content and Gladys to help with screenshot. We can do switch off simillar to powershell page -->
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
@@ -79,20 +78,21 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
    
     - After creating the Microsoft 365 connection, for the **Table** field, select **BasicDataSet_v0.Message_v0**.
      
-     <!--// TODO for Gladys: select is basicdataset message instruction is ok, we need to put screenshots here that shows the copy activity definition looks like, source dataset looks like, provide source link service. They may need to go to the activity to do that. Please refer to the recording at 48:30 - 52:00 for what screenshots need to be taken specifically. Need screenshot for what copy activity def is, source dataset and what source link services needed for dataset are. -->
+        ![Screenshot explaining dataset](../concepts/images/data-connect-adf-dataset.png)
+
     - Switch from **Office365Table** to **Pipeline > Source**. Use the following values for the **Date filter**.
 
       - **Column name**: CreatedDateTime
       - **Start time (UTC)**: select a date sometime prior to the current date
       - **End time (UTC)**: select the current date
       - Select **Import schema** in the _Output columns_ section.
-    
-    <!-- //TODO for Gladys: We need screenshots for the properties below which are no longer in the instructions below. Some of the properties moved to the activity tab. Please refer to the recording at 48:30 - 52:00 for details. -->
 
     - Select the **Copy data** activity in the pipeline tab, then select the **Sink** tab.
       - Select the **New** button, select **Azure Blob Storage** or **Azure Data Lake Gen2**, and then select the **Continue** button.
       - Select **Binary** as the format for the data and then select the **Continue** button.
       - Give the dataset the name **M365JsonFile** and create new linked service if it does not exist already.
+
+        ![A screenshot explaining basic dataset and copy activity](../concepts/images/data-connect-adf-copy-activity.png)
 
     - In the table select the **Connection** tab, then select **New**.
     - Set the following values in the dialog, then select **Finish**.
