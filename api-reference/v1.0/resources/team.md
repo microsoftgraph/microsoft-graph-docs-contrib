@@ -67,8 +67,6 @@ For more information about working with groups and members in teams, see [Use th
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
 |createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
 |tenantId |string | The ID of the Azure Active Directory tenant. |
-|tags|[teamworkTag](teamworktag.md) collection|The tags associated with the team.|
-
 
 ### Instance attributes
 
@@ -94,6 +92,7 @@ For a POST request example, see [Request (create team in migration state)](/micr
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |photo|[profilePhoto](../resources/profilephoto.md)| The profile photo for the team. |
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](/MicrosoftTeams/get-started-with-teams-templates). |
+|tags|[teamworkTag](teamworktag.md) collection|The tags associated with the team.|
 
 ## JSON representation
 
