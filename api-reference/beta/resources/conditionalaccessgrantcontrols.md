@@ -23,6 +23,7 @@ Represents grant controls that must be fulfilled to pass the policy.
 | builtInControls | conditionalAccessGrantControl collection | List of values of built-in controls required by the policy. Possible values: `block`, `mfa`, `compliantDevice`, `domainJoinedDevice`, `approvedApplication`, `compliantApplication`, `passwordChange`, `unknownFutureValue`. |
 | customAuthenticationFactors | String collection | List of custom controls IDs required by the policy. To learn more about custom control, see [Custom controls (preview)](/azure/active-directory/conditional-access/controls#custom-controls-preview). |
 | termsOfUse | String collection | List of [terms of use](agreement.md) IDs required by the policy. |
+| authenticationStrength | The [authentication strength](authenticationstrengthpolicy.md) required by the policy. |
 
 ### Special considerations when using `passwordChange` as a control
 
@@ -47,7 +48,8 @@ The following is a JSON representation of the resource.
     "operator",
     "builtInControls",
     "customAuthenticationFactors",
-    "termsOfUse"
+    "termsOfUse",
+    "authenticationStrength"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessGrantControls",
   "baseType": null
@@ -58,7 +60,8 @@ The following is a JSON representation of the resource.
   "builtInControls": ["String"],
   "customAuthenticationFactors": ["String"],
   "operator": "String",
-  "termsOfUse": ["String"]
+  "termsOfUse": ["String"],
+  "authenticationStrength": {"@odata.type": "microsoft.graph.authenticationStrength"}
 }
 ```
 

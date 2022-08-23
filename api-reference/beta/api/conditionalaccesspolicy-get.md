@@ -202,7 +202,8 @@ Content-type: application/json
         "termsOfUse": [
             "ce580154-086a-40fd-91df-8a60abac81a0",
             "7f29d675-caff-43e1-8a53-1b8516ed2075"
-        ]
+        ],
+        "authenticationStrengths": null
     },
     "sessionControls": {
         "applicationEnforcedRestrictions": null,

@@ -155,7 +155,8 @@ Content-type: application/json
                     "block"
                 ],
                 "customAuthenticationFactors": [],
-                "termsOfUse": []
+                "termsOfUse": [],
+                "authenticationStrength": null
             }
         },
         {
