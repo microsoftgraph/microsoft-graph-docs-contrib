@@ -1,6 +1,6 @@
 ---
 title: "Delete teamworkTag"
-description: "Deletes a teamworkTag object."
+description: "Delete a teamworkTag object."
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [tag](../resources/teamworktag.md) object. 
+Delete a [tag](../resources/teamworktag.md) object.
 
->**Note:** The tag will not be recoverable once it is deleted using this API.
+>**Note:** You can't recover a tab that was deleted using this API.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
