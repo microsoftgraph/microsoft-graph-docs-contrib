@@ -1,0 +1,94 @@
+---
+title: "Get authenticationStrengthPolicy"
+description: "Read the properties and relationships of an authenticationStrengthPolicy object."
+author: "mmcla"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
+doc_type: apiPageType
+---
+
+# Get authenticationStrengthPolicy
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Read the properties and relationships of an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}
+```
+
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object in the response body.
+
+## Examples
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_authenticationstrengthpolicy"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationStrengthPolicy"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.authenticationStrengthPolicy",
+    "id": "9d4b904e-3cf1-6943-f209-6c29e95e1c2e",
+    "createdDateTime": "String (timestamp)",
+    "modifiedDateTime": "String (timestamp)",
+    "displayName": "String",
+    "description": "String",
+    "policyType": "String",
+    "requirementsSatisfied": "String",
+    "allowedCombinations": [
+      "String"
+    ]
+  }
+}
+```
+
