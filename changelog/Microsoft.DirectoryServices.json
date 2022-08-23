@@ -11438,6 +11438,24 @@
     {
       "ChangeList": [
         {
+          "Id": "21a624d0-8be3-4d2a-96b7-230b3d8fabeb",
+          "ApiChange": "Property",
+          "ChangedApiName": "securityIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the `securityIdentifier` property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "21a624d0-8be3-4d2a-96b7-230b3d8fabeb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-23T11:56:10.9602717Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f844e84d-dab0-4fba-a9d4-1f4341fd8ae2",
           "ApiChange": "Resource",
           "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
