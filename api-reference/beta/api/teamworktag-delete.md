@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [tag](../resources/teamworktag.md) object.
+Delete a [tag](../resources/teamworktag.md) object permanently.
 
 >**Note:** You can't recover a tab that was deleted using this API.
 

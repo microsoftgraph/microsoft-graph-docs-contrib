@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete teamworkTag
 Namespace: microsoft.graph
 
-Delete a [tag](../resources/teamworktag.md) object.
+Delete a [tag](../resources/teamworktag.md) object permanently.
 
 >**Note:** You can't recover a tab that was deleted using this API.
 
