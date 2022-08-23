@@ -12,7 +12,7 @@ happens.
 
 ## 1. Creating a new message in sender's mailbox
 Outlook creates a new message typically in the sender's Drafts folder, then copies the message content, recipients, and attachments from the JSON request to it, and 
-saves it. If successful, the **sendMail** method returns an HTTP response status code in the 2xx category.
+saves it. If successful, the **sendMail** method returns an HTTP response `202 Accepted` status code.
 
 If the sender provided MIME content, Exchange Online copies it to a single property in the new message. Exchange Online then parses the MIME content and copies relevant content to message properties and the recipients and attachments tables. When complete, the **sendMail** method returns a `202 Accepted` status code.
 
@@ -50,3 +50,11 @@ addresses are non-deliverable, the component generates non-delivery reports.
 - At the same time, the transport component generates delivery reports if the sender explicitly requested them. 
 - The recipient's email service or email client may generate read and non-read notifications, or not at all. 
 For more details about report messages, see [DSNs and NDRs in Exchange Server](https://docs.microsoft.com/en-us/exchange/mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages?view=exchserver-2019).
+
+
+## See also
+- [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
+- [Automate creating, sending, and processing messages](outlook-create-send-messages.md)
+- [Send messages with MIME content](outlook-send-mime-message.md)
+- [Send Outlook messages from another user](outlook-send-mail-from-other-user.md)
+- [Use the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0

@@ -12,9 +12,9 @@ Delta query lets you query for additions, deletions, or updates to messages in a
 [delta](/graph/api/message-delta) function calls. Delta data enables you to maintain
 and synchronize a local store of a user's messages without having to fetch the entire set of the user's messages from the server every time.
 
-Synchronizing message items in a local store can use the **delta** query for both the initial full synchronization along with subsequent incremental synchronizations. Typically, you would do an initial full synchronization of all the messages in a folder (for example, the user's Inbox), and then, get incremental changes to that folder periodically.
+Synchronizing message items in a local store can use the **delta** query for the initial full synchronization as well as subsequent incremental synchronizations. Typically, you would do an initial full synchronization of all the messages in a folder (for example, the user's Inbox), and then, get incremental changes to that folder periodically.
 
-To get incremental changes of only a certain type - created, updated, or deleted since the initial sync - do an initial round of synchronization of all the messages in the folder, and then get incremental changes of the specific type in subsequent rounds. Specify the desired change type as a query option in the initial **delta** request; Microsoft Graph automatically encodes any OData and custom query options into the @odata.nextLink or @odata.deltaLink provided in the response.
+To get incremental changes of only a certain type - messages that are created, updated, or deleted since the initial sync - do an initial round of synchronization of all the messages in the folder, and then get incremental changes of a specific desired type in subsequent rounds. Specify the desired change type as a query option in the initial **delta** request; Microsoft Graph automatically encodes any OData and custom query options into the @odata.nextLink or @odata.deltaLink provided in the response.
 
 ## Track message changes in a folder
 
@@ -39,7 +39,9 @@ request to the next **delta** function call for the same folder. A `@odata.delta
 signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL
 when you begin the next round.
 
-See the [example](#example-1-synchronize-messages-in-a-folder) to learn how to use the `@odata.nextLink` and `@odata.deltaLink` URLs.
+The rest of this article includes 2 examples:
+- See [example 1](#example-1-synchronize-messages-in-a-folder) to learn how to use the `@odata.nextLink` and `@odata.deltaLink` URLs.
+- See [example 2](#example-2-synchronize-messages-in-a-folder-based-on-change-type) to learn how to incrementally get only messages created since the initial round. 
 
 ### Use query parameters in a delta query for messages
 
@@ -343,14 +345,16 @@ The response contains a `@odata.deltaLink`. This indicates that all changes in t
 ```
 
 ## Example 2: Synchronize messages in a folder based on change type
-The following example shows 2 rounds of synchronization of a specific folder that initially contains 4 messages.
+The following example shows getting only messages that are created in a specific folder since the initial sync. The example involves 2 rounds of synchronization of that folder that initially contains 4 messages.
 
 The first round involves a series of 2 requests to synchronize all 4 messages in the folder:
 
 - [Sample initial request with specified change type](#sample-initial-request-with-specified-change-type) and [response](#sample-initial-response-with-specified-change-type)
 - [Sample second request with specified change type](#sample-second-request-with-specified-change-type) and [response](#sample-second-response-with-specified-change-type)
 
-After the first round, two more messages get created, one of the messages is deleted, and another is marked as read. The second round of synchronization returns only the delta (the two new messages created), without returning the other messages that have remained the same or the messages that were deleted or updated since the last sync.
+After the first round, two more messages are created, one message is deleted, and another is marked as read. 
+
+The second round of synchronization returns only the changes in the folder of the `created` change type (the two new messages created), without returning the other messages that have remained the same, deleted, or updated since the last sync.
 
 ### Sample initial request with specified change type
 
@@ -365,7 +369,7 @@ The first request specifies the following:
 
 <!-- {
   "blockType": "ignored",
-  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
+  "sampleKeys": ["AAMkAGUwNc4LTMzAAA="],
   "name": "get_messages_delta_4"
 }-->
 
@@ -428,7 +432,7 @@ the same `$select` or the `changeType` parameter as in the initial request, as t
 
 <!-- {
   "blockType": "ignored",
-  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
+  "sampleKeys": ["AAMkAGUwNc4LTMzAAA="],
   "name": "get_messages_delta_5"
 }-->
 
@@ -493,7 +497,7 @@ Your first request in the next round will look like the following, assuming you 
 
 <!-- {
   "blockType": "ignored",
-  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
+  "sampleKeys": ["AAMkAGUwNc4LTMzAAA"],
   "name": "get_messages_delta_next_2"
 }-->
 
@@ -502,7 +506,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGUwNc4LTMzAAA=/messages
 Prefer: odata.maxpagesize=2
 ```
 
-The response contains a `@odata.deltaLink`. This indicates that all changes in the remote mail folder are now synchronized. Two messages were added since the last sync. However, the messages updated & deleted since the last sync are not returned in this delta response.
+The response contains a `@odata.deltaLink`. This indicates that all changes in the remote mail folder are now synchronized. Two messages were added since the last sync. The messages updated & deleted since the last sync are not returned in this delta response.
 
 <!-- {
   "blockType": "response",
