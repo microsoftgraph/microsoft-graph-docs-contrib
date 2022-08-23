@@ -46,8 +46,6 @@ If successful, this method returns a `200 OK` response code.
 ### Request
 
 The following is an example of a request that clears the preferred availability and activity status for a user.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "clearUserPreferredPresence",
@@ -57,22 +55,9 @@ The following is an example of a request that clears the preferred availability 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/clearUserPreferredPresence
 Content-Type: application/json
-
 {
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/clearuserpreferredpresence-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/clearuserpreferredpresence-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/clearuserpreferredpresence-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
