@@ -28,12 +28,18 @@ Update the following configuration files to use this test utility:
 The test utility has three options:
 
 - **Test connectivity to the connector service**: Verifies that the test utility can connect to the connector specified in ConnectionInfo.json over the port specified for that connector ID in CustomConnectorPortMap.json.
+
+![Screenshot of the test utility output showing the first test scenario completed](images/connectors-sdk/test1complete.png)
+
 - **Test connection creation flow** (ValidateAuthentication, ValidateCustomConfiguration, GetDataSourceSchema APIs): Validates the methods specified in ConnectionManagementService. It invokes each of the methods and displays the results on the console.
+
+![Screenshot of the test utility output showing the second test scenario completed](images/connectors-sdk/test2complete.png)
+
 - **Test data source crawl with simulated connection**: Tests the methods in ConnectorCrawlerService. It invokes the crawl with the schedule specified in ConnectionInfo.json and prints the status of the ongoing or last completed crawl every minute. When the first crawl finishes successfully, it displays the message that the crawl has completed, and the platform keeps running to trigger additional crawls at the interval specified in ConnectionInfo.json. If you specify an incremental crawl frequency in the ConnectionInfo.json file, it triggers the incremental crawl after the first full crawl.
 
-To stop the utility from crawling the data source, close and restart the GraphConnectorAgentTest executable file. You can then choose a different test option, or retest an option after you update the connector code or the configuration files.
+![Screenshot of the test utility output showing the third test scenario and that the crawl is completed](images/connectors-sdk/test3complete.png)
 
-![Screenshot of the test utility output showing test scenarios and that the crawl is completed](images/connectors-sdk/testcomplete.png)
+To stop the utility from crawling the data source, close and restart the GraphConnectorAgentTest executable file. You can then choose a different test option, or retest an option after you update the connector code or the configuration files.
 
 ## How does the GraphConnectorAgentTest executable file work?
 

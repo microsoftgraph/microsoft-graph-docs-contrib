@@ -19,11 +19,11 @@ To create and enable a search vertical at the organization level, sign in to the
 3. Provide the following details:
    * **Name the vertical:** Appliance Parts.
 
-     ![Screenshot of the "Name the vertical" section](images/connectors-sdk/build11.png)
+     ![Screenshot of the "Name the vertical" section with "Appliance Parts" highlighted in the Name box.](images/connectors-sdk/build11.png)
 
    * **Content source**: The custom connector created with the sample code (Parts Inventory).
 
-     ![Screenshot of the "Content source" section](images/connectors-sdk/build12.png)
+     ![Screenshot of the "Content source" section with the "Parts Inventory" connector selected as the content source](images/connectors-sdk/build12.png)
 
    * **Add a query**: Leave blank.
 
@@ -38,17 +38,17 @@ To create a result type:
 3. Provide the following details:
    * **Name**: Appliance Part
 
-     ![Screenshot of the "Name the result type" section](images/connectors-sdk/build15.png)
+     ![Screenshot of the "Name the result type" section with "Appliance Part" highlighted in the Name box](images/connectors-sdk/build15.png)
 
    * **Content source**: The custom connector created with the sample code.
 
-     ![Screenshot of the "Select a content source" section](images/connectors-sdk/build16.png)
+     ![Screenshot of the "Select a content source" section with "Parts Inventory" connector selected as the content source](images/connectors-sdk/build16.png)
 
    * **Rules**: None
 
    * Paste contents of [result-type.json](https://github.com/microsoftgraph/msgraph-connectors-sdk/blob/main/C%23%20sample/ResultType.json) into the layout designer textbox.
 
-     ![Screenshot of the "Design layout" section](images/connectors-sdk/build18.png)
+     ![Screenshot of the "Design layout" section with the JSON pasted](images/connectors-sdk/build18.png)
 
 ## Test the results in a search
 

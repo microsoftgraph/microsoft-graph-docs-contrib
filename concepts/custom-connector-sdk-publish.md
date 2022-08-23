@@ -12,9 +12,12 @@ description: "Learn how to publish the connectors you build using the Microsoft 
 
 When you use the Microsoft Graph connectors SDK, you can publish your custom connectors through the Microsoft 365 admin center, the same way that Microsoft built-in connectors are published.
 
+>[!Note]
+> Read the [Setup for your Graph connector](/microsoftsearch/configure-connector) article to understand the general Graph connectors setup instructions.
+
 Use the following steps to publish a connection for your custom connector:
 
-1. [Add a Microsoft Graph connector in the Microsoft 365 admin center](/microsoftsearch/configure-connector#step-1-add-a-microsoft-graph-connector-in-the-microsoft-365-admin-center).
+1. Add a Microsoft Graph connector in the Microsoft 365 admin center from the [Data Sources tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the Search & Intelligence section. For details, refer [Add a Microsoft Graph connector in the Microsoft 365 admin center](/microsoftsearch/configure-connector#step-1-add-a-microsoft-graph-connector-in-the-microsoft-365-admin-center).
 
 2. Choose **Custom Connector** and provide manifest details in the following format.
 
@@ -47,19 +50,25 @@ Use the following steps to publish a connection for your custom connector:
 
     The data in the parameter is opaque to the platform. It's serialized and stored as a string and passed to the connector. The connector can deserialize this data as required and use it.
 
-6. [Assign property labels](/microsoftsearch/configure-connector#step-6-assign-property-labels).
+6. You can assign semantic labels to your source properties on the [Assign property labels](/microsoftsearch/configure-connector#step-6-assign-property-labels) page.
 
-7. [Manage the schema](/microsoftsearch/configure-connector#step-7-manage-schema).
+7. Manage the schema by:
+  
+    - Selecting a Content Property- We recommend that you select a Content Property from the drop-down menu of options, or keeping the default, if one is present. This property is used for full-text indexing of content and improving your search relevance.
+    - Defining aliases for your properties- You can add aliases to your properties under the "Alias" column on the "Manage schema" page. Aliases are friendly names for your properties.
+    - Setting the search schema attributes- You can set the search schema attributes to control the search functionality of each source property. A search schema helps determine what results display on the search results page and what information end users can view and access.
 
-8. [Manage Search permissions](/microsoftsearch/configure-connector#step-5-manage-search-permissions). Only Azure AD-based Access Control Lists are supported for  people with access to the data source.
+    For details, refer [Manage the schema](/microsoftsearch/configure-connector#step-7-manage-schema).
 
-9. Choose the [refresh frequencies](/microsoftsearch/configure-connector#step-8-refresh-settings) of crawls.
+8. You can manage search permissions basis Access control lists (ACLs) that determine which users in your organization can access each item. Only Azure AD-based Access Control Lists are supported for  people with access to the data source. For details, refer [Manage Search permissions](/microsoftsearch/configure-connector#step-5-manage-search-permissions).
 
-10. [Review](/microsoftsearch/configure-connector#step-9-review-connection) the details provided and choose **Finish**.
+9. Choose the refresh frequencies of crawls. The refresh interval determines how often your data is synced between the data source and Microsoft Search. For details, refer [refresh frequencies](/microsoftsearch/configure-connector#step-8-refresh-settings).
 
-11. [Customize the search results page](/microsoftsearch/configure-connector#step-10-customize-the-search-results-page).
+10. Review the details provided and choose **Finish**. For details, refer [review connection](/microsoftsearch/configure-connector#step-9-review-connection).
 
-12. [Confirm that the connection setup worked](/microsoftsearch/configure-connector#step-11-confirm-if-the-connection-setup-worked).
+11. Customize the search results page by setting up verticals and result types. For details, refer [Customize the search results page](/microsoftsearch/configure-connector#step-10-customize-the-search-results-page).
+
+12. [Confirm that the connection setup worked](/microsoftsearch/configure-connector#step-11-confirm-if-the-connection-setup-worked) by reviewing the published connection under the **Data sources** tab.
 
 ## See also
 
