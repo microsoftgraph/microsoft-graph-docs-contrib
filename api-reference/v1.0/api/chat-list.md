@@ -1261,13 +1261,8 @@ The following is an example of a request. **lastMessagePreview/createdDateTime**
   "name": "list_chats_orderby"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats?$orderBy=lastMessagePreview/createdDateTime desc
+GET https://graph.microsoft.com/v1.0/chats?$orderBy=lastMessagePreview/createdDateTime desc
 ```
-
-
----
-
-
 ---
 
 #### Response
