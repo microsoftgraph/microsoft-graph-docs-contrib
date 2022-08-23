@@ -50,7 +50,12 @@ Terms of use can be a general company policy for all users in your organization;
 
 The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow you to configure the terms and conditions that users may need to accept and agree to before they can access your resources.
 
+## Identity governance and Zero Trust
+
+With identities being the common denominator when considering the security of your data, identity governance APIs in Microsoft Graph help your organization to achieve the [Identity Zero Trust deployment objectives](#see-also).
+
 ## See also
 
 + [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
 + [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
++ [Securing identity with Zero Trust](/security/zero-trust/deploy/identity#iv-identities-and-access-privileges-are-managed-with-identity-governance)
