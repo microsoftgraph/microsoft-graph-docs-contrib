@@ -37,30 +37,30 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|String|The category of the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|The time and date the workflow was created. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
-|deletedDateTime|DateTimeOffset|The time and date a workflow is deleted.|
-|description|String|A string that describes the purpose of the workflow for administrative use. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
-|displayName|String|A unique string that identifies the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
-|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines for who and when a workflow will run.  Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
-|id|String|Identifier used for individually addressing a specific workflow.|
-|isEnabled|Boolean|A boolean value that denotes whether the workflow is set to run or not.|
+|category|String|The category of the workflow.The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset|The time and date the workflow was created. <br><br>Supports `$filter`(`lt`,`gt`) and `$orderby`.|
+|deletedDateTime|DateTimeOffset|The time and date a workflow is deleted. <br><br>Supports `$filter`(`lt`,`gt`) and `$orderby`.|
+|description|String|A string that describes the purpose of the workflow for administrative use.|
+|displayName|String|A unique string that identifies the workflow. <br><br>Supports `$filter`(`eq`), `orderby`, and `$search`.|
+|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines for who and when a workflow will run.|
+|id|String|Identifier used for individually addressing a specific workflow. <br><br>Supports `$filter`(`eq`).|
+|isEnabled|Boolean|A boolean value that denotes whether the workflow is set to run or not. <br><br>Supports `$filter`(`eq`,`ne`) and `orderby`.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
-|lastModifiedDateTime|DateTimeOffset|The time and date a workflow was last modified. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
-|nextScheduleRunDateTime|DateTimeOffset|The next scheduled run date and time for a workflow. |
-|version|Int32|The version of the workflow.|
+|lastModifiedDateTime|DateTimeOffset|The time and date a workflow was last modified. <br><br>Supports `$filter`(`lt`,`gt`) and `$orderby`.|
+|nextScheduleRunDateTime|DateTimeOffset|The next scheduled run date and time for a workflow. <br><br>Supports `$filter`(`lt`,`gt`) and `$orderby`. |
+|version|Int32|The version of the workflow. <br><br>Supports `$filter`(`eq`).|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|createdBy|[user](../resources/user.md)|The user who created the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md)|
+|createdBy|[user](../resources/user.md)|The user who created the workflow.|
 |executionScope|[microsoft.graph.user](../resources/user.md) collection|The scope defining who the workflow runs for.|
-|lastModifiedBy|[user](../resources/user.md)|The user who last modified the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md)|
-|runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|A history of every time a workflow ran. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md)|
+|lastModifiedBy|[user](../resources/user.md)|The user who last modified the workflow. |
+|runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|A history of every time a workflow ran.|
 |taskReports|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) collection|The task report of tasks within a workflow.|
-|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md)|
-|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|The results of a user processed by the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md)|
+|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow.|
+|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|The results of a user processed by the workflow.|
 |versions|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md) collection|The workflow version.|
 
 ## JSON representation

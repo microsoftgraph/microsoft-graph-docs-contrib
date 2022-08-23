@@ -30,11 +30,11 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|The date and time of when a task is completed.|
-|createdDateTime|DateTimeOffset|The date and time of when a task is created.|
+|createdDateTime|DateTimeOffset|The date and time of when a task is created. <br><br>Supports `$filter`(`lt`,`gt`) and `orderby`.|
 |failureReason|String|The reason why a task failed.|
 |id|String|Identifier used for individually addressing a specific task processing result. Inherited from [entity](../resources/entity.md).|
-|processingStatus|String|The processing status of a task. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
-|startedDateTime|DateTimeOffset|The date and time when a task is started.|
+|processingStatus|String|The processing status of a task. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. <br><br>Supports `$filter`(`eq`).|
+|startedDateTime|DateTimeOffset|The date and time when a task is started. <br><br>Supports `$filter`(`lt`,`gt`) and `orderby`.|
 
 ## Relationships
 

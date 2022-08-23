@@ -36,10 +36,10 @@ Inherits from [entity](../resources/entity.md).
 |category|String|The category of the task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
 |continueOnError|Boolean|A boolean value that determines if the failure of this task stops the subsequent workflows from running.|
 |description|String|A string that describes the purpose of the task for administrative use.|
-|displayName|String|A unique string that identifies the task.|
+|displayName|String|A unique string that identifies the task. <br><br>Supports `$filter`(`eq`) and `orderby`.|
 |executionSequence|Int32|An integer that states in what order the task will run in a workflow.|
 |id|String|Identifier used for individually addressing a specific task. Inherited from [entity](../resources/entity.md).|
-|isEnabled|Boolean|A boolean value that denotes whether the task is set to run or not.|
+|isEnabled|Boolean|A boolean value that denotes whether the task is set to run or not. <br><br>Supports `$filter`(`eq`,`ne`) and `orderby`.|
 |taskDefinitionId|String|A string that allows built-in workflow tasks to run.|
 
 ## Relationships

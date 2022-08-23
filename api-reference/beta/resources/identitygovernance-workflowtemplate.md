@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |category|String|The category of the workflow template.The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
 |description|String|Description of the workflow template.|
-|displayName|String|The name of the workflow template.|
+|displayName|String|The name of the workflow template. <br><br>Supports  `orderby`.|
 |executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines for who and when a workflow will run.|
 |id|String|Identifier used for individually addressing a specific workflow template. Inherited from [entity](../resources/entity.md).|
 

@@ -17,16 +17,7 @@ A resource type noting workflowBase created using Lifecycle Workflows. Workflows
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List workflowBases](../api/identitygovernance-workflowbase-list.md)|[microsoft.graph.identityGovernance.workflowBase](../resources/identitygovernance-workflowbase.md) collection|Get a list of the [workflowBase](../resources/identitygovernance-workflowbase.md) objects and their properties.|
-|[Get workflowBase](../api/identitygovernance-workflowbase-get.md)|[microsoft.graph.identityGovernance.workflowBase](../resources/identitygovernance-workflowbase.md)|Read the properties and relationships of a [workflowBase](../resources/identitygovernance-workflowbase.md) object.|
-|[Update workflowBase](../api/identitygovernance-workflowbase-update.md)|[microsoft.graph.identityGovernance.workflowBase](../resources/identitygovernance-workflowbase.md)|Update the properties of a [workflowBase](../resources/identitygovernance-workflowbase.md) object.|
-|[Delete workflowBase](../api/identitygovernance-workflowbase-delete.md)|None|Deletes a [workflowBase](../resources/identitygovernance-workflowbase.md) object.|
-|[List runs](../api/identitygovernance-workflow-list-runs.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Get the run resources from the runs navigation property.|
-|[List tasks](../api/identitygovernance-taskprocessingresult-list-task.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get the task resources from the tasks navigation property.|
-|[Create task](../api/identitygovernance-workflowbase-post-tasks.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|Create a new task object.|
-|[List userProcessingResults](../api/identitygovernance-run-list-userprocessingresults.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Get the userProcessingResult resources from the userProcessingResults navigation property.|
+None.
 
 ## Properties
 
@@ -45,7 +36,7 @@ A resource type noting workflowBase created using Lifecycle Workflows. Workflows
 |:---|:---|:---|
 |createdBy|[user](../resources/user.md)|The user who created the workflow.|
 |lastModifiedBy|[user](../resources/user.md)|The user who last modified the workflow.|
-|runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|A history of every time a workflow ran|
+|runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|A history of every time a workflow ran.|
 |tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow.|
 |userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|The results of a user processed by the workflow.|
 

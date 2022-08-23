@@ -30,15 +30,15 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|The date and time of a completed user processing result.|
+|completedDateTime|DateTimeOffset|The date and time of a completed user processing result. <br><br>Supports `$filter`(`lt`, `gt`) and `$orderby`.|
 |failedTasksCount|Int32|Numerical count of failed tasks for users processed.|
 |id|String|Identifier used for individually addressing a specific user processing result. Inherited from [entity](../resources/entity.md).|
 |processingStatus|String|The processing status of a .The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
 |scheduledDateTime|DateTimeOffset|The time and date of a scheduled workflow to be processed for a user.|
-|startedDateTime|DateTimeOffset|The date and time when a user processing result was started.|
+|startedDateTime|DateTimeOffset|The date and time when a user processing result was started. <br><br>Supports `$filter`(`lt`, `gt`) and `$orderby`.|
 |totalTasksCount|Int32|Numerical count of total tasks.|
 |totalUnprocessedTasksCount|Int32|Numerical count of unprocessed tasks for a user.|
-|workflowExecutionType|String|The workflow execution type of a workflow. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`.|
+|workflowExecutionType|String|The workflow execution type of a workflow. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`. <br><br>Supports `$filter`(`eq`, `ne`).|
 |workflowVersion|Int32|The workflow version.|
 
 ## Relationships
