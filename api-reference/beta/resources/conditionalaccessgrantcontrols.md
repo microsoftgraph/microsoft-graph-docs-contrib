@@ -61,7 +61,7 @@ The following is a JSON representation of the resource.
   "customAuthenticationFactors": ["String"],
   "operator": "String",
   "termsOfUse": ["String"],
-  "authenticationStrength": {"@odata.type": "microsoft.graph.authenticationStrength"}
+  "authenticationStrength": {"@odata.type": "microsoft.graph.authenticationStrengthPolicy"}
 }
 ```
 
