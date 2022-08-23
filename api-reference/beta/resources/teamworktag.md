@@ -60,6 +60,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkTag",
+  "description": "String",
   "id": "String (identifier)",
   "teamId": "String",
   "displayName": "String",
