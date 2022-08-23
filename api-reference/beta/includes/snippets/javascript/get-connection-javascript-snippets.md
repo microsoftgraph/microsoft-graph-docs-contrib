@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let externalConnection = await client.api('/external/connections/contosohr')
+let connectionQuota = await client.api('/external/connections/contosohr/quota')
 	.version('beta')
 	.get();
 
