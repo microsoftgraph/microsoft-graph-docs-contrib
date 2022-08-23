@@ -1,18 +1,18 @@
 ---
-title: "Update organizationContactMergeSuggestions"
-description: "Update the settings for contact merge suggestions in an organization."
+title: "Update organizationContactInsights"
+description: "Update the settings for contact insights in an organization."
 author: "rogoy"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Update organizationContactMergeSuggestions
+# Update organizationContactInsights
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [organizationContactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) object.
+Update the properties of a [organizationContactInsights](../resources/organizationcontactinsights.md) object.
 
 
 ## Permissions
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|User.Read.All, User.ReadWrite.All|
+|Delegated (work or school account)|Organization.Read.All, Organization.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -41,9 +41,9 @@ PATCH /organization/{organizationId}/settings/contactInsights
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [organizationContactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) object.
+In the request body, supply a JSON representation of the [organizationContactInsights](../resources/organizationContactInsights.md) object.
 
-You can specify the following properties when creating the **organizationContactMergeSuggestions** object.
+You can specify the following properties when creating the **organizationContactInsights** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -54,7 +54,7 @@ You can specify the following properties when creating the **organizationContact
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and the [organizationContactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) object in the response body.
+If successful, this method returns a `201 Created` response code and the [organizationContactInsights](../resources/organizationContactInsights.md) object in the response body.
 
 ## Examples
 
@@ -66,7 +66,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/organization/{organizationId}/settings/contactInsights
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/contactInsights
 Content-Type: application/json
 Content-length: 132
 

@@ -1,18 +1,18 @@
 ---
-title: "Get organizationContactMergeSuggestions"
-description: "Get the settings for contact merge suggestions in an organization."
+title: "Get organizationContactInsights"
+description: "Get the settings for contact insights in an organization."
 author: "rogoy"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Get organizationContactMergeSuggestions
+# Get organizationContactInsights
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [organizationContactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) object.
+Read the properties and relationships of a [organizationContactInsights](../resources/organizationcontactinsights.md) object.
 
 
 ## Permissions
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|User.Read.All, User.ReadWrite.All|
+|Delegated (work or school account)|Organization.Read.All, Organization.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -34,9 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /organization/{organizationId}/settings/contactInsights
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -47,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [organizationContactMergeSuggestions](../resources/organizationcontactmergesuggestions.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [organizationContactInsights](../resources/organizationcontactinsights.md) object in the response body.
 
 ## Examples
 
@@ -77,12 +74,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "isEnabledInOrganization": true,
-      "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
-    }
-  ]
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
 

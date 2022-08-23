@@ -417,11 +417,11 @@ items:
         - name: Organization Contact merge suggestions (preview)
           items:
           - name: Contact merge suggestions
-            href: resources/organizationcontactmergesuggestions.md
+            href: resources/organizationcontactinsights.md
           - name: Get
-            href: api/organizationsettings-list-contactmergesuggestions.md
+            href: api/organizationsettings-list-contactinsights.md
           - name: Update
-            href: api/organizationsettings-update-contactmergesuggestions.md
+            href: api/organizationsettings-update-contactinsights.md
       - name: Delegated permission grants
         items:
         - name: List delegated permission grants

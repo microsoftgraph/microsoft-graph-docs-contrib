@@ -1,13 +1,13 @@
 ---
-title: "organizationContactMergeSuggestions resource type"
-description: "Represents contact merge suggestions for an organization."
+title: "organizationContactInsights resource type"
+description: "Represents contact insights for an organization."
 ms.localizationpriority: medium
 author: "rogoy"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
-# organizationContactMergeSuggestions resource type
+# organizationContactInsights resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,14 +17,13 @@ Represents _settings_ to manage the audience in an organization for whom the
 
 When a contact list has multiple entries for the same individual, information is scattered across contacts or replicated with no added benefit. Contact merge suggestions allow easy merger of information into a single contact in which all information from duplicates is saved. 
 
-Additionally, users can disable/enable this feature using [contactMergeSuggestions resource type](../resources/contactmergesuggestions.md) 
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get](../api/organizationsettings-list-contactmergesuggestions.md) | [organizationContactMergeSuggestions](organizationcontactmergesuggestions.md) | Read the properties of a organizationContactMergeSuggestions object. |
-| [Update](../api/organizationsettings-update-contactmergesuggestions.md) | [organizationContactMergeSuggestions](organizationcontactmergesuggestions.md) | Update the properties of a organizationContactMergeSuggestions object. |
+| [Get](../api/organizationsettings-list-contactinsights.md) | [organizationContactInsights](organizationcontactinsights.md) | Read the properties of a organizationContactInsights object. |
+| [Update](../api/organizationsettings-update-contactinsights.md) | [organizationContactInsights](organizationcontactinsights.md) | Update the properties of a organizationContactInsights object. |
 
 
 ## Properties
