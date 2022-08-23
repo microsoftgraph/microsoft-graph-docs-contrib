@@ -8,11 +8,11 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
 ## Create an Azure Data Factory pipeline
 
-1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
+1. Open a browser and go to your [Azure Portal](https://portal.azure.com/#home).
 
 1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
 
-1. On the sidebar navigation, select **Create a resource**.
+1. On the home page, select **Create a resource**.
 
 1. Find the **Data Factory** resource type and use the following values to create it, then select **Create**.
 
@@ -22,11 +22,12 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     4. **Name**: dfM365toBlobStorage
     5. **Version**: V2
 
-        ![A screenshot showing the successful creation of the new Azure Data Factory service in the Azure portal.](../concepts/images/data-connect-adf-create.png)
+       <!-- ![A screenshot showing the successful creation of the new Azure Data Factory service in the Azure portal.](../concepts/images/data-connect-adf-create.png) -->
+    6. Select **Next Git configuration**.
+    7. In the **Git configuration** tab, make sure you either configure Git or select the option _Configure Git later_.
+    8. Select **Review +create**, and then select **Create**.
 
-    6. In the **Git configuration** tab, make sure you either configure Git or select the option _Configure Git later_.
-
-1. After the Azure Data Factory resource is created, select the **Open Azure Data Factory Studio** tile to launch the Azure Data Factory full screen editor.
+1. After the Azure Data Factory resource is created, select **Go to resource**, and then select the **Open Azure Data Factory Studio** tile to launch the Azure Data Factory full screen editor.
 
    <!-- ![A screenshot showing the Azure Portal UI for the Data Factory service. The user is clicking the Author and Monitor button.](../concepts/images/data-connect-adf-auth-and-mon.png) -->
 
@@ -72,7 +73,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     
         ![A screenshot showing the Azure portal UI for the Data Factory service. The user is configuring the integration runtime with the service principal key.](../concepts/images/data-connect-adf-linked-service.png)
 
-    - After creating the Microsoft 365 connection, for the **Table** field, select **BasicDataSet_v0.Message_v0**, and then select **OK**.
+    - After creating the Microsoft 365 connection, for the **Table name** field, select **BasicDataSet_v0.Message_v0**, and then select **OK**.
     - Switch from **Office365Table** to **Pipeline > Source**. Use the following values for the **Date filter**.
 
       - **Column name**: CreatedDateTime
@@ -96,7 +97,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
         - **Service principal key**: enter the hashed key of the Azure AD application you previously created
 
     - Next to the **File path** field, select **Browse**.
-    - Select the name of the storage container you created previously and select **OK**.
+    - Select the name of the storage container you created previously and select **OK**, and select **OK** again
 
       ![A screenshot showing the Azure portal UI for the Data Factory service. The user is configuring the container and file path in the sink properties.](../concepts/images/data-connect-adf-sa-fp-config.png)
 
