@@ -38,7 +38,7 @@ The next steps taken by transport include policy enforcement, routing, and next-
 to what the initial routing hop has to be. Transport detects invalid recipient addresses at this point, for which transport mails the non-delivery reports back to the 
 sender. Transport then applies policies configured by tenant administrators. Such policies may reject the message based on its content, store additional copies, and 
 so on. After applying policy, transport fans out a copy of the message to each next-hop destination. For more details about the transport flow, see [mail flow 
-and the transport pipeline](https://docs.microsoft.com/en-us/Exchange/mail-flow/mail-flow?view=exchserver-2019&viewFallbackFrom=exchonline-ww).
+and the transport pipeline](/Exchange/mail-flow/mail-flow?view=exchserver-2019&viewFallbackFrom=exchonline-ww).
 
 ## 6. Delivering message to recipients
 Exchange Online transport may or may not be responsible for final delivery to all recipients. That depends on whether those recipients have Exchange Online mailboxes.
@@ -49,7 +49,7 @@ A few services are involved in generating delivery reports and sending them to t
 addresses are non-deliverable, the component generates non-delivery reports. 
 - At the same time, the transport component generates delivery reports if the sender explicitly requested them. 
 - The recipient's email service or email client may generate read and non-read notifications, or not at all. 
-For more details about report messages, see [DSNs and NDRs in Exchange Server](https://docs.microsoft.com/en-us/exchange/mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages?view=exchserver-2019).
+For more details about report messages, see [DSNs and NDRs in Exchange Server](/exchange/mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages?view=exchserver-2019).
 
 
 ## See also
