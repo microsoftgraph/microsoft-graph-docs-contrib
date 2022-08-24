@@ -99,7 +99,7 @@ Seeded capacity is the amount of capacity that an app can use before a consumpti
 | `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | 500 messages per month per app | No | No | 
 
 > [!NOTE] 
-> The Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference) needs to be enabled to be considered licensed. Licenses can be managed in [the Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) or the [Microsoft 365 admin center](https://admin.microsoft.com), is also possible to assign licenses to a group accounts with [PowerShell and Graph] (/active-directory/enterprise-users/licensing-ps-examples).
+> The Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference) needs to be enabled to be considered licensed. Licenses can be managed in [the Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) or the [Microsoft 365 admin center](https://admin.microsoft.com), is also possible to assign licenses to a group accounts with [PowerShell and Graph](/active-directory/enterprise-users/licensing-ps-examples).
 
 
 ## Payment related errors
