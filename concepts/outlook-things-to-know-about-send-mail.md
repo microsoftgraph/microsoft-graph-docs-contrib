@@ -7,7 +7,7 @@ ms.prod: "outlook"
 ---
 
 # Explainer: How does sending mail work using Microsoft Graph API?
-In Microsoft Graph, the [forward](/graph/api/forward), [reply](/graph/api/message-reply), [replyAll](/graph/api/message-replyAll), or [sendMail](/graph/api/user-sendmail) methods create and send email messages. This article summarizes how Outlook and Exchange Online usually process their mail sending behind the scenes. Most of the steps (steps 2 to 7) take place after the method has returned. 
+In Microsoft Graph, each of the [forward](/graph/api/message-forward), [reply](/graph/api/message-reply), [replyAll](/graph/api/message-replyAll), or [sendMail](/graph/api/user-sendmail) methods creates and sends email messages in the same call. This article summarizes how Outlook and Exchange Online usually process their mail sending behind the scenes. Most of the steps (steps 2 to 7) take place after the method has returned. 
 
 
 ## 1. Creating a new message in sender's mailbox
