@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 ### Response
 
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,24 +82,74 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.identityGovernance.workflow",
-      "category": "String",
-      "createdDateTime": "String (timestamp)",
-      "description": "String",
-      "displayName": "String",
-      "executionConditions": {
-        "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "deletedDateTime": "String (timestamp)",
-      "id": "9469a17e-3460-4f83-56bb-f67410655e7b",
-      "isEnabled": "Boolean",
-      "isSchedulingEnabled": "Boolean",
-      "nextScheduleRunDateTime": "String (timestamp)",
-      "version": "Integer"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows",
+    "value": [
+        {
+            "category": "joiner",
+            "description": "Configure pre-hire tasks for onboarding employees before their first day",
+            "displayName": "Global pre hire",
+            "lastModifiedDateTime": "2022-08-16T20:05:51.4618603Z",
+            "createdDateTime": "2022-01-10T20:04:30.619368Z",
+            "id": "c007a148-5bf1-4f38-82b4-377fb23b1711",
+            "isEnabled": true,
+            "isSchedulingEnabled": true,
+            "version": 12
+        },
+        {
+            "category": "joiner",
+            "description": "Configure new hire tasks for onboarding employees on their first day",
+            "displayName": "Global new hire",
+            "lastModifiedDateTime": "2022-08-18T17:24:42.6051254Z",
+            "createdDateTime": "2022-05-06T14:10:39.9700268Z",
+            "id": "559d8339-ab4e-4c41-a517-ed5d8dd9fbf5",
+            "isEnabled": true,
+            "isSchedulingEnabled": true,
+            "version": 5
+        },
+        {
+            "category": "joiner",
+            "description": "Configure pre-hire tasks for onboarding employees before their first day",
+            "displayName": "Onboard pre-hire employee",
+            "lastModifiedDateTime": "2022-08-16T20:01:28.3589067Z",
+            "createdDateTime": "2022-08-16T17:48:55.2262907Z",
+            "id": "d0454160-b8e9-432f-8a85-790021e64c9e",
+            "isEnabled": false,
+            "isSchedulingEnabled": false,
+            "version": 1
+        },
+        {
+            "category": "leaver",
+            "description": "Configure offboarding tasks for employees after their last day of work",
+            "displayName": "Post-Offboarding of an employee",
+            "lastModifiedDateTime": "2022-08-17T18:57:30.5091553Z",
+            "createdDateTime": "2022-08-17T18:57:07.1840042Z",
+            "id": "15f9c6db-ada8-4417-927f-17ac24b54b9b",
+            "isEnabled": true,
+            "isSchedulingEnabled": false,
+            "version": 1
+        },
+        {
+            "category": "leaver",
+            "description": "Execute real-time termination tasks for employees on their last day of work",
+            "displayName": "Real-time employee termination",
+            "lastModifiedDateTime": "2022-08-19T20:34:15.4212506Z",
+            "createdDateTime": "2022-08-19T20:34:15.4212481Z",
+            "id": "57bc6612-2c20-4141-9dab-aa11a95b8fbc",
+            "isEnabled": true,
+            "isSchedulingEnabled": false,
+            "version": 1
+        },
+        {
+            "category": "joiner",
+            "description": "Configure new hire tasks for onboarding employees on their first day",
+            "displayName": "Onboard new hire employee",
+            "lastModifiedDateTime": "2022-08-24T15:39:17.6496744Z",
+            "createdDateTime": "2022-08-24T15:39:17.6496704Z",
+            "id": "156ce798-1eb6-4e0a-8515-e79f54d04390",
+            "isEnabled": true,
+            "isSchedulingEnabled": false,
+            "version": 1
+        }
+    ]
 }
 ```

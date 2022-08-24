@@ -70,8 +70,8 @@ Content-Type: application/json
 Content-length: 137
 
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.lifecycleManagementSettings",
-  "workflowScheduleIntervalInHours": "Integer"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity",
+    "workflowScheduleIntervalInHours": 3
 }
 ```
 

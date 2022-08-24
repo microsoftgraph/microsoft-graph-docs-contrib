@@ -82,19 +82,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.identityGovernance.taskDefinition",
-    "id": "832f9526-e95e-907e-3016-541846b845d6",
-    "category": "String",
-    "continueOnError": "Boolean",
-    "description": "String",
-    "displayName": "String",
-    "parameters": [
-      {
-        "@odata.type": "microsoft.graph.identityGovernance.parameter"
-      }
-    ],
-    "version": "Integer"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions/$entity",
+    "category": "joiner,leaver",
+    "description": "Disable user account in the directory",
+    "displayName": "Disable User Account",
+    "id": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950",
+    "version": 1,
+    "parameters": []
 }
 ```

@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/setti
 ### Response
 
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,10 +81,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.identityGovernance.lifecycleManagementSettings",
-    "id": "1daafe5e-7b19-9220-d761-869068528401",
-    "workflowScheduleIntervalInHours": "Integer"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity",
+    "workflowScheduleIntervalInHours": 1
 }
 ```

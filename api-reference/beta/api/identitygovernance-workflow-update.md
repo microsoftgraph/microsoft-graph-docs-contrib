@@ -59,7 +59,7 @@ PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
 |lastModifiedDateTime|DateTimeOffset|The time and date a workflow was last modified. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
 |nextScheduleRunDateTime|DateTimeOffset|The next scheduled run date and time for a workflow. |
-|version|Int32|The version of the workflow.|
+
 
 ## Response
 
