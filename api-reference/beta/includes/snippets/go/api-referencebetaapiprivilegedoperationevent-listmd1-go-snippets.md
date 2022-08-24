@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "requestType eq 'Activate'"
+
 requestParameters := &graphconfig.PrivilegedOperationEventsRequestBuilderGetQueryParameters{
-	Filter: "requestType eq 'Activate'",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.PrivilegedOperationEventsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

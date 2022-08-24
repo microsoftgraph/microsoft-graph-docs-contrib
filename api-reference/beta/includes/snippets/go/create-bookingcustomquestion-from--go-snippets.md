@@ -9,7 +9,6 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCustomQuestion()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.bookingCustomQuestion", 
 	"displayName" : "What is your age?", 
 	"answerInputType" : "text", 
 	answerOptions := []graphmodels.able {

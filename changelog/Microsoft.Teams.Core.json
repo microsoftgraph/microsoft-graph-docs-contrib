@@ -5523,6 +5523,24 @@
       "CreatedDateTime": "2022-08-02T15:04:59.427Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-22T15:04:69.427Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }

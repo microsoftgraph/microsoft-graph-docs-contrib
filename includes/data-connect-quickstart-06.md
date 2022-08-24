@@ -19,6 +19,11 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 1. In the **Data Access Request** call out, select the **Approve** button.
 
     ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-approve.png)
+1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
+
+   <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
+
+1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
 # [PowerShell](#tab/PowerShell)
 
@@ -68,7 +73,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
 
-    ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png)
+   <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
 
 1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
@@ -76,16 +81,12 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 ## Verify extracted data from Microsoft 365 to Azure Storage Blob
 
-1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
+1. Open a browser and go to your [Azure Portal](https://portal.azure.com/#home).
 
 1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
 
-1. On the sidebar navigation, select the **All resources** menu item.
+1. In the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
 
-1. In the list of resources, select the **Azure Storage account** you created previously in this tutorial.
-
-1. On the sidebar navigation menu, select **Blobs** from the **Azure Storage account** blade.
-
-1. Select the **container** created previously in this tutorial that you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container now.
+1. On the sidebar navigation menu, select **Storage browser**, select **Blob containers** and then select the **container** created previously in this tutorial that you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container now.
 
     ![A screenshot showing the Azure portal UI for the Storage account service. It is showing the container where the extracted data is being stored.](../concepts/images/data-connect-adf-extracted-data-in-blob.png)

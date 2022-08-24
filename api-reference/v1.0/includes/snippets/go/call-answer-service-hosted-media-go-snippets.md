@@ -16,8 +16,6 @@ acceptedModalities := []graphmodels.Modalityable {
 }
 requestBody.SetAcceptedModalities(acceptedModalities)
 mediaConfig := graphmodels.NewMediaConfig()
-"@odata.type" := "#microsoft.graph.serviceHostedMediaConfig"
-mediaConfig.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 
 

@@ -45,7 +45,6 @@ requestBody.SetScheduleSettings(scheduleSettings)
 
 accessReviewScope := graphmodels.NewAccessReviewScope()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.accessReviewQueryScope", 
 	"queryType" : "MicrosoftGraph", 
 	"query" : "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')", 
 	queryRoot := null
@@ -54,7 +53,6 @@ accessReviewScope.SetQueryRoot(&queryRoot)
 accessReviewScope.SetAdditionalData(additionalData)
 accessReviewScope1 := graphmodels.NewAccessReviewScope()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.accessReviewQueryScope", 
 	"queryType" : "MicrosoftGraph", 
 	"query" : "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')", 
 	queryRoot := null
