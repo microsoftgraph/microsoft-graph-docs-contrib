@@ -51,9 +51,9 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|source|String|**TODO: Add Description**|
-|type|String|**TODO: Add Description**|
-|data|[microsoft.graph.identityGovernance.customTaskExtensionCallbackData](../resources/identitygovernance-customtaskextensioncallbackdata.md)|**TODO: Add Description**|
+|source|String|The source of the `taskProcessingResult`.|
+|type|String|The type of the `taskProcessingResult`.|
+|data|[microsoft.graph.identityGovernance.customTaskExtensionCallbackData](../resources/identitygovernance-customtaskextensioncallbackdata.md)|The `customtaskextensionCallbackData` of the `taskProcessingResult`.|
 
 ## Response
 

@@ -31,9 +31,9 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|The date time that the associated run completed. Value is `null` if the run has not completed.|
 |failedUsersCount|Int32|The number of users in the run execution for which the associated task failed.|
-|id|String|A unique identifier for the task report. Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifier. Inherited from [entity](../resources/entity.md).|
 |lastUpdatedDateTime|DateTimeOffset|The date and time that the task report was last updated.|
-|processingStatus|String|The task report execution status.The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.|
+|processingStatus|String|The processing status of the associated task based on the number of `successful`, `failed`, and `canceled` taskProcessingResults.|
 |runId|String|The unique identifier of the associated run.|
 |startedDateTime|DateTimeOffset|The date time that the associated run started. Value is `null` if the run has not started.|
 |successfulUsersCount|Int32|The number of users in the run execution for which the associated task succeeded.|
