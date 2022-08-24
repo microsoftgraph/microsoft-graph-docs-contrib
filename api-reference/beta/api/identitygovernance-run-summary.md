@@ -1,5 +1,5 @@
 ---
-title: "run: summary"
+title: "Workflow run summary"
 description: "How to get a summary of runs for a lifecycle workflow"
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# run: summary
+# Workflow Run Summary
 
 Namespace: microsoft.graph.identityGovernance
 

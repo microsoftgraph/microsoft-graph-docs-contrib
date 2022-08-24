@@ -1,5 +1,5 @@
 ---
-title: "Update lifecycleManagementSettings"
+title: "Update Lifecycle Management Settings"
 description: "Update the properties of a lifecycleManagementSettings object."
 author: "AlexFilipin"
 ms.localizationpriority: medium

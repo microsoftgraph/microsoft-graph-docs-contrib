@@ -1,13 +1,13 @@
 ---
-title: "userProcessingResult: summary"
-description: "userprocessingresult summary api do"
+title: "User Processing Results Summary"
+description: "userprocessingresult summary api "
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# userProcessingResult: summary
+# User Processing Results Summary
 
 Namespace: microsoft.graph.identityGovernance
 

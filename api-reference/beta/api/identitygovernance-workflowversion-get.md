@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get workflowVersion
+# Get Workflow Version
 
 Namespace: microsoft.graph.identityGovernance
 

@@ -1,5 +1,5 @@
 ---
-title: "Create workflowVersion"
+title: "Create Workflow Version"
 description: "Create a new workflowVersion object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create workflowVersion
+# Create Workflow Version
 
 Namespace: microsoft.graph.identityGovernance
 

@@ -1,5 +1,5 @@
 ---
-title: "Get userProcessingResult"
+title: "Get user Processing Result"
 description: "Read the properties and relationships of a userProcessingResult object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get userProcessingResult
+# Get user ProcessingResult
 
 Namespace: microsoft.graph.identityGovernance
 

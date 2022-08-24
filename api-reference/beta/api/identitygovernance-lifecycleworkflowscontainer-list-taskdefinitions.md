@@ -1,5 +1,5 @@
 ---
-title: "List taskDefinitions"
+title: "List Task Definitions"
 description: "Get a list of the taskDefinition objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List taskDefinitions
+# List Task Definitions
 
 Namespace: microsoft.graph.identityGovernance
 

@@ -1,5 +1,5 @@
 ---
-title: "List customTaskExtensions"
+title: "List Custom Task Extensions"
 description: "Get a list of the customTaskExtension objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List customTaskExtensions
+# List Custom Task Extensions
 
 Namespace: microsoft.graph.identityGovernance
 

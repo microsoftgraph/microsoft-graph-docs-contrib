@@ -1,5 +1,5 @@
 ---
-title: "Get workflowTemplate"
+title: "Get Workflow Template"
 description: "Read the properties and relationships of a workflowTemplate object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get workflowTemplate
+# Get Workflow Template
 
 Namespace: microsoft.graph.identityGovernance
 

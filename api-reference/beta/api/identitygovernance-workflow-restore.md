@@ -1,5 +1,5 @@
 ---
-title: "workflow: restore"
+title: "Restore a workflow"
 description: "Restore a lifecycle workflow"
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# workflow: restore
+# Restore a workflow
 
 Namespace: microsoft.graph.identityGovernance
 

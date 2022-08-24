@@ -1,5 +1,5 @@
 ---
-title: "List workflowVersions"
+title: "List Workflow Versions"
 description: "Get a list of the workflowVersion objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List workflowVersions
+# List Workflow Versions
 
 Namespace: microsoft.graph.identityGovernance
 

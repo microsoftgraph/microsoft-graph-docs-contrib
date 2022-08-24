@@ -1,5 +1,5 @@
 ---
-title: "Get taskReport"
+title: "Get Task Report"
 description: "Read the properties and relationships of a taskReport object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get taskReport
+# Get Task Report
 
 Namespace: microsoft.graph.identityGovernance
 

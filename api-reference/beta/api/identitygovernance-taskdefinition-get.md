@@ -1,5 +1,5 @@
 ---
-title: "Get taskDefinition"
+title: "Get Task Definition"
 description: "Read the properties and relationships of a taskDefinition object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get taskDefinition
+# Get Task Definition
 
 Namespace: microsoft.graph.identityGovernance
 

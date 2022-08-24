@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List deletedItemContainers
+# List Deleted Workflows
 
 Namespace: microsoft.graph
 

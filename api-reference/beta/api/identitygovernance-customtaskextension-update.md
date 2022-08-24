@@ -1,5 +1,5 @@
 ---
-title: "Update customTaskExtension"
+title: "Update Custom Task Extension"
 description: "Update the properties of a customTaskExtension object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Update customTaskExtension
+# Update Custom Task Extension
 
 Namespace: microsoft.graph.identityGovernance
 

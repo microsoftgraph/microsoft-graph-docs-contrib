@@ -1,5 +1,5 @@
 ---
-title: "Create customTaskExtension"
+title: "Create Custom Task Extension"
 description: "Create a new customTaskExtension object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create customTaskExtension
+# Create Custom Task Extension
 
 Namespace: microsoft.graph.identityGovernance
 

@@ -1,5 +1,5 @@
 ---
-title: "Get lifecycleManagementSettings"
+title: "Get Lifecycle Management Settings"
 description: "Read the properties and relationships of a lifecycleManagementSettings object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get lifecycleManagementSettings
+# Get Lifecycle Management Settings
 
 Namespace: microsoft.graph.identityGovernance
 

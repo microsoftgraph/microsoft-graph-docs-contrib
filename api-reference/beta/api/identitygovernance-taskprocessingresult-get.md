@@ -1,5 +1,5 @@
 ---
-title: "Get taskProcessingResult"
+title: "Get task Processing Result"
 description: "Read the properties and relationships of a taskProcessingResult object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get taskProcessingResult
+# Get task Processing Result
 
 Namespace: microsoft.graph.identityGovernance
 

@@ -1,5 +1,5 @@
 ---
-title: "taskProcessingResult: resume"
+title: "Resume  Task Processing Result"
 description: "Task processing result resume description"
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# taskProcessingResult: resume
+# Resume a task processing result
 
 Namespace: microsoft.graph.identityGovernance
 

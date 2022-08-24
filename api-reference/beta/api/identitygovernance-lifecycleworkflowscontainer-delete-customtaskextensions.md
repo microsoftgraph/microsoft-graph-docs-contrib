@@ -1,5 +1,5 @@
 ---
-title: "Delete customTaskExtension"
+title: "Delete Custom Task Extension"
 description: "Deletes a customTaskExtension object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Delete customTaskExtension
+# Delete Custom Task Extension
 
 Namespace: microsoft.graph.identityGovernance
 
