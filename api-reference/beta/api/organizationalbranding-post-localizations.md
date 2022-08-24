@@ -130,6 +130,7 @@ Content-Type: application/json
     "cdnList": [],
     "signInPageText": " ",
     "squareLogoRelativeUrl": null,
+    "squareLogoDarkRelativeUrl": null,
     "usernameHintText": " "
 }
 ```

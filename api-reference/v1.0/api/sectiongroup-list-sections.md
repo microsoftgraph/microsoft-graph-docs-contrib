@@ -58,7 +58,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "sectionsgroup_get_sections"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sections
 ```
 

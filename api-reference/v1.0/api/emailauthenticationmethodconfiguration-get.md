@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an [emailAuthent
 }
 -->
 
-```http
+```msgraph-interactive
 GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 

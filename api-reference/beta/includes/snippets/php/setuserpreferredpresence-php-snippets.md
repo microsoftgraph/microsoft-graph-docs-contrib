@@ -14,7 +14,7 @@ $requestBody->setAvailability('DoNotDisturb');
 
 $requestBody->setActivity('DoNotDisturb');
 
-$requestBody->setExpirationDuration('PT8H');
+$requestBody->setExpirationDuration(new \DateInterval('PT8H'));
 
 
 

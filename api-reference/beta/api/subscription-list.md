@@ -2,7 +2,7 @@
 title: "List subscriptions"
 description: " see the scenarios below for details."
 ms.localizationpriority: medium
-author: "Jumaodhiss"
+author: "jumasure"
 doc_type: apiPageType
 ms.prod: "change-notifications"
 ---

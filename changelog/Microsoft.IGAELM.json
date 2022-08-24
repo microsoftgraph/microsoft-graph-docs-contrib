@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "04180ef2-a3fe-4dcb-9c30-b8675845d392",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get](https://docs.microsoft.com/en-us/graph/api/accesspackageassignment-get?view=graph-rest-1.0) method to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignment?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignment"
+        }
+      ],
+      "Id": "04180ef2-a3fe-4dcb-9c30-b8675845d392",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-27T00:00:00.557Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bb684132-f2ca-481a-9582-bd3de6f5c3e6",
           "ApiChange": "Resource",
           "ChangedApiName": "crossCloudAzureActiveDirectoryTarget",
@@ -223,6 +241,40 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-03-08T00:00:00.557Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "20ffd6e1-49e1-413d-9b7a-f5e33fd497d7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAutomaticRequestSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAutomaticRequestSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAutomaticRequestSettings?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAutomaticRequestSettings"
+        },
+        {
+          "Id": "20ffd6e1-49e1-413d-9b7a-f5e33fd497d7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeRuleMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeRuleMembers](https://docs.microsoft.com/en-us/graph/api/resources/attributeRuleMembers?view=graph-rest-1.0) resource type.",
+          "Target": "attributeRuleMembers"
+        },
+        {
+          "Id": "20ffd6e1-49e1-413d-9b7a-f5e33fd497d7",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticRequestSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `automaticRequestSettings` property to the [accessPackageAssignmentPolicy](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentPolicy"
+        }
+      ],
+      "Id": "20ffd6e1-49e1-413d-9b7a-f5e33fd497d7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-18T23:01:54.7629865Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }

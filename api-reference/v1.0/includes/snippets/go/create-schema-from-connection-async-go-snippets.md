@@ -21,7 +21,7 @@ isSearchable := "true"
 .SetIsSearchable(&isSearchable) 
 isRetrievable := "true"
 .SetIsRetrievable(&isRetrievable) 
-labels := []String {
+labels := []string {
 	"title",
 
 }

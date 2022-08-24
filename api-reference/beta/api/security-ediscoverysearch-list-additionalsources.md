@@ -56,35 +56,35 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_ediscoverynoncustodialdatasource"
+  "name": "list_ediscoverysearch_associated_noncustodialdatasources"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/additionalSources
+GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/additionalSources
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoverynoncustodialdatasource-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoverysearch-associated-noncustodialdatasources-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-ediscoverynoncustodialdatasource-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-ediscoverysearch-associated-noncustodialdatasources-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-ediscoverynoncustodialdatasource-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-ediscoverysearch-associated-noncustodialdatasources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-ediscoverynoncustodialdatasource-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-ediscoverysearch-associated-noncustodialdatasources-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-ediscoverynoncustodialdatasource-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-ediscoverysearch-associated-noncustodialdatasources-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-ediscoverynoncustodialdatasource-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-ediscoverysearch-associated-noncustodialdatasources-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

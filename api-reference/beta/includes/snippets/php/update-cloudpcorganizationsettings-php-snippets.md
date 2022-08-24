@@ -12,9 +12,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new CloudPcOrganizationSettings();
 $requestBody->set@odatatype('#microsoft.graph.cloudPcOrganizationSettings');
 
-$requestBody->setUserAccountType(new CloudPcUserAccountType('standarduser'));
+$requestBody->setEnableMEMAutoEnroll(true);
 
 $requestBody->setOsVersion(new CloudPcOperatingSystem('windows11'));
+
+$requestBody->setUserAccountType(new CloudPcUserAccountType('standarduser'));
 
 $windowsSettings = new CloudPcWindowsSettings();
 $windowsSettings->setLanguage('en-US');

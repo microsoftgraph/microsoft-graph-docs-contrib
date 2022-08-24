@@ -69,7 +69,7 @@ The following is an example of the request.
   "name": "list_installed_apps_in_team"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps
 ```
 
@@ -146,7 +146,7 @@ The following is an example of the request.
   "name": "list_installed_teams_apps_expand"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition
 ```
 
@@ -267,7 +267,7 @@ The following is an example of the request. In the example, the manifest ID of t
   "blockType": "request",
   "name": "list_installed_apps_in_team_expand_filter_externalid"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/acda442c-78d2-491b-8204-4ef5019c0193/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
 ```
 

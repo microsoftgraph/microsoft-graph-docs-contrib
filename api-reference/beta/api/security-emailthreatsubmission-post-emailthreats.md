@@ -92,6 +92,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-emailthreatsubmission-from-emailthreats-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-emailthreatsubmission-from-emailthreats-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-emailthreatsubmission-from-emailthreats-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -115,7 +119,7 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreatSubmission/$entity",
-  "@odata.type": "#microsoft.graph.emailUrlThreatSubmission",
+  "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "spam",
   "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
@@ -163,7 +167,7 @@ POST https://graph.microsoft.com/beta/security/threatSubmission/emailThreats
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.emailUrlThreatSubmission",
+  "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "notSpam",
   "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
   "messageUrl": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
@@ -191,7 +195,7 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreatSubmission/$entity",
-  "@odata.type": "#microsoft.graph.emailUrlThreatSubmission",
+  "@odata.type": "#microsoft.graph.security.emailUrlThreatSubmission",
   "category": "spam",
   "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
@@ -245,7 +249,7 @@ POST https://graph.microsoft.com/beta/security/threatSubmission/emailThreats
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.emailContentThreatSubmission",
+  "@odata.type": "#microsoft.graph.security.emailContentThreatSubmission",
   "category": "spam",
   "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
   "fileContent": "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
@@ -267,7 +271,7 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreatSubmission/$entity",
-  "@odata.type": "#microsoft.graph.emailContentThreatSubmission",
+  "@odata.type": "#microsoft.graph.security.emailContentThreatSubmission",
   "category": "spam",
   "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",

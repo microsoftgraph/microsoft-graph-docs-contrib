@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUser()
-businessPhones := []String {
+businessPhones := []string {
 	"+1 425 555 0109",
 
 }

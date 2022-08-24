@@ -61,7 +61,7 @@ Here is an example of the request.
   "name": "workbookrange_columnsbefore",
   "idempotent": true
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
 ```
 

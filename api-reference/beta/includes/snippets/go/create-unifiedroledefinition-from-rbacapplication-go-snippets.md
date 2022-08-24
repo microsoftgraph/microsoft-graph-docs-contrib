@@ -16,7 +16,7 @@ requestBody.SetDisplayName(&displayName)
 
 unifiedRolePermission := graphmodels.NewUnifiedRolePermission()
 additionalData := map[string]interface{}{
-	allowedResourceActions := []String {
+	allowedResourceActions := []string {
 		"microsoft.directory/applications/basic/read",
 
 	}
@@ -28,7 +28,7 @@ rolePermissions := []graphmodels.UnifiedRolePermissionable {
 
 }
 requestBody.SetRolePermissions(rolePermissions)
-isEnabled := "true"
+isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
 
 result, err := graphClient.RoleManagement().Directory().RoleDefinitions().Post(requestBody)
