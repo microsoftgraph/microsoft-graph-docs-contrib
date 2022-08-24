@@ -24,11 +24,6 @@ Represents grant controls that must be fulfilled to pass the policy.
 | customAuthenticationFactors | String collection | List of custom controls IDs required by the policy. To learn more about custom control, see [Custom controls (preview)](/azure/active-directory/conditional-access/controls#custom-controls-preview). |
 | termsOfUse | String collection | List of [terms of use](agreement.md) IDs required by the policy. |
 
-## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-| authenticationStrength | [authenticationStrengthPolicy](authenticationstrengthpolicy.md) | The [authentication strength](authenticationstrengthpolicy.md) required by the policy. |
-
 ### Special considerations when using `passwordChange` as a control
 
 Consider the following when you use the `passwordChange` control: 
@@ -40,7 +35,9 @@ Consider the following when you use the `passwordChange` control:
 
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+| authenticationStrength | [authenticationStrengthPolicy](authenticationstrengthpolicy.md) | The [authentication strength](authenticationstrengthpolicy.md) required by the policy. |
 
 ## JSON representation
 

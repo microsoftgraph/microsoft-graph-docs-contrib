@@ -7,7 +7,8 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List authenticationMethodModeDetails
+# List authenticationCombinations
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
