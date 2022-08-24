@@ -13575,7 +13575,7 @@ items:
               href: api/identitygovernance-taskprocessingresult-list-task.md
             - name: Versioning
               items:
-              - name: List Versions
+              - name: List
                 href: api/identitygovernance-workflow-list-versions.md  
               - name: Get
                 href: api/identitygovernance-workflowversion-get.md
