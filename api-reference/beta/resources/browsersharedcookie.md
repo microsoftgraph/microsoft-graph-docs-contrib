@@ -29,6 +29,7 @@ Represents a session cookie for [Internet Explorer mode](/deployedge/edge-ie-mod
 |:---|:---|:---|
 |comment|String|The comment for the shared cookie.|
 |createdDateTime|DateTimeOffset|The date and time when the shared cookie was created.|
+|deletedDateTime|DateTimeOffset|The date and time when the shared cookie was deleted.|
 |displayName|String|The name of the cookie.|
 |history|[browserSharedCookieHistory](../resources/browsersharedcookiehistory.md) collection|The history of modifications applied to the cookie.|
 |hostOnly|Boolean|Controls whether a cookie is a host-only or domain cookie.|
@@ -57,6 +58,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.browserSharedCookie",
   "comment": "String",
   "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "displayName": "String",
   "history": [
     {

@@ -29,7 +29,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|siteLists|[browserSiteList](../resources/browsersitelist.md) collection|A collection of Enterprise Internet Explorer mode site lists.|
+|siteLists|[browserSiteList](../resources/browsersitelist.md) collection|A collection of site lists to support Internet Explorer mode.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
