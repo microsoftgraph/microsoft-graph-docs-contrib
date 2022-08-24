@@ -1,20 +1,20 @@
 ---
-title: "Explainer: How does sendMail work?"
+title: "Explainer: How does sending mail work using Microsoft Graph API?"
 description: "Different steps involved in sending email using Microsoft Graph API till delivery."
 author: "abheek-das"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
-# Explainer: How does sendMail work?
-Sending email incurs a multi-step process. Most of the steps take place after the [sendMail](/graph/api/user-sendmail) method has returned. Here is a summary of what typically 
-happens.
+# Explainer: How does sending mail work using Microsoft Graph API?
+In Microsoft Graph, the [forward](/graph/api/forward), [reply](/graph/api/message-reply), [replyAll](/graph/api/message-replyAll), or [sendMail](/graph/api/user-sendmail) methods create and send email messages. This article summarizes how Outlook and Exchange Online usually process their mail sending behind the scenes. Most of the steps (steps 2 to 7) take place after the method has returned. 
+
 
 ## 1. Creating a new message in sender's mailbox
-Outlook creates a new message typically in the sender's Drafts folder, then copies the message content, recipients, and attachments from the JSON request to it, and 
-saves it. If successful, the **sendMail** method returns an HTTP response `202 Accepted` status code.
+Outlook creates a new message in the sender's Drafts folder, copies the message content, recipients, and attachments from the JSON request to the draft message, and 
+then saves it. If successful, the method returns an HTTP response `202 Accepted` status code.
 
-If the sender provided MIME content, Exchange Online copies it to a single property in the new message. Exchange Online then parses the MIME content and copies relevant content to message properties and the recipients and attachments tables. When complete, the **sendMail** method returns a `202 Accepted` status code.
+If the sender provided MIME content, Exchange Online copies it to a single property in the new draft message. Exchange Online then parses the MIME content and copies relevant content to message properties, and to the recipients and attachments tables. When complete, the method returns a `202 Accepted` status code.
 
 This step may fail for reasons such as the sender's mailbox is full, or the network connection to the sender's server is down. If the method fails, it returns a 4xx or 5xx status code accordingly.
 
@@ -41,7 +41,7 @@ so on. After applying policy, transport fans out a copy of the message to each n
 and the transport pipeline](https://docs.microsoft.com/en-us/Exchange/mail-flow/mail-flow?view=exchserver-2019&viewFallbackFrom=exchonline-ww).
 
 ## 6. Delivering message to recipients
-Exchange Online transport may or may not be responsible for final delivery to all recipients. That depends on whether or not those recipients have Exchange Online mailboxes.
+Exchange Online transport may or may not be responsible for final delivery to all recipients. That depends on whether those recipients have Exchange Online mailboxes.
 
 ## 7. Delivering report messages to sender
 A few services are involved in generating delivery reports and sending them to the sender accordingly:
