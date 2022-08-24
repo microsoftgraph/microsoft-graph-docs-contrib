@@ -37,9 +37,9 @@ To complete this lab, you will need the following subscriptions or licenses. Ple
 
    - If you do not have one, you can get one (for free) in our [Azure website](https://azure.microsoft.com/free/).
    - The account used to sign in must have the **Global administrator** role granted to it.
-   - Ensure your Azure subscription is in the same tenant as Microsoft 365 tenant and noth tenants must be in the same Microsodt Azure Active Directory tenancy.
-   - The Azure subscription must be in the same tenant as the Microsoft 365 tenant, as Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants. If your Azure subscription is not in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Azure Active Directory in your Microsoft 365 tenant. To do so, follow the steps listed in [Associate or add an Azure subscription to your Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
-   - Your Microsoft 365 and Azure tenants must be in the same Microsoft Azure Active Directory tenancy.
+   - Ensure your Azure subscription is in the same tenant as your Microsoft 365 tenant and both must be in the same Microsoft AAD tenancy.
+   - The Azure subscription must be in the same tenant as the Microsoft 365 tenant, as Microsoft Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants. If your Azure subscription is not in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Azure Active Directory in your Microsoft 365 tenant. To do so, follow the steps listed in [Associate or add an Azure subscription to your Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+  
 
 <!--This can stay for now, please update this once we remove the ASP.NET page-->
 1. Make sure you have [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine.
