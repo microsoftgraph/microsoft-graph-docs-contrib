@@ -1,0 +1,462 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "MembershipRuleProcessingStatusDetails",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **MembershipRuleProcessingStatusDetails** enumeration type.",
+          "Target": "MembershipRuleProcessingStatusDetails"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "membershipRuleProcessingStatus",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **membershipRuleProcessingStatus** resource type.",
+          "Target": "membershipRuleProcessingStatus"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectSet](https://docs.microsoft.com/en-us/graph/api/resources/subjectSet?view=graph-rest-beta) resource",
+          "Target": "subjectSet"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deletedItemContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [deletedItemContainer](https://docs.microsoft.com/en-us/graph/api/resources/deletedItemContainer?view=graph-rest-beta) resource",
+          "Target": "deletedItemContainer"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecycleWorkflows",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecycleWorkflows](https://docs.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-beta) resource",
+          "Target": "identityGovernance"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "customTaskExtensionCallbackOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [customTaskExtensionCallbackOperationStatus](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "customTaskExtensionCallbackOperationStatus"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecycleTaskCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecycleTaskCategory](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "lifecycleTaskCategory"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecycleWorkflowCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecycleWorkflowCategory](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "lifecycleWorkflowCategory"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecycleWorkflowProcessingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecycleWorkflowProcessingStatus](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "lifecycleWorkflowProcessingStatus"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "valueType",
+          "ChangeType": "Addition",
+          "Description": "Added the [valueType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "valueType"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workflowExecutionType",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowExecutionType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "workflowExecutionType"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workflowTriggerTimeBasedAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowTriggerTimeBasedAttribute](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "workflowTriggerTimeBasedAttribute"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Member",
+          "ChangedApiName": "employeeLeaveDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the `employeeLeaveDateTime` member to the **workflowTriggerTimeBasedAttribute** enumeration.",
+          "Target": "workflowTriggerTimeBasedAttribute"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customTaskExtensionCallbackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customTaskExtensionCallbackConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/customTaskExtensionCallbackConfiguration?view=graph-rest-beta) resource",
+          "Target": "customTaskExtensionCallbackConfiguration"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customTaskExtensionCallbackData",
+          "ChangeType": "Addition",
+          "Description": "Added the [customTaskExtensionCallbackData](https://docs.microsoft.com/en-us/graph/api/resources/customTaskExtensionCallbackData?view=graph-rest-beta) resource",
+          "Target": "customTaskExtensionCallbackData"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customTaskExtensionCalloutData",
+          "ChangeType": "Addition",
+          "Description": "Added the [customTaskExtensionCalloutData](https://docs.microsoft.com/en-us/graph/api/resources/customTaskExtensionCalloutData?view=graph-rest-beta) resource",
+          "Target": "customTaskExtensionCalloutData"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onDemandExecutionOnly",
+          "ChangeType": "Addition",
+          "Description": "Added the [onDemandExecutionOnly](https://docs.microsoft.com/en-us/graph/api/resources/onDemandExecutionOnly?view=graph-rest-beta) resource",
+          "Target": "onDemandExecutionOnly"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "parameter",
+          "ChangeType": "Addition",
+          "Description": "Added the [parameter](https://docs.microsoft.com/en-us/graph/api/resources/parameter?view=graph-rest-beta) resource",
+          "Target": "parameter"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ruleBasedSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [ruleBasedSubjectSet](https://docs.microsoft.com/en-us/graph/api/resources/ruleBasedSubjectSet?view=graph-rest-beta) resource",
+          "Target": "ruleBasedSubjectSet"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "runSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [runSummary](https://docs.microsoft.com/en-us/graph/api/resources/runSummary?view=graph-rest-beta) resource",
+          "Target": "runSummary"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Property",
+          "ChangedApiName": "totalTasks",
+          "ChangeType": "Addition",
+          "Description": "Added the `totalTasks` property to the [runSummary](https://docs.microsoft.com/en-us/graph/api/resources/runSummary?view=graph-rest-beta) resource.",
+          "Target": "runSummary"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Property",
+          "ChangedApiName": "totalUsers",
+          "ChangeType": "Addition",
+          "Description": "Added the `totalUsers` property to the [runSummary](https://docs.microsoft.com/en-us/graph/api/resources/runSummary?view=graph-rest-beta) resource.",
+          "Target": "runSummary"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskReportSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [taskReportSummary](https://docs.microsoft.com/en-us/graph/api/resources/taskReportSummary?view=graph-rest-beta) resource type.",
+          "Target": "taskReportSummary"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "timeBasedAttributeTrigger",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeBasedAttributeTrigger](https://docs.microsoft.com/en-us/graph/api/resources/timeBasedAttributeTrigger?view=graph-rest-beta) resource",
+          "Target": "timeBasedAttributeTrigger"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "triggerAndScopeBasedConditions",
+          "ChangeType": "Addition",
+          "Description": "Added the [triggerAndScopeBasedConditions](https://docs.microsoft.com/en-us/graph/api/resources/triggerAndScopeBasedConditions?view=graph-rest-beta) resource",
+          "Target": "triggerAndScopeBasedConditions"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "usersProcessingSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [usersProcessingSummary](https://docs.microsoft.com/en-us/graph/api/resources/usersProcessingSummary?view=graph-rest-beta) resource",
+          "Target": "usersProcessingSummary"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSummary](https://docs.microsoft.com/en-us/graph/api/resources/userSummary?view=graph-rest-beta) resource",
+          "Target": "userSummary"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowExecutionConditions",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowExecutionConditions](https://docs.microsoft.com/en-us/graph/api/resources/workflowExecutionConditions?view=graph-rest-beta) resource",
+          "Target": "workflowExecutionConditions"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowExecutionTrigger",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowExecutionTrigger](https://docs.microsoft.com/en-us/graph/api/resources/workflowExecutionTrigger?view=graph-rest-beta) resource",
+          "Target": "workflowExecutionTrigger"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customTaskExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [customTaskExtension](https://docs.microsoft.com/en-us/graph/api/resources/customTaskExtension?view=graph-rest-beta) resource",
+          "Target": "customTaskExtension"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecycleManagementSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecycleManagementSettings](https://docs.microsoft.com/en-us/graph/api/resources/lifecycleManagementSettings?view=graph-rest-beta) resource",
+          "Target": "lifecycleManagementSettings"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecycleWorkflowsContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecycleWorkflowsContainer](https://docs.microsoft.com/en-us/graph/api/resources/lifecycleWorkflowsContainer?view=graph-rest-beta) resource",
+          "Target": "lifecycleWorkflowsContainer"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "run",
+          "ChangeType": "Addition",
+          "Description": "Added the [run](https://docs.microsoft.com/en-us/graph/api/resources/run?view=graph-rest-beta) resource",
+          "Target": "run"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Property",
+          "ChangedApiName": "totalTasksCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `totalTasksCount` property to the [run](https://docs.microsoft.com/en-us/graph/api/resources/run?view=graph-rest-beta) resource.",
+          "Target": "run"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskProcessingResults",
+          "ChangeType": "Addition",
+          "Description": "Added the **taskProcessingResults** relationship to the [run](https://docs.microsoft.com/en-us/graph/api/resources/run?view=graph-rest-beta) resource.",
+          "Target": "run"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "task",
+          "ChangeType": "Addition",
+          "Description": "Added the [task](https://docs.microsoft.com/en-us/graph/api/resources/task?view=graph-rest-beta) resource",
+          "Target": "task"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [taskDefinition](https://docs.microsoft.com/en-us/graph/api/resources/taskDefinition?view=graph-rest-beta) resource",
+          "Target": "taskDefinition"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskProcessingResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [taskProcessingResult](https://docs.microsoft.com/en-us/graph/api/resources/taskProcessingResult?view=graph-rest-beta) resource",
+          "Target": "taskProcessingResult"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [taskReport](https://docs.microsoft.com/en-us/graph/api/resources/taskReport?view=graph-rest-beta) resource",
+          "Target": "taskReport"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userProcessingResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [userProcessingResult](https://docs.microsoft.com/en-us/graph/api/resources/userProcessingResult?view=graph-rest-beta) resource",
+          "Target": "userProcessingResult"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflow",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflow](https://docs.microsoft.com/en-us/graph/api/resources/workflow?view=graph-rest-beta) resource",
+          "Target": "workflow"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "runs",
+          "ChangeType": "Addition",
+          "Description": "Added the **runs** relationship to the [workflow](https://docs.microsoft.com/en-us/graph/api/resources/workflow?view=graph-rest-beta) resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskReports",
+          "ChangeType": "Addition",
+          "Description": "Added the **taskReports** relationship to the [workflow](https://docs.microsoft.com/en-us/graph/api/resources/workflow?view=graph-rest-beta) resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userProcessingResults",
+          "ChangeType": "Addition",
+          "Description": "Added the **userProcessingResults** relationship to the [workflow](https://docs.microsoft.com/en-us/graph/api/resources/workflow?view=graph-rest-beta) resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowBase](https://docs.microsoft.com/en-us/graph/api/resources/workflowBase?view=graph-rest-beta) resource",
+          "Target": "workflowBase"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "runs",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **runs** relationship from the [workflowBase](https://docs.microsoft.com/en-us/graph/api/resources/workflowBase?view=graph-rest-beta) resource.",
+          "Target": "workflowBase"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userProcessingResults",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **userProcessingResults** relationship from the [workflowBase](https://docs.microsoft.com/en-us/graph/api/resources/workflowBase?view=graph-rest-beta) resource.",
+          "Target": "workflowBase"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowTemplate](https://docs.microsoft.com/en-us/graph/api/resources/workflowTemplate?view=graph-rest-beta) resource",
+          "Target": "workflowTemplate"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowVersion](https://docs.microsoft.com/en-us/graph/api/resources/workflowVersion?view=graph-rest-beta) resource",
+          "Target": "workflowVersion"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Addition",
+          "Description": "Added the [activate](https://docs.microsoft.com/en-us/graph/api/activate?view=graph-rest-beta) resource",
+          "Target": "activate"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Method",
+          "ChangedApiName": "createNewVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the [createNewVersion](https://docs.microsoft.com/en-us/graph/api/createNewVersion?view=graph-rest-beta) resource",
+          "Target": "createNewVersion"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added the [restore](https://docs.microsoft.com/en-us/graph/api/restore?view=graph-rest-beta) resource",
+          "Target": "restore"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Method",
+          "ChangedApiName": "resume",
+          "ChangeType": "Addition",
+          "Description": "Added the [resume](https://docs.microsoft.com/en-us/graph/api/resume?view=graph-rest-beta) resource",
+          "Target": "resume"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Method",
+          "ChangedApiName": "summary",
+          "ChangeType": "Addition",
+          "Description": "Added the [summary](https://docs.microsoft.com/en-us/graph/api/summary?view=graph-rest-beta) resource",
+          "Target": "summary"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Method",
+          "ChangedApiName": "summary",
+          "ChangeType": "Addition",
+          "Description": "Added the [summary](https://docs.microsoft.com/en-us/graph/api/taskReport?view=graph-rest-beta) method to the [taskReport](https://docs.microsoft.com/en-us/graph/api/taskReport?view=graph-rest-beta) resource.",
+          "Target": "taskReport"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Method",
+          "ChangedApiName": "summary",
+          "ChangeType": "Addition",
+          "Description": "Added the [summary](https://docs.microsoft.com/en-us/graph/api/summary?view=graph-rest-beta) resource",
+          "Target": "summary"
+        }
+      ],
+      "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-10T21:47:27.8909237Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
+    }
+  ]
+}
