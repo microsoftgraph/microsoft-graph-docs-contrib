@@ -20,12 +20,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                            |
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetings.ReadWrite, OnlineMeetings.Read                                  |
+| Delegated (work or school account)     | VirtualAppointment.ReadWrite, VirtualAppointment.Read, OnlineMeetings.ReadWrite, OnlineMeetings.Read                                  |
 | Delegated (personal Microsoft account) | Not supported.                                                                         |
-| Application                            | Not supported.
+| Application                            | VirtualAppointment.ReadWrite.All, VirtualAppointment.Read.All
 
 > [!NOTE]
->Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. As we get closer to the transition, we'll provide additional details on the updated permission requirements and timeline.
+>Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. Online meeting permissions will no longer be supported starting December 1, 2022.
 
 ## HTTP request
 
