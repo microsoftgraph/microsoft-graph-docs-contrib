@@ -32,9 +32,9 @@ The following [Azure AD roles](/azure/active-directory/roles/permissions-referen
 
 |Use Case  |Resource  |
 |---------|---------|
-|List and Get a user processing summary of users processed by a workflow using Lifecycle Workflows.     | [User Processing Results](identitygovernance-userprocessingresult.md)        |
-|List and Get a task report of workflows created using Lifecycle Workflows.     | [Task Reports](identitygovernance-taskreport.md)        |
-|List and get a summary of workflows run made using Lifecycle Workflows.     | [Workflow Runs](identitygovernance-run.md)        |
+|List and Get a summary of users processed by a workflow using Lifecycle Workflows.     | [User Processing Results](identitygovernance-userprocessingresult.md)        |
+|List and Get a report of tasks and their process status in workflows created using Lifecycle Workflows.     | [Task Reports](identitygovernance-taskreport.md)        |
+|List and Get a summary of workflows runs and their status using Lifecycle Workflows.     | [Workflow Runs](identitygovernance-run.md)        |
 |List, Get, and Resume a task processing result of tasks that run within workflows.     | [Task Processing Results](identitygovernance-taskprocessingresult.md)        |
 
 ## See also
