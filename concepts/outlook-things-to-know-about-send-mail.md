@@ -7,7 +7,7 @@ ms.prod: "outlook"
 ---
 
 # Explainer: How does sending mail work using Microsoft Graph API?
-In Microsoft Graph, each of the [forward](/graph/api/message-forward), [reply](/graph/api/message-reply), [replyAll](/graph/api/message-replyAll), or [sendMail](/graph/api/user-sendmail) methods creates and sends email messages in the same call. This article summarizes how Outlook and Exchange Online usually process their mail sending behind the scenes. Most of the steps (steps 2 to 7) take place after the method has returned. 
+In Microsoft Graph, each of the [forward](/graph/api/message-forward), [reply](/graph/api/message-reply), [replyAll](/graph/api/message-replyAll), or [sendMail](/graph/api/user-sendmail) methods creates and sends an email message in the same call. This article summarizes how Outlook and Exchange Online usually process the mail sending behind the scenes. Most of the steps (steps 2 to 7) take place after the method has returned. 
 
 
 ## 1. Creating a new message in sender's mailbox
@@ -53,8 +53,14 @@ For more details about report messages, see [DSNs and NDRs in Exchange Server](h
 
 
 ## See also
-- [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
-- [Automate creating, sending, and processing messages](outlook-create-send-messages.md)
-- [Send messages with MIME content](outlook-send-mime-message.md)
-- [Send Outlook messages from another user](outlook-send-mail-from-other-user.md)
-- [Use the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0
+- [Why integrate with Outlook mail](outlook-mail-concept-overview.md).
+- [Automate creating, sending, and processing messages](outlook-create-send-messages.md).
+- [Send messages with MIME content](outlook-send-mime-message.md).
+- [Send Outlook messages from another user](outlook-send-mail-from-other-user.md).
+- [Use the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0.
+- Microsoft Graph APIs that create and send a draft in separate calls:
+  - [Create draft message](/graph/api/user-post-messages)
+  - [Create draft reply](/graph/api/message-createreply)
+  - [Create draft to reply-all](/graph/api/message-createreplyall)
+  - [Create draft to forward message](/graph/api/message-createforward)
+  - [Send draft message](/graph/api/message-send)
