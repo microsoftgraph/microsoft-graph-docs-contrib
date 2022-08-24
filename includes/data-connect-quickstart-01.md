@@ -30,7 +30,7 @@ To complete this lab, you will need the following subscriptions or licenses. Ple
    - Multiple Microsoft 365 users with emails sent and received.
    - Access to at least two accounts that meet the following requirements:
       - Must have the **Global administrator** role assigned to you in order to have access to the [Microsoft 365 Admin Center](https://admin.microsoft.com/).
-      - Must have an **existing EXO license with E5 skew**.
+      - Must have an **existing EXO license with E5 SKU**.
          - An E5 instant default sandbox is provided for free from the Microsoft 365 Developer Program or you can also use your own existing E5 instance.
 
 1. **Microsoft Azure subscription**
