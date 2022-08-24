@@ -1389,11 +1389,11 @@ items:
           href: api/message-copy.md
         - name: Move event message
           href: api/message-move.md
-        - name: Create Reply
+        - name: Create draft to reply
           href: api/message-createreply.md
         - name: Reply event message
           href: api/message-reply.md
-        - name: Create ReplyAll
+        - name: Create draft to reply-all
           href: api/message-createreplyall.md
         - name: ReplyAll event message
           href: api/message-replyall.md
@@ -13580,7 +13580,7 @@ items:
           href: api/message-copy.md
         - name: Move message
           href: api/message-move.md
-        - name: Create draft reply
+        - name: Create draft to reply
           href: api/message-createreply.md
         - name: Reply to a message
           href: api/message-reply.md
