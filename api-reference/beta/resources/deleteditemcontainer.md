@@ -19,10 +19,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List workflows](../api/deleteditemcontainer-list-workflows.md)|[workflow](../resources/identitygovernance-workflow.md) collection|Get the workflow resources from the workflows navigation property.|
-|[Create workflow](../api/deleteditemcontainer-post-workflows.md)|[workflow](../resources/identitygovernance-workflow.md)|Create a new workflow object.|
+None
 
 ## Properties
 
