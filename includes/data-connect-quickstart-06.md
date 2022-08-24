@@ -22,9 +22,9 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
     5. **Account name:** synapsedatalstorage 
     6. **File system name:** flsynapse 
 
-    ![Screenshot shows create](../concepts/images/data-connect-synapse-create.png)
+        ![Screenshot shows create](../concepts/images/data-connect-synapse-create.png)
 
-    ![Screenshot shows workspace](../concepts/images/data-connect-synapse-workspace.png)
+        ![Screenshot shows workspace](../concepts/images/data-connect-synapse-workspace.png)
 
 5. After the Azure Synapse Analytics resource is created, select the **Open Synapse Studio** tile to launch Azure Synapse
 
@@ -36,11 +36,11 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
 
     2. Select **Azure, Self-Hosted** and select **Continue**.
 
-    ![Screenshot showing IR](../concepts/images/data-connect-synapse-IR.png)
+        ![Screenshot showing IR](../concepts/images/data-connect-synapse-IR.png)
 
     3. Select **Azure** for network environment and select **Continue**.
 
-    ![Screenshot showing azure network env](../concepts/images/data-connect-synapse-azure.png)
+        ![Screenshot showing azure network env](../concepts/images/data-connect-synapse-azure.png)
 
     4. Use the following details to complete the form on the final screen and then select **Create**.
         - **Name**: name of your integration runtime
@@ -55,7 +55,7 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
 
     1. Drag the **Copy Data** activity from the **Move and Transform** section onto the design surface.
 
-    ![Screenshot showing move and transform](../concepts/images/data-connect-synapse-move-transform.png)
+        ![Screenshot showing move and transform](../concepts/images/data-connect-synapse-move-transform.png)
     
     2. Select the activity in the designer.
     3. Select the **General** tab and give it a name and description.
