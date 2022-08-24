@@ -15,8 +15,6 @@ requestBody.SetClientContext(&clientContext)
 
 
 prompt := graphmodels.NewPrompt()
-"@odata.type" := "#microsoft.graph.mediaPrompt"
-prompt.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 mediaInfo := graphmodels.New()
 uri := "https://cdn.contoso.com/beep.wav"

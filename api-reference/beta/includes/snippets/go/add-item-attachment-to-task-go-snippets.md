@@ -8,14 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.itemAttachment"
-requestBody.Set"@odata.type"(&"@odata.type") 
 name := "Holiday event"
 requestBody.SetName(&name) 
 additionalData := map[string]interface{}{
 item := graphmodels.New()
-"@odata.type" := "microsoft.graph.event"
-item.Set"@odata.type"(&"@odata.type") 
 subject := "Discuss gifts for children"
 item.SetSubject(&subject) 
 body := graphmodels.New()

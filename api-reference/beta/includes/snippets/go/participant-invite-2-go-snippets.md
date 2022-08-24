@@ -12,13 +12,8 @@ requestBody := graphmodels.NewInvitePostRequestBody()
 
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.invitationParticipantInfo", 
 identity := graphmodels.New()
-"@odata.type" := "#microsoft.graph.identitySet"
-identity.Set"@odata.type"(&"@odata.type") 
 phone := graphmodels.New()
-"@odata.type" := "#microsoft.graph.identity"
-phone.Set"@odata.type"(&"@odata.type") 
 id := "+12345678901"
 phone.SetId(&id) 
 	identity.SetPhone(phone)

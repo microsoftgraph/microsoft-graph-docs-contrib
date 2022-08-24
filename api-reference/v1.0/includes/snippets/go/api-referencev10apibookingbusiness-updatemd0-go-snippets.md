@@ -11,11 +11,11 @@ requestBody := graphmodels.NewBookingBusiness()
 email := "admin@fabrikam.com"
 requestBody.SetEmail(&email) 
 schedulingPolicy := graphmodels.NewBookingSchedulingPolicy()
-timeSlotInterval := "PT60M"
+timeSlotInterval , err := abstractions.ParseISODuration("PT60M")
 schedulingPolicy.SetTimeSlotInterval(&timeSlotInterval) 
-minimumLeadTime := "P1D"
+minimumLeadTime , err := abstractions.ParseISODuration("P1D")
 schedulingPolicy.SetMinimumLeadTime(&minimumLeadTime) 
-maximumAdvance := "P30D"
+maximumAdvance , err := abstractions.ParseISODuration("P30D")
 schedulingPolicy.SetMaximumAdvance(&maximumAdvance) 
 sendConfirmationsToOwner := true
 schedulingPolicy.SetSendConfirmationsToOwner(&sendConfirmationsToOwner) 
