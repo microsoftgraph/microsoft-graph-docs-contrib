@@ -13556,15 +13556,15 @@ items:
             href: resources/identitygovernance-workflow.md
             items:
             - name: List
-              href: api/deleteditemcontainer-list-workflows.md
+              href: api/identitygovernance-workflow-list.md
             - name: Create
-              href: api/deleteditemcontainer-post-workflows.md
+              href: api/identitygovernance-lifecycleworkflowscontainer-post-workflows.md
             - name: Get
               href: api/identitygovernance-workflow-get.md
             - name: Update
               href: api/identitygovernance-workflow-update.md
             - name: Delete
-              href: api/deleteditemcontainer-delete-workflows.md
+              href: api/identitygovernance-workflow-delete.md
             - name: Restore
               href: api/identitygovernance-workflow-restore.md
             - name: Activate

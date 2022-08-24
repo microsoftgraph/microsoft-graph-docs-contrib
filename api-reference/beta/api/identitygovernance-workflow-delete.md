@@ -1,19 +1,19 @@
 ---
-title: "Delete userProcessingResult"
-description: "Deletes a userProcessingResult object."
+title: "Delete workflow"
+description: "Deletes a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Delete userProcessingResult
+# Delete workflow
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [userProcessingResult](../resources/identitygovernance-userprocessingresult.md) object.
+Deletes a [workflow](../resources/identitygovernance-workflow.md) object.
 
 ## Permissions
 
@@ -32,7 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /workflow/userProcessingResults/{userProcessingResultId}/$ref
+DELETE /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/
+DELETE /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/
 ```
 
 ## Request headers
@@ -56,11 +57,11 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_userprocessingresult"
+  "name": "delete_workflow"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/workflow/userProcessingResults/{userProcessingResultId}
+DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 ```
 
 ### Response
