@@ -4,89 +4,153 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-A Microsoft 365 administrator has the ability to approve or deny consent requests. This can be done via the Microsoft 365 Admin Center or programmatically via PowerShell. When you run a pipeline and trigger a PAM request, the request is attached to your user account that owns the service principal used by the pipeline. Even if the account is part of the approver group that you set up, you can't use it to approve the PAM request because self-approvals are not allowed. If you try, you'll get an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed." For development, you'll want to have a second account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange Online accounts.
+You can also use Azure Synapse instead of Azure Data Factory to create a pipeline to extract the data from Microsoft 365 to the Azure Storage account using Microsoft Graph Data Connect.
 
-## Approve consent requests
-
-# [Microsoft 365 Admin Center](#tab/Microsoft365)
-
-1. Open a browser and go to your [Microsoft 365 Admin Portal](https://admin.microsoft.com).
-
-1. To approve or deny consent requests, go to [Privileged Access](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess).
-
-1. Select a pending **Data Access Request**.
-
-1. In the **Data Access Request** call out, select the **Approve** button.
-
-    ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-approve.png)
-1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
-
-   <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
-
-1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
-
-# [PowerShell](#tab/PowerShell)
-
-1. Open Windows PowerShell.
-1. Ensure that your PowerShell session has enabled remotely signed scripts.
-
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    ```
-
-1. Connect to Exchange Online.
-
-    1. Obtain a sign in credential by executing the following PowerShell. Sign in using a different user than one that created and started the Azure Data Factory pipeline, who has the **Global administrator** role applied, who is a member of the group that has rights to approve requests to data in Microsoft 365, and has multi-factor authentication enabled.
-
-        ```powershell
-        $UserCredential = Get-Credential
-        ```
-
-    1. Create a new Exchange Online PowerShell session and load (import) it.
-
-        ```powershell
-        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-        Import-PSSession $Session -DisableNameChecking
-        ```
-
-        > [!IMPORTANT]
-        > After you are finished with this session, be sure you you disconnect from the session using the PowerShell command `Remove-PSSession $Session`. Exchange Online only allows for three open remote PowerShell sessions to protect against denial-of-service (DoS) attacks. If you simply close the PowerShell window, it will leave the connection open.
-
-1. Get a list of all pending data requests from Microsoft Graph data connect by executing the following PowerShell.
-
-    ```powershell
-    Get-ElevatedAccessRequest | where {$_.RequestStatus -eq 'Pending'} | select RequestorUPN, Service, Identity, RequestedAccess | fl
-    ```
-
-    - Examine the list of data access requests returned. In the following image, notice there are two pending requests.
-
-        ![A screenshot showing a list of pending requests formatted as a list in a PowerShell console.](../concepts/images/data-connect-ps-pending-requests.png)
-
-1. Approve a data access returned in the previous step by copying the Identity GUID of a request by executing the following PowerShell.
-
-    > [!NOTE]
-    > Replace the GUID in the following code snippet with the GUID from the results of the previous step.
-
-    ```powershell
-    Approve-ElevatedAccessRequest -RequestId fa041379-0000-0000-0000-7cd5691484bd -Comment 'approval request granted'
-    ```
-
-1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
-
-   <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
-
-1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
-
----
-
-## Verify extracted data from Microsoft 365 to Azure Storage Blob
+## Create an Azure Synapse pipeline
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/#home).
 
-1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
+2. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
 
-1. In the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
+3. On the sidebar navigation, select **Create a resource**. 
 
-1. On the sidebar navigation menu, select **Storage browser**, select **Blob containers** and then select the **container** created previously in this tutorial that you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container now.
+4. Find the **Azure Synapse Analytics** resource type and use the following values to create it, then select **Create**. 
+    1. **Subscription:** select your Azure subscription 
+    2. **Resource group:** GraphDataConnect 
+    3. **Region:** pick an Azure region in the same region as your Microsoft 365 region 
+    4. **Name:** m365tostorage 
+    5. **Account name:** synapsedatalstorage 
+    6. **File system name:** flsynapse 
 
-    ![A screenshot showing the Azure portal UI for the Storage account service. It is showing the container where the extracted data is being stored.](../concepts/images/data-connect-adf-extracted-data-in-blob.png)
+    ![Screenshot shows create](.../concepts/images/data-connect-synapse-create.png)
+
+    ![Screenshot shows workspace](.../concepts/images/data-connect-synapse-workspace.png)
+
+5. After the Azure Synapse Analytics resource is created, select the **Open Synapse Studio** tile to launch Azure Synapse
+
+    ![Screenshot showing open synapse studio](.../concepts/images/azure-synapse-studio-tile.png)
+
+6. By default, Azure Synapse will use an integration runtime that is auto-resolving the region. Microsoft Graph Data Connect requires that your source, destination, and integration runtime exist in the same Microsoft 365 region. Therefore, we recommend you create a new integration runtime with a fixed region.
+
+    1. Switch to the **Manage hub > Integration runtimes > New**.
+
+    2. Select **Azure, Self-Hosted** and select **Continue**.
+
+    ![Screenshot showing IR](.../concepts/images/data-connect-synapse-IR.png)
+
+    3. Select **Azure** for network environment and select **Continue**.
+
+    ![Screenshot showing azure network env](.../concepts/images/data-connect-synapse-azure.png)
+
+    4. Use the following details to complete the form on the final screen and then select **Create**.
+        - **Name**: name of your integration runtime
+        - **Description**: enter a description
+        - **Region**: select the region that matches your Microsoft 365 region
+
+7. Switch from the **Manage** to the **Integrate** experience by selecting it from the left-hand navigation.
+
+8. Create a new pipeline by selecting the **Plus** icon, then **Pipeline**.
+
+    ![Screenshot showing azure network env](.../concepts/images/data-connect-synapse-pipeline.png)
+
+    1. Drag the **Copy Data** activity from the **Move and Transform** section onto the design surface.
+
+    ![Screenshot showing move and transform](.../concepts/images/data-connect-synapse-move-transform.png)
+    
+    2. Select the activity in the designer.
+    3. Select the **General** tab and give it a name and description.
+        - **Name:** CopyFromM365toStorage
+        - **Description:** A description you want.
+        - In the activity editor pane below the designer, select the **Source** tab, then select **New**.
+
+            ![Screenshot General tab](.../concepts/images/data-connect-synapse-general.png)
+
+    4. Locate the dataset **Microsoft 365 (Office 365)**, select it and then select the **Continue** button.
+        
+        ![Screenshot locate dataset](.../concepts/images/data-connect-synapse-locate-dataset.png)
+        
+    5. In the table settings for **Linked Service** click on the **New** button.
+        
+        ![Screenshot for linked service](.../concepts/images/data-connect-synapse-linked-service.png)
+        
+    6. In the dialog that appears, enter the previously created Integration runtime, Azure AD application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, then select **Create**.
+        
+        ![Screenshot for synapse service](.../concepts/images/data-connect-synapse-service-id.png)
+
+    7. After creating the Microsoft 365 connection, for the **Table name** field, select **BasicDataSet_v0.Message_v1**
+        
+        ![Screenshot for choose basic dataset](.../concepts/images/data-connect-synapse-basic-dataset-choose.png)
+        
+    8. Use the following values for the **Date Filter**
+        - **Column name:** CreatedDateTime
+        - **Start time (UTC):** select a date sometime prior to the current date
+        - **End time (UTC):** select the current date
+        - Select **Import schema** in the Output columns section.
+
+            ![Screenshot for importing schema](.../concepts/images/data-connect-synapse-import-schema.png)
+    
+    9. Select the **Sink** tab.
+        - Select the **New** button, select **Azure Blob Storage**, and then select the **Continue** button.
+
+            ![Screenshot covers sink tabs](.../concepts/images/data-connect-synapse-sink.png)
+
+            ![Screenshot covers integration service](.../concepts/images/data-connect-synapse-integration-service.png)
+
+        - Select **Binary** as the format for the data and then select the **Continue** button.
+        - Give the dataset the name **M365JsonFile** and create a new linked service if it does not exist already.
+
+            ![Screenshot covers M365 properties](.../concepts/images/data-connect-synapse-set-properties.png)
+
+    10. Set the following values in the dialog, then select **Finish**.
+        - **Authentication method:** Service principal
+        - **Azure subscription:** Select all
+        - **Storage account name:** mgdcm365datastore. This is the storage account created earlier in this exercise.
+        - **Service principal ID:** enter the ID of the Azure AD application you previously created
+        - **Service principal key:** enter the hashed key of the Azure AD application you previously created.
+
+            ![Screenshot covers new linked service](.../concepts/images/data-connect-synapse-new-linked-service.png) 
+    
+    11. Next to the **File path** field, select **Browse.**
+    
+    12. Select the name of the storage container you created previously.
+
+        ![Screenshot for storage container](.../concepts/images/data-connect-synapse-storage.png)
+
+9. With the pipeline created, select the **Validate All** button at the top of the designer.
+
+10.	After validating (and fixing any issues that were found), select the **Publish All** button at the top of the designer.
+
+# Run the Azure Synapse Analytics Pipeline
+
+With the pipeline created, now it is time to run it.
+
+> [!NOTE]
+> It can take several minutes for the consent request to appear and it is not uncommon for the entire process (start, requesting consent and after approving the consent completing the pipeline run) to take over 40 minutes.
+
+1. In the Azure Synapse integrate tab with the pipeline open, select **Add trigger > Trigger Now**.
+
+    ![Screenshot for adding triggers](.../concepts/images/data-connect-synapse-trigger.png)
+
+2.	After starting the job, from the sidebar menu, select **Monitor** to view current running jobs.
+
+3.	On the left-side navigation bar, locate the **Pipeline runs** tab and select it. Select the pipeline under the **Pipeline name** column to view the **Activity runs**. This pipeline will show as *In Progress*.
+
+    ![Screenshot for adding triggers](.../concepts/images/data-connect-synapse-pipeline-runs.png)
+
+4.	After you are in the **Activity runs** view, go to the **Activity runs** section, which is located in the bottom side of the page.
+
+5.	Hover over the **Activity name** and select the goggles option. This will bring up the **Details** tab.
+
+    ![Screenshot for activity runs](.../concepts/images/data-connect-synapse-activity-run.png)
+
+6.	In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image. In this case you can see it is in a state of **RequestingConsent**.
+
+    ![Screenshot for requesting consent](.../concepts/images/data-connect-synapse-accept-request.png)
+
+7. At this point, the activity run is internally paused until someone manually approves the consent request via the Microsoft 365 admin center or via PowerShell.
+
+
+
+
+
+
