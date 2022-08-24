@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 the custom task extension callback configuration resource type
 
-Inherits from [customExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).
+Inherits from  [customExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).
 
 ## Properties
 
