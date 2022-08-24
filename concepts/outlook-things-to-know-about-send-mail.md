@@ -60,7 +60,7 @@ For more details about report messages, see [DSNs and NDRs in Exchange Server](h
 - [Use the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0.
 - Microsoft Graph APIs that create and send a draft in separate calls:
   - [Create draft message](/graph/api/user-post-messages)
-  - [Create draft reply](/graph/api/message-createreply)
+  - [Create draft to reply](/graph/api/message-createreply)
   - [Create draft to reply-all](/graph/api/message-createreplyall)
   - [Create draft to forward message](/graph/api/message-createforward)
   - [Send draft message](/graph/api/message-send)
