@@ -64,7 +64,7 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_browsersharedcookie"
+  "name": "update_browsersharedcookie",
   "sampleKeys": ["20579923-e6c8-425a-b728-47f43c10bc05", "972a5778-df43-45fd-9c2a-5dd944c7a1ce"]
 }
 -->

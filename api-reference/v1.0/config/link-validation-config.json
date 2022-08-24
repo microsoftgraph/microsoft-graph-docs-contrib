@@ -29,6 +29,7 @@
         "/universal-print",
         "/troubleshoot",
         "/windows",
-        "/windows-hardware"
+        "/windows-hardware",
+        "/deployedge"
     ]
 }

@@ -1,6 +1,6 @@
 ---
 title: "internetExplorerMode resource type"
-description: "A container for Internet Explorer Mode resources."
+description: "Represents a container for Internet Explorer mode resources."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for Internet Explorer Mode resources.
+Represents a container for [Internet Explorer mode](/deployedge/edge-ie-mode) resources.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List browserSiteLists](../api/internetexplorermode-list-sitelists.md)|[browserSiteList](../resources/browsersitelist.md) collection|Get the browserSiteList resources from the siteLists navigation property.|
-|[Create browserSiteList](../api/internetexplorermode-post-sitelists.md)|[browserSiteList](../resources/browsersitelist.md)|Create a siteList by posting to the siteLists collection.|
+|[List browserSiteLists](../api/internetexplorermode-list-sitelists.md)|[browserSiteList](../resources/browsersitelist.md) collection|Get a list of the [browserSiteList](../resources/browsersitelist.md) objects and their properties.|
+|[Create browserSiteList](../api/internetexplorermode-post-sitelists.md)|[browserSiteList](../resources/browsersitelist.md)|Create a new [browserSiteList](../resources/browsersitelist.md) object to support [Internet Explorer mode](/deployedge/edge-ie-mode).|
 |[Delete browserSiteList](../api/internetexplorermode-delete-sitelists.md)|None|Delete a [browserSiteList](../resources/browsersitelist.md) object.|
 
 ## Properties
@@ -29,7 +29,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|siteLists|[browserSiteList](../resources/browsersitelist.md) collection|A collection of Enterprise Internet Explorer mode site lists|
+|siteLists|[browserSiteList](../resources/browsersitelist.md) collection|A collection of Enterprise Internet Explorer mode site lists.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

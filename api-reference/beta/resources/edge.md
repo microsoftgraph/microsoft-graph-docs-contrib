@@ -1,6 +1,6 @@
 ---
 title: "edge resource type"
-description: "Entity that acts as a container for edge functionality."
+description: "Represents an entity that acts as a container for Microsoft Edge functionalities."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Entity that acts as a container for edge functionality.
+Represents an entity that acts as a container for Microsoft Edge functionalities.
 
 
 ## Properties
@@ -23,7 +23,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|internetExplorerMode|[internetExplorerMode](../resources/internetexplorermode.md)|A container for Internet Explorer Mode resources.|
+|internetExplorerMode|[internetExplorerMode](../resources/internetexplorermode.md)|A container for [Internet Explorer mode](/deployedge/edge-ie-mode) resources.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
