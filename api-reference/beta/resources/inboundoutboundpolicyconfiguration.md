@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
-# crossTenantAccessPolicyB2BSetting resource type
+# inboundOutboundPolicyConfiguration resource type
 
 Namespace: microsoft.graph
 
