@@ -27,10 +27,6 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 |[Get teamworkTag](../api/teamworktag-get.md)|[**teamworkTag**](teamworktag.md)|Read the properties and relationships of a **teamworkTag** object.|
 |[Update teamworkTag](../api/teamworktag-update.md)|[**teamworkTag**](teamworktag.md)|Update the properties of a **teamworkTag** object.|
 |[Delete teamworkTag](../api/teamworktag-delete.md)|None|Delete a **teamworkTag** object.|
-|[List teamworkTagMembers](../api/teamworktagmember-list.md)|[**teamworkTagMember**](teamworktagmember.md) collection|Get a list of the members of a standard tag in a team and their properties.|
-|[Create teamworkTagMember](../api/teamworktagmember-post.md)|[**teamworkTagMember**](teamworktagmember.md)|Create a new **teamworkTagMember** object.|
-|[Get teamworkTagMember](../api/teamworktagmember-get.md)|[**teamworkTagMember**](teamworktagmember.md)|Get the properties and relationships of a member of a standard tag in a team.|
-|[Delete teamworkTagMember](../api/teamworktagmember-delete.md)|None|Delete a member from a standard tag in the team.|
 
 ## Properties
 |Property|Type|Description|
@@ -66,11 +62,17 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkTag",
-  "displayName": "String",  
   "id": "String (identifier)",
+  "displayName": "String",
+  "description": "String",
   "memberCount": "Int32",
   "tagType": "String",
   "teamId": "String"
 }
 ```
 
+## See Also
+|[List teamworkTagMembers](../api/teamworktagmember-list.md)|[**teamworkTagMember**](teamworktagmember.md) collection|Get a list of the members of a standard tag in a team and their properties.|
+|[Create teamworkTagMember](../api/teamworktagmember-post.md)|[**teamworkTagMember**](teamworktagmember.md)|Create a new **teamworkTagMember** object.|
+|[Get teamworkTagMember](../api/teamworktagmember-get.md)|[**teamworkTagMember**](teamworktagmember.md)|Get the properties and relationships of a member of a standard tag in a team.|
+|[Delete teamworkTagMember](../api/teamworktagmember-delete.md)|None|Delete a member from a standard tag in the team.|
