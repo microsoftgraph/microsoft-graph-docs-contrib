@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "domains/any"
+
 requestParameters := &graphconfig.IdentityProviderBaseRequestBuilderGetQueryParameters{
-	Filter: "domains/any",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.IdentityProviderBaseRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

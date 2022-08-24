@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAccessReviewStage()
-"@odata.type" := "#microsoft.graph.accessReviewStage"
-requestBody.Set"@odata.type"(&"@odata.type") 
 
 
 accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()

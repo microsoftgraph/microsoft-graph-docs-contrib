@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Search
 
-Get-MgExternalConnection -OutFile $outFileId
+Get-MgExternalConnection
 
 ```

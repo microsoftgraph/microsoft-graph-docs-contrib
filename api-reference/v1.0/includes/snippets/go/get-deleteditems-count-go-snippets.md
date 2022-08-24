@@ -10,8 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestCount := true
+
 requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
-	Count: true,
+	Count: &requestCount,
 	OrderBy: [] string {"deletedDateTime asc"},
 	Select: [] string {"id","DisplayName","deletedDateTime"},
 }
