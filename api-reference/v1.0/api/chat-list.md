@@ -1263,7 +1263,6 @@ The following is an example of a request. **lastMessagePreview/createdDateTime**
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats?$orderBy=lastMessagePreview/createdDateTime desc
 ```
----
 
 #### Response
 
