@@ -418,10 +418,10 @@ items:
           items:
           - name: Contact insights
             href: resources/organizationcontactinsights.md
-          - name: Get
+          - name: List
             href: api/organizationsettings-list-contactinsights.md
           - name: Update
-            href: api/organizationsettings-update-contactinsights.md
+            href: api/organizationcontactinsights-update.md
       - name: Delegated permission grants
         items:
         - name: List delegated permission grants

@@ -1,13 +1,13 @@
 ---
-title: "Get organizationContactInsights"
-description: "Get the settings for contact insights in an organization."
+title: "List organizationContactInsights"
+description: "Retrieve properties of organizationContactInsights object for displaying or returning contact insights in an organization."
 author: "rogoy"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Get organizationContactInsights
+# List organizationContactInsights
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
