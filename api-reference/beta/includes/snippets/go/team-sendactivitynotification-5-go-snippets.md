@@ -21,8 +21,6 @@ content := "Internal spending team has a pending finance approval requests"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
 recipient := graphmodels.NewTeamworkNotificationRecipient()
-"@odata.type" := "microsoft.graph.channelMembersNotificationRecipient"
-recipient.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"teamId" : "e8bece96-d393-4b9b-b8da-69cedef1a7e7", 
 	"channelId" : "19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2", 

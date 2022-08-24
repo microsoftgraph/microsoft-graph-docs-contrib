@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "attributeSet eq 'Engineering' and status eq 'Available' and type eq 'String'"
+
 requestParameters := &graphconfig.CustomSecurityAttributeDefinitionsRequestBuilderGetQueryParameters{
-	Filter: "attributeSet eq 'Engineering' and status eq 'Available' and type eq 'String'",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.CustomSecurityAttributeDefinitionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

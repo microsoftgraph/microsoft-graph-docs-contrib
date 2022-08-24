@@ -15,8 +15,6 @@ requestBody.SetDescription(&description)
 
 
 identitySource := graphmodels.NewIdentitySource()
-"@odata.type" := "#microsoft.graph.domainIdentitySource"
-identitySource.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"domainName" : "example.com", 
 	"displayName" : "example.com", 

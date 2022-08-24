@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -OutFile $outFileId
+Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 
 ```

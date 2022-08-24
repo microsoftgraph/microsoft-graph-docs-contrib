@@ -11,8 +11,6 @@ requestBody := graphmodels.NewEducationSubmissionResource()
 resource := graphmodels.NewEducationResource()
 displayName := "Wikipedia"
 resource.SetDisplayName(&displayName) 
-"@odata.type" := "#microsoft.graph.educationLinkResource"
-resource.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"link" : "https://en.wikipedia.org/wiki/Main_Page", 
 }

@@ -10,9 +10,13 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestCount := true
+requestFilter := "hasMembersWithLicenseErrors eq true"
+
 requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
-	Count: true,
-	Filter: "hasMembersWithLicenseErrors eq true",
+	Count: &requestCount,
+	Filter: &requestFilter,
 	Select: [] string {"id","displayName"},
 }
 configuration := &graphconfig.GroupsRequestBuilderGetRequestConfiguration{

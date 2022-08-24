@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAttachment()
-"@odata.type" := "#Microsoft.OutlookServices.FileAttachment"
-requestBody.Set"@odata.type"(&"@odata.type") 
 name := "name-value"
 requestBody.SetName(&name) 
 contentType := "contentType-value"

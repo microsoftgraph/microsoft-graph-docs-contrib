@@ -11,8 +11,6 @@ requestBody := graphmodels.NewAnswerPostRequestBody()
 callbackUri := "callbackUri-value"
 requestBody.SetCallbackUri(&callbackUri) 
 mediaConfig := graphmodels.NewMediaConfig()
-"@odata.type" := "#microsoft.graph.appHostedMediaConfig"
-mediaConfig.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"blob" : "<Media Session Configuration Blob>", 
 }

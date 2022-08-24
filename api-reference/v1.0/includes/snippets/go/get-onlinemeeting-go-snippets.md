@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "VideoTeleconferenceId eq '123456789'"
+
 requestParameters := &graphconfig.OnlineMeetingsRequestBuilderGetQueryParameters{
-	Filter: "VideoTeleconferenceId eq '123456789'",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.OnlineMeetingsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

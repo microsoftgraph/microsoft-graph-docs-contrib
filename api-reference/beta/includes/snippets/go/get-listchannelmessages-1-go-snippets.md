@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestTop := int32(3)
+
 requestParameters := &graphconfig.MessagesRequestBuilderGetQueryParameters{
-	Top: 3,
+	Top: &requestTop,
 }
 configuration := &graphconfig.MessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
