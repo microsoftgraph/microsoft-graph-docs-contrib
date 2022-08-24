@@ -26,7 +26,7 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 |[Create teamworkTag](../api/teamworktag-post.md)|[**teamworkTag**](teamworktag.md)|Create a new **teamworkTag** object.|
 |[Get teamworkTag](../api/teamworktag-get.md)|[**teamworkTag**](teamworktag.md)|Read the properties and relationships of a **teamworkTag** object.|
 |[Update teamworkTag](../api/teamworktag-update.md)|[**teamworkTag**](teamworktag.md)|Update the properties of a **teamworkTag** object.|
-|[Delete teamworkTag](../api/teamworktag-delete.md)|None|Delete a **teamworkTag** object.|
+|[Delete teamworkTag](../api/teamworktag-delete.md)|None|Delete a **teamworkTag** object permanently.|
 
 ## Properties
 |Property|Type|Description|
