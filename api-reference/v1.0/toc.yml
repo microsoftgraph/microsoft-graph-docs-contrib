@@ -7276,17 +7276,17 @@ items:
           href: api/teamworktag-update.md
         - name: Delete
           href: api/teamworktag-delete.md
-        - name: Tag members
-          href: resources/teamworktagmember.md
-          items:
-          - name: List
-            href: api/teamworktagmember-list.md
-          - name: Create
-            href: api/teamworktagmember-post.md
-          - name: Get
-            href: api/teamworktagmember-get.md
-          - name: Delete
-            href: api/teamworktagmember-delete.md
+      - name: Tag members
+        href: resources/teamworktagmember.md
+        items:
+        - name: List
+          href: api/teamworktagmember-list.md
+        - name: Create
+          href: api/teamworktagmember-post.md
+        - name: Get
+          href: api/teamworktagmember-get.md
+        - name: Delete
+          href: api/teamworktagmember-delete.md
       - name: App
         items:
         - name: App in catalog
