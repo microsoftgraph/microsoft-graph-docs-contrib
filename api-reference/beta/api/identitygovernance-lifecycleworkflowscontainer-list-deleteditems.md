@@ -1,6 +1,6 @@
 ---
-title: "List deletedItemContainers"
-description: "Get a list of the deletedItemContainer objects and their properties."
+title: "List Deleted Workflows"
+description: "Get a list of the deleted workflows objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the deleted [deletedItemContainer](../resources/deleteditemcontainer.md) objects and their properties.
+Get a list of the deleted workflow objects and their properties.
 
 ## Permissions
 

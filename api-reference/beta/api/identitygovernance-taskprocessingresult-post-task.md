@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /workflowBase/tasks
+POST /workflow/tasks
 ```
 
 ## Request headers
@@ -74,7 +74,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/workflowBase/tasks
+POST https://graph.microsoft.com/beta/workflow/tasks
 Content-Type: application/json
 Content-length: 365
 

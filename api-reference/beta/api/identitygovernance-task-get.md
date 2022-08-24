@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /workflowBase/tasks/{taskId}
+GET /workflow/tasks/{taskId}
 ```
 
 ## Optional query parameters
@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/workflowBase/tasks/{taskId}
+GET https://graph.microsoft.com/beta/workflow/tasks/{taskId}
 ```
 
 ### Response

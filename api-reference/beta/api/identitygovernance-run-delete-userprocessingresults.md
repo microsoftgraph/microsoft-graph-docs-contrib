@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /workflowBase/userProcessingResults/{userProcessingResultId}/$ref
+DELETE /workflow/userProcessingResults/{userProcessingResultId}/$ref
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/workflowBase/userProcessingResults/{userProcessingResultId}
+DELETE https://graph.microsoft.com/beta/workflow/userProcessingResults/{userProcessingResultId}
 ```
 
 ### Response
