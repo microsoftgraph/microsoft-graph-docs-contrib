@@ -22,7 +22,7 @@
             "Id": "1ab47202-a340-49ba-b47b-f53b7eeb1604",
             "Cloud": "Prod",
             "Version": "beta",
-            "CreatedDateTime": "2022-07-01T06:16:18.4859577Z",
+            "CreatedDateTime": "2022-08-24T06:16:18.4859577Z",
             "WorkloadArea": "Cloud communications",
             "SubArea": "Call records"
         },
@@ -48,7 +48,7 @@
             "Id": "9fe7c6c7-e931-4db5-80dd-7681d3da6d91",
             "Cloud": "Prod",
             "Version": "v1.0",
-            "CreatedDateTime": "2022-07-01T06:16:18.4866441Z",
+            "CreatedDateTime": "2022-08-24T06:16:18.4866441Z",
             "WorkloadArea": "Cloud communications",
             "SubArea": "Call records"
         },
