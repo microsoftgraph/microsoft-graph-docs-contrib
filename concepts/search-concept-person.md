@@ -11,7 +11,7 @@ ms.prod: "search"
 Microsoft Graph applications can use the Microsoft Search API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication, collaboration patterns, and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, search also provides fuzzy matching search support.
 
 ## People APIs
-You can can use people search by calling these two APIs:
+You can use the following APIs to search for people inside an organization.
 
 * /search
 * /people
@@ -22,23 +22,24 @@ You can can use people search by calling these two APIs:
 ## Returned people properties
 The people API returns the following set of properties.
 
-
 | Property                 | Type    |
 |:-------------------------|:--------|
-| hitId                    | String  |
-| rank                     | Integer |
-| summary                  | String  |
-| displayName              | String  |
-| givenName                | String  |
-| surname                  | String  |
-| emailAddress             | String  |
-| phones                   | String  |
-| jobTitle                 | String  |
-| department               | String  |
-| officeLocation           | String  |
-| personType               | String  |
-| userPrincipalName        | String  |
-| additionalOfficeLocation | String  |
+| additionalOfficeLocation | String  | 
+| companyName              | String  | 
+| department               | String  | 
+| displayName              | String  | 
+| emailAddress             | String  | 
+| givenName                | String  | 
+| hitId                    | String  | 
+| imAddress                | String  | 
+| jobTitle                 | String  | 
+| officeLocation           | String  | 
+| personType               | String  | 
+| phones                   | String  | 
+| rank                     | Integer | 
+| summary                  | String  | 
+| surname                  | String  | 
+| userPrincipalName        | String  | 
 
 ## Person types
 The people API supports several people types and subtypes that users can ask for. For details, see the following table.
