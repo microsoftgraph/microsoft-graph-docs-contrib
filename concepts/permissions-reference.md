@@ -25,7 +25,7 @@ The _constraint_ element of the name determines the potential extent of access y
 * **All** grants permission for the app to perform the operations on all of the resources of the specified type in a directory. For example, _User.Read.All_ potentially grants the app privileges to read the profiles of all of the users in a directory.
 * **Shared** grants permission for the app to perform the operations on resources that other users have shared with the signed-in user. This constraint is mainly used with Outlook resources like mail, calendars, and contacts. For example, _Mail.Read.Shared_, grants privileges to read mail in the mailbox of the signed-in user as well as mail in mailboxes that other users in the organization have shared with the signed-in user.
 * **AppFolder** grants permission for the app to read and write files in a dedicated folder in OneDrive. This constraint is only exposed on [Files permissions](#files-permissions) and is only valid for Microsoft accounts.
-* **WhereInstalled** grants permission for the app to perform the operations on all of the resources where the associated Teams application has been installed. For example *Chat.Read.WhereInstalled* grants the app privileges to read all chat messages for all chats where the associated Teams application is installed. There is usually a one-to-one mapping between an app (Azure AD application) and a Teams application, and the Azure AD application ID is specified in the *webApplicationInfo* section of the [Teams app manifest](/microsoftteams/platform/resources/schema/manifest-schema) of a Teams app.
+* **WhereInstalled** grants permission for the app to perform the operations on all the resources where the associated Teams application is installed. For example, *Chat.Read.WhereInstalled* grants the app privileges to read all chat messages for all chats where the associated Teams application is installed. There is usually a one-to-one mapping between an app (Azure AD application) and a Teams application. The *webApplicationInfo* section of the [Teams app manifest](/microsoftteams/platform/resources/schema/manifest-schema) of a Teams app specifies the Azure AD application Id.
 * If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
 
 > [!NOTE]
@@ -544,21 +544,21 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_Chat.Read_ |Read your chat messages  |Allows an app to read your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
-|_Chat.ReadBasic_ |Read names and members of user chat threads  |Allows an app to read the members and descriptions of 1:1 and group chats threads, on behalf of the signed-in user. |No | No |
-|_Chat.ReadWrite_ |Read your chat messages and send new ones  |Allows an app to read and send your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
+|_Chat.Read_ |Read your chat messages.  |Allows an app to read your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
+|_Chat.ReadBasic_ |Read names and members of user chat threads.  |Allows an app to read the members and descriptions of 1:1 and group chats threads, on behalf of the signed-in user. |No | No |
+|_Chat.ReadWrite_ |Read your chat messages and send new ones.  |Allows an app to read and send your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read.WhereInstalled_ |Read all chat messages for chats where the associated Teams application is installed. |Allows the app to read all one-to-one or group chat messages in Microsoft Teams for chats where the associated Teams application is installed, without a signed-in user. | Yes | No |
-|_Chat.Read.All_ |Read all chat messages  |Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. |Yes | No |
+|_Chat.Read.All_ |Read all chat messages.  |Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. |Yes | No |
 |_Chat.ReadBasic.WhereInstalled_ |Read names and members of all chat threads where the associated Teams application is installed. |Allows the app to read names and members of all one-to-one and group chats in Microsoft Teams where the associated Teams application is installed, without a signed-in user. | Yes | No |
-|_Chat.ReadBasic.All_ |Read names and members of user chat threads  |Read names and members of all chat threads. |Yes | No |
-|_Chat.UpdatePolicyViolation.All_ |Flag chat messages for violating policy |Allows the app to update Microsoft Teams 1:1 or group chat messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
+|_Chat.ReadBasic.All_ |Read names and members of user chat threads.  |Read names and members of all chat threads. |Yes | No |
+|_Chat.UpdatePolicyViolation.All_ |Flag chat messages for violating policy. |Allows the app to update Microsoft Teams 1:1 or group chat messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
 |_Chat.ReadWrite.WhereInstalled_ |Read and write all chat messages for chats where the associated Teams application is installed. |Allows the app to read and write all chat messages in Microsoft Teams for chats where the associated Teams application is installed, without a signed-in user. | Yes | No |
-|_Chat.ReadWrite.All_ |Read and write all chat messages |Allows an app to read and write all one-to-one and group chats in Microsoft Teams, without a signed-in user. Does not allow sending messages. | Yes | No |
+|_Chat.ReadWrite.All_ |Read and write all chat messages. |Allows an app to read and write all one-to-one and group chats in Microsoft Teams, without a signed-in user. Does not allow sending messages. | Yes | No |
 
 > **Note:** For messages in a channel, see [ChannelMessage permissions](#channel-message-permissions).
 
@@ -566,19 +566,19 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-| Permission             | Display String                    | Description                                                  | Admin Consent Required | Microsoft Account supported |
-| :--------------------- | :-------------------------------- | :----------------------------------------------------------- | :--------------------- | :-------------------------- |
-| _ChatMember.Read_      | Read the members of chats         | Read the members of chats, on behalf of the signed-in user.  | Yes                    | No                          |
-| _ChatMember.ReadWrite_ | Add and remove members from chats | Add and remove members from chats, on behalf of the signed-in user. | Yes                    | No                          |
+| Permission             | Display String                     | Description                                                  | Admin Consent Required | Microsoft Account supported |
+| :--------------------- | :--------------------------------- | :----------------------------------------------------------- | :--------------------- | :-------------------------- |
+| _ChatMember.Read_      | Read the members of chats.         | Read the members of chats on behalf of the signed-in user.   | Yes                    | No                          |
+| _ChatMember.ReadWrite_ | Add and remove members from chats. | Add and remove members from chats on behalf of the signed-in user. | Yes                    | No                          |
 
 #### Application permissions
 
 | Permission                            | Display String                                               | Description                                                  | Admin Consent Required | Microsoft Account supported |
 | :------------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- | :--------------------- | :-------------------------- |
-| _ChatMember.Read.WhereInstalled_      | Read the members of all chats where the associated Teams application is installed. | Allows the app to read the members of all chats where the associated Teams application is installed, without a signed in user. | Yes                    | No                          |
-| _ChatMember.Read.All_                 | Read the members of all chats                                | Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. | Yes                    | No                          |
+| _ChatMember.Read.WhereInstalled_      | Read the members of all chats where the associated Teams application is installed. | Allows the app to read the members of all chats where the associated Teams application is installed, without a signed-in user. | Yes                    | No                          |
+| _ChatMember.Read.All_                 | Read the members of all chats.                               | Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. | Yes                    | No                          |
 | _ChatMember.ReadWrite.WhereInstalled_ | Add and remove members from all chats where the associated Teams application is installed. | Allows the app to add and remove members from all chats where the associated Teams application is installed, without a signed-in user. | Yes                    | No                          |
-| _ChatMember.ReadWrite.All_            | Add and remove members of all chats                          | Read names and members of all chat threads.                  | Yes                    | No                          |
+| _ChatMember.ReadWrite.All_            | Add and remove members of all chats.                         | Read names and members of all chat threads.                  | Yes                    | No                          |
 
 ## Chat resource-specific consent permissions
 
@@ -1979,14 +1979,14 @@ Access to data via search requires the read permission to the item. Ex : _Files.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
-| _SearchConfiguration.Read.All_ | Read your organization's search configuration | Allows the app to read search configuration, on behalf of the signed-in user. | Yes | No |
-| _SearchConfiguration.ReadWrite.All_ | Read and write your organization's search configuration | Allows the app to read and write search configurations, on behalf of the signed-in user. | Yes | No |
+| _SearchConfiguration.Read.All_ | Read your organization's search configuration. | Allows the app to read search configuration, on behalf of the signed-in user. | Yes | No |
+| _SearchConfiguration.ReadWrite.All_ | Read and write your organization's search configuration. | Allows the app to read and write search configurations, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _SearchConfiguration.Read.All_ | Read your organization's search configuration | Allows the app to read search configurations, without a signed-in user. | Yes |
-| _SearchConfiguration.ReadWrite.All_ | Read and write your organization's search configuration | Allows the app to read and write search configurations, without a signed-in user. | Yes |
+| _SearchConfiguration.Read.All_ | Read your organization's search configuration. | Allows the app to read search configurations without a signed-in user. | Yes |
+| _SearchConfiguration.ReadWrite.All_ | Read and write your organization's search configuration. | Allows the app to read and write search configurations without a signed-in user. | Yes |
 
 
 ### Remarks
