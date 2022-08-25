@@ -25,13 +25,11 @@ post.SetBody(body)
 
 
 extension := graphmodels.NewExtension()
-"@odata.type" := "microsoft.graph.openTypeExtension"
-extension.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"extensionName" : "Com.Contoso.Benefits", 
 	"companyName" : "Contoso", 
 	"expirationDate" : "2016-08-03T11:00:00.000Z", 
-	topPicks := []String {
+	topPicks := []string {
 		"Employees only",
 		"Add spouse or guest",
 		"Add family",

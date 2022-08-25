@@ -46,16 +46,17 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-#### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_mailfolder"
+  "name": "delete_mailfolder",
+  "sampleKeys": ["AAMkAGVmMDEzM"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/
+DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ```
 
 # [C#](#tab/csharp)
@@ -85,7 +86,7 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/
 ---
 
 
-#### Response
+### Response
 The following is an example of the response.
 <!-- {
   "blockType": "response",

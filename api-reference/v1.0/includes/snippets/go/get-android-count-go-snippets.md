@@ -10,9 +10,13 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestSearch := "\"displayName:Android\""
+requestCount := true
+
 requestParameters := &graphconfig.DevicesRequestBuilderGetQueryParameters{
-	Search: "\"displayName:Android\"",
-	Count: true,
+	Search: &requestSearch,
+	Count: &requestCount,
 }
 configuration := &graphconfig.DevicesRequestBuilderGetRequestConfiguration{
 	Headers: headers,

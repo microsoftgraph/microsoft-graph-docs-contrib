@@ -12,11 +12,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new AuthenticationMethodsPolicy();
 $registrationEnforcement = new RegistrationEnforcement();
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign = new AuthenticationMethodsRegistrationCampaign();
-$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setSnoozeDurationInDays(snoozeDurationInDays);
+$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setSnoozeDurationInDays(1);
 
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setState(new AdvancedConfigState('enabled'));
 
-$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setExcludeTargets(]);
+$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setExcludeTargets([]);
 
 $includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1 = new AuthenticationMethodsRegistrationCampaignIncludeTarget();
 $additionalData = [

@@ -1,7 +1,7 @@
 ---
 title: "Set up notifications for changes in resource data"
 description: "Microsoft Graph APIs use a webhook mechanism to deliver change notifications to clients. Client apps use change notifications to update their state upon changes."
-author: "Jumaodhiss"
+author: "jumasure"
 ms.prod: "non-product-specific"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -17,7 +17,7 @@ After Microsoft Graph accepts the subscription request, it pushes change notific
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
  
 > [!div class="nextstepaction"]
-> [Tutorial: Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
+> [Learn: Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 

@@ -117,10 +117,10 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 ### Getting minimal responses
 
-For some operations, such as PUT and PATCH (and in some cases POST), if your application doesn't need to make use of a response payload, you can ask the API to return minimal data. Note that some services already return a 204 No Content response for PUT and PATCH operations.
+For some operations, such as PUT and PATCH (and in some cases POST), if your application doesn't need to make use of a response payload, you can ask the API to return minimal data. Note that some services already return a `204 No Content` response for PUT and PATCH operations.
 
 > [!NOTE]
-> Request minimal representation responses using an HTTP request header where appropriate: *Prefer: return=minimal*. Note that for creation operations, this might not be appropriate because your application may expect to get the service generated `id` for the newly created object in the response.
+> Request minimal representation responses using the **Prefer** header set to `return=minimal`, where supported. For creation operations, use of this header might not be appropriate because your application may expect to get the service generated `id` for the newly created object in the response.
 
 ### Track changes: delta query and webhook notifications
 

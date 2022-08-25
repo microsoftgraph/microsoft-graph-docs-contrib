@@ -7,10 +7,12 @@ ms.prod: "reports"
 doc_type: apiPageType
 ---
 
-# reportRoot: getAttackSimulationRepeatOffenders
+# reportRoot: getAttackSimulationRepeatOffenders (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [attacksim-deprecate-queryurl-reportapi](../includes/attacksim-deprecate-queryurl-reportapi.md)]
 
 List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns.
 
@@ -21,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Reports.Read.All                            |
+| Delegated (work or school account)     | AttackSimulation.Read.All                   |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Reports.Read.All                            |
+| Application                            | AttackSimulation.Read.All                   |
 
 ## HTTP request
 
@@ -114,4 +116,7 @@ Content-Type: application/json
   ]
 }
 ```
+
+## See also
+[securityReportsRoot: getAttackSimulationRepeatOffenders](securityreportsroot-getattacksimulationrepeatoffenders.md)
 

@@ -12,7 +12,7 @@ name := "jobGroup"
 requestBody.SetName(&name) 
 dataType := "String"
 requestBody.SetDataType(&dataType) 
-targetObjects := []String {
+targetObjects := []string {
 	"User",
 
 }

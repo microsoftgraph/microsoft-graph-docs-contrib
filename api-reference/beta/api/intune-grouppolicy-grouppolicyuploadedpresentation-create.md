@@ -82,7 +82,7 @@ Content-Length: 213
 {
   "@odata.type": "#microsoft.graph.groupPolicyUploadedPresentation",
   "label": "Label value",
-  "id": "b9f611e8-11e8-b9f6-e811-f6b9e811f6b9",
+  "id": "6480cc5a-cc5a-6480-5acc-80645acc8064",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```

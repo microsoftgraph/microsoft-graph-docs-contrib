@@ -13,9 +13,10 @@ var call = new Call
 	{
 		Identity = new IdentitySet
 		{
-			AdditionalData = new Dictionary<string, object>()
+			Guest = new Identity
 			{
-				{"guest", "{\"@odata.type\":\"#microsoft.graph.identity\",\"displayName\":\"Guest User\",\"id\":\"d7a3b999-17ac-4bca-9e77-e6a730d2ec2e\"}"}
+				DisplayName = "Guest User",
+				Id = "d7a3b999-17ac-4bca-9e77-e6a730d2ec2e"
 			}
 		}
 	},

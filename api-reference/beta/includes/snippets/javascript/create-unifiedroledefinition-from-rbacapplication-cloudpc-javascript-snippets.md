@@ -25,7 +25,7 @@ const unifiedRoleDefinition = {
     condition: 'null'
 };
 
-await client.api('/roleManagement/cloudPc/roleDefinitions')
+await client.api('/roleManagement/cloudPC/roleDefinitions')
 	.version('beta')
 	.post(unifiedRoleDefinition);
 

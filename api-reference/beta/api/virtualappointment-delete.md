@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported.
 
 > [!NOTE]
->Virtual appointment will transition from online meeting permissions to virtual appointment permissions during the preview period. As we get closer to the transition, we'll provide additional details on the updated permission requirements and timeline.
+> Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will provide more granular control over virtual appointment permissions. When the transition date approaches, we'll provide more details about the updated permission requirements and timeline.
 
 ## HTTP request
 
@@ -34,7 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /onlineMeeting/{onlineMeetingId}/virtualAppointment/$ref
+DELETE /me/onlineMeetings/{onlineMeetingId}/virtualAppointment
+DELETE /users/{userId}/onlineMeetings/{onlineMeetingId}/virtualAppointment
 ```
 
 ## Request headers
@@ -54,14 +55,32 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_virtualappointment"
+  "name": "delete_virtualappointment",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
+DELETE https://graph.microsoft.com/beta/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-virtualappointment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-virtualappointment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-virtualappointment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

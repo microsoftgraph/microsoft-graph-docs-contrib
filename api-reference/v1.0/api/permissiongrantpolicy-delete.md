@@ -55,7 +55,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_permissiongrantpolicy"
+  "name": "delete_permissiongrantpolicy",
+  "sampleKeys": ["my-custom-consent-policy"]
 }-->
 
 ```http

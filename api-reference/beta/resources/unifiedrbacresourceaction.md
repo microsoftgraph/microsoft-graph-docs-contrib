@@ -1,7 +1,7 @@
 ---
 title: "unifiedRbacResourceAction resource type"
 description: "Represents an operation that an authorized principal is allowed to perform."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

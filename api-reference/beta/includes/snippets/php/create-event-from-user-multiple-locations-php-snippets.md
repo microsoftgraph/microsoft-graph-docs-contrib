@@ -33,40 +33,30 @@ $end->setTimeZone('Pacific Standard Time');
 
 
 $requestBody->setEnd($end);
-$attendees1 = new ();
-$additionalData = [
-'emailAddress' => $attendees1 = new ();
-$		attendees1->setAddress('DanaS@contoso.onmicrosoft.com');
+$attendeesAttendee1 = new Attendee();
+$attendeesAttendee1EmailAddress = new EmailAddress();
+$attendeesAttendee1EmailAddress->setAddress('DanaS@contoso.onmicrosoft.com');
 
-$		attendees1->setName('Dana Swope');
-
-
-$attendees1->setEmailAddress($emailAddress);
-
-'type' => 'Required', 
-];
-$attendees1->setAdditionalData($additionalData);
+$attendeesAttendee1EmailAddress->setName('Dana Swope');
 
 
-
-$attendeesArray []= $attendees1;
-$attendees2 = new ();
-$additionalData = [
-'emailAddress' => $attendees2 = new ();
-$		attendees2->setAddress('AlexW@contoso.onmicrosoft.com');
-
-$		attendees2->setName('Alex Wilber');
+$attendeesAttendee1->setEmailAddress($attendeesAttendee1EmailAddress);
+$attendeesAttendee1->setType(new AttendeeType('required'));
 
 
-$attendees2->setEmailAddress($emailAddress);
+$attendeesArray []= $attendeesAttendee1;
+$attendeesAttendee2 = new Attendee();
+$attendeesAttendee2EmailAddress = new EmailAddress();
+$attendeesAttendee2EmailAddress->setAddress('AlexW@contoso.onmicrosoft.com');
 
-'type' => 'Required', 
-];
-$attendees2->setAdditionalData($additionalData);
+$attendeesAttendee2EmailAddress->setName('Alex Wilber');
 
 
+$attendeesAttendee2->setEmailAddress($attendeesAttendee2EmailAddress);
+$attendeesAttendee2->setType(new AttendeeType('required'));
 
-$attendeesArray []= $attendees2;
+
+$attendeesArray []= $attendeesAttendee2;
 $requestBody->setAttendees($attendeesArray);
 
 
@@ -99,9 +89,9 @@ $locationsLocation2Address->setPostalCode('32008');
 
 $locationsLocation2->setAddress($locationsLocation2Address);
 $locationsLocation2Coordinates = new OutlookGeoCoordinates();
-$locationsLocation2Coordinates->setLatitude(latitude);
+$locationsLocation2Coordinates->setLatitude(47.672);
 
-$locationsLocation2Coordinates->setLongitude(longitude);
+$locationsLocation2Coordinates->setLongitude(-102.103);
 
 
 $locationsLocation2->setCoordinates($locationsLocation2Coordinates);

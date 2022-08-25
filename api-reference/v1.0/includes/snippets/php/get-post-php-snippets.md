@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->postsById('post-id')->get();
+$requestResult = $graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->posts()->get();
 
 
 ```

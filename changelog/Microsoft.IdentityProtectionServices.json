@@ -2,6 +2,49 @@
 	"changelog": [
 		{
 		      "ChangeList": [
+			{
+			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+			  "ApiChange": "Enumeration",
+			  "ChangedApiName": "signInFrequencyAuthenticationType",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **signInFrequencyAuthenticationType** enumeration type.",
+			  "Target": "signInFrequencyAuthenticationType"
+			},
+			{
+			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+			  "ApiChange": "Enumeration",
+			  "ChangedApiName": "signInFrequencyInterval",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **signInFrequencyInterval** enumeration type.",
+			  "Target": "signInFrequencyInterval"
+			},
+			{
+			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+			  "ApiChange": "Property",
+			  "ChangedApiName": "authenticationType",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **authenticationType** property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
+			  "Target": "signInFrequencySessionControl"
+			},
+			{
+			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+			  "ApiChange": "Property",
+			  "ChangedApiName": "frequencyInterval",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **frequencyInterval** property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
+			  "Target": "signInFrequencySessionControl"
+			}
+		      ],
+		      "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+		      "Cloud": "Prod",
+		      "Version": "v1.0",
+		      "CreatedDateTime": "2022-08-12T23:51:58.4545889Z",
+		      "WorkloadArea": "Identity and access",
+		      "SubArea": "Identity and sign-in"
+    },
+    {
+			
+			"ChangeList": [
 			      {
 			  		"Id": "72b6ab5a-f674-4872-9c80-bb4dcb54915f",
 			  		"ApiChange": "Member",

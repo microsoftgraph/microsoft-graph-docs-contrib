@@ -2,7 +2,7 @@
 title: "accessReviewInstanceDecisionItem: recordAllDecisions"
 description: "Record the decisions for an accessReviewInstanceDecisionItem object."
 ms.localizationpriority: medium
-author: "zhusijia26"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

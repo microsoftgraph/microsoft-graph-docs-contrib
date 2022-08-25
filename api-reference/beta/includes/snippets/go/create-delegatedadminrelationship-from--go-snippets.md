@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewDelegatedAdminRelationship()
 displayName := "Contoso admin relationship"
 requestBody.SetDisplayName(&displayName) 
-duration := "P730D"
+duration , err := abstractions.ParseISODuration("P730D")
 requestBody.SetDuration(&duration) 
 customer := graphmodels.NewDelegatedAdminRelationshipCustomerParticipant()
 tenantId := "4b827261-d21f-4aa9-b7db-7fa1f56fb163"

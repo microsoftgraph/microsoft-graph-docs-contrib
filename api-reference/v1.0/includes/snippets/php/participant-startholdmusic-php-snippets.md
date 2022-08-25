@@ -14,7 +14,7 @@ $customPrompt = new Prompt();
 $customPrompt->set@odatatype('#microsoft.graph.mediaPrompt');
 
 $additionalData = [
-'mediaInfo' => $customPrompt = new ();
+'mediaInfo' => $customPrompt = new MediaInfo();
 $		customPrompt->set@odatatype('#microsoft.graph.mediaInfo');
 
 $		customPrompt->setUri('https://bot.contoso.com/onHold.wav');
