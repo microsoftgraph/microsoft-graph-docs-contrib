@@ -70,7 +70,9 @@ If successful, this method returns a `204 NoContent` response.
 For applications that use application permissions:
 If successful, this method returns a `200 OK` response.
 
-## Example for updating policyViolation by using application permissions
+## Examples
+
+### Example 1: Update policyViolation using application permissions
 
 #### Request
 
@@ -149,7 +151,7 @@ HTTP/1.1 200 OK
 }-->
 
 
-## Example for updating any property of a message by using delegated permissions
+### Example 2: Update any property of a message using delegated permissions
 
 #### Request
 
@@ -232,7 +234,8 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the mentions of a message by using delegated permissions
+### Example 3: Update the mentions of a message using delegated permissions
+#### Request
 
 The following is an example of the request to update the mentions on a Microsoft Teams channel message by using delegated permissions.
 
@@ -343,7 +346,8 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the content with attachments of a message by using delegated permissions
+### Example 4: Update the content with attachments of a message using delegated permissions
+#### Request
 
 The following is an example of the request to update the attachments on a Microsoft Teams channel message by using delegated permissions.
 
@@ -441,7 +445,8 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the reactions in a message by using delegated permissions
+### Example 5: Update the reactions in a message using delegated permissions
+#### Request
 
 The following is an example of the request to update the reactions property on a Microsoft Teams channel message by using delegated permissions.
 
