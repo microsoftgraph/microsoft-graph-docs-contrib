@@ -1,5 +1,5 @@
 ---
-title: "Get Workflow Template"
+title: "Get workflowTemplate"
 description: "Read the properties and relationships of a workflowTemplate object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 - Global administrator
+- Global reader
 - Lifecycle workflows administrator
 
 ## HTTP request
@@ -42,7 +43,7 @@ GET /identityGovernance/lifecycleWorkflows/workflowTemplates/{workflowTemplateId
 
 ## Optional query parameters
 
-This method supports the `$select`, `$top`, `$count`, `$search`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

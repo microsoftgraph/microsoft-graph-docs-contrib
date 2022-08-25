@@ -1,5 +1,5 @@
 ---
-title: "Delete Custom Task Extension"
+title: "Delete customTaskExtension"
 description: "Deletes a customTaskExtension object."
 author: "AlexFilipin"
 ms.localizationpriority: medium

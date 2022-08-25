@@ -1,6 +1,6 @@
 ---
 title: "workflowBase resource type"
-description: "Methods, properties, and relationships of the workflowBase resource type"
+description: "An abstract type that exposes the properties for configuring a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

@@ -1,6 +1,6 @@
 ---
 title: "taskProcessingResult resource type"
-description: "Methods, properties, and relationships of the taskProcessingResults resource type"
+description: "Reports on the results of processing tasks in a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

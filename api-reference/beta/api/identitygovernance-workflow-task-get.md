@@ -1,6 +1,6 @@
 ---
-title: "Get a task in a Workflow"
-description: "Get a specific task in a workflow."
+title: "Get task (in a lifecycle workflow)"
+description: "Get a specific task in a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 - Global administrator
+- Global reader
 - Lifecycle workflows administrator
 
 ## HTTP request

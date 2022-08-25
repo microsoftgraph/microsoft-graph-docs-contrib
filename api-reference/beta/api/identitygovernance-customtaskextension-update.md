@@ -1,5 +1,5 @@
 ---
-title: "Update Custom Task Extension"
+title: "Update customTaskExtension"
 description: "Update the properties of a customTaskExtension object."
 author: "AlexFilipin"
 ms.localizationpriority: medium

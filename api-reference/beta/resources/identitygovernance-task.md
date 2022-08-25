@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |arguments|[microsoft.graph.keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|Arguments included within the task.|
-|category|String|The category of the task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|category|String|The category of the task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. This property is multi-valued and the same task can apply to both `joiner` and `leaver` categories.|
 |continueOnError|Boolean|A boolean value that determines if the failure of this task stops the subsequent workflows from running.|
 |description|String|A string that describes the purpose of the task for administrative use.|
 |displayName|String|A unique string that identifies the task. <br><br>Supports `$filter`(`eq`) and `orderby`.|
