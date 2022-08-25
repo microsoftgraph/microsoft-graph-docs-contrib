@@ -40,8 +40,9 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
-**Note**: Replace the {JoinWebUrl} the actual value when specifying the resource.
-The JoinWebURL for the meeting is included in the joinWebUrl property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
+
+> [!NOTE]
+> Replace `{JoinWebUrl}` with the actual value when specifying the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
 
 ## Notifications with encrypted resource data
 
