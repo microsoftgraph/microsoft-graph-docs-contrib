@@ -22,7 +22,7 @@ Use the following steps to host the connector as a Windows service:
 
 2. Search for the **Worker service** template, select it, and then choose **Next**.
 
-    ![Screenshot of the Add a new project page](images/connectors-sdk/service2.png)
+    ![Screenshot of the Add a new project page with Worker service selected](images/connectors-sdk/service2.png)
 
 3. Name the project **CustomConnectorWorkerService** and choose **Next**.
 
@@ -42,7 +42,7 @@ Use the following steps to host the connector as a Windows service:
 
 8. Select the **CustomConnector** project and choose **OK**.
 
-    ![Screenshot showing CustomConnector selected](images/connectors-sdk/service7.png)
+    ![Screenshot of the Reference Manager showing CustomConnector selected](images/connectors-sdk/service7.png)
 
 9. Replace the code in the **Worker.cs** file with the following code.
 
@@ -129,7 +129,7 @@ Use the following steps to host the connector as a Windows service:
 
 13. Open services.msc and verify that the service is running.
 
-    ![Screenshot showing the CustomConnector running](images/connectors-sdk/service9.png)
+    ![Screenshot of services.msc showing the CustomConnector running](images/connectors-sdk/service9.png)
 
 For any issues with hosting the connector, see [Troubleshooting errors](/graph/custom-connector-sdk-troubleshooting#troubleshooting-errors-while-hosting-the-connector-as-a-windows-service).
 
