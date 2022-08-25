@@ -287,7 +287,7 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
-## Subscribe to messages in any chat where a specific Teams app is installed (preview)
+## Subscribe to messages of any chat in a tenant where a specific Teams app is installed (preview)
 
 To get change notifications for all messages across chats in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 

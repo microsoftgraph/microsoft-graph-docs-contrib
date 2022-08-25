@@ -75,7 +75,7 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to changes in membership of any chat where a specific Teams app is installed (preview)
+## Subscribe to changes in membership of any chat in a tenant where a Teams app is installed (preview)
 
 To get change notifications for membership changes in any chat across the tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
