@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Use the Microsoft Search API in Microsoft Graph to search people (preview)
 
-Microsoft Graph applications can use the Microsoft Search API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication, collaboration patterns, and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, search also provides fuzzy matching search support.
+Microsoft Graph applications can use the Microsoft Search API to retrieve the people who are most relevant to a user. Relevance is determined by the user's communication, collaboration patterns, and business relationships. People can be local contacts or from an organization's directory, and people from recent communications. Along with generating this insight, search also provides fuzzy matching search support.
 
 ## People APIs
 You can use the following APIs to search for people inside an organization.
@@ -24,53 +24,67 @@ The people API returns the following set of properties.
 
 | Property                 | Type    |
 |:-------------------------|:--------|
-| additionalOfficeLocation | String  | 
-| companyName              | String  | 
-| department               | String  | 
-| displayName              | String  | 
-| emailAddress             | String  | 
-| givenName                | String  | 
-| hitId                    | String  | 
-| imAddress                | String  | 
-| jobTitle                 | String  | 
-| officeLocation           | String  | 
-| personType               | String  | 
-| phones                   | String  | 
-| rank                     | Integer | 
-| summary                  | String  | 
-| surname                  | String  | 
-| userPrincipalName        | String  | 
+| additionalOfficeLocation | String  |
+| companyName              | String  |
+| department               | String  |
+| displayName              | String  |
+| emailAddress             | String  |
+| givenName                | String  |
+| hitId                    | String  |
+| imAddress                | String  |
+| jobTitle                 | String  |
+| officeLocation           | String  |
+| personType               | String  |
+| phones                   | String  |
+| rank                     | Integer |
+| summary                  | String  |
+| surname                  | String  |
+| userPrincipalName        | String  |
 
 ## Person types
 The following table shows people types and subtypes supported in the people API.
 
-|  Supported people, groups and rooms variations                                           | Recipient type details  | Mailbox            | Directory          | People type | People subtype            | Notes
-|---------------------------------------------|-----------------------|--------------------|--------------------|------------|--------------------------|----------------
-| Organization User                           | UserMailbox, MailUser | Y                  | Y                  | Person     | OrganizationUser         | A user that belongs to the organization
-| Organization User without email address     | User                  | Y (Off by default) | Y (Off by default) | Person     | OrganizationUser         | A user that belongs to the organization
-| Organization Contact                        | MailContact,Contact   | N                  | Y                  | Person     | OrganizationContact      | A contact explicitly added to the GAL by the tenant admin, but which is not part of the organization
-| Private contact                             | Contact               | Y                  | N/A                | Person     | PersonalContact          | A contact explicitly created by the user that doesn't belong to the organization. If the user manually adds to its contacts someone part of the organization, it will still be classified as OrganizationUser
-| Private contact without email address       | Contact               | Y (Off by default) | N/A                | Person     | PersonalContact          | A contact explicitly created by the user that doesn't belong to the organization. If the user manually adds to its contacts someone part of the organization, it will still be classified as OrganizationUser
-| Implicit contact from communication history | Contact               | Y                  | N/A                | Person     | ImplicitContact          | A contact inferred from communication history (email and chat) that we don’t have enough information about to determine if it’s a person, group, etc. On business accounts, this will always be an outside org contact, as inside org contacts found in the communication history will always be classified as OrganizationUser. For consumer accounts, anything not a PersonalContact will be classified as ImplicitContact.
-| Implicit contact from chat history          | Contact               | Y                  | N/A                | Person     | ChatImplicitContact      | Same as ImplicitContact, but when the communication history is exclusively from chat
-| Room                                        | Rooms                 | Y                  | Y                  | Other      | Room                     |
-| Guest                                       | GuestUser             | Y                  | Y                  | Other      | Guest                    |
-| Hidden Guest                                | GuestUser             | Y (Off by default) | Y (Off by default) | Other      | Guest                    |
-| Modern Group                                | Group                 | Y                  | Y                  | Group      | UnifiedGroup             | Group known as: Exchange 365 Group, Modern Groups, Microsoft 365 Groups. [Learn about Microsoft 365 Groups](https://support.microsoft.com/en-us/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
-| Teams Group                                 | Group                 | Y                  | Y                  | Group      | UnifiedGroup             | As above but represents internally a Teams "Team"
-| Hidden Teams Group                          | Group                 | Y (Off by default) | Y                  | Group      | UnifiedGroup             | Hidden Teams Group
-| Distribution List                           | Group                 | Y                  | Y                  | Group      | PublicDistributionList   | Classic Exchange Distribution List or mail enabled Security Group
-| PersonalDistributionList                    | Contact               | Y (Off by default) | N/A                | Group      | PersonalDistributionList | A virtual distribution group created by the user as a helper to send emails to multiple contacts in an easy way. Used only for OWA Compose as a UX feature, not returned for other callers
-| Hidden object of any type except Guest and Teams Group  |                       | N                  | N                  |            |                          |
+| Supported people, groups, and rooms variations         | Recipient type details | Mailbox            | Directory          | People type | People subtype           | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|:-------------------------------------------------------|:-----------------------|:-------------------|:-------------------|:------------|:-------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Organization user                                      | UserMailbox, MailUser  | Y                  | Y                  | Person      | OrganizationUser         | A user who belongs to the organization.                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Organization user without email address                | User                   | Y (Off by default) | Y (Off by default) | Person      | OrganizationUser         | A user who belongs to the organization.                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Organization contact                                   | MailContact, Contact   | N                  | Y                  | Person      | OrganizationContact      | A contact explicitly added to the global address list (GAL) by the tenant admin, but which is not part of the organization.                                                                                                                                                                                                                                                                                                                              |
+| Private contact                                        | Contact                | Y                  | N/A                | Person      | PersonalContact          | A contact explicitly created by the user that doesn't belong to the organization. If the user manually adds to its contacts someone part of the organization, it will still be classified as OrganizationUser.                                                                                                                                                                                                                                           |
+| Private contact without email address                  | Contact                | Y (Off by default) | N/A                | Person      | PersonalContact          | A contact explicitly created by the user that doesn't belong to the organization. If the user manually adds to its contacts someone part of the organization, it will still be classified as OrganizationUser.                                                                                                                                                                                                                                           |
+| Implicit contact from communication history            | Contact                | Y                  | N/A                | Person      | ImplicitContact          | A contact inferred from communication history (email and chat) that we don't have enough information about to determine if it is a person, group, etc. On business accounts, this will always be an outside organization contact, as inside organization contacts found in the communication history will always be classified as OrganizationUser. For consumer accounts, anything that is not a PersonalContact will be classified as ImplicitContact. |
+| Implicit contact from chat history                     | Contact                | Y                  | N/A                | Person      | ChatImplicitContact      | Same as ImplicitContact, but when the communication history is exclusively from chat.                                                                                                                                                                                                                                                                                                                                                                    |
+| Room                                                   | Rooms                  | Y                  | Y                  | Other       | Room                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Guest                                                  | GuestUser              | Y                  | Y                  | Other       | Guest                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Hidden guest                                           | GuestUser              | Y (Off by default) | Y (Off by default) | Other       | Guest                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Modern group                                           | Group                  | Y                  | Y                  | Group       | UnifiedGroup             | Group known as: Exchange 365 Group, Modern Groups, Microsoft 365 Groups. For more details about Microsoft 365 Groups, see [Learn about Microsoft 365 Groups](https://support.microsoft.com/en-us/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).                                                                                                                                                                          |
+| Teams group                                            | Group                  | Y                  | Y                  | Group       | UnifiedGroup             | Same as Microsoft 365 Groups, but represents internally a Microsoft Teams "team".                                                                                                                                                                                                                                                                                                                                                                        |
+| Hidden Teams group                                     | Group                  | Y (Off by default) | Y                  | Group       | UnifiedGroup             | Hidden Teams group.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Distribution list                                      | Group                  | Y                  | Y                  | Group       | PublicDistributionList   | Classic Exchange distribution list or mail enabled security group.                                                                                                                                                                                                                                                                                                                                                                                       |
+| Personal distribution list                             | Contact                | Y (Off by default) | N/A                | Group       | PersonalDistributionList | A virtual distribution group created by the user as a helper to send emails to multiple contacts in an easy way. Used only for Outlook on the web compose as a UX feature, not returned for other callers.                                                                                                                                                                                                                                               |
+| Hidden object of any type except Guest and Teams group |                        | N                  | N                  |             |                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 
 ## Request details
-The results of the people API can be specific by giving additional details when making the request. The following are a few ways to make the requests more specific. 
+Make the results of the people API more specific by giving additional details when you make a request. The following are a few ways to make the requests more specific.
+
+### Example 1: Mailbox results only
+```json
+  "Provenances": ["Mailbox"]
+```
+
+### Example 2: Results from both sources
+
+```json
+  "Provenances": ["Mailbox", "Directory"]
+```
 
 ## Source of results
-People results come from two sources, mailbox or directory. By default, the results will come from both sources with conflicts being removed so that we are not showing returning same values, but directory sources are preferred when there are conflicts. 
+People results come from two sources, mailbox or directory. By default, the results will come from both sources with conflicts being removed, which ensures that same values won't be returned.
+
+> **Note**: In case of a conflict, directory sources are preferred.
 
 Mailbox results consist of:
+
 * People who sent you email
 * People who you sent email to
 * People you had meeting with
@@ -78,159 +92,182 @@ Mailbox results consist of:
 * People in your manager's org chart
 * Public contacts of the above people
 
-While directory searches in the global addressing list in active directory. Please note:
-* Not applicable for Consumer users. 
-* People who are not in the callers global addressing list will not be returned
-* People who are hidden by IBP (Information Barrier protocol) will not be returned
+While directory searches in the global addressing list in Azure Active Directory. Please note:
+
+* Not applicable for consumer users
+* People who are not in the caller's global addressing list will not be returned
+* People who are hidden by IBP (information barrier protocol) will not be returned
 * People who are hidden in the address list will not be returned
 
-### Example 1: mailbox results only
-```
-“Provenances”: [“Mailbox”]
-```
+## Get more results 
+By default, 25 results or less will be returned based on the search query matches. You can get more results if you specify the size.
 
-### Example 2: Results from both sources
-
-```
-“Provenances”: [“Mailbox”, “Directory”]
+```json
+  "Size":   
 ```
 
-## Size 
-By default 25 results or less will be returned based on the search query matches. Based on the use case more results can be returned is the size is specified.
+## Specify the minimum index for paging
+Default is `0`. The first result is the most relevant.
 
-## From
-Specify the minimum index for paging, default is 0, the first results is the most relevant.
-
-## Fields: 
-The API returns a set of default properties, but this can be customized to return a specific number of properties that you care about.  
-
-### Example: Specifying fields to return
-```
-"Fields": ["DisplayName", "EmailAddresses", "phones"]  
+```json
+  "From":   
 ```
 
-## Filter
-Results can be filtered down to specific values. Possible filter values: PeopleTypes, PeopleSubTypes
+## Select the fields to return 
+The API returns a set of default properties, but you can customize a request to return a specific number of properties. The following example limits the response to the **DisplayName**, **EmailAddresses**, and **phones** properties.
 
-  Example 1: Filter to only person suggestions. Returns both private and organization contacts.
+```json
+  "Fields": ["DisplayName", "EmailAddresses", "phones"]  
+```
 
-  ```json
-          "Filter": {
-              "And": [{
-                  "Term": {
-                      "PeopleType": "Person"
-                  }
-              }]
-          },
-  ```
+## Use a filter to limit the response
+You can use the **Filter** object to limit the response to specific values. Possible filter values are: **PeopleType**, **PeopleSubType**.
 
-  Example 2: Filter to only person suggestions within the Organization (Business users only)
+The following examples show requests that use the **Filter** object to return people whose record contains the specified criteria.
 
-  ```json
-         "Filter": {
-              "And": [{
-                  "Term": {
-                      "PeopleType": "Person"
-                  }
-              }, {
-                  "Term": {
-                      "PeopleSubtype": "OrganizationUser"
-                  }
-              }]
-          },
-  ```
+### Example 1: Filter to person suggestions
 
-  Example 3: All users, Distribution lists, or Modern Distribution List in the organization
+The following example limits the response to only person suggestions. The response contains both private and organization contacts.
 
+```json
+  "Filter": {
+    "And": [
+      {
+        "Term": {
+          "PeopleType": "Person"
+        }
+      }
+    ]
+  },
+```
+
+### Example 2: Filter to person suggestions within the organization
+
+The following example limits the reponse only to business users.
+
+```json
+  "Filter": {
+    "And": [
+      {
+        "Term": {
+          "PeopleType": "Person"
+        }
+      },
+      {
+        "Term": {
+          "PeopleSubtype": "OrganizationUser"
+        }
+      }
+    ]
+  },
+```
+
+###  Example 3: Filter to all users, distribution lists, or modern distribution list in the organization
+
+The following example limits the response to different categories of **PeopleSubtype**.
+
+```json
+  "Filter": {
+    "Or": [
+      {
+        "Term": {
+          "PeopleSubtype": "OrganizationUser"
+        }
+      },
+      {
+        "Term": {
+          "PeopleSubtype": "PublicDistributionList"
+        }
+      },
+      {
+        "Term": {
+          "PeopleSubtype": "UnifiedGroup"
+        }
+      }
+    ]
+  },
+```      
     
-    json
-        "Filter": {
-            "Or": [{
-                "Term": {
-                    "PeopleSubtype": "OrganizationUser"
-                }
-            }, {
-                "Term": {
-                    "PeopleSubtype": "PublicDistributionList"
-                }
-            }, {
-                "Term": {
-                    "PeopleSubtype": "UnifiedGroup"
-                }
-            }]
-        },
-        
+### Example 4: Filter to organization users and meeting rooms
+
+The following example limits the response to organization users and meeting rooms.
+
+```json
+  "Filter": {
+    "Or": [
+      {
+        "Term": {
+          "PeopleSubtype": "OrganizationUser"
+        }
+      },
+      {
+        "Term": {
+          "PeopleSubtype": "Rooms"
+        }
+      }
+    ]
+  },
+``` 
+
+### Example 5: Filter to organization users and guests
+
+The following example limits the response to organization users and guests.
+
+``` json
+  "Filter": {
+    "Or": [
+      {
+        "Term": {
+          "PeopleSubtype": "OrganizationUser"
+        }
+      },
+      {
+        "Term": {
+          "PeopleSubtype": "Guest"
+        }
+      }
+    ]
+  },
+```
     
+### Example 6: Combine multiple filters
 
-  Example 4: Return organization users and meeting rooms
+The following example combines multiple filters to limit the response to the specified criteria.
 
-    json
-        "Filter": {
-            "Or": [{
-                "Term": {
-                    "PeopleSubtype": "OrganizationUser"
-                }
-            }, {
-                "Term": {
-                    "PeopleSubtype": "Rooms"
-                }
-            }]
-        },
-    
-
-  Example 5: Return organization users and Guests
-
-    
-    json
-        "Filter": {
-            "Or": [{
-                "Term": {
-                    "PeopleSubtype": "OrganizationUser"
-                }
-            }, {
-                "Term": {
-                    "PeopleSubtype": "Guest"
-                }
-            }]
-        },
-    
-  Example 6: Combining multiple filters.
-
-   ```
-   json
-        "Filter": {
-        "And": [
+```json
+    "Filter": {
+    "And": [
+      {
+        "Or": [
           {
-            "Or": [
-              {
-                "Term": {
-                  "PeopleType": "Person"
-                }
-              },
-              {
-                "Term": {
-                  "PeopleType": "Other"
-                }
-              }
-            ]
+            "Term": {
+              "PeopleType": "Person"
+            }
           },
           {
-            "Or": [
-              {
-                "Term": {
-                  "PeopleSubtype": "OrganizationUser"
-                }
-              },
-              {
-                "Term": {
-                  "PeopleSubtype": "Guest"
-                }
-              }
-            ]
+            "Term": {
+              "PeopleType": "Other"
+            }
           }
         ]
       },
-   ```   
+      {
+        "Or": [
+          {
+            "Term": {
+              "PeopleSubtype": "OrganizationUser"
+            }
+          },
+          {
+            "Term": {
+              "PeopleSubtype": "Guest"
+            }
+          }
+        ]
+      }
+    ]
+  },
+```   
    
 ## Full request
 
