@@ -42,9 +42,9 @@ The people API returns the following set of properties.
 | userPrincipalName        | String  | 
 
 ## Person types
-The people API supports several people types and subtypes that users can ask for. For details, see the following table.
+The following table shows people types and subtypes supported in the people API.
 
-|                                             | RecipientTypeDetails  | Mailbox            | Directory          | PeopleType | PeopleSubtype            | Notes
+|  Supported people, groups and rooms variations                                           | Recipient type details  | Mailbox            | Directory          | People type | People subtype            | Notes
 |---------------------------------------------|-----------------------|--------------------|--------------------|------------|--------------------------|----------------
 | Organization User                           | UserMailbox, MailUser | Y                  | Y                  | Person     | OrganizationUser         | A user that belongs to the organization
 | Organization User without email address     | User                  | Y (Off by default) | Y (Off by default) | Person     | OrganizationUser         | A user that belongs to the organization
