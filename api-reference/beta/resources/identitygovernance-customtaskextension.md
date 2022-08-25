@@ -80,10 +80,6 @@ The following is a JSON representation of the resource.
         "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
         "maximumRetries": 1,
         "timeoutInMilliseconds": 1000
-    },
-    "callbackConfiguration": {
-        "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-        "timeoutDuration": "PT5M"
     }
 }
 ```
