@@ -91,9 +91,11 @@ Content-Type: application/json
             "startedDateTime": "2022-08-24T23:28:05.1234966Z",
             "failureReason": null,
             "subject": {
+                "@odata.type": "#microsoft.graph.user",
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
             "task": {
+                "@odata.type": "#microsoft.graph.identitygovernance.task",
                 "category": "joiner,leaver",
                 "continueOnError": false,
                 "description": "Enable user account in the directory",
@@ -113,9 +115,11 @@ Content-Type: application/json
             "startedDateTime": "2022-08-24T23:28:06.3926865Z",
             "failureReason": null,
             "subject": {
+                "@odata.type": "#microsoft.graph.user",
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
             "task": {
+                "@odata.type": "#microsoft.graph.identitygovernance.task",
                 "category": "joiner,leaver",
                 "continueOnError": false,
                 "description": "Add user to selected groups",
