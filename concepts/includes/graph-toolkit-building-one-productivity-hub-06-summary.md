@@ -1,4 +1,4 @@
-You have successfully completed the Build One Productivity Hub app by using Microsoft Graph Toolkit tutorial: you created a web app and consumed Microsoft Graph Toolkit MSAL2 provider and UI components.
+You have successfully built your One Productivity Hub sample app using Microsoft Graph Toolkit. In this tutorial, you created a web app and consumed the Microsoft Graph Toolkit MSAL2 provider and UI components.
 
 If you're looking for ways to enhance your One Productivity Hub app, see the list of [web components](https://docs.microsoft.com/en-us/graph/toolkit/overview#components) that are available in Microsoft Graph Toolkit and include additional components in your app.
 

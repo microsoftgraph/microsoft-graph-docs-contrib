@@ -2,7 +2,7 @@ Microsoft Graph Toolkit is a collection of web components and authentication pro
 
 ## How does the sample work?
 
-This sample creates a web app that consumes the Microsoft Graph Toolkit MSAL2 provider to enable authentication through Azure Active Directory and uses UI components to demonstrate calendar events, to-do tasks, and files that will look and feel like native Microsoft experiences.
+This sample creates a web app that consumes the Microsoft Graph Toolkit MSAL2 provider to enable authentication through Azure Active Directory and uses UI components to render calendar events, to-do tasks, and files that will look and feel like native Microsoft experiences.
 
 ![Screenshot showing the One Productivity Hub sample](../images/mgt-one-productivity-hub/one-productivity-hub-overview.gif)
 
