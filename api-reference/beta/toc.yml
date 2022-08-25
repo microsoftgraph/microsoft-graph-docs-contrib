@@ -414,14 +414,14 @@ items:
             href: api/contactmergesuggestions-get.md
           - name: Update
             href: api/contactmergesuggestions-update.md
-        - name: Organization Contact insights (preview)
+        - name: Org control for contact insights (preview)
           items:
-          - name: Contact insights
-            href: resources/organizationcontactinsights.md
+          - name: Insights settings
+            href: resources/insightssettings.md
           - name: List
             href: api/organizationsettings-list-contactinsights.md
           - name: Update
-            href: api/organizationcontactinsights-update.md
+            href: api/insightssettings-update.md
       - name: Delegated permission grants
         items:
         - name: List delegated permission grants

@@ -214,5 +214,78 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Update settings for contact insights
+#### Request
+
+The following is an example of a request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying contact insights of users in a particular Azure AD group.
+
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_insightssettings_contactinsightsrequest"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/contactInsights
+Content-type: application/json
+
+{
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-insightssettings-peopleinsightsrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-insightssettings-peopleinsightsrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-insightssettings-peopleinsightsrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-insightssettings-peopleinsightsrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-insightssettings-peopleinsightsrequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-insightssettings-peopleinsightsrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+
+### Response
+
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.insightsSettings",
+  "name": "update_insightssettings_contactinsightsrequest"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+}
+```
+
 
  107  api-reference/beta/api/iteminsightssettings-get.md 
