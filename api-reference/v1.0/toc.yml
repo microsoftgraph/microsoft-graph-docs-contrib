@@ -7266,21 +7266,26 @@ items:
       - name: Tags
         href: resources/teamworktag.md 
         items:     
-        - name: List tags
+        - name: List
           href: api/teamworktag-list.md
-        - name: Create tag
+        - name: Create
           href: api/teamworktag-post.md
-        - name: Get tag
+        - name: Get
           href: api/teamworktag-get.md
-        - name: Update tag
+        - name: Update
           href: api/teamworktag-update.md
-        - name: Delete tag
+        - name: Delete
           href: api/teamworktag-delete.md
-        - name: List members
+      - name: Tag members
+        href: resources/teamworktagmember.md
+        items:
+        - name: List
           href: api/teamworktagmember-list.md
-        - name: Get member
+        - name: Create
+          href: api/teamworktagmember-post.md
+        - name: Get
           href: api/teamworktagmember-get.md
-        - name: Delete member
+        - name: Delete
           href: api/teamworktagmember-delete.md
       - name: App
         items:

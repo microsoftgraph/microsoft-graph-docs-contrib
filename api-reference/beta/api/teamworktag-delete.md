@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Delete a [tag](../resources/teamworktag.md) object permanently.
 
->**Note:** You can't recover a tab that was deleted using this API.
+>**Note:** You can't recover a tag that was deleted using this API.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
