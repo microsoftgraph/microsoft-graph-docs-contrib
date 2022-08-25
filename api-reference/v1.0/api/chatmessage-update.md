@@ -134,6 +134,7 @@ Here is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -162,6 +163,7 @@ The following is an example of the request to update the properties on a Microso
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
+
 {
   "messageType": "message",
   "subject": null,
@@ -214,6 +216,7 @@ The following is an example of the request to update the mentions on a Microsoft
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
+
 {
   "messageType": "message",
   "deletedDateTime": null,
@@ -295,6 +298,7 @@ The following is an example of the request to update the attachments on a Micros
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
+
 {
   "messageType": "message",
   "subject": null,
@@ -365,6 +369,7 @@ The following is an example of the request to update the reactions property on a
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
+
 {
   "messageType": "message",
   "subject": null,
