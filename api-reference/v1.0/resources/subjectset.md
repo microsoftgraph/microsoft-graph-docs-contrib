@@ -16,6 +16,7 @@ A shared object that is used in entitlement management access package assignment
 + In role management policies, used in the approval settings that are defined in rules for role management policies.
 
 This is an abstract base type that's inherited by the following derived types:
++ [attributeRuleMembers](attributeRuleMembers.md)
 + [singleUser](singleuser.md)
 + [singleServicePrincipal](singleserviceprincipal.md)
 + [groupMembers](groupmembers.md)

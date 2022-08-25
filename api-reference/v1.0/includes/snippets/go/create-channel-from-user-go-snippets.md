@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewChannel()
-"@odata.type" := "#Microsoft.Graph.channel"
-requestBody.Set"@odata.type"(&"@odata.type") 
 membershipType := graphmodels.PRIVATE_CHANNELMEMBERSHIPTYPE 
 requestBody.SetMembershipType(&membershipType) 
 displayName := "My First Private Channel"
@@ -19,8 +17,6 @@ requestBody.SetDescription(&description)
 
 
 conversationMember := graphmodels.NewConversationMember()
-"@odata.type" := "#microsoft.graph.aadUserConversationMember"
-conversationMember.Set"@odata.type"(&"@odata.type") 
 roles := []string {
 	"owner",
 

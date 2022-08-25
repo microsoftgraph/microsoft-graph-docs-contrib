@@ -11,8 +11,6 @@ requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := false
 requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
 resource := graphmodels.NewEducationResource()
-"@odata.type" := "microsoft.graph.educationExcelResource"
-resource.Set"@odata.type"(&"@odata.type") 
 displayName := "Graph Doc pages.xlsx"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{

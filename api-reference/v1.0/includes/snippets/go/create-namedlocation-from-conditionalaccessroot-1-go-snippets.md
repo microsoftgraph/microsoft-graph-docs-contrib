@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewNamedLocation()
-"@odata.type" := "#microsoft.graph.ipNamedLocation"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "Untrusted IP named location"
 requestBody.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
@@ -18,13 +16,9 @@ requestBody.SetIsTrusted(&isTrusted)
 
 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.iPv4CidrRange"
-.Set"@odata.type"(&"@odata.type") 
 cidrAddress := "12.34.221.11/22"
 .SetCidrAddress(&cidrAddress) 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.iPv6CidrRange"
-.Set"@odata.type"(&"@odata.type") 
 cidrAddress := "2001:0:9d38:90d6:0:0:0:0/63"
 .SetCidrAddress(&cidrAddress) 
 

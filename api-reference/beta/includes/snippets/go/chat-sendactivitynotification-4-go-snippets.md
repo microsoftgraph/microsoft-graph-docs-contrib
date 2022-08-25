@@ -21,8 +21,6 @@ content := "New Task Created"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
 recipient := graphmodels.NewTeamworkNotificationRecipient()
-"@odata.type" := "microsoft.graph.chatMembersNotificationRecipient"
-recipient.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"chatId" : "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2", 
 }
