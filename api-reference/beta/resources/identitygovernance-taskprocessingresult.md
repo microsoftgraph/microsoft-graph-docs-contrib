@@ -21,9 +21,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List taskProcessingResults](../api/identitygovernance-userprocessingresult-list-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|Get a list of the [taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) objects and their properties.|
-|[Get taskProcessingResult](../api/identitygovernance-taskprocessingresult-get.md)|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md)|Read the properties and relationships of a [taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) object.|
-|[resume](../api/identitygovernance-taskprocessingresult-resume.md)|None|Resume the **taskProcessingResult**.|
+|[resume](../api/identitygovernance-taskprocessingresult-resume.md)|None|Resumes the **taskProcessingResult** as part of the Azure Logic App integration.|
 
 ## Properties
 
@@ -56,12 +54,26 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.taskProcessingResult",
-  "id": "String (identifier)",
-  "completedDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)",
-  "failureReason": "String",
-  "processingStatus": "String",
-  "startedDateTime": "String (timestamp)"
+    "@odata.type": "#microsoft.graph.identityGovernance.taskProcessingResult",
+    "completedDateTime": "2022-08-24T23:28:05.3529197Z",
+    "createdDateTime": "2022-08-24T23:28:04.5490995Z",
+    "id": "05a96d7a-0e00-459c-b6c8-1870099e8275",
+    "processingStatus": "completed",
+    "startedDateTime": "2022-08-24T23:28:05.1234966Z",
+    "failureReason": null,
+    "subject": {
+        "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
+    },
+    "task": {
+        "category": "joiner,leaver",
+        "continueOnError": false,
+        "description": "Enable user account in the directory",
+        "displayName": "Enable User Account",
+        "executionSequence": 1,
+        "id": "917e9eab-415d-4e45-b39d-87eb5e30de38",
+        "isEnabled": true,
+        "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+        "arguments": []
+    }
 }
 ```

@@ -1,19 +1,19 @@
 ---
-title: "Update Lifecycle Management Settings"
-description: "Update the properties of a lifecycleManagementSettings object."
+title: "Delete workflow"
+description: "Permanently Deletes a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Update lifecycleManagementSettings
+# Permanently Delete a workflow
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md) object.
+Deletes a [workflow](../resources/identitygovernance-workflow.md) object.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /identityGovernance/lifecycleWorkflows/settings
+DELETE /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/
 ```
 
 ## Request headers
@@ -40,19 +40,14 @@ PATCH /identityGovernance/lifecycleWorkflows/settings
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
-
-|Property|Type|Description|
-|:---|:---|:---|
-|workflowScheduleIntervalInHours|Int32|The workflow schedule interval. Required.|
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -61,18 +56,11 @@ If successful, this action returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_lifecyclemanagementsettings"
+  "name": "delete_workflow"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/settings
-Content-Type: application/json
-Content-length: 137
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity",
-    "workflowScheduleIntervalInHours": 3
-}
+DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}
 ```
 
 ### Response
@@ -81,8 +69,7 @@ The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.identityGovernance.lifecycleManagementSettings"
+  "truncated": true
 }
 -->
 ``` http

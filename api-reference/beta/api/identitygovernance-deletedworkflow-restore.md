@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/restore
+POST /identityGovernance/deletedItems/lifecycleWorkflows/workflows/{workflowId}/restore
 ```
 
 ## Request headers
@@ -60,12 +60,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}/restore
+POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/4c9c57b9-e1e9-4bed-a936-4fad9d8f5638/restore
 ```
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -77,22 +77,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#workflow",
     "@odata.type": "#microsoft.graph.identityGovernance.workflow",
-    "category": "String",
-    "createdDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "executionConditions": {
-      "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
+    "category": "joiner",
+    "description": "Configure new hire tasks for onboarding employees on their first day",
+    "displayName": "Australia Onboard new hire employee",
+    "lastModifiedDateTime": "2022-08-24T18:51:29.4301671Z",
+    "createdDateTime": "2022-08-24T18:30:33.1050022Z",
+    "deletedDateTime": null,
+    "id": "4c9c57b9-e1e9-4bed-a936-4fad9d8f5638",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
+    "nextScheduleRunDateTime": null,
+    "version": 1,
+    "executionConditions": null,
+    "lastModifiedBy": {
+        "id": "537b3620-fab7-435e-81bb-03fee751b789"
     },
-    "lastModifiedDateTime": "String (timestamp)",
-    "deletedDateTime": "String (timestamp)",
-    "id": "String (identifier)",
-    "isEnabled": "Boolean",
-    "isSchedulingEnabled": "Boolean",
-    "nextScheduleRunDateTime": "String (timestamp)",
-    "version": "Integer"
-  }
+    "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows('4c9c57b9-e1e9-4bed-a936-4fad9d8f5638')('4c9c57b9-e1e9-4bed-a936-4fad9d8f5638')/tasks",
+    "tasks": [],
+    "createdBy": {
+        "id": "537b3620-fab7-435e-81bb-03fee751b789"
+    }
 }
 ```

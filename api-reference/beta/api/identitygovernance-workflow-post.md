@@ -57,7 +57,7 @@ You can specify the following properties when creating a **workflow**.
 |id|String|Identifier used for individually addressing a specific workflow.|
 |isEnabled|Boolean|A boolean value that denotes whether the workflow is set to run or not.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
-|nextScheduleRunDateTime|DateTimeOffset|The next scheduled run date and time for a workflow. |
+|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|Defines the tasks a workflow will execute. |
 
 ## Response
 
@@ -79,18 +79,41 @@ Content-Type: application/json
 Content-length: 454
 
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.workflow",
-  "category": "String",
-  "description": "String",
-  "displayName": "String",
-  "executionConditions": {
-    "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
-  },
-  "deletedDateTime": "String (timestamp)",
-  "isEnabled": "Boolean",
-  "isSchedulingEnabled": "Boolean",
-  "nextScheduleRunDateTime": "String (timestamp)",
-  "version": "Integer"
+    "category": "joiner",
+    "description": "Configure new hire tasks for onboarding employees on their first day",
+    "displayName": "Australia Onboard new hire employee",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(country eq 'Australia')"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeHireDate",
+            "offsetInDays": 0
+        }
+    },
+    "tasks": [
+        {
+            "continueOnError": false,
+            "description": "Enable user account in the directory",
+            "displayName": "Enable User Account",
+            "isEnabled": true,
+            "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+            "arguments": []
+        },
+        {
+            "continueOnError": false,
+            "description": "Send welcome email to new hire",
+            "displayName": "Send Welcome Email",
+            "isEnabled": true,
+            "taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+            "arguments": []
+        }
+    ]
 }
 ```
 
@@ -109,20 +132,29 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.workflow",
-  "category": "String",
-  "createdDateTime": "String (timestamp)",
-  "description": "String",
-  "displayName": "String",
-  "executionConditions": {
-    "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "deletedDateTime": "String (timestamp)",
-  "id": "9469a17e-3460-4f83-56bb-f67410655e7b",
-  "isEnabled": "Boolean",
-  "isSchedulingEnabled": "Boolean",
-  "nextScheduleRunDateTime": "String (timestamp)",
-  "version": "Integer"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+    "category": "joiner",
+    "description": "Configure new hire tasks for onboarding employees on their first day",
+    "displayName": "Australia Onboard new hire employee",
+    "lastModifiedDateTime": "2022-08-24T18:30:33.1050141Z",
+    "createdDateTime": "2022-08-24T18:30:33.1050022Z",
+    "deletedDateTime": null,
+    "id": "4c9c57b9-e1e9-4bed-a936-4fad9d8f5638",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
+    "nextScheduleRunDateTime": null,
+    "version": 1,
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(country eq 'Australia')"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeHireDate",
+            "offsetInDays": 0
+        }
+    }
 }
 ```

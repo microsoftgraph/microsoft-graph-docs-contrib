@@ -1,5 +1,5 @@
 ---
-title: "Resume  Task Processing Result"
+title: "Resume Task Processing Result"
 description: "Task processing result resume description"
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resumes the tas processing result.
+This resumes the task processing result.
 
 ## Permissions
 
@@ -21,9 +21,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|LifecycleWorkflows.ReadWrite.All|
+|Delegated (work or school account)|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|LifecycleWorkflows.Resume.All, LifecycleWorkflows.ReadWrite.All|
+|Application|Not Supported.|
+
+> [!IMPORTANT]
+> The resource specified in the [custom task extension authentication Configuration](../resources/identitygovernance-customtaskextension.md), the Azure Logic Apps system-assigned managed identity, is authorized to resume the task processing result without further permissions.
 
 ## HTTP request
 
@@ -32,8 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/runs/{runId}/userProcessingResults/{userProcessingResultId}/taskProcessingResults/{taskProcessingResultId}/resume
-POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/runs/{runId}/userProcessingResults/{userProcessingResultId}/taskProcessingResults/{taskProcessingResultId}/task/taskProcessingResults/{taskProcessingResultId}/resume
+POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/tasks/{taskId}/taskProcessingResults/{taskProcessingResultsId}/resume
 ```
 
 ## Request headers
@@ -70,23 +72,22 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}/runs/{runId}/userProcessingResults/{userProcessingResultId}/taskProcessingResults/{taskProcessingResultId}/resume
+POST https://graph.microsoft.com/beta//identityGovernance/lifecycleWorkflows/workflows/4f36da05-5df8-457d-adb3-b132e7b59571/tasks/e07dcdb2-0a77-4ee3-8645-3801fbe1cf9f/taskProcessingResults/6e1ec336-8d06-4386-a377-79dbab1a2eb6/resume
 Content-Type: application/json
 Content-length: 155
 
 {
-  "source": "String",
-  "type": "String",
   "data": {
-    "@odata.type": "microsoft.graph.identityGovernance.customTaskExtensionCallbackData"
-  }
+    "operationStatus": "Completed"
+  },
+  "source": "sample",
+  "type": "lifecycleEvent"
 }
 ```
 
 ### Response
 
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

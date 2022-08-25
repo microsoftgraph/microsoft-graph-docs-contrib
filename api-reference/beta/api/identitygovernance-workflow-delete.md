@@ -33,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/
-DELETE /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/
 ```
 
 ## Request headers
@@ -61,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}
+DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/4c9c57b9-e1e9-4bed-a936-4fad9d8f5638
 ```
 
 ### Response

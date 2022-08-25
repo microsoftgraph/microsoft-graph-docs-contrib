@@ -64,13 +64,13 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}/versions/{workflowVersionId}
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/versions/3
 ```
 
 ### Response
 
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,17 +82,71 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.identityGovernance.workflowVersion",
-    "category": "String",
-    "createdDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/versions/$entity",
+    "category": "joiner",
+    "description": "Configure new hire tasks for onboarding employees on their first day",
+    "displayName": "Global onboard new hire employee",
+    "lastModifiedDateTime": "2022-08-24T19:33:03.8664941Z",
+    "versionNumber": 3,
+    "createdDateTime": "2022-08-24T19:31:33.5534766Z",
     "executionConditions": {
-      "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(department eq 'Marketing')"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeHireDate",
+            "offsetInDays": 0
+        }
     },
-    "lastModifiedDateTime": "String (timestamp)",
-    "versionNumber": "Integer"
-  }
+    "lastModifiedBy": {
+        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+    },
+    "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/versions(3)/tasks",
+    "tasks": [
+        {
+            "category": "joiner,leaver",
+            "continueOnError": false,
+            "description": "Enable user account in the directory",
+            "displayName": "Enable User Account",
+            "executionSequence": 1,
+            "id": "fafa2189-cd62-4643-a825-06cab8817086",
+            "isEnabled": true,
+            "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+            "arguments": []
+        },
+        {
+            "category": "joiner",
+            "continueOnError": false,
+            "description": "Send welcome email to new hire",
+            "displayName": "Send Welcome Email",
+            "executionSequence": 2,
+            "id": "5d7cb666-4f02-40c1-b300-dffb79b60e45",
+            "isEnabled": true,
+            "taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+            "arguments": []
+        },
+        {
+            "category": "joiner,leaver",
+            "continueOnError": false,
+            "description": "Add user to selected groups",
+            "displayName": "Add user to groups",
+            "executionSequence": 3,
+            "id": "96e30311-566d-4959-ab79-3a2685c2a4b2",
+            "isEnabled": true,
+            "taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
+            "arguments": [
+                {
+                    "name": "groupID",
+                    "value": "e5659cb0-bcbb-4a9f-9092-90f72bd19028"
+                }
+            ]
+        }
+    ],
+    "createdBy": {
+        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+    }
 }
 ```

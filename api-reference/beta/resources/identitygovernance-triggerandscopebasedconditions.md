@@ -40,10 +40,13 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
   "scope": {
-    "@odata.type": "microsoft.graph.subjectSet"
-  },
-  "trigger": {
-    "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionTrigger"
-  }
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(department eq 'Marketing')"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeHireDate",
+            "offsetInDays": 0
+        }
 }
 ```

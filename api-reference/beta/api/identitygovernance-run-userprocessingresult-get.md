@@ -1,19 +1,19 @@
 ---
-title: "List Task Reports"
-description: "Get a list of the taskReport objects and their properties."
+title: "Get User processing Result"
+description: "Get User processing Result of a run object"
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List Task Reports
+# Get User processing Result
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [taskReport](../resources/identitygovernance-taskreport.md) objects and their properties.
+Get User processing Result of a [run](../resources/identitygovernance-run.md) object.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/taskReports
+GET /identityGovernance/lifecycleWorkflows/workflows/{{workflow_id}}/runs/{runId}/userProcessingResults/{userProcessingResultId}
 ```
 
 ## Optional query parameters
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [taskReport](../resources/identitygovernance-taskreport.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [userProcessingResult](../resources/identitygovernance-userprocessingresult.md) object in the response body.
 
 ## Examples
 
@@ -60,11 +60,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_taskreport"
+  "name": "get_run"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}/taskReports
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/runs/dad77a47-6eda-4de7-bc37-fe8eb5aaf17d/userProcessingResults/78b83505-6967-4168-a7ea-4921c0543ce9
 ```
 
 ### Response
@@ -74,7 +74,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.identityGovernance.taskReport)"
+  "@odata.type": "microsoft.graph.identityGovernance.run"
 }
 -->
 ``` http
@@ -82,20 +82,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.identityGovernance.taskReport",
-      "id": "b48de895-9e13-28a3-663c-70068a6262a9",
-      "runId": "String",
-      "processingStatus": "String",
-      "successfulUsersCount": "Integer",
-      "failedUsersCount": "Integer",
-      "unprocessedUsersCount": "Integer",
-      "totalUsersCount": "Integer",
-      "startedDateTime": "String (timestamp)",
-      "completedDateTime": "String (timestamp)",
-      "lastUpdatedDateTime": "String (timestamp)"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/runs('dad77a47-6eda-4de7-bc37-fe8eb5aaf17d')/userProcessingResults/$entity",
+    "id": "78b83505-6967-4168-a7ea-4921c0543ce9",
+    "completedDateTime": "2022-08-24T23:28:11.1348863Z",
+    "failedTasksCount": 0,
+    "processingStatus": "completed",
+    "scheduledDateTime": "2022-08-24T23:28:01.6476554Z",
+    "startedDateTime": "2022-08-24T23:28:04.490313Z",
+    "totalTasksCount": 2,
+    "totalUnprocessedTasksCount": 0,
+    "workflowExecutionType": "onDemand",
+    "workflowVersion": 1,
+    "subject": {
+        "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
     }
-  ]
 }
 ```

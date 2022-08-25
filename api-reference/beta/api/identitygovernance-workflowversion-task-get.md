@@ -1,19 +1,19 @@
 ---
-title: "Get Task Definition"
-description: "Read the properties and relationships of a taskDefinition object."
+title: "Get a task from workflow version"
+description: "Get a task from workflow version."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get Task Definition
+# Get a Task from a workflow version
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.
+Get a [task](../resources/identitygovernance-task.md) object from a [workflowVersion](../resources/identitygovernance-workflowversion.md).
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/taskDefinitions/{taskDefinitionId}
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/versions/{version number}/tasks/{task id}
 ```
 
 ## Optional query parameters
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [taskDefinition](../resources/identitygovernance-taskdefinition.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [task](../resources/identitygovernance-task.md) object in the response body.
 
 ## Examples
 
@@ -60,21 +60,21 @@ If successful, this method returns a `200 OK` response code and a [taskDefinitio
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_taskdefinition"
+  "name": "list_workflowversion"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions/1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/versions/2/tasks/4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee
 ```
 
 ### Response
 
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.identityGovernance.taskDefinition"
+  "@odata.type": "Collection(microsoft.graph.identityGovernance.workflowVersion)"
 }
 -->
 ``` http
@@ -82,12 +82,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/versions(2)/tasks/$entity",
     "category": "joiner,leaver",
-    "description": "Disable user account in the directory",
-    "displayName": "Disable User Account",
-    "id": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950",
-    "version": 1,
-    "parameters": []
+    "continueOnError": false,
+    "description": "Enable user account in the directory",
+    "displayName": "Enable User Account",
+    "executionSequence": 1,
+    "id": "4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee",
+    "isEnabled": true,
+    "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+    "arguments": []
 }
 ```

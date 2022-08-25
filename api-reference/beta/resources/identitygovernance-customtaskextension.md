@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type that is the extension used to call out to Logic Apps for custom workflow tasks using Lifecycle Workflows.
+A resource type with information for integration with Azure Logic Apps.
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
@@ -21,11 +21,11 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List customTaskExtensions](../api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) collection|Get a list of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) objects and their properties.|
-|[Create customTaskExtension](../api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md)|Create a new [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
+|[List customTaskExtensions](../api/identitygovernance-customtaskextension-list.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) collection|Get a list of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) objects and their properties.|
+|[Create customTaskExtension](../api/identitygovernance-customtaskextension-post.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md)|Create a new [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
 |[Get customTaskExtension](../api/identitygovernance-customtaskextension-get.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md)|Read the properties and relationships of a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
 |[Update customTaskExtension](../api/identitygovernance-customtaskextension-update.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md)|Update the properties of a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
-|[Delete customTaskExtension](../api/identitygovernance-lifecycleworkflowscontainer-delete-customtaskextensions.md)|None|Deletes a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
+|[Delete customTaskExtension](../api/identitygovernance-customtaskextension-delete.md)|None|Deletes a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
 
 ## Properties
 
@@ -33,6 +33,7 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |:---|:---|:---|
 |authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |clientConfiguration|[microsoft.graph.customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define how long Azure AD can wait for a connection to a logic app, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|callbackConfiguration|[microsoft.graph.customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
 |createdDateTime|DateTimeOffset|Custom Task Extension created date and time|
 |description|String|A string that describes the purpose of the custom task extension for administrative use. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |displayName|String|A unique string that identifies the custom task extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
@@ -60,23 +61,35 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtension",
-  "id": "String (identifier)",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
-  },
-  "clientConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
-  },
-  "description": "String",
-  "displayName": "String",
-  "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
-  },
-  "callbackConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
-  },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions/$entity",
+    "id": "ffcc4c85-5a14-448e-a390-77abf2700369",
+    "displayName": "Grant manager access to mailbox and OneDrive",
+    "description": "Grant manager access to mailbox and OneDrive",
+    "createdDateTime": "2022-08-24T20:36:14.7006029Z",
+    "lastModifiedDateTime": "2022-08-24T20:42:07.9885265Z",
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+        "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
+        "resourceGroupName": "RG-LCM",
+        "logicAppWorkflowName": "ManagerAccess"
+    },
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
+    },
+    "clientConfiguration": {
+        "maximumRetries": 1,
+        "timeoutInMilliseconds": 1000
+    },
+    "callbackConfiguration": {
+        "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
+        "timeoutDuration": "PT5M"
+    },
+    "createdBy": {
+        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+    },
+    "lastModifiedBy": {
+        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+    }
 }
 ```

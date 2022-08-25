@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-  "offsetInDays": "Integer",
-  "timeBasedAttribute": "String"
+  "timeBasedAttribute": "employeeHireDate",
+  "offsetInDays": 0
 }
 ```

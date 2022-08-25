@@ -13,9 +13,8 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type noting the lifecycle management settings for a workflow created with Lifecycle Workflows.
+A resource type noting the lifecycle management settings.
 
-Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
@@ -28,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier used for individually addressing Lifecycle Management settings. Inherited from [entity](../resources/entity.md).|
+|id|String|Identifier used for individually addressing Lifecycle Management settings.|
 |workflowScheduleIntervalInHours|Int32|The interval in hours at which the all `workflows` should be scheduled for execution. This interval has a minimum value of 1 and a maximum value of 24.|
 
 ## Relationships
@@ -48,8 +47,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.lifecycleManagementSettings",
-  "id": "String (identifier)",
-  "workflowScheduleIntervalInHours": "Integer"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity",
+    "workflowScheduleIntervalInHours": 1
 }
 ```

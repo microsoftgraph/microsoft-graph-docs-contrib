@@ -1,19 +1,19 @@
 ---
-title: "List Task Processing Results"
-description: "Get the taskProcessingResult resources from the taskProcessingResults navigation property."
+title: "Get Task Report Summary"
+description: "Get a summary of a taskReport object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List Task Processing Results
+# Get Task Report Summary
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the taskProcessingResult resources from the taskProcessingResults navigation property.
+Get a [taskReportSummary](../resources/identitygovernance-taskreportsummary.md) object.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/taskReports/{taskReportId}/taskProcessingResults
+GET /identityGovernance/lifecycleWorkflows/workflows/{{workflow_id}}/taskReports/summary(startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ## Optional query parameters
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [taskReportSummary](../resources/identitygovernance-taskreportsummary.md) object in the response body.
 
 ## Examples
 
@@ -60,21 +60,20 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_taskprocessingresult"
+  "name": "get_taskreport"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}/taskReports/{taskReportId}/taskProcessingResults
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/taskReports/summary(startDateTime=2022-08-19T00:00:00.000Z,endDateTime=2022-08-25T00:33:31.533Z)
 ```
 
 ### Response
 
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.identityGovernance.taskProcessingResult)"
+  "@odata.type": "microsoft.graph.identityGovernance.taskReport"
 }
 -->
 ``` http
@@ -82,16 +81,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.identityGovernance.taskProcessingResult",
-      "id": "9d903f8d-4f30-482f-9927-15f6dc48891d",
-      "completedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)",
-      "failureReason": "String",
-      "processingStatus": "String",
-      "startedDateTime": "String (timestamp)"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.taskReportSummary",
+    "successfulTasks": 8,
+    "failedTasks": 0,
+    "unprocessedTasks": 0,
+    "totalTasks": 8
 }
 ```

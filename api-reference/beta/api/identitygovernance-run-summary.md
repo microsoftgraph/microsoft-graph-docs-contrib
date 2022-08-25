@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /workflow/runs/summary
+GET /identityGovernance/lifecycleWorkflows/workflows/{{workflow_id}}/runs/summary(startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ## Function parameters
@@ -70,7 +70,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/workflow/runs/summary(startDateTime=String{timestamp},endDateTime=String{timestamp})
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/runs/summary(startDateTime=2022-08-01T00:00:00Z,endDateTime=2022-08-31T00:00:00Z)
 ```
 
 ### Response
@@ -88,8 +88,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.identityGovernance.runSummary"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.runSummary",
+    "failedRuns": 0,
+    "failedTasks": 0,
+    "successfulRuns": 1,
+    "totalRuns": 2,
+    "totalTasks": 4,
+    "totalUsers": 2
 }
 ```

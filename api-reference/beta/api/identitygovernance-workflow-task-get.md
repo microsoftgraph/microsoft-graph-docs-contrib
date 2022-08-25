@@ -1,19 +1,19 @@
 ---
-title: "List Workflow Templates"
-description: "Get a list of the workflowTemplate objects and their properties."
+title: "Get a task in a Workflow"
+description: "Get a specific task in a workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List Workflow Templates
+# Get tasks
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) objects and their properties.
+Get the task resource in a workflow from the tasks navigation property.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflowTemplates
+GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks/{taskId}
 ```
 
 ## Optional query parameters
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [task](../resources/identitygovernance-task.md) object in the response body.
 
 ## Examples
 
@@ -60,11 +60,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_workflowtemplate"
+  "name": "list_task"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflowTemplates
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflow/156ce798-1eb6-4e0a-8515-e79f54d04390/tasks/fafa2189-cd62-4643-a825-06cab8817086
 ```
 
 ### Response
@@ -74,7 +74,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.identityGovernance.workflowTemplate)"
+  "@odata.type": "microsoft.graph.identityGovernance.task"
 }
 -->
 ``` http
@@ -82,17 +82,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.identityGovernance.workflowTemplate",
-      "id": "6f0690a3-e6a0-434c-468a-e67b8317f476",
-      "category": "String",
-      "description": "String",
-      "displayName": "String",
-      "executionConditions": {
-        "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/tasks/$entity",
+    "category": "joiner,leaver",
+    "continueOnError": false,
+    "description": "Enable user account in the directory",
+    "displayName": "Enable User Account",
+    "executionSequence": 1,
+    "id": "fafa2189-cd62-4643-a825-06cab8817086",
+    "isEnabled": true,
+    "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+    "arguments": []
 }
 ```

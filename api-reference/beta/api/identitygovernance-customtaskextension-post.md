@@ -1,19 +1,19 @@
 ---
-title: "Update Custom Task Extension"
-description: "Update the properties of a customTaskExtension object."
+title: "Create Custom Task Extension"
+description: "Create a new customTaskExtension object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Update Custom Task Extension
+# Create Custom Task Extension
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.
+Create a new [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.
 
 ## Permissions
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|LifecycleWorkflows.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
 > [!IMPORTANT]
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskExtensionId}
+POST /identityGovernance/lifecycleWorkflows/customTaskExtensions
 ```
 
 ## Request headers
@@ -47,7 +47,9 @@ PATCH /identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskExt
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.
+
+You can specify the following properties when creating a **customTaskExtension**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -60,7 +62,7 @@ PATCH /identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskExt
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `201 Created` response code and a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object in the response body.
 
 ## Examples
 
@@ -69,21 +71,17 @@ If successful, this action returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_customtaskextension"
+  "name": "create_customtaskextension_from_"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/customTaskExtensions/ffcc4c85-5a14-448e-a390-77abf2700369
+POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/customTaskExtensions
 Content-Type: application/json
 Content-length: 588
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions/$entity",
-    "id": "ffcc4c85-5a14-448e-a390-77abf2700369",
     "displayName": "Grant manager access to mailbox and OneDrive",
     "description": "Grant manager access to mailbox and OneDrive",
-    "createdDateTime": "2022-08-24T20:36:14.7006029Z",
-    "lastModifiedDateTime": "2022-08-24T20:36:14.7006083Z",
     "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
         "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
@@ -100,13 +98,7 @@ Content-length: 588
     },
     "callbackConfiguration": {
         "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-        "timeoutDuration": "PT10M"
-    },
-    "createdBy": {
-        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
-    },
-    "lastModifiedBy": {
-        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+        "timeoutDuration": "PT5M"
     }
 }
 ```
@@ -122,5 +114,33 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions/$entity",
+    "id": "ee2590e4-4572-4820-a397-969ecd7bd6a9",
+    "displayName": "Grant manager access to mailbox and OneDrive",
+    "description": "Grant manager access to mailbox and OneDrive",
+    "createdDateTime": "2022-08-24T22:37:46.1790566Z",
+    "lastModifiedDateTime": "2022-08-24T22:37:46.179062Z",
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+        "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
+        "resourceGroupName": "RG-LCM",
+        "logicAppWorkflowName": "ManagerAccess"
+    },
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
+    },
+    "clientConfiguration": {
+        "maximumRetries": 1,
+        "timeoutInMilliseconds": 1000
+    },
+    "callbackConfiguration": {
+        "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
+        "timeoutDuration": "PT5M"
+    }
+}
 ```

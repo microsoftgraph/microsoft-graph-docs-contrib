@@ -64,13 +64,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskExtensionId}
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/customTaskExtensions/ffcc4c85-5a14-448e-a390-77abf2700369
 ```
 
 ### Response
 
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,25 +81,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtension",
-    "id": "34a8fa7f-bdde-7eeb-56de-7851d623f5e2",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions/$entity",
+    "id": "ffcc4c85-5a14-448e-a390-77abf2700369",
+    "displayName": "Grant manager access to mailbox and OneDrive",
+    "description": "Grant manager access to mailbox and OneDrive",
+    "createdDateTime": "2022-08-24T20:36:14.7006029Z",
+    "lastModifiedDateTime": "2022-08-24T20:42:07.9885265Z",
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+        "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
+        "resourceGroupName": "RG-LCM",
+        "logicAppWorkflowName": "ManagerAccess"
+    },
     "authenticationConfiguration": {
-      "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
     },
     "clientConfiguration": {
-      "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
-    },
-    "description": "String",
-    "displayName": "String",
-    "endpointConfiguration": {
-      "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
+        "maximumRetries": 1,
+        "timeoutInMilliseconds": 1000
     },
     "callbackConfiguration": {
-      "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
+        "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
+        "timeoutDuration": "PT5M"
     },
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)"
-  }
+    "createdBy": {
+        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+    },
+    "lastModifiedBy": {
+        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+    }
 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: "User Processing Results Summary"
-description: "userprocessingresult summary api "
+description: "Get a user processing summary API "
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /workflow/userProcessingResults/summary
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/userProcessingResults/summary(startDateTime={TimeStamp},endDateTime={TimeStamp})
 ```
 
 ## Function parameters
@@ -70,13 +70,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/workflow/userProcessingResults/summary(startDateTime=String{timestamp},endDateTime=String{timestamp})
+GET https://graph.microsoft.com/beta/IdentityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/userProcessingResults/summary(startDateTime=2022-07-20T00:00:00Z,endDateTime=2022-07-23T00:00:00Z)
 ```
 
 ### Response
 
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,8 +87,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.identityGovernance.usersProcessingSummary"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.userSummary",
+    "failedTasks": 0,
+    "failedUsers": 0,
+    "successfulUsers": 2,
+    "totalTasks": 4,
+    "totalUsers": 2
 }
 ```

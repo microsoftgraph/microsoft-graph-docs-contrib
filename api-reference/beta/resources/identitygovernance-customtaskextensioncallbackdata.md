@@ -38,6 +38,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackData",
-  "operationStatus": "String"
+  "operationStatus": "completed"
 }
 ```

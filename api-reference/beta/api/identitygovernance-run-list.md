@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the run resources from the runs navigation property.
+List the runs of a [workflow](../resources/identitygovernance-workflow.md).
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /workflow/runs
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/runs/
 ```
 
 ## Optional query parameters
@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/workflow/runs
+List https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/runs/
 ```
 
 ### Response
@@ -82,22 +82,39 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.identityGovernance.run",
-      "id": "9947396f-3691-e265-b1e5-2ea86c0c89d6",
-      "completedDateTime": "String (timestamp)",
-      "failedTasksCount": "Integer",
-      "failedUsersCount": "Integer",
-      "lastUpdatedDateTime": "String (timestamp)",
-      "processingStatus": "String",
-      "startedDateTime": "String (timestamp)",
-      "scheduledDateTime": "String (timestamp)",
-      "successfulUsersCount": "Integer",
-      "totalUsersCount": "Integer",
-      "totalUnprocessedTasksCount": "Integer",
-      "workflowExecutionType": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/runs",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "dad77a47-6eda-4de7-bc37-fe8eb5aaf17d",
+            "completedDateTime": "2022-08-24T23:28:11.1348863Z",
+            "failedTasksCount": 0,
+            "failedUsersCount": 0,
+            "lastUpdatedDateTime": "2022-08-24T23:33:09.186588Z",
+            "processingStatus": "completed",
+            "scheduledDateTime": "2022-08-24T23:28:01.6476554Z",
+            "startedDateTime": "2022-08-24T23:28:04.5688752Z",
+            "successfulUsersCount": 2,
+            "totalTasksCount": 4,
+            "totalUsersCount": 2,
+            "totalUnprocessedTasksCount": 0,
+            "workflowExecutionType": "onDemand"
+        },
+        {
+            "id": "a512bb50-3423-4bdc-ad5e-9731095b3b9a",
+            "completedDateTime": "2022-08-25T00:15:11.8535443Z",
+            "failedTasksCount": 0,
+            "failedUsersCount": 0,
+            "lastUpdatedDateTime": "2022-08-25T00:20:05.8667912Z",
+            "processingStatus": "completed",
+            "scheduledDateTime": "2022-08-25T00:15:04.0253846Z",
+            "startedDateTime": "2022-08-25T00:15:05.1818741Z",
+            "successfulUsersCount": 2,
+            "totalTasksCount": 4,
+            "totalUsersCount": 2,
+            "totalUnprocessedTasksCount": 0,
+            "workflowExecutionType": "onDemand"
+        }
+    ]
 }
 ```

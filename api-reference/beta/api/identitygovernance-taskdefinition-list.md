@@ -83,7 +83,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions",
-    "@odata.count": 17,
+    "@odata.count": 16,
     "value": [
         {
             "category": "joiner,leaver",
@@ -114,20 +114,6 @@ Content-Type: application/json
             "id": "6fc52c9d-398b-4305-9763-15f42c1676fc",
             "version": 1,
             "parameters": []
-        },
-        {
-            "category": "joiner,leaver",
-            "description": "Launch Logic App URL",
-            "displayName": "Launch Logic App",
-            "id": "d79d1fcc-16be-490c-a865-f4533b1639ee",
-            "version": 1,
-            "parameters": [
-                {
-                    "name": "logicAppURL",
-                    "values": [],
-                    "valueType": "string"
-                }
-            ]
         },
         {
             "category": "joiner,leaver",

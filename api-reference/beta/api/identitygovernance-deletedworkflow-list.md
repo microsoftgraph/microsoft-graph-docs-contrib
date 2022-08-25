@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [deletedItemContainer](../resources/deleteditemcontainer.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [workflow](../resources/identitygovernance-workflow.md) objects in the response body.
 
 ## Examples
 
@@ -82,11 +82,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.deletedItemContainer",
-      "id": "98dd1b78-10c9-23e6-38c9-53955064efe6"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows",
+    "value": [
+        {
+            "category": "joiner",
+            "description": "Configure new hire tasks for onboarding employees on their first day",
+            "displayName": "US Onboard new hire employee",
+            "lastModifiedDateTime": "2022-08-24T18:25:09.4212828Z",
+            "createdDateTime": "2022-08-24T18:24:14.4067873Z",
+            "deletedDateTime": "2022-08-24T18:25:09.5729865Z",
+            "id": "f1937e0c-c509-4250-ab51-d5e6e35fcbda",
+            "version": 1
+        },
+        {
+            "category": "joiner",
+            "description": "Configure new hire tasks for onboarding employees on their first day",
+            "displayName": "EU Onboard new hire employee",
+            "lastModifiedDateTime": "2022-08-24T18:25:09.4050443Z",
+            "createdDateTime": "2022-08-24T18:24:40.0689833Z",
+            "deletedDateTime": "2022-08-24T18:25:09.5542954Z",
+            "id": "21d2c0fb-dcaa-4abb-88db-891d76c84e9a",
+            "version": 1
+        }
+    ]
 }
 ```

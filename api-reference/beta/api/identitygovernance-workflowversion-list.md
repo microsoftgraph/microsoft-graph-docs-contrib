@@ -64,13 +64,13 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}/versions
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/versions/2/tasks/4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee
 ```
 
 ### Response
 
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,19 +82,32 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.identityGovernance.workflowVersion",
-      "category": "String",
-      "createdDateTime": "String (timestamp)",
-      "description": "String",
-      "displayName": "String",
-      "executionConditions": {
-        "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "versionNumber": "Integer"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/versions",
+    "value": [
+        {
+            "category": "joiner",
+            "description": "Configure new hire tasks for onboarding employees on their first day",
+            "displayName": "Global onboard new hire employee",
+            "lastModifiedDateTime": "2022-08-24T19:33:03.8664941Z",
+            "versionNumber": 3,
+            "createdDateTime": "2022-08-24T19:31:33.5534766Z"
+        },
+        {
+            "category": "joiner",
+            "description": "Configure new hire tasks for onboarding employees on their first day",
+            "displayName": "Onboard new hire employee",
+            "lastModifiedDateTime": "2022-08-24T19:31:33.4303233Z",
+            "versionNumber": 2,
+            "createdDateTime": "2022-08-24T19:18:18.6841471Z"
+        },
+        {
+            "category": "joiner",
+            "description": "Configure new hire tasks for onboarding employees on their first day",
+            "displayName": "Onboard new hire employee",
+            "lastModifiedDateTime": "2022-08-24T19:18:18.5633638Z",
+            "versionNumber": 1,
+            "createdDateTime": "2022-08-24T15:39:17.6496784Z"
+        }
+    ]
 }
 ```

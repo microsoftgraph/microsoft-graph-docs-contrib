@@ -21,15 +21,14 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List taskDefinitions](../api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md)|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) collection|Get a list of the [taskDefinition](../resources/identitygovernance-taskdefinition.md) objects and their properties.|
+|[List taskDefinitions](../api/identitygovernance-taskdefinition-list.md)|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) collection|Get a list of the [taskDefinition](../resources/identitygovernance-taskdefinition.md) objects and their properties.|
 |[Get taskDefinition](../api/identitygovernance-taskdefinition-get.md)|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md)|Read the properties and relationships of a [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|String|The category of the HR function that the tasks created using this definition can be used with. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
-|continueOnError|Boolean|Determines if task can block workflow execution on error.|
+|category|String|The category of the HR function that the tasks created using this definition can be used with. The possible values are: `joiner`, `leaver`.|
 |description|String|The description of the `taskDefinition`.|
 |displayName|String|The display name of the `taskDefinition`.|
 |id|String|The unique identifier for the `taskDefinition`. Inherited from [entity](../resources/entity.md).|
@@ -53,17 +52,12 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.taskDefinition",
-  "id": "String (identifier)",
-  "category": "String",
-  "continueOnError": "Boolean",
-  "description": "String",
-  "displayName": "String",
-  "parameters": [
-    {
-      "@odata.type": "microsoft.graph.identityGovernance.parameter"
-    }
-  ],
-  "version": "Integer"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions/$entity",
+    "category": "joiner,leaver",
+    "description": "Disable user account in the directory",
+    "displayName": "Disable User Account",
+    "id": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950",
+    "version": 1,
+    "parameters": []
 }
 ```

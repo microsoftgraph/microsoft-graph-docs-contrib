@@ -60,7 +60,7 @@ PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [workflow](../resources/identitygovernance-workflow.md) object in the response body.
+If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
@@ -73,23 +73,15 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}
+PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390
 Content-Type: application/json
 Content-length: 454
 
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.workflow",
-  "category": "String",
-  "description": "String",
-  "displayName": "String",
-  "executionConditions": {
-    "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
-  },
-  "deletedDateTime": "String (timestamp)",
-  "isEnabled": "Boolean",
-  "isSchedulingEnabled": "Boolean",
-  "nextScheduleRunDateTime": "String (timestamp)",
-  "version": "Integer"
+    "description": "Configure new hire tasks for onboarding employees on their first day",
+    "displayName": "Australia Onboard new hire employee",
+    "isEnabled": true,
+    "isSchedulingEnabled": false
 }
 ```
 
@@ -104,24 +96,5 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.identityGovernance.workflow",
-  "category": "String",
-  "createdDateTime": "String (timestamp)",
-  "description": "String",
-  "displayName": "String",
-  "executionConditions": {
-    "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "deletedDateTime": "String (timestamp)",
-  "id": "9469a17e-3460-4f83-56bb-f67410655e7b",
-  "isEnabled": "Boolean",
-  "isSchedulingEnabled": "Boolean",
-  "nextScheduleRunDateTime": "String (timestamp)",
-  "version": "Integer"
-}
+HTTP/1.1 204 No Content
 ```
