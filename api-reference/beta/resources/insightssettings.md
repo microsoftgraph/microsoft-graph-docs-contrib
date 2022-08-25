@@ -17,7 +17,7 @@ Item insights and [meeting hours insights](https://support.microsoft.com/office/
 
 People insights represent connections of people who are relevant to or work with one another based on their public relationships. Programmatically, individual people are represented by the [person](person.md) resource. You can [use the people API to get people insights](/graph/people-example). You can use **insightsSettings** to [customize the privacy settings for displaying or returning people insights](/graph/insights-customize-people-insights-privacy).
 
-Contact insights represent _settings_ to manage the audience in an organization in which intelligent features related to contact management (e.g. duplicate contact merge suggestions) are enabled in Microsoft 365. The feature availability can be controlled at the organization level (i.e., Tenant) or at a security group level (i.e., a subset of the organization). 
+Contact insights represent intelligent suggestions to clean and organize contacts in Microsoft 365. Programmatically, they are represented by the [contact](contact.md) resource. An example of a contact insight is duplicate contact merge suggestions that are available for end users in Outlook.
 
 In contrast, for item insights and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1), you can also manage their calculation and visibility at a _user_ level by using the [userInsightsSettings](userinsightssettings.md) resource.
 
