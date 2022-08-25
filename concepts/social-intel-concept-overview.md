@@ -30,17 +30,19 @@ The insights API uses advanced analytics and machine learning to provide the mos
 ## Why integrate with people data?
 
 The people API returns data of a single entity, [person](/graph/api/resources/person), which includes typical data of an individual in today's business world. What makes this **person** data especially useful is its _relevance_ with respect to a Microsoft Graph user. Relevance is noted in the results returned which are ordered from most relevant to least relevant. 
-There are two people search APIs available in Microsoft graph 
+You can use the following Microsoft Graph APIs to search for people inside an organization
+ 
 * [/search](search-concept-people.md) 
 * [/people](/graph/api/resources/person) (maintenance mode)
 
-### Why you should integrate to _/search_
+### Why you should integrate to /search
 
-All people search investments are available via _/search_ with _/people_ now in *maintenance mode*. We highly encourage developers to consider using _/search_ when building their products. Below are additional reasons why you should pick _/search_:
-1. All future investments in people search will be made available via _/search_ example, Natural language search like "John the accountant in Nairobi"
-2. Attribute search, matching on additional attributes other than name and email
-3. Better relevance, results from _/search_ give better results due to use of AI, better data models and sophisticated spell correction. 
-4. **Lower COGs** when using _/search_, but specifically lower latency.  
+We highly encourage developers to consider using the `/search` endpoint when building their products because all future investments will only be available in the `/search` endpoint; the `/people` endpoint will be in maintenance mode. The following are additional reasons why you should integrate to the `/search` endpoint:
+
+* All future investments in people search will be made available via `/search`, for example, natural language search like "John the accountant in Nairobi"
+* Attribute search matching on additional attributes other than name and email
+* Better relevance results from `/search` give better results due to the use of artificial intelligence, better data models, and sophisticated spell correction
+* Lower **COGs** when using `/search`, but specifically lower latency.
 
 
 There are 3 main types of application of this _relevance_ data.
