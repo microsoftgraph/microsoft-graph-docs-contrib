@@ -95,6 +95,7 @@ Content-Type: application/json
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
             "task": {
+                "@odata.type": "microsoft.graph.identityGovernance.task",
                 "category": "joiner,leaver",
                 "continueOnError": false,
                 "description": "Enable user account in the directory",
@@ -117,6 +118,7 @@ Content-Type: application/json
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
             "task": {
+                "@odata.type": "microsoft.graph.identityGovernance.task",
                 "category": "joiner,leaver",
                 "continueOnError": false,
                 "description": "Add user to selected groups",

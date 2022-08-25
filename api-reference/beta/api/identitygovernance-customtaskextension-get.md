@@ -106,9 +106,11 @@ Content-Type: application/json
         "timeoutDuration": "PT5M"
     },
     "createdBy": {
+        "@odata.type": "microsoft.graph.user",
         "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
     },
     "lastModifiedBy": {
+        "@odata.type": "microsoft.graph.user"
         "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
     }
 }

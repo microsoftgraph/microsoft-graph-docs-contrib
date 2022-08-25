@@ -96,6 +96,7 @@ Content-Type: application/json
             "workflowExecutionType": "onDemand",
             "workflowVersion": 1,
             "subject": {
+                "@odata.type": "microsoft.graph.user",
                 "id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
             }
         },
@@ -111,6 +112,7 @@ Content-Type: application/json
             "workflowExecutionType": "onDemand",
             "workflowVersion": 1,
             "subject": {
+                "@odata.type": "microsoft.graph.user",
                 "id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
             }
         },
@@ -126,6 +128,7 @@ Content-Type: application/json
             "workflowExecutionType": "onDemand",
             "workflowVersion": 13,
             "subject": {
+                "@odata.type": "microsoft.graph.user",
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             }
         }

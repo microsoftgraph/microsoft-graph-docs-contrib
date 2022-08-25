@@ -102,6 +102,7 @@ Content-Type: application/json
                 "resourceId": "b9c29c27-b116-47a9-925b-ff3b19bafa3b"
             },
             "clientConfiguration": {
+                "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
                 "maximumRetries": 1,
                 "timeoutInMilliseconds": 1000
             }
@@ -123,6 +124,7 @@ Content-Type: application/json
                 "resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
             },
             "clientConfiguration": {
+                "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
                 "maximumRetries": 1,
                 "timeoutInMilliseconds": 1000
             },
