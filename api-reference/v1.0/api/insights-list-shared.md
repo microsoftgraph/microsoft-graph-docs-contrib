@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Calculated insight that includes the list of documents shared with a user.
 
-For documents hosted on OneDrive/Sharepoint, this insight will only include documents shared within the user's own M365 tenant.
+For documents hosted on OneDrive/Sharepoint, this insight will only include documents shared within the user's own Microsoft 365 tenant.
 
-For documents which are attached directly as a file, this insight will include all such documents shared with a user.
+For documents that are attached as a file, this insight will include all such documents shared with a user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
