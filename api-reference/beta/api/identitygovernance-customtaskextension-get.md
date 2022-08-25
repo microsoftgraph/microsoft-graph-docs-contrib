@@ -98,6 +98,7 @@ Content-Type: application/json
         "resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
     },
     "clientConfiguration": {
+        "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
         "maximumRetries": 1,
         "timeoutInMilliseconds": 1000
     },
@@ -106,11 +107,11 @@ Content-Type: application/json
         "timeoutDuration": "PT5M"
     },
     "createdBy": {
-        "@odata.type": "microsoft.graph.user",
+        "@odata.type": "#microsoft.graph.user",
         "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
     },
     "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.user",
+        "@odata.type": "#microsoft.graph.user",
         "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
     }
 }
