@@ -1,14 +1,14 @@
-In this step, you'll create a web app and enable authentication with Microsoft Graph Toolkit MSAL2 provider.
+In this step, you'll create a web app and enable authentication with the Microsoft Graph Toolkit MSAL2 provider.
 
 ## Create a web app
 
-1. Create a new folder and name as **OneProductivityHub**. Right click and open the folder with Visual Studio Code.  
+1. Create a new folder and name it **OneProductivityHub**. Right-click and open the folder with Visual Studio Code.  
 
-1. Create a new file under **OneProductivityHub** folder and name as **index.html**.
+1. Create a new file in the **OneProductivityHub** folder and name it **index.html**.
 
 1. Select `CTRL + SPACE` and choose **HTML sample** from the options.
 
-1. Enable authentication with the Microsoft Graph Toolkit via mgt-loader, add the following reference in **index.html** inside the `<body></body>` section:
+1. To enable authentication with Microsoft Graph Toolkit via mgt-loader, add the following reference in **index.html** inside the `<body></body>` section:
 
   ```HTML
   <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
@@ -16,7 +16,7 @@ In this step, you'll create a web app and enable authentication with Microsoft G
 
 ### Initialize the MSAL2 provider
 
-1. In **index.html**, add the MSAL2 provider in the `<body></body>` section as following:
+1. In **index.html**, add the MSAL2 provider in the `<body></body>` section as follows:
 
     ```HTML
     <mgt-msal2-provider 
@@ -36,9 +36,9 @@ In this step, you'll create a web app and enable authentication with Microsoft G
     > [!IMPORTANT]
     > The following scopes defined in the provider will be shown as a list of required permissions to request user's consent during the authentication process: `User.Read, User.ReadBasic.All, Calendars.Read, Files.Read, Files.Read.All, Sites.Read.All, Tasks.Read, Tasks.ReadWrite, People.Read`.
 
-1. Replace `<YOUR_CLIENT_ID>` with the client ID copied from the Azure AD application.
+1. Replace `<YOUR_CLIENT_ID>` with the client ID you copied from the Azure AD application.
 
-1. Make sure that the final version of **index.html** is similar with the following code snippet:
+1. Make sure that the final version of **index.html** is similar to the following example:
 
     ```html
     <!DOCTYPE html>
