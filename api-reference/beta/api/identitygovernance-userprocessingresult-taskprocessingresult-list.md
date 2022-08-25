@@ -92,6 +92,7 @@ Content-Type: application/json
             "startedDateTime": "2022-08-24T23:28:05.1234966Z",
             "failureReason": null,
             "subject": {
+                "@odata.type": "microsoft.graph.user",
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
             "task": {
