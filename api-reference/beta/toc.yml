@@ -13578,8 +13578,6 @@ items:
                   href: api/identitygovernance-userprocessingresult-list.md
                 - name: Summary
                   href: api/identitygovernance-userprocessingresult-summary.md  
-                - name: List Task Processing Results
-                  href: api/identitygovernance-userprocessingresult-taskprocessingresult-list.md
               - name: Task Reports
                 href: resources/identitygovernance-taskreport.md 
                 items:

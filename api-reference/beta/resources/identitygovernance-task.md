@@ -1,6 +1,6 @@
 ---
 title: "task resource type"
-description: "Methods, properties, and relationships of the task resource type"
+description: "Represents the built-in and custom tasks within workflows in Azure AD Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type for tasks within workflows created using Lifecycle Workflows. These are the actions a workflow will take when triggered.
+Represents the built-in and custom tasks within workflows created in Azure AD Lifecycle Workflows. Tasks are the actions a workflow will execute when triggered.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -21,11 +21,10 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tasks](../api/identitygovernance-workflow-task-list.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get a list of the [task](../resources/identitygovernance-task.md) objects and their properties.|
+|[List tasks](../api/identitygovernance-list-workflowtask.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get a list of the [task](../resources/identitygovernance-task.md) objects and their properties.|
 |[Create task](../api/identitygovernance-taskprocessingresult-post-task.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|Create a new [task](../resources/identitygovernance-task.md) object.|
 |[Get task](../api/identitygovernance-task-get.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|Read the properties and relationships of a [task](../resources/identitygovernance-task.md) object.|
 |[Delete task](../api/identitygovernance-taskprocessingresult-delete-task.md)|None|Deletes a [task](../resources/identitygovernance-task.md) object.|
-|[List taskProcessingResults](../api/identitygovernance-userprocessingresult-taskprocessingresult-list.md)|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|Get the taskProcessingResult resources from the taskProcessingResults navigation property.|
 |[Create taskProcessingResult](../api/identitygovernance-task-post-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md)|Create a new taskProcessingResult object.|
 
 ## Properties
