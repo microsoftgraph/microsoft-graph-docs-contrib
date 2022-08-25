@@ -18,8 +18,6 @@ post.SetBody(body)
 
 
 attachment := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.referenceAttachment"
-attachment.Set"@odata.type"(&"@odata.type") 
 name := "Personal pictures"
 attachment.SetName(&name) 
 additionalData := map[string]interface{}{

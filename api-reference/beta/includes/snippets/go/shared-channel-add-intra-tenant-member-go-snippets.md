@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewConversationMember()
-"@odata.type" := "#microsoft.graph.aadUserConversationMember"
-requestBody.Set"@odata.type"(&"@odata.type") 
 roles := []string {
 
 }

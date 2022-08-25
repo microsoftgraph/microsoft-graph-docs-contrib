@@ -346,12 +346,14 @@ items:
             href: outlook-get-mime-message.md
           - name: Send MIME message
             href: outlook-send-mime-message.md
+          - name: Send mail from another user
+            href: outlook-send-mail-from-other-user.md
+          - name: Explainer for sending mail
+            href: outlook-things-to-know-about-send-mail.md
           - name: Attach large files
             href: outlook-large-attachments.md
           - name: Get shared messages
             href: outlook-share-messages-folders.md
-          - name: Send mail from another user
-            href: outlook-send-mail-from-other-user.md
           - name: Obtain immutable IDs
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications

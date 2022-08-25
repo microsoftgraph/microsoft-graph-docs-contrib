@@ -29,9 +29,9 @@ $requestBody->setIsLocationOnline(true);
 
 $requestBody->setOptOutOfCustomerEmail(false);
 
-$requestBody->setPostBuffer('PT10M');
+$requestBody->setPostBuffer(new \DateInterval('PT10M'));
 
-$requestBody->setPreBuffer('PT5M');
+$requestBody->setPreBuffer(new \DateInterval('PT5M'));
 
 $requestBody->setPrice(10);
 
@@ -42,7 +42,7 @@ $remindersBookingReminder1->set@odatatype('#microsoft.graph.bookingReminder');
 
 $remindersBookingReminder1->setMessage('This service is tomorrow');
 
-$remindersBookingReminder1->setOffset('P1D');
+$remindersBookingReminder1->setOffset(new \DateInterval('P1D'));
 
 $remindersBookingReminder1->setRecipients(new BookingReminderRecipients('allattendees'));
 
@@ -59,7 +59,7 @@ $remindersBookingReminder2->set@odatatype('#microsoft.graph.bookingReminder');
 
 $remindersBookingReminder2->setMessage('Please be available to enjoy your lunch service.');
 
-$remindersBookingReminder2->setOffset('PT1H');
+$remindersBookingReminder2->setOffset(new \DateInterval('PT1H'));
 
 $remindersBookingReminder2->setRecipients(new BookingReminderRecipients('customer'));
 
@@ -76,7 +76,7 @@ $remindersBookingReminder3->set@odatatype('#microsoft.graph.bookingReminder');
 
 $remindersBookingReminder3->setMessage('Please check traffic for next cater.');
 
-$remindersBookingReminder3->setOffset('PT2H');
+$remindersBookingReminder3->setOffset(new \DateInterval('PT2H'));
 
 $remindersBookingReminder3->setRecipients(new BookingReminderRecipients('staff'));
 
