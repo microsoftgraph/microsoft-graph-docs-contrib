@@ -26,6 +26,7 @@ None.
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow. |
 |clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)| HTTP connection settings that define how long Azure AD can wait for a connection to a logic app, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed.|
+|callbackConfiguration|[microsoft.graph.identitygovernance.customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
 |description|String|Description for the customCalloutExtension object.|
 |displayName|String|Display name for the customCalloutExtension object.|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow.|
@@ -56,9 +57,12 @@ The following is a JSON representation of the resource.
   "clientConfiguration": {
     "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
   },
+"callbackConfiguration": {
+        "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
+        "timeoutDuration": "PT10M"
+    },
   "authenticationConfiguration": {
     "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
   }
 }
 ```
-

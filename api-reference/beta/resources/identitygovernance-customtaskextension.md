@@ -21,8 +21,8 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List customTaskExtensions](../api/identitygovernance-customtaskextension-list.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) collection|Get a list of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) objects and their properties.|
-|[Create customTaskExtension](../api/identitygovernance-customtaskextension-post.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md)|Create a new [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
+|[List customTaskExtensions](../api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) collection|Get a list of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) objects and their properties.|
+|[Create customTaskExtension](../api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md)|Create a new [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
 |[Get customTaskExtension](../api/identitygovernance-customtaskextension-get.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md)|Read the properties and relationships of a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
 |[Update customTaskExtension](../api/identitygovernance-customtaskextension-update.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md)|Update the properties of a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
 |[Delete customTaskExtension](../api/identitygovernance-customtaskextension-delete.md)|None|Deletes a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.|
@@ -32,6 +32,7 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|callbackConfiguration|[microsoft.graph.identitygovernance.customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
 |clientConfiguration|[microsoft.graph.customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define how long Azure AD can wait for a connection to a logic app, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |createdDateTime|DateTimeOffset|Custom Task Extension created date and time|
 |description|String|A string that describes the purpose of the custom task extension for administrative use. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
@@ -65,7 +66,7 @@ The following is a JSON representation of the resource.
     "displayName": "Grant manager access to mailbox and OneDrive",
     "description": "Grant manager access to mailbox and OneDrive",
     "createdDateTime": "2022-08-24T20:36:14.7006029Z",
-    "lastModifiedDateTime": "2022-08-24T20:42:07.9885265Z",
+    "lastModifiedDateTime": "2022-08-24T22:42:34.0744491Z",
     "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
         "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
@@ -80,6 +81,18 @@ The following is a JSON representation of the resource.
         "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
         "maximumRetries": 1,
         "timeoutInMilliseconds": 1000
+    },
+    "callbackConfiguration": {
+        "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
+        "timeoutDuration": "PT10M"
+    },
+    "createdBy": {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+    },
+    "lastModifiedBy": {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
     }
 }
 ```

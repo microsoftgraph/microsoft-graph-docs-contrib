@@ -86,7 +86,7 @@ Content-Type: application/json
     "displayName": "Grant manager access to mailbox and OneDrive",
     "description": "Grant manager access to mailbox and OneDrive",
     "createdDateTime": "2022-08-24T20:36:14.7006029Z",
-    "lastModifiedDateTime": "2022-08-24T20:42:07.9885265Z",
+    "lastModifiedDateTime": "2022-08-24T22:42:34.0744491Z",
     "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
         "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
@@ -104,7 +104,15 @@ Content-Type: application/json
     },
     "callbackConfiguration": {
         "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-        "timeoutDuration": "PT5M"
+        "timeoutDuration": "PT10M"
+    },
+    "createdBy": {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+    },
+    "lastModifiedBy": {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
     }
 }
 ```
