@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/versions/{version number}/tasks/{task id}
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/versions/{versionnumber}/tasks/{taskid}
 ```
 
 ## Optional query parameters
@@ -74,7 +74,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.identityGovernance.workflowVersion)"
+  "@odata.type": "microsoft.graph.identityGovernance.workflowVersion"
 }
 -->
 ``` http
