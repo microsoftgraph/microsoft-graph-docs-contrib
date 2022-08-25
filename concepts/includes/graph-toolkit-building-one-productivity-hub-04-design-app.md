@@ -2,7 +2,7 @@ In this step, you'll design your web app by using Microsoft Graph Toolkit compon
 
 ## Initialize the Login component
 
-In **index.html** inside the `<body></body>`, add the following code under the provider.
+In **index.html** in the `<body></body>`section, add the following code under the provider.
 
   ```html
   <div>
@@ -11,9 +11,9 @@ In **index.html** inside the `<body></body>`, add the following code under the p
   ```
 
 
-## Create a title and a column for the rest of the components
+## Create a title and column for the rest of the components
 
-To make our app look structured, let's create a title and a column for each feature that will be added in the One Productivity Hub moving forward. In **index.html** under `<body></body>`, add the following html code inside the div, right below the login component:
+To make your app look structured, create a title and a column for each feature that will be added in the One Productivity Hub. In **index.html** under `<body></body>`, add the following HTML code inside the div, under the login component.
 
   ```HTML
   <div class="features">
@@ -38,7 +38,7 @@ To make our app look structured, let's create a title and a column for each feat
 
 ### Agenda component
 
-Under div tagged with `class="row"`, add the Agenda component inside the first column div:
+Under the div tagged with `class="row"`, add the Agenda component inside the first column div.
 
   ```HTML
   <mgt-agenda />
@@ -46,7 +46,7 @@ Under div tagged with `class="row"`, add the Agenda component inside the first c
 
 ### To-do component
 
-Under div tagged with `class="row"`, add the To-do component inside the second column div:
+Under the div tagged with `class="row"`, add the To-do component inside the second column div.
 
   ```HTML
   <mgt-todo />
@@ -54,7 +54,7 @@ Under div tagged with `class="row"`, add the To-do component inside the second c
 
 ### FileList component
 
-Under div tagged with `class="row"`, add the File list component inside the third column div:
+Under the div tagged with `class="row"`, add the File list component inside the third column div.
 
   ```HTML
   <mgt-file-list />
@@ -62,7 +62,7 @@ Under div tagged with `class="row"`, add the File list component inside the thir
 
 ## Style your web app with CSS
 
-1. Create **index.css** file under your project and add below CSS code:
+1. Create an **index.css** file under your project and add the following CSS code.
 
     ```css
     body,
@@ -133,13 +133,13 @@ Under div tagged with `class="row"`, add the File list component inside the thir
     }
     ```
 
-1. In **index.html** inside `<head></head>`, define the stylesheet link `href` as **index.css**:
+1. In **index.html** within `<head></head>`, define the stylesheet link `href` as **index.css**.
 
     ```html
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     ```
 
-1. Make sure that the final version of **index.html** is similar with the following code snippet:
+1. Make sure that the final version of **index.html** is similar to the following.
 
     ```html
     <!DOCTYPE html>
