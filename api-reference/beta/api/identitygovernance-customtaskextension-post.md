@@ -58,7 +58,7 @@ You can specify the following properties when creating a **customTaskExtension**
 |description|String|The description of the `customTaskExtension`. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |displayName|String|The display name of the `customTaskExtension` Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |endpointConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The endpoint configuration for a custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|callbackConfiguration|[microsoft.graph.identitygovernance.customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md)|The callback configuration for a custom extension.  Optional.|
+|callbackConfiguration|[microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md)|The callback configuration for a custom extension.  Optional.|
 
 ## Response
 
