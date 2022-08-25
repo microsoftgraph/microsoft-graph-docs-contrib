@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get Custom Task Extension
+# Get customTaskExtension
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -37,7 +37,7 @@ GET /identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskExten
 
 ## Optional query parameters
 
-This method supports the `$select`, `$top`, `$count`, `$search`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

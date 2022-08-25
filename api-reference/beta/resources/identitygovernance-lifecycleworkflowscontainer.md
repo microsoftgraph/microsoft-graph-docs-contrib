@@ -1,6 +1,6 @@
 ---
 title: "lifecycleWorkflowsContainer resource type"
-description: "Methods, properties, and relationships for the lifecycleWorkflowsContainer resource"
+description: "A container for the relationships that expose the Azure AD Identity Governance life cycle workflows API capabilities."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type noting a Lifecycle Workflows instance.
+A container for the relationships that expose the Azure AD Identity Governance life cycle workflows API capabilities.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -38,18 +38,18 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier used for individually addressing the lifecycleworkflowscontainer. Inherited from [entity](../resources/entity.md).|
+|id|String|Identifier used for individually addressing the lifecycle workflows objects. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
 |customTaskExtensions|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) collection|The **customTaskExtension** instance.|
-|deletedItems|[deletedItemContainer](../resources/deleteditemcontainer.md)|Deleted workflows in your Lifecycle Workflows instance.|
-|settings|[microsoft.graph.identityGovernance.lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md)|The settings of the Lifecycle Workflows instance.|
-|taskDefinitions|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) collection|The definition of tasks within the Lifecycle Workflows instance.|
-|workflows|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) collection|The workflows in the Lifecycle Workflows instance.|
-|workflowTemplates|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md) collection|The workflow templates in the Lifecycle Workflow instance. |
+|deletedItems|[deletedItemContainer](../resources/deleteditemcontainer.md)|Deleted workflows in your lifecycle workflows instance.|
+|settings|[microsoft.graph.identityGovernance.lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md)|The settings of the lifecycle workflows instance.|
+|taskDefinitions|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) collection|The definition of tasks within the lifecycle workflows instance.|
+|workflows|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) collection|The workflows in the lifecycle workflows instance.|
+|workflowTemplates|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md) collection|The workflow templates in the lifecycle workflow instance. |
 
 ## JSON representation
 

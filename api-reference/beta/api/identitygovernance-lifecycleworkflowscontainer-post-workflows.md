@@ -57,6 +57,7 @@ You can specify the following properties when creating a **workflow**.
 |id|String|Identifier used for individually addressing a specific workflow.|
 |isEnabled|Boolean|A boolean value that denotes whether the workflow is set to run or not.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
+|tasks||A Boolean value that denotes whether scheduling is enabled or not. |
 
 ## Response
 

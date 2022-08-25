@@ -15,13 +15,13 @@ Namespace: microsoft.graph.identityGovernance
 
 The custom task extension callback configuration resource type
 
-Inherits from  [customExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).
+Inherits from  [customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|timeoutDuration|Duration|A parameter that accepts an ISO 8601 time duration. Accepted time durations are between 5 min-3 hours. The accepted format is PT followed by an integer and M for minute or H for hour. Examples of these include: PT5M for 5 Minutes and PT3H for 3 Hours.|
+|timeoutDuration|Duration| Callback time out in ISO 8601 time duration. Accepted time durations are between five minutes to three hours. For example, PT5M for five minutes and PT3H for three hours. Inherited from [customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).|
 
 ## Relationships
 
@@ -38,6 +38,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-  "timeoutDuration": "PT10M"
+  "timeoutDuration": "String (duration)"
 }
 ```

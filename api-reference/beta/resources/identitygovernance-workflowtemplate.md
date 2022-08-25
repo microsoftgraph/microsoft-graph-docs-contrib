@@ -13,7 +13,9 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type noting templates of workflows created using Lifecycle Workflows. Workflows templates allow you to set up workflows based on common lifecycle management scenarios, and customize them as needed to quickly create workflows applicable for specific situations.
+Represents the pre-configured templates of Lifecycle Workflows that are available in Azure AD. Workflow templates are available for common scenarios such as new hires and users that are leaving the organization.
+
+Workflow templates allow you to set up workflows based on common lifecycle management scenarios. You can also create custom workflows from the workflow templates to achieve specific situations.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -33,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|The display name of the `workflowTemplate`. <br><br>Supports  `orderby`.|
 |executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Conditions describing when to execute the workflow and the criteria to identify in-scope subject set.|
 |id|String|The unique identifier for the `workflowTemplate`. Inherited from [entity](../resources/entity.md).|
-|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Represents the configured tasks to execute and their execution sequence within a `workflow`.|
+|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Represents the configured tasks to execute and their execution sequence within a [workflow](../resources/identitygovernance-workflow.md). This relationship is expanded by default.|
 
 ## Relationships
 

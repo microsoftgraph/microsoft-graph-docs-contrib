@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Update Custom Task Extension
+# Update customTaskExtension
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -51,12 +51,12 @@ PATCH /identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskExt
 
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for the `customTaskExtension`. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|clientConfiguration|[microsoft.graph.customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The client configuration for a custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|description|String|The description of the `customTaskExtension`. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|displayName|String|The display name of the `customTaskExtension` Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|endpointConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The endpoint configuration for a custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|callbackConfiguration|[microsoft.graph.identitygovernance.customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md)|The callback configuration for a custom extension.  Optional.|
+|authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for the customTaskExtension.|
+|clientConfiguration|[microsoft.graph.customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The client configuration for a custom extension.|
+|description|String|The description of the customTaskExtension.|
+|displayName|String|The display name of the customTaskExtension.|
+|endpointConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The endpoint configuration for a custom extension.|
+|callbackConfiguration|[microsoft.graph.identitygovernance.customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
 
 ## Response
 
@@ -78,12 +78,8 @@ Content-Type: application/json
 Content-length: 588
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions/$entity",
-    "id": "ffcc4c85-5a14-448e-a390-77abf2700369",
     "displayName": "Grant manager access to mailbox and OneDrive",
     "description": "Grant manager access to mailbox and OneDrive",
-    "createdDateTime": "2022-08-24T20:36:14.7006029Z",
-    "lastModifiedDateTime": "2022-08-24T20:36:14.7006083Z",
     "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
         "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
@@ -101,15 +97,7 @@ Content-length: 588
     },
     "callbackConfiguration": {
         "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-        "timeoutDuration": "PT10M"
-    },
-    "createdBy": {
-        "@odata.type": "#microsoft.graph.user",
-        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
-    },
-    "lastModifiedBy": {
-        "@odata.type": "#microsoft.graph.user",
-        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+        "timeoutDuration": "PT20M"
     }
 }
 ```

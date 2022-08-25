@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List Custom Task Extensions
+# List customTaskExtensions
 
 Namespace: microsoft.graph.identityGovernance
 

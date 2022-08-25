@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Delete Custom Task Extension
+# Delete customTaskExtension
 
 Namespace: microsoft.graph.identityGovernance
 
