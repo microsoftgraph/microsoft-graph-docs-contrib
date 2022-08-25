@@ -29,7 +29,7 @@ $passwordCredentialsArray []= $passwordCredentialsPasswordCredentialConfiguratio
 $passwordCredentialsPasswordCredentialConfiguration2 = new PasswordCredentialConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration2->setRestrictionType(new AppCredentialRestrictionType('passwordlifetime'));
 
-$passwordCredentialsPasswordCredentialConfiguration2->setMaxLifetime('P4DT12H30M5S');
+$passwordCredentialsPasswordCredentialConfiguration2->setMaxLifetime(new \DateInterval('P4DT12H30M5S'));
 
 $passwordCredentialsPasswordCredentialConfiguration2->setRestrictForAppsCreatedAfterDateTime(new DateTime('2014-10-19T10:37:00Z'));
 
@@ -47,7 +47,7 @@ $passwordCredentialsArray []= $passwordCredentialsPasswordCredentialConfiguratio
 $passwordCredentialsPasswordCredentialConfiguration4 = new PasswordCredentialConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration4->setRestrictionType(new AppCredentialRestrictionType('symmetrickeylifetime'));
 
-$passwordCredentialsPasswordCredentialConfiguration4->setMaxLifetime('P4D');
+$passwordCredentialsPasswordCredentialConfiguration4->setMaxLifetime(new \DateInterval('P4D'));
 
 $passwordCredentialsPasswordCredentialConfiguration4->setRestrictForAppsCreatedAfterDateTime(new DateTime('2014-10-19T10:37:00Z'));
 
@@ -59,7 +59,7 @@ $restrictions->setPasswordCredentials($passwordCredentialsArray);
 $keyCredentialsKeyCredentialConfiguration1 = new KeyCredentialConfiguration();
 $keyCredentialsKeyCredentialConfiguration1->setRestrictionType(new AppKeyCredentialRestrictionType('asymmetrickeylifetime'));
 
-$keyCredentialsKeyCredentialConfiguration1->setMaxLifetime('P90D');
+$keyCredentialsKeyCredentialConfiguration1->setMaxLifetime(new \DateInterval('P90D'));
 
 $keyCredentialsKeyCredentialConfiguration1->setRestrictForAppsCreatedAfterDateTime(new DateTime('2014-10-19T10:37:00Z'));
 
