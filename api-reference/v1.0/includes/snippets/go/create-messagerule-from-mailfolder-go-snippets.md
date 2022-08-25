@@ -15,7 +15,7 @@ requestBody.SetSequence(&sequence)
 isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
 conditions := graphmodels.NewMessageRulePredicates()
-senderContains := []String {
+senderContains := []string {
 	"adele",
 
 }

@@ -18,7 +18,7 @@ $resource->setDisplayName('article.pdf');
 $resource->set@odatatype('#microsoft.graph.educationFileResource');
 
 $additionalData = [
-'file' => $resource = new ();
+'file' => $resource = new File();
 $		resource->setOdataid('https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RPHKSP6THE4ORD2RQAR6MQLF26G');
 
 

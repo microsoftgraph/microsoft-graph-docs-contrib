@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewTokenIssuancePolicy()
-definition := []String {
+definition := []string {
 	"definition-value",
 
 }

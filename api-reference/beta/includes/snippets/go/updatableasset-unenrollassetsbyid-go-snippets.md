@@ -12,7 +12,7 @@ updateCategory := graphmodels.FEATURE_UPDATECATEGORY
 requestBody.SetUpdateCategory(&updateCategory) 
 memberEntityType := "#microsoft.graph.windowsUpdates.azureADDevice"
 requestBody.SetMemberEntityType(&memberEntityType) 
-ids := []String {
+ids := []string {
 	"String",
 	"String",
 	"String",

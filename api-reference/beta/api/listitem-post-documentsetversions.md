@@ -65,7 +65,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_documentsetversion"
+  "name": "create_documentsetversion",
+  "sampleKeys": ["2", "root", "Documents"]
 }
 -->
 ``` http

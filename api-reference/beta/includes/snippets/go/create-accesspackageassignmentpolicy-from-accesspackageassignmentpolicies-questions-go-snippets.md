@@ -49,8 +49,6 @@ approvalStage.SetEscalationTimeInMinutes(&escalationTimeInMinutes)
 
 
 userSet := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.groupMembers"
-userSet.Set"@odata.type"(&"@odata.type") 
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
 additionalData := map[string]interface{}{
@@ -59,8 +57,6 @@ additionalData := map[string]interface{}{
 }
 userSet.SetAdditionalData(additionalData)
 userSet1 := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.externalSponsors"
-userSet1.Set"@odata.type"(&"@odata.type") 
 isBackup := false
 userSet1.SetIsBackup(&isBackup) 
 
@@ -99,8 +95,6 @@ localizedTexts := []graphmodels.AccessPackageLocalizedTextable {
 }
 text.SetLocalizedTexts(localizedTexts)
 accessPackageQuestion.SetText(text)
-"@odata.type" := "#microsoft.graph.accessPackageMultipleChoiceQuestion"
-accessPackageQuestion.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 
 
@@ -189,8 +183,6 @@ localizedTexts := []graphmodels.AccessPackageLocalizedTextable {
 }
 text.SetLocalizedTexts(localizedTexts)
 accessPackageQuestion1.SetText(text)
-"@odata.type" := "#microsoft.graph.accessPackageTextInputQuestion"
-accessPackageQuestion1.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	isSingleLineQuestion := false
 accessPackageQuestion1.SetIsSingleLineQuestion(&isSingleLineQuestion) 

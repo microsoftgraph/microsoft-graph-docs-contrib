@@ -32,7 +32,7 @@ $callOptions->setIsContentSharingNotificationEnabled(true);
 
 
 $requestBody->setCallOptions($callOptions);
-$requestBody->setParticipantCapacity(participantCapacity);
+$requestBody->setParticipantCapacity(200);
 
 
 

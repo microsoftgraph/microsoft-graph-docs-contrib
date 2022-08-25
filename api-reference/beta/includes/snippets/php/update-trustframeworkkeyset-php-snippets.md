@@ -22,9 +22,9 @@ $	keys1->setKty('kty-value');
 
 $	keys1->setUse('use-value');
 
-	$keys1->setExp(exp);
+	$keys1->setExp(99);
 
-	$keys1->setNbf(nbf);
+	$keys1->setNbf(99);
 
 $	keys1->setKid('kid-value');
 

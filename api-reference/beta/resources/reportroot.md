@@ -41,6 +41,7 @@ None.
 |applicationSignInDetailedSummary|[applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) collection|Represents a detailed summary of an application sign-in.|
 |authenticationMethods|[authenticationMethodsRoot](../resources/authenticationmethodsroot.md)|Container for navigation properties for Azure AD authentication methods resources.|
 |credentialUserRegistrationDetails|[credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) collection|Details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users.|
+|security|[securityReportsRoot](../resources/securityreportsroot.md)|Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.|
 |userCredentialUsageDetails|[userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection|Represents the self-service password reset (SSPR) usage for a given tenant.|
 
 ## JSON representation

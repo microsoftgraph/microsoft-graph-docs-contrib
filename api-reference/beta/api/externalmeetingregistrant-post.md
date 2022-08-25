@@ -72,7 +72,8 @@ If successful, this method returns a `200 OK` response code and an [externalMeet
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add-externalregistratrant-public"
+  "name": "add-externalregistratrant-public",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```http
@@ -130,7 +131,8 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add-externalregistratrant-private"
+  "name": "add-externalregistratrant-private",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```http

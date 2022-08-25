@@ -30,9 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /directory/administrativeUnits/{id}
 ```
 ## Optional query parameters
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
-
-### Retrieve extensions and associated data
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response. Extension properties also support query parameters as follows:
 
 | Extension type       | Comments                                                 |
 |----------------------|----------------------------------------------------------|
@@ -61,7 +59,7 @@ Here is an example of the request.
   "name": "get_administrativeunit"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9-4847-bbf2-dde106594bf4
 ```
 
 # [C#](#tab/csharp)

@@ -12,10 +12,10 @@ availability := "DoNotDisturb"
 requestBody.SetAvailability(&availability) 
 activity := "DoNotDisturb"
 requestBody.SetActivity(&activity) 
-expirationDuration := "PT8H"
+expirationDuration , err := abstractions.ParseISODuration("PT8H")
 requestBody.SetExpirationDuration(&expirationDuration) 
 
-graphClient.UsersById("user-id").Presence().SetUserPreferredPresence(user-id).Post(requestBody)
+graphClient.UsersById("user-id").Presence().SetUserPreferredPresence().Post(requestBody)
 
 
 ```

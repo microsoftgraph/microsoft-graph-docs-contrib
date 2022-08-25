@@ -61,7 +61,8 @@ The following example changes the name of the rule, and the actions to be taken 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_messagerule"
+  "name": "update_messagerule",
+  "sampleKeys": ["AQAAAJ5dZqA="]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')

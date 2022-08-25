@@ -17,7 +17,7 @@ $requestBody->setSchedulingGroupId('TAG_228940ed-ff84-4e25-b129-1b395cf78be0');
 $sharedOpenShift = new SharedOpenShift();
 $sharedOpenShift->setNotes('InventoryManagement');
 
-$sharedOpenShift->setOpenSlotCount(openSlotCount);
+$sharedOpenShift->setOpenSlotCount(2);
 
 $sharedOpenShift->setDisplayName('Dayshift');
 

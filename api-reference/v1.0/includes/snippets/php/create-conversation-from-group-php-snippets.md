@@ -23,7 +23,7 @@ $postsPost1Body->setContent('Contoso cares about you: Rest and Recharge');
 $postsPost1->setBody($postsPost1Body);
 $newParticipantsRecipient1 = new Recipient();
 $additionalData = [
-'emailAddress' => $newParticipantsRecipient1 = new ();
+'emailAddress' => $newParticipantsRecipient1 = new EmailAddress();
 $		newParticipantsRecipient1->setName('Adele Vance');
 
 $		newParticipantsRecipient1->setAddress('AdeleV@contoso.onmicrosoft.com');

@@ -26,7 +26,7 @@ $rolePermissionsArray []= $rolePermissionsUnifiedRolePermission1;
 $requestBody->setRolePermissions($rolePermissionsArray);
 
 
-$requestBody->setIsEnabled('true');
+$requestBody->setIsEnabled(true);
 
 
 

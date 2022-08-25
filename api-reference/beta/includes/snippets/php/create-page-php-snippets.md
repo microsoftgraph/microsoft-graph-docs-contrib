@@ -42,24 +42,24 @@ $webPartsWebPart2Data = new SitePageData();
 $additionalData = [
 'title' => 'Events', 
 'description' => 'Display upcoming events', 
-'serverProcessedContent' => $webPartsWebPart2Data = new ();
-$htmlStrings = new ();
+'serverProcessedContent' => $webPartsWebPart2Data = new ServerProcessedContent();
+$htmlStrings = new HtmlStrings();
 
 $webPartsWebPart2Data->setHtmlStrings($htmlStrings);
-$searchablePlainTexts = new ();
+$searchablePlainTexts = new SearchablePlainTexts();
 $		searchablePlainTexts->setTitle('');
 
 
 $webPartsWebPart2Data->setSearchablePlainTexts($searchablePlainTexts);
-$imageSources = new ();
+$imageSources = new ImageSources();
 
 $webPartsWebPart2Data->setImageSources($imageSources);
-$links = new ();
+$links = new Links();
 $		links->setBaseUrl('https://www.contoso.com/sites/Engineering');
 
 
 $webPartsWebPart2Data->setLinks($links);
-$componentDependencies = new ();
+$componentDependencies = new ComponentDependencies();
 $		componentDependencies->setLayoutComponentId('8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027');
 
 
@@ -68,12 +68,12 @@ $webPartsWebPart2Data->setComponentDependencies($componentDependencies);
 $webPartsWebPart2Data->setServerProcessedContent($serverProcessedContent);
 
 'dataVersion' => '1.0', 
-'properties' => $webPartsWebPart2Data = new ();
+'properties' => $webPartsWebPart2Data = new Properties();
 $		webPartsWebPart2Data->setSelectedListId('032e08ab-89b0-4d8f-bc10-73094233615c');
 
 $		webPartsWebPart2Data->setSelectedCategory('');
 
-		$webPartsWebPart2Data->setDateRangeOption(dateRangeOption);
+		$webPartsWebPart2Data->setDateRangeOption(0);
 
 $		webPartsWebPart2Data->setStartDate('');
 

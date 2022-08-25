@@ -66,7 +66,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userflowlanguagepage_2"
+  "name": "get_userflowlanguagepage_2",
+  "sampleKeys": ["B2C_1_Customer","en"]
 }
 -->
 
