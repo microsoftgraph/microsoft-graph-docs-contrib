@@ -1,5 +1,5 @@
 ---
-title: "Get User processing Result"
+title: "Get userProcessingResult (for a run of a lifecycle workflow)"
 description: "Get User processing Result of a run object"
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get User processing Result of a [run](../resources/identitygovernance-run.md) object.
+Get the user processing result of a [run](../resources/identitygovernance-run.md) object.
 
 ## Permissions
 
@@ -43,7 +43,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{{workflow_id}}/runs/{runId
 
 ## Optional query parameters
 
-This method supports the `$select`, `$top`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

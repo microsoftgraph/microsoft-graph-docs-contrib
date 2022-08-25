@@ -1,5 +1,5 @@
 ---
-title: "Update workflow"
+title: "Update workflow (lifecycle workflow)"
 description: "Update the properties of a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Update workflow
+# Update workflow (lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -89,7 +89,6 @@ Content-length: 454
 ### Response
 
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

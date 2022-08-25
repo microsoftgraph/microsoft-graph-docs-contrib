@@ -1,5 +1,5 @@
 ---
-title: "List workflows"
+title: "List workflows (lifecycle workflows)"
 description: "Get the workflow resources from the workflows navigation property."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List workflows
+# List workflows (lifecycle workflows)
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -43,7 +43,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows
 
 ## Optional query parameters
 
-This method supports the `$select`, `$top`, `$count`, `$search`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$search`, `$orderBy`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

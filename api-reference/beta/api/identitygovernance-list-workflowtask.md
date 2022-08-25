@@ -1,5 +1,5 @@
 ---
-title: "List tasks"
+title: "List tasks (in a lifecycle workflow)"
 description: "Get the task resources from the tasks navigation property."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List tasks
+# List tasks (in a lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 

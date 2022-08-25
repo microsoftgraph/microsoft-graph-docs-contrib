@@ -1,5 +1,5 @@
 ---
-title: "Create workflow"
+title: "Create workflow (lifecycle workflow)"
 description: "Create a new workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create workflow
+# Create workflow (lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -55,13 +55,14 @@ You can specify the following properties when creating a **workflow**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|String|The category of the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
-|description|String|A string that describes the purpose of the workflow for administrative use. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
-|displayName|String|A unique string that identifies the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
-|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines for who and when a workflow will run.  Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
+|category|lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Can be only one value.|
+|description|String|A string that describes the purpose of the workflow for administrative use.|
+|displayName|String|A unique string that identifies the workflow. |
+|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines for who and when a workflow will run. |
 |id|String|Identifier used for individually addressing a specific workflow.|
-|isEnabled|Boolean|A boolean value that denotes whether the workflow is set to run or not.|
+|isEnabled|Boolean|A Boolean value that denotes whether the workflow is set to run or not.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
+|tasks|Collection(microsoft.graph.identityGovernance.task)| Represents the configured tasks to execute and their execution sequence within the workflow. Required. |
 |tasks||A Boolean value that denotes whether scheduling is enabled or not. |
 
 ## Response

@@ -1,5 +1,5 @@
 ---
-title: "Update Lifecycle Management Settings"
+title: "Update lifecycleManagementSettings (tenant settings for Lifecycle Workflows)"
 description: "Update the properties of a lifecycleManagementSettings object."
 author: "AlexFilipin"
 ms.localizationpriority: medium

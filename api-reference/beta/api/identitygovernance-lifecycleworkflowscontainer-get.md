@@ -1,5 +1,5 @@
 ---
-title: "Get workflow"
+title: "Get workflow (lifecycle workflow)"
 description: "Read the properties and relationships of a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get workflow
+# Get workflow (lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -43,7 +43,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

@@ -1,5 +1,5 @@
 ---
-title: "List runs"
+title: "List runs (for a lifecycle workflow)"
 description: "Get the run resources from the runs navigation property."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List runs
+# List runs (for a lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -43,7 +43,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/runs/
 
 ## Optional query parameters
 
-This method supports the `$select`, `$top`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$orderby`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

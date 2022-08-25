@@ -1,13 +1,13 @@
 ---
-title: "Workflow run summary"
-description: "How to get a summary of runs for a lifecycle workflow"
+title: "run: summary (of a lifecycle workflow)"
+description: "The summary of runs for a lifecycle workflow"
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Workflow Run Summary
+# run: summary (of a lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -44,7 +44,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{{workflow_id}}/runs/summar
 ## Function parameters
 
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

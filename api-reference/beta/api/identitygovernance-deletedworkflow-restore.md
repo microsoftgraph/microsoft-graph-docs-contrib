@@ -1,5 +1,5 @@
 ---
-title: "Restore a workflow"
+title: "workflow: restore (a deleted workflow)"
 description: "Restore a lifecycle workflow"
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Restore a workflow
+# workflow: restore (a deleted workflow)
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a workflow that has been deleted.
+Restore a workflow that has been deleted. You can only restore a workflow that was deleted within the last 30 days before Azure AD automatically permanently deletes it.
 
 ## Permissions
 

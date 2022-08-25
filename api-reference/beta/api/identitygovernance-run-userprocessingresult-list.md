@@ -1,5 +1,5 @@
 ---
-title: "List User processing Results"
+title: "List userProcessingResults (for a run of a lifecycle workflow)"
 description: "List User processing Results of a run object"
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -38,7 +38,7 @@ For delegated scenarios, the admin needs one of the following [Azure AD roles](/
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflows/{{workflow_id}}/runs/{runId}/userProcessingResults/
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/runs/{runId}/userProcessingResults/
 ```
 
 ## Optional query parameters
