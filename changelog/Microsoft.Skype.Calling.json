@@ -68,11 +68,11 @@
         }
       ],
       "Id": "0394ccca-e0d1-494b-a67d-a7328fa13f88",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-07-19T08:49:37.3174776Z",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -94,11 +94,11 @@
         }
       ],
       "Id": "d33a73d7-defa-4d40-99b3-7e4ef3a35098",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-04-20T00:54:53.3530648Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Call"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -152,11 +152,11 @@
         }
       ],
       "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-04-18T06:24:28.2066497Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Call"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -170,11 +170,11 @@
         }
       ],
       "Id": "f811d073-4513-4c88-984f-d2e4f361ead5",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-05-03T16:56:16.0636032Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Calls"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -188,11 +188,11 @@
         }
       ],
       "Id": "0ff183c4-c502-4e00-94f2-aa475d76ce8c",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-05-03T16:56:16.0636032Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Calls"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -206,11 +206,11 @@
         }
       ],
       "Id": "22fc73d0-07a2-40a5-af62-5c9b5acff13b",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-07-05T00:23:34.0823332Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Call"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -232,11 +232,11 @@
         }
       ],
       "Id": "345219af-9abc-41f0-8bca-ce06291a1d48",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-07-05T20:24:31.2114524Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -250,11 +250,11 @@
         }
       ],
       "Id": "ac9d4374-002f-4be5-9c45-ae246ec65191",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-03-18T19:48:31.9995671Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -268,11 +268,11 @@
         }
       ],
       "Id": "1f8b1c03-720b-4dd6-b8f5-c631931dcc10",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-03-18T19:48:31.9995671Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -310,11 +310,11 @@
         }
       ],
       "Id": "6e99df43-f8b1-45e4-baa4-11887ca66497",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-12-16T19:59:27.7039317Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -352,11 +352,11 @@
         }
       ],
       "Id": "508b0389-2906-4441-8729-d5efb56436f5",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-12-06T04:55:32.1798229Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -378,11 +378,11 @@
         }
       ],
       "Id": "a1c09ded-2131-4e15-b265-6ab26cc81c1f",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-12-06T20:08:47.1923484Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -424,7 +424,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-12-08T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Presence"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -470,11 +470,11 @@
         }
       ],
       "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-11-19T00:20:34.714968Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -496,11 +496,11 @@
         }
       ],
       "Id": "fa2e8654-67e0-486d-a6c9-e2a8ba43b95a",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-11-05T21:50:37.3489457Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -514,11 +514,11 @@
         }
       ],
       "Id": "db13b114-ad8b-42c0-95fd-d03d3b102d09",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-10-12T21:32:00.9962748Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Call"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -532,11 +532,11 @@
         }
       ],
       "Id": "facfdb13-3aa0-4556-b808-4c3be32e2d44",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-10-12T21:32:00.9970658Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Call"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -550,11 +550,11 @@
         }
       ],
       "Id": "fafd48cb-8876-431e-890d-3db8d3a4cbe1",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-10-12T21:32:00.9970709Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Call"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -568,11 +568,11 @@
         }
       ],
       "Id": "343da7fc-e885-49d0-850d-b886c9aa40a5",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-10-12T21:32:00.9970722Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Call"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -594,11 +594,11 @@
         }
       ],
       "Id": "01af669a-7767-485f-a237-c3da3b269fb0",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-10-06T23:50:40.2068677Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -636,11 +636,11 @@
         }
       ],
       "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-29T18:05:28.5021936Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Call"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -654,11 +654,11 @@
         }
       ],
       "Id": "257c12e0-27a3-4b01-8701-6ec96fe4c26d",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-29T22:10:57.9979092Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -672,11 +672,11 @@
         }
       ],
       "Id": "dc14dc50-181e-480f-963f-5d8dd6b21904",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-29T19:15:11.695531Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -746,11 +746,11 @@
         }
       ],
       "Id": "888886a4-9134-442c-8268-578a0fda3d2f",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-10-14T04:49:37.889327Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Call"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -764,11 +764,11 @@
         }
       ],
       "Id": "c74d5173-8b40-4f22-a41b-fcd8bc103518",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-10-14T04:49:37.8901959Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -790,11 +790,11 @@
         }
       ],
       "Id": "7684a4c1-6c89-4d19-97c3-b70dea0c96b4",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-15T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meetings"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -808,11 +808,11 @@
         }
       ],
       "Id": "11e3646a-457e-4fbb-bec6-677a72115730",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-09-09T21:40:54.5120151Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meetings"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -842,11 +842,11 @@
         }
       ],
       "Id": "d54aa4a2-6fdf-44fe-8e79-1cc1eab29939",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-26T04:44:06.85621Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meetings"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -868,11 +868,11 @@
         }
       ],
       "Id": "1a59763c-a086-47e4-b6b7-5883c6e80d9a",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-26T04:44:06.8568472Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meetings"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -890,7 +890,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-08-18T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Online meetings"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -915,8 +915,8 @@
       "Teamwork and communications": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-19T00:00:00",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Presence"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -954,11 +954,11 @@
         }
       ],
       "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-08-13T01:42:26.0020901Z",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Calls"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -972,11 +972,11 @@
         }
       ],
       "Id": "499080c4-42f6-45a2-bce0-d215350fec9b",
-      "Teamwork and communications": "Prod",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-16T16:56:16.0636032Z",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Calls"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1033,8 +1033,8 @@
       "Teamwork and communications": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-07-09T22:17:53.668Z",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Calls"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1083,8 +1083,8 @@
       "Teamwork and communications": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-13T00:00:00",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Online meetings"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1109,8 +1109,8 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-23T00:00:00",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Presence"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1135,8 +1135,8 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-10T00:00:00",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Online meetings"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1153,8 +1153,8 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-05-14T00:00:00",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Online meetings"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1195,8 +1195,8 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-19T00:00:00",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Online meetings"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1229,8 +1229,8 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-21T00:00:00",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Online meetings"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1255,8 +1255,8 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-28T00:00:00",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Online meetings"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1289,8 +1289,8 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-16T00:00:00",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Online meetings"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1307,8 +1307,8 @@
       "Teamwork and communications": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-05T00:00:00",
-      "WorkloadArea": "Teamwork communications",
-      "SubArea": "Online meetings"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1325,7 +1325,7 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-03-03T14:17:53.668Z",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1383,7 +1383,7 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-02-16T22:17:53.668Z",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1409,7 +1409,7 @@
       "Teamwork and communications": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-02-13T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1459,7 +1459,7 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-01-13T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1485,7 +1485,7 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-01-08T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1503,7 +1503,7 @@
       "Teamwork and communications": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-12-04T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1521,7 +1521,7 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-11-30T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1547,7 +1547,7 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-10-15T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1565,7 +1565,7 @@
       "Teamwork and communications": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-11-17T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1599,7 +1599,7 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1617,7 +1617,7 @@
       "Teamwork and communications": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1643,7 +1643,7 @@
       "Teamwork and communications": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-08-01T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1669,7 +1669,7 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1696,7 +1696,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Call records"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1713,7 +1713,7 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1747,7 +1747,7 @@
       "Teamwork and communications": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1814,7 +1814,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Call records"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -1976,7 +1976,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Call"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -2010,7 +2010,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -2028,7 +2028,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Call"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -2070,7 +2070,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Call records"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -2103,7 +2103,7 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-12-01T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2137,7 +2137,7 @@
       "Teamwork and communications": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2172,7 +2172,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Call"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -2246,7 +2246,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Teamwork Communications ",
-      "SubArea": "Recording"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -2312,7 +2312,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Online meeting"
+      "SubArea": "Meetings and calling"
     },
     {
       "ChangeList": [
@@ -2377,7 +2377,7 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2451,7 +2451,7 @@
       "Teamwork and communications": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",
-      "WorkloadArea": "Teamwork communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2485,8 +2485,8 @@
         "Teamwork and communications": "prd",
         "Version": "beta",
         "CreatedDateTime": "2022-07-19T00:00:00",
-        "WorkloadArea": "Teamwork communications",
-        "SubArea": "Online meeting"
+        "WorkloadArea": "Teamwork and communications",
+        "SubArea": "Meetings and calling"
   }
 ]
 }
