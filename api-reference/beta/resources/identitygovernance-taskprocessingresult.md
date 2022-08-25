@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type noting the task processing results of tasks processed in workflows created using Lifecycle Workflows.
+Reports for the results of processing [tasks](../resources/identitygovernance-task.md) in a [lifecycle workflow](../resources/identitygovernance-workflow.md).
 
 Inherits from [entity](../resources/entity.md).
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resumes the task processing result.
+An Azure Logic Apps system-assigned managed identity calls this API to resume the task processing result that's `inProgress`.
 
 ## Permissions
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Not Supported.|
 
 > [!IMPORTANT]
-> The resource specified in the [custom task extension authentication Configuration](../resources/identitygovernance-customtaskextension.md), the Azure Logic Apps system-assigned managed identity, is authorized to resume the task processing result without further permissions.
+> Only the Azure Logic Apps system-assigned managed identity that's specified in the [custom task extension authentication Configuration](../resources/identitygovernance-customtaskextension.md) can call this API. The authorized resource doesn't require any Microsoft Graph permissions.
 
 ## HTTP request
 
