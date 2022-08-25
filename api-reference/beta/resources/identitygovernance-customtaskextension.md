@@ -85,14 +85,6 @@ The following is a JSON representation of the resource.
     "callbackConfiguration": {
         "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
         "timeoutDuration": "PT5M"
-    },
-    "createdBy": {
-        "@odata.type": "#microsoft.graph.users",
-        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
-    },
-    "lastModifiedBy": {
-        "@odata.type": "#microsoft.graph.users",
-        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
     }
 }
 ```
