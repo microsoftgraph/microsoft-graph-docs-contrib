@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-todoTaskListId := "todoTaskList-id"
-result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).Tasks().Get()
+
+result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").Tasks().Get()
 
 
 ```

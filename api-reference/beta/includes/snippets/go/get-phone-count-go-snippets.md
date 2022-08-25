@@ -7,18 +7,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ContactsRequestBuilderGetQueryParameters{
-	Search: "%22displayName:wa%22",
-	Count: true,
-}
 headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+	"ConsistencyLevel": "eventual",
 }
-options := &msgraphsdk.ContactsRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
+
+requestSearch := "\"displayName:wa\""
+requestCount := true
+
+requestParameters := &graphconfig.ContactsRequestBuilderGetQueryParameters{
+	Search: &requestSearch,
+	Count: &requestCount,
+}
+configuration := &graphconfig.ContactsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Contacts().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Contacts().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

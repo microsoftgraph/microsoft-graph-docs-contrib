@@ -82,7 +82,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) or [serviceHostedMediaConfig](servicehostedmediaconfig.md) | The media configuration. Required information for creating peer to peer calls or joining meetings.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Read-only. The call media state. |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contains the capabilities of a meeting. Read-only.                                                                                                       |
-| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) or [tokenMeetingInfo](tokenmeetinginfo.md)             | The meeting information. Required information for meeting scenarios.                                                                                                              |
+| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md), [tokenMeetingInfo](tokenmeetinginfo.md), or [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md)            | The meeting information. Required information for meeting scenarios.                                                                                                              |
 |transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | The transcription information for the call. Read-only.                           |
 myParticipantId     | String                                                                                                   | Read-only.                                                                                                                                                                        |
 | requestedModalities | modality collection                                                                                      | The list of requested modalities. Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
@@ -145,7 +145,7 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "activeModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
+  "activeModalities": ["String"],
   "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
   "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
   "callbackUri": "String",
@@ -153,7 +153,7 @@ The following is a JSON representation of the resource.
   "callOptions": {"@odata.type": "#microsoft.graph.outgoingCallOptions"},
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "contentSharingSessions": [{ "@odata.type": "microsoft.graph.contentSharingSession" }],
-  "direction": "incoming | outgoing",
+  "direction": "String",
   "id": "String (identifier)",
   "incomingContext": {"@odata.type": "#microsoft.graph.incomingContext"},
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
@@ -163,12 +163,12 @@ The following is a JSON representation of the resource.
   "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
   "myParticipantId": "String",
   "replacesContext": "String",
-  "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
+  "requestedModalities": ["String"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "ringingTimeoutInSeconds": 99,
-  "routingPolicies": ["none | noMissedCall | disableForwardingExceptPhone | disableForwarding | preferSkypeForBusiness"],
+  "routingPolicies": ["String"],
   "source": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
+  "state": "String",
   "subject": "String",
   "targets": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "tenantId": "String",

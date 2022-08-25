@@ -7,15 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPersonAnnotation()
-detail := msgraphsdk.NewItemBody()
-requestBody.SetDetail(detail)
-contentType := "text"
-detail.SetContentType(&contentType)
+requestBody := graphmodels.NewPersonAnnotation()
+detail := graphmodels.NewItemBody()
+contentType := graphmodels.TEXT_BODYTYPE 
+detail.SetContentType(&contentType) 
 content := "I am originally from Australia, but grew up in Moscow, Russia."
-detail.SetContent(&content)
+detail.SetContent(&content) 
+requestBody.SetDetail(detail)
 displayName := "About Me"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
+
 result, err := graphClient.Me().Profile().Notes().Post(requestBody)
 
 

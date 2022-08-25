@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewCalendar()
+requestBody := graphmodels.NewCalendar()
 name := "Marketing calendar"
-requestBody.SetName(&name)
-calendarGroupId := "calendarGroup-id"
-result, err := graphClient.Me().CalendarGroupsById(&calendarGroupId).Calendars().Post(requestBody)
+requestBody.SetName(&name) 
+
+result, err := graphClient.Me().CalendarGroupsById("calendarGroup-id").Calendars().Post(requestBody)
 
 
 ```

@@ -7,18 +7,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ApplicationsRequestBuilderGetQueryParameters{
-	Search: "%22displayName:Web%22",
-	Count: true,
-}
 headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+	"ConsistencyLevel": "eventual",
 }
-options := &msgraphsdk.ApplicationsRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
+
+requestSearch := "\"displayName:Web\""
+requestCount := true
+
+requestParameters := &graphconfig.ApplicationsRequestBuilderGetQueryParameters{
+	Search: &requestSearch,
+	Count: &requestCount,
+}
+configuration := &graphconfig.ApplicationsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Applications().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Applications().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

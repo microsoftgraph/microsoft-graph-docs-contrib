@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAuthenticationMethodConfiguration()
-state := "enabled"
-requestBody.SetState(&state)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-	"isAttestationEnforced": "true",
+requestBody := graphmodels.NewAuthenticationMethodConfiguration()
+state := graphmodels.ENABLED_AUTHENTICATIONMETHODSTATE 
+requestBody.SetState(&state) 
+additionalData := map[string]interface{}{
+	"isAttestationEnforced" : "true", 
 }
-authenticationMethodConfigurationId := "authenticationMethodConfiguration-id"
-graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(requestBody)
 
 
 ```

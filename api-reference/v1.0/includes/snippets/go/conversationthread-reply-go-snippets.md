@@ -7,18 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPostRequestBody()
-post := msgraphsdk.NewPost()
-requestBody.SetPost(post)
-body := msgraphsdk.NewItemBody()
-post.SetBody(body)
-contentType := ""
-body.SetContentType(&contentType)
+requestBody := graphmodels.NewReplyPostRequestBody()
+post := graphmodels.NewPost()
+body := graphmodels.NewItemBody()
 content := "content-value"
-body.SetContent(&content)
-groupId := "group-id"
-conversationThreadId := "conversationThread-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Reply(group-id, conversationThread-id).Post(requestBody)
+body.SetContent(&content) 
+post.SetBody(body)
+requestBody.SetPost(post)
+
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").Reply().Post(requestBody)
 
 
 ```
