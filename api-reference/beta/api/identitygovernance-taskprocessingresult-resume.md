@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Resume a task processing result
+# Resume a taskProcessingResult
 
 Namespace: microsoft.graph.identityGovernance
 

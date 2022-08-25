@@ -25,6 +25,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All|
 
+For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+- Global administrator
+- Lifecycle workflows administrator
+
 ## HTTP request
 
 <!-- {
@@ -37,7 +42,7 @@ GET /identityGovernance/lifecycleWorkflows/workflowTemplates
 
 ## Optional query parameters
 
-This method supports the `$select`, `$top`, `$count`, `$search`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$top`, `$count`, `$search`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
