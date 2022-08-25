@@ -22,10 +22,8 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List tasks](../api/identitygovernance-list-workflowtask.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get a list of the [task](../resources/identitygovernance-task.md) objects and their properties.|
-|[Create task](../api/identitygovernance-taskprocessingresult-post-task.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|Create a new [task](../resources/identitygovernance-task.md) object.|
 |[Get task](../api/identitygovernance-task-get.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|Read the properties and relationships of a [task](../resources/identitygovernance-task.md) object.|
-|[Delete task](../api/identitygovernance-taskprocessingresult-delete-task.md)|None|Deletes a [task](../resources/identitygovernance-task.md) object.|
-|[Create taskProcessingResult](../api/identitygovernance-task-post-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md)|Create a new taskProcessingResult object.|
+
 
 ## Properties
 

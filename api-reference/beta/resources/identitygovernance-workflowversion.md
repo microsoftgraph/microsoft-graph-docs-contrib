@@ -23,7 +23,6 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |:---|:---|:---|
 |[List workflowVersions](../api/identitygovernance-workflowversion-list.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md) collection|Get a list of the [workflowVersion](../resources/identitygovernance-workflowversion.md) objects and their properties.|
 |[Get workflowVersion](../api/identitygovernance-workflowversion-get.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md)|Read the properties and relationships of a [workflowVersion](../resources/identitygovernance-workflowversion.md) object.|
-|[Delete workflowVersion](../api/identitygovernance-workflow-delete-versions.md)|None|Deletes a [workflowVersion](../resources/identitygovernance-workflowversion.md) object.|
 |[List tasks](../api/identitygovernance-list-workflowtask.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get the task resources from the tasks navigation property.|
 |[List userProcessingResults](../api/identitygovernance-userprocessingresult-list.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Get the userProcessingResult resources from the userProcessingResults navigation property.|
 
