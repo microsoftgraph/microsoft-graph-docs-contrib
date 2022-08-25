@@ -475,7 +475,7 @@ items:
           href: resources/message.md
         - name: Create mail folder
           href: api/user-post-mailfolders.md
-        - name: Create message
+        - name: Create draft message
           href: api/user-post-messages.md
         - name: Create message rule
           href: api/mailfolder-post-messagerules.md
@@ -1201,11 +1201,11 @@ items:
           href: api/message-copy.md
         - name: Move event message
           href: api/message-move.md
-        - name: Create Reply
+        - name: Create draft to reply
           href: api/message-createreply.md
         - name: Reply event message
           href: api/message-reply.md
-        - name: Create ReplyAll
+        - name: Create draft to reply-all
           href: api/message-createreplyall.md
         - name: ReplyAll event message
           href: api/message-replyall.md
@@ -5402,6 +5402,34 @@ items:
               href: api/authorizationpolicy-get.md
             - name: Update
               href: api/authorizationpolicy-update.md
+          - name: Consent requests
+            href: resources/consentrequests-overview.md
+            items:
+            - name: Admin consent request policy
+              href: resources/adminconsentrequestpolicy.md
+              items:
+              - name: Get
+                href: api/adminconsentrequestpolicy-get.md
+              - name: Update
+                href: api/adminconsentrequestpolicy-update.md
+            - name: App consent requests
+              href: resources/appconsentrequest.md
+              items:
+              - name: List
+                href: api/appconsentapprovalroute-list-appconsentrequests.md
+              - name: Get
+                href: api/appconsentrequest-get.md
+              - name: Filter by current user
+                href: api/appconsentrequest-filterByCurrentUser.md
+            - name: User consent requests
+              href: resources/userconsentrequest.md
+              items:
+              - name: List
+                href: api/appconsentrequest-list-userconsentrequests.md
+              - name: Get
+                href: api/userconsentrequest-get.md
+              - name: Filter by current user
+                href: api/userconsentrequest-filterByCurrentUser.md
           - name: Claims mapping policy
             href: resources/claimsmappingpolicy.md
             items:
@@ -5575,6 +5603,8 @@ items:
             - name: Delete
               href: api/identityapiconnector-delete.md
       - name: Governance
+        href: resources/identitygovernance-overview.md
+        displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
         items:
         - name: Access reviews
           href: resources/accessreviewsv2-overview.md
@@ -5663,34 +5693,6 @@ items:
               - name: Generate download URI
                 displayName: Downloadable access review history report
                 href: api/accessreviewhistoryinstance-generatedownloaduri.md
-        - name: Consent requests
-          href: resources/consentrequests-overview.md
-          items:
-          - name: Admin consent request policy
-            href: resources/adminconsentrequestpolicy.md
-            items:
-            - name: Get
-              href: api/adminconsentrequestpolicy-get.md
-            - name: Update
-              href: api/adminconsentrequestpolicy-update.md
-          - name: App consent requests
-            href: resources/appconsentrequest.md
-            items:
-            - name: List
-              href: api/appconsentapprovalroute-list-appconsentrequests.md
-            - name: Get
-              href: api/appconsentrequest-get.md
-            - name: Filter by current user
-              href: api/appconsentrequest-filterByCurrentUser.md
-          - name: User consent requests
-            href: resources/userconsentrequest.md
-            items:
-            - name: List
-              href: api/appconsentrequest-list-userconsentrequests.md
-            - name: Get
-              href: api/userconsentrequest-get.md
-            - name: Filter by current user
-              href: api/userconsentrequest-filterByCurrentUser.md
         - name: Entitlement management
           href: resources/entitlementmanagement-overview.md
           items:
@@ -5848,6 +5850,100 @@ items:
               href: api/agreement-post-files.md
             - name: List localized files
               href: api/agreement-list-files.md
+        - name: Privileged identity management
+          displayName: Privileged identity management, PIM
+          href: resources/privilegedidentitymanagementv3-overview.md
+          items:
+          - name: Role assignments
+            items:
+              - name: Schedule requests
+                href: resources/unifiedroleassignmentschedulerequest.md
+                items:
+                  - name: List
+                    href: api/rbacapplication-list-roleassignmentschedulerequests.md
+                  - name: Create
+                    href: api/rbacapplication-post-roleassignmentschedulerequests.md
+                  - name: Get
+                    href: api/unifiedroleassignmentschedulerequest-get.md
+                  - name: Cancel
+                    href: api/unifiedroleassignmentschedulerequest-cancel.md
+                  - name: Filter by current user
+                    href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+              - name: Schedules
+                href: resources/unifiedroleassignmentschedule.md
+                items:
+                  - name: List
+                    href: api/rbacapplication-list-roleassignmentschedules.md
+                  - name: Get
+                    href: api/unifiedroleassignmentschedule-get.md
+                  - name: Filter by current user
+                    href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+              - name: Schedule instances
+                href: resources/unifiedroleassignmentscheduleinstance.md
+                items:
+                  - name: List
+                    href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+                  - name: Get
+                    href: api/unifiedroleassignmentscheduleinstance-get.md
+                  - name: Filter by current user
+                    href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+          - name: Role eligibility
+            items:
+            - name: Schedule requests
+              href: resources/unifiedroleeligibilityschedulerequest.md
+              items:
+                - name: List
+                  href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+                - name: Create
+                  href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+                - name: Get
+                  href: api/unifiedroleeligibilityschedulerequest-get.md
+                - name: Cancel
+                  href: api/unifiedroleeligibilityschedulerequest-cancel.md
+                - name: Filter by current user
+                  href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+            - name: Schedules
+              href: resources/unifiedroleeligibilityschedule.md
+              items:
+                - name: List
+                  href: api/rbacapplication-list-roleeligibilityschedules.md
+                - name: Get
+                  href: api/unifiedroleeligibilityschedule-get.md
+                - name: Filter by current user
+                  href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+            - name: Schedule instances
+              href: resources/unifiedroleeligibilityscheduleinstance.md
+              items:
+                - name: List
+                  href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+                - name: Get
+                  href: api/unifiedroleeligibilityscheduleinstance-get.md
+                - name: Filter by current user
+                  href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+          - name: Role management policies
+            items:
+            - name: Policies and rules
+              displayName: role management policies, Azure AD role settings
+              href: resources/unifiedrolemanagementpolicy.md
+              items:
+              - name: List
+                href: api/policyroot-list-rolemanagementpolicies.md
+              - name: Get
+                href: api/unifiedrolemanagementpolicy-get.md
+              - name: List rules
+                href: api/unifiedrolemanagementpolicy-list-rules.md
+              - name: Get rule
+                href: api/unifiedrolemanagementpolicyrule-get.md
+              - name: Update rule
+                href: api/unifiedrolemanagementpolicyrule-update.md
+            - name: Policy assignments
+              displayName: role managemement policy assignments
+              href: resources/unifiedrolemanagementpolicyassignment.md
+              items:
+              - name: List
+                href: api/policyroot-list-rolemanagementpolicyassignments.md
+              - name: Get
+                href: api/unifiedrolemanagementpolicyassignment-get.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
@@ -5858,7 +5954,7 @@ items:
         items:
         - name: List messages
           href: api/user-list-messages.md
-        - name: Create message
+        - name: Create draft message
           href: api/user-post-messages.md
         - name: Get message
           href: api/message-get.md
@@ -5868,23 +5964,23 @@ items:
           href: api/message-delete.md
         - name: Get message delta
           href: api/message-delta.md
-        - name: Send messages
+        - name: Send draft message
           href: api/message-send.md
-        - name: Copy messages
+        - name: Copy message
           href: api/message-copy.md
-        - name: Move messages
+        - name: Move message
           href: api/message-move.md
-        - name: Create reply to messages
+        - name: Create draft to reply
           href: api/message-createreply.md
-        - name: Reply to messages
+        - name: Reply to a message
           href: api/message-reply.md
-        - name: Create reply all to messages
+        - name: Create draft to reply-all 
           href: api/message-createreplyall.md
-        - name: Reply all to messages
+        - name: Reply-all to a message
           href: api/message-replyall.md
-        - name: Create Forward message
+        - name: Create draft to forward message
           href: api/message-createforward.md
-        - name: Forward messages
+        - name: Forward message
           href: api/message-forward.md
         - name: Send mail
           href: api/user-sendmail.md

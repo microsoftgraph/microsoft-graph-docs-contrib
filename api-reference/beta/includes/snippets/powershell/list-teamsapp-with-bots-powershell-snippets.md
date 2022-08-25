@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgAppCatalogTeamApp -ExpandProperty "appDefinitions(`$expand=bot)" -Filter "appDefinitions/any(a:a/bot ne null)"  -OutFile $outFileId
+Get-MgAppCatalogTeamApp -ExpandProperty "appDefinitions(`$expand=bot)" -Filter "appDefinitions/any(a:a/bot ne null)" 
 
 ```

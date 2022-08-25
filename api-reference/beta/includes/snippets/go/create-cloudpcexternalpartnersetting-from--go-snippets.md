@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCloudPcExternalPartnerSetting()
-"@odata.type" := "#microsoft.graph.cloudPcExternalPartnerSetting"
-requestBody.Set"@odata.type"(&"@odata.type") 
 partnerId := "198d7140-80bb-4843-8cc4-811377a49a92"
 requestBody.SetPartnerId(&partnerId) 
 enableConnection := true

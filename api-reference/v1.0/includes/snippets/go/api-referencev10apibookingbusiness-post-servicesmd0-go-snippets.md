@@ -8,16 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewBookingService()
-"@odata.type" := "#microsoft.graph.bookingService"
-requestBody.Set"@odata.type"(&"@odata.type") 
-defaultDuration := "PT1H30M"
+defaultDuration , err := abstractions.ParseISODuration("PT1H30M")
 requestBody.SetDefaultDuration(&defaultDuration) 
 defaultLocation := graphmodels.NewLocation()
-"@odata.type" := "#microsoft.graph.location"
-defaultLocation.Set"@odata.type"(&"@odata.type") 
 address := graphmodels.NewPhysicalAddress()
-"@odata.type" := "#microsoft.graph.physicalAddress"
-address.Set"@odata.type"(&"@odata.type") 
 city := "Buffalo"
 address.SetCity(&city) 
 countryOrRegion := "USA"
@@ -64,11 +58,9 @@ requestBody.SetDefaultPriceType(&defaultPriceType)
 
 
 bookingReminder := graphmodels.NewBookingReminder()
-"@odata.type" := "#microsoft.graph.bookingReminder"
-bookingReminder.Set"@odata.type"(&"@odata.type") 
 message := "Please be reminded that this service is tomorrow."
 bookingReminder.SetMessage(&message) 
-offset := "P1D"
+offset , err := abstractions.ParseISODuration("P1D")
 bookingReminder.SetOffset(&offset) 
 recipients := graphmodels.ALLATTENDEES_BOOKINGREMINDERRECIPIENTS 
 bookingReminder.SetRecipients(&recipients) 
@@ -94,22 +86,20 @@ isHiddenFromCustomers := false
 requestBody.SetIsHiddenFromCustomers(&isHiddenFromCustomers) 
 notes := "Home-cooked special"
 requestBody.SetNotes(&notes) 
-postBuffer := "PT10M"
+postBuffer , err := abstractions.ParseISODuration("PT10M")
 requestBody.SetPostBuffer(&postBuffer) 
-preBuffer := "PT5M"
+preBuffer , err := abstractions.ParseISODuration("PT5M")
 requestBody.SetPreBuffer(&preBuffer) 
 schedulingPolicy := graphmodels.NewBookingSchedulingPolicy()
-"@odata.type" := "#microsoft.graph.bookingSchedulingPolicy"
-schedulingPolicy.Set"@odata.type"(&"@odata.type") 
 allowStaffSelection := true
 schedulingPolicy.SetAllowStaffSelection(&allowStaffSelection) 
-maximumAdvance := "P10D"
+maximumAdvance , err := abstractions.ParseISODuration("P10D")
 schedulingPolicy.SetMaximumAdvance(&maximumAdvance) 
-minimumLeadTime := "PT10H"
+minimumLeadTime , err := abstractions.ParseISODuration("PT10H")
 schedulingPolicy.SetMinimumLeadTime(&minimumLeadTime) 
 sendConfirmationsToOwner := true
 schedulingPolicy.SetSendConfirmationsToOwner(&sendConfirmationsToOwner) 
-timeSlotInterval := "PT1H"
+timeSlotInterval , err := abstractions.ParseISODuration("PT1H")
 schedulingPolicy.SetTimeSlotInterval(&timeSlotInterval) 
 requestBody.SetSchedulingPolicy(schedulingPolicy)
 staffMemberIds := []string {

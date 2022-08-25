@@ -8,12 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewEducationOutcome()
-"@odata.type" := "#microsoft.graph.educationFeedbackResourceOutcome"
-requestBody.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 feedbackResource := graphmodels.New()
-"@odata.type" := "#microsoft.graph.educationWordResource"
-feedbackResource.Set"@odata.type"(&"@odata.type") 
 displayName := "Document1.docx"
 feedbackResource.SetDisplayName(&displayName) 
 	requestBody.SetFeedbackResource(feedbackResource)

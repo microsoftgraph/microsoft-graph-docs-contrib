@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgTrustFrameworkKeySetActiveKey -TrustFrameworkKeySetId $trustFrameworkKeySetId -OutFile $outFileId
+Get-MgTrustFrameworkKeySetActiveKey -TrustFrameworkKeySetId $trustFrameworkKeySetId
 
 ```

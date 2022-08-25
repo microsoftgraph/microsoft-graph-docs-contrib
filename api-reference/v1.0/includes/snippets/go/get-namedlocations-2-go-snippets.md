@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "isof('microsoft.graph.ipNamedLocation')"
+
 requestParameters := &graphconfig.NamedLocationsRequestBuilderGetQueryParameters{
-	Filter: "isof('microsoft.graph.ipNamedLocation')",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.NamedLocationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
