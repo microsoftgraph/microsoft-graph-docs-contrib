@@ -1,6 +1,6 @@
 ---
 title: "List contactInsights"
-description: "Retrieve properties of insightsSettings object for displaying or returning item insights in an organization."
+description: "Retrieve properties of insightsSettings object for displaying or returning contact insights in an organization."
 author: "rogoy"
 ms.localizationpriority: medium
 ms.prod: "insights"
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # List contactInsights
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning contact insights in an organization.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|

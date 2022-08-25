@@ -259,5 +259,3 @@ Content-type: application/json
 }
 ```
 
-
- 107  api-reference/beta/api/iteminsightssettings-get.md 
