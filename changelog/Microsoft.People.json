@@ -106,10 +106,10 @@
 			"ChangeList": [
 				{
 				"Id": "109fc26e-a37d-4001-bce1-f7d72caf97b5",
-				"ApiChange": "Resource",
+				"ApiChange": "Relationship",
 				"ChangedApiName": "contactInsights",
 				"ChangeType": "Addition",
-				"Description": "Added the [contactInsights](https://docs.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource",
+				"Description": "Added the contactInsights navigation property to the [contactInsights](https://docs.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource",
 				"Target": "organizationSettings"
 				}
 			],
