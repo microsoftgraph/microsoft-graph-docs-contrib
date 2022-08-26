@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List taskReports](../api/identitygovernance-workflow-list-taskreports.md)|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) collection|Get a list of the [taskReport](../resources/identitygovernance-taskreport.md) objects and their properties.|
 |[Summary](../api/identitygovernance-taskreport-summary.md)|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md)|Read the properties and relationships of a [taskReport](../resources/identitygovernance-taskreport.md) object.|
-|[List taskProcessingResults](../api/identitygovernance-taskreport-list-taskprocessingresult.md)|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|Get the taskProcessingResult resources from the taskProcessingResults navigation property.|
+|[List taskProcessingResults](../api/identitygovernance-taskreport-list-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|Get the taskProcessingResult resources from the taskProcessingResults navigation property.|
 
 ## Properties
 
