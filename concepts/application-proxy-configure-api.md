@@ -90,7 +90,7 @@ Content-type: application/json
 
 Insert the **id** that you recorded for the application into the URL to start the configuration of Application Proxy. In this example, you're using an app with the internal URL: `https://contosoiwaapp.com`. You also use the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. Update the following properties in the request body:
 
-- **identifierUri**, **redirectUri**, and **homepageUrl** - Set each to the same external URL
+- **identifierUri**, **redirectUri**, and **homepageUrl** - Set each to the same external URL.
 
 #### Request
 
@@ -119,9 +119,9 @@ HTTP/1.1 204 No content
 
 Update the following properties in the request body:
 
-- **internalUrl** - Set to the internal URL
-- **externalUrl** - Set to the external URL
-- All other values may be configured as desired. [Learn more here.](https://docs.microsoft.com/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
+- **internalUrl** - Set to the internal URL.
+- **externalUrl** - Set to the external URL.
+- All other values can be configured as needed. For details, see [Add an on-premises app to Azure AD](https://docs.microsoft.com/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
 #### Request
 
