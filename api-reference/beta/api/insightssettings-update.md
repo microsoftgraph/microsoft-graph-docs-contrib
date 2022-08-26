@@ -217,7 +217,7 @@ Content-type: application/json
 ### Example 3: Update settings for contact insights
 #### Request
 
-The following is an example of a request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying contact insights of users in a particular Azure AD group.
+The following is an example of a request that shows how an admin updates "**disabledForGroup**" privacy setting to prohibit displaying user's contact insights in a particular Azure AD group.
 
 
 
