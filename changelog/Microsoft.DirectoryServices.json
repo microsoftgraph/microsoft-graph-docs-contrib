@@ -209,7 +209,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "requestSignatureVerification",
           "ChangeType": "Addition",
-          "Description": "Added the [requestSignatureVerification](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource",
+          "Description": "Added the **requestSignatureVerification** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
           "Target": "application"
         }
       ],
