@@ -88,11 +88,40 @@ Content-type: application/json
 
 ## Step 2: Configure Application Proxy
 
-Use the **id** that you recorded for the application to start the configuration of Application Proxy. Update the following properties:
+Insert the **id** that you recorded for the application into the URL to start the configuration of Application Proxy. In this example, you're using an app with the internal URL: `https://contosoiwaapp.com`. You also use the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. Update the following properties in the request body:
 
-- **onPremisesPublishing** - In this example, you're using an app with the internal URL: `https://contosoiwaapp.com`. You also use the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. 
-- **redirectUri**, **identifierUri**, and **homepageUrl** - Set to the same external URL configured in the **onPremisesPublishing** property.
-- **implicitGrantSettings** - Set to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
+- **identifierUri**, **redirectUri**, and **homepageUrl** - Set each to the same external URL.
+
+#### Request
+
+```http
+PATCH https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
+Content-type: application/json
+
+{
+    "identifierUris": [
+        "https://contosoiwaapp-contoso.msappproxy.net"
+    ],
+    "web": {
+        "redirectUris": [
+            "https://contosoiwaapp-contoso.msappproxy.net"
+        ],
+        "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
+    }
+}
+```
+
+#### Response
+
+```http
+HTTP/1.1 204 No content
+```
+
+Update the following properties in the request body:
+
+- **internalUrl** - Set to the internal URL.
+- **externalUrl** - Set to the external URL.
+- All other values can be configured as needed. For details, see [Add an on-premises app to Azure AD](https://docs.microsoft.com/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
 #### Request
 
@@ -101,20 +130,18 @@ PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd
 Content-type: application/json
 
 {
-  "onPremisesPublishing": {
-    "externalAuthenticationType": "aadPreAuthentication",
-    "internalUrl": "https://contosoiwaapp.com",
-    "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-  },
-  "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-  "web": {
-    "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-    "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net",
-    "implicitGrantSettings": {
-      "enableIdTokenIssuance": true,
-      "enableAccessTokenIssuance": false
+    "onPremisesPublishing": {
+        "externalAuthenticationType": "aadPreAuthentication",
+        "internalUrl": "https://contosoiwaapp.com",
+        "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net",
+        "isHttpOnlyCookieEnabled": true,
+        "isOnPremPublishingEnabled": true,
+        "isPersistentCookieEnabled": true,
+        "isSecureCookieEnabled": true,
+        "isStateSessionEnabled": true,
+        "isTranslateHostHeaderEnabled": true,
+        "isTranslateLinksInBodyEnabled": true
     }
-  }
 }
 ```
 
