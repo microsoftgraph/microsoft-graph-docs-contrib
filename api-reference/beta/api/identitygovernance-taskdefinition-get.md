@@ -1,5 +1,5 @@
 ---
-title: "Get Task Definition"
+title: "Get taskDefinition"
 description: "Read the properties and relationships of a taskDefinition object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -43,7 +43,7 @@ GET /identityGovernance/lifecycleWorkflows/taskDefinitions/{taskDefinitionId}
 
 ## Optional query parameters
 
-This method supports the `$select`, `$top`, `$count`, `$search`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

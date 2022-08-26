@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Update lifecycleManagementSettings
+# Update lifecycleManagementSettings (tenant settings for Lifecycle Workflows)
 
 Namespace: microsoft.graph.identityGovernance
 

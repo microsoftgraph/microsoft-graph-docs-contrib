@@ -1,6 +1,6 @@
 ---
 title: "workflowVersion resource type"
-description: "**TODO: Add Description**"
+description: "The version of a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
