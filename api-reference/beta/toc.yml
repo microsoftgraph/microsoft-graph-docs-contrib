@@ -12255,6 +12255,8 @@ items:
               href: api/authenticationoperation-get.md
         - name: Authentication strengths
           items:
+          - name: Overview
+            href: resources/authenticationstrengths-overview.md
           - name: Authentication strengths policy
             href: resources/authenticationstrengthpolicy.md
             items:
