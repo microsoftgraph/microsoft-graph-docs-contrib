@@ -41,6 +41,16 @@ For delegated scenarios, the admin needs one of the following [Azure AD roles](/
 GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/taskReports/summary(startDateTime={timestamp},endDateTime={timestamp})
 ```
 
+
+## Function parameters
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that are required with this function.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|startDateTime|DateTimeOffset|The start date and time of the period for which the taskReport summary will be generated|
+|endDateTime|DateTimeOffset|The end date and time of the period for which the taskReport summary will be generated|
+
 ## Optional query parameters
 
 This method supports the `$count`, `$orderBy`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
