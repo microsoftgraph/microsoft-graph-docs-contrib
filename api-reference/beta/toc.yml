@@ -10460,6 +10460,8 @@ items:
             href: api/manageddevice-reprovisioncloudpc.md
           - name: Resize remotely
             href: api/manageddevice-resizecloudpc.md
+          - name: Restore
+            href: api/cloudpc-restore.md
           - name: Restore remotely
             href: api/manageddevice-restorecloudpc.md
           - name: Set review status
