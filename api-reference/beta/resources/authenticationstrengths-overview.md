@@ -38,7 +38,7 @@ These authentication strengths are appled by including them in Conditional Acces
 
 ## Authentication combinations
 
-The [authentication combinations](api/authenticationstrengthroot-list-authenticationcombinations.md) API allows the caller to retrieve a read-only list of all supported authentication method combinations. Each combination comprises one or two comma-separated [authentication method modes](authenticationmethodmodedetail.md), and each combination is a part of a built-in authentication strength and may be used in custom authentication strengths.
+The [authentication combinations](../api/authenticationstrengthroot-list-authenticationcombinations.md) API allows the caller to retrieve a read-only list of all supported authentication method combinations. Each combination comprises one or two comma-separated [authentication method modes](authenticationmethodmodedetail.md), and each combination is a part of a built-in authentication strength and may be used in custom authentication strengths.
 
 Some example combinations:
 
