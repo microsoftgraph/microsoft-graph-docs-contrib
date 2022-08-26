@@ -13,7 +13,7 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 
 ## Common use cases
 
-| Use cases | See also | REST resources |
+| Use cases | REST resources | See also |
 :-----------------|:----------|:--------|
 | Create and manage teams, groups and channels | [team](../resources/team.md), [channel](../resources/channel.md), [group](../resources/group.md) | [create team](../api/team-put-teams.md), [list teams](../api/user-list-joinedteams.md), [create channel](../api/channel-post.md) |
 | Add tabs, manage or install apps in the Microsoft Teams app catalog | [teamsTab](../resources/teamstab.md), [teamsAppInstallation](../resources/teamsappinstallation.md) | [create teamsTab](../api/channel-post-tabs.md), [list teamsTab](../api/channel-list-tabs.md), [list apps](../api/appcatalogs-list-teamsapps.md) |

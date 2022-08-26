@@ -9,13 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Overview for fostering teamwork using Microsoft Teams, Shifts, and Viva Learning apps
 
-
-
-[Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for team collaboration, intelligent communications, fostering a culture that help employees thrive. Built on the strength and scale of [Microsoft 365](https://products.office.com/) with over 120 million users, Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features. 
-Available on Teams, Viva Learning and its API let employers integrate content from learning management systems, letting employees discover, share, and prioritize learning, incorporating learning into the flow of work. The Microsoft Shifts app and its API give employers and frontline workers real-time visibility into schedules based on worker availability, and let them adjust schedules to their team's needs.
-
-
-
+[Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for team collaboration and intelligent communications that fosters a culture where employees thrive. Built on the strength and scale of [Microsoft 365](https://products.office.com/) with over 120 million users, Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features. Available on Teams, the Microsoft Shifts app and its API give employers and frontline workers real-time visibility into schedules based on worker availability, and let them adjust schedules to their team's needs. Viva Learning and its API let employers integrate content from learning management systems, letting employees discover, share, and prioritize learning, incorporating learning into the flow of work.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
 
@@ -39,7 +33,7 @@ The rich features of Microsoft Teams and its API open up many scenarios for app 
 
 [Cultivate workforce](#cultivate-workforce)
 - [Manage shifts and staff schedules](#manage-shifts-and-staff-schedules)
-- [Enable employee learning using the collaborative capabilities in Teams](#enable-employee-learning-using-the-collaborative-capabilities-in-teams)
+- [Enable employee learning using the collaborative capabilities in Teams (preview)](#enable-employee-learning-using-the-collaborative-capabilities-in-teams)
 
 
 ## Automate workflows
@@ -180,7 +174,7 @@ Whether scheduling a meeting between a doctor and a patient or between a user an
 ### Manage shifts and staff schedules
 Available on Teams, the Microsoft Shifts app manages shifts, staff scheduling, and time tracking. Being integrated with Teams streamlines communications using dedicated channels and teams built to connect the workforce and foster community building. Use the [Shifts API](/graph/api/resources/shift) to pull shift data into your staffing systems, provide frontline workers with shift information they need in one place, and empower them to own their schedules, request shift in a schedule, and swap or offer shifts.
 
-### Enable employee learning using the collaborative capabilities in Teams
+### Enable employee learning using the collaborative capabilities in Teams (preview)
 Viva Learning built for Microsoft Teams and Microsoft 365 brings employee learning into the flow of work. Viva Learning lets employers register learning providers, upload and manage content metadata, learner assignments, and completion records. Employees can share learning content in Teams messages, meeting chats, or emails, encouraging peer learning and mentoring conversations. 
 
 Use the employee learning APIs for Viva Learning to: 
