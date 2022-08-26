@@ -7,20 +7,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewAnswerPostRequestBody()
 callbackUri := "https://bot.contoso.com/api/calls"
-requestBody.SetCallbackUri(&callbackUri)
-requestBody.SetAcceptedModalities( []Modality {
+requestBody.SetCallbackUri(&callbackUri) 
+acceptedModalities := []graphmodels.Modalityable {
 	"audio",
+
 }
-mediaConfig := msgraphsdk.NewMediaConfig()
+requestBody.SetAcceptedModalities(acceptedModalities)
+mediaConfig := graphmodels.NewMediaConfig()
+additionalData := map[string]interface{}{
+	"blob" : "<Media Session Configuration Blob>", 
+}
+mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
-mediaConfig.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.appHostedMediaConfig",
-	"blob": "<Media Session Configuration Blob>",
-}
-callId := "call-id"
-graphClient.Communications().CallsById(&callId).Answer(call-id).Post(requestBody)
+
+graphClient.Communications().CallsById("call-id").Answer().Post(requestBody)
 
 
 ```

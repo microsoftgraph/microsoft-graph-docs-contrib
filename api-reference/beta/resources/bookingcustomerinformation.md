@@ -27,6 +27,7 @@ Inherits from [bookingCustomerInformationBase](bookingcustomerinformationbase.md
 |name|String|The customer's name. |
 |notes|String|Notes from the customer associated with this appointment. You can get the value only when reading this **bookingAppointment** by its ID. You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by the **customerId**. |
 |phone|String|The customer's phone number. |
+|smsNotificationsEnabled|Boolean|Indicates if the SMS notifications will be sent to the customer for the appointment
 |timeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](../resources/datetimetimezone.md).|
 
 ## Relationships
@@ -47,6 +48,7 @@ The following is a JSON representation of the resource.
   "emailAddress": "String",
   "phone": "String",
   "notes": "String",
+  "smsNotificationsEnabled": "Boolean",
   "location": {
     "@odata.type": "microsoft.graph.location"
   },

@@ -7,16 +7,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewDirectorySetting()
-requestBody.SetValues( []SettingValue {
-	msgraphsdk.NewSettingValue(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "CustomBlockedWordsList",
-		"value": "Contoso",
-	}
+requestBody := graphmodels.NewDirectorySetting()
+
+
+settingValue := graphmodels.NewSettingValue()
+additionalData := map[string]interface{}{
+	"name" : "CustomBlockedWordsList", 
+	"value" : "Contoso", 
 }
-directorySettingId := "directorySetting-id"
-graphClient.SettingsById(&directorySettingId).Patch(requestBody)
+settingValue.SetAdditionalData(additionalData)
+
+values := []graphmodels.SettingValueable {
+	settingValue,
+
+}
+requestBody.SetValues(values)
+
+graphClient.SettingsById("directorySetting-id").Patch(requestBody)
 
 
 ```

@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | VirtualAppointment.ReadWrite.All
 
 > [!NOTE]
->Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. Online meeting permissions will no longer be supported starting December 1, 2022.
+> Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. Online meeting permissions will no longer be supported starting December 1, 2022.
 
 ## HTTP request
 
@@ -67,9 +67,12 @@ If successful, this method returns a `201 Created` response code and a [virtualA
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_virtualappointment_from_"
+  "name": "create_virtualappointment_from_",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
 }
 -->
 ``` http
@@ -96,6 +99,13 @@ Content-length: 379
     "externalAppointmentUrl": "https://anyschedulingsystem.com/api/appointments/MkADKnAAA="
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualappointment-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-baseTaskListId := "baseTaskList-id"
-graphClient.Me().Tasks().ListsById(&baseTaskListId).Delete()
+
+graphClient.Me().Tasks().ListsById("baseTaskList-id").Delete()
 
 
 ```

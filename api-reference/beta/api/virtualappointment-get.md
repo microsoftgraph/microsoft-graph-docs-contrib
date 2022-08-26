@@ -25,7 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | VirtualAppointment.ReadWrite.All, VirtualAppointment.Read.All
 
 > [!NOTE]
->Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. Online meeting permissions will no longer be supported starting December 1, 2022.
+> Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. Online meeting permissions will no longer be supported starting December 1, 2022.
+
 
 ## HTTP request
 
@@ -59,14 +60,32 @@ If successful, this method returns a `200 OK` response code and a [virtualAppoin
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_virtualappointment"
+  "name": "get_virtualappointment",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-virtualappointment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-virtualappointment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-virtualappointment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

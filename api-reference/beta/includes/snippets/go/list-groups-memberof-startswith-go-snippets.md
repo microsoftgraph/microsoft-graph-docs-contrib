@@ -7,20 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.GroupRequestBuilderGetQueryParameters{
-	Count: true,
-	Orderby: "displayName",
-	Filter: "startswith(displayName,%20'A')",
-}
 headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+	"ConsistencyLevel": "eventual",
 }
-options := &msgraphsdk.GroupRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
+
+requestCount := true
+requestFilter := "startswith(displayName,%20'A')"
+
+requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
+	Count: &requestCount,
+	Orderby: [] string {"displayName"},
+	Filter: &requestFilter,
+}
+configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
+	QueryParameters: requestParameters,
 }
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).MemberOf().Group(group-id).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.GroupsById("group-id").MemberOf().Group().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

@@ -53,7 +53,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following example updates the business email address and scheduling policy, to change the business default booking time slot to an hour, and advance booking up to 30 days.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com

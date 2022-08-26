@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-userId := "user-id"
-appRoleAssignmentId := "appRoleAssignment-id"
-graphClient.UsersById(&userId).AppRoleAssignmentsById(&appRoleAssignmentId).Delete()
+
+graphClient.UsersById("user-id").AppRoleAssignmentsById("appRoleAssignment-id").Delete()
 
 
 ```

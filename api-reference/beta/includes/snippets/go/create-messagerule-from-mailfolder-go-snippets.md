@@ -7,29 +7,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewMessageRule()
+requestBody := graphmodels.NewMessageRule()
 displayName := "From partner"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 sequence := int32(2)
-requestBody.SetSequence(&sequence)
+requestBody.SetSequence(&sequence) 
 isEnabled := true
-requestBody.SetIsEnabled(&isEnabled)
-conditions := msgraphsdk.NewMessageRulePredicates()
-requestBody.SetConditions(conditions)
-conditions.SetSenderContains( []String {
+requestBody.SetIsEnabled(&isEnabled) 
+conditions := graphmodels.NewMessageRulePredicates()
+senderContains := []string {
 	"adele",
+
 }
-actions := msgraphsdk.NewMessageRuleActions()
-requestBody.SetActions(actions)
-actions.SetForwardTo( []Recipient {
-	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+conditions.SetSenderContains(senderContains)
+requestBody.SetConditions(conditions)
+actions := graphmodels.NewMessageRuleActions()
+
+
+recipient := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
+name := "Alex Wilbur"
+emailAddress.SetName(&name) 
+address := "AlexW@contoso.onmicrosoft.com"
+emailAddress.SetAddress(&address) 
+recipient.SetEmailAddress(emailAddress)
+
+forwardTo := []graphmodels.Recipientable {
+	recipient,
+
 }
+actions.SetForwardTo(forwardTo)
 stopProcessingRules := true
-actions.SetStopProcessingRules(&stopProcessingRules)
-mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).MessageRules().Post(requestBody)
+actions.SetStopProcessingRules(&stopProcessingRules) 
+requestBody.SetActions(actions)
+
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").MessageRules().Post(requestBody)
 
 
 ```

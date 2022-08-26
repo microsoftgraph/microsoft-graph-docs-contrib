@@ -52,7 +52,8 @@ You can specify the following properties when creating an **accessPackageAssignm
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Specifies the settings for approval of requests for an access package assignment through this policy. For example, if approval is required for new requests.|
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Provides additional settings to select who can create a request for an access package assignment through this policy, and what they can include in their request.|
 |reviewSettings|[accessPackageAssignmentReviewSettings](../resources/accesspackageassignmentreviewsettings.md)|Settings for access reviews of assignments through this policy.|
-|specificAllowedTargets|[subjectSet](../resources/subjectset.md) collection|The targets for being assigned access from an access package from this policy.|
+|specificAllowedTargets|[subjectSet](../resources/subjectset.md) collection|The principals that can be assigned access from an access package through this policy.|
+|automaticRequestSettings|[accessPackageAutomaticRequestSettings](../resources/accessPackageAutomaticRequestSettings.md)|This property is only present for an auto assignment policy; if absent, this is a request-based policy.|
 |accessPackage|[accessPackage](../resources/accesspackage.md)| A reference to the access package that will contain the policy, which must already exist.|
 
 ## Response
@@ -110,16 +111,13 @@ Content-Type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentpolicy-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentpolicy-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -132,6 +130,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentpolicy-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-accesspackageassignmentpolicy-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -163,9 +165,8 @@ The following example shows a more complex policy with two stages of approval an
 #### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_accesspackageassignmentpolicy_2"
 }
 -->
@@ -278,28 +279,6 @@ Content-Type: application/json
     }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentpolicy-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentpolicy-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentpolicy-2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -321,3 +300,58 @@ Content-Type: application/json
 }
 ```
 
+## Example 3: Create a policy that automatically creates assignments based on a membership rule
+
+The following example shows a policy that automatically creates assignments for users in the sales department.
+
+#### Request
+
+
+<!-- {
+  "blockType": "ignored",
+  "name": "create_accesspackageassignmentpolicy_autoassignment"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies
+Content-Type: application/json
+
+{
+    "displayName": "Sales department users",
+    "description": "All users from sales department",
+    "allowedTargetScope": "specificDirectoryUsers",
+    "specificAllowedTargets": [
+        {
+            "@odata.type": "#microsoft.graph.attributeRuleMembers",
+            "description": "Membership rule for all users from sales department",
+            "membershipRule": "(user.department -eq \"Sales\")"
+        }
+    ],
+    "automaticRequestSettings": {
+        "requestAccessForAllowedTargets": true
+    },
+    "accessPackage": {
+        "id": "8a36831e-1527-4b2b-aff2-81259a8d8e76"
+    }
+}
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "id": "962493bb-be02-4aeb-a233-a205bbfe1d8d",
+    "displayName": "Sales department users",
+    "description": "All users from sales department"
+}
+```

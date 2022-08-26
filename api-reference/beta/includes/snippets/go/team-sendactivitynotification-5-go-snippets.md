@@ -7,35 +7,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-topic := msgraphsdk.NewTeamworkActivityTopic()
-requestBody.SetTopic(topic)
-source := "entityUrl"
-topic.SetSource(&source)
+requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
+topic := graphmodels.NewTeamworkActivityTopic()
+source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
+topic.SetSource(&source) 
 value := "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
-topic.SetValue(&value)
+topic.SetValue(&value) 
+requestBody.SetTopic(topic)
 activityType := "pendingFinanceApprovalRequests"
-requestBody.SetActivityType(&activityType)
-previewText := msgraphsdk.NewItemBody()
-requestBody.SetPreviewText(previewText)
+requestBody.SetActivityType(&activityType) 
+previewText := graphmodels.NewItemBody()
 content := "Internal spending team has a pending finance approval requests"
-previewText.SetContent(&content)
-recipient := msgraphsdk.NewTeamworkNotificationRecipient()
+previewText.SetContent(&content) 
+requestBody.SetPreviewText(previewText)
+recipient := graphmodels.NewTeamworkNotificationRecipient()
+additionalData := map[string]interface{}{
+	"teamId" : "e8bece96-d393-4b9b-b8da-69cedef1a7e7", 
+	"channelId" : "19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2", 
+}
+recipient.SetAdditionalData(additionalData)
 requestBody.SetRecipient(recipient)
-recipient.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.channelMembersNotificationRecipient",
-	"teamId": "e8bece96-d393-4b9b-b8da-69cedef1a7e7",
-	"channelId": "19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2",
+
+
+keyValuePair := graphmodels.NewKeyValuePair()
+name := "pendingRequestCount"
+keyValuePair.SetName(&name) 
+value := "5"
+keyValuePair.SetValue(&value) 
+
+templateParameters := []graphmodels.KeyValuePairable {
+	keyValuePair,
+
 }
-requestBody.SetTemplateParameters( []KeyValuePair {
-	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "pendingRequestCount",
-		"value": "5",
-	}
-}
-teamId := "team-id"
-graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(requestBody)
+requestBody.SetTemplateParameters(templateParameters)
+
+graphClient.TeamsById("team-id").SendActivityNotification().Post(requestBody)
 
 
 ```

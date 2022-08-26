@@ -57,6 +57,8 @@ Inherits from [androidDeviceOwnerCertificateProfileBase](../resources/intune-dev
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 |certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
 |customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.|
+|certificateAccessType|[androidDeviceOwnerCertificateAccessType](../resources/intune-deviceconfig-androiddeviceownercertificateaccesstype.md)|Certificate access type. Possible values are: `userApproval`, `specificApps`, `unknownFutureValue`.|
+|silentCertificateAccessDetails|[androidDeviceOwnerSilentCertificateAccess](../resources/intune-deviceconfig-androiddeviceownersilentcertificateaccess.md) collection|Certificate access information. This collection can contain a maximum of 50 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -139,6 +141,13 @@ Here is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.customSubjectAlternativeName",
       "sanType": "String",
       "name": "String"
+    }
+  ],
+  "certificateAccessType": "String",
+  "silentCertificateAccessDetails": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSilentCertificateAccess",
+      "packageId": "String"
     }
   ]
 }

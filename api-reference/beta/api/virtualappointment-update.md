@@ -25,7 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | VirtualAppointment.ReadWrite.All
 
 > [!NOTE]
->Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. Online meeting permissions will no longer be supported starting December 1, 2022.
+> Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. Online meeting permissions will no longer be supported starting December 1, 2022.
+
 
 ## HTTP request
 
@@ -67,9 +68,12 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_virtualappointment"
+  "name": "update_virtualappointment",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
 }
 -->
 ``` http
@@ -99,6 +103,13 @@ Content-length: 379
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-virtualappointment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 
 ### Response
 The following is an example of the response.
@@ -112,3 +123,4 @@ HTTP/1.1 204 No Content
 ```
 
 PATCH returns 412 Precondition Failed if the "If-Match" value doesn't match "ETag" in the virtual appointment.
+

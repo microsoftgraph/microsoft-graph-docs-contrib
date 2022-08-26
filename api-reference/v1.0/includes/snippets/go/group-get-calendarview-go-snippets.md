@@ -7,19 +7,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.CalendarViewRequestBuilderGetQueryParameters{
-	StartDateTime: "2017-01-01T19:00:00-08:00",
-	EndDateTime: "2017-10-01T19:00:00.00-08:00",
-}
 headers := map[string]string{
-	"Prefer": "outlook.body-content-type="text""
+	"Prefer": "outlook.body-content-type=\"text\"",
 }
-options := &msgraphsdk.CalendarViewRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
+
+requestStartDateTime := "2017-01-01T19:00:00-08:00"
+requestEndDateTime := "2017-10-01T19:00:00.00-08:00"
+
+requestParameters := &graphconfig.CalendarViewRequestBuilderGetQueryParameters{
+	StartDateTime: &requestStartDateTime,
+	EndDateTime: &requestEndDateTime,
+}
+configuration := &graphconfig.CalendarViewRequestBuilderGetRequestConfiguration{
 	Headers: headers,
+	QueryParameters: requestParameters,
 }
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).CalendarView().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.GroupsById("group-id").CalendarView().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

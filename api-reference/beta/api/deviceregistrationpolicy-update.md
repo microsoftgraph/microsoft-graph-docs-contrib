@@ -1,7 +1,7 @@
 ---
 title: "Update deviceRegistrationPolicy"
 description: "Update the properties of a deviceRegistrationPolicy object."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -98,6 +98,7 @@ Content-Type: application/json
     }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-deviceregistrationpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -112,6 +113,10 @@ Content-Type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-deviceregistrationpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-deviceregistrationpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

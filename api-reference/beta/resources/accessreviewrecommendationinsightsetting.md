@@ -1,7 +1,7 @@
 ---
 title: "accessReviewRecommendationInsightSetting resource type"
 description: "In the Azure AD access reviews, the accessReviewRecommendationInsightSetting represents the settings associated with an insight provided for an access review."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -15,7 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The **accessReviewRecommendationInsightSetting** allows you to configure insights for an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). This is an abstract type for the [accessReviewRecommendationInsightSetting](accessReviewRecommendationInsightSetting.md) derived type.
+The **accessReviewRecommendationInsightSetting** allows you to configure insights for an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). This complex type is the abstract type for the following derived types:
++ [userLastSignInRecommendationInsightSetting](userlastsignInrecommendationinsightsetting.md)
 
 
 ## Relationships

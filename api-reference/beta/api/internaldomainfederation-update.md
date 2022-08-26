@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Domain.ReadWrite.All|
 
+The calling user or app must be assigned the Global Administrator [Azure AD role](/azure/active-directory/roles/permissions-reference).
+
 ## HTTP request
 
 <!-- {
@@ -86,7 +88,8 @@ If successful, this method returns a `200 OK` response code and an updated [inte
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_internaldomainfederation"
+  "name": "update_internaldomainfederation",
+  "sampleKeys": ["contoso.com", "6601d14b-d113-8f64-fda2-9b5ddda18ecc"]
 }
 -->
 ``` http
@@ -98,16 +101,13 @@ Content-Type: application/json
   "federatedIdpMfaBehavior": "acceptIfMfaDoneByFederatedIdp"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-internaldomainfederation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-internaldomainfederation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-internaldomainfederation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -120,6 +120,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-internaldomainfederation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-internaldomainfederation-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

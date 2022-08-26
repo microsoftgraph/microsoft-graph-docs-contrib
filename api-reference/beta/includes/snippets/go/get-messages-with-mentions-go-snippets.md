@@ -7,14 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.MessagesRequestBuilderGetQueryParameters{
-	Filter: "MentionsPreview/IsMentioned%20eq%20true",
-	Select: "Subject,Sender,ReceivedDateTime,MentionsPreview",
+
+requestFilter := "MentionsPreview/IsMentioned eq true"
+
+requestParameters := &graphconfig.MessagesRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
+	Select: [] string {"Subject","Sender","ReceivedDateTime","MentionsPreview"},
 }
-options := &msgraphsdk.MessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Messages().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Me().Messages().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

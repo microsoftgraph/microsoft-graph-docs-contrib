@@ -7,66 +7,107 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEvent()
-subject := "Plan summer company picnic"
-requestBody.SetSubject(&subject)
-body := msgraphsdk.NewItemBody()
-requestBody.SetBody(body)
-contentType := "HTML"
-body.SetContentType(&contentType)
-content := "Let's kick-start this event planning!"
-body.SetContent(&content)
-start := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetStart(start)
-dateTime := "2017-08-30T11:00:00"
-start.SetDateTime(&dateTime)
-timeZone := "Pacific Standard Time"
-start.SetTimeZone(&timeZone)
-end := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetEnd(end)
-dateTime := "2017-08-30T12:00:00"
-end.SetDateTime(&dateTime)
-timeZone := "Pacific Standard Time"
-end.SetTimeZone(&timeZone)
-requestBody.SetAttendees( []Attendee {
-	msgraphsdk.NewAttendee(),
-	SetAdditionalData(map[string]interface{}{
-		"type": "Required",
-	}
-	msgraphsdk.NewAttendee(),
-	SetAdditionalData(map[string]interface{}{
-		"type": "Required",
-	}
-}
-location := msgraphsdk.NewLocation()
-requestBody.SetLocation(location)
-displayName := "Conf Room 3; Fourth Coffee; Home Office"
-location.SetDisplayName(&displayName)
-locationType := "Default"
-location.SetLocationType(&locationType)
-requestBody.SetLocations( []Location {
-	msgraphsdk.NewLocation(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Conf Room 3",
-	}
-	msgraphsdk.NewLocation(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Fourth Coffee",
-	}
-	msgraphsdk.NewLocation(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Home Office",
-	}
-}
-allowNewTimeProposals := true
-requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals)
 headers := map[string]string{
-	"Prefer": "outlook.timezone="Pacific Standard Time""
+	"Prefer": "outlook.timezone=\"Pacific Standard Time\"",
 }
-options := &msgraphsdk.EventsRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.EventsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-result, err := graphClient.Me().Events().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
+requestBody := graphmodels.NewEvent()
+subject := "Plan summer company picnic"
+requestBody.SetSubject(&subject) 
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
+content := "Let's kick-start this event planning!"
+body.SetContent(&content) 
+requestBody.SetBody(body)
+start := graphmodels.NewDateTimeTimeZone()
+dateTime := "2017-08-30T11:00:00"
+start.SetDateTime(&dateTime) 
+timeZone := "Pacific Standard Time"
+start.SetTimeZone(&timeZone) 
+requestBody.SetStart(start)
+end := graphmodels.NewDateTimeTimeZone()
+dateTime := "2017-08-30T12:00:00"
+end.SetDateTime(&dateTime) 
+timeZone := "Pacific Standard Time"
+end.SetTimeZone(&timeZone) 
+requestBody.SetEnd(end)
+
+
+attendee := graphmodels.NewAttendee()
+emailAddress := graphmodels.NewEmailAddress()
+address := "DanaS@contoso.onmicrosoft.com"
+emailAddress.SetAddress(&address) 
+name := "Dana Swope"
+emailAddress.SetName(&name) 
+attendee.SetEmailAddress(emailAddress)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendee.SetType(&type) 
+attendee1 := graphmodels.NewAttendee()
+emailAddress := graphmodels.NewEmailAddress()
+address := "AlexW@contoso.onmicrosoft.com"
+emailAddress.SetAddress(&address) 
+name := "Alex Wilber"
+emailAddress.SetName(&name) 
+attendee1.SetEmailAddress(emailAddress)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendee1.SetType(&type) 
+
+attendees := []graphmodels.Objectable {
+	attendee,
+	attendee1,
+
+}
+requestBody.SetAttendees(attendees)
+location := graphmodels.NewLocation()
+displayName := "Conf Room 3; Fourth Coffee; Home Office"
+location.SetDisplayName(&displayName) 
+locationType := graphmodels.DEFAULT_LOCATIONTYPE 
+location.SetLocationType(&locationType) 
+requestBody.SetLocation(location)
+
+
+location := graphmodels.NewLocation()
+displayName := "Conf Room 3"
+location.SetDisplayName(&displayName) 
+location1 := graphmodels.NewLocation()
+displayName := "Fourth Coffee"
+location1.SetDisplayName(&displayName) 
+address := graphmodels.NewPhysicalAddress()
+street := "4567 Main St"
+address.SetStreet(&street) 
+city := "Redmond"
+address.SetCity(&city) 
+state := "WA"
+address.SetState(&state) 
+countryOrRegion := "US"
+address.SetCountryOrRegion(&countryOrRegion) 
+postalCode := "32008"
+address.SetPostalCode(&postalCode) 
+location1.SetAddress(address)
+coordinates := graphmodels.NewOutlookGeoCoordinates()
+latitude := float64(47.672)
+coordinates.SetLatitude(&latitude) 
+longitude := float64(-102.103)
+coordinates.SetLongitude(&longitude) 
+location1.SetCoordinates(coordinates)
+location2 := graphmodels.NewLocation()
+displayName := "Home Office"
+location2.SetDisplayName(&displayName) 
+
+locations := []graphmodels.Locationable {
+	location,
+	location1,
+	location2,
+
+}
+requestBody.SetLocations(locations)
+allowNewTimeProposals := true
+requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals) 
+
+result, err := graphClient.Me().Events().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
 
 
 ```

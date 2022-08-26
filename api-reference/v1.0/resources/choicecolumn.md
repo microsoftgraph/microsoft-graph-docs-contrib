@@ -4,7 +4,7 @@ ms.date: 09/11/2017
 title: ChoiceColumn
 ms.localizationpriority: medium
 description: "The choiceColumn on a columnDefinition resource indicates that the column's values can be selected from a list of choices."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 # ChoiceColumn resource type

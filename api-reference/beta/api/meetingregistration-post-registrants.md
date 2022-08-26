@@ -78,7 +78,8 @@ The following example shows how to enroll a signed-in registrant with the regist
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add-registratrant-user"
+  "name": "add-registratrant-user",
+  "sampleKeys": ["16664f75-11dc-4870-bec6-38c1aaa81431", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```http
@@ -102,6 +103,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-registratrant-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,16 +112,8 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/add-registratrant-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/add-registratrant-user-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-registratrant-user-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/add-registratrant-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -161,7 +155,8 @@ The following example shows how to enroll an anonymous registrant with applicati
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add-registratrant-app"
+  "name": "add-registratrant-app",
+  "sampleKeys": ["dc17674c-81d9-4adb-bfb2-8f6a442e4622", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```http
@@ -185,6 +180,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-registratrant-app-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -193,16 +189,8 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/add-registratrant-app-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/add-registratrant-app-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-registratrant-app-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/add-registratrant-app-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
