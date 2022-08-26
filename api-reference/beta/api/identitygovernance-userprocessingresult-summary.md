@@ -1,5 +1,5 @@
 ---
-title: "User Processing Results Summary"
+title: "userProcessingResult: summary"
 description: "Get a user processing summary API "
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -44,7 +44,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/userProcessing
 ## Function parameters
 
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

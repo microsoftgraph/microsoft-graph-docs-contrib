@@ -1,5 +1,5 @@
 ---
-title: "Get user Processing Result"
+title: "Get userProcessingResult (for a lifecycle workflow)"
 description: "Read the properties and relationships of a userProcessingResult object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -43,7 +43,7 @@ GET /workflow/userProcessingResults/{userProcessingResultId}
 
 ## Optional query parameters
 
-This method supports the `$select`, `$top`, `$count`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

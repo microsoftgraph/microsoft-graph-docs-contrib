@@ -1,5 +1,5 @@
 ---
-title: "List User Processing Results"
+title: "List userProcessingResults (for a lifecycle workflow)"
 description: "Get the userProcessingResult resources from the userProcessingResults navigation property."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -43,7 +43,7 @@ GET /workflow/userProcessingResults
 
 ## Optional query parameters
 
-This method supports the `$select`, `$top`, `$count`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$orderBy`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

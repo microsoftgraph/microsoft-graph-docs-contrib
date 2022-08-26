@@ -1,6 +1,6 @@
 ---
 title: "workflow: createNewVersion"
-description: "the create new version of a workflow call"
+description: "Create a new version of a lifecycle workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -56,7 +56,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|workflow|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|The workflow having a new version of it created.|
+|workflow|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|The workflow for which you want to create a new version.|
 
 ## Response
 

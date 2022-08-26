@@ -1,5 +1,5 @@
 ---
-title: "Get workflow Version"
+title: "Get workflowVersion"
 description: "Read the properties and relationships of a workflowVersion object."
 author: "AlexFilipin"
 ms.localizationpriority: medium

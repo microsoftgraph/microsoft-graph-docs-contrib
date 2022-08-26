@@ -1,5 +1,5 @@
 ---
-title: "Run a workflow on-demand"
+title: "workflow: activate (run a workflow on-demand)"
 description: "workflow activate allows a workflow to be run on demand"
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Run a workflow on-demand
+# workflow: activate (run a workflow on-demand)
 
 Namespace: microsoft.graph.identityGovernance
 
