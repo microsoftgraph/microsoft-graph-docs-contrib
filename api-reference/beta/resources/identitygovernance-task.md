@@ -37,7 +37,7 @@ Inherits from [entity](../resources/entity.md).
 |executionSequence|Int32|An integer that states in what order the task will run in a workflow.|
 |id|String|Identifier used for individually addressing a specific task. Inherited from [entity](../resources/entity.md).|
 |isEnabled|Boolean|A boolean value that denotes whether the task is set to run or not. <br><br>Supports `$filter`(`eq`,`ne`) and `orderby`.|
-|taskDefinitionId|String|A string that allows built-in workflow tasks to run.|
+|taskDefinitionId|String|A unique template identifier for the task. For more information about the tasks that Lifecycle Workflows currently supports and their unique identifiers, see [Supported Task IDs](../resources/identitygovernance-lifecycleworkflows-overview.md#supported-task-ids)|
 
 ## Relationships
 
