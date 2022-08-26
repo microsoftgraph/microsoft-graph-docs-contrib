@@ -1,6 +1,6 @@
 ---
 title: "runSummary resource type"
-description: "A description of the runSummary resource type"
+description: "Represents a summary of the runs of a lifecycle workflow with integer totals of successful, unsuccessful, and total workflow runs and tasks."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type denoting a summary of workflow runs, which is every time a workflow runs. Successful, unsuccessful, and total workflow runs and tasks are noted.
+Represents a summary of the runs of a lifecycle workflow with integer totals of successful, unsuccessful, and total workflow runs and tasks.
 
 ## Properties
 

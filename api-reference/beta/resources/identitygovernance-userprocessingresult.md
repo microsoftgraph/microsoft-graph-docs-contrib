@@ -1,6 +1,6 @@
 ---
 title: "userProcessingResult resource type"
-description: "Methods, properties, and relationships of the userProcessingResult resource type*"
+description: "Results of lifecycle workflow tasks scoped to the user for whom the tasks were run. Total tasks are shown along with individual results for unprocessed tasks, and processing status for the results"
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type denoting user processing results for users processed by workflows created using Lifecycle Workflows. Total tasks are shown along with individual results for unprocessed  tasks, and processing status for the results.
+Results of lifecycle workflow tasks scoped to the user for whom the tasks were run. Total tasks are shown along with individual results for unprocessed tasks, and processing status for the results.
 
 Inherits from [entity](../resources/entity.md).
 

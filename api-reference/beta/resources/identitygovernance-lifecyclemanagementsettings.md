@@ -1,6 +1,6 @@
 ---
 title: "lifecycleManagementSettings resource type"
-description: "The lifecycleManagementSettings methods, properties, and relationships"
+description: "The settings of Azure AD Lifecycle Workflows in the tenant."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type noting the lifecycle management settings.
-
+The settings of Azure AD Lifecycle Workflows in the tenant.
 
 ## Methods
 
@@ -27,8 +26,8 @@ A resource type noting the lifecycle management settings.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier used for individually addressing Lifecycle Management settings.|
-|workflowScheduleIntervalInHours|Int32|The interval in hours at which the all `workflows` should be scheduled for execution. This interval has a minimum value of 1 and a maximum value of 24.|
+|id|String|Identifier used for individually addressing Lifecycle Workflow settings.|
+|workflowScheduleIntervalInHours|Int32|The interval in hours at which all [workflows](../resources/identitygovernance-workflow.md) running in the tenant should be scheduled for execution. This interval has a minimum value of 1 and a maximum value of 24.|
 
 ## Relationships
 

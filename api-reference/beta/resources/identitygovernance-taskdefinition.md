@@ -1,6 +1,6 @@
 ---
 title: "taskDefinition resource type"
-description: "Methods, properties, and relationships of the taskDefinition resource type"
+description: "Represents the built-in tasks that you can use to construct tasks for lifecycle workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type denoting the task definitions of Lifecycle Workflows. These define the built-in tasks that can be used to construct workflows created with Lifecycle Workflows.
+Represents the built-in tasks that you can use to construct tasks for lifecycle workflows. Each task has a unique template identifier. For a full list of available built-in tasks, see [Supported tasks IDs](../resources/identitygovernance-lifecycleworkflows-overview.md#supported-task-ids).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -52,12 +52,17 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions/$entity",
-    "category": "joiner,leaver",
-    "description": "Disable user account in the directory",
-    "displayName": "Disable User Account",
-    "id": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950",
-    "version": 1,
-    "parameters": []
+  "@odata.type": "#microsoft.graph.identityGovernance.taskDefinition",
+  "id": "String (identifier)",
+  "category": "String",
+  "continueOnError": "Boolean",
+  "description": "String",
+  "displayName": "String",
+  "parameters": [
+    {
+      "@odata.type": "microsoft.graph.identityGovernance.parameter"
+    }
+  ],
+  "version": "Integer"
 }
 ```
