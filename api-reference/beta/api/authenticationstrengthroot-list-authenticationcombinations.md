@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of supported authentication method combinations as a list of [authenticationMethodModes](../resources/enums.md) objects and their properties.
+Get a list of supported authentication method combinations as a list of **authenticationMethodModes** objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -69,7 +69,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(#microsoft.graph.authenticationMethodModes)"
+  "@odata.type": "Collection(microsoft.graph.authenticationMethodModes)"
 }
 -->
 ``` http
@@ -77,29 +77,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/authenticationStrengths/authenticationCombinations",
   "value": [
-      "windowsHelloForBusiness",
-      "fido2",
-      "x509CertificateMultiFactor",
-      "deviceBasedPush",
-      "temporaryAccessPassOneTime",
-      "temporaryAccessPassMultiUse",
-      "password, microsoftAuthenticatorPush",
-      "password, softwareOath",
-      "password, hardwareOath",
-      "password, sms",
-      "password, voice",
-      "federatedMultiFactor",
-      "federatedSingleFactor, microsoftAuthenticatorPush",
-      "federatedSingleFactor, softwareOath",
-      "federatedSingleFactor, hardwareOath",
-      "federatedSingleFactor, sms",
-      "federatedSingleFactor, voice",
-      "x509CertificateSingleFactor",
-      "sms",
-      "password",
-      "federatedSingleFactor",
-    ]
+    "windowsHelloForBusiness",
+    "fido2",
+    "x509CertificateMultiFactor",
+    "deviceBasedPush",
+    "temporaryAccessPassOneTime",
+    "temporaryAccessPassMultiUse",
+    "password,microsoftAuthenticatorPush",
+    "password,softwareOath",
+    "password,sms",
+    "password,voice",
+    "federatedMultiFactor",
+    "microsoftAuthenticatorPush,federatedSingleFactor",
+    "softwareOath,federatedSingleFactor",
+    "hardwareOath,federatedSingleFactor",
+    "sms,federatedSingleFactor",
+    "voice,federatedSingleFactor",
+    "x509CertificateSingleFactor",
+    "sms",
+    "password",
+    "federatedSingleFactor",
+  ]
 }
 ```
 
