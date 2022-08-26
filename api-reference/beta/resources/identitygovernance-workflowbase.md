@@ -13,7 +13,9 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type noting workflowBase created using Lifecycle Workflows. Workflows, when triggered by execution conditions, automate parts of the lifecycle management process using tasks. These tasks can either be built-in tasks, or a custom task can be called using the custom task extension.
+An abstract type that exposes the properties for configuring a custom lifecycle workflow. This resource is inherited by the following resource types:
++ [workflow](../resources/identitygovernance-workflow.md)
++ [workflowVersion](../resources/identitygovernance-workflowversion.md)
 
 ## Methods
 
@@ -23,12 +25,12 @@ None.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|String|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|The date and time a workflow was created.|
+|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset|When a workflow was created.|
 |description|String|A string that describes the purpose of the workflow.|
 |displayName|String|A string to identify the workflow. |
 |executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines when and for who the workflow will run.|
-|lastModifiedDateTime|DateTimeOffset|The last time the workflow was modified.|
+|lastModifiedDateTime|DateTimeOffset|When the workflow was last modified.|
 
 ## Relationships
 

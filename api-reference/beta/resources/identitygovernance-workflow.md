@@ -1,6 +1,6 @@
 ---
 title: "workflow resource type"
-description: "Methods, properties, and relationships of the workflow resource type"
+description: "Represents workflows created using Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type noting workflows created using Lifecycle Workflows. Workflows, when triggered by execution conditions, automate parts of the lifecycle management process using tasks. These tasks can either be built-in tasks, or a custom task can be called using the custom task extension.
+Represents workflows created using Lifecycle Workflows. Workflows, when triggered by execution conditions, automate parts of the lifecycle management process using tasks. These tasks can either be built-in tasks, or a custom task can be called using the custom task extension which integrate with Azure Logic Apps.
 
 Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
@@ -40,7 +40,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|String|The category of the HR function supported by the workflows created using this template. A workflow can only belong to one category. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the HR function supported by the workflows created using this template. A workflow can only belong to one category. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|The date time when the `workflow` was versioned. <br><br>Supports `$filter`(`lt`,`gt`) and `$orderby`.|
 |deletedDateTime|DateTimeOffset|The time and date a workflow is deleted. <br><br>Supports `$filter`(`lt`,`gt`) and `$orderby`.|
 |description|String|The description of the `workflow` or `workflowVersion`.|

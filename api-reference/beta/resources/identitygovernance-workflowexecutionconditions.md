@@ -13,12 +13,13 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type noting the workflow execution conditions. Execution conditions define who and when a workflow will run.
+This is an abstract type noting the workflow execution conditions in [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) and [workflowBase](../resources/identitygovernance-workflowbase.md) objects. Execution conditions define when a workflow will run and the user that's the target of the workflow. The following types are derived from this abstract type:
++ [onDemandExecutionOnly](../resources/identitygovernance-ondemandexecutiononly.md)
++ [triggerAndScopeBasedConditions](../resources/identitygovernance-triggerandscopebasedconditions.md)
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 ---
 title: "workflowExecutionTrigger resource type"
-description: "**Workflow execution trigger information"
+description: "An abstract type that represents the workflow execution trigger when the workflow runs on schedule."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -14,12 +14,12 @@ Namespace: microsoft.graph.identityGovernance
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-This is an abstract type noting the workflow execution trigger. Workflow triggers defines when a workflow runs.
+This is an abstract type that represents the workflow execution trigger when the [workflow runs on schedule](../resources/identitygovernance-triggerandscopebasedconditions.md). It is inherited by the following derived types:
++ [timeBasedAttributeTrigger](../resources/identitygovernance-timebasedattributetrigger.md)
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 
