@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Represents the data send to Azure Logic Apps when a custom task extension gets used as part of a lifecycle workflow execution.
 
-Inherits from [customExtensionData](../resources/identitygovernance-customextensiondata.md).
+Inherits from [customExtensionData](../resources/customextensiondata.md).
 
 ## Properties
 
