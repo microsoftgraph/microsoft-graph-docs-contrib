@@ -141,11 +141,11 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
     "category": "joiner",
     "description": "Configure new hire tasks for onboarding employees on their first day",
-    "displayName": "Australia Onboard new hire employee",
-    "lastModifiedDateTime": "2022-08-24T18:30:33.1050141Z",
-    "createdDateTime": "2022-08-24T18:30:33.1050022Z",
+    "displayName": "New Zealand new hire",
+    "lastModifiedDateTime": "2022-08-26T04:51:27.521792Z",
+    "createdDateTime": "2022-08-26T04:51:27.5217824Z",
     "deletedDateTime": null,
-    "id": "4c9c57b9-e1e9-4bed-a936-4fad9d8f5638",
+    "id": "818cd47f-138c-4a83-b3f5-afa92bfcf391",
     "isEnabled": true,
     "isSchedulingEnabled": false,
     "nextScheduleRunDateTime": null,
@@ -154,7 +154,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
         "scope": {
             "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-            "rule": "(country eq 'Australia')"
+            "rule": "(country eq 'New Zealand')"
         },
         "trigger": {
             "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
