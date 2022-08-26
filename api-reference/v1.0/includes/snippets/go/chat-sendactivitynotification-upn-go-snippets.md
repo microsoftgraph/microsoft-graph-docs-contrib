@@ -21,8 +21,6 @@ content := "Deployment requires your approval"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
 recipient := graphmodels.NewTeamworkNotificationRecipient()
-"@odata.type" := "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient"
-recipient.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"userId" : "jacob@contoso.com", 
 }

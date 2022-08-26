@@ -1,7 +1,7 @@
 ---
 title: "Get x509CertificateAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a x509CertificateAuthenticationMethodConfiguration object."
-author: "charlenezheng"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

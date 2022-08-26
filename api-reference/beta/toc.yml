@@ -391,8 +391,18 @@ items:
           href: resources/cloudpc.md
         - name: List cloudPCs
           href: api/user-list-cloudpcs.md
+        - name: Get cloudPC
+          href: api/cloudpc-get.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
+        - name: Reboot
+          href: api/cloudpc-reboot.md
+        - name: Rename
+          href: api/cloudpc-rename.md
+        - name: Reprovision
+          href: api/cloudpc-reprovision.md
+        - name: Troubleshoot
+          href: api/cloudpc-troubleshoot.md
       - name: Contacts
         items:
         - name: Contact
@@ -515,7 +525,7 @@ items:
           href: resources/message.md
         - name: Create mail folder
           href: api/user-post-mailfolders.md
-        - name: Create message
+        - name: Create draft message
           href: api/user-post-messages.md
         - name: Create message rule
           href: api/mailfolder-post-messagerules.md
@@ -845,7 +855,7 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md
+          href: api/directory-deleteditems-getuserownedobjects.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Permanently delete group
@@ -956,7 +966,7 @@ items:
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
         - name: List deleted applications owned by user
-          href: api/directory-deleteditems-user-owned.md
+          href: api/directory-deleteditems-getuserownedobjects.md
         - name: Get deleted application
           href: api/directory-deleteditems-get.md
         - name: Permanently delete application
@@ -1379,11 +1389,11 @@ items:
           href: api/message-copy.md
         - name: Move event message
           href: api/message-move.md
-        - name: Create Reply
+        - name: Create draft to reply
           href: api/message-createreply.md
         - name: Reply event message
           href: api/message-reply.md
-        - name: Create ReplyAll
+        - name: Create draft to reply-all
           href: api/message-createreplyall.md
         - name: ReplyAll event message
           href: api/message-replyall.md
@@ -1520,10 +1530,12 @@ items:
         items:
           - name: Place
             href: resources/place.md
-          - name: Room type
+          - name: Room
             href: resources/room.md
-          - name: Room list type
+          - name: Room list
             href: resources/roomlist.md
+          - name: Workspace
+            href: resources/workspace.md
           - name: List places
             href: api/place-list.md
           - name: Get place
@@ -10430,6 +10442,8 @@ items:
             href: api/cloudpc-changeuseraccounttype.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Get connectivity history
+            href: api/cloudpc-getcloudpcconnectivityhistory.md
           - name: Get launch info for user
             href: api/cloudpc-getcloudpclaunchinfo.md
           - name: Get remote action results
@@ -10446,6 +10460,8 @@ items:
             href: api/manageddevice-reprovisioncloudpc.md
           - name: Resize remotely
             href: api/manageddevice-resizecloudpc.md
+          - name: Restore
+            href: api/cloudpc-restore.md
           - name: Restore remotely
             href: api/manageddevice-restorecloudpc.md
           - name: Set review status
@@ -11701,7 +11717,7 @@ items:
           - name: Restore deleted item
             href: api/directory-deleteditems-restore.md
           - name: List deleted items owned by user
-            href: api/directory-deleteditems-user-owned.md
+            href: api/directory-deleteditems-getuserownedobjects.md
         - name: Device
           href: resources/device.md
           items:
@@ -12219,7 +12235,7 @@ items:
             href: resources/emailauthenticationmethod.md
             items:
             - name: List
-              href: api/emailauthenticationmethod-list.md
+              href: api/authentication-list-emailmethods.md
             - name: Get
               href: api/emailauthenticationmethod-get.md
             - name: Update
@@ -12227,7 +12243,7 @@ items:
             - name: Delete
               href: api/emailauthenticationmethod-delete.md
             - name: Add
-              href: api/emailauthenticationmethod-post.md
+              href: api/authentication-post-emailmethods.md
           - name: Password
             href: resources/passwordauthenticationmethod.md
             items:
@@ -12236,10 +12252,11 @@ items:
             - name: Get
               href: api/passwordauthenticationmethod-get.md
             - name: Reset
-              href: api/passwordauthenticationmethod-resetpassword.md
+              href: api/authenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/authenticationoperation-get.md
-        - name: Certificate-based auth configuration
+        - name: Certificate-based authentication configuration
+          displayName: CBA
           href: resources/certificatebasedauthconfiguration.md
           items:
           - name: List
@@ -12635,6 +12652,7 @@ items:
               - name: Delete
                 href: api/fido2authenticationmethodconfiguration-delete.md
             - name: X509 certificate
+              displayName: certificate-based authentication, CBA
               href: resources/x509Certificateauthenticationmethodconfiguration.md
               items:
               - name: Get
@@ -12702,6 +12720,34 @@ items:
               href: api/b2cauthenticationmethodspolicy-get.md
             - name: Update
               href: api/b2cauthenticationmethodspolicy-update.md
+          - name: Consent requests
+            href: resources/consentrequests-overview.md
+            items:
+            - name: Admin consent request policy
+              href: resources/adminconsentrequestpolicy.md
+              items:
+              - name: Get
+                href: api/adminconsentrequestpolicy-get.md
+              - name: Update
+                href: api/adminconsentrequestpolicy-update.md
+            - name: App consent requests
+              href: resources/appconsentrequest.md
+              items:
+              - name: List
+                href: api/appconsentapprovalroute-list-appconsentrequests.md
+              - name: Get
+                href: api/appconsentrequest-get.md
+              - name: Filter by current user
+                href: api/appconsentrequest-filterByCurrentUser.md
+            - name: User consent requests
+              href: resources/userconsentrequest.md
+              items:
+              - name: List
+                href: api/appconsentrequest-list-userconsentrequests.md
+              - name: Get
+                href: api/userconsentrequest-get.md
+              - name: Filter by current user
+                href: api/userconsentrequest-filterByCurrentUser.md
           - name: Claims mapping policy
             href: resources/claimsmappingpolicy.md
             items:
@@ -13011,6 +13057,8 @@ items:
             - name: Delete
               href: api/identityapiconnector-delete.md
       - name: Governance
+        href: resources/identitygovernance-overview.md
+        displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
         items:
         - name: Access reviews
           href: resources/accessreviewsv2-overview.md
@@ -13176,34 +13224,6 @@ items:
             items:
             - name: List
               href: api/programcontroltype-list.md
-        - name: Consent requests
-          href: resources/consentrequests-overview.md
-          items:
-          - name: Admin consent request policy
-            href: resources/adminconsentrequestpolicy.md
-            items:
-            - name: Get
-              href: api/adminconsentrequestpolicy-get.md
-            - name: Update
-              href: api/adminconsentrequestpolicy-update.md
-          - name: App consent requests
-            href: resources/appconsentrequest.md
-            items:
-            - name: List
-              href: api/appconsentapprovalroute-list-appconsentrequests.md
-            - name: Get
-              href: api/appconsentrequest-get.md
-            - name: Filter by current user
-              href: api/appconsentrequest-filterByCurrentUser.md
-          - name: User consent requests
-            href: resources/userconsentrequest.md
-            items:
-            - name: List
-              href: api/appconsentrequest-list-userconsentrequests.md
-            - name: Get
-              href: api/userconsentrequest-get.md
-            - name: Filter by current user
-              href: api/userconsentrequest-filterByCurrentUser.md
         - name: Entitlement management
           href: resources/entitlementmanagement-overview.md
           items:
@@ -13548,7 +13568,7 @@ items:
         items:
         - name: List messages
           href: api/user-list-messages.md
-        - name: Create message
+        - name: Create draft message
           href: api/user-post-messages.md
         - name: Get message
           href: api/message-get.md
@@ -13558,23 +13578,23 @@ items:
           href: api/message-delete.md
         - name: Get message delta
           href: api/message-delta.md
-        - name: Send messages
+        - name: Send draft message
           href: api/message-send.md
-        - name: Copy messages
+        - name: Copy message
           href: api/message-copy.md
-        - name: Move messages
+        - name: Move message
           href: api/message-move.md
-        - name: Create reply to messages
+        - name: Create draft to reply
           href: api/message-createreply.md
-        - name: Reply to messages
+        - name: Reply to a message
           href: api/message-reply.md
-        - name: Create reply all to messages
+        - name: Create draft to reply-all
           href: api/message-createreplyall.md
-        - name: Reply all to messages
+        - name: Reply-all to a message
           href: api/message-replyall.md
-        - name: Create Forward message
+        - name: Create draft to forward message
           href: api/message-createforward.md
-        - name: Forward messages
+        - name: Forward message
           href: api/message-forward.md
         - name: Send mail
           href: api/user-sendmail.md
@@ -14377,9 +14397,10 @@ items:
         items:
         - name: Overview
           href: resources/report.md
-        - name: Settings
-          href: resources/adminreportsettings.md
+        - name: Admin report settings
           items:
+          - name: Admin report settings
+            href: resources/adminreportsettings.md
           - name: Get
             href: api/adminreportsettings-get.md
           - name: Update
@@ -14780,8 +14801,9 @@ items:
       - name: Overview
         href: resources/security-api-overview.md
       - name: Actions (preview)
-        href: resources/securityaction.md
         items:
+        - name: Action
+          href: resources/securityaction.md
         - name: List security actions
           href: api/securityactions-list.md
         - name: Create security action
@@ -14790,17 +14812,60 @@ items:
           href: api/securityaction-get.md
         - name: Cancel security action
           href: api/securityaction-cancelsecurityaction.md
-      - name: Alerts
-        href: resources/alert.md
+      - name: Alerts and incidents (preview)
         items:
-        - name: List alerts
-          href: api/alert-list.md
-        - name: Get alert
-          href: api/alert-get.md
-        - name: Update alert
-          href: api/alert-update.md
-        - name: Update multiple alerts
-          href: api/alert-updatealerts.md
+        - name: Alert
+          items:
+          - name: Alert 
+            href: resources/security-alert.md
+          - name: List alerts
+            href: api/security-list-alerts_v2.md
+          - name: Get alert
+            href: api/security-alert-get.md 
+          - name: Update alert
+            href: api/security-alert-update.md
+        - name: Alert evidence
+          items: 
+          - name: Alert evidence
+            href: resources/security-alertevidence.md
+          - name: Analyzed message evidence
+            href: resources/security-analyzedMessageEvidence.md
+          - name: Cloud application evidence
+            href: resources/security-cloudApplicationEvidence.md
+          - name: Device evidence
+            href: resources/security-deviceEvidence.md
+          - name: File evidence
+            href: resources/security-fileEvidence.md
+          - name: IP evidence
+            href: resources/security-ipEvidence.md
+          - name: Mailbox evidence
+            href: resources/security-mailboxEvidence.md
+          - name: Mail cluster evidence
+            href: resources/security-mailClusterEvidence.md
+          - name: OAuth application evidence
+            href: resources/security-oauthApplicationEvidence.md
+          - name: Process evidence
+            href: resources/security-processEvidence.md
+          - name: Registry key evidence
+            href: resources/security-registryKeyEvidence.md
+          - name: Registry value evidence
+            href: resources/security-registryValueEvidence.md
+          - name: Security group evidence
+            href: resources/security-securityGroupEvidence.md
+          - name: URL evidence
+            href: resources/security-urlEvidence.md
+          - name: User evidence
+            href: resources/security-userEvidence.md
+        - name: Incident
+          items:
+          - name: Incident
+            href: resources/security-incident.md
+          - name: List incidents
+            href: api/security-list-incidents.md
+          - name: Get incident
+            href: api/security-incident-get.md   
+          - name: Update incident
+            href: api/security-incident-update.md
       - name: Attack simulation and training (preview)
         items:
         - name: Simulations
@@ -15134,6 +15199,18 @@ items:
             href: api/informationprotection-post-threatassessmentrequests.md
           - name: Get
             href: api/threatassessmentrequest-get.md
+      - name: Legacy alerts
+        items:
+        - name: Alert
+          href: resources/alert.md        
+        - name: List alerts
+          href: api/alert-list.md
+        - name: Get alert
+          href: api/alert-get.md
+        - name: Update alert
+          href: api/alert-update.md
+        - name: Update multiple alerts
+          href: api/alert-updatealerts.md
       - name: Secure scores
         href: resources/securescores.md
         items:
@@ -15171,8 +15248,13 @@ items:
         href: resources/security-threatsubmission.md
         items:
         - name: Email threat submission
-          href: resources/security-emailthreatsubmission.md
           items:
+          - name: Email threat submission
+            href: resources/security-emailthreatsubmission.md
+          - name: Email content threat submission
+            href: resources/security-emailcontentthreatsubmission.md
+          - name: Email URL threat submission
+            href: resources/security-emailurlthreatsubmission.md
           - name: List
             href: api/security-emailthreatsubmission-list.md
           - name: Create
@@ -15181,10 +15263,6 @@ items:
             href: api/security-emailthreatsubmission-get.md
           - name: Review
             href: api/security-emailthreatsubmission-review.md
-          - name: Email content threat submission
-            href: resources/security-emailcontentthreatsubmission.md
-          - name: Email URL threat submission
-            href: resources/security-emailurlthreatsubmission.md
         - name: Email threat submission policy
           href: resources/security-emailthreatsubmissionpolicy.md
           items:
@@ -15198,6 +15276,19 @@ items:
             href: api/security-emailthreatsubmissionpolicy-update.md
           - name: Delete
             href: api/security-emailthreatsubmissionpolicy-delete.md
+        - name: File threat submission
+          href: resources/security-filethreatsubmission.md
+          items:
+          - name: File content threat submission
+            href: resources/security-filecontentthreatsubmission.md
+          - name: File URL threat submission
+            href: resources/security-fileurlthreatsubmission.md
+          - name: List
+            href: api/security-filethreatsubmission-list.md
+          - name: Create
+            href: api/security-filethreatsubmission-post-filethreats.md
+          - name: Get
+            href: api/security-filethreatsubmission-get.md
         - name: URL threat submission
           href: resources/security-urlthreatsubmission.md
           items:
@@ -15207,19 +15298,6 @@ items:
             href: api/security-urlthreatsubmission-post-urlthreats.md
           - name: Get
             href: api/security-urlthreatsubmission-get.md
-        - name: File threat submission
-          href: resources/security-filethreatsubmission.md
-          items:
-          - name: List
-            href: api/security-filethreatsubmission-list.md
-          - name: Create
-            href: api/security-filethreatsubmission-post-filethreats.md
-          - name: Get
-            href: api/security-filethreatsubmission-get.md
-          - name: File URL threat submission
-            href: resources/security-fileurlthreatsubmission.md
-          - name: File content threat submission
-            href: resources/security-filecontentthreatsubmission.md
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
@@ -15709,7 +15787,7 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md
+          href: api/directory-deleteditems-getuserownedobjects.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Permanently delete group

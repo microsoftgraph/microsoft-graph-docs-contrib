@@ -9,8 +9,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
+$requestConfiguration = new RoleAssignmentsRequestBuilderGetRequestConfiguration();
 
-$requestResult = $graphServiceClient->roleManagement()->deviceManagement()->roleAssignmentsById('unifiedRoleAssignmentMultiple-id')->get();
+$queryParameters = new RoleAssignmentsRequestBuilderGetQueryParameters();
+$queryParameters->filter = "principalId eq '9e47fc6f-2d7a-464c-944e-d3dd0de522e4'";
+
+$requestConfiguration->queryParameters = $queryParameters;
+
+
+$requestResult = $graphServiceClient->roleManagement()->deviceManagement()->roleAssignments()->get($requestConfiguration);
 
 
 ```

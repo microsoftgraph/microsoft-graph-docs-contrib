@@ -17,7 +17,7 @@ const addToReviewSet = {
     additionalDataOptions: 'linkedFiles'
 };
 
-await client.api('/security/cases/ediscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/addToReviewSet')
+await client.api('/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/addToReviewSet')
 	.post(addToReviewSet);
 
 ```

@@ -2104,15 +2104,6 @@ Possible values for user account types (group membership), per Windows definitio
 |high|
 |urgent|
 
-### channelMembershipType values
-
-| Member             |
-| :----------------- |
-| standard           |
-| private            |
-| unknownFutureValue |
-| shared             |
-
 ### stagedFeatureName values
 
 | Member                    | Description                   |

@@ -13,8 +13,6 @@ requestBody.SetDistributeForStudentWork(&distributeForStudentWork)
 resource := graphmodels.NewEducationResource()
 displayName := "Template - My Story"
 resource.SetDisplayName(&displayName) 
-"@odata.type" := "#microsoft.graph.educationTeamsAppResource"
-resource.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"appId" : "6fbeb90c-3d55-4bd5-82c4-bfe824be4300", 
 	"appIconWebUrl" : "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/6fbeb90c-3d55-4bd5-82c4-bfe824be4300_largeImage.png?v=2.0.2", 

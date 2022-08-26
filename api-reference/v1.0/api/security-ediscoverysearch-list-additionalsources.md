@@ -56,7 +56,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_ediscoverynoncustodialdatasource"
+  "name": "list_ediscovery_additionasourece_caseID_searchID"
 }
 -->
 ``` http
@@ -64,23 +64,27 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-418
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoverynoncustodialdatasource-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscovery-additionasourece-caseid-searchid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-ediscoverynoncustodialdatasource-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-ediscovery-additionasourece-caseid-searchid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-ediscoverynoncustodialdatasource-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-ediscovery-additionasourece-caseid-searchid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-ediscoverynoncustodialdatasource-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-ediscovery-additionasourece-caseid-searchid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-ediscovery-additionasourece-caseid-searchid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-ediscoverynoncustodialdatasource-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-ediscovery-additionasourece-caseid-searchid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

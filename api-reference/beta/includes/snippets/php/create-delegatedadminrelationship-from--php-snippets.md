@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new DelegatedAdminRelationship();
 $requestBody->setDisplayName('Contoso admin relationship');
 
-$requestBody->setDuration('P730D');
+$requestBody->setDuration(new \DateInterval('P730D'));
 
 $customer = new DelegatedAdminRelationshipCustomerParticipant();
 $customer->setTenantId('4b827261-d21f-4aa9-b7db-7fa1f56fb163');

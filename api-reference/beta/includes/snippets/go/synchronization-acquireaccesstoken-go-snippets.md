@@ -11,8 +11,6 @@ requestBody := graphmodels.NewAcquireAccessTokenPostRequestBody()
 
 
 synchronizationSecretKeyStringValuePair := graphmodels.NewSynchronizationSecretKeyStringValuePair()
-"@odata.type" := "microsoft.graph.synchronizationSecretKeyStringValuePair"
-synchronizationSecretKeyStringValuePair.Set"@odata.type"(&"@odata.type") 
 
 credentials := []graphmodels.SynchronizationSecretKeyStringValuePairable {
 	synchronizationSecretKeyStringValuePair,
