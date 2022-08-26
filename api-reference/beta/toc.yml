@@ -13538,7 +13538,7 @@ items:
             - name: Get
               href: api/identitygovernance-workflow-get.md
             - name: Update
-              href: api/identitygovernance-lifecycleworkflowscontainer-update.md
+              href: api/identitygovernance-workflow-update.md
             - name: Delete
               href: api/identitygovernance-workflow-delete.md
             - name: List deleted workflows 
@@ -13554,11 +13554,11 @@ items:
             - name: List Tasks
               href: api/identitygovernance-workflow-list-task.md
             - name: Get Task
-              href: api/identitygovernance-workflow-task-get.md  
+              href: api/identitygovernance-task-get.md
             - name: Workflow versions
               items:
               - name: List
-                href: api/identitygovernance-list-workflowversion.md
+                href: api/identitygovernance-workflow-list-versions.md
               - name: Get
                 href: api/identitygovernance-workflowversion-get.md
               - name: Create
@@ -13566,7 +13566,7 @@ items:
               - name: List Tasks
                 href: api/identitygovernance-workflowversion-list-tasks.md
               - name: Get Task
-                href: api/identitygovernance-workflowversion-task-get.md      
+                href: api/identitygovernance-task-get.md      
             - name: Reports
               items:
               - name: Overview
@@ -13582,7 +13582,7 @@ items:
                 href: resources/identitygovernance-taskreport.md 
                 items:
                 - name: List
-                  href: api/identitygovernance-taskreport-list.md
+                  href: api/identitygovernance-workflow-list-taskreports.md
                 - name: Summary
                   href: api/identitygovernance-taskreport-summary.md
                 - name: List task processing results
@@ -13591,7 +13591,7 @@ items:
                 href: resources/identitygovernance-run.md
                 items:
                 - name: List
-                  href: api/identitygovernance-workflow-list-run.md
+                  href: api/identitygovernance-workflow-list-runs.md
                 - name: Get
                   href: api/identitygovernance-run-get.md
                 - name: Summary

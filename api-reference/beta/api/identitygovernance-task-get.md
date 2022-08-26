@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the task resource in a workflow from the tasks navigation property.
+Get a task specific from a [workflow](../resources/identitygovernance-workflow.md) or [workflowVersion](../resources/identitygovernance-workflowversion.md).
 
 ## Permissions
 
@@ -42,6 +42,12 @@ Fetch tasks for a lifecycle workflow.
 GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks/{taskId}
 ```
 
+Fetch tasks for a lifecycle workflow version.
+
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/versions/2/tasks/4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee
+```
+
 ## Optional query parameters
 
 This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -64,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a [task](../reso
 
 ### Request
 
-The following is an example of a request.
+The following is an example of a request to get a task from a workflow.
 <!-- {
   "blockType": "request",
   "name": "list_task"
@@ -74,9 +80,19 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflow/156ce798-1eb6-4e0a-8515-e79f54d04390/tasks/fafa2189-cd62-4643-a825-06cab8817086
 ```
 
+The following is an example of a request to get a task from a workflow version.
+<!-- {
+  "blockType": "request",
+  "name": "list_workflowversion"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/versions/2/tasks/4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee
+```
+
 ### Response
 
-The following is an example of the response
+The following is an example of the response of a request to get a task from a workflow.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -96,6 +112,31 @@ Content-Type: application/json
     "displayName": "Enable User Account",
     "executionSequence": 1,
     "id": "fafa2189-cd62-4643-a825-06cab8817086",
+    "isEnabled": true,
+    "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+    "arguments": []
+}
+```
+
+The following is an example of the response of a request to get a task from a workflow.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflowVersion"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/versions(2)/tasks/$entity",
+    "category": "joiner,leaver",
+    "continueOnError": false,
+    "description": "Enable user account in the directory",
+    "displayName": "Enable User Account",
+    "executionSequence": 1,
+    "id": "4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee",
     "isEnabled": true,
     "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
     "arguments": []
