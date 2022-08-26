@@ -22,7 +22,7 @@ Inherits from [workflowExecutionTrigger](../resources/identitygovernance-workflo
 |Property|Type|Description|
 |:---|:---|:---|
 |offsetInDays|Int32|How many days before or after the time-based attribute specified when the workflow should trigger. For example, if the attribute is `employeeHireDate` and offsetInDays is -1, then the workflow should trigger one day before the employee hire date.|
-|timeBasedAttribute|workflowTriggerTimeBasedAttribute|Determines which time-based identity property to reference. The possible values are: `employeeHireDate`, `employeeLeaveDateTime`, `unknownFutureValue`.|
+|timeBasedAttribute|identityGovernance.workflowTriggerTimeBasedAttribute|Determines which time-based identity property to reference. The possible values are: `employeeHireDate`, `employeeLeaveDateTime`, `unknownFutureValue`.|
 
 ## Relationships
 
