@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Teams API overview"
+title: "Overview for fostering teamwork using Microsoft Teams, Shifts, and Viva Learning apps"
 description: "Use the Microsoft Teams API in Microsoft Graph to automate team lifecycles, create and manage teams and channels, deploy apps, and get notified about changes."
 author: "nkramer"
 ms.localizationpriority: high
@@ -7,9 +7,14 @@ ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Microsoft Teams API overview
+# Overview for fostering teamwork using Microsoft Teams, Shifts, and Viva Learning apps
 
-[Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for teamwork and intelligent communications. Built on the strength and scale of [Microsoft 365](https://products.office.com/) with over 120 million users, Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features.
+
+
+[Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for team collaboration, intelligent communications, fostering a culture that help employees thrive. Built on the strength and scale of [Microsoft 365](https://products.office.com/) with over 120 million users, Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features. 
+Available on Teams, Viva Learning and its API let employers integrate content from learning management systems, letting employees discover, share, and prioritize learning, incorporating learning into the flow of work. The Microsoft Shifts app and its API give employers and frontline workers real-time visibility into schedules based on worker availability, and let them adjust schedules to their team's needs.
+
+
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
@@ -18,67 +23,34 @@ ms.custom: scenarios:getting-started
 ## Why integrate with Microsoft Teams?
 The rich features of Microsoft Teams and its API open up many scenarios for app developers. The following sections list a few of them.
 
-## Automate team lifecycles
+[Automate workflows](#automate-workflows)
+- [Use Microsoft Graph in any kind of app](#use-microsoft-graph-in-any-kind-of-app)
+- [Automate team lifecycles](#automate-team-lifecycles)
+- [Create and manage multiple teams and channels](#create-and-manage-multiple-teams-and-channels)
+- [Get work done even when no one is around](#get-work-done-even-when-no-one-is-around)
+- [Create teams linked to your app](#create-teams-linked-to-your-app)
+- [Deploy apps to teams](#deploy-apps-to-teams)
+ 
+[Call or meet virtually](#call-or-meet-collaboratively)
+- [Handle incoming calls](#handle-incoming-calls)
+- [Collaborate through group calls](#collaborate-through-group-calls)
+- [Send reminders reliably](#send-reminders-reliably)
+- [Set up online meetings](#set-up-online-meetings)
 
-Use Microsoft Graph to [create a new virtual team](/graph/api/team-put-teams) when a new business issue arises, 
-[add the right people](/graph/api/group-post-members) to the team, 
-and configure the team with 
-[channels](/graph/api/channel-post),
-[tabs](/graph/teams-configuring-builtin-tabs),
-and [apps](/graph/api/team-post-installedapps).
-If you want to get the new team together to discuss the business issue, 
-[add a new event](/graph/api/group-post-events) to the team calendar.
+[Cultivate workforce](#cultivate-workforce)
+- [Manage shifts and staff schedules](#manage-shifts-and-staff-schedules)
+- [Enable employee learning using the collaborative capabilities in Teams](#enable-employee-learning-using-the-collaborative-capabilities-in-teams)
 
-![Automate team lifecycles by creating a team, adding members and owners, configuring team settings, adding channels, installing apps, adding tabs, and archiving or deleting the team when the time comes.](images/teams-lifecycle.png)
 
-When the business issue is resolved and you no longer need the team, 
-use the Microsoft Teams API to [archive](/graph/api/team-archive)
-or [delete](/graph/api/group-delete) the team. 
-If you know the maximum duration of the team when you create it, 
-set an [Microsoft 365 group expiration policy](https://support.office.com/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
-for the team that automatically removes the team according to the policy.
+## Automate workflows
 
-## Get work done even when no one is around
-
-Use [application permissions](permissions-reference.md) to work with 
-[teams](/graph/api/resources/team), [channels](/graph/api/resources/channel), and 
-[tabs](/graph/api/resources/teamstab)
-without human intervention. 
-Create a new channel when your customer files an order.
-Automatically create teams for classes at the beginning of the school year, and archive them at the end.
-
-## Create teams linked to your app
-
-Let customers create new [teams](/graph/api/resources/team) and [channels](/graph/api/resources/channel). 
-[Install](/graph/api/teamsappinstallation-add) your 
-[Teams app](/microsoftteams/platform/#pivot=home&panel=home-all) in the new teams. 
-[Pin your app to a tab](/graph/api/teamstab-add) in the new channel. 
-[Send messages](/graph/api/chatmessage-post) to the channel linking back to your website.
-
-## Create and manage multiple teams and channels
-
-Microsoft Graph makes it easy to create large numbers of teams and populate them with users and channels,
-by automating the creation and management of [teams](/graph/api/resources/team), [channels](/graph/api/resources/channel),
-[tabs](/graph/api/resources/teamstab), and [apps](/graph/api/resources/teamsapp).
-Microsoft Graph also lets you [find](teams-list-all-teams.md) 
-and [archive](/graph/api/team-archive)
-the teams you are no longer using. 
-This is the same API that the [Microsoft Teams Admin Center](/microsoftteams/enable-features-office-365)
-and [Teams PowerShell cmdlets](/microsoftteams/teams-powershell-overview) are built on.
-
-## Deploy apps to teams
-
-[List the teams in your tenant](teams-list-all-teams.md), and 
-[install apps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0&preserve-view=true) to them. 
-[Create tabs](/graph/api/resources/teamstab?view=graph-rest-1.0&preserve-view=true) in channels to give users easy access to apps.
-
-## Use Microsoft Graph in any kind of app
+### Use Microsoft Graph in any kind of app
 
 Microsoft Teams apps give work groups a new tool to make collaboration a more productive and compelling experience. These apps let work group users share assets, interact through chat, and schedule events on the team calendar. These apps can also automate creating teams, channels, and conversations, enhancing the value of Microsoft Teams.
 
 You can create websites, services, and native platform applications that run outside the Microsoft Teams user experience, and call the Teams API to automate Teams scenarios.
 
-### Types of apps enabled for Microsoft Teams
+#### Types of apps enabled for Microsoft Teams
 
 ![Call the Microsoft Teams API from tabs, bots, websites, and services](images/teamsappendpoints.png)
 
@@ -98,11 +70,67 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 | [Activity feed](/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
 | [Calling and online meetings (preview)](/graph/api/resources/communications-api-overview) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
 
-## Get notified about changes
 
-Microsoft Teams supports subscribing to changes (create, update, and delete) to messages in [channels](/graph/api/resources/channel) and [chats](/graph/api/resources/chat) to allow apps to get near-instant updates. For details about how to subscribe to changes, see [Get change notifications for messages in channels and chats](teams-changenotifications-chatmessage.md).
+### Automate team lifecycles
 
-## Handle incoming calls
+Use Microsoft Graph to [create a new virtual team](/graph/api/team-put-teams) when a new business issue arises, 
+[add the right people](/graph/api/group-post-members) to the team, 
+and configure the team with 
+[channels](/graph/api/channel-post),
+[tabs](/graph/teams-configuring-builtin-tabs),
+and [apps](/graph/api/team-post-installedapps).
+If you want to get the new team together to discuss the business issue, 
+[add a new event](/graph/api/group-post-events) to the team calendar.
+
+![Automate team lifecycles by creating a team, adding members and owners, configuring team settings, adding channels, installing apps, adding tabs, and archiving or deleting the team when the time comes.](images/teams-lifecycle.png)
+
+When the business issue is resolved and you no longer need the team, 
+use the Microsoft Teams API to [archive](/graph/api/team-archive)
+or [delete](/graph/api/group-delete) the team. 
+If you know the maximum duration of the team when you create it, 
+set an [Microsoft 365 group expiration policy](https://support.office.com/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
+for the team that automatically removes the team according to the policy.
+
+### Create and manage multiple teams and channels
+
+Microsoft Graph makes it easy to create large numbers of teams and populate them with users and channels,
+by automating the creation and management of [teams](/graph/api/resources/team), [channels](/graph/api/resources/channel),
+[tabs](/graph/api/resources/teamstab), and [apps](/graph/api/resources/teamsapp).
+Microsoft Graph also lets you [find](teams-list-all-teams.md) 
+and [archive](/graph/api/team-archive)
+the teams you are no longer using. 
+This is the same API that the [Microsoft Teams Admin Center](/microsoftteams/enable-features-office-365)
+and [Teams PowerShell cmdlets](/microsoftteams/teams-powershell-overview) are built on.
+
+
+### Get work done even when no one is around
+
+Use [application permissions](permissions-reference.md) to work with 
+[teams](/graph/api/resources/team), [channels](/graph/api/resources/channel), and 
+[tabs](/graph/api/resources/teamstab)
+without human intervention. 
+Create a new channel when your customer files an order.
+Automatically create teams for classes at the beginning of the school year, and archive them at the end.
+
+### Create teams linked to your app
+
+Let customers create new [teams](/graph/api/resources/team) and [channels](/graph/api/resources/channel). 
+[Install](/graph/api/teamsappinstallation-add) your 
+[Teams app](/microsoftteams/platform/#pivot=home&panel=home-all) in the new teams. 
+[Pin your app to a tab](/graph/api/teamstab-add) in the new channel. 
+[Send messages](/graph/api/chatmessage-post) to the channel linking back to your website.
+
+
+### Deploy apps to teams
+
+[List the teams in your tenant](teams-list-all-teams.md), and 
+[install apps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0&preserve-view=true) to them. 
+[Create tabs](/graph/api/resources/teamstab?view=graph-rest-1.0&preserve-view=true) in channels to give users easy access to apps.
+
+
+## Call or meet virtually
+
+### Handle incoming calls
 
 It can be overwhelming at times when an organization receives a high volume of business calls and it isn't possible, or productive, to answer all of them. A bot can serve as a front-desk assistant, handling calls by rejecting what may seem like spam calls or redirecting (forwarding) specific calls to a different number. You can use the cloud communications API to:
 
@@ -123,7 +151,7 @@ Integrating with a natural language processing service means that the customer's
 > You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
 
-## Collaborate through group calls
+### Collaborate through group calls
 Enable users to engage with coworkers or customers by creating a group call so that everyone can contribute to the conversation. You can use the cloud communications API to:
 
 - [Create a group call](/graph/api/application-post-calls#example-3-create-a-group-call-with-service-hosted-media) with multiple participants.
@@ -132,28 +160,34 @@ Enable users to engage with coworkers or customers by creating a group call so t
 - [List call participants](/graph/api/call-list-participants) in the group call.
 - [Mute a participant](/graph/api/participant-mute).
 
-
-## Set up online meetings
-Whether scheduling a meeting between a doctor and a patient or between a user and their direct reports, it is possible to build solutions that create meetings that users can rely on. For added flexibility, users can call other users and invite them to the meeting while it's ongoing. You can use the cloud communications API to:
-
-- [Create an online meeting](/graph/api/application-post-onlinemeetings).
-- [Retrieve meeting details](/graph/api/onlinemeeting-get) of an online meeting.
-- [Join an online meeting](/graph/api/application-post-calls#example-5-join-scheduled-meeting-with-service-hosted-media).
-
-## Send reminders reliably
+### Send reminders reliably
 To enable users to receive reminders for an appointment or a payment deadline that is approaching, you can have a bot call a customer automatically.<!--If a customer misses the call, the bot will leave a voicemail with the automated message.(Add this back once bot to PSTN calling works)--> 
 
 - [Call a customer](/graph/api/application-post-calls) on Teams.
 - [Play a recorded prompt](/graph/api/call-playprompt) to serve as a reminder.
 - [End a call](/graph/api/call-delete).
 
+### Set up online meetings
+Whether scheduling a meeting between a doctor and a patient or between a user and their direct reports, it is possible to build solutions that create meetings that users can rely on. For added flexibility, users can call other users and invite them to the meeting while it's ongoing. You can use the cloud communications API to:
 
-## Enable employee learning using the collaborative capabilities in Teams
+- [Create an online meeting](/graph/api/application-post-onlinemeetings).
+- [Retrieve meeting details](/graph/api/onlinemeeting-get) of an online meeting.
+- [Join an online meeting](/graph/api/application-post-calls#example-5-join-scheduled-meeting-with-service-hosted-media).
+
+
+## Cultivate workforce 
+
+### Manage shifts and staff schedules
+Available on Teams, the Microsoft Shifts app manages shifts, staff scheduling, and time tracking. Being integrated with Teams streamlines communications using dedicated channels and teams built to connect the workforce and foster community building. Use the [Shifts API](/graph/api/resources/shift) to pull shift data into your staffing systems, provide frontline workers with shift information they need in one place, and empower them to own their schedules, request shift in a schedule, and swap or offer shifts.
+
+### Enable employee learning using the collaborative capabilities in Teams
 Viva Learning built for Microsoft Teams and Microsoft 365 brings employee learning into the flow of work. Viva Learning lets employers register learning providers, upload and manage content metadata, learner assignments, and completion records. Employees can share learning content in Teams messages, meeting chats, or emails, encouraging peer learning and mentoring conversations. 
 
 Use the employee learning APIs for Viva Learning to: 
 - Register and manage a [learning provider](/graph/api/resources/learningprovider).
 - Insert, update, retrieve, and delete [learning content](/graph/api/resources/learningcontent) metadata.
+
+
 
 
 ## API reference
