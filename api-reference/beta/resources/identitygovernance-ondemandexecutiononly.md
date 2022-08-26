@@ -1,6 +1,6 @@
 ---
 title: "onDemandExecutionOnly resource type"
-description: "Article describing the resource type for a workflow running on demand only"
+description: "Represents the setting for a workflow running on-demand only."
 author: "owinfreyATL"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type denoting the execution condition of workflow created by Lifecycle Workflows running on demand only instead of by schedule.
+Represents the execution condition of a [lifecycle workflow](../resources/identitygovernance-workflow.md) running on-demand only instead of by schedule.
 
 Inherits from [workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md).
 

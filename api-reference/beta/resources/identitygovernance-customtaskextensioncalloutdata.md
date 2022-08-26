@@ -13,14 +13,13 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type that represents the call-out data of the Custom Task Extension.
+Represents the data send to Azure Logic Apps when a custom task extension gets used as part of a lifecycle workflow execution.
 
-Inherits from [customExtensionData](../resources/identitygovernance-customTaskExtensionCalloutData.md).
+Inherits from [customExtensionData](../resources/identitygovernance-customextensiondata.md).
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 

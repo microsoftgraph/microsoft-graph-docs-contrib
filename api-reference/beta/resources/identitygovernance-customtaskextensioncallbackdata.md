@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type that reports the status of the custom task extension callback data.
+Represents the operation status that the logic app returns indicating whether or not the Logic App successfully ran on basis of that the [taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) processingStatus will be updated. 
 
 Inherits from [customExtensionData](../resources/identitygovernance-customTaskExtensionCallbackData.md).
 
@@ -21,7 +21,7 @@ Inherits from [customExtensionData](../resources/identitygovernance-customTaskEx
 
 |Property|Type|Description|
 |:---|:---|:---|
-|operationStatus|String|Allow extension provided completion status of the corresponding extension. Supported values: `completed`, `failed`.|
+|operationStatus|microsoft.graph.identityGovernance.customTaskExtensionOperationStatus|Operation status that's provided by the Azure Logic App indicating whenever the Azure Logic App has run successfully or not. Supported values: `completed`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 
@@ -38,6 +38,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackData",
-  "operationStatus": "completed"
+  "operationStatus": "String"
 }
 ```

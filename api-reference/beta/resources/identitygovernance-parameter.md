@@ -1,6 +1,6 @@
 ---
 title: "parameter resource type"
-description: "*parameter resource type properties"
+description: "Represents the allowed arguments that are defined in a taskDefinition for built-in lifecycle workflow tasks."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type denoting the parameters of workflows created using Lifecycle Workflows.
+Represents the allowed arguments that are defined in a [taskDefinition](../resources/identitygovernance-taskdefinition.md) for built-in lifecycle workflow tasks.
 
 ## Properties
 
@@ -21,7 +21,7 @@ A resource type denoting the parameters of workflows created using Lifecycle Wor
 |:---|:---|:---|
 |name|String|The name of the parameter.|
 |values|String collection|The values of the parameter.|
-|valueType|String|The value type of the parameter. The possible values are: `enum`, `string`, `int`, `bool`, `unknownFutureValue`.|
+|valueType|microsoft.graph.identityGovernance.valueType|The value type of the parameter. The possible values are: `enum`, `string`, `int`, `bool`, `unknownFutureValue`.|
 
 ## Relationships
 
