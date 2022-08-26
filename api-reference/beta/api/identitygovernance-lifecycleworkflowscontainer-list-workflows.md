@@ -1,6 +1,6 @@
 ---
 title: "List workflows (lifecycle workflows)"
-description: "Get the workflow resources from the workflows navigation property."
+description: "Get a list of the workflow objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

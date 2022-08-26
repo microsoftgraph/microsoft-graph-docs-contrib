@@ -1,6 +1,6 @@
 ---
 title: "List runs (for a lifecycle workflow)"
-description: "Get the run resources from the runs navigation property."
+description: "Get a list of the run objects and their properties for a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

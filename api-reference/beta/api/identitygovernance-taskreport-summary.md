@@ -1,13 +1,13 @@
 ---
-title: "Get Task Report Summary"
-description: "Get a summary of a taskReport object."
+title: "taskReport: summary (of a lifecycle workflow)"
+description: "The summary of taskReports for a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get Task Report Summary
+# taskReport: summary (of a lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 

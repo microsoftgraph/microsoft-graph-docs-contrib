@@ -1,5 +1,5 @@
 ---
-title: "List Workflow Templates"
+title: "List workflowTemplates"
 description: "Get a list of the workflowTemplate objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List Workflow Templates
+# List workflowTemplates
 
 Namespace: microsoft.graph.identityGovernance
 

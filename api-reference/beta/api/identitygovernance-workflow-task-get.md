@@ -1,6 +1,6 @@
 ---
 title: "Get task (in a lifecycle workflow)"
-description: "Get a specific task in a lifecycle workflow."
+description: "Read the properties of a task object in a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

@@ -1,6 +1,6 @@
 ---
 title: "List userProcessingResults (for a lifecycle workflow)"
-description: "Get the userProcessingResult resources from the userProcessingResults navigation property."
+description: "Get a list of the userProcessingResult objects and their properties for a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

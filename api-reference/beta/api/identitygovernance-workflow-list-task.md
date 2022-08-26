@@ -1,6 +1,6 @@
 ---
 title: "List tasks (in a lifecycle workflow)"
-description: "Get the task resources from the tasks navigation property."
+description: "Get a list of the task objects and their properties in a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

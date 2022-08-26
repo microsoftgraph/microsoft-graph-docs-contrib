@@ -1,13 +1,13 @@
 ---
-title: "List Task Reports"
-description: "Get a list of the taskReport objects and their properties."
+title: "List taskReports (for a lifecycle workflow)"
+description: "Get a list of the taskReport objects and their properties for a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List taskReports
+# List taskReports (for a lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 

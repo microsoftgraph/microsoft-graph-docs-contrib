@@ -1,19 +1,19 @@
 ---
-title: "List Task Processing Results"
-description: "Get the taskProcessingResult from the task report"
+title: "List taskProcessingResult (for a taskReport)"
+description: "Get a list of taskProcessingResult objects and their properties for a taskReport"
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List taskProcessingResults
+# List taskProcessingResult (for a taskReport)
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the taskProcessingResult resources from the [TaskReport](../resources/identitygovernance-taskreport.md).
+Get the taskProcessingResult resources from the [taskReport](../resources/identitygovernance-taskreport.md).
 
 ## Permissions
 

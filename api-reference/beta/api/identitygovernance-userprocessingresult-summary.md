@@ -1,6 +1,6 @@
 ---
 title: "userProcessingResult: summary"
-description: "Get a user processing summary API "
+description: "The summary of userProcessingResult for a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

@@ -1,6 +1,6 @@
 ---
 title: "workflow: activate (run a workflow on-demand)"
-description: "workflow activate allows a workflow to be run on demand"
+description: "Run a workflow on-demand for time critical execution and testing"
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

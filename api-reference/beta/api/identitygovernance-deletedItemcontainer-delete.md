@@ -1,6 +1,6 @@
 ---
 title: "Delete deletedItemContainer (permanently delete a deleted lifecycle workflow)"
-description: "Permanently delete a deleted lifecycle workflow"
+description: "Permanently delete a deleted lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
