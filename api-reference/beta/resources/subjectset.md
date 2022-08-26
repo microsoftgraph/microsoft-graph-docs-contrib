@@ -18,8 +18,7 @@ An abstract type that defines the subjects that are the scope of a lifecycle [tr
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 
