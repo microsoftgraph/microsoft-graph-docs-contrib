@@ -13599,7 +13599,7 @@ items:
                 - name: List user processing results
                   href: api/identitygovernance-run-list-userprocessingresults.md
                 - name: Get user processing result
-                  href: api/identitygovernance-run-userprocessingresult-get.md     
+                  href: api/identitygovernance-userprocessingresult-get.md     
               - name: Task Processing Result
                 href: resources/identitygovernance-taskprocessingresult.md
                 items:  
