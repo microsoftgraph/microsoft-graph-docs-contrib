@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |source|String|The source of the `taskProcessingResult`.|
 |type|String|The type of the `taskProcessingResult`.|
-|data|[microsoft.graph.identityGovernance.customTaskExtensionCallbackData](../resources/identitygovernance-customtaskextensioncallbackdata.md)|The `customtaskextensionCallbackData` of the `taskProcessingResult`.|
+|data|[microsoft.graph.identityGovernance.customTaskExtensionCallbackData](../resources/identitygovernance-customtaskextensioncallbackdata.md)|The customtaskextensionCallbackData of the taskProcessingResult. The logic app returns an operation status of whether or not it successfully ran. The taskprocessingresult resumes based on how the task was designed in the workflow.  |
 
 ## Response
 

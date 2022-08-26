@@ -1,5 +1,5 @@
 ---
-title: "List Task Definitions"
+title: "List taskDefinitions"
 description: "Get a list of the taskDefinition objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium

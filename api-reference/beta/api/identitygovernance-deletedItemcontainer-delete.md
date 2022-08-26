@@ -1,5 +1,5 @@
 ---
-title: "Delete workflow"
+title: "Delete deletedItemContainer (permanently delete a deleted lifecycle workflow)"
 description: "Permanently Deletes a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Permanently Delete a workflow
+# Delete deletedItemContainer (permanently delete a deleted lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 

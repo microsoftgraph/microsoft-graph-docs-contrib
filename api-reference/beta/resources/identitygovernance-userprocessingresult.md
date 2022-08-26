@@ -21,8 +21,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List userProcessingResults](../api/identitygovernance-userprocessingresult-list.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Get a list of the [userProcessingResult](../resources/identitygovernance-userprocessingresult.md) objects and their properties.|
-|[Get userProcessingResult](../api/identitygovernance-userprocessingresult-get.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md)|Read the properties and relationships of a [userProcessingResult](../resources/identitygovernance-userprocessingresult.md) object.|
+|[List userProcessingResults](../api/identitygovernance-workflow-list-userprocessingresults.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Get a list of the [userProcessingResult](../resources/identitygovernance-userprocessingresult.md) objects and their properties.|
 |[summary](../api/identitygovernance-userprocessingresult-summary.md)|[microsoft.graph.identityGovernance.usersProcessingSummary](../resources/identitygovernance-usersprocessingsummary.md)|Provides a summary of the user processing result object|
 
 ## Properties

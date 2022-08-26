@@ -1,5 +1,5 @@
 ---
-title: "Get a deleted workflow"
+title: "Get deletedItemContainer (a deleted workflow)"
 description: "Get a specific deleted workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get a Deleted Workflow
+# Get deletedItemContainer (a deleted workflow)
 
 Namespace: microsoft.graph.identityGovernance
 

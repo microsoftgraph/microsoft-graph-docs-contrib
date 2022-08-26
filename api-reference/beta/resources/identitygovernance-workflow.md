@@ -23,17 +23,17 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |:---|:---|:---|
 |[List workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) collection|Get a list of the [workflow](../resources/identitygovernance-workflow.md) objects and their properties.|
 |[Create workflow](../api/identitygovernance-lifecycleworkflowscontainer-post-workflows.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Create a new [workflow](../resources/identitygovernance-workflow.md) object.|
-|[Get workflow](../api/identitygovernance-lifecycleworkflowscontainer-get.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Read the properties and relationships of a [workflow](../resources/identitygovernance-workflow.md) object.|
+|[Get workflow](../api/identitygovernance-workflow-get.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Read the properties and relationships of a [workflow](../resources/identitygovernance-workflow.md) object.|
 |[Update workflow](../api/identitygovernance-lifecycleworkflowscontainer-update.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object.|
-|[Delete workflow](../api/identitygovernance-delete-lifecycleworkflows.md)|None|Deletes a [workflow](../resources/identitygovernance-workflow.md) object.|
-|[Get Delete lifecycleWorkflowsContainer](../api/identitygovernance-deletedworkflow-get.md)|None|Deletes a [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) object.|
-|[Permanently Delete lifecycleWorkflowsContainer](../api/identitygovernance-deletedworkflow-delete.md)|None|Deletes a [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) object.|
+|[Delete workflow](../api/identitygovernance-workflow-delete.md)|None|Deletes a [workflow](../resources/identitygovernance-workflow.md) object.|
+|[Get Delete lifecycleWorkflowsContainer](../api/identitygovernance-deleteditemcontainer-get.md)|None|Deletes a [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) object.|
+|[Permanently Delete lifecycleWorkflowsContainer](../api/identitygovernance-deletedItemcontainer-delete.md)|None|Deletes a [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) object.|
 |[List Deleted workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) collection|Get the deleted workflow resources from the workflows navigation property.|
 |[activate](../api/identitygovernance-workflow-activate.md)|None|Activate the workflow object.|
-|[Create workflowVersion](../api/identitygovernance-workflowversion-post.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md)|Create a new workflowVersion object.|
-|[restore](../api/identitygovernance-deletedworkflow-restore.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Restore the workflow object.|
-|[List runs](../api/identitygovernance-list-run.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Get the run resources from the runs navigation property.|
-|[List tasks](../api/identitygovernance-workflow-list-tasks.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get the task resources from the tasks navigation property.|
+|[Create workflowVersion](../api/identitygovernance-workflow-createnewversion.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md)|Create a new workflowVersion object.|
+|[restore](../api/identitygovernance-workflow-restore.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Restore the workflow object.|
+|[List runs](../api/identitygovernance-workflow-list-run.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Get the run resources from the runs navigation property.|
+|[List tasks](../api/identitygovernance-workflow-list-task.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get the task resources from the tasks navigation property.|
 |[List versions](../api/identitygovernance-list-workflowversion.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md) collection|Get the workflowVersion resources from the versions navigation property.|
 
 ## Properties

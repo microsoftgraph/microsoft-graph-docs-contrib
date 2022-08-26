@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# userProcessingResults Summary
+# userProcessingResult: summary
 
 Namespace: microsoft.graph.identityGovernance
 

@@ -78,23 +78,42 @@ Content-Type: application/json
 Content-length: 631
 
 {
-  "workflow": {
-    "@odata.type": "#microsoft.graph.identityGovernance.workflow",
-    "category": "String",
-    "createdDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "executionConditions": {
-      "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "deletedDateTime": "String (timestamp)",
-    "id": "String (identifier)",
-    "isEnabled": "Boolean",
-    "isSchedulingEnabled": "Boolean",
-    "nextScheduleRunDateTime": "String (timestamp)",
-    "version": "Integer"
-  }
+    "workflow":{
+        "description": "Configure new hire tasks for onboarding employees on their first day",
+        "displayName": "Global onboard new hire employee",
+        "isEnabled": true,
+        "isSchedulingEnabled": false,
+        "executionConditions": {
+            "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+            "scope": {
+                "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+                "rule": "(department eq 'Marketing')"
+            },
+            "trigger": {
+                "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+                "timeBasedAttribute": "employeeHireDate",
+                "offsetInDays": 1
+            }
+        },
+        "tasks": [
+            {
+                "continueOnError": false,
+                "description": "Enable user account in the directory",
+                "displayName": "Enable User Account",
+                "isEnabled": true,
+                "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+                "arguments": []
+            },
+            {
+                "continueOnError": false,
+                "description": "Send welcome email to new hire",
+                "displayName": "Send Welcome Email",
+                "isEnabled": true,
+                "taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+                "arguments": []
+            }
+        ]
+    }
 }
 ```
 
@@ -113,22 +132,41 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.identityGovernance.workflow",
-    "category": "String",
-    "createdDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "executionConditions": {
-      "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "deletedDateTime": "String (timestamp)",
-    "id": "String (identifier)",
-    "isEnabled": "Boolean",
-    "isSchedulingEnabled": "Boolean",
-    "nextScheduleRunDateTime": "String (timestamp)",
-    "version": "Integer"
-  }
+    "workflow":{
+        "description": "Configure new hire tasks for onboarding employees on their first day",
+        "displayName": "Global onboard new hire employee",
+        "isEnabled": true,
+        "isSchedulingEnabled": false,
+        "executionConditions": {
+            "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+            "scope": {
+                "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+                "rule": "(department eq 'Marketing')"
+            },
+            "trigger": {
+                "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+                "timeBasedAttribute": "employeeHireDate",
+                "offsetInDays": 1
+            }
+        },
+        "tasks": [
+            {
+                "continueOnError": false,
+                "description": "Enable user account in the directory",
+                "displayName": "Enable User Account",
+                "isEnabled": true,
+                "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+                "arguments": []
+            },
+            {
+                "continueOnError": false,
+                "description": "Send welcome email to new hire",
+                "displayName": "Send Welcome Email",
+                "isEnabled": true,
+                "taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+                "arguments": []
+            }
+        ]
+    }
 }
 ```

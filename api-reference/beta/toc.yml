@@ -13536,23 +13536,23 @@ items:
             - name: Create
               href: api/identitygovernance-lifecycleworkflowscontainer-post-workflows.md
             - name: Get
-              href: api/identitygovernance-lifecycleworkflowscontainer-get.md
+              href: api/identitygovernance-workflow-get.md
             - name: Update
               href: api/identitygovernance-lifecycleworkflowscontainer-update.md
             - name: Delete
-              href: api/identitygovernance-delete-lifecycleworkflows.md
+              href: api/identitygovernance-workflow-delete.md
             - name: List Deleted Workflows 
               href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
             - name: Get a Deleted Workflow 
-              href: api/identitygovernance-deletedworkflow-get.md  
+              href: api/identitygovernance-deleteditemcontainer-get.md  
             - name: Permanently Delete a Workflow
-              href: api/identitygovernance-deletedworkflow-delete.md    
+              href: api/identitygovernance-deletedItemcontainer-delete.md    
             - name: Restore
-              href: api/identitygovernance-deletedworkflow-restore.md
+              href: api/identitygovernance-workflow-restore.md
             - name: Activate
               href: api/identitygovernance-workflow-activate.md
             - name: List Tasks
-              href: api/identitygovernance-workflow-list-tasks.md
+              href: api/identitygovernance-workflow-list-task.md
             - name: Get Task
               href: api/identitygovernance-workflow-task-get.md  
             - name: Versioning
@@ -13562,7 +13562,7 @@ items:
               - name: Get
                 href: api/identitygovernance-workflowversion-get.md
               - name: Create
-                href: api/identitygovernance-workflowversion-post.md 
+                href: api/identitygovernance-workflow-createnewversion.md 
               - name: List Tasks
                 href: api/identitygovernance-workflowversion-list-tasks.md
               - name: Get Task
@@ -13575,7 +13575,7 @@ items:
                 href: resources/identitygovernance-userprocessingresult.md
                 items:
                 - name: List
-                  href: api/identitygovernance-userprocessingresult-list.md
+                  href: api/identitygovernance-workflow-list-userprocessingresults.md
                 - name: Summary
                   href: api/identitygovernance-userprocessingresult-summary.md  
               - name: Task Reports
@@ -13591,13 +13591,13 @@ items:
                 href: resources/identitygovernance-run.md
                 items:
                 - name: List
-                  href: api/identitygovernance-list-run.md
+                  href: api/identitygovernance-workflow-list-run.md
                 - name: Get
                   href: api/identitygovernance-run-get.md
                 - name: Summary
                   href: api/identitygovernance-run-summary.md  
                 - name: List User processing Results
-                  href: api/identitygovernance-run-userprocessingresult-list.md
+                  href: api/identitygovernance-run-list-userprocessingresults.md
                 - name: Get User processing Results
                   href: api/identitygovernance-run-userprocessingresult-get.md     
               - name: Task Processing Result
@@ -13618,7 +13618,7 @@ items:
             - name: Task Definition
               href: resources/identitygovernance-taskdefinition.md
             - name: List
-              href: api/identitygovernance-taskreport-list-taskdefinition.md
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
             - name: Get
               href: api/identitygovernance-taskdefinition-get.md 
           - name: Custom Task Extension

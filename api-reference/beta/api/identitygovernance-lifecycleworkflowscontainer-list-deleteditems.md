@@ -1,5 +1,5 @@
 ---
-title: "List Deleted Workflows"
+title: "List deletedItems (deleted lifecycle workflows)"
 description: "Get a list of the deleted workflows objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List Deleted Workflows
+# List deletedItems (deleted lifecycle workflows)
 
 Namespace: microsoft.graph
 

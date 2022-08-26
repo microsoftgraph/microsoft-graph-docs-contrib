@@ -43,7 +43,7 @@ GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks/{taskId}
 
 ## Optional query parameters
 
-This method supports the `$expand` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

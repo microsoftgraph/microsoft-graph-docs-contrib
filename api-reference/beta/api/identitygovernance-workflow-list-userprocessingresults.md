@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List userProcessingResults
+# userProcessingResults (for a lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 
