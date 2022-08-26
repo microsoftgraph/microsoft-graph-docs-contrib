@@ -201,7 +201,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "requestSignatureVerification",
           "ChangeType": "Addition",
-          "Description": "Added the [requestSignatureVerification](https://docs.microsoft.com/en-us/graph/api/resources/requestSignatureVerification?view=graph-rest-beta) resource",
+          "Description": "Added the [requestSignatureVerification](https://docs.microsoft.com/en-us/graph/api/resources/requestSignatureVerification?view=graph-rest-beta) resource.",
           "Target": "requestSignatureVerification"
         },
         {
