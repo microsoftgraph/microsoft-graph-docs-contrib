@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type noting versions of workflows created using Lifecycle Workflows. Workflow versions are subsequent versions of workflows created when the need to change things other than its basic properties occur. Workflow versions also allow older versions of the workflow to be saved so that its history can be noted.
+Represents a version of a [lifecycle workflow](../resources/identitygovernance-workflowversion.md). Workflow versions are subsequent versions of workflows you can create when you need to change the workflow configuration other than its basic properties. You can view older versions of the workflow and associated reports will note which workflow version was executed.
 
 Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 

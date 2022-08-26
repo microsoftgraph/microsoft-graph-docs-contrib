@@ -13541,11 +13541,11 @@ items:
               href: api/identitygovernance-lifecycleworkflowscontainer-update.md
             - name: Delete
               href: api/identitygovernance-workflow-delete.md
-            - name: List Deleted Workflows 
+            - name: List deleted workflows 
               href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
-            - name: Get a Deleted Workflow 
+            - name: Get a deleted workflow 
               href: api/identitygovernance-deleteditemcontainer-get.md  
-            - name: Permanently Delete a Workflow
+            - name: Permanently delete a workflow
               href: api/identitygovernance-deletedItemcontainer-delete.md    
             - name: Restore
               href: api/identitygovernance-workflow-restore.md
@@ -13555,7 +13555,7 @@ items:
               href: api/identitygovernance-workflow-list-task.md
             - name: Get Task
               href: api/identitygovernance-workflow-task-get.md  
-            - name: Versioning
+            - name: Workflow versions
               items:
               - name: List
                 href: api/identitygovernance-list-workflowversion.md

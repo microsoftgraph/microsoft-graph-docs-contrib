@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type noting the trigger and scope for the execution conditions of a workflow created using Lifecycle Workflows. These determine who the workflow runs for, and what sets off the workflow to run.
+Represents a lifecycle workflow running by schedule, who it runs for, and what triggers the workflow to run.
 
 Inherits from [workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md).
 
@@ -22,7 +22,7 @@ Inherits from [workflowExecutionConditions](../resources/identitygovernance-work
 |Property|Type|Description|
 |:---|:---|:---|
 |scope|[microsoft.graph.subjectSet](../resources/subjectset.md)|Defines who the workflow runs for.|
-|trigger|[microsoft.graph.identityGovernance.workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md)|Sets a workflow to run.|
+|trigger|[microsoft.graph.identityGovernance.workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md)|What triggers a workflow to run.|
 
 ## Relationships
 
@@ -40,13 +40,10 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
   "scope": {
-            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-            "rule": "(department eq 'Marketing')"
-        },
-        "trigger": {
-            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-            "timeBasedAttribute": "employeeHireDate",
-            "offsetInDays": 0
-        }
+    "@odata.type": "microsoft.graph.subjectSet"
+  },
+  "trigger": {
+    "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionTrigger"
+  }
 }
 ```
