@@ -1,21 +1,21 @@
 ---
-title: "Overview for fostering teamwork using Microsoft Teams, Shifts, and Viva Learning apps"
-description: "Use the Microsoft Teams API in Microsoft Graph to automate team lifecycles, create and manage teams and channels, deploy apps, and get notified about changes."
+title: "Overview for using Microsoft Teams, Shifts, and Viva Learning to foster teamwork"
+description: "Microsoft Teams is the ultimate hub for team collaboration and intelligent communications, fostering a culture where employees can thrive. "
 author: "nkramer"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Overview for fostering teamwork using Microsoft Teams, Shifts, and Viva Learning apps
+# Overview for using Microsoft Teams, Shifts, and Viva Learning to foster teamwork
 
-[Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for team collaboration and intelligent communications that fosters a culture where employees thrive. Built on the strength and scale of [Microsoft 365](https://products.office.com/) with over 120 million users, Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features. Available on Teams, the Microsoft Shifts app and its API give employers and frontline workers real-time visibility into schedules based on worker availability, and let them adjust schedules to their team's needs. Viva Learning and its API let employers integrate content from learning management systems, letting employees discover, share, and prioritize learning, incorporating learning into the flow of work.
+[Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for team collaboration and intelligent communications, fostering a culture where employees can thrive. Built on the strength and scale of [Microsoft 365](https://products.office.com/) with over 120 million users, Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features. Available as apps on Teams and as part of Microsoft Graph are [Microsoft Shifts](https://www.microsoft.com/microsoft-teams/staff-scheduling-shift-management) and [Viva Learning](https://www.microsoft.com/microsoft-viva/learning). Shifts and its API give employers and frontline workers real-time visibility into schedules based on worker availability, and let them adjust schedules to their team's needs. Viva Learning and its API let employers integrate content from learning management systems, enabling employees to discover, share, and prioritize learning, and incorporating learning into the flow of work.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
 
 
-## Why integrate with Microsoft Teams?
-The rich features of Microsoft Teams and its API open up many scenarios for app developers. The following sections list a few of them.
+## Why integrate with Microsoft Teams, Shifts, and Viva Learning?
+The rich features and APIs for Microsoft Teams, Shifts, and Viva Learning open up many scenarios for app developers. The following sections list a few of them.
 
 [Automate workflows](#automate-workflows)
 - [Use Microsoft Graph in any kind of app](#use-microsoft-graph-in-any-kind-of-app)
