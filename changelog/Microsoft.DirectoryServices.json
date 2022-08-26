@@ -193,7 +193,7 @@
           "ApiChange": "Enumeration",
           "ChangedApiName": "weakAlgorithms",
           "ChangeType": "Addition",
-          "Description": "Added the [weakAlgorithms](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Description": "Added the [weakAlgorithms](https://docs.microsoft.com/en-us/?view=graph-rest-beta) enumeration type.",
           "Target": "weakAlgorithms"
         },
         {
