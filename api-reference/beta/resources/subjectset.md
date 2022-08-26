@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An abstract type that defines the subjects that are the scope of a lifecycle [triggerAndScopeBasedConditions](../resources/identitygovernance-triggerAndScopeBasedConditions.md) configuration. The following resource types are derived from this abstract type:
-+ [ruleBasedSubjectSet](../resources/ruleBasedSubjectSet.md)
+
++ [ruleBasedSubjectSet](../resources/identitygovernance-ruleBasedSubjectSet.md)
 
 ## Properties
 
