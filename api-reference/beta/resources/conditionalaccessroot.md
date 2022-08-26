@@ -32,6 +32,7 @@ None.
 |authenticationContextClassReferences|[authenticationContextClassReference](authenticationcontextclassreference.md) collection|Read-only. Nullable. Returns a collection of the specified authentication context class references.|
 |namedLocations|[namedLocation](namedlocation.md) collection| Read-only. Nullable. Returns a collection of the specified named locations.|
 |policies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access policies.|
+|authenticationStrengths|[authenticationStrengthRoot](authenticationstrengthroot)|Cannot be called directly, but children contain authentication strength policies, valid authentication method combinations, and authentication method mode details.|
 
 ## JSON representation
 

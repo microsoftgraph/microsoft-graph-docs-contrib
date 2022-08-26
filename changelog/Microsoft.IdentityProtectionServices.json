@@ -1,6 +1,25 @@
 {
 	"changelog": [
 		{
+
+			"ChangeList": [
+				{
+				"Id": "df8951cf-1bb2-4670-ba15-bd95f1e0f44a",
+				"ApiChange": "Resource",
+				"ChangedApiName": "authenticationStrength",
+				"ChangeType": "Addition",
+				"Description": "Added the [authenticationStrength](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls?view=graph-rest-beta) resource",
+				"Target": "conditionalAccessGrantControls"
+				}
+			],
+			"Id": "df8951cf-1bb2-4670-ba15-bd95f1e0f44a",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-08-16T22:01:23.4281584Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
 		      "ChangeList": [
 			{
 			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
