@@ -69,7 +69,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.authenticationMethodModes)"
+  "@odata.type": "Collection(#microsoft.graph.authenticationMethodModes)"
 }
 -->
 ``` http

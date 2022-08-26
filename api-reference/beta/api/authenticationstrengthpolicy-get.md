@@ -76,24 +76,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    {
-        "@odata.type" : "authenticationStrengthPolicy",
-        "id": "00000000-0000-0000-0000-000000000004",
-        "createdDateTime": "2017-10-30T10:59:01Z",
-        "modifiedDateTime": "2017-10-30T10:59:01Z",
-        "displayName": "Phishing resistant MFA",
-        "description": "Phishing-resistant, Passwordless methods for the strongest authentication, such as a FIDO2 security key",
-        "policyType": "builtIn",
-        "requirementsSatisfied": "mfa",
-        "allowedCombinations": [
-            "windowsHelloForBusiness",
-            "fido2",
-            "x509CertificateMultiFactor"
-        ],
-        "combinationConfigurations": []
-    }
-  }
+  "@odata.type" : "#microsoft.graph.authenticationStrengthPolicy",
+  "id": "00000000-0000-0000-0000-000000000004",
+  "createdDateTime": "2017-10-30T10:59:01Z",
+  "modifiedDateTime": "2017-10-30T10:59:01Z",
+  "displayName": "Phishing resistant MFA",
+  "description": "Phishing-resistant, Passwordless methods for the strongest authentication, such as a FIDO2 security key",
+  "policyType": "builtIn",
+  "requirementsSatisfied": "mfa",
+  "allowedCombinations": [
+      "windowsHelloForBusiness",
+      "fido2",
+      "x509CertificateMultiFactor"
+  ],
+  "combinationConfigurations": []
 }
 ```
 

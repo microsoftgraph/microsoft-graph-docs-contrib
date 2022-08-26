@@ -86,28 +86,19 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
-  "value": {
-    "@odata.type": "microsoft.graph.updateAllowedCombinationsResult"
-  }
-}
-
-{
-  "value": {
-    "@odata.type" : "#microsoft.graph.updateAllowedCombinationsResult",
-    "previousCombinations": [
-            "fido2",
-            "password, voice"
-    ],
-    "currentCombinations": [
-            "password, voice"
-    ],
-    "conditionalAccessReferences": [
-      "53a3968a-ae2c-4b82-a313-091d10c52bfa"
-    ],
-    "additionalInformation": "You have lowered the security of the My Custom Strength authentication strength by adding a lower security combination. This Authentication Strength is referenced by one or more Conditional Access policies. Review conditionalAccessReferences to understand which Conditional Access policies were impacted by this change. To reverse your changes back, use updateAllowedCombinations action with the previousCombinations values."
-  }
+  "@odata.type" : "#microsoft.graph.updateAllowedCombinationsResult",
+  "previousCombinations": [
+          "fido2",
+          "password, voice"
+  ],
+  "currentCombinations": [
+          "password, voice"
+  ],
+  "conditionalAccessReferences": [
+    "53a3968a-ae2c-4b82-a313-091d10c52bfa"
+  ],
+  "additionalInformation": "You have lowered the security of the My Custom Strength authentication strength by adding a lower security combination. This Authentication Strength is referenced by one or more Conditional Access policies. Review conditionalAccessReferences to understand which Conditional Access policies were impacted by this change. To reverse your changes back, use updateAllowedCombinations action with the previousCombinations values."
 }
 ```
 
