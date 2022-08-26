@@ -63,7 +63,6 @@ You can specify the following properties when creating a **workflow**.
 |isEnabled|Boolean|A Boolean value that denotes whether the workflow is set to run or not.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
 |tasks|Collection(microsoft.graph.identityGovernance.task)| Represents the configured tasks to execute and their execution sequence within the workflow. Required. |
-|tasks||A Boolean value that denotes whether scheduling is enabled or not. |
 
 ## Response
 
