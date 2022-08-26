@@ -11,11 +11,11 @@ doc_type: conceptualPageType
 
 Resources are an integral part of education [assignments](/graph/api/resources/educationassignment) and [submissions](/graph/api/resources/educationsubmission). Teachers determine the resources to upload to an assignment folder, and students determine the resources to upload to a feedback resources folder.
 
-This article describes how to use the education API in Microsoft Graph to upload files to  feedback resources folder.
+This article describes how to use the education API in Microsoft Graph to upload files to a feedback resources folder.
 
 ## Prerequisites
 
-Before you can upload files, set up a SharePoint folder to which to upload the files for a given education assignment or submission resource.
+Before you can upload files, set up a SharePoint folder to upload the files to for a given education assignment or submission resource.
 
 ## Upload a resource
 
@@ -30,14 +30,14 @@ The [submission setUpResourcesFolder](/graph/api/educationsubmission-setupresour
 
 The following steps describe how to upload a resource/file to a relevant resource folder.
 
-### Step 1 - Construct the upload URL
-Build the URL to upload content following this specific format `{resourcesFolderUrl}:/{Name of new file}:/content`. The following example shows an upload URL that contains the **resourcesFolderUrl** property.
+### Step 1: Construct the upload URL
+Build the URL to upload content following this specific format: `{resourcesFolderUrl}:/{Name of new file}:/content`. The following example shows an upload URL that contains the **resourcesFolderUrl** property.
 
 ```http
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GE2:/MyPictureFile.png:/content
 ```
 
-### Step 2 - Upload the resource to SharePoint
+### Step 2: Upload the resource to SharePoint
 Make a PUT request with the upload URL to upload the content.
 
 The contents of the request body should be the binary stream of the file to be uploaded.
@@ -112,7 +112,7 @@ Content-type: application/json
 }
 ```
 
-### Step 3 - Construct the value for the fileUrl property
+### Step 3: Construct the value for the fileUrl property
 Build the value for the **fileUrl** property using the following format: `https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}`. Replace the `{drive-id}` and `{item-id}` placeholders with the values described in the following table.
 
 | Placeholder | Description | Example |
@@ -126,10 +126,10 @@ The following example shows a **fileUrl** based on this format.
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
 ```
 
-### Step 4 - Create educationFeedbackResourceOutcome
+### Step 4: Create educationFeedbackResourceOutcome
 This step shows how to upload a SharePoint resource to a feedback resources folder.
 
-Use the `fileUrl` from the previous step in the request body to [Create an educationFeedbackResourceOutcome](/graph/api/educationfeedbackresourceoutcome-post-outcomes).
+Use the `fileUrl` from the previous step in the request body to [create an educationFeedbackResourceOutcome](/graph/api/educationfeedbackresourceoutcome-post-outcomes).
 
 #### Request
 
@@ -199,6 +199,6 @@ Content-type: application/json
 
 ```
 
-You have now successfully uploaded a resource to a feedback resources folder (and attached it to the associated submission). You can follow similar steps to upload one or more feedback  resources.
+You have now successfully uploaded a resource to a feedback resources folder (and attached it to the associated submission). You can follow similar steps to upload one or more feedback resources.
 
 For more details, see [Create educationFeedbackResourceOutcome](/graph/api/educationfeedbackresourceoutcome-post-outcomes).
