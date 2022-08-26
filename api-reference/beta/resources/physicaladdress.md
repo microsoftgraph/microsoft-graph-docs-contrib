@@ -2,7 +2,7 @@
 title: "physicalAddress resource type"
 description: "Represents the street address of a resource such as a contact or event."
 ms.localizationpriority: medium
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
