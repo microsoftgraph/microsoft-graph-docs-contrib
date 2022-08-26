@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 
 ### Response
 
-The following is an example of the response of a request to get a task from a workflow.
+The following is an example of the response of a request to get a task from a workflow or workflow version.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -112,31 +112,6 @@ Content-Type: application/json
     "displayName": "Enable User Account",
     "executionSequence": 1,
     "id": "fafa2189-cd62-4643-a825-06cab8817086",
-    "isEnabled": true,
-    "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
-    "arguments": []
-}
-```
-
-The following is an example of the response of a request to get a task from a workflow.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.identityGovernance.workflowVersion"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/versions(2)/tasks/$entity",
-    "category": "joiner,leaver",
-    "continueOnError": false,
-    "description": "Enable user account in the directory",
-    "displayName": "Enable User Account",
-    "executionSequence": 1,
-    "id": "4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee",
     "isEnabled": true,
     "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
     "arguments": []
