@@ -89,7 +89,7 @@ Apps that don't follow these polling requirements will be considered in violatio
 or the suspension or termination of your use of the Microsoft APIs.
 
 ## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+Find out about the [latest new features and updates](/graph/whats-new-overview) for these API sets.
 
 ## See also
 

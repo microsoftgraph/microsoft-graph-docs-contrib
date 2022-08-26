@@ -186,11 +186,13 @@ Use the employee learning APIs for Viva Learning to:
 
 ## API reference
 
-Looking for the API reference for Teams and Viva Learning?
+Looking for the API reference for Teams, Shift, and Viva Learning?
 
 - [Teams API in Microsoft Graph v1.0](/graph/api/resources/teams-api-overview)
 - [Teams API in Microsoft Graph beta](/graph/api/resources/teams-api-overview?view=graph-rest-beta&preserve-view=true)
-- [Use the employee learning API to integrate with Viva Learning](/graph/api/resources/viva-learning-api-overview)
+- [Shifts API in Microsoft Graph v1.0](/graph/api/resources/shift)
+- [Shifts API in Microsoft Graph beta](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true)
+- [Use the employee learning API to integrate with Viva Learning (preview)](/graph/api/resources/viva-learning-api-overview)
 
 ## Next steps
 
