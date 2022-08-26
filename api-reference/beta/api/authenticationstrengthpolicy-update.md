@@ -49,7 +49,7 @@ PATCH /policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object in the response body.
+If successful, this method returns a `204 NO CONTENT` response code.
 
 ## Examples
 
@@ -61,14 +61,14 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}
+PATCH https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/a34a4c89-c5bf-4c0b-927d-adc396bf1f19
 Content-Type: application/json
 Content-length: 239
 
 {
   "@odata.type": "#microsoft.graph.authenticationStrengthPolicy",
-  "displayName": "String",
-  "description": "String"
+  "displayName": "FIDO2 only",
+  "description": "An auth strength allowing only FIDO2 security keys."
 }
 ```
 
@@ -83,21 +83,7 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 NO CONTENT
 Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.authenticationStrengthPolicy",
-  "id": "9d4b904e-3cf1-6943-f209-6c29e95e1c2e",
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)",
-  "displayName": "String",
-  "description": "String",
-  "policyType": "String",
-  "requirementsSatisfied": "String",
-  "allowedCombinations": [
-    "String"
-  ]
-}
 ```
 

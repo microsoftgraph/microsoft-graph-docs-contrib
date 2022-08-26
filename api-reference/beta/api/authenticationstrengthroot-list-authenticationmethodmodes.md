@@ -78,12 +78,82 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodModeDetail",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.authenticationMethodModeDetail",
-      "id": "7ffca95c-f622-48a4-8a09-769001b6d282",
-      "displayName": "String",
-      "authenticationMethod": "String"
+        "id" : "password",
+        "displayName" : "Password",
+        "authenticationMethod" : "password"
+    },
+    {
+        "id" : "voice",
+        "displayName" : "Voice",
+        "authenticationMethod" : "voice"
+    },
+    {
+        "id" : "softwareOath",
+        "displayName" : "Software OATH tokens",
+        "authenticationMethod" : "softwareOath"
+    },
+    {
+        "id" : "sms",
+        "displayName" : "SMS",
+        "authenticationMethod" : "sms"
+    },
+    {
+        "id" : "fido2",
+        "displayName" : "FIDO2 Security Key",
+        "authenticationMethod" : "fido2"
+    },
+    {
+        "id" : "windowsHelloForBusiness",
+        "displayName" : "Windows Hello for Business",
+        "authenticationMethod" : "windowsHelloForBusiness"
+    },
+    {
+        "id" : "microsoftAuthenticatorPush",
+        "displayName" : "Microsoft Authenticator (push notification)",
+        "authenticationMethod" : "microsoftAuthenticator"
+    },
+    {
+        "id" : "deviceBasedPush",
+        "displayName" : "Microsoft Authenticator (Passwordless)",
+        "authenticationMethod" : "microsoftAuthenticator"
+    },
+    {
+        "id" : "temporaryAccessPassOneTime",
+        "displayName" : "Temporary Access Pass (one-time use)",
+        "authenticationMethod" : "temporaryAccessPass"
+    },
+    {
+        "id" : "temporaryAccessPassMultiUse",
+        "displayName" : "Temporary Access Pass (multi-use)",
+        "authenticationMethod" : "temporaryAccessPass"
+    },
+    {
+        "id" : "email",
+        "displayName" : "Email one-time passcode",
+        "authenticationMethod" : "email"
+    },
+    {
+        "id" : "x509CertificateSingleFactor",
+        "displayName" : "Certificate-based authentication (single-factor)",
+        "authenticationMethod" : "x509Certificate"
+    },
+    {
+        "id" : "federatedMultiFactor",
+        "displayName" : "Federation (multi-factor)",
+        "authenticationMethod" : "federation"
+    },
+    {
+        "id" : "federatedSingleFactor",
+        "displayName" : "Federation (single-factor)",
+        "authenticationMethod" : "federation"
+    },
+    {
+        "id" : "x509CertificateMultiFactor",
+        "displayName" : "Certificate-based authentication (multi-factor)",
+        "authenticationMethod" : "x509Certificate"
     }
   ]
 }

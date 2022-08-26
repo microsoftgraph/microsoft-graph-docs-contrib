@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/policies/{authenticationStrengthPolicyId}/combinationConfigurations
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations
 ```
 
 
@@ -78,11 +78,13 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.authenticationCombinationConfiguration",
-      "id": "37105a91-69b7-85eb-42f7-c95491f6aea8",
-      "appliesToCombinations": [
-        "String"
-      ]
+      "@odata.type" : "#microsoft.graph.fido2CombinationConfiguration",
+      "id": "133b68c4-503b-4e87-839a-6c286a27381b",
+      "allowedAAGUIDs": [
+        "dcf6eadd-31fd-49e5-b84e-44035a5e6295",
+        "e0d9c83d-f035-45b2-8d98-345903f91e29"
+      ],
+      "appliesToCombinations": ["fido2"]
     }
   ]
 }

@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/findByMethodMode(authenticationMethodModes=["String"])
+GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/findByMethodMode('sms')
 ```
 
 ### Response
@@ -83,17 +83,34 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.authenticationStrengthPolicy",
-      "id": "String (identifier)",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
-      "displayName": "String",
-      "description": "String",
-      "policyType": "String",
-      "requirementsSatisfied": "String",
+      "@odata.type" : "authenticationStrengthPolicy",
+      "id": "00000000-0000-0000-0000-000000000002",
+      "createdDateTime": "2022-09-30T10:59:01Z",
+      "modifiedDateTime": "2022-09-30T10:59:01Z",
+      "displayName": "Multi-factor authentication (MFA)",
+      "description": "Combinations of methods that satisfy strong authentication, such as a password + SMS",
+      "policyType": "builtIn",
+      "requirementsSatisfied": "mfa",
       "allowedCombinations": [
-        "String"
-      ]
+          "windowsHelloForBusiness",
+          "fido2",
+          "x509CertificateMultiFactor",
+          "deviceBasedPush",
+          "temporaryAccessPassOneTime",
+          "temporaryAccessPassMultiUse",
+          "password, microsoftAuthenticatorPush",
+          "password, softwareOath",
+          "password, hardwareOath",
+          "password, sms",
+          "password, voice",
+          "federatedMultiFactor",
+          "federatedSingleFactor, microsoftAuthenticatorPush",
+          "federatedSingleFactor, softwareOath",
+          "federatedSingleFactor, hardwareOath",
+          "federatedSingleFactor, sms",
+          "federatedSingleFactor, voice"
+      ],
+      "combinationConfigurations": []
     }
   ]
 }

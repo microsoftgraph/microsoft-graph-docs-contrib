@@ -62,13 +62,13 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}/updateAllowedCombinations
+POST https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/33c5d2c0-884e-4b5d-a5b8-5395082b092c/updateAllowedCombinations
 Content-Type: application/json
 Content-length: 51
 
 {
   "allowedCombinations": [
-    "String"
+      "password, voice"
   ]
 }
 ```
@@ -90,6 +90,23 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "microsoft.graph.updateAllowedCombinationsResult"
+  }
+}
+
+{
+  "value": {
+    "@odata.type" : "#microsoft.graph.updateAllowedCombinationsResult",
+    "previousCombinations": [
+            "fido2",
+            "password, voice"
+    ],
+    "currentCombinations": [
+            "password, voice"
+    ],
+    "conditionalAccessReferences": [
+      "53a3968a-ae2c-4b82-a313-091d10c52bfa"
+    ],
+    "additionalInformation": "You have lowered the security of the My Custom Strength authentication strength by adding a lower security combination. This Authentication Strength is referenced by one or more Conditional Access policies. Review conditionalAccessReferences to understand which Conditional Access policies were impacted by this change. To reverse your changes back, use updateAllowedCombinations action with the previousCombinations values."
   }
 }
 ```

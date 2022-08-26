@@ -64,15 +64,18 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/policies/{authenticationStrengthPolicyId}/combinationConfigurations
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/policies/8313edec-d6af-483f-87b8-ec7cccfd2ab4/combinationConfigurations
 Content-Type: application/json
 Content-length: 130
 
 {
-  "@odata.type": "#microsoft.graph.authenticationCombinationConfiguration",
-  "appliesToCombinations": [
-    "String"
-  ]
+  "@odata.type" : "#microsoft.graph.fido2CombinationConfiguration",
+  "allowedAAGUIDs": [
+    "486c3b50-889c-480a-abc5-c04ef7c873e0",
+    "c042882f-a621-40c8-94d3-9cde3a826fed",
+    "ec454c08-4c77-4012-9d48-45f7f0fccdfb"
+  ],
+  "appliesToCombinations": ["fido2"]
 }
 ```
 
@@ -91,11 +94,14 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.authenticationCombinationConfiguration",
-  "id": "37105a91-69b7-85eb-42f7-c95491f6aea8",
-  "appliesToCombinations": [
-    "String"
-  ]
+  "@odata.type" : "#microsoft.graph.fido2CombinationConfiguration",
+  "id": "96cb1a17-e45e-4b4f-8b4b-4a9490d63d66",
+  "allowedAAGUIDs": [
+    "486c3b50-889c-480a-abc5-c04ef7c873e0",
+    "c042882f-a621-40c8-94d3-9cde3a826fed",
+    "ec454c08-4c77-4012-9d48-45f7f0fccdfb"
+  ],
+  "appliesToCombinations": ["fido2"]
 }
 ```
 

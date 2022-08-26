@@ -78,17 +78,91 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.authenticationStrengthPolicy",
-      "id": "9d4b904e-3cf1-6943-f209-6c29e95e1c2e",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
-      "displayName": "String",
-      "description": "String",
-      "policyType": "String",
-      "requirementsSatisfied": "String",
+      "@odata.type" : "authenticationStrengthPolicy",
+      "id": "7d718ef4-5493-4313-a52c-7401b7df3a9c",
+      "createdDateTime": "2022-09-30T10:59:01Z",
+      "modifiedDateTime": "2022-09-30T10:59:01Z",
+      "displayName": "Contoso authentication level",
+      "description": "The only authentication level allowed to access our secret apps",
+      "policyType": "custom",
+      "requirementsSatisfied": "mfa",
       "allowedCombinations": [
-        "String"
+          "x509CertificateSingleFactor, fido2",
+          "fido2"
+      ],
+      "combinationConfigurations": [
+          {
+              "@odata.type" : "fido2CombinationConfiguration",
+              "id": "675ff4e1-7c6d-4a7f-9803-ad084d1b45b3",
+              "allowedAAGUIDs": [
+                  "2ac80ddb-17bd-4575-b41c-0dc37ae3290d"
+              ],
+              "appliesToCombinations": ["fido2"]
+          }
       ]
+    },
+    {
+      "@odata.type" : "authenticationStrengthPolicy",
+      "id": "00000000-0000-0000-0000-000000000002",
+      "createdDateTime": "2022-09-30T10:59:01Z",
+      "modifiedDateTime": "2022-09-30T10:59:01Z",
+      "displayName": "Multi-factor authentication",
+      "description": "Combinations of methods that satisfy strong authentication, such as a password + SMS",
+      "policyType": "builtIn",
+      "requirementsSatisfied": "mfa",
+      "allowedCombinations": [
+        "windowsHelloForBusiness",
+        "fido2",
+        "x509CertificateMultiFactor",
+        "deviceBasedPush",
+        "temporaryAccessPassOneTime",
+        "temporaryAccessPassMultiUse",
+        "password, microsoftAuthenticatorPush",
+        "password, softwareOath",
+        "password, hardwareOath",
+        "password, sms",
+        "password, voice",
+        "federatedMultiFactor",
+        "federatedSingleFactor, microsoftAuthenticatorPush",
+        "federatedSingleFactor, softwareOath",
+        "federatedSingleFactor, hardwareOath",
+        "federatedSingleFactor, sms",
+        "federatedSingleFactor, voice"
+      ],
+      "combinationConfigurations": []
+    },
+    {
+      "@odata.type" : "authenticationStrengthPolicy",
+      "id": "00000000-0000-0000-0000-000000000003",
+      "createdDateTime": "2022-09-30T10:59:01Z",
+      "modifiedDateTime": "2022-09-30T10:59:01Z",
+      "displayName": "Passwordless MFA",
+      "description": "Passwordless methods that satisfy strong authentication, such as Passwordless sign-in with the Microsoft Authenticator",
+      "policyType": "builtIn",
+      "requirementsSatisfied": "mfa",
+      "allowedCombinations": [
+        "windowsHelloForBusiness",
+        "fido2",
+        "x509CertificateMultiFactor",
+        "deviceBasedPush"
+      ],
+      "combinationConfigurations": []
+    },
+    {
+      "@odata.type" : "authenticationStrengthPolicy",
+      "id": "00000000-0000-0000-0000-000000000004",
+      "createdDateTime": "2022-09-30T10:59:01Z",
+      "modifiedDateTime": "2022-09-30T10:59:01Z",
+      "displayName": "Phishing resistant MFA",
+      "description": "Phishing-resistant, Passwordless methods for the strongest authentication, such as a FIDO2 security key",
+      "policyType": "builtIn",
+      "requirementsSatisfied": "mfa",
+      "allowedCombinations": [
+        "windowsHelloForBusiness",
+        "fido2",
+        "x509CertificateMultiFactor"
+      ],
+      "combinationConfigurations": []
     }
   ]
 }

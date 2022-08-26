@@ -78,8 +78,28 @@ Content-Type: application/json
 
 {
   "value": [
-      "Strings"
-  ]
+      "windowsHelloForBusiness",
+      "fido2",
+      "x509CertificateMultiFactor",
+      "deviceBasedPush",
+      "temporaryAccessPassOneTime",
+      "temporaryAccessPassMultiUse",
+      "password, microsoftAuthenticatorPush",
+      "password, softwareOath",
+      "password, hardwareOath",
+      "password, sms",
+      "password, voice",
+      "federatedMultiFactor",
+      "federatedSingleFactor, microsoftAuthenticatorPush",
+      "federatedSingleFactor, softwareOath",
+      "federatedSingleFactor, hardwareOath",
+      "federatedSingleFactor, sms",
+      "federatedSingleFactor, voice",
+      "x509CertificateSingleFactor",
+      "sms",
+      "password",
+      "federatedSingleFactor",
+    ]
 }
 ```
 

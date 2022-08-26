@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}
+GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/00000000-0000-0000-0000-000000000004
 ```
 
 
@@ -77,17 +77,22 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.authenticationStrengthPolicy",
-    "id": "9d4b904e-3cf1-6943-f209-6c29e95e1c2e",
-    "createdDateTime": "String (timestamp)",
-    "modifiedDateTime": "String (timestamp)",
-    "displayName": "String",
-    "description": "String",
-    "policyType": "String",
-    "requirementsSatisfied": "String",
-    "allowedCombinations": [
-      "String"
-    ]
+    {
+        "@odata.type" : "authenticationStrengthPolicy",
+        "id": "00000000-0000-0000-0000-000000000004",
+        "createdDateTime": "2017-10-30T10:59:01Z",
+        "modifiedDateTime": "2017-10-30T10:59:01Z",
+        "displayName": "Phishing resistant MFA",
+        "description": "Phishing-resistant, Passwordless methods for the strongest authentication, such as a FIDO2 security key",
+        "policyType": "builtIn",
+        "requirementsSatisfied": "mfa",
+        "allowedCombinations": [
+            "windowsHelloForBusiness",
+            "fido2",
+            "x509CertificateMultiFactor"
+        ],
+        "combinationConfigurations": []
+    }
   }
 }
 ```

@@ -51,7 +51,7 @@ PATCH /identity/conditionalAccess/authenticationStrengths/policies/{authenticati
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object in the response body.
+If successful, this method returns a `204 NO CONTENT` response code.
 
 ## Examples
 
@@ -63,15 +63,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/policies/{authenticationStrengthPolicyId}/combinationConfigurations/{authenticationCombinationConfigurationId}
+PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations/4643f174-fe85-42b8-8b84-516775750a30
 Content-Type: application/json
 Content-length: 130
 
 {
-  "@odata.type": "#microsoft.graph.authenticationCombinationConfiguration",
-  "appliesToCombinations": [
-    "String"
-  ]
+  "appliesToCombinations": ["fido2"]
 }
 ```
 
@@ -86,15 +83,7 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 NO CONTENT
 Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.authenticationCombinationConfiguration",
-  "id": "37105a91-69b7-85eb-42f7-c95491f6aea8",
-  "appliesToCombinations": [
-    "String"
-  ]
-}
 ```
 

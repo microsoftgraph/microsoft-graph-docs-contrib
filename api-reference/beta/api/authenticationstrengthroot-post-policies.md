@@ -69,11 +69,12 @@ Content-Type: application/json
 Content-length: 239
 
 {
-  "@odata.type": "#microsoft.graph.authenticationStrengthPolicy",
-  "displayName": "String",
-  "description": "String",
+  "@odata.type" : "#microsoft.graph.authenticationStrengthPolicy",
+  "displayName": "Contoso authentication level",
+  "description": "The only authentication level allowed to access our secret apps",
   "allowedCombinations": [
-    "String"
+      "password, hardwareOath",
+      "password, sms"
   ]
 }
 ```
@@ -93,17 +94,20 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.authenticationStrengthPolicy",
-  "id": "9d4b904e-3cf1-6943-f209-6c29e95e1c2e",
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)",
-  "displayName": "String",
-  "description": "String",
-  "policyType": "String",
-  "requirementsSatisfied": "String",
+  "@odata.type" : "authenticationStrengthPolicy",
+  "id": "dd055c42-4218-4281-8631-f090e171f5cd",
+  "createdDateTime": "2022-09-30T10:59:01Z",
+  "modifiedDateTime": "2022-09-30T10:59:01Z",
+  "displayName": "Contoso authentication level",
+  "description": "The only authentication level allowed to access our secret apps",
+  "policyType": "custom",
+  "requirementsSatisfied": "mfa",
   "allowedCombinations": [
-    "String"
-  ]
+      "password, hardwareOath",
+      "password, sms"
+  ],
+  "combinationConfigurations": []
 }
+
 ```
 

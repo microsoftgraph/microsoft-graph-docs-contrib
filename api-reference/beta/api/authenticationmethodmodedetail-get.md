@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/authenticationMethodModes/{authenticationMethodModeDetailId}
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/authenticationMethodModes/windowsHelloForBusiness
 ```
 
 
@@ -78,9 +78,9 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.authenticationMethodModeDetail",
-    "id": "7ffca95c-f622-48a4-8a09-769001b6d282",
-    "displayName": "String",
-    "authenticationMethod": "String"
+    "id": "windowsHelloForBusiness",
+    "displayName": "Windows Hello for Business",
+    "authenticationMethod": "windowsHelloForBusiness"
   }
 }
 ```
