@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List workflowVersions
+# List versions (of a lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 

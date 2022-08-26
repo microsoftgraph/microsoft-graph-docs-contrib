@@ -1,6 +1,6 @@
 ---
 title: "customExtensionCallbackConfiguration resource type"
-description: "**TODO: Add Description**"
+description: "The callback configuration for a custom task extension that's linked to an Azure Logic App."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

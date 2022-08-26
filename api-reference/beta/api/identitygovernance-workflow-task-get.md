@@ -33,6 +33,7 @@ For delegated scenarios, the admin needs one of the following [Azure AD roles](/
 
 ## HTTP request
 
+Fetch tasks for a lifecycle workflow.
 <!-- {
   "blockType": "ignored"
 }
