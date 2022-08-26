@@ -13552,7 +13552,7 @@ items:
             - name: Activate
               href: api/identitygovernance-workflow-activate.md
             - name: List Tasks
-              href: api/identitygovernance-list-workflowtask.md
+              href: api/identitygovernance-workflow-list-tasks.md
             - name: Get Task
               href: api/identitygovernance-workflow-task-get.md  
             - name: Versioning
@@ -13564,7 +13564,7 @@ items:
               - name: Create
                 href: api/identitygovernance-workflowversion-post.md 
               - name: List Tasks
-                href: api/identitygovernance-list-workflowtask.md
+                href: api/identitygovernance-workflowversion-list-tasks.md
               - name: Get Task
                 href: api/identitygovernance-workflowversion-task-get.md      
             - name: Reporting

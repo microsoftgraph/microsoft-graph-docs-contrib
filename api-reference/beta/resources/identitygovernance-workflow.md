@@ -33,7 +33,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |[Create workflowVersion](../api/identitygovernance-workflowversion-post.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md)|Create a new workflowVersion object.|
 |[restore](../api/identitygovernance-deletedworkflow-restore.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Restore the workflow object.|
 |[List runs](../api/identitygovernance-list-run.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Get the run resources from the runs navigation property.|
-|[List tasks](../api/identitygovernance-list-workflowtask.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get the task resources from the tasks navigation property.|
+|[List tasks](../api/identitygovernance-workflow-list-tasks.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get the task resources from the tasks navigation property.|
 |[List versions](../api/identitygovernance-list-workflowversion.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md) collection|Get the workflowVersion resources from the versions navigation property.|
 
 ## Properties
