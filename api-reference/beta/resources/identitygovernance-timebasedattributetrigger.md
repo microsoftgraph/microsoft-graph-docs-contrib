@@ -1,6 +1,6 @@
 ---
 title: "timeBasedAttributeTrigger resource type"
-description: "Properties of the timeBasedAttributeTrigger resource type"
+description: "Trigger based on a time-based attribute for initiating the execution of a lifecycle workflow. The combination of scope and trigger conditions determine when a workflow is executed and on which identities."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type noting the time based trigger attribute of an execution condition of a workflow created using Lifecycle Workflows.
+Trigger based on a time-based attribute for initiating the execution of a [lifecycle workflow](../resources/identitygovernance-workflow.md). The combination of scope and trigger conditions determines when a workflow is executed and on which identities.
 
 Inherits from [workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md).
 
@@ -21,8 +21,8 @@ Inherits from [workflowExecutionTrigger](../resources/identitygovernance-workflo
 
 |Property|Type|Description|
 |:---|:---|:---|
-|offsetInDays|Int32|How many days before or after the time-based attribute specified. For example, if the attribute is employeeHireDate and offsetInDays is -1, then the workflow should trigger 1 day before employee hire date.|
-|timeBasedAttribute|String|Determines which time-based identity property to reference. The possible values are: `employeeHireDate`, `employeeLeaveDateTime`, `unknownFutureValue`.|
+|offsetInDays|Int32|How many days before or after the time-based attribute specified when the workflow should trigger. For example, if the attribute is `employeeHireDate` and offsetInDays is -1, then the workflow should trigger one day before the employee hire date.|
+|timeBasedAttribute|workflowTriggerTimeBasedAttribute|Determines which time-based identity property to reference. The possible values are: `employeeHireDate`, `employeeLeaveDateTime`, `unknownFutureValue`.|
 
 ## Relationships
 
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-  "timeBasedAttribute": "employeeHireDate",
-  "offsetInDays": 0
+  "offsetInDays": "Integer",
+  "timeBasedAttribute": "String"
 }
 ```

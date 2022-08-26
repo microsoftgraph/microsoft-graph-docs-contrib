@@ -1,6 +1,6 @@
 ---
 title: "taskReport resource type"
-description: "description of the task report resource type methods, properties, and relationships"
+description: "Reports on the results of processing tasks in a lifecycle workflow which are aggregated on task and run level"
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -31,10 +31,10 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|The date time that the associated run completed. Value is `null` if the run has not completed.|
 |failedUsersCount|Int32|The number of users in the run execution for which the associated task failed.|
-|id|String|The unique identifier. Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifier of the task report. Inherited from [entity](../resources/entity.md).|
 |lastUpdatedDateTime|DateTimeOffset|The date and time that the task report was last updated.|
 |processingStatus|String|The processing status of the associated task based on the number of `successful`, `failed`, and `canceled` taskProcessingResults.|
-|runId|String|The unique identifier of the associated run.|
+|runId|String|The unique identifier of the associated [run](../resources/identitygovernance-run).|
 |startedDateTime|DateTimeOffset|The date time that the associated run started. Value is `null` if the run has not started.|
 |successfulUsersCount|Int32|The number of users in the run execution for which the associated task succeeded.|
 |totalUsersCount|Int32|The total number of users in the run execution for which the associated task was scheduled to execute.|

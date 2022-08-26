@@ -38,10 +38,10 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.taskReportSummary",
-    "successfulTasks": 8,
-    "failedTasks": 0,
-    "unprocessedTasks": 0,
-    "totalTasks": 8
+  "@odata.type": "#microsoft.graph.identityGovernance.taskReportSummary",
+  "successfulTasks": "Integer",
+  "failedTasks": "Integer",
+  "unprocessedTasks": "Integer",
+  "totalTasks": "Integer"
 }
 ```

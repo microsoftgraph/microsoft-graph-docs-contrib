@@ -1,6 +1,6 @@
 ---
 title: "ruleBasedSubjectSet resource type"
-description: "description of the rule based subject set resource type"
+description: "A type that's derived from subjectSet specifying the rules to define the subjects that are the scope of a lifecycle workflow triggerAndScopeBasedConditions configuration."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The rule-based subject set resource type.
+A type that's derived from [subjectSet](../resources/subjectset.md) and specifies the rules to define the subjects that are the scope of a lifecycle workflow triggerAndScopeBasedConditions configuration.
 
 Inherits from [subjectSet](../resources/subjectset.md).
 
