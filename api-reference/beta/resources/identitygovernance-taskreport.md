@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The unique identifier of the task report. Inherited from [entity](../resources/entity.md).|
 |lastUpdatedDateTime|DateTimeOffset|The date and time that the task report was last updated.|
 |processingStatus|String|The processing status of the associated task based on the number of `successful`, `failed`, and `canceled` taskProcessingResults.|
-|runId|String|The unique identifier of the associated [run](../resources/identitygovernance-run).|
+|runId|String|The unique identifier of the associated [run](../resources/identitygovernance-run.md).|
 |startedDateTime|DateTimeOffset|The date time that the associated run started. Value is `null` if the run has not started.|
 |successfulUsersCount|Int32|The number of users in the run execution for which the associated task succeeded.|
 |totalUsersCount|Int32|The total number of users in the run execution for which the associated task was scheduled to execute.|
@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |task|[task](../resources/identitygovernance-task.md)|The related taskProcessingResults.|
 |taskDefinition|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md)|The taskDefinition associated with the related task.|
-|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The related taskProcessingResults.|
+|taskProcessingResults|[microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus](../resources/identitygovernance-taskprocessingresult.md) collection|The related taskProcessingResults.|
 
 ## JSON representation
 

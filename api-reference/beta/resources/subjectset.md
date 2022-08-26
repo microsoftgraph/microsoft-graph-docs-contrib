@@ -1,7 +1,7 @@
 ---
 title: "subjectSet resource type"
 description: "An abstract type that defines the subjects that are the scope of a lifecycle triggerAndScopeBasedConditions configuration."
-author: "owinfreyATL"
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An abstract type that defines the subjects that are the scope of a lifecycle [triggerAndScopeBasedConditions](../resources/identitygovernance-triggerAndScopeBasedConditions.md) configuration. The following resource types are derived from this abstract type:
-+ [ruleBasedSubjectSet](../resources/ruleBasedSubjectSet.md) 
++ [ruleBasedSubjectSet](../resources/ruleBasedSubjectSet.md)
 
 ## Properties
 
