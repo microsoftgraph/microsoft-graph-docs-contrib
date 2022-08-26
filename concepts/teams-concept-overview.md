@@ -25,7 +25,7 @@ The rich features and APIs for Microsoft Teams, Shifts, and Viva Learning open u
 - [Create teams linked to your app](#create-teams-linked-to-your-app)
 - [Deploy apps to teams](#deploy-apps-to-teams)
  
-[Call or meet virtually](#call-or-meet-collaboratively)
+[Call or meet virtually](#call-or-meet-virtually)
 - [Handle incoming calls](#handle-incoming-calls)
 - [Collaborate through group calls](#collaborate-through-group-calls)
 - [Send reminders reliably](#send-reminders-reliably)
