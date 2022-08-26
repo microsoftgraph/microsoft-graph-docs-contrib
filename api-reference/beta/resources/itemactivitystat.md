@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: ItemActivityStat
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: sites-and-lists
 ---
 
 # itemActivityStat resource type

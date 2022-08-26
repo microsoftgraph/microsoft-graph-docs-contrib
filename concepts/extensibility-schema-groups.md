@@ -1,6 +1,6 @@
 ---
-title: "Add custom data to groups using schema extensions "
-description: "This article walks you through an example to demonstrate how to use *schema extensions*. "
+title: "Add custom data to groups using schema extensions"
+description: "Follow the steps in this example to register a schema extension definition, create a group with extended data, and update custom data in an existing group."
 author: "dkershaw10"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -22,10 +22,9 @@ For this scenario, this article will show you how to:
 4. Add, update, or remove custom data in an existing group based on a schema extension definition.
 5. Read back a group and the extension data.
 
->**Note:** This topic shows you how to create and read schema extension values on a **group** resource (steps 3-5).  The same methods are supported for the 
-**administrativeUnit**, **device**, **event**, **message**, **organization**, **post**, and **user** 
-resource types as well.  You can carry out operations similar to the request examples in this article on any of those resources. Note that **administrativeUnit** is 
-available only in the beta endpoint.
+> [!NOTE]
+> This topic shows you how to create and read schema extension values on a **group** resource (steps 3-5). Schema extensions are also supported and can be managed for [other resource types](extensibility-overview.md).
+
 
 ## 1. View available schema extensions
 First, as a developer, you might want to find any other schema extension definitions that our app could reuse.  This can be done by querying the **schemaExtension** resource.  
@@ -304,6 +303,4 @@ Content-Type: application/json
 
 - [Add custom data to resources using extensions](extensibility-overview.md)
 - [Add custom data to users using open extensions (preview)](extensibility-open-users.md)
-- [Microsoft 365 domains](/office365/servicedescriptions/office-365-platform-service-description/domains)
-- [Adding and verifying a domain for Microsoft 365](/microsoft-365/admin/setup/add-domain)
 - [schemaExtension resource type](/graph/api/resources/schemaextension)

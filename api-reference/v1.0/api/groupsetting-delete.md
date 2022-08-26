@@ -17,11 +17,23 @@ Delete a tenant-level or group-specific [groupSetting](../resources/groupsetting
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Directory.ReadWrite.All                     |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Directory.ReadWrite.All                     |
+### For all settings except the Consent Policy Settings object
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.ReadWrite.All |
+
+### For the Consent Policy Settings object
+
+The following permissions are required to update the "Consent Policy Settings" **directorySetting** object.
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Policy.ReadWrite.Authorization    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Policy.ReadWrite.Authorization |
 
 ## HTTP request
 
@@ -74,28 +86,23 @@ DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 
 # [C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-groupsetting-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/delete-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/delete-groupsetting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-groupsetting-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

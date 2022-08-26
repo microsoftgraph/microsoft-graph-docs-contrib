@@ -58,6 +58,7 @@ const bookingAppointment = {
     invoiceUrl: 'theInvoiceUrl',
     isLocationOnline: true,
     optOutOfCustomerEmail: false,
+    anonymousJoinWebUrl: null,
     postBuffer: 'PT10M',
     preBuffer: 'PT5M',
     price: 10.0,
@@ -170,7 +171,7 @@ const bookingAppointment = {
     ]
 };
 
-await client.api('/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments')
+await client.api('/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments')
 	.version('beta')
 	.post(bookingAppointment);
 

@@ -10,8 +10,24 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+A shared object that is used in entitlement management access package assignment policies and role management policies.
 
-Used in the request, approval, and assignment review settings of an access package assignment policy. The abstract base type for the [singleUser](singleuser.md), [singleServicePrincipal](singleserviceprincipal.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), [externalSponsors](externalsponsors.md), [targetManager](targetmanager.md) and [targetApplicationOwners](targetapplicationowners.md) types.
++ In entitlement management, used in the request, approval, and assignment review settings of an access package assignment policy.
++ In role management policies, used in the approval settings that are defined in rules for role management policies.
+
+This is an abstract base type that's inherited by the following derived types:
++ [attributeRuleMembers](attributeRuleMembers.md)
++ [singleUser](singleuser.md)
++ [singleServicePrincipal](singleserviceprincipal.md)
++ [groupMembers](groupmembers.md)
++ [connectedOrganizationMembers](connectedorganizationmembers.md)
++ [requestorManager](requestormanager.md)
++ [internalSponsors](internalsponsors.md)
++ [externalSponsors](externalsponsors.md)
++ [targetManager](targetmanager.md)
++ [targetApplicationOwners](targetapplicationowners.md)
+
+
 ## Properties
 
 None.

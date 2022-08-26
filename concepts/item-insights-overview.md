@@ -1,12 +1,13 @@
 ---
-title: "Overview of item insights in Microsoft Graph"
-description: "The overview of item insights functionality and customization on the user level"
+title: "Item insights in Microsoft Graph"
+description: "Learn about item insights, user-centric recommendations for you and those you work with, based on your collaborative file-based experiences in Microsoft 365."
 author: "simonhult"
 ms.localizationpriority: high
 ms.prod: "insights"
 ms.custom: scenarios:getting-started
 ---
-# Overview of item insights
+# Item insights overview
+
 Item insights are user-centric recommendations for you and those you work with, based on your collaborative work in Microsoft 365.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPGbr] 
@@ -32,7 +33,7 @@ You can discover potentially useful content that you can access but may not have
 
 ### Recent files in card-based interfaces 
 In card-based interfaces such as Delve, the persona card in Microsoft 365 apps, and the people card in Bing work results, item insights bring forward OneDrive, SharePoint, or Outlook files that you have modified recently or shared with the person looking at your profile, which has access to that content. Such personalized insights help your colleagues save time searching for the right person or information.  
-![item insights power recent files in card-based inrefaces](images/Recent-files-in-card-based-interfaces.PNG)
+![item insights power recent files in card-based interfaces](images/Recent-files-in-card-based-interfaces.PNG)
 
 ## Microsoft runs on trust
 Microsoft uses only your activities in a shared working space (activities such as sharing, modifying, commenting actions) within your organization to calculate recommendations for others. That means, if you simply glanced at or clicked on a shared document without changing or commenting on it, your colleagues will not see the document as a recommendation because you browsed the document. 
@@ -66,6 +67,7 @@ After disabling item insights, the following happens:
 * For a user who has disabled item insights, querying the [trending](/graph/api/resources/insights-trending) and [used](/graph/api/resources/insights-used) resources in Microsoft Graph API returns `HTTP 403 Forbidden`.
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Insights API in Microsoft Graph v1.0](/graph/api/resources/officegraphinsights)

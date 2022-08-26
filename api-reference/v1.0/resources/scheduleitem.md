@@ -2,8 +2,8 @@
 title: "scheduleItem resource type"
 description: "An item that describes the availability of a user corresponding to an actual event on the user's default calendar. This item applies to a resource (room or equipment) as well."
 ms.localizationpriority: medium
-author: "harini84"
-ms.prod: outlook
+author: "iamgirishck"
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

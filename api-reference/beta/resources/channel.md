@@ -47,7 +47,7 @@ where files are shared, and where tabs are added.
 |[Remove tab from channel](../api/channel-delete-tabs.md) | None | Remove (unpin) a tab from a channel.|
 |[Provision channel email address](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Provision an email address for the channel.|
 |[Remove channel email address](../api/channel-removeemail.md) | None | Remove the email address of the channel.|
-|[Remove incoming channel](../api/team-delete-incomingchannel.md) | None| Remove an incoming channel.|
+|[Remove incoming channel](../api/team-delete-incomingchannels.md) | None| Remove an incoming [channel](../resources/channel.md) (a **channel** shared with a **team**) from a [team](../resources/team.md).|
 |[List teams sharing a channel](../api/sharedwithchannelteaminfo-list.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|Get the list of teams that has been shared the specified channel.|
 |[Get team sharing a channel](../api/sharedwithchannelteaminfo-get.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Get a team that has been shared the specified channel.|
 |[Unshare channel with team](../api/sharedwithchannelteaminfo-delete.md)|None|Unshare a channel with a team.|
@@ -64,10 +64,19 @@ where files are shared, and where tabs are added.
 |isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
 |email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
-|membershipType|channelMembershipType|The type of the channel. Can be set during creation and can't be changed. The possible values are: `standard`, `private`, `unknownFutureValue`, `shared`. The default value is `standard`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
+|membershipType|[channelMembershipType](../resources/channel.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and can't be changed. The possible values are: `standard`, `private`, `unknownFutureValue`, `shared`. The default value is `standard`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Settings to configure channel moderation to control who can start new posts and reply to posts in that channel.|
 |tenantId |string | The ID of the Azure Active Directory tenant. |
+
+### channelMembershipType values
+
+| Member             | Description                                                                       |
+|:-------------------|:----------------------------------------------------------------------------------|
+| standard           | Channel inherits the list of members of the parent team.                          |
+| private            | Channel can have members that are a subset of all the members on the parent team. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                 |
+| shared             | Members can be directly added to the channel without adding them to the team.     |
 
 ### Instance attributes
 
@@ -113,7 +122,7 @@ The following is a JSON representation of the resource.
   "isFavoriteByDefault": true,
   "email": "string",
   "webUrl": "string",
-  "membershipType": "channelMembershipType",
+  "membershipType": "String",
   "createdDateTime": "string (timestamp)",
   "moderationSettings": { "@odata.type": "microsoft.graph.channelModerationSettings" }
 }

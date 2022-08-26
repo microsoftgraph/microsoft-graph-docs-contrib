@@ -14,11 +14,8 @@ applicationId := "{id}"
 requestBody.SetApplicationId(&applicationId)
 factoryTag := "CustomSCIM"
 requestBody.SetFactoryTag(&factoryTag)
-options := &msgraphsdk.TemplatesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 applicationId := "application-id"
-result, err := graphClient.ApplicationsById(&applicationId).Synchronization().Templates().Post(options)
+result, err := graphClient.ApplicationsById(&applicationId).Synchronization().Templates().Post(requestBody)
 
 
 ```

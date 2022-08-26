@@ -57,6 +57,7 @@ Sections are loaded by default, but they can be disabled globally via the `MgtPe
 | mailMessages | `boolean` - Indicates whether the person card messages section is shown. Default value is `true`.  |
 | files | `boolean` - Indicates whether the person card files section is shown. Default value is `true`.  |
 | profile | `boolean` - Indicates whether the person card profile section is shown. Default value is `true`.  |
+| lock-tab-navigation | `boolean` - Allows the locking of navigation using tabs so that it does not flow out of the card section. Default value is `false`.  |
 
 To disable a section, simply set the property to `false` in your app initialization code:
 ```ts
@@ -152,6 +153,16 @@ mgt-person {
   --person-card-details-item-font-size: 20px;
   --person-card-details-item-color: #3abf0a;
   --person-card-background-color: #000000;
+  --person-card-contact-link-color: #ff0000;
+  --person-card-contact-link-hover-color: #00ff00;
+  --person-card-show-more-color: #ff0000;
+  --person-card-show-more-hover-color: #00ff00;
+  --person-card-base-links-color: #ff0000;
+  --person-card-base-links-hover-color: #00ff00;
+  --person-card-tab-nav-color: #ff0000;
+  --person-card-active-org-member-color: #ff0000;
+  --person-card-nav-back-arrow-hover-color: #00ff00;
+  --person-card-nav-back-arrow-color: #ff0000;
 }
 ```
 
