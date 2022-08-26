@@ -1,6 +1,6 @@
 ---
 title: "requestSignatureVerification resource type"
-description: "Specifies whether this application requires the verification of signed authentication requests."
+description: "Specifies whether this application requires Azure AD to verify the signed authentication requests."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies whether this application requires the verification of signed authentication requests.
+Specifies whether this application requires Azure AD to verify the signed authentication requests.
 
 ## Properties
 |Property|Type|Description|
