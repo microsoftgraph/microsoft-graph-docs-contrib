@@ -1,5 +1,5 @@
 ---
-title: "List Workflow Versions"
+title: "List workflowVersions"
 description: "Get a list of the workflowVersion objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium

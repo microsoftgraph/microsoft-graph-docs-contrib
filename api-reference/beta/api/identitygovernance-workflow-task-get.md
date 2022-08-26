@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get tasks (in a lifecycle workflow)
+# Get task (in a lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 

@@ -1,13 +1,13 @@
 ---
-title: "List Workflow Version Tasks"
-description: "Get a list of workflow Version tasks and their properties."
+title: "List tasks (in a workflowVersion)"
+description: "Get a list of the task objects and their properties in a workflowVersion."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List workflowVersion Tasks
+# List tasks (in a workflowVersion)
 
 Namespace: microsoft.graph.identityGovernance
 

@@ -1,13 +1,13 @@
 ---
-title: "Get a task from workflow version"
-description: "Get a task from workflow version."
+title: "Get task (in a workflowVersion)"
+description: "Read the properties and relationships of a task in a workflowVersion."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get a Task from a workflow version
+# Get task (in a workflowVersion)
 
 Namespace: microsoft.graph.identityGovernance
 

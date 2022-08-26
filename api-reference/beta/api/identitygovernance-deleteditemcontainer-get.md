@@ -1,13 +1,13 @@
 ---
-title: "Get deletedItemContainer (a deleted workflow)"
-description: "Get a specific deleted workflow."
+title: "Get deletedItemContainer (a deleted lifecycle workflow)"
+description: "Read the properties and relationships of a deleted lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get deletedItemContainer (a deleted workflow)
+# Get deletedItemContainer (a deleted lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 

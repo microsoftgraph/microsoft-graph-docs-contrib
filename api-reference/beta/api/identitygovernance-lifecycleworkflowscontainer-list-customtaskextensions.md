@@ -1,5 +1,5 @@
 ---
-title: "List Custom Task Extensions"
+title: "List customTaskExtensions"
 description: "Get a list of the customTaskExtension objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
