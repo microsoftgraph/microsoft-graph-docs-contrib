@@ -41,7 +41,7 @@ Assigning a phone number to your bot involves three steps:
 
 ### Create an application instance
 
-If it hasn't been installed already, a tenant admin needs to install the [Teams Module](https://docs.microsoft.com/en-us/microsoftteams/teams-powershell-install) for PowerShell. The tenant admin must sign in using their credentials before running the cmdlet.
+If it hasn't been installed already, a tenant admin needs to install the [Teams module](/microsoftteams/teams-powershell-install) for PowerShell. The tenant admin must sign in using their credentials before running the cmdlet.
 
 To create a new application instance, the tenant admin runs the following cmdlet:
 
