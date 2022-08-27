@@ -5402,34 +5402,6 @@ items:
               href: api/authorizationpolicy-get.md
             - name: Update
               href: api/authorizationpolicy-update.md
-          - name: Consent requests
-            href: resources/consentrequests-overview.md
-            items:
-            - name: Admin consent request policy
-              href: resources/adminconsentrequestpolicy.md
-              items:
-              - name: Get
-                href: api/adminconsentrequestpolicy-get.md
-              - name: Update
-                href: api/adminconsentrequestpolicy-update.md
-            - name: App consent requests
-              href: resources/appconsentrequest.md
-              items:
-              - name: List
-                href: api/appconsentapprovalroute-list-appconsentrequests.md
-              - name: Get
-                href: api/appconsentrequest-get.md
-              - name: Filter by current user
-                href: api/appconsentrequest-filterByCurrentUser.md
-            - name: User consent requests
-              href: resources/userconsentrequest.md
-              items:
-              - name: List
-                href: api/appconsentrequest-list-userconsentrequests.md
-              - name: Get
-                href: api/userconsentrequest-get.md
-              - name: Filter by current user
-                href: api/userconsentrequest-filterByCurrentUser.md
           - name: Claims mapping policy
             href: resources/claimsmappingpolicy.md
             items:
@@ -5693,6 +5665,34 @@ items:
               - name: Generate download URI
                 displayName: Downloadable access review history report
                 href: api/accessreviewhistoryinstance-generatedownloaduri.md
+        - name: Consent requests
+          href: resources/consentrequests-overview.md
+          items:
+          - name: Admin consent request policy
+            href: resources/adminconsentrequestpolicy.md
+            items:
+            - name: Get
+              href: api/adminconsentrequestpolicy-get.md
+            - name: Update
+              href: api/adminconsentrequestpolicy-update.md
+          - name: App consent requests
+            href: resources/appconsentrequest.md
+            items:
+            - name: List
+              href: api/appconsentapprovalroute-list-appconsentrequests.md
+            - name: Get
+              href: api/appconsentrequest-get.md
+            - name: Filter by current user
+              href: api/appconsentrequest-filterByCurrentUser.md
+          - name: User consent requests
+            href: resources/userconsentrequest.md
+            items:
+            - name: List
+              href: api/appconsentrequest-list-userconsentrequests.md
+            - name: Get
+              href: api/userconsentrequest-get.md
+            - name: Filter by current user
+              href: api/userconsentrequest-filterByCurrentUser.md
         - name: Entitlement management
           href: resources/entitlementmanagement-overview.md
           items:
