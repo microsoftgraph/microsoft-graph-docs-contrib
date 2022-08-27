@@ -13551,10 +13551,6 @@ items:
               href: api/identitygovernance-workflow-restore.md
             - name: Activate
               href: api/identitygovernance-workflow-activate.md
-            - name: List Tasks
-              href: api/identitygovernance-workflow-list-task.md
-            - name: Get Task
-              href: api/identitygovernance-task-get.md
             - name: Workflow versions
               items:
               - name: List
@@ -13563,10 +13559,16 @@ items:
                 href: api/identitygovernance-workflowversion-get.md
               - name: Create
                 href: api/identitygovernance-workflow-createnewversion.md 
-              - name: List Tasks
+              - name: List tasks for a workflow version
                 href: api/identitygovernance-workflowversion-list-tasks.md
-              - name: Get Task
+              - name: Get Task for a workflow version
                 href: api/identitygovernance-task-get.md      
+            - name: Workflow tasks
+              items:
+              - name: List Tasks
+                href: api/identitygovernance-workflow-list-task.md
+              - name: Get Task
+                href: api/identitygovernance-task-get.md
             - name: Reports
               items:
               - name: Overview

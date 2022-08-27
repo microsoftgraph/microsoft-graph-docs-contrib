@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The custom task extension callback configuration resource type
+Defines if, and in, which time span a callback is expected from the Azure Logic App.
 
 Inherits from  [customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).
 

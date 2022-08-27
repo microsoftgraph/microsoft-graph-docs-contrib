@@ -58,14 +58,14 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|createdBy|[user](../resources/user.md)|The unique identifier of the AAD user that created the `workflow` or `workflowVersion`.|
-|executionScope|[microsoft.graph.user](../resources/user.md) collection|The unique identifier of the AAD identity that last modified the `workflow`.|
-|lastModifiedBy|[user](../resources/user.md)|The user who last modified the workflow. |
+|createdBy|[user](../resources/user.md)|The unique identifier of the Azure AD user that created the [workflow](../resources/identitygovernance-workflow.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
+|executionScope|[microsoft.graph.user](../resources/user.md) collection|The unique identifier of the Azure AD identity that last modified the [workflow](../resources/identitygovernance-workflow.md) object..|
+|lastModifiedBy|[user](../resources/user.md)|The user who last modified the [workflow](../resources/identitygovernance-workflow.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
 |runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Workflow runs.|
-|taskReports|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) collection|Represents the aggregation of task execution data for tasks within a `workflow`.|
-|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Represents the configured tasks to execute and their execution sequence within a `workflow`.|
-|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Per user workflow execution result.|
-|versions|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md) collection|The workflow version.|
+|taskReports|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) collection|Represents the aggregation of task execution data for tasks within a [workflow](../resources/identitygovernance-workflow.md) object.|
+|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Represents the configured tasks to execute and their execution sequence within a [workflow](../resources/identitygovernance-workflow.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md)|
+|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Per-user workflow execution results.|
+|versions|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md) collection|The workflow versions that are available.|
 
 ## JSON representation
 

@@ -21,10 +21,10 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List workflowVersions](../api/identitygovernance-workflow-list-versions.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md) collection|Get a list of the [workflowVersion](../resources/identitygovernance-workflowversion.md) objects and their properties.|
-|[Get workflowVersion](../api/identitygovernance-workflowversion-get.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md)|Read the properties and relationships of a [workflowVersion](../resources/identitygovernance-workflowversion.md) object.|
-|[List tasks](../api/identitygovernance-workflowversion-list-tasks.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-workflowversion.md) collection|Get the task resources from the tasks navigation property.|
-|[List userProcessingResults](../api/identitygovernance-workflow-list-userprocessingresults.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Get the userProcessingResult resources from the userProcessingResults navigation property.|
+|[List workflowVersions](../api/identitygovernance-workflow-list-versions.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md) collection|Get a list of the [workflowVersion](../resources/identitygovernance-workflowversion.md) objects and their properties. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
+|[Get workflowVersion](../api/identitygovernance-workflowversion-get.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md)|Read the properties and relationships of a [workflowVersion](../resources/identitygovernance-workflowversion.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
+|[List tasks](../api/identitygovernance-workflowversion-list-tasks.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-workflowversion.md) collection|Get the task resources from the tasks navigation property. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
+|[List userProcessingResults](../api/identitygovernance-workflow-list-userprocessingresults.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Get the userProcessingResult resources from the userProcessingResults navigation property. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
 
 ## Properties
 
@@ -42,11 +42,11 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|createdBy|[user](../resources/user.md)|The user who created the workflow.|
+|createdBy|[user](../resources/user.md)|The user who created the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
 |lastModifiedBy|[user](../resources/user.md)|The user who last modified the workflow.|
-|runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|A history of every time a workflow ran.|
-|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow.|
-|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|The results of a user processed by the workflow.|
+|runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|A history of every time a workflow ran. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
+|tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
+|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|The results of a user processed by the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
 
 ## JSON representation
 

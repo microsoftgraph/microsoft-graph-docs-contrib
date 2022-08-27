@@ -1,6 +1,6 @@
 ---
 title: "taskReportSummary resource type"
-description: "description of the task report summary resource type methods, properties, and relationships"
+description: "Represents the integer count of successful, failed, unprocessed, and total tasks in a lifecycle workflow audit report."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type denoting the task report summary of a workflow created using Lifecycle Workflows. This includes reports on every task a workflow has run,  its successful and unsuccessful tasks, and its total number of unprocessed tasks.
+Represents the integer count of successful, failed, unprocessed, and total tasks in a lifecycle workflow audit report.
 
 ## Properties
 

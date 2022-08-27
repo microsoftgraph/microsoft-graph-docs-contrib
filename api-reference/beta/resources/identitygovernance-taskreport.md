@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type denoting the task report of a workflow created using Lifecycle Workflows. This includes every task workflow has run, its successfully and unsuccessfully processed users , its successful and unsuccessful tasks, and its total number of users processed.
+Represents audit logs for [lifecycle workflows](../resources/identitygovernance-workflow.md) that have been run in the tenant. This includes every task in every workflow run, its successfully and unsuccessfully processed users, its successful and unsuccessful tasks, and its total number of users processed.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |failedUsersCount|Int32|The number of users in the run execution for which the associated task failed.|
 |id|String|The unique identifier of the task report. Inherited from [entity](../resources/entity.md).|
 |lastUpdatedDateTime|DateTimeOffset|The date and time that the task report was last updated.|
-|processingStatus|String|The processing status of the associated task based on the number of `successful`, `failed`, and `canceled` taskProcessingResults.|
+|processingStatus|[microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus](../resources/identitygovernance-taskprocessingresult.md)|The processing status of the associated task based on the taskProcessingResults. The possible values are based on the number of `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, and `unknownFutureValue`.|
 |runId|String|The unique identifier of the associated [run](../resources/identitygovernance-run.md).|
 |startedDateTime|DateTimeOffset|The date time that the associated run started. Value is `null` if the run has not started.|
 |successfulUsersCount|Int32|The number of users in the run execution for which the associated task succeeded.|
@@ -44,9 +44,9 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|task|[task](../resources/identitygovernance-task.md)|The related taskProcessingResults.|
-|taskDefinition|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md)|The taskDefinition associated with the related task.|
-|taskProcessingResults|[microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus](../resources/identitygovernance-taskprocessingresult.md) collection|The related taskProcessingResults.|
+|task|[task](../resources/identitygovernance-task.md)|The related lifecycle workflow task.|
+|taskDefinition|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md)|The taskDefinition associated with the related lifecycle workflow task.|
+|taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The related lifecycle workflow taskProcessingResults.|
 
 ## JSON representation
 
