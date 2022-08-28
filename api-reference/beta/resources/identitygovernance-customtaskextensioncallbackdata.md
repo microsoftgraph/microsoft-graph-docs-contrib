@@ -13,9 +13,9 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the operation status that the logic app returns indicating whether or not the Logic App successfully ran on basis of that the [taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) processingStatus will be updated. 
+Represents the operation status that the logic app returns as part of a [custom extension callout response](../resources/customextensioncalloutresponse.md) indicating whether or not the Logic App successfully ran on basis of that the [taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) processingStatus will be updated.
 
-Inherits from [customExtensionData](../resources/identitygovernance-customTaskExtensionCallbackData.md).
+Inherits from [customExtensionData](../resources/customextensiondata.md).
 
 ## Properties
 

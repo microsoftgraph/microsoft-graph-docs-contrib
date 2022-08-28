@@ -1,6 +1,6 @@
 ---
 title: "customExtensionCalloutResponse resource type"
-description: "**TODO: Add Description**"
+description: "Defines the custom extension callout response payload that external systems would send back for callback scenarios of custom extensions."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines the custom extension callout response payload that external systems would send back for callback scenarios of custom extensions.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|data|[customExtensionData](../resources/customextensiondata.md)|**TODO: Add Description**|
-|source|String|**TODO: Add Description**|
-|type|String|**TODO: Add Description**|
+|data|[customExtensionData](../resources/customextensiondata.md)|Contains the data the external system provides to the custom extension endpoint.|
+|source|String|Identifies the external system or event context related to the response.|
+|type|String|Describes the type of event related to the response.|
 
 ## Relationships
 

@@ -47,7 +47,7 @@ POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/tasks/{taskId
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
+In the request body, supply a [custom extension callout response](../resources/customextensioncalloutresponse.md).
 
 The following table shows the parameters that can be used with this action.
 

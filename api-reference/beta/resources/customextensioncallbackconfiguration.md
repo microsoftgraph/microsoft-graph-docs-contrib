@@ -13,8 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type.
+This is an abstract type describing the callback configuration of a [custom callout extension](../resources/customcalloutextension.md).
+
+This abstract type is inherited by:
++ [customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customTaskExtensionCallbackConfiguration)
 
 ## Properties
 |Property|Type|Description|

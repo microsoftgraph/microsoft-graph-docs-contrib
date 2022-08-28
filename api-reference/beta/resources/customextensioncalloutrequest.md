@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines the custom extension callout request payload that will be sent to external systems.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|data|[customExtensionData](../resources/customextensiondata.md)|**TODO: Add Description**|
-|source|String|**TODO: Add Description**|
-|type|String|**TODO: Add Description**|
+|data|[customExtensionData](../resources/customextensiondata.md)|Contains the data that will be provided to the external system.|
+|source|String|Identifies the source system or event context related to the callout request.|
+|type|String|Describes the type of event related to the callout request.|
 
 ## Relationships
 None.

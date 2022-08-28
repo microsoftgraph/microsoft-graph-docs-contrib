@@ -1,6 +1,6 @@
 ---
 title: "customExtensionData resource type"
-description: "**TODO: Add Description**"
+description: "An abstract type noting the data being send and received as part of extensibility scenarios based on custom callout extensions"
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type.
+This is an abstract type noting the data being send and received as part of extensibility scenarios based on [custom callout extensions](../resources/customcalloutextension.md). The following types are derived from this abstract type:
++ [customTaskExtensionCalloutData](../resources/identitygovernance-customtaskextensioncalloutdata.md)
++ [customTaskExtensionCallbackData](../resources/identitygovernance-customtaskextensioncallbackdata.md)
 
 ## Properties
 
