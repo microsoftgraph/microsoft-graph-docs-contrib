@@ -13549,7 +13549,7 @@ items:
               href: api/identitygovernance-deletedItemcontainer-delete.md    
             - name: Restore
               href: api/identitygovernance-workflow-restore.md
-            - name: Activate
+            - name: Activate (run on-demand)
               href: api/identitygovernance-workflow-activate.md
             - name: Workflow versions
               items:
@@ -13563,15 +13563,15 @@ items:
                 href: api/identitygovernance-workflow-createnewversion.md 
               - name: List tasks for a workflow version
                 href: api/identitygovernance-workflowversion-list-tasks.md
-              - name: Get Task for a workflow version
+              - name: Get task for a workflow version
                 href: api/identitygovernance-task-get.md      
             - name: Workflow tasks
               items:
               - name: Workflow task
                 href: resources/identitygovernance-task.md
-              - name: List Tasks
+              - name: List tasks
                 href: api/identitygovernance-workflow-list-task.md
-              - name: Get Task
+              - name: Get task
                 href: api/identitygovernance-task-get.md
             - name: Reports
               items:
@@ -13606,7 +13606,7 @@ items:
                   href: api/identitygovernance-run-list-userprocessingresults.md
                 - name: Get user processing result
                   href: api/identitygovernance-userprocessingresult-get.md     
-              - name: Task Processing Result
+              - name: Task processing results
                 href: resources/identitygovernance-taskprocessingresult.md
                 items:  
                 - name: Resume

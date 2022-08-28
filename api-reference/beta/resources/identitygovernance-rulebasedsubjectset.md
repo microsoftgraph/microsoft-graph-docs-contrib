@@ -21,7 +21,7 @@ Inherits from [subjectSet](../resources/subjectset.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|rule|String|The rule for the subject set.|
+|rule|String|The rule for the subject set. For more information about currently supported user properties, and query parameters, see: [advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#user-properties)|
 
 ## Relationships
 
