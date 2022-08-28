@@ -34,12 +34,6 @@ The following [Azure AD roles](/azure/active-directory/roles/permissions-referen
 | Read | LifecycleWorkflows.Read.All or LifecycleWorkflows.ReadWrite.All | Global Admin, Global Reader or Lifecycle Workflows Administrator |
 | Create, Update or Delete | LifecycleWorkflows.ReadWrite.All | Global Administrator or Lifecycle Workflows Administrator |
 
-## See also
-
-- [Tutorials](/graph/lifecycleworkflows-overview) to learn how to use the Lifecycle Workflows API to automate lifecycle in your organization.
-- [Onboard users to your organization using Lifecycle Workflows API](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [Offboard users to your organization using Lifecycle Workflows API](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
-
 <!--
 {
   "type": "#page.annotation",
