@@ -1,6 +1,6 @@
 ---
 title: "taskReport: summary (of a lifecycle workflow)"
-description: "The summary of taskReports for a lifecycle workflow."
+description: "A summary of task processing results for a specified time period. Since the amount of task processing results and task reports returned by the List API calls can be overwhelming, this summary allows the administrator to get a quick overview based on counts."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -14,6 +14,8 @@ Namespace: microsoft.graph.identityGovernance
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a [taskReportSummary](../resources/identitygovernance-taskreportsummary.md) object.
+
+A summary of task processing results for a specified time period. Since the amount of task processing results and task reports returned by the List API calls can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
 
 ## Permissions
 

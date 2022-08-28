@@ -1,6 +1,6 @@
 ---
 title: "userSummary resource type"
-description: "Represents a summary of the users processed by a lifecycle workflow with integer totals of successful, unsuccessful, and total workflow runs and tasks."
+description: "A summary of user processing results for a specified time period. This summary allows the administrator to get a quick overview based on counts."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a summary of the users processed by a lifecycle workflow with integer totals of successful, unsuccessful, and total workflow runs and tasks.
+A summary of user processing results for a specified time period. This summary allows the administrator to get a quick overview based on counts.
 
 ## Properties
 

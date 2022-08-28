@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the runs of a [workflow](../resources/identitygovernance-workflow.md).
+Get a list of the run objects and their properties for a [lifecycle workflow](../resources/identitygovernance-workflow.md).
 
 ## Permissions
 

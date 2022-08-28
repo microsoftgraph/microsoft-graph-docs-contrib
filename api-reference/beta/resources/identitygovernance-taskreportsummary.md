@@ -1,6 +1,6 @@
 ---
 title: "taskReportSummary resource type"
-description: "Represents the integer count of successful, failed, unprocessed, and total tasks in a lifecycle workflow audit report."
+description: "A summary of task processing results for a specified time period. This summary allows the administrator to get a quick overview based on counts (successful, failed, unprocessed, and total tasks)."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the integer count of successful, failed, unprocessed, and total tasks in a lifecycle workflow audit report.
+A summary of task processing results for a specified time period. This summary allows the administrator to get a quick overview based on counts (successful, failed, unprocessed, and total tasks).
 
 ## Properties
 

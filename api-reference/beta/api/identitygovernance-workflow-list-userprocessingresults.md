@@ -1,5 +1,5 @@
 ---
-title: "List userProcessingResults (for a lifecycle workflow)"
+title: "List the userProcessingResults (for a lifecycle workflow)"
 description: "Get a list of the userProcessingResult objects and their properties for a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
