@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the runs of a lifecycle workflow. Runs include every time a workflow has run, its successful and unsuccessful runs, its successful and unsuccessful tasks, and its total number of runs.
+Result of a [lifecycle workflow](../resources/identitygovernance-workflow.md) that was executed for a collection of users because they fulfilled the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md) of the lifecycle workflow. The result is an aggregation of all [user processing results](../resources/identitygovernance-userprocessingresult.md) of the users that were either processed within an [interval](../resources/identitygovernance-lifecyclemanagementsettings.md#properties) or were part of an [on-demand execution](../api/identitygovernance-workflow-activate.md).
 
 Inherits from [entity](../resources/entity.md).
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Results of lifecycle workflow tasks scoped to the user for whom the tasks were run. Total tasks are shown along with individual results for unprocessed tasks, and processing status for the results.
+Result of a [lifecycle workflow](../resources/identitygovernance-workflow.md) that was executed for a specific user because the user fulfilled the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md) of the lifecycle workflow. The result is an aggregation of all [task processing results](../resources/identitygovernance-taskprocessingresult.md) of the [tasks](../resources/identitygovernance-task.md) that were part of the lifecycle workflow and executed for the specific user.
 
 Inherits from [entity](../resources/entity.md).
 
