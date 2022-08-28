@@ -4789,7 +4789,7 @@ items:
               href: api/authenticationcontextclassreference-update.md    
             - name: Delete
               href: api/authenticationcontextclassreference-delete.md   
-         - name: Cross-tenant access
+        - name: Cross-tenant access
           items:
           - name: Overview
             href: resources/crosstenantaccesspolicy-overview.md
