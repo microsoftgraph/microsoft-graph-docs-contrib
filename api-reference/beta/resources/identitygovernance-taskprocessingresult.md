@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Result of a [task](../resources/identitygovernance-task.md) that was executed for a specific user because the task was part of the [lifecycle workflow](../resources/identitygovernance-workflow.md) for which the user fulfilled the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md).
+Result of a [workflow task](../resources/identitygovernance-task.md) that was executed for a specific user because the workflow task was part of the [lifecycle workflow](../resources/identitygovernance-workflow.md) for which the user fulfilled the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md).
 
 Inherits from [entity](../resources/entity.md).
 

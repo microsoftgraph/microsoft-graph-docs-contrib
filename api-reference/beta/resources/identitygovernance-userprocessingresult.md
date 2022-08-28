@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Result of a [lifecycle workflow](../resources/identitygovernance-workflow.md) that was executed for a specific user because the user fulfilled the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md) of the lifecycle workflow. The result is an aggregation of all [task processing results](../resources/identitygovernance-taskprocessingresult.md) of the [tasks](../resources/identitygovernance-task.md) that were part of the lifecycle workflow and executed for the specific user.
+Result of a [lifecycle workflow](../resources/identitygovernance-workflow.md) that was executed for a specific user because the user fulfilled the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md) of the lifecycle workflow. The result is an aggregation of all [task processing results](../resources/identitygovernance-taskprocessingresult.md) of the [workflow tasks](../resources/identitygovernance-task.md) that were part of the lifecycle workflow and executed for the specific user.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List userProcessingResults](../api/identitygovernance-workflow-list-userprocessingresults.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Get a list of the [userProcessingResult](../resources/identitygovernance-userprocessingresult.md) objects and their properties.|
-|[summary](../api/identitygovernance-userprocessingresult-summary.md)|[microsoft.graph.identityGovernance.usersProcessingSummary](../resources/identitygovernance-usersprocessingsummary.md)|Provides a summary of the user processing result object|
+|[summary](../api/identitygovernance-userprocessingresult-summary.md)|[microsoft.graph.identityGovernance.userSummary](../resources/identitygovernance-usersummary.md)|Provides a summary of the user processing result object|
 
 ## Properties
 

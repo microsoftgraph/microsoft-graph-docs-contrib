@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An aggregation of [task processing results](../resources/identitygovernance-taskprocessingresult.md) for a specific [task](../resources/identitygovernance-task.md) within a workflow [run](../resources/identitygovernance-run.md). With this report, the health status of a task within a run can be easily determined and thus the source of error can be identified more quickly should a run not have been completed successfully.
+An aggregation of [task processing results](../resources/identitygovernance-taskprocessingresult.md) for a specific [workflow task](../resources/identitygovernance-task.md) within a [workflow run](../resources/identitygovernance-run.md). With this report, the health status of a workflow task within a workflow run can be easily determined and thus the source of error can be identified more quickly should a workflow run not have been completed successfully.
 
 Inherits from [entity](../resources/entity.md).
 
