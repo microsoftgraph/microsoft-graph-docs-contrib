@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the built-in tasks that you can use to construct tasks for lifecycle workflows. Each task has a unique template identifier. For a full list of available built-in tasks, see [Supported tasks IDs](../resources/identitygovernance-lifecycleworkflows-overview.md#supported-task-ids).
+Represents the built-in tasks that you can use to construct tasks for lifecycle workflows. Each task has a unique template identifier. For a full list of available built-in tasks, see [supported tasks](../resources/identitygovernance-task.md#supported-tasks).
 
 Inherits from [entity](../resources/entity.md).
 

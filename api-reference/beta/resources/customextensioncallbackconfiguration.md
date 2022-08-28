@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 This is an abstract type describing the callback configuration of a [custom callout extension](../resources/customcalloutextension.md).
 
 This abstract type is inherited by:
-+ [customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customTaskExtensionCallbackConfiguration)
++ [customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md)
 
 ## Properties
 |Property|Type|Description|
