@@ -62,7 +62,7 @@ items:
           href: /graph/throttling-limits?context=graph/api/1.0
           displayName: throttling
         - name: Optimize network traffic
-          href: /learn/modules/optimize-network-traffic          
+          href: /learn/modules/optimize-network-traffic
           displayName: throttling
     - name: Change notifications
       items:
@@ -240,6 +240,8 @@ items:
             href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/1.0
           - name: Build an Electron app
             href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/1.0
+          - name: Build a productivity hub app
+            href: /graph/toolkit/get-started/building-one-productivity-hub?context=graph/api/1.0
       - name: Providers
         items:
           - name: Using the providers
@@ -424,11 +426,11 @@ items:
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
         - name: List deleted items
-          href: api/directory-deleteditems-list.md 
+          href: api/directory-deleteditems-list.md
         - name: Get deleted item
           href: api/directory-deleteditems-get.md
         - name: Permanently delete item
-          href: api/directory-deleteditems-delete.md       
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted item
           href: api/directory-deleteditems-restore.md
       - name: Drive
@@ -948,7 +950,7 @@ items:
               - name: Update
                 href: api/federatedidentitycredential-update.md
               - name: Delete
-                href: api/federatedidentitycredential-delete.md              
+                href: api/federatedidentitycredential-delete.md
         - name: Owners
           items:
           - name: List
@@ -5635,7 +5637,7 @@ items:
               - name: Stop
                 href: api/accessreviewstage-stop.md
           - name: Access review instance decision item
-            displayName: access review decisions 
+            displayName: access review decisions
             href: resources/accessreviewinstancedecisionitem.md
             items:
             - name: List decisions from an instance
@@ -5974,7 +5976,7 @@ items:
           href: api/message-createreply.md
         - name: Reply to a message
           href: api/message-reply.md
-        - name: Create draft to reply-all 
+        - name: Create draft to reply-all
           href: api/message-createreplyall.md
         - name: Reply-all to a message
           href: api/message-replyall.md
@@ -6680,7 +6682,7 @@ items:
         - name: Operation
           href : resources/security-caseoperation.md
           items:
-           - name: List case operations 
+           - name: List case operations
              href: api/security-ediscoverycase-list-operations.md
            - name: Get case opreation by id
              href: api/security-caseoperation-get.md
