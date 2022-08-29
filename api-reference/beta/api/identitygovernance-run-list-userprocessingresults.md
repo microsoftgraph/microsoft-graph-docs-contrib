@@ -1,6 +1,6 @@
 ---
 title: "List userProcessingResults (for a run of a lifecycle workflow)"
-description: "List User processing Results of a run object"
+description: "List user processing results of a workflow run."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get user processing results of a [run](../resources/identitygovernance-run.md) object.
+Get user processing results of a workflow [run](../resources/identitygovernance-run.md) object.
 
 ## Permissions
 

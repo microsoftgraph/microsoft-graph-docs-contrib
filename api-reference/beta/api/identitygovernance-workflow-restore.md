@@ -1,6 +1,6 @@
 ---
 title: "workflow: restore (a deleted workflow)"
-description: "Restore a lifecycle workflow"
+description: "Restore a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

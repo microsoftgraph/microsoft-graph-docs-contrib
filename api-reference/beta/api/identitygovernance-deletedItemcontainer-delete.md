@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [workflow](../resources/identitygovernance-workflow.md) object.
+Delete a [workflow](../resources/identitygovernance-workflow.md) object.
 
 ## Permissions
 

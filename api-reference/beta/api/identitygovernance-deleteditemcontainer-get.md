@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a deleted [workflow](../resources/identitygovernance-workflow.md) object.
+Retrieve a deleted [workflow](../resources/identitygovernance-workflow.md) object.
 
 ## Permissions
 

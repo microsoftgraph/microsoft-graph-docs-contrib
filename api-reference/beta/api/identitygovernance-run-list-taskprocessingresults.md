@@ -1,6 +1,6 @@
 ---
 title: "List taskProcessingResults (for a userProcessingResult in a run)"
-description: "Get the taskProcessingResult resources from the taskProcessingResults navigation property."
+description: "Get the taskProcessingResult resources for a userProcessingResult from a run."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

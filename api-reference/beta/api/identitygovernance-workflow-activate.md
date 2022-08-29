@@ -51,7 +51,7 @@ POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/activate
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameters that are required with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

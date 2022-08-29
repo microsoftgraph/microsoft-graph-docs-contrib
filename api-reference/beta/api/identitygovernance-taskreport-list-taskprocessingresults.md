@@ -1,6 +1,6 @@
 ---
 title: "List taskProcessingResult (for a taskReport)"
-description: "Get a list of taskProcessingResult objects and their properties for a taskReport"
+description: "Get a list of taskProcessingResult objects and their properties for a taskReport."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
