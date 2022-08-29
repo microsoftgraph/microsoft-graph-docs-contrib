@@ -1,5 +1,5 @@
 ---
-title: "task resource type"
+title: "task resource type (lifecycle workflow tasks)"
 description: "Represents the built-in and custom tasks within workflows in Azure AD Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# task resource type
+# task resource type (lifecycle workflow tasks)
 
 Namespace: microsoft.graph.identityGovernance
 

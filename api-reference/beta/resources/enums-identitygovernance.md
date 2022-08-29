@@ -1,4 +1,3 @@
-
 ---
 title: "Identity governance enum values"
 description: "Microsoft Graph identity governance enumeration values"

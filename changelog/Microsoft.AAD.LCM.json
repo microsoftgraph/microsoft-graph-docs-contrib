@@ -298,6 +298,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [workflowBase](https://docs.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowBase?view=graph-rest-beta) resource.",
           "Target": "workflowBase"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "LifecycleWorkflows.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `LifecycleWorkflows.Read.All` delegated and application permissions to the read operations of [Azure AD lifecycle workflows](https://docs.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta).",
+          "Target": "lifecycleWorkflowsContainer"
+        },
+        {
+          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "LifecycleWorkflows.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `LifecycleWorkflows.ReadWrite.All` delegated and application permissions to the read and write operations of [Azure AD lifecycle workflows](https://docs.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta).",
+          "Target": "lifecycleWorkflowsContainer"
         }
       ],
       "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",

@@ -1,5 +1,5 @@
 ---
-title: "List task Processing Results"
+title: "List taskProcessingResults (for a userProcessingResult)"
 description: "Get the taskProcessingResult resources from the taskProcessingResults object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
