@@ -777,7 +777,7 @@ Content-type: application/json
                 "signInScope": "tenant"
             },
             {
-                "@odata.type": "#microsoft.graph.groupPeerOutlierRecommendationInsightSetting"
+                "@odata.type": "#microsoft.graph.groupPeerOutlierRecommendationInsightSettings"
             }
         ]
     }
@@ -819,7 +819,7 @@ Content-type: application/json
         "signInScope": "tenant"
       },
       {
-        "@odata.type": "#microsoft.graph.groupPeerOutlierRecommendationInsightSetting"
+        "@odata.type": "#microsoft.graph.groupPeerOutlierRecommendationInsightSettings"
       }
     ]
   }
