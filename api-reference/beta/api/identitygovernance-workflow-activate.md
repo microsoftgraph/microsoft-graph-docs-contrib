@@ -1,6 +1,6 @@
 ---
 title: "workflow: activate (run a workflow on-demand)"
-description: "Run a workflow on-demand for time critical execution and testing"
+description: "Run a workflow on-demand for time critical execution and testing."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -74,7 +74,6 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}/activate
 Content-Type: application/json
-Content-length: 4431
 
 {
   "subjects": [
@@ -232,8 +231,6 @@ Content-length: 4431
 
 ### Response
 
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

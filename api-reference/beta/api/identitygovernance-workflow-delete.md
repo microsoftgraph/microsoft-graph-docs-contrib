@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [workflow](../resources/identitygovernance-workflow.md) object and its associated [tasks](../resources/identitygovernance-task.md), [taskProcessingResults](../resources/identitygovernance-taskprocessingresult.md) and [versions]((../resources/identitygovernance-workflowversion].md). You can restore a deleted workflow and its associated objects within 30 days of deletion.
+Delete a [workflow](../resources/identitygovernance-workflow.md) object and its associated [tasks](../resources/identitygovernance-task.md), [taskProcessingResults](../resources/identitygovernance-taskprocessingresult.md) and [versions](../resources/identitygovernance-workflowversion].md). You can restore a deleted workflow and its associated objects within 30 days of deletion.
 
 ## Permissions
 
@@ -70,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/wo
 
 ### Response
 
-The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true

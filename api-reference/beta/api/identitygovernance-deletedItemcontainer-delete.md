@@ -70,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/de
 
 ### Response
 
-The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true

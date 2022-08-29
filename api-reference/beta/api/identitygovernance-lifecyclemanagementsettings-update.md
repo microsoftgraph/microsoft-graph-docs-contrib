@@ -72,7 +72,6 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/settings
 Content-Type: application/json
-Content-length: 137
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity",
@@ -81,9 +80,6 @@ Content-length: 137
 ```
 
 ### Response
-
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

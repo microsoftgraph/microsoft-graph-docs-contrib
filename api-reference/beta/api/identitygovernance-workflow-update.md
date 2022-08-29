@@ -53,8 +53,8 @@ PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|Describes the purpose of the workflow for administrative use. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
-|displayName|String|A unique string that identifies the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
+|description|String|Describes the purpose of the workflow for administrative use.|
+|displayName|String|A unique string that identifies the workflow.|
 |isEnabled|Boolean|A boolean value that denotes whether the workflow is set to run or not.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
 
@@ -88,7 +88,6 @@ Content-length: 454
 
 ### Response
 
-The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,

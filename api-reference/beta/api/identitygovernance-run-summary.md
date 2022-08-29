@@ -38,7 +38,7 @@ For delegated scenarios, the admin needs one of the following [Azure AD roles](/
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflows/{{workflow_id}}/runs/summary(startDateTime={timestamp},endDateTime={timestamp})
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/runs/summary(startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ## Function parameters
