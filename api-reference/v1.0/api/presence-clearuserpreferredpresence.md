@@ -61,12 +61,10 @@ Content-Type: application/json
 }
 ```
 
----
-
 
 ### Response
 
-The following is an example of a response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
