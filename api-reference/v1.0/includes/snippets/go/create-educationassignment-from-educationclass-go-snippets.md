@@ -19,16 +19,12 @@ content := "Read chapter 4"
 instructions.SetContent(&content) 
 requestBody.SetInstructions(instructions)
 grading := graphmodels.NewEducationAssignmentGradeType()
-"@odata.type" := "#microsoft.graph.educationAssignmentGradeType"
-grading.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"maxPoints" : int32(50) , 
 }
 grading.SetAdditionalData(additionalData)
 requestBody.SetGrading(grading)
 assignTo := graphmodels.NewEducationAssignmentRecipient()
-"@odata.type" := "#microsoft.graph.educationAssignmentGradeType"
-assignTo.Set"@odata.type"(&"@odata.type") 
 requestBody.SetAssignTo(assignTo)
 status := graphmodels.DRAFT_EDUCATIONASSIGNMENTSTATUS 
 requestBody.SetStatus(&status) 

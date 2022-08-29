@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy -OutFile $outFileId
+Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ```

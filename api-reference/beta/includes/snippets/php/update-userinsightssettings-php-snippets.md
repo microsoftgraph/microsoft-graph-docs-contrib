@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new UserInsightsSettings();
-$requestBody->setIsEnabled('false');
+$requestBody->setIsEnabled(false);
 
 
 
