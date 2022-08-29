@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\OpenIdConnectProvider;
 use Microsoft\Graph\Beta\Generated\Models\ClaimsMapping;
-use Microsoft\Graph\Beta\Generated\Models\ResponseMode;
-use Microsoft\Graph\Beta\Generated\Models\ResponseType;
+use Microsoft\Graph\Beta\Generated\Models\OpenIdConnectResponseMode;
+use Microsoft\Graph\Beta\Generated\Models\OpenIdConnectResponseTypes;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

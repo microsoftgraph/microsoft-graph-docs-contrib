@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\SourceSystemDefinition
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\UserMatchingSetting
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\UserMatchTargetReferenceValue
-use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\IndustryData\IdentifierTypeReferenceValue
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\SourceSystemDefinition;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserMatchingSetting;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserMatchTargetReferenceValue;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\IdentifierTypeReferenceValue;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

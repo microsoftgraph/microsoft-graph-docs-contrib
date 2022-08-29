@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\TimeOffReason;
-use Microsoft\Graph\Beta\Generated\Models\IconType;
+use Microsoft\Graph\Beta\Generated\Models\TimeOffReasonIconType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\InternalDomainFederation;
-use Microsoft\Graph\Beta\Generated\Models\PreferredAuthenticationProtocol;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationProtocol;
 use Microsoft\Graph\Beta\Generated\Models\PromptLoginBehavior;
 use Microsoft\Graph\Beta\Generated\Models\FederatedIdpMfaBehavior;
 

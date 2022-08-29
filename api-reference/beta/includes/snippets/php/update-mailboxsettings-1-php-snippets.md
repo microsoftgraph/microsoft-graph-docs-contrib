@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\MailboxSettings;
 use Microsoft\Graph\Beta\Generated\Models\AutomaticRepliesSetting;
-use Microsoft\Graph\Beta\Generated\Models\Status;
+use Microsoft\Graph\Beta\Generated\Models\AutomaticRepliesStatus;
 use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
 
 

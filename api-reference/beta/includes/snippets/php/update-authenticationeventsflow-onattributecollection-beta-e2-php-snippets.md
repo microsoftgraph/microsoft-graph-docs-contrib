@@ -11,7 +11,7 @@ use Microsoft\Graph\Beta\Generated\Models\OnAttributeCollectionExternalUsersSelf
 use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionPage;
 use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionPageViewConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionInputConfiguration;
-use Microsoft\Graph\Beta\Generated\Models\InputType;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionInputType;
 use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionOptionConfiguration;
 
 

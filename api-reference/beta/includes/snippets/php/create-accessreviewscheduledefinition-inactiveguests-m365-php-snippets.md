@@ -13,8 +13,9 @@ use Microsoft\Graph\Beta\Generated\Models\AccessReviewReviewerScope;
 use Microsoft\Graph\Beta\Generated\Models\AccessReviewScheduleSettings;
 use Microsoft\Graph\Beta\Generated\Models\PatternedRecurrence;
 use Microsoft\Graph\Beta\Generated\Models\RecurrencePattern;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\RecurrencePatternType;
 use Microsoft\Graph\Beta\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Beta\Generated\Models\RecurrenceRangeType;
 use Microsoft\Kiota\Abstractions\Types\Date;
 
 

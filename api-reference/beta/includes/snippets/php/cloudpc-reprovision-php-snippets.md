@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\DeviceManagement\VirtualEndpoint\CloudPCs\Item\Reprovision\ReprovisionPostRequestBody
-use Microsoft\Graph\Beta\Generated\Models\UserAccountType;
-use Microsoft\Graph\Beta\Generated\Models\OsVersion;
+use Microsoft\Graph\Beta\Generated\DeviceManagement\VirtualEndpoint\CloudPCs\Item\Reprovision\ReprovisionPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcUserAccountType;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcOperatingSystem;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

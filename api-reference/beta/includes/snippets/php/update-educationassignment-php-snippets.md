@@ -8,9 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\EducationAssignment;
 use Microsoft\Graph\Beta\Generated\Models\EducationItemBody;
-use Microsoft\Graph\Beta\Generated\Models\ContentType;
-use Microsoft\Graph\Beta\Generated\Models\AddedStudentAction;
-use Microsoft\Graph\Beta\Generated\Models\AddToCalendarAction;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\EducationAddedStudentAction;
+use Microsoft\Graph\Beta\Generated\Models\EducationAddToCalendarOptions;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

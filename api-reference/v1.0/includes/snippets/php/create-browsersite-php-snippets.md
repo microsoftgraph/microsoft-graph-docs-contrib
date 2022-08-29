@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\BrowserSite;
-use Microsoft\Graph\Generated\Models\TargetEnvironment;
-use Microsoft\Graph\Generated\Models\MergeType;
-use Microsoft\Graph\Generated\Models\CompatibilityMode;
+use Microsoft\Graph\Generated\Models\BrowserSiteTargetEnvironment;
+use Microsoft\Graph\Generated\Models\BrowserSiteMergeType;
+use Microsoft\Graph\Generated\Models\BrowserSiteCompatibilityMode;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

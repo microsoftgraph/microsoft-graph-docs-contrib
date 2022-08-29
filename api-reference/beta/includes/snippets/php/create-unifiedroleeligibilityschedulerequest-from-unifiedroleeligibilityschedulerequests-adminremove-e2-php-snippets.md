@@ -9,7 +9,7 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\UnifiedRoleEligibilityScheduleRequest;
 use Microsoft\Graph\Beta\Generated\Models\RequestSchedule;
 use Microsoft\Graph\Beta\Generated\Models\ExpirationPattern;
-use Microsoft\Graph\Beta\Generated\Models\Type;
+use Microsoft\Graph\Beta\Generated\Models\ExpirationPatternType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

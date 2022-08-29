@@ -25,6 +25,18 @@ Customize the authentication experience for your customers by using [user flows 
 ### Teamwork and communications | Messaging
 
 - [Archive](/graph/api/channel-archive) or [unarchive](/graph/api/channel-unarchive) a [channel](/graph/api/resources/channel) in a [team](/graph/api/resources/team).
+### Teamwork and communications | Calls and online meetings
+
+Get the list of [callRecord](/graph/api/resources/callrecords-callrecord) objects and their properties and the associated [participant](/graph/api/resources/callrecords-participant) objects for each **callRecord** using the following APIs:
+
+- [List callRecords](/graph/api/callrecords-cloudcommunications-list-callrecords)
+- [List participants_v2](/graph/api/callrecords-callrecord-list-participants_v2)
+
+The following properties are deprecated:
+
+- **organizer** property on [callRecord](/graph/api/resources/callrecords-callrecord) in favor of the **organizer_v2** relationship.
+- **participants** property on [callRecord](/graph/api/resources/callrecords-callrecord) in favor of the **participants_v2** relationship.
+- **identity** property on [participantEndpoint](/graph/api/resources/callrecords-participantendpoint) in favor of the **associatedIdentity** property.
 
 ## May 2024: New in preview only
 
@@ -64,7 +76,10 @@ Export [results](/graph/api/security-ediscoverysearch-exportresult?view=graph-re
 ### Teamwork and communications | Calls and online meetings
 
 - [Get](/graph/api/virtualeventwebinarregistrationconfiguration-get?view=graph-rest-beta&preserve-view=true) information about a [webinar registration configuration](/graph/api/resources/virtualeventwebinarregistrationconfiguration?view=graph-rest-beta&preserve-view=true).
-- [List](/graph/api/virtualevent-list-presenters?view=graph-rest-beta), [create](/graph/api/virtualevent-post-presenters?view=graph-rest-beta&preserve-view=true), [get](/graph/api/virtualeventpresenter-get?view=graph-rest-beta&preserve-view=true), [update](/graph/api/virtualeventpresenter-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/virtualeventpresenter-delete?view=graph-rest-beta&preserve-view=true) presenters on a [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true).
+- [List](/graph/api/virtualevent-list-presenters?view=graph-rest-beta&preserve-view=true), [create](/graph/api/virtualevent-post-presenters?view=graph-rest-beta&preserve-view=true), [get](/graph/api/virtualeventpresenter-get?view=graph-rest-beta&preserve-view=true), [update](/graph/api/virtualeventpresenter-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/virtualeventpresenter-delete?view=graph-rest-beta&preserve-view=true) presenters on a [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true).
+- Use the **callId** on [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) or [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) to identify the [call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true) that is related to a recording or transcript.
+- Use the **contentCorrelationId** on [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) or [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) to correlate a transcript with its corresponding recording.
+- Use the **endDateTime** on [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) or [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) to identify when a recording or transcript ends.
 
 ### Teamwork and communications | Messaging
 
@@ -170,8 +185,8 @@ The `/security/tiindicators` endpoint is deprecated and will stop returning data
 A town hall is a type of meeting available in Microsoft Teams. Whether you're marking milestone achievements within your organization or covering an election, town hall features enable you to provide high-quality production experiences to large audiences. You can create, publish, and cancel town hall meetings by using the following APIs:
 
 - [Create virtualEventTownhall](/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta&preserve-view=true)
-- [virtualEvent: publish](/graph/api/virtualevent-publish?view=graph-rest-beta&preserve-view=true)
-- [virtualEvent: cancel](/graph/api/virtualevent-cancel?view=graph-rest-beta&preserve-view=true)
+- [virtualEvent: publish](/graph/api/virtualeventtownhall-publish?view=graph-rest-beta&preserve-view=true)
+- [virtualEvent: cancel](/graph/api/virtualeventtownhall-cancel?view=graph-rest-beta&preserve-view=true)
 
 For more information about town hall APIs, see [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true).
 
