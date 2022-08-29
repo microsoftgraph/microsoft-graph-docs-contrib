@@ -33,7 +33,10 @@ To learn more about the existing Microsoft Graph connectors, visit the [Microsof
 
 While the existing connectors help connect to popular services, you might want to integrate with services that aren't available in the connectors gallery. You can use the Microsoft Graph connectors API to build custom connectors to bring your external data into Microsoft 365 experiences within your organization.
 
-To get started, see [Build your first custom Microsoft Graph connector](connecting-external-content-build-quickstart.yml).
+To get started, see the following:
+
+- [Build your first custom Microsoft Graph connector using APIs](connecting-external-content-build-quickstart.yml)
+- [Build your first custom Microsoft Graph connector using the SDK](/graph/custom-connector-sdk-sample-overview)
 
 ## Next steps
 
