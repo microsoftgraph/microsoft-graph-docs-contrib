@@ -14,9 +14,9 @@ The first step is to create an Azure AD application that will be used as the sec
 
 1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
 
-1. On the sidebar navigation, select **Azure Active Directory** (Azure AD).
+1. On the home page, select the **Azure Active Directory** service.
 
-1. On the Azure AD Overview page, select **App registrations** from the **Manage** section of the menu.
+1. On the Azure AD Overview page, select **App registrations** from the **Manage** section of the left navigation pane.
 
 1. Select the **New registration** button.
 

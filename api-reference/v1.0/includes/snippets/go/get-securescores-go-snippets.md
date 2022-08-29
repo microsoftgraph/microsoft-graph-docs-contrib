@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestTop := int32(1)
+
 requestParameters := &graphconfig.SecureScoresRequestBuilderGetQueryParameters{
-	Top: 1,
+	Top: &requestTop,
 }
 configuration := &graphconfig.SecureScoresRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

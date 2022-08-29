@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "distributionMethod eq 'organization'"
+
 requestParameters := &graphconfig.TeamsAppsRequestBuilderGetQueryParameters{
-	Filter: "distributionMethod eq 'organization'",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.TeamsAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

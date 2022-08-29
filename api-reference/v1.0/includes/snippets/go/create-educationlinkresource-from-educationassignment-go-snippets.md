@@ -13,8 +13,6 @@ requestBody.SetDistributeForStudentWork(&distributeForStudentWork)
 resource := graphmodels.NewEducationResource()
 displayName := "Where the Wonders of Learning Never Cease | Wonderopolis"
 resource.SetDisplayName(&displayName) 
-"@odata.type" := "#microsoft.graph.educationLinkResource"
-resource.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"link" : "https://wonderopolis.org/", 
 	thumbnailPreviewUrl := null

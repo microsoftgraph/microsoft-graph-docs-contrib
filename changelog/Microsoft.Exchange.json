@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "3163e72c-3807-4dc3-909f-33421d2c69e0",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added support for the custom query option `changeType` on the [delta](https://docs.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-1.0) method of [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-v1.0).",
+          "Target": "delta"
+        }
+      ],
+      "Id": "3163e72c-3807-4dc3-909f-33421d2c69e0",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-01-13T00:00:00.000Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "72f09c64-d6f2-4d48-a138-6fa514803a86",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added support for the custom query option `changeType` on the [delta](https://docs.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-beta) method of [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta).",
+          "Target": "delta"
+        }
+      ],
+      "Id": "72f09c64-d6f2-4d48-a138-6fa514803a86",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-23T00:00:00.000Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4b4fc99c-551f-43ad-ba3d-e3390eaad756",
           "ApiChange": "Property",
           "ChangedApiName": "includeResourceData",

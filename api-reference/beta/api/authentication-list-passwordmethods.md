@@ -133,7 +133,7 @@ Content-type: application/json
     {
       "id": "28c10230-6103-485e-b985-444c60001490",
       "password": null,
-      "creationDateTime": null
+      "createdDateTime": null
     }
   ]
 }
