@@ -1,0 +1,38 @@
+{
+    "changelog": [
+      {
+        "ChangeList": [      
+          {
+            "Id": "83c8e159-1987-49bd-a8d1-f33a651b96f0",
+            "ApiChange": "Resource",
+            "ChangedApiName": "browserSiteList",
+            "ChangeType": "Addition",
+            "Description": "Added the [browserSiteList](https://docs.microsoft.com/en-us/graph/api/resources/browserSiteList?view=graph-rest-beta) resource type.",
+            "Target": "browserSiteList"
+          },
+          {
+            "Id": "83c8e159-1987-49bd-a8d1-f33a651b96f0",
+            "ApiChange": "Resource",
+            "ChangedApiName": "browserSite",
+            "ChangeType": "Addition",
+            "Description": "Added the [browserSite](https://docs.microsoft.com/en-us/graph/api/resources/browserSite?view=graph-rest-beta) resource and supported methods.",
+            "Target": "browserSite"
+          },
+          {
+            "Id": "83c8e159-1987-49bd-a8d1-f33a651b96f0",
+            "ApiChange": "Resource",
+            "ChangedApiName": "browserSharedCookie",
+            "ChangeType": "Addition",
+            "Description": "Added the [browserSharedCookie](https://docs.microsoft.com/en-us/graph/api/resources/browserSharedCookie?view=graph-rest-beta) resource and supported methods.",
+            "Target": "browserSharedCookie"
+          }
+        ],
+        "Id": "83c8e159-1987-49bd-a8d1-f33a651b96f0",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2022-08-29T18:53:10.1690479Z",
+        "WorkloadArea": "Sites and lists",
+        "SubArea": "Internet Explorer mode"
+      }
+    ]
+  }
