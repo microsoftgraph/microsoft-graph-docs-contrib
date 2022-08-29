@@ -26,6 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |[summary](../api/identitygovernance-run-summary.md)|[microsoft.graph.identityGovernance.runSummary](../resources/identitygovernance-runsummary.md)|Get a summary of workflows runs.|
 |[List user processing results](../api/identitygovernance-run-summary.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Get a list of user processing results of a run.|
 |[Get user processing result](../api/identitygovernance-run-summary.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md)|Get a user processing result of a run|
+|[List task processing results of a run](../api/identitygovernance-run-list-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskReportSummary](../resources/identitygovernance-taskprocessingresult.md)|List task processing results from a run.|
 
 ## Properties
 
