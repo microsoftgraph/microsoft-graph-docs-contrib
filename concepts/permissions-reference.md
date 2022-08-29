@@ -352,6 +352,36 @@ None.
 * _Bookings.ReadWrite.All_: Create a new service for the specified Bookings business (`POST /bookingBusinesses/{id}/services`).
 * _Bookings.Manage.All_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
 
+## BrowserSiteLists resource permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _BrowserSiteLists.Read.All_ | Read browser site lists for your organization | Allows an app to read the browser site lists configured for your organization, on behalf of the signed-in user. | No |
+| _BrowserSiteLists.ReadWrite.All_ | Read and write browser site lists for your organization |  Allows an app to read and write the browser site lists configured for your organization, on behalf of the signed-in user. | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _BrowserSiteLists.Read.All_ | Read all browser site lists for your organization | Allows an app to read all browser site lists configured for your organization, without a signed-in user. | Yes |
+| _BrowserSiteLists.ReadWrite.All_ | Read and write all browser site lists for your organization | Allows an app to read and write all browser site lists configured for your organization, without a signed-in user. | Yes |
+
+### Example usage
+
+#### Delegated
+
+* _BrowserSiteLists.Read.All_: List all browserSiteLists (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
+* _BrowserSiteLists.ReadWrite.All_: Update a browserSiteList (`PATCH /beta/admin/edge/internetExplorerMode/siteLists/{id}`)
+
+#### Application
+
+* _BrowserSiteLists.Read.All_: List all applications (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
+* _BrowserSiteLists.ReadWrite.All_: Delete a service principal (`DELETE /beta/admin/edge/internetExplorerMode/siteLists/{id}`)
+
+---
+
 ## Calendars permissions
 
 #### Delegated permissions
