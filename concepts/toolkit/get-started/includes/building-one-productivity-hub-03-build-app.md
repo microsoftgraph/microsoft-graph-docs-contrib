@@ -1,8 +1,14 @@
+---
+ms.localizationpriority: medium
+---
+
+<!-- markdownlint-disable MD041 -->
+
 In this step, you'll create a web app and enable authentication with the Microsoft Graph Toolkit MSAL2 provider.
 
 ## Create a web app
 
-1. Create a new folder and name it **OneProductivityHub**. Right-click and open the folder with Visual Studio Code.  
+1. Create a new folder and name it **OneProductivityHub**. Right-click and open the folder with Visual Studio Code.
 
 1. Create a new file in the **OneProductivityHub** folder and name it **index.html**.
 
@@ -19,7 +25,7 @@ In this step, you'll create a web app and enable authentication with the Microso
 1. In **index.html**, add the MSAL2 provider in the `<body></body>` section as follows:
 
     ```HTML
-    <mgt-msal2-provider 
+    <mgt-msal2-provider
         client-id="<YOUR_CLIENT_ID>"
         scopes="User.Read,
         User.ReadBasic.All,
@@ -29,7 +35,7 @@ In this step, you'll create a web app and enable authentication with the Microso
         Sites.Read.All,
         Tasks.Read,
         Tasks.ReadWrite,
-        People.Read">    
+        People.Read">
     </mgt-msal2-provider>
     ```
 
@@ -53,7 +59,7 @@ In this step, you'll create a web app and enable authentication with the Microso
     </head>
     <body>
       <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
-      <mgt-msal2-provider 
+      <mgt-msal2-provider
           client-id="<YOUR_CLIENT_ID>"
           scopes="User.Read,
           User.ReadBasic.All,
@@ -63,7 +69,7 @@ In this step, you'll create a web app and enable authentication with the Microso
           Sites.Read.All,
           Tasks.Read
           Tasks.ReadWrite,
-          People.Read">    
+          People.Read">
       </mgt-msal2-provider>
     </body>
     </html>
