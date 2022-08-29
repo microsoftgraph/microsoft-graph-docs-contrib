@@ -46,20 +46,20 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter          | Type     | Description                                                                                                                                                                                                                                    |
 | :----------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| availability       | String   | The base presence information.                                                                                                                                                                                                                 |
 | activity           | String   | The supplemental information to availability.                                                                                                                                                                                                  |
-| expirationDuration | Duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations.<br/>If not provided, a default expiration will be applied:<br/>- DoNotDisturb or Busy: expires in 1 day<br/>- All others: expires in 7 days |
+| availability       | String   | The base presence information.                                                                                                                                                                                                                 |
+| expirationDuration | Duration | The expiration of the app presence session represented in ISO 8601 format for durations.<br/>If not provided, a default expiration will be applied:<br/>- `DoNotDisturb` or `Busy`: Expiration in 1 day<br/>- All others: Expiration in 7 days |
 
-Supported combinations of **availability** and **activity** are:
+The following table shows the supported combinations of **availability** and **activity**.
 
 | availability | activity     | Description                                         |
 | :----------- | :----------- | :-------------------------------------------------- |
-| Available    | Available    | Set the user preferred presence as Available.       |
-| Busy         | Busy         | Set the user preferred presence as Busy.            |
-| DoNotDisturb | DoNotDisturb | Set the user preferred presence as DoNotDisturb.    |
-| BeRightBack  | BeRightBack  | Set the user preferred presence as BeRightBack.     |
-| Away         | Away         | Set the user preferred presence as Away.            |
-| Offline      | OffWork      | Set the user preferred presence as Offline.         |
+| Available    | Available    | Set the user preferred presence as `Available`.     |
+| Busy         | Busy         | Set the user preferred presence as `Busy`.          |
+| DoNotDisturb | DoNotDisturb | Set the user preferred presence as `DoNotDisturb`.  |
+| BeRightBack  | BeRightBack  | Set the user preferred presence as `BeRightBack`.   |
+| Away         | Away         | Set the user preferred presence as `Away`.          |
+| Offline      | OffWork      | Set the user preferred presence as `Offline`.       |
 
 ## Response
 If successful, this method returns a `200 OK` response code.
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code.
 
 ### Request
 
-The following example shows a request that sets the preferred presence as DoNotDisturb for a user, with an expiration of 8 hours.
+The following example shows a request that sets the preferred presence as `DoNotDisturb` for a user, with an expiration of 8 hours.
 
 <!-- {
   "blockType": "request",
@@ -86,8 +86,6 @@ Content-Type: application/json
   "expirationDuration": "PT8H"
 }
 ```
-
----
 
 
 ### Response
