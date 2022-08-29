@@ -1,19 +1,19 @@
 ---
-title: "List taskProcessingResult (for a taskReport)"
-description: "Get a list of taskProcessingResult objects and their properties for a taskReport"
+title: "List task Processing Results"
+description: "Get the taskProcessingResult resources from the taskProcessingResults object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List taskProcessingResult (for a taskReport)
+# List taskProcessingResults (for a userProcessingResult)
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the task processing result resources from the [taskReport](../resources/identitygovernance-taskreport.md).
+Get the task Processing Result from a [userProcessingResult](../resources/identitygovernance-userprocessingresult.md).
 
 ## Permissions
 
@@ -28,7 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 - Global administrator
-- Global reader
 - Lifecycle workflows administrator
 
 ## HTTP request
@@ -38,12 +37,12 @@ For delegated scenarios, the admin needs one of the following [Azure AD roles](/
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/taskReports/{taskReportId}/taskProcessingResults
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/userProcessingResults/{userProcessingResultId}/taskProcessingResults
 ```
 
 ## Optional query parameters
 
-This method supports the `$count`, `$select`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$top`, `$count`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -70,7 +69,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/taskReports/3a3bea11-99ca-462d-86fb-d283db8d734a/taskProcessingResults
+GET https://graph.microsoft.com/beta/IdentityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/userProcessingResults/78b83505-6967-4168-a7ea-4921c0543ce9/taskProcessingResults
 ```
 
 ### Response
@@ -88,7 +87,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/taskReports('3a3bea11-99ca-462d-86fb-d283db8d734a')/taskProcessingResults",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/userProcessingResults('78b83505-6967-4168-a7ea-4921c0543ce9')/taskProcessingResults",
     "value": [
         {
             "completedDateTime": "2022-08-24T23:28:05.3529197Z",
@@ -98,7 +97,6 @@ Content-Type: application/json
             "startedDateTime": "2022-08-24T23:28:05.1234966Z",
             "failureReason": null,
             "subject": {
-                "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
             "task": {
@@ -108,32 +106,36 @@ Content-Type: application/json
                 "displayName": "Enable User Account",
                 "executionSequence": 1,
                 "id": "917e9eab-415d-4e45-b39d-87eb5e30de38",
-                "isEnabled": true,
+                "isEnabled": false,
                 "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
                 "arguments": []
             }
         },
         {
-            "completedDateTime": "2022-08-24T23:28:05.3665043Z",
-            "createdDateTime": "2022-08-24T23:28:04.6062005Z",
-            "id": "bf3cf897-d08d-41fe-b874-bbaca883f2d4",
+            "completedDateTime": "2022-08-24T23:28:06.760333Z",
+            "createdDateTime": "2022-08-24T23:28:04.5571759Z",
+            "id": "e30b12e1-45fa-4463-8d54-48f43fd8942a",
             "processingStatus": "completed",
-            "startedDateTime": "2022-08-24T23:28:05.1438145Z",
+            "startedDateTime": "2022-08-24T23:28:06.3926865Z",
             "failureReason": null,
             "subject": {
-                "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-                "id": "8cdf25a8-c9d2-423e-a03d-3f39f03c3e97"
+                "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
             "task": {
                 "category": "joiner,leaver",
                 "continueOnError": false,
-                "description": "Enable user account in the directory",
-                "displayName": "Enable User Account",
-                "executionSequence": 1,
-                "id": "917e9eab-415d-4e45-b39d-87eb5e30de38",
+                "description": "Add user to selected groups",
+                "displayName": "Add User To Groups",
+                "executionSequence": 2,
+                "id": "eedd8043-90a1-4e3c-9112-b2a8917ea3ae",
                 "isEnabled": true,
-                "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
-                "arguments": []
+                "taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
+                "arguments": [
+                    {
+                        "name": "groupID",
+                        "value": "e5659cb0-bcbb-4a9f-9092-90f72bd19028"
+                    }
+                ]
             }
         }
     ]
