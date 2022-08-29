@@ -75,7 +75,7 @@ If successful, this method returns a `201 Created` response code and a [workflow
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_workflow_from_"
+  "name": "lifecycleworkflows_create_workflow_from_"
 }
 -->
 ``` http

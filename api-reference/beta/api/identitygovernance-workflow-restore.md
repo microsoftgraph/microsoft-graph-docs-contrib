@@ -61,7 +61,7 @@ If successful, this action returns a `200 OK` response code and a [workflow](../
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "workflowthis.restore"
+  "name": "lifecycleworkflows_workflowthis.restore"
 }
 -->
 ``` http

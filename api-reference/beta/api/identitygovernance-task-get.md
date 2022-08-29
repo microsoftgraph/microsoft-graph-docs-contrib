@@ -44,6 +44,10 @@ GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks/{taskId}
 
 Fetch tasks for a lifecycle workflow version.
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/versions/2/tasks/4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee
 ```
@@ -75,7 +79,7 @@ If successful, this method returns a `200 OK` response code and a [task](../reso
 The following is an example of a request to get a task from a workflow.
 <!-- {
   "blockType": "request",
-  "name": "list_task"
+  "name": "lifecycleworkflows_list_workflow_task"
 }
 -->
 ``` http
@@ -117,7 +121,7 @@ Content-Type: application/json
 The following is an example of a request to get a task from a workflow version.
 <!-- {
   "blockType": "request",
-  "name": "list_task_workflowVersion"
+  "name": "lifecycleworkflows_list_workflowVersion_task"
 }
 -->
 ``` http

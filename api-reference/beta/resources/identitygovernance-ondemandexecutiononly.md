@@ -19,8 +19,7 @@ Inherits from [workflowExecutionConditions](../resources/identitygovernance-work
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 

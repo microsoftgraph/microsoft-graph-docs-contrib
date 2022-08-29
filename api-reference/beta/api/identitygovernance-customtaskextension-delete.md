@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_customtaskextension"
+  "name": "lifecycleworkflows_delete_customtaskextension"
 }
 -->
 ``` http

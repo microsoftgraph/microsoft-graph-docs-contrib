@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a [workflow](../
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_workflow"
+  "name": "lifecycleworkflows_get_workflow"
 }
 -->
 ``` http

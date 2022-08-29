@@ -74,7 +74,7 @@ If successful, this action returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_customtaskextension"
+  "name": "lifecycleworkflows_update_customtaskextension"
 }
 -->
 ``` http

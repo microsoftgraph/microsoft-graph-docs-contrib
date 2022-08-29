@@ -76,7 +76,7 @@ If successful, this method returns a `201 Created` response code and a [customTa
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_customtaskextension_from_"
+  "name": "lifecycleworkflows_create_customtaskextension_from_"
 }
 -->
 ``` http

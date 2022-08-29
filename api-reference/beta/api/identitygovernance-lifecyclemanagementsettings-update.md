@@ -66,7 +66,7 @@ If successful, this action returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_lifecyclemanagementsettings"
+  "name": "lifecycleworkflows_update_lifecyclemanagementsettings"
 }
 -->
 ``` http

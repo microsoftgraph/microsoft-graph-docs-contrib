@@ -72,7 +72,7 @@ If successful, this function returns a `200 OK` response code and a [userSummary
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "userprocessingresultthis.summary"
+  "name": "lifecycleworkflows_userprocessingresultthis.summary"
 }
 -->
 ``` http
