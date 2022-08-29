@@ -3290,6 +3290,29 @@ items:
               href: api/intune-apps-webapp-delete.md
             - name: Update
               href: api/intune-apps-webapp-update.md
+          - name: Win get app
+            href: resources/intune-apps-wingetapp.md
+            items:
+            - name: List
+              href: api/intune-apps-wingetapp-list.md
+            - name: Get
+              href: api/intune-apps-wingetapp-get.md
+            - name: Create
+              href: api/intune-apps-wingetapp-create.md
+            - name: Delete
+              href: api/intune-apps-wingetapp-delete.md
+            - name: Update
+              href: api/intune-apps-wingetapp-update.md
+          - name: Win get app assignment settings
+            href: resources/intune-apps-wingetappassignmentsettings.md
+          - name: Win get app install experience
+            href: resources/intune-apps-wingetappinstallexperience.md
+          - name: Win get app install time settings
+            href: resources/intune-apps-wingetappinstalltimesettings.md
+          - name: Win get app notification
+            href: resources/intune-apps-wingetappnotification.md
+          - name: Win get app restart settings
+            href: resources/intune-apps-wingetapprestartsettings.md
           - name: Win32 LOB app
             href: resources/intune-apps-win32lobapp.md
             items:
@@ -7565,6 +7588,21 @@ items:
             href: resources/intune-devices-configurationmanagerclientinformation.md
           - name: Configuration manager client state
             href: resources/intune-devices-configurationmanagerclientstate.md
+          - name: Create remote help session response
+            href: resources/intune-remoteassistance-createremotehelpsessionresponse.md
+            items:
+            - name: List
+              href: api/intune-remoteassistance-createremotehelpsessionresponse-list.md
+            - name: Get
+              href: api/intune-remoteassistance-createremotehelpsessionresponse-get.md
+            - name: Create
+              href: api/intune-remoteassistance-createremotehelpsessionresponse-create.md
+            - name: Delete
+              href: api/intune-remoteassistance-createremotehelpsessionresponse-delete.md
+            - name: Update
+              href: api/intune-remoteassistance-createremotehelpsessionresponse-update.md
+          - name: Data processor service for windows features on-boarding
+            href: resources/intune-devices-dataprocessorserviceforwindowsfeaturesonboarding.md
           - name: Data sharing consent
             href: resources/intune-devices-datasharingconsent.md
             items:
@@ -7597,6 +7635,8 @@ items:
               href: api/intune-devices-detectedapp-delete.md
             - name: Update
               href: api/intune-devices-detectedapp-update.md
+          - name: Detected app platform type
+            href: resources/intune-devices-detectedappplatformtype.md
           - name: Device action result
             href: resources/intune-devices-deviceactionresult.md
           - name: Device compliance script
@@ -8497,8 +8537,34 @@ items:
             href: resources/intune-remoteassistance-remoteassistancestate.md
           - name: Remote lock action result
             href: resources/intune-devices-remotelockactionresult.md
+          - name: Request remote help session access response
+            href: resources/intune-remoteassistance-requestremotehelpsessionaccessresponse.md
+            items:
+            - name: List
+              href: api/intune-remoteassistance-requestremotehelpsessionaccessresponse-list.md
+            - name: Get
+              href: api/intune-remoteassistance-requestremotehelpsessionaccessresponse-get.md
+            - name: Create
+              href: api/intune-remoteassistance-requestremotehelpsessionaccessresponse-create.md
+            - name: Delete
+              href: api/intune-remoteassistance-requestremotehelpsessionaccessresponse-delete.md
+            - name: Update
+              href: api/intune-remoteassistance-requestremotehelpsessionaccessresponse-update.md
           - name: Reset passcode action result
             href: resources/intune-devices-resetpasscodeactionresult.md
+          - name: Retrieve remote help session response
+            href: resources/intune-remoteassistance-retrieveremotehelpsessionresponse.md
+            items:
+            - name: List
+              href: api/intune-remoteassistance-retrieveremotehelpsessionresponse-list.md
+            - name: Get
+              href: api/intune-remoteassistance-retrieveremotehelpsessionresponse-get.md
+            - name: Create
+              href: api/intune-remoteassistance-retrieveremotehelpsessionresponse-create.md
+            - name: Delete
+              href: api/intune-remoteassistance-retrieveremotehelpsessionresponse-delete.md
+            - name: Update
+              href: api/intune-remoteassistance-retrieveremotehelpsessionresponse-update.md
           - name: Revoke apple VPP licenses action result
             href: resources/intune-devices-revokeapplevpplicensesactionresult.md
           - name: Role scope tag info
@@ -9387,6 +9453,8 @@ items:
               href: api/intune-mam-managedmobileapp-update.md
           - name: Mobile app identifier
             href: resources/intune-mam-mobileappidentifier.md
+          - name: Mobile threat defense partner priority
+            href: resources/intune-mam-mobilethreatdefensepartnerpriority.md
           - name: Targeted managed app group type
             href: resources/intune-mam-targetedmanagedappgrouptype.md
           - name: Targeted managed app policy assignment
@@ -10131,7 +10199,7 @@ items:
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
             - name: Create
-              href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
+              href: api/resources/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -12720,34 +12788,6 @@ items:
               href: api/b2cauthenticationmethodspolicy-get.md
             - name: Update
               href: api/b2cauthenticationmethodspolicy-update.md
-          - name: Consent requests
-            href: resources/consentrequests-overview.md
-            items:
-            - name: Admin consent request policy
-              href: resources/adminconsentrequestpolicy.md
-              items:
-              - name: Get
-                href: api/adminconsentrequestpolicy-get.md
-              - name: Update
-                href: api/adminconsentrequestpolicy-update.md
-            - name: App consent requests
-              href: resources/appconsentrequest.md
-              items:
-              - name: List
-                href: api/appconsentapprovalroute-list-appconsentrequests.md
-              - name: Get
-                href: api/appconsentrequest-get.md
-              - name: Filter by current user
-                href: api/appconsentrequest-filterByCurrentUser.md
-            - name: User consent requests
-              href: resources/userconsentrequest.md
-              items:
-              - name: List
-                href: api/appconsentrequest-list-userconsentrequests.md
-              - name: Get
-                href: api/userconsentrequest-get.md
-              - name: Filter by current user
-                href: api/userconsentrequest-filterByCurrentUser.md
           - name: Claims mapping policy
             href: resources/claimsmappingpolicy.md
             items:
@@ -13224,6 +13264,34 @@ items:
             items:
             - name: List
               href: api/programcontroltype-list.md
+        - name: Consent requests
+          href: resources/consentrequests-overview.md
+          items:
+          - name: Admin consent request policy
+            href: resources/adminconsentrequestpolicy.md
+            items:
+            - name: Get
+              href: api/adminconsentrequestpolicy-get.md
+            - name: Update
+              href: api/adminconsentrequestpolicy-update.md
+          - name: App consent requests
+            href: resources/appconsentrequest.md
+            items:
+            - name: List
+              href: api/appconsentapprovalroute-list-appconsentrequests.md
+            - name: Get
+              href: api/appconsentrequest-get.md
+            - name: Filter by current user
+              href: api/appconsentrequest-filterByCurrentUser.md
+          - name: User consent requests
+            href: resources/userconsentrequest.md
+            items:
+            - name: List
+              href: api/appconsentrequest-list-userconsentrequests.md
+            - name: Get
+              href: api/userconsentrequest-get.md
+            - name: Filter by current user
+              href: api/userconsentrequest-filterByCurrentUser.md
         - name: Entitlement management
           href: resources/entitlementmanagement-overview.md
           items:
