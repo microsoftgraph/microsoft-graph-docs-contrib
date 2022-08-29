@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "Extensions/any"
+
 requestParameters := &graphconfig.MessagesRequestBuilderGetQueryParameters{
-	Filter: "Extensions/any",
+	Filter: &requestFilter,
 	Expand: [] string {"Extensions($filter=id%20eq%20'Com.Contoso.Referral')"},
 }
 configuration := &graphconfig.MessagesRequestBuilderGetRequestConfiguration{

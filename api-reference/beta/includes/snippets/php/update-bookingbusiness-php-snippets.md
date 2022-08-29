@@ -13,11 +13,11 @@ $requestBody = new BookingBusiness();
 $requestBody->setEmail('admin@fabrikam.com');
 
 $schedulingPolicy = new BookingSchedulingPolicy();
-$schedulingPolicy->setTimeSlotInterval('PT60M');
+$schedulingPolicy->setTimeSlotInterval(new \DateInterval('PT60M'));
 
-$schedulingPolicy->setMinimumLeadTime('P1D');
+$schedulingPolicy->setMinimumLeadTime(new \DateInterval('P1D'));
 
-$schedulingPolicy->setMaximumAdvance('P30D');
+$schedulingPolicy->setMaximumAdvance(new \DateInterval('P30D'));
 
 $schedulingPolicy->setSendConfirmationsToOwner(true);
 

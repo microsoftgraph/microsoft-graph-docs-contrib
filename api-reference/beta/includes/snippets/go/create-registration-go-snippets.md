@@ -9,7 +9,6 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewRegistrationPostRequestBody()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.meetingRegistration", 
 	"subject" : "Microsoft Ignite", 
 	"description" : "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.", 
 	"startDateTime" : "2021-11-02T08:00:00-08:00", 

@@ -45,6 +45,7 @@ The following table describes the types available to query and the supported per
 
 | EntityType | Permission scope required to access the items| Source| Comment|
 |:------------------|:---------|:---------|:---------|
+|[chatMessage](chatmessage.md)|Chat.Read, Chat.ReadWrite, ChannelMessage.Read.All|Teams|Teams messages.|
 |[message](message.md)|Mail.Read, Mail.ReadWrite| Exchange Online| Email messages.|
 |[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange Online|Calendar events. |
 |[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document libraries.|
@@ -68,7 +69,7 @@ Note the following limits if you're searching the **event** or **message** entit
 - **from** must start at zero in the first page request; otherwise, the request results in an HTTP 400 `Bad request`.
 - The maximum number of results per page (**size**) is 25 for **message** and **event**.
 
-There is no upper limit for SharePoint or OneDrive items. A reasonable page size is 200. A larger page size generally incurs higher latency.
+The upper limit for SharePoint or OneDrive items is 1000. A reasonable page size is 200. A larger page size generally incurs higher latency.
 
 Best practices:
 
@@ -202,6 +203,7 @@ For backward compatibility, the original properties and types are accessible and
 ## See also
 
 - Learn more about a few key use cases:
+  - [Search Teams messages](/graph/search-concept-chat-messages)
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
   - [Search person](/graph/search-concept-person)

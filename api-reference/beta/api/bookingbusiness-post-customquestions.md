@@ -67,12 +67,13 @@ If successful, this method returns a `201 Created` response code and a [bookingC
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_bookingcustomquestion_from_"
+  "name": "create_bookingcustomquestion_from_",
+  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
 }
 -->
 
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
+POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
 Content-Type: application/json
 Content-length: 165
 

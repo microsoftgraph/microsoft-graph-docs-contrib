@@ -2104,15 +2104,6 @@ Possible values for user account types (group membership), per Windows definitio
 |high|
 |urgent|
 
-### channelMembershipType values
-
-| Member             |
-| :----------------- |
-| standard           |
-| private            |
-| unknownFutureValue |
-| shared             |
-
 ### stagedFeatureName values
 
 | Member                    | Description                   |
@@ -3180,6 +3171,13 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |user|
 |administrator|
+|unknownFutureValue|
+
+### weakAlgorithms values 
+
+|Member|
+|:---|
+|rsaSha1|
 |unknownFutureValue|
 
 ### tenantAllowBlockListAction values 

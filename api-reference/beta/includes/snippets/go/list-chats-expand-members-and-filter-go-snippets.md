@@ -7,9 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "members/any"
+
 requestParameters := &graphconfig.ChatsRequestBuilderGetQueryParameters{
 	Expand: [] string {"members"},
-	Filter: "members/any",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.ChatsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

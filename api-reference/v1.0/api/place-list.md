@@ -328,7 +328,8 @@ The following example shows how to get a list of [room](../resources/room.md) ob
 
 <!-- {
   "blockType": "request",
-  "name": "get_rooms_in_roomlist"
+  "name": "get_rooms_in_roomlist",
+  "sampleKeys": ["Building2Rooms@M365x214355.onmicrosoft.com"]
 }-->
 
 ```msgraph-interactive

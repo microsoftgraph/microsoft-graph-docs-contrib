@@ -78,7 +78,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_file_attachment_from_message_beta"
+  "name": "create_file_attachment_from_message_beta",
+  "sampleKeys": ["AAMkpsDRVK"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkpsDRVK/attachments
@@ -153,7 +154,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_item_attachment_from_message_beta"
+  "name": "create_item_attachment_from_message_beta",
+  "sampleKeys": ["AAMkpsDRVK"]
 }-->
 
 ```
@@ -243,7 +245,8 @@ The attachment points to a folder on OneDrive.
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_message",
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "@odata.type": "microsoft.graph.referenceAttachment",
+  "sampleKeys": ["AAMkAGE1M88AADUv0uFAAA="]
 }-->
 
 ```

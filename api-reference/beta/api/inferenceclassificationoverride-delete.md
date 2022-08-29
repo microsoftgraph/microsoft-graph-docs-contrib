@@ -42,16 +42,17 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_inferenceclassificationoverride"
+  "name": "delete_inferenceclassificationoverride",
+  "sampleKeys": ["98f5bdef-576a-404d-a2ea-07a3cf34af4"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4r
+DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4
 ```
 
 # [C#](#tab/csharp)
@@ -80,8 +81,8 @@ DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

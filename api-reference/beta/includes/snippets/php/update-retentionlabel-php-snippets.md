@@ -25,7 +25,7 @@ $retentionDuration->set@odatatype('microsoft.graph.security.retentionDuration');
 
 
 $requestBody->setRetentionDuration($retentionDuration);
-$requestBody->setIsInUse('Boolean');
+$requestBody->setIsInUse(boolean);
 
 $requestBody->setDescriptionForAdmins('String');
 

@@ -67,9 +67,12 @@ If successful, this method returns a `201 Created` response code and a [virtualA
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_virtualappointment_from_"
+  "name": "create_virtualappointment_from_",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
 }
 -->
 ``` http
@@ -96,6 +99,13 @@ Content-length: 379
     "externalAppointmentUrl": "https://anyschedulingsystem.com/api/appointments/MkADKnAAA="
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualappointment-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

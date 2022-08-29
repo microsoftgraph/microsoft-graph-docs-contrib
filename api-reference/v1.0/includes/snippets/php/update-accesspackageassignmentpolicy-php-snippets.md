@@ -15,6 +15,7 @@ $additionalData = [
 'displayName' => 'All Users', 
 'description' => 'All users can request for access to the directory.', 
 'allowedTargetScope' => 'allDirectoryUsers', 
+'automaticRequestSettings' => 		null,
 'specificAllowedTargets' => [],
 'expiration' => $requestBody = new Expiration();
 $	requestBody->setType('noExpiration');

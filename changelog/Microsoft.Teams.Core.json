@@ -157,7 +157,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "callTranscript",
           "ChangeType": "Addition",
-          "Description": "Added the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-beta) resource type.",
+          "Description": "Added the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource type.",
           "Target": "callTranscript"
         },
         {
@@ -165,7 +165,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "LIST",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/callTranscript-list?view=graph-rest-beta) operation to the [callTranscript] resource.",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/onlinemeeting-list-transcripts?view=graph-rest-beta) operation to the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.",
           "Target": "callTranscript"
         },
         {
@@ -173,29 +173,19 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/callTranscript-get?view=graph-rest-beta) operation to the [callTranscript] resource.",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/calltranscript-get?view=graph-rest-beta) operation to the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.",
           "Target": "callTranscript"
-        }
-      ],
-      "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2022-08-01T17:37:11Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
+        },
         {
-          "Id": "ac7992ce-3a29-456a-88b9-934313fdd0ea",
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
           "ApiChange": "Relationship",
           "ChangedApiName": "transcripts",
           "ChangeType": "Addition",
-          "Description": "Added the **transcripts** navigation property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **transcripts** navigation property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         }
       ],
-      "Id": "ac7992ce-3a29-456a-88b9-934313fdd0ea",
+      "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-08-01T12:09:10.9478462Z",
@@ -3361,7 +3351,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "softDelete",
           "ChangeType": "Addition",
-          "Description": "Added the [softDelete](https://docs.microsoft.com/en-us/graph/api/softDelete?view=graph-rest-beta) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Description": "Added the [softDelete](https://docs.microsoft.com/en-us/graph/api/chatmessage-softDelete?view=graph-rest-beta) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
           "Target": "chatMessage"
         },
         {
@@ -3369,7 +3359,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "undoSoftDelete",
           "ChangeType": "Addition",
-          "Description": "Added the [undoSoftDelete](https://docs.microsoft.com/en-us/graph/api/undoSoftDelete?view=graph-rest-beta) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Description": "Added the [undoSoftDelete](https://docs.microsoft.com/en-us/graph/api/chatmessage-undoSoftDelete?view=graph-rest-beta) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
           "Target": "chatMessage"
         }
       ],
@@ -5530,7 +5520,25 @@
       "Id": "81CC1882-7054-4CCF-971B-17E05E1AB312",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2022-08-02T15:04:69.427Z",
+      "CreatedDateTime": "2022-08-02T15:04:59.427Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-22T15:04:69.427Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }

@@ -14,8 +14,6 @@ transferTarget.SetEndpointType(&endpointType)
 identity := graphmodels.NewIdentitySet()
 additionalData := map[string]interface{}{
 phone := graphmodels.New()
-"@odata.type" := "#microsoft.graph.identity"
-phone.Set"@odata.type"(&"@odata.type") 
 id := "+12345678901"
 phone.SetId(&id) 
 	identity.SetPhone(phone)
