@@ -1,6 +1,6 @@
 ---
 title: "customExtensionCalloutRequest resource type"
-description: "**TODO: Add Description**"
+description: "Defines the custom extension callout request payload that's sent to external systems."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the custom extension callout request payload that will be sent to external systems.
+Defines the custom extension callout request payload that's sent to external systems.
 
 ## Properties
 |Property|Type|Description|

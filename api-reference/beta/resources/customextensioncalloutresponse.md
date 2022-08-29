@@ -1,6 +1,6 @@
 ---
 title: "customExtensionCalloutResponse resource type"
-description: "Defines the custom extension callout response payload that external systems would send back for callback scenarios of custom extensions."
+description: "Defines the custom extension callout response payload that external systems send back for callback scenarios of custom extensions."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the custom extension callout response payload that external systems would send back for callback scenarios of custom extensions.
+Defines the custom extension callout response payload that external systems send back for callback scenarios of custom extensions.
 
 ## Properties
 
