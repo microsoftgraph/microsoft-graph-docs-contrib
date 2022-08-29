@@ -28,7 +28,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 |displayName|String|The name for the supported region. Read-only.|
 |id|String|The unique identifier for the supported region. Read-only.|
 |regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedregionstatus-values)|The status of the supported region. Possible values are: `available`, `restricted`, `unavailable`, `unknownFutureValue`. Read-only.|
-|supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported services or solutions for the region. The possible values are: `windows365`, `devBox`, `unknownFutureValue`. Read-only.|
+|supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `unknownFutureValue`. Read-only.|
 
 ### cloudPcSupportedRegionStatus values
 
