@@ -79,7 +79,7 @@ If successful, this method returns a `200 OK` response code and a [task](../reso
 The following is an example of a request to get a task from a workflow.
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_list_workflow_task"
+  "name": "lifecycleworkflows_get_workflow_task"
 }
 -->
 ``` http
@@ -121,7 +121,7 @@ Content-Type: application/json
 The following is an example of a request to get a task from a workflow version.
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_list_workflowVersion_task"
+  "name": "lifecycleworkflows_get_workflowVersion_task"
 }
 -->
 ``` http
