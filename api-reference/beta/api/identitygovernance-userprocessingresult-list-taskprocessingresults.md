@@ -42,7 +42,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/userProcessing
 
 ## Optional query parameters
 
-This method supports the `$select`, `$top`, `$count`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
