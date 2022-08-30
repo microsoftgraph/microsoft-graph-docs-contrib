@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
-
 Defines the strong authentication configuration rules for the X.509 certificate. Rules are configured in addition to the authentication mode.
 
 ## Properties

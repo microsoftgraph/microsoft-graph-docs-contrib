@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
-
 Represents the details of the Azure AD native Certificate-Based Authentication (CBA) in the tenant, including whether the authentication method is enabled or disabled and the users and groups who can register and use it.
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).

@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
-
 Defines the fields in the X.509 certificate that map to attributes of the Azure AD user object in order to bind the certificate to the user account.
 
 ## Properties
