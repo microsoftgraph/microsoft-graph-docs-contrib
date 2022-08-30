@@ -6,14 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ProfileCardProperty();
 $annotationsProfileCardAnnotation1 = new ProfileCardAnnotation();
 $annotationsProfileCardAnnotation1->setDisplayName('Cost Center');
 $localizationsDisplayNameLocalization1 = new DisplayNameLocalization();
-$localizationsDisplayNameLocalization1->setLanguageTag('nb-NO');
+$localizationsDisplayNameLocalization1->setLanguageTag('no');
 $localizationsDisplayNameLocalization1->setDisplayName('Kostnadssenter');
 $localizationsArray []= $localizationsDisplayNameLocalization1;
 $annotationsProfileCardAnnotation1->setLocalizations($localizationsArray);

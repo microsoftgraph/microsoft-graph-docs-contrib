@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.simulation import Simulation
+from msgraph.generated.models.address_book_account_target_content import AddressBookAccountTargetContent
 
 graph_client = GraphServiceClient(credentials, scopes)
 

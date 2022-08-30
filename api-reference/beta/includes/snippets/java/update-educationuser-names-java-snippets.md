@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationUser educationUser = new EducationUser();
-educationUser.displayName = "Rogelio Cazares";
-educationUser.givenName = "Rogelio";
-educationUser.middleName = "Fernando";
-educationUser.surname = "Cazares";
+educationUser.setDisplayName("Rogelio Cazares");
+educationUser.setGivenName("Rogelio");
+educationUser.setMiddleName("Fernando");
+educationUser.setSurname("Cazares");
+EducationUser result = graphClient.education().users().byEducationUserId("{educationUser-id}").patch(educationUser);
 
-graphClient.education().users("13020")
-	.buildRequest()
-	.patch(educationUser);
 
 ```

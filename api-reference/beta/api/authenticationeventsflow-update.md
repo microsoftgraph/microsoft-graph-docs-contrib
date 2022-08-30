@@ -3,7 +3,7 @@ title: "Update authenticationEventsFlow"
 description: "Update the properties of an authenticationEventsFlow object."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ PATCH /identity/authenticationEventsFlows/{authenticationEventsFlow-id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -67,7 +67,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 ### Example 1: Update the display name and priority of an authenticationEventsFlow
 
 #### Request
-Here's an example of a request that updates the display name of a specific external identities user flow (an authentication event type), as well as the priority for all the listeners associated with the policy.
+The following example shows a request that updates the display name of a specific external identities user flow (an authentication event type), as well as the priority for all the listeners associated with the policy.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,7 +121,7 @@ Content-Type: application/json
 ---
 
 #### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -250,7 +250,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -367,7 +367,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

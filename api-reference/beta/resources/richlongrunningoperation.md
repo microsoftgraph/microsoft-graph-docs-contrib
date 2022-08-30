@@ -3,7 +3,7 @@ title: "richLongRunningOperation resource type"
 description: "Contains metadata about long running operation."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

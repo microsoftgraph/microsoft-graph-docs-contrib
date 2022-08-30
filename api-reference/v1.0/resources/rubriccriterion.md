@@ -3,7 +3,7 @@ title: "rubricCriterion resource type"
 description: "A criterion of a rubric."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 

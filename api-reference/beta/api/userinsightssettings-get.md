@@ -3,7 +3,7 @@ title: "Get userInsightsSettings"
 description: "Retrieve the properties of a userInsightsSettings object."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
 ---
 
@@ -38,7 +38,7 @@ GET /users/{userId}/settings/itemInsights
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [userInsightsS
 
 ### Request
 
-The following is an example of the request to get user item insights and meeting hours insights settings.
+The following example shows a request to get user item insights and meeting hours insights settings.
 
 
 # [HTTP](#tab/http)

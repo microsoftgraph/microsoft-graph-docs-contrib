@@ -3,7 +3,7 @@ title: "Remove tokenIssuancePolicy"
 description: "Remove a tokenIssuancePolicy from an application."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -40,7 +40,7 @@ DELETE /applications/{id}/tokenIssuancePolicies/{id}/$ref
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

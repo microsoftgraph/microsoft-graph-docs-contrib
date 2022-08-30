@@ -2,7 +2,7 @@
 title: "Get recent user activities"
 description: " API. The service queries for the most recent historyItems, and then pull those related activities. Activities are sorted according to the most recent **lastModified** on the **historyItem**. This means that activities without **historyItems** won't be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 author: "ailae"
 doc_type: apiPageType
 ---

@@ -160,7 +160,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Turn pronouns on or off for your organization in the Microsoft 365 admin center](/microsoft-365/admin/add-users/turn-pronouns-on-or-off)
 - [Pronouns in Microsoft 365](https://support.microsoft.com/topic/232c3bfb-a947-4310-86db-b22d63663d85)

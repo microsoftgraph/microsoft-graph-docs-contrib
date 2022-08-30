@@ -3,7 +3,7 @@ title: "onAttributeCollectionStartCustomExtension resource type"
 description: "Used for creating a new custom extension based on the onAttributeCollectionStart event."
 author: "garrodonnell"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -65,7 +65,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 - [Custom authentication extensions for attribute collection start and submit events](/entra/identity-platform/custom-extension-attribute-collection)
 - [OnAttributeCollectionStart event reference](/entra/identity-platform/custom-extension-onattributecollectionstart-reference)

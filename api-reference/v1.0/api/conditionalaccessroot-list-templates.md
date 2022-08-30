@@ -4,7 +4,7 @@ description: "Get a list of the conditionalAccessTemplate objects and their prop
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ This method supports the `$filter` and `$select` OData query parameters to help 
 ## Request headers
 | Name            |Description|
 |:----------------|:----------|
-| Authorization   | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language | Language. Optional. |
 
 ## Request body
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List all conditional access policy templates
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -179,7 +179,7 @@ Content-Type: application/json
 ### Example 2: List name, description, id, scenarios of templates whose scenarios contain "secureFoundation"
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

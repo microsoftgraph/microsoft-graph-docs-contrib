@@ -4,14 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.teams("{id}")
-	.archive(TeamArchiveParameterSet
-		.newBuilder()
-		.withShouldSetSpoSiteReadOnlyForMembers(null)
-		.build())
-	.buildRequest()
-	.post();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.teams.item.archive.ArchivePostRequestBody archivePostRequestBody = new com.microsoft.graph.teams.item.archive.ArchivePostRequestBody();
+graphClient.teams().byTeamId("{team-id}").archive().post(archivePostRequestBody);
+
 
 ```

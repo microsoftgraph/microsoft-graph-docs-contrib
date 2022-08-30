@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Group group = new Group();
-group.description = "Contoso Life v2.0";
-group.displayName = "Contoso Life Renewed";
+group.setDescription("Contoso Life v2.0");
+group.setDisplayName("Contoso Life Renewed");
+Group result = graphClient.groups().byGroupId("{group-id}").patch(group);
 
-graphClient.groups("{id}")
-	.buildRequest()
-	.patch(group);
 
 ```

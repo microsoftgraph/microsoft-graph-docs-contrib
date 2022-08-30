@@ -2,6 +2,7 @@
 title: "Get transitiveReports for a user"
 description: "Get the count of transitive reports for a user."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -38,7 +39,7 @@ This method supports the `$filter` query parameter for only the **accountEnabled
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. Required. |
 
 ## Request body
@@ -53,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a count of trans
 
 ### Request
 
-Here's an example of the request. The `$count` query segment is required.
+The following example shows a request. The `$count` query segment is required.
 
 
 # [HTTP](#tab/http)
@@ -101,7 +102,7 @@ GET https://graph.microsoft.com/beta/users/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4/
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

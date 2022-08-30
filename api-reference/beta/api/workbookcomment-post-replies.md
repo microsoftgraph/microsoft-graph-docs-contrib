@@ -3,7 +3,7 @@ title: "Create workbookCommentReply"
 description: "Create a new workbookCommentReply."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "apiPageType"
 ---
 
@@ -35,7 +35,7 @@ POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

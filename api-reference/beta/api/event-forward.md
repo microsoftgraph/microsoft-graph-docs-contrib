@@ -3,7 +3,7 @@ title: "event: forward"
 description: "This action allows the organizer or attendee of a meeting event to forward the "
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action allows the organizer or attendee of a meeting [event](../resources/event.md) to forward the 
-meeting request to a new recipient. 
+This action allows the organizer or attendee of a meeting [event](../resources/event.md) to forward the
+meeting request to a new recipient.
 
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action 
-also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's 
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action
+also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's
 copy of the meeting event. This convenience is not available when forwarding from an Outlook.com account.
 
 
@@ -67,7 +67,7 @@ If successful, this method returns `202 Accepted` response code. It doesn't retu
 ## Example
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -82,12 +82,12 @@ Content-type: application/json
   "ToRecipients":[
       {
         "EmailAddress": {
-          "Address":"danas@contoso.onmicrosoft.com",
+          "Address":"danas@contoso.com",
           "Name":"Dana Swope"
         }
       }
      ],
-  "Comment": "Dana, hope you can make this meeting." 
+  "Comment": "Dana, hope you can make this meeting."
 }
 
 ```
@@ -127,7 +127,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

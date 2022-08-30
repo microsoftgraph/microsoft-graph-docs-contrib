@@ -4,7 +4,8 @@ description: "Change notifications enable applications to receive alerts when a 
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
-ms.prod: "change-notifications"
+ms.topic: concept-article
+ms.prod: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 12/27/2023
@@ -75,8 +76,8 @@ The following code samples are available on GitHub.
 - [Microsoft Graph Webhooks Sample for Java Spring](https://github.com/microsoftgraph/java-spring-webhooks-sample)
 
 
+## Related content
 
-## Deployment resources
 - [Rich notifications (notifications with resource data)](./change-notifications-with-resource-data.md)
 - [Lifecycle notifications](./change-notifications-lifecycle-events.md)
 - Tutorials
@@ -84,7 +85,6 @@ The following code samples are available on GitHub.
     - [Change notifications for Outlook resources](./outlook-change-notifications-overview.md)
     - [Change notifications for Microsoft Teams resources](./teams-change-notification-in-microsoft-teams-overview.md)
 
-<!-- ## See also -->
 
 [contact]: /graph/api/resources/contact
 [conversation]: /graph/api/resources/conversation

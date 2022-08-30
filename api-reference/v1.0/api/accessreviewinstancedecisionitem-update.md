@@ -3,7 +3,7 @@ title: "Update accessReviewInstanceDecisionItem"
 description: "Update an existing accessReviewInstanceDecisionItem object for which the calling user is the reviewer."
 ms.localizationpriority: medium
 author: "isabelleatmsft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 ## Request headers
 | Name         | Description |
 |:-------------|:------------|
-| Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body

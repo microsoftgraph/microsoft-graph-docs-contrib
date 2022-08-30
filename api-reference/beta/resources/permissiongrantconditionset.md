@@ -3,7 +3,7 @@ title: "permissionGrantConditionSet resource type"
 description: "Specifies a matching rule with conditions under which an event is included or excluded from a permission grant policy."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 

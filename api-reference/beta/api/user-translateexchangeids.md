@@ -3,7 +3,7 @@ title: "user: translateExchangeIds"
 description: "Translate identifiers of Outlook-related resources between formats."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Name | Value |
 |:-----|:------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

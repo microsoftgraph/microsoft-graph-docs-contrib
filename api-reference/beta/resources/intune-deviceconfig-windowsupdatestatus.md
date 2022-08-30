@@ -3,7 +3,7 @@ title: "windowsUpdateStatus enum type"
 description: "Windows update for business configuration device states"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

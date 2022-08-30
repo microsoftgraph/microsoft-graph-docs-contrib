@@ -4,23 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TenantCustomizedInformation tenantCustomizedInformation = new TenantCustomizedInformation();
-tenantCustomizedInformation.tenantId = "String";
-LinkedList<TenantContactInformation> contactsList = new LinkedList<TenantContactInformation>();
-TenantContactInformation contacts = new TenantContactInformation();
-contacts.name = "String";
-contacts.title = "String";
-contacts.email = "String";
-contacts.phone = "String";
-contacts.notes = "String";
-contactsList.add(contacts);
-tenantCustomizedInformation.contacts = contactsList;
-tenantCustomizedInformation.website = "String";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.tenantRelationships().managedTenants().tenantsCustomizedInformation("{tenantCustomizedInformationId}")
-	.buildRequest()
-	.patch(tenantCustomizedInformation);
+com.microsoft.graph.beta.models.managedtenants.TenantCustomizedInformation tenantCustomizedInformation = new com.microsoft.graph.beta.models.managedtenants.TenantCustomizedInformation();
+tenantCustomizedInformation.setOdataType("#microsoft.graph.managedTenants.tenantCustomizedInformation");
+tenantCustomizedInformation.setTenantId("String");
+LinkedList<com.microsoft.graph.beta.models.managedtenants.TenantContactInformation> contacts = new LinkedList<com.microsoft.graph.beta.models.managedtenants.TenantContactInformation>();
+com.microsoft.graph.beta.models.managedtenants.TenantContactInformation tenantContactInformation = new com.microsoft.graph.beta.models.managedtenants.TenantContactInformation();
+tenantContactInformation.setOdataType("microsoft.graph.managedTenants.tenantContactInformation");
+tenantContactInformation.setName("String");
+tenantContactInformation.setTitle("String");
+tenantContactInformation.setEmail("String");
+tenantContactInformation.setPhone("String");
+tenantContactInformation.setNotes("String");
+contacts.add(tenantContactInformation);
+tenantCustomizedInformation.setContacts(contacts);
+tenantCustomizedInformation.setWebsite("String");
+com.microsoft.graph.models.managedtenants.TenantCustomizedInformation result = graphClient.tenantRelationships().managedTenants().tenantsCustomizedInformation().byTenantCustomizedInformationId("{tenantCustomizedInformation-id}").patch(tenantCustomizedInformation);
+
 
 ```

@@ -3,7 +3,7 @@ title: "Get accessPackageCatalog"
 description: "Retrieve the properties and relationships of accesspackagecatalog object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Get accessPackageCatalog
@@ -40,7 +40,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

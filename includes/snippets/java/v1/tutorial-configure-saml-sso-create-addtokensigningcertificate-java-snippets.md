@@ -4,19 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String displayName = "CN=AWSContoso";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("01/25/2024 00:00:00");
+com.microsoft.graph.serviceprincipals.item.addtokensigningcertificate.AddTokenSigningCertificatePostRequestBody addTokenSigningCertificatePostRequestBody = new com.microsoft.graph.serviceprincipals.item.addtokensigningcertificate.AddTokenSigningCertificatePostRequestBody();
+addTokenSigningCertificatePostRequestBody.setDisplayName("CN=AWSContoso");
+OffsetDateTime endDateTime = OffsetDateTime.parse("2027-01-22T00:00:00Z");
+addTokenSigningCertificatePostRequestBody.setEndDateTime(endDateTime);
+SelfSignedCertificate result = graphClient.servicePrincipals().byServicePrincipalId("{servicePrincipal-id}").addTokenSigningCertificate().post(addTokenSigningCertificatePostRequestBody);
 
-graphClient.servicePrincipals("a750f6cf-2319-464a-bcc3-456926736a91")
-	.addTokenSigningCertificate(ServicePrincipalAddTokenSigningCertificateParameterSet
-		.newBuilder()
-		.withDisplayName(displayName)
-		.withEndDateTime(endDateTime)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

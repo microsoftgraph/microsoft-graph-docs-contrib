@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsUserActivityUserDetail"
 description: "Get details about Microsoft Teams user activity by user."
 ms.localizationpriority: high
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -48,7 +48,7 @@ In the request URL, provide one of the following parameters with a valid value.
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

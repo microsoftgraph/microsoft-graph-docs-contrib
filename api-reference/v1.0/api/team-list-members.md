@@ -3,7 +3,7 @@ title: "List members of team"
 description: "Get the conversationMembers of a team."
 author: "AkJo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -43,12 +43,12 @@ GET /teams/{team-id}/members
 ```
 
 ## Optional query parameters
-This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 objects respectively.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -131,7 +131,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Adele Vance",
             "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
-            "email": "AdeleV@M365x987948.OnMicrosoft.com"
+            "email": "AdeleV@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -141,7 +141,7 @@ Content-Type: application/json
             ],
             "displayName": "MOD Administrator",
             "userId": "598efcd4-e549-402a-9602-0b50201faebe",
-            "email": "admin@M365x987948.OnMicrosoft.com"
+            "email": "admin@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -149,7 +149,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Harry Johnson",
             "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
-            "email": "harry@M365x987948.OnMicrosoft.com"
+            "email": "harry@contoso.com"
         }
     ]
 }
@@ -232,7 +232,7 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Adele Vance",
             "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
-            "email": "AdeleV@M365x987948.OnMicrosoft.com"
+            "email": "AdeleV@contoso.com"
         }
     ]
 }
@@ -252,7 +252,7 @@ The following example shows a request to find the membership resources based on 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')
+GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@contoso.com')
 ```
 
 # [C#](#tab/csharp)
@@ -314,7 +314,7 @@ Content-Type: application/json
             ],
             "displayName": "MOD Administrator",
             "userId": "598efcd4-e549-402a-9602-0b50201faebe",
-            "email": "admin@M365x987948.OnMicrosoft.com"
+            "email": "admin@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -322,12 +322,12 @@ Content-Type: application/json
             "roles": [],
             "displayName": "Harry Johnson",
             "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
-            "email": "harry@M365x987948.OnMicrosoft.com"
+            "email": "harry@contoso.com"
         }
     ]
 }
 ```
 
-## See also
+## Related content
 
 - [List members in channel](channel-list-members.md)

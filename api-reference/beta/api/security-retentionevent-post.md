@@ -3,7 +3,7 @@ title: "Create retentionEvent"
 description: "Create a new retentionEvent object."
 author: "sseth" 
 ms.localizationpriority: medium
-ms.prod: "security" 
+ms.subservice: "security" 
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /security/triggers/retentionEvents
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

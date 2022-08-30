@@ -3,7 +3,7 @@ title: "List taughtClasses"
 description: "Get the educationClass resources from the taughtClasses navigation property."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ For more information on OData query options, see [OData query parameters](/graph
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

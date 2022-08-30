@@ -4,17 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ManagedDeviceMobileAppConfigurationUserStatus managedDeviceMobileAppConfigurationUserStatus = new ManagedDeviceMobileAppConfigurationUserStatus();
-managedDeviceMobileAppConfigurationUserStatus.userDisplayName = "User Display Name value";
-managedDeviceMobileAppConfigurationUserStatus.devicesCount = 12;
-managedDeviceMobileAppConfigurationUserStatus.status = ComplianceStatus.NOT_APPLICABLE;
-managedDeviceMobileAppConfigurationUserStatus.lastReportedDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T08:00:17.7769392+00:00");
-managedDeviceMobileAppConfigurationUserStatus.userPrincipalName = "User Principal Name value";
+managedDeviceMobileAppConfigurationUserStatus.setOdataType("#microsoft.graph.managedDeviceMobileAppConfigurationUserStatus");
+managedDeviceMobileAppConfigurationUserStatus.setUserDisplayName("User Display Name value");
+managedDeviceMobileAppConfigurationUserStatus.setDevicesCount(12);
+managedDeviceMobileAppConfigurationUserStatus.setStatus(ComplianceStatus.NotApplicable);
+OffsetDateTime lastReportedDateTime = OffsetDateTime.parse("2017-01-01T00:00:17.7769392-08:00");
+managedDeviceMobileAppConfigurationUserStatus.setLastReportedDateTime(lastReportedDateTime);
+managedDeviceMobileAppConfigurationUserStatus.setUserPrincipalName("User Principal Name value");
+ManagedDeviceMobileAppConfigurationUserStatus result = graphClient.deviceAppManagement().mobileAppConfigurations().byManagedDeviceMobileAppConfigurationId("{managedDeviceMobileAppConfiguration-id}").userStatuses().byManagedDeviceMobileAppConfigurationUserStatusId("{managedDeviceMobileAppConfigurationUserStatus-id}").patch(managedDeviceMobileAppConfigurationUserStatus);
 
-graphClient.deviceAppManagement().mobileAppConfigurations("{managedDeviceMobileAppConfigurationId}").userStatuses("{managedDeviceMobileAppConfigurationUserStatusId}")
-	.buildRequest()
-	.patch(managedDeviceMobileAppConfigurationUserStatus);
 
 ```

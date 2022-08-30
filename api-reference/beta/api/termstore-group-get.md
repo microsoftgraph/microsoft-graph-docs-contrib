@@ -3,7 +3,7 @@ title: "Get termStore group"
 description: "Read the properties and relationships of a group object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: taxonomy  
+ms.subservice: sharepoint  
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ GET /sites/{site-id}/termStore/groups/{group-id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

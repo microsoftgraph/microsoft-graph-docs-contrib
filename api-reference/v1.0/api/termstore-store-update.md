@@ -3,7 +3,7 @@ title: "Update store"
 description: "Update the properties of a store object."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ PATCH sites/{site-id}/termStore
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -43,19 +43,19 @@ The following table shows the properties that can be edited for the [store](../r
 
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultLanguageTag|String|Default language of the [microsoft.graph.termstore.store](../resources/termstore-store.md).|
-|languageTags|String collection|Available languages in the [microsoft.graph.termstore.store](../resources/termstore-store.md).|
+|defaultLanguageTag|String|Default language of the [store](../resources/termstore-store.md).|
+|languageTags|String collection|Available languages in the [store](../resources/termstore-store.md).|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.termStorestore](../resources/termstore-store.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.termStore.store](../resources/termstore-store.md) object in the response body.
 
 ## Examples
 
 ### Request
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,6 +108,7 @@ Content-Type: application/json
 ---
 
 ### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

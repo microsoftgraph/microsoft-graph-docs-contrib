@@ -1,9 +1,9 @@
 ---
 title: "Delete event"
 description: "Delete an event object."
-author: "Jordanndahl"
+author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ DELETE /groups/{id}/calendar/events/{id}
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

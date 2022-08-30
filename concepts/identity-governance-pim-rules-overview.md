@@ -1,12 +1,12 @@
 ---
 title: "Rules in PIM - mapping guide"
 description: "Learn how rules in PIM are structured in Microsoft Graph and how they map with the descriptions on the Microsoft Entra admin center."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
-ms.topic: conceptual
-ms.prod: "governance"
+ms.topic: concept-article
+ms.subservice: entra-id-governance
 ms.date: 06/08/2023
 #Customer intent: As a developer, I want to understand how to map PIM settings in the Microsoft Entra admin center to the corresponding rules in Microsoft Graph, so that I can configure and update the rules effectively.
 ---
@@ -78,15 +78,15 @@ The following image shows the notification role settings on the Microsoft Entra 
 |---|---|---|---|
 | 9 | Send notifications when members are assigned as eligible to this role: Role assignment alert | `Notification_Admin_Admin_Eligibility` / unifiedRoleManagementPolicyNotificationRule | Admin |
 | 10 | Send notifications when members are assigned as eligible to this role: Notification to the assigned user (assignee) | `Notification_Requestor_Admin_Eligibility` / unifiedRoleManagementPolicyNotificationRule | Assignee / Requestor |
-| 11 | Send notifications when members are assigned as eligible to this role: request to approve a role assignment renewal/extension | `Notification_Approver_Admin_Assignment` / unifiedRoleManagementPolicyNotificationRule | Approver |
+| 11 | Send notifications when members are assigned as eligible to this role: request to approve a role assignment renewal/extension | `Notification_Approver_Admin_Eligibility` / unifiedRoleManagementPolicyNotificationRule | Approver |
 | 12 | Send notifications when members are assigned as active to this role: Role assignment alert | `Notification_Admin_Admin_Assignment` / unifiedRoleManagementPolicyNotificationRule | Admin |
 | 13 | Send notifications when members are assigned as active to this role: Notification to the assigned user (assignee) | `Notification_Requestor_Admin_Assignment` / unifiedRoleManagementPolicyNotificationRule | Assignee / Requestor |
-| 14 | Send notifications when members are assigned as active to this role: Request to approve a role assignment renewal/extension | `Notification_Approver_Admin_Eligibility` / unifiedRoleManagementPolicyNotificationRule | Approver |
+| 14 | Send notifications when members are assigned as active to this role: Request to approve a role assignment renewal/extension | `Notification_Approver_Admin_Assignment` / unifiedRoleManagementPolicyNotificationRule | Approver |
 | 15 | Send notifications when eligible members activate this role: Role activation alert | `Notification_Admin_EndUser_Assignment` / unifiedRoleManagementPolicyNotificationRule | Admin |
 | 16 | Send notifications when eligible members activate this role: Notification to activated user (requestor) | `Notification_Requestor_EndUser_Assignment` / unifiedRoleManagementPolicyNotificationRule | Requestor |
 | 17 | Send notifications when eligible members activate this role: Request to approve an activation | `Notification_Approver_EndUser_Assignment` / unifiedRoleManagementPolicyNotificationRule | Approver |
 
-## See also
+## Related content
 
 + [Overview of role management through the privileged identity management (PIM) API](/graph/api/resources/privilegedidentitymanagementv3-overview)
 + [Use PIM APIs in Microsoft Graph to update rules](how-to-pim-update-rules.md)

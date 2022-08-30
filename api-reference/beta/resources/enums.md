@@ -1,9 +1,9 @@
 ---
 title: "Enum values"
-description: "Microsoft Graph enumeration values"
+description: "Microsoft Graph enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "non-product-specific"
+ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
 
@@ -112,7 +112,7 @@ Namespace: microsoft.graph
 | others             |
 | unknownFutureValue |
 
-### releaseType values 
+### releaseType values
 
 |Member|
 |:---|
@@ -162,45 +162,48 @@ Namespace: microsoft.graph
 
 ### recommendationType values
 
-| Member                      |
-| :-------------------------- |
-| adfsAppsMigration           |
-| enableDesktopSSO            |
-| enablePHS                   |
-| enableProvisioning          |
-| switchFromPerUserMFA        |
-| tenantMFA                   |
-| thirdPartyApps              |
-| turnOffPerUserMFA           |
-| useAuthenticatorApp         |
-| useMyApps                   |
-| staleApps                   |
-| staleAppCreds               |
-| applicationCredentialExpiry |
-| servicePrincipalKeyExpiry   |
-| adminMFAV2                  |
-| blockLegacyAuthentication   |
-| integratedApps              |
-| mfaRegistrationV2           |
-| pwagePolicyNew              |
-| passwordHashSync            |
-| oneAdmin                    |
-| roleOverlap                 |
-| selfServicePasswordReset    |
-| signinRiskPolicy            |
-| userRiskPolicy              |
-| verifyAppPublisher          |
-| privateLinkForAAD           |
-| appRoleAssignmentsGroups    |
-| appRoleAssignmentsUsers     |
-| managedIdentity             |
-| overprivilegedApps          |
-| unknownFutureValue          |
-| longLivedCredentials        |
-| aadConnectDeprecated        |
-| adalToMsalMigration         |
-| ownerlessApps               |
-| inactiveGuests              |
+| Member                              |
+| :---------------------------------- |
+| adfsAppsMigration                   |
+| enableDesktopSSO                    |
+| enablePHS                           |
+| enableProvisioning                  |
+| switchFromPerUserMFA                |
+| tenantMFA                           |
+| thirdPartyApps                      |
+| turnOffPerUserMFA                   |
+| useAuthenticatorApp                 |
+| useMyApps                           |
+| staleApps                           |
+| staleAppCreds                       |
+| applicationCredentialExpiry         |
+| servicePrincipalKeyExpiry           |
+| adminMFAV2                          |
+| blockLegacyAuthentication           |
+| integratedApps                      |
+| mfaRegistrationV2                   |
+| pwagePolicyNew                      |
+| passwordHashSync                    |
+| oneAdmin                            |
+| roleOverlap                         |
+| selfServicePasswordReset            |
+| signinRiskPolicy                    |
+| userRiskPolicy                      |
+| verifyAppPublisher                  |
+| privateLinkForAAD                   |
+| appRoleAssignmentsGroups            |
+| appRoleAssignmentsUsers             |
+| managedIdentity                     |
+| overprivilegedApps                  |
+| unknownFutureValue                  |
+| longLivedCredentials                |
+| aadConnectDeprecated                |
+| adalToMsalMigration                 |
+| ownerlessApps                       |
+| inactiveGuests                      |
+| aadGraphDeprecationApplication      |
+| aadGraphDeprecationServicePrincipal |
+| mfaServerDeprecation                |
 
 ### layoutTemplateType values
 
@@ -1295,6 +1298,9 @@ Namespace: microsoft.graph
 | adminConfirmedServicePrincipalCompromised |
 | adminDismissedAllRiskForServicePrincipal  |
 | m365DAdminDismissedDetection              |
+| userChangedPasswordOnPremises             |
+| adminDismissedRiskForSignIn               |
+| adminConfirmedAccountSafe                 |
 
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
@@ -1435,6 +1441,7 @@ Namespace: microsoft.graph
 | published          |
 | assigned           |
 | unknownFutureValue |
+| inactive           |
 
 ### educationSubmissionStatus values
 
@@ -1812,6 +1819,14 @@ Namespace: microsoft.graph
 |manager
 |system
 |unknownFutureValue
+
+### windowsSettingType values 
+
+| Member             |
+| :----------------- |
+| roaming            |
+| backup             |
+| unknownFutureValue |
 
 ### workforceIntegrationEncryptionProtocol values
 
@@ -2669,7 +2684,7 @@ Possible values for user account types (group membership), per Windows definitio
 | :-------------------------------- | :-------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | None                              | 0         | User isn't allowed to override the message. User isn't allowed to report a message as false positive if policyTip isn't provided. In all other scenarios, user can report a message as false positive.                                                             |
 | AllowFalsePositiveOverride        | 1         | User isn't allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
-| AllowOverrideWithoutJustification | 2         | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`.                                                                                                                        |
+| AllowOverrideWithoutJustification | 2         | User is allowed to override the block and send the message. Justification text isn't required. Exclusive to `AllowOverrideWithJustification`.                                                                                                                        |
 | AllowOverrideWithJustification    | 4         | User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.                                                                                                                         |
 
 ### entityType values
@@ -2916,10 +2931,10 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### threatExpectedAssessment values
 
-| Member  | Value | Description                       |
-| :------ | :---- | :-------------------------------- |
-| block   | 1     | The threat should be blocked.     |
-| unblock | 2     | The threat should not be blocked. |
+| Member  | Value | Description                      |
+| :------ | :---- | :------------------------------- |
+| block   | 1     | The threat should be blocked.    |
+| unblock | 2     | The threat shouldn't be blocked. |
 
 ### threatCategory values
 
@@ -3049,7 +3064,7 @@ Possible values for user account types (group membership), per Windows definitio
 | Member             | Value | Description                                                                                                                                                                                                      |
 | :----------------- | :---- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | configured         | 0     | Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.                                                        |
-| proposed           | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`. |
+| proposed           | 1     | Connected Organizations that are automatically created by the system have this state value. They aren't included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`. |
 | unknownFutureValue | 2     | A sentinel member.                                                                                                                                                                                               |
 
 ### identityUserFlowAttributeDataType values
@@ -3077,6 +3092,8 @@ Possible values for user account types (group membership), per Windows definitio
 | Member
 |:-------
 | low
+| medium
+| high
 
 ### permissionType values
 
@@ -3110,13 +3127,14 @@ Possible values for user account types (group membership), per Windows definitio
 | :------ |
 | custom  |
 | gallery |
+| unknownFutureValue |
 
 ### chatType values
 
 | Member             | Value | Description                                                                                                                                                        |
 | :----------------- | :---- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| oneOnOne           | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat, the member cannot be removed / added.                                       |
-| group              | 1     | Indicates that the chat is a Group chat. The roster size (of at least 2 person) can be updated for this type of chat. The members can be removed / added later on. |
+| oneOnOne           | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat, the member can't be removed / added.                                       |
+| group              | 1     | Indicates that the chat is a Group chat. The roster size (of at least two person) can be updated for this type of chat. The members can be removed / added later on. |
 | meeting            | 2     | Indicates that the chat is a Meeting chat, which is created as a side effect of creation of an OnlineMeeting.                                                      |
 | unknownFutureValue | 3     | Sentinel value to indicate future values.                                                                                                                          |
 
@@ -3637,26 +3655,26 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### teamworkDeviceActivityState values
 
-| Member             | Value | Description                                       |
-| :----------------- | :---- | :------------------------------------------------ |
-| unknown            | 0     | Unknown state.                                    |
-| busy               | 1     | The device is busy.                               |
-| idle               | 2     | The device is idle.                               |
-| unavailable        | 3     | The device is unavailable.                        |
-| unknownFutureValue | 4     | Evolvable enumeration sentinel value. Do not use. |
+| Member             | Value | Description                                      |
+| :----------------- | :---- | :----------------------------------------------- |
+| unknown            | 0     | Unknown state.                                   |
+| busy               | 1     | The device is busy.                              |
+| idle               | 2     | The device is idle.                              |
+| unavailable        | 3     | The device is unavailable.                       |
+| unknownFutureValue | 4     | Evolvable enumeration sentinel value. Don't use. |
 
 ### teamworkDeviceOperationType values
 
-| Member                            | Value | Description                                       |
-| :-------------------------------- | :---- | :------------------------------------------------ |
-| deviceRestart                     | 0     | Restart a device.                                 |
-| configUpdate                      | 1     | Update the device configuration.                  |
-| deviceDiagnostics                 | 2     | Get the device logs.                              |
-| softwareUpdate                    | 3     | Update a software on the device.                  |
-| deviceManagementAgentConfigUpdate | 4     | Update the device agent configuration.            |
-| remoteLogin                       | 5     | Device remote login.                              |
-| remoteLogout                      | 6     | Device remote logout.                             |
-| unknownFutureValue                | 7     | Evolvable enumeration sentinel value. Do not use. |
+| Member                            | Value | Description                                      |
+| :-------------------------------- | :---- | :----------------------------------------------- |
+| deviceRestart                     | 0     | Restart a device.                                |
+| configUpdate                      | 1     | Update the device configuration.                 |
+| deviceDiagnostics                 | 2     | Get the device logs.                             |
+| softwareUpdate                    | 3     | Update a software on the device.                 |
+| deviceManagementAgentConfigUpdate | 4     | Update the device agent configuration.           |
+| remoteLogin                       | 5     | Device remote login.                             |
+| remoteLogout                      | 6     | Device remote logout.                            |
+| unknownFutureValue                | 7     | Evolvable enumeration sentinel value. Don't use. |
 
 ### teamworkSoftwareFreshness values
 
@@ -3665,7 +3683,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknown            | 0     | Unknown value.                                                                |
 | latest             | 1     | Indicates whether a device component runs the latest version of the software. |
 | updateAvailable    | 2     | Indicates that a software update is available for a device component.         |
-| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Do not use.                             |
+| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Don't use.                              |
 
 ### teamworkSoftwareType values
 
@@ -3688,7 +3706,7 @@ Possible values for user account types (group membership), per Windows definitio
 | teamsDefaultAndSkype | 2     | Supports both `Skype` and `Teams`. Default is `Teams`. |
 | skypeOnly            | 3     | Supports only `Skype`.                                 |
 | teamsOnly            | 4     | Supports only `Teams`.                                 |
-| unknownFutureValue   | 5     | Evolvable enumeration sentinel value. Do not use.      |
+| unknownFutureValue   | 5     | Evolvable enumeration sentinel value. Don't use.       |
 
 ### longRunningOperationStatus values
 
@@ -4278,6 +4296,18 @@ Possible values for user account types (group membership), per Windows definitio
 |tenant|
 |unknownFutureValue|
 
+### rootDomains values
+
+| Member|
+|:---|
+|none|
+|all|
+|allFederated|
+|allManaged|
+|enumerated|
+|allManagedAndEnumeratedFederated|
+|unknownFutureValue|
+
 ### allowedRolePrincipalTypes values
 
 |Member|
@@ -4591,4 +4621,48 @@ Possible values for user account types (group membership), per Windows definitio
 |enabled|
 |notConfigured|
 |noRecentDataCollected|
+|unknownFutureValue|
+
+### devicePlatformType values
+
+| Member             |
+|:-------------------|
+| android            |
+| androidForWork     |
+| iOS                |
+| macOS              |
+| windowsPhone81     |
+| windows81AndLater  |
+| windows10AndLater  |
+| androidWorkProfile |
+| unknown            |
+| androidAOSP        |
+| androidMobileApplicationManagement|
+| iOSMobileApplicationManagement|
+| unknownFutureValue|
+
+### bookingPageAccessControl values 
+
+|Member|
+|:---|
+|unrestricted|
+|restrictedToOrganization|
+|unknownFutureValue|
+
+### bookingsServiceAvailabilityType values 
+
+|Member|
+|:---|
+|bookWhenStaffAreFree|
+|notBookable|
+|customWeeklyHours|
+|unknownFutureValue|
+
+### conditionalAccessTransferMethods values
+
+|Member|
+|:---|
+|none|
+|deviceCodeFlow|
+|authenticationTransfer|
 |unknownFutureValue|

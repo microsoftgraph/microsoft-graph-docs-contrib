@@ -4,7 +4,7 @@ title: "contentType: addCopy"
 description: "Add a copy of a site content type to a list."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentType: addCopy
@@ -40,7 +40,7 @@ POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.teams.item.schedule.timesOff.times_off_request_builder import TimesOffRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

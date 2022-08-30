@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a **riskyUser** objec
 ms.localizationpriority: medium
 author: "tracyshi"
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 # Get riskyUser
 
@@ -38,7 +38,7 @@ This method does not support any [OData query parameters](/graph/query-parameter
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [riskyUser](..
 ## Examples
 ### Example 1: Get a risky user
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,7 +121,7 @@ Content-type: application/json
 ```
 ### Example 2: Get risky users
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -167,7 +167,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

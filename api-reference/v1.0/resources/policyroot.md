@@ -3,7 +3,7 @@ title: "policyRoot resource type"
 description: "Resource type exposing navigation properties for the policies singleton."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

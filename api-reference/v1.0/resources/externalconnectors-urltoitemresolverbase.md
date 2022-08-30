@@ -3,7 +3,7 @@ title: "urlToItemResolverBase resource type"
 description: "Defines the rules for resolving a given URL to a connector item."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 Types that inherit from the [urlToItemResolverBase](externalconnectors-urlToItemResolverBase.md) abstract base type.
 - [itemIdResolver](externalconnectors-itemidresolver.md)

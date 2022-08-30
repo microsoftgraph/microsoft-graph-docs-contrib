@@ -3,7 +3,7 @@ title: "monitoringSettings resource type"
 description: "Settings controlling automated monitoring and response in a deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 

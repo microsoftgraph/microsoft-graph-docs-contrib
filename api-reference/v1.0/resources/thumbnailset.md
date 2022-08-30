@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: ThumbnailSet
 ms.localizationpriority: medium
 description: "The ThumbnailSet resource is a keyed collection of thumbnail resources."
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

@@ -1,16 +1,19 @@
 ---
-title: "List monthly activeUsersBreakdown"
+title: "List monthly activeUsersBreakdown (deprecated)"
 description: "Get a list of monthly activeUsersBreakdown objects on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
-# List monthly activeUsersBreakdown
+# List monthly activeUsersBreakdown (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and will stop returning data on March 9, 2024. Use the [List monthly activeUsers](../api/monthlyuserinsightmetricsroot-list-activeusers.md) API instead.
 
 Get a list of monthly [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.
 
@@ -25,7 +28,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-ciam-user-insights-apis](../includes/rbac-for-apis/rbac-ciam-user-insights-apis.md)]
 
 ## HTTP request
-
 <!-- {
   "blockType": "ignored"
 }
@@ -40,7 +42,7 @@ This method supports the `$filter` OData query parameter to help customize the r
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -3,7 +3,7 @@ title: "siteSecurityLevel enum type"
 description: "Possible values for site security level."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

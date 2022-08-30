@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphbookingbusinesses "github.com/microsoftgraph/msgraph-beta-sdk-go/bookingbusinesses"
+	  graphsolutions "github.com/microsoftgraph/msgraph-beta-sdk-go/solutions"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
@@ -16,7 +16,7 @@ import (
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphbookingbusinesses.NewGetStaffAvailabilityPostRequestBody()
+requestBody := graphsolutions.NewGetStaffAvailabilityPostRequestBody()
 staffIds := []string {
 	"311a5454-08b2-4560-ba1c-f715e938cb79",
 }
@@ -34,7 +34,7 @@ timeZone := "Pacific Standard Time"
 endDateTime.SetTimeZone(&timeZone) 
 requestBody.SetEndDateTime(endDateTime)
 
-getStaffAvailability, err := graphClient.BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").GetStaffAvailability().Post(context.Background(), requestBody, nil)
+getStaffAvailability, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").GetStaffAvailability().PostAsGetStaffAvailabilityPostResponse(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,9 +1,9 @@
 ---
 title: "certificateStatus enum type"
-description: ""
+description: "Intune Apps Certificatestatus Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

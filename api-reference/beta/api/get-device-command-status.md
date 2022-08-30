@@ -4,7 +4,7 @@ description: "Get the status of a command on a device. For the  full list of sta
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ailae"
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # Get device command status (deprecated)
@@ -39,7 +39,7 @@ GET me/devices/{id}/commands/{id}
 
 | Header |Value
 |:----|:------|
-|Authorization| Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept | application/json |
 
 ## Response
@@ -84,7 +84,7 @@ HTTP/1.1 200 OK
 
 ## Example
 
-In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call to `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
+In this example, you need the ID of the device and the ID of the command that was issued to the device. The device ID is returned when issuing a GET call to `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
 
 #### Request
 
@@ -156,7 +156,7 @@ GET me/devices/{id}/commands/{id}/responsePayload
 
 | Header |Value
 |:----|:------|
-|Authorization| Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept | application/json |
 
 ### Response
@@ -178,7 +178,7 @@ HTTP/1.1 200 OK
 
 ### Example
 
-In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call on `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
+In this example, you need the ID of the device and the ID of the command that was issued to the device. The device ID is returned when issuing a GET call on `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
 
 #### Request
 

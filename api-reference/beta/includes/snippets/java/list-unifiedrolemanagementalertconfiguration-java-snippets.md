@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UnifiedRoleManagementAlertConfigurationCollectionPage alertConfigurations = graphClient.identityGovernance().roleManagementAlerts().alertConfigurations()
-	.buildRequest()
-	.filter("scopeId eq '/' and scopeType eq 'DirectoryRole'")
-	.expand("alertDefinition")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UnifiedRoleManagementAlertConfigurationCollectionResponse result = graphClient.identityGovernance().roleManagementAlerts().alertConfigurations().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "scopeId eq '/' and scopeType eq 'DirectoryRole'";
+	requestConfiguration.queryParameters.expand = new String []{"alertDefinition"};
+});
+
 
 ```

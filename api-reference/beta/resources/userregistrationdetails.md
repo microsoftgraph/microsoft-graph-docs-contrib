@@ -3,7 +3,7 @@ title: "userRegistrationDetails resource type"
 description: "Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of. (For example, multifactor authentication, self-service password reset, and passwordless authentication.)"
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of. (For example, multifactor authentication, self-service password reset, and passwordless authentication.)
+Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of. For example, multifactor authentication, self-service password reset, and passwordless authentication. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |defaultMfaMethod|defaultMfaMethodType|The method the user or admin selected as default for performing multifactor authentication for the user. The possible values are: `none`, `mobilePhone`, `alternateMobilePhone`, `officePhone`, `microsoftAuthenticatorPush`, `softwareOneTimePasscode`, `unknownFutureValue`.|
 |id|String|User object identifier in Microsoft Entra ID. Inherited from [entity](../resources/entity.md).|
-|isAdmin|Boolean|Indicates whether the user has an admin role in the tenant. This value can be used to check the authentication methods that privileged accounts are registered for and capable of.|
+|isAdmin|Boolean|Indicates whether the user has an [admin role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) in the tenant. This value can be used to check the authentication methods that privileged accounts are registered for and capable of.|
 |isMfaCapable|Boolean|Indicates whether the user has registered a strong authentication method for multifactor authentication. The method must be allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md). Supports `$filter` (`eq`).|
 |isMfaRegistered|Boolean|Indicates whether the user has registered a strong authentication method for multifactor authentication. The method may not necessarily be allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md). Supports `$filter` (`eq`).|
 |isPasswordlessCapable|Boolean|Indicates whether the user has registered a passwordless strong authentication method (including FIDO2, Windows Hello for Business, and Microsoft Authenticator (Passwordless)) that is allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md). Supports `$filter` (`eq`).|
