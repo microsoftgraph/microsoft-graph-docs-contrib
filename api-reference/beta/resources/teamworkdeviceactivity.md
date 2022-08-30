@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get teamworkDeviceActivity](../api/teamworkdeviceactivity-get.md)|[teamworkDeviceActivity](../resources/teamworkdeviceactivity.md)|Read the properties and relationships of a [teamworkDeviceActivity](../resources/teamworkdeviceactivity.md) object.|
+|[Get](../api/teamworkdeviceactivity-get.md)|[teamworkDeviceActivity](../resources/teamworkdeviceactivity.md)|Read the properties and relationships of a [teamworkDeviceActivity](../resources/teamworkdeviceactivity.md) object.|
 
 ## Properties
 |Property|Type|Description|

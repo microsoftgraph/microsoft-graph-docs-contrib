@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -263,6 +263,48 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-03-07T04:00:25.443567Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+          "ApiChange": "Member",
+          "ChangedApiName": "phish",
+          "ChangeType": "Change",
+          "Description": "Changed the `phishing` member to `phish` in the **threatType** enumeration.",
+          "Target": "threatType"
+        },
+        {
+          "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+          "ApiChange": "Property",
+          "ChangedApiName": "recipientEmailAddress",
+          "ChangeType": "Change",
+          "Description": "Changed the **recipientEmailAddress** property to `**recipientEmailAddresses**` in the [analyzedEmail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmail?view=graph-rest-beta) resource.",
+          "Target": "analyzedEmail"
+        },
+        {
+          "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+          "ApiChange": "Property",
+          "ChangedApiName": "threatType",
+          "ChangeType": "Change",
+          "Description": "Changed the **threatType** property to `**threatTypes**` in the [analyzedEmail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmail?view=graph-rest-beta) resource.",
+          "Target": "analyzedEmail"
+        },
+        {
+          "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+          "ApiChange": "Property",
+          "ChangedApiName": "approverUpn",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **approverUpn** property from the [remediate](https://learn.microsoft.com/en-us/graph/api/security-analyzedEmail-remediate?view=graph-rest-beta) method.",
+          "Target": "analyzedEmail-remediate"
+        }
+      ],
+      "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-03T08:00:08.5523362Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     }

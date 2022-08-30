@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
 ms.topic: concept-article
-ms.subservice: entra-applications
+ms.subservice: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 08/22/2023

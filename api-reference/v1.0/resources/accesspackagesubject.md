@@ -33,7 +33,7 @@ None.
 |connectedOrganization|[connectedOrganization](connectedorganization.md)|The connected organization of the subject. Read-only. Nullable.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

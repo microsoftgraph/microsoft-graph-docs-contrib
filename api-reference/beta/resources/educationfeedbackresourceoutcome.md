@@ -21,8 +21,8 @@ Inherits from [educationOutcome](../resources/educationoutcome.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create educationFeedbackResourceOutcome](../api/educationfeedbackresourceoutcome-post-outcomes.md) | [educationOutcome](../resources/educationoutcome.md) | Create a new [feedback resource](../resources/educationfeedbackresourceoutcome.md) for a submission. |
-| [Delete educationFeedbackResourceOutcome](../api/educationfeedbackresourceoutcome-delete.md) | None | Delete a [feedback resource](../resources/educationfeedbackresourceoutcome.md) from a submission. |
+| [Add submission feedback resource outcome](../api/educationfeedbackresourceoutcome-post-outcomes.md) | [educationOutcome](../resources/educationoutcome.md) | Create a new [feedback resource](../resources/educationfeedbackresourceoutcome.md) for a submission. |
+| [Delete feedback resource outcome](../api/educationfeedbackresourceoutcome-delete.md) | None | Delete a [feedback resource](../resources/educationfeedbackresourceoutcome.md) from a submission. |
 
 ## Properties
 

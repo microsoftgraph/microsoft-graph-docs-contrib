@@ -10,8 +10,6 @@ ms.date: 07/30/2023
 
 # Multitenant organization API overview
 
-Namespace: microsoft.graph
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The multitenant organization feature allows you to define an organization with more than one instance of Microsoft Entra ID. A multitenant organization enables multiple tenants to collaborate like a single entity.
@@ -38,7 +36,7 @@ Also, at the time of joining, multitenant organization tenants can have a defaul
 
 If you need to increase these limits, you can submit a support request using the Azure portal or Microsoft Entra admin center. In your request, include the tenant ID of one owner tenant and a list of all tenant IDs that are intended to be part of the finalized multitenant organization.
 
-## Next steps
+## Related content
 
 + [What is a multitenant organization in Microsoft Entra ID?](/azure/active-directory/multi-tenant-organizations/overview)
 + [multiTenantOrganization resource type](../resources/multitenantorganization.md)

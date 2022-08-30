@@ -4,7 +4,7 @@ description: "The current user settings for content discovery. "
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
 ---
 
@@ -33,9 +33,9 @@ This resource supports:
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get user settings](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
-|[Update user settings](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
-|[List Windows settings](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
+|[Get settings](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
+|[Update settings](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
+|[List](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
 
 ## Properties
 
@@ -48,7 +48,7 @@ This resource supports:
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userSettings"

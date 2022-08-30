@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Create a new [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

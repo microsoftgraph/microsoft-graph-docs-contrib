@@ -25,7 +25,7 @@ The recurrence pattern and range. This shared object is used to define the recur
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

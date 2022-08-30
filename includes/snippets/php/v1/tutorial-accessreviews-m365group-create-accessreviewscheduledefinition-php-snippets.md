@@ -5,6 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AccessReviewScheduleDefinition;
+use Microsoft\Graph\Generated\Models\AccessReviewQueryScope;
+use Microsoft\Graph\Generated\Models\AccessReviewReviewerScope;
+use Microsoft\Graph\Generated\Models\AccessReviewScheduleSettings;
+use Microsoft\Graph\Generated\Models\PatternedRecurrence;
+use Microsoft\Graph\Generated\Models\RecurrencePattern;
+use Microsoft\Graph\Generated\Models\Type;
+use Microsoft\Graph\Generated\Models\DayOfWeek;
+use Microsoft\Graph\Generated\Models\FirstDayOfWeek;
+use Microsoft\Graph\Generated\Models\Index;
+use Microsoft\Graph\Generated\Models\RecurrenceRange;
+use Microsoft\Kiota\Abstractions\Types\Date;
+use Microsoft\Graph\Generated\Models\AccessReviewApplyAction;
+use Microsoft\Graph\Generated\Models\RemoveAccessApplyAction;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

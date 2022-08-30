@@ -5,7 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.users.item.contactFolders.item.contacts.delta.delta_request_builder import DeltaRequestBuilder
+from msgraph.generated.users.item.contact_folders.item.contacts.delta.delta_request_builder import DeltaRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = DeltaRequestBuilder.DeltaRequestBuilderGetQueryParameters(
 		select = ["displayName"],
 )
 
-request_configuration = DeltaRequestBuilder.DeltaRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 request_configuration.headers.add("Prefer", "odata.maxpagesize=2")

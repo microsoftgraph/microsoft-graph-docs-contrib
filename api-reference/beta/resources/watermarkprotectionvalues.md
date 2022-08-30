@@ -26,7 +26,7 @@ These flags indicate that a watermark is enabled for this particular meeting. An
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

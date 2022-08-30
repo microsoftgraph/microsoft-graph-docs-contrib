@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Communications\Calls\Item\Participants\Item\StartHoldMusic\StartHoldMusicPostRequestBody
+use Microsoft\Graph\Beta\Generated\Models\MediaPrompt;
+use Microsoft\Graph\Beta\Generated\Models\MediaInfo;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

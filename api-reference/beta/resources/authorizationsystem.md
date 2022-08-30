@@ -4,7 +4,7 @@ description: "Represents a Microsoft Azure subscription, Amazon Web Services (AW
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -29,8 +29,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List authorizationSystems](../api/externalconnectors-external-list-authorizationsystems.md)|[authorizationSystem](../resources/authorizationsystem.md) collection|Get a list of the [authorizationSystem](../resources/authorizationsystem.md) objects and their properties.|
-|[Get authorizationSystem](../api/authorizationsystem-get.md)|[authorizationSystem](../resources/authorizationsystem.md)|Read the properties and relationships of an [authorizationSystem](../resources/authorizationsystem.md) object.|
+|[List](../api/externalconnectors-external-list-authorizationsystems.md)|[authorizationSystem](../resources/authorizationsystem.md) collection|Get a list of the [authorizationSystem](../resources/authorizationsystem.md) objects and their properties.|
+|[Get](../api/authorizationsystem-get.md)|[authorizationSystem](../resources/authorizationsystem.md)|Read the properties and relationships of an [authorizationSystem](../resources/authorizationsystem.md) object.|
 
 ## Properties
 |Property|Type|Description|

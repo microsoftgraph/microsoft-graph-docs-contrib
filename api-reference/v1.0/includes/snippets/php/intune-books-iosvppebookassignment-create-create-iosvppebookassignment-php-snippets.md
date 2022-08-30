@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\IosVppEBookAssignment;
+use Microsoft\Graph\Generated\Models\DeviceAndAppManagementAssignmentTarget;
+use Microsoft\Graph\Generated\Models\InstallIntent;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

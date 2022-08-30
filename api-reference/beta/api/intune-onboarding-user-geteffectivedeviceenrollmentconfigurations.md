@@ -47,7 +47,7 @@ GET /users/{usersId}/getEffectiveDeviceEnrollmentConfigurations
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) collection in the response body.
 
 ## Example
 

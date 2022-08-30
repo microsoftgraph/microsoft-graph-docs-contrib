@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AccessReview;
+use Microsoft\Graph\Beta\Generated\Models\Identity;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewReviewer;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewSettings;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewRecurrenceSettings;
+use Microsoft\Graph\Beta\Generated\Models\AutoReviewSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -26,13 +26,12 @@ Represents a previous version of an item or entity.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.baseItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
 
 ```json
 {
-  "content": { "@odata.type": "Edm.Stream" },
   "id": "String (identifier)",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "String (timestamp)",

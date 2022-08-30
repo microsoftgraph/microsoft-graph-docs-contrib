@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.devices.item.device_item_request_builder import DeviceItemRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.devices.item.device_item_request_builder import DeviceItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = DeviceItemRequestBuilder.DeviceItemRequestBuilderGetQueryParamete
 		select = ["id","extensionAttributes"],
 )
 
-request_configuration = DeviceItemRequestBuilder.DeviceItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

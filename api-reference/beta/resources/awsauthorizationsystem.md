@@ -4,7 +4,7 @@ description: "Represents an AWS authorization system onboarded to Permissions Ma
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsAuthorizationSystems](../api/awsauthorizationsystem-list.md)|[awsAuthorizationSystem](../resources/awsauthorizationsystem.md) collection|Get a list of the [awsAuthorizationSystem](../resources/awsauthorizationsystem.md) objects and their properties.|
+|[List](../api/awsauthorizationsystem-list.md)|[awsAuthorizationSystem](../resources/awsauthorizationsystem.md) collection|Get a list of the [awsAuthorizationSystem](../resources/awsauthorizationsystem.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|

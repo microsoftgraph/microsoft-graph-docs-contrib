@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\Item\GetMailTips\GetMailTipsPostRequestBody
+use Microsoft\Graph\Generated\Models\MailTipsOptions;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

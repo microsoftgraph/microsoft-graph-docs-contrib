@@ -23,7 +23,7 @@ Represents a sensitivity label assigned to a Microsoft 365 group. Sensitivity la
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

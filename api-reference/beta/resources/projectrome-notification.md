@@ -27,7 +27,7 @@ When a user acts on a visual notification, the app client can then use the clien
 
 | Method                                                   | Return Type                                 | Description                     |
 | :------------------------------------------------------- | :------------------------------------------ | :------------------------------ |
-| [Create notification](../api/user-post-notifications.md) | [notification](projectrome-notification.md) | Create and send a notification. |
+| [Create and send a notification (deprecated)](../api/user-post-notifications.md) | [notification](projectrome-notification.md) | Create and send a notification. |
 
 ## Properties
 
@@ -49,7 +49,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -63,7 +63,7 @@ Here's a JSON representation of the resource.
 ```json
 {
   "targetHostName": "String",
-  "appNotificationid": "String (identifier)",
+  "appNotificationId": "String (identifier)",
   "groupName": "String", 
   "targetPolicy": {"@odata.type": "microsoft.graph.targetPolicyEndpoints"},
   "payload": {"@odata.type": "microsoft.graph.payloadTypes"},

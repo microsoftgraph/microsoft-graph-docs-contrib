@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta security triggers retention-events create --body '{\
   "@odata.type": "#microsoft.graph.security.retentionEvent",\
   "displayName": "String",\
   "description": "String",\
   "eventQueries": [\
     {\
-      "@odata.type": "microsoft.graph.security.eventQueries"\
+      "@odata.type": "microsoft.graph.security.eventQuery"\
     }\
   ],\
   "eventTriggerDateTime": "String (timestamp)",\

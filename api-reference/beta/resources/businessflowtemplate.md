@@ -24,7 +24,7 @@ The business flow template objects are automatically generated when the global a
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List businessFlowTemplates](../api/businessflowtemplate-list.md) | [businessFlowTemplate](businessflowtemplate.md) collection| Get the business flow templates appropriate to access reviews.|
+|[List](../api/businessflowtemplate-list.md) | [businessFlowTemplate](businessflowtemplate.md) collection| Get the business flow templates appropriate to access reviews.|
 
 ## Properties
 | Property       | Type    |Description|
@@ -46,7 +46,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

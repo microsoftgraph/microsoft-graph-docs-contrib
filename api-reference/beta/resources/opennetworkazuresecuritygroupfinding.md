@@ -4,7 +4,7 @@ description: "View Azure open security groups."
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List openNetworkAzureSecurityGroupFinding objects](../api/opennetworkazuresecuritygroupfinding-list.md)|[openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md) collection|Get a list of the [openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md) objects and their properties.|
-|[Get openNetworkAzureSecurityGroupFinding](../api/opennetworkazuresecuritygroupfinding-get.md)|[openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md)|Read the properties and relationships of an [openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md) object.|
+|[List](../api/opennetworkazuresecuritygroupfinding-list.md)|[openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md) collection|Get a list of the [openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md) objects and their properties.|
+|[Get](../api/opennetworkazuresecuritygroupfinding-get.md)|[openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md)|Read the properties and relationships of an [openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md) object.|
 
 ## Properties
 |Property|Type|Description|

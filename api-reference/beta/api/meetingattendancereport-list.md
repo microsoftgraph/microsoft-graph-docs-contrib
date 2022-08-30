@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md). Each time an online meeting ends, an attendance report is generated for that session.
+Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md). Each time an online meeting or a virtual event ends, an attendance report is generated for that session.
 
 > [!WARNING]
 >
@@ -39,7 +39,7 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 ```
 
-To get all attendance reports for a webinar session:
+To get all attendance reports for a webinar session with delegated and app permission:
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports

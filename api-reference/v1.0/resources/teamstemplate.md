@@ -23,6 +23,7 @@ A team template is a blueprint for creating a [team](../resources/team.md) in Mi
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamsTemplate",
   "baseType": "microsoft.graph.entity"
 }-->
