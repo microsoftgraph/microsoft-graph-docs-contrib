@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The **groupPeerOutlierRecommendationInsightSettings** represents the group peer outlier insights that aid reviewers to make decisions for an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) object. Azure AD assesses the access that the user's peers have and provides _approve_ or _deny_ recommendation insights to the approvers.
+Represents the group peer outlier insights that help reviewers make decisions for an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) object. Azure AD assesses the access that the user's peers have and provides _approve_ or _deny_ recommendation insights to the approvers.
 
 Inherits from [accessReviewRecommendationInsightSetting](accessReviewRecommendationInsightSetting.md).
 
