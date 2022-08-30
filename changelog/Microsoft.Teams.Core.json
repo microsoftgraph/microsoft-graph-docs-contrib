@@ -5541,6 +5541,48 @@
       "CreatedDateTime": "2022-08-22T15:04:69.427Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "490c5bb1-a4a4-4fff-a6f7-7da31f3bda5f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pinnedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the **pinnedMessages** relationship to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "490c5bb1-a4a4-4fff-a6f7-7da31f3bda5f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pinnedChatMessageInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [pinnedChatMessageInfo](https://docs.microsoft.com/en-us/graph/api/resources/pinnedChatMessageInfo?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "pinnedChatMessageInfo"
+        },
+        {
+          "Id": "490c5bb1-a4a4-4fff-a6f7-7da31f3bda5f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "messagePinnedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [messagePinnedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-1.0) resource type.",
+          "Target": "messagePinnedEventMessageDetail"
+        },
+        {
+          "Id": "490c5bb1-a4a4-4fff-a6f7-7da31f3bda5f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "messageUnpinnedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [messageUnpinnedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-1.0) resource type.",
+          "Target": "messageUnpinnedEventMessageDetail"
+        }
+      ],
+      "Id": "490c5bb1-a4a4-4fff-a6f7-7da31f3bda5f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-29T15:04:69.427Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
