@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 | availability       | String   | The base presence information.                                                                                                                                                                                                                 |
 | expirationDuration | Duration | The expiration of the app presence session represented in ISO 8601 format for durations.<br/>If not provided, a default expiration will be applied:<br/>- `DoNotDisturb` or `Busy`: Expiration in 1 day<br/>- All others: Expiration in 7 days |
 
-The following table shows the supported combinations of **availability** and **activity**.
+The following table lists supported combinations of **availability** and **activity**.
 
 | availability | activity     | Description                                         |
 | :----------- | :----------- | :-------------------------------------------------- |
