@@ -34,7 +34,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 
 |Member|Description|
 |:---|:---|
-|available|The region is available and fully supports Cloud PC's to be provisioned in that region.|
+|available|The region is available and fully supports Cloud PCs to be provisioned in that region.|
 |restricted|The region is considered a restricted region and can only have a Cloud PC provisioned in that region for specific tenants.|
 |unavailable|The region has no support for Cloud PC provisioning.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
