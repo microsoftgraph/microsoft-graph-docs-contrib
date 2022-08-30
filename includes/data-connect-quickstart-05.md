@@ -4,13 +4,13 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-The next step is to use the Azure Data Factory to create a pipeline to extract the data from Microsoft 365 to the Azure Storage account using Microsoft Graph data connect.
+The next step is to use the Azure Data Factory to create a pipeline to extract the data from Microsoft 365 to the Azure Storage account using Microsoft Graph Data Connect.
 
 ## Create an Azure Data Factory pipeline
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
-1. Sign in using an account with **[Application Administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal. Please make sure your account has priviledges to create Azure resources within your subscription.
+1. Sign in using an account with **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal. Ensure that your account has privileges to create Azure resources within your subscription.
 
 1. On the home page, select **Create a resource**.
 

@@ -4,37 +4,37 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this step you will create an Azure Storage account where Microsoft Graph data connect will store the data extracted from Microsoft 365 for further processing.
+In this step you'll create an Azure Storage account where Microsoft Graph Data Connect will store the data extracted from Microsoft 365 for further processing.
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
-1. Sign in using an account with **[Application Administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal.
+1. Sign in using an account with **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal.
 
 1. On the sidebar navigation, select **Create a resource**.
 
-1. Find the **Storage Account** resource type and use the following values to create it, then select **Review + create**. For **Performance**, **Redundancy**, and **Advanced Tab**, the values for these fields are an example.
+1. Find the **Storage account** resource type and use the following values to configure it. For **Performance**, **Redundancy**, and the **Advanced tab**, the values for these fields are an example.
 
     - **Subscription**: select your Azure subscription
     - **Resource group**: mgdc-app-resource (or select an existing resource group)
     - **Storage account name**: mgdcdemoap (or you can name and select your own storage account)
-    - **Region**: [pick an Azure region in the same region as your Microsoft 365 region](https://docs.microsoft.com/en-us/graph/data-connect-datasets#regions)
-    - **Performance**: Standard 
-    - **Redundancy**: Geo-redundant storage 
-    - **Advanced tab**: 
-      - **Access tier**: Hot 
+    - **Region**: [pick an Azure region in the same region as your Microsoft 365 region](/graph/data-connect-datasets#regions)
+    - **Performance**: Standard
+    - **Redundancy**: Geo-redundant storage
+    - **Advanced tab**:
+      - **Access tier**: Hot
 
-    ![A screenshot showing on how to create a storage account.](../concepts/images/data-connect-azure-storageaccount-create.png)
+    ![A screenshot showing on how to create a Storage account.](../concepts/images/data-connect-azure-storageaccount-create.png)
     
-1. After the **Basics** tab, leave the rest of the settings as default.
+1. After the **Basics** and **Advanced** tabs, leave the rest of the settings as default.
 
     > [!NOTE]
-    >  Please ensure that within **Networking** tab, only the **Enable public access from all networks** is enabled. While we support other types of network access, we are working on removing additional restrictions required for them. For the time being, please only select the first option. For more questions on additional network access please reach out to dataconnect@microsoft.com.
+    >  Ensure that within the **Networking** tab, only the **Enable public access from all networks** is enabled. We support other types of network access; however, we are working on removing additional restrictions required for them. For the time being, only select the first option. For more questions on additional network access, please reach out to *dataconnect@microsoft.com*.
 
     ![A screenshot showing on how to create a storage account.](../concepts/images/data-connect-azure-storage-network-new.png)
 
-1. Review that the settings match those shown in the previous steps and select **Review** to finalize.
+1. Review that the settings match those shown in the previous steps and select **Create** to finalize.
 
-1. After the Azure Storage account has been created, grant the Azure AD application previously created the proper access to it.
+1. After the Azure Storage account has been created, grant the Azure Active Directory application previously created the proper access to it.
 
     1. Select the **Azure Storage account**.
     2. On the sidebar menu, select **Access control (IAM)**.
