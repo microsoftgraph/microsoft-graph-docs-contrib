@@ -97,16 +97,6 @@ stageSettings := []graphmodels.AccessReviewStageSettingsable {
 }
 requestBody.SetStageSettings(stageSettings)
 settings := graphmodels.NewAccessReviewScheduleSettings()
-mailNotificationsEnabled := true
-settings.SetMailNotificationsEnabled(&mailNotificationsEnabled) 
-reminderNotificationsEnabled := true
-settings.SetReminderNotificationsEnabled(&reminderNotificationsEnabled) 
-justificationRequiredOnApproval := true
-settings.SetJustificationRequiredOnApproval(&justificationRequiredOnApproval) 
-defaultDecisionEnabled := false
-settings.SetDefaultDecisionEnabled(&defaultDecisionEnabled) 
-defaultDecision := "None"
-settings.SetDefaultDecision(&defaultDecision) 
 instanceDurationInDays := int32(4)
 settings.SetInstanceDurationInDays(&instanceDurationInDays) 
 recurrence := graphmodels.NewPatternedRecurrence()
