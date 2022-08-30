@@ -1,6 +1,6 @@
 ---
 title: "featureTarget resource type"
-description: "A complex type that defines a single group, role, or AU that is included/exc in a set of changes."
+description: "Defines a single group, Azure AD role, or administrative unit that is included or excluded in the settings specified in the authenticationMethodFeatureConfiguration object."
 author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A complex type that defines a single group, role, or AU that is included in a set of changes.
+Defines a single group, Azure AD role, or administrative unit that is included or excluded in the settings specified in the [authenticationMethodFeatureConfiguration](authenticationmethodfeatureconfiguration.md) object.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The ID of the entity targeted.|
-|targetType|featureTargetType|The kind of entity targeted, e.g. group, role, administrative unit. The possible values are: `group`, `administrativeUnit`, `role`, `unknownFutureValue`.|
+|id|String|The ID of the entity that's targeted in the include or exclude rule. Additional possible value is: `all_users`.|
+|targetType|featureTargetType|The kind of entity that's targeted. The possible values are: `group`, `administrativeUnit`, `role`, `unknownFutureValue`.|
 
 ## Relationships
 None.

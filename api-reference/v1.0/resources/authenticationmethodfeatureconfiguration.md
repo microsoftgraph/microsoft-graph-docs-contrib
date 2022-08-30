@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodFeatureConfiguration resource type"
-description: "A complex type that defines, for a given authentication method, features that are allowed for the authentication method. This type also defines which single entities are included and excluded from the feature."
+description: "Defines the features that are allowed for different authentication methods. For each authentication method, defines the users who are enabled or excluded from using the feature."
 author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: resourcePageType
 # authenticationMethodFeatureConfiguration resource type
 Namespace: microsoft.graph
 
-A complex type that defines, for a given authentication method, features that are allowed for the authentication method. This type also defines which single entities are included and excluded from the feature.
+Defines the features that are allowed for different authentication methods. For each authentication method, defines the users who are enabled or excluded from using the feature.
 
 ## Properties
 |Property|Type|Description|
