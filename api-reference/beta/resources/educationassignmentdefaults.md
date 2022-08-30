@@ -45,7 +45,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "addedStudentAction": "String",
-  "addToCalendarAction": "String",
+  "addToCalendarAction": "String",  
   "dueTime": "String (timestamp)",
   "id": "String (identifier)",
   "notificationChannelUrl": "String"
