@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents [onPremisesApplicationSegment](onPremisesApplicationSegment.md) object when publishing an on-premises wildcard application with Azure AD Application Proxy. This resource is used for setting application segment for a particular wildcard application.
+Represents a [onPremisesApplicationSegment](onPremisesApplicationSegment.md) object when publishing an on-premises wildcard application with Azure AD Application Proxy. This resource is used for setting an application segment for a particular wildcard application.
 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|alternateUrl|String|If you are configuring a traffic manager in front of multiple App Proxy application segments, the alternateUrl is the user-friendly URL that will point to the traffic manager.|
-|corsConfigurations|[corsConfiguration](corsconfiguration.md) collection|CORS Rule definition for particular application segment.|
-|externalUrl|String |The published external url for the application segment. For example, https://intranet.contoso.com/|
-|internalUrl|String |The internal url of the application segment. For example, https://intranet/.|
+|alternateUrl|String|If you're configuring a traffic manager in front of multiple App Proxy application segments, contains the user-friendly URL that will point to the traffic manager.|
+|corsConfigurations|[corsConfiguration](corsconfiguration.md) collection|CORS Rule definition for a particular application segment.|
+|externalUrl|String |The published external URL for the application segment; for example, https://intranet.contoso.com./|
+|internalUrl|String |The internal URL of the application segment; for example, https://intranet/.|
 
 
 
