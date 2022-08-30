@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 | activity           | String   | The supplemental information to availability.                                                                                                                                                                                                  |
 | expirationDuration | Duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations.<br/>If not provided, a default expiration will be applied:<br/>- DoNotDisturb or Busy: expires in 1 day<br/>- All others: expires in 7 days |
 
-Supported combinations of **availability** and **activity** are:
+The following table lists supported combinations of **availability** and **activity**.
 
 | availability | activity     | Description                                         |
 | :----------- | :----------- | :-------------------------------------------------- |
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code.
 
 ### Request
 
-The following example shows a request that sets the preferred presence as DoNotDisturb for a user, with an expiration of 8 hours.
+The following example shows a request that sets the preferred presence as `DoNotDisturb` for a user, with an expiration of 8 hours.
 
 <!-- {
   "blockType": "request",
