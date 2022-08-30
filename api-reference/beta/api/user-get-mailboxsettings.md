@@ -25,7 +25,7 @@ receipt of their email)
 - time format
 - time zone
 - [working hours](../resources/workinghours.md)
-- [user purpose](../resources/userpurpose.md)
+- [user purpose](../resources/mailboxsettings.md#userpurpose-values)
 
 Users can set their preferred date and time formats using Outlook on the web. Users can choose one of the supported [short date](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats. This `GET` operation returns the format the user has chosen.
 
@@ -101,7 +101,7 @@ If successful, this method returns a `200 OK` response code and one of the follo
 - string (for **timeFormat**)
 - string (for **timeZone**)
 - [workingHours](../resources/workinghours.md)
-- [userPurpose](../resources/userpurpose.md)
+- [userPurpose](../resources/mailboxsettings.md#userpurpose-values)
 
 ## Examples
 
@@ -345,7 +345,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 
 #### Response
 
-The following is an example of the response that includes only the [user purpose](../resources/userpurpose.md) settings.
+The following is an example of the response that includes only the [user purpose](../resources/mailboxsettings.md#userpurpose-values) settings.
 
 <!-- {
   "blockType": "response",
