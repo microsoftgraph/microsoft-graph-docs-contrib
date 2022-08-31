@@ -2,7 +2,7 @@
 title: "scheduledRetireState enum type"
 description: "Cancel or confirm scheduled retire "
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -21,7 +21,11 @@ Cancel or confirm scheduled retire
 |Member|Value|Description|
 |:---|:---|:---|
 |cancelRetire|0|Cancel retire.|
-|comfirmRetire|1|Retire these devices.|
+|confirmRetire|1|Retire these devices.|
+|unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
+
+
+
 
 
 

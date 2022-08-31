@@ -46,16 +46,16 @@ If successful, this method returns a `200 OK` response code and an **agedAccount
 
 ## Example
 
-**Request**
+### Request
 
-Here is an example of the request.
+The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
 ```
 
-**Response**
+### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 
 > **Note**: The response object shown here might be shortened for readability.
 

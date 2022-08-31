@@ -2,7 +2,7 @@
 title: "Get iosVppEBookAssignment"
 description: "Read properties and relationships of the iosVppEBookAssignment object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -74,6 +74,7 @@ Content-Length: 273
   }
 }
 ```
+
 
 
 

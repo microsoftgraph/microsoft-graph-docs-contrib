@@ -2,7 +2,7 @@
 title: "Custom provider"
 description: "Create a custom provider to enable authentication and graph access for the Microsoft Graph Toolkit components, if you have existing authentication code in your application."
 ms.localizationpriority: medium
-author: nmetulev
+author: sebastienlevert
 ---
 
 # Custom provider
@@ -86,7 +86,7 @@ The `Graph` class is a light wrapper on top of the Microsoft Graph SDK.
 
 ### Example
 
-All the providers extend the `IProvider` abstract class. For examples, take a look at the source code for any of the [existing providers](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt/src/providers).
+All the providers extend the `IProvider` abstract class. For examples, take a look at the source code for any of the [existing providers](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/providers).
 
 ## Set the global provider
 

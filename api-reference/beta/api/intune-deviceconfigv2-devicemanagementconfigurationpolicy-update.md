@@ -2,7 +2,7 @@
 title: "Update deviceManagementConfigurationPolicy"
 description: "Update the properties of a deviceManagementConfigurationPolicy object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}
 PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
 PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}
 ```
@@ -52,11 +53,11 @@ The following table shows the properties that are required when you create the [
 |id|String|Key of the policy document. Automatically generated.|
 |name|String|Policy name|
 |description|String|Policy description|
-|platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms for this policy. Possible values are: `none`, `macOS`, `windows10X`, `windows10`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
-|createdDateTime|DateTimeOffset|Policy creation date and time. This property is read-only.|
-|lastModifiedDateTime|DateTimeOffset|Policy last modification date and time. This property is read-only.|
-|settingCount|Int32|Number of settings. This property is read-only.|
+|platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms for this policy. Possible values are: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `enrollment`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset|Policy creation date and time|
+|lastModifiedDateTime|DateTimeOffset|Policy last modification date and time|
+|settingCount|Int32|Number of settings|
 |creationSource|String|Policy creation source|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 |isAssigned|Boolean|Policy assignment status. This property is read-only.|
@@ -72,15 +73,15 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
+PATCH https://graph.microsoft.com/beta/deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}
 Content-type: application/json
-Content-length: 685
+Content-length: 687
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
   "name": "Name value",
   "description": "Description value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "settingCount": 12,
   "creationSource": "Creation Source value",
@@ -103,14 +104,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 857
+Content-Length: 859
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
   "id": "3ffd7cd0-7cd0-3ffd-d07c-fd3fd07cfd3f",
   "name": "Name value",
   "description": "Description value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -129,6 +130,9 @@ Content-Length: 857
   }
 }
 ```
+
+
+
 
 
 

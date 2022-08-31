@@ -7,7 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 GroupSetting groupSetting = new GroupSetting();
-groupSetting.displayName = "Group.Unified.Guest";
 groupSetting.templateId = "08d542b9-071f-4e16-94b0-74abb372e3d9";
 LinkedList<SettingValue> valuesList = new LinkedList<SettingValue>();
 SettingValue values = new SettingValue();

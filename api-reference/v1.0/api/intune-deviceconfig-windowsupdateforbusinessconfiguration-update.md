@@ -2,7 +2,7 @@
 title: "Update windowsUpdateForBusinessConfiguration"
 description: "Update the properties of a windowsUpdateForBusinessConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -139,6 +139,7 @@ Content-Length: 1082
   "businessReadyUpdatesOnly": "all"
 }
 ```
+
 
 
 

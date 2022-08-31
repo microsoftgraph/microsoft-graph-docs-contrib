@@ -2,7 +2,7 @@
 title: "Update userExperienceAnalyticsDevicePerformance"
 description: "Update the properties of a userExperienceAnalyticsDevicePerformance object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -52,12 +52,12 @@ The following table shows the properties that are required when you create the [
 |deviceName|String|The user experience analytics device name.|
 |model|String|The user experience analytics device model.|
 |manufacturer|String|The user experience analytics device manufacturer.|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|The user experience analytics device disk type. Possible values are: `unkown`, `hdd`, `ssd`.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|The user experience analytics device disk type. Possible values are: `unknown`, `hdd`, `ssd`, `unknownFutureValue`.|
 |operatingSystemVersion|String|The user experience analytics device Operating System version.|
 |bootScore|Int32|The user experience analytics device boot score.|
 |coreBootTimeInMs|Int32|The user experience analytics device core boot time in milliseconds.|
 |groupPolicyBootTimeInMs|Int32|The user experience analytics device group policy boot time in milliseconds.|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 |loginScore|Int32|The user experience analytics device login score.|
 |coreLoginTimeInMs|Int32|The user experience analytics device core login time in milliseconds.|
 |groupPolicyLoginTimeInMs|Int32|The user experience analytics device group policy login time in milliseconds.|
@@ -141,6 +141,9 @@ Content-Length: 788
   "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
+
+
+
 
 
 

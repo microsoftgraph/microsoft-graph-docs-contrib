@@ -2,7 +2,7 @@
 title: "List microsoftTunnelSites"
 description: "List properties and relationships of the microsoftTunnelSite objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 662
+Content-Length: 703
 
 {
   "value": [
@@ -76,6 +76,7 @@ Content-Length: 662
       "upgradeAutomatically": true,
       "upgradeAvailable": true,
       "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
+      "enableCertificatePinning": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ]
@@ -83,6 +84,9 @@ Content-Length: 662
   ]
 }
 ```
+
+
+
 
 
 

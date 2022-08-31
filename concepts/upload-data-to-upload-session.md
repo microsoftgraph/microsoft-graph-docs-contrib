@@ -1,15 +1,12 @@
 ---
 title: "Upload documents using the Microsoft Graph Universal Print API"
-description: "Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft."
+description: "Use the Universal Print API in Microsoft Graph to create a print job, upload a document, and start the print job. This page describes how to upload a document."
 author: "nilakhan"
 ms.localizationpriority: high
-ms.prod: "universal-print"
 ms.custom: scenarios:getting-started
 ---
 
 # Upload documents using the Microsoft Graph Universal Print API
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../api-reference/includes/cloudprinting-pricing-disclaimer.md)]
 
 To print a document using the Universal Print API in Microsoft Graph, you [create a print job](/graph/api/printershare-post-jobs), upload a document, and then [start the print job](/graph/api/printjob-start). This article describes how to upload a document, which starts with [creating an upload session](/graph/api/printdocument-createuploadsession).
 
@@ -18,17 +15,21 @@ You can upload the entire file, or split the file into multiple byte ranges, as 
 
 The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests. When all the binary segments of a document are uploaded, the binary file is linked to the **printDocument**.
 
-## HTTP request
+> **Note**: If your app splits a file into multiple byte ranges, we recommend that the size of each byte range is a multiple of 200 KB unless you're using the Microsoft Graph SDK, which requires the segment size to be a multiple of 320 KB. 
+
+## Upload a file
+
+### Request
 
 Make a PUT request to the **uploadUrl** value received in the **createUploadSession** response.
 
-### Request headers
+#### Request headers
 | Name          | Description   |
 |:--------------|:--------------|
 | Content-Range | bytes {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}. Required.|
 | Content-Length | {contentLength}‬ Required.|
 
-### Request body
+#### Request body
 The request body is a binary blob containing the bytes of the document that are specified as an **inclusive** byte range in the `Content-Range` header. 
 
 ### Example
@@ -43,7 +44,8 @@ Content-Length: 72797
 ```
 
 Here, 0 and 72796 are the start and end indexes of the file segment and 4533322 is the size of document.
-## HTTP response
+
+### Response
 
 When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.
 
@@ -80,9 +82,9 @@ Content-Type: application/json
 
 * On failures, when the client sends a fragment the server has already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. 
   You can [request upload status](#get-the-upload-session) to get a more detailed list of missing ranges.
-* Including the `Authorizatio`n header when making the `PUT` call might result in an `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when creating the upload session. It should be not be included when uploading data to the upload session.
+* Including the `Authorization` header when making the `PUT` call might result in an `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when creating the upload session. It should be not be included when uploading data to the upload session.
 
-## Completing a file
+## Complete a file upload
 
 When the last byte range of a file is received, the server will respond with an `HTTP 201 Created`. The response body will also include the property set for the associated **printDocument**.
 
@@ -139,8 +141,9 @@ Content-Type: application/json
   ]
 }
 ```
+
 ## Code examples: Create upload session and upload documents
- 
+
 # [C#](#tab/csharp)
 
 ```csharp

@@ -2,7 +2,7 @@
 title: "List mobileAppAssignments"
 description: "List properties and relationships of the mobileAppAssignment objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 763
+Content-Length: 1155
 
 {
   "value": [
@@ -74,10 +74,19 @@ Content-Length: 763
         "deviceAndAppManagementAssignmentFilterType": "include"
       },
       "settings": {
-        "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-        "vpnConfigurationId": "Vpn Configuration Id value",
-        "uninstallOnDeviceRemoval": true,
-        "isRemovable": true
+        "@odata.type": "microsoft.graph.winGetAppAssignmentSettings",
+        "notifications": "showReboot",
+        "restartSettings": {
+          "@odata.type": "microsoft.graph.winGetAppRestartSettings",
+          "gracePeriodInMinutes": 4,
+          "countdownDisplayBeforeRestartInMinutes": 6,
+          "restartNotificationSnoozeDurationInMinutes": 10
+        },
+        "installTimeSettings": {
+          "@odata.type": "microsoft.graph.winGetAppInstallTimeSettings",
+          "useLocalTime": true,
+          "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
+        }
       },
       "source": "policySets",
       "sourceId": "Source Id value"
@@ -85,6 +94,9 @@ Content-Length: 763
   ]
 }
 ```
+
+
+
 
 
 

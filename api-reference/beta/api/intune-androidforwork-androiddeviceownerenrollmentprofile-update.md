@@ -2,7 +2,7 @@
 title: "Update androidDeviceOwnerEnrollmentProfile"
 description: "Update the properties of a androidDeviceOwnerEnrollmentProfile object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Unique GUID for the enrollment profile.|
 |displayName|String|Display name for the enrollment profile.|
 |description|String|Description for the enrollment profile.|
-|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|The enrollment mode of devices that use this enrollment profile. Possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|The enrollment mode of devices that use this enrollment profile. Possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`, `corporateOwnedAOSPUserlessDevice`, `corporateOwnedAOSPUserAssociatedDevice`.|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|The enrollment token type for an enrollment profile. Possible values are: `default`, `corporateOwnedDedicatedDeviceWithAzureADSharedMode`.|
 |createdDateTime|DateTimeOffset|Date time the enrollment profile was created.|
 |lastModifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
@@ -60,9 +60,15 @@ The following table shows the properties that are required when you create the [
 |tokenCreationDateTime|DateTimeOffset|Date time the most recently created token was created.|
 |tokenExpirationDateTime|DateTimeOffset|Date time the most recently created token will expire.|
 |enrolledDeviceCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
+|enrollmentTokenUsageCount|Int32|Total number of AOSP devices that have enrolled using the current token.|
 |qrCodeContent|String|String used to generate a QR code for the token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|String used to generate a QR code for the token.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
+|configureWifi|Boolean|Boolean that indicates that the Wi-Fi network should be configured during device provisioning. When set to TRUE, device provisioning will use Wi-Fi related properties to automatically connect to Wi-Fi networks. When set to FALSE or undefined, other Wi-Fi related properties will be ignored. Default value is TRUE. Returned by default.|
+|wifiSsid|String|String that contains the wi-fi login ssid|
+|wifiPassword|String|String that contains the wi-fi login password|
+|wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|String that contains the wi-fi security type. Possible values are: `none`, `wpa`, `wep`.|
+|wifiHidden|Boolean|Boolean that indicates if hidden wifi networks are enabled|
 
 
 
@@ -76,7 +82,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEnrollmentProfileId}
 Content-type: application/json
-Content-length: 758
+Content-length: 948
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -89,6 +95,7 @@ Content-length: 758
   "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "enrolledDeviceCount": 3,
+  "enrollmentTokenUsageCount": 9,
   "qrCodeContent": "Qr Code Content value",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",
@@ -97,7 +104,12 @@ Content-length: 758
   },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "configureWifi": true,
+  "wifiSsid": "Wifi Ssid value",
+  "wifiPassword": "Wifi Password value",
+  "wifiSecurityType": "wpa",
+  "wifiHidden": true
 }
 ```
 
@@ -106,7 +118,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 930
+Content-Length: 1120
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -122,6 +134,7 @@ Content-Length: 930
   "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "enrolledDeviceCount": 3,
+  "enrollmentTokenUsageCount": 9,
   "qrCodeContent": "Qr Code Content value",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",
@@ -130,9 +143,17 @@ Content-Length: 930
   },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "configureWifi": true,
+  "wifiSsid": "Wifi Ssid value",
+  "wifiPassword": "Wifi Password value",
+  "wifiSecurityType": "wpa",
+  "wifiHidden": true
 }
 ```
+
+
+
 
 
 

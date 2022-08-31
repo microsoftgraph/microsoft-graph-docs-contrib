@@ -2,7 +2,7 @@
 title: "windowsDeliveryOptimizationConfiguration resource type"
 description: "Windows Delivery Optimization configuration"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -147,6 +147,9 @@ Here is a JSON representation of the resource.
   "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 1024
 }
 ```
+
+
+
 
 
 

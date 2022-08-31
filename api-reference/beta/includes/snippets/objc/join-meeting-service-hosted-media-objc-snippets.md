@@ -36,7 +36,7 @@ MSGraphMeetingInfo *meetingInfo = [[MSGraphMeetingInfo alloc] init];
 MSGraphIdentitySet *organizer = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"];
-[user setTenantId:@"aa67bd4c-8475-432d-bd41-39f255720e0a"];
+[user setTenantId:@"9f386a15-f9cc-445b-8106-ac85e314a07b"];
 [user setDisplayName:@"Bob"];
 [organizer setUser:user];
 [meetingInfo setOrganizer:organizer];

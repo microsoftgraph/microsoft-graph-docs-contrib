@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let deviceCompliancePolicySettingStateSummary = await client.api('/tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummary')
+let deviceCompliancePolicySettingStateSummaries = await client.api('/tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummaries')
 	.version('beta')
 	.get();
 

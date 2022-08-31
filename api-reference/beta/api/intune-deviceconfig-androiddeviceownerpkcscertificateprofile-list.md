@@ -2,7 +2,7 @@
 title: "List androidDeviceOwnerPkcsCertificateProfiles"
 description: "List properties and relationships of the androidDeviceOwnerPkcsCertificateProfile objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2515
+Content-Length: 2768
 
 {
   "value": [
@@ -123,11 +123,21 @@ Content-Length: 2515
           "sanType": "emailAddress",
           "name": "Name value"
         }
+      ],
+      "certificateAccessType": "specificApps",
+      "silentCertificateAccessDetails": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerSilentCertificateAccess",
+          "packageId": "Package Id value"
+        }
       ]
     }
   ]
 }
 ```
+
+
+
 
 
 

@@ -2,7 +2,7 @@
 title: "Get networkIPv4ConfigurationManagementCondition"
 description: "Read properties and relationships of the networkIPv4ConfigurationManagementCondition object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -12,6 +12,21 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAuthenticationMethodsPolicy *authenticationMethodsPolicy = [[MSGraphAuthenticationMethodsPolicy alloc] init];
+MSGraphRegistrationEnforcement *registrationEnforcement = [[MSGraphRegistrationEnforcement alloc] init];
+MSGraphAuthenticationMethodsRegistrationCampaign *authenticationMethodsRegistrationCampaign = [[MSGraphAuthenticationMethodsRegistrationCampaign alloc] init];
+[authenticationMethodsRegistrationCampaign setSnoozeDurationInDays: 1];
+[authenticationMethodsRegistrationCampaign setState: [MSGraphAdvancedConfigState enabled]];
+NSMutableArray *excludeTargetsList = [[NSMutableArray alloc] init];
+[authenticationMethodsRegistrationCampaign setExcludeTargets:excludeTargetsList];
+NSMutableArray *includeTargetsList = [[NSMutableArray alloc] init];
+MSGraphAuthenticationMethodsRegistrationCampaignIncludeTarget *includeTargets = [[MSGraphAuthenticationMethodsRegistrationCampaignIncludeTarget alloc] init];
+[includeTargets setId:@"3ee3a9de-0a86-4e12-a287-9769accf1ba2"];
+[includeTargets setTargetType: [MSGraphAuthenticationMethodTargetType group]];
+[includeTargets setTargetedAuthenticationMethod:@"microsoftAuthenticator"];
+[includeTargetsList addObject: includeTargets];
+[authenticationMethodsRegistrationCampaign setIncludeTargets:includeTargetsList];
+[registrationEnforcement setAuthenticationMethodsRegistrationCampaign:authenticationMethodsRegistrationCampaign];
+[authenticationMethodsPolicy setRegistrationEnforcement:registrationEnforcement];
 NSMutableArray *authenticationMethodConfigurationsList = [[NSMutableArray alloc] init];
 MSGraphAuthenticationMethodConfiguration *authenticationMethodConfigurations = [[MSGraphAuthenticationMethodConfiguration alloc] init];
 [authenticationMethodConfigurations setId:@"Fido2"];

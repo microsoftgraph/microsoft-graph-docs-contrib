@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/11021/assignments/19002"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/4679bc1b-90c5-45af-ae1a-d5357672ed39"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphEducationAssignment *educationAssignment = [[MSGraphEducationAssignment alloc] init];
-[educationAssignment setDisplayName:@"Week 1 reading assignment"];
+[educationAssignment setDisplayName:@"Reading and review test 09.03 #5"];
 MSGraphEducationItemBody *instructions = [[MSGraphEducationItemBody alloc] init];
 [instructions setContentType: [MSGraphBodyType text]];
-[instructions setContent:@"Read chapters 1 through 3"];
+[instructions setContent:@"Read chapter 5 and write your review"];
 [educationAssignment setInstructions:instructions];
-[educationAssignment setDueDateTime: "2014-02-01T00:00:00Z"];
+[educationAssignment setDueDateTime: "2021-09-10T00:00:00Z"];
 [educationAssignment setAddedStudentAction: [MSGraphEducationAddedStudentAction none]];
 [educationAssignment setAddToCalendarAction: [MSGraphEducationAddToCalendarOptions studentsAndPublisher]];
 

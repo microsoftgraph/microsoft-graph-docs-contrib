@@ -2,7 +2,7 @@
 title: "List macOSVpnConfigurations"
 description: "List properties and relationships of the macOSVpnConfiguration objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3496
+Content-Length: 3639
 
 {
   "value": [
@@ -145,7 +145,11 @@ Content-Length: 3496
           "domains": [
             "Domains value"
           ],
-          "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
+          "probeRequiredUrl": "https://example.com/probeRequiredUrl/",
+          "interfaceTypeMatch": "ethernet",
+          "dnsServerAddressMatch": [
+            "Dns Server Address Match value"
+          ]
         }
       ],
       "providerType": "appProxy",
@@ -169,6 +173,9 @@ Content-Length: 3496
   ]
 }
 ```
+
+
+
 
 
 

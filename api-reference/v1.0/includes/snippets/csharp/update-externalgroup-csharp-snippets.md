@@ -12,7 +12,7 @@ var externalGroup = new Microsoft.Graph.ExternalConnectors.ExternalGroup
 	Description = "The product marketing team"
 };
 
-await graphClient.Connections["{externalConnectors.externalConnection-id}"].Groups["{externalConnectors.externalGroup-id}"]
+await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Groups["{externalConnectors.externalGroup-id}"]
 	.Request()
 	.UpdateAsync(externalGroup);
 

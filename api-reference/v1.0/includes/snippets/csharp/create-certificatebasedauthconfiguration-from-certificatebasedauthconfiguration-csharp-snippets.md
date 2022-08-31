@@ -13,7 +13,7 @@ var certificateBasedAuthConfiguration = new CertificateBasedAuthConfiguration
 		new CertificateAuthority
 		{
 			IsRootAuthority = true,
-			Certificate = Encoding.ASCII.GetBytes("Binary")
+			Certificate = Convert.FromBase64String("Binary")
 		}
 	}
 };

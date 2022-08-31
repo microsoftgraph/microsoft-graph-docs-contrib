@@ -16,7 +16,6 @@ var transferTarget = new InvitationParticipantInfo
 			DisplayName = "Heidi Steen"
 		}
 	},
-	ReplacesCallId = "replacesCallId-value",
 	AdditionalData = new Dictionary<string, object>()
 	{
 		{"endpointType", "default"}

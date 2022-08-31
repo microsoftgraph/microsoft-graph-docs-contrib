@@ -47,6 +47,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Unique identifier for the task. By default, this value changes when the item is moved from one list to another.|
 |body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task.|
+|categories|String collection|The categories associated with the task. Each category corresponds to the **displayName** property of an [outlookCategory](../resources/outlookcategory.md) that the user has defined.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task was finished.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
 |importance|importance|The importance of the task. Possible values are: `low`, `normal`, `high`.|
@@ -81,10 +82,10 @@ The following example creates a **todoTask** in the specified task list, and inc
 ``` http
 POST https://graph.microsoft.com/v1.0/me/todo/lists/AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM/tasks
 Content-Type: application/json
-Content-length: 608
 
 {
    "title":"A new task",
+   "categories": ["Important"],
    "linkedResources":[
       {
          "webUrl":"http://microsoft.com",
@@ -94,6 +95,7 @@ Content-length: 608
    ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-todotask-from-tasks-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -102,12 +104,20 @@ Content-length: 608
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-todotask-from-tasks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-todotask-from-tasks-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-todotask-from-tasks-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-todotask-from-tasks-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-todotask-from-tasks-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-todotask-from-tasks-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -134,6 +144,7 @@ Content-Type: application/json
    "title":"A new task",
    "createdDateTime":"2020-08-18T09:03:05.8339192Z",
    "lastModifiedDateTime":"2020-08-18T09:03:06.0827766Z",
+   "categories": ["Important"],
    "id":"AlMKXwbQAAAJws6wcAAAA=",
    "body":{
       "content":"",

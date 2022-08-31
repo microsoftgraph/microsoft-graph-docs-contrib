@@ -1,13 +1,13 @@
 ---
-title: "Manage monitoring rules for a deployment using the Windows Update for Business deployment service"
-description: "For deployments initiated by the deployment service, you can use monitoring rules configure alerts and automated actions based on deployment signals."
-author: "Alice-at-Microsoft"
+title: "Manage monitoring rules using the Windows Update for Business deployment service"
+description: "Use the Windows Update for Business deployment service to create a monitoring rule or resume deployments paused by a monitoring rule."
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
 ---
 
-# Manage monitoring rules for a feature update deployment using the Windows Update for Business deployment service
+# Manage monitoring rules using the Windows Update for Business deployment service
 
 For deployments initiated by the deployment service, you can use a monitoring rule to configure alerts and automated actions based on deployment signals.
 
@@ -41,7 +41,6 @@ Content-type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 5,
                     "action": "pauseDeployment"
@@ -90,14 +89,15 @@ Content-Type: application/json
             ]
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
 }
 ```
 
-## Step 2: Unpause a deployment that was paused by a monitoring rule
+## Step 2: Resume a deployment that was paused by a monitoring rule
 When a monitoring rule triggers, it provides the opportunity to investigate update issues that may have lead to it being applied. After investigation, you may wish to resume the deployment. There are two ways to do so: removing the monitoring rule or updating the monitoring rule threshold.
 
 ### Example: Resume deployment by removing a monitoring rule
@@ -153,7 +153,8 @@ Content-Type: application/json
             "monitoringRules": []
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -178,7 +179,6 @@ Content-Type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 10,
                     "action": "pauseDeployment"
@@ -227,7 +227,8 @@ Content-Type: application/json
             ]
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

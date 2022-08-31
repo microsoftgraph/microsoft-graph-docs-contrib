@@ -2,7 +2,7 @@
 title: "Create androidCompliancePolicy"
 description: "Create a new androidCompliancePolicy object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -198,6 +198,9 @@ Content-Length: 1922
   ]
 }
 ```
+
+
+
 
 
 

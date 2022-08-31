@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getTeamsUserActivityCounts"
-description: "Get the number of Microsoft Teams activities by activity type. The activity types are team chat messages, private chat messages, calls, and meetings."
+description: "Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed users."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the number of Microsoft Teams activities by activity type. The activity types are team chat messages, private chat messages, calls, and meetings.
+Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed users.
 
 ## Permissions
 
@@ -58,9 +58,16 @@ The CSV file has the following headers for columns:
 - Report Refresh Date
 - Report Date
 - Team Chat Messages
+- Post Messages
+- Reply Messages
 - Private Chat Messages
 - Calls
 - Meetings
+- Audio Duration
+- Video Duration
+- Screen Share Duration
+- Meetings Organized
+- Meetings Attended
 - Report Period
 
 ## Example
@@ -75,7 +82,7 @@ The following is an example of the request.
   "name": "reportroot_getteamsuseractivitycounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityCounts(period='D7')
 ```
 
@@ -103,7 +110,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
+Report Refresh Date,Report Date,Team Chat Messages,Post Messages,Reply Messages,Private Chat Messages,Calls,Meetings,Audio Duration,Video Duration,Screen Share Duration,Meetings Organized,Meetings Attended,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

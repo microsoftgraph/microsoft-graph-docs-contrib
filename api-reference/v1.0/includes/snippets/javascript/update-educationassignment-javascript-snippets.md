@@ -11,15 +11,16 @@ const options = {
 const client = Client.init(options);
 
 const educationAssignment = {
-  displayName: 'Week 1 reading assignment',
-  instructions: {
-    contentType: 'Text',
-    content: 'Read chapters 1 through 3'
-  },
-  dueDateTime: '2014-02-01T00:00:00Z'
+    displayName: 'Reading and review test 09.03 #5',
+    instructions: {
+        contentType: 'text',
+        content: 'Read chapter 5 and write your review'
+    },
+    dueDateTime: '2021-09-10T00:00:00Z',
+    addedStudentAction: 'none'
 };
 
-await client.api('/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8')
+await client.api('/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/4679bc1b-90c5-45af-ae1a-d5357672ed39')
 	.update(educationAssignment);
 
 ```

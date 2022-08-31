@@ -2,7 +2,7 @@
 title: "calendar resource type"
 description: "A calendar which is a container for events. It can be a calendar for a user, or the default calendar of a Microsoft 365 group."
 ms.localizationpriority: high
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -67,7 +67,7 @@ Represents a container for [event](event.md) resources. It can be a calendar for
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
@@ -122,7 +122,6 @@ Here is a JSON representation of the resource
   "name": "string",
   "owner": {"@odata.type": "microsoft.graph.emailAddress"}
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

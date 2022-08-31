@@ -1,6 +1,6 @@
 ---
-author: vishriv
-title: Group resource type
+author: "vishriv"
+title: "Group resource type"
 doc_type: "resourcePageType"
 description: "Represents a group used in a term store."
 ms.localizationpriority: medium
@@ -29,12 +29,12 @@ Inherits from [entity](../resources/entity.md).
 
 | Property             | Type               | Description                        |
 |:---------------------|:-------------------|:------------------------------------
-| createdDateTime      | DateTimeOffset     | Date and time of group creation. Read-only. |
-| description          | string             | Description giving details on the term usage. |
-| id                   | string             | Unique identifier of group. Read-Only. |
-| displayName          | string             | Name of group. |
-| scope                | string              | Returns type of group. Possible values are 'global', 'system' and 'siteCollection'. |
-| parentSiteId         | string             | Id of the parent site of this group. |
+| createdDateTime      | DateTimeOffset     | Date and time of the group creation. Read-only. |
+| description          | string             | Description that gives details on the term usage. |
+| displayName          | string             | Name of the group. |
+| id                   | string             | Unique identifier of the group. Read-Only. |
+| parentSiteId         | string             | ID of the parent site of this group. |
+| scope                | string             | Returns the type of the group. Possible values are: `global`, `system`, and `siteCollection`. |
 
 ## Relationships
 | Relationship       | Type                        | Description              |
@@ -55,12 +55,12 @@ The following is a JSON representation of a **group** resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.termStore.group",
-  "id": "string",
   "createdDateTime": "string (timestamp)",
   "description": "string",
-  "scope" : "microsoft.graph.termStore.groupScope",
   "displayName": "string",
-  "parentSiteId" : "string"
+  "id": "string",
+  "parentSiteId" : "string",
+  "scope" : "microsoft.graph.termStore.groupScope"
 }
 ```
 

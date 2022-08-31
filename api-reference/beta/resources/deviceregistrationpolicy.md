@@ -1,7 +1,7 @@
 ---
 title: "deviceRegistrationPolicy resource type"
 description: "Represents the policy scope that controls quota restrictions, additional authentication, and authorization policies for the Azure Active Directory tenant."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -27,10 +27,10 @@ Represents the policy scope that controls quota restrictions, additional authent
 |:---|:---|:---|
 |azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using **Azure AD Join** within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
 |azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using **Azure AD registered** within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
-|description|String|The description of the device registration policy. It is always set to `Device Registration Policy`. Read-only.|
-|displayName|String|The name of the device registration policy. It is always set to `Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks`. Read-only.|
+|description|String|The description of the device registration policy. It is always set to `Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks`. Read-only.|
+|displayName|String|The name of the device registration policy. It is always set to `Device Registration Policy`. Read-only.|
 |id|String| The identifier of the device registration policy. It is always set to `deviceRegistrationPolicy`. Read-only.|
-|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using **Azure AD Join** or **Azure AD registered** within your organization. The possible values are: `notRequired`, `required`,`unknownFutureValue`. The default value is `notRequired`. |
+|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using **Azure AD Join** or **Azure AD registered** within your organization. The possible values are: `0` (meaning `notRequired`), `1` (meaning `required`), and `2` (meaning `unknownFutureValue`). The default value is `0`. |
 |userDeviceQuota|Int32|Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. The default value is set to 50. If this property is not specified during the policy update operation, it is automatically reset to `0` to indicate that users are not allowed to join any devices. |
 
 

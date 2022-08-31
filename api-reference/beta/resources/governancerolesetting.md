@@ -4,7 +4,7 @@ description: "Represents a set of configurations on each role definition that ne
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "rkarim-ms"
 ---
 
 # governanceRoleSetting resource type
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Represents a set of configurations on each role definition that needs to be evaluated against when role assignments are created or modified. For example, role settings might include "maximum assignment duration" rule, "MFA required on activation" rule, and so on.
 

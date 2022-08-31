@@ -8,6 +8,21 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 AuthenticationMethodsPolicy authenticationMethodsPolicy = new AuthenticationMethodsPolicy();
 authenticationMethodsPolicy.additionalDataManager().put("@odata.context", new JsonPrimitive("https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy"));
+RegistrationEnforcement registrationEnforcement = new RegistrationEnforcement();
+AuthenticationMethodsRegistrationCampaign authenticationMethodsRegistrationCampaign = new AuthenticationMethodsRegistrationCampaign();
+authenticationMethodsRegistrationCampaign.snoozeDurationInDays = 1;
+authenticationMethodsRegistrationCampaign.state = AdvancedConfigState.ENABLED;
+LinkedList<ExcludeTarget> excludeTargetsList = new LinkedList<ExcludeTarget>();
+authenticationMethodsRegistrationCampaign.excludeTargets = excludeTargetsList;
+LinkedList<AuthenticationMethodsRegistrationCampaignIncludeTarget> includeTargetsList = new LinkedList<AuthenticationMethodsRegistrationCampaignIncludeTarget>();
+AuthenticationMethodsRegistrationCampaignIncludeTarget includeTargets = new AuthenticationMethodsRegistrationCampaignIncludeTarget();
+includeTargets.id = "3ee3a9de-0a86-4e12-a287-9769accf1ba2";
+includeTargets.targetType = AuthenticationMethodTargetType.GROUP;
+includeTargets.targetedAuthenticationMethod = "microsoftAuthenticator";
+includeTargetsList.add(includeTargets);
+authenticationMethodsRegistrationCampaign.includeTargets = includeTargetsList;
+registrationEnforcement.authenticationMethodsRegistrationCampaign = authenticationMethodsRegistrationCampaign;
+authenticationMethodsPolicy.registrationEnforcement = registrationEnforcement;
 LinkedList<AuthenticationMethodConfiguration> authenticationMethodConfigurationsList = new LinkedList<AuthenticationMethodConfiguration>();
 Fido2AuthenticationMethodConfiguration authenticationMethodConfigurations = new Fido2AuthenticationMethodConfiguration();
 authenticationMethodConfigurations.id = "Fido2";

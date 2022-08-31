@@ -34,7 +34,7 @@ The following permission is required to call the API. To learn more, including h
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not Supported.                              |
+| Delegated (work or school account)     | Presence.ReadWrite                              |
 | Delegated (personal Microsoft account) | Not Supported.                              |
 | Application                            | Presence.ReadWrite.All                      |
 
@@ -58,7 +58,7 @@ In the request body, provide a JSON object with the following parameters.
 | sessionId          | string   | The ID of the application's presence session.                                                          |
 | availability       | string   | The base presence information.                                                                         |
 | activity           | string   | The supplemental information to availability.                                                          |
-| expirationDuration | duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations.</p>If not provided, a default expiration of 5 minutes will be applied. |
+| expirationDuration | duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations.</p>If not provided, a default expiration of 5 minutes will be applied. The valid duration range is 5-240 minutes (PT5M to PT4H)|
 
 > [!IMPORTANT]
 >
@@ -100,6 +100,7 @@ Content-Type: application/json
   "expirationDuration": "PT1H"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/set-presence-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -108,12 +109,20 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/set-presence-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/set-presence-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/set-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/set-presence-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/set-presence-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/set-presence-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

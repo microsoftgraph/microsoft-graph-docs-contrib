@@ -1,7 +1,7 @@
 ---
 title: "tenantRelationship resource type"
 description: "Represent the various type of tenant relationships."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: resourcePageType
@@ -24,6 +24,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|delegatedAdminCustomers|[delegatedAdminCustomer](../resources/delegatedadmincustomer.md) collection|The customer who has a delegated admin relationship with a Microsoft partner.|
+|delegatedAdminRelationships|[delegatedAdminRelationship](../resources/delegatedadminrelationship.md) collection|The details of the delegated administrative privileges that a Microsoft partner has in a customer tenant.|
 |managedTenants|[microsoft.graph.managedTenants.managedTenant](../resources/managedtenants-managedtenant.md)|The operations available to interact with the multi-tenant management platform.|
 
 ## JSON representation
