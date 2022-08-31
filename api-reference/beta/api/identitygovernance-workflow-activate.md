@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activate (Run on-demand) a [workflow](../resources/identitygovernance-workflow.md) object.
+Activate (run on-demand) a [workflow](../resources/identitygovernance-workflow.md) object.
 
 ## Permissions
 
@@ -55,7 +55,7 @@ The following table shows the parameters that are required with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|subjects|[microsoft.graph.user](../resources/user.md) collection|The subjects for who the workflow is activated for.|
+|subjects|[microsoft.graph.user](../resources/user.md) collection|The subjects for whom the workflow is activated.|
 
 ## Response
 
