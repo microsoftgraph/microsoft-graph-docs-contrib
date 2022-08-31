@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the task Processing Result from a [userProcessingResult](../resources/identitygovernance-userprocessingresult.md).
+Get the task processing result from a [userProcessingResult](../resources/identitygovernance-userprocessingresult.md).
 
 ## Permissions
 
