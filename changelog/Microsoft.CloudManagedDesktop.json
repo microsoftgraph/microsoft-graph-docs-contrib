@@ -2253,6 +2253,32 @@
         },
         {
             "ChangeList": [
+              {
+                "Id": "f9975176-211a-42df-88a5-0eae3501a7ac",
+                "ApiChange": "Member",
+                "ChangedApiName": "endpointConnectivityCheckAzureADUrlNotAllowListed",
+                "ChangeType": "Addition",
+                "Description": "Added the `endpointConnectivityCheckAzureADUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+              },
+              {
+                "Id": "f9975176-211a-42df-88a5-0eae3501a7ac",
+                "ApiChange": "Member",
+                "ChangedApiName": "endpointConnectivityCheckLocaleUrlNotAllowListed",
+                "ChangeType": "Addition",
+                "Description": "Added the `endpointConnectivityCheckLocaleUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+              }
+            ],
+            "Id": "f9975176-211a-42df-88a5-0eae3501a7ac",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-08-24T10:00:11.4963489Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
                 {
                     "Id": "9c66c399-83ee-4cd8-aadb-59ab36d52dbd",
                     "ApiChange": "EnumType",
@@ -2325,7 +2351,7 @@
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
-      {
+        {
             "ChangeList": [
                 {
                     "Id": "00dff431-bb18-4a62-8fb6-828335fc1495",
@@ -2392,6 +2418,24 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-15T07:01:08.9526909Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+              {
+                "Id": "f3def7ad-015a-48bc-aaf2-b944069124cd",
+                "ApiChange": "Method",
+                "ChangedApiName": "restore",
+                "ChangeType": "Addition",
+                "Description": "Added the [restore](https://docs.microsoft.com/en-us/graph/api/cloudpc-restore?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                "Target": "cloudPC"
+              }
+            ],
+            "Id": "f3def7ad-015a-48bc-aaf2-b944069124cd",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-08-24T02:53:28.597151Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         }
