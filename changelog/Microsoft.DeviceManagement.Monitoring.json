@@ -1,0 +1,134 @@
+{
+    "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "aggregationType",
+            "ChangeType": "Addition",
+            "Description": "Added the **aggregationType** enumeration type.",
+            "Target": "aggregationType"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "alertRuleTemplate",
+            "ChangeType": "Addition",
+            "Description": "Added the **alertRuleTemplate** enumeration type.",
+            "Target": "alertRuleTemplate"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "alertStatusType",
+            "ChangeType": "Addition",
+            "Description": "Added the **alertStatusType** enumeration type.",
+            "Target": "alertStatusType"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "notificationChannelType",
+            "ChangeType": "Addition",
+            "Description": "Added the **notificationChannelType** enumeration type.",
+            "Target": "notificationChannelType"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "operatorType",
+            "ChangeType": "Addition",
+            "Description": "Added the **operatorType** enumeration type.",
+            "Target": "operatorType"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "ruleSeverityType",
+            "ChangeType": "Addition",
+            "Description": "Added the **ruleSeverityType** enumeration type.",
+            "Target": "ruleSeverityType"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "Resource",
+            "ChangedApiName": "alertImpact",
+            "ChangeType": "Addition",
+            "Description": "Added the [alertImpact](https://docs.microsoft.com/en-us/graph/api/resources/alertImpact?view=graph-rest-beta) resource type.",
+            "Target": "alertImpact"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "Resource",
+            "ChangedApiName": "notificationChannel",
+            "ChangeType": "Addition",
+            "Description": "Added the [notificationChannel](https://docs.microsoft.com/en-us/graph/api/resources/notificationChannel?view=graph-rest-beta) resource type.",
+            "Target": "notificationChannel"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "Resource",
+            "ChangedApiName": "portalNotification",
+            "ChangeType": "Addition",
+            "Description": "Added the [portalNotification](https://docs.microsoft.com/en-us/graph/api/resources/portalNotification?view=graph-rest-beta) resource type.",
+            "Target": "portalNotification"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "Resource",
+            "ChangedApiName": "ruleThreshold",
+            "ChangeType": "Addition",
+            "Description": "Added the [ruleThreshold](https://docs.microsoft.com/en-us/graph/api/resources/ruleThreshold?view=graph-rest-beta) resource type.",
+            "Target": "ruleThreshold"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "Resource",
+            "ChangedApiName": "alertRecord",
+            "ChangeType": "Addition",
+            "Description": "Added the [alertRecord](https://docs.microsoft.com/en-us/graph/api/resources/alertRecord?view=graph-rest-beta) resource",
+            "Target": "alertRecord"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "Resource",
+            "ChangedApiName": "alertRule",
+            "ChangeType": "Addition",
+            "Description": "Added the [alertRule](https://docs.microsoft.com/en-us/graph/api/resources/alertRule?view=graph-rest-beta) resource",
+            "Target": "alertRule"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "Resource",
+            "ChangedApiName": "monitoring",
+            "ChangeType": "Addition",
+            "Description": "Added the [monitoring](https://docs.microsoft.com/en-us/graph/api/resources/monitoring?view=graph-rest-beta) resource",
+            "Target": "monitoring"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "Method",
+            "ChangedApiName": "setPortalNotificationAsSent",
+            "ChangeType": "Addition",
+            "Description": "Added the [setPortalNotificationAsSent](https://docs.microsoft.com/en-us/graph/api/setPortalNotificationAsSent?view=graph-rest-beta) method to the [setPortalNotificationAsSent](https://docs.microsoft.com/en-us/graph/api/setPortalNotificationAsSent?view=graph-rest-beta) resource.",
+            "Target": "setPortalNotificationAsSent"
+          },
+          {
+            "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+            "ApiChange": "Method",
+            "ChangedApiName": "getPortalNotifications",
+            "ChangeType": "Addition",
+            "Description": "Added the [getPortalNotifications](https://docs.microsoft.com/en-us/graph/api/getPortalNotifications?view=graph-rest-beta) method to the [getPortalNotifications](https://docs.microsoft.com/en-us/graph/api/getPortalNotifications?view=graph-rest-beta) resource.",
+            "Target": "getPortalNotifications"
+          }
+        ],
+        "Id": "ee70b5aa-c9c1-4951-99f8-9eeef35ceadc",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2022-03-25T06:50:04.8097204Z",
+        "WorkloadArea": "Microsoft.DeviceManagement.Monitoring",
+        "SubArea": ""
+      }
+    ]
+}
