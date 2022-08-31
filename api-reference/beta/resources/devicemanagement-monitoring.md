@@ -25,8 +25,8 @@ The entry point entity type to access all alert related entities and APIs.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|alertRecords|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md) collection|The collection of alert rules.|
-|alertRules|[microsoft.graph.deviceManagement.alertRule](../resources/devicemanagement-alertrule.md) collection|The collection of records of alert events.|
+|alertRecords|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md) collection|The collection of records of alert events.|
+|alertRules|[microsoft.graph.deviceManagement.alertRule](../resources/devicemanagement-alertrule.md) collection|The collection of alert rules.|
 
 ## JSON representation
 
