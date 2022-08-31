@@ -1,53 +1,47 @@
 ---
-title: "Join the Microsoft Partner Network to get an education tenant"
-description: "This article describes the steps to join the Microsoft Partner Network."
+title: "Join the Microsoft Partner Network"
+description: "Learn how to join the Microsoft Partner Network as a first step to setting up an EDU tenant to build and test solutions using the Microsoft Graph education API."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Join the Microsoft Partner Network to get an education tenant
+# Join the Microsoft Partner Network
 
-Microsoft Partner Network is a powerful community of companies and organizations like yours that connects you to the relationships, insights, tools, resources, and programs you need to amaze your customers and drive business growth.
+The Microsoft Partner Network is a powerful community of organizations like yours that connects you to the relationships, insights, tools, resources, and programs you need to amaze your customers and drive business growth.
 
-> **Note**: Join Microsoft Partner Network is required if you need an EDU dev tenant and publishing apps in Microsoft marketplaces.
+You must join the Microsoft Partner Network in order to set up an EDU dev tenant or publish apps to Microsoft marketplaces.
 
-## Steps to join the Microsoft Partner Network
+Use the following steps to join Microsoft Partner Network:
 
-To join the Microsoft Partner Network, go to the [Partner with Microsoft](https://partner.microsoft.com/) page on the Partner Network website and select **Become a partner**.
+1. Go to [Partner with Microsoft](https://partner.microsoft.com/) and select **Become a partner**.
 
-1. Specify how would you like to partner with Microsoft, select one or more of the options and click **Next**.
+1. Select one or more options to specify how you would like to partner with Microsoft, and choose **Next**.
 
-2. Specify your company work account and click **Next**.
+2. Specify your company work account and choose **Next**.
 
-3. To verify your identity set your phone number and select how would you like to get the verification code, click **Text me** or **Call me** according to your selection, and put your code when receive it and click **Next**.
+3. To verify your identity, set your phone number and select **Text me** or **Call me** to get the verification code. When you receive the code, input it and choose **Next**.
 
 4. Select **Yes** to specify that your email address was provided by your company.
 
-5. Complete you MPN account information, set a password and confirm the verification code sent to your email, click **Next**.
+5. Complete you account information, set a password, and confirm the verification code sent to your email, and then choose **Next**.
 
-    ![MPN account information](./images/msgraph-onboarding/mpn-step5.png)
+6. Sign in with your Microsoft Partner Network account.
 
-6. Sign in with your MPN account.
+7. Provide your company information and choose **Accept and continue**. You have created your Microsoft Partner Network account, and you can send an invitation to members of your organization.
 
-7. Provide your company information and click **Accept and continue**.
-
-8. The MPN account is created, send invite to your company members if needed.
-
-9. You can access [Partner Center](https://partner.microsoft.com/) with your MPN account.
+You can now access [Partner Center](https://partner.microsoft.com/) with your Microsoft Partner Network account.
 
 ## Next steps
 
-Joining to Microsoft Partner Network is required before any tenant creation. You can choose any tenant according to your needs.
+Set up your development environment. You can create two types of EDU tenants:
 
-- Create a [Demo EDU dev tenant](/graph/msgraph-onboarding-devtenant)
-- Create a [Demo EDU tenant](/graph/msgraph-onboarding-edutenant)
+- [Demo EDU dev tenant](/graph/msgraph-onboarding-devtenant)
+- [Demo EDU tenant](/graph/msgraph-onboarding-edutenant)
 
 ## See also
 
-You can review more detailed information and benefits of becoming a Microsoft Partner.
-
 - [Partner With Microsoft](https://docs.microsoft.com/partner-center/mpn-overview)
-- [More details about create an MPN account in Partner Center](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account)
-- [Manage your Partner Center account](https://docs.microsoft.com/partner-center/partner-center-account-setup)
+- [What is the Microsoft Partner Network?](/partner-center/mpn-create-a-partner-center-account)
+- [Partner Center account management](https://docs.microsoft.com/partner-center/partner-center-account-setup)
