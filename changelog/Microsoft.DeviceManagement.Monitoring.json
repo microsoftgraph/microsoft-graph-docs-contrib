@@ -1,142 +1,160 @@
 {
     "changelog": [
-      {
-        "ChangeList": [
-          {
+        {
+            "ChangeList": [
+              {
+                "Id": "861bc2b0-7ec6-45ed-8e6d-b1ba4cb6c90e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "notificationReceiver",
+                "ChangeType": "Addition",
+                "Description": "Added the [notificationReceiver](https://docs.microsoft.com/en-us/graph/api/resources/notificationReceiver?view=graph-rest-beta) resource type.",
+                "Target": "notificationReceiver"
+              }
+            ],
+            "Id": "861bc2b0-7ec6-45ed-8e6d-b1ba4cb6c90e",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-08-31T09:57:56.1933858Z",
+            "WorkloadArea": "Microsoft.DeviceManagement.Monitoring",
+            "SubArea": ""
+        },
+        {
+            "ChangeList": [
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Resource",
+                "ChangedApiName": "monitoring",
+                "ChangeType": "Addition",
+                "Description": "Added the [monitoring](https://docs.microsoft.com/en-us/graph/api/resources/deviceManagement?view=graph-rest-beta) resource",
+                "Target": "deviceManagement"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Singleton",
+                "ChangedApiName": "monitoring",
+                "ChangeType": "Addition",
+                "Description": "Added the [monitoring](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+                "Target": "container"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Enumeration",
+                "ChangedApiName": "aggregationType",
+                "ChangeType": "Addition",
+                "Description": "Added the [aggregationType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+                "Target": "aggregationType"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Enumeration",
+                "ChangedApiName": "alertRuleTemplate",
+                "ChangeType": "Addition",
+                "Description": "Added the [alertRuleTemplate](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+                "Target": "alertRuleTemplate"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Enumeration",
+                "ChangedApiName": "alertStatusType",
+                "ChangeType": "Addition",
+                "Description": "Added the [alertStatusType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+                "Target": "alertStatusType"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Enumeration",
+                "ChangedApiName": "notificationChannelType",
+                "ChangeType": "Addition",
+                "Description": "Added the [notificationChannelType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+                "Target": "notificationChannelType"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Enumeration",
+                "ChangedApiName": "operatorType",
+                "ChangeType": "Addition",
+                "Description": "Added the [operatorType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+                "Target": "operatorType"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Enumeration",
+                "ChangedApiName": "ruleSeverityType",
+                "ChangeType": "Addition",
+                "Description": "Added the [ruleSeverityType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+                "Target": "ruleSeverityType"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Resource",
+                "ChangedApiName": "alertImpact",
+                "ChangeType": "Addition",
+                "Description": "Added the [alertImpact](https://docs.microsoft.com/en-us/graph/api/resources/alertImpact?view=graph-rest-beta) resource",
+                "Target": "alertImpact"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Resource",
+                "ChangedApiName": "notificationChannel",
+                "ChangeType": "Addition",
+                "Description": "Added the [notificationChannel](https://docs.microsoft.com/en-us/graph/api/resources/notificationChannel?view=graph-rest-beta) resource",
+                "Target": "notificationChannel"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Resource",
+                "ChangedApiName": "portalNotification",
+                "ChangeType": "Addition",
+                "Description": "Added the [portalNotification](https://docs.microsoft.com/en-us/graph/api/resources/portalNotification?view=graph-rest-beta) resource",
+                "Target": "portalNotification"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Resource",
+                "ChangedApiName": "ruleThreshold",
+                "ChangeType": "Addition",
+                "Description": "Added the [ruleThreshold](https://docs.microsoft.com/en-us/graph/api/resources/ruleThreshold?view=graph-rest-beta) resource",
+                "Target": "ruleThreshold"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Resource",
+                "ChangedApiName": "alertRecord",
+                "ChangeType": "Addition",
+                "Description": "Added the [alertRecord](https://docs.microsoft.com/en-us/graph/api/resources/alertRecord?view=graph-rest-beta) resource",
+                "Target": "alertRecord"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Resource",
+                "ChangedApiName": "alertRule",
+                "ChangeType": "Addition",
+                "Description": "Added the [alertRule](https://docs.microsoft.com/en-us/graph/api/resources/alertRule?view=graph-rest-beta) resource",
+                "Target": "alertRule"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Method",
+                "ChangedApiName": "setPortalNotificationAsSent",
+                "ChangeType": "Addition",
+                "Description": "Added the [setPortalNotificationAsSent](https://docs.microsoft.com/en-us/graph/api/setPortalNotificationAsSent?view=graph-rest-beta) resource",
+                "Target": "setPortalNotificationAsSent"
+            },
+            {
+                "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+                "ApiChange": "Method",
+                "ChangedApiName": "getPortalNotifications",
+                "ChangeType": "Addition",
+                "Description": "Added the [getPortalNotifications](https://docs.microsoft.com/en-us/graph/api/getPortalNotifications?view=graph-rest-beta) resource",
+                "Target": "getPortalNotifications"
+            }
+            ],
             "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Resource",
-            "ChangedApiName": "monitoring",
-            "ChangeType": "Addition",
-            "Description": "Added the [monitoring](https://docs.microsoft.com/en-us/graph/api/resources/deviceManagement?view=graph-rest-beta) resource",
-            "Target": "deviceManagement"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Singleton",
-            "ChangedApiName": "monitoring",
-            "ChangeType": "Addition",
-            "Description": "Added the [monitoring](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-            "Target": "container"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "aggregationType",
-            "ChangeType": "Addition",
-            "Description": "Added the [aggregationType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-            "Target": "aggregationType"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "alertRuleTemplate",
-            "ChangeType": "Addition",
-            "Description": "Added the [alertRuleTemplate](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-            "Target": "alertRuleTemplate"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "alertStatusType",
-            "ChangeType": "Addition",
-            "Description": "Added the [alertStatusType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-            "Target": "alertStatusType"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "notificationChannelType",
-            "ChangeType": "Addition",
-            "Description": "Added the [notificationChannelType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-            "Target": "notificationChannelType"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "operatorType",
-            "ChangeType": "Addition",
-            "Description": "Added the [operatorType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-            "Target": "operatorType"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "ruleSeverityType",
-            "ChangeType": "Addition",
-            "Description": "Added the [ruleSeverityType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-            "Target": "ruleSeverityType"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Resource",
-            "ChangedApiName": "alertImpact",
-            "ChangeType": "Addition",
-            "Description": "Added the [alertImpact](https://docs.microsoft.com/en-us/graph/api/resources/alertImpact?view=graph-rest-beta) resource",
-            "Target": "alertImpact"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Resource",
-            "ChangedApiName": "notificationChannel",
-            "ChangeType": "Addition",
-            "Description": "Added the [notificationChannel](https://docs.microsoft.com/en-us/graph/api/resources/notificationChannel?view=graph-rest-beta) resource",
-            "Target": "notificationChannel"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Resource",
-            "ChangedApiName": "portalNotification",
-            "ChangeType": "Addition",
-            "Description": "Added the [portalNotification](https://docs.microsoft.com/en-us/graph/api/resources/portalNotification?view=graph-rest-beta) resource",
-            "Target": "portalNotification"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Resource",
-            "ChangedApiName": "ruleThreshold",
-            "ChangeType": "Addition",
-            "Description": "Added the [ruleThreshold](https://docs.microsoft.com/en-us/graph/api/resources/ruleThreshold?view=graph-rest-beta) resource",
-            "Target": "ruleThreshold"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Resource",
-            "ChangedApiName": "alertRecord",
-            "ChangeType": "Addition",
-            "Description": "Added the [alertRecord](https://docs.microsoft.com/en-us/graph/api/resources/alertRecord?view=graph-rest-beta) resource",
-            "Target": "alertRecord"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Resource",
-            "ChangedApiName": "alertRule",
-            "ChangeType": "Addition",
-            "Description": "Added the [alertRule](https://docs.microsoft.com/en-us/graph/api/resources/alertRule?view=graph-rest-beta) resource",
-            "Target": "alertRule"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Method",
-            "ChangedApiName": "setPortalNotificationAsSent",
-            "ChangeType": "Addition",
-            "Description": "Added the [setPortalNotificationAsSent](https://docs.microsoft.com/en-us/graph/api/setPortalNotificationAsSent?view=graph-rest-beta) resource",
-            "Target": "setPortalNotificationAsSent"
-          },
-          {
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "ApiChange": "Method",
-            "ChangedApiName": "getPortalNotifications",
-            "ChangeType": "Addition",
-            "Description": "Added the [getPortalNotifications](https://docs.microsoft.com/en-us/graph/api/getPortalNotifications?view=graph-rest-beta) resource",
-            "Target": "getPortalNotifications"
-          }
-        ],
-        "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-        "Cloud": "Prod",
-        "Version": "beta",
-        "CreatedDateTime": "2022-08-30T06:35:09.9640775Z",
-        "WorkloadArea": "Microsoft.DeviceManagement.Monitoring",
-        "SubArea": ""
-      }
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-08-30T06:35:09.9640775Z",
+            "WorkloadArea": "Microsoft.DeviceManagement.Monitoring",
+            "SubArea": ""
+        }
     ]
   }
