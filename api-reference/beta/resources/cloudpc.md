@@ -47,7 +47,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |:---|:---|:---|
 |aadDeviceId|String|The Azure Active Directory (Azure AD) device ID of the Cloud PC.|
 |connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC is able to be connected or not.|
-|diskEncryptionState|[cloudPcDiskEncryptionState](#cloudPcDiskEncryptionState-values)|The disk encryption applied to the Cloud PC.|
+|diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncryped`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`.|
 |displayName|String|The display name of the Cloud PC.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The unique identifier for the Cloud PC. Read-only.|
