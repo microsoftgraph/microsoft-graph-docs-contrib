@@ -28,18 +28,10 @@ In this step, you'll setup your Microsoft 365 tenant to enable the usage of Data
     ![A screenshot showing a user is giving the group a name of "Consent Request Approvers" in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-cons-apprv.png)
 
    - **Owners**: Click **Assign owners** in the right pane and add at least one owner for the group.
-   - **Members**: Click **Add members** and add the two users that you enabled the **Global Administrator** role to this group.
+   - **Members**: Click **Add members** and add the two users that you enabled the **Global Administrator** role to this group. Both users must have the **Global Adminstrator** role.
    - **Email prefix**: consentrequestapprovers
 
     ![A screenshot showing a user creating the email address for the previously created group in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-cons-apprv-pref.png)
-
-1. The newly created group might take some time to show up in the list. When the group has been created, please select it.
-
-1. Go to the **Active teams & groups** option again and search for the group you've just created.
-
-1. Select the group and in the **Members** tab, select **View all and manage members**.
-
-1. Add the two users that you enabled the **Global Administrator** role to this new group. Both users added into this group must have the **Global Administrator** role.
 
 1. Finally, click **Create group**. It can take up to an hour before the newly created group shows up in the list.
 
