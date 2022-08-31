@@ -35,7 +35,7 @@ The preceding limits apply to the following resources:
 
 - [educationAssignment](/graph/api/resources/educationassignment)
 - [educationSubmission](/graph/api/resources/educationsubmission)
-- [trending](/graph/api/resources/trending)
+- [trending](/graph/api/resources/insights-trending)
 - [educationResource](/graph/api/resources/educationresource)
 
 ## Cloud communication service limits
