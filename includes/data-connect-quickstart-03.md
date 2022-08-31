@@ -50,9 +50,9 @@ The first step is to create an Azure Active Directory (Azure AD) application tha
 1. On the sidebar navigation for the application, select **Owners**.
 
 1. Ensure that your account meets the following requirements to be an application owner:
-    - You have a valid user account within the tenant.
-    - You must have a valid and working E5 subscription/license.
-    - You need to have an Exchange Online assigned (must have a mailbox).
+    - You have a valid user account within the tenant. Your user account must be corresponding to a valid user in the tenant and NOT an SPN.
+    - Your account must have an Exchange Online license assigned (must have a mailbox).
+    - Alongside the Exchange Online license, your account must also have a working E5 subscription/license.
 
 1. Verify that your account is listed as an application owner. If your account isn't listed yet as an application owner, add it to the list.
 
