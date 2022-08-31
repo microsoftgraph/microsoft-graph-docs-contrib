@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [authenticationContextClassReference](../resources/authenticationContextClassReference.md).
 
 ## Permissions
@@ -66,7 +64,7 @@ The following example shows creating a new authenticationcontextclassreference t
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationContextClassReferences
+PATCH https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationContextClassReferences
 Content-type: application/json
 
 {
@@ -92,7 +90,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/authenticationContextClassReference/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#conditionalAccess/authenticationContextClassReference/$entity",
     "id": "c1",
     "displayName": "Contoso medium",
     "description": "Medium protection level defined for Contoso policy",

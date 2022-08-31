@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve the properties and relationships of a [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
 
 ## Permissions
@@ -82,7 +80,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/authenticationContextClassReferences/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#conditionalAccess/authenticationContextClassReferences/$entity",
     "id": "c1",
     "displayName": "Contoso medium",
     "description": "Medium protection level defined for Contoso policy",

@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
 
 ## Permissions
@@ -67,7 +65,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationContextClassReferences/c1
+PATCH https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationContextClassReferences/c1
 Content-type: application/json
 
 {

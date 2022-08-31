@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
 
 ## Permissions
@@ -49,7 +47,7 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
-This method will return an error if the authenticationContextClassReference has the property isAvailable is set to true. The error returned will be '400 Bad Request' response code. This prevents the an authenticationContextClassReference from being deleted, that may still be in use.
+This method will return an error when deleting a published authenticationContextClassReference. A published authenticationContextClassReference has has the property isAvailable is set to true. The error returned will be `403 Forbidden` response code. If authenticationContextClassReference is used by any Conditional Access policy a `200 Bad Request` will be returned.  This helps prevent an authenticationContextClassReference from being deleted, that may still be in use.
 
 ## Examples
 

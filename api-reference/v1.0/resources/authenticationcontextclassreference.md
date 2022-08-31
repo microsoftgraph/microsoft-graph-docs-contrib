@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an Azure Active Directory authentication context class reference. Authentication context class references are custom values that define a Conditional Access authentication requirement.
 
 ## Methods
