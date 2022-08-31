@@ -7524,7 +7524,7 @@ items:
             href: api/timeoffrequest-approve.md
           - name: Decline
             href: api/timeoffrequest-decline.md
-        - name: Workforce integration
+        - name: Workforce integrations
           href: resources/workforceintegration.md
           items:
           - name: List
