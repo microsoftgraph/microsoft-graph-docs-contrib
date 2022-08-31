@@ -35,35 +35,35 @@ items:
     - name: Query parameters
       displayName: OData version 4.01, OData query parameters
       items:
-        - name: Use query parameters
-          displayName: OData query parameters, OData
-          href: /graph/query-parameters?context=graph/api/1.0
-        - name: Use $filter
-          displayName: OData query parameters, OData
-          href: /graph/filter-query-parameter?context=graph/api/1.0
-        - name: Use $search
-          displayName: OData query parameters, OData
-          href: /graph/search-query-parameter?context=graph/api/1.0
-        - name: Advanced query capabilities
-          displayName: OData query parameters, OData
-          href: /graph/aad-advanced-queries?context=graph/api/1.0
-        - name: Optimize requests with query parameters
-          displayName: OData query parameters, OData
-          href: /learn/modules/optimize-data-usage
+      - name: Use query parameters
+        displayName: OData query parameters, OData
+        href: /graph/query-parameters?context=graph/api/1.0
+      - name: Use $filter
+        displayName: OData query parameters, OData
+        href: /graph/filter-query-parameter?context=graph/api/1.0
+      - name: Use $search
+        displayName: OData query parameters, OData
+        href: /graph/search-query-parameter?context=graph/api/1.0
+      - name: Advanced query capabilities
+        displayName: OData query parameters, OData
+        href: /graph/aad-advanced-queries?context=graph/api/1.0
+      - name: Optimize requests with query parameters
+        displayName: OData query parameters, OData
+        href: /learn/modules/optimize-data-usage
     - name: Batching
       href: /graph/json-batching?context=graph/api/1.0
       displayName: Batch request
     - name: Throttling
       items:
-        - name: Overview
-          href: /graph/throttling?context=graph/api/1.0
-          displayName: throttling
-        - name: Service-specific limits
-          href: /graph/throttling-limits?context=graph/api/1.0
-          displayName: throttling
-        - name: Optimize network traffic
-          href: /learn/modules/optimize-network-traffic          
-          displayName: throttling
+      - name: Overview
+        href: /graph/throttling?context=graph/api/1.0
+        displayName: throttling
+      - name: Service-specific limits
+        href: /graph/throttling-limits?context=graph/api/1.0
+        displayName: throttling
+      - name: Optimize network traffic
+        href: /learn/modules/optimize-network-traffic          
+        displayName: throttling
     - name: Change notifications
       items:
       - name: Overview
@@ -81,19 +81,19 @@ items:
         href: /graph/universal-print-webhook-notifications?context=graph/api/1.0
       - name: Change notifications for Microsoft Teams resources
         items:
-          - name: Notification types and payloads
-            href: /graph/teams-change-notification-in-microsoft-teams-overview?context=graph/api/1.0
-            displayName: change notifications, Teams, Microsoft Teams
-          - name: Teams and channels
-            href: /graph/teams-changenotifications-team-and-channel?context=graph/api/1.0
-          - name: Team and channel membership
-            href: /graph/teams-changenotifications-teamMembership?context=graph/api/1.0
-          - name: Chat and channel messages
-            href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
-          - name: Chat
-            href: /graph/teams-changenotifications-chat?context=graph/api/1.0
-          - name: Chat membership
-            href: /graph/teams-changenotifications-chatMembership?context=graph/api/1.0
+        - name: Notification types and payloads
+          href: /graph/teams-change-notification-in-microsoft-teams-overview?context=graph/api/1.0
+          displayName: change notifications, Teams, Microsoft Teams
+        - name: Teams and channels
+          href: /graph/teams-changenotifications-team-and-channel?context=graph/api/1.0
+        - name: Team and channel membership
+          href: /graph/teams-changenotifications-teamMembership?context=graph/api/1.0
+        - name: Chat and channel messages
+          href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
+        - name: Chat
+          href: /graph/teams-changenotifications-chat?context=graph/api/1.0
+        - name: Chat membership
+          href: /graph/teams-changenotifications-chatMembership?context=graph/api/1.0
       - name: Change notifications for Outlook resources
         href: /graph/outlook-change-notifications-overview?context=graph/api/1.0
     - name: Change tracking
@@ -165,13 +165,13 @@ items:
         href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
     - name: Exchange Web Services
       items:
-        - name: Migrate EWS apps
-          href: /graph/migrate-exchange-web-services-overview?context=graph/api/1.0
-          displayName: Migration, Exchange Web Services, EWS, migrate
-        - name: Authentication
-          href: /graph/migrate-exchange-web-services-authentication?context=graph/api/1.0
-        - name: API mapping
-          href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/1.0
+      - name: Migrate EWS apps
+        href: /graph/migrate-exchange-web-services-overview?context=graph/api/1.0
+        displayName: Migration, Exchange Web Services, EWS, migrate
+      - name: Authentication
+        href: /graph/migrate-exchange-web-services-authentication?context=graph/api/1.0
+      - name: API mapping
+        href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/1.0
   - name: Use SDKs
     items:
       - name: Overview
@@ -198,16 +198,16 @@ items:
         href: /graph/sdks/use-beta?context=graph/api/1.0
       - name: Use PowerShell
         items:
-          - name: PowerShell overview
-            href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
-          - name: Install PowerShell SDK
-            href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
-          - name: Get started
-            href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
-          - name: Navigate the PowerShell SDK
-            href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
-          - name: App-only authentication
-            href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+        - name: PowerShell overview
+          href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
+        - name: Install PowerShell SDK
+          href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
+        - name: Get started
+          href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
+        - name: Navigate the PowerShell SDK
+          href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
+        - name: App-only authentication
+          href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
   - name: Use the toolkit
     items:
       - name: Overview
@@ -215,95 +215,95 @@ items:
         displayName: Microsoft Graph Toolkit, toolkit
       - name: Get started
         items:
-          - name: Get started
-            href: /graph/toolkit/get-started/overview?context=graph/api/1.0
-            displayName: Microsoft Graph Toolkit, toolkit
-          - name: Toolkit for React
-            href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
-          - name: Toolkit for SPFx
-            href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
+        - name: Get started
+          href: /graph/toolkit/get-started/overview?context=graph/api/1.0
+          displayName: Microsoft Graph Toolkit, toolkit
+        - name: Toolkit for React
+          href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
+        - name: Toolkit for SPFx
+          href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
       - name: Build your first app
         items:
-          - name: Register an Azure AD app
-            href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/1.0
-          - name: Build a web app (JavaScript)
-            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
-          - name: Build a web app (React)
-            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
-          - name: Build a web app (Angular)
-            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
-          - name: Build a SharePoint web part
-            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
-          - name: Build a Teams tab
-            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
-          - name: Build a Teams tab with SSO
-            href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/1.0
-          - name: Build an Electron app
-            href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/1.0
+        - name: Register an Azure AD app
+          href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/1.0
+        - name: Build a web app (JavaScript)
+          href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+        - name: Build a web app (React)
+          href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
+        - name: Build a web app (Angular)
+          href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
+        - name: Build a SharePoint web part
+          href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
+        - name: Build a Teams tab
+          href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
+        - name: Build a Teams tab with SSO
+          href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/1.0
+        - name: Build an Electron app
+          href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/1.0
       - name: Providers
         items:
-          - name: Using the providers
-            href: /graph/toolkit/providers/providers?context=graph/api/1.0
-            displayName: Microsoft Graph Toolkit providers, toolkit provider
-          - name: MSAL provider
-            href: /graph/toolkit/providers/msal?context=graph/api/1.0
-          - name: MSAL2 provider
-            href: /graph/toolkit/providers/msal2?context=graph/api/1.0
-          - name: SharePoint provider
-            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
-          - name: Teams provider
-            href: /graph/toolkit/providers/teams?context=graph/api/1.0
-          - name: Teams MSAL2 provider
-            href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
-          - name: TeamsFx provider
-            href: /graph/toolkit/providers/teamsfx?context=graph/api/1.0
-          - name: Electron provider
-            href: /graph/toolkit/providers/electron?context=graph/api/1.0
-          - name: Proxy provider
-            href: /graph/toolkit/providers/proxy?context=graph/api/1.0
-          - name: Custom provider
-            href: /graph/toolkit/providers/custom?context=graph/api/1.0
+        - name: Using the providers
+          href: /graph/toolkit/providers/providers?context=graph/api/1.0
+          displayName: Microsoft Graph Toolkit providers, toolkit provider
+        - name: MSAL provider
+          href: /graph/toolkit/providers/msal?context=graph/api/1.0
+        - name: MSAL2 provider
+          href: /graph/toolkit/providers/msal2?context=graph/api/1.0
+        - name: SharePoint provider
+          href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
+        - name: Teams provider
+          href: /graph/toolkit/providers/teams?context=graph/api/1.0
+        - name: Teams MSAL2 provider
+          href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
+        - name: TeamsFx provider
+          href: /graph/toolkit/providers/teamsfx?context=graph/api/1.0
+        - name: Electron provider
+          href: /graph/toolkit/providers/electron?context=graph/api/1.0
+        - name: Proxy provider
+          href: /graph/toolkit/providers/proxy?context=graph/api/1.0
+        - name: Custom provider
+          href: /graph/toolkit/providers/custom?context=graph/api/1.0
       - name: Components
         items:
-          - name: Login
-            href: /graph/toolkit/components/login?context=graph/api/1.0
-            displayName: Microsoft Graph toolkit components, toolkit component
-          - name: Get
-            href: /graph/toolkit/components/get?context=graph/api/1.0
-          - name: Person
-            href: /graph/toolkit/components/person?context=graph/api/1.0
-          - name: People
-            href: /graph/toolkit/components/people?context=graph/api/1.0
-          - name: Person card
-            href: /graph/toolkit/components/person-card?context=graph/api/1.0
-          - name: People picker
-            href: /graph/toolkit/components/people-picker?context=graph/api/1.0
-          - name: Teams channel picker
-            href: /graph/toolkit/components/teams-channel-picker?context=graph/api/1.0
-          - name: Agenda
-            href: /graph/toolkit/components/agenda?context=graph/api/1.0
-          - name: Planner tasks
-            href: /graph/toolkit/components/tasks?context=graph/api/1.0
-          - name: To-do tasks
-            href: /graph/toolkit/components/todo?context=graph/api/1.0
-          - name: File
-            href: /graph/toolkit/components/file?context=graph/api/1.0
-          - name: File list
-            href: /graph/toolkit/components/file-list?context=graph/api/1.0
+        - name: Login
+          href: /graph/toolkit/components/login?context=graph/api/1.0
+          displayName: Microsoft Graph toolkit components, toolkit component
+        - name: Get
+          href: /graph/toolkit/components/get?context=graph/api/1.0
+        - name: Person
+          href: /graph/toolkit/components/person?context=graph/api/1.0
+        - name: People
+          href: /graph/toolkit/components/people?context=graph/api/1.0
+        - name: Person card
+          href: /graph/toolkit/components/person-card?context=graph/api/1.0
+        - name: People picker
+          href: /graph/toolkit/components/people-picker?context=graph/api/1.0
+        - name: Teams channel picker
+          href: /graph/toolkit/components/teams-channel-picker?context=graph/api/1.0
+        - name: Agenda
+          href: /graph/toolkit/components/agenda?context=graph/api/1.0
+        - name: Planner tasks
+          href: /graph/toolkit/components/tasks?context=graph/api/1.0
+        - name: To-do tasks
+          href: /graph/toolkit/components/todo?context=graph/api/1.0
+        - name: File
+          href: /graph/toolkit/components/file?context=graph/api/1.0
+        - name: File list
+          href: /graph/toolkit/components/file-list?context=graph/api/1.0
       - name: Customize components
         items:
-          - name: Styling components
-            href: /graph/toolkit/customize-components/style?context=graph/api/1.0
-          - name: Templating components
-            href: /graph/toolkit/customize-components/templates?context=graph/api/1.0
-          - name: Handling events
-            href: /graph/toolkit/customize-components/events?context=graph/api/1.0
-          - name: Caching Microsoft Graph calls in components
-            href: /graph/toolkit/customize-components/cache?context=graph/api/1.0
-          - name: Localizing components
-            href: /graph/toolkit/customize-components/localization?context=graph/api/1.0
-          - name: Right-to-left support
-            href: /graph/toolkit/customize-components/right-to-left?context=graph/api/1.0
+        - name: Styling components
+          href: /graph/toolkit/customize-components/style?context=graph/api/1.0
+        - name: Templating components
+          href: /graph/toolkit/customize-components/templates?context=graph/api/1.0
+        - name: Handling events
+          href: /graph/toolkit/customize-components/events?context=graph/api/1.0
+        - name: Caching Microsoft Graph calls in components
+          href: /graph/toolkit/customize-components/cache?context=graph/api/1.0
+        - name: Localizing components
+          href: /graph/toolkit/customize-components/localization?context=graph/api/1.0
+        - name: Right-to-left support
+          href: /graph/toolkit/customize-components/right-to-left?context=graph/api/1.0
   - name: Resources
     items:
     - name: Best practices
@@ -1110,18 +1110,18 @@ items:
             - name: Permission grant condition sets
               href: resources/permissiongrantconditionset.md
               items:
-                - name: List includes
-                  href: api/permissiongrantpolicy-list-includes.md
-                - name: Create in includes
-                  href: api/permissiongrantpolicy-post-includes.md
-                - name: Delete from includes
-                  href: api/permissiongrantpolicy-delete-includes.md
-                - name: List excludes
-                  href: api/permissiongrantpolicy-list-excludes.md
-                - name: Create in excludes
-                  href: api/permissiongrantpolicy-post-excludes.md
-                - name: Delete from excludes
-                  href: api/permissiongrantpolicy-delete-excludes.md
+              - name: List includes
+                href: api/permissiongrantpolicy-list-includes.md
+              - name: Create in includes
+                href: api/permissiongrantpolicy-post-includes.md
+              - name: Delete from includes
+                href: api/permissiongrantpolicy-delete-includes.md
+              - name: List excludes
+                href: api/permissiongrantpolicy-list-excludes.md
+              - name: Create in excludes
+                href: api/permissiongrantpolicy-post-excludes.md
+              - name: Delete from excludes
+                href: api/permissiongrantpolicy-delete-excludes.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -1572,8 +1572,8 @@ items:
         - name: Print operation
           href: resources/printoperation.md
           items:
-            - name: Get
-              href: api/printoperation-get.md
+          - name: Get
+            href: api/printoperation-get.md
         - name: Printer
           href: resources/printer.md
           items:
@@ -4766,67 +4766,67 @@ items:
                 - name: Schedule requests
                   href: resources/unifiedroleassignmentschedulerequest.md
                   items:
-                    - name: List
-                      href: api/rbacapplication-list-roleassignmentschedulerequests.md
-                    - name: Create
-                      href: api/rbacapplication-post-roleassignmentschedulerequests.md
-                    - name: Get
-                      href: api/unifiedroleassignmentschedulerequest-get.md
-                    - name: Cancel
-                      href: api/unifiedroleassignmentschedulerequest-cancel.md
-                    - name: Filter by current user
-                      href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                  - name: List
+                    href: api/rbacapplication-list-roleassignmentschedulerequests.md
+                  - name: Create
+                    href: api/rbacapplication-post-roleassignmentschedulerequests.md
+                  - name: Get
+                    href: api/unifiedroleassignmentschedulerequest-get.md
+                  - name: Cancel
+                    href: api/unifiedroleassignmentschedulerequest-cancel.md
+                  - name: Filter by current user
+                    href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
                 - name: Schedules
                   href: resources/unifiedroleassignmentschedule.md
                   items:
-                    - name: List
-                      href: api/rbacapplication-list-roleassignmentschedules.md
-                    - name: Get
-                      href: api/unifiedroleassignmentschedule-get.md
-                    - name: Filter by current user
-                      href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+                  - name: List
+                    href: api/rbacapplication-list-roleassignmentschedules.md
+                  - name: Get
+                    href: api/unifiedroleassignmentschedule-get.md
+                  - name: Filter by current user
+                    href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
                 - name: Schedule instances
                   href: resources/unifiedroleassignmentscheduleinstance.md
                   items:
-                    - name: List
-                      href: api/rbacapplication-list-roleassignmentscheduleinstances.md
-                    - name: Get
-                      href: api/unifiedroleassignmentscheduleinstance-get.md
-                    - name: Filter by current user
-                      href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+                  - name: List
+                    href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+                  - name: Get
+                    href: api/unifiedroleassignmentscheduleinstance-get.md
+                  - name: Filter by current user
+                    href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
             - name: Role eligibility
               items:
               - name: Schedule requests
                 href: resources/unifiedroleeligibilityschedulerequest.md
                 items:
-                  - name: List
-                    href: api/rbacapplication-list-roleeligibilityschedulerequests.md
-                  - name: Create
-                    href: api/rbacapplication-post-roleeligibilityschedulerequests.md
-                  - name: Get
-                    href: api/unifiedroleeligibilityschedulerequest-get.md
-                  - name: Cancel
-                    href: api/unifiedroleeligibilityschedulerequest-cancel.md
-                  - name: Filter by current user
-                    href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+                - name: List
+                  href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+                - name: Create
+                  href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+                - name: Get
+                  href: api/unifiedroleeligibilityschedulerequest-get.md
+                - name: Cancel
+                  href: api/unifiedroleeligibilityschedulerequest-cancel.md
+                - name: Filter by current user
+                  href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
               - name: Schedules
                 href: resources/unifiedroleeligibilityschedule.md
                 items:
-                  - name: List
-                    href: api/rbacapplication-list-roleeligibilityschedules.md
-                  - name: Get
-                    href: api/unifiedroleeligibilityschedule-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+                - name: List
+                  href: api/rbacapplication-list-roleeligibilityschedules.md
+                - name: Get
+                  href: api/unifiedroleeligibilityschedule-get.md
+                - name: Filter by current user
+                  href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
               - name: Schedule instances
                 href: resources/unifiedroleeligibilityscheduleinstance.md
                 items:
-                  - name: List
-                    href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
-                  - name: Get
-                    href: api/unifiedroleeligibilityscheduleinstance-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+                - name: List
+                  href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+                - name: Get
+                  href: api/unifiedroleeligibilityscheduleinstance-get.md
+                - name: Filter by current user
+                  href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
             - name: Role management policies
               items:
               - name: Policies and rules
@@ -5080,10 +5080,10 @@ items:
           - name: Risk detection
             href: resources/riskdetection.md
             items:
-              - name: List
-                href: api/riskdetection-list.md
-              - name: Get
-                href: api/riskdetection-get.md
+            - name: List
+              href: api/riskdetection-list.md
+            - name: Get
+              href: api/riskdetection-get.md
           - name: Risky user
             href: resources/riskyuser.md
             items:
@@ -5389,74 +5389,74 @@ items:
           items:
           - name: Self-service sign up user flows
             items:
-             - name: Self-service sign up user flow
-               href: resources/b2xidentityuserflow.md
-             - name: List
-               href: api/identitycontainer-list-b2xuserflows.md
-             - name: Create
-               href: api/identitycontainer-post-b2xuserflows.md
-             - name: Get
-               href: api/b2xidentityuserflow-get.md
-             - name: Delete
-               href: api/b2xidentityuserflow-delete.md
-             - name: List identity providers
-               href: api/b2xidentityuserflow-list-identityproviders.md
-             - name: Add identity provider
-               href: api/b2xidentityuserflow-post-identityproviders.md
-             - name: Remove identity provider
-               href: api/b2xidentityuserflow-delete-identityproviders.md
-             - name: List user attribute assignments
-               href: api/b2xidentityuserflow-list-userattributeassignments.md
-             - name: Create user attribute assignment
-               href: api/b2xidentityuserflow-post-userattributeassignments.md
-             - name: List languages
-               href: api/b2xidentityuserflow-list-languages.md
-             - name: Get API connectors configuration
-               href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
-             - name: Configure an API connector
-               href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
+            - name: Self-service sign up user flow
+              href: resources/b2xidentityuserflow.md
+            - name: List
+              href: api/identitycontainer-list-b2xuserflows.md
+            - name: Create
+              href: api/identitycontainer-post-b2xuserflows.md
+            - name: Get
+              href: api/b2xidentityuserflow-get.md
+            - name: Delete
+              href: api/b2xidentityuserflow-delete.md
+            - name: List identity providers
+              href: api/b2xidentityuserflow-list-identityproviders.md
+            - name: Add identity provider
+              href: api/b2xidentityuserflow-post-identityproviders.md
+            - name: Remove identity provider
+              href: api/b2xidentityuserflow-delete-identityproviders.md
+            - name: List user attribute assignments
+              href: api/b2xidentityuserflow-list-userattributeassignments.md
+            - name: Create user attribute assignment
+              href: api/b2xidentityuserflow-post-userattributeassignments.md
+            - name: List languages
+              href: api/b2xidentityuserflow-list-languages.md
+            - name: Get API connectors configuration
+              href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+            - name: Configure an API connector
+              href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
           - name: User flow attributes
             items:
-             - name: User flow attribute
-               href: resources/identityuserflowattribute.md
-             - name: List
-               href: api/identityuserflowattribute-list.md
-             - name: Create
-               href: api/identityuserflowattribute-post.md
-             - name: Get
-               href: api/identityuserflowattribute-get.md
-             - name: Update
-               href: api/identityuserflowattribute-update.md
-             - name: Delete
-               href: api/identityuserflowattribute-delete.md
+            - name: User flow attribute
+              href: resources/identityuserflowattribute.md
+            - name: List
+              href: api/identityuserflowattribute-list.md
+            - name: Create
+              href: api/identityuserflowattribute-post.md
+            - name: Get
+              href: api/identityuserflowattribute-get.md
+            - name: Update
+              href: api/identityuserflowattribute-update.md
+            - name: Delete
+              href: api/identityuserflowattribute-delete.md
           - name: User flow attribute assignment
             items:
-             - name: User flow attribute assignment
-               href: resources/identityuserflowattributeassignment.md
-             - name: Get
-               href: api/identityuserflowattributeassignment-get.md
-             - name: Update
-               href: api/identityuserflowattributeassignment-update.md
-             - name: Delete
-               href: api/identityuserflowattributeassignment-delete.md
+            - name: User flow attribute assignment
+              href: resources/identityuserflowattributeassignment.md
+            - name: Get
+              href: api/identityuserflowattributeassignment-get.md
+            - name: Update
+              href: api/identityuserflowattributeassignment-update.md
+            - name: Delete
+              href: api/identityuserflowattributeassignment-delete.md
           - name: User flow language configuration
             items:
-             - name: User flow language configuration
-               href: resources/userflowlanguageconfiguration.md
-             - name: Get
-               href: api/userflowlanguageconfiguration-get.md
-             - name: List default pages
-               href: api/userflowlanguageconfiguration-list-defaultpages.md
-             - name: List overrides pages
-               href: api/userflowlanguageconfiguration-list-overridespages.md
-             - name: User flow language page
-               href: resources/userflowlanguagepage.md
-             - name: Get
-               href: api/userflowlanguagepage-get.md
-             - name: Update
-               href: api/userflowlanguagepage-put.md
-             - name: Delete
-               href: api/userflowlanguagepage-delete.md
+            - name: User flow language configuration
+              href: resources/userflowlanguageconfiguration.md
+            - name: Get
+              href: api/userflowlanguageconfiguration-get.md
+            - name: List default pages
+              href: api/userflowlanguageconfiguration-list-defaultpages.md
+            - name: List overrides pages
+              href: api/userflowlanguageconfiguration-list-overridespages.md
+            - name: User flow language page
+              href: resources/userflowlanguagepage.md
+            - name: Get
+              href: api/userflowlanguagepage-get.md
+            - name: Update
+              href: api/userflowlanguagepage-put.md
+            - name: Delete
+              href: api/userflowlanguagepage-delete.md
           - name: API connectors
             items:
             - name: API connector
@@ -5523,16 +5523,16 @@ items:
           - name: Access review stage
             href: resources/accessreviewstage.md
             items:
-              - name: List
-                href: api/accessreviewinstance-list-stages.md
-              - name: Get
-                href: api/accessreviewstage-get.md
-              - name: Update
-                href: api/accessreviewstage-update.md
-              - name: Filter by current user
-                href: api/accessreviewstage-filterbycurrentuser.md
-              - name: Stop
-                href: api/accessreviewstage-stop.md
+            - name: List
+              href: api/accessreviewinstance-list-stages.md
+            - name: Get
+              href: api/accessreviewstage-get.md
+            - name: Update
+              href: api/accessreviewstage-update.md
+            - name: Filter by current user
+              href: api/accessreviewstage-filterbycurrentuser.md
+            - name: Stop
+              href: api/accessreviewstage-stop.md
           - name: Access review instance decision item
             displayName: access review decisions 
             href: resources/accessreviewinstancedecisionitem.md
@@ -5730,67 +5730,67 @@ items:
               - name: Schedule requests
                 href: resources/unifiedroleassignmentschedulerequest.md
                 items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentschedulerequests.md
-                  - name: Create
-                    href: api/rbacapplication-post-roleassignmentschedulerequests.md
-                  - name: Get
-                    href: api/unifiedroleassignmentschedulerequest-get.md
-                  - name: Cancel
-                    href: api/unifiedroleassignmentschedulerequest-cancel.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                - name: List
+                  href: api/rbacapplication-list-roleassignmentschedulerequests.md
+                - name: Create
+                  href: api/rbacapplication-post-roleassignmentschedulerequests.md
+                - name: Get
+                  href: api/unifiedroleassignmentschedulerequest-get.md
+                - name: Cancel
+                  href: api/unifiedroleassignmentschedulerequest-cancel.md
+                - name: Filter by current user
+                  href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
               - name: Schedules
                 href: resources/unifiedroleassignmentschedule.md
                 items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentschedules.md
-                  - name: Get
-                    href: api/unifiedroleassignmentschedule-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+                - name: List
+                  href: api/rbacapplication-list-roleassignmentschedules.md
+                - name: Get
+                  href: api/unifiedroleassignmentschedule-get.md
+                - name: Filter by current user
+                  href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
               - name: Schedule instances
                 href: resources/unifiedroleassignmentscheduleinstance.md
                 items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentscheduleinstances.md
-                  - name: Get
-                    href: api/unifiedroleassignmentscheduleinstance-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+                - name: List
+                  href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+                - name: Get
+                  href: api/unifiedroleassignmentscheduleinstance-get.md
+                - name: Filter by current user
+                  href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
           - name: Role eligibility
             items:
             - name: Schedule requests
               href: resources/unifiedroleeligibilityschedulerequest.md
               items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityschedulerequests.md
-                - name: Create
-                  href: api/rbacapplication-post-roleeligibilityschedulerequests.md
-                - name: Get
-                  href: api/unifiedroleeligibilityschedulerequest-get.md
-                - name: Cancel
-                  href: api/unifiedroleeligibilityschedulerequest-cancel.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+              - name: List
+                href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+              - name: Create
+                href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+              - name: Get
+                href: api/unifiedroleeligibilityschedulerequest-get.md
+              - name: Cancel
+                href: api/unifiedroleeligibilityschedulerequest-cancel.md
+              - name: Filter by current user
+                href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
             - name: Schedules
               href: resources/unifiedroleeligibilityschedule.md
               items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityschedules.md
-                - name: Get
-                  href: api/unifiedroleeligibilityschedule-get.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+              - name: List
+                href: api/rbacapplication-list-roleeligibilityschedules.md
+              - name: Get
+                href: api/unifiedroleeligibilityschedule-get.md
+              - name: Filter by current user
+                href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
             - name: Schedule instances
               href: resources/unifiedroleeligibilityscheduleinstance.md
               items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
-                - name: Get
-                  href: api/unifiedroleeligibilityscheduleinstance-get.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+              - name: List
+                href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+              - name: Get
+                href: api/unifiedroleeligibilityscheduleinstance-get.md
+              - name: Filter by current user
+                href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
           - name: Role management policies
             items:
             - name: Policies and rules
@@ -6551,10 +6551,10 @@ items:
         - name: Operation
           href : resources/security-caseoperation.md
           items:
-           - name: List case operations 
-             href: api/security-ediscoverycase-list-operations.md
-           - name: Get case opreation by id
-             href: api/security-caseoperation-get.md
+          - name: List case operations 
+            href: api/security-ediscoverycase-list-operations.md
+          - name: Get case opreation by id
+            href: api/security-caseoperation-get.md
         - name: Custodian
           href: resources/security-ediscoverycustodian.md
           items:
@@ -7633,10 +7633,10 @@ items:
       - name: Workbook application
         href: resources/workbookapplication.md
         items:
-          - name: Get
-            href: api/workbookapplication-get.md
-          - name: Calculate
-            href: api/workbookapplication-calculate.md
+        - name: Get
+          href: api/workbookapplication-get.md
+        - name: Calculate
+          href: api/workbookapplication-calculate.md
       - name: Workbook comments
         href: resources/workbookcomment.md
         items:
