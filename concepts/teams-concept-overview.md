@@ -11,6 +11,7 @@ ms.custom: scenarios:getting-started
 
 [Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for team collaboration and intelligent communications, fostering a culture where employees can thrive. Built on the strength and scale of [Microsoft 365](https://products.office.com/) with over 120 million users, Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features. Available as apps on Teams and as part of Microsoft Graph are [Microsoft Shifts](https://www.microsoft.com/microsoft-teams/staff-scheduling-shift-management) and [Viva Learning](https://www.microsoft.com/microsoft-viva/learning). Shifts and its API give employers and frontline workers real-time visibility into schedules based on worker availability, and let them adjust schedules to their team's needs. Viva Learning and its API let employers integrate content from learning management systems, enabling employees to discover, share, and prioritize learning, and incorporating learning into the flow of work.
 
+
 > [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
 
 
