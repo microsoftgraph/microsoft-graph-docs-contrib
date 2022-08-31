@@ -79,10 +79,3 @@ The following is a JSON representation of the resource.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
-<!--
-{
-  "type": "#page.annotation",
-  "namespace": "microsoft.graph.deviceManagement"
-}
--->
