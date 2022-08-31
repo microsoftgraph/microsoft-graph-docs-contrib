@@ -79,16 +79,23 @@ Content-Type: application/json
   },
   "notificationChannels": [
       {
-          "notificationChannelType": "portal",
-          "receivers": [
-              ""
-          ]
+        "notificationChannelType": "portal",
+        "receivers": [
+            ""
+        ],
+        "notificationReceivers": []
       },
       {
-          "notificationChannelType": "email",
-          "receivers": [
-              "foo@bar.com"
-          ]
+        "notificationChannelType": "email",
+        "receivers": [
+            "foo@bar.com"
+        ],
+        "notificationReceivers": [
+            {
+                "locale": "en-us",
+                "contactInformation": "foo@bar.com"
+            }
+        ]
       }
   ]
 }
@@ -122,16 +129,23 @@ Content-Type: application/json
   },
   "notificationChannels": [
       {
-          "notificationChannelType": "portal",
-          "receivers": [
-              ""
-          ]
+        "notificationChannelType": "portal",
+        "receivers": [
+            ""
+        ],
+        "notificationReceivers": []
       },
       {
-          "notificationChannelType": "email",
-          "receivers": [
-              "foo@bar.com"
-          ]
+        "notificationChannelType": "email",
+        "receivers": [
+            "foo@bar.com"
+        ],
+        "notificationReceivers": [
+            {
+                "locale": "en-us",
+                "contactInformation": "foo@bar.com"
+            }
+        ]
       }
   ]
 }
