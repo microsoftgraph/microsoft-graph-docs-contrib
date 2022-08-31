@@ -73,6 +73,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/{a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/monitoring/alertRecords/$entity",
   "id": "6c46a7ba-e78a-45e5-a81c-179ab8fd3e8e",

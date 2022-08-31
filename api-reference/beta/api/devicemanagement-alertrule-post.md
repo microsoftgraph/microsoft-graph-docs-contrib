@@ -72,6 +72,7 @@ If successful, this method returns a `201 Created` response code and an [alertRu
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules
 Content-Type: application/json
+
 {
   "id": "215c55cc-b1c9-4d36-a870-be5778101714",
   "displayName": "Azure network connection failure impacting Cloud PCs",
@@ -113,6 +114,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 201 CREATED
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/monitoring/alertRules/$entity",
   "id": "215c55cc-b1c9-4d36-a870-be5778101714",

@@ -68,6 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [aler
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules/{alertRuleId}
 Content-Type: application/json
+
 {
   "severity": "informational",
   "enabled": true,
@@ -104,6 +105,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/monitoring/alertRules/$entity",
   "id": "215c55cc-b1c9-4d36-a870-be5778101714",

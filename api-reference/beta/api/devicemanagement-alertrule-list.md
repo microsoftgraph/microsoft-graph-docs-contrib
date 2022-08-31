@@ -72,6 +72,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.context": "https://canary.graph.microsoft.com/testprodbeta_cpc_sh/$metadata#deviceManagement/monitoring/alertRules",
   "value": [

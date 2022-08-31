@@ -72,6 +72,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/monitoring/alertRecords",
     "value": [
