@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [task](../resources/identitygovernance-task.md) objects of a [workflowVersion](../resources/identitygovernance-workflowversion.md).
+Get a list of [task](../resources/identitygovernance-task.md) objects in a [workflowVersion](../resources/identitygovernance-workflowversion.md).
 
 ## Permissions
 
