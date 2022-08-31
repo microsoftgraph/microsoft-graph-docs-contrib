@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new workflow object.
+Create a new [workflow](../resources/identitygovernance-workflow.md) object.
 
 ## Permissions
 
