@@ -11,6 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+
 Update the properties of an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
 
 ## Permissions
@@ -65,18 +66,14 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationContextClassReferences/c1
+PATCH https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationContextClassReferences
 Content-type: application/json
 
 {
-   "value": 
-    [
-      {
-         "displayName": "Contoso trusted locations",
-        "description": "Access is only allowed from trusted locations",
-        "isAvailable": true
-      }
-    ]
+    "id": "c1",
+    "displayName": "Contoso medium",
+    "description": "Medium protection level defined for Contoso policy",
+    "isAvailable": true
 }
 
 ### Response
