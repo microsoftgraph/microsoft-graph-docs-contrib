@@ -23,7 +23,7 @@ passwordCredentialConfiguration.SetRestrictForAppsCreatedAfterDateTime(&restrict
 passwordCredentialConfiguration1 := graphmodels.NewPasswordCredentialConfiguration()
 restrictionType := graphmodels.PASSWORDLIFETIME_APPCREDENTIALRESTRICTIONTYPE 
 passwordCredentialConfiguration1.SetRestrictionType(&restrictionType) 
-maxLifetime := "P4DT12H30M5S"
+maxLifetime , err := abstractions.ParseISODuration("P4DT12H30M5S")
 passwordCredentialConfiguration1.SetMaxLifetime(&maxLifetime) 
 restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2017-01-01T10:37:00Z")
 passwordCredentialConfiguration1.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
@@ -44,7 +44,7 @@ passwordCredentialConfiguration3.SetRestrictForAppsCreatedAfterDateTime(&restric
 passwordCredentialConfiguration4 := graphmodels.NewPasswordCredentialConfiguration()
 restrictionType := graphmodels.SYMMETRICKEYLIFETIME_APPCREDENTIALRESTRICTIONTYPE 
 passwordCredentialConfiguration4.SetRestrictionType(&restrictionType) 
-maxLifetime := "P40D"
+maxLifetime , err := abstractions.ParseISODuration("P40D")
 passwordCredentialConfiguration4.SetMaxLifetime(&maxLifetime) 
 restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2015-01-01T10:37:00Z")
 passwordCredentialConfiguration4.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
@@ -63,7 +63,7 @@ applicationRestrictions.SetPasswordCredentials(passwordCredentials)
 keyCredentialConfiguration := graphmodels.NewKeyCredentialConfiguration()
 restrictionType := graphmodels.ASYMMETRICKEYLIFETIME_APPKEYCREDENTIALRESTRICTIONTYPE 
 keyCredentialConfiguration.SetRestrictionType(&restrictionType) 
-maxLifetime := "P30D"
+maxLifetime , err := abstractions.ParseISODuration("P30D")
 keyCredentialConfiguration.SetMaxLifetime(&maxLifetime) 
 restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2015-01-01T10:37:00Z")
 keyCredentialConfiguration.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 

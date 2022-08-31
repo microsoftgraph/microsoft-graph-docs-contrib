@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DeviceManagement.Functions
 
-Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage -OutFile $outFileId
+Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage
 
 ```

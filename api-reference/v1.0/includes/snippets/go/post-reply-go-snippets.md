@@ -73,8 +73,6 @@ post.SetInReplyTo(inReplyTo)
 
 
 attachment := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.fileAttachment"
-attachment.Set"@odata.type"(&"@odata.type") 
 lastModifiedDateTime , err := time.Parse(time.RFC3339, "datetime-value")
 attachment.SetLastModifiedDateTime(&lastModifiedDateTime) 
 name := "name-value"

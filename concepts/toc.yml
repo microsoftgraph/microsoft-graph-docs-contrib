@@ -183,6 +183,20 @@ items:
           - name: Build your first custom connector
             href: connecting-external-content-build-quickstart.yml
             displayName: connectors, Microsoft Graph connectors
+          - name: Build your first custom connector using SDK
+            items:
+              - name: Overview
+                href: custom-connector-sdk-sample-overview.md
+              - name: Build the connector
+                href: custom-connector-sdk-sample-create.md
+              - name: Test the connector
+                href: custom-connector-sdk-sample-test.md
+              - name: Host the connector as a Windows service
+                href: custom-connector-sdk-sample-hosting.md
+              - name: Publish the connector
+                href: custom-connector-sdk-sample-publish.md
+              - name: Surface the data in search
+                href: custom-connector-sdk-sample-search.md
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
@@ -346,12 +360,14 @@ items:
             href: outlook-get-mime-message.md
           - name: Send MIME message
             href: outlook-send-mime-message.md
+          - name: Send mail from another user
+            href: outlook-send-mail-from-other-user.md
+          - name: Explainer for sending mail
+            href: outlook-things-to-know-about-send-mail.md
           - name: Attach large files
             href: outlook-large-attachments.md
           - name: Get shared messages
             href: outlook-share-messages-folders.md
-          - name: Send mail from another user
-            href: outlook-send-mail-from-other-user.md
           - name: Obtain immutable IDs
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
@@ -746,6 +762,34 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
+          - name: Use the connectors SDK
+            items:
+            - name: Overview
+              href: custom-connector-sdk-overview.md
+            - name: Contracts
+              items:
+              - name: Services
+                href: custom-connector-sdk-contracts-services.md
+              - name: ConnectorInfo API
+                href: custom-connector-sdk-contracts-connectorinfo.md
+              - name: Connection management APIs
+                href: custom-connector-sdk-contracts-connectionmanagement.md
+              - name: Connector crawler APIs
+                href: custom-connector-sdk-contracts-connectorcrawler.md
+              - name: Connector OAuth APIs
+                href: custom-connector-sdk-contracts-connectoroauth.md
+              - name: Common models
+                href: custom-connector-sdk-contracts-common.md
+            - name: Test utility
+              href: custom-connector-sdk-testapp.md
+            - name: Publish a connector
+              href: custom-connector-sdk-publish.md
+            - name: Develop connectors in other languages 
+              href: custom-connector-sdk-other-languages.md
+            - name: Best practices
+              href: custom-connector-sdk-best-practices.md
+            - name: Troubleshooting
+              href: custom-connector-sdk-troubleshooting.md
           - name: Use PowerShell
             items:
               - name: PowerShell overview

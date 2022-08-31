@@ -12,8 +12,6 @@ message := graphmodels.Newmessage()
 
 
 attachment := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.fileAttachment"
-attachment.Set"@odata.type"(&"@odata.type") 
 name := "guidelines.txt"
 attachment.SetName(&name) 
 additionalData := map[string]interface{}{

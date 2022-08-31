@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new AllowedValue();
 $requestBody->setId('Alpine');
 
-$requestBody->setIsActive('true');
+$requestBody->setIsActive(true);
 
 
 

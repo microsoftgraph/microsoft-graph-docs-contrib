@@ -320,6 +320,40 @@
     },
     {
       "ChangeList": [
+        {
+          "Id": "dbd62dae-abc1-419d-8322-045d266f0b45",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "weakAlgorithms",
+          "ChangeType": "Addition",
+          "Description": "Added the [weakAlgorithms](https://docs.microsoft.com/en-us/?view=graph-rest-beta) enumeration type.",
+          "Target": "weakAlgorithms"
+        },
+        {
+          "Id": "dbd62dae-abc1-419d-8322-045d266f0b45",
+          "ApiChange": "Resource",
+          "ChangedApiName": "requestSignatureVerification",
+          "ChangeType": "Addition",
+          "Description": "Added the [requestSignatureVerification](https://docs.microsoft.com/en-us/graph/api/resources/requestSignatureVerification?view=graph-rest-beta) resource.",
+          "Target": "requestSignatureVerification"
+        },
+        {
+          "Id": "dbd62dae-abc1-419d-8322-045d266f0b45",
+          "ApiChange": "Property",
+          "ChangedApiName": "requestSignatureVerification",
+          "ChangeType": "Addition",
+          "Description": "Added the **requestSignatureVerification** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "dbd62dae-abc1-419d-8322-045d266f0b45",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-26T16:03:39.5633059Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
       {
           "Id": "3dab5ede-46c2-4ee7-b8ce-bc09b7299e3f",
           "ApiChange": "Property",
@@ -746,6 +780,40 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory Management"
     },
+    {
+      "ChangeList": [
+        {
+          "Id": "47bf0a29-19b1-4468-b0ec-bfde1f6593de",
+          "ApiChange": "Resource",
+          "ChangedApiName": "corsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [corsConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/corsConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "corsConfiguration"
+        },
+        {
+          "Id": "47bf0a29-19b1-4468-b0ec-bfde1f6593de",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesApplicationSegment",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesApplicationSegment](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesApplicationSegment?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesApplicationSegment"
+        },
+        {
+          "Id": "47bf0a29-19b1-4468-b0ec-bfde1f6593de",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesApplicationSegments",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesApplicationSegments** property to the [onPremisesPublishing](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishing"
+        }
+      ],
+      "Id": "47bf0a29-19b1-4468-b0ec-bfde1f6593de",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-29T01:05:45.1783348Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+    },    
     {
       "ChangeList": [
         {
