@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}
 PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
 PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}
 ```
@@ -72,7 +73,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
+PATCH https://graph.microsoft.com/beta/deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}
 Content-type: application/json
 Content-length: 687
 
@@ -129,6 +130,8 @@ Content-Length: 859
   }
 }
 ```
+
+
 
 
 
