@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a [taskReportSummary](../resources/identitygovernance-taskreportsummary.md) object.
 
-A summary of task processing results for a specified time period. Since the amount of task processing results and task reports returned by the List API calls can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
+This API provides a summary of task processing results for a specified time period. Because the volume of task processing results and task reports returned by the List API calls can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
 
 ## Permissions
 
@@ -46,12 +46,11 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/taskReports/su
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|The start date and time of the period for which the taskReport summary will be generated|
-|endDateTime|DateTimeOffset|The end date and time of the period for which the taskReport summary will be generated|
+|startDateTime|DateTimeOffset|The start date and time of the period for which the **taskReport** summary will be generated.|
+|endDateTime|DateTimeOffset|The end date and time of the period for which the **taskReport** summary will be generated.|
 
 ## Optional query parameters
 
