@@ -7,13 +7,13 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Resume a taskProcessingResult
+# taskProcessingResult: resume
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An Azure Logic Apps system-assigned managed identity calls this API to resume the task processing result that's `inProgress`.
+Resume a task processing result that's `inProgress`. An Azure Logic Apps system-assigned managed identity calls this API.
 
 ## Permissions
 
@@ -87,7 +87,7 @@ Content-length: 155
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
