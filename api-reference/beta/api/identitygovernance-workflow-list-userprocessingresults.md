@@ -1,5 +1,5 @@
 ---
-title: "List the userProcessingResults (for a lifecycle workflow)"
+title: "List userProcessingResults (for a lifecycle workflow)"
 description: "Get a list of the userProcessingResult objects and their properties for a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# userProcessingResults (for a lifecycle workflow)
+# List userProcessingResults (for a lifecycle workflow)
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the userProcessingResult resources for a [workflow](../resources/identitygovernance-workflow.md).
+Get the **userProcessingResult** resources for a [workflow](../resources/identitygovernance-workflow.md).
 
 ## Permissions
 
