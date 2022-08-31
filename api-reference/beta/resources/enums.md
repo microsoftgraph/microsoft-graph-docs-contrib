@@ -3211,3 +3211,11 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |group|
 |unknownFutureValue|
+
+### authenticationEventType values
+
+|Member|
+|:---|
+|tokenIssuanceStart|
+|pageRenderStart|
+|unknownFutureValue|
