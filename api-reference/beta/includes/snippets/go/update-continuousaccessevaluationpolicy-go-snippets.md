@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewContinuousAccessEvaluationPolicy()
-"@odata.type" := "#microsoft.graph.continuousAccessEvaluationPolicy"
-requestBody.Set"@odata.type"(&"@odata.type") 
 migrate := true
 requestBody.SetMigrate(&migrate) 
 

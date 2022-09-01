@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'"
+
 requestParameters := &graphconfig.RiskDetectionsRequestBuilderGetQueryParameters{
-	Filter: "riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.RiskDetectionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

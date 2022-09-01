@@ -9,16 +9,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewTransferPostRequestBody()
 transferTarget := graphmodels.NewInvitationParticipantInfo()
-"@odata.type" := "#microsoft.graph.invitationParticipantInfo"
-transferTarget.Set"@odata.type"(&"@odata.type") 
 endpointType := graphmodels.DEFAULT_ENDPOINTTYPE 
 transferTarget.SetEndpointType(&endpointType) 
 identity := graphmodels.NewIdentitySet()
-"@odata.type" := "#microsoft.graph.identitySet"
-identity.Set"@odata.type"(&"@odata.type") 
 user := graphmodels.NewIdentity()
-"@odata.type" := "#microsoft.graph.identity"
-user.Set"@odata.type"(&"@odata.type") 
 id := "550fae72-d251-43ec-868c-373732c2704f"
 user.SetId(&id) 
 displayName := "Heidi Steen"

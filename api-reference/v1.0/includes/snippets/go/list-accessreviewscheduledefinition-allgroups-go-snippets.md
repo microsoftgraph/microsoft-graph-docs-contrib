@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "contains(scope/microsoft.graph.accessReviewQueryScope/query,%20'./members')"
+
 requestParameters := &graphconfig.DefinitionsRequestBuilderGetQueryParameters{
-	Filter: "contains(scope/microsoft.graph.accessReviewQueryScope/query,%20'./members')",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.DefinitionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

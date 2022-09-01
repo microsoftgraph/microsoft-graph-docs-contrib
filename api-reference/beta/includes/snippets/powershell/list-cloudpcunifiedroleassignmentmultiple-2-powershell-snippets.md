@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 
-Get-MgRoleManagementCloudPcRoleAssignment -Filter "roleDefinitionId eq 'b5c08161-a7af-481c-ace2-a20a69a48fb1'"  -OutFile $outFileId
+Get-MgRoleManagementCloudPcRoleAssignment -Filter "roleDefinitionId eq 'b5c08161-a7af-481c-ace2-a20a69a48fb1'" 
 
 ```

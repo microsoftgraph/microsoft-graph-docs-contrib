@@ -525,7 +525,7 @@ items:
           href: resources/message.md
         - name: Create mail folder
           href: api/user-post-mailfolders.md
-        - name: Create message
+        - name: Create draft message
           href: api/user-post-messages.md
         - name: Create message rule
           href: api/mailfolder-post-messagerules.md
@@ -1389,11 +1389,11 @@ items:
           href: api/message-copy.md
         - name: Move event message
           href: api/message-move.md
-        - name: Create Reply
+        - name: Create draft to reply
           href: api/message-createreply.md
         - name: Reply event message
           href: api/message-reply.md
-        - name: Create ReplyAll
+        - name: Create draft to reply-all
           href: api/message-createreplyall.md
         - name: ReplyAll event message
           href: api/message-replyall.md
@@ -3290,6 +3290,29 @@ items:
               href: api/intune-apps-webapp-delete.md
             - name: Update
               href: api/intune-apps-webapp-update.md
+          - name: Win get app
+            href: resources/intune-apps-wingetapp.md
+            items:
+            - name: List
+              href: api/intune-apps-wingetapp-list.md
+            - name: Get
+              href: api/intune-apps-wingetapp-get.md
+            - name: Create
+              href: api/intune-apps-wingetapp-create.md
+            - name: Delete
+              href: api/intune-apps-wingetapp-delete.md
+            - name: Update
+              href: api/intune-apps-wingetapp-update.md
+          - name: Win get app assignment settings
+            href: resources/intune-apps-wingetappassignmentsettings.md
+          - name: Win get app install experience
+            href: resources/intune-apps-wingetappinstallexperience.md
+          - name: Win get app install time settings
+            href: resources/intune-apps-wingetappinstalltimesettings.md
+          - name: Win get app notification
+            href: resources/intune-apps-wingetappnotification.md
+          - name: Win get app restart settings
+            href: resources/intune-apps-wingetapprestartsettings.md
           - name: Win32 LOB app
             href: resources/intune-apps-win32lobapp.md
             items:
@@ -7565,6 +7588,21 @@ items:
             href: resources/intune-devices-configurationmanagerclientinformation.md
           - name: Configuration manager client state
             href: resources/intune-devices-configurationmanagerclientstate.md
+          - name: Create remote help session response
+            href: resources/intune-remoteassistance-createremotehelpsessionresponse.md
+            items:
+            - name: List
+              href: api/intune-remoteassistance-createremotehelpsessionresponse-list.md
+            - name: Get
+              href: api/intune-remoteassistance-createremotehelpsessionresponse-get.md
+            - name: Create
+              href: api/intune-remoteassistance-createremotehelpsessionresponse-create.md
+            - name: Delete
+              href: api/intune-remoteassistance-createremotehelpsessionresponse-delete.md
+            - name: Update
+              href: api/intune-remoteassistance-createremotehelpsessionresponse-update.md
+          - name: Data processor service for windows features on-boarding
+            href: resources/intune-devices-dataprocessorserviceforwindowsfeaturesonboarding.md
           - name: Data sharing consent
             href: resources/intune-devices-datasharingconsent.md
             items:
@@ -7597,6 +7635,8 @@ items:
               href: api/intune-devices-detectedapp-delete.md
             - name: Update
               href: api/intune-devices-detectedapp-update.md
+          - name: Detected app platform type
+            href: resources/intune-devices-detectedappplatformtype.md
           - name: Device action result
             href: resources/intune-devices-deviceactionresult.md
           - name: Device compliance script
@@ -8497,8 +8537,34 @@ items:
             href: resources/intune-remoteassistance-remoteassistancestate.md
           - name: Remote lock action result
             href: resources/intune-devices-remotelockactionresult.md
+          - name: Request remote help session access response
+            href: resources/intune-remoteassistance-requestremotehelpsessionaccessresponse.md
+            items:
+            - name: List
+              href: api/intune-remoteassistance-requestremotehelpsessionaccessresponse-list.md
+            - name: Get
+              href: api/intune-remoteassistance-requestremotehelpsessionaccessresponse-get.md
+            - name: Create
+              href: api/intune-remoteassistance-requestremotehelpsessionaccessresponse-create.md
+            - name: Delete
+              href: api/intune-remoteassistance-requestremotehelpsessionaccessresponse-delete.md
+            - name: Update
+              href: api/intune-remoteassistance-requestremotehelpsessionaccessresponse-update.md
           - name: Reset passcode action result
             href: resources/intune-devices-resetpasscodeactionresult.md
+          - name: Retrieve remote help session response
+            href: resources/intune-remoteassistance-retrieveremotehelpsessionresponse.md
+            items:
+            - name: List
+              href: api/intune-remoteassistance-retrieveremotehelpsessionresponse-list.md
+            - name: Get
+              href: api/intune-remoteassistance-retrieveremotehelpsessionresponse-get.md
+            - name: Create
+              href: api/intune-remoteassistance-retrieveremotehelpsessionresponse-create.md
+            - name: Delete
+              href: api/intune-remoteassistance-retrieveremotehelpsessionresponse-delete.md
+            - name: Update
+              href: api/intune-remoteassistance-retrieveremotehelpsessionresponse-update.md
           - name: Revoke apple VPP licenses action result
             href: resources/intune-devices-revokeapplevpplicensesactionresult.md
           - name: Role scope tag info
@@ -9387,6 +9453,8 @@ items:
               href: api/intune-mam-managedmobileapp-update.md
           - name: Mobile app identifier
             href: resources/intune-mam-mobileappidentifier.md
+          - name: Mobile threat defense partner priority
+            href: resources/intune-mam-mobilethreatdefensepartnerpriority.md
           - name: Targeted managed app group type
             href: resources/intune-mam-targetedmanagedappgrouptype.md
           - name: Targeted managed app policy assignment
@@ -10131,7 +10199,7 @@ items:
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
             - name: Create
-              href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
+              href: api/resources/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -10460,6 +10528,8 @@ items:
             href: api/manageddevice-reprovisioncloudpc.md
           - name: Resize remotely
             href: api/manageddevice-resizecloudpc.md
+          - name: Restore
+            href: api/cloudpc-restore.md
           - name: Restore remotely
             href: api/manageddevice-restorecloudpc.md
           - name: Set review status
@@ -13027,6 +13097,8 @@ items:
             - name: Delete
               href: api/identityapiconnector-delete.md
       - name: Governance
+        href: resources/identitygovernance-overview.md
+        displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
         items:
         - name: Access reviews
           href: resources/accessreviewsv2-overview.md
@@ -13521,6 +13593,134 @@ items:
                 href: api/governanceroleassignmentrequest-update.md
               - name: Cancel
                 href: api/governanceroleassignmentrequest-cancel.md
+        - name: Lifecycle Workflows
+          href: resources/identitygovernance-lifecycleworkflows-overview.md
+          items:
+          - name: Workflows
+            href: resources/identitygovernance-workflow.md
+            items:
+            - name: List
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md
+            - name: Create
+              href: api/identitygovernance-lifecycleworkflowscontainer-post-workflows.md
+            - name: Get
+              href: api/identitygovernance-workflow-get.md
+            - name: Update
+              href: api/identitygovernance-workflow-update.md
+            - name: Delete
+              href: api/identitygovernance-workflow-delete.md
+            - name: List deleted workflows 
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
+            - name: Get a deleted workflow 
+              href: api/identitygovernance-deleteditemcontainer-get.md  
+            - name: Permanently delete a workflow
+              href: api/identitygovernance-deletedItemcontainer-delete.md    
+            - name: Restore
+              href: api/identitygovernance-workflow-restore.md
+            - name: Activate (run on-demand)
+              href: api/identitygovernance-workflow-activate.md
+            - name: Workflow versions
+              items:
+              - name: Workflow version
+                href: resources/identitygovernance-workflowversion.md
+              - name: List
+                href: api/identitygovernance-workflow-list-versions.md
+              - name: Get
+                href: api/identitygovernance-workflowversion-get.md
+              - name: Create
+                href: api/identitygovernance-workflow-createnewversion.md 
+              - name: List tasks for a workflow version
+                href: api/identitygovernance-workflowversion-list-tasks.md
+              - name: Get task for a workflow version
+                href: api/identitygovernance-task-get.md      
+            - name: Workflow tasks
+              items:
+              - name: Workflow task
+                href: resources/identitygovernance-task.md
+              - name: List tasks
+                href: api/identitygovernance-workflow-list-task.md
+              - name: Get task
+                href: api/identitygovernance-task-get.md
+            - name: Reports
+              items:
+              - name: Overview
+                href: resources/identitygovernance-lifecycleworkflows-reporting-overview.md
+              - name: User processing results
+                href: resources/identitygovernance-userprocessingresult.md
+                items:
+                - name: List
+                  href: api/identitygovernance-workflow-list-userprocessingresults.md
+                - name: Summary
+                  href: api/identitygovernance-userprocessingresult-summary.md
+                - name: List task processing results
+                  href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md    
+              - name: Task reports
+                href: resources/identitygovernance-taskreport.md 
+                items:
+                - name: List
+                  href: api/identitygovernance-workflow-list-taskreports.md
+                - name: Summary
+                  href: api/identitygovernance-taskreport-summary.md
+                - name: List task processing results
+                  href: api/identitygovernance-taskreport-list-taskprocessingresults.md    
+              - name: Workflow runs
+                href: resources/identitygovernance-run.md
+                items:
+                - name: List
+                  href: api/identitygovernance-workflow-list-runs.md
+                - name: Get
+                  href: api/identitygovernance-run-get.md
+                - name: Summary
+                  href: api/identitygovernance-run-summary.md  
+                - name: List user processing results
+                  href: api/identitygovernance-run-list-userprocessingresults.md
+                - name: Get user processing result
+                  href: api/identitygovernance-userprocessingresult-get.md
+                - name: List task processing results
+                  href: api/identitygovernance-run-list-taskprocessingresults.md       
+              - name: Task processing results
+                href: resources/identitygovernance-taskprocessingresult.md
+                items:  
+                - name: Resume
+                  href: api/identitygovernance-taskprocessingresult-resume.md
+          - name: Workflow templates
+            items: 
+            - name: Workflow templates
+              href: resources/identitygovernance-workflowtemplate.md
+            - name: List
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md
+            - name: Get
+              href: api/identitygovernance-workflowtemplate-get.md
+          - name: Task definition
+            items:
+            - name: Task definition
+              href: resources/identitygovernance-taskdefinition.md
+            - name: List
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
+            - name: Get
+              href: api/identitygovernance-taskdefinition-get.md 
+          - name: Custom task extension
+            items:
+            - name: Custom task extension
+              href: resources/identitygovernance-customtaskextension.md
+            - name: List
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions.md
+            - name: Get
+              href: api/identitygovernance-customtaskextension-get.md
+            - name: Create
+              href: api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions.md
+            - name: Update
+              href: api/identitygovernance-customtaskextension-update.md
+            - name: Delete
+              href: api/identitygovernance-customtaskextension-delete.md    
+          - name: Settings
+            items:
+            - name: Settings
+              href: resources/identitygovernance-lifecyclemanagementsettings.md
+            - name: Get
+              href: api/identitygovernance-lifecyclemanagementsettings-get.md
+            - name: Update
+              href: api/identitygovernance-lifecyclemanagementsettings-update.md                       
         - name: Terms of use
           items:
           - name: Agreement
@@ -13564,7 +13764,7 @@ items:
         items:
         - name: List messages
           href: api/user-list-messages.md
-        - name: Create message
+        - name: Create draft message
           href: api/user-post-messages.md
         - name: Get message
           href: api/message-get.md
@@ -13574,23 +13774,23 @@ items:
           href: api/message-delete.md
         - name: Get message delta
           href: api/message-delta.md
-        - name: Send messages
+        - name: Send draft message
           href: api/message-send.md
-        - name: Copy messages
+        - name: Copy message
           href: api/message-copy.md
-        - name: Move messages
+        - name: Move message
           href: api/message-move.md
-        - name: Create reply to messages
+        - name: Create draft to reply
           href: api/message-createreply.md
-        - name: Reply to messages
+        - name: Reply to a message
           href: api/message-reply.md
-        - name: Create reply all to messages
+        - name: Create draft to reply-all
           href: api/message-createreplyall.md
-        - name: Reply all to messages
+        - name: Reply-all to a message
           href: api/message-replyall.md
-        - name: Create Forward message
+        - name: Create draft to forward message
           href: api/message-createforward.md
-        - name: Forward messages
+        - name: Forward message
           href: api/message-forward.md
         - name: Send mail
           href: api/user-sendmail.md

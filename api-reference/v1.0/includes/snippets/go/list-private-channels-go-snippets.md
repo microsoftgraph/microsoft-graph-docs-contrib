@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "membershipType eq 'private'"
+
 requestParameters := &graphconfig.ChannelsRequestBuilderGetQueryParameters{
-	Filter: "membershipType eq 'private'",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.ChannelsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
