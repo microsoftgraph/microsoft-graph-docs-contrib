@@ -15052,6 +15052,16 @@ items:
             href: resources/security-urlEvidence.md
           - name: User evidence
             href: resources/security-userEvidence.md
+        - name: Hunting
+          items:
+          - name: Run hunting query
+            href: api/security-runhuntingquery.md
+          - name: Hunting query results
+            href: resources/security-huntingqueryresults.md
+          - name: Hunting row result
+            href: resources/security-huntingrowresult.md   
+          - name: Single property schema
+            href: resources/security-singlepropertyschema.md
         - name: Incident
           items:
           - name: Incident
