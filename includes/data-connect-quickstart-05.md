@@ -38,7 +38,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     2. Select **Azure, Self-Hosted** and select **Continue**.
 
         ![A screenshot showing the Azure portal UI for the Data Factory service. The user is selecting the Azure option for the network environment.](../concepts/images/data-connect-adf-integration-runtime-b-new.png)
-    
+
     3. Select **Azure** for network environment and select **Continue**.
 
         ![A screenshot showing the Azure portal UI for the Data Factory service. The user is selecting the Azure option for the network environment.](../concepts/images/data-connect-adf-network-new.png)
@@ -49,7 +49,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
         - **Description**: enter a description
         - **Region**: select the region that matches your Microsoft 365 region
         - **Virtual network configuration (preview)**: Disabled
-        
+
 1. Switch from the **Manage** (toolbox icon) to the **Author** (pencil icon) experience by selecting it from the left-hand navigation.
 1. Create a new pipeline by selecting the **plus** icon, then **pipeline**.
 
@@ -74,7 +74,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     - The designer will update the **Source** tab with the Microsoft 365 connector settings.
     - In the dialog that appears, enter the previously created Azure Active Directory (Azure AD) application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, then select **Create**.
     - Select the integration runtime you previously created in the **Connect via integration runtime** dropdown.
-    - Click **Select** under **Linked service** and then click **+ New**.
+    - Click **Select** under **Linked service** and then click **+New**.
     - In the dialog that appears, select the integration runtime you previously created in the **Connect via integration runtime** dropdown, enter the previously created Azure AD application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, and select **Create**.
     
         ![A screenshot showing the Azure portal UI for the Data Factory service. The user is configuring the integration runtime with the service principal key.](../concepts/images/data-connect-adf-linked-service.png)
@@ -100,8 +100,6 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
       - Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it does not exist already.
       - Click **Select** under **Linked service** and then click **+New**.
       - Set the following values in the dialog, then select **Create**.
-    
-    - Set the following values in the dialog, then select **Finish**.
 
         - **Authentication type**: Service principal
         - **Azure subscription**: Select all
