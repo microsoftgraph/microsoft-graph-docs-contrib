@@ -91,12 +91,12 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
       - Select **Import schema** in the _Output columns_ section.
 
     - Select the **Copy data** activity in the pipeline tab, then select the **Sink** tab.
+        ![A screenshot explaining basic dataset and copy activity](../concepts/images/data-connect-adf-copy-activity.png)
+        
       - Select the **New** button, select **Azure Blob Storage** or **Azure Data Lake Gen2**, and then select the **Continue** button.
       - Select **Binary** as the format for the data and then select the **Continue** button.
 
       - Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it does not exist already.
-
-        ![A screenshot explaining basic dataset and copy activity](../concepts/images/data-connect-adf-copy-activity.png)
 
     - In the table select the **Connection** tab, then select **New**.
     - Set the following values in the dialog, then select **Finish**.
