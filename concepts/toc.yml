@@ -266,6 +266,8 @@ items:
             displayName: education
           - name: Rubrics
             href: education-rubric-overview.md
+          - name: Upload feedback files for education submissions
+            href: education-upload-feedback-resource-overview.md            
           - name: Upload files
             href: education-upload-resource-overview.md
           - name: Assignment and submission state transitions
