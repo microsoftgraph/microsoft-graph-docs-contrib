@@ -34,7 +34,7 @@ The rich features and APIs for Microsoft Teams, Shifts, and Viva Learning open u
 
 [Cultivate workforce](#cultivate-workforce)
 - [Manage shifts and staff schedules](#manage-shifts-and-staff-schedules)
-- [Enable employee learning using the collaborative capabilities in Teams (preview)](#enable-employee-learning-using-the-collaborative-capabilities-in-teams)
+- [Enable employee learning using the collaborative capabilities in Teams (preview)](#enable-employee-learning-using-the-collaborative-capabilities-in-teams-preview)
 
 
 ## Automate workflows
@@ -181,8 +181,6 @@ Viva Learning built for Microsoft Teams and Microsoft 365 brings employee learni
 Use the employee learning APIs for Viva Learning to: 
 - Register and manage a [learning provider](/graph/api/resources/learningprovider).
 - Insert, update, retrieve, and delete [learning content](/graph/api/resources/learningcontent) metadata.
-
-
 
 
 ## API reference

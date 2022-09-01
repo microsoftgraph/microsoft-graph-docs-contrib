@@ -9880,7 +9880,7 @@ items:
             - name: sendCustomNotificationToCompanyPortal action
               href: api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md
           - name: Device management derived credential settings
-            href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
+            href: resources\intune-shared-devicemanagementderivedcredentialsettings.md
             items:
             - name: Get
               href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
