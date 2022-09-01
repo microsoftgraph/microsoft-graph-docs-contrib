@@ -165,37 +165,37 @@ items:
         href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/beta
     - name: Exchange Web Services
       items:
-        - name: Migrate EWS apps
-          href: /graph/migrate-exchange-web-services-overview?context=graph/api/beta
-          displayName: Migration, Exchange Web Services, EWS, migrate
-        - name: Authentication
-          href: /graph/migrate-exchange-web-services-authentication?context=graph/api/beta
-        - name: API mapping
-          href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/beta
+      - name: Migrate EWS apps
+        href: /graph/migrate-exchange-web-services-overview?context=graph/api/beta
+        displayName: Migration, Exchange Web Services, EWS, migrate
+      - name: Authentication
+        href: /graph/migrate-exchange-web-services-authentication?context=graph/api/beta
+      - name: API mapping
+        href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/beta
   - name: Use SDKs
     items:
-      - name: Overview
-        href: /graph/sdks/sdks-overview?context=graph/api/beta
-        displayName: SDK, SDKs, Microsoft Graph SDK
-      - name: Install an SDK
-        href: /graph/sdks/sdk-installation?context=graph/api/beta
-        displayName: install SDK, install SDKs, installation
-      - name: Create a client
-        href: /graph/sdks/create-client?context=graph/api/beta
-      - name: Customize a client
-        href: /graph/sdks/customize-client?context=graph/api/beta
-      - name: Choose an authentication provider
-        href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
-      - name: Create requests
-        href: /graph/sdks/create-requests?context=graph/api/beta
-      - name: Page through a collection
-        href: /graph/sdks/paging?context=graph/api/beta
-      - name: Create a batch request
-        href: /graph/sdks/batch-requests?context=graph/api/beta
-      - name: Upload large files
-        href: /graph/sdks/large-file-upload?context=graph/api/beta
-      - name: Use beta API
-        href: /graph/sdks/use-beta?context=graph/api/beta
+    - name: Overview
+      href: /graph/sdks/sdks-overview?context=graph/api/beta
+      displayName: SDK, SDKs, Microsoft Graph SDK
+    - name: Install an SDK
+      href: /graph/sdks/sdk-installation?context=graph/api/beta
+      displayName: install SDK, install SDKs, installation
+    - name: Create a client
+      href: /graph/sdks/create-client?context=graph/api/beta
+    - name: Customize a client
+      href: /graph/sdks/customize-client?context=graph/api/beta
+    - name: Choose an authentication provider
+      href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
+    - name: Create requests
+      href: /graph/sdks/create-requests?context=graph/api/beta
+    - name: Page through a collection
+      href: /graph/sdks/paging?context=graph/api/beta
+    - name: Create a batch request
+      href: /graph/sdks/batch-requests?context=graph/api/beta
+    - name: Upload large files
+      href: /graph/sdks/large-file-upload?context=graph/api/beta
+    - name: Use beta API
+      href: /graph/sdks/use-beta?context=graph/api/beta
       - name: Use PowerShell
         items:
         - name: PowerShell overview
@@ -10507,23 +10507,23 @@ items:
         - name: Resource connection
           href: resources/windowsupdates-resourceconnection.md
           items:
+          - name: List
+            href: api/windowsupdates-updates-list-resourceconnections.md
+          - name: Get
+            href: api/windowsupdates-resourceconnection-get.md
+          - name: Delete
+            href: api/windowsupdates-resourceconnection-delete.md
+          - name: Operational insights connection
+            href: resources/windowsupdates-operationalinsightsconnection.md
+            items:
             - name: List
-              href: api/windowsupdates-updates-list-resourceconnections.md
+              href: api/windowsupdates-updates-list-resourceconnections-operationalinsightsconnection.md
+            - name: Create
+              href: api/windowsupdates-updates-post-resourceconnections-operationalinsightsconnection.md
             - name: Get
-              href: api/windowsupdates-resourceconnection-get.md
+              href: api/windowsupdates-operationalinsightsconnection-get.md
             - name: Delete
-              href: api/windowsupdates-resourceconnection-delete.md
-            - name: Operational insights connection
-              href: resources/windowsupdates-operationalinsightsconnection.md
-              items:
-              - name: List
-                href: api/windowsupdates-updates-list-resourceconnections-operationalinsightsconnection.md
-              - name: Create
-                href: api/windowsupdates-updates-post-resourceconnections-operationalinsightsconnection.md
-              - name: Get
-                href: api/windowsupdates-operationalinsightsconnection-get.md
-              - name: Delete
-                href: api/windowsupdates-operationalinsightsconnection-delete.md
+              href: api/windowsupdates-operationalinsightsconnection-delete.md
       - name: Multi-tenant management (preview)
         items:
         - name: Managed tenant
@@ -10564,24 +10564,24 @@ items:
         - name: Conditional access policy coverage
           href: resources/managedtenants-conditionalaccesspolicycoverage.md
           items:
-            - name: List conditional access coverages
-              href: api/managedtenants-managedtenant-list-conditionalaccesspolicycoverages.md
-            - name: Get conditional access policy coverage
-              href: api/managedtenants-conditionalaccesspolicycoverage-get.md
+          - name: List conditional access coverages
+            href: api/managedtenants-managedtenant-list-conditionalaccesspolicycoverages.md
+          - name: Get conditional access policy coverage
+            href: api/managedtenants-conditionalaccesspolicycoverage-get.md
         - name: Credential user registrations summary
           href: resources/managedtenants-credentialuserregistrationssummary.md
           items:
-            - name: List credential user registration summaries
-              href: api/managedtenants-managedtenant-list-credentialuserregistrationssummaries.md
-            - name: Get credential user registrations summary
-              href: api/managedtenants-credentialuserregistrationssummary-get.md
+          - name: List credential user registration summaries
+            href: api/managedtenants-managedtenant-list-credentialuserregistrationssummaries.md
+          - name: Get credential user registrations summary
+            href: api/managedtenants-credentialuserregistrationssummary-get.md
         - name: Device compliance policy setting state summary
           href: resources/managedtenants-devicecompliancepolicysettingstatesummary.md
           items:
-            - name: List device compliance policy setting state summary
-              href: api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary.md
-            - name: Get device compliance policy setting state summary
-              href: api/managedtenants-devicecompliancepolicysettingstatesummary-get.md
+          - name: List device compliance policy setting state summary
+            href: api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary.md
+          - name: Get device compliance policy setting state summary
+            href: api/managedtenants-devicecompliancepolicysettingstatesummary-get.md
         - name: Managed device compliance
           href: resources/managedtenants-manageddevicecompliance.md
           items:
@@ -10592,10 +10592,10 @@ items:
         - name: Managed device compliance trend
           href: resources/managedtenants-manageddevicecompliancetrend.md
           items:
-            - name: List managed device compliance trend
-              href: api/managedtenants-managedtenant-list-manageddevicecompliancetrends.md
-            - name: Get managed device compliance trend
-              href: api/managedtenants-manageddevicecompliancetrend-get.md
+          - name: List managed device compliance trend
+            href: api/managedtenants-managedtenant-list-manageddevicecompliancetrends.md
+          - name: Get managed device compliance trend
+            href: api/managedtenants-manageddevicecompliancetrend-get.md
         - name: Management action
           href: resources/managedtenants-managementaction.md
           items:
@@ -10663,12 +10663,12 @@ items:
         - name: Tenant group
           href: resources/managedtenants-tenantgroup.md
           items:
-            - name: List tenant groups
-              href: api/managedtenants-managedtenant-list-tenantgroups.md
-            - name: Get tenant group
-              href: api/managedtenants-tenantgroup-get.md
-            - name: Search for tenant
-              href: api/managedtenants-tenantgroup-tenantsearch.md
+          - name: List tenant groups
+            href: api/managedtenants-managedtenant-list-tenantgroups.md
+          - name: Get tenant group
+            href: api/managedtenants-tenantgroup-get.md
+          - name: Search for tenant
+            href: api/managedtenants-tenantgroup-tenantsearch.md
         - name: Tenant tag
           href: resources/managedtenants-tenanttag.md
           items:
@@ -10701,10 +10701,10 @@ items:
         - name: Windows protection state
           href: resources/managedtenants-windowsprotectionstate.md
           items:
-            - name: List Windows protection state
-              href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
-            - name: Get Windows protection state
-              href: api/managedtenants-windowsprotectionstate-get.md
+          - name: List Windows protection state
+            href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
+          - name: Get Windows protection state
+            href: api/managedtenants-windowsprotectionstate-get.md
       - name: Service health and communications
         items:
         - name: Overview
@@ -12223,10 +12223,10 @@ items:
         - name: External identities policy (preview)
           href: resources/externalidentitiespolicy.md
           items:
-            - name: Get
-              href: api/externalidentitiespolicy-get.md
-            - name: Update
-              href: api/externalidentitiespolicy-update.md
+          - name: Get
+            href: api/externalidentitiespolicy-get.md
+          - name: Update
+            href: api/externalidentitiespolicy-update.md
         - name: Identity protection
           href: resources/identityprotection-overview.md
           items:
@@ -12623,18 +12623,18 @@ items:
             - name: Permission grant condition sets
               href: resources/permissiongrantconditionset.md
               items:
-                - name: List includes
-                  href: api/permissiongrantpolicy-list-includes.md
-                - name: Create in includes
-                  href: api/permissiongrantpolicy-post-includes.md
-                - name: Delete from includes
-                  href: api/permissiongrantpolicy-delete-includes.md
-                - name: List excludes
-                  href: api/permissiongrantpolicy-list-excludes.md
-                - name: Create in excludes
-                  href: api/permissiongrantpolicy-post-excludes.md
-                - name: Delete from excludes
-                  href: api/permissiongrantpolicy-delete-excludes.md
+              - name: List includes
+                href: api/permissiongrantpolicy-list-includes.md
+              - name: Create in includes
+                href: api/permissiongrantpolicy-post-includes.md
+              - name: Delete from includes
+                href: api/permissiongrantpolicy-delete-includes.md
+              - name: List excludes
+                href: api/permissiongrantpolicy-list-excludes.md
+              - name: Create in excludes
+                href: api/permissiongrantpolicy-post-excludes.md
+              - name: Delete from excludes
+                href: api/permissiongrantpolicy-delete-excludes.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -12906,34 +12906,34 @@ items:
           - name: Access review stage
             href: resources/accessreviewstage.md
             items:
-              - name: List
-                href: api/accessreviewinstance-list-stages.md
-              - name: Get
-                href: api/accessreviewstage-get.md
-              - name: Update
-                href: api/accessreviewstage-update.md
-              - name: Filter by current user
-                href: api/accessreviewstage-filterbycurrentuser.md
-              - name: Stop
-                href: api/accessreviewstage-stop.md
+            - name: List
+              href: api/accessreviewinstance-list-stages.md
+            - name: Get
+              href: api/accessreviewstage-get.md
+            - name: Update
+              href: api/accessreviewstage-update.md
+            - name: Filter by current user
+              href: api/accessreviewstage-filterbycurrentuser.md
+            - name: Stop
+              href: api/accessreviewstage-stop.md
           - name: Access review instance decision item
             displayName: access review decisions
             href: resources/accessreviewinstancedecisionitem.md
             items:
-              - name: List decisions from an instance
-                href: api/accessreviewinstance-list-decisions.md
-              - name: List decisions from a stage of an instance
-                href: api/accessreviewstage-list-decisions.md
-              - name: Get
-                href: api/accessreviewinstancedecisionitem-get.md
-              - name: Filter by current user
-                href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-              - name: Update
-                href: api/accessreviewinstancedecisionitem-update.md
-              - name: Record all decisions
-                href: api/accessreviewinstancedecisionitem-recordalldecisions.md
-              - name: List pending approval (deprecated)
-                href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+            - name: List decisions from an instance
+              href: api/accessreviewinstance-list-decisions.md
+            - name: List decisions from a stage of an instance
+              href: api/accessreviewstage-list-decisions.md
+            - name: Get
+              href: api/accessreviewinstancedecisionitem-get.md
+            - name: Filter by current user
+              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
+            - name: Record all decisions
+              href: api/accessreviewinstancedecisionitem-recordalldecisions.md
+            - name: List pending approval (deprecated)
+              href: api/accessreviewinstancedecisionitem-listpendingapproval.md
           - name: Access review policy
             href: resources/accessreviewpolicy.md
             items:
@@ -16529,23 +16529,23 @@ items:
       - name: Workbook application
         href: resources/workbookapplication.md
         items:
-          - name: Get
-            href: api/workbookapplication-get.md
-          - name: Calculate
-            href: api/workbookapplication-calculate.md
+        - name: Get
+          href: api/workbookapplication-get.md
+        - name: Calculate
+          href: api/workbookapplication-calculate.md
       - name: Workbook comments
         href: resources/workbookcomment.md
         items:
-          - name: List
-            href: api/workbook-list-comments.md
-          - name: Get
-            href: api/workbookcomment-get.md
-          - name: List replies
-            href: api/workbookcomment-list-replies.md
-          - name: Create reply
-            href: api/workbookcomment-post-replies.md
-          - name: Get reply
-            href: api/workbookcommentreply-get.md
+        - name: List
+          href: api/workbook-list-comments.md
+        - name: Get
+          href: api/workbookcomment-get.md
+        - name: List replies
+          href: api/workbookcomment-list-replies.md
+        - name: Create reply
+          href: api/workbookcomment-post-replies.md
+        - name: Get reply
+          href: api/workbookcommentreply-get.md
       - name: Worksheet
         href: resources/workbookworksheet.md
         items:
