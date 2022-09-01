@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 In this step you'll create an Azure Storage account where Microsoft Graph Data Connect will store the data extracted from Microsoft 365 for further processing.
 
-1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
+1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 
 1. Sign in using an account with **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal.
 
