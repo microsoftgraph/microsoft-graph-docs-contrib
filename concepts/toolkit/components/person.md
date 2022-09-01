@@ -57,16 +57,18 @@ You can use several properties to customize the component.
 | user-id         | userId         | Set to a user ID to fetch that user's details and image from Microsoft Graph.|
 | person-query    | personQuery    | Set to a name or email of a person to search for a person in Microsoft Graph and fetch the first person's details and image.|
 | person-details  | personDetails  | Set to an object representing a person. Works with object from the people, users, contacts, or group, resources. |
-| fallback-details| fallbackDetails| Set to an object representing a person when no user/person/contact is found in the graph.
+| fallback-details| fallbackDetails| Set to an object representing a person when no user/person/contact is found in Microsoft Graph.
 | person-image    | personImage    | Set the image to show for the person. |
 | person-presence | personPresence | Set the presence for the person. |
 | fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
 | disable-image-fetch | disableImageFetch | Set flag to disable fetching of person image. Can be used to avoid unnecessary fetching from Microsoft Graph when specifying `personImage` property.
 | avatar-type     | avatarType     | Set to `initials` or `photo` to render either display state - default is photo. |
-| view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `mail` by default) <br /> `threelines` - show avatar and three lines of text (`displayName`, `mail` and `jobTitle` by default) |
+| vertical-layout   | verticalLayout   | Set the component layout to vertical.|
+| view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `jobTitle` by default) <br /> `threelines` - show avatar and three lines of text (`displayName`, `jobTitle` and `department` by default) <br /> `fourlines` - show avatar and four lines of text (`displayName`, `jobTitle`, `department` and `email` by default) <br /> In `vertical-layout`, view changes. <br /> `twolines` - show avatar and two lines of text (`displayName` and `email` by default) <br /> `threelines` - show avatar and three lines of text (`displayName` , `email` and `department` by default) |
 | line1-property  | line1Property  | Sets the property of the personDetails to use for the first line of text. Default is `displayName`.|
-| line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `mail`.|
-| line3-property  | line3Property  | Sets the property of the personDetails to use for the third line of text. Default is `jobTitle`.|
+| line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `jobTitle`.|
+| line3-property  | line3Property  | Sets the property of the personDetails to use for the third line of text. Default is `department`.|
+| line4-property  | line4Property  | Sets the property of the personDetails to use for the fourth line of text. Default is `email`.|
 | show-presence   | showPresence   | Set flag to display person presence - default is `false`.|
 | usage | usage | Specify where the component is being used in order to add customized personalization for it. Currently only supports `people` as used in the people component. |
 
@@ -119,9 +121,10 @@ The following events are fired from the component.
 
 Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`line1clicked` | Fired when line1 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
-`line2clicked` | Fired when line2 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
-`line3clicked` | Fired when line3 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
+`line1clicked` | Fired when line1 is clicked | The `person` object which can be a Microsoft Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person), or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo. | No | No | Yes, unless you override the default template.
+`line2clicked` | Fired when line2 is clicked | The `person` object which can be a Microsoft Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person), or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo. | No | No | Yes, unless you override the default template.
+`line3clicked` | Fired when line3 is clicked | The `person` object, which can be a Microsoft Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person), or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo. | No | No | Yes, unless you override the default template.
+`line4clicked` | Fired when line4 is clicked | The `person` object, which can be a Microsoft Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person), or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo. | No | No | Yes, unless you override the default template.
 
 For more information about handling events, see [events](../customize-components/events.md).
 
@@ -133,11 +136,12 @@ The `mgt-person` component supports several [templates](../customize-components/
 | --------- | ------------ | ----------- |
 | loading | none | The template to render while the component is in a loading state. |
 | no-data | none | The template to render when no person image or data is available. |
-| default | person: The person details object <br> `personImage`: The URL of the image <br> `personPresence`: The presence details object for person  | The default template replaces the entire component with your own. |
-| person-card | person: The person details object <br> `personImage`: The URL of the image | The template to update the mgt-person-card displayed on hover or click. |
+| default | person: The person details object <br> `personImage`: The URL of the image <br> `personPresence`: The presence details object for person.  | The default template replaces the entire component with your own. |
+| person-card | person: The person details object <br> `personImage`: The URL of the image. | The template to update the mgt-person-card displayed on hover or click. |
 | line1 | person: The person details object | The template for the first line of person metadata. |
 | line2 | person: The person details object | The template for the second line of person metadata. |
 | line3 | person: The person details object | The template for the third line of person metadata. |
+| line4 | person: The person details object | The template for the fourth line of person metadata. |
 
 The following example defines a template for the person component.
 
@@ -172,6 +176,29 @@ The following example defines a template for the person component.
     </div>
   </template>
 </mgt-person>
+
+<mgt-person view="fourLines">
+  <template data-type="line1">
+    <div>
+      Hello, my name is: {{person.displayName}}
+    </div>
+  </template>
+  <template data-type="line2">
+    <div>
+      Musician
+    </div>
+  </template>
+  <template data-type="line3">
+    <div>
+      Calif records
+    </div>
+  </template>
+  <template data-type="line4">
+    <div>
+      {{person.mail}}
+    </div>
+  </template>
+</mgt-person>
 ```
 
 ## Person card
@@ -185,7 +212,7 @@ The `mgt-person` component can show an `mgt-person-card` on either hover or clic
 
 | Attribute    |  Property     | Description                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| person-card | personCardInteraction | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
+| person-card | personCardInteraction | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none`. |
 
 
 For more information about templating, styling, and attributes, see [Person Card component](./person-card.md).
@@ -235,9 +262,9 @@ The control uses the global authentication provider described in the [authentica
 
 |Object store|Cached data|Remarks|
 |---------|-----------|-------|
-|`photos`|Person's photo|Used, when `avatarType` is set to `photo` and `fetchImage` is set to `true`|
-|`presence`|Person's presence|Used, when `showPresence` is set to `true`|
-|`users`|Person's user information|
+|`photos`|Person's photo|Used when `avatarType` is set to `photo` and `fetchImage` is set to `true`.|
+|`presence`|Person's presence|Used when `showPresence` is set to `true`.|
+|`users`|Person's user information.|
 
 See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
 
