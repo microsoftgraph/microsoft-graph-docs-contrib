@@ -15,6 +15,8 @@ Indicate that a student is done with the work and is ready to hand in the assign
 
 This action can only be taken by the student. This will change the status of the submission from "working" to "submitted". During the submit process, all the resources will be copied to the **submittedResources** bucket. The teacher will be looking at the submitted resources list for grading.
 
+A teacher can also submit a student's assignment.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -23,16 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
 |Application | Not supported. | 
-
-## Roles
-A teacher can also submit a student's assignment. Below is the expected submission state, when submit action is performed in a role as:
-
-| Role    | Submission state               |
-|:--------------------|:---------------------------------------------------------|
-| Teacher (work or school account)  |  submitted  (200 OK) |
-| Teacher (personal Microsoft account)  |  Not supported.  |
-| Student (work or school account)  |  submitted (200 OK)  |
-| Student (personal Microsoft account)  |  Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
