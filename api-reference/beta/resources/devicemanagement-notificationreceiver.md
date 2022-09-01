@@ -19,7 +19,7 @@ Include locale and contact information provided by user.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|locale|String| In what language and format the notification should be sent. For example, locale could be "en-us"|
+|locale|String| In what language and format the notification should be sent. Supported locale values are: "en-us", "cs-cz", "de-de", "es-es", "fr-fr", "hu-hu", "it-it", "ja-jp", "ko-kr", "nl-nl", "pl-pl", "pt-br", "pt-pt", "ru-ru", "sv-se", "tr-tr", "zh-cn", "zh-tw"|
 |contactInformation|String| Contact information of a notification receiver, like an email address. Currently we only support email and portal notifications. For portal notification, contact information can be left blank. For email notification, contact information is email address like foo@bar.com|
 
 ## Relationships

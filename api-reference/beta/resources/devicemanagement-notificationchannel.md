@@ -21,7 +21,7 @@ Include information about an alert rule's notification channels selected by user
 |:---|:---|:---|
 |notificationChannelType|[microsoft.graph.deviceManagement.notificationChannelType](#notificationchanneltype-values)|Type of notification channel.The possible values are: `portal`, `email`, `phoneCall`, `sms`, `unknownFutureValue`.|
 |receivers|String collection|Contact information of notification receivers, like email addresses. For portal notification, receivers can be left blank. For email notification, receivers consist of email addresses like "foo@bar.com".|
-|notificationReceivers|[microsoft.graph.deviceManagement.notificationReceiver](../resources/devicemanagement-notificationreceiver.md)collection|Information of notification receivers, like locale and contact information. For example, locale could be "en-us", and contact information could be an email address like "foo@bar.com".|
+|notificationReceivers|[microsoft.graph.deviceManagement.notificationReceiver](../resources/devicemanagement-notificationreceiver.md) collection|Information of notification receivers, like locale and contact information. For example, locale could be "en-us", and contact information could be an email address like "foo@bar.com".|
 
 ### notificationChannelType values
 
@@ -53,7 +53,9 @@ The following is a JSON representation of the resource.
     "String"
   ],
   "notificationReceivers": [
-      "#microsoft.graph.deviceManagement.notificationReceiver"
+    {
+        "@odata.type": "#microsoft.graph.deviceManagement.notificationReceiver"
+    }
   ]
 }
 ```
