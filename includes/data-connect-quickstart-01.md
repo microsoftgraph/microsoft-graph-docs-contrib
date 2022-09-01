@@ -37,7 +37,7 @@ To complete this lab, you'll need the following subscriptions or licenses.
       - Must have an **existing EXO license with E5 SKU**.
          - An E5 instant default sandbox is provided for free from the Microsoft 365 Developer Program or you can also use your own existing E5 instance.
 
-1. **Microsoft Azure subscription**
+2. **Microsoft Azure subscription**
 
    - If you don't have one, you can get one (for free) in our [Azure website](https://azure.microsoft.com/free/).
    - The account used to sign in must have the **Global Administrator** role granted to it.
@@ -45,7 +45,7 @@ To complete this lab, you'll need the following subscriptions or licenses.
    - The Azure subscription must be in the same tenant as the Microsoft 365 tenant, as Microsoft Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants. If your Azure subscription isn't in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Azure AD in your Microsoft 365 tenant. To do so, follow the steps listed in [Associate or add an Azure subscription to your Azure Active Directory tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
 
 <!--This can stay for now, please update this once we remove the ASP.NET page-->
-1. Make sure you have [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine.
+3. Make sure you have [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine.
 
 > [!NOTE]
 > The screenshots and examples used in this lab are from an Microsoft 365 test tenant with sample email from test users. You can use your own Microsoft 365 tenant to perform the same steps. No data is written to Microsoft 365. A copy of email data is extracted from all users in an Microsoft 365 tenant and copied to an Azure Blob Storage account that you maintain control over who has access to the data within the Azure Blob Storage.
