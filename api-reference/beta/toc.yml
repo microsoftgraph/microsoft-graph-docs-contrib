@@ -210,9 +210,9 @@ items:
           href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
   - name: Use the toolkit
     items:
-      - name: Overview
-        href: /graph/toolkit/overview?context=graph/api/beta
-        displayName: Microsoft Graph Toolkit, toolkit
+    - name: Overview
+      href: /graph/toolkit/overview?context=graph/api/beta
+      displayName: Microsoft Graph Toolkit, toolkit
       - name: Get started
         items:
         - name: Get started
