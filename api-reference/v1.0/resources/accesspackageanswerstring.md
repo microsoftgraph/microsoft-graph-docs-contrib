@@ -1,7 +1,7 @@
 ---
 title: "accessPackageAnswerString resource type"
 description: "A string answer to an accessPackageTextInputQuestion"
-author: "markwahl-msft"
+author: "saylee-dharne-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Indicates the string input answer to an [accessPackageTextInputQuestion](../resources/accesspackagetextinputquestion.md). Stored on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).
 
 Inherits from [accessPackageAnswer](../resources/accesspackageanswer.md).
@@ -20,10 +18,9 @@ Inherits from [accessPackageAnswer](../resources/accesspackageanswer.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|value|String|The value stored on the requestor's user profile, if this answer is configured to be stored as a specific attribute.|
 |answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|The question the answer applies to. Inherited from [accessPackageAnswer](../resources/accesspackageanswer.md).|
 |displayValue|String|The localized display values shown to the requestor and approvers. Inherited from [accessPackageAnswer](../resources/accesspackageanswer.md).|
-|value|String|The value stored on the requestor's user profile, if this answer is configured to be stored as a specific attribute.|
-
 ## Relationships
 None.
 
