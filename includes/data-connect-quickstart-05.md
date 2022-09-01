@@ -98,8 +98,9 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
       - Select **Binary** as the format for the data and then select the **Continue** button.
 
       - Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it does not exist already.
-
-    - In the table select the **Connection** tab, then select **New**.
+      - Click **Select** under **Linked service** and then click **+New**.
+      - Set the following values in the dialog, then select **Create**.
+    
     - Set the following values in the dialog, then select **Finish**.
 
         - **Authentication type**: Service principal
