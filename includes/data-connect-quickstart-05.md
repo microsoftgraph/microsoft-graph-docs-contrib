@@ -91,6 +91,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
       - Select **Import schema** in the _Output columns_ section.
 
     - Select the **Copy data** activity in the pipeline tab, then select the **Sink** tab.
+    
         ![A screenshot explaining basic dataset and copy activity](../concepts/images/data-connect-adf-copy-activity.png)
         
       - Select the **New** button, select **Azure Blob Storage** or **Azure Data Lake Gen2**, and then select the **Continue** button.
