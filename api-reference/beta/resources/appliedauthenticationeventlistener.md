@@ -18,8 +18,8 @@ Indicates detailed information about the applied event listeners or listeners th
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|eventType|authenticationEventType|The authentication event that triggered the custom extension request. The possible values are: `tokenIssuanceStart`, `pageRenderStart`, `unknownFutureValue`.|
-|executedListenerId|String|ID of the Event Listener that was executed|
+|eventType|authenticationEventType|The type of authentication event that triggered the custom extension request. The possible values are: `tokenIssuanceStart`, `pageRenderStart`, `unknownFutureValue`.|
+|executedListenerId|String|ID of the Event Listener that was executed.|
 |handlerResult|[authenticationEventHandlerResult](../resources/authenticationeventhandlerresult.md)|The handler result of this authentication event.|
 
 ## Relationships
