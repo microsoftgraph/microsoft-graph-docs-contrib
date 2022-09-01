@@ -53,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [huntingQueryResults](../resources/huntingqueryresults.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [huntingQueryResults](../resources/security-huntingqueryresults.md) in the response body.
 
 ## Examples
 

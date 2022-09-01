@@ -18,8 +18,8 @@ The results of the [hunting query API](../api/security-runhuntingquery.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|schema|[singlePropertySchema](../resources/singlepropertyschema.md) collection|The schema for the response.|
-|results|[huntingRowResult](../resources/huntingrowresult.md) collection|The results of the hunting query.|
+|schema|[singlePropertySchema](../resources/security-singlepropertyschema.md) collection|The schema for the response.|
+|results|[huntingRowResult](../resources/security-huntingrowresult.md) collection|The results of the hunting query.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

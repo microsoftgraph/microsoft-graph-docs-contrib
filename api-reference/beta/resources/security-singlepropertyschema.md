@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The schema of one property from the results of [hunting query API](../resources/security-runhuntingquery.md).
+The schema of one property from the results of [hunting query API](../api/security-runhuntingquery.md).
 
 ## Properties
 |Property|Type|Description|

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-One row result of the [hunting query results](../resources/huntingqueryresults.md).
+One row result of the [hunting query results](../resources/security-huntingqueryresults.md).
 This class is a Dictionary of string, object.
 
 
