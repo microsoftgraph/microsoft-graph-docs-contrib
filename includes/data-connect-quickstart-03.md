@@ -36,7 +36,7 @@ The first step is to create an Azure Active Directory (Azure AD) application tha
 
 1. Locate the **Directory (tenant) ID** and copy it as you'll need it later in this tutorial. This will be referred to as the tenant ID.
 
-![A screenshot showing the application and tenant IDs.](../concepts/images/data-connect-app-tenant-new.png)
+    ![A screenshot showing the application and tenant IDs.](../concepts/images/data-connect-app-tenant-new.png)
 
 1. On the sidebar navigation, select **Certificates & secrets** under **Manage**.
 
