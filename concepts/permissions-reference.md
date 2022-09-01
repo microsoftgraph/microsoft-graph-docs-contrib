@@ -1293,6 +1293,24 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Lifecycle workflows permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _LifecycleWorkflows.Read.All_ |   Read all lifecycle workflows resources | Allows the app to list and read all workflows, tasks and related lifecycle workflows resources on behalf of the signed-in user. | Yes | No |
+| _LifecycleWorkflows.ReadWrite.All_ |   Read and write all lifecycle workflows resources | Allows the app to create, update, list, read and delete all workflows, tasks and related lifecycle workflows resources on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _LifecycleWorkflows.Read.All_ |   Read all lifecycle workflows resources  | Allows the app to list and read all workflows, tasks and related lifecycle workflows resources without a signed-in user. | Yes |
+| _LifecycleWorkflows.ReadWrite.All_ |   Read and write all lifecycle workflows resources | Allows the app to create, update, list, read and delete all workflows, tasks and related lifecycle workflows resources without a signed-in user. | Yes |
+
+---
+
 ## Mail permissions
 
 #### Delegated permissions
