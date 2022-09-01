@@ -51,7 +51,7 @@ In this step you'll create an Azure Storage account where Microsoft Graph Data C
 1. Create a new container in the **mgdcdemoap** Azure Storage account. Please pick the respective Azure Storage based on the one you created earlier in step 4.
 
     1. Select the **mgdcdemoapp** Azure Storage account.
-    2. On the sidebar menu, select **Containers** under the **Blob** service section.
+    2. On the sidebar menu, select **Containers** under the **Data Storage** service section.
     3. Select the **+Container** button at the top of the page and use the following values and then select **Create**.
 
         - **Name**: m365mails
