@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Indicate that a student is done with the work and is ready to hand in the assignment. 
 
-This action can only be taken by the student. This will change the status of the submission from "working" to "submitted". During the submit process, all the resources will be copied to the **submittedResources** bucket. The teacher will be looking at the submitted resources list for grading.
+This will change the status of the submission from "working" to "submitted". During the submit process, all the resources will be copied to the **submittedResources** bucket. The teacher will be looking at the submitted resources list for grading.
 
 A teacher can also submit a student's assignment.
 
