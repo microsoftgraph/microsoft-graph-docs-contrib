@@ -7,23 +7,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewChatMessage()
-body := msgraphsdk.NewItemBody()
+requestBody := graphmodels.NewChatMessage()
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
+content := "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+body.SetContent(&content) 
 requestBody.SetBody(body)
-contentType := "html"
-body.SetContentType(&contentType)
-content := "<div><div><at id="0">General</at>&nbsp;Hello there!</div></div>"
-body.SetContent(&content)
-requestBody.SetMentions( []ChatMessageMention {
-	msgraphsdk.NewChatMessageMention(),
-	SetAdditionalData(map[string]interface{}{
-		"id": ,
-		"mentionText": "General",
-	}
+
+
+chatMessageMention := graphmodels.NewChatMessageMention()
+id := int32(0)
+chatMessageMention.SetId(&id) 
+mentionText := "General"
+chatMessageMention.SetMentionText(&mentionText) 
+mentioned := graphmodels.Newmentioned()
+conversation := graphmodels.Newconversation()
+id := "19:0b50940236084d258c97b21bd01917b0@thread.skype"
+conversation.SetId(&id) 
+displayName := "General"
+conversation.SetDisplayName(&displayName) 
+conversationIdentityType := graphmodels.CHANNEL_TEAMWORKCONVERSATIONIDENTITYTYPE 
+conversation.SetConversationIdentityType(&conversationIdentityType) 
+mentioned.SetConversation(conversation)
+chatMessageMention.SetMentioned(mentioned)
+
+mentions := []graphmodels.ChatMessageMentionable {
+	chatMessageMention,
+
 }
-teamId := "team-id"
-channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(requestBody)
+requestBody.SetMentions(mentions)
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(requestBody)
 
 
 ```

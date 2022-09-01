@@ -1,6 +1,32 @@
 {
   "changelog": [
-	{
+		{
+		  "ChangeList": [
+		    {
+		      "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
+		      "ApiChange": "Relationship",
+		      "ChangedApiName": "reportSettings",
+		      "ChangeType": "Addition",
+		      "Description": "Added the **reportSettings** relationship to the [admin](https://docs.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
+		      "Target": "admin"
+		    },
+		    {
+		      "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
+		      "ApiChange": "Resource",
+		      "ChangedApiName": "adminReportSettings",
+		      "ChangeType": "Addition",
+		      "Description": "Added the [adminReportSettings](https://docs.microsoft.com/en-us/graph/api/resources/adminreportsettings?view=graph-rest-beta) resource and supported methods.",
+		      "Target": "adminReportSettings"
+		    }
+		  ],
+		  "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
+		  "Cloud": "Prod",
+		  "Version": "beta",
+		  "CreatedDateTime": "2022-07-18T08:53:27.1356132Z",
+		  "WorkloadArea": "Reports",
+		  "SubArea": "Microsoft 365 usage reports"
+		},
+		{
 	  "ChangeList": [
 		{
 			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
@@ -119,7 +145,7 @@
 	  ],
 		"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
 		"Cloud": "prd",
-		"Version": "beta",
+		"Version": "v1.0",
 		"CreatedDateTime": "2022-06-06T09:15:14.3122315Z",
 		"WorkloadArea": "Reports",
 		"SubArea": "Microsoft 365 usage reports"
@@ -1823,6 +1849,40 @@
       "CreatedDateTime": "2021-04-13T03:46:16.421Z",
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
-    }
+    },
+	{
+	  	"ChangeList": [
+		{
+			"Id": "c666366b-0cc2-49eb-b433-921507a1206d",
+			"ApiChange": "Parameter",
+			"ChangedApiName": "getM365AppUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the `content` parameter from the [getM365AppUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getm365appusercounts?view=graph-rest-beta) method.",
+			"Target": "getM365AppUserCounts"
+		},
+		{
+			"Id": "c666366b-0cc2-49eb-b433-921507a1206d",
+			"ApiChange": "Parameter",
+			"ChangedApiName": "getM365AppPlatformUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the `content` parameter from the [getM365AppPlatformUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getm365appplatformusercounts?view=graph-rest-beta) method.",
+			"Target": "getM365AppPlatformUserCounts"
+		},
+		{
+			"Id": "c666366b-0cc2-49eb-b433-921507a1206d",
+			"ApiChange": "Parameter",
+			"ChangedApiName": "getM365AppUserDetail",
+			"ChangeType": "Deletion",
+			"Description": "Removed the `content` parameter from the [getM365AppUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getm365appuserdetail?view=graph-rest-beta) method.",
+			"Target": "getM365AppUserDetail"
+		}
+		],
+		"Id": "c666366b-0cc2-49eb-b433-921507a1206d",
+		"Cloud": "prd",
+		"Version": "beta",
+		"CreatedDateTime": "2022-07-22T00:00:00",
+		"WorkloadArea": "Reports",
+		"SubArea": "Microsoft 365 usage reports"
+	}
   ]
 }

@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+>**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -97,9 +97,12 @@ The CSV file has the following headers for columns:
 - Is Licensed
 - Report Period
 
+> [!NOTE] 
+> The values in the Meetings Organized Count might not be the sum of the Ad Hoc Meetings Organized Count, Scheduled One-time Meetings Organized Count, and Scheduled Recurring Meetings Organized Count that a user organized during the specified time period. This is because the Unclassified meetings value is not inlcuded in the output CSV file. For details, see [Microsoft Teams user activity report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/user-activity-report).
+
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -109,12 +112,12 @@ The following is an example of the request.
   "name": "reportroot_getteamsuseractivityuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(period='D7')
 ```
 
 
-#### Response
+### Response
 
 The following is an example of the response.
 

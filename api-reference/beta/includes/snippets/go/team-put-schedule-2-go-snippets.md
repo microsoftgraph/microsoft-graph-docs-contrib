@@ -7,20 +7,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"enabled": true,
-	"timeZone": "America/Chicago",
-	"provisionStatus": "Completed",
-	"provisionStatusCode": nil,
-	"openShiftsEnabled": true,
-	"swapShiftsRequestsEnabled": true,
-	"offerShiftRequestsEnabled": true,
-	"timeOffRequestsEnabled": true,
-	"timeClockEnabled": true,
+requestBody := graphmodels.NewSchedulePostRequestBody()
+additionalData := map[string]interface{}{
+	enabled := true
+requestBody.SetEnabled(&enabled) 
+	"timeZone" : "America/Chicago", 
+	"provisionStatus" : "Completed", 
+	provisionStatusCode := null
+requestBody.SetProvisionStatusCode(&provisionStatusCode) 
+	openShiftsEnabled := true
+requestBody.SetOpenShiftsEnabled(&openShiftsEnabled) 
+	swapShiftsRequestsEnabled := true
+requestBody.SetSwapShiftsRequestsEnabled(&swapShiftsRequestsEnabled) 
+	offerShiftRequestsEnabled := true
+requestBody.SetOfferShiftRequestsEnabled(&offerShiftRequestsEnabled) 
+	timeOffRequestsEnabled := true
+requestBody.SetTimeOffRequestsEnabled(&timeOffRequestsEnabled) 
+	timeClockEnabled := true
+requestBody.SetTimeClockEnabled(&timeClockEnabled) 
+timeClockSettings := graphmodels.New()
+approvedLocation := graphmodels.New()
+altitude := int32(1024.13)
+approvedLocation.SetAltitude(&altitude) 
+latitude := int32(26.13246)
+approvedLocation.SetLatitude(&latitude) 
+longitude := int32(24.34616)
+approvedLocation.SetLongitude(&longitude) 
+	timeClockSettings.SetApprovedLocation(approvedLocation)
+	requestBody.SetTimeClockSettings(timeClockSettings)
 }
-teamId := "team-id"
-graphClient.TeamsById(&teamId).Schedule().Put(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.TeamsById("team-id").Schedule().Put(requestBody)
 
 
 ```

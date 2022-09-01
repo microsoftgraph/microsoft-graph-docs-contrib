@@ -1,7 +1,7 @@
 ---
 title: "accessReviewStage resource type"
 description: "Represents a stage of an accessReviewInstance."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

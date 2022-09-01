@@ -7,18 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPersonName()
+requestBody := graphmodels.NewPersonName()
 displayName := "Innocenty Popov"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 first := "Innocenty"
-requestBody.SetFirst(&first)
+requestBody.SetFirst(&first) 
 initials := "IP"
-requestBody.SetInitials(&initials)
+requestBody.SetInitials(&initials) 
 last := "Popov"
-requestBody.SetLast(&last)
+requestBody.SetLast(&last) 
 languageTag := "en-US"
-requestBody.SetLanguageTag(&languageTag)
-requestBody.SetMaiden(nil)
+requestBody.SetLanguageTag(&languageTag) 
+maiden := null
+requestBody.SetMaiden(&maiden) 
+
 result, err := graphClient.Me().Profile().Names().Post(requestBody)
 
 

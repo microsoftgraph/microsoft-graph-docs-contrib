@@ -7,20 +7,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewIdentityProviderBase()
-displayName := "contoso display name"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.samlOrWsFedExternalDomainFederation",
-	"issuerUri": "https://contoso.com/issuerUri",
-	"metadataExchangeUri": "https://contoso.com/metadataExchangeUri",
-	"passiveSignInUri": "https://contoso.com/signin",
-	"preferredAuthenticationProtocol": "wsFed",
-	"domains":  []Object {
+requestBody := graphmodels.NewFederationConfiguration()
+additionalData := map[string]interface{}{
+	"issuerUri" : "https://contoso.com/issuerUri", 
+	"displayName" : "contoso display name", 
+	"metadataExchangeUri" : "https://contoso.com/metadataExchangeUri", 
+	"passiveSignInUri" : "https://contoso.com/signin", 
+	"preferredAuthenticationProtocol" : "wsFed", 
+
+
+ := graphmodels.New()
+id := "contoso.com"
+.SetId(&id) 
+
+	domains := []graphmodels.Objectable {
+		,
+
 	}
-	"signingCertificate": "MIIDADCCAeigAwIBAgIQEX41y8r6",
+	"signingCertificate" : "MIIDADCCAeigAwIBAgIQEX41y8r6", 
 }
-result, err := graphClient.Directory().FederationConfigurations().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Directory().FederationConfigurationsById("identityProviderBase-id").Post(requestBody)
 
 
 ```

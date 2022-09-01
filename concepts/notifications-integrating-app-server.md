@@ -1,13 +1,16 @@
 ---
-title: "Create and send a notification from your app service"
-description: "Setup your application service to send user-centric notifications to various clients via the Microsoft Graph. "
+title: "Create and send a notification from your app service (deprecated)"
+description: "You can create and send a notification to a user by using Microsoft Graph APIs (deprecated)."
 ms.localizationpriority: high
 ms.prod: "notifications"
 author: "merzink"
 ---
 
 
-# Create and send a notification from your app service
+# Create and send a notification from your app service (deprecated)
+
+> [!IMPORTANT]
+> The Microsoft Graph notifications API is deprecated and stopped returning data in January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs). For more information, see the blog post [Retiring Microsoft Graph notifications API (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 You can create and send a notification to a user by using Microsoft Graph APIs. The notification is stored in the Microsoft Graph Notifications service store and is sent to all app clients on all devices that the target user is signed in on. 
 

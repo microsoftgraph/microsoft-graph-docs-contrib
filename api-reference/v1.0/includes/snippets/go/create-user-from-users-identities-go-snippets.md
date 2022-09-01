@@ -7,37 +7,49 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewUser()
+requestBody := graphmodels.NewUser()
 displayName := "John Smith"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetIdentities( []ObjectIdentity {
-	msgraphsdk.NewObjectIdentity(),
-	SetAdditionalData(map[string]interface{}{
-		"signInType": "userName",
-		"issuer": "contoso.onmicrosoft.com",
-		"issuerAssignedId": "johnsmith",
-	}
-	msgraphsdk.NewObjectIdentity(),
-	SetAdditionalData(map[string]interface{}{
-		"signInType": "emailAddress",
-		"issuer": "contoso.onmicrosoft.com",
-		"issuerAssignedId": "jsmith@yahoo.com",
-	}
-	msgraphsdk.NewObjectIdentity(),
-	SetAdditionalData(map[string]interface{}{
-		"signInType": "federated",
-		"issuer": "facebook.com",
-		"issuerAssignedId": "5eecb0cd",
-	}
+requestBody.SetDisplayName(&displayName) 
+
+
+objectIdentity := graphmodels.NewObjectIdentity()
+signInType := "userName"
+objectIdentity.SetSignInType(&signInType) 
+issuer := "contoso.onmicrosoft.com"
+objectIdentity.SetIssuer(&issuer) 
+issuerAssignedId := "johnsmith"
+objectIdentity.SetIssuerAssignedId(&issuerAssignedId) 
+objectIdentity1 := graphmodels.NewObjectIdentity()
+signInType := "emailAddress"
+objectIdentity1.SetSignInType(&signInType) 
+issuer := "contoso.onmicrosoft.com"
+objectIdentity1.SetIssuer(&issuer) 
+issuerAssignedId := "jsmith@yahoo.com"
+objectIdentity1.SetIssuerAssignedId(&issuerAssignedId) 
+objectIdentity2 := graphmodels.NewObjectIdentity()
+signInType := "federated"
+objectIdentity2.SetSignInType(&signInType) 
+issuer := "facebook.com"
+objectIdentity2.SetIssuer(&issuer) 
+issuerAssignedId := "5eecb0cd"
+objectIdentity2.SetIssuerAssignedId(&issuerAssignedId) 
+
+identities := []graphmodels.ObjectIdentityable {
+	objectIdentity,
+	objectIdentity1,
+	objectIdentity2,
+
 }
-passwordProfile := msgraphsdk.NewPasswordProfile()
-requestBody.SetPasswordProfile(passwordProfile)
+requestBody.SetIdentities(identities)
+passwordProfile := graphmodels.NewPasswordProfile()
 password := "password-value"
-passwordProfile.SetPassword(&password)
+passwordProfile.SetPassword(&password) 
 forceChangePasswordNextSignIn := false
-passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn)
+passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn) 
+requestBody.SetPasswordProfile(passwordProfile)
 passwordPolicies := "DisablePasswordExpiration"
-requestBody.SetPasswordPolicies(&passwordPolicies)
+requestBody.SetPasswordPolicies(&passwordPolicies) 
+
 result, err := graphClient.Users().Post(requestBody)
 
 

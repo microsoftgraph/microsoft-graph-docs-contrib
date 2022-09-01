@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+let ediscoveryCases = await client.api('/security/cases/ediscoveryCases')
+	.version('beta')
+	.get();
+
+```
