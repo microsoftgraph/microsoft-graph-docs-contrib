@@ -10,7 +10,7 @@ In this exercise you'll create, run, and approve an Azure Data Factory pipeline 
 
 The first step is to create an Azure Active Directory (Azure AD) application that will be used as the security principal to run the data extraction process.
 
-1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
+1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 
 1. Sign in using an account with **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal.
 
@@ -50,7 +50,7 @@ The first step is to create an Azure Active Directory (Azure AD) application tha
 1. On the sidebar navigation for the application, select **Owners**.
 
 1. Ensure that your account meets the following requirements to be an application owner:
-    - You have a valid user account within the tenant. Your user account must be corresponding to a valid user in the tenant and NOT an SPN.
+    - Your user account corresponds to a valid user in the tenant who is not a service principal name.
     - Your account must have an Exchange Online license assigned (must have a mailbox).
     - Alongside the Exchange Online license, your account must also have a working E5 subscription/license.
 

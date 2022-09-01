@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this section we will be building your first ASP.NET project application for to process the Microsoft Graph Data Connect data that was exported.
+In this section, we will be building your first ASP.NET project application to process the Microsoft Graph Data Connect data that was exported.
 
 ## Create a new ASP.NET project
 
@@ -50,15 +50,14 @@ In this section we will be building your first ASP.NET project application for t
 
     ![A screenshot of the Visual Studio interface showing the Configure Azure Storage summary.](../concepts/images/data-connect-vs-configure-sa-summary.png)
 
-## How to add connection string to Web.Config file at root level
+## How to add a connection string to the Web.config file at root level
 
-1. Add the code below to the Web.config file (the one at the root level). It is NOT the one under the Views folder. 
-2. Please Note: This should be added between </appSettings> and <system.web>
-    ```csharp
-    <connectionStrings>
+Add the following code to the Web.config file (the one at the root level) between </appSettings> and <system.web>. Make sure not to add it to the Web.config file under the Views folder.
+```xml
+<connectionStrings>
     <add name="AzureStorageConnectionString" connectionString="DefaultEndpointsProtocol="COPY FROM THE CONNECTION STRING FOUND IN YOUR AZURE STORAGE ACCOUNT-ACCESS KEYS –CONNECTION STRING"/>
-    </connectionStrings>
-    ```
+</connectionStrings>
+```
 
 
 ## Create a new model class that will be used to store the email metrics
@@ -293,6 +292,6 @@ In this section we will be building your first ASP.NET project application for t
 
     ![A screenshot of the built ASP.NET Web application interface showing the view email metrics button.](../concepts/images/data-connect-vs-select-view-metrics.png)
 
-1. When the page loads, you will see a list of emails addresses that were found among all emails with a sum of all the recipients sent between them, as shown from a small sample set in a test email extract in the following figure.
+1. When the page loads, you'll see a list of emails addresses that were found among all emails with a sum of all the recipients sent between them, as shown from a small sample set in a test email extract in the following figure.
 
     ![A screenshot of the built ASP.NET Web application interface showing the view email metrics results.](../concepts/images/data-connect-vs-show-email-metrics.png)
