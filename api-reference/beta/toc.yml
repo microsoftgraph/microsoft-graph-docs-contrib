@@ -196,18 +196,18 @@ items:
       href: /graph/sdks/large-file-upload?context=graph/api/beta
     - name: Use beta API
       href: /graph/sdks/use-beta?context=graph/api/beta
-      - name: Use PowerShell
-        items:
-        - name: PowerShell overview
-          href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
-        - name: Install PowerShell SDK
-          href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
-        - name: Get started
-          href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
-        - name: Navigate the PowerShell SDK
-          href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
-        - name: App-only authentication
-          href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+    - name: Use PowerShell
+      items:
+      - name: PowerShell overview
+        href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
+      - name: Install PowerShell SDK
+        href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
+      - name: Get started
+        href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
+      - name: Navigate the PowerShell SDK
+        href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
+      - name: App-only authentication
+        href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
   - name: Use the toolkit
     items:
     - name: Overview
