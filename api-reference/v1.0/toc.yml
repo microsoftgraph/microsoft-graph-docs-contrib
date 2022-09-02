@@ -2574,6 +2574,8 @@ items:
             href: resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md
           - name: Application guard block file transfer type
             href: resources/intune-deviceconfig-applicationguardblockfiletransfertype.md
+          - name: Auto restart notification dismissal method
+            href: resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md
           - name: Automatic update mode
             href: resources/intune-deviceconfig-automaticupdatemode.md
           - name: BitLocker encryption method
@@ -2830,6 +2832,8 @@ items:
               href: api/intune-deviceconfig-editionupgradeconfiguration-update.md
           - name: Edition upgrade license type
             href: resources/intune-deviceconfig-editionupgradelicensetype.md
+          - name: Enablement
+            href: resources/intune-deviceconfig-enablement.md
           - name: Firewall certificate revocation list check method type
             href: resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md
           - name: Firewall packet queueing method type
@@ -3350,8 +3354,12 @@ items:
               href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-update.md
+          - name: Windows update for business update weeks
+            href: resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md
           - name: Windows update install schedule type
             href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
+          - name: Windows update notification display option
+            href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
           - name: Windows update scheduled install
             href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
           - name: Windows update type
@@ -3389,6 +3397,8 @@ items:
               href: api/intune-devices-detectedapp-delete.md
             - name: Update
               href: api/intune-devices-detectedapp-update.md
+          - name: Detected app platform type
+            href: resources/intune-devices-detectedappplatformtype.md
           - name: Device action result
             href: resources/intune-devices-deviceactionresult.md
           - name: Device category
