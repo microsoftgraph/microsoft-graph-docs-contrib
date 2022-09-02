@@ -15692,7 +15692,7 @@ items:
               href: api/userteamwork-teamsappinstallation-upgrade.md
             - name: Remove app for user
               href: api/userteamwork-delete-installedapps.md
-        - name: App settings
+        - name: App settings (preview)
           items:
           - name: App settings
             href: resources/teamsappsettings.md
@@ -15802,7 +15802,7 @@ items:
               href: api/call-cancelmediaprocessing.md
             - name: Subscribe to tone
               href: api/call-subscribetotone.md    
-          - name: Large gallery view operation
+          - name: Large gallery view operation (preview)
             items:
             - name: Add large gallery view
               href: api/call-addlargegalleryview.md
@@ -15873,14 +15873,14 @@ items:
               items:
               - name: List
                 href: api/attendancerecord-list.md
-          - name: Call transcript
+          - name: Call transcript (preview)
             href: resources/calltranscript.md
             items:
             - name: List
               href: api/onlinemeeting-list-transcripts.md
             - name: Get
               href: api/calltranscript-get.md
-          - name: External meeting registration
+          - name: External meeting registration (preview)
             href: resources/externalmeetingregistration.md
             items:
             - name: Create
@@ -15898,7 +15898,7 @@ items:
                 href: api/externalmeetingregistrant-post.md
               - name: Delete
                 href: api/externalmeetingregistrant-delete.md      
-          - name: Meeting registration
+          - name: Meeting registration (preview)
             href: resources/meetingregistration.md
             items:
             - name: Create
@@ -15931,7 +15931,7 @@ items:
               href: api/onlinemeeting-delete.md
             - name: Create or get
               href: api/onlinemeeting-createorget.md
-          - name: Virtual appointment
+          - name: Virtual appointment (preview)
             href: resources/virtualappointment.md
             items:
             - name: Create
@@ -15957,7 +15957,7 @@ items:
             href: api/presence-setuserpreferredpresence.md
           - name: Clear user preferred presence
             href: api/presence-clearuserpreferredpresence.md  
-      - name: Device
+      - name: Device (preview)
         items:
         - name: Provisioned devices
           href: resources/teamworkdevice.md
@@ -15994,7 +15994,7 @@ items:
               href: api/teamworkdeviceoperation-list.md
             - name: Get
               href: api/teamworkdeviceoperation-get.md
-      - name: Employee learning
+      - name: Employee learning (preview)
         displayName: Viva Learning
         items:
         - name: Overview
@@ -16184,7 +16184,7 @@ items:
             href: api/chatmessage-list-hostedcontents.md
           - name: Get hosted content
             href: api/chatmessagehostedcontent-get.md
-        - name: Pinned chat message
+        - name: Pinned chat message (preview)
           href: resources/pinnedChatMessageInfo.md
           items:
           - name: List pinned messages
@@ -16240,7 +16240,7 @@ items:
             href: api/team-completemigration.md
           - name: List permission grants
             href: api/team-list-permissiongrants.md 
-          - name: Team template
+          - name: Team template (preview)
             items:
               - name: Team template
                 href: resources/teamtemplate.md
@@ -16248,7 +16248,7 @@ items:
                 href: api/teamwork-list-teamtemplates.md
               - name: List definitions
                 href: api/teamtemplate-list-definitions.md
-          - name: Team template definition
+          - name: Team template definition (preview)
             items:
               - name: Team template definition
                 href: resources/teamtemplatedefinition.md
@@ -16258,7 +16258,7 @@ items:
                 href: api/teamtemplatedefinition-get.md
               - name: Get team definition
                 href: api/teamtemplatedefinition-get-teamdefinition.md
-          - name: Deleted team
+          - name: Deleted team (preview)
             href: resources/deletedteam.md
             items:
             - name: List
