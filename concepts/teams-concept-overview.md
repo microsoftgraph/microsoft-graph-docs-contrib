@@ -173,7 +173,7 @@ Whether scheduling a meeting between a doctor and a patient or between a user an
 ## Cultivate workforce 
 
 ### Manage shifts and staff schedules
-Available on Teams, the Microsoft Shifts app manages shifts, staff scheduling, and time tracking. Being integrated with Teams streamlines communications using dedicated channels and teams built to connect the workforce and foster community building. Use the [Shifts API](/graph/api/resources/shift) to pull shift data into your staffing systems, provide frontline workers with shift information they need in one place, and empower them to own their schedules, request shift in a schedule, and swap or offer shifts.
+Available on Teams, the Microsoft Shifts app manages shifts, staff scheduling, and time tracking. Being integrated with Teams, Shifts provides users the convenience of dedicated channels and teams, streamlining communications to connect the workforce and fostering community building. Use the [Shifts API](/graph/api/resources/shift) to pull shift data into your staffing systems, provide frontline workers with shift information they need in one place, and empower them to own their schedules, request shift in a schedule, and swap or offer shifts.
 
 ### Enable employee learning using the collaborative capabilities in Teams (preview)
 Viva Learning built for Microsoft Teams and Microsoft 365 brings employee learning into the flow of work. Viva Learning lets employers register learning providers, upload and manage content metadata, learner assignments, and completion records. Employees can share learning content in Teams messages, meeting chats, or emails, encouraging peer learning and mentoring conversations. 
