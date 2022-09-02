@@ -65,7 +65,7 @@ specifying only the **policyViolation** property.
 
 ## Response body
 For applications that use delegated permissions:
-If successful, this method returns a `204 NoContent` response.
+If successful, this method returns a `204 No Content` response.
 
 For applications that use application permissions:
 If successful, this method returns a `200 OK` response.
