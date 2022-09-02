@@ -134,6 +134,7 @@ The following is a JSON representation of the resource.
   "osVersion": "String",
   "lastRemoteActionResult": "String",
   "lastLoginResult": "String",
-  "connectivityResult": "String"
+  "connectivityResult": "String",
+  "diskEncryptionState": "String"
 }
 ```
