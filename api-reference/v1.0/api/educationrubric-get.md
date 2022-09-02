@@ -62,8 +62,9 @@ The following is an example of the request.
 
 ```http
 GET https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
-```
-```## Optional query parameters
+
+## Optional query parameters
+
 This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 # [C#](#tab/csharp)
