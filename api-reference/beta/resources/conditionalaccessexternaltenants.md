@@ -19,7 +19,7 @@ Represents external tenants in the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| membershipKind |conditionalAccessExternalTenantsMembershipKind collection | Represents the membership kind. Supported values are: `all`, `[enumerated](conditionalaccessenumeratedexternaltenants.md)` and `unknownFutureValue`. |
+| membershipKind |conditionalAccessExternalTenantsMembershipKind collection | Represents the membership kind. Supported values are: `all`, [`enumerated`](conditionalaccessenumeratedexternaltenants.md) and `unknownFutureValue`. |
 
 ## Relationships
 
