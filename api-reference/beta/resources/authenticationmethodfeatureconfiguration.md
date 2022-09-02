@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the features that are allowed for different authentication methods. For each authentication method, defines the users who are enabled or excluded from using the feature.
+Defines the features that are allowed for different authentication methods. For each authentication method, defines the users who are enabled to use or excluded from using the feature.
 
 ## Properties
 |Property|Type|Description|
