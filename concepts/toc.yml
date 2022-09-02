@@ -524,14 +524,16 @@ items:
             href: cloud-communications-media.md
           - name: Online meeting artifacts and permissions
             href: cloud-communications-online-meeting-artifacts.md
+          - name: Identify large gallery view participants
+            href: cloud-communications-identifylargegalleryview.md
         - name: Change notifications
           items:
-          - name: Subscribe to change notifications
+          - name: Subscribe for teams, chats, channels
             href: teams-change-notification-in-microsoft-teams-overview.md
-          - name: Subscribe to change notifications for online meetings
+          - name: Subscribe for online meetings
             href: changenotifications-for-onlinemeeting.md
         - name: Groups and teams
-          teams: 
+          items: 
           - name: Create a group and team
             href: teams-create-group-and-team.md
           - name: List all teams

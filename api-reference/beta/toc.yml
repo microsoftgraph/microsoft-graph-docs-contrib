@@ -15609,7 +15609,9 @@ items:
             - name: Remove tab from chat
               href: api/chat-delete-tabs.md
       - name: Calls and online meetings
-        items:       
+        items:
+        - name: Overview
+          href: resources/communications-api-overview.md
         - name: Calls
           items:
           - name: Application actions
@@ -15743,6 +15745,13 @@ items:
               items:
               - name: List
                 href: api/attendancerecord-list.md
+          - name: Call transcript
+            href: resources/calltranscript.md
+            items:
+            - name: List
+              href: api/onlinemeeting-list-transcripts.md
+            - name: Get
+              href: api/calltranscript-get.md
           - name: External meeting registration
             href: resources/externalmeetingregistration.md
             items:
@@ -15772,15 +15781,15 @@ items:
               href: api/meetingregistration-update.md
             - name: Delete
               href: api/meetingregistration-delete.md
-          - name: Meeting registrant
-            href: resources/meetingregistrant.md
-            items:
-            - name: List
-              href: api/meetingregistration-list-registrants.md
-            - name: Create
-              href: api/meetingregistration-post-registrants.md
-            - name: Delete
-              href: api/meetingregistrant-delete.md      
+            - name: Meeting registrant
+              href: resources/meetingregistrant.md
+              items:
+              - name: List
+                href: api/meetingregistration-list-registrants.md
+              - name: Create
+                href: api/meetingregistration-post-registrants.md
+              - name: Delete
+                href: api/meetingregistrant-delete.md      
           - name: Online meeting
             href: resources/onlinemeeting.md
             items:
@@ -15794,6 +15803,17 @@ items:
               href: api/onlinemeeting-delete.md
             - name: Create or get
               href: api/onlinemeeting-createorget.md
+          - name: Virtual appointment
+            href: resources/virtualappointment.md
+            items:
+            - name: Create
+              href: api/virtualappointment-put.md
+            - name: Get
+              href: api/virtualappointment-get.md
+            - name: Update
+              href: api/virtualappointment-update.md
+            - name: Delete
+              href: api/virtualappointment-delete.md
         - name: Presence 
           href: resources/presence.md
           items:
@@ -15803,12 +15823,49 @@ items:
             href: api/cloudcommunications-getpresencesbyuserid.md
           - name: Set presence
             href: api/presence-setpresence.md
-          - name: Clear presence
+          - name: Clear presencedevice
             href: api/presence-clearpresence.md
           - name: Set user preferred presence
             href: api/presence-setuserpreferredpresence.md
           - name: Clear user preferred presence
             href: api/presence-clearuserpreferredpresence.md  
+      - name: Device
+        items:
+        - name: Provisioned devices
+          href: resources/teamworkdevice.md
+          items:
+            - name: List
+              href: api/teamworkdevice-list.md
+            - name: Get
+              href: api/teamworkdevice-get.md
+            - name: Restart device
+              href: api/teamworkdevice-restart.md
+            - name: Run device diagnostic
+              href: api/teamworkdevice-rundiagnostics.md
+            - name: Software update
+              href: api/teamworkdevice-updatesoftware.md
+        - name: Device activity
+          href: resources/teamworkdeviceactivity.md
+          items:
+            - name: Get
+              href: api/teamworkdeviceactivity-get.md
+        - name: Device configuration
+          href: resources/teamworkdeviceconfiguration.md
+          items:
+            - name: Get
+              href: api/teamworkdeviceconfiguration-get.md
+        - name: Device health
+          href: resources/teamworkdevicehealth.md
+          items:
+            - name: Get
+              href: api/teamworkdevicehealth-get.md
+        - name: Device operation
+          href: resources/teamworkdeviceoperation.md
+          items:
+            - name: List
+              href: api/teamworkdeviceoperation-list.md
+            - name: Get
+              href: api/teamworkdeviceoperation-get.md
       - name: Employee learning
         displayName: Viva Learning
         items:
@@ -15905,13 +15962,17 @@ items:
             href: api/channel-update-members.md
           - name: Update message
             href: api/chatmessage-update.md
+          - name: Delete message
+            href: api/chatmessage-softdelete.md
+          - name: Undo message deletion
+            href: api/chatmessage-undosoftdelete.md
           - name: Check user access
             href: api/channel-doesuserhaveaccess.md
           - name: List teams sharing a channel
             href: api/sharedwithchannelteaminfo-list.md
           - name: Get team sharing a channel
             href: api/sharedwithchannelteaminfo-get.md
-          - name: Unshare channel with team
+          - name: Unshare channel with teamchannels
             href: api/sharedwithchannelteaminfo-delete.md
           - name: List allowed members
             href: api/sharedwithchannelteaminfo-list-allowedmembers.md    
@@ -15983,6 +16044,10 @@ items:
             href: api/chatmessage-post-replies.md
           - name: Update message
             href: api/chatmessage-update.md
+          - name: Delete message
+            href: api/chatmessage-softdelete.md
+          - name: Undo message deletion
+            href: api/chatmessage-undosoftdelete.md
           - name: Get messages across all channels
             href: api/channel-getallmessages.md
           - name: Get messages across all chats
@@ -16046,7 +16111,32 @@ items:
           - name: Complete migration for team
             href: api/team-completemigration.md
           - name: List permission grants
-            href: api/team-list-permissiongrants.md        
+            href: api/team-list-permissiongrants.md 
+          - name: Team template
+            items:
+              - name: Team template
+                href: resources/teamtemplate.md
+              - name: List
+                href: api/teamwork-list-teamtemplates.md
+              - name: List definitions
+                href: api/teamtemplate-list-definitions.md
+          - name: Team template definition
+            items:
+              - name: Team template definition
+                href: resources/teamtemplatedefinition.md
+              - name: List
+                href: api/teamtemplate-list-definitions.md
+              - name: Get
+                href: api/teamtemplatedefinition-get.md
+              - name: Get team definition
+                href: api/teamtemplatedefinition-get-teamdefinition.md
+          - name: Deleted team
+            href: resources/deletedteam.md
+            items:
+            - name: List
+              href: api/teamwork-list-deletedteams.md
+            - name: Get all messages
+              href: api/deletedteam-getallmessages.md     
         - name: Tags
           href: resources/teamworktag.md
           items:
