@@ -9,34 +9,32 @@ doc_type: conceptualPageType
 
 # Set up Microsoft Teams to work with tenant users
 
-In this section, you will set up Microsoft Teams on your system and create your first team.
-
-Some teams could be already created during [School Data Sync](/graph/msgraph-onboarding-sds) process but here are the steps if you need to create more manually. You can follow the steps using a teacher or admin account from your [Microsoft EDU tenant](/graph/msgraph-onboarding-edutenant).
+To work with the education API in Microsoft Graph, you need to set up Microsoft Teams and create a team. If you [set up School Data Sync](/graph/msgraph-onboarding-sds), you might already have teams set up in your demo environment. To create more teams manually, follow the steps in this article, using a teacher or admin account in your [EDU demo tenant](/graph/msgraph-onboarding-edutenant).
 
 ## Install Microsoft Teams
 
-Open an InPrivate or Incognito browser window and browse to either to [teams.microsoft.com/download](https://teams.microsoft.com/download) if you want to install Microsoft teams in your computer or [teams.microsoft.com](https://teams.microsoft.com) to Sign In online.
+To install Microsoft Teams, open a private browser window and go to [teams.microsoft.com/download](https://teams.microsoft.com/download), or go to [teams.microsoft.com](https://teams.microsoft.com) to sign in online.
 
-Execute the downloaded installer and when prompted sign in with your O365 Global Admin account credentials.
+When prompted by the installer, sign in with your Office 365 Global Admin account credentials.
 
-After the installation finished, complete the welcome wizard.
+After the installation finishes, complete the welcome wizard.
 
 ## Create a team
 
-1. On the menu on the left click **Teams** and then click the **Create team** button in the center (if you already have a team click the button at the top right corner of the list of teams called **Join or create a team** to make the Create team button show up in the center).
+To create a team:
 
-2. Select **Class** as the team type. Note that you will only see these choices if you are signed in into an educational tenant.
+1. On the left menu, choose **Teams**, and then choose **Create team**. If you already have a team, on the top right, choose **Join or create a team**, and then choose **Create team**.
 
-3. Enter a Name for your team.
+2. For the team type, select **Class**. Note that you will only see this choice if you are signed in to an EDU tenant.
 
-4. Find some students by entering a letter in the search box and add them to your team by clicking the names and clicking **Add**. Repeat this step for each student and teacher in the class.
+3. Enter a name for your team.
 
-   ![Add people](./images/msgraph-onboarding/teams6-people.png)
+4. Add students to the team. In the search box, start typing a name, select a result, and choose **Add**. Repeat this step for each student and teacher in the class.
 
-5. Confirmation about Team created successfully.
+   ![Screenshot of the add people box with a name selected](./images/msgraph-onboarding/teams6-people.png)
+
+You have successfully created your team.
 
 ## Next steps
 
-You can start testing calls to Microsoft Graph APIs with Graph Explorer after completing you classes set up.
-
-* [Graph Explorer](/graph/msgraph-onboarding-graphexplorer)
+Start testing calls to Microsoft Graph APIs by using [Graph Explorer](/graph/msgraph-onboarding-graphexplorer).
