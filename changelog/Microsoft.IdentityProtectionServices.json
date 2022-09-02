@@ -15,7 +15,7 @@
 			  "ApiChange": "Enumeration",
 			  "ChangedApiName": "conditionalAccessGuestOrExternalUserTypes",
 			  "ChangeType": "Addition",
-			  "Description": "Added the [conditionalAccessGuestOrExternalUserTypes](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+			  "Description": "Added the **conditionalAccessGuestOrExternalUserTypes**enumeration.",
 			  "Target": "conditionalAccessGuestOrExternalUserTypes"
 			},
 			{
