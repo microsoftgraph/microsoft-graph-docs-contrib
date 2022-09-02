@@ -7,7 +7,7 @@
 			  "ApiChange": "Enumeration",
 			  "ChangedApiName": "conditionalAccessExternalTenantsMembershipKind",
 			  "ChangeType": "Addition",
-			  "Description": "Added the [conditionalAccessExternalTenantsMembershipKind](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+			  "Description": "Added the **conditionalAccessExternalTenantsMembershipKind** enumeration.",
 			  "Target": "conditionalAccessExternalTenantsMembershipKind"
 			},
 			{
