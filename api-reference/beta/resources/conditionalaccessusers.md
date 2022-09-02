@@ -21,8 +21,8 @@ Represents users, groups, and roles included in and excluded from the policy sco
 |:-------------|:------------|:------------|
 | includeUsers | String collection | User IDs in scope of policy unless explicitly excluded, or `None` or `All` or `GuestsOrExternalUsers`. |
 | excludeUsers | String collection | User IDs excluded from scope of policy and/or `GuestsOrExternalUsers`. |
-| includeGuestsOrExternalUsers | [conditionalAccessGuestsOrExternalUsers](conditionalAccessGuestsOrExternalUsers.md) | Internal guests or external users included in the policy scope. Optionally populated. |
-| excludeGuestsOrExternalUsers | [conditionalAccessGuestsOrExternalUsers](conditionalAccessGuestsOrExternalUsers.md) | Internal guests or external users excluded in the policy scope. Optionally populated. |
+| includeGuestsOrExternalUsers | [conditionalAccessGuestsOrExternalUsers](conditionalaccessguestsorexternalusers.md) | Internal guests or external users included in the policy scope. Optionally populated. |
+| excludeGuestsOrExternalUsers | [conditionalAccessGuestsOrExternalUsers](conditionalaccessguestsorexternalusers.md) | Internal guests or external users excluded in the policy scope. Optionally populated. |
 | includeGroups | String collection | Group IDs in scope of policy unless explicitly excluded, or `All`. |
 | excludeGroups | String collection | Group IDs excluded from scope of policy. |
 | includeRoles | String collection | Role IDs in scope of policy unless explicitly excluded, or `All`. |
