@@ -1,44 +1,37 @@
 ---
-title: "Use Graph Explorer to work with education APIs in Microsoft Graph"
-description: "This article describes how to use Microsoft Graph Explorer for running Roster and Assignments APIs queries."
+title: "Use Graph Explorer to work with the education API in Microsoft Graph"
+description: "This article describes how to use Microsoft Graph Explorer to use edudtion APIs in Microsoft Graph."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Use Graph Explorer to work with education APIs in Microsoft Graph
+# Use Graph Explorer to work with the education API in Microsoft Graph
 
-When you want to utilize your data within your own applications you use the Microsoft Graph API. For example, you can display information from SDS and Microsoft Teams in your application or automate common tasks like adding students and creating assignments.
+You can use the education API in Microsoft Graph to build applications that access EDU data. For example, you can display information from School Data Sync (SDS) and Microsoft Teams, or automate common tasks like adding students and creating assignments.
 
-Microsoft provides the online Graph Explorer so you can test the queries to the API before you implement them in your application.
+You can use Graph Explorer to test Microsoft Graph queries before you implement them in your application. To use Graph Explorer:
 
-1. To access the Graph Explorer launch a private web browser, navigate to [developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), click **Sign in to Graph Explorer**, then enter your Office 365 Global Admin account credentials.
+1. Open a private web browser, go to [developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), choose **Sign in to Graph Explorer**, and enter your Office 365 Global Admin account credentials.
 
-2. Access to the rostering API features requires that you grant corresponding permissions to the Graph Explorer app. When you execute a query that requires more permissions you will be prompted by the Graph Explorer.
+2. To access the rostering API, grant the corresponding permissions to Graph Explorer. Go to **Modify permissions**, search for **EduRoster.ReadBasic**, and choose **Consent**.
 
-3. Go to **Modify permissions** tab and search for **EduRoster.ReadBasic** click **Consent** permission.
+   You might have to wait for the permissions to update before you can run all queries.
 
-   You may have to wait for the permissions to update before you can execute all queries.
+4. To get a list of your schools, in the **query** field, enter `https://graph.microsoft.com/v1.0/education/schools` and choose **Run Query**.
 
-4. Enter `https://graph.microsoft.com/v1.0/education/schools` in the query field and click **Run Query** to fetch a list of your schools. Note how the query field auto-completes your queries.
+5. To get a list of classes, in the **query** field, enter `https://graph.microsoft.com/v1.0/education/classes` and choose **Run query**.
 
-5. Enter `https://graph.microsoft.com/v1.0/education/classes` in the query field and click **Run query** to fetch a list of classes.
+6. Take the first class ID `740202c8-5db7-4496-a055-9f3c9fd98207` to get that class's assignments. In the **query** field, enter `https://graph.microsoft.com/v1.0/education/classes/740202c8-5db7-4496-a055-9f3c9fd98207/assignments`, and choose **Run query**.
 
-6. Take the first class Id `740202c8-5db7-4496-a055-9f3c9fd98207` to get its assignments.
-   - Enter `https://graph.microsoft.com/v1.0/education/classes/740202c8-5db7-4496-a055-9f3c9fd98207/assignments` in the query field.
-   - Click **Run query**.
+7. To access the Assignments API, grant the corresponding permissions to Graph Explorer. Go to **Modify permissions**, search for **EduAssignments.Read, EduAssignments.ReadBasic, EduAssignments.ReadWrite and EduAssignments.ReadWriteBasic**, and choose **Consent**.
 
-7. Access to the Assignments API features requires that you grant corresponding permissions to the Graph Explorer app.
-   - Go to **Modify permissions** tab and search for **EduAssignments.Read, EduAssignments.ReadBasic, EduAssignments.ReadWrite and EduAssignments.ReadWriteBasic**.
-   - Click on **Consent** button.
+8. Run the query to get the assignments.
 
-8. Try again to run the query to get the assignments.
+9. Now you can try to create a new assignment. In the **query** field, enter `https://graph.microsoft.com/v1.0/education/classes/740202c8-5db7-4496-a055-9f3c9fd98207/assignments`. Make sure that POST is selected for the request type.
 
-9. Now you can try to create a new assignment.
-   - Enter `https://graph.microsoft.com/v1.0/education/classes/740202c8-5db7-4496-a055-9f3c9fd98207/assignments` in the query field.
-   - Make sure POST is selected in the request type.
-   - Paste the JSON below into the **Request body** tab.
+10. In the **Request body** field, paste the following JSON below.
 
         ```json
             {
@@ -59,16 +52,13 @@ Microsoft provides the online Graph Explorer so you can test the queries to the 
             }
         ```
 
-    - Click **Run query** button, you must get a `Created – 201` response and a JSON object representing the new assignment.
-      ![Create assignment](./images/msgraph-onboarding/explorer8-createassignment.png)
+11. Choose **Run query**. If your query is successful, you'll get a `Created – 201` response and a JSON object that represents the new assignment.
 
-10. Try more queries. You can find the API reference and more example queries at [developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/education-overview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/education-overview).
-    The Graph Explorer is a great tool to help you tweak your queries.
+      ![Screenshot of the Create assignment query request and response in Graph Explorer](./images/msgraph-onboarding/explorer8-createassignment.png)
 
-11. You can see more detailed examples for Assignments API.
+12. Try more queries. For more examples, see the [education API reference content](https://docs.microsoft.com/en-us/graph/api/resources/education-overview?view=graph-rest-1.0).
 
-> [!VIDEO https://www.youtube.com/watch?v=JePYam-hyUU&t=75s]
 
 ## Next steps
 
-- [Microsoft Teams setup](/graph/msgraph-onboarding-msteams)
+- [Working with education APIs in Microsoft Graph](https://docs.microsoft.com/en-us/graph/api/resources/education-overview?view=graph-rest-1.0)
