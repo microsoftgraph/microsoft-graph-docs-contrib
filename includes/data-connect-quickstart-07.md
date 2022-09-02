@@ -53,6 +53,7 @@ In this section, we will be building your first ASP.NET project application to p
 ## How to add a connection string to the Web.config file at root level
 
 Add the following code to the Web.config file (the one at the root level) between </appSettings> and <system.web>. Make sure not to add it to the Web.config file under the Views folder.
+
 ```xml
 <connectionStrings>
     <add name="AzureStorageConnectionString" connectionString="DefaultEndpointsProtocol="COPY FROM THE CONNECTION STRING FOUND IN YOUR AZURE STORAGE ACCOUNT-ACCESS KEYS –CONNECTION STRING"/>

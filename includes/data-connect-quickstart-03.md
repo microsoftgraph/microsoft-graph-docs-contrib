@@ -36,7 +36,7 @@ The first step is to create an Azure Active Directory (Azure AD) application tha
 
 1. Locate the **Directory (tenant) ID** and copy it as you'll need it later in this tutorial. This will be referred to as the tenant ID.
 
-![A screenshot showing the application and tenant IDs.](../concepts/images/data-connect-app-tenant-new.png)
+    ![A screenshot showing the application and tenant IDs.](../concepts/images/data-connect-app-tenant-new.png)
 
 1. On the sidebar navigation, select **Certificates & secrets** under **Manage**.
 
@@ -54,6 +54,6 @@ The first step is to create an Azure Active Directory (Azure AD) application tha
     - Your account must have an Exchange Online license assigned (must have a mailbox).
     - Alongside the Exchange Online license, your account must also have a working E5 subscription/license.
 
-1. Verify that your account is listed as an application owner. If your account isn't listed yet as an application owner, add it to the list.
+1. Verify that your account is listed as an application owner. If that isn't the case, add it to the list.
 
     ![A screenshot showing a user verifying that their account is set as owner for the application registration in the Azure portal.](../concepts/images/data-connect-aad-app-owners-new.png)

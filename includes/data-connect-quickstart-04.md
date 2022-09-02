@@ -25,7 +25,7 @@ In this step you'll create an Azure Storage account where Microsoft Graph Data C
 
     ![A screenshot showing on how to create a Storage account.](../concepts/images/data-connect-azure-storageaccount-create.png)
     
-1. After the **Basics** and **Advanced** tabs, leave the rest of the settings as default.
+1. After configuring the values for the **Basics** and **Advanced** tabs, leave the rest of the settings as default.
 
     > [!NOTE]
     >  Ensure that within the **Networking** tab, only the **Enable public access from all networks** is enabled. We support other types of network access; however, we are working on removing additional restrictions required for them. For the time being, only select the first option. For more questions on additional network access, please reach out to *dataconnect@microsoft.com*.
@@ -48,10 +48,10 @@ In this step you'll create an Azure Storage account where Microsoft Graph Data C
 
       <!--  ![A screenshot showing the proper role assignment to the application for Microsoft Graph Data Connect in the Azure Storage account in the Azure portal.](../concepts/images/data-connect-azure-storage-role.png) -->
 
-1. Create a new container in the **mgdcdemoap** Azure Storage account. Please pick the respective Azure Storage based on the one you created earlier in step 4.
+1. Create a new container in the **mgdcdemoap** Azure Storage account.
 
-    1. Select the **mgdcdemoapp** Azure Storage account.
-    2. On the sidebar menu, select **Containers** under the **Data Storage** service section.
+    1. Select the **mgdcdemoapp** Azure Storage account (or your account name from step 4).
+    2. On the sidebar menu, select **Containers** under the **Data storage** service section.
     3. Select the **+Container** button at the top of the page and use the following values and then select **Create**.
 
         - **Name**: m365mails
