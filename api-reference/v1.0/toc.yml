@@ -35,35 +35,35 @@ items:
     - name: Query parameters
       displayName: OData version 4.01, OData query parameters
       items:
-        - name: Use query parameters
-          displayName: OData query parameters, OData
-          href: /graph/query-parameters?context=graph/api/1.0
-        - name: Use $filter
-          displayName: OData query parameters, OData
-          href: /graph/filter-query-parameter?context=graph/api/1.0
-        - name: Use $search
-          displayName: OData query parameters, OData
-          href: /graph/search-query-parameter?context=graph/api/1.0
-        - name: Advanced query capabilities
-          displayName: OData query parameters, OData
-          href: /graph/aad-advanced-queries?context=graph/api/1.0
-        - name: Optimize requests with query parameters
-          displayName: OData query parameters, OData
-          href: /learn/modules/optimize-data-usage
+      - name: Use query parameters
+        displayName: OData query parameters, OData
+        href: /graph/query-parameters?context=graph/api/1.0
+      - name: Use $filter
+        displayName: OData query parameters, OData
+        href: /graph/filter-query-parameter?context=graph/api/1.0
+      - name: Use $search
+        displayName: OData query parameters, OData
+        href: /graph/search-query-parameter?context=graph/api/1.0
+      - name: Advanced query capabilities
+        displayName: OData query parameters, OData
+        href: /graph/aad-advanced-queries?context=graph/api/1.0
+      - name: Optimize requests with query parameters
+        displayName: OData query parameters, OData
+        href: /learn/modules/optimize-data-usage
     - name: Batching
       href: /graph/json-batching?context=graph/api/1.0
       displayName: Batch request
     - name: Throttling
       items:
-        - name: Overview
-          href: /graph/throttling?context=graph/api/1.0
-          displayName: throttling
-        - name: Service-specific limits
-          href: /graph/throttling-limits?context=graph/api/1.0
-          displayName: throttling
-        - name: Optimize network traffic
-          href: /learn/modules/optimize-network-traffic          
-          displayName: throttling
+      - name: Overview
+        href: /graph/throttling?context=graph/api/1.0
+        displayName: throttling
+      - name: Service-specific limits
+        href: /graph/throttling-limits?context=graph/api/1.0
+        displayName: throttling
+      - name: Optimize network traffic
+        href: /learn/modules/optimize-network-traffic          
+        displayName: throttling
     - name: Change notifications
       items:
       - name: Overview
@@ -81,19 +81,19 @@ items:
         href: /graph/universal-print-webhook-notifications?context=graph/api/1.0
       - name: Change notifications for Microsoft Teams resources
         items:
-          - name: Notification types and payloads
-            href: /graph/teams-change-notification-in-microsoft-teams-overview?context=graph/api/1.0
-            displayName: change notifications, Teams, Microsoft Teams
-          - name: Teams and channels
-            href: /graph/teams-changenotifications-team-and-channel?context=graph/api/1.0
-          - name: Team and channel membership
-            href: /graph/teams-changenotifications-teamMembership?context=graph/api/1.0
-          - name: Chat and channel messages
-            href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
-          - name: Chat
-            href: /graph/teams-changenotifications-chat?context=graph/api/1.0
-          - name: Chat membership
-            href: /graph/teams-changenotifications-chatMembership?context=graph/api/1.0
+        - name: Notification types and payloads
+          href: /graph/teams-change-notification-in-microsoft-teams-overview?context=graph/api/1.0
+          displayName: change notifications, Teams, Microsoft Teams
+        - name: Teams and channels
+          href: /graph/teams-changenotifications-team-and-channel?context=graph/api/1.0
+        - name: Team and channel membership
+          href: /graph/teams-changenotifications-teamMembership?context=graph/api/1.0
+        - name: Chat and channel messages
+          href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
+        - name: Chat
+          href: /graph/teams-changenotifications-chat?context=graph/api/1.0
+        - name: Chat membership
+          href: /graph/teams-changenotifications-chatMembership?context=graph/api/1.0
       - name: Change notifications for Outlook resources
         href: /graph/outlook-change-notifications-overview?context=graph/api/1.0
     - name: Change tracking
@@ -165,13 +165,13 @@ items:
         href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
     - name: Exchange Web Services
       items:
-        - name: Migrate EWS apps
-          href: /graph/migrate-exchange-web-services-overview?context=graph/api/1.0
-          displayName: Migration, Exchange Web Services, EWS, migrate
-        - name: Authentication
-          href: /graph/migrate-exchange-web-services-authentication?context=graph/api/1.0
-        - name: API mapping
-          href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/1.0
+      - name: Migrate EWS apps
+        href: /graph/migrate-exchange-web-services-overview?context=graph/api/1.0
+        displayName: Migration, Exchange Web Services, EWS, migrate
+      - name: Authentication
+        href: /graph/migrate-exchange-web-services-authentication?context=graph/api/1.0
+      - name: API mapping
+        href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/1.0
   - name: Use SDKs
     items:
       - name: Overview
@@ -198,16 +198,16 @@ items:
         href: /graph/sdks/use-beta?context=graph/api/1.0
       - name: Use PowerShell
         items:
-          - name: PowerShell overview
-            href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
-          - name: Install PowerShell SDK
-            href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
-          - name: Get started
-            href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
-          - name: Navigate the PowerShell SDK
-            href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
-          - name: App-only authentication
-            href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+        - name: PowerShell overview
+          href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
+        - name: Install PowerShell SDK
+          href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
+        - name: Get started
+          href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
+        - name: Navigate the PowerShell SDK
+          href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
+        - name: App-only authentication
+          href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
   - name: Use the toolkit
     items:
       - name: Overview
@@ -215,95 +215,95 @@ items:
         displayName: Microsoft Graph Toolkit, toolkit
       - name: Get started
         items:
-          - name: Get started
-            href: /graph/toolkit/get-started/overview?context=graph/api/1.0
-            displayName: Microsoft Graph Toolkit, toolkit
-          - name: Toolkit for React
-            href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
-          - name: Toolkit for SPFx
-            href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
+        - name: Get started
+          href: /graph/toolkit/get-started/overview?context=graph/api/1.0
+          displayName: Microsoft Graph Toolkit, toolkit
+        - name: Toolkit for React
+          href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
+        - name: Toolkit for SPFx
+          href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
       - name: Build your first app
         items:
-          - name: Register an Azure AD app
-            href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/1.0
-          - name: Build a web app (JavaScript)
-            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
-          - name: Build a web app (React)
-            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
-          - name: Build a web app (Angular)
-            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
-          - name: Build a SharePoint web part
-            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
-          - name: Build a Teams tab
-            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
-          - name: Build a Teams tab with SSO
-            href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/1.0
-          - name: Build an Electron app
-            href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/1.0
+        - name: Register an Azure AD app
+          href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/1.0
+        - name: Build a web app (JavaScript)
+          href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+        - name: Build a web app (React)
+          href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
+        - name: Build a web app (Angular)
+          href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
+        - name: Build a SharePoint web part
+          href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
+        - name: Build a Teams tab
+          href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
+        - name: Build a Teams tab with SSO
+          href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/1.0
+        - name: Build an Electron app
+          href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/1.0
       - name: Providers
         items:
-          - name: Using the providers
-            href: /graph/toolkit/providers/providers?context=graph/api/1.0
-            displayName: Microsoft Graph Toolkit providers, toolkit provider
-          - name: MSAL provider
-            href: /graph/toolkit/providers/msal?context=graph/api/1.0
-          - name: MSAL2 provider
-            href: /graph/toolkit/providers/msal2?context=graph/api/1.0
-          - name: SharePoint provider
-            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
-          - name: Teams provider
-            href: /graph/toolkit/providers/teams?context=graph/api/1.0
-          - name: Teams MSAL2 provider
-            href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
-          - name: TeamsFx provider
-            href: /graph/toolkit/providers/teamsfx?context=graph/api/1.0
-          - name: Electron provider
-            href: /graph/toolkit/providers/electron?context=graph/api/1.0
-          - name: Proxy provider
-            href: /graph/toolkit/providers/proxy?context=graph/api/1.0
-          - name: Custom provider
-            href: /graph/toolkit/providers/custom?context=graph/api/1.0
+        - name: Using the providers
+          href: /graph/toolkit/providers/providers?context=graph/api/1.0
+          displayName: Microsoft Graph Toolkit providers, toolkit provider
+        - name: MSAL provider
+          href: /graph/toolkit/providers/msal?context=graph/api/1.0
+        - name: MSAL2 provider
+          href: /graph/toolkit/providers/msal2?context=graph/api/1.0
+        - name: SharePoint provider
+          href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
+        - name: Teams provider
+          href: /graph/toolkit/providers/teams?context=graph/api/1.0
+        - name: Teams MSAL2 provider
+          href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
+        - name: TeamsFx provider
+          href: /graph/toolkit/providers/teamsfx?context=graph/api/1.0
+        - name: Electron provider
+          href: /graph/toolkit/providers/electron?context=graph/api/1.0
+        - name: Proxy provider
+          href: /graph/toolkit/providers/proxy?context=graph/api/1.0
+        - name: Custom provider
+          href: /graph/toolkit/providers/custom?context=graph/api/1.0
       - name: Components
         items:
-          - name: Login
-            href: /graph/toolkit/components/login?context=graph/api/1.0
-            displayName: Microsoft Graph toolkit components, toolkit component
-          - name: Get
-            href: /graph/toolkit/components/get?context=graph/api/1.0
-          - name: Person
-            href: /graph/toolkit/components/person?context=graph/api/1.0
-          - name: People
-            href: /graph/toolkit/components/people?context=graph/api/1.0
-          - name: Person card
-            href: /graph/toolkit/components/person-card?context=graph/api/1.0
-          - name: People picker
-            href: /graph/toolkit/components/people-picker?context=graph/api/1.0
-          - name: Teams channel picker
-            href: /graph/toolkit/components/teams-channel-picker?context=graph/api/1.0
-          - name: Agenda
-            href: /graph/toolkit/components/agenda?context=graph/api/1.0
-          - name: Planner tasks
-            href: /graph/toolkit/components/tasks?context=graph/api/1.0
-          - name: To-do tasks
-            href: /graph/toolkit/components/todo?context=graph/api/1.0
-          - name: File
-            href: /graph/toolkit/components/file?context=graph/api/1.0
-          - name: File list
-            href: /graph/toolkit/components/file-list?context=graph/api/1.0
+        - name: Login
+          href: /graph/toolkit/components/login?context=graph/api/1.0
+          displayName: Microsoft Graph toolkit components, toolkit component
+        - name: Get
+          href: /graph/toolkit/components/get?context=graph/api/1.0
+        - name: Person
+          href: /graph/toolkit/components/person?context=graph/api/1.0
+        - name: People
+          href: /graph/toolkit/components/people?context=graph/api/1.0
+        - name: Person card
+          href: /graph/toolkit/components/person-card?context=graph/api/1.0
+        - name: People picker
+          href: /graph/toolkit/components/people-picker?context=graph/api/1.0
+        - name: Teams channel picker
+          href: /graph/toolkit/components/teams-channel-picker?context=graph/api/1.0
+        - name: Agenda
+          href: /graph/toolkit/components/agenda?context=graph/api/1.0
+        - name: Planner tasks
+          href: /graph/toolkit/components/tasks?context=graph/api/1.0
+        - name: To-do tasks
+          href: /graph/toolkit/components/todo?context=graph/api/1.0
+        - name: File
+          href: /graph/toolkit/components/file?context=graph/api/1.0
+        - name: File list
+          href: /graph/toolkit/components/file-list?context=graph/api/1.0
       - name: Customize components
         items:
-          - name: Styling components
-            href: /graph/toolkit/customize-components/style?context=graph/api/1.0
-          - name: Templating components
-            href: /graph/toolkit/customize-components/templates?context=graph/api/1.0
-          - name: Handling events
-            href: /graph/toolkit/customize-components/events?context=graph/api/1.0
-          - name: Caching Microsoft Graph calls in components
-            href: /graph/toolkit/customize-components/cache?context=graph/api/1.0
-          - name: Localizing components
-            href: /graph/toolkit/customize-components/localization?context=graph/api/1.0
-          - name: Right-to-left support
-            href: /graph/toolkit/customize-components/right-to-left?context=graph/api/1.0
+        - name: Styling components
+          href: /graph/toolkit/customize-components/style?context=graph/api/1.0
+        - name: Templating components
+          href: /graph/toolkit/customize-components/templates?context=graph/api/1.0
+        - name: Handling events
+          href: /graph/toolkit/customize-components/events?context=graph/api/1.0
+        - name: Caching Microsoft Graph calls in components
+          href: /graph/toolkit/customize-components/cache?context=graph/api/1.0
+        - name: Localizing components
+          href: /graph/toolkit/customize-components/localization?context=graph/api/1.0
+        - name: Right-to-left support
+          href: /graph/toolkit/customize-components/right-to-left?context=graph/api/1.0
   - name: Resources
     items:
     - name: Best practices
@@ -1110,18 +1110,18 @@ items:
             - name: Permission grant condition sets
               href: resources/permissiongrantconditionset.md
               items:
-                - name: List includes
-                  href: api/permissiongrantpolicy-list-includes.md
-                - name: Create in includes
-                  href: api/permissiongrantpolicy-post-includes.md
-                - name: Delete from includes
-                  href: api/permissiongrantpolicy-delete-includes.md
-                - name: List excludes
-                  href: api/permissiongrantpolicy-list-excludes.md
-                - name: Create in excludes
-                  href: api/permissiongrantpolicy-post-excludes.md
-                - name: Delete from excludes
-                  href: api/permissiongrantpolicy-delete-excludes.md
+              - name: List includes
+                href: api/permissiongrantpolicy-list-includes.md
+              - name: Create in includes
+                href: api/permissiongrantpolicy-post-includes.md
+              - name: Delete from includes
+                href: api/permissiongrantpolicy-delete-includes.md
+              - name: List excludes
+                href: api/permissiongrantpolicy-list-excludes.md
+              - name: Create in excludes
+                href: api/permissiongrantpolicy-post-excludes.md
+              - name: Delete from excludes
+                href: api/permissiongrantpolicy-delete-excludes.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -1366,139 +1366,6 @@ items:
           href: api/subscription-update.md
         - name: Delete subscription
           href: api/subscription-delete.md
-    - name: Cloud communications
-      displayName: Cloud communications
-      items:
-      - name: Overview
-        href: resources/communications-api-overview.md
-      - name: Calls
-        items:
-        - name: Call
-          href: resources/call.md
-        - name: Create
-          href: api/application-post-calls.md
-        - name: Get
-          href: api/call-get.md
-        - name: Delete/hang up
-          href: api/call-delete.md
-        - name: Answer
-          href: api/call-answer.md
-        - name: Reject
-          href: api/call-reject.md
-        - name: Redirect
-          href: api/call-redirect.md
-        - name: Transfer
-          href: api/call-transfer.md
-        - name: Keep alive
-          href: api/call-keepalive.md
-        - name: IVR scenarios
-          href: resources/calls-api-ivr-overview.md
-          items:
-          - name: Play prompt
-            href: api/call-playprompt.md
-          - name: Record response
-            href: api/call-record.md
-          - name: Cancel media processing
-            href: api/call-cancelmediaprocessing.md
-          - name: Subscribe to tone
-            href: api/call-subscribetotone.md
-        - name: Participant
-          href: resources/participant.md
-          items:
-          - name: List
-            href: api/call-list-participants.md
-          - name: Get
-            href: api/participant-get.md
-          - name: Delete
-            href: api/participant-delete.md
-          - name: Mute participant
-            href: api/participant-mute.md
-          - name: Invite participants
-            href: api/participant-invite.md
-          - name: Start hold music
-            href: api/participant-startholdmusic.md
-          - name: Stop hold music
-            href: api/participant-stopholdmusic.md
-        - name: Change screen sharing role
-          href: api/call-changescreensharingrole.md
-        - name: Unmute application
-          href: api/call-unmute.md
-        - name: Mute application
-          href: api/call-mute.md
-        - name: Update recording status
-          href: api/call-updaterecordingstatus.md
-        - name: Log teleconference device quality data
-          href: api/call-logteleconferencedevicequality.md
-      - name: Call records
-        items:
-        - name: Overview
-          href: resources/callrecords-api-overview.md
-        - name: Call record
-          items:
-          - name: Call record
-            href: resources/callrecords-callrecord.md
-          - name: Get call record
-            href: api/callrecords-callrecord-get.md
-        - name: Session
-          items:
-          - name: Session
-            href: resources/callrecords-session.md
-          - name: List sessions
-            href: api/callrecords-session-list.md
-        - name: PSTN calls
-          items:
-          - name: PSTN log row
-            href: resources/callrecords-pstncalllogrow.md
-          - name: List PSTN calls
-            href: api/callrecords-callrecord-getpstncalls.md
-        - name: Direct routing calls
-          items:
-          - name: Direct routing log row
-            href: resources/callrecords-directroutinglogrow.md
-          - name: List direct routing calls
-            href: api/callrecords-callrecord-getdirectroutingcalls.md
-      - name: Online meetings
-        items:
-        - name: Online meeting
-          href: resources/onlinemeeting.md
-          items:
-          - name: Create
-            href: api/application-post-onlinemeetings.md
-          - name: Get
-            href: api/onlinemeeting-get.md
-          - name: Update
-            href: api/onlinemeeting-update.md
-          - name: Delete
-            href: api/onlinemeeting-delete.md
-          - name: Create or get
-            href: api/onlinemeeting-createorget.md
-        - name: Attendance report
-          href: resources/meetingAttendanceReport.md
-          items:
-          - name: List
-            href: api/meetingattendancereport-list.md
-          - name: Get
-            href: api/meetingattendancereport-get.md
-          - name: Attendance record
-            href: resources/attendancerecord.md
-            items:
-            - name: List
-              href: api/attendancerecord-list.md
-      - name: Presence
-        href: resources/presence.md
-        items:
-        - name: Get presence
-          href: api/presence-get.md
-        - name: Get presence for multiple users
-          href: api/cloudcommunications-getpresencesbyuserid.md
-        - name: Set presence
-          href: api/presence-setpresence.md
-        - name: Clear presence
-          href: api/presence-clearpresence.md
-        - name: Set user preferred presence
-          href: api/presence-setuserpreferredpresence.md
-        - name: Clear user preferred presence
-          href: api/presence-clearuserpreferredpresence.md
     - name: Compliance
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
@@ -1705,8 +1572,8 @@ items:
         - name: Print operation
           href: resources/printoperation.md
           items:
-            - name: Get
-              href: api/printoperation-get.md
+          - name: Get
+            href: api/printoperation-get.md
         - name: Printer
           href: resources/printer.md
           items:
@@ -2574,6 +2441,8 @@ items:
             href: resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md
           - name: Application guard block file transfer type
             href: resources/intune-deviceconfig-applicationguardblockfiletransfertype.md
+          - name: Auto restart notification dismissal method
+            href: resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md
           - name: Automatic update mode
             href: resources/intune-deviceconfig-automaticupdatemode.md
           - name: BitLocker encryption method
@@ -2830,6 +2699,8 @@ items:
               href: api/intune-deviceconfig-editionupgradeconfiguration-update.md
           - name: Edition upgrade license type
             href: resources/intune-deviceconfig-editionupgradelicensetype.md
+          - name: Enablement
+            href: resources/intune-deviceconfig-enablement.md
           - name: Firewall certificate revocation list check method type
             href: resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md
           - name: Firewall packet queueing method type
@@ -3350,8 +3221,12 @@ items:
               href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-update.md
+          - name: Windows update for business update weeks
+            href: resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md
           - name: Windows update install schedule type
             href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
+          - name: Windows update notification display option
+            href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
           - name: Windows update scheduled install
             href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
           - name: Windows update type
@@ -3389,6 +3264,8 @@ items:
               href: api/intune-devices-detectedapp-delete.md
             - name: Update
               href: api/intune-devices-detectedapp-update.md
+          - name: Detected app platform type
+            href: resources/intune-devices-detectedappplatformtype.md
           - name: Device action result
             href: resources/intune-devices-deviceactionresult.md
           - name: Device category
@@ -4899,67 +4776,67 @@ items:
                 - name: Schedule requests
                   href: resources/unifiedroleassignmentschedulerequest.md
                   items:
-                    - name: List
-                      href: api/rbacapplication-list-roleassignmentschedulerequests.md
-                    - name: Create
-                      href: api/rbacapplication-post-roleassignmentschedulerequests.md
-                    - name: Get
-                      href: api/unifiedroleassignmentschedulerequest-get.md
-                    - name: Cancel
-                      href: api/unifiedroleassignmentschedulerequest-cancel.md
-                    - name: Filter by current user
-                      href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                  - name: List
+                    href: api/rbacapplication-list-roleassignmentschedulerequests.md
+                  - name: Create
+                    href: api/rbacapplication-post-roleassignmentschedulerequests.md
+                  - name: Get
+                    href: api/unifiedroleassignmentschedulerequest-get.md
+                  - name: Cancel
+                    href: api/unifiedroleassignmentschedulerequest-cancel.md
+                  - name: Filter by current user
+                    href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
                 - name: Schedules
                   href: resources/unifiedroleassignmentschedule.md
                   items:
-                    - name: List
-                      href: api/rbacapplication-list-roleassignmentschedules.md
-                    - name: Get
-                      href: api/unifiedroleassignmentschedule-get.md
-                    - name: Filter by current user
-                      href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+                  - name: List
+                    href: api/rbacapplication-list-roleassignmentschedules.md
+                  - name: Get
+                    href: api/unifiedroleassignmentschedule-get.md
+                  - name: Filter by current user
+                    href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
                 - name: Schedule instances
                   href: resources/unifiedroleassignmentscheduleinstance.md
                   items:
-                    - name: List
-                      href: api/rbacapplication-list-roleassignmentscheduleinstances.md
-                    - name: Get
-                      href: api/unifiedroleassignmentscheduleinstance-get.md
-                    - name: Filter by current user
-                      href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+                  - name: List
+                    href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+                  - name: Get
+                    href: api/unifiedroleassignmentscheduleinstance-get.md
+                  - name: Filter by current user
+                    href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
             - name: Role eligibility
               items:
               - name: Schedule requests
                 href: resources/unifiedroleeligibilityschedulerequest.md
                 items:
-                  - name: List
-                    href: api/rbacapplication-list-roleeligibilityschedulerequests.md
-                  - name: Create
-                    href: api/rbacapplication-post-roleeligibilityschedulerequests.md
-                  - name: Get
-                    href: api/unifiedroleeligibilityschedulerequest-get.md
-                  - name: Cancel
-                    href: api/unifiedroleeligibilityschedulerequest-cancel.md
-                  - name: Filter by current user
-                    href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+                - name: List
+                  href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+                - name: Create
+                  href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+                - name: Get
+                  href: api/unifiedroleeligibilityschedulerequest-get.md
+                - name: Cancel
+                  href: api/unifiedroleeligibilityschedulerequest-cancel.md
+                - name: Filter by current user
+                  href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
               - name: Schedules
                 href: resources/unifiedroleeligibilityschedule.md
                 items:
-                  - name: List
-                    href: api/rbacapplication-list-roleeligibilityschedules.md
-                  - name: Get
-                    href: api/unifiedroleeligibilityschedule-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+                - name: List
+                  href: api/rbacapplication-list-roleeligibilityschedules.md
+                - name: Get
+                  href: api/unifiedroleeligibilityschedule-get.md
+                - name: Filter by current user
+                  href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
               - name: Schedule instances
                 href: resources/unifiedroleeligibilityscheduleinstance.md
                 items:
-                  - name: List
-                    href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
-                  - name: Get
-                    href: api/unifiedroleeligibilityscheduleinstance-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+                - name: List
+                  href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+                - name: Get
+                  href: api/unifiedroleeligibilityscheduleinstance-get.md
+                - name: Filter by current user
+                  href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
             - name: Role management policies
               items:
               - name: Policies and rules
@@ -5213,10 +5090,10 @@ items:
           - name: Risk detection
             href: resources/riskdetection.md
             items:
-              - name: List
-                href: api/riskdetection-list.md
-              - name: Get
-                href: api/riskdetection-get.md
+            - name: List
+              href: api/riskdetection-list.md
+            - name: Get
+              href: api/riskdetection-get.md
           - name: Risky user
             href: resources/riskyuser.md
             items:
@@ -5494,74 +5371,74 @@ items:
           items:
           - name: Self-service sign up user flows
             items:
-             - name: Self-service sign up user flow
-               href: resources/b2xidentityuserflow.md
-             - name: List
-               href: api/identitycontainer-list-b2xuserflows.md
-             - name: Create
-               href: api/identitycontainer-post-b2xuserflows.md
-             - name: Get
-               href: api/b2xidentityuserflow-get.md
-             - name: Delete
-               href: api/b2xidentityuserflow-delete.md
-             - name: List identity providers
-               href: api/b2xidentityuserflow-list-identityproviders.md
-             - name: Add identity provider
-               href: api/b2xidentityuserflow-post-identityproviders.md
-             - name: Remove identity provider
-               href: api/b2xidentityuserflow-delete-identityproviders.md
-             - name: List user attribute assignments
-               href: api/b2xidentityuserflow-list-userattributeassignments.md
-             - name: Create user attribute assignment
-               href: api/b2xidentityuserflow-post-userattributeassignments.md
-             - name: List languages
-               href: api/b2xidentityuserflow-list-languages.md
-             - name: Get API connectors configuration
-               href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
-             - name: Configure an API connector
-               href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
+            - name: Self-service sign up user flow
+              href: resources/b2xidentityuserflow.md
+            - name: List
+              href: api/identitycontainer-list-b2xuserflows.md
+            - name: Create
+              href: api/identitycontainer-post-b2xuserflows.md
+            - name: Get
+              href: api/b2xidentityuserflow-get.md
+            - name: Delete
+              href: api/b2xidentityuserflow-delete.md
+            - name: List identity providers
+              href: api/b2xidentityuserflow-list-identityproviders.md
+            - name: Add identity provider
+              href: api/b2xidentityuserflow-post-identityproviders.md
+            - name: Remove identity provider
+              href: api/b2xidentityuserflow-delete-identityproviders.md
+            - name: List user attribute assignments
+              href: api/b2xidentityuserflow-list-userattributeassignments.md
+            - name: Create user attribute assignment
+              href: api/b2xidentityuserflow-post-userattributeassignments.md
+            - name: List languages
+              href: api/b2xidentityuserflow-list-languages.md
+            - name: Get API connectors configuration
+              href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+            - name: Configure an API connector
+              href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
           - name: User flow attributes
             items:
-             - name: User flow attribute
-               href: resources/identityuserflowattribute.md
-             - name: List
-               href: api/identityuserflowattribute-list.md
-             - name: Create
-               href: api/identityuserflowattribute-post.md
-             - name: Get
-               href: api/identityuserflowattribute-get.md
-             - name: Update
-               href: api/identityuserflowattribute-update.md
-             - name: Delete
-               href: api/identityuserflowattribute-delete.md
+            - name: User flow attribute
+              href: resources/identityuserflowattribute.md
+            - name: List
+              href: api/identityuserflowattribute-list.md
+            - name: Create
+              href: api/identityuserflowattribute-post.md
+            - name: Get
+              href: api/identityuserflowattribute-get.md
+            - name: Update
+              href: api/identityuserflowattribute-update.md
+            - name: Delete
+              href: api/identityuserflowattribute-delete.md
           - name: User flow attribute assignment
             items:
-             - name: User flow attribute assignment
-               href: resources/identityuserflowattributeassignment.md
-             - name: Get
-               href: api/identityuserflowattributeassignment-get.md
-             - name: Update
-               href: api/identityuserflowattributeassignment-update.md
-             - name: Delete
-               href: api/identityuserflowattributeassignment-delete.md
+            - name: User flow attribute assignment
+              href: resources/identityuserflowattributeassignment.md
+            - name: Get
+              href: api/identityuserflowattributeassignment-get.md
+            - name: Update
+              href: api/identityuserflowattributeassignment-update.md
+            - name: Delete
+              href: api/identityuserflowattributeassignment-delete.md
           - name: User flow language configuration
             items:
-             - name: User flow language configuration
-               href: resources/userflowlanguageconfiguration.md
-             - name: Get
-               href: api/userflowlanguageconfiguration-get.md
-             - name: List default pages
-               href: api/userflowlanguageconfiguration-list-defaultpages.md
-             - name: List overrides pages
-               href: api/userflowlanguageconfiguration-list-overridespages.md
-             - name: User flow language page
-               href: resources/userflowlanguagepage.md
-             - name: Get
-               href: api/userflowlanguagepage-get.md
-             - name: Update
-               href: api/userflowlanguagepage-put.md
-             - name: Delete
-               href: api/userflowlanguagepage-delete.md
+            - name: User flow language configuration
+              href: resources/userflowlanguageconfiguration.md
+            - name: Get
+              href: api/userflowlanguageconfiguration-get.md
+            - name: List default pages
+              href: api/userflowlanguageconfiguration-list-defaultpages.md
+            - name: List overrides pages
+              href: api/userflowlanguageconfiguration-list-overridespages.md
+            - name: User flow language page
+              href: resources/userflowlanguagepage.md
+            - name: Get
+              href: api/userflowlanguagepage-get.md
+            - name: Update
+              href: api/userflowlanguagepage-put.md
+            - name: Delete
+              href: api/userflowlanguagepage-delete.md
           - name: API connectors
             items:
             - name: API connector
@@ -5628,16 +5505,16 @@ items:
           - name: Access review stage
             href: resources/accessreviewstage.md
             items:
-              - name: List
-                href: api/accessreviewinstance-list-stages.md
-              - name: Get
-                href: api/accessreviewstage-get.md
-              - name: Update
-                href: api/accessreviewstage-update.md
-              - name: Filter by current user
-                href: api/accessreviewstage-filterbycurrentuser.md
-              - name: Stop
-                href: api/accessreviewstage-stop.md
+            - name: List
+              href: api/accessreviewinstance-list-stages.md
+            - name: Get
+              href: api/accessreviewstage-get.md
+            - name: Update
+              href: api/accessreviewstage-update.md
+            - name: Filter by current user
+              href: api/accessreviewstage-filterbycurrentuser.md
+            - name: Stop
+              href: api/accessreviewstage-stop.md
           - name: Access review instance decision item
             displayName: access review decisions 
             href: resources/accessreviewinstancedecisionitem.md
@@ -5863,67 +5740,67 @@ items:
               - name: Schedule requests
                 href: resources/unifiedroleassignmentschedulerequest.md
                 items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentschedulerequests.md
-                  - name: Create
-                    href: api/rbacapplication-post-roleassignmentschedulerequests.md
-                  - name: Get
-                    href: api/unifiedroleassignmentschedulerequest-get.md
-                  - name: Cancel
-                    href: api/unifiedroleassignmentschedulerequest-cancel.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                - name: List
+                  href: api/rbacapplication-list-roleassignmentschedulerequests.md
+                - name: Create
+                  href: api/rbacapplication-post-roleassignmentschedulerequests.md
+                - name: Get
+                  href: api/unifiedroleassignmentschedulerequest-get.md
+                - name: Cancel
+                  href: api/unifiedroleassignmentschedulerequest-cancel.md
+                - name: Filter by current user
+                  href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
               - name: Schedules
                 href: resources/unifiedroleassignmentschedule.md
                 items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentschedules.md
-                  - name: Get
-                    href: api/unifiedroleassignmentschedule-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+                - name: List
+                  href: api/rbacapplication-list-roleassignmentschedules.md
+                - name: Get
+                  href: api/unifiedroleassignmentschedule-get.md
+                - name: Filter by current user
+                  href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
               - name: Schedule instances
                 href: resources/unifiedroleassignmentscheduleinstance.md
                 items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentscheduleinstances.md
-                  - name: Get
-                    href: api/unifiedroleassignmentscheduleinstance-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+                - name: List
+                  href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+                - name: Get
+                  href: api/unifiedroleassignmentscheduleinstance-get.md
+                - name: Filter by current user
+                  href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
           - name: Role eligibility
             items:
             - name: Schedule requests
               href: resources/unifiedroleeligibilityschedulerequest.md
               items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityschedulerequests.md
-                - name: Create
-                  href: api/rbacapplication-post-roleeligibilityschedulerequests.md
-                - name: Get
-                  href: api/unifiedroleeligibilityschedulerequest-get.md
-                - name: Cancel
-                  href: api/unifiedroleeligibilityschedulerequest-cancel.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+              - name: List
+                href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+              - name: Create
+                href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+              - name: Get
+                href: api/unifiedroleeligibilityschedulerequest-get.md
+              - name: Cancel
+                href: api/unifiedroleeligibilityschedulerequest-cancel.md
+              - name: Filter by current user
+                href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
             - name: Schedules
               href: resources/unifiedroleeligibilityschedule.md
               items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityschedules.md
-                - name: Get
-                  href: api/unifiedroleeligibilityschedule-get.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+              - name: List
+                href: api/rbacapplication-list-roleeligibilityschedules.md
+              - name: Get
+                href: api/unifiedroleeligibilityschedule-get.md
+              - name: Filter by current user
+                href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
             - name: Schedule instances
               href: resources/unifiedroleeligibilityscheduleinstance.md
               items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
-                - name: Get
-                  href: api/unifiedroleeligibilityscheduleinstance-get.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+              - name: List
+                href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+              - name: Get
+                href: api/unifiedroleeligibilityscheduleinstance-get.md
+              - name: Filter by current user
+                href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
           - name: Role management policies
             items:
             - name: Policies and rules
@@ -6684,10 +6561,10 @@ items:
         - name: Operation
           href : resources/security-caseoperation.md
           items:
-           - name: List case operations 
-             href: api/security-ediscoverycase-list-operations.md
-           - name: Get case opreation by id
-             href: api/security-caseoperation-get.md
+          - name: List case operations 
+            href: api/security-ediscoverycase-list-operations.md
+          - name: Get case opreation by id
+            href: api/security-caseoperation-get.md
         - name: Custodian
           href: resources/security-ediscoverycustodian.md
           items:
@@ -7145,373 +7022,414 @@ items:
           href: api/plannerprogresstaskboardtaskformat-get.md
         - name: Update progress task board format
           href: api/plannerprogresstaskboardtaskformat-update.md
-    - name: Teamwork
+    - name: Teamwork and communications
       displayName: Microsoft Teams
       items:
       - name: Overview
         href: resources/teams-api-overview.md
-      - name: Team
-        href: resources/team.md
+      - name: Apps
         items:
-        - name: Create
-          href: api/team-post.md
-        - name: Create team from group
-          href: api/team-put-teams.md
-        - name: Get
-          href: api/team-get.md
-        - name: Update
-          href: api/team-update.md
-        - name: Delete
-          href: api/group-delete.md
-        - name: List members
-          href: api/team-list-members.md
-        - name: Add member
-          href: api/team-post-members.md
-        - name: Add members in bulk
-          href: api/conversationmembers-add.md
-        - name: Get member
-          href: api/team-get-members.md
-        - name: Remove member
-          href: api/team-delete-members.md
-        - name: Update member
-          href: api/team-update-members.md
-        - name: Archive team
-          href: api/team-archive.md
-        - name: Unarchive team
-          href: api/team-unarchive.md
-        - name: Clone team
-          href: api/team-clone.md
-        - name: List your teams
-          href: api/user-list-joinedteams.md
-        - name: List your associated teams
-          href: api/associatedteaminfo-list.md
-        - name: Get primary channel
-          href: api/team-get-primarychannel.md
-        - name: Get team photo
-          href: api/profilephoto-get.md
-        - name: Update team photo
-          href: api/profilephoto-update.md
-        - name: List all teams
-          href: /graph/teams-list-all-teams?context=graph/api/1.0
-        - name: Complete migration for team
-          href: api/team-completemigration.md
-      - name: Group (team)
-        href: resources/group.md
-        items:
-        - name: Create
-          href: api/group-post-groups.md
-        - name: Get
-          href: api/group-get.md
-        - name: List
-          href: api/group-list.md
-        - name: Update
-          href: api/group-update.md
-        - name: Delete
-          href: api/group-delete.md
-        - name: List joined teams
-          href: api/user-list-joinedteams.md
-        - name: List associated teams
-          href: api/associatedteaminfo-list.md
-        - name: List members
-          href: api/group-list-members.md
-        - name: Add member
-          href: api/group-post-members.md
-        - name: Remove member
-          href: api/group-delete-members.md
-        - name: List owners
-          href: api/group-list-owners.md
-        - name: Add owner
-          href: api/group-post-owners.md
-        - name: Remove owner
-          href: api/group-delete-owners.md
-        - name: Get member groups
-          href: api/directoryobject-getmembergroups.md
-        - name: Get member objects
-          href: api/directoryobject-getmemberobjects.md
-        - name: Check member groups
-          href: api/directoryobject-checkmembergroups.md
-        - name: List member of
-          href: api/group-list-memberof.md
-        - name: List deleted groups
-          href: api/directory-deleteditems-list.md
-        - name: List deleted groups owned by user
-          href: api/directory-deleteditems-getuserownedobjects.md
-        - name: Get deleted group
-          href: api/directory-deleteditems-get.md
-        - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md
-        - name: Restore deleted group
-          href: api/directory-deleteditems-restore.md
-      - name: Channel
-        href: resources/channel.md
-        items:
-        - name: List all channels
-          href: api/team-list-allchannels.md
-        - name: List channels
-          href: api/channel-list.md
-        - name: List incoming channels
-          href: api/team-list-incomingchannels.md
-        - name: Create channel
-          href: api/channel-post.md
-        - name: Get channel
-          href: api/channel-get.md
-        - name: Update channel
-          href: api/channel-patch.md
-        - name: Delete channel
-          href: api/channel-delete.md
-        - name: Remove incoming channel
-          href: api/team-delete-incomingchannels.md
-        - name: Add member
-          href: api/channel-post-members.md
-        - name: Complete migration for channel
-          href: api/channel-completemigration.md
-        - name: Get channel message
-          href: api/chatmessage-get.md
-        - name: Get messages across all channels
-          href: api/channel-getallmessages.md
-        - name: Get channel messages delta
-          href: api/chatmessage-delta.md
-        - name: Get files folder
-          href: api/channel-get-filesfolder.md
-        - name: Get member
-          href: api/channel-get-members.md
-        - name: Get message reply
-          href: api/chatmessage-get.md
-        - name: List channel messages
-          href: api/channel-list-messages.md
-        - name: List members
-          href: api/channel-list-members.md
-        - name: List message replies
-          href: api/chatmessage-list-replies.md
-        - name: Provision email address
-          href: api/channel-provisionemail.md
-        - name: Remove email address
-          href: api/channel-removeemail.md
-        - name: Remove member
-          href: api/channel-delete-members.md
-        - name: Reply to message
-          href: api/chatmessage-post-replies.md
-        - name: Send message
-          href: api/channel-post-messages.md
-        - name: Update member role
-          href: api/channel-update-members.md
-        - name: Update message
-          href: api/chatmessage-update.md
-        - name: Check user access
-          href: api/channel-doesuserhaveaccess.md
-        - name: List teams sharing a channel
-          href: api/sharedwithchannelteaminfo-list.md
-        - name: Get team sharing a channel
-          href: api/sharedwithchannelteaminfo-get.md
-        - name: Unshare channel with team
-          href: api/sharedwithchannelteaminfo-delete.md
-        - name: List allowed members
-          href: api/sharedwithchannelteaminfo-list-allowedmembers.md
-      - name: Chat
-        href: resources/chat.md
-        items:
-        - name: List chats
-          href: api/chat-list.md
-        - name: Create chat
-          href: api/chat-post.md
-        - name: Get chat
-          href: api/chat-get.md
-        - name: Update chat
-          href: api/chat-patch.md
-        - name: List members
-          href: api/chat-list-members.md
-        - name: Add member
-          href: api/chat-post-members.md
-        - name: Get member
-          href: api/chat-get-members.md
-        - name: Remove member
-          href: api/chat-delete-members.md
-        - name: List messages in a chat
-          href: api/chat-list-messages.md
-        - name: Get messages across all chats
-          href: api/chats-getallmessages.md
-        - name: Get message in chat
-          href: api/chatmessage-get.md
-        - name: Send message in chat
-          href: api/chat-post-messages.md
-        - name: Get chat between user and app
-          href: api/userscopeteamsappinstallation-get-chat.md
-      - name: Chat message
-        href: resources/chatmessage.md
-        items:
-        - name: List channel messages
-          href: api/channel-list-messages.md
-        - name: List channel messages delta
-          href: api/chatmessage-delta.md
-        - name: List message replies
-          href: api/chatmessage-list-replies.md
-        - name: Get message in channel or chat
-          href: api/chatmessage-get.md
-        - name: Get message reply
-          href: api/chatmessage-get.md
-        - name: Send message
-          href: api/chatmessage-post.md
-        - name: Send reply to a message
-          href: api/chatmessage-post-replies.md
-        - name: Update message
-          href: api/chatmessage-update.md
-        - name: List hosted content
-          href: api/chatmessage-list-hostedcontents.md
-        - name: Get messages across all channels
-          href: api/channel-getallmessages.md
-        - name: Get messages across all chats
-          href: api/chats-getallmessages.md
-        - name: Get hosted content
-          href: api/chatmessagehostedcontent-get.md
-      - name: App
-        items:
-        - name: App in catalog
-          href: resources/teamsapp.md
-        - name: Publish apps to catalog
-          href: api/teamsapp-publish.md
-        - name: List apps in catalog
-          href: api/appcatalogs-list-teamsapps.md
-        - name: Update app in catalog
-          href: api/teamsapp-update.md
-        - name: Delete app from catalog
-          href: api/teamsapp-delete.md
-      - name: App installation
-        items:
-        - name: Installed app
-          href: resources/teamsappinstallation.md
-        - name: App in team
+        - name: App
           items:
-          - name: List apps in team
-            href: api/team-list-installedapps.md
-          - name: Get app installed in team
-            href: api/team-get-installedapps.md
-          - name: Add app to team
-            href: api/team-post-installedapps.md
-          - name: Upgrade app installed in team
-            href: api/team-teamsappinstallation-upgrade.md
-          - name: Remove app from team
-            href: api/team-delete-installedapps.md
-        - name: App in personal scope of user
+          - name: App in catalog
+            href: resources/teamsapp.md
+          - name: Publish apps to catalog
+            href: api/teamsapp-publish.md
+          - name: List apps in catalog
+            href: api/appcatalogs-list-teamsapps.md
+          - name: Update app in catalog
+            href: api/teamsapp-update.md
+          - name: Delete app from catalog
+            href: api/teamsapp-delete.md
+        - name: App installation
           items:
-          - name: List apps for user
-            href: api/userteamwork-list-installedapps.md
-          - name: Add app for user
-            href: api/userteamwork-post-installedapps.md
-          - name: Get app installed for user
-            href: api/userteamwork-get-installedapps.md
+          - name: Installed app
+            href: resources/teamsappinstallation.md
+          - name: App in chat
+            items:
+            - name: List apps in chat
+              href: api/chat-list-installedapps.md
+            - name: Add app in chat
+              href: api/chat-post-installedapps.md
+            - name: Get app installed in chat
+              href: api/chat-get-installedapps.md
+            - name: Upgrade app installed in chat
+              href: api/chat-teamsappinstallation-upgrade.md
+            - name: Remove app from chat
+              href: api/chat-delete-installedapps.md
+          - name: App in team
+            items:
+            - name: List apps in team
+              href: api/team-list-installedapps.md
+            - name: Get app installed in team
+              href: api/team-get-installedapps.md
+            - name: Add app to team
+              href: api/team-post-installedapps.md
+            - name: Upgrade app installed in team
+              href: api/team-teamsappinstallation-upgrade.md
+            - name: Remove app from team
+              href: api/team-delete-installedapps.md
+          - name: App in personal scope of user
+            items:
+            - name: List apps for user
+              href: api/userteamwork-list-installedapps.md
+            - name: Add app for user
+              href: api/userteamwork-post-installedapps.md
+            - name: Get app installed for user
+              href: api/userteamwork-get-installedapps.md
+            - name: Get chat between user and app
+              href: api/userscopeteamsappinstallation-get-chat.md
+            - name: Upgrade installed app for user 
+              href: api/userteamwork-teamsappinstallation-upgrade.md
+            - name: Remove app for user
+              href: api/userteamwork-delete-installedapps.md
+        - name: Resource-specific permission grants
+          href: resources/resourcespecificpermissiongrant.md
+          items:
+          - name: List for group
+            href: api/group-list-permissiongrants.md      
+        - name: Tab
+          href: resources/teamstab.md
+          items:
+          - name: Tab in channel
+            items:
+            - name: List tabs in channel
+              href: api/channel-list-tabs.md
+            - name: Add tab to channel
+              href: api/channel-post-tabs.md
+            - name: Get tab in channel
+              href: api/channel-get-tabs.md
+            - name: Update tab in channel
+              href: api/channel-patch-tabs.md
+            - name: Remove tab from channel
+              href: api/channel-delete-tabs.md
+          - name: Tab in chat
+            items:
+            - name: List tabs in chat
+              href: api/chat-list-tabs.md
+            - name: Add tab to chat
+              href: api/chat-post-tabs.md
+            - name: Get tab in chat
+              href: api/chat-get-tabs.md
+            - name: Update tab in chat
+              href: api/chat-patch-tabs.md
+            - name: Remove tab from chat
+              href: api/chat-delete-tabs.md
+      - name: Calls and online meetings
+        items:
+        - name: Overview
+          href: resources/communications-api-overview.md
+        - name: Calls
+          items:
+          - name: Application actions
+            items:
+            - name: Unmute application
+              href: api/call-unmute.md
+            - name: Mute application
+              href: api/call-mute.md
+            - name: Update recording status
+              href: api/call-updaterecordingstatus.md
+          - name: Call
+            href: resources/call.md
+            items:
+            - name: Create
+              href: api/application-post-calls.md
+            - name: Get
+              href: api/call-get.md
+            - name: Delete/hang up
+              href: api/call-delete.md
+            - name: Answer
+              href: api/call-answer.md
+            - name: Reject
+              href: api/call-reject.md
+            - name: Redirect
+              href: api/call-redirect.md
+            - name: Transfer
+              href: api/call-transfer.md
+            - name: Keep alive
+              href: api/call-keepalive.md
+            - name: Log teleconference device quality data
+              href: api/call-logteleconferencedevicequality.md 
+          - name: Content sharing session
+            items:      
+            - name: Change screen sharing role
+              href: api/call-changescreensharingrole.md     
+          - name: IVR scenarios
+            href: resources/calls-api-ivr-overview.md
+            items:
+            - name: Play prompt
+              href: api/call-playprompt.md
+            - name: Record response
+              href: api/call-record.md
+            - name: Cancel media processing
+              href: api/call-cancelmediaprocessing.md
+            - name: Subscribe to tone
+              href: api/call-subscribetotone.md    
+          - name: Participant
+            href: resources/participant.md
+            items:
+            - name: List
+              href: api/call-list-participants.md
+            - name: Get
+              href: api/participant-get.md
+            - name: Delete
+              href: api/participant-delete.md
+            - name: Mute participant
+              href: api/participant-mute.md
+            - name: Invite participants
+              href: api/participant-invite.md
+            - name: Start hold music
+              href: api/participant-startholdmusic.md
+            - name: Stop hold music
+              href: api/participant-stopholdmusic.md
+        - name: Call records
+          items:
+          - name: Overview
+            href: resources/callrecords-api-overview.md
+          - name: Call record
+            items:
+            - name: Call record
+              href: resources/callrecords-callrecord.md
+            - name: Get call record
+              href: api/callrecords-callrecord-get.md
+          - name: Direct routing calls
+            items:
+            - name: Direct routing log row
+              href: resources/callrecords-directroutinglogrow.md
+            - name: List direct routing calls
+              href: api/callrecords-callrecord-getdirectroutingcalls.md  
+          - name: PSTN calls
+            items:
+            - name: PSTN log row
+              href: resources/callrecords-pstncalllogrow.md
+            - name: List PSTN calls
+              href: api/callrecords-callrecord-getpstncalls.md       
+          - name: Session
+            items:
+            - name: Session
+              href: resources/callrecords-session.md
+            - name: List sessions
+              href: api/callrecords-session-list.md  
+        - name: Online meetings
+          items:
+          - name: Attendance report
+            href: resources/meetingAttendanceReport.md
+            items:
+            - name: List
+              href: api/meetingattendancereport-list.md
+            - name: Get
+              href: api/meetingattendancereport-get.md
+            - name: Attendance record
+              href: resources/attendancerecord.md
+              items:
+              - name: List
+                href: api/attendancerecord-list.md
+          - name: Online meeting
+            href: resources/onlinemeeting.md
+            items:
+            - name: Create
+              href: api/application-post-onlinemeetings.md
+            - name: Get
+              href: api/onlinemeeting-get.md
+            - name: Update
+              href: api/onlinemeeting-update.md
+            - name: Delete
+              href: api/onlinemeeting-delete.md
+            - name: Create or get
+              href: api/onlinemeeting-createorget.md
+        - name: Presence
+          href: resources/presence.md
+          items:
+          - name: Get presence
+            href: api/presence-get.md
+          - name: Get presence for multiple users
+            href: api/cloudcommunications-getpresencesbyuserid.md
+          - name: Set presence
+            href: api/presence-setpresence.md
+          - name: Clear presence
+            href: api/presence-clearpresence.md
+          - name: Set user preferred presence
+            href: api/presence-setuserpreferredpresence.md
+          - name: Clear user preferred presence
+            href: api/presence-clearuserpreferredpresence.md
+      - name: Messaging
+        items:
+        - name: Activity feed
+          items:
+          - name: Send notification to user in chat
+            href: api/chat-sendactivitynotification.md
+          - name: Send notification to user in team
+            href: api/team-sendactivitynotification.md
+          - name: Send notification to user
+            href: api/userteamwork-sendactivitynotification.md
+        - name: Channel
+          href: resources/channel.md
+          items:
+          - name: List all channels
+            href: api/team-list-allchannels.md
+          - name: List channels
+            href: api/channel-list.md
+          - name: List incoming channels
+            href: api/team-list-incomingchannels.md
+          - name: Create channel
+            href: api/channel-post.md
+          - name: Get channel
+            href: api/channel-get.md
+          - name: Update channel
+            href: api/channel-patch.md
+          - name: Delete channel
+            href: api/channel-delete.md
+          - name: Remove incoming channel
+            href: api/team-delete-incomingchannels.md
+          - name: Add member
+            href: api/channel-post-members.md
+          - name: Complete migration for channel
+            href: api/channel-completemigration.md
+          - name: Get channel message
+            href: api/chatmessage-get.md
+          - name: Get messages across all channels
+            href: api/channel-getallmessages.md
+          - name: Get channel messages delta
+            href: api/chatmessage-delta.md
+          - name: Get files folder
+            href: api/channel-get-filesfolder.md
+          - name: Get member
+            href: api/channel-get-members.md
+          - name: Get message reply
+            href: api/chatmessage-get.md
+          - name: List channel messages
+            href: api/channel-list-messages.md
+          - name: List members
+            href: api/channel-list-members.md
+          - name: List message replies
+            href: api/chatmessage-list-replies.md
+          - name: Provision email address
+            href: api/channel-provisionemail.md
+          - name: Remove email address
+            href: api/channel-removeemail.md
+          - name: Remove member
+            href: api/channel-delete-members.md
+          - name: Reply to message
+            href: api/chatmessage-post-replies.md
+          - name: Send message
+            href: api/channel-post-messages.md
+          - name: Update member role
+            href: api/channel-update-members.md
+          - name: Update message
+            href: api/chatmessage-update.md
+          - name: Check user access
+            href: api/channel-doesuserhaveaccess.md
+          - name: List teams sharing a channel
+            href: api/sharedwithchannelteaminfo-list.md
+          - name: Get team sharing a channel
+            href: api/sharedwithchannelteaminfo-get.md
+          - name: Unshare channel with team
+            href: api/sharedwithchannelteaminfo-delete.md
+          - name: List allowed members
+            href: api/sharedwithchannelteaminfo-list-allowedmembers.md    
+        - name: Chat
+          href: resources/chat.md
+          items:
+          - name: List chats
+            href: api/chat-list.md
+          - name: Create chat
+            href: api/chat-post.md
+          - name: Get chat
+            href: api/chat-get.md
+          - name: Update chat
+            href: api/chat-patch.md
+          - name: List members
+            href: api/chat-list-members.md
+          - name: Add member
+            href: api/chat-post-members.md
+          - name: Get member
+            href: api/chat-get-members.md
+          - name: Remove member
+            href: api/chat-delete-members.md
+          - name: List messages in a chat
+            href: api/chat-list-messages.md
+          - name: Get messages across all chats
+            href: api/chats-getallmessages.md
+          - name: Get message in chat
+            href: api/chatmessage-get.md
+          - name: Send message in chat
+            href: api/chat-post-messages.md
           - name: Get chat between user and app
             href: api/userscopeteamsappinstallation-get-chat.md
-          - name: Upgrade installed app for user
-            href: api/userteamwork-teamsappinstallation-upgrade.md
-          - name: Remove app for user
-            href: api/userteamwork-delete-installedapps.md
-        - name: App in chat
+        - name: Chat message
+          href: resources/chatmessage.md
           items:
-          - name: List apps in chat
-            href: api/chat-list-installedapps.md
-          - name: Add app in chat
-            href: api/chat-post-installedapps.md
-          - name: Get app installed in chat
-            href: api/chat-get-installedapps.md
-          - name: Upgrade app installed in chat
-            href: api/chat-teamsappinstallation-upgrade.md
-          - name: Remove app from chat
-            href: api/chat-delete-installedapps.md
-      - name: Activity feed
+          - name: List channel messages
+            href: api/channel-list-messages.md
+          - name: List channel messages delta
+            href: api/chatmessage-delta.md
+          - name: List message replies
+            href: api/chatmessage-list-replies.md
+          - name: Get message in channel or chat
+            href: api/chatmessage-get.md
+          - name: Get message reply
+            href: api/chatmessage-get.md
+          - name: Send message
+            href: api/chatmessage-post.md
+          - name: Send reply to a message
+            href: api/chatmessage-post-replies.md
+          - name: Update message
+            href: api/chatmessage-update.md
+          - name: List hosted content
+            href: api/chatmessage-list-hostedcontents.md
+          - name: Get messages across all channels
+            href: api/channel-getallmessages.md
+          - name: Get messages across all chats
+            href: api/chats-getallmessages.md
+          - name: Get hosted content
+            href: api/chatmessagehostedcontent-get.md
+        - name: Team
+          href: resources/team.md
+          items:
+          - name: Create
+            href: api/team-post.md
+          - name: Create team from group
+            href: api/team-put-teams.md
+          - name: Get
+            href: api/team-get.md
+          - name: Update
+            href: api/team-update.md
+          - name: Delete
+            href: api/group-delete.md
+          - name: List members
+            href: api/team-list-members.md
+          - name: Add member
+            href: api/team-post-members.md
+          - name: Add members in bulk
+            href: api/conversationmembers-add.md
+          - name: Get member
+            href: api/team-get-members.md
+          - name: Remove member
+            href: api/team-delete-members.md
+          - name: Update member
+            href: api/team-update-members.md
+          - name: Archive team
+            href: api/team-archive.md
+          - name: Unarchive team
+            href: api/team-unarchive.md
+          - name: Clone team
+            href: api/team-clone.md
+          - name: List your teams
+            href: api/user-list-joinedteams.md
+          - name: List your associated teams
+            href: api/associatedteaminfo-list.md
+          - name: Get primary channel
+            href: api/team-get-primarychannel.md
+          - name: Get team photo
+            href: api/profilephoto-get.md
+          - name: Update team photo
+            href: api/profilephoto-update.md
+          - name: List all teams
+            href: /graph/teams-list-all-teams?context=graph/api/1.0
+          - name: Complete migration for team
+            href: api/team-completemigration.md
+      - name: Shift management
         items:
-        - name: Send notification to user in chat
-          href: api/chat-sendactivitynotification.md
-        - name: Send notification to user in team
-          href: api/team-sendactivitynotification.md
-        - name: Send notification to user
-          href: api/userteamwork-sendactivitynotification.md
-      - name: Tab
-        href: resources/teamstab.md
-        items:
-        - name: Tab in channel
-          items:
-          - name: List tabs in channel
-            href: api/channel-list-tabs.md
-          - name: Add tab to channel
-            href: api/channel-post-tabs.md
-          - name: Get tab in channel
-            href: api/channel-get-tabs.md
-          - name: Update tab in channel
-            href: api/channel-patch-tabs.md
-          - name: Remove tab from channel
-            href: api/channel-delete-tabs.md
-        - name: Tab in chat
-          items:
-          - name: List tabs in chat
-            href: api/chat-list-tabs.md
-          - name: Add tab to chat
-            href: api/chat-post-tabs.md
-          - name: Get tab in chat
-            href: api/chat-get-tabs.md
-          - name: Update tab in chat
-            href: api/chat-patch-tabs.md
-          - name: Remove tab from chat
-            href: api/chat-delete-tabs.md
-      - name: Calendar
-        href: resources/event.md
-        items:
-        - name: List events
-          href: api/group-list-events.md
-        - name: Create event
-          href: api/group-post-events.md
-        - name: Get event
-          href: api/event-get.md
-        - name: Update event
-          href: api/event-update.md
-        - name: Delete event
-          href: api/event-delete.md
-        - name: List calendar view
-          href: api/group-list-calendarview.md
-        - name: List attachments
-          href: api/event-list-attachments.md
-        - name: Add attachment
-          href: api/event-post-attachments.md
-        - name: Create open extension
-          href: api/opentypeextension-post-opentypeextension.md
-        - name: Get open extension
-          href: api/opentypeextension-get.md
-      - name: Shifts
-        items:
-        - name: Shift
-          href: resources/shift.md
-          items:
-            - name: List
-              href: api/schedule-list-shifts.md
-            - name: Create
-              href: api/schedule-post-shifts.md
-            - name: Get
-              href: api/shift-get.md
-            - name: Replace
-              href: api/shift-put.md
-            - name: Delete
-              href: api/shift-delete.md
-        - name: Schedule
-          href: resources/schedule.md
-          items:
-            - name: Create or replace
-              href: api/team-put-schedule.md
-            - name: Get
-              href: api/schedule-get.md
-            - name: Share
-              href: api/schedule-share.md
-        - name: Scheduling group
-          href: resources/schedulinggroup.md
-          items:
-            - name: List
-              href: api/schedule-list-schedulinggroups.md
-            - name: Create
-              href: api/schedule-post-schedulinggroups.md
-            - name: Get
-              href: api/schedulinggroup-get.md
-            - name: Replace
-              href: api/schedulinggroup-put.md
-            - name: Delete
-              href: api/schedulinggroup-delete.md
         - name: Offer shift
           href: resources/offershiftrequest.md
           items:
@@ -7528,29 +7446,64 @@ items:
         - name: Open shift
           href: resources/openshift.md
           items:
-            - name: List
-              href: api/openshift-list.md
-            - name: Create
-              href: api/openshift-post.md
-            - name: Get
-              href: api/openshift-get.md
-            - name: Update
-              href: api/openshift-update.md
-            - name: Delete
-              href: api/openshift-delete.md
+          - name: List
+            href: api/openshift-list.md
+          - name: Create
+            href: api/openshift-post.md
+          - name: Get
+            href: api/openshift-get.md
+          - name: Update
+            href: api/openshift-update.md
+          - name: Delete
+            href: api/openshift-delete.md
         - name: Open shift change request
           href: resources/openshiftchangerequest.md
           items:
-            - name: List
-              href: api/openshiftchangerequest-list.md
-            - name: Create
-              href: api/openshiftchangerequest-post.md
-            - name: Get
-              href: api/openshiftchangerequest-get.md
-            - name: Approve
-              href: api/openshiftchangerequest-approve.md
-            - name: Decline
-              href: api/openshiftchangerequest-decline.md
+          - name: List
+            href: api/openshiftchangerequest-list.md
+          - name: Create
+            href: api/openshiftchangerequest-post.md
+          - name: Get
+            href: api/openshiftchangerequest-get.md
+          - name: Approve
+            href: api/openshiftchangerequest-approve.md
+          - name: Decline
+            href: api/openshiftchangerequest-decline.md
+        - name: Schedule
+          href: resources/schedule.md
+          items:
+          - name: Create or replace
+            href: api/team-put-schedule.md
+          - name: Get
+            href: api/schedule-get.md
+          - name: Share
+            href: api/schedule-share.md
+        - name: Scheduling group
+          href: resources/schedulinggroup.md
+          items:
+          - name: List
+            href: api/schedule-list-schedulinggroups.md
+          - name: Create
+            href: api/schedule-post-schedulinggroups.md
+          - name: Get
+            href: api/schedulinggroup-get.md
+          - name: Replace
+            href: api/schedulinggroup-put.md
+          - name: Delete
+            href: api/schedulinggroup-delete.md     
+        - name: Shift
+          href: resources/shift.md
+          items:
+          - name: List
+            href: api/schedule-list-shifts.md
+          - name: Create
+            href: api/schedule-post-shifts.md
+          - name: Get
+            href: api/shift-get.md
+          - name: Replace
+            href: api/shift-put.md
+          - name: Delete
+            href: api/shift-delete.md
         - name: Shift preferences
           href: resources/shiftpreferences.md
           items:
@@ -7574,77 +7527,53 @@ items:
         - name: Time off
           href: resources/timeoff.md
           items:
-            - name: List
-              href: api/schedule-list-timesoff.md
-            - name: Create
-              href: api/schedule-post-timesoff.md
-            - name: Get
-              href: api/timeoff-get.md
-            - name: Replace
-              href: api/timeoff-put.md
-            - name: Delete
-              href: api/timeoff-delete.md
+          - name: List
+            href: api/schedule-list-timesoff.md
+          - name: Create
+            href: api/schedule-post-timesoff.md
+          - name: Get
+            href: api/timeoff-get.md
+          - name: Replace
+            href: api/timeoff-put.md
+          - name: Delete
+            href: api/timeoff-delete.md
         - name: Time off reason
           href: resources/timeoffreason.md
           items:
-            - name: List
-              href: api/schedule-list-timeoffreasons.md
-            - name: Create
-              href: api/schedule-post-timeoffreasons.md
-            - name: Get
-              href: api/timeoffreason-get.md
-            - name: Replace
-              href: api/timeoffreason-put.md
-            - name: Delete
-              href: api/timeoffreason-delete.md
+          - name: List
+            href: api/schedule-list-timeoffreasons.md
+          - name: Create
+            href: api/schedule-post-timeoffreasons.md
+          - name: Get
+            href: api/timeoffreason-get.md
+          - name: Replace
+            href: api/timeoffreason-put.md
+          - name: Delete
+            href: api/timeoffreason-delete.md
         - name: Time off request
           href: resources/timeoffrequest.md
           items:
-            - name: Get
-              href: api/timeoffrequest-get.md
-            - name: Delete
-              href: api/timeoffrequest-delete.md
-            - name: Approve
-              href: api/timeoffrequest-approve.md
-            - name: Decline
-              href: api/timeoffrequest-decline.md
+          - name: Get
+            href: api/timeoffrequest-get.md
+          - name: Delete
+            href: api/timeoffrequest-delete.md
+          - name: Approve
+            href: api/timeoffrequest-approve.md
+          - name: Decline
+            href: api/timeoffrequest-decline.md
         - name: Workforce integration
           href: resources/workforceintegration.md
           items:
-            - name: List
-              href: api/workforceintegration-list.md
-            - name: Create
-              href: api/workforceintegration-post.md
-            - name: Get
-              href: api/workforceintegration-get.md
-            - name: Update
-              href: api/workforceintegration-update.md
-            - name: Delete
-              href: api/workforceintegration-delete.md
-      - name: Drive
-        href: resources/drive.md
-        items:
-        - name: Get drive
-          href: api/drive-get.md
-        - name: List children
-          href: api/driveitem-list-children.md
-      - name: Plans
-        href: resources/plannerplan.md
-        items:
-        - name: List plans
-          href: api/plannergroup-list-plans.md
-      - name: Notes
-        href: resources/onenote.md
-        items:
-        - name: List notebooks
-          href: api/onenote-list-notebooks.md
-        - name: Create notebook
-          href: api/onenote-post-notebooks.md
-      - name: Resource-specific permission grants
-        href: resources/resourcespecificpermissiongrant.md
-        items:
-        - name: List for group
-          href: api/group-list-permissiongrants.md
+          - name: List
+            href: api/workforceintegration-list.md
+          - name: Create
+            href: api/workforceintegration-post.md
+          - name: Get
+            href: api/workforceintegration-get.md
+          - name: Update
+            href: api/workforceintegration-update.md
+          - name: Delete
+            href: api/workforceintegration-delete.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:
@@ -7741,10 +7670,10 @@ items:
       - name: Workbook application
         href: resources/workbookapplication.md
         items:
-          - name: Get
-            href: api/workbookapplication-get.md
-          - name: Calculate
-            href: api/workbookapplication-calculate.md
+        - name: Get
+          href: api/workbookapplication-get.md
+        - name: Calculate
+          href: api/workbookapplication-calculate.md
       - name: Workbook comments
         href: resources/workbookcomment.md
         items:

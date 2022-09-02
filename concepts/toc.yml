@@ -140,33 +140,6 @@ items:
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
-      - name: Cloud communications
-        items:
-          - name: Overview
-            href: cloud-communications-concept-overview.md
-            displayName: cloud communications
-          - name: Get started
-            href: cloud-communications-get-started.md
-          - name: Supported call types
-            href: cloud-communications-calls.md
-          - name: Call records
-            href: cloud-communications-callrecords.md
-          - name: Online meeting artifacts and permissions
-            href: cloud-communications-online-meeting-artifacts.md
-          - name: Choose a media hosting option
-            href: cloud-communications-media.md
-          - name: Create or join online meetings
-            href: cloud-communications-online-meetings.md
-          - name: Choose an online meeting API
-            href: choose-online-meeting-api.md
-          - name: Configure application access
-            href: cloud-communication-online-meeting-application-access-policy.md
-          - name: Manage bot phone numbers
-            href: cloud-communications-phone-number.md
-          - name: Identify large gallery view participants
-            href: cloud-communications-identifylargegalleryview.md
-          - name: Subscribe to change notifications for online meetings
-            href: changenotifications-for-onlinemeeting.md
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
@@ -510,35 +483,65 @@ items:
       - name: Tasks and plans
         href: planner-concept-overview.md
         displayName: Planner
-      - name: Teamwork
+      - name: Teamwork and communications
         items:
-          - name: Overview
-            href: teams-concept-overview.md
-            displayName: teams, team, teamwork, Microsoft Teams
+        - name: Overview
+          href: teams-concept-overview.md
+          displayName: teams, team, teamwork, Microsoft Teams
+        - name: Activity feed notifications
+          items:
+          - name: Send activity feed notifications
+            href: teams-send-activityfeednotifications.md
+          - name: Best practices
+            href: teams-activity-feed-notifications-best-practices.md
+        - name: Application access and tabs 
+          items:        
+          - name: Configure application access
+            href: cloud-communication-online-meeting-application-access-policy.md    
+          - name: Configure built-in tabs
+            href: teams-configuring-builtin-tabs.md
+          - name: Get system messages
+            href: system-messages.md      
+        - name: Bots  
+          items:
+          - name: Manage bot phone numbers
+            href: cloud-communications-phone-number.md
+          - name: Register a bot
+            href: cloud-communications-get-started.md   
+          - name: Send proactive messages with a bot
+            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context      
+        - name: Calls and online meetings 
+          items:      
+          - name: Call records
+            href: cloud-communications-callrecords.md  
+          - name: Supported call types
+            href: cloud-communications-calls.md     
+          - name: Create or join online meetings
+            href: cloud-communications-online-meetings.md 
+          - name: Choose an online meeting API
+            href: choose-online-meeting-api.md
+          - name: Choose a media hosting option
+            href: cloud-communications-media.md
+          - name: Online meeting artifacts and permissions
+            href: cloud-communications-online-meeting-artifacts.md
+          - name: Identify large gallery view participants
+            href: cloud-communications-identifylargegalleryview.md
+        - name: Change notifications
+          items:
+          - name: Subscribe for teams, chats, channels
+            href: teams-change-notification-in-microsoft-teams-overview.md
+          - name: Subscribe for online meetings
+            href: changenotifications-for-onlinemeeting.md
+        - name: Groups and teams
+          items: 
           - name: Create a group and team
             href: teams-create-group-and-team.md
           - name: List all teams
-            href: teams-list-all-teams.md
-          - name: Choose an online meeting API
-            href: choose-online-meeting-api.md
-          - name: Configure built-in tabs
-            href: teams-configuring-builtin-tabs.md
-          - name: Send proactive messages with a bot
-            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
-          - name: Protected APIs
-            href: teams-protected-apis.md
-          - name: Licensing and payment models
-            href: teams-licenses.md
-          - name: Activity feed notifications
-            items:
-              - name: Send activity feed notifications
-                href: teams-send-activityfeednotifications.md
-              - name: Best practices
-                href: teams-activity-feed-notifications-best-practices.md
-          - name: Subscribe to change notifications
-            href: teams-change-notification-in-microsoft-teams-overview.md
-          - name: Get system messages
-            href: system-messages.md
+            href: teams-list-all-teams.md          
+        - name: Licensing and payment models
+          href: teams-licenses.md       
+        - name: Protected APIs
+          href: teams-protected-apis.md 
       - name: To-do tasks
         displayName: Microsoft To Do
         items:
