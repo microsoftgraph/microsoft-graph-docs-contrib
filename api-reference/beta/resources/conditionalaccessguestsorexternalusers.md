@@ -20,7 +20,7 @@ Represents internal guests and/or external users in the policy scope.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | guestOrExternalUserTypes | conditionalAccessGuestOrExternalUserTypes collection | Enum flag representing the types of internal guests or external users. Supported values are: `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`, `internalGuest`, `OtherExternalUser`, `serviceProvider` and `unknownFutureValue`. |
-| externalTenants | conditionalAccessExternalTenants | The tenant ids of the selected types of external users. It could be either all b2b tenant, or a collection of tenant ids. External tenants can be specified only when `guestOrExternalUserTypes` is not null or an empty string. |
+| externalTenants | [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md) | The tenant ids of the selected types of external users. It could be either all b2b tenant, or a collection of tenant ids. External tenants can be specified only when `guestOrExternalUserTypes` is not null or an empty string. |
 
 ## Relationships
 
