@@ -276,11 +276,11 @@ items:
             items:
               - name: Overview
                 href: msgraph-onboarding-overview.md
-              - name: Microsoft Partner Network
+              - name: Join the Microsoft Partner Network
                 href: msgraph-onboarding-mpn.md
-              - name: Demo EDU Dev Tenant
+              - name: Set up an EDU dev tenant
                 href: msgraph-onboarding-devtenant.md
-              - name: Demo EDU Tenant
+              - name: Set up an EDU demo tenant
                 href: msgraph-onboarding-edutenant.md
               - name: School Data Sync
                 href: msgraph-onboarding-sds.md
