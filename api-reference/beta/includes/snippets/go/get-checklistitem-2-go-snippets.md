@@ -7,10 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-baseTaskListId := "baseTaskList-id"
-baseTaskId := "baseTask-id"
-checklistItemId := "checklistItem-id"
-result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).ChecklistItemsById(&checklistItemId).Get()
+
+result, err := graphClient.Me().Tasks().ListsById("baseTaskList-id").TasksById("baseTask-id").ChecklistItemsById("checklistItem-id").Get()
 
 
 ```

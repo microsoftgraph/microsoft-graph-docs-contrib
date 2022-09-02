@@ -7,37 +7,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPlace()
+requestBody := graphmodels.NewPlace()
 displayName := "Building 1"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 phone := "555-555-0100"
-requestBody.SetPhone(&phone)
-address := msgraphsdk.NewPhysicalAddress()
-requestBody.SetAddress(address)
+requestBody.SetPhone(&phone) 
+address := graphmodels.NewPhysicalAddress()
 street := "4567 Main Street"
-address.SetStreet(&street)
+address.SetStreet(&street) 
 city := "Buffalo"
-address.SetCity(&city)
+address.SetCity(&city) 
 state := "NY"
-address.SetState(&state)
+address.SetState(&state) 
 postalCode := "98052"
-address.SetPostalCode(&postalCode)
+address.SetPostalCode(&postalCode) 
 countryOrRegion := "USA"
-address.SetCountryOrRegion(&countryOrRegion)
-geoCoordinates := msgraphsdk.NewOutlookGeoCoordinates()
-requestBody.SetGeoCoordinates(geoCoordinates)
-geoCoordinates.SetAltitude(nil)
+address.SetCountryOrRegion(&countryOrRegion) 
+requestBody.SetAddress(address)
+geoCoordinates := graphmodels.NewOutlookGeoCoordinates()
+altitude := null
+geoCoordinates.SetAltitude(&altitude) 
 latitude := float64(47)
-geoCoordinates.SetLatitude(&latitude)
+geoCoordinates.SetLatitude(&latitude) 
 longitude := float64(-122)
-geoCoordinates.SetLongitude(&longitude)
-geoCoordinates.SetAccuracy(nil)
-geoCoordinates.SetAltitudeAccuracy(nil)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.roomList",
-}
-placeId := "place-id"
-graphClient.PlacesById(&placeId).Patch(requestBody)
+geoCoordinates.SetLongitude(&longitude) 
+accuracy := null
+geoCoordinates.SetAccuracy(&accuracy) 
+altitudeAccuracy := null
+geoCoordinates.SetAltitudeAccuracy(&altitudeAccuracy) 
+requestBody.SetGeoCoordinates(geoCoordinates)
+
+graphClient.PlacesById("place-id").Patch(requestBody)
 
 
 ```

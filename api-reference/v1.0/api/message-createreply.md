@@ -51,6 +51,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required.|
 | Content-Type | string  | Nature of the data in the body of an entity. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
+| Prefer: outlook.timezone | string | Sets the timezone in the email thread to the desired format while replying to an email. Values can be any of the outlook [supportedTimeZones](outlookuser-supportedtimezones.md). If the header is not specified, by default UTC timezone is followed. Optional.|
 
 ## Request body
 This method does not require a request body.
@@ -77,16 +78,13 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createreply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-createreply-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/message-createreply-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -99,6 +97,10 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/message-createreply-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/message-createreply-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

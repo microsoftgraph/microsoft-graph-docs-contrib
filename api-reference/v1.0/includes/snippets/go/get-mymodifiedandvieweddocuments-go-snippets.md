@@ -7,13 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UsedRequestBuilderGetQueryParameters{
-	Orderby: "LastUsed/LastAccessedDateTime%20desc",
+requestParameters := &graphconfig.UsedRequestBuilderGetQueryParameters{
+	Orderby: [] string {"LastUsed/LastAccessedDateTime desc"},
 }
-options := &msgraphsdk.UsedRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UsedRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Insights().Used().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Me().Insights().Used().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

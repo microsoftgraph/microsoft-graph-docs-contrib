@@ -7,17 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPlace()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.room",
-	"nickname": "Conf Room",
-	"building": "1",
-	"label": "100",
-	"capacity": ,
-	"isWheelChairAccessible": false,
+requestBody := graphmodels.NewPlace()
+additionalData := map[string]interface{}{
+	"nickname" : "Conf Room", 
+	"building" : "1", 
+	"label" : "100", 
+	"capacity" : int32(50) , 
+	isWheelChairAccessible := false
+requestBody.SetIsWheelChairAccessible(&isWheelChairAccessible) 
 }
-placeId := "place-id"
-graphClient.PlacesById(&placeId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.PlacesById("place-id").Patch(requestBody)
 
 
 ```

@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [teamTemplate](../resources/teamtemplate.md) objects that are available for the tenant. 
+Get the list of [teamTemplate](../resources/teamtemplate.md) objects that are available for a tenant. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Team.Create|
-|Delegated (personal Microsoft account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Team.Create|
 
 ## HTTP request
@@ -53,22 +53,51 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-## Example 1: Get a list of team templates
+### Example 1: Get a list of team templates
 
-### Request
+#### Request
 The following is an example of a request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_teamtemplatedefinition"
+  "name": "list_teamtemplatedefinition_for_tenant"
 }
 -->
-```http 
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/teamTemplates
 ```
 
-### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamtemplatedefinition-for-tenant-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamtemplatedefinition-for-tenant-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamtemplatedefinition-for-tenant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-teamtemplatedefinition-for-tenant-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-teamtemplatedefinition-for-tenant-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-teamtemplatedefinition-for-tenant-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -97,20 +126,49 @@ Content-Type: application/json
 
 ### Example 2: Use $extend and $filter to get templateDefinitions for en-US locale
 
-### Request
+#### Request
 
 The following is an example of a request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_teamtemplatedefinition"
+  "name": "list_teamtemplatedefinition_extend_filter"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/teamTemplates?$expand=definitions&filter=definitions/any(a:a/languageTag eq 'en-US')
 ```
 
-### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamtemplatedefinition-extend-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamtemplatedefinition-extend-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamtemplatedefinition-extend-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-teamtemplatedefinition-extend-filter-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-teamtemplatedefinition-extend-filter-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-teamtemplatedefinition-extend-filter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -167,7 +225,7 @@ Content-Type: application/json
                     "lastModifiedBy": null
                 }
             ]
-        },
+        }
     ]
 }
 ```

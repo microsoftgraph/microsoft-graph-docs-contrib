@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 Represents an ADMX text element.
 
 
-Inherits from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
+Inherits from [groupPolicyUploadedPresentation](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md)
 
 ## Methods
 |Method|Return Type|Description|
@@ -57,6 +57,8 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

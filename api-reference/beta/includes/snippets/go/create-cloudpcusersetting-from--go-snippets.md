@@ -7,22 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewCloudPcUserSetting()
+requestBody := graphmodels.NewCloudPcUserSetting()
 displayName := "Example"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 selfServiceEnabled := false
-requestBody.SetSelfServiceEnabled(&selfServiceEnabled)
+requestBody.SetSelfServiceEnabled(&selfServiceEnabled) 
 localAdminEnabled := true
-requestBody.SetLocalAdminEnabled(&localAdminEnabled)
-restorePointSetting := msgraphsdk.NewCloudPcRestorePointSetting()
-requestBody.SetRestorePointSetting(restorePointSetting)
+requestBody.SetLocalAdminEnabled(&localAdminEnabled) 
+restorePointSetting := graphmodels.NewCloudPcRestorePointSetting()
 frequencyInHours := int32(16)
-restorePointSetting.SetFrequencyInHours(&frequencyInHours)
+restorePointSetting.SetFrequencyInHours(&frequencyInHours) 
 userRestoreEnabled := true
-restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.cloudPcUserSetting",
-}
+restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled) 
+requestBody.SetRestorePointSetting(restorePointSetting)
+
 result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().Post(requestBody)
 
 

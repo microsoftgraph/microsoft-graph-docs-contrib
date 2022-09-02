@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-secureScoreControlProfileId := "secureScoreControlProfile-id"
-result, err := graphClient.Security().SecureScoreControlProfilesById(&secureScoreControlProfileId).Get()
+
+result, err := graphClient.Security().SecureScoreControlProfilesById("secureScoreControlProfile-id").Get()
 
 
 ```

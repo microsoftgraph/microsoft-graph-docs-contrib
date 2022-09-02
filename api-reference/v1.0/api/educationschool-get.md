@@ -65,18 +65,15 @@ If successful, this method returns a `200 OK` response code and an [educationSch
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/schools/{educationSchoolId}
+GET https://graph.microsoft.com/v1.0/education/schools/f2598f43-629c-4ea9-9265-97a34839644e
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationschool-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationschool-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -89,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/education/schools/{educationSchoolId}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-educationschool-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-educationschool-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -110,28 +111,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.educationSchool",
-    "id": "1c23c12e-c12e-1c23-2ec1-231c2ec1231c",
-    "displayName": "String",
-    "description": "String",
-    "externalSource": "String",
-    "externalSourceDetail": "String",
-    "principalEmail": "String",
-    "principalName": "String",
-    "externalPrincipalId": "String",
-    "lowestGrade": "String",
-    "highestGrade": "String",
-    "schoolNumber": "String",
-    "externalId": "String",
-    "phone": "String",
-    "fax": "String",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/schools/$entity",
+    "id": "f2598f43-629c-4ea9-9265-97a34839644e",
+    "displayName": "Business Training Camp",
+    "description": null,
+    "principalEmail": "aroebuck@principal.edu",
+    "principalName": "Amy Roebuck",
+    "externalPrincipalId": "14007",
+    "externalId": "10001",
+    "externalSource": "sis",
+    "externalSourceDetail": "SIS",
+    "phone": "555-123-4567",
     "address": {
-      "@odata.type": "microsoft.graph.physicalAddress"
+        "city": "Redmond",
+        "countryOrRegion": "US",
+        "postalCode": "98052",
+        "state": "WA",
+        "street": "2 Microsoft Way"
     }
-  }
 }
 ```
