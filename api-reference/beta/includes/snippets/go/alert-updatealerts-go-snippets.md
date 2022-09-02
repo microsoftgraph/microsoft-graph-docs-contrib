@@ -22,7 +22,6 @@ comments := []string {
 alert.SetComments(comments)
 feedback := graphmodels.NewAlertFeedback()
 additionalData := map[string]interface{}{
-	"@odata.type" : "microsoft.graph.alertFeedback", 
 }
 feedback.SetAdditionalData(additionalData)
 alert.SetFeedback(feedback)
@@ -30,7 +29,6 @@ id := "String (identifier)"
 alert.SetId(&id) 
 status := graphmodels.NewAlertStatus()
 additionalData := map[string]interface{}{
-	"@odata.type" : "microsoft.graph.alertStatus", 
 }
 status.SetAdditionalData(additionalData)
 alert.SetStatus(status)

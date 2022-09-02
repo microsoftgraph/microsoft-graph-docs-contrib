@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Users
 
-Get-MgUserOauth2PermissionGrant -UserId $userId -OutFile $outFileId
+Get-MgUserOauth2PermissionGrant -UserId $userId
 
 ```

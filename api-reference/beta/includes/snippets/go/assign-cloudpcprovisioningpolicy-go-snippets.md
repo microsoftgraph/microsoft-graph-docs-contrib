@@ -14,8 +14,6 @@ cloudPcProvisioningPolicyAssignment := graphmodels.NewCloudPcProvisioningPolicyA
 id := "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
 cloudPcProvisioningPolicyAssignment.SetId(&id) 
 target := graphmodels.NewCloudPcManagementAssignmentTarget()
-"@odata.type" := "microsoft.graph.cloudPcManagementGroupAssignmentTarget"
-target.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"groupId" : "64ff06de-9c00-4a5a-98b5-7f5abe26ffff", 
 }
@@ -28,7 +26,6 @@ assignments := []graphmodels.Objectable {
 }
 requestBody.SetAssignments(assignments)
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.cloudPcProvisioningPolicyAssignment", 
 }
 requestBody.SetAdditionalData(additionalData)
 

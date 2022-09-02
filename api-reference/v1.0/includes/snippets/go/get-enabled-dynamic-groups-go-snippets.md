@@ -10,9 +10,13 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestFilter := "mailEnabled eq false and securityEnabled eq true and NOT) and membershipRuleProcessingState eq 'On'"
+requestCount := true
+
 requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
-	Filter: "mailEnabled eq false and securityEnabled eq true and NOT) and membershipRuleProcessingState eq 'On'",
-	Count: true,
+	Filter: &requestFilter,
+	Count: &requestCount,
 	Select: [] string {"id","membershipRule","membershipRuleProcessingState"},
 }
 configuration := &graphconfig.GroupsRequestBuilderGetRequestConfiguration{

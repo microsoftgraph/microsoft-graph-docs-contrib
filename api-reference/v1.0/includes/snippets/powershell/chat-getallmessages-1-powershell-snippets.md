@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Users.Functions
 
-Get-MgAllUserChatMessage -UserId $userId -Top 2  -OutFile $outFileId
+Get-MgAllUserChatMessage -UserId $userId -Top 2 
 
 ```

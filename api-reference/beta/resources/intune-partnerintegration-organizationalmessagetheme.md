@@ -23,6 +23,10 @@ Indicates the theme for the guided content
 |update|0|Indicates the Update theme|
 |training|1|Indicates the Training theme|
 |welcomeToWindows|2|Indicates the Welcome to Windows theme|
+|explore|3|Indicates the Explore|
+|unknownFutureValue|4|UnknownFutureValue, Evolvable enumeration sentinel value. Do not use.|
+
+
 
 
 

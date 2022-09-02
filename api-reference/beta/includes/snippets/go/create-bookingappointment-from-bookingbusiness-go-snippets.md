@@ -8,16 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewBookingAppointment()
-"@odata.type" := "#microsoft.graph.bookingAppointment"
-requestBody.Set"@odata.type"(&"@odata.type") 
 customerEmailAddress := "jordanm@contoso.com"
 requestBody.SetCustomerEmailAddress(&customerEmailAddress) 
 customerLocation := graphmodels.NewLocation()
-"@odata.type" := "#microsoft.graph.location"
-customerLocation.Set"@odata.type"(&"@odata.type") 
 address := graphmodels.NewPhysicalAddress()
-"@odata.type" := "#microsoft.graph.physicalAddress"
-address.Set"@odata.type"(&"@odata.type") 
 city := "Buffalo"
 address.SetCity(&city) 
 countryOrRegion := "USA"
@@ -68,8 +62,6 @@ requestBody.SetCustomerTimeZone(&customerTimeZone)
 smsNotificationsEnabled := true
 requestBody.SetSmsNotificationsEnabled(&smsNotificationsEnabled) 
 end := graphmodels.NewDateTimeTimeZone()
-"@odata.type" := "#microsoft.graph.dateTimeTimeZone"
-end.Set"@odata.type"(&"@odata.type") 
 dateTime := "2018-05-01T12:30:00.0000000+00:00"
 end.SetDateTime(&dateTime) 
 timeZone := "UTC"
@@ -78,8 +70,6 @@ requestBody.SetEnd(end)
 invoiceAmount := float64(10)
 requestBody.SetInvoiceAmount(&invoiceAmount) 
 invoiceDate := graphmodels.NewDateTimeTimeZone()
-"@odata.type" := "#microsoft.graph.dateTimeTimeZone"
-invoiceDate.Set"@odata.type"(&"@odata.type") 
 dateTime := "2018-05-01T12:30:00.0000000+00:00"
 invoiceDate.SetDateTime(&dateTime) 
 timeZone := "UTC"
@@ -97,9 +87,9 @@ optOutOfCustomerEmail := false
 requestBody.SetOptOutOfCustomerEmail(&optOutOfCustomerEmail) 
 anonymousJoinWebUrl := null
 requestBody.SetAnonymousJoinWebUrl(&anonymousJoinWebUrl) 
-postBuffer := "PT10M"
+postBuffer , err := abstractions.ParseISODuration("PT10M")
 requestBody.SetPostBuffer(&postBuffer) 
-preBuffer := "PT5M"
+preBuffer , err := abstractions.ParseISODuration("PT5M")
 requestBody.SetPreBuffer(&preBuffer) 
 price := float64(10)
 requestBody.SetPrice(&price) 
@@ -108,11 +98,9 @@ requestBody.SetPriceType(&priceType)
 
 
 bookingReminder := graphmodels.NewBookingReminder()
-"@odata.type" := "#microsoft.graph.bookingReminder"
-bookingReminder.Set"@odata.type"(&"@odata.type") 
 message := "This service is tomorrow"
 bookingReminder.SetMessage(&message) 
-offset := "P1D"
+offset , err := abstractions.ParseISODuration("P1D")
 bookingReminder.SetOffset(&offset) 
 recipients := graphmodels.ALLATTENDEES_BOOKINGREMINDERRECIPIENTS 
 bookingReminder.SetRecipients(&recipients) 
@@ -121,11 +109,9 @@ additionalData := map[string]interface{}{
 }
 bookingReminder.SetAdditionalData(additionalData)
 bookingReminder1 := graphmodels.NewBookingReminder()
-"@odata.type" := "#microsoft.graph.bookingReminder"
-bookingReminder1.Set"@odata.type"(&"@odata.type") 
 message := "Please be available to enjoy your lunch service."
 bookingReminder1.SetMessage(&message) 
-offset := "PT1H"
+offset , err := abstractions.ParseISODuration("PT1H")
 bookingReminder1.SetOffset(&offset) 
 recipients := graphmodels.CUSTOMER_BOOKINGREMINDERRECIPIENTS 
 bookingReminder1.SetRecipients(&recipients) 
@@ -134,11 +120,9 @@ additionalData := map[string]interface{}{
 }
 bookingReminder1.SetAdditionalData(additionalData)
 bookingReminder2 := graphmodels.NewBookingReminder()
-"@odata.type" := "#microsoft.graph.bookingReminder"
-bookingReminder2.Set"@odata.type"(&"@odata.type") 
 message := "Please check traffic for next cater."
 bookingReminder2.SetMessage(&message) 
-offset := "PT2H"
+offset , err := abstractions.ParseISODuration("PT2H")
 bookingReminder2.SetOffset(&offset) 
 recipients := graphmodels.STAFF_BOOKINGREMINDERRECIPIENTS 
 bookingReminder2.SetRecipients(&recipients) 
@@ -157,11 +141,7 @@ requestBody.SetReminders(reminders)
 serviceId := "57da6774-a087-4d69-b0e6-6fb82c339976"
 requestBody.SetServiceId(&serviceId) 
 serviceLocation := graphmodels.NewLocation()
-"@odata.type" := "#microsoft.graph.location"
-serviceLocation.Set"@odata.type"(&"@odata.type") 
 address := graphmodels.NewPhysicalAddress()
-"@odata.type" := "#microsoft.graph.physicalAddress"
-address.Set"@odata.type"(&"@odata.type") 
 city := "Buffalo"
 address.SetCity(&city) 
 countryOrRegion := "USA"
@@ -206,8 +186,6 @@ requestBody.SetServiceName(&serviceName)
 serviceNotes := "Customer requires punctual service."
 requestBody.SetServiceNotes(&serviceNotes) 
 start := graphmodels.NewDateTimeTimeZone()
-"@odata.type" := "#microsoft.graph.dateTimeTimeZone"
-start.Set"@odata.type"(&"@odata.type") 
 dateTime := "2018-05-01T12:00:00.0000000+00:00"
 start.SetDateTime(&dateTime) 
 timeZone := "UTC"
@@ -221,7 +199,6 @@ requestBody.SetFilledAttendeesCount(&filledAttendeesCount)
 
 bookingCustomerInformationBase := graphmodels.NewBookingCustomerInformationBase()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.bookingCustomerInformation", 
 	"customerId" : "7ed53fa5-9ef2-4f2f-975b-27447440bc09", 
 	"name" : "Jordan Miller", 
 	"emailAddress" : "jordanm@contoso.com", 
@@ -229,8 +206,6 @@ additionalData := map[string]interface{}{
 	notes := null
 bookingCustomerInformationBase.SetNotes(&notes) 
 location := graphmodels.New()
-"@odata.type" := "#microsoft.graph.location"
-location.Set"@odata.type"(&"@odata.type") 
 displayName := "Customer"
 location.SetDisplayName(&displayName) 
 	locationEmailAddress := null
@@ -244,8 +219,6 @@ location.SetUniqueId(&uniqueId)
 	uniqueIdType := null
 location.SetUniqueIdType(&uniqueIdType) 
 address := graphmodels.New()
-"@odata.type" := "#microsoft.graph.physicalAddress"
-address.Set"@odata.type"(&"@odata.type") 
 type := "home"
 address.SetType(&type) 
 postOfficeBox := ""

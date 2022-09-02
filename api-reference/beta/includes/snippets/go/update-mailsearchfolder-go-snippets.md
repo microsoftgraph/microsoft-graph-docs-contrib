@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewMailFolder()
-"@odata.type" := "microsoft.graph.mailSearchFolder"
-requestBody.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"filterQuery" : "contains(subject, 'Analytics')", 
 }
