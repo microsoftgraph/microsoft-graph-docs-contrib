@@ -5541,6 +5541,24 @@
       "CreatedDateTime": "2022-08-22T15:04:69.427Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "channel",
+          "ChangeType": "Addition",
+          "Description": "Enabled tenant-wide channel membership subscription for the graph's change notification api.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-02T15:04:69.427Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
