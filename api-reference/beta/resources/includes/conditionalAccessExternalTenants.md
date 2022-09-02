@@ -19,7 +19,7 @@ Represents external tenants in the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| membershipKind |conditionalAccessExternalTenantsMembershipKind collection | Enum types represent the membership kind. Supported values include `all`, `enumerated` and `unknownFutureValue`. |
+| membershipKind |conditionalAccessExternalTenantsMembershipKind collection | Represents the membership kind. Supported values are: `all`, `enumerated` and `unknownFutureValue`. |
 
 ## Relationships
 
