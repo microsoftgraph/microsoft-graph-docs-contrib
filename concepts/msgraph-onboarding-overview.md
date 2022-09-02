@@ -1,13 +1,13 @@
 ---
-title: "Set up your EDU development environment"
-description: "Get started with an EDU demo tenant to start building Microsoft Graph education API solutions."
+title: "Set up an EDU development environment"
+description: "Learn about the options for setting up a development environment to use to build solutions using the education API in Microsoft Graph."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Set up your EDU development environment
+# Set up an EDU development environment
 
 The education API in Microsoft Graph enhances Microsoft 365 resources with information that is relevant for education scenarios. To implement and test your education solutions, you need to set up a demo developer tenant.
 

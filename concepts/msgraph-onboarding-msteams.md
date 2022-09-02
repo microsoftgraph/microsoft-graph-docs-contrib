@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Teams set up to work with your tenant users"
+title: "Set up Microsoft Teams to work with tenant users"
 description: "This article describes the steps to setup Microsoft teams on your machine and use your tenant users."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Microsoft Teams set up to work with your tenant users
+# Set up Microsoft Teams to work with tenant users
 
 In this section, you will set up Microsoft Teams on your system and create your first team.
 
