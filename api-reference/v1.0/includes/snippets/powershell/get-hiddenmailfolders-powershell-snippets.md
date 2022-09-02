@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
-Get-MgUserMailFolder -UserId $userId -Includehiddenfolders true  -OutFile $outFileId
+Get-MgUserMailFolder -UserId $userId -Includehiddenfolders true 
 
 ```

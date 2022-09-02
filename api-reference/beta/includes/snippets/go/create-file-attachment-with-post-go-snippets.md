@@ -18,8 +18,6 @@ post.SetBody(body)
 
 
 attachment := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.fileAttachment"
-attachment.Set"@odata.type"(&"@odata.type") 
 name := "Another file as attachment"
 attachment.SetName(&name) 
 additionalData := map[string]interface{}{

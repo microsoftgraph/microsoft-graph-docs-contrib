@@ -58,27 +58,27 @@ GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-schemaextension-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schemaextension-graphlearntest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-schemaextension-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schemaextension-graphlearntest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-schemaextension-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-schemaextension-graphlearntest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-schemaextension-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-schemaextension-graphlearntest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-schemaextension-graphlearntest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-schemaextension-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-schemaextension-graphlearntest-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

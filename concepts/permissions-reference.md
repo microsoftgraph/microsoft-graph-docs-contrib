@@ -1293,6 +1293,24 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Lifecycle workflows permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _LifecycleWorkflows.Read.All_ |   Read all lifecycle workflows resources | Allows the app to list and read all workflows, tasks and related lifecycle workflows resources on behalf of the signed-in user. | Yes | No |
+| _LifecycleWorkflows.ReadWrite.All_ |   Read and write all lifecycle workflows resources | Allows the app to create, update, list, read and delete all workflows, tasks and related lifecycle workflows resources on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _LifecycleWorkflows.Read.All_ |   Read all lifecycle workflows resources  | Allows the app to list and read all workflows, tasks and related lifecycle workflows resources without a signed-in user. | Yes |
+| _LifecycleWorkflows.ReadWrite.All_ |   Read and write all lifecycle workflows resources | Allows the app to create, update, list, read and delete all workflows, tasks and related lifecycle workflows resources without a signed-in user. | Yes |
+
+---
+
 ## Mail permissions
 
 #### Delegated permissions
@@ -2544,6 +2562,8 @@ Threat assessment permissions are valid only on work or school accounts.
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, on behalf of the signed-in user. | Yes | No |
 | _User.Export.All_       |    Export users' data | Allows the app to export an organizational user's data, when performed by a Company Administrator.| Yes | No |
 | _User.ManageIdentities.All_       |    Manage user identities | Allows an application to read, update and delete identities that are associated with a user's account, that the signed-in user has access to. This controls which identities your users can sign-in with. | Yes | No |
+| _User-LifeCycleInfo.Read.All_       |    Read all users' lifecycle information | Allows the app to read the lifecycle information like employeeLeaveDateTime of users in your organization, on behalf of the signed-in user. | Yes | No |
+| _User-LifeCycleInfo.ReadWrite.All_       |    Read and write all users' lifecycle information | Allows the app to read and write the lifecycle information like employeeLeaveDateTime of users in your organization, on behalf of the signed-in user. | Yes | No |
 
 
 #### Application permissions
@@ -2555,6 +2575,8 @@ Threat assessment permissions are valid only on work or school accounts.
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, without a signed-in user. | Yes |
 | _User.Export.All_       |    Export users' data | Allows the app to export organizational users' data, without a signed-in user.| Yes |
 | _User.ManageIdentities.All_       |    Manage all user identities | Allows an application to read, update and delete identities that are associated with a user's account, without a signed in user. This controls which identities users can sign-in with. |  Yes |
+| _User-LifeCycleInfo.Read.All_       |    Read all users' lifecycle information | Allows the app to read the lifecycle information like employeeLeaveDateTime of users in your organization, without a signed-in user. |  Yes |
+| _User-LifeCycleInfo.ReadWrite.All_       |    Read and write all users' lifecycle information | Allows the app to read and write the lifecycle information like employeeLeaveDateTime of users in your organization, without a signed-in user. |  Yes |
 
 ### Remarks
 

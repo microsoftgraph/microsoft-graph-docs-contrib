@@ -49,9 +49,9 @@ The following table shows the properties that are required when you create the o
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|A unique identifier for the guided content|
-|scenario|[organizationalMessageScenario](../resources/intune-partnerintegration-organizationalmessagescenario.md)|Indicates the scenario for the guided content. Possible values are: `onboarding`, `lifecycle`.|
-|theme|[organizationalMessageTheme](../resources/intune-partnerintegration-organizationalmessagetheme.md)|Indicates the theme for the guided content. Possible values are: `update`, `training`, `welcomeToWindows`.|
-|surface|[organizationalMessageSurface](../resources/intune-partnerintegration-organizationalmessagesurface.md)|Indicates the area where content will be displayed to customers. Possible values are: `actionCenter`, `getStarted`, `softLanding`.|
+|scenario|[organizationalMessageScenario](../resources/intune-partnerintegration-organizationalmessagescenario.md)|Indicates the scenario for the guided content. Possible values are: `onboarding`, `lifecycle`, `unknownFutureValue`.|
+|theme|[organizationalMessageTheme](../resources/intune-partnerintegration-organizationalmessagetheme.md)|Indicates the theme for the guided content. Possible values are: `update`, `training`, `welcomeToWindows`, `explore`, `unknownFutureValue`.|
+|surface|[organizationalMessageSurface](../resources/intune-partnerintegration-organizationalmessagesurface.md)|Indicates the area where content will be displayed to customers. Possible values are: `actionCenter`, `getStarted`, `softLanding`, `unknownFutureValue`.|
 |placementDetails|[organizationalMessagePlacementDetail](../resources/intune-partnerintegration-organizationalmessageplacementdetail.md) collection|Contains the different types of text content that can be displayed to customers along with their localized values|
 |logo|[organizationalMessageLogoGuide](../resources/intune-partnerintegration-organizationalmessagelogoguide.md)|Example of the logo that will be displayed to customers and its size requirements|
 
@@ -168,6 +168,8 @@ Content-Length: 1452
   }
 }
 ```
+
+
 
 
 

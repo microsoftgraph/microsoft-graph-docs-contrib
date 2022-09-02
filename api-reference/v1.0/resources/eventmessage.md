@@ -2,7 +2,7 @@
 title: "eventMessage resource type"
 description: "A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline)."
 ms.localizationpriority: medium
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
