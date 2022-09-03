@@ -348,7 +348,7 @@ items:
           href: api/user-validatepassword.md
         - name: Invalidate refresh tokens
           href: api/user-invalidateallrefreshtokens.md
-      - name: App role assignments
+      - name: App role assignment
         href: resources/approleassignment.md
         items:
         - name: List app role assignments
@@ -403,32 +403,13 @@ items:
           href: api/cloudpc-reprovision.md
         - name: Troubleshoot
           href: api/cloudpc-troubleshoot.md
-      - name: Contacts
+      - name: Delegated permission grant
         items:
-        - name: Contact
-          href: resources/contact.md
-          items:
-          - name: Create contact
-            href: api/user-post-contacts.md
-          - name: Create contact folder
-            href: api/user-post-contactfolders.md
-          - name: List contacts
-            href: api/user-list-contacts.md
-          - name: List contact folders
-            href: api/user-list-contactfolders.md
-        - name: Contact merge suggestions (preview)
-          items:
-          - name: Contact merge suggestions
-            href: resources/contactmergesuggestions.md
-          - name: Get
-            href: api/contactmergesuggestions-get.md
-          - name: Update
-            href: api/contactmergesuggestions-update.md
-      - name: Delegated permission grants
-        items:
+        - name: OAuth 2.0 permission grant
+          href: resources/oauth2permissiongrant
         - name: List delegated permission grants
           href: api/user-list-oauth2permissiongrants.md
-      - name: Directory objects
+      - name: Directory object
         href: resources/directoryobject.md
         items:
         - name: Activate service plan (deprecated)
@@ -480,7 +461,7 @@ items:
           href: api/drive-get.md
         - name: List children
           href: api/driveitem-list-children.md
-      - name: Groups
+      - name: Group
         href: resources/group.md
         items:
         - name: List joined teams
@@ -585,9 +566,9 @@ items:
             href: api/outlookuser-list-mastercategories.md
         - name: Translate IDs
           href: api/user-translateexchangeids.md
-      - name: Outlook tasks (deprecated)
+      - name: Outlook task (deprecated)
         items:
-        - name: Outlook tasks
+        - name: Outlook task
           href: resources/outlooktask.md
         - name: Create tasks
           href: api/outlookuser-post-tasks.md
@@ -607,16 +588,39 @@ items:
             href: api/organizationsettings-list-peopleinsights.md
           - name: Update
             href: api/insightssettings-update.md
-      - name: Photo
-        href: resources/profilephoto.md
+      - name: Personal contacts
         items:
+        - name: Contact
+          href: resources/contact.md
+          items:
+          - name: Create contact
+            href: api/user-post-contacts.md
+          - name: Create contact folder
+            href: api/user-post-contactfolders.md
+          - name: List contacts
+            href: api/user-list-contacts.md
+          - name: List contact folders
+            href: api/user-list-contactfolders.md
+        - name: Contact merge suggestions (preview)
+          items:
+          - name: Contact merge suggestions
+            href: resources/contactmergesuggestions.md
+          - name: Get
+            href: api/contactmergesuggestions-get.md
+          - name: Update
+            href: api/contactmergesuggestions-update.md
+      - name: Photo
+        items:
+        - name: Profile photo
+          href: resources/profilephoto.md
         - name: Get photo
           href: api/profilephoto-get.md
         - name: Update photo
           href: api/profilephoto-update.md
       - name: Planner
-        href: resources/planneruser.md
         items:
+        - name: Planner user
+          href: resources/planneruser.md
         - name: Get plans
           href: api/planneruser-get.md
         - name: List favorite plans
@@ -643,7 +647,7 @@ items:
           href: api/profile-get.md
         - name: Delete user's profile
           href: api/profile-delete.md
-      - name: Teamwork
+      - name: Teamwork and communications
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
@@ -663,7 +667,7 @@ items:
           href: api/chat-get.md
         - name: List chats for user
           href: api/chat-list.md
-      - name: To-do tasks
+      - name: To-do task
         items:
         - name: To-do task
           href: resources/todotask.md
@@ -752,7 +756,7 @@ items:
           href: api/group-unsubscribebymail.md
         - name: Validate properties
           href: api/group-validateproperties.md
-      - name: App role assignments
+      - name: App role assignment
         href: resources/approleassignment.md
         items:
         - name: List app role assignments
@@ -761,7 +765,7 @@ items:
           href: api/group-post-approleassignments.md
         - name: Remove app role assignment
           href: api/group-delete-approleassignments.md
-      - name: Attachments
+      - name: Attachment
         items:
         - name: Attachment
           href: resources/attachment.md
@@ -918,15 +922,17 @@ items:
         - name: Create notebook
           href: api/onenote-post-notebooks.md
       - name: Photo
-        href: resources/profilephoto.md
         items:
+        - name: Profile photo
+          href: resources/profilephoto.md
         - name: Get photo
           href: api/profilephoto-get.md
         - name: Update photo
           href: api/profilephoto-update.md
-      - name: Plans
-        href: resources/plannerplan.md
+      - name: Planner
         items:
+        - name: Planner plan
+          href: resources/plannerplan.md
         - name: List plans
           href: api/plannergroup-list-plans.md
       - name: Post
@@ -1158,7 +1164,7 @@ items:
           href: api/serviceprincipal-list-ownedobjects.md
         - name: delta
           href: api/serviceprincipal-delta.md
-        - name: App role assignments
+        - name: App role assignment
           href: resources/approleassignment.md
           items:
           - name: List app role assignments
@@ -1439,7 +1445,7 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Attachments
+      - name: Attachment
         items:
         - name: Attachment
           href: resources/attachment.md
@@ -13572,7 +13578,7 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Attachments
+      - name: Attachment
         items:
         - name: Attachment
           href: resources/attachment.md

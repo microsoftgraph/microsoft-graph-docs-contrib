@@ -344,7 +344,7 @@ items:
           href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
-      - name: App role assignments
+      - name: App role assignment
         href: resources/approleassignment.md
         items:
         - name: List
@@ -353,7 +353,7 @@ items:
           href: api/user-post-approleassignments.md
         - name: Remove
           href: api/user-delete-approleassignments.md
-      - name: Calendars
+      - name: Calendar
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
@@ -377,22 +377,13 @@ items:
           href: api/user-list-events.md
         - name: Reminder view
           href: api/user-reminderview.md
-      - name: Contacts
-        href: resources/contact.md
+      - name: Delegated permission grant
         items:
-        - name: Create
-          href: api/user-post-contacts.md
-        - name: Create contact folder
-          href: api/user-post-contactfolders.md
-        - name: List
-          href: api/user-list-contacts.md
-        - name: List contact folders
-          href: api/user-list-contactfolders.md
-      - name: Delegated permission grants
-        items:
+        - name: OAuth 2.0 permission grant
+          href: resources/oauth2permissiongrant
         - name: List
           href: api/user-list-oauth2permissiongrants.md
-      - name: Directory objects
+      - name: Directory object
         href: resources/directoryobject.md
         items:
         - name: Assign license
@@ -438,7 +429,7 @@ items:
           href: api/drive-get.md
         - name: List children
           href: api/driveitem-list-children.md
-      - name: Groups
+      - name: Group
         href: resources/group.md
         items:
         - name: List joined teams
@@ -541,19 +532,33 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
-      - name: Photo
-        href: resources/profilephoto.md
+      - name: Personal contact
         items:
+        - name: Contact
+          href: resources/contact.md
+        - name: Create
+          href: api/user-post-contacts.md
+        - name: Create contact folder
+          href: api/user-post-contactfolders.md
+        - name: List
+          href: api/user-list-contacts.md
+        - name: List contact folders
+          href: api/user-list-contactfolders.md
+      - name: Photo
+        items:
+        - name: Profile photo
+          href: resources/profilephoto.md
         - name: Get photo
           href: api/profilephoto-get.md
         - name: Update photo
           href: api/profilephoto-update.md
-      - name: Planner tasks
-        href: resources/plannertask.md
+      - name: Planner
         items:
+        - name: Planner task
+          href: resources/plannertask.md
         - name: List tasks
           href: api/planneruser-list-tasks.md
-      - name: Teamwork
+      - name: Teamwork and communications
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
@@ -573,7 +578,7 @@ items:
           href: api/chat-get.md
         - name: List chats for user
           href: api/chat-list.md
-      - name: To-do tasks
+      - name: To-do task
         items:
         - name: To-do task
           href: resources/todotask.md
@@ -693,7 +698,7 @@ items:
             href: api/grouplifecyclepolicy-removegroup.md
         - name: Validate properties
           href: api/group-validateproperties.md
-      - name: App role assignments
+      - name: App role assignment
         href: resources/approleassignment.md
         items:
         - name: List
@@ -702,7 +707,7 @@ items:
           href: api/group-post-approleassignments.md
         - name: Remove
           href: api/group-delete-approleassignments.md
-      - name: Attachments
+      - name: Attachment
         items:
         - name: Attachment
           href: resources/attachment.md
@@ -840,8 +845,9 @@ items:
         - name: Create notebook
           href: api/onenote-post-notebooks.md
       - name: Photo
-        href: resources/profilephoto.md
         items:
+        - name: Profile photo
+          href: resources/profilephoto.md
         - name: Get photo
           href: api/profilephoto-get.md
         - name: Update photo
@@ -1012,7 +1018,7 @@ items:
           href: api/serviceprincipal-list-createdobjects.md
         - name: List owned objects
           href: api/serviceprincipal-list-ownedobjects.md
-        - name: App role assignments
+        - name: App role assignment
           href: resources/approleassignment.md
           items:
           - name: List
@@ -1246,7 +1252,7 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Attachments
+      - name: Attachment
         items:
         - name: Attachment
           href: resources/attachment.md
@@ -5879,7 +5885,7 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Attachments
+      - name: Attachment
         items:
         - name: Attachment
           href: resources/attachment.md
