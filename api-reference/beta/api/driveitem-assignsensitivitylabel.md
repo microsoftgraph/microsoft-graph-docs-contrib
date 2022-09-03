@@ -3,7 +3,7 @@ title: "driveItem: assignSensitivityLabel"
 description: "Asynchronously assigns sensitivity label to a driveItem."
 author: "jaLuthra"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.prod: "files"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Asynchronously assigns sensitivity label to a [driveItem][item-resource].
+Asynchronously assign a sensitivity label to a [driveItem][item-resource].
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,27 +48,28 @@ POST /users/{user-id}/drive/root:/{item-path}/assignSensitivityLabel
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-In the request body, provide Id for sensitivity label which is supposed to be assigned to given file. Details about required and optional input parameters can be referred from here:
+In the request body, provide the ID for the sensitivity label that is to be assigned to a given file. The following table lists the required and optional input parameters.
 
 | Name                | Value        |Description          |
 |:--------------------|:-----------------------|:---------------------------------|
-| sensitivityLabelId  | String  | Required. Id of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
-| assignmentMethod    | [sensitivityLabelAssignmentMethod](/graph/api/resources/sensitivitylabelassignment?view=graph-rest-beta#sensitivitylabelassignmentmethod-values) | Optional. The assignment method of the label on the document. Whether the assignment of the label was done automatically, standard or as a privileged operation (The equivalent to an administrator operation).     |
-| justificationText   | String | Optional. Justification text for audit purposes. Required when downgrading/removing label.  |
+| sensitivityLabelId  | String  | Required. ID of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
+| assignmentMethod    | [sensitivityLabelAssignmentMethod](/graph/api/resources/sensitivitylabelassignment?view=graph-rest-beta#sensitivitylabelassignmentmethod-values) | Optional. The assignment method of the label on the document. Indicates whether the assignment of the label was done automatically, standard, or as a privileged operation (the equivalent of an administrator operation).     |
+| justificationText   | String | Optional. Justification text for audit purposes. Required when downgrading/removing a label.  |
 
 ## Response
 
-If successful, the API returns response code `202 Accepted` with empty response body, the `Location` header will provide url to fetch operation details.
-For more details about how to monitor progress of assign sensitivity label operation, please refer to [monitoring long running operations](/graph/long-running-actions-overview).
+If successful, the API returns a `202 Accepted` HTTP response code with an empty response body. The `Location` header provides the URL to get operation details.
+For more details about how to monitor the progress of an assign sensitivity label operation, see [monitoring long-running operations](/graph/long-running-actions-overview).
 
 In addition to general errors that apply to Microsoft Graph, this API returns the `423 Locked` response code, which indicates that the file being accessed is locked. In such cases, the **code** property of the response object indicates the error type that blocks the operation.
-The following are the possible values for the error types.
+
+The following table lists the possible values for the error types.
 
 | Value                       | Description                                                                                                         |
 |:----------------------------|:--------------------------------------------------------------------------------------------------------------------|
-| fileDoubleKeyEncrypted      | Indicates that the file is protected via double key encryption; hence it cannot be opened.                          |
-| fileDecryptionNotSupported  | Indicates that the encrypted file has specific properties which do not allow these files to be opened by SharePoint.|
-| fileDecryptionDeferred      | Indicates that the file is being processed for decryption; hence it cannot be opened.                               |
+| fileDoubleKeyEncrypted      | Indicates that the file is protected via double key encryption; therefore, it cannot be opened.                          |
+| fileDecryptionNotSupported  | Indicates that the encrypted file has specific properties that do not allow these files to be opened by SharePoint.|
+| fileDecryptionDeferred      | Indicates that the file is being processed for decryption; therefore, it cannot be opened.                               |
 | unknownFutureValue          | Evolvable enumeration sentinel value. Do not use.                                                                   |
 
 ## Examples
@@ -103,6 +104,6 @@ The value of the `Location` header provides a URL for a service that will return
 You can use this information to [determine when the assign sensitivity label operation has finished](/graph/long-running-actions-overview).
 
 ### Remarks
-The response from the API will only indicate that the assign sensitivity label operation was accepted or rejected; for example, due to file type not being supported or file is double encrypted.
+The response from the API only indicates that the assign sensitivity label operation was accepted or rejected. The operation might be rejected, for example, if the file type is not supported, or the file is double encrypted.
 
 [item-resource]: ../resources/driveitem.md
