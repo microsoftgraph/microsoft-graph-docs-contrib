@@ -348,7 +348,7 @@ items:
           href: api/user-validatepassword.md
         - name: Invalidate refresh tokens
           href: api/user-invalidateallrefreshtokens.md
-      - name: App role assignments
+      - name: App role assignment
         href: resources/approleassignment.md
         items:
         - name: List app role assignments
@@ -375,7 +375,7 @@ items:
           href: api/user-findroomlists.md
         - name: Get free/busy schedule
           href: api/calendar-getschedule.md
-        - name: List
+        - name: List calendars
           href: api/user-list-calendars.md
         - name: List calendar groups
           href: api/user-list-calendargroups.md
@@ -403,32 +403,13 @@ items:
           href: api/cloudpc-reprovision.md
         - name: Troubleshoot
           href: api/cloudpc-troubleshoot.md
-      - name: Contacts
+      - name: Delegated permission grant
         items:
-        - name: Contact
-          href: resources/contact.md
-          items:
-          - name: Create contact
-            href: api/user-post-contacts.md
-          - name: Create contact folder
-            href: api/user-post-contactfolders.md
-          - name: List contacts
-            href: api/user-list-contacts.md
-          - name: List contact folders
-            href: api/user-list-contactfolders.md
-        - name: Contact merge suggestions (preview)
-          items:
-          - name: Contact merge suggestions
-            href: resources/contactmergesuggestions.md
-          - name: Get
-            href: api/contactmergesuggestions-get.md
-          - name: Update
-            href: api/contactmergesuggestions-update.md
-      - name: Delegated permission grants
-        items:
-        - name: List delegated permission grants
+        - name: OAuth 2.0 permission grant
+          href: resources/oauth2permissiongrant.md
+        - name: List
           href: api/user-list-oauth2permissiongrants.md
-      - name: Directory objects
+      - name: Directory object
         href: resources/directoryobject.md
         items:
         - name: Activate service plan (deprecated)
@@ -480,7 +461,7 @@ items:
           href: api/drive-get.md
         - name: List children
           href: api/driveitem-list-children.md
-      - name: Groups
+      - name: Group
         href: resources/group.md
         items:
         - name: List joined teams
@@ -545,12 +526,12 @@ items:
           href: api/user-sendmail.md
       - name: Notes
         items:
-        - name: Onenote
+        - name: OneNote root
           href: resources/onenote.md
-        - name: Create notebook
-          href: api/onenote-post-notebooks.md
         - name: List notebooks
           href: api/onenote-list-notebooks.md
+        - name: Create notebook
+          href: api/onenote-post-notebooks.md
       - name: Org hierarchy
         items:
         - name: Assign manager
@@ -585,9 +566,9 @@ items:
             href: api/outlookuser-list-mastercategories.md
         - name: Translate IDs
           href: api/user-translateexchangeids.md
-      - name: Outlook tasks (deprecated)
+      - name: Outlook task (deprecated)
         items:
-        - name: Outlook tasks
+        - name: Outlook task
           href: resources/outlooktask.md
         - name: Create tasks
           href: api/outlookuser-post-tasks.md
@@ -607,16 +588,39 @@ items:
             href: api/organizationsettings-list-peopleinsights.md
           - name: Update
             href: api/insightssettings-update.md
-      - name: Photo
-        href: resources/profilephoto.md
+      - name: Personal contacts
         items:
+        - name: Contact
+          href: resources/contact.md
+          items:
+          - name: Create contact
+            href: api/user-post-contacts.md
+          - name: Create contact folder
+            href: api/user-post-contactfolders.md
+          - name: List contacts
+            href: api/user-list-contacts.md
+          - name: List contact folders
+            href: api/user-list-contactfolders.md
+        - name: Contact merge suggestions (preview)
+          items:
+          - name: Contact merge suggestions
+            href: resources/contactmergesuggestions.md
+          - name: Get
+            href: api/contactmergesuggestions-get.md
+          - name: Update
+            href: api/contactmergesuggestions-update.md
+      - name: Photo
+        items:
+        - name: Profile photo
+          href: resources/profilephoto.md
         - name: Get photo
           href: api/profilephoto-get.md
         - name: Update photo
           href: api/profilephoto-update.md
       - name: Planner
-        href: resources/planneruser.md
         items:
+        - name: Planner user
+          href: resources/planneruser.md
         - name: Get plans
           href: api/planneruser-get.md
         - name: List favorite plans
@@ -643,7 +647,7 @@ items:
           href: api/profile-get.md
         - name: Delete user's profile
           href: api/profile-delete.md
-      - name: Teamwork
+      - name: Teamwork and communications
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
@@ -663,7 +667,7 @@ items:
           href: api/chat-get.md
         - name: List chats for user
           href: api/chat-list.md
-      - name: To-do tasks
+      - name: To-do task
         items:
         - name: To-do task
           href: resources/todotask.md
@@ -752,7 +756,7 @@ items:
           href: api/group-unsubscribebymail.md
         - name: Validate properties
           href: api/group-validateproperties.md
-      - name: App role assignments
+      - name: App role assignment
         href: resources/approleassignment.md
         items:
         - name: List app role assignments
@@ -762,8 +766,9 @@ items:
         - name: Remove app role assignment
           href: api/group-delete-approleassignments.md
       - name: Attachment
-        href: resources/attachment.md
         items:
+        - name: Attachment
+          href: resources/attachment.md
         - name: File attachment type
           href: resources/fileattachment.md
         - name: Item attachment type
@@ -873,7 +878,7 @@ items:
         items:
         - name: Overview
           href: resources/extended-properties-overview.md
-        - name: Single-value extended properties
+        - name: Single-value extended property
           items:
           - name: Single-value extended property
             href: resources/singlevaluelegacyextendedproperty.md
@@ -881,7 +886,7 @@ items:
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended properties
+        - name: Multi-value extended property
           items:
           - name: Multi-value extended property
             href: resources/multivaluelegacyextendedproperty.md
@@ -909,22 +914,25 @@ items:
         - name: Renew group
           href: api/grouplifecyclepolicy-renewgroup.md
       - name: Notes
-        href: resources/onenote.md
         items:
+        - name: OneNote root
+          href: resources/onenote.md
         - name: List notebooks
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
       - name: Photo
-        href: resources/profilephoto.md
         items:
+        - name: Profile photo
+          href: resources/profilephoto.md
         - name: Get photo
           href: api/profilephoto-get.md
         - name: Update photo
           href: api/profilephoto-update.md
-      - name: Plans
-        href: resources/plannerplan.md
+      - name: Planner
         items:
+        - name: Planner plan
+          href: resources/plannerplan.md
         - name: List plans
           href: api/plannergroup-list-plans.md
       - name: Post
@@ -1156,7 +1164,7 @@ items:
           href: api/serviceprincipal-list-ownedobjects.md
         - name: delta
           href: api/serviceprincipal-delta.md
-        - name: App role assignments
+        - name: App role assignment
           href: resources/approleassignment.md
           items:
           - name: List app role assignments
@@ -1185,11 +1193,13 @@ items:
             href: api/serviceprincipal-removekey.md
           - name: Add token signing certificate
             href: api/serviceprincipal-addtokensigningcertificate.md
-        - name: Delegated permission grants
+        - name: Delegated permission grant
           items:
-          - name: List delegated permission grants
+          - name: OAuth 2.0 permission grant
+            href: resources/oauth2permissiongrant.md
+          - name: List
             href: api/serviceprincipal-list-oauth2permissiongrants.md
-        - name: Delegated permission classifications
+        - name: Delegated permission classification
           href: resources/delegatedpermissionclassification.md
           items:
           - name: List
@@ -1329,10 +1339,38 @@ items:
             href: api/synchronization-synchronizationtemplate-list.md
           - name: Get
             href: api/synchronization-synchronizationtemplate-get.md
-    - name: Calendar
-      href: resources/calendar.md
+    - name: Calendars
       displayname: Outlook calendar
       items:
+      - name: Calendar
+        href: resources/calendar.md
+        items:
+        - name: List calendars
+          href: api/user-list-calendars.md
+        - name: Create calendar
+          href: api/user-post-calendars.md
+        - name: Get calendar
+          href: api/calendar-get.md
+        - name: Update calendar
+          href: api/calendar-update.md
+        - name: Delete calendar
+          href: api/calendar-delete.md
+        - name: List calendar view
+          href: api/calendar-list-calendarview.md
+        - name: Reminder view
+          href: api/user-reminderview.md
+        - name: List events
+          href: api/calendar-list-events.md
+        - name: Create Event
+          href: api/calendar-post-events.md
+        - name: Get free/busy schedule
+          href: api/calendar-getschedule.md
+        - name: Find meeting times
+          href: api/user-findmeetingtimes.md
+        - name: Find room lists
+          href: api/user-findroomlists.md
+        - name: Find rooms
+          href: api/user-findrooms.md
       - name: Event
         href: resources/event.md
         items:
@@ -1410,8 +1448,9 @@ items:
         - name: Get open extension
           href: api/opentypeextension-get.md
       - name: Attachment
-        href: resources/attachment.md
         items:
+        - name: Attachment
+          href: resources/attachment.md
         - name: File attachment type
           href: resources/fileattachment.md
         - name: Item attachment type
@@ -1424,35 +1463,6 @@ items:
           href: api/attachment-get.md
         - name: Delete attachment
           href: api/attachment-delete.md
-      - name: Calendar
-        href: resources/calendar.md
-        items:
-        - name: List calendars
-          href: api/user-list-calendars.md
-        - name: Create calendar
-          href: api/user-post-calendars.md
-        - name: Get calendar
-          href: api/calendar-get.md
-        - name: Update calendar
-          href: api/calendar-update.md
-        - name: Delete calendar
-          href: api/calendar-delete.md
-        - name: List calendar view
-          href: api/calendar-list-calendarview.md
-        - name: Reminder view
-          href: api/user-reminderview.md
-        - name: List events
-          href: api/calendar-list-events.md
-        - name: Create Event
-          href: api/calendar-post-events.md
-        - name: Get free/busy schedule
-          href: api/calendar-getschedule.md
-        - name: Find meeting times
-          href: api/user-findmeetingtimes.md
-        - name: Find room lists
-          href: api/user-findroomlists.md
-        - name: Find rooms
-          href: api/user-findrooms.md
       - name: Calendar group
         href: resources/calendargroup.md
         items:
@@ -1510,7 +1520,7 @@ items:
         items:
         - name: Overview
           href: resources/extended-properties-overview.md
-        - name: Single-value extended properties
+        - name: Single-value extended property
           items:
           - name: Single-value extended property
             href: resources/singlevaluelegacyextendedproperty.md
@@ -1518,7 +1528,7 @@ items:
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended properties
+        - name: Multi-value extended property
           items:
           - name: Multi-value extended property
             href: resources/multivaluelegacyextendedproperty.md
@@ -1526,7 +1536,7 @@ items:
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
-      - name: Place
+      - name: Places
         items:
         - name: Place
           href: resources/place.md
@@ -10240,7 +10250,7 @@ items:
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
               href: api/intune-tem-telecomexpensemanagementpartner-update.md
-      - name: Cloud PC (preview)
+      - name: Cloud PCs (preview)
         items:
         - name: Overview
           href: resources/cloudpc-api-overview.md
@@ -10250,8 +10260,9 @@ items:
           - name: Get effective permissions
             href: api/virtualendpoint-geteffectivepermissions.md
         - name: Cloud PC
-          href: resources/cloudpc.md
           items:
+          - name: Cloud PC
+            href: resources/cloudpc.md
           - name: List cloudPCs for organization
             href: api/virtualendpoint-list-cloudpcs.md
           - name: List cloudPCs for user
@@ -11001,10 +11012,11 @@ items:
       items:
       - name: Overview
         href: /graph/extensibility-overview?context=graph/api/beta&preserve-view=true
-      - name: Directory extensions
+      - name: Directory extension
         displayname: Groups, Users, Applications, Organization, Devices
-        href: resources/extensionproperty.md
         items:
+        - name: Extension property
+          href: resources/extensionproperty.md
         - name: List
           href: api/application-list-extensionproperty.md
         - name: Create
@@ -11013,10 +11025,11 @@ items:
           href: api/extensionproperty-get.md
         - name: Delete
           href: api/extensionproperty-delete.md
-      - name: Open extensions
-        href: resources/opentypeextension.md
+      - name: Open extension
         displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
+        - name: Open type extension
+          href: resources/opentypeextension.md
         - name: Create
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get
@@ -11025,10 +11038,11 @@ items:
           href: api/opentypeextension-update.md
         - name: Delete
           href: api/opentypeextension-delete.md
-      - name: Schema extensions
-        href: resources/schemaextension.md
+      - name: Schema extension
         displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
+        - name: Schema extension
+          href: resources/schemaextension.md
         - name: List
           href: api/schemaextension-list.md
         - name: Create
@@ -12207,7 +12221,7 @@ items:
           items:
           - name: Get data policy operation
             href: api/datapolicyoperation-get.md
-        - name: Delegated permission grants
+        - name: Delegated permission grant
           href: resources/oauth2permissiongrant.md
           items:
           - name: List
@@ -13569,8 +13583,9 @@ items:
         - name: Get open extension
           href: api/opentypeextension-get.md
       - name: Attachment
-        href: resources/attachment.md
         items:
+        - name: Attachment
+          href: resources/attachment.md
         - name: File attachment type
           href: resources/fileattachment.md
         - name: Item attachment type
@@ -13583,7 +13598,7 @@ items:
           href: api/attachment-get.md
         - name: Delete attachment
           href: api/attachment-delete.md
-      - name: Categories
+      - name: Category
         items:
         - name: Category
           href: resources/outlookcategory.md
@@ -13601,7 +13616,7 @@ items:
         items:
         - name: Overview
           href: resources/extended-properties-overview.md
-        - name: Single-value extended properties
+        - name: Single-value extended property
           items:
           - name: Single-value extended property
             href: resources/singlevaluelegacyextendedproperty.md
@@ -13609,7 +13624,7 @@ items:
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended properties
+        - name: Multi-value extended property
           items:
           - name: Multi-value extended property
             href: resources/multivaluelegacyextendedproperty.md
@@ -13674,9 +13689,10 @@ items:
           href: api/mailfolder-list-messages.md
         - name: List child folders
           href: api/mailfolder-list-childfolders.md
-      - name: Rules
-        href: resources/messagerule.md
+      - name: Rule
         items:
+        - name: Rule
+          href: resources/messagerule.md
         - name: List rules
           href: api/mailfolder-list-messagerules.md
         - name: Create rule
@@ -13692,9 +13708,10 @@ items:
       items:
       - name: Overview
         href: resources/onenote-api-overview.md
-      - name: Notes
-        href: resources/onenote.md
+      - name: OneNote root
         items:
+        - name: OneNote root
+          href: resources/onenote.md
         - name: List notebooks
           href: api/onenote-list-notebooks.md
         - name: Create notebook
@@ -13707,7 +13724,7 @@ items:
           href: api/onenote-list-pages.md
         - name: Create page
           href: api/onenote-post-pages.md
-      - name: Notebooks
+      - name: Notebook
         href: resources/notebook.md
         items:
         - name: List notebooks
@@ -13730,7 +13747,7 @@ items:
           href: api/notebook-list-sectiongroups.md
         - name: Create section group
           href: api/notebook-post-sectiongroups.md
-      - name: Sections
+      - name: Section
         href: resources/onenotesection.md
         items:
         - name: List sections
@@ -13747,7 +13764,7 @@ items:
           href: api/section-copytonotebook.md
         - name: Copy to section group
           href: api/section-copytosectiongroup.md
-      - name: Section groups
+      - name: Section group
         href: resources/sectiongroup.md
         items:
         - name: List section groups
@@ -13760,7 +13777,7 @@ items:
           href: api/sectiongroup-list-sections.md
         - name: Create section
           href: api/sectiongroup-post-sections.md
-      - name: Pages
+      - name: Page
         href: resources/onenotepage.md
         items:
         - name: List pages
@@ -13775,7 +13792,7 @@ items:
           href: api/page-delete.md
         - name: Copy to section
           href: api/page-copytosection.md
-      - name: Resources
+      - name: Resource
         href: resources/onenoteresource.md
         items:
         - name: Get resource
@@ -13829,7 +13846,7 @@ items:
             href: api/useraccountinformation-update.md
           - name: Delete
             href: api/useraccountinformation-delete.md
-        - name: Addresses
+        - name: Address
           items:
           - name: Item address
             href: resources/itemaddress.md
@@ -13843,7 +13860,7 @@ items:
             href: api/itemaddress-update.md
           - name: Delete
             href: api/itemaddress-delete.md
-        - name: Anniversaries
+        - name: Anniversary
           items:
           - name: Person anniversary
             href: resources/personanniversary.md
@@ -13857,7 +13874,7 @@ items:
             href: api/personanniversary-update.md
           - name: Delete
             href: api/personanniversary-delete.md
-        - name: Awards
+        - name: Award
           items:
           - name: Person award
             href: resources/personaward.md
@@ -13871,7 +13888,7 @@ items:
             href: api/personaward-update.md
           - name: Delete
             href: api/personaward-delete.md
-        - name: Certifications
+        - name: Certification
           items:
           - name: Person certification
             href: resources/personcertification.md
@@ -13913,7 +13930,7 @@ items:
             href: api/itememail-update.md
           - name: Delete
             href: api/itememail-delete.md
-        - name: Interests
+        - name: Interest
           items:
           - name: Person interest
             href: resources/personinterest.md
@@ -13927,7 +13944,7 @@ items:
             href: api/personinterest-update.md
           - name: Delete
             href: api/personinterest-delete.md
-        - name: Languages
+        - name: Language
           items:
           - name: Language proficiency
             href: resources/languageproficiency.md
@@ -13941,7 +13958,7 @@ items:
             href: api/languageproficiency-update.md
           - name: Delete
             href: api/languageproficiency-delete.md
-        - name: Names
+        - name: Name
           items:
           - name: Person name
             href: resources/personname.md
@@ -13955,7 +13972,7 @@ items:
             href: api/personname-update.md
           - name: Delete
             href: api/personname-delete.md
-        - name: Notes
+        - name: Note
           items:
           - name: Person annotation
             href: resources/personannotation.md
@@ -13969,7 +13986,7 @@ items:
             href: api/personannotation-update.md
           - name: Delete
             href: api/personannotation-delete.md
-        - name: Patents
+        - name: Patent
           items:
           - name: Item patent
             href: resources/itempatent.md
@@ -13983,7 +14000,7 @@ items:
             href: api/itempatent-update.md
           - name: Delete
             href: api/itempatent-delete.md
-        - name: Phones
+        - name: Phone
           items:
           - name: Item phone
             href: resources/itemphone.md
@@ -13997,7 +14014,7 @@ items:
             href: api/itemphone-update.md
           - name: Delete
             href: api/itemphone-delete.md
-        - name: Positions
+        - name: Position
           items:
           - name: Work position
             href: resources/workposition.md
@@ -14011,7 +14028,7 @@ items:
             href: api/workposition-update.md
           - name: Delete
             href: api/workposition-delete.md
-        - name: Projects
+        - name: Project
           items:
           - name: Project participation
             href: resources/projectparticipation.md
@@ -14025,7 +14042,7 @@ items:
             href: api/projectparticipation-update.md
           - name: Delete
             href: api/projectparticipation-delete.md
-        - name: Publications
+        - name: Publication
           items:
           - name: Item publication
             href: resources/itempublication.md
@@ -14039,7 +14056,7 @@ items:
             href: api/itempublication-update.md
           - name: Delete
             href: api/itempublication-delete.md
-        - name: Responsibilities
+        - name: Responsibility
           items:
           - name: Person responsibility
             href: resources/personresponsibility.md
@@ -14053,7 +14070,7 @@ items:
             href: api/personresponsibility-update.md
           - name: Delete
             href: api/personresponsibility-delete.md
-        - name: Skills
+        - name: Skill
           items:
           - name: Skill proficiency
             href: resources/skillproficiency.md
@@ -14067,7 +14084,7 @@ items:
             href: api/skillproficiency-update.md
           - name: Delete
             href: api/skillproficiency-delete.md
-        - name: Web accounts
+        - name: Web account
           items:
           - name: Web account
             href: resources/webaccount.md
@@ -14081,7 +14098,7 @@ items:
             href: api/webaccount-update.md
           - name: Delete
             href: api/webaccount-delete.md
-        - name: Websites
+        - name: Website
           items:
           - name: Person website
             href: resources/personwebsite.md
@@ -14165,7 +14182,6 @@ items:
           - name: List activity statistics
             href: api/activitystatistics-list.md
     - name: Personal contacts
-      href: resources/contact.md
       displayName: Outlook, Outlook contacts, Outlook contact, People
       items:
       - name: Contact
@@ -14187,7 +14203,7 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Categories
+      - name: Category
         items:
         - name: Category
           href: resources/outlookcategory.md
@@ -14238,7 +14254,7 @@ items:
         items:
         - name: Overview
           href: resources/extended-properties-overview.md
-        - name: Single-value extended properties
+        - name: Single-value extended property
           items:
           - name: Single-value extended property
             href: resources/singlevaluelegacyextendedproperty.md
@@ -14246,7 +14262,7 @@ items:
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended properties
+        - name: Multi-value extended property
           items:
           - name: Multi-value extended property
             href: resources/multivaluelegacyextendedproperty.md
@@ -14598,12 +14614,12 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Microsoft Defender for Office 365 security reports
+      - name: Microsoft Defender for Office 365 security reports (preview)
         items:
         - name: Attack simulation reports
           displayname: Attack simulation and training
           href: resources/report-m365defender-reports-overview.md
-        - name: Repeat offenders
+        - name: Repeat offender
           items:
           - name: Repeat offender
             href: resources/attacksimulationrepeatoffender.md
@@ -14756,7 +14772,7 @@ items:
       items:
       - name: Overview
         href: resources/security-api-overview.md
-      - name: Actions (preview)
+      - name: Action (preview)
         items:
         - name: Action
           href: resources/securityaction.md
@@ -14851,7 +14867,7 @@ items:
           - name: Attack simulation reports
             displayname: Attack simulation and training
             href: resources/report-m365defender-reports-overview.md
-          - name: Repeat offenders
+          - name: Repeat offender
             items:
             - name: Repeat offender
               href: resources/attacksimulationrepeatoffender.md
@@ -15167,21 +15183,22 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
-      - name: Secure scores
+      - name: Secure score
         href: resources/securescores.md
         items:
         - name: List secure scores
           href: api/securescores-list.md
-      - name: Secure score control profiles
+      - name: Secure score control profile
         href: resources/securescorecontrolprofiles.md
         items:
         - name: List secure score control profiles
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
-      - name: Threat intelligence indicators (preview)
-        href: resources/tiindicator.md
+      - name: Threat intelligence indicator (preview)
         items:
+        - name: Threat intelligence indicator
+          href: resources/tiindicator.md
         - name: List
           href: api/tiindicators-list.md
         - name: Create
@@ -15261,7 +15278,7 @@ items:
       items:
       - name: Overview
         href: resources/sharepoint.md
-      - name: Sites
+      - name: Site
         items:
         - name: Site
           href: resources/site.md
@@ -15305,7 +15322,7 @@ items:
           href: api/site-list-operations.md
         - name: Get site settings
           href: api/sitesettings-get.md
-      - name: Lists
+      - name: List
         items:
         - name: List
           href: resources/list.md
@@ -15327,7 +15344,7 @@ items:
           href: api/contenttype-addcopy.md
         - name: List operations
           href: api/list-list-operations.md
-      - name: Columns
+      - name: Column definition
         items:
         - name: Column definition
           href: resources/columndefinition.md
@@ -15337,7 +15354,7 @@ items:
           href: api/columndefinition-update.md
         - name: Delete
           href: api/columndefinition-delete.md
-      - name: Content types
+      - name: Content type
         items:
         - name: Content type
           href: resources/contentType.md
@@ -15367,7 +15384,7 @@ items:
           href: api/contenttype-publish.md
         - name: Unpublish
           href: api/contenttype-unpublish.md
-      - name: List items
+      - name: List item
         items:
         - name: List item
           href: resources/listitem.md
@@ -15405,7 +15422,7 @@ items:
           href: api/documentsetversion-delete.md
         - name: Restore
           href: api/documentsetversion-restore.md
-      - name: Pages
+      - name: Page
         items:
         - name: Site page
           href: resources/sitepage.md
@@ -15429,7 +15446,7 @@ items:
           href: api/list-list-operations.md
         - name: Get operation
           href: api/richlongrunningoperation-get.md
-      - name: Site permissions
+      - name: Site permission
         items:
         - name: Permission
           href: resources/permission.md
@@ -15499,7 +15516,7 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
-      - name: Tenant settings
+      - name: Tenant settings (preview)
         items:
           - name: Settings
             href: resources/tenantadmin-settings.md
@@ -15609,9 +15626,10 @@ items:
           href: api/plannerprogresstaskboardtaskformat-get.md
         - name: Update progress task board format
           href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Planner rosters
-        href: resources/plannerroster.md
+      - name: Planner roster (preview)
         items:
+        - name: Planner roster
+          href: resources/plannerroster.md
         - name: Create roster
           href: api/planner-post-rosters.md
         - name: Delete roster
@@ -15702,14 +15720,14 @@ items:
             href: api/teamsappsettings-get.md
           - name: Update
             href: api/teamsappsettings-update.md
-        - name: Resource-specific permission grants
+        - name: Resource-specific permission grant
           href: resources/resourcespecificpermissiongrant.md
           items:
-          - name: List for team
+          - name: List for team (preview)
             href: api/team-list-permissiongrants.md
           - name: List for group
             href: api/group-list-permissiongrants.md
-          - name: List for chat
+          - name: List for chat (preview)
             href: api/chat-list-permissiongrants.md          
         - name: Tab
           href: resources/teamstab.md
@@ -15959,11 +15977,12 @@ items:
             href: api/presence-setuserpreferredpresence.md
           - name: Clear user preferred presence
             href: api/presence-clearuserpreferredpresence.md  
-      - name: Device (preview)
+      - name: Devices (preview)
         items:
-        - name: Provisioned devices
-          href: resources/teamworkdevice.md
+        - name: Provisioned device
           items:
+            - name: Teamwork device
+              href: resources/teamworkdevice.md
             - name: List
               href: api/teamworkdevice-list.md
             - name: Get
@@ -16267,7 +16286,7 @@ items:
               href: api/teamwork-list-deletedteams.md
             - name: Get all messages
               href: api/deletedteam-getallmessages.md     
-        - name: Tags
+        - name: Tag (preview)
           href: resources/teamworktag.md
           items:
           - name: List
@@ -16678,7 +16697,7 @@ items:
             href: api/outlooktaskfolder-list-tasks.md
           - name: Create task folder in group
             href: api/outlooktaskfolder-post-tasks.md
-        - name: Attachment
+        - name: Attachments
           items:
           - name: Attachment
             href: resources/attachment.md
@@ -16690,7 +16709,7 @@ items:
             href: api/attachment-get.md
           - name: Delete attachment
             href: api/attachment-delete.md
-        - name: Categories
+        - name: Category
           items:
           - name: Category
             href: resources/outlookcategory.md
@@ -16708,7 +16727,7 @@ items:
           items:
           - name: Overview
             href: resources/extended-properties-overview.md
-          - name: Single-value extended properties
+          - name: Single-value extended property
             items:
             - name: Single-value extended property
               href: resources/singlevaluelegacyextendedproperty.md
@@ -16716,7 +16735,7 @@ items:
               href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
             - name: Get single-value property
               href: api/singlevaluelegacyextendedproperty-get.md
-          - name: Multi-value extended properties
+          - name: Multi-value extended property
             items:
             - name: Multi-value extended property
               href: resources/multivaluelegacyextendedproperty.md
@@ -16753,7 +16772,7 @@ items:
           href: api/workbookapplication-get.md
         - name: Calculate
           href: api/workbookapplication-calculate.md
-      - name: Workbook comments
+      - name: Workbook comment
         href: resources/workbookcomment.md
         items:
         - name: List
