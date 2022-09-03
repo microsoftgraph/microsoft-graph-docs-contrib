@@ -1,6 +1,6 @@
 ---
 title: "Set up Microsoft Teams to work with tenant users"
-description: "This article describes the steps to setup Microsoft teams on your machine and use your tenant users."
+description: "Follow the steps in this article to set up Microsoft Teams to work with the education API in Microsoft Graph."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"

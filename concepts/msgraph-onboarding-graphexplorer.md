@@ -11,7 +11,9 @@ doc_type: conceptualPageType
 
 You can use the education API in Microsoft Graph to build applications that access EDU data. For example, you can display information from School Data Sync (SDS) and Microsoft Teams, or automate common tasks like adding students and creating assignments.
 
-You can use Graph Explorer to test Microsoft Graph queries before you implement them in your application. To use Graph Explorer:
+You can use Graph Explorer to test Microsoft Graph queries before you implement them in your application. 
+
+Use the following steps to try education API calls in Graph Explorer:
 
 1. Open a private web browser, go to [developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), choose **Sign in to Graph Explorer**, and enter your Office 365 Global Admin account credentials.
 
@@ -19,19 +21,19 @@ You can use Graph Explorer to test Microsoft Graph queries before you implement 
 
    You might have to wait for the permissions to update before you can run all queries.
 
-4. To get a list of your schools, in the **query** field, enter `https://graph.microsoft.com/v1.0/education/schools` and choose **Run Query**.
+4. To get a list of your schools, in the query field, enter `https://graph.microsoft.com/v1.0/education/schools` and choose **Run query**.
 
 5. To get a list of classes, in the **query** field, enter `https://graph.microsoft.com/v1.0/education/classes` and choose **Run query**.
 
-6. Take the first class ID `740202c8-5db7-4496-a055-9f3c9fd98207` to get that class's assignments. In the **query** field, enter `https://graph.microsoft.com/v1.0/education/classes/740202c8-5db7-4496-a055-9f3c9fd98207/assignments`, and choose **Run query**.
+6. Take the first class ID `740202c8-5db7-4496-a055-9f3c9fd98207` to get that class's assignments. In the query field, enter `https://graph.microsoft.com/v1.0/education/classes/740202c8-5db7-4496-a055-9f3c9fd98207/assignments`, and choose **Run query**.
 
-7. To access the Assignments API, grant the corresponding permissions to Graph Explorer. Go to **Modify permissions**, search for **EduAssignments.Read, EduAssignments.ReadBasic, EduAssignments.ReadWrite and EduAssignments.ReadWriteBasic**, and choose **Consent**.
+7. To access the assignments API, grant the corresponding permissions to Graph Explorer. Go to **Modify permissions**, search for **EduAssignments.Read, EduAssignments.ReadBasic, EduAssignments.ReadWrite and EduAssignments.ReadWriteBasic**, and choose **Consent**.
 
 8. Run the query to get the assignments.
 
-9. Now you can try to create a new assignment. In the **query** field, enter `https://graph.microsoft.com/v1.0/education/classes/740202c8-5db7-4496-a055-9f3c9fd98207/assignments`. Make sure that POST is selected for the request type.
+9. Now you can try to create a new assignment. In the query field, enter `https://graph.microsoft.com/v1.0/education/classes/740202c8-5db7-4496-a055-9f3c9fd98207/assignments`. Make sure that POST is selected for the request type.
 
-10. In the **Request body** field, paste the following JSON below.
+10. In the **Request body** field, paste the following JSON.
 
         ```json
             {

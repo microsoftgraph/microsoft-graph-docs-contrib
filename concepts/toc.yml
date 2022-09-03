@@ -286,7 +286,7 @@ items:
                 href: msgraph-onboarding-sds.md
               - name: Set up Microsoft Teams
                 href: msgraph-onboarding-msteams.md
-              - name: Use Graph Explorer to query education APIs
+              - name: Use Graph Explorer with education APIs
                 href: msgraph-onboarding-graphexplorer.md                                                                                            
       - name: Extensions
         items:
