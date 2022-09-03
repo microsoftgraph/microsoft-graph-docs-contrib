@@ -380,7 +380,7 @@ items:
       - name: Delegated permission grant
         items:
         - name: OAuth 2.0 permission grant
-          href: resources/oauth2permissiongrant
+          href: resources/oauth2permissiongrant.md
         - name: List
           href: api/user-list-oauth2permissiongrants.md
       - name: Directory object

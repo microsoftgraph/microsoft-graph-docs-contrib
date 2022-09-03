@@ -407,7 +407,7 @@ items:
         items:
         - name: OAuth 2.0 permission grant
           href: resources/oauth2permissiongrant.md
-        - name: List oauth2PermissionGrants
+        - name: List
           href: api/user-list-oauth2permissiongrants.md
       - name: Directory object
         href: resources/directoryobject.md
@@ -1198,8 +1198,6 @@ items:
           - name: OAuth 2.0 permission grant
             href: resources/oauth2permissiongrant.md
           - name: List
-            href: api/serviceprincipal-list-oauth2permissiongrants.md
-          - name: List delegated permission grants
             href: api/serviceprincipal-list-oauth2permissiongrants.md
         - name: Delegated permission classification
           href: resources/delegatedpermissionclassification.md
@@ -12223,7 +12221,7 @@ items:
           items:
           - name: Get data policy operation
             href: api/datapolicyoperation-get.md
-        - name: Delegated permission grants
+        - name: Delegated permission grant
           href: resources/oauth2permissiongrant.md
           items:
           - name: List
