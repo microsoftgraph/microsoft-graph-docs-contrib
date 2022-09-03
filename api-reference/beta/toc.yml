@@ -11126,6 +11126,8 @@ items:
           href: api/driveitem-preview.md
         - name: Extract sensitivity labels
           href: api/driveitem-extractsensitivitylabels.md
+        - name: Assign sensitivity label
+          href: api/driveitem-assignsensitivitylabel.md
       - name: Bundles
         href: resources/bundle.md
         items:
