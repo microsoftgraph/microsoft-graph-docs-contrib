@@ -1047,11 +1047,13 @@ items:
             href: api/serviceprincipal-removekey.md
           - name: Add token signing certificate
             href: api/serviceprincipal-addtokensigningcertificate.md
-        - name: Delegated permission grants
+        - name: Delegated permission grant
           items:
+          - name: OAuth 2.0 permission grant
+            href: resources/oauth2permissiongrant.md
           - name: List
             href: api/serviceprincipal-list-oauth2permissiongrants.md
-        - name: Delegated permission classifications
+        - name: Delegated permission classification
           href: resources/delegatedpermissionclassification.md
           items:
           - name: List
@@ -5079,9 +5081,10 @@ items:
           items:
           - name: Get data policy operation
             href: api/datapolicyoperation-get.md
-        - name: Delegated permission grants
-          href: resources/oauth2permissiongrant.md
+        - name: Delegated permission grant
           items:
+          - name: OAuth 2.0 permission grant
+            href: resources/oauth2permissiongrant.md
           - name: List
             href: api/oauth2permissiongrant-list.md
           - name: Create

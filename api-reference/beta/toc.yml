@@ -406,8 +406,8 @@ items:
       - name: Delegated permission grant
         items:
         - name: OAuth 2.0 permission grant
-          href: resources/oauth2permissiongrant
-        - name: List delegated permission grants
+          href: resources/oauth2permissiongrant.md
+        - name: List oauth2PermissionGrants
           href: api/user-list-oauth2permissiongrants.md
       - name: Directory object
         href: resources/directoryobject.md
@@ -1193,11 +1193,15 @@ items:
             href: api/serviceprincipal-removekey.md
           - name: Add token signing certificate
             href: api/serviceprincipal-addtokensigningcertificate.md
-        - name: Delegated permission grants
+        - name: Delegated permission grant
           items:
+          - name: OAuth 2.0 permission grant
+            href: resources/oauth2permissiongrant.md
+          - name: List
+            href: api/serviceprincipal-list-oauth2permissiongrants.md
           - name: List delegated permission grants
             href: api/serviceprincipal-list-oauth2permissiongrants.md
-        - name: Delegated permission classifications
+        - name: Delegated permission classification
           href: resources/delegatedpermissionclassification.md
           items:
           - name: List
