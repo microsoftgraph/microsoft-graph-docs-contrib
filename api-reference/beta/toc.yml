@@ -18,10 +18,14 @@ items:
     - name: Permissions
       items:
       - name: Overview
-        href: /graph/permissions-overview?context=graph/api/beta
+        displayName: Microsoft Graph permissions
+        href: /graph/permissions-overview?context=graph/api/1.0
       - name: Permissions reference
         displayName: Microsoft Graph permissions list
-        href: /graph/permissions-reference?context=graph/api/beta
+        href: /graph/permissions-reference?context=graph/api/1.0
+      - name: Azure AD built-in roles
+        displayName: Microsoft Graph permissions
+        href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
     - name: Manage app access (CSPs)
       href: /graph/auth-cloudsolutionprovider?context=graph/api/beta
     - name: Limit mailbox access

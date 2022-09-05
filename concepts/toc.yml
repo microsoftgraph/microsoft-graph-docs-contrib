@@ -570,10 +570,14 @@ items:
           - name: Permissions
             items:
             - name: Overview
+              displayName: Microsoft Graph permissions
               href: permissions-overview.md
             - name: Permissions reference
               displayName: Microsoft Graph permissions list
               href: permissions-reference.md
+            - name: Azure AD built-in roles
+              displayName: Microsoft Graph permissions
+              href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
           - name: Manage app access (CSPs)
             href: auth-cloudsolutionprovider.md
           - name: Limit mailbox access
