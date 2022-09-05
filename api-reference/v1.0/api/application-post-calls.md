@@ -49,7 +49,7 @@ If successful, this method returns a `201 Created` response code and a [call](..
 
 > **Note:** This call needs the Calls.Initiate.All permission.
 
-##### Request
+#### Request
 The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
 
