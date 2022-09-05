@@ -7,45 +7,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewBaseTask()
+requestBody := graphmodels.NewBaseTask()
 textBody := "String"
-requestBody.SetTextBody(&textBody)
-bodyLastModifiedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
-requestBody.SetBodyLastModifiedDateTime(&bodyLastModifiedDateTime)
-completedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
-requestBody.SetCompletedDateTime(&completedDateTime)
-dueDateTime := msgraphsdk.NewDateTimeTimeZone()
+requestBody.SetTextBody(&textBody) 
+bodyLastModifiedDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
+requestBody.SetBodyLastModifiedDateTime(&bodyLastModifiedDateTime) 
+completedDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
+requestBody.SetCompletedDateTime(&completedDateTime) 
+dueDateTime := graphmodels.NewDateTimeTimeZone()
 requestBody.SetDueDateTime(dueDateTime)
-dueDateTime.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.dateTimeTimeZone",
-}
-startDateTime := msgraphsdk.NewDateTimeTimeZone()
+startDateTime := graphmodels.NewDateTimeTimeZone()
 requestBody.SetStartDateTime(startDateTime)
-startDateTime.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.dateTimeTimeZone",
-}
-importance := "String"
-requestBody.SetImportance(&importance)
-recurrence := msgraphsdk.NewPatternedRecurrence()
+importance := graphmodels.STRING_IMPORTANCE 
+requestBody.SetImportance(&importance) 
+recurrence := graphmodels.NewPatternedRecurrence()
 requestBody.SetRecurrence(recurrence)
-recurrence.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.patternedRecurrence",
-}
 displayName := "String"
-requestBody.SetDisplayName(&displayName)
-status := "String"
-requestBody.SetStatus(&status)
-viewpoint := msgraphsdk.NewTaskViewpoint()
+requestBody.SetDisplayName(&displayName) 
+status := graphmodels.STRING_TASKSTATUS_V2 
+requestBody.SetStatus(&status) 
+viewpoint := graphmodels.NewTaskViewpoint()
 requestBody.SetViewpoint(viewpoint)
-viewpoint.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.taskViewpoint",
-}
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.task",
-}
-baseTaskListId := "baseTaskList-id"
-baseTaskId := "baseTask-id"
-graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).Patch(requestBody)
+
+graphClient.Me().Tasks().ListsById("baseTaskList-id").TasksById("baseTask-id").Patch(requestBody)
 
 
 ```

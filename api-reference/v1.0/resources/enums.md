@@ -11,6 +11,29 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### bookingsAvailabilityStatus values
+|Member|
+|:---|
+|available|
+|busy|
+|slotsAvailable|
+|outOfOffice|
+|unknownFutureValue|
+
+### signInFrequencyAuthenticationType values
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### signInFrequencyInterval values
+
+|Member|
+|:---|
+|timeBased|
+|everyTime|
 
 ### crossTenantAccessPolicyTargetConfigurationAccessType values
 
@@ -290,6 +313,13 @@ Namespace: microsoft.graph
 |proposed|
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
+### accessReviewStageFilterByCurrentUserOptions values 
 
 |Member|
 |:---|
@@ -1596,13 +1626,6 @@ Possible values for user account types (group membership), per Windows definitio
 | AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`. |
 | AllowOverrideWithJustification | 4 |  User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.|
 
-### channelMembershipType values
-
-| Member             | Value |Description|
-| :----------------- | :---- |:-----------|
-| standard           | 0     |Channel inherits the list of members of the parent team.|
-| private            | 1     |Channel can have members that are a subset of all the members on the parent team.|
-| unknownFutureValue | 2     |      |
 ### wellknownListName values
 | Member
 |:----------------------

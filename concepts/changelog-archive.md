@@ -1603,7 +1603,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added the [Get team photo](/graph/api/team-get-photo?view=graph-rest-beta&preserve-view=true) and [Update team photo](/graph/api/team-update-photo?view=graph-rest-beta&preserve-view=true) methods. |
+| Addition | Beta | Added the [Get team photo](/graph/api/profilephoto-get?view=graph-rest-beta&preserve-view=true) and [Update team photo](/graph/api/profilephoto-update?view=graph-rest-beta&preserve-view=true) methods. |
 | Addition | Beta | [Reading images in messages](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&preserve-view=true) now support application permissions. |
 
 ### Users

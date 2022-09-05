@@ -79,7 +79,7 @@ This example shows how you can send an activity feed notification for a team. Th
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_pending_fin_approval_request"
 }
 -->
 ``` http
@@ -107,28 +107,29 @@ Content-Type: application/json
     ] 
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-pending-fin-approval-request-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-pending-fin-approval-request-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-pending-fin-approval-request-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-pending-fin-approval-request-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-pending-fin-approval-request-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-pending-fin-approval-request-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -153,9 +154,11 @@ HTTP/1.1 204 No Content
 Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a [tab](../resources/teamstab.md) in a [channel](../resources/channel.md). The tab hosts a page showing the user the status of their hotel reservation. Selecting the notification will take the user to the tab, where they can check their reservation.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_to_user_about_tab"
 }
 -->
 ``` http
@@ -172,7 +175,7 @@ Content-Type: application/json
         "content": "You have moved up the queue"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
@@ -187,6 +190,33 @@ Content-Type: application/json
     ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-to-user-about-tab-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-to-user-about-tab-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-to-user-about-tab-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-to-user-about-tab-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-to-user-about-tab-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-to-user-about-tab-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -225,7 +255,7 @@ Content-Type: application/json
         "content": "You have moved up the queue"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "jacob@contoso.com"
     },
     "templateParameters": [
@@ -240,16 +270,13 @@ Content-Type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-upn-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-upn-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-upn-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -262,6 +289,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-upn-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-upn-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -283,9 +314,11 @@ HTTP/1.1 204 No Content
 As seen in the previous examples, you can link to different aspects of the team. However, if you want to link to an aspect that is not part of the team or is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when setting `topic` source to `text`.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_custom_topic"
 }
 -->
 ``` http
@@ -303,7 +336,7 @@ Content-Type: application/json
         "content": "New deployment requires your approval"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
@@ -314,6 +347,33 @@ Content-Type: application/json
     ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-custom-topic-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-custom-topic-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-custom-topic-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-custom-topic-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-custom-topic-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-custom-topic-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {

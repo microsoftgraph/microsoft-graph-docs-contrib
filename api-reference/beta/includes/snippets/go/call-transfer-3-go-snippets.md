@@ -7,21 +7,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-transferTarget := msgraphsdk.NewInvitationParticipantInfo()
-requestBody.SetTransferTarget(transferTarget)
-endpointType := "default"
-transferTarget.SetEndpointType(&endpointType)
-identity := msgraphsdk.NewIdentitySet()
+requestBody := graphmodels.NewTransferPostRequestBody()
+transferTarget := graphmodels.NewInvitationParticipantInfo()
+endpointType := graphmodels.DEFAULT_ENDPOINTTYPE 
+transferTarget.SetEndpointType(&endpointType) 
+identity := graphmodels.NewIdentitySet()
+additionalData := map[string]interface{}{
+phone := graphmodels.New()
+id := "+12345678901"
+phone.SetId(&id) 
+	identity.SetPhone(phone)
+}
+identity.SetAdditionalData(additionalData)
 transferTarget.SetIdentity(identity)
-identity.SetAdditionalData(map[string]interface{}{
+additionalData := map[string]interface{}{
+	"languageId" : "languageId-value", 
+	"region" : "region-value", 
 }
-transferTarget.SetAdditionalData(map[string]interface{}{
-	"languageId": "languageId-value",
-	"region": "region-value",
-}
-callId := "call-id"
-graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(requestBody)
+transferTarget.SetAdditionalData(additionalData)
+requestBody.SetTransferTarget(transferTarget)
+
+graphClient.Communications().CallsById("call-id").Transfer().Post(requestBody)
 
 
 ```

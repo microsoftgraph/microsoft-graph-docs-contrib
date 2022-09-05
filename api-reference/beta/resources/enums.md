@@ -541,6 +541,16 @@ Namespace: microsoft.graph
 |screenSharing|
 |unknownFutureValue|
 
+### endpointType values
+
+|Member|
+|:---|
+|default|
+|voicemail|
+|skypeForBusiness|
+|skypeForBusinessVoipPhone|
+|unknownFutureValue|
+
 ### kerberosSignOnMappingAttributeType values
 
 |Member|
@@ -2094,15 +2104,6 @@ Possible values for user account types (group membership), per Windows definitio
 |high|
 |urgent|
 
-### channelMembershipType values
-
-| Member             |
-| :----------------- |
-| standard           |
-| private            |
-| unknownFutureValue |
-| shared             |
-
 ### stagedFeatureName values
 
 | Member                    | Description                   |
@@ -3108,4 +3109,114 @@ Possible values for user account types (group membership), per Windows definitio
 |terminated|
 |terminating|
 |terminationRequested|
+|unknownFutureValue|
+
+### featureTargetType values 
+
+|Member|
+|:---|
+|group|
+|administrativeUnit|
+|role|
+|unknownFutureValue|
+
+### longRunningOperationStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|skipped|
+|unknownFutureValue|
+
+### submissionCategory values 
+
+|Member|
+|:---|
+|notJunk|
+|spam|
+|phishing|
+|malware|
+|unknownFutureValue|
+
+### submissionClientSource values 
+
+|Member|
+|:---|
+|microsoft|
+|other|
+|unknownFutureValue|
+
+### submissionContentType values 
+
+|Member|
+|:---|
+|email|
+|url|
+|file|
+|app|
+|unknownFutureValue|
+
+### submissionResultCategory values 
+
+|Member|
+|:---|
+|notJunk|
+|spam|
+|phishing|
+|malware|
+|allowedByPolicy|
+|blockedByPolicy|
+|spoof|
+|unknown|
+|noResultAvailable|
+|unknownFutureValue|
+
+### submissionSource values 
+
+|Member|
+|:---|
+|user|
+|administrator|
+|unknownFutureValue|
+
+### weakAlgorithms values 
+
+|Member|
+|:---|
+|rsaSha1|
+|unknownFutureValue|
+
+### tenantAllowBlockListAction values 
+
+|Member|
+|:---|
+|allow|
+|block|
+|unknownFutureValue|
+
+### tenantAllowBlockListEntryType values 
+
+|Member|
+|:---|
+|url|
+|fileHash|
+|sender|
+|recipient|
+|unknownFutureValue|
+
+### outlierMemberType values 
+
+|Member|
+|:---|
+|user|
+|unknownFutureValue|
+
+### outlierContainerType values 
+
+|Member|
+|:---|
+|group|
 |unknownFutureValue|

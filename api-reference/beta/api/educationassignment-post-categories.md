@@ -47,7 +47,8 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "add_educationcategory_to_educationassignment"
+  "name": "add_educationcategory_to_educationassignment",
+  "sampleKeys": ["11021", "19002"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/$ref

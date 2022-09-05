@@ -7,16 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewNoncustodialDataSource()
+requestBody := graphmodels.NewNoncustodialDataSource()
 applyHoldToSource := false
-requestBody.SetApplyHoldToSource(&applyHoldToSource)
-dataSource := msgraphsdk.NewDataSource()
-requestBody.SetDataSource(dataSource)
-dataSource.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.ediscovery.siteSource",
+requestBody.SetApplyHoldToSource(&applyHoldToSource) 
+dataSource := graphmodels.NewdataSource()
+additionalData := map[string]interface{}{
+site := graphmodels.New()
+webUrl := "https://contoso.sharepoint.com/sites/SecretSite"
+site.SetWebUrl(&webUrl) 
+	dataSource.SetSite(site)
 }
-caseId := "case-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).NoncustodialDataSources().Post(requestBody)
+dataSource.SetAdditionalData(additionalData)
+requestBody.SetDataSource(dataSource)
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").NoncustodialDataSources().Post(requestBody)
 
 
 ```

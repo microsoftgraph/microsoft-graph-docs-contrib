@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-onlineMeetingId := "onlineMeeting-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Delete()
+
+graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Delete()
 
 
 ```

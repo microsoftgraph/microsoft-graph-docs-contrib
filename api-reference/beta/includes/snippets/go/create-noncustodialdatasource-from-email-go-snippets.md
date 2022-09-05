@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewNoncustodialDataSource()
+requestBody := graphmodels.NewNoncustodialDataSource()
 applyHoldToSource := true
-requestBody.SetApplyHoldToSource(&applyHoldToSource)
-dataSource := msgraphsdk.NewDataSource()
-requestBody.SetDataSource(dataSource)
-dataSource.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.ediscovery.userSource",
-	"email": "adelev@contoso.com",
+requestBody.SetApplyHoldToSource(&applyHoldToSource) 
+dataSource := graphmodels.NewdataSource()
+additionalData := map[string]interface{}{
+	"email" : "adelev@contoso.com", 
 }
-caseId := "case-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).NoncustodialDataSources().Post(requestBody)
+dataSource.SetAdditionalData(additionalData)
+requestBody.SetDataSource(dataSource)
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").NoncustodialDataSources().Post(requestBody)
 
 
 ```

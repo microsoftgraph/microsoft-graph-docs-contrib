@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewChat()
+requestBody := graphmodels.NewChat()
 topic := "Group chat title update"
-requestBody.SetTopic(&topic)
-chatId := "chat-id"
-graphClient.ChatsById(&chatId).Patch(requestBody)
+requestBody.SetTopic(&topic) 
+
+graphClient.ChatsById("chat-id").Patch(requestBody)
 
 
 ```

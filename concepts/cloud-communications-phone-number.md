@@ -41,18 +41,13 @@ Assigning a phone number to your bot involves three steps:
 
 ### Create an application instance
 
-If it hasn't been installed already, a tenant admin needs to install the [Skype for Business Online Module](https://www.microsoft.com/download/details.aspx?id=39366) for PowerShell. The tenant admin must sign in using their credentials before running the cmdlet.
+If it hasn't been installed already, a tenant admin needs to install the [Teams module](/microsoftteams/teams-powershell-install) for PowerShell. The tenant admin must sign in using their credentials before running the cmdlet.
 
 To create a new application instance, the tenant admin runs the following cmdlet:
 
 `PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <user@contoso.com> -ApplicationId <app_id> -DisplayName <bot_display_name>`
 
-When the application instance is created, use the sync cmdlet:
-
-`PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <application_instance_id>`
-
-For more information, see [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
-
+For more information, see [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
 ### Assign Microsoft 365 licenses to your application instance
 
 Assign a virtual user license to your application instance. For details, see [Phone system virtual user license](/microsoftteams/teams-add-on-licensing/virtual-user).
@@ -69,19 +64,15 @@ To assign the phone number to the application instance, the tenant admin:
 2. Goes to **Teams Admin center** > **Voice** > **Phone Numbers**.
 3. Assigns a service phone number (+11D format) using the following cmdlet:
 
-   `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber <phone_number>`
-  
-When the service phone number is assigned, use the sync cmdlet:
+   `PS C:\> Set-CsPhoneNumberAssignment -Identity <user@contoso.com> -TelephoneNumber <phone_number> -TelephoneNumberType <type>`
 
-`PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <application_instance_id>`
-
-For more information, see [Set-CsOnlineVoiceApplicationInstance](/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+For more information, see [Set-CsPhoneNumberAssignment](/powershell/module/teams/set-csphonenumberassignment).
 
 ## Unassign a bot phone number
 
 Use the following cmdlet to unassign a phone number:
 
-`PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber $null`
+   `PS C:\> Remove-CsPhoneNumberAssignment -Identity <user@contoso.com> -TelephoneNumber <phone_number> -TelephoneNumberType <type>`
 
 > [!NOTE]
 > Currently this only works with online numbers and not direct routing (DR) numbers. This is a known issue.
@@ -90,10 +81,10 @@ Use the following cmdlet to unassign a phone number:
 
 After unassigning the number, you can assign a different number to the bot by using the following cmdlet:
 
-`PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber <new phone_number>`
+   `PS C:\> Set-CsPhoneNumberAssignment -Identity <user@contoso.com> -TelephoneNumber <phone_number> -TelephoneNumberType <type>`
 
 ## See also
 
-- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Teams API overview](teams-concept-overview.md)
 - [Incident bot sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples/IncidentBot)
 - [Deploying the sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/V1.0Samples/RemoteMediaSamples/README.md#deploying-the-sample)

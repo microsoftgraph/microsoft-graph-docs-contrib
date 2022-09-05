@@ -7,15 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEducationOutcome()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.educationPointsOutcome",
+requestBody := graphmodels.NewEducationOutcome()
+additionalData := map[string]interface{}{
+points := graphmodels.New()
+points := int32(85.0)
+points.SetPoints(&points) 
+	requestBody.SetPoints(points)
 }
-educationClassId := "educationClass-id"
-educationAssignmentId := "educationAssignment-id"
-educationSubmissionId := "educationSubmission-id"
-educationOutcomeId := "educationOutcome-id"
-graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).OutcomesById(&educationOutcomeId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").OutcomesById("educationOutcome-id").Patch(requestBody)
 
 
 ```

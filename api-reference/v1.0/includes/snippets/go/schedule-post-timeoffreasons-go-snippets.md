@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTimeOffReason()
+requestBody := graphmodels.NewTimeOffReason()
 displayName := "Vacation"
-requestBody.SetDisplayName(&displayName)
-iconType := "plane"
-requestBody.SetIconType(&iconType)
+requestBody.SetDisplayName(&displayName) 
+iconType := graphmodels.PLANE_TIMEOFFREASONICONTYPE 
+requestBody.SetIconType(&iconType) 
 isActive := true
-requestBody.SetIsActive(&isActive)
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeOffReasons().Post(requestBody)
+requestBody.SetIsActive(&isActive) 
+
+result, err := graphClient.TeamsById("team-id").Schedule().TimeOffReasons().Post(requestBody)
 
 
 ```
