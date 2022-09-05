@@ -18,7 +18,7 @@ You can access users through Microsoft Graph in two ways:
 
 There are two types of users in Azure AD - members and guest users. Guest users join the organization through redeeming their invitation. Guest users can be converted to members to enjoy all the privileges of members.
 
-## Authorization
+## Authorization and privileges
 
 One of the following [permissions](/graph/permissions-reference) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
 
