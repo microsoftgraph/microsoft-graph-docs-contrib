@@ -64,6 +64,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | callbackUri         | String                                                                                                 | The callback URL on which callbacks will be delivered. Must be `https`.                                                                                                                               |
 | callChainId         | String                                                                                                 | A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.  This needs to be copied over from `Microsoft.Graph.Call.CallChainId`. |
 | callRoutes         | [callRoute](callRoute.md) collection                                                                                                 | The routing information on how the call was retargeted. Read-only.                                                                                                                |
+| callOptions            | [outgoingCallOptions](outgoingcalloptions.md)                                                         | Contains the optional features for the call.   |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | The chat information. Required information for joining a meeting.                                                                                                                              |
 | direction           | callDirection                                                                                                 | The direction of the call. The possible value are `incoming` or `outgoing`. Read-only.                                                                                            |
 | id                  | String                                                                                                 | The call id. Read-only.                                                                                                                                                                        |
@@ -87,6 +88,7 @@ incomingContext            | [incomingContext](incomingContext.md)              
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 | operations          | [commsOperation](commsoperation.md) collection       | Read-only. Nullable.                                                |
 | participants        | [participant](participant.md) collection             | Read-only. Nullable.                                                |
+| contentSharingSessions        | [contentSharingSession](contentsharingsession.md) collection             | Read-only. Nullable.                                                |
 
 ## JSON representation
 
@@ -96,7 +98,9 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "optionalProperties": [
     "callChainId",
+    "callOptions",
     "chatInfo",
+    "contentSharingSessions",
     "direction",
     "id",
     "incomingContext",
@@ -119,7 +123,9 @@ The following is a JSON representation of the resource.
 {
   "callbackUri": "String",
   "callChainId": "String",
+  "callOptions": {"@odata.type": "#microsoft.graph.outgoingCallOptions"},
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
+  "contentSharingSessions": [{ "@odata.type": "microsoft.graph.contentSharingSession" }],
   "direction": "String",
   "id": "String (identifier)",
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
