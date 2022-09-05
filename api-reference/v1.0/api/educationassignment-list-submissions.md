@@ -1,7 +1,7 @@
 ---
 title: "List submissions"
 description: "List all the submissions associated with an assignment."
-author: "Sureshpadii88"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
