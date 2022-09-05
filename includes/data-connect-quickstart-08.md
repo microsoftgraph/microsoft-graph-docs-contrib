@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this section we will be building your first ASP.NET project application for to process the Microsoft Graph Data Connect data that was exported.
+In this section, we will build your first ASP.NET project application to process the Microsoft Graph Data Connect data that was exported.
 
 ## Create a new ASP.NET project
 
@@ -22,7 +22,7 @@ In this section we will be building your first ASP.NET project application for t
     1. Select **Create**.
 
     > [!IMPORTANT]
-    > Ensure that you enter the exact same name for the Visual Studio Project that is specified in this quick start instructions. The Visual Studio Project name becomes part of the namespace in the code. The code inside these instructions depends on the namespace matching the Visual Studio Project name specified in these instructions. If you use a different project name the code will not compile unless you adjust all the namespaces to match the Visual Studio Project name you enter when you create the project.
+    > Ensure that you enter the exact same name for the Visual Studio project that is specified in this quick start instructions. The Visual Studio project name becomes part of the namespace in the code. The code inside these instructions depends on the namespace matching the Visual Studio project name specified in these instructions. If you use a different project name, the code will not compile unless you adjust all the namespaces to match the Visual Studio project name you entered when you created the project.
 
     1. In the new **ASP.NET Web Application** project dialog, select MVC.
     1. Select **Create**.
@@ -39,20 +39,20 @@ In this section we will be building your first ASP.NET project application for t
 
 1. In the **Add dependency** dialog, select **Azure Storage** and select **Next**.
 
-    ![A screenshot of the Visual Studio interface showing the add dependecy dialog for the Azure Storage option.](../concepts/images/data-connect-vs-add-dependency-azsa.png)
+    ![A screenshot of the Visual Studio interface showing the add dependency dialog for the Azure Storage option.](../concepts/images/data-connect-vs-add-dependency-azsa.png)
 
-1. In the **Azure Storage** dialog, select the subscription and storage account where you exported the data in the previous exercise, select **Next**.
+1. In the **Azure Storage** dialog, select the subscription and storage account where you exported the data in the previous exercise, then select **Next**.
 
     ![A screenshot of the Visual Studio interface showing the Configure Azure Storage, where you select the subscription and storage account.](../concepts/images/data-connect-vs-configure-az-storage.png)
 
-1. Provide the **Azure Storage connection** a name of **AzureStorageConnectionString** and select **Next**.
+1. Provide the **Azure Storage connection**, a name of **AzureStorageConnectionString**, and select **Next**.
 1. Select **Finish**.
 
     ![A screenshot of the Visual Studio interface showing the Configure Azure Storage summary.](../concepts/images/data-connect-vs-configure-sa-summary.png)
 
 ## Create a new model class that will be used to store the email metrics
 
-1. In the  **Solution Explorer** tool window, right-click the **Models** folder and select **Add > Class**.
+1. In the **Solution Explorer** tool window, right-click the **Models** folder and select **Add > Class**.
 
     ![A screenshot of the Visual Studio interface showing how you can add a new class by right-clicking in the models folder.](../concepts/images/data-connect-vs-add-new-model-class.png)
 
@@ -73,7 +73,7 @@ In this section we will be building your first ASP.NET project application for t
 
 1. When prompted, name the controller **EmailMetricsController** and select **OK**.
 
-1. Add the following using statements after the existing using statements at the top of the file containing the **EmailMetricsController** class.
+1. Add the following _using_ statements after the existing _using_ statements at the top of the file that contains the **EmailMetricsController** class.
 
     ```csharp
     using System.Collections.Generic;
@@ -87,7 +87,7 @@ In this section we will be building your first ASP.NET project application for t
     using Newtonsoft.Json.Linq;
     ```
 
-1. Add the following code to the **EmailMetricsController** class. These will be used to connect to the **Azure Storage Account** that contains the exported data.
+1. Add the following code to the **EmailMetricsController** class. These will be used to connect to the **Azure Storage account** that contains the exported data.
 
     ```csharp
     private const string connectionStringName = "AzureStorageConnectionString";
@@ -95,7 +95,7 @@ In this section we will be building your first ASP.NET project application for t
 
     ```
 
-1. Add the following method to the **EmailMetricsController** class. This will process an **Azure Blob** and update a collection representing the email accounts and how many recipients there were combined across all emails found for the extracted accounts.
+1. Add the following method to the **EmailMetricsController** class. This will process an **Azure Blob** and update a collection that represents the email accounts and how many recipients there were combined across all emails found for the extracted accounts.
 
     ```csharp
     private async Task ProcessBlobEmails(List<Models.EmailMetric> emailMetrics, BlobClient emailBlob)
@@ -170,7 +170,7 @@ In this section we will be building your first ASP.NET project application for t
     }
     ```
 
-1. Add the following action to the **EmailMetricsController** that will use the methods added this class to process the emails and send the results to the view.
+1. Add the following action to the **EmailMetricsController** that will use the methods added to this class to process the emails and send the results to the view.
 
     ```csharp
     [HttpPost, ActionName("ShowMetrics")]
@@ -223,7 +223,7 @@ In this section we will be building your first ASP.NET project application for t
 
 1. In the **Solution Explorer** tool window, right-click the **Views > EmailMetrics** folder and select **Add > View**.
 
-1. In the **Add View** dialog, set the following values and leave the remaining input controls to their default values and select **Add**.
+1. In the **Add View** dialog, set the following values, leave the remaining input controls to their default values, and select **Add**.
 
     - **View name**: ShowMetrics
     - **Template**: List
@@ -282,6 +282,6 @@ In this section we will be building your first ASP.NET project application for t
 
     ![A screenshot of the built ASP.NET Web application interface showing the view email metrics button.](../concepts/images/data-connect-vs-select-view-metrics.png)
 
-1. When the page loads, you will see a list of emails addresses that were found among all emails with a sum of all the recipients sent between them, as shown from a small sample set in a test email extract in the following figure.
+1. When the page loads, you will see a list of email addresses that were found among all emails with a sum of all the recipients sent between them, as shown from a small sample set in a test email extract in the following figure.
 
     ![A screenshot of the built ASP.NET Web application interface showing the view email metrics results.](../concepts/images/data-connect-vs-show-email-metrics.png)
