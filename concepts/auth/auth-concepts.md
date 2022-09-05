@@ -43,7 +43,11 @@ Because both the app and the user must be authorized to make the request, the re
 
 In this access scenario, the application can interact with data on its own, without a signed in user. *Direct access* or *app-only* access is used in scenarios such as automation and backup, and is mostly used by apps that run as background services or daemons. It's suitable when it's undesirable to have a user signed in, or when the data required can't be scoped to a single user.
 
-One way that apps can be authorized to call Microsoft Graph with their own identity is when they're assigned *application permissions*, also called *app roles*. The appropriate application permissions or app roles must be granted to the application for it to access the resource.
+Apps get privileges to call Microsoft Graph with their own identity through one of the following ways:
+
++ When the app is assigned *application permissions*, also called *app roles*.
++ When the app is assigned ownership of the resource that it intends to manage.
++ When the app is assigned an [Azure AD administrative role](/azure/active-directory/roles/permissions-reference).
 
 ## Microsoft Graph permissions
 
