@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions |
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.ReadWrite |
-| Delegated (personal Microsoft account |Not supported.|
+| Delegated (personal Microsoft account) |Not supported.|
 | Application |Not supported.|
 
 ## HTTP request
@@ -34,8 +34,6 @@ DELETE /education/synchronizationProfiles/{id}
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required.  |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|Not supported.|
 
 ## Request body
 Do not supply a request body for this method.
