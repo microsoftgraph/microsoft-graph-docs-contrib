@@ -21,6 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions |
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.ReadWrite |
+| Delegated (personal Microsoft account |Not supported.|
+| Application |Not supported.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,8 +43,8 @@ Do not supply a request body for this method.
 If successful, this method returns a `202 Accepted` response code and no response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -80,8 +82,8 @@ DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ---
 
 
-##### Response
-Here is an example of the response.
+### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
