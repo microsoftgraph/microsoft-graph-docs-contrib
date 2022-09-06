@@ -45,7 +45,7 @@ $createdBy->set@odatatype('microsoft.graph.identitySet');
 
 
 $requestBody->setCreatedBy($createdBy);
-$requestBody->setAccountEnabled('Boolean');
+$requestBody->setAccountEnabled(boolean);
 
 $assignedLicensesAssignedLicense1 = new AssignedLicense();
 $additionalData = [
@@ -110,7 +110,7 @@ $requestBody->setProvisionedPlans($provisionedPlansArray);
 
 $requestBody->setRefreshTokensValidFromDateTime(new DateTime('String (timestamp)'));
 
-$requestBody->setShowInAddressList('Boolean');
+$requestBody->setShowInAddressList(boolean);
 
 $requestBody->setSurname('String');
 

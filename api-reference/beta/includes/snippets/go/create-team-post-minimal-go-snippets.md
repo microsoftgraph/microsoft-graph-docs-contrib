@@ -15,8 +15,6 @@ requestBody.SetDescription(&description)
 
 
 conversationMember := graphmodels.NewConversationMember()
-"@odata.type" := "#microsoft.graph.aadUserConversationMember"
-conversationMember.Set"@odata.type"(&"@odata.type") 
 roles := []string {
 	"owner",
 

@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'"
+
 requestParameters := &graphconfig.RoleAssignmentsRequestBuilderGetQueryParameters{
-	Filter: "appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'",
+	Filter: &requestFilter,
 	Expand: [] string {"principal"},
 }
 configuration := &graphconfig.RoleAssignmentsRequestBuilderGetRequestConfiguration{

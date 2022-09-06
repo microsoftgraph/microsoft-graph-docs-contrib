@@ -30,21 +30,22 @@ In this step you will create an Azure Storage account where Microsoft Graph data
     1. Select the **Azure Storage account**.
     2. On the sidebar menu, select **Access control (IAM)**.
     3. Select the **Add** button in the **Add a role assignment** block.
-    4. Use the following values to find the application you previously selected to grant it the **Storage Blob Data Contributor** role, then select **Save**.
+    4. Grant the **Storage Blob Data Contributor** role to the application you previously created.
 
-        - **Role**: Storage Blob Data Contributor
-        - **Assign access to**: User, group or service principal
-        - **Select**: Microsoft Graph data connect Data Transfer (the name of the Azure AD application you created previously)
+        1. Select *Storage Blob Data Contributor* as the **Role**, and click **Next**.
+        2. **Assign access to** *User, group or service principal*.
+        3. Click **+ Select members**, and in the right pane that displays, search for the application (Microsoft Graph data connect Data Transfer) that you previously created, and click **Select**.
+    5. Select **Review + assign**.
 
-        ![A screenshot showing the proper role assignment to the application for Microsoft Graph Data Connect in the Azure Storage account in the Azure portal.](../concepts/images/data-connect-azure-storage-role.png)
+      <!--  ![A screenshot showing the proper role assignment to the application for Microsoft Graph Data Connect in the Azure Storage account in the Azure portal.](../concepts/images/data-connect-azure-storage-role.png) -->
 
 1. Create a new container in the **mgdcm365datastore** Azure Storage account.
 
     1. Select the **mgdcm365datastore** Azure Storage account.
-    2. On the sidebar menu, select **Containers** under the **Blob** service section.
+    2. On the sidebar menu, select **Containers** under the **Data storage** section.
     3. Select the **+Container** button at the top of the page and use the following values and then select **Create**.
 
         - **Name**: m365mails
         - **Public access level**: Private (no anonymous access)
 
-        ![A screenshot showing the creation of a new container called m365mails in the Storage account blob containers in the Azure portal.](../concepts/images/data-connect-azure-storage-container.png)
+       <!-- ![A screenshot showing the creation of a new container called m365mails in the Storage account blob containers in the Azure portal.](../concepts/images/data-connect-azure-storage-container.png) -->
