@@ -146,7 +146,7 @@ With the pipeline created, now it is time to run it.
 
     ![Screenshot for activity runs](../concepts/images/data-connect-synapse-activity-run.png)
 
-1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image. In this case you can see that it is in a state of **RequestingConsent**. Close the **Details** dialog.
+1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image. In this case you can see that it is in a state of **ConsentPending**. Close the **Details** dialog.
 
     ![Screenshot for requesting consent](../concepts/images/data-connect-synapse-accept-request.png)
 
