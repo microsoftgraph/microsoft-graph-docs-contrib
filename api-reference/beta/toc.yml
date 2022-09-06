@@ -15439,7 +15439,7 @@ items:
         - name: Publish
           href: api/sitepage-publish.md
         - name: List horizontal sections
-          href: api/horizontalsections-list.md
+          href: api/horizontalsection-list.md
         - name: Get vertical section
           href: api/verticalsection-get.md
       - name: Rich long-running operation
