@@ -15432,10 +15432,16 @@ items:
           href: api/sitepage-create.md
         - name: Get
           href: api/sitepage-get.md
+        - name: Update
+          href: api/sitepage-update.md
         - name: Delete
           href: api/sitepage-delete.md
         - name: Publish
           href: api/sitepage-publish.md
+        - name: List horizontal sections
+          href: api/horizontalsections-list.md
+        - name: Get vertical section
+          href: api/verticalsection-get.md
       - name: Rich long-running operation
         items:
         - name: Rich long-running operation
