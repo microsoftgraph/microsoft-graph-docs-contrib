@@ -254,7 +254,7 @@ Content-type: application/json
 	 "resourceBehaviorOptions": [],
 	 "resourceProvisioningOptions": [],
 	 "securityEnabled": false,
-   "securityIdentifier": "S-1-12-1-1753967289-1089268234-832641959-555555555",
+	 "securityIdentifier": "S-1-12-1-1753967289-1089268234-832641959-555555555",
 	 "theme": null,
 	 "visibility": "Public",
 	 "onPremisesProvisioningErrors": []
