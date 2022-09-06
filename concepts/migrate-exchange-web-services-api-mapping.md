@@ -99,7 +99,8 @@ This article lists the Microsoft Graph APIs that map to Exchange Web Services (E
 
 | EWS API                                                                                               | Microsoft Graph API |
 |-------------------------------------------------------------------------------------------------------|-----|
-| [GetUserAvailability](/exchange/client-developer/web-service-reference/getuseravailability-operation) | [Get free/busy schedule](/graph/api/calendar-getschedule) |
+| [GetUserAvailability](/exchange/client-developer/web-service-reference/getuseravailability-operation)<br/>FindAvailableMeetingTimes | [Get free/busy schedule](/graph/api/calendar-getschedule)|
+ 
 
 ### Reminders
 
@@ -109,3 +110,46 @@ This article lists the Microsoft Graph APIs that map to Exchange Web Services (E
 | [GetReminders](/exchange/client-developer/web-service-reference/getreminders-operation)                   | [Reminder view](/graph/api/user-reminderview) |
 | [PerformReminderAction](/exchange/client-developer/web-service-reference/performreminderaction-operation) | [Dismiss reminder](/graph/api/event-dismissreminder)<br/>[Snooze reminder](/graph/api/event-snoozereminder) |
 <!-- markdownlint-enable MD033 -->
+
+### Permissions
+
+<!-- markdownlint-disable MD033 -->
+| EWS API                                                                                                   | Microsoft Graph API |
+|-----------------------------------------------------------------------------------------------------------|-----|
+| [GetReminders](/exchange/client-developer/web-service-reference/getreminders-operation)                   | [Reminder view](/graph/api/user-reminderview) |
+| [PerformReminderAction](/exchange/client-developer/web-service-reference/performreminderaction-operation) | [Dismiss reminder](/graph/api/event-dismissreminder)<br/>[Snooze reminder](/graph/api/event-snoozereminder) |
+|CreateSharingPermission,GetSharingPermission | [Calendar owner: Get sharing or delegation information and permissions](outlook-share-or-delegate-calendar.md#calendar-owner-get-sharing-or-delegation-information-and-permissions)|
+|UpdateSharingPermission | [Get calendar information about sharees and delegates, and update individual permissions](outlook-share-or-delegate-calendar.md#get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions)|
+|DeleteSharingPermission| [Delete a sharee or delegate of a calendar](outlook-share-or-delegate-calendar.md#delete-a-sharee-or-delegate-of-a-calendar)|
+|GetSharingPermissionInfo | [Calendar owner: Get properties of a shared or delegated calendar](outlook-share-or-delegate-calendar.md#get-properties-of-a-shared-or-delegated-calendar)|
+
+### Invitations
+| EWS API                                                                                                   | Microsoft Graph API |
+|-----------------------------------------------------------------------------------------------------------|-----|
+|ActivateSharingInvitation | [Share or delegate a calendar in Outlook](/graph/outlook-share-or-delegate-calendar)|
+|GetSharingInvitation | [Sharee: Get a shared calendar or its events directly from calendar owner's mailbox](outlook-get-shared-events-calendars.md#sharee-get-a-shared-calendar-or-its-events-directly-from-calendar-owners-mailbox)|
+|DeleteSharingInvitation | [Calendar owner: Update permissions for an existing sharee or delegate on a calendar](outlook-share-or-delegate-calendar.md#calendar-owner-update-permissions-for-an-existing-sharee-or-delegate-on-a-calendar)|
+|CreateSharingInvitation | [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md#step-2-adele-creates-and-sends-an-invitation-on-alex-behalf)|
+
+### Shared Information
+| EWS API                                                                                                   | Microsoft Graph API |
+|-----------------------------------------------------------------------------------------------------------|-----|
+| GetCalendarSharedInformation,GetConsumerCalendarSharedInformation | [List calendars](/graph/api/user-list-calendars) |
+## Groups APIs
+
+| EWS API                                                                                               | Microsoft Graph API |
+|-------------------------------------------------------------------------------------------------------|-----|
+| GetUserUnifiedGroups | [List memberof](/graph/api/user-list-memberof) |
+| GetUnifiedGroupsSettings | [groupSetting](/graph/api/resources/groupsetting) |
+| GetUnifiedGroupDetails | [Get group](/graph/api/group-get) |
+| GetUnifiedGroupMembers | [List members](/graph/api/group-list-members) |
+| GetUnifiedGroupUnseenCount | [Get group](/graph/api/group-get) |
+| SetUnifiedGroupMembershipState | [Add/remove member/owner](/graph/api/resources/group) |
+| FindUnifiedGroups | [List groups](/graph/api/group-list) |
+| SetUnifiedGroupUserSubscribeState | [Subscribe/unsubscribeByMail](/graph/api/group-subscribebymail) |
+| UpdateUnifiedGroup | [Update group](/graph/api/group-update) |
+| CreateUnifiedGroup | [Create group](/graph/api/group-post-groups) |
+| RemoveUnifiedGroup | [Delete group](/graph/api/group-delete) |
+| SetUnifiedGroupFavoriteState | [Group addFavorite](/graph/api/group-addfavorite) |
+| JoinPrivateUnifiedGroup | [Subscribe/unsubscribeByMail](/graph/api/group-subscribebymail) |
+| GetDlMembersForUnifiedGroup | [List group members](/graph/api/group-list-members) |

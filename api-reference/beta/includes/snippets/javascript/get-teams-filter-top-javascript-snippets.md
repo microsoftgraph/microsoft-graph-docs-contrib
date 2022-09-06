@@ -1,0 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+let teams = await client.api('/teams')
+	.version('beta')
+	.filter('startswith(displayName, \'A\')')
+	.top(2)
+	.get();
+
+```

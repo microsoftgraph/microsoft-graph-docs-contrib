@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: IdentitySet
+title: identitySet resource type
 ms.localizationpriority: medium
-description: "The IdentitySet resource is a keyed collection of identity resources."
-ms.prod: ""
+description: "Represents a keyed collection of identity resources."
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# IdentitySet resource type
+# identitySet resource type
 
 Namespace: microsoft.graph
 
-The **IdentitySet** resource is a keyed collection of [identity](identity.md) resources.
+The **identitySet** resource is a keyed collection of [identity](identity.md) resources.
 It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
 
 ## JSON representation
@@ -40,7 +39,7 @@ Here is a JSON representation of the resource.
 
 ## Remarks 
 
-See [DriveItem](driveitem.md) for usage of **IdentitySet** resources.
+See [driveItem](driveitem.md) for usage of **identitySet** resources.
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -11,6 +11,165 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### bookingsAvailabilityStatus values
+|Member|
+|:---|
+|available|
+|busy|
+|slotsAvailable|
+|outOfOffice|
+|unknownFutureValue|
+
+### signInFrequencyAuthenticationType values
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### signInFrequencyInterval values
+
+|Member|
+|:---|
+|timeBased|
+|everyTime|
+
+### crossTenantAccessPolicyTargetConfigurationAccessType values
+
+|Member|
+|:---|
+|allowed|
+|blocked|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### federatedIdpMfaBehavior values
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
+#### promptLoginBehavior values
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|disabled|
+|unknownFutureValue|
+
+### expirationPatternType values 
+
+|Member|
+|:---|
+|notSpecified|
+|noExpiration|
+|afterDateTime|
+|afterDuration|
+
+### recurrencePatternType values 
+
+|Member|
+|:---|
+|daily|
+|weekly|
+|absoluteMonthly|
+|relativeMonthly|
+|absoluteYearly|
+|relativeYearly|
+
+### roleAssignmentScheduleFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleAssignmentScheduleInstanceFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleAssignmentScheduleRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### roleEligibilityScheduleFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleEligibilityScheduleInstanceFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleEligibilityScheduleRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### unifiedRoleManagementPolicyRuleTargetOperations values 
+
+|Member|
+|:---|
+|all|
+|activate|
+|deactivate|
+|assign|
+|update|
+|remove|
+|extend|
+|renew|
+|unknownFutureValue|
+
+### unifiedRoleScheduleRequestActions values 
+
+|Member|
+|:---|
+|adminAssign|
+|adminUpdate|
+|adminRemove|
+|selfActivate|
+|selfDeactivate|
+|adminExtend|
+|adminRenew|
+|selfExtend|
+|selfRenew|
+|unknownFutureValue|
+
+### approvalFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
 ### accessReviewExpirationBehavior values
 
 |Member|
@@ -154,6 +313,13 @@ Namespace: microsoft.graph
 |proposed|
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
+### accessReviewStageFilterByCurrentUserOptions values 
 
 |Member|
 |:---|
@@ -931,6 +1097,15 @@ Namespace: microsoft.graph
 | radio
 
 
+### plannerContainerType values
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+|roster|
+
+
 ### plannerPreviewType values
 
 | Member
@@ -1451,13 +1626,6 @@ Possible values for user account types (group membership), per Windows definitio
 | AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`. |
 | AllowOverrideWithJustification | 4 |  User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.|
 
-### channelMembershipType values
-
-| Member             | Value |Description|
-| :----------------- | :---- |:-----------|
-| standard           | 0     |Channel inherits the list of members of the parent team.|
-| private            | 1     |Channel can have members that are a subset of all the members on the parent team.|
-| unknownFutureValue | 2     |      |
 ### wellknownListName values
 | Member
 |:----------------------
@@ -1745,6 +1913,7 @@ Possible values for user account types (group membership), per Windows definitio
 |skypeUser|
 |phoneUser|
 |unknownFutureValue|
+|emailUser|
 
 ### postType values 
 
@@ -1961,4 +2130,21 @@ Possible values for user account types (group membership), per Windows definitio
 |notReviewed|
 |dontKnow|
 |notNotified|
+|unknownFutureValue|
+
+### authenticationProtocol values 
+
+|Member|
+|:---|
+|wsFed|
+|saml|
+
+### longRunningOperationStatus values
+
+| Member|
+|:-----------------|
+|notStarted|
+|running|
+|succeeded|
+|failed|
 |unknownFutureValue|

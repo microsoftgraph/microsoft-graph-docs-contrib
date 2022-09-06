@@ -3,7 +3,7 @@ title: "sectionLinks resource type"
 description: "Links for opening a OneNote section."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: notes
 author: "jewan-microsoft"
 ---
 

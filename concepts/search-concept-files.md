@@ -1,14 +1,14 @@
 ---
-title: "Use the Microsoft Search API in Microsoft Graph to search files"
-description: "You can use the Microsoft Search API to search files stored in OneDrive or SharePoint."
+title: "Use the Microsoft Search API to search OneDrive and SharePoint content"
+description: "Use the Microsoft Search API in Microsoft Graph to search content stored in OneDrive or SharePoint: files, folders, lists, list items, or sites."
 author: "nmoreau"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to search content in OneDrive and SharePoint
+# Use the Microsoft Search API to search OneDrive and SharePoint content
 
-Use the Microsoft Search API to search content stored in OneDrive or SharePoint: files, folders, lists, list items, or sites.
+Use the Microsoft Search API in Microsoft Graph to search content stored in OneDrive or SharePoint: files, folders, lists, list items, or sites.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 

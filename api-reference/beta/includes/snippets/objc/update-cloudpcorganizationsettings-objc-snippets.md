@@ -14,6 +14,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphCloudPcOrganizationSettings *cloudPcOrganizationSettings = [[MSGraphCloudPcOrganizationSettings alloc] init];
 [cloudPcOrganizationSettings setUserAccountType: [MSGraphCloudPcUserAccountType standardUser]];
 [cloudPcOrganizationSettings setOsVersion: [MSGraphCloudPcOperatingSystem windows11]];
+MSGraphCloudPcWindowsSettings *windowsSettings = [[MSGraphCloudPcWindowsSettings alloc] init];
+[windowsSettings setLanguage:@"en-US"];
+[cloudPcOrganizationSettings setWindowsSettings:windowsSettings];
 
 NSError *error;
 NSData *cloudPcOrganizationSettingsData = [cloudPcOrganizationSettings getSerializedDataWithError:&error];
