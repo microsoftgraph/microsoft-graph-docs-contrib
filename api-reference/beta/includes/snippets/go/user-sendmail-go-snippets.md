@@ -44,7 +44,7 @@ ccRecipients := []graphmodels.Recipientable {
 }
 message.SetCcRecipients(ccRecipients)
 requestBody.SetMessage(message)
-saveToSentItems := "false"
+saveToSentItems := false
 requestBody.SetSaveToSentItems(&saveToSentItems) 
 
 graphClient.Me().SendMail().Post(requestBody)

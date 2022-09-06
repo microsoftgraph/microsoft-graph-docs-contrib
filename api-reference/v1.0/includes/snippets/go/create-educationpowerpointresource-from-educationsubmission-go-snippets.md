@@ -9,8 +9,6 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewEducationSubmissionResource()
 resource := graphmodels.NewEducationResource()
-"@odata.type" := "#microsoft.graph.educationPowerPointResource"
-resource.Set"@odata.type"(&"@odata.type") 
 displayName := "state diagram.pptx"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{

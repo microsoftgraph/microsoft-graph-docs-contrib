@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroup -Property "id,assignedLicenses" -Filter "assignedLicenses/any()"  -OutFile $outFileId
+Get-MgGroup -Property "id,assignedLicenses" -Filter "assignedLicenses/any()" 
 
 ```

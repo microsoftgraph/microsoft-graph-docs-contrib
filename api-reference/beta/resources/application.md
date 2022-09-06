@@ -108,6 +108,7 @@ This resource supports:
 | passwordCredentials | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
 | publicClient | [publicClientApplication](publicclientapplication.md) | Specifies settings for installed clients such as desktop or mobile devices. |
 | publisherDomain | String | The verified publisher domain for the application. Read-only. Supports `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
+| requestSignatureVerification | [requestSignatureVerification](requestsignatureverification.md)| Specifies whether this application requires Azure AD to verify the signed authentication requests.|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection| Specifies the resources that the application needs to access. This property also specifies the set of delegated permissions and application roles that it needs for each of those resources. This configuration of access to the required resources drives the consent experience. No more than 50 resource services (APIs) can be configured. Beginning mid-October 2021, the total number of required permissions must not exceed 400. Not nullable. <br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 | samlMetadataUrl | String | The URL where the service exposes SAML metadata for federation. This property is valid only for single-tenant applications. Nullable. |
 | serviceManagementReference | String | References application or service contact information from a Service or Asset Management database. Nullable. |
@@ -183,7 +184,8 @@ The following is a JSON representation of the resource.
   "parentalControlSettings": {"@odata.type": "microsoft.graph.parentalControlSettings"},
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
-  "publisherDomain": "String",
+  "publisherDomain": "String",  
+  "requestSignatureVerification": {"@odata.type": "microsoft.graph.requestSignatureVerification"},
   "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
   "serviceManagementReference": "String",
   "signInAudience": "String",

@@ -88,6 +88,9 @@ for instance has a `Free trial` link underneath the `Buy` button.
 You can get a free Microsoft 365 E5 developer sandbox subscription with 25 user licenses 
 through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
+> [!NOTE] 
+> The Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference) must be enabled before it can be licensed. Licenses can be managed in the [Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) or the [Microsoft 365 admin center](https://admin.microsoft.com). You can also assign licenses to a group account by using [PowerShell and Microsoft Graph](/azure/active-directory/enterprise-users/licensing-ps-examples).
+
 ## Licenses, payment and seeded capacity
 
 Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is added up and compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;apps won't run out of seeded capacity if another app runs out.

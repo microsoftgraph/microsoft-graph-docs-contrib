@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Users.Functions
 
-Get-MgUserDelta -OutFile $outFileId
+Get-MgUserDelta
 
 ```

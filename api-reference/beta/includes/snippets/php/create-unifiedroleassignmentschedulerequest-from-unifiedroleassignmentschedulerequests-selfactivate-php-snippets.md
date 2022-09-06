@@ -26,7 +26,7 @@ $scheduleInfo->setStartDateTime(new DateTime('2021-08-17T17:40:00.000Z'));
 $scheduleInfoExpiration = new ExpirationPattern();
 $scheduleInfoExpiration->setType(new ExpirationPatternType('afterduration'));
 
-$scheduleInfoExpiration->setDuration('PT5H');
+$scheduleInfoExpiration->setDuration(new \DateInterval('PT5H'));
 
 
 $scheduleInfo->setExpiration($scheduleInfoExpiration);

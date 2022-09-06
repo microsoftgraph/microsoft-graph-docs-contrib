@@ -1111,6 +1111,48 @@
       "CreatedDateTime": "2022-06-27T19:40:43.984Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fa3bc46d-ca03-4d78-86a2-66c3f311941a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupPeerOutlierRecommendationInsightSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupPeerOutlierRecommendationInsightSettings](https://docs.microsoft.com/en-us/graph/api/resources/groupPeerOutlierRecommendationInsightSettings?view=graph-rest-beta) resource type. Use this resource to configure decision recommendations in Azure AD access reviews that are based on the access that a user's peers have.",
+          "Target": "groupPeerOutlierRecommendationInsightSettings"
+        },
+        {
+          "Id": "fa3bc46d-ca03-4d78-86a2-66c3f311941a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "membershipOutlierInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [membershipOutlierInsight](https://docs.microsoft.com/en-us/graph/api/resources/membershipOutlierInsight?view=graph-rest-beta) resource type.",
+          "Target": "membershipOutlierInsight"
+        },
+        {
+          "Id": "fa3bc46d-ca03-4d78-86a2-66c3f311941a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "outlierMemberType",
+          "ChangeType": "Addition",
+          "Description": "Added the **outlierMemberType** enumeration type.",
+          "Target": "membershipOutlierInsight"
+        },
+        {
+          "Id": "fa3bc46d-ca03-4d78-86a2-66c3f311941a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "outlierContainerType",
+          "ChangeType": "Addition",
+          "Description": "Added the **outlierContainerType** enumeration type.",
+          "Target": "outlierContainerType"
+        }
+      ],
+      "Id": "fa3bc46d-ca03-4d78-86a2-66c3f311941a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-29T00:00:00.984Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     }
   ]
 }

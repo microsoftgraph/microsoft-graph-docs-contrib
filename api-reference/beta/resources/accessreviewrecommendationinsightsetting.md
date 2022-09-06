@@ -17,6 +17,7 @@ Namespace: microsoft.graph
 
 The **accessReviewRecommendationInsightSetting** allows you to configure insights for an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). This complex type is the abstract type for the following derived types:
 + [userLastSignInRecommendationInsightSetting](userlastsignInrecommendationinsightsetting.md)
++ [groupPeerOutlierRecommendationInsightSettings](grouppeeroutlierrecommendationinsightsettings.md)
 
 
 ## Relationships

@@ -24,6 +24,9 @@ Windows Update Notification Display Options
 |defaultNotifications|1|Use the default Windows Update notifications.|
 |restartWarningsOnly|2|Turn off all notifications, excluding restart warnings.|
 |disableAllNotifications|3|Turn off all notifications, including restart warnings.|
+|unknownFutureValue|4|Evolvable enum member|
+
+
 
 
 
