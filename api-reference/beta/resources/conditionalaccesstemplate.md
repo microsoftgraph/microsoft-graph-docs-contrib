@@ -22,10 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List conditionalAccessTemplates](../api/conditionalaccessroot-list-templates.md)|[conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) collection|Get a list of the [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) objects and their properties.|
-|[Create conditionalAccessTemplate](../api/conditionalaccessroot-post-templates.md)|[conditionalAccessTemplate](../resources/conditionalaccesstemplate.md)|Create a new [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) object.|
 |[Get conditionalAccessTemplate](../api/conditionalaccesstemplate-get.md)|[conditionalAccessTemplate](../resources/conditionalaccesstemplate.md)|Read the properties and relationships of a [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) object.|
-|[Update conditionalAccessTemplate](../api/conditionalaccesstemplate-update.md)|[conditionalAccessTemplate](../resources/conditionalaccesstemplate.md)|Update the properties of a [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) object.|
-|[Delete conditionalAccessTemplate](../api/conditionalaccessroot-delete-templates.md)|None|Deletes a [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|
