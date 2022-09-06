@@ -15,12 +15,12 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
 1. On the sidebar navigation, select **Create a resource**.
 
 1. Find the **Azure Synapse Analytics** resource type and use the following values to create it, then select **Create**.
-    1. **Subscription:** select your Azure subscription
-    1. **Resource group:** GraphDataConnect
-    1. **Region:** [pick an Azure region in the same region as your Microsoft 365 region](/graph/data-connect-datasets#regions)
-    1. **Workspace name:** m365tostorage
-    1. **Account name:** synapsedatalstorage
-    1. **File system name:** flsynapse
+    - **Subscription:** select your Azure subscription
+    - **Resource group:** GraphDataConnect
+    - **Region:** [pick an Azure region in the same region as your Microsoft 365 region](/graph/data-connect-datasets#regions)
+    - **Workspace name:** m365tostorage
+    - **Account name:** synapsedatalstorage
+    - **File system name:** flsynapse
 
         ![Screenshot shows create](../concepts/images/data-connect-synapse-create.png)
 
@@ -92,26 +92,26 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
             ![Screenshot for importing schema](../concepts/images/data-connect-synapse-import-schema.png)
 
     1. Select the **Sink** tab.
-        - Select the **New** button, select **Azure Blob Storage**, and then select the **Continue** button.
+        1. Select the **New** button, select **Azure Blob Storage**, and then select the **Continue** button.
 
             ![Screenshot covers sink tabs](../concepts/images/data-connect-synapse-sink.png)
 
             ![Screenshot covers integration service](../concepts/images/data-connect-synapse-integration-service.png)
 
-        - Select **Binary** as the format for the data and then select the **Continue** button.
-        - Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it does not exist already.
+        1. Select **Binary** as the format for the data and then select the **Continue** button.
+        1. Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it does not exist already.
 
             ![Screenshot covers M365 properties](../concepts/images/data-connect-synapse-set-properties.png)
 
-    1. Click **Select** under **Linked service** and then click **+New**.
-    1. Set the following values in the dialog, then select **Create**.
-        - **Authentication type:** Service Principal
-        - **Azure subscription:** Select all
-        - **Storage account name:** mgdcm365datastore. This is the storage account created earlier in this exercise.
-        - **Service principal ID:** enter the ID of the Azure AD application you previously created
-        - **Service principal key:** enter the hashed key of the Azure AD application you previously created
+        1. Click **Select** under **Linked service** and then click **+New**.
+        1. Set the following values in the dialog, then select **Create**.
+            - **Authentication type:** Service Principal
+            - **Azure subscription:** Select all
+            - **Storage account name:** mgdcm365datastore. This is the storage account created earlier in this exercise.
+            - **Service principal ID:** enter the ID of the Azure AD application you previously created
+            - **Service principal key:** enter the hashed key of the Azure AD application you previously created
 
-            ![Screenshot covers new linked service](../concepts/images/data-connect-synapse-new-linked-service.png)
+                ![Screenshot covers new linked service](../concepts/images/data-connect-synapse-new-linked-service.png)
 
     1. Next to the **File path** field, select **Browse**.
 
