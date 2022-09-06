@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Customize people insights privacy in Microsoft Graph (preview)
 
-People insights represent connections of people who are [relevant to or working with](people-example.md#including-a-person-as-relevant-or-working-with) one another within the same organization, based on public relationships between the people. These insights can be displayed in Delve and the profile card, and returned by the [people API](/graph/api/user-list-people).
+People insights represent connections of people who are [relevant to or working with](people-insights-overview.md#including-a-person-as-relevant-or-working-with) one another within the same organization, based on public relationships between the people. These insights can be displayed in Delve and the profile card, and returned by the [people API](/graph/api/user-list-people).
 
 
 ## Customize people insights for an organization
