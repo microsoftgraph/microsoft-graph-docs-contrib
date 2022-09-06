@@ -14,7 +14,7 @@ $requestsSearchRequest1 = new SearchRequest();
 $additionalData = [
 'entityTypes' => ['externalItem', ],
 'contentSources' => ['/external/connections/connectionfriendlyname', ],
-'query' => $requestsSearchRequest1 = new ();
+'query' => $requestsSearchRequest1 = new Query();
 $requestsSearchRequest1->setQueryString('contoso product');
 
 

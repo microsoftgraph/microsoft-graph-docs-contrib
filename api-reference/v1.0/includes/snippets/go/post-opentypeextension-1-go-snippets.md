@@ -32,8 +32,6 @@ requestBody.SetToRecipients(toRecipients)
 
 
 extension := graphmodels.NewExtension()
-"@odata.type" := "microsoft.graph.openTypeExtension"
-extension.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"extensionName" : "Com.Contoso.Referral", 
 	"companyName" : "Wingtip Toys", 

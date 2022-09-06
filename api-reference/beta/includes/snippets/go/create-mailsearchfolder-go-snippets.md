@@ -8,14 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewMailFolder()
-"@odata.type" := "microsoft.graph.mailSearchFolder"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "Weekly digests"
 requestBody.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
 	includeNestedFolders := true
 requestBody.SetIncludeNestedFolders(&includeNestedFolders) 
-	sourceFolderIds := []String {
+	sourceFolderIds := []string {
 		"AQMkADYAAAIBDAAAAA==",
 
 	}

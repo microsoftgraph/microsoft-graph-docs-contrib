@@ -13,10 +13,10 @@ $requestBody = new RedirectPostRequestBody();
 $targetsInvitationParticipantInfo1 = new InvitationParticipantInfo();
 $additionalData = [
 '@odata.type' => '#microsoft.graph.invitationParticipantInfo', 
-'identity' => $targetsInvitationParticipantInfo1 = new ();
+'identity' => $targetsInvitationParticipantInfo1 = new Identity();
 $		targetsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.identitySet');
 
-$application = new ();
+$application = new Application();
 $		application->set@odatatype('#microsoft.graph.identity');
 
 $		application->setDisplayName('test bot 2');

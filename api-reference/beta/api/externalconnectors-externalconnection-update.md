@@ -66,7 +66,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_connection",
-  "@odata.type": "microsoft.graph.externalConnectors.externalConnection"
+  "sampleKeys": ["contosohr"]
 }-->
 
 ```http

@@ -2104,15 +2104,6 @@ Possible values for user account types (group membership), per Windows definitio
 |high|
 |urgent|
 
-### channelMembershipType values
-
-| Member             |
-| :----------------- |
-| standard           |
-| private            |
-| unknownFutureValue |
-| shared             |
-
 ### stagedFeatureName values
 
 | Member                    | Description                   |
@@ -3120,6 +3111,15 @@ Possible values for user account types (group membership), per Windows definitio
 |terminationRequested|
 |unknownFutureValue|
 
+### featureTargetType values 
+
+|Member|
+|:---|
+|group|
+|administrativeUnit|
+|role|
+|unknownFutureValue|
+
 ### longRunningOperationStatus values 
 
 |Member|
@@ -3182,6 +3182,13 @@ Possible values for user account types (group membership), per Windows definitio
 |administrator|
 |unknownFutureValue|
 
+### weakAlgorithms values 
+
+|Member|
+|:---|
+|rsaSha1|
+|unknownFutureValue|
+
 ### tenantAllowBlockListAction values 
 
 |Member|
@@ -3198,4 +3205,18 @@ Possible values for user account types (group membership), per Windows definitio
 |fileHash|
 |sender|
 |recipient|
+|unknownFutureValue|
+
+### outlierMemberType values 
+
+|Member|
+|:---|
+|user|
+|unknownFutureValue|
+
+### outlierContainerType values 
+
+|Member|
+|:---|
+|group|
 |unknownFutureValue|

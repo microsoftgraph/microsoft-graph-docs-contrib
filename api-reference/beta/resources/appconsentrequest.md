@@ -1,6 +1,6 @@
 ---
 title: "appConsentRequest resource type"
-description: "A request that represents a collection of userConsentRequest objects for a specific application."
+description: "Represents the request that a user creates when they request the tenant admin for consent to access an app or to grant permissions to an app."
 author: "psignoret"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of [userConsentRequest](../resources/userconsentrequest.md) objects for a specific application.
+Represents the request that a user creates when they request the tenant admin for consent to access an app or to grant permissions to an app. The details include the app that the user wants access to be granted to on their behalf and the permissions that the user is requesting.
+
+The user can create a consent request when an app or a permission requires admin authorization and only when the [admin consent workflow](adminconsentrequestpolicy.md) is enabled.
 
 ## Methods
 |Method|Return type|Description|
@@ -34,7 +36,7 @@ A collection of [userConsentRequest](../resources/userconsentrequest.md) objects
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userConsentRequests|[userConsentRequest](../resources/userconsentrequest.md) collection|A list of pending user consent requests.|
+|userConsentRequests|[userConsentRequest](../resources/userconsentrequest.md) collection|A list of pending user consent requests. Supports `$filter` (`eq`).|
 
 ## JSON representation
 The following is a JSON representation of the resource.

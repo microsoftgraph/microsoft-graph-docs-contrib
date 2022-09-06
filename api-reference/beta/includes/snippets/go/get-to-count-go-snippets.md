@@ -10,10 +10,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestSearch := "\"displayName:wa\" OR \"displayName:ad\""
+requestCount := true
+
 requestParameters := &graphconfig.UsersRequestBuilderGetQueryParameters{
-	Search: "\"displayName:wa\" OR \"displayName:ad\"",
+	Search: &requestSearch,
 	Orderby: [] string {"displayName"},
-	Count: true,
+	Count: &requestCount,
 }
 configuration := &graphconfig.UsersRequestBuilderGetRequestConfiguration{
 	Headers: headers,

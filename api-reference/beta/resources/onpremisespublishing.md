@@ -39,6 +39,7 @@ For a tutorial about configuring Application Proxy, see [Automate the configurat
 |isStateSessionEnabled|Boolean| Indicates whether validation of the state parameter when the client uses the OAuth 2.0 authorization code grant flow is enabled. This setting allows admins to specify whether they want to enable CSRF protection for their apps. |
 |isTranslateHostHeaderEnabled|Boolean| Indicates if the application should translate urls in the reponse headers. Keep this value as `true` unless your application required the original host header in the authentication request. Default value is `true`.|
 |isTranslateLinksInBodyEnabled|Boolean| Indicates if the application should translate urls in the application body. Keep this value as `false` unless you have hardcoded HTML links to other on-premises applications and don't use custom domains. For more information, see [Link translation with Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-hard-coded-link-translation). Default value is `false`.|
+|onPremisesApplicationSegments | [onPremisesApplicationSegment](onpremisesapplicationsegment.md) collection| Represents the application segment collection for an on-premises wildcard application.  |
 |singleSignOnSettings|[onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md)| Represents the single sign-on configuration for the on-premises application. |
 |verifiedCustomDomainCertificatesMetadata|[verifiedCustomDomainCertificatesMetadata](verifiedcustomdomaincertificatesmetadata.md)| Details of the certificate associated with the application when a custom domain is in use. `null` when using the default domain. Read-only.|
 |verifiedCustomDomainKeyCredential|[keyCredential](keycredential.md)| The associated key credential for the custom domain used. |
@@ -72,6 +73,7 @@ Here is a JSON representation of the resource.
   "isStateSessionEnabled": true,
   "isTranslateHostHeaderEnabled": true,
   "isTranslateLinksInBodyEnabled": true,
+  "onPremisesApplicationSegments":[{"@odata.type":"microsoft.graph.onPremisesApplicationSegment"}],
   "singleSignOnSettings": {"@odata.type": "microsoft.graph.onPremisesPublishingSingleSignOn"},
   "verifiedCustomDomainCertificatesMetadata": {"@odata.type": "microsoft.graph.verifiedCustomDomainCertificatesMetadata"},
   "verifiedCustomDomainKeyCredential": {"@odata.type": "microsoft.graph.keyCredential"},

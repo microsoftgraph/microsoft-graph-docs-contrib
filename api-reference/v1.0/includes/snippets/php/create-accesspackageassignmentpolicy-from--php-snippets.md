@@ -16,7 +16,7 @@ $requestBody->setDescription('policy for assignment');
 
 $requestBody->setAllowedTargetScope(new AllowedTargetScope('notspecified'));
 
-$requestBody->setSpecificAllowedTargets(]);
+$requestBody->setSpecificAllowedTargets([]);
 
 $expiration = new ExpirationPattern();
 $Expiration->setEndDateTime(null);
@@ -42,7 +42,7 @@ $requestorSettings->setEnableOnBehalfRequestorsToUpdateAccess(false);
 
 $requestorSettings->setEnableOnBehalfRequestorsToRemoveAccess(false);
 
-$requestorSettings->setOnBehalfRequestors(]);
+$requestorSettings->setOnBehalfRequestors([]);
 
 
 $requestBody->setRequestorSettings($requestorSettings);
@@ -51,7 +51,7 @@ $requestApprovalSettings->setIsApprovalRequiredForAdd(false);
 
 $requestApprovalSettings->setIsApprovalRequiredForUpdate(false);
 
-$requestApprovalSettings->setStages(]);
+$requestApprovalSettings->setStages([]);
 
 
 $requestBody->setRequestApprovalSettings($requestApprovalSettings);
