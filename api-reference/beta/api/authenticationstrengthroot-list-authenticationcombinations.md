@@ -77,29 +77,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/authenticationStrengths/authenticationCombinations",
-  "value": [
-    "windowsHelloForBusiness",
-    "fido2",
-    "x509CertificateMultiFactor",
-    "deviceBasedPush",
-    "temporaryAccessPassOneTime",
-    "temporaryAccessPassMultiUse",
-    "password,microsoftAuthenticatorPush",
-    "password,softwareOath",
-    "password,sms",
-    "password,voice",
-    "federatedMultiFactor",
-    "microsoftAuthenticatorPush,federatedSingleFactor",
-    "softwareOath,federatedSingleFactor",
-    "hardwareOath,federatedSingleFactor",
-    "sms,federatedSingleFactor",
-    "voice,federatedSingleFactor",
-    "x509CertificateSingleFactor",
-    "sms",
-    "password",
-    "federatedSingleFactor",
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/authenticationStrengths/authenticationCombinations",
+    "value": [
+        "windowsHelloForBusiness",
+        "fido2",
+        "x509CertificateMultiFactor",
+        "deviceBasedPush",
+        "temporaryAccessPassOneTime",
+        "temporaryAccessPassMultiUse",
+        "password,microsoftAuthenticatorPush",
+        "password,softwareOath",
+        "password,hardwareOath",
+        "password,sms",
+        "password,voice",
+        "federatedMultiFactor",
+        "microsoftAuthenticatorPush,federatedSingleFactor",
+        "softwareOath,federatedSingleFactor",
+        "hardwareOath,federatedSingleFactor",
+        "sms,federatedSingleFactor",
+        "voice,federatedSingleFactor",
+        "x509CertificateSingleFactor",
+        "sms",
+        "password",
+        "federatedSingleFactor",
+        "email"
+    ]
 }
 ```
 
