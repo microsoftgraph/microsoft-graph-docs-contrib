@@ -26,30 +26,27 @@ The insights API uses advanced analytics and machine learning to provide the mos
 
 ![People and insights API return relevant people and documents for a user](images/social-intel-concept-overview-data-update2020-1.png)
 
-
 ## Why integrate with people data?
 
-The people API returns data of a single entity, [person](/graph/api/resources/person), which includes typical data of an individual in today's business world. What makes this **person** data especially useful is its _relevance_ with respect to a Microsoft Graph user. Relevance is noted in the results returned which are ordered from most relevant to least relevant. 
-You can use the following Microsoft Graph APIs to search for people inside an organization
- 
-* [/search](search-concept-people.md) 
-* [/people](/graph/api/resources/person) (maintenance mode)
+The people API returns data of a single entity, [person](/graph/api/resources/person), which includes typical data of an individual in today's business world. What makes this **person** data especially useful is its _relevance_ with respect to a Microsoft Graph user. Relevance is noted in the results returned which are ordered from most relevant to least relevant. You can use the following Microsoft Graph APIs to search for people inside an organization.
+
+- [/search](search-concept-person.md)
+- [/people](/graph/api/resources/person) (maintenance mode)
 
 ### Why you should integrate to /search
 
-We highly encourage developers to consider using the `/search` endpoint when building their products because all future investments will only be available in the `/search` endpoint; the `/people` endpoint will be in maintenance mode. The following are additional reasons why you should integrate to the `/search` endpoint:
+We highly encourage developers to consider using the `/search` endpoint when building their products because all future investments will only be available in the `/search` endpoint; the `/people` endpoint is in maintenance mode. The following are additional reasons why you should integrate to the `/search` endpoint.
 
-* All future investments in people search will be made available via `/search`, for example, natural language search like "John the accountant in Nairobi"
-* Attribute search matching on additional attributes other than name and email
-* Better relevance results from `/search` give better results due to the use of artificial intelligence, better data models, and sophisticated spell correction
-* Lower **cost of goods** when using `/search`, but specifically lower latency.
+- All future investments in people search will be made available via `/search`, for example, natural language search like "John the accountant in Nairobi"
+- Attribute search matching on additional attributes other than name and email
+- Better relevance results from `/search` give better results due to the use of artificial intelligence, better data models, and sophisticated spell correction
+- Lower **cost of goods** when using `/search`, but specifically lower latency
 
-
-Below are a number of ways _relevance_ data is used.
+The following sections describe ways how _relevance_ data is used.
 
 ### Browse people by relevance
 
-You can browse people who are related to the signed-in user or to some other user in the signed-in user's organization, provided you have got the appropriate [authorization](people-example.md#authorization). You get a collection of **person** objects that are ordered by relevance. You can further [customize](people-example.md#browse-people) the collection of **person** objects that is returned in the response by specifying the query parameters `top`, `skip`, `orderby`, `select`, and `filter`.
+You can browse people who are related to the signed-in user or to some other user in the signed-in user's organization, provided you have got the appropriate [authorization](people-insights-overview.md#authorization). You get a collection of **person** objects that are ordered by relevance. You can further [customize](people-insights-overview.md#browse-people) the collection of **person** objects that is returned in the response by specifying the query parameters `top`, `skip`, `orderby`, `select`, and `filter`.
 
 ### Fuzzy searches based on people criteria
 
@@ -120,9 +117,9 @@ Looking for the API reference for these services?
 
 ## Next steps
 
-* Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, expand **People** or **Insights** in the column on the left, and try their sample queries.
-* Find more about the [people API](people-example.md).
-* See how to [customize the profile card](add-properties-profilecard.md).
-* Find out more about [item insights](item-insights-overview.md), [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
-* Find more about the [analytics API](/graph/api/resources/social-overview#help-users-balance-work-and-life).
-* Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).
+- Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, expand **People** or **Insights** in the column on the left, and try their sample queries.
+- Find more about the [people API](people-insights-overview.md).
+- See how to [customize the profile card](add-properties-profilecard.md).
+- Find out more about [item insights](item-insights-overview.md), [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
+- Find more about the [analytics API](/graph/api/resources/social-overview#help-users-balance-work-and-life).
+- Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).
