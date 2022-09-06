@@ -100,7 +100,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "post_administrativeunits_members_ref"
 } -->
-``` http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 Content-type: application/json
 
@@ -108,6 +108,7 @@ Content-type: application/json
   "@odata.id":"https://graph.microsoft.com/v1.0/groups/{id}"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-ref-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
