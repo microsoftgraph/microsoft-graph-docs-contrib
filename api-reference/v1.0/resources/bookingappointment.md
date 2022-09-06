@@ -13,23 +13,26 @@ Namespace: microsoft.graph
  
 Represents a customer appointment for a [bookingService](bookingservice.md), performed by a set of staff members, provided by a Microsoft Bookings business.
 
+> [!NOTE]
+> If you create a custom app using application permissions, you must follow the [Business rules validation](/graph/bookingsbusiness-business-rules).
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List appointments](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingBusiness](../resources/bookingbusiness.md). |
-|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingBusiness](../resources/bookingbusiness.md). |
+|[List appointments](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingbusiness](bookingbusiness.md). |
+|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingbusiness](bookingbusiness.md). |
 |[Get bookingAppointment](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Read the properties and relationships of **bookingAppointment** object.|
 |[Update](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)	|Update a **bookingAppointment** object. |
 |[Delete](../api/bookingappointment-delete.md) | None |Delete a **bookingAppointment** object. |
 |[Cancel](../api/bookingappointment-cancel.md)|None| Cancel a **bookingAppointment** object.|
 
 ## Properties
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
-|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
+|customers|[bookingCustomerInformation](bookingcustomerinformation.md) collection|It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
@@ -37,7 +40,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |id|String| The ID of the **bookingAppointment**. Read-only.|
 |isLocationOnline|Boolean|If `true`, indicates that the appointment will be held online. Default value is `false`.|
 |joinWebUrl|String|The URL of the online meeting for the appointment.|
-|maximumAttendeesCount|Int32|The maximum number of customers allowed in an appointment.|
+|maximumAttendeesCount|Int32|The maximum number of customers allowed in an appointment. If **maximumAttendeesCount** of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the [Create bookingCustomer](../api/bookingbusiness-post-customers.md) operation. |
 |optOutOfCustomerEmail|Boolean|If `true` indicates that the [bookingCustomer](bookingcustomer.md) for this appointment does not wish to receive a confirmation for this appointment.|
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
@@ -54,6 +57,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
@@ -112,5 +116,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

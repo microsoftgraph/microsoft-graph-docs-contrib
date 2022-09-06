@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var agreement = new Agreement
 {
-	DisplayName = "displayName-value",
+	DisplayName = "All Contoso volunteers - Terms of use",
 	IsViewingBeforeAcceptanceRequired = true
 };
 

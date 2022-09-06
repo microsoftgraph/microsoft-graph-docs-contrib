@@ -1,19 +1,19 @@
 ---
-title: Use external groups to manage permissions to Microsoft Graph connector data sources
-description: Learn about external groups to manage permissions for external items.
+title: Use external groups to manage permissions to Microsoft Graph connectors data sources
+description: Learn how to use external groups to manage permissions to view external items in a Microsoft Graph connection and connect to data sources outside Azure AD groups.
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
 ms.localizationpriority: medium
 ---
 
-# Use external groups to manage permissions to Microsoft Graph connector data sources
+# Use external groups to manage permissions to Microsoft Graph connectors data sources
 
-[External groups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) allow you to manage permissions to view [external items](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) in a Microsoft Graph connection, and connect to data sources outside Azure Active Directory (Azure AD) groups.
+[External groups](/graph/api/resources/externalconnectors-externalgroup) let you manage permissions to view [external items](/graph/api/resources/externalconnectors-externalitem) in a Microsoft Graph connection and connect to data sources outside Azure Active Directory (Azure AD) groups.
 
-For data sources that rely on Azure AD users and groups, you set permissions on external items by associating an access control list (ACL) with an Azure AD user and group ID, when [creating](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true) or updating the external items.
+For data sources that rely on Azure AD users and groups, you set permissions on external items by associating an access control list (ACL) with an Azure AD user and group ID when [creating](/graph/api/externalconnectors-externalconnection-put-items) or updating the external items.
 
-However, for data sources that use non-Azure AD groups, or group-like constructs, like Salesforce Profiles, Dynamics Business Units, SharePoint groups, ServiceNow local groups, or Confluence local groups, we recommend that you use *external groups*.
+However, for data sources that use non-Azure AD groups or group-like constructs such as Salesforce Profiles, Dynamics Business Units, SharePoint groups, ServiceNow local groups, or Confluence local groups, we recommend that you use *external groups*.
 
 ## Common external group scenarios
 
@@ -24,30 +24,31 @@ Microsoft Dynamics 365 allows customers to structure their CRMs with busin
 The following image shows the structure of the business units and teams.
 
 <!---Using html to adjust the size of the image --->
-<br><p align="center"><img src="images/connectors-images/bu-teams-D365.png" alt="Diagram of an structure in Dynamics 365. A business unit has a team and a manager under it. This manager has other users." style="width:400px;"/></p>
+<br><p align="center"><img src="images/connectors-images/bu-teams-D365.png" alt="Diagram of a structure in Dynamics 365. A business unit has a team and a manager under it. This manager has other users." width="400px;"/></p>
 
 Salesforce uses profiles, roles, and permission sets for authorization. These are specific to Salesforce, and the membership information is not available in Azure AD.
 
 The following image shows the structure of the membership information in Salesforce.
 
 <!---Using html to adjust the size of the image --->
-<br><p align="center"><img src="images/connectors-images/roles-salesforce.png" alt="Diagram of an structure of roles in Salesforce. The role of vicepresident of sales is at the top level of the hierarchy, it has three subordinates, namely, the head of sales operations, the head of sales, and the head of account managament. The head of sales at the same time has a sales operations manager as subordinate. And the head of sales has a sales development manager as subordinate." style="width:400px;"/></p>
+<br><p align="center"><img src="images/connectors-images/roles-salesforce.png" alt="Diagram of a structure of roles in Salesforce. The role of vice president of sales is at the top level of the hierarchy and has three subordinates, namely, the head of sales operations, the head of sales, and the head of account management. The head of sales operations has a sales operations manager as a subordinate. The head of sales has a sales development manager as a subordinate." width="500px;"/></p>
 
 ## Using external groups in your connection
 
-To use external groups in your connections:
+To use external groups in your connection, follow these steps:
 
-1. For each non-Azure AD group, create an external group in Microsoft Graph using the [groups API](/en-us/graph/api/resources/group?view=graph-rest-beta&preserve-view=true).
+1. For each non-Azure AD group, use the groups API to create an external group in Microsoft Graph.
 2. Use the external group when defining the ACL for your external items as necessary.
 3. Keep the membership of the external groups up to date and in sync.
 
-### Create external groups
+### Create an external group
 
-External groups belong to a connection. To create external groups in your connections:
-* Use the groups API in Microsoft Graph, as shown in the following example.
+External groups belong to a connection. To create external groups in your connections, follow these steps:
+
+1. Use the [groups API](/graph/api/resources/group) in Microsoft Graph, as shown in the following example.
 
     > [!NOTE]
-    > The [displayName](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) and **description** are optional fields.
+    > The [displayName](/graph/api/resources/externalconnectors-externalgroup#properties) and **description** are optional fields.
 
     ```http
     POST /external/connections/{connectionId}/groups
@@ -59,47 +60,47 @@ External groups belong to a connection. To create external groups in your connec
     } 
     ```
 
-* Provide either an identifier or a name in the [ID](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) field. Use this value to call the external group in subsequent requests.
+2. Provide either an identifier or a name in the ID field. Use this value to call the external group in subsequent requests.
 
     > [!NOTE]
-    > The ID field allows you to use URL and filename-safe Base64 character sets, and it has a limit of 128 characters.
+    > The ID field allows you to use URL and filename-safe Base64 character sets. It has a limit of 128 characters.
 
-An external group can contain one or more of the following:
-* An Azure AD user.
-* An Azure AD group.
-* Another external group, including nested external groups.
+    An external group can contain one or more of the following:
+    * An Azure AD user.
+    * An Azure AD group.
+    * Another external group, including nested external groups.
 
-After you create the group, you can add members to the group, as shown in the following examples.
+3. After you create the group, you can add members to the group, as shown in the following examples.
+    
+    ```http
+    POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
+    
+    {
+      "id": "contosoSupport",
+      "type": "group",
+      "identitySource": "external"
+    }
+    ```
+    ```http
+    POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
+    
+    {
+      "id": "25f143de-be82-4afb-8a57-e032b9315752",
+      "type": "user",
+      "identitySource": "azureActiveDirectory"
+    }
+    ```
+    ```http
+    POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
+    
+    {
+      "id": "99a3b3d6-71ee-4d21-b08b-4b6f22e3ae4b",
+      "type": "group",
+      "identitySource": "azureActiveDirectory"
+    }
+    ```
 
-```http
-POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
-
-{
-  "id": "contosoSupport",
-  "type": "group",
-  "identitySource": "external"
-}
-```
-```http
-POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
-
-{
-  "id": "25f143de-be82-4afb-8a57-e032b9315752",
-  "type": "user",
-  "identitySource": "azureActiveDirectory"
-}
-```
-```http
-POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
-
-{
-  "id": "99a3b3d6-71ee-4d21-b08b-4b6f22e3ae4b",
-  "type": "group",
-  "identitySource": "azureActiveDirectory"
-}
-```
-
-### Use external groups in ACL
+### Use external groups in the ACL
 
 You can use external groups when defining [ACLs](connecting-external-content-manage-items.md#access-control-list) for external items, as shown in the following example. In addition to Azure AD users and groups, an external item can have external groups in its access control entries.
 
@@ -150,7 +151,10 @@ Keep the membership of your external group up to date in Microsoft Graph. When m
 
 ### Manage external groups and membership
 
-You can use the groups API to manage your external groups and group membership. For details, see [externalGroup](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) and [externalGroupMember](/graph/api/resources/externalgroupmember?view=graph-rest-beta&preserve-view=true).
+You can use the groups API to manage your external groups and group membership. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup) and [externalGroupMember](/graph/api/resources/externalconnectors-externalgroupmember).
 
-## See also
-To learn more about the Microsoft Graph connectors API, see [Working with the connectors API](connecting-external-content-connectors-api-overview.md).
+## Next steps
+
+- [Learn about Microsoft Graph connectors API limits](connecting-external-content-api-limits.md)
+- [Work with the Microsoft Graph connectors API](connecting-external-content-connectors-api-overview.md)
+- [Use Postman with the Microsoft Graph connectors API](connecting-external-content-connectors-api-postman.md)

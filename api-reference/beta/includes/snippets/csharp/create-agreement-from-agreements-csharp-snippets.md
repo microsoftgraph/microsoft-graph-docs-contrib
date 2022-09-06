@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var agreement = new Agreement
 {
-	DisplayName = "MSGraph Sample",
+	DisplayName = "Contoso ToU for guest users",
 	IsViewingBeforeAcceptanceRequired = true,
 	Files = new AgreementFilesCollectionPage()
 	{
@@ -19,7 +19,7 @@ var agreement = new Agreement
 			IsDefault = true,
 			FileData = new AgreementFileData
 			{
-				Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=")
+				Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=//truncated-binary")
 			}
 		}
 	}

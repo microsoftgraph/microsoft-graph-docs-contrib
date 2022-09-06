@@ -2,7 +2,7 @@
 title: "Use the Microsoft Graph Toolkit with Electron"
 description: "Get started using the Microsoft Graph Toolkit in an Electron application."
 ms.localizationpriority: medium
-author: amrutha95
+author: sebastienlevert
 ---
 
 # Use the Microsoft Graph Toolkit with Electron

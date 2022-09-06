@@ -1,10 +1,10 @@
 ---
-title: Configure Application Proxy using Microsoft Graph APIs
-description: Configure Application Proxy using the Microsoft Graph APIs to provide remote access and single sign-on to on-premises applications.
-author: davidmu1
-ms.topic: conceptual
+title: "Configure Application Proxy using the Microsoft Graph API"
+description: "Provide remote access and single sign-on to on-premises applications by configuring Application Proxy using the Microsoft Graph API."
+author: "FaithOmbongi"
+ms.topic: "conceptual"
 ms.localizationpriority: medium
-ms.prod: applications
+ms.prod: "applications"
 ---
 
 # Configure Application Proxy using the Microsoft Graph API
@@ -13,9 +13,9 @@ In this article, you'll learn how to configure Azure Active Directory (Azure AD)
 
 ## Prerequisites
 
-- This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) for Application Proxy so that connectors can communicate with Azure AD services.
-- This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. Complete the following steps to set permissions in Microsoft Graph Explorer:
-    1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) for Application Proxy so that connectors can communicate with Azure AD services.
+- This tutorial assumes that you are using Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. Complete the following steps to set permissions in Graph Explorer:
+    1. Start [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
     2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
     3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
 
@@ -88,11 +88,40 @@ Content-type: application/json
 
 ## Step 2: Configure Application Proxy
 
-Use the **id** that you recorded for the application to start the configuration of Application Proxy. Update the following properties:
+Insert the **id** that you recorded for the application into the URL to start the configuration of Application Proxy. In this example, you're using an app with the internal URL: `https://contosoiwaapp.com`. You also use the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. Update the following properties in the request body:
 
-- **onPremisesPublishing** - In this example, you're using an app with the internal URL: `https://contosoiwaapp.com`. You also use the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. 
-- **redirectUri**, **identifierUri**, and **homepageUrl** - Set to the same external URL configured in the **onPremisesPublishing** property.
-- **implicitGrantSettings** - Set to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
+- **identifierUri**, **redirectUri**, and **homepageUrl** - Set each to the same external URL.
+
+#### Request
+
+```http
+PATCH https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
+Content-type: application/json
+
+{
+    "identifierUris": [
+        "https://contosoiwaapp-contoso.msappproxy.net"
+    ],
+    "web": {
+        "redirectUris": [
+            "https://contosoiwaapp-contoso.msappproxy.net"
+        ],
+        "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
+    }
+}
+```
+
+#### Response
+
+```http
+HTTP/1.1 204 No content
+```
+
+Update the following properties in the request body:
+
+- **internalUrl** - Set to the internal URL.
+- **externalUrl** - Set to the external URL.
+- All other values can be configured as needed. For details, see [Add an on-premises app to Azure AD](https://docs.microsoft.com/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
 #### Request
 
@@ -101,20 +130,18 @@ PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd
 Content-type: application/json
 
 {
-  "onPremisesPublishing": {
-    "externalAuthenticationType": "aadPreAuthentication",
-    "internalUrl": "https://contosoiwaapp.com",
-    "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-  }
-  "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-  "web": {
-    "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-    "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net",
-    "implicitGrantSettings": {
-      "enableIdTokenIssuance": true,
-      "enableAccessTokenIssuance": false
+    "onPremisesPublishing": {
+        "externalAuthenticationType": "aadPreAuthentication",
+        "internalUrl": "https://contosoiwaapp.com",
+        "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net",
+        "isHttpOnlyCookieEnabled": true,
+        "isOnPremPublishingEnabled": true,
+        "isPersistentCookieEnabled": true,
+        "isSecureCookieEnabled": true,
+        "isStateSessionEnabled": true,
+        "isTranslateHostHeaderEnabled": true,
+        "isTranslateLinksInBodyEnabled": true
     }
-  }
 }
 ```
 
@@ -430,13 +457,13 @@ No Content - 204
 ## See also
 
 - [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy)
-- [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [applicationTemplate: instantiate](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
-- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)
-- [connector](/graph/api/resources/connector?view=graph-rest-beta)
-- [connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)
-- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)
-- [on-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
-- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [application](/graph/api/resources/application)
+- [applicationTemplate: instantiate](/graph/api/applicationtemplate-instantiate)
+- [appRoleAssignment](/graph/api/resources/approleassignment)
+- [connector](/graph/api/resources/connector)
+- [connectorGroup](/graph/api/resources/connectorGroup)
+- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings)
+- [on-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root)
+- [servicePrincipal](/graph/api/resources/serviceprincipal)
+- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon)
+- [user](/graph/api/resources/user)

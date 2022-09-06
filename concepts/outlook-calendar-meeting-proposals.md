@@ -1,16 +1,17 @@
 ---
-title: "Propose new meeting times in Outlook"
-description: "In Outlook, a meeting organizer can allow invitees to propose alternative meeting times."
-author: "harini84"
+title: "Propose new meeting times in Outlook calendar"
+description: "Learn how to use the allowNewTimeProposals and proposedNewTime properties to set up meetings that allow invitees to propose alternative meeting times."
+author: "iamgirishck"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
-# Propose new meeting times in Outlook
+# Propose new meeting times in Outlook calendar
 
 In Outlook, a meeting organizer can allow invitees to propose alternative meeting times, if they cannot meet at the original set date/time and accept tentatively or decline. The organizer can accept a proposal by adjusting the meeting time as appropriate.
 
 ## Example: attendee responds tentative and suggests a different date/time
+
 The following is an example where Alex invites Adele to lunch, Adele tentatively accepts and proposes an alternative date and time, and Alex accepts the proposal by adjusting the meeting accordingly:
 
 1. As the organizer, Alex sends a meeting request to Adele. He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event) to `true` to let Adele suggest another time if she needs to.

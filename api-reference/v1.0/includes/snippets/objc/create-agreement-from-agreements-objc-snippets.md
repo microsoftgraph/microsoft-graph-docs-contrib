@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAgreement *agreement = [[MSGraphAgreement alloc] init];
-[agreement setDisplayName:@"MSGraph Sample"];
+[agreement setDisplayName:@"Contoso ToU for guest users"];
 [agreement setIsViewingBeforeAcceptanceRequired: true];
 NSMutableArray *filesList = [[NSMutableArray alloc] init];
 MSGraphAgreementFileLocalization *files = [[MSGraphAgreementFileLocalization alloc] init];
@@ -20,7 +20,7 @@ MSGraphAgreementFileLocalization *files = [[MSGraphAgreementFileLocalization all
 [files setLanguage:@"en"];
 [files setIsDefault: true];
 MSGraphAgreementFileData *fileData = [[MSGraphAgreementFileData alloc] init];
-[fileData setData:@"SGVsbG8gd29ybGQ="];
+[fileData setData:@"SGVsbG8gd29ybGQ=//truncated-binary"];
 [files setFileData:fileData];
 [filesList addObject: files];
 [agreement setFiles:filesList];

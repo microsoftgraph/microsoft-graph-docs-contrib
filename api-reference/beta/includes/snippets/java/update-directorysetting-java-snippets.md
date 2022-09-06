@@ -9,12 +9,12 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 DirectorySetting directorySetting = new DirectorySetting();
 LinkedList<SettingValue> valuesList = new LinkedList<SettingValue>();
 SettingValue values = new SettingValue();
-values.name = "name-value";
-values.value = "value-value";
+values.name = "CustomBlockedWordsList";
+values.value = "Contoso";
 valuesList.add(values);
 directorySetting.values = valuesList;
 
-graphClient.settings("{id}")
+graphClient.settings("3c105fc3-2254-4861-9e2d-d59e2126f3ef")
 	.buildRequest()
 	.patch(directorySetting);
 
