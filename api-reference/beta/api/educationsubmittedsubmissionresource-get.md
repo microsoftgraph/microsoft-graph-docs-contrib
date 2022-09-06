@@ -1,6 +1,6 @@
 ---
 title: "Get educationSubmittedSubmissionResource"
-description: "Get a submitted resource."
+description: "Retrieve a submitted resource."
 author: "mmast-msft"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a submitted resource. This will be available to a teacher or an application with application permissions after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources.
+Retrieve a [submitted resource](../resources/educationsubmissionresource.md). 
+
+This will be available to a teacher or an application with application permissions after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
