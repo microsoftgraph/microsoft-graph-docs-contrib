@@ -22,7 +22,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List sitePages](../api/sitepage-list.md)|[sitePage](../resources/sitepage.md) collection|Get a list of the [sitePage](../resources/sitepage.md) objects and their properties.|
-|[Create sitePage](../api/sitepage-post.md)|[sitePage](../resources/sitepage.md)|Create a new [sitePage](../resources/sitepage.md) object.|
+|[Create sitePage](../api/sitepage-create.md)|[sitePage](../resources/sitepage.md)|Create a new [sitePage](../resources/sitepage.md) object.|
 |[Get sitePage](../api/sitepage-get.md)|[sitePage](../resources/sitepage.md)|Read the properties and relationships of a [sitePage](../resources/sitepage.md) object.|
 |[Update sitePage](../api/sitepage-update.md)|[sitePage](../resources/sitepage.md)|Update the properties of a [sitePage](../resources/sitepage.md) object.|
 |[Delete sitePage](../api/sitepage-delete.md)|None|Deletes a [sitePage](../resources/sitepage.md) object.|
@@ -55,7 +55,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |canvasLayout|[canvasLayout](../resources/canvaslayout.md)|Indicates the layout of the content in a given SharePoint page, including horizontal sections and vertical section |
-|createdByUser|[user](../resources/user.md)|Identity of the creator of this item. Read-only.         |Inherited from [baseItem](../resources/baseitem.md)|
+|createdByUser|[user](../resources/user.md)|Identity of the creator of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md)|
 |lastModifiedByUser|[user](../resources/user.md)| Identity of the last modifier of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md)|
 |webParts|[webPart](../resources/webpart.md) collection| Collection of webparts on the SharePoint page |
 
