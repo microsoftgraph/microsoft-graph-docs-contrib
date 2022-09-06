@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [webPartPositi
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_webpart"
+  "name": "getposition_webpart"
 }
 -->
 ``` http
@@ -80,10 +80,10 @@ Content-Type: application/json
 
 
 {
-  "columnId": 1,
-  "controlId": 1,
-  "horizontalSectionId": 1,
-  "isInVerticalSection": false
+  "columnId": 1.0,
+  "horizontalSectionId": 1.0,
+  "isInVerticalSection": false,
+  "webpartIndex": 1.0
 }
 ```
 
