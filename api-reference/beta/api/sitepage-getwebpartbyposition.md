@@ -7,12 +7,12 @@ ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-# List webparts
+# Get webparts by position
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of [WebPart](../resources/webpart.md) by providing [position](../resources/position.md) information.
+Get a collection of [WebPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information.
 
 
 ## Permissions

@@ -21,23 +21,23 @@ Inherits from [baseItem](../resources/baseitem.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sitePages](../api/site-list-pages.md)|[sitePage](../resources/sitepage.md) collection|Get a list of the [sitePage](../resources/sitepage.md) objects and their properties.|
-|[Create sitePage](../api/site-post-pages.md)|[sitePage](../resources/sitepage.md)|Create a new [sitePage](../resources/sitepage.md) object.|
+|[List sitePages](../api/sitepage-list.md)|[sitePage](../resources/sitepage.md) collection|Get a list of the [sitePage](../resources/sitepage.md) objects and their properties.|
+|[Create sitePage](../api/sitepage-post.md)|[sitePage](../resources/sitepage.md)|Create a new [sitePage](../resources/sitepage.md) object.|
 |[Get sitePage](../api/sitepage-get.md)|[sitePage](../resources/sitepage.md)|Read the properties and relationships of a [sitePage](../resources/sitepage.md) object.|
 |[Update sitePage](../api/sitepage-update.md)|[sitePage](../resources/sitepage.md)|Update the properties of a [sitePage](../resources/sitepage.md) object.|
-|[Delete sitePage](../api/site-delete-pages.md)|None|Deletes a [sitePage](../resources/sitepage.md) object.|
+|[Delete sitePage](../api/sitepage-delete.md)|None|Deletes a [sitePage](../resources/sitepage.md) object.|
 |[publish](../api/sitepage-publish.md)|None|Publish a [sitePage](../resources/sitepage.md) object|
-|[Get a collection of WebParts by position information](../api/sitepage-getWebPartsByPosition.md)|[webpart](../resources/webpart.md) collection|et a collection of [WebPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information.|
+|[Get a collection of WebParts by position information](../api/sitepage-getwebpartsbyposition.md)|[webpart](../resources/webpart.md) collection|et a collection of [WebPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/intune-identityset.md)| Inherited from [baseItem](../resources/baseitem.md).|
+|createdBy|[identitySet](../resources/identityset.md)| Inherited from [baseItem](../resources/baseitem.md).|
 |createdDateTime|DateTimeOffset| Inherited from [baseItem](../resources/baseitem.md).|
 |description|String|Inherited from [baseItem](../resources/baseitem.md).|
 |eTag|String|Inherited from [baseItem](../resources/baseitem.md).|
 |id|String|Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Inherited from [baseItem](../resources/baseitem.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Inherited from [baseItem](../resources/baseitem.md).|
 |lastModifiedDateTime|DateTimeOffset|Inherited from [baseItem](../resources/baseitem.md).|
 |name|String|Inherited from [baseItem](../resources/baseitem.md).|
 |pageLayout|pageLayoutType|The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`.|
@@ -51,6 +51,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 |webUrl|String|Inherited from [baseItem](../resources/baseitem.md).|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |canvasLayout|[canvasLayout](../resources/canvaslayout.md)|Indicates the layout of the content in a given SharePoint page, including horizontal sections and vertical section |

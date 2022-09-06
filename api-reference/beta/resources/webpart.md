@@ -23,9 +23,9 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List webParts](../api/horizontalsectioncolumn-list-webparts.md)|[webPart](../resources/webpart.md) collection|Get a list of the [webPart](../resources/webpart.md) objects and their properties.|
+|[List webParts](../api/webpart-list.md)|[webPart](../resources/webpart.md) collection|Get a list of the [webPart](../resources/webpart.md) objects and their properties.|
 |[Get webPart](../api/webpart-get.md)|[webPart](../resources/webpart.md)|Read the properties and relationships of a [webPart](../resources/webpart.md) object.|
-|[Get webPart position](../api/webpart-getPosition.md)] | [webPartPosition](../resources/webpartposition.md)|Get the [webPartPosition](../resources/position.md) information of a [WebPart](../resources/webpart.md).|
+|[Get webPart position](../api/webpart-getposition.md) | [webPartPosition](../resources/webpartposition.md)|Get the [webPartPosition](../resources/position.md) information of a [WebPart](../resources/webpart.md).|
 
 
 ## Properties

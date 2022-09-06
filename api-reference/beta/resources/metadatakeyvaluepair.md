@@ -19,7 +19,7 @@ Represents a key-value(object) pair of the meta data
 |Property|Type|Description|
 |:---|:---|:---|
 |key|String|Key of the meta data.|
-|value|[Json](../resources/intune-json.md)|Value of the meta data. Should be an object.|
+|value|[Json](../resources/json.md)|Value of the meta data. Should be an object.|
 
 ## Relationships
 None.

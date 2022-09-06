@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List horizontalSections](../api/canvaslayout-list-horizontalsections.md)|[horizontalSection](../resources/horizontalsection.md) collection|Get a list of the [horizontalSection](../resources/horizontalsection.md) objects and their properties.|
+|[List horizontalSections](../api/horizontalsection-list.md)|[horizontalSection](../resources/horizontalsection.md) collection|Get a list of the [horizontalSection](../resources/horizontalsection.md) objects and their properties.|
 |[Get horizontalSection](../api/horizontalsection-get.md)|[horizontalSection](../resources/horizontalsection.md)|Read the properties and relationships of a [horizontalSection](../resources/horizontalsection.md) object.|
 
 ## Properties

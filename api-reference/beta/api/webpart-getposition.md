@@ -1,5 +1,5 @@
 ---
-title: "Get position"
+title: "Get webpart position"
 description: "Get position information of a WebPart"
 author: sangle7
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-# Get webPart
+# Get webpart position
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [position](../resources/position.md) information of a [WebPart](../resources/webpart.md).
+Get the [webPartPosition](../resources/webpartposition.md) information of a [WebPart](../resources/webpart.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
