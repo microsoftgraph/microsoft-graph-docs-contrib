@@ -94,7 +94,7 @@ Mailbox results consist of:
 * People in your manager's org chart
 * Public contacts of the above people
 
-While directory searches in the global addressing list in Azure Active Directory. Please note:
+Relevant aspects for the use case when a directory source searches in the global addressing list in Azure Active Directory:
 
 * Not applicable for consumer users
 * People who are not in the caller's global addressing list will not be returned
@@ -105,14 +105,14 @@ While directory searches in the global addressing list in Azure Active Directory
 By default, 25 results or less will be returned based on the search query matches. You can get more results if you specify the size.
 
 ```json
-  "Size":   
+  "Size":25   
 ```
 
 ## Specify the minimum index for paging
 Default is `0`. The first result is the most relevant.
 
 ```json
-  "From":   
+  "From":0   
 ```
 
 ## Select the fields to return 
