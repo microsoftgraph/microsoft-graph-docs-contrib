@@ -100,7 +100,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "post_administrativeunits_members_ref"
 } -->
-```msgraph-interactive
+``` http
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 Content-type: application/json
 
@@ -155,7 +155,6 @@ The following example creates a new group in the administrative unit.
 
 #### Request
 The following is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
