@@ -19,7 +19,7 @@ You can use the following APIs to search for people inside an organization.
 * /people
 
 > [!NOTE]
-> We recommended that users call the `/search` endpoint instead of the `/people` endpoint. Going forward, all future investments will only be available in the `/search` endpoint; the `/people` endpoint will be in maintenance mode.
+> We recommended that users call the `/search` endpoint instead of the `/people` endpoint. Going forward, all future investments will only be available in the `/search` endpoint; the `/people` endpoint is in maintenance mode.
 
 ## Returned people properties
 The people API returns the following set of properties.

@@ -42,10 +42,10 @@ We highly encourage developers to consider using the `/search` endpoint when bui
 * All future investments in people search will be made available via `/search`, for example, natural language search like "John the accountant in Nairobi"
 * Attribute search matching on additional attributes other than name and email
 * Better relevance results from `/search` give better results due to the use of artificial intelligence, better data models, and sophisticated spell correction
-* Lower **COGs** when using `/search`, but specifically lower latency.
+* Lower **cost of goods** when using `/search`, but specifically lower latency.
 
 
-There are 3 main types of application of this _relevance_ data.
+Below are a number of ways _relevance_ data is used.
 
 ### Browse people by relevance
 
