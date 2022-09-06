@@ -21,7 +21,7 @@ Represents the position information of the given WebPart to the current page.
 | columnId            | Double  | Indicate the identifier of the column where the WebPart located in.                             |
 | horizontalSectionId | Double  | Indicate the horizontal section where the WebPart located in. |
 | isInVerticalSection | boolean | Indicate whether the WebPart located in the vertical section.       |
-| webPartIndex         | Double  | Index of the current WebPart.Represents the order of webParts in this column or section |
+| webPartIndex         | Double  | Index of the current WebPart.Represents the order of webPart in this column or section |
 
 ## Relationships
 None.

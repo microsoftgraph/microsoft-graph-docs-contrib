@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource represents a page in the SitePages [list][].
-It contains the title, layout, and a collection of [webPart][]s.
+This resource represents a page in the SitePages [list](../resources/list.md).
+It contains the title, layout, and a collection of [webPart](../resources/webpart.md)s.
 
 Inherits from [baseItem](../resources/baseitem.md).
 
@@ -40,7 +40,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Inherited from [baseItem](../resources/baseitem.md).|
 |lastModifiedDateTime|DateTimeOffset|Inherited from [baseItem](../resources/baseitem.md).|
 |name|String|Inherited from [baseItem](../resources/baseitem.md).|
-|pageLayout|pageLayoutType|The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`.|
+|pageLayout|[pageLayoutType](../resources/sitepage.md#pagelayouttype-values)|The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`.|
 |parentReference|[itemReference](../resources/itemreference.md)| Inherited from [baseItem](../resources/baseitem.md).|
 |publishingState|[publicationFacet](../resources/publicationfacet.md)|The publishing status and the MM.mm version of the page. |
 |reactions|[reactionsFacet](../resources/reactionsfacet.md)|Reactions information for the page.|
@@ -49,6 +49,15 @@ Inherits from [baseItem](../resources/baseitem.md).
 |title|String|Title of the page.|
 |titleArea|[titleArea](../resources/titlearea.md)|Title area on the SharePoint page.|
 |webUrl|String|Inherited from [baseItem](../resources/baseitem.md).|
+
+#### pageLayoutType values
+
+| Value                | Description                                                    |
+| -------------------- | -------------------------------------------------------------- |
+| `microsoftReserved`  | The page is a special type, reserved for use by Microsoft only |
+| `article`            | The page is an article page                                    |
+| `home`               | The page is a home page                                        |
+| `unknownFutureValue` | Marker value for future compatibility.                         |
 
 ## Relationships
 

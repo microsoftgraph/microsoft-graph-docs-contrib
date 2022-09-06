@@ -34,8 +34,16 @@ One of the following permissions is required to call this API. To learn more, in
 GET /sites/{siteId}/pages/{sitePageId}/getWebPartsByPosition(horizontalSectionId={horizontalSectionId},columnId={columnId},webPartIndex={webPartIndex},isInVerticalSection={isInVerticalSection})
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+## Function parameters
+
+In the request URL, provide one of the following parameters with a valid value.
+
+| Parameter | Type   | Description                              |
+| :-------- | :----- | :--------------------------------------- |
+| columnId            | Double  | Indicate the identifier of the column where the WebPart located in.                             |
+| horizontalSectionId | Double  | Indicate the horizontal section where the WebPart located in. |
+| isInVerticalSection | boolean | Indicate whether the WebPart located in the vertical section.       |
+| webPartIndex         | Double  | Index of the current WebPart.Represents the order of webPart in this column or section |
 
 ## Request headers
 |Name|Description|

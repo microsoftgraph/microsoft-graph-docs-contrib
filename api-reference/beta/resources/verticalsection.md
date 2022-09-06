@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|emphasis|sectionEmphasisType|Enumeration value that indicates the emphasis of the section background. The possible values are: `none`, `netural`, `soft`, `strong`, `unknownFutureValue`.|
+|emphasis|[sectionEmphasisType](../resources/horizontalsection.md#sectionemphasistype-values)|Enumeration value that indicates the emphasis of the section background. The possible values are: `none`, `netural`, `soft`, `strong`, `unknownFutureValue`.|
 |id|String|Unique identifier of the resource. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
