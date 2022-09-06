@@ -50,53 +50,94 @@ POST /sites/{site-id}/pages
 Content-Type: application/json
 
 {
-    "name": "Events.aspx",
-    "title": "Team Events",
-    "publishingState": {
-        "level": "checkedOut",
-        "versionId": "0.1"
-    },
-    "webParts": [
-        {
-            "type": "rte",
-            "data": {
-                "innerHTML": "<p>Here are the team's upcoming events:</p>"
-            }
-        },
-        {
-            "type": "d1d91016-032f-456d-98a4-721247c305e8",
-            "data": {
-                "title": "Events",
-                "description": "Display upcoming events",
-                "serverProcessedContent": {
-                    "htmlStrings": {},
-                    "searchablePlainTexts": {
-                        "title": ""
-                    },
-                    "imageSources": {},
-                    "links": {
-                        "baseUrl": "https://www.contoso.com/sites/Engineering"
-                    },
-                    "componentDependencies": {
-                        "layoutComponentId": "8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027"
-                    }
-                },
-                "dataVersion": "1.0",
-                "properties": {
-                    "selectedListId": "032e08ab-89b0-4d8f-bc10-73094233615c",
-                    "selectedCategory": "",
-                    "dateRangeOption": 0,
-                    "startDate": "",
-                    "endDate": "",
-                    "isOnSeeAllPage": false,
-                    "layoutId": "FilmStrip",
-                    "dataProviderId": "Event",
-                    "webId": "0764c419-1ecc-4126-ba32-0c25ae0fffe8",
-                    "siteId": "6b4ffc7a-cfc2-4a76-903a-1cc3686dee23"
+  "name": "test.aspx",
+  "title": "test",
+  "pageLayout": "article",
+  "showComments": true,
+  "showRecommendedPages": false,
+  "titleArea": {
+    "enableGradientEffect": true,
+    "image": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+    "layout": "colorBlock",
+    "showAuthor": true,
+    "showPublishedDate": false,
+    "showTextBlockAboveTitle": false,
+    "textAboveTitle": "\n      TEXT ABOVE TITLE\n    ",
+    "textAlignment": "left",
+    "imageSourceType": 2,
+    "title": "sample1"
+  },
+  "canvasLayout": {
+    "horizontalSections": [
+      {
+        "layout": "oneThirdRightColumn",
+        "id": "1",
+        "emphasis": "none",
+        "columns": [
+          {
+            "id": "1",
+            "width": 8,
+            "webparts": [
+              {
+                "id": "6f9230af-2a98-4952-b205-9ede4f9ef548",
+                "innerHTML": "<p><b>Hello!</b></p><p>This is a Text web part in one of&nbsp;<a data-interception=\"off\" data-cke-saved-href=\"https://go.microsoft.com/fwlink/?linkid=2056662&amp;clcid=0x409\" href=\"https://go.microsoft.com/fwlink/?linkid=2056662&amp;clcid=0x409\" target=\"_blank\">two columns in this section</a>.&nbsp;You can click inside this text block when in Edit mode to make changes. Next to this paragraph is a column that contains an image web part. Click the image, and you can use the toolbar to change the image, add a link, crop the image, and more. Learn more about the&nbsp;<a data-interception=\"off\" data-cke-saved-href=\"https://go.microsoft.com/fwlink/?linkid=2056468&amp;clcid=0x409\" href=\"https://go.microsoft.com/fwlink/?linkid=2056468&amp;clcid=0x409\" target=\"_blank\">text web part</a>&nbsp;and the <a data-interception=\"off\" data-cke-saved-href=\"https://go.microsoft.com/fwlink/?linkid=2042231\" href=\"https://go.microsoft.com/fwlink/?linkid=2042231\" target=\"_blank\">image web part</a>.&nbsp;</p><p>When you're done editing this page, you can click Save as draft to save your changes and leave edit mode. Only people with edit permissions on your site will be able to see it. If you are ready to make this page visible to everyone who can view your site, click Publish or Post news. For more information, see&nbsp;<a data-interception=\"off\" data-cke-saved-href=\"https://go.microsoft.com/fwlink/?linkid=2003836&amp;clcid=0x409\" href=\"https://go.microsoft.com/fwlink/?linkid=2003836&amp;clcid=0x409\" target=\"_blank\">What happens when I publish a page? </a>&nbsp;</p>"
+              }
+            ]
+          },
+          {
+            "id": "2",
+            "width": 4,
+            "webparts": [
+              {
+                "id": "73d07dde-3474-4545-badb-f28ba239e0e1",
+                "webPartType": "d1d91016-032f-456d-98a4-721247c305e8",
+                "data": {
+                  "dataVersion": "1.9",
+                  "description": "\n      Show an image on your page\n    ",
+                  "title": "\n      Image\n    ",
+                  "properties": {
+                    "imageSourceType": 2,
+                    "altText": "",
+                    "overlayText": "",
+                    "siteId": "",
+                    "webId": "",
+                    "listId": "",
+                    "uniqueId": "",
+                    "imgWidth": 4288,
+                    "imgHeight": 2848,
+                    "fixAspectRatio": false,
+                    "captionText": "",
+                    "alignment": "Center"
+                  },
+                  "serverProcessedContent": {
+                    "imageSources": [
+                      {
+                        "key": "imageSource",
+                        "value": "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG"
+                      }
+                    ],
+                    "customMetadata": [
+                      {
+                        "key": "imageSource",
+                        "value": {
+                          "siteid": "",
+                          "webid": "",
+                          "listid": "",
+                          "uniqueid": "",
+                          "width": "4288",
+                          "height": "2848"
+                        }
+                      }
+                    ]
+                  }
                 }
-            }
-        }
+              }
+            ]
+          }
+        ]
+      }
     ]
+  }
 }
 ```
 
@@ -134,75 +175,48 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "2",
-    "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
-    "createdDateTime": "2016-12-06T20:04:40Z",
-    "lastModifiedDateTime": "2016-12-06T20:05:09Z",
-    "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",
+    "@odata.type": "microsoft.graph.sitePage",
+    "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
+    "name": "test.aspx",
+    "webUrl": "SitePages/test.aspx",
+    "title": "test",
+    "pageLayout": "article",
+    "showComments": true,
+    "showRecommendedPages": false,
     "createdBy": {
-        "user": {
-            "email": "rahmit",
-            "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal"
-        }
+    "user": {
+        "displayName": "Tenant Admin User",
+        "email": "admin@oidctest.ccsctp.net"
+    }
     },
     "lastModifiedBy": {
+    "user": {
+        "displayName": "Tenant Admin User",
+        "email": "admin@oidctest.ccsctp.net"
+    }
+    },
+    "publishingState": {
+    "level": "checkout",
+    "versionId": "0.1",
+    "checkedOutBy": {
         "user": {
-            "email": "rahmit",
-            "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal"
-        }
-    },
-    "parentReference": {
-        "id": "eb3bfd48-56f8-4c1e-8312-e58588b22e7c"
-    },
-    "contentType": {
-        "id": "0x0101009D1CB255DA76424F860D91F20E6C411800C9E7033636784C4B88A284B1823C45FD",
-        "name": "Site Page"
-    },
-    "description": "",
-    "title": "Team Events",
-    "webParts": [
-        {
-            "type": "rte",
-            "data": {
-                "innerHTML": "<p>Here are the team's upcoming events:</p>"
-            }
-        },
-        {
-            "type": "d1d91016-032f-456d-98a4-721247c305e8",
-            "data": {
-                "title": "Events",
-                "description": "Display upcoming events",
-                "serverProcessedContent": {
-                    "htmlStrings": {},
-                    "searchablePlainTexts": {
-                        "title": ""
-                    },
-                    "imageSources": {},
-                    "links": {
-                        "baseUrl": "https://www.contoso.com/teams/Engineering"
-                    },
-                    "componentDependencies": {
-                        "layoutComponentId": "8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027"
-                    }
-                },
-                "dataVersion": "1.0",
-                "properties": {
-                    "selectedListId": "032e08ab-89b0-4d8f-bc10-73094233615c",
-                    "selectedCategory": "",
-                    "dateRangeOption": 0,
-                    "startDate": "",
-                    "endDate": "",
-                    "isOnSeeAllPage": false,
-                    "layoutId": "FilmStrip",
-                    "dataProviderId": "Event",
-                    "webId": "0764c419-1ecc-4126-ba32-0c25ae0fffe8",
-                    "siteId": "6b4ffc7a-cfc2-4a76-903a-1cc3686dee23"
-                }
+            "displayName": "Tenant Admin User",
+            "email": "admin@oidctest.ccsctp.net"
             }
         }
-    ]
+    },
+    "titleArea": {
+        "enableGradientEffect": true,
+        "image": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+        "layout": "colorBlock",
+        "showAuthor": true,
+        "showPublishedDate": false,
+        "showTextBlockAboveTitle": false,
+        "textAboveTitle": "\n      TEXT ABOVE TITLE\n    ",
+        "textAlignment": "left",
+        "title": "sample4",
+        "imageSourceType": 2
+    }
 }
 ```
 
