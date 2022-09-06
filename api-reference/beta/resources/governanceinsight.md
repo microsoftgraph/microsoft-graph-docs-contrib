@@ -17,7 +17,9 @@ Namespace: microsoft.graph
 
 Represents insights presented to the reviewer for an [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md). Insights are recommendations to reviewers to help them complete access reviews.
 
-This resource is an abstract type for the [userSignInInsight](usersignininsight.md) derived type.
+This complex type is the abstract type for the following derived types:
++ [userSignInInsight](usersignininsight.md) derived type.
++ [membershipOutlierInsight](membershipoutlierinsight.md) derived type.
 
 ## Properties
 | Property    | Type   | Description |

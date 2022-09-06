@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewThreatAssessmentRequest()
-"@odata.type" := "#microsoft.graph.fileAssessmentRequest"
-requestBody.Set"@odata.type"(&"@odata.type") 
 expectedAssessment := graphmodels.BLOCK_THREATEXPECTEDASSESSMENT 
 requestBody.SetExpectedAssessment(&expectedAssessment) 
 category := graphmodels.MALWARE_THREATCATEGORY 

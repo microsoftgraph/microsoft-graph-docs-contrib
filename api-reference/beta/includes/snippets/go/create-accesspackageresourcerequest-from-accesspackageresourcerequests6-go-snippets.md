@@ -37,12 +37,8 @@ accessPackageResourceAttribute.SetIsEditable(&isEditable)
 isPersistedOnAssignmentRemoval := true
 accessPackageResourceAttribute.SetIsPersistedOnAssignmentRemoval(&isPersistedOnAssignmentRemoval) 
 attributeSource := graphmodels.NewAccessPackageResourceAttributeSource()
-"@odata.type" := "#microsoft.graph.accessPackageResourceAttributeQuestion"
-attributeSource.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 question := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessPackageTextInputQuestion"
-question.Set"@odata.type"(&"@odata.type") 
 	isRequired := false
 question.SetIsRequired(&isRequired) 
 sequence := int32(0)
@@ -62,8 +58,6 @@ text.SetDefaultText(&defaultText)
 attributeSource.SetAdditionalData(additionalData)
 accessPackageResourceAttribute.SetAttributeSource(attributeSource)
 attributeDestination := graphmodels.NewAccessPackageResourceAttributeDestination()
-"@odata.type" := "#microsoft.graph.accessPackageUserDirectoryAttributeStore"
-attributeDestination.Set"@odata.type"(&"@odata.type") 
 accessPackageResourceAttribute.SetAttributeDestination(attributeDestination)
 
 attributes := []graphmodels.AccessPackageResourceAttributeable {

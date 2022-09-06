@@ -3,7 +3,7 @@ title: "Create Event"
 description: "Create an event in the user's default calendar or specified calendar."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "outlook"
 ---
 

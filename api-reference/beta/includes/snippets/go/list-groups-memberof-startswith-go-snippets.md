@@ -10,10 +10,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestCount := true
+requestFilter := "startswith(displayName,%20'A')"
+
 requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
-	Count: true,
+	Count: &requestCount,
 	Orderby: [] string {"displayName"},
-	Filter: "startswith(displayName,%20'A')",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
