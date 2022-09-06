@@ -49,18 +49,18 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|A unique identifier for the organizational message|
-|scenario|[organizationalMessageScenario](../resources/intune-partnerintegration-organizationalmessagescenario.md)|Indicates the scenario for the message. Possible values are: `onboarding`, `lifecycle`.|
-|surface|[organizationalMessageSurface](../resources/intune-partnerintegration-organizationalmessagesurface.md)|Indicates the area where content will be displayed to customers. Possible values are: `actionCenter`, `getStarted`, `softLanding`.|
-|status|[organizationalMessageStatus](../resources/intune-partnerintegration-organizationalmessagestatus.md)|Indicates the deployment status of the message. Possible values are: `scheduled`, `active`, `completed`, `cancelled`.|
+|scenario|[organizationalMessageScenario](../resources/intune-partnerintegration-organizationalmessagescenario.md)|Indicates the scenario for the message. Possible values are: `onboarding`, `lifecycle`, `unknownFutureValue`.|
+|surface|[organizationalMessageSurface](../resources/intune-partnerintegration-organizationalmessagesurface.md)|Indicates the area where content will be displayed to customers. Possible values are: `actionCenter`, `getStarted`, `softLanding`, `unknownFutureValue`.|
+|status|[organizationalMessageStatus](../resources/intune-partnerintegration-organizationalmessagestatus.md)|Indicates the deployment status of the message. Possible values are: `scheduled`, `active`, `completed`, `cancelled`, `unknownFutureValue`.|
 |startDateTime|DateTimeOffset|The date and time of when the message will start being displayed to clients|
 |endDateTime|DateTimeOffset|The date and time of when the message will stop being displayed to clients|
 |createdDateTime|DateTimeOffset|The date and time of when the message was created|
 |lastModifiedDateTime|DateTimeOffset|The date and time of when the message was last modified|
 |userEngagementStatistics|[organizationalMessageInsights](../resources/intune-partnerintegration-organizationalmessageinsights.md)|The statistics containing how the message was interacted with by clients. This includes the number of impressions, clicks, and dismisses from targeted clients.|
-|frequency|[organizationalMessageFrequency](../resources/intune-partnerintegration-organizationalmessagefrequency.md)|The frequency at which a client will see the message. Possible values are: `weeklyOnce`, `monthlyOnce`, `monthlyTwice`.|
+|frequency|[organizationalMessageFrequency](../resources/intune-partnerintegration-organizationalmessagefrequency.md)|The frequency at which a client will see the message. Possible values are: `weeklyOnce`, `monthlyOnce`, `monthlyTwice`, `unknownFutureValue`.|
 |targeting|[organizationalMessageTargeting](../resources/intune-partnerintegration-organizationalmessagetargeting.md)|The groups of devices that will receive the message. This also contains a list of excluded groups that will not receive the message regardless of the device being part of an included group|
 |content|[organizationalMessageContent](../resources/intune-partnerintegration-organizationalmessagecontent.md)|The content that will be displayed to clients for the message. This includes the text portion of the message and the displayed logo|
-|theme|[organizationalMessageTheme](../resources/intune-partnerintegration-organizationalmessagetheme.md)|Indicates the theme for the experience. Possible values are: `update`, `training`, `welcomeToWindows`.|
+|theme|[organizationalMessageTheme](../resources/intune-partnerintegration-organizationalmessagetheme.md)|Indicates the theme for the experience. Possible values are: `update`, `training`, `welcomeToWindows`, `explore`, `unknownFutureValue`.|
 |variant|String|Indicates the corresponding variant for the experience|
 
 
@@ -75,7 +75,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/organizationalMessageDetails/{organizationalMessageDetailId}
 Content-type: application/json
-Content-length: 2024
+Content-length: 2049
 
 {
   "@odata.type": "#microsoft.graph.organizationalMessageDetail",
@@ -93,7 +93,7 @@ Content-length: 2024
   "frequency": "monthlyOnce",
   "targeting": {
     "@odata.type": "microsoft.graph.organizationalMessageTargeting",
-    "targetingType": "aadGroup",
+    "targetingType": "unknownFutureValue",
     "includeIds": [
       "Include Ids value"
     ],
@@ -133,7 +133,7 @@ Content-length: 2024
     "logoInfo": {
       "@odata.type": "microsoft.graph.organizationalMessageLogo",
       "logo": "bG9nbw==",
-      "contentType": "png",
+      "contentType": "unknownFutureValue",
       "logoCdnUrl": "https://example.com/logoCdnUrl/"
     }
   },
@@ -147,7 +147,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2196
+Content-Length: 2221
 
 {
   "@odata.type": "#microsoft.graph.organizationalMessageDetail",
@@ -168,7 +168,7 @@ Content-Length: 2196
   "frequency": "monthlyOnce",
   "targeting": {
     "@odata.type": "microsoft.graph.organizationalMessageTargeting",
-    "targetingType": "aadGroup",
+    "targetingType": "unknownFutureValue",
     "includeIds": [
       "Include Ids value"
     ],
@@ -208,7 +208,7 @@ Content-Length: 2196
     "logoInfo": {
       "@odata.type": "microsoft.graph.organizationalMessageLogo",
       "logo": "bG9nbw==",
-      "contentType": "png",
+      "contentType": "unknownFutureValue",
       "logoCdnUrl": "https://example.com/logoCdnUrl/"
     }
   },
@@ -216,6 +216,8 @@ Content-Length: 2196
   "variant": "Variant value"
 }
 ```
+
+
 
 
 
