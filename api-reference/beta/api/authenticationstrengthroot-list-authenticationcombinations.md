@@ -69,6 +69,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "isCollection": true,
   "@odata.type": "microsoft.graph.authenticationMethodModes"
 }
 -->
