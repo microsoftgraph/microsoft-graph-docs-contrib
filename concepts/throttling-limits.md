@@ -35,7 +35,7 @@ The preceding limits apply to the following resources:
 
 - [educationAssignment](/graph/api/resources/educationassignment)
 - [educationSubmission](/graph/api/resources/educationsubmission)
-- [trending](/graph/api/resources/trending)
+- [trending](/graph/api/resources/insights-trending)
 - [educationResource](/graph/api/resources/educationresource)
 
 ## Cloud communication service limits
@@ -237,10 +237,10 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 
 The preceding limits apply to the following resources:
 
-- [people](/graph/api/resources/people)
-- [sharedInsight](/graph/api/resources/sharedinsight)
+- [people](/graph/api/resources/person)
+- [sharedInsight](s/graph/api/resources/insights-shared)
 - [trending](/graph/api/resources/trending)
-- [usedInsight](/graph/api/resources/usedinsight)
+- [usedInsight](/graph/api/resources/insights-used)
 
 ## Intune service limits
 
