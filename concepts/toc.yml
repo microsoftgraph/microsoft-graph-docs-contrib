@@ -95,7 +95,7 @@ items:
         items:
           - name: Data Connect overview
             href: data-connect-concept-overview.md
-            displayName: Microsoft Graph Data Connect, access data, bulk data           
+            displayName: Microsoft Graph Data Connect, access data, bulk data
           - name: Build your first Data Connect application
             href: data-connect-quickstart.yml
             displayName: Microsoft Graph Data Connect
@@ -196,7 +196,7 @@ items:
             displayName: cross device, Project Rome
       - name: Customer booking (preview)
         items:
-          - name: Overview 
+          - name: Overview
             href: booking-concept-overview.md
             displayName: Bookings, Microsoft Bookings, booking, customer booking
           - name: Business rules
@@ -221,7 +221,7 @@ items:
             displayName: Intune
           - name: Cloud PC (preview)
             href: cloudpc-concept-overview.md
-          - name: Device updates (preview)           
+          - name: Device updates (preview)
             items:
               - name: Overview
                 href: windowsupdates-concept-overview.md
@@ -324,7 +324,7 @@ items:
         items:
           - name: Overview
             href: outlook-mail-concept-overview.md
-            displayName: Outlook, Outlook mail, mail, message           
+            displayName: Outlook, Outlook mail, mail, message
           - name: Automate messaging
             href: outlook-create-send-messages.md
           - name: Organize messages
@@ -787,7 +787,7 @@ items:
               href: custom-connector-sdk-testapp.md
             - name: Publish a connector
               href: custom-connector-sdk-publish.md
-            - name: Develop connectors in other languages 
+            - name: Develop connectors in other languages
               href: custom-connector-sdk-other-languages.md
             - name: Best practices
               href: custom-connector-sdk-best-practices.md
@@ -837,6 +837,8 @@ items:
                 href: toolkit/get-started/build-a-microsoft-teams-sso-tab.md
               - name: Build an Electron app
                 href: toolkit/get-started/build-an-electron-app.md
+              - name: Build a productivity hub app
+                href: /graph/toolkit/get-started/building-one-productivity-hub
           - name: Providers
             items:
               - name: Using the providers

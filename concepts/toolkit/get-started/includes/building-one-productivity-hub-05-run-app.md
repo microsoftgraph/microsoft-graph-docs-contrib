@@ -1,3 +1,9 @@
+---
+ms.localizationpriority: medium
+---
+
+<!-- markdownlint-disable MD041 -->
+
 In this step, you will run your sample app in the browser by using Live Server.
 
 1. Select `CTRL + SHIFT + P` to open the panel in Visual Studio Code, type `Preferences` on the panel and select `Preferences: Open Workspace Settings (JSON)` from the options.
@@ -19,4 +25,4 @@ In this step, you will run your sample app in the browser by using Live Server.
 
 1. To make sure that One Productivity Hub app works properly, add some calendar events, to-do tasks, and file folders in your Microsoft 365 Developer tenant.
 
-    ![Screenshot showing the One Productivity Hub sample app](../images/mgt-one-productivity-hub/one-productivity-hub-overview.gif)
+    ![Screenshot showing the One Productivity Hub sample app](../../../images/mgt-one-productivity-hub/one-productivity-hub-overview.gif)
