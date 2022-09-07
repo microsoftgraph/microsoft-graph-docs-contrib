@@ -37,7 +37,7 @@ Use the following steps to publish a connection for your custom connector:
 
     - **connectorId** should be a GUID. This field is the same as **ConnectorUniqueId** in the Connector Info Service implementation file or the GUID that you define.
     - **AuthTypes** must be a non-empty array with one or more of the following types: `Anonymous`, `Basic`, `Windows`, `OAuth`.
-    - Defining crawl types in addition to full and periodic full crawl is optional depending on the implementation and data source support.
+    - **additionalCrawlsSupported** is optional; you can define crawl types in addition to full and periodic full crawl, depending on the implementation and data source support..
 
     >[!Note]
     > The manifest file is generated automatically in the output directory of your project if you're using the C# project template. You can edit/update the manifest file as required.
