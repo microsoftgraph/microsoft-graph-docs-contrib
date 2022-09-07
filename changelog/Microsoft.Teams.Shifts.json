@@ -79,8 +79,8 @@
           "Cloud":"prd",
           "Version":"beta",
           "CreatedDateTime":"2021-06-04T01:15:33.264Z",
-          "WorkloadArea":"Teamwork",
-          "SubArea":"Shifts"
+          "WorkloadArea":"Teamwork and communications",
+          "SubArea":"Shift management"
        },
        {
         "ChangeList":[
@@ -105,8 +105,8 @@
         "Cloud":"prd",
         "Version":"beta",
         "CreatedDateTime":"2021-06-04T01:15:33.264Z",
-        "WorkloadArea":"Teamwork",
-        "SubArea":"Shifts"
+        "WorkloadArea":"Teamwork and communications",
+        "SubArea":"Shift management"
      }
     ]
  }

@@ -119,6 +119,24 @@
     {
       "ChangeList": [
         {
+          "Id": "a59cd9f3-d14b-4fca-b43b-ac2f8f7fc151",
+          "ApiChange": "Property",
+          "ChangedApiName": "employeeLeaveDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the `employeeLeaveDateTime` property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "a59cd9f3-d14b-4fca-b43b-ac2f8f7fc151",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-01T20:23:01.8642728Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6e339b5a-968a-4b2d-bfa0-c851ed3828fc",
           "ApiChange": "Property",
           "ChangedApiName": "squareLogoDark",
@@ -565,6 +583,32 @@
     {
       "ChangeList": [
         {
+          "Id": "4e8e0df9-0c1e-414d-860c-aedc9baa7159",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationInfo](https://docs.microsoft.com/en-us/graph/api/resources/authorizationInfo?view=graph-rest-beta) resource type.",
+          "Target": "authorizationInfo"
+        },
+        {
+          "Id": "4e8e0df9-0c1e-414d-860c-aedc9baa7159",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorizationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorizationInfo** property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. Use this property to bind IDs of smart card certificates to an Azure AD user for identification and authentication to non-Azure AD environments.",
+          "Target": "user"
+        }
+      ],
+      "Id": "4e8e0df9-0c1e-414d-860c-aedc9baa7159",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-06T00:09:26.417154Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "206e1f34-55b3-43fe-85db-1bc7551d9e0f",
           "ApiChange": "Resource",
           "ChangedApiName": "groupWritebackConfiguration",
@@ -780,6 +824,40 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory Management"
     },
+    {
+      "ChangeList": [
+        {
+          "Id": "47bf0a29-19b1-4468-b0ec-bfde1f6593de",
+          "ApiChange": "Resource",
+          "ChangedApiName": "corsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [corsConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/corsConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "corsConfiguration"
+        },
+        {
+          "Id": "47bf0a29-19b1-4468-b0ec-bfde1f6593de",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesApplicationSegment",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesApplicationSegment](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesApplicationSegment?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesApplicationSegment"
+        },
+        {
+          "Id": "47bf0a29-19b1-4468-b0ec-bfde1f6593de",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesApplicationSegments",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesApplicationSegments** property to the [onPremisesPublishing](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishing"
+        }
+      ],
+      "Id": "47bf0a29-19b1-4468-b0ec-bfde1f6593de",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-29T01:05:45.1783348Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+    },    
     {
       "ChangeList": [
         {
@@ -11469,6 +11547,24 @@
       "WorkloadArea": "Users",
       "SubArea": ""
     },  
+    {
+      "ChangeList": [
+        {
+          "Id": "21a624d0-8be3-4d2a-96b7-230b3d8fabeb",
+          "ApiChange": "Property",
+          "ChangedApiName": "securityIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the `securityIdentifier` property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "21a624d0-8be3-4d2a-96b7-230b3d8fabeb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-31T11:56:10.9602717Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {
