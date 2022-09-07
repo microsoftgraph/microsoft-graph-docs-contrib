@@ -88,6 +88,9 @@ for instance has a `Free trial` link underneath the `Buy` button.
 You can get a free Microsoft 365 E5 developer sandbox subscription with 25 user licenses 
 through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
+> [!NOTE] 
+> The Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference) must be enabled before it can be licensed. Licenses can be managed in the [Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) or the [Microsoft 365 admin center](https://admin.microsoft.com). You can also assign licenses to a group account by using [PowerShell and Microsoft Graph](/azure/active-directory/enterprise-users/licensing-ps-examples).
+
 ## Licenses, payment and seeded capacity
 
 Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is added up and compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;apps won't run out of seeded capacity if another app runs out.
@@ -133,7 +136,7 @@ Please note that the organization that owns the app registration is responsible 
 | Do I need to provide an Azure subscription if my application is not calling metered APIs? | Is recommended as most scenarios use metered APIs, see also: [protected APIs](/graph/teams-protected-apis). |
 | What happens if no Azure subscription is provided? | • No payment-related errors if the application is not calling metered APIs. <br> • If no model is being passed, the `evaluation model` value will be used by default. <br> • If calling a metered API passing `model=A`, a Microsoft 365 E5 eligible license and Azure subscription should be provided. <br> • If passing `model=B` when calling metered APIs, an active Azure subscription should be provided. <br> |
 | How do I create an Azure subscription? | The Azure subscription must be available in the same tenant where the app is registered. Customers with MCA or EA agreements can get a subscription from their existing account. Is also possible to create a PAYG subscription using a credit card or pay by check or wire transfer, for details see [cost management and billing](/azure/cost-management-billing/microsoft-customer-agreement). |
-| Who is responsible for the payment in the case of multitenat apps? | The organization that owns the app registration. |
+| Who is responsible for the payment in the case of multitenant apps? | The organization that owns the app registration. |
 | Is possible to differentiate billing from multitenant or single tenant app? | Yes, this information must be provided as part of Azure billing details. |
 | Is there a charge when no message is returned using any model? | To discourage frequent [polling](/graph/api/resources/teams-api-overview), API requests that return an empty list of messages will be charged one message. In the case of `evaluation model`, the call will count towards the 500 messages per month per app allowed. | 
 | Where can I monitor the cost and billing? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) can use Azure Cost Analysis tool to track consumption per day or filter by meter, service name, resource ID among other parameters. For more details refer to our [documentation](/azure/cost-management-billing). |

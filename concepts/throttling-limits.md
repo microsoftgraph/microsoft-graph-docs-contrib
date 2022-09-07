@@ -398,7 +398,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 
 The preceding limits apply to the following resources:
 
-- [activityHistoryItem](/graph/api/resources/activityhistoryitem)
+- [activityHistoryItem](/graph/api/resources/projectrome-historyitem)
 - [userActivity](/graph/api/resources/useractivity)
 
 ## Security detections and incidents service limits
