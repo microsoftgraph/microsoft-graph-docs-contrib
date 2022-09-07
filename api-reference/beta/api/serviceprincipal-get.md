@@ -29,9 +29,12 @@ One of the following permissions is required to call this API. To learn more, in
 > A service principal can retrieve its own application and service principal details without being granted any application permissions.
 
 ## HTTP request
+
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}
+GET /servicePrincipals(appId='{appId}')
 ```
 
 ## Optional query parameters
@@ -75,6 +78,7 @@ Here is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}
+GET https://graph.microsoft.com/beta/servicePrincipals(appId='{appId}')
 ```
 
 # [C#](#tab/csharp)
@@ -230,6 +234,7 @@ To get custom security attribute assignments, the calling principal must be assi
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecurityAttributes
+GET https://graph.microsoft.com/beta/servicePrincipals/(appId='{appId}')?$select=customSecurityAttributes
 ```
 
 # [C#](#tab/csharp)
