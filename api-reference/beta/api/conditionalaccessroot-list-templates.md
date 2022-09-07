@@ -1,7 +1,7 @@
 ---
 title: "List templates"
 description: "Get a list of the conditionalAccessTemplate objects and their properties."
-author: "xuchen"
+author: "xuchen1"
 ms.localizationpriority: medium
 ms.prod: "conditionalAccess"
 doc_type: apiPageType

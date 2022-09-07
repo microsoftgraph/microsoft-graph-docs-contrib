@@ -1,6 +1,6 @@
 ---
 title: "Get Template"
-description: "Read the properties and relationships of a conditionalAccessTemplate object."
+description: "Retrieve the properties and relationships of a conditionalAccessTemplate object."
 author: "xuchen1"
 ms.localizationpriority: medium
 ms.prod: "conditionalAccess"
@@ -20,8 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type                        | Permissions (from least to most privileged)                                       |
 |:--------------------------------------|:----------------------------------------------------------------------------------|
 |Delegated (work or school account)     | Policy.Read.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application
+|Delegated (personal Microsoft account) | Not supported.  |
+|Application                            | Policy.Read.All |
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /identity/conditionalAccess/templates/{conditionalAccessTemplateId}
 ```
 
 ## Optional query parameters
-This method supports the ``$filter` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Name            |Description|
@@ -61,7 +61,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates/{conditionalAccessTemplateId}
 ```
-
 
 ### Response
 The following is an example of the response

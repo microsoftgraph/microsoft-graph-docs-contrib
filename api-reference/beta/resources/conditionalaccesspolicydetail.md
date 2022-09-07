@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessPolicyDetail resource type"
-description: "Represents details for templates of Azure Active Directory conditional access policy."
+description: "Represents details of a Microsoft recommended template for Azure Active Directory conditional access policy."
 author: "xuchen1"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -46,4 +46,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

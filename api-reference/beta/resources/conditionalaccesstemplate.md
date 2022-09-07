@@ -1,9 +1,9 @@
 ---
 title: "conditionalAccessTemplate resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a Microsoft recommended template for Azure Active Directory conditional access policy."
+author: "xuchen1"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a Microsoft recommended template for Azure Active Directory conditional access policies.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -27,11 +26,11 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|details|[conditionalAccessPolicyDetail](../resources/conditionalaccesspolicydetail.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|name|String|**TODO: Add Description**|
-|scenarios|templateScenarios|**TODO: Add Description**.The possible values are: `new`, `secureFoundation`, `zeroTrust`, `remoteWork`, `protectAdmins`, `emergingThreats`, `unknownFutureValue`.|
+|description|String| The human-readable name of the template. |
+|details|[conditionalAccessPolicyDetail](../resources/conditionalaccesspolicydetail.md)| Complete list of policy details specific to the template. This property contains the JSON of policy settings for configuring a Conditional Access policy. |
+|id|String| Immutable id of a template, this value will be represented as GUID. Inherited from [entity](../resources/entity.md). |
+|name|String| The human-readable name of the template. |
+|scenarios|templateScenarios| List of scenarios a template is recommended for. The following are valid scenarios `new`, `secureFoundation`, `zeroTrust`, `remoteWork`, `protectAdmins`, `emergingThreats`. |
 
 ## Relationships
 None.
