@@ -8,9 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAuthenticationMethodConfiguration()
-"@odata.type" := "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration"
-requestBody.Set"@odata.type"(&"@odata.type") 
-state := graphmodels.STRING_AUTHENTICATIONMETHODSTATE 
+state := graphmodels.ENABLED_AUTHENTICATIONMETHODSTATE 
 requestBody.SetState(&state) 
 
 graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(requestBody)

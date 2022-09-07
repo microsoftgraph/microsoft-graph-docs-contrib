@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1002
+Content-Length: 1060
 
 {
   "value": [
@@ -71,6 +71,7 @@ Content-Length: 1002
       "partnerState": "available",
       "androidMobileApplicationManagementEnabled": true,
       "iosMobileApplicationManagementEnabled": true,
+      "windowsMobileApplicationManagementEnabled": true,
       "androidEnabled": true,
       "iosEnabled": true,
       "windowsEnabled": true,
@@ -88,6 +89,8 @@ Content-Length: 1002
   ]
 }
 ```
+
+
 
 
 

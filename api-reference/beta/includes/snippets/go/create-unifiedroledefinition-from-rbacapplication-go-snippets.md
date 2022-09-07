@@ -28,7 +28,7 @@ rolePermissions := []graphmodels.UnifiedRolePermissionable {
 
 }
 requestBody.SetRolePermissions(rolePermissions)
-isEnabled := "true"
+isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
 
 result, err := graphClient.RoleManagement().Directory().RoleDefinitions().Post(requestBody)

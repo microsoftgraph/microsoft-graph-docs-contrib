@@ -24,7 +24,7 @@ scheduleInfo.SetStartDateTime(&startDateTime)
 expiration := graphmodels.NewExpirationPattern()
 type := graphmodels.AFTERDURATION_EXPIRATIONPATTERNTYPE 
 expiration.SetType(&type) 
-duration := "PT5H"
+duration , err := abstractions.ParseISODuration("PT5H")
 expiration.SetDuration(&duration) 
 scheduleInfo.SetExpiration(expiration)
 requestBody.SetScheduleInfo(scheduleInfo)

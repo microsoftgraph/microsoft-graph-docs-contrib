@@ -1,7 +1,7 @@
 ---
 title: "Get event"
 description: "Get the properties and relationships of the specified event object."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType

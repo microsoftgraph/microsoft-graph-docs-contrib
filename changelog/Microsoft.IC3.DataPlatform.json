@@ -3,6 +3,58 @@
         {
             "ChangeList": [
                 {
+                    "Id": "1ab47202-a340-49ba-b47b-f53b7eeb1604",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "azureADAppId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureADAppId` property to the [clientUserAgent](https://docs.microsoft.com/en-us/graph/api/resources/clientUserAgent?view=graph-rest-beta) resource.",
+                    "Target": "clientUserAgent"
+                },
+                {
+                    "Id": "1ab47202-a340-49ba-b47b-f53b7eeb1604",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "communicationServiceId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `communicationServiceId` property to the [clientUserAgent](https://docs.microsoft.com/en-us/graph/api/resources/clientUserAgent?view=graph-rest-beta) resource.",
+                    "Target": "clientUserAgent"
+                }
+            ],
+            "Id": "1ab47202-a340-49ba-b47b-f53b7eeb1604",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-08-24T06:16:18.4859577Z",
+            "WorkloadArea": "Cloud communications",
+            "SubArea": "Call records"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "9fe7c6c7-e931-4db5-80dd-7681d3da6d91",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "azureADAppId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureADAppId` property to the [clientUserAgent](https://docs.microsoft.com/en-us/graph/api/resources/clientUserAgent?view=graph-rest-1.0) resource.",
+                    "Target": "clientUserAgent"
+                },
+                {
+                    "Id": "9fe7c6c7-e931-4db5-80dd-7681d3da6d91",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "communicationServiceId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `communicationServiceId` property to the [clientUserAgent](https://docs.microsoft.com/en-us/graph/api/resources/clientUserAgent?view=graph-rest-1.0) resource.",
+                    "Target": "clientUserAgent"
+                }
+            ],
+            "Id": "9fe7c6c7-e931-4db5-80dd-7681d3da6d91",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2022-08-24T06:16:18.4866441Z",
+            "WorkloadArea": "Cloud communications",
+            "SubArea": "Call records"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "acf1705d-a074-4c1c-8f93-956f510d3d6a",
                     "ApiChange": "Member",
                     "ChangedApiName": "azureCommunicationServices",

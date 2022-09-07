@@ -9,8 +9,6 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewLogTeleconferenceDeviceQualityPostRequestBody()
 quality := graphmodels.NewTeleconferenceDeviceQuality()
-"@odata.type" := "#microsoft.graph.teleconferenceDeviceQuality"
-quality.Set"@odata.type"(&"@odata.type") 
 callChainId := uuid.MustParse("0622673d-9f69-49b3-9d4f-5ec64f42ecce")
 quality.SetCallChainId(&callChainId) 
 participantId := uuid.MustParse("ea078406-b5d4-4d3c-b85e-90103dcec7f6")
@@ -25,7 +23,6 @@ quality.SetDeviceDescription(&deviceDescription)
 
 teleconferenceDeviceMediaQuality := graphmodels.NewTeleconferenceDeviceMediaQuality()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.teleconferenceDeviceAudioQuality", 
 	"channelIndex" : int32(1) , 
 	"mediaDuration" : "PT20M", 
 	"networkLinkSpeedInBytes" : int32(13000) , 
@@ -51,7 +48,6 @@ additionalData := map[string]interface{}{
 teleconferenceDeviceMediaQuality.SetAdditionalData(additionalData)
 teleconferenceDeviceMediaQuality1 := graphmodels.NewTeleconferenceDeviceMediaQuality()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.teleconferenceDeviceVideoQuality", 
 	"channelIndex" : int32(1) , 
 	"mediaDuration" : "PT20M", 
 	"networkLinkSpeedInBytes" : int32(13000) , 
@@ -77,7 +73,6 @@ additionalData := map[string]interface{}{
 teleconferenceDeviceMediaQuality1.SetAdditionalData(additionalData)
 teleconferenceDeviceMediaQuality2 := graphmodels.NewTeleconferenceDeviceMediaQuality()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.teleconferenceDeviceScreenSharingQuality", 
 	"channelIndex" : int32(1) , 
 	"mediaDuration" : "PT20M", 
 	"networkLinkSpeedInBytes" : int32(13000) , 
