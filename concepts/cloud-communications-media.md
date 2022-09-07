@@ -42,4 +42,4 @@ For an example that shows you how to create a bot that uses application-hosted m
 ## See also
 
 - [Calls permissions](./permissions-reference.md#calls-permissions)
-- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Teams API overview](teams-concept-overview.md)
