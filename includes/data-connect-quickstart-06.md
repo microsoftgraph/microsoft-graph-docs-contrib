@@ -65,7 +65,7 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
 
     1. Select the **Source** tab, then select **New**.
 
-            ![Screenshot General tab](../concepts/images/data-connect-synapse-general.png)
+        ![Screenshot General tab](../concepts/images/data-connect-synapse-general.png)
 
     1. Locate and select the dataset **Microsoft 365 (Office 365)**, then select the **Continue** button.
 
