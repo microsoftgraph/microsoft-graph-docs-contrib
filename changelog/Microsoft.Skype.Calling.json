@@ -2514,6 +2514,42 @@
         "CreatedDateTime": "2022-07-19T00:00:00",
         "WorkloadArea": "Teamwork and communications",
         "SubArea": "Meetings and calling"
-  }
-]
+  },
+  {
+      "ChangeList": [
+        {
+          "Id": "ca3a97ab-9b3e-4533-b46e-c2c6788e5635",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addLargeGalleryViewOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [addLargeGalleryViewOperation](https://docs.microsoft.com/en-us/graph/api/resources/addLargeGalleryViewOperation?view=graph-rest-1.0) resource",
+          "Target": "addLargeGalleryViewOperation"
+        }
+      ],
+      "Id": "ca3a97ab-9b3e-4533-b46e-c2c6788e5635",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-07T13:12:12.3532131Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "792d0abb-3c73-4971-a6db-78636e49d829",
+          "ApiChange": "Method",
+          "ChangedApiName": "addLargeGalleryView",
+          "ChangeType": "Addition",
+          "Description": "Added the [addLargeGalleryView](https://docs.microsoft.com/en-us/graph/api/call?view=graph-rest-1.0) method to the [call](https://docs.microsoft.com/en-us/graph/api/call?view=graph-rest-1.0) resource.",
+          "Target": "call"
+        }
+      ],
+      "Id": "792d0abb-3c73-4971-a6db-78636e49d829",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-07T13:12:12.353831Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    }
+  ]
 }
