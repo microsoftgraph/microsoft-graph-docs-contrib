@@ -106,3 +106,11 @@ Content-Type: application/json
 }
 ```
 
+<!-- {
+  "type": "#page.annotation",
+  "section": "documentation",
+  "suppressions": [
+    "Error: list_authenticationcombinations:
+      Unable to locate a definition for resource type: microsoft.graph.authenticationMethodModes"
+  ]
+} -->
