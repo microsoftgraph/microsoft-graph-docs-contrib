@@ -1,7 +1,7 @@
 ---
 title: "getManagedAppPolicies function"
 description: "Gets app restrictions for a given user."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Gets app restrictions for a given user.
 
-## Prerequisites
+## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -87,6 +87,8 @@ Content-Length: 401
   ]
 }
 ```
+
+
 
 
 
