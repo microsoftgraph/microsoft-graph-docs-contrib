@@ -1,9 +1,9 @@
 ---
-title: "Get Template"
+title: "Get template"
 description: "Retrieve the properties and relationships of a conditionalAccessTemplate object."
 author: "xuchen1"
 ms.localizationpriority: medium
-ms.prod: "conditionalAccess"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

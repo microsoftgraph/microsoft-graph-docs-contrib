@@ -3,7 +3,7 @@ title: "List templates"
 description: "Get a list of the conditionalAccessTemplate objects and their properties."
 author: "xuchen1"
 ms.localizationpriority: medium
-ms.prod: "conditionalAccess"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
