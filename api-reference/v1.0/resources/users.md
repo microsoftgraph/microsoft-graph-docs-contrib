@@ -31,7 +31,7 @@ One of the following [permissions](/graph/permissions-reference) is required to 
 - Directory.ReadWrite.All
 - Directory.AccessAsUser.All
 
-In addition to the required permissions, the user operations that the calling user can perform are bounded to the privileges granted to the calling user via specific [Azure AD roles](/azure/active-directory/roles/permissions-reference). For more information, see *Who can reset passwords?* and *Who can update sensitive attributes?* below.
+In addition to the required permissions, the user operations that the calling user can perform are bounded to the privileges granted to the calling user via specific [Azure AD roles](/azure/active-directory/roles/permissions-reference). For more information, see the *Who can reset passwords?* and *Who can update sensitive attributes?* sections.
 
 ### Who can reset passwords?
 
