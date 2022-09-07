@@ -21,8 +21,6 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     - **Region**: [pick an Azure region in the same region as your Microsoft 365 region](/graph/data-connect-datasets#regions)
     - **Name**: dM365toBlobStorage
     - **Version**: V2
-
-       <!-- ![A screenshot showing the successful creation of the new Azure Data Factory service in the Azure portal.](../concepts/images/data-connect-adf-create.png) -->
     - Select **Next: Git configuration >**.
     - In the **Git configuration** tab, make sure you either configure Git or select the option _Configure Git later_.
     - Select **Review + create**, and then select **Create**.
