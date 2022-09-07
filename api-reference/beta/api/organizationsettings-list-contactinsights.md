@@ -70,7 +70,6 @@ The following is an example of the response
   "@odata.type": "microsoft.graph.insightsSettings",
   "name": "get_insightssettingscontactrequest"
 } -->
--->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the privacy settings to display or return the specified type of insights in an organization. The type of settings can be item insights or people insights.
+Update the privacy settings to display or return the specified type of insights in an organization. The type of settings can be item insights, people insights or contact insights.
 
 To learn more about customizing insights privacy for your organization, see:
 -  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy) 
@@ -21,11 +21,22 @@ To learn more about customizing insights privacy for your organization, see:
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+For the type of settings as **item insights or people insights**, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
+
+For the type of settings as **contact insights**, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Organization.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -47,6 +58,13 @@ To update settings for people insights:
 PATCH /organization/{organizationId}/settings/peopleInsights
 ```
 
+To update settings for contact insights:
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /organization/{organizationId}/settings/contactInsights
+```
+
 ## Request headers
 
 | Header       | Value|
@@ -60,7 +78,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default is `true`. Optional.|
+|isEnabledInOrganization|Boolean| `true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default for settings with type as **item insights or people insights** is `true`. Default for settings with type as **contact insights** is `false`. Optional.|
 |disabledForGroup|String| The ID of an Azure AD group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
 
 >**Note:** This operation does not verify the **disabledForGroup** property value if you include it in the request body. If you set the **disabledForGroup** property to a string, this operation does not check the existence of the corresponding Azure AD group. This means, if you set **disabledForGroup** to an Azure AD group that does not exist or is deleted afterwards, this operation will not be able to identify any group membership and disable item or people insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation will enable the specified type of insights for _all_ the users in the organization. 
