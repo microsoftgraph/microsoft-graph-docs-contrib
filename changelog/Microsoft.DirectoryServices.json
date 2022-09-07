@@ -583,6 +583,32 @@
     {
       "ChangeList": [
         {
+          "Id": "4e8e0df9-0c1e-414d-860c-aedc9baa7159",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationInfo](https://docs.microsoft.com/en-us/graph/api/resources/authorizationInfo?view=graph-rest-beta) resource type.",
+          "Target": "authorizationInfo"
+        },
+        {
+          "Id": "4e8e0df9-0c1e-414d-860c-aedc9baa7159",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorizationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorizationInfo** property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. Use this property to bind IDs of smart card certificates to an Azure AD user for identification and authentication to non-Azure AD environments.",
+          "Target": "user"
+        }
+      ],
+      "Id": "4e8e0df9-0c1e-414d-860c-aedc9baa7159",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-06T00:09:26.417154Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "206e1f34-55b3-43fe-85db-1bc7551d9e0f",
           "ApiChange": "Resource",
           "ChangedApiName": "groupWritebackConfiguration",
