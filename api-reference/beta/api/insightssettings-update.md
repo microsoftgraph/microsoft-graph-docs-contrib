@@ -90,7 +90,7 @@ If successful, this method returns a `200 OK` response code and [insightsSetting
 ### Example 1: Update settings for contact insights
 #### Request
 
-The following is an example of a request that shows how an admin updates "**disabledForGroup**" privacy setting to prohibit displaying user's contact insights in a particular Azure AD group.
+The following is an example of a request that shows how an admin updates **isEnabledInOrganization** to enable contact insights for the specified organization; the default for **isEnabledInOrganization** is false, disabling contact insights. The example also sets the **disabledForGroup** privacy setting to prohibit displaying user's contact insights in a particular Azure AD group.
 
 <!-- {
   "blockType": "request",
