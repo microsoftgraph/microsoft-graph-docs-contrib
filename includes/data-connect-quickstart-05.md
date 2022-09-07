@@ -21,15 +21,11 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     3. **Region**: pick an Azure region in the same region as your Microsoft 365 region
     4. **Name**: dfM365toBlobStorage
     5. **Version**: V2
-
-       <!-- ![A screenshot showing the successful creation of the new Azure Data Factory service in the Azure portal.](../concepts/images/data-connect-adf-create.png) -->
     6. Select **Next Git configuration**.
     7. In the **Git configuration** tab, make sure you either configure Git or select the option _Configure Git later_.
     8. Select **Review +create**, and then select **Create**.
 
 1. After the Azure Data Factory resource is created, select **Go to resource**, and then select the **Open Azure Data Factory Studio** tile to launch the Azure Data Factory full screen editor.
-
-   <!-- ![A screenshot showing the Azure Portal UI for the Data Factory service. The user is clicking the Author and Monitor button.](../concepts/images/data-connect-adf-auth-and-mon.png) -->
 
 1. Switch from the **Overview** to the **Manage** experience by selecting it from the left-hand navigation.
 
@@ -66,11 +62,11 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     - In the activity editor pane below the designer, select the **Source** tab, then select **New**.
     - In the search box on the right pane, enter *Microsoft 365*, locate the dataset **Microsoft 365 (Office 365)**, select it and then select the **Continue** button.
 
-      <!--  ![A screenshot showing the Azure portal UI for the Data Factory service. The user is selecting the Office 365 dataset in the UI and selecting the continue button afterwards.](../concepts/images/data-connect-adf-pipeline-dataset.png) -->
+        ![A screenshot showing the Azure portal UI for the Data Factory service. The user is selecting the Office 365 dataset in the UI and selecting the continue button afterwards.](../concepts/images/data-connect-adf-pipeline-dataset.png)
 
     - Click **Select** under **Linked service** and then click **+New**. 
     - In the dialog that appears, select the integration runtime you previously created in the **Connect via integration runtime** dropdown, enter the previously created Azure AD application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, and select **Create**.
-    
+        
         ![A screenshot showing the Azure portal UI for the Data Factory service. The user is configuring the integration runtime with the service principal key.](../concepts/images/data-connect-adf-linked-service.png)
 
     - After creating the Microsoft 365 connection, for the **Table name** field, select **BasicDataSet_v0.Message_v0**, and then select **OK**.
