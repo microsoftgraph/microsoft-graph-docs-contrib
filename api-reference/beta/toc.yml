@@ -403,35 +403,6 @@ items:
           href: api/cloudpc-reprovision.md
         - name: Troubleshoot
           href: api/cloudpc-troubleshoot.md
-      - name: Contacts
-        items:
-        - name: Contact
-          href: resources/contact.md
-          items:
-          - name: Create contact
-            href: api/user-post-contacts.md
-          - name: Create contact folder
-            href: api/user-post-contactfolders.md
-          - name: List contacts
-            href: api/user-list-contacts.md
-          - name: List contact folders
-            href: api/user-list-contactfolders.md
-        - name: User Contact merge suggestions (preview)
-          items:
-          - name: Contact merge suggestions
-            href: resources/contactmergesuggestions.md
-          - name: Get
-            href: api/contactmergesuggestions-get.md
-          - name: Update
-            href: api/contactmergesuggestions-update.md
-        - name: Org control for contact insights (preview)
-          items:
-          - name: Insights settings
-            href: resources/insightssettings.md
-          - name: List
-            href: api/organizationsettings-list-contactinsights.md
-          - name: Update
-            href: api/insightssettings-update.md
       - name: Delegated permission grant
         items:
         - name: OAuth 2.0 permission grant
@@ -638,6 +609,14 @@ items:
             href: api/contactmergesuggestions-get.md
           - name: Update
             href: api/contactmergesuggestions-update.md
+        - name: Org control for contact insights (preview)
+          items:
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: List
+            href: api/organizationsettings-list-contactinsights.md
+          - name: Update
+            href: api/insightssettings-update.md
       - name: Photo
         items:
         - name: Profile photo
@@ -11753,6 +11732,14 @@ items:
               href: api/organizationsettings-list-microsoftapplicationdataaccess.md
             - name: Update
               href: api/microsoftapplicationdataaccesssettings-update.md
+          - name: Org control for contact insights (preview)
+            items:
+            - name: Insights settings
+              href: resources/insightssettings.md
+            - name: List
+              href: api/organizationsettings-list-contactinsights.md
+            - name: Update
+              href: api/insightssettings-update.md
           - name: Org control for item insights (preview)
             items:
             - name: Insights settings
@@ -11767,14 +11754,6 @@ items:
               href: resources/insightssettings.md
             - name: List
               href: api/organizationsettings-list-peopleinsights.md
-            - name: Update
-              href: api/insightssettings-update.md
-          - name: Org control for contact insights (preview)
-            items:
-            - name: Insights settings
-              href: resources/insightssettings.md
-            - name: List
-              href: api/organizationsettings-list-contactinsights.md
             - name: Update
               href: api/insightssettings-update.md
           - name: Profile card customization (preview)
@@ -14287,6 +14266,14 @@ items:
           href: api/contactmergesuggestions-get.md
         - name: Update
           href: api/contactmergesuggestions-update.md
+      - name: Org control for contact insights (preview)
+        items:
+        - name: Insights settings
+          href: resources/insightssettings.md
+        - name: List
+          href: api/organizationsettings-list-contactinsights.md
+        - name: Update
+          href: api/insightssettings-update.md
       - name: Extended properties
         items:
         - name: Overview
