@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 
 
 Retrieve the list of [channels](../resources/channel.md) in this [team](../resources/team.md).
+**Note:** Guest users cant make a call to this API.
 
 ## Permissions
 
