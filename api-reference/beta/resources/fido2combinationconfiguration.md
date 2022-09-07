@@ -26,7 +26,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAAGUIDs|String collection|A list of AAGUIDs allowed to be used as part of the specificed authentication method combinations.|
+|allowedAAGUIDs|String collection|A list of AAGUIDs allowed to be used as part of the specified authentication method combinations.|
 |appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. Inherited from [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md).|
 |id|String|A system-generated unique GUID. Inherited from [entity](../resources/entity.md).|
 

@@ -12117,8 +12117,11 @@ items:
             - name: Find by method mode
               href: api/authenticationstrengthpolicy-findbymethodmode.md
           - name: Authentication combination configurations
-            href: resources/authenticationcombinationconfiguration.md
             items: 
+            - name: Authentication combination configuration
+              href: resources/authenticationcombinationconfiguration.md
+            - name: FIDO2 combination configuration
+              href: resources/fido2combinationconfiguration.md
             - name: List
               href: api/authenticationstrengthpolicy-list-combinationconfigurations.md
             - name: Get
@@ -12131,12 +12134,12 @@ items:
               href: api/authenticationstrengthpolicy-post-combinationconfigurations.md
             - name: Update allowed combinations
               href: api/authenticationstrengthpolicy-updateallowedcombinations.md
-          - name: List combinations
-            href: api/authenticationstrengthroot-list-authenticationcombinations.md
-          - name: List method modes
-            href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
-          - name: Get method modes
-            href: api/authenticationmethodmodedetail-get.md
+          - name: Authentication method modes
+            items:
+            - name: List
+              href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
+            - name: Get
+              href: api/authenticationmethodmodedetail-get.md
         - name: Certificate-based authentication configuration
           displayName: CBA
           href: resources/certificatebasedauthconfiguration.md
