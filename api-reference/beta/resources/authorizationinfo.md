@@ -1,6 +1,6 @@
 ---
 title: "authorizationInfo resource type"
-description: "Represents the identifiers that can be used to identify and authenticate a user in non-Azure AD environments. Common uses include storing identifiers for smartcard-based certificates that a user uses for access to on-premises Active Directory deployments or for federated access. Can also be used to store the Subject Alternate Name (SAN) that's associated with a Common Access Card (CAC)."
+description: "Represents the identifiers that can be used to identify and authenticate a user in non-Azure AD environments."
 author: "vimrang"
 ms.localizationpriority: medium
 ms.prod: "users"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identifiers that can be used to identify and authenticate a user in non-Azure AD environments. Common uses include storing identifiers for smartcard-based certificates that a user uses for access to on-premises Active Directory deployments or for federated access. Can also be used to store the Subject Alternate Name (SAN) that's associated with a Common Access Card (CAC).
+Represents the identifiers that can be used to identify and authenticate a user in non-Azure AD environments. Common uses include storing identifiers for smartcard-based certificates that a user uses for access to on-premises Active Directory deployments or for federated access, and storing the Subject Alternate Name (SAN) that's associated with a Common Access Card (CAC).
 
 ## Properties
 |Property|Type|Description|
