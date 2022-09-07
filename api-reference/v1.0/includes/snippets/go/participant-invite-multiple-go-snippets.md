@@ -7,23 +7,46 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetParticipants( []InvitationParticipantInfo {
-	msgraphsdk.NewInvitationParticipantInfo(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.invitationParticipantInfo",
-		"replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
-	}
-	msgraphsdk.NewInvitationParticipantInfo(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.invitationParticipantInfo",
-		"replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
-	}
+requestBody := graphmodels.NewInvitePostRequestBody()
+
+
+invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
+additionalData := map[string]interface{}{
+	"replacesCallId" : "a7ebfb2d-871e-419c-87af-27290b22e8db", 
+identity := graphmodels.New()
+user := graphmodels.New()
+id := "7e1b4346-85a6-4bdd-abe3-d11c5d420efe"
+user.SetId(&id) 
+displayName := "string"
+user.SetDisplayName(&displayName) 
+	identity.SetUser(user)
+	invitationParticipantInfo.SetIdentity(identity)
 }
+invitationParticipantInfo.SetAdditionalData(additionalData)
+invitationParticipantInfo1 := graphmodels.NewInvitationParticipantInfo()
+additionalData := map[string]interface{}{
+	"replacesCallId" : "a7ebfb2d-871e-419c-87af-27290b22e8db", 
+identity := graphmodels.New()
+user := graphmodels.New()
+id := "1e126418-44a0-4a94-a6f8-0efe1ad71acb"
+user.SetId(&id) 
+displayName := "string"
+user.SetDisplayName(&displayName) 
+	identity.SetUser(user)
+	invitationParticipantInfo1.SetIdentity(identity)
+}
+invitationParticipantInfo1.SetAdditionalData(additionalData)
+
+participants := []graphmodels.InvitationParticipantInfoable {
+	invitationParticipantInfo,
+	invitationParticipantInfo1,
+
+}
+requestBody.SetParticipants(participants)
 clientContext := "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
-requestBody.SetClientContext(&clientContext)
-callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).Participants().Invite(call-id).Post(requestBody)
+requestBody.SetClientContext(&clientContext) 
+
+result, err := graphClient.Communications().CallsById("call-id").Participants().Invite().Post(requestBody)
 
 
 ```

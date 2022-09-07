@@ -7,17 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewNamedLocation()
+requestBody := graphmodels.NewNamedLocation()
 displayName := "Named location with unknown countries and regions"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.countryNamedLocation",
-	"countriesAndRegions":  []String {
+requestBody.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	countriesAndRegions := []string {
 		"US",
 		"GB",
+
 	}
-	"includeUnknownCountriesAndRegions": true,
+	includeUnknownCountriesAndRegions := true
+requestBody.SetIncludeUnknownCountriesAndRegions(&includeUnknownCountriesAndRegions) 
 }
+requestBody.SetAdditionalData(additionalData)
+
 result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(requestBody)
 
 

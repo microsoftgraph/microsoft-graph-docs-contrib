@@ -7,14 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.MembersRequestBuilderGetQueryParameters{
-	Filter: "(microsoft.graph.aadUserConversationMember/displayName%20eq%20'Harry%20Johnson'%20or%20microsoft.graph.aadUserConversationMember/email%20eq%20'admin@M365x987948.OnMicrosoft.com')",
+
+requestFilter := "(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')"
+
+requestParameters := &graphconfig.MembersRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.MembersRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MembersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Members().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.TeamsById("team-id").Members().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

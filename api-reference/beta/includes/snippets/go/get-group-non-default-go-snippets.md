@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.GroupRequestBuilderGetQueryParameters{
-	Select: "allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount",
+requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
+	Select: [] string {"allowExternalSenders","autoSubscribeNewMembers","isSubscribedByMail","unseenCount"},
 }
-options := &msgraphsdk.GroupRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.GroupsById("group-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

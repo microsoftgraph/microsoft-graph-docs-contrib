@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.AccessPackageRequestBuilderGetQueryParameters{
-	Expand: "accessPackageResourceRoleScopes($expand=accessPackageResourceRole,accessPackageResourceScope)",
+requestParameters := &graphconfig.AccessPackageRequestBuilderGetQueryParameters{
+	Expand: [] string {"accessPackageResourceRoleScopes($expand=accessPackageResourceRole,accessPackageResourceScope)"},
 }
-options := &msgraphsdk.AccessPackageRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.AccessPackageRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-accessPackageId := "accessPackage-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById("accessPackage-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

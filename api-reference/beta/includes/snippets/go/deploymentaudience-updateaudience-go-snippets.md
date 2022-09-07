@@ -7,37 +7,53 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAddMembers( []UpdatableAsset {
-	msgraphsdk.NewUpdatableAsset(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-		"id": "String (identifier)",
-	}
+requestBody := graphmodels.NewUpdateAudiencePostRequestBody()
+
+
+updatableAsset := graphmodels.NewUpdatableAsset()
+id := "String (identifier)"
+updatableAsset.SetId(&id) 
+
+addMembers := []graphmodels.Objectable {
+	updatableAsset,
+
 }
-requestBody.SetRemoveMembers( []UpdatableAsset {
-	msgraphsdk.NewUpdatableAsset(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-		"id": "String (identifier)",
-	}
+requestBody.SetAddMembers(addMembers)
+
+
+updatableAsset := graphmodels.NewUpdatableAsset()
+id := "String (identifier)"
+updatableAsset.SetId(&id) 
+
+removeMembers := []graphmodels.Objectable {
+	updatableAsset,
+
 }
-requestBody.SetAddExclusions( []UpdatableAsset {
-	msgraphsdk.NewUpdatableAsset(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-		"id": "String (identifier)",
-	}
+requestBody.SetRemoveMembers(removeMembers)
+
+
+updatableAsset := graphmodels.NewUpdatableAsset()
+id := "String (identifier)"
+updatableAsset.SetId(&id) 
+
+addExclusions := []graphmodels.Objectable {
+	updatableAsset,
+
 }
-requestBody.SetRemoveExclusions( []UpdatableAsset {
-	msgraphsdk.NewUpdatableAsset(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-		"id": "String (identifier)",
-	}
+requestBody.SetAddExclusions(addExclusions)
+
+
+updatableAsset := graphmodels.NewUpdatableAsset()
+id := "String (identifier)"
+updatableAsset.SetId(&id) 
+
+removeExclusions := []graphmodels.Objectable {
+	updatableAsset,
+
 }
-deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Audience().UpdateAudience(deployment-id).Post(requestBody)
+requestBody.SetRemoveExclusions(removeExclusions)
+
+graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudience().Post(requestBody)
 
 
 ```

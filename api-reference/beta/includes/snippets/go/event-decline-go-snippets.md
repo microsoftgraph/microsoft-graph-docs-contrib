@@ -7,27 +7,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewDeclinePostRequestBody()
 comment := "I won't be able to make this week. How about next week?"
-requestBody.SetComment(&comment)
+requestBody.SetComment(&comment) 
 sendResponse := true
-requestBody.SetSendResponse(&sendResponse)
-proposedNewTime := msgraphsdk.NewTimeSlot()
-requestBody.SetProposedNewTime(proposedNewTime)
-start := msgraphsdk.NewDateTimeTimeZone()
-proposedNewTime.SetStart(start)
+requestBody.SetSendResponse(&sendResponse) 
+proposedNewTime := graphmodels.NewTimeSlot()
+start := graphmodels.NewDateTimeTimeZone()
 dateTime := "2019-12-02T18:00:00"
-start.SetDateTime(&dateTime)
+start.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-start.SetTimeZone(&timeZone)
-end := msgraphsdk.NewDateTimeTimeZone()
-proposedNewTime.SetEnd(end)
+start.SetTimeZone(&timeZone) 
+proposedNewTime.SetStart(start)
+end := graphmodels.NewDateTimeTimeZone()
 dateTime := "2019-12-02T19:00:00"
-end.SetDateTime(&dateTime)
+end.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-end.SetTimeZone(&timeZone)
-eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Decline(event-id).Post(requestBody)
+end.SetTimeZone(&timeZone) 
+proposedNewTime.SetEnd(end)
+requestBody.SetProposedNewTime(proposedNewTime)
+
+graphClient.Me().EventsById("event-id").Decline().Post(requestBody)
 
 
 ```

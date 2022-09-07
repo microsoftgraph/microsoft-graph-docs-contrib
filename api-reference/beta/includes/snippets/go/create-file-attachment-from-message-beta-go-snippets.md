@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAttachment()
+requestBody := graphmodels.NewAttachment()
 name := "smile"
-requestBody.SetName(&name)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.fileAttachment",
-	"contentBytes": "a0b1c76de9f7=",
+requestBody.SetName(&name) 
+additionalData := map[string]interface{}{
+	"contentBytes" : "a0b1c76de9f7=", 
 }
-messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Attachments().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Me().MessagesById("message-id").Attachments().Post(requestBody)
 
 
 ```

@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-userId := "user-id"
-outlookTaskId := "outlookTask-id"
-result, err := graphClient.UsersById(&userId).Outlook().TasksById(&outlookTaskId).Attachments().Get()
+
+result, err := graphClient.UsersById("user-id").Outlook().TasksById("outlookTask-id").Attachments().Get()
 
 
 ```
