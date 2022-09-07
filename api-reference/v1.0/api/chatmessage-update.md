@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 Update a [chatMessage](../resources/chatMessage.md) object. Only the **policyViolation** property of a **chatMessage** can be updated.
 
-The update only works for chats where are members are Teams users. If one of the participants is using Skype, the operation will fail. This is a known limitation
+The update only works for chats where members are Microsoft Teams users. If one of the participants is using Skype, the operation will fail.
 
 [!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
