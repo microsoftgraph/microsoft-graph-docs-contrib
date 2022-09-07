@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewAllowedValue()
 id := "Alpine"
 requestBody.SetId(&id) 
-isActive := "true"
+isActive := true
 requestBody.SetIsActive(&isActive) 
 
 result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").AllowedValues().Post(requestBody)

@@ -9,7 +9,6 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewMembersPostRequestBody()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#Microsoft.Graph.Group", 
 	"description" : "Self help community for golf", 
 	"displayName" : "Golf Assist", 
 	groupTypes := []string {

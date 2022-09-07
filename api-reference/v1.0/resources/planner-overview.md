@@ -89,7 +89,8 @@ In some common scenarios, `POST` and `PATCH` requests can return a 400 status co
 
 ### 403 Forbidden
 
-In addition to the general errors, the Planner API also returns the `403` status code when a service-defined limit has been exceeded. If this is the case, the **code** property on the error resource type will indicate the type of the limit exceeded by the request.
+In addition to the general errors, the Planner API also returns the `403` status code when a service-defined limit has been exceeded. If this is the case, the **code** property on the error resource type will indicate the type of the limit exceeded by the request. For details about the limits, see [Planner limits](/office365/planner/planner-limits)
+.
 The following are the possible values for the limit types.
 
 | Value                         | Description                                                                                                                                                                                              |
@@ -105,7 +106,7 @@ The following are the possible values for the limit types.
 | MaximumReferencesOnTask       | The **references** property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                          |
 | MaximumChecklistItemsOnTask   | The **checklist** property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
 | MaximumAssigneesInTasks       | The **assignments** property on the [plannerTask](plannertask.md) resource contains too many values.                                                                                                       |
-| MaximumPlannerPlans       | The group already contains a **plan**. Currently, groups can only contain one **plan**. **Note:** Some Microsoft apps can exceed this limit. In the future, we will extend this capability to all apps.                                                                                                      |
+| MaximumPlannerPlans       | The **group** already contains the maximum number of **plans** owned by a user, which is currently 200. For details about limits, see [Planner limits](/office365/planner/planner-limits).|
 
 ### 412 Precondition Failed 
 

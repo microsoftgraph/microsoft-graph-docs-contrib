@@ -60,7 +60,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_cloudpcexternalpartnersetting"
+  "name": "list_cloudpcexternalpartnersetting_and_properties"
 }
 -->
 ``` http
@@ -68,27 +68,27 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPa
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcexternalpartnersetting-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcexternalpartnersetting-and-properties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-cloudpcexternalpartnersetting-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-cloudpcexternalpartnersetting-and-properties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcexternalpartnersetting-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcexternalpartnersetting-and-properties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcexternalpartnersetting-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcexternalpartnersetting-and-properties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcexternalpartnersetting-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcexternalpartnersetting-and-properties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-cloudpcexternalpartnersetting-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-cloudpcexternalpartnersetting-and-properties-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -142,7 +142,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_cloudpcexternalpartnersetting"
+  "name": "list_cloudpcexternalpartnersetting_usingselect"
 }
 -->
 ``` http
@@ -150,27 +150,27 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPa
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcexternalpartnersetting-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcexternalpartnersetting-usingselect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-cloudpcexternalpartnersetting-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-cloudpcexternalpartnersetting-usingselect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcexternalpartnersetting-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcexternalpartnersetting-usingselect-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcexternalpartnersetting-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcexternalpartnersetting-usingselect-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcexternalpartnersetting-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcexternalpartnersetting-usingselect-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-cloudpcexternalpartnersetting-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-cloudpcexternalpartnersetting-usingselect-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
