@@ -1,6 +1,6 @@
 ---
 title: "Update chatMessage"
-description: "Update the properties of a chatMessage object"
+description: "Update the properties of a chatMessage object."
 author: "RamjotSingh"
 doc_type: apiPageType
 ms.localizationpriority: medium
@@ -128,7 +128,7 @@ Content-Type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -194,14 +194,14 @@ Content-Type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
 } -->
 
 ```http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
 ### Example 3: Update the mentions of a message using delegated permissions
@@ -277,14 +277,14 @@ Content-Type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
 } -->
 
 ```http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
 ### Example 4: Update the content with attachments of a message using delegated permissions
@@ -346,14 +346,14 @@ Content-Type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
 } -->
 
 ```http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
 ### Example 5: Update the reactions in a message using delegated permissions
@@ -522,12 +522,12 @@ Content-Type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
 } -->
 
 ```http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
