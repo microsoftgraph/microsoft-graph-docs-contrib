@@ -3111,6 +3111,15 @@ Possible values for user account types (group membership), per Windows definitio
 |terminationRequested|
 |unknownFutureValue|
 
+### featureTargetType values 
+
+|Member|
+|:---|
+|group|
+|administrativeUnit|
+|role|
+|unknownFutureValue|
+
 ### longRunningOperationStatus values 
 
 |Member|
@@ -3196,4 +3205,18 @@ Possible values for user account types (group membership), per Windows definitio
 |fileHash|
 |sender|
 |recipient|
+|unknownFutureValue|
+
+### outlierMemberType values 
+
+|Member|
+|:---|
+|user|
+|unknownFutureValue|
+
+### outlierContainerType values 
+
+|Member|
+|:---|
+|group|
 |unknownFutureValue|

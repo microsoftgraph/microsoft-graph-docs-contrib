@@ -17,4 +17,4 @@ The preceding limits apply to the following resources:
 
 | <!-- fake header-->                                                                                                                                                                     |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> [localizedNotificationMessage](/graph/api/resources/localizednotificationmessage)  <li> [notificationMessageTemplate](/graph/api/resources/notificationmessagetemplate) </ul> |
+| <ul> <li> [localizedNotificationMessage](/graph/api/resources/intune-notification-localizednotificationmessage)  <li> [notificationMessageTemplate](/graph/api/resources/intune-notification-notificationmessagetemplate) </ul> |
