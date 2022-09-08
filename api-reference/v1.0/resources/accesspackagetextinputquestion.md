@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A child of **accessPackageQuestion** that has text input as an answer.  This is used in the **questions** property of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) and inside an [accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md) of an access package resource.
+A child of **accessPackageQuestion** that has text input as an answer.  This is used in the **questions** property of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 
