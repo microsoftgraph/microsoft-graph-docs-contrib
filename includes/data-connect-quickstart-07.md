@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this section, we will be building your first ASP.NET project application to process the Microsoft Graph Data Connect data that was exported.
+In this section, you will be building your first ASP.NET project application to process the Microsoft Graph Data Connect data that was exported.
 
 ## Create a new ASP.NET project
 
@@ -13,7 +13,7 @@ In this section, we will be building your first ASP.NET project application to p
 1. In the **New Project** dialog, do the following.
 
     1. Search **ASP.NET Web Application** in the search box and select the **ASP.NET Web Application (.NET Framework)** option.
-    1. Click on **Next**.
+    1. Choose **Next**.
 
         ![A screenshot of the Visual Studio user interface showing the options to create a new project using ASP.NET Web Application.](../concepts/images/data-connect-vs-create-app.png)
 
@@ -24,7 +24,7 @@ In this section, we will be building your first ASP.NET project application to p
     > [!IMPORTANT]
     > Ensure that you enter the exact same name for the Visual Studio Project that is specified in this quick start instructions. The Visual Studio Project name becomes part of the namespace in the code. The code inside these instructions depends on the namespace matching the Visual Studio Project name specified in these instructions. If you use a different project name the code will not compile unless you adjust all the namespaces to match the Visual Studio Project name you enter when you create the project.
 
-    1. In the new **ASP.NET Web Application** project dialog, select MVC.
+    1. In the new **ASP.NET Web Application** project dialog, select **MVC**.
     1. Select **Create**.
 
     ![A screenshot of the Visual Studio interface showing the options to choose an Model-View-Controller (MVC) ASP.NET Web application.](../concepts/images/data-connect-vs-create-app-mvc.png)
