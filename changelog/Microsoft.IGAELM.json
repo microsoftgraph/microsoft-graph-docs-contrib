@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "6845c74e-49b6-430d-b196-fbae67c0344b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAnswer",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAnswer](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAnswer?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAnswer"
+        },
+        {
+          "Id": "6845c74e-49b6-430d-b196-fbae67c0344b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAnswerChoice",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAnswerChoice](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAnswerChoice?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAnswerChoice"
+        },
+        {
+          "Id": "6845c74e-49b6-430d-b196-fbae67c0344b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAnswerString",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAnswerString](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAnswerString?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAnswerString"
+        },
+        {
+          "Id": "6845c74e-49b6-430d-b196-fbae67c0344b",
+          "ApiChange": "Property",
+          "ChangedApiName": "questions",
+          "ChangeType": "Addition",
+          "Description": "Added the `questions` property to the [accessPackageAssignmentRequestRequirements](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestRequirements?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequestRequirements"
+        },
+        {
+          "Id": "6845c74e-49b6-430d-b196-fbae67c0344b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageLocalizedText",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageLocalizedText](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageLocalizedText?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageLocalizedText"
+        },
+        {
+          "Id": "6845c74e-49b6-430d-b196-fbae67c0344b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageMultipleChoiceQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageMultipleChoiceQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageMultipleChoiceQuestion?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageMultipleChoiceQuestion"
+        },
+        {
+          "Id": "6845c74e-49b6-430d-b196-fbae67c0344b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageQuestion?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageQuestion"
+        },
+        {
+          "Id": "6845c74e-49b6-430d-b196-fbae67c0344b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageTextInputQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageTextInputQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageTextInputQuestion?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageTextInputQuestion"
+        },
+        {
+          "Id": "6845c74e-49b6-430d-b196-fbae67c0344b",
+          "ApiChange": "Property",
+          "ChangedApiName": "questions",
+          "ChangeType": "Addition",
+          "Description": "Added the `questions` property to the [accessPackageAssignmentPolicy](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentPolicy"
+        },
+        {
+          "Id": "e073586a-64eb-4794-9696-303d550072c6",
+          "ApiChange": "Property",
+          "ChangedApiName": "answers",
+          "ChangeType": "Addition",
+          "Description": "Added the `answers` property to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        }
+      ],
+      "Id": "6845c74e-49b6-430d-b196-fbae67c0344b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-08T01:20:11.6988397Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "04180ef2-a3fe-4dcb-9c30-b8675845d392",
           "ApiChange": "Method",
           "ChangedApiName": "Get",
