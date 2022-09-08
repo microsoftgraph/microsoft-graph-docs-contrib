@@ -240,7 +240,7 @@ The preceding limits apply to the following resources:
 - [people](/graph/api/resources/insightssettings)
 - [sharedInsight](/graph/api/resources/insights-shared)
 - [trending](/graph/api/resources/insights-trending)
-- [usedInsight](/graph/api/resources/insights-used?)
+- [usedInsight](/graph/api/resources/insights-used)
 
 ## Intune service limits
 
