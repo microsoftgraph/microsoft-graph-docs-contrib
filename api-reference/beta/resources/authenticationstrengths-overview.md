@@ -69,7 +69,7 @@ An authentication strength policy has zero or more combination configurations.
 
 ## Apply authentication strength policies in Conditional Access
 
-After defining the authentication strength policy, you apply and enforce it for the protected resource using Azure AD [conditional access policies](../resources/conditionalaccesspolicy).
+After defining the authentication strength policy, you apply and enforce it for the protected resource using Azure AD [conditional access policies](../resources/conditionalaccesspolicy.md).
 
 In the Conditional Access [grant controls](conditionalaccessgrantcontrols.md), configure the **authenticationStrength** relationship by assigning the [authenticationStrengthPolicy](authenticationstrengthpolicy.md) object that should be associated with the conditional access policy. When a conditional access policy applies to a sign-in and that policy has an authentication strength grant control, the user will be required to use one of the allowed authentication method combinations to sign in.
 
