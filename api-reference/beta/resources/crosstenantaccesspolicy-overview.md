@@ -56,7 +56,7 @@ Cross-tenant access settings is used to enable collaboration with Azure AD organ
 + Microsoft Azure commercial and Microsoft Azure Government
 + Microsoft Azure commercial and Microsoft Azure China
 
-Learn more about [collaborating with organizations from a different Microsoft cloud](https://docs.microsoft.com/azure/active-directory/external-identities/cross-cloud-settings).
+Learn more about [collaborating with organizations from a different Microsoft cloud](/azure/active-directory/external-identities/cross-cloud-settings).
 
 ## Interpreting the API response
 
