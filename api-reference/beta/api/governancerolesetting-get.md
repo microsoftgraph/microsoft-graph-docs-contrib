@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Retrieve the properties and relationships of a [governanceRoleSetting](../resources/governancerolesetting.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../permissions-reference#privileged-access-permissions).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).
 
 ### Azure resources
 
