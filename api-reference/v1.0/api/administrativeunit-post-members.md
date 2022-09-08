@@ -134,7 +134,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members
 Content-type: application/json
-Content-length: 244
 
 {
   "@odata.type": "#Microsoft.Graph.Group",
