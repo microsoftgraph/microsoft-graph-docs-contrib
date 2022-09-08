@@ -14,9 +14,9 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. To approve or deny consent requests, go to [Privileged Access](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess).
 
-    ![A screenshot showing privileged access in the Microsoft 365 admin center.](../concepts/images/data-connect-consent-request-a-new.png)
+    ![Screenshot of the org settings page with Privileged access highlighted.](../concepts/images/data-connect-consent-request-a-new.png)
 
-    ![A screenshot showing privileged access in the Microsoft 365 admin center.](../concepts/images/data-connect-consent-request-b-new.png)
+    ![Screenshot of the Privileged access pane.](../concepts/images/data-connect-consent-request-b-new.png)
 
 1. Select a pending **Data Access Request**.
 
