@@ -19,7 +19,7 @@ Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |isSingleLineQuestion|Boolean|Indicates whether the answer will be in single or multiple line format.|
-|regexPattern | String | This is the [regular expression pattern](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference) which the answer to this question must match.  |
+|regexPattern | String | The regular expression pattern which any answer to this question must match.  |
 |id|String|ID of the question. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
 |sequence|Int32|Relative position of this question when displaying a list of questions to the requestor. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
 |isRequired|Boolean|Indicates whether the requestor is required to supply an answer or not. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
