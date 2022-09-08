@@ -116,7 +116,7 @@ Content-Type: application/json
           "targetType": "group"
         }
       ]
-    }
+    },
     "applications":
     {
       "accessType": "allowed",
