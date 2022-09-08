@@ -1,25 +1,25 @@
 ---
 title: "National cloud deployments"
-description: "In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds."
-author: "arpitha-dhanapathi"
+description: "Learn about Microsoft Graph national cloud deployments and the capabilities that are available to developers within each."
+author: "adamedx"
 ms.localizationpriority: medium
 ---
 
 # National cloud deployments
 
-In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services that are confined within the geographic borders of specific countries and operated by local personnel.
+In addition to our global network of datacenters, Microsoft cloud services are available in two separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services that are confined within the geographic borders of specific countries and operated by local personnel.
 
 Current national clouds include:
 
-* Microsoft Cloud for US Government
-* Microsoft Cloud Germany
-* Azure and Microsoft 365 operated by 21Vianet in China
++ Microsoft Cloud for US Government
++ Microsoft Azure and Microsoft 365 operated by 21Vianet in China
 
-Each national cloud environment is unique and different than the Microsoft global environment. It is important to be aware of some of these key differences when you develop applications for national cloud environments; for example, registering applications, acquiring tokens, and calling the Microsoft Graph API can be different.
+Each national cloud environment is unique and different than the Microsoft global environment. It's important to be aware of some of these key differences when you develop applications for national cloud environments; for example, registering applications, acquiring tokens, and calling the Microsoft Graph API can be different.
 
 This article provides information about the different Microsoft Graph national cloud deployments and the capabilities that are available to developers within each.
 
-> **Note:** [Microsoft Graph Data Connect](./data-connect-concept-overview.md) does not support any of the national cloud deployments.
+> [!NOTE]
+> [Microsoft Graph Data Connect](./data-connect-concept-overview.md) does not support any of the national cloud deployments.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/R\_3E0IVypRM]
 
@@ -31,7 +31,6 @@ Before calling the Microsoft Graph APIs, you should first register your applicat
 | -------------- | ------------------------ | ----------------- |
 | Azure AD (global service) | https://portal.azure.com | `https://login.microsoftonline.com` |
 | Azure AD for US Government | https://portal.azure.us | `https://login.microsoftonline.us` |
-| Azure AD Germany | https://portal.microsoftazure.de | `https://login.microsoftonline.de` |
 | Azure AD China operated by 21Vianet | https://portal.azure.cn | `https://login.chinacloudapi.cn` |
 
 To learn more about access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For Azure AD authentication scenarios, see [Azure AD authentication basics](/azure/active-directory/develop/authentication-scenarios).
@@ -45,7 +44,6 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 | Microsoft Graph global service | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 | Microsoft Graph for US Government L4 | https://graph.microsoft.us | Not supported. |
 | Microsoft Graph for US Government L5 (DOD) | https://dod-graph.microsoft.us | Not supported. |
-| Microsoft Graph Germany | https://graph.microsoft.de | Not supported. |
 | Microsoft Graph China operated by 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 
 > [!IMPORTANT]
@@ -62,55 +60,52 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 
 The following Microsoft Graph features are generally available on the `/v1.0` endpoint across all national cloud deployments, except where noted.
 
-| Microsoft Graph features | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet | Microsoft Cloud Germany |
-| ------------------------ | --------------------------------- | ------------------------------------------ | ----------------------- |
-| Access reviews | ✔ | ✔ | ➖ |
-| Applications | ✔ | ➖ | ➖ |
-| Change notifications (webhooks) | ✔ | ✔ | ✔\* |
-| Delta query | ✔ | ✔ | ➖ |
-| Directory schema extensions | ✔ | ✔ | ➖ |
-| Excel | ✔ | ➖ | ✔ |
-| Groups | ✔ | ✔ | ✔ |
-| OneDrive | ✔ | ✔\* | ✔ |
-| Open type extensions | ✔ | ➖ | ➖ |
-| Organizational contacts | ✔ | ➖ | ➖ |
-| Outlook Calendar | ✔ | ✔ | ✔ |
-| Outlook Mail | ✔ | ✔ | ✔ |
-| Personal Contacts | ✔ | ✔ | ✔ |
-| Privileged identity management | ✔ | ✔ | ➖ |
-| Planner | ✔ | ✔ | ✔ |
-| Reports | ➖ | ➖ | ➖ |
-| Search (Microsoft Search) | ✔ | ➖ | ➖ |
-| Security | ✔ | ✔ | ✔ |
-| Service health and communications | ✔ | ✔ | ✔ |
-| Service principals | ✔ | ➖ | ➖ |
-| SharePoint | ✔ | ✔ | ✔ |
-| Teams | ✔ | ✔ | ✔ |
-| Users | ✔ | ✔ | ✔ |
+| Microsoft Graph features          | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet |
+|-----------------------------------|-----------------------------------|--------------------------------------------|
+| Access reviews                    | ✔                                | ✔                                          |
+| Applications                      | ✔                                | ➖                                          |
+| Change notifications (webhooks)   | ✔                                | ✔                                          |
+| Delta query                       | ✔                                | ✔                                          |
+| Directory extensions              | ✔                                | ✔                                          |
+| Excel                             | ✔                                | ➖                                          |
+| Groups                            | ✔                                | ✔                                          |
+| OneDrive                          | ✔                                | ✔\*                                        |
+| Open type extensions              | ✔                                | ➖                                          |
+| Organizational contacts           | ✔                                | ➖                                          |
+| Outlook Calendar                  | ✔                                | ✔                                          |
+| Outlook Mail                      | ✔                                | ✔                                          |
+| Personal Contacts                 | ✔                                | ✔                                          |
+| Privileged identity management    | ✔                                | ✔                                          |
+| Planner                           | ✔                                | ✔                                          |
+| Reports                           | ➖                                | ➖                                          |
+| Search (Microsoft Search)         | ✔                                | ➖                                          |
+| Security                          | ✔                                | ✔                                          |
+| Service health and communications | ✔                                | ✔                                          |
+| Service principals                | ✔                                | ➖                                          |
+| SharePoint                        | ✔                                | ✔                                          |
+| Teams                             | ✔                                | ✔                                          |
+| Users                             | ✔                                | ✔                                          |
 
-The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (v1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
+The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China. `v1.0` endpoints for these features are available in Microsoft Cloud for US Government only:
 
 * Organizational contacts
 * Applications
 * Service principals
 
-(\*) Limited support for Exchange and OneDrive services only. Azure AD services are not supported.
+(\*) Limited support for Exchange and OneDrive services only. Azure AD services aren't supported.
 
 > [!IMPORTANT]
 > Certain services and features that are in specific regions of the global service might not be available in all of the national clouds. To find out what services are available, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast).
 
-To learn more about National clouds, see the following topics:
+To learn more about National clouds, see the following articles:
 
-* [Microsoft National Clouds](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
-* [Microsoft 365 for US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
-* [Microsoft 365 operated by 21Vianet](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
-* [Office 365 Germany](/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
-* [Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
-* [Azure China 21Vianet](/azure/china/)
-* [Azure Germany](/azure/germany/)
++ [Microsoft National Clouds](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
++ [Microsoft 365 for US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
++ [Microsoft 365 operated by 21Vianet](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
++ [Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
++ [Azure China 21Vianet](/azure/china/)
 
 Explore samples for authenticating and working with Azure and Microsoft 365 in National cloud deployments:
 
-* [Work with Azure through Microsoft Graph for US Government](https://github.com/SteveWinward/Azure-Samples/blob/master/AAD/SampleAadToken_AzureForGovernment.ps1)
-* [Connect to US Government O365 environments (GCC, GCC High and GCC DoD) using Microsoft Graph PowerShell](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
-
++ [Work with Azure through Microsoft Graph for US Government](https://github.com/SteveWinward/Azure-Samples/blob/master/AAD/SampleAadToken_AzureForGovernment.ps1)
++ [Connect to US Government O365 environments (GCC, GCC High and GCC DoD) using Microsoft Graph PowerShell](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)

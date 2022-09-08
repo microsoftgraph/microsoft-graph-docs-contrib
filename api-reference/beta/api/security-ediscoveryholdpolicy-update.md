@@ -51,19 +51,21 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryH
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an updated [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object in the response body.
 
 ## Examples
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ediscoveryholdpolicy"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalholds/783c3ea4-d474-4051-9c13-08707ce8c8b6
+PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalholds/783c3ea4-d474-4051-9c13-08707ce8c8b6
 
 {
     "description": "updated description",
@@ -71,10 +73,33 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-ediscoveryholdpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-ediscoveryholdpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-ediscoveryholdpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-ediscoveryholdpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-ediscoveryholdpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

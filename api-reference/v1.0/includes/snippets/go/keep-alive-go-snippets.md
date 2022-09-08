@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-callId := "call-id"
-graphClient.Communications().CallsById(&callId).KeepAlive(call-id).Post()
+
+graphClient.Communications().CallsById("call-id").KeepAlive().Post()
 
 
 ```

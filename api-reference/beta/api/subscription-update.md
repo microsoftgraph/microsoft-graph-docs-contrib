@@ -2,7 +2,7 @@
 title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
 ms.localizationpriority: medium
-author: "Jumaodhiss"
+author: "jumasure"
 doc_type: apiPageType
 ms.prod: "change-notifications"
 ---
@@ -50,7 +50,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
-|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
 |[online meeting](../resources/onlinemeeting.md) | Not supported | Not supported | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Not supported | Not supported |
 |[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
@@ -80,6 +80,7 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 ### onlineMeetings, presence
 
 **onlineMeetings** and **presence** subscriptions require [encryption](/graph/webhooks-with-resource-data) for notifications with resource data. Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) and [encryptionCertificateId](../resources/subscription.md) are not specified if resource data is desired in notifications.
+For details about online meeting subscriptions, see [Get change notifications for online meetings](/graph/changenotifications-for-onlinemeeting).
 
 ## HTTP request
 
@@ -130,16 +131,13 @@ Content-type: application/json
    "expirationDateTime":"2016-11-22T18:23:45.9356913Z"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-subscription-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-subscription-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-subscription-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -152,6 +150,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-subscription-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-subscription-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

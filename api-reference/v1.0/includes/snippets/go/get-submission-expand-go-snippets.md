@@ -7,16 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.EducationSubmissionRequestBuilderGetQueryParameters{
-	Expand: "*",
+requestParameters := &graphconfig.EducationSubmissionRequestBuilderGetQueryParameters{
+	Expand: [] string {"*"},
 }
-options := &msgraphsdk.EducationSubmissionRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.EducationSubmissionRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-educationClassId := "educationClass-id"
-educationAssignmentId := "educationAssignment-id"
-educationSubmissionId := "educationSubmission-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

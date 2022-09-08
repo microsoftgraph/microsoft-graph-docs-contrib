@@ -25,6 +25,7 @@ Request for assignment filter evaluation for devices.
 |top|Int32|Limit of records per request. Default value is 100, if provided less than 0 or greater than 100|
 |skip|Int32|Number of records to skip. Default value is 0|
 |orderBy|String collection|Order the devices should be sorted in. Default is ascending on device name.|
+|search|String|Search keyword applied to scope found devices.|
 
 ## Relationships
 None
@@ -45,7 +46,8 @@ Here is a JSON representation of the resource.
   "skip": 1024,
   "orderBy": [
     "String"
-  ]
+  ],
+  "search": "String"
 }
 ```
 

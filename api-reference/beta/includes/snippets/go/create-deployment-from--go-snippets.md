@@ -7,36 +7,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewDeployment()
-content := msgraphsdk.NewDeployableContent()
+requestBody := graphmodels.NewDeployment()
+content := graphmodels.NewDeployableContent()
+additionalData := map[string]interface{}{
+	"version" : "20H2", 
+}
+content.SetAdditionalData(additionalData)
 requestBody.SetContent(content)
-content.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-	"version": "20H2",
-}
-settings := msgraphsdk.NewDeploymentSettings()
-requestBody.SetSettings(settings)
-rollout := msgraphsdk.NewRolloutSettings()
-settings.SetRollout(rollout)
+settings := graphmodels.NewDeploymentSettings()
+rollout := graphmodels.NewRolloutSettings()
 devicesPerOffer := int32(100)
-rollout.SetDevicesPerOffer(&devicesPerOffer)
-monitoring := msgraphsdk.NewMonitoringSettings()
+rollout.SetDevicesPerOffer(&devicesPerOffer) 
+settings.SetRollout(rollout)
+monitoring := graphmodels.NewMonitoringSettings()
+
+
+monitoringRule := graphmodels.NewMonitoringRule()
+signal := graphmodels.ROLLBACK_MONITORINGSIGNAL 
+monitoringRule.SetSignal(&signal) 
+threshold := int32(5)
+monitoringRule.SetThreshold(&threshold) 
+action := graphmodels.PAUSEDEPLOYMENT_MONITORINGACTION 
+monitoringRule.SetAction(&action) 
+
+monitoringRules := []graphmodels.MonitoringRuleable {
+	monitoringRule,
+
+}
+monitoring.SetMonitoringRules(monitoringRules)
 settings.SetMonitoring(monitoring)
-monitoring.SetMonitoringRules( []MonitoringRule {
-	msgraphsdk.NewMonitoringRule(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
-		"signal": "rollback",
-		"threshold": ,
-		"action": "pauseDeployment",
-	}
-}
-settings.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-}
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.windowsUpdates.deployment",
-}
+requestBody.SetSettings(settings)
+
 result, err := graphClient.Admin().Windows().Updates().Deployments().Post(requestBody)
 
 

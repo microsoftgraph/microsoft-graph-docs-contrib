@@ -70,7 +70,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "calendar_list_events"
+  "name": "calendar_list_events_for_me"
 }-->
 
 ```msgraph-interactive
@@ -78,23 +78,23 @@ GET https://graph.microsoft.com/beta/me/calendar/events
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/calendar-list-events-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/calendar-list-events-for-me-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-list-events-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/calendar-list-events-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-list-events-for-me-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-for-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/calendar-list-events-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/calendar-list-events-for-me-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/calendar-list-events-for-me-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -175,30 +175,31 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "calendar_list_events"
+  "name": "calendar_list_events_for_me_by_subject"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendar/events?$filter=startsWith(subject,'All')
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/calendar-list-events-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/calendar-list-events-for-me-by-subject-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-list-events-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/calendar-list-events-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-list-events-for-me-by-subject-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-for-me-by-subject-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/calendar-list-events-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/calendar-list-events-for-me-by-subject-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/calendar-list-events-for-me-by-subject-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

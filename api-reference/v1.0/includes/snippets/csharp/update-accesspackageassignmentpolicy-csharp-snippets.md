@@ -12,6 +12,7 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 	DisplayName = "All Users",
 	Description = "All users can request for access to the directory.",
 	AllowedTargetScope = AllowedTargetScope.AllDirectoryUsers,
+	AutomaticRequestSettings = null,
 	SpecificAllowedTargets = new List<SubjectSet>()
 	{
 	},

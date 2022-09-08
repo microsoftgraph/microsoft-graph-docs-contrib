@@ -7,12 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTeamsAppInstallation()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a",
+requestBody := graphmodels.NewTeamsAppInstallation()
+additionalData := map[string]interface{}{
+	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a", 
 }
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).InstalledApps().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.TeamsById("team-id").InstalledApps().Post(requestBody)
 
 
 ```

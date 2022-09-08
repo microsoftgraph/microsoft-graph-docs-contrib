@@ -2,7 +2,7 @@
 title: "List subscriptions"
 description: " see the scenarios below for details."
 ms.localizationpriority: medium
-author: "Jumaodhiss"
+author: "jumasure"
 doc_type: apiPageType
 ms.prod: "change-notifications"
 ---
@@ -48,7 +48,7 @@ This API supports the following permission scopes; to learn more, including how 
 |[group](../resources/group.md) | Group.Read.All, Subscription.Read.All | Not supported | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All, Subscription.Read.All | Not supported | Not supported |
 |[list](../resources/list.md) | Sites.ReadWrite.All, Subscription.Read.All | Not supported | Sites.ReadWrite.All |
-|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.ReadBasic, Mail.Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.Read |
 |[online meeting](../resources/onlinemeeting.md) | Not supported | Not supported | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All, Subscription.Read.All | Not supported | Not supported |
 |[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
@@ -122,16 +122,13 @@ If successful, this method returns a `200 OK` response code and a list of [subsc
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscriptions
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscriptions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscriptions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-subscriptions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -144,6 +141,10 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-subscriptions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-subscriptions-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

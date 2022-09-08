@@ -74,7 +74,7 @@ The following table shows the properties that are required when you create the [
 |alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
 |microsoftTunnelSiteId|String|Microsoft Tunnel site ID.|
 |customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) collection|Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.|
-|customKeyValueData|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) collection|Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.|
+|customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.|
 
 
 

@@ -7,19 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-notes := msgraphsdk.NewItemBody()
-requestBody.SetNotes(notes)
-contentType := "text"
-notes.SetContentType(&contentType)
+requestBody := graphmodels.NewClockOutPostRequestBody()
+notes := graphmodels.NewItemBody()
+contentType := graphmodels.TEXT_BODYTYPE 
+notes.SetContentType(&contentType) 
 content := "clock out smaple notes"
-notes.SetContent(&content)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"atAprovedLocation": true,
+notes.SetContent(&content) 
+requestBody.SetNotes(notes)
+additionalData := map[string]interface{}{
+	atAprovedLocation := true
+requestBody.SetAtAprovedLocation(&atAprovedLocation) 
 }
-teamId := "team-id"
-timeCardId := "timeCard-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).ClockOut(team-id, timeCard-id).Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.TeamsById("team-id").Schedule().TimeCardsById("timeCard-id").ClockOut().Post(requestBody)
 
 
 ```

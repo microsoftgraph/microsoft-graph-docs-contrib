@@ -7,52 +7,83 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewContentType()
+requestBody := graphmodels.NewContentType()
 name := "updatedCt"
-requestBody.SetName(&name)
-documentSet := msgraphsdk.NewDocumentSet()
-requestBody.SetDocumentSet(documentSet)
+requestBody.SetName(&name) 
+documentSet := graphmodels.NewDocumentSet()
 shouldPrefixNameToFile := true
-documentSet.SetShouldPrefixNameToFile(&shouldPrefixNameToFile)
-documentSet.SetAllowedContentTypes( []ContentTypeInfo {
-	msgraphsdk.NewContentTypeInfo(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "0x0101",
-		"name": "Document",
-	}
+documentSet.SetShouldPrefixNameToFile(&shouldPrefixNameToFile) 
+
+
+contentTypeInfo := graphmodels.NewContentTypeInfo()
+id := "0x0101"
+contentTypeInfo.SetId(&id) 
+name := "Document"
+contentTypeInfo.SetName(&name) 
+
+allowedContentTypes := []graphmodels.ContentTypeInfoable {
+	contentTypeInfo,
+
 }
-documentSet.SetDefaultContents( []DocumentSetContent {
-	msgraphsdk.NewDocumentSetContent(),
-	SetAdditionalData(map[string]interface{}{
-		"fileName": "a.txt",
-	}
-	msgraphsdk.NewDocumentSetContent(),
-	SetAdditionalData(map[string]interface{}{
-		"fileName": "b.txt",
-	}
+documentSet.SetAllowedContentTypes(allowedContentTypes)
+
+
+documentSetContent := graphmodels.NewDocumentSetContent()
+fileName := "a.txt"
+documentSetContent.SetFileName(&fileName) 
+contentType := graphmodels.NewContentTypeInfo()
+id := "0x0101"
+contentType.SetId(&id) 
+documentSetContent.SetContentType(contentType)
+documentSetContent1 := graphmodels.NewDocumentSetContent()
+fileName := "b.txt"
+documentSetContent1.SetFileName(&fileName) 
+contentType := graphmodels.NewContentTypeInfo()
+id := "0x0101"
+contentType.SetId(&id) 
+documentSetContent1.SetContentType(contentType)
+
+defaultContents := []graphmodels.DocumentSetContentable {
+	documentSetContent,
+	documentSetContent1,
+
 }
-documentSet.SetSharedColumns( []ColumnDefinition {
-	msgraphsdk.NewColumnDefinition(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "Description",
-		"id": "cbb92da4-fd46-4c7d-af6c-3128c2a5576e",
-	}
-	msgraphsdk.NewColumnDefinition(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "Address",
-		"id": "fc2e188e-ba91-48c9-9dd3-16431afddd50",
-	}
+documentSet.SetDefaultContents(defaultContents)
+
+
+columnDefinition := graphmodels.NewColumnDefinition()
+name := "Description"
+columnDefinition.SetName(&name) 
+id := "cbb92da4-fd46-4c7d-af6c-3128c2a5576e"
+columnDefinition.SetId(&id) 
+columnDefinition1 := graphmodels.NewColumnDefinition()
+name := "Address"
+columnDefinition1.SetName(&name) 
+id := "fc2e188e-ba91-48c9-9dd3-16431afddd50"
+columnDefinition1.SetId(&id) 
+
+sharedColumns := []graphmodels.ColumnDefinitionable {
+	columnDefinition,
+	columnDefinition1,
+
 }
-documentSet.SetWelcomePageColumns( []ColumnDefinition {
-	msgraphsdk.NewColumnDefinition(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "Address",
-		"id": "fc2e188e-ba91-48c9-9dd3-16431afddd50",
-	}
+documentSet.SetSharedColumns(sharedColumns)
+
+
+columnDefinition := graphmodels.NewColumnDefinition()
+name := "Address"
+columnDefinition.SetName(&name) 
+id := "fc2e188e-ba91-48c9-9dd3-16431afddd50"
+columnDefinition.SetId(&id) 
+
+welcomePageColumns := []graphmodels.ColumnDefinitionable {
+	columnDefinition,
+
 }
-siteId := "site-id"
-contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).Patch(requestBody)
+documentSet.SetWelcomePageColumns(welcomePageColumns)
+requestBody.SetDocumentSet(documentSet)
+
+graphClient.SitesById("site-id").ContentTypesById("contentType-id").Patch(requestBody)
 
 
 ```

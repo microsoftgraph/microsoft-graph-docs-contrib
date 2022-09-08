@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewDevice()
+requestBody := graphmodels.NewDevice()
 accountEnabled := false
-requestBody.SetAccountEnabled(&accountEnabled)
-deviceId := "device-id"
-graphClient.DevicesById(&deviceId).Patch(requestBody)
+requestBody.SetAccountEnabled(&accountEnabled) 
+
+graphClient.DevicesById("device-id").Patch(requestBody)
 
 
 ```

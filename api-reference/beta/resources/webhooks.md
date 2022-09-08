@@ -2,7 +2,7 @@
 title: "Use the Microsoft Graph API to get change notifications"
 description: "Deliver change notifications to clients."
 ms.localizationpriority: medium
-author: "Jumaodhiss"
+author: "jumasure"
 doc_type: conceptualPageType
 ms.prod: "change-notifications"
 ---
@@ -37,11 +37,11 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Teams [chat][] | Changes to any chat in the tenant:<br>`/chats` <br>Changes to a specific chat:<br>`/chats/{id}` | Yes |
 | Teams [chatmessage][] | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages`<br>Changes to chat messages in all chats a particular user is part of:<br>`/users/{id}/chats/getAllMessages` | Yes |
 | Teams [conversationMember][] | Changes to membership in a specific team:<br>`/teams/{id}/members` <br> Changes to membership in a specific chat:<br>`/chats/{id}/members` <br> Changes to membership in all chats:<br>`/chats/getAllMembers` <br> Changes to membership in all channels under a specific team:<br>`teams/{id}/channels/getAllMembers` | Yes |
-| Teams [onlineMeeting][] | Changes to an online meeting: <br>`/communications/onlinemeeting/{meeting-id}` | Yes |
+| Teams [onlineMeeting][] | Changes to an online meeting: <br>`/communications/onlineMeetings/?$filter=JoinWebUrl eq {joinWebUrl}` | Yes |
 | Teams [presence][] | Changes to a single user's presence: `/communications/presences/{id}` <br> Changes to multiple user presences:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Yes |
 | Teams [team][] | Changes to any team in the tenant:<br>`/teams` <br>Changes to a specific team:<br>`/teams/{id}` | Yes |
 | To Do [baseTask][] (deprecated) | Changes to all task in a specific task list:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>Changes to all tasks:<br>`/me/tasks/lists/alltasks` | No |
-| [To Do task][] | Changes to all task in a specific task list:<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>Changes to all tasks:<br>`/me/todo/lists/alltasks` | No |
+| [To Do task][] | Changes to all task in a specific task list:<br>`/me/todo/lists/{todoTaskListId}/tasks` | No |
 | [user][] | Changes to all users:<br>`/users` <br>Changes to a specific user:<br>`/users/{id}`| No |
 
 
@@ -89,4 +89,3 @@ In general, subscription operations require read permission to the resource. For
 [todoTask]: ./todotask.md
 [To Do task]: ./todotask.md
 [onlineMeeting]: ./onlinemeeting.md
-

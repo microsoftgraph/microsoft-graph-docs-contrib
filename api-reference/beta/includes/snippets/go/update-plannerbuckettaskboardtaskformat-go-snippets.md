@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPlannerBucketTaskBoardTaskFormat()
-orderHint := "A6673H Ejkl!"
-requestBody.SetOrderHint(&orderHint)
 headers := map[string]string{
-	"Prefer": "return=representation"
-	"If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
+	"Prefer": "return=representation",
+	"If-Match": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
 }
-options := &msgraphsdk.BucketTaskBoardFormatRequestBuilderPatchRequestConfiguration{
+configuration := &graphconfig.BucketTaskBoardFormatRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
-plannerTaskId := "plannerTask-id"
-graphClient.Planner().TasksById(&plannerTaskId).BucketTaskBoardFormat().PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
+requestBody := graphmodels.NewPlannerBucketTaskBoardTaskFormat()
+orderHint := "A6673H Ejkl!"
+requestBody.SetOrderHint(&orderHint) 
+
+graphClient.Planner().TasksById("plannerTask-id").BucketTaskBoardFormat().PatchWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
 
 
 ```

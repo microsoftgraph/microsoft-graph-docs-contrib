@@ -42,27 +42,25 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_inferenceclassificationoverride"
+  "name": "delete_inferenceclassificationoverride",
+  "sampleKeys": ["98f5bdef-576a-404d-a2ea-07a3cf34af4"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4r
+DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-inferenceclassificationoverride-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-inferenceclassificationoverride-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-inferenceclassificationoverride-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -77,10 +75,14 @@ DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-inferenceclassificationoverride-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-inferenceclassificationoverride-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

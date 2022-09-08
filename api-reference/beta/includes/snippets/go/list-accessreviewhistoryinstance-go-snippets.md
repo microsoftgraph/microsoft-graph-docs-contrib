@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-accessReviewHistoryDefinitionId := "accessReviewHistoryDefinition-id"
-result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitionsById(&accessReviewHistoryDefinitionId).Instances().Get()
+
+result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitionsById("accessReviewHistoryDefinition-id").Instances().Get()
 
 
 ```

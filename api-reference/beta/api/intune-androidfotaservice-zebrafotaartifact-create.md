@@ -48,12 +48,13 @@ The following table shows the properties that are required when you create the z
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Id of ZebraFotaArtifact.|
-|deviceModel|String|Artifact device model.|
-|osVersion|String|Artifact OS version.|
-|patchVersion|String|Artifact patch version.|
-|boardSupportPackageVersion|String|The version of the Board Support Package.|
-|releaseNotesUrl|String|Artifact release notes URL.|
+|id|String|Artifact unique ID from Zebra|
+|deviceModel|String|Applicable device model (e.g.: `TC8300`) |
+|osVersion|String|Artifact OS version (e.g.: `8.1.0`) |
+|patchVersion|String|Artifact patch version (e.g.: `U00`)|
+|boardSupportPackageVersion|String|The version of the Board Support Package (BSP. E.g.: `01.18.02.00`)|
+|releaseNotesUrl|String|Artifact release notes URL (e.g.: `https://www.zebra.com/<filename.pdf>`)|
+|description|String|Artifact description. (e.g.: `LifeGuard Update 98 (released 24-September-2021)|
 
 
 
@@ -67,7 +68,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/zebraFotaArtifacts
 Content-type: application/json
-Content-length: 311
+Content-length: 350
 
 {
   "@odata.type": "#microsoft.graph.zebraFotaArtifact",
@@ -75,7 +76,8 @@ Content-length: 311
   "osVersion": "Os Version value",
   "patchVersion": "Patch Version value",
   "boardSupportPackageVersion": "Board Support Package Version value",
-  "releaseNotesUrl": "https://example.com/releaseNotesUrl/"
+  "releaseNotesUrl": "https://example.com/releaseNotesUrl/",
+  "description": "Description value"
 }
 ```
 
@@ -84,7 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 360
+Content-Length: 399
 
 {
   "@odata.type": "#microsoft.graph.zebraFotaArtifact",
@@ -93,7 +95,8 @@ Content-Length: 360
   "osVersion": "Os Version value",
   "patchVersion": "Patch Version value",
   "boardSupportPackageVersion": "Board Support Package Version value",
-  "releaseNotesUrl": "https://example.com/releaseNotesUrl/"
+  "releaseNotesUrl": "https://example.com/releaseNotesUrl/",
+  "description": "Description value"
 }
 ```
 

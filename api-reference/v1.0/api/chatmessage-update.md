@@ -62,12 +62,14 @@ specifying only the **policyViolation** property.
 
 ## Response body
 For applications that use delegated permissions:
-If successful, this method returns a `204 NoContent` response.
+If successful, this method returns a `204 No Content` response.
 
 For applications that use application permissions:
 If successful, this method returns a `200 OK` response.
 
-## Example for updating policyViolation by using application permissions
+## Examples
+
+### Example 1: Update policyViolation property using application permissions
 
 #### Request
 
@@ -77,7 +79,8 @@ The following is an example of the request to update the **policyViolation** pro
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chatMessage.PatchPolicyViolation.All"
+  "name": "chatMessage.PatchPolicyViolation.All",
+  "sampleKeys": ["e1234567-e123-4276-55555-6232b0e3a89a", "a7654321-e321-0000-0000-123b0e3a00a", "19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
@@ -95,16 +98,13 @@ Content-Type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessagepatchpolicyviolationall-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chatmessagepatchpolicyviolationall-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/chatmessagepatchpolicyviolationall-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -117,6 +117,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/chatmessagepatchpolicyviolationall-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/chatmessagepatchpolicyviolationall-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -132,6 +136,7 @@ Here is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -146,7 +151,7 @@ HTTP/1.1 200 OK
 
 
 
-## Example for updating any property of a message by using delegated permissions
+### Example 2: Update any property of a message using delegated permissions
 
 #### Request
 
@@ -160,6 +165,7 @@ The following is an example of the request to update the properties on a Microso
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
+
 {
   "messageType": "message",
   "subject": null,
@@ -198,7 +204,9 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the mentions of a message by using delegated permissions
+### Example 3: Update the mentions of a message using delegated permissions
+
+#### Request
 
 The following is an example of the request to update the mentions on a Microsoft Teams channel message by using delegated permissions.
 
@@ -210,6 +218,7 @@ The following is an example of the request to update the mentions on a Microsoft
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
+
 {
   "messageType": "message",
   "deletedDateTime": null,
@@ -278,7 +287,8 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the content with attachments of a message by using delegated permissions
+### Example 4: Update the content with attachments of a message using delegated permissions
+#### Request
 
 The following is an example of the request to update the attachments on a Microsoft Teams channel message by using delegated permissions.
 
@@ -290,6 +300,7 @@ The following is an example of the request to update the attachments on a Micros
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
+
 {
   "messageType": "message",
   "subject": null,
@@ -345,7 +356,9 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the reactions in a message by using delegated permissions
+### Example 5: Update the reactions in a message using delegated permissions
+
+#### Request
 
 The following is an example of the request to update the reactions property on a Microsoft Teams channel message by using delegated permissions.
 
@@ -358,6 +371,7 @@ The following is an example of the request to update the reactions property on a
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
+
 {
   "messageType": "message",
   "subject": null,

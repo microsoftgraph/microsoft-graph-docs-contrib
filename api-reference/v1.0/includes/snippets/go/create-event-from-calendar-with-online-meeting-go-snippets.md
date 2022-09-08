@@ -7,43 +7,54 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEvent()
+requestBody := graphmodels.NewEvent()
 subject := "Let's go for lunch"
-requestBody.SetSubject(&subject)
-body := msgraphsdk.NewItemBody()
-requestBody.SetBody(body)
-contentType := "HTML"
-body.SetContentType(&contentType)
+requestBody.SetSubject(&subject) 
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "Does next month work for you?"
-body.SetContent(&content)
-start := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetStart(start)
+body.SetContent(&content) 
+requestBody.SetBody(body)
+start := graphmodels.NewDateTimeTimeZone()
 dateTime := "2019-03-10T12:00:00"
-start.SetDateTime(&dateTime)
+start.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-start.SetTimeZone(&timeZone)
-end := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetEnd(end)
+start.SetTimeZone(&timeZone) 
+requestBody.SetStart(start)
+end := graphmodels.NewDateTimeTimeZone()
 dateTime := "2019-03-10T14:00:00"
-end.SetDateTime(&dateTime)
+end.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-end.SetTimeZone(&timeZone)
-location := msgraphsdk.NewLocation()
-requestBody.SetLocation(location)
+end.SetTimeZone(&timeZone) 
+requestBody.SetEnd(end)
+location := graphmodels.NewLocation()
 displayName := "Harry's Bar"
-location.SetDisplayName(&displayName)
-requestBody.SetAttendees( []Attendee {
-	msgraphsdk.NewAttendee(),
-	SetAdditionalData(map[string]interface{}{
-		"type": "required",
-	}
+location.SetDisplayName(&displayName) 
+requestBody.SetLocation(location)
+
+
+attendee := graphmodels.NewAttendee()
+emailAddress := graphmodels.NewEmailAddress()
+address := "adelev@contoso.onmicrosoft.com"
+emailAddress.SetAddress(&address) 
+name := "Adele Vance"
+emailAddress.SetName(&name) 
+attendee.SetEmailAddress(emailAddress)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendee.SetType(&type) 
+
+attendees := []graphmodels.Objectable {
+	attendee,
+
 }
+requestBody.SetAttendees(attendees)
 isOnlineMeeting := true
-requestBody.SetIsOnlineMeeting(&isOnlineMeeting)
-onlineMeetingProvider := "teamsForBusiness"
-requestBody.SetOnlineMeetingProvider(&onlineMeetingProvider)
-calendarId := "calendar-id"
-result, err := graphClient.Me().CalendarsById(&calendarId).Events().Post(requestBody)
+requestBody.SetIsOnlineMeeting(&isOnlineMeeting) 
+onlineMeetingProvider := graphmodels.TEAMSFORBUSINESS_ONLINEMEETINGPROVIDERTYPE 
+requestBody.SetOnlineMeetingProvider(&onlineMeetingProvider) 
+
+result, err := graphClient.Me().CalendarsById("calendar-id").Events().Post(requestBody)
 
 
 ```

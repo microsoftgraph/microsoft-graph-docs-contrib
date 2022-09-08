@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryEstimateOperations"
+title: "List lastEstimateStatisticsOperation"
 description: "Get the last ediscoveryEstimateOperation object and its properties."
 author: "SeunginLyu"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# List ediscoveryEstimateOperations
+# List lastEstimateStatisticsOperation
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the last  [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.
+Get the last [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.
 
 >**Note:** This method only lists the last operation; it does not return a history of all operations.
 
@@ -48,24 +48,53 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) object in the response body.
 
 ## Examples
 
 ### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_ediscoveryestimateoperation"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/lastEstimateStatisticsOperation
+GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/lastEstimateStatisticsOperation
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoveryestimateoperation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-ediscoveryestimateoperation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-ediscoveryestimateoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-ediscoveryestimateoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-ediscoveryestimateoperation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-ediscoveryestimateoperation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

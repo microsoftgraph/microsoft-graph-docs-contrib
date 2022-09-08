@@ -7,38 +7,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewProjectParticipation()
-requestBody.SetCategories( []String {
+requestBody := graphmodels.NewProjectParticipation()
+categories := []string {
 	"Branding",
+
 }
-client := msgraphsdk.NewCompanyDetail()
-requestBody.SetClient(client)
+requestBody.SetCategories(categories)
+client := graphmodels.NewCompanyDetail()
 displayName := "Contoso Ltd."
-client.SetDisplayName(&displayName)
+client.SetDisplayName(&displayName) 
 department := "Corporate Marketing"
-client.SetDepartment(&department)
+client.SetDepartment(&department) 
 webUrl := "https://www.contoso.com"
-client.SetWebUrl(&webUrl)
+client.SetWebUrl(&webUrl) 
+requestBody.SetClient(client)
 displayName := "Contoso Re-branding Project"
-requestBody.SetDisplayName(&displayName)
-detail := msgraphsdk.NewPositionDetail()
-requestBody.SetDetail(detail)
-company := msgraphsdk.NewCompanyDetail()
-detail.SetCompany(company)
+requestBody.SetDisplayName(&displayName) 
+detail := graphmodels.NewPositionDetail()
+company := graphmodels.NewCompanyDetail()
 displayName := "Adventureworks Inc."
-company.SetDisplayName(&displayName)
+company.SetDisplayName(&displayName) 
 department := "Consulting"
-company.SetDepartment(&department)
+company.SetDepartment(&department) 
 webUrl := "https://adventureworks.com"
-company.SetWebUrl(&webUrl)
+company.SetWebUrl(&webUrl) 
+detail.SetCompany(company)
 description := "Rebranding of Contoso Ltd."
-detail.SetDescription(&description)
+detail.SetDescription(&description) 
 jobTitle := "Lead PM Rebranding"
-detail.SetJobTitle(&jobTitle)
+detail.SetJobTitle(&jobTitle) 
 role := "project management"
-detail.SetRole(&role)
+detail.SetRole(&role) 
 summary := "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
-detail.SetSummary(&summary)
+detail.SetSummary(&summary) 
+requestBody.SetDetail(detail)
+
 result, err := graphClient.Me().Profile().Projects().Post(requestBody)
 
 
