@@ -418,6 +418,7 @@ Here is a JSON representation of the resource
   "displayName": "String",
   "employeeHireDate": "2020-01-01T00:00:00Z",
   "employeeId": "String",
+  "employeeLeaveDateTime": "String (timestamp)",
   "employeeOrgData": {"@odata.type": "microsoft.graph.employeeOrgData"},
   "employeeType": "String",
   "externalUserState": "PendingAcceptance",
