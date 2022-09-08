@@ -171,7 +171,7 @@ Content-Type: application/json
     "device": null,
     "user": {
       "id": "3b102402-813e-4e17-a6b2-f841aef1fdfc",
-      "displayName": "Sumit Gupta",
+      "displayName": "Lam Cong",
       "userIdentityType": "aadUser"
     },
     "conversation": null
@@ -223,7 +223,7 @@ Content-Type: application/json
     "conversation": null,
     "user": {
       "id": "6b3f3c54-d09c-4fdd-b146-9b514a8a4f40",
-      "displayName": "Sumit Gupta",
+      "displayName": "Lam Cong",
       "userIdentityType": "aadUser"
     }
   },
@@ -301,7 +301,7 @@ Content-Type: application/json
     "device": null,
     "user": {
       "id": "3b102402-813e-4e17-a6b2-f841aef1fdfc",
-      "displayName": "Sumit Gupta",
+      "displayName": "Lam Cong",
       "userIdentityType": "aadUser"
     },
     "conversation": null
@@ -369,7 +369,7 @@ Content-Type: application/json
     "device": null,
     "user": {
       "id": "3b102402-813e-4e17-a6b2-f841aef1fdfc",
-      "displayName": "Sumit Gupta",
+      "displayName": "Lam Cong",
       "userIdentityType": "aadUser"
     },
     "conversation": null
