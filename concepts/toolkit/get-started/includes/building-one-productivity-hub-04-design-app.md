@@ -1,64 +1,69 @@
+---
+ms.localizationpriority: medium
+---
+
+<!-- markdownlint-disable MD041 -->
+
 In this step, you'll design your web app by using Microsoft Graph Toolkit components and style it with CSS.
 
 ## Initialize the Login component
 
 In **index.html** in the `<body></body>`section, add the following code under the provider.
 
-  ```html
-  <div>
-    <mgt-login />
-  </div>
-  ```
-
+```html
+<div>
+  <mgt-login />
+</div>
+```
 
 ## Create a title and column for the rest of the components
 
 To make your app look structured, create a title and a column for each feature that will be added in the One Productivity Hub. In **index.html** under `<body></body>`, add the following HTML code inside the div, under the login component.
 
-  ```HTML
-  <div class="features">
+```HTML
+<div class="features">
 
-    <div class="header"><div class="title">
-      <h2>One Productivity Hub</h2>
-      <div class="row">
-        <div class="column"><h3>Calendar events</h3></div>
-        <div class="column"><h3>To-do tasks</h3></div>
-        <div class="column"><h3>Files</h3></div>
-      </div>
-    </div></div>
-
-    <div class="row" id="content">
-      <div class="column" id="mgt-col"></div>
-      <div class="column" id="mgt-col"></div>
-      <div class="column" id="mgt-col"></div>
+  <div class="header"><div class="title">
+    <h2>One Productivity Hub</h2>
+    <div class="row">
+      <div class="column"><h3>Calendar events</h3></div>
+      <div class="column"><h3>To-do tasks</h3></div>
+      <div class="column"><h3>Files</h3></div>
     </div>
+  </div></div>
 
+  <div class="row" id="content">
+    <div class="column" id="mgt-col"></div>
+    <div class="column" id="mgt-col"></div>
+    <div class="column" id="mgt-col"></div>
   </div>
-  ```
+
+</div>
+```
 
 ### Agenda component
 
 Under the div tagged with `class="row"`, add the Agenda component inside the first column div.
 
-  ```HTML
-  <mgt-agenda />
-  ```
+```HTML
+<mgt-agenda />
+```
 
 ### To-do component
 
 Under the div tagged with `class="row"`, add the To-do component inside the second column div.
 
-  ```HTML
-  <mgt-todo />
-  ```
+```HTML
+<mgt-todo />
+```
 
 ### FileList component
 
 Under the div tagged with `class="row"`, add the File list component inside the third column div.
 
-  ```HTML
-  <mgt-file-list />
-  ```
+```HTML
+<mgt-file-list />
+```
 
 ## Style your web app with CSS
 
@@ -90,7 +95,7 @@ Under the div tagged with `class="row"`, add the File list component inside the 
         font-size: 24px;
         padding-left: 5px;
         display: inline;
-        font-weight: 600;    
+        font-weight: 600;
     }
     .title h3 {
         float: left;
@@ -103,7 +108,7 @@ Under the div tagged with `class="row"`, add the File list component inside the 
         color: #8A8886;
         font-weight: 600;
     }
-    mgt-login {   
+    mgt-login {
         margin-left: 20px;
         --avatar-size: 60px;
         --font-family: 'Segoe UI';
@@ -117,7 +122,7 @@ Under the div tagged with `class="row"`, add the File list component inside the 
         --line2-text-transform: none;
     }
     #content, html, body {
-        height: 98%; 
+        height: 98%;
       }
     #mgt-col {
       float: left;
@@ -150,11 +155,11 @@ Under the div tagged with `class="row"`, add the File list component inside the 
         <title>One Productivity Hub</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-        <script src='main.js'></script> 
+        <script src='main.js'></script>
       </head>
       <body>
         <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
-        <mgt-msal2-provider 
+        <mgt-msal2-provider
             client-id="<YOUR_CLIENT_ID>"
             scopes="User.Read,
             User.ReadBasic.All,
@@ -164,8 +169,8 @@ Under the div tagged with `class="row"`, add the File list component inside the 
             Sites.Read.All,
             Tasks.Read,
             Tasks.ReadWrite,
-            People.Read">    
-        </mgt-msal2-provider>    
+            People.Read">
+        </mgt-msal2-provider>
         <div>
           <mgt-login />
         </div>
