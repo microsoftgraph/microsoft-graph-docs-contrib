@@ -35,7 +35,7 @@ In contrast, for item insights and [meeting hours insights](https://support.micr
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. The default setting for _contact insights_ is `false`. The default setting for _item insights_ or _people insights_ is `true`. Optional.|
+|isEnabledInOrganization|Boolean| `true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default is `true`. Optional.|
 |disabledForGroup|String| The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
 
 ## JSON representation
