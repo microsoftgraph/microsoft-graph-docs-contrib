@@ -76,6 +76,11 @@ The following is a JSON representation of the resource.
   "requestorSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentRequestorSettings"
   },
+  "questions": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageMultipleChoiceQuestion"
+    }
+  ],
   "requestApprovalSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentApprovalSettings"
   },

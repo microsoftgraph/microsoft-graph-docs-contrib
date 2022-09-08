@@ -16,7 +16,7 @@ A complex type used to represent a string in a specific language.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|languageCode|String|The ISO code for the intended language. Required. |
+|languageCode|String|The language code that `text` is in. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso-639-language-codes.html), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso-3166-country-codes.html). Required. |
 |text|String|The text in the specific language. Required. |
 
 ## Relationships

@@ -32,10 +32,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageAnswer",
+  "displayValue": "String",
   "answeredQuestion": {
     "@odata.type": "microsoft.graph.accessPackageQuestion"
-  },
-  "displayValue": "String",
+  }
 }
 ```
 

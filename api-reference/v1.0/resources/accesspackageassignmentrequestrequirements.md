@@ -44,7 +44,12 @@ The following is a JSON representation of the resource.
   "allowCustomAssignmentSchedule": "Boolean",
   "schedule": {
     "@odata.type": "microsoft.graph.entitlementManagementSchedule"
-  }
+  },
+  "questions": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageMultipleChoiceQuestion"
+    }
+  ]
 }
 ```
 

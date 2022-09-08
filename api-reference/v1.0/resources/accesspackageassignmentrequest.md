@@ -34,6 +34,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|The range of dates that access is to be assigned to the requestor. This property cannot be changed once set.|
 |state|accessPackageRequestState|The state of the request. The possible values are: `submitted`, `pendingApproval`, `delivering`, `delivered`, `deliveryFailed`, `denied`, `scheduled`, `canceled`, `partiallyDelivered`, `unknownFutureValue`. Read-only. Supports `$filter` (`eq`). |
 |status|String|More information on the request processing status. Read-only.|
+|answers|[accessPackageAnswer](accesspackageanswer.md) collection|Answers provided by the requestor to [accessPackageQuestions](accesspackagequestion.md) asked of them at the time of request.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -62,7 +63,12 @@ The following is a JSON representation of the resource.
   "completedDateTime": "String (timestamp)",
   "schedule": {
     "@odata.type": "microsoft.graph.entitlementManagementSchedule"
-  }
+  },
+  "answers": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageAnswer"
+    }
+  ],
 }
 ```
 
