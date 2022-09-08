@@ -89,7 +89,7 @@ When creating a new group (without `$ref`), this method returns a `201 Created` 
 
 ## Examples
 ### Example 1: Add an existing user or group
-The following will add an existing user or group to the administrative unit.
+The following request adds an existing user or group to an administrative unit.
 
 #### Request
 The following is an example of the request.
