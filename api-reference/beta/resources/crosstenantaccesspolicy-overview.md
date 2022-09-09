@@ -15,9 +15,13 @@ Namespace: microsoft.graph
 
 In the traditional Azure AD B2B collaboration, any invited user from an organization could use their identity to access resources in external organizations. Administrators didn't have control over the user identities in their tenant that are allowed to sign in to external organizations. These limited controls made it difficult to prevent identities from your organization from being used in unauthorized ways.
 
-**Cross-tenant access settings** let you control and manage collaboration between users in your organization and other organizations. The control can be on either **outbound access** (how your users collaborate with other organizations), **inbound access** (how other organizations collaborate with you), or **tenant restrictions access** (how your users collaborate with other organizations using other organization identities from your network or devices), or all.
+**Cross-tenant access settings** let you control and manage collaboration between users in your organization and other organizations. The control can be on one or a combination of the following:
 
-Granular controls let you determine the users, groups, and apps, both in your organization and in external organizations, that can participate in Azure AD B2B collaboration and Azure AD B2B direct connect and Azure AD Tenant Restrictions. These controls are implemented through:
++ **outbound access** - how your users collaborate with other organizations.
++ **inbound access** - how other organizations collaborate with you.
++ **tenant restrictions access** - how your users collaborate with other organizations using other organization identities from your network or devices.
+
+Granular controls let you determine the users, groups, and apps, both in your organization and in external organizations, that can participate in cross-tenant collaboration. These controls are implemented through:
 
 + **Default cross-tenant access settings** which set the baseline settings for inbound and outbound access and tenant restrictions.
     + In Azure AD B2B collaboration, both inbound and outbound access settings are enabled by default. This means all your users can be invited to external organizations, and all your users can invite external users.
@@ -345,7 +349,7 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 
 ## Cross-tenant access settings vs tenant restrictions
 
-Cross-tenant access settings outbound controls are for controlling how **your organization's accounts** are used for accessing resources in other Azure AD organizations. Tenant Restrictions are for controlling how your employees use **other Azure AD organizations' accounts while the employee is on your networks or devices**. Critically, outbound controls work all the time because they're associated with your accounts, while Tenant Restrictions require additional signals to be injected into the authentication requests to be enforced, because Tenant Restrictions are scoped to networks and devices, not accounts. Learn more about [Tenant Restrictions](/azure/active-directory/manage-apps/tenant-restrictions).
+Cross-tenant access settings outbound controls are for controlling how **your organization's accounts** are used for accessing resources in other Azure AD organizations. Tenant Restrictions are for controlling how your employees use **other Azure AD organizations' accounts while the employee is on your networks or devices**. Critically, outbound controls work all the time because they're associated with your accounts, while Tenant Restrictions require additional signals to be injected into the authentication requests to be enforced, because tenant restrictions are scoped to networks and devices, not accounts. Learn more about [Tenant Restrictions](/azure/active-directory/manage-apps/tenant-restrictions).
 
 ## Next steps
 
