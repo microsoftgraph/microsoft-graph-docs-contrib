@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **authenticationStrengthRoot** resource is the entry point for the authentication strengths object model. It doesn't contain any usable properties and cannot be queried directly.
+The **authenticationStrengthRoot** resource is the entry point for the authentication strengths object model.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -24,8 +24,8 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationCombinations|authenticationMethodModes collection|A collection of **authenticationMethodModes** values representing all valid authentication method combinations in the system.|
-|id|String|A system-generated GUID. Inherited from [entity](../resources/entity.md).|
+|authenticationCombinations|authenticationMethodModes collection|A collection of all valid authentication method combinations in the system.|
+|id|String|A system-generated identifier. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -110,7 +110,7 @@ The following is a JSON representation of the resource.
             "authenticationMethod" : "x509Certificate"
         },
         {
-            "id" : "federatedMultiFactor",
+            "id": "federatedMultiFactor",
             "displayName" : "Federation (multi-factor)",
             "authenticationMethod" : "federation"
         },

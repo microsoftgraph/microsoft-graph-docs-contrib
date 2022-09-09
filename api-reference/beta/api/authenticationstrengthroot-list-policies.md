@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) objects and their properties.
+Get a list of the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) objects and their properties. This API returns both built-in and custom policies.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -87,18 +87,18 @@ Content-Type: application/json
       "policyType": "custom",
       "requirementsSatisfied": "mfa",
       "allowedCombinations": [
-          "x509CertificateSingleFactor, fido2",
-          "fido2"
+        "x509CertificateSingleFactor, fido2",
+        "fido2"
       ],
       "combinationConfigurations": [
-          {
-              "@odata.type" : "fido2CombinationConfiguration",
-              "id": "675ff4e1-7c6d-4a7f-9803-ad084d1b45b3",
-              "allowedAAGUIDs": [
-                  "2ac80ddb-17bd-4575-b41c-0dc37ae3290d"
-              ],
-              "appliesToCombinations": ["fido2"]
-          }
+        {
+          "@odata.type" : "fido2CombinationConfiguration",
+          "id": "675ff4e1-7c6d-4a7f-9803-ad084d1b45b3",
+          "allowedAAGUIDs": [
+            "2ac80ddb-17bd-4575-b41c-0dc37ae3290d"
+          ],
+          "appliesToCombinations": ["fido2"]
+        }
       ]
     },
     {
