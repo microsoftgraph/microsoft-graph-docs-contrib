@@ -15,7 +15,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-08-02T13:04:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -33,7 +33,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-08-02T02:18:43.7311444Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -51,7 +51,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-08-02T02:18:43.7311444Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -85,15 +85,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamTemplates",
           "ChangeType": "Addition",
-          "Description": "Added the **teamTemplates** relationship to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
-          "Target": "teamwork"
+          "Description": "Added the **teamTemplates** relationship to the [teamwork and communications](https://docs.microsoft.com/en-us/graph/api/resources/teamworkandcommunications?view=graph-rest-beta) resource.",
+          "Target": "teamwork and communications"
         }
       ],
       "Id": "6ae53b71-88ab-4827-8e71-ab0a7bd274ed",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-07-07T02:18:43.7311444Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -111,7 +111,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-05-12T13:04:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -129,7 +129,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-05-09T13:04:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -147,7 +147,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-05-09T13:04:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -207,7 +207,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-03-18T13:04:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -233,7 +233,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-01-31T13:04:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -283,7 +283,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-01-06T07:01:10.9353119Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -301,7 +301,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-01-06T07:01:10.9353119Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -319,7 +319,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-01-12T13:04:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -337,7 +337,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-07-24T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -363,7 +363,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-07T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -389,7 +389,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-10-01T19:45:07.457Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -415,7 +415,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-11-04T17:18:30.8053373Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -449,7 +449,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-11-19T00:58:30.8053373Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -467,7 +467,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-25T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -493,7 +493,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-07-09T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -527,7 +527,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-30T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -617,7 +617,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-29T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -707,7 +707,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-06-29T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -757,7 +757,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-05-27T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -793,7 +793,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-14T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -883,7 +883,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-04-05T21:46:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -901,7 +901,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-04-22T20:18:40.595Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -919,7 +919,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-16T20:18:40.595Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -969,7 +969,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-16T20:18:40.595Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -995,7 +995,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-05T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1037,7 +1037,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-04-02T08:48:43.715Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1063,7 +1063,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-02T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1121,7 +1121,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-24T18:04:41.569Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1187,7 +1187,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-18T23:09:05.727Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1310,7 +1310,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-12T18:22:05.727Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1328,7 +1328,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-11T18:04:41.569Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1354,7 +1354,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-08T18:04:41.569Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1372,7 +1372,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-03-08T09:51:13.342Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1390,7 +1390,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-17T21:46:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1432,7 +1432,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-21T21:46:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1466,7 +1466,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-16T21:46:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1500,7 +1500,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-03T08:02:21.817Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1526,7 +1526,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-14T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1568,7 +1568,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-16T00:06:17.723Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1618,7 +1618,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-09T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1668,7 +1668,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-08T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1710,7 +1710,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-02T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1784,7 +1784,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-12-02T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1842,7 +1842,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-02T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1876,7 +1876,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-07T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1934,7 +1934,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-11-17T11:52:14.154Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1960,7 +1960,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-11-02T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1978,7 +1978,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-11-20T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1996,7 +1996,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-11-20T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2038,7 +2038,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-10-15T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2056,7 +2056,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-10-15T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
 
@@ -2075,7 +2075,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Teamwork ",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2117,7 +2117,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Teamwork ",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2135,7 +2135,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-01-06T20:51:22.0064326Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2177,7 +2177,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2227,7 +2227,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-08-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2245,7 +2245,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2263,7 +2263,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-07-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2281,7 +2281,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2323,7 +2323,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2349,7 +2349,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-05-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2367,7 +2367,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2385,7 +2385,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
-      "WorkloadArea": "Teamwork ",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": " Shifts"
     },
     {
@@ -2411,7 +2411,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2419,17 +2419,17 @@
         {
           "Id": "fc4a8ddc-cb9d-43bc-920e-af609987276b",
           "ApiChange": "Resource",
-          "ChangedApiName": "teamwork",
+          "ChangedApiName": "teamwork and communications",
           "ChangeType": "Addition",
-          "Description": "Added new entity [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-1.0).",
-          "Target": "teamwork"
+          "Description": "Added new entity [teamwork and communications](https://docs.microsoft.com/en-us/graph/api/resources/teamworkandcommunications?view=graph-rest-1.0).",
+          "Target": "teamwork and communications"
         }
       ],
       "Id": "fc4a8ddc-cb9d-43bc-920e-af609987276b",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2455,7 +2455,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2497,7 +2497,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-12-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2531,7 +2531,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2557,7 +2557,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2583,7 +2583,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2633,7 +2633,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2673,10 +2673,10 @@
         {
           "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
           "ApiChange": "Resource",
-          "ChangedApiName": "teamwork",
+          "ChangedApiName": "teamwork and communications",
           "ChangeType": "Addition",
-          "Description": "Added the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
-          "Target": "teamwork"
+          "Description": "Added the [teamwork and communications](https://docs.microsoft.com/en-us/graph/api/resources/teamworkandcommunications?view=graph-rest-beta) resource.",
+          "Target": "teamwork and communications"
         },
         {
           "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
@@ -2699,7 +2699,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2717,7 +2717,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2751,7 +2751,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2785,7 +2785,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-04-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2811,7 +2811,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-04-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2829,7 +2829,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2871,7 +2871,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2897,7 +2897,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-02-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2915,7 +2915,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-01-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3053,7 +3053,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-12-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3071,7 +3071,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-12-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3209,7 +3209,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-11-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3323,7 +3323,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-11-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3341,7 +3341,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3367,7 +3367,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-07-12T08:14:02.5231411Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3457,7 +3457,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3715,7 +3715,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-07-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3765,7 +3765,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-06-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3839,7 +3839,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-04-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3865,7 +3865,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-10-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3891,7 +3891,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-06-16T18:06:46.246897Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3909,7 +3909,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-06-10T19:04:47.5265838Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3959,7 +3959,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-06-18T02:47:13.8030158Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -4009,7 +4009,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-06-15T19:04:47.5265838Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -4027,7 +4027,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-06-15T19:04:47.5265838Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -4317,7 +4317,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-07-16T07:31:32.9396997Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -4351,7 +4351,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-07-28T10:11:41.458Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -4633,7 +4633,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-12-03T12:26:47.0467025Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -4651,7 +4651,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-11-29T20:18:40.595Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -4925,8 +4925,8 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "devices",
           "ChangeType": "Addition",
-          "Description": "Added the **devices** relationship to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
-          "Target": "teamwork"
+          "Description": "Added the **devices** relationship to the [teamwork and communications](https://docs.microsoft.com/en-us/graph/api/resources/teamworkandcommunications?view=graph-rest-beta) resource.",
+          "Target": "teamwork and communications"
         },
         {
           "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
@@ -5077,7 +5077,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-01-26T19:18:34.4466613Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5103,26 +5103,26 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-03-14T20:18:40.595Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
-          "ApiChange": "Member",
-          "ChangedApiName": "emailUser",
-          "ChangeType": "Addition",
-          "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration.",
-          "Target": "teamworkUserIdentityType"
-        }
-      ],
-      "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2022-04-18T20:34:40.595Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": ""
+        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+        "ApiChange": "Member",
+        "ChangedApiName": "emailUser",
+        "ChangeType": "Addition",
+        "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration.",
+        "Target": "teamworkUserIdentityType"
+      }
+        ],
+        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2022-04-18T20:34:40.595Z",
+          "WorkloadArea": "Teamwork and communications",
+          "SubArea": ""
     },
     {
       "ChangeList": [
@@ -5139,7 +5139,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-04-18T20:34:40.595Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5157,7 +5157,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-25T10:11:41.458Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5175,7 +5175,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-04-28T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5193,7 +5193,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-04-28T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5219,7 +5219,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-04-26T00:34:47.4910041Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5237,7 +5237,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-03T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5255,7 +5255,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-03T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5273,7 +5273,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-03T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5291,7 +5291,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-03T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5405,7 +5405,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-07-22T09:24:30.6932815Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5431,7 +5431,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-06-15T00:54:29.7304356Z",
-      "WorkloadArea": "Teamwork",
+	  "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5449,7 +5449,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-29T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5467,7 +5467,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-29T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5485,7 +5485,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-29T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5503,7 +5503,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-29T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
