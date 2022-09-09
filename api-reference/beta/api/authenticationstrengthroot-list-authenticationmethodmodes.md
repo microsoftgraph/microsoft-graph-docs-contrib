@@ -64,7 +64,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following is an example of a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
+.
 <!-- {
   "blockType": "request",
   "name": "list_authenticationmethodmodedetail"
@@ -170,3 +171,67 @@ Content-Type: application/json
 }
 ```
 
+### Request
+The following is an example of a request to retrieve the flat collection of authenticationCombinations objects, representing all the possible allowed combinations (allowedCombinations) that may be used in an authenticationStrengthPolicy object.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_authenticationcombinations"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/authenticationCombinations
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "isCollection": true,
+  "@odata.type": "Collection(microsoft.graph.authenticationMethodModes)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/authenticationStrengths/authenticationCombinations",
+    "value": [
+        "windowsHelloForBusiness",
+        "fido2",
+        "x509CertificateMultiFactor",
+        "deviceBasedPush",
+        "temporaryAccessPassOneTime",
+        "temporaryAccessPassMultiUse",
+        "password,microsoftAuthenticatorPush",
+        "password,softwareOath",
+        "password,hardwareOath",
+        "password,sms",
+        "password,voice",
+        "federatedMultiFactor",
+        "microsoftAuthenticatorPush,federatedSingleFactor",
+        "softwareOath,federatedSingleFactor",
+        "hardwareOath,federatedSingleFactor",
+        "sms,federatedSingleFactor",
+        "voice,federatedSingleFactor",
+        "x509CertificateSingleFactor",
+        "sms",
+        "password",
+        "federatedSingleFactor",
+        "email"
+    ]
+}
+```
+
+<!-- {
+  "type": "#page.annotation",
+  "section": "documentation",
+  "suppressions": [
+    "Error: list_authenticationcombinations:
+      Unable to locate a definition for resource type: microsoft.graph.authenticationMethodModes"
+  ]
+} -->

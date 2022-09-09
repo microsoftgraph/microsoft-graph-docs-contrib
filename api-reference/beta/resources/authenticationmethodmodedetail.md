@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodModeDetail resource type"
-description: "A specific mode of af an authentication method that operates in more than one way"
+description: "A representation of a specific mode of an authentication method that can be used as part of an authentication method combination in an authentication strength."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The details of the **authenticationMethodModes** objects that can be defined for the **allowedCombinations** property of the [authenticationstrengthpolicy](../resources/authenticationStrengthPolicy.md).
+
+For more information on authentication methods, see the [authentication methods overview](../resources/authenticationmethods-overview.md)
 
 Inherits from [entity](../resources/entity.md).
 
