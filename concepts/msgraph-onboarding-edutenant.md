@@ -49,10 +49,10 @@ Standard Microsoft 365 tenants take approximately 12-48 hours (NOT including Add
 
 You can check resources below for more detailed information about tenants licensing and permissions for users in your tenant.
 
-- [Understand subscriptions and licenses](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses?view=o365-worldwide)
-- [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
-- [Unassign licenses from users](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide)
-- [Buy or remove licenses from your subscription](https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide)
+- [Understand subscriptions and licenses](/microsoft-365/commerce/licenses/subscriptions-and-licenses?view=o365-worldwide)
+- [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+- [Unassign licenses from users](/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide)
+- [Buy or remove licenses from your subscription](/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide)
 
 ## Next steps
 
