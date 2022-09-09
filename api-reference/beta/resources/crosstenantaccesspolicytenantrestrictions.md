@@ -1,13 +1,13 @@
 ---
 title: "crossTenantAccessPolicyTenantRestrictions resource type"
-description: "Defines how to configure Azure AD tenant restrictions settings. Tenant restrictions give you control over the external organizations that your users can access from your network or devices when they use external identities. The settings can be targeted to specific users, groups, or applications."
+description: "Defines how to configure Azure AD tenant restrictions settings that give you control over the external organizations that your users can access from your network or devices when they use external identities."
 author: "vimrang"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
-# crossTenantAccessPolicyTarget resource type
+# crossTenantAccessPolicyTenantRestrictions resource type
 
 Namespace: microsoft.graph
 
@@ -21,8 +21,9 @@ Inherits from [crossTenantAccessPolicyB2BSettings](../resources/crosstenantacces
 
 |Property|Type|Description|
 |:---|:---|:---|
-| target | String | Can be one of the following values: <li> The unique identifier of the user, group, or application <li> `AllUsers` <li> `AllApplications` - Refers to any [Microsoft cloud application](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#microsoft-cloud-applications). <li> `Office365` - Includes the applications mentioned as part of the [Office365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) suite |
-| targetType | crossTenantAccessPolicyTargetType | The type of resource that you want to target. The possible values are: `user`, `group`, `application`, `unknownFutureValue`. |
+|applications|[crossTenantAccessPolicyTargetConfiguration](../resources/crosstenantaccesspolicytargetconfiguration.md)|The list of applications targeted with your cross-tenant access policy. Inherited from [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md).|
+|devices|[devicesFilter](../resources/devicesfilter.md)|Defines the rule for filtering devices and whether devices satisfying the rule should be allowed or blocked. Not implemented.|
+|usersAndGroups|[crossTenantAccessPolicyTargetConfiguration](../resources/crosstenantaccesspolicytargetconfiguration.md)|The list of users and groups targeted with your cross-tenant access policy. Inherited from [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md).|
 
 ## Relationships
 
@@ -51,3 +52,7 @@ The following is a JSON representation of the resource.
   }
 }
 ```
+
+## See also
+
++ [Set up tenant restrictions V2 (Preview)](/azure/active-directory/external-identities/tenant-restrictions-v2)
