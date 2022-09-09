@@ -30,6 +30,8 @@ None.
 |description|String|A string that describes the purpose of the workflow.|
 |displayName|String|A string to identify the workflow. |
 |executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines when and for who the workflow will run.|
+|isEnabled|Boolean|If true, the `workflow` engine creates and processes `taskProcessingResults` on the users scoped to the workflow. <br><br>Supports `$filter`(`eq`,`ne`) and `orderby`.|
+|isSchedulingEnabled|Boolean|If true, the `workflow` engine executes the workflow on the schedule defined by tenant settings. |
 |lastModifiedDateTime|DateTimeOffset|When the workflow was last modified.|
 
 ## Relationships
@@ -62,6 +64,8 @@ The following is a JSON representation of the resource.
   "executionConditions": {
     "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
   },
+  "isEnabled": "Boolean",
+  "isSchedulingEnabled": "Boolean",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```

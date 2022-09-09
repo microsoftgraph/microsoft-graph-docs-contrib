@@ -48,8 +48,6 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |displayName|String|The display name of the `workflow` or `workflowVersion`. <br><br>Supports `$filter`(`eq`), `orderby`, and `$search`.|
 |executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Conditions describing when to execute the workflow and the criteria to identify in-scope subject set.|
 |id|String|Identifier used for individually addressing a specific workflow. <br><br>Supports `$filter`(`eq`).|
-|isEnabled|Boolean|If true, the `workflow` engine creates and processes `taskProcessingResults` on the users scoped to the workflow. <br><br>Supports `$filter`(`eq`,`ne`) and `orderby`.|
-|isSchedulingEnabled|Boolean|If true, the `workflow` engine executes the workflow on the schedule defined by tenant settings. |
 |lastModifiedDateTime|DateTimeOffset|The date time when the `workflow` was last modified. <br><br>Supports `$filter`(`lt`,`gt`) and `$orderby`.|
 |nextScheduleRunDateTime|DateTimeOffset|The date time when the `workflow` is expected to run next based on the schedule interval, if there are any users matching the execution conditions. <br><br>Supports `$filter`(`lt`,`gt`) and `$orderby`. |
 |version|Int32|The current version number of the workflow. Value is 1 when the workflow is first created. <br><br>Supports `$filter`(`eq`).|
