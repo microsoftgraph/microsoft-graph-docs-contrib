@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the authenticationCombinationConfiguration resources from the combinationConfigurations navigation property.
+Get the authenticationCombinationConfiguration resources from the combinationConfigurations navigation property. These are requirements placed on specific authentication method combinations that require specified variants of those authentication methods to be used when authenticating. authenticationCombinationConfigurations will only be present on custom authentication strengths.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

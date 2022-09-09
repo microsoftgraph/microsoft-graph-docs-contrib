@@ -27,12 +27,23 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Retrieve the collection of **authenticationMethodModes** objects and their descriptions.
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET /identity/conditionalAccess/authenticationStrengths/authenticationMethodModes
+```
+
+Retrieve the flat collection of authenticationCombinations objects, representing all the allowed combinations (allowedCombinations) in an authenticationStrengthPolicy object.
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identity/conditionalAccess/authenticationStrengths/authenticationCombinations
 ```
 
 ## Optional query parameters
