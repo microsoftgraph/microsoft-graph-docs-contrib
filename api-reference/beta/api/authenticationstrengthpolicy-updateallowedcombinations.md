@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Update the allowedCombinations property of an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. To update other properties of an authenticationStrengthPolicy object, use the [Update authenticationStrengthPolicy](authenticationstrengthpolicy-update.md) method.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -90,11 +90,11 @@ Content-Type: application/json
 {
   "@odata.type" : "#microsoft.graph.updateAllowedCombinationsResult",
   "previousCombinations": [
-          "fido2",
-          "password, voice"
+    "fido2",
+    "password, voice"
   ],
   "currentCombinations": [
-          "password, voice"
+    "password, voice"
   ],
   "conditionalAccessReferences": [
     "53a3968a-ae2c-4b82-a313-091d10c52bfa"
