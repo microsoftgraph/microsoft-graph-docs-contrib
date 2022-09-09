@@ -1,5 +1,5 @@
 ---
-title: "Filter: clear"
+title: "filter: clear"
 description: "Clear the filter on the given column."
 ms.localizationpriority: medium
 doc_type: apiPageType
