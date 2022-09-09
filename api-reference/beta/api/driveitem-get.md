@@ -1,10 +1,9 @@
 ---
 author: JeremyKelley
 description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
-ms.date: 09/10/2017
 title: Get driveItem
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "files"
 doc_type: apiPageType
 ---
 # Get driveItem
