@@ -5557,7 +5557,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5575,7 +5575,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5593,7 +5593,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5611,7 +5611,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
 	{
@@ -5629,7 +5629,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5647,7 +5647,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5665,7 +5665,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5683,7 +5683,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
 	{
@@ -5701,7 +5701,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5719,7 +5719,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5737,7 +5737,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5755,25 +5755,57 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "e473f528-d700-4803-9985-6db1bde5c17f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "Chat.ReadBasic.WhereInstalled,Chat.Read.WhereInstalled,Chat.ReadWrite.WhereInstalled,ChatMember.Read.WhereInstalled,ChatMember.ReadWriteWhereInstalled",
+          "Id": "6a4e583a-818c-418e-878b-f5e17b691b89",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Chat.ReadBasic.WhereInstalled",
           "ChangeType": "Addition",
-          "Description": "Added new permissions [Chat.ReadBasic.WhereInstalled](https://docs.microsoft.com/en-us/graph/permissions-reference#chat-permissions), [Chat.Read.WhereInstalled](https://docs.microsoft.com/en-us/graph/permissions-reference#chat-permissions), [Chat.ReadWrite.WhereInstalled](https://docs.microsoft.com/en-us/graph/permissions-reference#chat-permissions), [ChatMember.Read.WhereInstalled](https://docs.microsoft.com/en-us/graph/permissions-reference#chat-membership-permissions), [ChatMember.ReadWrite.WhereInstalled](https://docs.microsoft.com/en-us/graph/permissions-reference#chat-membership-permissions).",
-          "Target": "Chat.ReadBasic.WhereInstalled,Chat.Read.WhereInstalled,Chat.ReadWrite.WhereInstalled,ChatMember.Read.WhereInstalled,ChatMember.ReadWriteWhereInstalled"
+          "Description": "Added support for the application permission of Chat.ReadBasic.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+		{
+          "Id": "9b38d17b-1b86-4a06-a8ac-7517c9a9e57c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Chat.Read.WhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of Chat.Read.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+		{
+          "Id": "3fb65956-b7e5-4d8e-ac3c-6ec01672c991",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Chat.ReadWrite.WhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of Chat.ReadWrite.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+		{
+          "Id": "3e977da8-1f40-44b1-95d8-6b51c880b314",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ChatMember.Read.WhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of ChatMember.Read.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+		{
+          "Id": "b650b304-a9d0-4833-9f92-a3e8ac593fec",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ChatMember.ReadWriteWhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of ChatMember.ReadWrite.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
         }
       ],
-      "Id": "e473f528-d700-4803-9985-6db1bde5c17f",
+      "Id": "a0be1a78-e915-49f0-b677-f5d227004236",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-19T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }
   ]
