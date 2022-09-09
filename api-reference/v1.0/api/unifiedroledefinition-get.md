@@ -90,7 +90,7 @@ The following is an example of the request.
   "name": "get_custom_role_unifiedroledefinition"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions/f189965f-f560-4c59-9101-933d4c87a91a
 ```
 

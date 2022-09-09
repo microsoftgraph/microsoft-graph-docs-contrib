@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewEducationOutcome()
-"@odata.type" := "#microsoft.graph.educationFeedbackOutcome"
-requestBody.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 feedback := graphmodels.New()
 text := graphmodels.New()

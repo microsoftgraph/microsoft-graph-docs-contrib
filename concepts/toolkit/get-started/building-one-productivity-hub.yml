@@ -1,0 +1,38 @@
+### YamlMime:Tutorial
+title: Build productivity apps by using Microsoft Graph Toolkit
+metadata:
+  title: Build productivity apps by using Microsoft Graph Toolkit
+  description: In this tutorial, you'll build a web app to monitor your calendar events, to-do tasks and files by using Microsoft Graph Toolkit components and MSAL2 provider.
+  audience: Developer
+  level: Beginner
+  displayType: one-column
+  ms.date: 07/25/2022
+  author: aycabas
+  ms.topic: tutorial
+  ms.custom: scenarios:getting-started, languages:HTML, CSS
+  ms.prod: toolkit
+items:
+  - title: Build productivity apps by using Microsoft Graph Toolkit
+    durationInMinutes: 5
+    content: |
+      [!INCLUDE [](includes/building-one-productivity-hub-01-intro.md)]
+  - title: Register the application in Azure Active Directory
+    durationInMinutes: 10
+    content: |
+      [!INCLUDE [](includes/building-one-productivity-hub-02-register-app.md)]
+  - title: Create the application
+    durationInMinutes: 10
+    content: |
+      [!INCLUDE [](includes/building-one-productivity-hub-03-build-app.md)]
+  - title: Design the application
+    durationInMinutes: 10
+    content: |
+      [!INCLUDE [](includes/building-one-productivity-hub-04-design-app.md)]
+  - title: Run the application
+    durationInMinutes: 5
+    content: |
+      [!INCLUDE [](includes/building-one-productivity-hub-05-run-app.md)]
+  - title: Summary
+    durationInMinutes: 5
+    content: |
+      [!INCLUDE [](includes/building-one-productivity-hub-06-summary.md)]

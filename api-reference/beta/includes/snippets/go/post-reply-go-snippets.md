@@ -61,7 +61,7 @@ lastModifiedDateTime , err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
 post.SetLastModifiedDateTime(&lastModifiedDateTime) 
 changeKey := "changeKey-value"
 post.SetChangeKey(&changeKey) 
-categories := []String {
+categories := []string {
 	"categories-value",
 
 }
@@ -73,8 +73,6 @@ post.SetInReplyTo(inReplyTo)
 
 
 attachment := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.fileAttachment"
-attachment.Set"@odata.type"(&"@odata.type") 
 lastModifiedDateTime , err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
 attachment.SetLastModifiedDateTime(&lastModifiedDateTime) 
 name := "name-value"
@@ -95,7 +93,7 @@ attachments := []graphmodels.Attachmentable {
 post.SetAttachments(attachments)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply(group-id, conversationThread-id, post-id).Post(requestBody)
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply().Post(requestBody)
 
 
 ```

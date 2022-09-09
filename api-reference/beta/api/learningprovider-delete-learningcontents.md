@@ -49,6 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_learningcontent"
@@ -57,6 +58,7 @@ The following is an example of a request.
 ``` http
 DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='27rg2ifb28gf28')/$ref
 ```
+
 
 
 ### Response

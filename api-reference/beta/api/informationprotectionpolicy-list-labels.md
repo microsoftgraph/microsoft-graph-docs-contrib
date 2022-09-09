@@ -1,17 +1,19 @@
 ---
-title: "informationProtectionLabel: listLabels"
-description: "Retrieve a list of information protection labels."
+title: "informationProtectionLabel: listLabels (deprecated)"
+description: "Retrieve a list of information protection labels. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
-# informationProtectionLabel: listLabels
+# informationProtectionLabel: listLabels (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Get a collection of [information protection labels](../resources/informationprotectionlabel.md) available to the user or to the organization.
 

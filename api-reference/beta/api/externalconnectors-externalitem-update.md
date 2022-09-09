@@ -81,7 +81,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_externalitem",
-  "@odata.type": "microsoft.graph.externalConnectors.acl"
+  "sampleKeys": ["contosohr", "TSP228082938"]
 }-->
 
 ```http

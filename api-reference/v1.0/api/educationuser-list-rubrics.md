@@ -58,7 +58,7 @@ The following is an example of the request.
   "name": "get_rubrics"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/rubrics
 ```
 

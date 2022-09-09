@@ -8,12 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewEducationOutcome()
-"@odata.type" := "#microsoft.graph.educationPointsOutcome"
-requestBody.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 points := graphmodels.New()
-"@odata.type" := "#microsoft.graph.educationAssignmentPointsGrade"
-points.Set"@odata.type"(&"@odata.type") 
 points := int32(85.0)
 points.SetPoints(&points) 
 	requestBody.SetPoints(points)

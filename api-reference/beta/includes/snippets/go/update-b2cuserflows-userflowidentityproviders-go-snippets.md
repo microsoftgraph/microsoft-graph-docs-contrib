@@ -10,7 +10,6 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewUserFlowIdentityProvider()
 additionalData := map[string]interface{}{
 	"@odata.id" : "https://graph.microsoft.com/beta/identity/identityProviders/{id}", 
-	"@odata.type" : "#microsoft.graph.identityProvider", 
 }
 requestBody.SetAdditionalData(additionalData)
 

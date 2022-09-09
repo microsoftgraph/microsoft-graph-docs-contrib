@@ -4,7 +4,7 @@ description: "The type of attendee."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: calendar
-author: "harini84"
+author: "iamgirishck"
 ---
 
 # attendeeBase resource type

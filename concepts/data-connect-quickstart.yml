@@ -7,7 +7,7 @@ metadata:
   level: Beginner
   displayType: one-column
   ms.date: 04/30/2021
-  author: fercobo-msft
+  author: rimisra2
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:ASP.NET
 items:
@@ -31,7 +31,7 @@ items:
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-04.md)]
 
-  - title: Set up your Azure Data Factory resource
+  - title: Set up your Azure Synapse or Azure Data Factory resource
     durationInMinutes: 15
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-05.md)]

@@ -73,7 +73,7 @@ This example retrieves the collection of permissions on an item in the signed in
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/permissions
 ```
 

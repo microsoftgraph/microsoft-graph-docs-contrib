@@ -65,7 +65,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_device_memberof"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf
 ```
 
@@ -212,7 +212,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "list_devices_memberof_startswith"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'A')
 ConsistencyLevel: eventual
 ```

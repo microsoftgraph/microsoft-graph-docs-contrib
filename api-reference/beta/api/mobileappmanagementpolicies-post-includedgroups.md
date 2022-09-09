@@ -62,7 +62,7 @@ If successful, this method returns a `204 No Content` response code and a [group
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_group_from_groups"
+  "name": "create_mobileManagementPolicy_group_from_groups"
 }
 -->
 
@@ -76,27 +76,27 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-group-from-groups-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-mobilemanagementpolicy-group-from-groups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-group-from-groups-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-mobilemanagementpolicy-group-from-groups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-group-from-groups-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-mobilemanagementpolicy-group-from-groups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-group-from-groups-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-mobilemanagementpolicy-group-from-groups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-group-from-groups-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-mobilemanagementpolicy-group-from-groups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-group-from-groups-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/create-mobilemanagementpolicy-group-from-groups-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
