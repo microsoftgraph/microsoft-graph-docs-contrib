@@ -37,4 +37,4 @@ You have successfully created your team.
 
 ## Next steps
 
-Start testing calls to Microsoft Graph APIs by using [Graph Explorer](/graph/msgraph-onboarding-graphexplorer).
+[Use Graph Explorer](/graph/msgraph-onboarding-graphexplorer) to test Microsoft Graph calls.
