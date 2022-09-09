@@ -107,7 +107,7 @@ If item insights of targeted user have been disabled, this method returns `403 F
   }
 }
 ```
-For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md). 
+For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy). 
 
 ## Example
 
