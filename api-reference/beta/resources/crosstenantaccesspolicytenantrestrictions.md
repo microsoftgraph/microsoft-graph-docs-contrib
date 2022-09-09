@@ -21,16 +21,8 @@ Inherits from [crossTenantAccessPolicyB2BSettings](../resources/crosstenantacces
 
 |Property|Type|Description|
 |:---|:---|:---|
-| target | String | Can be one of the following values: <li> The unique identifier of the user, group, or application <li> `AllUsers` <li> `AllApplications`  <li> `Office365` - Includes the applications mentioned as part of the [Office365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) suite |
+| target | String | Can be one of the following values: <li> The unique identifier of the user, group, or application <li> `AllUsers` <li> `AllApplications` - Refers to any [Microsoft cloud application](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#microsoft-cloud-applications). <li> `Office365` - Includes the applications mentioned as part of the [Office365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) suite |
 | targetType | crossTenantAccessPolicyTargetType | The type of resource that you want to target. The possible values are: `user`, `group`, `application`, `unknownFutureValue`. |
-
-### Reserved values for targets that are applications
-
-When setting application targets, you can also use the following reserved values:
-
-| Symbol | Description |
-|:---|:---|
-| Office365 | Includes the applications mentioned as part of the [Office365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) suite. |
 
 ## Relationships
 
@@ -47,8 +39,15 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.crossTenantAccessPolicyTarget",
-  "target": "String",
-  "targetType": "microsoft.graph.crossTenantAccessPolicyTargetType"
+  "@odata.type": "#microsoft.graph.crossTenantAccessPolicyTenantRestrictions",
+  "usersAndGroups": {
+    "@odata.type": "microsoft.graph.crossTenantAccessPolicyTargetConfiguration"
+  },
+  "applications": {
+    "@odata.type": "microsoft.graph.crossTenantAccessPolicyTargetConfiguration"
+  },
+  "devices": {
+    "@odata.type": "microsoft.graph.devicesFilter"
+  }
 }
 ```
