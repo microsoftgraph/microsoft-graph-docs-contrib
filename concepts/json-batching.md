@@ -157,7 +157,7 @@ The status code on a batch response is typically `200` or `400`. If the batch re
 
 ## Sequencing requests with the dependsOn property
 
-Individual requests can be executed in a specified order by using the **dependsOn** property. This property is an array of strings that references the **id** of a different individual request. For this reason, the values for **id** must be unique. For example, in the following request, the client is specifying that requests should be run in the order request 1 then request 3, then request 2, then request 4.
+Individual requests can be executed in a specified order by using the **dependsOn** property. This property is an array of strings that references the **id** of a different individual request. For this reason, the values for **id** must be unique. For example, in the following request, the client is specifying that requests should be run in the order request 1 then request 2, then request 4, then request 3.
 
 ```json
 {
