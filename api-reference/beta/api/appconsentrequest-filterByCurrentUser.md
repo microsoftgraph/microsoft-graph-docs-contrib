@@ -42,7 +42,7 @@ The following table shows the parameters that can be used with this function.
 |on|consentRequestFilterByCurrentUserOptions|Filter to query appConsentRequest objects for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
 
 ## Query parameters
-This function requires the `$filter` OData query parameter to return a collection of [userConsentRequest](../resources/userconsentrequest.md) objects for which the status is `InProgress`. For general information, see [OData query parameters](/graph/query-parameters).
+This function *requires* the `$filter` (`eq`) OData query parameter to return a collection of [userConsentRequest](../resources/userconsentrequest.md) objects for which the status is `InProgress`. The function also supports the `$select` query parameter. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -56,7 +56,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [appConsentRequest](../resources/appconsentrequest.md) objects in the response body.
 
-## Example
+## Example 1: List all appConsentRequests
 
 ### Request
 
@@ -111,18 +111,32 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(appConsentRequest)",
-  "@odata.count": 1,
-  "value": [
-    {
-      "id": "af330b30-dd59-4482-a848-0fd81b0438ed",
-      "appId": "3ca5f23f-94b4-4930-aec9-b8ca0f060e68",
-      "appDisplayName": "Moodle",
-      "consentType": "Dynamic",
-      "pendingScopes": [],
-      "userConsentRequests": []
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(appConsentRequest)",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.appConsentRequest",
+            "id": "7322e5f3-0f15-4eb8-9e82-2029e8622f5d",
+            "appId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "appDisplayName": "Graph Explorer",
+            "consentType": "Dynamic",
+            "pendingScopes": [
+                {
+                    "displayName": "AccessReview.Read.All"
+                },
+                {
+                    "displayName": "openid"
+                },
+                {
+                    "displayName": "profile"
+                },
+                {
+                    "displayName": "offline_access"
+                }
+            ],
+            "userConsentRequests": []
+        }
+    ]
 }
 ```
 

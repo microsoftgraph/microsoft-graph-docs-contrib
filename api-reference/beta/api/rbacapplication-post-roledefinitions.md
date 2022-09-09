@@ -206,7 +206,7 @@ Content-type: application/json
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions
+POST https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
 Content-type: application/json
 
 {

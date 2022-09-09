@@ -66,7 +66,7 @@ The following is an example of the request.
   "name": "get_devices_transitivememberof"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 ```
 
@@ -211,7 +211,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "list_devices_transitivememberof_startswith"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```

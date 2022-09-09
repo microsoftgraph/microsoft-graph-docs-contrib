@@ -18,8 +18,6 @@ requestBody := graphmodels.NewPlannerUser()
 favoritePlanReferences := graphmodels.NewPlannerFavoritePlanReferenceCollection()
 additionalData := map[string]interface{}{
 jd8S5gOaFk2S8aWCIAJz42QAAxtD := graphmodels.New()
-"@odata.type" := "#microsoft.graph.plannerFavoritePlanReference"
-jd8S5gOaFk2S8aWCIAJz42QAAxtD.Set"@odata.type"(&"@odata.type") 
 orderHint := " !"
 jd8S5gOaFk2S8aWCIAJz42QAAxtD.SetOrderHint(&orderHint) 
 planTitle := "Next Release Discussion"
@@ -33,8 +31,6 @@ requestBody.SetFavoritePlanReferences(favoritePlanReferences)
 recentPlanReferences := graphmodels.NewPlannerRecentPlanReferenceCollection()
 additionalData := map[string]interface{}{
 jd8S5gOaFk2S8aWCIAJz42QAAxtD := graphmodels.New()
-"@odata.type" := "#microsoft.graph.plannerRecentPlanReference"
-jd8S5gOaFk2S8aWCIAJz42QAAxtD.Set"@odata.type"(&"@odata.type") 
 lastAccessedDateTime := "2018-01-02T22:49:46.155Z"
 jd8S5gOaFk2S8aWCIAJz42QAAxtD.SetLastAccessedDateTime(&lastAccessedDateTime) 
 planTitle := "Next Release Discussion"

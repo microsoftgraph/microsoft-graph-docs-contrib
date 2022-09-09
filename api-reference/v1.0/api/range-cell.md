@@ -62,7 +62,7 @@ Here is an example of the request.
   "isComposable": true,
   "name": "range_cell"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/cell(row=5,column=6)
 ```
 

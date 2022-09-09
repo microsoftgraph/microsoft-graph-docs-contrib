@@ -36,7 +36,7 @@ requestBody.SetMessage(message)
 comment := "Samantha, Randi, would you name the group if the project is approved, please?"
 requestBody.SetComment(&comment) 
 
-result, err := graphClient.Me().MessagesById("message-id").CreateReply(message-id).Post(requestBody)
+result, err := graphClient.Me().MessagesById("message-id").CreateReply().Post(requestBody)
 
 
 ```

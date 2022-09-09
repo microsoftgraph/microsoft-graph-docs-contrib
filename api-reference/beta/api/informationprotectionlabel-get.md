@@ -1,17 +1,19 @@
 ---
-title: "Get informationProtectionLabel"
-description: "Retrieve the properties and relationships of the specified informationProtectionLabel object."
+title: "Get informationProtectionLabel (deprecated)"
+description: "Retrieve the properties and relationships of the specified informationProtectionLabel object. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
-# Get informationProtectionLabel
+# Get informationProtectionLabel (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Retrieve the properties and relationships of an [informationProtectionLabel](../resources/informationprotectionlabel.md) object.
 

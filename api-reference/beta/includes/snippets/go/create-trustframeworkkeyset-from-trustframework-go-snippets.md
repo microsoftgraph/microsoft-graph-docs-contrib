@@ -15,7 +15,7 @@ requestBody.SetId(&id)
 trustFrameworkKey := graphmodels.NewTrustFrameworkKey()
 k := "k-value"
 trustFrameworkKey.SetK(&k) 
-x5c := []String {
+x5c := []string {
 	"x5c-value",
 
 }

@@ -62,12 +62,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_bookingcustomquestion"
+  "name": "list_bookingcustomquestion",
+  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
 }
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customQuestions
+GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customQuestions
 ```
 
 # [C#](#tab/csharp)

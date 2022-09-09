@@ -2,7 +2,7 @@
 title: "Get accessReviewInstance"
 description: "Retrieve an accessReviewInstance object."
 ms.localizationpriority: medium
-author: "zhusijia26"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

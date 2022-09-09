@@ -157,7 +157,7 @@ $requestBody->setInstalledApps($installedAppsArray);
 
 $additionalData = [
 'template@odata.bind' => 'https://graph.microsoft.com/v1.0/teamsTemplates(\'standard\')', 
-'discoverySettings' => $requestBody = new ();
+'discoverySettings' => $requestBody = new DiscoverySettings();
 $requestBody->setShowInTeamsSearchAndSuggestions(true);
 
 

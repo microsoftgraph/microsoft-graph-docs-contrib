@@ -9,7 +9,6 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewRegistrationPostRequestBody()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.externalMeetingRegistration", 
 	"allowedRegistrant" : "everyone", 
 }
 requestBody.SetAdditionalData(additionalData)

@@ -25,9 +25,9 @@ $text->setAllowMultipleLines(false);
 
 $text->setAppendChangesToExistingText(false);
 
-$text->setLinesForEditing(linesForEditing);
+$text->setLinesForEditing(0);
 
-$text->setMaxLength(maxLength);
+$text->setMaxLength(255);
 
 
 $requestBody->setText($text);
