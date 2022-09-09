@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|The human-readable display name of this policy. <br><br>Supports `$filter` (`eq`, `ne`, `not` , and `in`). |
 |id|String|The system-generated GUID for this mode. Inherited from [entity](../resources/entity.md).|
 |modifiedDateTime|DateTimeOffset|The datetime when this policy was last modified.|
-|policyType|authenticationStrengthPolicyType|A descriptor of whether this policy is built in to Azure AD or created by an admin for the tenant.The possible values are: `builtIn`, `custom`, `unknownFutureValue`. <br><br>Supports `$filter` (`eq`, `ne`, `not` , and `in`). ||
+|policyType|authenticationStrengthPolicyType|A descriptor of whether this policy is built in to Azure AD or created by an admin for the tenant.The possible values are: `builtIn`, `custom`, `unknownFutureValue`. <br><br>Supports `$filter` (`eq`, `ne`, `not` , and `in`). |
 |requirementsSatisfied|authenticationStrengthRequirements|A descriptor of whether or not this authentication strength grants the MFA claim upon successful satisfaction.The possible values are: `none`, `mfa`, `unknownFutureValue`.|
 
 ## Relationships
