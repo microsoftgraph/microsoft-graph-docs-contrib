@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /education/classes/{id}/assignments/{id}/rubric
+```
 
 ## Optional query parameters
 
