@@ -32,17 +32,9 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources/{id}
 ```
-
-<<<<<<< HEAD
 ## Optional query parameters
-=======
-
-```## Optional query parameters
->>>>>>> b444068788c7a58612f9e3ade2ae291dd1e6e1b7
 
 This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-
 
 ## Request headers
 | Header       | Value |
@@ -61,6 +53,7 @@ The following is an example of the request.
   "name": "get_educationsubmittedsubmissionresource",
   "sampleKeys": ["11021", "19002", "850f51b7", "f2387c3b-ec39-4bf2-a399-d7242677f024"]
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/submittedResources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
