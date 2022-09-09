@@ -16,7 +16,6 @@ Represents a row in a table.
 
 ## Methods
 
-### Manage workbookTableRow
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List](../api/tablerow-list.md) | [workbookTableRow]( workbooktablerow.md) collection |Get a tableRow object collection. |
