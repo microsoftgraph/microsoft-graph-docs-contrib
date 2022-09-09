@@ -21,7 +21,7 @@ Inherits from [crossTenantAccessPolicyB2BSettings](../resources/crosstenantacces
 
 |Property|Type|Description|
 |:---|:---|:---|
-| target | String | The unique identifier of the user, group, or application; one of the following keywords: `AllUsers` and `AllApplications`; or for targets that are applications, you may use [reserved values](#reserved-values-for-targets-that-are-applications). |
+| target | String | Can be one of the following values: <li> The unique identifier of the user, group, or application <li> `AllUsers` <li> `AllApplications`  <li> `Office365` - Includes the applications mentioned as part of the [Office365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) suite |
 | targetType | crossTenantAccessPolicyTargetType | The type of resource that you want to target. The possible values are: `user`, `group`, `application`, `unknownFutureValue`. |
 
 ### Reserved values for targets that are applications
