@@ -1,6 +1,6 @@
 ---
 title: "Delete authenticationStrengthPolicy"
-description: "Deletes an authenticationStrengthPolicy object."
+description: "Delete a custom authenticationStrengthPolicy object."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object.
+Delete a custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,13 +55,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/6e7d7469-07c5-4bb2-a801-5eaef8fb7c1e
+DELETE https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/6e7d7469-07c5-4bb2-a801-5eaef8fb7c1e/$ref
 ```
 
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

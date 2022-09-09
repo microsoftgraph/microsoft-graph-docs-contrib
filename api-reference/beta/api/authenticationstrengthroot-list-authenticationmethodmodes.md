@@ -1,19 +1,19 @@
 ---
-title: "List authenticationMethodModeDetails"
-description: "Get a list of the authenticationMethodModeDetail objects and their properties."
+title: "List authenticationMethodModes"
+description: "Get a list of all supported authentication methods, or all supported authentication method combinations."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List authenticationMethodModeDetails
+# List authenticationMethodModes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) objects and their properties.
+Get a list of all supported authentication methods, or all supported authentication method combinations as a list of **authenticationMethodModes** objects and their properties.
 
 ## Permissions
 
@@ -162,7 +162,7 @@ Content-Type: application/json
         "authenticationMethod" : "federation"
     },
     {
-        "id" : "x509CertificateMultiFactor",
+        "id": "x509CertificateMultiFactor",
         "displayName" : "Certificate-based authentication (multi-factor)",
         "authenticationMethod" : "x509Certificate"
     }

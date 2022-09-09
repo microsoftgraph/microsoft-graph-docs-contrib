@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A detail view of an authentication method mode, which is a specific mode of operation for an authentication method that operates in more than one way such as Microsoft Authenticator, which may be used for simple push approval or as a strong Passwordless authenticator.
+The details of the **authenticationMethodModes** objects that can be defined for the **allowedCombinations** property of the [authenticationstrengthpolicy](../resources/authenticationStrengthPolicy.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -26,9 +26,9 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationMethod|baseAuthenticationMethod|Which authentication method this mode modifies. The possible values are: `password`, `voice`, `hardwareOath`, `softwareOath`, `sms`, `fido2`, `windowsHelloForBusiness`, `microsoftAuthenticator`, `temporaryAccessPass`, `email`, `x509Certificate`, `federation`, `unknownFutureValue`.|
+|authenticationMethod|baseAuthenticationMethod|The authentication method that this mode modifies. The possible values are: `password`, `voice`, `hardwareOath`, `softwareOath`, `sms`, `fido2`, `windowsHelloForBusiness`, `microsoftAuthenticator`, `temporaryAccessPass`, `email`, `x509Certificate`, `federation`, `unknownFutureValue`.|
 |displayName|String|The display name of this mode|
-|id|String|The system-generated GUID for this mode. Inherited from [entity](../resources/entity.md).|
+|id|String|The system-generated identifier for this mode. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

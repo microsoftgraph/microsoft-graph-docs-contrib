@@ -37,7 +37,7 @@ Consider the following when you use the `passwordChange` control:
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-| authenticationStrength | [authenticationStrengthPolicy](authenticationstrengthpolicy.md) | The [authentication strength](authenticationstrengthpolicy.md) required by the policy. |
+| authenticationStrength | [authenticationStrengthPolicy](authenticationstrengthpolicy.md) | The authentication strength required by the conditional access policy. Optional.|
 
 ## JSON representation
 

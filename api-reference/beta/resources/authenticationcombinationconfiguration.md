@@ -31,8 +31,8 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to.|
-|id|String|A unique system-generated GUID. Inherited from [entity](../resources/entity.md).|
+|appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. Must an **allowedCombinations** object that's defined for the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md).|
+|id|String|A unique system-generated identifier. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create authenticationCombinationConfiguration
+# Create combinationConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -42,7 +42,7 @@ POST /identity/conditionalAccess/authenticationStrengths/policies/{authenticatio
 ## Request body
 In the request body, supply a JSON representation of the [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.
 
-You can specify the following properties when creating an **authenticationCombinationConfiguration**. Additionally, you must supply the odata type and required properties of the subtype of **authenticationCombinationConfiguration** that you're creating.
+You can specify the following properties when creating an **authenticationCombinationConfiguration**. Additionally, you must supply the @odata.type and required properties of the derived type of [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) that you're creating. For example, `"@odata.type" : "#microsoft.graph.fido2CombinationConfiguration"`.
 
 |Property|Type|Description|
 |:---|:---|:---|
