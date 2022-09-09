@@ -58,9 +58,9 @@ Use the following steps to try education API calls in Graph Explorer:
 
       ![Screenshot of the Create assignment query request and response in Graph Explorer](./images/msgraph-onboarding/explorer8-createassignment.png)
 
-12. Try more queries. For more examples, see the [education API reference content](/graph/api/resources/education-overview?view=graph-rest-1.0).
+12. Try more queries. For more examples, see the [education API reference content](/graph/api/resources/education-overview).
 
 
 ## Next steps
 
-- [Working with education APIs in Microsoft Graph](/graph/api/resources/education-overview?view=graph-rest-1.0)
+- [Working with education APIs in Microsoft Graph](/graph/api/resources/education-overview)
