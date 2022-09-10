@@ -27,7 +27,7 @@ Depending on the resource and the permission type (delegated or application) req
 
 > **Note**: 
 >
-> Depending on the actual scenario, subscribing to change notifications of the same resource type may require different permissions. In those cases, use the resource path to differentiate the scenarios.
+> Some resources support change notifications in multiple scenarios, each of which may require different permissions. In those cases, use the resource path to differentiate the scenarios.
 >
 > Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
