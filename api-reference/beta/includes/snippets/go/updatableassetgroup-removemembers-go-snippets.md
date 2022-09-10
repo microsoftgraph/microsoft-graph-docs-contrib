@@ -11,8 +11,6 @@ requestBody := graphmodels.NewRemoveMembersPostRequestBody()
 
 
 updatableAsset := graphmodels.NewUpdatableAsset()
-"@odata.type" := "#microsoft.graph.windowsUpdates.azureADDevice"
-updatableAsset.Set"@odata.type"(&"@odata.type") 
 id := "String (identifier)"
 updatableAsset.SetId(&id) 
 

@@ -65,7 +65,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_socialidentityprovider_from_identityproviderbase"
+  "name": "get_socialidentityprovider_from_identityproviderbase",
+  "sampleKeys": ["Amazon-OAUTH"]
 }
 -->
 
@@ -132,7 +133,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_builtinidentityprovider_from_identityproviderbase"
+  "name": "get_builtinidentityprovider_from_identityproviderbase",
+  "sampleKeys": ["MSASignup-OAUTH"]
 }
 -->
 
@@ -198,11 +200,12 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_applemanagedidentityprovider_from_identityproviderbase"
+  "name": "get_applemanagedidentityprovider_from_identityproviderbase",
+  "sampleKeys": ["Apple-Managed-OIDC"]
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-OIDC
 ```
 

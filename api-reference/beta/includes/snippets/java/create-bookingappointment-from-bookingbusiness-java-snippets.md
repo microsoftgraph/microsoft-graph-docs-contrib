@@ -154,7 +154,7 @@ customers.customQuestionAnswers = customQuestionAnswersList;
 customersList.add(customers);
 bookingAppointment.customers = customersList;
 
-graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").appointments()
+graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com").appointments()
 	.buildRequest()
 	.post(bookingAppointment);
 

@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUnifiedRoleAssignmentMultiple()
-"@odata.type" := "#microsoft.graph.unifiedRoleAssignmentMultiple"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "My test role assignment 1"
 requestBody.SetDisplayName(&displayName) 
 description := "My role assignment description"

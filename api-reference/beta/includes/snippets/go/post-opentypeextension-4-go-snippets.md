@@ -18,8 +18,6 @@ post.SetBody(body)
 
 
 extension := graphmodels.NewExtension()
-"@odata.type" := "microsoft.graph.openTypeExtension"
-extension.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"extensionName" : "Com.Contoso.HR", 
 	"companyName" : "Contoso", 

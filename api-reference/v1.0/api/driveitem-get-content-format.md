@@ -62,7 +62,7 @@ The following values are valid for the **format** parameter:
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/content?format={format}
 ```
 

@@ -54,10 +54,11 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_bookingbusiness"
+  "name": "get_bookingbusiness",
+  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@contoso.onmicrosoft.com
+GET https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
 ```
 
 # [C#](#tab/csharp)

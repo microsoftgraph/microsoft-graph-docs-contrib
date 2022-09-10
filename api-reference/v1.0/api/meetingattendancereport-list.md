@@ -71,10 +71,11 @@ If successful, this method returns a `200 OK` response code and a list of [meeti
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-attendanceReports"
+  "name": "get-attendanceReports",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/attendanceReports
 ```
 

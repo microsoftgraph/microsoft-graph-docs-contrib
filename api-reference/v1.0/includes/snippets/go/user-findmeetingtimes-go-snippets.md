@@ -75,13 +75,13 @@ timeSlots := []graphmodels.TimeSlotable {
 }
 timeConstraint.SetTimeSlots(timeSlots)
 requestBody.SetTimeConstraint(timeConstraint)
-isOrganizerOptional := "false"
+isOrganizerOptional := false
 requestBody.SetIsOrganizerOptional(&isOrganizerOptional) 
-meetingDuration := "PT1H"
+meetingDuration , err := abstractions.ParseISODuration("PT1H")
 requestBody.SetMeetingDuration(&meetingDuration) 
-returnSuggestionReasons := "true"
+returnSuggestionReasons := true
 requestBody.SetReturnSuggestionReasons(&returnSuggestionReasons) 
-minimumAttendeePercentage := graphmodels.100_ 
+minimumAttendeePercentage := float64(100)
 requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage) 
 
 result, err := graphClient.Me().FindMeetingTimes().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)

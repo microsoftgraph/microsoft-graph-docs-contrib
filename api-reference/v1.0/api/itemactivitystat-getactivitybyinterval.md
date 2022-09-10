@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-activities-by-interval" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-01-01',endDateTime='2017-01-3',interval='day')
 ```
 

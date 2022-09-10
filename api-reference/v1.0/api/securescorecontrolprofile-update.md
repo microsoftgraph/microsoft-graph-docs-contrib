@@ -67,7 +67,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "securescorecontrolprofiles_update_1"
+  "name": "securescorecontrolprofiles_update_1",
+  "sampleKeys": ["NonOwnerAccess"]
 }-->
 
 ```http
@@ -132,7 +133,8 @@ The following example shows a request that includes the `Prefer` request header.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "securescorecontrolprofiles_update_2"
+  "name": "securescorecontrolprofiles_update_2",
+  "sampleKeys": ["NonOwnerAccess"]
 }-->
 
 ```http
