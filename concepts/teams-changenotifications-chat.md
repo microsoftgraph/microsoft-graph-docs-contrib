@@ -9,7 +9,9 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for chats using Microsoft Graph
 
-Change notifications enable you to subscribe to changes (create and update) to chats. You can get notified whenever a chat is created or updated. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications enable you to subscribe to changes (create and update) to chats. You can get notified whenever a [chat](/graph/api/resources/chat) is created or updated. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+
+Continue with this article about scenarios for the **chat** resource. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).  
 
 ## Subscribe to changes in any chat at tenant level
 
@@ -203,4 +205,8 @@ The **resource** and **@odata.id** properties can be used to make calls to Micro
 
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)
+- [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
+- [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
+- [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
+- [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)

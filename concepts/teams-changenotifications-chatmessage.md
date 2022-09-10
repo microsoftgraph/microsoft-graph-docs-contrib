@@ -11,6 +11,8 @@ ms.custom: scenarios:getting-started
 
 Change notifications enable you to subscribe to changes (create, update, and delete) to messages in a channel or chat. Change notifications provide a low latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
+Continue with this article about scenarios for the [chatMessage](/graph/api/resources/chatmessage) resource in the [channel](/graph/api/resources/channel) or [chat](/graph/api/resources/chat) context. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
+
 ## Subscribe to changes at the tenant level
 
 To track all changes related to messages in a tenant, you can use subscriptions at a tenant level for channel and chat messages. This requires you to create two subscriptions: one to track all messages across [channels](/graph/api/resources/channel?preserve-view=true), and one to track all messages across [chats](/graph/api/resources/chat?preserve-view=true).
@@ -424,4 +426,8 @@ The **resource** and **@odata.id** properties can be used to make calls to Micro
 
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)
+- [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
+- [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
+- [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
+- [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)

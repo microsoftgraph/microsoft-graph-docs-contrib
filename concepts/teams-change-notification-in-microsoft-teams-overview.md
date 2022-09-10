@@ -25,7 +25,7 @@ Microsoft Teams supports two types of change notifications:
 For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](webhooks.md).
 
 ## Supported resources
-The following table lists the Microsoft Teams resources and corresponding resource paths that are currently supported.
+The following table lists the Microsoft Teams resources that support change notifications and their corresponding resource paths. Apply the resource path for your scenario as specified when [creating a subscription](/graph/api/subscription-post-subscriptions). The type of the resource path payload is the type under the "Resource" column, or a collection of that type.
 
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications** |
 |:----------------|:------------|:-----------------------------------------|
@@ -143,4 +143,9 @@ Previous example above shows a notification that corresponds to a chat message r
 ## See also
 
 - [Microsoft Graph change notifications](webhooks.md)
+- [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
+- [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
+- [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
+- [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
+- [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)
