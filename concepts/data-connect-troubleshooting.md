@@ -8,7 +8,7 @@ ms.prod: "data-connect"
 
 # Microsoft Data Connect Troubleshooting
 
-Microsoft Graph Data Connect lets developers create applications that customers can use to provide managed access to their at-scale Microsoft Graph datasets. This article aims to help MGDC developers further research any common troubleshooting issues and get unblocked quickly so they can run MGDC succesfully on their own.
+Microsoft Graph Data Connect lets developers create applications that customers can use to provide managed access to their at-scale Microsoft Graph datasets. This article aims to help MGDC developers further research any common troubleshooting issues and get unblocked quickly so they can run MGDC successfully on their own.
 
  For an introduction to MGDC, see the [overview](data-connect-concept-overview.md). 
 
