@@ -30,8 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ```
 ## Optional query parameters
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+TThis method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response.
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Header       | Value |
