@@ -7,10 +7,13 @@ ms.localizationpriority: medium
 You can also use Azure Synapse instead of Azure Data Factory to create a pipeline to extract the data from Microsoft 365 to the Azure Storage account using Microsoft Graph Data Connect (Data Connect).
 
 ## Create an Azure Synapse pipeline
-
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
 
 1. Sign in using an account with **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal. Ensure that your account has privileges to create Azure resources within your subscription.
+=======
+# [Microsoft 365 admin center](#tab/Microsoft365)
+
+1. Open a browser and go to your [Microsoft 365 admin center](https://admin.microsoft.com).
 
 1. On the sidebar navigation, select **Create a resource**.
 

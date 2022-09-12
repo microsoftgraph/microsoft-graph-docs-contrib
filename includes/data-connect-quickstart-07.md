@@ -25,7 +25,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
     ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-approve.png)
 1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
 
-    ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) 
+    ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png)
 
 1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
@@ -77,7 +77,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
 
-   [A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png)
+  ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png)
 
 1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
