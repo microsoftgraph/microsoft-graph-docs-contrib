@@ -5547,9 +5547,9 @@
         {
           "Id": "1e139b6c-35c7-4d54-8d37-cc2e812829db7",
           "ApiChange": "Method",
-          "ChangedApiName": "chat message",
-          "ChangeType": "Update",
-          "Description": "Added support for the updation of properties of the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Change",
+          "Description": "Added support for the ability to update properties of the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
           "Target": "chatMessage"
         }
       ],
