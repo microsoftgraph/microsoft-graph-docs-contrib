@@ -26,7 +26,7 @@ To successfully complete this tutorial, make sure that you have the required pre
     2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
     3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
 
-        ![Set permissions](./images/tutorial_riskdetection_api/set-permissions.png)
+        ![Set permissions](./images/tutorial-riskdetection-api/set-permissions.png)
         
     4. Scroll through the list of permissions to these permissions:
         - **IdentityRiskEvents (2)**, expand and then select `IdentityRiskEvent.Read.All`
@@ -34,11 +34,11 @@ To successfully complete this tutorial, make sure that you have the required pre
         - **Policy (13)**, expand and then select `Policy.Read.All` and `Policy.ReadWrite.ConditionalAccess`
         - **User (8)**, expand and then select `User.ReadWrite.All`
         
-        ![Search for permissions](./images/tutorial_riskdetection_api/permissions-consent.png)
+        ![Search for permissions](./images/tutorial-riskdetection-api/permissions-consent.png)
     
     5. Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
 
-        ![Accept permissions](./images/tutorial_riskdetection_api/accept-permissions.png)
+        ![Accept permissions](./images/tutorial-riskdetection-api/accept-permissions.png)
 
 ## Step 1: Create a user account
 
@@ -419,7 +419,7 @@ Content-type: application/json
 
 With this conditional access policy in place, the **MyTestUser1** account is now blocked from signing in because the sign-in risk level is `medium` or `high`.
 
-![Blocked sign-in](./images/tutorial_riskdetection_api/conditionalaccess-policy.png)
+![Blocked sign-in](./images/tutorial-riskdetection-api/conditionalaccess-policy.png)
 
 ## Step 5: Dismiss risky users
 
