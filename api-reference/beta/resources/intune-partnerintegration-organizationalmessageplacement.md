@@ -25,6 +25,9 @@ Indicates the name of the placement
 |card1|2|Indicates the area where the second card is displayed. Only applies to the getStarted surface|
 |card2|3|Indicates the area where the third card is displayed. Only applies to the getStarted surface|
 |card3|4|Indicates the area where the fourth card is displayed. Only applies to the getStarted surface|
+|unknownFutureValue|5|UnknownFutureValue, Evolvable enumeration sentinel value. Do not use.|
+
+
 
 
 
