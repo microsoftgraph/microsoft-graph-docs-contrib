@@ -134,7 +134,7 @@ Update the following properties in the request body:
 
 - **internalUrl** - Set to the internal URL.
 - **externalUrl** - Set to the external URL.
-- All other values can be configured as needed. For details, see [Add an on-premises app to Azure AD](https://docs.microsoft.com/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
+- All other values can be configured as needed. For details, see [Add an on-premises app to Azure AD](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
 #### Request
 
