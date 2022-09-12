@@ -19,7 +19,7 @@ Represents a list of external tenants in the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| members | String collection | This represents a collection of tenant ids in scope of Conditional Access for guest and external users policy targeting. |
+| members | String collection | Represents a collection of tenant ids in the scope of Conditional Access for guests and external users policy targeting. |
 
 ## Relationships
 
