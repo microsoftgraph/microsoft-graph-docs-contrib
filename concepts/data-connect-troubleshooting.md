@@ -25,7 +25,7 @@ If you are having issues running your pipelines for the first time, please check
 2. The owner account must have:
 
     1. User account
-    2. The user account must have an Exchange E5 Office license with Exchange Online capabilities. This account does NOT need admin privilges to be able to run pipelines against this SPN check.
+    2. The user account must have an Exchange E5 Office license with Exchange Online capabilities. This account does NOT need admin privilges to be able to run pipelines against this Service Principal check.
 
 3. If the owning member is no longer valid in a tenant's system, pipelines will fail this check unless a current valid user within the tenant owns the account. Please ensure that the owning account is passed down to another member with the above requirements if there is a change in ownership.
 
@@ -33,7 +33,7 @@ If you are having issues running your pipelines for the first time, please check
 
 If you are having issues approving jobs within your tenant for your specified pipeline runs or extractions, please ensure that the approvers in your tenant meet the criteria below. Certain priviledges must be granted to designated approvers to successfully approve jobs.
 
-1. Approvers must be real users in the tenant. For example, they cannot be former member IDs of the tenant or SPNs. They must be currently active users within the tenant. 
+1. Approvers must be real users in the tenant. For example, they cannot be former member IDs of the tenant or Service Principals. They must be currently active users within the tenant. 
 
 2. The user account must have an Exchange E5 Office license with Exchange Online capabilities and mailbox.
 
@@ -45,7 +45,8 @@ Sometimes, customers may want to add other regions to their pipelines, especiall
 
 Below things to keep in mind for customers with multi-geo tenats to extract data:
 
-1. When requesting datasets, MGDC only allows datasets to be extracted from the same region as the tenant. For example, if you have a tenant in Europe (EUR) but want to run a pipeline for your users in North America (NAM), you will only get data for users in NAM since you specified a pipeline for NAM.
+1. When requesting datasets, MGDC only allows datasets to be extracted from the same region as the tenant. 
+    1. For example, if you have a tenant in Europe (EUR) but want to run a pipeline for your users in North America (NAM), you will only get data for users in NAM since you specified a pipeline for NAM.
 
 2. Multi-geo tenants can extract data for their tenants by setting up region specific pipelines. For example, one region maps to one or a set of pipelines for that region. 
 
