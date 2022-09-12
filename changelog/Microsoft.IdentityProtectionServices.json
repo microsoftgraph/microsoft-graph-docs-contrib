@@ -5,6 +5,22 @@
 			  {
 				"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
 				"ApiChange": "Member",
+				"ChangedApiName": "adminConfirmedServicePrincipalCompromised",
+				"ChangeType": "Addition",
+				"Description": "Added the `adminConfirmedServicePrincipalCompromised` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+				"ApiChange": "Member",
+				"ChangedApiName": "m365DAdminDismissedDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the `adminDismissedAllRiskForServicePrincipal` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+				"ApiChange": "Member",
 				"ChangedApiName": "m365DAdminDismissedDetection",
 				"ChangeType": "Addition",
 				"Description": "Added the `m365DAdminDismissedDetection` member to the **riskDetail** enumeration.",
