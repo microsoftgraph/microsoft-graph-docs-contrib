@@ -10,6 +10,8 @@ ms.prod: "data-connect"
 
 Microsoft Graph Data Connect lets developers create applications that customers can use to provide managed access to their at-scale Microsoft Graph datasets. This article provides tips that will help you take advantage of the Microsoft Graph Data Connect feature. For an introduction to Microsoft Graph Data Connect, see the [overview](data-connect-concept-overview.md).
 
+For further questions not covered in this page or [troubleshooting] (data-connect-troubleshooting.md) please reach out dataconnect@microsoft.com.
+
 ## Is Microsoft Graph Data Connect right for me?
 
 Microsoft Graph Data Connect and Microsoft Graph APIs provide access to the same underlying data but in very different ways. Microsoft Graph Data Connect is designed to extract large amounts of datasets in bulk, scalable to your entire organization; while Microsoft Graph APIs are suitable for accessing small amount of data from selected users and groups in your organization.
@@ -42,7 +44,9 @@ New datasets are added to Microsoft Graph Data Connect on a regular basis. For a
 
 ## Which datasets are in preview and which are generally available?
 
-Datasets under the OneDrive/SharePoint and Viva Insights sections are currently available for customers in preview or for those who have the Viva Insights licens,e respectively. For information about how to sign up for the preview for certain datasets, see [Dataset, regions, and sinks](/concepts/data-connect-datasets.md#datasets).
+Datasets under the OneDrive/SharePoint and Viva Insights sections are currently available for customers in preview or for those who have the Viva Insights license respectively.
+
+For information on datasets that are generally avaialble or in preview only, see [Dataset, regions, and sinks](/concepts/data-connect-datasets.md#datasets).
 
 ## How much do I have to pay for Microsoft Graph Data Connect?
 
