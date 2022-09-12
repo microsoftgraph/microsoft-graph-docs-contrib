@@ -39,12 +39,12 @@ To create the application from the gallery, you first get the identifier of the 
 
 ### Retrieve the gallery application template identifier
 
- In this tutorial, you retrieve the identifier of the application template for `AWS Single Sign-on`. Record the value of the **id** property to use later in this tutorial.
+ In this tutorial, you retrieve the identifier of the application template for `AWS IAM Identity Center (successor to AWS Single Sign-On)`. Record the value of the **id** property to use later in this tutorial.
 
 #### Request
 
 ```http
-GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'AWS Single Sign-on'
+GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'AWS IAM Identity Center (successor to AWS Single Sign-On)'
 ```
 
 #### Response
@@ -54,30 +54,30 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applicationTemplates",
-  "value": [
-    {
-      "id": "21ed01d2-ec13-4e9e-86c1-cd546719ebc4",
-      "displayName": "AWS Single Sign-on",
-      "homePageUrl": "https://aws.amazon.com/",
-      "supportedSingleSignOnModes": [
-        "saml",
-        "external"
-      ],
-      "supportedProvisioningTypes": [
-        "sync"
-      ],
-      "logoUrl": "https://az495088.vo.msecnd.net/app-logo/awssinglesignon_215.png",
-      "categories": [
-        "developerServices",
-        "itInfrastructure",
-        "security",
-        "New"
-      ],
-      "publisher": "Amazon Web Services, Inc.",
-      "description": "Federate once to AWS SSO & use it to manage access centrally to multiple AWS accounts. Provision users via SCIM & get Azure AD single sign-in access to the AWS Console, CLI, & AWS SSO integrated apps."
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applicationTemplates",
+    "value": [
+        {
+            "id": "21ed01d2-ec13-4e9e-86c1-cd546719ebc4",
+            "displayName": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+            "homePageUrl": "https://aws.amazon.com/",
+            "supportedSingleSignOnModes": [
+                "saml",
+                "external"
+            ],
+            "supportedProvisioningTypes": [
+                "sync"
+            ],
+            "logoUrl": "https://az495088.vo.msecnd.net/app-logo/awssinglesignon_215.png",
+            "categories": [
+                "developerServices",
+                "itInfrastructure",
+                "security",
+                "New"
+            ],
+            "publisher": "Amazon Web Services, Inc.",
+            "description": "Federate once to AWS IAM Identity Center (successor to AWS Single Sign-On) & use it to centrally manage access to multiple AWS accounts and IAM Identity Center enabled apps. Provision users via SCIM."
+        }
+    ]
 }
 ```
 

@@ -5538,8 +5538,274 @@
       "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-08-22T15:04:69.427Z",
+      "CreatedDateTime": "2022-08-22T15:04:49.427Z",
       "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d63505d3-b68c-4fc0-b9d5-ec67cd05f574",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true&tabs=http) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "d63505d3-b68c-4fc0-b9d5-ec67cd05f574",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1c06c349-ae7e-457c-a361-c1f348e933ce",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "1c06c349-ae7e-457c-a361-c1f348e933ce",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "67375642-1dd9-40d5-9557-60666af89db3",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "67375642-1dd9-40d5-9557-60666af89db3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "973b69eb-4b51-42ad-a9a0-69d01a7c8157",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "973b69eb-4b51-42ad-a9a0-69d01a7c8157",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "ed2dd249-298c-4f2d-be8f-820179dfa0a7",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true&tabs=http) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-beta#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "ed2dd249-298c-4f2d-be8f-820179dfa0a7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7c19a825-dc16-4707-8f1f-4183354e1229",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-beta#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "7c19a825-dc16-4707-8f1f-4183354e1229",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d92bccc9-a7d1-4bca-a3de-17b29f97c035",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-beta#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "d92bccc9-a7d1-4bca-a3de-17b29f97c035",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e643e918-6db1-4c0d-a3c6-07cfe0895f54",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-beta#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "e643e918-6db1-4c0d-a3c6-07cfe0895f54",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "fcf602d1-fffb-4398-998c-05ce64b1e2a8",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true&tabs=http) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-beta#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "fcf602d1-fffb-4398-998c-05ce64b1e2a8",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "93e701bc-aeb5-470a-8ff4-650804bce647",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-beta#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "93e701bc-aeb5-470a-8ff4-650804bce647",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "19c808ad-7b07-433f-8f35-a80509344a08",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-beta#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "19c808ad-7b07-433f-8f35-a80509344a08",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "007d9f4d-643c-4f9f-8009-0f71428ab05e",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-beta#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "007d9f4d-643c-4f9f-8009-0f71428ab05e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6a4e583a-818c-418e-878b-f5e17b691b89",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Chat.ReadBasic.WhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of Chat.ReadBasic.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "9b38d17b-1b86-4a06-a8ac-7517c9a9e57c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Chat.Read.WhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of Chat.Read.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "3fb65956-b7e5-4d8e-ac3c-6ec01672c991",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Chat.ReadWrite.WhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of Chat.ReadWrite.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "3e977da8-1f40-44b1-95d8-6b51c880b314",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ChatMember.Read.WhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of ChatMember.Read.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "b650b304-a9d0-4833-9f92-a3e8ac593fec",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ChatMember.ReadWriteWhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of ChatMember.ReadWrite.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "a0be1a78-e915-49f0-b677-f5d227004236",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }
   ]

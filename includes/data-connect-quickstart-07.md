@@ -22,6 +22,9 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 1. After a few moments, you should see the status page for the activity run update to show that it is now _extracting data_.
 
    <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
+   
+    1. In the new **ASP.NET Web Application** project dialog, select **MVC**.
+    1. Select **Create**.
 
 1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
@@ -33,7 +36,6 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
     ```powershell
     Set-ExecutionPolicy RemoteSigned
     ```
-
 1. Connect to Exchange Online.
 
     1. Obtain a sign in credential by executing the following PowerShell. Sign in using a different user than one that created and started the Azure Data Factory pipeline, who has the **Global Administrator** role applied, who is a member of the group that has rights to approve requests to data in Microsoft 365, and has multi-factor authentication enabled.
