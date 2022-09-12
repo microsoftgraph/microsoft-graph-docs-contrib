@@ -34,7 +34,7 @@ GET /education/classes/{id}/group
 
 ## Optional query parameters
 
-This method supports the `$top`, `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Header       | Value |
