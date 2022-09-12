@@ -26,7 +26,7 @@ To successfully complete this tutorial, make sure that you have the required pre
     2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
     3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
 
-        ![Set permissions](./images/tutorial-riskdetection-api/set-permissions.png)
+        ![Set permissions](./images/tutorial_riskdetection_api/set-permissions.png)
         
     4. Scroll through the list of permissions to these permissions:
         - **IdentityRiskEvents (2)**, expand and then select `IdentityRiskEvent.Read.All`
@@ -34,11 +34,11 @@ To successfully complete this tutorial, make sure that you have the required pre
         - **Policy (13)**, expand and then select `Policy.Read.All` and `Policy.ReadWrite.ConditionalAccess`
         - **User (8)**, expand and then select `User.ReadWrite.All`
         
-        ![Search for permissions](./images/tutorial-riskdetection-api/permissions-consent.png)
+        ![Search for permissions](./images/tutorial_riskdetection_api/permissions-consent.png)
     
     5. Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
 
-        ![Accept permissions](./images/tutorial-riskdetection-api/accept-permissions.png)
+        ![Accept permissions](./images/tutorial_riskdetection_api/accept-permissions.png)
 
 ## Step 1: Create a user account
 
@@ -47,7 +47,7 @@ For this tutorial, you create a user account that is used to test risk detection
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-riskdetection-create-user"
+  "name": "tutorial_riskdetection_create_user"
 }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/users
@@ -104,7 +104,7 @@ When you signed in to the Azure portal using the anonymous browser, an `anonymiz
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-riskdetection-get-riskdetections"
+  "name": "tutorial_riskdetection_get_riskdetections"
 }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
@@ -176,7 +176,7 @@ The conditional access policy provides the ability to set the conditions of the 
 #### Request 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-riskdetection-create-conditionalaccesspolicy"
+  "name": "tutorial_riskdetection_create_conditionalaccesspolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies 
@@ -278,7 +278,7 @@ Because MFA was completed. Now, when you list risk detections the **riskState** 
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-riskdetection-get-riskdetections-filter"
+  "name": "tutorial_riskdetection_get_riskdetections_filter"
 }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
@@ -331,7 +331,7 @@ Instead of providing the opportunity for the user to self-remediate, you can blo
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-riskdetection-create-conditionalaccesspolicy"
+  "name": "tutorial_riskdetection_create_conditionalaccesspolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
@@ -419,7 +419,7 @@ Content-type: application/json
 
 With this conditional access policy in place, the **MyTestUser1** account is now blocked from signing in because the sign-in risk level is `medium` or `high`.
 
-![Blocked sign-in](./images/tutorial-riskdetection-api/conditionalaccess-policy.png)
+![Blocked sign-in](./images/tutorial_riskdetection_api/conditionalaccess-policy.png)
 
 ## Step 5: Dismiss risky users
 
@@ -430,7 +430,7 @@ If you believe the user is not at risk, and you don’t want to enforce a condit
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-riskdetection-riskyusers.dismiss"
+  "name": "tutorial_riskdetection_riskyusers.dismiss"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/dismiss
@@ -458,7 +458,7 @@ After dismissing the risk user, you can see in the response when listing risky u
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-riskdetection-riskyusers.list"
+  "name": "tutorial_riskdetection_riskyusers.list"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=userDisplayName eq 'MyTestUser1'
@@ -500,7 +500,7 @@ Delete the **MyTestUser1** user account.
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-riskdetection-delete-user"
+  "name": "tutorial_riskdetection_delete_user"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806dc
@@ -521,7 +521,7 @@ Delete the conditional access policy that you created.
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-riskdetection-delete-group"
+  "name": "tutorial_riskdetection_delete_group"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/9ad78153-b1f8-4714-adc1-1445727678a8

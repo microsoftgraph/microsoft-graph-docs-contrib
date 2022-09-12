@@ -45,7 +45,7 @@ To create the application from the gallery, you first get the identifier of the 
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-applicationtemplates-get"
+  "name": "tutorial_configure_saml_sso_applicationtemplates_get"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'AWS IAM Identity Center (successor to AWS Single Sign-On)'
@@ -97,7 +97,7 @@ Using the **id** value that you recorded for the application template, create an
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-applicationtemplate.instantiate"
+  "name": "tutorial_configure_saml_sso_applicationtemplate.instantiate"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/applicationTemplates/21ed01d2-ec13-4e9e-86c1-cd546719ebc4/instantiate
@@ -297,7 +297,7 @@ In this tutorial, you set `saml` as the single sign-on mode in the service princ
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-update-serviceprincipal"
+  "name": "tutorial_configure_saml_sso_update_serviceprincipal"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91
@@ -324,7 +324,7 @@ Using the **id** for the application that you recorded earlier, set the identifi
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-update-application"
+  "name": "tutorial_configure_saml_sso_update_application"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/a9be408a-6c31-4141-8cea-52fcd4a61be8
@@ -364,7 +364,7 @@ Use the **id** for the service principal that you recorded earlier.
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-update-servicepricipal-approles"
+  "name": "tutorial_configure_saml_sso_update_servicepricipal_approles"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/serviceprincipals/a750f6cf-2319-464a-bcc3-456926736a91
@@ -450,7 +450,7 @@ Create the claims mapping policy and record the value of the **id** property to 
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-create-claimsmappingpolicy"
+  "name": "tutorial_configure_saml_sso_create_claimsmappingpolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
@@ -496,7 +496,7 @@ Use the **id** for the service principal that you recorded earlier to assign a c
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-assign-serviceprincipal-claimsmappingpolicy"
+  "name": "tutorial_configure_saml_sso_assign_serviceprincipal_claimsmappingpolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/claimsMappingPolicies/$ref
@@ -528,7 +528,7 @@ Using the **id** of the service principal that you created, create a new certifi
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-create-addtokensigningcertificate"
+  "name": "tutorial_configure_saml_sso_create_addtokensigningcertificate"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/addTokenSigningCertificate
@@ -573,7 +573,7 @@ You need to set the **preferredTokenSigningKeyThumbprint** property of the servi
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-update-certificatethumbprint"
+  "name": "tutorial_configure_saml_sso_update_certificatethumbprint"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91
@@ -603,7 +603,7 @@ For this tutorial, you create a user account that is added to the application. I
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-create-user"
+  "name": "tutorial_configure_saml_sso_create_user"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/users
@@ -652,7 +652,7 @@ In the request body, provide these values:
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-add-approleassignment"
+  "name": "tutorial_configure_saml_sso_add_approleassignment"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/appRoleAssignments
@@ -725,7 +725,7 @@ Delete the application that you created.
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-delete-application"
+  "name": "tutorial_configure_saml_sso_delete_application"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/applications/a9be408a-6c31-4141-8cea-52fcd4a61be8
@@ -747,7 +747,7 @@ Delete the MyTestUser1 user account.
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-delete-user"
+  "name": "tutorial_configure_saml_sso_delete_user"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/040f9599-7c0f-4f94-aa75-8394c4c6ea9b
@@ -769,7 +769,7 @@ Delete the claims mapping policy.
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-saml-sso-delete-claimsmappingpolicy"
+  "name": "tutorial_configure_saml_sso_delete_claimsmappingpolicy"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/a4b35718-fd5e-4ca8-8248-a3c9934b1b78

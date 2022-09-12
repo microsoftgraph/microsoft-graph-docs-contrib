@@ -50,7 +50,7 @@ For this tutorial, you create a user account that is used to request access to t
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-create-user"
+  "name": "tutorial_entitlementmanagement_create_user"
 }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/users
@@ -110,7 +110,7 @@ In this tutorial, you create a group named **Marketing resources** that is the t
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-create-group"
+  "name": "tutorial_entitlementmanagement_create_group"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
@@ -162,7 +162,7 @@ To add resources to the catalog, you must first get the identifier of it. If you
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-get-accesspackagecatalog"
+  "name": "tutorial_entitlementmanagement_get_accesspackagecatalog"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs?$filter=(displayName eq 'General')
@@ -208,7 +208,7 @@ To add the group that you created to the catalog, provide the following property
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-get-accesspackageresourcerequest"
+  "name": "tutorial_entitlementmanagement_get_accesspackageresourcerequest"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
@@ -258,7 +258,7 @@ In the request, provide the **id** of the catalog that you are using. Record the
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-get-accesspackageresources"
+  "name": "tutorial_entitlementmanagement_get_accesspackageresources"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/cec5d6ab-c75d-47c0-9c1c-92e89f66e384/accessPackageResources?$filter=(displayName eq 'Marketing resources')
@@ -299,7 +299,7 @@ In the request, use the **id** of the catalog and the **id** of the group resour
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-get-accesspackageresourceroles"
+  "name": "tutorial_entitlementmanagement_get_accesspackageresourceroles"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/cec5d6ab-c75d-47c0-9c1c-92e89f66e384/accessPackageResourceRoles?$filter=(originSystem+eq+%27AadGroup%27+and+accessPackageResource/id+eq+%274a1e21c5-8a76-4578-acb1-641160e076e8%27+and+displayName+eq+%27Member%27)&$expand=accessPackageResource
@@ -348,7 +348,7 @@ At this point, you have a catalog with a group resource, and you know that you'l
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-create-accesspackage"
+  "name": "tutorial_entitlementmanagement_create_accesspackage"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages
@@ -390,7 +390,7 @@ Add the Member role of the group resource to the access package. In the request,
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-get-accesspackageresourcerolescope"
+  "name": "tutorial_entitlementmanagement_get_accesspackageresourcerolescope"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/88203d16-0e31-41d4-87b2-dd402f1435e9/accessPackageResourceRoleScopes
@@ -442,7 +442,7 @@ The value of the **durationInDays** property enables the **Requestor1** account 
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-get-accesspackageassignmentpolicy"
+  "name": "tutorial_entitlementmanagement_get_accesspackageassignmentpolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
@@ -535,7 +535,7 @@ If you haven't done so already, sign out of the administrator account that you w
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-create-accesspackageassignmentrequest"
+  "name": "tutorial_entitlementmanagement_create_accesspackageassignmentrequest"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
@@ -585,7 +585,7 @@ Use the value of the **id** property of the request to get the current status of
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-get-accesspackageassignmentrequest"
+  "name": "tutorial_entitlementmanagement_get_accesspackageassignmentrequest"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/a6bb6942-3ae1-4259-9908-0133aaee9377
@@ -619,7 +619,7 @@ You can also use the **id** of the access package policy that you created to see
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-get-accesspackageassignment"
+  "name": "tutorial_entitlementmanagement_get_accesspackageassignment"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'&$expand=target,accessPackageAssignmentResourceRoles
@@ -668,7 +668,7 @@ After the request has been granted, you can use the **id** that you recorded for
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-get-group-members"
+  "name": "tutorial_entitlementmanagement_get_group_members"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/groups/e93e24d1-2b65-4a6c-a1dd-654a12225487/members
@@ -725,7 +725,7 @@ You must remove any assignments to the access package before you can delete it. 
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-remove-accesspackageassignmentrequest"
+  "name": "tutorial_entitlementmanagement_remove_accesspackageassignmentrequest"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
@@ -767,7 +767,7 @@ Use the **id** of the assignment policy that you previously recorded to delete i
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-delete-accesspackageassignmentpolicy"
+  "name": "tutorial_entitlementmanagement_delete_accesspackageassignmentpolicy"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f
@@ -788,7 +788,7 @@ Use the **id** of the access package that you previously recorded to delete it.
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-delete-accesspackage"
+  "name": "tutorial_entitlementmanagement_delete_accesspackage"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/cf54c6ca-d717-49bc-babe-d140d035dfdd
@@ -809,7 +809,7 @@ Delete the **Requestor1** user account.
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-delete-user"
+  "name": "tutorial_entitlementmanagement_delete_user"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/ce02eca8-752b-4ecf-ac29-aa9bccd87606
@@ -830,7 +830,7 @@ Delete the **Marketing resources** group.
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-entitlementmanagement-delete-group"
+  "name": "tutorial_entitlementmanagement_delete_group"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4209

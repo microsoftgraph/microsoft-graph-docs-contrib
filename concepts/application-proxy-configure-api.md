@@ -42,7 +42,7 @@ Record the **id**, **appId**, **servicePrincipalId** of the application to use l
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-create-applicationtemplates"
+  "name": "tutorial_configure_appproxy_create_applicationtemplates"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
@@ -103,7 +103,7 @@ Insert the **id** that you recorded for the application into the URL to start th
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-update-application"
+  "name": "tutorial_configure_appproxy_update_application"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
@@ -140,7 +140,7 @@ Update the following properties in the request body:
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-update-application-2"
+  "name": "tutorial_configure_appproxy_update_application_2"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
@@ -180,7 +180,7 @@ List the connectors that are available. Record the **id** of the connector that 
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-get-connectors"
+  "name": "tutorial_configure_appproxy_get_connectors"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
@@ -223,7 +223,7 @@ For this example, a new connectorGroup is created named `IWA Demo Connector Grou
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-create-connectorgroup"
+  "name": "tutorial_configure_appproxy_create_connectorgroup"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
@@ -259,7 +259,7 @@ Content-type: connectorGroup/json
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-create-connector-memberof"
+  "name": "tutorial_configure_appproxy_create_connector_memberof"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/f2cab422-a1c8-4d70-a47e-2cb297a2e051/memberOf/$ref
@@ -284,7 +284,7 @@ HTTP/1.1 204 No content
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-assign-application-connectorgroup"
+  "name": "tutorial_configure_appproxy_assign_application_connectorgroup"
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/connectorGroup/$ref
@@ -311,7 +311,7 @@ This application uses Integrated Windows Authentication (IWA). To configure IWA,
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-update-app-sso"
+  "name": "tutorial_configure_appproxy_update_app_sso"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
@@ -348,7 +348,7 @@ Get the app roles for the application using the **id** of the service principal.
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-get-approles"
+  "name": "tutorial_configure_appproxy_get_approles"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoles
@@ -391,7 +391,7 @@ For this tutorial, you create a user account that is assigned to the app role. I
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-create-user"
+  "name": "tutorial_configure_appproxy_create_user"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/users
@@ -445,7 +445,7 @@ In the following example, replace the values of these properties:
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-create-serviceprincipal-approleassignment"
+  "name": "tutorial_configure_appproxy_create_serviceprincipal_approleassignment"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments
@@ -498,7 +498,7 @@ Delete the MyTestUser1 user account.
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-delete-user"
+  "name": "tutorial_configure_appproxy_delete_user"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806dc
@@ -518,7 +518,7 @@ No Content - 204
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-delete-application"
+  "name": "tutorial_configure_appproxy_delete_application"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
@@ -538,7 +538,7 @@ No Content - 204
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-configure-appproxy-delete-connectorgroup"
+  "name": "tutorial_configure_appproxy_delete_connectorgroup"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6
