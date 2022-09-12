@@ -38,6 +38,8 @@ The following table lists the supported events.
 | [membersDeletedEventMessageDetail](../resources/membersdeletedeventmessagedetail.md) | **Members** have been removed. |
 | [membersJoinedEventMessageDetail](../resources/membersjoinedeventmessagedetail.md) | **Members** have joined. |
 | [membersLeftEventMessageDetail](../resources/memberslefteventmessagedetail.md) | **Members** have left. |
+| [messagePinnedEventMessageDetail](../resources/messagepinnedeventmessagedetail.md) | A message has been pinned. |
+| [messageUnpinnedEventMessageDetail](../resources/messageunpinnedeventmessagedetail.md) | A message has been unpinned. |
 | [tabUpdatedEventMessageDetail](../resources/tabupdatedeventmessagedetail.md) | A tab has been updated. |
 | [teamArchivedEventMessageDetail](../resources/teamarchivedeventmessagedetail.md) | A **team** has been archived. |
 | [teamCreatedEventMessageDetail](../resources/teamcreatedeventmessagedetail.md) | A **team** has been created. |
