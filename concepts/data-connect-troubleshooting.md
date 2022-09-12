@@ -48,7 +48,8 @@ Below things to keep in mind for customers with multi-geo tenats to extract data
 1. When requesting datasets, MGDC only allows datasets to be extracted from the same region as the tenant. 
     1. For example, if you have a tenant in Europe (EUR) but want to run a pipeline for your users in North America (NAM), you will only get data for users in NAM since you specified a pipeline for NAM.
 
-2. Multi-geo tenants can extract data for their tenants by setting up region specific pipelines. For example, one region maps to one or a set of pipelines for that region. 
+2. Multi-geo tenants can extract data for their tenants by setting up region specific pipelines. 
+    1. For example, one region maps to one or a set of pipelines for that region. 
 
 ## Troubleshooting on aggregating mutliple JSON file outputs into one
 
