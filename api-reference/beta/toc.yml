@@ -16787,6 +16787,25 @@ items:
           href: api/workbookcomment-post-replies.md
         - name: Get reply
           href: api/workbookcommentreply-get.md
+      - name: Workbook table row
+        href: resources/workbooktablerow.md
+        items:
+        - name: List
+          href: api/tablerow-list.md
+        - name: Create
+          href: api/table-post-rows.md
+        - name: Get
+          href: api/tablerow-get.md
+        - name: Update
+          href: api/tablerow-update.md
+        - name: Delete
+          href: api/tablerow-delete.md
+        - name: Get range
+          href: api/tablerow-range.md
+        - name: Get item at
+          href: api/tablerowcollection-itemat.md
+        - name: Add row
+          href: api/tablerowcollection-add.md
       - name: Worksheet
         href: resources/workbookworksheet.md
         items:
