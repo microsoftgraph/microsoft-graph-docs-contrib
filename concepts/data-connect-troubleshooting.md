@@ -81,7 +81,7 @@ Customers will need to allow list their IPs based on their region, the region of
         | APAC        | Southeast Asia                       |
         | AUS         | Australia Southeast                  |
 
-3. Look up how to configure your azure storage account and [grant access from an internet ip range](https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range). 
+3. Look up how to configure your azure storage account and [grant access from an internet IP range](https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range). 
 
 4. Once you have configured your Office to Azure region mapping and the correct region your Azure storage account can be in, you can [allowlist IPs on your Azure Storage account](https://docs.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions). 
 
