@@ -116,11 +116,43 @@ Content-Type: application/json
             "id": "all_users",
             "isRegistrationRequired": false,
             "authenticationMode": "any",
-            "outlookMobileAllowedState": "default",
-            "displayAppInformationRequiredState": "default",
-            "numberMatchingRequiredState": "default"
         }
-    ]
+    ],
+    "featureSettings": {
+        "numberMatchingRequiredState" : {
+            "state": "enabled",
+              "includeTarget": {
+                "targetType": "group",
+                "id": "all_users"
+            },
+            "excludeTarget": {
+                "targetType": "group",
+                "id": "d6414fc6-7ab5-402e-9858-ff5c2a5732abf"
+            }
+        },
+        "displayAppContextRequiredState" : {
+            "state": "enabled",
+              "includeTarget": {
+                "targetType": "group",
+                "id": "all_users"
+            },
+            "excludeTarget": {
+                "targetType": "group",
+                "id": "XYZ-791F-4AB5-AD91-A05D2DCFF8CE"
+            }
+        },
+        "displayLocationContextRequiredState" : {
+            "state": "enabled",
+              "includeTarget": {
+                "targetType": "group",
+                "id": "all_users"
+            },
+            "excludeTarget": {
+                "targetType": "group",
+                "id": "XYZ-791F-4AB5-AD91-A05D2DCFF8CE"
+            }
+        }
+    }
 }
 ```
 

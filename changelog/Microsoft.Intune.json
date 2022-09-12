@@ -3,6 +3,264 @@
     {
       "ChangeList": [
         {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "autoRestartNotificationDismissalMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoRestartNotificationDismissalMethod** enumeration type.",
+          "Target": "autoRestartNotificationDismissalMethod"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "enablement",
+          "ChangeType": "Addition",
+          "Description": "Added the **enablement** enumeration type.",
+          "Target": "enablement"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "windowsUpdateForBusinessUpdateWeeks",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsUpdateForBusinessUpdateWeeks** enumeration type.",
+          "Target": "windowsUpdateForBusinessUpdateWeeks"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "windowsUpdateNotificationDisplayOption",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsUpdateNotificationDisplayOption** enumeration type.",
+          "Target": "windowsUpdateNotificationDisplayOption"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowWindows11Upgrade",
+          "ChangeType": "Addition",
+          "Description": "Added the `allowWindows11Upgrade` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "autoRestartNotificationDismissal",
+          "ChangeType": "Addition",
+          "Description": "Added the `autoRestartNotificationDismissal` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "deadlineForFeatureUpdatesInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the `deadlineForFeatureUpdatesInDays` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "deadlineForQualityUpdatesInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the `deadlineForQualityUpdatesInDays` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "deadlineGracePeriodInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the `deadlineGracePeriodInDays` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "engagedRestartDeadlineInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the `engagedRestartDeadlineInDays` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "engagedRestartSnoozeScheduleInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the `engagedRestartSnoozeScheduleInDays` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "engagedRestartTransitionScheduleInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the `engagedRestartTransitionScheduleInDays` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "featureUpdatesPauseStartDate",
+          "ChangeType": "Addition",
+          "Description": "Added the `featureUpdatesPauseStartDate` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "featureUpdatesRollbackStartDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the `featureUpdatesRollbackStartDateTime` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "featureUpdatesRollbackWindowInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the `featureUpdatesRollbackWindowInDays` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "featureUpdatesWillBeRolledBack",
+          "ChangeType": "Addition",
+          "Description": "Added the `featureUpdatesWillBeRolledBack` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "postponeRebootUntilAfterDeadline",
+          "ChangeType": "Addition",
+          "Description": "Added the `postponeRebootUntilAfterDeadline` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "qualityUpdatesPauseStartDate",
+          "ChangeType": "Addition",
+          "Description": "Added the `qualityUpdatesPauseStartDate` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "qualityUpdatesRollbackStartDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the `qualityUpdatesRollbackStartDateTime` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "qualityUpdatesWillBeRolledBack",
+          "ChangeType": "Addition",
+          "Description": "Added the `qualityUpdatesWillBeRolledBack` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "scheduleImminentRestartWarningInMinutes",
+          "ChangeType": "Addition",
+          "Description": "Added the `scheduleImminentRestartWarningInMinutes` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "scheduleRestartWarningInHours",
+          "ChangeType": "Addition",
+          "Description": "Added the `scheduleRestartWarningInHours` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "skipChecksBeforeRestart",
+          "ChangeType": "Addition",
+          "Description": "Added the `skipChecksBeforeRestart` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "updateNotificationLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the `updateNotificationLevel` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "updateWeeks",
+          "ChangeType": "Addition",
+          "Description": "Added the `updateWeeks` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "userPauseAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the `userPauseAccess` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "userWindowsUpdateScanAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the `userWindowsUpdateScanAccess` property to the [windowsUpdateForBusinessConfiguration](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "da5bfb4d-fe11-47a4-bff8-0b9af4d3bd8f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "detectedAppPlatformType",
+          "ChangeType": "Addition",
+          "Description": "Added the **detectedAppPlatformType** enumeration type.",
+          "Target": "detectedAppPlatformType"
+        },
+        {
+          "Id": "da5bfb4d-fe11-47a4-bff8-0b9af4d3bd8f",
+          "ApiChange": "Property",
+          "ChangedApiName": "platform",
+          "ChangeType": "Addition",
+          "Description": "Added the `platform` property to the [detectedApp](https://docs.microsoft.com/graph/api/resources/intune-devices-detectedapp?view=graph-rest-1.0) resource.",
+          "Target": "detectedApp"
+        },
+        {
+          "Id": "da5bfb4d-fe11-47a4-bff8-0b9af4d3bd8f",
+          "ApiChange": "Property",
+          "ChangedApiName": "publisher",
+          "ChangeType": "Addition",
+          "Description": "Added the `publisher` property to the [detectedApp](https://docs.microsoft.com/graph/api/resources/intune-devices-detectedapp?view=graph-rest-1.0) resource.",
+          "Target": "detectedApp"
+        },
+        {
+          "Id": "ffe866d5-cdf2-419d-b5c2-e8910922a85d",
+          "ApiChange": "Member",
+          "ChangedApiName": "json",
+          "ChangeType": "Addition",
+          "Description": "Added the `json` member to the **deviceManagementReportFileFormat** enumeration.",
+          "Target": "deviceManagementReportFileFormat"
+        }
+      ],
+      "Id": "b2e2f632-8eff-4a3d-9467-0fb47c14fa5f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-17T14:56:13.6840353Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+    "ChangeList": [
+        {
           "Id": "fef42d93-a0d9-4d71-aa73-f02ed7171f7d",
           "ApiChange": "Property",
           "ChangedApiName": "configureWifi",
