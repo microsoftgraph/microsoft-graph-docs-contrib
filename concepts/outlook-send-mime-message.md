@@ -32,9 +32,9 @@ For more information on MIME format, see [getting MIME content of a message](out
 | Reply to a message | [reply](/graph/api/message-reply) |
 | Create a draft to reply to a message | [createReply](/graph/api/message-createreply) |
 | ReplyAll to a message | [replyAll](/graph/api/message-replyall) | 
-| Create a draft to replyAll to a message | [createReplyAll](/graph/api-reference/api/message-createreplyall) |
+| Create a draft to replyAll to a message | [createReplyAll](/graph/api/message-createreplyall?view=graph-rest-1.0&tabs=http) |
 | Forward a message | [forward](/graph/api/message-forward) |
-| Create a draft to forward a message | [createForward](/graph/api-reference/api/message-createforward) | 
+| Create a draft to forward a message | [createForward](/graph/api/message-createforward?view=graph-rest-1.0&tabs=http) | 
 
 
 ## Specify request header and MIME message body
