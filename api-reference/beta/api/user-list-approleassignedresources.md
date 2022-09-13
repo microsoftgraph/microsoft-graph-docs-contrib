@@ -30,8 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /me/appRoleAssignedResources
-GET /users/{usersId}/appRoleAssignedResources
+GET /me/appRoleAssignedResources?$count=true
+ConsistencyLevel: eventual
+
+GET /users/{usersId}/appRoleAssignedResources?$count=true
+ConsistencyLevel: eventual
 ```
 
 ## Optional query parameters
