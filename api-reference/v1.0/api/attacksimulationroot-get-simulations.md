@@ -1,5 +1,5 @@
 ---
-title: "List simulations"
+title: "Get simulations"
 description: "Get a attack simulation campaigns for an id for a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List simulations
+# Get simulations
 Namespace: microsoft.graph
 
 Get a attack simulation campaigns for an id for a tenant.

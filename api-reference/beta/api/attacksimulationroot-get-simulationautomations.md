@@ -1,5 +1,5 @@
 ---
-title: "List simulationAutomations"
+title: "Get simulationAutomations"
 description: "Get a attack simulation automation for an id for a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
