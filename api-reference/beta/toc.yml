@@ -12116,6 +12116,8 @@ items:
               href: api/authenticationstrengthroot-post-policies.md
             - name: Find by method mode
               href: api/authenticationstrengthpolicy-findbymethodmode.md
+            - name: Usage
+              href: api/authenticationstrengthpolicy-usage.md
           - name: Authentication combination configurations
             items: 
             - name: Authentication combination configuration
