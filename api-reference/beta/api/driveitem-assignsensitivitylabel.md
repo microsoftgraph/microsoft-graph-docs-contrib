@@ -12,7 +12,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Asynchronously assign a sensitivity label to a [driveItem][item-resource].
+Asynchronously assign a sensitivity label to a [driveItem][item-resource]. 
+
+This API is part of Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions and is considered a protected API. Protected APIs require you to have additional validation, beyond permission and consent, before you can use them. 
+
+> [!NOTE] 
+> Before you call this API with application permissions, you must request access. To request access, fill out the [request form](https://aka.ms/PreviewSPOPremiumAPI). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -78,6 +83,8 @@ The following table lists the possible values for the error types.
 
 The following is an example of a request.
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "assignSensitivityLabel", "tags": "service.graph" } -->
 ``` http
 POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivityLabel
@@ -89,6 +96,13 @@ Content-Type: application/json
   "justificationText": "test_justification"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assignsensitivitylabel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

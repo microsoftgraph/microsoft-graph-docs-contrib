@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph Data Connect integration with PAM"
 description: "Microsoft Graph Data Connect relies on Privileged Access Management (PAM) to allow Microsoft 365 administrators to approve data movement requests."
-author: "fercobo-msft"
+author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
 ---

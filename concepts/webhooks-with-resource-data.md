@@ -27,7 +27,7 @@ In general, this type of change notifications include the following resource dat
 
 ## Supported resources
 
-The Microsoft Teams [chatMessage](/graph/api/resources/chatmessage), [onlineMeetings](/graph/api/resources/onlinemeeting), and [presence](/graph/api/resources/presence) resources support change notifications with resource data. Outlook [contact](/graph/api/resources/contact.md), [event](/graph/api/resources/event.md), and [message](/graph/api/resources/message.md) resources have similar support _in preview_. Specifically, you can set up a subscription for the following use cases.
+The Microsoft Teams [chatMessage](/graph/api/resources/chatmessage), [onlineMeetings](/graph/api/resources/onlinemeeting), and [presence](/graph/api/resources/presence) resources support change notifications with resource data. Outlook [contact](/graph/api/resources/contact), [event](/graph/api/resources/event), and [message](/graph/api/resources/message) resources have similar support _in preview_. Specifically, you can set up a subscription for the following use cases.
 
 Available in the v1.0 and beta endpoints:
 - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`

@@ -2,6 +2,7 @@
 title: "Add custom data to users using open extensions"
 description: "Follow the steps in this example to add an extension, query a user and return a roaming profile, change and then delete the user's roaming profile information."
 author: "dkershaw10"
+ms.prod: "extensions"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---

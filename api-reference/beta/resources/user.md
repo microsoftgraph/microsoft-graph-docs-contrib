@@ -174,6 +174,7 @@ This resource supports:
 | ageGroup | [ageGroup](#agegroup-values) | Sets the age group of the user. Allowed values: `null`, `Minor`, `NotAdult` and `Adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Supports `$filter` (`eq`, `ne`, `not`, and `in`). |
 | assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the user, including inherited (group-based) licenses. <br><br>Not nullable. Supports `$filter` (`eq`, `not`, and counting empty collections). |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | The plans that are assigned to the user. Read-only. Not nullable.<br><br>Supports `$filter` (`eq` and `not`). |
+| authorizationInfo | [authorizationInfo](../resources/authorizationinfo.md) | Identifiers that can be used to identify and authenticate a user in non-Azure AD environments. This property can be used to store identifiers for smartcard-based certificates that a user uses for access to on-premises Active Directory deployments or for federated access. It can also be used to store the Subject Alternate Name (SAN) that's associated with a Common Access Card (CAC). Nullable.<br><br>Supports `$filter` (`eq` and `startsWith`). |
 | birthday | DateTimeOffset | The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z` <br><br>Returned only on `$select`. |
 | businessPhones | String collection | The telephone numbers for the user. Only one number can be set for this property. <br><br>Read-only for users synced from on-premises directory. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | city | String | The city in which the user is located. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
@@ -398,6 +399,9 @@ Here is a JSON representation of the resource
   "ageGroup": "String",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
+  "authorizationInfo": {
+    "@odata.type": "microsoft.graph.authorizationInfo"
+  },
   "birthday": "String (timestamp)",
   "businessPhones": ["String"],
   "city": "String",
@@ -414,6 +418,7 @@ Here is a JSON representation of the resource
   "displayName": "String",
   "employeeHireDate": "2020-01-01T00:00:00Z",
   "employeeId": "String",
+  "employeeLeaveDateTime": "String (timestamp)",
   "employeeOrgData": {"@odata.type": "microsoft.graph.employeeOrgData"},
   "employeeType": "String",
   "externalUserState": "PendingAcceptance",
