@@ -11,7 +11,7 @@ requestBody := graphmodels.NewBookingService()
 defaultDuration , err := abstractions.ParseISODuration("PT30M")
 requestBody.SetDefaultDuration(&defaultDuration) 
 
-graphClient.BookingBusinessesById("bookingBusiness-id").ServicesById("bookingService-id").Patch(requestBody)
+graphClient.BookingBusinessesById("bookingBusiness-id").ServicesById("bookingService-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().CloudPCsById("cloudPC-id").Rename().Post()
+graphClient.Me().CloudPCsById("cloudPC-id").Rename().Post(context.Background(), nil)
 
 
 ```

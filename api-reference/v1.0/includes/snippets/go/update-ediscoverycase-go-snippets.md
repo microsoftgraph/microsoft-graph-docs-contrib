@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 description := "Updated description"
 requestBody.SetDescription(&description) 
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").Patch(requestBody)
+graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

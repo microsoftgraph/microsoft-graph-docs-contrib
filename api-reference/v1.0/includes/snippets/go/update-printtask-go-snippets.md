@@ -15,7 +15,7 @@ description := "completed"
 status.SetDescription(&description) 
 requestBody.SetStatus(status)
 
-graphClient.Print().TaskDefinitionsById("printTaskDefinition-id").TasksById("printTask-id").Patch(requestBody)
+graphClient.Print().TaskDefinitionsById("printTaskDefinition-id").TasksById("printTask-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

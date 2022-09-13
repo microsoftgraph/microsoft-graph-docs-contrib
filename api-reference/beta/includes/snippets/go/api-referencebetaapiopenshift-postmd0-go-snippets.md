@@ -75,7 +75,7 @@ lastModifiedBy.SetConversation(&conversation)
 lastModifiedBy.SetAdditionalData(additionalData)
 requestBody.SetLastModifiedBy(lastModifiedBy)
 
-result, err := graphClient.TeamsById("team-id").Schedule().OpenShifts().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.TeamsById("team-id").Schedule().OpenShifts().Post(context.Background(), requestBody, configuration)
 
 
 ```

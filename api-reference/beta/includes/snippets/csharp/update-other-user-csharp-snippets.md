@@ -12,7 +12,14 @@ var user = new User
 	{
 		"+1 425 555 0109"
 	},
-	OfficeLocation = "18/2111"
+	OfficeLocation = "18/2111",
+	AuthorizationInfo = new AuthorizationInfo
+	{
+		CertificateUserIds = new List<String>()
+		{
+			"5432109876543210@mil"
+		}
+	}
 };
 
 await graphClient.Users["{user-id}"]

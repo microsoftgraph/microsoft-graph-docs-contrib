@@ -23,7 +23,7 @@ configuration := &graphconfig.TransitiveRoleAssignmentsRequestBuilderGetRequestC
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().Directory().TransitiveRoleAssignments().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.RoleManagement().Directory().TransitiveRoleAssignments().Get(context.Background(), configuration)
 
 
 ```

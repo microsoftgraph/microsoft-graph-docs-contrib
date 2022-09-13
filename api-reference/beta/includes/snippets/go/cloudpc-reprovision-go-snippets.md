@@ -13,7 +13,7 @@ requestBody.SetUserAccountType(&userAccountType)
 osVersion := graphmodels.WINDOWS10_CLOUDPCOPERATINGSYSTEM 
 requestBody.SetOsVersion(&osVersion) 
 
-graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").Reprovision().Post(requestBody)
+graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").Reprovision().Post(context.Background(), requestBody, nil)
 
 
 ```

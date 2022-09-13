@@ -14,7 +14,7 @@ configuration := &graphconfig.SourceCollectionRequestBuilderGetRequestConfigurat
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").SourceCollectionsById("sourceCollection-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").SourceCollectionsById("sourceCollection-id").Get(context.Background(), configuration)
 
 
 ```

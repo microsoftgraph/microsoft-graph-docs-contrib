@@ -18,7 +18,7 @@ site.SetWebUrl(&webUrl)
 dataSource.SetAdditionalData(additionalData)
 requestBody.SetDataSource(dataSource)
 
-result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").NoncustodialDataSources().Post(requestBody)
+result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").NoncustodialDataSources().Post(context.Background(), requestBody, nil)
 
 
 ```
