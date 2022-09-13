@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRbacResourceNamespace"
 description: "Read the properties and relationships of an unifiedRbacResourceNamespace object."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -57,7 +57,8 @@ The following example gets the resource namespace with the identifier of `micros
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedrbacresourcenamespace"
+  "name": "get_unifiedrbacresourcenamespace",
+  "sampleKeys": ["microsoft.aad.b2c"]
 }
 -->
 ``` http

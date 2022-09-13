@@ -3,7 +3,7 @@ title: "dateTimeTimeZone resource type"
 description: "Describes the date, time, and time zone of a point in time."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "outlook"
 ---
 

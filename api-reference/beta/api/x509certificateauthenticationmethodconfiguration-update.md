@@ -1,7 +1,7 @@
 ---
 title: "Update x509CertificateAuthenticationMethodConfiguration"
 description: "Update the properties of a x509CertificateAuthenticationMethodConfiguration object."
-author: "charlenezheng"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

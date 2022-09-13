@@ -1,7 +1,7 @@
 ---
 title: "eventMessageRequest resource type"
 description: "A message that represents a meeting request."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType

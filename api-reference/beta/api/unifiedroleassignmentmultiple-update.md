@@ -2,7 +2,7 @@
 title: "Update unifiedRoleAssignmentMultiple"
 description: "Update a new unifiedRoleAssignmentMultiple object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -84,7 +84,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_unifiedroleassignmentmultiple_from_rbacapplication"
+  "name": "update_unifiedroleassignmentmultiple_from_rbacapplication",
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
 ```http
@@ -145,7 +146,8 @@ HTTP/1.1 204 OK
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_unifiedroleassignmentmultiple_from_rbacapplication_cloudpc"
+  "name": "update_unifiedroleassignmentmultiple_from_rbacapplication_cloudpc",
+  "sampleKeys": ["dbe9d288-fd87-41f4-b33d-b498ed207096"]
 }-->
 
 ```http

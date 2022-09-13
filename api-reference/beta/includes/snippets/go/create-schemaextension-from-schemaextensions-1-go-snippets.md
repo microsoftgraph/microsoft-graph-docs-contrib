@@ -12,7 +12,7 @@ id := "graphlearn_courses"
 requestBody.SetId(&id) 
 description := "Graph Learn training courses extensions"
 requestBody.SetDescription(&description) 
-targetTypes := []String {
+targetTypes := []string {
 	"Group",
 
 }

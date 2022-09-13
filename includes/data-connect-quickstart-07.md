@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this section we will be building your first ASP.NET project application for to process the Microsoft Graph Data Connect data that was exported.
+In this section, you will be building your first ASP.NET project application to process the Microsoft Graph Data Connect data that was exported.
 
 ## Create a new ASP.NET project
 
@@ -13,7 +13,7 @@ In this section we will be building your first ASP.NET project application for t
 1. In the **New Project** dialog, do the following.
 
     1. Search **ASP.NET Web Application** in the search box and select the **ASP.NET Web Application (.NET Framework)** option.
-    1. Click on **Next**.
+    1. Choose **Next**.
 
         ![A screenshot of the Visual Studio user interface showing the options to create a new project using ASP.NET Web Application.](../concepts/images/data-connect-vs-create-app.png)
 
@@ -24,7 +24,7 @@ In this section we will be building your first ASP.NET project application for t
     > [!IMPORTANT]
     > Ensure that you enter the exact same name for the Visual Studio Project that is specified in this quick start instructions. The Visual Studio Project name becomes part of the namespace in the code. The code inside these instructions depends on the namespace matching the Visual Studio Project name specified in these instructions. If you use a different project name the code will not compile unless you adjust all the namespaces to match the Visual Studio Project name you enter when you create the project.
 
-    1. In the new **ASP.NET Web Application** project dialog, select MVC.
+    1. In the new **ASP.NET Web Application** project dialog, select **MVC**.
     1. Select **Create**.
 
     ![A screenshot of the Visual Studio interface showing the options to choose an Model-View-Controller (MVC) ASP.NET Web application.](../concepts/images/data-connect-vs-create-app-mvc.png)
@@ -49,6 +49,17 @@ In this section we will be building your first ASP.NET project application for t
 1. Select **Finish**.
 
     ![A screenshot of the Visual Studio interface showing the Configure Azure Storage summary.](../concepts/images/data-connect-vs-configure-sa-summary.png)
+
+## How to add a connection string to the Web.config file at root level
+
+Add the following code to the Web.config file (the one at the root level) between </appSettings> and <system.web>. Make sure not to add it to the Web.config file under the Views folder.
+
+```xml
+<connectionStrings>
+    <add name="AzureStorageConnectionString" connectionString="DefaultEndpointsProtocol="COPY FROM THE CONNECTION STRING FOUND IN YOUR AZURE STORAGE ACCOUNT-ACCESS KEYS –CONNECTION STRING"/>
+</connectionStrings>
+```
+
 
 ## Create a new model class that will be used to store the email metrics
 
@@ -282,6 +293,6 @@ In this section we will be building your first ASP.NET project application for t
 
     ![A screenshot of the built ASP.NET Web application interface showing the view email metrics button.](../concepts/images/data-connect-vs-select-view-metrics.png)
 
-1. When the page loads, you will see a list of emails addresses that were found among all emails with a sum of all the recipients sent between them, as shown from a small sample set in a test email extract in the following figure.
+1. When the page loads, you'll see a list of emails addresses that were found among all emails with a sum of all the recipients sent between them, as shown from a small sample set in a test email extract in the following figure.
 
     ![A screenshot of the built ASP.NET Web application interface showing the view email metrics results.](../concepts/images/data-connect-vs-show-email-metrics.png)

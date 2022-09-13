@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "(originSystem eq 'SharePointOnline' and accessPackageResource/id eq '53c71803-a0a8-4777-aecc-075de8ee3991')"
+
 requestParameters := &graphconfig.AccessPackageResourceRolesRequestBuilderGetQueryParameters{
-	Filter: "(originSystem eq 'SharePointOnline' and accessPackageResource/id eq '53c71803-a0a8-4777-aecc-075de8ee3991')",
+	Filter: &requestFilter,
 	Select: [] string {"displayName","originId"},
 }
 configuration := &graphconfig.AccessPackageResourceRolesRequestBuilderGetRequestConfiguration{
