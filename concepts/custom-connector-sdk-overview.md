@@ -8,7 +8,7 @@ ms.prod: search
 description: "Use the Microsoft Graph connectors SDK to create custom Microsoft Graph connectors."
 ---
 
-# Microsoft Graph connectors SDK overview
+# Microsoft Graph connectors SDK (preview) overview
 
 The Microsoft Graph connectors SDK simplifies the process of building high-quality, efficient, and resilient connectors in scenarios where you can't find a pre-built connector for the data source you want to index into Microsoft Graph.
 
