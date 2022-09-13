@@ -36,14 +36,14 @@ An object containing two collections of Conditional Access policies that referen
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.authenticationStrengthPolicy",
+  "@odata.type": "microsoft.graph.authenticationStrengthUsage",
   "openType": false,
   "baseType": null
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.authenticationStrengthPolicy",
+  "@odata.type": "#microsoft.graph.authenticationStrengthUsage",
   "mfa": ["String"],
   "none": ["String"]
 }
