@@ -1,5 +1,5 @@
 ---
-title: "List pinned messages in a chat"
+title: "List pinnedChatMessage in a chat"
 description: "Get a list of pinned messages in a chat."
 author: "sumanac"
 ms.localizationpriority: medium
