@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_serviceprincipal"
+  "name": "list_appRoleAssignedResources_users"
 }
 -->
 ``` http
