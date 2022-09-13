@@ -15439,31 +15439,27 @@ items:
         - name: Publish
           href: api/sitepage-publish.md
         - name: Horizontal Section
+          herf: resources/horizontalsection.md
           items:
-          - name: Horizontal Section
-            herf: resources/horizontalsection.md
           - name: List
             herf: api/horizontalsection-list.md
           - name: Get
             herf: api/horizontalsection-get.md
-          - name: Column
+          - name: Horizontal Section Column
+            herf: resources/horizontalsectioncolumn.md
             items:
-            - name: Horizontal Section Column
-              herf: resources/horizontalsectioncolumn.md
             - name: List
               herf: api/horizontalsectioncolumn-list.md
             - name: Get
               herf: api/horizontalsectioncolumn-get.md
         - name: Vertical Section
+          herf: resources/verticalsection.md  
           items:
-          - name: Vertical Section
-            herf: resources/verticalsection.md
           - name: Get
             herf: api/verticalsection-get.md
         - name: WebPart
+          herf: resources/webpart.md
           items:
-          - name: WebPart
-            herf: resources/webpart.md
           - name: Text WebPart
             herf: resources/textwebpart.md
           - name: Standard WebPart
