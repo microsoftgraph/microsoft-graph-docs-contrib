@@ -15439,39 +15439,43 @@ items:
         - name: Publish
           href: api/sitepage-publish.md
         - name: Horizontal Section
-          herf: resources/horizontalsection.md
           items:
+          - name: Horizontal Section
+            href: resources/horizontalsection.md
           - name: List
-            herf: api/horizontalsection-list.md
+            href: api/horizontalsection-list.md
           - name: Get
-            herf: api/horizontalsection-get.md
-          - name: Horizontal Section Column
-            herf: resources/horizontalsectioncolumn.md
+            href: api/horizontalsection-get.md
+          - name: Column
             items:
+            - name: Horizontal Section Column
+              href: resources/horizontalsectioncolumn.md
             - name: List
-              herf: api/horizontalsectioncolumn-list.md
+              href: api/horizontalsectioncolumn-list.md
             - name: Get
-              herf: api/horizontalsectioncolumn-get.md
+              href: api/horizontalsectioncolumn-get.md
         - name: Vertical Section
-          herf: resources/verticalsection.md  
           items:
+          - name: Vertical Section
+            href: resources/verticalsection.md
           - name: Get
-            herf: api/verticalsection-get.md
+            href: api/verticalsection-get.md
         - name: WebPart
-          herf: resources/webpart.md
           items:
+          - name: WebPart
+            href: resources/webpart.md
           - name: Text WebPart
-            herf: resources/textwebpart.md
+            href: resources/textwebpart.md
           - name: Standard WebPart
-            herf: resources/standard webpart.md
+            href: resources/standard webpart.md
           - name: List
-            herf: api/webpart-list.md
+            href: api/webpart-list.md
           - name: Get 
-            herf: api/webpart-get.md
+            href: api/webpart-get.md
           - name: Get Position
-            herf: api/webpart-getposition.md
+            href: api/webpart-getposition.md
           - name: Get By Position
-            herf: api/sitepage-getwebpartsbyposition.md
+            href: api/sitepage-getwebpartsbyposition.md
       - name: Rich long-running operation
         items:
         - name: Rich long-running operation
