@@ -1,6 +1,6 @@
 ---
 title: "List simulationAutomations"
-description: "Get a attack simulation automationfor an id for a tenant."
+description: "Get a list of attack simulation automations for a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List simulationAutomations
 Namespace: microsoft.graph
 
-Get a attack simulation automationfor an id for a tenant.
+Get a list of attack simulation automations for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/attackSimulation/simulationAutomations/{id}
+GET /security/attackSimulation/simulationAutomations
 ```
 
 ## Optional query parameters
@@ -43,13 +43,13 @@ The following are examples of their use:
 }
 -->
 ``` http
-GET /security/attackSimulation/simulationAutomations/{id}?$count=true
-GET /security/attackSimulation/simulationAutomations/{id}?$filter={property} eq '{property-value}'
-GET /security/attackSimulation/simulationAutomations/{id}?$filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/simulationAutomations/{id}?$orderby={property}
-GET /security/attackSimulation/simulationAutomations/{id}?$skip={skipCount}
-GET /security/attackSimulation/simulationAutomations/{id}?$top=1
-GET /security/attackSimulation/simulationAutomations/{id}?$select={property}
+GET /security/attackSimulation/simulationAutomations?$count=true
+GET /security/attackSimulation/simulationAutomations?$filter={property} eq '{property-value}'
+GET /security/attackSimulation/simulationAutomations?$filter={property} eq '{property-value}'&$top=5
+GET /security/attackSimulation/simulationAutomations?$orderby={property}
+GET /security/attackSimulation/simulationAutomations?$skip={skipCount}
+GET /security/attackSimulation/simulationAutomations?$top=1
+GET /security/attackSimulation/simulationAutomations?$select={property}
 ```
 
 ## Request headers
@@ -77,7 +77,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulationAutomations/{id}
+GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulationAutomations
 ```
 
 # [C#](#tab/csharp)
@@ -124,7 +124,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value":
+  "value": [
     {
       "@odata.type": "#microsoft.graph.simulationAutomation",
       "id": "fbad62b0-b32d-b6ac-9f48-d84bbea08f96",
@@ -146,6 +146,7 @@ Content-Type: application/json
       "lastRunDateTime": "2022-01-01T01:01:01.01Z",
       "nextRunDateTime": "2022-01-01T01:01:01.01Z"
     }
+  ]
 }
 ```
 
