@@ -29,6 +29,9 @@ Represents a supported region to establish an Azure network connection for Cloud
 |id|String|The unique identifier for the supported region. Read-only.|
 |regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedregionstatus-values)|The status of the supported region. Possible values are: `available`, `restricted`, `unavailable`, `unknownFutureValue`. Read-only.|
 |supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `unknownFutureValue`. Read-only.|
+|regionGroup|[cloudpcRegionGroup](#cloudpcRegionGroup-values)|The logic geographic group this region belongs to. Multiple regions could belong to one region group. Customer could select a regionGroup when provision a CloudPC, 
+the CloudPC will be put under one of the regions under the group based on resource status. e.g. Europe region group contains North Europe and West Europe regions. Possible values are: 'default', 'australia', 'canada', 'usCentral', 'usEast", 
+'usWest', 'france', 'germany', 'europe', 'unitedKingdom', 'japan', 'asia', 'india', 'southAmerica', 'usGovernment' annd 'usGovrnmentDod'. Read-only.|
 
 ### cloudPcSupportedRegionStatus values
 
@@ -38,6 +41,28 @@ Represents a supported region to establish an Azure network connection for Cloud
 |restricted|The region is considered a restricted region and can only have a Cloud PC provisioned in that region for specific tenants.|
 |unavailable|The region has no support for Cloud PC provisioning.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+
+### cloudpcRegionGroup values
+
+|Member|Description|
+|:---|:---|
+| default | The region belongs to the default region group.|
+| australia | The region belongs to Australia region group.|
+| canada | The region belongs to Canada region group |
+| usCentral | The region belongs to US Central region group |
+| usEast | The region belongs to US East region group |
+| usWest | The region belongs to US West region group |
+| france | The region belongs to France region group |
+| germany | The region belongs to Germany region group |
+| europe | The region belongs to Europe region group |
+| unitedKingdom | The region belongs to United Kingdom region group |
+| japan | The region belongs to Japan region group |
+| asia | The region belongs to Asia region group |
+| india | The region belongs to India region group |
+| southAmerica | The region belongs to South America region group |
+| usGovernment | The region belongs to US Government region group |
+| usGovernmentDod | The region belongs to US Government DOD region group |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use |
 
 ## Relationships
 
@@ -61,6 +86,7 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "id": "String (identifier)",
   "regionStatus": "microsoft.graph.cloudPcSupportedRegionStatus",
-  "supportedSolution": "String"
+  "supportedSolution": "String",
+  "regionGroup": "microsoft.graph.cloudPcRegionGroup"
 }
 ```
