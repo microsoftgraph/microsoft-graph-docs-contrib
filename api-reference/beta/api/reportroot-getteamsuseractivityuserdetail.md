@@ -105,8 +105,8 @@ The CSV file has the following headers for columns.
 - Is Licensed
 - Report Period
 
-> [!NOTE] 
-> The values in the Meetings Organized Count might not be the sum of the Ad Hoc Meetings Organized Count, Scheduled One-time Meetings Organized Count, and Scheduled Recurring Meetings Organized Count that a user organized during the specified time period. This is because the Unclassified meetings value is not inlcuded in the output CSV file. For details, see [Microsoft Teams user activity report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/user-activity-report).
+> [!NOTE]
+> The values in the Meetings Organized Count might not be the sum of the Ad Hoc Meetings Organized Count, Scheduled One-time Meetings Organized Count, and Scheduled Recurring Meetings Organized Count that a user organized during the specified time period. This is because the Unclassified meetings value is not included in the output CSV file. For details, see [Microsoft Teams user activity report](/microsoftteams/teams-analytics-and-reports/user-activity-report).
 
 ### JSON
 
@@ -248,5 +248,3 @@ Content-Length: 452
   "suppressions": [
   ]
 }-->
-
-

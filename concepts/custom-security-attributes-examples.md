@@ -45,7 +45,7 @@ The following example shows how to assign a custom security attribute with a str
 
 <!-- {
   "blockType": "request",
-  "name": "assign_user_customsecurityattribute_string"
+  "name": "customsecurityattribute_assign_user_string"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -85,7 +85,7 @@ The following example shows how to assign a custom security attribute with a str
 
 <!-- {
   "blockType": "request",
-  "name": "assign_serviceprincipal_customsecurityattribute_string"
+  "name": "customsecurityattribute_assign_serviceprincipal_string"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
@@ -125,7 +125,7 @@ The following example shows how to assign a custom security attribute with a mul
 
 <!-- {
   "blockType": "request",
-  "name": "assign_user_customsecurityattribute_multistring"
+  "name": "customsecurityattribute_assign_user_multistring"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -166,7 +166,7 @@ The following example shows how to assign a custom security attribute with an in
 
 <!-- {
   "blockType": "request",
-  "name": "assign_user_customsecurityattribute_integer"
+  "name": "customsecurityattribute_assign_user_integer"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -207,7 +207,7 @@ The following example shows how to assign a custom security attribute with a mul
 
 <!-- {
   "blockType": "request",
-  "name": "assign_user_customsecurityattribute_multiinteger"
+  "name": "customsecurityattribute_assign_user_multiinteger"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -248,7 +248,7 @@ The following example shows how to assign a custom security attribute with a Boo
 
 <!-- {
   "blockType": "request",
-  "name": "assign_user_customsecurityattribute_boolean"
+  "name": "customsecurityattribute_assign_user_boolean"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -290,7 +290,7 @@ The following example shows how to update a custom security attribute assignment
 
 <!-- {
   "blockType": "request",
-  "name": "update_user_customsecurityattribute_integer"
+  "name": "customsecurityattribute_update_user_integer"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -332,7 +332,7 @@ The following example shows how to update a custom security attribute assignment
 
 <!-- {
   "blockType": "request",
-  "name": "update_user_customsecurityattribute_boolean"
+  "name": "customsecurityattribute_update_user_boolean"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -373,7 +373,7 @@ The following example shows how to remove a custom security attribute assignment
 
 <!-- {
   "blockType": "request",
-  "name": "remove_user_customsecurityattribute_singlevalue"
+  "name": "customsecurityattribute_remove_from_user_singlevalue"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -412,7 +412,7 @@ The following example shows how to remove a custom security attribute assignment
 
 <!-- {
   "blockType": "request",
-  "name": "remove_user_customsecurityattribute_multivalue"
+  "name": "customsecurityattribute_remove_from_user_multivalue"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
