@@ -1,5 +1,5 @@
 ---
-title: "List appRoleAssignments granted to a user"
+title: "List appRoleAssignedResources (service principals that a user has appRoleAssignments to)"
 description: "Get the servicePrincipal resources from the appRoleAssignedResources navigation property."
 author: "eringreenlee"
 ms.localizationpriority: medium
