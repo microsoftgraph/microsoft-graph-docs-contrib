@@ -38,7 +38,7 @@ POST /chats/{chat-Id}/pinnedMessages
 |Content-Type|application/json. Required.|
 
 ## Request body
-The request body should contain the chat message ID.
+In the request body, supply the ID of a chat message to pin.
 
 ## Response
 
@@ -63,6 +63,7 @@ Content-length: 63
    "message@odata.bind":"https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1616964509832"
 }
 ```
+
 ### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.

@@ -16214,7 +16214,7 @@ items:
           - name: Unpin message
             href: api/chat-delete-pinnedmessages.md
         - name: Pinned chat message
-          href: resources/pinnedChatMessageInfo.md
+          href: resources/pinnedchatmessageinfo.md
           items:
           - name: List pinned messages
             href: api/chat-list-pinnedmessages.md

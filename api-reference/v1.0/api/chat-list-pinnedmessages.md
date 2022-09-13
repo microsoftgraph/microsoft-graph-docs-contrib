@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List all the pinned messages in a chat
 The following example shows a request that lists all the pinned messages in a chat.
 
-### Request
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -63,7 +63,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/pinnedMessages
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -94,7 +94,7 @@ Content-Type: application/json
 ### Example 2: List all the pinned messages in a chat along with the associated chat message
 The following example shows a request that lists all the pinned messages in a chat along with the associated chat message.
 
-### Request
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -106,7 +106,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/pinnedMessages?$expand=message
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

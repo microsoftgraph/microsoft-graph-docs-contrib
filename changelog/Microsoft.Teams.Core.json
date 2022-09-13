@@ -5542,7 +5542,7 @@
       "ChangeList": [
         {
           "Id": "490c5bb1-a4a4-4fff-a6f7-7da31f3bda5f",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "pinnedMessages",
           "ChangeType": "Addition",
           "Description": "Added the **pinnedMessages** relationship to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
@@ -5577,7 +5577,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-08-29T15:04:69.427Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork"
     },
     {
       "ChangeList": [
