@@ -15,6 +15,8 @@ Delete group.
 
 When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days. After that time, they're permanently deleted. This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately. To learn more, see [deletedItems](../resources/directory.md).
 
+Note: Role assignable groups can only be deleted by users who created the group, are a global administrator, or a privileged role administartor. The caller must be assigned the RoleManagement.ReadWrite.Directory permission to delete a role assignable group.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
