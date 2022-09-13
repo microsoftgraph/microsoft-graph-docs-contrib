@@ -120,7 +120,7 @@ Content-type: application/json
             "format": "Book",
             "createdDateTime": "2018-01-01T00:00:00",
             "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
-            "contributor": "Scott Simpson",
+            "contributors": "Scott Simpson",
             "additionalTags": [
                 "Create private or public teams",
                 "Add members to teams"
@@ -148,7 +148,7 @@ Content-type: application/json
             "format": "Book",
             "createdDateTime": "2018-01-01T00:00:00",
             "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
-            "contributor": "Scott Simpson",
+            "contributors": "Scott Simpson",
             "additionalTags": [
                 "Create private or public teams",
                 "Add members to teams"
