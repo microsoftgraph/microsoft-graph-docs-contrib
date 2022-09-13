@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List simulationAutomations
+# Get simulationAutomations
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
