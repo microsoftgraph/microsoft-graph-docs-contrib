@@ -35,7 +35,7 @@ POST /sites/{site-id}/pages
 
 ## Request body
 
-In the request body, supply a JSON representation of the [sitePage][] resource to create.
+In the request body, supply a JSON representation of the [sitePage](../resource/sitepage.md) resource to create.
 
 ## Example
 

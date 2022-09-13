@@ -42,6 +42,7 @@ PATCH /sites/{sitesId}/pages/{sitePageId}
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+These fields and be used in update requests.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -49,9 +50,7 @@ PATCH /sites/{sitesId}/pages/{sitePageId}
 |showComments|Boolean|Boolean to determine whether or not to show comments at the bottom of the page. Optional.|
 |showRecommendedPages|Boolean|Boolean to determine whether or not to show recommended pages at the bottom of the page. Optional.|
 |titleArea|[titleArea](../resources/titlearea.md)|Title area on the SharePoint page. Optional.|
-|canvasLayout|[canvasLayout](../resources/canvaslayout.md)|The layout of the content in a page, including horizontal sections and vertical section. Optional.|
-
-
+|canvasLayout|[canvasLayout](../resources/canvaslayout.md)|The layout of the content in a page, including horizontal sections and vertical section. A description of the entire page layout needs to be provided, the update function does not support partial updates. Optional.|
 
 ## Response
 

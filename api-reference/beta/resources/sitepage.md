@@ -27,7 +27,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 |[Update sitePage](../api/sitepage-update.md)|[sitePage](../resources/sitepage.md)|Update the properties of a [sitePage](../resources/sitepage.md) object.|
 |[Delete sitePage](../api/sitepage-delete.md)|None|Deletes a [sitePage](../resources/sitepage.md) object.|
 |[publish](../api/sitepage-publish.md)|None|Publish a [sitePage](../resources/sitepage.md) object|
-|[Get a collection of WebParts by position information](../api/sitepage-getwebpartsbyposition.md)|[webpart](../resources/webpart.md) collection|et a collection of [WebPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information.|
+|[Get a collection of WebParts by position information](../api/sitepage-getwebpartsbyposition.md)|[webpart](../resources/webpart.md) collection|Get a collection of [WebPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information.|
 
 ## Properties
 |Property|Type|Description|
@@ -54,7 +54,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 
 | Value                | Description                                                    |
 | -------------------- | -------------------------------------------------------------- |
-| `microsoftReserved`  | The page is a special type, reserved for use by Microsoft only |
+| `microsoftReserved`  | The page is a special type, reserved for use by Microsoft only. This value cannot be used when creating the page with [Create sitePage](../api/sitepage-create.md) method. |
 | `article`            | The page is an article page                                    |
 | `home`               | The page is a home page                                        |
 | `unknownFutureValue` | Marker value for future compatibility.                         |
