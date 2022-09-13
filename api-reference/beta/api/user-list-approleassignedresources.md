@@ -7,7 +7,7 @@ ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# List appRoleAssignments granted to a user
+# List appRoleAssignedResources (service principals that a user has appRoleAssignments to)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
