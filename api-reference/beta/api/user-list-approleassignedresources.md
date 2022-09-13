@@ -62,7 +62,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/appRoleAssignedResources
+GET https://graph.microsoft.com/beta/me/appRoleAssignedResources?$count=true
+ConsistencyLevel: eventual
 ```
 
 
