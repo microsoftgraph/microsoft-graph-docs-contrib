@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body. If you don't specify the `$count` query parameter and set the **ConsistencyLevel** header to `eventual`, this API returns  `404 Not Found error`.
 
 ## Examples
 
