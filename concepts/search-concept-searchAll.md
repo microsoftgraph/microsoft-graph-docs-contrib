@@ -11,7 +11,7 @@ ms.prod: "search"
 Application permission is different from delegated permission. It will support the application owner to search all content in their SharePoint sites.
 
 
-## Example
+## Default request example
 Search with application permission has the permission to access all contents which stored in the SharePoint site.
 
 Search with application permission is only allow to search in one specific GEO, it requires that developers to specify a GEO value in the search request.
@@ -136,7 +136,7 @@ Content-type: application/json
 ```
 
 
-## Example
+## Include all private content example
 By default, search disables the all private content search for customers with application permission. Specify the privateContent in the sharePointOneDriveOptions.includeContent will enable the all private content search for customers with application permission.
 
 ### Notice
