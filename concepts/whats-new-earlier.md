@@ -1586,7 +1586,7 @@ In addition to tracking incremental changes on events in a **calendarView** (col
   - collation
   - document scaling
 - Support for print resolution (DPI) and document scaling as part of [default printer settings](/graph/api/resources/printerdefaults?view=graph-rest-beta&preserve-view=true).
-- Support for the following [document configuration](/graph/api/resources/printerdocumentconfiguration?view=graph-rest-beta&preserve-view=true) settings:
+- Support for the following document configuration settings:
   - input bins
   - output bins
   - media sizes
