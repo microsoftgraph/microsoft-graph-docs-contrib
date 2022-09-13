@@ -14811,6 +14811,8 @@ items:
             href: resources/simulation.md
           - name: List simulations
             href: api/attacksimulationroot-list-simulations.md
+          - name: Get simulation
+            href: api/attacksimulationroot-get-simulations.md
           - name: List simulation users
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
@@ -14827,6 +14829,8 @@ items:
             href: resources/simulationautomationrun.md
           - name: List
             href: api/simulationautomation-list-runs.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulationautomations.md
         - name: Reports
           items:
           - name: Attack simulation reports
