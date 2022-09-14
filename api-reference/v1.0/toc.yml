@@ -5153,7 +5153,7 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
-          - name: Authentication context class references
+          - name: Authentication context
             items:
             - name: Authentication context class reference
               href: resources/authenticationcontextclassreference.md
