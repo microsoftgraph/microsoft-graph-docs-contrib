@@ -44,9 +44,14 @@ PATCH /identity/conditionalAccess/authenticationContextClassReferences/{id}
 
 ## Request body
 
-In the request body, supply the values for relevant properties that should be updated. Existing properties that are not included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-For the list of properties, see [authenticationContextClassReference](../resources/authenticationContextClassReference.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|displayName|String|**TODO: Add Description**|
+|description|String|**TODO: Add Description** |
+|isAvailable|Boolean|**TODO: Add Description** |
 
 ## Response
 
