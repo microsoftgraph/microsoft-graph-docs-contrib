@@ -69,7 +69,6 @@ PATCH https://graph.microsoft.com/v1.0/identity/conditionalAccess/authentication
 Content-type: application/json
 
 {
-    "id": "c1",
     "displayName": "Contoso medium",
     "description": "Medium protection level defined for Contoso policy",
     "isAvailable": true
