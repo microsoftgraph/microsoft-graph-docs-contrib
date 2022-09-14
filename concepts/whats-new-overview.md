@@ -66,15 +66,15 @@ Intune [August updates](https://developer.microsoft.com/en-us/graph/changelog/?s
 
 ### Identity and access | Governance
 - Configure [group peer outlier insights](/graph/api/resources/groupPeerOutlierRecommendationInsightSettings?view=graph-rest-beta&preserve-view=true) that help reviewers make decisions for an [access review schedule definition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) based on the access that the user's peers have.
-- [Create](/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-beta), [activate](/graph/api/identitygovernance-workflow-activate?view=graph-rest-beta), and maintain [Azure AD lifecycle workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta) to manage Azure AD users by automating lifecycle processes, including the following:
+- [Create](/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-beta&preserve-view=true), [activate](/graph/api/identitygovernance-workflow-activate?view=graph-rest-beta&preserve-view=true), and maintain [Azure AD lifecycle workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta&preserve-view=true) to manage Azure AD users by automating lifecycle processes, including the following:
   - When a user comes into scope of needing access, such as joining an organization.
   - When a user moves between boundaries within an organization, such that the move requires more access.
   - When a user leaves the scope of needing access, such as leaving or retiring from an organization.
 
-  Use [lifecycle workflow reporting](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview?view=graph-rest-beta) to get insight into how lifecycle workflows are processed.
+  Use [lifecycle workflow reporting](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview?view=graph-rest-beta&preserve-view=true) to get insight into how lifecycle workflows are processed.
 
 ### Identity and access | Identity and sign-in
-Use [Microsoft authenticator authentication method configuration](/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) as an authentication methods policy to configure and allow users to use specific authentication methods, such as number matching and location context, and whether to enable the methods for all users or specific users.
+Use [Microsoft authenticator authentication method configuration](/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true) as an authentication methods policy to configure and allow users to use specific authentication methods, such as number matching and location context, and whether to enable the methods for all users or specific users.
 
 ### Mail
 Track and get specifically only created, updated, or deleted messages in a [delta](/graph/api/message-delta?view=graph-rest-beta&preserve-view=true) request.
