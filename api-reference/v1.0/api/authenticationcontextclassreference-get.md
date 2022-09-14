@@ -40,9 +40,6 @@ This method does not support optional query parameters to customize the response
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## Request body
-
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Response
 
