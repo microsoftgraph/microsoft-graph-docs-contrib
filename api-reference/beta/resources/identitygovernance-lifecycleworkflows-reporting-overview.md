@@ -1,5 +1,5 @@
 ---
-title: "Lifecycle Workflow reporting"
+title: "Lifecycle Workflow reporting API Overview"
 description: "You can use Lifecycle Workflows reporting features to gain information about the lifecycle of users. This documentation serves the 2nd version of the APIs."
 ms.localizationpriority: medium
 author: "AlexFilipin"
@@ -7,17 +7,17 @@ ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Lifecycle Workflow reporting
-
-Namespace: microsoft.graph
+# Lifecycle Workflow reporting API Overview
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Lifecycle Workflows offers reports that enable organizations to gain insight into how lifecycle workflows were processed for users in your organization.
 
-Note that the Lifecycle Workflows feature, including the API, is included in Azure AD Premium P2.  The tenant where Lifecycle Workflows are being created must have a valid purchased, or trial, Azure AD Premium P2 or EMS E5 subscription. For more information about the license requirements, see [Lifecycle Workflows license requirements](/azure/active-directory/governance/what-are-lifecycle-workflows.md#license-requirements).
+
 
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
+The lifecycle workflows API is defined in the OData subnamespace, microsoft.graph.identityGovernance.
 
 ## Role and application permission authorization checks
 
@@ -37,13 +37,13 @@ The following [Azure AD roles](/azure/active-directory/roles/permissions-referen
 |[Workflow run](identitygovernance-run.md)    |Result of a [lifecycle workflow](../resources/identitygovernance-workflow.md) that was executed for a collection of users because they fulfilled the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md) of the lifecycle workflow. The result is an aggregation of all [user processing results](../resources/identitygovernance-userprocessingresult.md) of the users that were either processed within an [interval](../resources/identitygovernance-lifecyclemanagementsettings.md#properties) or were part of an [on-demand execution](../api/identitygovernance-workflow-activate.md).        |
 |[Task report](identitygovernance-taskreport.md)    |An aggregation of [task processing results](../resources/identitygovernance-taskprocessingresult.md) for a specific [workflow task](../resources/identitygovernance-task.md) within a [workflow run](../resources/identitygovernance-run.md). With this report, the health status of a workflow task within a workflow run can be easily determined and thus the source of error can be identified more quickly should a workflow run not have been completed successfully.         |
 
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Service root",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
+
+## License checks
+
+The Lifecycle Workflows feature, including the API, is included in the Azure AD Premium P2 license. The tenant where Lifecycle Workflows are being created must have a valid purchased, or trial, Azure AD Premium P2 or EMS E5 subscription. For more information about the license requirements, see [Lifecycle Workflows license requirements](/azure/active-directory/governance/what-are-lifecycle-workflows.md#license-requirements).
+
+
+## See also
+
++ 
++ 

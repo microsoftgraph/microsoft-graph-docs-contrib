@@ -13370,6 +13370,7 @@ items:
               - name: Cancel
                 href: api/governanceroleassignmentrequest-cancel.md
         - name: Lifecycle Workflows
+          displayName: Identity Governance, Mover Joiner Leaver
           href: resources/identitygovernance-lifecycleworkflows-overview.md
           items:
           - name: Workflows
