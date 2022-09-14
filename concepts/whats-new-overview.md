@@ -33,12 +33,14 @@ Manage a [policy](/graph/api/resources/accessPackageAssignmentPolicy) that assig
 Manage the [version history of a document set](/graph/api/resources/documentsetversion) in SharePoint, allowing apps to capture the document set (folder) and its contents (documents) at a point in time.
 
 ### Teamwork and communications | Calls and online meetings
-- Limit a [chat](/graph/api/resources/chat) title to a maximum of 255 characters and characters that are _not_ the colon. 
-- [List](/graph/api/chat-list) the chats of a specific user who may not be signed in or is different from the signed-in user, using application permissions.
-- [List](/graph/api/chat-list) and sort chats starting with the most recent ones.
 - [Get](/graph/api/calltranscript-get?view=graph-rest-beta&preserve-view=true) a specific [transcript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) or all the transcripts of an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
 - [Set](/graph/api/presence-setuserpreferredpresence) or [clear](/graph/api/presence-clearuserpreferredpresence) the preferred availability and activity status for a user.
 - Get a [call record](/graph/api/resources/callrecords-callrecord) of calls or online meetings that use Azure Communication Service as a [client user agent](/graph/api/resources/callrecords-clientuseragent) in an [endpoint](/graph/api/resources/callrecords-endpoint).
+
+### Teamwork and communications | Messaging
+- Limit a [chat](/graph/api/resources/chat) title to a maximum of 255 characters and characters that are _not_ the colon. 
+- [List](/graph/api/chat-list) the chats of a specific user who may not be signed in or is different from the signed-in user, using application permissions.
+- [List](/graph/api/chat-list) and sort chats starting with the most recent ones.
 
 
 ## August 2022: New in preview only
@@ -64,7 +66,7 @@ Intune [August updates](https://developer.microsoft.com/en-us/graph/changelog/?s
 - Whether guests must sign in using the same account to which sharing invitations are sent.
 
 ### Identity and access | Governance
-Configure [group peer outlier insights](/graph/api/resources/groupPeerOutlierRecommendationInsightSettings?view=graph-rest-beta) that help reviewers make decisions for an [access review schedule definition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta) based on the access that the user's peers have.
+Configure [group peer outlier insights](/graph/api/resources/groupPeerOutlierRecommendationInsightSettings?view=graph-rest-beta&preserve-view=true) that help reviewers make decisions for an [access review schedule definition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) based on the access that the user's peers have.
 
 ### Mail
 Track and get specifically only created, updated, or deleted messages in a [delta](/graph/api/message-delta?view=graph-rest-beta&preserve-view=true) request.
@@ -73,7 +75,7 @@ Track and get specifically only created, updated, or deleted messages in a [delt
 [Get](/graph/api/userregistrationdetails-get?view=graph-rest-beta&preserve-view=true) more details about [authentication registration by users](/graph/api/resources/userregistrationdetails?view=graph-rest-beta&preserve-view=true) in a tenant - whether a user is a member or guest, and whether the user has an admininstrator role in the tenant.
 
 ### Security | Alerts and incidents
-Use the latest generation of [alerts and incidents](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#alerts) that aggregate alert data from security providers integrated with Microsoft 365 Defender, correlate clues and [evidence](graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true) to provide a richer, broader context of an attack. These [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) and [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true) resources offer consistent actionability across the different providers, making it easy for analysts to collectively investigate and respond to threats.
+Use the latest generation of [alerts and incidents](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#alerts) that aggregate alert data from security providers integrated with Microsoft 365 Defender, correlate clues and [evidence](/graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true) to provide a richer, broader context of an attack. These [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) and [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true) resources offer consistent actionability across the different providers, making it easy for analysts to collectively investigate and respond to threats.
 
 ### Teamwork and communications | Calls and online meetings
 [Get](/graph/api/calltranscript-get?view=graph-rest-beta&preserve-view=true) a specific [transcript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) or all the transcripts of an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
@@ -126,7 +128,7 @@ Intune [July updates](https://developer.microsoft.com/en-us/graph/changelog/?sea
 ### Cloud communications | Online meeting
 - [Create](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true#example-4-create-an-online-meeting-that-requires-a-passcode) an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) that requires a passcode.
 - Specify [settings](/graph/api/resources/joinmeetingidsettings?view=graph-rest-beta&preserve-view=true) for a join-meeting ID, including whether attendees require a passcode to use the join-meeting ID for an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
-- [Create](/graph/api/virtualappointment-put?view=graph-rest-beta&preserve-view=true) and manage a [virtual appointment](/graph/api/resources/virtualappointment?view=graph-rest-beta&preserve-view=true) between a service provider and their customer. This release is a programmatic debut that enables providers such as financial professionals, design consultants, or health care clinicians to consume online workflows and to meet with their customers remotely over video meetings. Find out more information about the _end user_ experience with [virtual appointments on Microsoft Teams](/microsoft-365/frontline/virtual-appointments?view=o365-worldwide).
+- [Create](/graph/api/virtualappointment-put?view=graph-rest-beta&preserve-view=true) and manage a [virtual appointment](/graph/api/resources/virtualappointment?view=graph-rest-beta&preserve-view=true) between a service provider and their customer. This release is a programmatic debut that enables providers such as financial professionals, design consultants, or health care clinicians to consume online workflows and to meet with their customers remotely over video meetings. Find out more information about the _end user_ experience with [virtual appointments on Microsoft Teams](/microsoft-365/frontline/virtual-appointments?view=o365-worldwide&preserve-view=true).
 
 ### Devices and apps | Cloud PC
 [Create](/graph/api/virtualendpoint-post-externalpartnersettings?view=graph-rest-beta&preserve-view=true), [get](/graph/api/cloudpcexternalpartnersetting-get?view=graph-rest-beta&preserve-view=true), or [update](/graph/api/cloudpcexternalpartnersetting-update?view=graph-rest-beta&preserve-view=true) [settings for an external partner](/graph/api/resources/cloudpcexternalpartnersetting?view=graph-rest-beta&preserve-view=true) of Cloud PC, such as the partner status, and enabling or disabling the connection.
