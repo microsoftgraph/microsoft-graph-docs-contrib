@@ -2,7 +2,7 @@
 title: "Create authenticationContextClassReference"
 description: "Create a new authenticationContextClassReference."
 ms.localizationpriority: medium
-author: "calebb"
+author: "bakerCaleb"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
