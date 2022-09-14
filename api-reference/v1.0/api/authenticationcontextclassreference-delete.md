@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
-This method will return an error when deleting a published authenticationContextClassReference. A published authenticationContextClassReference has has the property isAvailable is set to true. The error returned will be `403 Forbidden` response code. If authenticationContextClassReference is used by any Conditional Access policy a `200 Bad Request` will be returned.  This helps prevent an authenticationContextClassReference from being deleted, that may still be in use.
+This method will return a `403 Forbidden` error code when deleting a published authenticationContextClassReference (where **isAvailable** is set to `true`). If authenticationContextClassReference, though unpublished, is used by any Conditional Access policy, this method will return a `400 Bad Request` error code.
 
 ## Examples
 
