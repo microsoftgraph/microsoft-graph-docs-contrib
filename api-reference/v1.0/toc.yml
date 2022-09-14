@@ -5155,7 +5155,7 @@ items:
                   href: api/ipnamedlocation-delete.md
           - name: Authentication context class references
             items:
-            - name: Authentication context class references
+            - name: Authentication context class reference
               href: resources/authenticationcontextclassreference.md
             - name: List
               href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
