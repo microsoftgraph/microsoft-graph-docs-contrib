@@ -1,7 +1,7 @@
 ---
 title: "securityReportsRoot resource type"
 description: "Container for AST reports resources."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: apiPageType

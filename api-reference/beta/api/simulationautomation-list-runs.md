@@ -1,7 +1,7 @@
 ---
 title: "List runs"
 description: "Get a list of the attack simulation automation runs for a tenant."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType

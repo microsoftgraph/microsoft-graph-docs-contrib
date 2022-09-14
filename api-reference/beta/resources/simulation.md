@@ -1,7 +1,7 @@
 ---
 title: "simulation resource type"
 description: "Represents an attack simulation training campaign in a tenant."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType

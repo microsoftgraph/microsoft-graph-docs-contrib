@@ -2,7 +2,7 @@
 title: "Reports API overview for attack simulation training as part of Microsoft Defender for Office 365"
 description: "This section describes APIs that access security reports that are part of Microsoft Defender for Office 365."
 ms.localizationpriority: high
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.prod: "security"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "simulationAutomationRun resource type"
 description: "Represents a run of an attack simulation automation on a tenant."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType

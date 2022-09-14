@@ -1,7 +1,7 @@
 ---
 title: "List simulation users"
 description: "List users of a tenant in an attack simulation campaign with their online actions."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "securityReportsRoot: getAttackSimulationTrainingUserCoverage"
 description: "List training coverage for users of a tenant in attack simulation and training campaigns."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: apiPageType
@@ -105,6 +105,3 @@ Content-Type: application/json
     ]
 }
 ```
-
-## See also
-[reportRoot: getAttackSimulationTrainingUserCoverage](reportroot-getattacksimulationtrainingusercoverage.md) (deprecated)
