@@ -322,6 +322,48 @@
       "CreatedDateTime": "2022-08-31T00:00:00.8909237Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a40b7de8-84cf-4012-abdf-7395b875aff5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isEnabled",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `isEnabled` property from the [workflow](https://docs.microsoft.com/en-us/graph/api/resources/workflow?view=graph-rest-beta) resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "a40b7de8-84cf-4012-abdf-7395b875aff5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isSchedulingEnabled",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `isSchedulingEnabled` property from the [workflow](https://docs.microsoft.com/en-us/graph/api/resources/workflow?view=graph-rest-beta) resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "a40b7de8-84cf-4012-abdf-7395b875aff5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `isEnabled` property to the [workflowBase](https://docs.microsoft.com/en-us/graph/api/resources/workflowBase?view=graph-rest-beta) resource.",
+          "Target": "workflowBase"
+        },
+        {
+          "Id": "a40b7de8-84cf-4012-abdf-7395b875aff5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isSchedulingEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `isSchedulingEnabled` property to the [workflowBase](https://docs.microsoft.com/en-us/graph/api/resources/workflowBase?view=graph-rest-beta) resource.",
+          "Target": "workflowBase"
+        }
+      ],
+      "Id": "a40b7de8-84cf-4012-abdf-7395b875aff5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-02T19:42:11.0538391Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
     }
   ]
 }
