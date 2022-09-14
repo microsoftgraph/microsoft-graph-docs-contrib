@@ -52,6 +52,9 @@ If successful, this method returns a `200 OK` response code and an [alertRule](.
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_alertrule"
@@ -62,6 +65,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules/{ale
 ```
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
