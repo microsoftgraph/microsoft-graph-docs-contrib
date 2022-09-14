@@ -44,8 +44,11 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 ```
+
 ## Optional query parameters
-This method supports the `$top`,and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$top`, '$filter', and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 
 | Name      |Description|
@@ -78,6 +81,7 @@ The following is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
+```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-outcomes-csharp-snippets.md)]

@@ -30,12 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{id}/assignments/{id}
 ```
+
 ## Optional query parameters
 This method supports the  `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-
-
-The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions` and `*` which includes all the previous options.
 
 ## Request headers
 | Header       | Value |

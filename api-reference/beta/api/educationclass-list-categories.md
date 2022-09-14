@@ -33,7 +33,8 @@ GET /education/classes/{id}/assignmentCategories
 ```
 
 ## Optional query parameters
-This method supports the `$top` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$top`, '$filter','oredrBy' and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
