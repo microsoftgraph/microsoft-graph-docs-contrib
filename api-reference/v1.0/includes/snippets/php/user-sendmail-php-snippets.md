@@ -44,7 +44,7 @@ $message->setCcRecipients($ccRecipientsArray);
 
 
 $requestBody->setMessage($message);
-$requestBody->setSaveToSentItems('false');
+$requestBody->setSaveToSentItems(false);
 
 
 

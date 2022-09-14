@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Planner
 
-Get-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId -OutFile $outFileId
+Get-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId
 
 ```

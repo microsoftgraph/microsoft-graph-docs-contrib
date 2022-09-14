@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCloudPcOnPremisesConnection()
-"@odata.type" := "#microsoft.graph.cloudPcOnPremisesConnection"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "test-canary-02"
 requestBody.SetDisplayName(&displayName) 
 type := graphmodels.HYBRIDAZUREADJOIN_CLOUDPCONPREMISESCONNECTIONTYPE 
