@@ -15824,7 +15824,7 @@ items:
               href: api/call-cancelmediaprocessing.md
             - name: Subscribe to tone
               href: api/call-subscribetotone.md
-          - name: Large gallery view operation (preview)
+          - name: Large gallery view operation
             items:
             - name: Add large gallery view
               href: api/call-addlargegalleryview.md
