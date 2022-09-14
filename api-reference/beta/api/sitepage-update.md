@@ -104,13 +104,13 @@ Content-Type: application/json
   "createdBy": {
     "user": {
       "displayName": "Tenant Admin User",
-      "email": "admin@oidctest.ccsctp.net"
+      "email": "admin@contoso.com"
     }
   },
   "lastModifiedBy": {
     "user": {
       "displayName": "Tenant Admin User",
-      "email": "admin@oidctest.ccsctp.net"
+      "email": "admin@contoso.com"
     }
   },
   "publishingState": {
@@ -119,7 +119,7 @@ Content-Type: application/json
     "checkedOutBy": {
       "user": {
         "displayName": "Tenant Admin User",
-        "email": "admin@oidctest.ccsctp.net"
+        "email": "admin@contoso.com"
       }
     }
   },

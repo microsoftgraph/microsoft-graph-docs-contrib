@@ -87,24 +87,25 @@ Content-type: application/json
   "id": "65e59907-59d5-44ff-a038-7c0bf3098c01",
   "name": "Home.aspx",
   "webUrl": "SitePages/Home.aspx",
-  "title": "sangle",
+  "title": "Organization Home",
   "pageLayout": "home",
   "showComments": true,
   "showRecommendedPages": false,
   "createdBy": {
     "user": {
-      "displayName": "System Account"
+      "displayName": "Tenant Admin User",
+      "email": "admin@contoso.com"
     }
   },
   "lastModifiedBy": {
     "user": {
       "displayName": "Tenant Admin User",
-      "email": "admin@oidctest.ccsctp.net"
+      "email": "admin@contoso.com"
     }
   },
   "publishingState": {
     "level": "published",
-    "versionId": "12.0"
+    "versionId": "1.0"
   },
   "reactions": {
     "commentCount": 1

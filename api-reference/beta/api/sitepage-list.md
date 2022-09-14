@@ -71,22 +71,22 @@ Content-type: application/json
     "value": [
         {
             "id": "08f48aa6-02e3-407c-bbcb-ff61cec653fa",
-            "name": "111.aspx",
-            "webUrl": "SitePages/111.aspx",
-            "title": "111",
+            "name": "sample.aspx",
+            "webUrl": "SitePages/sample.aspx",
+            "title": "sample",
             "pageLayout": "article",
             "showComments": true,
             "showRecommendedPages": false,
             "createdBy": {
                 "user": {
-                "displayName": "Tenant Admin User",
-                "email": "admin@oidctest.ccsctp.net"
+                    "displayName": "Tenant Admin User",
+                    "email": "admin@contoso.com"
                 }
             },
             "lastModifiedBy": {
                 "user": {
-                "displayName": "Tenant Admin User",
-                "email": "admin@oidctest.ccsctp.net"
+                    "displayName": "Tenant Admin User",
+                    "email": "admin@contoso.com"
                 }
             },
             "publishingState": {
@@ -95,7 +95,7 @@ Content-type: application/json
                 "checkedOutBy": {
                     "user": {
                         "displayName": "Tenant Admin User",
-                        "email": "admin@oidctest.ccsctp.net"
+                        "email": "admin@contoso.com"
                     }
                 }
             },
@@ -113,27 +113,27 @@ Content-type: application/json
                 "textAboveTitle": "",
                 "textAlignment": "left",
                 "imageSourceType": 2,
-                "title": "111"
+                "title": "sample"
             }
         },
         {
             "id": "7d87eee1-7c77-46b5-b2c4-ad6e4e432a8e",
-            "name": "HHHH.aspx",
-            "webUrl": "SitePages/HHHH.aspx",
-            "title": "HHHH",
-            "pageLayout": "article",
+            "name": "Home.aspx",
+            "webUrl": "SitePages/Home.aspx",
+            "title": "Home",
+            "pageLayout": "home",
             "showComments": true,
             "showRecommendedPages": false,
             "createdBy": {
                 "user": {
-                "displayName": "Tenant Admin User",
-                "email": "admin@oidctest.ccsctp.net"
+                    "displayName": "Tenant Admin User",
+                    "email": "admin@contoso.com"
                 }
             },
             "lastModifiedBy": {
                 "user": {
-                "displayName": "Tenant Admin User",
-                "email": "admin@oidctest.ccsctp.net"
+                    "displayName": "Tenant Admin User",
+                    "email": "admin@contoso.com"
                 }
             },
             "publishingState": {
@@ -142,7 +142,7 @@ Content-type: application/json
                 "checkedOutBy": {
                     "user": {
                         "displayName": "Tenant Admin User",
-                        "email": "admin@oidctest.ccsctp.net"
+                        "email": "admin@contoso.com"
                     }
                 }
             },
@@ -151,15 +151,15 @@ Content-type: application/json
             },
             "titleArea": {
                 "enableGradientEffect": true,
-                "image": "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE11.JPG",
+                "image": "/siteAssets/titleBackground.jpg",
                 "layout": "imageAndTitle",
                 "showAuthor": true,
                 "showPublishedDate": false,
                 "showTextBlockAboveTitle": false,
-                "textAboveTitle": "\n      TEXT ABOVE TITLE\n    ",
+                "textAboveTitle": "Text Above Title",
                 "textAlignment": "left",
                 "imageSourceType": 2,
-                "title": "HHHH",
+                "title": "Home",
                 "hasTitleBeenCommitted": true
             }
         }

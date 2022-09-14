@@ -26,7 +26,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 |[Get sitePage](../api/sitepage-get.md)|[sitePage](../resources/sitepage.md)|Read the properties and relationships of a [sitePage](../resources/sitepage.md) object.|
 |[Update sitePage](../api/sitepage-update.md)|[sitePage](../resources/sitepage.md)|Update the properties of a [sitePage](../resources/sitepage.md) object.|
 |[Delete sitePage](../api/sitepage-delete.md)|None|Deletes a [sitePage](../resources/sitepage.md) object.|
-|[publish](../api/sitepage-publish.md)|None|Publish a [sitePage](../resources/sitepage.md) object|
+|[Publish sitePage](../api/sitepage-publish.md)|None|Publish a [sitePage](../resources/sitepage.md) object|
 |[Get a collection of WebParts by position information](../api/sitepage-getwebpartsbyposition.md)|[webpart](../resources/webpart.md) collection|Get a collection of [WebPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information.|
 
 ## Properties
