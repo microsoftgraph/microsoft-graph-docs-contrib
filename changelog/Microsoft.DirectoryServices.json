@@ -11639,7 +11639,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2022-08-28T07:06:20.8129252Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Conditional Access"
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
