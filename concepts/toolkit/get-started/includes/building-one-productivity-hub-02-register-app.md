@@ -11,7 +11,7 @@ Register the application in the Azure Active Directory to enable user authentica
 
 1. Choose **App registrations** and click **New Registration**.
 
-   ![Screenshot of the Azure Active Directory App registrations page with New Registration highlighted](.../../../images/mgt-one-productivity-hub/aad-app-registration.png)
+   ![Screenshot of the Azure Active Directory App registrations page with New Registration highlighted](../../../images/mgt-one-productivity-hub/aad-app-registration.png)
 
 1. Complete the **Register an application** form using the following values, and then select **Register**.
    * **Name**: One Productivity Hub Demo
