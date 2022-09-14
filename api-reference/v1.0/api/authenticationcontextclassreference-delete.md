@@ -30,9 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /identity/conditionalAccess/authenticationContextClassReferences/{id}
 ```
-## Optional query parameters
-
-This method does not support optional query parameters to customize the response.
 
 ## Request headers
 
