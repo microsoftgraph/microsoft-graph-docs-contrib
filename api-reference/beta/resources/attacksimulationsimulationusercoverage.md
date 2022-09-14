@@ -1,7 +1,7 @@
 ---
 title: "attackSimulationSimulationUserCoverage resource type"
 description: "Represents simulation coverage for a user in attack simulation and training."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: resourcePageType

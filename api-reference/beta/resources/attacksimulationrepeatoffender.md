@@ -1,7 +1,7 @@
 ---
 title: "attackSimulationRepeatOffender resource type"
 description: "Represents repeat offender user in attack simulation and training."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: resourcePageType

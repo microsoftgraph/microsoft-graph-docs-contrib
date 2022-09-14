@@ -1,7 +1,7 @@
 ---
 title: "List simulations"
 description: "Get a list of attack simulation campaigns for a tenant."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType

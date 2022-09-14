@@ -1,7 +1,7 @@
 ---
 title: "List simulationAutomations"
 description: "Get a list of attack simulation automations for a tenant."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType

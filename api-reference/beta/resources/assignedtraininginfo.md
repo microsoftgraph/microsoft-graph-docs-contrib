@@ -1,7 +1,7 @@
 ---
 title: "assignedTrainingInfo resource type"
 description: "Represents assigned training's information in an attack simulation and training campaign."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "attackSimulationUser resource type"
 description: "User in an attack simulation and training campaign."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: resourcePageType

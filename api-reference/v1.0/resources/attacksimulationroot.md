@@ -1,7 +1,7 @@
 ---
 title: "attackSimulationRoot resource type"
 description: "Provides the ability to launch a realistic phishing attack that organizations can learn from."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
