@@ -40,8 +40,6 @@ Microsoft Graph controls access to resources using permissions. You must specify
 | Simulation data and results for each user in a tenant | [attackSimulationSimulationUserCoverage](attacksimulationsimulationusercoverage.md) | [getAttackSimulationSimulationUserCoverage](../api/securityreportsroot-getattacksimulationsimulationusercoverage.md) |
 | Training coverage for each user in a tenant | [attackSimulationTrainingUserCoverage](attacksimulationtrainingusercoverage.md) | [getAttackSimulationTrainingUserCoverage](../api/securityreportsroot-getattacksimulationtrainingusercoverage.md) |
 
-[!INCLUDE [attacksim-deprecate-queryurl-reportapi](../includes/attacksim-deprecate-queryurl-reportapi.md)]
-
 ## Next steps
 
 Reports resources and APIs can open up new ways for you to engage with users and manage their experiences with Microsoft Graph. To learn more:
