@@ -59,7 +59,7 @@ The following is a JSON representation of the resource.
       "id": "String",
       "displayName": "String",
       "description": "String",
-      "isAvailable": "boolean",
+      "isAvailable": "Boolean",
     }
 
 ```
