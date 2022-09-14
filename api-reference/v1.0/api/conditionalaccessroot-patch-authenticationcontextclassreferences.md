@@ -43,7 +43,15 @@ PATCH /identity/conditionalAccess/authenticationContextClassReferences
 
 ## Request body
 
-In the request body, supply a JSON representation of a [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
+
+You can specify the following properties when creating an **authenticationContextClassReference**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+| id | String|**TODO: Add Description** Required.|
+|displayName|String|**TODO: Add Description** Optional.|
+|description|String|**TODO: Add Description** Optional.|
+|isAvailable|Boolean|**TODO: Add Description** Optional.|
 
 ## Response
 
