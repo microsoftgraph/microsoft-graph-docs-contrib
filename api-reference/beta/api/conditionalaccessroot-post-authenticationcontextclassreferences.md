@@ -46,6 +46,7 @@ POST /identity/conditionalAccess/authenticationContextClassReferences
 ## Request body
 
 You can specify the following properties when creating an **authenticationContextClassReference**.
+
 |Property|Type|Description|
 |:---|:---|:---|
 | id | String|Identifier used to reference the authentication context class. The id is used to trigger step-up authentication for the referenced authentication requirements and is the value that will be issued in the `acrs` claim of an access token. This value in the claim is used to verify that the required authentication context has been satisfied. The allowed values are `c1` through `c25`. Required.|
