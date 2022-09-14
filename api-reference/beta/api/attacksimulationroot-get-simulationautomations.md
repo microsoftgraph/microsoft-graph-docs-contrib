@@ -82,30 +82,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulationAutomations/{id}
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-simulationautomation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-simulationautomation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-simulationautomation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-simulationautomation-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulationautomation-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-simulationautomation-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -118,7 +94,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.simulationAutomation)"
+  "@odata.type": "microsoft.graph.simulationAutomation"
 }
 -->
 ``` http
@@ -126,28 +102,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value":
-    {
-      "@odata.type": "#microsoft.graph.simulationAutomation",
-      "id": "fbad62b0-b32d-b6ac-9f48-d84bbea08f96",
-      "displayName": "Reed Flores",
-      "description": "Sample Simulation Automation Description",
-      "status": "running",
-      "createdDateTime": "2022-01-01T01:01:01.01Z",
-      "createdBy": {
-        "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-        "displayName": "Reed Flores",
-        "email": "reed@contoso.com"
-      },
-      "lastModifiedDateTime": "2022-01-01T01:01:01.01Z",
-      "lastModifiedBy": {
-        "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-        "displayName": "Reed Flores",
-        "email": "reed@contoso.com"
-      },
-      "lastRunDateTime": "2022-01-01T01:01:01.01Z",
-      "nextRunDateTime": "2022-01-01T01:01:01.01Z"
-    }
+    "@odata.type": "#microsoft.graph.simulationAutomation",
+    "id": "fbad62b0-b32d-b6ac-9f48-d84bbea08f96",
+    "displayName": "Reed Flores",
+    "description": "Sample Simulation Automation Description",
+    "status": "running",
+    "createdDateTime": "2022-01-01T01:01:01.01Z",
+    "createdBy": {
+    "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+    "displayName": "Reed Flores",
+    "email": "reed@contoso.com"
+    },
+    "lastModifiedDateTime": "2022-01-01T01:01:01.01Z",
+    "lastModifiedBy": {
+    "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+    "displayName": "Reed Flores",
+    "email": "reed@contoso.com"
+    },
+    "lastRunDateTime": "2022-01-01T01:01:01.01Z",
+    "nextRunDateTime": "2022-01-01T01:01:01.01Z"
 }
 ```
 

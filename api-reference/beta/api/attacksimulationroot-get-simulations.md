@@ -83,30 +83,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations/{id}
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-simulation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-simulation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-simulation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-simulation-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulation-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-simulation-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -116,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.simulation)"
+  "@odata.type": "microsoft.graph.simulation"
 }
 -->
 ``` http
@@ -124,32 +100,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value":
-    {
-      "id": "f1b13829-3829-f1b1-2938-b1f12938b1f1",
-      "displayName": "Sample Simulation",
-      "description": "Sample Simulation Description",
-      "attackType": "social",
-      "attackTechnique": "credentialHarvesting",
-      "status": "scheduled",
-      "createdDateTime": "2021-01-01T01:01:01.01Z",
-      "createdBy": {
-        "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-        "displayName": "Sample User",
-        "email": "sampleuser@contoso.com"
-      },
-      "lastModifiedDateTime": "2021-01-01T01:01:01.01Z",
-      "lastModifiedBy": {
-        "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-        "displayName": "Sample User",
-        "email": "sampleuser@contoso.com"
-      },
-      "launchDateTime": "2021-01-01T02:01:01.01Z",
-      "completionDateTime": "2021-01-07T01:01:01.01Z",
-      "isAutomated": false,
-      "automationId": "f1b13829-3829-f1b1-2938-b1f12938b1ab",
-      "payloadDeliveryPlatform": "email"
-    }
+    "id": "f1b13829-3829-f1b1-2938-b1f12938b1f1",
+    "displayName": "Sample Simulation",
+    "description": "Sample Simulation Description",
+    "attackType": "social",
+    "attackTechnique": "credentialHarvesting",
+    "status": "scheduled",
+    "createdDateTime": "2021-01-01T01:01:01.01Z",
+    "createdBy": {
+    "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+    "displayName": "Sample User",
+    "email": "sampleuser@contoso.com"
+    },
+    "lastModifiedDateTime": "2021-01-01T01:01:01.01Z",
+    "lastModifiedBy": {
+    "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+    "displayName": "Sample User",
+    "email": "sampleuser@contoso.com"
+    },
+    "launchDateTime": "2021-01-01T02:01:01.01Z",
+    "completionDateTime": "2021-01-07T01:01:01.01Z",
+    "isAutomated": false,
+    "automationId": "f1b13829-3829-f1b1-2938-b1f12938b1ab",
+    "payloadDeliveryPlatform": "email"
 }
 ```
 
