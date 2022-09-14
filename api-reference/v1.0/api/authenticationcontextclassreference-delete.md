@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
+Delete an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object that's not published or used by a conditional access policy.
 
 ## Permissions
 
