@@ -43,7 +43,7 @@ This method does not support optional query parameters to customize the response
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [authenticationContextClassReferences](../resources/\authenticationcontextclassreference.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object in the response body.
 
 ## Examples
 
