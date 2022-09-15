@@ -16,6 +16,8 @@ Asynchronously assign a sensitivity label to a [driveItem][item-resource].
 
 This API is part of Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions and is considered a protected API. Protected APIs require you to have additional validation, beyond permission and consent, before you can use them. 
 
+For more information about sensitivity labels from an administrator's perspective, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-worldwide&preserve-view=true).
+
 > [!NOTE] 
 > Before you call this API with application permissions, you must request access. To request access, fill out the [request form](https://aka.ms/PreviewSPOPremiumAPI). 
 
