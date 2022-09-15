@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.ContactsById("orgContact-id").TransitiveReports().$count().Get()
+graphClient.ContactsById("orgContact-id").TransitiveReports().$count().Get(context.Background(), nil)
 
 
 ```

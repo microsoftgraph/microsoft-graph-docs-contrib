@@ -7,14 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "isElevated eq true and expirationDateTime eq null"
+
 requestParameters := &graphconfig.PrivilegedRoleAssignmentsRequestBuilderGetQueryParameters{
-	Filter: "isElevated eq true and expirationDateTime eq null",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.PrivilegedRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.PrivilegedRoleAssignments().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.PrivilegedRoleAssignments().Get(context.Background(), configuration)
 
 
 ```

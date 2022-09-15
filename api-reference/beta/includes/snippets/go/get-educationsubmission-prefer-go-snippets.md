@@ -14,7 +14,7 @@ configuration := &graphconfig.EducationSubmissionRequestBuilderGetRequestConfigu
 	Headers: headers,
 }
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Get(context.Background(), configuration)
 
 
 ```

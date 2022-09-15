@@ -16,7 +16,7 @@ configuration := &graphconfig.DelegatedAdminRelationshipRequestBuilderPatchReque
 requestBody := graphmodels.NewDelegatedAdminRelationship()
 displayName := "Updated Contoso admin relationship"
 requestBody.SetDisplayName(&displayName) 
-duration := "P31D"
+duration , err := abstractions.ParseISODuration("P31D")
 requestBody.SetDuration(&duration) 
 customer := graphmodels.NewDelegatedAdminRelationshipCustomerParticipant()
 tenantId := "52eaad04-13a2-4a2f-9ce8-93a294fadf36"
@@ -56,7 +56,7 @@ unifiedRoles := []graphmodels.UnifiedRoleable {
 accessDetails.SetUnifiedRoles(unifiedRoles)
 requestBody.SetAccessDetails(accessDetails)
 
-graphClient.TenantRelationships().DelegatedAdminRelationshipsById("delegatedAdminRelationship-id").PatchWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+graphClient.TenantRelationships().DelegatedAdminRelationshipsById("delegatedAdminRelationship-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

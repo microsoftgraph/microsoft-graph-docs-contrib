@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").Delete()
+graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").Delete(context.Background(), nil)
 
 
 ```

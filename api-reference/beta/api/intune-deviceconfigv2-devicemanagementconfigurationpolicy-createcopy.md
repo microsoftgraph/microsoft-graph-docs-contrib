@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+POST /deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}/createCopy
 POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/createCopy
 POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}/createCopy
 ```
@@ -62,7 +63,7 @@ If successful, this action returns a `200 OK` response code and a [deviceManagem
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/createCopy
+POST https://graph.microsoft.com/beta/deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}/createCopy
 
 Content-type: application/json
 Content-length: 82
@@ -106,6 +107,8 @@ Content-Length: 920
   }
 }
 ```
+
+
 
 
 

@@ -33,7 +33,7 @@ files := []graphmodels.AgreementFileLocalizationable {
 }
 requestBody.SetFiles(files)
 
-result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(requestBody)
+result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(context.Background(), requestBody, nil)
 
 
 ```

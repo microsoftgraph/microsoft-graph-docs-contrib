@@ -13,7 +13,7 @@ requestBody.SetName(&name)
 region := graphmodels.REGION-VALUE_CONNECTORGROUPREGION 
 requestBody.SetRegion(&region) 
 
-graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").ConnectorGroupsById("connectorGroup-id").Patch(requestBody)
+graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").ConnectorGroupsById("connectorGroup-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

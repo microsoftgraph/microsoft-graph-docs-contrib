@@ -14,7 +14,7 @@ configuration := &graphconfig.IdentityUserFlowAttributeAssignmentRequestBuilderG
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").UserAttributeAssignmentsById("identityUserFlowAttributeAssignment-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").UserAttributeAssignmentsById("identityUserFlowAttributeAssignment-id").Get(context.Background(), configuration)
 
 
 ```

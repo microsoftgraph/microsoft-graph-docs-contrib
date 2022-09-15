@@ -10,15 +10,18 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestCount := true
+
 requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
-	Count: true,
+	Count: &requestCount,
 }
 configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.GroupsById("group-id").TransitiveMembers().Group().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.GroupsById("group-id").TransitiveMembers().Group().Get(context.Background(), configuration)
 
 
 ```

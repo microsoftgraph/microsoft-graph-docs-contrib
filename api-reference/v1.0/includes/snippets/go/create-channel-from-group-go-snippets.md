@@ -15,7 +15,7 @@ requestBody.SetDescription(&description)
 membershipType := graphmodels.STANDARD_CHANNELMEMBERSHIPTYPE 
 requestBody.SetMembershipType(&membershipType) 
 
-result, err := graphClient.TeamsById("team-id").Channels().Post(requestBody)
+result, err := graphClient.TeamsById("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.GroupLifecyclePoliciesById("groupLifecyclePolicy-id").Delete()
+graphClient.GroupLifecyclePoliciesById("groupLifecyclePolicy-id").Delete(context.Background(), nil)
 
 
 ```
