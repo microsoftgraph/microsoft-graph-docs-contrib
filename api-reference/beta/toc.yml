@@ -15469,7 +15469,7 @@ items:
           - name: Text WebPart
             href: resources/textwebpart.md
           - name: Standard WebPart
-            href: resources/standard webpart.md
+            href: resources/standardwebpart.md
           - name: List
             href: api/webpart-list.md
           - name: Get 
