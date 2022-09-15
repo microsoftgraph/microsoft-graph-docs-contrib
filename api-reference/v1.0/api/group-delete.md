@@ -15,7 +15,9 @@ Delete group.
 
 When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days. After that time, they're permanently deleted. This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately. To learn more, see [deletedItems](../resources/directory.md).
 
-Note: Role assignable groups can only be deleted by users who created the group, are a global administrator, or a privileged role administartor. The caller must be assigned the RoleManagement.ReadWrite.Directory permission to delete a role assignable group.
+The following conditions apply for apps to delete role-assignable groups:
++ For delegated scenarios, the app must be assigned the _RoleManagement.ReadWrite.Directory_ delegated permission, and the calling user must be the creator of the group or a global administrator or a privileged role administrator.
++ For app-only scenarios, the calling app must be the owner of the group or be assigned the _RoleManagement.ReadWrite.Directory_ application permission or be assigned the Global Administrator or Privileged Role Administrator Azure AD role.
 
 ## Permissions
 
