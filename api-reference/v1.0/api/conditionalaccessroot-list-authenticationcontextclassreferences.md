@@ -62,6 +62,10 @@ The following is an example of the request.
   "name": "get_authenticationcontextclassreference"
 }-->
 
+```http
+GET /identity/conditionalAccess/authenticationContextClassReferences
+```
+
 ### Response
 
 The following is an example of the response.
