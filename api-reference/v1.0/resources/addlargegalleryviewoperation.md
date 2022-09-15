@@ -13,7 +13,6 @@ Namespace: microsoft.graph
 
 Describes the response format for an operation that adds the large gallery view.
 
-
 Inherits from [commsOperation](commsoperation.md).
 
 ## Methods
@@ -24,12 +23,13 @@ Inherits from [commsOperation](commsoperation.md).
 
 ## Properties
 
-| Property                       | Type                        | Description                                                                                                                                       |
-| :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | The client context.                                                                                                                               |
-| id                             | String                      | The ID of the server operation. Read-only.                                                                                             |
-| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                             |
-| status                         | operationStatus             | The status of the operation. Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
+| Property      | Type                        | Description                                                                                                  |
+|:--------------|:----------------------------|:-------------------------------------------------------------------------------------------------------------|
+| clientContext | String                      | The client context.                                                                                          |
+| id            | String                      | The ID of the server operation. Read-only.                                                                   |
+| resultInfo    | [resultInfo](resultinfo.md) | The result information. Read-only.                                                                           |
+| status        | operationStatus             | The status of the operation. Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
+
 
 ## Relationships
 
@@ -64,5 +64,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

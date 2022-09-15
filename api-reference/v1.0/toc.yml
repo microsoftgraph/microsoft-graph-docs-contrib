@@ -7168,13 +7168,6 @@ items:
               href: api/call-keepalive.md
             - name: Log teleconference device quality data
               href: api/call-logteleconferencedevicequality.md
-            - name: Add large gallery view
-              href: api/call-addlargegalleryview.md
-              items:
-              - name: Large gallery view operation
-                href: resources/largegalleryviewoperation.md
-              - name: Get alrge gallery view operation status
-                href: api/addlargegalleryviewoperation-get.md
           - name: Content sharing session
             items:
             - name: Change screen sharing role
@@ -7190,6 +7183,15 @@ items:
               href: api/call-cancelmediaprocessing.md
             - name: Subscribe to tone
               href: api/call-subscribetotone.md
+          - name: Large gallery view operation
+            items:
+            - name: Add large gallery view
+              href: api/call-addlargegalleryview.md
+            - name: Add large gallery view operation
+              href: resources/addlargegalleryviewoperation.md
+              items:
+              - name: Get large gallery view operation status
+                href: api/addlargegalleryviewoperation-get.md
           - name: Participant
             href: resources/participant.md
             items:

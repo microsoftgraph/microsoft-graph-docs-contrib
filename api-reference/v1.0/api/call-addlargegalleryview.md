@@ -55,10 +55,11 @@ The following example shows how to add the large gallery view to a call.
 
 <!-- {
   "blockType": "request",
-  "name": "addLargeGalleryView-1"
+  "name": "addLargeGalleryView-1",
+  "sampleKeys": ["57dab8b1-894c-409a-b240-bd8beae78896"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/addLargeGalleryView
+POST https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/addLargeGalleryView
 Content-Type: application/json
 Content-Length: 46
 
@@ -66,9 +67,6 @@ Content-Length: 46
   "clientContext": "785f4929-92ca-497b-863f-c778c77c9758"
 }
 ```
-
----
-
 
 ### Response
 
@@ -84,7 +82,7 @@ The following is an example of the response.
 } -->
 ```http
 HTTP/1.1 202 ACCEPTED
-Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/e33176d4-836a-4fd7-b95a-d11bda52811d
+Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/e33176d4-836a-4fd7-b95a-d11bda52811d
 
 {
   "@odata.type": "#microsoft.graph.addLargeGalleryViewOperation",

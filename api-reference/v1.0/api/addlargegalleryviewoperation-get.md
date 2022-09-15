@@ -54,15 +54,13 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get-addLargeGalleryViewOperation-1"
+  "name": "get-addLargeGalleryViewOperation-1",
+  "sampleKeys": ["57dab8b1-894c-409a-b240-bd8beae78896", "e33176d4-836a-4fd7-b95a-d11bda52811d"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/e33176d4-836a-4fd7-b95a-d11bda52811d
+GET https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/e33176d4-836a-4fd7-b95a-d11bda52811d
 ```
-
----
-
 
 ### Response
 
@@ -101,5 +99,3 @@ HTTP/1.1 200 OK
   ]
 }
 -->
-
-
