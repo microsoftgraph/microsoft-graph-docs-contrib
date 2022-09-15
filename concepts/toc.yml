@@ -783,7 +783,7 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
-          - name: Use the connectors SDK (Preview)
+          - name: Use the connectors SDK (preview)
             items:
             - name: Overview
               href: custom-connector-sdk-overview.md
