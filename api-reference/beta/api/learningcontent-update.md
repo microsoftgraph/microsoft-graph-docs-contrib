@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the specified [learningContent](../resources/learningcontent.md) resource. 
+Update the specified [learningContent](../resources/learningcontent.md) resource.
 
 Used by a [learning provider](../resources/learningprovider.md) to ingest or update the metadata for their content in Viva Learning. If the specified learning content doesn't yet exist for the specified provider, this operation creates the metadata for the new content. Otherwise, this operation replaces the metadata of the existing content.
 
@@ -66,8 +66,6 @@ PATCH /employeeExperience/learningProviders/{registrationId}/learningContents(ex
 |thumbnailWebUrl|String|The URL of learning content thumbnail image. Optional.|
 |title|String|The title of the learning content. Required.|
 
-
-
 ## Response
 
 If successful, this method returns a `202 Accepted` response code and an updated [learningContent](../resources/learningcontent.md) object in the response body.
@@ -80,7 +78,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_learningcontent"
+  "name": "update_learningcontent",
+  "sampleKeys": ["13727311-e7bb-470d-8b20-6a23d9030d70", "LP4471"]
 }
 -->
 ``` http
@@ -100,8 +99,8 @@ Content-Type: application/json
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [
-      "Scott Simpson",
-      "Hector Minto",
+      "Lina Wagner",
+      "Lisa Richter"
     ],
     "additionalTags": [
         "Create private or public teams",
@@ -132,8 +131,6 @@ Content-Type: application/json
 
 ---
 
-
-
 ### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -162,8 +159,8 @@ Content-Type: application/json
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [
-        "Scott Simpson",
-        "Hector Minto"
+        "Lina Wagner",
+        "Lisa Richter"
     ],
     "additionalTags": [
         "Create private or public teams",
