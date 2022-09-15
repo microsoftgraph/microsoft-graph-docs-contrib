@@ -43,6 +43,7 @@ Alternatively, you can defer final creation of the file in the destination until
 POST /drives/{driveId}/items/{itemId}/createUploadSession
 POST /groups/{groupId}/drive/items/{itemId}/createUploadSession
 POST /me/drive/items/{itemId}/createUploadSession
+POST /me/drive/items/{itemId}:/{fileName}:/createUploadSession
 POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
 POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ```
