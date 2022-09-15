@@ -5095,7 +5095,7 @@ items:
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete
               href: api/temporaryaccesspassauthenticationmethod-delete.md
-        - name: Conditional access
+        - name: Conditional Access
           items:
           - name: Conditional Access
             href: resources/conditionalaccessroot.md

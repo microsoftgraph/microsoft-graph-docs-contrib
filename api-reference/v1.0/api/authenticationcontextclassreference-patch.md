@@ -48,10 +48,10 @@ You can specify the following properties when creating an **authenticationContex
 
 |Property|Type|Description|
 |:---|:---|:---|
-| id | String|**TODO: Add Description** Required.|
-|displayName|String|**TODO: Add Description** Optional.|
-|description|String|**TODO: Add Description** Optional.|
-|isAvailable|Boolean|**TODO: Add Description** Optional.|
+| id | String|Identifier used to reference the authentication context class. The id is used to trigger step-up authentication for the referenced authentication requirements and is the value that will be issued in the `acrs` claim of an access token. This value in the claim is used to verify that the required authentication context has been satisfied. The allowed values are `c1` through `c25`. <br/> Supports `$filter` (`eq`).|
+|displayName|String|The display name is the friendly name of the authenticationContextClassReference. This value should be used to identify the authentication context class reference when building user facing admin experiences. For example, selection UX.|
+|description|String|A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences. For example, selection UX.|
+|isAvailable|Boolean|Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to `false` it should not be shown in authentication context selection UX, or used to protect app resources. It will be shown and available for Conditional Access policy authoring.|
 
 ## Response
 
@@ -62,6 +62,10 @@ If successful, this method returns a `201 Created` response code and a new [auth
 ### Request
 The following example shows creating a new authenticationcontextclassreference that is available for apps to use.
 
+
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_authenticationcontextclassreference"
