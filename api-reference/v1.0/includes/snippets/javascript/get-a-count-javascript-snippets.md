@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let servicePrincipals = await client.api('/servicePrincipals')
+let devices = await client.api('/devices')
 	.header('ConsistencyLevel','eventual')
 	.filter('startswith(displayName, \'a\')')
 	.orderby('displayName')

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To get all the contacts in a user's mailbox:
+To get all the contacts in a user's default Contacts folder:
 
 <!-- { "blockType": "ignored" } -->
 ```http

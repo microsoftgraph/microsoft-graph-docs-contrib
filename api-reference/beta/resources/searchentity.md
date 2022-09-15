@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A top level object representing the Microsoft Search API endpoint. It does not behave as any other resource in Graph, but serves as an anchor to the [query](../api/search-query.md) action. 
+A top-level object that represents the Microsoft Search API endpoint. This resource serves as an anchor to the [query](../api/search-query.md) action. 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[query](../api/search-query.md) |[searchResponse](searchresponse.md) | Runs the query specified in the request body.  |
+|[query](../api/search-query.md) |[searchResponse](searchresponse.md) collection | Run a specified search query.   |
 
 ## Properties
 None.
@@ -43,9 +43,9 @@ The following is a JSON representation of the resource.
 ```
 
 
-## Next steps
+## See also
 
-Explore the [query](../api/search-query.md) action.
+[query](../api/search-query.md)
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

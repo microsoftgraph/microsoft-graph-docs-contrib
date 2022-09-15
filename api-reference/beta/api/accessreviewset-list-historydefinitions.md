@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # List historyDefinitions
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -37,19 +38,23 @@ If the signed-in user is not a Global Admin directory role member or a Global Re
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /identityGovernance/accessReviews/historyDefinitions
 ```
 
 ## Optional query parameters
-This method supports the `$top`, `$filter`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
+
+This method supports the `$top`, `$filter`, `$expand`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). Including `?$expand=instances` will return the [accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) objects along with their associated instances.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -66,9 +71,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_accessreviewhistorydefinition"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewhistorydefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -91,9 +98,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
 
 ---
 
-
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -102,50 +108,43 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
   "isCollection": "true"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.count": 1,
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-      "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
-      "displayName": "Last quarter's group reviews April 2021",
-      "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
-      "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
-      "decisions": [
-        "approve",
-        "deny",
-        "dontKnow",
-        "notReviewed",
-        "notNotified"
-      ],
-      "status": "done",
-      "createdDateTime": "2021-04-14T00:22:48.9392594Z",
-      "fulfilledDateTime": "2021-04-14T00:22:58.5276552Z",
-      "downloadUri": "https://contoso.com/df-erm-reports/Last quarter's group reviews April 2021-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-04-15T00:22:58.5276552Z&se=2021-03-23T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D",
-      "createdBy": {
-        "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
-        "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@contoso.com"
-      },
-      "scopes": [
+    "@odata.count": 1,
+    "value": [
         {
-          "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-          "queryType": "MicrosoftGraph",     
-          "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
-          "queryRoot": null
-        },  
-        {
-          "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-          "queryType": "MicrosoftGraph",     
-          "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
-          "queryRoot": null
+            "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
+            "id": "67e3de15-d263-45a9-8f4f-71271b495db7",
+            "displayName": "Last year's ELM assignment reviews - one time",
+            "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+            "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
+            "decisions": [
+                "approve",
+                "deny",
+                "dontKnow",
+                "notReviewed",
+                "notNotified"
+            ],
+            "status": "done",
+            "createdDateTime": "2021-04-14T00:22:48.9392594Z",
+            "createdBy": {
+                "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
+                "displayName": "MOD Administrator",
+                "userPrincipalName": "admin@contoso.com"
+            },
+            "scopes": [
+                {
+                    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                    "queryType": "MicrosoftGraph",
+                    "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
+                    "queryRoot": null
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
 ```

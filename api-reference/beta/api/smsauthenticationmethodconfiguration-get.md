@@ -96,11 +96,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
-    "id": "713980c7-80c7-7139-c780-3971c7803971",
-    "state": "String"
-  }
+    "id": "Sms",
+    "state": "enabled",
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Sms')/microsoft.graph.smsAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "isUsableForSignIn": true
+        }
+    ]
 }
 ```
 

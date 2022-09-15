@@ -104,19 +104,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "value":{
-      "@odata.type":"#microsoft.graph.emailAuthenticationMethodConfiguration",
-      "id":"Email",
-      "state":"enabled",
-      "allowExternalIdToUseEmailOtp":"enabled",
-      "includeTargets":[
-         {
-            "targetType":"group",
-            "id":"all_users",
-            "isRegistrationRequired":false
-         }
-      ]
-   }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
+    "id": "Email",
+    "state": "enabled",
+    "allowExternalIdToUseEmailOtp": "default",
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": []
 }
 ```
 

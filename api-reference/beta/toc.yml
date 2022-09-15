@@ -1182,35 +1182,36 @@ items:
           - name: Delete password single sign on credentials
             href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
       - name: Synchronization
-        href: resources/synchronization-overview.md
         items:
-        - name: Synchronize custom target attributes
-          href: resources/synchronization-configure-with-custom-target-attributes.md
-        - name: Synchronize directory extension attributes
-          href: resources/synchronization-configure-with-directory-extension-attributes.md
-        - name: Acquire access token
-          href: api/synchronization-synchronization-acquireaccesstoken.md
-        - name: Directory definition
-          href: resources/synchronization-directorydefinition.md
+        - name: Overview
+          href: resources/synchronization-overview.md
+        - name: Synchronization
+          href: resources/synchronization-synchronization.md
           items:
-          - name: Discover
-            href: api/directorydefinition-discover.md
+          - name: Acquire access token
+            href: api/synchronization-synchronization-acquireaccesstoken.md
+          - name: Add secrets
+            href: api/synchronization-synchronization-secrets.md
+          - name: Synchronize custom target attributes
+            href: resources/synchronization-configure-with-custom-target-attributes.md
+          - name: Synchronize directory extension attributes
+            href: resources/synchronization-configure-with-directory-extension-attributes.md
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
-          - name: List jobs
+          - name: List
             href: api/synchronization-synchronizationjob-list.md
-          - name: Create job
+          - name: Create
             href: api/synchronization-synchronizationjob-post.md
-          - name: Get job
+          - name: Get
             href: api/synchronization-synchronizationjob-get.md
-          - name: Start job
+          - name: Start
             href: api/synchronization-synchronizationjob-start.md
-          - name: Pause job
+          - name: Pause
             href: api/synchronization-synchronizationjob-pause.md
-          - name: Restart job
+          - name: Restart
             href: api/synchronization-synchronizationjob-restart.md
-          - name: Delete job
+          - name: Delete
             href: api/synchronization-synchronizationjob-delete.md
           - name: Provision on demand
             href: api/synchronization-synchronizationjob-provision-on-demand.md
@@ -1229,12 +1230,17 @@ items:
             href: api/synchronization-synchronizationschema-update.md
           - name: Reset schema
             href: api/synchronization-synchronizationschema-delete.md
+          - name: Directory definition
+            href: resources/synchronization-directorydefinition.md
+            items:
+            - name: Discover
+              href: api/directorydefinition-discover.md
         - name: Template
           href: resources/synchronization-synchronizationtemplate.md
           items:
-          - name: List templates
+          - name: List
             href: api/synchronization-synchronizationtemplate-list.md
-          - name: Get template
+          - name: Get
             href: api/synchronization-synchronizationtemplate-get.md
     - name: Calendar
       href: resources/calendar.md
@@ -12215,21 +12221,21 @@ items:
                href: api/identityuserflowattribute-delete.md
           - name: User flow attribute assignment
             items:
-             - name: User flow attribute assignment
+             - name: User
                href: resources/identityuserflowattributeassignment.md
-             - name: Get user flow attribute assignment
+             - name: Get
                href: api/identityuserflowattributeassignment-get.md
-             - name: Update user flow attribute assignment
+             - name: Update
                href: api/identityuserflowattributeassignment-update.md
-             - name: Delete user flow attribute assignment
+             - name: Delete
                href: api/identityuserflowattributeassignment-delete.md
           - name: User flow language configuration
             items:
              - name: User flow language configuration
                href: resources/userflowlanguageconfiguration.md
-             - name: Get userFlowLanguageConfiguration
+             - name: Get user flow language configuration
                href: api/userflowlanguageconfiguration-get.md
-             - name: Delete userFlowLanguageConfiguration
+             - name: Delete user flow language configuration
                href: api/userflowlanguageconfiguration-delete.md
              - name: List defaultPages
                href: api/userflowlanguageconfiguration-list-defaultpages.md
@@ -12237,11 +12243,11 @@ items:
                href: api/userflowlanguageconfiguration-list-overridespages.md
              - name: User flow language page
                href: resources/userflowlanguagepage.md
-             - name: Get userFlowLanguagePage
+             - name: Get user flow language page
                href: api/userflowlanguagepage-get.md
-             - name: Update userFlowLanguagePage
+             - name: Update user flow language page
                href: api/userflowlanguagepage-put.md
-             - name: Delete userFlowLanguagePage
+             - name: Delete user flow language page
                href: api/userflowlanguagepage-delete.md
           - name: API connectors
             items:
@@ -12337,8 +12343,13 @@ items:
               href: api/accessreviewset-list-historydefinitions.md
             - name: Create
               href: api/accessreviewset-post-historydefinitions.md
-            - name: Generate download URI
-              href: api/accessreviewhistorydefinition-generatedownloaduri.md
+            - name: Access review history instance
+              href: resources/accessreviewhistoryinstance.md
+              items: 
+              - name: List
+                href: api/accessreviewhistorydefinition-list-instances.md
+              - name: Generate download URI
+                href: api/accessreviewhistoryinstance-generatedownloaduri.md
         - name: Access reviews (deprecated)
           href: resources/accessreviews-root.md
           items:
@@ -12816,6 +12827,26 @@ items:
           href: api/outlookcategory-update.md
         - name: Delete category
           href: api/outlookcategory-delete.md
+      - name: Extended properties
+        items:
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
+          items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
+          - name: Create single-value property
+            href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+          - name: Get single-value property
+            href: api/singlevaluelegacyextendedproperty-get.md
+        - name: Multi-value extended properties
+          items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
+          - name: Create multi-value property
+            href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+          - name: Get multi-value property
+            href: api/multivaluelegacyextendedproperty-get.md
       - name: Focused Inbox
         href: resources/manage-focused-inbox.md
         items:
@@ -12886,26 +12917,6 @@ items:
           href: api/messagerule-update.md
         - name: Delete rule
           href: api/messagerule-delete.md
-      - name: Extended properties
-        items:
-        - name: Overview
-          href: resources/extended-properties-overview.md
-        - name: Single-value extended properties
-          items:
-          - name: Single-value extended property
-            href: resources/singlevaluelegacyextendedproperty.md
-          - name: Create single-value property
-            href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-          - name: Get single-value property
-            href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended properties
-          items:
-          - name: Multi-value extended property
-            href: resources/multivaluelegacyextendedproperty.md
-          - name: Create multi-value property
-            href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-          - name: Get multi-value property
-            href: api/multivaluelegacyextendedproperty-get.md
     - name: Notes
       displayName: OneNote
       items:
@@ -14113,26 +14124,26 @@ items:
           href: api/contenttype-update.md
         - name: Delete
           href: api/contenttype-delete.md
+        - name: Add copy to list
+          href: api/contenttype-addcopy.md
+        - name: Add or sync from hub
+          href: api/contenttype-addcopyfromcontenttypehub.md
+        - name: Associate with hub sites
+          href: api/contenttype-associatewithhubsites.md
         - name: Check publishing status
           href: api/contenttype-ispublished.md
+        - name: Copy to default content location
+          href: api/contenttype-copytodefaultcontentlocation.md
+        - name: Create column
+          href: api/contenttype-post-columns.md
+        - name: Get compatible from hub
+          href: api/contenttype-getcompatiblehubcontenttypes.md
+        - name: List columns
+          href: api/contenttype-list-columns.md
         - name: Publish
           href: api/contenttype-publish.md
         - name: Unpublish
           href: api/contenttype-unpublish.md
-        - name: Add copy to list
-          href: api/contenttype-addcopy.md
-        - name: Associate with hub sites
-          href: api/contenttype-associatewithhubsites.md
-        - name: Copy to default content location
-          href: api/contenttype-copytodefaultcontentlocation.md
-        - name: List columns
-          href: api/contenttype-list-columns.md
-        - name: Create column
-          href: api/contenttype-post-columns.md
-        - name: Get compatible hubs
-          href: api/contenttype-getcompatiblehubcontenttypes.md
-        - name: Add copy from hubs
-          href: api/contenttype-addcopyfromcontenttypehub.md
       - name: List items
         items:
         - name: List item
@@ -14147,28 +14158,38 @@ items:
           href: api/listitem-update.md
         - name: Delete item
           href: api/listitem-delete.md
-        - name: List versions
-          href: api/listitem-list-versions.md
-        - name: Get item analytics
-          href: api/itemanalytics-get.md
-        - name: Get activities by interval
-          href: api/itemactivity-getbyinterval.md
         - name: Create sharing link
           href: api/listitem-createlink.md
+        - name: Get activities by interval
+          href: api/itemactivity-getbyinterval.md
+        - name: Get item analytics
+          href: api/itemanalytics-get.md
+        - name: List versions
+          href: api/listitem-list-versions.md
       - name: Pages
         items:
         - name: Site page
           href: resources/sitepage.md
         - name: List
           href: api/sitepage-list.md
-        - name: Get
-          href: api/sitepage-get.md
         - name: Create
           href: api/sitepage-create.md
+        - name: Get
+          href: api/sitepage-get.md
         - name: Delete
           href: api/sitepage-delete.md
         - name: Publish
           href: api/sitepage-publish.md
+      - name: Rich long-running operation
+        items:
+        - name: Rich long-running operation
+          href: resources/richLongRunningOperation.md
+        - name: List operations in a site
+          href: api/site-list-operations.md
+        - name: List operations in a list
+          href: api/list-list-operations.md
+        - name: Get operation
+          href: api/richlongrunningoperation-get.md
       - name: Taxonomy
         displayname: Taxonomy API
         items:
@@ -14225,12 +14246,6 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
-      - name: Rich long-running operation
-        items:
-        - name: Rich long-running operation
-          href: resources/richLongRunningOperation.md
-        - name: Get
-          href: api/richlongrunningoperation-get.md
     - name: Tasks and plans
       displayName: Planner
       items:
@@ -14646,6 +14661,43 @@ items:
             href: api/chat-teamsappinstallation-upgrade.md
           - name: Remove app from chat
             href: api/chat-delete-installedapps.md
+      - name: Device
+        items:
+        - name: Provisioned devices
+          href: resources/teamworkdevice.md
+          items:
+            - name: List
+              href: api/teamworkdevice-list.md
+            - name: Get
+              href: api/teamworkdevice-get.md
+            - name: Restart device
+              href: api/teamworkdevice-restart.md
+            - name: Run device diagnostic
+              href: api/teamworkdevice-rundiagnostics.md
+            - name: Software update
+              href: api/teamworkdevice-updatesoftware.md
+        - name: Device activity
+          href: resources/teamworkdeviceactivity.md
+          items:
+            - name: Get
+              href: api/teamworkdeviceactivity-get.md
+        - name: Device configuration
+          href: resources/teamworkdeviceconfiguration.md
+          items:
+            - name: Get
+              href: api/teamworkdeviceconfiguration-get.md
+        - name: Device health
+          href: resources/teamworkdevicehealth.md
+          items:
+            - name: Get
+              href: api/teamworkdevicehealth-get.md
+        - name: Device operation
+          href: resources/teamworkdeviceoperation.md
+          items:
+            - name: List
+              href: api/teamworkdeviceoperation-list.md
+            - name: Get
+              href: api/teamworkdeviceoperation-get.md
       - name: Activity feed
         items:
         - name: Send notification to user in chat

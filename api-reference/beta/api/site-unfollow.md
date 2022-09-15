@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Unfollow a user's [site](../resources/site.md) or multiple sites.
 
 ## Permissions

@@ -627,7 +627,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "siteWebUrl",
 					"ChangeType": "Addition",
-					"Description": "Added the **siteWebUrl** property to the [userSource](https://docs.microsoft.com/en-us/graph/api/resources/userSource?view=graph-rest-beta) resource.",
+					"Description": "Added the **siteWebUrl** property to the [userSource](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-userSource?view=graph-rest-beta) resource.",
 					"Target": "userSource"
 				}
 			],

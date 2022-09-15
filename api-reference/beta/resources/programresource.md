@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
 The **programResource** object, contained within a [programControl](programcontrol.md) object, represents a reference to an object that is the target of the access review.
 
 This type inherits from [identity](identity.md).

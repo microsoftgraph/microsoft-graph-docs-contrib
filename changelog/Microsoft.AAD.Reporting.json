@@ -23,7 +23,7 @@
         "Cloud": "prd",
         "Version": "beta",
         "CreatedDateTime": "2022-01-24T00:00:00.000Z",
-        "WorkloadArea": "Reports and audit",
+        "WorkloadArea": "Reports",
         "SubArea": "Identity and access reports"
     },
     {
@@ -123,7 +123,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-01-19T00:00:00.000Z",
-      "WorkloadArea": "Reports and audit",
+      "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
     {
