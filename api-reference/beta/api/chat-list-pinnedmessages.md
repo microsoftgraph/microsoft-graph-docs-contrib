@@ -1,5 +1,5 @@
 ---
-title: "List pinnedChatMessage in a chat"
+title: "List pinnedChatMessages in a chat"
 description: "Get a list of pinned messages in a chat."
 author: "sumanac"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List pinned messages in a chat
+# List pinnedChatMessages in a chat
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

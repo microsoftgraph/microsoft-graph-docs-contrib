@@ -18,9 +18,9 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List pinned messages in chat](../api/chat-list-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md) collection|Get a list of [pinnedChatMessages](../resources/pinnedChatMessageInfo.md) in a [chat](../resources/chat.md).|
-|[Pin a message in chat](../api/chat-post-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md)|Pin a chat message in the specified [chat](../resources/chat.md).|
-|[Unpin a message from chat](../api/chat-delete-pinnedmessages.md)|None|Unpin a message from a [chat](../resources/chat.md).|
+|[List pinned messages](../api/chat-list-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md) collection|Get a list of [pinnedChatMessages](../resources/pinnedChatMessageInfo.md) in a [chat](../resources/chat.md).|
+|[Pin message](../api/chat-post-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md)|Pin a chat message in the specified [chat](../resources/chat.md).|
+|[Unpin message](../api/chat-delete-pinnedmessages.md)|None|Unpin a message from a [chat](../resources/chat.md).|
 
 ## Properties
 |Property|Type|Description|
