@@ -8,7 +8,7 @@ ms.prod: search
 description: "Learn about the Microsoft Graph connectors SDK contracts ConnectorInfo API and models."
 ---
 
-# Microsoft Graph connectors SDK ConnectorInfo API and models
+# Microsoft Graph connectors SDK (preview) ConnectorInfo API and models
 
 The Microsoft Graph connectors SDK contracts **ConnectorInfo** API allows you to get information about the connector.
 

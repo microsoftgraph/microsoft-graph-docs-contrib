@@ -8,7 +8,7 @@ ms.prod: search
 description: "Learn about the Microsoft Graph connectors SDK contracts connector OAuth API."
 ---
 
-# Microsoft Graph connectors SDK connector OAuth API
+# Microsoft Graph connectors SDK (preview) connector OAuth API
 
 The Microsoft Graph connectors SDK contracts connector OAuth API is used for OAuth flows such as refreshing access tokens during crawls.
 

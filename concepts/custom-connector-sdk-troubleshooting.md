@@ -8,7 +8,7 @@ ms.prod: search
 description: "Learn how to troubleshoot issues with the Microsoft Graph connectors SDK."
 ---
 
-# Troubleshoot issues with the Microsoft Graph connectors SDK
+# Troubleshoot issues with the Microsoft Graph connectors SDK (preview)
 
 This article describes some of the most common issues with the Microsoft Graph connectors SDK, and how to troubleshoot them.
 

@@ -8,7 +8,7 @@ ms.prod: search
 description: Learn about the Microsoft Graph connectors SDK contract services.
 ---
 
-# Microsoft Graph connectors SDK services
+# Microsoft Graph connectors SDK (preview) services
 
 This article describes the services that are part of the contract protocol buffer files. Implement these services as part of the connector.
 

@@ -8,7 +8,7 @@ ms.prod: search
 description: "Learn about the contracts connector crawler API and models in the Microsoft Graph connectors SDK."
 ---
 
-# Microsoft Graph connectors SDK contracts connector crawler API and models
+# Microsoft Graph connectors SDK (preview) contracts connector crawler API and models
 
 The Microsoft Graph connectors SDK contracts connector crawler API and models are called during a crawl.
 

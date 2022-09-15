@@ -8,7 +8,7 @@ ms.prod: search
 description: "Learn how to use the test application that's included in the Microsoft Graph connectors SDK."
 ---
 
-# Microsoft Graph connectors SDK test application
+# Microsoft Graph connectors SDK (preview) test application
 
 The GraphConnectorAgentTest executable file is a test utility for the custom connector. It doesn't create connections or add data into the Microsoft index. The test utility runs on the computer where you installed the agent and doesn't connect to external resources except for the data source that is part of the test.
 You can find the test application in the TestApp folder in your Microsoft Graph connector agent installation folder.

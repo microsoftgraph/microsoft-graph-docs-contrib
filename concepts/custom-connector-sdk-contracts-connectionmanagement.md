@@ -10,7 +10,7 @@ description: "Learn about the connection management API and models in the Micros
 
 # Microsoft Graph connectors SDK connection management API and models
 
-The Microsoft Graph connectors SDK contracts connection management API and models are called during the process of **custom connector connection creation** on the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add).
+The Microsoft Graph connectors SDK (preview) contracts connection management API and models are called during the process of **custom connector connection creation** on the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/MicrosoftSearch/Connectors/add).
 
 ## Connection management APIs
 
