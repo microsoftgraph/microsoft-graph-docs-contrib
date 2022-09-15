@@ -17,7 +17,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.BookingBusinessesById("bookingBusiness-id").CustomQuestionsById("bookingCustomQuestion-id").Post(requestBody)
+graphClient.BookingBusinessesById("bookingBusiness-id").CustomQuestionsById("bookingCustomQuestion-id").Post(context.Background(), requestBody, nil)
 
 
 ```

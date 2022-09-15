@@ -17,7 +17,7 @@ additionalData := map[string]interface{}{
 resource.SetAdditionalData(additionalData)
 requestBody.SetResource(resource)
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Resources().Post(requestBody)
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Resources().Post(context.Background(), requestBody, nil)
 
 
 ```

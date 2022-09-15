@@ -31,7 +31,7 @@ removeLicenses := []string {
 }
 requestBody.SetRemoveLicenses(removeLicenses)
 
-result, err := graphClient.Me().AssignLicense().Post(requestBody)
+result, err := graphClient.Me().AssignLicense().Post(context.Background(), requestBody, nil)
 
 
 ```

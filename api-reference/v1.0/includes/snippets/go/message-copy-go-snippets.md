@@ -11,7 +11,7 @@ requestBody := graphmodels.NewCopyPostRequestBody()
 destinationId := "destinationId-value"
 requestBody.SetDestinationId(&destinationId) 
 
-result, err := graphClient.Me().MessagesById("message-id").Copy().Post(requestBody)
+result, err := graphClient.Me().MessagesById("message-id").Copy().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -29,7 +29,7 @@ rolePermissions := []graphmodels.UnifiedRolePermissionable {
 }
 requestBody.SetRolePermissions(rolePermissions)
 
-graphClient.RoleManagement().Directory().RoleDefinitionsById("unifiedRoleDefinition-id").Patch(requestBody)
+graphClient.RoleManagement().Directory().RoleDefinitionsById("unifiedRoleDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

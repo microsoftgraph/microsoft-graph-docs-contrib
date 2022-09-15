@@ -17,7 +17,7 @@ configuration := &graphconfig.CustomSecurityAttributeDefinitionsRequestBuilderGe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Get(context.Background(), configuration)
 
 
 ```
