@@ -58,10 +58,10 @@ If successful, this method returns a `200 OK` response code and a [learningConte
 
 ### Example 1: Get the metadata of a learning content based on its ID
 
-The following examples shows a request that retrieves the metadata of a learning content based on its ID (primary key).
+The following example shows a request that retrieves the metadata of a learning content based on its ID (primary key).
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -74,7 +74,7 @@ GET /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/l
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -119,10 +119,10 @@ Content-type: application/json
 
 ### Example 2: Get the metadata of a learning content based on its external ID
 
-The following examples shows a request that retrieves the metadata of a learning content based on its external ID (secondary key).
+The following example shows a request that retrieves the metadata of a learning content based on its external ID (secondary key).
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -135,7 +135,7 @@ GET /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/l
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
