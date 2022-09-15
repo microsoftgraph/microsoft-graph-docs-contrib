@@ -24,7 +24,7 @@ subjects := []graphmodels.Objectable {
 }
 requestBody.SetSubjects(subjects)
 
-graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").Activate().Post(requestBody)
+graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").Activate().Post(context.Background(), requestBody, nil)
 
 
 ```

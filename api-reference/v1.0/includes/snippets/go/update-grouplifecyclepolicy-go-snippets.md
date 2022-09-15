@@ -15,7 +15,7 @@ requestBody.SetManagedGroupTypes(&managedGroupTypes)
 alternateNotificationEmails := "admin@contoso.com"
 requestBody.SetAlternateNotificationEmails(&alternateNotificationEmails) 
 
-graphClient.GroupLifecyclePoliciesById("groupLifecyclePolicy-id").Patch(requestBody)
+graphClient.GroupLifecyclePoliciesById("groupLifecyclePolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

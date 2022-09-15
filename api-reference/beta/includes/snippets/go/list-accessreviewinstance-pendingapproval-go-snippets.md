@@ -20,7 +20,7 @@ configuration := &graphconfig.PendingAccessReviewInstancesRequestBuilderGetReque
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().PendingAccessReviewInstances().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().PendingAccessReviewInstances().Get(context.Background(), configuration)
 
 
 ```

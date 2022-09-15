@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 description := "test description"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Programs().Post(requestBody)
+result, err := graphClient.Programs().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewOutlookTaskGroup()
 name := "Leisure tasks"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Me().Outlook().TaskGroups().Post(requestBody)
+result, err := graphClient.Me().Outlook().TaskGroups().Post(context.Background(), requestBody, nil)
 
 
 ```
