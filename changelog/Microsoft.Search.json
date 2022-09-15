@@ -1313,6 +1313,24 @@
       "CreatedDateTime": "2022-08-03T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
-    }
+    },
+    {
+      "ChangeList": [
+          {
+            "Id": "64c31dc7-33b5-45bb-b751-760160b49ad3",
+            "ApiChange": "",
+            "ChangedApiName": "",
+            "ChangeType": "Deletion",
+            "Description": "Add support for the XRANK in public documentation.",
+            "Target": "file"
+          }
+        ],
+        "Id": "64c31dc7-33b5-45bb-b751-760160b49ad3",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2022-09-15T00:00:00",
+        "WorkloadArea": "Search",
+        "SubArea": ""
+      }
   ]
 }
