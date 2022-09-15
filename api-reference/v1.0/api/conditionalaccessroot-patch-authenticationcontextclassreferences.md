@@ -62,10 +62,6 @@ If successful, this method returns a `201 Created` response code and a new [auth
 ### Request
 The following example shows creating a new authenticationcontextclassreference that is available for apps to use.
 
-
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_authenticationcontextclassreference"
