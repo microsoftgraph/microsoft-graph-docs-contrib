@@ -89,14 +89,14 @@ const {
     AuthCodeMSALBrowserAuthenticationProviderOptions
 } = require("@microsoft/microsoft-graph-client/authProviders/authCodeMsalBrowser");
 
-const options: AuthCodeMSALBrowserAuthenticationProviderOptions: {
+const options: AuthCodeMSALBrowserAuthenticationProviderOptions = {
     account: account, // the AccountInfo instance to acquire the token for.
     interactionType: InteractionType.PopUp, // msal-browser InteractionType
     scopes: ["user.read", "mail.send"] // example of the scopes to be passed
 }
 
 // Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
-const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
+const authProvider = new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
 ```
 
 ### Using @azure/identity for server-side applications

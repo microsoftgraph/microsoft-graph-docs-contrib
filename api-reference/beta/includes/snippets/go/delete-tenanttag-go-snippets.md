@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-tenantTagId := "tenantTag-id"
-graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).Delete()
+
+graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").Delete(context.Background(), nil)
 
 
 ```

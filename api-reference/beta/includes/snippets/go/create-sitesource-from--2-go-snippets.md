@@ -7,14 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewSiteSource()
-site := msgraphsdk.NewSite()
-requestBody.SetSite(site)
+requestBody := graphmodels.NewSiteSource()
+site := graphmodels.NewSite()
 webUrl := "https://contoso.sharepoint.com/sites/SecretSite"
-site.SetWebUrl(&webUrl)
-caseId := "case-id"
-legalHoldId := "legalHold-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).SiteSources().Post(requestBody)
+site.SetWebUrl(&webUrl) 
+requestBody.SetSite(site)
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").LegalHoldsById("legalHold-id").SiteSources().Post(context.Background(), requestBody, nil)
 
 
 ```

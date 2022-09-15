@@ -1,7 +1,102 @@
 {
 	"changelog": [
 		{
+			"ChangeList": [
+			  {
+				"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+				"ApiChange": "Member",
+				"ChangedApiName": "adminConfirmedServicePrincipalCompromised",
+				"ChangeType": "Addition",
+				"Description": "Added the `adminConfirmedServicePrincipalCompromised` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+				"ApiChange": "Member",
+				"ChangedApiName": "m365DAdminDismissedDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the `adminDismissedAllRiskForServicePrincipal` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+				"ApiChange": "Member",
+				"ChangedApiName": "m365DAdminDismissedDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the `m365DAdminDismissedDetection` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  }
+			],
+			"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-09-12T15:11:34.8050491Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+			  {
+				"Id": "9c8271a4-b275-4d34-bef6-2ab260c1c4bf",
+				"ApiChange": "Member",
+				"ChangedApiName": "m365DAdminDismissedDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the `m365DAdminDismissedDetection` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  }
+			],
+			"Id": "9c8271a4-b275-4d34-bef6-2ab260c1c4bf",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2022-09-12T18:11:30.5644341Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
 		      "ChangeList": [
+			{
+			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+			  "ApiChange": "Enumeration",
+			  "ChangedApiName": "signInFrequencyAuthenticationType",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **signInFrequencyAuthenticationType** enumeration type.",
+			  "Target": "signInFrequencyAuthenticationType"
+			},
+			{
+			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+			  "ApiChange": "Enumeration",
+			  "ChangedApiName": "signInFrequencyInterval",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **signInFrequencyInterval** enumeration type.",
+			  "Target": "signInFrequencyInterval"
+			},
+			{
+			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+			  "ApiChange": "Property",
+			  "ChangedApiName": "authenticationType",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **authenticationType** property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
+			  "Target": "signInFrequencySessionControl"
+			},
+			{
+			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+			  "ApiChange": "Property",
+			  "ChangedApiName": "frequencyInterval",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **frequencyInterval** property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
+			  "Target": "signInFrequencySessionControl"
+			}
+		      ],
+		      "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",
+		      "Cloud": "Prod",
+		      "Version": "v1.0",
+		      "CreatedDateTime": "2022-08-12T23:51:58.4545889Z",
+		      "WorkloadArea": "Identity and access",
+		      "SubArea": "Identity and sign-in"
+    },
+    {
+			
+			"ChangeList": [
 			      {
 			  		"Id": "72b6ab5a-f674-4872-9c80-bb4dcb54915f",
 			  		"ApiChange": "Member",

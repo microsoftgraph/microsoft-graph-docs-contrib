@@ -11,6 +11,8 @@ ms.custom: scenarios:getting-started
 
 Change notifications enable you to subscribe to changes (create, update, and delete) to messages in a channel or chat. Change notifications provide a low latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
+Continue with this article about scenarios for the [chatMessage](/graph/api/resources/chatmessage) resource in the [channel](/graph/api/resources/channel) or [chat](/graph/api/resources/chat) context. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
+
 ## Subscribe to changes at the tenant level
 
 To track all changes related to messages in a tenant, you can use subscriptions at a tenant level for channel and chat messages. This requires you to create two subscriptions: one to track all messages across [channels](/graph/api/resources/channel?preserve-view=true), and one to track all messages across [chats](/graph/api/resources/chat?preserve-view=true).
@@ -173,8 +175,6 @@ To track messages in a chat, you can create a change notification subscription a
 
 Chat-level subscriptions also support keyword-based search via the `$search` query parameter.
 
-> **Note.** Subcribing to messages in a chat is currently in preview.
-
 ### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -256,13 +256,13 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to changes at the user level (preview)
+## Subscribe to changes at the user level
 
-To track messages across all chats a particular user is part of, you can create a change notification subscription at a user level. To do this, subscribe to `/users/{user-id}/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only* modes. This subscription is only available in the beta endpoint.
+To track messages across all chats a particular user is part of, you can create a change notification subscription at a user level. To do this, subscribe to `/users/{user-id}/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only* modes.
 
 User-level chat messaging subscriptions also support keyword-based search via the `$search` query parameter.
 
-> **Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
 ### Permissions
 
@@ -289,6 +289,40 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+## Subscribe to messages of any chat in a tenant where a specific Teams app is installed (preview)
+
+To get change notifications for all messages across chats in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+
+> **Note.** This resource type is currently in preview.
+
+[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
+
+### Permissions
+
+| Permission type                        | Permissions (from least to most privileged)             |
+| :------------------------------------- | :------------------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                                          |
+| Delegated (personal Microsoft account) | Not supported.                                          |
+| Application                            | Chat.Read.WhereInstalled, Chat.ReadWrite.WhereInstalled |
+
+### Example
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/appCatalogs/teamsApps/386bbcdb-1e1c-4f3f-b7d0-ad7b9ea6cf7c/installedToChats/getAllMessages",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 ## Notification payloads
 
 Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the message payload along with the notification, removing the need to call back and get the content.
@@ -392,4 +426,8 @@ The **resource** and **@odata.id** properties can be used to make calls to Micro
 
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)
+- [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
+- [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
+- [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
+- [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)
