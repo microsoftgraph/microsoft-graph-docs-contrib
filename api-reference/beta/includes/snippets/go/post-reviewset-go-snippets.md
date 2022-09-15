@@ -11,7 +11,7 @@ requestBody := graphmodels.NewReviewSet()
 displayName := "My Reviewset 3"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSets().Post(requestBody)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSets().Post(context.Background(), requestBody, nil)
 
 
 ```

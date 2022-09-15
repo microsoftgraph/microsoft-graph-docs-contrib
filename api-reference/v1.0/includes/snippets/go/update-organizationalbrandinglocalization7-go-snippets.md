@@ -13,7 +13,7 @@ requestBody.SetSignInPageText(&signInPageText)
 usernameHintText := " "
 requestBody.SetUsernameHintText(&usernameHintText) 
 
-graphClient.OrganizationById("organization-id").Branding().LocalizationsById("organizationalBrandingLocalization-id").Patch(requestBody)
+graphClient.OrganizationById("organization-id").Branding().LocalizationsById("organizationalBrandingLocalization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

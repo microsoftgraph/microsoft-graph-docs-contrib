@@ -25,7 +25,7 @@ id := "extension_guid_shoeSize"
 userAttribute.SetId(&id) 
 requestBody.SetUserAttribute(userAttribute)
 
-result, err := graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").UserAttributeAssignments().Post(requestBody)
+result, err := graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").UserAttributeAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

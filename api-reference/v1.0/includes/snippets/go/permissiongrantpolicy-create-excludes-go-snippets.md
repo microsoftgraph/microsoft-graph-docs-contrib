@@ -13,7 +13,7 @@ requestBody.SetPermissionType(&permissionType)
 resourceApplication := "00000003-0000-0000-c000-000000000000"
 requestBody.SetResourceApplication(&resourceApplication) 
 
-result, err := graphClient.Policies().PermissionGrantPoliciesById("permissionGrantPolicy-id").Excludes().Post(requestBody)
+result, err := graphClient.Policies().PermissionGrantPoliciesById("permissionGrantPolicy-id").Excludes().Post(context.Background(), requestBody, nil)
 
 
 ```

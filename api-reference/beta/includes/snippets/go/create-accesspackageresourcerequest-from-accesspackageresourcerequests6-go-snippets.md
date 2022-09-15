@@ -67,7 +67,7 @@ attributes := []graphmodels.AccessPackageResourceAttributeable {
 accessPackageResource.SetAttributes(attributes)
 requestBody.SetAccessPackageResource(accessPackageResource)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

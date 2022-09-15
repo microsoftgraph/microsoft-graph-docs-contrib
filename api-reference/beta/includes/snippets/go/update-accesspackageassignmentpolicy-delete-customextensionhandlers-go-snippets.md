@@ -39,7 +39,7 @@ requestBody.SetAccessReviewSettings(&accessReviewSettings)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPoliciesById("accessPackageAssignmentPolicy-id").Put(requestBody)
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPoliciesById("accessPackageAssignmentPolicy-id").Put(context.Background(), requestBody, nil)
 
 
 ```
