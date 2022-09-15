@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the servicePrincipal resources from the appRoleAssignedResources navigation property.
+Get the service principals to which the user has an app role assignment either directly or through group membership.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permissions                                  | Type                                             | Entities/APIs Covered                                               |
+| -------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------- |
+| Application.Read.All, Directory.Read.All | Delegated (work or school account) | Allows access to list of service principals and their app role assignments |
+| Application.Read.All, Directory.Read.All | Application | Works on behalf of an application |
+| Application.Read.All, Directory.Read.All | Delegated (personal MSFT account)) | **Not supported**  |
 
 ## HTTP request
 
@@ -70,99 +70,28 @@ ConsistencyLevel: eventual
 
 ### Response
 The following is an example of the response
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.servicePrincipal)"
-}
--->
-``` http
+  "@odata.type": "microsoft.graph.servicePrincipal",
+  "isCollection": true
+} -->
+
+```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.servicePrincipal",
-      "id": "08a136b8-7fd3-c6bf-3ba7-14adb3ad0de1",
-      "deletedDateTime": "String (timestamp)",
-      "passwordSingleSignOnSettings": {
-        "@odata.type": "microsoft.graph.passwordSingleSignOnSettings"
-      },
-      "accountEnabled": "Boolean",
-      "addIns": [
-        {
-          "@odata.type": "microsoft.graph.addIn"
-        }
-      ],
-      "alternativeNames": [
-        "String"
-      ],
-      "appDescription": "String",
-      "appDisplayName": "String",
-      "appId": "String",
-      "applicationTemplateId": "String",
-      "appOwnerOrganizationId": "Guid",
-      "appRoleAssignmentRequired": "Boolean",
-      "appRoles": [
-        {
-          "@odata.type": "microsoft.graph.appRole"
-        }
-      ],
-      "customSecurityAttributes": {
-        "@odata.type": "microsoft.graph.customSecurityAttributeValue"
-      },
-      "description": "String",
-      "disabledByMicrosoftStatus": "String",
-      "displayName": "String",
-      "errorUrl": "String",
-      "homepage": "String",
-      "info": {
-        "@odata.type": "microsoft.graph.informationalUrl"
-      },
-      "keyCredentials": [
-        {
-          "@odata.type": "microsoft.graph.keyCredential"
-        }
-      ],
-      "loginUrl": "String",
-      "logoutUrl": "String",
-      "notes": "String",
-      "notificationEmailAddresses": [
-        "String"
-      ],
-      "publishedPermissionScopes": [
-        {
-          "@odata.type": "microsoft.graph.permissionScope"
-        }
-      ],
-      "passwordCredentials": [
-        {
-          "@odata.type": "microsoft.graph.passwordCredential"
-        }
-      ],
-      "preferredTokenSigningKeyEndDateTime": "String (timestamp)",
-      "preferredTokenSigningKeyThumbprint": "String",
-      "preferredSingleSignOnMode": "String",
-      "publisherName": "String",
-      "replyUrls": [
-        "String"
-      ],
-      "samlMetadataUrl": "String",
-      "samlSingleSignOnSettings": {
-        "@odata.type": "microsoft.graph.samlSingleSignOnSettings"
-      },
-      "servicePrincipalNames": [
-        "String"
-      ],
-      "servicePrincipalType": "String",
-      "signInAudience": "String",
-      "tags": [
-        "String"
-      ],
-      "tokenEncryptionKeyId": "Guid"
+      "accountEnabled":true,
+      "displayName":"amasf",
+      "servicePrincipalType":"Application",
+      "signInAudience":"AzureADMyOrg"
     }
   ]
 }
-```
