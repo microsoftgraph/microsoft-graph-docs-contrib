@@ -56,7 +56,8 @@ If successful, this function returns a `200 OK` response code and a [assignmentO
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "identityuserflowattributeassignment_getorder"
+  "name": "identityuserflowattributeassignment_getorder",
+  "sampleKeys": ["B2X_1_Partner"]
 }
 -->
 
@@ -78,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/userAtt
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/identityuserflowattributeassignment-getorder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityuserflowattributeassignment-getorder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

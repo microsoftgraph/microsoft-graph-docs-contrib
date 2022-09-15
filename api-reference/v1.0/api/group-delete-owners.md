@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to remove an owner from a Microsoft 365 group or a security group through the **owners** navigation property. Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
+Remove an owner from a Microsoft 365 group or a security group through the **owners** navigation property. Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
-> **Note:** For issues encountered when removing owner of a group associated with a [team](/graph/api/resources/team.md), see [Known Issues](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
+> **Note:** For issues encountered when removing owner of a group associated with a [team](/graph/api/resources/team), see [Known Issues](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
 
 ## Permissions
 
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-owner-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-owner-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

@@ -1,19 +1,17 @@
 ---
-title: "Permanently delete an item from deleted items"
-description: "Permanently deletes an item from deleted items."
+title: "Permanently delete an item (directory object)"
+description: "Permanently delete a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Permanently delete item
+# Permanently delete an item (directory object)
 
 Namespace: microsoft.graph
 
-Permanently deletes an item from [deleted items](../resources/directory.md).
-
-Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md) and [user](../resources/user.md) resources. You can permanently delete an item from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
+Permanently delete a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). After an item is permanently deleted, it **cannot** be restored.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

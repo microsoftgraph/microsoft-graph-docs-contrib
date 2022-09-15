@@ -25,8 +25,6 @@ post.SetBody(body)
 
 
 extension := graphmodels.NewExtension()
-"@odata.type" := "microsoft.graph.openTypeExtension"
-extension.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"extensionName" : "Com.Contoso.Benefits", 
 	"companyName" : "Contoso", 
@@ -58,7 +56,7 @@ threads := []graphmodels.ConversationThreadable {
 }
 requestBody.SetThreads(threads)
 
-result, err := graphClient.GroupsById("group-id").Conversations().Post(requestBody)
+result, err := graphClient.GroupsById("group-id").Conversations().Post(context.Background(), requestBody, nil)
 
 
 ```

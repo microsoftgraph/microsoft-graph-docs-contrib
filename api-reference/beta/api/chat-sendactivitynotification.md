@@ -381,7 +381,8 @@ This example shows how you can send an activity feed notification to all chat me
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification_4"
+  "name": "chat_sendactivitynotification_4",
+  "sampleKeys": ["19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"]
 }
 -->
 

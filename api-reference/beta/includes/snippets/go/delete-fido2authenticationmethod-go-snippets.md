@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.UsersById("user-id").Authentication().Fido2MethodsById("fido2AuthenticationMethod-id").Delete()
+graphClient.UsersById("user-id").Authentication().Fido2MethodsById("fido2AuthenticationMethod-id").Delete(context.Background(), nil)
 
 
 ```

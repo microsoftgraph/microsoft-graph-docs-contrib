@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewBookingCustomQuestion()
-"@odata.type" := "#microsoft.graph.bookingCustomQuestion"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "What is your age?"
 requestBody.SetDisplayName(&displayName) 
 answerInputType := graphmodels.TEXT_ANSWERINPUTTYPE 
@@ -19,7 +17,7 @@ answerOptions := []string {
 }
 requestBody.SetAnswerOptions(answerOptions)
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").CustomQuestions().Post(requestBody)
+result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").CustomQuestions().Post(context.Background(), requestBody, nil)
 
 
 ```

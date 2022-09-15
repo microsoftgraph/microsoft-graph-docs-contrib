@@ -21,8 +21,6 @@ content := "You have moved up the queue"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
 recipient := graphmodels.NewTeamworkNotificationRecipient()
-"@odata.type" := "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient"
-recipient.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"userId" : "jacob@contoso.com", 
 }
@@ -48,7 +46,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.TeamsById("team-id").SendActivityNotification().Post(requestBody)
+graphClient.TeamsById("team-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

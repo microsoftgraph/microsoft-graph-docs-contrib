@@ -32,14 +32,14 @@ attendees := []graphmodels.Objectable {
 }
 requestBody.SetAttendees(attendees)
 locationConstraint := graphmodels.NewLocationConstraint()
-isRequired := "false"
+isRequired := false
 locationConstraint.SetIsRequired(&isRequired) 
-suggestLocation := "false"
+suggestLocation := false
 locationConstraint.SetSuggestLocation(&suggestLocation) 
 
 
 locationConstraintItem := graphmodels.NewLocationConstraintItem()
-resolveAvailability := "false"
+resolveAvailability := false
 locationConstraintItem.SetResolveAvailability(&resolveAvailability) 
 displayName := "Conf room Hood"
 locationConstraintItem.SetDisplayName(&displayName) 
@@ -75,16 +75,16 @@ timeSlots := []graphmodels.TimeSlotable {
 }
 timeConstraint.SetTimeSlots(timeSlots)
 requestBody.SetTimeConstraint(timeConstraint)
-isOrganizerOptional := "false"
+isOrganizerOptional := false
 requestBody.SetIsOrganizerOptional(&isOrganizerOptional) 
-meetingDuration := "PT1H"
+meetingDuration , err := abstractions.ParseISODuration("PT1H")
 requestBody.SetMeetingDuration(&meetingDuration) 
-returnSuggestionReasons := "true"
+returnSuggestionReasons := true
 requestBody.SetReturnSuggestionReasons(&returnSuggestionReasons) 
-minimumAttendeePercentage := graphmodels.100_ 
+minimumAttendeePercentage := float64(100)
 requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage) 
 
-result, err := graphClient.Me().FindMeetingTimes().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Me().FindMeetingTimes().Post(context.Background(), requestBody, configuration)
 
 
 ```

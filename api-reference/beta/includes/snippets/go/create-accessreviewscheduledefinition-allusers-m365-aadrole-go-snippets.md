@@ -13,14 +13,10 @@ requestBody.SetDisplayName(&displayName)
 descriptionForAdmins := "Review employee access to LinkedIn"
 requestBody.SetDescriptionForAdmins(&descriptionForAdmins) 
 scope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.principalResourceMembershipsScope"
-scope.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 
 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-.Set"@odata.type"(&"@odata.type") 
 query := "/users"
 .SetQuery(&query) 
 queryType := "MicrosoftGraph"
@@ -33,8 +29,6 @@ queryType := "MicrosoftGraph"
 
 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-.Set"@odata.type"(&"@odata.type") 
 query := "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae"
 .SetQuery(&query) 
 queryType := "MicrosoftGraph"
@@ -125,7 +119,7 @@ recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

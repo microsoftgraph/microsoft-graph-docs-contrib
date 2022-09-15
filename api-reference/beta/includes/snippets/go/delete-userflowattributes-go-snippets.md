@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Identity().UserFlowAttributesById("identityUserFlowAttribute-id").Delete()
+graphClient.Identity().UserFlowAttributesById("identityUserFlowAttribute-id").Delete(context.Background(), nil)
 
 
 ```

@@ -14,7 +14,7 @@ configuration := &graphconfig.BrandingRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 
-result, err := graphClient.OrganizationById("organization-id").Branding().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.OrganizationById("organization-id").Branding().Get(context.Background(), configuration)
 
 
 ```

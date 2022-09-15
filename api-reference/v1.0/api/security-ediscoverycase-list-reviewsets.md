@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/reviewSets
+GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/reviewSets
 ```
 
 # [C#](#tab/csharp)
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-418
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-ediscoveryreviewset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-ediscoveryreviewset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

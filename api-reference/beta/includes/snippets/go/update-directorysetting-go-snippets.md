@@ -23,7 +23,7 @@ values := []graphmodels.SettingValueable {
 }
 requestBody.SetValues(values)
 
-graphClient.SettingsById("directorySetting-id").Patch(requestBody)
+graphClient.SettingsById("directorySetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

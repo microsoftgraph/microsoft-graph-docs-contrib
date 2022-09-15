@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.DeviceManagement().VirtualEndpoint().DeviceImagesById("cloudPcDeviceImage-id").Reupload().Post()
+graphClient.DeviceManagement().VirtualEndpoint().DeviceImagesById("cloudPcDeviceImage-id").Reupload().Post(context.Background(), nil)
 
 
 ```

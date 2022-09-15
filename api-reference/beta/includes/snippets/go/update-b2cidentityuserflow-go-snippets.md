@@ -13,7 +13,7 @@ requestBody.SetIsLanguageCustomizationEnabled(&isLanguageCustomizationEnabled)
 defaultLanguageTag := "en"
 requestBody.SetDefaultLanguageTag(&defaultLanguageTag) 
 
-graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").Patch(requestBody)
+graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

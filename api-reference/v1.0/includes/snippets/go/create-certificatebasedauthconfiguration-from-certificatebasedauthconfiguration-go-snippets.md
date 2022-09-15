@@ -24,7 +24,7 @@ certificate := "Binary"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.OrganizationById("organization-id").CertificateBasedAuthConfiguration().Post(requestBody)
+graphClient.OrganizationById("organization-id").CertificateBasedAuthConfiguration().Post(context.Background(), requestBody, nil)
 
 
 ```
