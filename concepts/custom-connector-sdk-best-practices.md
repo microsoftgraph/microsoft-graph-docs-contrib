@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Graph connectors SDK best practices"
+title: "Microsoft Graph connectors SDK (preview) best practices"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.prod: search
 description: "Apply best practices when you use the Microsoft Graph connectors SDK."
 ---
 
-# Microsoft Graph connectors SDK best practices
+# Microsoft Graph connectors SDK (preview) best practices
 
 This article provides best practices to follow when you use the Microsoft Graph connectors SDK (preview) to implement a custom connector.
 
