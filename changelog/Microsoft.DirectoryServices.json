@@ -11285,7 +11285,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationMethodFeatureConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [authenticationMethodFeatureConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodFeatureConfiguration?view=graph-rest-1.0) resource. Use this resource to configure users that are allowed from using an authentication method.",
+          "Description": "Added the [authenticationMethodFeatureConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodFeatureConfiguration?view=graph-rest-1.0) resource. Use this resource to configure users that are allowed or excluded from using an authentication method.",
           "Target": "authenticationMethodFeatureConfiguration"
         },
         {
