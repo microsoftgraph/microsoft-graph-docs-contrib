@@ -59,30 +59,29 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.learningContent",
-  "id": "String (identifier)",
-  "externalId": "String",
-  "title": "String",
-  "contentWebUrl": "String",
-  "languageTag": "String",
-  "description": "String",
-  "sourceName": "String",
-  "thumbnailWebUrl": "String",
-  "numberOfPages": "Integer",
-  "duration": "String (duration)",
-  "format": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "contributor": "String",
-  "additionalTags": [
-    "String"
-  ],
-  "skillTags": [
-    "String"
-  ],
-  "isActive": "Boolean",
-  "isPremium": "Boolean",
-  "isSearchable": "Boolean"
+    "@odata.type": "#microsoft.graph.learningContent",
+    "additionalTags": [
+        "String"
+    ],
+    "contentWebUrl": "String",
+    "contributor": "String",
+    "createdDateTime": "String (timestamp)",
+    "description": "String",
+    "duration": "String (duration)",
+    "externalId": "String",
+    "format": "String",
+    "id": "String (identifier)",
+    "isActive": "Boolean",
+    "isPremium": "Boolean",
+    "isSearchable": "Boolean",
+    "languageTag": "String",
+    "lastModifiedDateTime": "String (timestamp)",
+    "numberOfPages": "Integer",
+    "skillTags": [
+        "String"
+    ],
+    "sourceName": "String",
+    "thumbnailWebUrl": "String",
+    "title": "String"
 }
 ```
-

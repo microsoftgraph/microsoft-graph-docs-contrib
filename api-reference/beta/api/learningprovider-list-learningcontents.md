@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
+|Delegated (work or school account)|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|LearningContent.Read.All|
 
@@ -120,7 +120,7 @@ Content-type: application/json
             "format": "Book",
             "createdDateTime": "2018-01-01T00:00:00",
             "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
-            "contributors": "Scott Simpson",
+            "contributor": "Scott Simpson",
             "additionalTags": [
                 "Create private or public teams",
                 "Add members to teams"
@@ -148,7 +148,7 @@ Content-type: application/json
             "format": "Book",
             "createdDateTime": "2018-01-01T00:00:00",
             "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
-            "contributors": "Scott Simpson",
+            "contributor": "Scott Simpson",
             "additionalTags": [
                 "Create private or public teams",
                 "Add members to teams"
