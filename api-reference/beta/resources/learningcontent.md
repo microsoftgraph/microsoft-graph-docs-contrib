@@ -72,7 +72,6 @@ The following is a JSON representation of the resource.
     "duration": "String (duration)",
     "externalId": "String",
     "format": "String",
-    "id": "String (identifier)",
     "isActive": "Boolean",
     "isPremium": "Boolean",
     "isSearchable": "Boolean",
