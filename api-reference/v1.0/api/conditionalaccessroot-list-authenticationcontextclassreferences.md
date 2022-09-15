@@ -2,7 +2,7 @@
 title: "List authenticationContextClassReferences"
 description: "Retrieve a list of authenticationContextClassReference objects."
 ms.localizationpriority: medium
-author: "calebb"
+author: "bakerCaleb"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -61,8 +61,6 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_authenticationcontextclassreference"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationContextClassReferences
 
 ### Response
 
@@ -93,8 +91,6 @@ Content-type: application/json
     }
   ]
 }
-
-
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

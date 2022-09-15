@@ -2,7 +2,7 @@
 title: "Get authenticationContextClassReference"
 description: "Retrieve the properties and relationships of a authenticationContextClassReference object."
 ms.localizationpriority: medium
-author: "calebb"
+author: "bakerCaleb"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /identity/conditionalAccess/authenticationContextClassReferences/{id}
 ```
@@ -51,14 +50,15 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 
 The following is an example of the request.
 
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_authenticationcontextclassreference"
 }-->
 
+```http
+GET /identity/conditionalAccess/authenticationContextClassReferences/c1
+```
 
 ### Response
 
