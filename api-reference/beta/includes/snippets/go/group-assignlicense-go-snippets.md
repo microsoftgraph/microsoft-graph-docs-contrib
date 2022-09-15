@@ -12,7 +12,7 @@ requestBody := graphmodels.NewAssignLicensePostRequestBody()
 
 assignedLicense := graphmodels.NewAssignedLicense()
 additionalData := map[string]interface{}{
-	disabledPlans := []String {
+	disabledPlans := []string {
 		"113feb6c-3fe4-4440-bddc-54d774bf0318",
 		"14ab5db5-e6c4-4b20-b4bc-13e36fd2227f",
 
@@ -22,7 +22,7 @@ additionalData := map[string]interface{}{
 assignedLicense.SetAdditionalData(additionalData)
 assignedLicense1 := graphmodels.NewAssignedLicense()
 additionalData := map[string]interface{}{
-	disabledPlans := []String {
+	disabledPlans := []string {
 		"a413a9ff-720c-4822-98ef-2f37c2a21f4c",
 
 	}
@@ -41,7 +41,7 @@ removeLicenses := []string {
 }
 requestBody.SetRemoveLicenses(removeLicenses)
 
-result, err := graphClient.GroupsById("group-id").AssignLicense(group-id).Post(requestBody)
+result, err := graphClient.GroupsById("group-id").AssignLicense().Post(context.Background(), requestBody, nil)
 
 
 ```

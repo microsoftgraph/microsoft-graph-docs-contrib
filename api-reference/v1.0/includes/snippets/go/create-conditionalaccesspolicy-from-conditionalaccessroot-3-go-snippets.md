@@ -27,12 +27,12 @@ clientAppTypes := []graphmodels.ConditionalAccessClientAppable {
 }
 conditions.SetClientAppTypes(clientAppTypes)
 applications := graphmodels.NewConditionalAccessApplications()
-includeApplications := []String {
+includeApplications := []string {
 	"All",
 
 }
 applications.SetIncludeApplications(includeApplications)
-excludeApplications := []String {
+excludeApplications := []string {
 	"499b84ac-1321-427f-aa17-267ca6975798",
 	"00000007-0000-0000-c000-000000000000",
 	"de8bc8b5-d9f9-48b1-a8ad-b748da725064",
@@ -49,12 +49,12 @@ includeUserActions := []string {
 applications.SetIncludeUserActions(includeUserActions)
 conditions.SetApplications(applications)
 users := graphmodels.NewConditionalAccessUsers()
-includeUsers := []String {
+includeUsers := []string {
 	"a702a13d-a437-4a07-8a7e-8c052de62dfd",
 
 }
 users.SetIncludeUsers(includeUsers)
-excludeUsers := []String {
+excludeUsers := []string {
 	"124c5b6a-ffa5-483a-9b88-04c3fce5574a",
 	"GuestsOrExternalUsers",
 
@@ -68,14 +68,14 @@ excludeGroups := []string {
 
 }
 users.SetExcludeGroups(excludeGroups)
-includeRoles := []String {
+includeRoles := []string {
 	"9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
 	"cf1c38e5-3621-4004-a7cb-879624dced7c",
 	"c4e39bd9-1100-46d3-8c65-fb160da0071f",
 
 }
 users.SetIncludeRoles(includeRoles)
-excludeRoles := []String {
+excludeRoles := []string {
 	"b0f54661-2d74-4c50-afa3-1ec803f12efe",
 
 }
@@ -95,12 +95,12 @@ excludePlatforms := []graphmodels.ConditionalAccessDevicePlatformable {
 platforms.SetExcludePlatforms(excludePlatforms)
 conditions.SetPlatforms(platforms)
 locations := graphmodels.NewConditionalAccessLocations()
-includeLocations := []String {
+includeLocations := []string {
 	"AllTrusted",
 
 }
 locations.SetIncludeLocations(includeLocations)
-excludeLocations := []String {
+excludeLocations := []string {
 	"00000000-0000-0000-0000-000000000000",
 	"d2136c9c-b049-47ae-b9cf-316e04ef7198",
 
@@ -124,7 +124,7 @@ customAuthenticationFactors := []string {
 
 }
 grantControls.SetCustomAuthenticationFactors(customAuthenticationFactors)
-termsOfUse := []String {
+termsOfUse := []string {
 	"ce580154-086a-40fd-91df-8a60abac81a0",
 	"7f29d675-caff-43e1-8a53-1b8516ed2075",
 
@@ -152,7 +152,7 @@ signInFrequency.SetIsEnabled(&isEnabled)
 sessionControls.SetSignInFrequency(signInFrequency)
 requestBody.SetSessionControls(sessionControls)
 
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(requestBody)
+result, err := graphClient.Identity().ConditionalAccess().Policies().Post(context.Background(), requestBody, nil)
 
 
 ```

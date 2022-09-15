@@ -21,7 +21,7 @@ requestBody.SetBase(base)
 group := "Document Set Content Types"
 requestBody.SetGroup(&group) 
 
-result, err := graphClient.SitesById("site-id").ContentTypes().Post(requestBody)
+result, err := graphClient.SitesById("site-id").ContentTypes().Post(context.Background(), requestBody, nil)
 
 
 ```

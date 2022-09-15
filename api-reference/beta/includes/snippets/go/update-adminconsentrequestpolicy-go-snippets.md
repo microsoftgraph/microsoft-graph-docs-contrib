@@ -37,7 +37,7 @@ queryType := "MicrosoftGraph"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Policies().AdminConsentRequestPolicy().Put(requestBody)
+graphClient.Policies().AdminConsentRequestPolicy().Put(context.Background(), requestBody, nil)
 
 
 ```

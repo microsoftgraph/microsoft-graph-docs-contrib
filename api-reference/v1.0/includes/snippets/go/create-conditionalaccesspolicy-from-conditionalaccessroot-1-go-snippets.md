@@ -20,26 +20,26 @@ clientAppTypes := []graphmodels.ConditionalAccessClientAppable {
 }
 conditions.SetClientAppTypes(clientAppTypes)
 applications := graphmodels.NewConditionalAccessApplications()
-includeApplications := []String {
+includeApplications := []string {
 	"00000002-0000-0ff1-ce00-000000000000",
 
 }
 applications.SetIncludeApplications(includeApplications)
 conditions.SetApplications(applications)
 users := graphmodels.NewConditionalAccessUsers()
-includeGroups := []String {
+includeGroups := []string {
 	"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba",
 
 }
 users.SetIncludeGroups(includeGroups)
 conditions.SetUsers(users)
 locations := graphmodels.NewConditionalAccessLocations()
-includeLocations := []String {
+includeLocations := []string {
 	"All",
 
 }
 locations.SetIncludeLocations(includeLocations)
-excludeLocations := []String {
+excludeLocations := []string {
 	"AllTrusted",
 
 }
@@ -56,7 +56,7 @@ builtInControls := []graphmodels.ConditionalAccessGrantControlable {
 grantControls.SetBuiltInControls(builtInControls)
 requestBody.SetGrantControls(grantControls)
 
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(requestBody)
+result, err := graphClient.Identity().ConditionalAccess().Policies().Post(context.Background(), requestBody, nil)
 
 
 ```

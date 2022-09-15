@@ -12,7 +12,7 @@ type := graphmodels.SUBJECTRIGHTSREQUESTTYPE_GRAPH_MICROSOFT_SUBJECTRIGHTSREQUES
 requestBody.SetType(&type) 
 dataSubjectType := graphmodels.DATASUBJECTTYPE_GRAPH_MICROSOFT_DATASUBJECTTYPE 
 requestBody.SetDataSubjectType(&dataSubjectType) 
-regulations := []String {
+regulations := []string {
 	"String",
 
 }
@@ -39,7 +39,7 @@ additionalData := map[string]interface{}{
 dataSubject.SetAdditionalData(additionalData)
 requestBody.SetDataSubject(dataSubject)
 
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(requestBody)
+result, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

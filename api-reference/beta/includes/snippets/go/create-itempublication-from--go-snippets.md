@@ -21,7 +21,7 @@ requestBody.SetThumbnailUrl(&thumbnailUrl)
 webUrl := "https://www.iabm.io"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Profile().Publications().Post(requestBody)
+result, err := graphClient.Me().Profile().Publications().Post(context.Background(), requestBody, nil)
 
 
 ```

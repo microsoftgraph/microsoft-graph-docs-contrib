@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewMuteAllPostRequestBody()
-participants := []String {
+participants := []string {
 	"",
 
 }
@@ -16,7 +16,7 @@ requestBody.SetParticipants(participants)
 clientContext := "clientContext-value"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().CallsById("call-id").Participants().MuteAll(call-id).Post(requestBody)
+result, err := graphClient.Communications().CallsById("call-id").Participants().MuteAll().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewGroup()
 displayName := "myGroup"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.SitesById("site-id").TermStore().Groups().Post(requestBody)
+result, err := graphClient.SitesById("site-id").TermStore().Groups().Post(context.Background(), requestBody, nil)
 
 
 ```

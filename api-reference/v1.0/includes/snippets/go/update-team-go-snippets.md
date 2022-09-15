@@ -25,7 +25,7 @@ giphyContentRating := graphmodels.STRICT_GIPHYRATINGTYPE
 funSettings.SetGiphyContentRating(&giphyContentRating) 
 requestBody.SetFunSettings(funSettings)
 
-graphClient.TeamsById("team-id").Patch(requestBody)
+graphClient.TeamsById("team-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

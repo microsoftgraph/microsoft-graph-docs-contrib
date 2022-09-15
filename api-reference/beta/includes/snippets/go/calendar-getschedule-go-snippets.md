@@ -14,7 +14,7 @@ configuration := &graphconfig.GetScheduleRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewGetSchedulePostRequestBody()
-schedules := []String {
+schedules := []string {
 	"adelev@contoso.onmicrosoft.com",
 	"meganb@contoso.onmicrosoft.com",
 
@@ -35,7 +35,7 @@ requestBody.SetEndTime(endTime)
 availabilityViewInterval := int32(60)
 requestBody.SetAvailabilityViewInterval(&availabilityViewInterval) 
 
-result, err := graphClient.Me().Calendar().GetSchedule().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Me().Calendar().GetSchedule().Post(context.Background(), requestBody, configuration)
 
 
 ```

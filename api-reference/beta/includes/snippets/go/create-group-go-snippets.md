@@ -12,7 +12,7 @@ description := "Self help community for golf"
 requestBody.SetDescription(&description) 
 displayName := "Golf Assist"
 requestBody.SetDisplayName(&displayName) 
-groupTypes := []String {
+groupTypes := []string {
 	"Unified",
 
 }
@@ -24,7 +24,7 @@ requestBody.SetMailNickname(&mailNickname)
 securityEnabled := false
 requestBody.SetSecurityEnabled(&securityEnabled) 
 
-result, err := graphClient.Groups().Post(requestBody)
+result, err := graphClient.Groups().Post(context.Background(), requestBody, nil)
 
 
 ```

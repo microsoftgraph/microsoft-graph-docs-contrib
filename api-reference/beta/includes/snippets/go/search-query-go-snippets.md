@@ -12,11 +12,11 @@ requestBody := graphmodels.NewQueryPostRequestBody()
 
 searchRequest := graphmodels.NewSearchRequest()
 additionalData := map[string]interface{}{
-	entityTypes := []String {
+	entityTypes := []string {
 		"externalItem",
 
 	}
-	contentSources := []String {
+	contentSources := []string {
 		"/external/connections/connectionfriendlyname",
 
 	}
@@ -26,7 +26,7 @@ query.SetQueryString(&queryString)
 	searchRequest.SetQuery(query)
 	"from" : int32(0) , 
 	"size" : int32(25) , 
-	fields := []String {
+	fields := []string {
 		"title",
 		"description",
 
@@ -40,7 +40,7 @@ requests := []graphmodels.SearchRequestable {
 }
 requestBody.SetRequests(requests)
 
-result, err := graphClient.Search().Query().Post(requestBody)
+result, err := graphClient.Search().Query().Post(context.Background(), requestBody, nil)
 
 
 ```

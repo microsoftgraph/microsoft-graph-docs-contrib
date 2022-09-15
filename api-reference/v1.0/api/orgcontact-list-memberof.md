@@ -54,7 +54,7 @@ The following is an example of the request.
   "name": "contact_get_memberof"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/contacts/{id}/memberOf
+GET https://graph.microsoft.com/v1.0/contacts/e63333f5-3d11-4026-8fe3-c0f7b044dd3a/memberOf
 ```
 
 # [C#](#tab/csharp)
@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/memberOf
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contact-get-memberof-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/contact-get-memberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

@@ -40,20 +40,18 @@ location.SetDisplayName(&displayName)
 requestBody.SetLocation(location)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-emailAddress := graphmodels.New()
+attendee := graphmodels.NewAttendee()
+emailAddress := graphmodels.NewEmailAddress()
 address := "AlexW@contoso.OnMicrosoft.com"
 emailAddress.SetAddress(&address) 
 name := "Alex Wilbur"
 emailAddress.SetName(&name) 
-	.SetEmailAddress(emailAddress)
-	"type" : "required", 
-}
-.SetAdditionalData(additionalData)
+attendee.SetEmailAddress(emailAddress)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendee.SetType(&type) 
 
 attendees := []graphmodels.Objectable {
-	,
+	attendee,
 
 }
 requestBody.SetAttendees(attendees)
@@ -74,7 +72,7 @@ range.SetNumberOfOccurrences(&numberOfOccurrences)
 recurrence.SetRange(range)
 requestBody.SetRecurrence(recurrence)
 
-result, err := graphClient.Me().Events().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 
 ```

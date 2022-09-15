@@ -19,7 +19,7 @@ requestBody.SetThumbnailUrl(&thumbnailUrl)
 webUrl := "https://www.iame.io/blackbelt"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Profile().Certifications().Post(requestBody)
+result, err := graphClient.Me().Profile().Certifications().Post(context.Background(), requestBody, nil)
 
 
 ```

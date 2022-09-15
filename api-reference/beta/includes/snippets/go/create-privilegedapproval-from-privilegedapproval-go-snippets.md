@@ -16,10 +16,10 @@ approvalType := "approvalType-value"
 requestBody.SetApprovalType(&approvalType) 
 approvalState := graphmodels.APPROVALSTATE-VALUE_APPROVALSTATE 
 requestBody.SetApprovalState(&approvalState) 
-approvalDuration := "datetime-value"
+approvalDuration , err := abstractions.ParseISODuration("datetime-value")
 requestBody.SetApprovalDuration(&approvalDuration) 
 
-result, err := graphClient.PrivilegedApproval().Post(requestBody)
+result, err := graphClient.PrivilegedApproval().Post(context.Background(), requestBody, nil)
 
 
 ```

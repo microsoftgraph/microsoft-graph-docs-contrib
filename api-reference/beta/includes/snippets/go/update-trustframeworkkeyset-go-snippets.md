@@ -14,7 +14,7 @@ additionalData := map[string]interface{}{
  := graphmodels.New()
 k := "k-value"
 .SetK(&k) 
-x5c := []String {
+x5c := []string {
 	"x5c-value",
 
 }
@@ -55,7 +55,7 @@ qi := "qi-value"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").Put(requestBody)
+graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").Put(context.Background(), requestBody, nil)
 
 
 ```

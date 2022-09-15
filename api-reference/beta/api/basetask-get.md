@@ -61,7 +61,8 @@ If successful, this method returns a `200 OK` response code and a [baseTask](../
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_basetask"
+  "name": "get_basetask",
+  "sampleKeys": ["AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA=", "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT--0qFRAqk3TNe0QAAAy35RwAA"]
 }
 -->
 ``` http

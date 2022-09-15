@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/roleManagement/cloudPC/roleAssignments/id')
+await client.api('/roleManagement/cloudPC/roleAssignments/{id}')
 	.version('beta')
 	.delete();
 

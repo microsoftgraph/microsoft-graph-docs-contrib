@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Domain.ReadWrite.All|
 
-The calling user or app must be assigned the Global Administrator [Azure AD role](/azure/active-directory/roles/permissions-reference).
+The calling user must be assigned the Global Administrator [Azure AD role](/azure/active-directory/roles/permissions-reference).
 
 ## HTTP request
 
@@ -87,7 +87,8 @@ If successful, this method returns a `200 OK` response code and an updated [inte
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_internaldomainfederation"
+  "name": "update_internaldomainfederation",
+  "sampleKeys": ["contoso.com", "6601d14b-d113-8f64-fda2-9b5ddda18ecc"]
 }
 -->
 ``` http

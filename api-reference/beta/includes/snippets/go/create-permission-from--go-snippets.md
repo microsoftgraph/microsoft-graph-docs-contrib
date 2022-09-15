@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewPermission()
-roles := []String {
+roles := []string {
 	"write",
 
 }
@@ -29,7 +29,7 @@ grantedToIdentities := []graphmodels.IdentitySetable {
 }
 requestBody.SetGrantedToIdentities(grantedToIdentities)
 
-result, err := graphClient.SitesById("site-id").Permissions().Post(requestBody)
+result, err := graphClient.SitesById("site-id").Permissions().Post(context.Background(), requestBody, nil)
 
 
 ```

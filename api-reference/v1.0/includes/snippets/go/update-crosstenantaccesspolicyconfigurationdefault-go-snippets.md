@@ -45,7 +45,7 @@ applications.SetTargets(targets)
 b2bCollaborationOutbound.SetApplications(applications)
 requestBody.SetB2bCollaborationOutbound(b2bCollaborationOutbound)
 
-graphClient.Policies().CrossTenantAccessPolicy().Default().Patch(requestBody)
+graphClient.Policies().CrossTenantAccessPolicy().Default().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -53,6 +53,7 @@ The following table shows the properties that are required when you create the [
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Data Sync Partner state for this account. Possible values are: `unavailable`, `available`, `enabled`, `unresponsive`.|
 |androidMobileApplicationManagementEnabled|Boolean|For Android, set whether data from the data sync partner should be used during Mobile Application Management (MAM) evaluations. Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.|
 |iosMobileApplicationManagementEnabled|Boolean|For IOS, get or set whether data from the data sync partner should be used during Mobile Application Management (MAM) evaluations. Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.|
+|windowsMobileApplicationManagementEnabled|Boolean|When TRUE, app protection policies using the Device Threat Level rule will evaluate devices including data from this connector for Windows. When FALSE, Intune will not use device risk details sent over this connector during app protection policies calculation for policies with a Device Threat Level configured. Existing devices that are not compliant due to risk levels obtained from this connector will also become compliant.|
 |androidEnabled|Boolean|For Android, set whether data from the data sync partner should be used during compliance evaluations|
 |iosEnabled|Boolean|For IOS, get or set whether data from the data sync partner should be used during compliance evaluations|
 |windowsEnabled|Boolean|For Windows, get or set whether data from the data sync partner should be used during compliance evaluations|
@@ -79,7 +80,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnectorId}
 Content-type: application/json
-Content-length: 844
+Content-length: 898
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -87,6 +88,7 @@ Content-length: 844
   "partnerState": "available",
   "androidMobileApplicationManagementEnabled": true,
   "iosMobileApplicationManagementEnabled": true,
+  "windowsMobileApplicationManagementEnabled": true,
   "androidEnabled": true,
   "iosEnabled": true,
   "windowsEnabled": true,
@@ -108,7 +110,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 893
+Content-Length: 947
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -117,6 +119,7 @@ Content-Length: 893
   "partnerState": "available",
   "androidMobileApplicationManagementEnabled": true,
   "iosMobileApplicationManagementEnabled": true,
+  "windowsMobileApplicationManagementEnabled": true,
   "androidEnabled": true,
   "iosEnabled": true,
   "windowsEnabled": true,
@@ -132,6 +135,8 @@ Content-Length: 893
   "microsoftDefenderForEndpointAttachEnabled": true
 }
 ```
+
+
 
 
 

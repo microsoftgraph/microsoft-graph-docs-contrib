@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Delegated (work or school account)|UserAuthenticationMethod.Read.All and AuditLog.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Application|UserAuthenticationMethod.Read.All and AuditLog.Read.All|
 
 ## HTTP request
 
@@ -109,6 +109,7 @@ Content-Type: application/json
             "id": "86462606-fde0-4fc4-9e0c-a20eb73e54c6",
             "userPrincipalName": "AlexW@Contoso.com",
             "userDisplayName": "Alex Wilber",
+            "isAdmin": false,
             "isSsprRegistered": false,
             "isSsprEnabled": false,
             "isSsprCapable": false,
@@ -119,12 +120,14 @@ Content-Type: application/json
                 "microsoftAuthenticatorPush",
                 "softwareOneTimePasscode"
             ],
-            "defaultMethod": "microsoftAuthenticatorPush"
+            "defaultMethod": "microsoftAuthenticatorPush",
+            "userType": "member"
         },
         {
             "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
             "userPrincipalName": "AllanD@Contoso.com",
             "userDisplayName": "Allan Deyoung",
+            "isAdmin": false,
             "isSsprRegistered": false,
             "isSsprEnabled": false,
             "isSsprCapable": false,
@@ -132,12 +135,14 @@ Content-Type: application/json
             "isMfaCapable": false,
             "isPasswordlessCapable": false,
             "methodsRegistered": [],
-            "defaultMethod": ""    
+            "defaultMethod": "", 
+            "userType": "guest"  
         },
         {
             "id": "c8096958-797c-44fa-8fde-a6fb62567cf0",
             "userPrincipalName": "BiancaP@Contoso.com",
             "userDisplayName": "Bianca Pisani",
+            "isAdmin": false,
             "isSsprRegistered": true,
             "isSsprEnabled": false,
             "isSsprCapable": false,
@@ -149,7 +154,8 @@ Content-Type: application/json
                 "microsoftAuthenticatorPush",
                 "softwareOneTimePasscode"
             ],
-            "defaultMethod": "mobilePhone"
+            "defaultMethod": "mobilePhone",
+            "userType": "member"
         }
     ]
 }

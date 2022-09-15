@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAuthenticationMethodConfiguration()
-"@odata.type" := "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration"
-requestBody.Set"@odata.type"(&"@odata.type") 
 id := "X509Certificate"
 requestBody.SetId(&id) 
 state := graphmodels.ENABLED_AUTHENTICATIONMETHODSTATE 
@@ -73,7 +71,7 @@ isRegistrationRequired := false
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(requestBody)
+graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

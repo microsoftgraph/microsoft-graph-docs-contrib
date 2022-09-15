@@ -32,7 +32,7 @@ $requestBody->setDeviceId('deviceId-value');
 
 $requestBody->setDeviceMetadata('deviceMetadata-value');
 
-$requestBody->setDeviceVersion(deviceVersion);
+$requestBody->setDeviceVersion(99);
 
 
 

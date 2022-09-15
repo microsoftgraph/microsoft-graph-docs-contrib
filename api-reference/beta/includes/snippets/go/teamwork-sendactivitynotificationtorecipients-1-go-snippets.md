@@ -23,22 +23,16 @@ requestBody.SetPreviewText(previewText)
 
 
 teamworkNotificationRecipient := graphmodels.NewTeamworkNotificationRecipient()
-"@odata.type" := "microsoft.graph.aadUserNotificationRecipient"
-teamworkNotificationRecipient.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"userId" : "569363e2-4e49-4661-87f2-16f245c5d66a", 
 }
 teamworkNotificationRecipient.SetAdditionalData(additionalData)
 teamworkNotificationRecipient1 := graphmodels.NewTeamworkNotificationRecipient()
-"@odata.type" := "microsoft.graph.aadUserNotificationRecipient"
-teamworkNotificationRecipient1.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"userId" : "ab88234e-0874-477c-9638-d144296ed04f", 
 }
 teamworkNotificationRecipient1.SetAdditionalData(additionalData)
 teamworkNotificationRecipient2 := graphmodels.NewTeamworkNotificationRecipient()
-"@odata.type" := "microsoft.graph.aadUserNotificationRecipient"
-teamworkNotificationRecipient2.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"userId" : "01c64f53-69aa-42c7-9b7f-9f75195d6bfc", 
 }
@@ -65,7 +59,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.Teamwork().SendActivityNotificationToRecipients().Post(requestBody)
+graphClient.Teamwork().SendActivityNotificationToRecipients().Post(context.Background(), requestBody, nil)
 
 
 ```

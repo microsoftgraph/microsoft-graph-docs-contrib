@@ -57,7 +57,8 @@ The following example deletes a **trustFrameworkPolicy**.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_trustFrameworkPolicy"
+  "name": "delete_trustFrameworkPolicy",
+  "sampleKeys": ["B2C_1A_SocialAndLocalAccounts_Base"]
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base

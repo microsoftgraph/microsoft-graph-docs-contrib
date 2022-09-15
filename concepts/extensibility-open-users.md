@@ -2,6 +2,7 @@
 title: "Add custom data to users using open extensions"
 description: "Follow the steps in this example to add an extension, query a user and return a roaming profile, change and then delete the user's roaming profile information."
 author: "dkershaw10"
+ms.prod: "extensions"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -86,7 +87,7 @@ Content-Type: application/json
 > If you have multiple extensions, you can filter on the **id** to get the extension that you're interested in.
 
 ## 3. Change roaming profile information
-The user can choose to change their roaming profile information.  This update can be done with a ```PATCH``` on the open extension value. 
+The user can choose to change their roaming profile information.  This update can be done with a ```PATCH``` on the open extension value.
 
 ### Request
 ```http
@@ -122,7 +123,3 @@ HTTP/1.1 204 No content
 - [Add custom data to resources using extensions](extensibility-overview.md)
 - [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
 - [openTypeExtension resource type](/graph/api/resources/opentypeextension)
-- [Create open extension](/graph/api/opentypeextension-post-opentypeextension)
-- [Get open extension](/graph/api/opentypeextension-get)
-- [Update open extension](/graph/api/opentypeextension-update)
-- [Delete open extension](/graph/api/opentypeextension-delete)

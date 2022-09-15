@@ -55,25 +55,23 @@ location.SetDisplayName(&displayName)
 requestBody.SetLocation(location)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-emailAddress := graphmodels.New()
+attendee := graphmodels.NewAttendee()
+emailAddress := graphmodels.NewEmailAddress()
 address := "AdeleV@contoso.onmicrosoft.com"
 emailAddress.SetAddress(&address) 
 name := "Adele Vance"
 emailAddress.SetName(&name) 
-	.SetEmailAddress(emailAddress)
-	"type" : "required", 
-}
-.SetAdditionalData(additionalData)
+attendee.SetEmailAddress(emailAddress)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendee.SetType(&type) 
 
 attendees := []graphmodels.Objectable {
-	,
+	attendee,
 
 }
 requestBody.SetAttendees(attendees)
 
-result, err := graphClient.Me().Events().Post(requestBody)
+result, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
 
 
 ```

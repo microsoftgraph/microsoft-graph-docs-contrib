@@ -2,7 +2,7 @@
 title: "Get accessReviewStage"
 description: "Read the properties and relationships of an accessReviewStage object."
 ms.localizationpriority: medium
-author: "zhusijia26"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

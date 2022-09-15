@@ -25,7 +25,7 @@ allowNewMessageFromConnectors := true
 moderationSettings.SetAllowNewMessageFromConnectors(&allowNewMessageFromConnectors) 
 requestBody.SetModerationSettings(moderationSettings)
 
-result, err := graphClient.TeamsById("team-id").Channels().Post(requestBody)
+result, err := graphClient.TeamsById("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```
