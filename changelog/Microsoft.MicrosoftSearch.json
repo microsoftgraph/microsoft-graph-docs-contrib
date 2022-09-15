@@ -605,7 +605,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-06-20T12:02:57.3248454Z",
-      "WorkloadArea": "Search"
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }
