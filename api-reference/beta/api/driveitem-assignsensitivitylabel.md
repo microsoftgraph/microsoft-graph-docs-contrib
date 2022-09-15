@@ -60,7 +60,7 @@ In the request body, provide the ID for the sensitivity label that is to be assi
 | Name                | Value        |Description          |
 |:--------------------|:-----------------------|:---------------------------------|
 | sensitivityLabelId  | String  | Required. ID of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
-| assignmentMethod    | [sensitivityLabelAssignmentMethod](/graph/api/resources/sensitivitylabelassignment?view=graph-rest-beta#sensitivitylabelassignmentmethod-values) | Optional. The assignment method of the label on the document. Indicates whether the assignment of the label was done automatically, standard, or as a privileged operation (the equivalent of an administrator operation).     |
+| assignmentMethod    | [sensitivityLabelAssignmentMethod](/graph/api/resources/sensitivitylabelassignment?view=graph-rest-beta&preserve-view=true#sensitivitylabelassignmentmethod-values) | Optional. The assignment method of the label on the document. Indicates whether the assignment of the label was done automatically, standard, or as a privileged operation (the equivalent of an administrator operation).     |
 | justificationText   | String | Optional. Justification text for audit purposes. Required when downgrading/removing a label.  |
 
 ## Response
