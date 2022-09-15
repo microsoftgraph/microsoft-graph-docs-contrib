@@ -4998,7 +4998,7 @@ items:
             - name: List
               href: api/conditionalaccessroot-list-policies.md
             - name: Create
-              href: api/conditionalaccessroot-post-policies.md
+              href: api/conditionalaccesspolicy-create.md
             - name: Get
               href: api/conditionalaccesspolicy-get.md
             - name: Update

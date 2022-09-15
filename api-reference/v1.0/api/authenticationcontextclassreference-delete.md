@@ -34,7 +34,7 @@ DELETE /identity/conditionalAccess/authenticationContextClassReferences/{id}
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
