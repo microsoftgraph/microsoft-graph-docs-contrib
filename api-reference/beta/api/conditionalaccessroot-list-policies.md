@@ -156,6 +156,7 @@ Content-type: application/json
                 ],
                 "customAuthenticationFactors": [],
                 "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/conditionalAccessPolicies('ad8d2b4a-8d30-413f-88b8-144c6c8d98d9')/grantControls/authenticationStrength/$entity",
                 "authenticationStrength": null
             }
         },
