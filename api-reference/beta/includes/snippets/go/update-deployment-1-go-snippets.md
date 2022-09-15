@@ -13,7 +13,7 @@ requestedValue := graphmodels.PAUSED_REQUESTEDDEPLOYMENTSTATEVALUE
 state.SetRequestedValue(&requestedValue) 
 requestBody.SetState(state)
 
-graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Patch(requestBody)
+graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

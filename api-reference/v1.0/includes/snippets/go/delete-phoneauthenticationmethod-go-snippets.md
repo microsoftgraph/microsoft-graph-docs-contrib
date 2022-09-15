@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().Authentication().PhoneMethodsById("phoneAuthenticationMethod-id").Delete()
+graphClient.Me().Authentication().PhoneMethodsById("phoneAuthenticationMethod-id").Delete(context.Background(), nil)
 
 
 ```

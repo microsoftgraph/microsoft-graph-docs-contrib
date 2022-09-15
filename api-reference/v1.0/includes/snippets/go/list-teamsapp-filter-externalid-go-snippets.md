@@ -17,7 +17,7 @@ configuration := &graphconfig.TeamsAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.AppCatalogs().TeamsApps().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.AppCatalogs().TeamsApps().Get(context.Background(), configuration)
 
 
 ```

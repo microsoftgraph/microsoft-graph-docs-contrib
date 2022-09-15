@@ -15,8 +15,15 @@ businessPhones := []string {
 requestBody.SetBusinessPhones(businessPhones)
 officeLocation := "18/2111"
 requestBody.SetOfficeLocation(&officeLocation) 
+authorizationInfo := graphmodels.NewAuthorizationInfo()
+certificateUserIds := []string {
+	"5432109876543210@mil",
 
-graphClient.UsersById("user-id").Patch(requestBody)
+}
+authorizationInfo.SetCertificateUserIds(certificateUserIds)
+requestBody.SetAuthorizationInfo(authorizationInfo)
+
+graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewOutlookCategory()
 color := graphmodels.PRESET15_CATEGORYCOLOR 
 requestBody.SetColor(&color) 
 
-graphClient.Me().Outlook().MasterCategoriesById("outlookCategory-id").Patch(requestBody)
+graphClient.Me().Outlook().MasterCategoriesById("outlookCategory-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

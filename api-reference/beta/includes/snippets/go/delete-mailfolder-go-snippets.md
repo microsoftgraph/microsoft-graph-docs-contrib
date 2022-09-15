@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().MailFoldersById("mailFolder-id").Delete()
+graphClient.Me().MailFoldersById("mailFolder-id").Delete(context.Background(), nil)
 
 
 ```

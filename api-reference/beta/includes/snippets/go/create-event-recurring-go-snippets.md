@@ -71,7 +71,7 @@ attendees := []graphmodels.Objectable {
 }
 requestBody.SetAttendees(attendees)
 
-result, err := graphClient.Me().Events().Post(requestBody)
+result, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
 
 
 ```

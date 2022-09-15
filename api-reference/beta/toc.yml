@@ -10973,6 +10973,8 @@ items:
           href: resources/educationoutcome.md
         - name: Feedback outcome type
           href: resources/educationfeedbackoutcome.md
+        - name: Feedback resource outcome type
+          href: resources/educationfeedbackresourceoutcome.md
         - name: Points outcome type
           href: resources/educationpointsoutcome.md
         - name: Rubric outcome type
@@ -12169,9 +12171,9 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
-          - name: Authentication context class references
+          - name: Authentication context
             items:
-            - name: Authentication context class references
+            - name: Authentication context class reference
               href: resources/authenticationcontextclassreference.md
             - name: List
               href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
@@ -12181,6 +12183,8 @@ items:
               href: api/authenticationcontextclassreference-get.md
             - name: Update
               href: api/authenticationcontextclassreference-update.md
+            - name: Delete
+              href: api/authenticationcontextclassreference-delete.md
         - name: Cross-tenant access
           items:
           - name: Overview

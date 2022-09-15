@@ -32,7 +32,7 @@ discoverySettings.SetShowInTeamsSearchAndSuggestions(&showInTeamsSearchAndSugges
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.GroupsById("group-id").Team().Put(requestBody)
+graphClient.GroupsById("group-id").Team().Put(context.Background(), requestBody, nil)
 
 
 ```

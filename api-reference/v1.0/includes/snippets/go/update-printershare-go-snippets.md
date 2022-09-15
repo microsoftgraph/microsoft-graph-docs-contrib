@@ -17,7 +17,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Print().SharesById("printerShare-id").Patch(requestBody)
+graphClient.Print().SharesById("printerShare-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -53,7 +53,7 @@ installedApps := []graphmodels.TeamsAppInstallationable {
 }
 requestBody.SetInstalledApps(installedApps)
 
-result, err := graphClient.Chats().Post(requestBody)
+result, err := graphClient.Chats().Post(context.Background(), requestBody, nil)
 
 
 ```

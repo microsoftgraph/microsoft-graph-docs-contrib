@@ -13,7 +13,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.IdentityProvidersById("identityProvider-id").Patch(requestBody)
+graphClient.IdentityProvidersById("identityProvider-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

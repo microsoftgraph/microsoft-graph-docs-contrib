@@ -30,7 +30,7 @@ value := "Are you sure that you want to cancel your selection?"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").LanguagesById("userFlowLanguageConfiguration-id").OverridesPagesById("userFlowLanguagePage-id").$value().Put(requestBody)
+graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").LanguagesById("userFlowLanguageConfiguration-id").OverridesPagesById("userFlowLanguagePage-id").$value().Put(context.Background(), requestBody, nil)
 
 
 ```

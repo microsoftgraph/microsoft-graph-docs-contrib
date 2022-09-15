@@ -15,7 +15,7 @@ requestBody.SetDescription(&description)
 state := graphmodels.CONFIGURED_CONNECTEDORGANIZATIONSTATE 
 requestBody.SetState(&state) 
 
-graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById("connectedOrganization-id").Patch(requestBody)
+graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById("connectedOrganization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

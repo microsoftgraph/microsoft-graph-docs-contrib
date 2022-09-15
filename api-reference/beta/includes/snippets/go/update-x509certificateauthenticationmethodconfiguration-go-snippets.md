@@ -71,7 +71,7 @@ isRegistrationRequired := false
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(requestBody)
+graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
