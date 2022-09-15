@@ -113,7 +113,7 @@ Content-Type: application/json
             "targetType": "group",
             "id": "all_users",
             "isRegistrationRequired": false,
-            "authenticationMode": "any",
+            "authenticationMode": "any"
         }
     ],
     "featureSettings": {
