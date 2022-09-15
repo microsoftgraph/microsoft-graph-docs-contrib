@@ -2,7 +2,7 @@
 title: "Delete authenticationContextClassReference"
 description: "Delete an authenticationContextClassReference object that's not published or used by a conditional access policy."
 ms.localizationpriority: medium
-author: "calebb"
+author: "bakerCaleb"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /identity/conditionalAccess/authenticationContextClassReferences/{id}
 ```
@@ -52,18 +51,19 @@ This method will return a `403 Forbidden` error code when deleting a published a
 
 The following is an example of the request.
 
-
-
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_authenticationcontextclassreference"
 }-->
 
+```http
+DELETE /identity/conditionalAccess/authenticationContextClassReferences/c1
+```
 
 ### Response
 
 The following is an example of the response.
-
 
 <!-- {
   "blockType": "response",
