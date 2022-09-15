@@ -1,6 +1,6 @@
 ---
 title: "alertImpact resource type"
-description: "Represents the impact of the alert event. Consists of a number value and the aggregation type."
+description: "Represents the impact of the alert event."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -19,7 +19,7 @@ Represents the impact of the alert event. Consists of a number value and the agg
 
 |Property|Type|Description|
 |:---|:---|:---|
-|aggregationType|microsoft.graph.deviceManagement.aggregationType|The aggregation type of the impact. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`.|
+|aggregationType|[microsoft.graph.deviceManagement.aggregationType](../resources/devicemanagement-ruleThreshold.md#aggregationtype-values)|The aggregation type of the impact. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`.|
 |value|Int32|The number value of the impact.|
 
 ## Relationships
@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagement.alertImpact",
-  "value": "Integer",
-  "aggregationType": "String"
+  "aggregationType": "String",
+  "value": "Int32"
 }
 ```

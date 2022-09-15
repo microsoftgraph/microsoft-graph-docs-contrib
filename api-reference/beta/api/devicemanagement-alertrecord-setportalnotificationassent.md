@@ -1,6 +1,6 @@
 ---
 title: "alertRecord: setPortalNotificationAsSent"
-description: "Set a single portal notification status to published. Will set isPortalNotificationSent property to true for current user."
+description: "Set a single portal notification status to published."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -52,6 +52,9 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "alertrecordthis.setportalnotificationassent"
@@ -62,6 +65,8 @@ POST https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/{
 ```
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

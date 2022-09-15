@@ -1,5 +1,5 @@
 ---
-title: "Create alert rule"
+title: "Create alertRule"
 description: "Create an alertRule object."
 author: "zhishending"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Post alertRules
+# Create alertRule
 
 Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an alertRule object.
+Create an [alertRule](../resources/devicemanagement-alertrule.md) object.
 
 ## Permissions
 
@@ -48,14 +48,15 @@ POST /deviceManagement/monitoring/alertRules
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the rule.|
-|description|String|The rule description.|
-|isSystemRule|Boolean|Indicates whether the rule is a system rule. System rules are built-in and only a few properties can be edited. When TRUE, the rule is a system rule. When FALSE, the rule is a custom defined rule and can be edited.|
 |alertRuleTemplate|alertRuleTemplate|The rule template of the rule. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
+|description|String|The rule description.|
+|displayName|String|The display name of the rule.|
+|enabled|Boolean|The status of the rule that indicates whether the rule is enabled or disabled. If `true`, the rule is enabled; otherwise, the rule is disabled.|
+|isSystemRule|Boolean|Indicates whether the rule is a system rule. If `true`, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited. System rules are built-in and only 
+a few properties can be edited. |
+|notificationChannels|[microsoft.graph.deviceManagement.notificationChannel](../resources/devicemanagement-notificationchannel.md) collection|The notification channels of the rule selected by the user.|
 |severity|ruleSeverityType|The severity of the rule. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
-|enabled|Boolean|The status of the rule indicating whether the rule is enabled or disabled. When TRUE, indicates the rule is enabled. When FALSE, indicates the rule is disabled.|
 |threshold|[microsoft.graph.deviceManagement.ruleThreshold](../resources/devicemanagement-rulethreshold.md)|The threshold of the rule.|
-|notificationChannels|[microsoft.graph.deviceManagement.notificationChannel](../resources/devicemanagement-notificationchannel.md) collection|he notification channels of the rule selected by user.|
 
 ## Response
 
@@ -64,6 +65,9 @@ If successful, this method returns a `201 Created` response code and an [alertRu
 ## Example
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "post_alertrule"
@@ -111,6 +115,8 @@ Content-Type: application/json
 ```
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

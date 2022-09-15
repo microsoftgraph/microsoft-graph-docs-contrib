@@ -1,6 +1,6 @@
 ---
 title: "alertRecord: getPortalNotifications"
-description: "View a list of all portal notifications that are ready to be consumed for current user. The portal notifications can be used to publish MEM portal notifications."
+description: "Get a list of all portal notifications that are ready to be consumed by the current user."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-View a list of all portal notifications that are ready to be consumed for current user. The portal notifications can be used to publish MEM portal notifications.
+Get a list of all portal notifications that are ready to be consumed for current user. You can use the portal notifications to publish Microsoft Endpoint Manager portal notifications.
 
 ## Permissions
 
@@ -47,11 +47,14 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [microsoft.graph.deviceManagement.portalNotification](../resources/devicemanagement-portalnotification.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a [portalNotification](../resources/devicemanagement-portalnotification.md) collection in the response body.
 
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "alertrecordthis.getportalnotifications"
@@ -63,10 +66,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/ge
 
 ### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.deviceManagement.portalNotification)"
+  "@odata.type": "microsoft.graph.deviceManagement.portalNotification",
+  "isCollection": true
 }
 -->
 ``` http
