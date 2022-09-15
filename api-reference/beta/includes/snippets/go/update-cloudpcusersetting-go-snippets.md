@@ -21,7 +21,7 @@ requestBody.SetRestorePointSetting(restorePointSetting)
 localAdminEnabled := false
 requestBody.SetLocalAdminEnabled(&localAdminEnabled) 
 
-graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").Patch(requestBody)
+graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

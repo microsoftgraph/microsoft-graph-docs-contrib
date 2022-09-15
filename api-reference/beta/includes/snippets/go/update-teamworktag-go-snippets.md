@@ -11,7 +11,7 @@ requestBody := graphmodels.NewTeamworkTag()
 displayName := "Finance"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.TeamsById("team-id").TagsById("teamworkTag-id").Patch(requestBody)
+graphClient.TeamsById("team-id").TagsById("teamworkTag-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

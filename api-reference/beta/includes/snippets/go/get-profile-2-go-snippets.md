@@ -14,7 +14,7 @@ configuration := &graphconfig.ProfileRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Profile().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().Profile().Get(context.Background(), configuration)
 
 
 ```

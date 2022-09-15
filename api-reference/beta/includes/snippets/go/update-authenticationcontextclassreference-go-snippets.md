@@ -26,7 +26,7 @@ isAvailable := true
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById("authenticationContextClassReference-id").Patch(requestBody)
+graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById("authenticationContextClassReference-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

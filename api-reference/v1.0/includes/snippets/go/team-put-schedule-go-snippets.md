@@ -15,7 +15,7 @@ requestBody.SetEnabled(&enabled)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TeamsById("team-id").Schedule().Put(requestBody)
+graphClient.TeamsById("team-id").Schedule().Put(context.Background(), requestBody, nil)
 
 
 ```

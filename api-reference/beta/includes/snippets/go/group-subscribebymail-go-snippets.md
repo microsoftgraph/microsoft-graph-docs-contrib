@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.GroupsById("group-id").SubscribeByMail().Post()
+graphClient.GroupsById("group-id").SubscribeByMail().Post(context.Background(), nil)
 
 
 ```

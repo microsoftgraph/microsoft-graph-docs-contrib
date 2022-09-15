@@ -16,7 +16,7 @@ feedbackResource.SetDisplayName(&displayName)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Outcomes().Post(requestBody)
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Outcomes().Post(context.Background(), requestBody, nil)
 
 
 ```

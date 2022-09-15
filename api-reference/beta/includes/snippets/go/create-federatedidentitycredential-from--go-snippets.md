@@ -20,7 +20,7 @@ audiences := []string {
 }
 requestBody.SetAudiences(audiences)
 
-result, err := graphClient.ApplicationsById("application-id").FederatedIdentityCredentials().Post(requestBody)
+result, err := graphClient.ApplicationsById("application-id").FederatedIdentityCredentials().Post(context.Background(), requestBody, nil)
 
 
 ```

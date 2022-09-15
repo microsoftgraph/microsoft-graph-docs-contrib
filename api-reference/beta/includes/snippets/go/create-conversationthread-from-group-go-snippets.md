@@ -44,7 +44,7 @@ posts := []graphmodels.Postable {
 }
 requestBody.SetPosts(posts)
 
-result, err := graphClient.GroupsById("group-id").Threads().Post(requestBody)
+result, err := graphClient.GroupsById("group-id").Threads().Post(context.Background(), requestBody, nil)
 
 
 ```

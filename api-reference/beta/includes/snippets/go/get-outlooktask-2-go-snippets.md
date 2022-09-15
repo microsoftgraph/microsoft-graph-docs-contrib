@@ -14,7 +14,7 @@ configuration := &graphconfig.OutlookTaskRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 
-result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").Get(context.Background(), configuration)
 
 
 ```

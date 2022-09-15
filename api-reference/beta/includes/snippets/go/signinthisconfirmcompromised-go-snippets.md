@@ -16,7 +16,7 @@ requestIds := []string {
 }
 requestBody.SetRequestIds(requestIds)
 
-graphClient.AuditLogs().SignIns().ConfirmCompromised().Post(requestBody)
+graphClient.AuditLogs().SignIns().ConfirmCompromised().Post(context.Background(), requestBody, nil)
 
 
 ```
