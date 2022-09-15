@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.TeamsById("team-id").Schedule().TimeCardsById("timeCard-id").Confirm().Post()
+result, err := graphClient.TeamsById("team-id").Schedule().TimeCardsById("timeCard-id").Confirm().Post(context.Background(), nil)
 
 
 ```

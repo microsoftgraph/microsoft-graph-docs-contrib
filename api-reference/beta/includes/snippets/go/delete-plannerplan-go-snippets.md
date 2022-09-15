@@ -14,7 +14,7 @@ configuration := &graphconfig.PlannerPlanRequestBuilderDeleteRequestConfiguratio
 	Headers: headers,
 }
 
-graphClient.Planner().PlansById("plannerPlan-id").DeleteWithRequestConfigurationAndResponseHandler(configuration, nil)
+graphClient.Planner().PlansById("plannerPlan-id").Delete(context.Background(), configuration)
 
 
 ```

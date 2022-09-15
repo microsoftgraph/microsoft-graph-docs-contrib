@@ -13,7 +13,7 @@ requestBody.SetType(&type)
 scope := "organization"
 requestBody.SetScope(&scope) 
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").CreateLink().Post(requestBody)
+result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").CreateLink().Post(context.Background(), requestBody, nil)
 
 
 ```

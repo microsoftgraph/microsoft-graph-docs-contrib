@@ -11,7 +11,7 @@ requestBody := graphmodels.NewAdminReportSettings()
 displayConcealedNames := true
 requestBody.SetDisplayConcealedNames(&displayConcealedNames) 
 
-graphClient.Admin().ReportSettings().Patch(requestBody)
+graphClient.Admin().ReportSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

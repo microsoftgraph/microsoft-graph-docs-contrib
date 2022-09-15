@@ -17,7 +17,7 @@ requestBody.SetState(&state)
 isExternallyVisible := true
 requestBody.SetIsExternallyVisible(&isExternallyVisible) 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().Catalogs().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().Catalogs().Post(context.Background(), requestBody, nil)
 
 
 ```

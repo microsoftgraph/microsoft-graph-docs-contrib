@@ -22,7 +22,7 @@ additionalData := map[string]interface{}{
 mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
 
-graphClient.Communications().CallsById("call-id").Answer().Post(requestBody)
+graphClient.Communications().CallsById("call-id").Answer().Post(context.Background(), requestBody, nil)
 
 
 ```
