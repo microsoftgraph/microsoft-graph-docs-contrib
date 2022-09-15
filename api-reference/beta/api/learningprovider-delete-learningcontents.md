@@ -64,7 +64,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_learningcontent_id"
+  "name": "delete_learningcontent_id",
+  "sampleKeys": ["13727311-e7bb-470d-8b20-6a23d9030d70", "77029588-a660-46b6-ba58-3ce4d21d5678"]
 }
 -->
 ``` http
