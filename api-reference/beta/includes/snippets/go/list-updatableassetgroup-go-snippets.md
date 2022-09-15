@@ -17,7 +17,7 @@ configuration := &graphconfig.UpdatableAssetsRequestBuilderGetRequestConfigurati
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Get(context.Background(), configuration)
 
 
 ```

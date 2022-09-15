@@ -14,7 +14,7 @@ configuration := &graphconfig.UnifiedRoleManagementPolicyAssignmentRequestBuilde
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().RoleManagementPolicyAssignmentsById("unifiedRoleManagementPolicyAssignment-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Policies().RoleManagementPolicyAssignmentsById("unifiedRoleManagementPolicyAssignment-id").Get(context.Background(), configuration)
 
 
 ```

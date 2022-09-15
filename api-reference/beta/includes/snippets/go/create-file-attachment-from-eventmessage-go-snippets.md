@@ -20,7 +20,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().MessagesById("message-id").Attachments().Post(requestBody)
+result, err := graphClient.Me().MessagesById("message-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -2,7 +2,7 @@
 title: "authenticationContextClassReference resource type"
 description: "Represents an Azure Active Directory authentication context class reference."
 ms.localizationpriority: medium
-author: "calebb"
+author: "bakerCaleb"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -22,7 +22,8 @@ Represents an Azure Active Directory authentication context class reference. Aut
 | [List authenticationContextClassReference](../api/conditionalaccessroot-list-authenticationcontextclassreferences.md) | [authenticationContextClassReference](authenticationContextClassReference.md) collection | Get all of the authenticationContextClassReference objects in the organization. |
 | [Create authenticationContextClassReference](../api/conditionalaccessroot-patch-authenticationcontextclassreferences.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Create a new authenticationContextClassReference object. |
 | [Get authenticationContextClassReference](../api/authenticationcontextclassreference-get.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Read properties and relationships of a authenticationContextClassReference object. |
-| [Update authenticationContextClassReference](../api/authenticationcontextclassreference-update.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Update a authenticationContextClassReference object. |
+| [Update authenticationContextClassReference](../api/authenticationcontextclassreference-update.md) | None | Update a authenticationContextClassReference object. |
+| [Delete authenticationContextClassReference](../api/authenticationcontextclassreference-delete.md) | None | Delete an authenticationContextClassReference object. |
 
 
 ## Properties
@@ -33,6 +34,7 @@ Represents an Azure Active Directory authentication context class reference. Aut
 |displayName|String| A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences. For example, a selection UX. |
 |description|String| A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences. For example, selection UX. |
 |isAvailable|boolean| Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to `false`, it should not be shown in selection UX used to tag resources with authentication context class values. It will still be shown in the Conditionall Access policy authoring experience. <br/> Supports `$filter` (`eq`). |
+
 
 ## Relationships
 

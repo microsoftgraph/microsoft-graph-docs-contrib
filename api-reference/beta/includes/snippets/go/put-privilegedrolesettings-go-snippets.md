@@ -33,7 +33,7 @@ requestBody.SetApprovalOnElevation(&approvalOnElevation)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.PrivilegedRolesById("privilegedRole-id").Settings().Put(requestBody)
+graphClient.PrivilegedRolesById("privilegedRole-id").Settings().Put(context.Background(), requestBody, nil)
 
 
 ```

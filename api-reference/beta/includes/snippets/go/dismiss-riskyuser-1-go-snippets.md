@@ -15,7 +15,7 @@ userIds := []string {
 }
 requestBody.SetUserIds(userIds)
 
-graphClient.RiskyUsers().Dismiss().Post(requestBody)
+graphClient.RiskyUsers().Dismiss().Post(context.Background(), requestBody, nil)
 
 
 ```

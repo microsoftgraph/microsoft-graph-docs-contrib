@@ -17,7 +17,7 @@ configuration := &graphconfig.ShiftsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Schedule().Shifts().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.TeamsById("team-id").Schedule().Shifts().Get(context.Background(), configuration)
 
 
 ```

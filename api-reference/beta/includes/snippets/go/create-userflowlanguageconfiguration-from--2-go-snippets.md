@@ -14,7 +14,7 @@ requestBody.SetIsEnabled(&isEnabled)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").LanguagesById("userFlowLanguageConfiguration-id").Put(requestBody)
+graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").LanguagesById("userFlowLanguageConfiguration-id").Put(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,16 +1,16 @@
 ---
-title: "Enable an event as an online meeting in an Outlook calendar"
+title: "Create or set an event as an online meeting in an Outlook calendar"
 description: "Use the Outlook calendar API to organize an event where meeting invitees can select a join URL and attend the meeting online in Microsoft Teams or Skype."
 author: "juforan"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
-# Enable an event as an online meeting in an Outlook calendar
+# Create or set an event as an online meeting in an Outlook calendar
 
 Use the Outlook calendar API to organize an event where meeting invitees can select a join URL and attend the meeting online in Microsoft Teams or Skype.
 
-In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers, with one of these providers being the default provider. You can [create](#create-and-enable-a-meeting-online) or [update](#update-a-meeting-to-enable-it-online) an [event](/graph/api/resources/event) in Outlook and allow attendees to join the meeting online using a supported provider. You can conveniently [get the online meeting information](#get-information-to-join-meeting-online) of the **event**, including the URL to join the meeting. 
+In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers, with one of these providers being the default provider. You can [create](#create-an-event-and-enable-attendees-to-meet-online) or [update](#update-a-meeting-to-enable-attendees-to-meet-online) an [event](/graph/api/resources/event) in Outlook and allow attendees to join the meeting online using a supported provider. You can conveniently [get the online meeting information](#get-information-to-join-meeting-online) of the **event**, including the URL to join the meeting. 
 
 > [!NOTE]
 > The calendar API lets you conveniently set up an online meeting in an Outlook calendar where attendees can click to join the meeting and continue their experience in Teams or Skype. For a more customized, richer integration with Teams or Skype, use the cloud communications API. See [Choose an API in Microsoft Graph to create and join online meetings](choose-online-meeting-api.md) for more information.
@@ -91,7 +91,7 @@ Content-type: application/json
 }
 ```
 
-## Create and enable a meeting online
+## Create an event and enable attendees to meet online
 
 You can create a meeting and allow attendees to join the meeting online, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the providers supported by the parent calendar. The following example creates a meeting in the signed-in user's default calendar, and enables attendees to join the meeting via Microsoft Teams. The response includes an **event** with online meeting information specified in the **onlineMeeting** property.
 
@@ -327,7 +327,7 @@ Content-type: application/json
 ```
 
 
-## Update a meeting to enable it online
+## Update a meeting to enable attendees to meet online
 You can change an existing **event** to make it available as an online meeting, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the online meeting providers supported by the parent calendar. The response includes the updated **event** with the corresponding online meeting information specified in the **onlineMeeting** property.
 
 > [!NOTE]

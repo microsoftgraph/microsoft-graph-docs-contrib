@@ -14,7 +14,7 @@ configuration := &graphconfig.DeviceRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DevicesById("device-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.DevicesById("device-id").Get(context.Background(), configuration)
 
 
 ```
