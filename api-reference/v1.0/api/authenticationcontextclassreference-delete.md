@@ -51,7 +51,6 @@ This method will return a `403 Forbidden` error code when deleting a published a
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_authenticationcontextclassreference"
