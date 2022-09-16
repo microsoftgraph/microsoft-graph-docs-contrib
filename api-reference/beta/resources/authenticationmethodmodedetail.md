@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodModeDetail resource type"
-description: "A specific mode of af an authentication method that operates in more than one way"
+description: "A representation of a specific mode of an authentication method that can be used as part of an authentication method combination in an authentication strength."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A detail view of an authentication method mode, which is a specific mode of operation for an authentication method that operates in more than one way such as Microsoft Authenticator, which may be used for simple push approval or as a strong Passwordless authenticator.
+The details of the **authenticationMethodModes** objects that can be defined for the **allowedCombinations** property of the [authenticationstrengthpolicy](../resources/authenticationStrengthPolicy.md).
+
+For more information on authentication methods, see the [authentication methods overview](../resources/authenticationmethods-overview.md)
 
 Inherits from [entity](../resources/entity.md).
 
@@ -26,9 +28,9 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationMethod|baseAuthenticationMethod|Which authentication method this mode modifies. The possible values are: `password`, `voice`, `hardwareOath`, `softwareOath`, `sms`, `fido2`, `windowsHelloForBusiness`, `microsoftAuthenticator`, `temporaryAccessPass`, `email`, `x509Certificate`, `federation`, `unknownFutureValue`.|
+|authenticationMethod|baseAuthenticationMethod|The authentication method that this mode modifies. The possible values are: `password`, `voice`, `hardwareOath`, `softwareOath`, `sms`, `fido2`, `windowsHelloForBusiness`, `microsoftAuthenticator`, `temporaryAccessPass`, `email`, `x509Certificate`, `federation`, `unknownFutureValue`.|
 |displayName|String|The display name of this mode|
-|id|String|The system-generated GUID for this mode. Inherited from [entity](../resources/entity.md).|
+|id|String|The system-generated identifier for this mode. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

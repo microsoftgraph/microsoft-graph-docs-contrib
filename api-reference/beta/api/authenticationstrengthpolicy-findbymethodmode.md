@@ -1,6 +1,6 @@
 ---
 title: "authenticationStrengthPolicy: findByMethodMode"
-description: "Get authentication strength policies that include specified authentication method modes"
+description: "Get authentication strength policies that include the specified authentication method modes."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Get a list of the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) objects and their properties filtered to only include policies that include the authentication method mode specified in the request.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,12 +30,12 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /policies/authenticationStrengthPolicies/findByMethodMode
+GET /policies/authenticationStrengthPolicies/findByMethodMode(authenticationMethodModes=["authenticationMethodMode"])
 ```
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+The following table shows the parameters that must be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

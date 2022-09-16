@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Authentication strengths allow administrators to require specific combinations of Azure AD [authentication methods](authenticationmethods-overview.md) to access a resource. Each authentication strength comprises one or more combinations of authentication methods, where each combination is one or two authentication methods. When the strength is applied to a scenario as a [grant control](conditionalaccessgrantcontrols.md) in [Conditional Access](conditionalaccesspolicy.md), a user in scope of the policy is required to satisfy one of those allowed combinations at sign in before they can access the resource. As part of Conditional Access, authentication strengths can also be paired with other Conditional Access controls such as user risk and location.
+Authentication strengths allow administrators to require specific combinations of Azure AD [authentication methods](authenticationmethods-overview.md) to access a resource. Each authentication strength comprises one or more combinations of authentication methods, where each combination is one or more authentication methods. When the strength is applied to a scenario as a [grant control](conditionalaccessgrantcontrols.md) in [Conditional Access](conditionalaccesspolicy.md), a user in scope of the policy is required to satisfy one of those allowed combinations at sign-in before they can access the resource. As part of Conditional Access, authentication strengths can also be paired with other Conditional Access controls such as user risk and location.
 
 For example, an administrator can require users to authenticate using phishing-resistant authentication methods before they can access a sensitive resource. The administrator can also allow users to authenticate using less-secure multifactor authentication (MFA) combinations, such as password and SMS, for them to access non-sensitive applications.
 
@@ -37,7 +37,7 @@ You can only read built-in policies, but you can create custom policies to suit 
 
 ### Authentication method combinations
 
-Core to a policy is the authentication method combinations. Combinations are predefined and supported [authentication methods](authenticationmethods-overview.md) that can be used to define an authentication strength. A combination may be one or two authentication methods. These combinations are based the **authenticationMethodModes** flagged enumeration. Some example combinations include:
+Core to a policy is the authentication method combinations. Combinations are predefined and supported authentication methods that can be used to define an authentication strength. A combination may be one or more comma-separated authentication methods. These authentication methods are based the **authenticationMethodModes** flagged enumeration. Some example combinations include:
 
 | Example allowed combination | Description |
 |--|--|
@@ -45,17 +45,19 @@ Core to a policy is the authentication method combinations. Combinations are pre
 | `password,microsoftAuthenticatorPush` | The user must sign in using *both* password and Microsoft Authenticator push approval to satisfy the authentication strength requirement. |
 | `password,softwareOath` | The user must sign in using *both* password and software OATH token to satisfy the authentication strength requirement. |
 
-Azure AD provides the predefined combinations using the following principles:
+Azure AD provides the predefined, read-only combinations using the following principles:
 
 * Single factor authentication methods that can be used as first factors such as password and SMS.
 * Combinations of password and a second factor that make a valid multifactor authentication combination ("something you have" and "something you know").
 * Passwordless multifactor authenticators such as FIDO2 and x509 certificate authentication.
 
+Each combination is a part of a built-in authentication strength and may be used in custom authentication strengths.
+
 To view the details of the supported authentication methods and the allowed combinations, call the [List authenticationMethodModes](../api/authenticationstrengthroot-list-authenticationmethodmodes.md) API.
 
-The authentication combinations of built-in policies can't be updated. To see all built-in policies and their configurations, call the [List authenticationStrengthPolicies](../api/authenticationstrengthroot-list-policies.md) API.
+The authentication combinations of built-in policies are read-only. To see all built-in policies and their configurations, call the [List authenticationStrengthPolicies](../api/authenticationstrengthroot-list-policies.md) API.
 
-To create a custom policy, you must configure the authentication method combinations using the allowed combinations.
+To create a custom authentication strength policy, you must configure the authentication method combinations using the allowed combinations.
 
 ## Combination configurations
 
@@ -69,9 +71,11 @@ An authentication strength policy has zero or more combination configurations.
 
 ## Apply authentication strength policies in Conditional Access
 
-After defining the authentication strength policy, you apply and enforce it for the protected resource using Azure AD [conditional access policies](../resources/conditionalaccesspolicy.md).
+After defining the authentication strength policy, you apply and enforce it for the protected resource using Azure AD [conditional access policies](../resources/conditionalaccesspolicy.md). 
 
 In the Conditional Access [grant controls](conditionalaccessgrantcontrols.md), configure the **authenticationStrength** relationship by assigning the [authenticationStrengthPolicy](authenticationstrengthpolicy.md) object that should be associated with the conditional access policy. When a conditional access policy applies to a sign-in and that policy has an authentication strength grant control, the user will be required to use one of the allowed authentication method combinations to sign in.
+
+The **authenticationStrength** object corresponds to the 'Require authentication strength' control of the Conditional Access policy's UX on the Azure portal.
 
 You can't configure authentication strengths and multifactor authentication grant control on the same conditional access policy.
 

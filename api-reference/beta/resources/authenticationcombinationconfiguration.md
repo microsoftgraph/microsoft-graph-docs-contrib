@@ -13,24 +13,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-When extended, sets restrictions on specific types, modes, versions, etc. of an authentication method that is tied to specific auth method combinations. This is an abstract type.
+An authentication combination configuration sets restrictions on specific types, modes, versions, etc. of an authentication method that is tied to specific auth method combinations used in an [authentication strength](authenticationstrengths-overview.md).
+
+This is an abstract type. In use, [fido2combinationConfigurations](fido2combinationconfiguration.md) may be created and managed as described below. 
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List authenticationCombinationConfigurations](../api/authenticationstrengthpolicy-list-combinationconfigurations.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) collection|Get a list of the [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) objects and their properties.|
-|[Create authenticationCombinationConfiguration](../api/authenticationstrengthpolicy-post-combinationconfigurations.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)|Create a new [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.|
-|[Get authenticationCombinationConfiguration](../api/authenticationcombinationconfiguration-get.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)|Read the properties and relationships of an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.|
-|[Update authenticationCombinationConfiguration](../api/authenticationcombinationconfiguration-update.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)|Update the properties of an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.|
-|[Delete authenticationCombinationConfiguration](../api/authenticationstrengthpolicy-delete-combinationconfigurations.md)|None|Deletes an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.|
+|[List](../api/authenticationstrengthpolicy-list-combinationconfigurations.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) collection|Get a list of the [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) objects and their properties.|
+|[Create](../api/authenticationstrengthpolicy-post-combinationconfigurations.md)|[fido2combinationconfiguration](../resources/fido2combinationconfiguration.md)|Create a new [fido2combinationconfiguration](../resources/fido2combinationconfiguration.md) object.|
+|[Get](../api/authenticationcombinationconfiguration-get.md)|[fido2combinationconfiguration](../resources/fido2combinationconfiguration.md)|Read the properties and relationships of a [fido2combinationconfiguration](../resources/fido2combinationconfiguration.md) object.|
+|[Update](../api/authenticationcombinationconfiguration-update.md)|[fido2combinationconfiguration](../resources/fido2combinationconfiguration.md)|Update the properties of a [fido2combinationconfiguration](../resources/fido2combinationconfiguration.md) object.|
+|[Delete](../api/authenticationstrengthpolicy-delete-combinationconfigurations.md)|None|Deletes an [fido2combinationconfiguration](../resources/fido2combinationconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to.|
-|id|String|A unique system-generated GUID. Inherited from [entity](../resources/entity.md).|
+|appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. Must be an **allowedCombinations** object that's defined for the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md). The only possible value for fido2combinationConfigurations is `"fido2"`.|
+|id|String|A unique system-generated identifier. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

@@ -1,19 +1,19 @@
 ---
-title: "List authenticationMethodModeDetails"
-description: "Get a list of the authenticationMethodModeDetail objects and their properties."
+title: "List authenticationMethodModes"
+description: "Get a list of all supported authentication methods, or all supported authentication method combinations."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List authenticationMethodModeDetails
+# List authenticationMethodModes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [authenticationMethodModeDetail](../resources/authenticationmethodmodedetail.md) objects and their properties.
+Get a list of all supported authentication methods, or all supported authentication method combinations as a list of **authenticationMethodModes** objects and their properties.
 
 ## Permissions
 
@@ -27,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Retrieve the collection of **authenticationMethodModes** objects and their descriptions.
+
 <!-- {
   "blockType": "ignored"
 }
@@ -35,8 +37,17 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identity/conditionalAccess/authenticationStrengths/authenticationMethodModes
 ```
 
+Retrieve the flat collection of authenticationCombinations objects, representing all the allowed combinations (allowedCombinations) in an authenticationStrengthPolicy object.
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identity/conditionalAccess/authenticationStrengths/authenticationCombinations
+```
+
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters.
 
 ## Request headers
 |Name|Description|
@@ -53,7 +64,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following is an example of a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
+.
 <!-- {
   "blockType": "request",
   "name": "list_authenticationmethodmodedetail"
@@ -151,7 +163,7 @@ Content-Type: application/json
         "authenticationMethod" : "federation"
     },
     {
-        "id" : "x509CertificateMultiFactor",
+        "id": "x509CertificateMultiFactor",
         "displayName" : "Certificate-based authentication (multi-factor)",
         "authenticationMethod" : "x509Certificate"
     }
@@ -159,3 +171,67 @@ Content-Type: application/json
 }
 ```
 
+### Request
+The following is an example of a request to retrieve the flat collection of authenticationCombinations objects, representing all the possible allowed combinations (allowedCombinations) that may be used in an authenticationStrengthPolicy object.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_authenticationcombinations"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrengths/authenticationCombinations
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "isCollection": true,
+  "@odata.type": "Collection(microsoft.graph.authenticationMethodModes)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/authenticationStrengths/authenticationCombinations",
+    "value": [
+        "windowsHelloForBusiness",
+        "fido2",
+        "x509CertificateMultiFactor",
+        "deviceBasedPush",
+        "temporaryAccessPassOneTime",
+        "temporaryAccessPassMultiUse",
+        "password,microsoftAuthenticatorPush",
+        "password,softwareOath",
+        "password,hardwareOath",
+        "password,sms",
+        "password,voice",
+        "federatedMultiFactor",
+        "microsoftAuthenticatorPush,federatedSingleFactor",
+        "softwareOath,federatedSingleFactor",
+        "hardwareOath,federatedSingleFactor",
+        "sms,federatedSingleFactor",
+        "voice,federatedSingleFactor",
+        "x509CertificateSingleFactor",
+        "sms",
+        "password",
+        "federatedSingleFactor",
+        "email"
+    ]
+}
+```
+
+<!-- {
+  "type": "#page.annotation",
+  "section": "documentation",
+  "suppressions": [
+    "Error: list_authenticationcombinations:
+      Unable to locate a definition for resource type: microsoft.graph.authenticationMethodModes"
+  ]
+} -->
