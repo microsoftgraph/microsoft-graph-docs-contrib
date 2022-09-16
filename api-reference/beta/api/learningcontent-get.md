@@ -56,10 +56,11 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_learningcontent"
+  "name": "get_learningcontent",
+  "sampleKeys": ["13727311-e7bb-470d-8b20-6a23d9030d70", "LP4471"]
 }
 -->
-``` http 
+``` http
 GET /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='LP4471') 
 ```
 
@@ -106,8 +107,8 @@ Content-type: application/json
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [
-        "Scott Simpson",
-        "Hector Minto"
+        "Lina Wagner",
+        "Lisa Richter"
     ],
     "additionalTags": [
         "Create private or public teams",

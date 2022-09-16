@@ -1,6 +1,6 @@
 ---
 title: "List learningContents"
-description: "Get a list of the learningContent objects and their properties."
+description: "Get a list of the learningContent resources and their properties."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
@@ -58,7 +58,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_learningcontent"
+  "name": "list_learningcontent",
+  "sampleKeys": ["13727311-e7bb-470d-8b20-6a23d9030d70"]
 }
 -->
 ``` http
@@ -86,8 +87,6 @@ GET /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/l
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 The following is an example of the response.
@@ -120,8 +119,8 @@ Content-type: application/json
             "createdDateTime": "2018-01-01T00:00:00",
             "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
             "contributors": [
-                "Scott Simpson",
-                "Hector Minto"
+                "Lina Wagner",
+                "Lisa Richter"
             ], 
             "additionalTags": [
                 "Create private or public teams",
@@ -150,8 +149,8 @@ Content-type: application/json
             "createdDateTime": "2018-01-01T00:00:00",
             "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
             "contributors": [
-                "Scott Simpson",
-                "Hector Minto"
+                "Lina Wagner",
+                "Lisa Richter"
             ], 
             "additionalTags": [
                 "Create private or public teams",
