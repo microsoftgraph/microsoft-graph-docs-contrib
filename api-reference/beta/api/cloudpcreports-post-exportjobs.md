@@ -46,7 +46,7 @@ You can specify the following properties when creating a **cloudPcExportJob**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|reportName|[cloudPcReportName](../resources/cloudpcexportjob.md/#cloudpcreportname-values)|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `unknownFutureValue`. Optional.|
+|reportName|cloudPcReportName|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `unknownFutureValue`. Optional.|
 |filter|String|The filter applied on the report. Optional.|
 |select|String collection|The selected columns of the report. Optional.|
 |format|String|The format of the exported report. Optional.|
