@@ -23,7 +23,7 @@ Subtypes include [accessPackageTextInputQuestion](../resources/accesspackagetext
 |isRequired|Boolean| Whether the requestor is required to supply an answer or not.|
 |isAnswerEditable|Boolean| Specifies whether the requestor is allowed to edit answers to questions.|
 |text|String|The text of the question to show to the requestor.|
-|localizations|Collection([accessPackageLocalizedText](../resources/accesspackagelocalizedtext.md))|The text of the question represented in a format for a specific locale.|
+|localizations|[accessPackageLocalizedText](../resources/accesspackagelocalizedtext.md) collection|The text of the question represented in a format for a specific locale.|
 
 ## Relationships
 None.

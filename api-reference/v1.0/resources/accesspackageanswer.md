@@ -16,8 +16,8 @@ The complex type of a requestor's provided answer to an [accessPackageQuestion](
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|The question the answer is for. Required and Read-only.|
-|displayValue|String|The localized display values shown to the requestor and approvers. |
+|answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|The question the answer is for.|
+|displayValue|String|The localized display value shown to the requestor and approvers. |
 
 ## Relationships
 None.
