@@ -14,7 +14,7 @@ configuration := &graphconfig.CloudPcUserSettingRequestBuilderGetRequestConfigur
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").Get(context.Background(), configuration)
 
 
 ```

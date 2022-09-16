@@ -17,7 +17,7 @@ additionalData := map[string]interface{}{
 dataSource.SetAdditionalData(additionalData)
 requestBody.SetDataSource(dataSource)
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").NoncustodialDataSources().Post(requestBody)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").NoncustodialDataSources().Post(context.Background(), requestBody, nil)
 
 
 ```

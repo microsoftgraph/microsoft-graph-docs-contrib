@@ -44,7 +44,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Communications().CallsById("call-id").Transfer().Post(requestBody)
+graphClient.Communications().CallsById("call-id").Transfer().Post(context.Background(), requestBody, nil)
 
 
 ```

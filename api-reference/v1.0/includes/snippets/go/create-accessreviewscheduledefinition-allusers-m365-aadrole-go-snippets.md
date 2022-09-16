@@ -121,7 +121,7 @@ queryType := "MicrosoftGraph"
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

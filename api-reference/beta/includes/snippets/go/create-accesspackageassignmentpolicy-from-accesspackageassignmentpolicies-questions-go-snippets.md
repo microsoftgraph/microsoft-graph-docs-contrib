@@ -196,7 +196,7 @@ questions := []graphmodels.AccessPackageQuestionable {
 }
 requestBody.SetQuestions(questions)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

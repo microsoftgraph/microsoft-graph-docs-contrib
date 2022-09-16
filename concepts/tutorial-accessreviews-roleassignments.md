@@ -784,4 +784,4 @@ You've learned how to review access to privileged roles in Azure AD. Your organi
 
 + [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root)
 + [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)
-+ [Learn about privileged access management](/microsoft-365/compliance/privileged-access-management-overviewe)
++ [Learn about privileged access management](/microsoft-365/compliance/privileged-access-management)

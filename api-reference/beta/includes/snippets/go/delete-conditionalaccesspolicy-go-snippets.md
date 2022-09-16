@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Identity().ConditionalAccess().PoliciesById("conditionalAccessPolicy-id").Delete()
+graphClient.Identity().ConditionalAccess().PoliciesById("conditionalAccessPolicy-id").Delete(context.Background(), nil)
 
 
 ```

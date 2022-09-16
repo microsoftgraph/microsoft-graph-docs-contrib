@@ -31,7 +31,7 @@ requestBody.SetLabelToBeApplied(&labelToBeApplied)
 defaultRecordBehavior := graphmodels.STRING_DEFAULTRECORDBEHAVIOR 
 requestBody.SetDefaultRecordBehavior(&defaultRecordBehavior) 
 
-result, err := graphClient.Security().Labels().RetentionLabels().Post(requestBody)
+result, err := graphClient.Security().Labels().RetentionLabels().Post(context.Background(), requestBody, nil)
 
 
 ```

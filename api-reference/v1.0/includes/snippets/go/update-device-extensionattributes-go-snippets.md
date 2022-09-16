@@ -16,7 +16,7 @@ extensionAttributes.SetExtensionAttribute1(&extensionAttribute1)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.DevicesById("device-id").Patch(requestBody)
+graphClient.DevicesById("device-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

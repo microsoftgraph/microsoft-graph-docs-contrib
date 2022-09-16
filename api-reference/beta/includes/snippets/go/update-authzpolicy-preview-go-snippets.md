@@ -14,7 +14,7 @@ enabledPreviewFeatures := []string {
 }
 requestBody.SetEnabledPreviewFeatures(enabledPreviewFeatures)
 
-graphClient.Policies().AuthorizationPolicyById("authorizationPolicy-id").Patch(requestBody)
+graphClient.Policies().AuthorizationPolicyById("authorizationPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
