@@ -18,13 +18,11 @@ Represents the Windows 365 Cloud PC related reports, includes Windows 365 Cloud 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create cloudPcExportJob](../api/cloudpcreports-post-exportjobs.md)|[cloudPcExportJob](../resources/cloudpcexportjob.md)|Create a new cloudPcExportJob object.|
 |[getDailyAggregatedRemoteConnectionReports](../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md)|Stream|Get the daily aggregated remote connection reports like round trip time, available bandwidth and so on in a given period.|
 |[getRealTimeRemoteConnectionLatency](../api/cloudpcreports-getrealtimeremoteconnectionlatency.md)|Stream|Get the real time remote connection latency reports like current round trip time, available bandwidth and so on of a Cloud PC.|
 |[getRealTimeRemoteConnectionStatus](../api/cloudpcreports-getrealtimeremoteconnectionstatus.md)|Stream|Get the real time remote connection status reports like sign in status, days since last use of a Cloud PC.|
 |[getRemoteConnectionHistoricalReports](../api/cloudpcreports-getremoteconnectionhistoricalreports.md)|Stream|Get a Cloud PC's the remote connection historical reports like signInDateTime, signOutDateTime and usageInHour in a given period.|
 |[getTotalAggregatedRemoteConnectionReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports like usage, daysSinceLastUse and so on in a given period.|
-|[List exportJobs](../api/cloudpcreports-list-exportjobs.md)|[cloudPcExportJob](../resources/cloudpcexportjob.md) collection|Get the cloudPcExportJob resources from the exportJobs navigation property.|
 
 
 ## Properties
