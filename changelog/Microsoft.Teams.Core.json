@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "04f199ca-74fe-4c67-b39f-2feacad3f304",
+          "ApiChange": "Authentication",
+          "ChangedApiName": "Messaging",
+          "ChangeType": "Change",
+          "Description": "Enabled validation on chat message sender tenant id, when performing PATCH operation on chat message.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "04f199ca-74fe-4c67-b39f-2feacad3f304",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-15T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e9194248-72ef-4678-872f-99b59117edb5",
           "ApiChange": "Relationship",
           "ChangedApiName": "chat",
@@ -5109,20 +5127,20 @@
     {
       "ChangeList": [
         {
-        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
-        "ApiChange": "Member",
-        "ChangedApiName": "emailUser",
-        "ChangeType": "Addition",
-        "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration.",
-        "Target": "teamworkUserIdentityType"
-      }
-        ],
-        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
-          "Cloud": "prd",
-          "Version": "beta",
-          "CreatedDateTime": "2022-04-18T20:34:40.595Z",
-          "WorkloadArea": "Teamwork and communications",
-          "SubArea": ""
+          "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+          "ApiChange": "Member",
+          "ChangedApiName": "emailUser",
+          "ChangeType": "Addition",
+          "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration.",
+          "Target": "teamworkUserIdentityType"
+        }
+      ],
+      "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-18T20:34:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -5431,7 +5449,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-06-15T00:54:29.7304356Z",
-	  "WorkloadArea": "Teamwork and communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -5614,7 +5632,7 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
-	{
+    {
       "ChangeList": [
         {
           "Id": "ed2dd249-298c-4f2d-be8f-820179dfa0a7",
@@ -5686,7 +5704,7 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
-	{
+    {
       "ChangeList": [
         {
           "Id": "fcf602d1-fffb-4398-998c-05ce64b1e2a8",
