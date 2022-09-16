@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete the specified [learningContent](../resources/learningcontent.md) resource which represents the metadata of the specified provider's ingested content.
+Delete the specified [learningContent](../resources/learningcontent.md) resource that represents the metadata of the specified provider's ingested content.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,11 +56,11 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Example 1: Delete a learning content resource based on its ID
 
-The following examples shows a request that deletes a learning content resource based on its ID (primary key).
+The following example shows a request that deletes a learning content resource based on its ID (primary key).
 
 #### Request
 
-The following is an example of a request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -73,7 +73,7 @@ DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d7
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -85,10 +85,10 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Delete a learning content resource based on its external ID
 
-The following examples shows a request that deletes a learning content resource based on its external ID (secondary key).
+The following example shows a request that deletes a learning content resource based on its external ID (secondary key).
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -101,7 +101,7 @@ DELETE /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d7
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
