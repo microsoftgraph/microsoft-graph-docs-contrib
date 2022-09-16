@@ -23,8 +23,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-08-30T19:11:08.2617093Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -98,7 +98,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-07-19T08:49:37.3174776Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -124,7 +124,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-04-20T00:54:53.3530648Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -182,7 +182,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-04-18T06:24:28.2066497Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -200,7 +200,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2022-05-03T16:56:16.0636032Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -218,7 +218,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-05-03T16:56:16.0636032Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -236,7 +236,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-07-05T00:23:34.0823332Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -262,7 +262,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-07-05T20:24:31.2114524Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -280,7 +280,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-03-18T19:48:31.9995671Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -298,7 +298,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-03-18T19:48:31.9995671Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -340,7 +340,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-12-16T19:59:27.7039317Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -382,7 +382,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-12-06T04:55:32.1798229Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -408,7 +408,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-12-06T20:08:47.1923484Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -451,7 +451,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-12-08T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -501,7 +501,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-11-19T00:20:34.714968Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -527,7 +527,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-11-05T21:50:37.3489457Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -545,7 +545,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-10-12T21:32:00.9962748Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -563,7 +563,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-10-12T21:32:00.9970658Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -581,7 +581,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-10-12T21:32:00.9970709Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -599,7 +599,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-10-12T21:32:00.9970722Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -625,7 +625,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-10-06T23:50:40.2068677Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -667,7 +667,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-29T18:05:28.5021936Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -685,7 +685,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-29T22:10:57.9979092Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -703,7 +703,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-29T19:15:11.695531Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -777,7 +777,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-10-14T04:49:37.889327Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -795,7 +795,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-10-14T04:49:37.8901959Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -821,7 +821,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-15T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -839,7 +839,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-09-09T21:40:54.5120151Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -873,7 +873,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-26T04:44:06.85621Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -899,7 +899,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-26T04:44:06.8568472Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -917,7 +917,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-08-18T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -943,7 +943,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-19T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -985,7 +985,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-08-13T01:42:26.0020901Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1003,7 +1003,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-16T16:56:16.0636032Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1061,7 +1061,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-07-09T22:17:53.668Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1111,7 +1111,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-13T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1137,7 +1137,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-06-23T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1163,7 +1163,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-06-10T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1181,7 +1181,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-05-14T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1223,7 +1223,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-19T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1257,7 +1257,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-21T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1283,7 +1283,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-28T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1317,7 +1317,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-16T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1335,7 +1335,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-05T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1723,7 +1723,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -1841,7 +1841,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -2003,7 +2003,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -2037,7 +2037,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -2055,7 +2055,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -2097,7 +2097,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -2199,7 +2199,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -2273,7 +2273,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Teamwork Communications ",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -2339,7 +2339,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00",
       "WorkloadArea": "Teamwork communications ",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -2513,7 +2513,7 @@
         "Version": "beta",
         "CreatedDateTime": "2022-07-19T00:00:00",
         "WorkloadArea": "Teamwork and communications",
-        "SubArea": "Meetings and calling"
+        "SubArea": "Calls and online meetings"
   }
 ]
 }
