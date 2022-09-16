@@ -40,6 +40,7 @@ A logical container to add content from an external source into Microsoft Graph.
 | ingestedItemsCount           | Int64                            |  The number of items ingested into a connection. This value is refreshed every 15 minutes. If the connection state is `draft`, then **ingestedItemsCount** will be `null`. |
 | name          | String                            | The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. Required. |
 | searchSettings|[microsoft.graph.externalConnectors.searchSettings](../resources/externalconnectors-searchsettings.md)|The settings configuring the search experience for content in this connection, such as the display templates for search results.|
+| activitySettings|[microsoft.graph.externalConnectors.searchSettings](../resources/externalconnectors-searchsettings.md)| Collects configurable settings related to activities involving connector content.|
 | state         | microsoft.graph.externalConnectors.connectionState                   | Indicates the current state of the connection. Possible values are `draft`, `ready`, `obsolete`, and `limitExceeded`. Required. |
 
 ## Relationships
@@ -65,13 +66,24 @@ The following is a JSON representation of the resource.
   "keyProperty": "id"
 }-->
 
-```json
+``` json
 {
-  "description": "String",
+  "@odata.type": "#microsoft.graph.externalConnectors.externalConnection",
   "id": "String (identifier)",
   "ingestedItemsCount": "Int64",
   "name": "String",
-  "state": "String"
+  "description": "String",
+  "configuration": {
+    "@odata.type": "microsoft.graph.externalConnectors.configuration"
+  },
+  "state": "String",
+  "connectorId": "String",
+  "searchSettings": {
+    "@odata.type": "microsoft.graph.externalConnectors.searchSettings"
+  },
+  "activitySettings": {
+    "@odata.type": "microsoft.graph.externalConnectors.activitySettings"
+  }
 }
 ```
 

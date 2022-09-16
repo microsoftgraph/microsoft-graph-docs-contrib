@@ -18,7 +18,6 @@ This resource contains the top level properties of the list, including template 
 
 The following tasks are available for list resources.
 
-
 All examples below are relative to a site, for example, `https://graph.microsoft.com/v1.0/sites/{site-id}`.
 
 | Common task               | HTTP method

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Select a user and provision the account on-demand.
+Select a user and provision the account on-demand. The rate limit for this API is 5 requests per 10 seconds. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -83,16 +83,13 @@ Content-Type: application/json
   ]
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-provisionondemand-adto3p-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-provisionondemand-adto3p-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-provisionondemand-adto3p-objc-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-provisionondemand-adto3p-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -105,6 +102,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationjob-provisionondemand-adto3p-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/synchronizationjob-provisionondemand-adto3p-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -158,16 +159,13 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-provisionondemand-ad2aad-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-provisionondemand-ad2aad-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-provisionondemand-ad2aad-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -180,6 +178,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationjob-provisionondemand-ad2aad-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/synchronizationjob-provisionondemand-ad2aad-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -201,6 +203,95 @@ Content-Type: application/json
     "@odata.context": "https://syncfabric.windowsazure.com/api/$metadata#microsoft.synchronization.stringKeyStringValuePair",
     "key": "{\"result\":\"Success\",\"details\":{}}",
     "value": "{\"provisioningSteps\":[{\"name\":\"EntryImportAdd\",\"type\":\"Import\",\"status\":\"Success\",\"description\":\"Received user 'adelev@chicago.com' change of type (Add) from Active Directory\",\"timestamp\":\"2022-04-21T18:40:07.8465145Z\",\"details\":{\"distinguishedName\":\"CN=AdeleV,CN=Users,DC=corp,DC=chicago,DC=com\",\"cn\":\"Adele Vest\",\"originatingReplicaToken\":\"{\\\"InvocationId\\\":\\\"6cbd7b45-b262-4dad-94a3-620503ea1f25\\\",\\\"Name\\\":\\\"DC01.esf.edu\\\"}\",\"sAMAccountName\":\"adelev\",\"targetAddress\":\"SMTP:adelev@esf0.mail.onmicrosoft.com\",\"givenName\":\"Adele\",\"objectSid\":\"AQUAAAAAAAUVAAAAXAMNf/YJ8nmaUZofGG4BAA==\",\"displayName\":\"Adele Vest\",\"msExchMailboxGuid\":\"+klu7DM5yE+9tOs6MuGxsw==\",\"msExchELCMailboxFlags\":\"2\",\"pwdLastSet\":\"132772253564048004\",\"initials\":\"S\",\"msExchRecipientDisplayType\":\"-2147483642\",\"streetAddress\":\"One Microsoft Way\",\"mail\":\"adelev@chicago.com\",\"sn\":\"AdeleV\",\"msExchSafeSendersHash\":\"gny5JQ==\",\"proxyAddresses\":\"X, 5, 0,  ... X400:C=US;A= ;P=ESF;O=MAIL;S=AdeleV;G=Adele;I=S; (5)\",\"objectGUID\":\"xxxxxxxLIUuBM8qK5Sxxxx\",\"legacyExchangeDN\":\"/o=ESF/ou=External (FYDIBOHF25SPDLT)/cn=Recipients/cn=b499521b46264967a6de75f1a08add7a\",\"msExchRecipientTypeDetails\":\"2147483648\",\"userAccountControl\":\"66048\",\"accountDisabled\":\"False\",\"countryCode\":\"840\",\"co\":\"United States\",\"l\":\"Chicago\",\"extensionAttribute10\":\"839153607\",\"c\":\"US\",\"mS-DS-ConsistencyGuid\":\"xxxxxxxLIUuBM8qK5Sxxxx\",\"mailNickname\":\"adelev\",\"st\":\"NY\",\"extensionAttribute15\":\"C1EA2EA6EC56F3D94D2D89D95D70E4D0\",\"extensionAttribute14\":\"F00177677\",\"postalCode\":\"13210\",\"extensionAttribute6\":\"A5\",\"msExchRemoteRecipientType\":\"4\",\"extensionAttribute5\":\"11\",\"userPrincipalName\":\"adelev@chicago.com\",\"adminDescription\":\"\",\"company\":\"\",\"department\":\"\",\"description\":\"\",\"employeeID\":\"\",\"employeeNumber\":\"\",\"employeeType\":\"\",\"errors\":\"\",\"extensionAttribute1\":\"\",\"extensionAttribute11\":\"\",\"extensionAttribute12\":\"\",\"extensionAttribute13\":\"\",\"extensionAttribute2\":\"\",\"extensionAttribute3\":\"\",\"extensionAttribute4\":\"\",\"extensionAttribute7\":\"\",\"extensionAttribute8\":\"\",\"extensionAttribute9\":\"\",\"facsimileTelephoneNumber\":\"\",\"homePhone\":\"\",\"info\":\"\",\"ipPhone\":\"\",\"isCriticalSystemObject\":\"\",\"logs\":\"\",\"middleName\":\"\",\"mobile\":\"\",\"msDS-HABSeniorityIndex\":\"\",\"msDS-InclusionTrigger\":\"\",\"msDS-PhoneticDisplayName\":\"\",\"msDS-preferredDataLocation\":\"\",\"msExchArchiveGUID\":\"\",\"msExchArchiveName\":\"\",\"msExchAssistantName\":\"\",\"msExchAuditAdmin\":\"\",\"msExchAuditDelegate\":\"\",\"msExchAuditDelegateAdmin\":\"\",\"msExchAuditOwner\":\"\",\"msExchBlockedSendersHash\":\"\",\"msExchBypassAudit\":\"\",\"msExchELCExpirySuspensionEnd\":\"\",\"msExchELCExpirySuspensionStart\":\"\",\"msExchEnableModeration\":\"\",\"msExchExtensionCustomAttribute1\":\"\",\"msExchExtensionCustomAttribute2\":\"\",\"msExchExtensionCustomAttribute3\":\"\",\"msExchExtensionCustomAttribute4\":\"\",\"msExchExtensionCustomAttribute5\":\"\",\"msExchHideFromAddressLists\":\"\",\"msExchImmutableId\":\"\",\"msExchLitigationHoldDate\":\"\",\"msExchLitigationHoldOwner\":\"\",\"msExchMailboxAuditEnable\":\"\",\"msExchMailboxAuditLogAgeLimit\":\"\",\"msExchModerationFlags\":\"\",\"msExchRequireAuthToSendTo\":\"\",\"msExchResourceCapacity\":\"\",\"msExchResourceDisplay\":\"\",\"msExchResourceMetaData\":\"\",\"msExchResourceSearchProperties\":\"\",\"msExchRetentionComment\":\"\",\"msExchRetentionURL\":\"\",\"msExchSafeRecipientsHash\":\"\",\"msExchSenderHintTranslations\":\"\",\"msExchTeamMailboxExpiration\":\"\",\"msExchTeamMailboxSharePointUrl\":\"\",\"msExchUsageLocation\":\"\",\"msExchUserHoldPolicies\":\"\",\"msRTCSIP-ApplicationOptions\":\"\",\"mSRTCSIP-DeploymentLocator\":\"\",\"msRTCSIP-Line\":\"\",\"msRTCSIP-OptionFlags\":\"\",\"msRTCSIP-OwnerUrn\":\"\",\"msRTCSIP-PrimaryUserAddress\":\"\",\"msRTCSIP-UserEnabled\":\"\",\"objectClass\":\"\",\"otherFacsimileTelephoneNumber\":\"\",\"otherHomePhone\":\"\",\"otherIpPhone\":\"\",\"otherMobile\":\"\",\"otherPager\":\"\",\"otherTelephone\":\"\",\"pager\":\"\",\"physicalDeliveryOfficeName\":\"\",\"postOfficeBox\":\"\",\"preferredLanguage\":\"\",\"telephoneAssistant\":\"\",\"telephoneNumber\":\"\",\"thumbnailPhoto\":\"\",\"title\":\"\",\"url\":\"\",\"userCertificate\":\"\",\"userSMIMECertificate\":\"\",\"whenChanged\":\"\",\"wWWHomePage\":\"\"}},{\"name\":\"EntryImport\",\"type\":\"Import\",\"status\":\"Success\",\"description\":\"Retrieved user 'adelev@chicago.com' from Active Directory\",\"timestamp\":\"2022-04-21T18:40:07.8778004Z\",\"details\":{\"distinguishedName\":\"CN=AdeleV,CN=Users,DC=corp,DC=chicago,DC=com\",\"cn\":\"Adele Vest\",\"originatingReplicaToken\":\"{\\\"InvocationId\\\":\\\"6cbd7b45-b262-4dad-94a3-620503ea1f25\\\",\\\"Name\\\":\\\"DC01.esf.edu\\\"}\",\"sAMAccountName\":\"adelev\",\"targetAddress\":\"SMTP:adelev@esf0.mail.onmicrosoft.com\",\"givenName\":\"Adele\",\"objectSid\":\"AQUAAAAAAAUVAAAAXAMNf/YJ8nmaUZofGG4BAA==\",\"displayName\":\"Adele Vest\",\"msExchMailboxGuid\":\"+klu7DM5yE+9tOs6MuGxsw==\",\"msExchELCMailboxFlags\":\"2\",\"pwdLastSet\":\"132772253564048004\",\"initials\":\"S\",\"msExchRecipientDisplayType\":\"-2147483642\",\"streetAddress\":\"One Microsoft Way\",\"mail\":\"adelev@chicago.com\",\"sn\":\"AdeleV\",\"msExchSafeSendersHash\":\"gny5JQ==\",\"proxyAddresses\":\"X, 5, 0,  ... X400:C=US;A= ;P=ESF;O=MAIL;S=AdeleV;G=Adele;I=S; (5)\",\"objectGUID\":\"xxxxxxxLIUuBM8qK5Sxxxx\",\"legacyExchangeDN\":\"/o=ESF/ou=External (FYDIBOHF25SPDLT)/cn=Recipients/cn=b499521b46264967a6de75f1a08add7a\",\"msExchRecipientTypeDetails\":\"2147483648\",\"userAccountControl\":\"66048\",\"accountDisabled\":\"False\",\"countryCode\":\"840\",\"co\":\"United States\",\"l\":\"Chicago\",\"extensionAttribute10\":\"839153607\",\"c\":\"US\",\"mS-DS-ConsistencyGuid\":\"xxxxxxxLIUuBM8qK5Sxxxx\",\"mailNickname\":\"adelev\",\"st\":\"NY\",\"extensionAttribute15\":\"C1EA2EA6EC56F3D94D2D89D95D70E4D0\",\"extensionAttribute14\":\"F00177677\",\"postalCode\":\"13210\",\"extensionAttribute6\":\"A5\",\"msExchRemoteRecipientType\":\"4\",\"extensionAttribute5\":\"11\",\"userPrincipalName\":\"adelev@chicago.com\",\"adminDescription\":\"\",\"company\":\"\",\"department\":\"\",\"description\":\"\",\"employeeID\":\"\",\"employeeNumber\":\"\",\"employeeType\":\"\",\"errors\":\"\",\"extensionAttribute1\":\"\",\"extensionAttribute11\":\"\",\"extensionAttribute12\":\"\",\"extensionAttribute13\":\"\",\"extensionAttribute2\":\"\",\"extensionAttribute3\":\"\",\"extensionAttribute4\":\"\",\"extensionAttribute7\":\"\",\"extensionAttribute8\":\"\",\"extensionAttribute9\":\"\",\"facsimileTelephoneNumber\":\"\",\"homePhone\":\"\",\"info\":\"\",\"ipPhone\":\"\",\"isCriticalSystemObject\":\"\",\"logs\":\"\",\"middleName\":\"\",\"mobile\":\"\",\"msDS-HABSeniorityIndex\":\"\",\"msDS-InclusionTrigger\":\"\",\"msDS-PhoneticDisplayName\":\"\",\"msDS-preferredDataLocation\":\"\",\"msExchArchiveGUID\":\"\",\"msExchArchiveName\":\"\",\"msExchAssistantName\":\"\",\"msExchAuditAdmin\":\"\",\"msExchAuditDelegate\":\"\",\"msExchAuditDelegateAdmin\":\"\",\"msExchAuditOwner\":\"\",\"msExchBlockedSendersHash\":\"\",\"msExchBypassAudit\":\"\",\"msExchELCExpirySuspensionEnd\":\"\",\"msExchELCExpirySuspensionStart\":\"\",\"msExchEnableModeration\":\"\",\"msExchExtensionCustomAttribute1\":\"\",\"msExchExtensionCustomAttribute2\":\"\",\"msExchExtensionCustomAttribute3\":\"\",\"msExchExtensionCustomAttribute4\":\"\",\"msExchExtensionCustomAttribute5\":\"\",\"msExchHideFromAddressLists\":\"\",\"msExchImmutableId\":\"\",\"msExchLitigationHoldDate\":\"\",\"msExchLitigationHoldOwner\":\"\",\"msExchMailboxAuditEnable\":\"\",\"msExchMailboxAuditLogAgeLimit\":\"\",\"msExchModerationFlags\":\"\",\"msExchRequireAuthToSendTo\":\"\",\"msExchResourceCapacity\":\"\",\"msExchResourceDisplay\":\"\",\"msExchResourceMetaData\":\"\",\"msExchResourceSearchProperties\":\"\",\"msExchRetentionComment\":\"\",\"msExchRetentionURL\":\"\",\"msExchSafeRecipientsHash\":\"\",\"msExchSenderHintTranslations\":\"\",\"msExchTeamMailboxExpiration\":\"\",\"msExchTeamMailboxSharePointUrl\":\"\",\"msExchUsageLocation\":\"\",\"msExchUserHoldPolicies\":\"\",\"msRTCSIP-ApplicationOptions\":\"\",\"mSRTCSIP-DeploymentLocator\":\"\",\"msRTCSIP-Line\":\"\",\"msRTCSIP-OptionFlags\":\"\",\"msRTCSIP-OwnerUrn\":\"\",\"msRTCSIP-PrimaryUserAddress\":\"\",\"msRTCSIP-UserEnabled\":\"\",\"objectClass\":\"\",\"otherFacsimileTelephoneNumber\":\"\",\"otherHomePhone\":\"\",\"otherIpPhone\":\"\",\"otherMobile\":\"\",\"otherPager\":\"\",\"otherTelephone\":\"\",\"pager\":\"\",\"physicalDeliveryOfficeName\":\"\",\"postOfficeBox\":\"\",\"preferredLanguage\":\"\",\"telephoneAssistant\":\"\",\"telephoneNumber\":\"\",\"thumbnailPhoto\":\"\",\"title\":\"\",\"url\":\"\",\"userCertificate\":\"\",\"userSMIMECertificate\":\"\",\"whenChanged\":\"\",\"wWWHomePage\":\"\"}},{\"name\":\"EntrySynchronizationScoping\",\"type\":\"Scoping\",\"status\":\"Success\",\"description\":\"Determine if user in scope by evaluating against each scoping filter\",\"timestamp\":\"2022-04-21T18:40:08.1590133Z\",\"details\":{\"Active in the source system\":\"True\",\"Scoping filter evaluation passed\":\"True\"}},{\"name\":\"EntryExportUpdate\",\"type\":\"Export\",\"status\":\"Success\",\"description\":\"User 'adelev@chicago.com' was updated in Azure Active Directory\",\"timestamp\":\"2022-04-21T18:40:09.5184649Z\",\"details\":{}}],\"modifiedProperties\":[{\"displayName\":\"AccountEnabled\",\"newValue\":\"True\"},{\"displayName\":\"Alias\",\"newValue\":\"adelev\"},{\"displayName\":\"City\",\"newValue\":\"Chicago\"},{\"displayName\":\"CommonName\",\"newValue\":\"Adele Vest\"},{\"displayName\":\"Country\",\"newValue\":\"United States\"},{\"displayName\":\"CountryCode\",\"newValue\":\"840\"},{\"displayName\":\"CountryLetterCode\",\"newValue\":\"US\"},{\"displayName\":\"DisplayName\",\"newValue\":\"Adele Vest\"},{\"displayName\":\"DnsDomainName\",\"newValue\":\"esf.edu\"},{\"displayName\":\"ExtensionAttribute10\",\"newValue\":\"839153607\"},{\"displayName\":\"ExtensionAttribute14\",\"newValue\":\"F00177677\"},{\"displayName\":\"ExtensionAttribute15\",\"newValue\":\"C1EA2EA6EC56F3D94D2D89D95D70E4D0\"},{\"displayName\":\"ExtensionAttribute5\",\"newValue\":\"11\"},{\"displayName\":\"ExtensionAttribute6\",\"newValue\":\"A5\"},{\"displayName\":\"GivenName\",\"newValue\":\"Adele\"},{\"displayName\":\"Initials\",\"newValue\":\"S\"},{\"displayName\":\"LastPasswordChangeTimestamp\",\"newValue\":\"20210927140916.0Z\"},{\"displayName\":\"LegacyExchangeDN\",\"newValue\":\"/o=ESF/ou=External (FYDIBOHF25SPDLT)/cn=Recipients/cn=b499521b46264967a6de75f1a08add7a\"},{\"displayName\":\"Mail\",\"newValue\":\"adelev@chicago.com\"},{\"displayName\":\"MSExchElcMailboxFlags\",\"newValue\":\"2\"},{\"displayName\":\"MSExchMailboxGuid\",\"newValue\":\"+klu7DM5yE+9tOs6MuGxsw==\"},{\"displayName\":\"MSExchRecipientDisplayType\",\"newValue\":\"-2147483642\"},{\"displayName\":\"MSExchRecipientTypeDetails\",\"newValue\":\"2147483648\"},{\"displayName\":\"MSExchRemoteRecipientType\",\"newValue\":\"4\"},{\"displayName\":\"MSExchSafeSendersHash\",\"newValue\":\"gny5JQ==\"},{\"displayName\":\"NetBiosName\",\"newValue\":\"ESF\"},{\"displayName\":\"OnPremisesDistinguishedName\",\"newValue\":\"CN=AdeleV,CN=Users,DC=corp,DC=chicago,DC=com\"},{\"displayName\":\"OnPremiseSecurityIdentifier\",\"newValue\":\"AQUAAAAAAAUVAAAAXAMNf/YJ8nmaUZofGG4BAA==\"},{\"displayName\":\"OnPremisesSamAccountName\",\"newValue\":\"adelev\"},{\"displayName\":\"OnPremisesUserPrincipalName\",\"newValue\":\"adelev@chicago.com\"},{\"displayName\":\"PostalCode\",\"newValue\":\"13210\"},{\"displayName\":\"ProxyAddresses\",\"newValue\":\"X, 5, 0,  ... X400:C=US;A= ;P=ESF;O=MAIL;S=AdeleV;G=Adele;I=S; (5)\"},{\"displayName\":\"State\",\"newValue\":\"NY\"},{\"displayName\":\"StreetAddress\",\"newValue\":\"One Microsoft Way\"},{\"displayName\":\"Surname\",\"newValue\":\"AdeleV\"},{\"displayName\":\"TargetAddress\",\"newValue\":\"SMTP:adelev@esf0.mail.onmicrosoft.com\"},{\"displayName\":\"UserPrincipalName\",\"newValue\":\"adelev@chicago.com\"}],\"action\":\"Update\",\"changeId\":\"582595f3-53be-4843-bf0c-f57dbf8fae96\",\"endTime\":\"2022-04-21T18:40:09.5496702Z\",\"reportableIdentifier\":\"adelev@chicago.com\",\"sourceIdentity\":{\"id\":\"38a2171b-8b04-4b21-8133-ca8ae52250f3\",\"type\":\"user\"},\"sourceSystem\":{\"name\":\"Active Directory\"},\"startTime\":\"2022-04-21T18:40:07.8309453Z\",\"statusInfo\":{\"status\":\"Success\"},\"targetIdentity\":{\"id\":\"87cb2512-8e7f-4543-a9c9-e7cf8756a3ad\",\"type\":\"User\"},\"targetSystem\":{\"name\":\"Azure Active Directory\"}}"
+}
+```
+
+### Example 3: Provision a group and two of its members on demand
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "synchronizationjob_provisionondemand_Group"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/servicePrincipals/4e116d82-dd59-4944-824d-93091408fd8d/synchronization/jobs/664ea562-18cd-42bb-33e0-8de1f0560581/provisionOnDemand
+Content-Type: application/json
+
+{
+  "parameters": [
+    {
+      "ruleId": "33f7c90d-bf71-41b1-bda6-aaf0ddbee5d8#V2",
+      "subjects": [
+        {
+          "objectId": "8213fd99-d6b6-417b-8e13-af6334856215",
+          "objectTypeName": "Group",
+          "links": {
+            "members": [
+              {
+                "objectId": "cbc86211-6ada-4803-b73f-8039cf56d8a2",
+                "objectTypeName": "User"
+              },
+              {
+                "objectId": "2bc86211-6ada-4803-b73f-8039cf56d8a2",
+                "objectTypeName": "User"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-provisionondemand-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-provisionondemand-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-provisionondemand-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-provisionondemand-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationjob-provisionondemand-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/synchronizationjob-provisionondemand-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.synchronizationSecretKeyStringValuePair"
+}
+-->
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://syncfabric.windowsazure.com/api/$metadata#microsoft.synchronization.stringKeyStringValuePair",
+    "key": "{\"result\":\"Success\",\"details\":{}}",
+    "value": "{}"
 }
 ```
 

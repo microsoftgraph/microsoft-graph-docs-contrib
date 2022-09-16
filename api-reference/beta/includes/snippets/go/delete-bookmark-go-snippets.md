@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-bookmarkId := "bookmark-id"
-graphClient.Search().BookmarksById(&bookmarkId).Delete()
+
+graphClient.Search().BookmarksById("bookmark-id").Delete(context.Background(), nil)
 
 
 ```

@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-educationRubricId := "educationRubric-id"
-result, err := graphClient.Education().Me().RubricsById(&educationRubricId).Get()
+
+result, err := graphClient.Education().Me().RubricsById("educationRubric-id").Get(context.Background(), nil)
 
 
 ```

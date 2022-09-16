@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-acronymId := "acronym-id"
-graphClient.Search().AcronymsById(&acronymId).Delete()
+
+graphClient.Search().AcronymsById("acronym-id").Delete(context.Background(), nil)
 
 
 ```

@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-groupId := "group-id"
-graphClient.GroupsById(&groupId).AddFavorite(group-id).Post()
+
+graphClient.GroupsById("group-id").AddFavorite().Post(context.Background(), nil)
 
 
 ```

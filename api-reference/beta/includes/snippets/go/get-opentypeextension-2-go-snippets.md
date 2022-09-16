@@ -7,10 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-groupId := "group-id"
-eventId := "event-id"
-extensionId := "extension-id"
-result, err := graphClient.GroupsById(&groupId).EventsById(&eventId).ExtensionsById(&extensionId).Get()
+
+result, err := graphClient.GroupsById("group-id").EventsById("event-id").ExtensionsById("extension-id").Get(context.Background(), nil)
 
 
 ```

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Invoke-MgUnsubscribeGroup -GroupId $groupId
+Invoke-MgGraphGroup -GroupId $groupId
 
 ```

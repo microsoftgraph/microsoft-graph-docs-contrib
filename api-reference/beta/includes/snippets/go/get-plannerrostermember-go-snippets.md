@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-plannerRosterId := "plannerRoster-id"
-plannerRosterMemberId := "plannerRosterMember-id"
-result, err := graphClient.Planner().RostersById(&plannerRosterId).MembersById(&plannerRosterMemberId).Get()
+
+result, err := graphClient.Planner().RostersById("plannerRoster-id").MembersById("plannerRosterMember-id").Get(context.Background(), nil)
 
 
 ```

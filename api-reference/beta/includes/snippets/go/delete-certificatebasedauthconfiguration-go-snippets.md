@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-organizationId := "organization-id"
-certificateBasedAuthConfigurationId := "certificateBasedAuthConfiguration-id"
-graphClient.OrganizationById(&organizationId).CertificateBasedAuthConfigurationById(&certificateBasedAuthConfigurationId).Delete()
+
+graphClient.OrganizationById("organization-id").CertificateBasedAuthConfigurationById("certificateBasedAuthConfiguration-id").Delete(context.Background(), nil)
 
 
 ```
