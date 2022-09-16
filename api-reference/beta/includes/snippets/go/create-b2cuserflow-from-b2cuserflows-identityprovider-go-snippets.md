@@ -32,7 +32,7 @@ identityProviders := []graphmodels.IdentityProviderable {
 }
 requestBody.SetIdentityProviders(identityProviders)
 
-result, err := graphClient.Identity().B2cUserFlows().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Identity().B2cUserFlows().Post(context.Background(), requestBody, configuration)
 
 
 ```

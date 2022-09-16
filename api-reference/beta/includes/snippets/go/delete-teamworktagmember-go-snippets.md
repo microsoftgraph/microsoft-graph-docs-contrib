@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.TeamsById("team-id").TagsById("teamworkTag-id").MembersById("teamworkTagMember-id").Delete()
+graphClient.TeamsById("team-id").TagsById("teamworkTag-id").MembersById("teamworkTagMember-id").Delete(context.Background(), nil)
 
 
 ```

@@ -131,7 +131,7 @@ requestBody.SetQualities(qualities)
 grading := graphmodels.NewEducationAssignmentGradeType()
 requestBody.SetGrading(grading)
 
-result, err := graphClient.Education().Me().Rubrics().Post(requestBody)
+result, err := graphClient.Education().Me().Rubrics().Post(context.Background(), requestBody, nil)
 
 
 ```

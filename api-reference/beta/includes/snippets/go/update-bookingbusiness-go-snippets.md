@@ -23,7 +23,7 @@ allowStaffSelection := true
 schedulingPolicy.SetAllowStaffSelection(&allowStaffSelection) 
 requestBody.SetSchedulingPolicy(schedulingPolicy)
 
-graphClient.BookingBusinessesById("bookingBusiness-id").Patch(requestBody)
+graphClient.BookingBusinessesById("bookingBusiness-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

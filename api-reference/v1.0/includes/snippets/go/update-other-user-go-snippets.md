@@ -16,7 +16,7 @@ requestBody.SetBusinessPhones(businessPhones)
 officeLocation := "18/2111"
 requestBody.SetOfficeLocation(&officeLocation) 
 
-graphClient.UsersById("user-id").Patch(requestBody)
+graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

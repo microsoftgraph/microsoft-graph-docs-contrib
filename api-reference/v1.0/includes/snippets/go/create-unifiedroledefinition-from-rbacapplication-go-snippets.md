@@ -31,7 +31,7 @@ requestBody.SetRolePermissions(rolePermissions)
 isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
 
-result, err := graphClient.RoleManagement().Directory().RoleDefinitions().Post(requestBody)
+result, err := graphClient.RoleManagement().Directory().RoleDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

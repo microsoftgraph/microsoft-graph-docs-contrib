@@ -104,7 +104,7 @@ requestBody.SetUserType(&userType)
 onPremisesInfo := graphmodels.NewEducationOnPremisesInfo()
 requestBody.SetOnPremisesInfo(onPremisesInfo)
 
-result, err := graphClient.Education().Users().Post(requestBody)
+result, err := graphClient.Education().Users().Post(context.Background(), requestBody, nil)
 
 
 ```

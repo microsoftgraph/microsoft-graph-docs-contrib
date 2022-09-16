@@ -30,7 +30,7 @@ value := "Are you sure that you want to cancel entering your information?"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").LanguagesById("userFlowLanguageConfiguration-id").OverridesPagesById("userFlowLanguagePage-id").$value().Put(requestBody)
+graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").LanguagesById("userFlowLanguageConfiguration-id").OverridesPagesById("userFlowLanguagePage-id").$value().Put(context.Background(), requestBody, nil)
 
 
 ```
