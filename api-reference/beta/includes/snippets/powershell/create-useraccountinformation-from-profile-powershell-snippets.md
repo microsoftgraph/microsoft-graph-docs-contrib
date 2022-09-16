@@ -11,6 +11,7 @@ $params = @{
 	CountryCode = "NO"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileAccount -UserId $userId -BodyParameter $params
 
 ```

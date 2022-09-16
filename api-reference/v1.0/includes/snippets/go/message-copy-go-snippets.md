@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewCopyPostRequestBody()
 destinationId := "destinationId-value"
-requestBody.SetDestinationId(&destinationId)
-options := &msgraphsdk.CopyRequestBuilderPostOptions{
-	Body: requestBody,
-}
-messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Copy().Post(options)
+requestBody.SetDestinationId(&destinationId) 
+
+result, err := graphClient.Me().MessagesById("message-id").Copy().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	Name = "extensionName"
-	DataType = "string"
+	Name = "jobGroup"
+	DataType = "String"
 	TargetObjects = @(
-		"Application"
+		"User"
 	)
 }
 

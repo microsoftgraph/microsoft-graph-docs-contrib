@@ -2,7 +2,7 @@
 title: "Microsoft Teams MSAL2 provider"
 description: "Use the Teams MSAL2 provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components. The provider can be used for single-sign-on (SSO) or interactive sign in."
 ms.localizationpriority: medium
-author: simonagren
+author: sebastienlevert
 ---
 
 # Microsoft Teams MSAL2 provider
@@ -98,7 +98,7 @@ export interface TeamsMsal2Config {
 ---
 ### Create the popup page
 
-To sign in with your Teams credentials and handle consent, you need provide a URL that the Teams app will open in a popup, which will follow the authentication flow. Create a new page in your application (for example, https://mydomain.com/auth) that will handle the auth redirect and call the `TeamsMsal2Provider.handleAuth` method. That's the only thing that this page needs to do. For example:
+To sign in with your Teams credentials and handle consent, you need provide a URL that the Teams app will open in a popup, which will follow the authentication flow. Create a new page in your application (for example, `https://mydomain.com/auth`) that will handle the auth redirect and call the `TeamsMsal2Provider.handleAuth` method. That's the only thing that this page needs to do. For example:
 
 # [npm](#tab/ts)
 

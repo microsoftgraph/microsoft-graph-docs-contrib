@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AppRoleAssignmentCollectionPage appRoleAssignments = graphClient.groups("7679d9a4-2323-44cd-b5c2-673ec88d8b12").appRoleAssignments()
+AppRoleAssignmentCollectionPage appRoleAssignments = graphClient.groups("02bd9fd6-8f93-4758-87c3-1fb73740a315").appRoleAssignments()
 	.buildRequest()
 	.get();
 

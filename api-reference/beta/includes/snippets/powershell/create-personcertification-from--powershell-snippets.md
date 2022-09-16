@@ -14,6 +14,7 @@ $params = @{
 	WebUrl = "https://www.iame.io/blackbelt"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileCertification -UserId $userId -BodyParameter $params
 
 ```

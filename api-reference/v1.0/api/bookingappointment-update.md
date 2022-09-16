@@ -12,26 +12,34 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
+
+> [!NOTE]
+> If you create a custom app using application permissions, you must follow the [Business rules validation](/graph/bookingsbusiness-business-rules).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 ```
+
 ## Request headers
+
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}. Required.|
 
 ## Request body
+
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property	   | Type	|Description|
@@ -42,7 +50,7 @@ PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 |endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment. Required.|
 |isLocationOnline|Boolean|If `true`, indicates that the appointment will be held online. Default value is false.|
-|maximumAttendeesCount|Int32|The maximum number of customers allowed in the appointment. Required.|
+|maximumAttendeesCount|Int32|The maximum number of customers allowed in the appointment. Required. |
 |optOutOfCustomerEmail|Boolean|If `true`, indicates that the [bookingCustomer](../resources/bookingcustomer.md) for this appointment does not wish to receive a confirmation for this appointment.|
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
@@ -58,14 +66,24 @@ PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 |staffMemberIds|String collection|The ID of each [bookingStaffMember](../resources/bookingstaffmember.md) who is scheduled in this appointment.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 
+> [!NOTE]
+> If the maximum number of customers (**maximumAttedeesCount**) allowed in the [service](../resources/bookingservice.md) is greater than 1:
+> - Make sure that the customers exist in the Booking Calendar. If they don’t, create using the [Create bookingCustomer](bookingbusiness-post-customers.md) operation.
+> - Pass valid customer IDs when you create or update the appointment. If the customer ID is not valid, that customer won't be included in the appointment object.
+
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
+
 ## Examples
+
 ### Request
+
 The following example changes the date of service by a day.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["AAMkADKnAAA=", "Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=
@@ -87,6 +105,7 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following is an example of the response.
 <!-- {
   "blockType": "response",
@@ -109,5 +128,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

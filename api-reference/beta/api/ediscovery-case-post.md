@@ -16,7 +16,7 @@ Namespace: microsoft.graph.ediscovery
 Create a new [case](../resources/ediscovery-case.md) object.
 
 >[!NOTE]
->Starting in September 2021, this API will create a large case type. To learn more about large cases, see [Use large cases in Advanced eDiscovery](/microsoft-365/compliance/advanced-ediscovery-large-cases). For details, see the [Changes to the Microsoft 365 advanced eDiscovery create case API](https://go.microsoft.com/fwlink/?linkid=2172604) blog post.
+>Starting in September 2021, this API will create a large case type. To learn more about large cases, see [Use the new case format in eDiscovery](/microsoft-365/compliance/advanced-ediscovery-new-case-format). For details, see the [Changes to the Microsoft 365 advanced eDiscovery create case API](https://devblogs.microsoft.com/microsoft365dev/changes-to-the-microsoft-365-advanced-ediscovery-create-case-api-beta/) blog post.
 
 ## Permissions
 
@@ -83,10 +83,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-case-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-case-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-case-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,6 +93,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/post-case-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-case-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -12,7 +12,11 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Represents the risk history of an Azure AD user as determined by Azure AD Identity Protection. 
+Represents the risk history of an Azure AD user as determined by Azure AD Identity Protection.
+
+>[!NOTE]
+> 1. Using this API requires an Azure AD Premium P2 license.
+> 2. The availability of risk history data is governed by the [Azure AD data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 ## Methods
 

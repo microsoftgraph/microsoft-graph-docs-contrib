@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-displayName := "My custom name"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.InstantiateRequestBuilderPostOptions{
-	Body: requestBody,
-}
-applicationTemplateId := "applicationTemplate-id"
-result, err := graphClient.ApplicationTemplatesById(&applicationTemplateId).Instantiate().Post(options)
+requestBody := graphmodels.NewInstantiatePostRequestBody()
+displayName := "Azure AD SAML Toolkit"
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.ApplicationTemplatesById("applicationTemplate-id").Instantiate().Post(context.Background(), requestBody, nil)
 
 
 ```

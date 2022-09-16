@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewUploadCertificatePostRequestBody()
 key := "key-value"
-requestBody.SetKey(&key)
-options := &msgraphsdk.UploadCertificateRequestBuilderPostOptions{
-	Body: requestBody,
-}
-trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadCertificate().Post(options)
+requestBody.SetKey(&key) 
+
+result, err := graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").UploadCertificate().Post(context.Background(), requestBody, nil)
 
 
 ```

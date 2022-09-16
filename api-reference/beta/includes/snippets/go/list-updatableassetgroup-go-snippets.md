@@ -7,13 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UpdatableAssetsRequestBuilderGetQueryParameters{
-	Filter: "isof('microsoft.graph.windowsUpdates.updatableAssetGroup')",
+
+requestFilter := "isof('microsoft.graph.windowsUpdates.updatableAssetGroup')"
+
+requestParameters := &graphconfig.UpdatableAssetsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.UpdatableAssetsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.UpdatableAssetsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Get(options)
+
+result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Get(context.Background(), configuration)
 
 
 ```

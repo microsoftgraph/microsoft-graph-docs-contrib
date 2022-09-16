@@ -2,7 +2,7 @@
 title: "Build a web application with the Microsoft Graph Toolkit"
 description: "Get started building a web application using the Microsoft Graph Toolkit."
 ms.localizationpriority: medium
-author: elisenyang
+author: sebastienlevert
 ---
 
 # Build a web application with the Microsoft Graph Toolkit

@@ -15,6 +15,7 @@ $params = @{
 	WebUrl = "https://www.chelseafc.com"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileInterest -UserId $userId -BodyParameter $params
 
 ```

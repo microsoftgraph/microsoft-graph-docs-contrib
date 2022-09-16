@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var agentGroups = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].AgentGroups
 	.Request()
-	.Expand("publishedResources")
+	.Expand("agents,publishedResources")
 	.GetAsync();
 
 ```

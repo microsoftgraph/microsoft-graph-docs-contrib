@@ -219,6 +219,76 @@
       "source_path_from_root": "/api-reference/beta/resources/identityprotection-root.md",
       "redirect_url": "/graph/api/resources/identityprotection-overview?view=graph-rest-beta",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/administrativeunit-post-administrativeunits.md",
+      "redirect_url": "/graph/api/directory-post-administrativeunits?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/administrativeunit-post-administrativeunits.md",
+      "redirect_url": "/graph/api/directory-post-administrativeunits?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/administrativeunit-list.md",
+      "redirect_url": "/graph/api/directory-list-administrativeunits?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/administrativeunit-list.md",
+      "redirect_url": "/graph/api/directory-list-administrativeunits?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/directorysetting-post-settings.md",
+      "redirect_url": "/graph/api/group-post-settings?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/directorysetting-list.md",
+      "redirect_url": "/graph/api/group-list-settings?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/groupsetting-post-groupsettings.md",
+      "redirect_url": "/graph/api/group-post-settings?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/groupsetting-list.md",
+      "redirect_url": "/graph/api/group-list-settings?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/application-delete-extensionproperty.md",
+      "redirect_url": "/graph/api/extensionproperty-delete?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/concepts/powershell/get-started.md",
+      "redirect_url": "/powershell/microsoftgraph/get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/concepts/powershell/installation.md",
+      "redirect_url": "/powershell/microsoftgraph/installation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/concepts/powershell/navigating.md",
+      "redirect_url": "/powershell/microsoftgraph/navigating",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/concepts/powershell/app-only.md",
+      "redirect_url": "/powershell/microsoftgraph/app-only",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/application-delete-extensionproperty.md",
+      "redirect_url": "/graph/api/extensionproperty-delete?view=graph-rest-beta",
+      "redirect_document_id": true
     }
   ]
 }

@@ -60,22 +60,7 @@ Custom security attributes can be assigned to the following objects by using the
 
 ## Limits and constraints
 
-Here are some of the limits and constraints for custom security attributes.
-
-| Resource | Limit | Notes |
-| --- | :---: | --- |
-| Attribute definitions per tenant | 500 | Applies only to active attributes in the tenant |
-| Attribute sets per tenant | 500 |  |
-| Attribute set name length | 32 | Unicode characters and case insensitive |
-| Attribute set description length | 128 | Unicode characters |
-| Attribute name length | 32 | Unicode characters and case insensitive |
-| Attribute description length | 128 | Unicode characters |
-| Predefined values |  | Unicode characters and case sensitive |
-| Predefined values per attribute definition | 100 |  |
-| Attribute value length | 64 | Unicode characters |
-| Attribute values assigned per object | 50 | Values can be distributed across single and multi-valued attributes.<br/>Example: 5 attributes with 10 values each or 50 attributes with 1 value each |
-| Characters not allowed for:<br/>Attribute set name<br/>Attribute name | ``<space> ` ~ ! @ # $ % ^ & * ( ) _ - + = { [ } ] \| \ : ; " ' < , > . ? /`` |  |
-| Characters not allowed for:<br/>Attribute values | `# % & * + \ : " / < > ?` |  |
+For a list of the limits and constraints for custom security attributes, see [Limits and constraints](/azure/active-directory/fundamentals/custom-security-attributes-overview#limits-and-constraints).
 
 ## Permissions
 

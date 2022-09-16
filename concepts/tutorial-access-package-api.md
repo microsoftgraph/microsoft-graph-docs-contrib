@@ -1,6 +1,6 @@
 ---
-title: "Tutorial: Manage access to resources in Active Directory entitlement management using Microsoft Graph APIs"
-description: "Learn how to manage access to resources in Active Directory (Azure AD) entitlement management using Microsoft Graph APIs."
+title: "Tutorial: Manage access to resources in Active Directory entitlement management"
+description: "Learn how to use Microsoft Graph APIs to develop code to create a package of resources for a marketing campaign that internal users can self-service request."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,9 +10,10 @@ ms.prod: "governance"
 
 Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Azure Active Directory (Azure AD) entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
 
-In this tutorial, you've been asked to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
+In this tutorial, you learn how to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
 
->**Note:** The response objects shown in this tutorial might be shortened for readability. 
+> [!NOTE]
+> The response objects shown in this tutorial might be shortened for readability.
 
 ## Prerequisites
 
@@ -47,7 +48,10 @@ In this step, you create a group named **Marketing resources** in the directory 
 For this tutorial, you create a user account that is used to request access to the resources in the access package. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page. Record the value of the **id** property that is returned to be used later in the tutorial.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_create_user"
+}-->
 ``` http
 POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
@@ -65,7 +69,11 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
@@ -100,7 +108,10 @@ Content-type: application/json
 In this tutorial, you create a group named **Marketing resources** that is the target resource for entitlement management. You can use an existing group if you already have one. Record the value of the **id** property that is returned to use later in this tutorial. 
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_create_group"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
@@ -115,7 +126,11 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
@@ -145,13 +160,20 @@ An *access package* is a bundle of resources that a team or project needs and is
 To add resources to the catalog, you must first get the identifier of it. If you are using the General catalog, run the following request to get its identifier. If you are using a different calalog, change the filter value in the request to the name of your catalog. Record the value of the **id** property that is returned to use later in this tutorial.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_get_accesspackagecatalog"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs?$filter=(displayName eq 'General')
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageCatalog"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageCatalogs",
@@ -184,6 +206,10 @@ To add the group that you created to the catalog, provide the following property
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_get_accesspackageresourcerequest"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
 Content-type: application/json
@@ -203,7 +229,11 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity",
@@ -226,13 +256,20 @@ In later steps in this tutorial, you need the **id** that was assigned to the gr
 In the request, provide the **id** of the catalog that you are using. Record the value of the **id** property for the group catalog resource.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_get_accesspackageresources"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/cec5d6ab-c75d-47c0-9c1c-92e89f66e384/accessPackageResources?$filter=(displayName eq 'Marketing resources')
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResource"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageResources",
@@ -260,13 +297,20 @@ The access package assigns users to the roles of a resource. The typical role of
 In the request, use the **id** of the catalog and the **id** of the group resource in the catalog that you recorded to get the **originId** of the Member resource role. Record the value of the **originId** property to use later in this tutorial.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_get_accesspackageresourceroles"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/cec5d6ab-c75d-47c0-9c1c-92e89f66e384/accessPackageResourceRoles?$filter=(originSystem+eq+%27AadGroup%27+and+accessPackageResource/id+eq+%274a1e21c5-8a76-4578-acb1-641160e076e8%27+and+displayName+eq+%27Member%27)&$expand=accessPackageResource
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRole"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageCatalogs('ede67938-cda7-4127-a9ca-7c7bf86a19b7')/accessPackageResourceRoles(accessPackageResource())",
@@ -277,7 +321,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
       "description": null,
       "originSystem": "AadGroup",
       "originId": "Member_e93e24d1-2b65-4a6c-a1dd-654a12225487",
-      "accessPackageResource@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageCatalogs('cec5d6ab-c75d-47c0-9c1c-92e89f66e384')/accessPackageResourceRoles('00000000-0000-0000-0000-000000000000')/accessPackageResource/$entity",
       "accessPackageResource": {
         "id": "4a1e21c5-8a76-4578-acb1-641160e076e8",
         "displayName": "Marketing resources",
@@ -289,7 +332,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
         "isPendingOnboarding": false,
         "addedBy": "admin@contoso.onmicrosoft.com",
         "addedOn": "2020-06-26T17:13:23.723Z",
-        "accessPackageResourceScopes@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageCatalogs('cec5d6ab-c75d-47c0-9c1c-92e89f66e384')/accessPackageResourceRoles('00000000-0000-0000-0000-000000000000')/accessPackageResource/accessPackageResourceScopes",
         "accessPackageResourceScopes": []
       }
     }
@@ -304,7 +346,10 @@ If successful, a single value is returned, which represents the Member role of t
 At this point, you have a catalog with a group resource, and you know that you'll use the resource role of group member in the access package. The next step is to create the access package. After you have the access package, you can add the resource role to it, and create a policy for how users can request access to that resource role. You use the **id** of the catalog that you recorded earlier to create the access package. Record the **id** of the access package to use later in this tutorial.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_create_accesspackage"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages
 Content-type: application/json
@@ -317,7 +362,11 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackage"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity",
@@ -339,7 +388,10 @@ Content-type: application/json
 Add the Member role of the group resource to the access package. In the request, provide the **id** of the access package. In the request body provide the **id** of the group catalog resource for accessPackageResource, and provide the **originId** of the Member role that you previously recorded.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_get_accesspackageresourcerolescope"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/88203d16-0e31-41d4-87b2-dd402f1435e9/accessPackageResourceRoleScopes
 Content-type: application/json
@@ -361,7 +413,11 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages('88203d16-0e31-41d4-87b2-dd402f1435e9')/accessPackageResourceRoleScopes/$entity",
@@ -384,7 +440,10 @@ Now that you created the access package and added resources and roles, you can d
 The value of the **durationInDays** property enables the **Requestor1** account to access the resources in the access package for up to 30 days. Record the value of the **id** property that is returned to use later in this tutorial. 
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_get_accesspackageassignmentpolicy"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 Content-type: application/json
@@ -418,7 +477,11 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignmentPolicies/$entity",
@@ -470,7 +533,10 @@ In the response you can see the status of **Accepted** and a state of **Submitte
 If you haven't done so already, sign out of the administrator account that you were using in Microsoft Graph Explorer. Sign in to the **Requestor1** user account that you created. You will be asked to change the password if it is the first time you are signing in.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_create_accesspackageassignmentrequest"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 Content-type: application/json
@@ -486,7 +552,11 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignmentRequests/$entity",
@@ -513,13 +583,20 @@ Sign out of the Requestor1 account and sign back in to the administrator account
 Use the value of the **id** property of the request to get the current status of it. In the response, you can see the status changed to **Fulfilled** and the state changed to **Delivered**.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_get_accesspackageassignmentrequest"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/a6bb6942-3ae1-4259-9908-0133aaee9377
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignmentRequests/$entity",
@@ -540,13 +617,20 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 You can also use the **id** of the access package policy that you created to see that resources have been assigned to the **Requestor1** user account.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_get_accesspackageassignment"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'&$expand=target,accessPackageAssignmentResourceRoles
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignment"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignments",
@@ -582,13 +666,20 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 After the request has been granted, you can use the **id** that you recorded for the **Marketing resources** group to see that the **Requestor1** user account has been added to it.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_get_group_members"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/groups/e93e24d1-2b65-4a6c-a1dd-654a12225487/members
 ```
 
 #### Response:
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
@@ -632,7 +723,10 @@ In this step, you remove the changes you made and delete the **Marketing Campaig
 You must remove any assignments to the access package before you can delete it. Use the **id** of the assignment request that you previously recorded to delete it.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_remove_accesspackageassignmentrequest"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 Content-type: application/json
@@ -646,7 +740,11 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignmentRequests/$entity",
@@ -667,13 +765,18 @@ Content-type: application/json
 Use the **id** of the assignment policy that you previously recorded to delete it. Make sure all assignments are removed first.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_delete_accesspackageassignmentpolicy"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -683,13 +786,18 @@ No Content - 204
 Use the **id** of the access package that you previously recorded to delete it.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_delete_accesspackage"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/cf54c6ca-d717-49bc-babe-d140d035dfdd
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -699,13 +807,18 @@ No Content - 204
 Delete the **Requestor1** user account.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/ce02eca8-752b-4ecf-ac29-aa9bccd87606
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -715,28 +828,32 @@ No Content - 204
 Delete the **Marketing resources** group.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_entitlementmanagement_delete_group"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4209
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
 
 ## See also
 
-In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do.
+In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do:
 
-
-- [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)
-- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
-- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
-- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)
-- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta&preserve-view=true)
-- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
-- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
+- [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-overview)
+- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog)
+- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest)
+- [accessPackage](/graph/api/resources/accesspackage)
+- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope)
+- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy)
+- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest)
 - [group](/graph/api/resources/group)
-- [user](/graph/api/resources/user?)
+- [user](/graph/api/resources/user)
