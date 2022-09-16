@@ -46,15 +46,10 @@ You can specify the following properties when creating a **cloudPcExportJob**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|reportName|cloudPcReportName|**TODO: Add Description**. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `unknownFutureValue`. Optional.|
-|filter|String|**TODO: Add Description** Optional.|
-|select|String collection|**TODO: Add Description** Optional.|
-|format|String|**TODO: Add Description** Optional.|
-|expirationDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|requestDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|exportJobStatus|cloudPcExportJobStatus|**TODO: Add Description**. The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Optional.|
-|exportUrl|String|**TODO: Add Description** Optional.|
-
+|reportName|[cloudPcReportName](../resources/cloudpcexportjob.md/#cloudpcreportname-values)|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `unknownFutureValue`. Optional.|
+|filter|String|The filter applied on the report. Optional.|
+|select|String collection|The selected columns of the report. Optional.|
+|format|String|The format of the exported report. Optional.|
 
 
 ## Response

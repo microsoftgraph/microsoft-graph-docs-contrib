@@ -25,12 +25,12 @@ Represent the export job created for downloading reports.
 |Property|Type|Description|
 |:---|:---|:---|
 |expirationDateTime|DateTimeOffset|The date time when the export job expires.|
-|exportJobStatus|cloudPcExportJobStatus|The status of the export job.The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Read-only.|
+|exportJobStatus|[cloudPcExportJobStatus](#cloudpcexportjobstatus-values)|The status of the export job.The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Read-only.|
 |exportUrl|String|The storage account url of the exported report, it can be used to download the file.|
 |filter|String|The filter applied on the report.|
 |format|String|The format of the exported report.|
 |id|String|The unique identifier for the report. Read-only.|
-|reportName|cloudPcReportName|The report name.The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `unknownFutureValue`.|
+|reportName|[cloudPcReportName](#cloudpcreportname-values)|The report name.The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `unknownFutureValue`.|
 |requestDateTime|DateTimeOffset|The date time when the export job was requested.|
 |select|String collection|The selected columns of the report.|
 
