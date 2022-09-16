@@ -37,7 +37,7 @@ DELETE /employeeExperience/learningProviders/{learningProviderId}/learningConten
 
 For a specific learning content based on its external ID (secondary key):
 ``` http
-DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents/{externalId='{externalId}'}/$ref
+DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents(externalId='{externalId}')/$ref
 ```
 
 ## Request headers

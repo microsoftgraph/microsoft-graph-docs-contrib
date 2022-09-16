@@ -36,7 +36,7 @@ GET /employeeExperience/learningProviders/{learningProviderId}/learningContents/
 
 For a specific learning content based on its external ID (secondary key):
 ``` http
-GET /employeeExperience/learningProviders/{learningProviderId}/learningContents/{externalId='externalId'}
+GET /employeeExperience/learningProviders/{learningProviderId}/learningContents(externalId='{externalId}')
 ```
 
 ## Optional query parameters
