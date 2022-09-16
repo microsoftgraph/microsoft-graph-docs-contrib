@@ -4,28 +4,28 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this section, we will build your first ASP.NET project application to process the Microsoft Graph Data Connect data that was exported.
+In this section, you will build your first ASP.NET project application to process the Microsoft Graph Data Connect data that was exported.
 
 ## Create a new ASP.NET project
 
 1. Open Visual Studio and select **File > New > Project**.
 
-1. In the **New Project** dialog, do the following.
+1. In the **New Project** dialog box, do the following:
 
-    1. Search **ASP.NET Web Application** in the search box and select the **ASP.NET Web Application (.NET Framework)** option.
-    1. Click on **Next**.
+    1. In the search box, enter **ASP.NET Web Application**, and select the **ASP.NET Web Application (.NET Framework)** option.
+    1. Choose **Next**.
 
         ![A screenshot of the Visual Studio user interface showing the options to create a new project using ASP.NET Web Application.](../concepts/images/data-connect-vs-create-app.png)
 
-    1. Enter **EmailMetrics** for the name of the project.
-    1. Select **.NET Framework 4.7.2** for the framework option.
-    1. Select **Create**.
+    1. For the project name, enter **EmailMetrics**.
+    1. For the framework, select **.NET Framework 4.7.2**.
+    1. Choose **Create**.
 
     > [!IMPORTANT]
-    > Ensure that you enter the exact same name for the Visual Studio project that is specified in this quick start instructions. The Visual Studio project name becomes part of the namespace in the code. The code inside these instructions depends on the namespace matching the Visual Studio project name specified in these instructions. If you use a different project name, the code will not compile unless you adjust all the namespaces to match the Visual Studio project name you entered when you created the project.
+    > Make sure that you enter the same name for the Visual Studio project that is specified in this quick start. The Visual Studio project name becomes part of the namespace in the code. The code in these instructions depends on the namespace matching the Visual Studio project name specified. If you use a different project name, the code will not compile unless you adjust all the namespaces to match the Visual Studio project name you entered.
 
-    1. In the new **ASP.NET Web Application** project dialog, select MVC.
-    1. Select **Create**.
+    1. In the new **ASP.NET Web Application** project dialog box, select MVC.
+    1. Choose **Create**.
 
     ![A screenshot of the Visual Studio interface showing the options to choose an Model-View-Controller (MVC) ASP.NET Web application.](../concepts/images/data-connect-vs-create-app-mvc.png)
 
@@ -35,28 +35,28 @@ In this section, we will build your first ASP.NET project application to process
 
     ![Visual-Studio-Add-Connected-Service](../concepts/images/data-connect-vs-add-connected-service-sa.png)
 
-1. On the **Connected Services** dialog, select the green **+** sign which is located in the upper-right corner of the dialog.
+1. On the **Connected Services** dialog box, select the green **+** sign on the upper-right corner.
 
-1. In the **Add dependency** dialog, select **Azure Storage** and select **Next**.
+1. In the **Add dependency** dialog box, select **Azure Storage**, and then choose **Next**.
 
     ![A screenshot of the Visual Studio interface showing the add dependency dialog for the Azure Storage option.](../concepts/images/data-connect-vs-add-dependency-azsa.png)
 
-1. In the **Azure Storage** dialog, select the subscription and storage account where you exported the data in the previous exercise, then select **Next**.
+1. In the **Azure Storage** dialog box, select the subscription and storage account where you exported the data, and then choose **Next**.
 
     ![A screenshot of the Visual Studio interface showing the Configure Azure Storage, where you select the subscription and storage account.](../concepts/images/data-connect-vs-configure-az-storage.png)
 
-1. Provide the **Azure Storage connection**, a name of **AzureStorageConnectionString**, and select **Next**.
-1. Select **Finish**.
+1. Provide the **Azure Storage connection**, a name of **AzureStorageConnectionString**, and choose **Next**.
+1. Choose **Finish**.
 
     ![A screenshot of the Visual Studio interface showing the Configure Azure Storage summary.](../concepts/images/data-connect-vs-configure-sa-summary.png)
 
 ## Create a new model class that will be used to store the email metrics
 
-1. In the **Solution Explorer** tool window, right-click the **Models** folder and select **Add > Class**.
+1. In the **Solution Explorer** tool window, right-click the **Models** folder, and select **Add > Class**.
 
     ![A screenshot of the Visual Studio interface showing how you can add a new class by right-clicking in the models folder.](../concepts/images/data-connect-vs-add-new-model-class.png)
 
-1. In the **Add New Item** dialog, select **Class**, set the name of the file to _EmailMetric.cs_ and select **Add**.
+1. In the **Add New Item** dialog box, select **Class**, set the name of the file to _EmailMetric.cs_, and select **Add**.
 
 1. Add the following code to the class EmailMetric you just created.
 
@@ -69,9 +69,9 @@ In this section, we will build your first ASP.NET project application to process
 
 1. Right-click the **Controllers** folder and select **Add > Controller**.
 
-1. In the **Add Scaffold** dialog, select **MVC 5 Controller - Empty** and select **Add**.
+1. In the **Add Scaffold** dialog box, select **MVC 5 Controller - Empty**, and select **Add**.
 
-1. When prompted, name the controller **EmailMetricsController** and select **OK**.
+1. When prompted, name the controller **EmailMetricsController**, and choose **OK**.
 
 1. Add the following _using_ statements after the existing _using_ statements at the top of the file that contains the **EmailMetricsController** class.
 
@@ -185,11 +185,11 @@ In this section, we will build your first ASP.NET project application to process
 
 ## Create a new view for the EmailMetrics index action
 
-1. In the  **Solution Explorer** tool window, right-click the **Views > EmailMetrics** folder and select **Add > View**.
+1. In the  **Solution Explorer** tool window, right-click the **Views > EmailMetrics** folder, and select **Add > View**.
 
-1. In the **Add New Scaffolded Item** dialog box, select **MVC 5 View**, then select **Add**.
+1. In the **Add New Scaffolded Item** dialog box, select **MVC 5 View**, and then choose **Add**.
 
-1. In the **Add View** dialog, set the **View** name to **Index**, leave the remaining input controls to their default values, and select **Add**.
+1. In the **Add View** dialog box, set the **View** name to **Index**, leave the remaining input controls to their default values, and select **Add**.
 
     ![A screenshot of the Visual Studio interface showing how to add an new view called index.](../concepts/images/data-connect-vs-add-view-index.png)
 
@@ -223,7 +223,7 @@ In this section, we will build your first ASP.NET project application to process
 
 1. In the **Solution Explorer** tool window, right-click the **Views > EmailMetrics** folder and select **Add > View**.
 
-1. In the **Add View** dialog, set the following values, leave the remaining input controls to their default values, and select **Add**.
+1. In the **Add View** dialog box, set the following values, leave the remaining input controls to their default values, and choose **Add**.
 
     - **View name**: ShowMetrics
     - **Template**: List
@@ -232,7 +232,7 @@ In this section, we will build your first ASP.NET project application to process
         ![A screenshot of the Visual Studio interface showing how to add an new view called ShowMetrics.](../concepts/images/data-connect-vs-add-view-showmetrics.png)
 
     >[!TIP]
-    > In case you can't see the **EmailMetric** model in the dropdown box, please build the solution.
+    > If you can't see the **EmailMetric** model in the dropdown box, build the solution.
 
 1. Update the markup in the new **Views > EmailMetrics > _ShowMetrics.cshtml_** to the following. This will display the results of the calculations.
 
@@ -282,6 +282,6 @@ In this section, we will build your first ASP.NET project application to process
 
     ![A screenshot of the built ASP.NET Web application interface showing the view email metrics button.](../concepts/images/data-connect-vs-select-view-metrics.png)
 
-1. When the page loads, you will see a list of email addresses that were found among all emails with a sum of all the recipients sent between them, as shown from a small sample set in a test email extract in the following figure.
+1. When the page loads, you will see a list of email addresses that were found among all emails with a sum of all the recipients sent between them, as shown from a small sample set in a test email extract in the following image.
 
     ![A screenshot of the built ASP.NET Web application interface showing the view email metrics results.](../concepts/images/data-connect-vs-show-email-metrics.png)
