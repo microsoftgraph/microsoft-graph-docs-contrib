@@ -1,6 +1,6 @@
 ---
 title: "Update authenticationContextClassReference"
-description: "Update the properties of a authenticationContextClassReference object."
+description: "Create a new or update the properties of an authenticationContextClassReference object."
 ms.localizationpriority: medium
 author: "bakerCaleb"
 ms.prod: "identity-and-sign-in"
@@ -11,8 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
-Creates an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object, if the ID has not been used. If ID has been used, this call will update the [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
+Create an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object, if the ID has not been used. If ID has been used, this call updates the [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
 
 ## Permissions
 
@@ -63,7 +62,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Request
 
-The following is an example of the request.
+The following is an example of the request. If an object with the ID `c1` doesn't exist, this request creates the new object; if the object exists, this request updates the specified properties.
 
 
 <!-- {
@@ -80,6 +79,7 @@ Content-type: application/json
     "description": "Medium protection level defined for Contoso policy",
     "isAvailable": true
 }
+```
 
 ### Response
 
