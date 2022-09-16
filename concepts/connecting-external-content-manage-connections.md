@@ -104,11 +104,16 @@ Similar to enterprise search settings, you need to define how advanced eDiscover
 ![eDiscovery search review result example for AzureDevOps item.](./images/connectors-images/connecting-external-content-connection-settings-eDiscovery-result-example.png)
 
 > [!IMPORTANT]
-> The Adaptive Card format is used for rendering results in eDiscovery. Unlike for the search experience, the eDiscovery experience only supports Adaptive Card elements up to version 1.2.
+> The Adaptive Card format is used for rendering results in eDiscovery. Unlike for the search experience, the eDiscovery experience only supports Adaptive Card elements up to version 1.2. Read further to learn about other restrictions for eDiscovery result templates.
 
 Please ensure you select the 1.2 as the target version when configuring the eDiscovery result template in the [Adaptive Card Designer](https://adaptivecards.io/designer/).
 
 ![AdaptiveCard Designer target version selector.](./images/connectors-images/connecting-external-content-connection-settings-adaptiveCard-target-version.png)
+
+Please note that eDiscovery result templates have the following Adaptive Cards restrictions:
+1. Markdown is **not** supported. 
+1. Data binding expressions with `${}` are not supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello ${name}"` is not.
+1. Only data binding expressions for single-valued properties is supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello {employee.Name}"` is not.
 
 ## Update a connection
 
