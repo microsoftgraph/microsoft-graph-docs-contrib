@@ -21,6 +21,27 @@ For more information about GDAP, see:
 + [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
 + [Least-privileged roles by task](/partner-center/gdap-least-privileged-roles-by-task)
 
+
+## GDAP Workflow
+
+### GDAP Relationship Status Transition
+
+The status of the Delegated Admin relationship transitions as follows:
+
+![Delegated Admin relationship status transition diagram](relationship-status-transitions.png)
+
+1. [Create delegatedAdminRelationship](../api/tenantrelationship-post-delegatedadminrelationships.md)
+2. [Update delegatedAdminRelationship](../api/delegatedadminrelationship-update.md)
+3. [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: lockForApproval)
+4. [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: terminate)
+
+**Note**: Build the customer invitation link by using the **URI Template:** (https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/{adminRelationshipID}) and replace **{adminRelationshipID}** with id of the admin relationship request. This link will need to be sent to the customer after executing the [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: lockForApproval) API.
+
+Example:
++ Invitation Link: https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/5a6666c9-7282-0a41-67aa-25a5a3fbf339
++ Example Relationship ID: 5a6666c9-7282-0a41-67aa-25a5a3fbf339
+
+
 ## Use cases for GDAP APIs
 
 This section describes the ways that Microsoft partners can use the GDAP APIs to programmatically manage delegated admin relationships for their customers.
@@ -69,19 +90,6 @@ This section describes the ways that Microsoft partners can use the GDAP APIs to
 | Get a single delegated admin customer by ID | [Get delegatedAdminCustomer](../api/delegatedadmincustomer-get.md) |
 | Get service management details for a delegated admin customer | [List serviceManagementDetails](../api/delegatedadmincustomer-list-servicemanagementdetails.md) |
 
-
-## GDAP Workflow
-
-### GDAP Relationship Status Transition
-
-The status of the Delegated Admin relationship transitions as follows:
-
-![Delegated Admin relationship status transition diagram](relationship-status-transitions.png)
-
-1. [Create delegatedAdminRelationship](../api/tenantrelationship-post-delegatedadminrelationships.md)
-2. [Update delegatedAdminRelationship](../api/delegatedadminrelationship-update.md)
-3. [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: lockForApproval)
-4. [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: terminate)
 
 ### GDAP Relationship Access Assignment Status Transition
 
