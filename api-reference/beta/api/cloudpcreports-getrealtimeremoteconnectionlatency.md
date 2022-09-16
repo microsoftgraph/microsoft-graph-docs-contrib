@@ -39,7 +39,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|cloudPcId|String|**TODO: Add Description**|
+|cloudPcId|String|The id of the Cloud PC.|
 
 
 ## Request headers

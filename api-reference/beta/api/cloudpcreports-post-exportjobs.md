@@ -44,7 +44,6 @@ In the request body, supply a JSON representation of the [cloudPcExportJob](../r
 
 You can specify the following properties when creating a **cloudPcExportJob**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |reportName|cloudPcReportName|**TODO: Add Description**. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `unknownFutureValue`. Optional.|
@@ -77,17 +76,14 @@ Content-Type: application/json
 Content-length: 315
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcExportJob",
-  "reportName": "String",
-  "filter": "String",
+  "reportName": "TotalAggregatedRemoteConnectionReports",
   "select": [
-    "String"
-  ],
-  "format": "String",
-  "expirationDateTime": "String (timestamp)",
-  "requestDateTime": "String (timestamp)",
-  "exportJobStatus": "String",
-  "exportUrl": "String"
+      "CloudPcId",
+      "ManagedDeviceName",
+      "UserPrincipalName",
+      "DaysSinceLastSignIn",
+      "TotalUsageInHour"
+  ]
 }
 ```
 
@@ -103,21 +99,25 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 201 Created
-Content-Type: application/octet-stream
+Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcExportJob",
-  "id": "10eefd5f-04d6-4a12-e914-a357d0e679eb",
-  "reportName": "String",
-  "filter": "String",
-  "select": [
-    "String"
-  ],
-  "format": "String",
-  "expirationDateTime": "String (timestamp)",
-  "requestDateTime": "String (timestamp)",
-  "exportJobStatus": "String",
-  "exportUrl": "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/reports/exportJobs/$entity",
+    "id": "TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff",
+    "reportName": "totalAggregatedRemoteConnectionReports",
+    "filter": null,
+    "select": [
+        "CloudPcId",
+        "ManagedDeviceName",
+        "UserPrincipalName",
+        "DaysSinceLastSignIn",
+        "TotalUsageInHour"
+    ],
+    "format": null,
+    "expirationDateTime": "0001-01-01T00:00:00Z",
+    "requestDateTime": "2022-09-16T12:00:06.5137388Z",
+    "exportJobStatus": "inProgress",
+    "exportUrl": null
 }
 ```
 

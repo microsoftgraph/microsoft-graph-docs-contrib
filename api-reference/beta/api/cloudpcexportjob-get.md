@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/exportJobs/TotalAggregatedRemoteConnectionReports__04b48f21-c7c3-4cd0-8789-d9c2abcbf873
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/exportJobs/TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff
 ```
 
 
@@ -78,12 +78,12 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.cloudPcExportJob",
-    "id": "TotalAggregatedRemoteConnectionReports__04b48f21-c7c3-4cd0-8789-d9c2abcbf873",
+    "id": "TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff",
     "reportName": "totalAggregatedRemoteConnectionReports",
     "format": "csv",
     "select":  ["CloudPcId", "ManagedDeviceName", "UserPrincipalName", "DaysSinceLastSignIn", "TotalUsageInHour"],
     "filter": null,
-    "requestDateTime": "2022-04-25T02:26:06.5137388Z",
+    "requestDateTime": "2022-09-16T12:00:06.5137388Z",
     "expirationDateTime": "0001-01-01T00:00:00Z",
     "exportJobStatus": "completed",
     "exportUrl": "https://westus01repexpstorage.blob.core.windows.net/599fe3a3-0285-4e7f-9c83-ffdf37914e27/remoteConnectionEvents_af34378a-cf5a-418d-b735-54b0ee155118.zip"

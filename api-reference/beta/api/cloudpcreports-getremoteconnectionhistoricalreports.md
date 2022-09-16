@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|filter|String|OData filter syntax. Supported filters include 'and', 'or', 'lt', 'le', 'gt', 'ge' and 'eq'.|
+|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`.|
 |select|String collection|OData select syntax. Represents the selected columns of the reports. |
 |search|String|Specifies a string to search|
 |groupBy|String collection|Specify how to group the reports. If used, must have the same contents as select parameter|
