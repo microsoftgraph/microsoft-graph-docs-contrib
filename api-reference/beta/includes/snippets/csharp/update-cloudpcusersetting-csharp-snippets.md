@@ -10,6 +10,11 @@ var cloudPcUserSetting = new CloudPcUserSetting
 {
 	DisplayName = "Example",
 	SelfServiceEnabled = true,
+	RestorePointSetting = new CloudPcRestorePointSetting
+	{
+		FrequencyInHours = 16,
+		UserRestoreEnabled = true
+	},
 	LocalAdminEnabled = false
 };
 

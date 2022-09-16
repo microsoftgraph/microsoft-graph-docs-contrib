@@ -38,6 +38,7 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|id|String|Unique identifier for the submission.|
 |recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who this submission is assigned to.|
 |returnedBy|[identitySet](identityset.md)|User who moved the status of this submission to returned.|
 |returnedDateTime|DateTimeOffset|Moment in time when the submission was returned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|

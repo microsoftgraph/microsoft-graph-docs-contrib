@@ -64,7 +64,6 @@ X-MS-CloudPC-USGovCloudTenantAADToken: {token}
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

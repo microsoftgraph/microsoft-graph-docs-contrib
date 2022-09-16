@@ -2,7 +2,7 @@
 title: "defaultUserRolePermissions resource type"
 description: "Contains certain customizable permissions of default user role."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---

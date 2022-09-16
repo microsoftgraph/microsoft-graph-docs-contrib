@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST ** Collection URI for microsoft.graph.cloudPcCrossCloudGovernmentOrganizationMapping not found
+POST /deviceManagement/virtualEndpoint/crossCloudGovernmentOrganizationMapping
 ```
 
 ## Request headers
@@ -38,7 +38,7 @@ POST ** Collection URI for microsoft.graph.cloudPcCrossCloudGovernmentOrganizati
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
-|X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required.|
+|X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required. Represents the AAD token of government cloud tenant.|
 
 ## Request body
 Request body is empty JSON string.
@@ -65,7 +65,6 @@ X-MS-CloudPC-USGovCloudTenantAADToken: {token}
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

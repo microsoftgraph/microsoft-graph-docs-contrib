@@ -7,14 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ChannelsRequestBuilderGetQueryParameters{
-	Filter: "membershipType%20eq%20'private'",
+
+requestFilter := "membershipType eq 'private'"
+
+requestParameters := &graphconfig.ChannelsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.ChannelsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.ChannelsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Get(options)
+
+result, err := graphClient.TeamsById("team-id").Channels().Get(context.Background(), configuration)
 
 
 ```

@@ -1,6 +1,215 @@
 {
-
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "e9194248-72ef-4678-872f-99b59117edb5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for [listing a user's chats](https://docs.microsoft.com/en-us/graph/api/chat-list) in application-only context.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "e9194248-72ef-4678-872f-99b59117edb5",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-02T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "204490dc-7a25-41fe-93d5-db292c8951e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "topic",
+          "ChangeType": "Change",
+          "Description": "Added character limits and invalid character for chat topic.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "204490dc-7a25-41fe-93d5-db292c8951e9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-02T02:18:43.7311444Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a59546a1-c9a6-46f6-82dd-1a87b0e8813d",
+          "ApiChange": "Property",
+          "ChangedApiName": "topic",
+          "ChangeType": "Change",
+          "Description": "Added character limits and invalid character for chat topic.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "a59546a1-c9a6-46f6-82dd-1a87b0e8813d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-02T02:18:43.7311444Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6ae53b71-88ab-4827-8e71-ab0a7bd274ed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "teamTemplateAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamTemplateAudience** enumeration type.",
+          "Target": "teamTemplateAudience"
+        },
+        {
+          "Id": "6ae53b71-88ab-4827-8e71-ab0a7bd274ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamTemplate](https://docs.microsoft.com/en-us/graph/api/resources/teamTemplate?view=graph-rest-beta) resource.",
+          "Target": "teamTemplate"
+        },
+        {
+          "Id": "6ae53b71-88ab-4827-8e71-ab0a7bd274ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamTemplateDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamTemplateDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamTemplateDefinition?view=graph-rest-beta) resource.",
+          "Target": "teamTemplateDefinition"
+        },
+        {
+          "Id": "6ae53b71-88ab-4827-8e71-ab0a7bd274ed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamTemplates",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamTemplates** relationship to the [teamwork and communications](https://docs.microsoft.com/en-us/graph/api/resources/teamworkandcommunications?view=graph-rest-beta) resource.",
+          "Target": "teamwork and communications"
+        }
+      ],
+      "Id": "6ae53b71-88ab-4827-8e71-ab0a7bd274ed",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-07T02:18:43.7311444Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3e821a97-3a08-496a-8b48-ba0d6f05c247",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for [listing a user's chats](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-beta) in application-only context.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "3e821a97-3a08-496a-8b48-ba0d6f05c247",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-12T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fef256b6-cd3f-4ee8-89c6-7063f7068cab",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "replies",
+          "ChangeType": "Addition",
+          "Description": "Added support for `expand` on the **replies** relationship when [listing channel messages](https://docs.microsoft.com/en-us/graph/api/channel-list-messages?view=graph-rest-1.0) that are replies.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "fef256b6-cd3f-4ee8-89c6-7063f7068cab",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-09T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3580c1e4-e1bb-4611-843c-42e851863c3f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "replies",
+          "ChangeType": "Addition",
+          "Description": "Added support for `expand` on the **replies** relationship when [listing channel messages](https://docs.microsoft.com/en-us/graph/api/channel-list-messages?view=graph-rest-1.0) that are replies.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "3580c1e4-e1bb-4611-843c-42e851863c3f",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-09T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callTranscript",
+          "ChangeType": "Addition",
+          "Description": "Added the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource type.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/onlinemeeting-list-transcripts?view=graph-rest-beta) operation to the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/calltranscript-get?view=graph-rest-beta) operation to the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "transcripts",
+          "ChangeType": "Addition",
+          "Description": "Added the **transcripts** navigation property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-01T12:09:10.9478462Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f251ad5c-eccc-40f2-a9d8-6ea05fe38e6a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "messages",
+          "ChangeType": "Change",
+          "Description": "Using the `orderBy' query option when [listing chat messages](https://docs.microsoft.com/en-us/graph/api/chat-list-messages?view=graph-rest-beta) requires specifying the `desc` sort order.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "f251ad5c-eccc-40f2-a9d8-6ea05fe38e6a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-03-18T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {
@@ -24,7 +233,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-01-31T13:04:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -74,7 +283,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-01-06T07:01:10.9353119Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -92,7 +301,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-01-06T07:01:10.9353119Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -110,7 +319,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-01-12T13:04:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -128,7 +337,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-07-24T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -154,7 +363,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-07T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -180,7 +389,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-10-01T19:45:07.457Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -206,7 +415,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-11-04T17:18:30.8053373Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -240,7 +449,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-11-19T00:58:30.8053373Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -258,7 +467,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-25T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -284,7 +493,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-07-09T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -318,7 +527,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-30T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -408,7 +617,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-29T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -498,7 +707,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-06-29T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -548,7 +757,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-05-27T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -584,7 +793,97 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-14T16:05:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sharedWithTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharedWithTeams** relationship to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "allChannels",
+          "ChangeType": "Addition",
+          "Description": "Added the **allChannels** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "incomingChannels",
+          "ChangeType": "Addition",
+          "Description": "Added the **incomingChannels** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "associatedTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the **associatedTeams** relationship to the [userTeamwork](https://docs.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamInfo](https://docs.microsoft.com/en-us/graph/resources/teaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "teamInfo"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "associatedTeamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [associatedTeamInfo](https://docs.microsoft.com/en-us/graph/resources/associatedteaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "associatedTeamInfo"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharedWithChannelTeamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharedWithChannelTeamInfo](https://docs.microsoft.com/en-us/graph/resources/sharedwithchannelteaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "sharedWithChannelTeamInfo"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Method",
+          "ChangedApiName": "doesUserHaveAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [doesUserHaveAccess](https://docs.microsoft.com/en-us/graph/api/doesuserhaveaccess?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/resources/channel?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-05T21:46:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -602,7 +901,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-04-22T20:18:40.595Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -620,7 +919,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-16T20:18:40.595Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -670,7 +969,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-16T20:18:40.595Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -696,7 +995,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-05T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -738,7 +1037,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-04-02T08:48:43.715Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -764,7 +1063,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-02T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -822,7 +1121,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-24T18:04:41.569Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -888,7 +1187,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-18T23:09:05.727Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1011,7 +1310,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-12T18:22:05.727Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1029,7 +1328,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-11T18:04:41.569Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1055,7 +1354,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-08T18:04:41.569Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1073,7 +1372,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-03-08T09:51:13.342Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1091,7 +1390,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-17T21:46:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1133,7 +1432,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-21T21:46:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1167,7 +1466,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-16T21:46:49.407Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1201,7 +1500,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-03T08:02:21.817Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1227,7 +1526,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-14T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1269,7 +1568,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-16T00:06:17.723Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1319,7 +1618,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-09T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1369,7 +1668,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-08T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1411,7 +1710,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-02T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1485,7 +1784,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-12-02T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1543,7 +1842,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-02T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1577,7 +1876,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-07T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1635,7 +1934,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-11-17T11:52:14.154Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1661,7 +1960,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-11-02T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1679,7 +1978,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-11-20T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1697,7 +1996,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-11-20T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1739,7 +2038,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-10-15T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1757,7 +2056,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-10-15T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
 
@@ -1776,7 +2075,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Teamwork ",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1818,7 +2117,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Teamwork ",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1836,7 +2135,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-01-06T20:51:22.0064326Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1878,7 +2177,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1928,7 +2227,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-08-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1946,7 +2245,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1964,7 +2263,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-07-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -1982,7 +2281,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2024,7 +2323,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2050,7 +2349,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-05-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2068,7 +2367,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2086,7 +2385,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
-      "WorkloadArea": "Teamwork ",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": " Shifts"
     },
     {
@@ -2112,7 +2411,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2120,17 +2419,17 @@
         {
           "Id": "fc4a8ddc-cb9d-43bc-920e-af609987276b",
           "ApiChange": "Resource",
-          "ChangedApiName": "teamwork",
+          "ChangedApiName": "teamwork and communications",
           "ChangeType": "Addition",
-          "Description": "Added new entity [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-1.0).",
-          "Target": "teamwork"
+          "Description": "Added new entity [teamwork and communications](https://docs.microsoft.com/en-us/graph/api/resources/teamworkandcommunications?view=graph-rest-1.0).",
+          "Target": "teamwork and communications"
         }
       ],
       "Id": "fc4a8ddc-cb9d-43bc-920e-af609987276b",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2156,7 +2455,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2198,7 +2497,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-12-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2232,7 +2531,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2242,7 +2541,7 @@
           "ApiChange": "method",
           "ChangedApiName": "Get team photo,Update team photo",
           "ChangeType": "Addition",
-          "Description": "Added the [Get team photo](https://docs.microsoft.com/en-us/graph/api/team-get-photo?view=graph-rest-beta) and [Update team photo](https://docs.microsoft.com/en-us/graph/api/team-update-photo?view=graph-rest-beta) methods.",
+          "Description": "Added the [Get team photo](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta) and [Update team photo](https://docs.microsoft.com/en-us/graph/api/profilephoto-update?view=graph-rest-beta) methods.",
           "Target": "Get team photo,Update team photo"
         },
         {
@@ -2258,7 +2557,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2284,7 +2583,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2334,7 +2633,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2374,10 +2673,10 @@
         {
           "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
           "ApiChange": "Resource",
-          "ChangedApiName": "teamwork",
+          "ChangedApiName": "teamwork and communications",
           "ChangeType": "Addition",
-          "Description": "Added the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
-          "Target": "teamwork"
+          "Description": "Added the [teamwork and communications](https://docs.microsoft.com/en-us/graph/api/resources/teamworkandcommunications?view=graph-rest-beta) resource.",
+          "Target": "teamwork and communications"
         },
         {
           "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
@@ -2400,7 +2699,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2418,7 +2717,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2452,7 +2751,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2486,7 +2785,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-04-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2512,7 +2811,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-04-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2530,7 +2829,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2572,7 +2871,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2598,7 +2897,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-02-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2616,7 +2915,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-01-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2754,7 +3053,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-12-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2772,7 +3071,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-12-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -2910,7 +3209,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-11-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3024,7 +3323,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-11-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3042,7 +3341,33 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1e139b6c-35c7-4d54-8d37-cc2e85828db7",
+          "ApiChange": "Method",
+          "ChangedApiName": "softDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [softDelete](https://docs.microsoft.com/en-us/graph/api/chatmessage-softDelete?view=graph-rest-beta) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "1e139b6c-35c7-4d54-8d37-cc2e85828db7",
+          "ApiChange": "Method",
+          "ChangedApiName": "undoSoftDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [undoSoftDelete](https://docs.microsoft.com/en-us/graph/api/chatmessage-undoSoftDelete?view=graph-rest-beta) method to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "1e139b6c-35c7-4d54-8d37-cc2e85828db7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-12T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3132,7 +3457,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3390,7 +3715,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-07-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3440,7 +3765,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-06-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3514,7 +3839,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-04-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3540,7 +3865,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-10-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3566,7 +3891,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-06-16T18:06:46.246897Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3584,7 +3909,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-06-10T19:04:47.5265838Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3634,7 +3959,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-06-18T02:47:13.8030158Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3684,7 +4009,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-06-15T19:04:47.5265838Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3702,7 +4027,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-06-15T19:04:47.5265838Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -3992,7 +4317,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-07-16T07:31:32.9396997Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -4026,7 +4351,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-07-28T10:11:41.458Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -4308,7 +4633,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-12-03T12:26:47.0467025Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -4326,7 +4651,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-11-29T20:18:40.595Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
     {
@@ -4600,8 +4925,8 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "devices",
           "ChangeType": "Addition",
-          "Description": "Added the **devices** relationship to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
-          "Target": "teamwork"
+          "Description": "Added the **devices** relationship to the [teamwork and communications](https://docs.microsoft.com/en-us/graph/api/resources/teamworkandcommunications?view=graph-rest-beta) resource.",
+          "Target": "teamwork and communications"
         },
         {
           "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
@@ -4752,6 +5077,752 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-01-26T19:18:34.4466613Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6f87b3b8-1396-49ab-a2d0-a26bef7ddb9f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamSummary](https://docs.microsoft.com/en-us/graph/api/resources/teamSummary?view=graph-rest-beta) resource type.",
+          "Target": "teamSummary"
+        },
+        {
+          "Id": "6f87b3b8-1396-49ab-a2d0-a26bef7ddb9f",
+          "ApiChange": "Property",
+          "ChangedApiName": "summary",
+          "ChangeType": "Addition",
+          "Description": "Added the **summary** property to [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "6f87b3b8-1396-49ab-a2d0-a26bef7ddb9f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-03-14T20:18:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+        "ApiChange": "Member",
+        "ChangedApiName": "emailUser",
+        "ChangeType": "Addition",
+        "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration.",
+        "Target": "teamworkUserIdentityType"
+      }
+        ],
+        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2022-04-18T20:34:40.595Z",
+          "WorkloadArea": "Teamwork and communications",
+          "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0b96fb40-df13-4bb3-8868-7d6198b0e22e",
+          "ApiChange": "Member",
+          "ChangedApiName": "emailUser",
+          "ChangeType": "Addition",
+          "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration..",
+          "Target": "teamworkUserIdentityType"
+        }
+      ],
+      "Id": "0b96fb40-df13-4bb3-8868-7d6198b0e22e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-04-18T20:34:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "242cb3e4-ef8c-11eb-b6a8-8203ca0139f2",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamsAppId",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppId** property to the [chatMessageAttachment](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageAttachment?view=graph-rest-beta) resource.",
+          "Target": "chatMessageAttachment"
+        }
+      ],
+      "Id": "242cb3e4-ef8c-11eb-b6a8-8203ca0139f2",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-25T10:11:41.458Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e473f528-d700-4803-9985-6db1bde5c1aa",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for [subscribing to notifications](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) with resource data in delegated context for [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resources in a specified [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) or [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "e473f528-d700-4803-9985-6db1bde5c1aa",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-28T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e473f528-d700-4803-9985-6db1bde5c1ab",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for [subscribing to notifications](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0) with resource data in delegated context for [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0) resources in a specified [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) or [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "e473f528-d700-4803-9985-6db1bde5c1ab",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-04-28T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a3f15389-ea4f-4df2-84ef-7290824a28cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pinnedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the **pinnedMessages** relationship to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "a3f15389-ea4f-4df2-84ef-7290824a28cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pinnedChatMessageInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [pinnedChatMessageInfo](https://docs.microsoft.com/en-us/graph/api/resources/pinnedChatMessageInfo?view=graph-rest-beta) resource and supported methods.",
+          "Target": "pinnedChatMessageInfo"
+        }
+      ],
+      "Id": "a3f15389-ea4f-4df2-84ef-7290824a28cc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-26T00:34:47.4910041Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2de8f3b5-35b7-48e5-bd25-7997f021cd4c",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true&tabs=http) a subscription for [teams and channel notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-team-and-channel?view=graph-rest-1.0), [team and channel membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-teammembership?view=graph-rest-1.0), [chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-1.0) and [chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "2de8f3b5-35b7-48e5-bd25-7997f021cd4c",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-03T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d970b2ad-9487-45ca-b0d1-63736ef14ab6",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [teams and channel notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-team-and-channel?view=graph-rest-1.0), [team and channel membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-teammembership?view=graph-rest-1.0), [chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-1.0) and [chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "d970b2ad-9487-45ca-b0d1-63736ef14ab6",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-03T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "509f50b7-1745-44e4-9571-5995b23518ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0) a subscription for [teams and channel notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-team-and-channel?view=graph-rest-1.0), [team and channel membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-teammembership?view=graph-rest-1.0), [chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-1.0) and [chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "509f50b7-1745-44e4-9571-5995b23518ca",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-03T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3ed64bfd-33b1-43a9-b794-5e5cde9d8d36",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0) a subscription for [teams and channel notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-team-and-channel?view=graph-rest-1.0), [team and channel membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-teammembership?view=graph-rest-1.0), [chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-1.0) and [chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "3ed64bfd-33b1-43a9-b794-5e5cde9d8d36",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-03T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Member",
+          "ChangedApiName": "shared",
+          "ChangeType": "Addition",
+          "Description": "Added the `shared` member to the **channelMembershipType** enumeration.",
+          "Target": "channelMembershipType"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Member",
+          "ChangedApiName": "teamifyGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `teamifyGroup` member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Member",
+          "ChangedApiName": "createChannel",
+          "ChangeType": "Addition",
+          "Description": "Added the `createChannel` member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "associatedTeamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [associatedTeamInfo](https://docs.microsoft.com/en-us/graph/api/resources/associatedTeamInfo?view=graph-rest-1.0) resource and a supported method.",
+          "Target": "associatedTeamInfo"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sharedWithTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharedWithTeams** relationship to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharedWithChannelTeamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharedWithChannelTeamInfo](https://docs.microsoft.com/en-us/graph/api/resources/sharedWithChannelTeamInfo?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "sharedWithChannelTeamInfo"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "allChannels",
+          "ChangeType": "Addition",
+          "Description": "Added the **allChannels** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "incomingChannels",
+          "ChangeType": "Addition",
+          "Description": "Added the **incomingChannels** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamInfo](https://docs.microsoft.com/en-us/graph/api/resources/teamInfo?view=graph-rest-1.0) resource type.",
+          "Target": "teamInfo"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "associatedTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the **associatedTeams** relationship to the [userTeamwork](https://docs.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-1.0) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Method",
+          "ChangedApiName": "doesUserHaveAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [doesUserHaveAccess](https://docs.microsoft.com/en-us/graph/api/channel?view=graph-rest-1.0) method to the [channel](https://docs.microsoft.com/en-us/graph/api/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-22T09:24:30.6932815Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2a440a33-2393-43a7-b47e-db1d3acd7585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "messagePinnedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [messagePinnedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "messagePinnedEventMessageDetail"
+        },
+        {
+          "Id": "2a440a33-2393-43a7-b47e-db1d3acd7585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "messageUnpinnedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [messageUnpinnedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "messageUnpinnedEventMessageDetail"
+        }
+      ],
+      "Id": "2a440a33-2393-43a7-b47e-db1d3acd7585",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-15T00:54:29.7304356Z",
+	  "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e3b7dbe0-aa53-43b5-8bb5-b1325054d964",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true&tabs=http) a subscription for [user-level chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "e3b7dbe0-aa53-43b5-8bb5-b1325054d964",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-29T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4c046981-1154-4834-921d-eaddd7185f26",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [user-level chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "4c046981-1154-4834-921d-eaddd7185f26",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-29T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "386bbcdb-1e1c-4f3f-b7d0-ad7b9ea6cf7c",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0) a subscription for [user-level chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "386bbcdb-1e1c-4f3f-b7d0-ad7b9ea6cf7c",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-29T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "df3ad823-5394-4753-b0f2-79beb4dc2e17",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0) a subscription for [user-level chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "df3ad823-5394-4753-b0f2-79beb4dc2e17",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-29T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "81CC1882-7054-4CCF-971B-17E05E1AB312",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "81CC1882-7054-4CCF-971B-17E05E1AB312",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-02T15:04:59.427Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "5B9E91C9-BB4A-4AF5-A78B-4B1649D02527",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-22T15:04:49.427Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d63505d3-b68c-4fc0-b9d5-ec67cd05f574",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true&tabs=http) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "d63505d3-b68c-4fc0-b9d5-ec67cd05f574",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1c06c349-ae7e-457c-a361-c1f348e933ce",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "1c06c349-ae7e-457c-a361-c1f348e933ce",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "67375642-1dd9-40d5-9557-60666af89db3",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "67375642-1dd9-40d5-9557-60666af89db3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "973b69eb-4b51-42ad-a9a0-69d01a7c8157",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "973b69eb-4b51-42ad-a9a0-69d01a7c8157",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "ed2dd249-298c-4f2d-be8f-820179dfa0a7",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true&tabs=http) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-beta#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "ed2dd249-298c-4f2d-be8f-820179dfa0a7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7c19a825-dc16-4707-8f1f-4183354e1229",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-beta#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "7c19a825-dc16-4707-8f1f-4183354e1229",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d92bccc9-a7d1-4bca-a3de-17b29f97c035",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-beta#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "d92bccc9-a7d1-4bca-a3de-17b29f97c035",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e643e918-6db1-4c0d-a3c6-07cfe0895f54",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-beta#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "e643e918-6db1-4c0d-a3c6-07cfe0895f54",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "fcf602d1-fffb-4398-998c-05ce64b1e2a8",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true&tabs=http) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-beta#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "fcf602d1-fffb-4398-998c-05ce64b1e2a8",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "93e701bc-aeb5-470a-8ff4-650804bce647",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-beta#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "93e701bc-aeb5-470a-8ff4-650804bce647",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "19c808ad-7b07-433f-8f35-a80509344a08",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-beta#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "19c808ad-7b07-433f-8f35-a80509344a08",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "007d9f4d-643c-4f9f-8009-0f71428ab05e",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-beta#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "007d9f4d-643c-4f9f-8009-0f71428ab05e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6a4e583a-818c-418e-878b-f5e17b691b89",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Chat.ReadBasic.WhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of Chat.ReadBasic.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "9b38d17b-1b86-4a06-a8ac-7517c9a9e57c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Chat.Read.WhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of Chat.Read.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "3fb65956-b7e5-4d8e-ac3c-6ec01672c991",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Chat.ReadWrite.WhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of Chat.ReadWrite.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "3e977da8-1f40-44b1-95d8-6b51c880b314",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ChatMember.Read.WhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of ChatMember.Read.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "b650b304-a9d0-4833-9f92-a3e8ac593fec",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ChatMember.ReadWriteWhereInstalled",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission of ChatMember.ReadWrite.WhereInstalled to the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "a0be1a78-e915-49f0-b677-f5d227004236",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-09T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1e139b6c-35c7-4d54-8d37-cc2e812829db7",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Change",
+          "Description": "Added support for the ability to update properties of the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "1e139b6c-35c7-4d54-8d37-cc2e812829db7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-26T08:14:02.5231411Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }

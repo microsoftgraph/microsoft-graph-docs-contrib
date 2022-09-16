@@ -2,7 +2,7 @@
 title: "calendar resource type"
 description: "A calendar which is a container for events. It can be a calendar for a user, or the default calendar of a Microsoft 365 group."
 ms.localizationpriority: high
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

@@ -3,7 +3,7 @@ title: "recentNotebook resource type"
 description: "A recently accessed OneNote notebook. A **recentNotebook** is similar to a notebook but has fewer properties."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: notes
 author: "jewan-microsoft"
 ---
 

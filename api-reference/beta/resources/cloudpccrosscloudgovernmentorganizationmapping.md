@@ -1,6 +1,6 @@
 ---
 title: "cloudPcCrossCloudGovernmentOrganizationMapping resource type"
-description: "**TODO: Add Description**"
+description: "Represents Cloud PC organization mapping between public cloud organization and US government cloud organization."
 author: "SuyliuMS"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents Cloud PC organization mapping between public cloud organization and US government cloud organization.
 For GCC (US Government Community Cloud) customers, the Azure Active Directory for tenant is in public cloud, but the Azure resources and Windows 365 Cloud PCs are in US government cloud. This mapping is required for customer administrators to setup & config Windows 365 and for the end users at GCC customers to access their Windows 365 Cloud PCs. The setup and maintenance of the tenant mapping must be done while maintaining the security and compliance requirements for the FedRAMP certification and onboarding to the US Government cloud.
-
-Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|

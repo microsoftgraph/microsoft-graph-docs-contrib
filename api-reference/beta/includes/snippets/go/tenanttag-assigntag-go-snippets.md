@@ -7,15 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetTenantIds( []String {
+requestBody := graphmodels.NewAssignTagPostRequestBody()
+tenantIds := []string {
 	"String",
+
 }
-options := &msgraphsdk.AssignTagRequestBuilderPostOptions{
-	Body: requestBody,
-}
-tenantTagId := "tenantTag-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).AssignTag().Post(options)
+requestBody.SetTenantIds(tenantIds)
+
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").AssignTag().Post(context.Background(), requestBody, nil)
 
 
 ```
