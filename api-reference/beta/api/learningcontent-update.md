@@ -83,10 +83,10 @@ If successful, this method returns a `202 Accepted` response code and an updated
 
 ### Example 1: Update the metadata of a learning content based on its ID
 
-The following examples shows a request that updates the metadata of a learning content based on its ID (primary key).
+The following example shows a request that updates the metadata of a learning content based on its ID (primary key).
 
 #### Request
-The following is an example of a request.
+The example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -127,7 +127,7 @@ Content-Type: application/json
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -172,10 +172,10 @@ Content-Type: application/json
 
 ### Example 2: Update the metadata of a learning content based on its external ID
 
-The following examples shows a request that updates the metadata of a learning content based on its external ID (secondary key).
+The following example shows a request that updates the metadata of a learning content based on its external ID (secondary key).
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -216,7 +216,7 @@ Content-Type: application/json
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
