@@ -4,21 +4,32 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-A Microsoft 365 administrator has the ability to approve or deny consent requests. This can be done via the Microsoft 365 Admin Center or programmatically via PowerShell. When you run a pipeline and trigger a PAM request, the request is attached to your user account that owns the service principal used by the pipeline. Even if the account is part of the approver group that you set up, you can't use it to approve the PAM request because self-approvals are not allowed. If you try, you'll get an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed." For development, you'll want to have a second account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange Online accounts.
+A Microsoft 365 administrator has the ability to approve or deny consent requests. This can be done via the Microsoft 365 admin center or programmatically via PowerShell. When you run a pipeline and trigger a privileged access management (PAM) request, the request is attached to your user account that owns the service principal used by the pipeline. Even if the account is part of the approver group that you set up, you can't use it to approve the PAM request because self-approvals are not allowed. If you try, you'll get an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed." For development, you'll want to have a second account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange Online accounts.
 
 ## Approve consent requests
 
-# [Microsoft 365 Admin Center](#tab/Microsoft365)
+# [Microsoft 365 admin center](#tab/Microsoft365)
 
-1. Open a browser and go to your [Microsoft 365 Admin Portal](https://admin.microsoft.com).
+1. Open a browser and go to your [Microsoft 365 admin center](https://admin.microsoft.com).
 
 1. To approve or deny consent requests, go to [Privileged Access](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess).
+
+    ![Screenshot of the org settings page with Privileged access highlighted.](../concepts/images/data-connect-consent-request-a-new.png)
+
+    ![Screenshot of the Privileged access pane.](../concepts/images/data-connect-consent-request-b-new.png)
 
 1. Select a pending **Data Access Request**.
 
 1. In the **Data Access Request** call out, select the **Approve** button.
 
     ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-approve.png)
+1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
+
+   <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
+
+1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
+
+    <!--//TODO for Gladys or Richa: test whether these powershell commands are still right, if commands are right, screenshots are fine-->
 
 # [PowerShell](#tab/PowerShell)
 
@@ -45,7 +56,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
         ```
 
         > [!IMPORTANT]
-        > After you are finished with this session, be sure you you disconnect from the session using the PowerShell command `Remove-PSSession $Session`. Exchange Online only allows for three open remote PowerShell sessions to protect against denial-of-service (DoS) attacks. If you simply close the PowerShell window, it will leave the connection open.
+        > After you're finished with this session, be sure you you disconnect from the session using the PowerShell command `Remove-PSSession $Session`. Exchange Online only allows for three open remote PowerShell sessions to protect against denial-of-service (DoS) attacks. If you simply close the PowerShell window, it'll leave the connection open.
 
 1. Get a list of all pending data requests from Microsoft Graph data connect by executing the following PowerShell.
 
@@ -68,7 +79,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
 
-    ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png)
+   <!-- ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png) -->
 
 1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
@@ -76,16 +87,14 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 ## Verify extracted data from Microsoft 365 to Azure Storage Blob
 
-1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
-1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
+1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 
-1. On the sidebar navigation, select the **All resources** menu item.
 
-1. In the list of resources, select the **Azure Storage account** you created previously in this tutorial.
+1. Sign in using an account with **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal.
 
-1. On the sidebar navigation menu, select **Blobs** from the **Azure Storage account** blade.
+1. In the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
 
-1. Select the **container** created previously in this tutorial that you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container now.
+1. On the sidebar navigation menu, select **Storage browser**, select **Blob containers** and then select the **container** created previously in this tutorial that you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container now.
 
     ![A screenshot showing the Azure portal UI for the Storage account service. It is showing the container where the extracted data is being stored.](../concepts/images/data-connect-adf-extracted-data-in-blob.png)

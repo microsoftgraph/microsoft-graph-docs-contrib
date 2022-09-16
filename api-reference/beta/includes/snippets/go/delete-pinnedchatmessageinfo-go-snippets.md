@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.ChatsById("chat-id").PinnedMessagesById("pinnedChatMessageInfo-id").Delete()
+graphClient.ChatsById("chat-id").PinnedMessagesById("pinnedChatMessageInfo-id").Delete(context.Background(), nil)
 
 
 ```

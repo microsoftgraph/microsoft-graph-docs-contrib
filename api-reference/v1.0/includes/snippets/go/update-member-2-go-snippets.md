@@ -8,15 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewConversationMember()
-"@odata.type" := "#microsoft.graph.aadUserConversationMember"
-requestBody.Set"@odata.type"(&"@odata.type") 
 roles := []string {
 	"owner",
 
 }
 requestBody.SetRoles(roles)
 
-graphClient.TeamsById("team-id").MembersById("conversationMember-id").Patch(requestBody)
+graphClient.TeamsById("team-id").MembersById("conversationMember-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

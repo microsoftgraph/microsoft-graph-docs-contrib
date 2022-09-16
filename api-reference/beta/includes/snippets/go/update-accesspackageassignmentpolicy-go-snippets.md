@@ -51,8 +51,6 @@ escalationTimeInMinutes := int32(11520)
 
 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.groupMembers"
-.Set"@odata.type"(&"@odata.type") 
 isBackup := true
 .SetIsBackup(&isBackup) 
 id := "d2dcb9a1-a445-42ee-83a8-476522ed6cbf"
@@ -60,8 +58,6 @@ id := "d2dcb9a1-a445-42ee-83a8-476522ed6cbf"
 description := "group for users from connected organizations which have no external sponsor"
 .SetDescription(&description) 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.externalSponsors"
-.Set"@odata.type"(&"@odata.type") 
 isBackup := false
 .SetIsBackup(&isBackup) 
 
@@ -100,8 +96,6 @@ localizedTexts := []graphmodels.Objectable {
 }
 text.SetLocalizedTexts(localizedTexts)
 .SetText(text)
-"@odata.type" := "#microsoft.graph.accessPackageMultipleChoiceQuestion"
-.Set"@odata.type"(&"@odata.type") 
 
 
  := graphmodels.New()
@@ -169,8 +163,6 @@ localizedTexts := []graphmodels.Objectable {
 }
 text.SetLocalizedTexts(localizedTexts)
 .SetText(text)
-"@odata.type" := "#microsoft.graph.accessPackageTextInputQuestion"
-.Set"@odata.type"(&"@odata.type") 
 isSingleLineQuestion := false
 .SetIsSingleLineQuestion(&isSingleLineQuestion) 
 
@@ -182,7 +174,7 @@ isSingleLineQuestion := false
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPoliciesById("accessPackageAssignmentPolicy-id").Put(requestBody)
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPoliciesById("accessPackageAssignmentPolicy-id").Put(context.Background(), requestBody, nil)
 
 
 ```

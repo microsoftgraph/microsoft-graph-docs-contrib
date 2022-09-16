@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgCommunicationCallAudioRoutingGroup -CallId $callId -OutFile $outFileId
+Get-MgCommunicationCallAudioRoutingGroup -CallId $callId
 
 ```

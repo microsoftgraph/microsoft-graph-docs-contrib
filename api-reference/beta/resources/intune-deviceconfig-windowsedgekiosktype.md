@@ -26,3 +26,5 @@ Edge kiosk type
 
 
 
+
+

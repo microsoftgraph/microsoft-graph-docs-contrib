@@ -14,10 +14,7 @@ requestBody.SetClientContext(&clientContext)
 
 prompt := graphmodels.NewPrompt()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.mediaPrompt", 
 mediaInfo := graphmodels.New()
-"@odata.type" := "#microsoft.graph.mediaInfo"
-mediaInfo.Set"@odata.type"(&"@odata.type") 
 uri := "https://cdn.contoso.com/beep.wav"
 mediaInfo.SetUri(&uri) 
 resourceId := "1D6DE2D4-CD51-4309-8DAA-70768651088E"
@@ -34,7 +31,7 @@ requestBody.SetPrompts(prompts)
 loop := false
 requestBody.SetLoop(&loop) 
 
-result, err := graphClient.Communications().CallsById("call-id").PlayPrompt().Post(requestBody)
+result, err := graphClient.Communications().CallsById("call-id").PlayPrompt().Post(context.Background(), requestBody, nil)
 
 
 ```

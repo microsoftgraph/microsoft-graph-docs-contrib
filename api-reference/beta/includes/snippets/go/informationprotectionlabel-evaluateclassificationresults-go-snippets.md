@@ -15,8 +15,6 @@ configuration := &graphconfig.EvaluateClassificationResultsRequestBuilderPostReq
 }
 requestBody := graphmodels.NewEvaluateClassificationResultsPostRequestBody()
 contentInfo := graphmodels.NewContentInfo()
-"@odata.type" := "#microsoft.graph.contentInfo"
-contentInfo.Set"@odata.type"(&"@odata.type") 
 format := graphmodels.DEFAULT_CONTENTFORMAT 
 contentInfo.SetFormat(&format) 
 identifier := null
@@ -45,7 +43,7 @@ classificationResults := []graphmodels.ClassificationResultable {
 }
 requestBody.SetClassificationResults(classificationResults)
 
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateClassificationResults().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.InformationProtection().Policy().Labels().EvaluateClassificationResults().Post(context.Background(), requestBody, configuration)
 
 
 ```

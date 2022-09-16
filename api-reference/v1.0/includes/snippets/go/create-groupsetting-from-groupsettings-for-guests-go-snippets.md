@@ -25,7 +25,7 @@ values := []graphmodels.SettingValueable {
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.GroupsById("group-id").Settings().Post(requestBody)
+result, err := graphClient.GroupsById("group-id").Settings().Post(context.Background(), requestBody, nil)
 
 
 ```

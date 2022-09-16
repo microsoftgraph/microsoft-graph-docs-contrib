@@ -67,13 +67,13 @@ $timeConstraint->setTimeSlots($timeSlotsArray);
 
 
 $requestBody->setTimeConstraint($timeConstraint);
-$requestBody->setIsOrganizerOptional('false');
+$requestBody->setIsOrganizerOptional(false);
 
-$requestBody->setMeetingDuration('PT1H');
+$requestBody->setMeetingDuration(new \DateInterval('PT1H'));
 
-$requestBody->setReturnSuggestionReasons('true');
+$requestBody->setReturnSuggestionReasons(true);
 
-$requestBody->setMinimumAttendeePercentage(new ('100'));
+$requestBody->setMinimumAttendeePercentage(100);
 
 
 $requestConfiguration = new FindMeetingTimesRequestBuilderPostRequestConfiguration();

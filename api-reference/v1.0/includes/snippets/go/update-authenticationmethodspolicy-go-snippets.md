@@ -38,8 +38,6 @@ requestBody.SetRegistrationEnforcement(registrationEnforcement)
 
 
 authenticationMethodConfiguration := graphmodels.NewAuthenticationMethodConfiguration()
-"@odata.type" := "#microsoft.graph.fido2AuthenticationMethodConfiguration"
-authenticationMethodConfiguration.Set"@odata.type"(&"@odata.type") 
 id := "Fido2"
 authenticationMethodConfiguration.SetId(&id) 
 state := graphmodels.DISABLED_AUTHENTICATIONMETHODSTATE 
@@ -72,7 +70,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Policies().AuthenticationMethodsPolicy().Patch(requestBody)
+graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

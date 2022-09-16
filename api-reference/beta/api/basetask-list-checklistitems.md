@@ -67,27 +67,23 @@ GET https://graph.microsoft.com/beta/me/tasks/lists/AAMkADliMmU5YjJlLTVmMmQtNGQz
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-checklistitem-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-checklistitem-for-me-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-checklistitem-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-checklistitem-for-me-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-checklistitem-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-checklistitem-for-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-checklistitem-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-checklistitem-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-checklistitem-for-me-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-checklistitem-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-checklistitem-for-me-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

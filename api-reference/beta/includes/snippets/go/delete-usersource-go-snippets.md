@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Compliance().Ediscovery().CasesById("case-id").CustodiansById("custodian-id").UserSourcesById("userSource-id").Delete()
+graphClient.Compliance().Ediscovery().CasesById("case-id").CustodiansById("custodian-id").UserSourcesById("userSource-id").Delete(context.Background(), nil)
 
 
 ```

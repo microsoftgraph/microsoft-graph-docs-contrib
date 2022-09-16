@@ -8,15 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewTenantCustomizedInformation()
-"@odata.type" := "#microsoft.graph.managedTenants.tenantCustomizedInformation"
-requestBody.Set"@odata.type"(&"@odata.type") 
 tenantId := "String"
 requestBody.SetTenantId(&tenantId) 
 
 
 tenantContactInformation := graphmodels.NewTenantContactInformation()
-"@odata.type" := "microsoft.graph.managedTenants.tenantContactInformation"
-tenantContactInformation.Set"@odata.type"(&"@odata.type") 
 name := "String"
 tenantContactInformation.SetName(&name) 
 title := "String"
@@ -36,7 +32,7 @@ requestBody.SetContacts(contacts)
 website := "String"
 requestBody.SetWebsite(&website) 
 
-graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById("tenantCustomizedInformation-id").Patch(requestBody)
+graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById("tenantCustomizedInformation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

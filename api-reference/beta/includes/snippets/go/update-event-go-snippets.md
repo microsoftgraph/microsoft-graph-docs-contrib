@@ -36,7 +36,7 @@ categories := []string {
 }
 requestBody.SetCategories(categories)
 
-graphClient.Me().EventsById("event-id").Patch(requestBody)
+graphClient.Me().EventsById("event-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DeviceManagement.Functions
 
-Get-MgDeviceManagementVirtualEndpointCloudPcConnectivityHistory -CloudPCId $cloudPCId -OutFile $outFileId
+Get-MgDeviceManagementVirtualEndpointCloudPcConnectivityHistory -CloudPCId $cloudPCId
 
 ```

@@ -9,12 +9,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new ReferenceCreate();
-$requestBody->set@odataid('https://graph.microsoft.com/v1.0/groups/{id}');
+$requestBody = new MembersPostRequestBody();
+$additionalData = [
+'@odata.type' => '#Microsoft.Graph.Group', 
+'description' => 'Self help community for golf', 
+'displayName' => 'Golf Assist', 
+'groupTypes' => ['Unified', ],
+'mailEnabled' => true,
+'mailNickname' => 'golfassist', 
+'securityEnabled' => false,
+];
+$requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->directory()->administrativeUnitsById('administrativeUnit-id')->members()->ref()->post($requestBody);
+
+$graphServiceClient->directory()->administrativeUnitsById('administrativeUnit-id')->members()->post($requestBody);
 
 
 ```

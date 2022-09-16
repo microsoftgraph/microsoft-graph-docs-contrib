@@ -15,7 +15,7 @@ requestBody.SetStartDateTime(&startDateTime)
 endDateTime , err := time.Parse(time.RFC3339, "2018-10-15T00:00:00.000Z")
 requestBody.SetEndDateTime(&endDateTime) 
 
-graphClient.TeamsById("team-id").Schedule().Share().Post(requestBody)
+graphClient.TeamsById("team-id").Schedule().Share().Post(context.Background(), requestBody, nil)
 
 
 ```

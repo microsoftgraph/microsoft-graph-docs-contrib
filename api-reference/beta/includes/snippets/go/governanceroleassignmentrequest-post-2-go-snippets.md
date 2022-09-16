@@ -25,13 +25,13 @@ type := "Once"
 schedule.SetType(&type) 
 startDateTime , err := time.Parse(time.RFC3339, "2018-05-12T23:28:43.537Z")
 schedule.SetStartDateTime(&startDateTime) 
-duration := "PT9H"
+duration , err := abstractions.ParseISODuration("PT9H")
 schedule.SetDuration(&duration) 
 requestBody.SetSchedule(schedule)
 linkedEligibleRoleAssignmentId := "e327f4be-42a0-47a2-8579-0a39b025b394"
 requestBody.SetLinkedEligibleRoleAssignmentId(&linkedEligibleRoleAssignmentId) 
 
-result, err := graphClient.PrivilegedAccessById("privilegedAccess-id").RoleAssignmentRequests().Post(requestBody)
+result, err := graphClient.PrivilegedAccessById("privilegedAccess-id").RoleAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```
