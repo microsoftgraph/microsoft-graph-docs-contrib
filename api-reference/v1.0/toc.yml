@@ -4998,7 +4998,7 @@ items:
             - name: List
               href: api/conditionalaccessroot-list-policies.md
             - name: Create
-              href: api/conditionalaccesspolicy-create.md
+              href: api/conditionalaccessroot-post-policies.md
             - name: Get
               href: api/conditionalaccesspolicy-get.md
             - name: Update
@@ -5051,12 +5051,10 @@ items:
               href: resources/authenticationcontextclassreference.md
             - name: List
               href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
-            - name: Create
-              href: api/conditionalaccessroot-patch-authenticationcontextclassreferences.md
+            - name: Create or update
+              href: api/authenticationcontextclassreference-update.md    
             - name: Get
               href: api/authenticationcontextclassreference-get.md
-            - name: Update
-              href: api/authenticationcontextclassreference-update.md    
             - name: Delete
               href: api/authenticationcontextclassreference-delete.md  
         - name: Cross-tenant access
