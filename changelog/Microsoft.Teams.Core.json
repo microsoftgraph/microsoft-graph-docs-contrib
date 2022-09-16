@@ -7,7 +7,7 @@
           "ApiChange": "Authentication",
           "ChangedApiName": "Messaging",
           "ChangeType": "Change",
-          "Description": "Enabled validation on chat message sender tenant id, when performing PATCH operation on chat message.",
+          "Description": "Enabled validation on [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat) [message](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage) sender tenant id, when performing PATCH operation on chat message. After this change, only tenant whose user sent the message, will be able to perform Data Loss Prevention PATCH on the chat message. i.e., change the `policyViolation` property on a message chat.",
           "Target": "chat"
         }
       ],
