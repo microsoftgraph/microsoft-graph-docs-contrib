@@ -15,7 +15,7 @@ requestBody.SetDisplayName(&displayName)
 description := "A custom permission grant policy to customize conditions for granting consent."
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Policies().PermissionGrantPolicies().Post(requestBody)
+result, err := graphClient.Policies().PermissionGrantPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -13,7 +13,7 @@ allowedToCreateApps := false
 defaultUserRolePermissions.SetAllowedToCreateApps(&allowedToCreateApps) 
 requestBody.SetDefaultUserRolePermissions(defaultUserRolePermissions)
 
-graphClient.Policies().AuthorizationPolicyById("authorizationPolicy-id").Patch(requestBody)
+graphClient.Policies().AuthorizationPolicyById("authorizationPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

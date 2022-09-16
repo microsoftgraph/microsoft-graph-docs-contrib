@@ -18,7 +18,7 @@ tags := []string {
 }
 requestBody.SetTags(tags)
 
-graphClient.Security().IncidentsById("incident-id").Patch(requestBody)
+graphClient.Security().IncidentsById("incident-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

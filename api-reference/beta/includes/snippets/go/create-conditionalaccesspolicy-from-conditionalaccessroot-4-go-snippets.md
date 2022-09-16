@@ -50,7 +50,7 @@ builtInControls := []graphmodels.ConditionalAccessGrantControlable {
 grantControls.SetBuiltInControls(builtInControls)
 requestBody.SetGrantControls(grantControls)
 
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(requestBody)
+result, err := graphClient.Identity().ConditionalAccess().Policies().Post(context.Background(), requestBody, nil)
 
 
 ```

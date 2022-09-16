@@ -1420,9 +1420,10 @@ Possible values for user account types (group membership), per Windows definitio
 |userPassedMFADrivenByRiskBasedPolicy|
 |adminDismissedAllRiskForUser|
 |adminConfirmedSigninCompromised|
-|adminConfirmedUserCompromised|
 |hidden|
+|adminConfirmedUserCompromised|
 |unknownFutureValue|
+|m365DAdminDismissedDetection|
 
 ### riskEventTypes values
 
