@@ -2,7 +2,7 @@
 title: "Working with users in Microsoft Graph"
 description: "Build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files."
 ms.localizationpriority: high
-author: "jpettere"
+author: "yyuank"
 ms.prod: "users"
 doc_type: conceptualPageType
 ---
