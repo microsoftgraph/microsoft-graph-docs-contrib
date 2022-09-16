@@ -9,6 +9,9 @@ doc_type: apiPageType
 
 # Delete authenticationContextClassReference
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Delete an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object that's not published or used by a conditional access policy.
 
 ## Permissions

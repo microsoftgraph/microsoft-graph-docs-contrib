@@ -301,7 +301,7 @@ The **allowExternalSenders** property can only be accessed on unified groups. Ac
 
 ### Removing a group owner also removes the user as a group member
 
-When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
+When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners) is called for a group that is associated with a [team](/graph/api/resources/team), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
 
 ## Identity and access
 
