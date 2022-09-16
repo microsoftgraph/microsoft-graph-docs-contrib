@@ -73,7 +73,7 @@ tasks := []graphmodels.Taskable {
 workflow.SetTasks(tasks)
 requestBody.SetWorkflow(workflow)
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").CreateNewVersion().Post(requestBody)
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").CreateNewVersion().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -53,7 +53,7 @@ requestBody.SetPlatforms(platforms)
 state := graphmodels.PUBLISHED_ANSWERSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.Search().Qnas().Post(requestBody)
+result, err := graphClient.Search().Qnas().Post(context.Background(), requestBody, nil)
 
 
 ```

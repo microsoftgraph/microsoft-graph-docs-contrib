@@ -14,7 +14,7 @@ configuration := &graphconfig.CloudPcProvisioningPolicyRequestBuilderGetRequestC
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById("cloudPcProvisioningPolicy-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById("cloudPcProvisioningPolicy-id").Get(context.Background(), configuration)
 
 
 ```

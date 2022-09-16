@@ -13,7 +13,7 @@ requestBody.SetId(&id)
 type := graphmodels.GROUP_IDENTITYTYPE 
 requestBody.SetType(&type) 
 
-result, err := graphClient.External().ConnectionsById("externalConnection-id").GroupsById("externalGroup-id").Members().Post(requestBody)
+result, err := graphClient.External().ConnectionsById("externalConnection-id").GroupsById("externalGroup-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```

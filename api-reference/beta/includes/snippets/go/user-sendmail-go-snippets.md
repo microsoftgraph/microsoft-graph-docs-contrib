@@ -47,7 +47,7 @@ requestBody.SetMessage(message)
 saveToSentItems := false
 requestBody.SetSaveToSentItems(&saveToSentItems) 
 
-graphClient.Me().SendMail().Post(requestBody)
+graphClient.Me().SendMail().Post(context.Background(), requestBody, nil)
 
 
 ```

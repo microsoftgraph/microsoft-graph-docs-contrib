@@ -17,7 +17,7 @@ configuration := &graphconfig.ContentRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-graphClient.Drive().ItemsById("driveItem-id").Content().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+graphClient.Drive().ItemsById("driveItem-id").Content().Get(context.Background(), configuration)
 
 
 ```

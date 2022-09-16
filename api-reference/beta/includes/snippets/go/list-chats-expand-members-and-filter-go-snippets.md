@@ -18,7 +18,7 @@ configuration := &graphconfig.ChatsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.UsersById("user-id").Chats().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.UsersById("user-id").Chats().Get(context.Background(), configuration)
 
 
 ```

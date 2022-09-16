@@ -11,7 +11,7 @@ requestBody := graphmodels.NewMovePostRequestBody()
 destinationId := "destinationId-value"
 requestBody.SetDestinationId(&destinationId) 
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").Move().Post(requestBody)
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").Move().Post(context.Background(), requestBody, nil)
 
 
 ```

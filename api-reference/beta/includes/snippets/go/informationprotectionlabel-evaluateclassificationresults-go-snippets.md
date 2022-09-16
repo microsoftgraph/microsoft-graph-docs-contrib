@@ -43,7 +43,7 @@ classificationResults := []graphmodels.ClassificationResultable {
 }
 requestBody.SetClassificationResults(classificationResults)
 
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateClassificationResults().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.InformationProtection().Policy().Labels().EvaluateClassificationResults().Post(context.Background(), requestBody, configuration)
 
 
 ```
