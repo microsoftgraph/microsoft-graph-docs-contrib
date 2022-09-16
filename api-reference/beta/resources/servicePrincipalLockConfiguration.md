@@ -1,0 +1,64 @@
+---
+title: "servicePrincipalLockConfiguration resource type"
+description: "Service principal lock configuration for the application."
+ms.localizationpriority: medium
+doc_type: resourcePageType
+ms.prod: "applications"
+author: "saumadan"
+---
+
+# servicePrincipalLockConfiguration resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Basic profile information of the application.
+
+## Properties
+
+| Property | Type | Description |
+|:---------------|:--------|:----------|
+| isEnabled                  | Boolean | Enables or disables Service principal lock configuration. | 
+| allProperties              | Boolean | Enables locking all properties.                                                                                                             |
+| credentialsWithUsageVerify | Boolean | Locks credential properties (keyCredentials and passwordCredentials) where cred usage type is `Verify`. This locks OAuth Service principals.                                                   |
+| credentialsWithUsageSign   | Boolean | Locks credential properties (keyCredentials and passwordCredentials) where cred usage type is `Sign`.                                                                 |
+| tokenEncryptionKeyId       | Boolean | Locks token encryption keyId modification on Service principal.                                                                            |
+
+## JSON representation
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.servicePrincipalLockConfiguration"
+}-->
+
+```json
+{
+   "isEnabled": "Boolean",
+   "allProperties": "Boolean",
+   "credentialsWithUsageVerify": "Boolean",
+   "credentialsWithUsageSign": "Boolean",
+   "tokenEncryptionKeyId": "Boolean"
+}
+
+```
+
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "servicePrincipalLockConfiguration resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
+
