@@ -15,7 +15,7 @@ Represents details of a system event message.
 
 System messages are messages generated for events such as [members](../resources/conversationMember.md) added to a [channel](../resources/channel.md), **members** added to a [chat](../resources/chat.md), and [team](../resources/team.md) description updated.
 
-List of events supported
+### Supported events
 
 | Event | Description |
 | :---- | :---------- |
