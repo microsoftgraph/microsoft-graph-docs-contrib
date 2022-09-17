@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "f1e8f2ba-e5b1-4104-88be-1ed7f6f44904",
+          "ApiChange": "Resource",
+          "ChangedApiName": "broadcastMeetingCaptionSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [broadcastMeetingCaptionSettings](https://docs.microsoft.com/en-us/graph/api/resources/broadcastMeetingCaptionSettings?view=graph-rest-1.0) resource type.",
+          "Target": "broadcastMeetingCaptionSettings"
+        },
+        {
+          "Id": "f1e8f2ba-e5b1-4104-88be-1ed7f6f44904",
+          "ApiChange": "Property",
+          "ChangedApiName": "captions",
+          "ChangeType": "Addition",
+          "Description": "Added the **captions** property to the [broadcastMeetingSettings](https://docs.microsoft.com/en-us/graph/api/resources/broadcastMeetingSettings?view=graph-rest-1.0) resource.",
+          "Target": "broadcastMeetingSettings"
+        }
+      ],
+      "Id": "f1e8f2ba-e5b1-4104-88be-1ed7f6f44904",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-16T22:15:23.0059399Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "04c62755-1479-4809-9ff7-b4ef4f046120",
           "ApiChange": "Method",
           "ChangedApiName": "clearUserPreferredPresence",
