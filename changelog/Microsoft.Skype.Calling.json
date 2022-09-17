@@ -15,15 +15,15 @@
           "ApiChange": "Property",
           "ChangedApiName": "captions",
           "ChangeType": "Addition",
-          "Description": "Added the `captions` property to the [broadcastMeetingSettings](https://docs.microsoft.com/en-us/graph/api/resources/broadcastMeetingSettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the **captions** property to the [broadcastMeetingSettings](https://docs.microsoft.com/en-us/graph/api/resources/broadcastMeetingSettings?view=graph-rest-1.0) resource.",
           "Target": "broadcastMeetingSettings"
         }
       ],
       "Id": "f1e8f2ba-e5b1-4104-88be-1ed7f6f44904",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-09-14T22:15:23.0059399Z",
-      "WorkloadArea": "Cloud communications",
+      "CreatedDateTime": "2022-09-16T22:15:23.0059399Z",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": "Call"
     },
     {
