@@ -125,7 +125,7 @@ Content-Type: application/json
 
 ## See also
 
-- [Learn how to identify the large gallery view participant in a call](/graph/cloud-communications-identifylargegalleryview)
+- [Identify large gallery view participants in a roster](/graph/cloud-communications-identifylargegalleryview)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
