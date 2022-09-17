@@ -2537,9 +2537,9 @@
       "Id": "ca3a97ab-9b3e-4533-b46e-c2c6788e5635",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-09-07T13:12:12.3532131Z",
+      "CreatedDateTime": "2022-09-16T13:12:12.3532131Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     }
   ]
 }
