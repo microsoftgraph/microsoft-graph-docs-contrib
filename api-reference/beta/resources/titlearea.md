@@ -17,35 +17,35 @@ Represent the title area of a given SharePoint page.
 
 ## Properties
 
-| Property                | Type                       | Description                                                                                                                                                  |
-| :---------------------- | :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| alternativeText         | String                     | Alternative text on the title area.                                                                                                                          |
-| enableGradientEffect    | Boolean                    | Indicates whether the title area has a gradient effect enabled                                                                                               |
-| image                   | String                     | Url of The image in the title area.                                                                                                                          |
-| layout                  | [titleAreaLayoutType](../resources/titlearea.md#titlearealayouttype-values)        | Enumeration value that indicates the layout of the title area.The possible values are: `cutInShape`, `plain`, `colorBlock`, `overlap`, `unknownFutureValue`. |
-| showAuthor              | Boolean                    | Indicates whether the author should be shown in title area.                                                                                                  |
-| showPublishedDate       | Boolean                    | Indicates whether the published date should be shown in title area.                                                                                          |
-| showTextBlockAboveTitle | Boolean                    | Indicates whether the text block above title should be shown in title area.                                                                                  |
-| textAboveTitle          | String                     | The text above title line.                                                                                                                                   |
-| textAlignment           | [titleAreaTextAlignmentType](../resources/titlearea.md#titleareatextalignmenttype-values) | Enumeration value that indicates the text alignment of the title area. The possible values are: `left`, `center`, `unknownFutureValue`.                      |
+| Property                | Type                                                                                      | Description                                                                                                                                                   |
+| :---------------------- | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| alternativeText         | String                                                                                    | Alternative text on the title area.                                                                                                                           |
+| enableGradientEffect    | Boolean                                                                                   | Indicates whether the title area has a gradient effect enabled                                                                                                |
+| image                   | String                                                                                    | Url of The image in the title area.                                                                                                                           |
+| layout                  | [titleAreaLayoutType](../resources/titlearea.md#titlearealayouttype-values)               | Enumeration value that indicates the layout of the title area. The possible values are: `cutInShape`, `plain`, `colorBlock`, `overlap`, `unknownFutureValue`. |
+| showAuthor              | Boolean                                                                                   | Indicates whether the author should be shown in title area.                                                                                                   |
+| showPublishedDate       | Boolean                                                                                   | Indicates whether the published date should be shown in title area.                                                                                           |
+| showTextBlockAboveTitle | Boolean                                                                                   | Indicates whether the text block above title should be shown in title area.                                                                                   |
+| textAboveTitle          | String                                                                                    | The text above title line.                                                                                                                                    |
+| textAlignment           | [titleAreaTextAlignmentType](../resources/titlearea.md#titleareatextalignmenttype-values) | Enumeration value that indicates the text alignment of the title area. The possible values are: `left`, `center`, `unknownFutureValue`.                       |
 
 ### titleAreaLayoutType values
 
-| Member             | Description
-|:------------------ |:-----------------------------------------------
-| imageAndTitle         | The title area has an image and title layout
-| plain              | The title area has a plain layout
-| colorBlock         | The title area has a color block layout
-| overlap            | The title area has an overlap layout
-| unknownFutureValue | Marker value for future compatibility.
+| Member             | Description                                   |
+| :----------------- | :-------------------------------------------- |
+| imageAndTitle      | The title area has an image and title layout. |
+| plain              | The title area has a plain layout.            |
+| colorBlock         | The title area has a color block layout.      |
+| overlap            | The title area has an overlap layout.         |
+| unknownFutureValue | Marker value for future compatibility.        |
 
 ### titleAreaTextAlignmentType values
 
-| Member             | Description
-|:------------------ |:-----------------------------------------------
-| left               | The text in title area is left-aligned
-| center             | The text in title area is center-aligned
-| unknownFutureValue | Marker value for future compatibility.
+| Member             | Description                               |
+| :----------------- | :---------------------------------------- |
+| left               | The text in title area is left-aligned.   |
+| center             | The text in title area is center-aligned. |
+| unknownFutureValue | Marker value for future compatibility.    |
 
 ## Relationships
 

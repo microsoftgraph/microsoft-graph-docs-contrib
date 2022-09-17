@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Get a page in the site pages list of a site
 
 Namespace: microsoft.graph
@@ -23,11 +24,11 @@ Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][]
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
 
 ## HTTP request
 
@@ -39,8 +40,8 @@ GET /sites/{site-id}/pages/{page-id}
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
@@ -48,31 +49,36 @@ GET /sites/{site-id}/pages/{page-id}
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-page-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/get-page-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-page-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
+
 [!INCLUDE [sample-code](../includes/snippets/php/get-page-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -93,14 +99,14 @@ Content-type: application/json
   "showRecommendedPages": false,
   "createdBy": {
     "user": {
-      "displayName": "Tenant Admin User",
-      "email": "admin@contoso.com"
+        "displayName": "Rahul Mittal",
+        "email": "rahmit@contoso.com"
     }
   },
   "lastModifiedBy": {
     "user": {
-      "displayName": "Tenant Admin User",
-      "email": "admin@contoso.com"
+        "displayName": "Rahul Mittal",
+        "email": "rahmit@contoso.com"
     }
   },
   "publishingState": {
@@ -124,5 +130,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

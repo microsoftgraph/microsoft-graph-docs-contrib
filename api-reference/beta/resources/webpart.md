@@ -17,27 +17,31 @@ Represent a specific WebPart instance on a SharePoint page.
 
 This is an abstract type.
 
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List webParts](../api/webpart-list.md)|[webPart](../resources/webpart.md) collection|Get a list of the [webPart](../resources/webpart.md) objects and their properties.|
-|[Get webPart](../api/webpart-get.md)|[webPart](../resources/webpart.md)|Read the properties and relationships of a [webPart](../resources/webpart.md) object.|
-|[Get webPart position](../api/webpart-getposition.md) | [webPartPosition](../resources/webpartposition.md)|Get the [webPartPosition](../resources/webpartposition.md) information of a [WebPart](../resources/webpart.md).|
 
+| Method                                                                         | Return type                                        | Description                                                                                                                             |
+| :----------------------------------------------------------------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| [List webParts](../api/webpart-list.md)                                        | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects and their properties.                                                      |
+| [Get webPart](../api/webpart-get.md)                                           | [webPart](../resources/webpart.md)                 | Read the properties and relationships of a [webPart](../resources/webpart.md) object.                                                   |
+| [Get webPart position](../api/webpart-getposition.md)                          | [webPartPosition](../resources/webpartposition.md) | Get the [webPartPosition](../resources/webpartposition.md) information of a [WebPart](../resources/webpart.md).                         |
+| [Get webPart collection by position](../api/sitePage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects filtered by [webPartPosition](../resources/webpartposition.md) information |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String| Unique instance identifier of the webPart. nherited from [entity](../resources/entity.md).|
+
+| Property | Type   | Description                                                                                 |
+| :------- | :----- | :------------------------------------------------------------------------------------------ |
+| id       | String | Unique instance identifier of the webPart. Inherited from [entity](../resources/entity.md). |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -46,10 +50,10 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.webPart",
   "id": "String (identifier)"
 }
 ```
-

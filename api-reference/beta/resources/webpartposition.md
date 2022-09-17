@@ -16,24 +16,29 @@ Namespace: microsoft.graph
 Represents the position information of the given WebPart to the current page.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-| columnId            | Double  | Indicate the identifier of the column where the WebPart located in.                             |
-| horizontalSectionId | Double  | Indicate the horizontal section where the WebPart located in. |
-| isInVerticalSection | boolean | Indicate whether the WebPart located in the vertical section.       |
-| webPartIndex         | Double  | Index of the current WebPart.Represents the order of webPart in this column or section |
+
+| Property            | Type    | Description                                                                             |
+| :------------------ | :------ | :-------------------------------------------------------------------------------------- |
+| columnId            | Double  | Indicate the identifier of the column where the WebPart located in.                     |
+| horizontalSectionId | Double  | Indicate the horizontal section where the WebPart located in.                           |
+| isInVerticalSection | boolean | Indicate whether the WebPart located in the vertical section.                           |
+| webPartIndex        | Double  | Index of the current WebPart. Represents the order of webPart in this column or section. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.webPartPosition"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.webPartPosition",
   "webPartIndex": "Double",
@@ -42,4 +47,3 @@ The following is a JSON representation of the resource.
   "columnId": "Double"
 }
 ```
-

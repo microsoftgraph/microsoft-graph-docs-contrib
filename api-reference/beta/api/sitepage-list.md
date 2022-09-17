@@ -7,13 +7,14 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # List the pages in the site pages library of a site
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination). Sort alphabetically by 'name' in ascending order.
+Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination). Sort alphabetically by `name` in ascending order.
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -23,11 +24,11 @@ Get the collection of [sitePage][] objects from the site pages [list][] in a sit
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
 
 ## HTTP request
 
@@ -39,11 +40,11 @@ GET /sites/{site-id}/pages
 
 ### Request
 
-<!-- 
-{ 
+<!--
+{
 	"blockType": "request",
 	"name": "get-pages",
-	"scopes": "sites.read.all", 
+	"scopes": "sites.read.all",
 	"tags": "service.sharepoint"
 }
 -->
@@ -54,13 +55,13 @@ GET /sites/{site-id}/pages
 
 ### Response
 
-<!-- 
-{ 
+<!--
+{
     "blockType": "response",
     "@odata.type": "microsoft.graph.sitePage",
     "truncated": true,
     "isCollection":true
-} 
+}
 -->
 
 ```http
@@ -79,14 +80,14 @@ Content-type: application/json
             "showRecommendedPages": false,
             "createdBy": {
                 "user": {
-                    "displayName": "Tenant Admin User",
-                    "email": "admin@contoso.com"
+                    "displayName": "Rahul Mittal",
+                    "email": "rahmit@contoso.com"
                 }
             },
             "lastModifiedBy": {
                 "user": {
-                    "displayName": "Tenant Admin User",
-                    "email": "admin@contoso.com"
+                    "displayName": "Rahul Mittal",
+                    "email": "rahmit@contoso.com"
                 }
             },
             "publishingState": {
@@ -94,8 +95,8 @@ Content-type: application/json
                 "versionId": "1.1",
                 "checkedOutBy": {
                     "user": {
-                        "displayName": "Tenant Admin User",
-                        "email": "admin@contoso.com"
+                        "displayName": "Rahul Mittal",
+                        "email": "rahmit@contoso.com"
                     }
                 }
             },
@@ -126,14 +127,14 @@ Content-type: application/json
             "showRecommendedPages": false,
             "createdBy": {
                 "user": {
-                    "displayName": "Tenant Admin User",
-                    "email": "admin@contoso.com"
+                    "displayName": "Rahul Mittal",
+                    "email": "rahmit@contoso.com"
                 }
             },
             "lastModifiedBy": {
                 "user": {
-                    "displayName": "Tenant Admin User",
-                    "email": "admin@contoso.com"
+                    "displayName": "Rahul Mittal",
+                    "email": "rahmit@contoso.com"
                 }
             },
             "publishingState": {
@@ -141,8 +142,8 @@ Content-type: application/json
                 "versionId": "1.1",
                 "checkedOutBy": {
                     "user": {
-                        "displayName": "Tenant Admin User",
-                        "email": "admin@contoso.com"
+                        "displayName": "Rahul Mittal",
+                        "email": "rahmit@contoso.com"
                     }
                 }
             },
@@ -178,5 +179,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

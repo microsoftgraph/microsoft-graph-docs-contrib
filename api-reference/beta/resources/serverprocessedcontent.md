@@ -23,7 +23,7 @@ Represent the server processed content of a given WebPart.
 |htmlStrings|[metaDataKeyStringPair](../resources/metadatakeystringpair.md) collection|A key-value map where keys are string identifiers and values are rich text with HTML format. SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.|
 |imageSources|[metaDataKeyStringPair](../resources/metadatakeystringpair.md) collection|A key-value map where keys are string identifiers and values are image sources. SharePoint servers treat the values as image sources and run services like search index and link fixup on them.|
 |links|[metaDataKeyStringPair](../resources/metadatakeystringpair.md) collection|A key-value map where keys are string identifiers and values are links. SharePoint servers treat the values as links and run services like link fixup on them.|
-|searchablePlainTexts|[metaDataKeyStringPair](../resources/metadatakeystringpair.md) collection|A key-value map where keys are string identifiers and values are strings that should be search indexed. The values are HTML-encoded before being sent to the server. The encoded values are visible to the search indexer, but are not treated as valid HTML. So, other services such as link fixup will not run on them.|
+|searchablePlainTexts|[metaDataKeyStringPair](../resources/metadatakeystringpair.md) collection|A key-value map where keys are string identifiers and values are strings that should be search indexed.|
 
 ## Relationships
 None.

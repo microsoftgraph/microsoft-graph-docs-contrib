@@ -18,19 +18,25 @@ Represent a standard WebPart instance on a SharePoint page.
 Inherits from [webPart](../resources/webpart.md).
 
 ## Methods
+
 There is no methods available on this resource.
+
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|data|[webPartData](../resources/webpartdata.md)|Data of the WebPart. |
-|id|String|Instance identifier of the webPart.Inherited from [entity](../resources/entity.md).|
-|webPartType|String|A Guid which indicates the type of the webPart|
+
+| Property    | Type                                       | Description                                                                          |
+| :---------- | :----------------------------------------- | :----------------------------------------------------------------------------------- |
+| data        | [webPartData](../resources/webpartdata.md) | Data of the WebPart.                                                                 |
+| id          | String                                     | Instance identifier of the WebPart. Inherited from [entity](../resources/entity.md). |
+| webPartType | String                                     | A Guid which indicates the type of the WebPart                                       |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -39,7 +45,8 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.standardWebPart",
   "id": "String (identifier)",
@@ -49,4 +56,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

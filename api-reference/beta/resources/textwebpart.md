@@ -15,22 +15,27 @@ Namespace: microsoft.graph
 
 Represent a text WebPart instance on a SharePoint page.
 
-
 Inherits from [webPart](../resources/webpart.md).
 
 ## Methods
+
 There is no methods available on this resource.
+
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Instance identifier of the webPart. Inherited from [entity](../resources/entity.md).|
-|innerHTML|String|The HTML string in text WebPart|
+
+| Property  | Type   | Description                                                                          |
+| :-------- | :----- | :----------------------------------------------------------------------------------- |
+| id        | String | Instance identifier of the WebPart. Inherited from [entity](../resources/entity.md). |
+| innerHTML | String | The HTML string in text WebPart                                                      |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -39,11 +44,11 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.textWebPart",
   "id": "String (identifier)",
   "innerHTML": "String"
 }
 ```
-
