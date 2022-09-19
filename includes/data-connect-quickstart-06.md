@@ -94,9 +94,9 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
 
     1. Select the **Sink** tab. Choose **New**, select **Azure Blob Storage**, and then choose **Continue**.
     
-            ![Screenshot of the Integrate page with the Sink tab and the New button highlighted](../concepts/images/data-connect-synapse-sink.png)
+    ![Screenshot of the Integrate page with the Sink tab and the New button highlighted](../concepts/images/data-connect-synapse-sink.png)
 
-            ![Screenshot of the New integration dataset pane with Azure Blob Storage highlighted](../concepts/images/data-connect-synapse-integration-service.png)
+    ![Screenshot of the New integration dataset pane with Azure Blob Storage highlighted](../concepts/images/data-connect-synapse-integration-service.png)
 
         1. For the format for the data, select **Binary**, and then choose **Continue**.
         1. Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it does not exist already.
