@@ -4,295 +4,93 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this section, you will be building your first ASP.NET project application to process the Microsoft Graph Data Connect data that was exported.
+A Microsoft 365 administrator has the ability to approve or deny consent requests. This can be done via the Microsoft 365 admin center or programmatically via PowerShell. When you run a pipeline and trigger a privileged access management (PAM) request, the request is attached to your user account that owns the service principal used by the pipeline. Even if the account is part of the approver group that you set up, you can't use it to approve the PAM request because self-approvals are not allowed. If you try, you'll get an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed." For development, you'll want to have a second account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange Online accounts.
 
-## Create a new ASP.NET project
+## Approve consent requests
 
-1. Open Visual Studio and select **File > New > Project**.
+# [Microsoft 365 admin center](#tab/Microsoft365)
 
-1. In the **New Project** dialog, do the following.
+1. Open a browser and go to the [Microsoft 365 admin center](https://admin.microsoft.com).
 
-    1. Search **ASP.NET Web Application** in the search box and select the **ASP.NET Web Application (.NET Framework)** option.
-    1. Choose **Next**.
+1. To approve or deny consent requests, go to [Privileged Access](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess).
 
-        ![A screenshot of the Visual Studio user interface showing the options to create a new project using ASP.NET Web Application.](../concepts/images/data-connect-vs-create-app.png)
+    ![A screenshot of the Org settings page of the admin center with Privileged access highlighted.](../concepts/images/data-connect-consent-request-a-new.png)
 
-    1. Enter **EmailMetrics** for the name of the project.
-    1. Select **.NET Framework 4.7.2** for the framework option.
-    1. Select **Create**.
+    ![A screenshot of the Privileged Access pane with Create policies and manage requests highlighted.](../concepts/images/data-connect-consent-request-b-new.png)
 
-    > [!IMPORTANT]
-    > Ensure that you enter the exact same name for the Visual Studio Project that is specified in this quick start instructions. The Visual Studio Project name becomes part of the namespace in the code. The code inside these instructions depends on the namespace matching the Visual Studio Project name specified in these instructions. If you use a different project name the code will not compile unless you adjust all the namespaces to match the Visual Studio Project name you enter when you create the project.
+1. Select a pending **Data Access Request**.
 
-    1. In the new **ASP.NET Web Application** project dialog, select **MVC**.
-    1. Select **Create**.
+1. In the **Data Access Request** call out, choose **Approve**.
 
-    ![A screenshot of the Visual Studio interface showing the options to choose an Model-View-Controller (MVC) ASP.NET Web application.](../concepts/images/data-connect-vs-create-app-mvc.png)
+    ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-approve.png)
+1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
 
-## Add and configure your Azure Storage as a Connected Service
+    ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png)
 
-1. In the **Solution Explorer** tool window, right-click the **Connected Services** node and select **Add Connected Service**.
+1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
-    ![Visual-Studio-Add-Connected-Service](../concepts/images/data-connect-vs-add-connected-service-sa.png)
+# [PowerShell](#tab/PowerShell)
 
-1. On the **Connected Services** dialog, select the green **+** sign which is located in the upper-right corner of the dialog.
+1. Open Windows PowerShell.
+1. Ensure that your PowerShell session has enabled remotely signed scripts.
 
-1. In the **Add dependency** dialog, select **Azure Storage** and select **Next**.
-
-    ![A screenshot of the Visual Studio interface showing the add dependecy dialog for the Azure Storage option.](../concepts/images/data-connect-vs-add-dependency-azsa.png)
-
-1. In the **Azure Storage** dialog, select the subscription and storage account where you exported the data in the previous exercise, select **Next**.
-
-    ![A screenshot of the Visual Studio interface showing the Configure Azure Storage, where you select the subscription and storage account.](../concepts/images/data-connect-vs-configure-az-storage.png)
-
-1. Provide the **Azure Storage connection** a name of **AzureStorageConnectionString** and select **Next**.
-1. Select **Finish**.
-
-    ![A screenshot of the Visual Studio interface showing the Configure Azure Storage summary.](../concepts/images/data-connect-vs-configure-sa-summary.png)
-
-## How to add a connection string to the Web.config file at root level
-
-Add the following code to the Web.config file (the one at the root level) between </appSettings> and <system.web>. Make sure not to add it to the Web.config file under the Views folder.
-
-```xml
-<connectionStrings>
-    <add name="AzureStorageConnectionString" connectionString="DefaultEndpointsProtocol="COPY FROM THE CONNECTION STRING FOUND IN YOUR AZURE STORAGE ACCOUNT-ACCESS KEYS –CONNECTION STRING"/>
-</connectionStrings>
-```
-
-
-## Create a new model class that will be used to store the email metrics
-
-1. In the  **Solution Explorer** tool window, right-click the **Models** folder and select **Add > Class**.
-
-    ![A screenshot of the Visual Studio interface showing how you can add a new class by right-clicking in the models folder.](../concepts/images/data-connect-vs-add-new-model-class.png)
-
-1. In the **Add New Item** dialog, select **Class**, set the name of the file to _EmailMetric.cs_ and select **Add**.
-
-1. Add the following code to the class EmailMetric you just created.
-
-    ```csharp
-    public string Email;
-    public double RecipientsToEmail;
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
     ```
 
-## Create a new controller that will calculate and display the results
+1. Connect to Exchange Online.
 
-1. Right-click the **Controllers** folder and select **Add > Controller**.
+    1. Get a sign-in credential by running the following PowerShell. Sign in using a different user than one that created and started the Azure Data Factory pipeline, who has the **Global administrator** role applied, is a member of the group that has rights to approve requests to data in Microsoft 365, and has multi-factor authentication enabled.
 
-1. In the **Add Scaffold** dialog, select **MVC 5 Controller - Empty** and select **Add**.
+        ```powershell
+        $UserCredential = Get-Credential
+        ```
 
-1. When prompted, name the controller **EmailMetricsController** and select **OK**.
+    1. Create a new Exchange Online PowerShell session and load (import) it.
 
-1. Add the following using statements after the existing using statements at the top of the file containing the **EmailMetricsController** class.
+        ```powershell
+        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+        Import-PSSession $Session -DisableNameChecking
+        ```
 
-    ```csharp
-    using System.Collections.Generic;
-    using System.Configuration;
-    using System.IO;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using System.Web.Mvc;
-    using Azure.Storage.Blobs;
-    using Azure.Storage.Blobs.Models;
-    using Newtonsoft.Json.Linq;
+        > [!IMPORTANT]
+        > After you're finished with this session, be sure you you disconnect from the session using the PowerShell command `Remove-PSSession $Session`. Exchange Online only allows for three open remote PowerShell sessions to protect against denial-of-service (DoS) attacks. If you simply close the PowerShell window, it'll leave the connection open.
+
+1. Get a list of all pending data requests from Microsoft Graph data connect by running the following PowerShell command.
+
+    ```powershell
+    Get-ElevatedAccessRequest | where {$_.RequestStatus -eq 'Pending'} | select RequestorUPN, Service, Identity, RequestedAccess | fl
     ```
 
-1. Add the following code to the **EmailMetricsController** class. These will be used to connect to the **Azure Storage Account** that contains the exported data.
+    - Examine the list of data access requests returned. In the following image, notice that there are two pending requests.
 
-    ```csharp
-    private const string connectionStringName = "AzureStorageConnectionString";
-    private const string emailBlobName = "m365mails";
+        ![A screenshot showing a list of pending requests formatted as a list in a PowerShell console.](../concepts/images/data-connect-ps-pending-requests.png)
 
+1. Approve a data access returned in the previous step by copying the Identity GUID of a request by running the following PowerShell command.
+
+    > [!NOTE]
+    > Replace the GUID in the following code snippet with the GUID from the results of the previous step.
+
+    ```powershell
+    Approve-ElevatedAccessRequest -RequestId fa041379-0000-0000-0000-7cd5691484bd -Comment 'approval request granted'
     ```
 
-1. Add the following method to the **EmailMetricsController** class. This will process an **Azure Blob** and update a collection representing the email accounts and how many recipients there were combined across all emails found for the extracted accounts.
+1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
 
-    ```csharp
-    private async Task ProcessBlobEmails(List<Models.EmailMetric> emailMetrics, BlobClient emailBlob)
-    {
-        using (var stream = new MemoryStream())
-        {
-            var response = await emailBlob.DownloadToAsync(stream);
-            var pos = stream.Seek(0, SeekOrigin.Begin);
+  ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png)
 
-            using (var reader = new StreamReader(stream))
-            {
+1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                {
-                    var jsonObj = JObject.Parse(line);
+---
 
-                    // extract sender
-                    var sender = jsonObj.SelectToken("Sender.EmailAddress.Address")?.ToString();
-                    // No sender - skip this one
-                    if (string.IsNullOrEmpty(sender)) continue;
+## Verify extracted data from Microsoft 365 to Azure Storage Blob
 
-                    // extract and count up recipients
-                    var totalRecipients = 0;
-                    totalRecipients += jsonObj.SelectToken("ToRecipients")?.Children().Count() ?? 0;
-                    totalRecipients += jsonObj.SelectToken("CcRecipients")?.Children().Count() ?? 0;
-                    totalRecipients += jsonObj.SelectToken("BccRecipients")?.Children().Count() ?? 0;
+1. Open a browser and go to the [Azure portal](https://portal.azure.com/).
 
-                    var emailMetric = new Models.EmailMetric();
-                    emailMetric.Email = sender;
-                    emailMetric.RecipientsToEmail = totalRecipients;
+1. Sign in using an account with the **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role.
 
-                    // if already have this sender...
-                    var existingMetric = emailMetrics.FirstOrDefault(metric => metric.Email == emailMetric.Email);
-                    if (existingMetric != null)
-                    {
-                        existingMetric.RecipientsToEmail += emailMetric.RecipientsToEmail;
-                    }
-                    else
-                    {
-                        emailMetrics.Add(emailMetric);
-                    }
-                }
-            }
-        }
-    }
-    ```
+1. In the **Recent** list of resources, select the **Azure Storage account** you created.
 
-1. Add the following method to the **EmailMetricsController** class. This will enumerate through all blobs in the specified **Azure Storage** account's specified container and send each one to `ProcessBlobEmails()` method added in the last step.
+1. On the left pane, select **Storage browser**, select **Blob containers**, and then select the **container** you created previously for which you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container now.
 
-    ```csharp
-    private async Task<List<Models.EmailMetric>> ProcessBlobFiles()
-    {
-        var emailMetrics = new List<Models.EmailMetric>();
-        var connectionString = ConfigurationManager.ConnectionStrings[connectionStringName];
-
-        // Connect to the storage account
-        var containerClient = new BlobContainerClient(connectionString.ConnectionString, emailBlobName);
-
-        foreach (var blob in containerClient.GetBlobs())
-        {
-            if (blob.Properties.BlobType == BlobType.Block &&
-                // Don't process blobs in the metadata folder
-                !blob.Name.StartsWith("metadata/"))
-            {
-                var blobClient = containerClient.GetBlobClient(blob.Name);
-                await ProcessBlobEmails(emailMetrics, blobClient);
-            }
-        }
-
-        return emailMetrics;
-    }
-    ```
-
-1. Add the following action to the **EmailMetricsController** that will use the methods added this class to process the emails and send the results to the view.
-
-    ```csharp
-    [HttpPost, ActionName("ShowMetrics")]
-    [ValidateAntiForgeryToken]
-    public async Task<ActionResult> ShowMetrics()
-    {
-        var emailMetrics = await ProcessBlobFiles();
-
-        return View(emailMetrics);
-    }
-    ```
-
-## Create a new view for the EmailMetrics index action
-
-1. In the  **Solution Explorer** tool window, right-click the **Views > EmailMetrics** folder and select **Add > View**.
-
-1. In the **Add New Scaffolded Item** dialog box, select **MVC 5 View**, then select **Add**.
-
-1. In the **Add View** dialog, set the **View** name to **Index**, leave the remaining input controls to their default values, and select **Add**.
-
-    ![A screenshot of the Visual Studio interface showing how to add an new view called index.](../concepts/images/data-connect-vs-add-view-index.png)
-
-1. Update the markup in the new **Views > EmailMetrics > _Index.cshtml_** to the following. This will add a form with a single button that will submit an HTTP POST to the custom controller action added in the last step.
-
-    ```html
-    @{
-    ViewBag.Title = "Index";
-    }
-
-    <h2>Email Metrics</h2>
-    ```
-
-1. This application will look at the email data for emails extracted to the **Azure Blob Storage** account and display the total number of recipients from each sender.
-
-    ```html
-    @using (Html.BeginForm("ShowMetrics", "EmailMetrics", FormMethod.Post))
-    {
-    @Html.AntiForgeryToken()
-    <div>
-        <button type="submit">View email metrics</button>
-    </div>
-
-    <div>
-        <em>Please be patient as this can take a few moments to calculate depending on the size of the exported data...</em>
-    </div>
-    }
-    ```
-
-## Create a new view for the EmailMetrics ShowMetrics action
-
-1. In the **Solution Explorer** tool window, right-click the **Views > EmailMetrics** folder and select **Add > View**.
-
-1. In the **Add View** dialog, set the following values and leave the remaining input controls to their default values and select **Add**.
-
-    - **View name**: ShowMetrics
-    - **Template**: List
-    - **Model class**: EmailMetric (EmailMetric.Models)
-
-        ![A screenshot of the Visual Studio interface showing how to add an new view called ShowMetrics.](../concepts/images/data-connect-vs-add-view-showmetrics.png)
-
-    >[!TIP]
-    > In case you can't see the **EmailMetric** model in the dropdown box, please build the solution.
-
-1. Update the markup in the new **Views > EmailMetrics > _ShowMetrics.cshtml_** to the following. This will display the results of the calculations.
-
-    ```html
-    @model IEnumerable<EmailMetrics.Models.EmailMetric>
-
-    @{
-    ViewBag.Title = "ShowMetrics";
-    }
-
-    <h2>Email Metrics</h2>
-
-    <table class="table">
-    <tr>
-        <th>Sender</th>
-        <th>Number of Recipients</th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-    <tr>
-        <td>@Html.DisplayFor(modelItem => item.Email)</td>
-        <td>@Html.DisplayFor(modelItem => item.RecipientsToEmail)</td>
-    </tr>
-    }
-
-    </table>
-    ```
-
-## Update the navigation to have a way to get to the new controller
-
-1. In the **Solution Explorer** tool window, locate and open the file **Views > Shared > _Layout.cshtml_**.
-1. Replace the contents with the following code.
-
-    ```html
-    <!-- new code -->
-    <li>@Html.ActionLink("Email Metrics", "Index", "EmailMetrics")</li>
-    ```
-
-## Test the application
-
-1. In Visual Studio, select **Debug > Start Debugging**.
-
-1. When the application is built and loads in a new browser window, select the **Email Metrics** item in the top navigation bar.
-
-1. On the **Email Metrics** page, select the **View email metrics** button.
-
-    ![A screenshot of the built ASP.NET Web application interface showing the view email metrics button.](../concepts/images/data-connect-vs-select-view-metrics.png)
-
-1. When the page loads, you'll see a list of emails addresses that were found among all emails with a sum of all the recipients sent between them, as shown from a small sample set in a test email extract in the following figure.
-
-    ![A screenshot of the built ASP.NET Web application interface showing the view email metrics results.](../concepts/images/data-connect-vs-show-email-metrics.png)
+    ![A screenshot showing the Azure portal UI for the Storage account service. It is showing the container where the extracted data is being stored.](../concepts/images/data-connect-adf-extracted-data-in-blob.png)

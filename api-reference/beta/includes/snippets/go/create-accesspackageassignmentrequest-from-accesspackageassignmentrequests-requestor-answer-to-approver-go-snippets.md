@@ -46,7 +46,7 @@ answers := []graphmodels.AccessPackageAnswerable {
 }
 requestBody.SetAnswers(answers)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

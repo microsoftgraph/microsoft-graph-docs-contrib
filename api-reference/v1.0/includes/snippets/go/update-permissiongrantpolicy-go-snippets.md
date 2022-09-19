@@ -11,7 +11,7 @@ requestBody := graphmodels.NewPermissionGrantPolicy()
 displayName := "Custom permission grant policy"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.Policies().PermissionGrantPoliciesById("permissionGrantPolicy-id").Patch(requestBody)
+graphClient.Policies().PermissionGrantPoliciesById("permissionGrantPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

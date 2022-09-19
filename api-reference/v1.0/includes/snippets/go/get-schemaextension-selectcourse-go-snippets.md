@@ -14,7 +14,7 @@ configuration := &graphconfig.UserRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.UsersById("user-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.UsersById("user-id").Get(context.Background(), configuration)
 
 
 ```

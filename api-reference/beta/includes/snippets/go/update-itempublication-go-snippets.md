@@ -13,7 +13,7 @@ requestBody.SetPublisher(&publisher)
 thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
 requestBody.SetThumbnailUrl(&thumbnailUrl) 
 
-graphClient.UsersById("user-id").Profile().PublicationsById("itemPublication-id").Patch(requestBody)
+graphClient.UsersById("user-id").Profile().PublicationsById("itemPublication-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

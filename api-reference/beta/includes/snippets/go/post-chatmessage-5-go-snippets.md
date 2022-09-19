@@ -30,7 +30,7 @@ hostedContents := []graphmodels.ChatMessageHostedContentable {
 }
 requestBody.SetHostedContents(hostedContents)
 
-result, err := graphClient.ChatsById("chat-id").Messages().Post(requestBody)
+result, err := graphClient.ChatsById("chat-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

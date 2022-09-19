@@ -11,7 +11,7 @@ requestBody := graphmodels.NewCloudPcExternalPartnerSetting()
 enableConnection := true
 requestBody.SetEnableConnection(&enableConnection) 
 
-graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettingsById("cloudPcExternalPartnerSetting-id").Patch(requestBody)
+graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettingsById("cloudPcExternalPartnerSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -17,7 +17,7 @@ requestBody.SetDetail(detail)
 displayName := "About Me"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().Profile().Notes().Post(requestBody)
+result, err := graphClient.Me().Profile().Notes().Post(context.Background(), requestBody, nil)
 
 
 ```

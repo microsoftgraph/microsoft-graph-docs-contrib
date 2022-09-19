@@ -17,7 +17,7 @@ requestBody.SetDisplayName(&displayName)
 externalId := "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 requestBody.SetExternalId(&externalId) 
 
-graphClient.Me().Tasks().ListsById("baseTaskList-id").TasksById("baseTask-id").LinkedResourcesById("linkedResource_v2-id").Patch(requestBody)
+graphClient.Me().Tasks().ListsById("baseTaskList-id").TasksById("baseTask-id").LinkedResourcesById("linkedResource_v2-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
