@@ -10,7 +10,7 @@ ms.prod: "data-connect"
 
 Microsoft Graph Data Connect lets developers create applications for analytics, intelligence, and business process optimization by extending Microsoft 365 data at scale into Azure. This article aims to help MGDC developers further research any common troubleshooting issues and get unblocked quickly so they can run MGDC successfully on their own.
 
- For an introduction to MGDC, see the [overview](data-connect-concept-overview.md). 
+For an introduction to MGDC, see the [overview](data-connect-concept-overview.md). 
 
 For MGDC FAQ see the [FAQ](data-connect-faq.md).
 
@@ -78,7 +78,7 @@ If the destination storage account needs to be closed for public access, you wil
 
     2. For example, if you're running a pipeline in West Europe Azure region, it will only extract the users for Europe (EUR) Office region since West Europe Azure region maps to the Europe Office region. 
 
-2. MGDC internally uses ADF services to move data into your storage account. Thus, you will need to allow list the corresponding ADF public IP addresses for the region. Your destination storage account cannot be in the same region as MGDC’s internal Azure Data Factory (ADF), therefore you cannot allow list services on the same region  . You can look up how to configure your Azure storage account and [grant access from an internet IP range](https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range).
+2. MGDC internally uses ADF services to move data into your storage account. Thus, you will need to allow list the corresponding ADF public IP addresses for the region. Your destination storage account cannot be in the same region as MGDC’s internal Azure Data Factory (ADF), therefore you cannot allow list services on the same region. You can look up how to configure your Azure storage account and [grant access from an internet IP range](https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range).
 
     1. Please follow table 1 below to select an Azure Storage account that meets the criteria below.
 
