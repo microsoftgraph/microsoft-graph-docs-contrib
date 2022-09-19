@@ -145,7 +145,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.BookingBusinessesById("bookingBusiness-id").StaffMembers().Post(requestBody)
+result, err := graphClient.BookingBusinessesById("bookingBusiness-id").StaffMembers().Post(context.Background(), requestBody, nil)
 
 
 ```

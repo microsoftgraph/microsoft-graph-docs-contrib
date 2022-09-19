@@ -53,7 +53,7 @@ properties := []graphmodels.Propertyable {
 }
 requestBody.SetProperties(properties)
 
-graphClient.External().ConnectionsById("externalConnection-id").Schema().Patch(requestBody)
+graphClient.External().ConnectionsById("externalConnection-id").Schema().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -14,7 +14,7 @@ configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.GroupsById("group-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.GroupsById("group-id").Get(context.Background(), configuration)
 
 
 ```

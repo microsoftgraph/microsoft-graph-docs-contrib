@@ -18,7 +18,7 @@ requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
 
-result, err := graphClient.Policies().TokenLifetimePolicies().Post(requestBody)
+result, err := graphClient.Policies().TokenLifetimePolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

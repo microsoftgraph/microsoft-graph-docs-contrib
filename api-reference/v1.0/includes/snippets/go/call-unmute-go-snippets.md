@@ -11,7 +11,7 @@ requestBody := graphmodels.NewUnmutePostRequestBody()
 clientContext := "clientContext-value"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().CallsById("call-id").Unmute().Post(requestBody)
+result, err := graphClient.Communications().CallsById("call-id").Unmute().Post(context.Background(), requestBody, nil)
 
 
 ```

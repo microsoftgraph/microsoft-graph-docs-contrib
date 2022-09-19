@@ -16,7 +16,7 @@ ext55gb1l09_msLearnCourses.SetCourseType(&courseType)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.UsersById("user-id").Patch(requestBody)
+graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

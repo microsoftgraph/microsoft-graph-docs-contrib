@@ -1,7 +1,7 @@
 ---
 title: "Update user"
 description: "Update the properties of a user object."
-author: "jpettere"
+author: "yyuank"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -25,9 +25,9 @@ One of the following pefrmissions is required to call this API. To learn more, i
 |Application | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
 
 >[!NOTE]
-> - Updating another user's sensitive properties like **businessPhones**, **mobilePhone**, or **otherMails** is not allowed on users who are assigned an administrator role or who are members of a role-assignable group. This is the case for apps granted either the User.ReadWrite.All or Directory.ReadWrite.All delegated or application permissions. Only a Global Administrator assigned the Directory.AccessAsUser.All permission or an application assigned either the Global Administrator, Privileged Auth Administrator, Auth Administrator or User Administrator roles can update these properties for more privileged administrators. To learn more or see the full list of senstive properties, see [Azure AD built-in roles - Who can manage sensitive attributes](/azure/active-directory/roles/permissions-reference#who-can-update-sensitive-attributes)
-> - Your personal Microsoft account must be tied to an AAD tenant to update your profile with the User.ReadWrite delegated permission on a personal Microsoft account.
-> - Updating the **identities** property requires the User.ManageIdentities.All permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
+> - Updating another user's sensitive properties like **businessPhones**, **mobilePhone**, or **otherMails** is not allowed on users who are assigned an administrator role or who are members of a role-assignable group, even when the app is granted the _User.ReadWrite.All_ or _Directory.ReadWrite.All_ delegated or application permissions. For more information about who can update sensitive properties or reset passwords, see [Authorization and privileges](/graph/api/resources/users#authorization-and-privileges).
+> - Your personal Microsoft account must be tied to an Azure AD tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
+> - Updating the **identities** property requires the *User.ManageIdentities.All* permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
