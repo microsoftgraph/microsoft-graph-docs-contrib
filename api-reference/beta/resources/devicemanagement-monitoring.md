@@ -1,6 +1,6 @@
 ---
 title: "monitoring resource type"
-description: "The entry point entity type to access all alert related entities and APIs."
+description: "Represents the entry point entity type to access all alert-related resources."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The entry point entity type to access all alert related entities and APIs.
+Represents the entry point entity type to access all alert-related resources.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The alert id Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifier for the alert. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 
