@@ -102,12 +102,12 @@ If the destination storage account needs to be closed for public access, you wil
         | APAC        | Southeast Asia                       |
         | AUS         | Australia Southeast                  |
 
->[!NOTE]
->1. At this point, customers can understand and configure the region they want to extract users from
->2. Customers can understand which region their destination storage account CANNOT be in (from table 1)
->3. Next steps below will help customers on [how to allow list IPs](https://docs.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions).
+> [!NOTE]
+> 1. At this point, customers can understand and configure the region they want to extract users from
+> 2. Customers can understand which region their destination storage account CANNOT be in (from table 1)
+> 3. Next steps below will help customers on [how to allow list IPs](https://docs.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions).
 
-4. Since the storage account has public access disabled you will also need to allow your own ADF’s Azure Integration Runtime (IR) region used on the destination linked service. More information can be found [here] (https://docs.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions).
+4. Since the storage account has public access disabled you will also need to allow your own ADF’s Azure Integration Runtime (IR) region used on the destination linked service. More information can be found [here](https://docs.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions).
 
     1. If you are using AutoResolved IR then the region depends on [several factors](https://docs.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime#azure-ir-location) 
 
