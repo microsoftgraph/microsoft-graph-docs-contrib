@@ -15,7 +15,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Print().PrintersById("printer-id").TaskTriggers().Post(requestBody)
+result, err := graphClient.Print().PrintersById("printer-id").TaskTriggers().Post(context.Background(), requestBody, nil)
 
 
 ```

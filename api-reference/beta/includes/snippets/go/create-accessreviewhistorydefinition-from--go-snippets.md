@@ -67,7 +67,7 @@ scopes := []graphmodels.AccessReviewScopeable {
 }
 requestBody.SetScopes(scopes)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

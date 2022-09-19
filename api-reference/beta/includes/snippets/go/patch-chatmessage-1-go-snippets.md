@@ -58,7 +58,7 @@ reactions := []graphmodels.ChatMessageReactionable {
 }
 requestBody.SetReactions(reactions)
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(requestBody)
+graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

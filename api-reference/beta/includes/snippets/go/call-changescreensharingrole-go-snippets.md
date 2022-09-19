@@ -11,7 +11,7 @@ requestBody := graphmodels.NewChangeScreenSharingRolePostRequestBody()
 role := graphmodels.VIEWER_SCREENSHARINGROLE 
 requestBody.SetRole(&role) 
 
-graphClient.Communications().CallsById("call-id").ChangeScreenSharingRole().Post(requestBody)
+graphClient.Communications().CallsById("call-id").ChangeScreenSharingRole().Post(context.Background(), requestBody, nil)
 
 
 ```

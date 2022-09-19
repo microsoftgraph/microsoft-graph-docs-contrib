@@ -13,7 +13,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").IdentityProvidersById("identityProvider-id").Post(requestBody)
+graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").IdentityProvidersById("identityProvider-id").Post(context.Background(), requestBody, nil)
 
 
 ```

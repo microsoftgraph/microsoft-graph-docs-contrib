@@ -13,7 +13,7 @@ requestBody.SetId(&id)
 isActive := true
 requestBody.SetIsActive(&isActive) 
 
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").AllowedValues().Post(requestBody)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").AllowedValues().Post(context.Background(), requestBody, nil)
 
 
 ```

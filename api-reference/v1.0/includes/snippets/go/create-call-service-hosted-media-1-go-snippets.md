@@ -35,7 +35,7 @@ requestBody.SetRequestedModalities(requestedModalities)
 mediaConfig := graphmodels.NewMediaConfig()
 requestBody.SetMediaConfig(mediaConfig)
 
-result, err := graphClient.Communications().Calls().Post(requestBody)
+result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

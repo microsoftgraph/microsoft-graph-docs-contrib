@@ -11,7 +11,7 @@ requestBody := graphmodels.NewCrossTenantAccessPolicy()
 displayName := "CrossTenantAccessPolicy"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.Policies().CrossTenantAccessPolicy().Patch(requestBody)
+graphClient.Policies().CrossTenantAccessPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

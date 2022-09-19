@@ -14,7 +14,7 @@ configuration := &graphconfig.AssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Education().UsersById("educationUser-id").Assignments().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Education().UsersById("educationUser-id").Assignments().Get(context.Background(), configuration)
 
 
 ```

@@ -50,6 +50,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | None  | $0.00075 per notification | |
+| [chat change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | None | $0.00075 per message | Requests returning an empty list, will be charged 1 message. |
 | [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Requests returning an empty list, will be charged 1 message. |
 
@@ -58,7 +59,8 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 |API   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
-| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A | 
+| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A |
+| [chat change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
 | [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |   N/A |  500 messages per month per app | N/A |
@@ -95,11 +97,11 @@ through the [Microsoft 365 Developer Program](https://developer.microsoft.com/mi
 
 Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is added up and compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;apps won't run out of seeded capacity if another app runs out.
 
-| Billing model | Sample functions | Seeded Capacity | License required | Azure subscription required | 
+| Billing model | Sample functions | Seeded Capacity | License required | Azure subscription required |
 |:-----------|:---------------|:---------------|:-----------|:-----------|
 | `model=A` | Security and Compliance. | See [`model=A` details](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
-| `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | None | No | Yes | 
-| `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | 500 messages per month per app | No | No | 
+| `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | None | No | Yes |
+| `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | 500 messages per month per app | No | No |
 
 
 ## Payment related errors

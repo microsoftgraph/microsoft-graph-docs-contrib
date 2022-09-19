@@ -29,7 +29,7 @@ requestBody.SetAccessPackageResource(accessPackageResource)
 requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType) 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

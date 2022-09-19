@@ -27,7 +27,7 @@ requestBody.SetCertificateSigningRequest(certificateSigningRequest)
 connectorId := null
 requestBody.SetConnectorId(&connectorId) 
 
-graphClient.Print().Printers().Create().Post(requestBody)
+graphClient.Print().Printers().Create().Post(context.Background(), requestBody, nil)
 
 
 ```

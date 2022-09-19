@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").Delete()
+graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").Delete(context.Background(), nil)
 
 
 ```

@@ -1,6 +1,58 @@
 {
 	"changelog": [
 		{
+			"ChangeList": [
+			  {
+				"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+				"ApiChange": "Member",
+				"ChangedApiName": "adminConfirmedServicePrincipalCompromised",
+				"ChangeType": "Addition",
+				"Description": "Added the `adminConfirmedServicePrincipalCompromised` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+				"ApiChange": "Member",
+				"ChangedApiName": "m365DAdminDismissedDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the `adminDismissedAllRiskForServicePrincipal` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+				"ApiChange": "Member",
+				"ChangedApiName": "m365DAdminDismissedDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the `m365DAdminDismissedDetection` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  }
+			],
+			"Id": "39f34b49-232d-480f-8fcb-342b2aea9733",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-09-12T15:11:34.8050491Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+			  {
+				"Id": "9c8271a4-b275-4d34-bef6-2ab260c1c4bf",
+				"ApiChange": "Member",
+				"ChangedApiName": "m365DAdminDismissedDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the `m365DAdminDismissedDetection` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  }
+			],
+			"Id": "9c8271a4-b275-4d34-bef6-2ab260c1c4bf",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2022-09-12T18:11:30.5644341Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
 		      "ChangeList": [
 			{
 			  "Id": "407b9eb8-7ca7-4006-b3e4-1358274f9b02",

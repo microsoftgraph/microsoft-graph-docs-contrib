@@ -88,7 +88,7 @@ webParts := []graphmodels.WebPartable {
 }
 requestBody.SetWebParts(webParts)
 
-result, err := graphClient.SitesById("site-id").Pages().Post(requestBody)
+result, err := graphClient.SitesById("site-id").Pages().Post(context.Background(), requestBody, nil)
 
 
 ```

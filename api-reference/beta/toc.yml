@@ -75,7 +75,7 @@ items:
         href: /graph/webhooks-lifecycle?context=graph/api/beta
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
-      - name: Get notifications delivered different ways (preview)
+      - name: Get notifications delivered different ways
         href: /graph/change-notifications-delivery?context=graph/api/beta
       - name: Change notifications for cloud printing
         href: /graph/universal-print-webhook-notifications?context=graph/api/beta
@@ -10973,6 +10973,8 @@ items:
           href: resources/educationoutcome.md
         - name: Feedback outcome type
           href: resources/educationfeedbackoutcome.md
+        - name: Feedback resource outcome type
+          href: resources/educationfeedbackresourceoutcome.md
         - name: Points outcome type
           href: resources/educationpointsoutcome.md
         - name: Rubric outcome type
@@ -12169,9 +12171,9 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
-          - name: Authentication context class references
+          - name: Authentication context
             items:
-            - name: Authentication context class references
+            - name: Authentication context class reference
               href: resources/authenticationcontextclassreference.md
             - name: List
               href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
@@ -12181,6 +12183,8 @@ items:
               href: api/authenticationcontextclassreference-get.md
             - name: Update
               href: api/authenticationcontextclassreference-update.md
+            - name: Delete
+              href: api/authenticationcontextclassreference-delete.md
         - name: Cross-tenant access
           items:
           - name: Overview
@@ -16787,6 +16791,25 @@ items:
           href: api/workbookcomment-post-replies.md
         - name: Get reply
           href: api/workbookcommentreply-get.md
+      - name: Workbook table row
+        href: resources/workbooktablerow.md
+        items:
+        - name: List
+          href: api/tablerow-list.md
+        - name: Create
+          href: api/table-post-rows.md
+        - name: Get
+          href: api/tablerow-get.md
+        - name: Update
+          href: api/tablerow-update.md
+        - name: Delete
+          href: api/tablerow-delete.md
+        - name: Get range
+          href: api/tablerow-range.md
+        - name: Get item at
+          href: api/tablerowcollection-itemat.md
+        - name: Add row
+          href: api/tablerowcollection-add.md
       - name: Worksheet
         href: resources/workbookworksheet.md
         items:

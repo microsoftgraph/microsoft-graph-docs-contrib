@@ -17,7 +17,7 @@ additionalData := map[string]interface{}{
 fields.SetAdditionalData(additionalData)
 requestBody.SetFields(fields)
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").Items().Post(requestBody)
+result, err := graphClient.SitesById("site-id").ListsById("list-id").Items().Post(context.Background(), requestBody, nil)
 
 
 ```

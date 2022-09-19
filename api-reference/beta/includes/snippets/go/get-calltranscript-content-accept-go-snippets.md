@@ -14,7 +14,7 @@ configuration := &graphconfig.ContentRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 
-graphClient.UsersById("user-id").OnlineMeetingsById("onlineMeeting-id").TranscriptsById("callTranscript-id").Content().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+graphClient.UsersById("user-id").OnlineMeetingsById("onlineMeeting-id").TranscriptsById("callTranscript-id").Content().Get(context.Background(), configuration)
 
 
 ```
