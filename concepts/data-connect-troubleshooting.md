@@ -91,21 +91,21 @@ If the destination storage account needs to be closed for public access, you wil
         | APAC        | Southeast Asia                       |
         | AUS         | Australia Southeast                  |
 
-3. Please follow table 2 below to allow list IPs based on the O365 region and then download IP ranges [here](https://www.microsoft.com/en-us/download/details.aspx?id=56519) based on the table below.
+    2. Please follow table 2 below to allow list IPs based on the O365 region and then download IP ranges [here](https://www.microsoft.com/en-us/download/details.aspx?id=56519) based on the table below.
 
-    | O365 Region | Region you have to allowlist         |
-    |-------------|--------------------------------------| 
-    | NAM         | East US                              |
-    | CAN         | Canada East                          | 
-    | GBR         | UK South                             |
-    | EUR         | West Europe                          |
-    | APAC        | Southeast Asia                       |
-    | AUS         | Australia Southeast                  |
+        | O365 Region | Region you have to allowlist         |
+        |-------------|--------------------------------------| 
+        | NAM         | East US                              |
+        | CAN         | Canada East                          | 
+        | GBR         | UK South                             |
+        | EUR         | West Europe                          |
+        | APAC        | Southeast Asia                       |
+        | AUS         | Australia Southeast                  |
 
-> [!NOTE]
-> 1. At this point, customers can understand and configure the region they want to extract users from
-> 2. Customers can understand which region their destination storage account CANNOT be in (from table 1)
-> 3. Next steps below will help customers on [how to allow list IPs](https://docs.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions).
+>[!NOTE]
+>1. At this point, customers can understand and configure the region they want to extract users from
+>2. Customers can understand which region their destination storage account CANNOT be in (from table 1)
+>3. Next steps below will help customers on [how to allow list IPs](https://docs.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions).
 
 4. Since the storage account has public access disabled you will also need to allow your own ADF’s Azure Integration Runtime (IR) region used on the destination linked service. More information can be found [here] (https://docs.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions).
 
