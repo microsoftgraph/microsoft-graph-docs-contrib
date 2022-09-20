@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessAllExternalTenants resource type"
-description: "Represents external tenants in the policy scope."
+description: "Represents all external tenants in the policy scope."
 ms.localizationpriority: medium
 author: "sandeo"
 ms.prod: "identity-and-sign-in"
