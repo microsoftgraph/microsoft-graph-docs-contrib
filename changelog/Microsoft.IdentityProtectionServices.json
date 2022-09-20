@@ -67,7 +67,7 @@
 			  "ApiChange": "Enumeration",
 			  "ChangedApiName": "conditionalAccessGuestOrExternalUserTypes",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **conditionalAccessGuestOrExternalUserTypes** enumeration type.",
+			  "Description": "Added the **conditionalAccessGuestOrExternalUserTypes** enumeration.",
 			  "Target": "conditionalAccessGuestOrExternalUserTypes"
 			},
 			{
