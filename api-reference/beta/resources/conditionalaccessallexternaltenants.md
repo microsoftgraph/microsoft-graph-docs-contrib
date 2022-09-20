@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Inherits from [conditionalAccessExternalTenants](conditonalaccessexternaltenants.md) resource. Represents external tenants in the policy scope.
+Inherits from [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md) resource. Represents all external tenants in the policy scope.
 
 ## Properties
 
