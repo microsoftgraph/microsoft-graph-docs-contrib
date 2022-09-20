@@ -15,7 +15,7 @@ requestBody.SetDisplayName(&displayName)
 description := "outside sales representatives"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -75,7 +75,7 @@ translationBehavior := "Yes"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Me().Settings().RegionalAndLanguageSettings().Put(requestBody)
+graphClient.Me().Settings().RegionalAndLanguageSettings().Put(context.Background(), requestBody, nil)
 
 
 ```

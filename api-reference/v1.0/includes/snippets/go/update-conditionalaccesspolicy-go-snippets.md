@@ -18,7 +18,7 @@ signInRiskLevels := []graphmodels.RiskLevelable {
 conditions.SetSignInRiskLevels(signInRiskLevels)
 requestBody.SetConditions(conditions)
 
-graphClient.Identity().ConditionalAccess().PoliciesById("conditionalAccessPolicy-id").Patch(requestBody)
+graphClient.Identity().ConditionalAccess().PoliciesById("conditionalAccessPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

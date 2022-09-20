@@ -13,7 +13,7 @@ requestBody.SetKeyId(&keyId)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof) 
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").RemoveKey().Post(requestBody)
+graphClient.ServicePrincipalsById("servicePrincipal-id").RemoveKey().Post(context.Background(), requestBody, nil)
 
 
 ```
