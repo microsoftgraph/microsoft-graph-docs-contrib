@@ -14,7 +14,7 @@ configuration := &graphconfig.AgentGroupsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").AgentGroups().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").AgentGroups().Get(context.Background(), configuration)
 
 
 ```

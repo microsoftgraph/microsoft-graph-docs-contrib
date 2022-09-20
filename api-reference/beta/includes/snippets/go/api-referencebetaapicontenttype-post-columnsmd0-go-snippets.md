@@ -13,7 +13,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.SitesById("site-id").ContentTypesById("contentType-id").Columns().Post(requestBody)
+result, err := graphClient.SitesById("site-id").ContentTypesById("contentType-id").Columns().Post(context.Background(), requestBody, nil)
 
 
 ```

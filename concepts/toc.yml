@@ -67,6 +67,8 @@ items:
           - name: Overview
             href: azuread-users-concept-overview.md
             displayName: users
+          - name: Default user permissions
+            href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
           - name: Access user data
             href: /learn/modules/msgraph-access-user-data
       - name: Groups
@@ -254,9 +256,11 @@ items:
             href: education-concept-overview.md
             displayName: education
           - name: Rubrics
-            href: education-rubric-overview.md
+            href: education-rubric-overview.md 
           - name: Upload files
             href: education-upload-resource-overview.md
+          - name: Upload feedback files
+            href: education-upload-feedback-resource-overview.md   
           - name: Assignment and submission state transitions
             href: assignments-submissions-states-transition.md
           - name: Specify the default channel for assignment notifications

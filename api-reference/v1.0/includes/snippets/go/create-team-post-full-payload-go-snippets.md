@@ -152,7 +152,7 @@ discoverySettings.SetShowInTeamsSearchAndSuggestions(&showInTeamsSearchAndSugges
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Teams().Post(requestBody)
+result, err := graphClient.Teams().Post(context.Background(), requestBody, nil)
 
 
 ```

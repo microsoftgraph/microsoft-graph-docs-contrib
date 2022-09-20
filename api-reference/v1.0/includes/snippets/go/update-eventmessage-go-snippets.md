@@ -11,7 +11,7 @@ requestBody := graphmodels.NewMessage()
 isRead := true
 requestBody.SetIsRead(&isRead) 
 
-graphClient.Me().MessagesById("message-id").Patch(requestBody)
+graphClient.Me().MessagesById("message-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
