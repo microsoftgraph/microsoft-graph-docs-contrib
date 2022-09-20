@@ -31,15 +31,12 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "membershipKind"
-  ],
-  "@odata.type": "microsoft.graph.conditionalAccessExternalTenantsMembershipKind",
-  "baseType": null
-}-->
-
-```json
+  "@odata.type": "microsoft.graph.conditionalAccessExternalTenants"
+}
+-->
+``` json
 {
-  "membershipKind": {"@odata.type": "microsoft.graph.conditionalAccessExternalTenantsMembershipKind"}
+  "@odata.type": "#microsoft.graph.conditionalAccessExternalTenants",
+  "membershipKind": "String"
 }
 ```
