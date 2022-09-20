@@ -13,7 +13,7 @@ $requestBody = new AccessPackageAssignmentRequest();
 $requestBody->setRequestType('AdminAdd');
 
 $accessPackageAssignment = new AccessPackageAssignment();
-$accessPackageAssignmentTarget = new Target();
+$accessPackageAssignmentTarget = new AccessPackageSubject();
 $accessPackageAssignmentTarget->setEmail('user@contoso.com');
 
 

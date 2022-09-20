@@ -34,7 +34,8 @@ requestBody.SetAvailabilityStartDateTime(&availabilityStartDateTime)
 availabilityEndDateTime := null
 requestBody.SetAvailabilityEndDateTime(&availabilityEndDateTime) 
 platforms := []graphmodels.DevicePlatformTypeable {
-	"windows",
+	devicePlatformType := graphmodels.WINDOWS_DEVICEPLATFORMTYPE 
+	requestBody.SetDevicePlatformType(&devicePlatformType) 
 
 }
 requestBody.SetPlatforms(platforms)
