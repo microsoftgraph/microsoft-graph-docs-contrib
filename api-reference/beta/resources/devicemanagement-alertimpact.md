@@ -24,7 +24,7 @@ Represents the impact of the alert event. Consists of a number value and the agg
 
 ## Relationships
 
-None.
+None. 
 
 ## JSON representation
 
