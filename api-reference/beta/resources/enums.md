@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### membershipKind values
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|unknownFutureValue|
 
 ### teamTemplateAudience values 
 
