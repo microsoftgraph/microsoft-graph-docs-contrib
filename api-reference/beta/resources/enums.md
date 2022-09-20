@@ -19,6 +19,19 @@ Namespace: microsoft.graph
 |enumerated|
 |unknownFutureValue|
 
+### guestOrExternalUserTypes values
+
+|Member|
+|:---|
+|none|
+|internalGuest|
+|b2bCollaborationGuest|
+|b2bCollaborationMember|
+|b2bDirectConnectUser|
+|otherExternalUser|
+|serviceProvider|
+|unknownFutureValue|
+
 ### teamTemplateAudience values 
 
 |Member|
