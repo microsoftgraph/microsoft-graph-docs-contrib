@@ -4,7 +4,7 @@ description: "Service principal lock configuration for the application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
-author: "saumadan"
+author: "madansr7"
 ---
 
 # servicePrincipalLockConfiguration resource type
