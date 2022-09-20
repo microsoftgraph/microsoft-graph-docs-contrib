@@ -20,7 +20,6 @@ Represents a printer that is intended to be discoverable by users and printing a
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List](../api/print-list-shares.md) | [printerShare](printershare.md) collection | Get a list of printer shares in the tenant. |
-| [List recent shares](../api/print-list-recentshares.md) | [printerShare](printershare.md) collection | Get a list of recently used [printerShares](printershare.md) by the signed-in user. |
 | [Get](../api/printershare-get.md) | [printerShare](printershare.md) | Read properties and relationships of a **printerShare** object. |
 | [Update](../api/printershare-update.md) | [printerShare](printershare.md) | Update a **printerShare** object. |
 | [Delete](../api/printershare-delete.md) | None | Unshare a printer. |
