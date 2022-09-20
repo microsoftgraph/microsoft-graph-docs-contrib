@@ -14,7 +14,7 @@ configuration := &graphconfig.PrinterRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Print().PrintersById("printer-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Print().PrintersById("printer-id").Get(context.Background(), configuration)
 
 
 ```

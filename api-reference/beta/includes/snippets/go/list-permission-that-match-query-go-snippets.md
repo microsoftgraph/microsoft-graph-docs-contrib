@@ -17,7 +17,7 @@ configuration := &graphconfig.SitesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Sites().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Sites().Get(context.Background(), configuration)
 
 
 ```

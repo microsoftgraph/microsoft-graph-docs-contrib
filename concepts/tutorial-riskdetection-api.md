@@ -45,7 +45,10 @@ To successfully complete this tutorial, make sure that you have the required pre
 For this tutorial, you create a user account that is used to test risk detections. In the request body, change `contoso.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page.
 
 ### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_create_user"
+}-->
 ``` http
 POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
@@ -63,7 +66,11 @@ Content-type: application/json
 ```
 
 ### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
@@ -95,13 +102,20 @@ One way to trigger a risk detection on a user account is to sign in to the Azure
 When you signed in to the Azure portal using the anonymous browser, an `anonymizedIPAddress` risk event was detected. You can use the `$filter` query parameter to get only the risk detections that are associated with the **MyTestUser1** user account.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_get_riskdetections"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.riskDetection"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#riskDetections",
@@ -160,7 +174,10 @@ When setting up an account for MFA, you can choose from several methods for auth
 The conditional access policy provides the ability to set the conditions of the policy to identify sign-in risk levels. Risk levels can be `low`, `medium`, `high`, `none`. In the response that was returned from listing the risk detections for **MyTestUser1**, we can see that the risk level is `medium`. This example shows how to require MFA for **MyTestUser1** who was identified as a risky user.
 
 #### Request 
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_create_conditionalaccesspolicy"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies 
 Content-type: application/json
@@ -192,7 +209,11 @@ Content-type: application/json
 ```
 
 #### Response 
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+} -->
 ```
 { 
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity", 
@@ -255,13 +276,20 @@ By signing in to the anonymous browser, a risk is detected, but it is remediated
 Because MFA was completed. Now, when you list risk detections the **riskState** shows the event as `remediated`.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_get_riskdetections_filter"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.riskDetection"
+} -->
 ```http
 {
   "id": "ba9d45f16d8f87f6ae974efda7336b2120962a398cb362dfd9e5bdc8e9d149d0",
@@ -301,7 +329,10 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 Instead of providing the opportunity for the user to self-remediate, you can block the user from signing in. In this step, you create a new conditional access policy that blocks the user from signing in if a medium or high risk detection occurs. The difference in policies is that the **builtInControls** is set to `block`.
 
 ### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_create_conditionalaccesspolicy"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
 Content-type: application/json
@@ -333,7 +364,11 @@ Content-type: application/json
 ```
 
 ### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity",
@@ -393,7 +428,10 @@ If you believe the user is not at risk, and you don’t want to enforce a condit
 ### Dismiss the risky user
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_riskyusers.dismiss"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/dismiss
 Content-Type: application/json
@@ -406,7 +444,9 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```        
@@ -416,13 +456,20 @@ HTTP/1.1 204 No Content
 After dismissing the risk user, you can see in the response when listing risky users that the **MyTestUser1** user account now has a risk level of `none` and a riskState of `dismissed`.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_riskyusers.list"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=userDisplayName eq 'MyTestUser1'
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.riskyUser"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#riskyUsers",
@@ -451,13 +498,18 @@ In this step, you remove the resources that you created.
 Delete the **MyTestUser1** user account.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806dc
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -467,13 +519,18 @@ No Content - 204
 Delete the conditional access policy that you created.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_delete_group"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/9ad78153-b1f8-4714-adc1-1445727678a8
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```

@@ -23,7 +23,7 @@ values := []graphmodels.SettingValueable {
 }
 requestBody.SetValues(values)
 
-graphClient.GroupSettingsById("groupSetting-id").Patch(requestBody)
+graphClient.GroupSettingsById("groupSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

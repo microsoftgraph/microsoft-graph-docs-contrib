@@ -11,7 +11,7 @@ requestBody := graphmodels.NewAuthorizationPolicy()
 blockMsolPowerShell := true
 requestBody.SetBlockMsolPowerShell(&blockMsolPowerShell) 
 
-graphClient.Policies().AuthorizationPolicy().Patch(requestBody)
+graphClient.Policies().AuthorizationPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

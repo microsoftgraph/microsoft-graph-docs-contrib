@@ -99,7 +99,7 @@ displayName := "Lunch"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TeamsById("team-id").Schedule().ShiftsById("shift-id").PutWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+graphClient.TeamsById("team-id").Schedule().ShiftsById("shift-id").Put(context.Background(), requestBody, configuration)
 
 
 ```

@@ -46,7 +46,7 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 }
 requestBody.SetProperties(properties)
 
-graphClient.SchemaExtensionsById("schemaExtension-id").Patch(requestBody)
+graphClient.SchemaExtensionsById("schemaExtension-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

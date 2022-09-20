@@ -17,7 +17,7 @@ requestBody.SetAccessPackageAssignment(accessPackageAssignment)
 justification := "Need access to New Hire access package"
 requestBody.SetJustification(&justification) 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

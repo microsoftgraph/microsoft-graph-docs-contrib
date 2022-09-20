@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 description := "The product marketing team"
 requestBody.SetDescription(&description) 
 
-graphClient.External().ConnectionsById("externalConnection-id").GroupsById("externalGroup-id").Patch(requestBody)
+graphClient.External().ConnectionsById("externalConnection-id").GroupsById("externalGroup-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

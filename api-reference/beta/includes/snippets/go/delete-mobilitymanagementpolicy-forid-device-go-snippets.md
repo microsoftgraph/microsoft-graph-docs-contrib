@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Policies().MobileDeviceManagementPoliciesById("mobilityManagementPolicy-id").Delete()
+graphClient.Policies().MobileDeviceManagementPoliciesById("mobilityManagementPolicy-id").Delete(context.Background(), nil)
 
 
 ```

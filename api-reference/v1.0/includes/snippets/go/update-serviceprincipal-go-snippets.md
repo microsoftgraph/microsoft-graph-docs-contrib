@@ -11,7 +11,7 @@ requestBody := graphmodels.NewServicePrincipal()
 appRoleAssignmentRequired := true
 requestBody.SetAppRoleAssignmentRequired(&appRoleAssignmentRequired) 
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").Patch(requestBody)
+graphClient.ServicePrincipalsById("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
