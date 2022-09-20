@@ -19,8 +19,7 @@ Represents the various text strings that can be hidden on the sign-in page for a
 
 |Property|Type|Description|
 |:---|:---|:---|
-| layoutTemplateType | Microsoft.DirectoryServices.layoutTemplateType | A layout of the sign-in page which is applied to the page. Supported values are "default" for the default Microsoft layout with centered lightbox.
-and "verticalSplit" for the layout with backgound in left side and full-height lightbox to the right. |
+| layoutTemplateType | Microsoft.DirectoryServices.layoutTemplateType | A layout of the sign-in page which is applied to the page. Supported values are: 1. "default" for the default Microsoft layout with centered lightbox. 2. "verticalSplit" for the layout with backgound in left side and full-height lightbox to the right. |
 | isHeaderShown | Boolean | Option to show the header on the sign-in page. |
 | isFooterShown | Boolean | Option to show the footer on the sign-in page. |
 
