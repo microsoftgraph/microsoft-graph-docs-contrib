@@ -2071,7 +2071,7 @@ items:
           items:
           - name: List
             href: api/print-list-shares.md
-          - name: List Recent printers
+          - name: List recent shares
             href: api/print-list-recentshares.md
           - name: Create
             href: api/print-post-shares.md
