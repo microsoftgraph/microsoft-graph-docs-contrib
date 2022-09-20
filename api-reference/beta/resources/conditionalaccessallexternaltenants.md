@@ -1,0 +1,42 @@
+---
+title: "conditionalAccessAllExternalTenants resource type"
+description: "Represents external tenants in the policy scope."
+ms.localizationpriority: medium
+author: "sandeo"
+ms.prod: "identity-and-sign-in"
+doc_type: resourcePageType
+---
+
+# conditionalAccessAllExternalTenants resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Inherits from [conditionalAccessExternalTenants](conditonalaccessexternaltenants.md) resource. Represents external tenants in the policy scope.
+
+## Properties
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+| membershipKind |conditionalAccessExternalTenantsMembershipKind collection | Represents the membership kind. Supported values are: `all`, [`enumerated`](conditionalaccessenumeratedexternaltenants.md) and `unknownFutureValue`. |
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.conditionalAccessAllExternalTenants"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+  "membershipKind": "String"
+}
+```
