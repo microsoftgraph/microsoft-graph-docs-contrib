@@ -16,6 +16,8 @@ Some APIs provide the option to choose a licensing and payment model via the `mo
 * [Update (DLP Patch)](/graph/api/chatmessage-update): channel and chat chatMessage.
 * [Create subscription (change notifications)](/graph/api/subscription-post-subscriptions): channel, chat chatMessage and conversationMember.
 
+## Licensing models
+
 The following licensing models are available:
 
 - [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), and requires a [supported license](#required-licenses-for-modela). 
@@ -29,7 +31,7 @@ There are no licensing requirements for `model=B`.
 > [!NOTE]
 > Active pricing events for these APIs started on July 5th, 2022. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. For more details, see [Payment and billing updates](#payment-and-billing-updates).
 
-## `model=A` requirements
+### `model=A` requirements
 
 `model=A` is restricted to applications performing a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
 of the [product terms for Microsoft Azure Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
@@ -42,7 +44,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message | Requests returning an empty list will be charged 1 message. Seeded capacity is shared with chat export. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
 
-## `model=B` requirements
+### `model=B` requirements
 
 `model=B` is restricted to applications that do not perform a security or compliance function. For details, see the [API Terms for Security & Compliance Applications](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms) section of the product terms for Microsoft Azure Services.
 
@@ -54,7 +56,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | None | $0.00075 per message | Requests returning an empty list, will be charged 1 message. |
 | [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Requests returning an empty list, will be charged 1 message. |
 
-## Evaluation mode (default) requirements
+### Evaluation mode (default) requirements
 
 |API   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
