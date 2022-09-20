@@ -1,7 +1,7 @@
 ---
 title: "List scopedAdministratorOf"
 description: "Retrieve a list of scopedRoleMembership for the user."
-author: "jpettere"
+author: "yyuank"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType

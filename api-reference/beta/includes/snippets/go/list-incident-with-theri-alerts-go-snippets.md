@@ -14,7 +14,7 @@ configuration := &graphconfig.IncidentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Security().Incidents().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Security().Incidents().Get(context.Background(), configuration)
 
 
 ```

@@ -73,7 +73,7 @@ requestBody.SetAttendees(attendees)
 allowNewTimeProposals := true
 requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals) 
 
-result, err := graphClient.Me().Events().Post(requestBody)
+result, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
 
 
 ```

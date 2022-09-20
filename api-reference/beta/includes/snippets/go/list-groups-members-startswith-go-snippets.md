@@ -23,7 +23,7 @@ configuration := &graphconfig.MembersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.GroupsById("group-id").Members().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.GroupsById("group-id").Members().Get(context.Background(), configuration)
 
 
 ```

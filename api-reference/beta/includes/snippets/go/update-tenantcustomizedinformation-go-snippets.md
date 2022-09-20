@@ -32,7 +32,7 @@ requestBody.SetContacts(contacts)
 website := "String"
 requestBody.SetWebsite(&website) 
 
-graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById("tenantCustomizedInformation-id").Patch(requestBody)
+graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById("tenantCustomizedInformation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

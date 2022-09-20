@@ -24,7 +24,7 @@ labels := []graphmodels.LocalizedLabelable {
 }
 requestBody.SetLabels(labels)
 
-graphClient.SitesById("site-id").TermStore().SetsById("set-id").TermsById("term-id").Patch(requestBody)
+graphClient.SitesById("site-id").TermStore().SetsById("set-id").TermsById("term-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

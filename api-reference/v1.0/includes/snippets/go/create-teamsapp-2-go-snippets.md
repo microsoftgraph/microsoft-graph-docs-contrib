@@ -17,7 +17,7 @@ configuration := &graphconfig.TeamsAppsRequestBuilderPostRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-graphClient.AppCatalogs().TeamsApps().PostWithRequestConfigurationAndResponseHandler(configuration, nil)
+graphClient.AppCatalogs().TeamsApps().Post(context.Background(), configuration)
 
 
 ```

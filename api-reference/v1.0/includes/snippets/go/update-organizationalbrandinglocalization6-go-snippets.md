@@ -13,7 +13,7 @@ requestBody.SetBackgroundColor(&backgroundColor)
 signInPageText := "Welcome to Contoso France"
 requestBody.SetSignInPageText(&signInPageText) 
 
-graphClient.OrganizationById("organization-id").Branding().LocalizationsById("organizationalBrandingLocalization-id").Patch(requestBody)
+graphClient.OrganizationById("organization-id").Branding().LocalizationsById("organizationalBrandingLocalization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -90,7 +90,7 @@ autoApplyDecisionsEnabled := true
 settings.SetAutoApplyDecisionsEnabled(&autoApplyDecisionsEnabled) 
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```
