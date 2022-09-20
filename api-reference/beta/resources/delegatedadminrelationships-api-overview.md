@@ -35,11 +35,10 @@ The status of the Delegated Admin relationship transitions as follows:
 3. [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: lockForApproval)
 4. [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: terminate)
 
-**Note**: Build the customer invitation link by using the **URI Template:** (https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/{adminRelationshipID}) and replace **{adminRelationshipID}** with id of the admin relationship request. This link will need to be sent to the customer after executing the [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: lockForApproval) API.
+After executing the [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) API with the `lockForApproval` action, build the customer invitation link by using the following URI template, where *{adminRelationshipID}* is the ID of admin relationship request.
 
-Example:
-+ Invitation Link: https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/5a6666c9-7282-0a41-67aa-25a5a3fbf339
-+ Example Relationship ID: 5a6666c9-7282-0a41-67aa-25a5a3fbf339
+```http
+https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/{adminRelationshipID}
 
 
 ## Use cases for GDAP APIs
