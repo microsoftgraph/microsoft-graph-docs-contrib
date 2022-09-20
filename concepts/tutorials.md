@@ -42,11 +42,11 @@ If you prefer to download a completed project, you can do so from one of the fol
 
 ## Next steps
 
-After you complete a tutorial, you can learn more on Microsoft Learn training or explore our samples.
+After you complete a tutorial, you can learn more on Microsoft Learn or explore our samples.
 
 ### Microsoft Learn
 
-For a deeper dive into Microsoft Graph, explore our Microsoft Graph learning paths on Microsoft Learn training:
+For a deeper dive into Microsoft Graph, explore our Microsoft Graph learning paths:
 
 - [Microsoft Graph Fundamentals](/training/paths/m365-msgraph-fundamentals)
 - [Build apps with Microsoft Graph - Associate](/training/paths/m365-msgraph-associate)
