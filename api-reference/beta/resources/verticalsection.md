@@ -1,6 +1,6 @@
 ---
 title: "verticalSection resource type"
-description: Represent the vertical section in a given SharePoint page
+description: Represents the vertical section in a given SharePoint page
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the vertical section in a given SharePoint page.
+Represents the vertical section in a given SharePoint page.
 
 Inherits from [entity](../resources/entity.md).
 

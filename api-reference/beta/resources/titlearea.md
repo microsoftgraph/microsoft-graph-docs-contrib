@@ -1,6 +1,6 @@
 ---
-title: "titleArea resource type"
-description: Represent the title area of a given SharePoint page
+title: 'titleArea resource type'
+description: Represents the title area of a given SharePoint page
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the title area of a given SharePoint page.
+Represents the title area of a given SharePoint page.
 
 ## Properties
 
 | Property                | Type                                                                                      | Description                                                                                                                                                   |
 | :---------------------- | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | alternativeText         | String                                                                                    | Alternative text on the title area.                                                                                                                           |
-| enableGradientEffect    | Boolean                                                                                   | Indicates whether the title area has a gradient effect enabled                                                                                                |
+| enableGradientEffect    | Boolean                                                                                   | Indicates whether the title area has a gradient effect enabled.                                                                                               |
 | image                   | String                                                                                    | Url of The image in the title area.                                                                                                                           |
 | layout                  | [titleAreaLayoutType](../resources/titlearea.md#titlearealayouttype-values)               | Enumeration value that indicates the layout of the title area. The possible values are: `cutInShape`, `plain`, `colorBlock`, `overlap`, `unknownFutureValue`. |
-| showAuthor              | Boolean                                                                                   | Indicates whether the author should be shown in title area.                                                                                                   |
+| showAuthor              | Boolean                                                                                   | Indicates whether the author should be shown in title. area.                                                                                                  |
 | showPublishedDate       | Boolean                                                                                   | Indicates whether the published date should be shown in title area.                                                                                           |
 | showTextBlockAboveTitle | Boolean                                                                                   | Indicates whether the text block above title should be shown in title area.                                                                                   |
 | textAboveTitle          | String                                                                                    | The text above title line.                                                                                                                                    |

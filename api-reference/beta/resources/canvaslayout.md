@@ -1,6 +1,6 @@
 ---
-title: "canvasLayout resource type"
-description: Represent the layout of the content in a given SharePoint page
+title: 'canvasLayout resource type'
+description: Represents the layout of the content in a given SharePoint page
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the layout of the content in a given SharePoint page
+Represents the layout of the content in a given SharePoint page
 
 Inherits from [entity](../resources/entity.md).
 
@@ -22,18 +22,22 @@ Inherits from [entity](../resources/entity.md).
 There is no methods available on this resource.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique identifier of the resource. Inherited from [entity](../resources/entity.md).|
+
+| Property | Type   | Description                                                                             |
+| :------- | :----- | :-------------------------------------------------------------------------------------- |
+| id       | String | The unique identifier of the resource. Inherited from [entity](../resources/entity.md). |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|horizontalSections|[horizontalSection](../resources/horizontalsection.md) collection|Collection of horizontal sections on the SharePoint page |
-|verticalSection|[verticalSection](../resources/verticalsection.md)|Vertical section on the SharePoint page|
+
+| Relationship       | Type                                                              | Description                                               |
+| :----------------- | :---------------------------------------------------------------- | :-------------------------------------------------------- |
+| horizontalSections | [horizontalSection](../resources/horizontalsection.md) collection | Collection of horizontal sections on the SharePoint page. |
+| verticalSection    | [verticalSection](../resources/verticalsection.md)                | Vertical section on the SharePoint page.                  |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -42,13 +46,15 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.canvasLayout",
   "id": "String (identifier)",
-   /* relationships */
-  "horizontalSections": { "@odata.type": "Collection(microsoft.graph.horizontalSection)" },
+  /* relationships */
+  "horizontalSections": {
+    "@odata.type": "Collection(microsoft.graph.horizontalSection)"
+  },
   "verticalSection": { "@odata.type": "microsoft.graph.verticalSection" }
 }
 ```
-

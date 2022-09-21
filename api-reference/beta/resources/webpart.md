@@ -1,6 +1,6 @@
 ---
-title: "webPart resource type"
-description: Represent a specific WebPart instance on a SharePoint page
+title: 'webPart resource type'
+description: Represents a specific WebPart instance on a SharePoint page
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a specific WebPart instance on a SharePoint page.
+Represents a specific WebPart instance on a SharePoint page.
 
 This is an abstract type.
 
@@ -21,12 +21,12 @@ Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
-| Method                                                                         | Return type                                        | Description                                                                                                                             |
-| :----------------------------------------------------------------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
-| [List webParts](../api/webpart-list.md)                                        | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects and their properties.                                                      |
-| [Get webPart](../api/webpart-get.md)                                           | [webPart](../resources/webpart.md)                 | Read the properties and relationships of a [webPart](../resources/webpart.md) object.                                                   |
-| [Get webPart position](../api/webpart-getposition.md)                          | [webPartPosition](../resources/webpartposition.md) | Get the [webPartPosition](../resources/webpartposition.md) information of a [WebPart](../resources/webpart.md).                         |
-| [Get webPart collection by position](../api/sitePage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects filtered by [webPartPosition](../resources/webpartposition.md) information |
+| Method                                                                         | Return type                                        | Description                                                                                                                                 |
+| :----------------------------------------------------------------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| [List webParts](../api/webpart-list.md)                                        | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects and their properties.                                                          |
+| [Get webPart](../api/webpart-get.md)                                           | [webPart](../resources/webpart.md)                 | Read the properties and relationships of a [webPart](../resources/webpart.md) object.                                                       |
+| [Get webPart position](../api/webpart-getposition.md)                          | [webPartPosition](../resources/webpartposition.md) | Get the [webPartPosition](../resources/webpartposition.md) information of a [WebPart](../resources/webpart.md).                             |
+| [Get webPart collection by position](../api/sitePage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects filtered by [webPartPosition](../resources/webpartposition.md) information. ßπ |
 
 ## Properties
 

@@ -1,5 +1,5 @@
 ---
-title: "textWebPart resource type"
+title: 'textWebPart resource type'
 description: Represent a text WebPart instance on a SharePoint page
 author: sangle7
 ms.localizationpriority: medium
@@ -26,7 +26,7 @@ There is no methods available on this resource.
 | Property  | Type   | Description                                                                          |
 | :-------- | :----- | :----------------------------------------------------------------------------------- |
 | id        | String | Instance identifier of the WebPart. Inherited from [entity](../resources/entity.md). |
-| innerHTML | String | The HTML string in text WebPart                                                      |
+| innerHTML | String | The HTML string in text WebPart.                                                     |
 
 ## Relationships
 

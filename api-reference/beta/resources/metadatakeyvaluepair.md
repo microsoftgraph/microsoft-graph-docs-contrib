@@ -1,5 +1,5 @@
 ---
-title: "metaDataKeyValuePair resource type"
+title: 'metaDataKeyValuePair resource type'
 description: Represents a key-value(object) pair of the meta data
 author: sangle7
 ms.localizationpriority: medium
@@ -16,22 +16,27 @@ Namespace: microsoft.graph
 Represents a key-value(object) pair of the meta data
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|key|String|Key of the meta data.|
-|value|[Json](../resources/json.md)|Value of the meta data. Should be an object.|
+
+| Property | Type                         | Description                                  |
+| :------- | :--------------------------- | :------------------------------------------- |
+| key      | String                       | Key of the meta data.                        |
+| value    | [Json](../resources/json.md) | Value of the meta data. Should be an object. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.metaDataKeyValuePair"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.metaDataKeyValuePair",
   "key": "String",
@@ -40,4 +45,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

@@ -1,5 +1,5 @@
 ---
-title: "standardWebPart resource type"
+title: 'standardWebPart resource type'
 description: Represent a standard WebPart instance on a SharePoint page
 author: sangle7
 ms.localizationpriority: medium
@@ -27,7 +27,7 @@ There is no methods available on this resource.
 | :---------- | :----------------------------------------- | :----------------------------------------------------------------------------------- |
 | data        | [webPartData](../resources/webpartdata.md) | Data of the WebPart.                                                                 |
 | id          | String                                     | Instance identifier of the WebPart. Inherited from [entity](../resources/entity.md). |
-| webPartType | String                                     | A Guid which indicates the type of the WebPart                                       |
+| webPartType | String                                     | A Guid which indicates the type of the WebParts                                      |
 
 ## Relationships
 
