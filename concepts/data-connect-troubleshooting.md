@@ -78,7 +78,7 @@ If the destination storage account needs to be closed for public access, you wil
 
     2. For example, if you're running a pipeline in West Europe Azure region, it will only extract the users for Europe (EUR) Office region since West Europe Azure region maps to the Europe Office region. 
 
-2. MGDC internally uses ADF services to move data into your storage account. Thus, you will need to allow list the corresponding ADF public IP addresses for the region. Your destination storage account cannot be in the same region as MGDC’s internal Azure Data Factory (ADF), therefore you cannot allow list services on the same region. You can look up how to configure your Azure storage account and [grant access from an internet IP range](https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range).
+2. After you have found an Office to Azure mapping, you need to determine the correct and compatible location of your destination storage account. You can look up how to configure your Azure storage account and [grant access from an internet IP range](https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range).
 
     1. Please follow table 1 below to select an Azure Storage account that meets the criteria below.
 
@@ -91,7 +91,7 @@ If the destination storage account needs to be closed for public access, you wil
         | APAC        | Southeast Asia                       |
         | AUS         | Australia Southeast                  |
 
-    2. Please follow table 2 below to allow list IPs based on the O365 region and then download IP ranges [here](https://www.microsoft.com/en-us/download/details.aspx?id=56519) based on the table below.
+    2. Next, you will need to allow list IP addresses within your destination storage account that is compatible with table 1 above. Please follow table 2 below to allow list IPs based on the O365 region and then download IP ranges [here](https://www.microsoft.com/en-us/download/details.aspx?id=56519) based on the table below.
 
         | O365 Region | Region you have to allowlist         |
         |-------------|--------------------------------------| 
@@ -103,26 +103,31 @@ If the destination storage account needs to be closed for public access, you wil
         | AUS         | Australia Southeast                  |
 
     > [!NOTE]
-    > 1. At this point, customers can understand and configure the region they want to extract users from
+    > 1. At this point, customers can understand and configure the region they want to extract users from (what their Office to Azure region mapping is)
     > 2. Customers can understand which region their destination storage account CANNOT be in (from table 1)
-    > 3. Next steps below will help customers on [how to allow list IPs](https://docs.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions).
+    > 3. Based on a compatible destination storage account, customers can use information from table 2 to understand which IP addresses they need to allow list. 
+    > 4. Next steps will help customers understand Azure Integration runtime (IR)
 
-4. Since the storage account has public access disabled you will also need to allow your own ADF’s Azure Integration Runtime (IR) region used on the destination linked service. More information can be found [here](https://docs.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions).
+3. You can create a new integration run time on the same region that you have allow listed from table 2 or use Auto Resolve, either way is equivalent based on how your preference and settings. For ease, we highly recommend creating a new IR on the same region as table 2. More information can be found [here] (https://docs.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions).
 
-    1. If you are using AutoResolved IR then the region depends on [several factors](https://docs.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime#azure-ir-location) 
-
-    2. Suggestion: Since you may have already allowed listed ADF IP addresses from the table above, we suggest you create and use an Azure IR in the same region as the ones already allowed listed. 
+    1. If you are using Auto Resolve IR then the region depends on [several factors](https://docs.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime#azure-ir-location) 
 
 ### Example on Network Access and Azure IR
 
-1. I want to extract data for my users in Europe (EUR) Office region.
+1.	I want to extract data for my users in Europe (EUR) Office region. I will have to refer to step #1 in the instructions above to find out my Office to Azure region mapping. Since my Office region is EUR, my Azure region is in West Europe.
 
-2. All my resources, ADF and storage account are in West Europe Azure region, initially.
+2.	All my resources, ADF and storage account are in West Europe Azure region, initially.
 
-3. I closed my destination storage account for public access.
+3.	I closed my destination storage account for public access.
 
-4. For MGDC internal services to copy the data into your storage account, you will need to allow list ADF Public IPs in West Europe Azure region.
+4.	I need to refer to step #2 table #1 to understand where my compatible destination storage account can be based on my Office region I want to extract (EUR).
 
-5. Since you cannot allow list services in the same region as the storage account, then my storage account cannot be on West Europe Azure region, you need to create a new storage account in North Europe.
+5.	Since I cannot allow list services in the same region as the storage account, then my destination storage account cannot be on West Europe Azure region. I can create a new storage account in North Europe.
 
-6. For the ADF destination linked service to also access your storage account, the easiest way is to create and use an Integration Runtime on the West Europe region, as you already allow list this IP addresses for step 3, and since you moved the storage to North Europe then this will not have any issues. If you use AutoResolve Integration runtimes, it will depend on your configuration of resources which region will be used and whether it will need to also be allow list.
+6.	For MGDC internal services to copy the data into my destination storage account, I need to refer to step #2 table #2 to understand how to allow list IP addresses from compatible regions based on my Office region (EUR). I will need to allow list ADF Public IPs in West Europe Azure region. 
+
+7.	For the ADF destination linked service to also access my destination storage account, the easiest way recommended is to create and use an Integration Runtime on the West Europe region. I need to refer to step #4 to complete this or want to use Auto Resolve IR instead.
+
+8.	 I have already listed these IP addresses and moved the destination storage to North Europe since my Office region is EUR, and my Azure region is West Europe. 
+
+
