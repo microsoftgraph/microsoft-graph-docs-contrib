@@ -50,7 +50,8 @@ targets := []graphmodels.InvitationParticipantInfoable {
 }
 requestBody.SetTargets(targets)
 requestedModalities := []graphmodels.Modalityable {
-	"audio",
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality) 
 
 }
 requestBody.SetRequestedModalities(requestedModalities)
