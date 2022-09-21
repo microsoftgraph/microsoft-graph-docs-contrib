@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
-# loginPageLayoutConfiguration resource type
+# loginPageLayoutConfiguration enum type
 
 Namespace: microsoft.graph
 
