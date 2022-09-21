@@ -229,6 +229,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 #### Notification - established
 
 ```http
@@ -354,7 +355,7 @@ Content-Type: application/json
 
 > **Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.
 
-##### Request
+#### Request
 The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
 
 
@@ -695,6 +696,7 @@ Content-Type: application/json
   "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
+
 #### Response
 
 <!-- {
@@ -821,6 +823,7 @@ Content-Type: application/json
 }
 
 ```
+
 #### Notification - established
 
 ```http
@@ -867,6 +870,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 #### Notification - roster
 
 ```http

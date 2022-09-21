@@ -2571,10 +2571,26 @@
     "ChangeList": [
       {
         "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
-        "ApiChange": "Property",
-        "ChangedApiName": "isContentSharingNotificationEnabled",
+        "ApiChange": "Relationship",
+        "ChangedApiName": "contentSharingSessions",
         "ChangeType": "Addition",
-        "Description": "Added the `isContentSharingNotificationEnabled` property to the [callOptions](https://docs.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-1.0) resource.",
+        "Description": "Added the **contentSharingSessions** relationship to the [call](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-1.0) resource.",
+        "Target": "call"
+      },
+      {
+        "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
+        "ApiChange": "Property",
+        "ChangedApiName": "callOptions",
+        "ChangeType": "Addition",
+        "Description": "Added the **callOptions** property to the [call](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-1.0) resource.",
+        "Target": "call"
+      },
+      {
+        "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
+        "ApiChange": "Resource",
+        "ChangedApiName": "callOptions",
+        "ChangeType": "Addition",
+        "Description": "Added the [callOptions](https://docs.microsoft.com/graph/api/resources/callOptions?view=graph-rest-1.0) resource type.",
         "Target": "callOptions"
       },
       {
@@ -2582,8 +2598,24 @@
         "ApiChange": "Resource",
         "ChangedApiName": "contentSharingSession",
         "ChangeType": "Addition",
-        "Description": "Added the [contentSharingSession](https://docs.microsoft.com/en-us/graph/api/resources/contentSharingSession?view=graph-rest-1.0) resource",
+        "Description": "Added the [contentSharingSession](https://docs.microsoft.com/graph/api/resources/contentSharingSession?view=graph-rest-1.0) resource and supported methods.",
         "Target": "contentSharingSession"
+      },
+      {
+        "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
+        "ApiChange": "Resource",
+        "ChangedApiName": "incomingCallOptions",
+        "ChangeType": "Addition",
+        "Description": "Added the [incomingCallOptions](https://docs.microsoft.com/graph/api/resources/incomingCallOptions?view=graph-rest-1.0) resource type.",
+        "Target": "incomingCallOptions"
+      },
+      {
+        "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",
+        "ApiChange": "Resource",
+        "ChangedApiName": "outgoingCallOptions",
+        "ChangeType": "Addition",
+        "Description": "Added the [outgoingCallOptions](https://docs.microsoft.com/graph/api/resources/outgoingCallOptions?view=graph-rest-1.0) resource type.",
+        "Target": "outgoingCallOptions"
       }
     ],
     "Id": "8c5b26e9-532e-4f97-89a3-480d9e685049",

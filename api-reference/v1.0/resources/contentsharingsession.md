@@ -13,18 +13,21 @@ Namespace: microsoft.graph
 
 Represents a content sharing session in a call.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
-| Method                                                             | Return Type                                                 | Description                                                                     |
-|:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
-| [Get contentSharingSession](../api/contentsharingsession-get.md )                                     | [contentSharingSession](contentsharingsession.md)                                             | Retrieve the properties of a **contentSharingSession** object.                                         |
-| [List contentSharingSessions](../api/call-list-contentsharingsessions.md )              | [contentSharingSession](contentsharingsession.md) collection                    | Retrieve a list of **contentSharingSession** objects in a call.                                            |
+| Method                                                                     | Return Type                                                  | Description                                                     |
+|:---------------------------------------------------------------------------|:-------------------------------------------------------------|:----------------------------------------------------------------|
+| [Get contentSharingSession](../api/contentsharingsession-get.md )          | [contentSharingSession](contentsharingsession.md)            | Retrieve the properties of a **contentSharingSession** object in a call.  |
+| [List contentSharingSessions](../api/call-list-contentsharingsessions.md ) | [contentSharingSession](contentsharingsession.md) collection | Retrieve a list of **contentSharingSession** objects in a call. |
+
 
 ## Properties
 
-|Property                 |Type                      |Description                                                                        |
-|:---                     |:---                      |:---                                                                               |
-| id                      | String                   | Unique identifier for the content sharing session. Read-only. |
+| Property | Type   | Description                                                                                                    |
+|:---------|:-------|:---------------------------------------------------------------------------------------------------------------|
+| id       | String | Unique identifier for the content sharing session. Read-only. Inherited from [entity](../resources/entity.md). |
 
 ## JSON representation
 
@@ -38,6 +41,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.contentSharingSession",
-  "id": "String(identifier)"
+  "id": "String (identifier)"
 }
 ```

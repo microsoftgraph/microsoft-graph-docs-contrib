@@ -1,6 +1,6 @@
 ---
 title: "Get contentSharingSession"
-description: "Retrieve the properties of a contentSharingSession object."
+description: "Retrieve the properties of a contentSharingSession object in a call."
 author: "satyakonmsft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -11,15 +11,15 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the properties of a [contentSharingSession](../resources/contentsharingsession.md) object.
+Retrieve the properties of a [contentSharingSession](../resources/contentsharingsession.md) object in a call.
 
 ## Permissions
 
-| Permission type | Permissions (from least to most privileged) |
-| :-------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not supported.       |
-| Delegated (personal Microsoft account) | Not supported.       |
-| Application     | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All                                      |
+| Permission type                        | Permissions (from least to most privileged)                                                              |
+|:---------------------------------------|:---------------------------------------------------------------------------------------------------------|
+| Delegated (work or school account)     | Not supported.                                                                                           |
+| Delegated (personal Microsoft account) | Not supported.                                                                                           |
+| Application                            | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -52,11 +52,8 @@ The following is an example of a request.
   "name": "get-contentSharingSession"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/contentSharingSessions/7e1b4346-85a6-4bdd-abe3-d11c5d420efe
+GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/contentSharingSessions/7e1b4346-85a6-4bdd-abe3-d11c5d420efe
 ```
-
----
-
 
 ### Response
 

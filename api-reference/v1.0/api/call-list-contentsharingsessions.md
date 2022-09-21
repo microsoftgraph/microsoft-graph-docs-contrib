@@ -15,11 +15,11 @@ Retrieve a list of [contentSharingSession](../resources/contentsharingsession.md
 
 ## Permissions
 
-| Permission type | Permissions (from least to most privileged) |
-| :-------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not supported.       |
-| Delegated (personal Microsoft account) | Not supported.       |
-| Application     | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All                                        |
+| Permission type                        | Permissions (from least to most privileged)                                                              |
+|:---------------------------------------|:---------------------------------------------------------------------------------------------------------|
+| Delegated (work or school account)     | Not supported.                                                                                           |
+| Delegated (personal Microsoft account) | Not supported.                                                                                           |
+| Application                            | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All |
 
 ## HTTP request
 
@@ -55,13 +55,8 @@ The following is an example of a request.
   "name": "get-contentsharingsessions"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/contentSharingSessions
+GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/contentSharingSessions
 ```
-
----
-
-
-<!-- markdownlint-disable MD024 -->
 
 ### Response
 
@@ -88,7 +83,7 @@ Content-Type: application/json
          "id":"278405a3-f568-4b3e-b684-009193463064"
       }
    ],
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/contentSharingSessions"
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/contentSharingSessions"
 }
 
 ```
