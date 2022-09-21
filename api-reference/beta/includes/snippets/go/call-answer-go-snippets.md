@@ -17,11 +17,12 @@ additionalData := map[string]interface{}{
 mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
 acceptedModalities := []graphmodels.Modalityable {
-	"audio",
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality) 
 
 }
 requestBody.SetAcceptedModalities(acceptedModalities)
-callOptions := graphmodels.NewcallOptions()
+callOptions := graphmodels.NewIncomingCallOptions()
 isContentSharingNotificationEnabled := true
 callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled) 
 requestBody.SetCallOptions(callOptions)

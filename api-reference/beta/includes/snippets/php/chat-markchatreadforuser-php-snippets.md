@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new MarkChatReadForUserPostRequestBody();
-$user = new User();
+$user = new TeamworkUserIdentity();
 $user->setId('d864e79f-a516-4d0f-9fee-0eeb4d61fdc2');
 
 
