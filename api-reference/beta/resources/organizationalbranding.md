@@ -103,6 +103,8 @@ The following is a JSON representation of the resource.
   "customAccountResetCredentialsUrl": "String",
   "customCannotAccessYourAccountText": "String",
   "customCannotAccessYourAccountUrl": "String",
+  "customCSS": "Stream",
+  "customCSSRelativeUrl": "String",
   "customForgotMyPasswordText": "String",
   "customPrivacyAndCookiesText": "String",
   "customPrivacyAndCookiesUrl": "String",
@@ -114,7 +116,7 @@ The following is a JSON representation of the resource.
   "headerBackgroundColor": "String",
   "loginPageLayoutConfiguration": {
     "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
-  }
+  },
   "loginPageTextVisibilitySettings": {
     "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
   }
