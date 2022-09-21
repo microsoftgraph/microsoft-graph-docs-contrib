@@ -18,9 +18,12 @@ pattern := graphmodels.NewRecurrencePattern()
 type := graphmodels.WEEKLY_RECURRENCEPATTERNTYPE 
 pattern.SetType(&type) 
 daysOfWeek := []graphmodels.DayOfWeekable {
-	"Monday",
-	"Wednesday",
-	"Friday",
+	dayOfWeek := graphmodels.MONDAY_DAYOFWEEK 
+	pattern.SetDayOfWeek(&dayOfWeek) 
+	dayOfWeek := graphmodels.WEDNESDAY_DAYOFWEEK 
+	pattern.SetDayOfWeek(&dayOfWeek) 
+	dayOfWeek := graphmodels.FRIDAY_DAYOFWEEK 
+	pattern.SetDayOfWeek(&dayOfWeek) 
 
 }
 pattern.SetDaysOfWeek(daysOfWeek)

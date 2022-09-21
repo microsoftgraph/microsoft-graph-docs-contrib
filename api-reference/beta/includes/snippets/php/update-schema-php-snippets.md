@@ -21,7 +21,8 @@ $propertiesProperty1->setIsSearchable(true);
 
 $propertiesProperty1->setIsRetrievable(true);
 
-$propertiesProperty1->setLabels(['title', ]);
+$propertiesProperty1->setLabels([$propertiesProperty1->setLabel(new Label('title'));
+]);
 
 
 $propertiesArray []= $propertiesProperty1;
