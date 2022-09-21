@@ -13,13 +13,15 @@ addLicenses := []graphmodels.AssignedLicenseable {
 }
 requestBody.SetAddLicenses(addLicenses)
 removeLicenses := []string {
-	"c7df2760-2c81-4ef7-b578-5b5392b571df",
-	"b05e124f-c7cc-45a0-a6aa-8cf78c946968",
+ := uuid.MustParse("c7df2760-2c81-4ef7-b578-5b5392b571df")
+requestBody.Set(&) 
+ := uuid.MustParse("b05e124f-c7cc-45a0-a6aa-8cf78c946968")
+requestBody.Set(&) 
 
 }
 requestBody.SetRemoveLicenses(removeLicenses)
 
-result, err := graphClient.GroupsById("group-id").AssignLicense().Post(requestBody)
+result, err := graphClient.GroupsById("group-id").AssignLicense().Post(context.Background(), requestBody, nil)
 
 
 ```

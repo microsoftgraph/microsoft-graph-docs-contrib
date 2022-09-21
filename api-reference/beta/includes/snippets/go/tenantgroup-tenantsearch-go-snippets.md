@@ -11,7 +11,7 @@ requestBody := graphmodels.NewTenantSearchPostRequestBody()
 tenantId := "String"
 requestBody.SetTenantId(&tenantId) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().TenantSearch().Post(requestBody)
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().TenantSearch().Post(context.Background(), requestBody, nil)
 
 
 ```

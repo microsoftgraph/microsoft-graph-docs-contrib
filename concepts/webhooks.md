@@ -58,7 +58,7 @@ You can create a subscription for the following scenarios:
 |---------|---------|
 |To a specific Outlook folder such as the Inbox     |   `me/mailFolders('inbox')/messages`      |
 |To a top-level resource     | `/me/messages` <br/> `/me/contacts` <br/> `/me/events` <br/> `/users` <br/> `/groups` <br/> `/communications/callRecords`        |
-|To a specific resource instance     |  `/users/{id}` <br/> `/groups/{id}` <br/> `/groups/{id}/conversations` <br/> `/sites/{site-id}/lists/{list-id}` <br/> `/communications/presences/{id}` <br/> `/communications/onlinemeeting/{meeting-id}`       |
+|To a specific resource instance     |  `/users/{id}` <br/> `/groups/{id}` <br/> `/groups/{id}/conversations` <br/> `/sites/{site-id}/lists/{list-id}` <br/> `/communications/presences/{id}` <br/> `/communications/onlinemeetings/{meeting-id}`       |
 |To any folder in a user's personal OneDrive     |  `/drives/{id}/root` <br/> `/drives/{id}/root/subfolder`      |
 |To the root folder of a SharePoint/OneDrive for Business drive     |   `/drive/root`      |
 | Or to a new [Security API](security-concept-overview.md) alert |`/security/alerts?$filter=status eq 'newAlert'` <br/> `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`|

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.Security().TriggerTypes().RetentionEventTypesById("retentionEventType-id").Get()
+result, err := graphClient.Security().TriggerTypes().RetentionEventTypesById("retentionEventType-id").Get(context.Background(), nil)
 
 
 ```

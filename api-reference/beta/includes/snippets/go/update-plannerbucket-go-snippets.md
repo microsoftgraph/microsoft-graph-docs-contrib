@@ -18,7 +18,7 @@ requestBody := graphmodels.NewPlannerBucket()
 name := "Development"
 requestBody.SetName(&name) 
 
-graphClient.Planner().BucketsById("plannerBucket-id").PatchWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+graphClient.Planner().BucketsById("plannerBucket-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

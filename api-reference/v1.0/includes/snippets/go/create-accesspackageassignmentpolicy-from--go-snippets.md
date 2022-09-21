@@ -56,12 +56,12 @@ stages := []graphmodels.AccessPackageApprovalStageable {
 }
 requestApprovalSettings.SetStages(stages)
 requestBody.SetRequestApprovalSettings(requestApprovalSettings)
-accessPackage := graphmodels.NewaccessPackage()
+accessPackage := graphmodels.NewAccessPackage()
 id := "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"
 accessPackage.SetId(&id) 
 requestBody.SetAccessPackage(accessPackage)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentPolicies().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

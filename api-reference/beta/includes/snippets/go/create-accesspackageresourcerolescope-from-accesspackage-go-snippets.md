@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAccessPackageResourceRoleScope()
-accessPackageResourceRole := graphmodels.NewaccessPackageResourceRole()
+accessPackageResourceRole := graphmodels.NewAccessPackageResourceRole()
 originId := "Member_b31fe1f1-3651-488f-bd9a-1711887fd4ca"
 accessPackageResourceRole.SetOriginId(&originId) 
 displayName := "Member"
 accessPackageResourceRole.SetDisplayName(&displayName) 
 originSystem := "AadGroup"
 accessPackageResourceRole.SetOriginSystem(&originSystem) 
-accessPackageResource := graphmodels.NewaccessPackageResource()
+accessPackageResource := graphmodels.NewAccessPackageResource()
 id := "1d08498d-72a1-403f-8511-6b1f875746a0"
 accessPackageResource.SetId(&id) 
 resourceType := "O365 Group"
@@ -26,14 +26,14 @@ originSystem := "AadGroup"
 accessPackageResource.SetOriginSystem(&originSystem) 
 accessPackageResourceRole.SetAccessPackageResource(accessPackageResource)
 requestBody.SetAccessPackageResourceRole(accessPackageResourceRole)
-accessPackageResourceScope := graphmodels.NewaccessPackageResourceScope()
+accessPackageResourceScope := graphmodels.NewAccessPackageResourceScope()
 originId := "b31fe1f1-3651-488f-bd9a-1711887fd4ca"
 accessPackageResourceScope.SetOriginId(&originId) 
 originSystem := "AadGroup"
 accessPackageResourceScope.SetOriginSystem(&originSystem) 
 requestBody.SetAccessPackageResourceScope(accessPackageResourceScope)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById("accessPackage-id").AccessPackageResourceRoleScopes().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById("accessPackage-id").AccessPackageResourceRoleScopes().Post(context.Background(), requestBody, nil)
 
 
 ```

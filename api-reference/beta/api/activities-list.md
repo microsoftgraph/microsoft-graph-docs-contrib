@@ -1,13 +1,12 @@
 ---
 author: daspek
-ms.date: 09/10/2017
-title: File Activities
+title: List activities
 description: "List the recent activities that took place on an item or under a hierarchy."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: files
 ---
-# Enumerate activities (preview)
+# List activities (preview)
 
 Namespace: microsoft.graph
 
@@ -15,7 +14,7 @@ Namespace: microsoft.graph
 
 List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.
 
-**Note:** Activities is in a limited Preview and not yet available to all tenants.
+>**Note:** Activities is in a limited preview and is not yet available to all tenants.
 
 [activities]: ../resources/itemactivity.md
 
@@ -42,7 +41,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 
 ## Example
 
-#### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -67,7 +66,7 @@ GET https://graph.microsoft.com/beta/me/drive/activities
 ---
 
 
-#### Response
+### Response
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->
 

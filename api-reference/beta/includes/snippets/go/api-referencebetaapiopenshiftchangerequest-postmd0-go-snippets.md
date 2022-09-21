@@ -19,7 +19,7 @@ requestBody.SetSenderMessage(&senderMessage)
 openShiftId := "577b75d2-a927-48c0-a5d1-dc984894e7b8"
 requestBody.SetOpenShiftId(&openShiftId) 
 
-result, err := graphClient.TeamsById("team-id").Schedule().OpenShiftChangeRequests().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.TeamsById("team-id").Schedule().OpenShiftChangeRequests().Post(context.Background(), requestBody, configuration)
 
 
 ```

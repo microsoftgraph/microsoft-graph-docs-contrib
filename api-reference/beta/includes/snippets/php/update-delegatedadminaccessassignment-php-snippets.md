@@ -12,29 +12,17 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new DelegatedAdminAccessAssignment();
 $accessDetails = new DelegatedAdminAccessDetails();
 $unifiedRolesUnifiedRole1 = new UnifiedRole();
-$additionalData = [
-'roleDefinitionId' => '88d8e3e3-8f55-4a1e-953a-9b9898b8876b', 
-];
-$unifiedRolesUnifiedRole1->setAdditionalData($additionalData);
-
+$unifiedRolesUnifiedRole1->setRoleDefinitionId('88d8e3e3-8f55-4a1e-953a-9b9898b8876b');
 
 
 $unifiedRolesArray []= $unifiedRolesUnifiedRole1;
 $unifiedRolesUnifiedRole2 = new UnifiedRole();
-$additionalData = [
-'roleDefinitionId' => '44367163-eba1-44c3-98af-f5787879f96a', 
-];
-$unifiedRolesUnifiedRole2->setAdditionalData($additionalData);
-
+$unifiedRolesUnifiedRole2->setRoleDefinitionId('44367163-eba1-44c3-98af-f5787879f96a');
 
 
 $unifiedRolesArray []= $unifiedRolesUnifiedRole2;
 $unifiedRolesUnifiedRole3 = new UnifiedRole();
-$additionalData = [
-'roleDefinitionId' => '729827e3-9c14-49f7-bb1b-9608f156bbb8', 
-];
-$unifiedRolesUnifiedRole3->setAdditionalData($additionalData);
-
+$unifiedRolesUnifiedRole3->setRoleDefinitionId('729827e3-9c14-49f7-bb1b-9608f156bbb8');
 
 
 $unifiedRolesArray []= $unifiedRolesUnifiedRole3;

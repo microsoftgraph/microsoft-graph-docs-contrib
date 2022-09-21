@@ -19,7 +19,7 @@ configuration := &graphconfig.TimeCardsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Schedule().TimeCards().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.TeamsById("team-id").Schedule().TimeCards().Get(context.Background(), configuration)
 
 
 ```

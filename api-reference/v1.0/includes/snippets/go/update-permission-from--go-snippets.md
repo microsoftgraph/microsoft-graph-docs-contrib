@@ -14,7 +14,7 @@ roles := []string {
 }
 requestBody.SetRoles(roles)
 
-graphClient.SitesById("site-id").PermissionsById("permission-id").Patch(requestBody)
+graphClient.SitesById("site-id").PermissionsById("permission-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
