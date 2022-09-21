@@ -253,10 +253,10 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_web_count"
+  "name": "list_applications_search_count_select"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications?$search="displayName:Web"&$count=true
+GET https://graph.microsoft.com/beta/applications?$search="displayName:Web"&$count=true&$select=appId,identifierUris,displayName,publisherDomain,signInAudience
 ConsistencyLevel: eventual
 ```
 
@@ -303,7 +303,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#applications",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications(appId,identifierUris,displayName,publisherDomain,signInAudience)",
   "@odata.count":1396,
   "value":[
     {
