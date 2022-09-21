@@ -30,6 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.UpdatePolicyViolation.All for a chat message.</br>ChannelMessage.UpdatePolicyViolation.All for a channel message. |
 
+## Federation
+
+Federation is not supported on PATCH chatMessage operation.
+Only tenant, whose user sent the message, will be able to perform Data Loss Prevention PATCH on the targetted chat message. 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
