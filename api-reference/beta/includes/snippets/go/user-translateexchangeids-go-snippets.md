@@ -19,7 +19,7 @@ requestBody.SetSourceIdType(&sourceIdType)
 targetIdType := graphmodels.RESTIMMUTABLEENTRYID_EXCHANGEIDFORMAT 
 requestBody.SetTargetIdType(&targetIdType) 
 
-result, err := graphClient.Me().TranslateExchangeIds().Post(requestBody)
+result, err := graphClient.Me().TranslateExchangeIds().Post(context.Background(), requestBody, nil)
 
 
 ```

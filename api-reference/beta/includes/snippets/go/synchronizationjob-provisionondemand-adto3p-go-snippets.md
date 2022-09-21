@@ -33,7 +33,7 @@ parameters := []graphmodels.SynchronizationJobApplicationParametersable {
 }
 requestBody.SetParameters(parameters)
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").ProvisionOnDemand().Post(requestBody)
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").ProvisionOnDemand().Post(context.Background(), requestBody, nil)
 
 
 ```

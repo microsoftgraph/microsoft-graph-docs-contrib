@@ -41,7 +41,7 @@ fallbackReviewers := []graphmodels.Objectable {
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)
 
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").StagesById("accessReviewStage-id").Patch(requestBody)
+graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").StagesById("accessReviewStage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

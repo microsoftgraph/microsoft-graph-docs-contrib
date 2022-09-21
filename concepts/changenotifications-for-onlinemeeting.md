@@ -41,9 +41,8 @@ Content-Type: application/json
 }
 ```
 
-## JoinWebUrl
-
-The join URL for the meeting is included in the joinWebUrl property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
+> [!NOTE]
+> Replace `{JoinWebUrl}` with the actual value when specifying the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
 
 ## Notifications with encrypted resource data
 
@@ -113,7 +112,7 @@ The following are the supported meeting events:
 }
 ```
 
-**CallRosterUpdate** events include two additional properties, **activeParticipants@delta** to depict participants added to a meeting and **activeParticipants@remove** for participants leaving the online meeting. For more information about participants, see [meetingParticipantInfo resource type](/graph/api/resources/meetingparticipants).
+**CallRosterUpdate** events include two additional properties, **activeParticipants@delta** to depict participants added to a meeting and **activeParticipants@remove** for participants leaving the online meeting. For more information about participants, see [meetingParticipantInfo resource type](/graph/api/resources/meetingparticipantinfo).
 
 You can choose to omit encryption by not including the property **includeResourceData** or setting this value to `false` in your subscription request body. Doing so adds the properties that would have been part of the encrypted payload to **resourceData**.
 

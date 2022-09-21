@@ -33,7 +33,7 @@ GET /applications
 ```
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 application objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. Some relationships also support `$filter`. The default and maximum page sizes are 100 and 999 application objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 By default, this API doesn't return the value of the **key** in the **keyCredentials** property when listing all applications. To retrieve the public key info in **key**, the **keyCredentials** property must be specified in a `$select` query. For example, `$select=id,appId,keyCredentials`.
 
@@ -251,10 +251,10 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_web_count"
+  "name": "list_applications_search_count_select"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/applications?$search="displayName:Web"&$count=true
+GET https://graph.microsoft.com/v1.0/applications?$search="displayName:Web"&$count=true&$select=appId,identifierUris,displayName,publisherDomain,signInAudience
 ConsistencyLevel: eventual
 ```
 
@@ -302,7 +302,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#applications",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications(appId,identifierUris,displayName,publisherDomain,signInAudience)",
   "@odata.count":1396,
   "value":[
     {

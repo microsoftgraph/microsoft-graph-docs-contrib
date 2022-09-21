@@ -22,7 +22,7 @@ $requestBody->setImportance(new ChatMessageImportance('normal'));
 
 $requestBody->setLocale('en-us');
 
-$from = new From();
+$from = new ChatMessageFromIdentitySet();
 $From->setApplication(null);
 
 $From->setDevice(null);
@@ -62,7 +62,7 @@ $mentionsChatMessageMention1->setId(0);
 
 $mentionsChatMessageMention1->setMentionText('Raghav');
 
-$mentionsChatMessageMention1Mentioned = new Mentioned();
+$mentionsChatMessageMention1Mentioned = new ChatMessageMentionedIdentitySet();
 $mentionsChatMessageMention1Mentioned->setApplication(null);
 
 $mentionsChatMessageMention1Mentioned->setDevice(null);
@@ -91,7 +91,7 @@ $mentionsChatMessageMention2->setId(1);
 
 $mentionsChatMessageMention2->setMentionText('TestGlobalBot');
 
-$mentionsChatMessageMention2Mentioned = new Mentioned();
+$mentionsChatMessageMention2Mentioned = new ChatMessageMentionedIdentitySet();
 $mentionsChatMessageMention2MentionedApplication = new Identity();
 $mentionsChatMessageMention2MentionedApplication->setId('03a02232-d8f5-4970-a77e-6e8c76ce7a4e');
 

@@ -303,7 +303,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. The calling user or app must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
+The following is an example of the request. The calling user must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
 
 # [HTTP](#tab/http)
 
