@@ -46,6 +46,9 @@ The content component is used to add the bulk of the item that needs to be full 
 
 Content is one of the key fields influencing [relevance](connecting-external-content-manage-schema.md#relevance) across Microsoft experiences. The content types `text` and `html` are supported. If your data source has other content types, such as binary files, videos, or images, you can parse them to text before adding them to Microsoft Graph. For example, you can use optical character recognition to extract searchable text from images.
 
+ > [!IMPORTANT]
+> The compliance solution (i.e. eDiscovery) only supports content type `text`. If you enable the connection for Compliance by including "compliance" to "enabledContentExperience", you should ingest content in plain text format and set content type to `text`.
+
 ![An example content component.](./images/connectors-images/connecting-external-content-manage-items-2.png)
 
 *An example content component.*
