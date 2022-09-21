@@ -19,14 +19,14 @@ Represents the portal notification associated with current user's alert record.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|alertImpact|[microsoft.graph.deviceManagement.alertImpact](../resources/devicemanagement-alertimpact.md)|The associated alert impact|
-|alertRecordId|String|The associated alert record id|
-|alertRuleId|String|The associated alert rule id|
-|alertRuleName|String|The associated alert rule name|
-|alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](../resources/devicemanagement-alertrule.md#alertruletemplate-values)|The associated alert rule template.The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
-|id|String|Id of the portal notification|
-|isPortalNotificationSent|Boolean|When true, the portal notification is already sent for current user. When false, the portal notification is not sent yet|
-|severity|[microsoft.graph.deviceManagement.ruleSeverityType](../resources/devicemanagement-alertrule.md#ruleseveritytype-values)|The associated alert rule severity.The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
+|alertImpact|[microsoft.graph.deviceManagement.alertImpact](../resources/devicemanagement-alertimpact.md)|The associated alert impact.|
+|alertRecordId|String|The associated alert record ID.|
+|alertRuleId|String|The associated alert rule ID.|
+|alertRuleName|String|The associated alert rule name.|
+|alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](../resources/devicemanagement-alertrule.md#alertruletemplate-values)|The associated alert rule template. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
+|id|String|The unique identifier for the portal notification.|
+|isPortalNotificationSent|Boolean|If `true`, the portal notification has already been sent for the signed-in user; otherwise, the portal notification hasn't been sent yet.|
+|severity|[microsoft.graph.deviceManagement.ruleSeverityType](../resources/devicemanagement-alertrule.md#ruleseveritytype-values)|The associated alert rule severity. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
 
 ## Relationships
 
@@ -43,15 +43,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagement.portalNotification",
-  "id": "String (identifier)",
-  "alertRuleId": "String",
-  "alertRecordId": "String",
-  "alertRuleName": "String",
-  "alertRuleTemplate": "String",
   "alertImpact": {
     "@odata.type": "microsoft.graph.deviceManagement.alertImpact"
   },
-  "severity": "String",
-  "isPortalNotificationSent": "Boolean"
+  "alertRecordId": "String",
+  "alertRuleId": "String",
+  "alertRuleName": "String",
+  "alertRuleTemplate": "String",
+  "id": "String (identifier)",
+  "isPortalNotificationSent": "Boolean",
+  "severity": "String"
 }
 ```
