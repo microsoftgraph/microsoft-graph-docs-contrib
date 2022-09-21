@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
 GET /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}
 ```
@@ -56,7 +57,7 @@ If successful, this method returns a `200 OK` response code and [deviceManagemen
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
+GET https://graph.microsoft.com/beta/deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}
 ```
 
 ### Response
@@ -92,6 +93,8 @@ Content-Length: 920
   }
 }
 ```
+
+
 
 
 

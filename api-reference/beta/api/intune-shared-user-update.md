@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [user](../resources/intune-shared-user.md) object.
 
-## Prerequisites
+## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -96,6 +96,8 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
+
 
 
 

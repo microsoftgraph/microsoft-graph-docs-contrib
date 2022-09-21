@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-## Prerequisites
+## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -87,6 +87,8 @@ Content-Length: 422
   ]
 }
 ```
+
+
 
 
 

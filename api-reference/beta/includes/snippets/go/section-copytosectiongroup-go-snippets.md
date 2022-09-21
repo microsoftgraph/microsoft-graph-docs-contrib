@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewCopyToSectionGroupPostRequestBody()
 id := "id-value"
-requestBody.SetId(&id)
+requestBody.SetId(&id) 
 groupId := "groupId-value"
-requestBody.SetGroupId(&groupId)
+requestBody.SetGroupId(&groupId) 
 renameAs := "renameAs-value"
-requestBody.SetRenameAs(&renameAs)
-onenoteSectionId := "onenoteSection-id"
-result, err := graphClient.Me().Onenote().SectionsById(&onenoteSectionId).CopyToSectionGroup(onenoteSection-id).Post(requestBody)
+requestBody.SetRenameAs(&renameAs) 
+
+result, err := graphClient.Me().Onenote().SectionsById("onenoteSection-id").CopyToSectionGroup().Post(context.Background(), requestBody, nil)
 
 
 ```

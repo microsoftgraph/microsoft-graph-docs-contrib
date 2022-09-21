@@ -1,15 +1,15 @@
 ---
-title: "Migrate Azure AD Graph apps to Microsoft Graph"
-description: "Describes how to migrate Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
+title: "Migrate from Azure Active Directory (Azure AD) Graph to Microsoft Graph"
+description: "Learn how to migrate yor apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph before Azure AD Graph is retired."
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 
-# Migrate Azure AD Graph apps to Microsoft Graph
+# Migrate your apps from Azure AD Graph to Microsoft Graph
 
 > [!IMPORTANT]
-> Azure Active Directory (Azure AD) Graph is deprecated but won't be retired on June 30, 2022 as [previously announced](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363). Listening closely to your feedback about the challenges of migrating such a critical dependency, we're delaying the retirement date through at least the end of this year, 2022. We’ll provide a retirement update mid-calendar year including releasing more tools to help you to migrate your apps.
+> Azure Active Directory (Azure AD) Graph is deprecated but won't be retired on June 30, 2022 as [previously announced](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363). Listening closely to your feedback about the challenges of migrating such a critical dependency, we're delaying the retirement date through at least the end of this year, 2022. We’ll provide a retirement update mid-calendar year including releasing more tools to help you to migrate your apps. However, the Azure AD Graph licensing assignment APIs will be retired on March 31, 2023 as [recently announced](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
 
 ## Why use Microsoft Graph?
 
@@ -27,7 +27,7 @@ Switch to Microsoft Graph to take advantage of these enhanced capabilities and:
 - [Webhook notifications on users and groups](/graph/webhooks).
 - Advanced license management features including [group-based licensing](/graph/api/group-assignlicense).
 - Identity governance features such as:
-  - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) (PIM) to elevate users to privileged roles only when needed and for a limited time period.
+  - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root) (PIM) to elevate users to privileged roles only when needed and for a limited time period.
   - [Access reviews](/graph/api/resources/accessreviewsv2-overview) for one-time or recurring access reviews for attestation of user's access rights.
   - [Terms-of-use](/graph/api/resources/agreement) to enable organizations to present information for legal or compliance requirements, like disclaimer notices.
 - Security features such as:
@@ -45,10 +45,10 @@ The rest of the articles in this section help you migrate your app from Azure AD
 
 Send any other questions, open issues, and feature requests through Microsoft Q&A by using the tag [azure-ad-graph-deprecation](/answers/topics/azure-ad-graph-deprecation.html).
 
-## Next Steps
+## Next steps
 
 - Walk through the [app migration checklist](migrate-azure-ad-graph-planning-checklist.md) to help you plan the migration.
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
-- To learn more about progress updates and timelines, see [Microsoft Graph or the Azure AD Graph](https://developer.microsoft.com/graph/blogs/microsoft-graph-or-azure-ad-graph/).
-- Get [answers to questions](/graph/migrate-azure-ad-graph-faq) you may have about the migration.
+- Learn more about progress updates and timelines in [Microsoft Graph or the Azure AD Graph](https://developer.microsoft.com/graph/blogs/microsoft-graph-or-azure-ad-graph/).
+- Get [answers to questions](/graph/migrate-azure-ad-graph-faq) you might have about the migration.

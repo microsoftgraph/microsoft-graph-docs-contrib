@@ -7,10 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-userFlowLanguageConfigurationId := "userFlowLanguageConfiguration-id"
-userFlowLanguagePageId := "userFlowLanguagePage-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).DefaultPagesById(&userFlowLanguagePageId).$value().Get()
+
+graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").LanguagesById("userFlowLanguageConfiguration-id").DefaultPagesById("userFlowLanguagePage-id").$value().Get(context.Background(), nil)
 
 
 ```

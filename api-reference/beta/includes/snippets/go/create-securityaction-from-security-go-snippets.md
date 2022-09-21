@@ -7,25 +7,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewSecurityAction()
+requestBody := graphmodels.NewSecurityAction()
 name := "BlockIp"
-requestBody.SetName(&name)
+requestBody.SetName(&name) 
 actionReason := "Test"
-requestBody.SetActionReason(&actionReason)
-requestBody.SetParameters( []KeyValuePair {
-	msgraphsdk.NewKeyValuePair(),
+requestBody.SetActionReason(&actionReason) 
+
+
+keyValuePair := graphmodels.NewKeyValuePair()
 name := "IP"
-	SetName(&name)
+keyValuePair.SetName(&name) 
 value := "1.2.3.4"
-	SetValue(&value)
+keyValuePair.SetValue(&value) 
+
+parameters := []graphmodels.KeyValuePairable {
+	keyValuePair,
+
 }
-vendorInformation := msgraphsdk.NewSecurityVendorInformation()
-requestBody.SetVendorInformation(vendorInformation)
+requestBody.SetParameters(parameters)
+vendorInformation := graphmodels.NewSecurityVendorInformation()
 provider := "Windows Defender ATP"
-vendorInformation.SetProvider(&provider)
+vendorInformation.SetProvider(&provider) 
 vendor := "Microsoft"
-vendorInformation.SetVendor(&vendor)
-result, err := graphClient.Security().SecurityActions().Post(requestBody)
+vendorInformation.SetVendor(&vendor) 
+requestBody.SetVendorInformation(vendorInformation)
+
+result, err := graphClient.Security().SecurityActions().Post(context.Background(), requestBody, nil)
 
 
 ```

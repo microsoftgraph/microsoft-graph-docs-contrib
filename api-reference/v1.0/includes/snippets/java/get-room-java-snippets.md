@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Place place = graphClient.places("3162F1E1-C4C0-604B-51D8-91DA78989EB1")
+Place place = graphClient.places("979e9793-3e91-40eb-b18c-0ea937893956")
 	.buildRequest()
 	.get();
 

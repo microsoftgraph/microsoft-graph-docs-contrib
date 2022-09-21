@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-sectionGroupId := "sectionGroup-id"
-result, err := graphClient.Me().Onenote().SectionGroupsById(&sectionGroupId).Get()
+
+result, err := graphClient.Me().Onenote().SectionGroupsById("sectionGroup-id").Get(context.Background(), nil)
 
 
 ```

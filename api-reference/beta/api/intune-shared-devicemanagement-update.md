@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
-## Prerequisites
+## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -186,6 +186,8 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
 
 
 

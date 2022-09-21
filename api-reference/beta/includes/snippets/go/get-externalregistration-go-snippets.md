@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-onlineMeetingId := "onlineMeeting-id"
-result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Get()
+
+result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Get(context.Background(), nil)
 
 
 ```

@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-languageProficiencyId := "languageProficiency-id"
-graphClient.Me().Profile().LanguagesById(&languageProficiencyId).Delete()
+
+graphClient.Me().Profile().LanguagesById("languageProficiency-id").Delete(context.Background(), nil)
 
 
 ```

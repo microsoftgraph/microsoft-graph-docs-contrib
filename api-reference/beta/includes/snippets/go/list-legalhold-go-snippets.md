@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-caseId := "case-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHolds().Get()
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").LegalHolds().Get(context.Background(), nil)
 
 
 ```
