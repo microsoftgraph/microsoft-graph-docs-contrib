@@ -1,6 +1,6 @@
 ---
-title: "Get webparts by position"
-description: "Get a collection of WebParts by position information"
+title: 'Get webparts by position'
+description: 'Get a collection of WebParts by position information'
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -38,14 +38,14 @@ GET /sites/{siteId}/pages/{sitePageId}/getWebPartsByPosition(horizontalSectionId
 
 ## Function parameters
 
-In the request URL, provide one of the following parameters with a valid value.
+In the request URL, provide one or more following parameters with a valid value.
 
-| Parameter           | Type    | Description                                                                             |
-| :------------------ | :------ | :-------------------------------------------------------------------------------------- |
-| columnId            | Double  | Indicate the identifier of the column where the WebPart located in.                     |
-| horizontalSectionId | Double  | Indicate the horizontal section where the WebPart located in.                           |
-| isInVerticalSection | boolean | Indicate whether the WebPart located in the vertical section.                           |
-| webPartIndex        | Double  | Index of the current WebPart. Represents the order of WebPart in this column or section |
+| Parameter           | Type    | Description                                                                                                                                                    |
+| :------------------ | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| columnId            | Double  | Indicate the identifier of the column where the WebPart located in. Only works if `horizontalSectionId` is provided.                                           |
+| horizontalSectionId | Double  | Indicate the horizontal section where the WebPart located in.                                                                                                  |
+| isInVerticalSection | boolean | Indicate whether the WebPart located in the vertical section.                                                                                                  |
+| webPartIndex        | Double  | Index of the current WebPart. Represents the order of WebPart in this column or section. Only works if either `columnId` or `isInVerticalSection` is provided. |
 
 ## Request headers
 
