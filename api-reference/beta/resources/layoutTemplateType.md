@@ -21,5 +21,3 @@ Represents the layout template to be displayed on the login page for a tenant.
 |:---|:---|:---|
 | default | 0 | Default Microsoft layout with centered lightbox. |
 | verticalSplit | 1 | Layout with backgound in left side and full-height lightbox to the right. |
-
-```
