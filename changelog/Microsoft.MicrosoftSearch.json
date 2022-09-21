@@ -589,7 +589,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "bookmark",
           "ChangeType": "Addition",
-          "Description": "Added the [bookmark](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Description": "Added the **bookmark** member to the **entityType** enumeration.",
           "Target": "entityType"
         },
         {
