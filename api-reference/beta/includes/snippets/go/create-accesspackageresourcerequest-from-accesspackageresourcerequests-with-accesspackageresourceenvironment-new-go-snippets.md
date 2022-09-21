@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewAccessPackageResourceRequest()
 catalogId := "de9315c1-272b-4905-924b-cc112ca180c7"
 requestBody.SetCatalogId(&catalogId) 
-accessPackageResource := graphmodels.NewaccessPackageResource()
+accessPackageResource := graphmodels.NewAccessPackageResource()
 displayName := "Community Outreach"
 accessPackageResource.SetDisplayName(&displayName) 
 description := "https://contoso.sharepoint.com/sites/CSR"
@@ -21,7 +21,7 @@ originId := "https://contoso.sharepoint.com/sites/CSR"
 accessPackageResource.SetOriginId(&originId) 
 originSystem := "SharePointOnline"
 accessPackageResource.SetOriginSystem(&originSystem) 
-accessPackageResourceEnvironment := graphmodels.NewaccessPackageResourceEnvironment()
+accessPackageResourceEnvironment := graphmodels.NewAccessPackageResourceEnvironment()
 originId := "https://contoso-admin.sharepoint.com/"
 accessPackageResourceEnvironment.SetOriginId(&originId) 
 accessPackageResource.SetAccessPackageResourceEnvironment(accessPackageResourceEnvironment)

@@ -12,7 +12,7 @@ name := "docSet"
 requestBody.SetName(&name) 
 description := "custom docset"
 requestBody.SetDescription(&description) 
-base := graphmodels.Newbase()
+base := graphmodels.NewContentType()
 name := "Document Set"
 base.SetName(&name) 
 id := "0x0120D520"
