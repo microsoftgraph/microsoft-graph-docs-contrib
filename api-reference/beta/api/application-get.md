@@ -49,8 +49,12 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and an [application](../resources/application.md) object in the response body.
+
 ## Examples
-### Request
+
+### Example 1: Retrieve the properties of an application object
+
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -59,7 +63,7 @@ Here is an example of the request.
   "name": "get_application"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications/{id}
+GET https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
 ```
 
 # [C#](#tab/csharp)
@@ -88,7 +92,7 @@ GET https://graph.microsoft.com/beta/applications/{id}
 
 ---
 
-### Response
+#### Response
 Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -172,6 +176,63 @@ Content-type: application/json
         "packageSid": null,
         "redirectUris": []
     }
+}
+```
+
+### Example 2: Retrieve an application by its appId and only specific properties
+
+#### Request
+Here is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_application_by_appId_select"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/applications(appId='46e6adf4-a9cf-4b60-9390-0ba6fb00bf6b')?$select=id,appId,displayName,requiredResourceAccess
+```
+
+#### Response
+Here is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications(id,appId,displayName,requiredResourceAccess)/$entity",
+    "id": "7bec5fd1-a25f-474c-a6ca-5492082c6a9b",
+    "appId": "46e6adf4-a9cf-4b60-9390-0ba6fb00bf6b",
+    "displayName": "PostmanWeb",
+    "requiredResourceAccess": [
+        {
+            "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "resourceAccess": [
+                {
+                    "id": "ad902697-1014-4ef5-81ef-2b4301988e8c",
+                    "type": "Scope"
+                },
+                {
+                    "id": "572fea84-0151-49b2-9301-11cb16974376",
+                    "type": "Scope"
+                },
+                {
+                    "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+                    "type": "Scope"
+                },
+                {
+                    "id": "7e823077-d88e-468f-a337-e18f1f0e6c7c",
+                    "type": "Scope"
+                }
+            ]
+        }
+    ]
 }
 ```
 
