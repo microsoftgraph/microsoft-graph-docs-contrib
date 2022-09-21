@@ -14,7 +14,8 @@ target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
 caller := "EndUser"
 target.SetCaller(&caller) 
 operations := []graphmodels.UnifiedRoleManagementPolicyRuleTargetOperationsable {
-	"All",
+	unifiedRoleManagementPolicyRuleTargetOperations := graphmodels.ALL_UNIFIEDROLEMANAGEMENTPOLICYRULETARGETOPERATIONS 
+	target.SetUnifiedRoleManagementPolicyRuleTargetOperations(&unifiedRoleManagementPolicyRuleTargetOperations) 
 
 }
 target.SetOperations(operations)
