@@ -24,7 +24,8 @@ identity.SetAdditionalData(additionalData)
 source.SetIdentity(identity)
 requestBody.SetSource(source)
 requestedModalities := []graphmodels.Modalityable {
-	"audio",
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality) 
 
 }
 requestBody.SetRequestedModalities(requestedModalities)
@@ -75,7 +76,7 @@ user.SetDisplayName(&displayName)
 meetingInfo.SetAdditionalData(additionalData)
 requestBody.SetMeetingInfo(meetingInfo)
 
-result, err := graphClient.Communications().Calls().Post(requestBody)
+result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

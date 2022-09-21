@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewRegionalAndLanguageSettingsPostRequestBody()
+requestBody := graphmodels.NewRegionalAndLanguageSettingsPutRequestBody()
 additionalData := map[string]interface{}{
 defaultDisplayLanguage := graphmodels.New()
 locale := "en-US"
@@ -75,7 +75,7 @@ translationBehavior := "Yes"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Me().Settings().RegionalAndLanguageSettings().Put(requestBody)
+graphClient.Me().Settings().RegionalAndLanguageSettings().Put(context.Background(), requestBody, nil)
 
 
 ```

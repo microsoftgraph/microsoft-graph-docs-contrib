@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").AppRoleAssignedToById("appRoleAssignment-id").Delete()
+graphClient.ServicePrincipalsById("servicePrincipal-id").AppRoleAssignedToById("appRoleAssignment-id").Delete(context.Background(), nil)
 
 
 ```

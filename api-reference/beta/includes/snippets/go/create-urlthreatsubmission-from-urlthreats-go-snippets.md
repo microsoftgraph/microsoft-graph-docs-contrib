@@ -13,7 +13,7 @@ requestBody.SetCategory(&category)
 webUrl := "http://phishing.contoso.com"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Security().ThreatSubmission().UrlThreats().Post(requestBody)
+result, err := graphClient.Security().ThreatSubmission().UrlThreats().Post(context.Background(), requestBody, nil)
 
 
 ```

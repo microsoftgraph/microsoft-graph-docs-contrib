@@ -21,7 +21,7 @@ configuration := &graphconfig.AccessReviewsRequestBuilderGetRequestConfiguration
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.AccessReviews().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.AccessReviews().Get(context.Background(), configuration)
 
 
 ```

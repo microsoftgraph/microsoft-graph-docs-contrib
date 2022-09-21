@@ -28,7 +28,7 @@ requestBody.SetIsUnmanagedSyncAppForTenantRestricted(&isUnmanagedSyncAppForTenan
 personalSiteDefaultStorageLimitInMB := int64(120000)
 requestBody.SetPersonalSiteDefaultStorageLimitInMB(&personalSiteDefaultStorageLimitInMB) 
 
-graphClient.Admin().Sharepoint().Settings().Patch(requestBody)
+graphClient.Admin().Sharepoint().Settings().Patch(context.Background(), requestBody, nil)
 
 
 ```

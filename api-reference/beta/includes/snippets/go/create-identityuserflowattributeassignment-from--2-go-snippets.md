@@ -20,12 +20,12 @@ userAttributeValues := []graphmodels.UserAttributeValuesItemable {
 
 }
 requestBody.SetUserAttributeValues(userAttributeValues)
-userAttribute := graphmodels.NewuserAttribute()
+userAttribute := graphmodels.NewIdentityUserFlowAttribute()
 id := "extension_guid_shoeSize"
 userAttribute.SetId(&id) 
 requestBody.SetUserAttribute(userAttribute)
 
-result, err := graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").UserAttributeAssignments().Post(requestBody)
+result, err := graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").UserAttributeAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

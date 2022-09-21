@@ -38,7 +38,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Groups().Post(requestBody)
+result, err := graphClient.Groups().Post(context.Background(), requestBody, nil)
 
 
 ```

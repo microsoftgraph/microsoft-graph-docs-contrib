@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Extract one or more sensitivity labels assigned to a drive item and update the metadata of a drive item with the latest details of the assigned label. In case of failure to extract the sensitivity labels of a file, an extraction error will be thrown with the applicable error code and message.
 
+For more information about sensitivity labels from an administrator's perspective, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-worldwide&preserve-view=true).
+
 > **Note**: This API is applicable only for supported file extensions. When called, this API first retrieves the sensitivity label metadata of the file from the database, then it checks to determine whether the sensitivity label details are the latest in terms of file content. If yes, the retrieved values from the database are returned. If no, then sensitivity labels are extracted from the content stream of the file, the corresponding metadata is updated in the database, and the newly extracted values are returned.
 
 ## Permissions

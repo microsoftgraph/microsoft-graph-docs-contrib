@@ -8,25 +8,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAuthenticationContextClassReference()
-additionalData := map[string]interface{}{
-
-
- := graphmodels.New()
-displayName := "Contoso trusted locations"
-.SetDisplayName(&displayName) 
-description := "Access is only allowed from trusted locations"
-.SetDescription(&description) 
+id := "c1"
+requestBody.SetId(&id) 
+displayName := "Contoso medium"
+requestBody.SetDisplayName(&displayName) 
+description := "Medium protection level defined for Contoso policy"
+requestBody.SetDescription(&description) 
 isAvailable := true
-.SetIsAvailable(&isAvailable) 
+requestBody.SetIsAvailable(&isAvailable) 
 
-	value := []graphmodels.Objectable {
-		,
-
-	}
-}
-requestBody.SetAdditionalData(additionalData)
-
-graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById("authenticationContextClassReference-id").Patch(requestBody)
+graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById("authenticationContextClassReference-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

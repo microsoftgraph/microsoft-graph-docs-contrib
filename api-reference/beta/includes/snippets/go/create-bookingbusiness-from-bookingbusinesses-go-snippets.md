@@ -33,7 +33,7 @@ requestBody.SetWebSiteUrl(&webSiteUrl)
 defaultCurrencyIso := "USD"
 requestBody.SetDefaultCurrencyIso(&defaultCurrencyIso) 
 
-result, err := graphClient.BookingBusinesses().Post(requestBody)
+result, err := graphClient.BookingBusinesses().Post(context.Background(), requestBody, nil)
 
 
 ```
