@@ -37,12 +37,12 @@ Represents details about the threshold settings of an alert rule.
 
 |Member|Description|
 |:---|:---|
-|greaterOrEqual|Indicates that the operator is greater than or equal to.|
-|equal|Indicates that the operator is equal to.|
-|greater|Indicates that the operator is greater than.|
-|less|Indicates that the operator is less than.|
-|lessOrEqual|Indicates that the operator is less than or equal to.|
-|notEqual|Indicates that the operator is not equal to.|
+|greaterOrEqual|Indicates that the operator is greater than or equal to threshold target set by admin.|
+|equal|Indicates that the operator is equal to threshold target set by admin.|
+|greater|Indicates that the operator is greater than threshold target set by admin.|
+|less|Indicates that the operator is less than threshold target set by admin.|
+|lessOrEqual|Indicates that the operator is less than or equal to threshold target set by admin.|
+|notEqual|Indicates that the operator is not equal to threshold target set by admin.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships

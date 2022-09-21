@@ -69,7 +69,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules/{alertRuleId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules/215c55cc-b1c9-4d36-a870-be5778101714
 Content-Type: application/json
 
 {

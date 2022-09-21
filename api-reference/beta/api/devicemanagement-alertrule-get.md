@@ -61,7 +61,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules/{alertRuleId}
+GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules/30070507-6514-443b-8fa5-06979cedacdf
 ```
 
 ### Response

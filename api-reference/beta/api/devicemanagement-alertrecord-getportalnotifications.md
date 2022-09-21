@@ -1,6 +1,6 @@
 ---
 title: "alertRecord: getPortalNotifications"
-description: "Get a list of all portal notifications that are ready to be consumed by the current user."
+description: "Get a list of all portal notifications that users can access."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all portal notifications that are ready to be consumed for current user. You can use the portal notifications to publish Microsoft Endpoint Manager portal notifications.
+Get a list of all portal notifications that users can access.
 
 ## Permissions
 

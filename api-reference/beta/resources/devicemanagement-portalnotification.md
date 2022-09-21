@@ -1,6 +1,6 @@
 ---
 title: "portalNotification resource type"
-description: "Represents the portal notification associated with current user's alert record."
+description: "Represents the portal notification associated with the alert record of a signed-in user."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the portal notification associated with current user's alert record.
+Represents the portal notification associated with the alert record of a signed-in user.
 
 ## Properties
 

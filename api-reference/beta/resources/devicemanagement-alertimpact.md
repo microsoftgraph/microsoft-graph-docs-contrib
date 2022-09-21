@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the impact of the alert event. Consists of a number value and the aggregation type.
+Represents the impact of the alert event.
 
 ## Properties
 
@@ -24,7 +24,7 @@ Represents the impact of the alert event. Consists of a number value and the agg
 
 ## Relationships
 
-None. 
+None.
 
 ## JSON representation
 
