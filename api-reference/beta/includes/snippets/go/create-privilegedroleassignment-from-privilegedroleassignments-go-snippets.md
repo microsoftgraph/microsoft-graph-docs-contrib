@@ -13,7 +13,7 @@ requestBody.SetUserId(&userId)
 roleId := "roleId-value"
 requestBody.SetRoleId(&roleId) 
 
-result, err := graphClient.PrivilegedRoleAssignments().Post(requestBody)
+result, err := graphClient.PrivilegedRoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

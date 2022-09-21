@@ -22,6 +22,9 @@ Indicates the scenario for the message
 |:---|:---|:---|
 |onboarding|0|Indicates onboarding scenario|
 |lifecycle|1|Indicates lifecycle scenario|
+|unknownFutureValue|2|UnknownFutureValue, Evolvable enumeration sentinel value. Do not use.|
+
+
 
 
 

@@ -18,7 +18,7 @@ id := "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
 requestBody.SetId(&id) 
 schedulingGroupId := "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
 requestBody.SetSchedulingGroupId(&schedulingGroupId) 
-sharedOpenShift := graphmodels.NewsharedOpenShift()
+sharedOpenShift := graphmodels.NewOpenShiftItem()
 notes := "InventoryManagement"
 sharedOpenShift.SetNotes(&notes) 
 openSlotCount := int32(2)
@@ -75,7 +75,7 @@ lastModifiedBy.SetConversation(&conversation)
 lastModifiedBy.SetAdditionalData(additionalData)
 requestBody.SetLastModifiedBy(lastModifiedBy)
 
-result, err := graphClient.TeamsById("team-id").Schedule().OpenShifts().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.TeamsById("team-id").Schedule().OpenShifts().Post(context.Background(), requestBody, configuration)
 
 
 ```

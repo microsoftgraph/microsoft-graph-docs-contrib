@@ -27,7 +27,7 @@ end.SetTimeZone(&timeZone)
 proposedNewTime.SetEnd(end)
 requestBody.SetProposedNewTime(proposedNewTime)
 
-graphClient.Me().EventsById("event-id").TentativelyAccept().Post(requestBody)
+graphClient.Me().EventsById("event-id").TentativelyAccept().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewChangeUserAccountTypePostRequestBody()
 userAccountType := graphmodels.ADMINISTRATOR_CLOUDPCUSERACCOUNTTYPE 
 requestBody.SetUserAccountType(&userAccountType) 
 
-graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").ChangeUserAccountType().Post(requestBody)
+graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").ChangeUserAccountType().Post(context.Background(), requestBody, nil)
 
 
 ```

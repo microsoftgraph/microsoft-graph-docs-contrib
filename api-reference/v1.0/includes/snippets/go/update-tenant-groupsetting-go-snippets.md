@@ -11,11 +11,10 @@ requestBody := graphmodels.NewGroupSetting()
 
 
 settingValue := graphmodels.NewSettingValue()
-additionalData := map[string]interface{}{
-	"name" : "AllowToAddGuests", 
-	"value" : "false", 
-}
-settingValue.SetAdditionalData(additionalData)
+name := "AllowToAddGuests"
+settingValue.SetName(&name) 
+value := "false"
+settingValue.SetValue(&value) 
 
 values := []graphmodels.SettingValueable {
 	settingValue,
@@ -23,7 +22,7 @@ values := []graphmodels.SettingValueable {
 }
 requestBody.SetValues(values)
 
-graphClient.GroupSettingsById("groupSetting-id").Patch(requestBody)
+graphClient.GroupSettingsById("groupSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

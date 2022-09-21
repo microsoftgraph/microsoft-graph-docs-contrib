@@ -16,7 +16,7 @@ points.SetPoints(&points)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").OutcomesById("educationOutcome-id").Patch(requestBody)
+graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").OutcomesById("educationOutcome-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

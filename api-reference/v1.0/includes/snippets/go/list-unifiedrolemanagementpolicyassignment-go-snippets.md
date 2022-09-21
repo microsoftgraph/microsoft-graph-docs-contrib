@@ -17,7 +17,7 @@ configuration := &graphconfig.RoleManagementPolicyAssignmentsRequestBuilderGetRe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().RoleManagementPolicyAssignments().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Policies().RoleManagementPolicyAssignments().Get(context.Background(), configuration)
 
 
 ```

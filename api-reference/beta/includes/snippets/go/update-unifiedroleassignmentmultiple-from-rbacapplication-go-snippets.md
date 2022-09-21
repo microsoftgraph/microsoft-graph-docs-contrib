@@ -15,7 +15,7 @@ principalIds := []string {
 }
 requestBody.SetPrincipalIds(principalIds)
 
-graphClient.RoleManagement().DeviceManagement().RoleAssignmentsById("unifiedRoleAssignmentMultiple-id").Patch(requestBody)
+graphClient.RoleManagement().DeviceManagement().RoleAssignmentsById("unifiedRoleAssignmentMultiple-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

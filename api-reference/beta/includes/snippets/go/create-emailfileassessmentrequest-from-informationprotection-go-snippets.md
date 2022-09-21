@@ -18,7 +18,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(requestBody)
+result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

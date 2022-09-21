@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().Onenote().PagesById("onenotePage-id").Delete()
+graphClient.Me().Onenote().PagesById("onenotePage-id").Delete(context.Background(), nil)
 
 
 ```

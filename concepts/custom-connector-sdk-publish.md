@@ -27,7 +27,7 @@ Use the following steps to publish a connection for your custom connector:
       "connectorId": "<ConnectorGuid>",
     
       // This is a list of all supported auth types. Remove the ones that the connector does not support.
-      "authTypes": [ "Windows, Basic, Anonymous, OAuth2ClientCredentials" ],
+      "authTypes": [ "Windows", "Basic", "Anonymous", "OAuth2ClientCredentials" ],
       
       // The list of additional crawl types that the connector supports in addition to full and periodic full crawl. This is an optional field.
       "additionalCrawlsSupported": [ "Incremental" ]
