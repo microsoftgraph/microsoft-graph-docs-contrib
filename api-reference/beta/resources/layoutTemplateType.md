@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the various text strings that can be hidden on the sign-in page for a tenant.
+Represents the layout template to be displayed on the login page for a tenant.
 
 ## Templates
 
