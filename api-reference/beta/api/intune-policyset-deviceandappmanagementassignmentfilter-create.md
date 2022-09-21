@@ -56,6 +56,7 @@ The following table shows the properties that are required when you create the d
 |platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |rule|String|Rule definition of the Assignment Filter.|
 |roleScopeTags|String collection|RoleScopeTags of the Assignment Filter.|
+|payloads|[payloadByFilter](../resources/intune-policyset-payloadbyfilter.md) collection|Associated assignments for a specific filter|
 
 
 
@@ -69,7 +70,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/assignmentFilters
 Content-type: application/json
-Content-length: 274
+Content-length: 543
 
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentFilter",
@@ -79,6 +80,15 @@ Content-length: 274
   "rule": "Rule value",
   "roleScopeTags": [
     "Role Scope Tags value"
+  ],
+  "payloads": [
+    {
+      "@odata.type": "microsoft.graph.payloadByFilter",
+      "payloadId": "Payload Id value",
+      "payloadType": "deviceConfigurationAndCompliance",
+      "groupId": "Group Id value",
+      "assignmentFilterType": "include"
+    }
   ]
 }
 ```
@@ -88,7 +98,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 446
+Content-Length: 715
 
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentFilter",
@@ -101,10 +111,18 @@ Content-Length: 446
   "rule": "Rule value",
   "roleScopeTags": [
     "Role Scope Tags value"
+  ],
+  "payloads": [
+    {
+      "@odata.type": "microsoft.graph.payloadByFilter",
+      "payloadId": "Payload Id value",
+      "payloadType": "deviceConfigurationAndCompliance",
+      "groupId": "Group Id value",
+      "assignmentFilterType": "include"
+    }
   ]
 }
 ```
-
 
 
 

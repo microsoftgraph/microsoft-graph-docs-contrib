@@ -23,6 +23,7 @@ The Zebra FOTA deployment complex type that describes the settings required to c
 |deviceModel|String|Deploy update for devices with this model only.|
 |updateType|[zebraFotaUpdateType](../resources/intune-androidfotaservice-zebrafotaupdatetype.md)|The deployment's update type. Possible values are custom, latest, and auto. When custom mode is set, the request must provide artifact values. When latest type is set, the latest released update becomes the target OS. If latest is specified, the firmware target values are not required. Note: latest may update the device to a new Android version. When the value is set to auto, the device always looks for the latest package available and tries to update whenever a new package is available. This continues until the admin cancels the auto update. While other modes return an ID starting with FOTA-x, auto mode returns an ID starting with AUTO-x. Possible values are: `custom`, `latest`, `auto`, `unknownFutureValue`.|
 |timeZoneOffsetInMinutes|Int32|This attribute indicates the deployment time offset (e.g.`180` represents an offset of `+03:00`, and `-270` represents an offset of `-04:30`). The time offset is the time timezone where the devices are located. The deployment start and end data uses this timezone|
+|firmwareTargetArtifactDescription|String|A description provided by Zebra for the the firmware artifact to update the device to (e.g.: `LifeGuard Update 120 (released 29-June-2022)`.|
 |firmwareTargetBoardSupportPackageVersion|String|Deployment's Board Support Package (BSP. E.g.: '01.18.02.00'). Required only for custom update type.|
 |firmwareTargetPatch|String|Target patch name (e.g.: 'U06'). Required only for custom update type.|
 |firmwareTargetOsVersion|String|Target OS Version (e.g.: '8.1.0'). Required only for custom update type.|
@@ -52,6 +53,7 @@ Here is a JSON representation of the resource.
   "deviceModel": "String",
   "updateType": "String",
   "timeZoneOffsetInMinutes": 1024,
+  "firmwareTargetArtifactDescription": "String",
   "firmwareTargetBoardSupportPackageVersion": "String",
   "firmwareTargetPatch": "String",
   "firmwareTargetOsVersion": "String",
@@ -66,7 +68,6 @@ Here is a JSON representation of the resource.
   "batteryRuleRequireCharger": true
 }
 ```
-
 
 
 

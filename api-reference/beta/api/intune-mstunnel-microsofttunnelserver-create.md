@@ -48,12 +48,12 @@ The following table shows the properties that are required when you create the m
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The MicrosoftTunnelServer's Id|
-|displayName|String|The MicrosoftTunnelServer's display name|
-|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|The MicrosoftTunnelServer's health status. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
-|lastCheckinDateTime|DateTimeOffset|When the MicrosoftTunnelServer last checked in|
-|agentImageDigest|String|The digest of the current agent image running on this server |
-|serverImageDigest|String|The digest of the current server image running on this server |
+|id|String|The unique identifier for the managed server. This id is assigned at enrollment time. Supports: $delete. $Update, $insert, $skip, $top is not supported. Read-only.|
+|displayName|String|The display name for the server. This property is required when a server is created and cannot be cleared during updates.|
+|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Indicates the server's health Status as of the last evaluation time. Health is evaluated every 60 seconds, and the possible values are: unknown, healthy, unhealthy, warning, offline, upgradeInProgress, upgradeFailed. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`, `unknownFutureValue`.|
+|lastCheckinDateTime|DateTimeOffset|Indicates when the server last checked in|
+|agentImageDigest|String|The digest of the current agent image running on this server|
+|serverImageDigest|String|The digest of the current server image running on this server|
 
 
 
@@ -96,7 +96,6 @@ Content-Length: 361
   "serverImageDigest": "Server Image Digest value"
 }
 ```
-
 
 
 

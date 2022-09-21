@@ -20,10 +20,9 @@ Cancel or confirm scheduled retire
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|cancelRetire|0|Cancel retire.|
-|confirmRetire|1|Retire these devices.|
+|cancelRetire|0|CancelRetire|
+|confirmRetire|1|ConfirmRetire|
 |unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
-
 
 
 

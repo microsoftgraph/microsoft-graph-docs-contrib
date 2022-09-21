@@ -27,4 +27,3 @@ Indicates the content type of the logo
 
 
 
-

@@ -28,4 +28,3 @@ Represents the expected type for a macOS custom attribute script value.
 
 
 
-

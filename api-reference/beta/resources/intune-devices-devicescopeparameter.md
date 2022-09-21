@@ -28,4 +28,3 @@ Device scope configuration parameter. It will be expend in future to add more pa
 
 
 
-

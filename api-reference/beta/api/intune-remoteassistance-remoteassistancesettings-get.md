@@ -63,18 +63,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 226
+Content-Length: 250
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
     "id": "cfef360e-360e-cfef-0e36-efcf0e36efcf",
     "remoteAssistanceState": "enabled",
-    "allowSessionsToUnenrolledDevices": true
+    "allowSessionsToUnenrolledDevices": true,
+    "blockChat": true
   }
 }
 ```
-
 
 
 

@@ -28,4 +28,3 @@ Represents various schedule modes for Zebra FOTA deployment.
 
 
 
-
