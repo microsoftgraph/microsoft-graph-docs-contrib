@@ -62,8 +62,9 @@ If successful, this action returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/security/cases/eDiscoveryCases/061b9a92-8926-4bd9-b41d-abf35edc7583/close
+POST https://graph.microsoft.com/security/cases/ediscoveryCases/061b9a92-8926-4bd9-b41d-abf35edc7583/close
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/close-ediscoverycase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -78,6 +79,14 @@ POST https://graph.microsoft.com/security/cases/eDiscoveryCases/061b9a92-8926-4b
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/close-ediscoverycase-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/close-ediscoverycase-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/close-ediscoverycase-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -7,32 +7,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewBookingBusiness()
+requestBody := graphmodels.NewBookingBusiness()
 displayName := "Fourth Coffee"
-requestBody.SetDisplayName(&displayName)
-address := msgraphsdk.NewPhysicalAddress()
-requestBody.SetAddress(address)
+requestBody.SetDisplayName(&displayName) 
+address := graphmodels.NewPhysicalAddress()
 postOfficeBox := "P.O. Box 123"
-address.SetPostOfficeBox(&postOfficeBox)
+address.SetPostOfficeBox(&postOfficeBox) 
 street := "4567 Main Street"
-address.SetStreet(&street)
+address.SetStreet(&street) 
 city := "Buffalo"
-address.SetCity(&city)
+address.SetCity(&city) 
 state := "NY"
-address.SetState(&state)
+address.SetState(&state) 
 countryOrRegion := "USA"
-address.SetCountryOrRegion(&countryOrRegion)
+address.SetCountryOrRegion(&countryOrRegion) 
 postalCode := "98052"
-address.SetPostalCode(&postalCode)
+address.SetPostalCode(&postalCode) 
+requestBody.SetAddress(address)
 phone := "206-555-0100"
-requestBody.SetPhone(&phone)
+requestBody.SetPhone(&phone) 
 email := "manager@fourthcoffee.com"
-requestBody.SetEmail(&email)
+requestBody.SetEmail(&email) 
 webSiteUrl := "https://www.fourthcoffee.com"
-requestBody.SetWebSiteUrl(&webSiteUrl)
+requestBody.SetWebSiteUrl(&webSiteUrl) 
 defaultCurrencyIso := "USD"
-requestBody.SetDefaultCurrencyIso(&defaultCurrencyIso)
-result, err := graphClient.BookingBusinesses().Post(requestBody)
+requestBody.SetDefaultCurrencyIso(&defaultCurrencyIso) 
+
+result, err := graphClient.BookingBusinesses().Post(context.Background(), requestBody, nil)
 
 
 ```

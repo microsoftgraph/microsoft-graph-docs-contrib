@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-setId := "set-id"
-result, err := graphClient.TermStore().SetsById(&setId).Relations().Get()
+
+result, err := graphClient.TermStore().SetsById("set-id").Relations().Get(context.Background(), nil)
 
 
 ```

@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-homeRealmDiscoveryPolicyId := "homeRealmDiscoveryPolicy-id"
-result, err := graphClient.Policies().HomeRealmDiscoveryPoliciesById(&homeRealmDiscoveryPolicyId).Get()
+
+result, err := graphClient.Policies().HomeRealmDiscoveryPoliciesById("homeRealmDiscoveryPolicy-id").Get(context.Background(), nil)
 
 
 ```

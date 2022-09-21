@@ -3,6 +3,58 @@
         {
             "ChangeList": [
                 {
+                    "Id": "1ab47202-a340-49ba-b47b-f53b7eeb1604",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "azureADAppId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureADAppId` property to the [clientUserAgent](https://docs.microsoft.com/en-us/graph/api/resources/clientUserAgent?view=graph-rest-beta) resource.",
+                    "Target": "clientUserAgent"
+                },
+                {
+                    "Id": "1ab47202-a340-49ba-b47b-f53b7eeb1604",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "communicationServiceId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `communicationServiceId` property to the [clientUserAgent](https://docs.microsoft.com/en-us/graph/api/resources/clientUserAgent?view=graph-rest-beta) resource.",
+                    "Target": "clientUserAgent"
+                }
+            ],
+            "Id": "1ab47202-a340-49ba-b47b-f53b7eeb1604",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-08-24T06:16:18.4859577Z",
+            "WorkloadArea": "Cloud communications",
+            "SubArea": "Call records"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "9fe7c6c7-e931-4db5-80dd-7681d3da6d91",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "azureADAppId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureADAppId` property to the [clientUserAgent](https://docs.microsoft.com/en-us/graph/api/resources/clientUserAgent?view=graph-rest-1.0) resource.",
+                    "Target": "clientUserAgent"
+                },
+                {
+                    "Id": "9fe7c6c7-e931-4db5-80dd-7681d3da6d91",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "communicationServiceId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `communicationServiceId` property to the [clientUserAgent](https://docs.microsoft.com/en-us/graph/api/resources/clientUserAgent?view=graph-rest-1.0) resource.",
+                    "Target": "clientUserAgent"
+                }
+            ],
+            "Id": "9fe7c6c7-e931-4db5-80dd-7681d3da6d91",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2022-08-24T06:16:18.4866441Z",
+            "WorkloadArea": "Cloud communications",
+            "SubArea": "Call records"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "acf1705d-a074-4c1c-8f93-956f510d3d6a",
                     "ApiChange": "Member",
                     "ChangedApiName": "azureCommunicationServices",
@@ -151,7 +203,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "networkTransportProtocol",
                     "ChangeType": "Addition",
-                    "Description": "Added the **networkTransportProtocol** property to the [networkInfo](https://docs.microsoft.com/en-us/graph/api/resources/networkInfo?view=graph-rest-beta) resource.",
+                    "Description": "Added the **networkTransportProtocol** property to the [networkInfo](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-networkInfo?view=graph-rest-beta) resource.",
                     "Target": "networkInfo"
                 },
                 {
@@ -159,7 +211,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "traceRouteHops",
                     "ChangeType": "Addition",
-                    "Description": "Added the **traceRouteHops** property to the [networkInfo](https://docs.microsoft.com/en-us/graph/api/resources/networkInfo?view=graph-rest-beta) resource.",
+                    "Description": "Added the **traceRouteHops** property to the [networkInfo](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-networkInfo?view=graph-rest-beta) resource.",
                     "Target": "networkInfo"
                 },
                 {
@@ -167,7 +219,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "traceRouteHop",
                     "ChangeType": "Addition",
-                    "Description": "Added the [traceRouteHop](https://docs.microsoft.com/en-us/graph/api/resources/traceRouteHop?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [traceRouteHop](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-traceRouteHop?view=graph-rest-beta) resource type.",
                     "Target": "traceRouteHop"
                 }
             ],
@@ -176,7 +228,7 @@
             "Version": "beta",
             "CreatedDateTime": "2022-06-06T11:36:15.7516882Z",
             "WorkloadArea": "Cloud communications",
-            "SubArea": "Online meeting"
+            "SubArea": "Call records"
         },
         {
             "ChangeList": [
@@ -185,7 +237,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "audioCodec",
                     "ChangeType": "Addition",
-                    "Description": "Added the **audioCodec** property to the [mediaStream](https://docs.microsoft.com/en-us/graph/api/resources/mediaStream?view=graph-rest-beta) resource.",
+                    "Description": "Added the **audioCodec** property to the [mediaStream](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-mediaStream?view=graph-rest-beta) resource.",
                     "Target": "mediaStream"
                 },
                 {
@@ -193,7 +245,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "videoCodec",
                     "ChangeType": "Addition",
-                    "Description": "Added the **videoCodec** property to the [mediaStream](https://docs.microsoft.com/en-us/graph/api/resources/mediaStream?view=graph-rest-beta) resource.",
+                    "Description": "Added the **videoCodec** property to the [mediaStream](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-mediaStream?view=graph-rest-beta) resource.",
                     "Target": "mediaStream"
                 }
             ],
@@ -202,7 +254,7 @@
             "Version": "beta",
             "CreatedDateTime": "2022-06-06T11:36:15.7523373Z",
             "WorkloadArea": "Cloud communications",
-            "SubArea": "Call"
+            "SubArea": "Call records"
         },
         {
             "ChangeList": [
@@ -235,7 +287,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "networkTransportProtocol",
                     "ChangeType": "Addition",
-                    "Description": "Added the **networkTransportProtocol** property to the [networkInfo](https://docs.microsoft.com/en-us/graph/api/resources/networkInfo?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **networkTransportProtocol** property to the [networkInfo](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-networkInfo?view=graph-rest-1.0) resource.",
                     "Target": "networkInfo"
                 },
                 {
@@ -243,7 +295,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "traceRouteHops",
                     "ChangeType": "Addition",
-                    "Description": "Added the **traceRouteHops** property to the [networkInfo](https://docs.microsoft.com/en-us/graph/api/resources/networkInfo?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **traceRouteHops** property to the [networkInfo](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-networkInfo?view=graph-rest-1.0) resource.",
                     "Target": "networkInfo"
                 },
                 {
@@ -251,16 +303,16 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "traceRouteHop",
                     "ChangeType": "Addition",
-                    "Description": "Added the [traceRouteHop](https://docs.microsoft.com/en-us/graph/api/resources/traceRouteHop?view=graph-rest-1.0) resource type.",
+                    "Description": "Added the [traceRouteHop](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-traceRouteHop?view=graph-rest-1.0) resource type.",
                     "Target": "traceRouteHop"
                 }
             ],
             "Id": "9fdef120-3a00-4631-bcc7-545b598437ef",
             "Cloud": "Prod",
             "Version": "v1.0",
-            "CreatedDateTime": "2022-05-19T11:36:15.7523426Z",
+            "CreatedDateTime": "2022-06-06T11:36:15.7523426Z",
             "WorkloadArea": "Cloud communications",
-            "SubArea": "Online meeting"
+            "SubArea": "Call records"
         },
         {
             "ChangeList": [
@@ -269,7 +321,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "audioCodec",
                     "ChangeType": "Addition",
-                    "Description": "Added the **audioCodec** property to the [mediaStream](https://docs.microsoft.com/en-us/graph/api/resources/mediaStream?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **audioCodec** property to the [mediaStream](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-mediaStream?view=graph-rest-1.0) resource.",
                     "Target": "mediaStream"
                 },
                 {
@@ -277,16 +329,16 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "videoCodec",
                     "ChangeType": "Addition",
-                    "Description": "Added the **videoCodec** property to the [mediaStream](https://docs.microsoft.com/en-us/graph/api/resources/mediaStream?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **videoCodec** property to the [mediaStream](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-mediaStream?view=graph-rest-1.0) resource.",
                     "Target": "mediaStream"
                 }
             ],
             "Id": "9ebeadc5-42d4-4202-b0f9-2a4f607ee3fc",
             "Cloud": "Prod",
             "Version": "v1.0",
-            "CreatedDateTime": "2022-05-19T11:36:15.7523446Z",
+            "CreatedDateTime": "2022-06-06T11:36:15.7523446Z",
             "WorkloadArea": "Cloud communications",
-            "SubArea": "Call"
+            "SubArea": "Call records"
         }
     ]
 }

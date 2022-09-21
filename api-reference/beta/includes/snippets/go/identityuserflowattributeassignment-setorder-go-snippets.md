@@ -7,15 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewNewAssignmentOrderRequestBody()
-newAssignmentOrder := msgraphsdk.NewAssignmentOrder()
-requestBody.SetNewAssignmentOrder(newAssignmentOrder)
-newAssignmentOrder.SetOrder( []String {
+requestBody := graphmodels.NewSetOrderPostRequestBody()
+newAssignmentOrder := graphmodels.NewAssignmentOrder()
+order := []string {
 	"City",
 	"extension_GUID_ShoeSize",
+
 }
-b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignments().SetOrder(b2cIdentityUserFlow-id).Post(requestBody)
+newAssignmentOrder.SetOrder(order)
+requestBody.SetNewAssignmentOrder(newAssignmentOrder)
+
+graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").UserAttributeAssignments().SetOrder().Post(context.Background(), requestBody, nil)
 
 
 ```

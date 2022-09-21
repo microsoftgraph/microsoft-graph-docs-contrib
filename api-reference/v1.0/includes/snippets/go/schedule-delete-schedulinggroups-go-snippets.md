@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-teamId := "team-id"
-schedulingGroupId := "schedulingGroup-id"
-graphClient.TeamsById(&teamId).Schedule().SchedulingGroupsById(&schedulingGroupId).Delete()
+
+graphClient.TeamsById("team-id").Schedule().SchedulingGroupsById("schedulingGroup-id").Delete(context.Background(), nil)
 
 
 ```

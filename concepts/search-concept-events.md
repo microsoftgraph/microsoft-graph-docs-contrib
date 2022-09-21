@@ -1,14 +1,14 @@
 ---
-title: "Use the Microsoft Search API in Microsoft Graph to search calendar events"
-description: "You are able to search in user’s own calendar."
+title: "Use the Microsoft Search API to search Outlook calendar events"
+description: "Use the Microsoft Search API in Microsoft Graph to search for events in the signed-in user’s primary calendar. The user identity is based on the auth token."
 author: "knightsu"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to search calendar events
+# Use the Microsoft Search API to search Outlook calendar events
 
-Use the Microsoft Search API to search for events in the signed-in user’s primary calendar. The user identity for the search is based on the auth token.
+Use the Microsoft Search API in Microsoft Graph to search for events in the signed-in user’s primary calendar. The user identity for the search is based on the auth token.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -16,7 +16,7 @@ Use the Microsoft Search API to search for events in the signed-in user’s prim
 
 ### Request
 
-This example searches in the user's calendar for the keyword "contoso", and will return up to 25 results.
+This example searches in the user's calendar for the keyword "contoso", and returns up to 25 results.
 
 ```HTTP
 POST https://graph.microsoft.com/v1.0/search/query
@@ -38,7 +38,7 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
 ```HTTP
 HTTP/1.1 200 OK

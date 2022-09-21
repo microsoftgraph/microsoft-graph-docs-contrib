@@ -7,20 +7,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#Microsoft.Graph.Group",
-	"description": "Self help community for golf",
-	"displayName": "Golf Assist",
-	"groupTypes":  []String {
+requestBody := graphmodels.NewMembersPostRequestBody()
+additionalData := map[string]interface{}{
+	"description" : "Self help community for golf", 
+	"displayName" : "Golf Assist", 
+	groupTypes := []string {
 		"Unified",
+
 	}
-	"mailEnabled": true,
-	"mailNickname": "golfassist",
-	"securityEnabled": false,
+	mailEnabled := true
+requestBody.SetMailEnabled(&mailEnabled) 
+	"mailNickname" : "golfassist", 
+	securityEnabled := false
+requestBody.SetSecurityEnabled(&securityEnabled) 
 }
-administrativeUnitId := "administrativeUnit-id"
-graphClient.AdministrativeUnitsById(&administrativeUnitId).Members().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.AdministrativeUnitsById("administrativeUnit-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -66,6 +66,7 @@
     "redirects/.openpublishing.redirection.0921.json",
     "redirects/.openpublishing.redirection.1121.json",
     "redirects/.openpublishing.redirection.1221.json",
-    "redirects/.openpublishing.redirection.0522.json"
+    "redirects/.openpublishing.redirection.0522.json",
+    "redirects/.openpublishing.redirection.changedapi.json"
   ]
 }
