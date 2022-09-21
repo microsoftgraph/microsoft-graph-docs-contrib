@@ -32,7 +32,8 @@ grantControls := graphmodels.NewConditionalAccessGrantControls()
 operator := "OR"
 grantControls.SetOperator(&operator) 
 builtInControls := []graphmodels.ConditionalAccessGrantControlable {
-	"mfa",
+	conditionalAccessGrantControl := graphmodels.MFA_CONDITIONALACCESSGRANTCONTROL 
+	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl) 
 
 }
 grantControls.SetBuiltInControls(builtInControls)
