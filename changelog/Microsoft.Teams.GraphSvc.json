@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatMembersNotificationRecipient",
           "ChangeType": "Addition",
-          "Description": "Added the [chatMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/chatMembersNotificationRecipient?view=graph-rest-beta) resource type.",
+          "Description": "Added the [chatMembersNotificationRecipient](https://learn.microsoft.com/graph/api/resources/chatMembersNotificationRecipient?view=graph-rest-beta) resource type.",
           "Target": "chatMembersNotificationRecipient"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "channelMembersNotificationRecipient",
           "ChangeType": "Addition",
-          "Description": "Added the [channelMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/channelMembersNotificationRecipient?view=graph-rest-beta) resource type.",
+          "Description": "Added the [channelMembersNotificationRecipient](https://learn.microsoft.com/graph/api/resources/channelMembersNotificationRecipient?view=graph-rest-beta) resource type.",
           "Target": "channelMembersNotificationRecipient"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamMembersNotificationRecipient",
           "ChangeType": "Addition",
-          "Description": "Added the [teamMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/teammembersnotificationrecipient?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamMembersNotificationRecipient](https://learn.microsoft.com/graph/api/resources/teammembersnotificationrecipient?view=graph-rest-beta) resource type.",
           "Target": "teamMembersNotificationRecipient"
         }
       ],
@@ -41,7 +41,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "publishingState",
           "ChangeType": "Addition",
-          "Description": "Added the **publishingState** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **publishingState** property to [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -49,7 +49,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "shortDescription",
           "ChangeType": "Addition",
-          "Description": "Added the **shortDescription** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **shortDescription** property to [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -57,7 +57,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "description",
           "ChangeType": "Addition",
-          "Description": "Added the **description** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **description** property to [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -65,7 +65,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "lastModifiedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **lastModifiedDateTime** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **lastModifiedDateTime** property to [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -73,7 +73,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "createdBy",
           "ChangeType": "Addition",
-          "Description": "Added the **createdBy** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **createdBy** property to [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -81,7 +81,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "bot",
           "ChangeType": "Addition",
-          "Description": "Added the **bot** relationship to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **bot** relationship to [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -89,7 +89,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkBot",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [teamworkBot](https://learn.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource type.",
           "Target": "teamworkBot"
         },
         {
@@ -115,7 +115,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedInstallationScopes",
           "ChangeType": "Addition",
-          "Description": "Added the **allowedInstallationScopes** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Description": "Added the **allowedInstallationScopes** property to [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -141,7 +141,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "provisionChannelEmailResult",
           "ChangeType": "Addition",
-          "Description": "Added the [provisionChannelEmailResult](https://docs.microsoft.com/en-us/graph/api/resources/provisionChannelEmailResult?view=graph-rest-beta) resource type.",
+          "Description": "Added the [provisionChannelEmailResult](https://learn.microsoft.com/en-us/graph/api/resources/provisionChannelEmailResult?view=graph-rest-beta) resource type.",
           "Target": "provisionChannelEmailResult"
         },
         {
@@ -149,7 +149,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "provisionEmail",
           "ChangeType": "Addition",
-          "Description": "Added the [provisionEmail](https://docs.microsoft.com/en-us/graph/api/channel-provisionEmail?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the [provisionEmail](https://learn.microsoft.com/en-us/graph/api/channel-provisionEmail?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         },
         {
@@ -157,7 +157,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "removeEmail",
           "ChangeType": "Addition",
-          "Description": "Added the [removeEmail](https://docs.microsoft.com/en-us/graph/api/channel-removeEmail?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the [removeEmail](https://learn.microsoft.com/en-us/graph/api/channel-removeEmail?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         }
       ],
@@ -175,7 +175,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkOnlineMeetingInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkOnlineMeetingInfo](https://docs.microsoft.com/en-us/graph/api/resources/teamworkOnlineMeetingInfo?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkOnlineMeetingInfo](https://learn.microsoft.com/en-us/graph/api/resources/teamworkOnlineMeetingInfo?view=graph-rest-beta) resource type.",
           "Target": "teamworkOnlineMeetingInfo"
         },
         {
@@ -183,7 +183,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "onlineMeetingInfo",
           "ChangeType": "Addition",
-          "Description": "Added the **onlineMeetingInfo** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Description": "Added the **onlineMeetingInfo** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "chat"
         },
         {
@@ -191,7 +191,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "tenantId",
           "ChangeType": "Addition",
-          "Description": "Added the **tenantId** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Description": "Added the **tenantId** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "chat"
         }
       ],
@@ -209,7 +209,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "actionResultPart",
           "ChangeType": "Addition",
-          "Description": "Added the [actionResultPart](https://docs.microsoft.com/en-us/graph/api/resources/actionResultPart?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [actionResultPart](https://learn.microsoft.com/en-us/graph/api/resources/actionResultPart?view=graph-rest-1.0) resource type.",
           "Target": "actionResultPart"
         },
         {
@@ -217,7 +217,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "team",
           "ChangeType": "Addition",
-          "Description": "Added the [conversationMemberAdd](https://docs.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0) method to the [team](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Description": "Added the [conversationMemberAdd](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0) method to the [team](https://learn.microsoft.com/graph/api/resources/team?view=graph-rest-1.0) resource.",
           "Target": "team"
         }
       ],
@@ -235,7 +235,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "provisionChannelEmailResult",
           "ChangeType": "Addition",
-          "Description": "Added the [provisionChannelEmailResult](https://docs.microsoft.com/en-us/graph/api/resources/provisionChannelEmailResult?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [provisionChannelEmailResult](https://learn.microsoft.com/en-us/graph/api/resources/provisionChannelEmailResult?view=graph-rest-1.0) resource type.",
           "Target": "provisionChannelEmailResult"
         },
         {
@@ -243,7 +243,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "provisionEmail",
           "ChangeType": "Addition",
-          "Description": "Added the [provisionEmail](https://docs.microsoft.com/en-us/graph/api/channel-provisionEmail?view=graph-rest-1.0) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Description": "Added the [provisionEmail](https://learn.microsoft.com/en-us/graph/api/channel-provisionEmail?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
           "Target": "channel"
         },
         {
@@ -251,7 +251,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "removeEmail",
           "ChangeType": "Addition",
-          "Description": "Added the [removeEmail](https://docs.microsoft.com/en-us/graph/api/channel-removeEmail?view=graph-rest-1.0) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Description": "Added the [removeEmail](https://learn.microsoft.com/en-us/graph/api/channel-removeEmail?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
           "Target": "channel"
         }
       ],
@@ -269,7 +269,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of the [teamsApp](https://learn.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-beta) resource.",
           "Target": "teamsApp"
         },
         {
@@ -277,7 +277,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of the [teamsApp](https://learn.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-beta) resource.",
           "Target": "teamsApp"
         },
         {
@@ -285,7 +285,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkHostedContent](https://docs.microsoft.com/en-us/graph/api/resources/teamworkHostedContent?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkHostedContent](https://learn.microsoft.com/en-us/graph/api/resources/teamworkHostedContent?view=graph-rest-beta) resource.",
           "Target": "teamworkHostedContent"
         },
         {
@@ -293,7 +293,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkHostedContent](https://docs.microsoft.com/en-us/graph/api/resources/teamworkHostedContent?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkHostedContent](https://learn.microsoft.com/en-us/graph/api/resources/teamworkHostedContent?view=graph-rest-beta) resource.",
           "Target": "teamworkHostedContent"
         },
         {
@@ -301,7 +301,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamsAppIcon](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppIcon?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamsAppIcon](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppIcon?view=graph-rest-beta) resource.",
           "Target": "teamsAppIcon"
         },
         {
@@ -309,7 +309,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamsAppIcon](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppIcon?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamsAppIcon](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppIcon?view=graph-rest-beta) resource.",
           "Target": "teamsAppIcon"
         },
         {
@@ -317,7 +317,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkBot](https://learn.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource.",
           "Target": "teamworkBot"
         },
         {
@@ -325,7 +325,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkBot](https://learn.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource.",
           "Target": "teamworkBot"
         }
       ],
@@ -343,7 +343,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "webUrl",
           "ChangeType": "Addition",
-          "Description": "Added the **webUrl** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the **webUrl** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         }
       ],
@@ -361,7 +361,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of the [teamsApp](https://learn.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-1.0) resource.",
           "Target": "teamsApp"
         },
         {
@@ -369,7 +369,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of the [teamsApp](https://learn.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-1.0) resource.",
           "Target": "teamsApp"
         },
         {
@@ -377,7 +377,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkBot](https://learn.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource.",
           "Target": "teamworkBot"
         },
         {
@@ -385,7 +385,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkBot](https://learn.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource.",
           "Target": "teamworkBot"
         }
       ],
@@ -403,7 +403,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkOnlineMeetingInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkOnlineMeetingInfo](https://docs.microsoft.com/en-us/graph/api/resources/teamworkOnlineMeetingInfo?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [teamworkOnlineMeetingInfo](https://learn.microsoft.com/en-us/graph/api/resources/teamworkOnlineMeetingInfo?view=graph-rest-1.0) resource type.",
           "Target": "teamworkOnlineMeetingInfo"
         },
         {
@@ -411,7 +411,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "onlineMeetingInfo",
           "ChangeType": "Addition",
-          "Description": "Added the **onlineMeetingInfo** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the **onlineMeetingInfo** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         },
         {
@@ -419,7 +419,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "tenantId",
           "ChangeType": "Addition",
-          "Description": "Added the **tenantId** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the **tenantId** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         }
       ],
@@ -437,7 +437,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sendActivityNotificationToRecipients",
           "ChangeType": "Addition",
-          "Description": "Added the [sendActivityNotificationToRecipients](https://docs.microsoft.com/en-us/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta) method to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Description": "Added the [sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta) method to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
           "Target": "teamwork and communications"
         }
       ],
@@ -455,7 +455,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "profilePhoto",
           "ChangeType": "Addition",
-          "Description": "Added the [profilePhoto](https://docs.microsoft.com/en-us/graph/api/resources/profilePhoto?view=graph-rest-1.0) resource",
+          "Description": "Added the [profilePhoto](https://learn.microsoft.com/en-us/graph/api/resources/profilePhoto?view=graph-rest-1.0) resource",
           "Target": "profilePhoto"
         },
         {
@@ -463,7 +463,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "photo",
           "ChangeType": "Addition",
-          "Description": "Added the **photo** navigation property to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Description": "Added the **photo** navigation property to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
           "Target": "team"
         }
       ],
@@ -481,7 +481,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deletedTeam",
           "ChangeType": "Addition",
-          "Description": "Added the [deletedTeam](https://docs.microsoft.com/en-us/graph/api/resources/deletedTeam?view=graph-rest-beta) resource and a supported method.",
+          "Description": "Added the [deletedTeam](https://learn.microsoft.com/en-us/graph/api/resources/deletedTeam?view=graph-rest-beta) resource and a supported method.",
           "Target": "deletedTeam"
         },
         {
@@ -489,7 +489,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deletedTeams",
           "ChangeType": "Addition",
-          "Description": "Added the **deletedTeams** relationship to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Description": "Added the **deletedTeams** relationship to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
           "Target": "teamwork and communications"
         }
       ],
@@ -507,7 +507,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppSettings](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-beta) resource",
+          "Description": "Added the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-beta) resource",
           "Target": "teamsAppSettings"
         },
         {
@@ -515,7 +515,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isChatResourceSpecificConsentEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isChatResourceSpecificConsentEnabled** property to the [teamsAppSettings](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the **isChatResourceSpecificConsentEnabled** property to the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-beta) resource.",
           "Target": "teamsAppSettings"
         },
         {
@@ -523,7 +523,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "teamsAppSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **teamsAppSettings** navigation property to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource",
+          "Description": "Added the **teamsAppSettings** navigation property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource",
           "Target": "teamwork and communications"
         }
       ],
@@ -541,7 +541,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "TeamsTab.ReadWriteSelfForTeam",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForTeam` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
+          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForTeam` to the read operations of the [teamsTab](https://learn.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
           "Target": "teamsTab"
         },
         {
@@ -549,7 +549,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "TeamsTab.ReadWriteSelfForTeam.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForTeam.All` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForTeam.All` to the read operations of the [teamsTab](https://learn.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
           "Target": "teamsTab"
         },
         {
@@ -557,7 +557,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "TeamsTab.ReadWriteSelfForChat",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForChat` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
+          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForChat` to the read operations of the [teamsTab](https://learn.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
           "Target": "teamsTab"
         },
         {
@@ -565,7 +565,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "TeamsTab.ReadWriteSelfForChat.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForChat.All` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForChat.All` to the read operations of the [teamsTab](https://learn.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta) resource.",
           "Target": "teamsTab"
         }
       ],
@@ -583,7 +583,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "TeamsTab.ReadWriteSelfForTeam",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForTeam` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForTeam` to the read operations of the [teamsTab](https://learn.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
           "Target": "teamsTab"
         },
         {
@@ -591,7 +591,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "TeamsTab.ReadWriteSelfForTeam.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForTeam.All` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForTeam.All` to the read operations of the [teamsTab](https://learn.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
           "Target": "teamsTab"
         },
         {
@@ -599,7 +599,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "TeamsTab.ReadWriteSelfForChat",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForChat` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the delegated permission `TeamsTab.ReadWriteSelfForChat` to the read operations of the [teamsTab](https://learn.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
           "Target": "teamsTab"
         },
         {
@@ -607,7 +607,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "TeamsTab.ReadWriteSelfForChat.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForChat.All` to the read operations of the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `TeamsTab.ReadWriteSelfForChat.All` to the read operations of the [teamsTab](https://learn.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) resource.",
           "Target": "teamsTab"
         }
       ],

@@ -14,7 +14,7 @@ configuration := &graphconfig.SessionsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Communications().CallRecordsById("callRecord-id").Sessions().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Communications().CallRecordsById("callRecord-id").Sessions().Get(context.Background(), configuration)
 
 
 ```

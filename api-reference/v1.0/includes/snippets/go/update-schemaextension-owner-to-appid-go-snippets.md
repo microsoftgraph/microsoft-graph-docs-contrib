@@ -13,29 +13,25 @@ requestBody.SetOwner(&owner)
 
 
 extensionSchemaProperty := graphmodels.NewExtensionSchemaProperty()
-additionalData := map[string]interface{}{
-	"name" : "courseId", 
-	"type" : "Integer", 
-}
-extensionSchemaProperty.SetAdditionalData(additionalData)
+name := "courseId"
+extensionSchemaProperty.SetName(&name) 
+type := "Integer"
+extensionSchemaProperty.SetType(&type) 
 extensionSchemaProperty1 := graphmodels.NewExtensionSchemaProperty()
-additionalData := map[string]interface{}{
-	"name" : "courseName", 
-	"type" : "String", 
-}
-extensionSchemaProperty1.SetAdditionalData(additionalData)
+name := "courseName"
+extensionSchemaProperty1.SetName(&name) 
+type := "String"
+extensionSchemaProperty1.SetType(&type) 
 extensionSchemaProperty2 := graphmodels.NewExtensionSchemaProperty()
-additionalData := map[string]interface{}{
-	"name" : "courseType", 
-	"type" : "String", 
-}
-extensionSchemaProperty2.SetAdditionalData(additionalData)
+name := "courseType"
+extensionSchemaProperty2.SetName(&name) 
+type := "String"
+extensionSchemaProperty2.SetType(&type) 
 extensionSchemaProperty3 := graphmodels.NewExtensionSchemaProperty()
-additionalData := map[string]interface{}{
-	"name" : "courseSupervisors", 
-	"type" : "String", 
-}
-extensionSchemaProperty3.SetAdditionalData(additionalData)
+name := "courseSupervisors"
+extensionSchemaProperty3.SetName(&name) 
+type := "String"
+extensionSchemaProperty3.SetType(&type) 
 
 properties := []graphmodels.ExtensionSchemaPropertyable {
 	extensionSchemaProperty,
@@ -46,7 +42,7 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 }
 requestBody.SetProperties(properties)
 
-graphClient.SchemaExtensionsById("schemaExtension-id").Patch(requestBody)
+graphClient.SchemaExtensionsById("schemaExtension-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

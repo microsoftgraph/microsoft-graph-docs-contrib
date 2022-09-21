@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Planner().RostersById("plannerRoster-id").Delete()
+graphClient.Planner().RostersById("plannerRoster-id").Delete(context.Background(), nil)
 
 
 ```

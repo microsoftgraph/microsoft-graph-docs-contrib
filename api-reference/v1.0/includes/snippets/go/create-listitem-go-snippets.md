@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewListItem()
-fields := graphmodels.Newfields()
+fields := graphmodels.NewFieldValueSet()
 additionalData := map[string]interface{}{
 	"title" : "Widget", 
 	"color" : "Purple", 
@@ -17,7 +17,7 @@ additionalData := map[string]interface{}{
 fields.SetAdditionalData(additionalData)
 requestBody.SetFields(fields)
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").Items().Post(requestBody)
+result, err := graphClient.SitesById("site-id").ListsById("list-id").Items().Post(context.Background(), requestBody, nil)
 
 
 ```

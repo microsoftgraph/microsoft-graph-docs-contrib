@@ -22,7 +22,7 @@ requestBody.SetMailEnabled(&mailEnabled)
 mailNickname := "library-help"
 requestBody.SetMailNickname(&mailNickname) 
 
-graphClient.GroupsById("group-id").Patch(requestBody)
+graphClient.GroupsById("group-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

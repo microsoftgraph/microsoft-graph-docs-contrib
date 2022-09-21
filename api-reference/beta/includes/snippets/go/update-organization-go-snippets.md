@@ -35,7 +35,7 @@ technicalNotificationMails := []string {
 }
 requestBody.SetTechnicalNotificationMails(technicalNotificationMails)
 
-graphClient.OrganizationById("organization-id").Patch(requestBody)
+graphClient.OrganizationById("organization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

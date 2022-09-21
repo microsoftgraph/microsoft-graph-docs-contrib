@@ -20,7 +20,7 @@ importance := graphmodels.NORMAL_CHATMESSAGEIMPORTANCE
 requestBody.SetImportance(&importance) 
 locale := "en-us"
 requestBody.SetLocale(&locale) 
-from := graphmodels.Newfrom()
+from := graphmodels.NewChatMessageFromIdentitySet()
 application := null
 from.SetApplication(&application) 
 device := null
@@ -58,7 +58,7 @@ id := int32(0)
 chatMessageMention.SetId(&id) 
 mentionText := "Raghav"
 chatMessageMention.SetMentionText(&mentionText) 
-mentioned := graphmodels.Newmentioned()
+mentioned := graphmodels.NewChatMessageMentionedIdentitySet()
 application := null
 mentioned.SetApplication(&application) 
 device := null
@@ -81,7 +81,7 @@ id := int32(1)
 chatMessageMention1.SetId(&id) 
 mentionText := "TestGlobalBot"
 chatMessageMention1.SetMentionText(&mentionText) 
-mentioned := graphmodels.Newmentioned()
+mentioned := graphmodels.NewChatMessageMentionedIdentitySet()
 application := graphmodels.NewIdentity()
 id := "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
 application.SetId(&id) 
@@ -111,7 +111,7 @@ reactions := []graphmodels.ChatMessageReactionable {
 }
 requestBody.SetReactions(reactions)
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(requestBody)
+graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -14,7 +14,7 @@ configuration := &graphconfig.PinnedMessagesRequestBuilderGetRequestConfiguratio
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.ChatsById("chat-id").PinnedMessages().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.ChatsById("chat-id").PinnedMessages().Get(context.Background(), configuration)
 
 
 ```

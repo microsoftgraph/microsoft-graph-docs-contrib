@@ -33,7 +33,7 @@ requestBody.SetNextSigningCertificate(&nextSigningCertificate)
 federatedIdpMfaBehavior := graphmodels.REJECTMFABYFEDERATEDIDP_FEDERATEDIDPMFABEHAVIOR 
 requestBody.SetFederatedIdpMfaBehavior(&federatedIdpMfaBehavior) 
 
-result, err := graphClient.DomainsById("domain-id").FederationConfiguration().Post(requestBody)
+result, err := graphClient.DomainsById("domain-id").FederationConfiguration().Post(context.Background(), requestBody, nil)
 
 
 ```

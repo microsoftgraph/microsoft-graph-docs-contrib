@@ -41,7 +41,7 @@ approvalStages := []graphmodels.ApprovalStageable {
 requestApprovalSettings.SetApprovalStages(approvalStages)
 requestBody.SetRequestApprovalSettings(requestApprovalSettings)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```
