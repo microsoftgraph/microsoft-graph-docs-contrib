@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewNoncustodialDataSource()
 applyHoldToSource := false
 requestBody.SetApplyHoldToSource(&applyHoldToSource) 
-dataSource := graphmodels.NewdataSource()
+dataSource := graphmodels.NewDataSource()
 additionalData := map[string]interface{}{
 site := graphmodels.New()
 webUrl := "https://contoso.sharepoint.com/sites/SecretSite"

@@ -39,7 +39,8 @@ $sourceIdentity->setAdditionalData($additionalData);
 $source->setIdentity($sourceIdentity);
 
 $requestBody->setSource($source);
-$requestBody->setRequestedModalities(['audio', ]);
+$requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
+]);
 
 $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
