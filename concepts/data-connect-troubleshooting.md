@@ -126,7 +126,7 @@ If the destination storage account needs to be closed for public access, you wil
 
 6.	For MGDC internal services to copy the data into my destination storage account, I need to refer to step #2 table #2 to understand how to allow list IP addresses from compatible regions based on my Office region (EUR). I will need to allow list ADF Public IPs in West Europe Azure region. 
 
-7.	For the ADF destination linked service to also access my destination storage account, the easiest way recommended is to create and use an Integration Runtime on the West Europe region. I need to refer to step #4 to complete this or want to use Auto Resolve IR instead.
+7.	For the ADF destination linked service to also access my destination storage account, the easiest way recommended is to create and use an Integration Runtime on the West Europe region. I need to refer to step #3 to complete this or want to use Auto Resolve IR instead.
 
 8.	 I have already listed these IP addresses and moved the destination storage to North Europe since my Office region is EUR, and my Azure region is West Europe. 
 
