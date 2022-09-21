@@ -56,6 +56,7 @@ You can't change your original configuration's language. However, companies can 
 | faviconRelativeUrl | String | A relative url for the favicon above that is combined with a CDN base URL from the **cdnList** to provide the version served by a CDN. Read-only. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | headerBackgroundColor | String | The RGB color to apply to customize the color of the header. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | id | String | An identifier that represents the locale specified using culture names. Culture names follow the RFC 1766 standard in the format "languagecode2-country/regioncode2", where "languagecode2" is a lowercase two-letter code derived from ISO 639-1 and "country/regioncode2" is an uppercase two-letter code derived from ISO 3166. For example, U.S. English is `en-US`. The **id** for the default /branding is always the String types `0` or `default`. Read-only. <br/><br/>**NOTE:** Multiple branding for a single locale are currently not supported. |
+| loginPageLayoutConfiguration | [loginPageLayoutConfiguration](loginPageLayoutConfiguration.md) | Represents the layout configuration to be displayed on the login page for a tenant. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | loginPageTextVisibilitySettings | [loginPageTextVisibilitySettings](loginPageTextVisibilitySettings.md) | Represents the various texts that can be hidden on the login page for a tenant. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | signInPageText | String | Text that appears at the bottom of the sign-in box. Use this to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be in Unicode format and not exceed 1024 characters. |
 | squareLogo | Stream | A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment. Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size. We recommend using a transparent image with no padding around the logo. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md).|
@@ -111,6 +112,9 @@ The following is a JSON representation of the resource.
   "favicon": "Stream",
   "faviconRelativeUrl": "String",
   "headerBackgroundColor": "String",
+  "loginPageLayoutConfiguration": {
+    "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
+  }
   "loginPageTextVisibilitySettings": {
     "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
   }
