@@ -406,7 +406,6 @@ GET https://graph.microsoft.com/beta/groups/3802e9bb-0951-4e18-b9eb-f934b4241194
 [!INCLUDE [sample-code](../includes/snippets/php/get-members-serviceprincipals-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-
 ---
 
 #### Response

@@ -22,8 +22,8 @@ $mentionsChatMessageMention1->setId(0);
 
 $mentionsChatMessageMention1->setMentionText('GraphTesting');
 
-$mentionsChatMessageMention1Mentioned = new Mentioned();
-$mentionsChatMessageMention1MentionedConversation = new Conversation();
+$mentionsChatMessageMention1Mentioned = new ChatMessageMentionedIdentitySet();
+$mentionsChatMessageMention1MentionedConversation = new TeamworkConversationIdentity();
 $mentionsChatMessageMention1MentionedConversation->setId('68a3e365-f7d9-4a56-b499-24332a9cc572');
 
 $mentionsChatMessageMention1MentionedConversation->setDisplayName('GraphTesting');

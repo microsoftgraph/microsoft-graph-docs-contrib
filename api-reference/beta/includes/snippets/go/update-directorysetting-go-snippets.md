@@ -11,11 +11,10 @@ requestBody := graphmodels.NewDirectorySetting()
 
 
 settingValue := graphmodels.NewSettingValue()
-additionalData := map[string]interface{}{
-	"name" : "CustomBlockedWordsList", 
-	"value" : "Contoso", 
-}
-settingValue.SetAdditionalData(additionalData)
+name := "CustomBlockedWordsList"
+settingValue.SetName(&name) 
+value := "Contoso"
+settingValue.SetValue(&value) 
 
 values := []graphmodels.SettingValueable {
 	settingValue,
