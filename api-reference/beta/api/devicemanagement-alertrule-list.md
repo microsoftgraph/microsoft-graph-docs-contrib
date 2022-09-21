@@ -106,12 +106,12 @@ Content-Type: application/json
               {
                 "notificationChannelType": "email",
                 "receivers": [
-                    "foo@bar.com"
+                    "serena.davis@contoso.com"
                 ],
                 "notificationReceivers": [
                     {
                         "locale": "en-us",
-                        "contactInformation": "foo@bar.com"
+                        "contactInformation": "serena.davis@contoso.com"
                     }
                 ]
               }
@@ -141,12 +141,12 @@ Content-Type: application/json
               {
                 "notificationChannelType": "email",
                 "receivers": [
-                    "foo@bar.com"
+                    "serena.davis@contoso.com"
                 ],
                 "notificationReceivers": [
                     {
                         "locale": "en-us",
-                        "contactInformation": "foo@bar.com"
+                        "contactInformation": "serena.davis@contoso.com"
                     }
                 ]
               }
@@ -157,7 +157,7 @@ Content-Type: application/json
           "displayName": "Provisioning Failure impacting Cloud PCs",
           "severity": "warning",
           "isSystemRule": true,
-          "description": "Provisioning has failed and is delaying end users from connecting to their Cloud PCs.  ",
+          "description": "Provisioning has failed and is delaying end users from connecting to their Cloud PCs.",
           "enabled": true,
           "alertRuleTemplate": "cloudPcProvisionScenario",
           "threshold": {
@@ -176,12 +176,12 @@ Content-Type: application/json
               {
                 "notificationChannelType": "email",
                 "receivers": [
-                    "foo@bar.com"
+                    "serena.davis@contoso.com"
                 ],
                 "notificationReceivers": [
                     {
                         "locale": "en-us",
-                        "contactInformation": "foo@bar.com"
+                        "contactInformation": "serena.davis@contoso.com"
                     }
                 ]
               }

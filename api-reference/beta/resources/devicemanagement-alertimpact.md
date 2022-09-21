@@ -1,6 +1,6 @@
 ---
 title: "alertImpact resource type"
-description: "Represents the impact of the alert event."
+description: "Represents the impact of an alert event."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the impact of the alert event.
+Represents the impact of an alert event.
 
 ## Properties
 

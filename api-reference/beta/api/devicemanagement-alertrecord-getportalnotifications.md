@@ -1,6 +1,6 @@
 ---
 title: "alertRecord: getPortalNotifications"
-description: "Get a list of all portal notifications that users can access."
+description: "Get a list of all portal notifications that one or more users can access."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all portal notifications that users can access.
+Get a list of all portal notifications that one or more users can access.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [portalNotification](../resources/devicemanagement-portalnotification.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [portalNotification](../resources/devicemanagement-portalnotification.md) objects in the response body.
 
 ## Examples
 
