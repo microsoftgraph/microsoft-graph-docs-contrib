@@ -112,7 +112,7 @@ The following are the supported meeting events:
 }
 ```
 
-**CallRosterUpdate** events include two additional properties, **activeParticipants@delta** to depict participants added to a meeting and **activeParticipants@remove** for participants leaving the online meeting. For more information about participants, see [meetingParticipantInfo resource type](/graph/api/resources/meetingparticipants).
+**CallRosterUpdate** events include two additional properties, **activeParticipants@delta** to depict participants added to a meeting and **activeParticipants@remove** for participants leaving the online meeting. For more information about participants, see [meetingParticipantInfo resource type](/graph/api/resources/meetingparticipantinfo).
 
 You can choose to omit encryption by not including the property **includeResourceData** or setting this value to `false` in your subscription request body. Doing so adds the properties that would have been part of the encrypted payload to **resourceData**.
 
