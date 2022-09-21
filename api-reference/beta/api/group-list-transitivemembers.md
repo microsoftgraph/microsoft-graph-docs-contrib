@@ -171,6 +171,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-transitivemembers-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+
 ---
 
 #### Response
@@ -229,6 +230,7 @@ ConsistencyLevel: eventual
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-group-transitivemembers-odatacast-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 
 ---
 
@@ -319,6 +321,7 @@ ConsistencyLevel: eventual
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-tier-count-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 
 ---
 
