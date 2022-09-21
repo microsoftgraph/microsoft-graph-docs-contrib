@@ -19,7 +19,7 @@ Represents the various text strings that can be hidden on the sign-in page for a
 
 |Property|Type|Description|
 |:---|:---|:---|
-| layoutTemplateType | [layoutTemplateType](layoutTemplateType.md) | Represents the layout template to be displayed on the login page for a tenant. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
+| layoutTemplateType | [layoutTemplateType](layoutTemplateType.md) | Represents the layout template to be displayed on the login page for a tenant. |
 | isHeaderShown | Boolean | Option to show the header on the sign-in page. |
 | isFooterShown | Boolean | Option to show the footer on the sign-in page. |
 
