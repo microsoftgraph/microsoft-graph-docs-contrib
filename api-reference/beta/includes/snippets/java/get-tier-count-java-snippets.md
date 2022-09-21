@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
-requestOptions.add(new QueryOption("$search", "displayName:tier"));
+requestOptions.add(new QueryOption("$search", "\"displayName:tier\""));
 
 UserCollectionPage user = graphClient.groups("{id}").transitiveMembers().microsoft.graph.user()
 	.buildRequest( requestOptions )

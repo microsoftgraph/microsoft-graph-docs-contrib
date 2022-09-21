@@ -35,7 +35,8 @@ pattern.SetType(&type)
 interval := int32(1)
 pattern.SetInterval(&interval) 
 daysOfWeek := []graphmodels.DayOfWeekable {
-	"Monday",
+	dayOfWeek := graphmodels.MONDAY_DAYOFWEEK 
+	pattern.SetDayOfWeek(&dayOfWeek) 
 
 }
 pattern.SetDaysOfWeek(daysOfWeek)

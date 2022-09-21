@@ -22,7 +22,8 @@ property.SetIsSearchable(&isSearchable)
 isRetrievable := true
 property.SetIsRetrievable(&isRetrievable) 
 labels := []graphmodels.Labelable {
-	"title",
+	label := graphmodels.TITLE_LABEL 
+	property.SetLabel(&label) 
 
 }
 property.SetLabels(labels)

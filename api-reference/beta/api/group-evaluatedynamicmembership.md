@@ -196,7 +196,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/group-evaluatedynamicmembership-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-
 ---
 
 #### Response

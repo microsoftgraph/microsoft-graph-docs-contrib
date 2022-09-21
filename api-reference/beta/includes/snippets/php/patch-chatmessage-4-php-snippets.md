@@ -20,7 +20,7 @@ $requestBody->setImportance(new ChatMessageImportance('normal'));
 
 $requestBody->setLocale('en-us');
 
-$from = new From();
+$from = new ChatMessageFromIdentitySet();
 $From->setApplication(null);
 
 $From->setDevice(null);

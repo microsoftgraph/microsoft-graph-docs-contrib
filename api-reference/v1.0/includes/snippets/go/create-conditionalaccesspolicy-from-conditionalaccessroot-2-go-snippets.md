@@ -14,7 +14,8 @@ state := graphmodels.ENABLED_CONDITIONALACCESSPOLICYSTATE
 requestBody.SetState(&state) 
 conditions := graphmodels.NewConditionalAccessConditionSet()
 clientAppTypes := []graphmodels.ConditionalAccessClientAppable {
-	"all",
+	conditionalAccessClientApp := graphmodels.ALL_CONDITIONALACCESSCLIENTAPP 
+	conditions.SetConditionalAccessClientApp(&conditionalAccessClientApp) 
 
 }
 conditions.SetClientAppTypes(clientAppTypes)
@@ -44,7 +45,8 @@ grantControls := graphmodels.NewConditionalAccessGrantControls()
 operator := "OR"
 grantControls.SetOperator(&operator) 
 builtInControls := []graphmodels.ConditionalAccessGrantControlable {
-	"block",
+	conditionalAccessGrantControl := graphmodels.BLOCK_CONDITIONALACCESSGRANTCONTROL 
+	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl) 
 
 }
 grantControls.SetBuiltInControls(builtInControls)
