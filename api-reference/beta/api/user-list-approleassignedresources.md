@@ -17,11 +17,11 @@ Get the service principals to which the user has an app role assignment either d
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permissions                                  | Type                                             | Entities/APIs Covered                                               |
-| -------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------- |
-| Application.Read.All, Directory.Read.All | Delegated (work or school account) | Allows access to list of service principals and their app role assignments |
-| Application.Read.All, Directory.Read.All | Application | Works on behalf of an application |
-| Application.Read.All, Directory.Read.All | Delegated (personal MSFT account)) | **Not supported**  |
+| Permission type                        | Permissions (from least to most privileged)                             |
+| :------------------------------------- | :---------------------------------------------------------------------- |
+| Delegated (work or school account)     | User.ReadBasic.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                          |
+| Application                            | Directory.Read.All, AppRoleAssignment.ReadWrite.All                     |
 
 ## HTTP request
 
