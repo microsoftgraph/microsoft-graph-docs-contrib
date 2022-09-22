@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 Get all messages from all [chats](../resources/chatmessage.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 
-## License requirements
+**License requirements**
 
 [!INCLUDE [teams-license-requirements](../../includes/teams-license-requirements.md)]
 
-## Payment requirements
+**Payment requirements**
 
 [!INCLUDE [teams-payment-requirements](../../includes/teams-payment-requirements.md)]
 
