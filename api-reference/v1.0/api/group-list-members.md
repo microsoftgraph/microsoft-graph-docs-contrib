@@ -1,5 +1,5 @@
 ---
-title: "List members"
+title: "List group members"
 description: "Get a list of the group's direct members. A group can have users, organizational contacts, devices, service principals and other groups as members."
 ms.localizationpriority: high
 author: "psaffaie"
@@ -7,7 +7,7 @@ ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# List members
+# List group members
 
 Namespace: microsoft.graph
 
