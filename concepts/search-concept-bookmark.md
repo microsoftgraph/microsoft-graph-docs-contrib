@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Search API to search bookmarks"
-description: "You can use the Microsoft Search API to search bookmarks."
+description: "Find out how to use the Microsoft Search API in Microsoft Graph to search bookmarks."
 author: "njerigrevious"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -8,13 +8,13 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to search bookmarks
 
-Use the Microsoft Search API to search bookmarks. Bookmarks can be created in [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) by administrator or via using [Administrative Answers Management API](/graph/api/search-searchentity-post-bookmarks).
+You can use the Microsoft Search API in Microsoft Graph to search bookmarks. Administrators can create bookmarks in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) or via the [Create bookmark](/graph/api/search-searchentity-post-bookmarks) API.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-After the bookmarks are created, specify **entityTypes** property as `bookmark` in the [searchRequest](/graph/api/resources/searchrequest) to search bookmarks.
+After bookmarks are created, to search for them, in the [searchRequest](/graph/api/resources/searchrequest), in the **entityTypes** property, specify `bookmark` as the  value.
 
-## Example 1: Search bookmarks
+## Example: Search bookmarks
 
 ### Request
 
@@ -74,9 +74,9 @@ Content-type: application/json
 }
 ```
 
-## Known limitations
+## Known issues
 
-- Sorting, aggregation and pagination are not supported for acronyms.
+Sorting, aggregation, and pagination are not supported for bookmark searches.
 
 ## Next steps
 
