@@ -19,10 +19,10 @@ Inherits from [callOptions](calloptions.md).
 
 ## Properties
 
-| Property                            | Type    | Description                                                                                                                                  |
-|:------------------------------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------|
-| hideBotAfterEscalation              | Boolean | Indicates whether to hide the app after the call is escalated. Inherited from [callOptions](calloptions.md).                                 |
-| isContentSharingNotificationEnabled | Boolean | The value that indicates whether content sharing notifications should be enabled for the call. Inherited from [callOptions](calloptions.md). |
+| Property                            | Type    | Description                                                                                                                   |
+|:------------------------------------|:--------|:------------------------------------------------------------------------------------------------------------------------------|
+| hideBotAfterEscalation              | Boolean | Indicates whether to hide the app after the call is escalated. Inherited from [callOptions](calloptions.md).                  |
+| isContentSharingNotificationEnabled | Boolean | Indicates whether content sharing notifications should be enabled for the call. Inherited from [callOptions](calloptions.md). |
 
 ## JSON representation
 
