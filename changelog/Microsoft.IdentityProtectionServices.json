@@ -107,7 +107,7 @@
 			  "ApiChange": "Property",
 			  "ChangedApiName": "excludeGuestsOrExternalUsers",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **excludeGuestsOrExternalUsers** resource type.",
+			  "Description": "Added the **excludeGuestsOrExternalUsers** property to the [conditionalaccessusers](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessusers?view=graph-rest-beta) resource.",
 			  "Target": "conditionalAccessUsers"
 			},
 			{
