@@ -2,7 +2,7 @@
 title: "Get educationClass"
 description: "Retrieve a class from the system."
 ms.localizationpriority: medium
-author: "Sureshpadimi88"
+author: "mlafleur"
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -29,10 +29,9 @@ GET /education/classes/{id}
 ```
 
 ## Optional query parameters
+You can use `$select` to get specific group properties, including those that are not returned by default.
 
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-
+For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
