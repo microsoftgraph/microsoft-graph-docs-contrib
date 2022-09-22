@@ -93,6 +93,8 @@ items:
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
             href: application-proxy-configure-api.md
+          - name: Automate provisioning
+            href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
       - name: Accessing data at scale
         items:
           - name: Data Connect overview
