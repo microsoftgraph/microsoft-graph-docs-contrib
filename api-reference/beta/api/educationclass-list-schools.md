@@ -1,7 +1,7 @@
 ---
 title: "List schools"
 description: "Retrieve a list of schools in which the class is taught."
-author: "Sureshpadimi88"
+author: "mmast-msft"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -33,8 +33,8 @@ GET /education/classes/{id}/schools
 ```
 
 ## Optional query parameters
-This method supports the  `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
