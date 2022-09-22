@@ -1,6 +1,6 @@
 ---
 title: "portalNotification resource type"
-description: "Represents the portal notification associated with the alert record of a signed-in user."
+description: "Represents the portal notification associated with the alert record of a user."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the portal notification associated with the alert record of a signed-in user.
+Represents the portal notification associated with the alert record of a user.
 
 ## Properties
 
@@ -25,7 +25,7 @@ Represents the portal notification associated with the alert record of a signed-
 |alertRuleName|String|The associated alert rule name.|
 |alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](../resources/devicemanagement-alertrule.md#alertruletemplate-values)|The associated alert rule template. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
 |id|String|The unique identifier for the portal notification.|
-|isPortalNotificationSent|Boolean|If `true`, the portal notification has already been sent for the signed-in user; otherwise, the portal notification hasn't been sent yet.|
+|isPortalNotificationSent|Boolean|If `true`, the portal notification has already been sent for the user; otherwise, the portal notification hasn't been sent yet.|
 |severity|[microsoft.graph.deviceManagement.ruleSeverityType](../resources/devicemanagement-alertrule.md#ruleseveritytype-values)|The associated alert rule severity. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
 
 ## Relationships

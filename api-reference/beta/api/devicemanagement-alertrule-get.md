@@ -103,12 +103,12 @@ Content-Type: application/json
         {
             "notificationChannelType": "email",
             "receivers": [
-                "foo@bar.com"
+                "serena.davis@contoso.com"
             ],
             "notificationReceivers": [
                 {
                     "locale": "en-us",
-                    "contactInformation": "foo@bar.com"
+                    "contactInformation": "serena.davis@contoso.com"
                 }
             ]
         }

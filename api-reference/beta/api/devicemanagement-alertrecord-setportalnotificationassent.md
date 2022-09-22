@@ -13,7 +13,7 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set a single portal notification status to published. Will set isPortalNotificationSent property to true for the user with user ID included in the token.
+Set a single portal notification status to published by modifying the **isPortalNotificationSent** property to `true` for the user specified in the request.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/monitoring/alertRecords/6c46a7ba-e78a-45e5-a81c-179ab8fd3e8e/setPortalNotificationAsSent
+POST /deviceManagement/monitoring/alertRecords/{alertRecordId}/setPortalNotificationAsSent
 ```
 
 ## Request headers

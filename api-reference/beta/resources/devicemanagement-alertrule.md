@@ -30,7 +30,7 @@ Represents the rules that IT administrators can configure to trigger alerts.
 |description|String|The rule description.|
 |displayName|String|The display name of the rule.|
 |enabled|Boolean|The status of the rule that indicates whether the rule is enabled or disabled. If `true`, the rule is enabled; otherwise, the rule is disabled.|
-|id|String|The alert rule id. Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifier for the alert rule. Inherited from [entity](../resources/entity.md).|
 |isSystemRule|Boolean|Indicates whether the rule is a system rule. If `true`, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited. System rules are built-in and only 
 a few properties can be edited.|
 |notificationChannels|[microsoft.graph.deviceManagement.notificationChannel](../resources/devicemanagement-notificationchannel.md) collection|The notification channels of the rule selected by the user.|
@@ -42,7 +42,7 @@ a few properties can be edited.|
 |Member|Description|
 |:---|:---|
 |cloudPcProvisionScenario|Indicates that the alert rule was triggered for an issue with the Cloud PC provisioning. For a system rule, the alert rule was triggered for a Cloud PC provisioning failure.|
-|cloudPcImageUploadScenario|Indicates that the alert rule was triggered for an issue with the Cloud PC image uploading process. For a system rule, the alert rule was triggered for a failure to upload the Cloud PC image.|
+|cloudPcImageUploadScenario|Indicates that the alert rule was triggered for an issue with the process to upload the Cloud PC image. For a system rule, the alert rule was triggered for a failure to upload the Cloud PC image.|
 |cloudPcOnPremiseNetworkConnectionCheckScenario|Indicates that the alert rule was triggered for an issue with the on-premises network connection check. For a system rule, the alert rule was triggered for a failure with the on-premises network connection.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
