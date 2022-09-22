@@ -120,11 +120,9 @@ The following is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"
     }
   ],
-  "authenticationAppDeviceDetails": [
-    {
+  "authenticationAppDeviceDetails": {
       "@odata.type": "microsoft.graph.authenticationAppDeviceDetails"
-    }
-  ],
+  },
   "authenticationAppPolicyEvaluationDetails": [
     {
       "@odata.type": "microsoft.graph.authenticationAppPolicyDetails"

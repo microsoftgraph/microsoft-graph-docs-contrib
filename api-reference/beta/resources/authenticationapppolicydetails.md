@@ -3,7 +3,7 @@ title: "authenticationAppPolicyDetails resource type"
 description: "Provides details of the Azure AD policies applied to a user and client authenticator app during an authentication step."
 author: "besiler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
