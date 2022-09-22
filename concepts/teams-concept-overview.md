@@ -119,7 +119,7 @@ Looking for the API reference for Teams and Viva Learning?
 
 ## Next steps
 
-- Watch the [overview video](https://aka.ms/teamsgraph/v1/video).
+- Watch the [overview video](https://aka.ms/teamsgraph).
 - Learn how to [use the Microsoft Teams API](/graph/api/resources/teams-api-overview).
 - Drill down on the methods, properties, and relationships of the [team](/graph/api/resources/team), [channel](/graph/api/resources/channel), and [group](/graph/api/resources/group) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
