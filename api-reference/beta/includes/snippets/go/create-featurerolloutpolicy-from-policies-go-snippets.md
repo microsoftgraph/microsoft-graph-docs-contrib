@@ -19,7 +19,7 @@ requestBody.SetIsEnabled(&isEnabled)
 isAppliedToOrganization := false
 requestBody.SetIsAppliedToOrganization(&isAppliedToOrganization) 
 
-result, err := graphClient.Policies().FeatureRolloutPolicies().Post(requestBody)
+result, err := graphClient.Policies().FeatureRolloutPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

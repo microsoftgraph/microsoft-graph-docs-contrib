@@ -15,7 +15,7 @@ requestBody.SetPrincipalId(&principalId)
 directoryScopeId := "/attributeSets/Engineering"
 requestBody.SetDirectoryScopeId(&directoryScopeId) 
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignments().Post(requestBody)
+result, err := graphClient.RoleManagement().Directory().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewInstantiatePostRequestBody()
 displayName := "testProperties"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.ApplicationTemplatesById("applicationTemplate-id").Instantiate().Post(requestBody)
+result, err := graphClient.ApplicationTemplatesById("applicationTemplate-id").Instantiate().Post(context.Background(), requestBody, nil)
 
 
 ```

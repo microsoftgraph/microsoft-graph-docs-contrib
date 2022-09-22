@@ -11,12 +11,9 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new DirectorySetting();
 $valuesSettingValue1 = new SettingValue();
-$additionalData = [
-'name' => 'CustomBlockedWordsList', 
-'value' => 'Contoso', 
-];
-$valuesSettingValue1->setAdditionalData($additionalData);
+$valuesSettingValue1->setName('CustomBlockedWordsList');
 
+$valuesSettingValue1->setValue('Contoso');
 
 
 $valuesArray []= $valuesSettingValue1;

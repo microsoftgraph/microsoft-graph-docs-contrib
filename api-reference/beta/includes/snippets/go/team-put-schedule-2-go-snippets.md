@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewSchedulePostRequestBody()
+requestBody := graphmodels.NewSchedulePutRequestBody()
 additionalData := map[string]interface{}{
 	enabled := true
 requestBody.SetEnabled(&enabled) 
@@ -38,7 +38,7 @@ approvedLocation.SetLongitude(&longitude)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TeamsById("team-id").Schedule().Put(requestBody)
+graphClient.TeamsById("team-id").Schedule().Put(context.Background(), requestBody, nil)
 
 
 ```

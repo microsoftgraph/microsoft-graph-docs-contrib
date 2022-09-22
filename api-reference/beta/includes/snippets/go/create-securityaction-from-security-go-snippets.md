@@ -32,7 +32,7 @@ vendor := "Microsoft"
 vendorInformation.SetVendor(&vendor) 
 requestBody.SetVendorInformation(vendorInformation)
 
-result, err := graphClient.Security().SecurityActions().Post(requestBody)
+result, err := graphClient.Security().SecurityActions().Post(context.Background(), requestBody, nil)
 
 
 ```

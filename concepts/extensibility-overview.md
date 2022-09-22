@@ -3,6 +3,7 @@ title: "Add custom data to resources using extensions"
 description: "You can extend Microsoft Graph with your own application data. Add custom properties for storing custom data in Microsoft Graph resources without requiring an external data store."
 author: "dkershaw10"
 ms.localizationpriority: high
+ms.prod: "extensions"
 ms.custom: graphiamtop20
 ---
 
@@ -17,7 +18,7 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 
 
 > [!div class="nextstepaction"]
-> [Learn: Add custom data to your app using extensions in Microsoft Graph](/learn/modules/msgraph-extensions/)
+> [Learn: Add custom data to your app using extensions in Microsoft Graph](/training/modules/msgraph-extensions/)
 
 ## Why add custom data to Microsoft Graph?
 

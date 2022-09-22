@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").Delete()
+graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").Delete(context.Background(), nil)
 
 
 ```

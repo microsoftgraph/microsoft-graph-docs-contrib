@@ -11,7 +11,7 @@ requestBody := graphmodels.NewWebAccount()
 webUrl := "https://github.com/innocenty.popov"
 requestBody.SetWebUrl(&webUrl) 
 
-graphClient.Me().Profile().WebAccountsById("webAccount-id").Patch(requestBody)
+graphClient.Me().Profile().WebAccountsById("webAccount-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

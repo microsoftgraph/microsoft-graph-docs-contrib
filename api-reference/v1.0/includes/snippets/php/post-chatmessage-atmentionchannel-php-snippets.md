@@ -22,8 +22,8 @@ $mentionsChatMessageMention1->setId(0);
 
 $mentionsChatMessageMention1->setMentionText('General');
 
-$mentionsChatMessageMention1Mentioned = new Mentioned();
-$mentionsChatMessageMention1MentionedConversation = new Conversation();
+$mentionsChatMessageMention1Mentioned = new ChatMessageMentionedIdentitySet();
+$mentionsChatMessageMention1MentionedConversation = new TeamworkConversationIdentity();
 $mentionsChatMessageMention1MentionedConversation->setId('19:0b50940236084d258c97b21bd01917b0@thread.skype');
 
 $mentionsChatMessageMention1MentionedConversation->setDisplayName('General');
