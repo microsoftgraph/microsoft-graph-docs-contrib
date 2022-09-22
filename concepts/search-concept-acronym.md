@@ -12,7 +12,7 @@ You can use the Microsoft Search API in Microsoft Graph to search acronyms. Admi
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-After the acronyms are created, specify **entityTypes** property as `acronym` in the [searchRequest](/graph/api/resources/searchrequest) to search acronyms.
+After acronyms are created, to search for them, in the [searchRequest](/graph/api/resources/searchrequest), in the **entityTypes** property, specify `acronym` as the vaue.
 
 ## Example 1: Search acronyms
 
@@ -75,9 +75,9 @@ Content-type: application/json
 }
 ```
 
-## Known limitations
+## Known issues
 
-- Sorting, aggregation and pagination are not supported for acronyms.
+Sorting, aggregation, and pagination are not supported for acronym searches.
 
 ## Next steps
 
