@@ -590,7 +590,7 @@ items:
             href: api/organizationsettings-list-peopleinsights.md
           - name: Update
             href: api/insightssettings-update.md
-      - name: Personal contacts
+      - name: Personal contact
         items:
         - name: Contact
           href: resources/contact.md
@@ -12744,7 +12744,7 @@ items:
               href: api/identityuserflow-get.md
             - name: Delete
               href: api/identityuserflow-delete.md
-          - name: B2C user flows
+          - name: B2C user flows (preview)
             items:
             - name: B2C user flow
               href: resources/b2cidentityuserflow.md
@@ -12776,7 +12776,7 @@ items:
               href: api/b2cidentityuserflow-post-userattributeassignments.md
             - name: List languages
               href: api/b2cidentityuserflow-list-languages.md
-            - name: Create language
+            - name: Create or update language
               href: api/b2cidentityuserflow-put-languages.md
             - name: Get API connectors configuration
               href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
