@@ -1,5 +1,5 @@
 ---
-title: "List owners"
+title: "List group owners"
 description: "Retrieve a list of the group's owners."
 ms.localizationpriority: medium
 author: "psaffaie"
@@ -7,7 +7,7 @@ ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# List owners
+# List group owners
 
 Namespace: microsoft.graph
 
