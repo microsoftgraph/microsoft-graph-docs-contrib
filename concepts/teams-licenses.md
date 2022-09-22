@@ -42,7 +42,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 The following APIs support the `model=A` parameter.
 
-|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
+|API                   | Who needs a [license](#required-licenses-for-modela)  | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing-updates) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/chatmessage-delta) | Message sender | 800 messages per user per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
 | conversationMember change notifications | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
@@ -83,7 +83,7 @@ through the [Microsoft 365 Developer Program](https://developer.microsoft.com/mi
 
 The following APIs support the `model=B` parameter.
 
-|API                   | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
+|API                   | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing-updates) | Notes |
 |:-----------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/chatmessage-delta) | None | $0.00075 per message |  |
 | conversationMember change notifications | None  | $0.00075 per notification | |
@@ -93,30 +93,46 @@ The following APIs support the `model=B` parameter.
 
 ### Evaluation mode (default) requirements
 
-|API   | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
-|:-----------------------------|:----------------|:-------|:------|
-| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  500 messages per month per app | N/A |
-| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | 500 messages per month per app | N/A |
-| [chat change notifications](/graph/api/subscription-post-subscriptions) | 500 messages per month per app | N/A |
-| [Get messages across all chats for user](/graph/api/chats-getallmessages) | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)|  500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
-| [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |  500 messages per month per app | N/A |
+The following APIs support evaluation mode.
 
-## Payment and seeded capacity
+|API   | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing-updates) | Notes |
+|:-----------------------------|:----------------|:-------|:------|
+| [chatMessage change notifications](/graph/api/chatmessage-delta) |  500 messages per month per app | N/A |
+| conversationMember change notifications | 500 messages per month per app | N/A |
+| chat change notifications | 500 messages per month per app | N/A |
+| [Get messages across all chats for user](/graph/api/chats-getallmessages) | 500 messages per month per app | N/A |  Requests returning an empty list will be charged 1 message. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)|  500 messages per month per app | N/A |  Requests returning an empty list will be charged 1 message. |
+| [Update a chatMessage policyViolation](/graph/api/chatmessage-update) |  500 messages per month per app | N/A |
+
+## Seeded capacity
 
 Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;an app won't run out of seeded capacity if another app runs out.
 
-| Billing model | Use cases | Seeded Capacity | License required | Azure subscription required |
+| Billing model | Use cases | Seeded capacity | License required | Azure subscription required |
 |:-----------|:---------------|:---------------|:-----------|:-----------|
 | `model=A` | Security and Compliance | See [`model=A` requirements](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
 | `model=B` | Backup and restore, migration, sentiment analysis, analytics and insights | None | No | Yes |
 | `evaluation model` | Backup and restore, migration, sentiment analysis, analytics and insights | 500 messages per month per app | No | No |
 
+## Payment and billing
 
-### Payment-related errors
+On July 5, 2022, [billing changes for Teams APIs](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/) took effect. 
 
-In the event that improper licensing is detected, the API call will fail and data will not be returned.
-Specifically, for most APIs, attempting to GET messages for an unlicensed user will result in a 402 error code. 
+If your applications are or will be calling any of the following APIs, you must complete this [request form](https://aka.ms/teamsgraph/protectedApis_az) and provide an active Azure subscription: 
+
+- [chatMessage](/graph/api/chatmessage-delta) – Change notifications API
+- [chats: getAllMessages](/graph/api/chats-getallmessages) – Export API
+- [channel: getAllMessages](/graph/api/channel-getallmessages) – Export API
+- [Update chatMessage](/graph/api/chatmessage-update)
+
+When the [request form](https://aka.ms/teamsgraph/protectedApis_az) has been submitted to register an application, you can continue using these APIs. We will follow up with next steps to onboard your application to billing.
+
+Note that the organization that owns the app registration is responsible for the payment. The Azure subscription should also be active in the same tenant. For multitenant apps, the organization that registered the app might be different than the organization that runs the app.
+
+## Payment-related errors
+
+In the event that incorrect licensing is detected, the API call will fail and data will not be returned.
+Specifically, for most APIs, attempting to GET messages for an unlicensed user will result in a `402` error code. 
 For change notifications, messages sent by unlicensed users will not generate a change notification. 
 Similarly, API calls and change notifications used in evaluation mode 
 in excess of the seeded capacity will fail.
@@ -128,30 +144,22 @@ in excess of the seeded capacity will fail.
 | 402 (Payment Required) | `Evaluation mode` capacity exceeded |`...evaluation mode capacity has been exceeded. Use a valid billing model...`|
 
 > [!NOTE]
-> A successful API call does not mean that the proper licensing is in place. Similarly, API success in evaluation model does not guarantee that the call is within seeded capacity.
-
-## Payment and billing updates
-
-In October 2021 we [communicated](https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-microsoft-graph-export-api-for-microsoft-teams-messages/#license-requirements-for-microsoft-graph-api-for-teams-export-and-dlp) upcoming charges for the consumption of these APIs; on July 5, 2022, these prices take effect as [previously announced](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). 
-
-If your applications are or will be calling any of these APIs, we require you to complete this [request form](https://aka.ms/teamsgraph/protectedApis_az) providing an active Azure subscription. When the [request form](https://aka.ms/teamsgraph/protectedApis_az) has been submitted to register an application, you can continue using these APIs. We will follow up with next steps to onboard your application to billing.
-
-Please note that the organization that owns the app registration is responsible for the payment and the Azure subscription should also be active in the same tenant. For multitenant apps, the organization that registered the app might be different than the organization that runs the app.
+> A successful API call does not mean that the required licensing is in place. Similarly, API success in evaluation model does not guarantee that the call is within seeded capacity.
 
 ## Frequently asked questions
 
 |    Scenario    | Details |
 |:-------------------------|:--------|
-| Did billing actually started on July 5th? | Yes, we are onboarding partners in phases. For continued access, please fill this [request form](https://aka.ms/teamsgraph/protectedApis_az) and provide an active Azure subscription. 
+| Did billing actually started on July 5th? | Yes, we are onboarding partners in phases. For continued access, please complete this [request form](https://aka.ms/teamsgraph/protectedApis_az) and provide an active Azure subscription. 
 | What should I expect after providing an Azure subscription? | You can continue calling these metered APIs; we will contact the email provided in the request form to onboard the registered application to billing. |
-| Do I need to provide an Azure subscription if my application is not calling metered APIs? | Is recommended as most scenarios use metered APIs, see also: [protected APIs](/graph/teams-protected-apis). |
-| What happens if no Azure subscription is provided? | • No payment-related errors if the application is not calling metered APIs. <br> • If no model is being passed, the `evaluation model` value will be used by default. <br> • If calling a metered API passing `model=A`, a Microsoft 365 E5 eligible license and Azure subscription should be provided. <br> • If passing `model=B` when calling metered APIs, an active Azure subscription should be provided. <br> |
-| How do I create an Azure subscription? | The Azure subscription must be available in the same tenant where the app is registered. Customers with MCA or EA agreements can get a subscription from their existing account. Is also possible to create a PAYG subscription using a credit card or pay by check or wire transfer, for details see [cost management and billing](/azure/cost-management-billing/microsoft-customer-agreement). |
+| Do I need to provide an Azure subscription if my application is not calling metered APIs? | We recommend that you provide an Azure subscription because most scenarios use metered APIs. See also [protected APIs](/graph/teams-protected-apis). |
+| What happens if no Azure subscription is provided? | • No payment-related errors will occur if the application is not calling metered APIs. <br> • If no model parameter is passed, the `evaluation model` value will be used by default. <br> • If calling a metered API passing `model=A`, provide a Microsoft 365 E5 eligible license and Azure subscription. <br> • If passing `model=B` when calling metered APIs, provide an active Azure subscription. <br> |
+| How do I create an Azure subscription? | The Azure subscription must be available in the same tenant where the app is registered. Customers with MCA or EA agreements can get a subscription from their existing account. Is also possible to create a PAYG subscription using a credit card or pay by check or wire transfer. For details, see [cost management and billing](/azure/cost-management-billing/microsoft-customer-agreement). |
 | Who is responsible for the payment in the case of multitenant apps? | The organization that owns the app registration. |
 | Is possible to differentiate billing from multitenant or single tenant app? | Yes, this information must be provided as part of Azure billing details. |
-| Is there a charge when no message is returned using any model? | To discourage frequent [polling](/graph/api/resources/teams-api-overview), API requests that return an empty list of messages will be charged one message. In the case of `evaluation model`, the call will count towards the 500 messages per month per app allowed. | 
-| Where can I monitor the cost and billing? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) can use Azure Cost Analysis tool to track consumption per day or filter by meter, service name, resource ID among other parameters. For more details refer to our [documentation](/azure/cost-management-billing). |
+| Is there a charge when no message is returned using any model? | To discourage frequent [polling](/graph/api/resources/teams-api-overview), API requests that return an empty list of messages will be charged one message. In the case of `evaluation model`, the call will count toward the 500 messages per month per app allowed. | 
+| Where can I monitor the cost and billing? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) can use Azure Cost Analysis tool to track consumption per day or filter by meter, service name, resource ID, or other parameters. For details, see [Cost Management + Billing documentation](/azure/cost-management-billing). |
 | Is there a volume discount? | Flat rates apply. |  
-| Are these APIs enrolled in [Microsoft Azure Consumption Commitment (MACC) program](/azure/marketplace/azure-consumption-commitment-enrollment)? | Not at this moment.|
-| Is it possible to obtain an extension, in case an organization didn't plan for this? | We can grant a short term extension on case by case basis. Fill out this [request extension form](https://aka.ms/TeamsGraphAPIExtension) providing your Azure subscription and reach out to TeamsAPIBilling@microsoft.com. |  
+| Are these APIs enrolled in [Microsoft Azure Consumption Commitment (MACC) program](/azure/marketplace/azure-consumption-commitment-enrollment)? | Not at this time.|
+| Is it possible to obtain an extension, in case an organization didn't plan for this? | We can grant a short-term extension on a case-by-case basis. Fill out this [request extension form](https://aka.ms/TeamsGraphAPIExtension) and provide your Azure subscription, and reach out to [Teams API billing](mailto:TeamsAPIBilling@microsoft.com). |  
 
