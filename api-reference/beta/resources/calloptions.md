@@ -34,6 +34,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.callOptions",
   "hideBotAfterEscalation": "Boolean",
-  "isContentSharingNotificationEnabled": "Boolean",
+  "isContentSharingNotificationEnabled": "Boolean"
 }
 ```

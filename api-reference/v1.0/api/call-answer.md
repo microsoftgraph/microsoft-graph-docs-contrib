@@ -47,7 +47,7 @@ In the request body, provide a JSON object with the following parameters.
 |acceptedModalities|String collection                         |The list of accept modalities. Possible values are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call. |
 | callOptions            | [incomingCallOptions](../resources/incomingcalloptions.md)                                                         | The call options.   |
 | mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |The media configuration. (Required)                                                                                                            |
-| participantCapacity | Int | The number of participant that the application can handle for the call, for [Teams policy-based recording](/microsoftteams/teams-recording-policy) scenario.                                                     |
+| participantCapacity | Int32 | The number of participant that the application can handle for the call, for [Teams policy-based recording](/microsoftteams/teams-recording-policy) scenario.                                                     |
 
 ## Response
 This method returns a `202 Accepted` response code.
