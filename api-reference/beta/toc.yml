@@ -49,7 +49,7 @@ items:
         href: /graph/aad-advanced-queries?context=graph/api/beta
       - name: Optimize requests with query parameters
         displayName: OData query parameters, OData
-        href: /learn/modules/optimize-data-usage
+        href: /training/modules/optimize-data-usage
     - name: Batching
       href: /graph/json-batching?context=graph/api/beta
       displayName: Batch request
@@ -63,14 +63,14 @@ items:
         displayName: throttling
       - name: Optimize network traffic
         displayName: throttling
-        href: /learn/modules/optimize-network-traffic
+        href: /training/modules/optimize-network-traffic
     - name: Change notifications
       items:
       - name: Overview
         href: /graph/api/resources/webhooks?context=graph/api/beta
         displayName: change notifications, WebHooks, set up notifications for changes in resource data
       - name: Change notifications tutorial
-        href: /learn/modules/msgraph-changenotifications-trackchanges
+        href: /training/modules/msgraph-changenotifications-trackchanges
       - name: Missing change notifications
         href: /graph/webhooks-lifecycle?context=graph/api/beta
       - name: Notifications with resource data
