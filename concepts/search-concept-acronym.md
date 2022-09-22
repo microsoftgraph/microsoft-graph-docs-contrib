@@ -12,7 +12,7 @@ You can use the Microsoft Search API in Microsoft Graph to search acronyms. Admi
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-After acronyms are created, to search for them, in the [searchRequest](/graph/api/resources/searchrequest), in the **entityTypes** property, specify `acronym` as the vaue.
+After acronyms are created, to search for them, in the [searchRequest](/graph/api/resources/searchrequest), in the **entityTypes** property, specify `acronym` as the value.
 
 ## Example 1: Search acronyms
 
