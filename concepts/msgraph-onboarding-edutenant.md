@@ -32,6 +32,7 @@ Standard Microsoft 365 tenants take approximately 12-48 hours to proviion (not i
 5. Select the Tenant period from the following.
     - **90 days:** 90 day tenants include the latest services and content at time of provisioning. This is the recommended option for specific customizations related to a customer engagement. 90 day tenants will not be extended.
     - **1 year:** 1 year tenants include the latest services and content at time of provisioning. This is the recommended option for customization and learning such as creating Hybrid environments. Only 1 year tenants can be extended. If a tenant is required long term, this is the best choice.
+        > After one year then you need to [get new codes to renew](https://aka.ms/edupartnerportal).
 
 6. Look for **Microsoft Education Demo Content** and choose **Create tenant**.
 
