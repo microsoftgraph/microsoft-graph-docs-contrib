@@ -83,7 +83,7 @@
 			  "ApiChange": "Resource",
 			  "ChangedApiName": "conditionalAccessEnumeratedExternalTenants",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **conditionalAccessEnumeratedExternalTenants** resource type.",
+			  "Description": "Added the [conditionalAccessEnumeratedExternalTenants] (https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessEnumeratedExternalTenants?view=graph-rest-beta) resource.",
 			  "Target": "conditionalAccessEnumeratedExternalTenants"
 			},
 			{
