@@ -30,12 +30,12 @@ requestBody.SetContentInfo(contentInfo)
 
 
 classificationResult := graphmodels.NewClassificationResult()
-additionalData := map[string]interface{}{
-	"sensitiveTypeId" : "cb353f78-2b72-4c3c-8827-92ebe4f69fdf", 
-	"count" : int32(4) , 
-	"confidenceLevel" : int32(75) , 
-}
-classificationResult.SetAdditionalData(additionalData)
+sensitiveTypeId := "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
+classificationResult.SetSensitiveTypeId(&sensitiveTypeId) 
+count := int32(4)
+classificationResult.SetCount(&count) 
+confidenceLevel := int32(75)
+classificationResult.SetConfidenceLevel(&confidenceLevel) 
 
 classificationResults := []graphmodels.ClassificationResultable {
 	classificationResult,

@@ -11,28 +11,31 @@ requestBody := graphmodels.NewQueryPostRequestBody()
 
 
 searchRequest := graphmodels.NewSearchRequest()
-additionalData := map[string]interface{}{
-	entityTypes := []string {
-		"externalItem",
+entityTypes := []graphmodels.EntityTypeable {
+	entityType := graphmodels.EXTERNALITEM_ENTITYTYPE 
+	searchRequest.SetEntityType(&entityType) 
 
-	}
-	contentSources := []string {
-		"/external/connections/connectionfriendlyname",
+}
+searchRequest.SetEntityTypes(entityTypes)
+contentSources := []string {
+	"/external/connections/connectionfriendlyname",
 
-	}
-query := graphmodels.New()
+}
+searchRequest.SetContentSources(contentSources)
+query := graphmodels.NewSearchQuery()
 queryString := "contoso product"
 query.SetQueryString(&queryString) 
-	searchRequest.SetQuery(query)
-	"from" : int32(0) , 
-	"size" : int32(25) , 
-	fields := []string {
-		"title",
-		"description",
+searchRequest.SetQuery(query)
+from := int32(0)
+searchRequest.SetFrom(&from) 
+size := int32(25)
+searchRequest.SetSize(&size) 
+fields := []string {
+	"title",
+	"description",
 
-	}
 }
-searchRequest.SetAdditionalData(additionalData)
+searchRequest.SetFields(fields)
 
 requests := []graphmodels.SearchRequestable {
 	searchRequest,

@@ -10,9 +10,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewConditionalAccessPolicy()
 conditions := graphmodels.NewConditionalAccessConditionSet()
 signInRiskLevels := []graphmodels.RiskLevelable {
-	"high",
-	"medium",
-	"low",
+	riskLevel := graphmodels.HIGH_RISKLEVEL 
+	conditions.SetRiskLevel(&riskLevel) 
+	riskLevel := graphmodels.MEDIUM_RISKLEVEL 
+	conditions.SetRiskLevel(&riskLevel) 
+	riskLevel := graphmodels.LOW_RISKLEVEL 
+	conditions.SetRiskLevel(&riskLevel) 
 
 }
 conditions.SetSignInRiskLevels(signInRiskLevels)

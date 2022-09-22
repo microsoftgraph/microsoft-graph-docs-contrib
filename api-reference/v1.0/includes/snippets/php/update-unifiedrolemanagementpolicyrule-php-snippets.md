@@ -19,7 +19,8 @@ $target->set@odatatype('microsoft.graph.unifiedRoleManagementPolicyRuleTarget');
 
 $target->setCaller('EndUser');
 
-$target->setOperations(['All', ]);
+$target->setOperations([$target->setUnifiedRoleManagementPolicyRuleTargetOperations(new UnifiedRoleManagementPolicyRuleTargetOperations('all'));
+]);
 
 $target->setLevel('Assignment');
 
