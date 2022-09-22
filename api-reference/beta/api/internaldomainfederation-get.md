@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Domain.Read.All, Domain.ReadWrite.All|
 
-The calling user or app must be assigned the Global Administrator [Azure AD role](/azure/active-directory/roles/permissions-reference).
+The calling user must be assigned the Global Administrator [Azure AD role](/azure/active-directory/roles/permissions-reference).
 
 ## HTTP request
 

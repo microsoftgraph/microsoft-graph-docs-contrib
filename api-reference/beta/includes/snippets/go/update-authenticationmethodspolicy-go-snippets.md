@@ -21,12 +21,12 @@ authenticationMethodsRegistrationCampaign.SetExcludeTargets(excludeTargets)
 
 
 authenticationMethodsRegistrationCampaignIncludeTarget := graphmodels.NewAuthenticationMethodsRegistrationCampaignIncludeTarget()
-additionalData := map[string]interface{}{
-	"id" : "3ee3a9de-0a86-4e12-a287-9769accf1ba2", 
-	"targetType" : "group", 
-	"targetedAuthenticationMethod" : "microsoftAuthenticator", 
-}
-authenticationMethodsRegistrationCampaignIncludeTarget.SetAdditionalData(additionalData)
+id := "3ee3a9de-0a86-4e12-a287-9769accf1ba2"
+authenticationMethodsRegistrationCampaignIncludeTarget.SetId(&id) 
+targetType := graphmodels.GROUP_AUTHENTICATIONMETHODTARGETTYPE 
+authenticationMethodsRegistrationCampaignIncludeTarget.SetTargetType(&targetType) 
+targetedAuthenticationMethod := "microsoftAuthenticator"
+authenticationMethodsRegistrationCampaignIncludeTarget.SetTargetedAuthenticationMethod(&targetedAuthenticationMethod) 
 
 includeTargets := []graphmodels.AuthenticationMethodsRegistrationCampaignIncludeTargetable {
 	authenticationMethodsRegistrationCampaignIncludeTarget,
@@ -36,7 +36,7 @@ authenticationMethodsRegistrationCampaign.SetIncludeTargets(includeTargets)
 registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)
 requestBody.SetRegistrationEnforcement(registrationEnforcement)
 
-graphClient.Policies().AuthenticationMethodsPolicy().Patch(requestBody)
+graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

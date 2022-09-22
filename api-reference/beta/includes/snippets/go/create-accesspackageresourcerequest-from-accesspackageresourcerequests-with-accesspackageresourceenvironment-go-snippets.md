@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewAccessPackageResourceRequest()
 catalogId := "de9315c1-272b-4905-924b-cc112ca180c7"
 requestBody.SetCatalogId(&catalogId) 
-accessPackageResource := graphmodels.NewaccessPackageResource()
+accessPackageResource := graphmodels.NewAccessPackageResource()
 displayName := "Community Outreach"
 accessPackageResource.SetDisplayName(&displayName) 
 description := "https://contoso.sharepoint.com/sites/CSR"
@@ -29,7 +29,7 @@ requestBody.SetAccessPackageResource(accessPackageResource)
 requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType) 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

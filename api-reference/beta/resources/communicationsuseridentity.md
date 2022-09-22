@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of a user present in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) who is participating in a communication; for example, as a caller in an audio-video call.
+Represents the identity of a user present in [Azure Active Directory](/azure/active-directory/) who is participating in a communication; for example, as a caller in an audio-video call.
 
 Inherits from [identity](identity.md).
 

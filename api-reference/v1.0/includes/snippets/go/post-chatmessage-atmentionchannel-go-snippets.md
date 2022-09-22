@@ -21,8 +21,8 @@ id := int32(0)
 chatMessageMention.SetId(&id) 
 mentionText := "General"
 chatMessageMention.SetMentionText(&mentionText) 
-mentioned := graphmodels.Newmentioned()
-conversation := graphmodels.Newconversation()
+mentioned := graphmodels.NewChatMessageMentionedIdentitySet()
+conversation := graphmodels.NewTeamworkConversationIdentity()
 id := "19:0b50940236084d258c97b21bd01917b0@thread.skype"
 conversation.SetId(&id) 
 displayName := "General"
@@ -38,7 +38,7 @@ mentions := []graphmodels.ChatMessageMentionable {
 }
 requestBody.SetMentions(mentions)
 
-result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(requestBody)
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

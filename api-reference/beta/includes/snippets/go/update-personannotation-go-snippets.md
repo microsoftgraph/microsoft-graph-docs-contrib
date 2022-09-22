@@ -11,7 +11,7 @@ requestBody := graphmodels.NewPersonAnnotation()
 allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
 requestBody.SetAllowedAudiences(&allowedAudiences) 
 
-graphClient.UsersById("user-id").Profile().NotesById("personAnnotation-id").Patch(requestBody)
+graphClient.UsersById("user-id").Profile().NotesById("personAnnotation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

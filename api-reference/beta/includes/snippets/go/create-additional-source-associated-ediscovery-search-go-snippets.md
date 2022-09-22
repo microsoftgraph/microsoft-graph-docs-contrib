@@ -16,7 +16,7 @@ site.SetWebUrl(&webUrl)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").SearchesById("ediscoverySearch-id").AdditionalSources().Post(requestBody)
+result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").SearchesById("ediscoverySearch-id").AdditionalSources().Post(context.Background(), requestBody, nil)
 
 
 ```

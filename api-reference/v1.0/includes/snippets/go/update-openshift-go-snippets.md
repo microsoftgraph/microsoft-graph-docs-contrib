@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewOpenShift()
 schedulingGroupId := "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
 requestBody.SetSchedulingGroupId(&schedulingGroupId) 
-sharedOpenShift := graphmodels.NewsharedOpenShift()
+sharedOpenShift := graphmodels.NewOpenShiftItem()
 notes := "Inventory Management"
 sharedOpenShift.SetNotes(&notes) 
 openSlotCount := int32(5)
@@ -46,7 +46,7 @@ requestBody.SetSharedOpenShift(sharedOpenShift)
 draftOpenShift := null
 requestBody.SetDraftOpenShift(&draftOpenShift) 
 
-graphClient.TeamsById("team-id").Schedule().OpenShiftsById("openShift-id").Patch(requestBody)
+graphClient.TeamsById("team-id").Schedule().OpenShiftsById("openShift-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

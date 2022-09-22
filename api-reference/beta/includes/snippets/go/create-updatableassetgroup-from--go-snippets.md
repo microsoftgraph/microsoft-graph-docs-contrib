@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUpdatableAsset()
 
-result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Post(requestBody)
+result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Post(context.Background(), requestBody, nil)
 
 
 ```
