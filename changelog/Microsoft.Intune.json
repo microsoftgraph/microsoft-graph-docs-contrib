@@ -8,7 +8,7 @@
           "ChangedApiName": "v13_0",
           "ChangeType": "Addition",
           "Description": "Added the `v13_0` property to the [macOSMinimumOperatingSystem](https://docs.microsoft.com/graph/api/resources/intune-apps-macosminimumoperatingsystem?view=graph-rest-beta) resource.",
-          "Target": "macOSMinimumOperatingSystem"
+          "Target": "macOSMinimumOperatingSystem" 
         },
         {
           "Id": "e7737123-5578-4b32-85c1-098f20742117",
