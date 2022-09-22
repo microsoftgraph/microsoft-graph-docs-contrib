@@ -1,7 +1,7 @@
 ---
 title: "List educationClasses"
 description: "Get a list of the educationClass objects and their properties."
-author: "Sureshpadimi88"
+author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -33,8 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes
 ```
+
 ## Optional query parameters
-This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** values, as shown in the following example:
 
 <!-- { "blockType": "ignored" } -->
