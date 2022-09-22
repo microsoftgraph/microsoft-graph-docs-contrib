@@ -6,15 +6,19 @@ ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# Licensing and payment requirements for the Microsoft Teams API
+# Licensing and payment requirements for Microsoft Teams APIs
 
 This article describes the licensing and payment requirements for the Microsoft Teams APIs in Microsoft Graph.
 
-Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model. The following APIs have consumption charges:
+Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model. 
 
-* [Export Teams content](/microsoftteams/export-teams-content): channel and chat getAllMessages.
-* [Update (DLP Patch)](/graph/api/chatmessage-update): channel and chat chatMessage.
-* [Create subscription (change notifications)](/graph/api/subscription-post-subscriptions): channel, chat chatMessage and conversationMember.
+The following table lists the APIs that currently support payment models.
+
+| Scenario | APIs |
+|:---------|:-----|
+|[Export Teams content](/microsoftteams/export-teams-content)| [channel: getAllMessages](/graph/api/channel-getallmessages) and [chats: getAllMessages](/graph/api/chats-getallmessages) |
+| Update (DLP patch) | [Update channel](/graph/api/channel-patch), [Update chat](/graph/api/chat-patch), [Update chatMessage](/graph/api/chatmessage-update) |
+| [Create subscription (change notifications)](/graph/api/subscription-post-subscriptions) | [channel](/graph/api/resources/channel), [chat](/graph/api/resources/chat), [chatMessage](/graph/api/resources/chatmessage), and [conversationMember](/graph/api/resources/conversationmember) |
 
 ## Licensing models
 
@@ -44,31 +48,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message | Requests returning an empty list will be charged 1 message. Seeded capacity is shared with chat export. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
 
-### `model=B` requirements
-
-`model=B` is restricted to applications that do not perform a security or compliance function. For details, see the [API Terms for Security & Compliance Applications](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms) section of the product terms for Microsoft Azure Services.
-
-|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
-|:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
-| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
-| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | None  | $0.00075 per notification | |
-| [chat change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
-| [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | None | $0.00075 per message | Requests returning an empty list, will be charged 1 message. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Requests returning an empty list, will be charged 1 message. |
-
-### Evaluation mode (default) requirements
-
-|API   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
-|:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
-| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
-| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A |
-| [chat change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
-| [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
-| [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |   N/A |  500 messages per month per app | N/A |
-
-
-## Required licenses for `model=A` 
+#### Required licenses for `model=A` 
 
 The user will need a license that supports 
 the Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference),
@@ -95,18 +75,41 @@ through the [Microsoft 365 Developer Program](https://developer.microsoft.com/mi
 > [!NOTE] 
 > The Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference) must be enabled before it can be licensed. Licenses can be managed in the [Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) or the [Microsoft 365 admin center](https://admin.microsoft.com). You can also assign licenses to a group account by using [PowerShell and Microsoft Graph](/azure/active-directory/enterprise-users/licensing-ps-examples).
 
-## Licenses, payment and seeded capacity
+### `model=B` requirements
 
-Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is added up and compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;apps won't run out of seeded capacity if another app runs out.
+`model=B` is restricted to applications that do not perform a security or compliance function. For details, see the [API Terms for Security & Compliance Applications](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms) section of the product terms for Microsoft Azure Services.
 
-| Billing model | Sample functions | Seeded Capacity | License required | Azure subscription required |
+|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
+|:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
+| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
+| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | None  | $0.00075 per notification | |
+| [chat change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
+| [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | None | $0.00075 per message | Requests returning an empty list, will be charged 1 message. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Requests returning an empty list, will be charged 1 message. |
+
+### Evaluation mode (default) requirements
+
+|API   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
+|:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
+| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
+| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A |
+| [chat change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
+| [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
+| [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |   N/A |  500 messages per month per app | N/A |
+
+## Payment and seeded capacity
+
+Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;an app won't run out of seeded capacity if another app runs out.
+
+| Billing model | Use cases | Seeded Capacity | License required | Azure subscription required |
 |:-----------|:---------------|:---------------|:-----------|:-----------|
-| `model=A` | Security and Compliance. | See [`model=A` details](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
-| `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | None | No | Yes |
-| `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | 500 messages per month per app | No | No |
+| `model=A` | Security and Compliance | See [`model=A` details](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
+| `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights | None | No | Yes |
+| `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights | 500 messages per month per app | No | No |
 
 
-## Payment related errors
+### Payment-related errors
 
 In the event that improper licensing is detected, the API call will fail and data will not be returned.
 Specifically, for most APIs, attempting to GET messages for an unlicensed user will result in a 402 error code. 
@@ -121,7 +124,7 @@ in excess of the seeded capacity will fail.
 | 402 (Payment Required) | `Evaluation mode` capacity exceeded |`...evaluation mode capacity has been exceeded. Use a valid billing model...`|
 
 > [!NOTE]
-> A successful API call does not mean that the proper licensing is in place. Similarly, API success in evaluation model does not guarantee the call is within seeded capacity.
+> A successful API call does not mean that the proper licensing is in place. Similarly, API success in evaluation model does not guarantee that the call is within seeded capacity.
 
 ## Payment and billing updates
 
