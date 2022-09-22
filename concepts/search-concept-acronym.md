@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Search API to search acronyms"
-description: "You can use the Microsoft Search API to search acronyms."
+description: "Find out how to use the Microsoft Search API in Microsoft Graph to search acronyms."
 author: "njerigrevious"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to search acronyms
 
-Use the Microsoft Search API to search acronyms. Acronyms can be created in [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) by administrator or via using [Administrative Answers Management API](/graph/api/search-searchentity-post-acronyms).
+You can use the Microsoft Search API in Microsoft Graph to search acronyms. Administrators can create acronyms in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) or via the [Create acronym](/graph/api/search-searchentity-post-acronyms) API.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
