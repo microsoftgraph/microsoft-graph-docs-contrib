@@ -2,7 +2,7 @@
 title: "Get educationClass"
 description: "Retrieve a class from the system."
 ms.localizationpriority: medium
-author: "Sureshpadimi88"
+author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -29,11 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{id}
 ```
-
 ## Optional query parameters
-
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
