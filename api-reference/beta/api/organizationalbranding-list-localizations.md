@@ -119,6 +119,8 @@ Content-Type: application/json
             "customAccountResetCredentialsUrl": null,
             "customCannotAccessYourAccountText": null,
             "customCannotAccessYourAccountUrl": null,
+            "customCSS": null,
+            "customCSSRelativetUrl": null,
             "customForgotMyPasswordText": null,
             "customPrivacyAndCookiesText": null,
             "customPrivacyAndCookiesUrl": null,
@@ -131,6 +133,11 @@ Content-Type: application/json
             "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
             "squareLogoDarkRelativeUrl": null,
             "usernameHintText": " ",
+            "loginPageLayoutConfiguration": {
+              "layoutTemplateType": "default",
+              "isHeaderShown": false,
+              "isFooterShown": true
+             },
             "loginPageTextVisibilitySettings": {
               "hideCannotAccessYourAccount": false,
               "hideForgotMyPassword": false,
@@ -149,6 +156,8 @@ Content-Type: application/json
             "customAccountResetCredentialsUrl": null,
             "customCannotAccessYourAccountText": null,
             "customCannotAccessYourAccountUrl": null,
+            "customCSS": null,
+            "customCSSRelativetUrl": null,
             "customForgotMyPasswordText": null,
             "customPrivacyAndCookiesText": null,
             "customPrivacyAndCookiesUrl": null,
@@ -161,6 +170,11 @@ Content-Type: application/json
             "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
             "squareLogoDarkRelativeUrl": null,
             "usernameHintText": " ",
+            "loginPageLayoutConfiguration": {
+              "layoutTemplateType": "default",
+              "isHeaderShown": false,
+              "isFooterShown": true
+             },
             "loginPageTextVisibilitySettings": {
               "hideCannotAccessYourAccount": false,
               "hideForgotMyPassword": false,
