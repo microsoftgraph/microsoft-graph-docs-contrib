@@ -40,7 +40,7 @@ There are no licensing requirements for `model=B`.
 `model=A` is restricted to applications performing a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
 of the [product terms for Microsoft Azure Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
 
-The following APIs require the `model=A` parameter.
+The following APIs support the `model=A` parameter.
 
 |API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
@@ -81,24 +81,26 @@ through the [Microsoft 365 Developer Program](https://developer.microsoft.com/mi
 
 `model=B` is restricted to applications that do not perform a security or compliance function. For details, see the [API Terms for Security & Compliance Applications](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms) section of the product terms for Microsoft Azure Services.
 
-|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
-|:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
-| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
-| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | None  | $0.00075 per notification | |
-| [chat change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
-| [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | None | $0.00075 per message | Requests returning an empty list, will be charged 1 message. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Requests returning an empty list, will be charged 1 message. |
+The following APIs support the `model=B` parameter.
+
+|API                   | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
+|:-----------------------------|:----------------|:-------|:------|
+| [chatMessage change notifications](/graph/api/chatmessage-delta) | None | $0.00075 per message |  |
+| conversationMember change notifications | None  | $0.00075 per notification | |
+| chat change notifications | None | $0.00075 per message |  |
+| [Get messages across all chats for user](/graph/api/chats-getallmessages) | None | $0.00075 per message | Requests returning an empty list will be charged 1 message. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)|  None | $0.00075 per message | Requests returning an empty list will be charged 1 message. |
 
 ### Evaluation mode (default) requirements
 
-|API   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
-|:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
-| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
-| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A |
-| [chat change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
-| [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
-| [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
-| [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |   N/A |  500 messages per month per app | N/A |
+|API   | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
+|:-----------------------------|:----------------|:-------|:------|
+| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  500 messages per month per app | N/A |
+| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | 500 messages per month per app | N/A |
+| [chat change notifications](/graph/api/subscription-post-subscriptions) | 500 messages per month per app | N/A |
+| [Get messages across all chats for user](/graph/api/chats-getallmessages) | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)|  500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
+| [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |  500 messages per month per app | N/A |
 
 ## Payment and seeded capacity
 
