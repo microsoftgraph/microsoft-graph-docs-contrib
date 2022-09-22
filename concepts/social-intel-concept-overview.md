@@ -33,16 +33,14 @@ The people API returns data of a single entity, [person](/graph/api/resources/pe
 - [/search](search-concept-person.md)
 - [/people](/graph/api/resources/person) (maintenance mode)
 
-### Why you should integrate to /search
+### Use the /search endpoint
 
-We highly encourage developers to consider using the `/search` endpoint when building their products because all future investments will only be available in the `/search` endpoint; the `/people` endpoint is in maintenance mode. The following are additional reasons why you should integrate to the `/search` endpoint.
+We encourage developers to use the `/search` endpoint when building their products; the `/people` endpoint is in maintenance mode. The following are reasons to consider using the `/search` endpoint:
 
-- All future investments in people search will be made available via `/search`, for example, natural language search like "John the accountant in Nairobi"
-- Attribute search matching on additional attributes other than name and email
-- Better relevance results from `/search` give better results due to the use of artificial intelligence, better data models, and sophisticated spell correction
-- Lower **cost of goods** when using `/search`, but specifically lower latency
-
-The following sections describe ways how _relevance_ data is used.
+- All future investments in people search will be made available via `/search`; for example, natural language search like "John the accountant in Nairobi".
+- Attribute search matching on attributes other than name and email is available.
+- Better relevance results from `/search` give better results due to the use of artificial intelligence, better data models, and sophisticated spell correction.
+- Lower **cost of goods** when using `/search`, but specifically lower latency.
 
 ### Browse people by relevance
 
