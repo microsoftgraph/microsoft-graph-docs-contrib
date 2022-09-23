@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE `[beta-disclaimer](../../includes/beta-disclaimer.md)`]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [workbookNamedItem](../resources/workbooknameditem.md) object.
 
