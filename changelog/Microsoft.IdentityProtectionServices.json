@@ -75,7 +75,7 @@
 			  "ApiChange": "Property",
 			  "ChangedApiName": "authenticationType",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **authenticationType** property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
+			  "Description": "Added the **authenticationType** property to the [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
 			  "Target": "signInFrequencySessionControl"
 			},
 			{
@@ -83,7 +83,7 @@
 			  "ApiChange": "Property",
 			  "ChangedApiName": "frequencyInterval",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **frequencyInterval** property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
+			  "Description": "Added the **frequencyInterval** property to the [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-1.0) resource.",
 			  "Target": "signInFrequencySessionControl"
 			}
 		      ],
@@ -136,7 +136,7 @@
 				"ApiChange": "Property",
 				"ChangedApiName": "authenticationType",
 				"ChangeType": "Addition",
-				"Description": "Added the **authenticationType** property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-beta) resource.",
+				"Description": "Added the **authenticationType** property to the [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-beta) resource.",
 				"Target": "signInFrequencySessionControl"
 			  },
 			  {
@@ -144,7 +144,7 @@
 				"ApiChange": "Property",
 				"ChangedApiName": "frequencyInterval",
 				"ChangeType": "Addition",
-				"Description": "Added the **frequencyInterval** property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-beta) resource.",
+				"Description": "Added the **frequencyInterval** property to the [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-beta) resource.",
 				"Target": "signInFrequencySessionControl"
 			  }
 			],
@@ -162,7 +162,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "clientApplications",
 					"ChangeType": "Addition",
-					"Description": "Added the **clientApplications** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet) resource. Use this property to configure the service principals and workload identities to include in or exclude from a conditional access policy.",
+					"Description": "Added the **clientApplications** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet) resource. Use this property to configure the service principals and workload identities to include in or exclude from a conditional access policy.",
 					"Target": "conditionalAccessConditionSet"
 				},
 				{
@@ -170,7 +170,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "conditionalAccessClientApplications",
 					"ChangeType": "Addition",
-					"Description": "Added the [conditionalAccessClientApplications](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary) resource type.",
+					"Description": "Added the [conditionalAccessClientApplications](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary) resource type.",
 					"Target": "conditionalAccessClientApplications"
 				}
 			],
@@ -230,7 +230,7 @@
 				"ApiChange": "Resource",
 				"ChangedApiName": "riskServicePrincipalActivity",
 				"ChangeType": "Addition",
-				"Description": "Added the [riskServicePrincipalActivity](https://docs.microsoft.com/en-us/graph/api/resources/riskServicePrincipalActivity?view=graph-rest-beta) resource. Represents the risk activity of an Azure AD service principal as determined by Azure AD Identity Protection.",
+				"Description": "Added the [riskServicePrincipalActivity](https://learn.microsoft.com/en-us/graph/api/resources/riskServicePrincipalActivity?view=graph-rest-beta) resource. Represents the risk activity of an Azure AD service principal as determined by Azure AD Identity Protection.",
 				"Target": "riskServicePrincipalActivity"
 			  },
 			  {
@@ -238,7 +238,7 @@
 				"ApiChange": "Resource",
 				"ChangedApiName": "riskyServicePrincipal",
 				"ChangeType": "Addition",
-				"Description": "Added the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipal?view=graph-rest-beta) resource and related methods. Use this API to access all at-risk service principals in your Azure AD tenant.",
+				"Description": "Added the [riskyServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/riskyServicePrincipal?view=graph-rest-beta) resource and related methods. Use this API to access all at-risk service principals in your Azure AD tenant.",
 				"Target": "riskyServicePrincipal"
 			  },
 			  {
@@ -246,7 +246,7 @@
 				"ApiChange": "Resource",
 				"ChangedApiName": "servicePrincipalRiskDetection",
 				"ChangeType": "Addition",
-				"Description": "Added the [servicePrincipalRiskDetection](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipalRiskDetection?view=graph-rest-beta) resource and related methods. Use this API to access all service principal risk detections in your Azure AD environment.",
+				"Description": "Added the [servicePrincipalRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipalRiskDetection?view=graph-rest-beta) resource and related methods. Use this API to access all service principal risk detections in your Azure AD environment.",
 				"Target": "servicePrincipalRiskDetection"
 			  },
 			  {
@@ -254,7 +254,7 @@
 				"ApiChange": "Relationship",
 				"ChangedApiName": "riskyServicePrincipals",
 				"ChangeType": "Addition",
-				"Description": "Added the **riskyServicePrincipals** navigation property to the [identityProtectionRoot](https://docs.microsoft.com/en-us/graph/api/resources/identityProtectionRoot?view=graph-rest-beta) resource.",
+				"Description": "Added the **riskyServicePrincipals** navigation property to the [identityProtectionRoot](https://learn.microsoft.com/en-us/graph/api/resources/identityProtectionRoot?view=graph-rest-beta) resource.",
 				"Target": "identityProtectionRoot"
 			  },
 			  {
@@ -262,7 +262,7 @@
 				"ApiChange": "Relationship",
 				"ChangedApiName": "servicePrincipalRiskDetections",
 				"ChangeType": "Addition",
-				"Description": "Added the **servicePrincipalRiskDetections** navigation property to the [identityProtectionRoot](https://docs.microsoft.com/en-us/graph/api/resources/identityProtectionRoot?view=graph-rest-beta) resource.",
+				"Description": "Added the **servicePrincipalRiskDetections** navigation property to the [identityProtectionRoot](https://learn.microsoft.com/en-us/graph/api/resources/identityProtectionRoot?view=graph-rest-beta) resource.",
 				"Target": "identityProtectionRoot"
 			  },
 			  {
@@ -270,7 +270,7 @@
 				"ApiChange": "Resource",
 				"ChangedApiName": "riskyServicePrincipalHistoryItem",
 				"ChangeType": "Addition",
-				"Description": "Added the [riskyServicePrincipalHistoryItem](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipalHistoryItem?view=graph-rest-beta) resource and related methods. Use this API to retrieve the risk history of an Azure AD service principal as determined by Azure AD Identity Protection.",
+				"Description": "Added the [riskyServicePrincipalHistoryItem](https://learn.microsoft.com/en-us/graph/api/resources/riskyServicePrincipalHistoryItem?view=graph-rest-beta) resource and related methods. Use this API to retrieve the risk history of an Azure AD service principal as determined by Azure AD Identity Protection.",
 				"Target": "riskyServicePrincipalHistoryItem"
 			  },
 			  {
@@ -278,7 +278,7 @@
 				"ApiChange": "Method",
 				"ChangedApiName": "confirmCompromised",
 				"ChangeType": "Addition",
-				"Description": "Added the [confirmCompromised](https://docs.microsoft.com/en-us/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/riskyserviceprincipal?view=graph-rest-beta) resource.",
+				"Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta) method to the [riskyServicePrincipal](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal?view=graph-rest-beta) resource.",
 				"Target": "riskyServicePrincipal"
 			  },
 			  {
@@ -286,7 +286,7 @@
 				"ApiChange": "Method",
 				"ChangedApiName": "dismiss",
 				"ChangeType": "Addition",
-				"Description": "Added the [dismiss](https://docs.microsoft.com/en-us/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/riskyserviceprincipal?view=graph-rest-beta) resource.",
+				"Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta) method to the [riskyServicePrincipal](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal?view=graph-rest-beta) resource.",
 				"Target": "riskyServicePrincipal"
 			  },
 			  {
@@ -294,7 +294,7 @@
 				"ApiChange": "Property",
 				"ChangedApiName": "servicePrincipalRiskLevels",
 				"ChangeType": "Addition",
-				"Description": "Added the **servicePrincipalRiskLevels** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) resource. Administrators can use this property to set a risk-based policy for service principals in their Azure AD tenant.",
+				"Description": "Added the **servicePrincipalRiskLevels** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) resource. Administrators can use this property to set a risk-based policy for service principals in their Azure AD tenant.",
 				"Target": "conditionalAccessConditionSet"
 			},
 			{
@@ -302,7 +302,7 @@
 				"ApiChange": "Permission",
 				"ChangedApiName": "IdentityRiskyServicePrincipal.Read.All",
 				"ChangeType": "Addition",
-				"Description": "Added support for the service principals risk-based delegated and application permissions of `IdentityRiskyServicePrincipal.Read.All` to the read operations of Azure AD [identity protection](https://docs.microsoft.com/graph/api/resources/identityprotectionroot?view=graph-rest-beta) APIs.",
+				"Description": "Added support for the service principals risk-based delegated and application permissions of `IdentityRiskyServicePrincipal.Read.All` to the read operations of Azure AD [identity protection](https://learn.microsoft.com/graph/api/resources/identityprotectionroot?view=graph-rest-beta) APIs.",
 				"Target": "identityProtectionRoot"
 			},
 			{
@@ -310,7 +310,7 @@
 				"ApiChange": "Permission",
 				"ChangedApiName": "IdentityRiskyServicePrincipal.ReadWrite.All",
 				"ChangeType": "Addition",
-				"Description": "Added support for the service principals risk-based delegated and application permissions of `IdentityRiskyServicePrincipal.ReadWrite.All` to the read and write operations of Azure AD [identity protection](https://docs.microsoft.com/graph/api/resources/identityprotectionroot?view=graph-rest-beta) APIs.",
+				"Description": "Added support for the service principals risk-based delegated and application permissions of `IdentityRiskyServicePrincipal.ReadWrite.All` to the read and write operations of Azure AD [identity protection](https://learn.microsoft.com/graph/api/resources/identityprotectionroot?view=graph-rest-beta) APIs.",
 				"Target": "identityProtectionRoot"
 			}
 			],
@@ -328,7 +328,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "clientApplications",
 					"ChangeType": "Addition",
-					"Description": "Added the **clientApplications** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-beta) resource. Use this property to configure the service principals and workload identities to include in or exclude from a conditional access policy.",
+					"Description": "Added the **clientApplications** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-beta) resource. Use this property to configure the service principals and workload identities to include in or exclude from a conditional access policy.",
 					"Target": "conditionalAccessConditionSet"
 				},
 				{
@@ -336,7 +336,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "conditionalAccessClientApplications",
 					"ChangeType": "Addition",
-					"Description": "Added the [conditionalAccessClientApplications](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource type.",
+					"Description": "Added the [conditionalAccessClientApplications](https://learn.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource type.",
 					"Target": "conditionalAccessClientApplications"
 				}
 			],
@@ -388,7 +388,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "riskType",
 					"ChangeType": "Deprecation",
-					"Description": "Deprecated the **riskType** property of the [riskDetection](https://docs.microsoft.com/en-us/graph/api/resources/riskdetection?view=graph-rest-beta) resource. Replaced with the **riskEventType** property.",
+					"Description": "Deprecated the **riskType** property of the [riskDetection](https://learn.microsoft.com/en-us/graph/api/resources/riskdetection?view=graph-rest-beta) resource. Replaced with the **riskEventType** property.",
 					"Target": "riskDetection"
 				},
 				{
@@ -396,7 +396,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "eventTypes ",
 					"ChangeType": "Deprecation",
-					"Description": "Deprecated the **eventTypes** property of the [riskUserActivity](https://docs.microsoft.com/en-us/graph/api/resources/riskuseractivity?view=graph-rest-beta) resource. Replaced with the **riskEventType** property.",
+					"Description": "Deprecated the **eventTypes** property of the [riskUserActivity](https://learn.microsoft.com/en-us/graph/api/resources/riskuseractivity?view=graph-rest-beta) resource. Replaced with the **riskEventType** property.",
 					"Target": "riskUserActivity"
 				}
 			],
@@ -414,7 +414,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "disableResilienceDefaults",
 					"ChangeType": "Addition",
-					"Description": "Added the **disableResilienceDefaults** property to the [conditionalAccessSessionControls](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesssessioncontrols?view=graph-rest-beta) resource.",
+					"Description": "Added the **disableResilienceDefaults** property to the [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesssessioncontrols?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessSessionControls"
 				}
 			],
@@ -432,7 +432,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "deviceFilter",
 					"ChangeType": "Addition",
-					"Description": "Added the **deviceFilter** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Description": "Added the **deviceFilter** property to the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessDevices"
 				},
 				{
@@ -440,7 +440,7 @@
 					"ApiChange": "ComplexType",
 					"ChangedApiName": "conditionalAccessFilter",
 					"ChangeType": "Addition",
-					"Description": "Added the **conditionalAccessFilter** type to the [conditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) resource.",
+					"Description": "Added the **conditionalAccessFilter** type to the [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessPolicy"
 				}
 			],
@@ -458,7 +458,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "migrate",
 					"ChangeType": "Addition",
-					"Description": "Added the **migrate** property to the [continuousAccessEvaluationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta) resource.",
+					"Description": "Added the **migrate** property to the [continuousAccessEvaluationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta) resource.",
 					"Target": "continuousAccessEvaluationPolicy"
 				}
 			],
@@ -476,7 +476,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "userRiskLevels",
 					"ChangeType": "Addition",
-					"Description": "Added the **userRiskLevels** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
+					"Description": "Added the **userRiskLevels** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
 					"Target": "conditionalAccessConditionSet"
 				},
 				{
@@ -502,7 +502,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "includeDevices",
 					"ChangeType": "Addition",
-					"Description": "Added the **includeDevices** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Description": "Added the **includeDevices** property to the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessDevices"
 				},
 				{
@@ -510,7 +510,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "excludeDevices",
 					"ChangeType": "Addition",
-					"Description": "Added the **excludeDevices** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Description": "Added the **excludeDevices** property to the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessDevices"
 				},
 				{
@@ -518,7 +518,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "includeDeviceStates",
 					"ChangeType": "Change",
-					"Description": "Deprecated the **includeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Description": "Deprecated the **includeDeviceStates** property on the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
 					"Target": "conditionalAccessDevices"
 				},
 				{
@@ -526,7 +526,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "excludeDeviceStates",
 					"ChangeType": "Change",
-					"Description": "Deprecated the **excludeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Description": "Deprecated the **excludeDeviceStates** property on the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
 					"Target": "conditionalAccessDevices"
 				}
 			],
@@ -544,7 +544,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "disableResilienceDefaults",
 					"ChangeType": "Addition",
-					"Description": "Added the **disableResilienceDefaults** property to the [conditionalAccessSessionControls](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesssessioncontrols?view=graph-rest-beta) resource.",
+					"Description": "Added the **disableResilienceDefaults** property to the [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesssessioncontrols?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessSessionControls"
 				}
 			],
@@ -562,7 +562,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "userRiskLevels",
 					"ChangeType": "Addition",
-					"Description": "Added the **userRiskLevels** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
+					"Description": "Added the **userRiskLevels** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
 					"Target": "conditionalAccessConditionSet"
 				},
 				{
@@ -588,7 +588,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "includeDevices",
 					"ChangeType": "Addition",
-					"Description": "Added the **includeDevices** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Description": "Added the **includeDevices** property to the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessDevices"
 				},
 				{
@@ -596,7 +596,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "excludeDevices",
 					"ChangeType": "Addition",
-					"Description": "Added the **excludeDevices** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Description": "Added the **excludeDevices** property to the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessDevices"
 				},
 				{
@@ -604,7 +604,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "includeDeviceStates",
 					"ChangeType": "Change",
-					"Description": "Deprecated the **includeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Description": "Deprecated the **includeDeviceStates** property on the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
 					"Target": "conditionalAccessDevices"
 				},
 				{
@@ -612,7 +612,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "excludeDeviceStates",
 					"ChangeType": "Change",
-					"Description": "Deprecated the **excludeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Description": "Deprecated the **excludeDeviceStates** property on the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
 					"Target": "conditionalAccessDevices"
 				}
 			],
@@ -630,7 +630,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "deviceFilter",
 					"ChangeType": "Addition",
-					"Description": "Added the **deviceFilter** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Description": "Added the **deviceFilter** property to the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessDevices"
 				},
 				{
@@ -638,7 +638,7 @@
 					"ApiChange": "ComplexType",
 					"ChangedApiName": "conditionalAccessFilter",
 					"ChangeType": "Addition",
-					"Description": "Added the **conditionalAccessFilter** type to the [conditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) resource.",
+					"Description": "Added the **conditionalAccessFilter** type to the [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessPolicy"
 				}
 			],
@@ -664,7 +664,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "devices",
 					"ChangeType": "Addition",
-					"Description": "Added the **devices** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
+					"Description": "Added the **devices** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
 					"Target": "conditionalAccessConditionSet"
 				},
 				{
@@ -672,7 +672,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "conditionalAccessDevices",
 					"ChangeType": "Addition",
-					"Description": "Added the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-1.0) resource type.",
+					"Description": "Added the [conditionalAccessDevices](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-1.0) resource type.",
 					"Target": "conditionalAccessDevices"
 				},
 				{
@@ -680,7 +680,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "conditionalAccessFilter",
 					"ChangeType": "Addition",
-					"Description": "Added the [conditionalAccessFilter](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessFilter?view=graph-rest-1.0) resource type.",
+					"Description": "Added the [conditionalAccessFilter](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessFilter?view=graph-rest-1.0) resource type.",
 					"Target": "conditionalAccessFilter"
 				}
 			],
