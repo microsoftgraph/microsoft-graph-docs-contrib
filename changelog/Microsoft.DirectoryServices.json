@@ -1,5 +1,41 @@
 {
   "changelog": [
+      {
+      "ChangeList": [
+        { 
+          "Id": "589e67c5-1dba-4746-a33e-7b0fda33f0aa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "DelegatedPermissionGrant.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added app-only and delegated permissions [DelegatedPermissionGrant.Read.All](permissions-reference.md#application-resource-permissions).",
+          "Target": "DelegatedPermissionGrant.Read.All"
+        }
+      ],
+      "Id": "d7c7dc78-aff1-442f-a408-2f6cfa8f9994",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-23T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        { 
+          "Id": "86e72c87-6601-44b2-8c23-0578f50391b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "DelegatedPermissionGrant.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added app-only and delegated permissions [DelegatedPermissionGrant.Read.All](permissions-reference.md#application-resource-permissions).",
+          "Target": "DelegatedPermissionGrant.Read.All"
+        }
+      ],
+      "Id": "243d4789-495d-47d2-9e01-f24733df3d0a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-23T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
     {
       "ChangeList": [
         {
