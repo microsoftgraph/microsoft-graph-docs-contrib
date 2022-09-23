@@ -1,13 +1,13 @@
 ---
-title: "List oauth2PermissionGrants"
-description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants."
+title: "List a service principal's oauth2PermissionGrants"
+description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants, granted to a client app's service principal."
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
-author: "sureshja"
+author: "psignoret"
 ---
 
-# List oauth2PermissionGrants
+# List oauth2PermissionGrants granted to a service principal
 
 Namespace: microsoft.graph
 
