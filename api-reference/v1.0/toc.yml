@@ -7374,6 +7374,12 @@ items:
             href: api/chat-post-messages.md
           - name: Get chat between user and app
             href: api/userscopeteamsappinstallation-get-chat.md
+          - name: List pinned messages
+            href: api/chat-list-pinnedmessages.md
+          - name: Pin message
+            href: api/chat-post-pinnedmessages.md
+          - name: Unpin message
+            href: api/chat-delete-pinnedmessages.md
         - name: Chat message
           href: resources/chatmessage.md
           items:
@@ -7401,6 +7407,21 @@ items:
             href: api/chats-getallmessages.md
           - name: Get hosted content
             href: api/chatmessagehostedcontent-get.md
+          - name: List pinned messages
+            href: api/chat-list-pinnedmessages.md
+          - name: Pin message
+            href: api/chat-post-pinnedmessages.md
+          - name: Unpin message
+            href: api/chat-delete-pinnedmessages.md
+        - name: Pinned chat message
+          href: resources/pinnedchatmessageinfo.md
+          items:
+          - name: List pinned messages
+            href: api/chat-list-pinnedmessages.md
+          - name: Pin message
+            href: api/chat-post-pinnedmessages.md
+          - name: Unpin message
+            href: api/chat-delete-pinnedmessages.md
         - name: Team
           href: resources/team.md
           items:
