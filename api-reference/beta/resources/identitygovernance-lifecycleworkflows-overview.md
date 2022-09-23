@@ -40,14 +40,7 @@ To create workflows, use one of the [predefined workflow templates](#workflow-te
 
 Azure AD provides the following six predefined **workflow templates** that define the templates for combinations of [*tasks*](#workflow-tasks) and *execution conditions* that can be part of a workflow.
 
-| Workflow template type          | Lifecycle category |
-|---------------------------------|--------------------|
-| Onboard pre-hire employee       | Joiner             |
-| Onboard new hire employee       | Joiner             |
-| Real-time employee termination  | Leaver             |
-| Pre-Offboarding of an employee  | Leaver             |
-| Offboard an employee            | Leaver             |
-| Post-Offboarding of an employee | Leaver             |
+[!INCLUDE [identitygovernance-lifecycleworkflows-workflowtemplates](../includes/identitygovernance-lifecycleworkflows-workflowtemplates.md)]
 
 Use the [workflowTemplate resource type](identitygovernance-workflowtemplate.md) and its associated methods to identify the preconfigured templates, and the tasks and execution conditions that they support, and copy and use the templates to [create your workflows](#create-and-manage-workflows) programmatically.
 
