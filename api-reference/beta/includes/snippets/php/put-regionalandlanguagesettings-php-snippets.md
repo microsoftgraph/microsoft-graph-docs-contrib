@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new RegionalAndLanguageSettingsPostRequestBody();
+$requestBody = new RegionalAndLanguageSettingsPutRequestBody();
 $additionalData = [
 'defaultDisplayLanguage' => $requestBody = new DefaultDisplayLanguage();
 $		requestBody->setLocale('en-US');

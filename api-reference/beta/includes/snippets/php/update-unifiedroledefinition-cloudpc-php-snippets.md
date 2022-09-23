@@ -15,11 +15,7 @@ $requestBody->setDescription('Update basic properties and permission of applicat
 $requestBody->setDisplayName('ExampleCustomRole');
 
 $rolePermissionsUnifiedRolePermission1 = new UnifiedRolePermission();
-$additionalData = [
-'allowedResourceActions' => ['Microsoft.CloudPC/CloudPCs/Read', 'Microsoft.CloudPC/CloudPCs/Reprovision', ],
-];
-$rolePermissionsUnifiedRolePermission1->setAdditionalData($additionalData);
-
+$rolePermissionsUnifiedRolePermission1->setAllowedResourceActions(['Microsoft.CloudPC/CloudPCs/Read', 'Microsoft.CloudPC/CloudPCs/Reprovision', ]);
 
 
 $rolePermissionsArray []= $rolePermissionsUnifiedRolePermission1;

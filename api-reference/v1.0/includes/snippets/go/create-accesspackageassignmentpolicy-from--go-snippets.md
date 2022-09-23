@@ -56,7 +56,7 @@ stages := []graphmodels.AccessPackageApprovalStageable {
 }
 requestApprovalSettings.SetStages(stages)
 requestBody.SetRequestApprovalSettings(requestApprovalSettings)
-accessPackage := graphmodels.NewaccessPackage()
+accessPackage := graphmodels.NewAccessPackage()
 id := "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"
 accessPackage.SetId(&id) 
 requestBody.SetAccessPackage(accessPackage)

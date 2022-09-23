@@ -15,7 +15,8 @@ $requestBody->setDisplayName('Block access to EXO non-trusted regions.');
 $requestBody->setState(new ConditionalAccessPolicyState('enabled'));
 
 $conditions = new ConditionalAccessConditionSet();
-$conditions->setClientAppTypes(['all', ]);
+$conditions->setClientAppTypes([$conditions->setConditionalAccessClientApp(new ConditionalAccessClientApp('all'));
+]);
 
 $conditionsApplications = new ConditionalAccessApplications();
 $conditionsApplications->setIncludeApplications(['00000002-0000-0ff1-ce00-000000000000', ]);
@@ -37,7 +38,8 @@ $requestBody->setConditions($conditions);
 $grantControls = new ConditionalAccessGrantControls();
 $grantControls->setOperator('OR');
 
-$grantControls->setBuiltInControls(['block', ]);
+$grantControls->setBuiltInControls([$grantControls->setConditionalAccessGrantControl(new ConditionalAccessGrantControl('block'));
+]);
 
 
 $requestBody->setGrantControls($grantControls);

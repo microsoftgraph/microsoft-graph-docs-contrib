@@ -18,7 +18,7 @@ importance := graphmodels.NORMAL_CHATMESSAGEIMPORTANCE
 requestBody.SetImportance(&importance) 
 locale := "en-us"
 requestBody.SetLocale(&locale) 
-from := graphmodels.Newfrom()
+from := graphmodels.NewChatMessageFromIdentitySet()
 application := null
 from.SetApplication(&application) 
 device := null

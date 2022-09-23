@@ -14,7 +14,7 @@ requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType) 
 justification := ""
 requestBody.SetJustification(&justification) 
-accessPackageResource := graphmodels.NewaccessPackageResource()
+accessPackageResource := graphmodels.NewAccessPackageResource()
 displayName := "Sales"
 accessPackageResource.SetDisplayName(&displayName) 
 description := "https://contoso.sharepoint.com/sites/Sales"
