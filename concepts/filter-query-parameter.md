@@ -35,7 +35,7 @@ OData defines the `any` and `all` operators to evaluate matches on multi-valued 
 
 ### `any` operator
 
-The `any` operator iteratively applies a Boolean expression to each itesm of a collection and returns `true` if the expression is `true` for *at least one item* of the collection, otherwise it returns `false`.  
+The `any` operator iteratively applies a Boolean expression to each item of a collection and returns `true` if the expression is `true` for *at least one item* of the collection, otherwise it returns `false`.  
 The following is the syntax of the `any` operator:
 
 ```http
