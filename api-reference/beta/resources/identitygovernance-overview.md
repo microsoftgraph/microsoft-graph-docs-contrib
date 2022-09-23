@@ -17,6 +17,7 @@ The principals (or identities) whose access you can govern include users, groups
 
 You manage Azure AD Identity Governance capabilities programmatically by using the following identity governance APIs in Microsoft Graph.
 
++ [Lifecycle Workflows](#manage-the-lifecycle-of-users-in-your-organization)
 + [Access reviews](#attest-to-the-access-that-principals-have-to-resources)
 + [Entitlement management](#automate-user-access-to-resources)
 + [Privileged identity management](#manage-access-to-privileged-roles)
@@ -26,9 +27,9 @@ For more information about Azure AD Identity Governance, see [What is Azure AD I
 
 ## Manage the lifecycle of users in your organization
 
-{placeholder}
+Organizations have processes that are carried out during at least three stages of an employee's life cycle - when they join the organization, when they move within the organization, and when they leave the organization. Such processes may include provisioning and deprovisioning access and resources where required.
 
-The [lifecycle workflows APIs](/graph/api/resources/identitygovernance-lifecycleworkflows-overview) in Microsoft Graph allow you to automate the basic lifecycle processes for users in your organization.
+The [lifecycle workflows APIs](/graph/api/resources/identitygovernance-lifecycleworkflows-overview) in Microsoft Graph allow you to efficiently and effectively manage the basic lifecycle processes for users in your organization.
 
 ## Automate user access to resources
 
