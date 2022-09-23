@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCloudPcOnPremisesConnection()
-"@odata.type" := "#microsoft.graph.cloudPcOnPremisesConnection"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "Display Name value"
 requestBody.SetDisplayName(&displayName) 
 subscriptionId := "0ac520ee-14c0-480f-b6c9-0a90c585ffff"
@@ -29,7 +27,7 @@ requestBody.SetVirtualNetworkId(&virtualNetworkId)
 subnetId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"
 requestBody.SetSubnetId(&subnetId) 
 
-graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById("cloudPcOnPremisesConnection-id").Patch(requestBody)
+graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById("cloudPcOnPremisesConnection-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

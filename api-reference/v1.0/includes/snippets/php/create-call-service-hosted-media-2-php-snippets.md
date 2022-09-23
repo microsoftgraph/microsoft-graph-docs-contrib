@@ -21,7 +21,7 @@ $sourceIdentity = new IdentitySet();
 $sourceIdentity->set@odatatype('#microsoft.graph.identitySet');
 
 $additionalData = [
-'applicationInstance' => $sourceIdentity = new ();
+'applicationInstance' => $sourceIdentity = new ApplicationInstance();
 $		sourceIdentity->set@odatatype('#microsoft.graph.identity');
 
 $		sourceIdentity->setDisplayName('Calling Bot');
@@ -54,7 +54,7 @@ $targetsInvitationParticipantInfo1Identity = new IdentitySet();
 $targetsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
 
 $additionalData = [
-'phone' => $targetsInvitationParticipantInfo1Identity = new ();
+'phone' => $targetsInvitationParticipantInfo1Identity = new Phone();
 $		targetsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identity');
 
 $		targetsInvitationParticipantInfo1Identity->setId('+12345678901');
@@ -73,7 +73,8 @@ $targetsArray []= $targetsInvitationParticipantInfo1;
 $requestBody->setTargets($targetsArray);
 
 
-$requestBody->setRequestedModalities(['audio', ]);
+$requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
+]);
 
 $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');

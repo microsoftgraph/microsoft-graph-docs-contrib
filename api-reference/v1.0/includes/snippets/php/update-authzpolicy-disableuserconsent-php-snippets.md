@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new AuthorizationPolicy();
 $defaultUserRolePermissions = new DefaultUserRolePermissions();
-$defaultUserRolePermissions->setPermissionGrantPoliciesAssigned(]);
+$defaultUserRolePermissions->setPermissionGrantPoliciesAssigned([]);
 
 
 $requestBody->setDefaultUserRolePermissions($defaultUserRolePermissions);

@@ -11,11 +11,16 @@ requestBody := graphmodels.NewAccessReviewHistoryDefinition()
 displayName := "Last quarter's group reviews April 2021"
 requestBody.SetDisplayName(&displayName) 
 decisions := []graphmodels.AccessReviewHistoryDecisionFilterable {
-	"approve",
-	"deny",
-	"dontKnow",
-	"notReviewed",
-	"notNotified",
+	accessReviewHistoryDecisionFilter := graphmodels.APPROVE_ACCESSREVIEWHISTORYDECISIONFILTER 
+	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
+	accessReviewHistoryDecisionFilter := graphmodels.DENY_ACCESSREVIEWHISTORYDECISIONFILTER 
+	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
+	accessReviewHistoryDecisionFilter := graphmodels.DONTKNOW_ACCESSREVIEWHISTORYDECISIONFILTER 
+	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
+	accessReviewHistoryDecisionFilter := graphmodels.NOTREVIEWED_ACCESSREVIEWHISTORYDECISIONFILTER 
+	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
+	accessReviewHistoryDecisionFilter := graphmodels.NOTNOTIFIED_ACCESSREVIEWHISTORYDECISIONFILTER 
+	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
 
 }
 requestBody.SetDecisions(decisions)
@@ -45,7 +50,6 @@ requestBody.SetScheduleSettings(scheduleSettings)
 
 accessReviewScope := graphmodels.NewAccessReviewScope()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.accessReviewQueryScope", 
 	"queryType" : "MicrosoftGraph", 
 	"query" : "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')", 
 	queryRoot := null
@@ -54,7 +58,6 @@ accessReviewScope.SetQueryRoot(&queryRoot)
 accessReviewScope.SetAdditionalData(additionalData)
 accessReviewScope1 := graphmodels.NewAccessReviewScope()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.accessReviewQueryScope", 
 	"queryType" : "MicrosoftGraph", 
 	"query" : "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')", 
 	queryRoot := null
@@ -69,7 +72,7 @@ scopes := []graphmodels.AccessReviewScopeable {
 }
 requestBody.SetScopes(scopes)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -18,13 +18,11 @@ post.SetBody(body)
 
 
 extension := graphmodels.NewExtension()
-"@odata.type" := "microsoft.graph.openTypeExtension"
-extension.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"extensionName" : "Com.Contoso.HR", 
 	"companyName" : "Contoso", 
 	"expirationDate" : "2015-07-03T13:04:00.000Z", 
-	topPicks := []String {
+	topPicks := []string {
 		"Employees only",
 		"Add spouse or guest",
 		"Add family",
@@ -40,7 +38,7 @@ extensions := []graphmodels.Extensionable {
 post.SetExtensions(extensions)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply(group-id, conversationThread-id, post-id).Post(requestBody)
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

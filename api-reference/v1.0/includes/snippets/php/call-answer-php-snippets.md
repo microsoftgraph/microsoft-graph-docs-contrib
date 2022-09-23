@@ -23,9 +23,10 @@ $mediaConfig->setAdditionalData($additionalData);
 
 
 $requestBody->setMediaConfig($mediaConfig);
-$requestBody->setAcceptedModalities(['audio', ]);
+$requestBody->setAcceptedModalities([$requestBody->setModality(new Modality('audio'));
+]);
 
-$requestBody->setParticipantCapacity(participantCapacity);
+$requestBody->setParticipantCapacity(200);
 
 
 

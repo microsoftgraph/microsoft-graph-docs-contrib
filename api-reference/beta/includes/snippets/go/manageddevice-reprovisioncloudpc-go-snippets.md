@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.DeviceManagement().ManagedDevicesById("managedDevice-id").ReprovisionCloudPc(managedDevice-id).Post()
+graphClient.DeviceManagement().ManagedDevicesById("managedDevice-id").ReprovisionCloudPc().Post(context.Background(), nil)
 
 
 ```

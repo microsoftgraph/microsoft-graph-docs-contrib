@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewBookingStaffMember()
-"@odata.type" := "#microsoft.graph.bookingStaffMember"
-requestBody.Set"@odata.type"(&"@odata.type") 
 colorIndex := int32(1)
 requestBody.SetColorIndex(&colorIndex) 
 displayName := "Dana Swope"
@@ -25,15 +23,11 @@ requestBody.SetUseBusinessHours(&useBusinessHours)
 
 
 bookingWorkHours := graphmodels.NewBookingWorkHours()
-"@odata.type" := "#microsoft.graph.bookingWorkHours"
-bookingWorkHours.Set"@odata.type"(&"@odata.type") 
 day := graphmodels.MONDAY_DAYOFWEEK 
 bookingWorkHours.SetDay(&day) 
 
 
 bookingWorkTimeSlot := graphmodels.NewBookingWorkTimeSlot()
-"@odata.type" := "#microsoft.graph.bookingWorkTimeSlot"
-bookingWorkTimeSlot.Set"@odata.type"(&"@odata.type") 
 end := "17:00:00.0000000"
 bookingWorkTimeSlot.SetEnd(&end) 
 start := "08:00:00.0000000"
@@ -50,15 +44,11 @@ additionalData := map[string]interface{}{
 }
 bookingWorkHours.SetAdditionalData(additionalData)
 bookingWorkHours1 := graphmodels.NewBookingWorkHours()
-"@odata.type" := "#microsoft.graph.bookingWorkHours"
-bookingWorkHours1.Set"@odata.type"(&"@odata.type") 
 day := graphmodels.TUESDAY_DAYOFWEEK 
 bookingWorkHours1.SetDay(&day) 
 
 
 bookingWorkTimeSlot := graphmodels.NewBookingWorkTimeSlot()
-"@odata.type" := "#microsoft.graph.bookingWorkTimeSlot"
-bookingWorkTimeSlot.Set"@odata.type"(&"@odata.type") 
 end := "17:00:00.0000000"
 bookingWorkTimeSlot.SetEnd(&end) 
 start := "08:00:00.0000000"
@@ -75,15 +65,11 @@ additionalData := map[string]interface{}{
 }
 bookingWorkHours1.SetAdditionalData(additionalData)
 bookingWorkHours2 := graphmodels.NewBookingWorkHours()
-"@odata.type" := "#microsoft.graph.bookingWorkHours"
-bookingWorkHours2.Set"@odata.type"(&"@odata.type") 
 day := graphmodels.WEDNESDAY_DAYOFWEEK 
 bookingWorkHours2.SetDay(&day) 
 
 
 bookingWorkTimeSlot := graphmodels.NewBookingWorkTimeSlot()
-"@odata.type" := "#microsoft.graph.bookingWorkTimeSlot"
-bookingWorkTimeSlot.Set"@odata.type"(&"@odata.type") 
 end := "17:00:00.0000000"
 bookingWorkTimeSlot.SetEnd(&end) 
 start := "08:00:00.0000000"
@@ -100,15 +86,11 @@ additionalData := map[string]interface{}{
 }
 bookingWorkHours2.SetAdditionalData(additionalData)
 bookingWorkHours3 := graphmodels.NewBookingWorkHours()
-"@odata.type" := "#microsoft.graph.bookingWorkHours"
-bookingWorkHours3.Set"@odata.type"(&"@odata.type") 
 day := graphmodels.THURSDAY_DAYOFWEEK 
 bookingWorkHours3.SetDay(&day) 
 
 
 bookingWorkTimeSlot := graphmodels.NewBookingWorkTimeSlot()
-"@odata.type" := "#microsoft.graph.bookingWorkTimeSlot"
-bookingWorkTimeSlot.Set"@odata.type"(&"@odata.type") 
 end := "17:00:00.0000000"
 bookingWorkTimeSlot.SetEnd(&end) 
 start := "08:00:00.0000000"
@@ -125,15 +107,11 @@ additionalData := map[string]interface{}{
 }
 bookingWorkHours3.SetAdditionalData(additionalData)
 bookingWorkHours4 := graphmodels.NewBookingWorkHours()
-"@odata.type" := "#microsoft.graph.bookingWorkHours"
-bookingWorkHours4.Set"@odata.type"(&"@odata.type") 
 day := graphmodels.FRIDAY_DAYOFWEEK 
 bookingWorkHours4.SetDay(&day) 
 
 
 bookingWorkTimeSlot := graphmodels.NewBookingWorkTimeSlot()
-"@odata.type" := "#microsoft.graph.bookingWorkTimeSlot"
-bookingWorkTimeSlot.Set"@odata.type"(&"@odata.type") 
 end := "17:00:00.0000000"
 bookingWorkTimeSlot.SetEnd(&end) 
 start := "08:00:00.0000000"
@@ -167,7 +145,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.BookingBusinessesById("bookingBusiness-id").StaffMembers().Post(requestBody)
+result, err := graphClient.BookingBusinessesById("bookingBusiness-id").StaffMembers().Post(context.Background(), requestBody, nil)
 
 
 ```

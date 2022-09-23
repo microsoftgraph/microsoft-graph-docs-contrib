@@ -38,15 +38,12 @@ post.SetConversationThreadId(&conversationThreadId)
 
 
 recipient := graphmodels.NewRecipient()
-additionalData := map[string]interface{}{
-emailAddress := graphmodels.New()
+emailAddress := graphmodels.NewEmailAddress()
 name := "name-value"
 emailAddress.SetName(&name) 
 address := "address-value"
 emailAddress.SetAddress(&address) 
-	recipient.SetEmailAddress(emailAddress)
-}
-recipient.SetAdditionalData(additionalData)
+recipient.SetEmailAddress(emailAddress)
 
 newParticipants := []graphmodels.Recipientable {
 	recipient,
@@ -61,20 +58,18 @@ lastModifiedDateTime , err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
 post.SetLastModifiedDateTime(&lastModifiedDateTime) 
 changeKey := "changeKey-value"
 post.SetChangeKey(&changeKey) 
-categories := []String {
+categories := []string {
 	"categories-value",
 
 }
 post.SetCategories(categories)
 id := "id-value"
 post.SetId(&id) 
-inReplyTo := graphmodels.NewinReplyTo()
+inReplyTo := graphmodels.NewPost()
 post.SetInReplyTo(inReplyTo)
 
 
 attachment := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.fileAttachment"
-attachment.Set"@odata.type"(&"@odata.type") 
 lastModifiedDateTime , err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
 attachment.SetLastModifiedDateTime(&lastModifiedDateTime) 
 name := "name-value"
@@ -95,7 +90,7 @@ attachments := []graphmodels.Attachmentable {
 post.SetAttachments(attachments)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply(group-id, conversationThread-id, post-id).Post(requestBody)
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

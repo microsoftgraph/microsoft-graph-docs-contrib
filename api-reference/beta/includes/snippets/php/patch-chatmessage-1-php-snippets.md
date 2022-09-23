@@ -20,7 +20,7 @@ $requestBody->setImportance(new ChatMessageImportance('normal'));
 
 $requestBody->setLocale('en-us');
 
-$from = new From();
+$from = new ChatMessageFromIdentitySet();
 $From->setApplication(null);
 
 $From->setDevice(null);
@@ -53,11 +53,11 @@ $body->setContent('Edit text only');
 
 
 $requestBody->setBody($body);
-$requestBody->setAttachments(]);
+$requestBody->setAttachments([]);
 
-$requestBody->setMentions(]);
+$requestBody->setMentions([]);
 
-$requestBody->setReactions(]);
+$requestBody->setReactions([]);
 
 
 

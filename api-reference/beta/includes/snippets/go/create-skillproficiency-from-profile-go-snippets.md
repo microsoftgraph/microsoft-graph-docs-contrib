@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewSkillProficiency()
-categories := []String {
+categories := []string {
 	"Professional",
 
 }
@@ -19,13 +19,13 @@ displayName := "API Design"
 requestBody.SetDisplayName(&displayName) 
 proficiency := graphmodels.GENERALPROFESSIONAL_SKILLPROFICIENCYLEVEL 
 requestBody.SetProficiency(&proficiency) 
-collaborationTags := []String {
+collaborationTags := []string {
 	"ableToMentor",
 
 }
 requestBody.SetCollaborationTags(collaborationTags)
 
-result, err := graphClient.Me().Profile().Skills().Post(requestBody)
+result, err := graphClient.Me().Profile().Skills().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -18,12 +18,12 @@ $body->setContent('<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></
 
 $requestBody->setBody($body);
 $mentionsChatMessageMention1 = new ChatMessageMention();
-$mentionsChatMessageMention1->setId(id);
+$mentionsChatMessageMention1->setId(0);
 
 $mentionsChatMessageMention1->setMentionText('General');
 
-$mentionsChatMessageMention1Mentioned = new Mentioned();
-$mentionsChatMessageMention1MentionedConversation = new Conversation();
+$mentionsChatMessageMention1Mentioned = new ChatMessageMentionedIdentitySet();
+$mentionsChatMessageMention1MentionedConversation = new TeamworkConversationIdentity();
 $mentionsChatMessageMention1MentionedConversation->setId('19:0b50940236084d258c97b21bd01917b0@thread.skype');
 
 $mentionsChatMessageMention1MentionedConversation->setDisplayName('General');

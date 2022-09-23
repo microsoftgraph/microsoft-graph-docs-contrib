@@ -17,11 +17,12 @@ $propertiesProperty1->setName('ticketTitle');
 
 $propertiesProperty1->setType(new PropertyType('string'));
 
-$propertiesProperty1->setIsSearchable('true');
+$propertiesProperty1->setIsSearchable(true);
 
-$propertiesProperty1->setIsRetrievable('true');
+$propertiesProperty1->setIsRetrievable(true);
 
-$propertiesProperty1->setLabels(['title', ]);
+$propertiesProperty1->setLabels([$propertiesProperty1->setLabel(new Label('title'));
+]);
 
 
 $propertiesArray []= $propertiesProperty1;
@@ -30,11 +31,11 @@ $propertiesProperty2->setName('priority');
 
 $propertiesProperty2->setType(new PropertyType('string'));
 
-$propertiesProperty2->setIsQueryable('true');
+$propertiesProperty2->setIsQueryable(true);
 
-$propertiesProperty2->setIsRetrievable('true');
+$propertiesProperty2->setIsRetrievable(true);
 
-$propertiesProperty2->setIsSearchable('false');
+$propertiesProperty2->setIsSearchable(false);
 
 
 $propertiesArray []= $propertiesProperty2;
@@ -43,7 +44,7 @@ $propertiesProperty3->setName('assignee');
 
 $propertiesProperty3->setType(new PropertyType('string'));
 
-$propertiesProperty3->setIsRetrievable('true');
+$propertiesProperty3->setIsRetrievable(true);
 
 
 $propertiesArray []= $propertiesProperty3;

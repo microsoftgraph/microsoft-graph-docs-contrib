@@ -13,7 +13,7 @@ requestBody.SetDescription(&description)
 displayName := "World History Level 1"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.Education().ClassesById("educationClass-id").Patch(requestBody)
+graphClient.Education().ClassesById("educationClass-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

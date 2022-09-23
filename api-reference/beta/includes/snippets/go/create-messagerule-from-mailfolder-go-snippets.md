@@ -15,7 +15,7 @@ requestBody.SetSequence(&sequence)
 isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
 conditions := graphmodels.NewMessageRulePredicates()
-senderContains := []String {
+senderContains := []string {
 	"adele",
 
 }
@@ -41,7 +41,7 @@ stopProcessingRules := true
 actions.SetStopProcessingRules(&stopProcessingRules) 
 requestBody.SetActions(actions)
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").MessageRules().Post(requestBody)
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").MessageRules().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -55,7 +55,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_plannerassignedtotaskboardtaskformat"
+  "name": "update_plannerassignedtotaskboardtaskformat",
+  "sampleKeys": ["01gzSlKkIUSUl6DF_EilrmQAKDhh"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat

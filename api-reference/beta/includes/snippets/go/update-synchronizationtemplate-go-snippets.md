@@ -21,7 +21,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ApplicationsById("application-id").Synchronization().TemplatesById("synchronizationTemplate-id").PutWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+graphClient.ApplicationsById("application-id").Synchronization().TemplatesById("synchronizationTemplate-id").Put(context.Background(), requestBody, configuration)
 
 
 ```

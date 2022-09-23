@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewTranslateExchangeIdsPostRequestBody()
-inputIds := []String {
+inputIds := []string {
 	"{rest-formatted-id-1}",
 	"{rest-formatted-id-2}",
 
@@ -19,7 +19,7 @@ requestBody.SetSourceIdType(&sourceIdType)
 targetIdType := graphmodels.RESTIMMUTABLEENTRYID_EXCHANGEIDFORMAT 
 requestBody.SetTargetIdType(&targetIdType) 
 
-result, err := graphClient.Me().TranslateExchangeIds().Post(requestBody)
+result, err := graphClient.Me().TranslateExchangeIds().Post(context.Background(), requestBody, nil)
 
 
 ```

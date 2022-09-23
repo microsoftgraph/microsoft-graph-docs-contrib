@@ -14,9 +14,9 @@ $requestBody->setUse('use-value');
 
 $requestBody->setK('application-secret-to-be-uploaded');
 
-$requestBody->setNbf(nbf);
+$requestBody->setNbf(1508969811);
 
-$requestBody->setExp(exp);
+$requestBody->setExp(1508973711);
 
 
 

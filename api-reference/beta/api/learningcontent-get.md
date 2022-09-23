@@ -52,6 +52,7 @@ If successful, this method returns a `200 OK` response code and a [learningConte
 
 ### Request
 The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_learningcontent"
@@ -60,6 +61,7 @@ The following is an example of a request.
 ``` http 
 GET /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='LP4471') 
 ```
+
 
 ### Response
 The following is an example of the response.
@@ -79,7 +81,7 @@ Content-type: application/json
     "externalId": "LP4471",
     "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
     "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
-    "contentWebUrl": "https://docs.microsoft.com/en-us/learn/modules/manage-classes-resources-assessment-planning-beedle/",
+    "contentWebUrl": "https://learn.microsoft.com/learn/modules/manage-classes-resources-assessment-planning-beedle/",
     "sourceName": "MSLibrary",
     "thumbnailWebUrl": "https://syndetics.com/index.aspx?isbn=9783319672175/LC.GIF",
     "languageTag": "en-us",
@@ -103,4 +105,3 @@ Content-type: application/json
     "isSearchable": true
 }
 ```
-

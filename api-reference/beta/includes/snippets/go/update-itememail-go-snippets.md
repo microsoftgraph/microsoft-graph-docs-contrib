@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 type := graphmodels.WORK_EMAILTYPE 
 requestBody.SetType(&type) 
 
-graphClient.UsersById("user-id").Profile().EmailsById("itemEmail-id").Patch(requestBody)
+graphClient.UsersById("user-id").Profile().EmailsById("itemEmail-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

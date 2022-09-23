@@ -104,7 +104,7 @@ $labelingOptions->setLabelId('97309856-9c28-4ac6-9382-5f8bc20c457b');
 
 $LabelingOptions->setDowngradeJustification(null);
 
-$labelingOptions->setExtendedProperties(]);
+$labelingOptions->setExtendedProperties([]);
 
 $additionalData = [
 'assignmentMethod@odata.type' => '#microsoft.graph.assignmentMethod', 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-DirectoryObjectCollectionWithReferencesPage transitiveMemberOf = graphClient.servicePrincipals("{id}").transitiveMemberOf()
+DirectoryObjectCollectionWithReferencesPage transitiveMemberOf = graphClient.servicePrincipals("00063ffc-54e9-405d-b8f3-56124728e051").transitiveMemberOf()
 	.buildRequest()
 	.get();
 

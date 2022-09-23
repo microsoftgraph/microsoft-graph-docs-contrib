@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewDismissPostRequestBody()
-servicePrincipalIds := []String {
+servicePrincipalIds := []string {
 	"9089a539-a539-9089-39a5-899039a58990",
 
 }
 requestBody.SetServicePrincipalIds(servicePrincipalIds)
 
-graphClient.IdentityProtection().RiskyServicePrincipals().Dismiss().Post(requestBody)
+graphClient.IdentityProtection().RiskyServicePrincipals().Dismiss().Post(context.Background(), requestBody, nil)
 
 
 ```

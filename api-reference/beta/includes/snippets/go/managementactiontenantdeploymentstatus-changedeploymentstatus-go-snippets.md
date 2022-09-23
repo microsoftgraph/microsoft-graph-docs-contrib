@@ -19,7 +19,7 @@ requestBody.SetManagementTemplateId(&managementTemplateId)
 status := "String"
 requestBody.SetStatus(&status) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().ChangeDeploymentStatus().Post(requestBody)
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().ChangeDeploymentStatus().Post(context.Background(), requestBody, nil)
 
 
 ```

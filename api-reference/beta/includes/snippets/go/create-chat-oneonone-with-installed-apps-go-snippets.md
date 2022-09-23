@@ -13,9 +13,7 @@ requestBody.SetChatType(&chatType)
 
 
 conversationMember := graphmodels.NewConversationMember()
-"@odata.type" := "#microsoft.graph.aadUserConversationMember"
-conversationMember.Set"@odata.type"(&"@odata.type") 
-roles := []String {
+roles := []string {
 	"owner",
 
 }
@@ -25,9 +23,7 @@ additionalData := map[string]interface{}{
 }
 conversationMember.SetAdditionalData(additionalData)
 conversationMember1 := graphmodels.NewConversationMember()
-"@odata.type" := "#microsoft.graph.aadUserConversationMember"
-conversationMember1.Set"@odata.type"(&"@odata.type") 
-roles := []String {
+roles := []string {
 	"owner",
 
 }
@@ -57,7 +53,7 @@ installedApps := []graphmodels.TeamsAppInstallationable {
 }
 requestBody.SetInstalledApps(installedApps)
 
-result, err := graphClient.Chats().Post(requestBody)
+result, err := graphClient.Chats().Post(context.Background(), requestBody, nil)
 
 
 ```

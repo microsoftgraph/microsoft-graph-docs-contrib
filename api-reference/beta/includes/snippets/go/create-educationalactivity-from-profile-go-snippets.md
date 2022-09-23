@@ -59,7 +59,7 @@ requestBody.SetProgram(program)
 startMonthYear := "Date"
 requestBody.SetStartMonthYear(&startMonthYear) 
 
-result, err := graphClient.Me().Profile().EducationalActivities().Post(requestBody)
+result, err := graphClient.Me().Profile().EducationalActivities().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -36,7 +36,7 @@ $tabsTeamsTab1 = new TeamsTab();
 $tabsTeamsTab1->setDisplayName('A Pinned Website');
 
 $tabsTeamsTab1Configuration = new TeamsTabConfiguration();
-$tabsTeamsTab1Configuration->setContentUrl('https://docs.microsoft.com/microsoftteams/microsoft-teams');
+$tabsTeamsTab1Configuration->setContentUrl('https://learn.microsoft.com/microsoftteams/microsoft-teams');
 
 
 $tabsTeamsTab1->setConfiguration($tabsTeamsTab1Configuration);
@@ -157,7 +157,7 @@ $requestBody->setInstalledApps($installedAppsArray);
 
 $additionalData = [
 'template@odata.bind' => 'https://graph.microsoft.com/v1.0/teamsTemplates(\'standard\')', 
-'discoverySettings' => $requestBody = new ();
+'discoverySettings' => $requestBody = new DiscoverySettings();
 $requestBody->setShowInTeamsSearchAndSuggestions(true);
 
 

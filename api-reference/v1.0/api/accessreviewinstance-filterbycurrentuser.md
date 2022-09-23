@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstance: filterByCurrentUser"
 description: "Retrieve all accessReviewInstance objects for a given reviewer."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

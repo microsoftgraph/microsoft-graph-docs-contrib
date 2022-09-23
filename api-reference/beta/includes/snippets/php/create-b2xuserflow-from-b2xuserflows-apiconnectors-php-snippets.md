@@ -14,10 +14,10 @@ $requestBody->setId('UserFlowWithAPIConnector');
 
 $requestBody->setUserFlowType(new UserFlowType('signuporsignin'));
 
-$requestBody->setUserFlowTypeVersion(userFlowTypeVersion);
+$requestBody->setUserFlowTypeVersion(1);
 
 $apiConnectorConfiguration = new UserFlowApiConnectorConfiguration();
-$apiConnectorConfigurationPostFederationSignup = new PostFederationSignup();
+$apiConnectorConfigurationPostFederationSignup = new IdentityApiConnector();
 $additionalData = [
 '@odata.id' => '{apiConnectorId}', 
 ];
@@ -26,7 +26,7 @@ $apiConnectorConfigurationPostFederationSignup->setAdditionalData($additionalDat
 
 
 $apiConnectorConfiguration->setPostFederationSignup($apiConnectorConfigurationPostFederationSignup);
-$apiConnectorConfigurationPostAttributeCollection = new PostAttributeCollection();
+$apiConnectorConfigurationPostAttributeCollection = new IdentityApiConnector();
 $additionalData = [
 '@odata.id' => '{apiConnectorId}', 
 ];

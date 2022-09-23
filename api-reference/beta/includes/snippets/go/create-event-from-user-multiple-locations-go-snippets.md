@@ -36,32 +36,28 @@ end.SetTimeZone(&timeZone)
 requestBody.SetEnd(end)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-emailAddress := graphmodels.New()
+attendee := graphmodels.NewAttendee()
+emailAddress := graphmodels.NewEmailAddress()
 address := "DanaS@contoso.onmicrosoft.com"
 emailAddress.SetAddress(&address) 
 name := "Dana Swope"
 emailAddress.SetName(&name) 
-	.SetEmailAddress(emailAddress)
-	"type" : "Required", 
-}
-.SetAdditionalData(additionalData)
- := graphmodels.New()
-additionalData := map[string]interface{}{
-emailAddress := graphmodels.New()
+attendee.SetEmailAddress(emailAddress)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendee.SetType(&type) 
+attendee1 := graphmodels.NewAttendee()
+emailAddress := graphmodels.NewEmailAddress()
 address := "AlexW@contoso.onmicrosoft.com"
 emailAddress.SetAddress(&address) 
 name := "Alex Wilber"
 emailAddress.SetName(&name) 
-	.SetEmailAddress(emailAddress)
-	"type" : "Required", 
-}
-.SetAdditionalData(additionalData)
+attendee1.SetEmailAddress(emailAddress)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendee1.SetType(&type) 
 
 attendees := []graphmodels.Objectable {
-	,
-	,
+	attendee,
+	attendee1,
 
 }
 requestBody.SetAttendees(attendees)
@@ -111,7 +107,7 @@ requestBody.SetLocations(locations)
 allowNewTimeProposals := true
 requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals) 
 
-result, err := graphClient.Me().Events().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 
 ```

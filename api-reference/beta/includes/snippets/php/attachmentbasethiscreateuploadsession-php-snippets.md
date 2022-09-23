@@ -11,13 +11,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CreateUploadSessionPostRequestBody();
 $attachmentInfo = new AttachmentInfo();
-$attachmentInfo->set@odatatype('microsoft.graph.attachmentInfo');
-
 $attachmentInfo->setAttachmentType(new AttachmentType('file'));
 
 $attachmentInfo->setName('flower');
 
-$attachmentInfo->setSize(size);
+$attachmentInfo->setSize(3483322);
 
 
 $requestBody->setAttachmentInfo($attachmentInfo);

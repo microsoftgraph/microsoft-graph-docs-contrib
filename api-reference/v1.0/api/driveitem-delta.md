@@ -159,7 +159,7 @@ Here is an example request after the initial request.
 <!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
+GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='MzslMjM0OyUyMzE7MzsyM2YwNDVhMS1lNmRmLTQ1N2MtOGQ5NS1hNmViZDVmZWRhNWQ7NjM3OTQzNzQwODQ3NTcwMDAwOzU4NTk2OTY0NDslMjM7JTIzOyUyMzA')
 ```
 
 # [C#](#tab/csharp)
@@ -201,7 +201,7 @@ Content-type: application/json
             "file": { }
         }
     ],
-    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?(token='1230919asd190410jlka')"
+    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?(token='MzslMjM0OyUyMzE7MzsyM2YwNDVhMS1lNmRmLTQ1N2MtOGQ5NS1hNmViZDVmZWRhNWQ7NjM3OTQzNzQwODQ3NTcwMDAwOzU4NTk2OTY0NDslMjM7JTIzOyUyMzA')"
 }
 ```
 

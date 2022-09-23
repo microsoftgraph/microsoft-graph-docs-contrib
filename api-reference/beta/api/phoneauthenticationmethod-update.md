@@ -49,8 +49,8 @@ For delegated scenarios where an admin is acting on another user, the admin need
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /me/authentication/phoneMethods/{id}
-PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
+PATCH /me/authentication/phoneMethods/{id}
+PATCH /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
 The value of `id` corresponding to the phoneType to update is one of the following:
 + `b6332ec1-7057-4abe-9331-3d72feddfe41` to update the `alternateMobile` **phoneType**.
@@ -90,7 +90,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7
+PATCH https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7
 Content-type: application/json
 
 {
@@ -113,6 +113,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-phoneauthenticationmethod-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-phoneauthenticationmethod-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

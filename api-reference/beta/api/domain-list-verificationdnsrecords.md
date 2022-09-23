@@ -64,7 +64,8 @@ If successful, this method returns a `200 OK` response code and collection of [d
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_verificationdnsrecords"
+  "name": "get_verificationdnsrecords",
+  "sampleKeys": ["contoso.com"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords

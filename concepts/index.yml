@@ -106,9 +106,9 @@ additionalContent:
         - title: Learning paths and tutorials
           links:
             - text: Microsoft Graph fundamentals
-              url: /learn/paths/m365-msgraph-fundamentals/
+              url: /training/paths/m365-msgraph-fundamentals/
             - text: Microsoft learning paths
-              url: /learn/browse/?products=ms-graph&resource_type=learning%20path
+              url: /training/browse/?products=ms-graph&resource_type=learning%20path
             - text: Tutorials
               url: /graph/tutorials
         # Card

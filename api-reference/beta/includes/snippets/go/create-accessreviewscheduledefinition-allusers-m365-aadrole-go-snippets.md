@@ -13,14 +13,10 @@ requestBody.SetDisplayName(&displayName)
 descriptionForAdmins := "Review employee access to LinkedIn"
 requestBody.SetDescriptionForAdmins(&descriptionForAdmins) 
 scope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.principalResourceMembershipsScope"
-scope.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 
 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-.Set"@odata.type"(&"@odata.type") 
 query := "/users"
 .SetQuery(&query) 
 queryType := "MicrosoftGraph"
@@ -33,8 +29,6 @@ queryType := "MicrosoftGraph"
 
 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-.Set"@odata.type"(&"@odata.type") 
 query := "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae"
 .SetQuery(&query) 
 queryType := "MicrosoftGraph"
@@ -49,44 +43,42 @@ scope.SetAdditionalData(additionalData)
 requestBody.SetScope(scope)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"query" : "./manager", 
-	"queryType" : "MicrosoftGraph", 
-	"queryRoot" : "decisions", 
-}
-.SetAdditionalData(additionalData)
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "./manager"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
+queryRoot := "decisions"
+accessReviewReviewerScope.SetQueryRoot(&queryRoot) 
 
 reviewers := []graphmodels.Objectable {
-	,
+	accessReviewReviewerScope,
 
 }
 requestBody.SetReviewers(reviewers)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"query" : "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers", 
-	"queryType" : "MicrosoftGraph", 
-}
-.SetAdditionalData(additionalData)
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
 
 backupReviewers := []graphmodels.Objectable {
-	,
+	accessReviewReviewerScope,
 
 }
 requestBody.SetBackupReviewers(backupReviewers)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"query" : "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers", 
-	"queryType" : "MicrosoftGraph", 
-}
-.SetAdditionalData(additionalData)
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
 
 fallbackReviewers := []graphmodels.Objectable {
-	,
+	accessReviewReviewerScope,
 
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)
@@ -127,7 +119,7 @@ recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

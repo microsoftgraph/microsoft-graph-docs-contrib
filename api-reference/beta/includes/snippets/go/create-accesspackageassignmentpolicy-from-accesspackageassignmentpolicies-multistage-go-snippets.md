@@ -53,8 +53,6 @@ approvalStage.SetEscalationTimeInMinutes(&escalationTimeInMinutes)
 
 
 userSet := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.groupMembers"
-userSet.Set"@odata.type"(&"@odata.type") 
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
 additionalData := map[string]interface{}{
@@ -63,8 +61,6 @@ additionalData := map[string]interface{}{
 }
 userSet.SetAdditionalData(additionalData)
 userSet1 := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.externalSponsors"
-userSet1.Set"@odata.type"(&"@odata.type") 
 isBackup := false
 userSet1.SetIsBackup(&isBackup) 
 
@@ -77,8 +73,6 @@ approvalStage.SetPrimaryApprovers(primaryApprovers)
 
 
 userSet := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.singleUser"
-userSet.Set"@odata.type"(&"@odata.type") 
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
 additionalData := map[string]interface{}{
@@ -104,8 +98,6 @@ approvalStage1.SetEscalationTimeInMinutes(&escalationTimeInMinutes)
 
 
 userSet := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.groupMembers"
-userSet.Set"@odata.type"(&"@odata.type") 
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
 additionalData := map[string]interface{}{
@@ -114,8 +106,6 @@ additionalData := map[string]interface{}{
 }
 userSet.SetAdditionalData(additionalData)
 userSet1 := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.internalSponsors"
-userSet1.Set"@odata.type"(&"@odata.type") 
 isBackup := false
 userSet1.SetIsBackup(&isBackup) 
 
@@ -128,8 +118,6 @@ approvalStage1.SetPrimaryApprovers(primaryApprovers)
 
 
 userSet := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.singleUser"
-userSet.Set"@odata.type"(&"@odata.type") 
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
 additionalData := map[string]interface{}{
@@ -168,7 +156,7 @@ reviewers := []graphmodels.UserSetable {
 accessReviewSettings.SetReviewers(reviewers)
 requestBody.SetAccessReviewSettings(accessReviewSettings)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

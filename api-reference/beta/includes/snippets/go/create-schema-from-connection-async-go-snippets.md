@@ -21,7 +21,7 @@ isSearchable := "true"
 .SetIsSearchable(&isSearchable) 
 isRetrievable := "true"
 .SetIsRetrievable(&isRetrievable) 
-labels := []String {
+labels := []string {
 	"title",
 
 }
@@ -54,7 +54,7 @@ isRetrievable := "true"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.External().ConnectionsById("externalConnection-id").Schema().Post(requestBody)
+graphClient.External().ConnectionsById("externalConnection-id").Schema().Post(context.Background(), requestBody, nil)
 
 
 ```

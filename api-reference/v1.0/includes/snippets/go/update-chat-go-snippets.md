@@ -11,7 +11,7 @@ requestBody := graphmodels.NewChat()
 topic := "Group chat title update"
 requestBody.SetTopic(&topic) 
 
-graphClient.ChatsById("chat-id").Patch(requestBody)
+graphClient.ChatsById("chat-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
