@@ -21,7 +21,7 @@ id := int32(0)
 chatMessageMention.SetId(&id) 
 mentionText := "Jane Smith"
 chatMessageMention.SetMentionText(&mentionText) 
-mentioned := graphmodels.Newmentioned()
+mentioned := graphmodels.NewChatMessageMentionedIdentitySet()
 user := graphmodels.NewIdentity()
 displayName := "Jane Smith"
 user.SetDisplayName(&displayName) 

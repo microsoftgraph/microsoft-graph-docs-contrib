@@ -32,7 +32,7 @@ POST /users/{id | userPrincipalName}/contacts
 POST /me/contactFolders/{id}/contacts
 POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 ```
-## Request headers
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
