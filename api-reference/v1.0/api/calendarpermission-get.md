@@ -1,7 +1,7 @@
 ---
 title: "Get calendarPermission"
 description: "Get the properties and relationships of calendarpermission object."
-author: "Harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: "apiPageType"
@@ -72,7 +72,7 @@ The following is an example of the request.
   "name": "get_calendarpermission"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id}
 ```
 

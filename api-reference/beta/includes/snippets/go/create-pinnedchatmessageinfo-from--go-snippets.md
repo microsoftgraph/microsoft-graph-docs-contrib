@@ -13,7 +13,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.ChatsById("chat-id").PinnedMessages().Post(requestBody)
+result, err := graphClient.ChatsById("chat-id").PinnedMessages().Post(context.Background(), requestBody, nil)
 
 
 ```

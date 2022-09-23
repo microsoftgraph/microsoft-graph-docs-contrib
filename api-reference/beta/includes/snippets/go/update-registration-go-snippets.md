@@ -34,7 +34,7 @@ speakers := []graphmodels.MeetingSpeakerable {
 }
 requestBody.SetSpeakers(speakers)
 
-graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Patch(requestBody)
+graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewSettingsPostRequestBody()
+requestBody := graphmodels.NewSettingsPutRequestBody()
 additionalData := map[string]interface{}{
 	"id" : "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3", 
 	"elevationDuration" : "PT8H", 
@@ -25,7 +25,7 @@ requestBody.SetLastGlobalAdmin(&lastGlobalAdmin)
 requestBody.SetIsMfaOnElevationConfigurable(&isMfaOnElevationConfigurable) 
 	approvalOnElevation := false
 requestBody.SetApprovalOnElevation(&approvalOnElevation) 
-	approverIds := []String {
+	approverIds := []string {
 		"e2b2a2fb-13d7-495c-adc9-941fe966793f",
 		"22770e3f-b9b4-418e-9dea-d0e3d2f275dd",
 
@@ -33,7 +33,7 @@ requestBody.SetApprovalOnElevation(&approvalOnElevation)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.PrivilegedRolesById("privilegedRole-id").Settings().Put(requestBody)
+graphClient.PrivilegedRolesById("privilegedRole-id").Settings().Put(context.Background(), requestBody, nil)
 
 
 ```

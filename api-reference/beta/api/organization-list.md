@@ -2,7 +2,7 @@
 title: "List organization"
 description: "Retrieve a list of organization objects."
 ms.localizationpriority: medium
-author: "KuiGithui"
+author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/beta/organization
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organization-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-organization-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

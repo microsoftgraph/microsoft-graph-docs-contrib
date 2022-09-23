@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewDismissPostRequestBody()
-userIds := []String {
+userIds := []string {
 	"04487ee0-f4f6-4e7f-8999-facc5a30e232",
 	"13387ee0-f4f6-4e7f-8999-facc5120e345",
 
 }
 requestBody.SetUserIds(userIds)
 
-graphClient.RiskyUsers().Dismiss().Post(requestBody)
+graphClient.RiskyUsers().Dismiss().Post(context.Background(), requestBody, nil)
 
 
 ```

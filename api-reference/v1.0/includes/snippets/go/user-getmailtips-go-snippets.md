@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewGetMailTipsPostRequestBody()
-emailAddresses := []String {
+emailAddresses := []string {
 	"danas@contoso.onmicrosoft.com",
 	"fannyd@contoso.onmicrosoft.com",
 
@@ -17,7 +17,7 @@ requestBody.SetEmailAddresses(emailAddresses)
 mailTipsOptions := graphmodels.AUTOMATICREPLIES, MAILBOXFULLSTATUS_MAILTIPSTYPE 
 requestBody.SetMailTipsOptions(&mailTipsOptions) 
 
-result, err := graphClient.Me().GetMailTips().Post(requestBody)
+result, err := graphClient.Me().GetMailTips().Post(context.Background(), requestBody, nil)
 
 
 ```

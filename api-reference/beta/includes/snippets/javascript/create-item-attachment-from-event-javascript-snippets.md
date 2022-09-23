@@ -31,7 +31,7 @@ const attachment = {
     }
 };
 
-await client.api('/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments')
+await client.api('/me/events/AAMkAGI1AAAt9AHjAAA=/attachments')
 	.version('beta')
 	.post(attachment);
 

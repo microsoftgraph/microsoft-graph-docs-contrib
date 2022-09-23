@@ -14,7 +14,7 @@ configuration := &graphconfig.CloudPcOnPremisesConnectionRequestBuilderGetReques
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById("cloudPcOnPremisesConnection-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById("cloudPcOnPremisesConnection-id").Get(context.Background(), configuration)
 
 
 ```

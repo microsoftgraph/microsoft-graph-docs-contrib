@@ -14,25 +14,26 @@ surname := "Bansky"
 requestBody.SetSurname(&surname) 
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"address" : "pavelb@contoso.onmicrosoft.com", 
-	"name" : "Pavel Bansky", 
-	"type" : "personal", 
-}
-.SetAdditionalData(additionalData)
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"address" : "pavelb@fabrikam.onmicrosoft.com", 
-	"name" : "Pavel Bansky", 
-	"type" : "other", 
-	"otherLabel" : "Volunteer work", 
-}
-.SetAdditionalData(additionalData)
+typedEmailAddress := graphmodels.NewTypedEmailAddress()
+address := "pavelb@contoso.onmicrosoft.com"
+typedEmailAddress.SetAddress(&address) 
+name := "Pavel Bansky"
+typedEmailAddress.SetName(&name) 
+type := graphmodels.PERSONAL_EMAILTYPE 
+typedEmailAddress.SetType(&type) 
+typedEmailAddress1 := graphmodels.NewTypedEmailAddress()
+address := "pavelb@fabrikam.onmicrosoft.com"
+typedEmailAddress1.SetAddress(&address) 
+name := "Pavel Bansky"
+typedEmailAddress1.SetName(&name) 
+type := graphmodels.OTHER_EMAILTYPE 
+typedEmailAddress1.SetType(&type) 
+otherLabel := "Volunteer work"
+typedEmailAddress1.SetOtherLabel(&otherLabel) 
 
 emailAddresses := []graphmodels.Objectable {
-	,
-	,
+	typedEmailAddress,
+	typedEmailAddress1,
 
 }
 requestBody.SetEmailAddresses(emailAddresses)
@@ -50,7 +51,7 @@ phones := []graphmodels.Phoneable {
 }
 requestBody.SetPhones(phones)
 
-result, err := graphClient.Me().Contacts().Post(requestBody)
+result, err := graphClient.Me().Contacts().Post(context.Background(), requestBody, nil)
 
 
 ```

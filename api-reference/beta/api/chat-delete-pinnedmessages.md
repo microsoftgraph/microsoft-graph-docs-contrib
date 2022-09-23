@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /chats/{chat-id}/pinnedMessages/{pinnedChatMessageInfoId}
+DELETE /chats/{chat-id}/pinnedMessages/{pinnedChatMessageId}
 ```
 
 ## Request headers
@@ -53,7 +53,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_pinnedchatmessageinfo"
+  "name": "delete_pinnedchatmessageinfo",
+  "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2", "1616964509832"]
 }
 -->
 ``` http

@@ -1,17 +1,19 @@
 ---
-title: "informationProtectionLabel: extractLabel"
-description: "Retrieve informationProtectionContentLabel using metadata from a labeled object."
+title: "informationProtectionLabel: extractLabel (deprecated)"
+description: "Retrieve informationProtectionContentLabel using metadata from a labeled object. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
-# informationProtectionLabel: extractLabel
+# informationProtectionLabel: extractLabel (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label. The [contentInfo](../resources/contentinfo.md) input is resolved to [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md).
 

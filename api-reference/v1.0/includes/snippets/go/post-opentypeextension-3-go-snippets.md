@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewExtension()
-"@odata.type" := "microsoft.graph.openTypeExtension"
-requestBody.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"extensionName" : "Com.Contoso.Deal", 
 	"companyName" : "Alpine Skis", 
@@ -18,7 +16,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.GroupsById("group-id").EventsById("event-id").Extensions().Post(requestBody)
+result, err := graphClient.GroupsById("group-id").EventsById("event-id").Extensions().Post(context.Background(), requestBody, nil)
 
 
 ```

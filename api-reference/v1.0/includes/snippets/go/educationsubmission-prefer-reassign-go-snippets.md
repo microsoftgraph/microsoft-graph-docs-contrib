@@ -14,7 +14,7 @@ configuration := &graphconfig.ReassignRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Reassign(educationClass-id, educationAssignment-id, educationSubmission-id).PostWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Reassign().Post(context.Background(), configuration)
 
 
 ```

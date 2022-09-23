@@ -9,15 +9,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new TeamPostRequestBody();
+$requestBody = new TeamPutRequestBody();
 $additionalData = [
-'memberSettings' => $requestBody = new ();
+'memberSettings' => $requestBody = new MemberSettings();
 		$requestBody->setAllowCreateUpdateChannels(true);
 
 
 $requestBody->setMemberSettings($memberSettings);
 
-'messagingSettings' => $requestBody = new ();
+'messagingSettings' => $requestBody = new MessagingSettings();
 		$requestBody->setAllowUserEditMessages(true);
 
 		$requestBody->setAllowUserDeleteMessages(true);
@@ -25,7 +25,7 @@ $requestBody->setMemberSettings($memberSettings);
 
 $requestBody->setMessagingSettings($messagingSettings);
 
-'funSettings' => $requestBody = new ();
+'funSettings' => $requestBody = new FunSettings();
 		$requestBody->setAllowGiphy(true);
 
 $		requestBody->setGiphyContentRating('strict');
@@ -33,7 +33,7 @@ $		requestBody->setGiphyContentRating('strict');
 
 $requestBody->setFunSettings($funSettings);
 
-'discoverySettings' => $requestBody = new ();
+'discoverySettings' => $requestBody = new DiscoverySettings();
 		$requestBody->setShowInTeamsSearchAndSuggestions(true);
 
 

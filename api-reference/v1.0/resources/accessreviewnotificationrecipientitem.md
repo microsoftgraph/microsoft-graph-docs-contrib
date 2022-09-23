@@ -1,7 +1,7 @@
 ---
 title: "accessReviewNotificationRecipientItem resource type"
 description: "Defines users or groups who will receive notifications access review notifications."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

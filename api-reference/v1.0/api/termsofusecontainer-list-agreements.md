@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and collection of [a
   "blockType": "request",
   "name": "get_agreements"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements
 ```
 

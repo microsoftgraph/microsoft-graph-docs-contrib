@@ -7,15 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "resourceType eq 'Application'"
+
 requestParameters := &graphconfig.AccessPackageResourcesRequestBuilderGetQueryParameters{
-	Filter: "resourceType eq 'Application'",
+	Filter: &requestFilter,
 	Expand: [] string {"accessPackageResourceScopes"},
 }
 configuration := &graphconfig.AccessPackageResourcesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById("accessPackageCatalog-id").AccessPackageResources().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById("accessPackageCatalog-id").AccessPackageResources().Get(context.Background(), configuration)
 
 
 ```

@@ -11,27 +11,28 @@ requestBody := graphmodels.NewAssignLicensePostRequestBody()
 
 
 assignedLicense := graphmodels.NewAssignedLicense()
-additionalData := map[string]interface{}{
-	disabledPlans := []String {
-		"11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
+disabledPlans := []string {
+ := uuid.MustParse("11b0131d-43c8-4bbb-b2c8-e80f9a50834a")
+assignedLicense.Set(&) 
 
-	}
-	"skuId" : "45715bb8-13f9-4bf6-927f-ef96c102d394", 
 }
-assignedLicense.SetAdditionalData(additionalData)
+assignedLicense.SetDisabledPlans(disabledPlans)
+skuId := uuid.MustParse("45715bb8-13f9-4bf6-927f-ef96c102d394")
+assignedLicense.SetSkuId(&skuId) 
 
 addLicenses := []graphmodels.AssignedLicenseable {
 	assignedLicense,
 
 }
 requestBody.SetAddLicenses(addLicenses)
-removeLicenses := []String {
-	"bea13e0c-3828-4daa-a392-28af7ff61a0f",
+removeLicenses := []string {
+ := uuid.MustParse("bea13e0c-3828-4daa-a392-28af7ff61a0f")
+requestBody.Set(&) 
 
 }
 requestBody.SetRemoveLicenses(removeLicenses)
 
-result, err := graphClient.Me().AssignLicense().Post(requestBody)
+result, err := graphClient.Me().AssignLicense().Post(context.Background(), requestBody, nil)
 
 
 ```

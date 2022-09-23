@@ -14,7 +14,7 @@ configuration := &graphconfig.DeltaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").Messages().Delta()(mailFolder-id).GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").Messages().Delta().Get(context.Background(), configuration)
 
 
 ```

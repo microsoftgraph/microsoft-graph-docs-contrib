@@ -14,7 +14,7 @@ configuration := &graphconfig.EventRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().EventsById("event-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().EventsById("event-id").Get(context.Background(), configuration)
 
 
 ```

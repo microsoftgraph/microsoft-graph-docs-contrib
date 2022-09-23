@@ -10,16 +10,20 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestSearch := "\"displayName:wa\""
+requestCount := true
+
 requestParameters := &graphconfig.ContactsRequestBuilderGetQueryParameters{
-	Search: "\"displayName:wa\"",
-	Count: true,
+	Search: &requestSearch,
+	Count: &requestCount,
 }
 configuration := &graphconfig.ContactsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Contacts().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Contacts().Get(context.Background(), configuration)
 
 
 ```

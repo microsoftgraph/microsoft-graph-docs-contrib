@@ -76,7 +76,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "message_forward"
+  "name": "message_forward",
+  "sampleKeys": ["AAMkADA1MTAAAH5JaLAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/forward

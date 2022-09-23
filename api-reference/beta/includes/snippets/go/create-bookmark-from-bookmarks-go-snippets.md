@@ -15,13 +15,13 @@ requestBody.SetWebUrl(&webUrl)
 description := "Try or buy Contoso for Home or Business and view product information"
 requestBody.SetDescription(&description) 
 keywords := graphmodels.NewAnswerKeyword()
-keywords := []String {
+keywords := []string {
 	"Contoso",
 	"install",
 
 }
 keywords.SetKeywords(keywords)
-reservedKeywords := []String {
+reservedKeywords := []string {
 	"Contoso",
 
 }
@@ -34,7 +34,8 @@ requestBody.SetAvailabilityStartDateTime(&availabilityStartDateTime)
 availabilityEndDateTime := null
 requestBody.SetAvailabilityEndDateTime(&availabilityEndDateTime) 
 platforms := []graphmodels.DevicePlatformTypeable {
-	"windows",
+	devicePlatformType := graphmodels.WINDOWS_DEVICEPLATFORMTYPE 
+	requestBody.SetDevicePlatformType(&devicePlatformType) 
 
 }
 requestBody.SetPlatforms(platforms)
@@ -56,7 +57,7 @@ requestBody.SetTargetedVariations(targetedVariations)
 state := graphmodels.PUBLISHED_ANSWERSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.Search().Bookmarks().Post(requestBody)
+result, err := graphClient.Search().Bookmarks().Post(context.Background(), requestBody, nil)
 
 
 ```

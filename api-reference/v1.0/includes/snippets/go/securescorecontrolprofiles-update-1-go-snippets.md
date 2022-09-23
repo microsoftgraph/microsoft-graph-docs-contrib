@@ -25,7 +25,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Security().SecureScoreControlProfilesById("secureScoreControlProfile-id").Patch(requestBody)
+graphClient.Security().SecureScoreControlProfilesById("secureScoreControlProfile-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

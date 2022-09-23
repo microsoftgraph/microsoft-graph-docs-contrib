@@ -88,7 +88,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_identityprovider"
+  "name": "update_identityprovider",
+  "sampleKeys": ["Amazon-OAuth"]
 }
 -->
 
@@ -144,7 +145,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_openidconnectprovider"
+  "name": "update_openidconnectprovider_Azure_AD_B2C",
+  "sampleKeys": ["OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a"]
 }
 -->
 
@@ -158,23 +160,23 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-openidconnectprovider-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-openidconnectprovider-azure-ad-b2c-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-openidconnectprovider-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-openidconnectprovider-azure-ad-b2c-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-openidconnectprovider-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-openidconnectprovider-azure-ad-b2c-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-openidconnectprovider-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/update-openidconnectprovider-azure-ad-b2c-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-openidconnectprovider-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/update-openidconnectprovider-azure-ad-b2c-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

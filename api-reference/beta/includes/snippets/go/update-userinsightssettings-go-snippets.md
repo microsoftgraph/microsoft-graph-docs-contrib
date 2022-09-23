@@ -8,10 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUserInsightsSettings()
-isEnabled := "false"
+isEnabled := false
 requestBody.SetIsEnabled(&isEnabled) 
 
-graphClient.UsersById("user-id").Settings().ItemInsights().Patch(requestBody)
+graphClient.UsersById("user-id").Settings().ItemInsights().Patch(context.Background(), requestBody, nil)
 
 
 ```

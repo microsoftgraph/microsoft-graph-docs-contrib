@@ -57,7 +57,8 @@ The following example deletes an **identityProvider**.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete-identityprovider"
+  "name": "delete-identityprovider_Amazon_OAuth",
+  "sampleKeys": ["Amazon-OAuth"]
 }-->
 
 ```http
@@ -65,27 +66,23 @@ DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-amazon-oauth-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-amazon-oauth-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-amazon-oauth-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-identityprovider-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-identityprovider-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/delete-identityprovider-amazon-oauth-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-identityprovider-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/delete-identityprovider-amazon-oauth-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

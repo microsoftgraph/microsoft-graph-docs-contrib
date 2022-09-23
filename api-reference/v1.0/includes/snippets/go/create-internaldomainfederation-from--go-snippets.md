@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewInternalDomainFederation()
-"@odata.type" := "#microsoft.graph.internalDomainFederation"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "Contoso"
 requestBody.SetDisplayName(&displayName) 
 issuerUri := "http://contoso.com/adfs/services/trust"
@@ -35,7 +33,7 @@ requestBody.SetNextSigningCertificate(&nextSigningCertificate)
 federatedIdpMfaBehavior := graphmodels.REJECTMFABYFEDERATEDIDP_FEDERATEDIDPMFABEHAVIOR 
 requestBody.SetFederatedIdpMfaBehavior(&federatedIdpMfaBehavior) 
 
-result, err := graphClient.DomainsById("domain-id").FederationConfiguration().Post(requestBody)
+result, err := graphClient.DomainsById("domain-id").FederationConfiguration().Post(context.Background(), requestBody, nil)
 
 
 ```
