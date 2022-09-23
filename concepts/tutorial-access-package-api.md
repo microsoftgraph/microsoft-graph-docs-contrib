@@ -15,6 +15,9 @@ In this tutorial, you learn how to develop code to create a package of resources
 > [!NOTE]
 > The response objects shown in this tutorial might be shortened for readability.
 
+> [!NOTE]
+> Review of Privileged Access Groups will only assign active owner(s) as the reviewers. Eligible owners are not included. At least one fallback reviewer is required for a Privileged Access Groups review. If there are no active owner(s) when the review begins, the fallback reviewer(s) will be assigned to the review.
+
 ## Prerequisites
 
 To successfully complete this tutorial, make sure that you have the required prerequisites:
