@@ -67,7 +67,12 @@ When creating or updating a workflow, use the [workflowExecutionConditions resou
 
 ### Create and manage workflows
 
-After identifying the tasks and execution conditions that you want to define for your workflow, use the [workflow resource type](/graph/api/resources/identitygovernance-workflow), and its associated methods to create and manage the workflow.
+After identifying the tasks and execution conditions that you want to define for your workflow, use the [workflow resource type](/graph/api/resources/identitygovernance-workflow), and its associated methods to create and manage the workflow. The category of the task must match the category of the workflow. Therefore:
+
++ A task supported for only the "leaver" workflow category can't be specified in a "joiner" workflow scenario, and vice versa.
++ A task supported for both "leaver" and "joiner" workflow categories can be specified in either a "joiner" or "leaver" workflow scenario.
+
+You can schedule a workflow to run based on the [tenant-wide schedule](#settings) or run it on-demand. For example, a daily workflow can provision access for new employees, while you can run a custom extension to immediately terminate an employee's access to sensitive resources after a security breach.
 
 ### Workflow versions
 
