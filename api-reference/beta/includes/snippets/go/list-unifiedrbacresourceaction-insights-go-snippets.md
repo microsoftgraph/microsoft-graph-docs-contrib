@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.RoleManagement().Directory().ResourceNamespacesById("unifiedRbacResourceNamespace-id").ResourceActions().Get()
+result, err := graphClient.RoleManagement().Directory().ResourceNamespacesById("unifiedRbacResourceNamespace-id").ResourceActions().Get(context.Background(), nil)
 
 
 ```

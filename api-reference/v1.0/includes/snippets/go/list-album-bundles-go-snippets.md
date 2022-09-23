@@ -17,7 +17,7 @@ configuration := &graphconfig.BundlesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Drive().Bundles().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Drive().Bundles().Get(context.Background(), configuration)
 
 
 ```

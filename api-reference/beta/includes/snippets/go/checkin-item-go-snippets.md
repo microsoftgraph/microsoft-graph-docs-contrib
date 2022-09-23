@@ -11,7 +11,7 @@ requestBody := graphmodels.NewCheckinPostRequestBody()
 comment := "Updating the latest guidelines"
 requestBody.SetComment(&comment) 
 
-graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Checkin().Post(requestBody)
+graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Checkin().Post(context.Background(), requestBody, nil)
 
 
 ```

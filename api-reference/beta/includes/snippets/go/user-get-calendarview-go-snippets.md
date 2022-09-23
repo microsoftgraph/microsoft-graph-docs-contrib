@@ -19,7 +19,7 @@ configuration := &graphconfig.CalendarViewRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().CalendarView().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().CalendarView().Get(context.Background(), configuration)
 
 
 ```

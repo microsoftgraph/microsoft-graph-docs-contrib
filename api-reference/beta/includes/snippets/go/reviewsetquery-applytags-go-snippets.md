@@ -20,7 +20,7 @@ tagsToAdd := []graphmodels.Objectable {
 }
 requestBody.SetTagsToAdd(tagsToAdd)
 
-graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSetsById("reviewSet-id").QueriesById("reviewSetQuery-id").ApplyTags().Post(requestBody)
+graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSetsById("reviewSet-id").QueriesById("reviewSetQuery-id").ApplyTags().Post(context.Background(), requestBody, nil)
 
 
 ```

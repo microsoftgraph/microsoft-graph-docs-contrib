@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().Tasks().ListsById("baseTaskList-id").TasksById("baseTask-id").LinkedResourcesById("linkedResource_v2-id").Delete()
+graphClient.Me().Tasks().ListsById("baseTaskList-id").TasksById("baseTask-id").LinkedResourcesById("linkedResource_v2-id").Delete(context.Background(), nil)
 
 
 ```

@@ -13,7 +13,7 @@ requestBody.SetIsEnabledInOrganization(&isEnabledInOrganization)
 disabledForGroup := "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 requestBody.SetDisabledForGroup(&disabledForGroup) 
 
-graphClient.OrganizationById("organization-id").Settings().PeopleInsights().Patch(requestBody)
+graphClient.OrganizationById("organization-id").Settings().PeopleInsights().Patch(context.Background(), requestBody, nil)
 
 
 ```

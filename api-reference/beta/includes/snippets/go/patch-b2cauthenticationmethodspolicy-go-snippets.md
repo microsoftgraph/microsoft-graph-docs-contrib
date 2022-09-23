@@ -15,7 +15,7 @@ requestBody.SetIsUserNameAuthenticationEnabled(&isUserNameAuthenticationEnabled)
 isPhoneOneTimePasswordAuthenticationEnabled := true
 requestBody.SetIsPhoneOneTimePasswordAuthenticationEnabled(&isPhoneOneTimePasswordAuthenticationEnabled) 
 
-graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(requestBody)
+graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

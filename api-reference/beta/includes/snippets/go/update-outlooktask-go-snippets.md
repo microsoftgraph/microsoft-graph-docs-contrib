@@ -21,7 +21,7 @@ timeZone := "Eastern Standard Time"
 dueDateTime.SetTimeZone(&timeZone) 
 requestBody.SetDueDateTime(dueDateTime)
 
-graphClient.Me().Outlook().TasksById("outlookTask-id").PatchWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+graphClient.Me().Outlook().TasksById("outlookTask-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

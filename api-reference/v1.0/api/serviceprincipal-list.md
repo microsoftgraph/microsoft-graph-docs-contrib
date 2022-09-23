@@ -241,10 +241,10 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_team_count"
+  "name": "list_serviceprincipals_search_count_select"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals?$search="displayName:Team"&$count=true
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$search="displayName:Team"&$count=true&$select=accountEnabled,displayName,publisherName,servicePrincipalType,signInAudience
 ConsistencyLevel: eventual
 ```
 
@@ -292,7 +292,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#servicePrincipals",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals(accountEnabled,displayName,publisherName,servicePrincipalType,signInAudience)",
   "@odata.count":1396,
   "value":[
     {

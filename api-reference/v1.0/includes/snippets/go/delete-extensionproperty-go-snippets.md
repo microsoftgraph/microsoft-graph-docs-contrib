@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.ApplicationsById("application-id").ExtensionPropertiesById("extensionProperty-id").Delete()
+graphClient.ApplicationsById("application-id").ExtensionPropertiesById("extensionProperty-id").Delete(context.Background(), nil)
 
 
 ```
