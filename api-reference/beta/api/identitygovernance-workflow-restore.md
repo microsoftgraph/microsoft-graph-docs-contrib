@@ -37,7 +37,7 @@ For delegated scenarios, the admin needs one of the following [Azure AD roles](/
 }
 -->
 ``` http
-POST /identityGovernance/deletedItems/lifecycleWorkflows/workflows/{workflowId}/restore
+POST /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/restore
 ```
 
 ## Request headers
