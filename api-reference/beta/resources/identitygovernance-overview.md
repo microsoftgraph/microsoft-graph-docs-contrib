@@ -29,7 +29,7 @@ For more information about Azure AD Identity Governance, see [What is Azure AD I
 
 Organizations have processes that are carried out during at least three stages of an employee's life cycle - when they join the organization, when they move within the organization, and when they leave the organization. Such processes may include provisioning and deprovisioning access and resources where required.
 
-The [lifecycle workflows APIs](/graph/api/resources/identitygovernance-lifecycleworkflows-overview) in Microsoft Graph allow you to efficiently and effectively manage the basic lifecycle processes for users in your organization.
+The [lifecycle workflows APIs](/graph/api/resources/identitygovernance-lifecycleworkflows-overview) in Microsoft Graph allow you to automate the basic lifecycle processes for users in your organization. These lifecycle processes enable the organization and its users to be efficient, secure, or compliant.
 
 ## Automate user access to resources
 
