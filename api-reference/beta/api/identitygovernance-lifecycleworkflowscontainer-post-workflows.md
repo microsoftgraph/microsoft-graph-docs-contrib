@@ -66,7 +66,7 @@ You can specify the following properties when creating a **workflow**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [workflow](../resources/identitygovernance-workflow.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) object in the response body.
 
 ## Examples
 

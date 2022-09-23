@@ -68,7 +68,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [taskReportSummary](../resources/identitygovernance-taskreportsummary.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.identityGovernance.taskReportSummary](../resources/identitygovernance-taskreportsummary.md) object in the response body.
 
 ## Examples
 
