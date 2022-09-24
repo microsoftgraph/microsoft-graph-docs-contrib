@@ -26,7 +26,7 @@ The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has b
 
 The Microsoft Graph v1.0 endpoint returns a limited set of user properties by default, while Azure AD Graph returns all properties. To read other properties that aren't returned by default, specify them in a `$select` query. For more information, see the [user resource type](/graph/api/resources/user).
 
-Here are the additional property differences:
+The following table lists the additional property differences.
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br>property|Comments|
 |---|---|---|
