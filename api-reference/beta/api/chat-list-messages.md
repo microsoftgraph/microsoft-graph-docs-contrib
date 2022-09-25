@@ -32,9 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
-## Federation
-
-Federation is only supported in delegated context for this API. If request is made in application context, request will fail.
+> **Note**: To list chat messages in application context, request must be made from tenant which owns the chat.
 
 ## HTTP request
 

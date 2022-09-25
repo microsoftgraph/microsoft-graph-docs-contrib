@@ -30,9 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.UpdatePolicyViolation.All for a chat message.</br>ChannelMessage.UpdatePolicyViolation.All for a channel message. |
 
-## Federation
-
-Cross-tenant federation is not supported for this API. Chat message sender tenant id must match with caller application tenant id. Chat message sender is not required to be current member of the chat.
+> **Note**: Chat message sender tenant id must match with caller application tenant id. Chat message sender is not required to be current member of the chat.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
