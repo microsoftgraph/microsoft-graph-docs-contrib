@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "17c54352-c87f-47fd-ab92-e19ce2da7bcc",
+          "ApiChange": "parameter",
+          "ChangedApiName": "messages",
+          "ChangeType": "Addition",
+          "Description": "Enabled date range filter query parameter for [list-chat-messages](https://learn.microsoft.com/en-us/graph/api/chat-list-messages?view=graph-rest-beta&tabs=http) api.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "17c54352-c87f-47fd-ab92-e19ce2da7bcc",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-34T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "35662e55-573c-464e-b999-093a27ff63f7",
+          "ApiChange": "parameter",
+          "ChangedApiName": "messages",
+          "ChangeType": "Addition",
+          "Description": "Enabled date range filter query parameter for [list-chat-messages](https://learn.microsoft.com/en-us/graph/api/chat-list-messages?view=graph-rest-beta&tabs=http) api.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "35662e55-573c-464e-b999-093a27ff63f7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-34T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e9194248-72ef-4678-872f-99b59117edb5",
           "ApiChange": "Relationship",
           "ChangedApiName": "chat",
