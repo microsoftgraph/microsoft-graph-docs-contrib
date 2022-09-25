@@ -27,6 +27,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 \* This scenario is only supported for the following call: `GET /users/{user-id | user-principal-name}/chats`
 
+## Federation
+
+Cross-tenant federation is not supported for this API. Targetted user must be part of caller application tenant.
+
 ## HTTP request
 
 To get the signed-in user's chats in the organization using delegated permission:

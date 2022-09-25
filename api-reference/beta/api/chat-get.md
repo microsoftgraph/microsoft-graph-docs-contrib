@@ -28,6 +28,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
+## Federation
+
+Cross-tenant federation is not supported for this API. At least one chat member must be part of caller application tenant.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

@@ -24,6 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
+## Federation
+
+Cross-tenant federation is not supported for this API. At least one chat member must be part of caller application tenant.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

@@ -23,6 +23,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.ReadBasic.All*, Chat.Read.All*, Chat.ReadWrite.All* |
 
+## Federation
+
+Cross-tenant federation is not supported for this API. Targetted user must be part of caller application tenant.
+
 \* This scenario is only supported for the following call: `GET /users/{user-id | user-principal-name}/chats`
 
 ## HTTP request
