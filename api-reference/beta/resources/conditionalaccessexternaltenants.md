@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents external tenants in the policy scope.
+An abstract type that represents external tenants in the policy scope. This abstract type is inherited by conditionalAccessAllExternalTenants and conditionalAccessEnumeratedExternalTenants.
 
 ## Properties
 
