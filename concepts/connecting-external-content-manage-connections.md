@@ -72,17 +72,17 @@ Before an application can add items to the search index, it must create and conf
 ## Enable content experiences
 A Graph connector can be enabled to participate in other Microsoft 365 experiences beyond Microsoft Search.
 
-This can be done by specifying one or more content experiences (search, compliance, etc.) which your connection will participate in.
+This can be done by specifying one or more content experiences (search, compliance, etc.) in which your connection will participate.
 The content experiences listed in the following table are currently supported. When calling the Graph API, reference this [flag enum description](/graph/api/resources/enums-externalconnectors).
 
 | Content Experience Type Enum | Description |
 |-|-|
-| search | Enabling search allows your content to show up in Microsoft search results. These results are consistently formatted across different search canvases, like SharePoint and Microsoft Bing. |
+| search | Enabling search allows your content to appear in Microsoft search results. The format of these results is consistent across different search canvases, like SharePoint and Microsoft Bing. |
 | compliance | Enabling compliance allows your content to be visible to Microsoft Purview advanced eDiscovery solution. Refer to [Microsoft Purview solutions](/microsoft-365/compliance/ediscovery) to learn more about advanced eDiscovery solution & licensing requirements.|
 
-If you already know which content experiences you want your connection to partipate in, set the `enabledContentExperiences` flag enum at the time of connection creation.
+If you already know which content experiences you want your connection to participate in, set the `enabledContentExperiences` flag enum at the time of connection creation.
 
-Otherwise, you can make changes to the enabled content experiences as shown in the following example.
+Otherwise, you can change the enabled content experiences, as shown in the following example.
 ```http
 PATCH https://graph.microsoft.com/beta/external/connections/contosohelpdesk
 Content-Type: application/json
