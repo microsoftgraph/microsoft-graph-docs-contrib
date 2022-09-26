@@ -185,7 +185,7 @@ The search API has the following limitations:
 |   person    |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |
 |    site     |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
 
--  When you combine SharePoint and OneDrive entityTypes: **driveItem**, **drive**, **site**, **list**, **listItem** with **externalItem**, only all connections **(/external/connections/*)** and all SharePoint and OneDrive entity type combinations are supported.
+-  When you combine SharePoint and OneDrive entity types - **driveItem**, **drive**, **site**, **list**, and **listItem** - with **externalItem**, only all connections **(/external/connections/*)** and all SharePoint and OneDrive entity type combinations are supported.
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
