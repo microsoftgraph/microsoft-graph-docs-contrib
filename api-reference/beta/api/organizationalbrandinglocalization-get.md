@@ -134,7 +134,7 @@ Content-Type: application/json
     "customResetItNowText": null,
     "faviconRelativeUrl": null,
     "headerBackgroundColor": null,
-    "headerLogoRelativeUrl": "null",
+    "headerLogoRelativeUrl": null,
     "signInPageText": "Contoso",
     "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
     "squareLogoDarkRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",    
