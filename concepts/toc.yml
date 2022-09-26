@@ -67,6 +67,8 @@ items:
           - name: Overview
             href: azuread-users-concept-overview.md
             displayName: users
+          - name: Default user permissions
+            href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
           - name: Access user data
             href: /learn/modules/msgraph-access-user-data
       - name: Groups

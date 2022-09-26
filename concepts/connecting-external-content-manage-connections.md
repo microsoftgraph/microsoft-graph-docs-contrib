@@ -72,17 +72,17 @@ Before an application can add items to the search index, it must create and conf
 ## Enable content experiences
 A Graph connector can be enabled to participate in other Microsoft 365 experiences beyond Microsoft Search.
 
-This can be done by specifying one or more content experiences (search, compliance, etc.) which your connection will participate in.
+This can be done by specifying one or more content experiences (search, compliance, etc.) in which your connection will participate.
 The content experiences listed in the following table are currently supported. When calling the Graph API, reference this [flag enum description](/graph/api/resources/enums-externalconnectors).
 
 | Content Experience Type Enum | Description |
 |-|-|
-| search | Enabling search allows your content to show up in Microsoft search results. These results are consistently formatted across different search canvases, like SharePoint and Microsoft Bing. |
+| search | Enabling search allows your content to appear in Microsoft search results. The format of these results is consistent across different search canvases, like SharePoint and Microsoft Bing. |
 | compliance | Enabling compliance allows your content to be visible to Microsoft Purview advanced eDiscovery solution. Refer to [Microsoft Purview solutions](/microsoft-365/compliance/ediscovery) to learn more about advanced eDiscovery solution & licensing requirements.|
 
-If you already know which content experiences you want your connection to partipate in, set the `enabledContentExperiences` flag enum at the time of connection creation.
+If you already know which content experiences you want your connection to participate in, set the `enabledContentExperiences` flag enum at the time of connection creation.
 
-Otherwise, you can make changes to the enabled content experiences as shown in the following example.
+Otherwise, you can change the enabled content experiences, as shown in the following example.
 ```http
 PATCH https://graph.microsoft.com/beta/external/connections/contosohelpdesk
 Content-Type: application/json
@@ -99,14 +99,14 @@ You can supply the default settings for each of the enabled content experiences 
 You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content. A set of diplay templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules specifying one or more conditions. When these conditions are met, the result layout will be applied to the search result and displayed on the results page.
 
 ### Compliance settings
-Similar to enterprise search settings, you need to define how advanced eDiscovery search results should be displayed by supplying result types for your content. This will enable the eDiscovery manager to visualize the content when reviewing the datasets. Here’s an example of eDiscovery search review result pertaining to an Azure DevOps item in eDiscovery:
+Similar to enterprise search settings, you need to define how to display advanced eDiscovery search results by supplying result types for your content. This enables the eDiscovery manager to visualize the content when reviewing the datasets. Here's an example of an eDiscovery search review result of an Azure DevOps item in eDiscovery:
 
 ![eDiscovery search review result example for AzureDevOps item.](./images/connectors-images/connecting-external-content-connection-settings-eDiscovery-result-example.png)
 
 > [!IMPORTANT]
 > The Adaptive Card format is used for rendering results in eDiscovery. Unlike for the search experience, the eDiscovery experience only supports Adaptive Card elements up to version 1.2. Read further to learn about other restrictions for eDiscovery result templates.
 
-Please ensure you select the 1.2 as the target version when configuring the eDiscovery result template in the [Adaptive Card Designer](https://adaptivecards.io/designer/).
+Please ensure you select 1.2 as the target version when configuring the eDiscovery result template in the [Adaptive Card Designer](https://adaptivecards.io/designer/).
 
 ![AdaptiveCard Designer target version selector.](./images/connectors-images/connecting-external-content-connection-settings-adaptiveCard-target-version.png)
 

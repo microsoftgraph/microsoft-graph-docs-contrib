@@ -22,8 +22,8 @@ $mentionsChatMessageMention1->setId(0);
 
 $mentionsChatMessageMention1->setMentionText('TestTag');
 
-$mentionsChatMessageMention1Mentioned = new Mentioned();
-$mentionsChatMessageMention1MentionedTag = new Tag();
+$mentionsChatMessageMention1Mentioned = new ChatMessageMentionedIdentitySet();
+$mentionsChatMessageMention1MentionedTag = new TeamworkTagIdentity();
 $mentionsChatMessageMention1MentionedTag->setId('MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM2OGEzZTM2NS1mN2Q5LTRhNTYtYjQ5OS0yNDMzMmE5Y2M1NzIjI3RTMERJZ1Z1ZQ==');
 
 $mentionsChatMessageMention1MentionedTag->setDisplayName('TestTag');
