@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 headers := map[string]string{
-	"Accept-Language": "0"
+	"Accept-Language": "0",
 }
-options := &msgraphsdk.BrandingRequestBuilderGetOptions{
-	H: headers,
+configuration := &graphconfig.BrandingRequestBuilderGetRequestConfiguration{
+	Headers: headers,
 }
-organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Branding().Get(options)
+
+result, err := graphClient.OrganizationById("organization-id").Branding().Get(context.Background(), configuration)
 
 
 ```

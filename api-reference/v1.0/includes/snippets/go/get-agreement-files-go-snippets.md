@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.AgreementRequestBuilderGetQueryParameters{
-	Expand: "files",
+requestParameters := &graphconfig.AgreementRequestBuilderGetQueryParameters{
+	Expand: [] string {"files"},
 }
-options := &msgraphsdk.AgreementRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.AgreementRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-agreementId := "agreement-id"
-result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Get(options)
+
+result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById("agreement-id").Get(context.Background(), configuration)
 
 
 ```

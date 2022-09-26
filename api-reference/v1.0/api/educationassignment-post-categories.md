@@ -48,7 +48,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add_educationcategory_to_educationassignment"
+  "name": "add_educationcategory_to_educationassignment_ref"
 }-->
 
 ```http
@@ -60,24 +60,29 @@ Content-type: application/json
 }
 
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/add-educationcategory-to-educationassignment-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-educationcategory-to-educationassignment-ref-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/add-educationcategory-to-educationassignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/add-educationcategory-to-educationassignment-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-educationcategory-to-educationassignment-ref-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/add-educationcategory-to-educationassignment-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/add-educationcategory-to-educationassignment-ref-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/add-educationcategory-to-educationassignment-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/add-educationcategory-to-educationassignment-ref-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-educationcategory-to-educationassignment-ref-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/add-educationcategory-to-educationassignment-ref-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

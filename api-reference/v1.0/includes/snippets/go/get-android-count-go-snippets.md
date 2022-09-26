@@ -7,18 +7,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.DevicesRequestBuilderGetQueryParameters{
-	Search: "%22displayName:Android%22",
-	Count: true,
-}
 headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+	"ConsistencyLevel": "eventual",
 }
-options := &msgraphsdk.DevicesRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+
+requestSearch := "\"displayName:Android\""
+requestCount := true
+
+requestParameters := &graphconfig.DevicesRequestBuilderGetQueryParameters{
+	Search: &requestSearch,
+	Count: &requestCount,
 }
-result, err := graphClient.Devices().Get(options)
+configuration := &graphconfig.DevicesRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
+}
+
+result, err := graphClient.Devices().Get(context.Background(), configuration)
 
 
 ```

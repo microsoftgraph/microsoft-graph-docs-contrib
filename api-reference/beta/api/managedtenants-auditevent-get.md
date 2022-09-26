@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /auditEvent
-GET /managedTenant/auditEvents/{auditEventId}
+GET /tenantRelationships/managedTenants/auditEvents/{auditEventId}
 ```
 
 ## Optional query parameters
@@ -60,8 +59,9 @@ If successful, this method returns a `200 OK` response code and an [auditEvent](
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/auditEvent
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/auditEvents/{auditEventId}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-auditevent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -70,12 +70,16 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/auditEve
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-auditevent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-auditevent-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-auditevent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-auditevent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-auditevent-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

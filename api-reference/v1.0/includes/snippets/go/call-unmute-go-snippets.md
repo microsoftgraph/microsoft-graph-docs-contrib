@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewClientContextRequestBody()
+requestBody := graphmodels.NewUnmutePostRequestBody()
 clientContext := "clientContext-value"
-requestBody.SetClientContext(&clientContext)
-options := &msgraphsdk.UnmuteRequestBuilderPostOptions{
-	Body: requestBody,
-}
-callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).Unmute(call-id).Post(options)
+requestBody.SetClientContext(&clientContext) 
+
+result, err := graphClient.Communications().CallsById("call-id").Unmute().Post(context.Background(), requestBody, nil)
 
 
 ```

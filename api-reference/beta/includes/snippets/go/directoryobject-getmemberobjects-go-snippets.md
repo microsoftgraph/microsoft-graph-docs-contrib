@@ -7,13 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewSecurityEnabledOnlyRequestBody()
+requestBody := graphmodels.NewGetMemberObjectsPostRequestBody()
 securityEnabledOnly := true
-requestBody.SetSecurityEnabledOnly(&securityEnabledOnly)
-options := &msgraphsdk.GetMemberObjectsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().GetMemberObjects().Post(options)
+requestBody.SetSecurityEnabledOnly(&securityEnabledOnly) 
+
+result, err := graphClient.Me().GetMemberObjects().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -63,8 +63,7 @@ Check your network server traffic logs through a filter proxy for any apps calli
 
 ### Method 3: Use a PowerShell script
 
-Download and run [this PowerShell script](https://github.com/microsoft/AzureADGraphApps).
-
+Download and run [this PowerShell script](https://github.com/microsoft/AzureADGraphApps). Use this method to retrieve apps with their home directory in your tenant and apps with their home directories in other tenants.
 
 
 ## Microsoft sent me an email with a list of App IDs for apps using Azure AD Graph. How do I find the details of each app, including its owner?
@@ -136,7 +135,7 @@ If you still need to configure Azure AD Graph permissions for your applications,
 
 For examples using the listed workarounds, see [Use Microsoft Graph to configure required Azure AD Graph permissions for an app registration](migrate-azure-ad-graph-configure-permissions.md)
 
->**Note:** Adding Azure AD Graph permissions using these workarounds won't be supported after retirement of the Azure AD Graph. Any app using Azure AD Graph will still stop functioning after the retirement.
+>**Note:** Adding Azure AD Graph permissions using these workarounds won't be supported after retirement of the Azure AD Graph. Any app using Azure AD Graph will stop functioning after the retirement.
 
 
 

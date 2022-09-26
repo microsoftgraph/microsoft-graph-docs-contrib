@@ -7,23 +7,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewAnswerPostRequestBody()
 callbackUri := "https://bot.contoso.com/api/calls"
-requestBody.SetCallbackUri(&callbackUri)
-requestBody.SetAcceptedModalities( []Modality {
-	"audio",
+requestBody.SetCallbackUri(&callbackUri) 
+acceptedModalities := []graphmodels.Modalityable {
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality) 
+
 }
-mediaConfig := msgraphsdk.NewMediaConfig()
+requestBody.SetAcceptedModalities(acceptedModalities)
+mediaConfig := graphmodels.NewMediaConfig()
+additionalData := map[string]interface{}{
+	"blob" : "<Media Session Configuration Blob>", 
+}
+mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
-mediaConfig.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.appHostedMediaConfig",
-	"blob": "<Media Session Configuration Blob>",
-}
-options := &msgraphsdk.AnswerRequestBuilderPostOptions{
-	Body: requestBody,
-}
-callId := "call-id"
-graphClient.Communications().CallsById(&callId).Answer(call-id).Post(options)
+
+graphClient.Communications().CallsById("call-id").Answer().Post(context.Background(), requestBody, nil)
 
 
 ```

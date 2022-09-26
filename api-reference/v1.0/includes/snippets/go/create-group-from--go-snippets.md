@@ -7,16 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/v1.0/groups/{groupId}",
-}
-options := &msgraphsdk.GroupRequestBuilderPostOptions{
-	Body: requestBody,
-}
-printerShareId := "printerShare-id"
-groupId := "group-id"
-graphClient.Print().SharesById(&printerShareId).AllowedGroupsById(&groupId).Post(options)
+requestBody := graphmodels.NewReferenceCreate()
+"@odata.id" := "https://graph.microsoft.com/v1.0/groups/{groupId}"
+requestBody.Set"@odata.id"(&"@odata.id") 
+
+graphClient.Print().SharesById("printerShare-id").AllowedGroups().$ref().Post(context.Background(), requestBody, nil)
 
 
 ```

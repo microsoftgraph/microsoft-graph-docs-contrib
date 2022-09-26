@@ -7,16 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"certificateAuthorities":  []Object {
+requestBody := graphmodels.NewCertificateBasedAuthConfigurationPostRequestBody()
+additionalData := map[string]interface{}{
+
+
+ := graphmodels.New()
+isRootAuthority := true
+.SetIsRootAuthority(&isRootAuthority) 
+certificate := "Binary"
+.SetCertificate(&certificate) 
+
+	certificateAuthorities := []graphmodels.Objectable {
+		,
+
 	}
 }
-options := &msgraphsdk.CertificateBasedAuthConfigurationRequestBuilderPostOptions{
-	Body: requestBody,
-}
-organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).CertificateBasedAuthConfiguration().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.OrganizationById("organization-id").CertificateBasedAuthConfiguration().Post(context.Background(), requestBody, nil)
 
 
 ```

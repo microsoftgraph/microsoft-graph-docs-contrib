@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let appConsentRequest = await client.api('/identityGovernance/appConsent/appConsentRequests/af330b30-dd59-4482-a848-0fd81b0438ed')
+let appConsentRequest = await client.api('/identityGovernance/appConsent/appConsentRequests/7322e5f3-0f15-4eb8-9e82-2029e8622f5d')
 	.get();
 
 ```

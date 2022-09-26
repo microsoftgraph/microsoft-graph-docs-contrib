@@ -7,22 +7,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderGetQueryParameters{
-	Count: true,
-	Orderby: "displayName",
-	Search: "%22displayName:Pr%22",
-	Select: "displayName,id",
-}
 headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+	"ConsistencyLevel": "eventual",
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+
+requestCount := true
+requestSearch := "\"displayName:Pr\""
+
+requestParameters := &graphconfig.UserRequestBuilderGetQueryParameters{
+	Count: &requestCount,
+	Orderby: [] string {"displayName"},
+	Search: &requestSearch,
+	Select: [] string {"displayName","id"},
 }
-groupId := "group-id"
-directoryObjectId := "directoryObject-id"
-result, err := graphClient.GroupsById(&groupId).MembersById(&directoryObjectId).Get(options)
+configuration := &graphconfig.UserRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
+}
+
+result, err := graphClient.GroupsById("group-id").Members().User().Get(context.Background(), configuration)
 
 
 ```

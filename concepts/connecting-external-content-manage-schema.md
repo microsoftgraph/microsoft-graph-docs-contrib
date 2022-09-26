@@ -1,6 +1,6 @@
 ---
 title: "Register and update schema for the Microsoft Graph connection"
-description: "Learn how to use Microsoft Graph to register schema for your Microsoft Graph connection."
+description: "Before adding items into a connection, you must register the schema. Describes example schema, property attributes, semantic labels, and schema update capabilities."
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
@@ -10,7 +10,7 @@ ms.prod: search
 
 # Register and update schema for the Microsoft Graph connection
 
-The connection [schema](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true) determines how your content is used in various Microsoft Graph experiences. The schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
+The connection [schema](/graph/api/resources/externalconnectors-schema) determines how your content is used in various Microsoft Graph experiences. The schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
 
 ## Example schema
 
@@ -156,7 +156,7 @@ Aliases are friendly names for properties that you assign. These are used in que
 
 ## Schema update capabilities
 
-This section includes information about the update capabilities for the [schema](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true) API.
+This section includes information about the update capabilities for the [schema](/graph/api/resources/externalconnectors-schema) API.
 
 > [!NOTE]
 > We recommend that you reingest items after an update to bring them to the latest schema. Without reingestion, the behavior of the items will be inconsistent.
@@ -186,7 +186,7 @@ Adding a semantic label can affect experiences like Relevance and Viva Topics.
 ## Next steps
 
 - [Add items to the connection](connecting-external-content-manage-items.md)
-- [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview)
 - [Search custom types (externalItem)](search-concept-custom-types.md)
 - [Build your first custom Microsoft Graph connector](/graph/connecting-external-content-build-quickstart)
 

@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewIdRequestBody()
+requestBody := graphmodels.NewDeletePasswordSingleSignOnCredentialsPostRequestBody()
 id := "5793aa3b-cca9-4794-679a240f8b58"
-requestBody.SetId(&id)
-options := &msgraphsdk.DeletePasswordSingleSignOnCredentialsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-servicePrincipalId := "servicePrincipal-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).DeletePasswordSingleSignOnCredentials(servicePrincipal-id).Post(options)
+requestBody.SetId(&id) 
+
+graphClient.ServicePrincipalsById("servicePrincipal-id").DeletePasswordSingleSignOnCredentials().Post(context.Background(), requestBody, nil)
 
 
 ```

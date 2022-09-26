@@ -17,14 +17,14 @@ Add a member to a security or Microsoft 365 group through the **members** naviga
 
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
-
-| Object type          | Member of security groups     | Member of Microsoft 365 group |
-|----------------------|-------------------------------|-------------------------------|
-| Users                | ![Can be group member][Yes]   | ![Can be group member][Yes]   |
-| Security groups      | ![Can be group member][Yes]   | ![Cannot be group member][No] |
-| Microsoft 365 groups | ![Cannot be group member][No] | ![Cannot be group member][No] |
-| devices              | ![Can be group member][Yes]   | ![Cannot be group member][No] |
-| service principals   | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Object type             | Member of security group     | Member of Microsoft 365 group |
+|-------------------------|-------------------------------|-------------------------------|
+| User                   | ![Can be group member][Yes]   | ![Can be group member][Yes]   |
+| Security group         | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Microsoft 365 group    | ![Cannot be group member][No] | ![Cannot be group member][No] |
+| Device                 | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Service principal      | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Organizational contact | ![Can be group member][Yes]   | ![Cannot be group member][No] |
 
 
 ## Permissions
@@ -38,7 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > [!IMPORTANT]
-> To add members to a role-assignable group, the calling user or app must also be assigned the _RoleManagement.ReadWrite.Directory_ permission.
+> To add members to a role-assignable group, the calling user must also be assigned the _RoleManagement.ReadWrite.Directory_ permission.
 
 ## HTTP request
 
@@ -84,34 +84,28 @@ Content-type: application/json
 }
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/add-group-member-javascript-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/javascript/add-group-member-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/add-group-member-objc-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/objc/add-group-member-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-group-member-csharp-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/csharp/add-group-member-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-group-member-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/add-group-member-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/add-group-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-group-member-go-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/go/add-group-member-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/add-group-member-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
