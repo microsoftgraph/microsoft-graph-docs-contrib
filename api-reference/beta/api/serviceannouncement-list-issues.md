@@ -42,7 +42,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Prefer:<br>odata.maxepagesize={x}|Set the max page size preference. If not specified, the response is with default page size. Default page size is 100. Optional.|
+|Prefer:<br>odata.maxpagesize={x}|Set the max page size preference. If not specified, the response is with default page size. Default page size is 100. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
