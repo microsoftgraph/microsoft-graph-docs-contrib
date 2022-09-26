@@ -31,7 +31,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 |supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `rpaBox`,`unknownFutureValue`. Read-only.|
 |regionGroup|[cloudpcRegionGroup](#cloudpcregiongroup-values)|The logic geographic group this region belongs to. Multiple regions could belong to one region group. Customer could select a regionGroup when provision a CloudPC, 
 the CloudPC will be put under one of the regions under the group based on resource status. e.g. Europe region group contains North Europe and West Europe regions. Possible values are: 'default', 'australia', 'canada', 'usCentral', 'usEast", 
-'usWest', 'france', 'germany', 'europe', 'unitedKingdom', 'japan', 'asia', 'india', 'southAmerica', 'usGovernment' annd 'usGovrnmentDod'. Read-only.|
+'usWest', 'france', 'germany', 'europeUnion', 'unitedKingdom', 'japan', 'asia', 'india', 'southAmerica', 'usGovernment', 'usGovrnmentDod', 'norway', 'switzerland' and 'southKorea'. Read-only.|
 
 ### cloudPcSupportedRegionStatus values
 
@@ -54,7 +54,7 @@ the CloudPC will be put under one of the regions under the group based on resour
 | usWest | The region belongs to US West region group |
 | france | The region belongs to France region group |
 | germany | The region belongs to Germany region group |
-| europe | The region belongs to Europe region group |
+| europeUnion | The region belongs to Europe Union region group |
 | unitedKingdom | The region belongs to United Kingdom region group |
 | japan | The region belongs to Japan region group |
 | asia | The region belongs to Asia region group |
@@ -63,6 +63,9 @@ the CloudPC will be put under one of the regions under the group based on resour
 | usGovernment | The region belongs to US Government region group |
 | usGovernmentDod | The region belongs to US Government DOD region group |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use |
+| norway | The region belongs to Norway region group |
+| switzerland | The region belongs to Switzerland region group |
+| southKorea | The region belongs to South Korea region group |
 
 ## Relationships
 
