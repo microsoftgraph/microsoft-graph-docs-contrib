@@ -42,13 +42,14 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Prefer:<br>odata.maxepagesize={x}|Set the max page size preference. If not specified, the response is with default page size. Default page size is 100. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [serviceHealthIssue](../resources/servicehealthissue.md) objects in the response body. The response is paginated and each page contains 100 objects.
+If successful, this method returns a `200 OK` response code and a collection of [serviceHealthIssue](../resources/servicehealthissue.md) objects in the response body. The response is paginated and default page size is 100.
 
 ## Example
 
