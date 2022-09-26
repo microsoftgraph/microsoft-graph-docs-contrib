@@ -61,6 +61,7 @@ PUT /organization/{organizationId}/branding/localizations/{organizationalBrandin
 | customTermsOfUseUrl | String | A custom URL to replace the default URL of the "Terms of Use" hyperlink in the footer. This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128characters. |
 | favicon | Stream | A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant. |
 | headerBackgroundColor | String | The RGB color to apply to customize the color of the header. |
+| headerLogo | Stream | A company logo that appears in the header of the sign-in page. The allowed types are PNG or JPEG not larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. |
 | loginPageLayoutConfiguration | [loginPageLayoutConfiguration](../resources/loginPageLayoutConfiguration.md) | Represents the layout configuration to be displayed on the login page for a tenant. |
 | loginPageTextVisibilitySettings | [loginPageTextVisibilitySettings](../resources/loginPageTextVisibilitySettings.md) | Represents the various texts that can be hidden on the login page for a tenant. All the properties can be updated. |
 | signInPageText | String | Text that appears at the bottom of the sign-in box. Use this to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be in Unicode format and not exceed 1024 characters. |
