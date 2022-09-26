@@ -23,7 +23,9 @@ Synchronization rules are updated as part of the [synchronization schema](synchr
 
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
+|containerFilterConfig|[containerFilterConfig](../resources/synchronization-containerfilterconfig.md)|The names and identifiers of containers that are in scope for a synchronization rule.|
 |editable       |Boolean    |`true` if the synchronization rule can be customized; `false` if this rule is read-only and should not be changed.|
+|groupFilterConfig|[containerFilterConfig](../resources/synchronization-containerfilterconfig.md)|The names and identifiers of groups that are in scope for a synchronization rule.|
 |id             |String     |Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.|
 |metadata       |[stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) collection |Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.|
 |name           |String     |Human-readable name of the synchronization rule. Not nullable.|
@@ -46,7 +48,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "containerFilterConfig": {
+    "@odata.type": "microsoft.graph.containerFilterConfig"
+  },
   "editable": true,
+  "groupFilterConfig": {
+    "@odata.type": "microsoft.graph.containerFilterConfig"
+  },
   "id": "String",
   "metadata": [{"@odata.type": "microsoft.graph.stringKeyStringValuePair"}],
   "name": "String",
