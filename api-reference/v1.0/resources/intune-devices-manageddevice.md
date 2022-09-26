@@ -92,6 +92,8 @@ Devices that are managed or pre-enrolled through Intune
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes. This property is read-only.|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name.|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. This property is read-only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
+|requireUserEnrollmentApproval|Boolean|Reports if the managed iOS device is user approval enrollment. This property is read-only.|
+|managementCertificateExpirationDate|DateTimeOffset|Reports device management certificate expiration date. This property is read-only.|
 |iccid|String|Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.|
 |udid|String|Unique Device Identifier for iOS and macOS devices. This property is read-only.|
 |notes|String|Notes on the device created by IT Admin|
@@ -102,6 +104,7 @@ Devices that are managed or pre-enrolled through Intune
 |Relationship|Type|Description|
 |:---|:---|:---|
 |deviceCategory|[deviceCategory](../resources/intune-devices-devicecategory.md)|Device category|
+|users|[user](../resources/intune-devices-user.md) collection|The primary users associated with the managed device.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -211,6 +214,8 @@ Here is a JSON representation of the resource.
   "freeStorageSpaceInBytes": 1024,
   "managedDeviceName": "String",
   "partnerReportedThreatState": "String",
+  "requireUserEnrollmentApproval": true,
+  "managementCertificateExpirationDate": "String (timestamp)",
   "iccid": "String",
   "udid": "String",
   "notes": "String",
@@ -218,9 +223,6 @@ Here is a JSON representation of the resource.
   "physicalMemoryInBytes": 1024
 }
 ```
-
-
-
 
 
 

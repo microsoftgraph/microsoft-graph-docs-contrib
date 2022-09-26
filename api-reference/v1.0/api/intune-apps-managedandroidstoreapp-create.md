@@ -78,7 +78,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1056
+Content-length: 1170
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -111,6 +111,12 @@ Content-length: 1056
     "v4_4": true,
     "v5_0": true,
     "v5_1": true,
+    "v6_0": true,
+    "v7_0": true,
+    "v7_1": true,
+    "v8_0": true,
+    "v8_1": true,
+    "v9_0": true,
     "v10_0": true,
     "v11_0": true
   }
@@ -122,7 +128,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1228
+Content-Length: 1342
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -158,14 +164,17 @@ Content-Length: 1228
     "v4_4": true,
     "v5_0": true,
     "v5_1": true,
+    "v6_0": true,
+    "v7_0": true,
+    "v7_1": true,
+    "v8_0": true,
+    "v8_1": true,
+    "v9_0": true,
     "v10_0": true,
     "v11_0": true
   }
 }
 ```
-
-
-
 
 
 

@@ -31,6 +31,3 @@ Possible values for a weekly schedule.
 
 
 
-
-
-

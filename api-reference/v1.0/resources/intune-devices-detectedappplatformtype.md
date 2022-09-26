@@ -33,6 +33,3 @@ Indicates the operating system / platform of the discovered application.  Some p
 
 
 
-
-
-

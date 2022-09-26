@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /users/{usersId}/removeAllDevicesFromManagement
+POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}/removeAllDevicesFromManagement
 ```
 
 ## Request headers
@@ -50,7 +50,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/v1.0/users/{usersId}/removeAllDevicesFromManagement
+POST https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}/removeAllDevicesFromManagement
 ```
 
 ### Response
@@ -58,9 +58,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
 
 
 
