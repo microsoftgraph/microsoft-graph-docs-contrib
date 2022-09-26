@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /me/appRoleAssignedResources?$count=true
 ConsistencyLevel: eventual
 
-GET /users/{usersId}/appRoleAssignedResources?$count=true
+GET /users/{userId}/appRoleAssignedResources?$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_appRoleAssignedResources_users"
+  "name": "list_approleassignedresources_users"
 }
 -->
 ``` http
@@ -70,7 +70,6 @@ ConsistencyLevel: eventual
 
 ### Response
 The following is an example of the response
-The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -88,6 +87,7 @@ Content-type: application/json
 {
   "value": [
     {
+      "id": "0b372abb-b32e-459c-b263-b81ab6448df1",
       "accountEnabled":true,
       "displayName":"amasf",
       "servicePrincipalType":"Application",
