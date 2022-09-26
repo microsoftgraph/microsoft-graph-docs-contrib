@@ -113,7 +113,7 @@ Please ensure you select 1.2 as the target version when configuring the eDiscove
 Please note that eDiscovery result templates have the following Adaptive Cards restrictions:
 1. Markdown is **not** supported. 
 1. Data binding expressions with `${}` are not supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello ${name}"` is not.
-1. Only data binding expressions for single-valued properties is supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello {employee.Name}"` is not.
+1. Only data binding expressions for single-valued properties are supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello {employee.Name}"` is not.
 
 ## Update a connection
 
