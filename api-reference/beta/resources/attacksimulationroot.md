@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationRoot resource type"
-description: "Provides the ability to launch a realistic phishing attack that organizations can learn from."
+description: "Represents an abstract type that provides the ability to launch a realistic phishing attack that organizations can learn from."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,13 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the ability to launch a realistic phishing attack that organizations can learn from.
-This is an abstract type.
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation training campaigns for a tenant.|
+|[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
 |[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
 
 ## Properties
@@ -29,7 +26,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |simulations|[simulation](../resources/simulation.md) collection|Represents an attack simulation training campaign in a tenant.|
-|simulationAutomations|[simulationAutomation](../resources/simulationautomation.md) collection|Represents simulation automations created to run on a tenant.|
+|simulationAutomations|[simulationAutomation](../resources/simulationautomation.md) collection|Represents simulation automation created to run on a tenant.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -45,4 +42,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.attackSimulationRoot"
 }
 ```
-

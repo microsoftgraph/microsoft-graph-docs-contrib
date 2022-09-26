@@ -1,18 +1,18 @@
 ---
-title: "Get simulationAutomations"
-description: "Get a attack simulation automation for an id for a tenant."
+title: "Get simulationAutomation"
+description: "Get an attack simulation automation for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get simulationAutomations
+# Get simulationAutomation
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a attack simulation automation for an id for a tenant.
+Get an attack simulation automation for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/attackSimulation/simulationAutomations/{id}
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}
 ```
 
 ## Optional query parameters
@@ -45,13 +45,13 @@ The following are examples of their use:
 }
 -->
 ``` http
-GET /security/attackSimulation/simulationAutomations/{id}?$count=true
-GET /security/attackSimulation/simulationAutomations/{id}?$filter={property} eq '{property-value}'
-GET /security/attackSimulation/simulationAutomations/{id}?$filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/simulationAutomations/{id}?$orderby={property}
-GET /security/attackSimulation/simulationAutomations/{id}?$skip={skipCount}
-GET /security/attackSimulation/simulationAutomations/{id}?$top=1
-GET /security/attackSimulation/simulationAutomations/{id}?$select={property}
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$count=true
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$filter={property} eq '{property-value}'
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$filter={property} eq '{property-value}'&$top=5
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$orderby={property}
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$skip={skipCount}
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$top=1
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$select={property}
 ```
 
 ## Request headers
@@ -64,27 +64,22 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [simulationAutomation](../resources/simulationautomation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [simulationAutomation](../resources/simulationautomation.md) object in the response body.
 
 ## Examples
 
-The following is an example of a request.
-
 ### Request
 
-# [HTTP](#tab/http)
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
-  "name": "list_simulationautomation"
+  "name": "get_simulationautomation"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulationAutomations/{id}
+GET https://graph.microsoft.com/beta/security/attackSimulation/simulationAutomations/{id}
 ```
-
----
-
-
 
 ### Response
 
@@ -109,15 +104,15 @@ Content-Type: application/json
     "status": "running",
     "createdDateTime": "2022-01-01T01:01:01.01Z",
     "createdBy": {
-    "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-    "displayName": "Reed Flores",
-    "email": "reed@contoso.com"
+        "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+        "displayName": "Reed Flores",
+        "email": "reed@contoso.com"
     },
     "lastModifiedDateTime": "2022-01-01T01:01:01.01Z",
     "lastModifiedBy": {
-    "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-    "displayName": "Reed Flores",
-    "email": "reed@contoso.com"
+        "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+        "displayName": "Reed Flores",
+        "email": "reed@contoso.com"
     },
     "lastRunDateTime": "2022-01-01T01:01:01.01Z",
     "nextRunDateTime": "2022-01-01T01:01:01.01Z"

@@ -1,6 +1,6 @@
 ---
 title: "assignedTrainingInfo resource type"
-description: "Represents assigned training's information in an attack simulation and training campaign."
+description: "Represents assignment information of a training in an attack simulation and training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.assignedTrainingInfo",
-  "assignedUserCount": "Integer",
-  "completedUserCount": "Integer",
+  "assignedUserCount": "Int32",
+  "completedUserCount": "Int32",
   "displayName": "String"
 }
 ```

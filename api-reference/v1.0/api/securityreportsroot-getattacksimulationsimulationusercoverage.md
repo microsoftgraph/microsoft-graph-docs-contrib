@@ -1,6 +1,6 @@
 ---
 title: "securityReportsRoot: getAttackSimulationSimulationUserCoverage"
-description: "List simulation coverage for users of a tenant in attack simulation and training campaigns."
+description: "List training coverage for each user of a tenant in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -44,14 +44,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [attackSimulationSimulationUserCoverage](../resources/attacksimulationsimulationusercoverage.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and an [attackSimulationSimulationUserCoverage](../resources/attacksimulationsimulationusercoverage.md) collection in the response body.
 
 ## Examples
 
 ### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "securityreportsrootthis.getattacksimulationsimulationusercoverage"
@@ -60,16 +59,15 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/reports/security/getAttackSimulationSimulationUserCoverage
 ```
----
-
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.attackSimulationSimulationUserCoverage)"
+  "@odata.type": "microsoft.graph.attackSimulationSimulationUserCoverage",
+  "isCollection": true
 }
 -->
 ``` http
@@ -77,8 +75,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.attackSimulationSimulationUserCoverage)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/reports/security/getAttackSimulationSimulationUserCoverage?$skiptoken=rZDNasMwEIRfxei%2bRLFWtgRxwZKsYCil0J9rcCORGlI7yHLbvH3j0pQefCqew7LMsOzHbEL%2fkbRuVzvfxTaeC6ItMpVxBKpKBkh5CcIKhLVUSLUtdaYFSbr3%2fe4%2b9Ccf4vmuefMFuW2GaH3cv3pXO5K0v3HdOf9ZEEqmP1fzuTmOfju27hKgYJbmFSjGNGCuLKRZJYEKIxApo6WQZHWzWYz0sXk5%2bmmdp%2fx78I35EEPbHQryNPgwzJKgqGiKUoK%2boACmQoFMDQdmM56uc2O4qZbt7EcwM65alPS%2fnW1DP56m0r4A",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.attackSimulationSimulationUserCoverage)",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/reports/security/getAttackSimulationSimulationUserCoverage?$skiptoken=rZDNasMwEIRfxei%2bRLFWtgRxwZKsYCil0J9rcCORGlI7yHLbvH3j0pQefCqew7LMsOzHbEL%2fkbRuVzvfxTaeC6ItMpVxBKpKBkh5CcIKhLVUSLUtdaYFSbr3%2fe4%2b9Ccf4vmuefMFuW2GaH3cv3pXO5K0v3HdOf9ZEEqmP1fzuTmOfju27hKgYJbmFSjGNGCuLKRZJYEKIxApo6WQZHWzWYz0sXk5%2bmmdp%2fx78I35EEPbHQryNPgwzJKgqGiKUoK%2boACmQoFMDQdmM56uc2O4qZbt7EcwM65alPS%2fnW1DP56m0r4A",
     "value": [
         {
             "simulationCount": 1063,
@@ -87,8 +85,8 @@ Content-Type: application/json
             "compromisedCount": 0,
             "attackSimulationUser": {
                 "userId": "9a00ce98-2c83-41be-89f7-6fdff7950aa9",
-                "displayName": "Vamsi Krishna",
-                "email": "vamsi@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"
+                "displayName": "Reed Flores",
+                "email": "reed@contoso.com"
             }
         },
         {

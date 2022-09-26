@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents events of a training assigned to a user in an attack simulation and training campaign. Training events include assigning the training, updating the training in progress, and completing the training.
 
 ## Properties
