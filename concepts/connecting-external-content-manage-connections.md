@@ -99,14 +99,14 @@ You can supply the default settings for each of the enabled content experiences 
 You can define how search results are displayed in the Microsoft Search results page by supplying the default result types for your content. A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It has one or more conditions and a result layout built using Adaptive Cards. The result layout would be used to render the search results when the associated conditions are met.
 
 ### Compliance settings
-Similar to enterprise search settings, you need to define how advanced eDiscovery search results should be displayed by supplying result types for your content. This will enable the eDiscovery manager to visualize the content when reviewing the datasets. Here’s an example of eDiscovery search review result pertaining to an Azure DevOps item in eDiscovery:
+Similar to enterprise search settings, you need to define how to display advanced eDiscovery search results by supplying result types for your content. This enables the eDiscovery manager to visualize the content when reviewing the datasets. Here's an example of an eDiscovery search review result of an Azure DevOps item in eDiscovery:
 
 ![eDiscovery search review result example for AzureDevOps item.](./images/connectors-images/connecting-external-content-connection-settings-eDiscovery-result-example.png)
 
 > [!IMPORTANT]
 > The Adaptive Card format is used for rendering results in eDiscovery. Unlike for the search experience, the eDiscovery experience only supports Adaptive Card elements up to version 1.2. Read further to learn about other restrictions for eDiscovery result templates.
 
-Please ensure you select the 1.2 as the target version when configuring the eDiscovery result template in the [Adaptive Card Designer](https://adaptivecards.io/designer/).
+Please ensure you select 1.2 as the target version when configuring the eDiscovery result template in the [Adaptive Card Designer](https://adaptivecards.io/designer/).
 
 ![AdaptiveCard Designer target version selector.](./images/connectors-images/connecting-external-content-connection-settings-adaptiveCard-target-version.png)
 
