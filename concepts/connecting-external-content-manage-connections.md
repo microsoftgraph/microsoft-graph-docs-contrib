@@ -96,7 +96,7 @@ Content-Type: application/json
 You can supply the default settings for each of the enabled content experiences using connection settings. These settings would affect content experiences as long as they are enabled.
 
 ### Search settings
-You can define how search results are displayed in the Microsoft Search results page by supplying the default result types for your content. A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It has one or more conditions and a result layout built using Adaptive Cards. The result layout would be used to render the search results when the associated conditions are met.
+You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content. A set of diplay templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules specifying one or more conditions. When these conditions are met, the result layout will be applied to the search result and displayed on the results page.
 
 ### Compliance settings
 Similar to enterprise search settings, you need to define how advanced eDiscovery search results should be displayed by supplying result types for your content. This will enable the eDiscovery manager to visualize the content when reviewing the datasets. Here’s an example of eDiscovery search review result pertaining to an Azure DevOps item in eDiscovery:
