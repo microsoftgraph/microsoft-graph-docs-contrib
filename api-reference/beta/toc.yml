@@ -13369,8 +13369,8 @@ items:
                 href: api/governanceroleassignmentrequest-update.md
               - name: Cancel
                 href: api/governanceroleassignmentrequest-cancel.md
-        - name: Lifecycle Workflows
-          displayName: Identity Governance, Joiner, Mover, Leaver
+        - name: Lifecycle Workflows (preview)
+          displayName: LCW, Identity Governance, Joiner, Mover, Leaver
           href: resources/identitygovernance-lifecycleworkflows-overview.md
           items:
           - name: Workflows
