@@ -355,6 +355,8 @@ items:
         items:
         - name: List app role assignments
           href: api/user-list-approleassignments.md
+        - name: List app role assigned resources
+          href: api/user-list-approleassignedresources.md
         - name: Add app role assignment
           href: api/user-post-approleassignments.md
         - name: Remove app role assignment
