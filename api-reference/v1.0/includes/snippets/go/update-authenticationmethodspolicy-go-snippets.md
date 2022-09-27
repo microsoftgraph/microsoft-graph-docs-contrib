@@ -70,7 +70,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

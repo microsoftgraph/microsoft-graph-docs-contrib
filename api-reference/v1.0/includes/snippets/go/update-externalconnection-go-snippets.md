@@ -13,7 +13,7 @@ requestBody.SetName(&name)
 description := "Connection to index HR service tickets"
 requestBody.SetDescription(&description) 
 
-graphClient.External().ConnectionsById("externalConnection-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.External().ConnectionsById("externalConnection-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

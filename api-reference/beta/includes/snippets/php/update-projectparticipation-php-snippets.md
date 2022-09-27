@@ -21,7 +21,7 @@ $client->setWebUrl('https://www.contoso.com');
 $requestBody->setClient($client);
 
 
-$graphServiceClient->me()->profile()->projectsById('projectParticipation-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->projectsById('projectParticipation-id')->patch($requestBody);
 
 
 ```
