@@ -52,7 +52,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "@odata.type": "Collcetions(microsoft.graph.attackSimulationTrainingUserCoverage)",
+  "@odata.type": "Collection(microsoft.graph.attackSimulationTrainingUserCoverage)",
 }
 -->
 ``` http
