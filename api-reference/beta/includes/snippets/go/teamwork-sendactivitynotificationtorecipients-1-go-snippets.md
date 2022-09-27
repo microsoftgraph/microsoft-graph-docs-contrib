@@ -59,7 +59,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.Teamwork().SendActivityNotificationToRecipients().Post(requestBody)
+graphClient.Teamwork().SendActivityNotificationToRecipients().Post(context.Background(), requestBody, nil)
 
 
 ```

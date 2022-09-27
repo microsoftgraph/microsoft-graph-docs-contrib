@@ -14,7 +14,7 @@ configuration := &graphconfig.B2cUserFlowsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().B2cUserFlows().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Identity().B2cUserFlows().Get(context.Background(), configuration)
 
 
 ```

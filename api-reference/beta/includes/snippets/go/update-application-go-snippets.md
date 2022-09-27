@@ -11,7 +11,7 @@ requestBody := graphmodels.NewApplication()
 displayName := "New display name"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.ApplicationsById("application-id").Patch(requestBody)
+graphClient.ApplicationsById("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

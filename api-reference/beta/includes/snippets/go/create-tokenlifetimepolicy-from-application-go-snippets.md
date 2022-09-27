@@ -13,7 +13,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ApplicationsById("application-id").TokenLifetimePolicies().Post(requestBody)
+graphClient.ApplicationsById("application-id").TokenLifetimePolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

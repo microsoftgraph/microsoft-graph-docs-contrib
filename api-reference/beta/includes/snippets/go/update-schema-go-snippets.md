@@ -22,7 +22,8 @@ property.SetIsSearchable(&isSearchable)
 isRetrievable := true
 property.SetIsRetrievable(&isRetrievable) 
 labels := []graphmodels.Labelable {
-	"title",
+	label := graphmodels.TITLE_LABEL 
+	property.SetLabel(&label) 
 
 }
 property.SetLabels(labels)
@@ -53,7 +54,7 @@ properties := []graphmodels.Propertyable {
 }
 requestBody.SetProperties(properties)
 
-graphClient.External().ConnectionsById("externalConnection-id").Schema().Patch(requestBody)
+graphClient.External().ConnectionsById("externalConnection-id").Schema().Patch(context.Background(), requestBody, nil)
 
 
 ```
