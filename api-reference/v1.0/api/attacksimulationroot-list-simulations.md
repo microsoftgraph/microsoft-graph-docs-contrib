@@ -44,13 +44,13 @@ The following are examples of their use:
 }
 -->
 ``` http
-GET /security/attackSimulation/simulations/{id}?$count=true
-GET /security/attackSimulation/simulations{id}?$filter={property} eq '{property-value}'
-GET /security/attackSimulation/simulations{id}?$filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/simulations{id}?$orderby={property}
-GET /security/attackSimulation/simulations{id}?$skipToken={skipToken}
-GET /security/attackSimulation/simulations{id}?$top=1
-GET /security/attackSimulation/simulations{id}?$select={property}
+GET /security/attackSimulation/simulations/?$count=true
+GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'
+GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'&$top=5
+GET /security/attackSimulation/simulations?$orderby={property}
+GET /security/attackSimulation/simulations?$skipToken={skipToken}
+GET /security/attackSimulation/simulations?$top=1
+GET /security/attackSimulation/simulations?$select={property}
 ```
 
 ## Request headers
