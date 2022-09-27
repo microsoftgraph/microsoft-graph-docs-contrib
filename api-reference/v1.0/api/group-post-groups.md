@@ -32,6 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                             |
 | Application                            | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
+For an app create a group with owners while it has the *Group.Create* permission, the following conditions apply:
++ The app can assign itself as the group's owner.
++ To create the group with users as owners, the app must have at least the *User.Read.All* permission.
++ To create the group with other service principals as owners, the app must have at least the *Application.Read.All* permission.
++ To create the group with either users or service principals as owners, the app must have at least the *Directory.Read.All* permission.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
