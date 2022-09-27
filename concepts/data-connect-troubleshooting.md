@@ -68,7 +68,16 @@ Below things to keep in mind for customers with multi-geo tenats to extract data
 
 3. Then on the Sink tab, simply specify the location where you wish to have the combined file created and make sure you select the *Merge files* behavior.
 
+## Serverless SQL pool service connectivity issue
+The issue you may be running into is similar to [this](https://learn.microsoft.com/en-us/azure/synapse-analytics/troubleshoot/troubleshoot-synapse-studio#notebook-websocket-connection-issue) when connecting Azure Synapse to the destination storage account. The issue is related Synapse and how it sets up a websocket in the browser to retrieve the data which is by default blocked on the customer internet proxy. 
+
+1. You can resolve this issue with an SSP request: "INTERNT PROXY (SWG) - EXCEPTION ON SECURITY FILTERING POLICY"
+
 ## Troubleshooting allow listing Network IP address with Azure Integration runtime
+
+![Screenshot describing error message 1](../concepts/data-connect-troubleshooting-azure-IR-1.png)
+
+![Screenshot describing error message 2](../concepts/data-connect-troubleshooting-azure-IR-2.png)
 
 If the destination storage account needs to be closed for public access, you will need to allow access for a particular set of Azure services IP addresses. Customers will need to allow list their IPs based on their region, the region of tenancy they want to extract data from and their Azure IR region.
 
