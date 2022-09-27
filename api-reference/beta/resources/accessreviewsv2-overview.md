@@ -1,13 +1,13 @@
 ---
 title: "Azure AD access reviews"
-description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights. This documentation serves the 2nd version of the APIs."
+description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of a principal's access rights. This documentation serves the 2nd version of the APIs."
 ms.localizationpriority: medium
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Azure AD access reviews
+# Azure Active Directory (Azure AD) access reviews
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of users' rights to access Azure AD resources. These Azure AD resources include groups, service principals, access packages, and privileged roles.
+Use Azure AD access reviews to configure one-time or recurring access reviews for attestation of a principal's right to access Azure AD resources. The principals are users or applications (service principals). The Azure AD resources include groups, applications (service principals), access packages, and privileged roles. Access reviews is a feature of Azure AD Identity Governance.
 
 Typical customer scenarios for access reviews include:
 
@@ -23,8 +23,9 @@ Typical customer scenarios for access reviews include:
 - Customers can review and certify employee access to Azure AD resources.
 - Customers can review and audit assignments to Azure AD privileged roles. This supports organizations in the management of privileged access.
 
-Note that the access reviews feature, including the API, is included in Azure AD Premium P2.  The tenant where an access review is being created must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription.
+The access reviews feature, including the API, is included in Azure AD Premium P2.  The tenant where an access review is being created must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription. For more information about the license requirements, see [Access reviews license requirements](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
 ## Methods
 
@@ -60,7 +61,7 @@ The following table lists the methods that you can use to interact with access r
 |[Create historyDefinitions](../api/accessreviewset-post-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Create a new [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
 |[Get accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Read the properties and relationships of an [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
 |[generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md)|Generate a URI for an instance that can be used to retrieve review history data.|
-|[List historyInstances](../api/accessreviewhistorydefinition-list-instances.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md)|Retrieve a list of the [accessReviewHistoryInstance](accessreviewhistoryinstance.md) objects and their properties.|
+|[List instances](../api/accessreviewhistorydefinition-list-instances.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md)|Retrieve a list of the [accessReviewHistoryInstance](accessreviewhistoryinstance.md) objects and their properties.|
 |**Policy**| | |
 |[Get accessReviewPolicy](../api/accessreviewpolicy-get.md)|[accessReviewPolicy](../resources/accessreviewpolicy.md)|Read the properties and relationships of an [accessReviewPolicy](../resources/accessreviewpolicy.md) object.|
 |[Update accessReviewPolicy](../api/accessreviewpolicy-update.md)|[accessReviewPolicy](../resources/accessreviewpolicy.md)|Update the properties of an [accessReviewPolicy](../resources/accessreviewpolicy.md) object.|
@@ -80,6 +81,7 @@ In addition, a user who is an assigned reviewer of an access review can manage t
 
 ## See also
 
+- [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)
 - [Tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Azure AD resources
 - [How an administrator can manage user access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
 - [How an administrator can manage guest access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)

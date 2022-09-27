@@ -7,28 +7,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetRequests( []SearchRequest {
-	msgraphsdk.NewSearchRequest(),
-	SetAdditionalData(map[string]interface{}{
-		"entityTypes":  []String {
-			"externalItem",
-		}
-		"contentSources":  []String {
-			"/external/connections/connectionfriendlyname",
-		}
-		"from": ,
-		"size": ,
-		"fields":  []String {
-			"title",
-			"description",
-		}
-	}
+requestBody := graphmodels.NewQueryPostRequestBody()
+
+
+searchRequest := graphmodels.NewSearchRequest()
+entityTypes := []graphmodels.EntityTypeable {
+	entityType := graphmodels.EXTERNALITEM_ENTITYTYPE 
+	searchRequest.SetEntityType(&entityType) 
+
 }
-options := &msgraphsdk.QueryRequestBuilderPostOptions{
-	Body: requestBody,
+searchRequest.SetEntityTypes(entityTypes)
+contentSources := []string {
+	"/external/connections/connectionfriendlyname",
+
 }
-result, err := graphClient.Search().Query().Post(options)
+searchRequest.SetContentSources(contentSources)
+query := graphmodels.NewSearchQuery()
+queryString := "contoso product"
+query.SetQueryString(&queryString) 
+searchRequest.SetQuery(query)
+from := int32(0)
+searchRequest.SetFrom(&from) 
+size := int32(25)
+searchRequest.SetSize(&size) 
+fields := []string {
+	"title",
+	"description",
+
+}
+searchRequest.SetFields(fields)
+
+requests := []graphmodels.SearchRequestable {
+	searchRequest,
+
+}
+requestBody.SetRequests(requests)
+
+result, err := graphClient.Search().Query().Post(context.Background(), requestBody, nil)
 
 
 ```

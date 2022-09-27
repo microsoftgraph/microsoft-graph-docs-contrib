@@ -1,7 +1,7 @@
 ---
 title: "Update deviceRegistrationPolicy"
 description: "Update the properties of a deviceRegistrationPolicy object."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -67,6 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 
 ### Request
 
+
 <!-- {
   "blockType": "request",
   "name": "update_deviceregistrationpolicy"
@@ -96,6 +97,7 @@ Content-Type: application/json
     }
 }
 ```
+
 
 ### Response
 

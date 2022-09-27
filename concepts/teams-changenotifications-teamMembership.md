@@ -9,7 +9,10 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for membership changes in teams and channels using Microsoft Graph
 
-Change notifications enable you to subscribe to membership changes (create, update, and delete) in teams and private channels. You can get notified whenever a member is added, removed, or updated in a team or in a private channel. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications enable you to subscribe to membership changes (create, update, and delete) in a [team](/graph/api/resources/team) or private [channel](/graph/api/resources/channel). You can get notified whenever a member is added, removed, or updated in a team or in a private channel. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+
+Continue with this article about scenarios for the [conversationMember](/graph/api/resources/conversationmember) resource in the **team** or **channel** context. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
+
 
 ## Subscribe to changes in membership of a particular team
 
@@ -17,18 +20,18 @@ To get change notifications for membership changes in a particular team, subscri
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | TeamMember.Read.All, TeamMember.ReadWrite.All | beta |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   | beta |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | TeamMember.Read.All, TeamMember.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   |
 
 >**Note:** Permissions marked with * are supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### Example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -51,17 +54,17 @@ To get change notifications for membership changes in all private channels in a 
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChannelMember.Read.All   | beta |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | ChannelMember.Read.All   |
 
 
 ### Example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -154,4 +157,8 @@ The **resource** and **@odata.id** properties can be used to make calls to Micro
 
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)
+- [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
+- [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
+- [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
+- [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)

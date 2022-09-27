@@ -2,7 +2,7 @@
 title: "changeNotificationCollection resource type"
 description: "Represents a collection of subscription notifications sent to the subscriber."
 ms.localizationpriority: medium
-author: "Jumaodhiss"
+author: "jumasure"
 doc_type: resourcePageType
 ms.prod: "change-notifications"
 ---
@@ -43,12 +43,16 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.changeNotificationCollection"
 }-->
-
-```json
+``` json
 {
-  "value": [],
+  "@odata.type": "#microsoft.graph.changeNotificationCollection",
   "validationTokens": [
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSU..."
+    "String"
+  ],
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.changeNotification"
+    }
   ]
 }
 ```

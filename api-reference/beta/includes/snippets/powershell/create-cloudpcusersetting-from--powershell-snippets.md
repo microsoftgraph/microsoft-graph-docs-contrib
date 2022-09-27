@@ -11,6 +11,10 @@ $params = @{
 	DisplayName = "Example"
 	SelfServiceEnabled = $false
 	LocalAdminEnabled = $true
+	RestorePointSetting = @{
+		FrequencyInHours = 16
+		UserRestoreEnabled = $true
+	}
 }
 
 New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter $params

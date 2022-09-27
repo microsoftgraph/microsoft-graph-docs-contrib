@@ -15,6 +15,7 @@ $params = @{
 	InferenceClassification = "other"
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 
 ```

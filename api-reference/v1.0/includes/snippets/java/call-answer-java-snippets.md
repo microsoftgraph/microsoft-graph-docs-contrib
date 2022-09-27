@@ -23,6 +23,7 @@ graphClient.communications().calls("{id}")
 		.withMediaConfig(mediaConfig)
 		.withAcceptedModalities(acceptedModalitiesList)
 		.withParticipantCapacity(participantCapacity)
+		.withCallOptions(null)
 		.build())
 	.buildRequest()
 	.post();

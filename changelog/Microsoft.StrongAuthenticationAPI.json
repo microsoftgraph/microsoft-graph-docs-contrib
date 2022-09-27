@@ -1,0 +1,54 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **passwordMethods** relationship to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [passwordAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/passwordAuthenticationMethod?view=graph-rest-1.0) resource and its associated methods. Use this resource and its associated methods to manage a user's sign-in password.",
+          "Target": "passwordAuthenticationMethod"
+        },
+        {
+          "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordResetResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [passwordResetResponse](https://learn.microsoft.com/en-us/graph/api/resources/passwordResetResponse?view=graph-rest-1.0) resource type.",
+          "Target": "passwordResetResponse"
+        },
+        {
+          "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+          "ApiChange": "Resource",
+          "ChangedApiName": "operations",
+          "ChangeType": "Addition",
+          "Description": "Added the **operations** relationship to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+          "ApiChange": "Resource",
+          "ChangedApiName": "longRunningOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [longRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/longRunningOperation?view=graph-rest-1.0) resource.",
+          "Target": "longRunningOperation"
+        }
+      ],
+      "Id": "e4a45e48-5a54-409a-a104-884f77a6dc97",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-12T00:00:38.715986Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    }
+  ]
+}

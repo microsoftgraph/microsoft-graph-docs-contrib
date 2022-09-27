@@ -33,12 +33,13 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |:-------------|:------------|:------------|
 |completedDate|DateTimeOffset|The date of the end of processing, either successful or failure, of a request. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|customExtensionHandlerInstances|[customExtensionHandlerInstance](../resources/customextensionhandlerinstance.md) collection| A collection of [custom workflow extension](customaccesspackageworkflowextension.md) instances being run on an assignment request. Read-only. |
 |id|String| Read-only.|
 |isValidationOnly|Boolean|True if the request is not to be processed for assignment.|
 |justification|String|The requestor's supplied justification.|
 |requestState|String|One of `PendingApproval`, `Canceled`,  `Denied`, `Delivering`, `Delivered`, `PartiallyDelivered`, `DeliveryFailed`, `Submitted` or `Scheduled`. Read-only.|
 |requestStatus|String|More information on the request processing status. Read-only.|
-|requestType|String|One of `UserAdd`, `UserRemove`, `AdminAdd`, `AdminRemove` or `SystemRemove`. A request from the user themselves would have requestType of `UserAdd` or `UserRemove`. Read-only.|
+|requestType|String|One of `UserAdd`, `UserExtend`, `UserUpdate`, `UserRemove`, `AdminAdd`, `AdminRemove` or `SystemRemove`. A request from the user themselves would have requestType of `UserAdd`, `UserUpdate` or `UserRemove`. Read-only.|
 |schedule|[requestSchedule](requestschedule.md)| The range of dates that access is to be assigned to the requestor. Read-only.|
 |answers|[accessPackageAnswer](accesspackageanswer.md) collection|Answers provided by the requestor to [accessPackageQuestions](accesspackagequestion.md) asked of them at the time of request.|
 
@@ -53,6 +54,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 
 ## JSON representation
 
+
 The following is a JSON representation of the resource.
 
 <!-- {
@@ -66,31 +68,29 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "createdDateTime": "string",
-    "completedDate": "string",
-    "id": "string",
-    "requestType": "string",
-    "requestState": "string",
-    "requestStatus": "string",
-    "isValidationOnly": false,
-    "justification": "string",
-    "answers": [{
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "string",
-        "answeredQuestion": {
-            "id": "string",
-            "text": {
-                "defaultText": "string",
-                "localizedTexts": [{
-                    "text": "string",
-                    "languageCode": "string"
-                }]
-            },
-            "isRequired": true,
-            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-            "isSingleLineQuestion": true
-        }
-    }]
+  "@odata.type": "#microsoft.graph.accessPackageAssignmentRequest",
+  "id": "String (identifier)",
+  "requestType": "String",
+  "requestState": "String",
+  "requestStatus": "String",
+  "isValidationOnly": "Boolean",
+  "createdDateTime": "String (timestamp)",
+  "completedDate": "String (timestamp)",
+  "expirationDateTime": "String (timestamp)",
+  "justification": "String",
+  "schedule": {
+    "@odata.type": "microsoft.graph.requestSchedule"
+  },
+  "answers": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageAnswerString"
+    }
+  ],
+  "customExtensionHandlerInstances": [
+    {
+      "@odata.type": "microsoft.graph.customExtensionHandlerInstance"
+    }
+  ]
 }
 ```
 

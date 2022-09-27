@@ -8,8 +8,13 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var cloudPcOrganizationSettings = new CloudPcOrganizationSettings
 {
+	EnableMEMAutoEnroll = true,
+	OsVersion = CloudPcOperatingSystem.Windows11,
 	UserAccountType = CloudPcUserAccountType.StandardUser,
-	OsVersion = CloudPcOperatingSystem.Windows11
+	WindowsSettings = new CloudPcWindowsSettings
+	{
+		Language = "en-US"
+	}
 };
 
 await graphClient.DeviceManagement.VirtualEndpoint.OrganizationSettings

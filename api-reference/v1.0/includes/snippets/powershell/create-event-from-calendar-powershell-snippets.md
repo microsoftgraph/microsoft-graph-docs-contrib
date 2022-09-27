@@ -35,6 +35,7 @@ $params = @{
 	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
 
 ```

@@ -12,15 +12,16 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphCloudPcOnPremisesConnection *cloudPcOnPremisesConnection = [[MSGraphCloudPcOnPremisesConnection alloc] init];
-[cloudPcOnPremisesConnection setDisplayName:@"Display Name value"];
+[cloudPcOnPremisesConnection setDisplayName:@"test-canary-02"];
+[cloudPcOnPremisesConnection setType: [MSGraphCloudPcOnPremisesConnectionType hybridAzureADJoin]];
 [cloudPcOnPremisesConnection setSubscriptionId:@"0ac520ee-14c0-480f-b6c9-0a90c585ffff"];
-[cloudPcOnPremisesConnection setSubscriptionName:@"Subscription Name value"];
-[cloudPcOnPremisesConnection setAdDomainName:@"Active Directory Domain Name value"];
-[cloudPcOnPremisesConnection setAdDomainUsername:@"Active Directory Domain User Name value"];
-[cloudPcOnPremisesConnection setOrganizationalUnit:@"Organization Unit value"];
-[cloudPcOnPremisesConnection setResourceGroupId:@"/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG"];
-[cloudPcOnPremisesConnection setVirtualNetworkId:@"/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet"];
-[cloudPcOnPremisesConnection setSubnetId:@"/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"];
+[cloudPcOnPremisesConnection setSubscriptionName:@"CPC customer 001 test subscription"];
+[cloudPcOnPremisesConnection setAdDomainName:@"contoso001.com"];
+[cloudPcOnPremisesConnection setAdDomainUsername:@"dcadmin"];
+[cloudPcOnPremisesConnection setOrganizationalUnit:@"OU=Domain Controllers, DC=contoso001, DC=com"];
+[cloudPcOnPremisesConnection setResourceGroupId:@"/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG"];
+[cloudPcOnPremisesConnection setVirtualNetworkId:@"/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET"];
+[cloudPcOnPremisesConnection setSubnetId:@"/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet"];
 
 NSError *error;
 NSData *cloudPcOnPremisesConnectionData = [cloudPcOnPremisesConnection getSerializedDataWithError:&error];

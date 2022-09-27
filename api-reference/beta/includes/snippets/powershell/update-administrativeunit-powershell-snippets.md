@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	DisplayName = "displayName-value"
-	Description = "description-value"
-	Visibility = "visibility-value"
+	MembershipType = "Dynamic"
+	MembershipRule = "(user.country -eq "United States")"
+	MembershipRuleProcessingState = "On"
 }
 
 Update-MgAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
