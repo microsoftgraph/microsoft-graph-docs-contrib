@@ -1,6 +1,6 @@
 # Microsoft Graph documentation
 
-Thank you for your interest in Microsoft Graph documentation! For the best experience, we recommend you view this content on the [Microsoft Graph Developer Portal](https://docs.microsoft.com/graph).
+Thank you for your interest in Microsoft Graph documentation! For the best experience, we recommend you view this content on the [Microsoft Graph Developer Portal](https://learn.microsoft.com/graph).
 
 ## Give us your feedback
 
