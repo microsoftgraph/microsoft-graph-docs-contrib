@@ -52,7 +52,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "@odata.type": "Collection(microsoft.graph.attackSimulationTrainingUserCoverage)",
+  "name": "securityreportsrootthis.getattacksimulationtrainingusercoverage"
 }
 -->
 ``` http
@@ -65,8 +65,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attackSimulationTrainingUserCoverage",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.attackSimulationTrainingUserCoverage)"
 }
 -->
 ``` http
