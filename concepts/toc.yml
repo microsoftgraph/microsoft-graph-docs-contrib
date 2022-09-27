@@ -322,6 +322,15 @@ items:
                 href: tutorial-riskdetection-api.md
           - name: Governance
             items:
+              - name: Automate user lifecycle
+                displayName: LCW, Lifecycle Workflows
+                items:
+                  - name: Automate employee onboarding tasks
+                    href: tutorial-lifecycle-workflows-onboard-custom-workflow.md
+                  - name: Offboard employees in real-time
+                    href: tutorial-lifecycle-workflows-scheduled-leaver.md
+                  - name: Automate employee offboarding tasks
+                    href: tutorial-lifecycle-workflows-offboard-custom-workflow.md
               - name: Manage access to resources
                 href: tutorial-access-package-api.md
                 displayName: governance, identity
