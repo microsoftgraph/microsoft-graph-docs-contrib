@@ -11,12 +11,9 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new GroupSetting();
 $valuesSettingValue1 = new SettingValue();
-$additionalData = [
-'name' => 'AllowToAddGuests', 
-'value' => 'false', 
-];
-$valuesSettingValue1->setAdditionalData($additionalData);
+$valuesSettingValue1->setName('AllowToAddGuests');
 
+$valuesSettingValue1->setValue('false');
 
 
 $valuesArray []= $valuesSettingValue1;

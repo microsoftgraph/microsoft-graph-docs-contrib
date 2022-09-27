@@ -14,7 +14,7 @@ requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType) 
 justification := ""
 requestBody.SetJustification(&justification) 
-accessPackageResource := graphmodels.NewaccessPackageResource()
+accessPackageResource := graphmodels.NewAccessPackageResource()
 displayName := "Faculty cafeteria ordering"
 accessPackageResource.SetDisplayName(&displayName) 
 description := "Example application"

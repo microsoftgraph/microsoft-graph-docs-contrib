@@ -13,15 +13,12 @@ requestBody.SetComment(&comment)
 
 
 recipient := graphmodels.NewRecipient()
-additionalData := map[string]interface{}{
-emailAddress := graphmodels.New()
+emailAddress := graphmodels.NewEmailAddress()
 name := "name-value"
 emailAddress.SetName(&name) 
 address := "address-value"
 emailAddress.SetAddress(&address) 
-	recipient.SetEmailAddress(emailAddress)
-}
-recipient.SetAdditionalData(additionalData)
+recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,

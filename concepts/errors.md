@@ -47,7 +47,7 @@ named **error**. This object includes all the details of the error. You can use 
     "code": "invalidRange",
     "message": "Uploaded fragment overlaps with existing data.",
     "innerError": {
-      "requestId": "request-id",
+      "request-id": "request-id",
       "date": "date-time"
     }
   }
