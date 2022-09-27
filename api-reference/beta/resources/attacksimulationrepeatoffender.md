@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationRepeatOffender resource type"
-description: "Represents repeat offender user in attack simulation and training."
+description: "Represents a user in a tenant who has given way to attacks more than once across various attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -18,7 +18,7 @@ Represents a user in a tenant who has given way to attacks more than once across
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User in an attack simulation and training campaign.|
+|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|The user in an attack simulation and training campaign.|
 |repeatOffenceCount|Int32|Number of repeat offences of the user in attack simulation and training campaigns.|
 
 ## Relationships
@@ -34,10 +34,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.attackSimulationRepeatOffender",
-  "repeatOffenceCount": "Integer",
   "attackSimulationUser": {
     "@odata.type": "microsoft.graph.attackSimulationUser"
-  }
+  },
+  "repeatOffenceCount": "Int32"
 }
 ```
 

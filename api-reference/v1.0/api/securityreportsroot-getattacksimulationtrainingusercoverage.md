@@ -1,6 +1,6 @@
 ---
 title: "securityReportsRoot: getAttackSimulationTrainingUserCoverage"
-description: "List training coverage for users of a tenant in attack simulation and training campaigns."
+description: "List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -44,14 +44,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [attackSimulationTrainingUserCoverage](../resources/attacksimulationtrainingusercoverage.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and an [attackSimulationTrainingUserCoverage](../resources/attacksimulationtrainingusercoverage.md) collection in the response body.
 
 ## Examples
 
 ### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "securityreportsrootthis.getattacksimulationtrainingusercoverage"
@@ -60,17 +59,15 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/reports/security/getAttackSimulationTrainingUserCoverage
 ```
----
-
-
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.attackSimulationTrainingUserCoverage)"
+  "@odata.type": "microsoft.graph.attackSimulationTrainingUserCoverage",
+  "isCollection": true
 }
 -->
 ``` http
@@ -78,8 +75,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.attackSimulationTrainingUserCoverage)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/reports/security/getAttackSimulationTrainingUserCoverage?$skiptoken=+RID%3",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.attackSimulationTrainingUserCoverage)",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/reports/security/getAttackSimulationTrainingUserCoverage?$skiptoken=+RID%3",
     "value": [
         {
             "userTrainings": [

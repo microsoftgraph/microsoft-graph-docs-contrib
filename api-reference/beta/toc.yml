@@ -14850,9 +14850,9 @@ items:
           items:
           - name: Simulation
             href: resources/simulation.md
-          - name: List simulations
+          - name: List
             href: api/attacksimulationroot-list-simulations.md
-          - name: Get simulation
+          - name: Get
             href: api/attacksimulationroot-get-simulations.md
           - name: List simulation users
             href: api/usersimulationdetails-list.md
@@ -14864,14 +14864,14 @@ items:
             href: resources/simulationautomation.md
           - name: List
             href: api/attacksimulationroot-list-simulationautomations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulationautomations.md
         - name: Simulation automation run
           items:
           - name: Simulation automation run
             href: resources/simulationautomationrun.md
           - name: List
             href: api/simulationautomation-list-runs.md
-          - name: Get
-            href: api/attacksimulationroot-get-simulationautomations.md
         - name: Reports
           items:
           - name: Attack simulation reports

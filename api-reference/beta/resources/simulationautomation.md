@@ -19,7 +19,8 @@ Represents simulation automation created to run on a tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of the [simulationAutomation](../resources/simulationautomation.md) objects and their properties.|
+|[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
+|[Get simulationAutomation](../api/attacksimulationroot-get-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md)|Get an attack simulation automation for a tenant.|
 |[List runs](../api/simulationautomation-list-runs.md)|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|Get a list of the attack simulation automation runs for a tenant.|
 
 ## Properties

@@ -1,6 +1,6 @@
 ---
 title: "securityReportsRoot: getAttackSimulationTrainingUserCoverage"
-description: "List training coverage for users of a tenant in attack simulation and training campaigns."
+description: "List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [attackSimulationTrainingUserCoverage](../resources/attacksimulationtrainingusercoverage.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and an [attackSimulationTrainingUserCoverage](../resources/attacksimulationtrainingusercoverage.md) collection in the response body.
 
 ## Examples
 
@@ -93,12 +93,13 @@ GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationTrainin
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.attackSimulationTrainingUserCoverage)"
+  "@odata.type": "microsoft.graph.attackSimulationTrainingUserCoverage",
+  "isCollection": true
 }
 -->
 ``` http

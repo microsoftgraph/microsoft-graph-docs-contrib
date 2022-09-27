@@ -66,11 +66,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-The following is an example of a request.
-
 ### Request
 
-# [HTTP](#tab/http)
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_simulationautomation"
@@ -80,10 +79,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulationAutomations
 ```
 
----
-
-
-
 ### Response
 
 The following is an example of the response.
@@ -92,7 +87,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.simulationAutomation)"
+  "@odata.type": "microsoft.graph.simulationAutomation",
+  "isCollection": true
 }
 -->
 ``` http

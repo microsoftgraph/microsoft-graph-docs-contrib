@@ -32,11 +32,10 @@ GET /security/attackSimulation/simulations
 ```
 
 ## Optional query parameters
-This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$orderby`, `$skiptoken`, `$top`, `$select`.
 
-The following properties support `$filter` and `$orderby`: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **status**.
+This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. You can use the `$filter` and `$orderby` query parameters on the **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, and **status** properties.
 
-Use `@odata.nextLink` for pagination.
+If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 
 The following are examples of their use:
 
@@ -45,15 +44,14 @@ The following are examples of their use:
 }
 -->
 ``` http
-GET /security/attackSimulation/simulations?$count=true
-GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'
-GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/simulations?$orderby={property}
-GET /security/attackSimulation/simulations?$top=1
-GET /security/attackSimulation/simulations?$select={property}
+GET /security/attackSimulation/simulations/{id}?$count=true
+GET /security/attackSimulation/simulations{id}?$filter={property} eq '{property-value}'
+GET /security/attackSimulation/simulations{id}?$filter={property} eq '{property-value}'&$top=5
+GET /security/attackSimulation/simulations{id}?$orderby={property}
+GET /security/attackSimulation/simulations{id}?$skipToken={skipToken}
+GET /security/attackSimulation/simulations{id}?$top=1
+GET /security/attackSimulation/simulations{id}?$select={property}
 ```
-
-For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -71,7 +69,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-# [HTTP](#tab/http)
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_simulation"
@@ -81,16 +80,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations
 ```
 
----
-
-
-
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.simulation)"
+  "@odata.type": "microsoft.graph.simulation"
+  "isCollection": true
 }
 -->
 ``` http
@@ -109,14 +108,14 @@ Content-Type: application/json
       "createdDateTime": "2021-01-01T01:01:01.01Z",
       "createdBy": {
         "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-        "displayName": "Sample User",
-        "email": "sampleuser@contoso.com"
+        "displayName": "Reed Flores",
+        "email": "reed@contoso.com"
       },
       "lastModifiedDateTime": "2021-01-01T01:01:01.01Z",
       "lastModifiedBy": {
         "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-        "displayName": "Sample User",
-        "email": "sampleuser@contoso.com"
+        "displayName": "Reed Flores",
+        "email": "reed@contoso.com"
       },
       "launchDateTime": "2021-01-01T02:01:01.01Z",
       "completionDateTime": "2021-01-07T01:01:01.01Z",

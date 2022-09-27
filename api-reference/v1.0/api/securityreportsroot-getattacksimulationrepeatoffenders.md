@@ -1,6 +1,6 @@
 ---
 title: "securityReportsRoot: getAttackSimulationRepeatOffenders"
-description: "List repeat offender users of a tenant in attack simulation and training campaigns."
+description: "List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns.
 
 This function supports `@odata.nextLink` for pagination.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,14 +44,14 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [attackSimulationRepeatOffender](../resources/attacksimulationrepeatoffender.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and an [attackSimulationRepeatOffender](../resources/attacksimulationrepeatoffender.md) collection in the response body.
 
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "securityreportsrootthis.getattacksimulationrepeatoffenders"
@@ -60,17 +61,14 @@ The following is an example of a request.
 GET https://graph.microsoft.com/v1.0/reports/security/getAttackSimulationRepeatOffenders
 ```
 
----
-
-
-
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.attackSimulationRepeatOffender)"
+  "@odata.type": "microsoft.graph.attackSimulationRepeatOffender",
+  "isCollection": true
 }
 -->
 ``` http
@@ -78,23 +76,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.attackSimulationRepeatOffender)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/reports/security/getAttackSimulationRepeatOffenders?$skiptoken=+RID%3",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.attackSimulationRepeatOffender)",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/reports/security/getAttackSimulationRepeatOffenders?$skiptoken=+RID%3",
     "value": [
         {
             "repeatOffenceCount": 5,
             "attackSimulationUser": {
                 "userId": "6fcdab00-385b-46f2-a329-b843b49e9147",
-                "displayName": "anadi_testing",
-                "email": ""
+                "displayName": "Reed Flores",
+                "email": "reed@contoso.com"
             }
         },
         {
             "repeatOffenceCount": 638,
             "attackSimulationUser": {
                 "userId": "478a22cd-aecc-41df-b995-88c8de17aaf5",
-                "displayName": "attacksim",
-                "email": "attacksim@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"
+                "displayName": "Reed Flores",
+                "email": "reed@contoso.com"
             }
         }
     ]

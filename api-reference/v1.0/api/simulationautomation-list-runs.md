@@ -32,7 +32,7 @@ GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/ru
 ```
 
 ## Optional query parameters
-This method supports the `$count`, `$skiptoken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 
@@ -67,8 +67,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_simulationautomationrun"
@@ -77,11 +75,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulationAutomations/fbad62b0-b32d-b6ac-9f48-d84bbea08f96/runs
 ```
-
-
----
-
-
 
 ### Response
 
