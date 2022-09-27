@@ -25,8 +25,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|simulations|[simulation](../resources/simulation.md) collection|Represents an attack simulation training campaign in a tenant.|
 |simulationAutomations|[simulationAutomation](../resources/simulationautomation.md) collection|Represents simulation automation created to run on a tenant.|
+|simulations|[simulation](../resources/simulation.md) collection|Represents an attack simulation training campaign in a tenant.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

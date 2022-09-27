@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationInfo resource type"
-description: "Represents threat submission attack simulation information"
+description: "Represents attack simulation information for threat submission."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents threat submission's attack simulation information. If an email was an attack simulation email, the email threat submission would contain corresponding attack simulation information.
+Represents attack simulation information for threat submission. If an email was an attack simulation email, the email threat submission would contain corresponding attack simulation information.
 
 ## Properties
 | Property              | Type           | Description                          |
 |:----------------------|:---------------|:-------------------------------------|
-| attackSimDateTime     | DateTimeOffset | Specifies the date time of the attack simulation.   |
-| attackSimDurationTime | Duration       | Specifies the duration (in time) for the attack simulation  |
-| attackSimId           | Guid           | Specifies the activity id for the attack simulation. |
-| attackSimUserId       | String         | Specifies the user id of the user who got the attack simulation email   |
+| attackSimDateTime     | DateTimeOffset | The date and time of the attack simulation.   |
+| attackSimDurationTime | Duration       | The duration (in time) for the attack simulation.  |
+| attackSimId           | Guid           | The activity ID for the attack simulation. |
+| attackSimUserId       | String         | The unique identifier for the user who got the attack simulation email.   |
 
 ## Relationships
 None.
@@ -36,10 +36,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.attackSimulationInfo",
-  "attackSimId": "Guid",
-  "attackSimDateTime": "String (timestamp)",
+  "attackSimDateTime": "String (timestamp)",  
   "attackSimDurationTime": "String (duration)",
+  "attackSimId": "Guid",
   "attackSimUserId": "String"
 }
 ```
-

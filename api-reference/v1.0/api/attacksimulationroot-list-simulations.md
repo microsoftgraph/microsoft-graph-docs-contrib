@@ -44,7 +44,7 @@ The following are examples of their use:
 }
 -->
 ``` http
-GET /security/attackSimulation/simulations/?$count=true
+GET /security/attackSimulation/simulations?$count=true
 GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'
 GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'&$top=5
 GET /security/attackSimulation/simulations?$orderby={property}

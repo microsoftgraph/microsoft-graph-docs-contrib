@@ -43,13 +43,13 @@ The following are examples of their use:
 }
 -->
 ``` http
-GET /security/attackSimulation/simulationAutomations/{id}?$count=true
-GET /security/attackSimulation/simulationAutomations/{id}?$filter={property} eq '{property-value}'
-GET /security/attackSimulation/simulationAutomations/{id}?$filter={property} eq '{property-value}'&$top=5
-GET /security/attackSimulation/simulationAutomations/{id}?$orderby={property}
-GET /security/attackSimulation/simulationAutomations/{id}?$skip={skipCount}
-GET /security/attackSimulation/simulationAutomations/{id}?$top=1
-GET /security/attackSimulation/simulationAutomations/{id}?$select={property}
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$count=true
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$filter={property} eq '{property-value}'
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$filter={property} eq '{property-value}'&$top=5
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$orderby={property}
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$skip={skipCount}
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$top=1
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}?$select={property}
 ```
 
 ## Request headers

@@ -1,6 +1,6 @@
 ---
 title: "emailIdentity resource type"
-description: "Represent email identity of a user."
+description: "Represents the email identity of a user."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-Represent email identity of a user.
-
+Represents the email identity of a user.
 
 Inherits from [identity](../resources/identity.md).
 
@@ -22,7 +20,7 @@ Inherits from [identity](../resources/identity.md).
 |:---|:---|:---|
 |displayName|String|Display name of the user. Inherited from [identity](../resources/identity.md).|
 |email|String|Email address of the user.|
-|id|String|ID of the user. Inherited from [identity](../resources/identity.md).|
+|id|String|The unique identifier for the user. Inherited from [identity](../resources/identity.md).|
 
 ## Relationships
 None.
@@ -37,9 +35,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.emailIdentity",
-  "id": "String (identifier)",
   "displayName": "String",
-  "email": "String"
+  "email": "String",
+  "id": "String (identifier)"
 }
 ```
-
