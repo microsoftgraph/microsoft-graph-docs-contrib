@@ -15,7 +15,7 @@ Create a new [application](../resources/application.md) object.
 
 > [!IMPORTANT]
 > Adding [**passwordCredential**](../resources/passwordcredential.md) when creating applications is not supported. Use the [addPassword](application-addpassword.md) method to add passwords for an application.
-> Do not share your application client id broadly. Adding your application id (clientId) in technical support documentation or samples may end up in unintentional or misuse of your application as the identity getting tokens in a public client flow.
+> Do not share application client IDs in API documentation or code samples.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
