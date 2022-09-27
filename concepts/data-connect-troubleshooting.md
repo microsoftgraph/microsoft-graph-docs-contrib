@@ -77,7 +77,7 @@ The issue you may be running into is similar to [this](https://learn.microsoft.c
 
 ![Screenshot describing error message 1](../concepts/data-connect-troubleshooting-azure-IR-1.png)
 
-![Screenshot describing error message 2](../concepts/data-connect-troubleshooting-azure-IR-2.png)
+
 
 If the destination storage account needs to be closed for public access, you will need to allow access for a particular set of Azure services IP addresses. Customers will need to allow list their IPs based on their region, the region of tenancy they want to extract data from and their Azure IR region.
 
