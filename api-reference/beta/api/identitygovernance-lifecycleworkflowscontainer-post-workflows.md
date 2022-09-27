@@ -72,7 +72,10 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 
-The following is an example of a request.
+The following is an example of a request that creates a workflow with the following configuration:
++ It's a "leaver" workflow that's enabled and schedule to run.
++ It runs for new users that are based in Australia, on their employeeHireDate.
++ Two tasks are carried out when the workflow runs: the user's account is enabled and a "Welcome" email is sent to the user.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -83,7 +86,6 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 Content-Type: application/json
-Content-length: 454
 
 {
     "category": "joiner",
