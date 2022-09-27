@@ -98,7 +98,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attackSimulationTrainingUserCoverage",
+  "@odata.type": "Collcetions(microsoft.graph.attackSimulationTrainingUserCoverage)",
   "isCollection": true
 }
 -->
