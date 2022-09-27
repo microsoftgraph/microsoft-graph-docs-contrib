@@ -88,8 +88,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.simulation"
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.simulation)"
 }
 -->
 ``` http

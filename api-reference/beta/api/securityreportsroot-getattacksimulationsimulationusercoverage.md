@@ -98,7 +98,6 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "Collections(microsoft.graph.attackSimulationSimulationUserCoverage)",
-  "isCollection": true
 }
 -->
 ``` http
