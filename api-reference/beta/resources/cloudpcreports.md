@@ -21,7 +21,7 @@ Represents the Windows 365 Cloud PC related reports, includes Windows 365 Cloud 
 |[getDailyAggregatedRemoteConnectionReports](../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md)|Stream|Get the daily aggregated remote connection reports like round trip time, available bandwidth and so on in a given period.|
 |[getRealTimeRemoteConnectionLatency](../api/cloudpcreports-getrealtimeremoteconnectionlatency.md)|Stream|Get the real time remote connection latency reports like current round trip time, available bandwidth and so on of a Cloud PC.|
 |[getRealTimeRemoteConnectionStatus](../api/cloudpcreports-getrealtimeremoteconnectionstatus.md)|Stream|Get the real time remote connection status reports like sign in status, days since last use of a Cloud PC.|
-|[getRemoteConnectionHistoricalReports](../api/cloudpcreports-getremoteconnectionhistoricalreports.md)|Stream|Get a Cloud PC's the remote connection historical reports like signInDateTime, signOutDateTime and usageInHour in a given period.|
+|[getRemoteConnectionHistoricalReports](../api/cloudpcreports-getremoteconnectionhistoricalreports.md)|Stream|Get a Cloud PC's remote connection historical reports like signInDateTime, signOutDateTime and usageInHour in a given period.|
 |[getTotalAggregatedRemoteConnectionReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports like usage, daysSinceLastUse and so on in a given period.|
 
 

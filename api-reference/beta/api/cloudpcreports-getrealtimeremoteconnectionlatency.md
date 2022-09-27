@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getRealTimeRemoteConnectionLatency"
-description: "Get the real time connection latency related information like RTT and etc of Cloud PC."
+description: "Get the real time connection latency related information like RTT and etc of a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the real time connection latency related information like RTT and etc of Cloud PC.s
+Get the real time connection latency related information like RTT and etc of a Cloud PC.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
