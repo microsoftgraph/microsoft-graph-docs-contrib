@@ -44,7 +44,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com

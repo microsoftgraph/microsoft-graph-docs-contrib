@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-userId := "user-id"
-itemPhoneId := "itemPhone-id"
-graphClient.UsersById(&userId).Profile().PhonesById(&itemPhoneId).Delete()
+
+graphClient.UsersById("user-id").Profile().PhonesById("itemPhone-id").Delete(context.Background(), nil)
 
 
 ```

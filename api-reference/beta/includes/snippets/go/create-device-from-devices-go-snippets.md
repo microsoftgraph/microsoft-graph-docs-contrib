@@ -7,26 +7,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewDevice()
+requestBody := graphmodels.NewDevice()
 accountEnabled := true
-requestBody.SetAccountEnabled(&accountEnabled)
-requestBody.SetAlternativeSecurityIds( []AlternativeSecurityId {
-	msgraphsdk.NewAlternativeSecurityId(),
-	SetAdditionalData(map[string]interface{}{
-		"type": ,
-		"identityProvider": "identityProvider-value",
-		"key": "base64Y3YxN2E1MWFlYw==",
-	}
+requestBody.SetAccountEnabled(&accountEnabled) 
+
+
+alternativeSecurityId := graphmodels.NewAlternativeSecurityId()
+type := int32(99)
+alternativeSecurityId.SetType(&type) 
+identityProvider := "identityProvider-value"
+alternativeSecurityId.SetIdentityProvider(&identityProvider) 
+key := []byte("base64Y3YxN2E1MWFlYw==")
+alternativeSecurityId.SetKey(&key) 
+
+alternativeSecurityIds := []graphmodels.AlternativeSecurityIdable {
+	alternativeSecurityId,
+
 }
-approximateLastSignInDateTime, err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
-requestBody.SetApproximateLastSignInDateTime(&approximateLastSignInDateTime)
+requestBody.SetAlternativeSecurityIds(alternativeSecurityIds)
+approximateLastSignInDateTime , err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
+requestBody.SetApproximateLastSignInDateTime(&approximateLastSignInDateTime) 
 deviceId := "deviceId-value"
-requestBody.SetDeviceId(&deviceId)
+requestBody.SetDeviceId(&deviceId) 
 deviceMetadata := "deviceMetadata-value"
-requestBody.SetDeviceMetadata(&deviceMetadata)
+requestBody.SetDeviceMetadata(&deviceMetadata) 
 deviceVersion := int32(99)
-requestBody.SetDeviceVersion(&deviceVersion)
-result, err := graphClient.Devices().Post(requestBody)
+requestBody.SetDeviceVersion(&deviceVersion) 
+
+result, err := graphClient.Devices().Post(context.Background(), requestBody, nil)
 
 
 ```

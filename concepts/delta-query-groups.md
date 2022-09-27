@@ -1,7 +1,7 @@
 ---
 title: "Get incremental changes for groups"
 description: "Use delta query to discover changes without fetching the entire set of groups to compare changes. Example shows a series of requests to track changes to groups."
-author: "Jumaodhiss"
+author: "jumasure"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -31,7 +31,7 @@ The following example shows a series of requests to track changes to groups:
 Take note of the following in the responses:
 
 - When a group is deleted (Microsoft 365 groups), the item contains an annotation: `@removed` with value of `"reason": "changed"`.
-- When the group is permanently deleted (a security group or [permanently deleting a Microsoft 365 group](/graph/api/directory-deleteditems-list.)), the item contains  an annotation: `@removed` with value of `"reason": "deleted"`.
+- When the group is permanently deleted (a security group or [permanently deleting a Microsoft 365 group](/graph/api/directory-deleteditems-list)), the item contains  an annotation: `@removed` with value of `"reason": "deleted"`.
 - When the group is created, or restored, there's no annotation.
 
 ### Initial request

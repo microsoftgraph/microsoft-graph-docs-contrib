@@ -7,10 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewWebUrlRequestBody()
+requestBody := graphmodels.NewGetNotebookFromWebUrlPostRequestBody()
 webUrl := "webUrl value"
-requestBody.SetWebUrl(&webUrl)
-result, err := graphClient.Me().Onenote().Notebooks().GetNotebookFromWebUrl().Post(requestBody)
+requestBody.SetWebUrl(&webUrl) 
+
+result, err := graphClient.Me().Onenote().Notebooks().GetNotebookFromWebUrl().Post(context.Background(), requestBody, nil)
 
 
 ```

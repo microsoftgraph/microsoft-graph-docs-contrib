@@ -88,7 +88,7 @@ mgt-todo {
 }
 ````
 
-To learn more, see [styling components](/graph/toolkit/style.md).
+To learn more, see [styling components](/graph/toolkit/customize-components/style).
 
 ## Events
 

@@ -1,15 +1,24 @@
 ---
 title: "Security enum values"
-description: "Microsoft Graph security namespace enumeration values."
-author: "sseth"
+description: "Microsoft Graph security subnamespace enumeration values"
+doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "compliance"
-doc_type: enumTypes
+ms.prod: "security"
+author: "BenAlfasi"
 ---
 
 # Security enum values
 
 Namespace: microsoft.graph.security
+
+### detectionStatus values
+
+| Member
+|:--------------
+| detected
+| blocked
+| prevented
+| unknownFutureValue
 
 ### actionAfterRetentionPeriod values 
 
