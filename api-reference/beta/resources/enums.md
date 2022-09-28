@@ -11,7 +11,7 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### membershipKind values
+### conditionalAccessExternalTenantsMembershipKind values
 
 |Member|
 |:---|
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 |enumerated|
 |unknownFutureValue|
 
-### guestOrExternalUserTypes values
+### conditionalAccessGuestOrExternalUserTypes values
 
 |Member|
 |:---|
