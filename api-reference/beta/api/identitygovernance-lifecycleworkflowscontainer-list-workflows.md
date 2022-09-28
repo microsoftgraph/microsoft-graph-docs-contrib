@@ -199,7 +199,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows?$filter=category eq 'leaver'&$select=category,displayName,isEnabled,isSchedulingEnabled
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows?$filter=category eq 'leaver'&$select=id,category,displayName,isEnabled,isSchedulingEnabled
 ```
 
 #### Response
@@ -220,6 +220,7 @@ Content-Type: application/json
         {
             "category": "leaver",
             "displayName": "Pre-Offboarding employees in the R&D department",
+            "id": "c0548e6c-8849-46e8-be14-8b6d2b04957e",
             "isEnabled": true,
             "isSchedulingEnabled": true
         }

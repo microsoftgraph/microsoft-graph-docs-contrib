@@ -1,5 +1,5 @@
 ---
-title: "Get workflow (lifecycle workflow)"
+title: "Get workflow (in Lifecycle Workflows)"
 description: "Read the properties and relationships of a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get workflow (lifecycle workflow)
+# Get workflow (in Lifecycle Workflows)
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -61,7 +61,9 @@ If successful, this method returns a `200 OK` response code and a [workflow](../
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the details of a workflow
+
+#### Request
 
 The following is an example of a request.
 
@@ -98,7 +100,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response
 
@@ -183,6 +185,47 @@ Content-Type: application/json
     ],
     "createdBy": {
         "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+    }
+}
+```
+
+
+### Example 2: Retrieve specific properties of a workflow
+
+#### Request
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/c0548e6c-8849-46e8-be14-8b6d2b04957e?$select=id,displayName,executionConditions,category
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows(id,displayName,executionConditions,category)/$entity",
+    "category": "leaver",
+    "displayName": "Pre-Offboarding employees in the R&D department",
+    "id": "c0548e6c-8849-46e8-be14-8b6d2b04957e",
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(department eq 'R&D')"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeLeaveDateTime",
+            "offsetInDays": -7
+        }
     }
 }
 ```
