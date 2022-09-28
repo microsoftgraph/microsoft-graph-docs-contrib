@@ -60,8 +60,8 @@ The following directory roles are required for a calling application.
 
 ## See also
 
-- Learn more about how to [configure the admin consent workflow (preview)](/azure/active-directory/manage-apps/configure-admin-consent-workflow)
-- Understand the user and admin consent flows in the [Azure AD application consent experiences](/azure/active-directory/develop/application-consent-experience)
+- Learn more about how to [configure the admin consent workflow (preview)](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
+- Understand the user and admin consent flows in the [Azure AD application consent experiences](/azure/active-directory/develop/application-consent-experience).
 
 
 <!--
