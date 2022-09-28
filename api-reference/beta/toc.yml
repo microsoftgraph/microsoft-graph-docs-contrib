@@ -15434,6 +15434,8 @@ items:
       - name: Internet Explorer mode
         displayName: Cloud site list management for Internet Explorer (IE) mode APIs
         items:
+        - name: Overview
+          href: resources/cloud-ie-mode-site-lists-api-overview.md
         - name: Site list
           href: resources/browsersitelist.md
           items:
