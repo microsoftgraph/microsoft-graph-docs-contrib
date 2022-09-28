@@ -106,7 +106,7 @@ When creating or updating a workflow, use the [workflowExecutionConditions resou
 
 ### Create and manage workflows
 
-After identifying the tasks and execution conditions that you want to define for your workflow, use the [workflow resource type](identitygovernance-workflow.md), and its associated methods to create and manage the workflow. The category of the task must match the category of the workflow. Therefore:
+After identifying the tasks and execution conditions that you want to define for your workflow, use the [workflow resource type](identitygovernance-workflow.md), and its associated methods to create and manage the workflow. You can create up to 50 workflows in a tenant. The category of the task must match the category of the workflow. Each workflow can have up to 25 tasks. Therefore:
 
 + A task supported for only the "leaver" workflow category can't be specified in a "joiner" workflow scenario, and vice versa.
 + A task supported for both "leaver" and "joiner" workflow categories can be specified in either a "joiner" or "leaver" workflow scenario.
@@ -210,7 +210,7 @@ Use the [customTaskExtension resource type](identitygovernance-customtaskextensi
 
 ## Settings
 
-Each tenant defines a tenant-wide [schedule](identitygovernance-lifecyclemanagementsettings.md) when all scheduled workflows are run. The tenant can adopt the Azure AD-defined schedule where workflows are run every three hours, or modify the schedule to run between 1 hour and 24 hours.
+Each tenant defines a tenant-wide [schedule](identitygovernance-lifecyclemanagementsettings.md) when all scheduled workflows are run. The tenant can adopt the Azure AD-defined default schedule where workflows are run every three hours, or modify the schedule to run between 1 hour and 24 hours.
 
 ## License checks
 
