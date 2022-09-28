@@ -14,7 +14,7 @@ $requestBody->setName('name-value');
 
 
 
-$graphServiceClient->me()->calendarGroupsById('calendarGroup-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->calendarGroupsById('calendarGroup-id')->patch($requestBody);
 
 
 ```

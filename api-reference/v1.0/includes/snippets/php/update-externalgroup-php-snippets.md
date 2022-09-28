@@ -16,7 +16,7 @@ $requestBody->setDescription('The product marketing team');
 
 
 
-$graphServiceClient->external()->connectionsById('externalConnection-id')->groupsById('externalGroup-id')->patch($requestBody);
+$requestResult = $graphServiceClient->external()->connectionsById('externalConnection-id')->groupsById('externalGroup-id')->patch($requestBody);
 
 
 ```

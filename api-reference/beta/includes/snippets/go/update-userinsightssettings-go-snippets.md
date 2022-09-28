@@ -11,7 +11,7 @@ requestBody := graphmodels.NewUserInsightsSettings()
 isEnabled := false
 requestBody.SetIsEnabled(&isEnabled) 
 
-graphClient.UsersById("user-id").Settings().ItemInsights().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.UsersById("user-id").Settings().ItemInsights().Patch(context.Background(), requestBody, nil)
 
 
 ```

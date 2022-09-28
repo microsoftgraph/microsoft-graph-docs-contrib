@@ -14,7 +14,7 @@ $requestBody->setRoles(['read', ]);
 
 
 
-$graphServiceClient->sitesById('site-id')->permissionsById('permission-id')->patch($requestBody);
+$requestResult = $graphServiceClient->sitesById('site-id')->permissionsById('permission-id')->patch($requestBody);
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setIsEnabled(false);
 
 
 
-$graphServiceClient->usersById('user-id')->settings()->itemInsights()->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->settings()->itemInsights()->patch($requestBody);
 
 
 ```

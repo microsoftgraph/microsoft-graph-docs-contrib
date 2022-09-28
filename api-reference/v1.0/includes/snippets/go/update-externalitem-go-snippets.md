@@ -24,7 +24,7 @@ acl := []graphmodels.Aclable {
 }
 requestBody.SetAcl(acl)
 
-graphClient.External().ConnectionsById("externalConnection-id").ItemsById("externalItem-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.External().ConnectionsById("externalConnection-id").ItemsById("externalItem-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

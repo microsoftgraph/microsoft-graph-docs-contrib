@@ -20,7 +20,7 @@ $requestBody->setExternalId('dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9');
 
 
 
-$graphServiceClient->me()->tasks()->listsById('baseTaskList-id')->tasksById('baseTask-id')->linkedResourcesById('linkedResource_v2-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->tasks()->listsById('baseTaskList-id')->tasksById('baseTask-id')->linkedResourcesById('linkedResource_v2-id')->patch($requestBody);
 
 
 ```
