@@ -1,6 +1,6 @@
 ---
 title: "Create workflow (lifecycle workflow)"
-description: "Create a new workflow object."
+description: "Create a new workflow object. You can create up to 50 workflows in a tenant."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [workflow](../resources/identitygovernance-workflow.md) object.
+Create a new [workflow](../resources/identitygovernance-workflow.md) object. You can create up to 50 workflows in a tenant.
 
 ## Permissions
 

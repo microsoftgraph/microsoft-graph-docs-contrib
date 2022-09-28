@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Represents the built-in tasks available for lifecycle workflows. Tasks are the actions a workflow will execute when triggered. The built-in task "Run a custom task extension" can be used to trigger [custom task extensions](../resources/identitygovernance-customtaskextension.md) when you reach the limits of the other available built-in tasks, this allows integration with Azure Logic Apps.
 
+A workflow can have up to 25 tasks.
+
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
