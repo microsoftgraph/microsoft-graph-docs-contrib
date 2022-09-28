@@ -328,15 +328,15 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-roomlist-go-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-roomlist-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-roomlist-php-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

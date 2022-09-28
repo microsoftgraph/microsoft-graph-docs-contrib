@@ -20,7 +20,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->me()->mailFoldersById('mailFolder-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->patch($requestBody);
 
 
 ```

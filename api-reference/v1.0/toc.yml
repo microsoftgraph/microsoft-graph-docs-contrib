@@ -4977,6 +4977,7 @@ items:
             - name: Get operation status
               href: api/longrunningoperation-get.md
           - name: Temporary Access Pass
+            displayName: TAP
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
             - name: List

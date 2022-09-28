@@ -24,7 +24,7 @@ $requestBody->setAcl($aclArray);
 
 
 
-$graphServiceClient->external()->connectionsById('externalConnection-id')->itemsById('externalItem-id')->patch($requestBody);
+$requestResult = $graphServiceClient->external()->connectionsById('externalConnection-id')->itemsById('externalItem-id')->patch($requestBody);
 
 
 ```

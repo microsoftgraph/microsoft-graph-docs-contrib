@@ -46,7 +46,7 @@ $viewpoint->set@odatatype('microsoft.graph.taskViewpoint');
 $requestBody->setViewpoint($viewpoint);
 
 
-$graphServiceClient->me()->tasks()->listsById('baseTaskList-id')->tasksById('baseTask-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->tasks()->listsById('baseTaskList-id')->tasksById('baseTask-id')->patch($requestBody);
 
 
 ```
