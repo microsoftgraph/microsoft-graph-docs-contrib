@@ -8,13 +8,11 @@ ms.prod: "search"
 
 # Search content with application permissions
 
-Application permissions are different than delegated permissions in that they enable the application owner to search all content in their SharePoint sites. This article describes how you can use application permissions with the Microsoft Search API in Microsoft Graph to search SharePoint content.
+This article describes how you can use application permissions with the Microsoft Search API in Microsoft Graph to search SharePoint content. Application permissions are different than delegated permissions in that they enable the application owner to search all content in their SharePoint sites. 
 
-Application permissions provide access to all the contents in a SharePoint site.
+Performing a search with application permission is limited to one geographic region. You must specify a value for the **region** property in your request when you use application permissions to run a search. For details about how to get the **region** value, see [Get the region value](#get-the-region-value).
 
-Performing a search with application permission is limited to one geographic region. You must specify a value for the **region** property in your request when you use application permissions to run a search.
-
-By default, private content search is disabled for customers with application permissions.
+By default, private content search is disabled for customers with application permissions. For details about how to enable private content search, see [Example 2: Include all private content](#example-2-include-all-private-content).
 
 ## Example 1: Default search request
 
@@ -144,7 +142,7 @@ By default, private content search is disabled for customers with application pe
 To include all private content in a search using application permissions, specify `privateContent` in the **sharePointOneDriveOptions** property.
 
 > [!NOTE]
-> Searching all private content can be an expensive option. When you run an initial search request, if the tenant does not have an active APC stamp, you will need a provision a new APIC stamp for your tenant. This can take several hours or days to complete. After the provisioning, the search will work as normal. 
+> Searching all private content can be an expensive option. When you run an initial search request, if the tenant does not have an active APC stamp, you will need a provision a new APC stamp for your tenant. This can take several hours or days to complete. After the provisioning, the search will work as normal. 
 
 ### Request
 
