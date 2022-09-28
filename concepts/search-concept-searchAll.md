@@ -1,21 +1,23 @@
 ---
-title: "Use Application Permission in Microsoft Search API to search content."
-description: "Learn how to use application permission in Mcrosoft Search to search SharePoint Content"
+title: "Search content with application permissions"
+description: "Learn how to use the Microsoft Search API in Microsoft Graph to search SharePoint content using application permissions."
 author: "yiwenwang"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Search Content in Microsoft Search API With Application Permission
+# Search content with application permissions
 
-Application permission is different from delegated permission. It will support the application owner to search all content in their SharePoint sites.
+Application permissions are different than delegated permissions in that they enable the application owner to search all content in their SharePoint sites. This article describes how you can use application permissions with the Microsoft Search API in Microsoft Graph to search SharePoint content.
 
+Application permissions provide access to all the contents in a SharePoint site.
 
-## Default request example
-Search with application permission has the permission to access all contents which stored in the SharePoint site.
+Performing a search with application permission is limited to one geographic region. You must specify a value for the **region** property in your request when you use application permissions to run a search.
 
-Search with application permission is only allow to search in one specific GEO, it requires that developers to specify a GEO value in the search request.
-By default, search disabled the all private content search for customers with application permission.
+By default, private content search is disabled for customers with application permissions.
+
+## Example 1: Default search request
+
 ### Request
 
 ```HTTP
@@ -136,11 +138,13 @@ Content-type: application/json
 ```
 
 
-## Include all private content example
-By default, search disables the all private content search for customers with application permission. Specify the privateContent in the sharePointOneDriveOptions.includeContent will enable the all private content search for customers with application permission.
+## Example 2: Include all private content
+By default, private content search is disabled for customers with application permissions.
 
-### Notice
-All private content could be an expensive option, While trigger the search request in the first time, it may requires to provision new APC stamps for your tenant if there doesn't exist any active APC stamps, it would take several hours or days to complete. After the provision, the search can work as normal. 
+To include all private content in a search using application permissions, specify `privateContent` in the **sharePointOneDriveOptions** property.
+
+> [!NOTE]
+> Searching all private content can be an expensive option. When you run an initial search request, if the tenant does not have an active APC stamp, you will need a provision a new APIC stamp for your tenant. This can take several hours or days to complete. After the provisioning, the search will work as normal. 
 
 ### Request
 
@@ -264,8 +268,7 @@ Content-type: application/json
 }
 ```
 
-## How to get region value?
-Use your tenant admin account, and paste the link in your browser: ( https://{Host}/_api/GeoTenantInstanceInformationCollection ).
-Then paste the instance id as the value of region.
-### sample
-https://contoso.sharepoint.com/_api/GeoTenantInstanceInformationCollection
+## Get the region value
+
+To get the value for the **region** in your request, using your tenant admin account, go to the following URL: https://{Host}/_api/GeoTenantInstanceInformationCollection; for example, `https://contoso.sharepoint.com/_api/GeoTenantInstanceInformationCollection`. Use the instance ID for the value of the **region** property.
+
