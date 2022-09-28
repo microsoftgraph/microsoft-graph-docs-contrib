@@ -505,6 +505,12 @@ items:
       - name: Tasks and plans
         href: planner-concept-overview.md
         displayName: Planner
+      - name: Edge
+        items:
+        - name: Enterprise
+          items:
+          - name: Cloud IE Mode Site lists
+            href: cloud-ie-mode-site-lists-concept-overview.md
       - name: Teamwork and communications
         items:
         - name: Overview
