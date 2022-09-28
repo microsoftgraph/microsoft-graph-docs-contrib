@@ -32,26 +32,28 @@ Inherits from [baseItem](../resources/baseitem.md).
 
 ## Properties
 
-| Property             | Type                                                             | Description                                                                                                                     |
-| :------------------- | :--------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
-| contentType          | [contentTypeInfo](../resources/contentTypeInfo.md)               | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
-| createdBy            | [identitySet](../resources/identityset.md)                       | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
-| createdDateTime      | DateTimeOffset                                                   | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
-| description          | String                                                           | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
-| eTag                 | String                                                           | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
-| id                   | String                                                           | Inherited from [entity](../resources/entity.md).                                                                                |
-| lastModifiedBy       | [identitySet](../resources/identityset.md)                       | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
-| lastModifiedDateTime | DateTimeOffset                                                   | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
-| name                 | String                                                           | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
-| pageLayout           | [pageLayoutType](../resources/sitepage.md#pagelayouttype-values) | The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`. |
-| parentReference      | [itemReference](../resources/itemreference.md)                   | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
-| publishingState      | [publicationFacet](../resources/publicationfacet.md)             | The publishing status and the MM.mm version of the page.                                                                        |
-| reactions            | [reactionsFacet](../resources/reactionsfacet.md)                 | Reactions information for the page.                                                                                             |
-| showComments         | Boolean                                                          | Boolean to determine whether or not to show comments at the bottom of the page.                                                 |
-| showRecommendedPages | Boolean                                                          | Boolean to determine whether or not to show recommended pages at the bottom of the page.                                        |
-| title                | String                                                           | Title of the page.                                                                                                              |
-| titleArea            | [titleArea](../resources/titlearea.md)                           | Title area on the SharePoint page.                                                                                              |
-| webUrl               | String                                                           | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| Property             | Type                                                                   | Description                                                                                                                     |
+| :------------------- | :--------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| contentType          | [contentTypeInfo](../resources/contentTypeInfo.md)                     | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| createdBy            | [identitySet](../resources/identityset.md)                             | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| createdDateTime      | DateTimeOffset                                                         | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| description          | String                                                                 | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| eTag                 | String                                                                 | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| id                   | String                                                                 | Inherited from [entity](../resources/entity.md).                                                                                |
+| lastModifiedBy       | [identitySet](../resources/identityset.md)                             | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| lastModifiedDateTime | DateTimeOffset                                                         | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| name                 | String                                                                 | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| pageLayout           | [pageLayoutType](../resources/sitepage.md#pagelayouttype-values)       | The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`. |
+| parentReference      | [itemReference](../resources/itemreference.md)                         | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| promotionKind        | [pagePromotionKind](../resources/sitepage.md#pagepromotionkind-values) | Indicate the promotion kind of the sitePage. The possible values are: `microsoftReserved`, `page`, `newsPost`, `unknownFutureValue`.                                                                                    |
+| publishingState      | [publicationFacet](../resources/publicationfacet.md)                   | The publishing status and the MM.mm version of the page.                                                                        |
+| reactions            | [reactionsFacet](../resources/reactionsfacet.md)                       | Reactions information for the page.                                                                                             |
+| showComments         | Boolean                                                                | Boolean to determine whether or not to show comments at the bottom of the page.                                                 |
+| showRecommendedPages | Boolean                                                                | Boolean to determine whether or not to show recommended pages at the bottom of the page.                                        |
+| thumbnailWebUrl      | String                                                                 | Url of the sitePage's thumbnail image                                                                                           |
+| title                | String                                                                 | Title of the sitePage.                                                                                                          |
+| titleArea            | [titleArea](../resources/titlearea.md)                                 | Title area on the SharePoint page.                                                                                              |
+| webUrl               | String                                                                 | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
 
 #### pageLayoutType values
 
@@ -60,6 +62,15 @@ Inherits from [baseItem](../resources/baseitem.md).
 | `microsoftReserved`  | The page is a special type, reserved for use by Microsoft only. This value cannot be used when creating the page with [Create sitePage](../api/sitepage-create.md) method. |
 | `article`            | The page is an article page.                                                                                                                                               |
 | `home`               | The page is a home page.                                                                                                                                                   |
+| `unknownFutureValue` | Marker value for future compatibility.                                                                                                                                     |
+
+#### pagePromotionKind values
+
+| Value                | Description                                                                                                                                                                |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `microsoftReserved`  | The page is a special type, reserved for use by Microsoft only. This value cannot be used when creating the page with [Create sitePage](../api/sitepage-create.md) method. |
+| `page`               | The page is promoted as a normal page                                                                                                                                      |
+| `newsPost`           | The page is promoted as a news post                                                                                                                                        |
 | `unknownFutureValue` | Marker value for future compatibility.                                                                                                                                     |
 
 ## Relationships
@@ -108,6 +119,7 @@ The following is a JSON representation of the resource.
   "webUrl": "String",
   "title": "String",
   "pageLayout": "String",
+  "promotionKind": "String",
   "publishingState": {
     "@odata.type": "microsoft.graph.publicationFacet"
   },
@@ -116,6 +128,7 @@ The following is a JSON representation of the resource.
   },
   "showComments": "Boolean",
   "showRecommendedPages": "Boolean",
+  "thumbnailWebUrl": "String",
   "titleArea": {
     "@odata.type": "microsoft.graph.titleArea"
   }

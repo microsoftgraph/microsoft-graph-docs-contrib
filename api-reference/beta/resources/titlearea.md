@@ -21,8 +21,9 @@ Represents the title area of a given SharePoint page.
 | :---------------------- | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | alternativeText         | String                                                                                    | Alternative text on the title area.                                                                                                                           |
 | enableGradientEffect    | Boolean                                                                                   | Indicates whether the title area has a gradient effect enabled.                                                                                               |
-| image                   | String                                                                                    | Url of The image in the title area.                                                                                                                           |
+| imageWebUrl                  | String                                                                                    | Url of The image in the title area.                                                                                                                           |
 | layout                  | [titleAreaLayoutType](../resources/titlearea.md#titlearealayouttype-values)               | Enumeration value that indicates the layout of the title area. The possible values are: `cutInShape`, `plain`, `colorBlock`, `overlap`, `unknownFutureValue`. |
+| serverProcessedContent | [serverProcessedContent](../resources/serverprocessedcontent.md) | Contains collections of data that can be processed by server side services like search index and link fixup. |
 | showAuthor              | Boolean                                                                                   | Indicates whether the author should be shown in title. area.                                                                                                  |
 | showPublishedDate       | Boolean                                                                                   | Indicates whether the published date should be shown in title area.                                                                                           |
 | showTextBlockAboveTitle | Boolean                                                                                   | Indicates whether the text block above title should be shown in title area.                                                                                   |
@@ -66,8 +67,11 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.titleArea",
   "alternativeText": "String",
   "enableGradientEffect": "Boolean",
-  "image": "String",
+  "imageWebUrl": "String",
   "layout": "String",
+  "serverProcessedContent": {
+    "@odata.type": "microsoft.graph.serverProcessedContent"
+  },
   "showAuthor": "Boolean",
   "showPublishedDate": "Boolean",
   "showTextBlockAboveTitle": "Boolean",

@@ -136,7 +136,7 @@ Content-Type: application/json
   },
   "titleArea": {
     "enableGradientEffect": true,
-    "image": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+    "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
     "layout": "colorBlock",
     "showAuthor": true,
     "showPublishedDate": false,

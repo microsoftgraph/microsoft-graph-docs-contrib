@@ -106,7 +106,7 @@ Content-type: application/json
             },
             "titleArea": {
                 "enableGradientEffect": true,
-                "image": "/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG",
+                "imageWebUrl": "/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG",
                 "layout": "imageAndTitle",
                 "showAuthor": false,
                 "showPublishedDate": false,
@@ -152,7 +152,7 @@ Content-type: application/json
             },
             "titleArea": {
                 "enableGradientEffect": true,
-                "image": "/siteAssets/titleBackground.jpg",
+                "imageWebUrl": "/siteAssets/titleBackground.jpg",
                 "layout": "imageAndTitle",
                 "showAuthor": true,
                 "showPublishedDate": false,

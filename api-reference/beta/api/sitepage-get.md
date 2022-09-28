@@ -90,10 +90,13 @@ Content-type: application/json
 
 {
   "@odata.type": "microsoft.graph.sitePage",
+  "description": "Here's the page description",
   "id": "65e59907-59d5-44ff-a038-7c0bf3098c01",
   "name": "Home.aspx",
   "webUrl": "SitePages/Home.aspx",
   "title": "Organization Home",
+  "thumbnailWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/00210d24-bba0-42e6-9a31-1d452a95dd75/thumbnails/large.jpg?file=163352059.jpg",
+  "promotionKind": "page",
   "pageLayout": "home",
   "showComments": true,
   "showRecommendedPages": false,

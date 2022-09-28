@@ -58,7 +58,7 @@ Content-Type: application/json
   "showRecommendedPages": false,
   "titleArea": {
     "enableGradientEffect": true,
-    "image": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+    "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
     "layout": "colorBlock",
     "showAuthor": true,
     "showPublishedDate": false,
@@ -211,7 +211,7 @@ Content-type: application/json
     },
     "titleArea": {
         "enableGradientEffect": true,
-        "image": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+        "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
         "layout": "colorBlock",
         "showAuthor": true,
         "showPublishedDate": false,
