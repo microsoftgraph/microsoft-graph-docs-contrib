@@ -14,7 +14,7 @@ $requestBody->setDisplayName('buy cake');
 
 
 
-$graphServiceClient->me()->tasks()->listsById('baseTaskList-id')->tasksById('baseTask-id')->checklistItemsById('checklistItem-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->tasks()->listsById('baseTaskList-id')->tasksById('baseTask-id')->checklistItemsById('checklistItem-id')->patch($requestBody);
 
 
 ```

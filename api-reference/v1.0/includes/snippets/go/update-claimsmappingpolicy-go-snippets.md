@@ -11,7 +11,7 @@ requestBody := graphmodels.NewClaimsMappingPolicy()
 displayName := "UpdateClaimsPolicy"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.Policies().ClaimsMappingPoliciesById("claimsMappingPolicy-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().ClaimsMappingPoliciesById("claimsMappingPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

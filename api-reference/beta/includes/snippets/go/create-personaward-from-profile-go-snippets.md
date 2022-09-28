@@ -12,7 +12,7 @@ description := "Lifetime Achievement award from the International Association of
 requestBody.SetDescription(&description) 
 displayName := "Lifetime Achievement Award For Excellence in Branding"
 requestBody.SetDisplayName(&displayName) 
-issuedDate := "Date"
+issuedDate := date
 requestBody.SetIssuedDate(&issuedDate) 
 issuingAuthority := "International Association of Branding Management"
 requestBody.SetIssuingAuthority(&issuingAuthority) 

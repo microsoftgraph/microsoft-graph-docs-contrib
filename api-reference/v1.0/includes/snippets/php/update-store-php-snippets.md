@@ -14,7 +14,7 @@ $requestBody->setDefaultLanguageTag('en-US');
 
 
 
-$graphServiceClient->sitesById('site-id')->termStore()->patch($requestBody);
+$requestResult = $graphServiceClient->sitesById('site-id')->termStore()->patch($requestBody);
 
 
 ```

@@ -73,7 +73,7 @@ $requestBody->setMeetingDuration(new \DateInterval('PT1H'));
 
 $requestBody->setReturnSuggestionReasons(true);
 
-$requestBody->setMinimumAttendeePercentage(100);
+$requestBody->setMinimumAttendeePercentage('100');
 
 
 $requestConfiguration = new FindMeetingTimesRequestBuilderPostRequestConfiguration();

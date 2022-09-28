@@ -17,7 +17,7 @@ $selfServiceSignUp->setIsEnabled(true);
 $requestBody->setSelfServiceSignUp($selfServiceSignUp);
 
 
-$graphServiceClient->policies()->authenticationFlowsPolicy()->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->authenticationFlowsPolicy()->patch($requestBody);
 
 
 ```

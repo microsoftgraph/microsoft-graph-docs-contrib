@@ -16,7 +16,7 @@ requestBody.SetCategories(categories)
 proficiency := graphmodels.ADVANCEDPROFESSIONAL_SKILLPROFICIENCYLEVEL 
 requestBody.SetProficiency(&proficiency) 
 
-graphClient.Me().Profile().SkillsById("skillProficiency-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Profile().SkillsById("skillProficiency-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
