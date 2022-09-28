@@ -25,16 +25,6 @@ Cloud IE Mode Site Lists allows Admins to manage and store a list of websites th
 ### Automate Site List Management
 The Cloud IE Mode Site Lists API in Microsoft Graph retains the same core functionality that is offered today in the Microsoft 365 Admin Center. Admins can automate common tasks such [creating site lists](/api-reference/beta/api/internetexplorermode-post-sitelists.md), [adding sites](/api-reference/beta/api/browsersitelist-post-sites.md), [adding shared cookies](/api-reference/beta/api/browsersitelist-post-sharedcookies.md), and [publishing site lists](/api-reference/beta/api/browsersitelist-publish.md).
 
-## Common To Do API operations
-
-|Operation|Request|
-|:--------|:--|
-| List all site lists | GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists |
-| Create a new site list | POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists |
-| Publish a site list | POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/publish |
-| Create a site | POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sites |
-| Create a shared cookie | POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sharedcookies |
-
 ## API reference
 
 Looking for the API reference for this service?
