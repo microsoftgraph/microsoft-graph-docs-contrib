@@ -6444,7 +6444,7 @@ items:
         - name: Attack simulation reports
           displayname: Attack simulation and training
           href: resources/report-m365defender-reports-overview.md
-        - name: Repeat offenders
+        - name: Repeat offender
           items:
           - name: Repeat offender
             href: resources/attacksimulationrepeatoffender.md
@@ -6778,9 +6778,9 @@ items:
           items:
           - name: Simulation
             href: resources/simulation.md
-          - name: List simulations
+          - name: List
             href: api/attacksimulationroot-list-simulations.md
-          - name: Get simulation
+          - name: Get
             href: api/attacksimulationroot-get-simulations.md
           - name: List simulation users
             href: api/usersimulationdetails-list.md

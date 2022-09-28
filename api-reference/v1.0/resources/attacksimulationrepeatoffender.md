@@ -13,6 +13,11 @@ Namespace: microsoft.graph
 
 Represents a user in a tenant who has given way to attacks more than once across various attack simulation and training campaigns.
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get repeat offenders](../api/securityreportsroot-getattacksimulationrepeatoffenders.md)|[attackSimulationRepeatOffender](../resources/attacksimulationrepeatoffender.md) collection|List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns.|
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

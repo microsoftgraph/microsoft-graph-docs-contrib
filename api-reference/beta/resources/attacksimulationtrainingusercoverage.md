@@ -15,6 +15,11 @@ Namespace: microsoft.graph
 
 Represents cumulative training data for a user in attack simulation and training.
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get training coverage for users](../api/securityreportsroot-getattacksimulationtrainingusercoverage.md)|[attackSimulationTrainingUserCoverage](../resources/attacksimulationtrainingusercoverage.md) collection|List training coverage for tenant users in attack simulation and training campaigns.|
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

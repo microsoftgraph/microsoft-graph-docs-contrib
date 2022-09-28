@@ -14620,7 +14620,7 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Microsoft Defender for Office 365 security reports (preview)
+      - name: Microsoft Defender for Office 365 security reports
         items:
         - name: Attack simulation reports
           displayname: Attack simulation and training

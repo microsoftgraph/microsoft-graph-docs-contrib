@@ -1,6 +1,6 @@
 ---
 title: "userSimulationDetails resource type"
-description: "Represents a user of a tenant and its online actions in an attack simulation and training campaign."
+description: "Represents a user of a tenant and their online actions in an attack simulation and training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a user of a tenant and the user's online actions in an attack simulation and training campaign.
+Represents a user of a tenant and their online actions in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
@@ -20,8 +20,8 @@ Represents a user of a tenant and the user's online actions in an attack simulat
 |completedTrainingsCount|Int32|Number of trainings completed by a user in an attack simulation and training campaign.|
 |compromisedDateTime|DateTimeOffset|Date and time of the compromising online action by a user in an attack simulation and training campaign.|
 |inProgressTrainingsCount|Int32|Number of trainings in progress by a user in an attack simulation and training campaign.|
-|isCompromised|Boolean|Flag representing if user was compromised in an attack simulation and training campaign.|
-|reportedPhishDateTime|DateTimeOffset|Date and time when user reported delivered payload as phish in the attack simulation and training campaign.|
+|isCompromised|Boolean|Indicates whether a user was compromised in an attack simulation and training campaign.|
+|reportedPhishDateTime|DateTimeOffset|Date and time when a user reported the delivered payload as phishing in the attack simulation and training campaign.|
 |simulationEvents|[userSimulationEventInfo](../resources/usersimulationeventinfo.md) collection|List of simulation events of a user in the attack simulation and training campaign.|
 |simulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User in an attack simulation and training campaign.|
 |trainingEvents|[userTrainingEventInfo](../resources/usertrainingeventinfo.md) collection|List of training events of a user in the attack simulation and training campaign.|
@@ -39,25 +39,24 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.userSimulationDetails",
-  "isCompromised": "Boolean",
+  "assignedTrainingsCount": "Int32",
+  "completedTrainingsCount": "Int32",
   "compromisedDateTime": "String (timestamp)",
+  "inProgressTrainingsCount": "Int32",
+  "isCompromised": "Boolean",
+  "reportedPhishDateTime": "String (timestamp)",
   "simulationEvents": [
     {
       "@odata.type": "microsoft.graph.userSimulationEventInfo"
     }
   ],
+  "simulationUser": {
+    "@odata.type": "microsoft.graph.attackSimulationUser"
+  },
   "trainingEvents": [
     {
       "@odata.type": "microsoft.graph.userTrainingEventInfo"
     }
-  ],
-  "assignedTrainingsCount": "Integer",
-  "completedTrainingsCount": "Integer",
-  "inProgressTrainingsCount": "Integer",
-  "reportedPhishDateTime": "String (timestamp)",
-  "simulationUser": {
-    "@odata.type": "microsoft.graph.attackSimulationUser"
-  }
+  ]
 }
 ```
-

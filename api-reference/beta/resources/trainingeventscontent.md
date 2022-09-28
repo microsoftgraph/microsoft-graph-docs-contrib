@@ -34,12 +34,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.trainingEventsContent",
-  "trainingsAssignedUserCount": "Integer",
   "assignedTrainingsInfos": [
     {
       "@odata.type": "microsoft.graph.assignedTrainingInfo"
     }
-  ]
+  ],
+  "trainingsAssignedUserCount": "Int32"
 }
 ```
-

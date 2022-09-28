@@ -1,6 +1,6 @@
 ---
 title: "userSimulationEventInfo resource type"
-description: "Represents simulation event of a user in a tenant in an attack simulation and training campaign."
+description: "Represents a simulation event of a user in a tenant in an attack simulation and training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -35,11 +35,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.userSimulationEventInfo",
-  "eventName": "String",
+  "browser": "String",
   "eventDateTime": "String (timestamp)",
+  "eventName": "String",
   "ipAddress": "String",
-  "osPlatformDeviceDetails": "String",
-  "browser": "String"
+  "osPlatformDeviceDetails": "String"
 }
 ```
-
