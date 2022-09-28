@@ -1,6 +1,6 @@
 ---
 title: "securityReportsRoot: getAttackSimulationTrainingUserCoverage"
-description: "List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns."
+description: "List training coverage for users of a tenant in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns.
+List training coverage for users of a tenant in attack simulation and training campaigns.
 
 This function supports `@odata.nextLink` for pagination.
 
@@ -98,8 +98,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.attackSimulationTrainingUserCoverage)",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.attackSimulationTrainingUserCoverage)"
 }
 -->
 ``` http

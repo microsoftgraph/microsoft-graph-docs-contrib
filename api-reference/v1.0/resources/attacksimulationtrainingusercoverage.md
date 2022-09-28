@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationTrainingUserCoverage resource type"
-description: "Represents training coverage for a user in attack simulation and training."
+description: "Represents cumulative training data for a user in attack simulation and training."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -17,7 +17,7 @@ Represents cumulative training data for a user in attack simulation and training
 |Property|Type|Description|
 |:---|:---|:---|
 |attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User in an attack simulation and training campaign.|
-|userTrainings|[userTrainingStatusInfo](../resources/usertrainingstatusinfo.md) collection|List of assigned trainings' and their statuses for the user.|
+|userTrainings|[userTrainingStatusInfo](../resources/usertrainingstatusinfo.md) collection|List of assigned trainings and their statuses for the user.|
 
 ## Relationships
 None.
@@ -32,14 +32,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.attackSimulationTrainingUserCoverage",
+  "attackSimulationUser": {
+    "@odata.type": "microsoft.graph.attackSimulationUser"
+  },
   "userTrainings": [
     {
       "@odata.type": "microsoft.graph.userTrainingStatusInfo"
     }
-  ],
-  "attackSimulationUser": {
-    "@odata.type": "microsoft.graph.attackSimulationUser"
-  }
+  ]
 }
 ```
 

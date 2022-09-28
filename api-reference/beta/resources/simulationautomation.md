@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 
 Represents simulation automation created to run on a tenant.
 
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -30,7 +31,7 @@ Represents simulation automation created to run on a tenant.
 |createdDateTime|DateTimeOffset|Date and time when the attack simulation automation was created.|
 |description|String|Description of the attack simulation automation.|
 |displayName|String|Display name of the attack simulation automation. Supports `$filter` and `$orderby`.|
-|id|String|Unique identifier for the attack simulation automation.|
+|id|String|Unique identifier for the attack simulation automation. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation automation.|
 |lastModifiedDateTime|DateTimeOffset|Date and time when the attack simulation automation was most recently modified.|
 |lastRunDateTime|DateTimeOffset|Date and time of the latest run of the attack simulation automation.|

@@ -43,10 +43,10 @@ The following are examples of their use:
 }
 -->
 ``` http
-GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/runs?$count=true
-GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/runs?$skipToken={skipToken}
-GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/runs?$top=1
-GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/runs?$select={property}
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/runs?$count=true
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/runs?$skipToken={skipToken}
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/runs?$top=1
+GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/runs?$select={property}
 ```
 
 ## Request headers
