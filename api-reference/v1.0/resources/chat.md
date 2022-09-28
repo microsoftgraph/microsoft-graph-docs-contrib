@@ -44,9 +44,12 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Add tab to chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a chat (and associated meeting).|
 |[Update tab in chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Update the properties of a tab in a chat (and associated meeting).|
 |[Remove tab from chat](../api/chat-delete-tabs.md) | None | Remove (unpin) a tab from a chat (and associated meeting).|
+| **Pinned messages** |||
+|[List pinned messages](../api/chat-list-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md) collection|Get a list of pinned messages in a chat.|
+|[Pin a message](../api/chat-post-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md)|Pin a chat message in a chat.|
+|[Unpin a message](../api/chat-delete-pinnedmessages.md)|None|Unpin a message from a chat.|
 
->**Note:** When using application permissions, be sure you know how you're going to get the chat ID. Because listing chats with application permissions is not supported, 
-not all scenarios are possible. It is possible to get chat IDs with delegated permissions, and from [change notifications for /chats/getAllMessages](../api/subscription-post-subscriptions.md) with application permissions.
+>**Note:** When using application permissions, be sure you know how to get the chat ID. Because listing chats with application permissions is not supported, not all scenarios are possible. It is possible to get chat IDs with delegated permissions, and from [change notifications for /chats/getAllMessages](../api/subscription-post-subscriptions.md) with application permissions.
 
 ## Properties
 
@@ -77,6 +80,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | A collection of all the apps in the chat. Nullable. |
 | members | [conversationMember](conversationmember.md) collection | A collection of all the members in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
+| pinnedMessages | [pinnedChatMessageInfo](pinnedchatmessageinfo.md) collection | A collection of all the pinned messages in the chat. Nullable. |
 | tabs | [teamsTab](teamstab.md) collection | A collection of all the tabs in the chat. Nullable. |
 
 ## JSON representation
