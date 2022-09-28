@@ -38,6 +38,9 @@ To consent to the required permissions in Graph Explorer:
    
 >[!NOTE]
 >The response objects shown in this tutorial might be shortened for readability.
+
+> [!NOTE]
+> Review of Privileged Access Groups will only assign active owner(s) as the reviewers. Eligible owners are not included. At least one fallback reviewer is required for a Privileged Access Groups review. If there are no active owner(s) when the review begins, the fallback reviewer(s) will be assigned to the review.
    
 ## Step 1: Create test users in your tenant
 
