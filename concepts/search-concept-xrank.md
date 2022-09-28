@@ -15,7 +15,7 @@ You can use the **XRANK** operator in the following syntax:
 <match expression> XRANK(cb=100, rb=0.4, pb=0.4, avgb=0.4, stdb=0.4, nb=0.4, n=200) <rank expression>
 ```
 
-For more information about [XRANK operator's dynamic ranking calculation](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference#dynamic-ranking-operator).
+For more information about [XRANK operator's dynamic ranking calculation](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference#dynamic-ranking-operator).
 
 ## Example
 The following example shows a request that searches for files hosted in SharePoint and uses the **XRANK operator** to boost specified search results.
