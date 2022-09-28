@@ -32,18 +32,15 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "guestOrExternalUserTypes",
-    "externalTenants"
-  ],
-  "@odata.type": "microsoft.graph.conditionalAccessGuestOrExternalUserTypes",
-  "@odata.type": "microsoft.graph.conditionalAccessExternalTenants",
-  "baseType": null
-}-->
-
-```json
+  "@odata.type": "microsoft.graph.conditionalAccessGuestsOrExternalUsers"
+}
+-->
+``` json
 {
-  "guestOrExternalUserTypes": {"@odata.type": "microsoft.graph.conditionalAccessGuestOrExternalUserTypes"},
-  "externalTenants": {"@odata.type": "microsoft.graph.conditionalAccessExternalTenants"}
+  "@odata.type": "#microsoft.graph.conditionalAccessGuestsOrExternalUsers",
+  "guestOrExternalUserTypes": "String",
+  "externalTenants": {
+    "@odata.type": "microsoft.graph.conditionalAccessExternalTenants"
+  }
 }
 ```

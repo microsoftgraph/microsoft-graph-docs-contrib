@@ -19,7 +19,7 @@ An abstract type that represents external tenants in the policy scope. This abst
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| membershipKind |conditionalAccessExternalTenantsMembershipKind | Represents the membership kind. Supported values are: `all`, The possible values are: `all`, `enumerated`, `unknownFutureValue`. `enumerated` references an object of [conditionalAccessEnumeratedExternalTenants](conditionalaccessenumeratedexternaltenants.md) derived type. |
+| membershipKind |conditionalAccessExternalTenantsMembershipKind | Represents the membership kind. The possible values are: `all`, `enumerated`, `unknownFutureValue`. `enumerated` references an object of [conditionalAccessEnumeratedExternalTenants](conditionalaccessenumeratedexternaltenants.md) derived type. |
 
 ## Relationships
 

@@ -19,7 +19,7 @@ Inherits from [conditionalAccessExternalTenants](conditionalaccessexternaltenant
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| membershipKind |conditionalAccessExternalTenantsMembershipKind collection | Represents the membership kind. Supported values are: `all`, [`enumerated`](conditionalaccessenumeratedexternaltenants.md) and `unknownFutureValue`. |
+| membershipKind |conditionalAccessExternalTenantsMembershipKind | Represents the membership kind. Supported values are: `all`, [`enumerated`](conditionalaccessenumeratedexternaltenants.md), and `unknownFutureValue`. |
 
 ## Relationships
 
