@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a session cookie for [Internet Explorer mode](/deployedge/edge-ie-mode) that resides on a [site list](../resources/browsersitelist.md).
+Represents a session cookie for [Internet Explorer mode](/deployedge/edge-ie-mode) that resides on a [site list](../resources/browsersitelist.md). The browserSharedCookie allows the Microsoft Edge and Internet Explorer processes to share session cookies to allow for a more streamlined experience when performing tasks such as authentication. For more details, see [Cookie sharing between Microsoft Edge and Internet Explorer](/deployedge/edge-ie-mode-add-guidance-cookieshare)
 
 ## Methods
 |Method|Return type|Description|

@@ -3204,6 +3204,20 @@ Possible values for user account types (group membership), per Windows definitio
 |recipient|
 |unknownFutureValue|
 
+### outlierMemberType values 
+
+|Member|
+|:---|
+|user|
+|unknownFutureValue|
+
+### outlierContainerType values 
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+
 ### browserSharedCookieSourceEnvironment values
 
 | Member|

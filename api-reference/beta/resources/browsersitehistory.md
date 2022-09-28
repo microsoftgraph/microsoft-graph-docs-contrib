@@ -24,7 +24,7 @@ The history of modifications applied to a [browserSite](../resources/browsersite
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The user who last modified the site.|
 |mergeType|browserSiteMergeType|The merge type of the site. The possible values are: `noMerge`, `default`, `unknownFutureValue`.|
 |publishedDateTime|DateTimeOffset|The date and time when the site was last published.|
-|targetEnvironment|browserSiteTargetEnvironment|The target environment that the site should open in. The possible values are: `internetExplorerMode`, `internetExplorer11`, `microsoftEdge`, `configurable`, `none`, `unknownFutureValue`.|
+|targetEnvironment|browserSiteTargetEnvironment|The target environment that the site should open in. The possible values are: `internetExplorerMode`, `internetExplorer11`, `microsoftEdge`, `configurable`, `none`, `unknownFutureValue`.<br /><br />Prior to June 15, 2022, the `internetExplorer11` option would allow opening a site in the Internet Explorer 11 desktop application. Following the retirement of IE11 on June 15, 2022, the `internetExplorer11` this option will no longer open an IE11 window and will instead behave the same as the `internetExplorerMode` option.|
 
 ## Relationships
 None.
