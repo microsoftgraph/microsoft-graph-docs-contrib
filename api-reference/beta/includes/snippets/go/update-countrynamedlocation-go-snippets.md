@@ -21,7 +21,7 @@ requestBody.SetIncludeUnknownCountriesAndRegions(&includeUnknownCountriesAndRegi
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Identity().ConditionalAccess().NamedLocationsById("namedLocation-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Identity().ConditionalAccess().NamedLocationsById("namedLocation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

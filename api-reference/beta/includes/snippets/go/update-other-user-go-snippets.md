@@ -23,7 +23,7 @@ certificateUserIds := []string {
 authorizationInfo.SetCertificateUserIds(certificateUserIds)
 requestBody.SetAuthorizationInfo(authorizationInfo)
 
-graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

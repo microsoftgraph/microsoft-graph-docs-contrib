@@ -11,7 +11,7 @@ requestBody := graphmodels.NewAccessReview()
 displayName := "TestReview new name"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.AccessReviewsById("accessReview-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.AccessReviewsById("accessReview-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

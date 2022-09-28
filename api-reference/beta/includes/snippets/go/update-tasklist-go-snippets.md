@@ -11,7 +11,7 @@ requestBody := graphmodels.NewBaseTaskList()
 displayName := "Travel Plan"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.Me().Tasks().ListsById("baseTaskList-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Tasks().ListsById("baseTaskList-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

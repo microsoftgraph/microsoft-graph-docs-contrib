@@ -22,7 +22,7 @@ $requestBody->setAdminEligibleSettings($adminEligibleSettingsArray);
 
 
 
-$graphServiceClient->privilegedAccessById('privilegedAccess-id')->roleSettingsById('governanceRoleSetting-id')->patch($requestBody);
+$requestResult = $graphServiceClient->privilegedAccessById('privilegedAccess-id')->roleSettingsById('governanceRoleSetting-id')->patch($requestBody);
 
 
 ```
