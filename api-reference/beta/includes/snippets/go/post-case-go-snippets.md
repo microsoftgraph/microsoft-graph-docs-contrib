@@ -11,7 +11,7 @@ requestBody := graphmodels.NewCase()
 displayName := "My Case 1"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Compliance().Ediscovery().Cases().Post(requestBody)
+result, err := graphClient.Compliance().Ediscovery().Cases().Post(context.Background(), requestBody, nil)
 
 
 ```

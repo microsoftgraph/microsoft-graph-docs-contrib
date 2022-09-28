@@ -2,7 +2,7 @@
 title: "List directReports"
 description: "Get a user's direct reports."
 ms.localizationpriority: high
-author: "jpettere"
+author: "yyuank"
 ms.prod: "users"
 doc_type: apiPageType
 ---

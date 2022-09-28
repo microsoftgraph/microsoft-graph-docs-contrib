@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Security().Labels().RetentionLabelsById("retentionLabel-id").Delete()
+graphClient.Security().Labels().RetentionLabelsById("retentionLabel-id").Delete(context.Background(), nil)
 
 
 ```

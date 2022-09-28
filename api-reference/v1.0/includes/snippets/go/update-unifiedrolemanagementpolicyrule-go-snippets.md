@@ -14,7 +14,8 @@ target := graphmodels.NewUnifiedRoleManagementPolicyRuleTarget()
 caller := "EndUser"
 target.SetCaller(&caller) 
 operations := []graphmodels.UnifiedRoleManagementPolicyRuleTargetOperationsable {
-	"All",
+	unifiedRoleManagementPolicyRuleTargetOperations := graphmodels.ALL_UNIFIEDROLEMANAGEMENTPOLICYRULETARGETOPERATIONS 
+	target.SetUnifiedRoleManagementPolicyRuleTargetOperations(&unifiedRoleManagementPolicyRuleTargetOperations) 
 
 }
 target.SetOperations(operations)
@@ -36,7 +37,7 @@ requestBody.SetIsExpirationRequired(&isExpirationRequired)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Policies().RoleManagementPoliciesById("unifiedRoleManagementPolicy-id").RulesById("unifiedRoleManagementPolicyRule-id").Patch(requestBody)
+graphClient.Policies().RoleManagementPoliciesById("unifiedRoleManagementPolicy-id").RulesById("unifiedRoleManagementPolicyRule-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

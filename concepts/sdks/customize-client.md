@@ -13,7 +13,7 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 
 ```csharp
 // using Azure.Identity;
-// https://docs.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
 var interactiveCredential = new InteractiveBrowserCredential(...);
 
 var authProvider = new TokenCredentialAuthProvider(

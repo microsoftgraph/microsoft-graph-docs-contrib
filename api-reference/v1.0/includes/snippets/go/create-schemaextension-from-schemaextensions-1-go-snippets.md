@@ -20,23 +20,20 @@ requestBody.SetTargetTypes(targetTypes)
 
 
 extensionSchemaProperty := graphmodels.NewExtensionSchemaProperty()
-additionalData := map[string]interface{}{
-	"name" : "courseId", 
-	"type" : "Integer", 
-}
-extensionSchemaProperty.SetAdditionalData(additionalData)
+name := "courseId"
+extensionSchemaProperty.SetName(&name) 
+type := "Integer"
+extensionSchemaProperty.SetType(&type) 
 extensionSchemaProperty1 := graphmodels.NewExtensionSchemaProperty()
-additionalData := map[string]interface{}{
-	"name" : "courseName", 
-	"type" : "String", 
-}
-extensionSchemaProperty1.SetAdditionalData(additionalData)
+name := "courseName"
+extensionSchemaProperty1.SetName(&name) 
+type := "String"
+extensionSchemaProperty1.SetType(&type) 
 extensionSchemaProperty2 := graphmodels.NewExtensionSchemaProperty()
-additionalData := map[string]interface{}{
-	"name" : "courseType", 
-	"type" : "String", 
-}
-extensionSchemaProperty2.SetAdditionalData(additionalData)
+name := "courseType"
+extensionSchemaProperty2.SetName(&name) 
+type := "String"
+extensionSchemaProperty2.SetType(&type) 
 
 properties := []graphmodels.ExtensionSchemaPropertyable {
 	extensionSchemaProperty,
@@ -46,7 +43,7 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 }
 requestBody.SetProperties(properties)
 
-result, err := graphClient.SchemaExtensions().Post(requestBody)
+result, err := graphClient.SchemaExtensions().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ password := "xWwvJ]6NMw+bWH-d"
 passwordProfile.SetPassword(&password) 
 requestBody.SetPasswordProfile(passwordProfile)
 
-graphClient.UsersById("user-id").Patch(requestBody)
+graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

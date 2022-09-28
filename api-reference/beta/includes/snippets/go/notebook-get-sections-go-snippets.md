@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.Me().Onenote().NotebooksById("notebook-id").Sections().Get()
+result, err := graphClient.Me().Onenote().NotebooksById("notebook-id").Sections().Get(context.Background(), nil)
 
 
 ```

@@ -40,7 +40,7 @@ POST /chats/{chat-Id}/pinnedMessages
 |Content-Type|application/json. Required.|
 
 ## Request body
-The request body should contain the chat message ID.
+In the request body, supply the ID of a chat message to pin.
 
 ## Response
 
