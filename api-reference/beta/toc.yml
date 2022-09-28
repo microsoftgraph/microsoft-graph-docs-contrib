@@ -12052,6 +12052,7 @@ items:
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
           - name: Temporary Access Pass
+            displayName: TAP
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
             - name: List

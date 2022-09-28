@@ -46,7 +46,7 @@ requestBody.SetSharedOpenShift(sharedOpenShift)
 draftOpenShift := null
 requestBody.SetDraftOpenShift(&draftOpenShift) 
 
-graphClient.TeamsById("team-id").Schedule().OpenShiftsById("openShift-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.TeamsById("team-id").Schedule().OpenShiftsById("openShift-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

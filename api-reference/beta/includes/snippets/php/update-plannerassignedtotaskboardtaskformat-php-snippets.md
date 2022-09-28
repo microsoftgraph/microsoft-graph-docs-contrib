@@ -30,7 +30,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->planner()->tasksById('plannerTask-id')->assignedToTaskBoardFormat()->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->planner()->tasksById('plannerTask-id')->assignedToTaskBoardFormat()->patch($requestBody, $requestConfiguration);
 
 
 ```
