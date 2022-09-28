@@ -16,7 +16,7 @@ $requestBody->setAnswerOptions(['Software Engineer', 'Software Development Manag
 
 
 
-$graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->customQuestionsById('meetingRegistrationQuestion-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->customQuestionsById('meetingRegistrationQuestion-id')->patch($requestBody);
 
 
 ```

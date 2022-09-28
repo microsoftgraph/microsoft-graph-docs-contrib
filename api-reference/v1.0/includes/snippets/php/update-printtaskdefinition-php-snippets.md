@@ -19,7 +19,7 @@ $createdBy->setDisplayName('Requesting App Display Name');
 $requestBody->setCreatedBy($createdBy);
 
 
-$graphServiceClient->print()->taskDefinitionsById('printTaskDefinition-id')->patch($requestBody);
+$requestResult = $graphServiceClient->print()->taskDefinitionsById('printTaskDefinition-id')->patch($requestBody);
 
 
 ```

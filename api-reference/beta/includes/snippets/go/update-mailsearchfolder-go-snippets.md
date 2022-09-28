@@ -13,7 +13,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Me().MailFoldersById("mailFolder-id").Patch(requestBody)
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

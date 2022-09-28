@@ -11,7 +11,7 @@ requestBody := graphmodels.NewPersonAnnualEvent()
 allowedAudiences := graphmodels.CONTACTS_ALLOWEDAUDIENCES 
 requestBody.SetAllowedAudiences(&allowedAudiences) 
 
-graphClient.Me().Profile().AnniversariesById("personAnnualEvent-id").Patch(requestBody)
+result, err := graphClient.Me().Profile().AnniversariesById("personAnnualEvent-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -26,7 +26,7 @@ requestBody.SetToRecipients(toRecipients)
 comment := "Dana, hope you can make this meeting."
 requestBody.SetComment(&comment) 
 
-graphClient.Me().EventsById("event-id").Forward().Post(requestBody)
+graphClient.Me().EventsById("event-id").Forward().Post(context.Background(), requestBody, nil)
 
 
 ```

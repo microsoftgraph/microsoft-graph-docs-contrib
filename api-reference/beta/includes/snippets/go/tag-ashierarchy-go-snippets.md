@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").Tags().AsHierarchy().Get()
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").Tags().AsHierarchy().Get(context.Background(), nil)
 
 
 ```
