@@ -11,7 +11,7 @@ requestBody := graphmodels.NewAdministrativeUnit()
 displayName := "Greater Seattle District Technical Schools"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.Directory().AdministrativeUnitsById("administrativeUnit-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Directory().AdministrativeUnitsById("administrativeUnit-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

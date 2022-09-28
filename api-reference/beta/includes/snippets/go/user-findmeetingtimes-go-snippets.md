@@ -81,7 +81,7 @@ meetingDuration , err := abstractions.ParseISODuration("PT1H")
 requestBody.SetMeetingDuration(&meetingDuration) 
 returnSuggestionReasons := true
 requestBody.SetReturnSuggestionReasons(&returnSuggestionReasons) 
-minimumAttendeePercentage := float64(100)
+minimumAttendeePercentage := "100"
 requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage) 
 
 result, err := graphClient.Me().FindMeetingTimes().Post(context.Background(), requestBody, configuration)

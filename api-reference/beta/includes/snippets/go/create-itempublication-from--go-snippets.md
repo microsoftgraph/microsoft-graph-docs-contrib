@@ -12,7 +12,7 @@ description := "One persons journey to the top of the branding management field.
 requestBody.SetDescription(&description) 
 displayName := "Got Brands? The story of Innocenty Popov and his journey to the top."
 requestBody.SetDisplayName(&displayName) 
-publishedDate := "Date"
+publishedDate := date
 requestBody.SetPublishedDate(&publishedDate) 
 publisher := "International Association of Branding Management Publishing"
 requestBody.SetPublisher(&publisher) 

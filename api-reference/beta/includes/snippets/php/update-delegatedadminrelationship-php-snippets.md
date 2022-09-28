@@ -55,7 +55,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->tenantRelationships()->delegatedAdminRelationshipsById('delegatedAdminRelationship-id')->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->tenantRelationships()->delegatedAdminRelationshipsById('delegatedAdminRelationship-id')->patch($requestBody, $requestConfiguration);
 
 
 ```
