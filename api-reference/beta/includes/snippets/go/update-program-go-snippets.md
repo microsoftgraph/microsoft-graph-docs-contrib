@@ -11,7 +11,7 @@ requestBody := graphmodels.NewProgram()
 displayName := "testprogram3 new name"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.ProgramsById("program-id").Patch(requestBody)
+result, err := graphClient.ProgramsById("program-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

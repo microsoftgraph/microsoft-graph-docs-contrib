@@ -15,7 +15,7 @@ requestBody.SetDescription(&description)
 visibility := "HiddenMembership"
 requestBody.SetVisibility(&visibility) 
 
-result, err := graphClient.Directory().AdministrativeUnits().Post(requestBody)
+result, err := graphClient.Directory().AdministrativeUnits().Post(context.Background(), requestBody, nil)
 
 
 ```

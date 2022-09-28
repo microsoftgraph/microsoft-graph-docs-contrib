@@ -16,7 +16,7 @@ $requestBody->setDescription('Connection to index HR service tickets');
 
 
 
-$graphServiceClient->external()->connectionsById('externalConnection-id')->patch($requestBody);
+$requestResult = $graphServiceClient->external()->connectionsById('externalConnection-id')->patch($requestBody);
 
 
 ```

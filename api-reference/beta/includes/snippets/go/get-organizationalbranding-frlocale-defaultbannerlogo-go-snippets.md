@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.OrganizationById("organization-id").Branding().LocalizationsById("organizationalBrandingLocalization-id").BannerLogo().Get()
+graphClient.OrganizationById("organization-id").Branding().LocalizationsById("organizationalBrandingLocalization-id").BannerLogo().Get(context.Background(), nil)
 
 
 ```

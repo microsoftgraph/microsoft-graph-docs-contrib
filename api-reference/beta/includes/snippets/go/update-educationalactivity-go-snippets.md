@@ -27,7 +27,7 @@ location.SetPostalCode(&postalCode)
 institution.SetLocation(location)
 requestBody.SetInstitution(institution)
 
-graphClient.Me().Profile().EducationalActivitiesById("educationalActivity-id").Patch(requestBody)
+result, err := graphClient.Me().Profile().EducationalActivitiesById("educationalActivity-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

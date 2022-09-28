@@ -14,7 +14,7 @@ configuration := &graphconfig.UnifiedRoleAssignmentMultipleRequestBuilderGetRequ
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().CloudPC().RoleAssignmentsById("unifiedRoleAssignmentMultiple-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.RoleManagement().CloudPC().RoleAssignmentsById("unifiedRoleAssignmentMultiple-id").Get(context.Background(), configuration)
 
 
 ```

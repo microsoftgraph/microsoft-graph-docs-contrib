@@ -40,7 +40,7 @@ relatedContacts := []graphmodels.RelatedContactable {
 }
 requestBody.SetRelatedContacts(relatedContacts)
 
-graphClient.Education().UsersById("educationUser-id").Patch(requestBody)
+result, err := graphClient.Education().UsersById("educationUser-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

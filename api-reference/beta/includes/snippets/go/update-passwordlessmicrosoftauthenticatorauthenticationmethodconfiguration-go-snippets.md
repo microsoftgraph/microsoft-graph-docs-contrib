@@ -11,7 +11,7 @@ requestBody := graphmodels.NewAuthenticationMethodConfiguration()
 state := graphmodels.ENABLED_AUTHENTICATIONMETHODSTATE 
 requestBody.SetState(&state) 
 
-graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(requestBody)
+result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

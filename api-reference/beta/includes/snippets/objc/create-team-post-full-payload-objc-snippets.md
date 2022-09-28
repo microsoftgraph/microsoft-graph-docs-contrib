@@ -29,7 +29,7 @@ NSMutableArray *tabsList = [[NSMutableArray alloc] init];
 MSGraphTeamsTab *tabs = [[MSGraphTeamsTab alloc] init];
 [tabs setDisplayName:@"A Pinned Website"];
 MSGraphTeamsTabConfiguration *configuration = [[MSGraphTeamsTabConfiguration alloc] init];
-[configuration setContentUrl:@"https://docs.microsoft.com/microsoftteams/microsoft-teams"];
+[configuration setContentUrl:@"https://learn.microsoft.com/microsoftteams/microsoft-teams"];
 [tabs setConfiguration:configuration];
 [tabsList addObject: tabs];
 MSGraphTeamsTab *tabs = [[MSGraphTeamsTab alloc] init];

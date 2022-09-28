@@ -11,7 +11,7 @@ requestBody := graphmodels.NewCustomSecurityAttributeDefinition()
 status := "Deprecated"
 requestBody.SetStatus(&status) 
 
-graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").Patch(requestBody)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

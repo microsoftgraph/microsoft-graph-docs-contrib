@@ -23,7 +23,7 @@ configuration := &graphconfig.ServicePrincipalsRequestBuilderGetRequestConfigura
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.ServicePrincipals().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.ServicePrincipals().Get(context.Background(), configuration)
 
 
 ```

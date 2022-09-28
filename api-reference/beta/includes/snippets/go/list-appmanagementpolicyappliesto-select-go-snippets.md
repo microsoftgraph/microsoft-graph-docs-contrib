@@ -14,7 +14,7 @@ configuration := &graphconfig.AppliesToRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().AppManagementPoliciesById("appManagementPolicy-id").AppliesTo().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Policies().AppManagementPoliciesById("appManagementPolicy-id").AppliesTo().Get(context.Background(), configuration)
 
 
 ```

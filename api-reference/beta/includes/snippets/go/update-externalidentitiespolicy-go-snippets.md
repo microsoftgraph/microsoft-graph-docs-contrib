@@ -11,7 +11,7 @@ requestBody := graphmodels.NewExternalIdentitiesPolicy()
 allowExternalIdentitiesToLeave := false
 requestBody.SetAllowExternalIdentitiesToLeave(&allowExternalIdentitiesToLeave) 
 
-graphClient.Policies().ExternalIdentitiesPolicy().Patch(requestBody)
+result, err := graphClient.Policies().ExternalIdentitiesPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

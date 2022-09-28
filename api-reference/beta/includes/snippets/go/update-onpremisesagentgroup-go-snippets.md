@@ -11,7 +11,7 @@ requestBody := graphmodels.NewOnPremisesAgentGroup()
 displayName := "Group New Name"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").AgentGroupsById("onPremisesAgentGroup-id").Patch(requestBody)
+result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").AgentGroupsById("onPremisesAgentGroup-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

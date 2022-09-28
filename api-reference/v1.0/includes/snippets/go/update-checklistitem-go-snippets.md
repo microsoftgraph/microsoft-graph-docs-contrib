@@ -11,7 +11,7 @@ requestBody := graphmodels.NewChecklistItem()
 displayName := "buy cake"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").ChecklistItemsById("checklistItem-id").Patch(requestBody)
+result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").ChecklistItemsById("checklistItem-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

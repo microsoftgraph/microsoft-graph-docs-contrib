@@ -11,7 +11,7 @@ requestBody := graphmodels.NewEntitlementManagementSettings()
 externalUserLifecycleAction := graphmodels.NONE_ACCESSPACKAGEEXTERNALUSERLIFECYCLEACTION 
 requestBody.SetExternalUserLifecycleAction(&externalUserLifecycleAction) 
 
-graphClient.IdentityGovernance().EntitlementManagement().Settings().Patch(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().Settings().Patch(context.Background(), requestBody, nil)
 
 
 ```

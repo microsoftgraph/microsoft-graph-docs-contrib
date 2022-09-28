@@ -78,7 +78,7 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.NOEND_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := "2020-05-04T00:00:00.000Z"
+startDate := 2020-05-04T00:00:00.000Z
 range.SetStartDate(&startDate) 
 recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
@@ -90,7 +90,7 @@ autoApplyDecisionsEnabled := true
 settings.SetAutoApplyDecisionsEnabled(&autoApplyDecisionsEnabled) 
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

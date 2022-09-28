@@ -13,24 +13,20 @@ $requestBody = new UpdatePasswordSingleSignOnCredentialsPostRequestBody();
 $requestBody->setId('5793aa3b-cca9-4794-679a240f8b58');
 
 $credentialsCredential1 = new Credential();
-$additionalData = [
-'fieldId' => 'param_username', 
-'value' => 'myusername', 
-'type' => 'username', 
-];
-$credentialsCredential1->setAdditionalData($additionalData);
+$credentialsCredential1->setFieldId('param_username');
 
+$credentialsCredential1->setValue('myusername');
+
+$credentialsCredential1->setType('username');
 
 
 $credentialsArray []= $credentialsCredential1;
 $credentialsCredential2 = new Credential();
-$additionalData = [
-'fieldId' => 'param_password', 
-'value' => 'pa$$w0rd', 
-'type' => 'password', 
-];
-$credentialsCredential2->setAdditionalData($additionalData);
+$credentialsCredential2->setFieldId('param_password');
 
+$credentialsCredential2->setValue('pa$$w0rd');
+
+$credentialsCredential2->setType('password');
 
 
 $credentialsArray []= $credentialsCredential2;

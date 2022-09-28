@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.ApplicationsById("application-id").UnsetVerifiedPublisher().Post()
+graphClient.ApplicationsById("application-id").UnsetVerifiedPublisher().Post(context.Background(), nil)
 
 
 ```
