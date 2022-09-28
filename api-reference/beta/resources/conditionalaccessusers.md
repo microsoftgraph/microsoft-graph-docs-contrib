@@ -49,7 +49,6 @@ The following is a JSON representation of the resource.
     "excludeRoles"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessUsers",
-  "@odata.type": "microsoft.graph.conditionalAccessGuestsOrExternalUsers",
   "baseType": null
 }-->
 
