@@ -225,6 +225,7 @@ For backward compatibility, the original properties and types are accessible and
   - [Refine search results](/graph/search-concept-aggregation)
   - [Request spelling correction](/graph/search-concept-speller)
   - [Use search display layout](/graph/search-concept-display-layout)
+  - [Search with application permission](/graph/search-concept-searchall)
 
 - Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
