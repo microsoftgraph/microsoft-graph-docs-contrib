@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A complex type used to represent a string in a specific language.
+Represents a question in a specific language.
 
 ## Properties
 |Property|Type|Description|
