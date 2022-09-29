@@ -1,6 +1,6 @@
 ---
 title: "accessPackageQuestion resource type"
-description: "The complex type for questions configured on an access package assignment policy."
+description: "Represents the questions configured on an access package assignment policy."
 author: "saylee-dharne-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
