@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
   },
   "questions": [
     {
-      "@odata.type": "microsoft.graph.accessPackageMultipleChoiceQuestion"
+      "@odata.type": "microsoft.graph.accessPackageQuestion"
     }
   ]
 }
