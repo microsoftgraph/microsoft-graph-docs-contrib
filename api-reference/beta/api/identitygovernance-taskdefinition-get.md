@@ -1,6 +1,6 @@
 ---
 title: "Get taskDefinition"
-description: "Read the details about a built-in workflow task."
+description: "Read the details of a built-in workflow task."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the details about a built-in workflow [task](../resources/identitygovernance-taskdefinition.md).
+Read the details of a built-in workflow [task](../resources/identitygovernance-taskdefinition.md).
 
 ## Permissions
 
