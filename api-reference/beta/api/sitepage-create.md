@@ -201,12 +201,13 @@ Content-type: application/json
       }
     },
     "publishingState": {
-    "level": "checkout",
-    "versionId": "0.1",
-    "checkedOutBy": {
-      "user": {
-        "displayName": "Rahul Mittal",
-        "email": "rahmit@contoso.com"
+      "level": "checkout",
+      "versionId": "0.1",
+      "checkedOutBy": {
+        "user": {
+          "displayName": "Rahul Mittal",
+          "email": "rahmit@contoso.com"
+        }
       }
     },
     "titleArea": {
