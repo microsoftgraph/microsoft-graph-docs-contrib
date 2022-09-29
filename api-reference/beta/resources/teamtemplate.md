@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Represents a logical container for all the definitions and versions of the same team template.
 
+> **Note**: This API is available for private preview only and it will be available to the public shortly. We will publish a blog post in the [Microsoft 365 Developer Blog](https://devblogs.microsoft.com/microsoft365dev/) when this API becomes available for public preview.
+
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
