@@ -21,7 +21,8 @@ $propertiesProperty1->setIsSearchable(true);
 
 $propertiesProperty1->setIsRetrievable(true);
 
-$propertiesProperty1->setLabels(['title', ]);
+$propertiesProperty1->setLabels([$propertiesProperty1->setLabel(new Label('title'));
+]);
 
 
 $propertiesArray []= $propertiesProperty1;
@@ -52,7 +53,7 @@ $requestBody->setProperties($propertiesArray);
 
 
 
-$graphServiceClient->external()->connectionsById('externalConnection-id')->schema()->patch($requestBody);
+$requestResult = $graphServiceClient->external()->connectionsById('externalConnection-id')->schema()->patch($requestBody);
 
 
 ```

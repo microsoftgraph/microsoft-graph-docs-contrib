@@ -24,7 +24,8 @@ identity.SetAdditionalData(additionalData)
 source.SetIdentity(identity)
 requestBody.SetSource(source)
 requestedModalities := []graphmodels.Modalityable {
-	"audio",
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality) 
 
 }
 requestBody.SetRequestedModalities(requestedModalities)
