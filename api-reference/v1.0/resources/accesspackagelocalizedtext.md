@@ -1,6 +1,6 @@
 ---
 title: "accessPackageLocalizedText resource type"
-description: "A complex type used to represent a string in a specific language."
+description: "Represents a question in a specific language."
 author: "saylee-dharne-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
