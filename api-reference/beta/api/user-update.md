@@ -237,7 +237,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Update the passwordProfile of a user to reset their password
 
-The following example shows a request that resets the password of another user.
+The following example shows a request that resets the password of another user. As a best practice, always set the **forceChangePasswordNextSignIn** to `true`.
 
 #### Request
 
@@ -253,7 +253,7 @@ Content-type: application/json
 
 {
   "passwordProfile": {
-    "forceChangePasswordNextSignIn": false,
+    "forceChangePasswordNextSignIn": true,
     "password": "xWwvJ]6NMw+bWH-d"
   }
 }
