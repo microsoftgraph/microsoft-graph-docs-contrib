@@ -329,24 +329,8 @@
           "Id": "a40b7de8-84cf-4012-abdf-7395b875aff5",
           "ApiChange": "Property",
           "ChangedApiName": "isEnabled",
-          "ChangeType": "Deletion",
-          "Description": "Removed the `isEnabled` property from the [workflow](https://docs.microsoft.com/en-us/graph/api/resources/workflow?view=graph-rest-beta) resource.",
-          "Target": "workflow"
-        },
-        {
-          "Id": "a40b7de8-84cf-4012-abdf-7395b875aff5",
-          "ApiChange": "Property",
-          "ChangedApiName": "isSchedulingEnabled",
-          "ChangeType": "Deletion",
-          "Description": "Removed the `isSchedulingEnabled` property from the [workflow](https://docs.microsoft.com/en-us/graph/api/resources/workflow?view=graph-rest-beta) resource.",
-          "Target": "workflow"
-        },
-        {
-          "Id": "a40b7de8-84cf-4012-abdf-7395b875aff5",
-          "ApiChange": "Property",
-          "ChangedApiName": "isEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the `isEnabled` property to the [workflowBase](https://docs.microsoft.com/en-us/graph/api/resources/workflowBase?view=graph-rest-beta) resource.",
+          "Description": "Added the **isEnabled** property to the [workflowBase](https://docs.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowBase?view=graph-rest-beta) resource. [workflowBase](https://docs.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowBase?view=graph-rest-beta) is an entity type that's inherited by the following derived types in Lifecycle Workflows: [workflow](https://docs.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta) and [workflowVersion](https://docs.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowVersion?view=graph-rest-beta).",
           "Target": "workflowBase"
         },
         {
@@ -354,7 +338,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isSchedulingEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the `isSchedulingEnabled` property to the [workflowBase](https://docs.microsoft.com/en-us/graph/api/resources/workflowBase?view=graph-rest-beta) resource.",
+          "Description": "Added the **isSchedulingEnabled** property to the [workflowBase](https://docs.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowBase?view=graph-rest-beta) resource. [workflowBase](https://docs.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowBase?view=graph-rest-beta) is an entity type that's inherited by the following derived types in Lifecycle Workflows: [workflow](https://docs.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta) and [workflowVersion](https://docs.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowVersion?view=graph-rest-beta).",
           "Target": "workflowBase"
         }
       ],
