@@ -40,12 +40,11 @@ The following is a JSON representation of the resource.
   "trainingAssignedProperties": {
     "@odata.type": "microsoft.graph.userTrainingContentEventInfo"
   },
-  "trainingUpdatedProperties": {
+  "trainingCompletedProperties": {
     "@odata.type": "microsoft.graph.userTrainingContentEventInfo"
   },
-  "trainingCompletedProperties": {
+  "trainingUpdatedProperties": {
     "@odata.type": "microsoft.graph.userTrainingContentEventInfo"
   }
 }
 ```
-

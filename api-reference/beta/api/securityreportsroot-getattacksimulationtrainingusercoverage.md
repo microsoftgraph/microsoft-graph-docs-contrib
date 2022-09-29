@@ -1,6 +1,6 @@
 ---
 title: "securityReportsRoot: getAttackSimulationTrainingUserCoverage"
-description: "List training coverage for users of a tenant in attack simulation and training campaigns."
+description: "List training coverage for tenant users in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List training coverage for users of a tenant in attack simulation and training campaigns.
+List training coverage for tenant users in attack simulation and training campaigns.
 
 This function supports `@odata.nextLink` for pagination.
 

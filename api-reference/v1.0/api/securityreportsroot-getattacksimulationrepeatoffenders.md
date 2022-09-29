@@ -1,6 +1,6 @@
 ---
 title: "securityReportsRoot: getAttackSimulationRepeatOffenders"
-description: "List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns."
+description: "List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # securityReportsRoot: getAttackSimulationRepeatOffenders
 Namespace: microsoft.graph
 
-List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns.
+List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns.
 
 This function supports `@odata.nextLink` for pagination.
 
