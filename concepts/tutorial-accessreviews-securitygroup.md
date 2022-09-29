@@ -579,13 +579,13 @@ Reviewers can also visit the [My Access portal](https://myaccess.microsoft.com/)
 + List the pending access reviews. The user can follow one of two ways to get there:
   + Option 1: Select **Review access** button from the email notification that they received in their mail inbox. The email notification is like the following screenshot. Selecting this button directs them to the pending access review.
 
-  :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/emailnotification.png" alt-text="Email notification to review your access." border="true":::
+  :::image type="content" source="images/tutorials-identity/tutorial-access-reviews-emailnotification.png" alt-text="Email notification to review your access." border="true":::
 
   + Option 2: Go to the [My Access portal](https://myaccess.microsoft.com/) portal. Select the **Access reviews** menu and select the **Groups and Apps** tab.
 
 + From the list of access reviews, select the access review for which you want to post the decision. Select **Yes** to post the decision that you still need access to **Building security**. Enter a reason, then select **Submit**.
 
-  :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/selfattest.png" alt-text="Self-attest to the need to maintain access to a resource.":::
+  :::image type="content" source="images/tutorials-identity/tutorial-access-reviews-selfattest.png" alt-text="Self-attest to the need to maintain access to a resource.":::
 
 
 You can now sign out and exit the incognito browser session.

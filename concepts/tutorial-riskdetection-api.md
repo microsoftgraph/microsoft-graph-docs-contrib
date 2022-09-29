@@ -403,7 +403,7 @@ Content-type: application/json
 
 With this conditional access policy in place, the **MyTestUser1** account is now blocked from signing in because the sign-in risk level is `medium` or `high`.
 
-![Blocked sign-in](./images/tutorial-riskdetection-api/conditionalaccess-policy.png)
+![Blocked sign-in](./images/tutorials-identity/tutorial-risk-detection.conditionalaccess-policy.png)
 
 ## Step 5: Dismiss risky users
 
