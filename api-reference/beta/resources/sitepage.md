@@ -45,7 +45,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 | name                 | String                                                                 | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
 | pageLayout           | [pageLayoutType](../resources/sitepage.md#pagelayouttype-values)       | The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`. |
 | parentReference      | [itemReference](../resources/itemreference.md)                         | Inherited from [baseItem](../resources/baseitem.md).                                                                            |
-| promotionKind        | [pagePromotionKind](../resources/sitepage.md#pagepromotionkind-values) | Indicate the promotion kind of the sitePage. The possible values are: `microsoftReserved`, `page`, `newsPost`, `unknownFutureValue`.                                                                                    |
+| promotionKind        | [pagePromotionType](../resources/sitepage.md#pagepromotiontype-values) | Indicate the promotion kind of the sitePage. The possible values are: `microsoftReserved`, `page`, `newsPost`, `unknownFutureValue`.                                                                                    |
 | publishingState      | [publicationFacet](../resources/publicationfacet.md)                   | The publishing status and the MM.mm version of the page.                                                                        |
 | reactions            | [reactionsFacet](../resources/reactionsfacet.md)                       | Reactions information for the page.                                                                                             |
 | showComments         | Boolean                                                                | Boolean to determine whether or not to show comments at the bottom of the page.                                                 |
@@ -64,7 +64,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 | `home`               | The page is a home page.                                                                                                                                                   |
 | `unknownFutureValue` | Marker value for future compatibility.                                                                                                                                     |
 
-#### pagePromotionKind values
+#### pagePromotionType values
 
 | Value                | Description                                                                                                                                                                |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
