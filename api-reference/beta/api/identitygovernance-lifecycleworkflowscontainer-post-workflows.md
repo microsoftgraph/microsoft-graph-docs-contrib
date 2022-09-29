@@ -55,7 +55,7 @@ You can specify the following properties when creating a **workflow**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|[microsoft.graph.identityGovernance.lifecycleWorkflowCategory](../resources/identitygovernance-workflow.md)|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Can be only one value.|
+|category|[microsoft.graph.identityGovernance.lifecycleWorkflowCategory](../resources/identitygovernance-workflow.md)|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Can be only one value. Required.|
 |description|String|A string that describes the purpose of the workflow for administrative use.|
 |displayName|String|A unique string that identifies the workflow. Required.|
 |executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines for who and when a workflow will run. Required. |
