@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAnswer resource type"
-description:  "The complex type for answers to an accessPackageQuestion that are stored on an accessPackageAssignmentRequest."
+description:  "Represents answers to an accessPackageQuestion that are stored on an accessPackageAssignmentRequest."
 author: "saylee-dharne-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
