@@ -34,7 +34,7 @@ appliedCategories.SetCategory4(&category4)
 appliedCategories.SetAdditionalData(additionalData)
 requestBody.SetAppliedCategories(appliedCategories)
 
-graphClient.Planner().TasksById("plannerTask-id").Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Planner().TasksById("plannerTask-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

@@ -37,7 +37,7 @@ For delegated scenarios, the admin needs one of the following [Azure AD roles](/
 }
 -->
 ``` http
-POST /identityGovernance/deletedItems/lifecycleWorkflows/workflows/{workflowId}/restore
+POST /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/restore
 ```
 
 ## Request headers
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/dele
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-workflowthisrestore-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-workflowthisrestore-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

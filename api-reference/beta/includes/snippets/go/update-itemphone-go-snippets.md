@@ -11,7 +11,7 @@ requestBody := graphmodels.NewItemPhone()
 type := graphmodels.OTHER_PHONETYPE 
 requestBody.SetType(&type) 
 
-graphClient.UsersById("user-id").Profile().PhonesById("itemPhone-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.UsersById("user-id").Profile().PhonesById("itemPhone-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

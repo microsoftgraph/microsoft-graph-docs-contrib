@@ -13,42 +13,30 @@ $requestBody = new SchemaExtension();
 $requestBody->setOwner('ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa');
 
 $propertiesExtensionSchemaProperty1 = new ExtensionSchemaProperty();
-$additionalData = [
-'name' => 'courseId', 
-'type' => 'Integer', 
-];
-$propertiesExtensionSchemaProperty1->setAdditionalData($additionalData);
+$propertiesExtensionSchemaProperty1->setName('courseId');
 
+$propertiesExtensionSchemaProperty1->setType('Integer');
 
 
 $propertiesArray []= $propertiesExtensionSchemaProperty1;
 $propertiesExtensionSchemaProperty2 = new ExtensionSchemaProperty();
-$additionalData = [
-'name' => 'courseName', 
-'type' => 'String', 
-];
-$propertiesExtensionSchemaProperty2->setAdditionalData($additionalData);
+$propertiesExtensionSchemaProperty2->setName('courseName');
 
+$propertiesExtensionSchemaProperty2->setType('String');
 
 
 $propertiesArray []= $propertiesExtensionSchemaProperty2;
 $propertiesExtensionSchemaProperty3 = new ExtensionSchemaProperty();
-$additionalData = [
-'name' => 'courseType', 
-'type' => 'String', 
-];
-$propertiesExtensionSchemaProperty3->setAdditionalData($additionalData);
+$propertiesExtensionSchemaProperty3->setName('courseType');
 
+$propertiesExtensionSchemaProperty3->setType('String');
 
 
 $propertiesArray []= $propertiesExtensionSchemaProperty3;
 $propertiesExtensionSchemaProperty4 = new ExtensionSchemaProperty();
-$additionalData = [
-'name' => 'courseSupervisors', 
-'type' => 'String', 
-];
-$propertiesExtensionSchemaProperty4->setAdditionalData($additionalData);
+$propertiesExtensionSchemaProperty4->setName('courseSupervisors');
 
+$propertiesExtensionSchemaProperty4->setType('String');
 
 
 $propertiesArray []= $propertiesExtensionSchemaProperty4;
@@ -57,7 +45,7 @@ $requestBody->setProperties($propertiesArray);
 
 
 
-$graphServiceClient->schemaExtensionsById('schemaExtension-id')->patch($requestBody);
+$requestResult = $graphServiceClient->schemaExtensionsById('schemaExtension-id')->patch($requestBody);
 
 
 ```

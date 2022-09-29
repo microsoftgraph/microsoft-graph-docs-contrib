@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAddToReviewSetPostRequestBody()
-sourceCollection := graphmodels.NewsourceCollection()
+sourceCollection := graphmodels.NewSourceCollection()
 id := "1a9b4145d8f84e39bc45a7f68c5c5119"
 sourceCollection.SetId(&id) 
 requestBody.SetSourceCollection(sourceCollection)

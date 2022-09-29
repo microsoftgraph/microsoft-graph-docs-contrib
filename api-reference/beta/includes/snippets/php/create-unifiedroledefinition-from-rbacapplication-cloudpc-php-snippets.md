@@ -15,11 +15,7 @@ $requestBody->setDescription('An example custom role');
 $requestBody->setDisplayName('ExampleCustomRole');
 
 $rolePermissionsUnifiedRolePermission1 = new UnifiedRolePermission();
-$additionalData = [
-'allowedResourceActions' => ['Microsoft.CloudPC/CloudPCs/Read', ],
-];
-$rolePermissionsUnifiedRolePermission1->setAdditionalData($additionalData);
-
+$rolePermissionsUnifiedRolePermission1->setAllowedResourceActions(['Microsoft.CloudPC/CloudPCs/Read', ]);
 
 
 $rolePermissionsArray []= $rolePermissionsUnifiedRolePermission1;
