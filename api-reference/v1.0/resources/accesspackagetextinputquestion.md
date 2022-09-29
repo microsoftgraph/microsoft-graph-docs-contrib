@@ -25,7 +25,7 @@ Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 |isRequired|Boolean|Indicates whether the requestor is required to supply an answer or not. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
 |isAnswerEditable|Boolean| Specifies whether the requestor is allowed to edit answers to questions. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
 |text|String|The text of the question to show to the requestor. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
-|localizations|Collection([accessPackageLocalizedText](../resources/accesspackagelocalizedtext.md))|The text of the question represented in a format for a specific locale. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
+|localizations|[accessPackageLocalizedText](../resources/accesspackagelocalizedtext.md) collection|The text of the question represented in a format for a specific locale. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md).|
 
 
 ## Relationships
