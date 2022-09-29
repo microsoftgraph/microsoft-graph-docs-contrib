@@ -4,6 +4,7 @@ description: "Use the Microsoft Cloud IE Mode Site Lists API in Microsoft Graph 
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
+doc_type: conceptualPageType
 ---
 
 # Use the Cloud IE Mode Site Lists REST API
