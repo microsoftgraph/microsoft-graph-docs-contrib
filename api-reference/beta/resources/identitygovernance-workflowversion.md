@@ -71,6 +71,8 @@ The following is a JSON representation of the resource.
   "executionConditions": {
     "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
   },
+  "isEnabled": "Boolean",
+  "isSchedulingEnabled": "Boolean",
   "lastModifiedDateTime": "String (timestamp)",
   "versionNumber": "Integer"
 }
