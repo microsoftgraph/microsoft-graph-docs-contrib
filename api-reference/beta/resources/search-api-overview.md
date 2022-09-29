@@ -185,8 +185,6 @@ The search API has the following limitations:
 |   person    |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |
 |    site     |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
 
--  When you combine SharePoint and OneDrive entity types - **driveItem**, **drive**, **site**, **list**, and **listItem** - with **externalItem**, only all connections **(/external/connections/*)** and all SharePoint and OneDrive entity type combinations are supported.
-
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
 - The search API does not support custom sort for **message**, **chatMessage**, **event**, **person**, or **externalItem**.
