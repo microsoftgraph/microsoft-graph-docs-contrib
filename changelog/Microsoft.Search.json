@@ -1203,10 +1203,10 @@
         {
           "Id": "d7e73514-9dad-4c2f-8762-786788ac6984",
           "ApiChange": "Enumeration",
-          "ChangedApiName": "searchContent",
+          "ChangedApiName": "includeContent",
           "ChangeType": "Addition",
-          "Description": "Added the **searchContent** enumeration type.",
-          "Target": "searchContent"
+          "Description": "Added the **includeContent** enumeration type.",
+          "Target": "includeContent"
         },
         {
           "Id": "d7e73514-9dad-4c2f-8762-786788ac6984",
