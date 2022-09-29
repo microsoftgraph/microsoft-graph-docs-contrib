@@ -16,7 +16,7 @@ $requestBody->setDisplayName('Apple');
 
 
 
-$graphServiceClient->identity()->identityProvidersById('identityProviderBase-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identity()->identityProvidersById('identityProviderBase-id')->patch($requestBody);
 
 
 ```

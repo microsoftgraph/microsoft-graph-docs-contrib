@@ -16,7 +16,7 @@ $requestBody->setDescription('Use Graph API to create tags (updated)');
 
 
 
-$graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->tagsById('ediscoveryReviewTag-id')->patch($requestBody);
+$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->tagsById('ediscoveryReviewTag-id')->patch($requestBody);
 
 
 ```

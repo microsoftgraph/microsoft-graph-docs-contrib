@@ -18,7 +18,7 @@ $requestBody->setState(new ConnectedOrganizationState('configured'));
 
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->connectedOrganizationsById('connectedOrganization-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->connectedOrganizationsById('connectedOrganization-id')->patch($requestBody);
 
 
 ```

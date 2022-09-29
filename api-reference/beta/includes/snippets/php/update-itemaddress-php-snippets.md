@@ -16,7 +16,7 @@ $requestBody->setDisplayName('Secret Hideout');
 
 
 
-$graphServiceClient->usersById('user-id')->profile()->addressesById('itemAddress-id')->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->profile()->addressesById('itemAddress-id')->patch($requestBody);
 
 
 ```
