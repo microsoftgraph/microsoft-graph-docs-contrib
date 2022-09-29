@@ -7383,6 +7383,8 @@ items:
             href: api/team-sendactivitynotification.md
           - name: Send notification to user
             href: api/userteamwork-sendactivitynotification.md
+          - name: Send notifications to multiple users in bulk
+            href: api/teamwork-sendactivitynotificationtorecipients.md
         - name: Channel
           href: resources/channel.md
           items:
