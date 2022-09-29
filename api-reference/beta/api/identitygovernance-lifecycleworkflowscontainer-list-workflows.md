@@ -1,5 +1,5 @@
 ---
-title: "List workflows (in Lifecycle Workflows)
+title: "List workflows (in Lifecycle Workflows)"
 description: "Get a list of the workflow objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
