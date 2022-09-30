@@ -1,7 +1,7 @@
 ---
 title: "accessPackageAnswerChoice resource type"
 description: "An answer option for an accessPackageMultipleChoiceQuestion."
-author: "saylee-dharne-msft"
+author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
