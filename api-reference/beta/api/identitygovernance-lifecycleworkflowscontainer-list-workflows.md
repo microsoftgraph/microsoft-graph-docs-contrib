@@ -1,5 +1,5 @@
 ---
-title: "List workflows (lifecycle workflows)"
+title: "List workflows (in Lifecycle Workflows)"
 description: "Get a list of the workflow objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List workflows (lifecycle workflows)
+# List workflows (in Lifecycle Workflows)
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -43,7 +43,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows
 
 ## Optional query parameters
 
-This method supports the `$search`, `$select`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$search`, `$orderBy`, and `$filter` OData query parameters to help customize the response. `$expand` is supported by the **createdBy** and **lastModifiedBy** relationships only. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,11 +57,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [workflow](../resources/identitygovernance-workflow.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) objects in the response body.
 
 ## Examples
 
-### Request
+### Example 1: Retrieve all workflows created in the tenant
+
+#### Request
 
 The following is an example of a request.
 
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response
 
@@ -184,6 +186,47 @@ Content-Type: application/json
             "isEnabled": true,
             "isSchedulingEnabled": false,
             "version": 1
+        }
+    ]
+}
+```
+
+### Example 2: Retrieve only specific properties of "leaver" workflows
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_list_workflow_select"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows?$filter=category eq 'leaver'&$select=id,category,displayName,isEnabled,isSchedulingEnabled
+```
+
+#### Response
+The following is an example of the response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.identityGovernance.workflowTemplate)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows(category,displayName,isEnabled,isSchedulingEnabled)",
+    "value": [
+        {
+            "category": "leaver",
+            "displayName": "Pre-Offboarding employees in the R&D department",
+            "id": "c0548e6c-8849-46e8-be14-8b6d2b04957e",
+            "isEnabled": true,
+            "isSchedulingEnabled": true
         }
     ]
 }
