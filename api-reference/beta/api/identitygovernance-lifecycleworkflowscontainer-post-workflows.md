@@ -1,6 +1,6 @@
 ---
 title: "Create workflow (lifecycle workflow)"
-description: "Create a new workflow object."
+description: "Create a new workflow object. You can create up to 50 workflows in a tenant."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [workflow](../resources/identitygovernance-workflow.md) object.
+Create a new [workflow](../resources/identitygovernance-workflow.md) object. You can create up to 50 workflows in a tenant.
 
 ## Permissions
 
@@ -55,10 +55,10 @@ You can specify the following properties when creating a **workflow**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|[microsoft.graph.identityGovernance.lifecycleWorkflowCategory](../resources/identitygovernance-workflow.md)|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Can be only one value.|
+|category|[microsoft.graph.identityGovernance.lifecycleWorkflowCategory](../resources/identitygovernance-workflow.md)|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Can be only one value. Required.|
 |description|String|A string that describes the purpose of the workflow for administrative use.|
-|displayName|String|A unique string that identifies the workflow. |
-|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines for who and when a workflow will run. |
+|displayName|String|A unique string that identifies the workflow. Required.|
+|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines for who and when a workflow will run. Required. |
 |id|String|Identifier used for individually addressing a specific workflow.|
 |isEnabled|Boolean|A Boolean value that denotes whether the workflow is set to run or not.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
@@ -66,13 +66,16 @@ You can specify the following properties when creating a **workflow**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [workflow](../resources/identitygovernance-workflow.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) object in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of a request.
+The following is an example of a request that creates a workflow with the following configuration:
++ It's a "leaver" workflow that's enabled and schedule to run.
++ It runs for new users that are based in Australia, on their employeeHireDate.
++ Two tasks are carried out when the workflow runs: the user's account is enabled and a "Welcome" email is sent to the user.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -83,7 +86,6 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 Content-Type: application/json
-Content-length: 454
 
 {
     "category": "joiner",

@@ -1,12 +1,12 @@
 ---
-title: "Tutorial: Use the access reviews API to review access to privileged roles"
+title: "Review access to privileged roles using the access reviews API in Microsoft Graph"
 description: "Learn how to use the access reviews API to periodically review users and groups with access to privileged roles, including both active and eligible roles."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 
-# Tutorial: Use the access reviews API to review access to privileged roles
+# Review access to privileged roles using the access reviews API in Microsoft Graph
 
 The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. One of the most sensitive resources in an organization is privileged roles. With a privileged role, a principal can perform administrative operations. Depending on the privileged role, some operations might have a greater effect on the security posture of the organization. Using the access reviews API, organizations can periodically attest to principals that have access to privileged roles as per the organization policy.
 
@@ -19,19 +19,10 @@ In this tutorial, you'll use the access reviews API to periodically review users
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a Privileged Role Administrator role.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Privileged Role Administrator role.
 + Principals with active or eligible assignments to a privileged role. These assignments will be the scope of your access review. To assign privileged roles, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
     + In this tutorial, the User Administrator role is the resource in review. A security group and an individual user have been assigned the role.
-+ The following delegated permissions: `AccessReview.ReadWrite.All`.
-
-To consent to the required permissions in Graph Explorer:
-1. Select the horizontal ellipses icon to the right of the user account details, and then choose **Select permissions**.
-
-      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select Microsoft Graph permissions." border="true":::
-
-2. Scroll through the list of permissions to **AccessReview (3)**, expand and then select `AccessReview.ReadWrite.All`. Select **Consent**, and then select **Accept** to accept the consent of the permissions.
-
-      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
++ Grant yourself the following delegated permission: `AccessReview.ReadWrite.All`.
 
 >[!NOTE]
 >The response objects shown in this tutorial might be shortened for readability.

@@ -28,33 +28,34 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 
 ## Methods
 
-| Method                                                             | Return Type                                                 | Description                                                                     |
-|:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
-| [Get](../api/call-get.md)                                     | [call](call.md)                                             | Read properties of the **call** object.                                         |
-| [Delete](../api/call-delete.md)                                    | None                                                            | Delete or Hang-up an active **call**.                                           |
-| [KeepAlive](../api/call-keepalive.md)                             | None                                                  | Ensure that the call remains active.
-| **Call Handling**                                                  |                                                        |                                                                                 |
-| [Answer](../api/call-answer.md)                                    | None                                                            | Answer an incoming call.                                                        |
-| [Reject](../api/call-reject.md)                                    | None                                                            | Reject an incoming call.                                                        |
-| [Redirect](../api/call-redirect.md)                                | None                                                            | Redirect an incoming call.                                                      |
-| [Transfer](../api/call-transfer.md)                                | None                                                            | Transfer a call                                                                 |
-| **Group Calls**                                                    |                                                             |                                                                                 |
-| [List participants](../api/call-list-participants.md)              | [participant](participant.md) collection                    | Get a participant object collection.                                            |
-| [Invite participants](../api/participant-invite.md)                | [commsOperation](commsoperation.md)                         | Invite participants to the active call.                                         |
-| [Mute participant](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in the group call.                                           |
-| **Interactive-Voice-Response**                                     |                                                             |                                                                                 |
-| [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | Play prompt in the call.                                                        |
-| [RecordResponse](../api/call-record.md)                            | [recordOperation](recordoperation.md)                       | Records a short audio response from the caller.                                        |
-| [CancelMediaProcessing](../api/call-cancelMediaProcessing.md)                  | [commsOperation](commsoperation.md)                         | Cancel media processing.                                                        |
-| [SubscribeToTone](../api/call-subscribetotone.md)                  | [commsOperation](commsoperation.md)                         | Subscribe to DTMF tones.                                                        |
-| **Self Participant Operations**                                    |                                                             |                                                                                 |
-| [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | Mute self in the call.                                                          |
-| [Unmute](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | Unmute self in the call.                                                        |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | None                                                        | Start and stop sharing screen in the call.                                      |
-| **Recording Operations**                                           |                                                             |                                              |
-| [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Updates the recording status.                      |
-| **Logging Operations**                                           |                                                             |                                              |
-| [Log device quality data](../api/call-logteleconferencedevicequality.md)| [teleconferenceDeviceQuality](teleconferencedevicequality.md) | Log video teleconferencing device quality data.|
+| Method                                                                   | Return Type                                                         | Description                                                                     |
+|:-------------------------------------------------------------------------|:--------------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| [Get](../api/call-get.md)                                                | [call](call.md)                                                     | Read properties of the **call** object.                                         |
+| [Delete](../api/call-delete.md)                                          | None                                                                | Delete or Hang-up an active **call**.                                           |
+| [KeepAlive](../api/call-keepalive.md)                                    | None                                                                | Ensure that the call remains active.                                            |
+| **Call handling**                                                        |                                                                     |                                                                                 |
+| [Answer](../api/call-answer.md)                                          | None                                                                | Answer an incoming call.                                                        |
+| [Reject](../api/call-reject.md)                                          | None                                                                | Reject an incoming call.                                                        |
+| [Redirect](../api/call-redirect.md)                                      | None                                                                | Redirect an incoming call.                                                      |
+| [Transfer](../api/call-transfer.md)                                      | None                                                                | Transfer a call                                                                 |
+| **Group calls**                                                          |                                                                     |                                                                                 |
+| [List participants](../api/call-list-participants.md)                    | [participant](participant.md) collection                            | Get a participant object collection.                                            |
+| [Invite participants](../api/participant-invite.md)                      | [commsOperation](commsoperation.md)                                 | Invite participants to the active call.                                         |
+| [Mute participant](../api/participant-mute.md)                           | [muteParticipantOperation](muteparticipantoperation.md)             | Mute a participant in the group call.                                           |
+| [Add large gallery view](../api/call-addlargegalleryview.md)             | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md)     | Add the large gallery view to a call.                                           |
+|**Interactive-voice-response**                                            |                                                                     |                                                                                 |
+| [PlayPrompt](../api/call-playprompt.md)                                  | [playPromptOperation](playpromptoperation.md)                       | Play prompt in the call.                                                        |
+| [RecordResponse](../api/call-record.md)                                  | [recordOperation](recordoperation.md)                               | Records a short audio response from the caller.                                 |
+| [CancelMediaProcessing](../api/call-cancelMediaProcessing.md)            | [commsOperation](commsoperation.md)                                 | Cancel media processing.                                                        |
+| [SubscribeToTone](../api/call-subscribetotone.md)                        | [commsOperation](commsoperation.md)                                 | Subscribe to DTMF tones.                                                        |
+| **Self participant operations**                                          |                                                                     |                                                                                 |
+| [Mute](../api/call-mute.md)                                              | [muteParticipantOperation](muteparticipantoperation.md)             | Mute self in the call.                                                          |
+| [Unmute](../api/call-unmute.md)                                          | [unmuteParticipantOperation](unmuteparticipantoperation.md)         | Unmute self in the call.                                                        |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)        | None                                                                | Start and stop sharing screen in the call.                                      |
+| **Recording Operations**                                                 |                                                                     |                                                                                 |
+| [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)            | [updateRecordingStatusOperation](updateRecordingStatusOperation.md) | Updates the recording status.                                                   |
+| **Logging operations**                                                   |                                                                     |                                                                                 |
+| [Log device quality data](../api/call-logteleconferencedevicequality.md) | [teleconferenceDeviceQuality](teleconferencedevicequality.md)       | Log video teleconferencing device quality data.                                 |
 
 ## Properties
 
