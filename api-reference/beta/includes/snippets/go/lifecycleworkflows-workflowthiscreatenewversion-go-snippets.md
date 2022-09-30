@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCreateNewVersionPostRequestBody()
-workflow := graphmodels.Newworkflow()
+workflow := graphmodels.NewWorkflow()
 description := "Configure new hire tasks for onboarding employees on their first day"
 workflow.SetDescription(&description) 
 displayName := "Global onboard new hire employee"
@@ -73,7 +73,7 @@ tasks := []graphmodels.Taskable {
 workflow.SetTasks(tasks)
 requestBody.SetWorkflow(workflow)
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").CreateNewVersion().Post(requestBody)
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").CreateNewVersion().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -36,7 +36,7 @@ attendees := []graphmodels.MeetingParticipantInfoable {
 participants.SetAttendees(attendees)
 requestBody.SetParticipants(participants)
 
-result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(requestBody)
+result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(context.Background(), requestBody, nil)
 
 
 ```

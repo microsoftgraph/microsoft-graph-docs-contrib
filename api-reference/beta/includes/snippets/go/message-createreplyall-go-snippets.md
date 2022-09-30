@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCreateReplyAllPostRequestBody()
-message := graphmodels.Newmessage()
+message := graphmodels.NewMessage()
 
 
 attachment := graphmodels.NewAttachment()
@@ -28,7 +28,7 @@ requestBody.SetMessage(message)
 comment := "if the project gets approved, please take a look at the attached guidelines before you decide on the name."
 requestBody.SetComment(&comment) 
 
-result, err := graphClient.Me().MessagesById("message-id").CreateReplyAll().Post(requestBody)
+result, err := graphClient.Me().MessagesById("message-id").CreateReplyAll().Post(context.Background(), requestBody, nil)
 
 
 ```

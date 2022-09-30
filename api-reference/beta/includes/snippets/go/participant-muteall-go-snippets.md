@@ -16,7 +16,7 @@ requestBody.SetParticipants(participants)
 clientContext := "clientContext-value"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().CallsById("call-id").Participants().MuteAll().Post(requestBody)
+result, err := graphClient.Communications().CallsById("call-id").Participants().MuteAll().Post(context.Background(), requestBody, nil)
 
 
 ```

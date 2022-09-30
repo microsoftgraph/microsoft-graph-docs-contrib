@@ -11,7 +11,7 @@ requestBody := graphmodels.NewReferenceCreate()
 "@odata.id" := "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
 requestBody.Set"@odata.id"(&"@odata.id") 
 
-graphClient.ApplicationsById("application-id").AppManagementPolicies().$ref().Post(requestBody)
+graphClient.ApplicationsById("application-id").AppManagementPolicies().$ref().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,10 +15,12 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 
 > [!IMPORTANT]
 > Do not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
+>
+> The extensions mentioned in this article are not similar to Azure AD [custom security attributes](/graph/api/resources/custom-security-attributes-overview). To understand their differences, see [How do custom security attributes compare with directory extensions?](/azure/active-directory/fundamentals/custom-security-attributes-overview#how-do-custom-security-attributes-compare-with-directory-extensions).
 
 
 > [!div class="nextstepaction"]
-> [Learn: Add custom data to your app using extensions in Microsoft Graph](/learn/modules/msgraph-extensions/)
+> [Learn: Add custom data to your app using extensions in Microsoft Graph](/training/modules/msgraph-extensions/)
 
 ## Why add custom data to Microsoft Graph?
 

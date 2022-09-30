@@ -67,8 +67,10 @@ items:
           - name: Overview
             href: azuread-users-concept-overview.md
             displayName: users
+          - name: Default user permissions
+            href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
           - name: Access user data
-            href: /learn/modules/msgraph-access-user-data
+            href: /training/modules/msgraph-access-user-data
       - name: Groups
         items:
           - name: Overview
@@ -81,7 +83,7 @@ items:
           - name: Microsoft 365 group settings
             href: group-directory-settings.md
           - name: Manage group lifecycle
-            href: /learn/modules/msgraph-access-group-data
+            href: /training/modules/msgraph-access-group-data
       - name: Applications
         items:
           - name: Overview
@@ -91,6 +93,8 @@ items:
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
             href: application-proxy-configure-api.md
+          - name: Automate provisioning
+            href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
       - name: Accessing data at scale
         items:
           - name: Data Connect overview
@@ -254,9 +258,11 @@ items:
             href: education-concept-overview.md
             displayName: education
           - name: Rubrics
-            href: education-rubric-overview.md
+            href: education-rubric-overview.md 
           - name: Upload files
             href: education-upload-resource-overview.md
+          - name: Upload feedback files
+            href: education-upload-feedback-resource-overview.md   
           - name: Assignment and submission state transitions
             href: assignments-submissions-states-transition.md
           - name: Specify the default channel for assignment notifications
@@ -636,7 +642,7 @@ items:
                 href: aad-advanced-queries.md
               - name: Optimize requests with query parameters
                 displayName: OData query parameters, OData
-                href: /learn/modules/optimize-data-usage
+                href: /training/modules/optimize-data-usage
           - name: Batching
             href: json-batching.md
             displayName: Batch request
@@ -649,7 +655,7 @@ items:
                 displayName: throttling
                 href: throttling-limits.md
               - name: Optimize network traffic
-                href: /learn/modules/optimize-network-traffic
+                href: /training/modules/optimize-network-traffic
                 displayName: throttling
           - name: Change notifications
             items:
@@ -657,7 +663,7 @@ items:
                 href: webhooks.md
                 displayName: change notifications, WebHooks, set up notifications for changes in resource data
               - name: Change notifications tutorial
-                href: /learn/modules/msgraph-changenotifications-trackchanges
+                href: /training/modules/msgraph-changenotifications-trackchanges
               - name: Missing change notifications
                 href: webhooks-lifecycle.md
               - name: Notifications with resource data

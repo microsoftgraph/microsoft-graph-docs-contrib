@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Search().BookmarksById("bookmark-id").Delete()
+graphClient.Search().BookmarksById("bookmark-id").Delete(context.Background(), nil)
 
 
 ```

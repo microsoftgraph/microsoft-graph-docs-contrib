@@ -67,7 +67,7 @@ Congratulations! You've now set up your repository. You won't need to repeat the
 
 ## Contribute and edit content
 
-Follow the guidance for [Quick edits to existing documents](https://docs.microsoft.com/en-us/contribute/#quick-edits-to-documentation) in our contributor guide.
+Follow the guidance for [Quick edits to existing documents](https://learn.microsoft.com/contribute/#quick-edits-to-documentation) in our contributor guide.
 
 Limit each branch to a single concept/article to streamline the workflow and reduce the chance of merge conflicts. The following types of contribution are appropriate for a new branch:
 

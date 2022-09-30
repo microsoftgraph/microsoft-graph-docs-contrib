@@ -70,7 +70,7 @@ type := "business"
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").Customers().Post(requestBody)
+result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").Customers().Post(context.Background(), requestBody, nil)
 
 
 ```

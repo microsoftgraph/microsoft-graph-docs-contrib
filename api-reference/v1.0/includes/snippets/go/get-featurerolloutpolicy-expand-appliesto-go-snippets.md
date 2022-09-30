@@ -14,7 +14,7 @@ configuration := &graphconfig.FeatureRolloutPolicyRequestBuilderGetRequestConfig
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().FeatureRolloutPoliciesById("featureRolloutPolicy-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Policies().FeatureRolloutPoliciesById("featureRolloutPolicy-id").Get(context.Background(), configuration)
 
 
 ```

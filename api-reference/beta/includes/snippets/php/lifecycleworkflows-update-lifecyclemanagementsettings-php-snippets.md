@@ -20,7 +20,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->identityGovernance()->lifecycleWorkflows()->settings()->patch($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->settings()->patch($requestBody);
 
 
 ```

@@ -14,7 +14,7 @@ requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType) 
 justification := ""
 requestBody.SetJustification(&justification) 
-accessPackageResource := graphmodels.NewaccessPackageResource()
+accessPackageResource := graphmodels.NewAccessPackageResource()
 displayName := "Faculty cafeteria ordering"
 accessPackageResource.SetDisplayName(&displayName) 
 description := "Example application"
@@ -67,7 +67,7 @@ attributes := []graphmodels.AccessPackageResourceAttributeable {
 accessPackageResource.SetAttributes(attributes)
 requestBody.SetAccessPackageResource(accessPackageResource)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

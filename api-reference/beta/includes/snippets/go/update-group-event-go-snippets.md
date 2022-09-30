@@ -23,7 +23,7 @@ requestBody.SetReminderMinutesBeforeStart(&reminderMinutesBeforeStart)
 isReminderOn := true
 requestBody.SetIsReminderOn(&isReminderOn) 
 
-graphClient.GroupsById("group-id").EventsById("event-id").Patch(requestBody)
+result, err := graphClient.GroupsById("group-id").EventsById("event-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
