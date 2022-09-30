@@ -28,6 +28,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Get selected properties](#get-selected-properties) | **fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
+|[Collapse search results](#collapse-search-results)| **collpase**|
 |[Sort search results](#sort-search-results)| **sortProperties** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
 |[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
@@ -103,6 +104,18 @@ Depending on the entity type, the searchable properties vary. For details, see:
 
 - [Email properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
 - [Site properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
+
+## Collapse search results
+
+Collapse is a collapse search results, which only impacts the recall but not ranking/sorting.
+
+The [query](../api/search-query.md) method lets you customize the collapse parameter by specifying the **collapse** on the `requests` parameter, which is defined in [collapse](collapseProperty.md). This allows you to specify a list of one or more collapse properties.
+
+Note that collapsing results is currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [drive](drive.md), [list](list.md), [site](site.md).
+
+The properties on which the collapse clause are applied need to be sortable/refinable in the SharePoint [search schema](/sharepoint/manage-search-schema). If each limit size of property specified in the request is not satisfied with decreased by level, the response will return an error, `HTTP 400 Bad Request`.
+
+See [collapse search results](/graph/search-concept-collapse) for examples that show how to collapse results.
 
 ## Sort search results
 
