@@ -1,7 +1,7 @@
 ---
 title: "accessPackageMultipleChoiceQuestion resource type"
 description: "Subclass of accessPackageQuestion that has multiple choices as the question's answer format."
-author: "saylee-dharne-msft"
+author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
