@@ -87,7 +87,7 @@ The following is a JSON representation of the resource.
   "modifiedDateTime": "String (timestamp)",
   "questions": [
     {
-      "@odata.type": "microsoft.graph.accessPackageMultipleChoiceQuestion"
+      "@odata.type": "microsoft.graph.accessPackageQuestion"
     }
   ],
   "requestorSettings": {

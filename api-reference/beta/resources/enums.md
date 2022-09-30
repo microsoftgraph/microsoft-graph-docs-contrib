@@ -11,6 +11,26 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### conditionalAccessExternalTenantsMembershipKind values
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|unknownFutureValue|
+
+### conditionalAccessGuestOrExternalUserTypes values
+
+|Member|
+|:---|
+|none|
+|internalGuest|
+|b2bCollaborationGuest|
+|b2bCollaborationMember|
+|b2bDirectConnectUser|
+|otherExternalUser|
+|serviceProvider|
+|unknownFutureValue|
 
 ### teamTemplateAudience values 
 

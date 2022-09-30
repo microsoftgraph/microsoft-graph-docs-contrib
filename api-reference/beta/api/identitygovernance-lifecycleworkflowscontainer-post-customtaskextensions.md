@@ -67,7 +67,7 @@ You can specify the following properties when creating a **customTaskExtension**
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) object in the response body.
 
 ## Examples
 
