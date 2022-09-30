@@ -57,7 +57,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) object in the response body.
 
 ## Examples
 

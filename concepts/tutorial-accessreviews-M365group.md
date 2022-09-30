@@ -1,12 +1,12 @@
 ---
-title: "Tutorial: Use the access reviews API to review guest access to Microsoft 365 groups"
+title: "Review guest access to your Microsoft 365 groups using the access reviews API in Microsoft Graph"
 description: "Learn how to use the access reviews API to review external/guest user access to your organization's resources through Microsoft 365 groups in your Azure AD tenant."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 
-# Tutorial: Use the access reviews API to review guest access to your Microsoft 365 groups
+# Review guest access to your Microsoft 365 groups using the access reviews API in Microsoft Graph
 
 The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. In cross-tenant collaboration, external users can have access resources such as files, notes, calendars, and even Teams conversations. This access can be efficiently managed through Microsoft 365 groups. Using the access reviews API, organizations can therefore periodically attest to principals that have access to such groups and by extension, other resources in the organization.
 
@@ -21,22 +21,8 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled. 
 + An account in a different Azure AD tenant or a social identity that you can invite as a guest user (B2B user).
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role. 
-+ The following delegated permissions: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.
-
-To consent to the required permissions in Graph Explorer:
-1. Select the settings icon to the right of the user account details, and then choose **Select permissions**.
-   
-   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select Microsoft Graph permissions." border="true":::
-
-2. Scroll through the list of permissions to these permissions:
-   + AccessReview (3), expand and then select **AccessReview.ReadWrite.All**.
-   + Group (2), expand and then select **Group.ReadWrite.All**.
-   + User (8), expand and then select **User.Invite.All** and **User.ReadWrite.All**.
-   
-   Select **Consent**, and then select **Accept** to accept the consent of the permissions. You don't need to consent on behalf of your organization for these permissions.
-   
-   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
++ Grant yourself the following delegated permissions: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.
 
 ## Step 1: Create a test user in your tenant
 
