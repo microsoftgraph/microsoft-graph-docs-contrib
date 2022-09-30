@@ -1,7 +1,7 @@
 ---
 title: "accessPackageQuestion resource type"
 description: "Represents the questions configured on an access package assignment policy."
-author: "saylee-dharne-msft"
+author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
