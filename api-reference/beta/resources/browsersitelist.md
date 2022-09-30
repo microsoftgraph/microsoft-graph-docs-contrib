@@ -15,12 +15,6 @@ Namespace: microsoft.graph
 
 Represents an enterprise site list in a compliant cloud location that specifies sites to be opened in [Internet Explorer mode](/deployedge/edge-ie-mode). The site list contains one or more [browserSite](../resources/browsersite.md) and [browserSharedCookie](../resources/browsersharedcookie.md) resources.
 
-## See also
-
-- [Internet Explorer mode (IE mode)](/edge/business/ie-mode)
-- [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)
-- [Cloud Site List Management for Internet Explorer (IE) mode](/deployedge/edge-ie-mode-cloud-site-list-mgmt)
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -78,3 +72,8 @@ The following is a JSON representation of the resource.
 }
 ```
 
+## See also
+
+- [Internet Explorer mode (IE mode)](https://www.microsoft.com/edge/business/ie-mode)
+- [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)
+- [Cloud Site List Management for Internet Explorer (IE) mode](/deployedge/edge-ie-mode-cloud-site-list-mgmt)

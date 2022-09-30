@@ -38,7 +38,7 @@ Represents a site to use in [Internet Explorer mode](/deployedge/edge-ie-mode) t
 |lastModifiedDateTime|DateTimeOffset|The date and time when the site was last modified.|
 |mergeType|browserSiteMergeType|The merge type of the site. The possible values are: `noMerge`, `default`, `unknownFutureValue`.|
 |status|browserSiteStatus|Indicates the status of the site. The possible values are: `published`, `pendingAdd`, `pendingEdit`, `pendingDelete`, `unknownFutureValue`.|
-|targetEnvironment|browserSiteTargetEnvironment|The target environment that the site should open in. The possible values are: `internetExplorerMode`, `internetExplorer11`, `microsoftEdge`, `configurable`, `none`, `unknownFutureValue`. <br /><br />Prior to June 15, 2022, the `internetExplorer11` option would allow opening a site in the Internet Explorer 11 desktop application. Following the retirement of IE11 on June 15, 2022, the `internetExplorer11` this option will no longer open an IE11 window and will instead behave the same as the `internetExplorerMode` option.|
+|targetEnvironment|browserSiteTargetEnvironment|The target environment that the site should open in. The possible values are: `internetExplorerMode`, `internetExplorer11`, `microsoftEdge`, `configurable`, `none`, `unknownFutureValue`.<br /><br />Prior to June 15, 2022, the `internetExplorer11` option would allow opening a site in the Internet Explorer 11 (IE11) desktop application. Following the retirement of IE11 on June 15, 2022, the `internetExplorer11` option will no longer open an IE11 window and will instead behave the same as the `internetExplorerMode` option.|
 |webUrl|String|The URL of the site.|
 
 ## Relationships
@@ -78,3 +78,8 @@ The following is a JSON representation of the resource.
 }
 ```
 
+## See also
+
+- [Internet Explorer mode (IE mode)](https://www.microsoft.com/edge/business/ie-mode)
+- [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)
+- [Cloud Site List Management for Internet Explorer (IE) mode](/deployedge/edge-ie-mode-cloud-site-list-mgmt)
