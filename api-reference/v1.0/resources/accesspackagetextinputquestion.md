@@ -1,7 +1,7 @@
 ---
 title: "accessPackageTextInputQuestion resource type"
 description: "Child of accessPackageQuestion that has text input as the question's answer format."
-author: "saylee-dharne-msft"
+author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
