@@ -17,32 +17,23 @@ $requestBody->setDescription('Graph Learn training courses extensions');
 $requestBody->setTargetTypes(['Group', ]);
 
 $propertiesExtensionSchemaProperty1 = new ExtensionSchemaProperty();
-$additionalData = [
-'name' => 'courseId', 
-'type' => 'Integer', 
-];
-$propertiesExtensionSchemaProperty1->setAdditionalData($additionalData);
+$propertiesExtensionSchemaProperty1->setName('courseId');
 
+$propertiesExtensionSchemaProperty1->setType('Integer');
 
 
 $propertiesArray []= $propertiesExtensionSchemaProperty1;
 $propertiesExtensionSchemaProperty2 = new ExtensionSchemaProperty();
-$additionalData = [
-'name' => 'courseName', 
-'type' => 'String', 
-];
-$propertiesExtensionSchemaProperty2->setAdditionalData($additionalData);
+$propertiesExtensionSchemaProperty2->setName('courseName');
 
+$propertiesExtensionSchemaProperty2->setType('String');
 
 
 $propertiesArray []= $propertiesExtensionSchemaProperty2;
 $propertiesExtensionSchemaProperty3 = new ExtensionSchemaProperty();
-$additionalData = [
-'name' => 'courseType', 
-'type' => 'String', 
-];
-$propertiesExtensionSchemaProperty3->setAdditionalData($additionalData);
+$propertiesExtensionSchemaProperty3->setName('courseType');
 
+$propertiesExtensionSchemaProperty3->setType('String');
 
 
 $propertiesArray []= $propertiesExtensionSchemaProperty3;

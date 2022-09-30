@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 query := "(subject:\"Quarterly Financials\")"
 requestBody.SetQuery(&query) 
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSetsById("reviewSet-id").Queries().Post(requestBody)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSetsById("reviewSet-id").Queries().Post(context.Background(), requestBody, nil)
 
 
 ```

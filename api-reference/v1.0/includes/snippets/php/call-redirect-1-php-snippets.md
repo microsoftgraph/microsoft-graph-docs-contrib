@@ -11,27 +11,22 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new RedirectPostRequestBody();
 $targetsInvitationParticipantInfo1 = new InvitationParticipantInfo();
-$additionalData = [
-'@odata.type' => '#microsoft.graph.invitationParticipantInfo', 
-'identity' => $targetsInvitationParticipantInfo1 = new Identity();
-$		targetsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.identitySet');
+$targetsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.invitationParticipantInfo');
 
-$application = new Application();
-$		application->set@odatatype('#microsoft.graph.identity');
+$targetsInvitationParticipantInfo1Identity = new IdentitySet();
+$targetsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
 
-$		application->setDisplayName('test bot 2');
+$targetsInvitationParticipantInfo1IdentityApplication = new Identity();
+$targetsInvitationParticipantInfo1IdentityApplication->set@odatatype('#microsoft.graph.identity');
 
-$		application->setId('22bfd41f-550e-477d-8789-f6f7bd2a5e8b');
+$targetsInvitationParticipantInfo1IdentityApplication->setDisplayName('test bot 2');
 
-
-$targetsInvitationParticipantInfo1->setApplication($application);
-
-$targetsInvitationParticipantInfo1->setIdentity($identity);
-
-];
-$targetsInvitationParticipantInfo1->setAdditionalData($additionalData);
+$targetsInvitationParticipantInfo1IdentityApplication->setId('22bfd41f-550e-477d-8789-f6f7bd2a5e8b');
 
 
+$targetsInvitationParticipantInfo1Identity->setApplication($targetsInvitationParticipantInfo1IdentityApplication);
+
+$targetsInvitationParticipantInfo1->setIdentity($targetsInvitationParticipantInfo1Identity);
 
 $targetsArray []= $targetsInvitationParticipantInfo1;
 $requestBody->setTargets($targetsArray);

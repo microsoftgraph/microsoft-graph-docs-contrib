@@ -8,12 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewSubjectRightsRequest()
-"@odata.type" := "#microsoft.graph.subjectRightsRequest"
-requestBody.Set"@odata.type"(&"@odata.type") 
 internalDueDateTime , err := time.Parse(time.RFC3339, "2021-08-30T00:00:00Z")
 requestBody.SetInternalDueDateTime(&internalDueDateTime) 
 
-graphClient.Privacy().SubjectRightsRequestsById("subjectRightsRequest-id").Patch(requestBody)
+result, err := graphClient.Privacy().SubjectRightsRequestsById("subjectRightsRequest-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

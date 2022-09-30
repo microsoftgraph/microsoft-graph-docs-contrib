@@ -15,9 +15,14 @@ $requestBody->setDisplayName('Demo app for documentation');
 $requestBody->setState(new ConditionalAccessPolicyState('disabled'));
 
 $conditions = new ConditionalAccessConditionSet();
-$conditions->setSignInRiskLevels(['high', 'medium', ]);
+$conditions->setSignInRiskLevels([$conditions->setRiskLevel(new RiskLevel('high'));
+$conditions->setRiskLevel(new RiskLevel('medium'));
+]);
 
-$conditions->setClientAppTypes(['mobileAppsAndDesktopClients', 'exchangeActiveSync', 'other', ]);
+$conditions->setClientAppTypes([$conditions->setConditionalAccessClientApp(new ConditionalAccessClientApp('mobileappsanddesktopclients'));
+$conditions->setConditionalAccessClientApp(new ConditionalAccessClientApp('exchangeactivesync'));
+$conditions->setConditionalAccessClientApp(new ConditionalAccessClientApp('other'));
+]);
 
 $conditionsApplications = new ConditionalAccessApplications();
 $conditionsApplications->setIncludeApplications(['All', ]);
@@ -44,9 +49,12 @@ $conditionsUsers->setExcludeRoles(['b0f54661-2d74-4c50-afa3-1ec803f12efe', ]);
 
 $conditions->setUsers($conditionsUsers);
 $conditionsPlatforms = new ConditionalAccessPlatforms();
-$conditionsPlatforms->setIncludePlatforms(['all', ]);
+$conditionsPlatforms->setIncludePlatforms([$conditionsPlatforms->setConditionalAccessDevicePlatform(new ConditionalAccessDevicePlatform('all'));
+]);
 
-$conditionsPlatforms->setExcludePlatforms(['iOS', 'windowsPhone', ]);
+$conditionsPlatforms->setExcludePlatforms([$conditionsPlatforms->setConditionalAccessDevicePlatform(new ConditionalAccessDevicePlatform('ios'));
+$conditionsPlatforms->setConditionalAccessDevicePlatform(new ConditionalAccessDevicePlatform('windowsphone'));
+]);
 
 
 $conditions->setPlatforms($conditionsPlatforms);
@@ -69,7 +77,12 @@ $requestBody->setConditions($conditions);
 $grantControls = new ConditionalAccessGrantControls();
 $grantControls->setOperator('OR');
 
-$grantControls->setBuiltInControls(['mfa', 'compliantDevice', 'domainJoinedDevice', 'approvedApplication', 'compliantApplication', ]);
+$grantControls->setBuiltInControls([$grantControls->setConditionalAccessGrantControl(new ConditionalAccessGrantControl('mfa'));
+$grantControls->setConditionalAccessGrantControl(new ConditionalAccessGrantControl('compliantdevice'));
+$grantControls->setConditionalAccessGrantControl(new ConditionalAccessGrantControl('domainjoineddevice'));
+$grantControls->setConditionalAccessGrantControl(new ConditionalAccessGrantControl('approvedapplication'));
+$grantControls->setConditionalAccessGrantControl(new ConditionalAccessGrantControl('compliantapplication'));
+]);
 
 $grantControls->setCustomAuthenticationFactors([]);
 
@@ -82,14 +95,14 @@ $SessionControls->setApplicationEnforcedRestrictions(null);
 
 $SessionControls->setPersistentBrowser(null);
 
-$sessionControlsCloudAppSecurity = new CloudAppSecurity();
+$sessionControlsCloudAppSecurity = new CloudAppSecuritySessionControl();
 $sessionControlsCloudAppSecurity->setCloudAppSecurityType(new CloudAppSecuritySessionControlType('blockdownloads'));
 
 $sessionControlsCloudAppSecurity->setIsEnabled(true);
 
 
 $sessionControls->setCloudAppSecurity($sessionControlsCloudAppSecurity);
-$sessionControlsSignInFrequency = new SignInFrequency();
+$sessionControlsSignInFrequency = new SignInFrequencySessionControl();
 $sessionControlsSignInFrequency->setValue(4);
 
 $sessionControlsSignInFrequency->setType(new SigninFrequencyType('hours'));

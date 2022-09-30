@@ -26,7 +26,7 @@ id := "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.UsersById("user-id").FollowedSitesById("site-id").Post(requestBody)
+graphClient.UsersById("user-id").FollowedSitesById("site-id").Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "roleAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [roleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-roleAssignment?view=graph-rest-beta) resource type.",
+          "Description": "Added the [roleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-roleAssignment?view=graph-rest-beta) resource type.",
           "Target": "roleAssignment"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "roleDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [roleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-roleDefinition?view=graph-rest-beta) resource type.",
+          "Description": "Added the [roleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-roleDefinition?view=graph-rest-beta) resource type.",
           "Target": "roleDefinition"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "myRoles",
           "ChangeType": "Addition",
-          "Description": "Added the **myRoles** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource.",
+          "Description": "Added the **myRoles** relationship to the [managedTenant](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource.",
           "Target": "managedTenant"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "myRole",
           "ChangeType": "Addition",
-          "Description": "Added the [myRole](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-myRole?view=graph-rest-beta) resource and a supported method.",
+          "Description": "Added the [myRole](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-myRole?view=graph-rest-beta) resource and a supported method.",
           "Target": "myRole"
         },
         {
@@ -65,7 +65,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serviceUsage",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceUsage](https://docs.microsoft.com/graph/api/resources/managedtenants-serviceUsage?view=graph-rest-beta) resource.",
+          "Description": "Added the [serviceUsage](https://learn.microsoft.com/graph/api/resources/managedtenants-serviceUsage?view=graph-rest-beta) resource.",
           "Target": "serviceUsage"
         },
         {
@@ -73,7 +73,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantUsage",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantUsage](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenantUsage?view=graph-rest-beta) resource.",
+          "Description": "Added the [tenantUsage](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantUsage?view=graph-rest-beta) resource.",
           "Target": "tenantUsage"
         },
         {
@@ -81,7 +81,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "tenantUsage",
           "ChangeType": "Addition",
-          "Description": "Added the **tenantUsage** navigation property to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta) resource.",
+          "Description": "Added the **tenantUsage** navigation property to the [managedTenant](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta) resource.",
           "Target": "managedTenant"
         },
         {
@@ -89,7 +89,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [list tenantUsage](https://docs.microsoft.com/en-us/graph/api/managedtenants-managedtenant-list-tenantusage?view=graph-rest-beta) operation to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta) resource.",
+          "Description": "Added the [list tenantUsage](https://learn.microsoft.com/en-us/graph/api/managedtenants-managedtenant-list-tenantusage?view=graph-rest-beta) operation to the [managedTenant](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta) resource.",
           "Target": "managedTenant"
         }
       ],
@@ -107,7 +107,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "auditEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [auditEvent](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-auditEvent?view=graph-rest-beta) resource.",
+          "Description": "Added the [auditEvent](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-auditEvent?view=graph-rest-beta) resource.",
           "Target": "auditEvent"
         },
         {
@@ -115,7 +115,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "auditEvents",
           "ChangeType": "Addition",
-          "Description": "Added the **auditEvents** navigation property to [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource.",
+          "Description": "Added the **auditEvents** navigation property to [managedTenant](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource.",
           "Target": "managedTenant"
         },
         {
@@ -123,7 +123,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta) operation to the [auditEvent](https://docs.microsoft.com/graph/api/resources/managedtenants-auditEvent?view=graph-rest-beta) resource.",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta) operation to the [auditEvent](https://learn.microsoft.com/graph/api/resources/managedtenants-auditEvent?view=graph-rest-beta) resource.",
           "Target": "auditEvent"
         },
         {
@@ -131,7 +131,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/managedtenants-auditevent-get?view=graph-rest-beta) operation to the [auditEvent](https://docs.microsoft.com/graph/api/resources/managedtenants-auditEvent?view=graph-rest-beta) resource.",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/managedtenants-auditevent-get?view=graph-rest-beta) operation to the [auditEvent](https://learn.microsoft.com/graph/api/resources/managedtenants-auditEvent?view=graph-rest-beta) resource.",
           "Target": "auditEvent"
         }
       ],
@@ -149,7 +149,7 @@
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "riskyUsers",
           "ChangeType": "Deletion",
-          "Description": "Removed the **riskyUsers** relationship from the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource type.",
+          "Description": "Removed the **riskyUsers** relationship from the [managedTenant](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource type.",
           "Target": "managementCategory"
         },
         {
@@ -175,7 +175,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workloadStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [workloadStatus](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-workloadStatus?view=graph-rest-beta) resource type.",
+          "Description": "Added the [workloadStatus](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-workloadStatus?view=graph-rest-beta) resource type.",
           "Target": "workloadStatus"
         },
         {
@@ -183,7 +183,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantStatusInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantStatusInformation](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenantStatusInformation?view=graph-rest-beta) resource type.",
+          "Description": "Added the [tenantStatusInformation](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantStatusInformation?view=graph-rest-beta) resource type.",
           "Target": "tenantStatusInformation"
         },
         {
@@ -191,7 +191,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantContactInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantContactInformation](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenantContactInformation?view=graph-rest-beta) resource type.",
+          "Description": "Added the [tenantContactInformation](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantContactInformation?view=graph-rest-beta) resource type.",
           "Target": "tenantContactInformation"
         },
         {
@@ -199,7 +199,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantContract",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantContract](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenantContract?view=graph-rest-beta) resource type.",
+          "Description": "Added the [tenantContract](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantContract?view=graph-rest-beta) resource type.",
           "Target": "tenantContract"
         },
         {
@@ -207,7 +207,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedTenant",
           "ChangeType": "Addition",
-          "Description": "Added the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managedTenant](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource type.",
           "Target": "managedTenant"
         },
         {
@@ -215,7 +215,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessPolicyCoverage",
           "ChangeType": "Addition",
-          "Description": "Added the [conditionalAccessPolicyCoverage](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-conditionalAccessPolicyCoverage?view=graph-rest-beta) resource type.",
+          "Description": "Added the [conditionalAccessPolicyCoverage](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-conditionalAccessPolicyCoverage?view=graph-rest-beta) resource type.",
           "Target": "conditionalAccessPolicyCoverage"
         },
         {
@@ -223,7 +223,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedDeviceCompliance",
           "ChangeType": "Addition",
-          "Description": "Added the [managedDeviceCompliance](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedDeviceCompliance?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managedDeviceCompliance](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedDeviceCompliance?view=graph-rest-beta) resource type.",
           "Target": "managedDeviceCompliance"
         },
         {
@@ -231,7 +231,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedDeviceComplianceTrend",
           "ChangeType": "Addition",
-          "Description": "Added the [managedDeviceComplianceTrend](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedDeviceComplianceTrend?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managedDeviceComplianceTrend](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedDeviceComplianceTrend?view=graph-rest-beta) resource type.",
           "Target": "managedDeviceComplianceTrend"
         },
         {
@@ -239,7 +239,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aggregatedPolicyCompliance",
           "ChangeType": "Addition",
-          "Description": "Added the [aggregatedPolicyCompliance](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-aggregatedPolicyCompliance?view=graph-rest-beta) resource type.",
+          "Description": "Added the [aggregatedPolicyCompliance](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-aggregatedPolicyCompliance?view=graph-rest-beta) resource type.",
           "Target": "aggregatedPolicyCompliance"
         },
         {
@@ -247,7 +247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsDeviceMalwareState",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsDeviceMalwareState](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-windowsDeviceMalwareState?view=graph-rest-beta) resource type.",
+          "Description": "Added the [windowsDeviceMalwareState](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-windowsDeviceMalwareState?view=graph-rest-beta) resource type.",
           "Target": "windowsDeviceMalwareState"
         },
         {
@@ -255,7 +255,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsProtectionState",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsProtectionState](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-windowsProtectionState?view=graph-rest-beta) resource type.",
+          "Description": "Added the [windowsProtectionState](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-windowsProtectionState?view=graph-rest-beta) resource type.",
           "Target": "windowsProtectionState"
         },
         {
@@ -263,7 +263,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "riskyUser",
           "ChangeType": "Addition",
-          "Description": "Added the [riskyUser](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-riskyUser?view=graph-rest-beta) resource type.",
+          "Description": "Added the [riskyUser](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-riskyUser?view=graph-rest-beta) resource type.",
           "Target": "riskyUser"
         },
         {
@@ -271,7 +271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deviceCompliancePolicySettingStateSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [deviceCompliancePolicySettingStateSummary](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-deviceCompliancePolicySettingStateSummary?view=graph-rest-beta) resource type.",
+          "Description": "Added the [deviceCompliancePolicySettingStateSummary](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-deviceCompliancePolicySettingStateSummary?view=graph-rest-beta) resource type.",
           "Target": "deviceCompliancePolicySettingStateSummary"
         },
         {
@@ -279,7 +279,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "credentialUserRegistrationsSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [credentialUserRegistrationsSummary](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-credentialUserRegistrationsSummary?view=graph-rest-beta) resource type.",
+          "Description": "Added the [credentialUserRegistrationsSummary](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-credentialUserRegistrationsSummary?view=graph-rest-beta) resource type.",
           "Target": "credentialUserRegistrationsSummary"
         },
         {
@@ -287,7 +287,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcDevice",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcDevice?view=graph-rest-beta) resource type.",
+          "Description": "Added the [cloudPcDevice](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcDevice?view=graph-rest-beta) resource type.",
           "Target": "cloudPcDevice"
         },
         {
@@ -295,7 +295,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcConnection",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcConnection](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcConnection?view=graph-rest-beta) resource type.",
+          "Description": "Added the [cloudPcConnection](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcConnection?view=graph-rest-beta) resource type.",
           "Target": "cloudPcConnection"
         },
         {
@@ -303,7 +303,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcOverview",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcOverview](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcOverview?view=graph-rest-beta) resource type.",
+          "Description": "Added the [cloudPcOverview](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcOverview?view=graph-rest-beta) resource type.",
           "Target": "cloudPcOverview"
         },
         {
@@ -311,7 +311,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedTenantOperationError",
           "ChangeType": "Addition",
-          "Description": "Added the [managedTenantOperationError](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenantOperationError?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managedTenantOperationError](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenantOperationError?view=graph-rest-beta) resource type.",
           "Target": "managedTenantOperationError"
         },
         {
@@ -319,7 +319,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedTenantGenericError",
           "ChangeType": "Addition",
-          "Description": "Added the [managedTenantGenericError](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenantGenericError?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managedTenantGenericError](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenantGenericError?view=graph-rest-beta) resource type.",
           "Target": "managedTenantGenericError"
         },
         {
@@ -327,7 +327,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedTenantExecutionError",
           "ChangeType": "Addition",
-          "Description": "Added the [managedTenantExecutionError](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenantExecutionError?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managedTenantExecutionError](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenantExecutionError?view=graph-rest-beta) resource type.",
           "Target": "managedTenantExecutionError"
         },
         {
@@ -335,7 +335,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenant",
           "ChangeType": "Addition",
-          "Description": "Added the [tenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenant?view=graph-rest-beta) resource type.",
+          "Description": "Added the [tenant](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenant?view=graph-rest-beta) resource type.",
           "Target": "tenant"
         },
         {
@@ -343,7 +343,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantDetailedInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantDetailedInformation](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenantDetailedInformation?view=graph-rest-beta) resource type.",
+          "Description": "Added the [tenantDetailedInformation](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantDetailedInformation?view=graph-rest-beta) resource type.",
           "Target": "tenantDetailedInformation"
         },
         {
@@ -351,7 +351,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantCustomizedInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantCustomizedInformation](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenantCustomizedInformation?view=graph-rest-beta) resource type.",
+          "Description": "Added the [tenantCustomizedInformation](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantCustomizedInformation?view=graph-rest-beta) resource type.",
           "Target": "tenantCustomizedInformation"
         },
         {
@@ -359,7 +359,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantTag",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantTag](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenantTag?view=graph-rest-beta) resource type.",
+          "Description": "Added the [tenantTag](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantTag?view=graph-rest-beta) resource type.",
           "Target": "tenantTag"
         },
         {
@@ -367,7 +367,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantInfo](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenantInfo?view=graph-rest-beta) resource type.",
+          "Description": "Added the [tenantInfo](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantInfo?view=graph-rest-beta) resource type.",
           "Target": "tenantInfo"
         },
         {
@@ -375,7 +375,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managementIntent",
           "ChangeType": "Addition",
-          "Description": "Added the [managementIntent](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managementIntent?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managementIntent](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managementIntent?view=graph-rest-beta) resource type.",
           "Target": "managementIntent"
         },
         {
@@ -383,7 +383,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managementTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [managementTemplate](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managementTemplate?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managementTemplate](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managementTemplate?view=graph-rest-beta) resource type.",
           "Target": "managementTemplate"
         },
         {
@@ -391,7 +391,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managementAction",
           "ChangeType": "Addition",
-          "Description": "Added the [managementAction](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managementAction?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managementAction](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managementAction?view=graph-rest-beta) resource type.",
           "Target": "managementAction"
         },
         {
@@ -399,7 +399,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantGroup",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantGroup](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenantGroup?view=graph-rest-beta) resource type.",
+          "Description": "Added the [tenantGroup](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantGroup?view=graph-rest-beta) resource type.",
           "Target": "tenantGroup"
         },
         {
@@ -407,7 +407,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managementActionTenantDeploymentStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [managementActionTenantDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managementActionTenantDeploymentStatus?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managementActionTenantDeploymentStatus](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managementActionTenantDeploymentStatus?view=graph-rest-beta) resource type.",
           "Target": "managementActionTenantDeploymentStatus"
         },
         {
@@ -415,7 +415,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managementTemplateDetailedInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [managementTemplateDetailedInfo](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managementTemplateDetailedInfo?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managementTemplateDetailedInfo](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managementTemplateDetailedInfo?view=graph-rest-beta) resource type.",
           "Target": "managementTemplateDetailedInfo"
         },
         {
@@ -423,7 +423,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "templateParameter",
           "ChangeType": "Addition",
-          "Description": "Added the [templateParameter](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-templateParameter?view=graph-rest-beta) resource type.",
+          "Description": "Added the [templateParameter](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-templateParameter?view=graph-rest-beta) resource type.",
           "Target": "templateParameter"
         },
         {
@@ -431,7 +431,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workloadAction",
           "ChangeType": "Addition",
-          "Description": "Added the [workloadAction](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-workloadAction?view=graph-rest-beta) resource type.",
+          "Description": "Added the [workloadAction](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-workloadAction?view=graph-rest-beta) resource type.",
           "Target": "workloadAction"
         },
         {
@@ -439,7 +439,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "setting",
           "ChangeType": "Addition",
-          "Description": "Added the [setting](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-setting?view=graph-rest-beta) resource type.",
+          "Description": "Added the [setting](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-setting?view=graph-rest-beta) resource type.",
           "Target": "setting"
         },
         {
@@ -447,7 +447,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managementIntentInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [managementIntentInfo](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managementIntentInfo?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managementIntentInfo](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managementIntentInfo?view=graph-rest-beta) resource type.",
           "Target": "managementIntentInfo"
         },
         {
@@ -455,7 +455,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managementActionInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [managementActionInfo](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managementActionInfo?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managementActionInfo](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managementActionInfo?view=graph-rest-beta) resource type.",
           "Target": "managementActionInfo"
         },
         {
@@ -463,7 +463,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managementActionDeploymentStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [managementActionDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managementActionDeploymentStatus?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managementActionDeploymentStatus](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managementActionDeploymentStatus?view=graph-rest-beta) resource type.",
           "Target": "managementActionDeploymentStatus"
         },
         {
@@ -471,7 +471,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workloadActionDeploymentStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [workloadActionDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-workloadActionDeploymentStatus?view=graph-rest-beta) resource type.",
+          "Description": "Added the [workloadActionDeploymentStatus](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-workloadActionDeploymentStatus?view=graph-rest-beta) resource type.",
           "Target": "workloadActionDeploymentStatus"
         },
         {
@@ -479,7 +479,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantRelationship",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantRelationship](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenantRelationship?view=graph-rest-beta) resource type.",
+          "Description": "Added the [tenantRelationship](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantRelationship?view=graph-rest-beta) resource type.",
           "Target": "tenantRelationship"
         },
         {
@@ -487,7 +487,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "genericError",
           "ChangeType": "Addition",
-          "Description": "Added the [genericError](https://docs.microsoft.com/en-us/graph/api/resources/genericError?view=graph-rest-beta) resource type.",
+          "Description": "Added the [genericError](https://learn.microsoft.com/en-us/graph/api/resources/genericError?view=graph-rest-beta) resource type.",
           "Target": "genericError"
         },
         {
@@ -559,7 +559,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "apply",
           "ChangeType": "Addition",
-          "Description": "Added the [apply](https://docs.microsoft.com/en-us/graph/api/managedtenants-managementAction-apply?view=graph-rest-beta) method to the [managementAction](https://docs.microsoft.com/en-us/graph/api/resources/managementAction?view=graph-rest-beta) resource.",
+          "Description": "Added the [apply](https://learn.microsoft.com/en-us/graph/api/managedtenants-managementAction-apply?view=graph-rest-beta) method to the [managementAction](https://learn.microsoft.com/en-us/graph/api/resources/managementAction?view=graph-rest-beta) resource.",
           "Target": "managementAction"
         },
         {
@@ -567,7 +567,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "tenantSearch",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantSearch](https://docs.microsoft.com/en-us/graph/api/managedtenants-tenantGroup-tenantSearch?view=graph-rest-beta) method to the [tenantGroup](https://docs.microsoft.com/en-us/graph/api/resources/tenantGroup?view=graph-rest-beta) resource.",
+          "Description": "Added the [tenantSearch](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenantGroup-tenantSearch?view=graph-rest-beta) method to the [tenantGroup](https://learn.microsoft.com/en-us/graph/api/resources/tenantGroup?view=graph-rest-beta) resource.",
           "Target": "tenantGroup"
         },
         {
@@ -575,7 +575,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "changeDeploymentStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [changeDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/managedtenants-managementActionTenantDeploymentStatus-changeDeploymentStatus?view=graph-rest-beta) method to the [managementActionTenantDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/resources/managementActionTenantDeploymentStatus?view=graph-rest-beta) resource.",
+          "Description": "Added the [changeDeploymentStatus](https://learn.microsoft.com/en-us/graph/api/managedtenants-managementActionTenantDeploymentStatus-changeDeploymentStatus?view=graph-rest-beta) method to the [managementActionTenantDeploymentStatus](https://learn.microsoft.com/en-us/graph/api/resources/managementActionTenantDeploymentStatus?view=graph-rest-beta) resource.",
           "Target": "managementActionTenantDeploymentStatus"
         },
         {
@@ -583,7 +583,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "offboardTenant",
           "ChangeType": "Addition",
-          "Description": "Added the [offboardTenant](https://docs.microsoft.com/en-us/graph/api/managedtenants-tenant-offboardTenant?view=graph-rest-beta) method to the [tenant](https://docs.microsoft.com/en-us/graph/api/resources/tenant?view=graph-rest-beta) resource.",
+          "Description": "Added the [offboardTenant](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenant-offboardTenant?view=graph-rest-beta) method to the [tenant](https://learn.microsoft.com/en-us/graph/api/resources/tenant?view=graph-rest-beta) resource.",
           "Target": "tenant"
         },
         {
@@ -591,7 +591,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "resetTenantOnboardingStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [resetTenantOnboardingStatus](https://docs.microsoft.com/en-us/graph/api/managedtenants-tenant-resetTenantOnboardingStatus?view=graph-rest-beta) method to the [tenant](https://docs.microsoft.com/en-us/graph/api/resources/tenant?view=graph-rest-beta) resource.",
+          "Description": "Added the [resetTenantOnboardingStatus](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenant-resetTenantOnboardingStatus?view=graph-rest-beta) method to the [tenant](https://learn.microsoft.com/en-us/graph/api/resources/tenant?view=graph-rest-beta) resource.",
           "Target": "tenant"
         },
         {
@@ -599,7 +599,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "assignTag",
           "ChangeType": "Addition",
-          "Description": "Added the [assignTag](https://docs.microsoft.com/en-us/graph/api/managedtenants-tenantTag-assignTag?view=graph-rest-beta) method to the [tenantTag](https://docs.microsoft.com/en-us/graph/api/resources/tenantTag?view=graph-rest-beta) resource.",
+          "Description": "Added the [assignTag](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenantTag-assignTag?view=graph-rest-beta) method to the [tenantTag](https://learn.microsoft.com/en-us/graph/api/resources/tenantTag?view=graph-rest-beta) resource.",
           "Target": "tenantTag"
         },
         {
@@ -607,7 +607,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unassignTag",
           "ChangeType": "Addition",
-          "Description": "Added the [unassignTag](https://docs.microsoft.com/en-us/graph/api/managedtenants-tenantTag-unassignTag?view=graph-rest-beta) method to the [tenantTag](https://docs.microsoft.com/en-us/graph/api/resources/tenantTag?view=graph-rest-beta) resource.",
+          "Description": "Added the [unassignTag](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenantTag-unassignTag?view=graph-rest-beta) method to the [tenantTag](https://learn.microsoft.com/en-us/graph/api/resources/tenantTag?view=graph-rest-beta) resource.",
           "Target": "tenantTag"
         }
       ],
@@ -633,7 +633,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "tenantOnboardingEligibilityReason",
           "ChangeType": "Addition",
-          "Description": "Added the **tenantOnboardingEligibilityReason** property to [tenantStatusInformation](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenantStatusInformation?view=graph-rest-beta) resource.",
+          "Description": "Added the **tenantOnboardingEligibilityReason** property to [tenantStatusInformation](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantStatusInformation?view=graph-rest-beta) resource.",
           "Target": "tenantStatusInformation"
         }
       ],
@@ -651,7 +651,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "mfaExcludedUserCount",
           "ChangeType": "Addition",
-          "Description": "Added the **mfaExcludedUserCount** property to the [credentialUserRegistrationsSummary](https://docs.microsoft.com/graph/api/resources/managedTenants-credentialUserRegistrationsSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the **mfaExcludedUserCount** property to the [credentialUserRegistrationsSummary](https://learn.microsoft.com/graph/api/resources/managedTenants-credentialUserRegistrationsSummary?view=graph-rest-beta) resource.",
           "Target": "credentialUserRegistrationsSummary"
         }
       ],

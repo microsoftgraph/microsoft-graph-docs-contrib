@@ -79,7 +79,7 @@ $documentSet->setWelcomePageColumns($welcomePageColumnsArray);
 $requestBody->setDocumentSet($documentSet);
 
 
-$graphServiceClient->sitesById('site-id')->contentTypesById('contentType-id')->patch($requestBody);
+$requestResult = $graphServiceClient->sitesById('site-id')->contentTypesById('contentType-id')->patch($requestBody);
 
 
 ```

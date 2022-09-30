@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCloudPcProvisioningPolicy()
-"@odata.type" := "#microsoft.graph.cloudPcProvisioningPolicy"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "HR provisioning policy"
 requestBody.SetDisplayName(&displayName) 
 description := "Provisioning policy for India HR employees"
@@ -27,7 +25,7 @@ language := "en-US"
 windowsSettings.SetLanguage(&language) 
 requestBody.SetWindowsSettings(windowsSettings)
 
-graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById("cloudPcProvisioningPolicy-id").Patch(requestBody)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById("cloudPcProvisioningPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

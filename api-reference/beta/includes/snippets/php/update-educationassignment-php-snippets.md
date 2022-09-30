@@ -27,7 +27,7 @@ $requestBody->setAddToCalendarAction(new EducationAddToCalendarOptions('students
 
 
 
-$graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->patch($requestBody);
+$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->patch($requestBody);
 
 
 ```

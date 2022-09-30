@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgDeviceRegisteredUser -DeviceId $deviceId -OutFile $outFileId
+Get-MgDeviceRegisteredUser -DeviceId $deviceId
 
 ```

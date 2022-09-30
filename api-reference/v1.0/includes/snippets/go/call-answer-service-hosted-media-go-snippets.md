@@ -11,13 +11,12 @@ requestBody := graphmodels.NewAnswerPostRequestBody()
 callbackUri := "https://bot.contoso.com/api/calls"
 requestBody.SetCallbackUri(&callbackUri) 
 acceptedModalities := []graphmodels.Modalityable {
-	"audio",
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality) 
 
 }
 requestBody.SetAcceptedModalities(acceptedModalities)
 mediaConfig := graphmodels.NewMediaConfig()
-"@odata.type" := "#microsoft.graph.serviceHostedMediaConfig"
-mediaConfig.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 
 
@@ -41,7 +40,7 @@ resourceId := "1D6DE2D4-CD51-4309-8DAA-70768651088F"
 mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
 
-graphClient.Communications().CallsById("call-id").Answer().Post(requestBody)
+graphClient.Communications().CallsById("call-id").Answer().Post(context.Background(), requestBody, nil)
 
 
 ```

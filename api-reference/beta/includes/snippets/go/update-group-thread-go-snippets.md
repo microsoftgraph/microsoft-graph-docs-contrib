@@ -24,7 +24,7 @@ requestBody.SetIsReminderOn(&isReminderOn)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").Patch(requestBody)
+result, err := graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationOnPremisesInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [educationOnPremisesInfo](https://docs.microsoft.com/en-us/graph/api/resources/educationOnPremisesInfo?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [educationOnPremisesInfo](https://learn.microsoft.com/en-us/graph/api/resources/educationOnPremisesInfo?view=graph-rest-1.0) resource type.",
           "Target": "educationOnPremisesInfo"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "grade",
           "ChangeType": "Addition",
-          "Description": "Added the **grade** property to [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
+          "Description": "Added the **grade** property to [educationUser](https://learn.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
           "Target": "educationUser"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "externalSourceDetail",
           "ChangeType": "Addition",
-          "Description": "Added the **externalSourceDetail** property to [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
+          "Description": "Added the **externalSourceDetail** property to [educationUser](https://learn.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
           "Target": "educationUser"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationTerm",
           "ChangeType": "Addition",
-          "Description": "Added the [educationTerm](https://docs.microsoft.com/en-us/graph/api/resources/educationTerm?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [educationTerm](https://learn.microsoft.com/en-us/graph/api/resources/educationTerm?view=graph-rest-1.0) resource type.",
           "Target": "educationTerm"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "taughtClasses",
           "ChangeType": "Addition",
-          "Description": "Added the **taughtClasses** relationship to the [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **taughtClasses** relationship to the [educationUser](https://learn.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource type.",
           "Target": "educationUser"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "externalSourceDetail",
           "ChangeType": "Addition",
-          "Description": "Added  the **externalSourceDetail** property to [educationSchool](https://docs.microsoft.com/en-us/graph/api/resources/educationSchool?view=graph-rest-1.0) resource.",
+          "Description": "Added  the **externalSourceDetail** property to [educationSchool](https://learn.microsoft.com/en-us/graph/api/resources/educationSchool?view=graph-rest-1.0) resource.",
           "Target": "educationSchool"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/educationClass-delta?view=graph-rest-1.0) method to the [educationClass](https://docs.microsoft.com/en-us/graph/api/resources/educationClass?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/educationClass-delta?view=graph-rest-1.0) method to the [educationClass](https://learn.microsoft.com/en-us/graph/api/resources/educationClass?view=graph-rest-1.0) resource.",
           "Target": "educationClass"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/educationSchool-delta?view=graph-rest-1.0) method to the [educationSchool](https://docs.microsoft.com/en-us/graph/api/resources/educationSchool?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/educationSchool-delta?view=graph-rest-1.0) method to the [educationSchool](https://learn.microsoft.com/en-us/graph/api/resources/educationSchool?view=graph-rest-1.0) resource.",
           "Target": "educationSchool"
         },
         {
@@ -71,7 +71,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/educationUser-delta?view=graph-rest-1.0) method to the [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/educationUser-delta?view=graph-rest-1.0) method to the [educationUser](https://learn.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
           "Target": "educationUser"
         }
       ],
@@ -97,7 +97,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "relatedContact",
           "ChangeType": "Addition",
-          "Description": "Added the [relatedContact](https://docs.microsoft.com/en-us/graph/api/resources/relatedcontact?view=graph-rest-1.0) resource.",
+          "Description": "Added the [relatedContact](https://learn.microsoft.com/en-us/graph/api/resources/relatedcontact?view=graph-rest-1.0) resource.",
           "Target": "relatedContact"
         },
         {
@@ -105,7 +105,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationUser",
           "ChangeType": "Addition",
-          "Description": "Added the [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationuser?view=graph-rest-1.0) resource.",
+          "Description": "Added the [educationUser](https://learn.microsoft.com/en-us/graph/api/resources/educationuser?view=graph-rest-1.0) resource.",
           "Target": "educationUser"
         }
       ],

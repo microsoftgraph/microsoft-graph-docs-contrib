@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewConversationMember()
-"@odata.type" := "#microsoft.graph.aadUserConversationMember"
-requestBody.Set"@odata.type"(&"@odata.type") 
 roles := []string {
 	"owner",
 
@@ -20,7 +18,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.ChatsById("chat-id").Members().Post(requestBody)
+result, err := graphClient.ChatsById("chat-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```

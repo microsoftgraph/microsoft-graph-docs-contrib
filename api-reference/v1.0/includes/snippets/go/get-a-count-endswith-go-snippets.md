@@ -10,17 +10,21 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestFilter := "endswith(mail,'a@contoso.com')"
+requestCount := true
+
 requestParameters := &graphconfig.UsersRequestBuilderGetQueryParameters{
-	Filter: "endswith(mail,'a@contoso.com')",
+	Filter: &requestFilter,
 	Orderby: [] string {"userPrincipalName"},
-	Count: true,
+	Count: &requestCount,
 }
 configuration := &graphconfig.UsersRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Users().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Users().Get(context.Background(), configuration)
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewPersonWebsite()
 description := "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway"
 requestBody.SetDescription(&description) 
 
-graphClient.Me().Profile().WebsitesById("personWebsite-id").Patch(requestBody)
+result, err := graphClient.Me().Profile().WebsitesById("personWebsite-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

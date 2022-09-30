@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAccessReviewStage()
-"@odata.type" := "#microsoft.graph.accessReviewStage"
-requestBody.Set"@odata.type"(&"@odata.type") 
 
 
 accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
@@ -43,7 +41,7 @@ fallbackReviewers := []graphmodels.AccessReviewReviewerScopeable {
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)
 
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").StagesById("accessReviewStage-id").Patch(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").StagesById("accessReviewStage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,8 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const authenticationMethodConfiguration = {
-  '@odata.type': '#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration',
-  state: 'String'
+    '@odata.type': '#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration',
+    state: 'enabled'
 };
 
 await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/microsoftAuthenticator')

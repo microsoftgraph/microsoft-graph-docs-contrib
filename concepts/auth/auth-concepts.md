@@ -33,11 +33,11 @@ The method that an app uses to authenticate with the Microsoft identity platform
 
 ### Delegated access (access on behalf of a user)
 
-In this access scenario, a user has signed into a client application and the client application calls Microsoft Graph on behalf of the user. Both the client and the user must be authorized to make the request.
+In this access scenario, a user has signed into a client application and the client application calls Microsoft Graph on behalf of the user. *Both the client and the user must be authorized to make the request*.
 
 Delegated access requires *delegated permissions*, also referred to as *scopes*. Scopes are permissions that are exposed by a given resource and they represent the operations that an app can perform on behalf of a user.
 
-Because both the app and the user must be authorized to make the request, the resource grants the client app the delegated permissions, for the client app to access data on behalf of the specified user. For the user, the actions that they can perform on the resource rely on the privileges that they have to access the resource. For example, the user might be the owner of the resource, or they might be assigned a particular role through a role-based access control system (RBAC) such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview).
+Because both the app and the user must be authorized to make the request, the resource grants the client app the delegated permissions, for the client app to access data on behalf of the specified user. For the user, the actions that they can perform on the resource rely on the permissions that they have to access the resource. For example, the user might be the owner of the resource, or they might be assigned a particular role through a role-based access control system (RBAC) such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview).
 
 ### Direct access (app-only access)
 
@@ -53,7 +53,11 @@ Apps get privileges to call Microsoft Graph with their own identity through one 
 
 Microsoft Graph exposes granular permissions that control the access that apps have to Microsoft Graph resources, like users, groups, and mail. As a developer, you decide which Microsoft Graph permissions to request for your app based on the access scenario and the operations you want to perform.
 
-Microsoft Graph exposes two types of permissions for the supported [access scenarios](#access-scenarios): *delegated permissions* and *application permissions*. Delegated permissions, also called *scopes*, allow the application to act on behalf of the signed-in user. Application permissions, also called *app roles*, allow the app to access data on its own, without a signed-in user.
+Microsoft Graph exposes two types of permissions for the supported [access scenarios](#access-scenarios):
++ Delegated permissions
++ Application permissions
+
+Delegated permissions, also called *scopes*, allow the application to act on behalf of the signed-in user. Application permissions, also called *app roles*, allow the app to access data on its own, without a signed-in user.
 
 When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, your app is given access to the resources, and APIs that it has requested. For apps that access resources and APIs without a signed-in user, the application permissions can be pre-consented to by an administrator when the app is installed.
 

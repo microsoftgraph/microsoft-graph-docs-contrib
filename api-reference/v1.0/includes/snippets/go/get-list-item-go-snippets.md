@@ -14,7 +14,7 @@ configuration := &graphconfig.ListItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").Get(context.Background(), configuration)
 
 
 ```

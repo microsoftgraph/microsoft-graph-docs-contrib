@@ -24,7 +24,7 @@ scheduleInfo.SetStartDateTime(&startDateTime)
 expiration := graphmodels.NewExpirationPattern()
 type := graphmodels.AFTERDURATION_EXPIRATIONPATTERNTYPE 
 expiration.SetType(&type) 
-duration := "PT5H"
+duration , err := abstractions.ParseISODuration("PT5H")
 expiration.SetDuration(&duration) 
 scheduleInfo.SetExpiration(expiration)
 requestBody.SetScheduleInfo(scheduleInfo)
@@ -35,7 +35,7 @@ ticketSystem := "MS Project"
 ticketInfo.SetTicketSystem(&ticketSystem) 
 requestBody.SetTicketInfo(ticketInfo)
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(requestBody)
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(context.Background(), requestBody, nil)
 
 
 ```
