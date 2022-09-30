@@ -5,7 +5,7 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Learn how to use the Microsoft Graph connectors SDK to build your first custom connector."
+description: "Learn how to use the Microsoft Graph connectors SDK (preview) to build your first custom connector."
 ---
 
 # Build your first custom Microsoft Graph connector

@@ -5,7 +5,7 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Follow the steps in this article to test the custom connector you built using the Microsoft Graph connectors SDK."
+description: "Follow the steps in this article to test the custom connector you built using the Microsoft Graph connectors SDK (preview)."
 ---
 
 # Test your Microsoft Graph connector

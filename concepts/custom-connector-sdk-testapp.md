@@ -1,11 +1,11 @@
 ---
-title: "Microsoft Graph connectors SDK test application"
+title: "Microsoft Graph connectors SDK (preview) test application"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Learn how to use the test application that's included in the Microsoft Graph connectors SDK."
+description: "Learn how to use the test application that's included in the Microsoft Graph connectors SDK (preview)."
 ---
 
 # Microsoft Graph connectors SDK (preview) test application
