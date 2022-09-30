@@ -10,8 +10,6 @@ ms.prod: search
 
 # Create, update, and delete connections in Microsoft Graph
 
-Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnectors-externalconnection) resource in Microsoft Graph.
-
 The Microsoft Graph connectors platform offers an intuitive way to add your external data into Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
 After a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
@@ -67,22 +65,20 @@ Before an application can add items to the search index, it must create and conf
 
 1. [Create a connection](/graph/api/externalconnectors-external-post-connections) with a unique ID, display name, and description.
 1. [Register a schema](/graph/api/externalconnectors-externalconnection-post-schema) to define the fields that will be included in the index.
-   - For information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
+   > **Note:** For information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
 
 ## Enable content experiences
-A Graph connector can be enabled to participate in other Microsoft 365 experiences beyond Microsoft Search.
+A Microsoft Graph connector can integrate with Microsoft 365 experiences beyond Microsoft Search.
 
-This can be done by specifying one or more content experiences (search, compliance, etc.) in which your connection will participate.
-The content experiences listed in the following table are currently supported. When calling the Graph API, reference this [flag enum description](/graph/api/resources/enums-externalconnectors).
+To enable one or more content experiences, set the value of the **enabledContentExperiences** property to the values that represent those content experiences when you create the connection. The supported values are listed in the following table.
 
-| Content Experience Type Enum | Description |
+| enabledContentExperiences value | Description |
 |-|-|
-| search | Enabling search allows your content to appear in Microsoft search results. The format of these results is consistent across different search canvases, like SharePoint and Microsoft Bing. |
-| compliance | Enabling compliance allows your content to be visible to Microsoft Purview advanced eDiscovery solution. Refer to [Microsoft Purview solutions](/microsoft-365/compliance/ediscovery) to learn more about advanced eDiscovery solution & licensing requirements.|
+| search | Allows your content to appear in Microsoft search results. The format of these results is consistent across different search canvases, such as SharePoint and Microsoft Bing. |
+| compliance | Allows your content to be visible to the Microsoft Purview advanced eDiscovery solution. For details about advanced eDiscovery solution & licensing requirements, see [Microsoft Purview solutions](/microsoft-365/compliance/ediscovery).|
 
-If you already know which content experiences you want your connection to participate in, set the `enabledContentExperiences` flag enum at the time of connection creation.
+The following example shows how to update a connection to enable both the search and compliance content experiences.
 
-Otherwise, you can change the enabled content experiences, as shown in the following example.
 ```http
 PATCH https://graph.microsoft.com/beta/external/connections/contosohelpdesk
 Content-Type: application/json
@@ -93,31 +89,31 @@ Content-Type: application/json
 ```
 
 ## Connection settings
-You can supply the default settings for each of the enabled content experiences using connection settings. These settings would affect content experiences as long as they are enabled.
+You can configure the default connection settings for each enabled content experience. When enabled, these settings affect the content experiences.
 
 ### Search settings
-You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content. A set of search display templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules specifying one or more conditions. When these conditions are met, the result layout will be applied to the search result and displayed on the results page.
+You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content. A set of search display templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules that specify one or more conditions. When these conditions are met, the layout will be applied to the search result and displayed on the results page.
 
 ### Compliance settings
-Similar to enterprise search settings, you need to define how to display advanced eDiscovery search results by supplying result types for your content. This enables the eDiscovery manager to visualize the content when reviewing the datasets. Here's an example of an eDiscovery search review result of an Azure DevOps item in eDiscovery:
+Similar to enterprise search settings, you need to define how to display advanced eDiscovery search results by supplying result types for your content. This enables the eDiscovery manager to visualize the content when reviewing the datasets. The following example shows the results of an eDiscovery search review of an Azure DevOps item.
 
-![eDiscovery search review result example for AzureDevOps item.](./images/connectors-images/connecting-external-content-connection-settings-eDiscovery-result-example.png)
+![Screenshot of an eDiscovery search review result of an Azure DevOps item](./images/connectors-images/connecting-external-content-connection-settings-eDiscovery-result-example.png)
 
 > [!IMPORTANT]
-> The Adaptive Card format is used for rendering results in eDiscovery. Unlike for the search experience, the eDiscovery experience only supports Adaptive Card elements up to version 1.2. Read further to learn about other restrictions for eDiscovery result templates.
+> The Adaptive Card format is used to render results in eDiscovery. Unlike the search experience, the eDiscovery experience only supports Adaptive Card elements up to version 1.2. 
 
-Please ensure you select 1.2 as the target version when configuring the eDiscovery result template in the [Adaptive Card Designer](https://adaptivecards.io/designer/).
+When you configure the eDiscovery result template in the [Adaptive Card Designer](https://adaptivecards.io/designer/), select 1.2 as the target version.
 
-![AdaptiveCard Designer target version selector.](./images/connectors-images/connecting-external-content-connection-settings-adaptiveCard-target-version.png)
+![Screenshot of the Adaptive Card Designer with version 1.2 highlighted](./images/connectors-images/connecting-external-content-connection-settings-adaptiveCard-target-version.png)
 
-Please note that eDiscovery result templates have the following Adaptive Cards restrictions:
-1. Markdown is **not** supported. 
-1. Data binding expressions with `${}` are not supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello ${name}"` is not.
-1. Only data binding expressions for single-valued properties are supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello {employee.Name}"` is not.
+Note that the following limitations apply to Adaptive Cards in the eDiscovery result templates:
+- Markdown is not supported. 
+- Data binding expressions with `${}` are not supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello ${name}"` is not.
+- Only data binding expressions for single-valued properties are supported. For example, `"text": "Hello {name}"` is supported, but `"text": "Hello {employee.Name}"` is not.
 
 ## Update a connection
 
-To change the display name, description, or enabled content experiences of an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update).
+To change the display name, description, or enabled content experiences for an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update).
 
 ## Delete a connection
 
