@@ -64,7 +64,6 @@ The following example gets the access package assignments for users who have ass
 ### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackageassignment_additionalaccess"
