@@ -61,7 +61,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Retrieve all workflows created in the tenant
+
+#### Request
 
 The following is an example of a request.
 
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response
 
@@ -184,6 +186,47 @@ Content-Type: application/json
             "isEnabled": true,
             "isSchedulingEnabled": false,
             "version": 1
+        }
+    ]
+}
+```
+
+### Example 2: Retrieve only specific properties of "leaver" workflows
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_list_workflow_select"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows?$filter=category eq 'leaver'&$select=id,category,displayName,isEnabled,isSchedulingEnabled
+```
+
+#### Response
+The following is an example of the response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.identityGovernance.workflowTemplate)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows(category,displayName,isEnabled,isSchedulingEnabled)",
+    "value": [
+        {
+            "category": "leaver",
+            "displayName": "Pre-Offboarding employees in the R&D department",
+            "id": "c0548e6c-8849-46e8-be14-8b6d2b04957e",
+            "isEnabled": true,
+            "isSchedulingEnabled": true
         }
     ]
 }
