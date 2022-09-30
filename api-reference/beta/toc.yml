@@ -13425,35 +13425,37 @@ items:
               - name: Get task
                 href: api/identitygovernance-task-get.md
             - name: Reports
+              displayName: Lifecycle Workflows
               items:
               - name: Overview
+                displayName: Lifecycle Workflows reporting
                 href: resources/identitygovernance-lifecycleworkflows-reporting-overview.md
               - name: User processing results
                 href: resources/identitygovernance-userprocessingresult.md
                 items:
-                - name: List
+                - name: List user processing results
                   href: api/identitygovernance-workflow-list-userprocessingresults.md
-                - name: Summary
+                - name: Get summary
                   href: api/identitygovernance-userprocessingresult-summary.md
                 - name: List task processing results
                   href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
               - name: Task reports
                 href: resources/identitygovernance-taskreport.md
                 items:
-                - name: List
+                - name: List task reports
                   href: api/identitygovernance-workflow-list-taskreports.md
-                - name: Summary
+                - name: Get summary
                   href: api/identitygovernance-taskreport-summary.md
                 - name: List task processing results
                   href: api/identitygovernance-taskreport-list-taskprocessingresults.md
               - name: Workflow runs
                 href: resources/identitygovernance-run.md
                 items:
-                - name: List
+                - name: List runs
                   href: api/identitygovernance-workflow-list-runs.md
-                - name: Get
+                - name: Get runs
                   href: api/identitygovernance-run-get.md
-                - name: Summary
+                - name: Get summary
                   href: api/identitygovernance-run-summary.md
                 - name: List user processing results
                   href: api/identitygovernance-run-list-userprocessingresults.md
