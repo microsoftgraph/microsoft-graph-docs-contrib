@@ -16,8 +16,7 @@ Indicates an answer option for an [accessPackageMultipleChoiceQuestion](../resou
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actualValue|String|	The value stored on the requestor's user profile, if this answer is configured to be stored as a specific attribute. |
-|text|String|The text of the answer choice to show to the requestor.|
+|actualValue|String|The actual value of the selected choice. This is typically a string value which is understandable by applications. Required.|
 |localizations|[accessPackageLocalizedText](../resources/accesspackagelocalizedtext.md) collection|The text of the answer choice represented in a format for a specific locale.|
 
 ## Relationships
