@@ -19,11 +19,12 @@ Subtypes include [accessPackageTextInputQuestion](../resources/accesspackagetext
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String| ID of the question.|
-|sequence|Int32| Relative position of this question when displaying a list of questions to the requestor.|
+|isAnswerEditable|Boolean| Specifies whether the requestor is allowed to edit answers to questions for an assignment [by posting an update to accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md). |
 |isRequired|Boolean| Whether the requestor is required to supply an answer or not.|
-|isAnswerEditable|Boolean| Specifies whether the requestor is allowed to edit answers to questions [by posting an update to accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md). |
-|text|String|The text of the question to show to the requestor.|
 |localizations|[accessPackageLocalizedText](../resources/accesspackagelocalizedtext.md) collection|The text of the question represented in a format for a specific locale.|
+|text|String|The text of the question to show to the requestor.|
+|sequence|Int32| Relative position of this question when displaying a list of questions to the requestor.|
+
 
 ## Relationships
 None.

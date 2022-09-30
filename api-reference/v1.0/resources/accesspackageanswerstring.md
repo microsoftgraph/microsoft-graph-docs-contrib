@@ -18,9 +18,10 @@ Inherits from [accessPackageAnswer](../resources/accesspackageanswer.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|The value stored on the requestor's user profile, if this answer is configured to be stored as a specific attribute.|
 |answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|The question the answer applies to. Inherited from [accessPackageAnswer](../resources/accesspackageanswer.md).|
 |displayValue|String|The localized display value shown to the requestor and approvers. Inherited from [accessPackageAnswer](../resources/accesspackageanswer.md).|
+|value|String|The value stored on the requestor's user profile, if this answer is configured to be stored as a specific attribute.|
+
 ## Relationships
 None.
 
