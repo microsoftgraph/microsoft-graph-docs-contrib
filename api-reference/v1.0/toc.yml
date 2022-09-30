@@ -5618,7 +5618,7 @@ items:
               href: api/entitlementmanagement-list-assignments.md
             - name: Get
               href: api/accesspackageassignment-get.md
-            - name: Additional access
+            - name: Check additional access
               href: api/accesspackageassignment-additionalaccess.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
