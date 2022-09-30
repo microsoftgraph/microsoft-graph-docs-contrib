@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to xrank search results
+# Use the Microsoft Search API to XRANK search results
 
 You can use the Microsoft Search API **XRANK** expression in Microsoft Graph to boost the dynamic rank of items based on certain term occurrences within the match expression, without changing which items match the query. An **XRANK** expression contains one component that must be matched, *the match expression*, and one or more components that contribute only to dynamic ranking, *the rank expression*. At least one of the parameters, excluding n, must be specified for an XRANK expression to be valid. The xrank operator is only supported on files hosted in SharePoint.
 
@@ -20,7 +20,7 @@ For more information about [XRANK operator's dynamic ranking calculation](/share
 ## Example
 The following example shows a request that searches for files hosted in SharePoint and uses the **XRANK operator** to boost specified search results.
 
-### Request Without XRANK
+### Request without XRANK
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
