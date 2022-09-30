@@ -13,11 +13,10 @@ requestBody.SetAccountEnabled(&accountEnabled)
 
 
 alternativeSecurityId := graphmodels.NewAlternativeSecurityId()
-additionalData := map[string]interface{}{
-	"type" : int32(2) , 
-	"key" : "base64Y3YxN2E1MWFlYw==", 
-}
-alternativeSecurityId.SetAdditionalData(additionalData)
+type := int32(2)
+alternativeSecurityId.SetType(&type) 
+key := []byte("base64Y3YxN2E1MWFlYw==")
+alternativeSecurityId.SetKey(&key) 
 
 alternativeSecurityIds := []graphmodels.AlternativeSecurityIdable {
 	alternativeSecurityId,

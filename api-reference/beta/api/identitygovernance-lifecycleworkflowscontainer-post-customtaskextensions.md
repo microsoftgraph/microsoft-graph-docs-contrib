@@ -67,7 +67,7 @@ You can specify the following properties when creating a **customTaskExtension**
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) object in the response body.
 
 ## Examples
 
@@ -121,6 +121,10 @@ Content-length: 588
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-create-customtaskextension-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-create-customtaskextension-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
