@@ -5872,7 +5872,7 @@
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
           "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Delete subscription](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) method.",
-          "Target": "channel"
+          "Target": "conversationMember"
         }
       ],
       "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
