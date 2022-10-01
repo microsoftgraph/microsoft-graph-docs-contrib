@@ -1,7 +1,7 @@
 ---
 title: "userTrainingEventInfo resource type"
 description: "Represents events of a training assigned to a user in an attack simulation and training campaign."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
@@ -42,12 +42,11 @@ The following is a JSON representation of the resource.
   "trainingAssignedProperties": {
     "@odata.type": "microsoft.graph.userTrainingContentEventInfo"
   },
-  "trainingUpdatedProperties": {
+  "trainingCompletedProperties": {
     "@odata.type": "microsoft.graph.userTrainingContentEventInfo"
   },
-  "trainingCompletedProperties": {
+  "trainingUpdatedProperties": {
     "@odata.type": "microsoft.graph.userTrainingContentEventInfo"
   }
 }
 ```
-

@@ -1,7 +1,7 @@
 ---
 title: "securityReportsRoot resource type"
-description: "Container for AST reports resources."
-author: "Gopal-MSFT"
+description: "Represents an abstract type that contains resources for attack simulation and training reports."
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: apiPageType
@@ -13,20 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.
-This is an abstract type.
+Represents an abstract type that contains resources for attack simulation and training reports. This resource provides the ability to launch a realistic simulated phishing attack that organizations can learn from.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getAttackSimulationSimulationUserCoverage](../api/securityreportsroot-getattacksimulationsimulationusercoverage.md)|[attackSimulationSimulationUserCoverage](../resources/attacksimulationsimulationusercoverage.md) collection|List simulation coverage for users of a tenant in attack simulation and training campaigns.|
-|[getAttackSimulationTrainingUserCoverage](../api/securityreportsroot-getattacksimulationtrainingusercoverage.md)|[attackSimulationTrainingUserCoverage](../resources/attacksimulationtrainingusercoverage.md) collection|List training coverage for users of a tenant in attack simulation and training campaigns.|
-|[getAttackSimulationRepeatOffenders](../api/securityreportsroot-getattacksimulationrepeatoffenders.md)|[attackSimulationRepeatOffender](../resources/attacksimulationrepeatoffender.md) collection|List repeat offender users of a tenant in attack simulation and training campaigns|
+|[Get simulation coverage for users](../api/securityreportsroot-getattacksimulationsimulationusercoverage.md)|[attackSimulationSimulationUserCoverage](../resources/attacksimulationsimulationusercoverage.md) collection|List [training coverage](../resources/attacksimulationtrainingusercoverage.md) for each tenant user in attack simulation and training campaigns.|
+|[Get training coverage for users](../api/securityreportsroot-getattacksimulationtrainingusercoverage.md)|[attackSimulationTrainingUserCoverage](../resources/attacksimulationtrainingusercoverage.md) collection|List training coverage for tenant users in attack simulation and training campaigns.|
+|[Get repeat offenders](../api/securityreportsroot-getattacksimulationrepeatoffenders.md)|[attackSimulationRepeatOffender](../resources/attacksimulationrepeatoffender.md) collection|List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns.|
 
 ## Properties
-None
+None.
 
 ## Relationships
 None.
