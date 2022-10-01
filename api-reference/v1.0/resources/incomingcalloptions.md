@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a class that contains the options for an incoming call.
 
 Inherits from [callOptions](calloptions.md).
@@ -35,7 +33,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.incomingCallOptions",
-  "hideBotAfterEscalation": "Boolean",
+  "hideBotAfterEscalation": "Boolean",  
   "isContentSharingNotificationEnabled": "Boolean"
 }
 ```
