@@ -88,7 +88,7 @@ The following is a JSON representation of the resource.
 - [Use aggregations](/graph/search-concept-aggregation) to refine search results
 - [Use display layout](/graph/search-concept-display-layout)
 - [Enable spell corrections](/graph/search-concept-speller) in search results
-- [Search SharePoint content with Application Permission](/graph/search-concept-searchAll)
+- [Search SharePoint content with application permissions](/graph/search-concept-searchAll)
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
