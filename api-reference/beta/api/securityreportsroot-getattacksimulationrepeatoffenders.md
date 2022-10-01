@@ -1,7 +1,7 @@
 ---
 title: "securityReportsRoot: getAttackSimulationRepeatOffenders"
-description: "List repeat offender users of a tenant in attack simulation and training campaigns."
-author: "Gopal-MSFT"
+description: "List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns."
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns.
+List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns.
 
 This function supports `@odata.nextLink` for pagination.
 ## Permissions
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [attackSimulationRepeatOffender](../resources/attacksimulationrepeatoffender.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and an [attackSimulationRepeatOffender](../resources/attacksimulationrepeatoffender.md) collection in the response body.
 
 ## Examples
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationRepeatO
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -112,16 +112,16 @@ Content-Type: application/json
             "repeatOffenceCount": 5,
             "attackSimulationUser": {
                 "userId": "6fcdab00-385b-46f2-a329-b843b49e9147",
-                "displayName": "anadi_testing",
-                "email": ""
+                "displayName": "Reed Flores",
+                "email": "reed@contoso.com"
             }
         },
         {
             "repeatOffenceCount": 638,
             "attackSimulationUser": {
                 "userId": "478a22cd-aecc-41df-b995-88c8de17aaf5",
-                "displayName": "attacksim",
-                "email": "attacksim@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"
+                "displayName": "Reed Flores",
+                "email": "reed@contoso.com"
             }
         }
     ]

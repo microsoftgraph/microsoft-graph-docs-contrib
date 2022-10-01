@@ -1,7 +1,7 @@
 ---
 title: "riskyUser: dismiss"
 description: "Dismiss a risky user"
-author: "cloudhandler"
+author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

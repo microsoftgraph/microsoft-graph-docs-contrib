@@ -1,7 +1,7 @@
 ---
 title: "attackSimulationUser resource type"
-description: "User in an attack simulation and training campaign."
-author: "Gopal-MSFT"
+description: "Represents a user in an attack simulation and training campaign."
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: resourcePageType
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A user in an attack simulation and training campaign.
+Represents a user in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name of the user.|
 |email|String|Email address of the user.|
-|userId|String|This is the **id** property value of the [user](../resources/user.md) resource that represents the user in the Azure AD tenant.|
+|userId|String|This is the **id** property value of the [user](../resources/user.md) resource that represents the user in the Azure Active Directory tenant.|
 
 ## Relationships
 None.
