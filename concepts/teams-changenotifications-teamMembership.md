@@ -78,7 +78,7 @@ Content-Type: application/json
 
 ## Subscribe to membership changes in all channels across the tenant (preview)
 
-To get change notifications for membership changes in all channels across the tenant, subscribe to `/teams/getAllChannels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. As of now, only private channels are supported. This subscription is only available in the beta endpoint
+To get change notifications for membership changes in all channels across the tenant, subscribe to `/teams/getAllChannels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. Currently, only private channels are supported. This subscription is only available in the beta endpoint.
 
 ### Permissions
 
