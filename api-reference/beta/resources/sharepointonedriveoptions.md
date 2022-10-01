@@ -1,5 +1,5 @@
 ---
-title: "SharePointOneDriveOptions resource type"
+title: "sharePointOneDriveOptions resource type"
 description: "Provides search content options while search with application permission."
 ms.localizationpriority: medium
 author: "yiwenwang"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the search content options while search with application permission.
+Provides the search content options when a search is performed using application permissions.
 
 ## Properties
 
