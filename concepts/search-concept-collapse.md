@@ -1,6 +1,6 @@
 ---
-title: "Use the Microsoft Search API to collapse search results"
-description: "You can use the Microsoft Search API collapse property in Microsoft Graph to collapse search results by taking a spec parameter. Only supported on file type."
+title: "Use the Microsoft Search API to collapseProperties search results"
+description: "You can use the Microsoft Search API collapseProperties property in Microsoft Graph to collapseProperties search results by taking a spec parameter. Only supported on file type."
 author: "cxiang"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -8,19 +8,29 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to collapse search results
 
-You can use the Microsoft Search API in Microsoft Graph to collapse search results, which only impacts the recall but not ranking/sorting. Specify the **collapse** property in a [searchRequest](/graph/api/resources/searchrequest) object to collapse on certain properties by taking a Spec parameter that can contain multiple fields separated by a comma and a limit size. The **collapse** property is only supported on files hosted in SharePoint and Onedrive.
+You can use the Microsoft Search API in Microsoft Graph to collapse items in search result set, which can display these results in a concise, readable way. You can specify the criteria for collapsing by using **collapseProperties** property in a [searchRequest](/graph/api/resources/searchrequest) object, which contains one or more collapseProperty parameter that point out fields set to be collapsed and a limit size. The **collapseProperties** property is only supported on files hosted in SharePoint and OneDrive.
 
 | Scenarios | Description | Sample |
 | :----     | :----       | :----  |
-|**Basic Collapse**|Collapse by any single sortable/refinable property.|"collapse":[{"fields":["title"],"limit":3}]|
-|**CompoundField Collapse**|Collapse by compound fields of properties separated by a comma.|"collapse":[{"fields":["title","author"],"limit":3}]|
-|**Multi-level Collapse**|Collapse by multiple properties to achieve level-by-level collapse, each with a max limit count for unique values. The max limit count of each level must be equal or less than upper-level limit count. |"collapse":[{"fields":["title"],"limit":3},{"fields":["author"],"limit":2}]|
+|**Basic Collapse**|Collapse by any single sortable/refinable property.|"collapseProperties":[{"fields":["title"],"limit":3}]|
+|**Compound Collapse**|Collapse by compound fields of properties.|"collapseProperties":[{"fields":["title","createdBy"],"limit":2}]|
+|**Multi-level Collapse**|Collapse by level-by-level collapseProperty. The limit value of each level must be equal or less than upper-level limit. |"collapseProperties":[{"fields":["title"],"limit":3},{"fields":["createdBy"],"limit":1}]|
 
-## Example
-The following example shows a request that searches for files and uses the **collaspe** property to collapse on certain properties by taking a Spec parameter that can contain multiple fields separated by a comma, which evaluated together specify a set of criteria used for collapsing. This example is a mixed case, which is a multi-level collapse with compoundfield collapse in the first level and basic collapse in the second level.
+## Examples of using collapseProperties
+The following table shows a sample list in SharePoint. The next set of examples use this list to show how the collapseProperties property works.
+| Title | Created By | Subject | Rank |
+| :----: | :----: | :----: | :----: |
+|Note|Andy|Poetry|1|
+|Note|James|History|2|
+|Note|Robert|Culture|3|
+|Note|James|Math|4|
+|Note|James|Science|5|
+|Notebook|James|Science|6|
+|Notebook|Andy|Culture|7|
+|Notebook|James|Science|8|
 
-### Request
-
+### Example: Basic Collapse
+#### Request
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
@@ -32,19 +42,102 @@ Content-Type: application/json
                 "listItem"
             ],
             "query": {
-                "queryString": "test"
+                "queryString": "note"
             },
-            "collapse": [
+            "collapseProperties": [
+                {
+                    "fields": [
+                        "title"
+                    ],
+                    "limit": 3
+                }
+            ]
+        }
+    ]
+}
+```
+Group the items based on **title** and show the top three (hence "limit": 3) for each group. This should return the following results. 
+| Title | Created By | Subject | Rank |
+| :----: | :----: | :----: | :----: |
+|Note|Andy|Poetry|1|
+|Note|James|History|2|
+|Note|Robert|Culture|3|
+|Notebook|James|Science|6|
+|Notebook|Andy|Culture|7|
+|Notebook|James|Science|8|
+
+### Example: Compound Collapse
+#### Request
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
+
+{
+    "requests": [
+        {
+            "entityTypes": [
+                "listItem"
+            ],
+            "query": {
+                "queryString": "note"
+            },
+            "fields": [
+                "title",
+                "createdBy"
+            ],
+            "collapseProperties": [
                 {
                     "fields": [
                         "title",
-                        "author"
+                        "createdBy"
+                    ],
+                    "limit": 2
+                }
+            ]
+        }
+    ]
+}
+```
+First, group the items based on both **title** and **createdBy**. Then, show each combination within the limit size 2 (hence "limit": 2). This should return the following results.
+| Title | Created By | Subject | Rank |
+| :----: | :----: | :----: | :----: |
+|Note|Andy|Poetry|1|
+|Note|James|History|2|
+|Note|Robert|Culture|3|
+|Note|James|Math|4|
+|Notebook|James|Science|6|
+|Notebook|Andy|Culture|7|
+|Notebook|James|Science|8|
+
+### Example: Compound Collapse
+#### Request
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
+
+{
+    "requests": [
+        {
+            "entityTypes": [
+                "listItem"
+            ],
+            "query": {
+                "queryString": "note"
+            },
+            "fields": [
+                "title",
+                "createdBy"
+            ],
+            "collapseProperties": [
+                {
+                    "fields": [
+                        "title"
                     ],
                     "limit": 3
                 },
                 {
                     "fields": [
-                        "modifiedBy"
+                        "createdBy"
                     ],
                     "limit": 1
                 }
@@ -53,66 +146,18 @@ Content-Type: application/json
     ]
 }
 ```
-
-### Response
-
-```HTTP
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "value": [
-        {
-            "searchTerms": [
-                "test"
-            ],
-            "hitsContainers": [
-                {
-                    "hits": [
-                        {
-                            "hitId": "eca22e76-bed7-4522-a44b-dbae87fc6bfc",
-                            "rank": 1,
-                            "summary": "Explore this page Benefit amount and deadlines Submit a claim",
-                            "resource": {
-                                "@odata.type": "#microsoft.graph.listItem",
-                                "fields": {
-                                    "contentclass": "STS_ListItem_WebPageLibrary",
-                                    "title": "Info+",
-                                    "author": "Sadkaj",
-                                    "modifiedBy": "Sadkaj"
-                                },
-                                "id": "eca22e76-bed7-4522-a44b-dbae87fc6bfc"
-                            }
-                        },
-                        {
-                            "hitId": "eb02c8fd-940b-440f-a9ad-cca8b0b20f9b",
-                            "rank": 2,
-                            "summary": "Microsoft ended its self-<c0>test</c0> kit pickup program",
-                            "resource": {
-                                "@odata.type": "#microsoft.graph.listItem",
-                                "fields": {
-                                    "contentclass": "STS_ListItem_WebPageLibrary",
-                                    "title": "COVID-19 self-test kits",
-                                    "author": "Kellen",
-                                    "modifiedBy": "Riley"
-                                },
-                                "id": "eb02c8fd-940b-440f-a9ad-cca8b0b20f9b"
-                            }
-                        }
-                    ],
-                    "total": 4758485,
-                    "moreResultsAvailable": true
-                }
-            ]
-        }
-    ],
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)"
-}
-```
+First, group the items based on **title** and show the top two (hence "limit": 3) for each group. Then, for each **title**, show a corresponding item of **createdBy** (hence second level "limit": 1). This should return the following results.
+| Title | Created By | Subject | Rank |
+| :---- | :---- | :---- | :---- |
+|Note|Andy|Poetry|1|
+|Note|James|History|2|
+|Note|Robert|Culture|3|
+|Notebook|James|Science|6|
+|Notebook|Andy|Culture|7|
 
 ## Known limitations
-- The **collapse** property is only supported for sortable/refinable property.
-- The **collapse** property is not supported for the following resources: **message**,**chatMessage**, **event**, **person**, or **externalItem**.
+- The **collapseProperties** property is only supported for sortable/refinable property.
+- The **collapseProperties** property is not supported for the following resources: **message**,**chatMessage**, **event**, **person**, or **externalItem**.
 
 ## Next steps
 

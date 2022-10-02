@@ -114,9 +114,9 @@ Depending on the entity type, the searchable properties vary. For details, see:
 
 ## Collapse search results
 
-Collapse is a collapse search results, which only impacts the recall but not ranking/sorting.
+The collapseProperties property takes a collection of collapseProperty that can contain multiple fields and limit size, which evaluated together specify a set of criteria used for collapsing. And collapseProperties only impacts the recall but not ranking/sorting.
 
-The [query](../api/search-query.md) method lets you customize the collapse parameter by specifying the **collapse** on the `requests` parameter, which is defined in [collapse](collapseProperty.md). This allows you to specify a list of one or more collapse properties.
+The [query](../api/search-query.md) method lets you customize the collapse property by specifying the **collapseProperties** on the `requests` parameter, which is collection of [collapseProperty](collapseProperty.md). This allows you to specify a set of one or more collapse property.
 
 Note that collapsing results is currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [drive](drive.md), [list](list.md), [site](site.md).
 
