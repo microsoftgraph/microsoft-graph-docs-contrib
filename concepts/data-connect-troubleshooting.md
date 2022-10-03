@@ -18,6 +18,8 @@ For further questions that are not covered here, please reach out dataconnect@mi
 
 ## Troubleshooting for Service Principal check when running your first MGDC Pipeline
 
+![A screenshot for SPN check](../concepts/images/data-connect-troubleshooting-spn.png)
+
 If you are having issues running your pipelines for the first time, please check how you have defined the owners for the Source Linked Service.  Please ensure you have followed the below.
 
 1. The Service Principal's owner must be a valid user account within the tenant, not another service principal. 
@@ -34,6 +36,8 @@ If you are having issues running your pipelines for the first time, please check
 3. If the owning member is no longer valid in a tenant's system, pipelines will fail this check unless a current valid user within the tenant owns the account. Please ensure that the owning account is updated to another member with the above requirements if there is a change in ownership. 
 
 ## Troubleshooting on PAM Approver Issues
+
+![A screenshot for PAM Approver Issues](../concepts/images/data-connect-troubleshooting-PAM.png)
 
 If you are having issues approving jobs within your tenant for your specified pipeline runs or extractions, please ensure that the approvers in your tenant meet the criteria below. Certain privileges must be granted to designated approvers to successfully approve jobs.
 
@@ -69,6 +73,7 @@ Below things to keep in mind for customers with multi-geo tenats to extract data
 3. Then on the Sink tab, simply specify the location where you wish to have the combined file created and make sure you select the *Merge files* behavior.
 
 ## Serverless SQL pool service connectivity issue
+
 The issue you may be running into is similar to [this](https://learn.microsoft.com/en-us/azure/synapse-analytics/troubleshoot/troubleshoot-synapse-studio#notebook-websocket-connection-issue) when connecting Azure Synapse to the destination storage account. The issue is related Synapse and how it sets up a websocket in the browser to retrieve the data which is by default blocked on the customer internet proxy. 
 
 1. You can resolve this issue with an SSP request: "INTERNT PROXY (SWG) - EXCEPTION ON SECURITY FILTERING POLICY"
