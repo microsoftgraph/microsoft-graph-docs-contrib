@@ -36,7 +36,7 @@ isActive := true
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

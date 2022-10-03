@@ -52,7 +52,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_serviceprincipal"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/owners/$ref
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners/$ref
 Content-type: application/json
 
 {
