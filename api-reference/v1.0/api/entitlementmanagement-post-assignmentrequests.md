@@ -306,6 +306,7 @@ Content-type: application/json
 The following example shows how a user can request an access package assignment for themselves by answering questions required by the policy while making the request.
 
 #### Request
+-->
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_packageID"
@@ -411,7 +412,7 @@ The following example shows how an admin can request updates to an assignment to
 
 <!-- {
   "blockType": "request",
-  "name": "update_accesspackageassignmentrequest_from_accesspackageassignmentrequests_packageID"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_packageID"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
