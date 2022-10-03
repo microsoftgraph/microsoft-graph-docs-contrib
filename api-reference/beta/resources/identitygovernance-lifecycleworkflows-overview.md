@@ -52,7 +52,7 @@ Each workflow contains general descriptive information such as it's identifier, 
 
 Workflow tasks are specific actions that run automatically when a workflow is triggered. Lifecycle Workflows defines the following preconfigured and read-only tasks that are allowed for the specified workflow categories. These task definitions show the configuration that's allowed for the task type in your workflow.
 
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](../includes/identitygovernance-lifecycleworkflows-tasks.md)]
+[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/Azure_docs/includes/lifecycle-workflows-tasks-table.md)]
 
 For example, the following JSON object represents the configuration of a built-in task that's identified by taskDefinitionId `1b555e50-7f65-41d5-b514-5894a026d10d`.
 
