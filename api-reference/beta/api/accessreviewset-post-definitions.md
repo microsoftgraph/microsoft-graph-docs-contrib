@@ -709,7 +709,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Create an access review on a group with user-to-group affiliation insights and user sign in insights for recommendations
+### Example 5: Create an access review on a group with insights about user-to-group affiliation and user sign in for recommendations
 
 The following example creates an access review with the following settings:
 + The review reviews all members of a group with the **id** `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
