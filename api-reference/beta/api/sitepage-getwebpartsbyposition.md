@@ -1,6 +1,6 @@
 ---
 title: 'Get webparts by position'
-description: 'Get a collection of WebParts by position information'
+description: 'Get a collection of webParts by position information'
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of [WebPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information.
+Get a collection of [webPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information.
 
 ## Permissions
 

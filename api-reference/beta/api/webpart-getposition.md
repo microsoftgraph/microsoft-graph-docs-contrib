@@ -1,6 +1,6 @@
 ---
 title: "Get webpart position"
-description: "Get position information of a WebPart"
+description: "Get position information of a webPart"
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [webPartPosition](../resources/webpartposition.md) information of a [WebPart](../resources/webpart.md).
+Get the [webPartPosition](../resources/webpartposition.md) information of a [webPart](../resources/webpart.md).
 
 ## Permissions
 

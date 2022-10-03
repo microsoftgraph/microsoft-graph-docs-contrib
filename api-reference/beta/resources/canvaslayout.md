@@ -19,7 +19,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
-There is no methods available on this resource.
+None.
 
 ## Properties
 
