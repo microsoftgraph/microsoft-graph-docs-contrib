@@ -309,7 +309,7 @@ The following example shows how a user can request an access package assignment 
 -->
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_packageID"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_requestor_answer_to_approver"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
@@ -412,7 +412,7 @@ The following example shows how an admin can request updates to an assignment to
 
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_packageID"
+  "name": "update_accesspackageassignmentrequest_from_accesspackageassignmentrequests_requestor_answer_to_approver"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
