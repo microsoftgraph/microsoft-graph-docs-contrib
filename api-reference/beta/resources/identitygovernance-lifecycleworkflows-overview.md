@@ -50,44 +50,19 @@ Each workflow contains general descriptive information such as it's identifier, 
 
 ### Workflow tasks
 
-Workflow tasks are specific actions that run automatically when a workflow is triggered. Lifecycle Workflows defines the following preconfigured and read-only tasks that are allowed for the specified workflow categories. These task definitions show the configuration that's allowed for the task type in your workflow.
+Workflow tasks are specific actions that run automatically when a workflow is triggered. Lifecycle Workflows defines the following preconfigured and read-only tasks that are allowed for the specified workflow categories. These task definitions show the settings for the task type, guiding you as you create tasks for your workflow.
 
 [!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/azure_docs/includes/lifecycle-workflows-tasks-table.md)]
 
-For example, the following JSON object represents the configuration of a built-in task that's identified by taskDefinitionId `1b555e50-7f65-41d5-b514-5894a026d10d`.
-
-```json
-{
-    "category": "joiner",
-    "description": "Generate Temporary Access Pass and send via email to user's manager",
-    "displayName": "Generate TAP And Send Email",
-    "id": "1b555e50-7f65-41d5-b514-5894a026d10d",
-    "version": 1,
-    "parameters": [
-        {
-            "name": "tapLifetimeMinutes",
-            "values": [],
-            "valueType": "string"
-        },
-        {
-            "name": "tapIsUsableOnce",
-            "values": [
-                "true",
-                "false"
-            ],
-            "valueType": "enum"
-        }
-    ]
-}
-```
-
-Use the [taskDefinition resource type](identitygovernance-taskdefinition.md) and its associated methods to discover all the predefined tasks that you can configure for your workflow, and the [task](identitygovernance-task.md) resource type and its associated GET methods to view the tasks that are configured for your workflow.
+Use the [taskDefinition resource type](identitygovernance-taskdefinition.md) and its associated methods to discover all the predefined tasks that you can configure for your workflow and the settings for the properties The [task](identitygovernance-task.md) resource type and its associated GET methods allow you to view the tasks that are configured for your workflow.
 
 ### Execution conditions
 
 For every workflow task, there's an execution condition that defines the *scope* of "who" and the *trigger* of "when" a workflow and it's associated tasks will run. For example, an execution condition can specify that a workflow runs for exiting employees, seven days before their employment end date, if they are in the R&D department. The associated task in the workflow can specify that the user is removed from the R&D teams and groups.
 
 ```json
+⁄⁄Sample snippet for the executionConditions object
+
 "executionConditions": {
     "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
     "scope": {
@@ -118,76 +93,6 @@ The following JSON object shows an example workflow with the following settings:
 + It is a "leaver" workflow that specifies the following tasks and execution conditions:
     + Execution conditions: Run the workflow for users in the R&D department, seven days before their employeeLeaveDateTime.
     + Tasks: Remove the user from one group and one team.
-
-```json
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
-  "category": "leaver",
-  "description": "Pre-offboarding tasks for employees in the R&D department before their last day of work to comply with Contoso's security policies.",
-  "displayName": "Pre-Offboarding employees in the R&D department",
-  "lastModifiedDateTime": "2022-09-27T17:27:51.3504189Z",
-  "createdDateTime": "2022-09-27T17:27:51.3504046Z",
-  "deletedDateTime": null,
-  "id": "c0548e6c-8849-46e8-be14-8b6d2b04957e",
-  "isEnabled": true,
-  "isSchedulingEnabled": true,
-  "nextScheduleRunDateTime": "2022-09-27T20:27:53Z",
-  "version": 1,
-  "executionConditions": {
-      "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-      "scope": {
-          "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-          "rule": "(department eq 'R&D')"
-      },
-      "trigger": {
-          "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-          "timeBasedAttribute": "employeeLeaveDateTime",
-          "offsetInDays": -7
-      }
-  },
-  "lastModifiedBy": {
-      "id": "10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6"
-  },
-  "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('c0548e6c-8849-46e8-be14-8b6d2b04957e')/tasks",
-  "tasks": [
-      {
-          "category": "joiner,leaver",
-          "continueOnError": false,
-          "description": "Remove user from membership of selected Azure AD groups",
-          "displayName": "Remove user from selected groups",
-          "executionSequence": 1,
-          "id": "e77a7588-fb91-4155-a533-d4daffc2f29d",
-          "isEnabled": true,
-          "taskDefinitionId": "1953a66c-751c-45e5-8bfe-01462c70da3c",
-          "arguments": [
-              {
-                  "name": "groupID",
-                  "value": "7e30d4be-1858-48cd-b3af-c9efd3df7263"
-              }
-          ]
-      },
-      {
-          "category": "joiner,leaver",
-          "continueOnError": false,
-          "description": "Remove user from membership of selected Teams",
-          "displayName": "Remove user from selected Teams",
-          "executionSequence": 2,
-          "id": "78520f52-3f2d-44de-8830-562f2b6b3990",
-          "isEnabled": true,
-          "taskDefinitionId": "06aa7acb-01af-4824-8899-b14e5ed788d6",
-          "arguments": [
-              {
-                  "name": "teamID",
-                  "value": "7e30d4be-1858-48cd-b3af-c9efd3df7263"
-              }
-          ]
-      }
-  ],
-  "createdBy": {
-      "id": "10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6"
-  }
-}
-```
 
 ### Workflow versions
 
