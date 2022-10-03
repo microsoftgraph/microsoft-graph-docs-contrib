@@ -14,7 +14,7 @@ categories := []string {
 }
 requestBody.SetCategories(categories)
 
-graphClient.Me().Profile().InterestsById("personInterest-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Profile().InterestsById("personInterest-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

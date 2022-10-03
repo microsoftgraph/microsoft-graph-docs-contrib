@@ -16,7 +16,7 @@ $requestBody->setDisplayName('Travel Plan');
 
 
 
-$graphServiceClient->me()->tasks()->listsById('baseTaskList-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->tasks()->listsById('baseTaskList-id')->patch($requestBody);
 
 
 ```

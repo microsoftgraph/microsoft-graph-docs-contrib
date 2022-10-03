@@ -11,7 +11,7 @@ requestBody := graphmodels.NewEdiscoverySearch()
 displayName := "Teams search"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").SearchesById("ediscoverySearch-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").SearchesById("ediscoverySearch-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
