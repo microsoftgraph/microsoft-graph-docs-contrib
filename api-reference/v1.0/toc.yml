@@ -4991,15 +4991,6 @@ items:
             items:
             - name: List
               href: api/authentication-list-methods.md
-          - name: FIDO2 security keys
-            href: resources/fido2authenticationmethod.md
-            items:
-            - name: List
-              href: api/fido2authenticationmethod-list.md
-            - name: Get
-              href: api/fido2authenticationmethod-get.md
-            - name: Delete
-              href: api/fido2authenticationmethod-delete.md
           - name: X509 certificate
             displayName: certificate-based authentication, CBA
             href: resources/x509Certificateauthenticationmethodconfiguration.md
@@ -5010,6 +5001,15 @@ items:
               href: api/x509certificateauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/x509certificateauthenticationmethodconfiguration-delete.md
+          - name: FIDO2 security keys
+            href: resources/fido2authenticationmethod.md
+            items:
+            - name: List
+              href: api/fido2authenticationmethod-list.md
+            - name: Get
+              href: api/fido2authenticationmethod-get.md
+            - name: Delete
+              href: api/fido2authenticationmethod-delete.md
           - name: Microsoft Authenticator
             href: resources/microsoftauthenticatorauthenticationmethod.md
             items:

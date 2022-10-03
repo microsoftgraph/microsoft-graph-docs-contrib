@@ -27,7 +27,6 @@ For delegated scenarios, the administrator needs one of the following [Azure AD 
 * Global Administrator
 
 ## HTTP request
-
 <!-- {
   "blockType": "ignored"
 }
@@ -56,13 +55,11 @@ The following properties can be updated.
 
 
 ## Response
-
 If successful, this method returns a `204 No Content` response code and an updated [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) object in the response body.
 
 ## Examples
 
 ### Request
-
 The following is an example of an update request with the following settings:
 
 + Enables the x509 certificate authentication method in the tenant.
@@ -70,7 +67,6 @@ The following is an example of an update request with the following settings:
 + Defines multi-factor authentication as requirement.
 + Configures the binding rules for the strong authentication method against the rule type.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_x509certificateauthenticationmethodconfiguration"
@@ -117,7 +113,6 @@ Content-Type: application/json
 ```
 
 ### Response
-
 <!-- {
   "blockType": "response"
 }

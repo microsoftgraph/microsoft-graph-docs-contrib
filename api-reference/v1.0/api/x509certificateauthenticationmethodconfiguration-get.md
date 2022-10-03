@@ -28,7 +28,6 @@ For delegated scenarios, the administrator needs one of the following [Azure AD 
 * Global Administrator
 
 ## HTTP request
-
 <!-- {
   "blockType": "ignored"
 }
@@ -55,8 +54,6 @@ If successful, this method returns a `200 OK` response code and a [x509Certifica
 ## Examples
 
 ### Request
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_x509certificateauthenticationmethodconfiguration"
@@ -64,7 +61,6 @@ If successful, this method returns a `200 OK` response code and a [x509Certifica
 -->
 
 ### Response
-
 The following response object shows an x509CertificateAuthenticationMethodConfiguration with its default configuration.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
