@@ -35,7 +35,7 @@ Key-value pair for action parameters. The configuration of this resource is shar
 
 ### Supported by Lifecycle Workflows tasks
 
-For more information about the supported configuration for tasks in Lifecycle Workflows, see [arguments for Lifecycle Workflows](/graph/identitygovernance-lifecycleworkflows-task-arguments).
+For more information about the supported configuration for tasks in Lifecycle Workflows, see [Configure the arguments for built-in Lifecycle Workflow tasks](/graph/identitygovernance-lifecycleworkflows-task-arguments).
 
 
 ## JSON representation

@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|arguments|[microsoft.graph.keyValuePair](../resources/keyvaluepair.md) collection|Arguments included within the task.|
+|arguments|[microsoft.graph.keyValuePair](../resources/keyvaluepair.md) collection|Arguments included within the task. <br/> For guidance to configure this property, see [Configure the arguments for built-in Lifecycle Workflow tasks](/graph/identitygovernance-lifecycleworkflows-task-arguments).|
 |category|microsoft.graph.identityGovernance.lifecycleTaskCategory|The category of the task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. This property is multi-valued and the same task can apply to both `joiner` and `leaver` categories.|
 |continueOnError|Boolean|A boolean value that determines if the failure of this task stops the subsequent workflows from running.|
 |description|String|A string that describes the purpose of the task for administrative use.|

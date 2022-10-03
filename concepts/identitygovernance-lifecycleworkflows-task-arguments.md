@@ -1,13 +1,13 @@
 ---
-title: "Configure the arguments for a Lifecycle Workflow task"
-description: "Configure the arguments for a Lifecycle Workflow task. Learn the allowed configurations for the arguments property of various built-in tasks in Lifecycle Workflows."
+title: "Configure the arguments for built-in Lifecycle Workflow tasks"
+description: "Configure the arguments for built-in Lifecycle Workflow tasks. Learn the allowed configurations for the arguments property of various built-in tasks in Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Configure the arguments for a built-in Lifecycle Workflow task
+# Configure the arguments for built-in Lifecycle Workflow tasks
 
 The Lifecycle Workflows API in Microsoft Graph enables you to automate basic lifecycle processes for your users at three levels: Joiner, Leaver, and Mover. Core to the workflows are **tasks**, that represent the specific actions that run automatically when a workflow is triggered.
 
