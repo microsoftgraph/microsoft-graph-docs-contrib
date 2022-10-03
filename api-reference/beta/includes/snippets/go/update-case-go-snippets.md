@@ -15,7 +15,7 @@ requestBody.SetDescription(&description)
 externalId := "Updated externalId"
 requestBody.SetExternalId(&externalId) 
 
-graphClient.Compliance().Ediscovery().CasesById("case-id").Patch(requestBody)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -25,7 +25,7 @@ requestBody.SetUrl(&url)
 supports := graphmodels.SUPPORTS-VALUE_WORKFORCEINTEGRATIONSUPPORTEDENTITIES 
 requestBody.SetSupports(&supports) 
 
-graphClient.Teamwork().WorkforceIntegrationsById("workforceIntegration-id").Patch(requestBody)
+result, err := graphClient.Teamwork().WorkforceIntegrationsById("workforceIntegration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

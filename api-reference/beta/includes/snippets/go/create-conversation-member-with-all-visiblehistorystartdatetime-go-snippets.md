@@ -20,7 +20,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.ChatsById("chat-id").Members().Post(requestBody)
+result, err := graphClient.ChatsById("chat-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```

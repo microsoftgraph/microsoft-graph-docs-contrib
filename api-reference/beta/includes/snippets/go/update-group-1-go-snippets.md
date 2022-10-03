@@ -13,7 +13,7 @@ requestBody.SetDescription(&description)
 displayName := "Contoso Life Renewed"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.GroupsById("group-id").Patch(requestBody)
+result, err := graphClient.GroupsById("group-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewEmailAuthenticationMethod()
 emailAddress := "kim@contoso.com"
 requestBody.SetEmailAddress(&emailAddress) 
 
-result, err := graphClient.UsersById("user-id").Authentication().EmailMethods().Post(requestBody)
+result, err := graphClient.UsersById("user-id").Authentication().EmailMethods().Post(context.Background(), requestBody, nil)
 
 
 ```

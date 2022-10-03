@@ -1,7 +1,7 @@
 ---
 title: Confirm riskyUser compromised
 description: Confirm a riskyUser object as compromised.
-author: cloudhandler
+author: ebasseri
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 ms.date: 03/20/2019

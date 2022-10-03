@@ -7,7 +7,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "insightsSettings",
 					"ChangeType": "Addition",
-					"Description": "Added the [insightsSettings](https://docs.microsoft.com/en-us/graph/api/resources/insightsSettings?view=graph-rest-beta) resource.",
+					"Description": "Added the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightsSettings?view=graph-rest-beta) resource.",
 					"Target": "insightsSettings"
 				},
 				{
@@ -23,7 +23,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "peopleInsights",
 					"ChangeType": "Addition",
-					"Description": "Added the **peopleInsights** relationship to the [organizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
+					"Description": "Added the **peopleInsights** relationship to the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
 					"Target": "organizationSettings"
 				}
 			],
@@ -41,7 +41,7 @@
 					"ApiChange": "Relationship",
 					"ChangedApiName": "contactMergeSuggestions",
 					"ChangeType": "Addition",
-					"Description": "Added the **contactMergeSuggestions** relationship to the [userSettings](https://docs.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource.",
+					"Description": "Added the **contactMergeSuggestions** relationship to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource.",
 					"Target": "userSettings"
 				},
 				{
@@ -49,7 +49,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "contactMergeSuggestions",
 					"ChangeType": "Addition",
-					"Description": "Added the [contactMergeSuggestions](https://docs.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource type.",
+					"Description": "Added the [contactMergeSuggestions](https://learn.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource type.",
 					"Target": "contactMergeSuggestions"
 				},
 				{
@@ -57,7 +57,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "GET",
 					"ChangeType": "Addition",
-					"Description": "Added the [GET](https://docs.microsoft.com/en-us/graph/api/contactmergesuggestions-get?view=graph-rest-beta) method to the [contactMergeSuggestions](https://docs.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource.",
+					"Description": "Added the [GET](https://learn.microsoft.com/en-us/graph/api/contactmergesuggestions-get?view=graph-rest-beta) method to the [contactMergeSuggestions](https://learn.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource.",
 					"Target": "contactMergeSuggestions"
 				},
 				{
@@ -65,7 +65,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "PATCH",
 					"ChangeType": "Addition",
-					"Description": "Added the [Update](https://docs.microsoft.com/en-us/graph/api/contactmergesuggestions-update?view=graph-rest-beta) method to the [contactMergeSuggestions](https://docs.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource.",
+					"Description": "Added the [Update](https://learn.microsoft.com/en-us/graph/api/contactmergesuggestions-update?view=graph-rest-beta) method to the [contactMergeSuggestions](https://learn.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource.",
 					"Target": "contactMergeSuggestions"
 				}
 			],
@@ -83,7 +83,7 @@
 			  "ApiChange": "Resource",
 			  "ChangedApiName": "microsoftApplicationDataAccessSettings",
 			  "ChangeType": "Addition",
-			  "Description": "Added the [microsoftApplicationDataAccessSettings](https://docs.microsoft.com/en-us/graph/api/resources/microsoftApplicationDataAccessSettings?view=graph-rest-beta) resource.",
+			  "Description": "Added the [microsoftApplicationDataAccessSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftApplicationDataAccessSettings?view=graph-rest-beta) resource.",
 			  "Target": "microsoftApplicationDataAccessSettings"
 			},
 			{
@@ -91,7 +91,7 @@
 			  "ApiChange": "Relationship",
 			  "ChangedApiName": "microsoftApplicationDataAccess",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **microsoftApplicationDataAccess** relationship to the [organizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
+			  "Description": "Added the **microsoftApplicationDataAccess** relationship to the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
 			  "Target": "organizationSettings"
 			}
 		  ],

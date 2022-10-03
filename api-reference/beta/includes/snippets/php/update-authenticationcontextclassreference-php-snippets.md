@@ -10,26 +10,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new AuthenticationContextClassReference();
-$additionalData = [
-'value' => $value1 = new ();
-$		value1->setDisplayName('Contoso trusted locations');
+$requestBody->setId('c1');
 
-$		value1->setDescription('Access is only allowed from trusted locations');
+$requestBody->setDisplayName('Contoso medium');
 
-		$value1->setIsAvailable(true);
+$requestBody->setDescription('Medium protection level defined for Contoso policy');
 
-
-$valueArray []= $value1;
-$requestBody->setValue($valueArray);
-
-
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setIsAvailable(true);
 
 
 
-
-$graphServiceClient->identity()->conditionalAccess()->authenticationContextClassReferencesById('authenticationContextClassReference-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identity()->conditionalAccess()->authenticationContextClassReferencesById('authenticationContextClassReference-id')->patch($requestBody);
 
 
 ```

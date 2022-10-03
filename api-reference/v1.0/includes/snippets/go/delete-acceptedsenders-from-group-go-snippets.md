@@ -17,7 +17,7 @@ configuration := &graphconfig.RefRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-graphClient.GroupsById("group-id").AcceptedSenders().$ref().DeleteWithRequestConfigurationAndResponseHandler(configuration, nil)
+graphClient.GroupsById("group-id").AcceptedSenders().$ref().Delete(context.Background(), configuration)
 
 
 ```

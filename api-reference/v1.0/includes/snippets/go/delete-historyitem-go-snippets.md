@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().ActivitiesById("userActivity-id").HistoryItemsById("activityHistoryItem-id").Put()
+graphClient.Me().ActivitiesById("userActivity-id").HistoryItemsById("activityHistoryItem-id").Put(context.Background(), nil)
 
 
 ```

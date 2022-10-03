@@ -15,7 +15,7 @@ requestBody.SetTopicModeling(topicModeling)
 ocr := graphmodels.NewOcrSettings()
 requestBody.SetOcr(ocr)
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").Settings().Patch(requestBody)
+result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").Settings().Patch(context.Background(), requestBody, nil)
 
 
 ```

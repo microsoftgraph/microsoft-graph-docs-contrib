@@ -39,7 +39,7 @@ requestBody.SetDetail(detail)
 isCurrent := true
 requestBody.SetIsCurrent(&isCurrent) 
 
-result, err := graphClient.Me().Profile().Positions().Post(requestBody)
+result, err := graphClient.Me().Profile().Positions().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,104 +7,109 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewAssignmentPolicie()
-additionalData := map[string]interface{}{
-	"id" : "87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187", 
-	"displayName" : "All Users", 
-	"description" : "All users can request for access to the directory.", 
-	"allowedTargetScope" : "allDirectoryUsers", 
-	automaticRequestSettings := null
+requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
+id := "87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187"
+requestBody.SetId(&id) 
+displayName := "All Users"
+requestBody.SetDisplayName(&displayName) 
+description := "All users can request for access to the directory."
+requestBody.SetDescription(&description) 
+allowedTargetScope := graphmodels.ALLDIRECTORYUSERS_ALLOWEDTARGETSCOPE 
+requestBody.SetAllowedTargetScope(&allowedTargetScope) 
+automaticRequestSettings := null
 requestBody.SetAutomaticRequestSettings(&automaticRequestSettings) 
-	specificAllowedTargets := []graphmodels.able {
+specificAllowedTargets := []graphmodels.SubjectSetable {
 
-	}
-expiration := graphmodels.New()
-type := "noExpiration"
+}
+requestBody.SetSpecificAllowedTargets(specificAllowedTargets)
+expiration := graphmodels.NewExpirationPattern()
+type := graphmodels.NOEXPIRATION_EXPIRATIONPATTERNTYPE 
 expiration.SetType(&type) 
-	requestBody.SetExpiration(expiration)
-requestorSettings := graphmodels.New()
-	enableTargetsToSelfAddAccess := true
+requestBody.SetExpiration(expiration)
+requestorSettings := graphmodels.NewAccessPackageAssignmentRequestorSettings()
+enableTargetsToSelfAddAccess := true
 requestorSettings.SetEnableTargetsToSelfAddAccess(&enableTargetsToSelfAddAccess) 
-	enableTargetsToSelfUpdateAccess := false
+enableTargetsToSelfUpdateAccess := false
 requestorSettings.SetEnableTargetsToSelfUpdateAccess(&enableTargetsToSelfUpdateAccess) 
-	enableTargetsToSelfRemoveAccess := true
+enableTargetsToSelfRemoveAccess := true
 requestorSettings.SetEnableTargetsToSelfRemoveAccess(&enableTargetsToSelfRemoveAccess) 
-	allowCustomAssignmentSchedule := false
+allowCustomAssignmentSchedule := false
 requestorSettings.SetAllowCustomAssignmentSchedule(&allowCustomAssignmentSchedule) 
-	enableOnBehalfRequestorsToAddAccess := false
+enableOnBehalfRequestorsToAddAccess := false
 requestorSettings.SetEnableOnBehalfRequestorsToAddAccess(&enableOnBehalfRequestorsToAddAccess) 
-	enableOnBehalfRequestorsToUpdateAccess := false
+enableOnBehalfRequestorsToUpdateAccess := false
 requestorSettings.SetEnableOnBehalfRequestorsToUpdateAccess(&enableOnBehalfRequestorsToUpdateAccess) 
-	enableOnBehalfRequestorsToRemoveAccess := false
+enableOnBehalfRequestorsToRemoveAccess := false
 requestorSettings.SetEnableOnBehalfRequestorsToRemoveAccess(&enableOnBehalfRequestorsToRemoveAccess) 
-	onBehalfRequestors := []graphmodels.able {
+onBehalfRequestors := []graphmodels.SubjectSetable {
 
-	}
-	requestorSettings.SetOnBehalfRequestors(onBehalfRequestors)
-	requestBody.SetRequestorSettings(requestorSettings)
-requestApprovalSettings := graphmodels.New()
-	isApprovalRequiredForAdd := true
+}
+requestorSettings.SetOnBehalfRequestors(onBehalfRequestors)
+requestBody.SetRequestorSettings(requestorSettings)
+requestApprovalSettings := graphmodels.NewAccessPackageAssignmentApprovalSettings()
+isApprovalRequiredForAdd := true
 requestApprovalSettings.SetIsApprovalRequiredForAdd(&isApprovalRequiredForAdd) 
-	isApprovalRequiredForUpdate := false
+isApprovalRequiredForUpdate := false
 requestApprovalSettings.SetIsApprovalRequiredForUpdate(&isApprovalRequiredForUpdate) 
 
 
- := graphmodels.New()
-durationBeforeAutomaticDenial := "P2D"
-.SetDurationBeforeAutomaticDenial(&durationBeforeAutomaticDenial) 
+accessPackageApprovalStage := graphmodels.NewAccessPackageApprovalStage()
+durationBeforeAutomaticDenial , err := abstractions.ParseISODuration("P2D")
+accessPackageApprovalStage.SetDurationBeforeAutomaticDenial(&durationBeforeAutomaticDenial) 
 isApproverJustificationRequired := false
-.SetIsApproverJustificationRequired(&isApproverJustificationRequired) 
+accessPackageApprovalStage.SetIsApproverJustificationRequired(&isApproverJustificationRequired) 
 isEscalationEnabled := false
-.SetIsEscalationEnabled(&isEscalationEnabled) 
-durationBeforeEscalation := "PT0S"
-.SetDurationBeforeEscalation(&durationBeforeEscalation) 
+accessPackageApprovalStage.SetIsEscalationEnabled(&isEscalationEnabled) 
+durationBeforeEscalation , err := abstractions.ParseISODuration("PT0S")
+accessPackageApprovalStage.SetDurationBeforeEscalation(&durationBeforeEscalation) 
 
 
- := graphmodels.New()
-managerLevel := int32(1)
-.SetManagerLevel(&managerLevel) 
+subjectSet := graphmodels.NewSubjectSet()
+additionalData := map[string]interface{}{
+	"managerLevel" : int32(1) , 
+}
+subjectSet.SetAdditionalData(additionalData)
 
-primaryApprovers := []graphmodels.Objectable {
-	,
+primaryApprovers := []graphmodels.SubjectSetable {
+	subjectSet,
 
 }
-.SetPrimaryApprovers(primaryApprovers)
+accessPackageApprovalStage.SetPrimaryApprovers(primaryApprovers)
 
 
- := graphmodels.New()
-userId := "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2"
-.SetUserId(&userId) 
-description := "user"
-.SetDescription(&description) 
+subjectSet := graphmodels.NewSubjectSet()
+additionalData := map[string]interface{}{
+	"userId" : "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2", 
+	"description" : "user", 
+}
+subjectSet.SetAdditionalData(additionalData)
 
-fallbackPrimaryApprovers := []graphmodels.Objectable {
-	,
+fallbackPrimaryApprovers := []graphmodels.SubjectSetable {
+	subjectSet,
 
 }
-.SetFallbackPrimaryApprovers(fallbackPrimaryApprovers)
-escalationApprovers := []graphmodels.able {
+accessPackageApprovalStage.SetFallbackPrimaryApprovers(fallbackPrimaryApprovers)
+escalationApprovers := []graphmodels.SubjectSetable {
 
 }
-.SetEscalationApprovers(escalationApprovers)
-fallbackEscalationApprovers := []graphmodels.able {
+accessPackageApprovalStage.SetEscalationApprovers(escalationApprovers)
+fallbackEscalationApprovers := []graphmodels.SubjectSetable {
 
 }
-.SetFallbackEscalationApprovers(fallbackEscalationApprovers)
+accessPackageApprovalStage.SetFallbackEscalationApprovers(fallbackEscalationApprovers)
 
-	stages := []graphmodels.Objectable {
-		,
+stages := []graphmodels.AccessPackageApprovalStageable {
+	accessPackageApprovalStage,
 
-	}
-	requestApprovalSettings.SetStages(stages)
-	requestBody.SetRequestApprovalSettings(requestApprovalSettings)
-accessPackage := graphmodels.New()
+}
+requestApprovalSettings.SetStages(stages)
+requestBody.SetRequestApprovalSettings(requestApprovalSettings)
+accessPackage := graphmodels.NewAccessPackage()
 id := "49d2c59b-0a81-463d-a8ec-ddad3935d8a0"
 accessPackage.SetId(&id) 
-	requestBody.SetAccessPackage(accessPackage)
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetAccessPackage(accessPackage)
 
-graphClient.IdentityGovernance().EntitlementManagement().AssignmentPoliciesById("accessPackageAssignmentPolicy-id").Put(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentPoliciesById("accessPackageAssignmentPolicy-id").Put(context.Background(), requestBody, nil)
 
 
 ```

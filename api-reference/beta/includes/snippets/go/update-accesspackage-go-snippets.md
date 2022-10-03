@@ -11,7 +11,7 @@ requestBody := graphmodels.NewAccessPackage()
 displayName := "Access Package New Name"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById("accessPackage-id").Patch(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById("accessPackage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

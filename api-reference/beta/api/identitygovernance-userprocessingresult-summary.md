@@ -50,6 +50,11 @@ In the request URL, provide the following query parameters with values.
 |startDateTime|DateTimeOffset|The start date and time of the user processing result summary.|
 |endDateTime|DateTimeOffset|The end date and time of the user processing result summary|
 
+## Optional query parameters
+
+This method supports the `$count`, `$orderBy`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+
 ## Request headers
 
 |Name|Description|
@@ -62,7 +67,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [userSummary](../resources/identitygovernance-usersummary.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [microsoft.graph.identityGovernance.userSummary](../resources/identitygovernance-usersummary.md) in the response body.
 
 ## Examples
 
@@ -94,6 +99,10 @@ GET https://graph.microsoft.com/beta/IdentityGovernance/lifecycleWorkflows/workf
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-userprocessingresultthissummary-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-userprocessingresultthissummary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

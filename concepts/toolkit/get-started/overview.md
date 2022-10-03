@@ -13,7 +13,7 @@ Watch this short video to get started using the toolkit.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
-For a step-by-step tutorial, see the [Get started with Microsoft Graph Toolkit](/learn/modules/msgraph-toolkit-intro/) module. 
+For a step-by-step tutorial, see the [Get started with Microsoft Graph Toolkit](/training/modules/msgraph-toolkit-intro/) module. 
 
 ## Set up your Microsoft 365 tenant
 

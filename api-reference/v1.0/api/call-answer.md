@@ -43,10 +43,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter        | Type                                     |Description                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |Allows bots to provide a specific callback URI for the concurrent call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.    |
+| callbackUri       |String                                    |Allows bots to provide a specific callback URI for the concurrent call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.    |
 |acceptedModalities|String collection                         |The list of accept modalities. Possible values are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call. |
-|mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |The media configuration. (Required)                                                                                                            |
-| participantCapacity | Int | The number of participant that the application can handle for the call, for [Teams policy-based recording](/MicrosoftTeams/teams-recording-policy) scenario.                                                     |
+| callOptions            | [incomingCallOptions](../resources/incomingcalloptions.md)                                                         | The call options.   |
+| mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |The media configuration. (Required)                                                                                                            |
+| participantCapacity | Int32 | The number of participant that the application can handle for the call, for [Teams policy-based recording](/microsoftteams/teams-recording-policy) scenario.                                                     |
 
 ## Response
 This method returns a `202 Accepted` response code.
@@ -54,7 +55,7 @@ This method returns a `202 Accepted` response code.
 ## Examples
 The following example shows how to call this API.
 
-##### Request
+#### Request
 The following example shows the request.
 
 
@@ -77,6 +78,10 @@ Content-Length: 211
   "acceptedModalities": [
     "audio"
   ],
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.incomingCallOptions",
+    "isContentSharingNotificationEnabled": true
+  },
   "participantCapacity": 200
 }
 ```
@@ -108,8 +113,8 @@ Content-Length: 211
 ---
 
 
-##### Response
-Here is an example of the response. 
+#### Response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -121,7 +126,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 1: Answer a Peer-to-Peer VoIP call with service hosted media
 
-##### Notification - incoming
+#### Notification - incoming
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -173,7 +178,7 @@ Content-Type: application/json
 }
 ```
 
-##### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -231,7 +236,7 @@ Content-Type: application/json
 ---
 
 
-##### Response
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -240,7 +245,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -270,7 +275,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - established
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -302,7 +307,7 @@ Content-Type: application/json
 
 ### Example 2: Answer VOIP call with application hosted media
 
-##### Notification - incoming
+#### Notification - incoming
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -356,7 +361,7 @@ Content-Type: application/json
 }
 ```
 
-##### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -405,7 +410,7 @@ Content-Type: application/json
 ---
 
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -415,7 +420,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -445,7 +450,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - established
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -475,6 +480,54 @@ Content-Type: application/json
 }
 ```
 
+#### Notification - content sharing started
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions/2765eb15-01f8-47c6-b12b-c32111a4a86f"
+    }
+  ]
+}
+```
+
+#### Notification - content sharing ended
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions/2765eb15-01f8-47c6-b12b-c32111a4a86f"
+    }
+  ]
+}
+```
+
 ### Example 3: Answer a policy-based recording call
 
 Under the [Policy-based recording scenario](/microsoftteams/teams-recording-policy), before a participant under policy joins a call, an incoming call notification will be sent to the bot associated with the policy.
@@ -483,7 +536,7 @@ The join information can be found under the **botData** property. The bot can th
 When `participantCapacity` is specified in the `Answer` request for a policy-based recording notification, subsequent participant joining event belonging to the same policy group will be sent out as [participantJoiningNotification](../resources/participantJoiningNotification.md) instead of
 new incoming call notification, until number of participants that current call instance is handling has reached the number specified in `participantCapacity`.
 
-Here is an example of the incoming call notification that a bot would recieve in this case.
+The following is an example of the incoming call notification that a bot would receive in this case.
 
 ```json
 {
