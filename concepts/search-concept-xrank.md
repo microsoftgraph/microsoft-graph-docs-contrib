@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to XRANK search results
+# Use the Microsoft Search API to xrank search results
 
 You can use the Microsoft Search API **XRANK** expression in Microsoft Graph to boost the dynamic rank of items based on certain term occurrences within the match expression, without changing which items match the query. An **XRANK** expression contains one component that must be matched, *the match expression*, and one or more components that contribute only to dynamic ranking, *the rank expression*. At least one of the parameters, excluding n, must be specified for an XRANK expression to be valid. The xrank operator is only supported on files hosted in SharePoint.
 
@@ -20,7 +20,7 @@ For more information about [XRANK operator's dynamic ranking calculation](/share
 ## Example
 The following example shows a request that searches for files hosted in SharePoint and uses the **XRANK operator** to boost specified search results.
 
-### Request without XRANK
+### Request Without XRANK
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -92,7 +92,7 @@ Content-Type: application/json
                 "listItem"
             ],
             "query": {
-                "queryString": "(cat OR dog) XRANK(cd=100) note"
+                "queryString": "(cat OR dog) XRANK(cb=100) note"
             },
             "from": 0,
             "size": 1
@@ -112,31 +112,25 @@ Content-type: application/json
         {
             "searchTerms": [
                 "cat",
-                "or",
                 "dog",
-                "xrank",
-                "cd",
-                "100",
-                "note",
-                "contentclass",
-                "sts_listitem_"
+                "note"
             ],
             "hitsContainers": [
                 {
                     "hits": [
                         {
-                            "hitId": "1f335945-1b08-4ce2-a153-c7aa52e4513b",
+                            "hitId": "cb32ce8e-7f82-4b1d-b1fb-52e6af95fbed",
                             "rank": 1,
-                            "summary": "An <c0>XRANK</c0> expression contains one component that must be matched, the match expression, and one <c0>or</c0> more components that contribute only to dynamic <ddd/> ",
+                            "summary": "Microsoft is committed to providing a <ddd/> Other than meeting rooms marked as <c0>dog</c0>-free, meeting organizers can decide on a case-specific basis whether to disallow <c0>dogs</c0> in their meetings <ddd/> ",
                             "resource": {
                                 "@odata.type": "#microsoft.graph.listItem",
-                                "createdDateTime": "2022-09-09T05:27:29Z",
-                                "lastModifiedDateTime": "2022-09-13T04:28:00Z",
-                                "webUrl": "https://microsoftapc-my.sharepoint.com/personal/Documents/XRANKdogfood.docx"
+                                "createdDateTime": "2020-09-21T04:46:40Z",
+                                "lastModifiedDateTime": "2022-09-18T09:15:18Z",
+                                "webUrl": "https://microsofteur.sharepoint.com/teams/insider/EN/SitePages/Dog-Policy.aspx"
                             }
                         }
                     ],
-                    "total": 80060740,
+                    "total": 616865,
                     "moreResultsAvailable": true
                 }
             ]
