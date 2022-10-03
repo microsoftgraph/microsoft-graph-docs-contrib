@@ -16,6 +16,8 @@ $requestBody->setExcludedFileExtensionsForSyncApp(['.mp3', ]);
 
 $requestBody->setImageTaggingOption(new ImageTaggingChoice('enhanced'));
 
+$requestBody->setIsLegacyAuthProtocolsEnabled(true);
+
 $requestBody->setIsSitesStorageLimitAutomatic(false);
 
 $requestBody->setIsSyncButtonHiddenOnPersonalSite(false);
@@ -26,7 +28,7 @@ $requestBody->setPersonalSiteDefaultStorageLimitInMB(120000);
 
 
 
-$graphServiceClient->admin()->sharepoint()->settings()->patch($requestBody);
+$requestResult = $graphServiceClient->admin()->sharepoint()->settings()->patch($requestBody);
 
 
 ```

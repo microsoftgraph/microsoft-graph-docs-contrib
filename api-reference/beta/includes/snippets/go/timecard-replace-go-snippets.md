@@ -77,7 +77,7 @@ end.SetNotes(notes)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TeamsById("team-id").Schedule().TimeCardsById("timeCard-id").Put(requestBody)
+graphClient.TeamsById("team-id").Schedule().TimeCardsById("timeCard-id").Put(context.Background(), requestBody, nil)
 
 
 ```

@@ -17,7 +17,7 @@ After Microsoft Graph accepts the subscription request, it pushes change notific
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
  
 > [!div class="nextstepaction"]
-> [Tutorial: Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
+> [Learn: Use Change Notifications and Track Changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
@@ -58,7 +58,7 @@ You can create a subscription for the following scenarios:
 |---------|---------|
 |To a specific Outlook folder such as the Inbox     |   `me/mailFolders('inbox')/messages`      |
 |To a top-level resource     | `/me/messages` <br/> `/me/contacts` <br/> `/me/events` <br/> `/users` <br/> `/groups` <br/> `/communications/callRecords`        |
-|To a specific resource instance     |  `/users/{id}` <br/> `/groups/{id}` <br/> `/groups/{id}/conversations` <br/> `/sites/{site-id}/lists/{list-id}` <br/> `/communications/presences/{id}` <br/> `/communications/onlinemeeting/{meeting-id}`       |
+|To a specific resource instance     |  `/users/{id}` <br/> `/groups/{id}` <br/> `/groups/{id}/conversations` <br/> `/sites/{site-id}/lists/{list-id}` <br/> `/communications/presences/{id}` <br/> `/communications/onlinemeetings/{meeting-id}`       |
 |To any folder in a user's personal OneDrive     |  `/drives/{id}/root` <br/> `/drives/{id}/root/subfolder`      |
 |To the root folder of a SharePoint/OneDrive for Business drive     |   `/drive/root`      |
 | Or to a new [Security API](security-concept-overview.md) alert |`/security/alerts?$filter=status eq 'newAlert'` <br/> `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`|
@@ -350,7 +350,7 @@ The following table lists the latency to expect between an event happening in th
 - [Create subscription](/graph/api/subscription-post-subscriptions)
 - [changeNotification](/graph/api/resources/changenotification) resource type
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
-- [Change notifications and change tracking tutorial](/learn/modules/msgraph-changenotifications-trackchanges)
+- [Change notifications and change tracking tutorial](/training/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications](./webhooks-lifecycle.md)
 
 [contact]: /graph/api/resources/contact

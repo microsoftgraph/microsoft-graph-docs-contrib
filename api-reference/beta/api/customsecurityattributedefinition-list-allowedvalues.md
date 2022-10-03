@@ -72,7 +72,8 @@ The following example gets all predefined values for a custom security attribute
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_allowedvalue"
+  "name": "list_allowedvalue",
+  "sampleKeys": ["Engineering_Project"]
 }
 -->
 ``` http

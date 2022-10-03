@@ -15,7 +15,7 @@ requestBody.SetDescription(&description)
 dataType := graphmodels.STRING_IDENTITYUSERFLOWATTRIBUTEDATATYPE 
 requestBody.SetDataType(&dataType) 
 
-result, err := graphClient.Identity().UserFlowAttributes().Post(requestBody)
+result, err := graphClient.Identity().UserFlowAttributes().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewReferenceCreate()
 "@odata.id" := "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 requestBody.Set"@odata.id"(&"@odata.id") 
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").Owners().$ref().Post(requestBody)
+graphClient.ServicePrincipalsById("servicePrincipal-id").Owners().$ref().Post(context.Background(), requestBody, nil)
 
 
 ```

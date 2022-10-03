@@ -9,7 +9,6 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewFederationConfiguration()
 additionalData := map[string]interface{}{
-	"@odata.type" : "microsoft.graph.samlOrWsFedExternalDomainFederation", 
 	"issuerUri" : "https://contoso.com/issuerUri", 
 	"displayName" : "contoso display name", 
 	"metadataExchangeUri" : "https://contoso.com/metadataExchangeUri", 
@@ -18,8 +17,6 @@ additionalData := map[string]interface{}{
 
 
  := graphmodels.New()
-"@odata.type" := "microsoft.graph.externalDomainName"
-.Set"@odata.type"(&"@odata.type") 
 id := "contoso.com"
 .SetId(&id) 
 
@@ -31,7 +28,7 @@ id := "contoso.com"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Directory().FederationConfigurationsById("identityProviderBase-id").Post(requestBody)
+graphClient.Directory().FederationConfigurationsById("identityProviderBase-id").Post(context.Background(), requestBody, nil)
 
 
 ```

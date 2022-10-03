@@ -10,8 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestCount := true
+
 requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
-	Count: true,
+	Count: &requestCount,
 	OrderBy: [] string {"deletedDateTime asc"},
 	Select: [] string {"id","displayName","deletedDateTime"},
 }
@@ -20,7 +23,7 @@ configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().DeletedItems().Group().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Directory().DeletedItems().Group().Get(context.Background(), configuration)
 
 
 ```

@@ -65,14 +65,14 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.NUMBERED_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := "2020-02-25"
+startDate := 2020-02-25
 range.SetStartDate(&startDate) 
 numberOfOccurrences := int32(2)
 range.SetNumberOfOccurrences(&numberOfOccurrences) 
 recurrence.SetRange(range)
 requestBody.SetRecurrence(recurrence)
 
-result, err := graphClient.Me().Events().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 
 ```

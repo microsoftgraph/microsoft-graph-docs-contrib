@@ -2,7 +2,7 @@
 title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
 ms.localizationpriority: high
-author: "jpettere"
+author: "yyuank"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -79,7 +79,7 @@ The following example shows a request to get the manager.
   "blockType": "request",
   "name": "get_manager_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
 

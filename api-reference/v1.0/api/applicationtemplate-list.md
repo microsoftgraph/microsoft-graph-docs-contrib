@@ -4,7 +4,7 @@ description: 'Retrieve a list of applicationtemplate objects.'
 ms.localizationpriority: medium
 author: 'luleonpla'
 ms.prod: 'applications'
-doc_type: 'apiPageType'
+doc_type: apiPageType
 ---
 
 # List applicationTemplates

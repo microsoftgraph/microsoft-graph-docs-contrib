@@ -21,7 +21,7 @@ Contains the logo's binary content or a url to the logo's downloadable location.
 |Property|Type|Description|
 |:---|:---|:---|
 |logo|Binary|The binary contents of the logo. This is null when logoCdnUrl is used to send the logo|
-|contentType|[organizationalMessageLogoType](../resources/intune-partnerintegration-organizationalmessagelogotype.md)|The content type of the logo that is contained in the logo array. This is null when logoCdnUrl is used to send the logo. Possible values are: `png`.|
+|contentType|[organizationalMessageLogoType](../resources/intune-partnerintegration-organizationalmessagelogotype.md)|The content type of the logo that is contained in the logo array. This is null when logoCdnUrl is used to send the logo. Possible values are: `png`, `unknownFutureValue`.|
 |logoCdnUrl|String|The url at which the logo resides. This is null when logo and contentType are used to send the logo|
 
 ## Relationships
@@ -42,6 +42,8 @@ Here is a JSON representation of the resource.
   "logoCdnUrl": "String"
 }
 ```
+
+
 
 
 

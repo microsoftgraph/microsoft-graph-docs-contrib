@@ -4,7 +4,7 @@ description: 'A combination of an application and a servicePrincipal.'
 ms.localizationpriority: medium
 author: 'sureshja'
 ms.prod: 'applications'
-doc_type: 'resourcePageType'
+doc_type: resourcePageType
 ---
 
 # applicationServicePrincipal resource type

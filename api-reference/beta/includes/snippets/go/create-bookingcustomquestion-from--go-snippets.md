@@ -9,7 +9,6 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCustomQuestion()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.bookingCustomQuestion", 
 	"displayName" : "What is your age?", 
 	"answerInputType" : "text", 
 	answerOptions := []graphmodels.able {
@@ -18,7 +17,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.BookingBusinessesById("bookingBusiness-id").CustomQuestionsById("bookingCustomQuestion-id").Post(requestBody)
+graphClient.BookingBusinessesById("bookingBusiness-id").CustomQuestionsById("bookingCustomQuestion-id").Post(context.Background(), requestBody, nil)
 
 
 ```

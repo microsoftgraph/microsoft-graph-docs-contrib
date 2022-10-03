@@ -44,7 +44,7 @@ The following table shows the properties that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|topic|String|The title of the chat. This can only be set for a chat with a **chatType** value of `group`. Maximum length is **255** characters. Use of **':'** is not allowed.|
+|topic|String|The title of the chat. This can only be set for a chat with a **chatType** value of `group`. Maximum length is **250** characters. Use of **':'** is not allowed.|
 
 
 ## Response
@@ -59,7 +59,8 @@ If successful, this method returns a `200 OK response` code and the updated **ch
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_chat"
+  "name": "update_chat",
+  "sampleKeys": ["19:1c5b01696d2e4a179c292bc9cf04e63b@thread.v2"]
 }
 -->
 ``` http

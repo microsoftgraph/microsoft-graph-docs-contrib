@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [appConsentRe
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/af330b30-dd59-4482-a848-0fd81b0438ed
+GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/7322e5f3-0f15-4eb8-9e82-2029e8622f5d
 ```
 
 # [C#](#tab/csharp)
@@ -103,13 +103,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests/$entity",
-  "id": "af330b30-dd59-4482-a848-0fd81b0438ed",
-  "appId": "3ca5f23f-94b4-4930-aec9-b8ca0f060e68",
-  "appDisplayName": "Moodle",
-  "consentType": "Dynamic",
-  "pendingScopes": [],
-  "userConsentRequests": []
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests/$entity",
+    "id": "7322e5f3-0f15-4eb8-9e82-2029e8622f5d",
+    "appId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+    "appDisplayName": "Graph Explorer",
+    "consentType": "Dynamic",
+    "pendingScopes": [
+        {
+            "displayName": "AccessReview.Read.All"
+        },
+        {
+            "displayName": "openid"
+        },
+        {
+            "displayName": "profile"
+        },
+        {
+            "displayName": "offline_access"
+        }
+    ],
+    "userConsentRequests@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('7322e5f3-0f15-4eb8-9e82-2029e8622f5d')/userConsentRequests",
+    "userConsentRequests": []
 }
 ```
 

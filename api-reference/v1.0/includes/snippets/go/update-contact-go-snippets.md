@@ -21,7 +21,7 @@ requestBody.SetHomeAddress(homeAddress)
 birthday , err := time.Parse(time.RFC3339, "1974-07-22")
 requestBody.SetBirthday(&birthday) 
 
-graphClient.Me().ContactsById("contact-id").Patch(requestBody)
+result, err := graphClient.Me().ContactsById("contact-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

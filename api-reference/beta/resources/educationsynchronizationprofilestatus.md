@@ -1,6 +1,6 @@
 ---
 title: "educationSynchronizationProfileStatus resource type"
-description: "Represents the synchronization status of a school data synchronization profile. "
+description: "Represents the synchronization status of a school data synchronization profile."
 author: "mmast-msft"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -27,15 +27,17 @@ Represents the synchronization status of a school data [synchronization profile]
 
 | Property                    | Type                           | Description                                                                                                              |
 | :-------------------------- | :----------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| id                          | String                         | The unique identifier for the resource. (read-only)                                                                      |
+| errorCount | Int64                 | Number of errors during synchronization.                                        |
+| id                          | String                         | The unique identifier for the resource. Read-only.                                                                      |
+| lastActivityDateTime | DateTimeOffset                 | Date and time when most recent changes were observed in the profile.                                        |
+| lastSynchronizationDateTime | DateTimeOffset                 | Date and time of the most recent successful synchronization.                                        |
 | status                      | educationSynchronizationStatus | The status of a sync. The possible values are: `paused`, `inProgress`, `success`, `error`, `validationError`, `quarantined`, `unknownFutureValue`, `extracting`, `validating`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `extracting`, `validating`.|
-| lastSynchronizationDateTime | DateTimeOffset                 | Represents the time of the most recent successful  synchronization.                                        |
-| lastActivityDateTime | DateTimeOffset                 | Represents the time when most recent changes were observed in profile.                                        |
-| errorCount | Int                 | Number of errors during synchronization.                                        |
-| statusMessage | String                 | Status message for the current profile's synchronization stage.                                        |
+| statusMessage | String                 | Status message for the synchronization stage of the current profile.                                        |
 
 
 ## JSON representation
+
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -48,11 +50,11 @@ Represents the synchronization status of a school data [synchronization profile]
 ```json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",
+  "errorCount": "Int64",
   "id": "String",
-  "status": { "@odata.type": "microsoft.graph.educationSynchronizationStatus" },
-  "lastSynchronizationDateTime": "DateTimeOffset",
   "lastActivityDateTime": "DateTimeOffset",
-  "errorCount": "Int",
+  "lastSynchronizationDateTime": "DateTimeOffset",
+  "status": { "@odata.type": "microsoft.graph.educationSynchronizationStatus" },
   "statusMessage": "String"
 }
 ```

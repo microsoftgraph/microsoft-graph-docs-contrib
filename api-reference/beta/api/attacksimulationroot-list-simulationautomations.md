@@ -1,7 +1,7 @@
 ---
 title: "List simulationAutomations"
 description: "Get a list of attack simulation automations for a tenant."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | SecurityEvents.Read.All                     |
+| Delegated (work or school account)     | AttackSimulation.Read.All                   |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | SecurityEvents.Read.All                     |
+| Application                            | AttackSimulation.Read.All                   |
 
 ## HTTP request
 
@@ -68,9 +68,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-The following is an example of a request.
-
 ### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {

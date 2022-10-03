@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewCustodian()
 email := "AdeleV@contoso.com"
 requestBody.SetEmail(&email) 
-applyHoldToSources := "true"
+applyHoldToSources := true
 requestBody.SetApplyHoldToSources(&applyHoldToSources) 
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").Custodians().Post(requestBody)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").Custodians().Post(context.Background(), requestBody, nil)
 
 
 ```

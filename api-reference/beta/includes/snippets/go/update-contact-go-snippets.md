@@ -34,7 +34,7 @@ emailAddresses := []graphmodels.Objectable {
 }
 requestBody.SetEmailAddresses(emailAddresses)
 
-graphClient.Me().ContactsById("contact-id").Patch(requestBody)
+result, err := graphClient.Me().ContactsById("contact-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

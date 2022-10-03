@@ -8,10 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewMessage()
-isRead := "true"
+isRead := true
 requestBody.SetIsRead(&isRead) 
 
-graphClient.Me().MessagesById("message-id").Patch(requestBody)
+result, err := graphClient.Me().MessagesById("message-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

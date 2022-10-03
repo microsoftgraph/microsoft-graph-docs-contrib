@@ -14,7 +14,7 @@ servicePrincipalIds := []string {
 }
 requestBody.SetServicePrincipalIds(servicePrincipalIds)
 
-graphClient.IdentityProtection().RiskyServicePrincipals().Dismiss().Post(requestBody)
+graphClient.IdentityProtection().RiskyServicePrincipals().Dismiss().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -36,7 +36,7 @@ teamsTab := graphmodels.NewTeamsTab()
 displayName := "A Pinned Website"
 teamsTab.SetDisplayName(&displayName) 
 configuration := graphmodels.NewTeamsTabConfiguration()
-contentUrl := "https://docs.microsoft.com/microsoftteams/microsoft-teams"
+contentUrl := "https://learn.microsoft.com/microsoftteams/microsoft-teams"
 configuration.SetContentUrl(&contentUrl) 
 teamsTab.SetConfiguration(configuration)
 additionalData := map[string]interface{}{
@@ -152,7 +152,7 @@ discoverySettings.SetShowInTeamsSearchAndSuggestions(&showInTeamsSearchAndSugges
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Teams().Post(requestBody)
+result, err := graphClient.Teams().Post(context.Background(), requestBody, nil)
 
 
 ```

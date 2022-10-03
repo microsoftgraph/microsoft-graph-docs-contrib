@@ -2,7 +2,7 @@
 title: "List history of riskyUser"
 description: "Retrieve the risk history"
 ms.localizationpriority: medium
-author: "cloudhandler"
+author: "ebasseri"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
