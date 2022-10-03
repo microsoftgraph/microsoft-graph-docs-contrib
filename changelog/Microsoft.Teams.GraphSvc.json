@@ -625,7 +625,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "messagePinnedEventMessageDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [messagePinnedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [messagePinnedEventMessageDetail](https://learn.microsoft.com/en-us/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-1.0) resource type.",
           "Target": "messagePinnedEventMessageDetail"
         },
         {
@@ -633,15 +633,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "messageUnpinnedEventMessageDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [messageUnpinnedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [messageUnpinnedEventMessageDetail](https://learn.microsoft.com/en-us/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-1.0) resource type.",
           "Target": "messageUnpinnedEventMessageDetail"
         },
         {
           "Id": "986cb8be-7e9b-49ad-b541-ad5285531a08",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "pinnedMessages",
           "ChangeType": "Addition",
-          "Description": "Added the **pinnedMessages** relationship to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the **pinnedMessages** relationship to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         },
         {
@@ -649,7 +649,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pinnedChatMessageInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [pinnedChatMessageInfo](https://docs.microsoft.com/en-us/graph/api/resources/pinnedChatMessageInfo?view=graph-rest-1.0) resource",
+          "Description": "Added the [pinnedChatMessageInfo](https://learn.microsoft.com/en-us/graph/api/resources/pinnedChatMessageInfo?view=graph-rest-1.0) resource",
           "Target": "pinnedChatMessageInfo"
         }
       ],
