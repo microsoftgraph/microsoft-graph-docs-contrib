@@ -32,7 +32,7 @@ Workflows are containers for the processes involved in managing the life cycle o
 + [Tasks](#workflow-tasks) are specific actions that run automatically when a workflow is triggered.
 + [Execution conditions](#execution-conditions) define the *scope* of "who" and the *trigger* of "when" a workflow will run.
 
-:::image type="content" source="../includes/identitygovernance-workflow-parts.png" alt-text="Parts of a workflow API object.":::
+:::image type="content" source="../../includes/identitygovernance-workflow-parts.png" alt-text="Parts of a workflow API object.":::
 
 To create workflows, use one of the [predefined workflow templates](#workflow-templates), or integrate with Logic Apps to run custom workflows.
 
@@ -52,7 +52,7 @@ Each workflow contains general descriptive information such as it's identifier, 
 
 Workflow tasks are specific actions that run automatically when a workflow is triggered. Lifecycle Workflows defines the following preconfigured and read-only tasks that are allowed for the specified workflow categories. These task definitions show the configuration that's allowed for the task type in your workflow.
 
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/Azure_docs/includes/lifecycle-workflows-tasks-table.md)]
+[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/azure_docs/includes/lifecycle-workflows-tasks-table.md)]
 
 For example, the following JSON object represents the configuration of a built-in task that's identified by taskDefinitionId `1b555e50-7f65-41d5-b514-5894a026d10d`.
 
@@ -81,7 +81,7 @@ For example, the following JSON object represents the configuration of a built-i
 }
 ```
 
-Use the [taskDefinition resource type](identitygovernance-taskdefinition.md) and its associated methods to discover all the predefined tasks that you can configure for your workflow.
+Use the [taskDefinition resource type](identitygovernance-taskdefinition.md) and its associated methods to discover all the predefined tasks that you can configure for your workflow, and the [task](identitygovernance-task.md) resource type and its associated GET methods to view the tasks that are configured for your workflow.
 
 ### Execution conditions
 

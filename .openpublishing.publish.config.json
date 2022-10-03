@@ -48,7 +48,7 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "Azure_docs",
+      "path_to_root": "azure_docs",
       "url": "https://github.com/MicrosoftDocs/azure-docs/",
       "branch": "main",
       "branch_mapping": {}
