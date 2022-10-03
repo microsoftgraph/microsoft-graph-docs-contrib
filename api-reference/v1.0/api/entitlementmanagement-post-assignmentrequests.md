@@ -306,9 +306,6 @@ Content-type: application/json
 The following example shows how a user can request an access package assignment for themselves by answering questions required by the policy while making the request.
 
 #### Request
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_packageID"
@@ -412,8 +409,6 @@ The following example shows how an admin can request updates to an assignment to
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentrequest_from_accesspackageassignmentrequests_packageID"
