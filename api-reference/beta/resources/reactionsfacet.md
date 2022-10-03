@@ -1,6 +1,6 @@
 ---
 title: 'reactionsFacet resource type'
-description: The Reaction resource provides counts of user reactions (likes, comments, and shares).
+description: Provides counts of user reactions (likes, comments, and shares).
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Reaction resource provides counts of user reactions (likes, comments, and shares).
+Provides counts of user reactions (likes, comments, and shares).
 
 ## Properties
 

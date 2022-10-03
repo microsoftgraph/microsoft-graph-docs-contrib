@@ -19,10 +19,10 @@ Represents the position information of the given WebPart to the current page.
 
 | Property            | Type    | Description                                                                              |
 | :------------------ | :------ | :--------------------------------------------------------------------------------------- |
-| columnId            | Double  | Indicate the identifier of the column where the WebPart located in.                      |
-| horizontalSectionId | Double  | Indicate the horizontal section where the WebPart located in.                            |
-| isInVerticalSection | boolean | Indicate whether the WebPart located in the vertical section.                            |
-| webPartIndex        | Double  | Index of the current WebPart. Represents the order of webPart in this column or section. |
+| columnId            | Double  | Indicates the identifier of the column where the webPart located in.                      |
+| horizontalSectionId | Double  | Indicates the horizontal section where the webPart located in.                            |
+| isInVerticalSection | boolean | Indicates whether the webPart located in the vertical section.                            |
+| webPartIndex        | Double  | Index of the current webPart. Represents the order of webPart in this column or section. |
 
 ## Relationships
 

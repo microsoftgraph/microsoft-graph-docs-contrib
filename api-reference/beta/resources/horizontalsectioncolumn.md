@@ -1,6 +1,6 @@
 ---
 title: "horizontalSectionColumn resource type"
-description: Represent a vertical column in a given horizontal section
+description: Represents a vertical column in a given horizontal section
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a vertical column in a given horizontal section.
+Represents a vertical column in a given horizontal section.
 
 Inherits from [entity](../resources/entity.md).
 

@@ -1,6 +1,6 @@
 ---
 title: 'webPart resource type'
-description: Represents a specific WebPart instance on a SharePoint page
+description: Represents a specific webPart instance on a SharePoint page
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a specific WebPart instance on a SharePoint page.
+Represents a specific webPart instance on a SharePoint page.
 
 This is an abstract type.
 

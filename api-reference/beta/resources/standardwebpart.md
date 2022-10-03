@@ -1,6 +1,6 @@
 ---
 title: 'standardWebPart resource type'
-description: Represent a standard WebPart instance on a SharePoint page
+description: Represents a standard webPart instance on a SharePoint page
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a standard WebPart instance on a SharePoint page.
+Represents a standard webPart instance on a SharePoint page.
 
 Inherits from [webPart](../resources/webpart.md).
 
@@ -25,9 +25,9 @@ There is no methods available on this resource.
 
 | Property    | Type                                       | Description                                                                          |
 | :---------- | :----------------------------------------- | :----------------------------------------------------------------------------------- |
-| data        | [webPartData](../resources/webpartdata.md) | Data of the WebPart.                                                                 |
-| id          | String                                     | Instance identifier of the WebPart. Inherited from [entity](../resources/entity.md). |
-| webPartType | String                                     | A Guid which indicates the type of the WebParts                                      |
+| data        | [webPartData](../resources/webpartdata.md) | Data of the webPart.                                                                 |
+| id          | String                                     | Instance identifier of the webPart. Inherited from [entity](../resources/entity.md). |
+| webPartType | String                                     | A Guid which indicates the type of the webParts                                      |
 
 ## Relationships
 

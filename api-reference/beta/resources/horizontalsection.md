@@ -1,6 +1,6 @@
 ---
 title: "horizontalSection resource type"
-description: Represent a horizontal section in a given SharePoint page
+description: Represents a horizontal section in a given SharePoint page
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a horizontal section in a given SharePoint page.
+Represents a horizontal section in a given SharePoint page.
 
 Inherits from [entity](../resources/entity.md).
 

@@ -1,6 +1,6 @@
 ---
 title: "webPartData resource type"
-description: Represent the data of a given WebPart
+description: Represents the data of a given WebPart
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the data of a given WebPart.
+Represents the data of a given WebPart.
 
 ## Properties
 
 | Property               | Type                                                             | Description                                                                                                                                         |
 | :--------------------- | :--------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| audiences              | String collection                                                | Audience information of the WebPart. By using this property, specific content will be prioritized to specific audiences.                            |
-| dataVersion            | String                                                           | Data version of the WebPart. The value is defined by the webPart's developer. Different dataVersion usually refers to different property structure. |
+| audiences              | String collection                                                | Audience information of the webPart. By using this property, specific content will be prioritized to specific audiences.                            |
+| dataVersion            | String                                                           | Data version of the webPart. The value is defined by the webPart's developer. Different dataVersion usually refers to different property structure. |
 | description            | String                                                           | Description of the WebPart.                                                                                                                         |
 | properties             | [Json](../resources/json.md)                                     | Properties bag of the WebPart.                                                                                                                      |
 | serverProcessedContent | [serverProcessedContent](../resources/serverprocessedcontent.md) | Contains collections of data that can be processed by server side services like search index and link fixup.                                        |
