@@ -15,7 +15,7 @@ Microsoft Graph supports [16 built-in tasks](/graph/api/resources/identitygovern
 
 This article, provides guidance on the allowed configuration for the **arguments** property of [tasks](/graph/api/resources/identitygovernance-task) in Lifecycle Workflows.
 
-## Configure arguments of tasks
+## Configure arguments for tasks
 
 | Task description | taskDefinitionId | arguments |
 |--|--|--|
@@ -38,7 +38,7 @@ This article, provides guidance on the allowed configuration for the **arguments
 
 ## Examples
 
-### Example 2: Configure a task based on taskDefinitionId 6f22ddd4-b3a5-47a4-a846-0d7c201a49ce
+### Example 1: Configure a task based on taskDefinitionId 6f22ddd4-b3a5-47a4-a846-0d7c201a49ce
 
 ```http
 {
