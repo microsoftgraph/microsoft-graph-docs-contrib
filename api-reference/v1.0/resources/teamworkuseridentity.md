@@ -22,6 +22,7 @@ Inherits from [identity](../resources/identity.md).
 |displayName|String|Inherited from [identity](../resources/identity.md). Display name of the user. Optional.|
 |id|String|Inherited from [identity](../resources/identity.md). ID of the user. |
 |userIdentityType|teamworkUserIdentityType| Type of user. Possible values are: `aadUser`, `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, `phoneUser`, `unknownFutureValue` and `emailUser`.|
+|tenantId| String | Tenant id of the user. |
 
 ## Relationships
 None.
@@ -38,7 +39,8 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.teamworkUserIdentity",
   "id": "String (identifier)",
   "displayName": "String",
-  "userIdentityType": "String"
+  "userIdentityType": "String",
+  "tenantId": "String"
 }
 ```
 
