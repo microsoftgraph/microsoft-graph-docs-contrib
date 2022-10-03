@@ -325,7 +325,7 @@ items:
               - name: Manage the lifecycle of users
                 items:
                 - name: Configure task arguments
-                  href: identitygovernance-lifecycleworkflows-task-arguments
+                  href: identitygovernance-lifecycleworkflows-task-arguments.md
               - name: Manage access to resources
                 href: tutorial-access-package-api.md
                 displayName: governance, identity
