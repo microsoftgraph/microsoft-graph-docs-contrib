@@ -13425,35 +13425,37 @@ items:
               - name: Get task
                 href: api/identitygovernance-task-get.md
             - name: Reports
+              displayName: Lifecycle Workflows
               items:
               - name: Overview
+                displayName: Lifecycle Workflows reporting
                 href: resources/identitygovernance-lifecycleworkflows-reporting-overview.md
               - name: User processing results
                 href: resources/identitygovernance-userprocessingresult.md
                 items:
-                - name: List
+                - name: List user processing results
                   href: api/identitygovernance-workflow-list-userprocessingresults.md
-                - name: Summary
+                - name: Get summary
                   href: api/identitygovernance-userprocessingresult-summary.md
                 - name: List task processing results
                   href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
               - name: Task reports
                 href: resources/identitygovernance-taskreport.md
                 items:
-                - name: List
+                - name: List task reports
                   href: api/identitygovernance-workflow-list-taskreports.md
-                - name: Summary
+                - name: Get summary
                   href: api/identitygovernance-taskreport-summary.md
                 - name: List task processing results
                   href: api/identitygovernance-taskreport-list-taskprocessingresults.md
               - name: Workflow runs
                 href: resources/identitygovernance-run.md
                 items:
-                - name: List
+                - name: List runs
                   href: api/identitygovernance-workflow-list-runs.md
-                - name: Get
+                - name: Get runs
                   href: api/identitygovernance-run-get.md
-                - name: Summary
+                - name: Get summary
                   href: api/identitygovernance-run-summary.md
                 - name: List user processing results
                   href: api/identitygovernance-run-list-userprocessingresults.md
@@ -14623,7 +14625,7 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Microsoft Defender for Office 365 security reports (preview)
+      - name: Microsoft Defender for Office 365 security reports
         items:
         - name: Attack simulation reports
           displayname: Attack simulation and training
@@ -14853,8 +14855,10 @@ items:
           items:
           - name: Simulation
             href: resources/simulation.md
-          - name: List simulations
+          - name: List
             href: api/attacksimulationroot-list-simulations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulations.md
           - name: List simulation users
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
@@ -14865,6 +14869,8 @@ items:
             href: resources/simulationautomation.md
           - name: List
             href: api/attacksimulationroot-list-simulationautomations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulationautomations.md
         - name: Simulation automation run
           items:
           - name: Simulation automation run
@@ -15831,14 +15837,15 @@ items:
               href: api/call-cancelmediaprocessing.md
             - name: Subscribe to tone
               href: api/call-subscribetotone.md
-          - name: Large gallery view operation (preview)
+          - name: Large gallery view operation
             items:
             - name: Add large gallery view
               href: api/call-addlargegalleryview.md
             - name: Add large gallery view operation
               href: resources/addlargegalleryviewoperation.md
-            - name: Get large gallery view operation status
-              href: api/addlargegalleryviewoperation-get.md
+              items:
+              - name: Get large gallery view operation status
+                href: api/addlargegalleryviewoperation-get.md
           - name: Participant
             href: resources/participant.md
             items:
@@ -16912,13 +16919,15 @@ items:
       - name: Named item
         href: resources/workbooknameditem.md
         items:
-        - name: List named item
+        - name: List
           href: api/nameditem-get.md
-        - name: Get named item
+        - name: Get
           href: api/nameditem-get.md
-        - name: Update named item
+        - name: Update
           href: api/nameditem-update.md
-        - name: Add named item
+        - name: Delete
+          href: api/nameditem-delete.md
+        - name: Add
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md
