@@ -1,6 +1,6 @@
 ---
 title: "Automate employee onboarding tasks before their first day of work using Lifecycle Workflows"
-description: "Tutorial for onboarding users to an organization using Lifecycle Workflows with Microsoft Graph."
+description: "Tutorial for onboarding users to an organization using Lifecycle Workflows APIs in Microsoft Graph."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
