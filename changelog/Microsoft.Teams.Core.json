@@ -5869,6 +5869,38 @@
         {
           "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
           "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Get subscription](https://learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "b200ba73-834e-4dfb-81d2-962c73a1c03c",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Create subscription](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "8392979a-8f83-435d-80ca-610baf39f922",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Update subscription](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "22f3930e-10e0-4945-851a-9527e0da63b0",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [List subscriptions](https://learn.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "2c5c8ba6-d760-4e56-be49-6693561bfa60",
+          "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
           "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Delete subscription](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) method.",
