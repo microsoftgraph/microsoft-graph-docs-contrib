@@ -1,6 +1,6 @@
 ---
 title: "cloudPcExportJob resource type"
-description: "Represent the export job created for downloading reports."
+description: "Represents the export job created for downloading reports."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the export job created for downloading reports.
+Represents the export job created for downloading reports.
 
 ## Methods
 |Method|Return type|Description|
