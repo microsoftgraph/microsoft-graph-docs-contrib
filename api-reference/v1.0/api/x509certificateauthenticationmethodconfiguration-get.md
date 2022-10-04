@@ -59,6 +59,9 @@ If successful, this method returns a `200 OK` response code and a [x509Certifica
   "name": "get_x509certificateauthenticationmethodconfiguration"
 }
 -->
+``` http
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
+```
 
 ### Response
 The following response object shows an x509CertificateAuthenticationMethodConfiguration with its default configuration.
