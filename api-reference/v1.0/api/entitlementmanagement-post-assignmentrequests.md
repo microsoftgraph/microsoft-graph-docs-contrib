@@ -386,7 +386,7 @@ Content-type: application/json
             "value": "MultipleChoiceAnswerValue",
             "answeredQuestion": {
                 "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-                "id": "8fe745e7-80b2-490d-bd22-4e708c77288c",
+                "id": "8fe745e7-80b2-490d-bd22-4e708c77288c"
                 }    
             }
         },
@@ -396,7 +396,7 @@ Content-type: application/json
             "value": "This is my answer to a text input question.",
             "answeredQuestion": {
                 "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-                "id": "7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6",
+                "id": "7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6"
             }
         }
     ]
@@ -487,12 +487,16 @@ Content-type: application/json
             "value": "UpdatedAnswerValue",
             "answeredQuestion": {
                 "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-                "id": "8fe745e7-80b2-490d-bd22-4e708c77288c",             
+                "id": "8fe745e7-80b2-490d-bd22-4e708c77288c"            
         },
         {
             "@odata.type": "#microsoft.graph.accessPackageAnswerString",
             "value": "My updated answer.",
             "displayValue": "This is my updated answer to the question.",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                "id": "7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6"
+            }
         }
     ]
 }
