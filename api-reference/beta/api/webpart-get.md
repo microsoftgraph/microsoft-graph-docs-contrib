@@ -97,3 +97,41 @@ Content-Type: application/json
   }
 }
 ```
+### Request
+
+With `select` statement, you can retrieve selected webpart metadata in a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_webpart"
+}
+-->
+
+```http
+GET /sites/{sitesId}/pages/{sitePageId}/webParts/{webPartId}?select=id
+```
+
+### Response
+
+The following is an example of the response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.webPart"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.textWebPart",
+    "id": "1212fc8d-dd6b-408a-8d5d-9f1cc787efbb"
+  }
+}
+```

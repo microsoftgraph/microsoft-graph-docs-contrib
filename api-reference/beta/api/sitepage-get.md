@@ -121,7 +121,86 @@ Content-type: application/json
   }
 }
 ```
+### Request
 
+With `select` and `expand` statements, you can retrieve sitePage metadata and page content in a single request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_sitePage"
+}
+-->
+
+```http
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}?select=id,title,expand=webparts
+```
+
+### Response
+
+The following is an example of the response
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.sitePage",
+  "id": "65e59907-59d5-44ff-a038-7c0bf3098c01",
+  "title": "Organization Home",
+  "webparts":[{
+      "@odata.type": "#microsoft.graph.textWebPart",
+      "id": "d79d70af-27ea-4208-8dce-23c3bf678664",
+      "innerHtml": "<h2>How do you get started?</h2>"
+    },
+    {
+      "@odata.type": "#microsoft.graph.textWebPart",
+      "id": "6346d908-f20d-4528-902f-3c2a9c8c2442",
+      "webPartType": "d1d91016-032f-456d-98a4-721247c305e8",
+      "data": {
+        "dataVersion": "1.9",
+        "description": "Show an image on your page",
+        "title": "Image",
+        "properties": {
+          "imageSourceType": 2,
+          "altText": "",
+          "overlayText": "",
+          "siteid": "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
+          "webid": "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
+          "listid": "bdb41041-eb06-474e-ac29-87093386bb14",
+          "uniqueid": "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
+          "imgWidth": 4288,
+          "imgHeight": 2848,
+          "fixAspectRatio": false,
+          "captionText": "",
+          "alignment": "Center"
+        },
+        "serverProcessedContent": {
+          "imageSources": [
+            {
+              "key": "imageSource",
+              "value": "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG"
+            }
+          ],
+          "customMetadata": [
+            {
+              "key": "imageSource",
+              "value": {
+                "siteid": "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
+                "webid": "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
+                "listid": "bdb41041-eb06-474e-ac29-87093386bb14",
+                "uniqueid": "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
+                "width": "4288",
+                "height": "2848"
+              }
+            }
+          ]
+        }
+      }
+    }]
+}
+```
 <!--
 {
   "type": "#page.annotation",

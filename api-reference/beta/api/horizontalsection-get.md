@@ -96,3 +96,46 @@ Content-Type: application/json
   }
 }
 ```
+
+### Request
+
+With `select` and `expand` statements, you can retrieve horizontalSection metadata and column information in a single request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_horizontalsection"
+}
+-->
+
+```http
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLayout/horizontalSections/{horizontalSectionId}?select=id,expand=columns
+```
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.horizontalSection"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.horizontalSection",
+    "layout": "twoColumns",
+    "id": "1",
+    "columns":[{
+      "id": "1",
+      "width": 6
+    },{
+      "id": "2",
+      "width": 6
+    }]
+  }
+}
+```

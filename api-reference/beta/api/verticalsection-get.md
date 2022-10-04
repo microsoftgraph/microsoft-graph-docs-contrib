@@ -94,3 +94,43 @@ Content-Type: application/json
   }
 }
 ```
+
+### Request
+
+With `select` and `expand` statements, you can retrieve verticalSection metadata and associated webParts in a single request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_verticalsection"
+}
+-->
+
+```http
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLayout/verticalSection?select=emphasis,expand=webparts
+```
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.verticalSection"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.verticalSection",
+    "emphasis": "neutral",
+    "webparts":[{
+      "@odata.type": "#microsoft.graph.textWebPart",
+      "id": "1212fc8d-dd6b-408a-8d5d-9f1cc787efbb",
+      "innerHtml": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel.</p>"
+    }]
+  }
+}
+```

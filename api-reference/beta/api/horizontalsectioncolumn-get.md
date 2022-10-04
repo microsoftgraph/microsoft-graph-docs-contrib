@@ -95,3 +95,44 @@ Content-Type: application/json
   }
 }
 ```
+
+### Request
+
+With `select` and `expand` statements, you can retrieve horizontalSectionColumn metadata and associated webParts in a single request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_horizontalSectionColumn"
+}
+-->
+
+```http
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}?select=id,expand=webparts
+```
+
+### Response
+
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.horizontalSectionColumn"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.horizontalSectionColumn",
+    "id": "1",
+    "webparts":[{
+      "@odata.type": "#microsoft.graph.textWebPart",
+      "id": "1212fc8d-dd6b-408a-8d5d-9f1cc787efbb",
+      "innerHtml": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel.</p>"
+    }]
+  }
+}
+```
