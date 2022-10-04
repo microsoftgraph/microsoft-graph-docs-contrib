@@ -35,12 +35,11 @@ To consent to the required permissions in Graph Explorer:
     Select **Consent**, and in the pop-up window, choose to **Consent on behalf of your organization** and then select **Accept** to accept the consent of the permissions.
 
    :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
-   
->[!NOTE]
->The response objects shown in this tutorial might be shortened for readability.
 
 > [!NOTE]
-> Review of Privileged Access Groups will only assign active owner(s) as the reviewers. Eligible owners are not included. At least one fallback reviewer is required for a Privileged Access Groups review. If there are no active owner(s) when the review begins, the fallback reviewer(s) will be assigned to the review.
+>The response objects shown in this tutorial might be shortened for readability.
+>
+> Review of Privileged Access Groups will only assign active owners as the reviewers. Eligible owners are not included. At least one fallback reviewer is required for a Privileged Access Groups review. If there are no active owners when the review begins, the fallback reviewers will be assigned to the review.
    
 ## Step 1: Create test users in your tenant
 

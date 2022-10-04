@@ -13,9 +13,6 @@ The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-overview)
 
 The resources to review are configured in the **scope** property of the [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) resource. This property is of the type [accessReviewScope](/graph/api/resources/accessreviewscope), an abstract type that the following API resources that can be used to configure the access review scope inherit from.
 
-> [!NOTE]
-> Review of Privileged Access Groups will only assign active owner(s) as the reviewers. Eligible owners are not included. At least one fallback reviewer is required for a Privileged Access Groups review. If there are no active owner(s) when the review begins, the fallback reviewer(s) will be assigned to the review.
-
 |Resource|Description|Example scenarios|
 |:---    |:---       |:---             |
 |[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|Inherits from **accessReviewScope**. Best applicable when reviewing the full set or subset of principals who have access to a resource or group of related resources.|<ul><li>Membership of users assigned to a group, either direct members or direct and transitive members.</li><li>Guest user access to one group.</li><li>Guest user access to all Microsoft 365 groups in a tenant.</li><li>Service principals assigned to privileged roles.</li><li>User and service principal access to Entitlement Management access packages.</li></ul>|

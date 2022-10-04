@@ -16,7 +16,7 @@ The primary reviewers are configured in the **reviewers** property of the access
 To configure the reviewers and fallback reviewers, set the values of **query**, **queryRoot**, and **queryType** properties of **accessReviewReviewerScope**. For descriptions of these properties, see the [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope) resource type.
 
 > [!NOTE]
-> Review of Privileged Access Groups will only assign active owner(s) as the reviewers. Eligible owners are not included. At least one fallback reviewer is required for a Privileged Access Groups review. If there are no active owner(s) when the review begins, the fallback reviewer(s) will be assigned to the review.
+> Review of Privileged Access Groups will only assign active owners as the reviewers. Eligible owners are not included. At least one fallback reviewer is required for a Privileged Access Groups review. If there are no active owners when the review begins, the fallback reviewers will be assigned to the review.
 
 ## Example 1: A self-review
 
