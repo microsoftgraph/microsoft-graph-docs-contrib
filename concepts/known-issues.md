@@ -416,7 +416,7 @@ The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only
 ### Installation of apps that require resource-specific consent permissions is not supported
 The following API calls do not support installing apps that require [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
 - [Add app to team](/graph/api/team-post-installedapps)
-- [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
+- [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade)
 - [Add app to chat](/graph/api/chat-post-installedapps)
 - [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 
