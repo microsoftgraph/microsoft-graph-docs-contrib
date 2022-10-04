@@ -613,6 +613,14 @@ items:
             href: api/contactmergesuggestions-get.md
           - name: Update
             href: api/contactmergesuggestions-update.md
+        - name: Org control for contact insights (preview)
+          items:
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: List
+            href: api/organizationsettings-list-contactinsights.md
+          - name: Update
+            href: api/insightssettings-update.md
       - name: Photo
         items:
         - name: Profile photo
@@ -11730,6 +11738,14 @@ items:
               href: api/organizationsettings-list-microsoftapplicationdataaccess.md
             - name: Update
               href: api/microsoftapplicationdataaccesssettings-update.md
+          - name: Org control for contact insights (preview)
+            items:
+            - name: Insights settings
+              href: resources/insightssettings.md
+            - name: List
+              href: api/organizationsettings-list-contactinsights.md
+            - name: Update
+              href: api/insightssettings-update.md
           - name: Org control for item insights (preview)
             items:
             - name: Insights settings
@@ -14261,6 +14277,14 @@ items:
           href: api/contactmergesuggestions-get.md
         - name: Update
           href: api/contactmergesuggestions-update.md
+      - name: Org control for contact insights (preview)
+        items:
+        - name: Insights settings
+          href: resources/insightssettings.md
+        - name: List
+          href: api/organizationsettings-list-contactinsights.md
+        - name: Update
+          href: api/insightssettings-update.md
       - name: Extended properties
         items:
         - name: Overview
