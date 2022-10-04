@@ -18,7 +18,7 @@ configuration := &graphconfig.TeamTemplatesRequestBuilderGetRequestConfiguration
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Teamwork().TeamTemplates().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Teamwork().TeamTemplates().Get(context.Background(), configuration)
 
 
 ```

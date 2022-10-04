@@ -23,7 +23,7 @@ timeZone := "Pacific Standard Time"
 dueDateTime.SetTimeZone(&timeZone) 
 requestBody.SetDueDateTime(dueDateTime)
 
-result, err := graphClient.Me().Outlook().TaskFoldersById("outlookTaskFolder-id").Tasks().Post(requestBody)
+result, err := graphClient.Me().Outlook().TaskFoldersById("outlookTaskFolder-id").Tasks().Post(context.Background(), requestBody, nil)
 
 
 ```

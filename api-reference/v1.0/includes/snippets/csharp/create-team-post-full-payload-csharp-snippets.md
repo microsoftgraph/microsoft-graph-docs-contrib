@@ -31,7 +31,7 @@ var team = new Team
 					DisplayName = "A Pinned Website",
 					Configuration = new TeamsTabConfiguration
 					{
-						ContentUrl = "https://docs.microsoft.com/microsoftteams/microsoft-teams"
+						ContentUrl = "https://learn.microsoft.com/microsoftteams/microsoft-teams"
 					},
 					AdditionalData = new Dictionary<string, object>()
 					{

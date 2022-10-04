@@ -48,7 +48,7 @@ requestBody.SetDraftOpenShift(&draftOpenShift)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TeamsById("team-id").Schedule().OpenShiftsById("openShift-id").Put(requestBody)
+graphClient.TeamsById("team-id").Schedule().OpenShiftsById("openShift-id").Put(context.Background(), requestBody, nil)
 
 
 ```

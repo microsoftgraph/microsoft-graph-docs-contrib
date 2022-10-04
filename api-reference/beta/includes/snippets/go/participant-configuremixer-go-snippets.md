@@ -50,7 +50,7 @@ sourceLevels := []graphmodels.Objectable {
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Communications().CallsById("call-id").ParticipantsById("participant-id").Post(requestBody)
+graphClient.Communications().CallsById("call-id").ParticipantsById("participant-id").Post(context.Background(), requestBody, nil)
 
 
 ```

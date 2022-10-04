@@ -11,6 +11,26 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### conditionalAccessExternalTenantsMembershipKind values
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|unknownFutureValue|
+
+### conditionalAccessGuestOrExternalUserTypes values
+
+|Member|
+|:---|
+|none|
+|internalGuest|
+|b2bCollaborationGuest|
+|b2bCollaborationMember|
+|b2bDirectConnectUser|
+|otherExternalUser|
+|serviceProvider|
+|unknownFutureValue|
 
 ### teamTemplateAudience values 
 
@@ -878,10 +898,6 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |none|
-|internal|
-|external|
-|externalPartner|
-|externalNonPartner|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
@@ -895,6 +911,7 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 |adminConfirmedServicePrincipalCompromised|
 |adminDismissedAllRiskForServicePrincipal|
+|m365DAdminDismissedDetection|
 
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
@@ -3109,6 +3126,15 @@ Possible values for user account types (group membership), per Windows definitio
 |terminated|
 |terminating|
 |terminationRequested|
+|unknownFutureValue|
+
+### featureTargetType values 
+
+|Member|
+|:---|
+|group|
+|administrativeUnit|
+|role|
 |unknownFutureValue|
 
 ### longRunningOperationStatus values 

@@ -15,7 +15,7 @@ markImportance := graphmodels.HIGH_IMPORTANCE
 actions.SetMarkImportance(&markImportance) 
 requestBody.SetActions(actions)
 
-graphClient.Me().MailFoldersById("mailFolder-id").MessageRulesById("messageRule-id").Patch(requestBody)
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").MessageRulesById("messageRule-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
