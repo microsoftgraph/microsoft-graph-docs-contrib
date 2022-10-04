@@ -1,5 +1,5 @@
 ---
-title: "List recent shares"
+title: "List recentPrinterShares"
 description: "Get a list of recently used printer shares by the signed-in user."
 author: "mayankbansal018"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-printing"
 doc_type: apiPageType
 ---
 
-# List recent shares
+# List recentPrinterShares
 
 Namespace: microsoft.graph
 
