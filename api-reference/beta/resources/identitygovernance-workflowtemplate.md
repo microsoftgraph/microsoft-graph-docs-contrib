@@ -41,7 +41,7 @@ Inherits from [entity](../resources/entity.md).
 
 Lifecycle Workflows currently provide the following predefined workflow templates:
 
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](../includes/identitygovernance-lifecycleworkflows-tasks.md)]
+[!INCLUDE [identitygovernance-lifecycleworkflows-workflowtemplates](../includes/identitygovernance-lifecycleworkflows-workflowtemplates.md)]
 
 ## Relationships
 
