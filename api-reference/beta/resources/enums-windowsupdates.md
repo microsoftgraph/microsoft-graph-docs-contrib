@@ -84,6 +84,15 @@ Namespace: microsoft.graph.windowsUpdates
 |archived|
 |unknownFutureValue|
 
+### resourceConnectionState values 
+
+|Member|
+|:---|
+|connected|
+|notAuthorized|
+|notFound|
+|unknownFutureValue|
+
 ### safeguardCategory values 
 
 |Member|

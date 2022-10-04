@@ -1,6 +1,6 @@
 ---
 title: "Change notifications for Outlook resources in Microsoft Graph"
-description: "Learn how to get notifications for changes (create, update, and delete) for resources in Outlook using Microsoft Graph APIs"
+description: "Subscribe to changes to Outlook resources (create, update, and delete) and changed resource data in Microsoft Graph APIs and receive notifications via webhooks."
 author: "abheek-das"
 ms.localizationpriority: high
 ms.prod: "outlook"
@@ -9,7 +9,9 @@ ms.custom: scenarios:getting-started
 
 # Change notifications for Outlook resources in Microsoft Graph
 
-The Microsoft Graph API lets you subscribe to changes to a resource - including creation, update, or deletion of the resource - and receive notifications via webhooks. A [subscription](/graph/api/resources/webhooks) specifies the desired types of changes to monitor for a specific resource, and a URL for an endpoint to receive notifications of those changes. Setting up a subscription reduces the overhead to otherwise having to query and compare resources to deduce any changes. You can optionally specify in the subscription request to encrypt and include as part of a notification the resource data that has changed, saving a separate subsequent API call to get the resource payload.
+The Microsoft Graph API lets you subscribe to changes to a resource&mdash;including creation, update, or deletion of the resource&mdash;and receive notifications via webhooks. A [subscription](/graph/api/resources/webhooks) specifies the desired types of changes to monitor for a specific resource, and includes a URL for an endpoint to receive notifications of those changes.
+
+Setting up a subscription reduces the overhead of otherwise having to query and compare resources to deduce any changes. You can optionally specify in the subscription request to encrypt and include as part of a notification the resource data that has changed, saving a separate subsequent API call to get the resource payload.
 
 There is a maximum limit of 1000 active subscriptions for Outlook resources per mailbox for all applications. You can subscribe to changes in contacts, events, or messages in the mailbox.
 
@@ -31,13 +33,13 @@ To [create a subscription](webhooks.md#creating-a-subscription), specify the Out
 
 [!INCLUDE [outlook-subscription-notes](../includes/outlook-subscription-notes.md)]
 
-Depending on the resource, the permission specified in the following table is the least privileged required to call this API.
+Depending on the resource, use the least privileged permission specified in the following table to call this API.
 
 | Resource| Supported Resource Paths| Delegated (work or school account)| Delegated (personal Microsoft account)| Application|
 |:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
 |[contact](/graph/api/resources/contact) | Changes to all personal contacts in a user's mailbox: <br>`/me/contacts`<br>`/users/{id}/contacts`<br>Changes to contacts in a user's contactFolder:<br>`/users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
 |[event](/graph/api/resources/event)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
-|[message](/graph/api/resources/message) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[message](/graph/api/resources/message) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
 
 ### Include resource data in notification payload (preview)
 
@@ -48,7 +50,10 @@ To have resource data included in a change notification, you **must** specify th
 
 - **includeResourceData**: Set this property to `true` to explicitly request resource data.
 - **resource**: This property specifies the resource URL. Make sure to use the `$select` query parameter to explicitly specify the Outlook resource properties to include in the notification payload.
-  > **Note:** Do not include in the URL `$top`, `$skip`, `$orderby`, `$select=Body,UniqueBody`, and `$expand` other than **singleValueExtendedProperties** or **multiValueExtendedProperties**.
+
+  > [!NOTE]
+  > Do not include in the URL `$top`, `$skip`, `$orderby`, `$select=Body,UniqueBody`, and `$expand` other than **singleValueExtendedProperties** or **multiValueExtendedProperties**.
+
 - **encryptionCertificate**: This property contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](webhooks-with-resource-data.md#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId**: This property is your own identifier for the certificate. Use this ID to match in each change notification which certificate to use for decryption.
 
@@ -116,7 +121,7 @@ The following is an example of the payload of a notification with resource data 
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
-The following is an example of a decrypted notification payload. The decrypted payload conforms to the Outlook [message](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) schema. The payload is similar to that returned by a [GET message](/graph/api/message-get?view=graph-rest-beta&preserve-view=true) operation. However, the notification payload contains only those properties specified with a `$select` parameter in the **resource** property of the subscription. Notification payloads for other Outlook resources like [contact](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true) and [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) follow their respective schemas. 
+The following is an example of a decrypted notification payload. The decrypted payload conforms to the Outlook [message](/graph/api/resources/message) schema. The payload is similar to that returned by a [GET message](/graph/api/message-get) operation. However, the notification payload contains only those properties specified with a `$select` parameter in the **resource** property of the subscription. Notification payloads for other Outlook resources like [contact](/graph/api/resources/contact) and [event](/graph/api/resources/event) follow their respective schemas. 
 
 ```json
 {
@@ -143,7 +148,8 @@ Notifications without resource data give you enough information to make GET call
 
 The next example shows the payload of a notification that corresponds to an Outlook **message** resource. It includes the **resource** and **resourceData** properties, which represent the resource that triggered the notification. Use the **resource** and **@odata.id** properties to make calls to Microsoft Graph to get the payload of the resource.
 
-> **Note** GET calls always return the current state of the resource. If the resource is changed between the time the notification is sent and the time the resource is retrieved, the operation returns the state of the resource on retrieval.
+> [!NOTE]
+> GET calls always return the current state of the resource. If the resource is changed between the time the notification is sent and the time the resource is retrieved, the operation returns the state of the resource on retrieval.
 
 
 ```json
@@ -191,8 +197,11 @@ Content-type: application/json
 ```
 
 #### Response
-The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -250,8 +259,11 @@ Content-type: application/json
 ```
 
 #### Response
-The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -309,8 +321,11 @@ Content-type: application/json
 ```
 
 #### Response
-The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

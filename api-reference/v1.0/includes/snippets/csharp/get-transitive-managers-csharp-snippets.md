@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var user = await graphClient.Me
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.Expand("manager($levels=max;$select=id,displayName)")
 	.Select("id,displayName")

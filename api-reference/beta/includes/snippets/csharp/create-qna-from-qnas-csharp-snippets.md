@@ -35,15 +35,11 @@ var qna = new Microsoft.Graph.Search.Qna
 	AvailabilityEndDateTime = DateTimeOffset.Parse("2021-12-31T20:01:37Z"),
 	LanguageTags = new List<String>()
 	{
-		"en-US"
+		"en-us"
 	},
 	Platforms = new List<DevicePlatformType>()
 	{
 		DevicePlatformType.IOS
-	},
-	GroupIds = new List<String>()
-	{
-		"groupId"
 	},
 	State = Microsoft.Graph.Search.AnswerState.Published
 };

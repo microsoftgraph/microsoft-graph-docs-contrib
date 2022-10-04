@@ -86,7 +86,8 @@ const bookingStaffMember = {
                 }
             ]
         }
-    ]
+    ],
+    isEmailNotificationEnabled: false
 };
 
 await client.api('/bookingBusinesses/{id}/staffMembers')

@@ -24,6 +24,7 @@ Specifies class-level assignments settings.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String|Unique identifier for the educationAssignmentSettings.|
 |submissionAnimationDisabled|Boolean|Indicates whether turn-in celebration animation will be shown. A value of `true` indicates that the animation will not be shown. Default value is `false`.|
 
 ## Relationships
@@ -40,6 +41,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
+  "id": "String (identifier)",
   "submissionAnimationDisabled": false
 }
 ```

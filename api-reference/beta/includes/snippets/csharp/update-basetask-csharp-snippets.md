@@ -6,11 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var baseTask = new BaseTask
+var baseTask = new Task
 {
-	Body = new ItemBody
-	{
-	},
+	TextBody = "String",
 	BodyLastModifiedDateTime = DateTimeOffset.Parse("String (timestamp)"),
 	CompletedDateTime = DateTimeOffset.Parse("String (timestamp)"),
 	DueDateTime = new DateTimeTimeZone
@@ -25,7 +23,7 @@ var baseTask = new BaseTask
 	},
 	DisplayName = "String",
 	Status = TaskStatus_v2.NotStarted,
-	PersonalProperties = new PersonalTaskProperties
+	Viewpoint = new TaskViewpoint
 	{
 	}
 };

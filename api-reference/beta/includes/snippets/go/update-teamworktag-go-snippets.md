@@ -7,15 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTeamworkTag()
+requestBody := graphmodels.NewTeamworkTag()
 displayName := "Finance"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.TeamworkTagRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-teamworkTagId := "teamworkTag-id"
-result, err := graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Patch(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.TeamsById("team-id").TagsById("teamworkTag-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

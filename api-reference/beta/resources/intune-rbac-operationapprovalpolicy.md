@@ -25,7 +25,7 @@ Operation Approval Policy
 |[Create operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-create.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|Create a new [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) object.|
 |[Delete operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-delete.md)|None|Deletes a [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md).|
 |[Update operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-update.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|Update the properties of a [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) object.|
-|[getOperationsAllowedApproval function](../api/intune-rbac-operationapprovalpolicy-getoperationsallowedapproval.md)|[operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md) collection|Not yet documented|
+|[getApprovableOperations function](../api/intune-rbac-operationapprovalpolicy-getapprovableoperations.md)|[operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md) collection|Not yet documented|
 |[getOperationsRequiringApproval function](../api/intune-rbac-operationapprovalpolicy-getoperationsrequiringapproval.md)|[operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md) collection|Not yet documented|
 
 ## Properties
@@ -62,6 +62,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

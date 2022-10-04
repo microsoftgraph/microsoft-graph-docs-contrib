@@ -15,11 +15,11 @@ var educationAssignment = new EducationAssignment
 		ContentType = BodyType.Text,
 		Content = "Read chapter 4"
 	},
-	Grading = new EducationAssignmentPointsGradeType
+	Grading = new EducationAssignmentGradeType
 	{
 		MaxPoints = 50f
 	},
-	AssignTo = new EducationAssignmentClassRecipient
+	AssignTo = new EducationAssignmentGradeType
 	{
 	},
 	Status = EducationAssignmentStatus.Draft,

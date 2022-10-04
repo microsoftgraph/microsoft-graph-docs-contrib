@@ -19,9 +19,10 @@ Represents an entity that is being invited to a group call.
 
 | Property                           | Type                          | Description                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | String                        | The type of endpoint. Possible values are: `default`, `voicemail`. |
+| endpointType                       | endpointType                        | The type of endpoint. Possible values are: `default`, `voicemail`, `skypeForBusiness`, `skypeForBusinessVoipPhone` and `unknownFutureValue`. |
 | identity                           | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this invitation.                   |
-| replacesCallId                     | String                        | Optional. The call which the target idenity is currently a part of. This call will be dropped once the participant is added. |
+| participantId                      | String                        | Optional. The ID of the target participant.                                          |
+| replacesCallId                     | String                        | Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully. |
 
 ## JSON representation
 
@@ -37,8 +38,9 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "endpointType": "default | voicemail",
+  "endpointType": "String",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
+  "participantId": "String",  
   "replacesCallId": "String"
 }
 ```

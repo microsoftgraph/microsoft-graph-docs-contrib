@@ -27,16 +27,10 @@ $params = @{
 	)
 	TargetedVariations = @(
 		@{
-			LanguageTag = "es-ES"
+			LanguageTag = "es-es"
 			DisplayName = "Sitio de instalación Contoso"
 			Description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
 		}
-	)
-	GroupIds = @(
-		"groupId"
-	)
-	PowerAppIds = @(
-		"powerAppId"
 	)
 	State = "published"
 }

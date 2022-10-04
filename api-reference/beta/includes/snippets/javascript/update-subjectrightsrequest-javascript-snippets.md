@@ -11,8 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const subjectRightsRequest = {
-  '@odata.type': '#microsoft.graph.subjectRightsRequest',
-  internalDueDateTime: '2021-08-30T00:00:00Z'
+    '@odata.type': '#microsoft.graph.subjectRightsRequest',
+    internalDueDateTime: '2021-08-30T00:00:00Z'
 };
 
 await client.api('/privacy/subjectRightsRequests/{subjectRightsRequestId}')

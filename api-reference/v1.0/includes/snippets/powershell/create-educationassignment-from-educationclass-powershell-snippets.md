@@ -14,11 +14,11 @@ $params = @{
 		Content = "Read chapter 4"
 	}
 	Grading = @{
-		"@odata.type" = "#microsoft.graph.educationAssignmentPointsGradeType"
+		"@odata.type" = "#microsoft.graph.educationAssignmentGradeType"
 		MaxPoints = 
 	}
 	AssignTo = @{
-		"@odata.type" = "#microsoft.graph.educationAssignmentClassRecipient"
+		"@odata.type" = "#microsoft.graph.educationAssignmentGradeType"
 	}
 	Status = "draft"
 	AllowStudentsToAddResourcesToSubmission = $true

@@ -7,7 +7,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "searchAnswer",
                     "ChangeType": "Addition",
-                    "Description": "Added the [searchAnswer](https://docs.microsoft.com/en-us/graph/api/resources/searchAnswer?view=graph-rest-beta) resource type",
+                    "Description": "Added the [searchAnswer](https://learn.microsoft.com/en-us/graph/api/resources/search-searchAnswer?view=graph-rest-beta) resource type",
                     "Target": "searchAnswer"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "bookmark",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bookmark](https://docs.microsoft.com/en-us/graph/api/resources/bookmark?view=graph-rest-beta) resource type and supported methods.",
+                    "Description": "Added the [bookmark](https://learn.microsoft.com/en-us/graph/api/resources/search-bookmark?view=graph-rest-beta) resource type and supported methods.",
                     "Target": "bookmark"
                 },
                 {
@@ -23,7 +23,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "qna",
                     "ChangeType": "Addition",
-                    "Description": "Added the [qna](https://docs.microsoft.com/en-us/graph/api/resources/qna?view=graph-rest-beta) resource type and supported methods.",
+                    "Description": "Added the [qna](https://learn.microsoft.com/en-us/graph/api/resources/search-qna?view=graph-rest-beta) resource type and supported methods.",
                     "Target": "qna"
                 },
                 {
@@ -31,7 +31,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "acronym",
                     "ChangeType": "Addition",
-                    "Description": "Added the [acronym](https://docs.microsoft.com/en-us/graph/api/resources/acronym?view=graph-rest-beta) resource type and supported methods.",
+                    "Description": "Added the [acronym](https://learn.microsoft.com/en-us/graph/api/resources/search-acronym?view=graph-rest-beta) resource type and supported methods.",
                     "Target": "acronym"
                 },
                 {
@@ -39,7 +39,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "answerVariant",
                     "ChangeType": "Addition",
-                    "Description": "Added the [answerVariant](https://docs.microsoft.com/en-us/graph/api/resources/answerVariant?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [answerVariant](https://learn.microsoft.com/en-us/graph/api/resources/search-answerVariant?view=graph-rest-beta) resource type.",
                     "Target": "answerVariant"
                 },
                 {
@@ -47,7 +47,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "answerKeyword",
                     "ChangeType": "Addition",
-                    "Description": "Added the [answerKeyword](https://docs.microsoft.com/en-us/graph/api/resources/answerKeyword?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [answerKeyword](https://learn.microsoft.com/en-us/graph/api/resources/search-answerKeyword?view=graph-rest-beta) resource type.",
                     "Target": "answerKeyword"
                 },
                 {

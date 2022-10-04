@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var groups = await graphClient.Groups
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.Filter("mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'")
 	.Select("id,membershipRule,membershipRuleProcessingState")

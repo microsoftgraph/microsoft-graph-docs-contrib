@@ -7,16 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAttributeSet()
+requestBody := graphmodels.NewAttributeSet()
 description := "Attributes for engineering team"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 maxAttributesPerSet := int32(20)
-requestBody.SetMaxAttributesPerSet(&maxAttributesPerSet)
-options := &msgraphsdk.AttributeSetRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-attributeSetId := "attributeSet-id"
-result, err := graphClient.Directory().AttributeSetsById(&attributeSetId).Patch(options)
+requestBody.SetMaxAttributesPerSet(&maxAttributesPerSet) 
+
+result, err := graphClient.Directory().AttributeSetsById("attributeSet-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

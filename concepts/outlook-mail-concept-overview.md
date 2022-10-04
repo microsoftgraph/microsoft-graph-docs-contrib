@@ -1,6 +1,6 @@
 ---
 title: "Outlook mail API overview"
-description: "Outlook is a messaging communication hub in Microsoft 365. It also lets you manage contacts, schedule meetings, find information about users in an organization,"
+description: "Use the Outlook mail API in Microsoft Graph to manage contacts, schedule meetings, initiate online conversations, share files, and collaborate in groups."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
 ms.prod: "outlook"
@@ -56,7 +56,7 @@ Use Microsoft Graph to suggest contextual data to your app users:
 
 Often times apps have to store their data in an external data store and entail overhead in managing and accessing the data. Microsoft Graph lets you simply include app data as Internet message headers when [creating](/graph/api/user-post-messages#example-2-create-message-draft-that-includes-custom-message-headers) or [sending](/graph/api/user-sendmail#example-2-create-a-message-with-custom-internet-message-headers-and-send-the-message) a new message, or a reply to a message.
 
-If you need to add and subsequently update custom data, you can [store the data in individual resource instances](extensibility-overview.md#open-extensions). If appropriate, as an alternative, you can extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility-overview.md#schema-extensions) discoverable and shareable.
+If you need to add and subsequently update custom data, you can [store the data in individual resource instances](extensibility-overview.md#4-open-extensions). If appropriate, as an alternative, you can extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility-overview.md#3-schema-extensions) discoverable and shareable.
 
 ## Where is the data?
 

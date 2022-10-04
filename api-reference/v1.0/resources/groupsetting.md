@@ -1,7 +1,7 @@
 ---
 title: "groupSetting resource type"
 description: "Group settings define the configurations that can be used to customize the tenant-wide and object-specific restrictions and allowed behavior. For examples, you can block word lists for group display names or define whether guest users are allowed to be group owners."
-author: "Jordanndahl"
+author: "psaffaie"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: resourcePageType
@@ -22,22 +22,22 @@ Group settings apply to only Microsoft 365 groups.
 
 ## Methods
 
-| Method | Return Type | Description |
-|:---------------|:--------|:----------|
-|[Create setting](../api/group-post-settings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a **groupSettingTemplate**.|
-|[Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
-|[List settings](../api/group-list-settings.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
-|[Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Update groupsetting object. |
-|[Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
+| Method                                          | Return Type                                | Description                                                  |
+| :---------------------------------------------- | :----------------------------------------- | :----------------------------------------------------------- |
+| [Create setting](../api/group-post-settings.md) | [groupSetting](groupsetting.md)            | Create a setting object based on a **groupSettingTemplate**. |
+| [Get setting](../api/groupsetting-get.md)       | [groupSetting](groupsetting.md)            | Read properties of a specific setting object.                |
+| [List settings](../api/group-list-settings.md)  | [groupSetting](groupsetting.md) collection | List properties of all setting objects.                      |
+| [Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md)            | Update groupsetting object.                                  |
+| [Delete setting](../api/groupsetting-delete.md) | None                                       | Delete a setting object.                                     |
 
 ## Properties
 
-| Property | Type | Description |
-|:---------------|:--------|:----------|
-|displayName|String| Display name of this group of settings, which comes from the associated template. |
-|id|String| Unique identifier for these settings. Read-only. |
-|templateId|String| Unique identifier for the tenant-level [groupSettingTemplates](groupsettingtemplate.md) object that's been customized for this group-level settings object. Read-only. |
-|values|[settingValue](settingvalue.md) collection| Collection of name-value pairs corresponding to the **name** and **defaultValue** properties in the referenced [groupSettingTemplates](groupsettingtemplate.md) object. |
+| Property    | Type                                       | Description                                                                                                                                                             |
+| :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName | String                                     | Display name of this group of settings, which comes from the associated template.                                                                                       |
+| id          | String                                     | Unique identifier for these settings. Read-only.                                                                                                                        |
+| templateId  | String                                     | Unique identifier for the tenant-level [groupSettingTemplates](groupsettingtemplate.md) object that's been customized for this group-level settings object. Read-only.  |
+| values      | [settingValue](settingvalue.md) collection | Collection of name-value pairs corresponding to the **name** and **defaultValue** properties in the referenced [groupSettingTemplates](groupsettingtemplate.md) object. |
 
 ## Relationships
 
@@ -61,10 +61,9 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "id": "String (identifier)",
   "templateId": "String",
-  "values": [{"@odata.type": "microsoft.graph.settingValue"}]
+  "values": [{ "@odata.type": "microsoft.graph.settingValue" }]
 }
 ```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -75,4 +74,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -7,22 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewTiIndicator()
-additionalInformation := "additionalInformation-after-update"
-requestBody.SetAdditionalInformation(&additionalInformation)
-confidence := int32(42)
-requestBody.SetConfidence(&confidence)
-description := "description-after-update"
-requestBody.SetDescription(&description)
 headers := map[string]string{
-	"Prefer": "return=representation"
+	"Prefer": "return=representation",
 }
-options := &msgraphsdk.TiIndicatorRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
+configuration := &graphconfig.TiIndicatorRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
 }
-tiIndicatorId := "tiIndicator-id"
-result, err := graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
+requestBody := graphmodels.NewTiIndicator()
+additionalInformation := "additionalInformation-after-update"
+requestBody.SetAdditionalInformation(&additionalInformation) 
+confidence := int32(42)
+requestBody.SetConfidence(&confidence) 
+description := "description-after-update"
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.Security().TiIndicatorsById("tiIndicator-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

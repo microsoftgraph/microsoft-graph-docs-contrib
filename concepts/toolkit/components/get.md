@@ -2,7 +2,7 @@
 title: "Get component in the Microsoft Graph Toolkit"
 description: "A Get component allows you to make any GET query from Microsoft Graph directly in your HTML."
 ms.localizationpriority: medium
-author: nmetulev
+author: sebastienlevert
 ---
 
 # Get component in the Microsoft Graph Toolkit

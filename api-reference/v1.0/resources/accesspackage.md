@@ -40,6 +40,7 @@ Each access package is referenced by a single access package catalog, and has li
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Read-only. Nullable.|
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Read-only. Nullable.|
 
 ## JSON representation

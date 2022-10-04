@@ -1,6 +1,6 @@
 ---
 title: "Create bookingAppointment"
-description: "Create a new bookingAppointment for the specified bookingbusiness."
+description: "Create a new bookingAppointment for the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -12,14 +12,19 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingBusiness](../resources/bookingbusiness.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
+
+> [!NOTE]
+> If you create a custom app using application permissions, you must follow the [Business rules validation](/graph/bookingsbusiness-business-rules).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -27,7 +32,9 @@ One of the following permissions is required to call this API. To learn more, in
 POST /solutions/bookingBusinesses/{id}/appointments
 
 ```
+
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {code}. Required.|
@@ -43,14 +50,18 @@ If the maximum number of customers (**maximumAttedeesCount**) allowed in the [se
 - Pass valid customer IDs when you create or update the appointment. If the customer ID is not valid, that customer won't be included in the appointment object.
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [bookingAppointment](../resources/bookingappointment.md) object in the response body.
 
 ## Example
+
 ### Request
+
 The following is an example of the request. This appointment does not involve booking specific staff members.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments
@@ -180,6 +191,7 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -322,5 +334,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

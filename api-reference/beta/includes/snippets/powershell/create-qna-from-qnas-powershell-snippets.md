@@ -30,13 +30,10 @@ $params = @{
 	AvailabilityStartDateTime = [System.DateTime]::Parse("2020-09-21T20:01:37Z")
 	AvailabilityEndDateTime = [System.DateTime]::Parse("2021-12-31T20:01:37Z")
 	LanguageTags = @(
-		"en-US"
+		"en-us"
 	)
 	Platforms = @(
 		"ios"
-	)
-	GroupIds = @(
-		"groupId"
 	)
 	State = "published"
 }

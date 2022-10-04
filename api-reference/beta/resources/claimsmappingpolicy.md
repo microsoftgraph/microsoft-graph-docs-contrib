@@ -21,7 +21,7 @@ Represents the claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Co
 
 The number of claims and transformations that can be added to a claims-mapping policy are limited to reduce token size. Any claims schema entries or transformations that are encountered after the limit has been reached are ignored and included in the issued token. For more information about the limits, see [Properties of a claims-mapping policy definition](#properties-of-a-claims-mapping-policy-definition)
 
-For more scenario and configuration details see [How to: Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).
+For more scenario and configuration details, see [Claims mapping policy type](/azure/active-directory/develop/reference-claims-mapping-policy-type) and [How to: Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).
 
 Inherits from [stsPolicy](stsPolicy.md).
 
@@ -46,7 +46,6 @@ Inherits from [stsPolicy](stsPolicy.md).
 |:-------------|:------------|:------------|
 |id|String| Unique identifier for this policy. Read-only.|
 |definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. See below for more details about the JSON schema for this property. Required.|
-|description|String| Description for this policy.|
 |displayName|String| Display name for this policy. Required.|
 |isOrganizationDefault|Boolean|Ignore this property. The claims-mapping policy can only be applied to service principals and can't be set globally for the organization.|
 
@@ -113,7 +112,6 @@ The following is a JSON representation of the resource.
 ```json
 {
   "definition": ["String"],
-  "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
   "isOrganizationDefault": false,

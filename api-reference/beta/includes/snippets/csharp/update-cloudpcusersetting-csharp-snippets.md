@@ -12,7 +12,7 @@ var cloudPcUserSetting = new CloudPcUserSetting
 	SelfServiceEnabled = true,
 	RestorePointSetting = new CloudPcRestorePointSetting
 	{
-		FrequencyInHours = "16",
+		FrequencyInHours = 16,
 		UserRestoreEnabled = true
 	},
 	LocalAdminEnabled = false

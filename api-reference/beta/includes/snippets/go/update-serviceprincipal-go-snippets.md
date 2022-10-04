@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewServicePrincipal()
+requestBody := graphmodels.NewServicePrincipal()
 appRoleAssignmentRequired := true
-requestBody.SetAppRoleAssignmentRequired(&appRoleAssignmentRequired)
-options := &msgraphsdk.ServicePrincipalRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Patch(options)
+requestBody.SetAppRoleAssignmentRequired(&appRoleAssignmentRequired) 
+
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

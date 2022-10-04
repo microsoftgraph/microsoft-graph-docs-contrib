@@ -12,8 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphBaseTask *baseTask = [[MSGraphBaseTask alloc] init];
-MSGraphItemBody *body = [[MSGraphItemBody alloc] init];
-[baseTask setBody:body];
+[baseTask setTextBody:@"String"];
 [baseTask setBodyLastModifiedDateTime:@"String (timestamp)"];
 [baseTask setCompletedDateTime:@"String (timestamp)"];
 MSGraphDateTimeTimeZone *dueDateTime = [[MSGraphDateTimeTimeZone alloc] init];
@@ -25,8 +24,8 @@ MSGraphPatternedRecurrence *recurrence = [[MSGraphPatternedRecurrence alloc] ini
 [baseTask setRecurrence:recurrence];
 [baseTask setDisplayName:@"String"];
 [baseTask setStatus: [MSGraphTaskStatus_v2 notStarted]];
-MSGraphPersonalTaskProperties *personalProperties = [[MSGraphPersonalTaskProperties alloc] init];
-[baseTask setPersonalProperties:personalProperties];
+MSGraphTaskViewpoint *viewpoint = [[MSGraphTaskViewpoint alloc] init];
+[baseTask setViewpoint:viewpoint];
 
 NSError *error;
 NSData *baseTaskData = [baseTask getSerializedDataWithError:&error];

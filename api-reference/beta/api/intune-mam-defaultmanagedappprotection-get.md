@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5846
+Content-Length: 6243
 
 {
   "value": {
@@ -119,6 +119,7 @@ Content-Length: 5846
     "managedBrowser": "microsoftEdge",
     "maximumAllowedDeviceThreatLevel": "secured",
     "mobileThreatDefenseRemediationAction": "wipe",
+    "mobileThreatDefensePartnerPriority": "thirdPartyPartnerOverDefender",
     "blockDataIngestionIntoOrganizationDocuments": true,
     "allowedDataIngestionLocations": [
       "sharePoint"
@@ -190,10 +191,17 @@ Content-Length: 5846
     "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
     "deviceLockRequired": true,
     "appActionIfDeviceLockNotSet": "wipe",
-    "connectToVpnOnLaunch": true
+    "connectToVpnOnLaunch": true,
+    "appActionIfDevicePasscodeComplexityLessThanLow": "wipe",
+    "appActionIfDevicePasscodeComplexityLessThanMedium": "wipe",
+    "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe",
+    "requireClass3Biometrics": true,
+    "requirePinAfterBiometricChange": true,
+    "fingerprintAndBiometricEnabled": true
   }
 }
 ```
+
 
 
 

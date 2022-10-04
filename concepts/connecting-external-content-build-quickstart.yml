@@ -15,36 +15,36 @@ items:
   - title: Build your first custom Microsoft Graph connector
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](connecting-external-content-build-quickstart-01-intro.md)]
+      [!INCLUDE [](includes/connecting-external-content-build-quickstart-01-intro.md)]
   - title: Register the application in the portal
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](connecting-external-content-build-quickstart-02-register-app.md)]
+      [!INCLUDE [](includes/connecting-external-content-build-quickstart-02-register-app.md)]
   - title: Build the application
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](connecting-external-content-build-quickstart-03-build-app.md)]
+      [!INCLUDE [](includes/connecting-external-content-build-quickstart-03-build-app.md)]
   - title: Configure the application
     durationInMinutes: 20
     content: |
-      [!INCLUDE [](connecting-external-content-build-quickstart-04-configure-app.md)]
+      [!INCLUDE [](includes/connecting-external-content-build-quickstart-04-configure-app.md)]
   - title: Create the database from CSV
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](connecting-external-content-build-quickstart-05-create-db.md)]
+      [!INCLUDE [](includes/connecting-external-content-build-quickstart-05-create-db.md)]
   - title: Run the application
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](connecting-external-content-build-quickstart-06-run-app.md)]
+      [!INCLUDE [](includes/connecting-external-content-build-quickstart-06-run-app.md)]
   - title: Surface the data in search
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](connecting-external-content-build-quickstart-07-surface-data.md)]
+      [!INCLUDE [](includes/connecting-external-content-build-quickstart-07-surface-data.md)]
   - title: Search for results
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](connecting-external-content-build-quickstart-08-search-results.md)]
+      [!INCLUDE [](includes/connecting-external-content-build-quickstart-08-search-results.md)]
   - title: Summary
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](connecting-external-content-build-quickstart-09-summary.md)]
+      [!INCLUDE [](includes/connecting-external-content-build-quickstart-09-summary.md)]

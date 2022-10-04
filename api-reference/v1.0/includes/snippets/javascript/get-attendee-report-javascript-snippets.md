@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let stream = await client.api('/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport')
-	.version('beta')
 	.get();
 
 ```

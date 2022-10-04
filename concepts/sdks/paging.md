@@ -124,7 +124,7 @@ while(messagesPage != null) {
 import (
     msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
     "github.com/microsoftgraph/msgraph-sdk-go/me/messages"
-    "github.com/microsoftgraph/msgraph-sdk-go/models/microsoft/graph"
+    "github.com/microsoftgraph/msgraph-sdk-go/models"
 )
 
 query := messages.MessagesRequestBuilderGetQueryParameters{
@@ -132,27 +132,24 @@ query := messages.MessagesRequestBuilderGetQueryParameters{
 }
 
 options := messages.MessagesRequestBuilderGetOptions{
-    H: map[string]string{
+    Headers: map[string]string{
         "Prefer": "outlook.body-content-type=\"text\"",
     },
-    Q: &query,
+    QueryParameters: &query,
 }
 
 result, err := client.Me().Messages().Get(&options)
 
 // Initialize iterator
-pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase,
-    func() serialization.Parsable {
-        return messages.NewMessagesResponse()
-    })
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter, models.CreateMessageCollectionResponseFromDiscriminatorValue)
 
 // Any custom headers sent in original request should also be added
 // to the iterator
-pageIterator.SetHeaders(options.H)
+pageIterator.SetHeaders(options.Headers)
 
 // Iterate over all pages
 iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
-    message := pageItem.(graph.Message)
+    message := pageItem.(models.Messageable)
     fmt.Printf("%s\n", *message.GetSubject())
     // Return true to continue the iteration
     return true
@@ -254,7 +251,7 @@ while (!pageIterator.isComplete()) {
 import (
     msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
     "github.com/microsoftgraph/msgraph-sdk-go/me/messages"
-    "github.com/microsoftgraph/msgraph-sdk-go/models/microsoft/graph"
+    "github.com/microsoftgraph/msgraph-sdk-go/models"
 )
 
 query := messages.MessagesRequestBuilderGetQueryParameters{
@@ -262,30 +259,27 @@ query := messages.MessagesRequestBuilderGetQueryParameters{
 }
 
 options := messages.MessagesRequestBuilderGetOptions{
-    H: map[string]string{
+    Headers: map[string]string{
         "Prefer": "outlook.body-content-type=\"text\"",
     },
-    Q: &query,
+    QueryParameters: &query,
 }
 
 result, err := client.Me().Messages().Get(&options)
 
 // Initialize iterator
-pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase,
-    func() serialization.Parsable {
-        return messages.NewMessagesResponse()
-    })
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter, models.CreateMessageCollectionResponseFromDiscriminatorValue)
 
 // Any custom headers sent in original request should also be added
 // to the iterator
-pageIterator.SetHeaders(options.H)
+pageIterator.SetHeaders(options.Headers)
 
 // Pause iterating after 25
 var count, pauseAfter = 0, 25
 
 // Iterate over all pages
 iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
-    message := pageItem.(graph.Message)
+    message := pageItem.(models.Messageable)
     count++
     fmt.Printf("%d: %s\n", count, *message.GetSubject())
     // Once count = 25, this returns false,
@@ -300,7 +294,7 @@ fmt.Printf("Resuming iteration...\n")
 
 // Resume iteration
 iterateErr = pageIterator.Iterate(func(pageItem interface{}) bool {
-    message := pageItem.(graph.Message)
+    message := pageItem.(models.Message)
     count++
     fmt.Printf("%d: %s\n", count, *message.GetSubject())
     // Return true to continue the iteration

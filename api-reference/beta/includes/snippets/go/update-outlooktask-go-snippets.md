@@ -7,22 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewOutlookTask()
-dueDateTime := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetDueDateTime(dueDateTime)
-dateTime := "2016-05-06T16:00:00"
-dueDateTime.SetDateTime(&dateTime)
-timeZone := "Eastern Standard Time"
-dueDateTime.SetTimeZone(&timeZone)
 headers := map[string]string{
-	"Prefer": "outlook.timezone="Eastern Standard Time""
+	"Prefer": "outlook.timezone=\"Eastern Standard Time\"",
 }
-options := &msgraphsdk.OutlookTaskRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
+configuration := &graphconfig.OutlookTaskRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
 }
-outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Patch(options)
+requestBody := graphmodels.NewOutlookTask()
+dueDateTime := graphmodels.NewDateTimeTimeZone()
+dateTime := "2016-05-06T16:00:00"
+dueDateTime.SetDateTime(&dateTime) 
+timeZone := "Eastern Standard Time"
+dueDateTime.SetTimeZone(&timeZone) 
+requestBody.SetDueDateTime(dueDateTime)
+
+result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

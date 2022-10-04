@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1002
+Content-Length: 1060
 
 {
   "value": [
@@ -71,6 +71,7 @@ Content-Length: 1002
       "partnerState": "available",
       "androidMobileApplicationManagementEnabled": true,
       "iosMobileApplicationManagementEnabled": true,
+      "windowsMobileApplicationManagementEnabled": true,
       "androidEnabled": true,
       "iosEnabled": true,
       "windowsEnabled": true,
@@ -88,6 +89,7 @@ Content-Length: 1002
   ]
 }
 ```
+
 
 
 

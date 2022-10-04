@@ -7,15 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewCustodian()
-applyHoldToSources := "false"
-requestBody.SetApplyHoldToSources(&applyHoldToSources)
-options := &msgraphsdk.CustodianRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-caseId := "case-id"
-custodianId := "custodian-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).Patch(options)
+requestBody := graphmodels.NewCustodian()
+applyHoldToSources := false
+requestBody.SetApplyHoldToSources(&applyHoldToSources) 
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").CustodiansById("custodian-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

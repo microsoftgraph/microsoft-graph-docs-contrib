@@ -24,7 +24,7 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 |[List services](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [bookingbusiness](../resources/bookingbusiness.md).|
 |[Create bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [bookingbusiness](../resources/bookingbusiness.md). |
 |[Get bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md).|
-|[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)	|Update a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[Update](../api/bookingservice-update.md) | None	|Update a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
 |[Delete](../api/bookingservice-delete.md) | None |Delete a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
 
 ## Properties
@@ -40,8 +40,10 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
 |id|String|The ID of that service, in a GUID format. Read-only.|
+|isAnonymousJoinEnabled|Boolean|`True` if an anonymousJoinWebUrl(webrtcUrl) will be generated for the appointment booked for this service.
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
 |isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
+|languageTag|String|The language of the self service booking page.
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service. If **maximumAttendeesCount** of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.  To create a customer, use the [Create bookingCustomer](../api/bookingbusiness-post-customers.md) operation.  |
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
@@ -78,6 +80,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
+  "languageTag": "String",
   "isHiddenFromCustomers": true,
   "isLocationOnline": "Boolean",
   "notes": "String",
@@ -92,6 +95,7 @@ The following is a JSON representation of the resource.
     }
   ],
   "maximumAttendeesCount": "Integer",
+  "isAnonymousJoinEnabled": "Boolean",
   "webUrl": "String"
 }
 

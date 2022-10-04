@@ -1,7 +1,7 @@
 ---
 title: "attackSimulationRoot resource type"
-description: "Provides tenants capability to launch a realistic phishing attacks and learn from it."
-author: "Gopal-MSFT"
+description: "Represents an abstract type that provides the ability to launch a realistic phishing attack that organizations can learn from."
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
@@ -13,13 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides tenants capability to launch a realistic phishing attacks and learn from it.
-This is an abstract type.
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get the simulation resources from the simulations navigation property.|
+|[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
+|[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
 
 ## Properties
 None.
@@ -27,7 +25,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|simulations|[simulation](../resources/simulation.md) collection|Represent attack simulation and training campaign of a tenant.|
+|simulationAutomations|[simulationAutomation](../resources/simulationautomation.md) collection|Represents simulation automation created to run on a tenant.|
+|simulations|[simulation](../resources/simulation.md) collection|Represents an attack simulation training campaign in a tenant.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -43,4 +42,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.attackSimulationRoot"
 }
 ```
-

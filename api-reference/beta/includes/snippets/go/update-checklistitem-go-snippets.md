@@ -10,13 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewChecklistItem()
 displayName := "buy cake"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ChecklistItemRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 baseTaskListId := "baseTaskList-id"
 baseTaskId := "baseTask-id"
 checklistItemId := "checklistItem-id"
-result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).ChecklistItemsById(&checklistItemId).Patch(options)
+graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).ChecklistItemsById(&checklistItemId).Patch(requestBody)
 
 
 ```

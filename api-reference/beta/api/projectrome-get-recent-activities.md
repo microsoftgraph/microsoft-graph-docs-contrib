@@ -87,7 +87,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.activity)"
+  "@odata.type": "microsoft.graph.activity",
+  "isCollection": true
 } -->
 
 ```http

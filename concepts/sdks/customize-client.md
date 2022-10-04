@@ -13,7 +13,7 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 
 ```csharp
 // using Azure.Identity;
-// https://docs.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
 var interactiveCredential = new InteractiveBrowserCredential(...);
 
 var authProvider = new TokenCredentialAuthProvider(
@@ -145,8 +145,8 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ```go
 import (
-    a "github.com/microsoft/kiota/authentication/go/azure"
-    khttp "github.com/microsoft/kiota/http/go/nethttp"
+    a "github.com/microsoft/kiota-authentication-azure-go"
+    khttp "github.com/microsoft/kiota-http-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
     core "github.com/microsoftgraph/msgraph-sdk-go-core"
 )
@@ -159,7 +159,7 @@ defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefault
 
 // Get instance of custom middleware
 // Implement a custom middleware by implementing the Middleware interface
-// https://github.com/microsoft/kiota/blob/main/http/go/nethttp/middleware.go
+// https://github.com/microsoft/kiota-http-go/blob/main/middleware.go
 allMiddleware := append(defaultMiddleware, mycustom.NewCustomHandler())
 
 // Create an HTTP client with the middleware
