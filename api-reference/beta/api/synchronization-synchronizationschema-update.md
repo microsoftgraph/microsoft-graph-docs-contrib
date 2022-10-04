@@ -47,10 +47,10 @@ If successful, returns a `204 No Content` response code. It does not return anyt
 
 ## Example
 
-##### Request
-The following is an example of a request.
+### Example 1: Update the directories and synchronizationRules of a synchronization schema
 
->**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
+#### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,8 +123,82 @@ Content-type: application/json
 ---
 
 
-##### Response
-The following is an example of a response.
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+
+### Example 2: Update the directories and synchronizationRules of a synchronization schema and configure the containers
+
+#### Request
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_synchronizationschema_containerFilterConfig"
+}-->
+```http
+PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+Content-type: application/json
+
+{
+    "directories": [
+        {
+            "name": "Azure Active Directory",
+            "objects": [
+                {
+                    "name": "User",
+                    "attributes": [
+                        {
+                            "name": "userPrincipalName",
+                            "type": "string"
+                        }
+                    ]
+                },
+            ]
+        },
+        {
+            "name": "Active Directory",
+        }
+    ],
+    "synchronizationRules": [
+        {
+            "containerFilterConfig”: {
+                “inclusionList”: [
+                    “OU=In-Scope OU 1,DC=contoso,DC=com”,
+                    “OU=In-Scope OU 2,DC=contoso,DC=com”,
+                ],
+            },
+            "groupFilterConfig”: {
+                “inclusionList”: [],
+            },
+            "name": "AD2AADProvisioning",
+            "sourceDirectoryName": "Active Directory",
+            "targetDirectoryName": "Azure Active Directory",
+            "objectMappings": [
+                {
+                    "name": "Provision Active Directory users",
+                    "sourceObjectName": "user",
+                    "targetObjectName": "User",
+                    "attributeMappings": [
+                        {
+                            "source": {},
+                            "targetAttributeName": "DisplayName"
+                        },
+                    ]
+                }
+            ]
+        }
+    ]
+}
+```
+
+
+#### Response
 <!-- {
   "blockType": "response"
 } -->
