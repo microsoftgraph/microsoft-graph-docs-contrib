@@ -56,11 +56,13 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_x509certificateauthenticationmethodconfiguration"
 }
 -->
+``` http
+DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
+```
 
 ### Response
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 }
 -->
 ``` http
