@@ -13,7 +13,7 @@ displayName := "Conf Room 2"
 location.SetDisplayName(&displayName) 
 requestBody.SetLocation(location)
 
-graphClient.GroupsById("group-id").Calendar().EventsById("event-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.GroupsById("group-id").Calendar().EventsById("event-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

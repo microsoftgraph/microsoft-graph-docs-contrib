@@ -17,9 +17,10 @@ An abstract base class that contains the optional features for a call.
 
 ## Properties
 
-|Property                 |Type                      |Description                                                                        |
-|:---                     |:---                      |:---                                                                               |
-|isContentSharingNotificationEnabled   |Boolean                   |Indicates whether content sharing notifications should be enabled for the call.    |
+|Property                              |Type                      |Description                                                                        |
+|:---                                  |:---                      |:---                                                                               |
+| hideBotAfterEscalation               | Boolean                  | Indicates whether to hide the app after the call is escalated.                    |
+| isContentSharingNotificationEnabled  | Boolean                  | Indicates whether content sharing notifications should be enabled for the call.   |
 
 ## JSON representation
 
@@ -32,6 +33,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.callOptions",
+  "hideBotAfterEscalation": "Boolean",
   "isContentSharingNotificationEnabled": "Boolean"
 }
 ```

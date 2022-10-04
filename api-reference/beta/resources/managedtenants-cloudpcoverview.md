@@ -40,8 +40,10 @@ Represents an overview of cloud PCs for a given managed tenant.
 |numberOfCloudPcStatusUnknown|Int32|The number of cloud PCs that have a status of `unknown`. Optional. Read-only.|
 |numberOfCloudPcStatusUpgrading|Int32|The number of cloud PCs that have a status of `upgrading`. Optional. Read-only.|
 |tenantDisplayName|String|The display name for the managed tenant. Optional. Read-only.|
+|totalBusinessLicenses|Int32|The total number of cloud PC devices that have the `Business` SKU. Optional. Read-only.|
 |totalCloudPcConnectionStatus|Int32|The total number of cloud PC connection statuses for the given managed tenant. Optional. Read-only.|
 |totalCloudPcStatus|Int32|The total number of cloud PC statues for the given managed tenant. Optional. Read-only.|
+|totalEnterpriseLicenses|Int32|The total number of cloud PC devices that have the `Enterprise` SKU. Optional. Read-only.|
 
 ## Relationships
 None.
@@ -60,22 +62,24 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedTenants.cloudPcOverview",
   "id": "String (identifier)",
-  "tenantDisplayName": "String",
-  "totalCloudPcStatus": "Integer",
-  "numberOfCloudPcStatusNotProvisioned": "Integer",
-  "numberOfCloudPcStatusProvisioning": "Integer",
-  "numberOfCloudPcStatusProvisioned": "Integer",
-  "numberOfCloudPcStatusUpgrading": "Integer",
-  "numberOfCloudPcStatusInGracePeriod": "Integer",
-  "numberOfCloudPcStatusDeprovisioning": "Integer",
-  "numberOfCloudPcStatusFailed": "Integer",
-  "numberOfCloudPcStatusUnknown": "Integer",
-  "totalCloudPcConnectionStatus": "Integer",
+  "lastRefreshedDateTime": "String (timestamp)",
+  "numberOfCloudPcConnectionStatusFailed": "Integer",
+  "numberOfCloudPcConnectionStatusPassed": "Integer",
   "numberOfCloudPcConnectionStatusPending": "Integer",
   "numberOfCloudPcConnectionStatusRunning": "Integer",
-  "numberOfCloudPcConnectionStatusPassed": "Integer",
-  "numberOfCloudPcConnectionStatusFailed": "Integer",
   "numberOfCloudPcConnectionStatusUnkownFutureValue": "Integer",
-  "lastRefreshedDateTime": "String (timestamp)"
+  "numberOfCloudPcStatusDeprovisioning": "Integer",
+  "numberOfCloudPcStatusFailed": "Integer",
+  "numberOfCloudPcStatusInGracePeriod": "Integer",
+  "numberOfCloudPcStatusNotProvisioned": "Integer",
+  "numberOfCloudPcStatusProvisioned": "Integer",
+  "numberOfCloudPcStatusProvisioning": "Integer",
+  "numberOfCloudPcStatusUnknown": "Integer",
+  "numberOfCloudPcStatusUpgrading": "Integer",
+  "tenantDisplayName": "String",
+  "totalBusinessLicenses": "Integer",
+  "totalCloudPcConnectionStatus": "Integer",
+  "totalCloudPcStatus": "Integer",
+  "totalEnterpriseLicenses": "Integer"
 }
 ```

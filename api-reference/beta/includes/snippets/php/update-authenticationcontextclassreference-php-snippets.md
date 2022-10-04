@@ -20,7 +20,7 @@ $requestBody->setIsAvailable(true);
 
 
 
-$graphServiceClient->identity()->conditionalAccess()->authenticationContextClassReferencesById('authenticationContextClassReference-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identity()->conditionalAccess()->authenticationContextClassReferencesById('authenticationContextClassReference-id')->patch($requestBody);
 
 
 ```
