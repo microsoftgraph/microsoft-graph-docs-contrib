@@ -617,48 +617,6 @@
       "CreatedDateTime": "2022-07-18T11:01:30.771Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "986cb8be-7e9b-49ad-b541-ad5285531a08",
-          "ApiChange": "Resource",
-          "ChangedApiName": "messagePinnedEventMessageDetail",
-          "ChangeType": "Addition",
-          "Description": "Added the [messagePinnedEventMessageDetail](https://learn.microsoft.com/en-us/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-1.0) resource type.",
-          "Target": "messagePinnedEventMessageDetail"
-        },
-        {
-          "Id": "986cb8be-7e9b-49ad-b541-ad5285531a08",
-          "ApiChange": "Resource",
-          "ChangedApiName": "messageUnpinnedEventMessageDetail",
-          "ChangeType": "Addition",
-          "Description": "Added the [messageUnpinnedEventMessageDetail](https://learn.microsoft.com/en-us/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-1.0) resource type.",
-          "Target": "messageUnpinnedEventMessageDetail"
-        },
-        {
-          "Id": "986cb8be-7e9b-49ad-b541-ad5285531a08",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "pinnedMessages",
-          "ChangeType": "Addition",
-          "Description": "Added the **pinnedMessages** relationship to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
-          "Target": "chat"
-        },
-        {
-          "Id": "986cb8be-7e9b-49ad-b541-ad5285531a08",
-          "ApiChange": "Resource",
-          "ChangedApiName": "pinnedChatMessageInfo",
-          "ChangeType": "Addition",
-          "Description": "Added the [pinnedChatMessageInfo](https://learn.microsoft.com/en-us/graph/api/resources/pinnedChatMessageInfo?view=graph-rest-1.0) resource",
-          "Target": "pinnedChatMessageInfo"
-        }
-      ],
-      "Id": "986cb8be-7e9b-49ad-b541-ad5285531a08",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2022-10-02T07:47:36.3210338Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": "Microsoft.Teams.Shifts"
     }
   ]
 }
