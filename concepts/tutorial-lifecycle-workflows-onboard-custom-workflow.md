@@ -1,36 +1,38 @@
 ---
-title: "Automate employee onboarding tasks before their first day of work using Lifecycle Workflows"
-description: "Tutorial for onboarding users to an organization using Lifecycle Workflows APIs in Microsoft Graph."
+title: "Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs"
+description: "Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs in Microsoft Graph."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 
-# Automate employee onboarding tasks before their first day of work using Lifecycle Workflows
+# Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs
 
-This tutorial provides a step-by-step guide on how to automate pre-hire tasks with Lifecycle Workflows using Microsoft Graph. 
+This tutorial provides a step-by-step guide on how to automate pre-hire tasks with Lifecycle Workflows using Microsoft Graph.
 
-This pre-hire scenario will generate a temporary password for our new employee and send it via email to the user's new manager.
+This pre-hire scenario will generate a temporary password for the new employee and send it via email to the user's new manager.
 
 :::image type="content" source="images/tutorial-lifecycle-workflows/arch-2.png" alt-text="Screenshot of the Lifecycle Workflows scenario." lightbox="media/tutorial-lifecycle-workflows/arch-2.png":::
 
 ## Prerequisites
 
-Two accounts are required for the tutorial, one account for the new hire and another account that acts as the manager of the new hire. The new hire account must have the following attributes set:
-- **employeeHireDate** must be set to today.
-- **department** must be set to `sales`.
-- The **manager** relationship must be configured, and the manager account should have a mailbox to receive an email.
-- The [Temporary Access Pass (TAP) policy](/azure/active-directory/authentication/howto-authentication-temporary-access-pass#enable-the-temporary-access-pass-policy) must also be enabled in the tenant and the new user enabled to use the authentication method.
+To complete this tutorial, you need the following resources and privileges:
 
-Detailed breakdown of the relevant attributes:
++ A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator or Lifecycle Administrator role.
++ Grant yourself the following `LifecycleWorkflows.ReadWrite.All` delegated permission.
++ You must have two user accounts to use for this tutorial, one for the new hire and another for their manager.
 
- | Attribute | Description |Set on|
- |:--- |:---:|-----|
- |mail|Used to notify manager of the new employees temporary access pass|Both|
- |manager|This attribute that is used by the lifecycle workflow|Employee|
- |employeeHireDate|Used to trigger the workflow|Both|
- |department|Used to provide the scope for the workflow|Both|
+    | User property | Description |Set on|
+    |:--- |:---:|-----|
+    |mail|Used to notify manager of the new employee's temporary access pass (TAP). Both the manager and employee should have active mailboxes to receive emails.|Employee, Manager|
+    |manager|This attribute that is used by the lifecycle workflow.|Employee|
+    |employeeHireDate|Used to trigger the workflow. Set to today's date.|Employee|
+    |department|Used to provide the scope for the workflow. Set to `Sales`.|Employee, Manager|
 
++ You must enable the [Temporary Access Pass (TAP) policy](/azure/active-directory/authentication/howto-authentication-temporary-access-pass#enable-the-temporary-access-pass-policy) in your tenant and the new user enabled to use the authentication method. For more information, see [temporaryAccessPassAuthenticationMethodConfiguration resource type](/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration).
+
+<!--
 The pre-hire scenario can be broken down into the following:
   - **Prerequisite:** Create two user accounts, one to represent an employee and one to represent a manager
   - **Prerequisite:** Edit the manager attribute for this scenario using Microsoft Graph Explorer
@@ -38,25 +40,24 @@ The pre-hire scenario can be broken down into the following:
   - Creating the lifecycle management workflow
   - Triggering the workflow
   - Verifying the workflow was successfully executed
+-->
 
-## Create a pre-hire workflow using Graph API
+## Create a "joiner" workflow
 
-Now that the pre-hire workflow attributes have been updated and correctly populated, a pre-hire workflow can then be created to generate a Temporary Access Pass (TAP) and send it via email to a user's manager. Before introducing the API call to create this workflow, you may want to review some of the parameters that are required for this workflow creation.
+### Request
 
-|Parameter  |Description  |
-|---------|---------|
-|category     |  A string that identifies the category of the workflow. String is "joiner", "mover", or "leaver and can support multiple strings. Category of workflow must also contain the category of its tasks. For full task definitions, see: [Lifecycle workflow tasks and definitions](lifecycle-workflow-tasks.md)    |
-|displayName     |  A unique string that identifies the workflow.       |
-|description     |  A string that describes the purpose of the workflow for administrative use. (Optional)       |
-|isEnabled     |   A boolean value that denotes whether the workflow is set to run or not.  If set to “true" then the workflow will run.      |
-|isSchedulingEnabled     |   A Boolean value that denotes whether scheduling is enabled or not. Unlike isEnbaled, a workflow can still be run on demand if this value is set to false.      |
-|executionConditions     |    An argument that contains: <br><br> A time-based attribute and an integer parameter defining when a workflow will run between -60 and 60 <br><br>a scope attribute defining who the workflow runs for.     |
-|tasks    |  An argument in a workflow that has a unique displayName and a description. <br><br> It defines the specific tasks to be executed in the workflow. The specified task is outlined by the taskDefinitionID and its parameters.  For a list of supported tasks, and their corresponding IDs, see [Supported Task Definitions](lifecycle-workflow-tasks.md).      |
+The following request creates a pre-hire workflow with the following settings:
 
-The following POST API call will create a pre-hire workflow that will generate a TAP and send it via email to the user's manager.
++ It can be run on-demand but not on schedule.
++ The workflow runs two days before the employee's employeeHireDate, and if they are in the "Sales" department.
++ Only one task runs in this workflow: to generate the TAP and send it to the new hire's manager.
 
- ```http
- POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_lifecycle_workflows_joineronboarding_create_workflow"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows
 Content-type: application/json
 
 {
@@ -68,7 +69,7 @@ Content-type: application/json
        "@odata.type": "microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
         "scope": {
             "@odata.type": "microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-            "rule": "(department eq 'sales')"
+            "rule": "(department eq 'Sales')"
         },
         "trigger": {
             "@odata.type": "microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
@@ -98,68 +99,253 @@ Content-type: application/json
 } 
 ```
 
-## Run the workflow 
-Now that the workflow is created, it will automatically run the workflow every 3 hours. Lifecycle workflows will check every 3 hours for users in the associated execution condition and execute the configured tasks for those users.  However, for the tutorial, we would like to run it immediately. To run a workflow immediately, we can use the on-demand feature.
+### Response
 
->[!NOTE]
->Be aware that you currently cannot run a workflow on-demand if it is set to disabled.  You need to set the workflow to enabled to use the on-demand feature.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workflow"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
 
-To run a workflow on-demand for users using the GRAPH API do the following steps:
-
-1.  Open [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Make sure the top is still set to **POST**, and **beta** and `https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/<id>/activate` is in the box.  Change `<id>` to the ID of workflows. 
- 3. Copy the code below in to the **Request body** 
- 4. Replace `<userid>` in the code below with the value of the user's ID.
- 5. Select **Run query**
-   ```json
- {
-   "subjects":[
-      {"id":"<userid>"}
-      
-   ]
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+    "category": "joiner",
+    "description": "Configure pre-hire tasks for onboarding employees before their first day",
+    "displayName": "Onboard pre-hire employee",
+    "lastModifiedDateTime": "2022-10-04T07:45:14.3410141Z",
+    "createdDateTime": "2022-10-04T07:45:14.3410017Z",
+    "deletedDateTime": null,
+    "id": "ea71190c-075a-4ae7-9bca-34abf3b7b056",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
+    "nextScheduleRunDateTime": null,
+    "version": 1,
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(department eq 'Sales')"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeHireDate",
+            "offsetInDays": -2
+        }
+    }
 }
+```
 
+## Run the workflow
+
+### Request
+
+Because the workflow hasn't been scheduled to run, it must be run manually. In the following request, the user for whom the workflow will run is identified by ID `8930f0c7-cdd7-4885-9260-3b4a8111de5c`.
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_lifecycle_workflows_joineronboarding_run_workflow"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/activate
+
+{
+    "subjects": [
+        {
+            "id": "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
+        }
+    ]
+}
+```
+
+### Response
+
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
 ```
 
 ## Check tasks and workflow status
 
-At any time, you may monitor the status of the workflows and the tasks. As a reminder, there are three different data pivots, users runs, and tasks which are currently available in public preview. You may learn more in the how-to guide [Check the status of a workflow (preview)](check-status-workflow.md). In the course of this tutorial, we will look at the status using the user focused reports.
+At any time, you can monitor the status of the workflows and the tasks at three levels.
 
-To begin, you will just need the ID of the workflow and the date range for which you want to see the summary of the status. You may obtain the workflow ID from the response code of the POST API call that was used to create the workflow.
+### Request
 
-This example will show you how to list the userProcessingResults for the last 7 days.
+The following request retrieves the summary of tasks run at the user level.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_lifecycle_workflows_joineronboarding_list_userProcessingResults"
+}-->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/<workflow id>/userProcessingResults
-```
-Furthermore, it is possible to get a summary of the userProcessingResults to get a quicker overview of large amounts of data, but for this a time span must be specified.
-
-```http
-GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/<workflow id>/userProcessingResults/summary(startDateTime=2022-05-01T00:00:00Z,endDateTime=2022-05-30T00:00:00Z)
-```
-You may also check the full details about the tasks of a given userProcessingResults. You will need to provide the workflow ID of the workflow, as well as the userProcessingResult ID. You may obtain the userProcessingResult ID from the response of the userProcessingResults GET call above.
-
-```http
-GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/<workflow_id>/userProcessingResults/<userProcessingResult_id>/taskProcessingResults
+GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/userProcessingResults
 ```
 
-## Enable the workflow schedule
+### Response
 
-After running your workflow on-demand and checking that everything is working fine, you may want to enable the workflow schedule. To enable the workflow schedule, you may run the following PATCH call.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userProcessingResult"
+} -->
 ```http
-PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/<id> 
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('ea71190c-075a-4ae7-9bca-34abf3b7b056')/userProcessingResults",
+    "value": [
+        {
+            "id": "5772d894-3bcf-4d1c-9cfc-8c182331215b",
+            "completedDateTime": "2022-10-04T08:07:23.2591226Z",
+            "failedTasksCount": 0,
+            "processingStatus": "completed",
+            "scheduledDateTime": "2022-10-04T08:07:03.8706523Z",
+            "startedDateTime": "2022-10-04T08:07:09.4670969Z",
+            "totalTasksCount": 1,
+            "totalUnprocessedTasksCount": 0,
+            "workflowExecutionType": "onDemand",
+            "workflowVersion": 1,
+            "subject": {
+                "id": "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
+            }
+        }
+    ]
+}
+```
+
+### Request
+
+You can request the aggregate high-level summary of the user-level results for a workflow, within a specified period.
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_lifecycle_workflows_joineronboarding_list_userProcessingResults.summary"
+}-->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/userProcessingResults/summary(startDateTime=2022-10-01T00:00:00Z,endDateTime=2022-10-30T00:00:00Z)
+```
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userSummary"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.userSummary",
+    "failedTasks": 0,
+    "failedUsers": 0,
+    "successfulUsers": 1,
+    "totalTasks": 1,
+    "totalUsers": 1
+}
+```
+
+
+### Request
+
+You can also retrieve the detailed log of all tasks that were executed for a specific user in the workflow.
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_lifecycle_workflows_joineronboarding_list_taskProcessingResults"
+}-->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056/userProcessingResults/5772d894-3bcf-4d1c-9cfc-8c182331215b/taskProcessingResults
+```
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.taskProcessingResult"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('ea71190c-075a-4ae7-9bca-34abf3b7b056')/userProcessingResults('5772d894-3bcf-4d1c-9cfc-8c182331215b')/taskProcessingResults",
+    "value": [
+        {
+            "completedDateTime": "2022-10-04T08:07:15.9906441Z",
+            "createdDateTime": "2022-10-04T08:07:09.8072395Z",
+            "id": "227c85e4-7b84-461f-8df5-c347c2435eb2",
+            "processingStatus": "completed",
+            "startedDateTime": "2022-10-04T08:07:11.1595421Z",
+            "failureReason": null,
+            "subject": {
+                "id": "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
+            },
+            "task": {
+                "category": "joiner",
+                "continueOnError": false,
+                "description": "Generate Temporary Access Pass and send via email to user's manager",
+                "displayName": "Generate TAP And Send Email",
+                "executionSequence": 1,
+                "id": "8b9b47c0-957b-4a52-8f2d-816e59c40fd2",
+                "isEnabled": true,
+                "taskDefinitionId": "1b555e50-7f65-41d5-b514-5894a026d10d",
+                "arguments": [
+                    {
+                        "name": "tapLifetimeMinutes",
+                        "value": "480"
+                    },
+                    {
+                        "name": "tapIsUsableOnce",
+                        "value": "true"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
+## [Optional] Schedule the workflow to run automatically
+
+After running your workflow on-demand and checking that everything is working fine, you may want to enable the workflow so that it can run automatically on a tenant-defined schedule. To enable the workflow schedule, you may run the following request.
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_lifecycle_workflows_joineronboarding_update_workflow"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056
 Content-type: application/json
 
 {
-   "displayName":"Onboard pre-hire employee",
-   "description":"Configure pre-hire tasks for onboarding employees before their first day",
-   "isEnabled": true,
-   "isSchedulingEnabled": true
+    "isEnabled": true,
+    "isSchedulingEnabled": true
 }
-
 ```
 
-## Next steps
-- [Preparing user accounts for Lifecycle workflows (preview)](tutorial-prepare-azure-ad-user-accounts.md)
+When a workflow is scheduled, Lifecycle Workflows will check every three hours for users in the associated execution condition and execute the configured tasks for those users. You can customize this recurrence from between one hour to 24 hours.
+
+### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+
+## See also
+
 - [Automate employee onboarding tasks before their first day of work with Azure portal (preview)](tutorial-onboard-custom-workflow-portal.md)
+- [Overview of Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
+- [Overview of reporting in Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)

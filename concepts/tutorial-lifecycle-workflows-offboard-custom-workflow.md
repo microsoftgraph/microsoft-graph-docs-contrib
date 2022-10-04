@@ -1,35 +1,29 @@
 ---
-title: Execute employee offboarding tasks in real-time on their last day of work with Microsoft Graph
-description: Execute employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs in Microsoft Graph. 
-author: AlexFilipin
+title: "Execute employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs"
+description: "Execute employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs in Microsoft Graph."
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
-doc_type: conceptualPageType
 ---
 
-# Automate employee offboarding tasks in real-time on their last day of work
+# Execute employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs
 
-This tutorial provides a step-by-step guide on how to execute a real-time employee termination with Lifecycle workflows using the GRAPH API.
+This tutorial provides a step-by-step guide on how to execute a real-time employee termination with Lifecycle Workflows using Microsoft Graph.
 
-This off-boarding scenario will run a workflow on-demand and accomplish the following tasks:
+This post off-boarding scenario will run a workflow on-demand and accomplish the following tasks:
 
-1. Remove user from all groups
+1. Remove all licenses for user
 2. Remove user from all Teams
 3. Delete user account
 
-You may learn more about running a workflow on-demand [here](on-demand-workflow.md).
+## Prerequisites
 
-##  Before you begin
+To complete this tutorial, you need the following resources and privileges:
 
-As part of the prerequisites for completing this tutorial, you will need an account that has group and Teams memberships that can be deleted during the tutorial. For more comprehensive instructions on how to complete these prerequisite steps, you may refer to the [Preparing user accounts for Lifecycle workflows tutorial](tutorial-prepare-azure-ad-user-accounts.md).
-
-The leaver scenario can be broken down into the following:
--	**Prerequisite:** Create a user account that represents an employee leaving your organization
--	**Prerequisite:** Prepare the user account with groups and Teams memberships
--	Create the lifecycle management workflow
--	Run the workflow on-demand
--	Verify that the workflow was successfully executed
-
++ A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Lifecycle Administrator or Global Administrator Azure AD role.
++ Grant yourself the following `LifecycleWorkflows.ReadWrite.All` delegated permission.
++ Create a test user account that you'll use to represent an employee leaving your organization. This test user account will be deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
 
 ## Create a leaver workflow on-demand using Graph API
 
@@ -47,57 +41,21 @@ Before introducing the API call to create this workflow, you may want to review 
 
 For the purpose of this tutorial, there are three tasks that will be introduced in this workflow:
 
-### Remove user from all groups task
+## Create a "leaver" workflow
 
-```Example
-"tasks":[
-       {
-            "continueOnError": true,
-            "displayName": "Remove user from all groups",
-            "description": "Remove user from all Azure AD groups memberships",
-            "isEnabled": true,
-            "taskDefinitionId": "b3a31406-2a15-4c9a-b25b-a658fa5f07fc",
-            "arguments": []
-        }
-   ]
-```
+### Request
 
-> [!NOTE]
-> The task does not support removing users from Privileged Access Groups, Dynamic Groups, and synchronized Groups.
+The following request creates an offboarding workflow with the following settings:
 
-### Remove user from all Teams task
++ It can be run on-demand but not on schedule.
++ The workflow doesn't include execution conditions. Execution conditions, even when defined, are bypassed for workflows that are run on-demand.
++ Three workflow tasks are enabled to run in sequence: the user is removed from all groups, then removed from all teams, then their user account is deleted.
 
-```Example
-"tasks":[
-       {
-            "continueOnError": true,
-            "description": "Remove user from all Teams",
-            "displayName": "Remove user from all Teams memberships",
-            "isEnabled": true,
-            "taskDefinitionId": "81f7b200-2816-4b3b-8c5d-dc556f07b024",
-            "arguments": []
-        }
-   ]
-```
-### Delete user task
-
-```Example
-"tasks":[
-       {
-            "continueOnError": true,
-            "displayName": "Delete user account",
-            "description": "Delete user account in Azure AD",
-            "isEnabled": true,
-            "taskDefinitionId": "8d18588d-9ad3-4c0f-99d0-ec215f0e3dff",
-            "arguments": []
-        }
-   ]
-```
-### Leaver workflow on-demand
-
-The following POST API call will create a leaver workflow that can be executed on-demand for real-time employee terminations.
-
- ```http
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_lifecycle_workflows_leaverondemand_create_workflow"
+}-->
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows
 Content-type: application/json
 
@@ -142,52 +100,247 @@ Content-type: application/json
 }
 ```
 
-## Run the workflow 
+### Response
 
-Now that the workflow is created, it will automatically run the workflow every 3 hours. Lifecycle workflows will check every 3 hours for users in the associated execution condition and execute the configured tasks for those users.  However, for the tutorial, we would like to run it immediately. To run a workflow immediately, we can use the on-demand feature.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workflow"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
 
->[!NOTE]
->Be aware that you currently cannot run a workflow on-demand if it is set to disabled.  You need to set the workflow to enabled to use the on-demand feature.
-
-To run a workflow on-demand for users using the GRAPH API do the following steps:
-
-1.  Open [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Make sure the top is still set to **POST**, and **beta** and `https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/<id>/activate` is in the box.  Change `<id>` to the ID of workflows. 
- 3. Copy the code below in to the **Request body** 
- 4. Replace `<userid>` in the code below with the value of the user's ID.
- 5. Select **Run query**
-   ```json
- {
-   "subjects":[
-      {"id":"<userid>"}
-      
-   ]
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+    "category": "leaver",
+    "description": "Execute real-time termination tasks for employees on their last day of work",
+    "displayName": "Real-time employee termination",
+    "lastModifiedDateTime": "2022-10-04T08:33:01.0619748Z",
+    "createdDateTime": "2022-10-04T08:33:01.0619653Z",
+    "deletedDateTime": null,
+    "id": "368dfba3-2303-4e02-b258-87d742187e1b",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
+    "nextScheduleRunDateTime": null,
+    "version": 1,
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.onDemandExecutionOnly"
+    }
 }
+```
 
+## Run the workflow
+
+### Request
+
+In the following request, the user for whom the workflow will run is identified by ID `8930f0c7-cdd7-4885-9260-3b4a8111de5c`.
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_lifecycle_workflows_leaverondemand_run_workflow"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/368dfba3-2303-4e02-b258-87d742187e1b/activate
+
+{
+    "subjects": [
+        {
+            "id": "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
+        }
+    ]
+}
+```
+
+### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
 ```
 
 ## Check tasks and workflow status
 
-At any time, you may monitor the status of the workflows and the tasks. As a reminder, there are three different data pivots, users runs, and tasks which are currently available in public preview. You may learn more in the how-to guide [Check the status of a workflow (preview)](check-status-workflow.md). In the course of this tutorial, we will look at the status using the user focused reports.
+At any time, you can monitor the status of the workflows and the tasks at three levels.
 
-To begin, you will just need the ID of the workflow and the date range for which you want to see the summary of the status. You may obtain the workflow ID from the response code of the POST API call that was used to create the workflow.
+### Request
 
-This example will show you how to list the userProcessingResults for the last 7 days.
+The following request retrieves the summary of tasks run at the user level.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_lifecycle_workflows_leaverondemand_list_userProcessingResults"
+}-->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/<workflow_id>/userProcessingResults
+GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/368dfba3-2303-4e02-b258-87d742187e1b/userProcessingResults
 ```
-Furthermore, it is possible to get a summary of the userProcessingResults to get a quicker overview of large amounts of data, but for this a time span must be specified.
 
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userProcessingResult"
+} -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/<workflow id>/userProcessingResults/summary(startDateTime=2022-05-01T00:00:00Z,endDateTime=2022-05-30T00:00:00Z)
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('368dfba3-2303-4e02-b258-87d742187e1b')/userProcessingResults",
+    "value": [
+        {
+            "id": "bc5b9d36-55fb-4036-8551-582668a6b78e",
+            "completedDateTime": "2022-10-04T08:37:47.3197648Z",
+            "failedTasksCount": 0,
+            "processingStatus": "completed",
+            "scheduledDateTime": "2022-10-04T08:37:28.3040665Z",
+            "startedDateTime": "2022-10-04T08:37:32.1018797Z",
+            "totalTasksCount": 3,
+            "totalUnprocessedTasksCount": 0,
+            "workflowExecutionType": "onDemand",
+            "workflowVersion": 1,
+            "subject": {
+                "id": "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
+            }
+        }
+    ]
+}
 ```
-You may also check the full details about the tasks of a given userProcessingResults. You will need to provide the workflow ID of the workflow, as well as the userProcessingResult ID. You may obtain the userProcessingResult ID from the response of the userProcessingResults GET call above.
 
+### Request
+
+You can request the aggregate high-level summary of the user-level results for a workflow, within a specified period.
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_lifecycle_workflows_leaverondemand_list_userProcessingResults.summary"
+}-->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/<workflow_id>/userProcessingResults/<userProcessingResult_id>/taskProcessingResults
+GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/368dfba3-2303-4e02-b258-87d742187e1b/userProcessingResults/summary(startDateTime=2022-10-01T00:00:00Z,endDateTime=2022-10-30T00:00:00Z)
+```
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userSummary"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.userSummary",
+    "failedTasks": 0,
+    "failedUsers": 0,
+    "successfulUsers": 1,
+    "totalTasks": 3,
+    "totalUsers": 1
+}
+```
+
+### Request
+
+You can also retrieve the detailed log of all tasks that were executed for a specific user in the workflow.
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_lifecycle_workflows_leaverondemand_list_taskProcessingResults"
+}-->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workflows/368dfba3-2303-4e02-b258-87d742187e1b/userProcessingResults/bc5b9d36-55fb-4036-8551-582668a6b78e/taskProcessingResults
+```
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.taskProcessingResult"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('368dfba3-2303-4e02-b258-87d742187e1b')/userProcessingResults('bc5b9d36-55fb-4036-8551-582668a6b78e')/taskProcessingResults",
+    "value": [
+        {
+            "completedDateTime": "2022-10-04T08:37:37.1440809Z",
+            "createdDateTime": "2022-10-04T08:37:32.6985496Z",
+            "id": "0819ee66-f85c-49a2-bdbd-3bbdbb3c1797",
+            "processingStatus": "completed",
+            "startedDateTime": "2022-10-04T08:37:36.2260254Z",
+            "failureReason": null,
+            "subject": {
+                "id": "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
+            },
+            "task": {
+                "category": "leaver",
+                "continueOnError": false,
+                "description": "Remove user from all Azure AD groups memberships",
+                "displayName": "Remove user from all groups",
+                "executionSequence": 1,
+                "id": "ab400768-ff1e-4a2f-ac0e-bae5d8419613",
+                "isEnabled": true,
+                "taskDefinitionId": "b3a31406-2a15-4c9a-b25b-a658fa5f07fc",
+                "arguments": []
+            }
+        },
+        {
+            "completedDateTime": "2022-10-04T08:37:42.8173083Z",
+            "createdDateTime": "2022-10-04T08:37:32.76041Z",
+            "id": "f1e16080-0117-41ba-9632-74eb60a4b005",
+            "processingStatus": "completed",
+            "startedDateTime": "2022-10-04T08:37:38.383087Z",
+            "failureReason": null,
+            "subject": {
+                "id": "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
+            },
+            "task": {
+                "category": "leaver",
+                "continueOnError": false,
+                "description": "Remove user from all Teams memberships",
+                "displayName": "Remove user from all Teams",
+                "executionSequence": 2,
+                "id": "b49e306a-17ad-4bed-89cb-f312b9d30eb3",
+                "isEnabled": true,
+                "taskDefinitionId": "81f7b200-2816-4b3b-8c5d-dc556f07b024",
+                "arguments": []
+            }
+        },
+        {
+            "completedDateTime": "2022-10-04T08:37:46.8305324Z",
+            "createdDateTime": "2022-10-04T08:37:33.0279549Z",
+            "id": "21d40600-259a-4581-a011-0a56d2ee6e7a",
+            "processingStatus": "completed",
+            "startedDateTime": "2022-10-04T08:37:46.3131624Z",
+            "failureReason": null,
+            "subject": {
+                "id": "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
+            },
+            "task": {
+                "category": "leaver",
+                "continueOnError": false,
+                "description": "Delete user account in Azure AD",
+                "displayName": "Delete User Account",
+                "executionSequence": 3,
+                "id": "ce568616-5615-4783-a519-6bec9f13514e",
+                "isEnabled": true,
+                "taskDefinitionId": "8d18588d-9ad3-4c0f-99d0-ec215f0e3dff",
+                "arguments": []
+            }
+        }
+    ]
+}
 ```
 
 ## Next steps
-- [Preparing user accounts for Lifecycle workflows (preview)](tutorial-prepare-azure-ad-user-accounts.md)
+
 - [Execute employee offboarding tasks in real-time on their last day of work with Azure portal (preview)](tutorial-offboard-custom-workflow-portal.md)
+- [Overview of Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
+- [Overview of reporting in Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)

@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Custom permission grant policy');
 
 
 
-$graphServiceClient->policies()->permissionGrantPoliciesById('permissionGrantPolicy-id')->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->permissionGrantPoliciesById('permissionGrantPolicy-id')->patch($requestBody);
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setEmailAddress('kim@contoso.com');
 
 
 
-$graphServiceClient->usersById('user-id')->authentication()->emailMethodsById('emailAuthenticationMethod-id')->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->authentication()->emailMethodsById('emailAuthenticationMethod-id')->patch($requestBody);
 
 
 ```
