@@ -5863,6 +5863,56 @@
       "CreatedDateTime": "2022-08-26T08:14:02.5231411Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Get subscription](https://learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Create subscription](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Update subscription](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [List subscriptions](https://learn.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Delete subscription](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        }
+      ],
+      "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-03T15:04:69.427Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
