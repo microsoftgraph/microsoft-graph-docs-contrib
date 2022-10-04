@@ -363,7 +363,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#accessPackageAssignmentRequests/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#accessPackageAssignmentRequests/$entity",
     "id": "7a6ab703-0780-4b37-8445-81f679b2d75c",
     "requestType": "userAdd",
     "state": "submitted",
