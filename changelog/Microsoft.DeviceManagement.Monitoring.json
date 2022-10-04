@@ -55,7 +55,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "notificationReceiver",
                     "ChangeType": "Addition",
-                    "Description": "Added the [notificationReceiver](https://docs.microsoft.com/graph/api/resources/devicemanagement-notificationreceiver?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [notificationReceiver](https://learn.microsoft.com/graph/api/resources/devicemanagement-notificationreceiver?view=graph-rest-beta) resource type.",
                     "Target": "notificationReceiver"
                 },
                 {
@@ -63,7 +63,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "monitoring",
                     "ChangeType": "Addition",
-                    "Description": "Added the [monitoring](https://docs.microsoft.com/graph/api/resources/devicemanagement-monitoring?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [monitoring](https://learn.microsoft.com/graph/api/resources/devicemanagement-monitoring?view=graph-rest-beta) resource type.",
                     "Target": "deviceManagement"
                 },
                 {
@@ -71,7 +71,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "alertImpact",
                     "ChangeType": "Addition",
-                    "Description": "Added the [alertImpact](https://docs.microsoft.com/graph/api/resources/devicemanagement-alertimpact?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [alertImpact](https://learn.microsoft.com/graph/api/resources/devicemanagement-alertimpact?view=graph-rest-beta) resource type.",
                     "Target": "alertImpact"
                 },
                 {
@@ -79,7 +79,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "notificationChannel",
                     "ChangeType": "Addition",
-                    "Description": "Added the [notificationChannel](https://docs.microsoft.com/graph/api/resources/devicemanagement-notificationchannel?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [notificationChannel](https://learn.microsoft.com/graph/api/resources/devicemanagement-notificationchannel?view=graph-rest-beta) resource type.",
                     "Target": "notificationChannel"
                 },
                 {
@@ -87,7 +87,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "portalNotification",
                     "ChangeType": "Addition",
-                    "Description": "Added the [portalNotification](https://docs.microsoft.com/graph/api/resources/devicemanagement-portalnotification?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [portalNotification](https://learn.microsoft.com/graph/api/resources/devicemanagement-portalnotification?view=graph-rest-beta) resource type.",
                     "Target": "portalNotification"
                 },
                 {
@@ -95,7 +95,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "ruleThreshold",
                     "ChangeType": "Addition",
-                    "Description": "Added the [ruleThreshold](https://docs.microsoft.com/graph/api/resources/devicemanagement-rulethreshold?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [ruleThreshold](https://learn.microsoft.com/graph/api/resources/devicemanagement-rulethreshold?view=graph-rest-beta) resource type.",
                     "Target": "ruleThreshold"
                 },
                 {
@@ -103,7 +103,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "alertRecord",
                     "ChangeType": "Addition",
-                    "Description": "Added the [alertRecord](https://docs.microsoft.com/graph/api/resources/devicemanagement-alertrecord?view=graph-rest-beta) resource and supported methods.",
+                    "Description": "Added the [alertRecord](https://learn.microsoft.com/graph/api/resources/devicemanagement-alertrecord?view=graph-rest-beta) resource and supported methods.",
                     "Target": "alertRecord"
                 },
                 {
@@ -111,7 +111,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "alertRule",
                     "ChangeType": "Addition",
-                    "Description": "Added the [alertRule](https://docs.microsoft.com/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta) resource and supported methods.",
+                    "Description": "Added the [alertRule](https://learn.microsoft.com/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta) resource and supported methods.",
                     "Target": "alertRule"
                 }
             ],
