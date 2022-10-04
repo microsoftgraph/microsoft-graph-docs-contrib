@@ -1329,7 +1329,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [complianceSettings](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-compliancesettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the [complianceSettings](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-compliancesettings?view=graph-rest-beta) resource type.",
           "Target": "complianceSettings"
         },
         {
@@ -1337,7 +1337,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enabledContentExperiences",
           "ChangeType": "Addition",
-          "Description": "Added the **enabledContentExperiences** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
+          "Description": "Added the **enabledContentExperiences** property to the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
           "Target": "externalConnection"
         },
         {
@@ -1345,7 +1345,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "complianceSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **complianceSettings** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
+          "Description": "Added the **complianceSettings** property to the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
           "Target": "externalConnection"
         }
       ],
