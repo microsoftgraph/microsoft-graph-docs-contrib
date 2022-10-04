@@ -25,22 +25,6 @@ To complete this tutorial, you need the following resources and privileges:
 + Grant yourself the following `LifecycleWorkflows.ReadWrite.All` delegated permission.
 + Create a test user account that you'll use to represent an employee leaving your organization. This test user account will be deleted when the workflow runs. Assign licenses and Teams memberships to the test user account.
 
-## Create a leaver workflow on-demand using Graph API
-
-Before introducing the API call to create this workflow, you may want to review some of the parameters that are required for this workflow creation.
-
-|Parameter  |Description  |
-|---------|---------|
-|category     |  A string that identifies the category of the workflow. String is "joiner", "mover", or "leaver and can support multiple strings. Category of workflow must also contain the category of its tasks. For full task definitions, see: [Lifecycle workflow tasks and definitions](lifecycle-workflow-tasks.md)    |
-|displayName     |  A unique string that identifies the workflow.       |
-|description     |  A string that describes the purpose of the workflow for administrative use. (Optional)       |
-|isEnabled     |   A boolean value that denotes whether the workflow is set to run or not.  If set to “true" then the workflow will run.      |
-|isSchedulingEnabled     |   A Boolean value that denotes whether scheduling is enabled or not. Unlike isEnbaled, a workflow can still be run on demand if this value is set to false.      |
-|executionConditions     |    An argument that contains: <br><br>A time-based attribute and an integer parameter defining when a workflow will run between -60 and 60 <br><br>A scope attribute defining who the workflow runs for.   |
-|tasks    |  An argument in a workflow that has a unique displayName and a description. <br><br> It defines the specific tasks to be executed in the workflow. <br><br>The specified task is outlined by the taskDefinitionID and its parameters.  For a list of supported tasks, and their corresponding IDs, see [Supported Task Definitions](lifecycle-workflow-tasks.md).      |
-
-For the purpose of this tutorial, there are three tasks that will be introduced in this workflow:
-
 ## Create a "leaver" workflow
 
 ### Request
@@ -341,6 +325,6 @@ Content-Type: application/json
 
 ## Next steps
 
-- [Execute employee offboarding tasks in real-time on their last day of work with Azure portal (preview)](tutorial-offboard-custom-workflow-portal.md)
+- [Execute employee offboarding tasks in real-time on their last day of work with Azure portal (preview)](/azure/active-directory/governance/tutorial-offboard-custom-workflow-portal)
 - [Overview of Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
 - [Overview of reporting in Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)

@@ -346,6 +346,6 @@ HTTP/1.1 204 No Content
 
 ## See also
 
-- [Automate employee onboarding tasks before their first day of work with Azure portal (preview)](tutorial-onboard-custom-workflow-portal.md)
+- [Automate employee onboarding tasks before their first day of work with Azure portal (preview)](/azure/active-directory/governance/tutorial-onboard-custom-workflow-portal)
 - [Overview of Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
 - [Overview of reporting in Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)

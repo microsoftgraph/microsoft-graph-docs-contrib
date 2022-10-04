@@ -57,4 +57,4 @@ PATCH https://graph.microsoft.com/beta/users/df744d9e-2148-4922-88a8-633896c1e92
 ## Next steps
 
 - [Lifecycle Workflows API overview](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
-- [How to synchronize attributes for Lifecycle workflows](how-to-lifecycle-workflow-sync-attributes.md)
+- [How to synchronize attributes for Lifecycle workflows](/azure/active-directory/governance/how-to-lifecycle-workflow-sync-attributes)
