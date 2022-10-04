@@ -15,7 +15,7 @@
         "ApiChange": "Relationship",
         "ChangedApiName": "incompatibleAccessPackages",
         "ChangeType": "Addition",
-        "Description": "Added the **incompatibleAccessPackages** navigation property to the [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-1.0) resource.",
+        "Description": "Added the **incompatibleAccessPackages** relationship to the [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-1.0) resource.",
         "Target": "accessPackage"
       },
       {
@@ -23,7 +23,7 @@
         "ApiChange": "Relationship",
         "ChangedApiName": "accessPackagesIncompatibleWith",
         "ChangeType": "Addition",
-        "Description": "Added the **accessPackagesIncompatibleWith** navigation property to the [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-1.0) resource.",
+        "Description": "Added the **accessPackagesIncompatibleWith** relationship to the [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-1.0) resource.",
         "Target": "accessPackage"
       },
       {
@@ -31,7 +31,7 @@
         "ApiChange": "Relationship",
         "ChangedApiName": "incompatibleGroups",
         "ChangeType": "Addition",
-        "Description": "Added the **incompatibleGroups** navigation property on [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-1.0) resource.",
+        "Description": "Added the **incompatibleGroups** relationship on [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-1.0) resource.",
         "Target": "accessPackage"
       }
     ],
