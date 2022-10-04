@@ -31,6 +31,7 @@ Represents a printer that is intended to be discoverable by users and printing a
 | [List allowedGroups](../api/printershare-list-allowedgroups.md) | [group](group.md) collection | Retrieve a list of groups that have been granted access to submit print jobs to the associated printer share. |
 | [Add allowedGroup](../api/printershare-post-allowedgroups.md) | None | Grant the specified group access to submit print jobs to the associated printer share. |
 | [Remove allowedGroup](../api/printershare-delete-allowedgroup.md) | None | Revoke printer share access from the specified group. |
+| [List recentPrinterShares](../api/print-list-recentshares.md) | [printerShare](printershare.md) collection | Get a list of recently used **printerShares** by the signed-in user. |
 
 ## Properties
 | Property     | Type        | Description |
