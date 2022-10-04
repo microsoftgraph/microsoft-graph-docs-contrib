@@ -60,7 +60,8 @@ The following is an example of the request to retrieve the **excludes** conditio
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "permissiongrantpolicy_get_excludes"
+  "name": "permissiongrantpolicy_get_excludes",
+  "sampleKeys": ["microsoft-application-admin"]
 }-->
 
 ```msgraph-interactive

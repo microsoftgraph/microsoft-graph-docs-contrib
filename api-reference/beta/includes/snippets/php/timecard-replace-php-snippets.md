@@ -15,12 +15,12 @@ $additionalData = [
 'state' => 'clockedOut', 
 'confirmedBy' => 'None', 
 'notes' => 		null,
-'clockInEvent' => $requestBody = new ();
+'clockInEvent' => $requestBody = new ClockInEvent();
 $		requestBody->setDateTime('2021-05-21T21:58:41.327Z');
 
 		$requestBody->setAtApprovedLocation(null);
 
-$notes = new ();
+$notes = new Notes();
 $		notes->setContentType('text');
 
 $		notes->setContent('update sample notes');
@@ -30,12 +30,12 @@ $requestBody->setNotes($notes);
 
 $requestBody->setClockInEvent($clockInEvent);
 
-'clockOutEvent' => $requestBody = new ();
+'clockOutEvent' => $requestBody = new ClockOutEvent();
 $		requestBody->setDateTime('2021-05-21T22:01:46.205Z');
 
 		$requestBody->setAtApprovedLocation(null);
 
-$notes = new ();
+$notes = new Notes();
 $		notes->setContentType('text');
 
 $		notes->setContent('update sample notes');
@@ -50,12 +50,12 @@ $		breaks1->setBreakId('BRK_138f4751-68b1-44c1-aca2-2b26cba9e73f');
 
 		$breaks1->setNotes(null);
 
-$breaks1Start = new ();
+$breaks1Start = new Start();
 $		breaks1Start->setDateTime('2021-05-21T21:59:59.328Z');
 
 		$breaks1Start->setAtApprovedLocation(null);
 
-$breaks1StartNotes = new ();
+$breaks1StartNotes = new Notes();
 $		breaks1StartNotes->setContentType('text');
 
 $		breaks1StartNotes->setContent('update sample notes');
@@ -64,12 +64,12 @@ $		breaks1StartNotes->setContent('update sample notes');
 $breaks1Start->setNotes($breaks1StartNotes);
 
 $breaks1->setStart($breaks1Start);
-$breaks1End = new ();
+$breaks1End = new End();
 $		breaks1End->setDateTime('2021-05-21T22:01:10.205Z');
 
 		$breaks1End->setAtApprovedLocation(null);
 
-$breaks1EndNotes = new ();
+$breaks1EndNotes = new Notes();
 $		breaks1EndNotes->setContentType('text');
 
 $		breaks1EndNotes->setContent('update sample notes');

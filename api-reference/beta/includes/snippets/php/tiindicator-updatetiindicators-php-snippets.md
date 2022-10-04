@@ -10,26 +10,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new UpdateTiIndicatorsPostRequestBody();
-$value1 = new ();
-$additionalData = [
-'id' => 'c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4', 
-'additionalInformation' => 'mytest', 
-];
-$value1->setAdditionalData($additionalData);
+$valueTiIndicator1 = new TiIndicator();
+$valueTiIndicator1->setId('c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4');
+
+$valueTiIndicator1->setAdditionalInformation('mytest');
 
 
+$valueArray []= $valueTiIndicator1;
+$valueTiIndicator2 = new TiIndicator();
+$valueTiIndicator2->setId('e58c072b-c9bb-a5c4-34ce-eb69af44fb1e');
 
-$valueArray []= $value1;
-$value2 = new ();
-$additionalData = [
-'id' => 'e58c072b-c9bb-a5c4-34ce-eb69af44fb1e', 
-'additionalInformation' => 'test again', 
-];
-$value2->setAdditionalData($additionalData);
+$valueTiIndicator2->setAdditionalInformation('test again');
 
 
-
-$valueArray []= $value2;
+$valueArray []= $valueTiIndicator2;
 $requestBody->setValue($valueArray);
 
 

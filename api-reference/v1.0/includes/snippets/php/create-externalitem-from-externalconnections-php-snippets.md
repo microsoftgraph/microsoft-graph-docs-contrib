@@ -32,17 +32,17 @@ $aclArray []= $acl2;
 $requestBody->setAcl($aclArray);
 
 
-'properties' => $requestBody = new ();
+'properties' => $requestBody = new Properties();
 $	requestBody->setTitle('Error in the payment gateway');
 
-	$requestBody->setPriority(priority);
+	$requestBody->setPriority(1);
 
 $	requestBody->setAssignee('john@contoso.com');
 
 
 $requestBody->setProperties($properties);
 
-'content' => $requestBody = new ();
+'content' => $requestBody = new Content();
 $	requestBody->setValue('Error in payment gateway...');
 
 $	requestBody->setType('text');

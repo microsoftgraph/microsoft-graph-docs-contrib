@@ -2,7 +2,7 @@
 title: "Create roleDefinitions"
 description: "Create a new unifiedRoleDefinition object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---

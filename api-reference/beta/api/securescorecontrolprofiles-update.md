@@ -66,7 +66,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "securescorecontrolprofiles_update"
+  "name": "securescorecontrolprofiles_update",
+  "sampleKeys": ["AdminMFA"]
 }-->
 
 ```http

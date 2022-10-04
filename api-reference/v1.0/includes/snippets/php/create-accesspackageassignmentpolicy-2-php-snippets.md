@@ -16,7 +16,7 @@ $requestBody->setDescription('policy for users from connected organizations to r
 
 $requestBody->setAllowedTargetScope(new AllowedTargetScope('allconfiguredconnectedorganizationusers'));
 
-$requestBody->setSpecificAllowedTargets(]);
+$requestBody->setSpecificAllowedTargets([]);
 
 $expiration = new ExpirationPattern();
 $expiration->setType(new ExpirationPatternType('noexpiration'));
@@ -38,7 +38,7 @@ $requestorSettings->setEnableOnBehalfRequestorsToUpdateAccess(false);
 
 $requestorSettings->setEnableOnBehalfRequestorsToRemoveAccess(false);
 
-$requestorSettings->setOnBehalfRequestors(]);
+$requestorSettings->setOnBehalfRequestors([]);
 
 
 $requestBody->setRequestorSettings($requestorSettings);
@@ -89,9 +89,9 @@ $fallbackPrimaryApproversArray []= $fallbackPrimaryApproversSubjectSet2;
 $stagesAccessPackageApprovalStage1->setFallbackPrimaryApprovers($fallbackPrimaryApproversArray);
 
 
-$stagesAccessPackageApprovalStage1->setEscalationApprovers(]);
+$stagesAccessPackageApprovalStage1->setEscalationApprovers([]);
 
-$stagesAccessPackageApprovalStage1->setFallbackEscalationApprovers(]);
+$stagesAccessPackageApprovalStage1->setFallbackEscalationApprovers([]);
 
 
 $stagesArray []= $stagesAccessPackageApprovalStage1;
@@ -104,7 +104,7 @@ $stagesAccessPackageApprovalStage2->setIsEscalationEnabled(false);
 
 $stagesAccessPackageApprovalStage2->setDurationBeforeEscalation('PT0S');
 
-$stagesAccessPackageApprovalStage2->setPrimaryApprovers(]);
+$stagesAccessPackageApprovalStage2->setPrimaryApprovers([]);
 
 $fallbackPrimaryApproversSubjectSet1 = new SubjectSet();
 $fallbackPrimaryApproversSubjectSet1->set@odatatype('#microsoft.graph.singleUser');
@@ -131,9 +131,9 @@ $fallbackPrimaryApproversArray []= $fallbackPrimaryApproversSubjectSet2;
 $stagesAccessPackageApprovalStage2->setFallbackPrimaryApprovers($fallbackPrimaryApproversArray);
 
 
-$stagesAccessPackageApprovalStage2->setEscalationApprovers(]);
+$stagesAccessPackageApprovalStage2->setEscalationApprovers([]);
 
-$stagesAccessPackageApprovalStage2->setFallbackEscalationApprovers(]);
+$stagesAccessPackageApprovalStage2->setFallbackEscalationApprovers([]);
 
 
 $stagesArray []= $stagesAccessPackageApprovalStage2;
@@ -167,20 +167,20 @@ $reviewSettingsScheduleRecurrence = new PatternedRecurrence();
 $reviewSettingsScheduleRecurrencePattern = new RecurrencePattern();
 $reviewSettingsScheduleRecurrencePattern->setType(new RecurrencePatternType('absolutemonthly'));
 
-$reviewSettingsScheduleRecurrencePattern->setInterval(interval);
+$reviewSettingsScheduleRecurrencePattern->setInterval(3);
 
-$reviewSettingsScheduleRecurrencePattern->setMonth(month);
+$reviewSettingsScheduleRecurrencePattern->setMonth(0);
 
-$reviewSettingsScheduleRecurrencePattern->setDayOfMonth(dayOfMonth);
+$reviewSettingsScheduleRecurrencePattern->setDayOfMonth(0);
 
-$reviewSettingsScheduleRecurrencePattern->setDaysOfWeek(]);
+$reviewSettingsScheduleRecurrencePattern->setDaysOfWeek([]);
 
 
 $reviewSettingsScheduleRecurrence->setPattern($reviewSettingsScheduleRecurrencePattern);
 $reviewSettingsScheduleRecurrenceRange = new RecurrenceRange();
 $reviewSettingsScheduleRecurrenceRange->setType(new RecurrenceRangeType('noend'));
 
-$reviewSettingsScheduleRecurrenceRange->setNumberOfOccurrences(numberOfOccurrences);
+$reviewSettingsScheduleRecurrenceRange->setNumberOfOccurrences(0);
 
 
 $reviewSettingsScheduleRecurrence->setRange($reviewSettingsScheduleRecurrenceRange);
@@ -202,7 +202,7 @@ $primaryReviewersArray []= $primaryReviewersSubjectSet1;
 $reviewSettings->setPrimaryReviewers($primaryReviewersArray);
 
 
-$reviewSettings->setFallbackReviewers(]);
+$reviewSettings->setFallbackReviewers([]);
 
 
 $requestBody->setReviewSettings($reviewSettings);

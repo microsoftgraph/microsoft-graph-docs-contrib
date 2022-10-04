@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewDelegatedAdminRelationship()
 displayName := "Contoso admin relationship"
 requestBody.SetDisplayName(&displayName) 
-duration := "P730D"
+duration , err := abstractions.ParseISODuration("P730D")
 requestBody.SetDuration(&duration) 
 customer := graphmodels.NewDelegatedAdminRelationshipCustomerParticipant()
 tenantId := "4b827261-d21f-4aa9-b7db-7fa1f56fb163"
@@ -22,15 +22,11 @@ accessDetails := graphmodels.NewDelegatedAdminAccessDetails()
 
 
 unifiedRole := graphmodels.NewUnifiedRole()
-additionalData := map[string]interface{}{
-	"roleDefinitionId" : "29232cdf-9323-42fd-ade2-1d097af3e4de", 
-}
-unifiedRole.SetAdditionalData(additionalData)
+roleDefinitionId := "29232cdf-9323-42fd-ade2-1d097af3e4de"
+unifiedRole.SetRoleDefinitionId(&roleDefinitionId) 
 unifiedRole1 := graphmodels.NewUnifiedRole()
-additionalData := map[string]interface{}{
-	"roleDefinitionId" : "3a2c62db-5318-420d-8d74-23affee5d9d5", 
-}
-unifiedRole1.SetAdditionalData(additionalData)
+roleDefinitionId := "3a2c62db-5318-420d-8d74-23affee5d9d5"
+unifiedRole1.SetRoleDefinitionId(&roleDefinitionId) 
 
 unifiedRoles := []graphmodels.UnifiedRoleable {
 	unifiedRole,
@@ -40,7 +36,7 @@ unifiedRoles := []graphmodels.UnifiedRoleable {
 accessDetails.SetUnifiedRoles(unifiedRoles)
 requestBody.SetAccessDetails(accessDetails)
 
-result, err := graphClient.TenantRelationships().DelegatedAdminRelationships().Post(requestBody)
+result, err := graphClient.TenantRelationships().DelegatedAdminRelationships().Post(context.Background(), requestBody, nil)
 
 
 ```

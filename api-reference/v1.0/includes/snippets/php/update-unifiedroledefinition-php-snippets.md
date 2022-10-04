@@ -15,11 +15,7 @@ $requestBody->setDescription('Update basic properties of application registratio
 $requestBody->setDisplayName('Application Registration Support Administrator');
 
 $rolePermissionsUnifiedRolePermission1 = new UnifiedRolePermission();
-$additionalData = [
-'allowedResourceActions' => ['microsoft.directory/applications/basic/read', ],
-];
-$rolePermissionsUnifiedRolePermission1->setAdditionalData($additionalData);
-
+$rolePermissionsUnifiedRolePermission1->setAllowedResourceActions(['microsoft.directory/applications/basic/read', ]);
 
 
 $rolePermissionsArray []= $rolePermissionsUnifiedRolePermission1;
@@ -28,7 +24,7 @@ $requestBody->setRolePermissions($rolePermissionsArray);
 
 
 
-$graphServiceClient->roleManagement()->directory()->roleDefinitionsById('unifiedRoleDefinition-id')->patch($requestBody);
+$requestResult = $graphServiceClient->roleManagement()->directory()->roleDefinitionsById('unifiedRoleDefinition-id')->patch($requestBody);
 
 
 ```

@@ -59,7 +59,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "upgrade_teamsapp_in_team"
+  "name": "upgrade_teamsapp_in_team",
+  "sampleKeys": ["db5e04be-daa2-4a35-beb1-5e73cc381599", "NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMjQwYTM2OC0yNWUwLTQ1NjktOGViZS0xMzYwMWNiNTVhMTg="]
 }-->
 
 ```http

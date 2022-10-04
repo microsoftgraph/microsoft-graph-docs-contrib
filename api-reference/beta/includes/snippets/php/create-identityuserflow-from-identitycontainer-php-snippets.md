@@ -14,7 +14,7 @@ $requestBody->setId('Pol1');
 
 $requestBody->setUserFlowType(new UserFlowType('signuporsignin'));
 
-$requestBody->setUserFlowTypeVersion(userFlowTypeVersion);
+$requestBody->setUserFlowTypeVersion(1);
 
 
 

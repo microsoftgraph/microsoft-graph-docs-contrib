@@ -2,7 +2,7 @@
 title: "List accessReviewInstanceDecisionItem pending approval"
 description: "Retrieve accessReviewInstanceDecisionItem objects pending approval by the calling user."
 ms.localizationpriority: medium
-author: "zhusijia26"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

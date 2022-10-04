@@ -87,7 +87,7 @@ collection or use the [expand](/graph/query-parameters) option to expand the chi
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/special/{special-folder-name}/children
 ```
 

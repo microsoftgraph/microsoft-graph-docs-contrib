@@ -64,10 +64,11 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "bookingbusiness_getcalendarview"
+  "name": "bookingbusiness_getcalendarview",
+  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
+GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
 
 # [C#](#tab/csharp)

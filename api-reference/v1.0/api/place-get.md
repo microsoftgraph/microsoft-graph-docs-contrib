@@ -68,7 +68,8 @@ The following example specifies the **id** of a **room** to get its properties.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_room"
+  "name": "get_room",
+  "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"]
 }-->
 
 ```msgraph-interactive
@@ -140,7 +141,8 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_roomlist"
+  "name": "get_roomlist",
+  "sampleKeys": ["Building2Rooms@M365x214355.onmicrosoft.com"]
 }-->
 
 ```msgraph-interactive

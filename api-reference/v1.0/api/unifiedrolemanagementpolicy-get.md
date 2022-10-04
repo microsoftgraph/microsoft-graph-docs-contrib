@@ -55,7 +55,8 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedrolemanagementpolicy"
+  "name": "get_unifiedrolemanagementpolicy",
+  "sampleKeys": ["Directory_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448"]
 }
 -->
 ``` http
@@ -126,7 +127,8 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedrolemanagementpolicy_expandrelationships"
+  "name": "get_unifiedrolemanagementpolicy_expandrelationships",
+  "sampleKeys": ["DirectoryRole_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448"]
 }
 -->
 ``` http

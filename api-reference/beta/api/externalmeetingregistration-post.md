@@ -68,7 +68,8 @@ If successful, this method returns a `201 Created` response code and an [externa
 <!-- {
   "blockType": "request",
   "name": "create-externalregistration",
-  "@odata.type": "microsoft.graph.externalMeetingRegistration"
+  "@odata.type": "microsoft.graph.externalMeetingRegistration",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```http

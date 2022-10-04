@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").NoncustodialDataSourcesById("ediscoveryNoncustodialDataSource-id").UpdateIndex(ediscoveryCase-id, ediscoveryNoncustodialDataSource-id).Post()
+graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").NoncustodialDataSourcesById("ediscoveryNoncustodialDataSource-id").UpdateIndex().Post(context.Background(), nil)
 
 
 ```

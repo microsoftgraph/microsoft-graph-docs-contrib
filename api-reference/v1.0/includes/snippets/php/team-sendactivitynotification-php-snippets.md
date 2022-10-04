@@ -26,17 +26,6 @@ $previewText->setContent('New deployment requires your approval');
 
 
 $requestBody->setPreviewText($previewText);
-$recipient = new TeamworkNotificationRecipient();
-$recipient->set@odatatype('Microsoft.Teams.GraphSvc.aadUserNotificationRecipient');
-
-$additionalData = [
-'userId' => '569363e2-4e49-4661-87f2-16f245c5d66a', 
-];
-$recipient->setAdditionalData($additionalData);
-
-
-
-$requestBody->setRecipient($recipient);
 $templateParametersKeyValuePair1 = new KeyValuePair();
 $templateParametersKeyValuePair1->setName('deploymentId');
 
@@ -49,7 +38,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->teamsById('team-id')->sendActivityNotification()->post($requestBody);
+$graphServiceClient->usersById('user-id')->teamwork()->sendActivityNotification()->post($requestBody);
 
 
 ```

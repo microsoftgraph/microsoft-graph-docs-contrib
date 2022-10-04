@@ -70,7 +70,7 @@ The following is an example of the request.
   "name": "get_me_assignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/assignments
 ```
 
@@ -214,7 +214,7 @@ The following is an example of the request.
   "name": "get_user_assignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b62a243836/assignments
 ```
 

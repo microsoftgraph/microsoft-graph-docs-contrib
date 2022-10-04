@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | ChannelMessage.Send, Group.ReadWrite.All** |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Teamwork.Migrate.All |
+| Application                            | Teamwork.Migrate.All, ChannelMessage.ReadWrite.All |
 
 > **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
@@ -90,7 +90,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_1"
+  "name": "post_chatmessage_1",
+  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
@@ -194,7 +195,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_2"
+  "name": "post_chatmessage_2",
+  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
@@ -327,7 +329,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_3"
+  "name": "post_chatmessage_3",
+  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 
 ```http
@@ -454,7 +457,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_4"
+  "name": "post_chatmessage_4",
+  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
@@ -579,7 +583,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_5"
+  "name": "post_chatmessage_5",
+  "sampleKeys": ["19:2da4c29f6d7041eca70b638b43d45437@thread.v2"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages
@@ -691,7 +696,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_6"
+  "name": "post_chatmessage_6",
+  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
@@ -823,7 +829,8 @@ The following is an example of the request. For information about how to get a l
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_atmentionchannel"
+  "name": "post_chatmessage_atmentionchannel",
+  "sampleKeys": ["68a3e365-f7d9-4a56-b499-24332a9cc572", "19:0b50940236084d258c97b21bd01917b0@thread.skype"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/68a3e365-f7d9-4a56-b499-24332a9cc572/channels/19:0b50940236084d258c97b21bd01917b0@thread.skype/messages
@@ -958,7 +965,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_atmentionteam"
+  "name": "post_chatmessage_atmentionteam",
+  "sampleKeys": ["68a3e365-f7d9-4a56-b499-24332a9cc572", "19:0b50940236084d258c97b21bd01917b0@thread.skype"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/68a3e365-f7d9-4a56-b499-24332a9cc572/channels/19:0b50940236084d258c97b21bd01917b0@thread.skype/messages
@@ -1092,7 +1100,8 @@ The following is an example of the request. For information about how to get a l
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_atmentiontag"
+  "name": "post_chatmessage_atmentiontag",
+  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
@@ -1228,7 +1237,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_10"
+  "name": "post_chatmessage_10",
+  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 
 ```http

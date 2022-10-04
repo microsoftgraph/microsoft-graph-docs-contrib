@@ -2,7 +2,7 @@
 title: "List roleDefinitions"
 description: "Get a list of unifiedRoleDefinition objects."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---

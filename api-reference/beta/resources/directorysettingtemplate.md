@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Directory setting templates represent system-defined settings available to the tenant. [Directory settings](directorysetting.md) can be created based on the available **directorySettingTemplates**, and values changed from their preset defaults. Directory setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific entity settings. Currently, the only templates available for groups apply to Microsoft 365 groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group.
 
-For more information about the available Microsoft 365 group settings, see [Template settings](/azure/active-directory/enterprise-users/groups-settings-cmdlets).
+For more information about each setting, see [group (directory) settings](/graph/group-directory-settings).
 
 > [!TIP]
 > The `/v1.0` version of this resource is named [groupSettingTemplate](/graph/api/resources/groupsettingtemplate?view=graph-rest-1.0&preserve-view=true).

@@ -81,7 +81,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/authentication/passwordMethods/{id}
+GET https://graph.microsoft.com/beta/me/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490
 ```
 
 # [C#](#tab/csharp)
@@ -130,7 +130,7 @@ Content-type: application/json
 {
   "id": "28c10230-6103-485e-b985-444c60001490",
   "password": null,
-  "creationDateTime": null
+  "createdDateTime": null
 }
 ```
 

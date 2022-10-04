@@ -2,7 +2,7 @@
 title: "timeConstraint resource type"
 description: "Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots."
 ms.localizationpriority: medium
-author: "harini84"
+author: "iamgirishck"
 ms.prod: ""
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List instances (of an accessReviewHistoryDefinition)"
 description: "Retrieve the instances of an access review history definition."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

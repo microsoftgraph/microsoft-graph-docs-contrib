@@ -83,6 +83,20 @@ The following table shows the properties that are required when you create the d
 |chooseYourLockScreenDisabled|Boolean|Indicates if iCloud Documents and Desktop screen is disabled|
 |accessibilityScreenDisabled|Boolean|Indicates if Accessibility screen is disabled|
 |autoUnlockWithWatchDisabled|Boolean|Indicates if UnlockWithWatch screen is disabled|
+|dontAutoPopulatePrimaryAccountInfo|Boolean|Indicates whether Setup Assistant will auto populate the primary account information|
+|lockPrimaryAccountInfo|Boolean|Indicates whether the primary account information will be locked|
+|managedLocalUserShortName|Boolean|Indicates whether or not this is the short name of the local account to manage|
+|primaryAccountFullName|String|Indicates what the full name for the primary account is|
+|primaryAccountUserName|String|Indicates what the account name for the primary account is|
+|requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
+|setPrimarySetupAccountAsRegularUser|Boolean|Indicates whether Setup Assistant will set the account as a regular user|
+|skipPrimarySetupAccountCreation|Boolean|Indicates whether Setup Assistant will skip the user interface for primary account setup|
+|isLocalPrimaryAccount|Boolean|Indicates whether the profile is a local account|
+|isPrimaryUser|Boolean|Indicates whether the profile is a primary user|
+|primaryUser|String|Indicates who the primary user of the profile is|
+|primaryUserFullName|String|Indicates who the primary user of the profile is|
+|prefillAccountInfo|Boolean|Indicates whether the user will prefill their account info|
+|enableRestrictEditing|Boolean|Indicates whether the user will enable blockediting|
 
 
 
@@ -96,7 +110,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 1340
+Content-length: 1944
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -133,7 +147,21 @@ Content-length: 1340
   "iCloudStorageDisabled": true,
   "chooseYourLockScreenDisabled": true,
   "accessibilityScreenDisabled": true,
-  "autoUnlockWithWatchDisabled": true
+  "autoUnlockWithWatchDisabled": true,
+  "dontAutoPopulatePrimaryAccountInfo": true,
+  "lockPrimaryAccountInfo": true,
+  "managedLocalUserShortName": true,
+  "primaryAccountFullName": "Primary Account Full Name value",
+  "primaryAccountUserName": "Primary Account User Name value",
+  "requestRequiresNetworkTether": true,
+  "setPrimarySetupAccountAsRegularUser": true,
+  "skipPrimarySetupAccountCreation": true,
+  "isLocalPrimaryAccount": true,
+  "isPrimaryUser": true,
+  "primaryUser": "Primary User value",
+  "primaryUserFullName": "Primary User Full Name value",
+  "prefillAccountInfo": true,
+  "enableRestrictEditing": true
 }
 ```
 
@@ -142,7 +170,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1389
+Content-Length: 1993
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -180,9 +208,24 @@ Content-Length: 1389
   "iCloudStorageDisabled": true,
   "chooseYourLockScreenDisabled": true,
   "accessibilityScreenDisabled": true,
-  "autoUnlockWithWatchDisabled": true
+  "autoUnlockWithWatchDisabled": true,
+  "dontAutoPopulatePrimaryAccountInfo": true,
+  "lockPrimaryAccountInfo": true,
+  "managedLocalUserShortName": true,
+  "primaryAccountFullName": "Primary Account Full Name value",
+  "primaryAccountUserName": "Primary Account User Name value",
+  "requestRequiresNetworkTether": true,
+  "setPrimarySetupAccountAsRegularUser": true,
+  "skipPrimarySetupAccountCreation": true,
+  "isLocalPrimaryAccount": true,
+  "isPrimaryUser": true,
+  "primaryUser": "Primary User value",
+  "primaryUserFullName": "Primary User Full Name value",
+  "prefillAccountInfo": true,
+  "enableRestrictEditing": true
 }
 ```
+
 
 
 

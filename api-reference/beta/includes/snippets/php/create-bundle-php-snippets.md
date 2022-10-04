@@ -13,7 +13,7 @@ $requestBody = new BundlesPostRequestBody();
 $additionalData = [
 'name' => 'Just some files', 
 '@microsoft.graph.conflictBehavior' => 'rename', 
-'bundle' => $requestBody = new ();
+'bundle' => $requestBody = new Bundle();
 
 $requestBody->setBundle($bundle);
 

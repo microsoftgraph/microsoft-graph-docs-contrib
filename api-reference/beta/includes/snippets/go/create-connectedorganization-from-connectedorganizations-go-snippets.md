@@ -15,8 +15,6 @@ requestBody.SetDescription(&description)
 
 
 identitySource := graphmodels.NewIdentitySource()
-"@odata.type" := "#microsoft.graph.domainIdentitySource"
-identitySource.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"domainName" : "example.com", 
 	"displayName" : "example.com", 
@@ -31,7 +29,7 @@ requestBody.SetIdentitySources(identitySources)
 state := graphmodels.PROPOSED_CONNECTEDORGANIZATIONSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(context.Background(), requestBody, nil)
 
 
 ```

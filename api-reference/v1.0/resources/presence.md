@@ -25,6 +25,8 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 | [Get presence of multiple users](../api/cloudcommunications-getpresencesbyuserid.md) | [presence](../resources/presence.md) collection | Get the presence information for multiple users.    |
 | [Set presence](../api/presence-setpresence.md)                                       |                                                 | Set an application's presence session for a user.   |
 | [Clear presence](../api/presence-clearpresence.md)                                   |                                                 | Clear an application's presence session for a user. |
+| [Set user preferred presence](../api/presence-setuserpreferredpresence.md)           |                                                 | Set the preferred availability and activity status for a user.                    |
+| [Clear user preferred presence](../api/presence-clearuserpreferredpresence.md)       |                                                 | Clear the preferred availability and activity status for a user.                  |
 
 ## Properties
 

@@ -61,7 +61,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_userflowlanguagepage_1"
+  "name": "get_userflowlanguagepage_1",
+  "sampleKeys": ["B2X_1_Partner", "en"]
 }
 -->
 

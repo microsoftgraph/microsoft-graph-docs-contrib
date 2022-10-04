@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstance: resetDecisions"
 description: "Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

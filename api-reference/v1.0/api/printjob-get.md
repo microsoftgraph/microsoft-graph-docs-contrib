@@ -71,7 +71,7 @@ The following is an example of a request to get metadata for a print job.
   "blockType": "request",
   "name": "get_printjob"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}
 ```
 
@@ -134,7 +134,7 @@ The following is a request to get a print job and any [tasks](../resources/print
   "blockType": "request",
   "name": "get_printjob_withtasks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}?$expand=tasks
 ```
 

@@ -68,7 +68,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "put_b2cuserflows-apiconnectorconfiguration_postFederationSignup"
+  "name": "put_b2cuserflows-apiconnectorconfiguration_postFederationSignup",
+  "sampleKeys": ["B2C_1_testuserflow", "postFederationSignup"]
 }
 -->
 
@@ -95,9 +96,6 @@ Content-Type: application/json
 
 ---
 
-
----
-
 #### Response 
 
 The following is an example of the response.
@@ -121,7 +119,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "put_b2cuserflows-apiconnectorconfiguration_postAttributeCollection"
+  "name": "put_b2cuserflows-apiconnectorconfiguration_postAttributeCollection",
+  "sampleKeys": ["B2C_1_testuserflow", "postAttributeCollection"]
 }
 -->
 
@@ -173,7 +172,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "put_b2cuserflows-apiconnectorconfiguration_disable-postAttributeCollection"
+  "name": "put_b2cuserflows-apiconnectorconfiguration_disable-postAttributeCollection",
+  "sampleKeys": ["B2C_1_testuserflow", "postAttributeCollection"]
 }
 -->
 

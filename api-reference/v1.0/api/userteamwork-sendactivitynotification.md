@@ -142,7 +142,7 @@ If you want to link an aspect that is not represented by Microsoft Graph, or you
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_for_userID"
 }
 -->
 ``` http
@@ -169,27 +169,27 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-for-userid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-for-userid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-for-userid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-for-userid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-for-userid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-for-userid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

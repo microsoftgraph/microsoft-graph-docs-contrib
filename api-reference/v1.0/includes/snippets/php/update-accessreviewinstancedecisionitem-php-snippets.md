@@ -12,11 +12,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new AccessReviewInstanceDecisionItem();
 $requestBody->setDecision('Approve');
 
-$requestBody->setJustification('Kathleen still needs access to the Marketing group as she works in the Marketing organization.');
+$requestBody->setJustification('This person is still on my team');
 
 
 
-$graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->instancesById('accessReviewInstance-id')->decisionsById('accessReviewInstanceDecisionItem-id')->patch($requestBody);
+$graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->instancesById('accessReviewInstance-id')->stagesById('accessReviewStage-id')->decisionsById('accessReviewInstanceDecisionItem-id')->patch($requestBody);
 
 
 ```

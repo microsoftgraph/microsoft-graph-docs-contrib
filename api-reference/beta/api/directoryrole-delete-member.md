@@ -1,7 +1,7 @@
 ---
 title: "Remove directory role member"
 description: "Remove a member from a directoryRole."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

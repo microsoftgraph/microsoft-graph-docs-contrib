@@ -56,7 +56,8 @@ If successful, this function returns a `200 OK` response code and a [assignmentO
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "identityuserflowattributeassignment_getorder"
+  "name": "identityuserflowattributeassignment_getorder",
+  "sampleKeys": ["B2X_1_Partner"]
 }
 -->
 

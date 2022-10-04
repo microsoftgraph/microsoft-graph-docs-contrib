@@ -57,10 +57,11 @@ The following example retrieves a specific **identityProvider**.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-identityprovider"
+  "name": "get-identityprovider",
+  "sampleKeys": ["Amazon-OAuth"]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```
 

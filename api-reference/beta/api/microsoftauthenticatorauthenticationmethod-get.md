@@ -73,7 +73,8 @@ If successful, this method returns a `200 OK` response code and a [microsoftAuth
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_microsoftauthenticatorauthenticationmethod"
+  "name": "get_microsoftauthenticatorauthenticationmethod",
+  "sampleKeys": ["anirban@contoso.com", "_jpuR-TGZtk6aQCLF3BQjA2"]
 }
 -->
 ``` http

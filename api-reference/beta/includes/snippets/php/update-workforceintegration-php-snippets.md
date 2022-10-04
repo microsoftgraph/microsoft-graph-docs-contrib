@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new WorkforceIntegration();
 $requestBody->setDisplayName('displayName-value');
 
-$requestBody->setApiVersion(apiVersion);
+$requestBody->setApiVersion(99);
 
 $encryption = new WorkforceIntegrationEncryption();
 $encryption->setProtocol(new WorkforceIntegrationEncryptionProtocol('protocol-value'));
@@ -29,7 +29,7 @@ $requestBody->setSupports(new WorkforceIntegrationSupportedEntities('supports-va
 
 
 
-$graphServiceClient->teamwork()->workforceIntegrationsById('workforceIntegration-id')->patch($requestBody);
+$requestResult = $graphServiceClient->teamwork()->workforceIntegrationsById('workforceIntegration-id')->patch($requestBody);
 
 
 ```

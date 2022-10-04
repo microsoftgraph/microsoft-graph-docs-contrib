@@ -17,9 +17,7 @@ requestBody.SetMembershipType(&membershipType)
 
 
 conversationMember := graphmodels.NewConversationMember()
-"@odata.type" := "#microsoft.graph.aadUserConversationMember"
-conversationMember.Set"@odata.type"(&"@odata.type") 
-roles := []String {
+roles := []string {
 	"owner",
 
 }
@@ -35,7 +33,7 @@ members := []graphmodels.ConversationMemberable {
 }
 requestBody.SetMembers(members)
 
-result, err := graphClient.TeamsById("team-id").Channels().Post(requestBody)
+result, err := graphClient.TeamsById("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -19,11 +19,11 @@ $requestBody->setOperatingSystem('Microsoft Windows 10 Enterprise Insider Previe
 $requestBody->setAppVersion('0.19.7338.23496');
 
 $location = new PrinterLocation();
-$location->setLatitude(latitude);
+$location->setLatitude(1.1);
 
-$location->setLongitude(longitude);
+$location->setLongitude(2.2);
 
-$location->setAltitudeInMeters(altitudeInMeters);
+$location->setAltitudeInMeters(3);
 
 
 $requestBody->setLocation($location);

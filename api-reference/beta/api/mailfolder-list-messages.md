@@ -52,7 +52,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "mailfolder_get_messages"
+  "name": "mailfolder_get_messages",
+  "sampleKeys": ["AAMkAGVmMDEzM"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages

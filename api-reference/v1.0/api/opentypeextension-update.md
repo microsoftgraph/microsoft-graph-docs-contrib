@@ -200,7 +200,7 @@ The following is the request and request body to change the `expirationDate` to 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate"],
+  "sampleKeys": ["37df2ff0-0de0-4c33-8aee-75289364aef6", "AAQkADJizZJpEWwqDHsEpV_KA==", "AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=","Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate"],
   "name": "update_opentypeextension"
 }-->
 ```http

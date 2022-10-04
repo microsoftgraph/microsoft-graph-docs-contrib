@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAuthorizationPolicy()
-enabledPreviewFeatures := []String {
+enabledPreviewFeatures := []string {
 	"assignGroupsToRoles",
 
 }
 requestBody.SetEnabledPreviewFeatures(enabledPreviewFeatures)
 
-graphClient.Policies().AuthorizationPolicyById("authorizationPolicy-id").Patch(requestBody)
+result, err := graphClient.Policies().AuthorizationPolicyById("authorizationPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

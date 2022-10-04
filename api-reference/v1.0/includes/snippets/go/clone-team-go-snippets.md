@@ -19,7 +19,7 @@ requestBody.SetPartsToClone(&partsToClone)
 visibility := graphmodels.PUBLIC_TEAMVISIBILITYTYPE 
 requestBody.SetVisibility(&visibility) 
 
-graphClient.TeamsById("team-id").Clone(team-id).Post(requestBody)
+graphClient.TeamsById("team-id").Clone().Post(context.Background(), requestBody, nil)
 
 
 ```

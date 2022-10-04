@@ -25,7 +25,7 @@ $previewText->setContent('Deployment requires your approval');
 
 $requestBody->setPreviewText($previewText);
 $recipient = new TeamworkNotificationRecipient();
-$recipient->set@odatatype('Microsoft.Teams.GraphSvc.aadUserNotificationRecipient');
+$recipient->set@odatatype('microsoft.graph.aadUserNotificationRecipient');
 
 $additionalData = [
 'userId' => 'jacob@contoso.com', 

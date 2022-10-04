@@ -290,7 +290,7 @@ The following is an example of the request.
   "name": "get_tier_count"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers/microsoft.graph.user?$count=true&$orderBy=displayName&$search="displayName:tier"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
@@ -363,7 +363,7 @@ The following is an example of the request.
   "name": "list_groups_transitivemembers_startswith"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers/microsoft.graph.user?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```

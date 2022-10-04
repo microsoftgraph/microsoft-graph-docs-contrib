@@ -56,7 +56,8 @@ If successful, this method only returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete-custom-question"
+  "name": "delete-custom-question",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ", "MSMxY2E2ZmE3OS1hOTY3LTQ4ZX3lvdV94MDAyMF9hX3gwMDIwX2RldmU="]
 }-->
 
 ```http

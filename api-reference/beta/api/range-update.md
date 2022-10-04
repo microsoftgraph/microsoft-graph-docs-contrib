@@ -63,7 +63,8 @@ Here is an example of the request. It updates a range - values, number-format an
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_range"
+  "name": "update_range",
+  "sampleKeys": ["sheet1"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/sheet1/range(address='A1:B2')
@@ -113,6 +114,8 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+	"Error: range(address={var}):
+      Couldn't find definition for parameter address={var} in range(address={var}) after looking in /api/range-update.md"
   ]
 }
 -->

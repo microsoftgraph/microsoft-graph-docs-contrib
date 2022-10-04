@@ -81,7 +81,7 @@ $settings->setDefaultDecisionEnabled(true);
 
 $settings->setDefaultDecision('Recommendation');
 
-$settings->setInstanceDurationInDays(instanceDurationInDays);
+$settings->setInstanceDurationInDays(180);
 
 $settings->setAutoApplyDecisionsEnabled(true);
 
@@ -91,9 +91,9 @@ $settingsRecurrence = new PatternedRecurrence();
 $settingsRecurrencePattern = new RecurrencePattern();
 $settingsRecurrencePattern->setType(new RecurrencePatternType('absolutemonthly'));
 
-$settingsRecurrencePattern->setInterval(interval);
+$settingsRecurrencePattern->setInterval(6);
 
-$settingsRecurrencePattern->setDayOfMonth(dayOfMonth);
+$settingsRecurrencePattern->setDayOfMonth(0);
 
 
 $settingsRecurrence->setPattern($settingsRecurrencePattern);

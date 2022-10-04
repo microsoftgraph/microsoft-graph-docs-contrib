@@ -59,7 +59,8 @@ If successful, this method returns a `200 OK` response code and a [set](../resou
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_set_2"
+  "name": "get_set_2",
+  "sampleKeys": ["8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f"]
 }-->
 
 ``` http
@@ -126,7 +127,8 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_siteCollection_termStore_set"
+  "name": "get_siteCollection_termStore_set",
+  "sampleKeys": ["microsoft.sharepoint.com,c6482504-4a85-4b21-858a-7e88dafc8232,d90ca07d-25c0-4ce7-864b-d68b607e697f", "8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f"]
 }-->
 
 ``` http

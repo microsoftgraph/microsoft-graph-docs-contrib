@@ -20,7 +20,7 @@ $requestBody->setImportance(new ChatMessageImportance('normal'));
 
 $requestBody->setLocale('en-us');
 
-$from = new From();
+$from = new ChatMessageFromIdentitySet();
 $From->setApplication(null);
 
 $From->setDevice(null);
@@ -86,13 +86,13 @@ $attachmentsArray []= $attachmentsChatMessageAttachment2;
 $requestBody->setAttachments($attachmentsArray);
 
 
-$requestBody->setMentions(]);
+$requestBody->setMentions([]);
 
-$requestBody->setReactions(]);
+$requestBody->setReactions([]);
 
 
 
-$graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
 
 
 ```

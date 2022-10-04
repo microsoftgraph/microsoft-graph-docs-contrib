@@ -11,7 +11,7 @@ requestBody := graphmodels.NewAddCopyFromContentTypeHubPostRequestBody()
 contentTypeId := "String"
 requestBody.SetContentTypeId(&contentTypeId) 
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").ContentTypes().AddCopyFromContentTypeHub(site-id, list-id).Post(requestBody)
+result, err := graphClient.SitesById("site-id").ListsById("list-id").ContentTypes().AddCopyFromContentTypeHub().Post(requestBody)
 
 
 ```

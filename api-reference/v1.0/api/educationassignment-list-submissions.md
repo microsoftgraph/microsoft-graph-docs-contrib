@@ -59,7 +59,7 @@ The following is an example of the request.
   "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","3c77de7f-539b-49e1-9c96-1274f2f0ee3b"],
   "name": "get_submissions"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions
 ```
 
@@ -158,7 +158,7 @@ The following is an example of the request.
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","efcdf80b-a5de-42ac-8579-e40b0223d48b"],
   "name": "get_submissions_expand"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/efcdf80b-a5de-42ac-8579-e40b0223d48b/submissions?$expand=outcomes
 ```
 

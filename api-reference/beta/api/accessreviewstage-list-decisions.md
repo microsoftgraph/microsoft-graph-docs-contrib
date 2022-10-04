@@ -1,7 +1,7 @@
 ---
 title: "List decisions (from a multi-stage access review)"
 description: "Get the decisions from a stage in a multi-stage access review."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

@@ -64,7 +64,8 @@ The following example updates the definition of the token lifetime **identityPro
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update-identityprovider"
+  "name": "update-identityprovider",
+  "sampleKeys": ["Amazon-OAuth"]
 }-->
 
 ```http

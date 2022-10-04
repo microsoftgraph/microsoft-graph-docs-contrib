@@ -29,7 +29,7 @@ timeZone := "Eastern Standard Time"
 dueDateTime.SetTimeZone(&timeZone) 
 requestBody.SetDueDateTime(dueDateTime)
 
-result, err := graphClient.Me().Outlook().Tasks().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Me().Outlook().Tasks().Post(context.Background(), requestBody, configuration)
 
 
 ```

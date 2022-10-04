@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCloudPcUserSetting()
-"@odata.type" := "#microsoft.graph.cloudPcUserSetting"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "Example"
 requestBody.SetDisplayName(&displayName) 
 selfServiceEnabled := true
@@ -23,7 +21,7 @@ requestBody.SetRestorePointSetting(restorePointSetting)
 localAdminEnabled := false
 requestBody.SetLocalAdminEnabled(&localAdminEnabled) 
 
-graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").Patch(requestBody)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -16,7 +16,7 @@ $requestBody->setDisplayName('What is your age?');
 
 $requestBody->setAnswerInputType(new AnswerInputType('text'));
 
-$requestBody->setAnswerOptions(]);
+$requestBody->setAnswerOptions([]);
 
 
 

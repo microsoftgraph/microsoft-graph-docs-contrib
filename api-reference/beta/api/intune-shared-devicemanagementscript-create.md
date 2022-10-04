@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementScript"
 description: "Create a new deviceManagementScript object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,18 +17,18 @@ Namespace: microsoft.graph
 
 Create a new [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)||
-| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp; &nbsp; **Policy Set** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Device management** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Policy Set** | DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application||
-| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp; &nbsp; **Policy Set** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Device management** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Policy Set** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -118,6 +118,10 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
+
+
+
+
 
 
 

@@ -68,7 +68,8 @@ If successful, this method returns a `200 OK` response code and an [externalMeet
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-externalregistration"
+  "name": "get-externalregistration",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```msgraph-interactive

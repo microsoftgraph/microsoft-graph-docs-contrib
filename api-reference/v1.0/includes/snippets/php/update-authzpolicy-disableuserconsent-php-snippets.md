@@ -11,13 +11,13 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new AuthorizationPolicy();
 $defaultUserRolePermissions = new DefaultUserRolePermissions();
-$defaultUserRolePermissions->setPermissionGrantPoliciesAssigned(]);
+$defaultUserRolePermissions->setPermissionGrantPoliciesAssigned([]);
 
 
 $requestBody->setDefaultUserRolePermissions($defaultUserRolePermissions);
 
 
-$graphServiceClient->policies()->authorizationPolicy()->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->authorizationPolicy()->patch($requestBody);
 
 
 ```

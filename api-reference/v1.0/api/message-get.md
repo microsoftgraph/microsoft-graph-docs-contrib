@@ -80,7 +80,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["AAMkADhMGAAA="],
+  "sampleKeys": ["AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA="],
   "name": "get_message"
 }-->
 ```msgraph-interactive
@@ -199,7 +199,7 @@ The next example uses a `$select` query parameter to get the Internet message he
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
   "name": "get_message_headers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 
@@ -275,7 +275,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
+  "sampleKeys": ["AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEMAAAiIsqMbYjsT5e-T7KzowPTAASoXUT3AAA="],
   "name": "get_message_in_text"
 }-->
 ```msgraph-interactive
@@ -353,7 +353,7 @@ The fourth example gets the MIME content of a message in the signed-in user's ma
   "name": "get_message_in_mime",
   "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
 } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
 

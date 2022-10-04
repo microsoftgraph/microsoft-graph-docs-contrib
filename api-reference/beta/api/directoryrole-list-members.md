@@ -1,7 +1,7 @@
 ---
 title: "List members"
 description: "Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

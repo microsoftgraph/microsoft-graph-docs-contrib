@@ -135,7 +135,7 @@ HTTP/1.1 202 Accepted
 <!-- {
   "blockType": "ignored",
   "name": "message_forward_mime_v1"
-}-->
+  }-->
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/forward

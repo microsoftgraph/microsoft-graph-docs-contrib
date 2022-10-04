@@ -1,0 +1,70 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Property",
+          "ChangedApiName": "featureSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **featureSettings** property to the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) resource. This property allows you to configure Microsoft Authenticator settings such as number matching and location context, and whether they are enabled for all users or specific users only.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorFeatureSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAuthenticatorFeatureSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource.",
+          "Target": "microsoftAuthenticatorFeatureSettings"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "featureTargetType",
+          "ChangeType": "Addition",
+          "Description": "Added the **featureTargetType** enumeration.",
+          "Target": "featureTargetType"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethodFeatureConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationMethodFeatureConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodFeatureConfiguration?view=graph-rest-beta) resource. Use this resource to configure users that are allowed from using an authentication method.",
+          "Target": "authenticationMethodFeatureConfiguration"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "featureTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [featureTarget](https://learn.microsoft.com/en-us/graph/api/resources/featureTarget?view=graph-rest-beta) resource.",
+          "Target": "featureTarget"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayAppInformationRequiredState",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **displayAppInformationRequiredState** property of the [microsoftAuthenticatorAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta) resource. Use the **displayAppInformationRequiredState** property of the [microsoftAuthenticatorFeatureSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource instead.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+        },
+        {
+          "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+          "ApiChange": "Property",
+          "ChangedApiName": "numberMatchingRequiredState",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **numberMatchingRequiredState** property of the [microsoftAuthenticatorAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta) resource. Use the **numberMatchingRequiredState** property of the [microsoftAuthenticatorFeatureSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource instead.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+        }
+      ],
+      "Id": "448b4105-a8c6-46d6-b2ae-9dee9e9b5f14",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-01T00:00:00.1897686Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    }
+  ]
+}

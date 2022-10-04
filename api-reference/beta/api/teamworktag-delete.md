@@ -52,7 +52,8 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_teamworktag"
+  "name": "delete_teamworktag",
+  "sampleKeys": ["53c53217-fe77-4383-bc5a-ed4937a1aecd", "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk=="]
 }
 -->
 ``` http

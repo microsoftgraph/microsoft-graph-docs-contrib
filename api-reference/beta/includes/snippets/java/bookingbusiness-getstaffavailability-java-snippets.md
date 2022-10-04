@@ -17,7 +17,7 @@ DateTimeTimeZone endDateTime = new DateTimeTimeZone();
 endDateTime.dateTime = "2022-01-26T17: 00: 00";
 endDateTime.timeZone = "Pacific Standard Time";
 
-graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com")
+graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com")
 	.getStaffAvailability(BookingBusinessGetStaffAvailabilityParameterSet
 		.newBuilder()
 		.withStaffIds(staffIdsList)

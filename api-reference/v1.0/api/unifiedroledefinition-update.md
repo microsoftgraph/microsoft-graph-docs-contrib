@@ -2,7 +2,7 @@
 title: "Update unifiedRoleDefinition"
 description: "Update the properties of a unifiedRoleDefinition object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -69,7 +69,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_unifiedroledefinition"
+  "name": "update_unifiedroledefinition",
+  "sampleKeys": ["0d55728d-3e24-4309-9b1b-5ac09921475a"]
 }-->
 
 ```http

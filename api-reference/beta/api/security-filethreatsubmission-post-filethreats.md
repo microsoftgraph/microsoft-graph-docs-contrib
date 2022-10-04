@@ -60,7 +60,7 @@ POST https://graph.microsoft.com/beta/security/threatSubmission/fileThreatSubmis
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.fileContentThreatSubmission",
+  "@odata.type": "#microsoft.graph.security.fileContentThreatSubmission",
   "category": "malware",
   "fileName": "test.html",
   "fileContent": "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
@@ -85,7 +85,7 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/fileThreatSubmission/$entity",
-  "@odata.type": "#microsoft.graph.fileThreatSubmission",
+  "@odata.type": "#microsoft.graph.security.fileThreatSubmission",
   "category": "malware",
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
   "createdDateTime": "2021-10-10T03:30:18.6890937Z",

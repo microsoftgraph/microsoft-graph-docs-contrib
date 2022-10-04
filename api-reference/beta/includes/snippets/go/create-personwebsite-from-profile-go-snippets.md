@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewPersonWebsite()
-categories := []String {
+categories := []string {
 	"football",
 
 }
@@ -18,7 +18,7 @@ requestBody.SetDisplayName(&displayName)
 webUrl := "www.lyndamer.no"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Profile().Websites().Post(requestBody)
+result, err := graphClient.Me().Profile().Websites().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -75,7 +75,8 @@ If successful, this method returns a `201 Created` response code and a [baseTask
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_basetask_from_"
+  "name": "create_basetask_from_",
+  "sampleKeys": ["AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNi"]
 }
 -->
 ``` http

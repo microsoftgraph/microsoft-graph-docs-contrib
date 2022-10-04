@@ -11,7 +11,7 @@ requestBody := graphmodels.NewCreateLinkPostRequestBody()
 type := "embed"
 requestBody.SetType(&type) 
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").CreateLink(site-id, list-id, listItem-id).Post(requestBody)
+result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").CreateLink().Post(requestBody)
 
 
 ```

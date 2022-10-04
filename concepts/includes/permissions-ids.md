@@ -7,7 +7,7 @@ ms.topic: include
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 
-| Permission                                              | Type        | ID                                   |
+| Permission name                                         | Type        | ID                                   |
 |---------------------------------------------------------|-------------|--------------------------------------|
 | AccessReview.Read.All                                   | Application | d07a8cc0-3d51-4b77-b3b0-32704d1f69fa |
 | AccessReview.Read.All                                   | Delegated   | ebfcd32b-babb-40f4-a14b-42706e83bd28 |
@@ -15,6 +15,8 @@ ms.topic: include
 | AccessReview.ReadWrite.All                              | Delegated   | e4aa47b9-9a69-4109-82ed-36ec70d85ff1 |
 | AccessReview.ReadWrite.Membership                       | Application | 18228521-a591-40f1-b215-5fad4488c117 |
 | AccessReview.ReadWrite.Membership                       | Delegated   | 5af8c3f5-baca-439a-97b0-ea58a435e269 |
+| Acronym.Read.All                                        | Application | 8c0aed2c-0c61-433d-b63c-6370ddc73248 |
+| Acronym.Read.All                                        | Delegated   | 9084c10f-a2d6-4713-8732-348def50fe02 |
 | AdministrativeUnit.Read.All                             | Application | 134fd756-38ce-4afd-ba33-e9623dbe66c2 |
 | AdministrativeUnit.Read.All                             | Delegated   | 3361d15d-be43-4de6-b441-3c746d05163d |
 | AdministrativeUnit.ReadWrite.All                        | Application | 5eb59dd3-1da2-4329-8733-9dabdc435916 |
@@ -43,8 +45,6 @@ ms.topic: include
 | Application.ReadWrite.OwnedBy                           | Application | 18a4783c-866b-4cc7-a460-3d5e5662c884 |
 | AppRoleAssignment.ReadWrite.All                         | Application | 06b708a9-e830-4db3-a914-8e69da51d44f |
 | AppRoleAssignment.ReadWrite.All                         | Delegated   | 84bccea3-f856-4a8a-967b-dbe0a3d53a64 |
-| Approval.Read.All                                       | Delegated   | 1196552e-b226-4363-b01e-b8901fe10a11 |
-| Approval.ReadWrite.All                                  | Delegated   | 1d3d0bc7-4b3a-427a-ae9f-6de4e1edc95f |
 | AttackSimulation.Read.All                               | Application | 93283d0a-6322-4fa8-966b-8c121624760d |
 | AttackSimulation.Read.All                               | Delegated   | 104a7a4b-ca76-4677-b7e7-2f4bc482f381 |
 | AuditLog.Read.All                                       | Application | b0afded3-3588-46d8-8b3d-9842eff778da |
@@ -53,9 +53,7 @@ ms.topic: include
 | AuthenticationContext.Read.All                          | Delegated   | 57b030f1-8c35-469c-b0d9-e4a077debe70 |
 | AuthenticationContext.ReadWrite.All                     | Application | a88eef72-fed0-4bf7-a2a9-f19df33f8b83 |
 | AuthenticationContext.ReadWrite.All                     | Delegated   | ba6d575a-1344-4516-b777-1404f5593057 |
-| BitlockerKey.Read.All                                   | Application | 57f1cf28-c0c4-4ec3-9a30-19a2eaaf2f6e |
 | BitlockerKey.Read.All                                   | Delegated   | b27a61ec-b99c-4d6a-b126-c4375d08ae30 |
-| BitlockerKey.ReadBasic.All                              | Application | f690d423-6b29-4d04-98c6-694c42282419 |
 | BitlockerKey.ReadBasic.All                              | Delegated   | 5a107bfc-4f00-4e1a-b67e-66451267bc68 |
 | Bookings.Manage.All                                     | Delegated   | 7f36b48e-542f-4d3b-9bcb-8406f0ab9fdb |
 | Bookings.Read.All                                       | Application | 6e98f277-b046-4193-a4f2-6bf6a78cd491 |
@@ -63,6 +61,12 @@ ms.topic: include
 | Bookings.ReadWrite.All                                  | Delegated   | 948eb538-f19d-4ec5-9ccc-f059e1ea4c72 |
 | BookingsAppointment.ReadWrite.All                       | Application | 9769393e-5a9f-4302-9e3d-7e018ecb64a7 |
 | BookingsAppointment.ReadWrite.All                       | Delegated   | 02a5a114-36a6-46ff-a102-954d89d9ab02 |
+| Bookmark.Read.All                                       | Application | be95e614-8ef3-49eb-8464-1c9503433b86 |
+| Bookmark.Read.All                                       | Delegated   | 98b17b35-f3b1-4849-a85f-9f13733002f0 |
+| BrowserSiteLists.Read.All                               | Application | c5ee1f21-fc7f-4937-9af0-c91648ff9597 |
+| BrowserSiteLists.Read.All                               | Delegated   | fb9be2b7-a7fc-4182-aec1-eda4597c43d5 |
+| BrowserSiteLists.ReadWrite.All                          | Application | 8349ca94-3061-44d5-9bfb-33774ea5e4f9 |
+| BrowserSiteLists.ReadWrite.All                          | Delegated   | 83b34c85-95bf-497b-a04e-b58eca9d49d0 |
 | Calendars.Read                                          | Application | 798ee544-9d2d-430c-a058-570e29e34338 |
 | Calendars.Read                                          | Delegated   | 465a38f9-76ea-45b9-9f34-9e8b0d4b0b42 |
 | Calendars.Read.Shared                                   | Delegated   | 2b9c4092-424d-4249-948d-b43879977640 |
@@ -100,15 +104,20 @@ ms.topic: include
 | Chat.Create                                             | Delegated   | 38826093-1258-4dea-98f0-00003be2b8d0 |
 | Chat.Read                                               | Delegated   | f501c180-9344-439a-bca0-6cbf209fd270 |
 | Chat.Read.All                                           | Application | 6b7d71aa-70aa-4810-a8d9-5d9fb2830017 |
+| Chat.Read.WhereInstalled                                | Application | 1c1b4c8e-3cc7-4c58-8470-9b92c9d5848b |
 | Chat.ReadBasic                                          | Delegated   | 9547fcb5-d03f-419d-9948-5928bbf71b0f |
 | Chat.ReadBasic.All                                      | Application | b2e060da-3baf-4687-9611-f4ebc0f0cbde |
+| Chat.ReadBasic.WhereInstalled                           | Application | 818ba5bd-5b3e-4fe0-bbe6-aa4686669073 |
 | Chat.ReadWrite                                          | Delegated   | 9ff7295e-131b-4d94-90e1-69fde507ac11 |
 | Chat.ReadWrite.All                                      | Application | 294ce7c9-31ba-490a-ad7d-97a7d075e4ed |
+| Chat.ReadWrite.WhereInstalled                           | Application | ad73ce80-f3cd-40ce-b325-df12c33df713 |
 | Chat.UpdatePolicyViolation.All                          | Application | 7e847308-e030-4183-9899-5235d7270f58 |
 | ChatMember.Read                                         | Delegated   | c5a9e2b1-faf6-41d4-8875-d381aa549b24 |
 | ChatMember.Read.All                                     | Application | a3410be2-8e48-4f32-8454-c29a7465209d |
+| ChatMember.Read.WhereInstalled                          | Application | 93e7c9e4-54c5-4a41-b796-f2a5adaacda7 |
 | ChatMember.ReadWrite                                    | Delegated   | dea13482-7ea6-488f-8b98-eb5bbecf033d |
 | ChatMember.ReadWrite.All                                | Application | 57257249-34ce-4810-a8a2-a03adf0c5693 |
+| ChatMember.ReadWrite.WhereInstalled                     | Application | e32c2cd9-0124-4e44-88fc-772cd98afbdb |
 | ChatMessage.Read                                        | Delegated   | cdcdac3a-fd45-410d-83ef-554db620e5c7 |
 | ChatMessage.Read.All                                    | Application | b9bb2381-47a4-46cd-aafb-00cb12f68504 |
 | ChatMessage.Send                                        | Delegated   | 116b7235-7cc6-461e-b163-8e55691d839e |
@@ -285,8 +294,18 @@ ms.topic: include
 | InformationProtectionContent.Write.All                  | Application | 287bd98c-e865-4e8c-bade-1a85523195b9 |
 | InformationProtectionPolicy.Read                        | Delegated   | 4ad84827-5578-4e18-ad7a-86530b12f884 |
 | InformationProtectionPolicy.Read.All                    | Application | 19da66cb-0fb0-4390-b071-ebc76a349482 |
+| LearningContent.Read.All                                | Application | 8740813e-d8aa-4204-860e-2a0f8f84dbc8 |
+| LearningContent.Read.All                                | Delegated   | ea4c1fd9-6a9f-4432-8e5d-86e06cc0da77 |
+| LearningContent.ReadWrite.All                           | Application | 444d6fcb-b738-41e5-b103-ac4f2a2628a3 |
+| LearningContent.ReadWrite.All                           | Delegated   | 53cec1c4-a65f-4981-9dc1-ad75dbf1c077 |
+| LearningProvider.Read                                   | Delegated   | dd8ce36f-9245-45ea-a99e-8ac398c22861 |
+| LearningProvider.ReadWrite                              | Delegated   | 40c2eb57-abaf-49f5-9331-e90fd01f7130 |
 | LicenseAssignment.ReadWrite.All                         | Application | 5facf0c1-8979-4e95-abcf-ff3d079771c0 |
 | LicenseAssignment.ReadWrite.All                         | Delegated   | f55016cc-149c-447e-8f21-7cf3ec1d6350 |
+| LifecycleWorkflows.Read.All                             | Application | 7c67316a-232a-4b84-be22-cea2c0906404 |
+| LifecycleWorkflows.Read.All                             | Delegated   | 9bcb9916-765a-42af-bf77-02282e26b01a |
+| LifecycleWorkflows.ReadWrite.All                        | Application | 5c505cf4-8424-4b8e-aa14-ee06e3bb23e3 |
+| LifecycleWorkflows.ReadWrite.All                        | Delegated   | 84b9d731-7db8-4454-8c90-fd9e95350179 |
 | Mail.Read                                               | Application | 810c84a8-4a9e-49e6-bf7d-12d183f40d01 |
 | Mail.Read                                               | Delegated   | 570282fd-fa5c-430d-a7fd-fc8dc98a9dca |
 | Mail.Read.Shared                                        | Delegated   | 7b9103a5-4610-446b-9670-80643382c1fa |
@@ -429,6 +448,10 @@ ms.topic: include
 | RecordsManagement.ReadWrite.All                         | Delegated   | f2833d75-a4e6-40ab-86d4-6dfe73c97605 |
 | Reports.Read.All                                        | Application | 230c1aed-a721-4c5d-9cb4-a90514e508ef |
 | Reports.Read.All                                        | Delegated   | 02e97553-ed7b-43d0-ab3c-f8bace0d040c |
+| ReportSettings.Read.All                                 | Application | ee353f83-55ef-4b78-82da-555bfa2b4b95 |
+| ReportSettings.Read.All                                 | Delegated   | 84fac5f4-33a9-4100-aa38-a20c6d29e5e7 |
+| ReportSettings.ReadWrite.All                            | Application | 2a60023f-3219-47ad-baa4-40e17cd02a1d |
+| ReportSettings.ReadWrite.All                            | Delegated   | b955410e-7715-4a88-a940-dfd551018df3 |
 | RoleAssignmentSchedule.Read.Directory                   | Delegated   | 344a729c-0285-42c6-9014-f12b9b8d6129 |
 | RoleAssignmentSchedule.ReadWrite.Directory              | Delegated   | 8c026be3-8e26-4774-9372-8d5d6f21daff |
 | RoleEligibilitySchedule.Read.Directory                  | Delegated   | eb0788c2-6d4e-4658-8c9e-c0fb8053f03d |
@@ -606,6 +629,7 @@ ms.topic: include
 | User.Read                                               | Delegated   | e1fe6dd8-ba31-4d61-89e7-88639da4683d |
 | User.Read.All                                           | Application | df021288-bdef-4463-88db-98f22de89214 |
 | User.Read.All                                           | Delegated   | a154be20-db9c-4678-8ab7-66f6cc099a59 |
+| User.ReadBasic.All                                      | Application | 97235f07-e226-4f63-ace3-39588e11d3a1 |
 | User.ReadBasic.All                                      | Delegated   | b340eb25-3456-403f-be2f-af7a0d370277 |
 | User.ReadWrite                                          | Delegated   | b4e74841-8e56-480b-be8b-910348b18b4c |
 | User.ReadWrite.All                                      | Application | 741f803b-c850-494e-b5df-cde7c675a1ca |
@@ -617,6 +641,10 @@ ms.topic: include
 | UserAuthenticationMethod.ReadWrite                      | Delegated   | 48971fc1-70d7-4245-af77-0beb29b53ee2 |
 | UserAuthenticationMethod.ReadWrite.All                  | Application | 50483e42-d915-4231-9639-7fdb7fd190e5 |
 | UserAuthenticationMethod.ReadWrite.All                  | Delegated   | b7887744-6746-4312-813d-72daeaee7e2d |
+| User-LifeCycleInfo.Read.All                             | Application | 8556a004-db57-4d7a-8b82-97a13428e96f |
+| User-LifeCycleInfo.Read.All                             | Delegated   | ed8d2a04-0374-41f1-aefe-da8ac87ccc87 |
+| User-LifeCycleInfo.ReadWrite.All                        | Application | 925f1248-0f97-47b9-8ec8-538c54e01325 |
+| User-LifeCycleInfo.ReadWrite.All                        | Delegated   | 7ee7473e-bd4b-4c9f-987c-bd58481f5fa2 |
 | UserNotification.ReadWrite.CreatedByApp                 | Application | 4e774092-a092-48d1-90bd-baad67c7eb47 |
 | UserNotification.ReadWrite.CreatedByApp                 | Delegated   | 26e2f3e8-b2a1-47fc-9620-89bb5b042024 |
 | UserShiftPreferences.Read.All                           | Application | de023814-96df-4f53-9376-1e2891ef5a18 |

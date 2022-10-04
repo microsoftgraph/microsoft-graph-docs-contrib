@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ExtensionPropertyCollectionPage extensionProperties = graphClient.applications("fd918e4b-c821-4efb-b50a-5eddd23afc6f").extensionProperties()
+ExtensionPropertyCollectionPage extensionProperties = graphClient.applications("acc848e9-e8ec-4feb-a521-8d58b5482e09").extensionProperties()
 	.buildRequest()
 	.get();
 

@@ -201,7 +201,7 @@ Access tokens are short lived, and you must refresh them after they expire to co
 ```
 // Line breaks for legibility only
 
-POST /common/oauth2/v2.0/token HTTP/1.1
+POST /{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: https://login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
@@ -268,7 +268,10 @@ Microsoft continues to support the Azure AD endpoint. There are [several differe
 - If your app is a multi-tenant app, you must explicitly configure it to be multi-tenant at the [Azure portal](https://portal.azure.com).
 - All permissions that your app needs must be configured by the developer. The Azure AD endpoint doesn't support dynamic (incremental) consent.
 - The Azure AD endpoint uses a `resource` parameter in authorization and token requests to specify the resource, such as Microsoft Graph, for which it wants permissions. The endpoint doesn't support the `scope` parameter.
+<!-- commenting out this section until we can have a tutorial/how-to to demo this. Old article has been archived here https://github.com/uglide/azure-content/blob/master/articles/active-directory/active-directory-integrating-applications.md
+
 - The Azure AD endpoint doesn't expose a specific endpoint for administrator consent. Instead, apps use the `prompt=admin_consent` parameter in the authorization request to obtain administrator consent for an organization. For more information, see **Triggering the Azure AD consent framework at runtime** in [Integrating applications with Azure Active Directory](/azure/active-directory/develop/active-directory-integrating-applications).
+-->
 
 For more information about getting access to Microsoft Graph on behalf of a user, see the following resources.
 

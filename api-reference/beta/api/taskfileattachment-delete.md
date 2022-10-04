@@ -54,7 +54,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_taskfileattachment"
+  "name": "delete_taskfileattachment",
+  "sampleKeys": ["AAMehdkfuhgAAA=", "AAMkAGUzY5QKjAAA=", "AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
 }
 -->
 ``` http

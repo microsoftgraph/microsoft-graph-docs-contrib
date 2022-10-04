@@ -118,7 +118,7 @@ Content-Type: application/json
 {
   "addedStudentAction": "assignIfOpen",
   "addToCalendarAction": "studentsAndTeamOwners",
-  "dueTime": "23:59:00",
+  "dueTime": "2021-08-30T23:59:00Z",
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Azure Active Directory consent requests"
-description: "Use Azure AD consent requests to manage the request workflow for users attempting to access apps that require admin consent."
+description: "Use the consent request APIs to configure the consent request workflow and to manage consent requests for users attempting to access apps that require admin consent."
 ms.localizationpriority: medium
 author: "psignoret"
 ms.prod: "governance"
@@ -13,48 +13,55 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
-
 Azure Active Directory (Azure AD) consent requests help you manage the request workflow for users attempting to access apps that require admin approval.
 
-To allow users to request access or admin consent for applications they're unauthorized to grant consent to themselves, first enable the consent request workflow. 
+Before an app can be used to access any data in your organization, the admin must consent for it to be used in the tenant. In addition, before a user can grant a consented application specific permissions to act on their behalf, the admin must also consent for users to be allowed to consent to those permissions for the app. Consent management is one way that Azure AD helps organizations to enforce application and data security.
+
+The Azure AD consent workflow allows users to request the tenant admins to grant consent to apps that require admin approval. The consent requests APIs in Microsoft Graph allows admin to configure the consent workflow and track consent requests for both apps and users.
 
 >[!NOTE]
 >The current APIs are limited to configuring the workflow and reading the list of requests. At this time, there aren’t any methods available to programmatically approve or deny a request. However, the contents of the request can be used to recreate a URL which can be used to grant admin consent and approve a request.
 
-The consent request resource types include:
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
-* [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md): Specifies the policy by which app consent requests can be created and managed for the entire tenant. There is a single **adminConsentRequestPolicy** per tenant.
-* [appConsentRequest](../resources/appconsentrequest.md): A request that represents a collection of **userConsentRequests** for a specific application.
-* [userConsentRequest](../resources/userconsentrequest.md): A request created by a user to use an app that requires admin consent to access.
-* [appConsentRequestScope](../resources/appconsentrequestscope.md): A resource that contains details of the dynamic permission scopes being requested for an application.  
+## Configure the admin consent workflow
 
-## Methods
+The admin consent policy specifies whether users can request for admin consent for apps that require admin authorization for the tenant. Use the [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) resource type and its associated methods to configure the admin consent workflow as follows:
++ Enable or disable the consent workflow.
++ Configure reviewers of admin consent requests.
++ Configure how long a pending request is valid before it expires and the principals who are notified of pending requests.
 
-The following table lists the methods that you can use to interact with consent request resources.
+## Retrieve app consent requests
 
-| Method		   | Return type	|Description|
-|:---------------|:--------|:----------|
-|[Get adminConsentRequestPolicy](../api/adminconsentrequestpolicy-get.md) | [adminConsentRequestPolicy](adminconsentrequestpolicy.md) collection | Read the properties of the [adminConsentRequestPolicy](adminconsentrequestpolicy.md). |
-|[Update adminConsentRequestPolicy](../api/adminconsentrequestpolicy-update.md) | [adminConsentRequestPolicy](adminconsentrequestpolicy.md) collection | Set configurations for the [adminConsentRequestPolicy](adminconsentrequestpolicy.md). |
-|[List appConsentRequests ](../api/appconsentapprovalroute-list-appconsentrequests.md) | [appConsentRequest](appconsentrequest.md) collection | Retrieve a collection of [appConsentRequest](appconsentrequest.md) objects and their properties. |
-|[Get appConsentRequest ](../api/appconsentrequest-get.md) | [appConsentRequest](appconsentrequest.md) collection | Read an [appConsentRequest](appconsentrequest.md) object. |
-|[appConsentRequests: filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md) | [appConsentRequest](../resources/appconsentrequest.md) collection | Read the properties of [appConsentRequest](../resources/appconsentrequest.md) objects for which the current user is the reviewer and the status of the user consent request is `InProgress`. |
-|[Get userConsentRequest ](../api/userconsentrequest-get.md) | [userConsentRequest](userconsentrequest.md) collection | Read a [userConsentRequest](userconsentrequest.md) object for an [appConsentRequest](appconsentrequest.md). |
-|[List userConsentRequests ](../api/appconsentrequest-list-userconsentrequests.md) | [userConsentRequest](userconsentrequest.md) collection | Retrieve a collection of [userConsentRequest](userconsentrequest.md) objects for an [appConsentRequest](appconsentrequest.md). |
-|[userConsentRequest: filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md) | [appConsentRequests](../resources/userconsentrequest.md) collection | Read the properties of [userConsentRequest](../resources/userconsentrequest.md) objects for an [appConsentRequest](appconsentrequest.md) for which the current user is the reviewer. |
+When a user requests for consent to use an app in the organization or to grant permissions to an app, they create a consent request for the app. App consent requests are retrieved through the [appConsentRequest](../resources/appconsentrequest.md) resource type and its associated methods.
+
+You can:
++ Retrieve all app consent requests and the associated collection of user consent requests for the app. An app consent request may have one or more user consent requests representing multiple requests from the same or multiple users.
++ Retrieve the permissions that the user has requested for the app on their behalf.
++ Use `$filter` to match against pending requests.
++ Retrieve the app consent requests for which the signed-in user is the creator of the request.
+
+## Retrieve user consent requests
+
+When a user requests for consent to use an app in the organization or to grant permissions to an app, they create a consent request for the tenant admin to allow them to use the app. User consent requests are retrieved through the [userConsentRequest](../resources/userconsentrequest.md) resource type and its associated methods.
+
+You can:
++ Retrieve the details about the user consent requests.
++ Retrieve the stages of approval that the consent request went through. The approval process is currently a single-stage process.
++ Retrieve the status of the approvals, whether pending or completed, and whether the reviewers decisions were to deny or approve the consent request.
 
 ## Role and delegated permission authorization checks
 
-The following directory roles are required for a calling user to manage the requests workflow or read the list of requests.
+The following directory roles are required for a calling application.
 
 | Operation | Delegated permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
-| Read | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Global Administrator, Global Reader, Cloud App Administrator, and Application Administrator |
+| Read | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Global Reader, Cloud App Administrator, Application Administrator, or Global Administrator   |
 
 ## See also
 
-- [Configure the admin consent workflow (preview)](/azure/active-directory/manage-apps/configure-admin-consent-workflow?preserve-view=true)
+- Learn more about how to [configure the admin consent workflow (preview)](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
+- Understand the user and admin consent flows in the [Azure AD application consent experiences](/azure/active-directory/develop/application-consent-experience).
 
 
 <!--

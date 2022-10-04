@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewPlace()
-"@odata.type" := "microsoft.graph.roomList"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "Building 1"
 requestBody.SetDisplayName(&displayName) 
 phone := "555-555-0100"
@@ -39,7 +37,7 @@ altitudeAccuracy := null
 geoCoordinates.SetAltitudeAccuracy(&altitudeAccuracy) 
 requestBody.SetGeoCoordinates(geoCoordinates)
 
-graphClient.PlacesById("place-id").Patch(requestBody)
+graphClient.PlacesById("place-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

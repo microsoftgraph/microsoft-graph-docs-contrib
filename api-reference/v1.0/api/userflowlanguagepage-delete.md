@@ -65,7 +65,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_userflowlanguagepage"
+  "name": "delete_userflowlanguagepage",
+  "sampleKeys": ["B2X_1_Partner", "en", "selfasserted1_1"]
 }
 -->
 

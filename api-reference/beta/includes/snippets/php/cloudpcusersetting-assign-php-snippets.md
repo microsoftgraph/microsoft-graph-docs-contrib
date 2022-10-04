@@ -10,23 +10,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new AssignPostRequestBody();
-$assignments1 = new ();
+$assignmentsCloudPcUserSettingAssignment1 = new CloudPcUserSettingAssignment();
+$assignmentsCloudPcUserSettingAssignment1->setId('b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff');
+
+$assignmentsCloudPcUserSettingAssignment1Target = new CloudPcManagementAssignmentTarget();
+$assignmentsCloudPcUserSettingAssignment1Target->set@odatatype('microsoft.graph.cloudPcManagementGroupAssignmentTarget');
+
 $additionalData = [
-'id' => 'b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff', 
-'target' => $assignments1 = new ();
-$		assignments1->set@odatatype('microsoft.graph.cloudPcManagementGroupAssignmentTarget');
-
-$		assignments1->setGroupId('64ff06de-9c00-4a5a-98b5-7f5abe26ffff');
-
-
-$assignments1->setTarget($target);
-
+'groupId' => '64ff06de-9c00-4a5a-98b5-7f5abe26ffff', 
 ];
-$assignments1->setAdditionalData($additionalData);
+$assignmentsCloudPcUserSettingAssignment1Target->setAdditionalData($additionalData);
 
 
 
-$assignmentsArray []= $assignments1;
+$assignmentsCloudPcUserSettingAssignment1->setTarget($assignmentsCloudPcUserSettingAssignment1Target);
+
+$assignmentsArray []= $assignmentsCloudPcUserSettingAssignment1;
 $requestBody->setAssignments($assignmentsArray);
 
 

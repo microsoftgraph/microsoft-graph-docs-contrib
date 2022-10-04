@@ -1,7 +1,7 @@
 ---
 title: "riskDetection resource type"
 description: "Represents all risk detections in AzureAD tenants."
-author: "cloudhandler"
+author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -39,7 +39,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |riskEventType|string|The type of risk event detected. The possible values are `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic`,`adminConfirmedUserCompromised`, `mcasImpossibleTravel`, `mcasSuspiciousInboxManipulationRules`, `investigationsThreatIntelligenceSigninLinked`, `maliciousIPAddressValidCredentialsBlockedIP`, and `unknownFutureValue`. <br/> For more information about each value, see [riskEventType values](#riskeventtype-values).|
 |riskState|riskState|The state of a detected risky user or sign-in. The possible values are `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, and `unknownFutureValue`. |
 |riskLevel|riskLevel|Level of the detected risk. The possible values are `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. <br />**Note:** Details for this property are only available for Azure AD Premium P2 customers. P1 customers will be returned `hidden`.|
-|riskDetail|riskDetail|Details of the detected risk. The possible values are `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`. <br />**Note:** Details for this property are only available for Azure AD Premium P2 customers. P1 customers will be returned `hidden`.|
+|riskDetail|riskDetail|Details of the detected risk. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `m365DAdminDismissedDetection`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised` , `adminDismissedAllRiskForServicePrincipal` , `m365DAdminDismissedDetection`. <br/><br />**Note:** Details for this property are only available for Azure AD Premium P2 customers. P1 customers will be returned `hidden`.|
 |source|string|Source of the risk detection. For example, `activeDirectory`. |
 |detectionTimingType|riskDetectionTimingType|Timing of the detected risk (real-time/offline). The possible values are `notDefined`, `realtime`, `nearRealtime`, `offline`, `unknownFutureValue`. |
 |activity|activityType|Indicates the activity type the detected risk is linked to. The possible values are `signin`, `user`, `unknownFutureValue`. |

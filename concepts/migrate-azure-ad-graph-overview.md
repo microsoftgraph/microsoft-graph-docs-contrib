@@ -1,15 +1,15 @@
 ---
-title: "Migrate Azure Active Directory (Azure AD) Graph to Microsoft Graph"
-description: "Learn how to migrate Azure Active Directory (Azure AD) Graph apps to Microsoft Graph before Azure AD Graph is retired."
+title: "Migrate from Azure Active Directory (Azure AD) Graph to Microsoft Graph"
+description: "Learn how to migrate yor apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph before Azure AD Graph is retired."
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 
-# Migrate Azure AD Graph apps to Microsoft Graph
+# Migrate your apps from Azure AD Graph to Microsoft Graph
 
 > [!IMPORTANT]
-> Azure Active Directory (Azure AD) Graph is deprecated but won't be retired on June 30, 2022 as [previously announced](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363). Listening closely to your feedback about the challenges of migrating such a critical dependency, we're delaying the retirement date through at least the end of this year, 2022. We’ll provide a retirement update mid-calendar year including releasing more tools to help you to migrate your apps.
+> Azure Active Directory (Azure AD) Graph is deprecated but won't be retired on June 30, 2022 as [previously announced](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363). Listening closely to your feedback about the challenges of migrating such a critical dependency, we're delaying the retirement date through at least the end of this year, 2022. We’ll provide a retirement update mid-calendar year including releasing more tools to help you to migrate your apps. However, the Azure AD Graph licensing assignment APIs will be retired on March 31, 2023 as [recently announced](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
 
 ## Why use Microsoft Graph?
 

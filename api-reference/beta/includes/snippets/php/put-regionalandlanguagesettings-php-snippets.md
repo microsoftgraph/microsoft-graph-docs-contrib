@@ -9,9 +9,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new RegionalAndLanguageSettingsPostRequestBody();
+$requestBody = new RegionalAndLanguageSettingsPutRequestBody();
 $additionalData = [
-'defaultDisplayLanguage' => $requestBody = new ();
+'defaultDisplayLanguage' => $requestBody = new DefaultDisplayLanguage();
 $		requestBody->setLocale('en-US');
 
 
@@ -30,25 +30,25 @@ $authoringLanguagesArray []= $authoringLanguages2;
 $requestBody->setAuthoringLanguages($authoringLanguagesArray);
 
 
-'defaultTranslationLanguage' => $requestBody = new ();
+'defaultTranslationLanguage' => $requestBody = new DefaultTranslationLanguage();
 $	requestBody->setLocale('en-US');
 
 
 $requestBody->setDefaultTranslationLanguage($defaultTranslationLanguage);
 
-'defaultSpeechInputLanguage' => $requestBody = new ();
+'defaultSpeechInputLanguage' => $requestBody = new DefaultSpeechInputLanguage();
 $	requestBody->setLocale('en-US');
 
 
 $requestBody->setDefaultSpeechInputLanguage($defaultSpeechInputLanguage);
 
-'defaultRegionalFormat' => $requestBody = new ();
+'defaultRegionalFormat' => $requestBody = new DefaultRegionalFormat();
 $	requestBody->setLocale('en-GB');
 
 
 $requestBody->setDefaultRegionalFormat($defaultRegionalFormat);
 
-'regionalFormatOverrides' => $requestBody = new ();
+'regionalFormatOverrides' => $requestBody = new RegionalFormatOverrides();
 $	requestBody->setCalendar('Gregorian Calendar');
 
 $	requestBody->setFirstDayOfWeek('Sunday');
@@ -66,7 +66,7 @@ $	requestBody->setTimeZone('Pacific Standard Time');
 
 $requestBody->setRegionalFormatOverrides($regionalFormatOverrides);
 
-'translationPreferences' => $requestBody = new ();
+'translationPreferences' => $requestBody = new TranslationPreferences();
 $	requestBody->setTranslationBehavior('Yes');
 
 $languageOverrides1 = new ();

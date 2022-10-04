@@ -2,7 +2,7 @@
 title: "List roleDefinitions"
 description: "Get a list of unifiedRoleDefinition objects."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -226,7 +226,7 @@ Content-type: application/json
   "name": "get_roledefinitions_entitlementmanagement_provider"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDefinitions
 ```
 

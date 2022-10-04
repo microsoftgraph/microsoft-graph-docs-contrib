@@ -51,7 +51,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_threads"
+  "name": "get_threads",
+  "sampleKeys": ["4d81ce71-486c-41e9-afc5-e41bf2d0722a", "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY="]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/4d81ce71-486c-41e9-afc5-e41bf2d0722a/conversations/AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY=/threads

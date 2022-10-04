@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewTodoTask()
 title := "A new task"
 requestBody.SetTitle(&title) 
-categories := []String {
+categories := []string {
 	"Important",
 
 }
@@ -31,7 +31,7 @@ linkedResources := []graphmodels.LinkedResourceable {
 }
 requestBody.SetLinkedResources(linkedResources)
 
-result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").Tasks().Post(requestBody)
+result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").Tasks().Post(context.Background(), requestBody, nil)
 
 
 ```

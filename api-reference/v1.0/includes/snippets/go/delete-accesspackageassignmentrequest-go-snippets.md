@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.IdentityGovernance().EntitlementManagement().AssignmentRequestsById("accessPackageAssignmentRequest-id").Delete()
+graphClient.IdentityGovernance().EntitlementManagement().AssignmentRequestsById("accessPackageAssignmentRequest-id").Delete(context.Background(), nil)
 
 
 ```

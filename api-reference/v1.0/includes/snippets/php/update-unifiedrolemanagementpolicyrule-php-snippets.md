@@ -19,13 +19,14 @@ $target->set@odatatype('microsoft.graph.unifiedRoleManagementPolicyRuleTarget');
 
 $target->setCaller('EndUser');
 
-$target->setOperations(['All', ]);
+$target->setOperations([$target->setUnifiedRoleManagementPolicyRuleTargetOperations(new UnifiedRoleManagementPolicyRuleTargetOperations('all'));
+]);
 
 $target->setLevel('Assignment');
 
-$target->setInheritableSettings(]);
+$target->setInheritableSettings([]);
 
-$target->setEnforcedSettings(]);
+$target->setEnforcedSettings([]);
 
 
 $requestBody->setTarget($target);
@@ -38,7 +39,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->policies()->roleManagementPoliciesById('unifiedRoleManagementPolicy-id')->rulesById('unifiedRoleManagementPolicyRule-id')->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->roleManagementPoliciesById('unifiedRoleManagementPolicy-id')->rulesById('unifiedRoleManagementPolicyRule-id')->patch($requestBody);
 
 
 ```

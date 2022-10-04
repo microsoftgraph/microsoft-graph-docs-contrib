@@ -69,11 +69,12 @@ If successful, this action returns a `200 OK` response code and a [baseTask](../
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "basetask_move"
+  "name": "basetask_move",
+  "sampleKeys": ["AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt", "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT"]
 }
 -->
 ``` http
-POST /me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT/move
+POST https://graph.microsoft.com/beta/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT/move
 Content-Type: application/json
 Content-length: 41
 

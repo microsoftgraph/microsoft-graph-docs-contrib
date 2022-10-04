@@ -53,45 +53,36 @@ $scope->setAdditionalData($additionalData);
 
 
 $requestBody->setScope($scope);
-$reviewers1 = new ();
-$additionalData = [
-'query' => '/users/1ed8ac56-4827-4733-8f80-86adc2e67db5', 
-'queryType' => 'MicrosoftGraph', 
-];
-$reviewers1->setAdditionalData($additionalData);
+$reviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
+$reviewersAccessReviewReviewerScope1->setQuery('/users/1ed8ac56-4827-4733-8f80-86adc2e67db5');
+
+$reviewersAccessReviewReviewerScope1->setQueryType('MicrosoftGraph');
 
 
-
-$reviewersArray []= $reviewers1;
+$reviewersArray []= $reviewersAccessReviewReviewerScope1;
 $requestBody->setReviewers($reviewersArray);
 
 
-$fallbackReviewers1 = new ();
-$additionalData = [
-'query' => '/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e', 
-'queryType' => 'MicrosoftGraph', 
-];
-$fallbackReviewers1->setAdditionalData($additionalData);
+$fallbackReviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
+$fallbackReviewersAccessReviewReviewerScope1->setQuery('/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e');
+
+$fallbackReviewersAccessReviewReviewerScope1->setQueryType('MicrosoftGraph');
 
 
+$fallbackReviewersArray []= $fallbackReviewersAccessReviewReviewerScope1;
+$fallbackReviewersAccessReviewReviewerScope2 = new AccessReviewReviewerScope();
+$fallbackReviewersAccessReviewReviewerScope2->setQuery('/users/1ed8ac56-4827-4733-8f80-86adc2e67db5');
 
-$fallbackReviewersArray []= $fallbackReviewers1;
-$fallbackReviewers2 = new ();
-$additionalData = [
-'query' => '/users/1ed8ac56-4827-4733-8f80-86adc2e67db5', 
-'queryType' => 'MicrosoftGraph', 
-];
-$fallbackReviewers2->setAdditionalData($additionalData);
+$fallbackReviewersAccessReviewReviewerScope2->setQueryType('MicrosoftGraph');
 
 
-
-$fallbackReviewersArray []= $fallbackReviewers2;
+$fallbackReviewersArray []= $fallbackReviewersAccessReviewReviewerScope2;
 $requestBody->setFallbackReviewers($fallbackReviewersArray);
 
 
 
 
-$graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->instancesById('accessReviewInstance-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->instancesById('accessReviewInstance-id')->patch($requestBody);
 
 
 ```

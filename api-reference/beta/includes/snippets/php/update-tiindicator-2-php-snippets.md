@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new TiIndicator();
 $requestBody->setAdditionalInformation('additionalInformation-after-update');
 
-$requestBody->setConfidence(confidence);
+$requestBody->setConfidence(42);
 
 $requestBody->setDescription('description-after-update');
 
@@ -26,7 +26,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->security()->tiIndicatorsById('tiIndicator-id')->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->security()->tiIndicatorsById('tiIndicator-id')->patch($requestBody, $requestConfiguration);
 
 
 ```

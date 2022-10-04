@@ -157,7 +157,8 @@ Here is an example which attaches an event with another event as an item attachm
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_item_attachment_from_event"
+  "name": "create_item_attachment_from_event",
+  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="]
 }-->
 
 ```http

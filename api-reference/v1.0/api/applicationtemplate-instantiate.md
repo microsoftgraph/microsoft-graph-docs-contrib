@@ -4,7 +4,7 @@ description: 'Add an instance of an application from the Azure AD application ga
 ms.localizationpriority: medium
 author: 'luleonpla'
 ms.prod: 'applications'
-doc_type: 'apiPageType'
+doc_type: apiPageType
 ---
 
 # applicationTemplate: instantiate

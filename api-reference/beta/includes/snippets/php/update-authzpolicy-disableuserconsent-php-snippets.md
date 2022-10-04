@@ -10,11 +10,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new AuthorizationPolicy();
-$requestBody->setPermissionGrantPolicyIdsAssignedToDefaultUserRole(]);
+$requestBody->setPermissionGrantPolicyIdsAssignedToDefaultUserRole([]);
 
 
 
-$graphServiceClient->policies()->authorizationPolicyById('authorizationPolicy-id')->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->authorizationPolicyById('authorizationPolicy-id')->patch($requestBody);
 
 
 ```

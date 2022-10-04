@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewPersonInterest()
-categories := []String {
+categories := []string {
 	"Sports",
 
 }
 requestBody.SetCategories(categories)
 
-graphClient.Me().Profile().InterestsById("personInterest-id").Patch(requestBody)
+result, err := graphClient.Me().Profile().InterestsById("personInterest-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

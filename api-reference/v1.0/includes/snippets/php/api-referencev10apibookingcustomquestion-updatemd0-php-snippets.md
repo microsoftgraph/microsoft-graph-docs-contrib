@@ -16,11 +16,11 @@ $requestBody->setDisplayName('What is your age?');
 
 $requestBody->setAnswerInputType(new AnswerInputType('text'));
 
-$requestBody->setAnswerOptions(]);
+$requestBody->setAnswerOptions([]);
 
 
 
-$graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->customQuestionsById('bookingCustomQuestion-id')->patch($requestBody);
+$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->customQuestionsById('bookingCustomQuestion-id')->patch($requestBody);
 
 
 ```

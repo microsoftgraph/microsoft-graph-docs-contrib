@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.referenceAttachment"
-requestBody.Set"@odata.type"(&"@odata.type") 
 name := "Personal pictures"
 requestBody.SetName(&name) 
 additionalData := map[string]interface{}{
@@ -20,7 +18,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().MessagesById("message-id").Attachments().Post(requestBody)
+result, err := graphClient.Me().MessagesById("message-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -61,7 +61,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessages_1"
+  "name": "post_chatmessages_1",
+  "sampleKeys": ["19:2da4c29f6d7041eca70b638b43d45437@thread.v2"]
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages

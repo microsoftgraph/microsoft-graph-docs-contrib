@@ -27,7 +27,7 @@ $settings = new DeploymentSettings();
 $settings->set@odatatype('microsoft.graph.windowsUpdates.windowsDeploymentSettings');
 
 $settingsRollout = new RolloutSettings();
-$settingsRollout->setDevicesPerOffer(devicesPerOffer);
+$settingsRollout->setDevicesPerOffer(100);
 
 
 $settings->setRollout($settingsRollout);
@@ -37,7 +37,7 @@ $monitoringRulesMonitoringRule1->set@odatatype('#microsoft.graph.windowsUpdates.
 
 $monitoringRulesMonitoringRule1->setSignal(new MonitoringSignal('rollback'));
 
-$monitoringRulesMonitoringRule1->setThreshold(threshold);
+$monitoringRulesMonitoringRule1->setThreshold(5);
 
 $monitoringRulesMonitoringRule1->setAction(new MonitoringAction('pausedeployment'));
 

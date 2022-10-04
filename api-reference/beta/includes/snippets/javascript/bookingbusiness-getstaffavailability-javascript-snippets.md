@@ -24,7 +24,7 @@ const staffAvailabilityItem = {
     } 
 };
 
-await client.api('/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability')
+await client.api('/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability')
 	.version('beta')
 	.post(staffAvailabilityItem);
 

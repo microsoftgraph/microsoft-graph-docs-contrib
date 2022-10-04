@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewBookingCustomerBase()
-"@odata.type" := "#microsoft.graph.bookingCustomer"
-requestBody.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"displayName" : "Joni Sherman", 
 	"emailAddress" : "jonis@relecloud.com", 
@@ -72,7 +70,7 @@ type := "business"
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").Customers().Post(requestBody)
+result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").Customers().Post(context.Background(), requestBody, nil)
 
 
 ```

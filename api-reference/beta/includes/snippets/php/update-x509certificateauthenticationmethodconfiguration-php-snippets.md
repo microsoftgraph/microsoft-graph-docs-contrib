@@ -22,14 +22,14 @@ $		certificateUserBindings1->setX509CertificateField('PrincipalName');
 
 $		certificateUserBindings1->setUserProperty('onPremisesUserPrincipalName');
 
-		$certificateUserBindings1->setPriority(priority);
+		$certificateUserBindings1->setPriority(1);
 
 
 $certificateUserBindingsArray []= $certificateUserBindings1;
 $requestBody->setCertificateUserBindings($certificateUserBindingsArray);
 
 
-'authenticationModeConfiguration' => $requestBody = new ();
+'authenticationModeConfiguration' => $requestBody = new AuthenticationModeConfiguration();
 $	requestBody->setX509CertificateAuthenticationDefaultMode('x509CertificateMultiFactor');
 
 $rules1 = new ();
@@ -74,7 +74,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
 
 
 ```

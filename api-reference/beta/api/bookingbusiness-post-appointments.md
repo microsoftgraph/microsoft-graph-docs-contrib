@@ -64,10 +64,11 @@ The following is an example of the request. This appointment does not involve bo
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_bookingappointment_from_bookingbusiness"
+  "name": "create_bookingappointment_from_bookingbusiness",
+  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments
+POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments
 Content-type: application/json
 
 {   
@@ -242,10 +243,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-bookingappointment-from-bookingbusiness-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-bookingappointment-from-bookingbusiness-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

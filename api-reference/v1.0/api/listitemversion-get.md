@@ -49,7 +49,7 @@ This example retrieves a version of a listItem and expands the fields collection
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-single-version-listItem", "scopes": "files.read sites.read.all", "tags": "service.graph service.sharepoint" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}?expand=fields
 ```
 

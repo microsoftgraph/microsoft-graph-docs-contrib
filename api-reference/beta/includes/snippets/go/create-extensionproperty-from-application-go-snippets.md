@@ -12,13 +12,13 @@ name := "jobGroup"
 requestBody.SetName(&name) 
 dataType := "String"
 requestBody.SetDataType(&dataType) 
-targetObjects := []String {
+targetObjects := []string {
 	"User",
 
 }
 requestBody.SetTargetObjects(targetObjects)
 
-result, err := graphClient.ApplicationsById("application-id").ExtensionProperties().Post(requestBody)
+result, err := graphClient.ApplicationsById("application-id").ExtensionProperties().Post(context.Background(), requestBody, nil)
 
 
 ```

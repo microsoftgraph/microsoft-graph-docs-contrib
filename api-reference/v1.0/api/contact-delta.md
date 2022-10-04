@@ -86,7 +86,7 @@ returning **contact** rather than **message** collections.
   "blockType": "request",
   "name": "contact_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
 Prefer: odata.maxpagesize=2
 ```

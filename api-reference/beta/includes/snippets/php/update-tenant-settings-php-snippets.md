@@ -10,11 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Settings();
-$requestBody->setDeletedUserPersonalSiteRetentionPeriodInDays(deletedUserPersonalSiteRetentionPeriodInDays);
+$requestBody->setDeletedUserPersonalSiteRetentionPeriodInDays(365);
 
 $requestBody->setExcludedFileExtensionsForSyncApp(['.mp3', ]);
 
 $requestBody->setImageTaggingOption(new ImageTaggingChoice('enhanced'));
+
+$requestBody->setIsLegacyAuthProtocolsEnabled(true);
 
 $requestBody->setIsSitesStorageLimitAutomatic(false);
 
@@ -22,11 +24,11 @@ $requestBody->setIsSyncButtonHiddenOnPersonalSite(false);
 
 $requestBody->setIsUnmanagedSyncAppForTenantRestricted(false);
 
-$requestBody->setPersonalSiteDefaultStorageLimitInMB(personalSiteDefaultStorageLimitInMB);
+$requestBody->setPersonalSiteDefaultStorageLimitInMB(120000);
 
 
 
-$graphServiceClient->admin()->sharepoint()->settings()->patch($requestBody);
+$requestResult = $graphServiceClient->admin()->sharepoint()->settings()->patch($requestBody);
 
 
 ```

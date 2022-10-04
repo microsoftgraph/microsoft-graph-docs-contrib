@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAssignTagPostRequestBody()
-tenantIds := []String {
+tenantIds := []string {
 	"String",
 
 }
 requestBody.SetTenantIds(tenantIds)
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").AssignTag(tenantTag-id).Post(requestBody)
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").AssignTag().Post(context.Background(), requestBody, nil)
 
 
 ```

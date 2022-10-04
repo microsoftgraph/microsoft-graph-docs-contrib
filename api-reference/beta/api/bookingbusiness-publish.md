@@ -43,16 +43,17 @@ If successful, this method returns `204 No content` response code. It does not r
 
 ## Example
 The following is an example of how to call this API.
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "bookingbusiness_publish"
+  "name": "bookingbusiness_publish",
+  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/publish
+POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/publish
 ```
 
 # [C#](#tab/csharp)
@@ -82,7 +83,7 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@con
 ---
 
 
-##### Response
+### Response
 The following is an example of the response.
 <!-- {
   "blockType": "response"

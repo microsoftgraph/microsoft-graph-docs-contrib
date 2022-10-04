@@ -15,9 +15,7 @@ requestBody.SetDescription(&description)
 
 
 conversationMember := graphmodels.NewConversationMember()
-"@odata.type" := "#microsoft.graph.aadUserConversationMember"
-conversationMember.Set"@odata.type"(&"@odata.type") 
-roles := []String {
+roles := []string {
 	"owner",
 
 }
@@ -37,7 +35,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Teams().Post(requestBody)
+result, err := graphClient.Teams().Post(context.Background(), requestBody, nil)
 
 
 ```

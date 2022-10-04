@@ -56,35 +56,35 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_caseoperation"
+  "name": "list_caseoperation_and properties"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/operations
+GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/operations
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-caseoperation-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-caseoperation-andproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-caseoperation-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-caseoperation-andproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-caseoperation-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-caseoperation-andproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-caseoperation-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-caseoperation-andproperties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-caseoperation-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-caseoperation-andproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-caseoperation-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-caseoperation-andproperties-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

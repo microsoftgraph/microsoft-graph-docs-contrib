@@ -1,7 +1,7 @@
 ---
 title: "List scopedMembers for a directory role"
 description: "Retrieve a list of scopedRoleMembership objects for a directory role."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

@@ -15,8 +15,6 @@ requestBody.SetDescriptionForAdmins(&descriptionForAdmins)
 descriptionForReviewers := "Information security is everyone's responsibility. Review our access policy for more."
 requestBody.SetDescriptionForReviewers(&descriptionForReviewers) 
 instanceEnumerationScope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-instanceEnumerationScope.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"query" : "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')", 
 	"queryType" : "MicrosoftGraph", 
@@ -24,8 +22,6 @@ additionalData := map[string]interface{}{
 instanceEnumerationScope.SetAdditionalData(additionalData)
 requestBody.SetInstanceEnumerationScope(instanceEnumerationScope)
 scope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.accessReviewInactiveUsersQueryScope"
-scope.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"query" : "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')", 
 	"queryType" : "MicrosoftGraph", 
@@ -35,29 +31,27 @@ scope.SetAdditionalData(additionalData)
 requestBody.SetScope(scope)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"query" : "./owners", 
-	"queryType" : "MicrosoftGraph", 
-}
-.SetAdditionalData(additionalData)
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "./owners"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
 
 reviewers := []graphmodels.Objectable {
-	,
+	accessReviewReviewerScope,
 
 }
 requestBody.SetReviewers(reviewers)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"query" : "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f", 
-	"queryType" : "MicrosoftGraph", 
-}
-.SetAdditionalData(additionalData)
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
 
 fallbackReviewers := []graphmodels.Objectable {
-	,
+	accessReviewReviewerScope,
 
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)
@@ -84,7 +78,7 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.NOEND_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := "2020-05-04T00:00:00.000Z"
+startDate := 2020-05-04T00:00:00.000Z
 range.SetStartDate(&startDate) 
 recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
@@ -96,7 +90,7 @@ autoApplyDecisionsEnabled := true
 settings.SetAutoApplyDecisionsEnabled(&autoApplyDecisionsEnabled) 
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

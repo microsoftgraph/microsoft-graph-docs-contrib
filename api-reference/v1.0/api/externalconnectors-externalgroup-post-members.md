@@ -67,7 +67,8 @@ If successful, this method returns a `201 Created` response code and an **identi
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_aad_user_identity_from_group"
+  "name": "create_aad_user_identity_from_group",
+  "sampleKeys": ["31bea3d537902000", "contosohr"]
 }
 -->
 
@@ -136,7 +137,8 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_aad_group_identity_from_group"
+  "name": "create_aad_group_identity_from_group",
+  "sampleKeys": ["31bea3d537902000", "contosohr"]
 }
 -->
 
@@ -204,7 +206,8 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_external_group_identity_from_group"
+  "name": "create_external_group_identity_from_group",
+  "sampleKeys": ["31bea3d537902000", "contosohr"]
 }
 -->
 

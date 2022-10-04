@@ -10,43 +10,47 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewUpdateAlertsPostRequestBody()
 
 
- := graphmodels.New()
+alert := graphmodels.NewAlert()
+assignedTo := "String"
+alert.SetAssignedTo(&assignedTo) 
+closedDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
+alert.SetClosedDateTime(&closedDateTime) 
+comments := []string {
+	"String",
+
+}
+alert.SetComments(comments)
+feedback := graphmodels.NewAlertFeedback()
 additionalData := map[string]interface{}{
-	"assignedTo" : "String", 
-	"closedDateTime" : "String (timestamp)", 
-	comments := []String {
-		"String",
+}
+feedback.SetAdditionalData(additionalData)
+alert.SetFeedback(feedback)
+id := "String (identifier)"
+alert.SetId(&id) 
+status := graphmodels.NewAlertStatus()
+additionalData := map[string]interface{}{
+}
+status.SetAdditionalData(additionalData)
+alert.SetStatus(status)
+tags := []string {
+	"String",
 
-	}
-feedback := graphmodels.New()
-"@odata.type" := "microsoft.graph.alertFeedback"
-feedback.Set"@odata.type"(&"@odata.type") 
-	.SetFeedback(feedback)
-	"id" : "String (identifier)", 
-status := graphmodels.New()
-"@odata.type" := "microsoft.graph.alertStatus"
-status.Set"@odata.type"(&"@odata.type") 
-	.SetStatus(status)
-	tags := []String {
-		"String",
-
-	}
-vendorInformation := graphmodels.New()
+}
+alert.SetTags(tags)
+vendorInformation := graphmodels.NewSecurityVendorInformation()
 provider := "String"
 vendorInformation.SetProvider(&provider) 
 vendor := "String"
 vendorInformation.SetVendor(&vendor) 
-	.SetVendorInformation(vendorInformation)
-}
-.SetAdditionalData(additionalData)
+alert.SetVendorInformation(vendorInformation)
 
 value := []graphmodels.Objectable {
-	,
+	alert,
 
 }
 requestBody.SetValue(value)
 
-result, err := graphClient.Security().Alerts().UpdateAlerts().Post(requestBody)
+result, err := graphClient.Security().Alerts().UpdateAlerts().Post(context.Background(), requestBody, nil)
 
 
 ```

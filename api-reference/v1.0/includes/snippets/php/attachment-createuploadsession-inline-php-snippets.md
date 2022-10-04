@@ -15,7 +15,7 @@ $attachmentItem->setAttachmentType(new AttachmentType('file'));
 
 $attachmentItem->setName('scenary');
 
-$attachmentItem->setSize(size);
+$attachmentItem->setSize(7208534);
 
 $attachmentItem->setIsInline(true);
 

@@ -1,7 +1,7 @@
 ---
 title: "user resource type"
 description: "Represents an Azure AD user account. Inherits from directoryObject."
-author: "jpettere"
+author: "yyuank"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: resourcePageType
@@ -66,7 +66,7 @@ This resource supports:
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Reprocess subscription assignments for the user. |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again. |
 | [List deleted groups](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days. |
-| [List deleted groups owned by user](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days and that are owned by a user. |
+| [List deleted groups owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days and that are owned by a user. |
 | [Get deleted group](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted group by ID. |
 | [Restore deleted group](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Restore a group deleted in the tenant in the last 30 days. |
 | [Permanently delete group](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted group from the tenant. |
@@ -200,6 +200,7 @@ This resource supports:
 |refreshTokensValidFromDateTime|DateTimeOffset|Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. <br><br>Returned only on `$select`. Read-only. |
 |responsibilities|String collection|A list for the user to enumerate their responsibilities. <br><br>Returned only on `$select`.|
 |schools|String collection|A list for the user to enumerate the schools they have attended. <br><br>Returned only on `$select`.|
+|securityIdentifier| String | Security identifier (SID) of the user, used in Windows scenarios. <br><br>Read-only. Returned by default. <br>Supports `$select` and `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 |showInAddressList|Boolean|**Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](/graph/known-issues#showinaddresslist-property-is-out-of-sync-with-microsoft-exchange).|
 |skills|String collection|A list for the user to enumerate their skills. <br><br>Returned only on `$select`.|
 |signInSessionsValidFromDateTime|DateTimeOffset| Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset. <br><br>Returned only on `$select`.|
@@ -523,6 +524,7 @@ The following is a JSON representation of the resource.
   "proxyAddresses": ["String"],
   "responsibilities": ["String"],
   "schools": ["String"],
+  "securityIdentifier": "String",
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "String (timestamp)",
   "skills": ["String"],

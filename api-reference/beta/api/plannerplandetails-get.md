@@ -50,7 +50,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_plannerplandetails"
+  "name": "get_plannerplandetails",
+  "sampleKeys": ["xqQg5FS2LkCp935s-FIFm2QAFkHM"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details

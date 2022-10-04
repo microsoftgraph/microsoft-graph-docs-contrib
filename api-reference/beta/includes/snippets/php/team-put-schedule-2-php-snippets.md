@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new SchedulePostRequestBody();
+$requestBody = new SchedulePutRequestBody();
 $additionalData = [
 'enabled' => true,
 'timeZone' => 'America/Chicago', 
@@ -20,13 +20,13 @@ $additionalData = [
 'offerShiftRequestsEnabled' => true,
 'timeOffRequestsEnabled' => true,
 'timeClockEnabled' => true,
-'timeClockSettings' => $requestBody = new ();
-$approvedLocation = new ();
-		$approvedLocation->setAltitude(altitude);
+'timeClockSettings' => $requestBody = new TimeClockSettings();
+$approvedLocation = new ApprovedLocation();
+		$approvedLocation->setAltitude(1024.13);
 
-		$approvedLocation->setLatitude(latitude);
+		$approvedLocation->setLatitude(26.13246);
 
-		$approvedLocation->setLongitude(longitude);
+		$approvedLocation->setLongitude(24.34616);
 
 
 $requestBody->setApprovedLocation($approvedLocation);

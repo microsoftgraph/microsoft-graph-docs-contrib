@@ -53,7 +53,7 @@ Here is an example to download a complete file.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/content
 ```
 

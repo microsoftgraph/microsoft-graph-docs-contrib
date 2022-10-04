@@ -62,7 +62,8 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpcusersetting_assign"
+  "name": "cloudpcusersetting_assign",
+  "sampleKeys": ["b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff"]
 }
 -->
 ``` http

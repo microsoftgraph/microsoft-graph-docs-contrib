@@ -66,7 +66,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_oAuth2PermissionGrant"
+  "name": "get_oAuth2PermissionGrant",
+  "sampleKeys": ["AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0"]
 }-->
 
 ```msgraph-interactive

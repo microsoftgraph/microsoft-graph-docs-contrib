@@ -40,17 +40,15 @@ mailboxLocations := null
 requestBody.SetMailboxLocations(&mailboxLocations) 
 pauseAfterEstimate := true
 requestBody.SetPauseAfterEstimate(&pauseAfterEstimate) 
-regulations := []String {
+regulations := []string {
 	"CCPA",
 
 }
 requestBody.SetRegulations(regulations)
 siteLocations := graphmodels.NewSubjectRightsRequestSiteLocation()
-"@odata.type" := "microsoft.graph.subjectRightsRequestAllSiteLocation"
-siteLocations.Set"@odata.type"(&"@odata.type") 
 requestBody.SetSiteLocations(siteLocations)
 
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(requestBody)
+result, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

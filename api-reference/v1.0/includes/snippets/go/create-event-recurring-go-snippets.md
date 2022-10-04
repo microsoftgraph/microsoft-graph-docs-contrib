@@ -35,7 +35,8 @@ pattern.SetType(&type)
 interval := int32(1)
 pattern.SetInterval(&interval) 
 daysOfWeek := []graphmodels.DayOfWeekable {
-	"Monday",
+	dayOfWeek := graphmodels.MONDAY_DAYOFWEEK 
+	pattern.SetDayOfWeek(&dayOfWeek) 
 
 }
 pattern.SetDaysOfWeek(daysOfWeek)
@@ -43,9 +44,9 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.ENDDATE_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := "2017-09-04"
+startDate := 2017-09-04
 range.SetStartDate(&startDate) 
-endDate := "2017-12-31"
+endDate := 2017-12-31
 range.SetEndDate(&endDate) 
 recurrence.SetRange(range)
 requestBody.SetRecurrence(recurrence)
@@ -55,27 +56,25 @@ location.SetDisplayName(&displayName)
 requestBody.SetLocation(location)
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-emailAddress := graphmodels.New()
+attendee := graphmodels.NewAttendee()
+emailAddress := graphmodels.NewEmailAddress()
 address := "AdeleV@contoso.onmicrosoft.com"
 emailAddress.SetAddress(&address) 
 name := "Adele Vance"
 emailAddress.SetName(&name) 
-	.SetEmailAddress(emailAddress)
-	"type" : "required", 
-}
-.SetAdditionalData(additionalData)
+attendee.SetEmailAddress(emailAddress)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendee.SetType(&type) 
 
 attendees := []graphmodels.Objectable {
-	,
+	attendee,
 
 }
 requestBody.SetAttendees(attendees)
 allowNewTimeProposals := true
 requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals) 
 
-result, err := graphClient.Me().Events().Post(requestBody)
+result, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
 
 
 ```

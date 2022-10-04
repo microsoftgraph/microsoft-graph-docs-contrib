@@ -12,7 +12,7 @@ description := "Library Assist"
 requestBody.SetDescription(&description) 
 displayName := "Library Assist"
 requestBody.SetDisplayName(&displayName) 
-groupTypes := []String {
+groupTypes := []string {
 	"Unified",
 
 }
@@ -22,7 +22,7 @@ requestBody.SetMailEnabled(&mailEnabled)
 mailNickname := "library-help"
 requestBody.SetMailNickname(&mailNickname) 
 
-graphClient.GroupsById("group-id").Patch(requestBody)
+result, err := graphClient.GroupsById("group-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

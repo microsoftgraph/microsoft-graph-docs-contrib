@@ -53,7 +53,8 @@ If successful, this method returns a `200 OK` response code with the **externalG
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_externalgroup"
+  "name": "get_externalgroup",
+  "sampleKeys": ["31bea3d537902000", "contosohr"]
 }
 -->
 

@@ -2,7 +2,7 @@
 title: "Activate directoryRole"
 description: "Activate a directory role."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Activate a directory role. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators and the implicit Users directory roles are activated by default. To access and assign members to another directory role, you must first activate it with its corresponding directory role template ([directoryRoleTemplate](../resources/directoryroletemplate.md)).
+Activate a directory role. To read a directory role or update its members, it must first be activated in the tenant.
+
+The Company Administrators and the implicit user directory roles (**User**, **Guest User**, and **Restricted Guest User** roles) are activated by default. To access and assign members to other directory roles, you must first activate it with its corresponding [directory role template](../resources/directoryroletemplate.md) ID.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

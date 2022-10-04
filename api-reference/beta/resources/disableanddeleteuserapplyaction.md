@@ -1,7 +1,7 @@
 ---
 title: "disableAndDeleteUserApplyAction resource type"
 description: "Disable and delete any B2B guest user who is denied in an access review."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
