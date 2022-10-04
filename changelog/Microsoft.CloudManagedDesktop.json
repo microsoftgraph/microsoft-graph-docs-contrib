@@ -36,7 +36,7 @@
                 },
                 {
                     "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
-                    "ApiChange": "Resource",
+                    "ApiChange": "Relationship",
                     "ChangedApiName": "reports",
                     "ChangeType": "Addition",
                     "Description": "Added the **reports** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
