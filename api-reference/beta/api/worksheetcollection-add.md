@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/items/{id}/workbook/worksheets/
-POST /me/drive/root:/{item-path}:/workbook/worksheets/
+POST /me/drive/items/{id}/workbook/worksheets/add
+POST /me/drive/root:/{item-path}:/workbook/worksheets/add
 
 ```
 ## Request headers

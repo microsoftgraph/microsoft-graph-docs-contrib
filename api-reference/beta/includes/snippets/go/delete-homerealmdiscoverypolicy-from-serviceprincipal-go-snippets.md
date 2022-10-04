@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").HomeRealmDiscoveryPoliciesById("homeRealmDiscoveryPolicy-id").$ref().Delete()
+graphClient.ServicePrincipalsById("servicePrincipal-id").HomeRealmDiscoveryPoliciesById("homeRealmDiscoveryPolicy-id").$ref().Delete(context.Background(), nil)
 
 
 ```

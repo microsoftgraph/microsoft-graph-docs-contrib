@@ -11,7 +11,7 @@ requestBody := graphmodels.NewRejectPostRequestBody()
 reason := graphmodels.BUSY_REJECTREASON 
 requestBody.SetReason(&reason) 
 
-graphClient.Communications().CallsById("call-id").Reject().Post(requestBody)
+graphClient.Communications().CallsById("call-id").Reject().Post(context.Background(), requestBody, nil)
 
 
 ```

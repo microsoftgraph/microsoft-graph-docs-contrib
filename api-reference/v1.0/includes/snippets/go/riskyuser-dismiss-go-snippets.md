@@ -15,7 +15,7 @@ userIds := []string {
 }
 requestBody.SetUserIds(userIds)
 
-graphClient.IdentityProtection().RiskyUsers().Dismiss().Post(requestBody)
+graphClient.IdentityProtection().RiskyUsers().Dismiss().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -67,8 +67,10 @@ items:
           - name: Overview
             href: azuread-users-concept-overview.md
             displayName: users
+          - name: Default user permissions
+            href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
           - name: Access user data
-            href: /learn/modules/msgraph-access-user-data
+            href: /training/modules/msgraph-access-user-data
       - name: Groups
         items:
           - name: Overview
@@ -81,7 +83,7 @@ items:
           - name: Microsoft 365 group settings
             href: group-directory-settings.md
           - name: Manage group lifecycle
-            href: /learn/modules/msgraph-access-group-data
+            href: /training/modules/msgraph-access-group-data
       - name: Applications
         items:
           - name: Overview
@@ -91,11 +93,13 @@ items:
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
             href: application-proxy-configure-api.md
+          - name: Automate provisioning
+            href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
       - name: Accessing data at scale
         items:
           - name: Data Connect overview
             href: data-connect-concept-overview.md
-            displayName: Microsoft Graph Data Connect, access data, bulk data           
+            displayName: Microsoft Graph Data Connect, access data, bulk data
           - name: Build your first Data Connect application
             href: data-connect-quickstart.yml
             displayName: Microsoft Graph Data Connect
@@ -122,7 +126,7 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Propose new meeting times
             href: outlook-calendar-meeting-proposals.md
-          - name: Set event as online meeting
+          - name: Create or set event as online meeting
             href: outlook-calendar-online-meetings.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
@@ -140,33 +144,6 @@ items:
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
-      - name: Cloud communications
-        items:
-          - name: Overview
-            href: cloud-communications-concept-overview.md
-            displayName: cloud communications
-          - name: Get started
-            href: cloud-communications-get-started.md
-          - name: Supported call types
-            href: cloud-communications-calls.md
-          - name: Call records
-            href: cloud-communications-callrecords.md
-          - name: Online meeting artifacts and permissions
-            href: cloud-communications-online-meeting-artifacts.md
-          - name: Choose a media hosting option
-            href: cloud-communications-media.md
-          - name: Create or join online meetings
-            href: cloud-communications-online-meetings.md
-          - name: Choose an online meeting API
-            href: choose-online-meeting-api.md
-          - name: Configure application access
-            href: cloud-communication-online-meeting-application-access-policy.md
-          - name: Manage bot phone numbers
-            href: cloud-communications-phone-number.md
-          - name: Identify large gallery view participants
-            href: cloud-communications-identifylargegalleryview.md
-          - name: Subscribe to change notifications for online meetings
-            href: changenotifications-for-onlinemeeting.md
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
@@ -183,6 +160,20 @@ items:
           - name: Build your first custom connector
             href: connecting-external-content-build-quickstart.yml
             displayName: connectors, Microsoft Graph connectors
+          - name: Build your first custom connector using SDK
+            items:
+              - name: Overview
+                href: custom-connector-sdk-sample-overview.md
+              - name: Build the connector
+                href: custom-connector-sdk-sample-create.md
+              - name: Test the connector
+                href: custom-connector-sdk-sample-test.md
+              - name: Host the connector as a Windows service
+                href: custom-connector-sdk-sample-hosting.md
+              - name: Publish the connector
+                href: custom-connector-sdk-sample-publish.md
+              - name: Surface the data in search
+                href: custom-connector-sdk-sample-search.md
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
@@ -209,7 +200,7 @@ items:
             displayName: cross device, Project Rome
       - name: Customer booking (preview)
         items:
-          - name: Overview 
+          - name: Overview
             href: booking-concept-overview.md
             displayName: Bookings, Microsoft Bookings, booking, customer booking
           - name: Business rules
@@ -234,7 +225,7 @@ items:
             displayName: Intune
           - name: Cloud PC (preview)
             href: cloudpc-concept-overview.md
-          - name: Device updates (preview)           
+          - name: Device updates (preview)
             items:
               - name: Overview
                 href: windowsupdates-concept-overview.md
@@ -267,13 +258,31 @@ items:
             href: education-concept-overview.md
             displayName: education
           - name: Rubrics
-            href: education-rubric-overview.md
+            href: education-rubric-overview.md 
           - name: Upload files
             href: education-upload-resource-overview.md
+          - name: Upload feedback files
+            href: education-upload-feedback-resource-overview.md   
           - name: Assignment and submission state transitions
             href: assignments-submissions-states-transition.md
           - name: Specify the default channel for assignment notifications
-            href: education-build-notificationchannelurl.md
+            href: education-build-notificationchannelurl.md            
+          - name: Set up an EDU development environment
+            items:
+              - name: Overview
+                href: msgraph-onboarding-overview.md
+              - name: Join the Microsoft Partner Network
+                href: msgraph-onboarding-mpn.md
+              - name: Set up an EDU dev tenant
+                href: msgraph-onboarding-devtenant.md
+              - name: Set up an EDU demo tenant
+                href: msgraph-onboarding-edutenant.md
+              - name: Set up School Data Sync
+                href: msgraph-onboarding-sds.md
+              - name: Set up Microsoft Teams
+                href: msgraph-onboarding-msteams.md
+              - name: Use Graph Explorer with education APIs
+                href: msgraph-onboarding-graphexplorer.md                                                                                            
       - name: Extensions
         items:
           - name: Overview
@@ -313,6 +322,10 @@ items:
                 href: tutorial-riskdetection-api.md
           - name: Governance
             items:
+              - name: Manage the lifecycle of users
+                items:
+                - name: Configure task arguments
+                  href: identitygovernance-lifecycleworkflows-task-arguments.md
               - name: Manage access to resources
                 href: tutorial-access-package-api.md
                 displayName: governance, identity
@@ -337,7 +350,7 @@ items:
         items:
           - name: Overview
             href: outlook-mail-concept-overview.md
-            displayName: Outlook, Outlook mail, mail, message           
+            displayName: Outlook, Outlook mail, mail, message
           - name: Automate messaging
             href: outlook-create-send-messages.md
           - name: Organize messages
@@ -496,35 +509,65 @@ items:
       - name: Tasks and plans
         href: planner-concept-overview.md
         displayName: Planner
-      - name: Teamwork
+      - name: Teamwork and communications
         items:
-          - name: Overview
-            href: teams-concept-overview.md
-            displayName: teams, team, teamwork, Microsoft Teams
+        - name: Overview
+          href: teams-concept-overview.md
+          displayName: teams, team, teamwork, Microsoft Teams
+        - name: Activity feed notifications
+          items:
+          - name: Send activity feed notifications
+            href: teams-send-activityfeednotifications.md
+          - name: Best practices
+            href: teams-activity-feed-notifications-best-practices.md
+        - name: Application access and tabs 
+          items:        
+          - name: Configure application access
+            href: cloud-communication-online-meeting-application-access-policy.md    
+          - name: Configure built-in tabs
+            href: teams-configuring-builtin-tabs.md
+          - name: Get system messages
+            href: system-messages.md      
+        - name: Bots  
+          items:
+          - name: Manage bot phone numbers
+            href: cloud-communications-phone-number.md
+          - name: Register a bot
+            href: cloud-communications-get-started.md   
+          - name: Send proactive messages with a bot
+            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context      
+        - name: Calls and online meetings 
+          items:      
+          - name: Call records
+            href: cloud-communications-callrecords.md  
+          - name: Supported call types
+            href: cloud-communications-calls.md     
+          - name: Create or join online meetings
+            href: cloud-communications-online-meetings.md 
+          - name: Choose an online meeting API
+            href: choose-online-meeting-api.md
+          - name: Choose a media hosting option
+            href: cloud-communications-media.md
+          - name: Online meeting artifacts and permissions
+            href: cloud-communications-online-meeting-artifacts.md
+          - name: Identify large gallery view participants
+            href: cloud-communications-identifylargegalleryview.md
+        - name: Change notifications
+          items:
+          - name: Subscribe for teams, chats, channels
+            href: teams-change-notification-in-microsoft-teams-overview.md
+          - name: Subscribe for online meetings
+            href: changenotifications-for-onlinemeeting.md
+        - name: Groups and teams
+          items: 
           - name: Create a group and team
             href: teams-create-group-and-team.md
           - name: List all teams
-            href: teams-list-all-teams.md
-          - name: Choose an online meeting API
-            href: choose-online-meeting-api.md
-          - name: Configure built-in tabs
-            href: teams-configuring-builtin-tabs.md
-          - name: Send proactive messages with a bot
-            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
-          - name: Protected APIs
-            href: teams-protected-apis.md
-          - name: Licensing and payment models
-            href: teams-licenses.md
-          - name: Activity feed notifications
-            items:
-              - name: Send activity feed notifications
-                href: teams-send-activityfeednotifications.md
-              - name: Best practices
-                href: teams-activity-feed-notifications-best-practices.md
-          - name: Subscribe to change notifications
-            href: teams-change-notification-in-microsoft-teams-overview.md
-          - name: Get system messages
-            href: system-messages.md
+            href: teams-list-all-teams.md          
+        - name: Licensing and payment models
+          href: teams-licenses.md       
+        - name: Protected APIs
+          href: teams-protected-apis.md 
       - name: To-do tasks
         displayName: Microsoft To Do
         items:
@@ -603,7 +646,7 @@ items:
                 href: aad-advanced-queries.md
               - name: Optimize requests with query parameters
                 displayName: OData query parameters, OData
-                href: /learn/modules/optimize-data-usage
+                href: /training/modules/optimize-data-usage
           - name: Batching
             href: json-batching.md
             displayName: Batch request
@@ -616,7 +659,7 @@ items:
                 displayName: throttling
                 href: throttling-limits.md
               - name: Optimize network traffic
-                href: /learn/modules/optimize-network-traffic
+                href: /training/modules/optimize-network-traffic
                 displayName: throttling
           - name: Change notifications
             items:
@@ -624,7 +667,7 @@ items:
                 href: webhooks.md
                 displayName: change notifications, WebHooks, set up notifications for changes in resource data
               - name: Change notifications tutorial
-                href: /learn/modules/msgraph-changenotifications-trackchanges
+                href: /training/modules/msgraph-changenotifications-trackchanges
               - name: Missing change notifications
                 href: webhooks-lifecycle.md
               - name: Notifications with resource data
@@ -748,6 +791,34 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
+          - name: Use the connectors SDK
+            items:
+            - name: Overview
+              href: custom-connector-sdk-overview.md
+            - name: Contracts
+              items:
+              - name: Services
+                href: custom-connector-sdk-contracts-services.md
+              - name: ConnectorInfo API
+                href: custom-connector-sdk-contracts-connectorinfo.md
+              - name: Connection management APIs
+                href: custom-connector-sdk-contracts-connectionmanagement.md
+              - name: Connector crawler APIs
+                href: custom-connector-sdk-contracts-connectorcrawler.md
+              - name: Connector OAuth APIs
+                href: custom-connector-sdk-contracts-connectoroauth.md
+              - name: Common models
+                href: custom-connector-sdk-contracts-common.md
+            - name: Test utility
+              href: custom-connector-sdk-testapp.md
+            - name: Publish a connector
+              href: custom-connector-sdk-publish.md
+            - name: Develop connectors in other languages
+              href: custom-connector-sdk-other-languages.md
+            - name: Best practices
+              href: custom-connector-sdk-best-practices.md
+            - name: Troubleshooting
+              href: custom-connector-sdk-troubleshooting.md
           - name: Use PowerShell
             items:
               - name: PowerShell overview
@@ -792,6 +863,8 @@ items:
                 href: toolkit/get-started/build-a-microsoft-teams-sso-tab.md
               - name: Build an Electron app
                 href: toolkit/get-started/build-an-electron-app.md
+              - name: Build a productivity hub app
+                href: /graph/toolkit/get-started/building-one-productivity-hub
           - name: Providers
             items:
               - name: Using the providers

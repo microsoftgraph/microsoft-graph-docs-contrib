@@ -97,16 +97,6 @@ stageSettings := []graphmodels.AccessReviewStageSettingsable {
 }
 requestBody.SetStageSettings(stageSettings)
 settings := graphmodels.NewAccessReviewScheduleSettings()
-mailNotificationsEnabled := true
-settings.SetMailNotificationsEnabled(&mailNotificationsEnabled) 
-reminderNotificationsEnabled := true
-settings.SetReminderNotificationsEnabled(&reminderNotificationsEnabled) 
-justificationRequiredOnApproval := true
-settings.SetJustificationRequiredOnApproval(&justificationRequiredOnApproval) 
-defaultDecisionEnabled := false
-settings.SetDefaultDecisionEnabled(&defaultDecisionEnabled) 
-defaultDecision := "None"
-settings.SetDefaultDecision(&defaultDecision) 
 instanceDurationInDays := int32(4)
 settings.SetInstanceDurationInDays(&instanceDurationInDays) 
 recurrence := graphmodels.NewPatternedRecurrence()
@@ -119,7 +109,7 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.NOEND_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := "2020-09-08T12:02:30.667Z"
+startDate := 2020-09-08T12:02:30.667Z
 range.SetStartDate(&startDate) 
 recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
@@ -127,7 +117,7 @@ decisionHistoriesForReviewersEnabled := true
 settings.SetDecisionHistoriesForReviewersEnabled(&decisionHistoriesForReviewersEnabled) 
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

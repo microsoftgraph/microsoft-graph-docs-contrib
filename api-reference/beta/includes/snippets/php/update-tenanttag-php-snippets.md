@@ -16,7 +16,7 @@ $requestBody->setDescription('Tenants that we are currently onboarding');
 
 
 
-$graphServiceClient->tenantRelationships()->managedTenants()->tenantTagsById('tenantTag-id')->patch($requestBody);
+$requestResult = $graphServiceClient->tenantRelationships()->managedTenants()->tenantTagsById('tenantTag-id')->patch($requestBody);
 
 
 ```

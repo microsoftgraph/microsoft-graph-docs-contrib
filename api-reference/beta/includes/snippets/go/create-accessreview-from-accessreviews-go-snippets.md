@@ -70,7 +70,7 @@ autoReviewSettings.SetNotReviewedResult(&notReviewedResult)
 settings.SetAutoReviewSettings(autoReviewSettings)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.AccessReviews().Post(requestBody)
+result, err := graphClient.AccessReviews().Post(context.Background(), requestBody, nil)
 
 
 ```

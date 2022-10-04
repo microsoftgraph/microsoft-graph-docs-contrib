@@ -17,7 +17,7 @@ supportedServices := []string {
 }
 requestBody.SetSupportedServices(supportedServices)
 
-graphClient.DomainsById("domain-id").Patch(requestBody)
+result, err := graphClient.DomainsById("domain-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

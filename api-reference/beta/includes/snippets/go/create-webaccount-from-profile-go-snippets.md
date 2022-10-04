@@ -19,7 +19,7 @@ webUrl := "https://github.com"
 service.SetWebUrl(&webUrl) 
 requestBody.SetService(service)
 
-result, err := graphClient.Me().Profile().WebAccounts().Post(requestBody)
+result, err := graphClient.Me().Profile().WebAccounts().Post(context.Background(), requestBody, nil)
 
 
 ```

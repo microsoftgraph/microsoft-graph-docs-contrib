@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Search().AcronymsById("acronym-id").Delete()
+graphClient.Search().AcronymsById("acronym-id").Delete(context.Background(), nil)
 
 
 ```

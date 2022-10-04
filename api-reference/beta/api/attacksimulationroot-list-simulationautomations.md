@@ -1,7 +1,7 @@
 ---
 title: "List simulationAutomations"
 description: "Get a list of attack simulation automations for a tenant."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
@@ -68,9 +68,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-The following is an example of a request.
-
 ### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {

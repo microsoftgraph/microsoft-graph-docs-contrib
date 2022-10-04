@@ -13,7 +13,7 @@ requestBody.SetEmail(&email)
 includedSources := graphmodels.MAILBOX, SITE_SOURCETYPE 
 requestBody.SetIncludedSources(&includedSources) 
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").CustodiansById("custodian-id").UserSources().Post(requestBody)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").CustodiansById("custodian-id").UserSources().Post(context.Background(), requestBody, nil)
 
 
 ```

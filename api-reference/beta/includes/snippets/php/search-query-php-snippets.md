@@ -11,21 +11,21 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new QueryPostRequestBody();
 $requestsSearchRequest1 = new SearchRequest();
-$additionalData = [
-'entityTypes' => ['externalItem', ],
-'contentSources' => ['/external/connections/connectionfriendlyname', ],
-'query' => $requestsSearchRequest1 = new Query();
-$requestsSearchRequest1->setQueryString('contoso product');
+$requestsSearchRequest1->setEntityTypes([$requestsSearchRequest1->setEntityType(new EntityType('externalitem'));
+]);
+
+$requestsSearchRequest1->setContentSources(['/external/connections/connectionfriendlyname', ]);
+
+$requestsSearchRequest1Query = new SearchQuery();
+$requestsSearchRequest1Query->setQueryString('contoso product');
 
 
-$requestsSearchRequest1->setQuery($query);
+$requestsSearchRequest1->setQuery($requestsSearchRequest1Query);
+$requestsSearchRequest1->setFrom(0);
 
-'from' => 0,
-'size' => 25,
-'fields' => ['title', 'description', ],
-];
-$requestsSearchRequest1->setAdditionalData($additionalData);
+$requestsSearchRequest1->setSize(25);
 
+$requestsSearchRequest1->setFields(['title', 'description', ]);
 
 
 $requestsArray []= $requestsSearchRequest1;

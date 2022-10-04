@@ -65,6 +65,8 @@ This table defines the possible values for the **type** property:
 |:---------------|:------------------------------------------------------------
 | `anonymous`    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization.
 | `organization` | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
+| `existingAccess`| Only people who have already been granted access to the item through other means can access the item using this link. Only available in OneDrive for Business and SharePoint.
+|`users`         | The link grants access only to a specific list of people. Only available in OneDrive for Business and SharePoint.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

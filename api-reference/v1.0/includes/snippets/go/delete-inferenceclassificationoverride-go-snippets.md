@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().InferenceClassification().OverridesById("inferenceClassificationOverride-id").Delete()
+graphClient.Me().InferenceClassification().OverridesById("inferenceClassificationOverride-id").Delete(context.Background(), nil)
 
 
 ```

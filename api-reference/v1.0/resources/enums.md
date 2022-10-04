@@ -1434,9 +1434,10 @@ Possible values for user account types (group membership), per Windows definitio
 |userPassedMFADrivenByRiskBasedPolicy|
 |adminDismissedAllRiskForUser|
 |adminConfirmedSigninCompromised|
-|adminConfirmedUserCompromised|
 |hidden|
+|adminConfirmedUserCompromised|
 |unknownFutureValue|
+|m365DAdminDismissedDetection|
 
 ### riskEventTypes values
 
@@ -2073,6 +2074,27 @@ Possible values for user account types (group membership), per Windows definitio
 |failure|
 |initial|
 |chunkFinished|
+|unknownFutureValue|
+
+### payloadDeliveryPlatform values
+
+|Member|
+|:---|
+|unknown|
+|sms|
+|email|
+|teams|
+|unknownFutureValue|
+
+### trainingStatus values
+
+|Member|
+|:---|
+|unknown|
+|assigned|
+|inProgress|
+|completed|
+|overdue|
 |unknownFutureValue|
 
 ### teamworkCallEventType values 

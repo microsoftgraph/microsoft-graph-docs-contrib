@@ -95,6 +95,7 @@ The following table shows the properties that are required when you create the [
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Indicates in which managed browser(s) that internet links should be opened. When this property is configured, ManagedBrowserToOpenLinksRequired should be true. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `notConfigured`, `microsoftEdge`.|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Maximum allowed device threat level, as reported by the MTD app Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `notConfigured`, `secured`, `low`, `medium`, `high`.|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determines what action to take if the mobile threat defense threat threshold isn't met. Warn isn't a supported value for this property Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
+|mobileThreatDefensePartnerPriority|[mobileThreatDefensePartnerPriority](../resources/intune-mam-mobilethreatdefensepartnerpriority.md)| Indicates how to prioritize which Mobile Threat Defense (MTD) partner is enabled for a given platform, when more than one is enabled. An app can only be actively using a single Mobile Threat Defense partner. When NULL, Microsoft Defender will be given preference. Otherwise setting the value to defenderOverThirdPartyPartner or thirdPartyPartnerOverDefender will make explicit which partner to prioritize. Possible values are: null, defenderOverThirdPartyPartner, thirdPartyPartnerOverDefender and unknownFutureValue. Default value is null Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `defenderOverThirdPartyPartner`, `thirdPartyPartnerOverDefender`, `unknownFutureValue`.|
 |blockDataIngestionIntoOrganizationDocuments|Boolean|Indicates whether a user can bring data into org documents. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `oneDriveForBusiness`, `sharePoint`, `camera`, `photoLibrary`.|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
@@ -164,7 +165,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 5716
+Content-length: 5790
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -216,6 +217,7 @@ Content-length: 5716
   "managedBrowser": "microsoftEdge",
   "maximumAllowedDeviceThreatLevel": "secured",
   "mobileThreatDefenseRemediationAction": "wipe",
+  "mobileThreatDefensePartnerPriority": "thirdPartyPartnerOverDefender",
   "blockDataIngestionIntoOrganizationDocuments": true,
   "allowedDataIngestionLocations": [
     "sharePoint"
@@ -302,7 +304,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5888
+Content-Length: 5962
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -357,6 +359,7 @@ Content-Length: 5888
   "managedBrowser": "microsoftEdge",
   "maximumAllowedDeviceThreatLevel": "secured",
   "mobileThreatDefenseRemediationAction": "wipe",
+  "mobileThreatDefensePartnerPriority": "thirdPartyPartnerOverDefender",
   "blockDataIngestionIntoOrganizationDocuments": true,
   "allowedDataIngestionLocations": [
     "sharePoint"
@@ -437,6 +440,7 @@ Content-Length: 5888
   "fingerprintAndBiometricEnabled": true
 }
 ```
+
 
 
 

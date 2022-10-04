@@ -18,9 +18,12 @@ pattern := graphmodels.NewRecurrencePattern()
 type := graphmodels.WEEKLY_RECURRENCEPATTERNTYPE 
 pattern.SetType(&type) 
 daysOfWeek := []graphmodels.DayOfWeekable {
-	"Monday",
-	"Wednesday",
-	"Friday",
+	dayOfWeek := graphmodels.MONDAY_DAYOFWEEK 
+	pattern.SetDayOfWeek(&dayOfWeek) 
+	dayOfWeek := graphmodels.WEDNESDAY_DAYOFWEEK 
+	pattern.SetDayOfWeek(&dayOfWeek) 
+	dayOfWeek := graphmodels.FRIDAY_DAYOFWEEK 
+	pattern.SetDayOfWeek(&dayOfWeek) 
 
 }
 pattern.SetDaysOfWeek(daysOfWeek)
@@ -47,7 +50,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.UsersById("user-id").Settings().ShiftPreferences().Patch(requestBody)
+result, err := graphClient.UsersById("user-id").Settings().ShiftPreferences().Patch(context.Background(), requestBody, nil)
 
 
 ```

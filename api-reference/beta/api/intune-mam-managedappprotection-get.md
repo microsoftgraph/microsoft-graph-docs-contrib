@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2781
+Content-Length: 2857
 
 {
   "value": {
@@ -121,6 +121,7 @@ Content-Length: 2781
     "managedBrowser": "microsoftEdge",
     "maximumAllowedDeviceThreatLevel": "secured",
     "mobileThreatDefenseRemediationAction": "wipe",
+    "mobileThreatDefensePartnerPriority": "thirdPartyPartnerOverDefender",
     "blockDataIngestionIntoOrganizationDocuments": true,
     "allowedDataIngestionLocations": [
       "sharePoint"
@@ -131,6 +132,7 @@ Content-Length: 2781
   }
 }
 ```
+
 
 
 

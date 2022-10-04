@@ -35,7 +35,7 @@ language := "en-US"
 windowsSettings.SetLanguage(&language) 
 requestBody.SetWindowsSettings(windowsSettings)
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(requestBody)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

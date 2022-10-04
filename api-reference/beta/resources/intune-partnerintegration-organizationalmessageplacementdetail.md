@@ -20,7 +20,7 @@ Contains the different variants of text that can be displayed for a given placem
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|placement|[organizationalMessagePlacement](../resources/intune-partnerintegration-organizationalmessageplacement.md)|Indicates the name of the placement. Possible values are: `default`, `card0`, `card1`, `card2`, `card3`.|
+|placement|[organizationalMessagePlacement](../resources/intune-partnerintegration-organizationalmessageplacement.md)|Indicates the name of the placement. Possible values are: `default`, `card0`, `card1`, `card2`, `card3`, `unknownFutureValue`.|
 |variants|[organizationalMessageVariant](../resources/intune-partnerintegration-organizationalmessagevariant.md) collection|The list of different variants that can be displayed for this placement|
 
 ## Relationships
@@ -59,6 +59,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

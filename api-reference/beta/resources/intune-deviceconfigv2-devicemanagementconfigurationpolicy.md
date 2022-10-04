@@ -43,6 +43,7 @@ Device Management Configuration Policy
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 |isAssigned|Boolean|Policy assignment status. This property is read-only.|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Template reference information|
+|priorityMetaData|[deviceManagementPriorityMetaData](../resources/intune-deviceconfigv2-devicemanagementprioritymetadata.md)|Indicates the priority of each policies that are selected by the admin during enrollment process|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -80,9 +81,13 @@ Here is a JSON representation of the resource.
     "templateFamily": "String",
     "templateDisplayName": "String",
     "templateDisplayVersion": "String"
+  },
+  "priorityMetaData": {
+    "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData"
   }
 }
 ```
+
 
 
 
