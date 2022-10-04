@@ -158,23 +158,23 @@ Content-type: application/json
                             "type": "string"
                         }
                     ]
-                },
+                }
             ]
         },
         {
-            "name": "Active Directory",
+            "name": "Active Directory"
         }
     ],
     "synchronizationRules": [
         {
-            "containerFilterConfig”: {
-                “inclusionList”: [
-                    “OU=In-Scope OU 1,DC=contoso,DC=com”,
-                    “OU=In-Scope OU 2,DC=contoso,DC=com”,
-                ],
+            "containerFilterConfig": {
+                "inclusionList": [
+                    "OU=In-Scope OU 1,DC=contoso,DC=com",
+                    "OU=In-Scope OU 2,DC=contoso,DC=com",
+                ]
             },
-            "groupFilterConfig”: {
-                “inclusionList”: [],
+            "groupFilterConfig": {
+                "inclusionList": []
             },
             "name": "AD2AADProvisioning",
             "sourceDirectoryName": "Active Directory",
@@ -188,7 +188,7 @@ Content-type: application/json
                         {
                             "source": {},
                             "targetAttributeName": "DisplayName"
-                        },
+                        }
                     ]
                 }
             ]
