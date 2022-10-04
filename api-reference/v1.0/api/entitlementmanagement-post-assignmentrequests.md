@@ -364,7 +364,7 @@ Content-type: application/json
 
 Response
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
+     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#accessPackageAssignmentRequests/$entity",
     "id": "7a6ab703-0780-4b37-8445-81f679b2d75c",
     "requestType": "userAdd",
     "state": "submitted",
@@ -466,7 +466,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#accessPackageAssignmentRequests/$entity",
     "id": "0c471116-e439-40a6-8441-fe739dd48dab",
     "requestType": "adminUpdate",
     "state": "submitted",
