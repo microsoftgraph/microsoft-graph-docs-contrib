@@ -105,7 +105,6 @@ Instead of creating new workflows, use the [workflowVersion resource type](ident
 Lifecycle Workflows supports extensive reporting capabilities to track the status of workflow processing at the workflow run-level, task-level, and user-level.
 
 For more information about the reporting capabilities for Lifecycle Workflows, see the [overview of Lifecycle Workflows reporting APIs](identitygovernance-lifecycleworkflows-reporting-overview.md)
-<!--Scope: user-level vs task-level vs run-level; Audit logs-->
 
 ## Extensions
 
