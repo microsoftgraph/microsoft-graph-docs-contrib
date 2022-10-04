@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceSpecification",
           "ChangeType": "Addition",
-          "Description": "Added the **deviceSpecification** property to the [cloudPcDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the **deviceSpecification** property to the [cloudPcDevice](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcDevice?view=graph-rest-beta) resource.",
           "Target": "cloudPcDevice"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "servicePlanType",
           "ChangeType": "Addition",
-          "Description": "Added the **servicePlanType** property to the [cloudPcDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcDevice?view=graph-rest-beta) resource.",
+          "Description": "Added the **servicePlanType** property to the [cloudPcDevice](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcDevice?view=graph-rest-beta) resource.",
           "Target": "cloudPcDevice"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "totalBusinessLicenses",
           "ChangeType": "Addition",
-          "Description": "Added the **totalBusinessLicenses** property to the [cloudPcOverview](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcOverview?view=graph-rest-beta) resource.",
+          "Description": "Added the **totalBusinessLicenses** property to the [cloudPcOverview](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcOverview?view=graph-rest-beta) resource.",
           "Target": "cloudPcOverview"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "totalEnterpriseLicenses",
           "ChangeType": "Addition",
-          "Description": "Added the **totalEnterpriseLicenses** property to the [cloudPcOverview](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcOverview?view=graph-rest-beta) resource.",
+          "Description": "Added the **totalEnterpriseLicenses** property to the [cloudPcOverview](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcOverview?view=graph-rest-beta) resource.",
           "Target": "cloudPcOverview"
         }
       ],
