@@ -11,9 +11,9 @@ doc_type: conceptualPageType
 
 The Lifecycle Workflows API in Microsoft Graph enables you to automate basic lifecycle processes for your users at three levels: Joiner, Leaver, and Mover. Core to the workflows are **tasks**, that represent the specific actions that run automatically when a workflow is triggered.
 
-Microsoft Graph supports [16 built-in tasks](/graph/api/resources/identitygovernance-task) that you can use to create your custom workflows. Each task has a set of arguments that are allowed for that task. For example, a task to generate a temporary access pass (TAP) for a user allows you to configure the lifetime of the TAP and whether the user can reuse it. While a task to add a user to a group requires you to specify the groups to which you wish to add the user. This configuration is made on the **arguments** property of a task and is based on the [keyValuePair resource type](/graph/api/resources/keyvaluepair).
+Microsoft Graph supports [16 built-in tasks](/graph/api/resources/identitygovernance-task) that you can use to create your custom workflows. Each task has a set of arguments that are allowed for that task. For example, a task to generate a temporary access pass (TAP) for a user allows you to configure the lifetime of the TAP and whether the user can reuse it. A task to add a user to a group requires you to specify the groups to which you want to add the user. This configuration is made on the **arguments** property of a task and is based on the [keyValuePair resource type](/graph/api/resources/keyvaluepair).
 
-This article, provides guidance on the allowed configuration for the **arguments** property of [tasks](/graph/api/resources/identitygovernance-task) in Lifecycle Workflows.
+This article provides guidance on the allowed configuration for the **arguments** property of [tasks](/graph/api/resources/identitygovernance-task) in Lifecycle Workflows.
 
 ## Configure arguments for tasks
 
