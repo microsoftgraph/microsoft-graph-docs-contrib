@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [x509Certifica
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
+GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 ```
 
 ### Response
