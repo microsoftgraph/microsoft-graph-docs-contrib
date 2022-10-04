@@ -655,8 +655,8 @@
       ],
       "Id": "986cb8be-7e9b-49ad-b541-ad5285531a08",
       "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-09-06T07:47:36.3210338Z",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-02T07:47:36.3210338Z",
       "WorkloadArea": "Teamwork",
       "SubArea": "Microsoft.Teams.Shifts"
     }
