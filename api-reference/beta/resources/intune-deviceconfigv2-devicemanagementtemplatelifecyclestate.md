@@ -31,4 +31,3 @@ Describes current lifecycle state of a template
 
 
 
-

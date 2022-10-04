@@ -28,4 +28,3 @@ Possible values of Android Kiosk Mode.
 
 
 
-

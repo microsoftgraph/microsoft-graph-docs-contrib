@@ -11712,6 +11712,32 @@
       "CreatedDateTime": "2022-07-05T07:06:20.8129252Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0d721125-f1c0-44e7-96fa-dd4773cf2445",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationContextClassReferences",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationContextClassReferences** relationship to the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessRoot"
+        },
+        {
+          "Id": "0d721125-f1c0-44e7-96fa-dd4773cf2445",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationContextClassReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationContextClassReference](https://learn.microsoft.com/en-us/graph/api/resources/authenticationContextClassReference?view=graph-rest-1.0) resource and its associated methods.",
+          "Target": "authenticationContextClassReference"
+        }
+      ],
+      "Id": "0d721125-f1c0-44e7-96fa-dd4773cf2445",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-03T07:06:20.8129252Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
