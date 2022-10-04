@@ -362,7 +362,6 @@ The following is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 
-Response
 {
      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#accessPackageAssignmentRequests/$entity",
     "id": "7a6ab703-0780-4b37-8445-81f679b2d75c",
@@ -488,8 +487,7 @@ Content-type: application/json
             "value": "UpdatedAnswerValue",
             "answeredQuestion": {
                 "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-                "id": "8fe745e7-80b2-490d-bd22-4e708c77288c",
-             
+                "id": "8fe745e7-80b2-490d-bd22-4e708c77288c",             
         },
         {
             "@odata.type": "#microsoft.graph.accessPackageAnswerString",
