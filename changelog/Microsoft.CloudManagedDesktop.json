@@ -23,7 +23,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcExportJob",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcExportJob](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcExportJob?view=graph-rest-beta) resource",
+                    "Description": "Added the [cloudPcExportJob](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcExportJob?view=graph-rest-beta) resource",
                     "Target": "cloudPcExportJob"
                 },
                 {
@@ -31,7 +31,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcReports",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcReports?view=graph-rest-beta) resource",
+                    "Description": "Added the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcReports?view=graph-rest-beta) resource",
                     "Target": "cloudPcReports"
                 },
                 {
@@ -39,7 +39,7 @@
                     "ApiChange": "Relationship",
                     "ChangedApiName": "reports",
                     "ChangeType": "Addition",
-                    "Description": "Added the **reports** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Description": "Added the **reports** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
                     "Target": "virtualEndpoint"
                 },
                 {
@@ -47,7 +47,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getDailyAggregatedRemoteConnectionReports",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getDailyAggregatedRemoteConnectionReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getDailyAggregatedRemoteConnectionReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReports"
                 },
                 {
@@ -55,7 +55,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getRemoteConnectionHistoricalReports",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getRemoteConnectionHistoricalReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getRemoteConnectionHistoricalReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReports"
                 },
                 {
@@ -63,7 +63,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getTotalAggregatedRemoteConnectionReports",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getTotalAggregatedRemoteConnectionReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getTotalAggregatedRemoteConnectionReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReports"
                 },
                 {
@@ -71,7 +71,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getRealTimeRemoteConnectionLatency",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getRealTimeRemoteConnectionLatency](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getRealTimeRemoteConnectionLatency](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReports"
                 },
                 {
@@ -79,7 +79,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getRealTimeRemoteConnectionStatus",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getRealTimeRemoteConnectionStatus](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getRealTimeRemoteConnectionStatus](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://docs.microsoft.com/en-us/graph/api/intune-cloudPcReports?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReports"
                 }
             ],
