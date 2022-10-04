@@ -382,21 +382,21 @@ Content-type: application/json
     "answers": [
         {
             "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-            "displayValue": "This is the answer to a multiple choice question",
             "value": "MultipleChoiceAnswerValue",
             "answeredQuestion": {
                 "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
                 "id": "8fe745e7-80b2-490d-bd22-4e708c77288c"   
-            }
+            },
+            "displayValue": "This is the answer to a multiple choice question"
         },
         {
             "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-            "displayValue": "This is my answer.",
             "value": "This is my answer to a text input question.",
             "answeredQuestion": {
                 "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
                 "id": "7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6"
-            }
+            },
+            "displayValue": "This is my answer."
         }
     ]
 }
@@ -483,6 +483,7 @@ Content-type: application/json
         {
             "@odata.type": "#microsoft.graph.accessPackageAnswerString",
             "value": "UpdatedAnswerValue",
+            "displayValue": "This is the answer to a multiple choice question",
             "answeredQuestion": {
                 "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
                 "id": "8fe745e7-80b2-490d-bd22-4e708c77288c"   
