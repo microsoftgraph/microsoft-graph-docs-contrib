@@ -2,7 +2,7 @@
 title: "List riskyUsers"
 description: "Retrieve the properties and relationships of a collection of **riskyUser** objects."
 ms.localizationpriority: medium
-author: "cloudhandler"
+author: "ebasseri"
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 ---

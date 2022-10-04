@@ -11,7 +11,7 @@ requestBody := graphmodels.NewDomain()
 id := "contoso.com"
 requestBody.SetId(&id) 
 
-result, err := graphClient.Domains().Post(requestBody)
+result, err := graphClient.Domains().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setDisplayName('My Contoso Tab - updated again');
 
 
 
-$graphServiceClient->chatsById('chat-id')->tabsById('teamsTab-id')->patch($requestBody);
+$requestResult = $graphServiceClient->chatsById('chat-id')->tabsById('teamsTab-id')->patch($requestBody);
 
 
 ```

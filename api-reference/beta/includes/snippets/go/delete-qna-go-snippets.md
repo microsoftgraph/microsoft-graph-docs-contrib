@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Search().QnasById("qna-id").Delete()
+graphClient.Search().QnasById("qna-id").Delete(context.Background(), nil)
 
 
 ```

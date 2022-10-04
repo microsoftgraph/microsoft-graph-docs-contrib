@@ -31,4 +31,3 @@ Contains all supported registry data detection type.
 
 
 
-

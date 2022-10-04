@@ -17,7 +17,7 @@ configuration := &graphconfig.OnlineMeetingsRequestBuilderGetRequestConfiguratio
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().OnlineMeetings().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().OnlineMeetings().Get(context.Background(), configuration)
 
 
 ```

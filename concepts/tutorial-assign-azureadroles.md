@@ -1,12 +1,12 @@
 ---
-title: "Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles"
+title: "Assign Azure AD roles through Privileged Identity Management (PIM) APIs in Microsoft Graph"
 description: "Learn how to create a role-assignable security group for IT Helpdesk and use the PIM API to assign the security group eligibility to the User Administrator role."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 
-# Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles
+# Assign Azure AD roles through Privileged Identity Management (PIM) APIs in Microsoft Graph
 
 Microsoft Graph PIM API enables organizations to manage privileged access to resources in Azure Active Directory (Azure AD). It also helps to manage the risks of privileged access by limiting when access is active, managing the scope of access, and providing an auditable log of privileged access.
 
@@ -27,27 +27,10 @@ Assigning eligibility instead of a persistently active User Administrator privil
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a Global Administrator role.
-  + [Optional] Start a new incognito or InPrivate browser session, or start a session in an anonymous browser. You'll sign in later in this tutorial.
-+ The following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, and `RoleManagement.ReadWrite.Directory`.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
+  + [Optional] Start a new session in another browser. You'll sign in later in this tutorial.
++ Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, and `RoleManagement.ReadWrite.Directory`.
 + Authenticator app installed on your phone to register a user for multifactor authentication (MFA).
-
-To consent to the required permissions in Graph Explorer:
-1. Select the horizontal ellipses icon to the right of the user account details, and then choose **Select permissions**.
-  
-      :::image type="content" source="/graph/images/GE-Permissions/selectpermissions.png" alt-text="Select Microsoft Graph permissions." border="true":::
-
-2. Scroll through the list of permissions to these permissions:
-    + Group (2), expand and then select **Group.ReadWrite.All**.
-    + Directory (4), expand and then select **Directory.Read.All**.
-    + RoleAssignmentSchedule (2), expand and then select **RoleAssignmentSchedule.ReadWrite.Directory**.
-    + RoleEligibilitySchedule (2), expand and then select **RoleEligibilitySchedule.ReadWrite.Directory**.
-    + RoleManagement (3), expand and then select **RoleManagement.ReadWrite.Directory**.
-    + User (8), expand and then select **User.ReadWrite.All**.
-   
-   Select **Consent**, and then select **Accept** to accept the consent of the permissions. For the `RoleEligibilitySchedule.ReadWrite.Directory` and `RoleAssignmentSchedule.ReadWrite.All` permissions, consent on behalf of your organization.
-
-      :::image type="content" source="/graph/images/GE-Permissions/User.ReadWrite.All-consent.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
 
 ## Step 1: Create a test user
 
@@ -274,7 +257,7 @@ An incident ticket CONTOSO: Security-012345 has been raised in Contoso's inciden
 
 First, start the Authenticator app on your phone and open Aline Dupuy's account.
 
-Sign in to Graph Explorer as Aline. You may use an incognito session or an anonymous browser for this step. By doing so, you won't interrupt your current session as a user in the Global Administrator role. Alternatively, you can interrupt your current session by signing out of Graph Explorer and signing back in as Aline.
+Sign in to Graph Explorer as Aline. You may use the another browser for this step. By doing so, you won't interrupt your current session as a user in the Global Administrator role. Alternatively, you can interrupt your current session by signing out of Graph Explorer and signing back in as Aline.
 
 Signed in as Aline, you'll first change your password because this was specified during account creation. Then, because the administrator configured your account for MFA, you'll be prompted to set up your account in the Authenticator app and be challenged for MFA sign-in. This is because PIM requires that MFA for all active role assignments.
 

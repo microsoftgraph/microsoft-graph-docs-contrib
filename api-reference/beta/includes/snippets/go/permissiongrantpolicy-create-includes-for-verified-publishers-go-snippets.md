@@ -13,7 +13,7 @@ requestBody.SetPermissionType(&permissionType)
 clientApplicationsFromVerifiedPublisherOnly := true
 requestBody.SetClientApplicationsFromVerifiedPublisherOnly(&clientApplicationsFromVerifiedPublisherOnly) 
 
-result, err := graphClient.Policies().PermissionGrantPoliciesById("permissionGrantPolicy-id").Includes().Post(requestBody)
+result, err := graphClient.Policies().PermissionGrantPoliciesById("permissionGrantPolicy-id").Includes().Post(context.Background(), requestBody, nil)
 
 
 ```

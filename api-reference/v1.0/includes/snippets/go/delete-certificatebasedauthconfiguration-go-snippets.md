@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.OrganizationById("organization-id").CertificateBasedAuthConfigurationById("certificateBasedAuthConfiguration-id").Delete()
+graphClient.OrganizationById("organization-id").CertificateBasedAuthConfigurationById("certificateBasedAuthConfiguration-id").Delete(context.Background(), nil)
 
 
 ```

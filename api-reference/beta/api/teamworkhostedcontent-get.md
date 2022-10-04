@@ -40,7 +40,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 ## Optional query parameters
 
-This operation supports the `$select` [OData query parameters](/graph/query-parameter) to customize the response.
+This operation supports the `$select` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 

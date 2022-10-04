@@ -14,7 +14,7 @@ configuration := &graphconfig.SchemaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Schema().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Schema().Get(context.Background(), configuration)
 
 
 ```

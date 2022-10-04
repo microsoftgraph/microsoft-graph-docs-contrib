@@ -18,7 +18,7 @@ configuration := &graphconfig.InstalledAppsRequestBuilderGetRequestConfiguration
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").InstalledApps().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.TeamsById("team-id").InstalledApps().Get(context.Background(), configuration)
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewRenewGroupPostRequestBody()
 groupId := "ffffffff-ffff-ffff-ffff-ffffffffffff"
 requestBody.SetGroupId(&groupId) 
 
-result, err := graphClient.GroupLifecyclePolicies().RenewGroup().Post(requestBody)
+result, err := graphClient.GroupLifecyclePolicies().RenewGroup().Post(context.Background(), requestBody, nil)
 
 
 ```
