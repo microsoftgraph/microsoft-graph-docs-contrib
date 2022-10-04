@@ -2071,8 +2071,6 @@ items:
           items:
           - name: List
             href: api/print-list-shares.md
-          - name: List recent shares
-            href: api/print-list-recentshares.md
           - name: Create
             href: api/print-post-shares.md
           - name: Get
@@ -2093,6 +2091,8 @@ items:
             href: api/printershare-post-allowedgroups.md
           - name: Delete allowed group
             href: api/printershare-delete-allowedgroup.md
+          - name: List recent shares
+            href: api/print-list-recentshares.md
         - name: Print task definition
           href: resources/printtaskdefinition.md
           items:
