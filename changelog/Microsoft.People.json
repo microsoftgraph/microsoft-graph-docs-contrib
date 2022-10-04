@@ -109,7 +109,7 @@
 					"ApiChange": "Relationship",
 					"ChangedApiName": "contactInsights",
 					"ChangeType": "Addition",
-					"Description": "Added the contactInsights navigation property to the [organizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource",
+					"Description": "Added the contactInsights navigation property to the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource",
 					"Target": "organizationSettings"
 				},
 				{
@@ -117,7 +117,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "GET",
 					"ChangeType": "Addition",
-					"Description": "Added a [list](https://docs.microsoft.com/en-us/graph/api/organizationsettings-list-contactinsights?view=graph-rest-beta&tabs=http) operation to the [insightsSettings](https://docs.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-beta) resource, to get the tenant-level settings for contact insights",
+					"Description": "Added a [list](https://learn.microsoft.com/en-us/graph/api/organizationsettings-list-contactinsights?view=graph-rest-beta&tabs=http) operation to the [insightsSettings](https://docs.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-beta) resource, to get the tenant-level settings for contact insights",
 					"Target": "insightsSettings"
 				}
 			],
