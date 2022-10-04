@@ -12,7 +12,7 @@ This tutorial provides a step-by-step guide on how to automate pre-hire tasks wi
 
 This pre-hire scenario will generate a temporary password for the new employee and send it via email to the user's new manager.
 
-:::image type="content" source="images/tutorial-lifecycle-workflows/arch-2.png" alt-text="Screenshot of the Lifecycle Workflows scenario." lightbox="media/tutorial-lifecycle-workflows/arch-2.png":::
+:::image type="content" source="images/tutorial-lifecycle-workflows/arch-2.png" alt-text="Screenshot of the Lifecycle Workflows scenario." lightbox="images/tutorial-lifecycle-workflows/arch-2.png":::
 
 ## Prerequisites
 
