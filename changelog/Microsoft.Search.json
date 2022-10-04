@@ -1197,8 +1197,8 @@
       "CreatedDateTime": "2022-04-28T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
-      },
-      {
+    },
+    {
       "ChangeList": [
         {
           "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
@@ -1311,6 +1311,48 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-08-03T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6299b8bb-cb88-4b8c-9431-14fd87f7741c",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "contentExperienceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentExperienceType** enumeration.",
+          "Target": "contentExperienceType"
+        },
+        {
+          "Id": "6299b8bb-cb88-4b8c-9431-14fd87f7741c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceSettings](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-compliancesettings?view=graph-rest-beta) resource type.",
+          "Target": "complianceSettings"
+        },
+        {
+          "Id": "6299b8bb-cb88-4b8c-9431-14fd87f7741c",
+          "ApiChange": "Property",
+          "ChangedApiName": "enabledContentExperiences",
+          "ChangeType": "Addition",
+          "Description": "Added the **enabledContentExperiences** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "6299b8bb-cb88-4b8c-9431-14fd87f7741c",
+          "ApiChange": "Property",
+          "ChangedApiName": "complianceSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **complianceSettings** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
+          "Target": "externalConnection"
+        }
+      ],
+      "Id": "6299b8bb-cb88-4b8c-9431-14fd87f7741c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-01T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
     }
