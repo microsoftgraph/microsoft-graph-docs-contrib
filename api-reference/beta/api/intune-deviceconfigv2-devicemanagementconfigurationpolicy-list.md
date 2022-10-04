@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 976
+Content-Length: 1090
 
 {
   "value": [
@@ -87,12 +87,14 @@ Content-Length: 976
         "templateFamily": "endpointSecurityAntivirus",
         "templateDisplayName": "Template Display Name value",
         "templateDisplayVersion": "Template Display Version value"
+      },
+      "priorityMetaData": {
+        "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData"
       }
     }
   ]
 }
 ```
-
 
 
 

@@ -30,4 +30,3 @@ Setting comparison result type
 
 
 
-

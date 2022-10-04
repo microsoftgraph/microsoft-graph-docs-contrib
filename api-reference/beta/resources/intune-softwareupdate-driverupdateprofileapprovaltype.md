@@ -27,4 +27,3 @@ An enum type to represent approval type of a driver update profile.
 
 
 
-
