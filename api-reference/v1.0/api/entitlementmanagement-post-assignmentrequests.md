@@ -386,8 +386,7 @@ Content-type: application/json
             "value": "MultipleChoiceAnswerValue",
             "answeredQuestion": {
                 "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-                "id": "8fe745e7-80b2-490d-bd22-4e708c77288c"
-                }    
+                "id": "8fe745e7-80b2-490d-bd22-4e708c77288c"   
             }
         },
         {
@@ -401,7 +400,6 @@ Content-type: application/json
         }
     ]
 }
-
 ```
 
 
@@ -487,7 +485,8 @@ Content-type: application/json
             "value": "UpdatedAnswerValue",
             "answeredQuestion": {
                 "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-                "id": "8fe745e7-80b2-490d-bd22-4e708c77288c"            
+                "id": "8fe745e7-80b2-490d-bd22-4e708c77288c"   
+            }         
         },
         {
             "@odata.type": "#microsoft.graph.accessPackageAnswerString",
