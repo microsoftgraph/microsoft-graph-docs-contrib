@@ -306,11 +306,12 @@ Content-type: application/json
 The following example shows how a user can request an access package assignment for themselves by answering questions required by the policy while making the request.
 
 #### Request
--->
+
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_requestor_answer_to_approver"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
 Content-type: application/json
@@ -342,6 +343,7 @@ Content-type: application/json
         "accessPackageId": "977c7ff4-ef8f-4910-9d31-49048ddf3120"
     }
 }
+```
 
 
 #### Response
@@ -445,6 +447,7 @@ Content-type: application/json
         "id": "44c741c1-2cf4-40db-83b6-e0112f8e5a83"
     }
 }
+```
 
 #### Response
 
