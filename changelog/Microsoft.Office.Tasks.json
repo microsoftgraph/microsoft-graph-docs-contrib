@@ -1045,7 +1045,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemBody",
           "ChangeType": "Addition",
-          "Description": "Added the [itemBody](https://docs.microsoft.com/en-us/graph/api/resources/itemBody?view=graph-rest-beta) resource type.",
+          "Description": "Added the [itemBody](https://learn.microsoft.com/en-us/graph/api/resources/itemBody?view=graph-rest-beta) resource type.",
           "Target": "itemBody"
         }
       ],
