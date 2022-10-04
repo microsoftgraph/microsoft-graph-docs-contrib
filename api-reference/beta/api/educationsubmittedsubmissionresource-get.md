@@ -1,7 +1,7 @@
 ---
 title: "Get educationSubmittedSubmissionResource"
 
-description: "retrieve a submitted resource. This will be available to a teacher or an application with application permissions after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources."
+description: "Retrieve a submitted resource. This will be available to a teacher or an application with application permissions after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
