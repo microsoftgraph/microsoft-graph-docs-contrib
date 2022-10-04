@@ -565,6 +565,17 @@ Namespace: microsoft.graph
 |notApplied|
 |unknownFutureValue|
 
+### templateScenarios values
+|Member             |Value|
+|:------------------|:----|
+|new                | 0   |
+|secureFoundation   | 1   |
+|zeroTrust          | 2   |
+|remoteWork         | 4   |
+|protectAdmins      | 8   |
+|emergingThreats    | 16  |
+|unknownFutureValue | 32  |
+
 ### operationResult values
 
 |Member|
