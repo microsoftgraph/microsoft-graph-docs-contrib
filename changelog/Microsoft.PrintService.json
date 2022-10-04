@@ -17,6 +17,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **viewPoint** property to the [printerShare](https://learn.microsoft.com/graph/api/resources/printerShare?view=graph-rest-beta) resource.",
           "Target": "printerShare"
+        },
+        {
+          "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
+          "ApiChange": "Method",
+          "ChangedApiName": "List recentPrinterShares",
+          "ChangeType": "Addition",
+          "Description": "Added the [List recentPrinterShares](https://learn.microsoft.com/en-us/graph/api/print-list-recentshares?view=graph-rest-beta) method to the [printerShare](https://learn.microsoft.com/graph/api/resources/printerShare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
         }
       ],
       "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
