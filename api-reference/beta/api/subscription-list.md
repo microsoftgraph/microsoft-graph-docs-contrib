@@ -51,6 +51,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[conversationMember](../resources/conversationmember.md) <br />/teams/getAllMembers <br /> Members in all teams in an organization.| Not supported | Not supported | TeamMember.Read.All, TeamMember.ReadWrite.All |
 |[conversationMember](../resources/conversationmember.md) <br />/teams/{id}/members <br /> Members in a particular team.| TeamMember.Read.All, Subscription.Read.All | Not supported | TeamMember.Read.All |
 |[conversationMember](../resources/conversationmember.md) <br />/teams/{id}/channels/getAllMembers <br /> Members in all private channels of a particular team.| Not supported | Not supported | ChannelMember.Read.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/getAllChannels/getAllMembers) | Not supported. | Not supported. | ChannelMember.Read.All |
 |[driveItem](../resources/driveitem.md) <br />User's personal OneDrive. | Not supported | Files.ReadWrite, Subscription.Read.All | Not supported |
 |[driveItem](../resources/driveitem.md) <br />OneDrive for Business. | Files.ReadWrite.All, Subscription.Read.All | Not supported | Files.ReadWrite.All |
 |[event](../resources/event.md) | Calendars.Read, Subscription.Read.All | Calendars.Read, Subscription.Read.All | Calendars.Read |

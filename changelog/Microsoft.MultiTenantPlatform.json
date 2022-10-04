@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "a673cdb1-b8a3-4de7-bae3-188e3b9f5b53",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceSpecification",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceSpecification** property to the [cloudPcDevice](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcDevice?view=graph-rest-beta) resource.",
+          "Target": "cloudPcDevice"
+        },
+        {
+          "Id": "a673cdb1-b8a3-4de7-bae3-188e3b9f5b53",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePlanType",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePlanType** property to the [cloudPcDevice](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcDevice?view=graph-rest-beta) resource.",
+          "Target": "cloudPcDevice"
+        },
+        {
+          "Id": "a673cdb1-b8a3-4de7-bae3-188e3b9f5b53",
+          "ApiChange": "Property",
+          "ChangedApiName": "totalBusinessLicenses",
+          "ChangeType": "Addition",
+          "Description": "Added the **totalBusinessLicenses** property to the [cloudPcOverview](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcOverview?view=graph-rest-beta) resource.",
+          "Target": "cloudPcOverview"
+        },
+        {
+          "Id": "a673cdb1-b8a3-4de7-bae3-188e3b9f5b53",
+          "ApiChange": "Property",
+          "ChangedApiName": "totalEnterpriseLicenses",
+          "ChangeType": "Addition",
+          "Description": "Added the **totalEnterpriseLicenses** property to the [cloudPcOverview](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-cloudPcOverview?view=graph-rest-beta) resource.",
+          "Target": "cloudPcOverview"
+        }
+      ],
+      "Id": "a673cdb1-b8a3-4de7-bae3-188e3b9f5b53",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-03T07:58:02.8273321Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Multi-tenant management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ad18be47-8800-4594-be69-454a95f198d1",
           "ApiChange": "Resource",
           "ChangedApiName": "roleAssignment",
@@ -55,6 +97,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-06-13T21:39:51.5037621Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Multi-tenant management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8383fdfa-ba94-47c2-9f16-7027912dce8d",
+          "ApiChange": "Property",
+          "ChangedApiName": "mfaExcludedUserCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **mfaExcludedUserCount** property to the [credentialUserRegistrationsSummary](https://learn.microsoft.com/graph/api/resources/managedTenants-credentialUserRegistrationsSummary?view=graph-rest-beta) resource.",
+          "Target": "credentialUserRegistrationsSummary"
+        }
+      ],
+      "Id": "8383fdfa-ba94-47c2-9f16-7027912dce8d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-03T17:23:26.9225469Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Multi-tenant management"
     },
@@ -641,24 +701,6 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-12-06T23:54:12.684464Z",
-      "WorkloadArea": "Device and app management",
-      "SubArea": "Multi-tenant management"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "8383fdfa-ba94-47c2-9f16-7027912dce8d",
-          "ApiChange": "Property",
-          "ChangedApiName": "mfaExcludedUserCount",
-          "ChangeType": "Addition",
-          "Description": "Added the **mfaExcludedUserCount** property to the [credentialUserRegistrationsSummary](https://learn.microsoft.com/graph/api/resources/managedTenants-credentialUserRegistrationsSummary?view=graph-rest-beta) resource.",
-          "Target": "credentialUserRegistrationsSummary"
-        }
-      ],
-      "Id": "8383fdfa-ba94-47c2-9f16-7027912dce8d",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2022-06-01T17:23:26.9225469Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Multi-tenant management"
     }
