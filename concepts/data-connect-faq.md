@@ -10,7 +10,7 @@ ms.prod: "data-connect"
 
 Microsoft Graph Data Connect lets developers create applications that customers can use to provide managed access to their at-scale Microsoft Graph datasets. This article provides tips that will help you take advantage of the Microsoft Graph Data Connect feature. For an introduction to Microsoft Graph Data Connect, see the [overview](data-connect-concept-overview.md).
 
-For further questions not covered in this page or [troubleshooting] (data-connect-troubleshooting.md) please reach out dataconnect@microsoft.com.
+For more questions, see [troubleshooting](data-connect-troubleshooting.md), or reach out to the [Data Connect team](mailto:dataconnect@microsoft.com).
 
 ## Is Microsoft Graph Data Connect right for me?
 
@@ -18,25 +18,25 @@ Microsoft Graph Data Connect and Microsoft Graph APIs provide access to the same
 
 For example, you might want to use Microsoft Graph Data Connect to do an initial extraction of the last year of email data, and then use Microsoft Graph APIs to analyze emails in real time moving forward. Microsoft Graph Data Connect and Microsoft Graph APIs are different tools for different jobs. It's important to think about which access method best fits your scenario. For more information, see [When should I use Microsoft Graph API or Microsoft Graph Data Connect](/graph/overview#when-should-i-use-microsoft-graph-api-or-data-connect).
 
-## What are typical scenarios that companies use the M365 data for?  
+## What are some scenarios that companies use Microsoft 365 data for?  
 
-Here are the top 4 scenarios that customers are interested in. However, the number of use cases that can be powered by M365 data is infinite:  
+There are any number of use cases that can be powered by Microsoft 365 data. The following are some top scenarios that customers are interested in:  
 
-1. Customer Relationship Analytics: For commercial business leaders, go beyond traditional CRM insights and understand customer interactions and relationships based on communication and collaboration patterns. 
+- Customer Relationship Analytics: For commercial business leaders, go beyond traditional CRM insights and understand customer interactions and relationships based on communication and collaboration patterns. 
 
-2. Business Process Analytics: For better operations, see how work really flows through the organization on a day-to-day basis. Pinpoint the manual processes and workflow bottlenecks that should be automated or optimized. 
+- Business Process Analytics: For better operations, see how work really flows through the organization on a day-to-day basis. Pinpoint the manual processes and workflow bottlenecks that should be automated or optimized. 
 
-3. Security and Compliance Analytics: To secure sensitive data, learn how employees are using and sharing sensitive information. Implement anomaly detection, threat intelligence, audit log analysis, risk management, and legal forensics. 
+- Security and Compliance Analytics: To secure sensitive data, learn how employees are using and sharing sensitive information. Implement anomaly detection, threat intelligence, audit log analysis, risk management, and legal forensics. 
 
-4. People Productivity Analytics: For driving transformation, export your Viva productivity metrics, so you can convert insights into solutions with digital adoption, smart meetings and content, hybrid workplaces, and cultural change. 
+- People Productivity Analytics: For driving transformation, export your Viva productivity metrics, so you can convert insights into solutions with digital adoption, smart meetings and content, hybrid workplaces, and cultural change. 
 
 ## How do Viva Insights and Microsoft Graph Data Connect differ?  
 
-Viva Insights and MGDC are complementary - not competitive. Although both rely on Microsoft 365, Viva Insights and MGDC serve different audiences and needs (see graphic below).
+Viva Insights and Microsoft Graph Data Connect are complementary. Although both rely on Microsoft 365, Viva Insights and Data Connect serve different audiences and needs.
 
-When customers are looking for insights and analytics beyond Viva Insights, MGDC provides the extensibility experience to deliver custom requirements. For example, MGDC offers Teams Call Records and Transcripts as well as SharePoint Online data sets; these are currently beyond the scope of consideration for Viva Insights. Additionally, MGDC raw data provides granular details that aren’t otherwise available from Viva Insights.  
+When customers are looking for insights and analytics beyond Viva Insights, Data Connect provides the extensibility to deliver custom requirements. For example, it offers Teams call records and transcripts as well as SharePoint Online data sets, which are not currently in scope for Viva Insights. Additionally, Data Connect raw data provides granular details that aren’t otherwise available from Viva Insights.  
 
-![screenshot on viva insights](.../concepts/data-connect-viva-insights-mgdc.png)
+![Image showing use cases for Microsoft Graph Data Connect](.../images/data-connect-viva-insights-mgdc.png)
 
 ## Is there any initial overhead with Microsoft Graph Data Connect?
 
