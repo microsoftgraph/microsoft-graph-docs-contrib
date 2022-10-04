@@ -93,7 +93,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "userPurpose",
           "ChangeType": "Addition",
-          "Description": "Added the **userPurpose** property to the [mailboxSettings](https://docs.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the **userPurpose** property to the [mailboxSettings](https://learn.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-1.0) resource.",
           "Target": "mailboxSettings"
         },
         {
@@ -101,7 +101,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userPurpose",
           "ChangeType": "Addition",
-          "Description": "Added the [userPurpose](https://docs.microsoft.com/en-us/graph/api/resources/userpurpose?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [userPurpose](https://learn.microsoft.com/en-us/graph/api/resources/userpurpose?view=graph-rest-1.0) resource type.",
           "Target": "userPurpose"
         },
         {
