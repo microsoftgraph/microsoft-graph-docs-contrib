@@ -1223,6 +1223,9 @@ Namespace: microsoft.graph
 |list|
 |listItem|
 |drive|
+|acronym|
+|bookmark|
+|chatMessage|
 |unknownFutureValue|
 
 ### searchAlterationType values
