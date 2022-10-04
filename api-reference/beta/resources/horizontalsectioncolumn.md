@@ -22,6 +22,8 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List horizontalSectionColumns](../api/horizontalsectioncolumn-list.md)|[horizontalSectionColumn](../resources/horizontalsectioncolumn.md) collection|Get a list of the [horizontalSectionColumn](../resources/horizontalsectioncolumn.md) objects and their properties.|
 |[Get horizontalSectionColumn](../api/horizontalsectioncolumn-get.md)|[horizontalSectionColumn](../resources/horizontalsectioncolumn.md)|Read the properties and relationships of a [horizontalSectionColumn](../resources/horizontalsectioncolumn.md) object.|
+|[List webParts](../api/webpart-list.md)|[webPart](../resources/webPart.md) Collection |Get a list of webparts associated with a [horizontalSectionColumn](../resources/horizontalsectioncolumn.md) object.|
+
 
 
 ## Properties

@@ -21,6 +21,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get verticalSection](../api/verticalsection-get.md)|[verticalSection](../resources/verticalsection.md)|Read the properties and relationships of a [verticalSection](../resources/verticalsection.md) object.|
+|[List webParts](../api/webpart-list.md)|[webPart](../resources/webPart.md) Collection |Get a list of webparts associated with a [verticalSection](../resources/verticalSection.md) object.|
 
 
 ## Properties
