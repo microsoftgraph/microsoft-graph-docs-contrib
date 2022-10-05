@@ -14,7 +14,7 @@ configuration := &graphconfig.DeltaRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 
-result, err := graphClient.Me().ContactFolders().Delta().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().ContactFolders().Delta().Get(context.Background(), configuration)
 
 
 ```

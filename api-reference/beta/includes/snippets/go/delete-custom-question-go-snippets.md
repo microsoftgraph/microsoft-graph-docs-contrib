@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().CustomQuestionsById("meetingRegistrationQuestion-id").Delete()
+graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().CustomQuestionsById("meetingRegistrationQuestion-id").Delete(context.Background(), nil)
 
 
 ```

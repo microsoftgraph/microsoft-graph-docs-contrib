@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().MessagesById("message-id").$value().Get()
+graphClient.Me().MessagesById("message-id").$value().Get(context.Background(), nil)
 
 
 ```

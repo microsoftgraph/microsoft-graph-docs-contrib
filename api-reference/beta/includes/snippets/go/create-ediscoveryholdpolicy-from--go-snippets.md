@@ -40,7 +40,7 @@ site.SetWebUrl(&webUrl)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").LegalHolds().Post(requestBody)
+result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").LegalHolds().Post(context.Background(), requestBody, nil)
 
 
 ```

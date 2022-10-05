@@ -14,7 +14,7 @@ configuration := &graphconfig.AccessReviewInstanceDecisionItemRequestBuilderGetR
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().AccessReviews().DecisionsById("accessReviewInstanceDecisionItem-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.IdentityGovernance().AccessReviews().DecisionsById("accessReviewInstanceDecisionItem-id").Get(context.Background(), configuration)
 
 
 ```

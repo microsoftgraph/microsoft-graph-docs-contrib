@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewTeamPostRequestBody()
+requestBody := graphmodels.NewTeamPutRequestBody()
 additionalData := map[string]interface{}{
 memberSettings := graphmodels.New()
 	allowCreateUpdateChannels := true
@@ -32,7 +32,7 @@ discoverySettings.SetShowInTeamsSearchAndSuggestions(&showInTeamsSearchAndSugges
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.GroupsById("group-id").Team().Put(requestBody)
+graphClient.GroupsById("group-id").Team().Put(context.Background(), requestBody, nil)
 
 
 ```

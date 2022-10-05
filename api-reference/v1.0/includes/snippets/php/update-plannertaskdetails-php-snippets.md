@@ -79,7 +79,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->planner()->tasksById('plannerTask-id')->details()->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->planner()->tasksById('plannerTask-id')->details()->patch($requestBody, $requestConfiguration);
 
 
 ```

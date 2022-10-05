@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.UsersById("user-id").Authentication().PasswordlessMicrosoftAuthenticatorMethodsById("passwordlessMicrosoftAuthenticatorAuthenticationMethod-id").Delete()
+graphClient.UsersById("user-id").Authentication().PasswordlessMicrosoftAuthenticatorMethodsById("passwordlessMicrosoftAuthenticatorAuthenticationMethod-id").Delete(context.Background(), nil)
 
 
 ```

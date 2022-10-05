@@ -4,6 +4,7 @@ description: "Use the education API in Microsoft Graph to specify the default Mi
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
+ms.collection: "education"
 doc_type: conceptualPageType
 ---
 

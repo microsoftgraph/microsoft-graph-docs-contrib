@@ -15,17 +15,16 @@ requestBody.SetIsViewingBeforeAcceptanceRequired(&isViewingBeforeAcceptanceRequi
 
 
 agreementFileLocalization := graphmodels.NewAgreementFileLocalization()
-additionalData := map[string]interface{}{
-	"fileName" : "TOU.pdf", 
-	"language" : "en", 
-	isDefault := true
+fileName := "TOU.pdf"
+agreementFileLocalization.SetFileName(&fileName) 
+language := "en"
+agreementFileLocalization.SetLanguage(&language) 
+isDefault := true
 agreementFileLocalization.SetIsDefault(&isDefault) 
-fileData := graphmodels.New()
-data := "SGVsbG8gd29ybGQ=//truncated-binary"
+fileData := graphmodels.NewAgreementFileData()
+data := []byte("sGVsbG8gd29ybGQ=//truncated-binary")
 fileData.SetData(&data) 
-	agreementFileLocalization.SetFileData(fileData)
-}
-agreementFileLocalization.SetAdditionalData(additionalData)
+agreementFileLocalization.SetFileData(fileData)
 
 files := []graphmodels.AgreementFileLocalizationable {
 	agreementFileLocalization,
@@ -33,7 +32,7 @@ files := []graphmodels.AgreementFileLocalizationable {
 }
 requestBody.SetFiles(files)
 
-result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(requestBody)
+result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(context.Background(), requestBody, nil)
 
 
 ```

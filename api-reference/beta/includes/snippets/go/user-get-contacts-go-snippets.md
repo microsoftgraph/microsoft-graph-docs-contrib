@@ -14,7 +14,7 @@ configuration := &graphconfig.ContactsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Contacts().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().Contacts().Get(context.Background(), configuration)
 
 
 ```

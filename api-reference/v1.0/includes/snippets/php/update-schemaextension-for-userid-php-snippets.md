@@ -23,7 +23,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->usersById('user-id')->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->patch($requestBody);
 
 
 ```

@@ -53,7 +53,7 @@ removeExclusions := []graphmodels.Objectable {
 }
 requestBody.SetRemoveExclusions(removeExclusions)
 
-graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudience().Post(requestBody)
+graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudience().Post(context.Background(), requestBody, nil)
 
 
 ```
