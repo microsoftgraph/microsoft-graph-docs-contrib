@@ -57,7 +57,7 @@ The following table shows the required properties used to create an [accessRevie
 |reviewHistoryPeriodStartDateTime  | DateTimeOffset  | A timestamp. Reviews starting on or after this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined.  |
 |reviewHistoryPeriodEndDateTime  | DateTimeOffset  | A timestamp. Reviews starting on or before this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined.  |
 |scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) collection| Used to filter which reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required. <br> For more, see [Supported scope queries for accessReviewHistoryDefinition](#supported-scope-queries-for-accessreviewhistorydefinition). |
-| scheduleSettings  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| The settings for a recurring access review history definition series. Only required if **reviewHistoryPeriodStartDateTime** or **reviewHistoryPeriodEndDateTime** are not defined. Not supported yet.|
+| scheduleSettings (preview)  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| Not supported yet. The settings for a recurring access review history definition series. Only required if **reviewHistoryPeriodStartDateTime** or **reviewHistoryPeriodEndDateTime** are not defined. |
 
 ### Supported scope queries for accessReviewHistoryDefinition
 
@@ -107,20 +107,8 @@ Content-Type: application/json
     "notReviewed",
     "notNotified"
   ],
-  "scheduleSettings": {
-      "reportRange": "P1M",
-      "recurrence": {
-          "pattern": {
-              "type": "monthly",
-              "interval": 1
-          },
-          "range": {
-              "type": "noEnd",
-              "startDate": "2018-08-03T21:02:30.667Z",
-              "count": 0
-          }
-        }
-  },
+  "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+  "reviewHistoryPeriodEndDateTime": "2021-04-30T23:59:59Z",
   "scopes": [
     {
       "@odata.type": "#microsoft.graph.accessReviewQueryScope",
