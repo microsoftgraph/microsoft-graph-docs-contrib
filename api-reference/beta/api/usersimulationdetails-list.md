@@ -1,7 +1,7 @@
 ---
-title: "List simulation users"
-description: "List users of a tenant in an attack simulation campaign with their online actions."
-author: "Gopal-MSFT"
+title: "List simulationUsers"
+description: "List users of a tenant and their online actions in an attack simulation campaign."
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
@@ -30,13 +30,14 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/attackSimulation/simulations/{id}/report/simulationUsers
+GET /security/attackSimulation/simulations/{simulationId}/report/simulationUsers
 ```
 
 ## Optional query parameters
-This method supports the following OData query parameters to help customize the response: `$count`, `$skiptoken`, `$top`.
 
-Use `@odata.nextLink` for pagination.
+This method supports the `$count`, `$skipToken`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
+
+If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 
 The following are examples of their use:
 
@@ -45,11 +46,10 @@ The following are examples of their use:
 }
 -->
 ``` http
-GET /security/attackSimulation/simulations/{id}/report/simulationUsers?$top=1
-GET /security/attackSimulation/simulations/{id}/report/simulationUsers?$count=true
+GET /security/attackSimulation/simulations/{simulationId}/report/simulationUsers?$count=true
+GET /security/attackSimulation/simulations/{simulationId}/report/simulationUsers?$skipToken={skipToken}
+GET /security/attackSimulation/simulations/{simulationId}/report/simulationUsers?$top=1
 ```
-
-For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -67,6 +67,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -74,7 +76,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/simulationUsers
+GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/report/simulationUsers
 ```
 
 # [C#](#tab/csharp)
@@ -91,9 +93,10 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/
 
 ---
 
-
-
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -159,8 +162,8 @@ Content-Type: application/json
       "reportedPhishDateTime": "2021-01-01T01:01:01.01Z",
       "simulationUser": {
         "userId": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-        "displayName": "Sample User",
-        "email": "sampleuser@contoso.com"
+        "displayName": "Reed Flores",
+        "email": "reed@contoso.com"
       }
     }
   ]

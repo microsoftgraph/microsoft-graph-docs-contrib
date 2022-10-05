@@ -33,4 +33,3 @@ Represents the state of Zebra FOTA deployment.
 
 
 
-

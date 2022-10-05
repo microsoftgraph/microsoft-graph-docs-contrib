@@ -1011,6 +1011,24 @@
       "CreatedDateTime": "2022-05-13T01:31:31.3210645Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "65afd0ab-40ec-4bc7-8856-3ff8c346e367",
+          "ApiChange": "Member",
+          "ChangedApiName": "project",
+          "ChangeType": "Addition",
+          "Description": "Added the `project` member to the **plannerContainerType** enumeration.",
+          "Target": "plannerContainerType"
+        }
+      ],
+      "Id": "65afd0ab-40ec-4bc7-8856-3ff8c346e367",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T18:58:36.7709262Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     }
   ]
 }
