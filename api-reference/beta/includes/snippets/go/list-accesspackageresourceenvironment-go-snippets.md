@@ -17,7 +17,7 @@ configuration := &graphconfig.AccessPackageResourceEnvironmentsRequestBuilderGet
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceEnvironments().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceEnvironments().Get(context.Background(), configuration)
 
 
 ```

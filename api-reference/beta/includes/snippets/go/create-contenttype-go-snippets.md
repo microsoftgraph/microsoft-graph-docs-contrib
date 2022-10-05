@@ -12,7 +12,7 @@ name := "docSet"
 requestBody.SetName(&name) 
 description := "custom docset"
 requestBody.SetDescription(&description) 
-base := graphmodels.Newbase()
+base := graphmodels.NewContentType()
 name := "Document Set"
 base.SetName(&name) 
 id := "0x0120D520"
@@ -21,7 +21,7 @@ requestBody.SetBase(base)
 group := "Document Set Content Types"
 requestBody.SetGroup(&group) 
 
-result, err := graphClient.SitesById("site-id").ContentTypes().Post(requestBody)
+result, err := graphClient.SitesById("site-id").ContentTypes().Post(context.Background(), requestBody, nil)
 
 
 ```

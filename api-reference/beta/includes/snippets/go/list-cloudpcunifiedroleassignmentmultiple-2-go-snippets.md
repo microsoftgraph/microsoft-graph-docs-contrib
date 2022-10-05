@@ -17,7 +17,7 @@ configuration := &graphconfig.RoleAssignmentsRequestBuilderGetRequestConfigurati
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().Get(context.Background(), configuration)
 
 
 ```

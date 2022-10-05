@@ -11,7 +11,7 @@ requestBody := graphmodels.NewSubjectRightsRequest()
 internalDueDateTime , err := time.Parse(time.RFC3339, "2021-08-30T00:00:00Z")
 requestBody.SetInternalDueDateTime(&internalDueDateTime) 
 
-graphClient.Privacy().SubjectRightsRequestsById("subjectRightsRequest-id").Patch(requestBody)
+result, err := graphClient.Privacy().SubjectRightsRequestsById("subjectRightsRequest-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

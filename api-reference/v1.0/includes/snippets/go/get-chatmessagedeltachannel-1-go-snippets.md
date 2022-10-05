@@ -17,7 +17,7 @@ configuration := &graphconfig.DeltaRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Delta().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Delta().Get(context.Background(), configuration)
 
 
 ```

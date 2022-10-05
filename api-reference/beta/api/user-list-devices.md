@@ -2,7 +2,7 @@
 title: "List user devices (deprecated)"
 description: "Get a list of user devices that support Project Rome capabilities. This includes the ability to launch an app, or message or send data to an application. After you do a GET call on me/devices, pass in the ID of the device to send a command to your device."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "yyuank"
 ms.prod: "users"
 doc_type: apiPageType
 ---

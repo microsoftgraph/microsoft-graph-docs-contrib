@@ -27,6 +27,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
 1. After the Azure Data Factory resource is created, select **Go to resource** and then select the **Open Azure Data Factory Studio** tile to launch the Azure Data Factory full screen editor.
 
+
     ![Screenshot of the the Azure Portal Data Factory service page with Open Azure Data Factory Studio highlighted.](../concepts/images/data-connect-adf-studio-new.png)
 
 1. Switch from the **Overview** (home icon) to the **Manage** (toolbox icon) experience by selecting it from the left-hand navigation.

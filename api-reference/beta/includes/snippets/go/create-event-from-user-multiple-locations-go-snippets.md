@@ -107,7 +107,7 @@ requestBody.SetLocations(locations)
 allowNewTimeProposals := true
 requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals) 
 
-result, err := graphClient.Me().Events().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 
 ```

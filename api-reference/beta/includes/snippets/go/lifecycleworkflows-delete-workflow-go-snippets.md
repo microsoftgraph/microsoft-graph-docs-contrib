@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").Delete()
+graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").Delete(context.Background(), nil)
 
 
 ```
