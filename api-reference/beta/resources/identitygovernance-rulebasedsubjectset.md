@@ -21,7 +21,7 @@ Inherits from [subjectSet](../resources/subjectset.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|rule|String|The rule for the subject set. Lifecycle Workflows supports a rich set of [user properties](user.md#properties) for configuring the rules using `$filter` query expressions. For more information, see [supported user and query parameters](#supported-user-and-query-parameters). |
+|rule|String|The rule for the subject set. Lifecycle Workflows supports a rich set of [user properties](user.md#properties) for configuring the rules using `$filter` query expressions. For more information, see [supported user and query parameters](#supported-user-properties-and-query-parameters). |
 
 ### Supported user properties and query parameters
 
