@@ -1,102 +1,86 @@
 ---
-title: "Microsoft Graph Data Connect Troubleshooting"
-description: "MGDC Troubleshooting page is meant to help developers get unblocked quickly or help address any issues they may have based on how they want to set up MGDC."
+title: "Troubleshoot Microsoft Graph Data Connect"
+description: "Get troubleshooting information related to using Microsoft Graph Data Connect."
 author: "David1997sb"
 ms.localizationpriority: high
 ms.prod: "data-connect"
 ---
 
-# Microsoft Data Connect Troubleshooting
+# Troubleshoot Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect lets developers create applications for analytics, intelligence, and business process optimization by extending Microsoft 365 data at scale into Azure. This article aims to help MGDC developers further research any common troubleshooting issues and get unblocked quickly so they can run MGDC successfully on their own.
+Microsoft Graph Data Connect enbles you to extend Microsoft 365 data into Azure in order to create applications for analytics, intelligence, and business process optimization. This article provides troubleshooting information for working with Microsoft Graph Data Connect.
 
-For an introduction to MGDC, see the [overview](data-connect-concept-overview.md). 
+For more questions, reach out to the [Data Connect team](mailto:dataconnect@microsoft.com).
 
-For MGDC FAQ see the [FAQ](data-connect-faq.md).
+## Issues with service principal check when running your first pipeline
 
-For further questions that are not covered here, please reach out dataconnect@microsoft.com.
+If you're having issues running your pipelines for the first time, verify that you have defined the owners for the Source Linked Service as follows:
 
-## Troubleshooting for Service Principal check when running your first MGDC Pipeline
+- The service principal's owner must be a valid user account within the tenant, not another service principal. 
 
-![A screenshot for SPN check](../concepts/images/data-connect-troubleshooting-spn.png)
+- The owner’s account must have:
 
-If you are having issues running your pipelines for the first time, please check how you have defined the owners for the Source Linked Service.  Please ensure you have followed the below.
+    - A valid mailbox, either via an Exchange Online license or an Exchange Online plan within an Office 365 or Microsoft 365 license.
 
-1. The Service Principal's owner must be a valid user account within the tenant, not another service principal. 
+    - An Office 365 or Microsoft 365 E5 subscription assigned. No specific services within the license need to be enabled unless the user does not have a separate Exchange Online license, in which case the Exchange Online plan must be enabled.  
+        **Note:** This account does not need the Global Admin role enabled. This is only required for Approver accounts that approve requests through the admin center.
 
-2. The owner’s account must have:
+    - Because Data Connect uses the Privilege Access Management system to generate consent requests, E5 licenses are required. For details, see [Integrate with PAM](/graph/data-connect-pam) and [Get started with privileged access management](/microsoft-365/compliance/privileged-access-management-configuration?view=o365-worldwide).
 
-    1. User account  must have a valid mailbox, either by assigning an Exchange online license or enabling Exchange online plan within the Office365 or Microsoft 365 license.
+- If the owning member is no longer valid in a tenant's system, pipelines will fail this check unless a current valid user within the tenant owns the account. If there is a change in ownership, make sure that the owning account is updated to another member who meets the requirements. 
 
-    2. An Office 365 or Microsoft 365 E5 assigned. No specific services within the license are needed to be enabled unless the user does not have a separate Exchange online license, in which case the Exchange online plan must be enabled.  
-        * This account does not need to have Global Admin role enabled, which is only required for Approver accounts approving requests through the admin center.
+## PAM approver issues
 
-    3. E5 licenses are required as MGDC uses Privilege Access Management system to generate consent requests, more information [here](https://docs.microsoft.com/en-us/graph/data-connect-pam) and [here](https://docs.microsoft.com/en-us/microsoft-365/compliance/privileged-access-management-configuration?view=o365-worldwide)
+If you're having issues approving jobs within your tenant for your specified pipeline runs or extractions, verify that the approvers in your tenant meet the following criteria. Certain privileges must be granted to designated approvers to successfully approve jobs.
 
-3. If the owning member is no longer valid in a tenant's system, pipelines will fail this check unless a current valid user within the tenant owns the account. Please ensure that the owning account is updated to another member with the above requirements if there is a change in ownership. 
+- Approvers must be active user accounts within the tenant, not other service principals or groups.
 
-## Troubleshooting on PAM Approver Issues
+- The user account must have an Office 365 or Microsoft 365 E5 license with Exchange Online capabilities and a mailbox.
 
-![A screenshot for PAM Approver Issues](../concepts/images/data-connect-troubleshooting-PAM.png)
-
-If you are having issues approving jobs within your tenant for your specified pipeline runs or extractions, please ensure that the approvers in your tenant meet the criteria below. Certain privileges must be granted to designated approvers to successfully approve jobs.
-
-1. Approvers must be active user accounts within the tenant, not other service principals or groups.
-
-2. The user account must have an Office 365 or Microsoft 365 E5 Office license  with Exchange Online capabilities and mailbox.
-
-3. If approvers want to approve jobs through the M365 admin center, approvers will need global admin privileges. Global admin privileges are not needed when approving jobs via [PowerShell script](https://docs.microsoft.com/en-us/graph/data-connect-pam#approve-deny-and-revoke-requests-by-using-powershell) .
+- If approvers want to approve jobs through the Microsoft 365 admin center, they will need global admin privileges. Global admin privileges are not needed when approving jobs via [PowerShell script](/graph/data-connect-pam#approve-deny-and-revoke-requests-by-using-powershell) .
 
 
-## Troubleshooting on Multi-Geo tenant extraction for MGDC
+## Multi-geo tenant extraction issues
 
-Sometimes, customers may want to add other regions to their pipelines, especially larger customers with multi-geo tenants. While multi-geo tenants can certainly still use MGDC, please remember that when customers request data, they can only get data for one region extracted per region. Customers cannot use one pipeline to extract data from multiple geos. This rule is enforced by MGDC for the privacy and security for a customer's tenant users. 
+Sometimes, customers might want to add other regions to their pipelines, especially larger customers with multi-geo tenants. While multi-geo tenants can still use Microsoft Graph Data Connect, be aware that when customers request data, they can only extract data for one region. Customers cannot use one pipeline to extract data from multiple regrions. Data Connect enforces this rule for the privacy and security of a customer's tenant users. 
 
-Below things to keep in mind for customers with multi-geo tenats to extract data:
+Keep the following in mind when customers with multi-geo tenants extract data:
 
-1. When requesting datasets, MGDC only allows datasets to be extracted from the same region as the tenant. 
+- Data Connect only allows datasets to be extracted from the same region as the tenant. For example, if you have a tenant in Europe (EUR) but want to run your pipeline for your users in North America (NAM), you will only get data for users in NAM, because you specified a pipeline for NAM.
 
-    1. For example, if you have a tenant in Europe (EUR) but want to run your pipeline for your users in North America (NAM), you will only get data for users in NAM since you specified a pipeline for NAM.
+- Multi-geo tenants can extract data for their tenants by setting up region-specific pipelines. For example, one region maps to one or a set of pipelines for that region. 
 
-2. Multi-geo tenants can extract data for their tenants by setting up region specific pipelines. 
+## Aggregating mutliple JSON file outputs
 
-    1. For example, one region maps to one or a set of pipelines for that region. 
+To combine files:
 
-## Troubleshooting on aggregating mutliple JSON file outputs into one
+1. Add a new **opy data activity** after the extraction.
 
-1. To recombine the files together, you will need to add a new *Copy data activity* after the extraction.
+    ![Screenshot of Microsoft Azure showing the copy data activity](../concepts/images/data-connect-troubleshooting-copy-adf.png)
 
-    ![A screenshot for copy data](../concepts/images/data-connect-troubleshooting-copy-adf.png)
+2. Set the source of the new activity to the location where you extracted the files (Azure storage), set the file format to JSON, and specify *Wildcard file path* as the path type.
 
-2. You will need to set the source of this new activity to be the location where you’ve extracted the files (Azure Storage) and set the files’ format as JSON and specify *Wildcard file path* as the path type.
-
-3. Then on the Sink tab, simply specify the location where you wish to have the combined file created and make sure you select the *Merge files* behavior.
+3. On the **Sink** tab, specify the location where you want the combined file to be created and make sure you select the **Merge files** behavior.
 
 ## Serverless SQL pool service connectivity issue
 
-The issue you may be running into is similar to [this](https://learn.microsoft.com/en-us/azure/synapse-analytics/troubleshoot/troubleshoot-synapse-studio#notebook-websocket-connection-issue) when connecting Azure Synapse to the destination storage account. The issue is related Synapse and how it sets up a websocket in the browser to retrieve the data which is by default blocked on the customer internet proxy. 
+When connecting Azure Synapse to the destination storage account, you might run into an issue similar to the one described in [Notebook websocket connection issue](https://learn.microsoft.com/en-us/azure/synapse-analytics/troubleshoot/troubleshoot-synapse-studio#notebook-websocket-connection-issue). The issue is related Synapse and how it sets up a websocket in the browser to retrieve the data that is blocked by default on the customer internet proxy. 
 
-1. You can resolve this issue with an SSP request: "INTERNT PROXY (SWG) - EXCEPTION ON SECURITY FILTERING POLICY"
+You can resolve this issue with an SSP request: `INTERNT PROXY (SWG) - EXCEPTION ON SECURITY FILTERING POLICY`.
 
-## Troubleshooting allow listing Network IP address with Azure Integration runtime
+## Issues adding network IP address to allow list with Azure integration runtime
 
-![Screenshot describing error message 1](../concepts/data-connect-troubleshooting-azure-IR-1.png)
+If the destination storage account needs to be closed for public access, you need to allow access for a particular set of Azure service IP addresses. Customers will need to allow list their IPs based on their region, the region of tenancy they want to extract data from, and their Azure IR region. To do this:
 
-![Screenshot describing error message 2](../concepts/data-connect-troubleshooting-azure-IR-2.png)
+1. Find an Office to Azure region mapping. To look up which Office region you will be extracting user data from, see [Regions](/graph/data-connect-datasets#regions).
 
-If the destination storage account needs to be closed for public access, you will need to allow access for a particular set of Azure services IP addresses. Customers will need to allow list their IPs based on their region, the region of tenancy they want to extract data from and their Azure IR region.
+    **Note:** The Azure region you're running a pipeline in must map to an Office region to extract the users for the tenant. Microsoft Graph Data Connect does not extract data across regions. For example, if you're running a pipeline in the West Europe Azure region, it will only extract the users for the Europe (EUR) Office region because the West Europe Azure region maps to the Europe Office region. 
 
-1. Find an Office to Azure region mapping: Look up which Office region you will be extracting user data from [here](https://docs.microsoft.com/en-us/graph/data-connect-datasets#regions).
+2. After you find the Office to Azure mapping, you need to determine the correct and compatible location of your destination storage account. You can look up how to configure your Azure storage account and [grant access from an internet IP range](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range).
 
-    1. The Azure region you're running a pipeline in must map to an Office region to extract the users for the tenant. MGDC will extract only for that region as MGDC does not allow for cross region extraction. 
+   a. Use the following table to select an Azure storage account that meets the criteria.
 
-    2. For example, if you're running a pipeline in West Europe Azure region, it will only extract the users for Europe (EUR) Office region since West Europe Azure region maps to the Europe Office region. 
-
-2. After you have found an Office to Azure mapping, you need to determine the correct and compatible location of your destination storage account. You can look up how to configure your Azure storage account and [grant access from an internet IP range](https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range).
-
-    1. Please follow table 1 below to select an Azure Storage account that meets the criteria below.
-
-        | O365 Region | Region where the destination storage can't be in |
+        | Office 365 region | Region the destination storage can't be in |
         |-------------|--------------------------------------| 
         | NAM         | East US                              |
         | CAN         | Canada East                          | 
@@ -105,9 +89,9 @@ If the destination storage account needs to be closed for public access, you wil
         | APAC        | Southeast Asia                       |
         | AUS         | Australia Southeast                  |
 
-    2. Next, you will need to allow list IP addresses within your destination storage account that is compatible with table 1 above. Please follow table 2 below to allow list IPs based on the O365 region and then download IP ranges [here](https://www.microsoft.com/en-us/download/details.aspx?id=56519) based on the table below.
+    b. Add IP addresses to the allow list within your destination storage account that is compatible with the previous table. Use the following table to identify the region. To find IP ranges, see [Azure IP Ranges and Service Tags](https://www.microsoft.com/en-us/download/details.aspx?id=56519).
 
-        | O365 Region | Region you have to allowlist         |
+        | Office 365 region | Region you add to allow list         |
         |-------------|--------------------------------------| 
         | NAM         | East US                              |
         | CAN         | Canada East                          | 
@@ -117,31 +101,35 @@ If the destination storage account needs to be closed for public access, you wil
         | AUS         | Australia Southeast                  |
 
     > [!NOTE]
-    > 1. At this point, customers can understand and configure the region they want to extract users from (what their Office to Azure region mapping is)
-    > 2. Customers can understand which region their destination storage account CANNOT be in (from table 1)
-    > 3. Based on a compatible destination storage account, customers can use information from table 2 to understand which IP addresses they need to allow list. 
-    > 4. Next steps will help customers understand Azure Integration runtime (IR)
+    > - At this point, customers can understand and configure the region they want to extract users from (what their Office to Azure region mapping is).
+    > - Customers can understand which region their destination storage account can't be in.
+    > - Based on a compatible destination storage account, customers can usethe  information to understand which IP addresses they need to add to the allow list. 
 
-3. You can create a new integration run time on the same region that you have allow listed from table 2 or use Auto Resolve, either way is equivalent based on how your preference and settings. For ease, we highly recommend creating a new IR on the same region as table 2. More information can be found [here] (https://docs.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions).
+3. You can create a new integration run time on the same region that you have added to the allow list, or use auto resolve, depending on your preference and settings. We recommend creating a new IR in the same region. For details, see [Azure Integration Runtime IP addresses: Specific regions](/azure/data-factory/azure-integration-runtime-ip-addresses#azure-integration-runtime-ip-addresses-specific-regions).
 
-    1. If you are using Auto Resolve IR then the region depends on [several factors](https://docs.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime#azure-ir-location) 
+    - If you're using Auto Resolve IR, the region depends on several factors. For details, see [Azure IR location](/azure/data-factory/concepts-integration-runtime#azure-ir-location).
 
-### Example on Network Access and Azure IR
+### Network access and Azure IR example
 
-1.	I want to extract data for my users in Europe (EUR) Office region. I will have to refer to step #1 in the instructions above to find out my Office to Azure region mapping. Since my Office region is EUR, my Azure region is in West Europe.
+The following example describes how to troubleshoot network access issue:
 
-2.	All my resources, ADF and storage account are in West Europe Azure region, initially.
+1.	A user wants to extract data for users in the Europe (EUR) Office region. They identify their Office to Azure region mapping. Because the Office region is EUR, the Azure region is in West Europe.
 
-3.	I closed my destination storage account for public access.
+2.	All resources, ADF, and storage account are in the West Europe Azure region, initially.
 
-4.	I need to refer to step #2 table #1 to understand where my compatible destination storage account can be based on my Office region I want to extract (EUR).
+3.	The user closed the destination storage account for public access.
 
-5.	Since I cannot allow list services in the same region as the storage account, then my destination storage account cannot be on West Europe Azure region. I can create a new storage account in North Europe.
+4.	The user needs to identify where their compatible destination storage account can be based on the Office region I want to extract (EUR).
 
-6.	For MGDC internal services to copy the data into my destination storage account, I need to refer to step #2 table #2 to understand how to allow list IP addresses from compatible regions based on my Office region (EUR). I will need to allow list ADF Public IPs in West Europe Azure region. 
+5.	Because they cannot add allow list services in the same region as the storage account, the destination storage account cannot be on the West Europe Azure region. They can create a new storage account in North Europe.
 
-7.	For the ADF destination linked service to also access my destination storage account, the easiest way recommended is to create and use an Integration Runtime on the West Europe region. I need to refer to step #3 to complete this or want to use Auto Resolve IR instead.
+6.	For Data Connect internal services to copy the data into the destination storage account, they need to add IP addresses to the allow list from compatible regions based on their Office region (EUR). They will need to add ADF public IPs to the allow list in the West Europe Azure region. 
 
-8.	 I have already listed these IP addresses and moved the destination storage to North Europe since my Office region is EUR, and my Azure region is West Europe. 
+7.	For the ADF destination linked service to also access the destination storage account, they need to create and use an Integration Runtime on the West Europe region, or use auto resolve IR instead.
 
+8.	 The user lists these IP addresses and moves the destination storage to North Europe because the Office region is EUR, and the Azure region is West Europe. 
 
+## See also
+
+- [Data Connect overview](data-connect-concept-overview.md)
+- [Data Connect FAQ](data-connect-faq.md)
