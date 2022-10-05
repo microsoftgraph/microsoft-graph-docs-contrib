@@ -124,7 +124,7 @@ TeamsMsal2Provider.handleAuth();
 
 ## Configure your Teams app
 
-If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams apps](/microsoftteams/platform/concepts/tabs/tabs-overview). You can also use [App Studio](/microsoftteams/platform/get-started/get-started-app-studio) to develop your app manifest.
+If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams apps](/microsoftteams/platform/concepts/tabs/tabs-overview). You can also use the [Developer Portal for Teams](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/teams-developer-portal) to configure, distribute and manage your application.
 
 ### Creating an app/client ID
 
