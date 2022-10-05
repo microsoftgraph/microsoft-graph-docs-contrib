@@ -11,7 +11,7 @@ requestBody := graphmodels.NewPersonName()
 nickname := "Kesha"
 requestBody.SetNickname(&nickname) 
 
-graphClient.Me().Profile().NamesById("personName-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Profile().NamesById("personName-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

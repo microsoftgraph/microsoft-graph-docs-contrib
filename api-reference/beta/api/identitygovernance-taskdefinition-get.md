@@ -1,6 +1,6 @@
 ---
 title: "Get taskDefinition"
-description: "Read the properties and relationships of a taskDefinition object."
+description: "Read the details of a built-in workflow task."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.
+Read the details of a built-in workflow [task](../resources/identitygovernance-taskdefinition.md).
 
 ## Permissions
 
@@ -57,7 +57,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [taskDefinition](../resources/identitygovernance-taskdefinition.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) object in the response body.
 
 ## Examples
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskD
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-get-taskdefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-get-taskdefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

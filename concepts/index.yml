@@ -54,7 +54,7 @@ conceptualContent:
         - url: ./security-concept-overview.md
           itemType: overview
           text: Connect Microsoft security products, services, and partners to streamline security operations.
-    - title: Microsoft Teams teamwork
+    - title: Microsoft Teams teamwork and communications
       links:
         - url: ./teams-concept-overview.md
           itemType: overview

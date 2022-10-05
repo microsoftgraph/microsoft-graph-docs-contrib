@@ -1,7 +1,7 @@
 ---
-title: "Get simulation report overview."
-description: "Get report overview for an attack simulation campaign."
-author: "Gopal-MSFT"
+title: "Get simulationReportOverview"
+description: "Get an overview of an attack simulation and training campaign."
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/attackSimulation/simulations/{id}/report/overview
+GET /security/attackSimulation/simulations/{simulationId}/report/overview
 ```
 
 ## Request headers
@@ -49,14 +49,15 @@ If successful, this method returns a `200 OK` response code and a [simulationRep
 
 ### Request
 
-# [HTTP](#tab/http)
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_simulationreportoverview"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/overview
+GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/report/overview
 ```
 
 # [C#](#tab/csharp)
@@ -73,9 +74,10 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/
 
 ---
 
-
-
 ### Response
+
+The following is an example of the request.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

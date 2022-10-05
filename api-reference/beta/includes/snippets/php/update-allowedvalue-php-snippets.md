@@ -14,7 +14,7 @@ $requestBody->setIsActive(false);
 
 
 
-$graphServiceClient->directory()->customSecurityAttributeDefinitionsById('customSecurityAttributeDefinition-id')->allowedValuesById('allowedValue-id')->patch($requestBody);
+$requestResult = $graphServiceClient->directory()->customSecurityAttributeDefinitionsById('customSecurityAttributeDefinition-id')->allowedValuesById('allowedValue-id')->patch($requestBody);
 
 
 ```

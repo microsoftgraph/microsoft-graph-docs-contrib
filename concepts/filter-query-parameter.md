@@ -52,7 +52,7 @@ Where
 If you are familiar with `C#` and `LINQ`, this would be the equivalent of the above syntax:
 
 ```csharp
-collection.Where(property => property.subProperty == "value-to-match")
+collection.Any(property => property.subProperty == "value-to-match")
 ```
 
 For example, the **imAddresses** property of the `user` resource contains a collection of String primitive types. The following query retrieves only users with an imAddress of `admin@contoso.com`.
