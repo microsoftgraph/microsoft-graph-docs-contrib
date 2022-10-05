@@ -5919,7 +5919,7 @@
         {
           "Id": "f0bb938f-6606-4da1-8488-5278e6c06f18",
           "ApiChange": "Method",
-          "ChangedApiName": "seReaction",
+          "ChangedApiName": "setReaction",
           "ChangeType": "Addition",
           "Description": "Added the [setReaction](https://learn.microsoft.com/en-us/graph/api/chatmessage-setreaction?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
           "Target": "chatMessage"
