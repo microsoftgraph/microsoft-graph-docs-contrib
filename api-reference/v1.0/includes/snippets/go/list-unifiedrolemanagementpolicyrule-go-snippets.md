@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.Policies().RoleManagementPoliciesById("unifiedRoleManagementPolicy-id").Rules().Get()
+result, err := graphClient.Policies().RoleManagementPoliciesById("unifiedRoleManagementPolicy-id").Rules().Get(context.Background(), nil)
 
 
 ```

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.Teamwork().TeamTemplatesById("teamTemplate-id").DefinitionsById("teamTemplateDefinition-id").TeamDefinition().Get()
+result, err := graphClient.Teamwork().TeamTemplatesById("teamTemplate-id").DefinitionsById("teamTemplateDefinition-id").TeamDefinition().Get(context.Background(), nil)
 
 
 ```

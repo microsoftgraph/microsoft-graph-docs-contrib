@@ -35,7 +35,7 @@ requestBody.SetEndTime(endTime)
 availabilityViewInterval := int32(60)
 requestBody.SetAvailabilityViewInterval(&availabilityViewInterval) 
 
-result, err := graphClient.Me().Calendar().GetSchedule().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Me().Calendar().GetSchedule().Post(context.Background(), requestBody, configuration)
 
 
 ```

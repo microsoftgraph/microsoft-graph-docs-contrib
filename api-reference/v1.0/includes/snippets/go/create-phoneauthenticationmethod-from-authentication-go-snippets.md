@@ -13,7 +13,7 @@ requestBody.SetPhoneNumber(&phoneNumber)
 phoneType := graphmodels.MOBILE_AUTHENTICATIONPHONETYPE 
 requestBody.SetPhoneType(&phoneType) 
 
-result, err := graphClient.Me().Authentication().PhoneMethods().Post(requestBody)
+result, err := graphClient.Me().Authentication().PhoneMethods().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ requestBody.SetDescription(&description)
 createdBy := graphmodels.NewIdentitySet()
 requestBody.SetCreatedBy(createdBy)
 
-result, err := graphClient.Security().TriggerTypes().RetentionEventTypes().Post(requestBody)
+result, err := graphClient.Security().TriggerTypes().RetentionEventTypes().Post(context.Background(), requestBody, nil)
 
 
 ```

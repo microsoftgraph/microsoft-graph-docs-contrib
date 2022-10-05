@@ -3,8 +3,7 @@ title: "driveItem: restore"
 description: "Restore a driveItem that has been deleted and is currently in the recycle bin."
 ms.localizationpriority: medium
 author: "JeremyKelley"
-ms.prod: ""
-ms.date: 08/06/2019
+ms.prod: files
 doc_type: "apiPageType"
 ---
 
@@ -14,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin. **NOTE**: This functionality is currently only available for OneDrive Personal.
+Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin. 
+
+>**Note**: This functionality is currently only available for OneDrive Personal.
 
 ## Permissions
 

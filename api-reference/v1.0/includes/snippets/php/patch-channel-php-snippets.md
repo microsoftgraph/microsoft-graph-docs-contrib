@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->teamsById('team-id')->channelsById('channel-id')->patch();
+$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->patch();
 
 
 ```

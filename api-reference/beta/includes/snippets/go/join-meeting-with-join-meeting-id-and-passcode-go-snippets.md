@@ -11,7 +11,8 @@ requestBody := graphmodels.NewCall()
 callbackUri := "https://bot.contoso.com/callback"
 requestBody.SetCallbackUri(&callbackUri) 
 requestedModalities := []graphmodels.Modalityable {
-	"audio",
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality) 
 
 }
 requestBody.SetRequestedModalities(requestedModalities)
@@ -48,7 +49,7 @@ requestBody.SetMeetingInfo(meetingInfo)
 tenantId := "86dc81db-c112-4228-9222-63f3esaa1edb"
 requestBody.SetTenantId(&tenantId) 
 
-result, err := graphClient.Communications().Calls().Post(requestBody)
+result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

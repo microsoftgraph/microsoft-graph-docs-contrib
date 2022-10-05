@@ -17,7 +17,7 @@ configuration := &graphconfig.ServicePrincipalRiskDetectionsRequestBuilderGetReq
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityProtection().ServicePrincipalRiskDetections().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.IdentityProtection().ServicePrincipalRiskDetections().Get(context.Background(), configuration)
 
 
 ```

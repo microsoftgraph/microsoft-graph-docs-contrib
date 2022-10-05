@@ -33,7 +33,7 @@ claimsMapping.SetDisplayName(&displayName)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Identity().IdentityProviders().Post(requestBody)
+result, err := graphClient.Identity().IdentityProviders().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -22,19 +22,13 @@ $postsPost1Body->setContent('The confirmation will come by the end of the week.'
 
 $postsPost1->setBody($postsPost1Body);
 $newParticipantsRecipient1 = new Recipient();
-$additionalData = [
-'emailAddress' => $newParticipantsRecipient1 = new EmailAddress();
-$		newParticipantsRecipient1->setName('Adele Vance');
+$newParticipantsRecipient1EmailAddress = new EmailAddress();
+$newParticipantsRecipient1EmailAddress->setName('Adele Vance');
 
-$		newParticipantsRecipient1->setAddress('AdeleV@contoso.onmicrosoft.com');
-
-
-$newParticipantsRecipient1->setEmailAddress($emailAddress);
-
-];
-$newParticipantsRecipient1->setAdditionalData($additionalData);
+$newParticipantsRecipient1EmailAddress->setAddress('AdeleV@contoso.onmicrosoft.com');
 
 
+$newParticipantsRecipient1->setEmailAddress($newParticipantsRecipient1EmailAddress);
 
 $newParticipantsArray []= $newParticipantsRecipient1;
 $postsPost1->setNewParticipants($newParticipantsArray);

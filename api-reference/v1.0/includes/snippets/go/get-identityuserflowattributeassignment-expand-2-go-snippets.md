@@ -14,7 +14,7 @@ configuration := &graphconfig.UserAttributeAssignmentsRequestBuilderGetRequestCo
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").UserAttributeAssignments().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").UserAttributeAssignments().Get(context.Background(), configuration)
 
 
 ```

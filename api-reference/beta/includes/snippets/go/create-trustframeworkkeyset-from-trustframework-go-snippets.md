@@ -55,7 +55,7 @@ keys := []graphmodels.TrustFrameworkKeyable {
 }
 requestBody.SetKeys(keys)
 
-result, err := graphClient.TrustFramework().KeySets().Post(requestBody)
+result, err := graphClient.TrustFramework().KeySets().Post(context.Background(), requestBody, nil)
 
 
 ```
