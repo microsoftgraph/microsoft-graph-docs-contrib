@@ -16,6 +16,7 @@ For MGDC FAQ see the [FAQ](data-connect-faq.md).
 
 For further questions that are not covered here, please reach out dataconnect@microsoft.com.
 
+
 ## Troubleshooting for Service Principal check when running your first MGDC Pipeline
 
 ![A screenshot for SPN check](../concepts/images/data-connect-troubleshooting-spn.png)
