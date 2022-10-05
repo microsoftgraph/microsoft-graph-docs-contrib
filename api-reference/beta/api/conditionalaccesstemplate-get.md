@@ -148,7 +148,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates/c7503427-338e-4c5e-902d-abe252abfb43
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates/c7503427-338e-4c5e-902d-abe252abfb43?$select=details
 ```
 
 #### Response
