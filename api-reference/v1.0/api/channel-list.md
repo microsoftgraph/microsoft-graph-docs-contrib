@@ -28,6 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
+> **Note**: This API supports federation. Any shared channels, which current tenant user is part of, will be included in the response.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|ChannelMember.Read.All, ChannelMember.ReadWrite.All |
 
+> **Note**: This API supports federation. To access shared channel members, request must be made on behalf of the user who is part of the shared channel.
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
