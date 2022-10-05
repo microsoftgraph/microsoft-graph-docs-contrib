@@ -1,7 +1,7 @@
 ---
 title: "chat: markChatUnreadForUser"
 description: "Mark a chat as unread for a user."
-author: "jecha"
+author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
