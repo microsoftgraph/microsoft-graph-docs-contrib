@@ -1019,7 +1019,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "notes",
           "ChangeType": "Addition",
-          "Description": "Added the `notes` property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **notes** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
         }
       ],
