@@ -1,7 +1,7 @@
 ---
 title: "List submission resources"
 description: "List the resources associated with a submission."
-author: "sharad-sharma-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response.For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
