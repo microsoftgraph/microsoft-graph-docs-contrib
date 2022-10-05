@@ -30,4 +30,4 @@ Organizations that use Microsoft Teams to connect to the public switched telepho
 ## See also
 
 - [Call records permissions](./permissions-reference.md#call-records-permissions)
-- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Teams API overview](teams-concept-overview.md)

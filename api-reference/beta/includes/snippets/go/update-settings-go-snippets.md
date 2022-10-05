@@ -7,35 +7,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewCaseSettings()
-redundancyDetection := msgraphsdk.NewRedundancyDetectionSettings()
-requestBody.SetRedundancyDetection(redundancyDetection)
+requestBody := graphmodels.NewCaseSettings()
+redundancyDetection := graphmodels.NewRedundancyDetectionSettings()
 isEnabled := false
-redundancyDetection.SetIsEnabled(&isEnabled)
+redundancyDetection.SetIsEnabled(&isEnabled) 
 similarityThreshold := int32(70)
-redundancyDetection.SetSimilarityThreshold(&similarityThreshold)
+redundancyDetection.SetSimilarityThreshold(&similarityThreshold) 
 minWords := int32(12)
-redundancyDetection.SetMinWords(&minWords)
+redundancyDetection.SetMinWords(&minWords) 
 maxWords := int32(400000)
-redundancyDetection.SetMaxWords(&maxWords)
-topicModeling := msgraphsdk.NewTopicModelingSettings()
-requestBody.SetTopicModeling(topicModeling)
+redundancyDetection.SetMaxWords(&maxWords) 
+requestBody.SetRedundancyDetection(redundancyDetection)
+topicModeling := graphmodels.NewTopicModelingSettings()
 isEnabled := false
-topicModeling.SetIsEnabled(&isEnabled)
+topicModeling.SetIsEnabled(&isEnabled) 
 ignoreNumbers := false
-topicModeling.SetIgnoreNumbers(&ignoreNumbers)
+topicModeling.SetIgnoreNumbers(&ignoreNumbers) 
 topicCount := int32(50)
-topicModeling.SetTopicCount(&topicCount)
+topicModeling.SetTopicCount(&topicCount) 
 dynamicallyAdjustTopicCount := false
-topicModeling.SetDynamicallyAdjustTopicCount(&dynamicallyAdjustTopicCount)
-ocr := msgraphsdk.NewOcrSettings()
-requestBody.SetOcr(ocr)
+topicModeling.SetDynamicallyAdjustTopicCount(&dynamicallyAdjustTopicCount) 
+requestBody.SetTopicModeling(topicModeling)
+ocr := graphmodels.NewOcrSettings()
 isEnabled := true
-ocr.SetIsEnabled(&isEnabled)
+ocr.SetIsEnabled(&isEnabled) 
 maxImageSize := int32(12000)
-ocr.SetMaxImageSize(&maxImageSize)
-caseId := "case-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).Settings().Patch(requestBody)
+ocr.SetMaxImageSize(&maxImageSize) 
+requestBody.SetOcr(ocr)
+
+graphClient.Compliance().Ediscovery().CasesById("case-id").Settings().Patch(requestBody)
 
 
 ```

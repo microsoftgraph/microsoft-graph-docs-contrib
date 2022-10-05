@@ -7,20 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEducationAssignmentResource()
+requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := false
-requestBody.SetDistributeForStudentWork(&distributeForStudentWork)
-resource := msgraphsdk.NewEducationResource()
-requestBody.SetResource(resource)
+requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
+resource := graphmodels.NewEducationResource()
 displayName := "homework example.PNG"
-resource.SetDisplayName(&displayName)
-resource.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.educationMediaResource",
-	"fileUrl": "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RMUWOKAGSJZ6BHINJVKNMOOJABF",
+resource.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"fileUrl" : "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RMUWOKAGSJZ6BHINJVKNMOOJABF", 
 }
-educationClassId := "educationClass-id"
-educationAssignmentId := "educationAssignment-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Resources().Post(requestBody)
+resource.SetAdditionalData(additionalData)
+requestBody.SetResource(resource)
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Resources().Post(context.Background(), requestBody, nil)
 
 
 ```

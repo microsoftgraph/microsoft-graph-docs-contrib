@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
-requestOptions.add(new QueryOption("$search", "displayName:Web"));
+requestOptions.add(new QueryOption("$search", "\"displayName:Web\""));
 
 ApplicationCollectionPage applications = graphClient.applications()
 	.buildRequest( requestOptions )

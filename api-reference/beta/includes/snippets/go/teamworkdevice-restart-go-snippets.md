@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-teamworkDeviceId := "teamworkDevice-id"
-graphClient.Teamwork().DevicesById(&teamworkDeviceId).Restart(teamworkDevice-id).Post()
+
+graphClient.Teamwork().DevicesById("teamworkDevice-id").Restart().Post(context.Background(), nil)
 
 
 ```

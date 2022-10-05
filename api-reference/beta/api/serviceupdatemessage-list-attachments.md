@@ -57,34 +57,36 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_serviceannouncementattachment"
+  "name": "list_attachments_for_servicemessage",
+  "sampleKeys" : ["MC54091"]
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/attachments
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-serviceannouncementattachment-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-attachments-for-servicemessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-serviceannouncementattachment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-serviceannouncementattachment-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-attachments-for-servicemessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-serviceannouncementattachment-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-attachments-for-servicemessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-serviceannouncementattachment-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-attachments-for-servicemessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceannouncementattachment-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-attachments-for-servicemessage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-attachments-for-servicemessage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -132,34 +134,36 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_serviceannouncementattachment"
+  "name": "list_zip_of_serviceannouncementattachment",
+  "sampleKeys" : ["MC54091"]
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/attachmentsArchive
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-serviceannouncementattachment-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-zip-of-serviceannouncementattachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-serviceannouncementattachment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-serviceannouncementattachment-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-zip-of-serviceannouncementattachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-serviceannouncementattachment-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-zip-of-serviceannouncementattachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-serviceannouncementattachment-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-zip-of-serviceannouncementattachment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceannouncementattachment-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-zip-of-serviceannouncementattachment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-zip-of-serviceannouncementattachment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

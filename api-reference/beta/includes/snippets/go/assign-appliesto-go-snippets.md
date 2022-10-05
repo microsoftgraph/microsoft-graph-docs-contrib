@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}",
+requestBody := graphmodels.NewAppManagementPolicie()
+additionalData := map[string]interface{}{
+	"@odata.id" : "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}", 
 }
-servicePrincipalId := "servicePrincipal-id"
-appManagementPolicyId := "appManagementPolicy-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).AppManagementPoliciesById(&appManagementPolicyId).Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.ServicePrincipalsById("servicePrincipal-id").AppManagementPoliciesById("appManagementPolicy-id").Post(requestBody)
 
 
 ```

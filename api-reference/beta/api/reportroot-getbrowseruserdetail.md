@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getBrowserUserDetail"
-description: "Get a report that provides the browsers (Microsoft Edge, Microsoft Edge Legacy, and Internet Explorer) used by users when they access the Microsoft 365 services over a selected period."
+description: "Get a report that provides the browser (Microsoft Edge) used by users when they access the Microsoft 365 services over a selected period."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report that provides the browsers (Microsoft Edge, Microsoft Edge Legacy, and Internet Explorer) used by users when they access the Microsoft 365 services over a selected period.
+Get a report that provides the browser (Microsoft Edge) used by users when they access the Microsoft 365 services over a selected period.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
 
@@ -73,8 +73,6 @@ The CSV file has the following headers for columns:
 - User Principal Name
 - Report Period
 - Edge
-- Edge Legacy
-- Internet Explorer
 
 ### JSON
 
@@ -123,7 +121,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date, User Principal Name, Report Period, Edge, Edge Legacy, Internet Explorer
+Report Refresh Date, User Principal Name, Report Period, Edge
 ```
 
 ### Example 2: JSON output
@@ -167,9 +165,7 @@ Content-Length: 304
          "details":[
             {
                "reportPeriod":7,
-               "edge":true,
-               "edgeLegacy":true,
-               "ie":false
+               "edge":true
             }
          ]
       }

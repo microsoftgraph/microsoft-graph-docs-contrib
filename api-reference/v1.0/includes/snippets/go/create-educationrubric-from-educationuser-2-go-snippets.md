@@ -7,105 +7,131 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEducationRubric()
+requestBody := graphmodels.NewEducationRubric()
 displayName := "Example Points Rubric"
-requestBody.SetDisplayName(&displayName)
-description := msgraphsdk.NewEducationItemBody()
-requestBody.SetDescription(description)
+requestBody.SetDisplayName(&displayName) 
+description := graphmodels.NewEducationItemBody()
 content := "This is an example of a rubric with points"
-description.SetContent(&content)
-contentType := "text"
-description.SetContentType(&contentType)
-requestBody.SetLevels( []RubricLevel {
-	msgraphsdk.NewRubricLevel(),
+description.SetContent(&content) 
+contentType := graphmodels.TEXT_BODYTYPE 
+description.SetContentType(&contentType) 
+requestBody.SetDescription(description)
+
+
+rubricLevel := graphmodels.NewRubricLevel()
 displayName := "Good"
-	SetDisplayName(&displayName)
-description := msgraphsdk.NewEducationItemBody()
-	SetDescription(description)
+rubricLevel.SetDisplayName(&displayName) 
+description := graphmodels.NewEducationItemBody()
 content := ""
-	description.SetContent(&content)
-contentType := "text"
-	description.SetContentType(&contentType)
-grading := msgraphsdk.NewEducationAssignmentGradeType()
-	SetGrading(grading)
-	grading.SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-		"maxPoints": ,
-	}
-	msgraphsdk.NewRubricLevel(),
+description.SetContent(&content) 
+contentType := graphmodels.TEXT_BODYTYPE 
+description.SetContentType(&contentType) 
+rubricLevel.SetDescription(description)
+grading := graphmodels.NewEducationAssignmentGradeType()
+additionalData := map[string]interface{}{
+	"maxPoints" : int32(2) , 
+}
+grading.SetAdditionalData(additionalData)
+rubricLevel.SetGrading(grading)
+rubricLevel1 := graphmodels.NewRubricLevel()
 displayName := "Poor"
-	SetDisplayName(&displayName)
-description := msgraphsdk.NewEducationItemBody()
-	SetDescription(description)
+rubricLevel1.SetDisplayName(&displayName) 
+description := graphmodels.NewEducationItemBody()
 content := ""
-	description.SetContent(&content)
-contentType := "text"
-	description.SetContentType(&contentType)
-grading := msgraphsdk.NewEducationAssignmentGradeType()
-	SetGrading(grading)
-	grading.SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-		"maxPoints": ,
-	}
+description.SetContent(&content) 
+contentType := graphmodels.TEXT_BODYTYPE 
+description.SetContentType(&contentType) 
+rubricLevel1.SetDescription(description)
+grading := graphmodels.NewEducationAssignmentGradeType()
+additionalData := map[string]interface{}{
+	"maxPoints" : int32(1) , 
 }
-requestBody.SetQualities( []RubricQuality {
-	msgraphsdk.NewRubricQuality(),
-description := msgraphsdk.NewEducationItemBody()
-	SetDescription(description)
+grading.SetAdditionalData(additionalData)
+rubricLevel1.SetGrading(grading)
+
+levels := []graphmodels.RubricLevelable {
+	rubricLevel,
+	rubricLevel1,
+
+}
+requestBody.SetLevels(levels)
+
+
+rubricQuality := graphmodels.NewRubricQuality()
+description := graphmodels.NewEducationItemBody()
 content := "Argument"
-	description.SetContent(&content)
-contentType := "text"
-	description.SetContentType(&contentType)
-	SetCriteria( []RubricCriterion {
-		msgraphsdk.NewRubricCriterion(),
-description := msgraphsdk.NewEducationItemBody()
-		SetDescription(description)
+description.SetContent(&content) 
+contentType := graphmodels.TEXT_BODYTYPE 
+description.SetContentType(&contentType) 
+rubricQuality.SetDescription(description)
+
+
+rubricCriterion := graphmodels.NewRubricCriterion()
+description := graphmodels.NewEducationItemBody()
 content := "The essay's argument is persuasive."
-		description.SetContent(&content)
-contentType := "text"
-		description.SetContentType(&contentType)
-		msgraphsdk.NewRubricCriterion(),
-description := msgraphsdk.NewEducationItemBody()
-		SetDescription(description)
+description.SetContent(&content) 
+contentType := graphmodels.TEXT_BODYTYPE 
+description.SetContentType(&contentType) 
+rubricCriterion.SetDescription(description)
+rubricCriterion1 := graphmodels.NewRubricCriterion()
+description := graphmodels.NewEducationItemBody()
 content := "The essay's argument does not make sense."
-		description.SetContent(&content)
-contentType := "text"
-		description.SetContentType(&contentType)
-	}
+description.SetContent(&content) 
+contentType := graphmodels.TEXT_BODYTYPE 
+description.SetContentType(&contentType) 
+rubricCriterion1.SetDescription(description)
+
+criteria := []graphmodels.RubricCriterionable {
+	rubricCriterion,
+	rubricCriterion1,
+
+}
+rubricQuality.SetCriteria(criteria)
 weight := float32(50.0)
-	SetWeight(&weight)
-	msgraphsdk.NewRubricQuality(),
-description := msgraphsdk.NewEducationItemBody()
-	SetDescription(description)
+rubricQuality.SetWeight(&weight) 
+rubricQuality1 := graphmodels.NewRubricQuality()
+description := graphmodels.NewEducationItemBody()
 content := "Spelling and Grammar"
-	description.SetContent(&content)
-contentType := "text"
-	description.SetContentType(&contentType)
-	SetCriteria( []RubricCriterion {
-		msgraphsdk.NewRubricCriterion(),
-description := msgraphsdk.NewEducationItemBody()
-		SetDescription(description)
+description.SetContent(&content) 
+contentType := graphmodels.TEXT_BODYTYPE 
+description.SetContentType(&contentType) 
+rubricQuality1.SetDescription(description)
+
+
+rubricCriterion := graphmodels.NewRubricCriterion()
+description := graphmodels.NewEducationItemBody()
 content := "The essay uses proper spelling and grammar with few or no errors."
-		description.SetContent(&content)
-contentType := "text"
-		description.SetContentType(&contentType)
-		msgraphsdk.NewRubricCriterion(),
-description := msgraphsdk.NewEducationItemBody()
-		SetDescription(description)
+description.SetContent(&content) 
+contentType := graphmodels.TEXT_BODYTYPE 
+description.SetContentType(&contentType) 
+rubricCriterion.SetDescription(description)
+rubricCriterion1 := graphmodels.NewRubricCriterion()
+description := graphmodels.NewEducationItemBody()
 content := "The essay has numerous errors in spelling and/or grammar."
-		description.SetContent(&content)
-contentType := "text"
-		description.SetContentType(&contentType)
-	}
+description.SetContent(&content) 
+contentType := graphmodels.TEXT_BODYTYPE 
+description.SetContentType(&contentType) 
+rubricCriterion1.SetDescription(description)
+
+criteria := []graphmodels.RubricCriterionable {
+	rubricCriterion,
+	rubricCriterion1,
+
+}
+rubricQuality1.SetCriteria(criteria)
 weight := float32(50.0)
-	SetWeight(&weight)
+rubricQuality1.SetWeight(&weight) 
+
+qualities := []graphmodels.RubricQualityable {
+	rubricQuality,
+	rubricQuality1,
+
 }
-grading := msgraphsdk.NewEducationAssignmentGradeType()
+requestBody.SetQualities(qualities)
+grading := graphmodels.NewEducationAssignmentGradeType()
 requestBody.SetGrading(grading)
-grading.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-}
-result, err := graphClient.Education().Me().Rubrics().Post(requestBody)
+
+result, err := graphClient.Education().Me().Rubrics().Post(context.Background(), requestBody, nil)
 
 
 ```

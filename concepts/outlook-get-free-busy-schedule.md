@@ -10,7 +10,7 @@ ms.prod: "outlook"
 
 In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period.
 
-The [getSchedule](/graph/api/calendar-getschedule) action lets you get the availability information of one or more entities&mdash;users, distribution lists, or resources&mdash;for a specific period of time.
+The [getSchedule](/graph/api/calendar-getschedule) action lets you get the availability information of one or more entities - users, distribution lists, or resources - for a specific period of time. 
 
 ## Example
 

@@ -52,8 +52,9 @@ Here is an example of the request.
   "name": "get_administrativeunit_members"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/c5729e7c-988e-417b-b287-14f5bd4711d8/members/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9-4847-bbf2-dde106594bf4/members/5bde3e51-d13b-4db1-9948-fe4b109d11a7
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunit-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,12 +85,19 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",
-    "@odata.type": "#microsoft.graph.device",
-    "id": "7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac",
-    "accountEnabled": true,
-    "createdDateTime": "2022-04-20T08:53:50Z",
-    "deviceId": "6fa60d52-01e7-4b18-8055-4759461fc16b",
-    "displayName": "Test device",
-    "operatingSystem": "Windows"
+    "@odata.type": "#microsoft.graph.user",
+    "id": "5bde3e51-d13b-4db1-9948-fe4b109d11a7",
+    "businessPhones": [
+        "8006427676"
+    ],
+    "displayName": "MOD Administrator",
+    "givenName": "MOD",
+    "jobTitle": null,
+    "mail": "admin@M365x214355.onmicrosoft.com",
+    "mobilePhone": "5555555555",
+    "officeLocation": null,
+    "preferredLanguage": "en-US",
+    "surname": "Administrator",
+    "userPrincipalName": "admin@M365x214355.onmicrosoft.com"
 }
 ```

@@ -31,7 +31,12 @@ GET /administrativeUnits
 GET /directory/administrativeUnits
 ```
 ## Optional query parameters
-This method supports the `$count`, `$select`, `$search`, `$filter`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count`, `$select`, `$search`, `$filter`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. Extension properties also support query parameters as follows:
+
+| Extension type       | Comments                                                 |
+|----------------------|----------------------------------------------------------|
+| Schema extensions    | Returned only with `$select`. Supports `$filter` (`eq`). |
+| Directory extensions | Returned by default. Supports `$filter` (`eq`).          |
 
 
 ## Request headers
@@ -57,16 +62,13 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunits-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-administrativeunits-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-administrativeunits-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -79,6 +81,10 @@ GET https://graph.microsoft.com/beta/administrativeUnits
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-administrativeunits-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-administrativeunits-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -7,19 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewMessage()
+requestBody := graphmodels.NewMessage()
 subject := "subject-value"
-requestBody.SetSubject(&subject)
-body := msgraphsdk.NewItemBody()
-requestBody.SetBody(body)
-contentType := ""
-body.SetContentType(&contentType)
+requestBody.SetSubject(&subject) 
+body := graphmodels.NewItemBody()
 content := "content-value"
-body.SetContent(&content)
-inferenceClassification := "other"
-requestBody.SetInferenceClassification(&inferenceClassification)
-messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Patch(requestBody)
+body.SetContent(&content) 
+requestBody.SetBody(body)
+inferenceClassification := graphmodels.OTHER_INFERENCECLASSIFICATIONTYPE 
+requestBody.SetInferenceClassification(&inferenceClassification) 
+
+result, err := graphClient.Me().MessagesById("message-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

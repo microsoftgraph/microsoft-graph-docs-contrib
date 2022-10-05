@@ -67,7 +67,7 @@ Content-type: application/json
 Content-length: 95
 
 {
-  "state": "comfirmRetire",
+  "state": "confirmRetire",
   "managedDeviceIds": [
     "Managed Device Ids value"
   ]
@@ -79,6 +79,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -30,7 +30,7 @@ Providers.globalProvider = provider;
 Use the `teamsfx.login(scopes)` method to get the required access token.
 
 ```ts
-// Automatically when loading the component or in a call-to-action
+// Put this code in a call-to-action callback function to avoid browser blocking automatically showing up pop-ups. 
 await teamsfx.login(this.scope);
 Providers.globalProvider.setState(ProviderState.SignedIn);
 ```
@@ -53,7 +53,10 @@ public render(): void {
 }
 ```
 
-For a sample that shows you how to initialize the TeamsFx provider, see the [Contacts Exporter sample](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/graph-toolkit-contact-exporter).
+For a sample that shows you how to initialize the TeamsFx provider, see the [Contacts Exporter sample](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/hello-world-tab-with-backend).
+
 
 ## See also
 * [Get started with Microsoft Teams and Teams Toolkit development](https://aka.ms/teamsfx-docs)
+* [TeamsFx SDK](/microsoftteams/platform/toolkit/teamsfx-sdk)
+* [One Productivity Hub workshop](https://github.com/OfficeDev/OneProductivityHub-TeamsFx)

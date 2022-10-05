@@ -7,10 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEntitlementManagementSettings()
+requestBody := graphmodels.NewEntitlementManagementSettings()
 externalUserLifecycleAction := "None"
-requestBody.SetExternalUserLifecycleAction(&externalUserLifecycleAction)
-graphClient.IdentityGovernance().EntitlementManagement().Settings().Patch(requestBody)
+requestBody.SetExternalUserLifecycleAction(&externalUserLifecycleAction) 
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().Settings().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 384
+Content-Length: 438
 
 {
   "value": [
@@ -70,11 +70,13 @@ Content-Length: 384
       "connectorName": "Connector Name value",
       "machineName": "Machine Name value",
       "enrollmentDateTime": "2016-12-31T23:57:59.3726057-08:00",
-      "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
+      "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
+      "connectorVersion": "Connector Version value"
     }
   ]
 }
 ```
+
 
 
 

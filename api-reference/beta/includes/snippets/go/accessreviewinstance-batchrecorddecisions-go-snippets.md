@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewBatchRecordDecisionsPostRequestBody()
 decision := "Approve"
-requestBody.SetDecision(&decision)
+requestBody.SetDecision(&decision) 
 justification := "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team"
-requestBody.SetJustification(&justification)
+requestBody.SetJustification(&justification) 
 resourceId := "a5c51e59-3fcd-4a37-87a1-835c0c21488a"
-requestBody.SetResourceId(&resourceId)
-accessReviewInstanceId := "accessReviewInstance-id"
-graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).BatchRecordDecisions(accessReviewInstance-id).Post(requestBody)
+requestBody.SetResourceId(&resourceId) 
+
+graphClient.Me().PendingAccessReviewInstancesById("accessReviewInstance-id").BatchRecordDecisions().Post(context.Background(), requestBody, nil)
 
 
 ```

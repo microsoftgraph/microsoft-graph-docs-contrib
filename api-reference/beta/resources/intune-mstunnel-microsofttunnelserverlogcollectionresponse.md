@@ -26,13 +26,14 @@ Entity that stores the server log collection status.
 |[Delete microsoftTunnelServerLogCollectionResponse](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-delete.md)|None|Deletes a [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md).|
 |[Update microsoftTunnelServerLogCollectionResponse](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-update.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Update the properties of a [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) object.|
 |[createDownloadUrl action](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-createdownloadurl.md)|String|Not yet documented|
+|[generateDownloadUrl action](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-generatedownloadurl.md)|String|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique ID of the entity|
-|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|The status of log collection. Possible values are: `pending`, `completed`, `failed`.|
-|startDateTime|DateTimeOffset|The start time of the logs collected |
+|id|String|The unique identifier for server log collection response. Read-only.|
+|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|The status of log collection. Possible values are: pending, completed, failed. Possible values are: `pending`, `completed`, `failed`, `unknownFutureValue`.|
+|startDateTime|DateTimeOffset|The start time of the logs collected|
 |endDateTime|DateTimeOffset|The end time of the logs collected|
 |sizeInBytes|Int64|The size of the logs in bytes|
 |serverId|String|ID of the server the log collection is requested upon|
@@ -63,6 +64,7 @@ Here is a JSON representation of the resource.
   "expiryDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

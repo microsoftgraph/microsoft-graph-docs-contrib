@@ -1,7 +1,7 @@
 ---
 title: "accessReviewHistoryScheduleSettings resource type"
 description: "In Azure AD access reviews, the accessReviewHistoryScheduleSettings represents the settings associated with an access review history definition series."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

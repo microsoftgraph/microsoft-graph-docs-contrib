@@ -53,6 +53,7 @@ with the reason (**emptySuggestionsReason**) that attendees are not available.
 
 The two calls to **findMeetingTimes** include the following parameters. All [parameters](/graph/api/user-findmeetingtimes#request-body) for **findMeetingTimes** are optional.
 
+
 - **attendees**: one attendee, Samantha Booth, set as `required` for the **type** property
 - **locationConstraint**: does not require any location suggestion
 - **timeConstraint**: the first call looks in the date/time range of April 18, 9am to April 20, 5pm; after the first call fails to suggest any times, the second call looks at April 21, 9am to 5pm

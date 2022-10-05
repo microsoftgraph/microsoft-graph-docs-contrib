@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents the applications and user actions included in and excluded from the policy.
+Represents the applications and user actions included in and excluded from the conditional access policy.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| includeApplications | String collection | The list of application IDs the policy applies to, unless explicitly excluded (in excludeApplications). Can also be set to `All`. |
-| excludeApplications | String collection | The list of application IDs explicitly excluded from the policy. |
+| includeApplications | String collection | Can be one of the following: <li> The list of client IDs (**appId**) the policy applies to, unless explicitly excluded (in **excludeApplications**) <li> `All` <li> `Office365` - For the list of apps included in `Office365`, see [Conditional Access target apps: Office 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) |
+| excludeApplications | String collection | Can be one of the following: <li> The list of client IDs (**appId**) explicitly excluded from the policy.<li> `Office365` - For the list of apps included in `Office365`, see [Conditional Access target apps: Office 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) |
 | includeUserActions | String collection | User actions to include. Supported values are `urn:user:registersecurityinfo` and `urn:user:registerdevice` |
 
 ## Relationships

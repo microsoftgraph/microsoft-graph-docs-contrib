@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-educationSynchronizationProfileId := "educationSynchronizationProfile-id"
-graphClient.Education().SynchronizationProfilesById(&educationSynchronizationProfileId).Pause(educationSynchronizationProfile-id).Post()
+
+graphClient.Education().SynchronizationProfilesById("educationSynchronizationProfile-id").Pause().Post(context.Background(), nil)
 
 
 ```
