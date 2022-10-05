@@ -85,7 +85,6 @@ Content-type: application/json
   "value": [
     {
       "id": "c0a74b4d-2694-4d5d-a964-1bee4ff0aaf2",
-      "catalogId": "c955f54f-e248-4155-b314-0bdd63f5aae9",
       "displayName": "accesspackage"
     }
   ]
