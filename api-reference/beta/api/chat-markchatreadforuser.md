@@ -46,6 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
+|tenantId|String|Tenant ID of the user.|
 |user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to read the chat for.|
 
 ## Response
@@ -70,9 +71,9 @@ Content-length: 106
 
 {
  "user": {
-    "id" : "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
-    "tenantId": "2a690434-97d9-4eed-83a6-f5f13600199a"
-  }
+    "id" : "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
+  },
+  "tenantId": "2a690434-97d9-4eed-83a6-f5f13600199a"
 }
 ```
 
