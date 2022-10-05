@@ -3,7 +3,7 @@ title: "Delete browserSite"
 description: "Delete a browserSite from a browserSiteList."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "browser-management"
 doc_type: apiPageType
 ---
 

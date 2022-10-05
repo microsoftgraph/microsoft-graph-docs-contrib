@@ -3,7 +3,7 @@ title: "browserSite resource type"
 description: "Represents a site to use in Internet Explorer mode that resides on a site list."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "browser-management"
 doc_type: resourcePageType
 ---
 

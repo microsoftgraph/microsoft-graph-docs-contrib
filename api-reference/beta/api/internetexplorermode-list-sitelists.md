@@ -3,7 +3,7 @@ title: "List browserSiteLists"
 description: "Get a list of the browserSiteList objects and their properties."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "browser-management"
 doc_type: apiPageType
 ---
 

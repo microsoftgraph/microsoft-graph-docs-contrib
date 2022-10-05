@@ -3,7 +3,7 @@ title: "Get browserSharedCookie"
 description: "Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "browser-management"
 doc_type: apiPageType
 ---
 

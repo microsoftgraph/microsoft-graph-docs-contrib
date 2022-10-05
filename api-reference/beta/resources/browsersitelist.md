@@ -3,7 +3,7 @@ title: "browserSiteList resource type"
 description: "Represents a site list for Internet Explorer mode that contains one or more browserSite or browserSharedCookie resources."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "browser-management"
 doc_type: resourcePageType
 ---
 

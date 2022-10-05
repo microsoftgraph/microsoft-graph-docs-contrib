@@ -3,7 +3,7 @@ title: "Update browserSite"
 description: "Update the properties of a browserSite object."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "browser-management"
 doc_type: apiPageType
 ---
 

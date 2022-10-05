@@ -3,7 +3,7 @@ title: "Create browserSharedCookie"
 description: "Create a new browserSharedCookie object in a browserSiteList."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "browser-management"
 doc_type: apiPageType
 ---
 

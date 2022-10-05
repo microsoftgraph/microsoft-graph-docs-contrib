@@ -3,7 +3,7 @@ title: "browserSharedCookieHistory resource type"
 description: "Represents the history of modifications applied to a browserSharedCookie."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "browser-management"
 doc_type: resourcePageType
 ---
 

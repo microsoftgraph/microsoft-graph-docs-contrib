@@ -3,7 +3,7 @@ title: "Get browserSite"
 description: "Get a browserSite that resides on a site list."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "browser-management"
 doc_type: apiPageType
 ---
 

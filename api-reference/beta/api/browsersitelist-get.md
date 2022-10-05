@@ -3,7 +3,7 @@ title: "Get browserSiteList"
 description: "Get a browserSiteList that contains browserSite and browserSharedCookie resources."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "browser-management"
 doc_type: apiPageType
 ---
 

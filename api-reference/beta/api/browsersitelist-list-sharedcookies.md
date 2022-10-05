@@ -3,7 +3,7 @@ title: "List browserSharedCookies"
 description: "Get a list of the browserSharedCookie objects and their properties."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "browser-management"
 doc_type: apiPageType
 ---
 
