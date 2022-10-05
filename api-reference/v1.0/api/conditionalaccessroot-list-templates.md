@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List conditionalAccessTemplates
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of the [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) objects and their properties.
 
 ## Permissions
@@ -59,7 +57,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates
+GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/templates
 ```
 
 ### Response
@@ -76,7 +74,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/templates",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#conditionalAccess/templates",
     "value": [
         {
             "name": "Require multifactor authentication for admins",

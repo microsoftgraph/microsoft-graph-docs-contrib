@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get conditionalAccessTemplate
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of a [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) object.
 
 ## Permissions
@@ -59,7 +57,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates/{conditionalAccessTemplateId}
+GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/templates/{conditionalAccessTemplateId}
 ```
 
 ### Response
@@ -76,7 +74,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/templates/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#conditionalAccess/templates/$entity",
     "name": "Require multifactor authentication for admins",
     "description": "Require multifactor authentication for privileged administrative accounts to reduce risk of compromise. This policy will target the same roles as Security Default.",
     "id": "c7503427-338e-4c5e-902d-abe252abfb43",

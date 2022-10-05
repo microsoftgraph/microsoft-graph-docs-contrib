@@ -768,7 +768,7 @@
 		{
 			"ChangeList": [
 				{
-					"Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
+					"Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
 					"ApiChange": "Enumeration",
 					"ChangedApiName": "templateScenarios",
 					"ChangeType": "Addition",
@@ -776,7 +776,7 @@
 					"Target": "templateScenarios"
 				},
 				{
-					"Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
+					"Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
 					"ApiChange": "Resource",
 					"ChangedApiName": "conditionalAccessPolicyDetail",
 					"ChangeType": "Addition",
@@ -784,7 +784,7 @@
 					"Target": "conditionalAccessPolicyDetail"
 				},
 				{
-					"Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
+					"Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
 					"ApiChange": "Resource",
 					"ChangedApiName": "templates",
 					"ChangeType": "Addition",
@@ -792,7 +792,7 @@
 					"Target": "conditionalAccessRoot"
 				},
 				{
-					"Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
+					"Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
 					"ApiChange": "Resource",
 					"ChangedApiName": "conditionalAccessTemplate",
 					"ChangeType": "Addition",
@@ -800,7 +800,7 @@
 					"Target": "conditionalAccessTemplate"
 				}
 			],
-			"Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
+			"Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
 			"Cloud": "Prod",
 			"Version": "v1.0",
 			"CreatedDateTime": "2022-10-04T16:30:13.2808833Z",
