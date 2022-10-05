@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identity/conditionalAccess/templates/c7503427-338e-4c5e-902d-abe252abfb43
+GET /identity/conditionalAccess/templates/{id}
 ```
 
 ## Optional query parameters
