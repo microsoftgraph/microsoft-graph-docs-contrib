@@ -1,7 +1,7 @@
 ---
 title: "conditionalAccessTemplate resource type"
 description: "Represents a Microsoft recommended template of best practice configurations for Azure Active Directory conditional access policies."
-author: "xuchen1"
+author: "lhuangnorth"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |details|[conditionalAccessPolicyDetail](../resources/conditionalaccesspolicydetail.md)| Complete list of policy details specific to the template. This property contains the JSON of policy settings for configuring a Conditional Access policy. |
 |id|String| Immutable ID of a template. Inherited from [entity](../resources/entity.md). |
 |name|String| The user-friendly name of the template. |
-|scenarios|templateScenarios| List of conditional access scenarios that the template is recommended for. The possible values are: `new`, `secureFoundation`, `zeroTrust`, `remoteWork`, `protectAdmins`, `emergingThreats`, `unknownFutureValue`. This is a multi-valued enum. Supports `$filter` (`eq`).|
+|scenarios|templateScenarios| List of conditional access scenarios that the template is recommended for. The possible values are: `new`, `secureFoundation`, `zeroTrust`, `remoteWork`, `protectAdmins`, `emergingThreats`, `unknownFutureValue`. This is a multi-valued enum. Supports `$filter` (`eq`, `has`).|
 
 ## Relationships
 None.

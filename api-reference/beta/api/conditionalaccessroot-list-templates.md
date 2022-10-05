@@ -1,7 +1,7 @@
 ---
 title: "List conditionalAccessTemplates"
 description: "Get a list of the conditionalAccessTemplate objects and their properties."
-author: "xuchen1"
+author: "lhuangnorth"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -51,7 +51,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List all conditional access policy templates
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -62,7 +64,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates
 ```
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -76,7 +78,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/templates",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/templates",
     "value": [
         {
             "name": "Require multifactor authentication for admins",
@@ -118,19 +120,7 @@ Content-Type: application/json
                         "excludeGroups": [],
                         "includeRoles": [
                             "62e90394-69f5-4237-9190-012177145e10",
-                            "194ae4cb-b126-40b2-bd5b-6091b380977d",
-                            "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
-                            "29232cdf-9323-42fd-ade2-1d097af3e4de",
-                            "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
-                            "729827e3-9c14-49f7-bb1b-9608f156bbb8",
-                            "b0f54661-2d74-4c50-afa3-1ec803f12efe",
-                            "fe930be7-5e62-47db-91af-98c3a49a38b1",
-                            "c4e39bd9-1100-46d3-8c65-fb160da0071f",
-                            "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
-                            "158c047a-c907-4556-b7ef-446551a6b5f7",
-                            "966707d0-3269-4727-9be2-8c3a10f19b9d",
-                            "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
-                            "e8611ab8-c189-46e8-94e1-60213ab1f814"
+                            "194ae4cb-b126-40b2-bd5b-6091b380977d"
                         ],
                         "excludeRoles": [],
                         "includeGuestsOrExternalUsers": null,
@@ -147,6 +137,63 @@ Content-Type: application/json
                     "authenticationStrength": null
                 }
             }
+        }
+    ]
+}
+```
+
+### Example 2: List name, description, id, scenarios of templates whose scenarios contain "zeroTrust"
+
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_conditionalaccesstemplate"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates?$select=name,description,id,scenarios&$filter=scenarios has 'secureFoundation'
+```
+
+#### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.conditionalAccessTemplate)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/templates(name,description,id,scenarios)",
+    "value": [
+        {
+            "name": "Require multifactor authentication for admins",
+            "description": "Require multifactor authentication for privileged administrative accounts to reduce risk of compromise. This policy will target the same roles as Security Default.",
+            "id": "c7503427-338e-4c5e-902d-abe252abfb43",
+            "scenarios": "secureFoundation,zeroTrust,protectAdmins"
+        },
+        {
+            "name": "Securing security info registration",
+            "description": "Secure when and how users register for Azure AD multifactor authentication and self-service password.",
+            "id": "b8bda7f8-6584-4446-bce9-d871480e53fa",
+            "scenarios": "secureFoundation,zeroTrust,remoteWork"
+        },
+        {
+            "name": "Block legacy authentication",
+            "description": "Block legacy authentication endpoints that can be used to bypass multifactor authentication.",
+            "id": "0b2282f9-2862-4178-88b5-d79340b36cb8",
+            "scenarios": "secureFoundation,zeroTrust,remoteWork,protectAdmins"
+        },
+        {
+            "name": "Require multifactor authentication for all users",
+            "description": "Require multifactor authentication for all user accounts to reduce risk of compromise.",
+            "id": "a3d0a415-b068-4326-9251-f9cdf9feeb64",
+            "scenarios": "secureFoundation,zeroTrust,remoteWork"
         }
     ]
 }
