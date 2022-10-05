@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let directoryRole = await client.api('/directoryRoles/23f3b4b4-8a29-4420-8052-e4950273bbda')
+let directoryRole = await client.api('/directoryRoles/43a63cc2-582b-4d81-a79d-1591f91d5558')
 	.get();
 
 ```

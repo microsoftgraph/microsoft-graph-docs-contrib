@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewMessage()
-isRead := "true"
-requestBody.SetIsRead(&isRead)
-messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Patch(requestBody)
+requestBody := graphmodels.NewMessage()
+isRead := true
+requestBody.SetIsRead(&isRead) 
+
+result, err := graphClient.Me().MessagesById("message-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

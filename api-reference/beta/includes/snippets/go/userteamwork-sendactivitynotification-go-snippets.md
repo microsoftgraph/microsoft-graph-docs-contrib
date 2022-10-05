@@ -7,28 +7,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-topic := msgraphsdk.NewTeamworkActivityTopic()
-requestBody.SetTopic(topic)
-source := "entityUrl"
-topic.SetSource(&source)
+requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
+topic := graphmodels.NewTeamworkActivityTopic()
+source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
+topic.SetSource(&source) 
 value := "https://graph.microsoft.com/beta/users/{userId}/teamwork/installedApps/{installationId}"
-topic.SetValue(&value)
+topic.SetValue(&value) 
+requestBody.SetTopic(topic)
 activityType := "taskCreated"
-requestBody.SetActivityType(&activityType)
-previewText := msgraphsdk.NewItemBody()
-requestBody.SetPreviewText(previewText)
+requestBody.SetActivityType(&activityType) 
+previewText := graphmodels.NewItemBody()
 content := "New Task Created"
-previewText.SetContent(&content)
-requestBody.SetTemplateParameters( []KeyValuePair {
-	msgraphsdk.NewKeyValuePair(),
+previewText.SetContent(&content) 
+requestBody.SetPreviewText(previewText)
+
+
+keyValuePair := graphmodels.NewKeyValuePair()
 name := "taskId"
-	SetName(&name)
+keyValuePair.SetName(&name) 
 value := "Task 12322"
-	SetValue(&value)
+keyValuePair.SetValue(&value) 
+
+templateParameters := []graphmodels.KeyValuePairable {
+	keyValuePair,
+
 }
-userId := "user-id"
-graphClient.UsersById(&userId).Teamwork().SendActivityNotification(user-id).Post(requestBody)
+requestBody.SetTemplateParameters(templateParameters)
+
+graphClient.UsersById("user-id").Teamwork().SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

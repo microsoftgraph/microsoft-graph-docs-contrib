@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-teamId := "team-id"
-teamsAppInstallationId := "teamsAppInstallation-id"
-graphClient.TeamsById(&teamId).InstalledAppsById(&teamsAppInstallationId).Delete()
+
+graphClient.TeamsById("team-id").InstalledAppsById("teamsAppInstallation-id").Delete(context.Background(), nil)
 
 
 ```

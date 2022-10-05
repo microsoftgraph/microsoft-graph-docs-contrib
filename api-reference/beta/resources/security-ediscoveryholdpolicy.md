@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a legal hold policy. Legal holds are holds that are tied to an eDiscovery case. Legal holds should not be confused with retention holds, which are used to control retention policies for Microsoft 365 content. eDiscovery legal holds are for holding content indefinitely for litigation, internal investigations, and other legal actions where content needs to be protected against deletion. For more information, see [Manage holds in Advanced eDiscovery](/microsoft-365/compliance/managing-holds)
+Represents a legal hold policy. Legal holds are holds that are tied to an eDiscovery case. Legal holds should not be confused with retention holds, which are used to control retention policies for Microsoft 365 content. eDiscovery legal holds are for holding content indefinitely for litigation, internal investigations, and other legal actions where content needs to be protected against deletion. For more information, see [Manage holds in eDiscovery (Premium)](/microsoft-365/compliance/managing-holds)
 
 ## Methods
 |Method|Return type|Description|
@@ -22,7 +22,7 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |[Create ediscoveryHoldPolicy](../api/security-ediscoverycase-post-legalholds.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Create a new [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
 |[Get ediscoveryHoldPolicy](../api/security-ediscoveryholdpolicy-get.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Read the properties and relationships of an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
 |[Update ediscoveryHoldPolicy](../api/security-ediscoveryholdpolicy-update.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Update the properties of an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
-|[Delete ediscoveryHoldPolicy](../api/security-ediscoverycase-delete-legalholds.md)|None|Deletes an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
+|[Delete ediscoveryHoldPolicy](../api/security-ediscoverycase-delete-legalholds.md)|None|Delete an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
 |[List siteSources](../api/security-ediscoverycustodian-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
 |[Create siteSource](../api/security-ediscoveryholdpolicy-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new siteSource object.|
 |[List userSources](../api/security-ediscoverycustodian-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Get the userSource resources from the userSources navigation property.|
@@ -41,9 +41,9 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |isEnabled|Boolean|Indicates whether the hold is enabled and actively holding content. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|the user who last modified the legal hold.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the legal hold was last modified. |
-|status|String|The status of the legal hold. Possible values are: `Pending`, `Error`, `Success`.|
+|status|microsoft.graph.security.policyStatus|The status of the legal hold. Possible values are: `Pending`, `Error`, `Success`.|
 
-### legalHoldStatus values
+### policyStatus values
 
 |Member|Description|
 |:---|-----------|
@@ -54,8 +54,8 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|siteSources|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|**TODO: Add Description**|
-|userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|**TODO: Add Description**|
+|siteSources|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Data sources that represent SharePoint sites.|
+|userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Data sources that represent Exchange mailboxes.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

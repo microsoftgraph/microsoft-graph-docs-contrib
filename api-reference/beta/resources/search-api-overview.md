@@ -32,7 +32,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Get selected properties](#get-selected-properties) | **fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
-|[Sort search results](#sort-search-results)| **sort** |
+|[Sort search results](#sort-search-results)| **sortProperties** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
 |[Search custom types imported using connectors](/graph/search-concept-custom-types)| **contentSources** |
 |[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
@@ -45,6 +45,7 @@ The following table describes the types available to query and the supported per
 
 | EntityType | Permission scope required to access the items| Source| Comment|
 |:------------------|:---------|:---------|:---------|
+|[chatMessage](chatmessage.md)|Chat.Read, Chat.ReadWrite, ChannelMessage.Read.All|Teams|Teams messages.|
 |[message](message.md)|Mail.Read, Mail.ReadWrite| Exchange Online| Email messages.|
 |[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange Online|Calendar events. |
 |[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document libraries.|
@@ -68,7 +69,7 @@ Note the following limits if you're searching the **event** or **message** entit
 - **from** must start at zero in the first page request; otherwise, the request results in an HTTP 400 `Bad request`.
 - The maximum number of results per page (**size**) is 25 for **message** and **event**.
 
-There is no upper limit for SharePoint or OneDrive items. A reasonable page size is 200. A larger page size generally incurs higher latency.
+The upper limit for SharePoint or OneDrive items is 1000. A reasonable page size is 200. A larger page size generally incurs higher latency.
 
 Best practices:
 
@@ -103,7 +104,7 @@ If you do not specify any **fields** in the request,  you will get the default s
 
 ## Keyword Query Language (KQL) support
 
-Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
+Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The [XRANK](/graph/search-concept-xrank) operator boosts the dynamic rank of items based on certain term occurrences within the match expression, without changing which items match the query. The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
 
 Depending on the entity type, the searchable properties vary. For details, see:
 
@@ -117,7 +118,7 @@ Search results in the response are sorted in the following default sort order:
 - **message** and **event** are sorted by date.
 - All SharePoint, OneDrive, person and connector types are sorted by relevance.
 
-The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [searchRequest](./searchrequest.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
+The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [sortProperty](sortproperty.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
 
 Note that sorting results is currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
 
@@ -178,6 +179,8 @@ Any combinations involving **message**, **event**, **person**, SharePoint and On
 
 - The search API does not support aggregations for **message**, **event**, **site**, **person**, or **drive**.
 
+- The search API does not support xrank for **message**,**chatMessage**, **event**, **person**, or **externalItem**.
+
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
 
 ## Schema change deprecation warning
@@ -202,6 +205,7 @@ For backward compatibility, the original properties and types are accessible and
 ## See also
 
 - Learn more about a few key use cases:
+  - [Search Teams messages](/graph/search-concept-chat-messages)
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
   - [Search person](/graph/search-concept-person)
@@ -211,6 +215,7 @@ For backward compatibility, the original properties and types are accessible and
   - [Refine search results](/graph/search-concept-aggregation)
   - [Request spelling correction](/graph/search-concept-speller)
   - [Use search display layout](/graph/search-concept-display-layout)
+  - [XRANK search results](/graph/search-concept-xrank)
 
 - Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 

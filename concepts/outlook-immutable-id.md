@@ -1,12 +1,12 @@
 ---
-title: "Get immutable identifiers for Outlook resources"
-description: "Use immutable identifiers to enable your application to obtain an ID for an Outlook item that does not change for the lifetime of the item."
+title: "Obtain immutable identifiers for Outlook resources"
+description: "Use immutable identifiers (IDs) to enable your Outlook application to obtain an ID that does not change for the lifetime of the item."
 author: "abheek-das"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
-# Get immutable identifiers for Outlook resources
+# Obtain immutable identifiers for Outlook resources
 
 Outlook items (messages, events, contacts, tasks) have an interesting behavior that you've probably either never noticed or has caused you significant frustration: their IDs change. It doesn't happen often, only if the item is moved, but it can cause real problems for apps that store IDs offline for later use. Immutable identifiers (IDs) enable your application to obtain an ID that does not change for the lifetime of the item.
 

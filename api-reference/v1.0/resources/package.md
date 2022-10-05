@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: package
 ms.localizationpriority: medium
-description: "Indicates that a driveItem is the top-level item in a "package" or a collection of items that should be treated as a collection instead of individual items."
+description: Indicates that a driveItem is the top-level item in a package or a collection of items that should be treated as a collection instead of individual items.
 ms.prod: files
 doc_type: resourcePageType
 ---

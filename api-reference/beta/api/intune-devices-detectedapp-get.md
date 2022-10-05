@@ -64,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 247
+Content-Length: 312
 
 {
   "value": {
@@ -73,10 +73,13 @@ Content-Length: 247
     "displayName": "Display Name value",
     "version": "Version value",
     "sizeInByte": 10,
-    "deviceCount": 11
+    "deviceCount": 11,
+    "publisher": "Publisher value",
+    "platform": "windows"
   }
 }
 ```
+
 
 
 

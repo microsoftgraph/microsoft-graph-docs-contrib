@@ -54,7 +54,7 @@ You can use several properties to customize the component.
 
 | Attribute       | Property       | Description                                                   |
 | -----------     | ----------     | ------------------------------------------------------------- |
-| user-id         | userId         | Set to a user id to fetch that user's details and image from Microsoft Graph.|
+| user-id         | userId         | Set to a user ID to fetch that user's details and image from Microsoft Graph.|
 | person-query    | personQuery    | Set to a name or email of a person to search for a person in Microsoft Graph and fetch the first person's details and image.|
 | person-details  | personDetails  | Set to an object representing a person. Works with object from the people, users, contacts, or group, resources. |
 | fallback-details| fallbackDetails| Set to an object representing a person when no user/person/contact is found in the graph.
@@ -68,6 +68,7 @@ You can use several properties to customize the component.
 | line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `mail`.|
 | line3-property  | line3Property  | Sets the property of the personDetails to use for the third line of text. Default is `jobTitle`.|
 | show-presence   | showPresence   | Set flag to display person presence - default is `false`.|
+| usage | usage | Specify where the component is being used in order to add customized personalization for it. Currently only supports `people` as used in the people component. |
 
 ## CSS custom properties
 

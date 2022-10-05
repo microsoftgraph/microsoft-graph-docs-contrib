@@ -1,7 +1,7 @@
 ---
 title: "Assign reviewers to your access review using the Microsoft Graph API"
 description: "Use the access reviews API in Microsoft Graph to assign access reviewers such as specific users, members or owners of a group, people managers, or app owners."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
@@ -14,6 +14,9 @@ The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-overview)
 The primary reviewers are configured in the **reviewers** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) resource.  In addition, you can specify fallback reviewers by using the **fallbackReviewers** property. These properties are not required when you create a self-review (where users review their own access).
 
 To configure the reviewers and fallback reviewers, set the values of **query**, **queryRoot**, and **queryType** properties of **accessReviewReviewerScope**. For descriptions of these properties, see the [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope) resource type.
+
+> [!NOTE]
+> Review of Privileged Access Groups will only assign active owners as the reviewers. Eligible owners are not included. At least one fallback reviewer is required for a Privileged Access Groups review. If there are no active owners when the review begins, the fallback reviewers will be assigned to the review.
 
 ## Example 1: A self-review
 
@@ -30,7 +33,7 @@ If the corresponding access review **scope** targets B2B direct connect users an
 ```http
 "reviewers": [
     {
-        "query": "/users/{user id}",
+        "query": "/users/{userId}",
         "queryType": "MicrosoftGraph"
     }
 ]
@@ -41,13 +44,37 @@ If the corresponding access review **scope** targets B2B direct connect users an
 ```http
 "reviewers": [
     {
-        "query": "/groups/{group id}}/transitiveMembers",
+        "query": "/groups/{groupId}/transitiveMembers",
         "queryType": "MicrosoftGraph"
     }
 ]
 ```
 
 ## Example 4: Group owners as reviewers
+
+When the access review is scoped to a group, for example, [Example 1: Review all users assigned to a group](accessreviews-scope-concept.md#example-1-review-all-users-assigned-to-a-group), [Example 2: Review all guest users assigned to a group](accessreviews-scope-concept.md#example-2-review-all-guest-users-assigned-to-a-group), and [Example 3: Review all users and groups assigned to a group](accessreviews-scope-concept.md#example-3-review-all-users-and-groups-assigned-to-a-group).
+```http
+"reviewers": [
+    {
+        "query": "/groups/{groupId}/owners",
+        "queryType": "MicrosoftGraph"
+    }
+]
+```
+
+When the access review is scoped to a group and to assign only the group owners from a specific country as reviewers:
+
+```http
+"reviewers": [
+    {
+        "query": "/groups/{groupId}/owners?$filter=microsoft.graph.user/userType eq 'Member' and microsoft.graph.user/country eq 'USA'",
+        "type": "MicrosoftGraph”
+    }
+]
+```
+
+When the access review is scoped to *all* groups, for example, [Example 4: Review all users assigned to all Microsoft 365 groups](accessreviews-scope-concept.md#example-4-review-all-users-assigned-to-all-microsoft-365-groups), [Example 5: Review all guest users assigned to all Microsoft 365 groups](accessreviews-scope-concept.md#example-5-review-all-guest-users-assigned-to-all-microsoft-365-groups), and [Example 6: Review all guest users assigned to all teams](accessreviews-scope-concept.md#example-6-review-all-guest-users-assigned-to-all-teams).
+
 ```http
 "reviewers": [
     {
@@ -57,16 +84,7 @@ If the corresponding access review **scope** targets B2B direct connect users an
 ]
 ```
 
-To assign only the group owners from a specific country as reviewers:
 
-```http
-"reviewers": [
-    {
-        "query": "/groups/{group id}/owners?$filter=microsoft.graph.user/userType eq 'Member' and microsoft.graph.user/country eq 'USA'",
-        "type": "MicrosoftGraph”
-    }
-]
-```
 
 ## Example 5: People managers as reviewers
 
@@ -89,7 +107,7 @@ If the corresponding access review **scope** targets B2B direct connect users an
 ```http
 "reviewers": [
     {
-        "query": "/servicePrincipals/{id}/owners",
+        "query": "/servicePrincipals/{servicePrincipalId}/owners",
         "queryType": "MicrosoftGraph"
     }
 ]

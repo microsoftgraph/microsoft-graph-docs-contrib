@@ -7,14 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewUserSource()
+requestBody := graphmodels.NewUserSource()
 email := "admin@M365x809305.onmicrosoft.com"
-requestBody.SetEmail(&email)
-includedSources := "mailbox, site"
-requestBody.SetIncludedSources(&includedSources)
-ediscoveryCaseId := "ediscoveryCase-id"
-ediscoveryHoldPolicyId := "ediscoveryHoldPolicy-id"
-result, err := graphClient.Security().Cases().EdiscoveryCasesById(&ediscoveryCaseId).LegalHoldsById(&ediscoveryHoldPolicyId).UserSources().Post(requestBody)
+requestBody.SetEmail(&email) 
+includedSources := graphmodels.MAILBOX, SITE_SOURCETYPE 
+requestBody.SetIncludedSources(&includedSources) 
+
+result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").LegalHoldsById("ediscoveryHoldPolicy-id").UserSources().Post(requestBody)
 
 
 ```

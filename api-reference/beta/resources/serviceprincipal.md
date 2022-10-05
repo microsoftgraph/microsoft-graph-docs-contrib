@@ -26,6 +26,10 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Get servicePrincipal](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |Read properties and relationships of servicePrincipal object.|
 |[Update servicePrincipal](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Update servicePrincipal object. |
 |[Delete servicePrincipal](../api/serviceprincipal-delete.md) | None |Delete servicePrincipal object.|
+|[List deleted servicePrincipals](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted servicePrincipal objects. |
+|[Get deleted servicePrincipal](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted servicePrincipal object. |
+|[Permanently delete servicePrincipal](../api/directory-deleteditems-delete.md) | None | Permanently delete a servicePrincipal object. |
+|[Restore deleted servicePrincipal](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted servicePrincipal object. |
 |[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| Get a createdObject object collection.|
 |[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get an ownedObject object collection.|
 |[delta](../api/serviceprincipal-delta.md)|servicePrincipal collection| Get incremental changes for service principals. |
@@ -115,6 +119,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |preferredTokenSigningKeyEndDateTime|DateTimeOffset|Specifies the expiration date of the keyCredential used for token signing, marked by **preferredTokenSigningKeyThumbprint**.|
 |preferredTokenSigningKeyThumbprint|String|Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions. |
 |publishedPermissionScopes|[permissionScope](permissionscope.md) collection|The delegated permissions exposed by the application. For more information see the **oauth2PermissionScopes** property on the [application](application.md) entity's **api** property. Not nullable. <br/>**Note:** This property is named **oauth2PermissionScopes** in v1.0.|
+|publisherName| String | The name of the Azure AD tenant that published the application. |
 |replyUrls|String collection|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application. Not nullable. |
 |samlMetadataUrl|String|The url where the service exposes SAML metadata for federation.|
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|The collection for settings related to saml single sign-on.|
@@ -194,6 +199,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   "preferredSingleSignOnMode": "String",
   "preferredTokenSigningKeyEndDateTime": "DateTime",
   "preferredTokenSigningKeyThumbprint": "String",
+  "publisherName": "String",
   "replyUrls": ["String"],
   "samlMetadataUrl": "String",
   "samlSingleSignOnSettings": "microsoft.DirectoryServices.SamlSingleSignOnSettings",

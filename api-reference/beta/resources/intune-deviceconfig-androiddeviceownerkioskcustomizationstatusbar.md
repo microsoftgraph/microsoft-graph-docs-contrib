@@ -27,3 +27,4 @@ An enum representing possible values for kiosk customization system navigation.
 
 
 
+

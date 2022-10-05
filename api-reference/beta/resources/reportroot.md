@@ -1,6 +1,6 @@
 ---
 title: "reportRoot resource type"
-description: "Container for Azure AD reporting resources."
+description: "Represents a container for Azure Active Directory (Azure AD) reporting resources."
 author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Container that exposes navigation properties for Azure AD reporting resources.
+Represents a container for Azure Active Directory (Azure AD) reporting resources.
 
 ## Methods
 
@@ -33,8 +33,7 @@ Container that exposes navigation properties for Azure AD reporting resources.
 |[getCredentialUsageSummary](../api/reportroot-getcredentialusagesummary.md)|[credentialUsageSummary](../resources/credentialusagesummary.md) collection|**TODO: Add -->
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
@@ -42,6 +41,7 @@ Container that exposes navigation properties for Azure AD reporting resources.
 |applicationSignInDetailedSummary|[applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) collection|Represents a detailed summary of an application sign-in.|
 |authenticationMethods|[authenticationMethodsRoot](../resources/authenticationmethodsroot.md)|Container for navigation properties for Azure AD authentication methods resources.|
 |credentialUserRegistrationDetails|[credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) collection|Details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users.|
+|security|[securityReportsRoot](../resources/securityreportsroot.md)|Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.|
 |userCredentialUsageDetails|[userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection|Represents the self-service password reset (SSPR) usage for a given tenant.|
 
 ## JSON representation

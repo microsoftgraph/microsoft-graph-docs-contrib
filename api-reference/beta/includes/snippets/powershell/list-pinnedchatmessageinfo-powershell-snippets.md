@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgChatPinnedMessage -ChatId $chatId -ExpandProperty "message" 
+Get-MgChatPinnedMessage -ChatId $chatId -ExpandProperty "message"  -OutFile $outFileId
 
 ```

@@ -1,14 +1,16 @@
 ---
-title: "Use the Microsoft Search API in Microsoft Graph to search people (preview)"
-description: "You can use the Microsoft Search API to search for people relevant to you."
+title: "Use the Microsoft Search API to search people"
+description: "Use the Microsoft Search API in Microsoft Graph to search for people relevant to a user determined by the user’s communication patterns and business relationships."
 author: "acsehi"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API in Microsoft Graph to search people (preview)
+# Use the Microsoft Search API to search people
 
-Microsoft Graph applications can use the Microsoft Search API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, search also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed in user's organization.
+Microsoft Graph applications can use the Microsoft Search API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts or from an organization’s directory or people from recent communications.
+
+Along with generating this insight, search also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
 
 ## Example: Search person by name
 
@@ -89,4 +91,4 @@ Content-type: application/json
 
 ## Next steps
 
-- [Use the Microsoft Search API](/graph/api/resources/search-api-overview)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

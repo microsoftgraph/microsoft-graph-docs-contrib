@@ -7,17 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewThreatAssessmentRequest()
-expectedAssessment := "block"
-requestBody.SetExpectedAssessment(&expectedAssessment)
-category := "malware"
-requestBody.SetCategory(&category)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.fileAssessmentRequest",
-	"fileName": "test.txt",
-	"contentData": "VGhpcyBpcyBhIHRlc3QgZmlsZQ==",
+requestBody := graphmodels.NewThreatAssessmentRequest()
+expectedAssessment := graphmodels.BLOCK_THREATEXPECTEDASSESSMENT 
+requestBody.SetExpectedAssessment(&expectedAssessment) 
+category := graphmodels.MALWARE_THREATCATEGORY 
+requestBody.SetCategory(&category) 
+additionalData := map[string]interface{}{
+	"fileName" : "test.txt", 
+	"contentData" : "VGhpcyBpcyBhIHRlc3QgZmlsZQ==", 
 }
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,29 +7,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-startDateTime, err := time.Parse(time.RFC3339, "2020-02-06T01:49:21.3524945+00:00")
-requestBody.SetStartDateTime(&startDateTime)
-endDateTime, err := time.Parse(time.RFC3339, "2020-02-06T02:19:21.3524945+00:00")
-requestBody.SetEndDateTime(&endDateTime)
+requestBody := graphmodels.NewCreateOrGetPostRequestBody()
+startDateTime , err := time.Parse(time.RFC3339, "2020-02-06T01:49:21.3524945+00:00")
+requestBody.SetStartDateTime(&startDateTime) 
+endDateTime , err := time.Parse(time.RFC3339, "2020-02-06T02:19:21.3524945+00:00")
+requestBody.SetEndDateTime(&endDateTime) 
 subject := "Create a meeting with customId provided"
-requestBody.SetSubject(&subject)
+requestBody.SetSubject(&subject) 
 externalId := "7eb8263f-d0e0-4149-bb1c-1f0476083c56"
-requestBody.SetExternalId(&externalId)
-participants := msgraphsdk.NewMeetingParticipants()
-requestBody.SetParticipants(participants)
-participants.SetAttendees( []MeetingParticipantInfo {
-	msgraphsdk.NewMeetingParticipantInfo(),
-identity := msgraphsdk.NewIdentitySet()
-	SetIdentity(identity)
-user := msgraphsdk.NewIdentity()
-	identity.SetUser(user)
+requestBody.SetExternalId(&externalId) 
+participants := graphmodels.NewMeetingParticipants()
+
+
+meetingParticipantInfo := graphmodels.NewMeetingParticipantInfo()
+identity := graphmodels.NewIdentitySet()
+user := graphmodels.NewIdentity()
 id := "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
-	user.SetId(&id)
+user.SetId(&id) 
+identity.SetUser(user)
+meetingParticipantInfo.SetIdentity(identity)
 upn := "test1@contoso.com"
-	SetUpn(&upn)
+meetingParticipantInfo.SetUpn(&upn) 
+
+attendees := []graphmodels.MeetingParticipantInfoable {
+	meetingParticipantInfo,
+
 }
-result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(requestBody)
+participants.SetAttendees(attendees)
+requestBody.SetParticipants(participants)
+
+result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(context.Background(), requestBody, nil)
 
 
 ```

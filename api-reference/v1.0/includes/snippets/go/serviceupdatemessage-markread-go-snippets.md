@@ -7,12 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewMessageIdsRequestBody()
-requestBody.SetMessageIds( []String {
+requestBody := graphmodels.NewMarkReadPostRequestBody()
+messageIds := []string {
 	"MC172851",
 	"MC167983",
+
 }
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkRead().Post(requestBody)
+requestBody.SetMessageIds(messageIds)
+
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkRead().Post(context.Background(), requestBody, nil)
 
 
 ```
