@@ -20,7 +20,7 @@ additionalData := map[string]interface{}{
 authenticationConfiguration.SetAdditionalData(additionalData)
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 
-result, err := graphClient.Identity().ApiConnectors().Post(requestBody)
+result, err := graphClient.Identity().ApiConnectors().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Datasets, regions, and sinks supported by Microsoft Graph Data Connect"
 description: "Learn about the supported datasets, Microsoft 365 regions, and sink storage types that you can use with Microsoft Graph Data Connect."
-author: "fercobo-msft"
+author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
 ---

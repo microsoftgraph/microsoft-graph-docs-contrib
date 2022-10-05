@@ -49,7 +49,7 @@ items:
         href: /graph/aad-advanced-queries?context=graph/api/1.0
       - name: Optimize requests with query parameters
         displayName: OData query parameters, OData
-        href: /learn/modules/optimize-data-usage
+        href: /training/modules/optimize-data-usage
     - name: Batching
       href: /graph/json-batching?context=graph/api/1.0
       displayName: Batch request
@@ -62,7 +62,7 @@ items:
         href: /graph/throttling-limits?context=graph/api/1.0
         displayName: throttling
       - name: Optimize network traffic
-        href: /learn/modules/optimize-network-traffic          
+        href: /training/modules/optimize-network-traffic
         displayName: throttling
     - name: Change notifications
       items:
@@ -70,12 +70,12 @@ items:
         href: /graph/api/resources/webhooks?context=graph/api/1.0
         displayName: change notifications, WebHooks, set up notifications for changes in resource data
       - name: Change notifications tutorial
-        href: /learn/modules/msgraph-changenotifications-trackchanges
+        href: /training/modules/msgraph-changenotifications-trackchanges
       - name: Missing change notifications
         href: /graph/webhooks-lifecycle?context=graph/api/1.0
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/1.0
-      - name: Get notifications delivered different ways (preview)
+      - name: Get notifications delivered different ways
         href: /graph/change-notifications-delivery?context=graph/api/1.0
       - name: Change notifications for cloud printing
         href: /graph/universal-print-webhook-notifications?context=graph/api/1.0
@@ -240,6 +240,8 @@ items:
           href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/1.0
         - name: Build an Electron app
           href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/1.0
+        - name: Build a productivity hub app
+          href: /graph/toolkit/get-started/building-one-productivity-hub?context=graph/api/1.0
       - name: Providers
         items:
         - name: Using the providers
@@ -415,11 +417,11 @@ items:
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
         - name: List deleted items
-          href: api/directory-deleteditems-list.md 
+          href: api/directory-deleteditems-list.md
         - name: Get deleted item
           href: api/directory-deleteditems-get.md
         - name: Permanently delete item
-          href: api/directory-deleteditems-delete.md       
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted item
           href: api/directory-deleteditems-restore.md
       - name: Drive
@@ -957,7 +959,7 @@ items:
               - name: Update
                 href: api/federatedidentitycredential-update.md
               - name: Delete
-                href: api/federatedidentitycredential-delete.md              
+                href: api/federatedidentitycredential-delete.md
         - name: Owners
           items:
           - name: List
@@ -4975,6 +4977,7 @@ items:
             - name: Get operation status
               href: api/longrunningoperation-get.md
           - name: Temporary Access Pass
+            displayName: TAP
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
             - name: List
@@ -4985,11 +4988,13 @@ items:
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete
               href: api/temporaryaccesspassauthenticationmethod-delete.md
-        - name: Conditional access
+        - name: Conditional Access
           items:
+          - name: Conditional Access
+            href: resources/conditionalaccessroot.md
           - name: Policies
             items:
-            - name: Conditional access policy
+            - name: Conditional Access policy
               href: resources/conditionalaccesspolicy.md
             - name: List
               href: api/conditionalaccessroot-list-policies.md
@@ -5041,6 +5046,18 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
+          - name: Authentication context
+            items:
+            - name: Authentication context class reference
+              href: resources/authenticationcontextclassreference.md
+            - name: List
+              href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
+            - name: Create or update
+              href: api/authenticationcontextclassreference-update.md    
+            - name: Get
+              href: api/authenticationcontextclassreference-get.md
+            - name: Delete
+              href: api/authenticationcontextclassreference-delete.md  
         - name: Cross-tenant access
           items:
           - name: Overview
@@ -5530,7 +5547,7 @@ items:
             - name: Stop
               href: api/accessreviewstage-stop.md
           - name: Access review instance decision item
-            displayName: access review decisions 
+            displayName: access review decisions
             href: resources/accessreviewinstancedecisionitem.md
             items:
             - name: List decisions from an instance
@@ -5869,7 +5886,7 @@ items:
           href: api/message-createreply.md
         - name: Reply to a message
           href: api/message-reply.md
-        - name: Create draft to reply-all 
+        - name: Create draft to reply-all
           href: api/message-createreplyall.md
         - name: Reply-all to a message
           href: api/message-replyall.md
@@ -6437,6 +6454,29 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
+      - name: Microsoft Defender for Office 365 security reports
+        items:
+        - name: Attack simulation reports
+          displayname: Attack simulation and training
+          href: resources/report-m365defender-reports-overview.md
+        - name: Repeat offender
+          items:
+          - name: Repeat offender
+            href: resources/attacksimulationrepeatoffender.md
+          - name: Get repeat offenders
+            href: api/securityreportsroot-getattacksimulationrepeatoffenders.md
+        - name: Simulation data
+          items:
+          - name: Simulation user coverage
+            href: resources/attacksimulationsimulationusercoverage.md
+          - name: Get simulation coverage for users
+            href: api/securityreportsroot-getattacksimulationsimulationusercoverage.md
+        - name: Training data
+          items:
+          - name: Training user coverage
+            href: resources/attacksimulationtrainingusercoverage.md
+          - name: Get training coverage for users
+            href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
     - name: Search
       displayname: Microsoft Search API
       items:
@@ -6577,7 +6617,7 @@ items:
         - name: Operation
           href : resources/security-caseoperation.md
           items:
-          - name: List case operations 
+          - name: List case operations
             href: api/security-ediscoverycase-list-operations.md
           - name: Get case opreation by id
             href: api/security-caseoperation-get.md
@@ -6747,6 +6787,57 @@ items:
           href: api/securescorecontrolprofile-update.md
       - name: Errors
         href: resources/security-error-codes.md
+      - name: Attack simulation and training
+        items:
+        - name: Simulations
+          items:
+          - name: Simulation
+            href: resources/simulation.md
+          - name: List
+            href: api/attacksimulationroot-list-simulations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulations.md
+          - name: List simulation users
+            href: api/usersimulationdetails-list.md
+          - name: Get simulation overview
+            href: api/simulationreportoverview-get.md
+        - name: Simulation automation
+          items:
+          - name: Simulation automation
+            href: resources/simulationautomation.md
+          - name: List
+            href: api/attacksimulationroot-list-simulationautomations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulationautomations.md
+        - name: Simulation automation run
+          items:
+          - name: Simulation automation run
+            href: resources/simulationautomationrun.md
+          - name: List
+            href: api/simulationautomation-list-runs.md
+        - name: Reports
+          items:
+          - name: Attack simulation reports
+            displayname: Attack simulation and training
+            href: resources/report-m365defender-reports-overview.md
+          - name: Repeat offenders
+            items:
+            - name: Repeat offender
+              href: resources/attacksimulationrepeatoffender.md
+            - name: Get repeat offenders
+              href: api/securityreportsroot-getattacksimulationrepeatoffenders.md
+          - name: Simulation data
+            items:
+            - name: Simulation user coverage
+              href: resources/attacksimulationsimulationusercoverage.md
+            - name: Get simulation coverage for users
+              href: api/securityreportsroot-getattacksimulationsimulationusercoverage.md
+          - name: Training data
+            items:
+            - name: Training user coverage
+              href: resources/attacksimulationtrainingusercoverage.md
+            - name: Get training coverage for users
+              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
     - name: Sites and lists
       displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
       items:
@@ -7095,7 +7186,7 @@ items:
               href: api/userteamwork-get-installedapps.md
             - name: Get chat between user and app
               href: api/userscopeteamsappinstallation-get-chat.md
-            - name: Upgrade installed app for user 
+            - name: Upgrade installed app for user
               href: api/userteamwork-teamsappinstallation-upgrade.md
             - name: Remove app for user
               href: api/userteamwork-delete-installedapps.md
@@ -7103,7 +7194,7 @@ items:
           href: resources/resourcespecificpermissiongrant.md
           items:
           - name: List for group
-            href: api/group-list-permissiongrants.md      
+            href: api/group-list-permissiongrants.md
         - name: Tab
           href: resources/teamstab.md
           items:
@@ -7165,11 +7256,16 @@ items:
             - name: Keep alive
               href: api/call-keepalive.md
             - name: Log teleconference device quality data
-              href: api/call-logteleconferencedevicequality.md 
+              href: api/call-logteleconferencedevicequality.md
           - name: Content sharing session
-            items:      
+            href: resources/contentsharingsession.md
+            items:
             - name: Change screen sharing role
-              href: api/call-changescreensharingrole.md     
+              href: api/call-changescreensharingrole.md
+            - name: List
+              href: api/call-list-contentsharingsessions.md
+            - name: Get
+              href: api/contentsharingsession-get.md    
           - name: IVR scenarios
             href: resources/calls-api-ivr-overview.md
             items:
@@ -7180,7 +7276,16 @@ items:
             - name: Cancel media processing
               href: api/call-cancelmediaprocessing.md
             - name: Subscribe to tone
-              href: api/call-subscribetotone.md    
+              href: api/call-subscribetotone.md
+          - name: Large gallery view operation
+            items:
+            - name: Add large gallery view
+              href: api/call-addlargegalleryview.md
+            - name: Add large gallery view operation
+              href: resources/addlargegalleryviewoperation.md
+              items:
+              - name: Get large gallery view operation status
+                href: api/addlargegalleryviewoperation-get.md
           - name: Participant
             href: resources/participant.md
             items:
@@ -7213,19 +7318,19 @@ items:
             - name: Direct routing log row
               href: resources/callrecords-directroutinglogrow.md
             - name: List direct routing calls
-              href: api/callrecords-callrecord-getdirectroutingcalls.md  
+              href: api/callrecords-callrecord-getdirectroutingcalls.md
           - name: PSTN calls
             items:
             - name: PSTN log row
               href: resources/callrecords-pstncalllogrow.md
             - name: List PSTN calls
-              href: api/callrecords-callrecord-getpstncalls.md       
+              href: api/callrecords-callrecord-getpstncalls.md
           - name: Session
             items:
             - name: Session
               href: resources/callrecords-session.md
             - name: List sessions
-              href: api/callrecords-session-list.md  
+              href: api/callrecords-session-list.md
         - name: Online meetings
           items:
           - name: Attendance report
@@ -7342,7 +7447,7 @@ items:
           - name: Unshare channel with team
             href: api/sharedwithchannelteaminfo-delete.md
           - name: List allowed members
-            href: api/sharedwithchannelteaminfo-list-allowedmembers.md    
+            href: api/sharedwithchannelteaminfo-list-allowedmembers.md
         - name: Chat
           href: resources/chat.md
           items:
@@ -7372,6 +7477,12 @@ items:
             href: api/chat-post-messages.md
           - name: Get chat between user and app
             href: api/userscopeteamsappinstallation-get-chat.md
+          - name: List pinned messages
+            href: api/chat-list-pinnedmessages.md
+          - name: Pin message
+            href: api/chat-post-pinnedmessages.md
+          - name: Unpin message
+            href: api/chat-delete-pinnedmessages.md
         - name: Chat message
           href: resources/chatmessage.md
           items:
@@ -7399,6 +7510,21 @@ items:
             href: api/chats-getallmessages.md
           - name: Get hosted content
             href: api/chatmessagehostedcontent-get.md
+          - name: List pinned messages
+            href: api/chat-list-pinnedmessages.md
+          - name: Pin message
+            href: api/chat-post-pinnedmessages.md
+          - name: Unpin message
+            href: api/chat-delete-pinnedmessages.md
+        - name: Pinned chat message
+          href: resources/pinnedchatmessageinfo.md
+          items:
+          - name: List pinned messages
+            href: api/chat-list-pinnedmessages.md
+          - name: Pin message
+            href: api/chat-post-pinnedmessages.md
+          - name: Unpin message
+            href: api/chat-delete-pinnedmessages.md
         - name: Team
           href: resources/team.md
           items:
@@ -7506,7 +7632,7 @@ items:
           - name: Replace
             href: api/schedulinggroup-put.md
           - name: Delete
-            href: api/schedulinggroup-delete.md     
+            href: api/schedulinggroup-delete.md
         - name: Shift
           href: resources/shift.md
           items:
@@ -7703,6 +7829,25 @@ items:
           href: api/workbookcomment-post-replies.md
         - name: Get reply
           href: api/workbookcommentreply-get.md
+      - name: Workbook table row
+        href: resources/workbooktablerow.md
+        items:
+        - name: List
+          href: api/tablerow-list.md
+        - name: Create
+          href: api/table-post-rows.md
+        - name: Get
+          href: api/tablerow-get.md
+        - name: Update
+          href: api/tablerow-update.md
+        - name: Delete
+          href: api/tablerow-delete.md
+        - name: Get range
+          href: api/tablerow-range.md
+        - name: Get item at
+          href: api/tablerowcollection-itemat.md
+        - name: Add row
+          href: api/tablerowcollection-add.md
       - name: Worksheet
         href: resources/worksheet.md
         items:

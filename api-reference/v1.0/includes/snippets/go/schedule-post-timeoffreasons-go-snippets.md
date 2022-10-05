@@ -15,7 +15,7 @@ requestBody.SetIconType(&iconType)
 isActive := true
 requestBody.SetIsActive(&isActive) 
 
-result, err := graphClient.TeamsById("team-id").Schedule().TimeOffReasons().Post(requestBody)
+result, err := graphClient.TeamsById("team-id").Schedule().TimeOffReasons().Post(context.Background(), requestBody, nil)
 
 
 ```

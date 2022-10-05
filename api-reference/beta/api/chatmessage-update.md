@@ -16,17 +16,29 @@ Update a [chatMessage](../resources/chatMessage.md) object.
 With the exception of the **policyViolation** property, all properties of a **chatMessage** can be updated in delegated permissions scenarios.
 Only the **policyViolation** property of a **chatMessage** can be updated in application permissions scenarios.
 
+The update only works for chats where members are Microsoft Teams users. If one of the participants is using Skype, the operation will fail.
+
 [!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Chat.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.UpdatePolicyViolation.All for a chat message.</br>ChannelMessage.UpdatePolicyViolation.All for a channel message. |
+### Permissions for channel
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | ChannelMessage.ReadWrite, Group.ReadWrite.All** |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | ChannelMessage.UpdatePolicyViolation.All, ChannelMessage.ReadWrite.All, Group.ReadWrite.All** |
+
+> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+
+### Permissions for chat
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Chat.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Chat.UpdatePolicyViolation.All, Chat.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

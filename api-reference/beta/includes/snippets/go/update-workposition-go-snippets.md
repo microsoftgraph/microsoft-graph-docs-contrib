@@ -11,7 +11,7 @@ requestBody := graphmodels.NewWorkPosition()
 isCurrent := true
 requestBody.SetIsCurrent(&isCurrent) 
 
-graphClient.Me().Profile().PositionsById("workPosition-id").Patch(requestBody)
+result, err := graphClient.Me().Profile().PositionsById("workPosition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

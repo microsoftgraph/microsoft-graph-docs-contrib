@@ -11,7 +11,7 @@ requestBody := graphmodels.NewCancelPostRequestBody()
 comment := "Cancelling for this week due to all hands"
 requestBody.SetComment(&comment) 
 
-graphClient.Me().EventsById("event-id").Cancel().Post(requestBody)
+graphClient.Me().EventsById("event-id").Cancel().Post(context.Background(), requestBody, nil)
 
 
 ```

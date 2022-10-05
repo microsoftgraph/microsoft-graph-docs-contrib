@@ -7,7 +7,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "safeguard",
                     "ChangeType": "Addition",
-                    "Description": "Added the **safeguard** property to the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentSettings?view=graph-rest-beta) resource.",
+                    "Description": "Added the **safeguard** property to the [deploymentSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentSettings?view=graph-rest-beta) resource.",
                     "Target": "deploymentSettings"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "safeguardSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [safeguardSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-safeguardSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [safeguardSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-safeguardSettings?view=graph-rest-beta) resource type.",
                     "Target": "safeguardSettings"
                 },
                 {
@@ -23,7 +23,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "safeguardProfile",
                     "ChangeType": "Addition",
-                    "Description": "Added the [safeguardProfile](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-safeguardProfile?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [safeguardProfile](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-safeguardProfile?view=graph-rest-beta) resource type.",
                     "Target": "safeguardProfile"
                 },
                 {
@@ -57,7 +57,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "deployment",
                     "ChangeType": "Addition",
-                    "Description": "Added the [deployment](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdates-deployment?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [deployment](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdates-deployment?view=graph-rest-beta) resource type.",
                     "Target": "deployment"
                 },
                 {
@@ -65,7 +65,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "deploymentSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdates-deploymentSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [deploymentSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdates-deploymentSettings?view=graph-rest-beta) resource type.",
                     "Target": "deploymentSettings"
                 },
                 {
@@ -73,7 +73,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "deploymentAudience",
                     "ChangeType": "Addition",
-                    "Description": "Added the [deploymentAudience](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdates-deploymentAudience?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [deploymentAudience](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdates-deploymentAudience?view=graph-rest-beta) resource type.",
                     "Target": "deploymentAudience"
                 },
                 {
@@ -81,7 +81,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "updatableAsset",
                     "ChangeType": "Addition",
-                    "Description": "Added the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdates-updatableAsset?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [updatableAsset](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdates-updatableAsset?view=graph-rest-beta) resource type.",
                     "Target": "updatableAsset"
                 },
                 {
@@ -89,7 +89,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "deploymentState",
                     "ChangeType": "Addition",
-                    "Description": "Added the [deploymentState](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdates-deploymentState?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [deploymentState](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdates-deploymentState?view=graph-rest-beta) resource type.",
                     "Target": "deploymentState"
                 },
                 {
@@ -97,7 +97,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "deploymentStateReason",
                     "ChangeType": "Addition",
-                    "Description": "Added the [deploymentStateReason](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdates-deploymentStateReason?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [deploymentStateReason](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsupdates-deploymentStateReason?view=graph-rest-beta) resource type.",
                     "Target": "deploymentStateReason"
                 },
                 {
@@ -105,7 +105,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "azureADDevice",
                     "ChangeType": "Addition",
-                    "Description": "Added the [azureADDevice](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-azureADDevice?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [azureADDevice](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-azureADDevice?view=graph-rest-beta) resource type.",
                     "Target": "azureADDevice"
                 },
                 {
@@ -113,7 +113,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "updatableAssetError",
                     "ChangeType": "Addition",
-                    "Description": "Added the [updatableAssetError](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAssetError?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [updatableAssetError](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAssetError?view=graph-rest-beta) resource type.",
                     "Target": "updatableAssetError"
                 },
                 {
@@ -121,7 +121,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "azureADDeviceRegistrationError",
                     "ChangeType": "Addition",
-                    "Description": "Added the [azureADDeviceRegistrationError](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-azureADDeviceRegistrationError?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [azureADDeviceRegistrationError](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-azureADDeviceRegistrationError?view=graph-rest-beta) resource type.",
                     "Target": "azureADDeviceRegistrationError"
                 },
                 {
@@ -129,7 +129,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "updatableAssetEnrollment",
                     "ChangeType": "Addition",
-                    "Description": "Added the [updatableAssetEnrollment](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAssetEnrollment?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [updatableAssetEnrollment](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAssetEnrollment?view=graph-rest-beta) resource type.",
                     "Target": "updatableAssetEnrollment"
                 },
                 {
@@ -137,7 +137,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "updateManagementEnrollment",
                     "ChangeType": "Addition",
-                    "Description": "Added the [updateManagementEnrollment](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updateManagementEnrollment?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [updateManagementEnrollment](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updateManagementEnrollment?view=graph-rest-beta) resource type.",
                     "Target": "updateManagementEnrollment"
                 },
                 {
@@ -145,7 +145,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "updatableAssetGroup",
                     "ChangeType": "Addition",
-                    "Description": "Added the [updatableAssetGroup](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAssetGroup?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [updatableAssetGroup](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAssetGroup?view=graph-rest-beta) resource type.",
                     "Target": "updatableAssetGroup"
                 },
                 {
@@ -153,7 +153,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "deployableContent",
                     "ChangeType": "Addition",
-                    "Description": "Added the [deployableContent](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deployableContent?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [deployableContent](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-deployableContent?view=graph-rest-beta) resource type.",
                     "Target": "deployableContent"
                 },
                 {
@@ -161,7 +161,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "softwareUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [softwareUpdateReference](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-softwareUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [softwareUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-softwareUpdateReference?view=graph-rest-beta) resource type.",
                     "Target": "softwareUpdateReference"
                 },
                 {
@@ -169,7 +169,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "windowsUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [windowsUpdateReference](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [windowsUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsUpdateReference?view=graph-rest-beta) resource type.",
                     "Target": "windowsUpdateReference"
                 },
                 {
@@ -177,7 +177,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "qualityUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [qualityUpdateReference](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [qualityUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityUpdateReference?view=graph-rest-beta) resource type.",
                     "Target": "qualityUpdateReference"
                 },
                 {
@@ -185,7 +185,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "expeditedQualityUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [expeditedQualityUpdateReference](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-expeditedQualityUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [expeditedQualityUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-expeditedQualityUpdateReference?view=graph-rest-beta) resource type.",
                     "Target": "expeditedQualityUpdateReference"
                 },
                 {
@@ -193,7 +193,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "featureUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [featureUpdateReference](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-featureUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [featureUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-featureUpdateReference?view=graph-rest-beta) resource type.",
                     "Target": "featureUpdateReference"
                 },
                 {
@@ -201,7 +201,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "rolloutSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [rolloutSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-rolloutSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [rolloutSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-rolloutSettings?view=graph-rest-beta) resource type.",
                     "Target": "rolloutSettings"
                 },
                 {
@@ -209,7 +209,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "monitoringSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [monitoringSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-monitoringSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [monitoringSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-monitoringSettings?view=graph-rest-beta) resource type.",
                     "Target": "monitoringSettings"
                 },
                 {
@@ -217,7 +217,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "monitoringRule",
                     "ChangeType": "Addition",
-                    "Description": "Added the [monitoringRule](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-monitoringRule?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [monitoringRule](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-monitoringRule?view=graph-rest-beta) resource type.",
                     "Target": "monitoringRule"
                 },
                 {
@@ -225,7 +225,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "windowsDeploymentSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [windowsDeploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsDeploymentSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [windowsDeploymentSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsDeploymentSettings?view=graph-rest-beta) resource type.",
                     "Target": "windowsDeploymentSettings"
                 },
                 {
@@ -233,7 +233,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "userExperienceSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [userExperienceSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-userExperienceSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [userExperienceSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-userExperienceSettings?view=graph-rest-beta) resource type.",
                     "Target": "userExperienceSettings"
                 },
                 {
@@ -241,7 +241,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "catalog",
                     "ChangeType": "Addition",
-                    "Description": "Added the [catalog](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-catalog?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [catalog](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-catalog?view=graph-rest-beta) resource type.",
                     "Target": "catalog"
                 },
                 {
@@ -249,7 +249,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "catalogEntry",
                     "ChangeType": "Addition",
-                    "Description": "Added the [catalogEntry](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-catalogEntry?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [catalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-catalogEntry?view=graph-rest-beta) resource type.",
                     "Target": "catalogEntry"
                 },
                 {
@@ -257,7 +257,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "softwareUpdateCatalogEntry",
                     "ChangeType": "Addition",
-                    "Description": "Added the [softwareUpdateCatalogEntry](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-softwareUpdateCatalogEntry?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [softwareUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-softwareUpdateCatalogEntry?view=graph-rest-beta) resource type.",
                     "Target": "softwareUpdateCatalogEntry"
                 },
                 {
@@ -265,7 +265,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "featureUpdateCatalogEntry",
                     "ChangeType": "Addition",
-                    "Description": "Added the [featureUpdateCatalogEntry](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-featureUpdateCatalogEntry?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [featureUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-featureUpdateCatalogEntry?view=graph-rest-beta) resource type.",
                     "Target": "featureUpdateCatalogEntry"
                 },
                 {
@@ -273,7 +273,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "qualityUpdateCatalogEntry",
                     "ChangeType": "Addition",
-                    "Description": "Added the [qualityUpdateCatalogEntry](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityUpdateCatalogEntry?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [qualityUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityUpdateCatalogEntry?view=graph-rest-beta) resource type.",
                     "Target": "qualityUpdateCatalogEntry"
                 },
                 {
@@ -353,7 +353,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "enrollAssetsById",
                     "ChangeType": "Addition",
-                    "Description": "Added the [enrollAssetsById](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableAsset-enrollAssetsById?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAsset?view=graph-rest-beta) resource.",
+                    "Description": "Added the [enrollAssetsById](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updatableAsset-enrollAssetsById?view=graph-rest-beta) method to the [updatableAsset](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAsset?view=graph-rest-beta) resource.",
                     "Target": "updatableAsset"
                 },
                 {
@@ -361,7 +361,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "enrollAssets",
                     "ChangeType": "Addition",
-                    "Description": "Added the [enrollAssets](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableAsset-enrollAssets?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAsset?view=graph-rest-beta) resource.",
+                    "Description": "Added the [enrollAssets](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updatableAsset-enrollAssets?view=graph-rest-beta) method to the [updatableAsset](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAsset?view=graph-rest-beta) resource.",
                     "Target": "updatableAsset"
                 },
                 {
@@ -369,7 +369,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "unenrollAssetsById",
                     "ChangeType": "Addition",
-                    "Description": "Added the [unenrollAssetsById](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableAsset-unenrollAssetsById?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAsset?view=graph-rest-beta) resource.",
+                    "Description": "Added the [unenrollAssetsById](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updatableAsset-unenrollAssetsById?view=graph-rest-beta) method to the [updatableAsset](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAsset?view=graph-rest-beta) resource.",
                     "Target": "updatableAsset"
                 },
                 {
@@ -377,7 +377,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "unenrollAssets",
                     "ChangeType": "Addition",
-                    "Description": "Added the [unenrollAssets](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableAsset-unenrollAssets?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAsset?view=graph-rest-beta) resource.",
+                    "Description": "Added the [unenrollAssets](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updatableAsset-unenrollAssets?view=graph-rest-beta) method to the [updatableAsset](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAsset?view=graph-rest-beta) resource.",
                     "Target": "updatableAsset"
                 },
                 {
@@ -385,7 +385,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "updateAudience",
                     "ChangeType": "Addition",
-                    "Description": "Added the [updateAudience](https://docs.microsoft.com/en-us/graph/api/windowsupdates-deploymentAudience-updateAudience?view=graph-rest-beta) method to the [deploymentAudience](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentAudience?view=graph-rest-beta) resource.",
+                    "Description": "Added the [updateAudience](https://learn.microsoft.com/en-us/graph/api/windowsupdates-deploymentAudience-updateAudience?view=graph-rest-beta) method to the [deploymentAudience](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentAudience?view=graph-rest-beta) resource.",
                     "Target": "deploymentAudience"
                 },
                 {
@@ -393,7 +393,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "updateAudienceById",
                     "ChangeType": "Addition",
-                    "Description": "Added the [updateAudienceById](https://docs.microsoft.com/en-us/graph/api/windowsupdates-deploymentAudience-updateAudienceById?view=graph-rest-beta) method to the [deploymentAudience](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentAudience?view=graph-rest-beta) resource.",
+                    "Description": "Added the [updateAudienceById](https://learn.microsoft.com/en-us/graph/api/windowsupdates-deploymentAudience-updateAudienceById?view=graph-rest-beta) method to the [deploymentAudience](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentAudience?view=graph-rest-beta) resource.",
                     "Target": "deploymentAudience"
                 },
                 {
@@ -401,7 +401,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "addMembers",
                     "ChangeType": "Addition",
-                    "Description": "Added the [addMembers](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-addMembers?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
+                    "Description": "Added the [addMembers](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-addMembers?view=graph-rest-beta) method to the [updatableAsset](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
                     "Target": "updatableAsset"
                 },
                 {
@@ -409,7 +409,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "addMembersById",
                     "ChangeType": "Addition",
-                    "Description": "Added the [addMembersById](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-addMembersById?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
+                    "Description": "Added the [addMembersById](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-addMembersById?view=graph-rest-beta) method to the [updatableAsset](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
                     "Target": "updatableAsset"
                 },
                 {
@@ -417,7 +417,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "removeMembers",
                     "ChangeType": "Addition",
-                    "Description": "Added the [removeMembers](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-removeMembers?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
+                    "Description": "Added the [removeMembers](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-removeMembers?view=graph-rest-beta) method to the [updatableAsset](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
                     "Target": "updatableAsset"
                 },
                 {
@@ -425,7 +425,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "removeMembersById",
                     "ChangeType": "Addition",
-                    "Description": "Added the [removeMembersById](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-removeMembersById?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
+                    "Description": "Added the [removeMembersById](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-removeMembersById?view=graph-rest-beta) method to the [updatableAsset](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
                     "Target": "updatableAsset"
                 }
             ],
@@ -451,7 +451,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "operationalInsightsConnection",
                 "ChangeType": "Addition",
-                "Description": "Added the [operationalInsightsConnection](https://docs.microsoft.com/en-us/graph/api/resources/operationalInsightsConnection?view=graph-rest-beta) resource and supported methods.",
+                "Description": "Added the [operationalInsightsConnection](https://learn.microsoft.com/en-us/graph/api/resources/operationalInsightsConnection?view=graph-rest-beta) resource and supported methods.",
                 "Target": "operationalInsightsConnection"
               },
               {
@@ -459,7 +459,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "resourceConnection",
                 "ChangeType": "Addition",
-                "Description": "Added the [resourceConnection](https://docs.microsoft.com/en-us/graph/api/resources/resourceConnection?view=graph-rest-beta) resource and supported methods.",
+                "Description": "Added the [resourceConnection](https://learn.microsoft.com/en-us/graph/api/resources/resourceConnection?view=graph-rest-beta) resource and supported methods.",
                 "Target": "resourceConnection"
               },
               {
@@ -467,7 +467,7 @@
                 "ApiChange": "Relationship",
                 "ChangedApiName": "resourceConnections",
                 "ChangeType": "Addition",
-                "Description": "Added the **resourceConnections** relationship to the [updates](https://docs.microsoft.com/en-us/graph/api/resources/updates?view=graph-rest-beta) resource.",
+                "Description": "Added the **resourceConnections** relationship to the [updates](https://learn.microsoft.com/en-us/graph/api/resources/updates?view=graph-rest-beta) resource.",
                 "Target": "updates"
               }
             ],

@@ -51,6 +51,7 @@ The following table shows the properties that are required when you create the [
 |id|String|The remote assistance settings identifier|
 |remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|The current state of remote assistance for the account. Possible values are: disabled, enabled. This setting is configurable by the admin. Remote assistance settings that have not yet been configured by the admin have a disabled state. Returned by default. Possible values are: `disabled`, `enabled`.|
 |allowSessionsToUnenrolledDevices|Boolean| Indicates if sessions to unenrolled devices are allowed for the account. This setting is configurable by the admin. Default value is false.|
+|blockChat|Boolean| Indicates if sessions to block chat function. This setting is configurable by the admin. Default value is false.|
 
 
 
@@ -64,12 +65,13 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteAssistanceSettings
 Content-type: application/json
-Content-length: 150
+Content-length: 172
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
   "remoteAssistanceState": "enabled",
-  "allowSessionsToUnenrolledDevices": true
+  "allowSessionsToUnenrolledDevices": true,
+  "blockChat": true
 }
 ```
 
@@ -78,16 +80,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 199
+Content-Length: 221
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
   "id": "cfef360e-360e-cfef-0e36-efcf0e36efcf",
   "remoteAssistanceState": "enabled",
-  "allowSessionsToUnenrolledDevices": true
+  "allowSessionsToUnenrolledDevices": true,
+  "blockChat": true
 }
 ```
-
 
 
 

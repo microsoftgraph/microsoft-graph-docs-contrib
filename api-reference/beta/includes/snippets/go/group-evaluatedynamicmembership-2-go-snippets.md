@@ -13,7 +13,7 @@ requestBody.SetMemberId(&memberId)
 membershipRule := "(user.displayName -startsWith \"EndTestUser\")"
 requestBody.SetMembershipRule(&membershipRule) 
 
-result, err := graphClient.Groups().EvaluateDynamicMembership().Post(requestBody)
+result, err := graphClient.Groups().EvaluateDynamicMembership().Post(context.Background(), requestBody, nil)
 
 
 ```

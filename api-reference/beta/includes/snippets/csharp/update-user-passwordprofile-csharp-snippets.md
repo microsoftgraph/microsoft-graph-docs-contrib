@@ -10,7 +10,7 @@ var user = new User
 {
 	PasswordProfile = new PasswordProfile
 	{
-		ForceChangePasswordNextSignIn = false,
+		ForceChangePasswordNextSignIn = true,
 		Password = "xWwvJ]6NMw+bWH-d"
 	}
 };

@@ -49,7 +49,7 @@ items:
         href: /graph/aad-advanced-queries?context=graph/api/beta
       - name: Optimize requests with query parameters
         displayName: OData query parameters, OData
-        href: /learn/modules/optimize-data-usage
+        href: /training/modules/optimize-data-usage
     - name: Batching
       href: /graph/json-batching?context=graph/api/beta
       displayName: Batch request
@@ -63,19 +63,19 @@ items:
         displayName: throttling
       - name: Optimize network traffic
         displayName: throttling
-        href: /learn/modules/optimize-network-traffic
+        href: /training/modules/optimize-network-traffic
     - name: Change notifications
       items:
       - name: Overview
         href: /graph/api/resources/webhooks?context=graph/api/beta
         displayName: change notifications, WebHooks, set up notifications for changes in resource data
       - name: Change notifications tutorial
-        href: /learn/modules/msgraph-changenotifications-trackchanges
+        href: /training/modules/msgraph-changenotifications-trackchanges
       - name: Missing change notifications
         href: /graph/webhooks-lifecycle?context=graph/api/beta
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
-      - name: Get notifications delivered different ways (preview)
+      - name: Get notifications delivered different ways
         href: /graph/change-notifications-delivery?context=graph/api/beta
       - name: Change notifications for cloud printing
         href: /graph/universal-print-webhook-notifications?context=graph/api/beta
@@ -240,6 +240,8 @@ items:
         href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/beta
       - name: Build an Electron app
         href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/beta
+      - name: Build a productivity hub app
+        href: /graph/toolkit/get-started/building-one-productivity-hub?context=graph/api/beta
     - name: Providers
       items:
       - name: Using the providers
@@ -353,6 +355,8 @@ items:
         items:
         - name: List app role assignments
           href: api/user-list-approleassignments.md
+        - name: List app role assigned resources
+          href: api/user-list-approleassignedresources.md
         - name: Add app role assignment
           href: api/user-post-approleassignments.md
         - name: Remove app role assignment
@@ -588,7 +592,7 @@ items:
             href: api/organizationsettings-list-peopleinsights.md
           - name: Update
             href: api/insightssettings-update.md
-      - name: Personal contacts
+      - name: Personal contact
         items:
         - name: Contact
           href: resources/contact.md
@@ -609,6 +613,14 @@ items:
             href: api/contactmergesuggestions-get.md
           - name: Update
             href: api/contactmergesuggestions-update.md
+        - name: Org control for contact insights (preview)
+          items:
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: List
+            href: api/organizationsettings-list-contactinsights.md
+          - name: Update
+            href: api/insightssettings-update.md
       - name: Photo
         items:
         - name: Profile photo
@@ -1571,7 +1583,7 @@ items:
         - name: Delete
           href: api/subscription-delete.md
       - name: Change notification collection
-        href: resources/changenotificationcollection.md        
+        href: resources/changenotificationcollection.md
     - name: Compliance
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
@@ -8171,6 +8183,8 @@ items:
               href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
             - name: triggerConfigurationManagerAction action
               href: api/intune-devices-manageddevice-triggerconfigurationmanageraction.md
+            - name: enrollNowAction action
+              href: api/intune-devices-manageddevice-enrollnowaction.md
             - name: deprovision action
               href: api/intune-devices-manageddevice-deprovision.md
             - name: disable action
@@ -8408,6 +8422,40 @@ items:
             href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
           - name: Update windows device account action parameter
             href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+          - name: User experience analytics anomaly
+            href: resources/intune-devices-userexperienceanalyticsanomaly.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsanomaly-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsanomaly-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsanomaly-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsanomaly-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsanomaly-update.md
+          - name: User experience analytics anomaly device
+            href: resources/intune-devices-userexperienceanalyticsanomalydevice.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsanomalydevice-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsanomalydevice-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsanomalydevice-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsanomalydevice-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsanomalydevice-update.md
+          - name: User experience analytics anomaly severity
+            href: resources/intune-devices-userexperienceanalyticsanomalyseverity.md
+          - name: User experience analytics anomaly severity overview
+            href: resources/intune-devices-userexperienceanalyticsanomalyseverityoverview.md
+          - name: User experience analytics anomaly state
+            href: resources/intune-devices-userexperienceanalyticsanomalystate.md
+          - name: User experience analytics anomaly type
+            href: resources/intune-devices-userexperienceanalyticsanomalytype.md
           - name: User experience analytics app health app performance by app version
             href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md
             items:
@@ -9069,6 +9117,15 @@ items:
               href: api/intune-mam-defaultmanagedappprotection-delete.md
             - name: Update
               href: api/intune-mam-defaultmanagedappprotection-update.md
+          - name: Device management reports
+            href: resources/intune-mam-devicemanagementreports.md
+            items:
+            - name: Get
+              href: api/intune-mam-devicemanagementreports-get.md
+            - name: Update
+              href: api/intune-mam-devicemanagementreports-update.md
+            - name: getMobileApplicationManagementAppRegistrationSummaryReport action
+              href: api/intune-mam-devicemanagementreports-getmobileapplicationmanagementappregistrationsummaryreport.md
           - name: Device platform type
             href: resources/intune-wip-deviceplatformtype.md
           - name: Intune branding profile
@@ -9958,7 +10015,7 @@ items:
             - name: sendCustomNotificationToCompanyPortal action
               href: api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md
           - name: Device management derived credential settings
-            href: resources\intune-shared-devicemanagementderivedcredentialsettings.md
+            href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
             items:
             - name: Get
               href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
@@ -9967,7 +10024,7 @@ items:
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
             - name: Create
-              href: api/resources/intune-shared-devicemanagementderivedcredentialsettings.md
+              href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -10971,6 +11028,8 @@ items:
           href: resources/educationoutcome.md
         - name: Feedback outcome type
           href: resources/educationfeedbackoutcome.md
+        - name: Feedback resource outcome type
+          href: resources/educationfeedbackresourceoutcome.md
         - name: Points outcome type
           href: resources/educationpointsoutcome.md
         - name: Rubric outcome type
@@ -11724,6 +11783,14 @@ items:
               href: api/organizationsettings-list-microsoftapplicationdataaccess.md
             - name: Update
               href: api/microsoftapplicationdataaccesssettings-update.md
+          - name: Org control for contact insights (preview)
+            items:
+            - name: Insights settings
+              href: resources/insightssettings.md
+            - name: List
+              href: api/organizationsettings-list-contactinsights.md
+            - name: Update
+              href: api/insightssettings-update.md
           - name: Org control for item insights (preview)
             items:
             - name: Insights settings
@@ -12046,6 +12113,7 @@ items:
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
           - name: Temporary Access Pass
+            displayName: TAP
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
             - name: List
@@ -12167,9 +12235,9 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
-          - name: Authentication context class references
+          - name: Authentication context
             items:
-            - name: Authentication context class references
+            - name: Authentication context class reference
               href: resources/authenticationcontextclassreference.md
             - name: List
               href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
@@ -12179,6 +12247,8 @@ items:
               href: api/authenticationcontextclassreference-get.md
             - name: Update
               href: api/authenticationcontextclassreference-update.md
+            - name: Delete
+              href: api/authenticationcontextclassreference-delete.md
         - name: Cross-tenant access
           items:
           - name: Overview
@@ -12738,7 +12808,7 @@ items:
               href: api/identityuserflow-get.md
             - name: Delete
               href: api/identityuserflow-delete.md
-          - name: B2C user flows
+          - name: B2C user flows (preview)
             items:
             - name: B2C user flow
               href: resources/b2cidentityuserflow.md
@@ -12770,7 +12840,7 @@ items:
               href: api/b2cidentityuserflow-post-userattributeassignments.md
             - name: List languages
               href: api/b2cidentityuserflow-list-languages.md
-            - name: Create language
+            - name: Create or update language
               href: api/b2cidentityuserflow-put-languages.md
             - name: Get API connectors configuration
               href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
@@ -13383,12 +13453,12 @@ items:
               href: api/identitygovernance-workflow-update.md
             - name: Delete
               href: api/identitygovernance-workflow-delete.md
-            - name: List deleted workflows 
+            - name: List deleted workflows
               href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
-            - name: Get a deleted workflow 
-              href: api/identitygovernance-deleteditemcontainer-get.md  
+            - name: Get a deleted workflow
+              href: api/identitygovernance-deleteditemcontainer-get.md
             - name: Permanently delete a workflow
-              href: api/identitygovernance-deletedItemcontainer-delete.md    
+              href: api/identitygovernance-deletedItemcontainer-delete.md
             - name: Restore
               href: api/identitygovernance-workflow-restore.md
             - name: Activate (run on-demand)
@@ -13402,11 +13472,11 @@ items:
               - name: Get
                 href: api/identitygovernance-workflowversion-get.md
               - name: Create
-                href: api/identitygovernance-workflow-createnewversion.md 
+                href: api/identitygovernance-workflow-createnewversion.md
               - name: List tasks for a workflow version
                 href: api/identitygovernance-workflowversion-list-tasks.md
               - name: Get task for a workflow version
-                href: api/identitygovernance-task-get.md      
+                href: api/identitygovernance-task-get.md
             - name: Workflow tasks
               items:
               - name: Workflow task
@@ -13416,49 +13486,51 @@ items:
               - name: Get task
                 href: api/identitygovernance-task-get.md
             - name: Reports
+              displayName: Lifecycle Workflows
               items:
               - name: Overview
+                displayName: Lifecycle Workflows reporting
                 href: resources/identitygovernance-lifecycleworkflows-reporting-overview.md
               - name: User processing results
                 href: resources/identitygovernance-userprocessingresult.md
                 items:
-                - name: List
+                - name: List user processing results
                   href: api/identitygovernance-workflow-list-userprocessingresults.md
-                - name: Summary
+                - name: Get summary
                   href: api/identitygovernance-userprocessingresult-summary.md
                 - name: List task processing results
-                  href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md    
+                  href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
               - name: Task reports
-                href: resources/identitygovernance-taskreport.md 
+                href: resources/identitygovernance-taskreport.md
                 items:
-                - name: List
+                - name: List task reports
                   href: api/identitygovernance-workflow-list-taskreports.md
-                - name: Summary
+                - name: Get summary
                   href: api/identitygovernance-taskreport-summary.md
                 - name: List task processing results
-                  href: api/identitygovernance-taskreport-list-taskprocessingresults.md    
+                  href: api/identitygovernance-taskreport-list-taskprocessingresults.md
               - name: Workflow runs
                 href: resources/identitygovernance-run.md
                 items:
-                - name: List
+                - name: List runs
                   href: api/identitygovernance-workflow-list-runs.md
-                - name: Get
+                - name: Get runs
                   href: api/identitygovernance-run-get.md
-                - name: Summary
-                  href: api/identitygovernance-run-summary.md  
+                - name: Get summary
+                  href: api/identitygovernance-run-summary.md
                 - name: List user processing results
                   href: api/identitygovernance-run-list-userprocessingresults.md
                 - name: Get user processing result
                   href: api/identitygovernance-userprocessingresult-get.md
                 - name: List task processing results
-                  href: api/identitygovernance-run-list-taskprocessingresults.md       
+                  href: api/identitygovernance-run-list-taskprocessingresults.md
               - name: Task processing results
                 href: resources/identitygovernance-taskprocessingresult.md
-                items:  
+                items:
                 - name: Resume
                   href: api/identitygovernance-taskprocessingresult-resume.md
           - name: Workflow templates
-            items: 
+            items:
             - name: Workflow templates
               href: resources/identitygovernance-workflowtemplate.md
             - name: List
@@ -13472,7 +13544,7 @@ items:
             - name: List
               href: api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
             - name: Get
-              href: api/identitygovernance-taskdefinition-get.md 
+              href: api/identitygovernance-taskdefinition-get.md
           - name: Custom task extension
             items:
             - name: Custom task extension
@@ -13486,7 +13558,7 @@ items:
             - name: Update
               href: api/identitygovernance-customtaskextension-update.md
             - name: Delete
-              href: api/identitygovernance-customtaskextension-delete.md    
+              href: api/identitygovernance-customtaskextension-delete.md
           - name: Settings
             items:
             - name: Settings
@@ -13494,7 +13566,7 @@ items:
             - name: Get
               href: api/identitygovernance-lifecyclemanagementsettings-get.md
             - name: Update
-              href: api/identitygovernance-lifecyclemanagementsettings-update.md                       
+              href: api/identitygovernance-lifecyclemanagementsettings-update.md
         - name: Terms of use
           items:
           - name: Agreement
@@ -14250,6 +14322,14 @@ items:
           href: api/contactmergesuggestions-get.md
         - name: Update
           href: api/contactmergesuggestions-update.md
+      - name: Org control for contact insights (preview)
+        items:
+        - name: Insights settings
+          href: resources/insightssettings.md
+        - name: List
+          href: api/organizationsettings-list-contactinsights.md
+        - name: Update
+          href: api/insightssettings-update.md
       - name: Extended properties
         items:
         - name: Overview
@@ -14614,7 +14694,7 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Microsoft Defender for Office 365 security reports (preview)
+      - name: Microsoft Defender for Office 365 security reports
         items:
         - name: Attack simulation reports
           displayname: Attack simulation and training
@@ -14788,16 +14868,16 @@ items:
         items:
         - name: Alert
           items:
-          - name: Alert 
+          - name: Alert
             href: resources/security-alert.md
           - name: List alerts
             href: api/security-list-alerts_v2.md
           - name: Get alert
-            href: api/security-alert-get.md 
+            href: api/security-alert-get.md
           - name: Update alert
             href: api/security-alert-update.md
         - name: Alert evidence
-          items: 
+          items:
           - name: Alert evidence
             href: resources/security-alertevidence.md
           - name: Analyzed message evidence
@@ -14835,7 +14915,7 @@ items:
           - name: List incidents
             href: api/security-list-incidents.md
           - name: Get incident
-            href: api/security-incident-get.md   
+            href: api/security-incident-get.md
           - name: Update incident
             href: api/security-incident-update.md
       - name: Attack simulation and training (preview)
@@ -14844,8 +14924,10 @@ items:
           items:
           - name: Simulation
             href: resources/simulation.md
-          - name: List simulations
+          - name: List
             href: api/attacksimulationroot-list-simulations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulations.md
           - name: List simulation users
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
@@ -14856,6 +14938,8 @@ items:
             href: resources/simulationautomation.md
           - name: List
             href: api/attacksimulationroot-list-simulationautomations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulationautomations.md
         - name: Simulation automation run
           items:
           - name: Simulation automation run
@@ -15174,7 +15258,7 @@ items:
       - name: Legacy alerts
         items:
         - name: Alert
-          href: resources/alert.md        
+          href: resources/alert.md
         - name: List alerts
           href: api/alert-list.md
         - name: Get alert
@@ -15685,7 +15769,7 @@ items:
             - name: Upgrade app installed in chat
               href: api/chat-teamsappinstallation-upgrade.md
             - name: Remove app from chat
-              href: api/chat-delete-installedapps.md  
+              href: api/chat-delete-installedapps.md
           - name: App in team
             items:
             - name: List apps in team
@@ -15728,7 +15812,7 @@ items:
           - name: List for group
             href: api/group-list-permissiongrants.md
           - name: List for chat (preview)
-            href: api/chat-list-permissiongrants.md          
+            href: api/chat-list-permissiongrants.md
         - name: Tab
           href: resources/teamstab.md
           items:
@@ -15763,7 +15847,7 @@ items:
         - name: Calls
           items:
           - name: Application actions
-            items: 
+            items:
             - name: Unmute application
               href: api/call-unmute.md
             - name: Mute application
@@ -15821,15 +15905,16 @@ items:
             - name: Cancel media processing
               href: api/call-cancelmediaprocessing.md
             - name: Subscribe to tone
-              href: api/call-subscribetotone.md    
-          - name: Large gallery view operation (preview)
+              href: api/call-subscribetotone.md
+          - name: Large gallery view operation
             items:
             - name: Add large gallery view
               href: api/call-addlargegalleryview.md
             - name: Add large gallery view operation
               href: resources/addlargegalleryviewoperation.md
-            - name: Get large gallery view operation status
-              href: api/addlargegalleryviewoperation-get.md       
+              items:
+              - name: Get large gallery view operation status
+                href: api/addlargegalleryviewoperation-get.md
           - name: Participant
             href: resources/participant.md
             items:
@@ -15866,7 +15951,7 @@ items:
             - name: Direct routing log row
               href: resources/callrecords-directroutinglogrow.md
             - name: List direct routing calls
-              href: api/callrecords-callrecord-getdirectroutingcalls.md    
+              href: api/callrecords-callrecord-getdirectroutingcalls.md
           - name: PSTN calls
             items:
             - name: PSTN log row
@@ -15878,7 +15963,7 @@ items:
             - name: Session
               href: resources/callrecords-session.md
             - name: List
-              href: api/callrecords-session-list.md    
+              href: api/callrecords-session-list.md
         - name: Online meetings
           items:
           - name: Attendance report
@@ -15917,7 +16002,7 @@ items:
               - name: Create
                 href: api/externalmeetingregistrant-post.md
               - name: Delete
-                href: api/externalmeetingregistrant-delete.md      
+                href: api/externalmeetingregistrant-delete.md
           - name: Meeting registration (preview)
             href: resources/meetingregistration.md
             items:
@@ -15937,7 +16022,7 @@ items:
               - name: Create
                 href: api/meetingregistration-post-registrants.md
               - name: Delete
-                href: api/meetingregistrant-delete.md      
+                href: api/meetingregistrant-delete.md
           - name: Online meeting
             href: resources/onlinemeeting.md
             items:
@@ -15962,7 +16047,7 @@ items:
               href: api/virtualappointment-update.md
             - name: Delete
               href: api/virtualappointment-delete.md
-        - name: Presence 
+        - name: Presence
           href: resources/presence.md
           items:
           - name: Get presence
@@ -15976,7 +16061,7 @@ items:
           - name: Set user preferred presence
             href: api/presence-setuserpreferredpresence.md
           - name: Clear user preferred presence
-            href: api/presence-clearuserpreferredpresence.md  
+            href: api/presence-clearuserpreferredpresence.md
       - name: Devices (preview)
         items:
         - name: Provisioned device
@@ -16043,7 +16128,7 @@ items:
           - name: Update
             href: api/learningcontent-update.md
           - name: Delete
-            href: api/learningprovider-delete-learningcontents.md         
+            href: api/learningprovider-delete-learningcontents.md
       - name: Messaging
         items:
         - name: Activity feed
@@ -16124,7 +16209,7 @@ items:
           - name: Unshare channel with teamchannels
             href: api/sharedwithchannelteaminfo-delete.md
           - name: List allowed members
-            href: api/sharedwithchannelteaminfo-list-allowedmembers.md    
+            href: api/sharedwithchannelteaminfo-list-allowedmembers.md
         - name: Chat
           href: resources/chat.md
           items:
@@ -16205,8 +16290,14 @@ items:
             href: api/chatmessage-list-hostedcontents.md
           - name: Get hosted content
             href: api/chatmessagehostedcontent-get.md
-        - name: Pinned chat message (preview)
-          href: resources/pinnedChatMessageInfo.md
+          - name: List pinned messages
+            href: api/chat-list-pinnedmessages.md
+          - name: Pin message
+            href: api/chat-post-pinnedmessages.md
+          - name: Unpin message
+            href: api/chat-delete-pinnedmessages.md
+        - name: Pinned chat message
+          href: resources/pinnedchatmessageinfo.md
           items:
           - name: List pinned messages
             href: api/chat-list-pinnedmessages.md
@@ -16260,7 +16351,7 @@ items:
           - name: Complete migration for team
             href: api/team-completemigration.md
           - name: List permission grants
-            href: api/team-list-permissiongrants.md 
+            href: api/team-list-permissiongrants.md
           - name: Team template (preview)
             items:
               - name: Team template
@@ -16285,7 +16376,7 @@ items:
             - name: List
               href: api/teamwork-list-deletedteams.md
             - name: Get all messages
-              href: api/deletedteam-getallmessages.md     
+              href: api/deletedteam-getallmessages.md
         - name: Tag (preview)
           href: resources/teamworktag.md
           items:
@@ -16306,8 +16397,8 @@ items:
           - name: Get member
             href: api/teamworktagmember-get.md
           - name: Delete member
-            href: api/teamworktagmember-delete.md            
-      - name: Shift management 
+            href: api/teamworktagmember-delete.md
+      - name: Shift management
         items:
         - name: Offer shift
           href: resources/offershiftrequest.md
@@ -16369,7 +16460,7 @@ items:
           - name: Replace
             href: api/schedulinggroup-put.md
           - name: Delete
-            href: api/schedulinggroup-delete.md       
+            href: api/schedulinggroup-delete.md
         - name: Shift
           href: resources/shift.md
           items:
@@ -16785,6 +16876,25 @@ items:
           href: api/workbookcomment-post-replies.md
         - name: Get reply
           href: api/workbookcommentreply-get.md
+      - name: Workbook table row
+        href: resources/workbooktablerow.md
+        items:
+        - name: List
+          href: api/tablerow-list.md
+        - name: Create
+          href: api/table-post-rows.md
+        - name: Get
+          href: api/tablerow-get.md
+        - name: Update
+          href: api/tablerow-update.md
+        - name: Delete
+          href: api/tablerow-delete.md
+        - name: Get range
+          href: api/tablerow-range.md
+        - name: Get item at
+          href: api/tablerowcollection-itemat.md
+        - name: Add row
+          href: api/tablerowcollection-add.md
       - name: Worksheet
         href: resources/workbookworksheet.md
         items:
@@ -16878,13 +16988,15 @@ items:
       - name: Named item
         href: resources/workbooknameditem.md
         items:
-        - name: List named item
+        - name: List
           href: api/nameditem-get.md
-        - name: Get named item
+        - name: Get
           href: api/nameditem-get.md
-        - name: Update named item
+        - name: Update
           href: api/nameditem-update.md
-        - name: Add named item
+        - name: Delete
+          href: api/nameditem-delete.md
+        - name: Add
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md

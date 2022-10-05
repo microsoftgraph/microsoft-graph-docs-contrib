@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().CalendarGroupsById("calendarGroup-id").Delete()
+graphClient.Me().CalendarGroupsById("calendarGroup-id").Delete(context.Background(), nil)
 
 
 ```
