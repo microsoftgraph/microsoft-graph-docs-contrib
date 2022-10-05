@@ -2363,15 +2363,15 @@ Possible values for user account types (group membership), per Windows definitio
 |Low|2|
 
 ### templateScenarios values
-|Member             |Value|
-|:------------------|:----|
-|new                | 0   |
-|secureFoundation   | 1   |
-|zeroTrust          | 2   |
-|remoteWork         | 4   |
-|protectAdmins      | 8   |
-|emergingThreats    | 16  |
-|unknownFutureValue | 32  |
+|Member             |
+|:------------------|
+|new                |
+|secureFoundation   |
+|zeroTrust          |
+|remoteWork         |
+|protectAdmins      |
+|emergingThreats    |
+|unknownFutureValue |
 
 ### threatAssessmentContentType values
 

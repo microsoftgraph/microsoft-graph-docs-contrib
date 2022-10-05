@@ -1,5 +1,5 @@
 ---
-title: "List templates"
+title: "List conditionalAccessTemplates"
 description: "Get a list of the conditionalAccessTemplate objects and their properties."
 author: "xuchen1"
 ms.localizationpriority: medium

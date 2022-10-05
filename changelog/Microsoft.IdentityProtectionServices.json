@@ -644,17 +644,9 @@
 				{
 					"Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
 					"ApiChange": "Enumeration",
-					"ChangedApiName": "authenticationStrengthRequirements",
-					"ChangeType": "Addition",
-					"Description": "Added the [authenticationStrengthRequirements](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-					"Target": "authenticationStrengthRequirements"
-				},
-				{
-					"Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
-					"ApiChange": "Enumeration",
 					"ChangedApiName": "templateScenarios",
 					"ChangeType": "Addition",
-					"Description": "Added the [templateScenarios](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+					"Description": "Added the **templateScenarios** enumeration.",
 					"Target": "templateScenarios"
 				},
 				{
@@ -662,23 +654,23 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "conditionalAccessPolicyDetail",
 					"ChangeType": "Addition",
-					"Description": "Added the [conditionalAccessPolicyDetail](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicyDetail?view=graph-rest-beta) resource",
+					"Description": "Added the [conditionalAccessPolicyDetail](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicyDetail?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessPolicyDetail"
 				},
 				{
 					"Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
-					"ApiChange": "Resource",
+					"ApiChange": "Relationship",
 					"ChangedApiName": "templates",
 					"ChangeType": "Addition",
-					"Description": "Added the [templates](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-beta) resource",
-					"Target": "conditionalAccessRoot"
+					"Description": "Added the **templates** relationship to the [conditionalAccessRoot](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-beta) resource."
+,					"Target": "conditionalAccessRoot"
 				},
 				{
 					"Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
 					"ApiChange": "Resource",
 					"ChangedApiName": "conditionalAccessTemplate",
 					"ChangeType": "Addition",
-					"Description": "Added the [conditionalAccessTemplate](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessTemplate?view=graph-rest-beta) resource",
+					"Description": "Added the [conditionalAccessTemplate](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessTemplate?view=graph-rest-beta) resource.",
 					"Target": "conditionalAccessTemplate"
 				}
 			],

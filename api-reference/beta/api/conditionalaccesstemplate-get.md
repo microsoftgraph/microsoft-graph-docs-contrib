@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identity/conditionalAccess/templates/{conditionalAccessTemplateId}
+GET /identity/conditionalAccess/templates/c7503427-338e-4c5e-902d-abe252abfb43
 ```
 
 ## Optional query parameters
@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates/{conditionalAccessTemplateId}
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates/c7503427-338e-4c5e-902d-abe252abfb43
 ```
 
 ### Response
