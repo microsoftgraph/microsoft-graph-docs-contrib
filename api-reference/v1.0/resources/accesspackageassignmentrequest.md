@@ -66,7 +66,7 @@ The following is a JSON representation of the resource.
   },
   "answers": [
     {
-      "@odata.type": "microsoft.graph.accessPackageAnswer"
+      "@odata.type": "microsoft.graph.accessPackageAnswerString"
     }
   ]
 }
