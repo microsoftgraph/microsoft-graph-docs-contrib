@@ -4988,11 +4988,13 @@ items:
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete
               href: api/temporaryaccesspassauthenticationmethod-delete.md
-        - name: Conditional access
+        - name: Conditional Access
           items:
+          - name: Conditional Access
+            href: resources/conditionalaccessroot.md
           - name: Policies
             items:
-            - name: Conditional access policy
+            - name: Conditional Access policy
               href: resources/conditionalaccesspolicy.md
             - name: List
               href: api/conditionalaccessroot-list-policies.md
@@ -5044,6 +5046,18 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
+          - name: Authentication context
+            items:
+            - name: Authentication context class reference
+              href: resources/authenticationcontextclassreference.md
+            - name: List
+              href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
+            - name: Create or update
+              href: api/authenticationcontextclassreference-update.md    
+            - name: Get
+              href: api/authenticationcontextclassreference-get.md
+            - name: Delete
+              href: api/authenticationcontextclassreference-delete.md  
         - name: Cross-tenant access
           items:
           - name: Overview

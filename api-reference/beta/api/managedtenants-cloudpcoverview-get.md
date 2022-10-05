@@ -121,6 +121,8 @@ Content-Type: application/json
   "numberOfCloudPcConnectionStatusPassed": 17,
   "numberOfCloudPcConnectionStatusFailed": 6,
   "numberOfCloudPcConnectionStatusUnkownFutureValue": 0,
+  "totalBusinessLicenses": 43,
+  "totalEnterpriseLicenses": 57,
   "lastRefreshedDateTime": "2021-07-11T17:18:46.4830816Z"
 }
 ```
