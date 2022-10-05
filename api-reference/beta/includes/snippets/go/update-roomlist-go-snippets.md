@@ -37,7 +37,7 @@ altitudeAccuracy := null
 geoCoordinates.SetAltitudeAccuracy(&altitudeAccuracy) 
 requestBody.SetGeoCoordinates(geoCoordinates)
 
-graphClient.PlacesById("place-id").Patch(requestBody)
+graphClient.PlacesById("place-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

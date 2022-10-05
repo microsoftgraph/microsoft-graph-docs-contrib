@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Security().TriggerTypes().RetentionEventTypesById("retentionEventType-id").Delete()
+graphClient.Security().TriggerTypes().RetentionEventTypesById("retentionEventType-id").Delete(context.Background(), nil)
 
 
 ```

@@ -28,7 +28,7 @@ $requestBody->setAnnotations($annotationsArray);
 
 
 
-$graphServiceClient->organizationById('organization-id')->settings()->profileCardPropertiesById('profileCardProperty-id')->patch($requestBody);
+$requestResult = $graphServiceClient->organizationById('organization-id')->settings()->profileCardPropertiesById('profileCardProperty-id')->patch($requestBody);
 
 
 ```

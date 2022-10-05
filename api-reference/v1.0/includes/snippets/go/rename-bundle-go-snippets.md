@@ -11,7 +11,7 @@ requestBody := graphmodels.NewDriveItem()
 name := "Shared legal agreements"
 requestBody.SetName(&name) 
 
-graphClient.Drive().ItemsById("driveItem-id").Patch(requestBody)
+result, err := graphClient.Drive().ItemsById("driveItem-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

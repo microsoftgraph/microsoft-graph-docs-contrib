@@ -220,7 +220,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").Appointments().Post(requestBody)
+result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").Appointments().Post(context.Background(), requestBody, nil)
 
 
 ```

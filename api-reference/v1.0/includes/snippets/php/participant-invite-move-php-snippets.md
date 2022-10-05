@@ -11,29 +11,30 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new InvitePostRequestBody();
 $participantsInvitationParticipantInfo1 = new InvitationParticipantInfo();
+$participantsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.invitationParticipantInfo');
+
+$participantsInvitationParticipantInfo1->setReplacesCallId('a7ebfb2d-871e-419c-87af-27290b22e8db');
+
+$participantsInvitationParticipantInfo1->setParticipantId('7d501bf1-5ee4-4605-ba92-0ae4513c611c');
+
+$participantsInvitationParticipantInfo1Identity = new IdentitySet();
+$participantsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
+
+$participantsInvitationParticipantInfo1IdentityUser = new Identity();
+$participantsInvitationParticipantInfo1IdentityUser->set@odatatype('#microsoft.graph.identity');
+
+$participantsInvitationParticipantInfo1IdentityUser->setId('682b6c37-0729-4fab-ace6-d730d5d9137e');
+
 $additionalData = [
-'@odata.type' => '#microsoft.graph.invitationParticipantInfo', 
-'replacesCallId' => 'a7ebfb2d-871e-419c-87af-27290b22e8db', 
-'participantId' => '7d501bf1-5ee4-4605-ba92-0ae4513c611c', 
-'identity' => $participantsInvitationParticipantInfo1 = new Identity();
-$		participantsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.identitySet');
-
-$user = new User();
-$		user->set@odatatype('#microsoft.graph.identity');
-
-$		user->setId('682b6c37-0729-4fab-ace6-d730d5d9137e');
-
-$		user->setIdentityProvider('AAD');
-
-
-$participantsInvitationParticipantInfo1->setUser($user);
-
-$participantsInvitationParticipantInfo1->setIdentity($identity);
-
+'identityProvider' => 'AAD', 
 ];
-$participantsInvitationParticipantInfo1->setAdditionalData($additionalData);
+$participantsInvitationParticipantInfo1IdentityUser->setAdditionalData($additionalData);
 
 
+
+$participantsInvitationParticipantInfo1Identity->setUser($participantsInvitationParticipantInfo1IdentityUser);
+
+$participantsInvitationParticipantInfo1->setIdentity($participantsInvitationParticipantInfo1Identity);
 
 $participantsArray []= $participantsInvitationParticipantInfo1;
 $requestBody->setParticipants($participantsArray);

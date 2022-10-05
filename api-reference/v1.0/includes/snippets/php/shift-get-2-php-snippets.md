@@ -17,7 +17,10 @@ $availabilityShiftAvailability1Recurrence = new PatternedRecurrence();
 $availabilityShiftAvailability1RecurrencePattern = new RecurrencePattern();
 $availabilityShiftAvailability1RecurrencePattern->setType(new RecurrencePatternType('weekly'));
 
-$availabilityShiftAvailability1RecurrencePattern->setDaysOfWeek(['Monday', 'Wednesday', 'Friday', ]);
+$availabilityShiftAvailability1RecurrencePattern->setDaysOfWeek([$availabilityShiftAvailability1RecurrencePattern->setDayOfWeek(new DayOfWeek('monday'));
+$availabilityShiftAvailability1RecurrencePattern->setDayOfWeek(new DayOfWeek('wednesday'));
+$availabilityShiftAvailability1RecurrencePattern->setDayOfWeek(new DayOfWeek('friday'));
+]);
 
 $availabilityShiftAvailability1RecurrencePattern->setInterval(1);
 
@@ -47,7 +50,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->usersById('user-id')->settings()->shiftPreferences()->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->settings()->shiftPreferences()->patch($requestBody);
 
 
 ```

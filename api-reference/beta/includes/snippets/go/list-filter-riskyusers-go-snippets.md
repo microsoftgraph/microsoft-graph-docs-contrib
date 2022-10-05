@@ -17,7 +17,7 @@ configuration := &graphconfig.RiskyUsersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityProtection().RiskyUsers().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.IdentityProtection().RiskyUsers().Get(context.Background(), configuration)
 
 
 ```

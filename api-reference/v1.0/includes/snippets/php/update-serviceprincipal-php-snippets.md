@@ -14,7 +14,7 @@ $requestBody->setAppRoleAssignmentRequired(true);
 
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->patch($requestBody);
+$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->patch($requestBody);
 
 
 ```

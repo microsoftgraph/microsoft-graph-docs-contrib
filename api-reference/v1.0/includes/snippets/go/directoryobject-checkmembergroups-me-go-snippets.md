@@ -15,7 +15,7 @@ groupIds := []string {
 }
 requestBody.SetGroupIds(groupIds)
 
-result, err := graphClient.Me().CheckMemberGroups().Post(requestBody)
+result, err := graphClient.Me().CheckMemberGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

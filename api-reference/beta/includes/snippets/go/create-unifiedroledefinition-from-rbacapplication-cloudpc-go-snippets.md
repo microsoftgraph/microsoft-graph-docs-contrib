@@ -15,13 +15,11 @@ requestBody.SetDisplayName(&displayName)
 
 
 unifiedRolePermission := graphmodels.NewUnifiedRolePermission()
-additionalData := map[string]interface{}{
-	allowedResourceActions := []string {
-		"Microsoft.CloudPC/CloudPCs/Read",
+allowedResourceActions := []string {
+	"Microsoft.CloudPC/CloudPCs/Read",
 
-	}
 }
-unifiedRolePermission.SetAdditionalData(additionalData)
+unifiedRolePermission.SetAllowedResourceActions(allowedResourceActions)
 
 rolePermissions := []graphmodels.UnifiedRolePermissionable {
 	unifiedRolePermission,
@@ -33,7 +31,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.RoleManagement().CloudPC().RoleDefinitions().Post(requestBody)
+result, err := graphClient.RoleManagement().CloudPC().RoleDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

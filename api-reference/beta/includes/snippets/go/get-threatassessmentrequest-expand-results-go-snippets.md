@@ -14,7 +14,7 @@ configuration := &graphconfig.ThreatAssessmentRequestRequestBuilderGetRequestCon
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.InformationProtection().ThreatAssessmentRequestsById("threatAssessmentRequest-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.InformationProtection().ThreatAssessmentRequestsById("threatAssessmentRequest-id").Get(context.Background(), configuration)
 
 
 ```

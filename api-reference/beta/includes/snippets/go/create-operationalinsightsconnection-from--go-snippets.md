@@ -15,7 +15,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Admin().Windows().Updates().ResourceConnections().Post(requestBody)
+result, err := graphClient.Admin().Windows().Updates().ResourceConnections().Post(context.Background(), requestBody, nil)
 
 
 ```

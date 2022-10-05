@@ -23,7 +23,7 @@ configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().DeletedItems().Group().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Directory().DeletedItems().Group().Get(context.Background(), configuration)
 
 
 ```
