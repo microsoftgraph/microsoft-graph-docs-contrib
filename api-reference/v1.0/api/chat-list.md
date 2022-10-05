@@ -182,6 +182,9 @@ Here is an example of the response.
   "@odata.type": "microsoft.graph.chat",
   "isCollection": true
 } -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats(members())",
     "@odata.count": 3,
