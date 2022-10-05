@@ -354,7 +354,7 @@ None.
 * _Bookings.ReadWrite.All_: Create a new service for the specified Bookings business (`POST /bookingBusinesses/{id}/services`).
 * _Bookings.Manage.All_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
 
-## BrowserSiteLists resource permissions
+## Browser management permissions
 
 #### Delegated permissions
 

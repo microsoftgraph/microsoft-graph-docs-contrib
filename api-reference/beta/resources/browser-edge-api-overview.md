@@ -1,23 +1,23 @@
 ---
-title: "Use the Microsoft Graph API to manage Cloud Site Lists"
-description: "Use the Microsoft Cloud IE Mode Site Lists API in Microsoft Graph to manage site lists for IE mode in the cloud. Sites and shared cookies are organized into a site list that Microsoft Edge can use to download."
+title: "Use the Edge API in Microsoft Graph"
+description: "Microsoft Graph provides REST API for Edge to let apps manage adminstrator tasks for organizations."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.prod: "browser-management"
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft Graph API to manage Cloud Site Lists
+# Use the Edge API in Microsoft Graph
 
-Microsoft Graph gives your app authorized access to your organization's Cloud Site Lists for Internet Explorer (IE) mode, allowing you to manage the same data available in the Microsoft 365 admin center. After configuring the appropriate permissions, your app can create site lists, add sites and shared cookies, and publish your site lists for Microsoft Edge to download.
+Microsoft Graph provides REST API for Edge to let apps manage adminstrator tasks for organizations. With proper authorization, an app can get access to an organization's browser site lists for Internet Explorer (IE) mode that reside in the cloud, allowing administrators to manage the same data available in the [Microsoft 365 admin center](https://admin.microsoft.com/). After configuring the appropriate permissions, your app can create browser site lists, add browser sites and shared cookies, and publish the site lists for Microsoft Edge to download.
 
 ## Authorization
 
-To call the Cloud Site Lists APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/graph/auth/). Your app will also need the appropriate permissions. For more information, see [browserSiteList permissions](/graph/permissions-reference#browsersitelists-resource-permissions).
+To call the Edge API in Microsoft Graph, your app needs to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/graph/auth/). Your app also needs the appropriate permissions. For more information, see [browser management permissions](/graph/permissions-reference#browser-management-permissions).
 
 ## Common use cases
 
-The Microsoft Graph API provides methods and actions that support common use cases of Cloud Site Lists for IE mode.
+The Edge API provides methods and actions that support some administrator's tasks in the Microsoft 365 admin center. The following describes common use cases of the API that manages site lists for IE mode.
 
 |Use case|Request| See also |
 |:--------|:--|:--|
