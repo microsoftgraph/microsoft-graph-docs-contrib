@@ -509,7 +509,7 @@ items:
         items:
         - name: Enterprise
           items:
-          - name: Cloud IE Mode Site lists
+          - name: Cloud Site Lists for IE mode
             href: cloud-ie-mode-site-lists-concept-overview.md
       - name: Teamwork and communications
         items:

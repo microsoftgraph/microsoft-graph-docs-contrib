@@ -63,7 +63,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "browserSiteList",
             "ChangeType": "Addition",
-            "Description": "Added the [browserSiteList](https://docs.microsoft.com/en-us/graph/api/resources/browserSiteList?view=graph-rest-beta) resource type.",
+            "Description": "Added the [browserSiteList](https://learn.microsoft.com/graph/api/resources/browserSiteList?view=graph-rest-beta) resource type.",
             "Target": "browserSiteList"
           },
           {
@@ -71,7 +71,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "browserSite",
             "ChangeType": "Addition",
-            "Description": "Added the [browserSite](https://docs.microsoft.com/en-us/graph/api/resources/browserSite?view=graph-rest-beta) resource and supported methods.",
+            "Description": "Added the [browserSite](https://learn.microsoft.com/graph/api/resources/browserSite?view=graph-rest-beta) resource and supported methods.",
             "Target": "browserSite"
           },
           {
@@ -79,7 +79,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "browserSharedCookie",
             "ChangeType": "Addition",
-            "Description": "Added the [browserSharedCookie](https://docs.microsoft.com/en-us/graph/api/resources/browserSharedCookie?view=graph-rest-beta) resource and supported methods.",
+            "Description": "Added the [browserSharedCookie](https://learn.microsoft.com/graph/api/resources/browserSharedCookie?view=graph-rest-beta) resource and supported methods.",
             "Target": "browserSharedCookie"
           },
           {
@@ -87,7 +87,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "browserSharedCookieHistory",
             "ChangeType": "Addition",
-            "Description": "Added the [browserSharedCookieHistory](https://docs.microsoft.com/en-us/graph/api/resources/browsersharedcookiehistory?view=graph-rest-beta) resource type.",
+            "Description": "Added the [browserSharedCookieHistory](https://learn.microsoft.com/graph/api/resources/browsersharedcookiehistory?view=graph-rest-beta) resource type.",
             "Target": "browserSharedCookieHistory"
           },
           {
@@ -95,7 +95,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "browserSiteHistory",
             "ChangeType": "Addition",
-            "Description": "Added the [browserSiteHistory](https://docs.microsoft.com/en-us/graph/api/resources/browsersitehistory?view=graph-rest-beta) resource type.",
+            "Description": "Added the [browserSiteHistory](https://learn.microsoft.com/graph/api/resources/browsersitehistory?view=graph-rest-beta) resource type.",
             "Target": "browserSiteHistory"
           },
           {
@@ -103,7 +103,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "edge",
             "ChangeType": "Addition",
-            "Description": "Added the [edge](https://docs.microsoft.com/en-us/graph/api/resources/edge?view=graph-rest-beta) resource type.",
+            "Description": "Added the [edge](https://learn.microsoft.com/graph/api/resources/edge?view=graph-rest-beta) resource type.",
             "Target": "edge"
           },
           {
@@ -111,7 +111,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "internetExplorerMode",
             "ChangeType": "Addition",
-            "Description": "Added the [edge](https://docs.microsoft.com/en-us/graph/api/resources/internetExplorerMode?view=graph-rest-beta) resource and supported methods.",
+            "Description": "Added the [edge](https://learn.microsoft.com/graph/api/resources/internetExplorerMode?view=graph-rest-beta) resource and supported methods.",
             "Target": "internetExplorerMode"
           },
           {
@@ -119,7 +119,7 @@
             "ApiChange": "Relationship",
             "ChangedApiName": "edge",
             "ChangeType": "Addition",
-            "Description": "Added the **edge** relationship to the [admin](https://docs.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
+            "Description": "Added the **edge** relationship to the [admin](https://learn.microsoft.com/graph/api/resources/admin?view=graph-rest-beta) resource.",
             "Target": "admin"
           }
         ],
