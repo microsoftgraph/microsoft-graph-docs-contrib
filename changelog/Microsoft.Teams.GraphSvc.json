@@ -703,7 +703,7 @@
     {
       "ChangeList": [
         {
-          "Id": "b4668118-79fe-47de-aa57-12b276ce4335",
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
           "ApiChange": "Resource",
           "ChangedApiName": "chatViewpoint",
           "ChangeType": "Addition",
@@ -711,15 +711,7 @@
           "Target": "chatViewpoint"
         },
         {
-          "Id": "b4668118-79fe-47de-aa57-12b276ce4335",
-          "ApiChange": "Property",
-          "ChangedApiName": "tenantId",
-          "ChangeType": "Addition",
-          "Description": "Added the `tenantId` property to the [teamworkUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkUserIdentity?view=graph-rest-1.0) resource.",
-          "Target": "teamworkUserIdentity"
-        },
-        {
-          "Id": "b4668118-79fe-47de-aa57-12b276ce4335",
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
           "ApiChange": "Property",
           "ChangedApiName": "viewpoint",
           "ChangeType": "Addition",
@@ -727,7 +719,7 @@
           "Target": "chat"
         },
         {
-          "Id": "b4668118-79fe-47de-aa57-12b276ce4335",
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
           "ApiChange": "Resource",
           "ChangedApiName": "lastMessagePreview",
           "ChangeType": "Addition",
@@ -735,7 +727,7 @@
           "Target": "chat"
         },
         {
-          "Id": "b4668118-79fe-47de-aa57-12b276ce4335",
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessageInfo",
           "ChangeType": "Addition",
@@ -743,7 +735,7 @@
           "Target": "chatMessageInfo"
         },
         {
-          "Id": "b4668118-79fe-47de-aa57-12b276ce4335",
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
           "ApiChange": "Method",
           "ChangedApiName": "hideForUser",
           "ChangeType": "Addition",
@@ -751,7 +743,7 @@
           "Target": "chat"
         },
         {
-          "Id": "b4668118-79fe-47de-aa57-12b276ce4335",
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
           "ApiChange": "Method",
           "ChangedApiName": "markChatReadForUser",
           "ChangeType": "Addition",
@@ -759,7 +751,7 @@
           "Target": "chat"
         },
         {
-          "Id": "b4668118-79fe-47de-aa57-12b276ce4335",
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
           "ApiChange": "Method",
           "ChangedApiName": "markChatUnreadForUser",
           "ChangeType": "Addition",
@@ -767,7 +759,7 @@
           "Target": "chat"
         },
         {
-          "Id": "b4668118-79fe-47de-aa57-12b276ce4335",
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
           "ApiChange": "Method",
           "ChangedApiName": "unhideForUser",
           "ChangeType": "Addition",
@@ -775,12 +767,12 @@
           "Target": "chat"
         }
       ],
-      "Id": "b4668118-79fe-47de-aa57-12b276ce4335",
+      "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-10-03T15:34:50.3388741Z",
+      "CreatedDateTime": "2022-10-05T09:44:21.690374Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": "Microsoft.Teams.Shifts"
+      "SubArea": ""
     }
   ]
 }
