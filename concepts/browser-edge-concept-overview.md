@@ -24,7 +24,7 @@ Cloud site lists for IE mode allows admins to manage and store a list of website
 
 ### Automate the management of site lists
 
-The Microsoft Graph APIs for managing cloud site lists retain the same core functionality that is currently offered in the Microsoft 365 admin center. Administrators can automate common tasks such as [creating site lists](/graph/api/internetexplorermode-post-sitelists), [adding sites](/graph/api/browsersitelist-post-sites), [adding shared cookies](/graph/api/browsersitelist-post-sharedcookies), and [publishing site lists](/browsersitelist-publish).
+The Microsoft Graph APIs for managing cloud site lists retain the same core functionality that is currently offered in the Microsoft 365 admin center. Administrators can automate common tasks such as [creating site lists](/graph/api/internetexplorermode-post-sitelists), [adding sites](/graph/api/browsersitelist-post-sites), [adding shared cookies](/graph/api/browsersitelist-post-sharedcookies), and [publishing site lists](/graph/api/browsersitelist-publish).
 
 ## API reference
 

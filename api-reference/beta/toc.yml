@@ -1930,7 +1930,7 @@ items:
         items:
         - name: Overview
           href: resources/browser-edge-api-overview.md
-        - name: Site list
+        - name: Browser site list
           items:
           - name: Browser site list
             href: resources/browsersitelist.md
@@ -1946,7 +1946,7 @@ items:
             href: api/internetexplorermode-delete-sitelists.md
           - name: Publish
             href: api/browsersitelist-publish.md
-        - name: Site
+        - name: Browser site
           items:
           - name: Browser site
             href: resources/browsersite.md
