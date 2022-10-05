@@ -1,6 +1,6 @@
 ---
 title: "Use the Edge API in Microsoft Graph"
-description: "Microsoft Graph provides REST API for Edge to let apps manage adminstrator tasks for organizations."
+description: "Microsoft Graph provides REST API for Edge to let apps manage administrator tasks for organizations."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "browser-management"
@@ -9,11 +9,11 @@ doc_type: conceptualPageType
 
 # Use the Edge API in Microsoft Graph
 
-Microsoft Graph provides REST API for Edge to let apps manage adminstrator tasks for organizations. With proper authorization, an app can get access to an organization's browser site lists for Internet Explorer (IE) mode that reside in the cloud, allowing administrators to manage the same data available in the [Microsoft 365 admin center](https://admin.microsoft.com/). After configuring the appropriate permissions, your app can create browser site lists, add browser sites and shared cookies, and publish the site lists for Microsoft Edge to download.
+Microsoft Graph provides REST API for Edge to let apps manage administrator tasks for organizations. With proper authorization, an app can get access to an organization's browser site lists for Internet Explorer (IE) mode that reside in the cloud, allowing administrators to manage the same data available in the [Microsoft 365 admin center](https://admin.microsoft.com/). After configuring the appropriate permissions, your app can create browser site lists, add browser sites and shared cookies, and publish the site lists for Microsoft Edge to download.
 
 ## Authorization
 
-To call the Edge API in Microsoft Graph, your app needs to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/graph/auth/). Your app also needs the appropriate permissions. For more information, see [browser management permissions](/graph/permissions-reference#browser-management-permissions).
+To call the Edge API in Microsoft Graph, your app needs to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/graph/auth/). Your app also needs the appropriate permissions. For more information, see [Browser management permissions](/graph/permissions-reference#browser-management-permissions).
 
 ## Common use cases
 
