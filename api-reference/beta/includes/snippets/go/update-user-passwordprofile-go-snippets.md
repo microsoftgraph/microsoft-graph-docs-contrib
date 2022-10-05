@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUser()
 passwordProfile := graphmodels.NewPasswordProfile()
-forceChangePasswordNextSignIn := false
+forceChangePasswordNextSignIn := true
 passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn) 
 password := "xWwvJ]6NMw+bWH-d"
 passwordProfile.SetPassword(&password) 
