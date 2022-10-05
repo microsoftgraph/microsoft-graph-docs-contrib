@@ -28,4 +28,3 @@ Supported values for the notification type to use.
 
 
 
-

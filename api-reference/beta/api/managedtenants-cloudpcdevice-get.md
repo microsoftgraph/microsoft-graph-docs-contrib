@@ -106,7 +106,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.managedTenants.cloudPcDevice",
     "id": "1307ab1b-63ee-4942-bdef-bcd4f415c635",
     "lastUpdated": "2021-07-10T23:05:03.2564744Z",
-    "policyId": "",
     "displayName": "device01",
     "managedDeviceId": "",
     "managedDeviceName": "",
@@ -117,6 +116,7 @@ Content-Type: application/json
     "tenantDisplayName": "Lucerne Publishing",
     "lastRefreshedDateTime": "2021-07-10T23:05:03.2564744Z",
     "provisioningPolicyId": "",
+    "deviceSpecification": "2vCPU/8GB/128GB",
     "cloudPcStatus": "NotProvisioned"
 }
 ```
