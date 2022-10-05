@@ -410,7 +410,7 @@ The following example shows a request to list chats along with the preview of th
   "name": "list_chats_expand_lastMessagePreview"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats?$expand=lastMessagePreview
+GET https://graph.microsoft.com/v1.0/chats?$expand=lastMessagePreview
 ```
 
 ---

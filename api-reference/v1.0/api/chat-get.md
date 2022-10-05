@@ -301,6 +301,82 @@ Content-type: application/json
 }
 ```
 
+### Example 5: Get the chat along with the preview of the last message sent in the chat
+#### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_meeting_chat",
+  "sampleKeys": ["19:meeting_ZDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4@thread.v2"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/chats/19:ebe3857aa388434bab0cad9d2e09f4de@thread.v2?$expand=lastMessagePreview
+```
+---
+
+
+#### Response
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats(lastMessagePreview())/$entity",
+    "id": "19:ebe3857aa388434bab0cad9d2e09f4de@thread.v2",
+    "topic": "Demo Group Chat",
+    "createdDateTime": "2021-04-08T16:00:53.563Z",
+    "lastUpdatedDateTime": "2022-09-08T23:11:54.246Z",
+    "chatType": "group",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3Aebe3857aa388434bab0cad9d2e09f4de%40thread.v2/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34",
+    "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
+    "onlineMeetingInfo": null,
+    "viewpoint": {
+        "isHidden": true,
+        "lastMessageReadDateTime": "2022-09-08T23:11:54.353Z"
+    },
+    "lastMessagePreview@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Aebe3857aa388434bab0cad9d2e09f4de%40thread.v2')/lastMessagePreview/$entity",
+    "lastMessagePreview": {
+        "id": "1662678714353",
+        "createdDateTime": "2022-09-08T23:11:54.353Z",
+        "isDeleted": false,
+        "messageType": "systemEventMessage",
+        "from": null,
+        "body": {
+            "contentType": "html",
+            "content": "<systemEventMessage/>"
+        },
+        "eventDetail": {
+            "@odata.type": "#microsoft.graph.membersAddedEventMessageDetail",
+            "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
+            "members": [
+                {
+                    "id": "ee9f3754-62e1-4034-ad10-97940ef7f709",
+                    "displayName": null,
+                    "userIdentityType": "aadUser"
+                }
+            ],
+            "initiator": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "bfb5bb25-3a8d-487d-9828-7875ced51a30",
+                    "displayName": null,
+                    "userIdentityType": "aadUser"
+                }
+            }
+        }
+    }
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -314,5 +390,4 @@ Content-type: application/json
   ]
 }
 -->
-
 
