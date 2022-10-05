@@ -1,7 +1,7 @@
 ---
 title: "conditionalAccessTemplate resource type"
 description: "Represents a Microsoft recommended template of best practice configurations for Azure Active Directory conditional access policies."
-author: "lhuangnorth"
+author: "lisaychuang"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
