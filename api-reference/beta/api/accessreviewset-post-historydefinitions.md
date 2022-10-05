@@ -162,20 +162,8 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
     "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
     "displayName": "Last quarter's group reviews April 2021",
-    "scheduleSettings": {
-        "reportRange": "P1M",
-        "recurrence": {
-            "pattern": {
-                "type": "monthly",
-                "interval": 1
-            },
-            "range": {
-                "type": "noEnd",
-                "startDate": "2018-08-03T21:02:30.667Z",
-                "count": 0
-            }
-        }
-    },
+    "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+    "reviewHistoryPeriodEndDateTime": "2021-04-30T23:59:59Z",
     "decisions": [
         "approve",
         "deny",
