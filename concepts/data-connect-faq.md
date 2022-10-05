@@ -122,7 +122,7 @@ When creating the Azure Synapse or Data Factory pipeline, you have to provide a 
 
 If you create an Azure managed application for others to use in their tenants, you still provide a service principal for the app to use. This service principal exists in your (the publisher's) tenant. However, if the app needs other service principals, your customer (the installer) creates them in their own tenant. For example, your Azure Synapse or Azure Data Factory pipeline likely needs access to a storage resource in Azure. The customer creates the service principal with permissions to the storage account for the pipeline to use.
 
-For more information about building your application with Azure Synapse or Azure Data Factory, see the [Data Connect quick start](https://learn.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365).
+For more information about building your application with Azure Synapse or Azure Data Factory, see the [Data Connect quick start](/graph/data-connect-quickstart?tabs=Microsoft365).
 
 
 ## How can I check for pending Privileged Access Management (PAM) requests?
