@@ -97,7 +97,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [Update educationOutcome](https://docs.microsoft.com/en-us/graph/api/educationoutcome-update?view=graph-rest-beta).",
+          "Description": "Added support for application permissions to the [Update educationOutcome](https://docs.microsoft.com/en-us/graph/api/educationoutcome-update?view=graph-rest-1.0).",
           "Target": "educationOutcome"
         },
         {
@@ -105,7 +105,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [Update educationOutcome](https://docs.microsoft.com/en-us/graph/api/educationoutcome-update?view=graph-rest-beta).",
+          "Description": "Added support for application permissions to the [Update educationOutcome](https://docs.microsoft.com/en-us/graph/api/educationoutcome-update?view=graph-rest-1.0).",
           "Target": "educationOutcome"
         },
         {
@@ -113,7 +113,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Notes.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationSubmission: reassign](https://docs.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-beta).",
+          "Description": "Added support for application permissions to the [educationSubmission: reassign](https://docs.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-1.0).",
           "Target": "educationSubmission"
         },
         {
@@ -121,7 +121,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationSubmission: reassign](https://docs.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-beta).",
+          "Description": "Added support for application permissions to the [educationSubmission: reassign](https://docs.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-1.0).",
           "Target": "educationSubmission"
         },
         {
@@ -129,7 +129,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationSubmission: return](https://docs.microsoft.com/en-us/graph/api/educationsubmission-return?view=graph-rest-beta).",
+          "Description": "Added support for application permissions to the [educationSubmission: return](https://docs.microsoft.com/en-us/graph/api/educationsubmission-return?view=graph-rest-1.0).",
           "Target": "educationSubmission"
         },
         {
@@ -137,7 +137,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationSubmission: return](https://docs.microsoft.com/en-us/graph/api/educationsubmission-return?view=graph-rest-beta).",
+          "Description": "Added support for application permissions to the [educationSubmission: return](https://docs.microsoft.com/en-us/graph/api/educationsubmission-return?view=graph-rest-1.0).",
           "Target": "educationSubmission"
         },
         {
@@ -145,7 +145,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Notes.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationSubmission: submit](https://docs.microsoft.com/en-us/graph/api/educationsubmission-submit?view=graph-rest-beta).",
+          "Description": "Added support for application permissions to the [educationSubmission: submit](https://docs.microsoft.com/en-us/graph/api/educationsubmission-submit?view=graph-rest-1.0).",
           "Target": "educationSubmission"
         },
         {
@@ -153,7 +153,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationSubmission: submit](https://docs.microsoft.com/en-us/graph/api/educationsubmission-submit?view=graph-rest-beta).",
+          "Description": "Added support for application permissions to the [educationSubmission: submit](https://docs.microsoft.com/en-us/graph/api/educationsubmission-submit?view=graph-rest-1.0).",
           "Target": "educationSubmission"
         },
         {
@@ -161,7 +161,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Notes.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationSubmission: unsubmit](https://docs.microsoft.com/en-us/graph/api/educationsubmission-unsubmit?view=graph-rest-beta).",
+          "Description": "Added support for application permissions to the [educationSubmission: unsubmit](https://docs.microsoft.com/en-us/graph/api/educationsubmission-unsubmit?view=graph-rest-1.0).",
           "Target": "educationSubmission"
         },
         {
@@ -169,7 +169,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationSubmission: unsubmit](https://docs.microsoft.com/en-us/graph/api/educationsubmission-unsubmit?view=graph-rest-beta).",
+          "Description": "Added support for application permissions to the [educationSubmission: unsubmit](https://docs.microsoft.com/en-us/graph/api/educationsubmission-unsubmit?view=graph-rest-1.0).",
           "Target": "educationSubmission"
         }
       ],
