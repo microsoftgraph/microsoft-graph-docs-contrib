@@ -20,11 +20,11 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 
 | Operator type         | Operator                                                                                                                                         |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Equality operators    | <ul><li> Equals (`eq`) </li><li> Not equals (`ne`)</li><li> Logical negation (`not`)</li><li> In (`in`)</li></ul>                                |
+| Equality operators    | <ul><li> Equals (`eq`) </li><li> Not equals (`ne`)</li><li> Logical negation (`not`)</li><li> In (`in`)</li><li> Has (`has`)</li></ul>                                |
 | Relational operators  | <ul><li> Less than (`lt`) </li><li> Greater than (`gt`)</li><li> Less than or equal to (`le`)</li><li> Greater than or equal to (`ge`)</li></ul> |
 | Lambda operators      | <ul><li> Any (`any`) </li><li> All (`all`)</li></ul>                                                                                             |
 | Conditional operators | <ul><li> And (`and`) </li><li> Or (`or`)</li>                                                                                                    |
-| Functions             | <ul><li> Starts with (`startsWith`) </li><li> Ends with (`endsWith`)</li></ul>                                                                   |
+| Functions             | <ul><li> Starts with (`startsWith`) </li><li> Ends with (`endsWith`)</li><li> Contains (`contains`)</li></ul>                                                                   |
 
 > [!NOTE]
 > Support for these operators varies by entity and some properties support `$filter` only with [advanced queries](/graph/aad-advanced-queries). See the specific resource documentation for details.
@@ -131,7 +131,8 @@ These examples show how to use `$filter` to match against supported properties a
 | `not` and `startsWith` | `~/users?$filter=NOT startsWith(mail, 'A')&$count=true`              |
 | `not` and `eq`         | `~/users?$filter=not(companyName eq 'Contoso E.A.')&$count=true`*    |
 | `not` and `in`         | `~/users?$filter=not (userType in ('Member'))&$count=true`*          |
-<!-- contains-->
+| `contains`         | `~/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')`*          |
+| `has`         | `~/templates?$filter=scenarios has 'secureFoundation'`*          |
 
 ### For a collection of primitive types
 
