@@ -86,7 +86,7 @@ If successful, this method returns a `202 Accepted` response code and an updated
 The following example shows a request that updates the metadata of a learning content based on its ID (primary key).
 
 #### Request
-The example shows the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
