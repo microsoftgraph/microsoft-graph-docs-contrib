@@ -22,7 +22,7 @@ The Edge API provides methods and actions that support some administrator's task
 | Use cases | REST resources | See also |
 |:----------|:---------------|:---------|
 | Create, read, update, delete, and publish browser site lists. | [browserSiteList](../resources/browserSiteList.md) | [Methods of browserSiteList](../resources/browserSiteList.md#methods) |
-| Modify the browser sites on a browser site list | [browserSite](../resources/browsersite.md) | [Methods of browserSite](../resources/browserite.md#methods) |
+| Modify the browser sites on a browser site list | [browserSite](../resources/browsersite.md) | [Methods of browserSite](../resources/browsersite.md#methods) |
 | Modify the browser shared cookies on a browser site list | [browserSharedCookie](../resources/browsersharedcookie.md) | [Methods of browserSharedCookie](../resources/browsersharedcookie.md#methods) |
 
 ## What's new
