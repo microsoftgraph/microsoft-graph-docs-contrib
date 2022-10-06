@@ -21,9 +21,9 @@ Use the following steps to publish a connection for your custom connector:
 
       ![Screenshot of the port mapping in the CustomConnectorPortMap.json file.](images/connectors-sdk/port.png)
 
-  >[!Note]
-  > - You can add multiple connector IDs and their corresponding port information to this file using the \<Connector Id>:\<Port> format. Each unique connector should be running on a different port.
-  > - If you have upgraded from a GCA version lower than 1.8.0.0, please follow the [troubleshooting steps](/graph/custom-connector-sdk-troubleshooting#connection-failure-after-gca-upgrade) to fix connection failures.
+      >[!Note]
+      > - You can add multiple connector IDs and their corresponding port information to this file using the \<Connector Id>:\<Port> format. Each unique connector should be running on a different port.
+      > - If you have upgraded from a GCA version lower than 1.8.0.0, please follow the [troubleshooting steps](/graph/custom-connector-sdk-troubleshooting#connection-failure-after-gca-upgrade) to fix connection failures.
 
 2. Add a Microsoft Graph connector in the Microsoft 365 admin center from the [Data Sources tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the Search & Intelligence section. For details, see [Add a Microsoft Graph connector in the Microsoft 365 admin center](/microsoftsearch/configure-connector#step-1-add-a-microsoft-graph-connector-in-the-microsoft-365-admin-center).
 
