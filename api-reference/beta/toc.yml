@@ -12110,17 +12110,17 @@ items:
             items:
             - name: List
               href: api/authenticationstrengthroot-list-policies.md
+            - name: Create
+              href: api/authenticationstrengthroot-post-policies.md
             - name: Get
               href: api/authenticationstrengthpolicy-get.md
             - name: Update
               href: api/authenticationstrengthpolicy-update.md
             - name: Delete
               href: api/authenticationstrengthroot-delete-policies.md
-            - name: Add
-              href: api/authenticationstrengthroot-post-policies.md
             - name: Find by method mode
               href: api/authenticationstrengthpolicy-findbymethodmode.md
-            - name: Usage
+            - name: List usage
               href: api/authenticationstrengthpolicy-usage.md
           - name: Authentication combination configurations
             items: 

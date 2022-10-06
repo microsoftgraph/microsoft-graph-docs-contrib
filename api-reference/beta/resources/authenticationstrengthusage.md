@@ -1,6 +1,6 @@
 ---
 title: "authenticationStrengthUsage resource type"
-description: "Two collections of Conditional Access policies that reference the specified authentication strength. One collection contains referencing Conditional Access policies that require an MFA claim; the other collection contains referencing Conditional Access policies that don't require such a claim."
+description: "Two collections of Conditional Access policies that reference the specified authentication strength. One collection references Conditional Access policies that require an MFA claim; the other collection references Conditional Access policies that don't require such a claim."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,12 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An object containing two collections of Conditional Access policies that reference the specified authentication strength. One collection contains referencing Conditional Access policies that require an MFA claim; the other collection contains referencing Conditional Access policies that don't require such a claim.
+An object containing two collections of Conditional Access policies that reference the specified authentication strength. One collection references Conditional Access policies that require an MFA claim; the other collection references Conditional Access policies that don't require such a claim.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[usage](../api/authenticationstrengthpolicy-usage.md)|[authenticationStrengthUsage](../resources/authenticationStrengthUsage.md)|Get an [authenticationStrengthUsage](../resources/authenticationStrengthUsage.md) object and its properties.|
+None.
 
 ## Properties
 |Property|Type|Description|
