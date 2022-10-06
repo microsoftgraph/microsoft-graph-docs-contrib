@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewForwardPostRequestBody()
-message := graphmodels.Newmessage()
+message := graphmodels.NewMessage()
 isDeliveryReceiptRequested := true
 message.SetIsDeliveryReceiptRequested(&isDeliveryReceiptRequested) 
 

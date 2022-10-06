@@ -10,8 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewAccessPackageAssignmentRequest()
 requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType) 
-accessPackageAssignment := graphmodels.NewaccessPackageAssignment()
-target := graphmodels.Newtarget()
+accessPackageAssignment := graphmodels.NewAccessPackageAssignment()
+target := graphmodels.NewAccessPackageSubject()
 email := "user@contoso.com"
 target.SetEmail(&email) 
 accessPackageAssignment.SetTarget(target)

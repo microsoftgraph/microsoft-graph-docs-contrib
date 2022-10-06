@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewAccessPackageAssignmentRequest()
 requestType := graphmodels.ADMINREMOVE_ACCESSPACKAGEREQUESTTYPE 
 requestBody.SetRequestType(&requestType) 
-assignment := graphmodels.Newassignment()
+assignment := graphmodels.NewAccessPackageAssignment()
 id := "a6bb6942-3ae1-4259-9908-0133aaee9377"
 assignment.SetId(&id) 
 requestBody.SetAssignment(assignment)

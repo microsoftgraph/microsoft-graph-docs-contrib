@@ -21,19 +21,13 @@ $postsPost1Body->setContent('this is body content');
 
 $postsPost1->setBody($postsPost1Body);
 $newParticipantsRecipient1 = new Recipient();
-$additionalData = [
-'emailAddress' => $newParticipantsRecipient1 = new EmailAddress();
-$		newParticipantsRecipient1->setName('Alex Darrow');
+$newParticipantsRecipient1EmailAddress = new EmailAddress();
+$newParticipantsRecipient1EmailAddress->setName('Alex Darrow');
 
-$		newParticipantsRecipient1->setAddress('alexd@contoso.com');
-
-
-$newParticipantsRecipient1->setEmailAddress($emailAddress);
-
-];
-$newParticipantsRecipient1->setAdditionalData($additionalData);
+$newParticipantsRecipient1EmailAddress->setAddress('alexd@contoso.com');
 
 
+$newParticipantsRecipient1->setEmailAddress($newParticipantsRecipient1EmailAddress);
 
 $newParticipantsArray []= $newParticipantsRecipient1;
 $postsPost1->setNewParticipants($newParticipantsArray);

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewMarkChatReadForUserPostRequestBody()
-user := graphmodels.Newuser()
+user := graphmodels.NewTeamworkUserIdentity()
 id := "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
 user.SetId(&id) 
 requestBody.SetUser(user)
