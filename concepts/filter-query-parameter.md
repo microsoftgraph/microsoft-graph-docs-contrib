@@ -117,22 +117,22 @@ These examples show how to use `$filter` to match against supported properties a
 
 ### For single primitive types like String, Int, and dates
 
-| Operator               | Syntax                                                               |
-| ---------------------- | -------------------------------------------------------------------- |
-| `eq`                   | `~/users?$filter=userType eq 'Member'`                               |
-| `not`                  | `~/users?$filter=not userType eq 'Member'`*                          |
-| `ne`                   | `~/users?$filter=companyName ne null`*                               |
-| `startsWith`           | `~/users?$filter=startsWith(userPrincipalName, 'admin')`             |
-| `endsWith`             | `~/users?$count=true&$filter=endsWith(mail,'@outlook.com')`          |
-| `in`                   | `~/users?$filter=userType in ('Guest')`                              |
-| `le`                   | `~/devices?$filter=registrationDateTime le 2021-01-02T12:00:00Z`     |
-| `ge`                   | `~/devices?$filter=registrationDateTime ge 2021-01-02T12:00:00Z`     |
-| `not` and `endsWith`   | `~/users?$filter=NOT endsWith(mail, 'OnMicrosoft.com')&$count=true`* |
-| `not` and `startsWith` | `~/users?$filter=NOT startsWith(mail, 'A')&$count=true`              |
-| `not` and `eq`         | `~/users?$filter=not(companyName eq 'Contoso E.A.')&$count=true`*    |
-| `not` and `in`         | `~/users?$filter=not (userType in ('Member'))&$count=true`*          |
-| `contains`         | `~/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')`*          |
-| `has`         | `~/templates?$filter=scenarios has 'secureFoundation'`*          |
+| Operator               | Syntax                                                                                            |
+|------------------------|---------------------------------------------------------------------------------------------------|
+| `eq`                   | `~/users?$filter=userType eq 'Member'`                                                            |
+| `not`                  | `~/users?$filter=not userType eq 'Member'`*                                                       |
+| `ne`                   | `~/users?$filter=companyName ne null`*                                                            |
+| `startsWith`           | `~/users?$filter=startsWith(userPrincipalName, 'admin')`                                          |
+| `endsWith`             | `~/users?$count=true&$filter=endsWith(mail,'@outlook.com')`                                       |
+| `in`                   | `~/users?$filter=userType in ('Guest')`                                                           |
+| `le`                   | `~/devices?$filter=registrationDateTime le 2021-01-02T12:00:00Z`                                  |
+| `ge`                   | `~/devices?$filter=registrationDateTime ge 2021-01-02T12:00:00Z`                                  |
+| `not` and `endsWith`   | `~/users?$filter=NOT endsWith(mail, 'OnMicrosoft.com')&$count=true`*                              |
+| `not` and `startsWith` | `~/users?$filter=NOT startsWith(mail, 'A')&$count=true`                                           |
+| `not` and `eq`         | `~/users?$filter=not(companyName eq 'Contoso E.A.')&$count=true`*                                 |
+| `not` and `in`         | `~/users?$filter=not (userType in ('Member'))&$count=true`*                                       |
+| `contains`             | `~/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')` |
+| `has`                  | `~/templates?$filter=scenarios has 'secureFoundation'`                                            |
 
 ### For a collection of primitive types
 
@@ -152,7 +152,7 @@ These examples show how to use `$filter` to match against supported properties a
 | `eq` and `$count` for empty collections  | `~/users?$filter=assignedLicenses/$count eq 0`*                              |
 | `ne` and `$count` for empty collections  | `~/users?$filter=assignedLicenses/$count ne 0`*                              |
 | `not` and `$count` for empty collections | `~/users?$filter=NOT(assignedLicenses/$count ne 0)`*                         |
-<!-- contains; `in` - otherMails example; `not` and `in`; -->
+<!--`in` - otherMails example; `not` and `in`; -->
 
 ### For GUID types
 
