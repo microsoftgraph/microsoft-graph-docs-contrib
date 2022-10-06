@@ -19,7 +19,7 @@ Use the following steps to publish a connection for your custom connector:
 
 1. Ensure that the **CustomConnectorPortMap.json** file is updated. After you develop the custom connector code, add the mapping of the connector ID and the port it's running on to this file. This file is in the Microsoft Graph connector agent installation folder.
 
-  ![Screenshot of the port mapping in the CustomConnectorPortMap.json file.](images/connectors-sdk/port.png)
+      ![Screenshot of the port mapping in the CustomConnectorPortMap.json file.](images/connectors-sdk/port.png)
 
   >[!Note]
   > - You can add multiple connector IDs and their corresponding port information to this file using the \<Connector Id>:\<Port> format. Each unique connector should be running on a different port.
