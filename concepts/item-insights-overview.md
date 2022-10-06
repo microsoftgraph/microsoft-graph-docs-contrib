@@ -31,8 +31,8 @@ An example of an experience empowered by item insights is the files under **Reco
 You can discover potentially useful content that you can access but may not have seen before, under **Discover** in Delve or Outlook mobile. These are documents trending around you, calculated based on the activity of your closest network of people in your organization. They include files stored in OneDrive for Business and SharePoint Online.  
 ![item insights power Discover in Delve and Outlook Mobile](images/discover-Delve-OutlookMobile.PNG)
 
-### Recent files in card-based interfaces 
-In card-based interfaces such as Delve, the persona card in Microsoft 365 apps, and the people card in Bing work results, item insights bring forward OneDrive, SharePoint, or Outlook files that you have modified recently or shared with the person looking at your profile, which has access to that content. Such personalized insights help your colleagues save time searching for the right person or information.  
+### Recent files in card-based interfaces
+In card-based interfaces such as Delve and [the profile cards in Microsoft 365](https://support.microsoft.com/en-us/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) item insights bring forward OneDrive, SharePoint, or Outlook files that you have modified recently or shared with the person looking at your profile, which has access to that content. Such personalized insights help your colleagues save time searching for the right person or information.  
 ![item insights power recent files in card-based interfaces](images/Recent-files-in-card-based-interfaces.PNG)
 
 ## Microsoft runs on trust
@@ -59,8 +59,7 @@ Updating settings can take up to 24 hours to apply within the user’s organizat
 After disabling item insights, the following happens: 
 * Microsoft stops using your signals when computing recommendations for others. Your colleagues stop receiving item insights based on activities that you perform in shared workspaces, and your colleagues’ insights-based experience becomes less rich in places such as the **Recommended** files in Office.com and Delve.
 ![disabled item insights in recommended in office](images/disabled-item-insights-in-office.PNG)
-* Your colleagues can no longer see insights such as recent files that you have shared with them from OneDrive for Business and SharePoint, in experiences such as Delve, the persona card in Microsoft 365 and the Bing results. The content is still accessible via Microsoft Search or other experience as appropriate, but it is harder to discover and your colleagues would have to spend more time to find it.  
-![disabled item insights in persona card](images/disabled-item-insights-in-persona-card.PNG)
+* Your colleagues can still see files that you have shared with them from OneDrive for Business and SharePoint in experiences such as Delve and [the profile cards in Microsoft 365](https://support.microsoft.com/en-us/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501). To avoid seeing shared files in these places, remove the sharing permissions on the files.  
 * Experiences that show content trending around you is blocked for you and inaccessible to others, in places such as Delve and Outlook mobile’s **Discover** section. The lack of the trending-insights also affects your personalized relevance in Microsoft Search since it cannot use your trending content as signals for relevance.
 ![disabled item insights in Delve](images/disabled-item-insights-in-delve.PNG)
 * Disabling item insights will stop [suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) from being calculated and shown to the user on their persona card. 

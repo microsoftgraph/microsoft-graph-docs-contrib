@@ -21,6 +21,8 @@ Indicates the content type of the logo
 |Member|Value|Description|
 |:---|:---|:---|
 |png|0|Indicates that logo is a png file|
+|unknownFutureValue|1|UnknownFutureValue, Evolvable enumeration sentinel value. Do not use.|
+
 
 
 

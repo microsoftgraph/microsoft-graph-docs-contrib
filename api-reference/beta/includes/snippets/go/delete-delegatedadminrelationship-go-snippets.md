@@ -14,7 +14,7 @@ configuration := &graphconfig.DelegatedAdminRelationshipRequestBuilderDeleteRequ
 	Headers: headers,
 }
 
-graphClient.TenantRelationships().DelegatedAdminRelationshipsById("delegatedAdminRelationship-id").DeleteWithRequestConfigurationAndResponseHandler(configuration, nil)
+graphClient.TenantRelationships().DelegatedAdminRelationshipsById("delegatedAdminRelationship-id").Delete(context.Background(), configuration)
 
 
 ```

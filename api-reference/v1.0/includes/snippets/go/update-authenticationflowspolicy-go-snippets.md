@@ -13,7 +13,7 @@ isEnabled := true
 selfServiceSignUp.SetIsEnabled(&isEnabled) 
 requestBody.SetSelfServiceSignUp(selfServiceSignUp)
 
-graphClient.Policies().AuthenticationFlowsPolicy().Patch(requestBody)
+result, err := graphClient.Policies().AuthenticationFlowsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -28,3 +28,5 @@ Allow the device to send diagnostic and usage telemetry data, such as Watson.
 
 
 
+
+

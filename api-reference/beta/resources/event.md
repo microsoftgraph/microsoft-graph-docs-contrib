@@ -1,7 +1,7 @@
 ---
 title: "event resource type"
 description: "An event in a calendar."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: resourcePageType

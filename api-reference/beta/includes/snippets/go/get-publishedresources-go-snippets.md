@@ -14,7 +14,7 @@ configuration := &graphconfig.PublishedResourcesRequestBuilderGetRequestConfigur
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").PublishedResources().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").PublishedResources().Get(context.Background(), configuration)
 
 
 ```

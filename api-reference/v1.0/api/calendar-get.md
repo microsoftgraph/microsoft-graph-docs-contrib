@@ -2,7 +2,7 @@
 title: "Get calendar"
 description: "Get the properties and relationships of a calendar object. The calendar can be one for a user, "
 ms.localizationpriority: high
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Overview of identity governance using Microsoft Graph"
+title: "Overview of Azure AD Identity Governance using Microsoft Graph"
 description: "Azure AD Identity Governance provides you with capabilities to ensure that the right principals have the right access to the right resources and at the right time. Use Microsoft Graph APIs to programmatically manage Azure AD Identity Governance features."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Overview of Identity Governance using Microsoft Graph
+# Overview of Azure AD Identity Governance using Microsoft Graph
 
 Azure Active Directory (Azure AD) Identity Governance allows you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right principals have the right access to the right resources and at the right time.
 

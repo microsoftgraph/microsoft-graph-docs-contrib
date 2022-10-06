@@ -47,7 +47,7 @@ requestBody.SetThreatType(&threatType)
 tlpLevel := graphmodels.GREEN_TLPLEVEL 
 requestBody.SetTlpLevel(&tlpLevel) 
 
-result, err := graphClient.Security().TiIndicators().Post(requestBody)
+result, err := graphClient.Security().TiIndicators().Post(context.Background(), requestBody, nil)
 
 
 ```

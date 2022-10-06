@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 528
+Content-Length: 815
 
 {
   "value": {
@@ -78,10 +78,20 @@ Content-Length: 528
     "roleScopeTags": [
       "Role Scope Tags value"
     ],
+    "payloads": [
+      {
+        "@odata.type": "microsoft.graph.payloadByFilter",
+        "payloadId": "Payload Id value",
+        "payloadType": "deviceConfigurationAndCompliance",
+        "groupId": "Group Id value",
+        "assignmentFilterType": "include"
+      }
+    ],
     "payloadType": "enrollmentRestrictions"
   }
 }
 ```
+
 
 
 

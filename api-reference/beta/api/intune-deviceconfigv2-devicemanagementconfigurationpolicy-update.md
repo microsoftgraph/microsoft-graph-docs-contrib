@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}
 PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
 PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}
 ```
@@ -61,6 +62,7 @@ The following table shows the properties that are required when you create the [
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 |isAssigned|Boolean|Policy assignment status. This property is read-only.|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Template reference information|
+|priorityMetaData|[deviceManagementPriorityMetaData](../resources/intune-deviceconfigv2-devicemanagementprioritymetadata.md)|Indicates the priority of each policies that are selected by the admin during enrollment process|
 
 
 
@@ -72,9 +74,9 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
+PATCH https://graph.microsoft.com/beta/deviceManagementConfigurationPolicy/{deviceManagementConfigurationPolicyId}
 Content-type: application/json
-Content-length: 687
+Content-length: 789
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -94,6 +96,9 @@ Content-length: 687
     "templateFamily": "endpointSecurityAntivirus",
     "templateDisplayName": "Template Display Name value",
     "templateDisplayVersion": "Template Display Version value"
+  },
+  "priorityMetaData": {
+    "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData"
   }
 }
 ```
@@ -103,7 +108,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 859
+Content-Length: 961
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -126,9 +131,13 @@ Content-Length: 859
     "templateFamily": "endpointSecurityAntivirus",
     "templateDisplayName": "Template Display Name value",
     "templateDisplayVersion": "Template Display Version value"
+  },
+  "priorityMetaData": {
+    "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData"
   }
 }
 ```
+
 
 
 

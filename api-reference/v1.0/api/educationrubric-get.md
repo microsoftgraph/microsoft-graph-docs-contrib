@@ -2,7 +2,7 @@
 title: "Get educationRubric"
 description: "Retrieve the properties and relationships of an educationrubric object."
 ms.localizationpriority: medium
-author: "sharad-sharma-msft"
+author: "Sureshpadimi88"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
@@ -63,6 +63,10 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
 ```
+
+## Optional query parameters
+
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationrubric-csharp-snippets.md)]
