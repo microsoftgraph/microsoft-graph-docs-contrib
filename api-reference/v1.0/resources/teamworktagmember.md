@@ -3,7 +3,7 @@ title: "teamworkTagMember resource type"
 description: "Represents a user in a team to whom a tag is applied."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 

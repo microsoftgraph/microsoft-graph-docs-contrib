@@ -3,7 +3,7 @@ title: "Delete teamworkTagMember"
 description: "Delete a member from a standard tag in a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
