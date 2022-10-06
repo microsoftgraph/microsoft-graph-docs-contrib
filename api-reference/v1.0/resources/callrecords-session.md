@@ -11,8 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph.callRecords
 
-Represents a User-User communication or a User-Meeting communication
-in the case of a Conference call.
+Represents a user-user communication or a user-meeting communication in the case of a conference call.
 
 ## Methods
 
@@ -25,14 +24,13 @@ in the case of a Conference call.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|string|Unique identifier for the session. Read-only.|
-|caller|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Endpoint that initiated the session.|
 |callee|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Endpoint that answered the session.|
+|caller|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Endpoint that initiated the session.|
+|endDateTime|DateTimeOffset|UTC time when the last user left the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Failure information associated with the session if the session failed.|
+|id|string|Unique identifier for the session. Read-only.|
 |modalities|microsoft.graph.callRecords.modality collection|List of modalities present in the session. Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
 |startDateTime|DateTimeOffset|UTC time when the first user joined the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|endDateTime|DateTimeOffset|UTC time when the last user left the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-
 
 ## Relationships
 
@@ -55,13 +53,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (identifier)",
+  "callee": {"@odata.type": "microsoft.graph.callRecords.endpoint"},  
   "caller": {"@odata.type": "microsoft.graph.callRecords.endpoint"},
-  "callee": {"@odata.type": "microsoft.graph.callRecords.endpoint"},
+  "endDateTime": "String (timestamp)",
   "failureInfo": {"@odata.type": "microsoft.graph.callRecords.failureInfo"},
+  "id": "String (identifier)",
   "modalities": ["string"],
-  "startDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)"
+  "startDateTime": "String (timestamp)"
 }
 ```
 
