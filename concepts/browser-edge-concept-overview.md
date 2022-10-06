@@ -8,7 +8,7 @@ ms.prod: "browser-management"
 
 # Overview for using the Edge API in Microsoft Graph to manage browsers
 
-The [Microsoft 365 admin center](https://admin.microsoft.com/) lets administrators manage applications, services, data, devices, and users across Microsoft 365 services in an organization.  Microsoft Edge is one of the applications the settings for which administrators manage through the admin center. 
+The [Microsoft 365 admin center](https://admin.microsoft.com/) lets administrators manage applications, services, data, devices, and users across Microsoft 365 services in an organization.  Microsoft Edge is one of the applications the settings for which administrators manage through the admin center.
 
 ## Why integrate with Edge settings in the Microsoft 365 admin center?
 
