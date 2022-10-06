@@ -617,6 +617,48 @@
       "CreatedDateTime": "2022-07-18T11:01:30.771Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "teamworkTagType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamworkTagType** enumeration type.",
+          "Target": "teamworkTagType"
+        },
+        {
+          "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tags",
+          "ChangeType": "Addition",
+          "Description": "Added the **tags** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkTag](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTag?view=graph-rest-1.0) resource",
+          "Target": "teamworkTag"
+        },
+        {
+          "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkTagMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagMember?view=graph-rest-1.0) resource",
+          "Target": "teamworkTagMember"
+        }
+      ],
+      "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-08T20:58:15.0058997Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
     }
   ]
 }
