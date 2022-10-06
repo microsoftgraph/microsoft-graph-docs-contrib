@@ -1,6 +1,6 @@
 ---
 title: "session resource type"
-description: "The session type"
+description: "Represents a user-user communication or a user-meeting communication in the case of a conference call."
 ms.localizationpriority: medium
 author: "stephenjust"
 ms.prod: "cloud-communications"
@@ -17,8 +17,7 @@ Represents a user-user communication or a user-meeting communication in the case
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List sessions](../api/callrecords-session-list.md) | [microsoft.graph.callRecords.session](callrecords-session.md) collection | Retrieve the list of sessions associated with a [callRecord](callrecords-callrecord.md) object.
- |
+| [List sessions](../api/callrecords-session-list.md) | [microsoft.graph.callRecords.session](callrecords-session.md) collection | Retrieve the list of sessions associated with a [callRecord](callrecords-callrecord.md) object.|
 
 ## Properties
 
