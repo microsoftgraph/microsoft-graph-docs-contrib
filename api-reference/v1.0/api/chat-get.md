@@ -62,12 +62,9 @@ The following is an example of the request.
   "name": "get_group_chat",
   "sampleKeys": ["19:b8577894a63548969c5c92bb9c80c5e1@thread.v2"]
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2
 ```
-
----
-
 
 #### Response
 The following example shows the response.
@@ -107,12 +104,9 @@ The following is an example of the request.
   "name": "get_chat",
   "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5", "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces"]
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces
 ```
-
-
----
 
 #### Response
 The following example shows the response.
@@ -152,12 +146,9 @@ The following is an example of the request.
   "name": "get_chat_withmembers",
   "sampleKeys": ["19:b8577894a63548969c5c92bb9c80c5e1@thread.v2"]
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2?$expand=members
 ```
-
----
-
 
 #### Response
 The following example shows the response.
@@ -259,11 +250,9 @@ The following is an example of the request.
   "name": "get_meeting_chat",
   "sampleKeys": ["19:meeting_ZDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4@thread.v2"]
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/chats/19:meeting_ZDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4@thread.v2
 ```
----
-
 
 #### Response
 The following example shows the response.
@@ -313,8 +302,6 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/chats/19:ebe3857aa388434bab0cad9d2e09f4de@thread.v2?$expand=lastMessagePreview
 ```
----
-
 
 #### Response
 The following example shows the response.
