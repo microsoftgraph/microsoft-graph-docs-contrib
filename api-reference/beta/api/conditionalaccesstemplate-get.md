@@ -138,13 +138,13 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Select details a template by ID
+### Example 2: Select details of a template
 
 #### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_conditionalaccesstemplate"
+  "name": "get_conditionalaccesstemplate_select"
 }
 -->
 ``` http

@@ -148,7 +148,7 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_conditionalaccesstemplate"
+  "name": "list_conditionalaccesstemplate_select"
 }
 -->
 ``` http
