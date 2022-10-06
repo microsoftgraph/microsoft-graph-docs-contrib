@@ -109,7 +109,10 @@ After you publish the popup page on your website, you need to use the URL in the
 
 ## Configure your Teams app
 
-If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams apps](/microsoftteams/platform/concepts/tabs/tabs-overview). You can also use [App Studio](/microsoftteams/platform/get-started/get-started-app-studio) to quickly develop your app manifest.
+If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams apps](/microsoftteams/platform/concepts/tabs/tabs-overview). You can use the [Developer Portal for Teams](/microsoftteams/platform/concepts/build-and-test/teams-developer-portal) to configure, distribute, and manage your application. You can access the Developer Portal for Teams in a [web browser](https://dev.teams.microsoft.com/) or as a [Teams App](https://teams.microsoft.com/l/app/14072831-8a2a-4f76-9294-057bf0b42a68).
+
+You can also use the [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) in **Visual Studio Code** to quickly create and deploy your Teams app.
+
 ### Creating an app/client ID
 In order to get a client ID, you need to [register your application](../get-started/add-aad-app-registration.md) in Azure AD. 
 >**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. 
