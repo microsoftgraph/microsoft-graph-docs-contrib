@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new User();
 $passwordProfile = new PasswordProfile();
-$passwordProfile->setForceChangePasswordNextSignIn(false);
+$passwordProfile->setForceChangePasswordNextSignIn(true);
 
 $passwordProfile->setPassword('xWwvJ]6NMw+bWH-d');
 
