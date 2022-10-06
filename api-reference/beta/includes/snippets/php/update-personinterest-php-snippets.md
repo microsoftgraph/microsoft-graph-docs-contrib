@@ -14,7 +14,7 @@ $requestBody->setCategories(['Sports', ]);
 
 
 
-$graphServiceClient->me()->profile()->interestsById('personInterest-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->profile()->interestsById('personInterest-id')->patch($requestBody);
 
 
 ```

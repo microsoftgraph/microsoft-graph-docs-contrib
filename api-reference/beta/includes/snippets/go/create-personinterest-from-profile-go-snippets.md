@@ -20,7 +20,7 @@ requestBody.SetDisplayName(&displayName)
 webUrl := "https://www.chelseafc.com"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Profile().Interests().Post(requestBody)
+result, err := graphClient.Me().Profile().Interests().Post(context.Background(), requestBody, nil)
 
 
 ```

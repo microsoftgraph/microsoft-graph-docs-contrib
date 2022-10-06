@@ -14,20 +14,8 @@ In this article, you'll learn how to configure Azure Active Directory (Azure AD)
 ## Prerequisites
 
 - This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) for Application Proxy so that connectors can communicate with Azure AD services.
-- This tutorial assumes that you are using Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. Complete the following steps to set permissions in Graph Explorer:
-    1. Start [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-    2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
-    3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
-
-        ![Set permissions](./images/application-proxy-configure-api/set-permissions.png)
-        
-    4. Scroll through the list of permissions to **Directory (3)**, expand and then select `Directory.ReadWrite.All`.
-
-        ![Search for permissions](./images/application-proxy-configure-api/select-permissions.png)
-    
-    5. Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
-
-        ![Accept permissions](./images/application-proxy-configure-api/accept-permissions.png)
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role.
+- Grant yourself the following delegated permission: `Directory.ReadWrite.All`.
 
 > [!NOTE]
 > The response objects shown might be shortened for readability. 
@@ -556,12 +544,3 @@ No Content - 204
 
 - [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy)
 - [application](/graph/api/resources/application)
-- [applicationTemplate: instantiate](/graph/api/applicationtemplate-instantiate)
-- [appRoleAssignment](/graph/api/resources/approleassignment)
-- [connector](/graph/api/resources/connector)
-- [connectorGroup](/graph/api/resources/connectorGroup)
-- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings)
-- [on-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root)
-- [servicePrincipal](/graph/api/resources/serviceprincipal)
-- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon)
-- [user](/graph/api/resources/user)

@@ -17,7 +17,7 @@ configuration := &graphconfig.SchemaExtensionsRequestBuilderGetRequestConfigurat
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SchemaExtensions().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.SchemaExtensions().Get(context.Background(), configuration)
 
 
 ```

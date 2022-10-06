@@ -14,6 +14,9 @@ mediaConfig.blob = "<Media Session Configuration Blob>";
 LinkedList<Modality> acceptedModalitiesList = new LinkedList<Modality>();
 acceptedModalitiesList.add(Modality.AUDIO);
 
+IncomingCallOptions callOptions = new IncomingCallOptions();
+callOptions.isContentSharingNotificationEnabled = true;
+
 int participantCapacity = 200;
 
 graphClient.communications().calls("{id}")
@@ -23,7 +26,7 @@ graphClient.communications().calls("{id}")
 		.withMediaConfig(mediaConfig)
 		.withAcceptedModalities(acceptedModalitiesList)
 		.withParticipantCapacity(participantCapacity)
-		.withCallOptions(null)
+		.withCallOptions(callOptions)
 		.build())
 	.buildRequest()
 	.post();

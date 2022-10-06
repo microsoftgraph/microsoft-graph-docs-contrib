@@ -13,7 +13,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").AppManagementPoliciesById("appManagementPolicy-id").Post(requestBody)
+graphClient.ServicePrincipalsById("servicePrincipal-id").AppManagementPoliciesById("appManagementPolicy-id").Post(context.Background(), requestBody, nil)
 
 
 ```

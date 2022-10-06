@@ -20,7 +20,7 @@ assets := []graphmodels.Objectable {
 }
 requestBody.SetAssets(assets)
 
-graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").AddMembers().Post(requestBody)
+graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").AddMembers().Post(context.Background(), requestBody, nil)
 
 
 ```

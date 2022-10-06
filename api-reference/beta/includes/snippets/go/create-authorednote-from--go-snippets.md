@@ -15,7 +15,7 @@ contentType := graphmodels.TEXT_BODYTYPE
 content.SetContentType(&contentType) 
 requestBody.SetContent(content)
 
-result, err := graphClient.Privacy().SubjectRightsRequestsById("subjectRightsRequest-id").Notes().Post(requestBody)
+result, err := graphClient.Privacy().SubjectRightsRequestsById("subjectRightsRequest-id").Notes().Post(context.Background(), requestBody, nil)
 
 
 ```

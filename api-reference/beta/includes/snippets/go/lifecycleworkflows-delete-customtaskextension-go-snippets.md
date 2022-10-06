@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.IdentityGovernance().LifecycleWorkflows().CustomTaskExtensionsById("customTaskExtension-id").Delete()
+graphClient.IdentityGovernance().LifecycleWorkflows().CustomTaskExtensionsById("customTaskExtension-id").Delete(context.Background(), nil)
 
 
 ```

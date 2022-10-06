@@ -14,7 +14,7 @@ configuration := &graphconfig.ExternalPartnerSettingsRequestBuilderGetRequestCon
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().Get(context.Background(), configuration)
 
 
 ```

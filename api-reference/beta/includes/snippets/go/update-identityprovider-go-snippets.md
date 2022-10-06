@@ -11,7 +11,7 @@ requestBody := graphmodels.NewIdentityProvider()
 clientSecret := "1111111111111"
 requestBody.SetClientSecret(&clientSecret) 
 
-graphClient.IdentityProvidersById("identityProvider-id").Patch(requestBody)
+result, err := graphClient.IdentityProvidersById("identityProvider-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
