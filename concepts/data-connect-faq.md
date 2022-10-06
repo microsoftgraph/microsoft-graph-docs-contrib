@@ -36,8 +36,6 @@ Viva Insights and MGDC are complementary - not competitive. Although both rely o
 
 When customers are looking for insights and analytics beyond Viva Insights, MGDC provides the extensibility experience to deliver custom requirements. For example, MGDC offers Teams Call Records and Transcripts as well as SharePoint Online data sets; these are currently beyond the scope of consideration for Viva Insights. Additionally, MGDC raw data provides granular details that aren’t otherwise available from Viva Insights.  
 
-![screenshot on viva insights](.../concepts/data-connect-viva-insights-mgdc.png)
-
 ## Is there any initial overhead with Microsoft Graph Data Connect?
 
 Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. If the initial overhead is too long for your use case, please reach out to the [Microsoft Graph Data Connect team](mailto:dataconnect@microsoft.com).
