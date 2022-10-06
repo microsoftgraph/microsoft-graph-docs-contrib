@@ -1,6 +1,6 @@
 ---
 title: "List combinationConfigurations"
-description: "Get the authenticationCombinationConfiguration resources from the combinationConfigurations navigation property."
+description: "Get the authenticationCombinationConfiguration objects for an authentication strength policy."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the authenticationCombinationConfiguration resources from the combinationConfigurations navigation property. These are requirements placed on specific authentication method combinations that require specified variants of those authentication methods to be used when authenticating. authenticationCombinationConfigurations will only be present on custom authentication strengths.
+Get the [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) objects for an [authentication strength policy](../resources/authenticationstrengthpolicy.md). authenticationCombinationConfiguration represents requirements placed on specific authentication method combinations that require specified variants of those authentication methods to be used when authenticating. Currently, only [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) objects are supported.
+
+authenticationCombinationConfiguration objects are supported only for custom authentication strengths.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
