@@ -85,12 +85,9 @@ Here is an example of the request.
   "blockType": "request",
   "name": "list_chats"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats
 ```
-
----
-
 
 #### Response
 
@@ -160,12 +157,9 @@ Here is an example of the request.
   "blockType": "request",
   "name": "list_chats_expand_members"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats?$expand=members
 ```
-
----
-
 
 #### Response
 
@@ -185,6 +179,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats(members())",
     "@odata.count": 3,
@@ -340,11 +335,9 @@ The following is an example of a request. **lastMessagePreview/createdDateTime**
   "blockType": "request",
   "name": "list_chats_orderby"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/chats?$orderBy=lastMessagePreview/createdDateTime desc
 ```
----
-
 
 #### Response
 
@@ -409,12 +402,9 @@ The following example shows a request to list chats along with the preview of th
   "blockType": "request",
   "name": "list_chats_expand_lastMessagePreview"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/chats?$expand=lastMessagePreview
 ```
-
----
-
 
 #### Response
 
