@@ -1,6 +1,6 @@
 ---
 title: "Use the Edge API in Microsoft Graph"
-description: "Microsoft Graph provides REST API for Edge to let apps manage administrator tasks for organizations."
+description: "The Edge API in Microsoft Graph lets apps manage administrator tasks for organizations."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "browser-management"
