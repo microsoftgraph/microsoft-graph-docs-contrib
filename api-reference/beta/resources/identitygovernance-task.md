@@ -45,7 +45,7 @@ Inherits from [entity](../resources/entity.md).
 
 Lifecycle Workflows currently support the following tasks:
 
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/azure_docs_pr/includes/lifecycle-workflows-tasks-table.md)]
+[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](../includes/lifecycle-workflows-tasks-table.md)]
 
 ## Relationships
 
