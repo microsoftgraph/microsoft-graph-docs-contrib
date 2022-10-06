@@ -1,6 +1,6 @@
 ---
 title: "session resource type"
-description: "The session type"
+description: "Represents a user-user communication or a user-meeting communication in the case of a conference call."
 ms.localizationpriority: medium
 author: "williamlooney"
 ms.prod: "cloud-communications"
