@@ -1914,7 +1914,6 @@ Possible values for user account types (group membership), per Windows definitio
 |phoneUser|
 |unknownFutureValue|
 |emailUser|
-|acsUser|
 
 ### postType values 
 
