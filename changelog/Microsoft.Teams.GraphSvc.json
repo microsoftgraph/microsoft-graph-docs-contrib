@@ -625,7 +625,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatViewpoint",
           "ChangeType": "Addition",
-          "Description": "Added the [chatViewpoint](https://docs.microsoft.com/en-us/graph/api/resources/chatViewpoint?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [chatViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/chatViewpoint?view=graph-rest-1.0) resource type.",
           "Target": "chatViewpoint"
         },
         {
@@ -633,15 +633,15 @@
           "ApiChange": "Property",
           "ChangedApiName": "viewpoint",
           "ChangeType": "Addition",
-          "Description": "Added the `viewpoint` property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the `viewpoint` property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         },
         {
           "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "lastMessagePreview",
           "ChangeType": "Addition",
-          "Description": "Added the **lastMessagePreview** relationship to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the **lastMessagePreview** relationship to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         },
         {
@@ -649,7 +649,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessageInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [chatMessageInfo](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageInfo?view=graph-rest-1.0) resource",
+          "Description": "Added the [chatMessageInfo](https://learn.microsoft.com/en-us/graph/api/resources/chatMessageInfo?view=graph-rest-1.0) resource",
           "Target": "chatMessageInfo"
         },
         {
@@ -657,7 +657,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "hideForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [hideForUser](https://docs.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) method to the [chat](https://docs.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the [hideForUser](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         },
         {
@@ -665,7 +665,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "markChatReadForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [markChatReadForUser](https://docs.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) method to the [chat](https://docs.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the [markChatReadForUser](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         },
         {
@@ -673,7 +673,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "markChatUnreadForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [markChatUnreadForUser](https://docs.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) method to the [chat](https://docs.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the [markChatUnreadForUser](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         },
         {
@@ -681,7 +681,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unhideForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [unhideForUser](https://docs.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) method to the [chat](https://docs.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the [unhideForUser](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         }
       ],
