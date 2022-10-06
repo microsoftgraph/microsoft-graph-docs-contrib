@@ -63,7 +63,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Retrieve authenticationMethodModes objects and their descriptions
+
+#### Request
 The following is an example of a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
 .
 <!-- {
@@ -76,7 +78,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationSt
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -171,7 +173,9 @@ Content-Type: application/json
 }
 ```
 
-### Request
+### Example 2: Retrieve the allowed authentication combinations
+
+#### Request
 The following is an example of a request to retrieve the flat collection of authenticationCombinations objects, representing all the possible allowed combinations (allowedCombinations) that may be used in an authenticationStrengthPolicy object.
 
 <!-- {
@@ -184,7 +188,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationSt
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

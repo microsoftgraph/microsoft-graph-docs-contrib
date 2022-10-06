@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The results of an attempt to update an authentication strength's [allowedCombinations](../resources/authenticationstrengthpolicy.md] property.
+The results of an attempt to update an authentication strength's [allowedCombinations](../resources/authenticationstrengthpolicy.md) property.
 
 ## Properties
 |Property|Type|Description|
