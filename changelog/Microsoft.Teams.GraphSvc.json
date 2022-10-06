@@ -438,7 +438,7 @@
           "ChangedApiName": "sendActivityNotificationToRecipients",
           "ChangeType": "Addition",
           "Description": "Added the [sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta) method to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
-          "Target": "teamwork and communications"
+          "Target": "teamwork"
         }
       ],
       "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce9",
@@ -490,7 +490,7 @@
           "ChangedApiName": "deletedTeams",
           "ChangeType": "Addition",
           "Description": "Added the **deletedTeams** relationship to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
-          "Target": "teamwork and communications"
+          "Target": "teamwork"
         }
       ],
       "Id": "33336873-57cc-453e-90da-9e735f550661",
@@ -524,7 +524,7 @@
           "ChangedApiName": "teamsAppSettings",
           "ChangeType": "Addition",
           "Description": "Added the **teamsAppSettings** navigation property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource",
-          "Target": "teamwork and communications"
+          "Target": "teamwork"
         }
       ],
       "Id": "e04528be-94f6-4bc5-9485-9b71da7f4804",
