@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getM365AppPlatformUserCounts"
-description: "Get a report that provides the trend of active users across all apps for each platform – Windows, Mac, web, and mobile - in your organization."
+description: "Get a report that provides the trend of active users across all apps for each platform (Windows, Mac, web, and mobile) in your organization."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a report that provides the trend of active users across all apps for each platform – Windows, Mac, web, and mobile - in your organization.
+Get a report that provides the trend of active users across all apps for each platform (Windows, Mac, web, and mobile) in your organization.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft 365 Apps usage](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
+> **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft 365 Apps usage](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
 ## Permissions
 
@@ -25,11 +25,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Reports.Read.All                            |
 
-> **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+> **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /reports/getM365AppPlatformUserCounts(period='{period_value}')
@@ -45,7 +45,7 @@ In the request URL, provide the following parameter with a valid value.
 
 ## Optional query parameters
 
-This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData `$format` query parameter to set the default output to text/csv or application/json.
+This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is `text/csv`. However, if you want to specify the output type, you can use the OData `$format` query parameter to set the default output to `text/csv` or `application/json`.
 
 ## Request headers
 
@@ -58,8 +58,6 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 Do not supply a request body with this method.
 
 ## Response
-
-If successful, this method returns a `200 OK` response code and a Edm.Stream object in the response body.
 
 ### CSV
 
@@ -93,9 +91,6 @@ The following is an example that outputs CSV.
 
 The following is an example of the request.
 
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getM365AppPlatformUserCounts_csv"
@@ -104,31 +99,12 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getM365AppPlatformUserCounts(period='D7')?$format=text/csv
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appplatformusercounts-csv-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getm365appplatformusercounts-csv-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appplatformusercounts-csv-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getm365appplatformusercounts-csv-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 #### Response
 
 The following is an example of the response.
 
-<!-- { "blockType": "response" } --> 
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -159,9 +135,6 @@ The following is an example that returns JSON.
 
 The following is an example of the request.
 
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getM365AppPlatformUserCounts_json"
@@ -170,25 +143,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getM365AppPlatformUserCounts(period='D7')?$format=application/json
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appplatformusercounts-json-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getm365appplatformusercounts-json-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appplatformusercounts-json-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getm365appplatformusercounts-json-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 #### Response
 
