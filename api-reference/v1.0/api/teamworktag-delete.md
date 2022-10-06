@@ -1,6 +1,6 @@
 ---
 title: "Delete teamworkTag"
-description: "Delete a teamworkTag object."
+description: "Delete a teamworkTag object permanently."
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /teams/{team-Id}/tags/{teamworkTag-Id}
+DELETE /teams/{team-id}/tags/{teamworkTag-id}
 ```
 
 ## Request headers

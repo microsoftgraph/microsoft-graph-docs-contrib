@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Represents a user in a team to whom a tag is applied.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -25,7 +27,7 @@ Represents a user in a team to whom a tag is applied.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The member's display name.|
-|id|String|ID of the member.|
+|id|String|The unique identifier for the member. Inherited from [entity](../resources/entity.md).|
 |tenantId|String|The ID of the tenant that the tag member is a part of.|
 |userId|String|The user ID of the member.|
 
@@ -51,4 +53,3 @@ The following is a JSON representation of the resource.
   "userId": "String"
 }
 ```
-

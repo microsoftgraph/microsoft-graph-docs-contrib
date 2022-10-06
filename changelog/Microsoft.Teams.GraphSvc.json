@@ -633,7 +633,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tags",
           "ChangeType": "Addition",
-          "Description": "Added the **tags** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Description": "Added the **tags** relationship to the [team](https://learn.microsoft.com/graph/api/resources/team?view=graph-rest-1.0) resource.",
           "Target": "team"
         },
         {
@@ -641,7 +641,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkTag",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkTag](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTag?view=graph-rest-1.0) resource",
+          "Description": "Added the [teamworkTag](https://learn.microsoft.com/graph/api/resources/teamworkTag?view=graph-rest-1.0) resource and supported methods.",
           "Target": "teamworkTag"
         },
         {
@@ -649,7 +649,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkTagMember",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagMember?view=graph-rest-1.0) resource",
+          "Description": "Added the [teamworkTagMember](https://learn.microsoft.com/graph/api/resources/teamworkTagMember?view=graph-rest-1.0) resource and supported methods.",
           "Target": "teamworkTagMember"
         }
       ],
@@ -657,8 +657,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-09-08T20:58:15.0058997Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": "Microsoft.Teams.Shifts"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }

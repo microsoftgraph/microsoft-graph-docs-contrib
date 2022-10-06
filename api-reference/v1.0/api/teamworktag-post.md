@@ -1,6 +1,6 @@
 ---
 title: "Create teamworkTag"
-description: "Create a new teamworkTag object."
+description: "Create a standard teamworkTag for members in a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /teams/{team-Id}/tags
+POST /teams/{team-id}/tags
 ```
 
 ## Request headers
@@ -46,8 +46,6 @@ The following table shows the properties that are required when you create a [te
 |:---|:---|:---|
 |displayName|String|The name of the tag. The value can't be more than 40 characters.|
 |members| [teamworkTagMember](../resources/teamworktagmember.md) collection | The unique identifier for the members of the team to add to the tag. The members count shouldn't be more than 25.|
-
-
 
 ## Response
 
@@ -82,7 +80,6 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
 
 The following is an example of the response.
@@ -106,4 +103,3 @@ Content-Type: application/json
   "tagType": "standard"
 }
 ```
-

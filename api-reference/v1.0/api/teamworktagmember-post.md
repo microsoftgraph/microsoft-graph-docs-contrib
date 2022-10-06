@@ -1,6 +1,6 @@
 ---
 title: "Create teamworkTagMember"
-description: "Create a new teamworkTagMember object."
+description: "Create a new teamworkTagMember object in a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /teams/{team-Id}/tags/{teamworkTag-Id}/members
+POST /teams/{team-id}/tags/{teamworkTag-id}/members
 ```
 
 ## Request headers
@@ -94,4 +94,3 @@ Content-Type: application/json
   "userId": "92f6952f-61ca-4a94-8910-508a240bc167"
 }
 ```
-

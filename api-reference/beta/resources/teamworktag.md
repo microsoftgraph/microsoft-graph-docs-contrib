@@ -40,9 +40,10 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 
 ### teamworkTagType values
 
-| Member   | Description                                                                                               |
-|:---------|:----------------------------------------------------------------------------------------------------------|
-| standard | Default type for a tag. Tags of type standard can be managed in the team by members who have permissions. |
+| Member             | Description                                                                                               |
+|:-------------------|:----------------------------------------------------------------------------------------------------------|
+| standard           | Default type for a tag. Tags of type standard can be managed in the team by members who have permissions. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                                         |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -62,9 +63,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkTag",
-  "id": "String (identifier)",
-  "displayName": "String",
   "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
   "memberCount": "Int32",
   "tagType": "String",
   "teamId": "String"
