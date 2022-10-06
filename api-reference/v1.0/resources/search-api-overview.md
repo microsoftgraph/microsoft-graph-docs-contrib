@@ -97,7 +97,7 @@ If you do not specify any **fields** in the request,  you will get the default s
 
 ## Keyword Query Language (KQL) support
 
-Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
+Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The [XRANK](/graph/search-concept-xrank) operator boosts the dynamic rank of items based on certain term occurrences within the match expression, without changing which items match the query. The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
 
 Depending on the entity type, the searchable properties vary. For details, see:
 
@@ -172,6 +172,8 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
 
 - The search API does not support aggregations for **message**, **event**, **site** or **drive**.
 
+- The search API does not support xrank for **message**,**chatMessage**, **event**, **person**, or **externalItem**.
+
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
 
 ## See also
@@ -184,6 +186,7 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
   - [Refine search results](/graph/search-concept-aggregation)
   - [Request spelling correction](/graph/search-concept-speller)
   - [Use search display layout](/graph/search-concept-display-layout)
+  - [XRANK search results](/graph/search-concept-xrank)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

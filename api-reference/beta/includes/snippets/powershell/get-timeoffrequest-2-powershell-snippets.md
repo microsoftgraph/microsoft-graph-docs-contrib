@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamScheduleTimeOffRequest -TeamId $teamId -OutFile $outFileId
+Get-MgTeamScheduleTimeOffRequest -TeamId $teamId
 
 ```

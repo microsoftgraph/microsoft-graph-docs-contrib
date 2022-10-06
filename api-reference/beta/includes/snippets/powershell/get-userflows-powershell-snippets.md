@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgIdentityUserFlow -OutFile $outFileId
+Get-MgIdentityUserFlow
 
 ```

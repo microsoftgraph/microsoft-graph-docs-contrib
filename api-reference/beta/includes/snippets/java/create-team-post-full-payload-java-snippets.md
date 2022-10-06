@@ -26,7 +26,7 @@ TeamsTab tabs = new TeamsTab();
 tabs.additionalDataManager().put("teamsApp@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')"));
 tabs.displayName = "A Pinned Website";
 TeamsTabConfiguration configuration = new TeamsTabConfiguration();
-configuration.contentUrl = "https://docs.microsoft.com/microsoftteams/microsoft-teams";
+configuration.contentUrl = "https://learn.microsoft.com/microsoftteams/microsoft-teams";
 tabs.configuration = configuration;
 tabsList.add(tabs);
 TeamsTab tabs1 = new TeamsTab();

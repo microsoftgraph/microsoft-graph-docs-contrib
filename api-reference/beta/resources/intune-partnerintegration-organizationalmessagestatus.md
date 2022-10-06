@@ -24,6 +24,8 @@ Indicates the deployment status of the message
 |active|1|Indicates that the message is currently live and being presented to clients|
 |completed|2|Indicates that the message has been displayed to users already and is no longer active|
 |cancelled|3|Indicates that the message has been cancelled and will not be shown|
+|unknownFutureValue|4|UnknownFutureValue, Evolvable enumeration sentinel value. Do not use.|
+
 
 
 

@@ -13,7 +13,7 @@ requestBody.SetSoftwareType(&softwareType)
 softwareVersion := "1.0.96.22"
 requestBody.SetSoftwareVersion(&softwareVersion) 
 
-graphClient.Teamwork().DevicesById("teamworkDevice-id").UpdateSoftware().Post(requestBody)
+graphClient.Teamwork().DevicesById("teamworkDevice-id").UpdateSoftware().Post(context.Background(), requestBody, nil)
 
 
 ```

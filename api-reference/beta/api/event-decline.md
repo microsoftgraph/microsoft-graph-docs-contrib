@@ -1,7 +1,7 @@
 ---
 title: "event: decline"
 description: "Decline invitation to the specified event in a user calendar."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType

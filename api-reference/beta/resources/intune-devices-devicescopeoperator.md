@@ -27,3 +27,4 @@ Device scope configuration query operator. Possible values are: equals, notEqual
 
 
 
+

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamSchedule -TeamId $teamId -OutFile $outFileId
+Get-MgTeamSchedule -TeamId $teamId
 
 ```

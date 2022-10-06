@@ -1,6 +1,6 @@
 ---
 title: "Azure AD access reviews"
-description: "Use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights to Azure AD resources."
+description: "Use Azure AD access reviews to configure one-time or recurring access reviews for attestation of a principal's access rights to Azure AD resources."
 ms.localizationpriority: medium
 author: "jyothig123"
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 Namespace: microsoft.graph
 
-Use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of users' rights to access Azure AD resources. These Azure AD resources include groups, service principals, access packages, and privileged roles.
+Use Azure AD access reviews to configure one-time or recurring access reviews for attestation of a principal's right to access Azure AD resources. The principals are users or applications (service principals). The Azure AD resources include groups, applications (service principals), access packages, and privileged roles. Access reviews is a feature of Azure AD Identity Governance.
 
 Typical customer scenarios for access reviews include:
 
@@ -71,6 +71,8 @@ In addition, a user who is an assigned reviewer of an access review can manage t
 
 ## See also
 
+
+- [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)
 - [Tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Azure AD resources
 - [How an administrator can manage user access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
 - [How an administrator can manage guest access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)

@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewIdentityProvider()
-"@odata.type" := "microsoft.graph.openIdConnectProvider"
-requestBody.Set"@odata.type"(&"@odata.type") 
 name := "Login with the Contoso identity provider"
 requestBody.SetName(&name) 
 type := "OpenIDConnect"
@@ -39,7 +37,7 @@ claimsMapping.SetDisplayName(&displayName)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.IdentityProviders().Post(requestBody)
+result, err := graphClient.IdentityProviders().Post(context.Background(), requestBody, nil)
 
 
 ```

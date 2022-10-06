@@ -17,4 +17,4 @@ The preceding limits apply to the following resources:
  
 | <!-- fake header-->                                           |
 |---------------------------------------------------------------|
-| <ul> <li> [auditEvent](/graph/api/resources/auditevent) </ul> |
+| <ul> <li> [auditEvent](/graph/api/resources/intune-auditing-auditevent) </ul> |

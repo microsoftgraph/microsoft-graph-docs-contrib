@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see [Set up notifications for changes in user data](/graph/webhooks).
 
-Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
+Using the Microsoft Graph API, an app can subscribe to changes in the resources in the table below. Apply the resource path corresponding to your scenario as specified when [creating a subscription](/graph/api/subscription-post-subscriptions).
 
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications**                  |
 |:----------------|:------------|:-----------------------------------------|

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Policies().FeatureRolloutPoliciesById("featureRolloutPolicy-id").AppliesToById("directoryObject-id").$ref().Delete()
+graphClient.Policies().FeatureRolloutPoliciesById("featureRolloutPolicy-id").AppliesToById("directoryObject-id").$ref().Delete(context.Background(), nil)
 
 
 ```

@@ -11,7 +11,7 @@ requestBody := graphmodels.NewReferenceCreate()
 "@odata.id" := "https://graph.microsoft.com/v1.0/education/users/13015"
 requestBody.Set"@odata.id"(&"@odata.id") 
 
-graphClient.Education().ClassesById("educationClass-id").Members().$ref().Post(requestBody)
+graphClient.Education().ClassesById("educationClass-id").Members().$ref().Post(context.Background(), requestBody, nil)
 
 
 ```

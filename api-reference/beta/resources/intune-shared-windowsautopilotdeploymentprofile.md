@@ -1,7 +1,7 @@
 ---
 title: "windowsAutopilotDeploymentProfile resource type"
 description: "Windows Autopilot Deployment Profile"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -94,6 +94,8 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
 
 
 

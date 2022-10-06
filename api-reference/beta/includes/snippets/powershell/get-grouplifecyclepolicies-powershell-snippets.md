@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupLifecyclePolicyByGroup -GroupId $groupId -OutFile $outFileId
+Get-MgGroupLifecyclePolicyByGroup -GroupId $groupId
 
 ```

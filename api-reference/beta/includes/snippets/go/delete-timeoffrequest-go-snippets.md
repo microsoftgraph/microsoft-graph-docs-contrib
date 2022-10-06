@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.TeamsById("team-id").Schedule().TimeOffRequestsById("timeOffRequest-id").Delete()
+graphClient.TeamsById("team-id").Schedule().TimeOffRequestsById("timeOffRequest-id").Delete(context.Background(), nil)
 
 
 ```

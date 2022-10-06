@@ -10,16 +10,20 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestFilter := "extensionAttributes/extensionAttribute1 eq 'BYOD-Device'"
+requestCount := true
+
 requestParameters := &graphconfig.DevicesRequestBuilderGetQueryParameters{
-	Filter: "extensionAttributes/extensionAttribute1 eq 'BYOD-Device'",
-	Count: true,
+	Filter: &requestFilter,
+	Count: &requestCount,
 }
 configuration := &graphconfig.DevicesRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Devices().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Devices().Get(context.Background(), configuration)
 
 
 ```
