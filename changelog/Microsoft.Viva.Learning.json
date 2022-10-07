@@ -59,6 +59,32 @@
       "CreatedDateTime": "2022-10-06T12:05:38.2036346Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Employee learning"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "350de76b-a9bd-44f8-8e63-7918fb50ceaf",
+          "ApiChange": "Property",
+          "ChangedApiName": "contributor",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **contributor** property from the [learningContent](https://learn.microsoft.com/en-us/graph/api/resources/learningContent?view=graph-rest-beta) resource. Use the **contributors** property instead.",
+          "Target": "learningContent"
+        },
+        {
+          "Id": "350de76b-a9bd-44f8-8e63-7918fb50ceaf",
+          "ApiChange": "Property",
+          "ChangedApiName": "contributors",
+          "ChangeType": "Addition",
+          "Description": "Added the **contributors** property to the [learningContent](https://learn.microsoft.com/en-us/graph/api/resources/learningContent?view=graph-rest-beta) resource.",
+          "Target": "learningContent"
+        }
+      ],
+      "Id": "350de76b-a9bd-44f8-8e63-7918fb50ceaf",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T06:31:57.402868Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Employee learning"
     }
   ]
 }

@@ -56,7 +56,7 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContent
 |:---|:---|:---|
 |additionalTags|String collection|Keywords, topics, and other tags associated with the learning content. Optional.|
 |contentWebUrl|String|The content web URL for the learning content. Required.|
-|contributor|String|The author, creator, or contributor of the learning content. Optional.|
+|contributors|String collection|The authors, creators, or contributors of the learning content. Optional.|
 |createdDateTime|DateTimeOffset|The date when the learning content was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
 |description|String|The description or summary for the learning content. Optional.|
 |duration|Duration|The duration of the learning content in seconds. Optional.|
@@ -72,8 +72,6 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContent
 |sourceName|String|The source name of the learning content, such as `LinkedIn Learning` or `Coursera`. Optional.|
 |thumbnailWebUrl|String|The URL of learning content thumbnail image. Optional.|
 |title|String|The title of the learning content. Required.|
-
-
 
 ## Response
 
@@ -154,7 +152,10 @@ Content-Type: application/json
     "format": "Book",
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
-    "contributor": "Scott Simpson",
+    "contributors": [
+      "Lina Wagner",
+      "Lisa Richter"
+    ],
     "additionalTags": [
         "Create private or public teams",
         "Add members to teams"
@@ -169,6 +170,20 @@ Content-Type: application/json
     "isSearchable": true
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-learningcontent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-learningcontent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-learningcontent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Example 2: Update the metadata of a learning content based on its external ID
 
@@ -243,7 +258,10 @@ Content-Type: application/json
     "format": "Book",
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
-    "contributor": "Scott Simpson",
+    "contributors": [
+        "Lina Wagner",
+        "Lisa Richter"
+    ],
     "additionalTags": [
         "Create private or public teams",
         "Add members to teams"
