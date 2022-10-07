@@ -281,6 +281,42 @@
     {
       "ChangeList": [
         {
+          "Id": "D8A83E3D-D9B6-4ED4-8979-A514F8C6766E",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Chat.ManageDeletion.All",
+          "ChangeType": "Addition",
+          "Description": "Added new permissions [Chat.ManageDeletion.All](https://docs.microsoft.com/en-us/graph/permissions-reference#Teams-app-installation-permissions).",
+          "Target": ""
+        }
+      ],
+      "Id": "D8A83E3D-D9B6-4ED4-8979-A514F8C6766E",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-06T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "05DF0873-86C7-4B55-99AB-35AE3A4AFB09",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Chat.ManageDeletion.All",
+          "ChangeType": "Addition",
+          "Description": "Added new permissions [Chat.ManageDeletion.All](https://docs.microsoft.com/en-us/graph/permissions-reference#Teams-app-installation-permissions).",
+          "Target": ""
+        }
+      ],
+      "Id": "05DF0873-86C7-4B55-99AB-35AE3A4AFB09",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-06T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
           "ApiChange": "Resource",
           "ChangedApiName": "actionResultPart",
