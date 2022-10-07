@@ -57,8 +57,11 @@ In the request body, omit both sites and share cookies to publish the entire sit
 If successful, this action returns a `200 OK` response code and a [browserSiteList](../resources/browsersitelist.md) in the response body.
 
 ## Examples
+
 ### Example 1: Publish all sites and shared cookies
+
 #### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -116,7 +119,9 @@ Content-Type: application/json
 ```
 
 ### Example 2: Publish specific sites and shared cookies
+
 #### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
