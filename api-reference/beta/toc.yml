@@ -16218,6 +16218,10 @@ items:
             href: api/sharedwithchannelteaminfo-delete.md
           - name: List allowed members
             href: api/sharedwithchannelteaminfo-list-allowedmembers.md
+          - name: Set message reaction
+            href: api/chatmessage-setreaction.md
+          - name: Unset message reaction
+            href: api/chatmessage-unsetreaction.md
         - name: Chat
           href: resources/chat.md
           items:
@@ -16267,6 +16271,10 @@ items:
             href: api/chat-post-pinnedmessages.md
           - name: Unpin message
             href: api/chat-delete-pinnedmessages.md
+          - name: Set message reaction
+            href: api/chatmessage-setreaction.md
+          - name: Unset message reaction
+            href: api/chatmessage-unsetreaction.md
         - name: Chat message
           href: resources/chatmessage.md
           items:
@@ -16304,6 +16312,10 @@ items:
             href: api/chat-post-pinnedmessages.md
           - name: Unpin message
             href: api/chat-delete-pinnedmessages.md
+          - name: Set message reaction
+            href: api/chatmessage-setreaction.md
+          - name: Unset message reaction
+            href: api/chatmessage-unsetreaction.md
         - name: Pinned chat message
           href: resources/pinnedchatmessageinfo.md
           items:
