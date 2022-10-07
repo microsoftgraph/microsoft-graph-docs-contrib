@@ -5939,6 +5939,24 @@
       "CreatedDateTime": "2022-10-04T08:14:02.5231411Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f30575cf-9eb6-430f-885c-1cec5536d7d7",
+          "ApiChange": "Member",
+          "ChangedApiName": "azureCommunicationServicesUser",
+          "ChangeType": "Addition",
+          "Description": "Added the `azureCommunicationServicesUser` value to the **teamworkUserIdentityType** enumeration.",
+          "Target": "teamworkUserIdentityType"
+        }
+      ],
+      "Id": "f30575cf-9eb6-430f-885c-1cec5536d7d7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-06T20:34:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }
