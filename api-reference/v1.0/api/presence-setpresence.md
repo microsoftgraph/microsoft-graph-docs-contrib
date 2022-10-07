@@ -72,7 +72,7 @@ Supported combinations of `availability` and `activity` are:
 | Busy         | InACall           | Updates the presence session as Busy, InACall.            |
 | Busy         | InAConferenceCall | Updates the presence session as Busy, InAConferenceCall.  |
 | Away         | Away              | Updates the presence session as Away.                     |
-| DoNotDisturb | Presenting		   | Updates the presence session as DoNotDisturb, Presenting. |
+| DoNotDisturb | Presenting        | Updates the presence session as DoNotDisturb, Presenting. |
 
 ## Response
 If successful, this method returns a `200 OK` response code.
