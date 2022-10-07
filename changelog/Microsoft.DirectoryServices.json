@@ -11738,6 +11738,48 @@
       "CreatedDateTime": "2022-10-03T07:06:20.8129252Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
-    }
+    },
+		{
+			"ChangeList": [
+				{
+					"Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
+					"ApiChange": "Enumeration",
+					"ChangedApiName": "templateScenarios",
+					"ChangeType": "Addition",
+					"Description": "Added the [templateScenarios](https://docs.microsoft.com/en-us/?view=graph-rest-1.0) resource",
+					"Target": "templateScenarios"
+				},
+				{
+					"Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
+					"ApiChange": "Resource",
+					"ChangedApiName": "conditionalAccessPolicyDetail",
+					"ChangeType": "Addition",
+					"Description": "Added the [conditionalAccessPolicyDetail](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicyDetail?view=graph-rest-1.0) resource",
+					"Target": "conditionalAccessPolicyDetail"
+				},
+				{
+					"Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
+					"ApiChange": "Resource",
+					"ChangedApiName": "templates",
+					"ChangeType": "Addition",
+					"Description": "Added the [templates](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-1.0) resource",
+					"Target": "conditionalAccessRoot"
+				},
+				{
+					"Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
+					"ApiChange": "Resource",
+					"ChangedApiName": "conditionalAccessTemplate",
+					"ChangeType": "Addition",
+					"Description": "Added the [conditionalAccessTemplate](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessTemplate?view=graph-rest-1.0) resource",
+					"Target": "conditionalAccessTemplate"
+				}
+			],
+			"Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2022-10-04T16:30:13.2808833Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		}
   ]
 }

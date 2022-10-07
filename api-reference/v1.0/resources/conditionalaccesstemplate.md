@@ -1,7 +1,7 @@
 ---
 title: "conditionalAccessTemplate resource type"
-description: "Represents a Microsoft recommended template for Azure Active Directory conditional access policy."
-author: "xuchen1"
+description: "Represents a Microsoft recommended template of best practice configurations for Azure Active Directory conditional access policies."
+author: "lisaychuang"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a Microsoft recommended template for Azure Active Directory conditional access policies.
+Represents a Microsoft recommended template of best practice configurations for Azure Active Directory [conditional access policies](../resources/conditionalaccesspolicy.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -24,11 +24,11 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String| The human-readable name of the template. |
+|description|String| The user-friendly name of the template. |
 |details|[conditionalAccessPolicyDetail](../resources/conditionalaccesspolicydetail.md)| Complete list of policy details specific to the template. This property contains the JSON of policy settings for configuring a Conditional Access policy. |
-|id|String| Immutable id of a template, this value will be represented as GUID. Inherited from [entity](../resources/entity.md). |
-|name|String| The human-readable name of the template. |
-|scenarios|templateScenarios| List of scenarios a template is recommended for. The following are valid scenarios `new`, `secureFoundation`, `zeroTrust`, `remoteWork`, `protectAdmins`, `emergingThreats`. |
+|id|String| Immutable ID of a template. Inherited from [entity](../resources/entity.md). |
+|name|String| The user-friendly name of the template. |
+|scenarios|templateScenarios| List of conditional access scenarios that the template is recommended for. The possible values are: `new`, `secureFoundation`, `zeroTrust`, `remoteWork`, `protectAdmins`, `emergingThreats`, `unknownFutureValue`. This is a multi-valued enum. Supports `$filter` (`has`).|
 
 ## Relationships
 None.
