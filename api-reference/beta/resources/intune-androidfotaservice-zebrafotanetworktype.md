@@ -30,4 +30,3 @@ Represents various network types for Zebra FOTA deployment.
 
 
 
-

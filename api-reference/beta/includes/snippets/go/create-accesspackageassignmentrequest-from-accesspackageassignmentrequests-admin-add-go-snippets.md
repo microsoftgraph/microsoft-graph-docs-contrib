@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewAccessPackageAssignmentRequest()
 requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType) 
-accessPackageAssignment := graphmodels.NewaccessPackageAssignment()
+accessPackageAssignment := graphmodels.NewAccessPackageAssignment()
 targetId := "46184453-e63b-4f20-86c2-c557ed5d5df9"
 accessPackageAssignment.SetTargetId(&targetId) 
 assignmentPolicyId := "2264bf65-76ba-417b-a27d-54d291f0cbc8"

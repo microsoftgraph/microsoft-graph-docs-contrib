@@ -14,7 +14,7 @@ $requestBody->setName('Shared legal agreements');
 
 
 
-$graphServiceClient->drive()->itemsById('driveItem-id')->patch($requestBody);
+$requestResult = $graphServiceClient->drive()->itemsById('driveItem-id')->patch($requestBody);
 
 
 ```

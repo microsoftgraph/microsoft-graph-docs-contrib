@@ -42,7 +42,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->directory()->customSecurityAttributeDefinitionsById('customSecurityAttributeDefinition-id')->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->directory()->customSecurityAttributeDefinitionsById('customSecurityAttributeDefinition-id')->patch($requestBody, $requestConfiguration);
 
 
 ```

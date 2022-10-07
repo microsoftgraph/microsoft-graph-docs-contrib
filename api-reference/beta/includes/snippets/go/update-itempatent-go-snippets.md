@@ -13,7 +13,7 @@ requestBody.SetNumber(&number)
 webUrl := "https://patents.gov/3954432633"
 requestBody.SetWebUrl(&webUrl) 
 
-graphClient.UsersById("user-id").Profile().PatentsById("itemPatent-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.UsersById("user-id").Profile().PatentsById("itemPatent-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

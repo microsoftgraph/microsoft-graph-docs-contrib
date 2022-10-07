@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new SchemaPostRequestBody();
+$requestBody = new SchemaPutRequestBody();
 $additionalData = [
 'directories' => $directories1 = new ();
 $		directories1->setName('Azure Active Directory');

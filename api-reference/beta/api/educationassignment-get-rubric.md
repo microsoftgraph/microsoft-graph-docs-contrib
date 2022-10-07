@@ -2,7 +2,7 @@
 title: "Get educationRubric attached to educationAssignment"
 description: "Get the educationRubric attached to an educationAssignment, if one exists."
 ms.localizationpriority: medium
-author: "dipakboyed"
+author: "Sureshpadimi88"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
@@ -32,6 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{id}/assignments/{id}/rubric
 ```
+
+## Optional query parameters
+
+This method supports the `$top`,and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 
