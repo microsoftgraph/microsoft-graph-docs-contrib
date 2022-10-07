@@ -63,7 +63,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "browserSiteList",
             "ChangeType": "Addition",
-            "Description": "Added the [browserSiteList](https://learn.microsoft.com/graph/api/resources/browserSiteList?view=graph-rest-beta) resource type.",
+            "Description": "Added the [browserSiteList](https://learn.microsoft.com/graph/api/resources/browserSiteList?view=graph-rest-beta) resource and supported methods.",
             "Target": "browserSiteList"
           },
           {
@@ -111,7 +111,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "internetExplorerMode",
             "ChangeType": "Addition",
-            "Description": "Added the [edge](https://learn.microsoft.com/graph/api/resources/internetExplorerMode?view=graph-rest-beta) resource and supported methods.",
+            "Description": "Added the [internetExplorerMode](https://learn.microsoft.com/graph/api/resources/internetExplorerMode?view=graph-rest-beta) resource type.",
             "Target": "internetExplorerMode"
           },
           {
