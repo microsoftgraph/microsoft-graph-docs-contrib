@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|LearningContent.Read.All|
+|Delegated (work or school account)|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|LearningContent.Read.All|
 
@@ -107,6 +107,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents",
     "value": [
         {
+            "id": "99029577-a660-46b6-ba58-3ce4d21d5f50",
             "externalId": "LP4771",
             "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
             "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
@@ -134,6 +135,7 @@ Content-type: application/json
             "isSearchable": false
         },
         {
+            "id": "77029588-a660-46b6-ba58-3ce4d21d5678",
             "externalId": "LP4772",
             "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
             "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",

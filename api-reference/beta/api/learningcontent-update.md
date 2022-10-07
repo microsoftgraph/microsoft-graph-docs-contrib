@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the specified [learningContent](../resources/learningcontent.md) resource. 
+Update the specified [learningContent](../resources/learningcontent.md) resource.
 
 Used by a [learning provider](../resources/learningprovider.md) to ingest or update the metadata for their content in Viva Learning. If the specified learning content doesn't yet exist for the specified provider, this operation creates the metadata for the new content. Otherwise, this operation replaces the metadata of the existing content.
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|LearningContent.ReadWrite.All|
+|Delegated (work or school account)|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|LearningContent.ReadWrite.All|
 
@@ -31,8 +31,15 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
+For a specific learning content based on its ID (primary key):
 ``` http
-PATCH /employeeExperience/learningProviders/{registrationId}/learningContents(externalId='{externalId}') 
+PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}
+```
+
+For a specific learning content based on its external ID (secondary key):
+``` http
+PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContents(externalId='{externalId}') 
 ```
 
 ## Request headers
@@ -74,12 +81,106 @@ If successful, this method returns a `202 Accepted` response code and an updated
 
 ## Examples
 
-### Request
-The following is an example of a request.
+### Example 1: Update the metadata of a learning content based on its ID
+
+The following example shows a request that updates the metadata of a learning content based on its ID (primary key).
+
+#### Request
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_learningcontent"
+  "name": "update_learningcontent_id",
+  "sampleKeys": ["13727311-e7bb-470d-8b20-6a23d9030d70", "77029588-a660-46b6-ba58-3ce4d21d5678"]
+}
+-->
+``` http
+PATCH /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents/77029588-a660-46b6-ba58-3ce4d21d5678
+Content-Type: application/json
+
+{
+    "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
+    "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
+    "contentWebUrl": "https://learn.microsoft.com/learn/modules/manage-classes-resources-assessment-planning-beedle/",
+    "sourceName": "MsLearn",
+    "thumbnailWebUrl": "https://syndetics.com/index.aspx?isbn=9783319672175/LC.GIF",
+    "languageTag": "en-us",
+    "numberOfPages": 9,
+    "duration": "PT20M",
+    "format": "Book",
+    "createdDateTime": "2018-01-01T00:00:00",
+    "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
+    "contributor": "Scott Simpson",
+    "additionalTags": [
+        "Create private or public teams",
+        "Add members to teams"
+    ],
+    "skillTags": [
+        "Create teams",
+        "Teams channels",
+        "Teams members"
+    ],
+    "isActive": true,
+    "isPremium": false,
+    "isSearchable": true
+}
+```
+
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.learningContent"
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents/$entity",
+    "id": "77029588-a660-46b6-ba58-3ce4d21d5678",
+    "externalId": "LP4471",
+    "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
+    "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
+    "contentWebUrl": "https://learn.microsoft.com/learn/modules/manage-classes-resources-assessment-planning-beedle/",
+    "sourceName": "MsLearn",
+    "thumbnailWebUrl": "https://syndetics.com/index.aspx?isbn=9783319672175/LC.GIF",
+    "languageTag": "en-us",
+    "numberOfPages": 9,
+    "duration": "PT20M",
+    "format": "Book",
+    "createdDateTime": "2018-01-01T00:00:00",
+    "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
+    "contributor": "Scott Simpson",
+    "additionalTags": [
+        "Create private or public teams",
+        "Add members to teams"
+    ],
+    "skillTags": [
+        "Create teams",
+        "Teams channels",
+        "Teams members"
+    ],
+    "isActive": true,
+    "isPremium": false,
+    "isSearchable": true
+}
+```
+
+### Example 2: Update the metadata of a learning content based on its external ID
+
+The following example shows a request that updates the metadata of a learning content based on its external ID (secondary key).
+
+#### Request
+The following example shows the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_learningcontent_externalid",
+  "sampleKeys": ["13727311-e7bb-470d-8b20-6a23d9030d70", "LP4471"]
 }
 -->
 ``` http
@@ -114,10 +215,8 @@ Content-Type: application/json
 }
 ```
 
-
-
-### Response
-The following is an example of the response.
+#### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -131,6 +230,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents/$entity",
+    "id": "77029588-a660-46b6-ba58-3ce4d21d5678",
     "externalId": "LP4471",
     "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
     "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
