@@ -93,7 +93,6 @@ POST https://graph.microsoft.com/beta/teams/teamsid/channels/channelId/messages/
   "reactionType": "💘"
 }
 ```
----
 
 #### Response
 
@@ -115,8 +114,6 @@ POST https://graph.microsoft.com/beta/teams/teamsid/channels/channelId/messages/
   "reactionType": "💘"
 }
 ```
----
-
 
 #### Response
 
