@@ -374,13 +374,13 @@ None.
 
 #### Delegated
 
-* _BrowserSiteLists.Read.All_: List all browserSiteLists (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
-* _BrowserSiteLists.ReadWrite.All_: Update a browserSiteList (`PATCH /beta/admin/edge/internetExplorerMode/siteLists/{id}`)
+* _BrowserSiteLists.Read.All_: List all browser site lists, on behalf of a signed-in user (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
+* _BrowserSiteLists.ReadWrite.All_: Update a browser site list, on behalf of a signed-in user (`PATCH /beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}`)
 
 #### Application
 
-* _BrowserSiteLists.Read.All_: List all applications (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
-* _BrowserSiteLists.ReadWrite.All_: Delete a service principal (`DELETE /beta/admin/edge/internetExplorerMode/siteLists/{id}`)
+* _BrowserSiteLists.Read.All_: List all browser site lists, without a signed-in user (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
+* _BrowserSiteLists.ReadWrite.All_: Delete a browser site list, without a signed-in user (`DELETE /beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}`)
 
 ---
 
