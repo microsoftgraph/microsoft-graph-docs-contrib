@@ -1,6 +1,6 @@
 ---
 title: "Overview for using the Edge API in Microsoft Graph to manage browsers"
-description: "Microsoft Edge is one of the applications that administrators manage through the Microsoft 365 admin center. As an alternative to using the Microsoft 365 admin center, apps can use the Microsoft Graph API to manage the same Edge settings configured through the Microsoft 365 admin center."
+description: "Use the Edge API in Microsoft Graph to streamline the way you manage cloud site lists."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "browser-management"
@@ -8,7 +8,7 @@ ms.prod: "browser-management"
 
 # Overview for using the Edge API in Microsoft Graph to manage browsers
 
-The [Microsoft 365 admin center](https://admin.microsoft.com/) lets administrators manage applications, services, data, devices, and users across Microsoft 365 services in an organization.  Microsoft Edge is one of the applications the settings for which administrators manage through the admin center.
+The [Microsoft 365 admin center](https://admin.microsoft.com/) lets administrators manage applications, services, data, devices, and users across Microsoft 365 services in an organization. Microsoft Edge is one of the applications that administrators manage through the admin center.
 
 ## Why integrate with Edge settings in the Microsoft 365 admin center?
 
@@ -16,7 +16,7 @@ The [Microsoft 365 admin center](https://admin.microsoft.com/) lets administrato
 
 Edge supports [IE mode](/deployedge/edge-ie-mode) to enable your organization to use a single browser for both legacy and modern websites and applications. Organizations can use [cloud site lists](/deployedge/edge-ie-mode-cloud-site-list-mgmt#overview) for IE mode to manage a list of websites that should automatically load in IE mode, supporting the transition from IE11 to IE mode. As an alternative to using the Microsoft 365 admin center, apps can use the Microsoft Graph API to manage the same [browser site lists](/graph/api/resources/browsersitelist) configured through the Microsoft 365 admin center.
 
-![Screenshot of the of Microsoft Edge site lists page in the Microsoft 365 admin center.](./images/edge-site-lists.png)
+![Screenshot of the Microsoft Edge site lists page in the Microsoft 365 admin center.](./images/edge-site-lists.png)
 
 ### Manage and store IE mode sites in the cloud
 
