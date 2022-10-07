@@ -13,7 +13,7 @@ requestBody.SetDecision(&decision)
 justification := "This person is still on my team"
 requestBody.SetJustification(&justification) 
 
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").StagesById("accessReviewStage-id").DecisionsById("accessReviewInstanceDecisionItem-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").StagesById("accessReviewStage-id").DecisionsById("accessReviewInstanceDecisionItem-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

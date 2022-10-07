@@ -8,9 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewEducationalActivity()
-completionMonthYear := "Date"
+completionMonthYear := date
 requestBody.SetCompletionMonthYear(&completionMonthYear) 
-endMonthYear := "Date"
+endMonthYear := date
 requestBody.SetEndMonthYear(&endMonthYear) 
 institution := graphmodels.NewInstitutionData()
 description := null
@@ -56,7 +56,7 @@ program.SetNotes(&notes)
 webUrl := "https://biz.colostate.edu"
 program.SetWebUrl(&webUrl) 
 requestBody.SetProgram(program)
-startMonthYear := "Date"
+startMonthYear := date
 requestBody.SetStartMonthYear(&startMonthYear) 
 
 result, err := graphClient.Me().Profile().EducationalActivities().Post(context.Background(), requestBody, nil)

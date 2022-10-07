@@ -18,7 +18,7 @@ engineering.SetProjectDate(&projectDate)
 customSecurityAttributes.SetAdditionalData(additionalData)
 requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

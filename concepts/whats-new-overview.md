@@ -128,6 +128,16 @@ Use the latest generation of [alerts and incidents](/graph/api/resources/securit
 ### Teamwork and communications | Messaging
 [List](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true) and sort chats in descending order.
 
+### SDKs
+Try the new [Microsoft Graph PHP SDK 2.0.0-RC5](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-php-sdk-2-0-0-rc5-is-now-available/) and take advantage of the following improvements:
+- A new authentication provider that automatically refreshes access tokens.
+- A built-in retry handler that understands response status codes.
+- A fluent request building pattern to improve efficiency and discoverability.
+
+To get started, see:
+- [README](https://aka.ms/graph/sdk/php/preview/readme)
+- [Upgrade guide](https://aka.ms/graph/sdk/php/preview/upgrade)
+- [Code examples](https://aka.ms/graph/sdk/php/preview/examples)
 
 ## Want to stay in the loop?
 

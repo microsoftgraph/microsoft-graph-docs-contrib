@@ -37,7 +37,7 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.NOEND_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := "2018-08-03T21:02:30.667Z"
+startDate := 2018-08-03T21:02:30.667Z
 range.SetStartDate(&startDate) 
 additionalData := map[string]interface{}{
 	"count" : int32(0) , 
