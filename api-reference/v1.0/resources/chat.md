@@ -62,6 +62,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Represents details about an online meeting. If the chat isn't associated with an online meeting, the property is empty. Read-only.|
 | tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
+| viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
 | webUrl | String| The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only. |
 
 ### chatType values 
@@ -103,6 +104,9 @@ The following is a JSON representation of the resource.
   "chatType": "string",
   "webUrl": "string",
   "tenantId": "string",
+  "viewpoint": {
+    "@odata.type": "microsoft.graph.chatViewpoint"
+  },
   "onlineMeetingInfo": {
     "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
   }
