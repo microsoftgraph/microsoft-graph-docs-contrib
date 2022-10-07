@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of an application used for communications such as calling. These should be registered as enterprise applications in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/).
+Represents the identity of an application used for communications such as calling. These should be registered as enterprise applications in [Azure Active Directory](/azure/active-directory/).
 
 Inherits from [identity](identity.md).
 

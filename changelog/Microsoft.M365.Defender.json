@@ -135,7 +135,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "alertComment",
 					"ChangeType": "Addition",
-					"Description": "Added the [alertComment](https://docs.microsoft.com/en-us/graph/api/resources/security-alertComment?view=graph-rest-beta) resource type.",
+					"Description": "Added the [alertComment](https://learn.microsoft.com/en-us/graph/api/resources/security-alertComment?view=graph-rest-beta) resource type.",
 					"Target": "alertComment"
 				},
 				{
@@ -143,7 +143,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "incident",
 					"ChangeType": "Addition",
-					"Description": "Added the [incident](https://docs.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource type.",
+					"Description": "Added the [incident](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource type.",
 					"Target": "incident"
 				},
 				{
@@ -151,7 +151,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "alert",
 					"ChangeType": "Addition",
-					"Description": "Added the [alert](https://docs.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource type.",
+					"Description": "Added the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource type.",
 					"Target": "alert"
 				},
 				{
@@ -159,7 +159,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "alertEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [alertEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-alertEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [alertEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-alertEvidence?view=graph-rest-beta) resource type.",
 					"Target": "alertEvidence"
 				},
 				{
@@ -167,7 +167,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "loggedOnUser",
 					"ChangeType": "Addition",
-					"Description": "Added the [loggedOnUser](https://docs.microsoft.com/en-us/graph/api/resources/security-loggedOnUser?view=graph-rest-beta) resource type.",
+					"Description": "Added the [loggedOnUser](https://learn.microsoft.com/en-us/graph/api/resources/security-loggedOnUser?view=graph-rest-beta) resource type.",
 					"Target": "loggedOnUser"
 				},
 				{
@@ -175,7 +175,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "analyzedmessageevidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [analyzedmessageevidence](https://docs.microsoft.com/en-us/graph/api/resources/security-analyzedmessageevidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [analyzedmessageevidence](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedmessageevidence?view=graph-rest-beta) resource type.",
 					"Target": "analyzedmessageevidence"
 				},
 				{
@@ -183,7 +183,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "cloudApplicationEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [cloudApplicationEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-cloudApplicationEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [cloudApplicationEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudApplicationEvidence?view=graph-rest-beta) resource type.",
 					"Target": "cloudApplicationEvidence"
 				},
 				{
@@ -191,7 +191,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "deviceevidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [deviceevidence](https://docs.microsoft.com/en-us/graph/api/resources/security-deviceevidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [deviceevidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceevidence?view=graph-rest-beta) resource type.",
 					"Target": "deviceevidence"
 				},
 				{
@@ -199,7 +199,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "emailSender",
 					"ChangeType": "Addition",
-					"Description": "Added the [emailSender](https://docs.microsoft.com/en-us/graph/api/resources/security-emailSender?view=graph-rest-beta) resource type.",
+					"Description": "Added the [emailSender](https://learn.microsoft.com/en-us/graph/api/resources/security-emailSender?view=graph-rest-beta) resource type.",
 					"Target": "emailSender"
 				},
 				{
@@ -207,7 +207,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "fileDetails",
 					"ChangeType": "Addition",
-					"Description": "Added the [fileDetails](https://docs.microsoft.com/en-us/graph/api/resources/security-fileDetails?view=graph-rest-beta) resource type.",
+					"Description": "Added the [fileDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-fileDetails?view=graph-rest-beta) resource type.",
 					"Target": "fileDetails"
 				},
 				{
@@ -215,7 +215,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "fileEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [fileEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-fileEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [fileEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-fileEvidence?view=graph-rest-beta) resource type.",
 					"Target": "fileEvidence"
 				},
 				{
@@ -223,7 +223,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "ipEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [ipEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-ipEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [ipEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-ipEvidence?view=graph-rest-beta) resource type.",
 					"Target": "ipEvidence"
 				},
 				{
@@ -231,7 +231,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "mailboxEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [mailboxEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-mailboxEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [mailboxEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxEvidence?view=graph-rest-beta) resource type.",
 					"Target": "mailboxEvidence"
 				},
 				{
@@ -239,7 +239,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "mailClusterEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [mailClusterEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-mailClusterEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [mailClusterEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-mailClusterEvidence?view=graph-rest-beta) resource type.",
 					"Target": "mailClusterEvidence"
 				},
 				{
@@ -247,7 +247,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "oauthApplicationEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [oauthApplicationEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-oauthApplicationEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [oauthApplicationEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-oauthApplicationEvidence?view=graph-rest-beta) resource type.",
 					"Target": "oauthApplicationEvidence"
 				},
 				{
@@ -255,7 +255,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "processEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [processEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-processEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [processEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-processEvidence?view=graph-rest-beta) resource type.",
 					"Target": "processEvidence"
 				},
 				{
@@ -263,7 +263,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "registryKeyEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [registryKeyEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-registryKeyEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [registryKeyEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-registryKeyEvidence?view=graph-rest-beta) resource type.",
 					"Target": "registryKeyEvidence"
 				},
 				{
@@ -271,7 +271,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "registryValueEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [registryValueEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-registryValueEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [registryValueEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-registryValueEvidence?view=graph-rest-beta) resource type.",
 					"Target": "registryValueEvidence"
 				},
 				{
@@ -279,7 +279,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "securityGroupEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [securityGroupEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-securityGroupEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securityGroupEvidence?view=graph-rest-beta) resource type.",
 					"Target": "securityGroupEvidence"
 				},
 				{
@@ -287,7 +287,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "urlEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [urlEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-urlEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [urlEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-urlEvidence?view=graph-rest-beta) resource type.",
 					"Target": "urlEvidence"
 				},
 				{
@@ -295,7 +295,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "userAccount",
 					"ChangeType": "Addition",
-					"Description": "Added the [userAccount](https://docs.microsoft.com/en-us/graph/api/resources/security-userAccount?view=graph-rest-beta) resource type.",
+					"Description": "Added the [userAccount](https://learn.microsoft.com/en-us/graph/api/resources/security-userAccount?view=graph-rest-beta) resource type.",
 					"Target": "userAccount"
 				},
 				{
@@ -303,7 +303,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "userEvidence",
 					"ChangeType": "Addition",
-					"Description": "Added the [userEvidence](https://docs.microsoft.com/en-us/graph/api/resources/security-userEvidence?view=graph-rest-beta) resource type.",
+					"Description": "Added the [userEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-userEvidence?view=graph-rest-beta) resource type.",
 					"Target": "userEvidence"
 				},
 				{
@@ -311,7 +311,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "vmMetadata",
 					"ChangeType": "Addition",
-					"Description": "Added the [vmMetadata](https://docs.microsoft.com/en-us/graph/api/resources/security-vmMetadata?view=graph-rest-beta) resource type.",
+					"Description": "Added the [vmMetadata](https://learn.microsoft.com/en-us/graph/api/resources/security-vmMetadata?view=graph-rest-beta) resource type.",
 					"Target": "vmMetadata"
 				},
 				{
@@ -319,7 +319,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "Get",
 					"ChangeType": "Addition",
-					"Description": "Added the [Get incident](https://docs.microsoft.com/en-us/graph/api/security-incident-get?view=graph-rest-beta) operation.",
+					"Description": "Added the [Get incident](https://learn.microsoft.com/en-us/graph/api/security-incident-get?view=graph-rest-beta) operation.",
 					"Target": "incident"
 				},
 				{
@@ -327,7 +327,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "Get",
 					"ChangeType": "Addition",
-					"Description": "Added the [Get alert](https://docs.microsoft.com/en-us/graph/api/security-alert-get?view=graph-rest-beta) operation.",
+					"Description": "Added the [Get alert](https://learn.microsoft.com/en-us/graph/api/security-alert-get?view=graph-rest-beta) operation.",
 					"Target": "alert"
 				},
 				{
@@ -335,7 +335,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "List",
 					"ChangeType": "Addition",
-					"Description": "Added the [List incidents](https://docs.microsoft.com/en-us/graph/api/security-list-incidents?view=graph-rest-beta) operation.",
+					"Description": "Added the [List incidents](https://learn.microsoft.com/en-us/graph/api/security-list-incidents?view=graph-rest-beta) operation.",
 					"Target": "incident"
 				},
 				{
@@ -343,7 +343,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "List",
 					"ChangeType": "Addition",
-					"Description": "Added the [List alerts](https://docs.microsoft.com/en-us/graph/api/security-list-alerts_v2?view=graph-rest-beta) operation.",
+					"Description": "Added the [List alerts](https://learn.microsoft.com/en-us/graph/api/security-list-alerts_v2?view=graph-rest-beta) operation.",
 					"Target": "alert"
 				}
 			],

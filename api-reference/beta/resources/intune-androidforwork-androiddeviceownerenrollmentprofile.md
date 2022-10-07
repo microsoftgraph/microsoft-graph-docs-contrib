@@ -47,6 +47,7 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 |qrCodeContent|String|String used to generate a QR code for the token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|String used to generate a QR code for the token.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
+|configureWifi|Boolean|Boolean that indicates that the Wi-Fi network should be configured during device provisioning. When set to TRUE, device provisioning will use Wi-Fi related properties to automatically connect to Wi-Fi networks. When set to FALSE or undefined, other Wi-Fi related properties will be ignored. Default value is TRUE. Returned by default.|
 |wifiSsid|String|String that contains the wi-fi login ssid|
 |wifiPassword|String|String that contains the wi-fi login password|
 |wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|String that contains the wi-fi security type. Possible values are: `none`, `wpa`, `wep`.|
@@ -88,12 +89,14 @@ Here is a JSON representation of the resource.
   "roleScopeTagIds": [
     "String"
   ],
+  "configureWifi": true,
   "wifiSsid": "String",
   "wifiPassword": "String",
   "wifiSecurityType": "String",
   "wifiHidden": true
 }
 ```
+
 
 
 

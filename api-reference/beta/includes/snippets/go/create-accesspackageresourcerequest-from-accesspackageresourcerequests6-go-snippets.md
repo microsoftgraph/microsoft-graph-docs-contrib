@@ -14,7 +14,7 @@ requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType) 
 justification := ""
 requestBody.SetJustification(&justification) 
-accessPackageResource := graphmodels.NewaccessPackageResource()
+accessPackageResource := graphmodels.NewAccessPackageResource()
 displayName := "Faculty cafeteria ordering"
 accessPackageResource.SetDisplayName(&displayName) 
 description := "Example application"
@@ -37,12 +37,8 @@ accessPackageResourceAttribute.SetIsEditable(&isEditable)
 isPersistedOnAssignmentRemoval := true
 accessPackageResourceAttribute.SetIsPersistedOnAssignmentRemoval(&isPersistedOnAssignmentRemoval) 
 attributeSource := graphmodels.NewAccessPackageResourceAttributeSource()
-"@odata.type" := "#microsoft.graph.accessPackageResourceAttributeQuestion"
-attributeSource.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 question := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessPackageTextInputQuestion"
-question.Set"@odata.type"(&"@odata.type") 
 	isRequired := false
 question.SetIsRequired(&isRequired) 
 sequence := int32(0)
@@ -62,8 +58,6 @@ text.SetDefaultText(&defaultText)
 attributeSource.SetAdditionalData(additionalData)
 accessPackageResourceAttribute.SetAttributeSource(attributeSource)
 attributeDestination := graphmodels.NewAccessPackageResourceAttributeDestination()
-"@odata.type" := "#microsoft.graph.accessPackageUserDirectoryAttributeStore"
-attributeDestination.Set"@odata.type"(&"@odata.type") 
 accessPackageResourceAttribute.SetAttributeDestination(attributeDestination)
 
 attributes := []graphmodels.AccessPackageResourceAttributeable {
@@ -73,7 +67,7 @@ attributes := []graphmodels.AccessPackageResourceAttributeable {
 accessPackageResource.SetAttributes(attributes)
 requestBody.SetAccessPackageResource(accessPackageResource)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -36,7 +36,7 @@ $tabsTeamsTab1 = new TeamsTab();
 $tabsTeamsTab1->setDisplayName('A Pinned Website');
 
 $tabsTeamsTab1Configuration = new TeamsTabConfiguration();
-$tabsTeamsTab1Configuration->setContentUrl('https://docs.microsoft.com/microsoftteams/microsoft-teams');
+$tabsTeamsTab1Configuration->setContentUrl('https://learn.microsoft.com/microsoftteams/microsoft-teams');
 
 
 $tabsTeamsTab1->setConfiguration($tabsTeamsTab1Configuration);

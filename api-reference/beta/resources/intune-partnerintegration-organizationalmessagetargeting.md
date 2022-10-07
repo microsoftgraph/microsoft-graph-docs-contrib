@@ -20,7 +20,7 @@ Contains the groups of devices that will be targeted to receive the organization
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|targetingType|[organizationalMessageTargetingType](../resources/intune-partnerintegration-organizationalmessagetargetingtype.md)|Indicates the type of targeting. Possible values are: `aadGroup`.|
+|targetingType|[organizationalMessageTargetingType](../resources/intune-partnerintegration-organizationalmessagetargetingtype.md)|Indicates the type of targeting. Possible values are: `aadGroup`, `unknownFutureValue`.|
 |includeIds|String collection|The groups that will be targeted and receive the message|
 |excludeIds|String collection|The groups that will not receive the message. If a user from an excluded group is part of an included group, it will not receive the message|
 
@@ -46,6 +46,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

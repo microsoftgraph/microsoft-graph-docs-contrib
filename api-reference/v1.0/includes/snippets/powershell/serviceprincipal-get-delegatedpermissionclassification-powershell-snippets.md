@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -OutFile $outFileId
+Get-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId
 
 ```

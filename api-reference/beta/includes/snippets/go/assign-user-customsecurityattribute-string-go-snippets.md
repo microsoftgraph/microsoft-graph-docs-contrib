@@ -11,8 +11,6 @@ requestBody := graphmodels.NewUser()
 customSecurityAttributes := graphmodels.NewCustomSecurityAttributeValue()
 additionalData := map[string]interface{}{
 engineering := graphmodels.New()
-"@odata.type" := "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
-engineering.Set"@odata.type"(&"@odata.type") 
 projectDate := "2022-10-01"
 engineering.SetProjectDate(&projectDate) 
 	customSecurityAttributes.SetEngineering(engineering)
@@ -20,7 +18,7 @@ engineering.SetProjectDate(&projectDate)
 customSecurityAttributes.SetAdditionalData(additionalData)
 requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
 
-graphClient.UsersById("user-id").Patch(requestBody)
+result, err := graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

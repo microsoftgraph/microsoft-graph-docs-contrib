@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "featureRolloutPolicy",
           "ChangeType": "Change",
-          "Description": "Deprecated the URL segment for [featureRolloutPolicy](https://docs.microsoft.com/en-us/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) under /directory.",
+          "Description": "Deprecated the URL segment for [featureRolloutPolicy](https://learn.microsoft.com/en-us/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) under /directory.",
           "Target": "featureRolloutPolicy"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "featureRolloutPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the URL segment for [featureRolloutPolicy](https://docs.microsoft.com/en-us/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) under /policies.",
+          "Description": "Added the URL segment for [featureRolloutPolicy](https://learn.microsoft.com/en-us/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) under /policies.",
           "Target": "featureRolloutPolicy"
         }
       ],
@@ -33,7 +33,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "featureRolloutPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [featureRolloutPolicy](https://docs.microsoft.com/en-us/graph/api/resources/featureRolloutPolicy?view=graph-rest-1.0) resource type and associated methods.",
+          "Description": "Added the [featureRolloutPolicy](https://learn.microsoft.com/en-us/graph/api/resources/featureRolloutPolicy?view=graph-rest-1.0) resource type and associated methods.",
           "Target": "featureRolloutPolicy"
         },
         {

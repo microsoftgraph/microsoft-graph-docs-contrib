@@ -39,7 +39,8 @@ $recurrencePattern->setType(new RecurrencePatternType('weekly'));
 
 $recurrencePattern->setInterval(1);
 
-$recurrencePattern->setDaysOfWeek(['Monday', ]);
+$recurrencePattern->setDaysOfWeek([$recurrencePattern->setDayOfWeek(new DayOfWeek('monday'));
+]);
 
 
 $recurrence->setPattern($recurrencePattern);

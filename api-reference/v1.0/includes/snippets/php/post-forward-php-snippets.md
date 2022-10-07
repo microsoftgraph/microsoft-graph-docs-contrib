@@ -13,19 +13,13 @@ $requestBody = new ForwardPostRequestBody();
 $requestBody->setComment('comment-value');
 
 $toRecipientsRecipient1 = new Recipient();
-$additionalData = [
-'emailAddress' => $toRecipientsRecipient1 = new EmailAddress();
-$		toRecipientsRecipient1->setName('name-value');
+$toRecipientsRecipient1EmailAddress = new EmailAddress();
+$toRecipientsRecipient1EmailAddress->setName('name-value');
 
-$		toRecipientsRecipient1->setAddress('address-value');
-
-
-$toRecipientsRecipient1->setEmailAddress($emailAddress);
-
-];
-$toRecipientsRecipient1->setAdditionalData($additionalData);
+$toRecipientsRecipient1EmailAddress->setAddress('address-value');
 
 
+$toRecipientsRecipient1->setEmailAddress($toRecipientsRecipient1EmailAddress);
 
 $toRecipientsArray []= $toRecipientsRecipient1;
 $requestBody->setToRecipients($toRecipientsArray);

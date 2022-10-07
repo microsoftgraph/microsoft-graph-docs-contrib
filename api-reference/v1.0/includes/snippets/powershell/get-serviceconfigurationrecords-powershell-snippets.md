@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgDomainServiceConfigurationRecord -DomainId $domainId -OutFile $outFileId
+Get-MgDomainServiceConfigurationRecord -DomainId $domainId
 
 ```

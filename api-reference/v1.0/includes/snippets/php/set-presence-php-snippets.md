@@ -16,7 +16,7 @@ $requestBody->setAvailability('Available');
 
 $requestBody->setActivity('Available');
 
-$requestBody->setExpirationDuration('PT1H');
+$requestBody->setExpirationDuration(new \DateInterval('PT1H'));
 
 
 

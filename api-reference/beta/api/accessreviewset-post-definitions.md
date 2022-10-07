@@ -137,10 +137,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -303,10 +299,6 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-inactiveguests-m365-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-inactiveguests-m365-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -500,10 +492,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-allusers-m365-aadrole-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-allusers-m365-aadrole-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -526,63 +514,26 @@ Content-type: application/json
     "principalScopes": [
       {
         "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-        "query": "/users",
-        "queryType": "MicrosoftGraph",
-        "queryRoot": null
+        "query": "/users"
       }
     ],
     "resourceScopes": [
       {
         "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-        "query": "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae",
-        "queryType": "MicrosoftGraph",
-        "queryRoot": null
+        "query": "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae"
       }
     ]
   },
   "reviewers": [
     {
-      "query": "./manager",
-      "queryType": "MicrosoftGraph",
-      "queryRoot": "decisions"
-    }
-  ],
-  "backupReviewers": [
-    {
-      "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-      "queryType": "MicrosoftGraph",
-      "queryRoot": null
+      "query": "./manager"
     }
   ],
   "fallbackReviewers": [
     {
-      "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-      "queryType": "MicrosoftGraph",
-      "queryRoot": null
+      "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
     }
-  ],
-  "settings": {
-    "instanceDurationInDays": 180,
-    "recurrence": {
-      "pattern": {
-        "type": "absoluteMonthly",
-        "interval": 6,
-        "month": 0,
-        "dayOfMonth": 0,
-        "daysOfWeek": [],
-        "firstDayOfWeek": "sunday",
-        "index": "first"
-      },
-      "range": {
-        "type": "numbered",
-        "numberOfOccurrences": 0,
-        "recurrenceTimeZone": null,
-        "startDate": "2021-05-05",
-        "endDate": "2022-05-05"
-      }
-    }
-  },
-  "additionalNotificationRecipients": []
+  ]
 }
 ```
 
@@ -656,11 +607,6 @@ Content-type: application/json
     }
   ],
   "settings": {
-    "mailNotificationsEnabled": true,
-    "reminderNotificationsEnabled": true,
-    "justificationRequiredOnApproval": true,
-    "defaultDecisionEnabled": false,
-    "defaultDecision": "None",
     "instanceDurationInDays": 4,
     "recurrence": {
       "pattern": {
@@ -698,10 +644,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-group-multistage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-group-multistage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -719,21 +661,12 @@ Content-type: application/json
 {
   "id": "29f2d16e-9ca6-4052-bbfe-802c48944448",
   "displayName": "Group Multi-stage Access Review",
-  "createdDateTime": "0001-01-01T00:00:00Z",
-  "lastModifiedDateTime": "0001-01-01T00:00:00Z",
-  "status": "NotStarted",
-  "descriptionForAdmins": "New scheduled access review",
-  "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
-  "instanceEnumerationScope": null,
   "createdBy": {
-    "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
-    "displayName": "MOD Administrator",
-    "userPrincipalName": "admin@contoso.com"
+    "id": "957f1027-c0ee-460d-9269-b8444459e0fe"
   },
   "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
-    "queryType": "MicrosoftGraph"
+    "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers"
   },
   "stageSettings": [
     {
@@ -772,49 +705,132 @@ Content-type: application/json
         }
       ]
     }
-  ], 
-  "settings": {
-    "mailNotificationsEnabled": true,
-    "reminderNotificationsEnabled": true,
-    "justificationRequiredOnApproval": true,
-    "defaultDecisionEnabled": false,
-    "defaultDecision": "None",
-    "instanceDurationInDays": 1,
-    "autoApplyDecisionsEnabled": false,
-    "recommendationsEnabled": false,
-    "recurrence": {
-      "pattern": {
-        "type": "weekly",
-        "interval": 1,
-        "month": 0,
-        "dayOfMonth": 0,
-        "daysOfWeek": [],
-        "firstDayOfWeek": "sunday",
-        "index": "first"
-      },
-      "range": {
-        "type": "noEnd",
-        "numberOfOccurrences": 0,
-        "recurrenceTimeZone": null,
-        "startDate": "2020-09-08",
-        "endDate": null
-      }
-    },
-    "decisionHistoriesForReviewersEnabled": true,
-    "applyActions": []
-  },
-  "additionalNotificationRecipients": []
+  ]
 }
 ```
 
-<!--
+### Example 5: Create an access review on a group with insights about user-to-group affiliation and user sign in for recommendations
+
+The following example creates an access review with the following settings:
++ The review reviews all members of a group with the **id** `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
++ A specific user with the user **id** `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer.
++ It recurs weekly and continues indefinitely.
++ Both user-to-group affiliation and user sign in are insights for reviewers.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accessReviewScheduleDefinition_insights"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
+Content-type: application/json
+
 {
-  "type": "#page.annotation",
-  "description": "Create accessReviewScheduleDefinition",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+    "displayName": "Test create",
+    "descriptionForAdmins": "New scheduled access review",
+    "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
+    "scope": {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
+        "queryType": "MicrosoftGraph"
+    },
+    "reviewers": [
+        {
+            "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
+            "queryType": "MicrosoftGraph"
+        }
+    ],
+    "settings": {
+        "instanceDurationInDays": 1,
+        "recurrence": {
+            "pattern": {
+                "type": "weekly",
+                "interval": 1
+            },
+            "range": {
+                "type": "noEnd",
+                "startDate": "2020-09-08T12:02:30.667Z"
+            }
+        },
+        "recommendationInsightSettings": [
+            {
+                "@odata.type": "#microsoft.graph.userLastSignInRecommendationInsightSetting",
+                "recommendationLookBackDuration": "P30D",
+                "signInScope": "tenant"
+            },
+            {
+                "@odata.type": "#microsoft.graph.groupPeerOutlierRecommendationInsightSettings"
+            }
+        ]
+    }
 }
--->
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-insights-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-insights-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-insights-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-insights-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-insights-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "29f2d16e-9ca6-4052-bbfe-802c48944448",
+  "displayName": "Test create",
+  "createdBy": {
+    "id": "957f1027-c0ee-460d-9269-b8444459e0fe"
+  },
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers"
+  },
+  "reviewers": [
+    {
+      "query": "/users/7eae986b-d425-48b2-adf2-3c777f4444f3"
+    }
+  ],
+  "settings": {
+    "recommendationInsightSettings": [
+      {
+        "@odata.type": "#microsoft.graph.userLastSignInRecommendationInsightSetting",
+        "recommendationLookBackDuration": "P30D",
+        "signInScope": "tenant"
+      },
+      {
+        "@odata.type": "#microsoft.graph.groupPeerOutlierRecommendationInsightSettings"
+      }
+    ]
+  }
+}
+```

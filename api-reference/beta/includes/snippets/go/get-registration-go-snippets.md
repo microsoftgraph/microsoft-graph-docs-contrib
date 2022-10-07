@@ -14,7 +14,7 @@ configuration := &graphconfig.RegistrationRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Get(context.Background(), configuration)
 
 
 ```

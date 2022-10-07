@@ -25,7 +25,7 @@ $retentionDuration->set@odatatype('microsoft.graph.security.retentionDuration');
 
 
 $requestBody->setRetentionDuration($retentionDuration);
-$requestBody->setIsInUse('Boolean');
+$requestBody->setIsInUse(boolean);
 
 $requestBody->setDescriptionForAdmins('String');
 
@@ -42,7 +42,7 @@ $requestBody->setDefaultRecordBehavior(new DefaultRecordBehavior('string'));
 
 
 
-$graphServiceClient->security()->labels()->retentionLabelsById('retentionLabel-id')->patch($requestBody);
+$requestResult = $graphServiceClient->security()->labels()->retentionLabelsById('retentionLabel-id')->patch($requestBody);
 
 
 ```

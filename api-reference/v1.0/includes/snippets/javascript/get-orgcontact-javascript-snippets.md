@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let orgContact = await client.api('/contacts/e63333f5-3d11-4026-8fe3-c0f7b044dd3a')
+let orgContact = await client.api('/contacts/25caf6a2-d5cb-470d-8940-20ba795ef62d')
 	.get();
 
 ```

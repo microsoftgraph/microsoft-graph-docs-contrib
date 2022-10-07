@@ -23,6 +23,8 @@ Indicates the frequency at which a client will see the message
 |weeklyOnce|0|Indicates that the message will be displayed once a week|
 |monthlyOnce|1|Indicates that the message will be displayed once a month|
 |monthlyTwice|2|Indicates that the message will be displayed twice a month|
+|unknownFutureValue|3|UnknownFutureValue, Evolvable enumeration sentinel value. Do not use.|
+
 
 
 

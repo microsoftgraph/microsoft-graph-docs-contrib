@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Notes
 
 # A UPN can also be used as -UserId.
-Get-MgUserOnenoteSectionGroup -UserId $userId -OutFile $outFileId
+Get-MgUserOnenoteSectionGroup -UserId $userId
 
 ```

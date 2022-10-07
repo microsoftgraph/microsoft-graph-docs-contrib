@@ -160,7 +160,6 @@ The following example creates a new group in the administrative unit.
 #### Request
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
