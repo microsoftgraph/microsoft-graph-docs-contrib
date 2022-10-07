@@ -81,10 +81,12 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Search (Microsoft Search)         | ✔                                | ➖                                          |
 | Security                          | ✔                                | ✔                                          |
 | Service health and communications | ✔                                | ✔                                          |
-| Service principals                | ✔                                | ➖                                          |
+| Service principals                | ✔                                | ➖                                         |
 | SharePoint                        | ✔                                | ✔                                          |
 | Teams                             | ✔                                | ✔                                          |
 | Users                             | ✔                                | ✔                                          |
+
+For more information about the availability of Microsoft 365 usage reports in national clouds, see [Working with Microsoft 365 usage reports in Microsoft Graph](/graph/api/resources/report).
 
 The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China. `v1.0` endpoints for these features are available in Microsoft Cloud for US Government only:
 

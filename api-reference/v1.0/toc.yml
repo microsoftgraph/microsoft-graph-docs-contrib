@@ -7265,11 +7265,11 @@ items:
               href: api/call-keepalive.md
             - name: Log teleconference device quality data
               href: api/call-logteleconferencedevicequality.md
+            - name: Change screen sharing role
+              href: api/call-changescreensharingrole.md
           - name: Content sharing session
             href: resources/contentsharingsession.md
             items:
-            - name: Change screen sharing role
-              href: api/call-changescreensharingrole.md
             - name: List
               href: api/call-list-contentsharingsessions.md
             - name: Get

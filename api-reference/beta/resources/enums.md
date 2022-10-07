@@ -2379,6 +2379,17 @@ Possible values for user account types (group membership), per Windows definitio
 |High|1|
 |Low|2|
 
+### templateScenarios values
+|Member             |
+|:------------------|
+|new                |
+|secureFoundation   |
+|zeroTrust          |
+|remoteWork         |
+|protectAdmins      |
+|emergingThreats    |
+|unknownFutureValue |
+
 ### threatAssessmentContentType values
 
 | Member | Value | Description             |
@@ -2609,6 +2620,7 @@ Possible values for user account types (group membership), per Windows definitio
 |group|
 |unknownFutureValue|
 |roster|
+|project|
 
 ### plannerPlanContextType values
 
