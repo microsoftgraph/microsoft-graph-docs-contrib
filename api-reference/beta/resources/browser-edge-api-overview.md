@@ -29,7 +29,7 @@ The Edge API provides methods and actions that support some administrator's task
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
-The Edge API in Microsoft Graph can streamline the way you manage your IE mode site lists. To learn more:
+The Edge API in Microsoft Graph can streamline the way you manage your site lists for IE mode. To learn more:
 
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
