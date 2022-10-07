@@ -37,7 +37,7 @@ You can only read built-in policies, but you can create up to 15 custom policies
 
 ### Authentication method combinations
 
-Core to a policy are the authentication method combinations. A combination may be one or more comma-separated authentication methods that are pre-defined and that can be used to define an authentication strength. These authentication methods are based the **authenticationMethodModes** flagged enumeration. Some example combinations include:
+Core to a policy are the authentication method combinations. A combination consists of one or more authentication methods in a comma-separated list. Combinations are pre-defined and are used to define an authentication strength. These authentication methods are based the **authenticationMethodModes** flagged enumeration. Some example combinations include:
 
 | Example allowed combination | Description |
 |--|--|
@@ -51,7 +51,7 @@ Azure AD provides the predefined, read-only combinations using the following pri
 * Combinations of password and a second factor that make a valid multifactor authentication combination ("something you have" and "something you know").
 * Passwordless multifactor authenticators such as FIDO2 and x509 certificate authentication.
 
-Each combination is a part of a built-in authentication strength and can be used in custom authentication strengths.
+Built-in authentication strengths use these combinations, and combinations can be used in custom authentication strengths.
 
 To view the details of the supported authentication methods and the allowed combinations, call the [List authenticationMethodModes](../api/authenticationstrengthroot-list-authenticationmethodmodes.md) API.
 
@@ -77,7 +77,7 @@ In the Conditional Access [grant controls](conditionalaccessgrantcontrols.md), c
 
 The **authenticationStrength** object corresponds to the 'Require authentication strength' control of the Conditional Access policy's UX on the Azure portal.
 
-You can't configure authentication strengths and multifactor authentication grant control on the same conditional access policy.
+You can't configure authentication strengths and the multifactor authentication grant control on the same conditional access policy.
 
 ## Next steps
 
