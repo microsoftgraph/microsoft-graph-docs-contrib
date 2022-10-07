@@ -21,7 +21,7 @@ The Edge API provides methods and actions that support some administrator's task
 
 | Use cases | REST resources | See also |
 |:----------|:---------------|:---------|
-| Create, read, update, delete, and publish browser site lists | [browserSiteList](../resources/browserSiteList.md) | [Methods of browserSiteList](../resources/browserSiteList.md#methods) |
+| Create, read, update, delete, and publish browser site lists | [browserSiteList](../resources/browsersitelist.md) | [Methods of browserSiteList](../resources/browsersitelist.md#methods) |
 | Modify the browser sites on a browser site list | [browserSite](../resources/browsersite.md) | [Methods of browserSite](../resources/browsersite.md#methods) |
 | Modify the browser shared cookies on a browser site list | [browserSharedCookie](../resources/browsersharedcookie.md) | [Methods of browserSharedCookie](../resources/browsersharedcookie.md#methods) |
 
@@ -29,7 +29,7 @@ The Edge API provides methods and actions that support some administrator's task
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
-Cloud Site Lists for IE mode resources and APIs can streamline the way you manage your IE Mode site lists in Microsoft Graph. To learn more:
+The Edge API in Microsoft Graph can streamline the way you manage your IE mode site lists. To learn more:
 
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
