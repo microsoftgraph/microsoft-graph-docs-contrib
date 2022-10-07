@@ -66,12 +66,13 @@ In the request body, provide a JSON object with the following parameters.
 
 Supported combinations of `availability` and `activity` are:
 
-| availability | activity          | Description                                              |
-| :----------- | :---------------- | :------------------------------------------------------- |
-| Available    | Available         | Updates the presence session as Available.               |
-| Busy         | InACall           | Updates the presence session as Busy, InACall.           |
-| Busy         | InAConferenceCall | Updates the presence session as Busy, InAConferenceCall. |
-| Away         | Away              | Updates the presence session as Away.                    |
+| availability | activity          | Description                                               |
+| :----------- | :---------------- | :-------------------------------------------------------- |
+| Available    | Available         | Updates the presence session as Available.                |
+| Busy         | InACall           | Updates the presence session as Busy, InACall.            |
+| Busy         | InAConferenceCall | Updates the presence session as Busy, InAConferenceCall.  |
+| Away         | Away              | Updates the presence session as Away.                     |
+| DoNotDisturb | Presenting		   | Updates the presence session as DoNotDisturb, Presenting. |
 
 ## Response
 If successful, this method returns a `200 OK` response code.
