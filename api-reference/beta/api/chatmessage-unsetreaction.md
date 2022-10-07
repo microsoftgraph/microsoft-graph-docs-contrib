@@ -1,19 +1,19 @@
 ---
-title: "chatMessage: UnsetReaction"
-description: "Unset reaction to a single message or message reply in a channel or a chat."
+title: "chatMessage: unsetReaction"
+description: "Unset areaction to a single message or message reply in a channel or a chat."
 author: "Sumana Chakrabarti"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---
 
-# chatMessage: UnsetReaction
+# chatMessage: unsetReaction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unset reaction to a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
+Unset a reaction to a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -55,7 +55,7 @@ POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}
 
 ## Request body
 
-In the request body, supply the reactionType as unicode.
+In the request body, supply the **reactionType** as unicode.
 
 ## Response
 
@@ -63,7 +63,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Unset reaction to a chat message
+### Example 1: Unset a reaction to a chat message
 
 #### Request
 
@@ -80,11 +80,11 @@ POST https://graph.microsoft.com/beta/chats/chatId/messages/messageId/unsetReact
   "blockType": "response"
 } -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Unset reaction to a message in a channel
+### Example 2: Unset a reaction to a message in a channel
 
 #### Request
 ```http
@@ -93,7 +93,6 @@ POST https://graph.microsoft.com/beta/teams/teamsid/channels/channelId/messages/
   "reactionType": "💘"
 }
 ```
----
 
 #### Response
 
@@ -105,7 +104,7 @@ POST https://graph.microsoft.com/beta/teams/teamsid/channels/channelId/messages/
 HTTP/1.1 204 No Content
 ```
 
-### Example 3:  Unset reaction to a message of a reply
+### Example 3:  Unset a reaction to a message reply
 
 #### Request
 
@@ -115,8 +114,6 @@ POST https://graph.microsoft.com/beta/teams/teamsid/channels/channelId/messages/
   "reactionType": "💘"
 }
 ```
----
-
 
 #### Response
 
@@ -124,6 +121,6 @@ POST https://graph.microsoft.com/beta/teams/teamsid/channels/channelId/messages/
   "blockType": "response"
 } -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
