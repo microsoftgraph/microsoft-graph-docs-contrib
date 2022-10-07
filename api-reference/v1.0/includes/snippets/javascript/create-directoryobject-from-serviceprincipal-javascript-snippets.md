@@ -15,7 +15,6 @@ const directoryObject = {
 };
 
 await client.api('/servicePrincipals/{id}/owners/$ref')
-	.version('beta')
 	.post(directoryObject);
 
 ```
