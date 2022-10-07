@@ -21,7 +21,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->customersById('bookingCustomerBase-id')->patch($requestBody);
+$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->customersById('bookingCustomerBase-id')->patch($requestBody);
 
 
 ```

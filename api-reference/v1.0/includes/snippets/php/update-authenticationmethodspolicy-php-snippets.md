@@ -71,7 +71,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->policies()->authenticationMethodsPolicy()->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->patch($requestBody);
 
 
 ```

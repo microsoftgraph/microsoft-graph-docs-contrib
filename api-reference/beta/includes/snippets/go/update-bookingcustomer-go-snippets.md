@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 emailAddress := "adele@relecloud.com"
 requestBody.SetEmailAddress(&emailAddress) 
 
-graphClient.BookingBusinessesById("bookingBusiness-id").CustomersById("bookingCustomer-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.BookingBusinessesById("bookingBusiness-id").CustomersById("bookingCustomer-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

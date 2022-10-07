@@ -11,7 +11,7 @@ requestBody := graphmodels.NewSet()
 description := "mySet"
 requestBody.SetDescription(&description) 
 
-graphClient.SitesById("site-id").TermStore().SetsById("set-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.SitesById("site-id").TermStore().SetsById("set-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -22,7 +22,7 @@ adminEligibleSettings := []graphmodels.GovernanceRuleSettingable {
 }
 requestBody.SetAdminEligibleSettings(adminEligibleSettings)
 
-graphClient.PrivilegedAccessById("privilegedAccess-id").RoleSettingsById("governanceRoleSetting-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.PrivilegedAccessById("privilegedAccess-id").RoleSettingsById("governanceRoleSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
