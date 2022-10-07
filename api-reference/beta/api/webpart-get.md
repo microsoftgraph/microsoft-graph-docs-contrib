@@ -58,7 +58,8 @@ If successful, this method returns a `200 OK` response code and a [standardWebPa
 
 ## Examples
 
-### Request
+### Example 1: Get a webPart object
+#### Request
 
 The following is an example of a request.
 
@@ -72,7 +73,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/webParts/{webPartId}
 ```
 
-### Response
+#### Response
 
 The following is an example of the response
 
@@ -97,7 +98,9 @@ Content-Type: application/json
   }
 }
 ```
-### Request
+
+### Example 2: Get a webPart object using select and expand
+#### Request
 
 With `select` statement, you can retrieve selected webpart metadata in a request.
 
@@ -111,7 +114,7 @@ With `select` statement, you can retrieve selected webpart metadata in a request
 GET /sites/{sitesId}/pages/{sitePageId}/webParts/{webPartId}?select=id
 ```
 
-### Response
+#### Response
 
 The following is an example of the response
 

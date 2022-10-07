@@ -56,7 +56,9 @@ If successful, this method returns a `200 OK` response code and a [horizontalSec
 
 ## Examples
 
-### Request
+### Example 1: Get a horizontalSection object
+
+#### Request
 
 The following is an example of a request.
 
@@ -70,7 +72,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLayout/horizontalSections/{horizontalSectionId}
 ```
 
-### Response
+#### Response
 
 The following is an example of the response
 
@@ -97,7 +99,8 @@ Content-Type: application/json
 }
 ```
 
-### Request
+### Example 2: Get a horizontalSection object using select and expand
+#### Request
 
 With `select` and `expand` statements, you can retrieve horizontalSection metadata and column information in a single request.
 
@@ -111,7 +114,7 @@ With `select` and `expand` statements, you can retrieve horizontalSection metada
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLayout/horizontalSections/{horizontalSectionId}?select=id,expand=columns
 ```
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",

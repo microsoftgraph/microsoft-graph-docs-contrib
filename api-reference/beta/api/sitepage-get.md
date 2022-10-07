@@ -38,7 +38,8 @@ GET /sites/{site-id}/pages/{page-id}
 
 ## Example
 
-### Request
+### Example 1: Get a page in the site pages list of a site
+#### Request
 
 # [HTTP](#tab/http)
 
@@ -80,7 +81,7 @@ GET /sites/{site-id}/pages/{page-id}
 
 ---
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -121,7 +122,9 @@ Content-type: application/json
   }
 }
 ```
-### Request
+
+### Example 2: Get a page using select and expand
+#### Request
 
 With `select` and `expand` statements, you can retrieve sitePage metadata and page content in a single request.
 
@@ -135,7 +138,7 @@ With `select` and `expand` statements, you can retrieve sitePage metadata and pa
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}?select=id,title,expand=webparts
 ```
 
-### Response
+#### Response
 
 The following is an example of the response
 

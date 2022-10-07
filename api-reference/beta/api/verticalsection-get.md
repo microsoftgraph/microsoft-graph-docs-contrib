@@ -56,7 +56,8 @@ If successful, this method returns a `200 OK` response code and a [verticalSecti
 
 ## Examples
 
-### Request
+### Example 1: Get a verticalSection object
+#### Request
 
 The following is an example of a request.
 
@@ -70,7 +71,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLayout/verticalSection
 ```
 
-### Response
+#### Response
 
 The following is an example of the response
 
@@ -95,7 +96,8 @@ Content-Type: application/json
 }
 ```
 
-### Request
+### Example 2: Get a verticalSection object using select and expand
+#### Request
 
 With `select` and `expand` statements, you can retrieve verticalSection metadata and associated webParts in a single request.
 
@@ -109,7 +111,7 @@ With `select` and `expand` statements, you can retrieve verticalSection metadata
 GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLayout/verticalSection?select=emphasis,expand=webparts
 ```
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
