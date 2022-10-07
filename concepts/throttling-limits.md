@@ -237,9 +237,9 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 
 The preceding limits apply to the following resources:
 
-- [people](/graph/api/resources/person)
+- [people](/graph/api/resources/insightssettings)
 - [sharedInsight](/graph/api/resources/insights-shared)
-- [trending](/graph/api/resources/trending)
+- [trending](/graph/api/resources/insights-trending)
 - [usedInsight](/graph/api/resources/insights-used)
 
 ## Intune service limits
