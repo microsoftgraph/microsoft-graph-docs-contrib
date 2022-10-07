@@ -74,6 +74,7 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/templates",
     "value": [
@@ -138,6 +139,7 @@ Content-Type: application/json
     ]
 }
 ```
+
 ### Example 2: List name, description, id, scenarios of templates whose scenarios contain "secureFoundation"
 
 #### Request
@@ -163,6 +165,7 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/templates(name,description,id,scenarios)",
     "value": [

@@ -137,7 +137,6 @@ Content-Type: application/json
     }
 }
 ```
-
 ### Example 2: Select details of a template
 
 #### Request
@@ -163,7 +162,6 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/templates(details)/$entity",
     "details": {
