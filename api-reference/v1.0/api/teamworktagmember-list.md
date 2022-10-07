@@ -1,9 +1,9 @@
 ---
 title: "List teamworkTagMembers"
-description: "Get a list of teamworkTagMember objects and their properties."
+description: "Get a list of the members of a standard tag in a team and their properties."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teams/{team-Id}/tags/{teamworkTag-Id}/members
+GET /teams/{team-id}/tags/{teamworkTag-id}/members
 ```
 
 ## Optional query parameters

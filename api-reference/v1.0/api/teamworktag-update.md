@@ -3,14 +3,14 @@ title: "Update teamworkTag"
 description: "Update the properties of a teamworkTag object."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
 # Update teamworkTag
 Namespace: microsoft.graph
 
-Update the properties of a [teamworkTag](../resources/teamworktag.md) object.
+Update the properties of a [tag](../resources/teamworktag.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /teams/{team-Id}/tags/{teamworkTag-Id}
+PATCH /teams/{team-id}/tags/{teamworkTag-id}
 ```
 
 ## Request headers
@@ -71,12 +71,9 @@ Content-Type: application/json
 }
 ```
 
-
-
 ### Response
 
 The following is an example of the response.
-
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

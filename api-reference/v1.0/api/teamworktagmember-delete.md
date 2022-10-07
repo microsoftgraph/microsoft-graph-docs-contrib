@@ -1,9 +1,9 @@
 ---
 title: "Delete teamworkTagMember"
-description: "Delete a teamworkTagMember object."
+description: "Delete a member from a standard tag in a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /teams/{team-Id}/tags/{teamworkTag-Id}/members/{teamworkTagMember-Id}
+DELETE /teams/{team-id}/tags/{teamworkTag-id}/members/{teamworkTagMember-id}
 ```
 
 ## Request headers

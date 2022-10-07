@@ -3,7 +3,7 @@ title: "Get teamworkTag"
 description: "Read the properties and relationships of a teamworkTag object."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teams/{team-Id}/tags/{teamworkTag-Id}
+GET /teams/{team-id}/tags/{teamworkTag-id}
 ```
 
 ## Request headers

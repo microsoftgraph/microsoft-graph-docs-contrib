@@ -1,9 +1,9 @@
 ---
 title: "Get teamworkTagMember"
-description: "Read the properties and relationships of a teamworkTagMember object."
+description: "Get the properties and relationships of a member of a standard tag in a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teams/{team-Id}/tags/{teamworkTag-Id}/members/{teamworkTagMember-Id}
+GET /teams/{team-id}/tags/{teamworkTag-id}/members/{teamworkTagMember-id}
 ```
 
 ## Request headers
@@ -58,7 +58,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==/members/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyNlYjY1M2Y5Mi04MzczLTRkZTYtYmZlYy01YjRkMjE2YjZhZGUjI2QzYjJiM2ViLWM0N2YtNDViOS05NWYyLWIyZjJlZjYyMTVjZQ==
 ```
-
 
 ### Response
 
