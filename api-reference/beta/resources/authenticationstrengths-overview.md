@@ -1,6 +1,6 @@
 ---
 title: "Azure AD authentication strengths API overview"
-description: "Authentication strengths are sets of authentication method combinations that determine which methods your users may use to authenticate."
+description: "Authentication strengths are sets of authentication method combinations that determine which methods your users can use to authenticate to access a resource."
 ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
@@ -13,48 +13,71 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Authentication strengths allow administrators to require specific combinations of [authentication methods](authenticationmethods-overview.md) to access a resource. Each authentication strength comprises one or more combinations of authentication methods, where each combination is one or more authentication methods. When the strength is applied to a scenario as a [grant control](conditionalaccessgrantcontrols.md) in [Conditional Access](conditionalaccesspolicy.md), a user in scope of the policy is required to satisfy one of those allowed combinations to sign in. As part of Conditional Access, authentication strengths can also be paired with other Conditional Access controls such as user risk and location.
+Authentication strengths allow administrators to require specific combinations of Azure AD [authentication methods](authenticationmethods-overview.md) to access a resource. Each authentication strength comprises one or more combinations of authentication methods, where each combination is one or more authentication methods. When the strength is applied to a scenario as a [grant control](conditionalaccessgrantcontrols.md) in [Conditional Access](conditionalaccesspolicy.md), a user in scope of the policy is required to satisfy one of those allowed combinations at sign-in before they can access the resource. As part of Conditional Access, authentication strengths can also be paired with other Conditional Access controls such as user risk and location.
 
-For example, an administrator could require phishing-resistant authentication methods when accessing a sensitive resource. The administrator could also allow less-secure multi-factor authentication (MFA) combinations, such as password and SMS, to be used to access non-sensitive applications.
+For example, an administrator can require users to authenticate using phishing-resistant authentication methods before they can access a sensitive resource. The administrator can also allow users to authenticate using less-secure multifactor authentication (MFA) combinations, such as password and SMS, for them to access non-sensitive applications.
 
-When creating a Conditional Access policy with the 'Require authentication strength' control, administrators can choose from three built-in Authentication strengths policies. Administrators may also create their own custom Authentication strength policies using only the authentication methods combinations they would like to allow. Using custom authentication strengths, certain auth methods allow even further restriction, limiting users to only certain instances of an authentication method. Today, this is limited to restricting which FIDO2 security keys can be used during authentication, to allow only keys with certain Authenticator Attestation GUIDs (AAGUIDs).
- 
-## Authentication strength policies  
+This article introduces the Microsoft Graph APIs that allow administrators to programmatically manage authentication strengths.
 
-Each [authentication strength policy](authenticationstrengthpolicy.md) contains the allowed authentication method combinations (for example, "password, microsoftAuthenticatorPush" and "password, softwareOath") as well as additional policy details including name, description and creation datetime. To satisfy the authentication strength policy, a user can authenticate with any of the allowed combinations. For the policy listed above, the user could use either:
+## Authentication strength policies
 
-* password and Microsoft Authenticator push approval
-* password and software OATH token
+Authentication strength policies define the authentication strengths that are available for use in the tenant. Use the [authenticationStrengthPolicy](authenticationstrengthpolicy.md) resource type and its associated methods to define and manage these policies. The policies include the following configurations:
 
-Microsoft has supplied three predefined authentication strength policies:
++ The name, identifier, and description of the policy.
++ Authentication method combinations that are part of the policy.
++ Whether the policy, when the authentication method requirements are satisfied, can be used to satisfy an MFA claim in the access token.
+
+Azure AD supports both built-in and custom authentication strength policies. Microsoft has supplied the following three built-in policies:
 
 * Multifactor authentication
 * Passwordless multifactor authentication
 * Phishing-resistant multifactor authentication
 
-Built-in authentication strengths are always available and cannot be modified. In addition to the three built-in authentication strengths, administrators may create their own custom authentication strength policies to meet their own requirements.
+You can only read built-in policies, but you can create up to 15 custom policies to suit your requirements.
 
-These authentication strengths are appled by including them in Conditional Access policies - they're part a Conditional Access [grant control](conditionalaccessgrantcontrols.md). When a Conditional Access policy applies to a sign-in and that policy has an authentication strength grant control, the user will be required to use one of the allowed authentication method combinations to sign in.
+### Authentication method combinations
 
-## Authentication combinations
+Core to a policy are the authentication method combinations. A combination may be one or more comma-separated authentication methods that are pre-defined and that can be used to define an authentication strength. These authentication methods are based the **authenticationMethodModes** flagged enumeration. Some example combinations include:
 
-The [authentication combinations](../api/authenticationstrengthroot-list-authenticationmethodmodes.md) API allows the caller to retrieve a read-only list of all supported authentication method combinations. Each combination comprises one or more comma-separated [authentication method modes](authenticationmethodmodedetail.md), and each combination is a part of a built-in authentication strength and may be used in custom authentication strengths.
+| Example allowed combination | Description |
+|--|--|
+| `fido2` | The user must sign in using a FIDO2 security key to satisfy the authentication strength requirement. |
+| `password,microsoftAuthenticatorPush` | The user must sign in using *both* password and Microsoft Authenticator push approval to satisfy the authentication strength requirement. |
+| `password,softwareOath` | The user must sign in using *both* password and software OATH token to satisfy the authentication strength requirement. |
 
-Some example combinations:
+Azure AD provides the predefined, read-only combinations using the following principles:
 
-* `"FIDO2"`
-* `"password, microsoftAuthenticatorPush"`
-* `"password, softwareOath"`
+* Single factor authentication methods that can be used as first factors such as password and SMS.
+* Combinations of password and a second factor that make a valid multifactor authentication combination ("something you have" and "something you know").
+* Passwordless multifactor authenticators such as FIDO2 and x509 certificate authentication.
 
-Note that the allowed combinations list may change over time as new authentication methods are added, and not all combinations are valid. Currently the list is restricted to:
+Each combination is a part of a built-in authentication strength and can be used in custom authentication strengths.
 
-* single factor authentication methods that can be used as first factors such as password and SMS
-* combinations of password and a second factor that make a valid multifactor authentication combination ("something you have" and "something you know")
-* passwordless multifactor authenticators such as FIDO2 and Windows Hello for Business
+To view the details of the supported authentication methods and the allowed combinations, call the [List authenticationMethodModes](../api/authenticationstrengthroot-list-authenticationmethodmodes.md) API.
+
+The authentication combinations of built-in policies are read-only. To see all built-in policies and their configurations, call the [List authenticationStrengthPolicies](../api/authenticationstrengthroot-list-policies.md) API.
+
+To create a custom authentication strength policy, you must configure the authentication method combinations using the allowed combinations.
 
 ## Combination configurations
 
-Certain authentication methods may have further restrictions placed on them to control which instances of the method may be used - these are called [combination configurations](authenticationcombinationconfiguration.md). A combination configuration may apply to one or more combinations that include the specific authentication method. Today, [FIDO2](fido2combinationconfiguration.md) is the only method that supports combination configurations - using this, an administrator may configure which AAGUIDs may be used to authenticate. An authentication strength policy have one or more combination configurations, or it may have none.
+You can apply further restrictions on certain authentication methods to control which instances of the method a user can use to authenticate. These kinds of restrictions are [combination configurations](authenticationcombinationconfiguration.md) and can also be part of an [authenticationStrengthPolicy](authenticationstrengthpolicy.md) object.
+
+A combination configuration may apply to one or more combinations that include the specific authentication method. Today, [FIDO2](fido2combinationconfiguration.md) is the only method that supports combination configurations.
+
+For example, a custom policy allows the following combinations: `password,softwareOath`, `fido2`, and `x509CertificateMultiFactor`. For this policy, you can restrict the FIDO2 security keys that the user can use to authenticate by configuring a combination configuration with specific Authenticator Attestation GUIDs (AAGUIDs).
+
+An authentication strength policy has zero or more combination configurations.
+
+## Apply authentication strength policies in Conditional Access
+
+After defining the authentication strength policy, you apply and enforce it for the protected resource using Azure AD [conditional access policies](../resources/conditionalaccesspolicy.md). 
+
+In the Conditional Access [grant controls](conditionalaccessgrantcontrols.md), configure the **authenticationStrength** relationship by assigning the [authenticationStrengthPolicy](authenticationstrengthpolicy.md) object that should be associated with the conditional access policy. When a conditional access policy applies to a sign-in and that policy has an authentication strength grant control, the user will be required to use one of the allowed authentication method combinations to sign in. Authentication strength policies can also be enforced for guest users through both conditional access policies and [cross-tenant access inbound trust settings](/graph/api/resources/crosstenantaccesspolicy-overview).
+
+The **authenticationStrength** object corresponds to the 'Require authentication strength' control of the Conditional Access policy's UX on the Azure portal.
+
+You can't configure authentication strengths and multifactor authentication grant control on the same conditional access policy.
 
 ## Next steps
 
