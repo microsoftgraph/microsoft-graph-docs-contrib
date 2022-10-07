@@ -1,6 +1,6 @@
 ---
 title: "browserSiteList resource type"
-description: "Represents a site list for Internet Explorer mode that contains one or more browserSite or browserSharedCookie resources."
+description: "Represents an enterprise site list in a compliant cloud location that specifies sites to be opened in Internet Explorer mode."
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.prod: "browser-management"
