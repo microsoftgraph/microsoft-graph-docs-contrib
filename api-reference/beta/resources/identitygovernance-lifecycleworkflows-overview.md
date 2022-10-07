@@ -86,7 +86,7 @@ After identifying the tasks and execution conditions that you want to define for
 + A task supported for only the "leaver" workflow category can't be specified in a "joiner" workflow scenario, and vice versa.
 + A task supported for both "leaver" and "joiner" workflow categories can be specified in either a "joiner" or "leaver" workflow scenario.
 
-You can schedule a workflow to run based on the [tenant-wide schedule](#settings) or run it on-demand. For example, a daily workflow can provision access for new employees, while you can run a custom extension to immediately terminate an employee's access to sensitive resources after a security breach.
+You can schedule a workflow to run based on the [tenant-wide schedule](#settings) or run it on-demand. The tenant schedule can take care of regular new hires and terminations, while you can run a workflow on-demand to immediately terminate an employee's access in case of a sensitive event.
 
 The following JSON object shows an example workflow with the following settings:
 + The workflow is enabled and scheduled to run.
