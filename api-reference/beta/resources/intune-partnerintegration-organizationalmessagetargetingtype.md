@@ -27,4 +27,3 @@ Indicates the type of targeting
 
 
 
-

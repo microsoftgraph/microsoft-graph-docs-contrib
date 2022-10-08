@@ -1,8 +1,8 @@
 ---
 title: "Reports API overview for attack simulation training as part of Microsoft Defender for Office 365"
-description: "This section describes APIs that access security reports that are part of Microsoft Defender for Office 365."
+description: "This section describes reporting capabilities of Microsoft Defender for Office 365, specifically APIs that access reports on a tenant's participation in attack simulation training."
 ms.localizationpriority: high
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.prod: "security"
 doc_type: resourcePageType
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This section describes reporting capabilities of Microsoft Defender for Office 365, specifically APIs that access reports on a tenant's participation in attack simulation traning. Attack simulation tranings set up benign cyberattack simulations to train users in the tenant to increase their awareness, and help identify vulnerable users.
+This section describes reporting capabilities of Microsoft Defender for Office 365, specifically APIs that access reports on a tenant's participation in attack simulation training. Attack simulation trainings set up benign cyberattack simulations to train users in the tenant to increase their awareness, and help identify vulnerable users.
 
 ## What role do the attack simulation reports play in enterprise defense?
 
@@ -27,7 +27,6 @@ Microsoft Defender for Office 365 belongs to the [Microsoft 365 Defender](/micro
 Microsoft 365 Defender is a unified enterprise defense suite that helps detect security risks, investigate attacks to an organization, and prevent harmful activities automatically. It provides a central administrators portal ([https://security.microsoft.com/](https://security.microsoft.com)) that combines protection, detection, investigation, and response to _email_, _collaboration_, _identity_, and _device_ threats.
 
 To access attack simulation training, open the Microsoft 365 Defender portal, go to **Email & collaboration** > **Attack simulation training**.
-
 
 ## Authorization
 
@@ -49,4 +48,3 @@ Reports resources and APIs can open up new ways for you to engage with users and
 
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-

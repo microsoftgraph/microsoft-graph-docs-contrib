@@ -118,7 +118,7 @@ HTTP/1.1 204 No Content
   "name": "participant-invite-nonactive-participant"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/invite
+POST https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/invite
 Content-Type: application/json
 Content-Length: 464
 
@@ -215,7 +215,7 @@ Content-Type: application/json
   "name": "delete-participant_before-added-to-roster"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{id}
+DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{id}
 ```
 
 # [C#](#tab/csharp)
