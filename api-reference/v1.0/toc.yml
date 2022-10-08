@@ -7570,6 +7570,30 @@ items:
             href: /graph/teams-list-all-teams?context=graph/api/1.0
           - name: Complete migration for team
             href: api/team-completemigration.md
+        - name: Tag
+          href: resources/teamworktag.md
+          items:
+          - name: List
+            href: api/teamworktag-list.md
+          - name: Create
+            href: api/teamworktag-post.md
+          - name: Get
+            href: api/teamworktag-get.md
+          - name: Update
+            href: api/teamworktag-update.md
+          - name: Delete
+            href: api/teamworktag-delete.md
+        - name: Tag member
+          href: resources/teamworktagmember.md
+          items:
+          - name: List
+            href: api/teamworktagmember-list.md
+          - name: Create
+            href: api/teamworktagmember-post.md
+          - name: Get
+            href: api/teamworktagmember-get.md
+          - name: Delete
+            href: api/teamworktagmember-delete.md
       - name: Shift management
         items:
         - name: Offer shift
