@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-One row result of the [advanced hunting query results](../resources/security-huntingqueryresults.md).
+Represents a row of the [results](../resources/security-huntingqueryresults.md) from running an [advanced hunting query](../api/security-runhuntingquery.md).
 
 This is an open type. The exact columns in the query row result are specified in the `project` function of the KQL query, as part of the request body of [runHuntingQuery](../api/security-runhuntingquery.md).
 This class is a Dictionary of string, object.

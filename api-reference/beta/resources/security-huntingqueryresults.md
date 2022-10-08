@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The results of the [hunting query API](../api/security-runhuntingquery.md).
+The results of running a [query for advanced hunting](../api/security-runhuntingquery.md).
 
 ## Properties
 |Property|Type|Description|
