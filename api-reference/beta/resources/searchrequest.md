@@ -69,7 +69,7 @@ The following is a JSON representation of the resource.
   "queryAlterationOptions": {"@odata.type": "microsoft.graph.searchAlterationOptions"},
   "region": "63128164-cbbf-4db4-896c-a7038417019c",
   "resultTemplateOptions": [{"@odata.type": "microsoft.graph.resultTemplateOption"}],
-  "sharePointOneDriveOptions": [{"@odata.type": "microsoft.graph.sharePointOneDriveOptions"}],
+  "sharePointOneDriveOptions": {"@odata.type": "microsoft.graph.sharePointOneDriveOptions"},
   "size": 1024,
   "sortProperties": [{"@odata.type": "microsoft.graph.sortProperty"}],
   "trimDuplicates": false
