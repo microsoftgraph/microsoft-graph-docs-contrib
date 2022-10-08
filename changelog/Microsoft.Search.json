@@ -1231,7 +1231,7 @@
             "ChangeType": "Addition",
             "Description": "Support Application permission in beta api",
             "Target": "identity"
-         },
+         }
       ],
       "Id": "d7e73514-9dad-4c2f-8762-786788ac6984",
       "Cloud": "Prod",
