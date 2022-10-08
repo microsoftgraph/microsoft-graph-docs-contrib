@@ -53,7 +53,7 @@ $requestBody->setProperties($propertiesArray);
 
 
 
-$graphServiceClient->external()->connectionsById('externalConnection-id')->schema()->patch($requestBody);
+$requestResult = $graphServiceClient->external()->connectionsById('externalConnection-id')->schema()->patch($requestBody);
 
 
 ```

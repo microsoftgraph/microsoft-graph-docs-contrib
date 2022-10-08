@@ -19,7 +19,7 @@ $passwordProfile->setPassword('xWwvJ]6NMw+bWH-d');
 $requestBody->setPasswordProfile($passwordProfile);
 
 
-$graphServiceClient->usersById('user-id')->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->patch($requestBody);
 
 
 ```

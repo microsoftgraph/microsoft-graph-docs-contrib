@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the privacy settings to display or return the specified type of insights in an organization. The type of settings can be item insights or people insights.
+Update the privacy settings to display or return the specified type of insights in an organization. The type of settings can be contact insights, item insights, or people insights.
 
 To learn more about customizing insights privacy for your organization, see:
 -  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy) 
@@ -21,7 +21,15 @@ To learn more about customizing insights privacy for your organization, see:
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+To update settings for contact insights, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Organization.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+To update settings for item insights or people insights, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -30,8 +38,17 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
+>**Note:** Using delegated permissions for this operation to update insights for contacts, item, or people requires the signed-in user to have a global administrator role.
+
+
 ## HTTP request
+
+To update settings for contact insights:
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /organization/{organizationId}/settings/contactInsights
+```
 
 To update settings for item insights:
 <!-- { "blockType": "ignored" } -->
@@ -70,7 +87,49 @@ If successful, this method returns a `200 OK` response code and [insightsSetting
 
 ## Examples 
 
-### Example 1: Update settings for item insights
+### Example 1: Update settings for contact insights
+#### Request
+
+The following is an example of a request that shows how an admin updates **isEnabledInOrganization** to enable contact insights for the specified organization; the default for **isEnabledInOrganization** is false, disabling contact insights. The example also sets the **disabledForGroup** privacy setting to prohibit displaying user's contact insights in a particular Azure AD group.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_insightssettings_contactinsightsrequest"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/contactInsights
+Content-type: application/json
+
+{
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+}
+```
+
+
+### Response
+
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.insightsSettings",
+  "name": "update_insightssettings_contactinsightsrequest"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+}
+```
+
+### Example 2: Update settings for item insights
 #### Request
 
 Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying item insights of users in a particular Azure AD group.
@@ -141,7 +200,7 @@ Content-type: application/json
 ```
 
 
-### Example 2: Update settings for people insights
+### Example 3: Update settings for people insights
 #### Request
 
 The following is an example of a request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying people insights of users in a particular Azure AD group.
@@ -215,4 +274,4 @@ Content-type: application/json
 ```
 
 
- 107  api-reference/beta/api/iteminsightssettings-get.md 
+

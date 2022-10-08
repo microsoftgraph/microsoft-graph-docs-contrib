@@ -114,7 +114,7 @@ timeSlots := []graphmodels.Objectable {
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").StaffMembersById("bookingStaffMemberBase-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").StaffMembersById("bookingStaffMemberBase-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

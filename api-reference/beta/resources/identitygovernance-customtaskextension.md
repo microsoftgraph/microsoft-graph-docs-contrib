@@ -17,6 +17,8 @@ Defines the attributes of a customTaskExtension that allows you to integrate Lif
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
+For more information about using custom task extensions, refer to the links in the [see also](#see-also) section.
+
 ## Methods
 
 |Method|Return type|Description|
@@ -81,3 +83,7 @@ The following is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+## See also
+
++ [Lifecycle Workflows Custom Task Extension (Preview)](/azure/active-directory/governance/lifecycle-workflow-extensibility)

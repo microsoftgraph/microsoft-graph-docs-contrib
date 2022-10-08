@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports resource type"
-description: "The reports entity indicates the Windows 365 product related reports"
+description: "Represents the Windows 365 Cloud PC related reports, includes Windows 365 Cloud PC remote connections related report."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -18,11 +18,11 @@ Represents the Windows 365 Cloud PC related reports, includes Windows 365 Cloud 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getDailyAggregatedRemoteConnectionReports](../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md)|Stream|Get the daily aggregated remote connection reports like round trip time, available bandwidth and so on in a given period.|
-|[getRealTimeRemoteConnectionLatency](../api/cloudpcreports-getrealtimeremoteconnectionlatency.md)|Stream|Get the real time remote connection latency reports like current round trip time, available bandwidth and so on of a Cloud PC.|
+|[getDailyAggregatedRemoteConnectionReports](../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md)|Stream|Get the daily aggregated remote connection reports like round trip time and available bandwidth in a given period.|
+|[getRealTimeRemoteConnectionLatency](../api/cloudpcreports-getrealtimeremoteconnectionlatency.md)|Stream|Get the real time remote connection latency reports like current round trip time and available bandwidth of a Cloud PC.|
 |[getRealTimeRemoteConnectionStatus](../api/cloudpcreports-getrealtimeremoteconnectionstatus.md)|Stream|Get the real time remote connection status reports like sign in status, days since last use of a Cloud PC.|
 |[getRemoteConnectionHistoricalReports](../api/cloudpcreports-getremoteconnectionhistoricalreports.md)|Stream|Get a Cloud PC's remote connection historical reports like signInDateTime, signOutDateTime and usageInHour in a given period.|
-|[getTotalAggregatedRemoteConnectionReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports like usage, daysSinceLastUse and so on in a given period.|
+|[getTotalAggregatedRemoteConnectionReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports like usage and daysSinceLastUse in a given period.|
 
 
 ## Properties
