@@ -3238,3 +3238,12 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |group|
 |unknownFutureValue|
+
+### sharePointOneDriveOptions values 
+
+|Member|
+|:---|
+|privateContent|
+|sharedContent|
+|unknownFutureValue|
+
