@@ -79,6 +79,7 @@ This example specifies a KQL query which does the following:
 -->
 ``` http
 POST https://graph.microsoft.com/beta/security/runHuntingQuery
+
 {
     "query":"DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
 }
@@ -92,9 +93,13 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
   "@odata.type": "microsoft.graph.huntingQueryResults"
 }
 -->
-``` json
+
+``` http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
-    "Schema": [
+    "schema": [
         {
             "Name": "Timestamp",
             "Type": "DateTime"
@@ -108,7 +113,7 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
             "Type": "String"
         }
     ],
-    "Results": [
+    "results": [
         {
             "Timestamp": "2020-08-30T06:38:35.7664356Z",
             "FileName": "conhost.exe",
