@@ -36,6 +36,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "includeContent": "privateContent,sharedContent"
+  "includeContent": "string"
 }
 ```
