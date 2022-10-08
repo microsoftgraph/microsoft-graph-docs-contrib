@@ -428,9 +428,10 @@ items:
         items:
           - name: Overview
             href: social-intel-concept-overview.md
-            displayName: people, workplace, intelligence, people and workplace intelligence
-          - name: Get information about relevant people
-            href: people-example.md
+          - name: Search people
+            href: search-concept-person.md            
+          - name: People insights overview
+            href: people-insights-overview.md
           - name: Customize people insights privacy (preview)
             href: insights-customize-people-insights-privacy.md
           - name: Customize the profile card (preview)
