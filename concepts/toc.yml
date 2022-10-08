@@ -115,7 +115,7 @@ items:
           - name: Microsoft Graph Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect, frequently asked questions
-          -name: Troubleshooting
+          - name: Data Connect troubleshooting
             href: data-connect-troubleshooting.md
             displayName: Microsoft Graph Data Connect Troubleshooting
       - name: Calendar
