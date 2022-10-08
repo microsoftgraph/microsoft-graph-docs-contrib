@@ -17,6 +17,14 @@
                     "ChangeType": "Addition",
                     "Description": "Added the **cloudPcRegionGroup** enumeration type.",
                     "Target": "cloudPcRegionGroup"
+                },
+                {
+                    "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "regionGroup",
+                    "ChangeType": "Addition",
+                    "Description": "Added the regionGroup property to the cloudPcDomainJoinConfiguration resource.",
+                    "Target": "cloudPcDomainJoinConfiguration"
                 }
             ],
             "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
