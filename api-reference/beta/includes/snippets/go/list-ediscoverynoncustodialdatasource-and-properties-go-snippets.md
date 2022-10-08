@@ -14,7 +14,7 @@ configuration := &graphconfig.NoncustodialDataSourcesRequestBuilderGetRequestCon
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").NoncustodialDataSources().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").NoncustodialDataSources().Get(context.Background(), configuration)
 
 
 ```

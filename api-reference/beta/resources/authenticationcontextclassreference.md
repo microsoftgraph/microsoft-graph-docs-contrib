@@ -2,7 +2,7 @@
 title: "authenticationContextClassReference resource type"
 description: "Represents an Azure Active Directory authentication context class reference."
 ms.localizationpriority: medium
-author: "calebb"
+author: "bakerCaleb"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -22,17 +22,19 @@ Represents an Azure Active Directory authentication context class reference. Aut
 | [List authenticationContextClassReference](../api/conditionalaccessroot-list-authenticationcontextclassreferences.md) | [authenticationContextClassReference](authenticationContextClassReference.md) collection | Get all of the authenticationContextClassReference objects in the organization. |
 | [Create authenticationContextClassReference](../api/conditionalaccessroot-post-authenticationcontextclassreferences.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Create a new authenticationContextClassReference object. |
 | [Get authenticationContextClassReference](../api/authenticationcontextclassreference-get.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Read properties and relationships of a authenticationContextClassReference object. |
-| [Update authenticationContextClassReference](../api/authenticationcontextclassreference-update.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Update a authenticationContextClassReference object. |
+| [Update authenticationContextClassReference](../api/authenticationcontextclassreference-update.md) | None | Update a authenticationContextClassReference object. |
+| [Delete authenticationContextClassReference](../api/authenticationcontextclassreference-delete.md) | None | Delete an authenticationContextClassReference object. |
 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| Identifier used to reference the authentication context class. The id is used to trigger step-up authentication for the referenced authentication requirements and is the value that will be issued in the acrs claim. This value in the claim is used to verify the required authentication context has been satisfied. The allowed id values are "c1" through "c25". |
-|displayName|String| The display name is the friendly name of the authenticationContextClassReference. This value should be used to identify the authentication context class reference when building user facing admin experiences. For example, selection UX. |
-|description|String| A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences. For example, selection UX.|
-|isAvailable|boolean| Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to `false` it should not be shown in admin UX experiences because the value is not currently available for selection.|
+|id|String| Identifier used to reference the authentication context class. The id is used to trigger step-up authentication for the referenced authentication requirements and is the value that will be issued in the `acrs` claim of an access token. This value in the claim is used to verify that the required authentication context has been satisfied. The allowed values are `c1` through `c25`. <br/> Supports `$filter` (`eq`). |
+|displayName|String| A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences. For example, a selection UX. |
+|description|String| A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences. For example, selection UX. |
+|isAvailable|boolean| Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to `false`, it should not be shown in selection UX used to tag resources with authentication context class values. It will still be shown in the Conditionall Access policy authoring experience. <br/> Supports `$filter` (`eq`). |
+
 
 ## Relationships
 
@@ -60,7 +62,7 @@ The following is a JSON representation of the resource.
       "id": "String",
       "displayName": "String",
       "description": "String",
-      "isAvailable": "boolean",
+      "isAvailable": "Boolean",
     }
 
 ```

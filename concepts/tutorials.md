@@ -46,12 +46,12 @@ After you complete a tutorial, you can learn more on Microsoft Learn or explore 
 
 ### Microsoft Learn
 
-For a deeper dive into Microsoft Graph, explore our Microsoft Graph learning paths on Microsoft Learn:
+For a deeper dive into Microsoft Graph, explore our Microsoft Graph learning paths:
 
-- [Microsoft Graph Fundamentals](/learn/paths/m365-msgraph-fundamentals)
-- [Build apps with Microsoft Graph - Associate](/learn/paths/m365-msgraph-associate)
-- [Develop apps with Microsoft Graph Toolkit](/learn/paths/m365-msgraph-toolkit)
-- [Explore Microsoft Graph scenarios for JavaScript development](/learn/paths/m365-msgraph-scenarios)
+- [Microsoft Graph Fundamentals](/training/paths/m365-msgraph-fundamentals)
+- [Build apps with Microsoft Graph - Associate](/training/paths/m365-msgraph-associate)
+- [Develop apps with Microsoft Graph Toolkit](/training/paths/m365-msgraph-toolkit)
+- [Explore Microsoft Graph scenarios for JavaScript development](/training/paths/m365-msgraph-scenarios)
 
 ### Samples
 

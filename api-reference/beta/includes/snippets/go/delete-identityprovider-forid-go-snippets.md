@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.IdentityProvidersById("identityProvider-id").Delete()
+graphClient.IdentityProvidersById("identityProvider-id").Delete(context.Background(), nil)
 
 
 ```

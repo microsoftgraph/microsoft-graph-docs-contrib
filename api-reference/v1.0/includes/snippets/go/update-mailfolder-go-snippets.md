@@ -11,7 +11,7 @@ requestBody := graphmodels.NewMailFolder()
 displayName := "displayName-value"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.Me().MailFoldersById("mailFolder-id").Patch(requestBody)
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

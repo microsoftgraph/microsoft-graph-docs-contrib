@@ -17,7 +17,7 @@ configuration := &graphconfig.EventsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Calendar().Events().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().Calendar().Events().Get(context.Background(), configuration)
 
 
 ```
