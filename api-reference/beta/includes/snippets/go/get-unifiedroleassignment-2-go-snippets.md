@@ -14,7 +14,7 @@ configuration := &graphconfig.UnifiedRoleAssignmentRequestBuilderGetRequestConfi
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentsById("unifiedRoleAssignment-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentsById("unifiedRoleAssignment-id").Get(context.Background(), configuration)
 
 
 ```

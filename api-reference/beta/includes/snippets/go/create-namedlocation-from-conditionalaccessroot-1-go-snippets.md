@@ -30,7 +30,7 @@ cidrAddress := "2001:0:9d38:90d6:0:0:0:0/63"
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(requestBody)
+result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -9,7 +9,9 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for chats using Microsoft Graph
 
-Change notifications enable you to subscribe to changes (create and update) to chats. You can get notified whenever a chat is created or updated. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications enable you to subscribe to changes (create and update) to chats. You can get notified whenever a [chat](/graph/api/resources/chat) is created or updated. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+
+Continue with this article about scenarios for the **chat** resource. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).  
 
 ## Subscribe to changes in any chat at tenant level
 
@@ -145,6 +147,40 @@ The decrypted notification payload looks like the following. The payload conform
 }
 ```
 
+## Subscribe to changes in any chat in a tenant where a Teams app is installed (preview)
+
+To get change notifications for all changes related to any chat in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+
+> **Note.** This resource type is currently in preview.
+
+[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
+
+### Permissions
+
+| Permission type                        | Permissions (from least to most privileged)                  |
+| :------------------------------------- | :----------------------------------------------------------- |
+| Delegated (work or school account)     | Not supported.                                               |
+| Delegated (personal Microsoft account) | Not supported.                                               |
+| Application                            | Chat.ReadBasic.WhereInstalled, Chat.Read.WhereInstalled, Chat.ReadWrite.WhereInstalled |
+
+### Example
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/appCatalogs/teamsApps/386bbcdb-1e1c-4f3f-b7d0-ad7b9ea6cf7c/installedToChats",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 ### Notifications without resource data
 
 The following payload describes the information sent in the request for notifications without resource data. This particular payload signifies that a new chat has been created.
@@ -169,4 +205,8 @@ The **resource** and **@odata.id** properties can be used to make calls to Micro
 
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)
+- [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
+- [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
+- [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
+- [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)

@@ -2,7 +2,7 @@
 title: "Get authenticationContextClassReference"
 description: "Retrieve the properties and relationships of a authenticationContextClassReference object."
 ms.localizationpriority: medium
-author: "calebb"
+author: "bakerCaleb"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -42,13 +42,9 @@ This method does not support optional query parameters to customize the response
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## Request body
-
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [authenticationContextClassReferences](../resources/\authenticationcontextclassreference.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object in the response body.
 
 ## Examples
 

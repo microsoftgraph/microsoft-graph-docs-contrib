@@ -31,7 +31,8 @@ $requestBody->setAvailabilityEndDateTime(new DateTime('2021-12-31T20:01:37Z'));
 
 $requestBody->setLanguageTags(['en-us', ]);
 
-$requestBody->setPlatforms(['ios', ]);
+$requestBody->setPlatforms([$requestBody->setDevicePlatformType(new DevicePlatformType('ios'));
+]);
 
 $requestBody->setState(new AnswerState('published'));
 

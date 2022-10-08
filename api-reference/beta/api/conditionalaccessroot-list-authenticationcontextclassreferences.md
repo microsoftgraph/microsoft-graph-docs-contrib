@@ -2,7 +2,7 @@
 title: "List authenticationContextClassReferences"
 description: "Retrieve a list of authenticationContextClassReference objects."
 ms.localizationpriority: medium
-author: "calebb"
+author: "bakerCaleb"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -34,7 +34,7 @@ GET /identity/conditionalAccess/authenticationContextClassReferences
 ```
 ## Optional query parameters
 
-This method supports the `$filter` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationCo
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

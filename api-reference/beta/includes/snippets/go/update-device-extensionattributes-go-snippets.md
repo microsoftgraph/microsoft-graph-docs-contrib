@@ -13,7 +13,7 @@ extensionAttribute1 := "BYOD-Device"
 extensionAttributes.SetExtensionAttribute1(&extensionAttribute1) 
 requestBody.SetExtensionAttributes(extensionAttributes)
 
-graphClient.DevicesById("device-id").Patch(requestBody)
+result, err := graphClient.DevicesById("device-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

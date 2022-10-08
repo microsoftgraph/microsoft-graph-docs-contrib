@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().Tasks().ListsById("baseTaskList-id").TasksById("baseTask-id").ChecklistItemsById("checklistItem-id").Delete()
+graphClient.Me().Tasks().ListsById("baseTaskList-id").TasksById("baseTask-id").ChecklistItemsById("checklistItem-id").Delete(context.Background(), nil)
 
 
 ```

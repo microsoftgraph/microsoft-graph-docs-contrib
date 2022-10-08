@@ -11,13 +11,16 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new ConditionalAccessPolicy();
 $conditions = new ConditionalAccessConditionSet();
-$conditions->setSignInRiskLevels(['high', 'medium', 'low', ]);
+$conditions->setSignInRiskLevels([$conditions->setRiskLevel(new RiskLevel('high'));
+$conditions->setRiskLevel(new RiskLevel('medium'));
+$conditions->setRiskLevel(new RiskLevel('low'));
+]);
 
 
 $requestBody->setConditions($conditions);
 
 
-$graphServiceClient->identity()->conditionalAccess()->policiesById('conditionalAccessPolicy-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identity()->conditionalAccess()->policiesById('conditionalAccessPolicy-id')->patch($requestBody);
 
 
 ```

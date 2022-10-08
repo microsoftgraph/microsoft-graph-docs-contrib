@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewChatMessage()
 createdDateTime , err := time.Parse(time.RFC3339, "2019-02-04T19:58:15.511Z")
 requestBody.SetCreatedDateTime(&createdDateTime) 
-from := graphmodels.Newfrom()
+from := graphmodels.NewChatMessageFromIdentitySet()
 user := graphmodels.NewIdentity()
 id := "id-value"
 user.SetId(&id) 
@@ -29,7 +29,7 @@ content := "Hello World"
 body.SetContent(&content) 
 requestBody.SetBody(body)
 
-result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(requestBody)
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

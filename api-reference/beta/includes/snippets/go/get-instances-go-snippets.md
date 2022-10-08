@@ -20,7 +20,7 @@ configuration := &graphconfig.InstancesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().EventsById("event-id").Instances().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().EventsById("event-id").Instances().Get(context.Background(), configuration)
 
 
 ```
