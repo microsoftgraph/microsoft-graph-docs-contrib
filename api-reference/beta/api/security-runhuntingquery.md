@@ -7,12 +7,18 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# security: Run Hunting query
+# security: runHuntingQuery
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft 365 Hunting feature is a query-based threat-hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
+Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for cyber security threats.
+
+This advanced hunting feature in Microsoft 365 Defender lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
+
+This method specifies a Kusto Query Language (KQL) query which identifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide) to query, and a piped sequence of operators or functions to filter or search the data, and format or structure the query output in specific ways. 
+
+See more information about [KQL](/azure/data-explorer/kusto/query/).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,6 +64,14 @@ If successful, this action returns a `200 OK` response code and a [huntingQueryR
 ## Examples
 
 ### Request
+
+This example specifies a KQL query which does the following:
+- Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide) table in the advanced hunting schema.
+- Filters on the condition that the event is initiated by the powershell.exe process.
+- Specifies the output of 3 columns from the same table for each row: `Timestamp`, `FileName`, `InitiatingProcessFileName`.
+- Sorts the output by the `Timestamp` value.
+- Limits the output to 2 records (2 rows).
+
 <!-- {
   "blockType": "request",
   "name": "security_runhuntingquery"

@@ -30,31 +30,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "Schema": [
-        {
-            "Name": "Timestamp",
-            "Type": "DateTime"
-        },
-        {
-            "Name": "FileName",
-            "Type": "String"
-        },
-        {
-            "Name": "InitiatingProcessFileName",
-            "Type": "String"
-        }
-    ],
-    "Results": [
-        {
-            "Timestamp": "2020-08-30T06:38:35.7664356Z",
-            "FileName": "conhost.exe",
-            "InitiatingProcessFileName": "powershell.exe"
-        },
-        {
-            "Timestamp": "2020-08-30T06:38:30.5163363Z",
-            "FileName": "conhost.exe",
-            "InitiatingProcessFileName": "powershell.exe"
-        }
-    ]
+    "schema": [{"@odata.type": "microsoft.graph.singlePropertySchema"}],
+    "results": [{"@odata.type": "microsoft.graph.huntingRowResult"}]
 }
 ```
