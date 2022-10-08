@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 484
+Content-Length: 633
 
 {
   "value": {
@@ -71,14 +71,13 @@ Content-Length: 484
     "topicIdentifier": "Topic Identifier value",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+    "certificateUploadStatus": "Certificate Upload Status value",
+    "certificateUploadFailureReason": "Certificate Upload Failure Reason value",
     "certificateSerialNumber": "Certificate Serial Number value",
     "certificate": "Certificate value"
   }
 }
 ```
-
-
-
 
 
 

@@ -2026,6 +2026,8 @@ items:
             href: api/printershare-post-allowedgroups.md
           - name: Delete allowed group
             href: api/printershare-delete-allowedgroup.md
+          - name: List recent shares
+            href: api/print-list-recentshares.md
         - name: Print task definition
           href: resources/printtaskdefinition.md
           items:
@@ -12266,6 +12268,14 @@ items:
               href: api/authenticationcontextclassreference-update.md
             - name: Delete
               href: api/authenticationcontextclassreference-delete.md
+          - name: Templates
+            items:
+            - name: Conditional access template
+              href: resources/conditionalAccessTemplate.md
+            - name: List
+              href: api/conditionalaccessroot-list-templates.md
+            - name: Get
+              href: api/conditionalaccesstemplate-get.md
         - name: Cross-tenant access
           items:
           - name: Overview
@@ -15903,11 +15913,11 @@ items:
               href: api/call-keepalive.md
             - name: Log teleconference device quality data
               href: api/call-logteleconferencedevicequality.md
+            - name: Change screen sharing role
+              href: api/call-changescreensharingrole.md
           - name: Content sharing session
             href: resources/contentsharingsession.md
             items:
-            - name: Change screen sharing role
-              href: api/call-changescreensharingrole.md
             - name: List
               href: api/call-list-contentsharingsessions.md
             - name: Get
@@ -16227,6 +16237,10 @@ items:
             href: api/sharedwithchannelteaminfo-delete.md
           - name: List allowed members
             href: api/sharedwithchannelteaminfo-list-allowedmembers.md
+          - name: Set message reaction
+            href: api/chatmessage-setreaction.md
+          - name: Unset message reaction
+            href: api/chatmessage-unsetreaction.md
         - name: Chat
           href: resources/chat.md
           items:
@@ -16276,6 +16290,10 @@ items:
             href: api/chat-post-pinnedmessages.md
           - name: Unpin message
             href: api/chat-delete-pinnedmessages.md
+          - name: Set message reaction
+            href: api/chatmessage-setreaction.md
+          - name: Unset message reaction
+            href: api/chatmessage-unsetreaction.md
         - name: Chat message
           href: resources/chatmessage.md
           items:
@@ -16313,6 +16331,10 @@ items:
             href: api/chat-post-pinnedmessages.md
           - name: Unpin message
             href: api/chat-delete-pinnedmessages.md
+          - name: Set message reaction
+            href: api/chatmessage-setreaction.md
+          - name: Unset message reaction
+            href: api/chatmessage-unsetreaction.md
         - name: Pinned chat message
           href: resources/pinnedchatmessageinfo.md
           items:
@@ -16394,7 +16416,7 @@ items:
               href: api/teamwork-list-deletedteams.md
             - name: Get all messages
               href: api/deletedteam-getallmessages.md
-        - name: Tag (preview)
+        - name: Tag
           href: resources/teamworktag.md
           items:
           - name: List
@@ -16407,13 +16429,16 @@ items:
             href: api/teamworktag-update.md
           - name: Delete
             href: api/teamworktag-delete.md
-          - name: List members
+        - name: Tag member
+          href: resources/teamworktagmember.md
+          items:
+          - name: List
             href: api/teamworktagmember-list.md
-          - name: Create member
+          - name: Create
             href: api/teamworktagmember-post.md
-          - name: Get member
+          - name: Get
             href: api/teamworktagmember-get.md
-          - name: Delete member
+          - name: Delete
             href: api/teamworktagmember-delete.md
       - name: Shift management
         items:

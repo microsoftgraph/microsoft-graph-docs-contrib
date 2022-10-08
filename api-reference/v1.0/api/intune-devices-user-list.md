@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /users
+GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users
 ```
 
 ## Request headers
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/v1.0/users
+GET https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users
 ```
 
 ### Response
@@ -69,9 +69,6 @@ Content-Length: 136
   ]
 }
 ```
-
-
-
 
 
 
