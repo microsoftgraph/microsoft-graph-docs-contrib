@@ -25,7 +25,7 @@ For GCC (US Government Community Cloud) customers, the Azure Active Directory fo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The tenant ID of the GCC (US Government Community Cloud) tenant in public cloud. Inherited from [entity](../resources/entity.md).|
+|id|String|The tenant ID of the GCC (US Government Community Cloud) tenant in public cloud.|
 |organizationIdsInUSGovCloud|String collection|The ID of the tenant in Azure Government corresponding to the GCC (US Government Community Cloud) tenant in public cloud. We only support 1:1 mapping for now, so this collection can only contains 1 tenant ID.|
 
 ## Relationships
