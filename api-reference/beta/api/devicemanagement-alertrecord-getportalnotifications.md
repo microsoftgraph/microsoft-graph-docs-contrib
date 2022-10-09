@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a collection of [portalNotification](../resources/devicemanagement-portalnotification.md) objects in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [microsoft.graph.deviceManagement.portalNotification](../resources/devicemanagement-portalnotification.md) objects in the response body.
 
 ## Examples
 

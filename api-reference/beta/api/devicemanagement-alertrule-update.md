@@ -55,7 +55,7 @@ PATCH /deviceManagement/monitoring/alertRules/{alertRuleId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [alertRule](../resources/devicemanagement-alertrule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.deviceManagement.alertRule](../resources/devicemanagement-alertrule.md) object in the response body.
 
 ## Examples
 

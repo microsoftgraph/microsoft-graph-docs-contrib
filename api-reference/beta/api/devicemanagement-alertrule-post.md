@@ -59,7 +59,7 @@ POST /deviceManagement/monitoring/alertRules
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [alertRule](../resources/devicemanagement-alertrule.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.deviceManagement.alertRule](../resources/devicemanagement-alertrule.md) object in the response body.
 
 ## Example
 
