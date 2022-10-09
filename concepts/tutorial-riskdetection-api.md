@@ -1,12 +1,12 @@
 ---
-title: "Tutorial: Identify and remediate risk using Microsoft Graph APIs"
+title: "Identify and remediate risk using Microsoft Graph"
 description: "Learn how to generate a risky sign-in and remediate the risk status of the user with a conditional access policy that requires multi-factor authentication (MFA)."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 ---
 
-# Tutorial: Identify and remediate risks using Microsoft Graph APIs
+# Identify and remediate risks using Microsoft Graph
 
 Azure AD Identity Protection provides organizations insight into identity-based risk and different ways to investigate and automatically remediate risk. The Identity Protection APIs used in this tutorial can help you identify risk and configure a workflow to confirm compromise or enable remediation. For more information, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
@@ -21,24 +21,8 @@ To successfully complete this tutorial, make sure that you have the required pre
 
 - You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
 - This tutorial uses the Tor browser to sign in to the Azure portal anonymously. You can use any anonymous browser to accomplish the task. To download the Tor browser, see [Download Tor Browser](https://www.torproject.org/download/).
-- This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. Complete the following steps to set permissions in Microsoft Graph Explorer:
-    1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-    2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
-    3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
-
-        ![Set permissions](./images/tutorial-riskdetection-api/set-permissions.png)
-        
-    4. Scroll through the list of permissions to these permissions:
-        - **IdentityRiskEvents (2)**, expand and then select `IdentityRiskEvent.Read.All`
-        - **IdentityRiskyUser (2)**, expand and then select `IdentityRiskyUser.ReadWrite.All`
-        - **Policy (13)**, expand and then select `Policy.Read.All` and `Policy.ReadWrite.ConditionalAccess`
-        - **User (8)**, expand and then select `User.ReadWrite.All`
-        
-        ![Search for permissions](./images/tutorial-riskdetection-api/permissions-consent.png)
-    
-    5. Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
-
-        ![Accept permissions](./images/tutorial-riskdetection-api/accept-permissions.png)
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
+- Grant yourself the following delegated permissions: `IdentityRiskEvent.Read.All`, `IdentityRiskyUser.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ConditionalAccess`, and `User.ReadWrite.All`.
 
 ## Step 1: Create a user account
 
@@ -419,7 +403,7 @@ Content-type: application/json
 
 With this conditional access policy in place, the **MyTestUser1** account is now blocked from signing in because the sign-in risk level is `medium` or `high`.
 
-![Blocked sign-in](./images/tutorial-riskdetection-api/conditionalaccess-policy.png)
+![Blocked sign-in](./images/tutorials-identity/tutorial-risk-detection.conditionalaccess-policy.png)
 
 ## Step 5: Dismiss risky users
 

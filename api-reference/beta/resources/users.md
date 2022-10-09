@@ -36,6 +36,10 @@ One of the following [permissions](/graph/permissions-reference) is required to 
 
 In addition to the required permissions, the user operations that the calling user can perform are bounded to the privileges granted to the calling user via specific [Azure AD roles](/azure/active-directory/roles/permissions-reference). For more information, see the *Who can reset passwords?* and *Who can update sensitive attributes?* sections.
 
+### Default user permissions
+
+The set of default permissions depends on whether the user is a native member of the tenant (member user) or whether the user is brought over from another directory as a business-to-business (B2B) collaboration guest (guest user). Azure AD defines a set of default permissions for member users and guest users. For more information about what member users and guest users can do, see [What are the default user permissions in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context)
+
 ### Who can reset passwords?
 
 In the following table, the columns list the roles that can reset passwords. The rows list the roles for which their password can be reset.

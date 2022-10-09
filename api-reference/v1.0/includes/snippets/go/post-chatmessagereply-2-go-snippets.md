@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewChatMessage()
 createdDateTime , err := time.Parse(time.RFC3339, "2019-02-04T19:58:15.511Z")
 requestBody.SetCreatedDateTime(&createdDateTime) 
-from := graphmodels.Newfrom()
+from := graphmodels.NewChatMessageFromIdentitySet()
 user := graphmodels.NewIdentity()
 id := "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca"
 user.SetId(&id) 

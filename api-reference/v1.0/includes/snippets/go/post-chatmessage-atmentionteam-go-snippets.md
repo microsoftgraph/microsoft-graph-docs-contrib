@@ -21,8 +21,8 @@ id := int32(0)
 chatMessageMention.SetId(&id) 
 mentionText := "GraphTesting"
 chatMessageMention.SetMentionText(&mentionText) 
-mentioned := graphmodels.Newmentioned()
-conversation := graphmodels.Newconversation()
+mentioned := graphmodels.NewChatMessageMentionedIdentitySet()
+conversation := graphmodels.NewTeamworkConversationIdentity()
 id := "68a3e365-f7d9-4a56-b499-24332a9cc572"
 conversation.SetId(&id) 
 displayName := "GraphTesting"

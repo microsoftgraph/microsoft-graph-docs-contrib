@@ -35,7 +35,7 @@ maxImageSize := int32(12000)
 ocr.SetMaxImageSize(&maxImageSize) 
 requestBody.SetOcr(ocr)
 
-graphClient.Compliance().Ediscovery().CasesById("case-id").Settings().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").Settings().Patch(context.Background(), requestBody, nil)
 
 
 ```

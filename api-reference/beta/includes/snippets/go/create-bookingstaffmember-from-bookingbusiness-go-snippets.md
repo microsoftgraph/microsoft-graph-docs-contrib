@@ -28,9 +28,9 @@ bookingWorkHours.SetDay(&day)
 
 
 bookingWorkTimeSlot := graphmodels.NewBookingWorkTimeSlot()
-end := "17:00:00.0000000"
+end := 17:00:00.0000000
 bookingWorkTimeSlot.SetEnd(&end) 
-start := "08:00:00.0000000"
+start := 08:00:00.0000000
 bookingWorkTimeSlot.SetStart(&start) 
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
@@ -49,9 +49,9 @@ bookingWorkHours1.SetDay(&day)
 
 
 bookingWorkTimeSlot := graphmodels.NewBookingWorkTimeSlot()
-end := "17:00:00.0000000"
+end := 17:00:00.0000000
 bookingWorkTimeSlot.SetEnd(&end) 
-start := "08:00:00.0000000"
+start := 08:00:00.0000000
 bookingWorkTimeSlot.SetStart(&start) 
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
@@ -70,9 +70,9 @@ bookingWorkHours2.SetDay(&day)
 
 
 bookingWorkTimeSlot := graphmodels.NewBookingWorkTimeSlot()
-end := "17:00:00.0000000"
+end := 17:00:00.0000000
 bookingWorkTimeSlot.SetEnd(&end) 
-start := "08:00:00.0000000"
+start := 08:00:00.0000000
 bookingWorkTimeSlot.SetStart(&start) 
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
@@ -91,9 +91,9 @@ bookingWorkHours3.SetDay(&day)
 
 
 bookingWorkTimeSlot := graphmodels.NewBookingWorkTimeSlot()
-end := "17:00:00.0000000"
+end := 17:00:00.0000000
 bookingWorkTimeSlot.SetEnd(&end) 
-start := "08:00:00.0000000"
+start := 08:00:00.0000000
 bookingWorkTimeSlot.SetStart(&start) 
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
@@ -112,9 +112,9 @@ bookingWorkHours4.SetDay(&day)
 
 
 bookingWorkTimeSlot := graphmodels.NewBookingWorkTimeSlot()
-end := "17:00:00.0000000"
+end := 17:00:00.0000000
 bookingWorkTimeSlot.SetEnd(&end) 
-start := "08:00:00.0000000"
+start := 08:00:00.0000000
 bookingWorkTimeSlot.SetStart(&start) 
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {

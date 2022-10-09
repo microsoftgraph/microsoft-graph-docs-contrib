@@ -39,7 +39,7 @@ vendor := "String"
 vendorInformation.SetVendor(&vendor) 
 requestBody.SetVendorInformation(vendorInformation)
 
-graphClient.Security().AlertsById("alert-id").Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Security().AlertsById("alert-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

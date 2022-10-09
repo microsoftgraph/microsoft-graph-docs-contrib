@@ -29,7 +29,7 @@ For example, to retrieve only inactive user accounts, you can run either of thes
     # [C#](#tab/csharp)
 
     ```csharp
-    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=CS
+    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=CS
     var user = await graphClient.Users.Request()
         .Filter("accountEnabled eq false")
         .GetAsync();
@@ -38,7 +38,7 @@ For example, to retrieve only inactive user accounts, you can run either of thes
     # [JavaScript](#tab/javascript)
 
     ```javascript
-    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Javascript
+    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Javascript
     let users = await client.api('/users')
       .filter('accountEnabled eq false')
       .get();
@@ -47,7 +47,7 @@ For example, to retrieve only inactive user accounts, you can run either of thes
     # [Objective-C](#tab/objc)
 
     ```objectivec
-    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Objective-C
+    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Objective-C
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users?$filter=accountEnabled eq false"]]];
     [urlRequest setHTTPMethod:@"GET"];
 
@@ -66,7 +66,7 @@ For example, to retrieve only inactive user accounts, you can run either of thes
     # [Java](#tab/java)
 
     ```java
-    // See https://docs.microsoft.com/en-us/graph/sdks/create-client?tabs=Java
+    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Java
     UserCollectionPage users = graphClient.users()
         .buildRequest()
         .filter("accountEnabled eq false")
@@ -76,7 +76,7 @@ For example, to retrieve only inactive user accounts, you can run either of thes
     # [Go](#tab/go)
 
     ```go
-    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Go
+    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Go
     requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
         Filter: "accountEnabled eq false",
     }
@@ -113,7 +113,7 @@ For example, to retrieve only inactive user accounts, you can run either of thes
     # [C#](#tab/csharp)
 
     ```csharp
-    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=CS
+    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=CS
     var user = await graphClient.Users.Request()
         .Request(new Option[] { new QueryOption("$count", "true")})
         .Header("ConsistencyLevel", "eventual")
@@ -124,7 +124,7 @@ For example, to retrieve only inactive user accounts, you can run either of thes
     # [JavaScript](#tab/javascript)
 
     ```javascript
-    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Javascript
+    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Javascript
     let users = await client.api('/users')
       .header('ConsistencyLevel','eventual')
       .filter('accountEnabled ne true')
@@ -135,7 +135,7 @@ For example, to retrieve only inactive user accounts, you can run either of thes
     # [Objective-C](#tab/objc)
 
     ```objectivec
-    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Objective-C
+    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Objective-C
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users?$filter=accountEnabled ne true&$count=true"]]];
     [urlRequest setHTTPMethod:@"GET"];
     [urlRequest setValue:@"eventual" forHTTPHeaderField:@"ConsistencyLevel"];
@@ -155,7 +155,7 @@ For example, to retrieve only inactive user accounts, you can run either of thes
     # [Java](#tab/java)
 
     ```java
-    // See https://docs.microsoft.com/en-us/graph/sdks/create-client?tabs=Java
+    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Java
     LinkedList<Option> requestOptions = new LinkedList<Option>();
     requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
     requestOptions.add(new QueryOption("$count", "true"))
@@ -169,7 +169,7 @@ For example, to retrieve only inactive user accounts, you can run either of thes
     # [Go](#tab/go)
 
     ```go
-    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Go
+    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Go
     requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
         Filter: "accountEnabled ne true",
         Count: true,

@@ -46,7 +46,8 @@ languageTags := []string {
 }
 requestBody.SetLanguageTags(languageTags)
 platforms := []graphmodels.DevicePlatformTypeable {
-	"ios",
+	devicePlatformType := graphmodels.IOS_DEVICEPLATFORMTYPE 
+	requestBody.SetDevicePlatformType(&devicePlatformType) 
 
 }
 requestBody.SetPlatforms(platforms)
