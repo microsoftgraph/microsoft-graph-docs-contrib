@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcCrossC
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPcCrossCloudGovernmentOrganizationMapping
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/crossCloudGovernmentOrganizationMapping
 Content-Type: application/json
 X-MS-CloudPC-USGovCloudTenantAADToken: {token}
 
