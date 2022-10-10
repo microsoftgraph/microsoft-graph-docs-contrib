@@ -2695,23 +2695,23 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 
 ---
 
-## User authentication method permissions ([preview](#permissions-availability-status))
+## User authentication method permissions
 
 #### Delegated permissions
 
 |Permission                              |Display String                        |Description        |Admin Consent Required | Microsoft Account supported |
 |:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
-|_UserAuthenticationMethod.Read_ (preview)        |Read own authentication methods       |Allows the app to read the signed-in user's authentication methods, including phone numbers and Authenticator app settings. This does not allow the app to see secret information like the signed-in user's passwords, or to sign-in or otherwise use the signed-in user's authentication methods. |Yes|No|
-|_UserAuthenticationMethod.Read.All_ (preview)    |Read users' authentication methods    |Allows the app to read authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|No|
-|_UserAuthenticationMethod.ReadWrite_ (preview)   |Manage own authentication methods     |Allows the app to read and write the signed-in user's authentication methods, including phone numbers and Authenticator app settings. This does not allow the app to see secret information like the signed-in user's passwords, or to sign-in or otherwise use the signed-in user's authentication methods. |Yes|No|
-|_UserAuthenticationMethod.ReadWrite.All_ (preview)|Manage users' authentication methods  |Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|No|
+|_UserAuthenticationMethod.Read_         |Read own authentication methods       |Allows the app to read the signed-in user's authentication methods, including phone numbers and Authenticator app settings. This does not allow the app to see secret information like the signed-in user's passwords, or to sign-in or otherwise use the signed-in user's authentication methods. |Yes|No|
+|_UserAuthenticationMethod.Read.All_     |Read users' authentication methods    |Allows the app to read authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|No|
+|_UserAuthenticationMethod.ReadWrite_    |Manage own authentication methods     |Allows the app to read and write the signed-in user's authentication methods, including phone numbers and Authenticator app settings. This does not allow the app to see secret information like the signed-in user's passwords, or to sign-in or otherwise use the signed-in user's authentication methods. |Yes|No|
+|_UserAuthenticationMethod.ReadWrite.All_|Manage users' authentication methods  |Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|No|
 
 #### Application permissions
 
 |Permission                              |Display String                        |Description        |Admin Consent Required |
 |:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
-|_UserAuthenticationMethod.Read.All_ (preview)   |Read users' authentication methods    |Allows the app to read authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|
-|_UserAuthenticationMethod.ReadWrite.All_ (preview)|Manage users' authentication methods  |Allows the application to read and write authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|
+|_UserAuthenticationMethod.Read.All_     |Read users' authentication methods    |Allows the app to read authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|
+|_UserAuthenticationMethod.ReadWrite.All_|Manage users' authentication methods  |Allows the application to read and write authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|
 
 ### Remarks
 
@@ -2719,9 +2719,9 @@ User authentication method permissions are used to manage authentication methods
 
 With these permissions, all authentication methods can be read and managed on a user. This includes methods used for:
 
-* Primary authentication (password)
-* Second factor of multi-factor authentication/MFA (phone numbers)
-* Self-Service Password Reset/SSPR (email address)
+* Primary authentication (password, FIDO2, Microsoft Authenticator, etc.)
+* Second factor of multi-factor authentication/MFA (phone numbers, Microsoft Authenticator, etc.)
+* Self-Service Password Reset/SSPR (email address, etc.)
 
 ## Windows updates permissions
 
