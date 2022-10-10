@@ -28,12 +28,8 @@ The following are examples of public relationships:
  
 If the profile owner communicates with someone and there is _no public relationship_ between them, such as an org chart connection or a group in common, the fact that they've been communicating is _not visible_ to others.
 
-The ranking of people - that is, the order in which they appear on the profile owner's page - is determined by the private and public communication between the profile owner and the person on the list.
- 
-Examples of private communication include:
-- Sending emails to each other where the name of the other person is in the TO line
-- Inviting users to meetings by including their name in the calendar invite 
- 
+The ranking of people—that is, the order in which they appear on the profile owner's page—is determined by the public communication between the profile owner and the person on the list.
+  
 Examples of public interaction include:
 - Sending or receiving emails to/from each other as part of a public group 
 - Inviting users to meetings as part of group, or where more than X people are invited
