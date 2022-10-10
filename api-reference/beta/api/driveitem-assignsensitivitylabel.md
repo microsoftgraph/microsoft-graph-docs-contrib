@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:---------------------------------------------------------------------------------------|
 |Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All                                               |
 |Delegated (personal Microsoft account) | Not supported.                                                                         |
-|Application                            | Not supported.                                                                         |
+|Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                                               |
 
 ## HTTP request
 
@@ -69,6 +69,7 @@ If successful, the API returns a `202 Accepted` HTTP response code with an empty
 For more details about how to monitor the progress of an assign sensitivity label operation, see [monitoring long-running operations](/graph/long-running-actions-overview).
 
 In addition to general errors that apply to Microsoft Graph, this API returns the `423 Locked` response code, which indicates that the file being accessed is locked. In such cases, the **code** property of the response object indicates the error type that blocks the operation.
+Also, Few Irm Protected sensitivity labels cannot be updated by Application and need delegated user access to validate if the user has proper rights, For these scenario the API will throw `Not Supported` response code.
 
 The following table lists the possible values for the error types.
 
