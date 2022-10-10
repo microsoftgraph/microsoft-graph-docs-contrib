@@ -2090,7 +2090,7 @@ Possible values for user account types (group membership), per Windows definitio
 |externalGuest|
 |unknownFutureValue|
 |scheduler|
-|member|
+|teamMember|
 
 ### answerInputType values 
 
