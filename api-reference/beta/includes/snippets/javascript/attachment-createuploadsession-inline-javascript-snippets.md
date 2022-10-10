@@ -21,6 +21,7 @@ const uploadSession = {
 };
 
 await client.api('/me/messages/AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMA=/attachments/createUploadSession')
+	.version('beta')
 	.post(uploadSession);
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.New$refPostRequestBody()
+requestBody := graphmodels.New$refPatchRequestBody()
 additionalData := map[string]interface{}{
 	"@odata.id" : "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test", 
 }

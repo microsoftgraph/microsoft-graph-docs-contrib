@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewReplyPostRequestBody()
-message := graphmodels.Newmessage()
+message := graphmodels.NewMessage()
 
 
 recipient := graphmodels.NewRecipient()

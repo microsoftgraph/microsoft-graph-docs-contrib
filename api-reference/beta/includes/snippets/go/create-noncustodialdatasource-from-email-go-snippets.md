@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := graphmodels.NewNoncustodialDataSource()
 applyHoldToSource := true
 requestBody.SetApplyHoldToSource(&applyHoldToSource) 
-dataSource := graphmodels.NewdataSource()
+dataSource := graphmodels.NewDataSource()
 additionalData := map[string]interface{}{
 	"email" : "adelev@contoso.com", 
 }
