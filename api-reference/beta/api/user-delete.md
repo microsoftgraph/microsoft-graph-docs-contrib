@@ -28,9 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | User.ReadWrite.All |
 
 The calling user must be assigned one of the following Azure AD roles:
-+ [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator)
-+ [Privileged Authentication Administrator](/azure/active-directory/roles/permissions-reference#privileged-authentication-administrator)
 + [User Administrator](/azure/active-directory/roles/permissions-reference#user-administrator)
++ [Privileged Authentication Administrator](/azure/active-directory/roles/permissions-reference#privileged-authentication-administrator)
++ [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator)
 
 For more details, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
