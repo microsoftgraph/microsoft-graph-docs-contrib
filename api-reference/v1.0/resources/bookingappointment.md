@@ -32,9 +32,8 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
-|anonymousJoinWebUrl|String|Url of meeting to join anonymously.|
-|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
-|customers|[bookingCustomerInformation](bookingcustomerinformation.md) collection|It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
+|anonymousJoinWebUrl|String|The URL of the meeting to join anonymously.|
+|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|A collection of customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
@@ -76,6 +75,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "anonymousJoinWebUrl": "String",
   "customers": [
     {
       "@odata.type": "microsoft.graph.bookingCustomerInformation"
@@ -83,11 +83,12 @@ The following is a JSON representation of the resource.
   ],
   "duration": "String (timestamp)",
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "filledAttendeesCount": "Integer",
   "id": "String (identifier)",
   "isLocationOnline": "Boolean",
   "joinWebUrl": "String",
+  "maximumAttendeesCount": "Integer",
   "optOutOfCustomerEmail": "Boolean",
-  "anonymousJoinWebUrl": null,
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
   "price": "Integer",
@@ -100,11 +101,8 @@ The following is a JSON representation of the resource.
   "serviceNotes": "String",
   "smsNotificationsEnabled": "Boolean",
   "staffMemberIds": ["String"],
-  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "maximumAttendeesCount": "Integer",
-  "filledAttendeesCount": "Integer"
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
