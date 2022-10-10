@@ -16,7 +16,7 @@ Queries a specified set of event, activity, or entity data supported by Microsof
 
 This is the method for advanced hunting in Microsoft 365 Defender that lets you explore up to 30 days of raw data, to proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
 
-This method specifies a query in Kusto Query Language (KQL). It identifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide) to query, and a piped sequence of operators or functions to filter or search the data, and format or structure the query output in specific ways. 
+This method includes a query in Kusto Query Language (KQL). It specifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide) to query, and a piped sequence of operators to filter or search the data, and format the query output in specific ways. 
 
 Find out more about [hunting for threats across devices, emails, apps, and identities](/microsoft-365/security/defender/advanced-hunting-query-emails-devices?view=o365-worldwide). Learn about [KQL](/azure/data-explorer/kusto/query/).
 
