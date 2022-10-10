@@ -12,13 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for cyber security threats.
+Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.
 
-This advanced hunting feature in Microsoft 365 Defender lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
+This is the method for advanced hunting in Microsoft 365 Defender that lets you explore up to 30 days of raw data, to proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
 
-This method specifies a Kusto Query Language (KQL) query which identifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide) to query, and a piped sequence of operators or functions to filter or search the data, and format or structure the query output in specific ways. 
+This method specifies a query in Kusto Query Language (KQL). It identifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide) to query, and a piped sequence of operators or functions to filter or search the data, and format or structure the query output in specific ways. 
 
-See more information about [KQL](/azure/data-explorer/kusto/query/).
+Find out more about [hunting for threats across devices, emails, apps, and identities](/microsoft-365/security/defender/advanced-hunting-query-emails-devices?view=o365-worldwide). Learn about [KQL](/azure/data-explorer/kusto/query/).
+
+For information on using advanced hunting in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal?view=o365-worldwide), see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview?view=o365-worldwide).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

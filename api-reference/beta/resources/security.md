@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 Connects Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities.
 
 ## Methods
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[runHuntingQuery](../api/security-runhuntingquery.md)|[microsoft.graph.security.huntingQueryResults](../resources/security-huntingqueryresults.md)|Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.|
 
 ## Properties
 None.
