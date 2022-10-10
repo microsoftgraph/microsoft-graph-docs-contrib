@@ -44,6 +44,7 @@ None.
 |notStarted|The export job doesn't start yet.|
 |inProgress|The export job is in progress.|
 |completed|The export job is completed with export url returned. |
+|failed|The export job is failed. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use. |
 
 ### cloudPcReportName values
