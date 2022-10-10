@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/remoteLock
 POST /deviceManagement/managedDevices/{managedDeviceId}/remoteLock
 POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/remoteLock
+POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}/managedDevices/{managedDeviceId}/remoteLock
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/remoteLock
+POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDeviceId}/remoteLock
 ```
 
 ### Response
@@ -60,9 +60,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
 
 
 
