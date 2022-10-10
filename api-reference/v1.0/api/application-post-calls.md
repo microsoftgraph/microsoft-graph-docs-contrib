@@ -49,7 +49,7 @@ If successful, this method returns a `201 Created` response code and a [call](..
 
 > **Note:** This call needs the Calls.Initiate.All permission.
 
-##### Request
+#### Request
 The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
 
@@ -82,6 +82,10 @@ Content-Type: application/json
   "requestedModalities": [
     "audio"
   ],
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.outgoingCallOptions",
+    "isContentSharingNotificationEnabled": true
+  },
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
@@ -115,7 +119,7 @@ Content-Type: application/json
 ---
 
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -196,7 +200,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/callback
@@ -225,7 +229,8 @@ Content-Type: application/json
   ]
 }
 ```
-##### Notification - established
+
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/callback
@@ -256,11 +261,101 @@ Content-Type: application/json
 }
 ```
 
+#### Notification - content sharing started
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### Notification - content sharing updated
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### Notification - content sharing ended
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
 ### Example 2: Create peer-to-peer VoIP call with application hosted media
 
 > **Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.
 
-##### Request
+#### Request
 The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
 
 
@@ -341,7 +436,7 @@ Content-Type: application/json
 
 >**Note:** For peer-to-peer calls, the expected notifications are for call state changes only.
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -414,7 +509,7 @@ Content-Type: application/json
 This supports up to 5 VoIP users. The example shows how to create a group call with two VoIP users.
 > **Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission. The group call created doesn't support chat or recording.
 
-##### Request
+#### Request
 
 <!-- {
   "blockType": "example",
@@ -481,7 +576,7 @@ Content-Type: application/json
 This supports up to 5 VoIP users. The example shows how to create a group call with two VoIP users.
 > **Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission. The group call created doesn't support chat or recording.
 
-##### Request
+#### Request
 
 <!-- {
   "blockType": "example",
@@ -550,7 +645,7 @@ This information can be obtained from the [Get Online Meetings API](../api/onlin
 The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) (VTC-based meetings only) with actual values to make the example work.
 > **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
 
-##### Request
+#### Request
 
 <!-- {
   "blockType": "example",
@@ -601,7 +696,8 @@ Content-Type: application/json
   "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
-##### Response
+
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -680,7 +776,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/callback
@@ -727,7 +823,8 @@ Content-Type: application/json
 }
 
 ```
-##### Notification - established
+
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/callback
@@ -773,7 +870,8 @@ Content-Type: application/json
   ]
 }
 ```
-##### Notification - roster
+
+#### Notification - roster
 
 ```http
 POST https://bot.contoso.com/callback

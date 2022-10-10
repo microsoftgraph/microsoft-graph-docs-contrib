@@ -11,7 +11,7 @@ requestBody := graphmodels.NewReviewSetQuery()
 displayName := "My Query 1 - Renamed"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSetsById("reviewSet-id").QueriesById("reviewSetQuery-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSetsById("reviewSet-id").QueriesById("reviewSetQuery-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

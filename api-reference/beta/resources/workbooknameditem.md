@@ -26,6 +26,7 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 |[Update](../api/nameditem-update.md) | [workbookNamedItem](workbooknameditem.md)	|Update NamedItem object. |
 |[Range](../api/nameditem-range.md)|[workbookRange](workbookrange.md)|Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.|
 |[List](../api/nameditem-list.md) | [workbookNamedItem](workbooknameditem.md) collection |Get namedItem object collection. |
+| [Delete](../api/nameditem-delete.md) | None | Delete a [workbookNamedItem](workbooknameditem.md) object. |
 
 ## Properties
 | Property	   | Type	|Description|

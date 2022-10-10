@@ -11,7 +11,7 @@ requestBody := graphmodels.NewIdentityUserFlowAttributeAssignment()
 userInputType := graphmodels.TEXTBOX_IDENTITYUSERFLOWATTRIBUTEINPUTTYPE 
 requestBody.SetUserInputType(&userInputType) 
 
-graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").UserAttributeAssignmentsById("identityUserFlowAttributeAssignment-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").UserAttributeAssignmentsById("identityUserFlowAttributeAssignment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
