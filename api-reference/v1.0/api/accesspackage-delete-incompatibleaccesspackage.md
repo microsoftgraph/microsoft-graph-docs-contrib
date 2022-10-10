@@ -57,7 +57,7 @@ The following is an example of the request.
   "name": "remove_incompatibleaccesspackage_from_accesspackage"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAccessPackages/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/73eb2497-3b88-4c0a-8bb3-68ba8162beff/incompatibleAccessPackages/c0a74b4d-2694-4d5d-a964-1bee4ff0aaf2/$ref
 ```
 
 

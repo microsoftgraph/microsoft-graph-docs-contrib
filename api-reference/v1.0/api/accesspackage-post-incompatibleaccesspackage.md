@@ -59,7 +59,7 @@ The following is an example of the request.
   "name": "add_incompatibleaccesspackage_to_accesspackage"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAccessPackages/$ref
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/73eb2497-3b88-4c0a-8bb3-68ba8162beff/incompatibleAccessPackages/$ref
 Content-type: application/json
 
 {
