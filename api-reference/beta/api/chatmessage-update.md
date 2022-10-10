@@ -18,6 +18,8 @@ Only the **policyViolation** property of a **chatMessage** can be updated in app
 
 The update only works for chats where members are Microsoft Teams users. If one of the participants is using Skype, the operation will fail.
 
+This method does not support federation. Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
+
 [!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
 ## Permissions
@@ -29,11 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Chat.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.UpdatePolicyViolation.All for a chat message.</br>ChannelMessage.UpdatePolicyViolation.All for a channel message. |
-
-## Federation
-
-Federation is not supported on PATCH chatMessage operation.
-Only tenant, whose user sent the message, will be able to perform Data Loss Prevention PATCH on the targetted chat message. 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
