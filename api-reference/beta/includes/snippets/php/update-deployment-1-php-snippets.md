@@ -21,7 +21,7 @@ $state->setRequestedValue(new RequestedDeploymentStateValue('paused'));
 $requestBody->setState($state);
 
 
-$graphServiceClient->admin()->windows()->updates()->deploymentsById('deployment-id')->patch($requestBody);
+$requestResult = $graphServiceClient->admin()->windows()->updates()->deploymentsById('deployment-id')->patch($requestBody);
 
 
 ```

@@ -18,7 +18,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.GroupsById("group-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.GroupsById("group-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

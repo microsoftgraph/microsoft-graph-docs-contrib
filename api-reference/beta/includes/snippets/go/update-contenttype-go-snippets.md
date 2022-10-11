@@ -83,7 +83,7 @@ welcomePageColumns := []graphmodels.ColumnDefinitionable {
 documentSet.SetWelcomePageColumns(welcomePageColumns)
 requestBody.SetDocumentSet(documentSet)
 
-graphClient.SitesById("site-id").ContentTypesById("contentType-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.SitesById("site-id").ContentTypesById("contentType-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 contentQuery := "(Author=\"edisons\")"
 requestBody.SetContentQuery(&contentQuery) 
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").ReviewSetsById("ediscoveryReviewSet-id").QueriesById("ediscoveryReviewSetQuery-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").ReviewSetsById("ediscoveryReviewSet-id").QueriesById("ediscoveryReviewSetQuery-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

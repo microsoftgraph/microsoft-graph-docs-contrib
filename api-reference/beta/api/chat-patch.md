@@ -48,7 +48,7 @@ The following table shows the properties that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|topic|String|The title of the chat. This can only be set for a chat with a **chatType** value of `group`. Maximum length is **255** characters. Use of **':'** is not allowed.|
+|topic|String|The title of the chat. This can only be set for a chat with a **chatType** value of `group`. Maximum length is **250** characters. Use of **':'** is not allowed.|
 
 
 ## Response

@@ -37,7 +37,7 @@ For details about how to trigger a task, see [Enable pull printing](./universal-
 
 ### Create an application to listen to notifications
 
-For information about how to listen for Microsoft Graph notifications, see [Use change notifications and track changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges/) and [Set up notifications for changes in user data – Code Samples](./webhooks.md#code-samples).
+For information about how to listen for Microsoft Graph notifications, see [Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges/) and [Set up notifications for changes in user data – Code Samples](./webhooks.md#code-samples).
 
 
 ### Permission scopes
