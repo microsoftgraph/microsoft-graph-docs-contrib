@@ -1,5 +1,5 @@
 ---
-title: "List appRoleAssignedResources (service principals that a user has appRoleAssignments to)"
+title: "List appRoleAssignedResources"
 description: "Get the service principals to which the user has an app role assignment either directly or through group membership."
 author: "eringreenlee"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# List appRoleAssignedResources (service principals that a user has appRoleAssignments to)
+# List appRoleAssignedResources
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

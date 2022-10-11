@@ -46,6 +46,66 @@ Content-Type: application/json
 }
 ```
 
+## Subscribe to membership changes in all teams across the tenant
+
+To get change notifications for membership changes in all teams across the tenant, subscribe to `/teams/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+
+### Permissions
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | TeamMember.Read.All, TeamMember.ReadWrite.All   |
+
+### Example
+
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,deleted,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/teams/getAllMembers",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2022-08-10T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
+## Subscribe to membership changes in all channels across the tenant (preview)
+
+To get change notifications for membership changes in all channels across the tenant, subscribe to `/teams/getAllChannels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. Currently, only private channels are supported. This subscription is only available in the beta endpoint.
+
+### Permissions
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | ChannelMember.Read.All, ChannelMember.ReadWrite.All   |
+
+### Example
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,deleted,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/teams/getAllChannels/getAllMembers",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2022-08-10T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 ## Subscribe to membership changes in all private channels of a particular team
 
 To get change notifications for membership changes in all private channels in a particular team, subscribe to `/teams/{team-id}/channels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.

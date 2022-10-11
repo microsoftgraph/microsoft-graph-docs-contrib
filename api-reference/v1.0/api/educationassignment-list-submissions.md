@@ -1,7 +1,7 @@
 ---
 title: "List submissions"
 description: "List all the submissions associated with an assignment."
-author: "sharad-sharma-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -31,7 +31,9 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ```
 
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$filter`,'$top', and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 The following are the available `$expand` options for this method: `outcomes`, `resources`, `submittedResources`, and `*`, which includes all the previous options.
 

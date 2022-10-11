@@ -29,6 +29,3 @@ Movies rating labels in United States
 
 
 
-
-
-

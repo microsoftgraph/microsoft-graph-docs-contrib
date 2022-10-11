@@ -63,7 +63,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [runSummary](../resources/identitygovernance-runsummary.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [microsoft.graph.identityGovernance.runSummary](../resources/identitygovernance-runsummary.md) in the response body.
 
 ## Examples
 
