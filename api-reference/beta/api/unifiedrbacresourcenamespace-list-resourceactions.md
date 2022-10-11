@@ -244,7 +244,8 @@ This method returns a maximum of 100 actions. If there are more actions, you can
 
 #### Request
 
-# [HTTP](#tab/http)
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "list_unifiedrbacresourceaction_directory_isprivileged",
@@ -256,6 +257,11 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 ```
 
 #### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -266,4 +272,25 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 HTTP/1.1 200 OK
 Content-Type: application/json
 
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces('microsoft.directory')/resourceActions",
+    "value": [
+        {
+            "actionVerb": "PATCH",
+            "description": "Update application credentials",
+            "id": "microsoft.directory-applications-credentials-update-patch",
+            "isPrivileged": true,
+            "name": "microsoft.directory/applications/credentials/update",
+            "resourceScopeId": null
+        },
+        {
+            "actionVerb": null,
+            "description": "Manage all aspects of authorization policy",
+            "id": "microsoft.directory-authorizationPolicy-allProperties-allTasks",
+            "isPrivileged": true,
+            "name": "microsoft.directory/authorizationPolicy/allProperties/allTasks",
+            "resourceScopeId": null
+        }
+    ]
+}
 ```

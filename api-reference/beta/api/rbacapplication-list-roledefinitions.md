@@ -493,8 +493,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roledefinitions_isprivileged"
@@ -521,6 +519,66 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions",
+    "value": [
+        {
+            "id": "aaf43236-0c0d-4d5f-883a-6955382ac081",
+            "description": "Can manage secrets for federation and encryption in the Identity Experience Framework (IEF).",
+            "displayName": "B2C IEF Keyset Administrator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "isPrivileged": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "aaf43236-0c0d-4d5f-883a-6955382ac081",
+            "version": "1",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.directory/b2cTrustFrameworkKeySet/allProperties/allTasks"
+                    ],
+                    "condition": null
+                }
+            ],
+            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('aaf43236-0c0d-4d5f-883a-6955382ac081')/inheritsPermissionsFrom",
+            "inheritsPermissionsFrom": [
+                {
+                    "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+                }
+            ]
+        },
+        {
+            "id": "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+            "description": "Can configure identity providers for use in direct federation.",
+            "displayName": "External Identity Provider Administrator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "isPrivileged": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+            "version": "1",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.directory/domains/federation/update",
+                        "microsoft.directory/identityProviders/allProperties/allTasks"
+                    ],
+                    "condition": null
+                }
+            ],
+            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('be2f45a1-457d-42af-a067-6ec1fa63bc45')/inheritsPermissionsFrom",
+            "inheritsPermissionsFrom": [
+                {
+                    "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+                }
+            ]
+        }
+    ]
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
