@@ -14928,7 +14928,7 @@ items:
             href: api/security-incident-get.md
           - name: Update incident
             href: api/security-incident-update.md
-      - name: Attack simulation and training (preview)
+      - name: Attack simulation and training
         items:
         - name: Simulations
           items:
@@ -16399,7 +16399,7 @@ items:
               href: api/teamwork-list-deletedteams.md
             - name: Get all messages
               href: api/deletedteam-getallmessages.md
-        - name: Tag (preview)
+        - name: Tag
           href: resources/teamworktag.md
           items:
           - name: List
@@ -16412,13 +16412,16 @@ items:
             href: api/teamworktag-update.md
           - name: Delete
             href: api/teamworktag-delete.md
-          - name: List members
+        - name: Tag member
+          href: resources/teamworktagmember.md
+          items:
+          - name: List
             href: api/teamworktagmember-list.md
-          - name: Create member
+          - name: Create
             href: api/teamworktagmember-post.md
-          - name: Get member
+          - name: Get
             href: api/teamworktagmember-get.md
-          - name: Delete member
+          - name: Delete
             href: api/teamworktagmember-delete.md
       - name: Shift management
         items:

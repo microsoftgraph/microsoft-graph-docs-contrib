@@ -97,10 +97,10 @@ items:
             href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
       - name: Accessing data at scale
         items:
-          - name: Data Connect overview
+          - name: Microsoft Graph Data Connect overview
             href: data-connect-concept-overview.md
             displayName: Microsoft Graph Data Connect, access data, bulk data
-          - name: Build your first Data Connect application
+          - name: Build your first Microsoft Graph Data Connect application
             href: data-connect-quickstart.yml
             displayName: Microsoft Graph Data Connect
           - name: Datasets, regions, and sinks
@@ -112,9 +112,12 @@ items:
           - name: Integrate with PAM
             href: data-connect-pam.md
             displayName: Privileged Access Management
-          - name: Data Connect FAQ
+          - name: Microsoft Graph Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect, frequently asked questions
+          - name: Data Connect troubleshooting
+            href: data-connect-troubleshooting.md
+            displayName: Microsoft Graph Data Connect Troubleshooting
       - name: Calendar
         items:
           - name: Overview
@@ -475,6 +478,12 @@ items:
             href: search-concept-custom-types.md
           - name: Search people
             href: search-concept-person.md
+          - name: Search bookmarks
+            href: search-concept-bookmark.md
+          - name: Search acronyms
+            href: search-concept-acronym.md 
+          - name: Search with application permissions
+            href: search-concept-searchall.md
           - name: Manage admin search answers (preview)
             href: search-concept-answers.md
           - name: Manage search results layout

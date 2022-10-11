@@ -1,7 +1,7 @@
 ---
 title: "Create teamworkTagMember"
 description: "Create a new teamworkTagMember object."
-author: "anniecolonna"
+author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
