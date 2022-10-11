@@ -1,6 +1,6 @@
 ---
 title: "Delete azureDataLakeConnector"
-description: "Deletes an azureDataLakeConnector object."
+description: "Delete an azureDataLakeConnector object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object.
+Delete an [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object.
 
 ## Permissions
 
