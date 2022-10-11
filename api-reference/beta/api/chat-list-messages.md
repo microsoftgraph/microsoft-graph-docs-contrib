@@ -1,6 +1,6 @@
 ---
 title: "List messages in a chat"
-description: "Retrieve the list of messages in a chat. "
+description: "Retrieve the list of messages in a chat."
 ms.localizationpriority: high
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
@@ -48,8 +48,8 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | Name      | Description          |
 |:----------|:---------------------|
 | [$top](/graph/query-parameters#top-parameter)| Controls the number of items per response. Maximum allowed `$top` value is 50. |
-| [$orderBy](/graph/query-parameters#orderby-parameter)  | Currently supports **lastModifiedDateTime** (default) and **createdDateTime** in **descending** order. Ascending order is currently not supported.|
-| [$filter](/graph/query-parameters#filter-parameter) | Sets date range filter for **lastModifiedDateTime** and **createdDateTime**. `ge` and `le` operators are supported for **lastModifiedDateTime** property. Only `le` operator is supported for **createdDateTime** property. Filter is only applicable when same property is used for `$orderBy` and `$filter`, otherwise ignored.|
+| [$orderBy](/graph/query-parameters#orderby-parameter)  | Currently supports the **lastModifiedDateTime** (default) and **createdDateTime** properties in descending order. The ascending order is currently not supported.|
+| [$filter](/graph/query-parameters#filter-parameter) | Sets the date range filter for the **lastModifiedDateTime** and **createdDateTime** properties. The **lastModifiedDateTime** property supports the `ge` and `le` operators. The **createdDateTime** property supports the `le` operator. You can only filter results if the request URL contains the `$orderBy` and `$filter` query parameters configured for the same property; otherwise, the filter operation is ignored.|
 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
@@ -67,12 +67,15 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.
 
-## Example 1: List chat messages sorted by createdDateTime
+## Examples
 
-### Request
+### Example 1: List chat messages sorted by creation date
 
-The following is an example of the request. `$top=2` is passed to retrieve two messages and `$orderBy=createdDateTime` is passed to sort messages by **createdDateTime**.
+The following is an example of a request that lists the top two messages (`$top=2`) and sorts them by the **createdDateTime** property (`$orderBy=createdDateTime`).
 
+#### Request
+
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -111,7 +114,7 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 ---
 
 
-### Response
+#### Response
 The following example shows the response.
 
 <!-- {
@@ -205,13 +208,14 @@ Content-type: application/json
 }
 ```
 
-## Example 2: List chat messages filtered by lastModifiedDateTime range
+### Example 2: List chat messages filtered by last modified date range
 
-### Request
+The following is an example of a request that lists the top two messages (`$top=2`), sorts them in descending order by the **lastModifiedDateTime** property (`$orderBy=lastModifiedDateTime desc`), and filters the results for a specific date range (`$filter=lastModifiedDateTime ge 2022-09-22T00:00:00.000Z and lastModifiedDateTime le 2022-09-24T00:00:00.000Z`).
 
-The following is an example of the request. `$top=2` is passed to retrieve two messages, `$orderBy=lastModifiedDateTime desc` is passed to sort messages by **createdDateTime** and `$filter=lastModifiedDateTime ge 2022-09-22T00:00:00.000Z and lastModifiedDateTime le 2022-09-24T00:00:00.000Z` is passed to apply lastModifiedDateTime range filter.
+#### Request
 
-# [HTTP](#tab/http)
+The following example shows the request.
+
 <!-- {
   "blockType": "request",
   "name": "list_chat_messages_2",
@@ -221,7 +225,7 @@ The following is an example of the request. `$top=2` is passed to retrieve two m
 GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$orderBy=lastModifiedDateTime desc&$filter=lastModifiedDateTime ge 2022-09-22T00:00:00.000Z and lastModifiedDateTime le 2022-09-24T00:00:00.000Z
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 

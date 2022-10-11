@@ -4,11 +4,11 @@
       "ChangeList": [
         {
           "Id": "17c54352-c87f-47fd-ab92-e19ce2da7bcc",
-          "ApiChange": "parameter",
-          "ChangedApiName": "messages",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chatMessage",
           "ChangeType": "Addition",
-          "Description": "Enabled date range filter query parameter for [list-chat-messages](https://learn.microsoft.com/en-us/graph/api/chat-list-messages?view=graph-rest-beta&tabs=http) api.",
-          "Target": "chat"
+          "Description": "Enabled the `$filter` and `$orderBy` query parameters for the [List chat messages](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-v1.0) method.",
+          "Target": "chatMessage"
         }
       ],
       "Id": "17c54352-c87f-47fd-ab92-e19ce2da7bcc",
@@ -22,11 +22,11 @@
       "ChangeList": [
         {
           "Id": "35662e55-573c-464e-b999-093a27ff63f7",
-          "ApiChange": "parameter",
-          "ChangedApiName": "messages",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chatMessage",
           "ChangeType": "Addition",
-          "Description": "Enabled date range filter query parameter for [list-chat-messages](https://learn.microsoft.com/en-us/graph/api/chat-list-messages?view=graph-rest-beta&tabs=http) api.",
-          "Target": "chat"
+          "Description": "Enabled the `$filter` query parameter for the [List chat messages](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-beta) method.",
+          "Target": "chatMessage"
         }
       ],
       "Id": "35662e55-573c-464e-b999-093a27ff63f7",
@@ -347,7 +347,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "LIST",
           "ChangeType": "Addition",
-          "Description": "Enabled the `$orderBy` query option to allow users to choose sorting order between **LastModifiedDateTime** and **CreatedDateTime** when retreiving chat messages.",
+          "Description": "Enabled the `$orderBy` query option to allow users to choose sorting order between **LastModifiedDateTime** and **CreatedDateTime** when retrieving chat messages.",
           "Target": "chatMessage"
         }
       ],
