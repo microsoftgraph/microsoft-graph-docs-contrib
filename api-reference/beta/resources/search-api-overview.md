@@ -55,6 +55,8 @@ The following table describes the types available to query and the supported per
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
 |[externalItem](externalconnectors-externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
 |[person](person.md)|People.Read|Exchange Online|Personal contacts and contacts or addressable objects in your organization.|
+|[bookmark](search-bookmark.md)|Bookmark.Read.All|Microsoft Search|Bookmarks in Microsoft Search in your organization.|
+|[acronym](search-acronym.md)|Acronym.Read.All|Microsoft Search|Acronyms in Microsoft Search in your organization.|
 
 ## Page search results
 

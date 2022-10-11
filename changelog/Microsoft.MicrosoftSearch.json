@@ -577,6 +577,40 @@
     {
       "ChangeList": [
         {
+          "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+          "ApiChange": "Member",
+          "ChangedApiName": "acronym",
+          "ChangeType": "Addition",
+          "Description": "Added the **acronym** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+          "ApiChange": "Member",
+          "ChangedApiName": "bookmark",
+          "ChangeType": "Addition",
+          "Description": "Added the **bookmark** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+          "ApiChange": "Member",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatMessage** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        }
+      ],
+      "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-10T12:02:57.3248454Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4a728a91-0c10-4a52-88df-609487321793",
           "ApiChange": "Permission",
           "ChangedApiName": "Bookmark.Read.All",
