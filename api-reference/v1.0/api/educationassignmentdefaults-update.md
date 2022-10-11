@@ -40,9 +40,7 @@ PATCH /education/classes/{id}/assignmentDefaults
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply only the values of the fields you want to update.
-
-Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
