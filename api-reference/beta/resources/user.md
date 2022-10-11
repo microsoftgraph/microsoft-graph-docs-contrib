@@ -40,7 +40,7 @@ This resource supports:
 | [validatePassword](../api/user-validatepassword.md)|[passwordValidationInformation](../resources/passwordvalidationinformation.md)|Validate a user's password against the organization's password validation policy and report whether the password is valid. |
 | **App role assignments**|||
 | [List appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles that a user has been assigned. |
-| [List appRoleAssignedResources](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps that a user has an app role assignment either directly or through group membership. |
+| [List appRoleAssignedResources](../api/user-list-approleassignedresources.md) | [servicePrincipal](serviceprincipal.md) collection | Get the apps that a user has an app role assignment either directly or through group membership. |
 | [Add appRoleAssignment](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to a user. |
 | [Remove appRoleAssignment](../api/user-delete-approleassignments.md) | None | Remove an app role assignment from a user. |
 | **Calendar** |||
