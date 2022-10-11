@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.SharePointOneDriveOptions",
+  "@odata.type": "microsoft.graph.sharePointOneDriveOptions",
   "baseType": null
 }-->
 
