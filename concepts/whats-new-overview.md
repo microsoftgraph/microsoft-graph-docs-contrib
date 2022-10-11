@@ -35,7 +35,7 @@ GA of the API for [attack simulation and training](/microsoft-365/security/offic
 - Get the details of [pinning](/graph/api/resources/messagePinnedEventMessageDetail) or [unpinning](/graph/api/resources/messageUnpinnedEventMessageDetail) a [chatMessage](/graph/api/resources/chatmessage) in a [chat](/graph/api/resources/chat).
 
 ## Use the API | Batching
-For apps that make multiple requests on Outlook resources in the same mailbox, you can now further optimize app performance by [JSON batching](json-batching) to combine _more than 4 requests_ in one HTTP call. The previous limit on _batching_ up to 4 requests on the same mailbox has been removed.
+For apps that make multiple requests on Outlook resources in the same mailbox, you can now further optimize app performance by [JSON batching](json-batching.md) to combine _more than 4 requests_ in one HTTP call. The previous limit on _batching_ up to 4 requests on the same mailbox has been removed.
 
 ## September 2022: New in preview only
 
