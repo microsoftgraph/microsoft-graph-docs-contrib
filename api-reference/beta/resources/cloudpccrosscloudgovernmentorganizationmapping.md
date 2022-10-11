@@ -1,6 +1,6 @@
 ---
 title: "cloudPcCrossCloudGovernmentOrganizationMapping resource type"
-description: "Represents Cloud PC organization mapping between public cloud organization and US government cloud organization."
+description: "Represents a Cloud PC organization mapping between a public and US government cloud organizations."
 author: "SuyliuMS"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
