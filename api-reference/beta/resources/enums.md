@@ -3244,7 +3244,7 @@ Possible values for user account types (group membership), per Windows definitio
 |group|
 |unknownFutureValue|
 
-### sharePointOneDriveOptions values 
+### searchContent values 
 
 |Member|
 |:---|
