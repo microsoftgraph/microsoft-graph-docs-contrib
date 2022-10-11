@@ -49,7 +49,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 |:----------|:---------------------|
 | [$top](/graph/query-parameters#top-parameter)| Controls the number of items per response. Maximum allowed `$top` value is 50. |
 | [$orderBy](/graph/query-parameters#orderby-parameter)  | Currently supports the **lastModifiedDateTime** (default) and **createdDateTime** properties in descending order. The ascending order is currently not supported.|
-| [$filter](/graph/query-parameters#filter-parameter) | Sets the date range filter for the **lastModifiedDateTime** and **createdDateTime** properties. The **lastModifiedDateTime** property supports the `ge` and `le` operators. The **createdDateTime** property supports the `le` operator. You can only filter results if the request URL contains the `$orderBy` and `$filter` query parameters configured for the same property; otherwise, the filter operation is ignored.|
+| [$filter](/graph/query-parameters#filter-parameter) | Sets the date range filter for the **lastModifiedDateTime** and **createdDateTime** properties. The **lastModifiedDateTime** property supports the `ge` and `le` operators. The **createdDateTime** property supports the `le` operator. You can only filter results if the request URL contains the `$orderBy` and `$filter` query parameters configured for the same property; otherwise, the `$filter` query option is ignored.|
 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
