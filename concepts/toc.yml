@@ -481,7 +481,9 @@ items:
           - name: Search bookmarks
             href: search-concept-bookmark.md
           - name: Search acronyms
-            href: search-concept-acronym.md  
+            href: search-concept-acronym.md 
+          - name: Search with application permissions
+            href: search-concept-searchall.md
           - name: Manage admin search answers (preview)
             href: search-concept-answers.md
           - name: Manage search results layout
