@@ -19,7 +19,7 @@ Provides the search content options when a search is performed using application
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|includeContent|string| The type of search content. The possible values are: `privateContent`, `sharedContent`. Read-only. |
+|includeContent|searchContent| The type of search content. The possible values are: `privateContent`, `sharedContent`. Read-only. |
 
 ## JSON representation
 
