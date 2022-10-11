@@ -10,7 +10,7 @@ ms.prod: "data-connect"
 
 Microsoft Graph Data Connect lets developers create applications that customers can use to provide managed access to their at-scale Microsoft Graph datasets. This article provides tips that will help you take advantage of the Microsoft Graph Data Connect feature. For an introduction to Microsoft Graph Data Connect, see the [overview](data-connect-concept-overview.md).
 
-For further questions not covered in this page or [troubleshooting] (data-connect-troubleshooting.md) please reach out dataconnect@microsoft.com.
+For more questions, see [troubleshooting](data-connect-troubleshooting.md), or reach out to the [Data Connect team](mailto:dataconnect@microsoft.com).
 
 ## Is Microsoft Graph Data Connect right for me?
 
@@ -18,23 +18,25 @@ Microsoft Graph Data Connect and Microsoft Graph APIs provide access to the same
 
 For example, you might want to use Microsoft Graph Data Connect to do an initial extraction of the last year of email data, and then use Microsoft Graph APIs to analyze emails in real time moving forward. Microsoft Graph Data Connect and Microsoft Graph APIs are different tools for different jobs. It's important to think about which access method best fits your scenario. For more information, see [When should I use Microsoft Graph API or Microsoft Graph Data Connect](/graph/overview#when-should-i-use-microsoft-graph-api-or-data-connect).
 
-## What are typical scenarios that companies use the M365 data for?  
+## What are some scenarios that companies use Microsoft 365 data for?  
 
-Here are the top 4 scenarios that customers are interested in. However, the number of use cases that can be powered by M365 data is infinite:  
+There are any number of use cases that can be powered by Microsoft 365 data. The following are some top scenarios that customers are interested in:  
 
-1. Customer Relationship Analytics: For commercial business leaders, go beyond traditional CRM insights and understand customer interactions and relationships based on communication and collaboration patterns. 
+- Customer Relationship Analytics: For commercial business leaders, go beyond traditional CRM insights and understand customer interactions and relationships based on communication and collaboration patterns. 
 
-2. Business Process Analytics: For better operations, see how work really flows through the organization on a day-to-day basis. Pinpoint the manual processes and workflow bottlenecks that should be automated or optimized. 
+- Business Process Analytics: For better operations, see how work really flows through the organization on a day-to-day basis. Pinpoint the manual processes and workflow bottlenecks that should be automated or optimized. 
 
-3. Security and Compliance Analytics: To secure sensitive data, learn how employees are using and sharing sensitive information. Implement anomaly detection, threat intelligence, audit log analysis, risk management, and legal forensics. 
+- Security and Compliance Analytics: To secure sensitive data, learn how employees are using and sharing sensitive information. Implement anomaly detection, threat intelligence, audit log analysis, risk management, and legal forensics. 
 
-4. People Productivity Analytics: For driving transformation, export your Viva productivity metrics, so you can convert insights into solutions with digital adoption, smart meetings and content, hybrid workplaces, and cultural change. 
+- People Productivity Analytics: For driving transformation, export your Viva productivity metrics, so you can convert insights into solutions with digital adoption, smart meetings and content, hybrid workplaces, and cultural change. 
 
 ## How do Viva Insights and Microsoft Graph Data Connect differ?  
 
-Viva Insights and MGDC are complementary - not competitive. Although both rely on Microsoft 365, Viva Insights and MGDC serve different audiences and needs (see graphic below).
+Viva Insights and Microsoft Graph Data Connect are complementary. Although both rely on Microsoft 365, Viva Insights and Data Connect serve different audiences and needs.
 
-When customers are looking for insights and analytics beyond Viva Insights, MGDC provides the extensibility experience to deliver custom requirements. For example, MGDC offers Teams Call Records and Transcripts as well as SharePoint Online data sets; these are currently beyond the scope of consideration for Viva Insights. Additionally, MGDC raw data provides granular details that aren’t otherwise available from Viva Insights.  
+When customers are looking for insights and analytics beyond Viva Insights, Data Connect provides the extensibility to deliver custom requirements. For example, it offers Teams call records and transcripts as well as SharePoint Online data sets, which are not currently in scope for Viva Insights. Additionally, Data Connect raw data provides granular details that aren’t otherwise available from Viva Insights.  
+
+![Image showing use cases for Microsoft Graph Data Connect](.../images/data-connect-viva-insights-mgdc.png)
 
 ## Is there any initial overhead with Microsoft Graph Data Connect?
 
@@ -47,15 +49,17 @@ Because Data Connect is designed to extract large amounts of data in bulk, some 
 
 Microsoft Graph Data Connect is currently available in multiple regions across the following geographies: North America, Europe, Asia Pacific, United Kingdom/Great Britain, and Australia. Other regions will be available in the future.
 
-For a list of Office to Azure regions and mappings, see [Dataset, regions and sinks](https://learn.microsoft.com/en-us/graph/data-connect-datasets#regions).
+For a list of Office to Azure regions and mappings, see [Dataset, regions and sinks](/graph/data-connect-datasets#regions).
 
 ## What datasets are available through Microsoft Graph Data Connect?
 
-1. Basic Datasets: Datasets generated from raw customer created content and inputs from M365 Applications and Services (e.g. Azure Active Directory, Outlook, Teams datasets) 
+The following types of datasets are available:
 
-2. Cleaned Datasets: Datasets generated by either normalization and de-duplication from Basic Datasets. Or datasets created from user activity or behavior signals in M365 (e.g. SharePoint, Office 365 datasets)  
+- Basic: Datasets generated from raw customer created content and inputs from Microsoft 365 applications and services (for example, Azure Active Directory, Outlook, or Teams datasets). 
 
-3. Curated Datasets: Datasets custom generated for a specific use case or analytics scenarios. Or datasets from 1P M365 analytics application for their extensibility (e.g. Viva Insights metrics) 
+- Cleaned: Datasets generated by either normalization and de-duplication from basic datasets, or datasets created from user activity or behavior signals in Microsoft 365 (for example, SharePoint, Office 365 datasets).  
+
+- Curated: Datasets custom generated for a specific use case or analytics scenarios, or datasets from first-party Microsoft 365 analytics applications for their extensibility for example, Viva Insights metrics).
 
 Multiple datasets for each of the following are available:
 * Teams
@@ -64,19 +68,19 @@ Multiple datasets for each of the following are available:
 * OneDrive/Sharepoint 
 * Viva Insights
 
-New datasets are added to Microsoft Graph Data Connect on a regular basis. For a complete list, see [Dataset, regions, and sinks](https://learn.microsoft.com/en-us/graph/data-connect-datasets).
+New datasets are added to Microsoft Graph Data Connect on a regular basis. For a complete list, see [Dataset, regions, and sinks](/graph/data-connect-datasets).
 
 ## Which datasets are in preview and which are generally available?
 
-Datasets under the OneDrive/SharePoint and Viva Insights sections are currently available for customers in preview or for those who have the Viva Insights license respectively.
+Datasets for the OneDrive/SharePoint and Viva Insights are currently available for customers in preview or for those who have the Viva Insights license, respectively.
 
-For information on datasets that are generally avaialble or in preview only, see [Dataset, regions, and sinks](https://learn.microsoft.com/en-us/graph/data-connect-datasets#datasets).
+For information about datasets that are generally avaialble or in preview only, see [Dataset, regions, and sinks](/graph/data-connect-datasets#datasets).
 
 ## How much do I have to pay for Microsoft Graph Data Connect?
 
 Microsoft Graph Data Connect consumption charges are billed monthly on a pay-as-you-go basis. The Data Connect billing unit is in a multiple of 1000s of objects, where 1 object maps to 1 individual instance of an entity in Microsoft 365. For example, 1 email == 1 object, 1 file == 1 object, 1 Teams chat message == 1 object, and so on. 
 
-Some datasets are available for free or are currently free in preview while other datasets are charged. Microsoft Graph Data Connect offers datasets across multiple different Microsoft 365 products and services. For details about datasets that are available through Microsoft Graph Data Connect, see [Dataset, regions, and sinks](https://learn.microsoft.com/en-us/graph/data-connect-datasets#datasets). For details about billing, see the [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
+Some datasets are available for free or are currently free in preview while other datasets are charged. Microsoft Graph Data Connect offers datasets across multiple different Microsoft 365 products and services. For details about datasets that are available through Microsoft Graph Data Connect, see [Dataset, regions, and sinks](/graph/data-connect-datasets#datasets). For details about billing, see the [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
 
 There is no charge for extraction of objects from the following datasets:
 - BasicDataSet_v0.User_v0
@@ -102,7 +106,7 @@ Microsoft Graph Data Connect is offered through Azure and is currently available
 
 ##  What can I do if a dataset is not yet supported for my tenant?
 
-For datasets like OneDrive/SharePoint and Viva Insights, make sure that you meet the criteria described in [Datasets, regions, and sinks](https://learn.microsoft.com/en-us/graph/data-connect-datasets#datasets). These datasets are only available to customers who have opted in for them explicitly.
+For datasets like OneDrive/SharePoint and Viva Insights, make sure that you meet the criteria described in [Datasets, regions, and sinks](/graph/data-connect-datasets#datasets). These datasets are only available to customers who have opted in for them explicitly.
 
 For questions, contact the [Microsoft Graph Data Connect team](mailto:dataconnect@microsoft.com).
 
@@ -120,7 +124,7 @@ When creating the Azure Synapse or Data Factory pipeline, you have to provide a 
 
 If you create an Azure managed application for others to use in their tenants, you still provide a service principal for the app to use. This service principal exists in your (the publisher's) tenant. However, if the app needs other service principals, your customer (the installer) creates them in their own tenant. For example, your Azure Synapse or Azure Data Factory pipeline likely needs access to a storage resource in Azure. The customer creates the service principal with permissions to the storage account for the pipeline to use.
 
-For more information about building your application with Azure Synapse or Azure Data Factory, see the [Data Connect quick start](https://learn.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365).
+For more information about building your application with Azure Synapse or Azure Data Factory, see the [Data Connect quick start](/graph/data-connect-quickstart?tabs=Microsoft365).
 
 
 ## How can I check for pending Privileged Access Management (PAM) requests?
@@ -153,7 +157,7 @@ Use the following steps to approve or deny a PAM request:
 5. Add deny list scrubbing if needed.
 6. Approve or deny the request.
 
-For more details, see the [Data Connect quick start](https://learn.microsoft.com/en-us/graph/data-connect-quickstart?tabs=Microsoft365).
+For more details, see the [Data Connect quick start](/graph/data-connect-quickstart?tabs=Microsoft365).
 
 ## Will every pipeline run trigger a new consent request?
  
