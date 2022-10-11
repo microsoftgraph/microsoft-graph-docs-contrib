@@ -84,7 +84,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## Optional query parameters
-This method supports `$filter` query parameter on `id`, `displayName`, and `isBuiltIn` properties. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` query parameter on `id`, `displayName`, `isBuiltIn`, and `isPrivileged` properties. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -487,6 +487,41 @@ Content-type: application/json
 }
 ```
 
+### Example 4: List privileged role definitions
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_roledefinitions_isprivileged"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions?$filter=isPrivileged eq true
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

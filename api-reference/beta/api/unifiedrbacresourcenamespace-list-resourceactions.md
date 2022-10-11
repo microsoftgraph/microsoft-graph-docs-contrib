@@ -34,7 +34,7 @@ GET /roleManagement/directory/resourceNamespaces/{unifiedRbacResourceNamespaceId
 ```
 
 ## Optional query parameters
-This method supports the `$filter`, `$select`, `$top`, and `$skipToken` OData query parameters to help customize the response. This method supports `$filter` (`eq`) for **actionVerb**, **description**, **id**, and **name** properties. This method returns a default page size of 100 **resourceActions** and supports `$top` and `$skipToken` for paging. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$select`, `$top`, and `$skipToken` OData query parameters to help customize the response. This method supports `$filter` (`eq`) for **actionVerb**, **description**, **id**, **isPrivileged**, and **name** properties. This method returns a default page size of 100 **resourceActions** and supports `$top` and `$skipToken` for paging. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -234,4 +234,36 @@ Content-Type: application/json
         }
     ]
 }
+```
+
+### Example 3: List privileged actions
+
+The following example list the actions that are privileged for the resource namespace with the identifier of `microsoft.directory`.
+
+This method returns a maximum of 100 actions. If there are more actions, you can use `@odata.nextLink` to get the next set of actions.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_unifiedrbacresourceaction_directory_isprivileged",
+  "sampleKeys": ["microsoft.directory"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.directory/resourceActions?$filter=isPrivileged eq true
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.unifiedRbacResourceAction)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 ```

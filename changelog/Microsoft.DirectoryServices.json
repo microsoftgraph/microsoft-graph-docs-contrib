@@ -20,6 +20,24 @@
     },
     {
       "ChangeList": [
+        { 
+          "Id": "37dcf6ec-0705-446c-928d-dd3309c6afed",
+          "ApiChange": "Property",
+          "ChangedApiName": "isPrivileged",
+          "ChangeType": "Addition",
+          "Description": "Added the **isPrivileged** property to the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleAssignment"
+        }
+      ],
+        "Id": "37dcf6ec-0705-446c-928d-dd3309c6afed",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2022-11-01T00:00:00.000Z",
+        "WorkloadArea": "Identity and Access",
+        "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
           "ApiChange": "Relationship",
