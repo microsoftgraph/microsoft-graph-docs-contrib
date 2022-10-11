@@ -14,13 +14,33 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ## September 2022: New and generally available
 
+### Devices and apps | Corporate management
+Intune [September updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2022-09-01&to=2022-09-30) for the v1.0 version.
+
 ### Identity and access | Directory management
 [Add](/graph/api/administrativeunit-post-members) a [group](/graph/api/resources/group) as a member of an [administrative unit](/graph/api/resources/administrativeunit).
 
 ### Identity and access | Identity and sign-in
 Identify the risk state in a [risky user](/graph/api/resources/riskyuser) or [sign-in](/graph/api/resources/signin) event as safe or compromised because an Microsoft 365 Defender administrator dismissed [risk detection](/graph/api/resources/riskdetection).
 
+### Security | Attack simulation and training
+GA of the API for [attack simulation and training](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true), which is a service available as part of [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). The API enables tenant administrators to [list launched simulation exercises and trainings](/graph/api/attacksimulationroot-list-simulations), and get [reports](/graph/api/resources/report-m365defender-reports-overview) on derived insights into online behaviors of users in the phishing simulations.
+
+### Teamwork and communications | Calls and online meetings
+- Configure [broadcast settings](/graph/api/resources/broadcastMeetingSettings) to create an [online meeting](/graph/api/resources/onlinemeeting) as a live event. See an [example](/graph/api/application-post-onlinemeetings#example-2-create-a-microsoft-teams-live-event-with-user-token).
+- [Turn on the large gallery view](/graph/api/call-addLargeGalleryView) to display participants on a Teams call. For more information about the large gallery view on a call, check out the section titled "[see more participants](https://support.microsoft.com/office/customize-your-meeting-view-95aaeaf8-0f22-46cf-a6f9-34ca9b04a1b2#:~:text=See%20more%20participants)".
+- Get the [sessions where users share content](/graph/api/resources/contentSharingSession) in a [call](/graph/api/resources/call).
+
+### Teamwork and communications | Messaging
+- Get the details of [pinning](/graph/api/resources/messagePinnedEventMessageDetail) or [unpinning](/graph/api/resources/messageUnpinnedEventMessageDetail) a [chatMessage](/graph/api/resources/chatmessage) in a [chat](/graph/api/resources/chat).
+
+### Use the API | Batching
+For apps that make multiple requests on Outlook resources in the same mailbox, you can now further optimize app performance by using [JSON batching](json-batching.md) to combine _more than 4 such requests_ in one HTTP call. The previous limit on _batching_ up to 4 requests on the same mailbox has been removed.
+
 ## September 2022: New in preview only
+
+### Devices and apps | Corporate management
+Intune [September updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2022-09-01&to=2022-09-30) for the beta version.
 
 ### Files 
 [Assign a sensitivity label](/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) to a file in OneDrive or SharePoint. 
@@ -29,9 +49,10 @@ Identify the risk state in a [risky user](/graph/api/resources/riskyuser) or [si
 As part of a [policy for access package assignment](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true), you can specify or get the required regex pattern for a requestor to answer an [access package question](/graph/api/resources/accessPackageTextInputQuestion?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Identity and sign-in
-Identify the risk state in a [risky user](/graph/api/resources/riskyuser?view=graph-rest-beta&preserve-view=true) or [sign-in](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) event as safe or compromised based on one of the following reasons:
-- An administrator has dismissed all risks for the service principal.
-- An administrator confirmed the service principal has been compromised.
+- Identify the risk state in a [risky user](/graph/api/resources/riskyuser?view=graph-rest-beta&preserve-view=true) or [sign-in](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) event as safe or compromised based on one of the following reasons:
+  - An administrator has dismissed all risks for the service principal.
+  - An administrator confirmed the service principal has been compromised.
+- Allow internal guests or external users to be among the types of [conditional access users](/graph/api/resources/conditionalaccessusers?view=graph-rest-beta&preserve-view=true) that can be included or excluded in the scope of a [conditional access policy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
 
 ### Teamwork and communications
 - Subscribe to change notifications in a tenant where a specific Teams app is installed, for the following resources:
@@ -48,6 +69,7 @@ Identify the risk state in a [risky user](/graph/api/resources/riskyuser?view=gr
 ### Users
 - Get or set the date for an employee leaving an organization as part of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource.
 - Use the [authorization info](/graph/api/resources/authorizationInfo?view=graph-rest-beta&preserve-view=true) resource to bind IDs of smart card certificates of an Azure AD user for identification and authentication to non-Azure AD environments, such as on-premises Active Directory deployments or federated environments.
+- [List the apps](/graph/api/user-list-approleassignedresources?view=graph-rest-beta&preserve-view=true) to which a [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) has an [app role assignment](/graph/api/resources/approleassignment?view=graph-rest-beta&preserve-view=true) either directly or through group membership.
 
 
 ## August 2022: New and generally available
@@ -128,6 +150,16 @@ Use the latest generation of [alerts and incidents](/graph/api/resources/securit
 ### Teamwork and communications | Messaging
 [List](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true) and sort chats in descending order.
 
+### SDKs
+Try the new [Microsoft Graph PHP SDK 2.0.0-RC5](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-php-sdk-2-0-0-rc5-is-now-available/) and take advantage of the following improvements:
+- A new authentication provider that automatically refreshes access tokens.
+- A built-in retry handler that understands response status codes.
+- A fluent request building pattern to improve efficiency and discoverability.
+
+To get started, see:
+- [README](https://aka.ms/graph/sdk/php/preview/readme)
+- [Upgrade guide](https://aka.ms/graph/sdk/php/preview/upgrade)
+- [Code examples](https://aka.ms/graph/sdk/php/preview/examples)
 
 ## Want to stay in the loop?
 

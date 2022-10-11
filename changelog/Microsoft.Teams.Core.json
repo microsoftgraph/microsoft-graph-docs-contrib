@@ -5612,7 +5612,7 @@
       "Id": "490c5bb1-a4a4-4fff-a6f7-7da31f3bda5f",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-09-22T15:04:69.427Z",
+      "CreatedDateTime": "2022-09-22T15:04:59.427Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
@@ -5897,6 +5897,100 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-08-26T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Get subscription](https://learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Create subscription](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Update subscription](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [List subscriptions](https://learn.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resource to the [Delete subscription](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) method.",
+          "Target": "conversationMember"
+        }
+      ],
+      "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-03T15:04:49.427Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f0bb938f-6606-4da1-8488-5278e6c06f18",
+          "ApiChange": "Method",
+          "ChangedApiName": "setReaction",
+          "ChangeType": "Addition",
+          "Description": "Added the [setReaction](https://learn.microsoft.com/en-us/graph/api/chatmessage-setreaction?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "f0bb938f-6606-4da1-8488-5278e6c06f18",
+          "ApiChange": "Method",
+          "ChangedApiName": "unsetReaction",
+          "ChangeType": "Addition",
+          "Description": "Added the [unsetReaction](https://learn.microsoft.com/en-us/graph/api/chatmessage-unsetreaction?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "f0bb938f-6606-4da1-8488-5278e6c06f18",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "65fc6370-ff92-4df0-9134-da7a8759897a",
+          "ApiChange": "Method",
+          "ChangedApiName": "sendActivityNotificationToRecipients",
+          "ChangeType": "Addition",
+          "Description": "Added the [sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/sendActivityNotificationToRecipients?view=graph-rest-v1.0) method to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Target": "teamwork"
+        }
+      ],
+      "Id": "65fc6370-ff92-4df0-9134-da7a8759897a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-10T18:54:16.6879906Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }

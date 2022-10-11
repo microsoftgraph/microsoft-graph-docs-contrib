@@ -75,7 +75,7 @@ For more information about role settings, see [Configure Azure AD role settings 
 
 ## PIM and identity security with Zero Trust
 
-PIM APIs support organizations to adopt a Zero Trust approach to secure the identities in their organization. For more information about Zero Trust, see [Securing identity with Zero Trust](/security/zero-trust/deploy/identity).
+PIM APIs support organizations to adopt a Zero Trust approach to secure the identities in their organization. For more information about Zero Trust, see [Securing identity with Zero Trust](/security/zero-trust/deploy/identity#secure-privileged-access-with-privileged-identity-management).
 
 ## Permissions and privileges
 

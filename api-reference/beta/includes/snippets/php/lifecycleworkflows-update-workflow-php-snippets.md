@@ -20,7 +20,7 @@ $requestBody->setIsSchedulingEnabled(false);
 
 
 
-$graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->patch($requestBody);
 
 
 ```
