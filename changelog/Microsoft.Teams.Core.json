@@ -5947,15 +5947,15 @@
           "ApiChange": "Method",
           "ChangedApiName": "sendActivityNotificationToRecipients",
           "ChangeType": "Addition",
-          "Description": "Added the [sendActivityNotificationToRecipients](https://docs.microsoft.com/en-us/graph/api/sendActivityNotificationToRecipients?view=graph-rest-v1.0) method to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/sendActivityNotificationToRecipients?view=graph-rest-v1.0) method to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
           "Target": "teamwork"
         }
       ],
       "Id": "65fc6370-ff92-4df0-9134-da7a8759897a",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-10-04T18:54:16.6879906Z",
-      "WorkloadArea": "Teamwork",
+      "CreatedDateTime": "2022-10-10T18:54:16.6879906Z",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }
   ]
