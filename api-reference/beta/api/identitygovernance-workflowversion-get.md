@@ -121,6 +121,8 @@ Content-Type: application/json
     "category": "joiner",
     "description": "Configure new hire tasks for onboarding employees on their first day",
     "displayName": "Global onboard new hire employee",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
     "lastModifiedDateTime": "2022-08-24T19:33:03.8664941Z",
     "versionNumber": 3,
     "createdDateTime": "2022-08-24T19:31:33.5534766Z",
