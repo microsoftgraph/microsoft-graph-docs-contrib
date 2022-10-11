@@ -94,14 +94,14 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
 
     1. Select the **Sink** tab. Choose **New**, select **Azure Blob Storage**, and then choose **Continue**.
     
-            ![Screenshot of the Integrate page with the Sink tab and the New button highlighted](../concepts/images/data-connect-synapse-sink.png)
+    ![Screenshot of the Integrate page with the Sink tab and the New button highlighted](../concepts/images/data-connect-synapse-sink.png)
 
-            ![Screenshot of the New integration dataset pane with Azure Blob Storage highlighted](../concepts/images/data-connect-synapse-integration-service.png)
+    ![Screenshot of the New integration dataset pane with Azure Blob Storage highlighted](../concepts/images/data-connect-synapse-integration-service.png)
 
-        1. For the format for the data, select **Binary**, and then choose **Continue**.
-        1. Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it does not exist already.
-
-            ![Screenshot of the Set properties pane with Linked service highlighted](../concepts/images/data-connect-synapse-set-properties.png)
+    1. For the format for the data, select **Binary**, and then choose **Continue**.
+    1. Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it does not exist already.
+        
+        ![Screenshot of the Set properties pane with Linked service highlighted](../concepts/images/data-connect-synapse-set-properties.png)
 
         1. Under **Linked service**, choose **Select**, and then choose **+New**.
         1. In the dialog box, set the following values, and then choose **Create**.
@@ -111,7 +111,7 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
             - **Service principal ID:** Enter the ID of the Azure AD application you created.
             - **Service principal key:** Enter the hashed key of the Azure AD application you created.
 
-                ![Screenshot of the New linked service pane with the pane highlighted](../concepts/images/data-connect-synapse-new-linked-service.png)
+        ![Screenshot of the New linked service pane with the pane highlighted](../concepts/images/data-connect-synapse-new-linked-service.png)
 
     1. Next to the **File path** field, select **Browse**.
 
