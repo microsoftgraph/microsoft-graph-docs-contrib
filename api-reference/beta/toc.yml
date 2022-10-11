@@ -14928,7 +14928,7 @@ items:
             href: api/security-incident-get.md
           - name: Update incident
             href: api/security-incident-update.md
-      - name: Attack simulation and training (preview)
+      - name: Attack simulation and training
         items:
         - name: Simulations
           items:
