@@ -10364,6 +10364,8 @@ items:
             href: api/manageddevice-setcloudpcreviewstatus.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
+          - name: RetryPartnerAgentInstallation
+            href: api/cloudpc-retrypartneragentinstallation.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
