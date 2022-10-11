@@ -25,7 +25,7 @@ If you're having issues running your pipelines for the first time, verify that y
     - An Office 365 or Microsoft 365 E5 subscription assigned. No specific services within the license need to be enabled unless the user does not have a separate Exchange Online license, in which case the Exchange Online plan must be enabled.  
         **Note:** This account does not need the Global Admin role enabled. This is only required for Approver accounts that approve requests through the admin center.
 
-    - Because Data Connect uses the Privilege Access Management system to generate consent requests, E5 licenses are required. For details, see [Integrate with PAM](/graph/data-connect-pam) and [Get started with privileged access management](/microsoft-365/compliance/privileged-access-management-configuration?view=o365-worldwide).
+    - Because Data Connect uses the Privilege Access Management system to generate consent requests, E5 licenses are required. For details, see [Integrate with PAM](/graph/data-connect-pam) and [Get started with privileged access management](/microsoft-365/compliance/privileged-access-management-configuration).
 
 - If the owning member is no longer valid in a tenant's system, pipelines will fail this check unless a current valid user within the tenant owns the account. If there is a change in ownership, make sure that the owning account is updated to another member who meets the requirements. 
 
