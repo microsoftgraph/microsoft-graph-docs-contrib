@@ -1,6 +1,6 @@
 ---
 title: "teamwork: sendActivityNotificationToRecipients"
-description:  Send activity feed notifications to multiple users in bulk.
+description:  Send activity feed notifications to multiple users, in bulk.
 author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
@@ -47,7 +47,7 @@ POST /teamwork/sendActivityNotificationToRecipients
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
@@ -130,7 +130,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Notify multiple users about an event using a custom topic
 
-If you want to link an aspect that is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
+If you want to link an aspect that is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. **webUrl** is required when using `topic` source as `text`.
 
 #### Request
 
