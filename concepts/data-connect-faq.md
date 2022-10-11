@@ -36,8 +36,6 @@ Viva Insights and Microsoft Graph Data Connect are complementary. Although both 
 
 When customers are looking for insights and analytics beyond Viva Insights, Data Connect provides the extensibility to deliver custom requirements. For example, it offers Teams call records and transcripts as well as SharePoint Online data sets, which are not currently in scope for Viva Insights. Additionally, Data Connect raw data provides granular details that aren’t otherwise available from Viva Insights.  
 
-![Image showing use cases for Microsoft Graph Data Connect](.../images/data-connect-viva-insights-mgdc.png)
-
 ## Is there any initial overhead with Microsoft Graph Data Connect?
 
 Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, which means that all pipelines take at least that long regardless of the data size. If the initial overhead is too long for your use case, please reach out to the [Microsoft Graph Data Connect team](mailto:dataconnect@microsoft.com).
