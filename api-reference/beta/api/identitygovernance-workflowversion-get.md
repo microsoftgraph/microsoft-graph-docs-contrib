@@ -57,7 +57,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [workflowVersion](../resources/identitygovernance-workflowversion.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md) object in the response body.
 
 ## Examples
 
@@ -121,6 +121,8 @@ Content-Type: application/json
     "category": "joiner",
     "description": "Configure new hire tasks for onboarding employees on their first day",
     "displayName": "Global onboard new hire employee",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
     "lastModifiedDateTime": "2022-08-24T19:33:03.8664941Z",
     "versionNumber": 3,
     "createdDateTime": "2022-08-24T19:31:33.5534766Z",

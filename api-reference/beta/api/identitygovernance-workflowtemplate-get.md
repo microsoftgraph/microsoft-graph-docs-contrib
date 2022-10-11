@@ -57,7 +57,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md) object in the response body.
 
 ## Examples
 

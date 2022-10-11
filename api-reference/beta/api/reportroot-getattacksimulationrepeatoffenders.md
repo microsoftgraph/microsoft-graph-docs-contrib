@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getAttackSimulationRepeatOffenders"
 description: "List repeat offender users of a tenant in attack simulation and training campaigns."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: apiPageType

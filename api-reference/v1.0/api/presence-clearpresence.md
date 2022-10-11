@@ -67,7 +67,7 @@ The following request shows the application with ID `22553876-f5ab-4529-bffb-cfe
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/clearPresence
+POST https://graph.microsoft.com/v1.0/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/clearPresence
 Content-Type: application/json
 
 {

@@ -27,7 +27,7 @@ The settings of Azure AD Lifecycle Workflows in the tenant.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Identifier used for individually addressing Lifecycle Workflow settings.|
-|workflowScheduleIntervalInHours|Int32|The interval in hours at which all [workflows](../resources/identitygovernance-workflow.md) running in the tenant should be scheduled for execution. This interval has a minimum value of 1 and a maximum value of 24.|
+|workflowScheduleIntervalInHours|Int32|The interval in hours at which all [workflows](../resources/identitygovernance-workflow.md) running in the tenant should be scheduled for execution. This interval has a minimum value of 1 and a maximum value of 24. The default value is 3 hours. |
 
 ## Relationships
 
