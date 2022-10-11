@@ -144,6 +144,8 @@ This view offers a convenient presentation to observe API consumption per day ov
 
 You can also use the pie charts near the bottom to further breakdown the costs for analysis.  Please note that for Microsoft Graph metered APIs, the “Resource GUID” is the App Id; “Resource Groups” or “Resource Tags” are not supported. 
 
+![Screenshot of "Cost analysis"](images/cost-analysis-sample.png)
+
 For more cost management information, please visit [Cost Management + Billing documentation](/azure/cost-management-billing/).
 
 ## Frequently asked questions
