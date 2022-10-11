@@ -3527,8 +3527,6 @@ items:
             href: resources/intune-mam-ipv6range.md
           - name: JSON
             href: resources/intune-mam-json.md
-          - name: Key/value pair
-            href: resources/intune-mam-keyvaluepair.md
           - name: Managed app clipboard sharing level
             href: resources/intune-mam-managedappclipboardsharinglevel.md
           - name: Managed app configuration
@@ -4105,6 +4103,8 @@ items:
             href: resources/intune-shared-groupassignmenttarget.md
           - name: Install intent
             href: resources/intune-shared-installintent.md
+          - name: Key/value pair
+            href: resources/intune-shared-keyvaluepair.md
           - name: MIME content
             href: resources/intune-shared-mimecontent.md
           - name: Saved UI state generation options
@@ -5625,6 +5625,20 @@ items:
               href: api/accesspackage-filterbycurrentuser.md
             - name: Get applicable policy requirements
               href: api/accesspackage-getapplicablepolicyrequirements.md
+            - name: List incompatible access packages
+              href: api/accesspackage-list-incompatibleaccesspackages.md
+            - name: Add incompatible access package
+              href: api/accesspackage-post-incompatibleaccesspackage.md
+            - name: Remove incompatible access package
+              href: api/accesspackage-delete-incompatibleaccesspackage.md
+            - name: List incompatible groups
+              href: api/accesspackage-list-incompatiblegroups.md
+            - name: Add incompatible group
+              href: api/accesspackage-post-incompatiblegroup.md
+            - name: Remove incompatible group
+              href: api/accesspackage-delete-incompatiblegroup.md
+            - name: List access packages incompatible with
+              href: api/accesspackage-list-accesspackagesincompatiblewith.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:
@@ -5632,6 +5646,8 @@ items:
               href: api/entitlementmanagement-list-assignments.md
             - name: Get
               href: api/accesspackageassignment-get.md
+            - name: Check additional access
+              href: api/accesspackageassignment-additionalaccess.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
             - name: Reprocess
@@ -7257,11 +7273,11 @@ items:
               href: api/call-keepalive.md
             - name: Log teleconference device quality data
               href: api/call-logteleconferencedevicequality.md
+            - name: Change screen sharing role
+              href: api/call-changescreensharingrole.md
           - name: Content sharing session
             href: resources/contentsharingsession.md
             items:
-            - name: Change screen sharing role
-              href: api/call-changescreensharingrole.md
             - name: List
               href: api/call-list-contentsharingsessions.md
             - name: Get
@@ -7383,6 +7399,8 @@ items:
             href: api/team-sendactivitynotification.md
           - name: Send notification to user
             href: api/userteamwork-sendactivitynotification.md
+          - name: Send notifications to multiple users in bulk
+            href: api/teamwork-sendactivitynotificationtorecipients.md
         - name: Channel
           href: resources/channel.md
           items:
@@ -7570,6 +7588,30 @@ items:
             href: /graph/teams-list-all-teams?context=graph/api/1.0
           - name: Complete migration for team
             href: api/team-completemigration.md
+        - name: Tag
+          href: resources/teamworktag.md
+          items:
+          - name: List
+            href: api/teamworktag-list.md
+          - name: Create
+            href: api/teamworktag-post.md
+          - name: Get
+            href: api/teamworktag-get.md
+          - name: Update
+            href: api/teamworktag-update.md
+          - name: Delete
+            href: api/teamworktag-delete.md
+        - name: Tag member
+          href: resources/teamworktagmember.md
+          items:
+          - name: List
+            href: api/teamworktagmember-list.md
+          - name: Create
+            href: api/teamworktagmember-post.md
+          - name: Get
+            href: api/teamworktagmember-get.md
+          - name: Delete
+            href: api/teamworktagmember-delete.md
       - name: Shift management
         items:
         - name: Offer shift

@@ -1243,6 +1243,9 @@ Namespace: microsoft.graph
 |list|
 |listItem|
 |drive|
+|acronym|
+|bookmark|
+|chatMessage|
 |unknownFutureValue|
 
 ### searchAlterationType values
@@ -2379,6 +2382,17 @@ Possible values for user account types (group membership), per Windows definitio
 |High|1|
 |Low|2|
 
+### templateScenarios values
+|Member             |
+|:------------------|
+|new                |
+|secureFoundation   |
+|zeroTrust          |
+|remoteWork         |
+|protectAdmins      |
+|emergingThreats    |
+|unknownFutureValue |
+
 ### threatAssessmentContentType values
 
 | Member | Value | Description             |
@@ -2609,6 +2623,7 @@ Possible values for user account types (group membership), per Windows definitio
 |group|
 |unknownFutureValue|
 |roster|
+|project|
 
 ### plannerPlanContextType values
 
@@ -2792,12 +2807,6 @@ Possible values for user account types (group membership), per Windows definitio
 |high|
 |critical|
 |unknownFutureValue|
-
-### teamworkTagType values
-
-|Member| Value | Description               |
-|:---|:---- | :------------------------ |
-|standard| 0     |Default type for a tag. Tags of type standard can be managed in the team by members who have permissions.|
 
 ### teamworkApplicationIdentityType values
 
@@ -3237,3 +3246,12 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |group|
 |unknownFutureValue|
+
+### searchContent values 
+
+|Member|
+|:---|
+|privateContent|
+|sharedContent|
+|unknownFutureValue|
+
