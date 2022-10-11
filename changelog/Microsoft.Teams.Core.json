@@ -5947,7 +5947,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "azureCommunicationServicesUser",
           "ChangeType": "Addition",
-          "Description": "Added the `azureCommunicationServicesUser` value to the **teamworkUserIdentityType** enumeration.",
+          "Description": "Added the `azureCommunicationServicesUser` member to the **teamworkUserIdentityType** enumeration.",
           "Target": "teamworkUserIdentityType"
         }
       ],
