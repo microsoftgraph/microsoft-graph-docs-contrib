@@ -14,7 +14,7 @@ $requestBody->setTopic('Group chat title update');
 
 
 
-$graphServiceClient->chatsById('chat-id')->patch($requestBody);
+$requestResult = $graphServiceClient->chatsById('chat-id')->patch($requestBody);
 
 
 ```

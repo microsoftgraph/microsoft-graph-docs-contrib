@@ -1,6 +1,6 @@
 ---
 title: "microsoftTunnelHealthThreshold resource type"
-description: "Entity that represents the health thresholds of a health metric."
+description: "Entity that represents the health thresholds of a health metric"
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Entity that represents the health thresholds of a health metric.
+Entity that represents the health thresholds of a health metric
 
 ## Methods
 |Method|Return Type|Description|
@@ -29,11 +29,11 @@ Entity that represents the health thresholds of a health metric.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The metric name|
-|healthyThreshold|Int64|The threshold for being healthy|
-|unhealthyThreshold|Int64|The threshold for being unhealthy|
-|defaultHealthyThreshold|Int64|The default threshold for being healthy|
-|defaultUnhealthyThreshold|Int64|The default threshold for being unhealthy|
+|id|String|The unique identifier for the metric name. Supports: $delete, $update. $Insert, $skip, $top is not supported. Read-only.|
+|healthyThreshold|Int64|The threshold for being healthy based on default health status metrics: CPU usage healthy < 50%, Memory usage healthy < 50%, Disk space healthy > 5GB, Latency healthy < 10ms, health metrics can be customized.|
+|unhealthyThreshold|Int64|The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy > 75%, Memory usage unhealthy > 75%, Disk space < 3GB, Latency Unhealthy > 20ms, health metrics can be customized.|
+|defaultHealthyThreshold|Int64|The threshold for being healthy based on default health status metrics: CPU usage healthy < 50%, Memory usage healthy < 50%, Disk space healthy > 5GB, Latency healthy < 10ms, health metrics can be customized. Read-only.|
+|defaultUnhealthyThreshold|Int64|The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy > 75%, Memory usage unhealthy > 75%, Disk space < 3GB, Latency unhealthy > 20ms, health metrics can be customized. Read-only.|
 
 ## Relationships
 None
@@ -56,7 +56,6 @@ Here is a JSON representation of the resource.
   "defaultUnhealthyThreshold": 1024
 }
 ```
-
 
 
 

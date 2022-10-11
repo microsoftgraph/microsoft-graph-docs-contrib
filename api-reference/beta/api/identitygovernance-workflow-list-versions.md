@@ -43,7 +43,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/versions
 
 ## Optional query parameters
 
-This method supports the `$select`, `$count`, `$search`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$count`, `$search`, `$orderBy`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,7 +57,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [workflowVersion](../resources/identitygovernance-workflowversion.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md) objects in the response body.
 
 ## Examples
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-workflowversion-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-workflowversion-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-workflowversion-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -119,6 +123,8 @@ Content-Type: application/json
             "category": "joiner",
             "description": "Configure new hire tasks for onboarding employees on their first day",
             "displayName": "Global onboard new hire employee",
+            "isEnabled": true,
+            "isSchedulingEnabled": true,
             "lastModifiedDateTime": "2022-08-24T19:33:03.8664941Z",
             "versionNumber": 3,
             "createdDateTime": "2022-08-24T19:31:33.5534766Z"
@@ -127,6 +133,8 @@ Content-Type: application/json
             "category": "joiner",
             "description": "Configure new hire tasks for onboarding employees on their first day",
             "displayName": "Onboard new hire employee",
+            "isEnabled": true,
+            "isSchedulingEnabled": false,
             "lastModifiedDateTime": "2022-08-24T19:31:33.4303233Z",
             "versionNumber": 2,
             "createdDateTime": "2022-08-24T19:18:18.6841471Z"
@@ -135,6 +143,8 @@ Content-Type: application/json
             "category": "joiner",
             "description": "Configure new hire tasks for onboarding employees on their first day",
             "displayName": "Onboard new hire employee",
+            "isEnabled": true,
+            "isSchedulingEnabled": false,
             "lastModifiedDateTime": "2022-08-24T19:18:18.5633638Z",
             "versionNumber": 1,
             "createdDateTime": "2022-08-24T15:39:17.6496784Z"

@@ -16,7 +16,7 @@ $requestBody->setApproverReason('approverReason-value');
 
 
 
-$graphServiceClient->privilegedApprovalById('privilegedApproval-id')->patch($requestBody);
+$requestResult = $graphServiceClient->privilegedApprovalById('privilegedApproval-id')->patch($requestBody);
 
 
 ```

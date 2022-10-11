@@ -22,7 +22,7 @@ additionalData := map[string]interface{}{
 orderHintsByAssignee.SetAdditionalData(additionalData)
 requestBody.SetOrderHintsByAssignee(orderHintsByAssignee)
 
-graphClient.Planner().TasksById("plannerTask-id").AssignedToTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Planner().TasksById("plannerTask-id").AssignedToTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
 
 
 ```
