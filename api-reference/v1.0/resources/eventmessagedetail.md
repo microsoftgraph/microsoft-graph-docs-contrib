@@ -15,7 +15,7 @@ Represents details of a system event message.
 
 System messages are messages generated for events such as [members](../resources/conversationMember.md) added to a [channel](../resources/channel.md), **members** added to a [chat](../resources/chat.md), and [team](../resources/team.md) description updated.
 
-List of events supported
+### Supported events
 
 | Event | Description |
 | :---- | :---------- |
@@ -36,6 +36,8 @@ List of events supported
 | [membersDeletedEventMessageDetail](../resources/membersdeletedeventmessagedetail.md) | **Members** have been removed. |
 | [membersJoinedEventMessageDetail](../resources/membersjoinedeventmessagedetail.md) | **Members** have joined. |
 | [membersLeftEventMessageDetail](../resources/memberslefteventmessagedetail.md) | **Members** have left. |
+| [messagePinnedEventMessageDetail](../resources/messagepinnedeventmessagedetail.md) | A message has been pinned. |
+| [messageUnpinnedEventMessageDetail](../resources/messageunpinnedeventmessagedetail.md) | A message has been unpinned. |
 | [tabUpdatedEventMessageDetail](../resources/tabupdatedeventmessagedetail.md) | A tab has been updated. |
 | [teamArchivedEventMessageDetail](../resources/teamarchivedeventmessagedetail.md) | A **team** has been archived. |
 | [teamCreatedEventMessageDetail](../resources/teamcreatedeventmessagedetail.md) | A **team** has been created. |

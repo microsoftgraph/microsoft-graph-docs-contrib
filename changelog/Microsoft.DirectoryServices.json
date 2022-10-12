@@ -21,6 +21,64 @@
     {
       "ChangeList": [
         {
+          "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "x509CertificateAuthenticationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateAuthenticationMode** enumeration type.",
+          "Target": "x509CertificateAuthenticationMode"
+        },
+        {
+          "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "x509CertificateRuleType",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateRuleType** enumeration type.",
+          "Target": "x509CertificateRuleType"
+        },
+        {
+          "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateAuthenticationModeConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-1.0) resource type and its associated methods. This resource represents the details of the Azure AD native Certificate-Based Authentication (CBA) in the tenant including whether the authentication method is enabled or disabled and the users and groups who are in scope for the auth method.",
+          "Target": "x509CertificateAuthenticationModeConfiguration"
+        },
+        {
+          "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-1.0) resource type.  Use this resource to define the custom authentication configuration rules for the X.509 certificate.",
+          "Target": "x509CertificateRule"
+        },
+        {
+          "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateUserBinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateUserBinding](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateUserBinding?view=graph-rest-1.0) resource type. Use this resource to map the fields in the X.509 certificate to attributes of the Azure AD user object in order to bind the certificate to the user account.",
+          "Target": "x509CertificateUserBinding"
+        },
+        {
+          "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-1.0) resource type and its associated methods. This resource represents the details of the Azure AD native Certificate-Based Authentication (CBA) in the tenant including whether the authentication method is enabled or disabled and the users and groups who are in scope for the auth method.",
+          "Target": "x509CertificateAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-12T00:00:00.4434651Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
           "ApiChange": "Relationship",
           "ChangedApiName": "emailMethods",
@@ -7193,6 +7251,24 @@
     {
       "ChangeList": [
         {
+          "Id": "ce109e1c-4280-499f-996b-c85c6bb57685",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appRoleAssignedResources",
+          "ChangeType": "Addition",
+          "Description": "Added the **appRoleAssignedResources** relationship to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "ce109e1c-4280-499f-996b-c85c6bb57685",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-26T00:00:00.3454133Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "198661b5-860c-4988-b4cf-f3d9a91f9db5",
           "ApiChange": "Property",
           "ChangedApiName": "hideFromAddressLists,hideFromOutlookClients",
@@ -11694,6 +11770,73 @@
       "CreatedDateTime": "2022-07-05T07:06:20.8129252Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0d721125-f1c0-44e7-96fa-dd4773cf2445",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationContextClassReferences",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationContextClassReferences** relationship to the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessRoot"
+        },
+        {
+          "Id": "0d721125-f1c0-44e7-96fa-dd4773cf2445",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationContextClassReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationContextClassReference](https://learn.microsoft.com/en-us/graph/api/resources/authenticationContextClassReference?view=graph-rest-1.0) resource and its associated methods.",
+          "Target": "authenticationContextClassReference"
+        }
+      ],
+      "Id": "0d721125-f1c0-44e7-96fa-dd4773cf2445",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-03T07:06:20.8129252Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "templateScenarios",
+          "ChangeType": "Addition",
+          "Description": "Added the **templateScenarios** enumeration.",
+          "Target": "templateScenarios"
+        },
+        {
+          "Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessPolicyDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessPolicyDetail](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicyDetail?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyDetail"
+        },
+        {
+          "Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "templates",
+          "ChangeType": "Addition",
+          "Description": "Added the **templates** relationship to the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-beta) resource.",					"Target": "conditionalAccessRoot"
+        },
+        {
+          "Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessTemplate](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessTemplate?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessTemplate"
+        }
+      ],
+      "Id": "8b357406-5e20-4c5b-ab5f-715dea8ea166",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T16:30:13.2808833Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }

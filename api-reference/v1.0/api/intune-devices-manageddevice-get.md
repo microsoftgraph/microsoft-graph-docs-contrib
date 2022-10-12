@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /users/{usersId}/managedDevices/{managedDeviceId}
 GET /deviceManagement/managedDevices/{managedDeviceId}
 GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
+GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}/managedDevices/{managedDeviceId}
 ```
 
 ## Optional query parameters
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and [managedDevice](
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}
+GET https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDeviceId}
 ```
 
 ### Response
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5095
+Content-Length: 5220
 
 {
   "value": {
@@ -165,6 +165,8 @@ Content-Length: 5095
     "freeStorageSpaceInBytes": 7,
     "managedDeviceName": "Managed Device Name value",
     "partnerReportedThreatState": "activated",
+    "requireUserEnrollmentApproval": true,
+    "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00",
     "iccid": "Iccid value",
     "udid": "Udid value",
     "notes": "Notes value",
@@ -173,9 +175,6 @@ Content-Length: 5095
   }
 }
 ```
-
-
-
 
 
 
