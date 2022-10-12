@@ -54,8 +54,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_riskDetection_1",
-  "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
+  "name": "get_riskDetection_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections

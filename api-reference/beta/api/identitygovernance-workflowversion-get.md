@@ -68,7 +68,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_get_workflowversion"
+  "name": "lifecycleworkflows_get_workflowversion",
+  "sampleKeys": ["156ce798-1eb6-4e0a-8515-e79f54d04390", "3"]
 }
 -->
 ``` http
@@ -121,6 +122,8 @@ Content-Type: application/json
     "category": "joiner",
     "description": "Configure new hire tasks for onboarding employees on their first day",
     "displayName": "Global onboard new hire employee",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
     "lastModifiedDateTime": "2022-08-24T19:33:03.8664941Z",
     "versionNumber": 3,
     "createdDateTime": "2022-08-24T19:31:33.5534766Z",
