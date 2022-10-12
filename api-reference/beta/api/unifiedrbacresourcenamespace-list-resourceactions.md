@@ -117,6 +117,7 @@ Content-Type: application/json
             "actionVerb": null,
             "description": "Create and delete access reviews, and read and update all properties of access reviews in Azure AD",
             "id": "microsoft.directory-accessReviews-allProperties-allTasks",
+            "isPrivileged": false,
             "name": "microsoft.directory/accessReviews/allProperties/allTasks",
             "resourceScopeId": null
         },
@@ -124,6 +125,7 @@ Content-Type: application/json
             "actionVerb": "GET",
             "description": "Read all properties of access reviews",
             "id": "microsoft.directory-accessReviews-allProperties-read-get",
+            "isPrivileged": false,
             "name": "microsoft.directory/accessReviews/allProperties/read",
             "resourceScopeId": null
         },
@@ -131,6 +133,7 @@ Content-Type: application/json
             "actionVerb": null,
             "description": "Manage access reviews of application role assignments in Azure AD",
             "id": "microsoft.directory-accessReviews-definitions.applications-allProperties-allTasks",
+            "isPrivileged": false,
             "name": "microsoft.directory/accessReviews/definitions.applications/allProperties/allTasks",
             "resourceScopeId": null
         }
@@ -201,6 +204,7 @@ Content-Type: application/json
             "actionVerb": null,
             "description": "Manage all aspects of Insights app",
             "id": "microsoft.insights-allEntities-allProperties-allTasks",
+            "isPrivileged": false,
             "name": "microsoft.insights/allEntities/allProperties/allTasks",
             "resourceScopeId": null
         },
@@ -208,6 +212,7 @@ Content-Type: application/json
             "actionVerb": null,
             "description": "Read all aspects of Viva Insights",
             "id": "microsoft.insights-allEntities-allProperties-read",
+            "isPrivileged": false,
             "name": "microsoft.insights/allEntities/allProperties/read",
             "resourceScopeId": null
         },
@@ -215,6 +220,7 @@ Content-Type: application/json
             "actionVerb": "PATCH",
             "description": "Deploy and manage programs in Insights app",
             "id": "microsoft.insights-programs-allProperties-update-patch",
+            "isPrivileged": false,
             "name": "microsoft.insights/programs/allProperties/update",
             "resourceScopeId": null
         },
@@ -222,6 +228,7 @@ Content-Type: application/json
             "actionVerb": null,
             "description": "Run and manage queries in Viva Insights",
             "id": "microsoft.insights-queries-allProperties-allTasks",
+            "isPrivileged": false,
             "name": "microsoft.insights/queries/allProperties/allTasks",
             "resourceScopeId": null
         },
@@ -229,6 +236,7 @@ Content-Type: application/json
             "actionVerb": "GET",
             "description": "View reports and dashboard in Insights app",
             "id": "microsoft.insights-reports-allProperties-read-get",
+            "isPrivileged": false,
             "name": "microsoft.insights/reports/allProperties/read",
             "resourceScopeId": null
         }
