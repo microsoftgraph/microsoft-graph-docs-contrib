@@ -11,9 +11,10 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a preview of a [chatMessage](../resources/chatmessage.md) resource. This object can only be fetched as part of a list of [chats](../resources/chat.md).
+
+## Methods
+None.
 
 ## Properties
 |Property|Type|Description|

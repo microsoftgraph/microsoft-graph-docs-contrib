@@ -7505,6 +7505,14 @@ items:
             href: api/chat-post-messages.md
           - name: Get chat between user and app
             href: api/userscopeteamsappinstallation-get-chat.md
+          - name: Mark chat as read
+            href: api/chat-markchatreadforuser.md
+          - name: Mark chat as unread
+            href: api/chat-markchatunreadforuser.md
+          - name: Hide chat
+            href: api/chat-hideforuser.md
+          - name: Unhide chat
+            href: api/chat-unhideforuser.md
           - name: List pinned messages
             href: api/chat-list-pinnedmessages.md
           - name: Pin message
