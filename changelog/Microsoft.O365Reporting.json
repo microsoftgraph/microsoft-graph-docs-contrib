@@ -1888,7 +1888,7 @@
 		"ChangeList": [
 		  {
 			"Id": "4cc4e6b4-85f5-43d7-9adc-71ff0b22553e",
-			"ApiChange": "method",
+			"ApiChange": "Method",
 			"ChangedApiName": "getM365AppUserDetail",
 			"ChangeType": "Addition",
 			"Description": "Added the [getM365AppUserDetail](https://learn.microsoft.com/graph/api/reportRoot-getM365AppUserDetail?view=graph-rest-1.0) method.",
@@ -1896,7 +1896,7 @@
 		  },
 		  {
 			"Id": "4cc4e6b4-85f5-43d7-9adc-71ff0b22553e",
-			"ApiChange": "method",
+			"ApiChange": "Method",
 			"ChangedApiName": "getM365AppUserCounts",
 			"ChangeType": "Addition",
 			"Description": "Added the [getM365AppUserCounts](https://learn.microsoft.com/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-1.0) method.",
@@ -1904,7 +1904,7 @@
 		  },
 		  {
 			"Id": "4cc4e6b4-85f5-43d7-9adc-71ff0b22553e",
-			"ApiChange": "method",
+			"ApiChange": "Method",
 			"ChangedApiName": "getM365AppPlatformUserCounts",
 			"ChangeType": "Addition",
 			"Description": "Added the [getM365AppPlatformUserCounts](https://learn.microsoft.com/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-1.0) method.",
