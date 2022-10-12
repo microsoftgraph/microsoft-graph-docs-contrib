@@ -12,10 +12,10 @@
                 },
                 {
                     "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                    "ApiChange": "Resource",
+                    "ApiChange": "Relationship",
                     "ChangedApiName": "crossCloudGovernmentOrganizationMapping",
                     "ChangeType": "Addition",
-                    "Description": "Added the **crossCloudGovernmentOrganizationMapping** relationship to [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Description": "Added the **crossCloudGovernmentOrganizationMapping** navigation property to [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
                     "Target": "virtualEndpoint"
                 }
             ],

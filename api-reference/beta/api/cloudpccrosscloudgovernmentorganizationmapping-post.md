@@ -41,7 +41,7 @@ POST /deviceManagement/virtualEndpoint/crossCloudGovernmentOrganizationMapping
 |X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required. Represents the AAD token of government cloud tenant.|
 
 ## Request body
-Request body is empty JSON string.
+The request body is an empty JSON string.
 
 ## Response
 
