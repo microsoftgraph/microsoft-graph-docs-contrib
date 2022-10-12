@@ -19,19 +19,19 @@ Describe the detail of one partner agent installation result on a cloud pc.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|partnerAgentName|[cloudPcPartnerAgentName](#cloudpcpartneragentname)|Indicates the name of a partner agent, right now it's just Citrix, which is third-party. And it includes first-party and third-party. Read-Only.|
-|installStatus|[cloudPcPartnerAgentInstallStatus](#cloudpcpartneragentinstallstatus)|Indicates the status of a partner agent installation, possible value are: installed, installFailed, installing, uninstalling, uninstallFailed, licensed. Read-Only.|
+|partnerAgentName|[cloudPcPartnerAgentName](#cloudpcpartneragentname-values)|Indicates the name of a partner agent, right now it's just Citrix, which is third-party. And it includes first-party and third-party. Read-Only.|
+|installStatus|[cloudPcPartnerAgentInstallStatus](#cloudpcpartneragentinstallstatus-values)|Indicates the status of a partner agent installation, possible value are: installed, installFailed, installing, uninstalling, uninstallFailed, licensed. Read-Only.|
 |isThirdPartyPartner|Boolean|Indicates if the partner agent is third-party. When 'TRUE', the agent is a third-party (non-Microsoft) agent.  When 'FALSE', the agent is a Microsoft agent or is not known.  Default value is 'FALSE'.|
 |retriable|Boolean|Indicates whether the partner agent installation should be retried. If the installStatus is 'installFailed' or 'licensed' then 'TRUE' indicates the installation should be retried.  If the installStatus is neither 'installFailed'nor 'licensed' then the installation will not be retried if the value is 'FALSE'. Default value is 'FALSE'.|
 
-### cloudPcPartnerAgentName
+### cloudPcPartnerAgentName values
 
 |Member|Description|
 |:---|:---|
 |citrix|Indicates that a third-party-partner named Citrix.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
-#### cloudPcPartnerAgentInstallStatus
+#### cloudPcPartnerAgentInstallStatus values
 
 |Member|Description|
 |:---|:---|
