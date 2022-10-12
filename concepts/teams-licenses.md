@@ -140,7 +140,7 @@ A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Contr
 3. For the filter near the top, select **Service name: Microsoft Graph Servies**. 
 4. For the **Group by** dropdown menu near the right, select **Meter**. 
 
-This view offers a convenient presentation to observe API consumption per day over a period. 
+This view offers a convenient way to observe API consumption per day over a period of time. 
 
 You can also use the pie charts near the bottom to further break down the costs for analysis. Note that for Microsoft Graph metered APIs, the **Resource GUID** is the app ID; **Resource Groups** or **Resource Tags** are not supported. 
 
