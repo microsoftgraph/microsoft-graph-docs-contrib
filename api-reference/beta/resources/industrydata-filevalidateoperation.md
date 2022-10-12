@@ -1,6 +1,6 @@
 ---
 title: "fileValidateOperation resource type"
-description: "This entity represents the asynchronous operation results from any operation that validates file data."
+description: "Represents the asynchronous operation results from any operation that validates file data."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This entity represents the asynchronous operation results from any operation that validates file data.
-
-Inherits from [validateOperation](../resources/industrydata-validateoperation.md).
+Represents the asynchronous operation results from any operation that validates file data.
 
 Loop through the list to upload the latest CSVs in preperation for basic file validation.
 
@@ -24,6 +22,8 @@ Once the files have been uploaded, call `validate()` to validate the uploaded fi
 The `validate()` action is a long-running operation. The link to the operation is returned in the `Location` header. Once validation is complete, the results can be obtained through the `Location` URI.
 
 Recommend to poll no less than every 5 seconds while the status is 'in progress'.
+
+Inherits from [validateOperation](../resources/industrydata-validateoperation.md).
 
 ## Properties
 

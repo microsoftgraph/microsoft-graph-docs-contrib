@@ -1,6 +1,6 @@
 ---
 title: "inboundActivityResults resource type"
-description: "Represents results of a single Run of an Inbound Flow."
+description: "Represents results of a single run of an inbound flow."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents results of a single Run of an Inbound Flow.
+Represents results of a single run of an inbound flow.
 
 Inherits from [industryDataActivityStatistics](../resources/industrydata-industrydataactivitystatistics.md).
 
@@ -22,15 +22,15 @@ Inherits from [industryDataActivityStatistics](../resources/industrydata-industr
 | Property              | Type                                                                                                                                  | Description                                                                                                                                                                                                                                                                                                    |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | activityId            | String                                                                                                                                | The identifier for the activity that is being reported on. Inherited from [industryDataActivityStatistics](../resources/industrydata-industrydataactivitystatistics.md).                                                                                                                                       |
-| displayName           | String                                                                                                                                | The displayName of the underlying flow. Inherited from [industryDataActivityStatistics](../resources/industrydata-industrydataactivitystatistics.md).                                                                                                                                                          |
-| errors                | Int32                                                                                                                                 | Number of errors encountered while processing the Inbound Flow.                                                                                                                                                                                                                                                |
-| groups                | [microsoft.graph.industryData.industryDataRunEntityCountMetric](../resources/industrydata-industrydatarunentitycountmetric.md)        | Counts of active and inactive Groups processed by the Inbound Flow.                                                                                                                                                                                                                                            |
-| matchedPeopleByRole   | [microsoft.graph.industryData.industryDataRunRoleCountMetric](../resources/industrydata-industrydatarunrolecountmetric.md) collection | Number of people matched to an AAD user, by role.                                                                                                                                                                                                                                                              |
-| memberships           | [microsoft.graph.industryData.industryDataRunEntityCountMetric](../resources/industrydata-industrydatarunentitycountmetric.md)        | Counts of active and inactive Memberships processed by the Inbound Flow.                                                                                                                                                                                                                                       |
-| organizations         | [microsoft.graph.industryData.industryDataRunEntityCountMetric](../resources/industrydata-industrydatarunentitycountmetric.md)        | Counts of active and inactive Organizations processed by the Inbound Flow.                                                                                                                                                                                                                                     |
-| people                | [microsoft.graph.industryData.industryDataRunEntityCountMetric](../resources/industrydata-industrydatarunentitycountmetric.md)        | Counts of active and inactive People processed by the Inbound Flow.                                                                                                                                                                                                                                            |
-| status                | industryDataActivityStatus                                                                                                            | The latest status of the activity in the runGroup. Inherited from [industryDataActivityStatistics](../resources/industrydata-industrydataactivitystatistics.md).The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
-| unmatchedPeopleByRole | [microsoft.graph.industryData.industryDataRunRoleCountMetric](../resources/industrydata-industrydatarunrolecountmetric.md) collection | Number of people not matched to an AAD user, by role.                                                                                                                                                                                                                                                          |
+| displayName           | String                                                                                                                                | The display name of the underlying flow. Inherited from [industryDataActivityStatistics](../resources/industrydata-industrydataactivitystatistics.md).                                                                                                                                                          |
+| errors                | Int32                                                                                                                                 | Number of errors encountered while processing the inbound flow.                                                                                                                                                                                                                                                |
+| groups                | [microsoft.graph.industryData.industryDataRunEntityCountMetric](../resources/industrydata-industrydatarunentitycountmetric.md)        | Counts of active and inactive groups processed by the inbound flow.                                                                                                                                                                                                                                            |
+| matchedPeopleByRole   | [microsoft.graph.industryData.industryDataRunRoleCountMetric](../resources/industrydata-industrydatarunrolecountmetric.md) collection | Number of people matched to an Azure Active Directory user, by role.                                                                                                                                                                                                                                                              |
+| memberships           | [microsoft.graph.industryData.industryDataRunEntityCountMetric](../resources/industrydata-industrydatarunentitycountmetric.md)        | Counts of active and inactive memberships processed by the inbound flow.                                                                                                                                                                                                                                       |
+| organizations         | [microsoft.graph.industryData.industryDataRunEntityCountMetric](../resources/industrydata-industrydatarunentitycountmetric.md)        | Counts of active and inactive organizations processed by the inbound flow.                                                                                                                                                                                                                                     |
+| people                | [microsoft.graph.industryData.industryDataRunEntityCountMetric](../resources/industrydata-industrydatarunentitycountmetric.md)        | Counts of active and inactive people processed by the inbound flow.                                                                                                                                                                                                                                            |
+| status                | industryDataActivityStatus                                                                                                            | The latest status of the activity in the run group. Inherited from [industryDataActivityStatistics](../resources/industrydata-industrydataactivitystatistics.md). The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| unmatchedPeopleByRole | [microsoft.graph.industryData.industryDataRunRoleCountMetric](../resources/industrydata-industrydatarunrolecountmetric.md) collection | Number of people not matched to an Azure Active Directory user, by role.                                                                                                                                                                                                                                                          |
 | warnings              | Int32                                                                                                                                 | Number of warnings encountered while processing the Inbound Flow.                                                                                                                                                                                                                                              |
 
 ## Relationships
@@ -52,8 +52,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.industryData.inboundActivityResults",
   "activityId": "String",
   "displayName": "String",
-  "status": "String",
-  "errors": "Integer",
+  "errors": "Int32",
   "groups": {
     "@odata.type": "microsoft.graph.industryData.industryDataRunEntityCountMetric"
   },
@@ -71,11 +70,12 @@ The following is a JSON representation of the resource.
   "people": {
     "@odata.type": "microsoft.graph.industryData.industryDataRunEntityCountMetric"
   },
+  "status": "String",
   "unmatchedPeopleByRole": [
     {
       "@odata.type": "microsoft.graph.industryData.industryDataRunRoleCountMetric"
     }
   ],
-  "warnings": "Integer"
+  "warnings": "Int32"
 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: "fileDataConnector resource type"
-description: "Representation of a way to connect to a file-based data source."
+description: "Represents an abstract type that provides the resources to establish a connection with a file-based data source."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representation of a way to connect to a file-based data source.
-This is an abstract type.
+Represents an abstract type that provides the resources to establish a connection with a file-based data source.
 
 Inherits from [industryDataConnector](../resources/industrydata-industrydataconnector.md).
 
@@ -25,20 +24,20 @@ Inherits from [industryDataConnector](../resources/industrydata-industrydataconn
 | [List fileDataConnectors](../api/industrydata-filedataconnector-list.md)                      | [microsoft.graph.industryData.fileDataConnector](../resources/industrydata-filedataconnector.md) collection           | Get a list of the [fileDataConnector](../resources/industrydata-filedataconnector.md) objects and their properties.    |
 | [Get fileDataConnector](../api/industrydata-filedataconnector-get.md)                         | [microsoft.graph.industryData.fileDataConnector](../resources/industrydata-filedataconnector.md)                      | Read the properties and relationships of a [fileDataConnector](../resources/industrydata-filedataconnector.md) object. |
 | [Update fileDataConnector](../api/industrydata-filedataconnector-update.md)                   | [microsoft.graph.industryData.fileDataConnector](../resources/industrydata-filedataconnector.md)                      | Update the properties of a [fileDataConnector](../resources/industrydata-filedataconnector.md) object.                 |
-| [Delete fileDataConnector](../api/industrydata-filedataconnector-delete.md)                   | None                                                                                                                  | Deletes a [fileDataConnector](../resources/industrydata-filedataconnector.md) object.                                  |
-| [validate](../api/industrydata-filedataconnector-validate.md)                                 | None                                                                                                                  | Performs validations applicable for the specific instance of the data connector.                                       |
+| [Delete fileDataConnector](../api/industrydata-filedataconnector-delete.md)                   | None                                                                                                                  | Delete a [fileDataConnector](../resources/industrydata-filedataconnector.md) object.                                  |
+| [validate](../api/industrydata-filedataconnector-validate.md)                                 | None                                                                                                                  | Perform validations applicable for the specific instance of the data connector.                                       |
 
 ## Properties
 
 | Property    | Type   | Description                                                                                                             |
 | :---------- | :----- | :---------------------------------------------------------------------------------------------------------------------- |
-| displayName | String | Name of the data connector. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md). |
+| displayName | String | The name of the data connector. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md). |
 
 ## Relationships
 
 | Relationship | Type                                                                          | Description                                                                                                                                           |
 | :----------- | :---------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| sourceSystem | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | The sourceSystemDefinition this connector is connected to. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md) |
+| sourceSystem | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md) |
 
 ## JSON representation
 
