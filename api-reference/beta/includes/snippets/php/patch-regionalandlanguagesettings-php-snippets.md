@@ -30,7 +30,7 @@ $defaultRegionalFormat->setLocale('en-US');
 $requestBody->setDefaultRegionalFormat($defaultRegionalFormat);
 
 
-$graphServiceClient->me()->settings()->regionalAndLanguageSettings()->patch($requestBody);
+$requestResult = $graphServiceClient->me()->settings()->regionalAndLanguageSettings()->patch($requestBody);
 
 
 ```

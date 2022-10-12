@@ -1,7 +1,7 @@
 ---
 title: Dismiss riskyUser
 description: Dismiss the risk of a riskyUser object.
-author: cloudhandler
+author: ebasseri
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 ms.date: 03/20/2019

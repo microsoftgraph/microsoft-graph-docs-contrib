@@ -121,7 +121,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "message"
+        "chatMessage"
       ],
       "query": {
         "queryString": "test"
@@ -223,7 +223,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "message"
+        "chatMessage"
       ],
       "query": {
         "queryString": "contoso from:bob to:alice sent>2022-07-14"
