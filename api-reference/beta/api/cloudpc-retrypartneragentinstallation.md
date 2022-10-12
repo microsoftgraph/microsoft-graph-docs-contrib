@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# cloudPC: reprovision
+# cloudPC: retryPartnerAgentInstallation
 
 Namespace: microsoft.graph
 
