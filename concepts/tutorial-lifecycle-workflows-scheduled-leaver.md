@@ -32,7 +32,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 The following request creates an offboarding workflow with the following settings:
 
-+ It can currently be run on-demand but not on schedule. This step will allow us to validate the workflow using the test user's account. The workflow will be updated to run on schedule later on in this tutorial.
++ It can currently be run on-demand but not on schedule. This step will allow us to validate the workflow using the test user's account. The workflow will be updated to run on schedule later in this tutorial.
 + The workflow runs seven days after the employee's employeeLeaveDateTime, and if they are in the "Marketing" department.
 + Three workflow tasks are enabled to run in sequence: the user is unassigned all licenses, then removed from all teams, then their user account is deleted.
 
