@@ -64,7 +64,7 @@ This bundle can be used to share a collection of files with other users without 
 <!-- { "blockType": "request", "name": "create-bundle" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/drive/bundles
+POST https://graph.microsoft.com/v1.0/drive/bundles
 Content-Type: application/json
 
 {
@@ -131,7 +131,7 @@ The request to create a new photo album is similar, although inside the bundle f
 <!-- { "blockType": "request", "name": "create-album" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/drive/bundles
+POST https://graph.microsoft.com/v1.0/drive/bundles
 Content-Type: application/json
 
 {

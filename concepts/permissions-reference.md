@@ -8,7 +8,7 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 # Microsoft Graph permissions reference
 
-For your app to access data in Microsoft Graph, the user or administrator must grant it the correct permissions via a consent process. This topic lists the permissions associated with each major set of Microsoft Graph APIs. It also provides guidance about how to use the permissions.
+For your app to access data in Microsoft Graph, the user or administrator must grant it the correct permissions via a consent process. This topic lists the permissions associated with each major set of Microsoft Graph APIs. It also provides guidance about how to use the permissions. To find the unique identifiers for all permissions, jump to [All permissions and IDs](#all-permissions-and-ids).
 
 [!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
 
@@ -1969,6 +1969,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
+| _Acronym.Read.All_ | Read all acronyms | Allows the app to read all acronyms on behalf of a signed-in user. | No | No |
+| _Bookmark.Read.All_ | Read all bookmarks | Allows the app to read all bookmarks on behalf of a signed-in user. | No | No |
 | _ExternalConnection.Read.All_ | Read all external connections | Allows the app to read all external connections on behalf of a signed-in user. | Yes | No |
 | _ExternalConnection.ReadWrite.All_ | Read and write all external connections | Allows the app to read and write all external connections on behalf of a signed-in user. | Yes | No |
 | _ExternalConnection.ReadWrite.OwnedBy_ | Read and write external connections | Allows the app to read and write external connections on behalf of a signed-in user. The app can only read and write external connections that it is authorized to, or it can create new external connections. | Yes | No |

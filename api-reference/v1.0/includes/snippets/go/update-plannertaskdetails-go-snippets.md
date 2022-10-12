@@ -54,7 +54,7 @@ checklist.Set"a93c93c5-10a6-4167-9551-8bafa09967a7"(&"a93c93c5-10a6-4167-9551-8b
 checklist.SetAdditionalData(additionalData)
 requestBody.SetChecklist(checklist)
 
-graphClient.Planner().TasksById("plannerTask-id").Details().Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Planner().TasksById("plannerTask-id").Details().Patch(context.Background(), requestBody, configuration)
 
 
 ```

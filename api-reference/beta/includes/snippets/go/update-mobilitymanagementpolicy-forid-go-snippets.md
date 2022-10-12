@@ -15,7 +15,7 @@ requestBody.SetDiscoveryUrl(&discoveryUrl)
 termsOfUseUrl := "https://portal.uem.contoso.com/TermsofUse.aspx"
 requestBody.SetTermsOfUseUrl(&termsOfUseUrl) 
 
-graphClient.Policies().MobileDeviceManagementPoliciesById("mobilityManagementPolicy-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().MobileDeviceManagementPoliciesById("mobilityManagementPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

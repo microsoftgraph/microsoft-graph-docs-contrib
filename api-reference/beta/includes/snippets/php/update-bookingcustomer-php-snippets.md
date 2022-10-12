@@ -16,7 +16,7 @@ $requestBody->setEmailAddress('adele@relecloud.com');
 
 
 
-$graphServiceClient->bookingBusinessesById('bookingBusiness-id')->customersById('bookingCustomer-id')->patch($requestBody);
+$requestResult = $graphServiceClient->bookingBusinessesById('bookingBusiness-id')->customersById('bookingCustomer-id')->patch($requestBody);
 
 
 ```
