@@ -68,7 +68,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_get_workflowversion"
+  "name": "lifecycleworkflows_get_workflowversion",
+  "sampleKeys": ["156ce798-1eb6-4e0a-8515-e79f54d04390", "3"]
 }
 -->
 ``` http

@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Graph connectors SDK contracts ConnectorInfo API and models"
+title: "Microsoft Graph connectors SDK (preview) contracts ConnectorInfo API and models"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Learn about the Microsoft Graph connectors SDK contracts ConnectorInfo API and models."
+description: "Learn about the Microsoft Graph connectors SDK (preview) contracts ConnectorInfo API and models."
 ---
 
-# Microsoft Graph connectors SDK ConnectorInfo API and models
+# Microsoft Graph connectors SDK (preview) ConnectorInfo API and models
 
-The Microsoft Graph connectors SDK contracts **ConnectorInfo** API allows you to get information about the connector.
+The Microsoft Graph connectors SDK (preview) contracts **ConnectorInfo** API allows you to get information about the connector.
 
 ## ConnectorInfo API
 
