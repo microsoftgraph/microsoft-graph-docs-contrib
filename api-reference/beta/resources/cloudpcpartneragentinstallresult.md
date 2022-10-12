@@ -1,6 +1,6 @@
 ---
 title: "cloudPcPartnerAgentInstallResult resource type"
-description: "Describe the detail of one partner agent installation result on a cloud pc."
+description: "Describe installation result details for a partner agent on a Cloud PC."
 author: "JannyMa"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describe the detail of one partner agent installation result on a cloud pc.
+Describe installation result details for a partner agent on a Cloud PC.
 
 ## Properties
 
