@@ -113,6 +113,7 @@ The following is a JSON representation of the resource.
   "managedDeviceName": "String",
   "provisioningPolicyId": "String",
   "provisioningPolicyName": "String",
+  "partnerAgentInstallResults": "String",
   "onPremisesConnectionName": "String",
   "servicePlanId": "String",
   "servicePlanType": "String",
