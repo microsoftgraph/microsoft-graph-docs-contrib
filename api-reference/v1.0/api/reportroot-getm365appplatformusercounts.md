@@ -70,12 +70,10 @@ The CSV file has the following headers for columns:
 - Report Refresh Date
 - Report Period
 - Report Date
-- Outlook
-- Word
-- Excel
-- PowerPoint
-- OneNote
-- Teams
+- Windows
+- Mac
+- Web
+- Mobile
 
 ### JSON
 

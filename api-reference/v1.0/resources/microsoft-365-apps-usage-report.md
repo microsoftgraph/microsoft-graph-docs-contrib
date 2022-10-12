@@ -17,8 +17,8 @@ Use the Microsoft 365 Apps usage reports to get insights into the usage of Micro
 
 ## Methods
 
-| Method                                                                        | Return Type | Description                                                |
-|:------------------------------------------------------------------------------|:------------|:-----------------------------------------------------------|
-| [Get user detail](../api/reportroot-getm365appuserdetail.md)                  | Stream      | Get details about the usage of Microsoft 365 Apps by user. |
-| [Get user counts](../api/reportroot-getm365appusercounts.md)                  | Stream      | Get the number of daily unique users by app.               |
-| [Get platform user counts](../api/reportroot-getm365appplatformusercounts.md) | Stream      | Get the number of daily unique users by platform.          |
+| Function                                                                      | CSV return type | JSON return type | Description                                                |
+|:------------------------------------------------------------------------------|:------------|:------------|:-----------------------------------------------------------|
+| [Get user detail](../api/reportroot-getm365appuserdetail.md)                  | Stream      | Stream      | Get details about the usage of Microsoft 365 Apps by user. |
+| [Get user counts](../api/reportroot-getm365appusercounts.md)                  | Stream      | Stream      | Get the number of daily unique users by app.               |
+| [Get platform user counts](../api/reportroot-getm365appplatformusercounts.md) | Stream      | Stream      | Get the number of daily unique users by platform.          |
