@@ -532,7 +532,8 @@ The following example shows how to get a list of [workspace](../resources/worksp
 
 <!-- {
   "blockType": "request",
-  "name": "get_workspaces_in_roomlist"
+  "name": "get_workspaces_in_roomlist",
+  "sampleKeys": ["bldg2@contoso.com"]
 }-->
 
 ```http
