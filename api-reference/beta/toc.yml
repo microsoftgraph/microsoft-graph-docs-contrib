@@ -11895,6 +11895,13 @@ items:
               href: api/subscribedsku-list.md
             - name: Get subscribedSku
               href: api/subscribedsku-get.md
+        - name: On-premises directory synchronization
+          href: resources/onpremisesdirectorysynchronization.md
+          items:
+          - name: Get on-premises directory synchronization
+            href: api/onpremisesdirectorysynchronization-get.md
+          - name: Update on-premises directory synchronization
+            href: api/onpremisesdirectorysynchronization-update.md
         - name: Mobility management policy (Preview)
           href: resources/mobilitymanagementpolicy.md
           items:
