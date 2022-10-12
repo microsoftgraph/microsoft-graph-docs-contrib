@@ -10595,7 +10595,33 @@ items:
             - name: Get
               href: api/windowsupdates-operationalinsightsconnection-get.md
             - name: Delete
-              href: api/windowsupdates-operationalinsightsconnection-delete.md
+              href: api/windowsupdates-resourceconnection-delete.md
+      - name: Monitoring (preview)
+        href: resources/devicemanagement-monitoring.md
+        displayName: Overview
+        items:
+        - name: Alert record
+          href: resources/devicemanagement-alertrecord.md
+          items:
+          - name: List
+            href: api/devicemanagement-alertrecord-list.md
+          - name: Get
+            href: api/devicemanagement-alertrecord-get.md
+          - name: Get portal notifications
+            href: api/devicemanagement-alertrecord-getportalnotifications.md
+          - name: Set portal notification as sent
+            href: api/devicemanagement-alertrecord-setportalnotificationassent.md
+        - name: Alert rule
+          href: resources/devicemanagement-alertrule.md
+          items:
+          - name: List
+            href: api/devicemanagement-alertrule-list.md
+          - name: Create
+            href: api/devicemanagement-alertrule-post.md
+          - name: Get
+            href: api/devicemanagement-alertrule-get.md
+          - name: Update
+            href: api/devicemanagement-alertrule-update.md
       - name: Multi-tenant management (preview)
         items:
         - name: Managed tenant
@@ -14930,7 +14956,7 @@ items:
             href: api/security-incident-get.md
           - name: Update incident
             href: api/security-incident-update.md
-      - name: Attack simulation and training (preview)
+      - name: Attack simulation and training
         items:
         - name: Simulations
           items:
