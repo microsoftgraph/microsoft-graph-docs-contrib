@@ -72,8 +72,8 @@ The CSV file has the following headers for columns:
 - Report Date
 - Windows
 - Mac
-- Web
 - Mobile
+- Web
 
 ### JSON
 
