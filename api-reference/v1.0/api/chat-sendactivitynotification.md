@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|TeamsActivity.Send|
-|Delegated (personal Microsoft account)|Not Supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|TeamsActivity.Send|
 
 ## HTTP request
@@ -66,10 +66,11 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Example 1: Notify a user about a task created in a chat
 
-This example shows how you can send an activity feed notification for a new task created in a chat. For more details, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+The following example shows how you can send an activity feed notification for a new task created in a chat. For more details, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 #### Request
 
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -131,6 +132,9 @@ Content-Type: application/json
 
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false
@@ -145,6 +149,8 @@ HTTP/1.1 204 No Content
 Similar to the previous example, this example uses `entityUrl` for the `topic`. However, in this case, it links to a message in the chat. The message can contain a card with the approval button on it.
 
 #### Request
+
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -206,6 +212,9 @@ Content-Type: application/json
 
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false
@@ -221,6 +230,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 
 #### Request
 
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -283,6 +293,9 @@ Content-Type: application/json
 
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false
@@ -297,6 +310,8 @@ HTTP/1.1 204 No Content
 As shown in the previous examples, you can link to different aspects of the chat. However, if you want to link to an aspect that is not part of the chat, or is not represented by Microsoft Graph, you can set the source of the `topic` to `text` and pass in a custom value for it. Also, `webUrl` is required when setting `topic` source to `text`.
 
 #### Request
+
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -359,6 +374,9 @@ Content-Type: application/json
 
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false
@@ -367,6 +385,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 ## See also
 
 [Notify Feed App C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)

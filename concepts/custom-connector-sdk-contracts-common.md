@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Graph connectors SDK common models"
+title: "Microsoft Graph connectors SDK (preview) common models"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Learn about the common models used in the Microsoft Graph connectors SDK."
+description: "Learn about the common models used in the Microsoft Graph connectors SDK (preview)."
 ---
 
-# Microsoft Graph connectors SDK common models
+# Microsoft Graph connectors SDK (preview) common models
 
-This article describes the common models used in the Microsoft Graph connectors SDK.
+This article describes the common models used in the Microsoft Graph connectors SDK (preview).
 
 ## CustomConfiguration
 

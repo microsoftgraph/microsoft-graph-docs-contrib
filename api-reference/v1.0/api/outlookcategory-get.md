@@ -50,7 +50,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["de912e4d-c790-4da9-949c-ccd933aaa0f7"],
+  "sampleKeys": ["feafe4e8-52ff-488a-817f-cfea7e43ff8b"],
   "name": "get_outlookcategory"
 }-->
 ```msgraph-interactive
