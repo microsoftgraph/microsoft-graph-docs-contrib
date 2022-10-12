@@ -5947,7 +5947,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sendActivityNotificationToRecipients",
           "ChangeType": "Addition",
-          "Description": "Added the [sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/sendActivityNotificationToRecipients?view=graph-rest-v1.0) method to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/teamwork-sendActivityNotificationToRecipients?view=graph-rest-v1.0) method to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
           "Target": "teamwork"
         }
       ],
