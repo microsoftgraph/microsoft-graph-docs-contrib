@@ -77,7 +77,7 @@ The following is an example of a GET request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "get_group"
 }-->
 
@@ -184,7 +184,7 @@ The following is an example of a GET request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "get_group_non_default"
 }-->
 

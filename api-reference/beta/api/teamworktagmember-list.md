@@ -1,7 +1,7 @@
 ---
 title: "List teamworkTagMembers"
 description: "Get a list of teamworkTagMember objects and their properties."
-author: "anniecolonna"
+author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ GET /teams/{team-Id}/tags/{teamworkTag-Id}/members
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|

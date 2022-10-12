@@ -5913,6 +5913,50 @@
       "CreatedDateTime": "2022-10-03T15:04:49.427Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f0bb938f-6606-4da1-8488-5278e6c06f18",
+          "ApiChange": "Method",
+          "ChangedApiName": "setReaction",
+          "ChangeType": "Addition",
+          "Description": "Added the [setReaction](https://learn.microsoft.com/en-us/graph/api/chatmessage-setreaction?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "f0bb938f-6606-4da1-8488-5278e6c06f18",
+          "ApiChange": "Method",
+          "ChangedApiName": "unsetReaction",
+          "ChangeType": "Addition",
+          "Description": "Added the [unsetReaction](https://learn.microsoft.com/en-us/graph/api/chatmessage-unsetreaction?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "f0bb938f-6606-4da1-8488-5278e6c06f18",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "65fc6370-ff92-4df0-9134-da7a8759897a",
+          "ApiChange": "Method",
+          "ChangedApiName": "sendActivityNotificationToRecipients",
+          "ChangeType": "Addition",
+          "Description": "Added the [sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/teamwork-sendActivityNotificationToRecipients?view=graph-rest-v1.0) method to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Target": "teamwork"
+        }
+      ],
+      "Id": "65fc6370-ff92-4df0-9134-da7a8759897a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-10T18:54:16.6879906Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }
