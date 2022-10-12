@@ -29,9 +29,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 |id|String|The unique identifier for the supported region. Read-only.|
 |regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedregionstatus-values)|The status of the supported region. Possible values are: `available`, `restricted`, `unavailable`, `unknownFutureValue`. Read-only.|
 |supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `unknownFutureValue`. Read-only.|
-|regionGroup|[cloudpcRegionGroup](#cloudpcRegionGroup-values)|The logic geographic group this region belongs to. Multiple regions could belong to one region group. Customer could select a regionGroup when provision a CloudPC, 
-the CloudPC will be put under one of the regions under the group based on resource status. e.g. Europe region group contains North Europe and West Europe regions. Possible values are: 'default', 'australia', 'canada', 'usCentral', 'usEast", 
-'usWest', 'france', 'germany', 'europe', 'unitedKingdom', 'japan', 'asia', 'india', 'southAmerica', 'usGovernment' annd 'usGovrnmentDod'. Read-only.|
+|regionGroup|[cloudPcRegionGroup](#cloudpcRegionGroup-values)|The logic geographic group this region belongs to. Multiple regions could belong to one region group. Customer could select a regionGroup when provision a Cloud PC, the Cloud PC will be put under one of the regions under the group based on resource status. e.g. Europe region group contains North Europe and West Europe regions. Possible values are: 'default', 'australia', 'canada', 'usCentral', 'usEast", 'usWest', 'france', 'germany', 'europeUnion', 'unitedKingdom', 'japan', 'asia', 'india', 'southAmerica', 'euap', 'usGovernment', 'usGovernmentDOD', 'unknownFutureValue', 'norway', 'switzerland' and 'southKorea'. Read-only.|
 
 ### cloudPcSupportedRegionStatus values
 
