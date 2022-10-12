@@ -40,7 +40,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 |unavailable|The region has no support for Cloud PC provisioning.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
-### cloudpcRegionGroup values
+### cloudPcRegionGroup values
 
 |Member|Description|
 |:---|:---|
