@@ -40,7 +40,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 |[Get launch info for user](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
-|[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Attempt to re-install party partner agents in a [cloudPC] which were failed to install.|
+|[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Attempt to re-install party partner agents in a [cloudPC](../resources/cloudpc.md) which were failed to install.|
 
 ## Properties
 
