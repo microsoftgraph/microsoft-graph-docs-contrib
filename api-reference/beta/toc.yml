@@ -10476,7 +10476,7 @@ items:
           - name: Get
             href: api/cloudpccrosscloudgovernmentorganizationmapping-get.md
           - name: Create
-            href: api/cloudpccrosscloudgovernmentorganizationmapping-post.md
+            href: api/virtualendpoint-post-crosscloudgovernmentorganizationmapping.md
         - name: Cloud PC external partner setting
           href: resources/cloudpcexternalpartnersetting.md
           items:
