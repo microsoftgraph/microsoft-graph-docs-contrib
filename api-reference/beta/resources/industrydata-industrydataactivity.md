@@ -1,6 +1,6 @@
 ---
 title: "industryDataActivity resource type"
-description: "Base class for all processes that the underlying scheduler executes."
+description: "Represents an abstract base type for all processes that are run by the underlying scheduler."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,15 +13,14 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Base class for all processes that the underlying scheduler executes.
-This is an abstract type.
+Represents an abstract base type for all processes that are run by the underlying scheduler.
 
 ## Properties
 
 | Property        | Type            | Description                                                                                                                                                             |
 | :-------------- | :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName     | String          | Name of the process.                                                                                                                                                    |
-| readinessStatus | readinessStatus | The state of the process from creation through to ready to do work.The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. |
+| displayName     | String          | The name of the process.                                                                                                                                                    |
+| readinessStatus | readinessStatus | The state of the process from creation through to ready to do work. The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. |
 
 ## Relationships
 

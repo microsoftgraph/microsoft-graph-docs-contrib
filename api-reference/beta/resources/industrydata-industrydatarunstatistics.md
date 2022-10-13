@@ -1,6 +1,6 @@
 ---
 title: "industryDataRunStatistics resource type"
-description: "Represents statistics for a single runGroup."
+description: "Represents statistics for a single run group."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents statistics for a single runGroup.
+Represents statistics for a single run group.
 
 ## Properties
 
 | Property           | Type                                                                                                                                  | Description                                                                                                                                                        |
 | :----------------- | :------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| activityStatistics | [microsoft.graph.industryData.industryDataActivityStatistics](../resources/industrydata-industrydataactivitystatistics.md) collection | Collection of stats for each activity included in this run.                                                                                                        |
-| inboundTotals      | [microsoft.graph.industryData.aggregatedInboundStatistics](../resources/industrydata-aggregatedinboundstatistics.md)                  | Aggregate statistics for all inbound flows.                                                                                                                        |
-| runId              | String                                                                                                                                | The Id of the underlying runGroup for the stats.                                                                                                                   |
-| status             | industryDataRunStatus                                                                                                                 | The latest status of the runGroup.The possible values are: `running`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| activityStatistics | [microsoft.graph.industryData.industryDataActivityStatistics](../resources/industrydata-industrydataactivitystatistics.md) collection | The collection of statistics for each activity included in this run.                                                                                                        |
+| inboundTotals      | [microsoft.graph.industryData.aggregatedInboundStatistics](../resources/industrydata-aggregatedinboundstatistics.md)                  | The aggregate statistics for all inbound flows.                                                                                                                        |
+| runId              | String                                                                                                                                | The ID of the underlying run group for the statistics.                                                                                                                   |
+| status             | industryDataRunStatus                                                                                                                 | The latest status of the run group.The possible values are: `running`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
 

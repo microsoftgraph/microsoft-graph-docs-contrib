@@ -1,6 +1,6 @@
 ---
 title: "industryDataRunEntityCountMetric resource type"
-description: "Measure of total, active, and inactive entries for a single entity."
+description: "Represents the measure of total, active, and inactive entries for a single entity."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Measure of total, active, and inactive entries for a single entity.
+Represents the measure of total, active, and inactive entries for a single entity.
 
 ## Properties
 
@@ -40,8 +40,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.industryDataRunEntityCountMetric",
-  "active": "Integer",
-  "inactive": "Integer",
-  "total": "Integer"
+  "active": "Int32",
+  "inactive": "Int32",
+  "total": "Int32"
 }
 ```

@@ -19,8 +19,8 @@ Represents a count of people in a given role.
 
 | Property | Type   | Description                    |
 | :------- | :----- | :----------------------------- |
-| count    | Int32  | Number of people in this role. |
-| role     | String | The role being measured.       |
+| count    | Int32  | The number of people in this role. |
+| role     | String | The role that is being measured.       |
 
 ## Relationships
 
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.industryDataRunRoleCountMetric",
-  "count": "Integer",
+  "count": "Int32",
   "role": "String"
 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: "industryDataRunActivity resource type"
-description: "This entity is the base class for all activity types. Activities provide read-only information about the execution of flows either in the past or currently executing."
+description: "Represents an abstract base type for all activity types."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,13 +13,11 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents read-only information about the execution of flows either in the past or currently executing.
+Represents an abstract base type for all activity types. Activities provide read-only information about the run of flows either in the past or currently running.
 
-This is an abstract type.
+Industry data automates a run every 12 hours. Each of these runs is represented by an [industryDataRun](../resources/industrydata-industrydatarun.md). All flows that are active at the time of the run start are included in the run.
 
-IndustryData automates a run every 12 hours. Each of these executions is represented by **industryDataRun**. All flows that are active at the time of the Run start are included in the Run.
-
-The individual flows are represented by **industryDataRunActivity**.
+Individual flows are represented by this resource.
 
 Status:
 
@@ -41,9 +39,9 @@ Status:
 
 | Property      | Type                                                       | Description                                                                                                                                                                    |
 | :------------ | :--------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| blockingError | [microsoft.graph.publicError](../resources/publicerror.md) | An error object to diagnose critical failures in a activity .                                                                                                                  |
-| displayName   | String                                                     | The name of the flow being executed.                                                                                                                                           |
-| status        | industryDataActivityStatus                                 | Current status of the activity .The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| blockingError | [microsoft.graph.publicError](../resources/publicerror.md) | An error object to diagnose critical failures in an activity.                                                                                                                  |
+| displayName   | String                                                     | The name of the running flow.                                                                                                                                           |
+| status        | industryDataActivityStatus                                 | The current status of the activity. The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
 

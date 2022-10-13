@@ -1,6 +1,6 @@
 ---
 title: "inboundFlowActivity resource type"
-description: "Provides information about the execution of an inboundFlow."
+description: "Represents details about the run of an inbound flow."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides information about the execution of an inboundFlow.
+Represents details about the run of an inbound flow.
 
 Inherits from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md).
 
@@ -21,15 +21,15 @@ Inherits from [industryDataRunActivity](../resources/industrydata-industrydataru
 
 | Property      | Type                                                       | Description                                                                                                                                                                                                                                                                    |
 | :------------ | :--------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| blockingError | [microsoft.graph.publicError](../resources/publicerror.md) | An error object to diagnose critical failures in a activity . Inherited from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md).                                                                                                                  |
-| displayName   | String                                                     | The name of the flow being executed. Inherited from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md).                                                                                                                                           |
-| status        | industryDataActivityStatus                                 | Current status of the activity . Inherited from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md).The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| blockingError | [microsoft.graph.publicError](../resources/publicerror.md) | An error object to diagnose critical failures in an activity. Inherited from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md).                                                                                                                  |
+| displayName   | String                                                     | The name of the running flow. Inherited from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md).                                                                                                                                           |
+| status        | industryDataActivityStatus                                 | The current status of the activity. Inherited from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md). The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
 
 | Relationship | Type                                                                      | Description                                                                                                                     |
 | :----------- | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------ |
-| activity     | [industryDataActivity](../resources/industrydata-industrydataactivity.md) | The flow this activity executed. Inherited from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md) |
+| activity     | [industryDataActivity](../resources/industrydata-industrydataactivity.md) | The flow ran by this activity. Inherited from [industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md). |
 
 ## JSON representation
 

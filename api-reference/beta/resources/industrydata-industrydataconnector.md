@@ -1,6 +1,6 @@
 ---
 title: "industryDataConnector resource type"
-description: "Representation of a way to connect to a data source."
+description: "Represents an abstract type that provides the resources to establish a connection with a data source."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representation of a way to connect to a data source.
-This is an abstract type.
+Represents an abstract type that provides the resources to establish a connection with a data source.
 
 ## Methods
 
@@ -24,20 +23,20 @@ This is an abstract type.
 | [Create industryDataConnector](../api/industrydata-industrydataroot-post-dataconnectors.md)   | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)            | Create a new [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.                                |
 | [Get industryDataConnector](../api/industrydata-industrydataconnector-get.md)                 | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)            | Read the properties and relationships of an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object. |
 | [Update industryDataConnector](../api/industrydata-industrydataconnector-update.md)           | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)            | Update the properties of an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.                 |
-| [Delete industryDataConnector](../api/industrydata-industrydataroot-delete-dataconnectors.md) | None                                                                                                                | Deletes an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.                                  |
-| [validate](../api/industrydata-industrydataconnector-validate.md)                             | None                                                                                                                | Performs validations applicable for the specific instance of the data connector.                                                |
+| [Delete industryDataConnector](../api/industrydata-industrydataroot-delete-dataconnectors.md) | None                                                                                                                | Delete an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.                                  |
+| [validate](../api/industrydata-industrydataconnector-validate.md)                             | None                                                                                                                | Perform validations applicable for the specific instance of the data connector.                                                |
 
 ## Properties
 
 | Property    | Type   | Description                 |
 | :---------- | :----- | :-------------------------- |
-| displayName | String | Name of the data connector. |
+| displayName | String | The name of the data connector. Maximum supported length is 100 characters. |
 
 ## Relationships
 
 | Relationship | Type                                                                          | Description                                                |
 | :----------- | :---------------------------------------------------------------------------- | :--------------------------------------------------------- |
-| sourceSystem | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | The sourceSystemDefinition this connector is connected to. |
+| sourceSystem | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. |
 
 ## JSON representation
 

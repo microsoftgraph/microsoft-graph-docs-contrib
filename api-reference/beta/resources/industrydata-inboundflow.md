@@ -1,6 +1,6 @@
 ---
 title: "inboundFlow resource type"
-description: "Abstract base type for all flows bring data into the canonical store."
+description: "Represents an abstract base type for all flows that bring data into the canonical store in the Azure Data Lake."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type for all flows bring data into the canonical store in the Data Lake.
-
-This is an abstract type.
+Represents an abstract base type for all flows that bring data into the canonical store in the Azure Data Lake.
 
 Inherits from [industryDataActivity](../resources/industrydata-industrydataactivity.md).
 
@@ -39,23 +37,23 @@ By default, your Inbound Flow will activate twice (2x) daily, see [IndustryDataR
 | [Create inboundFlow](../api/industrydata-industrydataroot-post-inboundflows.md)   | [microsoft.graph.industryData.inboundFlow](../resources/industrydata-inboundflow.md)            | Create a new [inboundFlow](../resources/industrydata-inboundflow.md) object.                                |
 | [Get inboundFlow](../api/industrydata-inboundflow-get.md)                         | [microsoft.graph.industryData.inboundFlow](../resources/industrydata-inboundflow.md)            | Read the properties and relationships of an [inboundFlow](../resources/industrydata-inboundflow.md) object. |
 | [Update inboundFlow](../api/industrydata-inboundflow-update.md)                   | [microsoft.graph.industryData.inboundFlow](../resources/industrydata-inboundflow.md)            | Update the properties of an [inboundFlow](../resources/industrydata-inboundflow.md) object.                 |
-| [Delete inboundFlow](../api/industrydata-industrydataroot-delete-inboundflows.md) | None                                                                                            | Deletes an [inboundFlow](../resources/industrydata-inboundflow.md) object.                                  |
+| [Delete inboundFlow](../api/industrydata-industrydataroot-delete-inboundflows.md) | None                                                                                            | Delete an [inboundFlow](../resources/industrydata-inboundflow.md) object.                                  |
 
 ## Properties
 
 | Property           | Type            | Description                                                                                                                                                                                                                                                       |
 | :----------------- | :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dataDomain         | inboundDomain   | The broad category of data that is being imported by this flow.The possible values are: `educationRostering`, `unknownFutureValue`.                                                                                                                               |
-| displayName        | String          | Name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md).                                                                                                                                                    |
-| effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. ISO 8601 format.                                                                                                                                                                                    |
-| expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. ISO 8601 format.                                                                                                                                                                                      |
+| dataDomain         | inboundDomain   | The broad category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`.                                                                                                                               |
+| displayName        | String          | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md).                                                                                                                                                    |
+| effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.                                                                                                                                                                                    |
+| expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.                                                                                                                                                                                      |
 | readinessStatus    | readinessStatus | The state of the process from creation through to ready to do work. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md).The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. |
 
 ## Relationships
 
 | Relationship  | Type                                                                              | Description                                                                                 |
 | :------------ | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| dataConnector | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system |
+| dataConnector | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system.|
 | year          | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. ISO-8601 4-digit year.    |
 
 ## JSON representation

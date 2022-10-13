@@ -1,6 +1,6 @@
 ---
 title: "industryDataActivityStatistics resource type"
-description: "Represents statistics for a single activity within the runGroup."
+description: "Represents an abstract base type for statistics for a single activity within a run group."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,16 +13,15 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents statistics for a single activity within the runGroup.
-This is an abstract type.
+Represents an abstract base type for statistics for a single activity within a run group.
 
 ## Properties
 
 | Property    | Type                       | Description                                                                                                                                                                                      |
 | :---------- | :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | activityId  | String                     | The identifier for the activity that is being reported on.                                                                                                                                       |
-| displayName | String                     | The displayName of the underlying flow.                                                                                                                                                          |
-| status      | industryDataActivityStatus | The latest status of the activity in the runGroup.The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| displayName | String                     | The display name of the underlying flow.                                                                                                                                                          |
+| status      | industryDataActivityStatus | The latest status of the activity in the run group. The possible values are: `inProgress`, `skipped`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
 
