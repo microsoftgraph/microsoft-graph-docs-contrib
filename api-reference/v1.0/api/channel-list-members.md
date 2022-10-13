@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [conversationMembers](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
+This method supports federation. Only the user who is part of shared channel can retrieve channel member list.
+
 > [!NOTE]
 > The membership IDs returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
 >
@@ -27,8 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|ChannelMember.Read.All, ChannelMember.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|ChannelMember.Read.All, ChannelMember.ReadWrite.All |
-
-> **Note**: This API supports federation. To access shared channel members, request must be made on behalf of the user who is part of the shared channel.
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->

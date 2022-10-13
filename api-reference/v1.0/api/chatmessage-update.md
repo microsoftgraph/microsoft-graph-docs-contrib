@@ -33,8 +33,6 @@ The update only works for chats where members are Microsoft Teams users. If one 
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Chat.UpdatePolicyViolation.All, Chat.ReadWrite.All |
 
-> **Note**: Chat message sender tenant id must match with caller application tenant id. Chat message sender is not required to be current member of the chat.
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

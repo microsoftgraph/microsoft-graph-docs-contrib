@@ -40,8 +40,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Chat.UpdatePolicyViolation.All, Chat.ReadWrite.All |
 
-> **Note**: Chat message sender tenant id must match with caller application tenant id. Chat message sender is not required to be current member of the chat.
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

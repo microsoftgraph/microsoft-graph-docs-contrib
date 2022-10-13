@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the list of [messages](../resources/chatmessage.md) in a [chat](../resources/chat.md).
 
+This method supports federation. To list chat messages in application context, request must be made from tenant which owns the chat (represented by `tenantId` property on the chat).
+
 > **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
 
 ## Permissions
@@ -27,8 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
-
-> **Note**: To list chat messages in application context, request must be made from tenant which owns the chat.
 
 ## HTTP request
 

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a single [chat](../resources/chat.md) (without its messages).
 
+This method supports federation. To access chat, at least one chat member must be part of the request initiator tenant.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,8 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
-
-> **Note**: This API supports federation. To access chat, at least one chat member must be part of the caller tenant.
 
 ## HTTP request
 

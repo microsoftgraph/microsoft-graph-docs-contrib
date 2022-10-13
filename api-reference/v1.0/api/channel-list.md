@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Retrieve the list of [channels](../resources/channel.md) in this [team](../resources/team.md).
 
+This method supports federation. Any shared channel, which request initiator tenant is part of, will be included in the response.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,8 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
-
-> **Note**: This API supports federation. Any shared channels, which current tenant user is part of, will be included in the response.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
