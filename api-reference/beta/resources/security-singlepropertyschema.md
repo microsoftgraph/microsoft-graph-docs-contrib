@@ -9,11 +9,11 @@ doc_type: resourcePageType
 
 # singlePropertySchema resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The schema of one property in the results of running an [advanced hunting query](../api/security-runhuntingquery.md).
+The schema of one property in the results of running an [advanced hunting query](../api/security-security-runhuntingquery.md).
 
 ## Properties
 |Property|Type|Description|
@@ -25,7 +25,7 @@ The schema of one property in the results of running an [advanced hunting query]
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.singlePropertySchema"
+  "@odata.type": "microsoft.graph.security.singlePropertySchema"
 }
 -->
 ``` json

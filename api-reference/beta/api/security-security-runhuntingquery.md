@@ -8,7 +8,7 @@ doc_type: apiPageType
 ---
 
 # security: runHuntingQuery
-Namespace: microsoft.graph
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,15 +49,7 @@ POST /security/runHuntingQuery
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
-
-The following table shows the parameters that can be used with this action.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|query|String|The hunting query in KQL language.|
-
-
+The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference).
 
 ## Response
 
@@ -92,7 +84,7 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.huntingQueryResults"
+  "@odata.type": "microsoft.graph.security.huntingQueryResults"
 }
 -->
 

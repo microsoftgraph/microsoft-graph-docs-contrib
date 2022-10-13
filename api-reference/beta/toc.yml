@@ -14918,16 +14918,6 @@ items:
             href: resources/security-urlEvidence.md
           - name: User evidence
             href: resources/security-userEvidence.md
-        - name: Hunting
-          items:
-          - name: Run hunting query
-            href: api/security-runhuntingquery.md
-          - name: Hunting query results
-            href: resources/security-huntingqueryresults.md
-          - name: Hunting row result
-            href: resources/security-huntingrowresult.md   
-          - name: Single property schema
-            href: resources/security-singlepropertyschema.md
         - name: Incident
           items:
           - name: Incident
@@ -15218,6 +15208,16 @@ items:
             href: api/security-ediscoverycase-delete-tags.md
           - name: List tags as hierarchy
             href: api/security-ediscoveryreviewtag-ashierarchy.md
+      - name: Advanced hunting (preview)
+        items:
+        - name: Run hunting query
+          href: api/security-security-runhuntingquery.md
+        - name: Hunting query results
+          href: resources/security-huntingqueryresults.md
+        - name: Hunting row result
+          href: resources/security-huntingrowresult.md
+        - name: Single property schema
+          href: resources/security-singlepropertyschema.md
       - name: Information protection
         items:
         - name: Labels (deprecated)

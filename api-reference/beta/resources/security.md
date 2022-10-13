@@ -18,7 +18,7 @@ Connects Microsoft security products, services, and partners to streamline secur
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[runHuntingQuery](../api/security-runhuntingquery.md)|[microsoft.graph.security.huntingQueryResults](../resources/security-huntingqueryresults.md)|Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.|
+|[runHuntingQuery](../api/security-security-runhuntingquery.md)|[microsoft.graph.security.huntingQueryResults](../resources/security-huntingqueryresults.md)|Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.|
 
 ## Properties
 None.

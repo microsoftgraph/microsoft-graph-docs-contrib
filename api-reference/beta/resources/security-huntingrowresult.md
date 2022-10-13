@@ -9,21 +9,20 @@ doc_type: resourcePageType
 
 # huntingRowResult resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a row of the [results](../resources/security-huntingqueryresults.md) from running an [advanced hunting query](../api/security-runhuntingquery.md).
+Represents a row of the [results](../resources/security-huntingqueryresults.md) from running an [advanced hunting query](../api/security-security-runhuntingquery.md).
 
-This is an open type. The exact columns in the query row result are specified in the `project` function of the KQL query, as part of the request body of [runHuntingQuery](../api/security-runhuntingquery.md).
-This class is a Dictionary of string, object.
+The content of the results is depended on the submitted KQL query, see [KQL quick reference](/azure/data-explorer/kql-quick-reference).
 
 
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.huntingRowResult",
+  "@odata.type": "microsoft.graph.security.huntingRowResult",
   "openType": true
 }
 -->
