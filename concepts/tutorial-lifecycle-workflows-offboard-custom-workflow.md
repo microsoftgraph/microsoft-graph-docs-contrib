@@ -1,14 +1,14 @@
 ---
-title: "Execute employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs"
-description: "Execute employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs in Microsoft Graph."
+title: "Complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs"
+description: "Learn how to complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs in Microsoft Graph."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 
-# Execute employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs
+# Complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs
 
-This tutorial provides a step-by-step guide on how to execute a real-time employee termination with Lifecycle Workflows using Microsoft Graph.
+This tutorial provides step-by-step guidance for completing a real-time employee termination with Lifecycle Workflows using Microsoft Graph.
 
 This post off-boarding scenario will run a workflow on-demand and accomplish the following tasks:
 
