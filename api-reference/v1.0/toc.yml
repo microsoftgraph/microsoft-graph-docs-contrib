@@ -6351,6 +6351,15 @@ items:
             href: api/reportroot-getoffice365activeusercounts.md
           - name: Get services user counts
             href: api/reportroot-getoffice365servicesusercounts.md
+        - name: Microsoft 365 Apps usage
+          href: resources/microsoft-365-apps-usage-report.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getm365appuserdetail.md
+          - name: Get user counts
+            href: api/reportroot-getm365appusercounts.md
+          - name: Get platform user counts
+            href: api/reportroot-getm365appplatformusercounts.md
         - name: Microsoft 365 groups activity
           href: resources/office-365-groups-activity-reports.md
           items:
