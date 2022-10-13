@@ -302,7 +302,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request. Because the **category** can be one of `joiner`, `joiner,leaver`, or `leaver`, the request must match categories that are `joiner` or `joiner,leaver` to retrieve all tasks supported for "joiner" workflows.
+The following is an example of a request. Because the **category** is a flagged enumeration that can be one of `joiner`, `joiner,leaver`, or `leaver`, the `has` operator checks tasks where the category includes "joiner".
 
 
 # [HTTP](#tab/http)
@@ -312,7 +312,7 @@ The following is an example of a request. Because the **category** can be one of
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions?$filter=category eq 'joiner,leaver' OR category eq 'joiner'
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions?$filter=category has 'joiner'
 ```
 
 # [C#](#tab/csharp)
