@@ -15,7 +15,7 @@ configuration := &graphconfig.UnifiedRoleAssignmentScheduleRequestRequestBuilder
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequestsById("unifiedRoleAssignmentScheduleRequest-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequestsById("unifiedRoleAssignmentScheduleRequest-id").Get(context.Background(), configuration)
 
 
 ```

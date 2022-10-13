@@ -64,7 +64,7 @@ The following is an example of the request to get the list of [sessions](../reso
   "name": "get_callrecord_sessions"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions
 ```
 
@@ -187,7 +187,7 @@ The following is an example of the request to get the list of [sessions](../reso
   "name": "get_callrecord_sessions_expanded"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions?$expand=segments
 ```
 

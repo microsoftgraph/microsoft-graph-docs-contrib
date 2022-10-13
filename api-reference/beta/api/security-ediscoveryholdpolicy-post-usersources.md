@@ -62,7 +62,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_usersource_from_"
+  "name": "create_usersource_and_include_sources"
 }
 -->
 ``` http
@@ -76,23 +76,27 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-usersource-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-usersource-and-include-sources-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-usersource-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-usersource-and-include-sources-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-usersource-and-include-sources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-usersource-from--go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-usersource-and-include-sources-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-usersource-and-include-sources-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-usersource-from--php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/create-usersource-and-include-sources-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

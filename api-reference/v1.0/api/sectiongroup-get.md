@@ -53,7 +53,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_sectiongroup"
+  "name": "get_sectiongroup",
+  "sampleKeys": ["1-0b13154b-d92d-46c3-b18b-838c4c9fb88d"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/1-0b13154b-d92d-46c3-b18b-838c4c9fb88d

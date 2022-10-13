@@ -16,39 +16,36 @@ configuration := &graphconfig.FindMeetingTimesRequestBuilderPostRequestConfigura
 requestBody := graphmodels.NewFindMeetingTimesPostRequestBody()
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"type" : "required", 
-emailAddress := graphmodels.New()
+attendeeBase := graphmodels.NewAttendeeBase()
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendeeBase.SetType(&type) 
+emailAddress := graphmodels.NewEmailAddress()
 name := "Alex Wilbur"
 emailAddress.SetName(&name) 
 address := "alexw@contoso.onmicrosoft.com"
 emailAddress.SetAddress(&address) 
-	.SetEmailAddress(emailAddress)
-}
-.SetAdditionalData(additionalData)
+attendeeBase.SetEmailAddress(emailAddress)
 
 attendees := []graphmodels.Objectable {
-	,
+	attendeeBase,
 
 }
 requestBody.SetAttendees(attendees)
 locationConstraint := graphmodels.NewLocationConstraint()
-isRequired := "false"
+isRequired := false
 locationConstraint.SetIsRequired(&isRequired) 
-suggestLocation := "false"
+suggestLocation := false
 locationConstraint.SetSuggestLocation(&suggestLocation) 
 
 
- := graphmodels.New()
-additionalData := map[string]interface{}{
-	"resolveAvailability" : "false", 
-	"displayName" : "Conf room Hood", 
-}
-.SetAdditionalData(additionalData)
+locationConstraintItem := graphmodels.NewLocationConstraintItem()
+resolveAvailability := false
+locationConstraintItem.SetResolveAvailability(&resolveAvailability) 
+displayName := "Conf room Hood"
+locationConstraintItem.SetDisplayName(&displayName) 
 
 locations := []graphmodels.Objectable {
-	,
+	locationConstraintItem,
 
 }
 locationConstraint.SetLocations(locations)
@@ -78,16 +75,16 @@ timeSlots := []graphmodels.TimeSlotable {
 }
 timeConstraint.SetTimeSlots(timeSlots)
 requestBody.SetTimeConstraint(timeConstraint)
-isOrganizerOptional := "false"
+isOrganizerOptional := false
 requestBody.SetIsOrganizerOptional(&isOrganizerOptional) 
-meetingDuration := "PT1H"
+meetingDuration , err := abstractions.ParseISODuration("PT1H")
 requestBody.SetMeetingDuration(&meetingDuration) 
-returnSuggestionReasons := "true"
+returnSuggestionReasons := true
 requestBody.SetReturnSuggestionReasons(&returnSuggestionReasons) 
-minimumAttendeePercentage := graphmodels.100_ 
+minimumAttendeePercentage := "100"
 requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage) 
 
-result, err := graphClient.Me().FindMeetingTimes().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Me().FindMeetingTimes().Post(context.Background(), requestBody, configuration)
 
 
 ```

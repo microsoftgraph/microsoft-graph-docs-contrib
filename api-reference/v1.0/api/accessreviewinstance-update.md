@@ -1,7 +1,7 @@
 ---
 title: "Update accessReviewInstance"
 description: "Update the properties of an accessReviewInstance object."
-author: "zhusijia26"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

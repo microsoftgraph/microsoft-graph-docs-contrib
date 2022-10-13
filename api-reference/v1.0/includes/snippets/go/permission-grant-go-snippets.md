@@ -23,13 +23,13 @@ recipients := []graphmodels.DriveRecipientable {
 
 }
 requestBody.SetRecipients(recipients)
-roles := []String {
+roles := []string {
 	"read",
 
 }
 requestBody.SetRoles(roles)
 
-result, err := graphClient.SharesById("sharedDriveItem-id").Permission().Grant(sharedDriveItem-id).Post(requestBody)
+result, err := graphClient.SharesById("sharedDriveItem-id").Permission().Grant().Post(context.Background(), requestBody, nil)
 
 
 ```

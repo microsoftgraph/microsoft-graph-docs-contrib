@@ -58,7 +58,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_historyItem"
+  "name": "delete_historyItem",
+  "sampleKeys": ["13881113971988980728", "390e06e2-7e5b-4133-8014-fac7ac5991af"]
 }-->
 
 ```http

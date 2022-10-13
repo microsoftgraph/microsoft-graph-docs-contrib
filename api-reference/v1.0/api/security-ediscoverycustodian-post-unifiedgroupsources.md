@@ -65,11 +65,11 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedgroupsource_from_"
+  "name": "create_unifiedgroupsource_caseID_custodian"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/unifiedGroupSources
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/unifiedGroupSources
 Content-Type: application/json
 
 {
@@ -81,27 +81,27 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedgroupsource-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedgroupsource-caseid-custodian-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedgroupsource-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedgroupsource-caseid-custodian-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-caseid-custodian-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-from--go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-caseid-custodian-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedgroupsource-from--powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedgroupsource-caseid-custodian-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-unifiedgroupsource-from--php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/create-unifiedgroupsource-caseid-custodian-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -150,11 +150,11 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedgroupsource_from_"
+  "name": "create_unifiedgroupsource_with_groupodatabind"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/unifiedGroupSources
+POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/unifiedGroupSources
 Content-Type: application/json
 
 {
@@ -164,27 +164,27 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedgroupsource-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedgroupsource-with-groupodatabind-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedgroupsource-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedgroupsource-with-groupodatabind-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-with-groupodatabind-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-from--go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-with-groupodatabind-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedgroupsource-from--powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedgroupsource-with-groupodatabind-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-unifiedgroupsource-from--php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/create-unifiedgroupsource-with-groupodatabind-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

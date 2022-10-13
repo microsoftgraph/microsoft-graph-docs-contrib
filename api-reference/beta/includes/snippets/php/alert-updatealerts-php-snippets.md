@@ -10,39 +10,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new UpdateAlertsPostRequestBody();
-$value1 = new ();
+$valueAlert1 = new Alert();
+$valueAlert1->setAssignedTo('String');
+
+$valueAlert1->setClosedDateTime(new DateTime('String (timestamp)'));
+
+$valueAlert1->setComments(['String', ]);
+
+$valueAlert1Feedback = new AlertFeedback();
 $additionalData = [
-'assignedTo' => 'String', 
-'closedDateTime' => 'String (timestamp)', 
-'comments' => ['String', ],
-'feedback' => $value1 = new ();
-$	value1->set@odatatype('microsoft.graph.alertFeedback');
-
-
-$value1->setFeedback($feedback);
-
-'id' => 'String (identifier)', 
-'status' => $value1 = new ();
-$	value1->set@odatatype('microsoft.graph.alertStatus');
-
-
-$value1->setStatus($status);
-
-'tags' => ['String', ],
-'vendorInformation' => $value1 = new ();
-$value1->setProvider('String');
-
-$value1->setVendor('String');
-
-
-$value1->setVendorInformation($vendorInformation);
-
+'@odata.type' => 'microsoft.graph.alertFeedback', 
 ];
-$value1->setAdditionalData($additionalData);
+$valueAlert1Feedback->setAdditionalData($additionalData);
 
 
 
-$valueArray []= $value1;
+$valueAlert1->setFeedback($valueAlert1Feedback);
+$valueAlert1->setId('String (identifier)');
+
+$valueAlert1Status = new AlertStatus();
+$additionalData = [
+'@odata.type' => 'microsoft.graph.alertStatus', 
+];
+$valueAlert1Status->setAdditionalData($additionalData);
+
+
+
+$valueAlert1->setStatus($valueAlert1Status);
+$valueAlert1->setTags(['String', ]);
+
+$valueAlert1VendorInformation = new SecurityVendorInformation();
+$valueAlert1VendorInformation->setProvider('String');
+
+$valueAlert1VendorInformation->setVendor('String');
+
+
+$valueAlert1->setVendorInformation($valueAlert1VendorInformation);
+
+$valueArray []= $valueAlert1;
 $requestBody->setValue($valueArray);
 
 

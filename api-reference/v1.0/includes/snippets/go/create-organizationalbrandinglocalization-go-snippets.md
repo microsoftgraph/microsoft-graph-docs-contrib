@@ -15,7 +15,7 @@ requestBody.SetId(&id)
 signInPageText := " "
 requestBody.SetSignInPageText(&signInPageText) 
 
-result, err := graphClient.OrganizationById("organization-id").Branding().Localizations().Post(requestBody)
+result, err := graphClient.OrganizationById("organization-id").Branding().Localizations().Post(context.Background(), requestBody, nil)
 
 
 ```

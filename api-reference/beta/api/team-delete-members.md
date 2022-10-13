@@ -52,7 +52,8 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_members_from_team"
+  "name": "delete_members_from_team",
+  "sampleKeys": ["ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062", "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk="]
 }
 -->
 ``` http

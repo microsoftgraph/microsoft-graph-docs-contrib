@@ -86,7 +86,7 @@ Here is an example of the request to retrieve a shared item:
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
@@ -154,7 +154,7 @@ By requesting the **driveItem** relationship, the **DriveItem** that was shared 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem
 ```
 
@@ -212,7 +212,7 @@ By requesting the **driveItem** relationship and expanding the **children** coll
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 

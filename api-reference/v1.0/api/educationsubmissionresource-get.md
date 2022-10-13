@@ -1,7 +1,7 @@
 ---
 title: "Get educationSubmissionResource"
 description: "Retrieve the properties of a specific resource associated with the submission."
-author: "sharad-sharma-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -29,8 +29,11 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submission-id}/resources/{resource-id}
 ```
+
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 | Header       | Value |
@@ -53,7 +56,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationWordResource"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/6546fe9a-48d9-4775-8de9-cdb2b078fde4
 ```
 
@@ -138,7 +141,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationFileResource"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/33cf3eb2-8a35-4f76-8f16-b2abc112d44f
 ```
 
@@ -222,7 +225,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationExcelResource"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/c36626ba-9864-4f3a-8d6f-7104f62df605
 ```
 
@@ -306,7 +309,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationPowerPointResource"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/e19bd829-17ee-4483-88d0-f62b406f367c
 ```
 
@@ -390,7 +393,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationLinkResource"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/c9169e8f-f096-4876-8675-7dee248af635
 ```
 
@@ -474,7 +477,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationMediaResource"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/31f2c67a-6df1-4a7f-b4c5-311fe15c873a
 ```
 

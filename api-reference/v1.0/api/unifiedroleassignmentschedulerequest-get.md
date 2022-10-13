@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleA
   "name": "get_unifiedroleassignmentschedulerequest"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/95c690fb-3eb3-4942-a03f-4524aed6f31e
 ```
 
@@ -150,7 +150,7 @@ Content-Type: application/json
   "name": "get_unifiedroleassignmentschedulerequest_expand_relationships"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/95c690fb-3eb3-4942-a03f-4524aed6f31e?$select=principalId,action,roleDefinitionId&$expand=roleDefinition,activatedUsing,principal,targetSchedule
 ```
 

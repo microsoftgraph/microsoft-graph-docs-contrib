@@ -1,7 +1,7 @@
 ---
 title: "Get user"
 description: "Read properties and relationships of the user object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [user](../resources/intune-shared-user.md) object.
 
-## Prerequisites
+## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).  The specific permission depends on the context.
 
@@ -90,6 +90,8 @@ Content-Length: 118
   }
 }
 ```
+
+
 
 
 

@@ -14,7 +14,7 @@ const cancel = {
   cancellationMessage: 'Your appointment has been successfully cancelled. Please call us again.'
 };
 
-await client.api('/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel')
+await client.api('/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKoAAA=/cancel')
 	.version('beta')
 	.post(cancel);
 

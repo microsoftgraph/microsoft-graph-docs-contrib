@@ -1,7 +1,7 @@
 ---
 title: "List submissions"
 description: "List all the submissions associated with an assignment."
-author: "sharad-sharma-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -31,7 +31,9 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ```
 
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$filter`,'$top', and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 The following are the available `$expand` options for this method: `outcomes`, `resources`, `submittedResources`, and `*`, which includes all the previous options.
 
@@ -59,7 +61,7 @@ The following is an example of the request.
   "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","3c77de7f-539b-49e1-9c96-1274f2f0ee3b"],
   "name": "get_submissions"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions
 ```
 
@@ -158,7 +160,7 @@ The following is an example of the request.
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","efcdf80b-a5de-42ac-8579-e40b0223d48b"],
   "name": "get_submissions_expand"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/efcdf80b-a5de-42ac-8579-e40b0223d48b/submissions?$expand=outcomes
 ```
 

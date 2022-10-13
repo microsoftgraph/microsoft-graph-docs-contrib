@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAuthorizationPolicy()
-permissionGrantPolicyIdsAssignedToDefaultUserRole := []String {
+permissionGrantPolicyIdsAssignedToDefaultUserRole := []string {
 	"managePermissionGrantsForSelf.microsoft-user-default-low",
 
 }
 requestBody.SetPermissionGrantPolicyIdsAssignedToDefaultUserRole(permissionGrantPolicyIdsAssignedToDefaultUserRole)
 
-graphClient.Policies().AuthorizationPolicyById("authorizationPolicy-id").Patch(requestBody)
+result, err := graphClient.Policies().AuthorizationPolicyById("authorizationPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

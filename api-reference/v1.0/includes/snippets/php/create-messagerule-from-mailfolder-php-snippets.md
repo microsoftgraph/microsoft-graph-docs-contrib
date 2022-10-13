@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new MessageRule();
 $requestBody->setDisplayName('From partner');
 
-$requestBody->setSequence(sequence);
+$requestBody->setSequence(2);
 
 $requestBody->setIsEnabled(true);
 

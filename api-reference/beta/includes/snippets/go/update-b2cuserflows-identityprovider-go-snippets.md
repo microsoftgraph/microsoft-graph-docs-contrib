@@ -11,7 +11,7 @@ requestBody := graphmodels.NewReferenceCreate()
 "@odata.id" := "https://graph.microsoft.com/beta/identityProviders/{id}"
 requestBody.Set"@odata.id"(&"@odata.id") 
 
-graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").IdentityProviders().$ref().Post(requestBody)
+graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").IdentityProviders().$ref().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -61,7 +61,7 @@ The following examples demonstrate how to update properties of the [workbookRang
 
 The result of this set of requests is a table with three cells formatted like the top three cells in the image below.
 
-![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/ExcelRangeFormatting.png)
+![Excel chart table with three cells whose format, fill, and font properties have been updated.](/graph/concepts/images/ExcelRangeFormatting.png)
 
 ##### Request
 This request updates the vertical alignment, row height, and column height of the first cell. 
@@ -70,7 +70,8 @@ This request updates the vertical alignment, row height, and column height of th
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat"
+  "name": "update_rangeformat",
+  "sampleKeys": ["Sheet1"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format
@@ -125,7 +126,8 @@ This request updates the font style, size, and color of the first cell.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_font"
+  "name": "update_rangeformat_font",
+  "sampleKeys": ["Sheet1"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/font
@@ -180,7 +182,8 @@ This request updates the background color of the first cell.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_fill"
+  "name": "update_rangeformat_fill",
+  "sampleKeys": ["Sheet1"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/fill
@@ -227,7 +230,8 @@ This request updates the vertical alignment, horizontal alignment, row height, a
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_two"
+  "name": "update_rangeformat_two",
+  "sampleKeys": ["Sheet1"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format
@@ -283,7 +287,8 @@ This request updates the font style and size of the second cell.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_font_two"
+  "name": "update_rangeformat_font_two",
+  "sampleKeys": ["Sheet1"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/font
@@ -337,7 +342,8 @@ This request updates the background color of the second cell.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_fill_two"
+  "name": "update_rangeformat_fill_two",
+  "sampleKeys": ["Sheet1"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/fill
@@ -385,7 +391,8 @@ This request updates the horizontal alignment, vertical alignment, row height, a
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_three"
+  "name": "update_rangeformat_three",
+  "sampleKeys": ["Sheet1"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format
@@ -441,7 +448,8 @@ This request updates the font style, size, and color of the third cell. Note tha
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_font_three"
+  "name": "update_rangeformat_font_three",
+  "sampleKeys": ["Sheet1"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/font
@@ -496,7 +504,8 @@ This request updates the background color of the third cell.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_fill_three"
+  "name": "update_rangeformat_fill_three",
+  "sampleKeys": ["Sheet1"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/fill

@@ -51,7 +51,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_plannertaskdetails"
+  "name": "get_plannertaskdetails",
+  "sampleKeys": ["gcrYAaAkgU2EQUvpkNNXLGQAGTtu"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
@@ -97,6 +98,10 @@ Content-type: application/json
 
 {
   "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",
+  "notes": {
+    "content": "<div style=\"white-space:pre-wrap\">Task details properties:\nchecklist:Sub items\nreferences:Related links</div>",
+    "contentType": "html"
+  },
   "previewType": "automatic",
   "references": {
     "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer": {

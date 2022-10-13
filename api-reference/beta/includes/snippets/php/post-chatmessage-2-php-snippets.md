@@ -18,11 +18,11 @@ $body->setContent('Hello World <at id=\"0\">Jane Smith</at>');
 
 $requestBody->setBody($body);
 $mentionsChatMessageMention1 = new ChatMessageMention();
-$mentionsChatMessageMention1->setId(id);
+$mentionsChatMessageMention1->setId(0);
 
 $mentionsChatMessageMention1->setMentionText('Jane Smith');
 
-$mentionsChatMessageMention1Mentioned = new Mentioned();
+$mentionsChatMessageMention1Mentioned = new ChatMessageMentionedIdentitySet();
 $mentionsChatMessageMention1MentionedUser = new Identity();
 $mentionsChatMessageMention1MentionedUser->setDisplayName('Jane Smith');
 

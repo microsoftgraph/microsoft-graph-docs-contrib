@@ -8,15 +8,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUser()
-businessPhones := []String {
+businessPhones := []string {
 	"+1 425 555 0109",
 
 }
 requestBody.SetBusinessPhones(businessPhones)
 officeLocation := "18/2111"
 requestBody.SetOfficeLocation(&officeLocation) 
+authorizationInfo := graphmodels.NewAuthorizationInfo()
+certificateUserIds := []string {
+	"5432109876543210@mil",
 
-graphClient.UsersById("user-id").Patch(requestBody)
+}
+authorizationInfo.SetCertificateUserIds(certificateUserIds)
+requestBody.SetAuthorizationInfo(authorizationInfo)
+
+result, err := graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1235
+Content-Length: 1265
 
 {
   "value": [
@@ -88,6 +88,7 @@ Content-Length: 1235
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "configureWifi": true,
       "wifiSsid": "Wifi Ssid value",
       "wifiPassword": "Wifi Password value",
       "wifiSecurityType": "wpa",
@@ -96,6 +97,7 @@ Content-Length: 1235
   ]
 }
 ```
+
 
 
 

@@ -62,7 +62,8 @@ If successful, this method returns a `200 OK` response code and [oAuth2Permissio
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_oAuth2Permissiongrant"
+  "name": "get_oAuth2Permissiongrant",
+  "sampleKeys": ["QVzct6doFkStXRSoh_HGZcTUnzAfhaVGjK7Cv0gMgUsj54JH9PTzSqduJeO6sNiW"]
 }-->
 
 ```msgraph-interactive

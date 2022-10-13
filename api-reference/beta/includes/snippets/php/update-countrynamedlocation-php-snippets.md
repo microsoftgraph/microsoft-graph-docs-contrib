@@ -23,7 +23,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->identity()->conditionalAccess()->namedLocationsById('namedLocation-id')->patch($requestBody);
+$requestResult = $graphServiceClient->identity()->conditionalAccess()->namedLocationsById('namedLocation-id')->patch($requestBody);
 
 
 ```

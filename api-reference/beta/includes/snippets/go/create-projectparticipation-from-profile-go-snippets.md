@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewProjectParticipation()
-categories := []String {
+categories := []string {
 	"Branding",
 
 }
@@ -42,7 +42,7 @@ summary := "A 6 month project to help Contoso rebrand after they were divested f
 detail.SetSummary(&summary) 
 requestBody.SetDetail(detail)
 
-result, err := graphClient.Me().Profile().Projects().Post(requestBody)
+result, err := graphClient.Me().Profile().Projects().Post(context.Background(), requestBody, nil)
 
 
 ```

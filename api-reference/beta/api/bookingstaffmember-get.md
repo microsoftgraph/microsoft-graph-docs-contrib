@@ -55,10 +55,11 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_bookingstaffmember"
+  "name": "get_bookingstaffmember",
+  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "71d64d0e-7225-49b6-b0b1-070d476cda51"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
+GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
 ```
 
 # [C#](#tab/csharp)

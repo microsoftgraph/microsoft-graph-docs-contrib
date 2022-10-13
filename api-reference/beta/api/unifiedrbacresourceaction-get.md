@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRbacResourceAction"
 description: "Read the properties and relationships of an unifiedRbacResourceAction object."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -57,7 +57,8 @@ The following example gets the action with the identifier `microsoft.directory-a
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedrbacresourceaction"
+  "name": "get_unifiedrbacresourceaction",
+  "sampleKeys": ["microsoft.directory-accessReviews-allProperties-read-get", "microsoft.directory"]
 }
 -->
 ``` http

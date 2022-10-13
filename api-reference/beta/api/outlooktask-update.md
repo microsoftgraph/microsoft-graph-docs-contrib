@@ -86,7 +86,8 @@ The following example modifies the **dueDateTime** property and uses the `Prefer
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_outlooktask"
+  "name": "update_outlooktask",
+  "sampleKeys": ["AAMkADA1MTHgwAAA="]
 }-->
 
 ```http

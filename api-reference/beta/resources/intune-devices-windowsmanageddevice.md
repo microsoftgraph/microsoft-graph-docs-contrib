@@ -44,7 +44,7 @@ Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Chassis type of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|Platform of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`, `intuneAosp`.|
@@ -111,16 +111,16 @@ Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) collection|List of properties of the ChromeOS Device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|bootstrapTokenEscrowed|Boolean|Reports if the managed device has an escrowed Bootstrap Token. This is only for macOS devices. If FALSE, no bootstrap token is escrowed. If TRUE, the device has escrowed a bootstrap token with Intune. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|bootstrapTokenEscrowed|Boolean|Reports if the managed device has an escrowed Bootstrap Token. This is only for macOS devices. To get, include BootstrapTokenEscrowed in the select clause and query with a device id. If FALSE, no bootstrap token is escrowed. If TRUE, the device has escrowed a bootstrap token with Intune. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceFirmwareConfigurationInterfaceManaged|Boolean|Indicates whether the device is DFCI managed. When TRUE the device is DFCI managed. When FALSE, the device is not DFCI managed. The default value is FALSE. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) collection|All applications currently installed on the device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceCategory|[deviceCategory](../resources/intune-devices-devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|users|[user](../resources/intune-devices-user.md) collection|The primary users associated with the managed device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) collection|List of log collection requests Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 ## JSON Representation
@@ -322,7 +322,8 @@ Here is a JSON representation of the resource.
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
     "clientIdentifier": "String",
-    "isBlocked": true
+    "isBlocked": true,
+    "clientVersion": "String"
   },
   "ethernetMacAddress": "String",
   "physicalMemoryInBytes": 1024,
@@ -346,6 +347,7 @@ Here is a JSON representation of the resource.
   "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
+
 
 
 

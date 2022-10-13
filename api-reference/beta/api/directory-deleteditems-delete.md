@@ -1,21 +1,19 @@
 ---
-title: "Permanently delete item"
-description: "Permanently delete an item from deleted items."
+title: "Permanently delete item (directory object)"
+description: "Permanently delete a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Permanently delete item
+# Permanently delete item (directory object)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete an item from [deleted items](../resources/directory.md).
-
-Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md), and [user](../resources/user.md) resources. This API allows you to permanently delete an item from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
+Permanently delete a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). After an item is permanently deleted, it **cannot** be restored.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,7 +27,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
-The requestor needs to have one of the following roles: *Global Administrator* or *Application Administrator*.
+The calling user must be the owner of the application or the calling app must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
++ Application Administrator
++ Cloud Application Administrator
++ Hybrid Identity Administrator
 
 ### For users:
 

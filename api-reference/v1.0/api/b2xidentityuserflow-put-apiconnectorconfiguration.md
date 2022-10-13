@@ -66,7 +66,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "put_b2xuserflows-apiconnectorconfiguration_postFederationSignup"
+  "name": "put_b2xuserflows-apiconnectorconfiguration_postFederationSignup",
+  "sampleKeys": ["B2X_1_testuserflow", "postFederationSignup"]
 }
 -->
 
@@ -117,7 +118,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "put_b2xuserflows-apiconnectorconfiguration_postAttributeCollection"
+  "name": "put_b2xuserflows-apiconnectorconfiguration_postAttributeCollection",
+  "sampleKeys": ["B2X_1_testuserflow", "postAttributeCollection"]
 }
 -->
 
@@ -169,7 +171,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "put_b2xuserflows-apiconnectorconfiguration_disable-postAttributeCollection"
+  "name": "put_b2xuserflows-apiconnectorconfiguration_disable-postAttributeCollection",
+  "sampleKeys": ["B2X_1_testuserflow", "postAttributeCollection"]
 }
 -->
 

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewSetOrderPostRequestBody()
 newAssignmentOrder := graphmodels.NewAssignmentOrder()
-order := []String {
+order := []string {
 	"City",
 	"extension_GUID_ShoeSize",
 
@@ -17,7 +17,7 @@ order := []String {
 newAssignmentOrder.SetOrder(order)
 requestBody.SetNewAssignmentOrder(newAssignmentOrder)
 
-graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").UserAttributeAssignments().SetOrder(b2xIdentityUserFlow-id).Post(requestBody)
+graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").UserAttributeAssignments().SetOrder().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -48,7 +48,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "educationschool_get_users"
+  "name": "educationschool_get_users",
+  "sampleKeys": ["10002"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/schools/10002/users

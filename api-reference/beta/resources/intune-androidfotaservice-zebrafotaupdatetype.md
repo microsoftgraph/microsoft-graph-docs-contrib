@@ -28,3 +28,4 @@ Represents various update types for Zebra FOTA deployment.
 
 
 
+

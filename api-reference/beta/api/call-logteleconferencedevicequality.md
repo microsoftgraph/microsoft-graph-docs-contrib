@@ -176,10 +176,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/call-logteleconferencedevicequality-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/call-logteleconferencedevicequality-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 

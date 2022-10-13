@@ -11,7 +11,7 @@ requestBody := graphmodels.NewTrustFrameworkKeySet()
 id := "keyset1"
 requestBody.SetId(&id) 
 
-result, err := graphClient.TrustFramework().KeySets().Post(requestBody)
+result, err := graphClient.TrustFramework().KeySets().Post(context.Background(), requestBody, nil)
 
 
 ```

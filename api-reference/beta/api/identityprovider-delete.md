@@ -59,7 +59,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_identityprovider"
+  "name": "delete_identityprovider_forID"
 }
 -->
 
@@ -68,27 +68,23 @@ DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-forid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-forid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-forid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-identityprovider-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-identityprovider-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/delete-identityprovider-forid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-identityprovider-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/delete-identityprovider-forid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -16,7 +16,7 @@ $dataSource = new DataSource();
 $dataSource->set@odatatype('microsoft.graph.ediscovery.siteSource');
 
 $additionalData = [
-'site' => $dataSource = new ();
+'site' => $dataSource = new Site();
 $		dataSource->setWebUrl('https://contoso.sharepoint.com/sites/SecretSite');
 
 

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewActivityBasedTimeoutPolicy()
-definition := []String {
+definition := []string {
 	"definition-value",
 
 }
@@ -18,7 +18,7 @@ requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
 
-graphClient.Policies().ActivityBasedTimeoutPoliciesById("activityBasedTimeoutPolicy-id").Patch(requestBody)
+result, err := graphClient.Policies().ActivityBasedTimeoutPoliciesById("activityBasedTimeoutPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

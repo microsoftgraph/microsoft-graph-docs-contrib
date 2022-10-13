@@ -55,7 +55,8 @@ If successful, this call returns a `200 OK` response and a Boolean value that sp
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "domain_promote"
+  "name": "domain_promote",
+  "sampleKeys": ["contoso.com"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/promote

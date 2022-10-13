@@ -66,7 +66,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_overridespages"
+  "name": "update_overridespages",
+  "sampleKeys": ["B2X_1_Partner", "en", "selfasserted1_1"]
 }
 -->
 

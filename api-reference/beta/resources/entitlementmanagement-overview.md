@@ -32,7 +32,7 @@ The entitlement management resource types include:
 - [entitlementManagementSettings](entitlementmanagementsettings.md): Tenant-wide settings for Azure AD entitlement management.
 - [approval](approval.md): represents the decisions associated with an access package request.
 
-In addition, role assignments for entitlement management-specific roles can be managed through entitlement management [role definitions](unifiedroledefinition.md).
+In addition, you can manage role assignments for users, groups of users, and service principals to entitlement management-specific roles through entitlement management [role definitions](unifiedroledefinition.md).
 
 For a tutorial that shows you how to use entitlement management to create a package of resources that internal users can self-service request, see [Create an access package using Microsoft Graph APIs](/graph/tutorial-access-package-api).
 

@@ -57,7 +57,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add_tab_to_chat"
+  "name": "add_tab_to_chat",
+  "sampleKeys": ["19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"]
 }
 -->
 

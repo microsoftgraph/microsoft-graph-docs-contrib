@@ -14,7 +14,7 @@ generalText := "This item has been blocked by the administrator."
 policyTip.SetGeneralText(&generalText) 
 complianceUrl := "https://contoso.com/dlp-policy-page"
 policyTip.SetComplianceUrl(&complianceUrl) 
-matchedConditionDescriptions := []String {
+matchedConditionDescriptions := []string {
 	"Credit Card Number",
 
 }
@@ -26,7 +26,7 @@ dlpAction := graphmodels.BLOCKACCESS_CHATMESSAGEPOLICYVIOLATIONDLPACTIONTYPES
 policyViolation.SetDlpAction(&dlpAction) 
 requestBody.SetPolicyViolation(policyViolation)
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(requestBody)
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

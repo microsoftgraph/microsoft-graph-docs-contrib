@@ -14,6 +14,7 @@ const settings = {
     deletedUserPersonalSiteRetentionPeriodInDays: 365,
     excludedFileExtensionsForSyncApp: ['.mp3'],
     imageTaggingOption: 'enhanced',
+    isLegacyAuthProtocolsEnabled: true,
     isSitesStorageLimitAutomatic: false,
     isSyncButtonHiddenOnPersonalSite: false,
     isUnmanagedSyncAppForTenantRestricted: false,

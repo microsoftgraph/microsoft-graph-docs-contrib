@@ -2,7 +2,7 @@
 title: "Delete unifiedRoleAssignment"
 description: "Delete a unifiedRoleAssignment object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -75,7 +75,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_unifiedroleassignment"
+  "name": "delete_unifiedroleassignment",
+  "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
 ```http

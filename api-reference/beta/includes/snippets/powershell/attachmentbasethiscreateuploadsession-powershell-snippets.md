@@ -8,7 +8,6 @@ Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
 	AttachmentInfo = @{
-		"@odata.type" = "microsoft.graph.attachmentInfo"
 		AttachmentType = "file"
 		Name = "flower"
 		Size = 3483322

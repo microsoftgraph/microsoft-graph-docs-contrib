@@ -55,7 +55,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_borders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders
 ```
 

@@ -16,7 +16,7 @@ $additionalData = [
 'rubricQualityFeedback' => $rubricQualityFeedback1 = new ();
 $		rubricQualityFeedback1->setQualityId('9a145aa8-f3d9-43a1-8f77-5387ff0693f2');
 
-$rubricQualityFeedback1Feedback = new ();
+$rubricQualityFeedback1Feedback = new Feedback();
 $		rubricQualityFeedback1Feedback->setContent('This is feedback specific to the first quality of the rubric.');
 
 $		rubricQualityFeedback1Feedback->setContentType('text');
@@ -28,7 +28,7 @@ $rubricQualityFeedbackArray []= $rubricQualityFeedback1;
 $rubricQualityFeedback2 = new ();
 $		rubricQualityFeedback2->setQualityId('d2331fb2-2761-402e-8de6-93e0afaa076e');
 
-$rubricQualityFeedback2Feedback = new ();
+$rubricQualityFeedback2Feedback = new Feedback();
 $		rubricQualityFeedback2Feedback->setContent('This is feedback specific to the second quality of the rubric.');
 
 $		rubricQualityFeedback2Feedback->setContentType('text');
@@ -63,7 +63,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->outcomesById('educationOutcome-id')->patch($requestBody);
+$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->outcomesById('educationOutcome-id')->patch($requestBody);
 
 
 ```

@@ -58,7 +58,8 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_externalgroup"
+  "name": "delete_externalgroup",
+  "sampleKeys": ["contosohr", "31bea3d537902000"]
 }
 -->
 

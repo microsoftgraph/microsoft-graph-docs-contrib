@@ -1,7 +1,7 @@
 ---
 title: "Get educationSubmission"
 description: "Retrieve a particular submission. A submission object represents a student's work for an assignment. Resources associated with the submission represent this work. Only the student the submission is assigned to can see and modify the submission. A teacher or application with application permissions has full access to all submissions. "
-author: cristobal-buenrostro
+author: Sureshpadimi88
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -33,10 +33,10 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submission-id}
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-The following are the available `$expand` options for this method: `outcomes`, `resources`, `submittedResources`, and `*`, which includes all the previous options. For details, see the examples section.
+## Optional query parameters
+
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Header       | Value |
@@ -58,7 +58,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationsubmission"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/59069eb2-2a09-4d90-bb19-2089cc69d613/assignments/80da1069-a635-4913-813f-d775a5470a8f/submissions/869369de-3e5a-89eb-6f2d-83cd88f860b5
 ```
 
@@ -155,7 +155,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_submission_expand"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/59069eb2-2a09-4d90-bb19-2089cc69d613/assignments/80da1069-a635-4913-813f-d775a5470a8f/submissions/869369de-3e5a-89eb-6f2d-83cd88f860b5?$expand=*
 ```
 

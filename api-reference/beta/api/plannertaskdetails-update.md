@@ -41,6 +41,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|The collection of checklist items on the task.|
 |description|String|Description of the task|
+|notes|[itemBody](../resources/itembody.md)|Rich text description of the task. To be used by HTML-aware clients. For backwards compatibility, a plain-text version of the HTML description will be synced to the "description" field. If this field has not previously been set but "description" has been, the existing description will be synchronized to "notes" with minimal whitespace-preserving HTML markup. Setting both "description" and "notes" is an error and will result in an exception.|
 |previewType|string|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|The collection of references on the task.|
 
@@ -57,7 +58,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_plannertaskdetails"
+  "name": "update_plannertaskdetails",
+  "sampleKeys": ["gcrYAaAkgU2EQUvpkNNXLGQAGTtu"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
@@ -91,7 +93,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
       "isChecked": true,
     },
     "a93c93c5-10a6-4167-9551-8bafa09967a7": null
-  }
+  },
+  "description": "Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links"
 }
 ```
 
@@ -129,7 +132,11 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",
+  "description": "Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links",
+  "notes": {
+    "content": "<div style=\"white-space:pre-wrap\">Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links</div>",
+    "contentType": "html"
+  },
   "previewType": "automatic",
   "references": {
     "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer": {

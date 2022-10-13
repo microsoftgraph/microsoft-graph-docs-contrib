@@ -14,7 +14,7 @@ $requestBody->setId('Partner');
 
 $requestBody->setUserFlowType(new UserFlowType('signuporsignin'));
 
-$requestBody->setUserFlowTypeVersion(userFlowTypeVersion);
+$requestBody->setUserFlowTypeVersion(1);
 
 
 

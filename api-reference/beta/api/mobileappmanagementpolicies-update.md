@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [mobi
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_mobilitymanagementpolicy"
+  "name": "update_mobilitymanagementpolicy_for_ID"
 }
 -->
 
@@ -85,27 +85,27 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-mobilitymanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-mobilitymanagementpolicy-for-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-mobilitymanagementpolicy-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mobilitymanagementpolicy-for-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-mobilitymanagementpolicy-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-mobilitymanagementpolicy-for-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-mobilitymanagementpolicy-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/update-mobilitymanagementpolicy-for-id-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-mobilitymanagementpolicy-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-mobilitymanagementpolicy-for-id-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-mobilitymanagementpolicy-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/update-mobilitymanagementpolicy-for-id-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Organization.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Organization.ReadWrite.All |
 
 ## HTTP request
 
@@ -55,7 +55,8 @@ The following is an example of a request to delete the `fr-FR` localization obje
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_organizationalbrandinglocalization"
+  "name": "delete_organizationalbrandinglocalization",
+  "sampleKeys": ["d69179bf-f4a4-41a9-a9de-249c0f2efb1d", "fr-FR"]
 }-->
 
 ```msgraph-interactive

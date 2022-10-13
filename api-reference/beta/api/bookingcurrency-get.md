@@ -48,7 +48,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_bookingcurrency"
+  "name": "get_bookingcurrency",
+  "sampleKeys": ["USD"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingCurrencies/USD

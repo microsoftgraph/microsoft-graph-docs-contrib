@@ -1,7 +1,7 @@
 ---
 title: "List assignment resources"
 description: "Get all the resources associated with an assignment."
-author: "sharad-sharma-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -29,7 +29,9 @@ GET /education/classes/{id}/assignments/{id}/resources
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response.
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Header       | Value |
@@ -52,7 +54,7 @@ The following is an example of the request.
   "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","9018ae7a-9953-4796-a152-4c54e0910922"],
   "name": "get_resources_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/9018ae7a-9953-4796-a152-4c54e0910922/resources
 ```
 

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Policies().MobileDeviceManagementPoliciesById("mobilityManagementPolicy-id").IncludedGroupsById("group-id").$ref().Delete()
+graphClient.GroupsById("group-id").Delete()
 
 
 ```

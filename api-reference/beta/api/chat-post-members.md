@@ -59,7 +59,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime"
+  "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime",
+  "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
 } -->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
@@ -129,7 +130,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime"
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime",
+  "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
 } -->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
@@ -198,7 +200,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime"
+  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime",
+  "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
 } -->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
@@ -268,7 +271,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member_upn"
+  "name": "create_conversation_member_upn",
+  "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
 } -->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members

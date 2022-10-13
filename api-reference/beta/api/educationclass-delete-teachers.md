@@ -57,7 +57,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationclass_from_educationschool_2"
+  "name": "create_educationclass_from_educationschool_2",
+  "sampleKeys": ["14012"]
 }-->
 
 ```http

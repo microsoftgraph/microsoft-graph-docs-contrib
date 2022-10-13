@@ -12,7 +12,6 @@ const client = Client.init(options);
 
 const uploadSession = {
   attachmentInfo: {
-    '@odata.type': 'microsoft.graph.attachmentInfo',
     attachmentType: 'file',
     name: 'flower',
     size: 3483322

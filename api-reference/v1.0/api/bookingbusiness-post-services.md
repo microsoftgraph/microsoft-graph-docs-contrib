@@ -44,7 +44,8 @@ If successful, this method returns a `201 Created` response code and a [bookingS
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services

@@ -8,18 +8,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCloudPcOrganizationSettings()
-"@odata.type" := "#microsoft.graph.cloudPcOrganizationSettings"
-requestBody.Set"@odata.type"(&"@odata.type") 
-userAccountType := graphmodels.STANDARDUSER_CLOUDPCUSERACCOUNTTYPE 
-requestBody.SetUserAccountType(&userAccountType) 
+enableMEMAutoEnroll := true
+requestBody.SetEnableMEMAutoEnroll(&enableMEMAutoEnroll) 
 osVersion := graphmodels.WINDOWS11_CLOUDPCOPERATINGSYSTEM 
 requestBody.SetOsVersion(&osVersion) 
+userAccountType := graphmodels.STANDARDUSER_CLOUDPCUSERACCOUNTTYPE 
+requestBody.SetUserAccountType(&userAccountType) 
 windowsSettings := graphmodels.NewCloudPcWindowsSettings()
 language := "en-US"
 windowsSettings.SetLanguage(&language) 
 requestBody.SetWindowsSettings(windowsSettings)
 
-graphClient.DeviceManagement().VirtualEndpoint().OrganizationSettings().Patch(requestBody)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().OrganizationSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

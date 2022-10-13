@@ -1,7 +1,7 @@
 ---
 title: "Get educationCategory"
 description: "Retrieve a category object."
-author: "mmast-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve an [educationCategory](../resources/educationcategory.md) object.
 
-## Permissions
+## Permissions 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,7 +32,9 @@ GET /education/classes/{id}/assignmentCategories/{id}
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+
 
 ## Request headers
 | Header        | Value                     |
@@ -59,7 +61,7 @@ The following is an example of the request.
   "sampleKeys": ["acdefc6b-2dc6-4e71-b1e9-6d9810ab1793"],
   "name": "get_class_category"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories/96821157-5efb-4706-8ca2-a90b26c44852
 ```
 

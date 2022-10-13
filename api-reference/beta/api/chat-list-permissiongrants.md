@@ -61,7 +61,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chat_list_permission_grants"
+  "name": "chat_list_permission_grants",
+  "sampleKeys": ["19:089ac694c48647c68035aae675cf78ab@thread.v2"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:089ac694c48647c68035aae675cf78ab@thread.v2/permissionGrants

@@ -6,7 +6,7 @@ ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
-# Use the search query parameter to match a search criterion
+# Use the $search query parameter
 
 In addition to [other OData query parameters](/graph/query-parameters), Microsoft Graph supports the `$search` query parameter to restrict the results of a request to match a search criterion.
 
@@ -114,7 +114,7 @@ Content-type: application/json
 }
 ```
 
-To learn more about the People API, see [Get information about relevant people](./people-example.md#search-people).  
+To learn more about the People API, see [Get information about relevant people](./people-insights-overview.md#search-people).  
 
 ## Using $search on directory object collections
 
@@ -134,7 +134,7 @@ Azure AD resources and their relationships that derive from [directoryObject](/g
 > - The tokenized search support works only on the **displayName** and **description** fields. Any field of String type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior.
 
 For example:
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "search_groups"
@@ -146,7 +146,7 @@ GET https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo OR ma
 This looks for all groups with display names that has `one` and `video` tokens, or mail starting with `onevideo`.  
 
 `$search` can be used together with `$filter`:
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "search_filter_groups"

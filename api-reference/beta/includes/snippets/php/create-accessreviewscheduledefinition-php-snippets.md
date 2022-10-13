@@ -28,16 +28,13 @@ $scope->setAdditionalData($additionalData);
 
 
 $requestBody->setScope($scope);
-$reviewers1 = new ();
-$additionalData = [
-'query' => '/users/398164b1-5196-49dd-ada2-364b49f99b27', 
-'queryType' => 'MicrosoftGraph', 
-];
-$reviewers1->setAdditionalData($additionalData);
+$reviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
+$reviewersAccessReviewReviewerScope1->setQuery('/users/398164b1-5196-49dd-ada2-364b49f99b27');
+
+$reviewersAccessReviewReviewerScope1->setQueryType('MicrosoftGraph');
 
 
-
-$reviewersArray []= $reviewers1;
+$reviewersArray []= $reviewersAccessReviewReviewerScope1;
 $requestBody->setReviewers($reviewersArray);
 
 
@@ -52,7 +49,7 @@ $settings->setDefaultDecisionEnabled(false);
 
 $settings->setDefaultDecision('None');
 
-$settings->setInstanceDurationInDays(instanceDurationInDays);
+$settings->setInstanceDurationInDays(1);
 
 $settings->setRecommendationsEnabled(true);
 
@@ -60,7 +57,7 @@ $settingsRecurrence = new PatternedRecurrence();
 $settingsRecurrencePattern = new RecurrencePattern();
 $settingsRecurrencePattern->setType(new RecurrencePatternType('weekly'));
 
-$settingsRecurrencePattern->setInterval(interval);
+$settingsRecurrencePattern->setInterval(1);
 
 
 $settingsRecurrence->setPattern($settingsRecurrencePattern);

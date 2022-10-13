@@ -13,7 +13,7 @@ requestBody.SetServicePlanId(&servicePlanId)
 skuId := uuid.MustParse("465a2a90-5e59-456d-a7b8-127b9fb2e484")
 requestBody.SetSkuId(&skuId) 
 
-graphClient.Me().ActivateServicePlan().Post(requestBody)
+graphClient.Me().ActivateServicePlan().Post(context.Background(), requestBody, nil)
 
 
 ```

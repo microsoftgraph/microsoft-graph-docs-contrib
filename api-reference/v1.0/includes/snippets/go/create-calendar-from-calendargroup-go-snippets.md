@@ -11,7 +11,7 @@ requestBody := graphmodels.NewCalendar()
 name := "Marketing calendar"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Me().CalendarGroupsById("calendarGroup-id").Calendars().Post(requestBody)
+result, err := graphClient.Me().CalendarGroupsById("calendarGroup-id").Calendars().Post(context.Background(), requestBody, nil)
 
 
 ```

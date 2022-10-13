@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUser()
-businessPhones := []String {
+businessPhones := []string {
 	"+1 425 555 0109",
 
 }
@@ -16,7 +16,7 @@ requestBody.SetBusinessPhones(businessPhones)
 officeLocation := "18/2111"
 requestBody.SetOfficeLocation(&officeLocation) 
 
-graphClient.Me().Patch(requestBody)
+result, err := graphClient.Me().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -31,7 +31,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->security()->secureScoreControlProfilesById('secureScoreControlProfile-id')->patch($requestBody);
+$requestResult = $graphServiceClient->security()->secureScoreControlProfilesById('secureScoreControlProfile-id')->patch($requestBody);
 
 
 ```

@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewDeleteTiIndicatorsByExternalIdPostRequestBody()
-value := []String {
+value := []string {
 	"externalId-value1",
 	"externalId-value2",
 
 }
 requestBody.SetValue(value)
 
-result, err := graphClient.Security().TiIndicators().DeleteTiIndicatorsByExternalId().Post(requestBody)
+result, err := graphClient.Security().TiIndicators().DeleteTiIndicatorsByExternalId().Post(context.Background(), requestBody, nil)
 
 
 ```

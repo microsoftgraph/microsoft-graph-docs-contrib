@@ -15,7 +15,7 @@ $workingHoursBookingWorkHours1->set@odatatype('#microsoft.graph.bookingWorkHours
 
 $workingHoursBookingWorkHours1->setDay(new DayOfWeek('monday'));
 
-$workingHoursBookingWorkHours1->setTimeSlots(]);
+$workingHoursBookingWorkHours1->setTimeSlots([]);
 
 $additionalData = [
 'day@odata.type' => '#microsoft.graph.dayOfWeek', 

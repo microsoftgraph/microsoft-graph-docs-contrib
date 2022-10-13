@@ -2,7 +2,7 @@
 title: "Delete unifiedRoleDefinition"
 description: "Delete a unifiedRoleDefinition object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---

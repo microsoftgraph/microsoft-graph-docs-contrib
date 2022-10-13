@@ -17,7 +17,7 @@ $requestBody->setDisplayName('Example');
 $requestBody->setSelfServiceEnabled(true);
 
 $restorePointSetting = new CloudPcRestorePointSetting();
-$restorePointSetting->setFrequencyInHours(frequencyInHours);
+$restorePointSetting->setFrequencyInHours(16);
 
 $restorePointSetting->setUserRestoreEnabled(true);
 
@@ -27,7 +27,7 @@ $requestBody->setLocalAdminEnabled(false);
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->userSettingsById('cloudPcUserSetting-id')->patch($requestBody);
+$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->userSettingsById('cloudPcUserSetting-id')->patch($requestBody);
 
 
 ```

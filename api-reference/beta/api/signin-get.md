@@ -76,7 +76,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_signin_1"
+  "name": "get_signin_1",
+  "sampleKeys": ["66ea54eb-blah-4ee5-be62-ff5a759b0100"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/66ea54eb-blah-4ee5-be62-ff5a759b0100

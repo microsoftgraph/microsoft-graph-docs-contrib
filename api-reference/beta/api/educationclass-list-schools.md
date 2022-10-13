@@ -60,7 +60,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_schools_1"
+  "name": "get_schools_1",
+  "sampleKeys": ["11014"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11014/schools

@@ -21,7 +21,7 @@ requestBody.SetConfidence(&confidence)
 description := "description-after-update"
 requestBody.SetDescription(&description) 
 
-graphClient.Security().TiIndicatorsById("tiIndicator-id").PatchWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Security().TiIndicatorsById("tiIndicator-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

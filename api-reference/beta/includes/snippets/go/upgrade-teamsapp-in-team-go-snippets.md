@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.TeamsById("team-id").InstalledAppsById("teamsAppInstallation-id").Upgrade(team-id, teamsAppInstallation-id).Post()
+graphClient.TeamsById("team-id").InstalledAppsById("teamsAppInstallation-id").Upgrade().Post(context.Background(), nil)
 
 
 ```

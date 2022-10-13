@@ -1,6 +1,6 @@
 ---
 title: "List rules"
-description: "Get all the messageRule objects defined for the user's Inbox."
+description: "Get all the messageRule objects defined for the user's inbox."
 ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: "outlook"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get all the [messageRule](../resources/messagerule.md) objects defined for the user's Inbox.
+Get all the [messageRule](../resources/messagerule.md) objects defined for the user's inbox.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,8 +28,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /me/mailFolders/inbox/messageRules
 GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -37,11 +39,13 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [messageRule](../resources/messagerule.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [messageRule](../resources/messagerule.md) objects in the response body.
+
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -79,8 +83,9 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+>**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -137,7 +142,6 @@ Content-type: application/json
     }
   ]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

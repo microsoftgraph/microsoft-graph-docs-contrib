@@ -12,20 +12,18 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new AuthenticationMethodsPolicy();
 $registrationEnforcement = new RegistrationEnforcement();
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign = new AuthenticationMethodsRegistrationCampaign();
-$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setSnoozeDurationInDays(snoozeDurationInDays);
+$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setSnoozeDurationInDays(1);
 
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setState(new AdvancedConfigState('enabled'));
 
-$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setExcludeTargets(]);
+$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setExcludeTargets([]);
 
 $includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1 = new AuthenticationMethodsRegistrationCampaignIncludeTarget();
-$additionalData = [
-'id' => '3ee3a9de-0a86-4e12-a287-9769accf1ba2', 
-'targetType' => 'group', 
-'targetedAuthenticationMethod' => 'microsoftAuthenticator', 
-];
-$includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1->setAdditionalData($additionalData);
+$includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1->setId('3ee3a9de-0a86-4e12-a287-9769accf1ba2');
 
+$includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1->setTargetType(new AuthenticationMethodTargetType('group'));
+
+$includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1->setTargetedAuthenticationMethod('microsoftAuthenticator');
 
 
 $includeTargetsArray []= $includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1;
@@ -38,7 +36,7 @@ $registrationEnforcement->setAuthenticationMethodsRegistrationCampaign($registra
 $requestBody->setRegistrationEnforcement($registrationEnforcement);
 
 
-$graphServiceClient->policies()->authenticationMethodsPolicy()->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->patch($requestBody);
 
 
 ```

@@ -53,7 +53,7 @@ This example retrieves a version of a file in the current user's drive.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-single-version", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/{version-id}
 ```
 
@@ -107,7 +107,7 @@ This example retrieves the current version of a file in the current user's drive
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-current-version", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/current
 ```
 

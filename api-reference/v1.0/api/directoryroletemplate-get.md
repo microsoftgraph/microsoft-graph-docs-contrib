@@ -1,7 +1,7 @@
 ---
 title: "Get directoryRoleTemplate"
 description: "Retrieve the properties and relationships of a directoryroletemplate object."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

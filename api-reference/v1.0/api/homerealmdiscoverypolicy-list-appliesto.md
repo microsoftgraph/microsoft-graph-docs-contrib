@@ -62,7 +62,7 @@ The following is an example of the request.
   "name": "get_appliesto_2"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/6c6f154f-cb39-4ff9-bf5b-62d5ad585cde/appliesTo
 ```
 

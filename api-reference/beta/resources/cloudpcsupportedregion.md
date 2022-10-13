@@ -28,12 +28,13 @@ Represents a supported region to establish an Azure network connection for Cloud
 |displayName|String|The name for the supported region. Read-only.|
 |id|String|The unique identifier for the supported region. Read-only.|
 |regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedregionstatus-values)|The status of the supported region. Possible values are: `available`, `restricted`, `unavailable`, `unknownFutureValue`. Read-only.|
+|supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `unknownFutureValue`. Read-only.|
 
 ### cloudPcSupportedRegionStatus values
 
 |Member|Description|
 |:---|:---|
-|available|The region is available and fully supports Cloud PC's to be provisioned in that region.|
+|available|The region is available and fully supports Cloud PCs to be provisioned in that region.|
 |restricted|The region is considered a restricted region and can only have a Cloud PC provisioned in that region for specific tenants.|
 |unavailable|The region has no support for Cloud PC provisioning.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
@@ -59,6 +60,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.cloudPcSupportedRegion",
   "displayName": "String",
   "id": "String (identifier)",
-  "regionStatus": "microsoft.graph.cloudPcSupportedRegionStatus"
+  "regionStatus": "microsoft.graph.cloudPcSupportedRegionStatus",
+  "supportedSolution": "String"
 }
 ```

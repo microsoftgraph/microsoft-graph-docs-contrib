@@ -14,7 +14,7 @@ configuration := &graphconfig.PrinterShareRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Print().SharesById("printerShare-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Print().SharesById("printerShare-id").Get(context.Background(), configuration)
 
 
 ```

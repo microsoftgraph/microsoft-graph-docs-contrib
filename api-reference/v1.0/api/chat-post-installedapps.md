@@ -62,7 +62,8 @@ If successful, this method returns a `201 Created` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add_app_in_chat"
+  "name": "add_app_in_chat",
+  "sampleKeys": ["19:ea28e88c00e94c7786b065394a61f296@thread.v2"]
 }-->
 
 ```http

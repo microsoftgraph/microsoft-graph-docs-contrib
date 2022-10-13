@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------------------------------------------------------------ |
 | Delegated (work or school account)     | Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All |
 | Delegated (personal Microsoft account) | Not supported.                                                                                    |
-| Application                            | Not supported. |
+| Application                            | BookingsAppointment.ReadWrite.All, Bookings.Read.All |
 
 ## HTTP request
 
@@ -62,12 +62,13 @@ If successful, this method returns a `200 OK` response code and a [bookingCustom
 
 <!-- {
   "blockType": "request",
-  "name": "get_bookingcustomquestion"
+  "name": "get_bookingcustomquestion",
+  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
 }
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
+GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
 ```
 
 # [C#](#tab/csharp)

@@ -61,7 +61,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_oAuth2PermissionGrant"
+  "name": "delete_oAuth2PermissionGrant",
+  "sampleKeys": ["l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk"]
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/oauth2PermissionGrants/l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk

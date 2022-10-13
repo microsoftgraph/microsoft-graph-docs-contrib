@@ -21,7 +21,7 @@ $requestBody->setClientId('56433757-cadd-4135-8431-2c9e3fd68ae8');
 $requestBody->setClientSecret('12345');
 
 $additionalData = [
-'claimsMapping' => $requestBody = new ();
+'claimsMapping' => $requestBody = new ClaimsMapping();
 $		requestBody->setUserId('myUserId');
 
 $		requestBody->setGivenName('myGivenName');

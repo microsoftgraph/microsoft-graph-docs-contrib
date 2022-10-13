@@ -51,7 +51,7 @@ The following example shows the request.
   "blockType": "request",
   "name": "get-participant"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/7e1b4346-85a6-4bdd-abe3-d11c5d420efe
 ```
 
@@ -69,10 +69,6 @@ GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-participant-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-participant-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

@@ -55,7 +55,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_plannerbucket"
+  "name": "update_plannerbucket",
+  "sampleKeys": ["hsOf2dhOJkqyYYZEtdzDe2QAIUCR"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/planner/buckets/hsOf2dhOJkqyYYZEtdzDe2QAIUCR

@@ -27,7 +27,7 @@ $schedule->setType('Once');
 
 $schedule->setStartDateTime(new DateTime('2018-05-12T23:28:43.537Z'));
 
-$schedule->setDuration('PT9H');
+$schedule->setDuration(new \DateInterval('PT9H'));
 
 
 $requestBody->setSchedule($schedule);

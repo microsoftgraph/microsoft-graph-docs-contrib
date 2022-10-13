@@ -48,7 +48,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationclass_from_educationschool_3"
+  "name": "create_educationclass_from_educationschool_3",
+  "sampleKeys": ["10001", "11001"]
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/education/schools/10001/classes/11001

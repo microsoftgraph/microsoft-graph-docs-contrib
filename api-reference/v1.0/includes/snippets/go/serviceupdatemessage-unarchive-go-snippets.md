@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewUnarchivePostRequestBody()
-messageIds := []String {
+messageIds := []string {
 	"MC172851",
 	"MC167983",
 
 }
 requestBody.SetMessageIds(messageIds)
 
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Unarchive().Post(requestBody)
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().Unarchive().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,11 +11,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Printer();
 $location = new PrinterLocation();
-$location->setLatitude(latitude);
+$location->setLatitude(1.1);
 
-$location->setLongitude(longitude);
+$location->setLongitude(2.2);
 
-$location->setAltitudeInMeters(altitudeInMeters);
+$location->setAltitudeInMeters(3);
 
 
 $requestBody->setLocation($location);
@@ -27,7 +27,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->print()->printersById('printer-id')->patch($requestBody);
+$requestResult = $graphServiceClient->print()->printersById('printer-id')->patch($requestBody);
 
 
 ```

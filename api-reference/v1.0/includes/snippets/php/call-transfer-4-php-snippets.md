@@ -17,7 +17,7 @@ $transferTargetIdentity = new IdentitySet();
 $transferTargetIdentity->set@odatatype('#microsoft.graph.identitySet');
 
 $additionalData = [
-'phone' => $transferTargetIdentity = new ();
+'phone' => $transferTargetIdentity = new Phone();
 $		transferTargetIdentity->set@odatatype('#microsoft.graph.identity');
 
 $		transferTargetIdentity->setId('+12345678901');

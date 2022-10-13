@@ -63,7 +63,8 @@ If successful, this method returns a `201 Created` response code and a [meetingR
 <!-- {
   "blockType": "request",
   "name": "create-registration",
-  "@odata.type": "microsoft.graph.meetingRegistration"
+  "@odata.type": "microsoft.graph.meetingRegistration",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```http
