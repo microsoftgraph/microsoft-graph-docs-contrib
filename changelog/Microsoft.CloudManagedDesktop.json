@@ -1,6 +1,40 @@
 {
     "changelog": [
         {
+          "ChangeList": [
+            {
+              "Id": "bf31e677-d3ae-4c1c-8be3-72900113ccd4",
+              "ApiChange": "Enumeration",
+              "ChangedApiName": "cloudPcRegionGroup",
+              "ChangeType": "Addition",
+              "Description": "Added the **cloudPcRegionGroup** enumeration type.",
+              "Target": "cloudPcRegionGroup"
+            },
+            {
+              "Id": "bf31e677-d3ae-4c1c-8be3-72900113ccd4",
+              "ApiChange": "Property",
+              "ChangedApiName": "regionGroup",
+              "ChangeType": "Addition",
+              "Description": "Added the `regionGroup` property to the [cloudPcDomainJoinConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource.",
+              "Target": "cloudPcDomainJoinConfiguration"
+            },
+            {
+              "Id": "bf31e677-d3ae-4c1c-8be3-72900113ccd4",
+              "ApiChange": "Property",
+              "ChangedApiName": "regionGroup",
+              "ChangeType": "Addition",
+              "Description": "Added the `regionGroup` property to the [cloudPcSupportedRegion](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcSupportedRegion?view=graph-rest-beta) resource.",
+              "Target": "cloudPcSupportedRegion"
+            }
+                   ],
+          "Id": "bf31e677-d3ae-4c1c-8be3-72900113ccd4",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2022-09-13T08:58:22.4957466Z",
+          "WorkloadArea": "Devices and apps",
+          "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
               {
                 "Id": "a33b829e-5c61-4ee8-9737-5ab14fe3f7bf",
