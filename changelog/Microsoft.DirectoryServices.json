@@ -959,7 +959,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "assignedPrincipals",
           "ChangeType": "Addition",
-          "Description": "Added the [assignedPrincipals](https://docs.microsoft.com/en-us/graph/api/unifiedroledefinition-assignedprincipals) method to the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource.",
+          "Description": "Added the [assignedPrincipals](https://docs.microsoft.com/en-us/graph/api/unifiedroledefinition-assignedprincipals) method to the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource. Use this API to retrieve the principals (users, groups, and service principals) directly or transitively assigned to a specific role for different scopes.",
           "Target": "unifiedRoleDefinition"
         }
       ],

@@ -17,11 +17,7 @@ Get the list of security principals (users, groups, and service principals) that
 To list the direct and transitive role assignments for a specific principal, use the [List transitiveRoleAssignments](rbacapplication-list-transitiveroleassignments.md) API.
 
 ## Permissions
-One of the following permissions is required to call this API. At a minimum, a caller must have the `RoleManagement.Read.Directory` permission for queries. If the caller does not have permission to read properties for some of the objects included in the result set, the response will follow the [limited information returned for inaccessible member objects](/graph/permissions-reference#limited-information-returned-for-inaccessible-member-objects) pattern.
-
-To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-### Read direct role assignments
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -29,31 +25,10 @@ To learn more, including how to choose permissions, see [Permissions](/graph/per
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory|
 
-### Read group membership
+If the caller does not have the permission to read properties for some of the objects included in the result set, the response will follow the [limited information returned for inaccessible member objects](/graph/permissions-reference#limited-information-returned-for-inaccessible-member-objects) pattern.
 
-These permissions are required for transitive role assignment queries.
+To read the properties that may require permissions for the object, grant the permissions to retrieve information about the object. For more information, see permissions for [users](user-list.md#permissions), [groups](group-list.md#permissions), and [service principals](serviceprincipal-list.md#permissions).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|GroupMember.Read.All, Group.Read.All, Directory.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|GroupMember.Read.All, Group.Read.All, Directory.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All|
-
-### Read standard group properties
-
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All|
-
-### Read standard user properties
-
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All|
 
 ## HTTP request
 
@@ -90,7 +65,7 @@ You can also combine all the supported function parameters in one request for fi
 
 ## Optional query parameters
 
-This method supports the `$count` OData query parameter to help customize the response. You can also filter by OData casts, for example, `microsoft.graph.user` and `microsoft.graph.group`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$filter`, and `$orderBy` OData query parameters to help customize the response. You can also filter by the type of object using OData casting. For example, `/assignedPrincipals(transitive=false)/microsoft.graph.user` and `/assignedPrincipals(transitive=true)/microsoft.graph.servicePrincipal/$count`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -172,7 +147,7 @@ Using the same scenario, the following examples show the counts that will be ret
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(directoryScope='administrativeUnit', directoryScopeId ='d0c2e067-9ae9-4dbf-a280-51a51c46f432')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(directoryScopeType='administrativeUnit', directoryScopeId ='d0c2e067-9ae9-4dbf-a280-51a51c46f432')
 ```
 
 #### Response
@@ -228,8 +203,8 @@ Content-Type: application/json
     {
         "@odata.type": "#microsoft.graph.user",
         "id": "6c62e70d-f5f5-4b9d-9eea-ed517ed9341f",
-        "displayName": "User1",
-        "userPrincipalName": "user1@contoso.com"
+        "displayName": null,
+        "userPrincipalName": null
     },
     {
         "@odata.type": "#microsoft.graph.group",
@@ -280,16 +255,16 @@ Content-Type: application/json
     {
         "@odata.type": "#microsoft.graph.user",
         "id": "6c62e70d-f5f5-4b9d-9eea-ed517ed9341f",
-        "displayName": "User1",
-        "userPrincipalName": "user1@contoso.com"
+        "displayName": null,
+        "userPrincipalName": null
     }
   ]
 }
 ```
 
-### Example 5: Get transitive assigned principals and inline count with minimum permission set
+### Example 5: Get directly assigned principals and inline count
 
-The following example gets the transitive assigned principals and inline count with ([RoleManagement.Read.Directory](/graph/permissions-reference#role-management-permissions) + [GroupMember.Read.All](/graph/permissions-reference#group-permissions)) permission set.
+The following example gets the directly assigned principals and displays an inline count.
 
 #### Request
 <!-- {
@@ -338,17 +313,17 @@ Content-Type: application/json
     {
         "@odata.type": "#microsoft.graph.group",
         "id": "86b38db7-6e8b-4ad2-b2aa-ced7f09486c1",
-        "displayName": null
+        "displayName": "Group 1"
     },
     {
         "@odata.type": "#microsoft.graph.group",
         "id": "182351a6-d974-4d18-88ae-8a148da44cd2",
-        "displayName": null
+        "displayName": "Group 2"
     },
     {
         "@odata.type": "#microsoft.graph.group",
         "id": "b93d5379-a464-4db5-b8e1-694910f1e11e",
-        "displayName": null
+        "displayName": "Group 3"
     }
   ]
 }
