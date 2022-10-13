@@ -44,23 +44,31 @@ Represents a supported region to establish an Azure network connection for Cloud
 
 |Member|Description|
 |:---|:---|
-| default | The region belongs to the default region group.|
-| australia | The region belongs to Australia region group.|
+| default | The region belongs to the default region group |
+| australia | The region belongs to Australia region group |
 | canada | The region belongs to Canada region group |
 | usCentral | The region belongs to US Central region group |
 | usEast | The region belongs to US East region group |
 | usWest | The region belongs to US West region group |
 | france | The region belongs to France region group |
 | germany | The region belongs to Germany region group |
-| europe | The region belongs to Europe region group |
+| europeUnion | The region belongs to Europe region group |
 | unitedKingdom | The region belongs to United Kingdom region group |
 | japan | The region belongs to Japan region group |
 | asia | The region belongs to Asia region group |
 | india | The region belongs to India region group |
 | southAmerica | The region belongs to South America region group |
+| china | The region belongs to China region group |
+| southAfrica | The region belongs to South Africa region group |
+| uae | The region belongs to United Arab Emirates (UAE) region group |
+| euap | The region belongs to Early Update Access Program (EUAP) region group |
 | usGovernment | The region belongs to US Government region group |
 | usGovernmentDod | The region belongs to US Government DOD region group |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use |
+| norway | The region belongs to Norway region group |
+| switzerland | The region belongs to Switzerland region group |
+| southKorea | The region belongs to South Korea region group |
+| qatar | The region belongs to Qatar region group |
 
 ## Relationships
 
