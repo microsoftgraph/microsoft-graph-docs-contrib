@@ -14886,6 +14886,8 @@ items:
             href: api/security-alert-get.md
           - name: Update alert
             href: api/security-alert-update.md
+          - name: Add comment to alert
+            href: api/security-alert-addcomment.md
         - name: Alert evidence
           items:
           - name: Alert evidence
@@ -14928,6 +14930,8 @@ items:
             href: api/security-incident-get.md
           - name: Update incident
             href: api/security-incident-update.md
+          - name: Add comment to incident
+            href: api/security-incident-addcomment.md
       - name: Attack simulation and training (preview)
         items:
         - name: Simulations
