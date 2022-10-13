@@ -83,7 +83,7 @@ through the [Microsoft 365 Developer Program](https://developer.microsoft.com/mi
 
 The following APIs support the `model=B` parameter.
 
-|API                   | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing-updates) | Notes |
+|API                   | [Seeded capacity](#seeded-capacity) | [Price for use](#payment-and-billing-updates) | Notes |
 |:-----------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/chatmessage-delta) | None | $0.00075 per message |  |
 | conversationMember change notifications | None  | $0.00075 per notification | |
