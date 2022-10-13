@@ -1880,7 +1880,41 @@
 		"Id": "c666366b-0cc2-49eb-b433-921507a1206d",
 		"Cloud": "prd",
 		"Version": "beta",
-		"CreatedDateTime": "2022-07-22T00:00:00",
+		"CreatedDateTime": "2022-06-29T00:00:00",
+		"WorkloadArea": "Reports",
+		"SubArea": "Microsoft 365 usage reports"
+	},
+	{
+		"ChangeList": [
+		  {
+			"Id": "4cc4e6b4-85f5-43d7-9adc-71ff0b22553e",
+			"ApiChange": "Method",
+			"ChangedApiName": "getM365AppUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the [getM365AppUserDetail](https://learn.microsoft.com/graph/api/reportRoot-getM365AppUserDetail?view=graph-rest-1.0) method.",
+			"Target": "getM365AppUserDetail"
+		  },
+		  {
+			"Id": "4cc4e6b4-85f5-43d7-9adc-71ff0b22553e",
+			"ApiChange": "Method",
+			"ChangedApiName": "getM365AppUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the [getM365AppUserCounts](https://learn.microsoft.com/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-1.0) method.",
+			"Target": "getM365AppUserCounts"
+		  },
+		  {
+			"Id": "4cc4e6b4-85f5-43d7-9adc-71ff0b22553e",
+			"ApiChange": "Method",
+			"ChangedApiName": "getM365AppPlatformUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the [getM365AppPlatformUserCounts](https://learn.microsoft.com/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-1.0) method.",
+			"Target": "getM365AppPlatformUserCounts"
+		  }
+		],
+		"Id": "4cc4e6b4-85f5-43d7-9adc-71ff0b22553e",
+		"Cloud": "prd",
+		"Version": "V1.0",
+		"CreatedDateTime": "2022-10-12T00:00:00",
 		"WorkloadArea": "Reports",
 		"SubArea": "Microsoft 365 usage reports"
 	}
