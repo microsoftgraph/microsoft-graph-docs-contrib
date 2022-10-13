@@ -34,7 +34,7 @@ Workflows are containers for the processes involved in managing the life cycle o
 
 :::image type="content" source="../../../concepts/images/identitygovernance-workflow-parts.png" alt-text="Parts of a workflow API object.":::
 
-To create workflows, use one of the [predefined workflow templates](#workflow-templates), or integrate with Logic Apps to run custom workflows.
+To create workflows, we recommend using one of the [predefined workflow templates](#workflow-templates).
 
 ### Workflow templates
 
