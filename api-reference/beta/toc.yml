@@ -12200,6 +12200,52 @@ items:
               href: api/authenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/authenticationoperation-get.md
+        - name: Authentication strengths
+          items:
+          - name: Overview
+            href: resources/authenticationstrengths-overview.md
+          - name: Authentication strengths policy
+            href: resources/authenticationstrengthpolicy.md
+            items:
+            - name: List
+              href: api/authenticationstrengthroot-list-policies.md
+            - name: Create
+              href: api/authenticationstrengthroot-post-policies.md
+            - name: Get
+              href: api/authenticationstrengthpolicy-get.md
+            - name: Update
+              href: api/authenticationstrengthpolicy-update.md
+            - name: Delete
+              href: api/authenticationstrengthroot-delete-policies.md
+            - name: Find by method mode
+              href: api/authenticationstrengthpolicy-findbymethodmode.md
+            - name: List usage
+              href: api/authenticationstrengthpolicy-usage.md
+          - name: Authentication combination configurations
+            items: 
+            - name: Authentication combination configuration
+              href: resources/authenticationcombinationconfiguration.md
+            - name: FIDO2 combination configuration
+              href: resources/fido2combinationconfiguration.md
+            - name: Create
+              href: api/authenticationstrengthpolicy-post-combinationconfigurations.md
+            - name: List
+              href: api/authenticationstrengthpolicy-list-combinationconfigurations.md
+            - name: Get
+              href: api/authenticationcombinationconfiguration-get.md
+            - name: Update
+              href: api/authenticationcombinationconfiguration-update.md
+            - name: Delete
+              href: api/authenticationstrengthpolicy-delete-combinationconfigurations.md
+            - name: Update allowed combinations
+              href: api/authenticationstrengthpolicy-updateallowedcombinations.md
+          - name: Authentication method modes
+            href: resources/authenticationmethodmodedetail.md
+            items:
+            - name: List authentication combinations and method modes
+              href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
+            - name: Get authentication method modes
+              href: api/authenticationmethodmodedetail-get.md
         - name: Certificate-based authentication configuration
           displayName: CBA
           href: resources/certificatebasedauthconfiguration.md

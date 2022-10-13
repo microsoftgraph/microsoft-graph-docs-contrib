@@ -34,7 +34,7 @@ GET /identity/conditionalAccess/authenticationContextClassReferences/{id}
 ```
 ## Optional query parameters
 
-This method does not support optional query parameters to customize the response.
+This method does not support OData query parameters.
 
 ## Request headers
 
