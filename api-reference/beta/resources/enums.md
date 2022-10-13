@@ -1243,6 +1243,9 @@ Namespace: microsoft.graph
 |list|
 |listItem|
 |drive|
+|acronym|
+|bookmark|
+|chatMessage|
 |unknownFutureValue|
 
 ### searchAlterationType values
@@ -3243,3 +3246,69 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |group|
 |unknownFutureValue|
+
+
+### authenticationStrengthPolicyType values
+
+|Member|
+|:---|
+|builtIn|
+|custom|
+|unknownFutureValue|
+
+### authenticationStrengthRequirements values
+
+|Member|
+|:---|
+|none|
+|mfa|
+|unknownFutureValue|
+
+### authenticationMethodModes values
+
+|Member|
+|:---|
+|password|
+|voice|
+|hardwareOath|
+|softwareOath|
+|sms|
+|fido2|
+|windowsHelloForBusiness|
+|microsoftAuthenticatorPush|
+|deviceBasedPush|
+|temporaryAccessPassOneTime|
+|temporaryAccessPassMultiUse|
+|email|
+|x509CertificateSingleFactor|
+|x509CertificateMultiFactor|
+|federatedSingleFactor|
+|federatedMultiFactor|
+|unknownFutureValue|
+
+### baseAuthenticationMethod values
+
+|Member|
+|:---|
+|password|
+|voice|
+|hardwareOath|
+|softwareOath|
+|sms|
+|fido|
+|microsoftAuthenticator|
+|windowsHelloForBusiness|
+|temporaryAccessPass|
+|email|
+|x509Certificate|
+|federation|
+|unknownFutureValue|
+
+### searchContent values 
+
+|Member|
+|:---|
+|privateContent|
+|sharedContent|
+|unknownFutureValue|
+

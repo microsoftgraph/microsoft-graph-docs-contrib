@@ -61,14 +61,17 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ## Examples
 
-### Request
+### Example 1: Get a workflow version
+
+#### Request
 
 The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_get_workflowversion"
+  "name": "lifecycleworkflows_get_workflowversion",
+  "sampleKeys": ["156ce798-1eb6-4e0a-8515-e79f54d04390", "3"]
 }
 -->
 ``` http
@@ -102,7 +105,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response
 
@@ -121,6 +124,8 @@ Content-Type: application/json
     "category": "joiner",
     "description": "Configure new hire tasks for onboarding employees on their first day",
     "displayName": "Global onboard new hire employee",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
     "lastModifiedDateTime": "2022-08-24T19:33:03.8664941Z",
     "versionNumber": 3,
     "createdDateTime": "2022-08-24T19:31:33.5534766Z",
@@ -183,5 +188,98 @@ Content-Type: application/json
     "createdBy": {
         "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
     }
+}
+```
+
+### Example 2: Get specific properties of a version of a workflow
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_get_workflowversion_select"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/versions/2?$select=category,displayName,versionNumber,executionConditions&$expand=tasks
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflowVersion"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/versions(category,displayName,versionNumber,executionConditions,tasks())/$entity",
+    "category": "leaver",
+    "displayName": "Post-Offboarding of an employee",
+    "versionNumber": 2,
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "department eq 'Marketing'"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeLeaveDateTime",
+            "offsetInDays": 7
+        }
+    },
+    "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/versions(2)/tasks",
+    "tasks": [
+        {
+            "category": "leaver",
+            "continueOnError": false,
+            "description": "Send offboarding email to user’s manager before the last day of work",
+            "displayName": "Send email before user’s last day",
+            "executionSequence": 1,
+            "id": "320c8e32-225a-4624-a9fb-ef3da9d63713",
+            "isEnabled": true,
+            "taskDefinitionId": "52853a3e-f4e5-4eb8-bb24-1ac09a1da935",
+            "arguments": []
+        },
+        {
+            "category": "leaver",
+            "continueOnError": false,
+            "description": "Delete user account in Azure AD",
+            "displayName": "Delete User Account",
+            "executionSequence": 2,
+            "id": "c455fb46-da19-4755-ab28-d9b3ff4f5662",
+            "isEnabled": true,
+            "taskDefinitionId": "8d18588d-9ad3-4c0f-99d0-ec215f0e3dff",
+            "arguments": []
+        },
+        {
+            "category": "leaver",
+            "continueOnError": false,
+            "description": "Remove all licenses assigned to the user",
+            "displayName": "Remove all licenses for user",
+            "executionSequence": 3,
+            "id": "08feb85b-4ce4-4d7e-98fe-aceb0c1a8439",
+            "isEnabled": true,
+            "taskDefinitionId": "8fa97d28-3e52-4985-b3a9-a1126f9b8b4e",
+            "arguments": []
+        },
+        {
+            "category": "leaver",
+            "continueOnError": false,
+            "description": "Remove user from all Teams memberships",
+            "displayName": "Remove user from all Teams",
+            "executionSequence": 4,
+            "id": "950a0190-a76b-4287-a610-2efaa97a64f3",
+            "isEnabled": true,
+            "taskDefinitionId": "81f7b200-2816-4b3b-8c5d-dc556f07b024",
+            "arguments": []
+        }
+    ]
 }
 ```

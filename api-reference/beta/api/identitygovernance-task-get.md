@@ -45,7 +45,8 @@ GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks/{taskId}
 Fetch tasks for a lifecycle workflow version.
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "ignored",
+  "sampleKeys": ["156ce798-1eb6-4e0a-8515-e79f54d04390", "2", "4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee"]
 }
 -->
 ``` http
@@ -123,7 +124,8 @@ The following is an example of a request to get a task from a workflow version.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_get_workflowVersion_task"
+  "name": "lifecycleworkflows_get_workflowVersion_task",
+  "sampleKeys": ["156ce798-1eb6-4e0a-8515-e79f54d04390", "2", "4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee"]
 }
 -->
 ``` http
