@@ -20,6 +20,11 @@ If the same **updatableAsset** resource is included in the **exclusions** and **
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List deploymentAudiences](../api/windowsupdates-deployment-list-audience.md)|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md) collection|Get a list of the [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) objects and their properties.|
+|[Create deploymentAudience](../api/windowsupdates-deployment-post-audience.md)|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Create a new [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.|
+|[Get deploymentAudience](../api/windowsupdates-deploymentaudience-get.md)|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Read the properties and relationships of a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.|
+|[Update deploymentAudience](../api/windowsupdates-deploymentaudience-update.md)|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Update the properties of a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.|
+|[Delete deploymentAudience](../api/windowsupdates-deployment-delete-audience.md)|None|Delete a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.|
 |[List members](../api/windowsupdates-deploymentaudience-list-members.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List members of the [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).|
 |[List exclusions](../api/windowsupdates-deploymentaudience-list-exclusions.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List exclusions of the [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).|
 |[Update members and exclusions](../api/windowsupdates-deploymentaudience-updateaudience.md)|None|Add or remove members and exclusions.|
@@ -28,6 +33,7 @@ If the same **updatableAsset** resource is included in the **exclusions** and **
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|applicableContent|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection|**TODO: Add Description**|
 |id|String|The unique identifier for the deployment audience. Returned by default. Key. Not nullable. Read-only.|
 
 ## Relationships
@@ -48,7 +54,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deploymentAudience",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "applicableContent": [
+    {
+      "@odata.type": "microsoft.graph.windowsUpdates.applicableContent"
+    }
+  ],
+  "reportingDeviceCount": "Integer"
 }
 ```
 
