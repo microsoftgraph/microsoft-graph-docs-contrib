@@ -1,6 +1,6 @@
 ---
 title: "Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs"
-description: "Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs in Microsoft Graph."
+description: "Learn how to automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs in Microsoft Graph."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -8,7 +8,7 @@ ms.prod: "governance"
 
 # Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs
 
-This tutorial provides a step-by-step guide on how to automate pre-hire tasks with Lifecycle Workflows using Microsoft Graph.
+This tutorial provides step-by-step guidance for automating pre-hire tasks with Lifecycle Workflows using Microsoft Graph.
 
 This pre-hire scenario will generate a temporary password for the new employee and send it via email to the user's new manager.
 
