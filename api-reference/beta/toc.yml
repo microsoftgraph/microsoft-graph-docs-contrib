@@ -13435,7 +13435,7 @@ items:
               href: api/identitygovernance-lifecyclemanagementsettings-get.md
             - name: Update
               href: api/identitygovernance-lifecyclemanagementsettings-update.md
-        - name: Privileged identity management v3
+        - name: Privileged Identity Management v3
           displayName: Privileged identity management, PIM
           href: resources/privilegedidentitymanagementv3-overview.md
           items:
