@@ -11,7 +11,7 @@ requestBody := graphmodels.NewMovePostRequestBody()
 destinationTaskListId := "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQqFxG"
 requestBody.SetDestinationTaskListId(&destinationTaskListId) 
 
-result, err := graphClient.Me().Tasks().ListsById("baseTaskList-id").TasksById("baseTask-id").Move().Post(requestBody)
+result, err := graphClient.Me().Tasks().ListsById("baseTaskList-id").TasksById("baseTask-id").Move().Post(context.Background(), requestBody, nil)
 
 
 ```

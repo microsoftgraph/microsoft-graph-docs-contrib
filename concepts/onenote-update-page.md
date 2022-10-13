@@ -460,7 +460,7 @@ The OneNote service root URL uses the following format for all calls to the OneN
 
 The `version` segment in the URL represents the version of Microsoft Graph that you want to use. `v1.0` is for stable production code. `beta` is to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code.
 
-`me` is for OneNote content that the current user can access (owned and shared). `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [users](/graph/v1.0/resources/user.md) API.
+`me` is for OneNote content that the current user can access (owned and shared). `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [users](/graph/api/resources/user) API.
 
 > [!NOTE]
 > You can get user ids by making a GET request on `https://graph.microsoft.com/v1.0/users`.

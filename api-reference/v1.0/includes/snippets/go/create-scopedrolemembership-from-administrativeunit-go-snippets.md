@@ -15,7 +15,7 @@ id := "id-value"
 roleMemberInfo.SetId(&id) 
 requestBody.SetRoleMemberInfo(roleMemberInfo)
 
-result, err := graphClient.Directory().AdministrativeUnitsById("administrativeUnit-id").ScopedRoleMembers().Post(requestBody)
+result, err := graphClient.Directory().AdministrativeUnitsById("administrativeUnit-id").ScopedRoleMembers().Post(context.Background(), requestBody, nil)
 
 
 ```

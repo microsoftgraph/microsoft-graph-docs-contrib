@@ -32,7 +32,7 @@ toRecipients := []graphmodels.Recipientable {
 }
 requestBody.SetToRecipients(toRecipients)
 
-result, err := graphClient.Me().Messages().Post(requestBody)
+result, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

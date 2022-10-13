@@ -19,7 +19,7 @@ language := "en-US"
 windowsSettings.SetLanguage(&language) 
 requestBody.SetWindowsSettings(windowsSettings)
 
-graphClient.DeviceManagement().VirtualEndpoint().OrganizationSettings().Patch(requestBody)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().OrganizationSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

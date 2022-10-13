@@ -26,7 +26,7 @@ toRecipients := []graphmodels.Recipientable {
 }
 requestBody.SetToRecipients(toRecipients)
 
-graphClient.Me().MessagesById("message-id").Forward().Post(requestBody)
+graphClient.Me().MessagesById("message-id").Forward().Post(context.Background(), requestBody, nil)
 
 
 ```

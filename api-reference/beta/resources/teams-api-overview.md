@@ -13,19 +13,19 @@ doc_type: conceptualPageType
 
 Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, Shifts schedules, and more.
 
-## Common use cases 
+## Common use cases
 
 | Use cases | REST resources |  See also  |
 |:-----------|:--------|:--------|
 | Create and manage teams, groups and channels | [team](../resources/team.md), [channel](../resources/channel.md), [group](../resources/group.md) | [create team](../api/team-put-teams.md), [list teams](../api/user-list-joinedteams.md), [create a channel](../api/channel-post.md) |
 | Add tabs, manage or install apps in the Microsoft Teams app catalog | [teamsTab](../resources/teamstab.md), [teamsAppInstallation](../resources/teamsappinstallation.md) | [create teamsTab](../api/channel-post-tabs.md), [list teamsTab](../api/channel-list-tabs.md), [list installedApps](../api/appcatalogs-list-teamsapps.md) |
 | Create channels and chats to send and receive chat messages | [channel](../resources/channel.md), [chat](../resources/chat.md), [chatMessage](../resources/chatmessage.md) | [create channel](../api/channel-post.md), [list channel](../api/channel-list.md), [send chatMessage in a channel](../api/chatmessage-post.md) |
-| Use tags to classify users or groups based on common attributes within a team | [teamworkTag](../resources/teamworkTag.md), [teamworkTagMember](../resources/teamworkTagMember.md) | [list teamworkTag](../api/teamworkTag-list.md), [create teamworkTag](../api/teamworkTag-post.md) |
+| Use tags to classify users or groups based on common attributes within a team | [teamworkTag](../resources/teamworktag.md), [teamworkTagMember](../resources/teamworktagmember.md) | [list teamworkTag](../api/teamworktag-list.md), [create teamworkTag](../api/teamworktag-post.md) |
 | Create and receive calls, call records or retrieve meeting coordinates | [call](../resources/call.md), [callRecords](../resources/callrecords-api-overview.md) | [answer](../api/call-answer.md), [invite participants](../api/participant-invite.md) | 
 | Connect bots to calls and implement interactive voice response (IVR) | [IVR scenarios](../resources/calls-api-ivr-overview.md)| |
 | Create and retrieve online meetings or check users presence and activity | [onlineMeeting](../resources/onlinemeeting.md), [presence](../resources/presence.md) | [create onlineMeeting](../api/application-post-onlinemeetings.md), [meetingAttendanceReport](../resources/meetingattendancereport.md) | 
 | Create and manage workforce integration with shifts, schedules, time cards or time off in your organization | [workforceIntegration](../resources/workforceintegration.md), [schedule](../resources/schedule.md), [shift](../resources/shift.md), [timeOff](../resources/timeoff.md), [timeOffReason](../resources/timeoffreason.md) | [create workforceIntegration](../api/workforceintegration-post.md), [create schedule](../api/schedule-post-schedulinggroups.md), [create shift](../api/schedule-post-shifts.md), [create timeOff](../api/schedule-post-timesoff.md) |
-| Use employee learning API  to integrate with Viva Learning (preview) | [employee learning](../resources/viva-learning-api-overview.md), [learningProvider](../resources/learningprovider.md), [learningContent](../resources/learningcontent.md) | [list learningProviders](../api/employeeexperience-list-learningproviders.md), [list learningContents](../api/learningprovider-list-learningcontents.md) |
+| Use the employee learning API  to integrate with Viva Learning (preview) | [employee learning](../resources/viva-learning-api-overview.md), [learningProvider](../resources/learningprovider.md), [learningContent](../resources/learningcontent.md) | [list learningProviders](../api/employeeexperience-list-learningproviders.md), [list learningContents](../api/learningprovider-list-learningcontents.md) |
 
 ## Microsoft Teams limits
 
@@ -58,8 +58,6 @@ The following are the differences at the API level between teams and groups:
 - The [List joined teams](../api/user-list-joinedteams.md) method applies only to Microsoft Teams.
 - [Calling](../resources/call.md) and [online meeting](../resources/onlinemeeting.md) APIs apply only to Microsoft Teams.
 - See also the [known issues](/graph/known-issues) for these APIs.
-
->**Note:** If you use the groups API in a [Microsoft Teams app](/microsoftteams/platform/#apps-in-microsoft-teams) rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article [Using Microsoft Graph in your Microsoft Teams pages](/microsoftteams/platform/resources/microsoft-graph).
 
 ## Membership changes in Microsoft Teams
 

@@ -49,7 +49,7 @@ items:
         href: /graph/aad-advanced-queries?context=graph/api/1.0
       - name: Optimize requests with query parameters
         displayName: OData query parameters, OData
-        href: /learn/modules/optimize-data-usage
+        href: /training/modules/optimize-data-usage
     - name: Batching
       href: /graph/json-batching?context=graph/api/1.0
       displayName: Batch request
@@ -62,7 +62,7 @@ items:
         href: /graph/throttling-limits?context=graph/api/1.0
         displayName: throttling
       - name: Optimize network traffic
-        href: /learn/modules/optimize-network-traffic
+        href: /training/modules/optimize-network-traffic
         displayName: throttling
     - name: Change notifications
       items:
@@ -70,7 +70,7 @@ items:
         href: /graph/api/resources/webhooks?context=graph/api/1.0
         displayName: change notifications, WebHooks, set up notifications for changes in resource data
       - name: Change notifications tutorial
-        href: /learn/modules/msgraph-changenotifications-trackchanges
+        href: /training/modules/msgraph-changenotifications-trackchanges
       - name: Missing change notifications
         href: /graph/webhooks-lifecycle?context=graph/api/1.0
       - name: Notifications with resource data
@@ -3527,8 +3527,6 @@ items:
             href: resources/intune-mam-ipv6range.md
           - name: JSON
             href: resources/intune-mam-json.md
-          - name: Key/value pair
-            href: resources/intune-mam-keyvaluepair.md
           - name: Managed app clipboard sharing level
             href: resources/intune-mam-managedappclipboardsharinglevel.md
           - name: Managed app configuration
@@ -4105,6 +4103,8 @@ items:
             href: resources/intune-shared-groupassignmenttarget.md
           - name: Install intent
             href: resources/intune-shared-installintent.md
+          - name: Key/value pair
+            href: resources/intune-shared-keyvaluepair.md
           - name: MIME content
             href: resources/intune-shared-mimecontent.md
           - name: Saved UI state generation options
@@ -4977,6 +4977,7 @@ items:
             - name: Get operation status
               href: api/longrunningoperation-get.md
           - name: Temporary Access Pass
+            displayName: TAP
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
             - name: List
@@ -4987,11 +4988,13 @@ items:
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete
               href: api/temporaryaccesspassauthenticationmethod-delete.md
-        - name: Conditional access
+        - name: Conditional Access
           items:
+          - name: Conditional Access
+            href: resources/conditionalaccessroot.md
           - name: Policies
             items:
-            - name: Conditional access policy
+            - name: Conditional Access policy
               href: resources/conditionalaccesspolicy.md
             - name: List
               href: api/conditionalaccessroot-list-policies.md
@@ -5043,6 +5046,18 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
+          - name: Authentication context
+            items:
+            - name: Authentication context class reference
+              href: resources/authenticationcontextclassreference.md
+            - name: List
+              href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
+            - name: Create or update
+              href: api/authenticationcontextclassreference-update.md    
+            - name: Get
+              href: api/authenticationcontextclassreference-get.md
+            - name: Delete
+              href: api/authenticationcontextclassreference-delete.md  
         - name: Cross-tenant access
           items:
           - name: Overview
@@ -5292,6 +5307,16 @@ items:
                 href: api/emailauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/emailauthenticationmethodconfiguration-delete.md
+            - name: X509 certificate
+              displayName: certificate-based authentication, CBA
+              href: resources/x509Certificateauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/x509certificateauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/x509certificateauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/x509certificateauthenticationmethodconfiguration-delete.md
           - name: Authorization policy
             href: resources/authorizationpolicy.md
             items:
@@ -5610,6 +5635,20 @@ items:
               href: api/accesspackage-filterbycurrentuser.md
             - name: Get applicable policy requirements
               href: api/accesspackage-getapplicablepolicyrequirements.md
+            - name: List incompatible access packages
+              href: api/accesspackage-list-incompatibleaccesspackages.md
+            - name: Add incompatible access package
+              href: api/accesspackage-post-incompatibleaccesspackage.md
+            - name: Remove incompatible access package
+              href: api/accesspackage-delete-incompatibleaccesspackage.md
+            - name: List incompatible groups
+              href: api/accesspackage-list-incompatiblegroups.md
+            - name: Add incompatible group
+              href: api/accesspackage-post-incompatiblegroup.md
+            - name: Remove incompatible group
+              href: api/accesspackage-delete-incompatiblegroup.md
+            - name: List access packages incompatible with
+              href: api/accesspackage-list-accesspackagesincompatiblewith.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:
@@ -5617,6 +5656,8 @@ items:
               href: api/entitlementmanagement-list-assignments.md
             - name: Get
               href: api/accesspackageassignment-get.md
+            - name: Check additional access
+              href: api/accesspackageassignment-additionalaccess.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
             - name: Reprocess
@@ -6310,6 +6351,15 @@ items:
             href: api/reportroot-getoffice365activeusercounts.md
           - name: Get services user counts
             href: api/reportroot-getoffice365servicesusercounts.md
+        - name: Microsoft 365 Apps usage
+          href: resources/microsoft-365-apps-usage-report.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getm365appuserdetail.md
+          - name: Get user counts
+            href: api/reportroot-getm365appusercounts.md
+          - name: Get platform user counts
+            href: api/reportroot-getm365appplatformusercounts.md
         - name: Microsoft 365 groups activity
           href: resources/office-365-groups-activity-reports.md
           items:
@@ -6439,6 +6489,29 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
+      - name: Microsoft Defender for Office 365 security reports
+        items:
+        - name: Attack simulation reports
+          displayname: Attack simulation and training
+          href: resources/report-m365defender-reports-overview.md
+        - name: Repeat offender
+          items:
+          - name: Repeat offender
+            href: resources/attacksimulationrepeatoffender.md
+          - name: Get repeat offenders
+            href: api/securityreportsroot-getattacksimulationrepeatoffenders.md
+        - name: Simulation data
+          items:
+          - name: Simulation user coverage
+            href: resources/attacksimulationsimulationusercoverage.md
+          - name: Get simulation coverage for users
+            href: api/securityreportsroot-getattacksimulationsimulationusercoverage.md
+        - name: Training data
+          items:
+          - name: Training user coverage
+            href: resources/attacksimulationtrainingusercoverage.md
+          - name: Get training coverage for users
+            href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
     - name: Search
       displayname: Microsoft Search API
       items:
@@ -6749,6 +6822,57 @@ items:
           href: api/securescorecontrolprofile-update.md
       - name: Errors
         href: resources/security-error-codes.md
+      - name: Attack simulation and training
+        items:
+        - name: Simulations
+          items:
+          - name: Simulation
+            href: resources/simulation.md
+          - name: List
+            href: api/attacksimulationroot-list-simulations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulations.md
+          - name: List simulation users
+            href: api/usersimulationdetails-list.md
+          - name: Get simulation overview
+            href: api/simulationreportoverview-get.md
+        - name: Simulation automation
+          items:
+          - name: Simulation automation
+            href: resources/simulationautomation.md
+          - name: List
+            href: api/attacksimulationroot-list-simulationautomations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulationautomations.md
+        - name: Simulation automation run
+          items:
+          - name: Simulation automation run
+            href: resources/simulationautomationrun.md
+          - name: List
+            href: api/simulationautomation-list-runs.md
+        - name: Reports
+          items:
+          - name: Attack simulation reports
+            displayname: Attack simulation and training
+            href: resources/report-m365defender-reports-overview.md
+          - name: Repeat offenders
+            items:
+            - name: Repeat offender
+              href: resources/attacksimulationrepeatoffender.md
+            - name: Get repeat offenders
+              href: api/securityreportsroot-getattacksimulationrepeatoffenders.md
+          - name: Simulation data
+            items:
+            - name: Simulation user coverage
+              href: resources/attacksimulationsimulationusercoverage.md
+            - name: Get simulation coverage for users
+              href: api/securityreportsroot-getattacksimulationsimulationusercoverage.md
+          - name: Training data
+            items:
+            - name: Training user coverage
+              href: resources/attacksimulationtrainingusercoverage.md
+            - name: Get training coverage for users
+              href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
     - name: Sites and lists
       displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
       items:
@@ -7168,10 +7292,15 @@ items:
               href: api/call-keepalive.md
             - name: Log teleconference device quality data
               href: api/call-logteleconferencedevicequality.md
-          - name: Content sharing session
-            items:
             - name: Change screen sharing role
               href: api/call-changescreensharingrole.md
+          - name: Content sharing session
+            href: resources/contentsharingsession.md
+            items:
+            - name: List
+              href: api/call-list-contentsharingsessions.md
+            - name: Get
+              href: api/contentsharingsession-get.md    
           - name: IVR scenarios
             href: resources/calls-api-ivr-overview.md
             items:
@@ -7183,6 +7312,15 @@ items:
               href: api/call-cancelmediaprocessing.md
             - name: Subscribe to tone
               href: api/call-subscribetotone.md
+          - name: Large gallery view operation
+            items:
+            - name: Add large gallery view
+              href: api/call-addlargegalleryview.md
+            - name: Add large gallery view operation
+              href: resources/addlargegalleryviewoperation.md
+              items:
+              - name: Get large gallery view operation status
+                href: api/addlargegalleryviewoperation-get.md
           - name: Participant
             href: resources/participant.md
             items:
@@ -7280,6 +7418,8 @@ items:
             href: api/team-sendactivitynotification.md
           - name: Send notification to user
             href: api/userteamwork-sendactivitynotification.md
+          - name: Send notifications to multiple users in bulk
+            href: api/teamwork-sendactivitynotificationtorecipients.md
         - name: Channel
           href: resources/channel.md
           items:
@@ -7374,6 +7514,20 @@ items:
             href: api/chat-post-messages.md
           - name: Get chat between user and app
             href: api/userscopeteamsappinstallation-get-chat.md
+          - name: Mark chat as read
+            href: api/chat-markchatreadforuser.md
+          - name: Mark chat as unread
+            href: api/chat-markchatunreadforuser.md
+          - name: Hide chat
+            href: api/chat-hideforuser.md
+          - name: Unhide chat
+            href: api/chat-unhideforuser.md
+          - name: List pinned messages
+            href: api/chat-list-pinnedmessages.md
+          - name: Pin message
+            href: api/chat-post-pinnedmessages.md
+          - name: Unpin message
+            href: api/chat-delete-pinnedmessages.md
         - name: Chat message
           href: resources/chatmessage.md
           items:
@@ -7401,6 +7555,21 @@ items:
             href: api/chats-getallmessages.md
           - name: Get hosted content
             href: api/chatmessagehostedcontent-get.md
+          - name: List pinned messages
+            href: api/chat-list-pinnedmessages.md
+          - name: Pin message
+            href: api/chat-post-pinnedmessages.md
+          - name: Unpin message
+            href: api/chat-delete-pinnedmessages.md
+        - name: Pinned chat message
+          href: resources/pinnedchatmessageinfo.md
+          items:
+          - name: List pinned messages
+            href: api/chat-list-pinnedmessages.md
+          - name: Pin message
+            href: api/chat-post-pinnedmessages.md
+          - name: Unpin message
+            href: api/chat-delete-pinnedmessages.md
         - name: Team
           href: resources/team.md
           items:
@@ -7446,6 +7615,30 @@ items:
             href: /graph/teams-list-all-teams?context=graph/api/1.0
           - name: Complete migration for team
             href: api/team-completemigration.md
+        - name: Tag
+          href: resources/teamworktag.md
+          items:
+          - name: List
+            href: api/teamworktag-list.md
+          - name: Create
+            href: api/teamworktag-post.md
+          - name: Get
+            href: api/teamworktag-get.md
+          - name: Update
+            href: api/teamworktag-update.md
+          - name: Delete
+            href: api/teamworktag-delete.md
+        - name: Tag member
+          href: resources/teamworktagmember.md
+          items:
+          - name: List
+            href: api/teamworktagmember-list.md
+          - name: Create
+            href: api/teamworktagmember-post.md
+          - name: Get
+            href: api/teamworktagmember-get.md
+          - name: Delete
+            href: api/teamworktagmember-delete.md
       - name: Shift management
         items:
         - name: Offer shift

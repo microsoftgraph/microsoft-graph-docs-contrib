@@ -160,8 +160,9 @@ $requestBody->setMaximumAttendeesCount(5);
 $requestBody->setFilledAttendeesCount(1);
 
 $customersBookingCustomerInformationBase1 = new BookingCustomerInformationBase();
+$customersBookingCustomerInformationBase1->set@odatatype('#microsoft.graph.bookingCustomerInformation');
+
 $additionalData = [
-'@odata.type' => '#microsoft.graph.bookingCustomerInformation', 
 'customerId' => '7ed53fa5-9ef2-4f2f-975b-27447440bc09', 
 'name' => 'Jordan Miller', 
 'emailAddress' => 'jordanm@contoso.com', 

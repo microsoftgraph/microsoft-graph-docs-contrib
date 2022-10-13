@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 User user = new User();
 PasswordProfile passwordProfile = new PasswordProfile();
-passwordProfile.forceChangePasswordNextSignIn = false;
+passwordProfile.forceChangePasswordNextSignIn = true;
 passwordProfile.password = "xWwvJ]6NMw+bWH-d";
 user.passwordProfile = passwordProfile;
 

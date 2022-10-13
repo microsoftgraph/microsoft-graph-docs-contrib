@@ -15,7 +15,7 @@ messageIds := []string {
 }
 requestBody.SetMessageIds(messageIds)
 
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Favorite().Post(requestBody)
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().Favorite().Post(context.Background(), requestBody, nil)
 
 
 ```

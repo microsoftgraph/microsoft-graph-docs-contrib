@@ -27,7 +27,7 @@ additionalData := map[string]interface{}{
 authenticationConfiguration.SetAdditionalData(additionalData)
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById("accessPackageCatalog-id").CustomAccessPackageWorkflowExtensions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById("accessPackageCatalog-id").CustomAccessPackageWorkflowExtensions().Post(context.Background(), requestBody, nil)
 
 
 ```

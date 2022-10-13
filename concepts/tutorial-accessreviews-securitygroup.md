@@ -1,12 +1,12 @@
 ---
-title: "Tutorial: Use the access reviews API to review access to your security groups"
+title: "Review access to your security groups using the access reviews API in Microsoft Graph"
 description: "Learn how to use the access reviews API to review access to a security group in your Azure AD tenant and test API calls before you automate them into scripts or apps."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 
-# Tutorial: Use the access reviews API to review access to your security groups
+# Review access to your security groups using the access reviews API in Microsoft Graph
 
 The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. One of the most efficient and effective methods to manage access privileges for principals to other resources is through Azure AD security groups. For example, hundreds of users can be assigned to a security group and the security group assigned access to a folder. Using the access reviews API, organizations can periodically attest to principals that have access to such groups and by extension, other resources in the organization.
 
@@ -19,25 +19,14 @@ This tutorial guides you to use the access reviews API to review access to a sec
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a Global Administrator or Identity Governance Administrator Azure AD role.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator or Identity Governance Administrator role.
   + [Optional] Open a new **incognito**, **anonymous**, or **InPrivate browser** window. You'll sign in later in this tutorial.
-+ The following delegated permissions: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
-
-To consent to the required permissions in Graph Explorer:
-1. Select the settings gear icon to the right of the user account details, and then select **Select permissions**.
-
-    :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select Microsoft Graph permissions." border="true":::
-
-2. Scroll through the list of permissions to these permissions:
-   + AccessReview (3), expand and then select **AccessReview.ReadWrite.All**.
-   + Group (2), expand and then select **Group.ReadWrite.All**.
-  
-    Select **Consent**, and in the pop-up window, choose to **Consent on behalf of your organization** and then select **Accept** to accept the consent of the permissions.
-
-   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
++ Grant yourself the following delegated permissions: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
    
 >[!NOTE]
 >The response objects shown in this tutorial might be shortened for readability.
+>
+> Review of Privileged Access Groups will only assign active owners as the reviewers. Eligible owners are not included. At least one fallback reviewer is required for a Privileged Access Groups review. If there are no active owners when the review begins, the fallback reviewers will be assigned to the review.
    
 ## Step 1: Create test users in your tenant
 
@@ -592,13 +581,13 @@ Reviewers can also visit the [My Access portal](https://myaccess.microsoft.com/)
 + List the pending access reviews. The user can follow one of two ways to get there:
   + Option 1: Select **Review access** button from the email notification that they received in their mail inbox. The email notification is like the following screenshot. Selecting this button directs them to the pending access review.
 
-  :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/emailnotification.png" alt-text="Email notification to review your access." border="true":::
+  :::image type="content" source="images/tutorials-identity/tutorial-access-reviews-emailnotification.png" alt-text="Email notification to review your access." border="true":::
 
   + Option 2: Go to the [My Access portal](https://myaccess.microsoft.com/) portal. Select the **Access reviews** menu and select the **Groups and Apps** tab.
 
 + From the list of access reviews, select the access review for which you want to post the decision. Select **Yes** to post the decision that you still need access to **Building security**. Enter a reason, then select **Submit**.
 
-  :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/selfattest.png" alt-text="Self-attest to the need to maintain access to a resource.":::
+  :::image type="content" source="images/tutorials-identity/tutorial-access-reviews-selfattest.png" alt-text="Self-attest to the need to maintain access to a resource.":::
 
 
 You can now sign out and exit the incognito browser session.

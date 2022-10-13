@@ -41,7 +41,7 @@ mentions := []graphmodels.Mentionable {
 }
 requestBody.SetMentions(mentions)
 
-result, err := graphClient.Me().Messages().Post(requestBody)
+result, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

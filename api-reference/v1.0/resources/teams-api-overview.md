@@ -18,6 +18,7 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 | Create and manage teams, groups and channels | [team](../resources/team.md), [channel](../resources/channel.md), [group](../resources/group.md) | [create team](../api/team-put-teams.md), [list teams](../api/user-list-joinedteams.md), [create channel](../api/channel-post.md) |
 | Add tabs, manage or install apps in the Microsoft Teams app catalog | [teamsTab](../resources/teamstab.md), [teamsAppInstallation](../resources/teamsappinstallation.md) | [create teamsTab](../api/channel-post-tabs.md), [list teamsTab](../api/channel-list-tabs.md), [list apps](../api/appcatalogs-list-teamsapps.md) |
 | Create channels and chats to send and receive chat messages | [channel](../resources/channel.md), [chat](../resources/chat.md), [chatMessage](../resources/chatmessage.md) | [create channel](../api/channel-post.md), [list channel](../api/channel-list.md), [send chatMessage](../api/chatmessage-post.md) |
+| Use tags to classify users or groups based on common attributes within a team | [teamworkTag](../resources/teamworktag.md), [teamworkTagMember](../resources/teamworktagmember.md) | [list teamworkTag](../api/teamworktag-list.md), [create teamworkTag](../api/teamworktag-post.md) |
 | Create and receive calls, call records or retrieve meeting coordinates | [call](../resources/call.md), [callRecords](../resources/callrecords-api-overview.md) |  [answer](../api/call-answer.md), [invite participants](../api/participant-invite.md) |
 | Connect bots to calls and implement interactive voice response (IVR) | [IVR scenarios](../resources/calls-api-ivr-overview.md) |  |
 | Create and retrieve online meetings or check users presence and activity | [onlineMeetings](../resources/onlinemeeting.md), [presence](../resources/presence.md) | [create onlineMeetings](../api/application-post-onlinemeetings.md), [meetingAttendanceReport](../resources/meetingattendancereport.md)
@@ -54,8 +55,6 @@ The following are the differences at the API level between teams and groups:
 - The [List joined teams](../api/user-list-joinedteams.md) method applies only to Microsoft Teams.
 - [Calling](../resources/call.md) and [online meeting](../resources/onlinemeeting.md) APIs apply only to Microsoft Teams.
 - See also the [known issues](/graph/known-issues) for these APIs.
-
->**Note:** If you use the groups API in a [Microsoft Teams app](/microsoftteams/platform/#apps-in-microsoft-teams) rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article [Using Microsoft Graph in your Microsoft Teams pages](/microsoftteams/platform/resources/microsoft-graph).
 
 ## Membership changes in Microsoft Teams
 

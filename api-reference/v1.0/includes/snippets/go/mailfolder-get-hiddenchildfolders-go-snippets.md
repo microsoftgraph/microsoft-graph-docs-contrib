@@ -17,7 +17,7 @@ configuration := &graphconfig.ChildFoldersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").ChildFolders().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").ChildFolders().Get(context.Background(), configuration)
 
 
 ```

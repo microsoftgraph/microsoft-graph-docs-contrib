@@ -163,7 +163,7 @@ Content-type: application/json
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
 - [Sort](/graph/search-concept-sort) search results
-- Use [aggregations](/graph/search-concept-aggregations) to refine search results
+- Use [aggregations](/graph/search-concept-aggregation) to refine search results
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
