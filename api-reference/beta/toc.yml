@@ -14947,6 +14947,16 @@ items:
           href: api/securityaction-get.md
         - name: Cancel security action
           href: api/securityaction-cancelsecurityaction.md
+      - name: Advanced hunting (preview)
+        items:
+        - name: Run hunting query
+          href: api/security-security-runhuntingquery.md
+        - name: Hunting query results
+          href: resources/security-huntingqueryresults.md
+        - name: Hunting row result
+          href: resources/security-huntingrowresult.md
+        - name: Single property schema
+          href: resources/security-singlepropertyschema.md
       - name: Alerts and incidents (preview)
         items:
         - name: Alert
@@ -14959,6 +14969,8 @@ items:
             href: api/security-alert-get.md
           - name: Update alert
             href: api/security-alert-update.md
+          - name: Create comment for alert
+            href: api/security-alert-post-comments.md
         - name: Alert evidence
           items:
           - name: Alert evidence
@@ -15001,6 +15013,8 @@ items:
             href: api/security-incident-get.md
           - name: Update incident
             href: api/security-incident-update.md
+          - name: Create comment for incident
+            href: api/security-incident-post-comments.md
       - name: Attack simulation and training
         items:
         - name: Simulations
