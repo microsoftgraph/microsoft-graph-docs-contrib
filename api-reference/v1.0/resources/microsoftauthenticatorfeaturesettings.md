@@ -1,6 +1,6 @@
 ---
 title: "microsoftAuthenticatorFeatureSettings resource type"
-description: "Represents Microsoft Authenticator settings such as number matching and location context, and whether they are enabled for all users or specific users only."
+description: "Represents Microsoft Authenticator settings such as application context and location context, and whether they are enabled for all users or specific users only."
 author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
