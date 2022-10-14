@@ -11666,7 +11666,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "featureSettings",
           "ChangeType": "Addition",
-          "Description": "Added the `featureSettings` property to the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-1.0) resource. This property allows you to configure Microsoft Authenticator settings such as number matching and location context, and whether they are enabled for all users or specific users only.",
+          "Description": "Added the `featureSettings` property to the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-1.0) resource. This property allows you to configure Microsoft Authenticator settings such as application context and location context, and whether they are enabled for all users or specific users only.",
           "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
         }
       ],
