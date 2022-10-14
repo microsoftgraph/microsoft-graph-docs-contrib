@@ -2,6 +2,32 @@
     "changelog": [
         {
             "ChangeList": [
+                {
+                    "Id": "234823ab-d3b3-4ad6-9eab-0db8fe3d93a7",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "udpConnectivityCheckStunUrlNotAllowListed",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `udpConnectivityCheckStunUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                  },
+                  {
+                    "Id": "234823ab-d3b3-4ad6-9eab-0db8fe3d93a7",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "udpConnectivityCheckUnknownError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `udpConnectivityCheckUnknownError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                  }
+            ],
+            "Id": "234823ab-d3b3-4ad6-9eab-0db8fe3d93a7",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-10-14 06:39:59.1876103Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
               {
                 "Id": "a33b829e-5c61-4ee8-9737-5ab14fe3f7bf",
                 "ApiChange": "Property",
