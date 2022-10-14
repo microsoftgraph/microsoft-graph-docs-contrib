@@ -75,7 +75,7 @@
 			  "ApiChange": "Resource",
 			  "ChangedApiName": "conditionalAccessAllExternalTenants",
 			  "ChangeType": "Addition",
-			  "Description": "Added the [conditionalAccessAllExternalTenants] (https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessAllExternalTenants?view=graph-rest-beta) resource.",
+			  "Description": "Added the [conditionalAccessAllExternalTenants] (https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessAllExternalTenants?view=graph-rest-beta) resource.",
 			  "Target": "conditionalAccessAllExternalTenants"
 			},
 			{
@@ -83,7 +83,7 @@
 			  "ApiChange": "Resource",
 			  "ChangedApiName": "conditionalAccessEnumeratedExternalTenants",
 			  "ChangeType": "Addition",
-			  "Description": "Added the [conditionalAccessEnumeratedExternalTenants] (https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessEnumeratedExternalTenants?view=graph-rest-beta) resource.",
+			  "Description": "Added the [conditionalAccessEnumeratedExternalTenants] (https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessEnumeratedExternalTenants?view=graph-rest-beta) resource.",
 			  "Target": "conditionalAccessEnumeratedExternalTenants"
 			},
 			{
@@ -91,7 +91,7 @@
 			  "ApiChange": "Resource",
 			  "ChangedApiName": "conditionalAccessExternalTenants",
 			  "ChangeType": "Addition",
-			  "Description": "Added the [conditionalAccessExternalTenants] (https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessExternalTenants?view=graph-rest-beta)  resource.",
+			  "Description": "Added the [conditionalAccessExternalTenants] (https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessExternalTenants?view=graph-rest-beta)  resource.",
 			  "Target": "conditionalAccessExternalTenants"
 			},
 			{
@@ -99,7 +99,7 @@
 			  "ApiChange": "Resource",
 			  "ChangedApiName": "conditionalAccessGuestsOrExternalUsers",
 			  "ChangeType": "Addition",
-			  "Description": "Added the [conditionalAccessGuestsOrExternalUsers](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessGuestsOrExternalUsers?view=graph-rest-beta) resource.",
+			  "Description": "Added the [conditionalAccessGuestsOrExternalUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGuestsOrExternalUsers?view=graph-rest-beta) resource.",
 			  "Target": "conditionalAccessGuestsOrExternalUsers"
 			},
 			{
@@ -107,7 +107,7 @@
 			  "ApiChange": "Property",
 			  "ChangedApiName": "excludeGuestsOrExternalUsers",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **excludeGuestsOrExternalUsers** property to the [conditionalaccessusers](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessusers?view=graph-rest-beta) resource.",
+			  "Description": "Added the **excludeGuestsOrExternalUsers** property to the [conditionalaccessusers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessusers?view=graph-rest-beta) resource.",
 			  "Target": "conditionalAccessUsers"
 			},
 			{
@@ -115,7 +115,7 @@
 			  "ApiChange": "Property",
 			  "ChangedApiName": "includeGuestsOrExternalUsers",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **includeGuestsOrExternalUsers** property to the [conditionalaccessusers](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessusers?view=graph-rest-beta) resource. ",
+			  "Description": "Added the **includeGuestsOrExternalUsers** property to the [conditionalaccessusers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessusers?view=graph-rest-beta) resource. ",
 			  "Target": "conditionalAccessUsers"
 			}
 		      ],
@@ -395,6 +395,25 @@
 			"WorkloadArea": "Identity and access",
 			"SubArea": "Identity and sign-in"
 		  },
+		  {
+
+			"ChangeList": [
+				{
+				"Id": "df8951cf-1bb2-4670-ba15-bd95f1e0f44a",
+				"ApiChange": "Relationship",
+				"ChangedApiName": "authenticationStrength",
+				"ChangeType": "Addition",
+				"Description": "Added the **authenticationStrength** relationship to the [conditionalAccessGrantControls](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) resource.",
+				"Target": "conditionalAccessGrantControls"
+				}
+			],
+			"Id": "df8951cf-1bb2-4670-ba15-bd95f1e0f44a",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-10-12T00:00:00.4281584Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
 		{
 			"ChangeList": [
 				{
