@@ -385,16 +385,42 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "runHuntingQuery",
 					"ChangeType": "Addition",
-					"Description": "Added the [runHuntingQuery](https://docs.microsoft.com/en-us/graph/api/security-security-runHuntingQuery?view=graph-rest-beta) method to the [runHuntingQuery](https://docs.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+					"Description": "Added the [runHuntingQuery](https://docs.microsoft.com/en-us/graph/api/security-security-runHuntingQuery?view=graph-rest-beta) method to the [security](https://docs.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
 					"Target": "runHuntingQuery"
-				}
+				}				
 			],
 			"Id": "81de8e8a-4ac0-11ed-b878-0242ac120002",
 			"Cloud": "Prod",
 			"Version": "beta",
-			"CreatedDateTime": "2022-10-13T13:00:00.0000000Z",
+			"CreatedDateTime": "2022-10-14T13:00:00.0000000Z",
 			"WorkloadArea": "Security",
-			"SubArea": ""
+			"SubArea": "Advanced hunting"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "68579e1b-bf41-47ff-8fde-1e32f960b9b8",
+					"ApiChange": "Method",
+					"ChangedApiName": "POST",
+					"ChangeType": "Addition",
+					"Description": "Added the [create comment](https://docs.microsoft.com/en-us/graph/api/security-alert-post-comments?view=graph-rest-beta) operation to the [alert](https://docs.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
+					"Target": "alert"
+				},
+				{
+					"Id": "68579e1b-bf41-47ff-8fde-1e32f960b9b8",
+					"ApiChange": "Method",
+					"ChangedApiName": "POST",
+					"ChangeType": "Addition",
+					"Description": "Added the [create comment](https://docs.microsoft.com/en-us/graph/api/security-incident-post-comments?view=graph-rest-beta) operation to the [incident](https://docs.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource.",
+					"Target": "incident"
+				}								
+			],
+			"Id": "68579e1b-bf41-47ff-8fde-1e32f960b9b8",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-10-14T13:00:00.0000000Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
 		}
 	]
 }

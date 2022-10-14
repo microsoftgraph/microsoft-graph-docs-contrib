@@ -31,23 +31,24 @@ Take immediate action to defend against threats using the [securityAction](secur
 
 ## Advanced hunting (preview)
 Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
-With the beta API you can run a  KQL query on data stored in Microsoft 365 Defender and leverage the returned result set to enrich an existing investigation or to uncover undetected threats in your network. 
+
+Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a KQL query on data stored in Microsoft 365 Defender. Leverage the returned result set to enrich an existing investigation or to uncover undetected threats in your network. 
 
 ### Quotas and resource allocation
 
 1. You can only run a query on data from the last 30 days.
 
-2. The results will include a maximum of 100,000 rows.
+2. The results include a maximum of 100,000 rows.
 
 3. The number of executions is limited per tenant:
-   - API calls: Up to 45 calls per minute, up to 1500 calls per hour.
+   - API calls: Up to 45 requests per minute, and up to 1500 requests per hour.
    - Execution time: 10 minutes of running time every hour and 3 hours of running time a day.
 
 4. The maximal execution time of a single request is 200 seconds.
 
-5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached.
+5. A response code of HTTP 429 means you have reached the quota for either the number of API calls or execution time. Refer to the response body to confirm the limit you have reached.
 
-6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again" will appear.
+6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, you would get an HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again".
 
 ## Alerts
 Alerts are suspicious activities in a customer's tenant that Microsoft or partner security providers have identified and flagged for action. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is alerts from multiple security providers for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.
