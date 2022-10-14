@@ -24,7 +24,7 @@ Represents a Microsoft Authenticator authentication methods policy. Authenticati
 |:---|:---|:---|
 |id|String|The authentication method policy identifier.|
 |state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
-|featureSettings|[microsoftAuthenticatorFeatureSettings](../resources/microsoftauthenticatorfeaturesettings.md)|A collection of Microsoft Authenticator settings such as number matching and location context, and whether they are enabled for all users or specific users only.|
+|featureSettings|[microsoftAuthenticatorFeatureSettings](../resources/microsoftauthenticatorfeaturesettings.md)|A collection of Microsoft Authenticator settings such as application context and location context, and whether they are enabled for all users or specific users only.|
 
 ## Relationships
 |Relationship|Type|Description|
