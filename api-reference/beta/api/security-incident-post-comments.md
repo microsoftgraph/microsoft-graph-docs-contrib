@@ -50,7 +50,7 @@ In the request body, use `@odata.type` to specify the parameter type of [alertCo
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated list of all [alertComment](../resources/security-alertcomment.md) of the incident.
+If successful, this method returns a `200 OK` response code and an updated list of all [alertComment](../resources/security-alertcomment.md) resources of the incident.
 
 ## Examples
 
