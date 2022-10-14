@@ -18,7 +18,7 @@ $requestBody->setIsOrganizationDefault(true);
 
 
 
-$graphServiceClient->policies()->tokenIssuancePoliciesById('tokenIssuancePolicy-id')->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->tokenIssuancePoliciesById('tokenIssuancePolicy-id')->patch($requestBody);
 
 
 ```

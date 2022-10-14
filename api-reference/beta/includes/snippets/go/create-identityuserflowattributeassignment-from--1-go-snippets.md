@@ -20,7 +20,7 @@ userAttributeValues := []graphmodels.UserAttributeValuesItemable {
 
 }
 requestBody.SetUserAttributeValues(userAttributeValues)
-userAttribute := graphmodels.NewuserAttribute()
+userAttribute := graphmodels.NewIdentityUserFlowAttribute()
 id := "extension_guid_shoeSize"
 userAttribute.SetId(&id) 
 requestBody.SetUserAttribute(userAttribute)

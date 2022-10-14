@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "addContentFooterAction",
           "ChangeType": "Addition",
-          "Description": "Added the [addContentFooterAction](https://docs.microsoft.com/graph/api/resources/security-addcontentfooteraction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [addContentFooterAction](https://learn.microsoft.com/graph/api/resources/security-addcontentfooteraction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "addContentFooterAction"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "addContentHeaderAction",
           "ChangeType": "Addition",
-          "Description": "Added the [addContentHeaderAction](https://docs.microsoft.com/graph/api/resources/security-addcontentheaderaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [addContentHeaderAction](https://learn.microsoft.com/graph/api/resources/security-addcontentheaderaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "addContentHeaderAction"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "addWatermarkAction",
           "ChangeType": "Addition",
-          "Description": "Added the [addWatermarkAction](https://docs.microsoft.com/graph/api/resources/security-addwatermarkaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [addWatermarkAction](https://learn.microsoft.com/graph/api/resources/security-addwatermarkaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "addWatermarkAction"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applyLabelAction",
           "ChangeType": "Addition",
-          "Description": "Added the [applyLabelAction](https://docs.microsoft.com/graph/api/resources/security-applylabelaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [applyLabelAction](https://learn.microsoft.com/graph/api/resources/security-applylabelaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "applyLabelAction"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "classificationResult",
           "ChangeType": "Addition",
-          "Description": "Added the [classificationResult](https://docs.microsoft.com/graph/api/resources/security-classificationresult?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [classificationResult](https://learn.microsoft.com/graph/api/resources/security-classificationresult?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "classificationResult"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contentInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [contentInfo](https://docs.microsoft.com/graph/api/resources/security-contentinfo?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [contentInfo](https://learn.microsoft.com/graph/api/resources/security-contentinfo?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "contentInfo"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contentLabel",
           "ChangeType": "Addition",
-          "Description": "Added the [contentLabel](https://docs.microsoft.com/graph/api/resources/security-contentlabel?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [contentLabel](https://learn.microsoft.com/graph/api/resources/security-contentlabel?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "contentLabel"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customAction",
           "ChangeType": "Addition",
-          "Description": "Added the [customAction](https://docs.microsoft.com/graph/api/resources/security-customaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [customAction](https://learn.microsoft.com/graph/api/resources/security-customaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "customAction"
         },
         {
@@ -71,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "downgradeJustification",
           "ChangeType": "Addition",
-          "Description": "Added the [downgradeJustification](https://docs.microsoft.com/graph/api/resources/security-downgradejustification?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [downgradeJustification](https://learn.microsoft.com/graph/api/resources/security-downgradejustification?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "downgradeJustification"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "informationProtection",
           "ChangeType": "Addition",
-          "Description": "Added the [informationProtection](https://docs.microsoft.com/graph/api/resources/security-informationprotection?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [informationProtection](https://learn.microsoft.com/graph/api/resources/security-informationprotection?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
           "Target": "informationProtection"
         },
         {
@@ -87,7 +87,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "informationProtectionAction",
           "ChangeType": "Addition",
-          "Description": "Added the [informationProtectionAction](https://docs.microsoft.com/graph/api/resources/security-informationprotectionaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [informationProtectionAction](https://learn.microsoft.com/graph/api/resources/security-informationprotectionaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "informationProtectionAction"
         },
         {
@@ -95,7 +95,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "informationProtectionPolicySetting",
           "ChangeType": "Addition",
-          "Description": "Added the [informationProtectionPolicySetting](https://docs.microsoft.com/graph/api/resources/security-informationprotectionpolicysetting?view=graph-rest-beta) resource and a supported method to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [informationProtectionPolicySetting](https://learn.microsoft.com/graph/api/resources/security-informationprotectionpolicysetting?view=graph-rest-beta) resource and a supported method to the microsoft.graph.security subnamespace.",
           "Target": "informationProtectionPolicySetting"
         },
         {
@@ -103,7 +103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "justifyAction",
           "ChangeType": "Addition",
-          "Description": "Added the [justifyAction](https://docs.microsoft.com/graph/api/resources/security-justifyaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [justifyAction](https://learn.microsoft.com/graph/api/resources/security-justifyaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "justifyAction"
         },
         {
@@ -111,7 +111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "keyValuePair",
           "ChangeType": "Addition",
-          "Description": "Added the [keyValuePair](https://docs.microsoft.com/graph/api/resources/security-keyvaluepair?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [keyValuePair](https://learn.microsoft.com/graph/api/resources/security-keyvaluepair?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "keyValuePair"
         },
         {
@@ -119,7 +119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "labelingOptions",
           "ChangeType": "Addition",
-          "Description": "Added the [labelingOptions](https://docs.microsoft.com/graph/api/resources/security-labelingoptions?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [labelingOptions](https://learn.microsoft.com/graph/api/resources/security-labelingoptions?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "labelingOptions"
         },
         {
@@ -127,7 +127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "metadataAction",
           "ChangeType": "Addition",
-          "Description": "Added the [metadataAction](https://docs.microsoft.com/graph/api/resources/security-metadataaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [metadataAction](https://learn.microsoft.com/graph/api/resources/security-metadataaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "metadataAction"
         },
         {
@@ -135,7 +135,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "protectAdhocAction",
           "ChangeType": "Addition",
-          "Description": "Added the [protectAdhocAction](https://docs.microsoft.com/graph/api/resources/security-protectadhocaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [protectAdhocAction](https://learn.microsoft.com/graph/api/resources/security-protectadhocaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "protectAdhocAction"
         },
         {
@@ -143,7 +143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "protectByEncryptOnlyAction",
           "ChangeType": "Addition",
-          "Description": "Added the [protectByEncryptOnlyAction](https://docs.microsoft.com/graph/api/resources/security-protectbyencryptonlyaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [protectByEncryptOnlyAction](https://learn.microsoft.com/graph/api/resources/security-protectbyencryptonlyaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "protectByEncryptOnlyAction"
         },
         {
@@ -151,7 +151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "protectByTemplateAction",
           "ChangeType": "Addition",
-          "Description": "Added the [protectByTemplateAction](https://docs.microsoft.com/graph/api/resources/security-protectbytemplateaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [protectByTemplateAction](https://learn.microsoft.com/graph/api/resources/security-protectbytemplateaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "protectByTemplateAction"
         },
         {
@@ -159,7 +159,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "protectDoNotForwardAction",
           "ChangeType": "Addition",
-          "Description": "Added the [protectDoNotForwardAction](https://docs.microsoft.com/graph/api/resources/security-protectdonotforwardaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [protectDoNotForwardAction](https://learn.microsoft.com/graph/api/resources/security-protectdonotforwardaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "protectDoNotForwardAction"
         },
         {
@@ -167,7 +167,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recommendLabelAction",
           "ChangeType": "Addition",
-          "Description": "Added the [recommendLabelAction](https://docs.microsoft.com/graph/api/resources/security-recommendlabelaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [recommendLabelAction](https://learn.microsoft.com/graph/api/resources/security-recommendlabelaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "recommendLabelAction"
         },
         {
@@ -175,7 +175,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "removeContentFooterAction",
           "ChangeType": "Addition",
-          "Description": "Added the [removeContentFooterAction](https://docs.microsoft.com/graph/api/resources/security-removecontentfooteraction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [removeContentFooterAction](https://learn.microsoft.com/graph/api/resources/security-removecontentfooteraction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "removeContentFooterAction"
         },
         {
@@ -183,7 +183,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "removeContentHeaderAction",
           "ChangeType": "Addition",
-          "Description": "Added the [removeContentHeaderAction](https://docs.microsoft.com/graph/api/resources/security-removecontentheaderaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [removeContentHeaderAction](https://learn.microsoft.com/graph/api/resources/security-removecontentheaderaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "removeContentHeaderAction"
         },
         {
@@ -191,7 +191,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "removeProtectionAction",
           "ChangeType": "Addition",
-          "Description": "Added the [removeProtectionAction](https://docs.microsoft.com/graph/api/resources/security-removeprotectionaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [removeProtectionAction](https://learn.microsoft.com/graph/api/resources/security-removeprotectionaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "removeProtectionAction"
         },
         {
@@ -199,7 +199,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "removeWatermarkAction",
           "ChangeType": "Addition",
-          "Description": "Added the [removeWatermarkAction](https://docs.microsoft.com/graph/api/resources/security-removewatermarkaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [removeWatermarkAction](https://learn.microsoft.com/graph/api/resources/security-removewatermarkaction?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
           "Target": "removeWatermarkAction"
         },
         {
@@ -207,7 +207,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sensitivityLabel",
           "ChangeType": "Addition",
-          "Description": "Added the [sensitivityLabel](https://docs.microsoft.com/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+          "Description": "Added the [sensitivityLabel](https://learn.microsoft.com/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
           "Target": "sensitivityLabel"
         },
         {
@@ -215,7 +215,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "addContentFooterAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [addContentFooterAction](https://docs.microsoft.com/graph/api/resources/addcontentfooteraction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [addContentFooterAction](https://docs.microsoft.com/graph/api/resources/security-addcontentfooteraction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [addContentFooterAction](https://learn.microsoft.com/graph/api/resources/addcontentfooteraction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [addContentFooterAction](https://learn.microsoft.com/graph/api/resources/security-addcontentfooteraction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "addContentFooterAction"
         },
         {
@@ -223,7 +223,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "addContentHeaderAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [addContentHeaderAction](https://docs.microsoft.com/graph/api/resources/addcontentheaderaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [addContentHeaderAction](https://docs.microsoft.com/graph/api/resources/security-addcontentheaderaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [addContentHeaderAction](https://learn.microsoft.com/graph/api/resources/addcontentheaderaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [addContentHeaderAction](https://learn.microsoft.com/graph/api/resources/security-addcontentheaderaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "addContentHeaderAction"
         },
         {
@@ -231,7 +231,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "addWatermarkAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [addWatermarkAction](https://docs.microsoft.com/graph/api/resources/addwatermarkaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [addWatermarkAction](https://docs.microsoft.com/graph/api/resources/security-addwatermarkaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [addWatermarkAction](https://learn.microsoft.com/graph/api/resources/addwatermarkaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [addWatermarkAction](https://learn.microsoft.com/graph/api/resources/security-addwatermarkaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "addWatermarkAction"
         },
         {
@@ -239,7 +239,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applyLabelAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [applyLabelAction](https://docs.microsoft.com/graph/api/resources/applylabelaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [applyLabelAction](https://docs.microsoft.com/graph/api/resources/security-applylabelaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [applyLabelAction](https://learn.microsoft.com/graph/api/resources/applylabelaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [applyLabelAction](https://learn.microsoft.com/graph/api/resources/security-applylabelaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "applyLabelAction"
         },
         {
@@ -247,7 +247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "classificationResult",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [classificationResult](https://docs.microsoft.com/graph/api/resources/classificationresult?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [classificationResult](https://docs.microsoft.com/graph/api/resources/security-classificationresult?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [classificationResult](https://learn.microsoft.com/graph/api/resources/classificationresult?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [classificationResult](https://learn.microsoft.com/graph/api/resources/security-classificationresult?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "classificationResult"
         },
         {
@@ -255,7 +255,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contentInfo",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [contentInfo](https://docs.microsoft.com/graph/api/resources/contentInfo?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [contentInfo](https://docs.microsoft.com/graph/api/resources/security-contentInfo?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [contentInfo](https://learn.microsoft.com/graph/api/resources/contentInfo?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [contentInfo](https://learn.microsoft.com/graph/api/resources/security-contentInfo?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "contentInfo"
         },
         {
@@ -263,7 +263,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [customAction](https://docs.microsoft.com/graph/api/resources/customaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [customAction](https://docs.microsoft.com/graph/api/resources/security-customaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [customAction](https://learn.microsoft.com/graph/api/resources/customaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [customAction](https://learn.microsoft.com/graph/api/resources/security-customaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "customAction"
         },
         {
@@ -271,7 +271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "downgradeJustification",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [downgradeJustification](https://docs.microsoft.com/graph/api/resources/downgradejustification?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [downgradeJustification](https://docs.microsoft.com/graph/api/resources/security-downgradejustification?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [downgradeJustification](https://learn.microsoft.com/graph/api/resources/downgradejustification?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [downgradeJustification](https://learn.microsoft.com/graph/api/resources/security-downgradejustification?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "downgradeJustification"
         },
         {
@@ -279,7 +279,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "informationProtectionContentLabel",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [informationProtectionContentLabel](https://docs.microsoft.com/graph/api/resources/informationprotectioncontentlabel?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [informationProtectionContentLabel](https://docs.microsoft.com/graph/api/resources/security-informationprotectioncontentlabel?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [informationProtectionContentLabel](https://learn.microsoft.com/graph/api/resources/informationprotectioncontentlabel?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [informationProtectionContentLabel](https://learn.microsoft.com/graph/api/resources/security-informationprotectioncontentlabel?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "informationProtectionContentLabel"
         },
         {
@@ -287,7 +287,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "informationProtectionLabel",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [informationProtectionLabel](https://docs.microsoft.com/graph/api/resources/informationprotectionlabel?view=graph-rest-beta) resource and related operations and methods. Use the new [informationProtection](https://docs.microsoft.com/graph/api/resources/security-informationprotection?view=graph-rest-beta) and [sensitivityLabel](https://docs.microsoft.com/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) APIs instead.",
+          "Description": "Deprecated the [informationProtectionLabel](https://learn.microsoft.com/graph/api/resources/informationprotectionlabel?view=graph-rest-beta) resource and related operations and methods. Use the new [informationProtection](https://learn.microsoft.com/graph/api/resources/security-informationprotection?view=graph-rest-beta) and [sensitivityLabel](https://learn.microsoft.com/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) APIs instead.",
           "Target": "informationProtectionLabel"
         },
         {
@@ -295,7 +295,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "justifyAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [justifyAction](https://docs.microsoft.com/graph/api/resources/justifyaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [justifyAction](https://docs.microsoft.com/graph/api/resources/security-justifyaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [justifyAction](https://learn.microsoft.com/graph/api/resources/justifyaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [justifyAction](https://learn.microsoft.com/graph/api/resources/security-justifyaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "justifyAction"
         },
         {
@@ -303,7 +303,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "labelingOptions",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [labelingOptions](https://docs.microsoft.com/graph/api/resources/labelingoptions?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [labelingOptions](https://docs.microsoft.com/graph/api/resources/security-labelingoptions?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [labelingOptions](https://learn.microsoft.com/graph/api/resources/labelingoptions?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [labelingOptions](https://learn.microsoft.com/graph/api/resources/security-labelingoptions?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "labelingOptions"
         },
         {
@@ -311,7 +311,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "metadataAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [metadataAction](https://docs.microsoft.com/graph/api/resources/metadataaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [metadataAction](https://docs.microsoft.com/graph/api/resources/security-metadataaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [metadataAction](https://learn.microsoft.com/graph/api/resources/metadataaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [metadataAction](https://learn.microsoft.com/graph/api/resources/security-metadataaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "metadataAction"
         },
         {
@@ -319,7 +319,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "protectAdhocAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [protectAdhocAction](https://docs.microsoft.com/graph/api/resources/protectadhocaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [protectAdhocAction](https://docs.microsoft.com/graph/api/resources/security-protectadhocaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [protectAdhocAction](https://learn.microsoft.com/graph/api/resources/protectadhocaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [protectAdhocAction](https://learn.microsoft.com/graph/api/resources/security-protectadhocaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "protectAdhocAction"
         },
         {
@@ -327,7 +327,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "protectByTemplateAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [protectByTemplateAction](https://docs.microsoft.com/graph/api/resources/protectbytemplateaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [protectByTemplateAction](https://docs.microsoft.com/graph/api/resources/security-protectbytemplateaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [protectByTemplateAction](https://learn.microsoft.com/graph/api/resources/protectbytemplateaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [protectByTemplateAction](https://learn.microsoft.com/graph/api/resources/security-protectbytemplateaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "protectByTemplateAction"
         },
         {
@@ -335,7 +335,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "protectDoNotForwardAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [protectDoNotForwardAction](https://docs.microsoft.com/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [protectDoNotForwardAction](https://docs.microsoft.com/graph/api/resources/security-protectdonotforwardaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [protectDoNotForwardAction](https://learn.microsoft.com/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [protectDoNotForwardAction](https://learn.microsoft.com/graph/api/resources/security-protectdonotforwardaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "protectDoNotForwardAction"
         },
         {
@@ -343,7 +343,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "removeContentFooterAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [removeContentFooterAction](https://docs.microsoft.com/graph/api/resources/removecontentfooteraction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [removeContentFooterAction](https://docs.microsoft.com/graph/api/resources/security-removecontentfooteraction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [removeContentFooterAction](https://learn.microsoft.com/graph/api/resources/removecontentfooteraction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [removeContentFooterAction](https://learn.microsoft.com/graph/api/resources/security-removecontentfooteraction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "removeContentFooterAction"
         },
         {
@@ -351,7 +351,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "removeContentHeaderAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [removeContentHeaderAction](https://docs.microsoft.com/graph/api/resources/removecontentheaderaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [removeContentHeaderAction](https://docs.microsoft.com/graph/api/resources/security-removecontentheaderaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [removeContentHeaderAction](https://learn.microsoft.com/graph/api/resources/removecontentheaderaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [removeContentHeaderAction](https://learn.microsoft.com/graph/api/resources/security-removecontentheaderaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "removeContentHeaderAction"
         },
         {
@@ -359,7 +359,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "removeProtectionAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [removeProtectionAction](https://docs.microsoft.com/graph/api/resources/removeprotectionaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [removeProtectionAction](https://docs.microsoft.com/graph/api/resources/security-removeprotectionaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [removeProtectionAction](https://learn.microsoft.com/graph/api/resources/removeprotectionaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [removeProtectionAction](https://learn.microsoft.com/graph/api/resources/security-removeprotectionaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "removeProtectionAction"
         },
         {
@@ -367,7 +367,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "removeWatermarkAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [removeWatermarkAction](https://docs.microsoft.com/graph/api/resources/removewatermarkaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [removeWatermarkAction](https://docs.microsoft.com/graph/api/resources/security-removewatermarkaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [removeWatermarkAction](https://learn.microsoft.com/graph/api/resources/removewatermarkaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [removeWatermarkAction](https://learn.microsoft.com/graph/api/resources/security-removewatermarkaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "removeWatermarkAction"
         },
         {
@@ -375,7 +375,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "informationProtectionAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [informationProtectionAction](https://docs.microsoft.com/graph/api/resources/informationprotectionaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [informationProtectionAction](https://docs.microsoft.com/graph/api/resources/security-informationProtectionAction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [informationProtectionAction](https://learn.microsoft.com/graph/api/resources/informationprotectionaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [informationProtectionAction](https://learn.microsoft.com/graph/api/resources/security-informationProtectionAction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "informationProtectionAction"
         },
         {
@@ -383,7 +383,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recommendLabelAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [recommendLabelAction](https://docs.microsoft.com/graph/api/resources/recommendlabelaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [recommendLabelAction](https://docs.microsoft.com/graph/api/resources/security-recommendlabelaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [recommendLabelAction](https://learn.microsoft.com/graph/api/resources/recommendlabelaction?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [recommendLabelAction](https://learn.microsoft.com/graph/api/resources/security-recommendlabelaction?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "recommendLabelAction"
         }
       ],

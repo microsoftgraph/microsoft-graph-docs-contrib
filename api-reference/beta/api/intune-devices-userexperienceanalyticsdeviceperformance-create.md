@@ -63,10 +63,10 @@ The following table shows the properties that are required when you create the u
 |groupPolicyLoginTimeInMs|Int32|The user experience analytics device group policy login time in milliseconds.|
 |deviceCount|Int64|User experience analytics summarized device count.|
 |responsiveDesktopTimeInMs|Int32|The user experience analytics responsive desktop time in milliseconds.|
-|blueScreenCount|Int32|Number of Blue Screens in the last 14 days. Valid values 0 to 9999999|
-|restartCount|Int32|Number of Restarts in the last 14 days. Valid values 0 to 9999999|
-|averageBlueScreens|Double|Average (mean) number of Blue Screens per device in the last 14 days. Valid values 0 to 9999999|
-|averageRestarts|Double|Average (mean) number of Restarts per device in the last 14 days. Valid values 0 to 9999999|
+|blueScreenCount|Int32|Number of Blue Screens in the last 30 days. Valid values 0 to 9999999|
+|restartCount|Int32|Number of Restarts in the last 30 days. Valid values 0 to 9999999|
+|averageBlueScreens|Double|Average (mean) number of Blue Screens per device in the last 30 days. Valid values 0 to 9999999|
+|averageRestarts|Double|Average (mean) number of Restarts per device in the last 30 days. Valid values 0 to 9999999|
 |startupPerformanceScore|Double|The user experience analytics device startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |modelStartupPerformanceScore|Double|The user experience analytics model level startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 
@@ -141,7 +141,6 @@ Content-Length: 788
   "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
-
 
 
 

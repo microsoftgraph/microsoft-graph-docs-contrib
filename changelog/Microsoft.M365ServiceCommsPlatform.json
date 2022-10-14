@@ -7,7 +7,7 @@
                "ApiChange": "Resource",
                "ChangedApiName": "serviceAnnouncementBase",
                "ChangeType": "Addition",
-               "Description": "Added the [serviceAnnouncementBase](https://docs.microsoft.com/en-us/graph/api/resources/serviceAnnouncementBase?view=graph-rest-beta) resource type.",
+               "Description": "Added the [serviceAnnouncementBase](https://learn.microsoft.com/en-us/graph/api/resources/serviceAnnouncementBase?view=graph-rest-beta) resource type.",
                "Target": "serviceAnnouncementBase"
              },
              {
@@ -15,7 +15,7 @@
                 "ApiChange":"Resource",
                 "ChangedApiName":"serviceAnnouncement",
                 "ChangeType":"Addition",
-                "Description":"Added the [serviceAnnouncement](https://docs.microsoft.com/en-us/graph/api/resources/serviceAnnouncement?view=graph-rest-beta) resource type.",
+                "Description":"Added the [serviceAnnouncement](https://learn.microsoft.com/en-us/graph/api/resources/serviceAnnouncement?view=graph-rest-beta) resource type.",
                 "Target":"serviceAnnouncement"
              },
              {
@@ -23,7 +23,7 @@
                 "ApiChange":"Resource",
                 "ChangedApiName":"serviceUpdateMessage",
                 "ChangeType":"Addition",
-                "Description":"Added the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource type.",
+                "Description":"Added the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource type.",
                 "Target":"serviceUpdateMessage"
              },
              {
@@ -31,7 +31,7 @@
                 "ApiChange":"Resource",
                 "ChangedApiName":"serviceHealthIssue",
                 "ChangeType":"Addition",
-                "Description":"Added the [serviceHealthIssue](https://docs.microsoft.com/en-us/graph/api/resources/serviceHealthIssue?view=graph-rest-beta) resource type.",
+                "Description":"Added the [serviceHealthIssue](https://learn.microsoft.com/en-us/graph/api/resources/serviceHealthIssue?view=graph-rest-beta) resource type.",
                 "Target":"serviceHealthIssue"
              },
              {
@@ -39,7 +39,7 @@
                 "ApiChange":"Resource",
                 "ChangedApiName":"serviceHealth",
                 "ChangeType":"Addition",
-                "Description":"Added the [serviceHealth](https://docs.microsoft.com/en-us/graph/api/resources/serviceHealth?view=graph-rest-beta) resource type.",
+                "Description":"Added the [serviceHealth](https://learn.microsoft.com/en-us/graph/api/resources/serviceHealth?view=graph-rest-beta) resource type.",
                 "Target":"serviceHealth"
              },
              {
@@ -47,7 +47,7 @@
                 "ApiChange":"Resource",
                 "ChangedApiName":"serviceHealthIssuePost",
                 "ChangeType":"Addition",
-                "Description":"Added the [serviceHealthIssuePost](https://docs.microsoft.com/en-us/graph/api/resources/serviceHealthIssuePost?view=graph-rest-beta) resource type.",
+                "Description":"Added the [serviceHealthIssuePost](https://learn.microsoft.com/en-us/graph/api/resources/serviceHealthIssuePost?view=graph-rest-beta) resource type.",
                 "Target":"serviceHealthIssuePost"
              },
              {
@@ -55,7 +55,7 @@
                 "ApiChange":"Resource",
                 "ChangedApiName":"serviceUpdateMessageViewpoint",
                 "ChangeType":"Addition",
-                "Description":"Added the [serviceUpdateMessageViewpoint](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessageViewpoint?view=graph-rest-beta) resource type.",
+                "Description":"Added the [serviceUpdateMessageViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessageViewpoint?view=graph-rest-beta) resource type.",
                 "Target":"serviceUpdateMessageViewpoint"
              },
              {
@@ -63,7 +63,7 @@
                 "ApiChange":"Resource",
                 "ChangedApiName":"keyValuePair",
                 "ChangeType":"Addition",
-                "Description":"Added the [keyValuePair](https://docs.microsoft.com/en-us/graph/api/resources/keyValuePair?view=graph-rest-beta) resource type.",
+                "Description":"Added the [keyValuePair](https://learn.microsoft.com/en-us/graph/api/resources/keyValuePair?view=graph-rest-beta) resource type.",
                 "Target":"keyValuePair"
              },
              {
@@ -127,7 +127,7 @@
                 "ApiChange":"Method",
                 "ChangedApiName":"markRead",
                 "ChangeType":"Addition",
-                "Description":"Added the [markRead](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-markRead?view=graph-rest-beta) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+                "Description":"Added the [markRead](https://learn.microsoft.com/en-us/graph/api/serviceUpdateMessage-markRead?view=graph-rest-beta) method to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
                 "Target":"serviceUpdateMessage"
              },
              {
@@ -135,7 +135,7 @@
                 "ApiChange":"Method",
                 "ChangedApiName":"markUnread",
                 "ChangeType":"Addition",
-                "Description":"Added the [markUnread](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-markUnread?view=graph-rest-beta) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+                "Description":"Added the [markUnread](https://learn.microsoft.com/en-us/graph/api/serviceUpdateMessage-markUnread?view=graph-rest-beta) method to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
                 "Target":"serviceUpdateMessage"
              },
              {
@@ -143,7 +143,7 @@
                 "ApiChange":"Method",
                 "ChangedApiName":"archive",
                 "ChangeType":"Addition",
-                "Description":"Added the [archive](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-archive?view=graph-rest-beta) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+                "Description":"Added the [archive](https://learn.microsoft.com/en-us/graph/api/serviceUpdateMessage-archive?view=graph-rest-beta) method to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
                 "Target":"serviceUpdateMessage"
              },
              {
@@ -151,7 +151,7 @@
                 "ApiChange":"Method",
                 "ChangedApiName":"unarchive",
                 "ChangeType":"Addition",
-                "Description":"Added the [unarchive](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-unarchive?view=graph-rest-beta) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+                "Description":"Added the [unarchive](https://learn.microsoft.com/en-us/graph/api/serviceUpdateMessage-unarchive?view=graph-rest-beta) method to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
                 "Target":"serviceUpdateMessage"
              },
              {
@@ -159,7 +159,7 @@
                 "ApiChange":"Method",
                 "ChangedApiName":"favorite",
                 "ChangeType":"Addition",
-                "Description":"Added the [favorite](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-favorite?view=graph-rest-beta) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+                "Description":"Added the [favorite](https://learn.microsoft.com/en-us/graph/api/serviceUpdateMessage-favorite?view=graph-rest-beta) method to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
                 "Target":"serviceUpdateMessage"
              },
              {
@@ -167,7 +167,7 @@
                 "ApiChange":"Method",
                 "ChangedApiName":"unfavorite",
                 "ChangeType":"Addition",
-                "Description":"Added the [unfavorite](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-unfavorite?view=graph-rest-beta) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+                "Description":"Added the [unfavorite](https://learn.microsoft.com/en-us/graph/api/serviceUpdateMessage-unfavorite?view=graph-rest-beta) method to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
                 "Target":"serviceUpdateMessage"
              },
              {
@@ -175,7 +175,7 @@
                 "ApiChange":"Method",
                 "ChangedApiName":"incidentReport",
                 "ChangeType":"Addition",
-                "Description":"Added the [incidentReport](https://docs.microsoft.com/en-us/graph/api/serviceHealthIssue-incidentReport?view=graph-rest-beta) method to the [serviceHealthIssue](https://docs.microsoft.com/en-us/graph/api/resources/serviceHealthIssue?view=graph-rest-beta) resource.",
+                "Description":"Added the [incidentReport](https://learn.microsoft.com/en-us/graph/api/serviceHealthIssue-incidentReport?view=graph-rest-beta) method to the [serviceHealthIssue](https://learn.microsoft.com/en-us/graph/api/resources/serviceHealthIssue?view=graph-rest-beta) resource.",
                 "Target":"serviceHealthIssue"
              }
           ],
@@ -193,7 +193,7 @@
              "ApiChange": "Resource",
              "ChangedApiName": "serviceAnnouncementBase",
              "ChangeType": "Addition",
-             "Description": "Added the [serviceAnnouncementBase](https://docs.microsoft.com/en-us/graph/api/resources/serviceAnnouncementBase?view=graph-rest-1.0) resource type.",
+             "Description": "Added the [serviceAnnouncementBase](https://learn.microsoft.com/en-us/graph/api/resources/serviceAnnouncementBase?view=graph-rest-1.0) resource type.",
              "Target": "serviceAnnouncementBase"
            },
            {
@@ -201,7 +201,7 @@
              "ApiChange": "Resource",
              "ChangedApiName": "serviceAnnouncement",
              "ChangeType": "Addition",
-             "Description": "Added the [serviceAnnouncement](https://docs.microsoft.com/en-us/graph/api/resources/serviceAnnouncement?view=graph-rest-1.0) resource type.",
+             "Description": "Added the [serviceAnnouncement](https://learn.microsoft.com/en-us/graph/api/resources/serviceAnnouncement?view=graph-rest-1.0) resource type.",
              "Target": "serviceAnnouncement"
            },
            {
@@ -209,7 +209,7 @@
              "ApiChange": "Resource",
              "ChangedApiName": "serviceUpdateMessage",
              "ChangeType": "Addition",
-             "Description": "Added the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource type.",
+             "Description": "Added the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource type.",
              "Target": "serviceUpdateMessage"
            },
            {
@@ -217,7 +217,7 @@
              "ApiChange": "Resource",
              "ChangedApiName": "serviceHealthIssue",
              "ChangeType": "Addition",
-             "Description": "Added the [serviceHealthIssue](https://docs.microsoft.com/en-us/graph/api/resources/serviceHealthIssue?view=graph-rest-1.0) resource type.",
+             "Description": "Added the [serviceHealthIssue](https://learn.microsoft.com/en-us/graph/api/resources/serviceHealthIssue?view=graph-rest-1.0) resource type.",
              "Target": "serviceHealthIssue"
            },
            {
@@ -225,7 +225,7 @@
              "ApiChange": "Resource",
              "ChangedApiName": "serviceHealth",
              "ChangeType": "Addition",
-             "Description": "Added the [serviceHealth](https://docs.microsoft.com/en-us/graph/api/resources/serviceHealth?view=graph-rest-1.0) resource type.",
+             "Description": "Added the [serviceHealth](https://learn.microsoft.com/en-us/graph/api/resources/serviceHealth?view=graph-rest-1.0) resource type.",
              "Target": "serviceHealth"
            },
            {
@@ -233,7 +233,7 @@
              "ApiChange": "Resource",
              "ChangedApiName": "serviceHealthIssuePost",
              "ChangeType": "Addition",
-             "Description": "Added the [serviceHealthIssuePost](https://docs.microsoft.com/en-us/graph/api/resources/serviceHealthIssuePost?view=graph-rest-1.0) resource type.",
+             "Description": "Added the [serviceHealthIssuePost](https://learn.microsoft.com/en-us/graph/api/resources/serviceHealthIssuePost?view=graph-rest-1.0) resource type.",
              "Target": "serviceHealthIssuePost"
            },
            {
@@ -241,7 +241,7 @@
              "ApiChange": "Resource",
              "ChangedApiName": "serviceUpdateMessageViewpoint",
              "ChangeType": "Addition",
-             "Description": "Added the [serviceUpdateMessageViewpoint](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessageViewpoint?view=graph-rest-1.0) resource type.",
+             "Description": "Added the [serviceUpdateMessageViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessageViewpoint?view=graph-rest-1.0) resource type.",
              "Target": "serviceUpdateMessageViewpoint"
            },
            {
@@ -249,7 +249,7 @@
              "ApiChange": "Resource",
              "ChangedApiName": "keyValuePair",
              "ChangeType": "Addition",
-             "Description": "Added the [keyValuePair](https://docs.microsoft.com/en-us/graph/api/resources/keyValuePair?view=graph-rest-1.0) resource type.",
+             "Description": "Added the [keyValuePair](https://learn.microsoft.com/en-us/graph/api/resources/keyValuePair?view=graph-rest-1.0) resource type.",
              "Target": "keyValuePair"
            },
            {
@@ -313,7 +313,7 @@
              "ApiChange": "Method",
              "ChangedApiName": "markRead",
              "ChangeType": "Addition",
-             "Description": "Added the [markRead](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-markRead?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+             "Description": "Added the [markRead](https://learn.microsoft.com/en-us/graph/api/serviceUpdateMessage-markRead?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
              "Target": "serviceUpdateMessage"
            },
            {
@@ -321,7 +321,7 @@
              "ApiChange": "Method",
              "ChangedApiName": "markUnread",
              "ChangeType": "Addition",
-             "Description": "Added the [markUnread](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-markUnread?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+             "Description": "Added the [markUnread](https://learn.microsoft.com/en-us/graph/api/serviceUpdateMessage-markUnread?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
              "Target": "serviceUpdateMessage"
            },
            {
@@ -329,7 +329,7 @@
              "ApiChange": "Method",
              "ChangedApiName": "archive",
              "ChangeType": "Addition",
-             "Description": "Added the [archive](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-archive?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+             "Description": "Added the [archive](https://learn.microsoft.com/en-us/graph/api/serviceUpdateMessage-archive?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
              "Target": "serviceUpdateMessage"
            },
            {
@@ -337,7 +337,7 @@
              "ApiChange": "Method",
              "ChangedApiName": "unarchive",
              "ChangeType": "Addition",
-             "Description": "Added the [unarchive](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-unarchive?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+             "Description": "Added the [unarchive](https://learn.microsoft.com/en-us/graph/api/serviceUpdateMessage-unarchive?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
              "Target": "serviceUpdateMessage"
            },
            {
@@ -345,7 +345,7 @@
              "ApiChange": "Method",
              "ChangedApiName": "favorite",
              "ChangeType": "Addition",
-             "Description": "Added the [favorite](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-favorite?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+             "Description": "Added the [favorite](https://learn.microsoft.com/en-us/graph/api/serviceUpdateMessage-favorite?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
              "Target": "serviceUpdateMessage"
            },
            {
@@ -353,7 +353,7 @@
              "ApiChange": "Method",
              "ChangedApiName": "unfavorite",
              "ChangeType": "Addition",
-             "Description": "Added the [unfavorite](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-unfavorite?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+             "Description": "Added the [unfavorite](https://learn.microsoft.com/en-us/graph/api/serviceUpdateMessage-unfavorite?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
              "Target": "serviceUpdateMessage"
            },
            {
@@ -361,7 +361,7 @@
              "ApiChange": "Method",
              "ChangedApiName": "incidentReport",
              "ChangeType": "Addition",
-             "Description": "Added the [incidentReport](https://docs.microsoft.com/en-us/graph/api/serviceHealthIssue-incidentReport?view=graph-rest-1.0) method to the [serviceHealthIssue](https://docs.microsoft.com/en-us/graph/api/resources/serviceHealthIssue?view=graph-rest-1.0) resource.",
+             "Description": "Added the [incidentReport](https://learn.microsoft.com/en-us/graph/api/serviceHealthIssue-incidentReport?view=graph-rest-1.0) method to the [serviceHealthIssue](https://learn.microsoft.com/en-us/graph/api/resources/serviceHealthIssue?view=graph-rest-1.0) resource.",
              "Target": "serviceHealthIssue"
            }
          ],
@@ -379,7 +379,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "serviceAnnouncementAttachment",
             "ChangeType": "Addition",
-            "Description": "Added the [serviceAnnouncementAttachment](https://docs.microsoft.com/en-us/graph/api/resources/serviceAnnouncementAttachment?view=graph-rest-beta) resource.",
+            "Description": "Added the [serviceAnnouncementAttachment](https://learn.microsoft.com/en-us/graph/api/resources/serviceAnnouncementAttachment?view=graph-rest-beta) resource.",
             "Target": "serviceAnnouncementAttachment"
            },
            {
@@ -387,7 +387,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "attachmentsArchive",
             "ChangeType": "Addition",
-            "Description": "Added the **attachmentsArchive** property to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+            "Description": "Added the **attachmentsArchive** property to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
             "Target": "serviceUpdateMessage"
            },
            {
@@ -395,7 +395,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "hasAttachments",
             "ChangeType": "Addition",
-            "Description": "Added the **hasAttachments** property to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+            "Description": "Added the **hasAttachments** property to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
             "Target": "serviceUpdateMessage"
            },
            {
@@ -403,7 +403,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "attachments",
             "ChangeType": "Addition",
-            "Description": "Added the **attachments** relationship to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+            "Description": "Added the **attachments** relationship to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
             "Target": "serviceUpdateMessage"
            }
          ],
@@ -421,7 +421,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "serviceAnnouncementAttachment",
             "ChangeType": "Addition",
-            "Description": "Added the [serviceAnnouncementAttachment](https://docs.microsoft.com/en-us/graph/api/resources/serviceAnnouncementAttachment?view=graph-rest-1.0) resource.",
+            "Description": "Added the [serviceAnnouncementAttachment](https://learn.microsoft.com/en-us/graph/api/resources/serviceAnnouncementAttachment?view=graph-rest-1.0) resource.",
             "Target": "serviceAnnouncementAttachment"
           },
           {
@@ -429,7 +429,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "attachmentsArchive",
             "ChangeType": "Addition",
-            "Description": "Added the **attachmentsArchive** property to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+            "Description": "Added the **attachmentsArchive** property to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
             "Target": "serviceUpdateMessage"
           },
           {
@@ -437,7 +437,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "hasAttachments",
             "ChangeType": "Addition",
-            "Description": "Added the **hasAttachments** property to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+            "Description": "Added the **hasAttachments** property to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
             "Target": "serviceUpdateMessage"
           },
           {
@@ -445,7 +445,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "attachments",
             "ChangeType": "Addition",
-            "Description": "Added the **attachments** relationship to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+            "Description": "Added the **attachments** relationship to the [serviceUpdateMessage](https://learn.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
             "Target": "serviceUpdateMessage"
           }
         ],
