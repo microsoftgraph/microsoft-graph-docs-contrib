@@ -32,6 +32,15 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
+To get the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
+
+``` http
+GET /me/cloudPCs{id}
+GET /users/{userId}/cloudPCs/{id}
+```
+
+To get the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
+
 ``` http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 ```
@@ -73,16 +82,13 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9ec90ff8-fd63-4fb9-ab5a-aa4fdcc43ec9
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpc-default-properties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpc-default-properties-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpc-default-properties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -95,6 +101,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpc-default-properties-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-cloudpc-default-properties-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -164,18 +174,15 @@ The following is an example of a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpc-selected-properties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpc-selected-properties-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpc-selected-properties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -188,6 +195,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpc-selected-properties-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-cloudpc-selected-properties-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -226,6 +237,112 @@ Content-Type: application/json
       "cloudPcId": "662009bc-7732-4f6f-8726-25883518b33e",
       "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
       "statusDetails": null
+    },
+    "connectivityResult": {
+      "status": "unavailable",
+      "updatedDatetime": "2022-03-22T10:28:32.8260335Z",
+      "failedHealthCheckItems": [
+        {
+          "displayName": "DomainJoinCheck",
+          "result": "failure",
+          "lastHealthCheckDateTime": "2022-03-22T10:28:32.8260335Z",
+          "additionalDetails": "SessionHost unhealthy: SessionHost is not joined to a domain"
+        }
+      ]
     }
+}
+```
+
+### Exmaple 3: Get the default properties of a Cloud PC of the signed-in user
+
+#### Request
+
+The following is an example of a request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "user_get_cloudpc_default_properties"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-get-cloudpc-default-properties-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-get-cloudpc-default-properties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-get-cloudpc-default-properties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-get-cloudpc-default-properties-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-get-cloudpc-default-properties-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "user_get_cloudpc_default_properties",
+  "@odata.type": "microsoft.graph.cloudPC"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.cloudPC",
+    "aadDeviceId": "61204a22-0ca8-11ed-861d-0242ac120002",
+    "id": "36bd4942-0ca8-11ed-861d-0242ac120002",
+    "displayName": "Demo-1",
+    "imageDisplayName": "Windows-10 19h1-evd",
+    "managedDeviceId": "70341bb0-0ca8-11ed-861d-0242ac120002",
+    "managedDeviceName": "A00002GI001",
+    "provisioningPolicyId": "7a3bdee0-0ca8-11ed-861d-0242ac120002",
+    "provisioningPolicyName": "Marketing provisioning policy",
+    "onPremisesConnectionName": "Azure network connection for Marketing",
+    "servicePlanId": "83fca22a-0ca8-11ed-861d-0242ac120002",
+    "servicePlanName": "standard",
+    "servicePlanType": "enterprise",
+    "status": "failed",
+    "statusDetails": {
+    "@odata.type": "microsoft.graph.cloudPcStatusDetails",
+    "code": "internalServerError",
+    "message": "There was an internal server error. Please contact support xxx.",
+    "additionalInformation": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "correlationId",
+          "value": "8fea34e4-0ca8-11ed-861d-0242ac120002"
+        }
+      ]
+    },
+    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+    "lastModifiedDateTime": "2020-11-03T18:14:34Z",
+    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
 }
 ```

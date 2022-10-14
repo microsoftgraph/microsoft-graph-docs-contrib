@@ -1,7 +1,7 @@
 ---
 title: "accessReviewStageSettings resource type"
 description: "In Azure AD access reviews, the accessReviewStageSettings represents the settings of the stages associated with a multi-stage access review."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

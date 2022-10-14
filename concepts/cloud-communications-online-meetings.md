@@ -36,4 +36,4 @@ After an online meeting is created, users can join in two ways:
 
 - [Online meeting permissions](./permissions-reference.md#online-meetings-permissions)
 - [Choose an API in Microsoft Graph to create and join online meetings](choose-online-meeting-api.md)
-- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Teams API overview](teams-concept-overview.md)

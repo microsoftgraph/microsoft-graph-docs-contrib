@@ -328,7 +328,7 @@ The context does not specify a valid user ID. One common error is that PUID/CID 
 ### 20166
 The application has issued too many requests on behalf of a user in a short period of time. To help ensure that the OneNote API remains stable and responsive, the API returns a 429 status code and this error when it detects that an application is using too many resources. 
 
-For more information, see [Microsoft Graph service-specific throttling guidance](./throttling.md#service-specific-limits).
+For more information, see [Microsoft Graph service-specific throttling guidance](./throttling-limits.md).
 
 ### 20168
 The video source specified in the request is not supported. See [Supported video sites](onenote-images-files.md#adding-videos) for the current list.

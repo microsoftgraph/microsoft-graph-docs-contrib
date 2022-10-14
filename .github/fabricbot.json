@@ -6,7 +6,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "_3yhQuRaP",
       "config": {
         "conditions": {
           "operator": "or",
@@ -41,7 +40,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because we only accept document content feedback in this repository's issue list. This issues list is not intended for service issues, questions, or service feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
+              "comment": "This issue will be closed because we only accept document content feedback in this repository's issue list. This issues list is not intended for service issues, questions, or service feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
             }
           },
           {
@@ -56,7 +55,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "GfE2ciwoX",
       "config": {
         "conditions": {
           "operator": "and",
@@ -85,12 +83,12 @@
           "issues",
           "project_card"
         ],
-        "taskName": "Auto close non docs.microsoft.com submitted issues",
+        "taskName": "Auto close non learn.microsoft.com submitted issues",
         "actions": [
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because we do not support feedback captured directly from the GitHub new issue page. Also, this issues list is not intended for service issues, questions, or service feedback.\n\nTo provide feedback on [Microsoft Graph documentation](https://docs.microsoft.com/graph/overview), please scroll to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback there. This gives the team the necessary context of your feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
+              "comment": "This issue will be closed because we do not support feedback captured directly from the GitHub new issue page. Also, this issues list is not intended for service issues, questions, or service feedback.\n\nTo provide feedback on [Microsoft Graph documentation](https://learn.microsoft.com/graph/overview), please scroll to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback there. This gives the team the necessary context of your feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
             }
           },
           {
@@ -106,7 +104,6 @@
       "capabilityId": "ScheduledSearch",
       "subCapability": "ScheduledSearch",
       "version": "1.1",
-      "id": "I2yKT-aRK",
       "config": {
         "frequency": [
           {
@@ -209,7 +206,6 @@
       "capabilityId": "ScheduledSearch",
       "subCapability": "ScheduledSearch",
       "version": "1.1",
-      "id": "yoeQco2US",
       "config": {
         "frequency": [
           {
@@ -504,7 +500,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status. \n\nPlease remove this label and add the **ready for content review** label to start a review. Your PR won't be reviewed until you add this label.\n\nAfter the content review is complete and the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.\n\n**Note:** Pull requests will not be merged until the **ready to merge** label is set.\n\nFor details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow)."
+              "comment": "Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status. \n\nPlease add the **ready for content review** label to start a review. Your PR won't be reviewed until you add this label.\n\nAfter the content review is complete and the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.\n\n**Note:** Pull requests will not be merged until the **ready to merge** label is set.\n\nFor details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow)."
             }
           }
         ]
@@ -515,7 +511,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "PullRequestResponder",
       "version": "1.0",
-      "id": "92nj9wVPB",
       "config": {
         "conditions": {
           "operator": "and",
@@ -556,7 +551,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "PullRequestResponder",
       "version": "1.0",
-      "id": "QyzVHPFP0",
       "config": {
         "conditions": {
           "operator": "and",
@@ -604,6 +598,12 @@
             "parameters": {
               "label": "external"
             }
+          },
+          {
+            "name": "addReply",
+            "parameters": {
+              "comment": "Thanks for your contribution ${issueAuthor}! Please see [CONTRIBUTING.md](https://github.com/microsoftgraph/microsoft-graph-docs/blob/main/CONTRIBUTING.md) for guidelines."
+            }
           }
         ]
       }
@@ -613,7 +613,6 @@
       "capabilityId": "ScheduledSearch",
       "subCapability": "ScheduledSearch",
       "version": "1.1",
-      "id": "wt0roSSQv",
       "config": {
         "frequency": [
           {
@@ -722,7 +721,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "PullRequestResponder",
       "version": "1.0",
-      "id": "wjhLW7jV5",
       "config": {
         "conditions": {
           "operator": "and",
@@ -768,7 +766,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "PullRequestCommentResponder",
       "version": "1.0",
-      "id": "Zu3lFqB7E",
       "config": {
         "conditions": {
           "operator": "and",
@@ -813,7 +810,6 @@
       "capabilityId": "ScheduledSearch",
       "subCapability": "ScheduledSearch",
       "version": "1.1",
-      "id": "n5PzwSjTP",
       "config": {
         "frequency": [
           {
@@ -1011,8 +1007,7 @@
             "parameters": {}
           }
         ]
-      },
-      "id": "p1rdZ4Rx2"
+      }
     },
     {
       "taskType": "trigger",
@@ -1044,72 +1039,13 @@
         "eventNames": [
           "issue_comment"
         ]
-      },
-      "id": "F8p0pn7IaL"
+      }
     },
     {
       "taskType": "scheduled",
       "capabilityId": "ScheduledSearch",
       "subCapability": "ScheduledSearch",
       "version": "1.1",
-      "id": "CJDIDphiY",
-      "config": {
-        "frequency": [
-          {
-            "weekDay": 2,
-            "hours": [
-              14
-            ],
-            "timezoneOffset": -4
-          }
-        ],
-        "searchTerms": [
-          {
-            "name": "isOpen",
-            "parameters": {}
-          },
-          {
-            "name": "isPr",
-            "parameters": {}
-          },
-          {
-            "name": "created",
-            "parameters": {
-              "operator": "<",
-              "days": 124
-            }
-          },
-          {
-            "name": "noActivitySince",
-            "parameters": {
-              "days": 30
-            }
-          }
-        ],
-        "taskName": "Flag expired PRs - DISABLED - Created before 124 days term doesn't work correctly",
-        "actions": [
-          {
-            "name": "addLabel",
-            "parameters": {
-              "label": "pr-expired"
-            }
-          },
-          {
-            "name": "addReply",
-            "parameters": {
-              "comment": "${issueAuthor}, in an effort to better serve our documentation contributors, we are auditing all long-running open pull requests. This pull request has been identified as having no recent activity and being opened prior to 2021. To keep our docs review team focused on active requests, **we will close this pull request in 24 hours**.\n\nIf the changes you submitted in this pull request are no longer relevant or needed, no action is required. If these changes are still needed, please take one of the following actions.\n\n- Reopen this pull request, resolve all merge conflicts, address all review comments, and set the `ready for content review` label ASAP to request a review from our team.\n- Create a new pull request and reimplement your changes against the current state of the repository.\n\nThanks!\nMicrosoft Graph Docs Team"
-            }
-          }
-        ]
-      },
-      "disabled": true
-    },
-    {
-      "taskType": "scheduled",
-      "capabilityId": "ScheduledSearch",
-      "subCapability": "ScheduledSearch",
-      "version": "1.1",
-      "id": "MULUQaYGj",
       "config": {
         "frequency": [
           {
@@ -1247,7 +1183,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "PullRequestResponder",
       "version": "1.0",
-      "id": "7ce09TrhIi9tYj2ybBB72",
       "config": {
         "conditions": {
           "operator": "and",
@@ -1301,15 +1236,10 @@
               "parameters": {}
             },
             {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "hasLabel",
-                  "parameters": {
-                    "label": "external"
-                  }
-                }
-              ]
+              "name": "hasLabel",
+              "parameters": {
+                "label": "internal"
+              }
             }
           ]
         },
@@ -1337,7 +1267,6 @@
           }
         ]
       },
-      "id": "g5NwUm1dVw54EZlmCsGlz",
       "disabled": false
     },
     {
@@ -1358,6 +1287,12 @@
             {
               "name": "isOpen",
               "parameters": {}
+            },
+            {
+              "name": "hasLabel",
+              "parameters": {
+                "label": "internal"
+              }
             }
           ]
         },
@@ -1409,7 +1344,6 @@
           }
         ]
       },
-      "id": "LWCvrc53hLeBM7RpAxHQN",
       "disabled": false
     },
     {
@@ -1430,6 +1364,12 @@
             {
               "name": "isOpen",
               "parameters": {}
+            },
+            {
+              "name": "hasLabel",
+              "parameters": {
+                "label": "internal"
+              }
             }
           ]
         },
@@ -1466,7 +1406,6 @@
           }
         ]
       },
-      "id": "gb9oX7gfsRIOup-Y42ER6",
       "disabled": false
     },
     {
@@ -1508,7 +1447,6 @@
           }
         ]
       },
-      "id": "1viKjsLmyDELGUwiLgzi7",
       "disabled": false
     },
     {
@@ -1551,7 +1489,6 @@
           }
         ]
       },
-      "id": "eaWcekJTmM_WszaWfejKO",
       "disabled": false
     },
     {
@@ -1559,7 +1496,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "PullRequestCommentResponder",
       "version": "1.0",
-      "id": "biP_YaLNwBnFG3XDIydIB",
       "config": {
         "conditions": {
           "operator": "and",
@@ -1609,7 +1545,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "PullRequestResponder",
       "version": "1.0",
-      "id": "9fRGQ52MZN9JThfuHkino",
       "config": {
         "conditions": {
           "operator": "and",
@@ -1656,7 +1591,6 @@
       "capabilityId": "ScheduledSearch",
       "subCapability": "ScheduledSearch",
       "version": "1.1",
-      "id": "7jjdUmfVB6ALLfwOc9rVC",
       "config": {
         "frequency": [
           {
@@ -1786,7 +1720,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "PullRequestResponder",
       "version": "1.0",
-      "id": "jRsiXvSrUl-o4-i23GzLl",
       "config": {
         "conditions": {
           "operator": "and",
@@ -1836,7 +1769,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "PullRequestResponder",
       "version": "1.0",
-      "id": "NO3dUBxEnLrOfzyn0L4zd",
       "config": {
         "conditions": {
           "operator": "and",
@@ -1881,7 +1813,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "PullRequestResponder",
       "version": "1.0",
-      "id": "i-5x9JwUAU9Ps_H-2UmqY",
       "config": {
         "conditions": {
           "operator": "and",
@@ -1926,7 +1857,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "JlcNDDj0_XCu26jBR1Apq",
       "config": {
         "conditions": {
           "operator": "or",
@@ -1977,7 +1907,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-teamwork.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-teamwork.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -1992,7 +1922,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "uUxCop5zqI3LSX_71K8MM",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2043,7 +1972,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-files.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-files.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2058,7 +1987,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "ozXVZKFlwZ6b3svdYB7oR",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2109,7 +2037,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-mail.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-mail.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2124,7 +2052,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "puHKHorFlScu9OyBt_PLn",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2175,7 +2102,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-calendar.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-calendar.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2190,7 +2117,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "HtAB8DEq6eB0BpZmXR3Fi",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2241,7 +2167,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-toolkit.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-toolkit.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2256,7 +2182,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "t9i5kEfzA91xjPghQBVE-",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2307,7 +2232,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-cloud-communications.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-cloud-communications.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2322,7 +2247,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "1W5x0TXtcDYnVKSmtMQUy",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2373,7 +2297,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-tasks-plans.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-tasks-plans.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2388,7 +2312,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "WbIK0CMNrhX3QTqe_v8tO",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2405,7 +2328,7 @@
                 {
                   "name": "labelAdded",
                   "parameters": {
-                    "label": "area: Security"
+                    "label": "area: security"
                   }
                 }
               ]
@@ -2416,7 +2339,7 @@
                 {
                   "name": "hasLabel",
                   "parameters": {
-                    "label": "area: Security"
+                    "label": "area: security"
                   }
                 },
                 {
@@ -2439,7 +2362,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-security.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-security.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2454,7 +2377,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "bECQpdug2f-znQgYuZ59w",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2505,7 +2427,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-sites-lists.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-sites-lists.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2520,7 +2442,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "PnkzE_s7z5HI-aRd3APnK",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2571,7 +2492,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-notes.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-notes.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2586,7 +2507,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "bfbiGdMvCSHemeFdwMZfF",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2637,7 +2557,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2652,7 +2572,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "Du9BKMrDd2fjQm0jeHjrt",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2703,7 +2622,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-users.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-users.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2718,7 +2637,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "gSIfsEXh7DuxN9XLSLDOb",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2769,7 +2687,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-reports.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-reports.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2784,7 +2702,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "1UI2vUATANgqvEJYLhg9A",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2835,7 +2752,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-insights.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-insights.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2850,7 +2767,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "QgND0mnQ_VCrhYZZvL29o",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2901,7 +2817,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-extensions.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-extensions.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2916,7 +2832,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "zeKiWyFCPyzhF2n9PRvt1",
       "config": {
         "conditions": {
           "operator": "or",
@@ -2967,7 +2882,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-change-notifications.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-change-notifications.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2982,7 +2897,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "x-CUG60BZUIUzqo2F1FnH",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3033,7 +2947,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-customer-booking.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-customer-booking.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3048,7 +2962,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "HgTli0Migp5XjfBUebiNI",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3099,7 +3012,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-people.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-people.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3114,7 +3027,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "w-CXgOdKCGDZKz9RJ4YfZ",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3165,7 +3077,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-query-parameters.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-query-parameters.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3180,7 +3092,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "ANB8aT6lviHbIegoP1bRb",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3231,7 +3142,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-workbooks.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-workbooks.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3246,7 +3157,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "kXoVSh9c7jM9SRG7zO7Gu",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3297,7 +3207,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-search.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-search.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3312,7 +3222,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "lx99qTdBJgTibfBg0h0wQ",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3363,7 +3272,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-todo.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-todo.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3378,7 +3287,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "o-qayYmnyZP9TO4dkQwsk",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3429,7 +3337,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-compliance.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-compliance.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3444,7 +3352,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "OMpjGujKbZ5m0a7fX7_z1",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3495,7 +3402,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3510,7 +3417,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "niWVzf01Etp-Qn89Frv0N",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3561,7 +3467,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-authentication.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-authentication.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3576,7 +3482,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "xF0tHCnr763-be6EHhMea",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3627,7 +3532,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-groups.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-groups.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3642,7 +3547,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "E_WglbRDP-mnlERYSv-PM",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3693,7 +3597,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-identity.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-identity.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3708,7 +3612,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "Sy0GIUJGCgKC7cbVo_Gaf",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3759,7 +3662,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-governance.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-governance.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3774,7 +3677,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "joYdrEfYbgaK-O-C4tjsc",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3825,7 +3727,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/products/graph)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/products/graph)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3840,7 +3742,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "PullRequestResponder",
       "version": "1.0",
-      "id": "IkzwwE9ANLIwvo8Ax8XBP",
       "config": {
         "conditions": {
           "operator": "and",
@@ -3869,7 +3770,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "hbiFcjRv8RnBmlovvpZN1",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3920,7 +3820,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-batching.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-batching.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3935,7 +3835,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "aprsqwH9LL3sonGbxNszT",
       "config": {
         "conditions": {
           "operator": "or",
@@ -3986,7 +3885,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-notifications.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-notifications.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -4001,7 +3900,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "Pc-PZ8fw2yug0bLKw44wO",
       "config": {
         "conditions": {
           "operator": "or",
@@ -4052,7 +3950,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-education.html).\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-education.html).\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -4067,7 +3965,6 @@
       "capabilityId": "IssueResponder",
       "subCapability": "IssuesOnlyResponder",
       "version": "1.0",
-      "id": "-E6h6zmW21scHqQIPWVmH",
       "config": {
         "conditions": {
           "operator": "or",
@@ -4118,12 +4015,125 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-sdk.html).\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-sdk.html).\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
             "name": "closeIssue",
             "parameters": {}
+          }
+        ]
+      }
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "IssueResponder",
+      "subCapability": "PullRequestCommentResponder",
+      "version": "1.0",
+      "config": {
+        "conditions": {
+          "operator": "and",
+          "operands": [
+            {
+              "name": "isActivitySender",
+              "parameters": {
+                "user": {
+                  "type": "author"
+                }
+              }
+            },
+            {
+              "name": "isOpen",
+              "parameters": {}
+            },
+            {
+              "name": "commentContains",
+              "parameters": {
+                "commentPattern": "#sign-off"
+              }
+            }
+          ]
+        },
+        "eventType": "pull_request",
+        "eventNames": [
+          "issue_comment"
+        ],
+        "taskName": "Add ready for content review label if author comments #sign-off",
+        "actions": [
+          {
+            "name": "addLabel",
+            "parameters": {
+              "label": "ready for content review"
+            }
+          },
+          {
+            "name": "moveToProjectColumn",
+            "parameters": {
+              "isOrgProject": true,
+              "projectName": "Microsoft Graph Docs Content Review Queue",
+              "columnName": "Ready for review"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "IssueResponder",
+      "subCapability": "IssuesOnlyResponder",
+      "version": "1.0",
+      "config": {
+        "conditions": {
+          "operator": "or",
+          "operands": [
+            {
+              "operator": "and",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "Q&A"
+                  }
+                },
+                {
+                  "name": "labelAdded",
+                  "parameters": {
+                    "label": "area: applications"
+                  }
+                }
+              ]
+            },
+            {
+              "operator": "and",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "area: applications"
+                  }
+                },
+                {
+                  "name": "labelAdded",
+                  "parameters": {
+                    "label": "Q&A"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "eventType": "issue",
+        "eventNames": [
+          "issues",
+          "project_card"
+        ],
+        "taskName": "Close functionality issue and redirect to MS Q&A - Applications tag",
+        "actions": [
+          {
+            "name": "addReply",
+            "parameters": {
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-applications.html).\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
+            }
           }
         ]
       }

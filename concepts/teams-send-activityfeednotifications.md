@@ -122,7 +122,7 @@ This example shows how you can send an activity feed notification for a new task
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification"
+  "name": "chat_sendactivitynotification_for_task_created_in_chat"
 }
 -->
 ``` http
@@ -168,7 +168,7 @@ This example shows how you can send an activity feed notification for a team. Th
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_task_created_in_teams"
 }
 -->
 ``` http
@@ -219,7 +219,7 @@ The Yammer notification example shown earlier uses a custom topic because Yammer
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_customer_task"
 }
 -->
 ``` http
@@ -269,7 +269,7 @@ This example shows how you can send an activity feed notification to all team me
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_about_event"
 }
 -->
 ``` http
@@ -313,7 +313,7 @@ This example shows how you can send an activity feed notification to all channel
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification"
+  "name": "team_sendactivitynotification_channelmember_about_event"
 }
 -->
 ``` http
@@ -358,7 +358,7 @@ This example shows how you can send an activity feed notification to all chat me
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification"
+  "name": "chat_sendactivitynotification_chatmember_about_event"
 }
 -->
 
@@ -396,9 +396,6 @@ HTTP/1.1 204 No Content
 ### Example 7: Notify multiple users about pending finance approval requests
 
 The following example shows how to send an activity feed notification to multiple users in bulk. This example notifies multiple stakeholders about pending finance approval requests.
-
-> [!NOTE]
-> The ability to send notifications to multiple users in bulk is currently only available in beta.
 
 #### Request
 

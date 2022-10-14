@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 |orderBy|String collection|Not yet documented|
 |skip|Int32|Not yet documented|
 |top|Int32|Not yet documented|
-|sessionId|Int32|Not yet documented|
+|sessionId|String|Not yet documented|
 |filter|String|Not yet documented|
 
 
@@ -71,7 +71,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/reports/getZebraFotaDeploymentReport
 
 Content-type: application/json
-Content-length: 261
+Content-length: 278
 
 {
   "name": "Name value",
@@ -87,7 +87,7 @@ Content-length: 261
   ],
   "skip": 4,
   "top": 3,
-  "sessionId": 9,
+  "sessionId": "Session Id value",
   "filter": "Filter value"
 }
 ```
@@ -103,6 +103,7 @@ Content-Length: 95
   "value": "Z2V0WmVicmFGb3RhRGVwbG95bWVudFJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAyMDcxMDQ2MzM5"
 }
 ```
+
 
 
 

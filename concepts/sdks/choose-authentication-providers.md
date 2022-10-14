@@ -65,7 +65,7 @@ var options = new TokenCredentialOptions
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.authorizationcodecredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.authorizationcodecredential
 var authCodeCredential = new AuthorizationCodeCredential(
     tenantId, clientId, clientSecret, authorizationCode, options);
 
@@ -89,14 +89,14 @@ const {
     AuthCodeMSALBrowserAuthenticationProviderOptions
 } = require("@microsoft/microsoft-graph-client/authProviders/authCodeMsalBrowser");
 
-const options: AuthCodeMSALBrowserAuthenticationProviderOptions: {
+const options: AuthCodeMSALBrowserAuthenticationProviderOptions = {
     account: account, // the AccountInfo instance to acquire the token for.
     interactionType: InteractionType.PopUp, // msal-browser InteractionType
     scopes: ["user.read", "mail.send"] // example of the scopes to be passed
 }
 
 // Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
-const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
+const authProvider = new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
 ```
 
 ### Using @azure/identity for server-side applications
@@ -224,7 +224,7 @@ var options = new TokenCredentialOptions
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.clientsecretcredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.clientsecretcredential
 var clientSecretCredential = new ClientSecretCredential(
     tenantId, clientId, clientSecret, options);
 
@@ -250,7 +250,7 @@ var options = new TokenCredentialOptions
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.clientcertificatecredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.clientcertificatecredential
 var clientCertCredential = new ClientCertificateCredential(
     tenantId, clientId, clientCertificate, options);
 
@@ -482,7 +482,7 @@ Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) =>
     return Task.FromResult(0);
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.devicecodecredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.devicecodecredential
 var deviceCodeCredential = new DeviceCodeCredential(
     callback, tenantId, clientId, options);
 
@@ -678,7 +678,7 @@ var options = new InteractiveBrowserCredentialOptions
     RedirectUri = new Uri("http://localhost"),
 };
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
 var interactiveCredential = new InteractiveBrowserCredential(options);
 
 var graphClient = new GraphServiceClient(interactiveCredential, scopes);
@@ -800,7 +800,7 @@ var options = new TokenCredentialOptions
 var userName = "adelev@contoso.com";
 var password = "P@ssword1!";
 
-// https://docs.microsoft.com/dotnet/api/azure.identity.usernamepasswordcredential
+// https://learn.microsoft.com/dotnet/api/azure.identity.usernamepasswordcredential
 var userNamePasswordCredential = new UsernamePasswordCredential(
     userName, password, tenantId, clientId, options);
 

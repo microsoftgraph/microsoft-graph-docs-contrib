@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewClaimsMappingPolicy()
+requestBody := graphmodels.NewClaimsMappingPolicy()
 displayName := "UpdateClaimsPolicy"
-requestBody.SetDisplayName(&displayName)
-claimsMappingPolicyId := "claimsMappingPolicy-id"
-graphClient.Policies().ClaimsMappingPoliciesById(&claimsMappingPolicyId).Patch(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Policies().ClaimsMappingPoliciesById("claimsMappingPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

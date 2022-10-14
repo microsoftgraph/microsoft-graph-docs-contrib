@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var stream = await graphClient.Reports
-	.GetM365AppPlatformUserCounts("D7").Content
+	.GetM365AppPlatformUserCounts("D7")
 	.Request()
 	.GetAsync();
 

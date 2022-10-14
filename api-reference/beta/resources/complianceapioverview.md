@@ -38,7 +38,7 @@ Records management in Microsoft Purview provides the ability to manage regulator
 For more details, see [Microsoft Purview records management](/microsoft-365/compliance/records-management).
 
 The records management API is defined in the OData subnamespace, microsoft.graph.security.
-Explore the [Microsoft Purview Records Management APIs](security-recordsManagement-overview.md).
+Explore the [Microsoft Purview records management APIs](security-recordsManagement-overview.md).
 
 <!--
 ## Labels

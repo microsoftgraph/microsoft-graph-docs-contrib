@@ -52,12 +52,15 @@ Devices that are managed or pre-enrolled through Intune
 |[rotateBitLockerKeys action](../api/intune-devices-manageddevice-rotatebitlockerkeys.md)|None|Rotate BitLockerKeys|
 |[sendCustomNotificationToCompanyPortal action](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|None|Not yet documented|
 |[triggerConfigurationManagerAction action](../api/intune-devices-manageddevice-triggerconfigurationmanageraction.md)|None|Trigger action on ConfigurationManager client|
+|[enrollNowAction action](../api/intune-devices-manageddevice-enrollnowaction.md)|None|Trigger comanagement enrollment action on ConfigurationManager client|
 |[deprovision action](../api/intune-devices-manageddevice-deprovision.md)|None|Not yet documented|
 |[disable action](../api/intune-devices-manageddevice-disable.md)|None|Not yet documented|
 |[reenable action](../api/intune-devices-manageddevice-reenable.md)|None|Not yet documented|
 |[moveDevicesToOU action](../api/intune-devices-manageddevice-movedevicestoou.md)|None|Not yet documented|
-|[removeDeviceFirmwareConfigurationInterfaceManagement action](../api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md)|None|Not yet documented|
+|[removeDeviceFirmwareConfigurationInterfaceManagement action](../api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md)|None|Remove device from Device Firmware Configuration Interface management|
 |[getOemWarranty function](../api/intune-devices-manageddevice-getoemwarranty.md)|[oemWarranty](../resources/intune-devices-oemwarranty.md)|Not yet documented|
+|[appDiagnostics function](../api/intune-devices-manageddevice-appdiagnostics.md)|[powerliftIncidentMetadata](../resources/intune-devices-powerliftincidentmetadata.md) collection|Not yet documented|
+|[downloadAppDiagnostics action](../api/intune-devices-manageddevice-downloadappdiagnostics.md)|Stream|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -74,10 +77,10 @@ Devices that are managed or pre-enrolled through Intune
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. This property is read-only.|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Chassis type of the device. This property is read-only. Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc. This property is read-only.|
-|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|Platform of the device. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. This property is read-only. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. This property is read-only.|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`, `intuneAosp`.|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`, `intuneAosp`.|
 |osVersion|String|Operating system version of the device. This property is read-only.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated. This property is read-only.|
 |easDeviceId|String|Exchange ActiveSync Id of the device. This property is read-only.|
@@ -141,6 +144,8 @@ Devices that are managed or pre-enrolled through Intune
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features. Possible values are: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) collection|List of properties of the ChromeOS Device.|
 |enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only.|
+|bootstrapTokenEscrowed|Boolean|Reports if the managed device has an escrowed Bootstrap Token. This is only for macOS devices. To get, include BootstrapTokenEscrowed in the select clause and query with a device id. If FALSE, no bootstrap token is escrowed. If TRUE, the device has escrowed a bootstrap token with Intune. This property is read-only.|
+|deviceFirmwareConfigurationInterfaceManaged|Boolean|Indicates whether the device is DFCI managed. When TRUE the device is DFCI managed. When FALSE, the device is not DFCI managed. The default value is FALSE.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -207,7 +212,16 @@ Here is a JSON representation of the resource.
     "esimIdentifier": "String",
     "systemManagementBIOSVersion": "String",
     "tpmManufacturer": "String",
-    "tpmVersion": "String"
+    "tpmVersion": "String",
+    "wiredIPv4Addresses": [
+      "String"
+    ],
+    "batteryLevelPercentage": "4.2",
+    "residentUsersCount": 1024,
+    "productName": "String",
+    "deviceLicensingStatus": "String",
+    "deviceLicensingLastErrorCode": 1024,
+    "deviceLicensingLastErrorDescription": "String"
   },
   "ownerType": "String",
   "managedDeviceOwnerType": "String",
@@ -341,7 +355,8 @@ Here is a JSON representation of the resource.
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
     "clientIdentifier": "String",
-    "isBlocked": true
+    "isBlocked": true,
+    "clientVersion": "String"
   },
   "ethernetMacAddress": "String",
   "physicalMemoryInBytes": 1024,
@@ -360,9 +375,12 @@ Here is a JSON representation of the resource.
       "updatable": true
     }
   ],
-  "enrollmentProfileName": "String"
+  "enrollmentProfileName": "String",
+  "bootstrapTokenEscrowed": true,
+  "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
+
 
 
 

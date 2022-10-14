@@ -48,9 +48,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "activityStatistics": [{"@odata.type": "microsoft.graph.activityStatistics"}],
   "id": "string",
-  "settings": {"@odata.type": "microsoft.graph.settings"},
-  "activityStatistics": [{"@odata.type": "microsoft.graph.activityStatistics"}]
+  "settings": {"@odata.type": "microsoft.graph.settings"}
 }
 ```
 
