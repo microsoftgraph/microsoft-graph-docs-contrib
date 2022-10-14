@@ -18,7 +18,6 @@ Represents Microsoft Authenticator settings such as number matching and location
 |:---|:---|:---|
 |displayAppInformationRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Determines whether the user's Authenticator app will show them the client app they are signing into.|
 |displayLocationInformationRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Determines whether the user's Authenticator app will show them the geographic location of where the authentication request originated from.|
-|numberMatchingRequiredState|[authenticationMethodFeatureConfiguration](../resources/authenticationmethodfeatureconfiguration.md)|Specifies whether the user needs to enter a number in the Authenticator app from the login screen to complete their login. Value is ignored for phone sign-in notifications.|
 
 ## Relationships
 None.
@@ -33,9 +32,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.microsoftAuthenticatorFeatureSettings",
-  "numberMatchingRequiredState": {
-    "@odata.type": "microsoft.graph.authenticationMethodFeatureConfiguration"
-  },
   "displayAppInformationRequiredState": {
     "@odata.type": "microsoft.graph.authenticationMethodFeatureConfiguration"
   },
