@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authorizationPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the allowUserConsentForRiskyApps property to [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) to disable protections preventing [user consent for risky apps](/active-directory/manage-apps/configure-risk-based-step-up-consent).",
+          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource. Configure this property to disable protections preventing [user consent for risky apps](/active-directory/manage-apps/configure-risk-based-step-up-consent).",
           "Target": "authorizationPolicy"
         }
       ],
