@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.identityGovernance.lifecycleTaskCategory|The category of the HR function that the tasks created using this definition can be used with. The possible values are: `joiner`, `leaver`. This is a multi-valued enumeration whose allowed combinations are `joiner`, `joiner,leaver`, or `leaver`. Supports `$filter` (`eq`). |
+|category|microsoft.graph.identityGovernance.lifecycleTaskCategory|The category of the HR function that the tasks created using this definition can be used with. The possible values are: `joiner`, `leaver`. This is a multi-valued enumeration whose allowed combinations are `joiner`, `joiner,leaver`, or `leaver`. Supports `$filter` (`eq`, `has`). |
 |description|String|The description of the taskDefinition.|
 |displayName|String|The display name of the taskDefinition`.|
 |id|String|The unique identifier for the taskDefinition. Inherited from [entity](../resources/entity.md).|

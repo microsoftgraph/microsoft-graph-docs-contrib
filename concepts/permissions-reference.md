@@ -1969,6 +1969,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
+| _Acronym.Read.All_ | Read all acronyms | Allows the app to read all acronyms on behalf of a signed-in user. | No | No |
+| _Bookmark.Read.All_ | Read all bookmarks | Allows the app to read all bookmarks on behalf of a signed-in user. | No | No |
 | _ExternalConnection.Read.All_ | Read all external connections | Allows the app to read all external connections on behalf of a signed-in user. | Yes | No |
 | _ExternalConnection.ReadWrite.All_ | Read and write all external connections | Allows the app to read and write all external connections on behalf of a signed-in user. | Yes | No |
 | _ExternalConnection.ReadWrite.OwnedBy_ | Read and write external connections | Allows the app to read and write external connections on behalf of a signed-in user. The app can only read and write external connections that it is authorized to, or it can create new external connections. | Yes | No |
@@ -2507,6 +2509,38 @@ Threat assessment permissions are valid only on work or school accounts.
 * _ThreatAssessment.Read.All_: Read threat assessment requests (`GET /informationProtection/threatAssessmentRequests`)
 
 ---
+
+## Threat hunting permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ThreatHunting.Read.All_ | Run hunting queries | Allows the app to run hunting queries, on behalf of the signed-in user. | Yes | No |
+
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ThreatHunting.Read.All_ | Run hunting queries | Allows the app to run hunting queries, without a signed-in user. | Yes |
+
+### Remarks
+
+Threat hunting permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _ThreatHunting.Read.All_: Run hunting query on behalf of the signed in user (`POST /security/runHuntingQuery`)
+
+#### Application
+
+* _ThreatHunting.Read.All_: Run hunting query (`POST /security/runHuntingQuery`)
+
+---
+
 
 ## Universal Print permissions
 

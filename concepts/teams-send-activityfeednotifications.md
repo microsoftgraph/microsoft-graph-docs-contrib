@@ -397,9 +397,6 @@ HTTP/1.1 204 No Content
 
 The following example shows how to send an activity feed notification to multiple users in bulk. This example notifies multiple stakeholders about pending finance approval requests.
 
-> [!NOTE]
-> The ability to send notifications to multiple users in bulk is currently only available in beta.
-
 #### Request
 
 <!-- {

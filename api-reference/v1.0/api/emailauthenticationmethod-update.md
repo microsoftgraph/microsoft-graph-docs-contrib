@@ -76,7 +76,8 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_emailauthenticationmethod"
+  "name": "update_emailauthenticationmethod",
+  "sampleKeys": ["kim@contoso.com", "3ddfcfc8-9383-446f-83cc-3ab9be4be18f"]
 }
 -->
 ``` http

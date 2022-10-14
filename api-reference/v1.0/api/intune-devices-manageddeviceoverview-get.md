@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 797
+Content-Length: 1024
 
 {
   "value": {
@@ -77,7 +77,13 @@ Content-Length: 797
       "macOSCount": 10,
       "windowsMobileCount": 2,
       "windowsCount": 12,
-      "unknownCount": 12
+      "unknownCount": 12,
+      "androidDedicatedCount": 5,
+      "androidDeviceAdminCount": 7,
+      "androidFullyManagedCount": 8,
+      "androidWorkProfileCount": 7,
+      "androidCorporateWorkProfileCount": 0,
+      "configMgrDeviceCount": 4
     },
     "deviceExchangeAccessStateSummary": {
       "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -90,9 +96,6 @@ Content-Length: 797
   }
 }
 ```
-
-
-
 
 
 
