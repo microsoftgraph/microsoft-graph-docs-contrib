@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents Microsoft Authenticator settings such as number matching and location context, and whether they are enabled for all users or specific users only.
+Represents Microsoft Authenticator settings such as application context and location context, and whether they are enabled for all users or specific users only.
 
 ## Properties
 |Property|Type|Description|
