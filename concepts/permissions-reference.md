@@ -2510,6 +2510,38 @@ Threat assessment permissions are valid only on work or school accounts.
 
 ---
 
+## Threat hunting permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ThreatHunting.Read.All_ | Run hunting queries | Allows the app to run hunting queries, on behalf of the signed-in user. | Yes | No |
+
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ThreatHunting.Read.All_ | Run hunting queries | Allows the app to run hunting queries, without a signed-in user. | Yes |
+
+### Remarks
+
+Threat hunting permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _ThreatHunting.Read.All_: Run hunting query on behalf of the signed in user (`POST /security/runHuntingQuery`)
+
+#### Application
+
+* _ThreatHunting.Read.All_: Run hunting query (`POST /security/runHuntingQuery`)
+
+---
+
+
 ## Universal Print permissions
 
 #### Delegated permissions
