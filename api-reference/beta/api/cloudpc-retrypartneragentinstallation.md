@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: retryPartnerAgentInstallation"
-description: "Attempt to re-install party partner agents in a Cloud PC which were failed to install."
+description: "Attempts to re-install party partner agents in a Cloud PC failed to install."
 author: "JannyMa"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Attempt to re-install party partner agents in a Cloud PC which were failed to install.
+Attempts to re-install party partner agents in a Cloud PC failed to install.
 
 ## Permissions
 
