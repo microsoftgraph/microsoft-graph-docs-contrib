@@ -63,18 +63,18 @@ The following is an example of a request.
 POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
 Content-Type: application/json
 
-{ 
-    "staffIds": [ 
-        "311a5454-08b2-4560-ba1c-f715e938cb79" 
-    ], 
-    "startDateTime": { 
-        "dateTime": "2022-01-25T00: 00: 00", 
-        "timeZone": "India Standard Time" 
-    }, 
-    "endDateTime": { 
-        "dateTime": "2022-01-26T17: 00: 00", 
-        "timeZone": "Pacific Standard Time" 
-    } 
+{
+    "staffIds": [
+        "311a5454-08b2-4560-ba1c-f715e938cb79"
+    ],
+    "startDateTime": {
+        "dateTime": "2022-01-25T00:00:00",
+        "timeZone": "India Standard Time"
+    },
+    "endDateTime": {
+        "dateTime": "2022-01-26T17:00:00",
+        "timeZone": "Pacific Standard Time"
+    }
 }
 ```
 
