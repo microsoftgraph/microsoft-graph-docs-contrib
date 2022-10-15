@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List conditionalAccessTemplates
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of the [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) objects and their properties.
 
 ## Permissions
@@ -61,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates
+GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/templates
 ```
 
 #### Response
@@ -78,7 +76,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/templates",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/templates",
     "value": [
         {
             "name": "Require multifactor authentication for admins",
@@ -152,7 +150,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates?$select=name,description,id,scenarios&$filter=scenarios has 'secureFoundation'
+GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/templates?$select=name,description,id,scenarios&$filter=scenarios has 'secureFoundation'
 ```
 
 #### Response
@@ -169,7 +167,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/templates(name,description,id,scenarios)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/templates(name,description,id,scenarios)",
     "value": [
         {
             "name": "Require multifactor authentication for admins",

@@ -4964,6 +4964,14 @@ items:
               href: api/authenticationcontextclassreference-get.md
             - name: Delete
               href: api/authenticationcontextclassreference-delete.md  
+          - name: Templates
+            items:
+            - name: Conditional access template
+              href: resources/conditionalAccessTemplate.md
+            - name: List
+              href: api/conditionalaccessroot-list-templates.md
+            - name: Get
+              href: api/conditionalaccesstemplate-get.md
         - name: Cross-tenant access
           items:
           - name: Overview
