@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md).
 
-This method supports federation. For one-on-one chat, at least one chat member must be part of the request initiator tenant. For group chat, chat must be initiated by the user from the request initiator tenant.
+This method supports federation. For one-on-one chats, at least one chat member must belong to the tenant the request initiates from. For group chats, the chat must be initiated by a user in the tenant the request initiates from.
 
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
