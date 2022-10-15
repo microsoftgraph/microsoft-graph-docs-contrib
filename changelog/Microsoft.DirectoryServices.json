@@ -11861,7 +11861,8 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "templates",
           "ChangeType": "Addition",
-          "Description": "Added the **templates** relationship to the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-1.0) resource.",					"Target": "conditionalAccessRoot"
+          "Description": "Added the **templates** relationship to the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-1.0) resource.",
+	  "Target": "conditionalAccessRoot"
         },
         {
           "Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
@@ -11875,7 +11876,7 @@
       "Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-10-07T16:30:13.6218231Z",
+      "CreatedDateTime": "2022-10-14T16:30:13.6218231Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }
