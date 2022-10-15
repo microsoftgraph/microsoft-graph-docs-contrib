@@ -32,7 +32,7 @@ Workflows are containers for the processes involved in managing the life cycle o
 + [Tasks](#workflow-tasks) are specific actions that run automatically when a workflow is triggered.
 + [Execution conditions](#execution-conditions) define the *scope* of "who" and the *trigger* of "when" a workflow will run.
 
-:::image type="content" source="../../../concepts/images/identitygovernance-workflow-parts.png" alt-text="Parts of a workflow API object.":::
+<!-- :::image type="content" source="../../../concepts/images/identitygovernance-workflow-parts.png" alt-text="Parts of a workflow API object.":::-->
 
 To create workflows, we recommend using one of the [predefined workflow templates](#workflow-templates).
 
