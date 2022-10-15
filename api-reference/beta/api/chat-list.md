@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
-This method supports federation. When user id is provided, caller application must be part of same tenant as the user.
+This method supports federation. When a user ID is provided, the calling application must belong to the same tenant that the user belongs to.
 
 ## Permissions
 
