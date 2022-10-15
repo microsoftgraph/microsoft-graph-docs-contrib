@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [conversationMembers](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
-This method supports federation. Only the user who is part of shared channel can retrieve channel member list.
+This method supports federation. Only a user who is a member of the shared channel can retrieve the channel member list.
 
 > [!NOTE]
 > The membership IDs returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
