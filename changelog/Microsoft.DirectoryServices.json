@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "06a63cc8-a5be-49af-adf7-8c34a822c8d9",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorizationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://learn.microsoft.com/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource. Configure this property to disable protections preventing [user consent for risky apps](/active-directory/manage-apps/configure-risk-based-step-up-consent).",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "06a63cc8-a5be-49af-adf7-8c34a822c8d9",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-14T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
         { 
           "Id": "4bf37336-391f-4ce3-909b-03314160aade",
           "ApiChange": "Method",
