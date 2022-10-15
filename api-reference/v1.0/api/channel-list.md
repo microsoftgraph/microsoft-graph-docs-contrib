@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [channels](../resources/channel.md) in this [team](../resources/team.md).
 
-This method supports federation. Any shared channel, which request initiator tenant is part of, will be included in the response.
+This method supports federation. Any shared channel that the request initiator tenant belongs to will be included in the response.
 
 ## Permissions
 
