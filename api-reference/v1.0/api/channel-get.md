@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [channel](../resources/channel.md).
 
-This method supports federation. Only the user who is part of a shared channel can retrieve channel information.
+This method supports federation. Only a user who is a member of the shared channel can retrieve channel information.
 
 ## Permissions
 
