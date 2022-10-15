@@ -52,6 +52,7 @@ Devices that are managed or pre-enrolled through Intune
 |[rotateBitLockerKeys action](../api/intune-devices-manageddevice-rotatebitlockerkeys.md)|None|Rotate BitLockerKeys|
 |[sendCustomNotificationToCompanyPortal action](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|None|Not yet documented|
 |[triggerConfigurationManagerAction action](../api/intune-devices-manageddevice-triggerconfigurationmanageraction.md)|None|Trigger action on ConfigurationManager client|
+|[enrollNowAction action](../api/intune-devices-manageddevice-enrollnowaction.md)|None|Trigger comanagement enrollment action on ConfigurationManager client|
 |[deprovision action](../api/intune-devices-manageddevice-deprovision.md)|None|Not yet documented|
 |[disable action](../api/intune-devices-manageddevice-disable.md)|None|Not yet documented|
 |[reenable action](../api/intune-devices-manageddevice-reenable.md)|None|Not yet documented|
@@ -379,8 +380,6 @@ Here is a JSON representation of the resource.
   "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
-
-
 
 
 

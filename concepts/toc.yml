@@ -97,10 +97,10 @@ items:
             href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
       - name: Accessing data at scale
         items:
-          - name: Data Connect overview
+          - name: Microsoft Graph Data Connect overview
             href: data-connect-concept-overview.md
             displayName: Microsoft Graph Data Connect, access data, bulk data
-          - name: Build your first Data Connect application
+          - name: Build your first Microsoft Graph Data Connect application
             href: data-connect-quickstart.yml
             displayName: Microsoft Graph Data Connect
           - name: Datasets, regions, and sinks
@@ -112,9 +112,12 @@ items:
           - name: Integrate with PAM
             href: data-connect-pam.md
             displayName: Privileged Access Management
-          - name: Data Connect FAQ
+          - name: Microsoft Graph Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect, frequently asked questions
+          - name: Data Connect troubleshooting
+            href: data-connect-troubleshooting.md
+            displayName: Microsoft Graph Data Connect Troubleshooting
       - name: Calendar
         items:
           - name: Overview
@@ -322,6 +325,19 @@ items:
                 href: tutorial-riskdetection-api.md
           - name: Governance
             items:
+              - name: Automate lifecycle of users (preview)
+                displayName: LCW, Lifecycle Workflows
+                items:
+                  - name: Configure task arguments
+                    href: identitygovernance-lifecycleworkflows-task-arguments.md
+                  - name: Automate employee onboarding
+                    href: tutorial-lifecycle-workflows-onboard-custom-workflow.md
+                  - name: Offboard employees in real-time
+                    href: tutorial-lifecycle-workflows-scheduled-leaver.md
+                  - name: Automate employee offboarding
+                    href: tutorial-lifecycle-workflows-offboard-custom-workflow.md
+                  - name: Configure employeeLeaveDateTime
+                    href: tutorial-lifecycle-workflows-set-employeeleavedatetime.md
               - name: Manage access to resources
                 href: tutorial-access-package-api.md
                 displayName: governance, identity
@@ -424,9 +440,10 @@ items:
         items:
           - name: Overview
             href: social-intel-concept-overview.md
-            displayName: people, workplace, intelligence, people and workplace intelligence
-          - name: Get information about relevant people
-            href: people-example.md
+          - name: Search people
+            href: search-concept-person.md            
+          - name: People insights overview
+            href: people-insights-overview.md
           - name: Customize people insights privacy (preview)
             href: insights-customize-people-insights-privacy.md
           - name: Customize the profile card (preview)
@@ -470,6 +487,12 @@ items:
             href: search-concept-custom-types.md
           - name: Search people
             href: search-concept-person.md
+          - name: Search bookmarks
+            href: search-concept-bookmark.md
+          - name: Search acronyms
+            href: search-concept-acronym.md 
+          - name: Search with application permissions
+            href: search-concept-searchall.md
           - name: Manage admin search answers (preview)
             href: search-concept-answers.md
           - name: Manage search results layout
@@ -787,7 +810,7 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
-          - name: Use the connectors SDK
+          - name: Use the connectors SDK (preview)
             items:
             - name: Overview
               href: custom-connector-sdk-overview.md

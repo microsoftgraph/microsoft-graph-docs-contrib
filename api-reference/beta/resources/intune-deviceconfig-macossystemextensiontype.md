@@ -28,4 +28,3 @@ Flag enum representing the allowed macOS system extension types.
 
 
 
-

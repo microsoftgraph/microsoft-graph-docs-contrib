@@ -14,7 +14,7 @@ roles := []string {
 }
 requestBody.SetRoles(roles)
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").MembersById("conversationMember-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").MembersById("conversationMember-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

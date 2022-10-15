@@ -81,7 +81,7 @@ Because this is the first time that you are running a request as a delegated aut
 
 1. Select the **Delegated** folder.
 1. Select the **Authorization** tab.
-1. In the **Configure New Token** section, select the **Configuration Options** tab. Leave all the fields as pre-configured, including the **Grant type**, which is set to `Authorization Code`.
+1. In the **Configure New Token** section, select the **Configuration Options** tab. Make sure the call back URL matches with what you provided when you created the application registration. Leave all the fields as pre-configured, including the **Grant type**, which is set to `Authorization Code`.
 1. Scroll down on the right and select **Get New Access Token**.
 1. Sign in with your developer tenant administrator account.
 1. Select **Proceed**, and then select the **Use Token** button.

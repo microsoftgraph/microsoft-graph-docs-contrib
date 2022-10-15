@@ -1011,6 +1011,42 @@
       "CreatedDateTime": "2022-05-13T01:31:31.3210645Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "65afd0ab-40ec-4bc7-8856-3ff8c346e367",
+          "ApiChange": "Member",
+          "ChangedApiName": "project",
+          "ChangeType": "Addition",
+          "Description": "Added the `project` member to the **plannerContainerType** enumeration.",
+          "Target": "plannerContainerType"
+        }
+      ],
+      "Id": "65afd0ab-40ec-4bc7-8856-3ff8c346e367",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T18:58:36.7709262Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3efd01dc-82fd-4b2d-a707-edf192a5c201",
+          "ApiChange": "Property",
+          "ChangedApiName": "notes",
+          "ChangeType": "Addition",
+          "Description": "Added the **notes** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskDetails"
+        }
+      ],
+      "Id": "3efd01dc-82fd-4b2d-a707-edf192a5c201",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T17:57:09.7993947Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     }
   ]
 }
