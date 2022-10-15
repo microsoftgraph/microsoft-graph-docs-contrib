@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a single [chat](../resources/chat.md) (without its messages).
 
-This method supports federation. To access chat, at least one chat member must be part of the request initiator tenant.
+This method supports federation. To access a chat, at least one chat member must be part of the tenant the request initiated from.
 
 ## Permissions
 
