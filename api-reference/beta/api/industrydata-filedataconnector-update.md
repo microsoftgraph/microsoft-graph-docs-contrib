@@ -49,7 +49,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Property    | Type   | Description                                                                                                                       |
 | :---------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| displayName | String | Name of the data connector. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md). Required. |
+| displayName | String | The name of the data connector. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md). Required. |
 
 ## Response
 
@@ -73,7 +73,7 @@ The following is an example of a request.
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

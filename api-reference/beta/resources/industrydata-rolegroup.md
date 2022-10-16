@@ -15,7 +15,7 @@ Namespace: microsoft.graph.industryData
 
 Represents a named collection of individual roles.
 
-Transformation of the data is often shaped by each individual user's role within an organization. These roles are defined as Reference Definitions. Given the number of potential roles, binding each role individual would result in a tedious user experience. Role Groups are simply a collection of Role values used to provide a convenient way to reference multiple reference definitions. The default role groups are _Students_ and _Staff_.
+Transformation of the data is often shaped by each individual user's role within an organization. These roles are defined as reference definitions. Given the number of potential roles, binding each role individually would result in a tedious user experience. Role groups are simply a collection of role values that provides a convenient way to reference multiple reference definitions. The default role groups are `Students` and `Staff`.
 
 ## Methods
 

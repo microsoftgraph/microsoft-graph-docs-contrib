@@ -1,6 +1,6 @@
 ---
 title: "validateOperation resource type"
-description: "This entity represents the asynchronous operation results from any operation that validates data."
+description: "Represents an abstract type for the asynchronous operation results from any operation that validates data."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This entity represents the asynchronous operation results from any operation that validates data.
-This is an abstract type.
+Represents an abstract type for the asynchronous operation results from any operation that validates data.
 
 Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
@@ -23,13 +22,13 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 | Property           | Type                                                                  | Description                                                                                                                                                                                          |
 | :----------------- | :-------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdDateTime    | DateTimeOffset                                                        | **TODO: Add Description** Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                               |
-| errors             | [microsoft.graph.publicError](../resources/publicerror.md) collection | Set of errors discovered by validation.                                                                                                                                                              |
+| errors             | [microsoft.graph.publicError](../resources/publicerror.md) collection | Set of errors discovered through validation.                                                                                                                                                              |
 | id                 | String                                                                | **TODO: Add Description** Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                               |
 | lastActionDateTime | DateTimeOffset                                                        | **TODO: Add Description** Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                               |
 | resourceLocation   | String                                                                | **TODO: Add Description** Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                               |
 | status             | longRunningOperationStatus                                            | **TODO: Add Description** Inherited from [longRunningOperation](../resources/longrunningoperation.md).The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. |
 | statusDetail       | String                                                                | **TODO: Add Description** Inherited from [longRunningOperation](../resources/longrunningoperation.md).                                                                                               |
-| warnings           | [microsoft.graph.publicError](../resources/publicerror.md) collection | Set of warnings discovered by validation.                                                                                                                                                            |
+| warnings           | [microsoft.graph.publicError](../resources/publicerror.md) collection | Set of warnings discovered through validation.                                                                                                                                                            |
 
 ## Relationships
 

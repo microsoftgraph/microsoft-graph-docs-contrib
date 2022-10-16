@@ -21,7 +21,7 @@ The following are examples of types:
 
 - **refRole**: Used when associating and validated during import
 - **refOrgType**: Used when associating and validated during import
-- **userMatchTarget**: Only used in configuration
+- **userMatchTarget**: Only used for configuration
 
 ## Methods
 

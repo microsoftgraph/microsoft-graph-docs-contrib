@@ -21,13 +21,13 @@ Inherits from [referenceValue](../resources/industrydata-referencevalue.md).
 
 | Property | Type   | Description                                                                                                                      |
 | :------- | :----- | :------------------------------------------------------------------------------------------------------------------------------- |
-| code     | String | The code of the desired referenceDefinition entry. Inherited from [referenceValue](../resources/industrydata-referencevalue.md). |
+| code     | String | The code of the desired [referenceDefinition](../resources/industrydata-referencedefinition.md) entry. Inherited from [referenceValue](../resources/industrydata-referencevalue.md). |
 
 ## Relationships
 
 | Relationship | Type                                                                    | Description                                                                                                                     |
 | :----------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
-| value        | [referenceDefinition](../resources/industrydata-referencedefinition.md) | Reference to the bound referenceDefinition entity. Inherited from [referenceValue](../resources/industrydata-referencevalue.md) |
+| value        | [referenceDefinition](../resources/industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [referenceValue](../resources/industrydata-referencevalue.md). |
 
 ## JSON representation
 

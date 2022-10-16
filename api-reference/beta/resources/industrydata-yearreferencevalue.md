@@ -1,6 +1,6 @@
 ---
 title: "yearReferenceValue resource type"
-description: "Pointer to a year entry in the referenceDefinition collection."
+description: "Represents a pointer to a year entry in a collection of referenceDefinition objects."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a pointer to a year entry in the referenceDefinition collection.
+Represents a pointer to a year entry in a collection of [referenceDefinition](../resources/industrydata-referencedefinition.md) objects.
 
 Inherits from [referenceValue](../resources/industrydata-referencevalue.md).
 
@@ -21,13 +21,13 @@ Inherits from [referenceValue](../resources/industrydata-referencevalue.md).
 
 | Property | Type   | Description                                                                                                                      |
 | :------- | :----- | :------------------------------------------------------------------------------------------------------------------------------- |
-| code     | String | The code of the desired referenceDefinition entry. Inherited from [referenceValue](../resources/industrydata-referencevalue.md). |
+| code     | String | The code of the desired **referenceDefinition** entry. Inherited from [referenceValue](../resources/industrydata-referencevalue.md). |
 
 ## Relationships
 
 | Relationship | Type                                                                    | Description                                                                                                                     |
 | :----------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
-| value        | [referenceDefinition](../resources/industrydata-referencedefinition.md) | Reference to the bound referenceDefinition entity. Inherited from [referenceValue](../resources/industrydata-referencevalue.md) |
+| value        | [referenceDefinition](../resources/industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [referenceValue](../resources/industrydata-referencevalue.md). |
 
 ## JSON representation
 

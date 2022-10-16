@@ -1,6 +1,6 @@
 ---
 title: "longRunningOperation resource type"
-description: "**TODO: Add Description**"
+description: "Represents the status of a long-running operation."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -20,7 +20,7 @@ Represents the status of a long-running operation.
 | Property           | Type                       | Description                                                                                                                          |
 | :----------------- | :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
 | createdDateTime    | DateTimeOffset             | The date and time when this operation was created.                                                                                   |
-| id                 | String                     | Unique identifier for the operation. Inherited from [entity](../resources/entity.md).                                                |
+| id                 | String                     | The unique identifier for the operation. Inherited from [entity](../resources/entity.md).                                            |
 | lastActionDateTime | DateTimeOffset             | The date and time when the last action was performed on this operation.                                                              |
 | resourceLocation   | String                     | The canonical URL of the resource.                                                                                                   |
 | status             | longRunningOperationStatus | The status of the long-running operation. Possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. |

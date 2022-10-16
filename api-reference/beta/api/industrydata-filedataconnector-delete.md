@@ -1,6 +1,6 @@
 ---
 title: "Delete fileDataConnector"
-description: "Deletes a fileDataConnector object."
+description: "Delete a fileDataConnector object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [fileDataConnector](../resources/industrydata-filedataconnector.md) object.
+Delete a [fileDataConnector](../resources/industrydata-filedataconnector.md) object.
 
 ## Permissions
 
@@ -68,9 +68,7 @@ The following is an example of a request.
 
 ### Response
 
-The following is an example of the response
-
-> **Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

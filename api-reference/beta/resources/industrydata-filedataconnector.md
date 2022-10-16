@@ -37,7 +37,7 @@ Inherits from [industryDataConnector](../resources/industrydata-industrydataconn
 
 | Relationship | Type                                                                          | Description                                                                                                                                           |
 | :----------- | :---------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| sourceSystem | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md) |
+| sourceSystem | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md). |
 
 ## JSON representation
 

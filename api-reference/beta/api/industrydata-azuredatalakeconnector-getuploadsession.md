@@ -1,6 +1,6 @@
 ---
 title: "azureDataLakeConnector: getUploadSession"
-description: "Retrieves an upload session used to supply file-based data to an inbound flow."
+description: "Retrieve an upload session that supplies file-based data to an inbound flow."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves an upload session used to supply file-based data to an inbound flow.
+Retrieve an upload session that supplies file-based data to an inbound flow.
 
 ## Permissions
 
@@ -43,7 +43,7 @@ The following table shows the parameters that can be used with this function.
 
 | Parameter    | Type    | Description                                                                |
 | :----------- | :------ | :------------------------------------------------------------------------- |
-| resetSession | Boolean | If true, a new fileUploadSession with an empty container will be returned. |
+| resetSession | Boolean | `True` indicates that a new [fileUploadSession](../resources/industrydata-fileuploadsession.md) with an empty container will be returned. |
 
 ## Request headers
 
@@ -77,7 +77,7 @@ The following is an example of a request.
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

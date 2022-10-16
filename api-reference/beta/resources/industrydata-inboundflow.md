@@ -54,7 +54,7 @@ By default, your Inbound Flow will activate twice (2x) daily, see [IndustryDataR
 | Relationship  | Type                                                                              | Description                                                                                 |
 | :------------ | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
 | dataConnector | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system.|
-| year          | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. ISO-8601 4-digit year.    |
+| year          | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The four-digit year in ISO-8601 format that the data being brought in via this flow applies to. ISO-8601 4-digit year.    |
 
 ## JSON representation
 
@@ -73,9 +73,9 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.industryData.inboundFlow",
   "displayName": "String",
-  "readinessStatus": "String",
   "dataDomain": "String",
   "effectiveDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)"
+  "expirationDateTime": "String (timestamp)",
+  "readinessStatus": "String"
 }
 ```

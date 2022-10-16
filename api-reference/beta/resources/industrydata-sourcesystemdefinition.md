@@ -1,6 +1,6 @@
 ---
 title: "sourceSystemDefinition resource type"
-description: "Representation of an external source of data in the real world."
+description: "Represents an external source of data in the real world."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representation of an external source of data in the real world.
-
-Data that is ingested is associated to a Source System to help identity the owner of record for the data. A source is composed of three properties: `displayName` shown to the user as the name of the source, `userMatchingSettings` which is a collection of user matching settings by roleGroup, and `vendor`, which is optional but is used to denote who supplies the source system.
+Represents an external source of data in the real world. The data that is ingested is associated to a source system to help identify the owner of the record for the data.
 
 ## Methods
 
@@ -25,15 +23,15 @@ Data that is ingested is associated to a Source System to help identity the owne
 | [Create sourceSystemDefinition](../api/industrydata-industrydataconnector-post-sourcesystem.md)   | [microsoft.graph.industryData.sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)            | Create a new [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.                               |
 | [Get sourceSystemDefinition](../api/industrydata-sourcesystemdefinition-get.md)                   | [microsoft.graph.industryData.sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)            | Read the properties and relationships of a [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object. |
 | [Update sourceSystemDefinition](../api/industrydata-sourcesystemdefinition-update.md)             | [microsoft.graph.industryData.sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)            | Update the properties of a [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.                 |
-| [Delete sourceSystemDefinition](../api/industrydata-industrydataconnector-delete-sourcesystem.md) | None                                                                                                                  | Deletes a [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.                                  |
+| [Delete sourceSystemDefinition](../api/industrydata-industrydataconnector-delete-sourcesystem.md) | None                                                                                                                  | Delete a [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.                                  |
 
 ## Properties
 
 | Property             | Type                                                                                                            | Description                                          |
 | :------------------- | :-------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------- |
-| displayName          | String                                                                                                          | Name of the source system.                           |
-| userMatchingSettings | [microsoft.graph.industryData.userMatchingSetting](../resources/industrydata-usermatchingsetting.md) collection | A collection of user matching settings by roleGroup. |
-| vendor               | String                                                                                                          | Name of the vendor who supplies the source system.   |
+| displayName          | String                                                                                                          | The name of the source system. Maximum supported length is 100 characters.                           |
+| userMatchingSettings | [microsoft.graph.industryData.userMatchingSetting](../resources/industrydata-usermatchingsetting.md) collection | A collection of user matching settings by **roleGroup**. |
+| vendor               | String                                                                                                          | The name of the vendor who supplies the source system. Maximum supported length is 100 characters. Optional. |
 
 ## Relationships
 
