@@ -682,7 +682,7 @@ Add the following information to the service principal:
 * Password
 * Public key 
 
-Extract the private and public key Base64 encoded from the PFX file. To learn more about the properties, see [keyCredential resource type](/graph/api/resources/keycredential?view=graph-rest-1.0).
+Extract the private and public key Base64 encoded from the PFX file. To learn more about the properties, see [keyCredential resource type](/graph/api/resources/keycredential?view=graph-rest-1.0&preserve-view=true).
 
 Make sure that the keyId for the keyCredential used for "Sign" matches the keyId of the passwordCredential. You can generate the `customkeyIdentifier` by getting the hash of the cert's thumbprint. See the previous C# reference code.
 
