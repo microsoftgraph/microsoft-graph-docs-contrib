@@ -108,6 +108,7 @@ Content-Type: application/json
     "id": "externalIdentityPolicy",
     "deletedDateTime": null,
     "allowExternalIdentitiesToLeave": true,
+    "allowDeletedIdentitiesDataRemoval": false,
     "displayName": "External Identities Policy"
   }
 }
