@@ -44,17 +44,17 @@ By default, your Inbound Flow will activate twice (2x) daily, see [IndustryDataR
 | Property           | Type            | Description                                                                                                                                                                                                                                                       |
 | :----------------- | :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | dataDomain         | inboundDomain   | The broad category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`.                                                                                                                               |
-| displayName        | String          | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md).                                                                                                                                                    |
+| displayName        | String          | The name of the activity. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md).                                                                                                                                                    |
 | effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.                                                                                                                                                                                    |
 | expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.                                                                                                                                                                                      |
-| readinessStatus    | readinessStatus | The state of the process from creation through to ready to do work. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md).The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. |
+| readinessStatus    | readinessStatus | The state of the activity from creation through to ready to do work. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. |
 
 ## Relationships
 
 | Relationship  | Type                                                                              | Description                                                                                 |
 | :------------ | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| dataConnector | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system.|
-| year          | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The four-digit year in ISO-8601 format that the data being brought in via this flow applies to. ISO-8601 4-digit year.    |
+| dataConnector | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system |
+| year          | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. |
 
 ## JSON representation
 

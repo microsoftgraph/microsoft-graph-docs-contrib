@@ -1,6 +1,6 @@
 ---
 title: "industryDataConnector: validate"
-description: "Performs validations applicable for the specific instance of the data connector."
+description: "Performs validations for the specific instance of the data connector."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"

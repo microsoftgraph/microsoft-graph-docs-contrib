@@ -1,6 +1,6 @@
 ---
 title: "industryDataActivity resource type"
-description: "Represents an abstract base type for all processes that are run by the underlying scheduler."
+description: "Represents an abstract base type for all activity that are run by the underlying scheduler."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract base type for all processes that are run by the underlying scheduler.
+Represents an abstract base type for all activity that are run by the underlying scheduler.
 
 ## Properties
 
-| Property        | Type            | Description                                                                                                                                                             |
-| :-------------- | :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName     | String          | The name of the process.                                                                                                                                                    |
-| readinessStatus | readinessStatus | The state of the process from creation through to ready to do work. The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. |
+| Property        | Type            | Description                                                                                                                                                               |
+| :-------------- | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| displayName     | String          | The name of the activity.                                                                                                                                                 |
+| readinessStatus | readinessStatus | The state of the activity from creation through to ready to do work. The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. |
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 ---
 title: "userMatchingSetting resource type"
-description: "Represents the setting the matching rules for a roleGroup."
+description: "Represents the matching setting rules for a roleGroup."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"

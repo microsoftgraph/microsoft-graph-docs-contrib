@@ -1,6 +1,6 @@
 ---
 title: "azureDataLakeConnector: getUploadSession"
-description: "Retrieve an upload session that supplies file-based data to an inbound flow."
+description: "Retrieve an upload session used to supply file-based data to an inbound flow."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve an upload session that supplies file-based data to an inbound flow.
+Retrieve an upload session used to supply file-based data to an inbound flow.
 
 ## Permissions
 
@@ -41,8 +41,8 @@ One of the following permissions is required to call this API. To learn more, in
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
-| Parameter    | Type    | Description                                                                |
-| :----------- | :------ | :------------------------------------------------------------------------- |
+| Parameter    | Type    | Description                                                                                                                               |
+| :----------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | resetSession | Boolean | `True` indicates that a new [fileUploadSession](../resources/industrydata-fileuploadsession.md) with an empty container will be returned. |
 
 ## Request headers

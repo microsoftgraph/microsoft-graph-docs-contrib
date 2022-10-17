@@ -1,6 +1,6 @@
 ---
 title: "Delete inboundFileFlow"
-description: "Deletes an inboundFileFlow object."
+description: "Delete an inboundFileFlow object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
+Delete an [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
 
 ## Permissions
 

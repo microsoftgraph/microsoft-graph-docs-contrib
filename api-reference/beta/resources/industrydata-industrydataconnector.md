@@ -23,19 +23,19 @@ Represents an abstract type that provides the resources to establish a connectio
 | [Create industryDataConnector](../api/industrydata-industrydataroot-post-dataconnectors.md)   | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)            | Create a new [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.                                |
 | [Get industryDataConnector](../api/industrydata-industrydataconnector-get.md)                 | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)            | Read the properties and relationships of an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object. |
 | [Update industryDataConnector](../api/industrydata-industrydataconnector-update.md)           | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)            | Update the properties of an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.                 |
-| [Delete industryDataConnector](../api/industrydata-industrydataroot-delete-dataconnectors.md) | None                                                                                                                | Delete an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.                                  |
-| [validate](../api/industrydata-industrydataconnector-validate.md)                             | None                                                                                                                | Perform validations applicable for the specific instance of the data connector.                                                |
+| [Delete industryDataConnector](../api/industrydata-industrydataroot-delete-dataconnectors.md) | None                                                                                                                | Delete an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.                                   |
+| [validate](../api/industrydata-industrydataconnector-validate.md)                             | None                                                                                                                | Perform validations applicable for the specific instance of the data connector.                                                 |
 
 ## Properties
 
-| Property    | Type   | Description                 |
-| :---------- | :----- | :-------------------------- |
+| Property    | Type   | Description                                                                 |
+| :---------- | :----- | :-------------------------------------------------------------------------- |
 | displayName | String | The name of the data connector. Maximum supported length is 100 characters. |
 
 ## Relationships
 
-| Relationship | Type                                                                          | Description                                                |
-| :----------- | :---------------------------------------------------------------------------- | :--------------------------------------------------------- |
+| Relationship | Type                                                                          | Description                                                    |
+| :----------- | :---------------------------------------------------------------------------- | :------------------------------------------------------------- |
 | sourceSystem | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | The **sourceSystemDefinition** this connector is connected to. |
 
 ## JSON representation

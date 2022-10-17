@@ -23,11 +23,11 @@ Inherits from [fileDataConnector](../resources/industrydata-filedataconnector.md
 
 For more information:
 
-- [Data Ingestion with SDS v2.1 CSV](https://docs.microsoft.com/schooldatasync/Data-Ingestion-with-SDS-v2.1-CSV)
-- [See SDS V2.1 CSV file format](https://docs.microsoft.com/schooldatasync/sds-v2.1-csv-file-format)
+- [Data Ingestion with SDS v2.1 CSV](schooldatasync/Data-Ingestion-with-SDS-v2.1-CSV.md)
+- [SDS V2.1 CSV file format](schooldatasync/sds-v2.1-csv-file-format.md)
   - File names and column headers are case-sensitive
   - CSV files must be in UTF-8 format
-  - We do not accept line breaks in incoming data.
+  - We don't accept line breaks in incoming data.
   - To review and download sample set of SDS V2.1 CSV files, [see the SDS GitHub Repository](https://github.com/OfficeDev/O365-EDU-Tools/tree/master/CSV%20Samples).
 
 > [!NOTE]
@@ -41,30 +41,23 @@ Retrieves the list of `industryDataAzureDataLakeConnector` to supply to the `get
 
 The `industryDataAzureDataLakeConnector` uses CSV files uploaded to a secure container. This container only lives for a finite period of time. The container is created by calling `getUploadSesion()`. The customer then uploads the required CSV files to the provided SAS URI in `sessionUri`.
 
-_For more informaton see [FileUploadSession](industrydata-fileuploadsession.md)_
+_For more information, see [FileUploadSession](industrydata-fileuploadsession.md)_
 
 #### Upload Files to the Data Connector
 
-Loop through the list to upload the latest CSVs in preperation for basic file validation.
+Loop through the list to upload the latest CSVs in preparation for basic file validation.
 
-_For more informaton see [FileValidateOperation](industrydata-filevalidateoperation.md)_
+_For more information, see [FileValidateOperation](industrydata-filevalidateoperation.md)_
 
 #### Validating Uploaded Files
 
-Once the files have been uploaded, call `validate()` to validate the uploaded files and finalize the upload session. Once the files have been validated, they are moved to an internal container for processing by an `industryDataInboundFlow`.
+Once the files have been uploaded, call `validate()` to validate the uploaded files and finalize the upload session. Once the files have been validated, they're moved to an internal container for processing by an `industryDataInboundFlow`.
 
 The `validate()` action is a long-running operation. The link to the operation is returned in the `Location` header. Once validation is complete, the results can be obtained through the `Location` URI.
 
 Recommend to poll no less than every 5 seconds while the status is 'in progress'.
 
-_For more informaton see [FileValidateOperation](industrydata-filevalidateoperation.md)_
-
-<!-- #### If no concerns request to start a Run
-
-> [!NOTE]
-> The maximum number of uploads with a corresponding run is six times per calendar day. After that if you upload, it will only be run up to two more times based on the automated run cadence of every 12 hours.
-
--->
+_For more information, see [FileValidateOperation](industrydata-filevalidateoperation.md)_
 
 ## Methods
 

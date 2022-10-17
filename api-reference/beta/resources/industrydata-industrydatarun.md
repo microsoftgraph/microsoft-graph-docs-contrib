@@ -1,6 +1,6 @@
 ---
 title: "industryDataRun resource type"
-description: "A pipeline run containing data for all subordinate activities."
+description: "Represents an ephemeral run containing data for all subordinate activities."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,17 +13,17 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of one or more activities.
+Represents an ephemeral run containing data for all subordinate activities executed by the system.
 
 IndustryData automates a Run every 12 hours. Each of these executions is represented by **industryDataRun**. All flows that are active at the time of the Run start are included in the Run.
 
 The individual flows are represented by **industryDataRunActivity**.
 
-_For more information see [IndustryDataRunActivity](industrydata-industrydatarunactivity)._
+_For more information, see [IndustryDataRunActivity](industrydata-industrydatarunactivity.md)._
 
-During a Run the data supplied is validated, bringing in good data to the Data Lake and flagging bad data. [See Validation Rules and Descriptions for additional information](https://docs.microsoft.com/schooldatasync/Validation-rules-and-descriptions).
+During a Run the data supplied is validated, bringing in good data to the data lake and flagging bad data. For more information about data validation, see [Validation Rules and Descriptions](/schooldatasync/Validation-rules-and-descriptions.md).
 
-To determine the health of the data, it is passed through data matching and validation rules to help safeguard required and optional data that is good only going into the Data Lake. Data that does not pass validation is identified as errors or warnings and is not sent to the Data Lake.
+To determine the health of the data, it's passed through data matching and validation rules to help safeguard required and optional data. Good data goes into the data lake. Data that doesn't pass validation is identified as errors or warnings and isn't sent to the Data Lake.
 
 If there were no errors or warnings found, the result of the run will be `completed`.
 
@@ -33,7 +33,7 @@ If there are errors and warnings found, the result of the run will be `completed
 
 If there are only warnings found, the result of the run will be `completedWithWarnings`.
 
-- Warning is a value on a record where optional data didn't pass a data matching and or validation rule and the value was removed but the record was sent to the data lake.
+- Warning is a value on a record where optional data didn't pass a data matching and or validation rule. The value was removed but the record was sent to the data lake.
 
 Status:
 
@@ -56,13 +56,13 @@ Statistics are available from _[IndustryDataRun-GetStatistics](../api/industryda
 
 ## Properties
 
-| Property      | Type                                                       | Description                                                                                                                                                |
-| :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| blockingError | [microsoft.graph.publicError](../resources/publicerror.md) | An error object to diagnose critical failures in the run.                                                                                                  |
-| displayName   | String                                                     | The name of the run for rendering in a user interface.                                                                                                     |
-| endDateTime   | DateTimeOffset                                             | The time the run finished in ISO 8601 format, or null if the run is still in-progress.                                                                     |
-| startDateTime | DateTimeOffset                                             | The time the run started in ISO 8601 format.                                                                                                               |
-| status        | industryDataRunStatus                                      | Current status of the run.The possible values are: `running`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| Property      | Type                                                       | Description                                                                                                                                                 |
+| :------------ | :--------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| blockingError | [microsoft.graph.publicError](../resources/publicerror.md) | An error object to diagnose critical failures in the run.                                                                                                   |
+| displayName   | String                                                     | The name of the run for rendering in a user interface.                                                                                                      |
+| endDateTime   | DateTimeOffset                                             | The time the run finished in ISO 8601 format, or null if the run is still in-progress.                                                                      |
+| startDateTime | DateTimeOffset                                             | The time the run started in ISO 8601 format.                                                                                                                |
+| status        | industryDataRunStatus                                      | Current status of the run. The possible values are: `running`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
 

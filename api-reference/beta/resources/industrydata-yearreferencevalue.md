@@ -19,14 +19,14 @@ Inherits from [referenceValue](../resources/industrydata-referencevalue.md).
 
 ## Properties
 
-| Property | Type   | Description                                                                                                                      |
-| :------- | :----- | :------------------------------------------------------------------------------------------------------------------------------- |
+| Property | Type   | Description                                                                                                                          |
+| :------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------- |
 | code     | String | The code of the desired **referenceDefinition** entry. Inherited from [referenceValue](../resources/industrydata-referencevalue.md). |
 
 ## Relationships
 
-| Relationship | Type                                                                    | Description                                                                                                                     |
-| :----------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| Relationship | Type                                                                    | Description                                                                                                                          |
+| :----------- | :---------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
 | value        | [referenceDefinition](../resources/industrydata-referencedefinition.md) | Reference to the bound **referenceDefinition** entity. Inherited from [referenceValue](../resources/industrydata-referencevalue.md). |
 
 ## JSON representation

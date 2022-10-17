@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an external source of data in the real world. The data that is ingested is associated to a source system to help identify the owner of the record for the data.
+Represents an external source of data in the real world. The data that is ingested is associated to a source system to identify the owner of record.
 
 ## Methods
 
@@ -23,14 +23,14 @@ Represents an external source of data in the real world. The data that is ingest
 | [Create sourceSystemDefinition](../api/industrydata-industrydataconnector-post-sourcesystem.md)   | [microsoft.graph.industryData.sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)            | Create a new [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.                               |
 | [Get sourceSystemDefinition](../api/industrydata-sourcesystemdefinition-get.md)                   | [microsoft.graph.industryData.sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)            | Read the properties and relationships of a [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object. |
 | [Update sourceSystemDefinition](../api/industrydata-sourcesystemdefinition-update.md)             | [microsoft.graph.industryData.sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)            | Update the properties of a [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.                 |
-| [Delete sourceSystemDefinition](../api/industrydata-industrydataconnector-delete-sourcesystem.md) | None                                                                                                                  | Delete a [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.                                  |
+| [Delete sourceSystemDefinition](../api/industrydata-industrydataconnector-delete-sourcesystem.md) | None                                                                                                                  | Delete a [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) object.                                   |
 
 ## Properties
 
-| Property             | Type                                                                                                            | Description                                          |
-| :------------------- | :-------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------- |
-| displayName          | String                                                                                                          | The name of the source system. Maximum supported length is 100 characters.                           |
-| userMatchingSettings | [microsoft.graph.industryData.userMatchingSetting](../resources/industrydata-usermatchingsetting.md) collection | A collection of user matching settings by **roleGroup**. |
+| Property             | Type                                                                                                            | Description                                                                                                  |
+| :------------------- | :-------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| displayName          | String                                                                                                          | The name of the source system. Maximum supported length is 100 characters.                                   |
+| userMatchingSettings | [microsoft.graph.industryData.userMatchingSetting](../resources/industrydata-usermatchingsetting.md) collection | A collection of user matching settings by **roleGroup**.                                                     |
 | vendor               | String                                                                                                          | The name of the vendor who supplies the source system. Maximum supported length is 100 characters. Optional. |
 
 ## Relationships

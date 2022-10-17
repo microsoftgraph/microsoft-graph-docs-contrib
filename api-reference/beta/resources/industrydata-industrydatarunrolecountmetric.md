@@ -17,10 +17,10 @@ Represents a count of people in a given role.
 
 ## Properties
 
-| Property | Type   | Description                    |
-| :------- | :----- | :----------------------------- |
+| Property | Type   | Description                        |
+| :------- | :----- | :--------------------------------- |
 | count    | Int32  | The number of people in this role. |
-| role     | String | The role that is being measured.       |
+| role     | String | The role that is being measured.   |
 
 ## Relationships
 

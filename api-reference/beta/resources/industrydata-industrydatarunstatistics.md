@@ -1,6 +1,6 @@
 ---
 title: "industryDataRunStatistics resource type"
-description: "Represents statistics for a single run group."
+description: "Represents statistics for a single run."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents statistics for a single run group.
+Represents statistics for a single run.
 
 ## Properties
 
-| Property           | Type                                                                                                                                  | Description                                                                                                                                                        |
-| :----------------- | :------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| activityStatistics | [microsoft.graph.industryData.industryDataActivityStatistics](../resources/industrydata-industrydataactivitystatistics.md) collection | The collection of statistics for each activity included in this run.                                                                                                        |
-| inboundTotals      | [microsoft.graph.industryData.aggregatedInboundStatistics](../resources/industrydata-aggregatedinboundstatistics.md)                  | The aggregate statistics for all inbound flows.                                                                                                                        |
-| runId              | String                                                                                                                                | The ID of the underlying run group for the statistics.                                                                                                                   |
-| status             | industryDataRunStatus                                                                                                                 | The latest status of the run group. The possible values are: `running`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| Property           | Type                                                                                                                                  | Description                                                                                                                                                    |
+| :----------------- | :------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| activityStatistics | [microsoft.graph.industryData.industryDataActivityStatistics](../resources/industrydata-industrydataactivitystatistics.md) collection | The collection of statistics for each activity included in this run.                                                                                           |
+| inboundTotals      | [microsoft.graph.industryData.aggregatedInboundStatistics](../resources/industrydata-aggregatedinboundstatistics.md)                  | The aggregate statistics for all inbound flows.                                                                                                                |
+| runId              | String                                                                                                                                | The ID of the underlying run for the statistics.                                                                                                               |
+| status             | industryDataRunStatus                                                                                                                 | The latest status of the run. The possible values are: `running`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
 
