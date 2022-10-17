@@ -19,10 +19,23 @@ You manage Azure AD Identity Governance capabilities programmatically by using t
 
 + [Access reviews](#attest-to-the-access-that-principals-have-to-resources)
 + [Entitlement management](#automate-user-access-to-resources)
++ [Lifecycle Workflows](#manage-the-lifecycle-of-users-in-your-organization)
 + [Privileged identity management](#manage-access-to-privileged-roles)
 + [Terms of use](#enforce-terms-of-use-for-your-resources)
 
 For more information about Azure AD Identity Governance, see [What is Azure AD Identity Governance?](#see-also).
+
+## Manage the lifecycle of users in your organization
+
+Organizations have processes that are carried out during at least three stages of an employee's life cycle - when they join the organization, when they move within the organization, and when they leave the organization. Such processes may include provisioning and deprovisioning access and resources where required.
+
+The [lifecycle workflows APIs](/graph/api/resources/identitygovernance-lifecycleworkflows-overview) in Microsoft Graph allow you to automate the basic lifecycle processes for users in your organization. These lifecycle processes enable the organization and its users to be efficient, secure, or compliant.
+
+## Automate user access to resources
+
+Employees in organizations may need access to various resources to perform their jobs. Partners and vendors may also need access to your resources. In complex organizations, it may be difficult for users to identify what access they require, how to request for access, and who should grant them access.
+
+The [entitlement management APIs](/graph/api/resources/entitlementmanagement-overview) in Microsoft Graph allow you to automate access request workflows, access assignments, reviews, and expiration.
 
 ## Attest to the access that principals have to resources
 
@@ -31,12 +44,6 @@ When a principal has access to resources in your organization, it's important to
 For example, suppose your organization automates employee access to a specific business-sensitive resource. For guests, you've granted them access to the resource through a group. It's important to periodically confirm that the guests still have a legitimate need for access to the group and by extension, the resource.
 
 Access reviews are a form of auditing the effectiveness of the organization’s internal controls. For more information, see the [overview of access reviews](/graph/api/resources/accessreviewsv2-overview).
-
-## Automate user access to resources
-
-Employees in organizations may need access to various resources to perform their jobs. Partners and vendors may also need access to your resources. In complex organizations, it may be difficult for users to identify what access they require, how to request for access, and who should grant them access.
-
-The [entitlement management APIs](/graph/api/resources/entitlementmanagement-overview) in Microsoft Graph allow you to automate access request workflows, access assignments, reviews, and expiration.
 
 ## Manage access to privileged roles
 
