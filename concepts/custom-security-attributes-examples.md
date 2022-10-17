@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.prod: "directory-management"
 ---
 
-# Assign, update, or remove custom security attributes using the Microsoft Graph API (preview)
+# Assign, update, list, or remove custom security attributes using the Microsoft Graph API (preview)
 
 > [!IMPORTANT]
 > The custom security attributes feature is currently in preview. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
@@ -358,6 +358,51 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
+## List custom security attribute assignments
+
+### Example 1: List a single-valued custom security attribute assigned to a user
+
+The following example shows how to list a custom security attribute assignment assigned to the user.
+
+- Attribute set: `Engineering`
+- Attribute: `datacenter`
+- Attribute value: `Redmond`
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "customsecurityattribute_remove_from_user_singlevalue"
+}-->
+```http
+GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes 
+```
+
+#### Response
+
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": {
+        "Engineering": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "datacenter@odata.type": "#Collection(String)",
+            "datacenter": [
+                "Redmond"
+            ]
+        }
+    }
+}
+```
+
+
 ## Remove custom security attribute assignments
 
 ### Example 1: Remove a single-valued custom security attribute assignment from a user
@@ -373,7 +418,7 @@ The following example shows how to remove a custom security attribute assignment
 
 <!-- {
   "blockType": "request",
-  "name": "customsecurityattribute_remove_from_user_singlevalue"
+  "name": "customsecurityattribute__from_user_singlevalue"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
