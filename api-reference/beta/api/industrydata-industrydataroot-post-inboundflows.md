@@ -47,15 +47,15 @@ POST /external/industryData/inboundFlows
 
 In the request body, supply a JSON representation of the [inboundFlow](../resources/industrydata-inboundflow.md) object.
 
-You can specify the following properties when creating an **inboundFlow**.
+You can specify the following properties when you create an **inboundFlow**.
 
 | Property           | Type            | Description                                                                                                                                                                                                                                                                  |
 | :----------------- | :-------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName        | String          | Name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                                                     |
-| readinessStatus    | readinessStatus | The state of the process from creation through to ready to do work. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. Required. |
 | dataDomain         | inboundDomain   | The broad category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                                                                                               |
-| effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. ISO 8601 format. Required.                                                                                                                                                                                     |
-| expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. ISO 8601 format. Optional.                                                                                                                                                                                       |
+| displayName        | String          | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                                                     |
+| effectiveDateTime  | DateTimeOffset  | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required.                                                                                                                                                                                     |
+| expirationDateTime | DateTimeOffset  | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.                                                                                                                                                                                       |
+| readinessStatus    | readinessStatus | The state of the process from creation through to ready to do work. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. Required. |
 
 ## Response
 
@@ -90,7 +90,7 @@ Content-length: 246
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

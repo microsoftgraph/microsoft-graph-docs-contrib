@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the industryDataConnector resources from the dataConnector navigation property.
+Get the [industryDataConnector](../resources/industrydata-industrydataconnector.md) resources from the **dataConnector** navigation property.
 
 ## Permissions
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inbound
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

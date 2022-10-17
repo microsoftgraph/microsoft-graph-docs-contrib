@@ -47,11 +47,11 @@ POST /external/industryData/dataConnectors
 
 In the request body, supply a JSON representation of the [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.
 
-You can specify the following properties when creating an **industryDataConnector**.
+You can specify the following properties when you create an **industryDataConnector**.
 
-| Property    | Type   | Description                           |
-| :---------- | :----- | :------------------------------------ |
-| displayName | String | Name of the data connector. Required. |
+| Property    | Type   | Description                               |
+| :---------- | :----- | :---------------------------------------- |
+| displayName | String | The name of the data connector. Required. |
 
 ## Response
 
@@ -82,7 +82,7 @@ Content-length: 104
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

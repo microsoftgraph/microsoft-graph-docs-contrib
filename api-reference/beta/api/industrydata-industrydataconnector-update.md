@@ -48,9 +48,9 @@ PATCH /external/industryData/inboundFlows/{inboundFlowId}/dataConnector
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property    | Type   | Description                           |
-| :---------- | :----- | :------------------------------------ |
-| displayName | String | Name of the data connector. Required. |
+| Property    | Type   | Description                               |
+| :---------- | :----- | :---------------------------------------- |
+| displayName | String | The name of the data connector. Required. |
 
 ## Response
 
@@ -81,7 +81,7 @@ Content-length: 104
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
