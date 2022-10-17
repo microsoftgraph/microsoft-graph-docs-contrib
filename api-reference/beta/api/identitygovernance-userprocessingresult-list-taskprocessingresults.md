@@ -60,7 +60,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List the results of the tasks processed for a user in a workflow
+
+#### Request
 
 The following is an example of a request.
 
@@ -101,7 +103,7 @@ GET https://graph.microsoft.com/beta/IdentityGovernance/lifecycleWorkflows/workf
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -165,6 +167,100 @@ Content-Type: application/json
                         "value": "e5659cb0-bcbb-4a9f-9092-90f72bd19028"
                     }
                 ]
+            }
+        }
+    ]
+}
+```
+
+### Example 2: List the results of the tasks processed for a user in a workflow and select specific properties
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_list_workflow_userprocessingresult_taskprocessingresult_select"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/userProcessingResults/40efc576-840f-47d0-ab95-5abca800f8a2/taskProcessingResults?$select=id,processingStatus,failureReason,subject,task
+```
+
+#### Response
+
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.identityGovernance.taskProcessingResult)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/userProcessingResults('40efc576-840f-47d0-ab95-5abca800f8a2')/taskProcessingResults(id,processingStatus,failureReason,subject,task)",
+    "value": [
+        {
+            "id": "78650318-7238-4e7e-852f-2c36cbeff340",
+            "processingStatus": "completed",
+            "failureReason": null,
+            "subject": {
+                "id": "df744d9e-2148-4922-88a8-633896c1e929"
+            },
+            "task": {
+                "category": "leaver",
+                "continueOnError": false,
+                "description": "Remove all licenses assigned to the user",
+                "displayName": "Remove all licenses for user",
+                "executionSequence": 1,
+                "id": "f71246b2-269c-4ba6-ab8e-afc1a05114cb",
+                "isEnabled": true,
+                "taskDefinitionId": "8fa97d28-3e52-4985-b3a9-a1126f9b8b4e",
+                "arguments": []
+            }
+        },
+        {
+            "id": "3d2e459d-5614-42e4-952b-0e917b5f6646",
+            "processingStatus": "completed",
+            "failureReason": null,
+            "subject": {
+                "id": "df744d9e-2148-4922-88a8-633896c1e929"
+            },
+            "task": {
+                "category": "leaver",
+                "continueOnError": false,
+                "description": "Remove user from all Teams memberships",
+                "displayName": "Remove user from all Teams",
+                "executionSequence": 2,
+                "id": "ed545f03-e8d8-45fb-9cbd-15c937f2a866",
+                "isEnabled": true,
+                "taskDefinitionId": "81f7b200-2816-4b3b-8c5d-dc556f07b024",
+                "arguments": []
+            }
+        },
+        {
+            "id": "03359fa6-c63c-4573-92c2-4c9518ca98aa",
+            "processingStatus": "completed",
+            "failureReason": null,
+            "subject": {
+                "id": "df744d9e-2148-4922-88a8-633896c1e929"
+            },
+            "task": {
+                "category": "leaver",
+                "continueOnError": false,
+                "description": "Delete user account in Azure AD",
+                "displayName": "Delete User Account",
+                "executionSequence": 3,
+                "id": "b4cefaa0-6ceb-461d-bbf5-ec69246463fd",
+                "isEnabled": true,
+                "taskDefinitionId": "8d18588d-9ad3-4c0f-99d0-ec215f0e3dff",
+                "arguments": []
             }
         }
     ]
