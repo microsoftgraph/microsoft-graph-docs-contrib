@@ -11484,9 +11484,10 @@ items:
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
     - name: Identity and access
+      displayName: Azure AD, Microsoft identity platform, Identity and access
       items:
       - name: Overview
-        displayName: Azure AD, Microsoft identity platform
+        displayName: Azure AD, Microsoft identity platform, Identity and access
         href: resources/azure-ad-overview.md
       - name: Customer relationship management
         items:
@@ -13436,8 +13437,8 @@ items:
               href: api/identitygovernance-lifecyclemanagementsettings-get.md
             - name: Update
               href: api/identitygovernance-lifecyclemanagementsettings-update.md
-        - name: Privileged identity management v3
-          displayName: Privileged identity management, PIM
+        - name: Privileged Identity Management v3
+          displayName: Privileged Identity Management, PIM, Identity Governance
           href: resources/privilegedidentitymanagementv3-overview.md
           items:
           - name: Role assignment schedule requests
