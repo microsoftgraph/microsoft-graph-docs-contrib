@@ -4546,9 +4546,10 @@ items:
         - name: Delete permission
           href: api/permission-delete.md
     - name: Identity and access
-      displayName: Azure AD, Microsoft identity platform
+      displayName: Azure AD, Microsoft identity platform, Identity and access
       items:
       - name: Overview
+        displayName: Azure AD, Microsoft identity platform, Identity and access
         href: resources/azure-ad-overview.md
       - name: Directory management
         items:
@@ -5669,8 +5670,8 @@ items:
               href: api/accesspackageassignmentpolicy-update.md
             - name: Delete
               href: api/accesspackageassignmentpolicy-delete.md
-        - name: Privileged identity management
-          displayName: Privileged identity management, PIM
+        - name: Privileged Identity Management
+          displayName: Privileged Identity Management, PIM, Identity Governance
           href: resources/privilegedidentitymanagementv3-overview.md
           items:
           - name: Role assignment schedule requests
