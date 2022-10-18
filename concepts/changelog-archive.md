@@ -4242,7 +4242,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Added the [People APIs](/graph/api/resources/person?view=graph-rest-1.0&preserve-view=true) to v1.0. For details about the People API, see [Get relevant information about people](people-example.md). |
+| Addition        | v1.0        | Added the [People APIs](/graph/api/resources/person?view=graph-rest-1.0&preserve-view=true) to v1.0. For details about the People API, see [Get relevant information about people](people-insights-overview.md). |
 | Addition        | v1.0        | Added People.Read.All permission. To learn more, please see [Permissions](permissions-reference.md). |
 | Addition        | v1.0        | Added the [personType](/graph/api/resources/persontype?view=graph-rest-1.0&preserve-view=true) resource. |
 | Change          | v1.0        | The [scoredEmailAddress](/graph/api/resources/scoredemailaddress?view=graph-rest-1.0&preserve-view=true) resource replaced the **rankedEmailAddress** resource. |

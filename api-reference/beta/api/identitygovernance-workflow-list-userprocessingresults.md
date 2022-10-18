@@ -61,7 +61,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List the user processing results for a workflow
+
+#### Request
 
 The following is an example of a request.
 
@@ -72,7 +74,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowid}/userProcessingResults
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/userProcessingResults
 ```
 
 # [C#](#tab/csharp)
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -131,7 +133,6 @@ Content-Type: application/json
             "workflowExecutionType": "onDemand",
             "workflowVersion": 1,
             "subject": {
-                "@odata.type": "microsoft.graph.user",
                 "id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
             }
         },
@@ -147,7 +148,6 @@ Content-Type: application/json
             "workflowExecutionType": "onDemand",
             "workflowVersion": 1,
             "subject": {
-                "@odata.type": "microsoft.graph.user",
                 "id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
             }
         },
@@ -162,6 +162,74 @@ Content-Type: application/json
             "totalUnprocessedTasksCount": 0,
             "workflowExecutionType": "onDemand",
             "workflowVersion": 13,
+            "subject": {
+                "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
+            }
+        }
+    ]
+}
+```
+
+### Example 2: List specific properties of user processing results for a workflow
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_list_userprocessingresult_select"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/userProcessingResults?$select=id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,workflowExecutionType,subject
+```
+
+#### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.identityGovernance.userProcessingResult)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/userProcessingResults",
+    "value": [
+        {
+            "id": "e831ffea-4156-482a-ba43-a8161f83efa8",
+            "failedTasksCount": 1,
+            "processingStatus": "failed",
+            "totalTasksCount": 3,
+            "totalUnprocessedTasksCount": 2,
+            "workflowExecutionType": "onDemand",
+            "subject": {
+                "id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
+            }
+        },
+        {
+            "id": "c1fab0b4-222d-4bdf-ab09-eb99fc5a8061",
+            "failedTasksCount": 1,
+            "processingStatus": "failed",
+            "totalTasksCount": 3,
+            "totalUnprocessedTasksCount": 2,
+            "workflowExecutionType": "onDemand",
+            "subject": {
+                "id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
+            }
+        },
+        {
+            "id": "0481a153-f437-45f0-b07c-ebe1008f10c5",
+            "failedTasksCount": 0,
+            "processingStatus": "completed",
+            "totalTasksCount": 2,
+            "totalUnprocessedTasksCount": 0,
+            "workflowExecutionType": "onDemand",
             "subject": {
                 "@odata.type": "microsoft.graph.user",
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"

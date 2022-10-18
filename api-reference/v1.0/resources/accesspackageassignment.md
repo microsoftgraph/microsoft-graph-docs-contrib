@@ -20,6 +20,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |[Get accessPackageAssignment](../api/accesspackageassignment-get.md)|[accessPackageAssignment](../resources/accesspackageassignment.md)|Retrieve a **accessPackageAssignment** object. |
 |[filterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects filtered on the signed-in user.|
 |[reprocess](../api/accesspackageassignment-reprocess.md) | None | Automatically reevaluate and enforce a user’s assignments for a specific access package.|
+|[additionalAccess](../api/accesspackageassignment-additionalaccess.md) | [accessPackageAssignment](../resources/accesspackageassignment.md) collection| Retrieve a list of **accessPackageAssignment** objects indicating potential separation of duties conflicts or access to incompatible access packages. |
 
 > [!NOTE]
 > To create, update or remove an access package assignment for a user, use the [create an accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) method.

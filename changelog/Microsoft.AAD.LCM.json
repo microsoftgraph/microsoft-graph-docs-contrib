@@ -322,6 +322,32 @@
       "CreatedDateTime": "2022-08-31T00:00:00.8909237Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a40b7de8-84cf-4012-abdf-7395b875aff5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isEnabled** property to the [workflowBase](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowBase?view=graph-rest-beta) resource. **workflowBase** is an entity type that's inherited by the following derived types in Lifecycle Workflows: [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta) and [workflowVersion](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowVersion?view=graph-rest-beta).",
+          "Target": "workflowBase"
+        },
+        {
+          "Id": "a40b7de8-84cf-4012-abdf-7395b875aff5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isSchedulingEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isSchedulingEnabled** property to the [workflowBase](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowBase?view=graph-rest-beta) resource.  **workflowBase** is an entity type that's inherited by the following derived types in Lifecycle Workflows: [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta) and [workflowVersion](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowVersion?view=graph-rest-beta).",
+          "Target": "workflowBase"
+        }
+      ],
+      "Id": "a40b7de8-84cf-4012-abdf-7395b875aff5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-10T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     }
   ]
 }
