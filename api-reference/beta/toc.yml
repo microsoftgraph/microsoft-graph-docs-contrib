@@ -10470,7 +10470,7 @@ items:
             href: api/cloudpcorganizationsettings-get.md
           - name: Update
             href: api/cloudpcorganizationsettings-update.md
-        - name: Cloud PC cross cloud government organization mapping
+        - name: Cloud PC cross-cloud government organization mapping
           href: resources/cloudpccrosscloudgovernmentorganizationmapping.md
           items:
           - name: Get
