@@ -26,10 +26,11 @@ For more information, see [Register an application with the Microsoft identity p
 ## Access scenarios
 
 The method that an app uses to authenticate with the Microsoft identity platform will depend on how you want the app to access the data. This access can be in one of two ways:
-+ **Delegated access**, an app acting on behalf of a signed-in user.
-+ **Direct access**, an app acting with its own identity.
 
-:::image type="content" source="../images/access-scenarios.png" alt-text="Illustration of delegated access and direct access scenarios in the Microsoft identity platform.":::
++ **Delegated access**, an app acting on behalf of a signed-in user.
++ **App-only access**, an app acting with its own identity.
+
+:::image type="content" source="../images/access-scenarios.png" alt-text="Illustration of delegated access and app-only access scenarios in the Microsoft identity platform.":::
 
 ### Delegated access (access on behalf of a user)
 
@@ -39,9 +40,9 @@ Delegated access requires *delegated permissions*, also referred to as *scopes*.
 
 Because both the app and the user must be authorized to make the request, the resource grants the client app the delegated permissions, for the client app to access data on behalf of the specified user. For the user, the actions that they can perform on the resource rely on the permissions that they have to access the resource. For example, the user might be the owner of the resource, or they might be assigned a particular role through a role-based access control system (RBAC) such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview).
 
-### Direct access (app-only access)
+### App-only access (access without a user)
 
-In this access scenario, the application can interact with data on its own, without a signed in user. *Direct access* or *app-only* access is used in scenarios such as automation and backup, and is mostly used by apps that run as background services or daemons. It's suitable when it's undesirable to have a user signed in, or when the data required can't be scoped to a single user.
+In this access scenario, the application can interact with data on its own, without a signed in user. *App-only* access is used in scenarios such as automation and backup, and is mostly used by apps that run as background services or daemons. It's suitable when it's undesirable to have a user signed in, or when the data required can't be scoped to a single user.
 
 Apps get privileges to call Microsoft Graph with their own identity through one of the following ways:
 
