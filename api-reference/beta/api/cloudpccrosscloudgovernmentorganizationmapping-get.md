@@ -40,7 +40,7 @@ This method supports some of the OData query parameters to help customize the re
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required. Represents the AAD token of government cloud tenant.|
+|X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required. Represents the Azure AD token of the government cloud tenant.|
 
 ## Request body
 Do not supply a request body for this method.
