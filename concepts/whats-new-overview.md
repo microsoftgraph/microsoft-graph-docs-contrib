@@ -44,6 +44,12 @@ Administrators can configure tenant-level privacy control as [organization setti
 ### Search | Query
 Specify [options for searching for SharePoint or OneDrive content](/graph/api/resources/sharepointonedriveoptions?view=graph-rest-beta&preserve-view=true) - the kinds of content to be searched when performing a [search request](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true) using application permissions.
 
+### Security | Advanced hunting
+[Query](/graph/api/security-security-runhuntingquery?view=graph-rest-beta&preserve-view=true) event, activity, or entity data in Microsoft 365 Defender to proactively look for specific threats in your environment. This [advanced hunting](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#advanced-hunting-preview) feature enables unconstrained hunting for both known and potential threats.
+
+### Security | Alerts and incidents
+Create a [comment](/graph/api/resources/security-alertcomment?view=graph-rest-beta&preserve-view=true) for an existing [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) or [incident](/graph/api/resources/security-incident?view=graph-rest-beta&preserve-view=true).
+
 ### Tasks and plans
 [Get](/graph/api/plannertaskdetails-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/plannertaskdetails-update?view=graph-rest-beta&preserve-view=true) rich text description of a Planner [task](/graph/api/resources/plannertask?view=graph-rest-beta&preserve-view=true) intended for HTML-aware clients.
 

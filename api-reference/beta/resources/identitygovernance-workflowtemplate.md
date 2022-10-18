@@ -37,6 +37,12 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The unique identifier for the `workflowTemplate`. Inherited from [entity](../resources/entity.md).|
 |tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Represents the configured tasks to execute and their execution sequence within a [workflow](../resources/identitygovernance-workflow.md). This relationship is expanded by default.|
 
+### Supported workflow templates
+
+Lifecycle Workflows currently provide the following predefined workflow templates:
+
+[!INCLUDE [identitygovernance-lifecycleworkflows-workflowtemplates](../includes/identitygovernance-lifecycleworkflows-workflowtemplates.md)]
+
 ## Relationships
 
 |Relationship|Type|Description|
