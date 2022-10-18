@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Cloud PC organization mapping between a public and US government cloud organizations.
-For GCC (US Government Community Cloud) customers, the Azure Active Directory for the tenant is in a public cloud, but the Azure AD resources and Windows 365 Cloud PCs are in the US government cloud. Therefore, tenant mapping should be set up and maintained while updating the security and compliance requirements for the FedRAMP certification and onboarding to the US Government cloud. Tenant mapping is required for customer administrators when setting up & configuring Windows 365 and for GCC end users accessing their Windows 365 Cloud PCs.
+Represents a Cloud PC organization mapping between a public and a US Government Community Cloud (GCC) organization.
+
+For GCC customers, the Azure Active Directory (Azure AD) for the tenant is in a public cloud, but the Azure AD resources and Windows 365 Cloud PCs are in the US government cloud. Therefore, tenant mapping should be set up and maintained while updating the security and compliance requirements for the FedRAMP certification and onboarding to the US Government cloud. Tenant mapping is required for customer administrators when setting up and configuring Windows 365 and for GCC end users accessing their Windows 365 Cloud PCs.
 
 ## Methods
 |Method|Return type|Description|
@@ -25,8 +26,8 @@ For GCC (US Government Community Cloud) customers, the Azure Active Directory fo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The tenant ID of the GCC (US Government Community Cloud) tenant in public cloud.|
-|organizationIdsInUSGovCloud|String collection|The tenant ID in the Azure Government cloud corresponding to the GCC (US Government Community Cloud) tenant in the public cloud. Currently, we support 1:1 mappings, so this collection can only contain one tenant ID.|
+|id|String|The tenant ID of the GCC tenant in public cloud.|
+|organizationIdsInUSGovCloud|String collection|The tenant ID in the Azure Government cloud corresponding to the GCC tenant in the public cloud. Currently, 1:1 mappings are supported, so this collection can only contain one tenant ID.|
 
 ## Relationships
 None.
