@@ -38,7 +38,7 @@ POST /deviceManagement/virtualEndpoint/crossCloudGovernmentOrganizationMapping
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
-|X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required. Represents the AAD token of government cloud tenant.|
+|X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required. Represents the Azure AD token of government cloud tenant.|
 
 ## Request body
 The request body is an empty JSON string.
