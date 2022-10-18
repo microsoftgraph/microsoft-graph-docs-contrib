@@ -1471,7 +1471,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ### Remarks
 _Notes.Read.All_ and _Notes.ReadWrite.All_ are only valid for work or school accounts. All other permissions are valid for both Microsoft accounts and work or school accounts.
 
-With the _Notes.Create_ permission, an app can view the OneNote notebook hierarchy of the signed-in user and create OneNote content (notebooks, section groups, sections, pages, etc.).
+With the _Notes.Create_ permission, an app can view the OneNote notebook hierarchy of the signed-in user and create OneNote content (notebooks, section groups, sections, pages, and so on).
 
 _Notes.ReadWrite_ and _Notes.ReadWrite.All_ also allow the app to modify the permissions on the OneNote content that can be accessed by the signed-in user.
 
@@ -2719,9 +2719,9 @@ User authentication method permissions are used to manage authentication methods
 
 With these permissions, all authentication methods can be read and managed on a user. This includes methods used for:
 
-* Primary authentication (password, FIDO2, Microsoft Authenticator, etc.)
-* Second factor of multi-factor authentication/MFA (phone numbers, Microsoft Authenticator, etc.)
-* Self-Service Password Reset/SSPR (email address, etc.)
+* Primary authentication (password, FIDO2, Microsoft Authenticator, and so on)
+* Second factor of multi-factor authentication/MFA (phone numbers, Microsoft Authenticator, and so on)
+* Self-Service Password Reset/SSPR (email address, and so on)
 
 ## Windows updates permissions
 
@@ -2762,7 +2762,7 @@ This section shows some common scenarios that target [user](/graph/api/resources
 | **App tasks involving User**	 |  **Required permissions** | **Permission strings** |
 |:-------------------------------|:---------------------|:---------------|
 | App wants to read other users' basic information (only display name and picture), for example to show in a people picking experience	 | _User.ReadBasic.All_  |  Read all user's basic profiles |
-| App wants to read complete user profile for signed in user (see direct reports, and manager, etc.)	 | _User.Read_ | Enable sign-in and read user profile|
+| App wants to read complete user profile for signed in user (see direct reports, and manager, and so on)	 | _User.Read_ | Enable sign-in and read user profile|
 | App wants to read complete user profile all users	 | _User.Read.All_ |  Read all user's full profiles   |
 | App wants to read files, mail and calendar information for the signed in user	 | _User.Read_, _Files.Read_, _Mail.Read_, _Calendars.Read_ | Enable sign-in and read user profile, Read users' files,  Read user mail,  Read user calendars |
 | App wants to read the signed-in user's (my) files and files that other users have shared with the signed-in user (me). | _User.Read_, _Files.Read_, _Sites.Read.All_ | Enable sign-in and read user profile, Read users' files,  Read items in all site collections |
