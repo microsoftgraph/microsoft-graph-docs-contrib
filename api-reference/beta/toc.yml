@@ -10470,6 +10470,13 @@ items:
             href: api/cloudpcorganizationsettings-get.md
           - name: Update
             href: api/cloudpcorganizationsettings-update.md
+        - name: Cloud PC cross-cloud government organization mapping
+          href: resources/cloudpccrosscloudgovernmentorganizationmapping.md
+          items:
+          - name: Get
+            href: api/cloudpccrosscloudgovernmentorganizationmapping-get.md
+          - name: Create
+            href: api/virtualendpoint-post-crosscloudgovernmentorganizationmapping.md
         - name: Cloud PC external partner setting
           href: resources/cloudpcexternalpartnersetting.md
           items:
@@ -11484,9 +11491,10 @@ items:
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
     - name: Identity and access
+      displayName: Azure AD, Microsoft identity platform, Identity and access
       items:
       - name: Overview
-        displayName: Azure AD, Microsoft identity platform
+        displayName: Azure AD, Microsoft identity platform, Identity and access
         href: resources/azure-ad-overview.md
       - name: Customer relationship management
         items:
@@ -11927,7 +11935,7 @@ items:
           - name: Remove included groups
             href: api/mobileappmanagementpolicies-delete-includedgroups.md
         - name: Role management
-          displayName: Unified RBAC, Privileged Identity Management, PIM v3
+          displayName: Unified RBAC
           href: resources/rolemanagement.md
           items:
           - name: Role definition
@@ -11983,100 +11991,6 @@ items:
                 href: api/unifiedrbacresourcenamespace-list-resourceactions.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
-          - name: Privileged identity management
-            displayName: Privileged identity management, PIM
-            href: resources/privilegedidentitymanagementv3-overview.md
-            items:
-            - name: Role assignments
-              items:
-                - name: Schedule requests
-                  href: resources/unifiedroleassignmentschedulerequest.md
-                  items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentschedulerequests.md
-                  - name: Create
-                    href: api/rbacapplication-post-roleassignmentschedulerequests.md
-                  - name: Get
-                    href: api/unifiedroleassignmentschedulerequest-get.md
-                  - name: Cancel
-                    href: api/unifiedroleassignmentschedulerequest-cancel.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
-                - name: Schedules
-                  href: resources/unifiedroleassignmentschedule.md
-                  items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentschedules.md
-                  - name: Get
-                    href: api/unifiedroleassignmentschedule-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
-                - name: Schedule instances
-                  href: resources/unifiedroleassignmentscheduleinstance.md
-                  items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentscheduleinstances.md
-                  - name: Get
-                    href: api/unifiedroleassignmentscheduleinstance-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
-            - name: Role eligibility
-              items:
-              - name: Schedule requests
-                href: resources/unifiedroleeligibilityschedulerequest.md
-                items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityschedulerequests.md
-                - name: Create
-                  href: api/rbacapplication-post-roleeligibilityschedulerequests.md
-                - name: Get
-                  href: api/unifiedroleeligibilityschedulerequest-get.md
-                - name: Cancel
-                  href: api/unifiedroleeligibilityschedulerequest-cancel.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
-              - name: Schedules
-                href: resources/unifiedroleeligibilityschedule.md
-                items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityschedules.md
-                - name: Get
-                  href: api/unifiedroleeligibilityschedule-get.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
-              - name: Schedule instances
-                href: resources/unifiedroleeligibilityscheduleinstance.md
-                items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
-                - name: Get
-                  href: api/unifiedroleeligibilityscheduleinstance-get.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-            - name: Role management policies
-              items:
-              - name: Policies and rules
-                displayName: role management policies, Azure AD role settings
-                href: resources/unifiedrolemanagementpolicy.md
-                items:
-                - name: List
-                  href: api/policyroot-list-rolemanagementpolicies.md
-                - name: Get
-                  href: api/unifiedrolemanagementpolicy-get.md
-                - name: List rules
-                  href: api/unifiedrolemanagementpolicy-list-rules.md
-                - name: Get rule
-                  href: api/unifiedrolemanagementpolicyrule-get.md
-                - name: Update rule
-                  href: api/unifiedrolemanagementpolicyrule-update.md
-              - name: Policy assignments
-                displayName: role managemement policy assignments
-                href: resources/unifiedrolemanagementpolicyassignment.md
-                items:
-                - name: List
-                  href: api/policyroot-list-rolemanagementpolicyassignments.md
-                - name: Get
-                  href: api/unifiedrolemanagementpolicyassignment-get.md
         - name: Tenant information
           href: resources/tenantinformation.md
           items:
@@ -13399,127 +13313,8 @@ items:
               href: api/entitlementmanagementsettings-get.md
             - name: Update
               href: api/entitlementmanagementsettings-update.md
-        - name: Privileged Identity Management
-          items:
-          - name: Privileged Identity Management
-            href: resources/privilegedidentitymanagement-root.md
-          - name: Azure AD (deprecated)
-            items:
-            - name: Azure AD
-              href: resources/privilegedidentitymanagement-directory.md
-            - name: Privileged role
-              href: resources/privilegedrole.md
-              items:
-              - name: List privileged roles
-                href: api/privilegedrole-list.md
-              - name: Get privileged role
-                href: api/privilegedrole-get.md
-              - name: List role assignments
-                href: api/privilegedrole-list-assignments.md
-              - name: Self role activate
-                href: api/privilegedrole-selfactivate.md
-              - name: Self role deactivate
-                href: api/privilegedrole-selfdeactivate.md
-              - name: Get role settings
-                href: api/privilegedrolesettings-get.md
-              - name: Update role settings
-                href: api/privilegedrolesettings-update.md
-              - name: Get role summary
-                href: api/privilegedrolesummary-get.md
-            - name: Privileged role assignment
-              href: resources/privilegedroleassignment.md
-              items:
-              - name: List role assignments
-                href: api/privilegedroleassignment-list.md
-              - name: Get role assignment
-                href: api/privilegedroleassignment-get.md
-              - name: Create role assignments
-                href: api/privilegedroleassignment-post-privilegedroleassignments.md
-              - name: Delete role assignment
-                href: api/privilegedroleassignment-delete.md
-              - name: Get my role assignments
-                href: api/privilegedroleassignment-my.md
-              - name: Make eligible role assignment
-                href: api/privilegedroleassignment-makeeligible.md
-              - name: Make permanent role assignment
-                href: api/privilegedroleassignment-makepermanent.md
-            - name: Privileged role assignment request
-              href: resources/privilegedroleassignmentrequest.md
-              items:
-              - name: List role assignments
-                href: api/privilegedroleassignmentrequest-list.md
-              - name: Create role assignments
-                href: api/privilegedroleassignmentrequest-post.md
-              - name: Cancel role assignment
-                href: api/privilegedroleassignmentrequest-cancel.md
-              - name: Get my role assignments
-                href: api/privilegedroleassignmentrequest-my.md
-            - name: Privileged approval
-              href: resources/privilegedapproval.md
-              items:
-              - name: List privileged approvals
-                href: api/privilegedapproval-list.md
-              - name: Get privileged approval
-                href: api/privilegedapproval-get.md
-              - name: Update role assignment
-                href: api/privilegedapproval-update.md
-            - name: Audit event
-              href: resources/privilegedoperationevent.md
-              items:
-              - name: List audit events
-                href: api/privilegedoperationevent-list.md
-          - name: Azure resources
-            items:
-            - name: Azure resources
-              href: resources/privilegedidentitymanagement-resources.md
-            - name: Managed resources
-              href: resources/governanceresource.md
-              items:
-              - name: List
-                href: api/governanceresource-list.md
-              - name: Get
-                href: api/governanceresource-get.md
-              - name: Register
-                href: api/governanceresource-register.md
-            - name: Role definitions
-              href: resources/governanceroledefinition.md
-              items:
-              - name: List
-                href: api/governanceroledefinition-list.md
-              - name: Get
-                href: api/governanceroledefinition-get.md
-            - name: Role settings
-              href: resources/governancerolesetting.md
-              items:
-              - name: List
-                href: api/governancerolesetting-list.md
-              - name: Get
-                href: api/governancerolesetting-get.md
-              - name: Update
-                href: api/governancerolesetting-update.md
-            - name: Role assignments
-              href: resources/governanceroleassignment.md
-              items:
-              - name: List
-                href: api/governanceroleassignment-list.md
-              - name: Get
-                href: api/governanceroleassignment-get.md
-              - name: Export
-                href: api/governanceroleassignment-export.md
-            - name: Role assignment requests
-              href: resources/governanceroleassignmentrequest.md
-              items:
-              - name: List
-                href: api/governanceroleassignmentrequest-list.md
-              - name: Create
-                href: api/governanceroleassignmentrequest-post.md
-              - name: Get
-                href: api/governanceroleassignmentrequest-get.md
-              - name: Update
-                href: api/governanceroleassignmentrequest-update.md
-              - name: Cancel
-                href: api/governanceroleassignmentrequest-cancel.md
-        - name: Lifecycle Workflows
+        - name: Lifecycle Workflows (preview)
+          displayName: LCW, Identity Governance, Joiner, Mover, Leaver
           href: resources/identitygovernance-lifecycleworkflows-overview.md
           items:
           - name: Workflows
@@ -13649,6 +13444,213 @@ items:
               href: api/identitygovernance-lifecyclemanagementsettings-get.md
             - name: Update
               href: api/identitygovernance-lifecyclemanagementsettings-update.md
+        - name: Privileged Identity Management v3
+          displayName: Privileged Identity Management, PIM, Identity Governance
+          href: resources/privilegedidentitymanagementv3-overview.md
+          items:
+          - name: Role assignment schedule requests
+            href: resources/unifiedroleassignmentschedulerequest.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleassignmentschedulerequests.md
+            - name: Create
+              href: api/rbacapplication-post-roleassignmentschedulerequests.md
+            - name: Get
+              href: api/unifiedroleassignmentschedulerequest-get.md
+            - name: Cancel
+              href: api/unifiedroleassignmentschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+          - name: Role assignment schedules
+            href: resources/unifiedroleassignmentschedule.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleassignmentschedules.md
+            - name: Get
+              href: api/unifiedroleassignmentschedule-get.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+          - name: Role assignment schedule instances
+            href: resources/unifiedroleassignmentscheduleinstance.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+            - name: Get
+              href: api/unifiedroleassignmentscheduleinstance-get.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+          - name: Role eligibility schedule requests
+            href: resources/unifiedroleeligibilityschedulerequest.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+            - name: Create
+              href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+            - name: Get
+              href: api/unifiedroleeligibilityschedulerequest-get.md
+            - name: Cancel
+              href: api/unifiedroleeligibilityschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+          - name: Role eligibility schedules
+            href: resources/unifiedroleeligibilityschedule.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleeligibilityschedules.md
+            - name: Get
+              href: api/unifiedroleeligibilityschedule-get.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+          - name: Role eligibility schedule instances
+            href: resources/unifiedroleeligibilityscheduleinstance.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+            - name: Get
+              href: api/unifiedroleeligibilityscheduleinstance-get.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+          - name: Role management policies
+            items:
+            - name: Policies and rules
+              href: resources/unifiedrolemanagementpolicy.md
+            - name: List
+              href: api/policyroot-list-rolemanagementpolicies.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicy-get.md
+            - name: List rules
+              href: api/unifiedrolemanagementpolicy-list-rules.md
+            - name: Get rule
+              href: api/unifiedrolemanagementpolicyrule-get.md
+            - name: Update rule
+              href: api/unifiedrolemanagementpolicyrule-update.md
+          - name: Role management policy assignments
+            href: resources/unifiedrolemanagementpolicyassignment.md
+            items:
+            - name: List
+              href: api/policyroot-list-rolemanagementpolicyassignments.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicyassignment-get.md
+        - name: Privileged Identity Management v2
+          items:
+          - name: Privileged Identity Management
+            href: resources/privilegedidentitymanagement-root.md
+          - name: Azure AD (deprecated)
+            items:
+            - name: Azure AD
+              href: resources/privilegedidentitymanagement-directory.md
+            - name: Privileged role
+              href: resources/privilegedrole.md
+              items:
+              - name: List privileged roles
+                href: api/privilegedrole-list.md
+              - name: Get privileged role
+                href: api/privilegedrole-get.md
+              - name: List role assignments
+                href: api/privilegedrole-list-assignments.md
+              - name: Self role activate
+                href: api/privilegedrole-selfactivate.md
+              - name: Self role deactivate
+                href: api/privilegedrole-selfdeactivate.md
+              - name: Get role settings
+                href: api/privilegedrolesettings-get.md
+              - name: Update role settings
+                href: api/privilegedrolesettings-update.md
+              - name: Get role summary
+                href: api/privilegedrolesummary-get.md
+            - name: Privileged role assignment
+              href: resources/privilegedroleassignment.md
+              items:
+              - name: List role assignments
+                href: api/privilegedroleassignment-list.md
+              - name: Get role assignment
+                href: api/privilegedroleassignment-get.md
+              - name: Create role assignments
+                href: api/privilegedroleassignment-post-privilegedroleassignments.md
+              - name: Delete role assignment
+                href: api/privilegedroleassignment-delete.md
+              - name: Get my role assignments
+                href: api/privilegedroleassignment-my.md
+              - name: Make eligible role assignment
+                href: api/privilegedroleassignment-makeeligible.md
+              - name: Make permanent role assignment
+                href: api/privilegedroleassignment-makepermanent.md
+            - name: Privileged role assignment request
+              href: resources/privilegedroleassignmentrequest.md
+              items:
+              - name: List role assignments
+                href: api/privilegedroleassignmentrequest-list.md
+              - name: Create role assignments
+                href: api/privilegedroleassignmentrequest-post.md
+              - name: Cancel role assignment
+                href: api/privilegedroleassignmentrequest-cancel.md
+              - name: Get my role assignments
+                href: api/privilegedroleassignmentrequest-my.md
+            - name: Privileged approval
+              href: resources/privilegedapproval.md
+              items:
+              - name: List privileged approvals
+                href: api/privilegedapproval-list.md
+              - name: Get privileged approval
+                href: api/privilegedapproval-get.md
+              - name: Update role assignment
+                href: api/privilegedapproval-update.md
+            - name: Audit event
+              href: resources/privilegedoperationevent.md
+              items:
+              - name: List audit events
+                href: api/privilegedoperationevent-list.md
+          - name: Azure resources
+            items:
+            - name: Azure resources
+              href: resources/privilegedidentitymanagement-resources.md
+            - name: Managed resources
+              href: resources/governanceresource.md
+              items:
+              - name: List
+                href: api/governanceresource-list.md
+              - name: Get
+                href: api/governanceresource-get.md
+              - name: Register
+                href: api/governanceresource-register.md
+            - name: Role definitions
+              href: resources/governanceroledefinition.md
+              items:
+              - name: List
+                href: api/governanceroledefinition-list.md
+              - name: Get
+                href: api/governanceroledefinition-get.md
+            - name: Role settings
+              href: resources/governancerolesetting.md
+              items:
+              - name: List
+                href: api/governancerolesetting-list.md
+              - name: Get
+                href: api/governancerolesetting-get.md
+              - name: Update
+                href: api/governancerolesetting-update.md
+            - name: Role assignments
+              href: resources/governanceroleassignment.md
+              items:
+              - name: List
+                href: api/governanceroleassignment-list.md
+              - name: Get
+                href: api/governanceroleassignment-get.md
+              - name: Export
+                href: api/governanceroleassignment-export.md
+            - name: Role assignment requests
+              href: resources/governanceroleassignmentrequest.md
+              items:
+              - name: List
+                href: api/governanceroleassignmentrequest-list.md
+              - name: Create
+                href: api/governanceroleassignmentrequest-post.md
+              - name: Get
+                href: api/governanceroleassignmentrequest-get.md
+              - name: Update
+                href: api/governanceroleassignmentrequest-update.md
+              - name: Cancel
+                href: api/governanceroleassignmentrequest-cancel.md
         - name: Terms of use
           items:
           - name: Agreement
@@ -14946,6 +14948,16 @@ items:
           href: api/securityaction-get.md
         - name: Cancel security action
           href: api/securityaction-cancelsecurityaction.md
+      - name: Advanced hunting (preview)
+        items:
+        - name: Run hunting query
+          href: api/security-security-runhuntingquery.md
+        - name: Hunting query results
+          href: resources/security-huntingqueryresults.md
+        - name: Hunting row result
+          href: resources/security-huntingrowresult.md
+        - name: Single property schema
+          href: resources/security-singlepropertyschema.md
       - name: Alerts and incidents (preview)
         items:
         - name: Alert
@@ -14958,6 +14970,8 @@ items:
             href: api/security-alert-get.md
           - name: Update alert
             href: api/security-alert-update.md
+          - name: Create comment for alert
+            href: api/security-alert-post-comments.md
         - name: Alert evidence
           items:
           - name: Alert evidence
@@ -15000,6 +15014,8 @@ items:
             href: api/security-incident-get.md
           - name: Update incident
             href: api/security-incident-update.md
+          - name: Create comment for incident
+            href: api/security-incident-post-comments.md
       - name: Attack simulation and training
         items:
         - name: Simulations

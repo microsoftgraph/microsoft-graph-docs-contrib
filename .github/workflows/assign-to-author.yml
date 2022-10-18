@@ -16,5 +16,5 @@ jobs:
         needAssignLabel: needs-assignment
         excludedAuthors: MSGraphDocsVteam
       id: assign
-      uses: microsoftgraph/assign-to-author@v1.0.1
+      uses: microsoftgraph/assign-to-author@v1.0.2
       
