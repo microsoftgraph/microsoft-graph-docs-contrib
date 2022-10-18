@@ -142,7 +142,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List name, description, id, scenarios of templates whose scenarios contain "zeroTrust"
+### Example 2: List name, description, id, scenarios of templates whose scenarios contain "secureFoundation"
 
 #### Request
 The following is an example of a request.
