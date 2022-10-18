@@ -10470,6 +10470,13 @@ items:
             href: api/cloudpcorganizationsettings-get.md
           - name: Update
             href: api/cloudpcorganizationsettings-update.md
+        - name: Cloud PC cross-cloud government organization mapping
+          href: resources/cloudpccrosscloudgovernmentorganizationmapping.md
+          items:
+          - name: Get
+            href: api/cloudpccrosscloudgovernmentorganizationmapping-get.md
+          - name: Create
+            href: api/virtualendpoint-post-crosscloudgovernmentorganizationmapping.md
         - name: Cloud PC external partner setting
           href: resources/cloudpcexternalpartnersetting.md
           items:
@@ -11484,9 +11491,10 @@ items:
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
     - name: Identity and access
+      displayName: Azure AD, Microsoft identity platform, Identity and access
       items:
       - name: Overview
-        displayName: Azure AD, Microsoft identity platform
+        displayName: Azure AD, Microsoft identity platform, Identity and access
         href: resources/azure-ad-overview.md
       - name: Customer relationship management
         items:
@@ -13436,8 +13444,8 @@ items:
               href: api/identitygovernance-lifecyclemanagementsettings-get.md
             - name: Update
               href: api/identitygovernance-lifecyclemanagementsettings-update.md
-        - name: Privileged identity management v3
-          displayName: Privileged identity management, PIM
+        - name: Privileged Identity Management v3
+          displayName: Privileged Identity Management, PIM, Identity Governance
           href: resources/privilegedidentitymanagementv3-overview.md
           items:
           - name: Role assignment schedule requests
