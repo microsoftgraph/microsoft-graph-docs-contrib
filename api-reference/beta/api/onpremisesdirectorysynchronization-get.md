@@ -56,6 +56,7 @@ If successful, this method returns a `200 OK` response code and an [onPremisesDi
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -73,7 +74,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.onPremisesDirectorySynchronization"
+  "@odata.type": "Microsoft.graph.onPremisesDirectorySynchronization"
 }
 -->
 ``` http
@@ -82,7 +83,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.onPremisesDirectorySynchronization",
+    "@odata.type": "#Microsoft.graph.onPremisesDirectorySynchronization",
     "id": "5b9cdf70-03a6-87ad-df4e-8283368fc372",
     "configuration": {
       "@odata.type": "microsoft.graph.onPremisesDirectorySynchronizationConfiguration"
