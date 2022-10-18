@@ -74,7 +74,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.graph.onPremisesDirectorySynchronization"
+  "@odata.type": "microsoft.graph.onPremisesDirectorySynchronization"
 }
 -->
 ``` http
@@ -83,7 +83,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.graph.onPremisesDirectorySynchronization",
+    "@odata.type": "#microsoft.graph.onPremisesDirectorySynchronization",
     "id": "5b9cdf70-03a6-87ad-df4e-8283368fc372",
     "configuration": {
       "@odata.type": "microsoft.graph.onPremisesDirectorySynchronizationConfiguration"
