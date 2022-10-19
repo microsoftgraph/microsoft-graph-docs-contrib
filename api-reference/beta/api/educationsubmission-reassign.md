@@ -61,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/02bb5de1-7205-2a25-fe33-f99cf53de1c4/reassign
+POST https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/assignments/db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a/submissions/4bca096a-7de3-8675-5e86-2fa149923860/reassign
 ```
 
 # [C#](#tab/csharp)
@@ -105,21 +105,22 @@ HTTP/1.1 200 OK
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
     "@odata.type": "#microsoft.graph.educationSubmission",
     "status": "returned",
-    "submittedDateTime": "2021-09-07T14:54:46.1606962Z",
-    "unsubmittedDateTime": "2021-09-07T14:41:18.9512645Z",
-    "returnedDateTime": "2021-09-07T21:38:40.5254847Z",
-    "reassignedDateTime": "2021-09-07T21:38:40.5254847Z",
+    "submittedDateTime": "2022-10-19T23:32:49.3314767Z",
+    "unsubmittedDateTime": null,
+    "returnedDateTime": "2022-10-19T23:32:58.1079737Z",
+    "reassignedDateTime": "2022-10-19T23:32:58.1079737Z",
     "resourcesFolderUrl": null,
-    "id": "02bb5de1-7205-2a25-fe33-f99cf53de1c4",
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22bf1f1963-05f6-4cba-903c-5892b4ce3bd7%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%224bca096a-7de3-8675-5e86-2fa149923860%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "id": "4bca096a-7de3-8675-5e86-2fa149923860",
     "recipient": {
         "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
-        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+        "userId": "61243ddb-6f39-499d-b232-9fa8cef26b3a"
     },
     "submittedBy": {
         "application": null,
         "device": null,
         "user": {
-            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -127,7 +128,7 @@ HTTP/1.1 200 OK
         "application": null,
         "device": null,
         "user": {
-            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "id": null,
             "displayName": null
         }
     },
@@ -135,7 +136,7 @@ HTTP/1.1 200 OK
         "application": null,
         "device": null,
         "user": {
-            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -143,7 +144,7 @@ HTTP/1.1 200 OK
         "application": null,
         "device": null,
         "user": {
-            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     }
@@ -164,7 +165,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/02bb5de1-7205-2a25-fe33-f99cf53de1c4/reassign
+POST https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/assignments/db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a/submissions/b9dab587-5fcc-30ae-f7fa-41a47fb89972/reassign
 Prefer: include-unknown-enum-members
 ```
 
@@ -209,21 +210,22 @@ HTTP/1.1 200 OK
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
     "@odata.type": "#microsoft.graph.educationSubmission",
     "status": "reassigned",
-    "submittedDateTime": "2021-09-07T21:44:41.8377109Z",
-    "unsubmittedDateTime": "2021-09-07T14:41:18.9512645Z",
+    "submittedDateTime": "2022-10-19T23:34:34.5246354Z",
+    "unsubmittedDateTime": null,
     "returnedDateTime": null,
-    "reassignedDateTime": "2021-09-07T21:45:42.9027726Z",
+    "reassignedDateTime": "2022-10-19T23:35:07.2786612Z",
     "resourcesFolderUrl": null,
-    "id": "02bb5de1-7205-2a25-fe33-f99cf53de1c4",
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22bf1f1963-05f6-4cba-903c-5892b4ce3bd7%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%22b9dab587-5fcc-30ae-f7fa-41a47fb89972%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "id": "b9dab587-5fcc-30ae-f7fa-41a47fb89972",
     "recipient": {
         "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
-        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+        "userId": "51cf5a99-d234-4e43-96de-cd65df14bfa1"
     },
     "submittedBy": {
         "application": null,
         "device": null,
         "user": {
-            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -231,7 +233,7 @@ HTTP/1.1 200 OK
         "application": null,
         "device": null,
         "user": {
-            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "id": null,
             "displayName": null
         }
     },
@@ -247,7 +249,7 @@ HTTP/1.1 200 OK
         "application": null,
         "device": null,
         "user": {
-            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     }
