@@ -30,6 +30,8 @@ The calling user must be assigned one of the following Azure AD roles:
 + [Privileged Authentication Administrator](/azure/active-directory/roles/permissions-reference#privileged-authentication-administrator)
 + [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator)
 
+To delete users with more privileged administrator roles, applications need to be assigned the *Directory.AccessAsUser.All* permission and either the Global Admin role or the Privileged Auth Admin role.
+
 For more details, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## HTTP request
