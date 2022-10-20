@@ -129,6 +129,25 @@ If your applications are or will be calling any of these APIs, we require you to
 
 Please note that the organization that owns the app registration is responsible for the payment and the Azure subscription should also be active in the same tenant. For multitenant apps, the organization that registered the app might be different than the organization that runs the app.
 
+## Monitor costs billed for the metered Microsoft Teams APIs
+
+This section describes how to monitor costs billed for the metered Microsoft Teams APIs.
+
+A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Control) permissions](/azure/cost-management-billing/costs/assign-access-acm-data), can use **Cost Analysis** to track metered API consumption, as follows: 
+
+1. Sign in to the Azure portal at https://portal.azure.com. 
+2. Go to [**Cost Management + Billing > Cost Management > Cost analysis**](https://ms.portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/costanalysis). 
+3. For the filter near the top, select **Service name: Microsoft Graph Servies**. 
+4. For the **Group by** dropdown menu near the right, select **Meter**. 
+
+This view offers a convenient way to observe API consumption per day over a period of time. 
+
+You can also use the pie charts near the bottom to further break down the costs for analysis. Note that for Microsoft Graph metered APIs, the **Resource GUID** is the app ID; **Resource Groups** or **Resource Tags** are not supported. 
+
+![Screenshot of the Cost Management and Billing page in the Azure portal](images/cost-analysis-sample.png)
+
+For more details about cost management, see [Cost Management + Billing documentation](/azure/cost-management-billing/).
+
 ## Frequently asked questions
 
 |    Scenario    | Details |

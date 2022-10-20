@@ -39,9 +39,10 @@ This resource supports:
 | [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | None | Invalidate all of the user's refresh tokens issued to applications. |
 | [validatePassword](../api/user-validatepassword.md)|[passwordValidationInformation](../resources/passwordvalidationinformation.md)|Validate a user's password against the organization's password validation policy and report whether the password is valid. |
 | **App role assignments**|||
-| [List appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles which this user has been assigned. |
-| [Add appRoleAssignment](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to this user. |
-| [Remove appRoleAssignment](../api/user-delete-approleassignments.md) | None | Remove an app role assignment from this user. |
+| [List appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles that a user has been assigned. |
+| [List appRoleAssignedResources](../api/user-list-approleassignedresources.md) | [servicePrincipal](serviceprincipal.md) collection | Get the apps that a user has an app role assignment either directly or through group membership. |
+| [Add appRoleAssignment](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to a user. |
+| [Remove appRoleAssignment](../api/user-delete-approleassignments.md) | None | Remove an app role assignment from a user. |
 | **Calendar** |||
 | [Create calendar](../api/user-post-calendars.md) | [Calendar](calendar.md) | Create a new Calendar by posting to the calendars collection. |
 | [Create calendarGroup](../api/user-post-calendargroups.md) | [CalendarGroup](calendargroup.md) | Create a new CalendarGroup by posting to the calendarGroups collection. |

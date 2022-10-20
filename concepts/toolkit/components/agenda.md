@@ -23,7 +23,7 @@ By default, the `mgt-agenda` component fetches events from the `/me/calendarview
 
 | Attribute | Property | Description |
 | --- | --- | --- |
-| date | date | A string that represents the start date of the events to fetch from Microsoft Graph. Value should be in a format that can be parsed by the [Date constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) - value has no effect if `event-query` attribute is set. |
+| date | date | A string that represents the start date of the events to fetch from Microsoft Graph. Value should be in a format that can be parsed by the [Date constructor](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date) - value has no effect if `event-query` attribute is set. |
 | days | days | A number of days to fetch from Microsoft Graph - default is 3 - value has no effect if `event-query` attribute is set. |
 | show-max | showMax | A number to indicate the maximum number of events to show. The default value is not set (no maximum). |
 | group-id | groupId | A string ID for a group calendar to use instead of the current signed in user's calendar. |

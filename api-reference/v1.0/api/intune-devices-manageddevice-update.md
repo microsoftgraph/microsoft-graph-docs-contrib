@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /users/{usersId}/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
+PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}/managedDevices/{managedDeviceId}
 ```
 
 ## Request headers
@@ -95,6 +95,8 @@ The following table shows the properties that are required when you create the [
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes. This property is read-only.|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name.|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. This property is read-only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
+|requireUserEnrollmentApproval|Boolean|Reports if the managed iOS device is user approval enrollment. This property is read-only.|
+|managementCertificateExpirationDate|DateTimeOffset|Reports device management certificate expiration date. This property is read-only.|
 |iccid|String|Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.|
 |udid|String|Unique Device Identifier for iOS and macOS devices. This property is read-only.|
 |notes|String|Notes on the device created by IT Admin|
@@ -111,9 +113,9 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}
+PATCH https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 4821
+Content-length: 4942
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -213,6 +215,8 @@ Content-length: 4821
   "freeStorageSpaceInBytes": 7,
   "managedDeviceName": "Managed Device Name value",
   "partnerReportedThreatState": "activated",
+  "requireUserEnrollmentApproval": true,
+  "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00",
   "iccid": "Iccid value",
   "udid": "Udid value",
   "notes": "Notes value",
@@ -226,7 +230,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4870
+Content-Length: 4991
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -327,6 +331,8 @@ Content-Length: 4870
   "freeStorageSpaceInBytes": 7,
   "managedDeviceName": "Managed Device Name value",
   "partnerReportedThreatState": "activated",
+  "requireUserEnrollmentApproval": true,
+  "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00",
   "iccid": "Iccid value",
   "udid": "Udid value",
   "notes": "Notes value",
@@ -334,9 +340,6 @@ Content-Length: 4870
   "physicalMemoryInBytes": 5
 }
 ```
-
-
-
 
 
 
