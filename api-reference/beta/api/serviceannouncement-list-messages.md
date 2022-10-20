@@ -134,7 +134,7 @@ Content-Type: application/json
         }
       ],
       "body": {
-        "contentType": "Text",
+        "contentType": "Html",
         "content": "Updated January 07, 2021: Based on learnings from our early rings, we have made the decision to make additional changes to the code before we proceed with the rollout. We will update the Message center post once we re-start the rollout......"
       },
       "viewPoint": null
