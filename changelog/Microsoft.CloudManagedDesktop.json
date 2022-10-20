@@ -2,6 +2,32 @@
     "changelog": [
         {
             "ChangeList": [
+                {
+                    "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcCrossCloudGovernmentOrganizationMapping",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcCrossCloudGovernmentOrganizationMapping](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcCrossCloudGovernmentOrganizationMapping?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcCrossCloudGovernmentOrganizationMapping"
+                },
+                {
+                    "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "crossCloudGovernmentOrganizationMapping",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **crossCloudGovernmentOrganizationMapping** navigation property to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                }
+            ],
+            "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-10-17T09:33:40.1525853Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"   
+        },
+        {
+            "ChangeList": [
               {
                 "Id": "a33b829e-5c61-4ee8-9737-5ab14fe3f7bf",
                 "ApiChange": "Property",
