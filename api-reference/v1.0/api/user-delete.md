@@ -25,11 +25,14 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.ReadWrite.All |
 
-The calling user must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
-+ Global Administrator
-+ User Administrator
+The calling user must be assigned one of the following Azure AD roles:
++ [User Administrator](/azure/active-directory/roles/permissions-reference#user-administrator)
++ [Privileged Authentication Administrator](/azure/active-directory/roles/permissions-reference#privileged-authentication-administrator)
++ [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator)
 
-Only a Global Administrator can delete a user in a Global Administrator role  or _any_ user in the tenant. A User Administrator can only delete users who are non-administrators or in specific limited roles. For more details, see [Administrator role permissions in Azure AD](/azure/active-directory/roles/permissions-reference#available-roles).
+To delete users with more privileged administrator roles, applications need to be assigned the *Directory.AccessAsUser.All* delegated permission and either the Global Admin role or the Privileged Auth Admin role.
+
+For more details, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## HTTP request
 

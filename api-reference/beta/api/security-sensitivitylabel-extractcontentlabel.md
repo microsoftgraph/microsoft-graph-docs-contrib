@@ -80,7 +80,8 @@ The following is an example of the response.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "sensitivitylabelthis.extractcontentlabel"
+  "name": "sensitivitylabelthis.extractcontentlabel",
+  "sampleKeys": ["bob@contoso.com"]
 }
 -->
 ```http

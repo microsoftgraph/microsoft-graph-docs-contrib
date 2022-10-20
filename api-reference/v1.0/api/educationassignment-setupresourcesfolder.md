@@ -52,7 +52,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["d38ffdea-da93-46ac-90ba-d568c6073075", "ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],  
+  "sampleKeys": ["955e0bd5-52c2-41ad-b7e8-5b33a18c5e78", "18d17255-3278-49fb-8da7-d095b7f610c4"],  
   "name": "educationassignment_setupresourcesfolder"
 }-->
 ```msgraph-interactive

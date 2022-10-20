@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /users/{usersId}
+GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [user](../resour
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/v1.0/users/{usersId}
+GET https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}
 ```
 
 ### Response
@@ -70,9 +70,6 @@ Content-Length: 118
   }
 }
 ```
-
-
-
 
 
 

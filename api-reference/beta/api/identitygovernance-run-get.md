@@ -61,7 +61,9 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ## Examples
 
-### Request
+### Example 1: Get a run report for a workflow
+
+#### Request
 
 The following is an example of a request.
 
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/IdentityGovernance/lifecycleWorkflows/workf
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -131,5 +133,47 @@ Content-Type: application/json
     "totalUsersCount": 2,
     "totalUnprocessedTasksCount": 0,
     "workflowExecutionType": "onDemand"
+}
+```
+
+### Example 2: Get specific properties of a run report for a workflow
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_get_workflow_run"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/runs/e65e08a0-d68d-41dc-915b-8c4019af5cc2?$select=id,failedTasksCount,failedUsersCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,totalUsersCount
+```
+
+#### Response
+
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.run"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/runs(id,failedTasksCount,failedUsersCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,totalUsersCount)/$entity",
+    "id": "e65e08a0-d68d-41dc-915b-8c4019af5cc2",
+    "failedTasksCount": 0,
+    "failedUsersCount": 0,
+    "processingStatus": "completed",
+    "totalTasksCount": 3,
+    "totalUsersCount": 1,
+    "totalUnprocessedTasksCount": 0
 }
 ```

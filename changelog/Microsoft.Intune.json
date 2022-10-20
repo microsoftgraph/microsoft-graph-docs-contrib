@@ -3,6 +3,152 @@
     {
       "ChangeList": [
         {
+          "Id": "b5687d26-2776-43f6-9b31-44c94125a0e6",
+          "ApiChange": "Property",
+          "ChangedApiName": "v6_0",
+          "ChangeType": "Addition",
+          "Description": "Added the `v6_0` property to the [androidMinimumOperatingSystem](https://docs.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Target": "androidMinimumOperatingSystem"
+        },
+        {
+          "Id": "b5687d26-2776-43f6-9b31-44c94125a0e6",
+          "ApiChange": "Property",
+          "ChangedApiName": "v7_0",
+          "ChangeType": "Addition",
+          "Description": "Added the `v7_0` property to the [androidMinimumOperatingSystem](https://docs.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Target": "androidMinimumOperatingSystem"
+        },
+        {
+          "Id": "b5687d26-2776-43f6-9b31-44c94125a0e6",
+          "ApiChange": "Property",
+          "ChangedApiName": "v7_1",
+          "ChangeType": "Addition",
+          "Description": "Added the `v7_1` property to the [androidMinimumOperatingSystem](https://docs.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Target": "androidMinimumOperatingSystem"
+        },
+        {
+          "Id": "b5687d26-2776-43f6-9b31-44c94125a0e6",
+          "ApiChange": "Property",
+          "ChangedApiName": "v8_0",
+          "ChangeType": "Addition",
+          "Description": "Added the `v8_0` property to the [androidMinimumOperatingSystem](https://docs.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Target": "androidMinimumOperatingSystem"
+        },
+        {
+          "Id": "b5687d26-2776-43f6-9b31-44c94125a0e6",
+          "ApiChange": "Property",
+          "ChangedApiName": "v8_1",
+          "ChangeType": "Addition",
+          "Description": "Added the `v8_1` property to the [androidMinimumOperatingSystem](https://docs.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Target": "androidMinimumOperatingSystem"
+        },
+        {
+          "Id": "b5687d26-2776-43f6-9b31-44c94125a0e6",
+          "ApiChange": "Property",
+          "ChangedApiName": "v9_0",
+          "ChangeType": "Addition",
+          "Description": "Added the `v9_0` property to the [androidMinimumOperatingSystem](https://docs.microsoft.com/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Target": "androidMinimumOperatingSystem"
+        },
+        {
+          "Id": "59d38743-af25-413d-b988-c6ba35b56d9c",
+          "ApiChange": "Property",
+          "ChangedApiName": "androidCorporateWorkProfileCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidCorporateWorkProfileCount` property to the [deviceOperatingSystemSummary](https://docs.microsoft.com/graph/api/resources/intune-deviceOperatingSystemSummary?view=graph-rest-1.0) resource.",
+          "Target": "deviceOperatingSystemSummary"
+        },
+        {
+          "Id": "59d38743-af25-413d-b988-c6ba35b56d9c",
+          "ApiChange": "Property",
+          "ChangedApiName": "androidDedicatedCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidDedicatedCount` property to the [deviceOperatingSystemSummary](https://docs.microsoft.com/graph/api/resources/intune-deviceOperatingSystemSummary?view=graph-rest-1.0) resource.",
+          "Target": "deviceOperatingSystemSummary"
+        },
+        {
+          "Id": "59d38743-af25-413d-b988-c6ba35b56d9c",
+          "ApiChange": "Property",
+          "ChangedApiName": "androidDeviceAdminCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidDeviceAdminCount` property to the [deviceOperatingSystemSummary](https://docs.microsoft.com/graph/api/resources/intune-deviceOperatingSystemSummary?view=graph-rest-1.0) resource.",
+          "Target": "deviceOperatingSystemSummary"
+        },
+        {
+          "Id": "59d38743-af25-413d-b988-c6ba35b56d9c",
+          "ApiChange": "Property",
+          "ChangedApiName": "androidFullyManagedCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidFullyManagedCount` property to the [deviceOperatingSystemSummary](https://docs.microsoft.com/graph/api/resources/intune-deviceOperatingSystemSummary?view=graph-rest-1.0) resource.",
+          "Target": "deviceOperatingSystemSummary"
+        },
+        {
+          "Id": "59d38743-af25-413d-b988-c6ba35b56d9c",
+          "ApiChange": "Property",
+          "ChangedApiName": "androidWorkProfileCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidWorkProfileCount` property to the [deviceOperatingSystemSummary](https://docs.microsoft.com/graph/api/resources/intune-deviceOperatingSystemSummary?view=graph-rest-1.0) resource.",
+          "Target": "deviceOperatingSystemSummary"
+        },
+        {
+          "Id": "59d38743-af25-413d-b988-c6ba35b56d9c",
+          "ApiChange": "Property",
+          "ChangedApiName": "configMgrDeviceCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `configMgrDeviceCount` property to the [deviceOperatingSystemSummary](https://docs.microsoft.com/graph/api/resources/intune-deviceOperatingSystemSummary?view=graph-rest-1.0) resource.",
+          "Target": "deviceOperatingSystemSummary"
+        },
+        {
+          "Id": "59d38743-af25-413d-b988-c6ba35b56d9c",
+          "ApiChange": "Property",
+          "ChangedApiName": "certificateUploadFailureReason",
+          "ChangeType": "Addition",
+          "Description": "Added the `certificateUploadFailureReason` property to the [applePushNotificationCertificate](https://docs.microsoft.com/graph/api/resources/intune-applePushNotificationCertificate?view=graph-rest-1.0) resource.",
+          "Target": "applePushNotificationCertificate"
+        },
+        {
+          "Id": "59d38743-af25-413d-b988-c6ba35b56d9c",
+          "ApiChange": "Property",
+          "ChangedApiName": "certificateUploadStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the `certificateUploadStatus` property to the [applePushNotificationCertificate](https://docs.microsoft.com/graph/api/resources/intune-applePushNotificationCertificate?view=graph-rest-1.0) resource.",
+          "Target": "applePushNotificationCertificate"
+        },
+        {
+          "Id": "59d38743-af25-413d-b988-c6ba35b56d9c",
+          "ApiChange": "Property",
+          "ChangedApiName": "managementCertificateExpirationDate",
+          "ChangeType": "Addition",
+          "Description": "Added the `managementCertificateExpirationDate` property to the [managedDevice](https://docs.microsoft.com/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "59d38743-af25-413d-b988-c6ba35b56d9c",
+          "ApiChange": "Property",
+          "ChangedApiName": "requireUserEnrollmentApproval",
+          "ChangeType": "Addition",
+          "Description": "Added the `requireUserEnrollmentApproval` property to the [managedDevice](https://docs.microsoft.com/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "59d38743-af25-413d-b988-c6ba35b56d9c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "users",
+          "ChangeType": "Addition",
+          "Description": "Added the **users** relationship to the [managedDevice](https://docs.microsoft.com/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Target": "managedDevice"
+        }
+      ],
+      "Id": "b5687d26-2776-43f6-9b31-44c94125a0e6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-23T16:37:09.541616Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b266fdfd-e8b3-4bca-954a-7d0e2b0fdf25",
           "ApiChange": "Property",
           "ChangedApiName": "v13_0",
