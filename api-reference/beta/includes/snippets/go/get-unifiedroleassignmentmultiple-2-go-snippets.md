@@ -7,13 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.RoleAssignmentsRequestBuilderGetQueryParameters{
-	Filter%20: "%20principalIds/any(x:x%20eq%20'564ae70c-73d9-476b-820b-fb61eb7384b9')",
+requestParameters := &graphconfig.RoleAssignmentsRequestBuilderGetQueryParameters{
+	Filter : " principalIds/any",
 }
-options := &msgraphsdk.RoleAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.RoleAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
 
 
 ```

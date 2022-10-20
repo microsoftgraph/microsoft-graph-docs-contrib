@@ -61,6 +61,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcProvis
 
 #### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -72,16 +73,13 @@ If successful, this method returns a `200 OK` response code and a [cloudPcProvis
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcprovisioningpolicy-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpcprovisioningpolicy-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpcprovisioningpolicy-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -96,10 +94,16 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcprovisioningpolicy-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-cloudpcprovisioningpolicy-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### Response
+
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -128,7 +132,8 @@ Content-Type: application/json
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
     "windowsSettings": {
       "language": "en-US"
-    }
+    },
+    "managedBy": "windows365"
 }
 ```
 
@@ -136,6 +141,7 @@ Content-Type: application/json
 
 #### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -147,16 +153,13 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}?$expand=assignments
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcprovisioningpolicy-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpcprovisioningpolicy-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpcprovisioningpolicy-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -171,10 +174,16 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcprovisioningpolicy-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-cloudpcprovisioningpolicy-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### Response
+
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -214,6 +223,95 @@ Content-Type: application/json
           "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
           }
       }
-    ]
+    ],
+    "managedBy": "windows365"
+}
+```
+
+### Example 3: Get the selected properties of the specified provisioning policy
+
+The following example shows a request that retrieves the selected properties of the specified provisioning policy.
+
+#### Request
+
+The following is an example of a request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpcprovisioningpolicy_3"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/60b94f83-3e22-430e-a69d-440f65b922d6?$select=id,description,displayName,displayName,domainJoinConfiguration,imageDisplayName,imageId,imageType,onPremisesConnectionId,windowsSettings,managedBy,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcprovisioningpolicy-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpcprovisioningpolicy-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-cloudpcprovisioningpolicy-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcprovisioningpolicy-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcprovisioningpolicy-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-cloudpcprovisioningpolicy-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
+    "alternateResourceUrl": "https://ms.portal.azure.com/#contoso.com/resource/subscriptions/827f2432-9c7b-4637-b694-570b3c2f969c/resourceGroups/myResourceGroupName/providers/Microsoft.Fidalgo/projects/myProjectName/pools/myPoolName",
+    "cloudPcGroupDisplayName": "MyCloudPcGroup",
+    "description": "The ProvisioningPolicy for West US employees.",
+    "displayName": "WestUsPolicy",
+    "domainJoinConfiguration": {
+        "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+        "regionName": null,
+        "type": "hybridAzureADJoin"
+    },
+    "gracePeriodInHours": 2,
+    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
+    "imageDisplayName": "myCustomImage",
+    "imageId": "d4e0541a-f7bb-4bdf-ad8f-b92b915a229f",
+    "imageType": "custom",
+    "localAdminEnabled": true,
+    "managedBy": "windows365",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+    "windowsSettings": {
+      "language": "en-US"
+    }
 }
 ```

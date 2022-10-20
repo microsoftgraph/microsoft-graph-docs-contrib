@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-tenantGroupId := "tenantGroup-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantGroupsById(&tenantGroupId).Get()
+
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantGroupsById("tenantGroup-id").Get(context.Background(), nil)
 
 
 ```

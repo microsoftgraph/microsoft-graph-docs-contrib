@@ -1,7 +1,7 @@
 ---
 title: "Get directoryRole"
 description: "Retrieve the properties of a directoryRole object."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -56,18 +56,15 @@ If successful, this method returns a `200 OK` response code and [directoryRole](
   "name": "get_directoryrole_objectId"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoles/23f3b4b4-8a29-4420-8052-e4950273bbda
+GET https://graph.microsoft.com/v1.0/directoryRoles/43a63cc2-582b-4d81-a79d-1591f91d5558
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-objectid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryrole-objectid-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryrole-objectid-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -80,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/23f3b4b4-8a29-4420-8052-e495
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryrole-objectid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-directoryrole-objectid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -98,11 +99,11 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles/$entity",
-    "id": "23f3b4b4-8a29-4420-8052-e4950273bbda",
+    "id": "43a63cc2-582b-4d81-a79d-1591f91d5558",
     "deletedDateTime": null,
-    "description": "Can read sign-in and audit reports.",
-    "displayName": "Reports Reader",
-    "roleTemplateId": "4a5d8f65-41da-4de4-8968-e035b65339cf"
+    "description": "Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.",
+    "displayName": "Global Administrator",
+    "roleTemplateId": "62e90394-69f5-4237-9190-012177145e10"
 }
 ```
 
@@ -115,7 +116,7 @@ Content-type: application/json
   "name": "get_directoryrole_templateId"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf
+GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=43a63cc2-582b-4d81-a79d-1591f91d5558
 ```
 
 
@@ -133,11 +134,11 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles/$entity",
-    "id": "23f3b4b4-8a29-4420-8052-e4950273bbda",
+    "id": "43a63cc2-582b-4d81-a79d-1591f91d5558",
     "deletedDateTime": null,
-    "description": "Allows ability to read usage reports.",
-    "displayName": "Reports Reader",
-    "roleTemplateId": "4a5d8f65-41da-4de4-8968-e035b65339cf"
+    "description": "Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.",
+    "displayName": "Global Administrator",
+    "roleTemplateId": "62e90394-69f5-4237-9190-012177145e10"
 }
 ```
 

@@ -68,6 +68,7 @@ Relationships between a domain and other objects in the directory such as its ve
 |domainNameReferences|[directoryObject](directoryobject.md) collection| The objects such as users and groups that reference the domain ID. Read-only, Nullable. Supports `$expand` and `$filter` by the OData type of objects returned. For example `/domains/{domainId}/domainNameReferences/microsoft.graph.user` and `/domains/{domainId}/domainNameReferences/microsoft.graph.group`.|
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports `$expand`. |
 |verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable. Supports `$expand`.|
+|federationConfiguration|[internalDomainFederation](internaldomainfederation.md)| Domain settings configured by a customer when federated with Azure AD. Supports `$expand`.|
 
 ## JSON representation
 Here is a JSON representation of the resource.

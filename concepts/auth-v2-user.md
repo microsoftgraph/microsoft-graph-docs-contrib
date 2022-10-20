@@ -201,14 +201,13 @@ Access tokens are short lived, and you must refresh them after they expire to co
 ```
 // Line breaks for legibility only
 
-POST /common/oauth2/v2.0/token HTTP/1.1
+POST /{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: https://login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
 client_id=11111111-1111-1111-1111-111111111111
 &scope=user.read%20mail.read
 &refresh_token=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq...
-&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 &grant_type=refresh_token
 &client_secret=jXoM3iz...      // NOTE: Only required for web apps
 ```
@@ -217,9 +216,8 @@ client_id=11111111-1111-1111-1111-111111111111
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | client_id     | Required              | The application ID that the [registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned your app.                                                                                                                                                                                             |
 | grant_type    | Required              | Must be `refresh_token`.                                                                                                                                                                                                                                                                                          |
-| scope         | Required              | A space-separated list of permissions (scopes). The permissions that your app requests must be equivalent to or a subset of the permissions that it requested in the original authorization_code request.                                                                                                                             |
+| scope         | Optional              | A space-separated list of permissions (scopes). The permissions that your app requests must be equivalent to or a subset of the permissions that it requested in the original authorization_code request.                                                                                                                             |
 | refresh_token | Required              | The refresh_token that you acquired during the token request.                                                                                                                                                                                                                                                     |
-| redirect_uri  | Required              | The same redirect_uri value that was used to acquire the authorization_code.                                                                                                                                                                                                                                      |
 | client_secret | Required for web apps | The client secret that you created in the app registration portal for your app. Don't use the secret in a native app, because client_secrets can’t be reliably stored on devices. It's required for web apps and web APIs, which have the ability to store the client_secret securely on the server side. |
 
 ### Response
@@ -270,7 +268,10 @@ Microsoft continues to support the Azure AD endpoint. There are [several differe
 - If your app is a multi-tenant app, you must explicitly configure it to be multi-tenant at the [Azure portal](https://portal.azure.com).
 - All permissions that your app needs must be configured by the developer. The Azure AD endpoint doesn't support dynamic (incremental) consent.
 - The Azure AD endpoint uses a `resource` parameter in authorization and token requests to specify the resource, such as Microsoft Graph, for which it wants permissions. The endpoint doesn't support the `scope` parameter.
+<!-- commenting out this section until we can have a tutorial/how-to to demo this. Old article has been archived here https://github.com/uglide/azure-content/blob/master/articles/active-directory/active-directory-integrating-applications.md
+
 - The Azure AD endpoint doesn't expose a specific endpoint for administrator consent. Instead, apps use the `prompt=admin_consent` parameter in the authorization request to obtain administrator consent for an organization. For more information, see **Triggering the Azure AD consent framework at runtime** in [Integrating applications with Azure Active Directory](/azure/active-directory/develop/active-directory-integrating-applications).
+-->
 
 For more information about getting access to Microsoft Graph on behalf of a user, see the following resources.
 

@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-unifiedRoleManagementPolicyId := "unifiedRoleManagementPolicy-id"
-unifiedRoleManagementPolicyRuleId := "unifiedRoleManagementPolicyRule-id"
-result, err := graphClient.Policies().RoleManagementPoliciesById(&unifiedRoleManagementPolicyId).RulesById(&unifiedRoleManagementPolicyRuleId).Get()
+
+result, err := graphClient.Policies().RoleManagementPoliciesById("unifiedRoleManagementPolicy-id").RulesById("unifiedRoleManagementPolicyRule-id").Get(context.Background(), nil)
 
 
 ```

@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|TeamsActivity.Send|
-|Delegated (personal Microsoft account)|Not Supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|TeamsActivity.Send.Chat*, TeamsActivity.Send|
 
 >**Note:** Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
@@ -70,9 +70,11 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Example 1: Notify a user about a task created in a chat
 
-This example shows how you can send an activity feed notification for a new task created in a chat. For more details, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+The following example shows how you can send an activity feed notification for a new task created in a chat. For more details, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 #### Request
+
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,16 +107,13 @@ Content-Type: application/json
     ] 
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/chat-sendactivitynotification-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -129,10 +128,17 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/chat-sendactivitynotification-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false
@@ -147,6 +153,8 @@ HTTP/1.1 204 No Content
 Similar to the previous example, this example uses `entityUrl` for the `topic`. However, in this case, it links to a message in the chat. The message can contains a card with the approval button on it.
 
 #### Request
+
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -168,7 +176,7 @@ Content-Type: application/json
         "content": "Deployment requires your approval"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
@@ -179,16 +187,13 @@ Content-Type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/chat-sendactivitynotification-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -203,10 +208,17 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/chat-sendactivitynotification-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false
@@ -222,6 +234,9 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 
 #### Request
 
+The following example shows the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_sendactivitynotification_upn"
@@ -241,7 +256,7 @@ Content-Type: application/json
         "content": "Deployment requires your approval"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "jacob@contoso.com"
     },
     "templateParameters": [
@@ -253,8 +268,38 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-upn-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-upn-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-upn-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-upn-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-upn-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/chat-sendactivitynotification-upn-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false
@@ -269,6 +314,8 @@ HTTP/1.1 204 No Content
 As shown in the previous examples, you can link to different aspects of the chat. However, if you want to link to an aspect that is not part of the chat, or is not represented by Microsoft Graph, you can set the source of the `topic` to `text` and pass in a custom value for it. Also, `webUrl` is required when setting `topic` source to `text`.
 
 #### Request
+
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -291,7 +338,7 @@ Content-Type: application/json
         "content": "New deployment requires your approval"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
@@ -302,16 +349,13 @@ Content-Type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-3-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/chat-sendactivitynotification-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -326,10 +370,17 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/chat-sendactivitynotification-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false
@@ -341,15 +392,17 @@ HTTP/1.1 204 No Content
 
 ### Example 5: Notify the chat members about a task created in a chat
 
-This example shows how you can send an activity feed notification to all chat members. This example is similar to previous examples. However, in this case, the `recipient` is a [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Note that the `chatId` specified in the `recipient` must match the `chatId` specified in the request URL.
+The following example shows how you can send an activity feed notification to all chat members. This example is similar to previous examples. However, in this case, the `recipient` is a [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Note that the `chatId` specified in the `recipient` must match the `chatId` specified in the request URL.
 
 #### Request
 
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification_4"
+  "name": "chat_sendactivitynotification_4",
+  "sampleKeys": ["19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"]
 }
 -->
 
@@ -378,16 +431,13 @@ Content-Type: application/json
     ] 
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-4-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/chat-sendactivitynotification-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -402,10 +452,17 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/chat-sendactivitynotification-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false

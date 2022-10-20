@@ -64,21 +64,19 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "bookingbusiness_getcalendarview"
+  "name": "bookingbusiness_getcalendarview",
+  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
+GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusiness-getcalendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusiness-getcalendarview-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/bookingbusiness-getcalendarview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -91,6 +89,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@cont
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/bookingbusiness-getcalendarview-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/bookingbusiness-getcalendarview-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -119,6 +121,7 @@ Content-type: application/json
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
             "isLocationOnline": true,
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
+            "anonymousJoinWebUrl": null,
             "customerId": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
             "customerName": "Adele Vance",
             "customerEmailAddress": "adelev@proseware.com",
@@ -254,6 +257,7 @@ Content-type: application/json
                     "emailAddress": "jordanm@contoso.com",
                     "phone": "213-555-0199",
                     "notes": null,
+                    "smsNotificationsEnabled": false,
                     "location": {
                         "displayName": "Customer",
                         "locationEmailAddress": null,

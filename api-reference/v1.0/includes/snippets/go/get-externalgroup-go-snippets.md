@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-externalConnectionId := "externalConnection-id"
-externalGroupId := "externalGroup-id"
-result, err := graphClient.External().ConnectionsById(&externalConnectionId).GroupsById(&externalGroupId).Get()
+
+result, err := graphClient.External().ConnectionsById("externalConnection-id").GroupsById("externalGroup-id").Get(context.Background(), nil)
 
 
 ```

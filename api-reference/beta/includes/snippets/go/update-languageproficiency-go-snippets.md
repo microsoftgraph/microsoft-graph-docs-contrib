@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewLanguageProficiency()
-allowedAudiences := "organization"
-requestBody.SetAllowedAudiences(&allowedAudiences)
-languageProficiencyId := "languageProficiency-id"
-graphClient.Me().Profile().LanguagesById(&languageProficiencyId).Patch(requestBody)
+requestBody := graphmodels.NewLanguageProficiency()
+allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
+requestBody.SetAllowedAudiences(&allowedAudiences) 
+
+result, err := graphClient.Me().Profile().LanguagesById("languageProficiency-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

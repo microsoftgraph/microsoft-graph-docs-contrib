@@ -7,34 +7,42 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-topic := msgraphsdk.NewTeamworkActivityTopic()
-requestBody.SetTopic(topic)
-source := "entityUrl"
-topic.SetSource(&source)
+requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
+topic := graphmodels.NewTeamworkActivityTopic()
+source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
+topic.SetSource(&source) 
 value := "https://graph.microsoft.com/beta/teams/{teamId}"
-topic.SetValue(&value)
+topic.SetValue(&value) 
+requestBody.SetTopic(topic)
 activityType := "pendingFinanceApprovalRequests"
-requestBody.SetActivityType(&activityType)
-previewText := msgraphsdk.NewItemBody()
-requestBody.SetPreviewText(previewText)
+requestBody.SetActivityType(&activityType) 
+previewText := graphmodels.NewItemBody()
 content := "Internal spending team has a pending finance approval requests"
-previewText.SetContent(&content)
-recipient := msgraphsdk.NewTeamworkNotificationRecipient()
+previewText.SetContent(&content) 
+requestBody.SetPreviewText(previewText)
+recipient := graphmodels.NewTeamworkNotificationRecipient()
+"@odata.type" := "microsoft.graph.aadUserNotificationRecipient"
+recipient.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"userId" : "569363e2-4e49-4661-87f2-16f245c5d66a", 
+}
+recipient.SetAdditionalData(additionalData)
 requestBody.SetRecipient(recipient)
-recipient.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
-	"userId": "569363e2-4e49-4661-87f2-16f245c5d66a",
+
+
+keyValuePair := graphmodels.NewKeyValuePair()
+name := "pendingRequestCount"
+keyValuePair.SetName(&name) 
+value := "5"
+keyValuePair.SetValue(&value) 
+
+templateParameters := []graphmodels.KeyValuePairable {
+	keyValuePair,
+
 }
-requestBody.SetTemplateParameters( []KeyValuePair {
-	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "pendingRequestCount",
-		"value": "5",
-	}
-}
-teamId := "team-id"
-graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(requestBody)
+requestBody.SetTemplateParameters(templateParameters)
+
+graphClient.TeamsById("team-id").SendActivityNotification().Post(requestBody)
 
 
 ```

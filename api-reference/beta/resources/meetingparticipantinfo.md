@@ -35,6 +35,10 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 | coorganizer | Participant's role is co-organizer. This value applies to all meetings except Teams live event. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
+> [!TIP]
+>
+> To set the **presenter** role of a meeting attendee when creating or updating an [onlineMeeting](onlinemeeting.md), the value of **allowedPresenters** must also be set to `roleIsPresenter`.
+
 ## JSON representation
 
 The following is a JSON representation of the resource.

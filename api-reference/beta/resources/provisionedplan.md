@@ -4,7 +4,7 @@ description: "The **provisionedPlans** property of the user entity and the organ
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "Jumaodhiss"
+author: "jumasure"
 ---
 
 # provisionedPlan resource type

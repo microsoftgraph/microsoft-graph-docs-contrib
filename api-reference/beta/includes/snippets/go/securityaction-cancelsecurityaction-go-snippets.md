@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-securityActionId := "securityAction-id"
-graphClient.Security().SecurityActionsById(&securityActionId).CancelSecurityAction(securityAction-id).Post()
+
+graphClient.Security().SecurityActionsById("securityAction-id").CancelSecurityAction().Post(context.Background(), nil)
 
 
 ```

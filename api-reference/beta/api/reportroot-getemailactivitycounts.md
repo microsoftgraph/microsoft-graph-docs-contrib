@@ -121,7 +121,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Send,Receive,Read,Report Date,Report Period
+Report Refresh Date,Send,Receive,Read,Meeting Created,Meeting Interacted,Report Date,Report Period
 ```
 
 ### JSON
@@ -167,6 +167,8 @@ Content-Length: 242
       "send": 504, 
       "receive": 76506, 
       "read": 12161, 
+      "meetingCreated": 421, 
+      "meetingInteracted": 7930, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }

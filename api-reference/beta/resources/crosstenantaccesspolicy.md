@@ -29,6 +29,7 @@ Inherits from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationsh
 |Property|Type|Description|
 |:---|:---|:---|
 | displayName | String | The display name of the cross-tenant access policy. Inherited from [policyBase](../resources/policybase.md).|
+| allowedCloudEndpoints | String collection | Used to specify which Microsoft clouds an organization would like to collaborate with. By default, this value is empty. Supported values for this field are: `microsoftonline.com`, `microsoftonline.us`, and `partner.microsoftonline.cn`. |
 | definition (deprecated) | String | The raw JSON definition of the cross-tenant access policy. **Deprecated. Do not use.**|
 
 ## Relationships
@@ -54,6 +55,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
   "displayName": "String",
-  "definition": "String"
+  "definition": "String",
+  "allowedCloudEndpoints": ["String"]
 }
 ```

@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-userId := "user-id"
-graphClient.UsersById(&userId).TransitiveReports().$count().Get()
+
+graphClient.UsersById("user-id").TransitiveReports().$count().Get(context.Background(), nil)
 
 
 ```

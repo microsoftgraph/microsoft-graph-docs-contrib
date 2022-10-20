@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: EditAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: files
 ---
 # EditAction resource type
 

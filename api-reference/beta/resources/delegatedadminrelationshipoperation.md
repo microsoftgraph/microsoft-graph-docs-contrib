@@ -29,7 +29,7 @@ Represents a long-running operation related to a delegated admin relationship. A
 |id|String|The unique identifier of the delegated admin long-running operation. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The time in ISO 8601 format and in UTC time when the long-running operation was last modified. Read-only.|
 |operationType|delegatedAdminRelationshipOperationType|The type of long-running operation. The possible values are: `delegatedAdminAccessAssignmentUpdate`, `unknownFutureValue`. Read-only.|
-|status|delegatedAdminRelationshipOperationStatus|The status of the operation. Read-only. The possible values are: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`. Read-only. Supports `$orderBy`.|
+|status|longRunningOperationStatus|The status of the operation. Read-only. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. Read-only. Supports `$orderBy`.|
 
 ## Relationships
 None.

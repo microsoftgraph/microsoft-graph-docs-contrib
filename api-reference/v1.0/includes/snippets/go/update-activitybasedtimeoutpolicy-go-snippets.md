@@ -7,16 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewActivityBasedTimeoutPolicy()
-requestBody.SetDefinition( []String {
+requestBody := graphmodels.NewActivityBasedTimeoutPolicy()
+definition := []string {
 	"definition-value",
+
 }
+requestBody.SetDefinition(definition)
 displayName := "displayName-value"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 isOrganizationDefault := true
-requestBody.SetIsOrganizationDefault(&isOrganizationDefault)
-activityBasedTimeoutPolicyId := "activityBasedTimeoutPolicy-id"
-graphClient.Policies().ActivityBasedTimeoutPoliciesById(&activityBasedTimeoutPolicyId).Patch(requestBody)
+requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
+
+result, err := graphClient.Policies().ActivityBasedTimeoutPoliciesById("activityBasedTimeoutPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

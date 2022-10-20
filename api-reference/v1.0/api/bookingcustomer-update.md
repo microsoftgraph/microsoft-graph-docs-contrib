@@ -12,26 +12,31 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties of a [bookingCustomer](../resources/bookingcustomer.md) object.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /solutions/bookingBusinesses/{id}/customers/{id}
 ```
+
 ## Request headers
+
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|
 
 ## Request body
+
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property	   | Type	|Description|
@@ -42,13 +47,18 @@ PATCH /solutions/bookingBusinesses/{id}/customers/{id}
 |phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business, and mobile numbers.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
+
 ## Example
+
 ### Request
+
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "8bb19078-0f45-4efb-b2c5-da78b860f73a"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
@@ -62,6 +72,7 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

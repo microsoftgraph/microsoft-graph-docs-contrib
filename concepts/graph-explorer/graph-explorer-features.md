@@ -1,14 +1,17 @@
 ---
 
 title: "Work with Graph Explorer"
-description: "Find out how to use some of the important features in Graph Explorer."
+description: "Use Graph Explorer to make Microsoft Graph REST API requests and view corresponding responses. Learn how to use some of the important features in Graph Explorer."
 ms.localizationpriority: high
 author: RabebOthmani
 
 ---
+
 # Work with Graph Explorer
 
 [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you conveniently make Microsoft Graph REST API requests and view corresponding responses. This article describes how to use some of the important features in Graph Explorer.
+
+For an overview, see [Use Graph Explorer to try Microsoft Graph APIs](/graph/graph-explorer/graph-explorer-overview).
 
 ## Consent to permissions
 

@@ -32,7 +32,7 @@ The entitlement management resource types include:
 - [entitlementManagementSettings](entitlementmanagementsettings.md): Tenant-wide settings for Azure AD entitlement management.
 - [approval](approval.md): represents the decisions associated with an access package request.
 
-In addition, role assignments for entitlement management-specific roles can be managed through entitlement management [role definitions](unifiedroledefinition.md).
+In addition, you can manage role assignments for users, groups of users, and service principals to entitlement management-specific roles through entitlement management [role definitions](unifiedroledefinition.md).
 
 For a tutorial that shows you how to use entitlement management to create a package of resources that internal users can self-service request, see [Create an access package using Microsoft Graph APIs](/graph/tutorial-access-package-api).
 
@@ -112,7 +112,7 @@ The following table lists the methods that you can use to interact with entitlem
 - [approvalStep](approvalstep.md) - Used in [approval](approval.md) to distinguish the different approval steps.
 - [userSet](userset.md) subtypes [singleUser](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), and [externalSponsors](externalsponsors.md) - Used in [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md), [approvalStep](approvalstep.md) and [assignmentReviewSettings](assignmentreviewsettings.md).
 - [accessPackageSubject](accesspackagesubject.md) - Used in the [accessPackageAssignment](accesspackageassignment.md) as a subject user who has an access package assignment.
-- [identitySource](identitysource.md) - used in the [connectedOrganization](connectedorganization.md), one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md).
+- [identitySource](identitysource.md) - used in the [connectedOrganization](connectedorganization.md), one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [crossCloudAzureActiveDirectoryTenant](crosscloudazureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md).
 
 ## See also
 

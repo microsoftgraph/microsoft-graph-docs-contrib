@@ -7,7 +7,7 @@
                 "ApiChange": "Resources",
                 "ChangedApiName": "resourceSpecificPermissionGrant",
                 "ChangeType": "Addition",
-                "Description": "Added the [resourceSpecificPermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta) resource.",
+                "Description": "Added the [resourceSpecificPermissionGrant](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta) resource.",
                 "Target": "resourceSpecificPermissionGrant"
              },
              {
@@ -15,7 +15,7 @@
                 "ApiChange":"Resources",
                 "ChangedApiName":"timeCard",
                 "ChangeType":"Addition",
-                "Description":"Added the [timeCard](https://docs.microsoft.com/en-us/graph/api/resources/timecard?view=graph-rest-beta) resource.",
+                "Description":"Added the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timecard?view=graph-rest-beta) resource.",
                 "Target":"timeCard"
              },
              {
@@ -23,7 +23,7 @@
                "ApiChange":"Resources",
                "ChangedApiName":"timeCardBreak",
                "ChangeType":"Addition",
-               "Description":"Added the [timeCardBreak](https://docs.microsoft.com/en-us/graph/api/resources/timecardbreak?view=graph-rest-beta) resource.",
+               "Description":"Added the [timeCardBreak](https://learn.microsoft.com/en-us/graph/api/resources/timecardbreak?view=graph-rest-beta) resource.",
                "Target":"timeCardBreak"
              },
              {
@@ -31,7 +31,7 @@
                "ApiChange":"Resources",
                "ChangedApiName":"timeCardEntry",
                "ChangeType":"Addition",
-               "Description":"Added the [timeCardEntry](https://docs.microsoft.com/en-us/graph/api/resources/timecardentry?view=graph-rest-beta) resource.",
+               "Description":"Added the [timeCardEntry](https://learn.microsoft.com/en-us/graph/api/resources/timecardentry?view=graph-rest-beta) resource.",
                "Target":"timeCardEntry"
              },
              {
@@ -39,7 +39,7 @@
                "ApiChange":"Resources",
                "ChangedApiName":"timeCardEvent",
                "ChangeType":"Addition",
-               "Description":"Added the [timeCardEvent](https://docs.microsoft.com/en-us/graph/api/resources/timecardevent?view=graph-rest-beta) resource.",
+               "Description":"Added the [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timecardevent?view=graph-rest-beta) resource.",
                "Target":"timeCardEvent"
              },
              {
@@ -79,8 +79,8 @@
           "Cloud":"prd",
           "Version":"beta",
           "CreatedDateTime":"2021-06-04T01:15:33.264Z",
-          "WorkloadArea":"Teamwork",
-          "SubArea":"Shifts"
+          "WorkloadArea":"Teamwork and communications",
+          "SubArea":"Shift management"
        },
        {
         "ChangeList":[
@@ -105,8 +105,8 @@
         "Cloud":"prd",
         "Version":"beta",
         "CreatedDateTime":"2021-06-04T01:15:33.264Z",
-        "WorkloadArea":"Teamwork",
-        "SubArea":"Shifts"
+        "WorkloadArea":"Teamwork and communications",
+        "SubArea":"Shift management"
      }
     ]
  }

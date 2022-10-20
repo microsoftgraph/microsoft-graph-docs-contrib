@@ -1,7 +1,7 @@
 ---
 
 title: "Use Graph Explorer to try Microsoft Graph APIs"
-description: "Use Graph Explorer to try Microsoft Graph APIs on the default sample tenant to explore capabilities, or sign in to your own tenant and use it as a prototyping tool to fulfill your app scenarios."
+description: "Try Microsoft Graph APIs on the default sample tenant to explore capabilities, or sign in to your tenant and use it as a prototyping tool to fulfill your app scenarios."
 ms.localizationpriority: high
 author: RabebOthmani
 
@@ -76,5 +76,5 @@ To view the response in a format other than the default JSON, choose the **Reque
 ## Next steps
 
 - Try [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/).
-- Learn more about [Graph Explorer features](./graph-explorer-features.md).
+- Learn how to use [Graph Explorer features](./graph-explorer-features.md).
 - Contribute or provide feedback in the [GitHub repo](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose).

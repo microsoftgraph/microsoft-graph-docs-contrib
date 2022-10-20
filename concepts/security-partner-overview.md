@@ -1,14 +1,14 @@
 ---
-title: "Partnering with Microsoft Graph Security API – technology partner opportunities "
-description: "This This article describes partnering opportunities enabled by the Microsoft Graph Security API and is designed to help product managers and business development roles understand the investment paths and provide insight into partnering value propositions. "
+title: "Partnering opportunities with the Microsoft Graph Security API"
+description: "This article helps product managers and business development roles understand investment paths and provides insight into partnering value propositions."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# Partnering with the Microsoft Graph Security API – technology partner opportunities
+# Partnering opportunities with the Microsoft Graph Security API
 
-This article describes partnering opportunities enabled by the Microsoft Graph Security API and is designed to help product managers and business development roles understand the investment paths and provide insight into partnering value propositions.
+This article describes partnering opportunities enabled by the Microsoft Graph Security API. It is designed to help product managers and business development roles understand investment paths and provide insight into partnering value propositions.
 
 ## Background
 

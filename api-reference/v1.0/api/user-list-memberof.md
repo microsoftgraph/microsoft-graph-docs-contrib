@@ -1,17 +1,17 @@
 ---
-title: "List memberOf"
-description: "Get groups and directory roles that the user is a direct member of. "
+title: "List a user's direct memberships"
+description: "Get groups, directory roles, and administrative units that the user is a direct member of. This operation is not transitive."
 author: "psaffaie"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# List memberOf
+# List a user's direct memberships
 
 Namespace: microsoft.graph
 
-Get [groups](../resources/group.md), [directory roles](../resources/directoryrole.md), and [administrative units](../resources/administrativeunit.md) that the user is a direct member of.
+Get [groups](../resources/group.md), [directory roles](../resources/directoryrole.md), and [administrative units](../resources/administrativeunit.md) that the user is a direct member of. This operation is not transitive. To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the [List user transitive memberOf](user-list-transitivememberof.md) API.
 
 ## Permissions
 
@@ -71,37 +71,31 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id}/memberOf
+GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/memberOf
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/user-get-memberof-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-memberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-memberof-javascript-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-get-memberof-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-get-memberof-objc-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/objc/user-get-memberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-get-memberof-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-get-memberof-go-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/go/user-get-memberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/user-get-memberof-powershell-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/powershell/user-get-memberof-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-get-memberof-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -179,7 +173,7 @@ The following is an example of the request.
   "name": "get_count_only"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/memberOf/microsoft.graph.group/$count
 ConsistencyLevel: eventual
 ```
@@ -210,7 +204,7 @@ The following is an example of the request.
   "name": "get_tier_count"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:tier"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
@@ -255,7 +249,7 @@ The following is an example of the request.
   "name": "list_users_memberof_startswith"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```

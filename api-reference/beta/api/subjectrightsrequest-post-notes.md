@@ -25,11 +25,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+POST /security/subjectRightsRequests/{subjectRightsRequestId}/notes
 POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ```
 
@@ -70,13 +73,13 @@ POST https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRigh
 Content-Type: application/json
 
 {
-"content": 
-  {
-    "content": "String",
-    "contentType": "text"
-  }
+    "content": {
+        "content": "Please take a look at the files tagged with follow up",
+        "contentType": "text"
+    }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-authorednote-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -85,16 +88,16 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-authorednote-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-authorednote-from--objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-authorednote-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-authorednote-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-authorednote-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -117,13 +120,18 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "id": "String (identifier)",
-    "createdDateTime": "String (timestamp)",
-    "author": { "@odata.type": "microsoft.graph.identitySet"},
+    "id": "D450C4F9-CC18-4784-9406-9372F4E05F7B",
+    "createdDateTime": "2022-05-10T22:42:28Z",
+    "author": {
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
+    },
     "content": {
-          "@odata.type": "microsoft.graph.itemBody"
+        "content": "Please take a look at the files tagged with follow up",
+        "contentType": "text"
     }
-
 }
 ```
 

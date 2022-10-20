@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1863
+Content-Length: 1973
 
 {
   "value": {
@@ -74,6 +74,7 @@ Content-Length: 1863
     "actor": {
       "@odata.type": "microsoft.graph.auditActor",
       "type": "Type value",
+      "auditActorType": "Audit Actor Type value",
       "userPermissions": [
         "User Permissions value"
       ],
@@ -112,6 +113,7 @@ Content-Length: 1863
           }
         ],
         "type": "Type value",
+        "auditResourceType": "Audit Resource Type value",
         "resourceId": "Resource Id value"
       }
     ],
@@ -119,6 +121,7 @@ Content-Length: 1863
   }
 }
 ```
+
 
 
 

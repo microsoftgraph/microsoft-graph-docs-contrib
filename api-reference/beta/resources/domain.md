@@ -43,6 +43,7 @@ To associate a domain with a tenant:
 |[Delete domain](../api/domain-delete.md) | None |Deletes a domain.|
 |[ForceDelete domain](../api/domain-forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
 |[Verify domain](../api/domain-verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
+|[Promote domain](../api/domain-promote.md)|Boolean|Promote a verified subdomain to the root domain.|
 
 ## Properties
 

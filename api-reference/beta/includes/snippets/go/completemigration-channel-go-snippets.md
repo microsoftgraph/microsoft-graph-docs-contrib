@@ -7,9 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-teamId := "team-id"
-channelId := "channel-id"
-graphClient.TeamsById(&teamId).ChannelsById(&channelId).CompleteMigration(team-id, channel-id).Post()
+
+graphClient.TeamsById("team-id").ChannelsById("channel-id").CompleteMigration().Post(context.Background(), nil)
 
 
 ```

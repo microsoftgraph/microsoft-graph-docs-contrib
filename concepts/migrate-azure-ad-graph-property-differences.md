@@ -22,7 +22,11 @@ Because the [user](#user-property-differences) and [group](#group-property-diffe
 
 ## User property differences
 
-The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has been renamed to **user** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has been renamed to **user** in Microsoft Graph and inherits from **directoryObject**. 
+
+The Microsoft Graph v1.0 endpoint returns a limited set of user properties by default, while Azure AD Graph returns all properties. To read other properties that aren't returned by default, specify them in a `$select` query. For more information, see the [user resource type](/graph/api/resources/user).
+
+The following table lists the additional property differences.
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br>property|Comments|
 |---|---|---|
@@ -78,7 +82,7 @@ The Azure AD Graph **Application** resource inherits from **DirectoryObject**; i
 | **publicClient**                   | beta &nbsp;-&nbsp; **isFallbackPublicClient** <br> v1.0 &nbsp;-&nbsp; **isFallbackPublicClient**                                                      | This property now has a new meaning &nbsp;-&nbsp; it contains the public client settings like redirectUris. Determining whether the app is a public or confidential client or not is now done automatically, with the isFallbackPublicClient property handling the one special case that cannot be determined automatically. |
 | **recordConsentConditions**        | beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_                                                                            | This property is deprecated.                                                                                                                                                                                                                                                                                                 |
 | **replyUrls**                      | beta&nbsp;-&nbsp;**web/redirectUris**, **publicClient/redirectUris**<br> v1.0 &nbsp;-&nbsp;**web/redirectUris**, **publicClient/redirectUris**        | As well as being renamed, redirectUris is now part of the new web and publicClient resources. This allows developers to use specific URIs for their web and public clients (such as an installed application on a desktop device).                                                                                           |
-| **samlMetadataUrl**                | beta  &nbsp;-&nbsp; _Not yet available_  <br> v1.0 &nbsp;-&nbsp; _Not yet available_                                                                  |                                                                                                                                                                                                                                                                                                                              |
+| **samlMetadataUrl**                | beta  &nbsp;-&nbsp; **samlMetadataUrl** <br> v1.0 &nbsp;-&nbsp; _Not yet available_                                                                  |                                                                                                                                                                                                                                                                                                                              |
 | **serviceEndpoints**               | beta  &nbsp;-&nbsp; _Not available_  <br> v1.0 &nbsp;-&nbsp; _Not available_                                                                          | This property is deprecated, but is planned for servicePrincipal.                                                                                                                                                                                                                                                            |
 
 ## AppRoleAssignment differences

@@ -3,7 +3,7 @@ title: "Icon resource type"
 description: "Represents a cell icon."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: excel
 doc_type: resourcePageType
 ---
 

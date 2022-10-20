@@ -7,14 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPersonCertification()
+requestBody := graphmodels.NewPersonCertification()
 issuingAuthority := "International Academy of Marketing Excellence"
-requestBody.SetIssuingAuthority(&issuingAuthority)
+requestBody.SetIssuingAuthority(&issuingAuthority) 
 issuingCompany := "International Academy of Marketing Excellence"
-requestBody.SetIssuingCompany(&issuingCompany)
-userId := "user-id"
-personCertificationId := "personCertification-id"
-graphClient.UsersById(&userId).Profile().CertificationsById(&personCertificationId).Patch(requestBody)
+requestBody.SetIssuingCompany(&issuingCompany) 
+
+result, err := graphClient.UsersById("user-id").Profile().CertificationsById("personCertification-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

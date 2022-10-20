@@ -96,6 +96,51 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 			}
 		}
 	},
+	ReviewSettings = new AccessPackageAssignmentReviewSettings
+	{
+		IsEnabled = true,
+		ExpirationBehavior = AccessReviewExpirationBehavior.KeepAccess,
+		IsRecommendationEnabled = true,
+		IsReviewerJustificationRequired = true,
+		IsSelfReview = false,
+		Schedule = new EntitlementManagementSchedule
+		{
+			StartDateTime = DateTimeOffset.Parse("2022-07-02T06:59:59.998Z"),
+			Expiration = new ExpirationPattern
+			{
+				Duration = new Duration("P14D"),
+				Type = ExpirationPatternType.AfterDuration
+			},
+			Recurrence = new PatternedRecurrence
+			{
+				Pattern = new RecurrencePattern
+				{
+					Type = RecurrencePatternType.AbsoluteMonthly,
+					Interval = 3,
+					Month = 0,
+					DayOfMonth = 0,
+					DaysOfWeek = new List<DayOfWeek>()
+					{
+					}
+				},
+				Range = new RecurrenceRange
+				{
+					Type = RecurrenceRangeType.NoEnd,
+					NumberOfOccurrences = 0
+				}
+			}
+		},
+		PrimaryReviewers = new List<SubjectSet>()
+		{
+			new GroupMembers
+			{
+				GroupId = "1623f912-5e86-41c2-af47-39dd67582b66"
+			}
+		},
+		FallbackReviewers = new List<SubjectSet>()
+		{
+		}
+	},
 	AccessPackage = new AccessPackage
 	{
 		Id = "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"

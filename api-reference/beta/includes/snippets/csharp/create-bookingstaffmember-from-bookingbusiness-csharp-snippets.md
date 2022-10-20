@@ -102,6 +102,7 @@ var bookingStaffMember = new BookingStaffMember
 			}
 		}
 	},
+	IsEmailNotificationEnabled = false,
 	AdditionalData = new Dictionary<string, object>()
 	{
 		{"role@odata.type", "#microsoft.graph.bookingStaffRole"},

@@ -68,35 +68,36 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_mobilitymanagementpolicy"
+  "name": "list_mobileDeviceManagementpolicies"
 }
 -->
 
 ``` http
 GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-mobilitymanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-mobiledevicemanagementpolicies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-mobilitymanagementpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-mobilitymanagementpolicy-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-mobiledevicemanagementpolicies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-mobilitymanagementpolicy-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-mobiledevicemanagementpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-mobilitymanagementpolicy-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-mobiledevicemanagementpolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-mobilitymanagementpolicy-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-mobiledevicemanagementpolicies-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-mobiledevicemanagementpolicies-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

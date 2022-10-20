@@ -2,7 +2,7 @@
 title: "unifiedRoleAssignment resource type"
 description: "A role assignment is the link between a role definition and a principal at a particular scope for the purpose of granting access."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---

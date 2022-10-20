@@ -3,7 +3,7 @@ title: "Send device command (deprecated)"
 description: "This API enables Project Rome capabilities to command a device associated with a Microsoft account. After doing a GET call on `me/devices`, pass in the ID of the device to issue a command to your device. Two types of commands are supported: LaunchURI and AppServices. If you're using LaunchURI, specify the *type* and *payload* parameters. For an AppService call, specify the "
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: project-rome
 author: "ailae"
 ---
 

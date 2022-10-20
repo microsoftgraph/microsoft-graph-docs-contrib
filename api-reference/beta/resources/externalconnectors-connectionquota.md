@@ -1,7 +1,7 @@
 ---
 title: "connectionQuota resource type"
 description: "Represents the connection quota that contains calculated information about the quota utilization of an external connection."
-author: "josmoran"
+author: "snlraju-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: resourcePageType
@@ -23,7 +23,7 @@ Represents the [connection](externalconnectors-externalconnection.md) quota that
 
 |Property|Type|Description|
 |:---|:---|:---|
-| itemsRemaining | Int64 | Returns the minimum number in a range that contains the following data: *items remaining in the connection* and *remaining items at tenant-level*. The following equation represents the formula used to calculate the minimum number: `min(max capacity in the connection – number of items in the connection, tenant quota – number of items indexed in all connections)`. If the connection is nonmonetized (preview connector or preview content experience), then it returns the number of remaining items in the connection. |
+| itemsRemaining | Int64 | The minimum of two values, one representing the *items remaining in the connection* and the other *remaining items at tenant-level*. <br/>The following equation represents the formula used to calculate the minimum number:<br/> min (\{_&#65279;max capacity in the connection_\} – \{_&#65279;number of items in the connection_\}, \{_&#65279;tenant quota_\} – \{_&#65279;number of items indexed in all connections_\}). <br/>If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection. |
 
 ## Relationships
 

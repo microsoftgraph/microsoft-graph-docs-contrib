@@ -4,7 +4,7 @@ ms.date: 09/11/2017
 title: NumberColumn
 ms.localizationpriority: medium
 description: "The numberColumn on a columnDefinition resource indicates that the column's values are numbers."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

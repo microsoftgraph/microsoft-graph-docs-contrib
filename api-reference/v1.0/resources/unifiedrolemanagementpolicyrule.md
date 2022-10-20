@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementPolicyRule resource type"
-description: "An abstract type that defines the rules associated with role management policies."
+description: "An abstract type that defines the rules or settings associated with role management policies."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 
-An abstract type that defines the rules associated with role management policies. This abstract type is inherited by the following resources that define the various types of rules and their settings associated with role management policies.
+An abstract type that defines the rules or settings associated with role management policies. This abstract type is inherited by the following resources that define the various types of rules and their settings associated with role management policies.
 + [unifiedRoleManagementPolicyApprovalRule](unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](unifiedrolemanagementpolicyauthenticationcontextrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](unifiedrolemanagementpolicyenablementrule.md)

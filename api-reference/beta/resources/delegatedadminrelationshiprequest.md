@@ -29,7 +29,7 @@ Represents a request specific to a delegated admin relationship between a partne
 |createdDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship request was created. Read-only. |
 |id|String|The unique identifier of the relationship request. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time in ISO 8601 format and UTC time when this relationship request was last modified. Read-only.|
-|status|delegatedAdminRelationshipRequestStatus|The status of the request. Read-only. The possible values are: `created`, `pending`, `complete`, `failed`, `unknownFutureValue`.|
+|status|delegatedAdminRelationshipRequestStatus|The status of the request. Read-only. The possible values are: `created`, `pending`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 None.

@@ -49,7 +49,6 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to hide the chat for. **In delegated mode, users can only hide a chat for themselves**.|
-|tenantId|String|Tenant ID of the user.|
 
 ## Response
 
@@ -62,7 +61,8 @@ If successful, this action returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chat_hideforuser"
+  "name": "chat_hideforuser",
+  "sampleKeys": ["19:7d898072-792c-4006-bb10-5ca9f2590649_8ea0e38b-efb3-4757-924a-5f94061cf8c2@unq.gbl.spaces"]
 }
 -->
 ``` http
@@ -71,21 +71,18 @@ Content-Type: application/json
 
 {
   "user": {
-    "id" : "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
-  },
-  "tenantId": "2a690434-97d9-4eed-83a6-f5f13600199a"
+    "id" : "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
+    "tenantId": "2a690434-97d9-4eed-83a6-f5f13600199a"
+  }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chat-hideforuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chat-hideforuser-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/chat-hideforuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -98,6 +95,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/chat-hideforuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/chat-hideforuser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

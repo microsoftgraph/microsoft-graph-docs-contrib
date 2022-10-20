@@ -7,39 +7,50 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewEvent()
+requestBody := graphmodels.NewEvent()
 subject := "Let's go for lunch"
-requestBody.SetSubject(&subject)
-body := msgraphsdk.NewItemBody()
-requestBody.SetBody(body)
-contentType := "HTML"
-body.SetContentType(&contentType)
+requestBody.SetSubject(&subject) 
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "Does late morning work for you?"
-body.SetContent(&content)
-start := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetStart(start)
+body.SetContent(&content) 
+requestBody.SetBody(body)
+start := graphmodels.NewDateTimeTimeZone()
 dateTime := "2019-06-16T12:00:00"
-start.SetDateTime(&dateTime)
+start.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-start.SetTimeZone(&timeZone)
-end := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetEnd(end)
+start.SetTimeZone(&timeZone) 
+requestBody.SetStart(start)
+end := graphmodels.NewDateTimeTimeZone()
 dateTime := "2019-06-16T14:00:00"
-end.SetDateTime(&dateTime)
+end.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-end.SetTimeZone(&timeZone)
-location := msgraphsdk.NewLocation()
-requestBody.SetLocation(location)
+end.SetTimeZone(&timeZone) 
+requestBody.SetEnd(end)
+location := graphmodels.NewLocation()
 displayName := "Harry's Bar"
-location.SetDisplayName(&displayName)
-requestBody.SetAttendees( []Attendee {
-	msgraphsdk.NewAttendee(),
-	SetAdditionalData(map[string]interface{}{
-		"type": "required",
-	}
+location.SetDisplayName(&displayName) 
+requestBody.SetLocation(location)
+
+
+attendee := graphmodels.NewAttendee()
+emailAddress := graphmodels.NewEmailAddress()
+address := "adelev@contoso.onmicrosoft.com"
+emailAddress.SetAddress(&address) 
+name := "Adele Vance"
+emailAddress.SetName(&name) 
+attendee.SetEmailAddress(emailAddress)
+type := graphmodels.REQUIRED_ATTENDEETYPE 
+attendee.SetType(&type) 
+
+attendees := []graphmodels.Objectable {
+	attendee,
+
 }
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Events().Post(requestBody)
+requestBody.SetAttendees(attendees)
+
+result, err := graphClient.GroupsById("group-id").Events().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let chat = await client.api('/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2')
+let chat = await client.api('/chats/19:d0f51aeb0e8e43d0befb24be72b09ea7@thread.v2')
 	.expand('members')
 	.get();
 
