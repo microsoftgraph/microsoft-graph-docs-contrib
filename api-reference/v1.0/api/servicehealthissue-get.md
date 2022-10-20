@@ -124,7 +124,7 @@ Content-Type: application/json
       "createdDateTime": "2020-11-12T07:07:38.97Z",
       "postType": "Regular",
       "description": {
-        "contentType": "Text",
+        "contentType": "Html",
         "content": "Title: Intermittently unable to invite partners to meetings using some Microsoft 365 services\n\nUser Impact: Users may have been intermittently unable to invite partners to meetings using some Microsoft 365 services."
       }
     }

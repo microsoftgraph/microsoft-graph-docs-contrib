@@ -21,6 +21,8 @@ Indicates the type of targeting
 |Member|Value|Description|
 |:---|:---|:---|
 |aadGroup|0|Indicates that client devices are targeted by their AAD group|
+|unknownFutureValue|1|UnknownFutureValue, Evolvable enumeration sentinel value. Do not use.|
+
 
 
 

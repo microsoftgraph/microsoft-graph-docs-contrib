@@ -54,11 +54,6 @@ $params = @{
 		}
 	)
 	Settings = @{
-		MailNotificationsEnabled = $true
-		ReminderNotificationsEnabled = $true
-		JustificationRequiredOnApproval = $true
-		DefaultDecisionEnabled = $false
-		DefaultDecision = "None"
 		InstanceDurationInDays = 4
 		Recurrence = @{
 			Pattern = @{

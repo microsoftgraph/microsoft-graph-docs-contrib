@@ -23,7 +23,7 @@ requestBody.SetIsEnabled(&isEnabled)
 loginWebUrl := "https://www.linkedin.com/learning-login/teams"
 requestBody.SetLoginWebUrl(&loginWebUrl) 
 
-graphClient.EmployeeExperience().LearningProvidersById("learningProvider-id").Patch(requestBody)
+result, err := graphClient.EmployeeExperience().LearningProvidersById("learningProvider-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

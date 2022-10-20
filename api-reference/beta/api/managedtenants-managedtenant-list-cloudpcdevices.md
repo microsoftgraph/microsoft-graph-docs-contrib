@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcD
 [!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcdevice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcdevice-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-cloudpcdevice-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -99,23 +103,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "00089754-92d2-483c-a073-420723aac8bc_6b97ad6a-be15-4cbe-afbb-4eb74ecb0243",
-      "lastUpdated": "2021-07-10T23:05:03.2565097Z",
-      "policyId": "2b142388-f36c-40ee-a5cb-7e8871a658a0",
-      "displayName": "ImageProd - ImageRunner4PROD",
-      "managedDeviceId": "f3a8e53b-0a9f-42f1-be73-4fd30d801f62",
-      "managedDeviceName": "A0000060000",
-      "userPrincipalName": "ImageRunner4PROD@fourthcoffee001.onmicrosoft.com",
-      "servicePlanName": "CloudPC_Lite",
-      "status": "Provisioned",
-      "tenantId": "aa060093-1e81-45b4-bebc-652713194ef7",
-      "tenantDisplayName": "Fourth Coffee Publishing",
-      "lastRefreshedDateTime": "2021-07-10T23:05:03.2565097Z",
-      "provisioningPolicyId": "2b142388-f36c-40ee-a5cb-7e8871a658a0",
-      "cloudPcStatus": "Provisioned"
-    }
-  ]
+    "value": [
+        {
+            "id": "2fd04a0b-ed49-46c0-a62d-e7980d829058",
+            "organizationId": "8fd04a0b-ed49-46c0-a62d-e7980d829118",
+            "organizationDisplayName": "Fabrikam",
+            "displayName": "Test Cloud PC Device - Deprovisioning",
+            "managedDeviceId": "618f7b25-b146-4c0e-a21b-2f1c67e78648",
+            "managedDeviceName": "device01",
+            "userPrincipalName": "lisa@fabrikam.com",
+            "servicePlanName": "Cloud PC Business 2vCPU/8GB/128GB",
+            "servicePlanType": "Business",
+            "deviceSpecification": "2vCPU/8GB/128GB",
+            "status": "deprovisioning",
+            "lastRefreshedDateTime": "2022-02-16T11:32:37.5389729Z"
+        },
+        {
+            "id": "1fd04a0b-ed49-46c0-a62d-e7980d829058",
+            "organizationId": "4fd04a0b-ed49-46c0-a62d-e7980d829118",
+            "organizationDisplayName": "Fabrikam",
+            "displayName": "Test Cloud PC Device - Not Provisioned",
+            "managedDeviceId": "318f7b25-b146-4c0e-a21b-2f1c67e78648",
+            "managedDeviceName": "device02",
+            "userPrincipalName": "john@fabrikam.com",
+            "servicePlanName": "Cloud PC Enterprise 2vCPU/4GB/64GB",
+            "servicePlanType": "Enterprise",
+            "deviceSpecification": "2vCPU/4GB/64GB",
+            "status": "notProvisioned",
+            "lastRefreshedDateTime": "2022-01-16T11:32:33.5382129Z"
+        }
+    ]
 }
 ```

@@ -12,11 +12,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new BookingService();
 $requestBody->set@odatatype('#microsoft.graph.bookingService');
 
-$requestBody->setDefaultDuration('PT30M');
+$requestBody->setDefaultDuration(new \DateInterval('PT30M'));
 
 
 
-$graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->servicesById('bookingService-id')->patch($requestBody);
+$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->servicesById('bookingService-id')->patch($requestBody);
 
 
 ```

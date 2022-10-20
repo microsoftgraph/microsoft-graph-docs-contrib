@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.GroupsById("group-id").ConversationsById("conversation-id").Delete()
+graphClient.GroupsById("group-id").ConversationsById("conversation-id").Delete(context.Background(), nil)
 
 
 ```

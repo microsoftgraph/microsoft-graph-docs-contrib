@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
-Get-MgServiceAnnouncementIssue -OutFile $outFileId
+Get-MgServiceAnnouncementIssue
 
 ```

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgChat -ExpandProperty "lastMessagePreview"  -OutFile $outFileId
+Get-MgChat -ExpandProperty "lastMessagePreview" 
 
 ```

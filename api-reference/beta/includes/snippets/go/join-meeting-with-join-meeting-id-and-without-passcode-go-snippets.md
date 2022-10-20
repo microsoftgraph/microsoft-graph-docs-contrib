@@ -8,18 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewCall()
-"@odata.type" := "#microsoft.graph.call"
-requestBody.Set"@odata.type"(&"@odata.type") 
 callbackUri := "https://bot.contoso.com/callback"
 requestBody.SetCallbackUri(&callbackUri) 
 requestedModalities := []graphmodels.Modalityable {
-	"audio",
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality) 
 
 }
 requestBody.SetRequestedModalities(requestedModalities)
 mediaConfig := graphmodels.NewMediaConfig()
-"@odata.type" := "#microsoft.graph.serviceHostedMediaConfig"
-mediaConfig.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 
 
@@ -43,8 +40,6 @@ resourceId := "86dc814b-c172-4428-9112-60f8ecae1edb"
 mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
 meetingInfo := graphmodels.NewMeetingInfo()
-"@odata.type" := "#microsoft.graph.joinMeetingIdMeetingInfo"
-meetingInfo.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"joinMeetingId" : "1234567", 
 	passcode := null
@@ -55,7 +50,7 @@ requestBody.SetMeetingInfo(meetingInfo)
 tenantId := "86dc81db-c112-4228-9222-63f3esaa1edb"
 requestBody.SetTenantId(&tenantId) 
 
-result, err := graphClient.Communications().Calls().Post(requestBody)
+result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

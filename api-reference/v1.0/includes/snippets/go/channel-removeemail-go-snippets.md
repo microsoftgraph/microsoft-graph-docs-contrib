@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").RemoveEmail().Post()
+graphClient.TeamsById("team-id").ChannelsById("channel-id").RemoveEmail().Post(context.Background(), nil)
 
 
 ```

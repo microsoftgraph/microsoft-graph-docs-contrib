@@ -11,7 +11,7 @@ requestBody := graphmodels.NewReferenceCreate()
 "@odata.id" := "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 requestBody.Set"@odata.id"(&"@odata.id") 
 
-graphClient.DevicesById("device-id").RegisteredOwners().$ref().Post(requestBody)
+graphClient.DevicesById("device-id").RegisteredOwners().$ref().Post(context.Background(), requestBody, nil)
 
 
 ```

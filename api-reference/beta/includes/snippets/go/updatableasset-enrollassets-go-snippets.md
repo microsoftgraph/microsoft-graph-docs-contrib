@@ -13,8 +13,6 @@ requestBody.SetUpdateCategory(&updateCategory)
 
 
 updatableAsset := graphmodels.NewUpdatableAsset()
-"@odata.type" := "#microsoft.graph.windowsUpdates.azureADDevice"
-updatableAsset.Set"@odata.type"(&"@odata.type") 
 id := "String (identifier)"
 updatableAsset.SetId(&id) 
 
@@ -24,7 +22,7 @@ assets := []graphmodels.Objectable {
 }
 requestBody.SetAssets(assets)
 
-graphClient.Admin().Windows().Updates().UpdatableAssets().EnrollAssets().Post(requestBody)
+graphClient.Admin().Windows().Updates().UpdatableAssets().EnrollAssets().Post(context.Background(), requestBody, nil)
 
 
 ```

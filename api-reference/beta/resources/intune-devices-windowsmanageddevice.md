@@ -322,7 +322,8 @@ Here is a JSON representation of the resource.
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
     "clientIdentifier": "String",
-    "isBlocked": true
+    "isBlocked": true,
+    "clientVersion": "String"
   },
   "ethernetMacAddress": "String",
   "physicalMemoryInBytes": 1024,
@@ -346,6 +347,7 @@ Here is a JSON representation of the resource.
   "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
+
 
 
 

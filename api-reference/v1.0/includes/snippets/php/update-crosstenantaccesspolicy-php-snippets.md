@@ -14,7 +14,7 @@ $requestBody->setDisplayName('CrossTenantAccessPolicy');
 
 
 
-$graphServiceClient->policies()->crossTenantAccessPolicy()->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->crossTenantAccessPolicy()->patch($requestBody);
 
 
 ```

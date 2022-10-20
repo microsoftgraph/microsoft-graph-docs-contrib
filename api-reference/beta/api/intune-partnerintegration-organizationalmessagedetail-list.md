@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2485
+Content-Length: 2510
 
 {
   "value": [
@@ -83,7 +83,7 @@ Content-Length: 2485
       "frequency": "monthlyOnce",
       "targeting": {
         "@odata.type": "microsoft.graph.organizationalMessageTargeting",
-        "targetingType": "aadGroup",
+        "targetingType": "unknownFutureValue",
         "includeIds": [
           "Include Ids value"
         ],
@@ -123,7 +123,7 @@ Content-Length: 2485
         "logoInfo": {
           "@odata.type": "microsoft.graph.organizationalMessageLogo",
           "logo": "bG9nbw==",
-          "contentType": "png",
+          "contentType": "unknownFutureValue",
           "logoCdnUrl": "https://example.com/logoCdnUrl/"
         }
       },
@@ -133,6 +133,7 @@ Content-Length: 2485
   ]
 }
 ```
+
 
 
 

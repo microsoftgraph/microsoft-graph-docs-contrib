@@ -7,101 +7,101 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewAccessPackageAssignmentPolicie()
-additionalData := map[string]interface{}{
-	"id" : "b2eba9a1-b357-42ee-83a8-336522ed6cbf", 
-	"accessPackageId" : "4c02f928-7752-49aa-8fc8-e286d973a965", 
-	"displayName" : "All Users", 
-	"description" : "All users can request for access to the directory.", 
-	canExtend := false
+requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
+id := "b2eba9a1-b357-42ee-83a8-336522ed6cbf"
+requestBody.SetId(&id) 
+accessPackageId := "4c02f928-7752-49aa-8fc8-e286d973a965"
+requestBody.SetAccessPackageId(&accessPackageId) 
+displayName := "All Users"
+requestBody.SetDisplayName(&displayName) 
+description := "All users can request for access to the directory."
+requestBody.SetDescription(&description) 
+canExtend := false
 requestBody.SetCanExtend(&canExtend) 
-	"durationInDays" : int32(365) , 
-	expirationDateTime := null
+durationInDays := int32(365)
+requestBody.SetDurationInDays(&durationInDays) 
+expirationDateTime := null
 requestBody.SetExpirationDateTime(&expirationDateTime) 
-requestorSettings := graphmodels.New()
+requestorSettings := graphmodels.NewRequestorSettings()
 scopeType := "AllExistingConnectedOrganizationSubjects"
 requestorSettings.SetScopeType(&scopeType) 
-	acceptRequests := true
+acceptRequests := true
 requestorSettings.SetAcceptRequests(&acceptRequests) 
-	allowedRequestors := []graphmodels.able {
+allowedRequestors := []graphmodels.UserSetable {
 
-	}
-	requestorSettings.SetAllowedRequestors(allowedRequestors)
-	requestBody.SetRequestorSettings(requestorSettings)
-requestApprovalSettings := graphmodels.New()
-	isApprovalRequired := true
+}
+requestorSettings.SetAllowedRequestors(allowedRequestors)
+requestBody.SetRequestorSettings(requestorSettings)
+requestApprovalSettings := graphmodels.NewApprovalSettings()
+isApprovalRequired := true
 requestApprovalSettings.SetIsApprovalRequired(&isApprovalRequired) 
-	isApprovalRequiredForExtension := false
+isApprovalRequiredForExtension := false
 requestApprovalSettings.SetIsApprovalRequiredForExtension(&isApprovalRequiredForExtension) 
-	isRequestorJustificationRequired := true
+isRequestorJustificationRequired := true
 requestApprovalSettings.SetIsRequestorJustificationRequired(&isRequestorJustificationRequired) 
 approvalMode := "SingleStage"
 requestApprovalSettings.SetApprovalMode(&approvalMode) 
 
 
- := graphmodels.New()
+approvalStage := graphmodels.NewApprovalStage()
 approvalStageTimeOutInDays := int32(14)
-.SetApprovalStageTimeOutInDays(&approvalStageTimeOutInDays) 
+approvalStage.SetApprovalStageTimeOutInDays(&approvalStageTimeOutInDays) 
 isApproverJustificationRequired := true
-.SetIsApproverJustificationRequired(&isApproverJustificationRequired) 
+approvalStage.SetIsApproverJustificationRequired(&isApproverJustificationRequired) 
 isEscalationEnabled := false
-.SetIsEscalationEnabled(&isEscalationEnabled) 
+approvalStage.SetIsEscalationEnabled(&isEscalationEnabled) 
 escalationTimeInMinutes := int32(11520)
-.SetEscalationTimeInMinutes(&escalationTimeInMinutes) 
+approvalStage.SetEscalationTimeInMinutes(&escalationTimeInMinutes) 
 
 
- := graphmodels.New()
-"@odata.type" := "#microsoft.graph.groupMembers"
-.Set"@odata.type"(&"@odata.type") 
+userSet := graphmodels.NewUserSet()
 isBackup := true
-.SetIsBackup(&isBackup) 
-id := "d2dcb9a1-a445-42ee-83a8-476522ed6cbf"
-.SetId(&id) 
-description := "group for users from connected organizations which have no external sponsor"
-.SetDescription(&description) 
- := graphmodels.New()
-"@odata.type" := "#microsoft.graph.externalSponsors"
-.Set"@odata.type"(&"@odata.type") 
+userSet.SetIsBackup(&isBackup) 
+additionalData := map[string]interface{}{
+	"id" : "d2dcb9a1-a445-42ee-83a8-476522ed6cbf", 
+	"description" : "group for users from connected organizations which have no external sponsor", 
+}
+userSet.SetAdditionalData(additionalData)
+userSet1 := graphmodels.NewUserSet()
 isBackup := false
-.SetIsBackup(&isBackup) 
+userSet1.SetIsBackup(&isBackup) 
 
-primaryApprovers := []graphmodels.Objectable {
-	,
-	,
+primaryApprovers := []graphmodels.UserSetable {
+	userSet,
+	userSet1,
 
 }
-.SetPrimaryApprovers(primaryApprovers)
+approvalStage.SetPrimaryApprovers(primaryApprovers)
 
-	approvalStages := []graphmodels.Objectable {
-		,
+approvalStages := []graphmodels.ApprovalStageable {
+	approvalStage,
 
-	}
-	requestApprovalSettings.SetApprovalStages(approvalStages)
-	requestBody.SetRequestApprovalSettings(requestApprovalSettings)
+}
+requestApprovalSettings.SetApprovalStages(approvalStages)
+requestBody.SetRequestApprovalSettings(requestApprovalSettings)
 
 
- := graphmodels.New()
+accessPackageQuestion := graphmodels.NewAccessPackageQuestion()
 isRequired := false
-.SetIsRequired(&isRequired) 
-text := graphmodels.New()
+accessPackageQuestion.SetIsRequired(&isRequired) 
+text := graphmodels.NewAccessPackageLocalizedContent()
 defaultText := "what state are you from?"
 text.SetDefaultText(&defaultText) 
 
 
- := graphmodels.New()
+accessPackageLocalizedText := graphmodels.NewAccessPackageLocalizedText()
 text := "¿De qué estado eres?"
-.SetText(&text) 
+accessPackageLocalizedText.SetText(&text) 
 languageCode := "es"
-.SetLanguageCode(&languageCode) 
+accessPackageLocalizedText.SetLanguageCode(&languageCode) 
 
-localizedTexts := []graphmodels.Objectable {
-	,
+localizedTexts := []graphmodels.AccessPackageLocalizedTextable {
+	accessPackageLocalizedText,
 
 }
 text.SetLocalizedTexts(localizedTexts)
-.SetText(text)
-"@odata.type" := "#microsoft.graph.accessPackageMultipleChoiceQuestion"
-.Set"@odata.type"(&"@odata.type") 
+accessPackageQuestion.SetText(text)
+additionalData := map[string]interface{}{
 
 
  := graphmodels.New()
@@ -141,48 +141,49 @@ localizedTexts := []graphmodels.Objectable {
 displayValue.SetLocalizedTexts(localizedTexts)
 .SetDisplayValue(displayValue)
 
-choices := []graphmodels.Objectable {
-	,
-	,
-
-}
-.SetChoices(choices)
-allowsMultipleSelection := false
-.SetAllowsMultipleSelection(&allowsMultipleSelection) 
- := graphmodels.New()
-isRequired := false
-.SetIsRequired(&isRequired) 
-text := graphmodels.New()
-defaultText := "Who is your manager?"
-text.SetDefaultText(&defaultText) 
-
-
- := graphmodels.New()
-text := "por qué necesita acceso a este paquete"
-.SetText(&text) 
-languageCode := "es"
-.SetLanguageCode(&languageCode) 
-
-localizedTexts := []graphmodels.Objectable {
-	,
-
-}
-text.SetLocalizedTexts(localizedTexts)
-.SetText(text)
-"@odata.type" := "#microsoft.graph.accessPackageTextInputQuestion"
-.Set"@odata.type"(&"@odata.type") 
-isSingleLineQuestion := false
-.SetIsSingleLineQuestion(&isSingleLineQuestion) 
-
-	questions := []graphmodels.Objectable {
+	choices := []graphmodels.Objectable {
 		,
 		,
 
 	}
+	allowsMultipleSelection := false
+accessPackageQuestion.SetAllowsMultipleSelection(&allowsMultipleSelection) 
 }
-requestBody.SetAdditionalData(additionalData)
+accessPackageQuestion.SetAdditionalData(additionalData)
+accessPackageQuestion1 := graphmodels.NewAccessPackageQuestion()
+isRequired := false
+accessPackageQuestion1.SetIsRequired(&isRequired) 
+text := graphmodels.NewAccessPackageLocalizedContent()
+defaultText := "Who is your manager?"
+text.SetDefaultText(&defaultText) 
 
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPoliciesById("accessPackageAssignmentPolicy-id").Put(requestBody)
+
+accessPackageLocalizedText := graphmodels.NewAccessPackageLocalizedText()
+text := "por qué necesita acceso a este paquete"
+accessPackageLocalizedText.SetText(&text) 
+languageCode := "es"
+accessPackageLocalizedText.SetLanguageCode(&languageCode) 
+
+localizedTexts := []graphmodels.AccessPackageLocalizedTextable {
+	accessPackageLocalizedText,
+
+}
+text.SetLocalizedTexts(localizedTexts)
+accessPackageQuestion1.SetText(text)
+additionalData := map[string]interface{}{
+	isSingleLineQuestion := false
+accessPackageQuestion1.SetIsSingleLineQuestion(&isSingleLineQuestion) 
+}
+accessPackageQuestion1.SetAdditionalData(additionalData)
+
+questions := []graphmodels.AccessPackageQuestionable {
+	accessPackageQuestion,
+	accessPackageQuestion1,
+
+}
+requestBody.SetQuestions(questions)
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPoliciesById("accessPackageAssignmentPolicy-id").Put(context.Background(), requestBody, nil)
 
 
 ```

@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "creationDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "password": "String"
 }

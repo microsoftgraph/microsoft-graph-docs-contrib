@@ -73,7 +73,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_informationprotectionpolicysetting"
+  "name": "get_informationprotectionpolicysetting",
+  "sampleKeys": ["bob@contoso.com"]
 }
 -->
 ``` http

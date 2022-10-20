@@ -10,17 +10,21 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"ConsistencyLevel": "eventual",
 }
+
+requestCount := true
+requestFilter := "startswith(displayName,%20'a')"
+
 requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
-	Count: true,
+	Count: &requestCount,
 	OrderBy: [] string {"displayName"},
-	Filter: "startswith(displayName,%20'a')",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DevicesById("device-id").TransitiveMemberOf().Group().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.DevicesById("device-id").TransitiveMemberOf().Group().Get(context.Background(), configuration)
 
 
 ```

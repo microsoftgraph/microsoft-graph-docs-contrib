@@ -16,7 +16,7 @@ requestBody.SetHubSiteUrls(hubSiteUrls)
 propagateToExistingLists := false
 requestBody.SetPropagateToExistingLists(&propagateToExistingLists) 
 
-graphClient.SitesById("site-id").ContentTypesById("contentType-id").AssociateWithHubSites().Post(requestBody)
+graphClient.SitesById("site-id").ContentTypesById("contentType-id").AssociateWithHubSites().Post(context.Background(), requestBody, nil)
 
 
 ```
