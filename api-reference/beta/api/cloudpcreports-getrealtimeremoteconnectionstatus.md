@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getRealTimeRemoteConnectionStatus"
-description: "Get the real time connection status related information like signInStatus, daysSinceLastUse of a Cloud PC."
+description: "Get the real-time connection status information for a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the real time connection status related information like signInStatus, daysSinceLastUse of a Cloud PC.
+Get the real-time connection status information, such as **signInStatus** or **daysSinceLastUse**, for a Cloud PC.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,7 +35,6 @@ GET /deviceManagement/virtualEndpoint/reports/getRealTimeRemoteConnectionStatus(
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
