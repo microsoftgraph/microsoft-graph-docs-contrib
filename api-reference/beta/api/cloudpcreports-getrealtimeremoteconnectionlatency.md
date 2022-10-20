@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the real time connection latency related information like RTT and etc of a Cloud PC.
+Get the real-time connection latency-related information of a Cloud PC.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,11 +35,10 @@ GET /deviceManagement/virtualEndpoint/reports/getRealTimeRemoteConnectionLatency
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|cloudPcId|String|The id of the Cloud PC.|
+|cloudPcId|String|The ID of the Cloud PC.|
 
 
 ## Request headers
