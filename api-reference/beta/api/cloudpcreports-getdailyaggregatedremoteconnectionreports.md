@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getDailyAggregatedRemoteConnectionReports"
-description: "Get the daily aggregated remote connection reports like round trip time, available bandwidth and so on in a given period."
+description: "Get the daily aggregated remote connection reports , such as round trip time, available bandwidth, and so on, in a given period."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the daily aggregated remote connection reports like round trip time, available bandwidth and so on in a given period.
+Get the daily aggregated remote connection reports, such as round trip time, available bandwidth, and so on, in a given period.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
