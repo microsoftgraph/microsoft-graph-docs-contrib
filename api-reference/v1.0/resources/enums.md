@@ -579,6 +579,17 @@ Namespace: microsoft.graph
 |notApplied|
 |unknownFutureValue|
 
+### templateScenarios values
+|Member             |
+|:------------------|
+|new                |
+|secureFoundation   |
+|zeroTrust          |
+|remoteWork         |
+|protectAdmins      |
+|emergingThreats    |
+|unknownFutureValue |
+
 ### operationResult values
 
 |Member|
@@ -1961,6 +1972,15 @@ Possible values for user account types (group membership), per Windows definitio
 |microsoft|
 |thirdParty|
 |customer|
+|unknownFutureValue|
+
+### featureTargetType values 
+
+|Member|
+|:---|
+|group|
+|administrativeUnit|
+|role|
 |unknownFutureValue|
 
 ### serviceHealthStatus values 

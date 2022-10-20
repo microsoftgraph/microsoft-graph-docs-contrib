@@ -33,6 +33,7 @@ None.
 |namedLocations|[namedLocation](namedlocation.md) collection| Read-only. Nullable. Returns a collection of the specified named locations.|
 |policies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access policies.|
 |templates|[conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access templates.|
+|authenticationStrengths|[authenticationStrengthRoot](authenticationstrengthroot.md)|Defines the authentication strength policies, valid authentication method combinations, and authentication method mode details that can be required by a conditional access policy .|
 
 ## JSON representation
 
