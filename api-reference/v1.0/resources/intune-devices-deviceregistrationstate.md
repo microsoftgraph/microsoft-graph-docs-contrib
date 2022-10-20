@@ -30,4 +30,3 @@ Device registration status.
 
 
 
-

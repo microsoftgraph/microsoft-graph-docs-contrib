@@ -98,6 +98,10 @@ Content-type: application/json
 
 {
   "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",
+  "notes": {
+    "content": "<div style=\"white-space:pre-wrap\">Task details properties:\nchecklist:Sub items\nreferences:Related links</div>",
+    "contentType": "html"
+  },
   "previewType": "automatic",
   "references": {
     "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer": {

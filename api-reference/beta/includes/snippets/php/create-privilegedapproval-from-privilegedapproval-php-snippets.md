@@ -18,7 +18,7 @@ $requestBody->setApprovalType('approvalType-value');
 
 $requestBody->setApprovalState(new ApprovalState('approvalstate-value'));
 
-$requestBody->setApprovalDuration('datetime-value');
+$requestBody->setApprovalDuration(new \DateInterval('datetime-value'));
 
 
 

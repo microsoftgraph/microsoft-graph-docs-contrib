@@ -9,8 +9,6 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewEducationSubmissionResource()
 resource := graphmodels.NewEducationResource()
-"@odata.type" := "microsoft.graph.educationWordResource"
-resource.Set"@odata.type"(&"@odata.type") 
 displayName := "Report.docx"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
@@ -19,7 +17,7 @@ additionalData := map[string]interface{}{
 resource.SetAdditionalData(additionalData)
 requestBody.SetResource(resource)
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Resources().Post(requestBody)
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Resources().Post(context.Background(), requestBody, nil)
 
 
 ```

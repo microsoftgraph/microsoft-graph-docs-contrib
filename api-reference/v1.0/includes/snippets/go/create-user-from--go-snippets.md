@@ -11,7 +11,7 @@ requestBody := graphmodels.NewReferenceCreate()
 "@odata.id" := "https://graph.microsoft.com/v1.0/users/{userId}"
 requestBody.Set"@odata.id"(&"@odata.id") 
 
-graphClient.Print().SharesById("printerShare-id").AllowedUsers().$ref().Post(requestBody)
+graphClient.Print().SharesById("printerShare-id").AllowedUsers().$ref().Post(context.Background(), requestBody, nil)
 
 
 ```

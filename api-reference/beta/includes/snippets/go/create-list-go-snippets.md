@@ -34,7 +34,7 @@ template := "genericList"
 list.SetTemplate(&template) 
 requestBody.SetList(list)
 
-result, err := graphClient.SitesById("site-id").Lists().Post(requestBody)
+result, err := graphClient.SitesById("site-id").Lists().Post(context.Background(), requestBody, nil)
 
 
 ```

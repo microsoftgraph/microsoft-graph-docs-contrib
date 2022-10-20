@@ -11,6 +11,7 @@ accessPackageAssignmentPolicy.id = "87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187";
 accessPackageAssignmentPolicy.displayName = "All Users";
 accessPackageAssignmentPolicy.description = "All users can request for access to the directory.";
 accessPackageAssignmentPolicy.allowedTargetScope = AllowedTargetScope.ALL_DIRECTORY_USERS;
+accessPackageAssignmentPolicy.automaticRequestSettings = null;
 LinkedList<SubjectSet> specificAllowedTargetsList = new LinkedList<SubjectSet>();
 accessPackageAssignmentPolicy.specificAllowedTargets = specificAllowedTargetsList;
 ExpirationPattern expiration = new ExpirationPattern();

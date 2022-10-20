@@ -14,20 +14,8 @@ In this article, you'll learn how to configure Azure Active Directory (Azure AD)
 ## Prerequisites
 
 - This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) for Application Proxy so that connectors can communicate with Azure AD services.
-- This tutorial assumes that you are using Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. Complete the following steps to set permissions in Graph Explorer:
-    1. Start [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-    2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
-    3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
-
-        ![Set permissions](./images/application-proxy-configure-api/set-permissions.png)
-        
-    4. Scroll through the list of permissions to **Directory (3)**, expand and then select `Directory.ReadWrite.All`.
-
-        ![Search for permissions](./images/application-proxy-configure-api/select-permissions.png)
-    
-    5. Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
-
-        ![Accept permissions](./images/application-proxy-configure-api/accept-permissions.png)
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role.
+- Grant yourself the following delegated permission: `Directory.ReadWrite.All`.
 
 > [!NOTE]
 > The response objects shown might be shortened for readability. 
@@ -40,6 +28,10 @@ Record the **id**, **appId**, **servicePrincipalId** of the application to use l
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_create_applicationtemplates"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
 Content-type: application/json
@@ -50,7 +42,11 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.applicationTemplates"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -88,38 +84,76 @@ Content-type: application/json
 
 ## Step 2: Configure Application Proxy
 
-Use the **id** that you recorded for the application to start the configuration of Application Proxy. Update the following properties:
+Insert the **id** that you recorded for the application into the URL to start the configuration of Application Proxy. In this example, you're using an app with the internal URL: `https://contosoiwaapp.com`. You also use the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. Update the following properties in the request body:
 
-- **onPremisesPublishing** - In this example, you're using an app with the internal URL: `https://contosoiwaapp.com`. You also use the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. 
-- **redirectUri**, **identifierUri**, and **homepageUrl** - Set to the same external URL configured in the **onPremisesPublishing** property.
-- **implicitGrantSettings** - Set to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
+- **identifierUri**, **redirectUri**, and **homepageUrl** - Set each to the same external URL.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_update_application"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
+Content-type: application/json
+
+{
+    "identifierUris": [
+        "https://contosoiwaapp-contoso.msappproxy.net"
+    ],
+    "web": {
+        "redirectUris": [
+            "https://contosoiwaapp-contoso.msappproxy.net"
+        ],
+        "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No content
+```
+
+Update the following properties in the request body:
+
+- **internalUrl** - Set to the internal URL.
+- **externalUrl** - Set to the external URL.
+- All other values can be configured as needed. For details, see [Add an on-premises app to Azure AD](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_update_application_2"
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 Content-type: application/json
 
 {
-  "onPremisesPublishing": {
-    "externalAuthenticationType": "aadPreAuthentication",
-    "internalUrl": "https://contosoiwaapp.com",
-    "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-  },
-  "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-  "web": {
-    "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-    "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net",
-    "implicitGrantSettings": {
-      "enableIdTokenIssuance": true,
-      "enableAccessTokenIssuance": false
+    "onPremisesPublishing": {
+        "externalAuthenticationType": "aadPreAuthentication",
+        "internalUrl": "https://contosoiwaapp.com",
+        "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net",
+        "isHttpOnlyCookieEnabled": true,
+        "isOnPremPublishingEnabled": true,
+        "isPersistentCookieEnabled": true,
+        "isSecureCookieEnabled": true,
+        "isStateSessionEnabled": true,
+        "isTranslateHostHeaderEnabled": true,
+        "isTranslateLinksInBodyEnabled": true
     }
-  }
 }
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204 No content
 ```
@@ -132,12 +166,20 @@ List the connectors that are available. Record the **id** of the connector that 
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_get_connectors"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.connector"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -167,6 +209,10 @@ For this example, a new connectorGroup is created named `IWA Demo Connector Grou
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_create_connectorgroup"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
 
@@ -177,7 +223,11 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.connectorGroup"
+} -->
 ```http
 HTTP/1.1 201
 Content-type: connectorGroup/json
@@ -195,6 +245,10 @@ Content-type: connectorGroup/json
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_create_connector_memberof"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/f2cab422-a1c8-4d70-a47e-2cb297a2e051/memberOf/$ref
 Content-type: application/json
@@ -205,7 +259,9 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204 No content
 ```
@@ -214,6 +270,10 @@ HTTP/1.1 204 No content
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_assign_application_connectorgroup"
+}-->
 ```http
 PUT https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/connectorGroup/$ref
 Content-type: application/json
@@ -224,7 +284,9 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204 No content
 ```
@@ -235,6 +297,10 @@ This application uses Integrated Windows Authentication (IWA). To configure IWA,
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_update_app_sso"
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 Content-type: appplication/json
@@ -253,7 +319,9 @@ Content-type: appplication/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204 No content
 ```
@@ -266,12 +334,21 @@ Get the app roles for the application using the **id** of the service principal.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_get_approles"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoles
 ```
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
+} -->
 ```http
 HTTP/1.1 200
 Content-type: application/json
@@ -300,6 +377,10 @@ For this tutorial, you create a user account that is assigned to the app role. I
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_create_user"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
@@ -318,6 +399,11 @@ Content-type: application/json
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
@@ -345,6 +431,10 @@ In the following example, replace the values of these properties:
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_create_serviceprincipal_approleassignment"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments
 Content-type: appRoleAssignments/json
@@ -359,6 +449,11 @@ Content-type: appRoleAssignments/json
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appRoleAssignment"
+} -->
 ```http
 HTTP/1.1 200
 Content-type: application/json
@@ -389,12 +484,18 @@ Delete the MyTestUser1 user account.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806dc
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -403,12 +504,18 @@ No Content - 204
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_delete_application"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -417,12 +524,18 @@ No Content - 204
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_delete_connectorgroup"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -431,12 +544,3 @@ No Content - 204
 
 - [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy)
 - [application](/graph/api/resources/application)
-- [applicationTemplate: instantiate](/graph/api/applicationtemplate-instantiate)
-- [appRoleAssignment](/graph/api/resources/approleassignment)
-- [connector](/graph/api/resources/connector)
-- [connectorGroup](/graph/api/resources/connectorGroup)
-- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings)
-- [on-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root)
-- [servicePrincipal](/graph/api/resources/serviceprincipal)
-- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon)
-- [user](/graph/api/resources/user)

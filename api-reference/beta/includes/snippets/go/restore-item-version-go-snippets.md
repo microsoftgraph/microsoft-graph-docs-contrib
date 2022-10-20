@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.DrivesById("drive-id").ItemsById("driveItem-id").VersionsById("driveItemVersion-id").RestoreVersion().Post()
+graphClient.DrivesById("drive-id").ItemsById("driveItem-id").VersionsById("driveItemVersion-id").RestoreVersion().Post(context.Background(), nil)
 
 
 ```

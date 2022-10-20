@@ -15,21 +15,8 @@ This article uses an AWS Azure AD application template as an example, but you ca
 
 ## Prerequisites
 
-This tutorial assumes that you are using Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, and `User.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Graph Explorer:
-
-1. Go to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
-3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
-
-    ![Select the Microsoft Graph permissions](./images/application-saml-sso-configure-api/set-permissions.png)
-        
-4. In the list of permissions, scroll to and expand **AppRoleAssignment (1)**, and then select the **AppRoleAssignment.ReadWrite.All** permission. Scroll further down and expand **Application (2)**, and then select the **Application.ReadWrite.All** permission. Continue to and expand **Policy (13)**, and then select the **Policy.Read.All**  and **Policy.ReadWrite.ApplicationConfiguration** permissions. Finally, scroll to and expand **Users (8)**, and then select **User.ReadWrite.All**.
-
-    ![Scroll to and select the approleassignment, application, and policy permissions](./images/application-saml-sso-configure-api/select-permissions.png)
-
-5. Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
-
-    ![Accept consent of the permissions](./images/application-saml-sso-configure-api/accept-permissions.png)
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role.
+- Grant yourself the following delegated permissions: `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, and `User.ReadWrite.All`.
 
 ## Step 1: Create the application
 
@@ -39,45 +26,53 @@ To create the application from the gallery, you first get the identifier of the 
 
 ### Retrieve the gallery application template identifier
 
- In this tutorial, you retrieve the identifier of the application template for `AWS Single Sign-on`. Record the value of the **id** property to use later in this tutorial.
+ In this tutorial, you retrieve the identifier of the application template for `AWS IAM Identity Center (successor to AWS Single Sign-On)`. Record the value of the **id** property to use later in this tutorial.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_applicationtemplates_get"
+}-->
 ```http
-GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'AWS Single Sign-on'
+GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'AWS IAM Identity Center (successor to AWS Single Sign-On)'
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.applicationTemplates"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applicationTemplates",
-  "value": [
-    {
-      "id": "21ed01d2-ec13-4e9e-86c1-cd546719ebc4",
-      "displayName": "AWS Single Sign-on",
-      "homePageUrl": "https://aws.amazon.com/",
-      "supportedSingleSignOnModes": [
-        "saml",
-        "external"
-      ],
-      "supportedProvisioningTypes": [
-        "sync"
-      ],
-      "logoUrl": "https://az495088.vo.msecnd.net/app-logo/awssinglesignon_215.png",
-      "categories": [
-        "developerServices",
-        "itInfrastructure",
-        "security",
-        "New"
-      ],
-      "publisher": "Amazon Web Services, Inc.",
-      "description": "Federate once to AWS SSO & use it to manage access centrally to multiple AWS accounts. Provision users via SCIM & get Azure AD single sign-in access to the AWS Console, CLI, & AWS SSO integrated apps."
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applicationTemplates",
+    "value": [
+        {
+            "id": "21ed01d2-ec13-4e9e-86c1-cd546719ebc4",
+            "displayName": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+            "homePageUrl": "https://aws.amazon.com/",
+            "supportedSingleSignOnModes": [
+                "saml",
+                "external"
+            ],
+            "supportedProvisioningTypes": [
+                "sync"
+            ],
+            "logoUrl": "https://az495088.vo.msecnd.net/app-logo/awssinglesignon_215.png",
+            "categories": [
+                "developerServices",
+                "itInfrastructure",
+                "security",
+                "New"
+            ],
+            "publisher": "Amazon Web Services, Inc.",
+            "description": "Federate once to AWS IAM Identity Center (successor to AWS Single Sign-On) & use it to centrally manage access to multiple AWS accounts and IAM Identity Center enabled apps. Provision users via SCIM."
+        }
+    ]
 }
 ```
 
@@ -87,6 +82,10 @@ Using the **id** value that you recorded for the application template, create an
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_applicationtemplate.instantiate"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/applicationTemplates/21ed01d2-ec13-4e9e-86c1-cd546719ebc4/instantiate
 Content-type: application/json
@@ -100,7 +99,11 @@ Content-type: application/json
 > Allow some time for the app to be provisioned into your Azure AD tenant. It is not instant. One strategy is to do a GET query on the application or service principal object every 5-10 seconds until the query is successful.
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.applicationServicePrincipal"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -279,7 +282,10 @@ Content-type: application/json
 In this tutorial, you set `saml` as the single sign-on mode in the service principal. Use the **id** for the service principal that you recorded earlier.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_update_serviceprincipal"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91
 Content-type: application/json
@@ -290,7 +296,9 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204
 ```
@@ -301,6 +309,10 @@ Using the **id** for the application that you recorded earlier, set the identifi
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_update_application"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/a9be408a-6c31-4141-8cea-52fcd4a61be8
 Content-type: application/json
@@ -319,6 +331,9 @@ Content-type: application/json
 
 #### Response
 
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204
 ```
@@ -334,6 +349,10 @@ Use the **id** for the service principal that you recorded earlier.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_update_servicepricipal_approles"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/serviceprincipals/a750f6cf-2319-464a-bcc3-456926736a91
 Content-type: application/json
@@ -388,6 +407,9 @@ Content-type: application/json
 
 #### Response
 
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204
 ```
@@ -413,6 +435,10 @@ Create the claims mapping policy and record the value of the **id** property to 
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_create_claimsmappingpolicy"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
 Content-type: application/json
@@ -428,6 +454,11 @@ Content-type: application/json
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.claimsMappingPolicy"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -450,6 +481,10 @@ Use the **id** for the service principal that you recorded earlier to assign a c
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_assign_serviceprincipal_claimsmappingpolicy"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/claimsMappingPolicies/$ref
 Content-type: application/json
@@ -461,6 +496,9 @@ Content-type: application/json
 
 #### Response
 
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204
 ```
@@ -475,6 +513,10 @@ Using the **id** of the service principal that you created, create a new certifi
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_create_addtokensigningcertificate"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/addTokenSigningCertificate
 Content-type: application/json
@@ -487,6 +529,11 @@ Content-type: application/json
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.selfSignedCertificate"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -511,6 +558,10 @@ You need to set the **preferredTokenSigningKeyThumbprint** property of the servi
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_update_certificatethumbprint"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91
 Content-type: application/json
@@ -522,6 +573,9 @@ Content-type: application/json
 
 #### Response
 
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204
 ```
@@ -534,6 +588,10 @@ For this tutorial, you create a user account that is added to the application. I
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_create_user"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
@@ -552,6 +610,11 @@ Content-type: application/json
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
@@ -574,6 +637,10 @@ In the request body, provide these values:
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_add_approleassignment"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/appRoleAssignments
 Content-type: application/json
@@ -588,6 +655,11 @@ Content-type: application/json
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appRoleAssignment"
+} -->
 ```http
 HTTP/1.1 201 
 Content-type: application/json
@@ -638,12 +710,18 @@ Delete the application that you created.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_delete_application"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/applications/a9be408a-6c31-4141-8cea-52fcd4a61be8
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -654,12 +732,18 @@ Delete the MyTestUser1 user account.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/040f9599-7c0f-4f94-aa75-8394c4c6ea9b
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -670,12 +754,18 @@ Delete the claims mapping policy.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_saml_sso_delete_claimsmappingpolicy"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/a4b35718-fd5e-4ca8-8248-a3c9934b1b78
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```

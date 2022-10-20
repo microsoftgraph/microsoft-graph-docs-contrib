@@ -23,6 +23,8 @@ Indicates the area where content will be displayed to customers
 |actionCenter|0|Indicates the message will be displayed on the Window's Action Center|
 |getStarted|1|Indicates the message will be displayed on the Get Started page|
 |softLanding|2|Indicates the message will be displayed to the Soft Landing which is anchored to the Windows taskbar|
+|unknownFutureValue|3|UnknownFutureValue, Evolvable enumeration sentinel value. Do not use.|
+
 
 
 

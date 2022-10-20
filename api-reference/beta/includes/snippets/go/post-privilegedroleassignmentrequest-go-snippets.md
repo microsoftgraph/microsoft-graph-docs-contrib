@@ -27,7 +27,7 @@ requestBody.SetAssignmentState(&assignmentState)
 roleId := "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 requestBody.SetRoleId(&roleId) 
 
-result, err := graphClient.PrivilegedRoleAssignmentRequests().Post(requestBody)
+result, err := graphClient.PrivilegedRoleAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

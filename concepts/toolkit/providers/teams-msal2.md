@@ -98,7 +98,7 @@ export interface TeamsMsal2Config {
 ---
 ### Create the popup page
 
-To sign in with your Teams credentials and handle consent, you need provide a URL that the Teams app will open in a popup, which will follow the authentication flow. Create a new page in your application (for example, https://mydomain.com/auth) that will handle the auth redirect and call the `TeamsMsal2Provider.handleAuth` method. That's the only thing that this page needs to do. For example:
+To sign in with your Teams credentials and handle consent, you need provide a URL that the Teams app will open in a popup, which will follow the authentication flow. Create a new page in your application (for example, `https://mydomain.com/auth`) that will handle the auth redirect and call the `TeamsMsal2Provider.handleAuth` method. That's the only thing that this page needs to do. For example:
 
 # [npm](#tab/ts)
 
@@ -124,7 +124,9 @@ TeamsMsal2Provider.handleAuth();
 
 ## Configure your Teams app
 
-If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams apps](/microsoftteams/platform/concepts/tabs/tabs-overview). You can also use [App Studio](/microsoftteams/platform/get-started/get-started-app-studio) to develop your app manifest.
+If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams apps](/microsoftteams/platform/concepts/tabs/tabs-overview). You can use the [Developer Portal for Teams](/microsoftteams/platform/concepts/build-and-test/teams-developer-portal) to configure, distribute, and manage your application. You can access the Developer Portal for Teams in a [web browser](https://dev.teams.microsoft.com/) or as a [Teams App](https://teams.microsoft.com/l/app/14072831-8a2a-4f76-9294-057bf0b42a68).
+
+You can also use the [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) in **Visual Studio Code** to quickly create and deploy your Teams app.
 
 ### Creating an app/client ID
 

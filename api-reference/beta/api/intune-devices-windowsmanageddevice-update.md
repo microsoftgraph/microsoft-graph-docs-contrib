@@ -148,7 +148,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 9099
+Content-length: 9145
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -339,7 +339,8 @@ Content-length: 9099
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
     "clientIdentifier": "Client Identifier value",
-    "isBlocked": true
+    "isBlocked": true,
+    "clientVersion": "Client Version value"
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
@@ -369,7 +370,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9148
+Content-Length: 9194
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -561,7 +562,8 @@ Content-Length: 9148
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
     "clientIdentifier": "Client Identifier value",
-    "isBlocked": true
+    "isBlocked": true,
+    "clientVersion": "Client Version value"
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
@@ -585,6 +587,7 @@ Content-Length: 9148
   "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
+
 
 
 

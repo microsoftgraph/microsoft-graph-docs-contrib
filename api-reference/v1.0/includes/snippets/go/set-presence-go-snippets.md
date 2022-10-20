@@ -14,10 +14,10 @@ availability := "Available"
 requestBody.SetAvailability(&availability) 
 activity := "Available"
 requestBody.SetActivity(&activity) 
-expirationDuration := "PT1H"
+expirationDuration , err := abstractions.ParseISODuration("PT1H")
 requestBody.SetExpirationDuration(&expirationDuration) 
 
-graphClient.UsersById("user-id").Presence().SetPresence().Post(requestBody)
+graphClient.UsersById("user-id").Presence().SetPresence().Post(context.Background(), requestBody, nil)
 
 
 ```

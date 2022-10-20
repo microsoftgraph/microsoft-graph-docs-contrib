@@ -19,7 +19,7 @@ resetScope := graphmodels.WATERMARK, ESCROWS, QUARANTINESTATE_SYNCHRONIZATIONJOB
 criteria.SetResetScope(&resetScope) 
 requestBody.SetCriteria(criteria)
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Restart().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Restart().Post(context.Background(), requestBody, configuration)
 
 
 ```

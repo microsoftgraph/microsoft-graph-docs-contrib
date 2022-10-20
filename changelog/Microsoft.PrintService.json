@@ -3,11 +3,45 @@
     {
       "ChangeList": [
         {
+          "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShareViewpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerShareViewpoint](https://learn.microsoft.com/graph/api/resources/printerShareViewpoint?view=graph-rest-beta) resource type.",
+          "Target": "printerShareViewpoint"
+        },
+        {
+          "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
+          "ApiChange": "Property",
+          "ChangedApiName": "viewPoint",
+          "ChangeType": "Addition",
+          "Description": "Added the **viewPoint** property to the [printerShare](https://learn.microsoft.com/graph/api/resources/printerShare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [List recentPrinterShares](https://learn.microsoft.com/en-us/graph/api/print-list-recentshares?view=graph-rest-beta) method to the [printerShare](https://learn.microsoft.com/graph/api/resources/printerShare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        }
+      ],
+      "Id": "fe732304-2d74-474b-85ae-b9daeca0a06e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-05T03:23:57.6570047Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ffcaf9ed-cf62-4ad0-bbbd-35e5ce8ca783",
           "ApiChange": "Method",
           "ChangedApiName": "uploadData",
           "ChangeType": "Deletion",
-          "Description": "Removed the **uploadData** method from the [printDocument](https://docs.microsoft.com/en-us/graph/api/resources/printdocument?view=graph-rest-beta) resource.",
+          "Description": "Removed the **uploadData** method from the [printDocument](https://learn.microsoft.com/en-us/graph/api/resources/printdocument?view=graph-rest-beta) resource.",
           "Target": "uploadData"
         }
       ],
@@ -19075,7 +19109,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "dailyPrintUsageByUser",
           "ChangeType": "Addition",
-          "Description": "Added the **dailyPrintUsageByUser** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Added the **dailyPrintUsageByUser** relationship to [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19083,7 +19117,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "monthlyPrintUsageByUser",
           "ChangeType": "Addition",
-          "Description": "Added the **monthlyPrintUsageByUser** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Added the **monthlyPrintUsageByUser** relationship to [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19091,7 +19125,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "dailyPrintUsageByPrinter",
           "ChangeType": "Addition",
-          "Description": "Added the **dailyPrintUsageByPrinter** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Added the **dailyPrintUsageByPrinter** relationship to [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19099,7 +19133,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "monthlyPrintUsageByPrinter",
           "ChangeType": "Addition",
-          "Description": "Added the **monthlyPrintUsageByPrinter** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Added the **monthlyPrintUsageByPrinter** relationship to [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19107,7 +19141,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printUsage",
           "ChangeType": "Addition",
-          "Description": "Added the [printUsage](https://docs.microsoft.com/en-us/graph/api/resources/printUsage?view=graph-rest-beta) resource type",
+          "Description": "Added the [printUsage](https://learn.microsoft.com/en-us/graph/api/resources/printUsage?view=graph-rest-beta) resource type",
           "Target": "printUsage"
         },
         {
@@ -19115,7 +19149,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printUsageByUser",
           "ChangeType": "Addition",
-          "Description": "Added the [printUsageByUser](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-beta) resource type",
+          "Description": "Added the [printUsageByUser](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-beta) resource type",
           "Target": "printUsageByUser"
         },
         {
@@ -19123,7 +19157,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printUsageByPrinter",
           "ChangeType": "Addition",
-          "Description": "Added the [printUsageByPrinter](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-beta) resource type",
+          "Description": "Added the [printUsageByPrinter](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-beta) resource type",
           "Target": "printUsageByPrinter"
         },
         {
@@ -19131,7 +19165,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getUserArchivedPrintJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [getUserArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reportRoot-getUserArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Added the [getUserArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reportRoot-getUserArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19139,7 +19173,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getGroupArchivedPrintJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [getGroupArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reportRoot-getGroupArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Added the [getGroupArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reportRoot-getGroupArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19147,7 +19181,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPrinterArchivedPrintJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [getPrinterArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reportRoot-getPrinterArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Added the [getPrinterArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reportRoot-getPrinterArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19155,7 +19189,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "dailyPrintUsageSummariesByUser",
           "ChangeType": "Deletion",
-          "Description": "Removed the **dailyPrintUsageSummariesByUser** relationship from [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Removed the **dailyPrintUsageSummariesByUser** relationship from [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19163,7 +19197,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "monthlyPrintUsageSummariesByUser",
           "ChangeType": "Deletion",
-          "Description": "Removed the **monthlyPrintUsageSummariesByUser** relationship from [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Removed the **monthlyPrintUsageSummariesByUser** relationship from [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19171,7 +19205,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "dailyPrintUsageSummariesByPrinter",
           "ChangeType": "Deletion",
-          "Description": "Removed the **dailyPrintUsageSummariesByPrinter** relationship from [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Removed the **dailyPrintUsageSummariesByPrinter** relationship from [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19179,7 +19213,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "monthlyPrintUsageSummariesByPrinter",
           "ChangeType": "Deletion",
-          "Description": "Removed the **monthlyPrintUsageSummariesByPrinter** relationship from [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Removed the **monthlyPrintUsageSummariesByPrinter** relationship from [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19203,7 +19237,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getUserArchivedPrintJobs",
           "ChangeType": "Deletion",
-          "Description": "Removed the **getUserArchivedPrintJobs** method from the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Removed the **getUserArchivedPrintJobs** method from the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19211,7 +19245,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getGroupArchivedPrintJobs",
           "ChangeType": "Deletion",
-          "Description": "Removed the **getGroupArchivedPrintJobs** method from the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Removed the **getGroupArchivedPrintJobs** method from the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19219,7 +19253,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPrinterArchivedPrintJobs",
           "ChangeType": "Deletion",
-          "Description": "Removed the **getPrinterArchivedPrintJobs** method from the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Removed the **getPrinterArchivedPrintJobs** method from the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         }
       ],
@@ -19237,7 +19271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Printer",
           "ChangeType": "Addition",
-          "Description": "Added the **lastSeenDateTime** property to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
+          "Description": "Added the **lastSeenDateTime** property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
           "Target": "printer"
         }
       ],
@@ -19273,7 +19307,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerBase",
           "ChangeType": "Addition",
-          "Description": "Added the [printerBase](https://docs.microsoft.com/en-us/graph/api/resources/printerBase?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printerBase](https://learn.microsoft.com/en-us/graph/api/resources/printerBase?view=graph-rest-1.0) resource type.",
           "Target": "printerBase"
         },
         {
@@ -19281,7 +19315,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printer",
           "ChangeType": "Addition",
-          "Description": "Added the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource type.",
           "Target": "printer"
         },
         {
@@ -19289,7 +19323,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerDefaults",
           "ChangeType": "Addition",
-          "Description": "Added the [printerDefaults](https://docs.microsoft.com/en-us/graph/api/resources/printerDefaults?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printerDefaults](https://learn.microsoft.com/en-us/graph/api/resources/printerDefaults?view=graph-rest-1.0) resource type.",
           "Target": "printerDefaults"
         },
         {
@@ -19297,7 +19331,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [printerStatus](https://docs.microsoft.com/en-us/graph/api/resources/printerStatus?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printerStatus](https://learn.microsoft.com/en-us/graph/api/resources/printerStatus?view=graph-rest-1.0) resource type.",
           "Target": "printerStatus"
         },
         {
@@ -19305,7 +19339,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerCapabilities",
           "ChangeType": "Addition",
-          "Description": "Added the [printerCapabilities](https://docs.microsoft.com/en-us/graph/api/resources/printerCapabilities?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printerCapabilities](https://learn.microsoft.com/en-us/graph/api/resources/printerCapabilities?view=graph-rest-1.0) resource type.",
           "Target": "printerCapabilities"
         },
         {
@@ -19313,7 +19347,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "integerRange",
           "ChangeType": "Addition",
-          "Description": "Added the [integerRange](https://docs.microsoft.com/en-us/graph/api/resources/integerRange?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [integerRange](https://learn.microsoft.com/en-us/graph/api/resources/integerRange?view=graph-rest-1.0) resource type.",
           "Target": "integerRange"
         },
         {
@@ -19321,7 +19355,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printCertificateSigningRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [printCertificateSigningRequest](https://docs.microsoft.com/en-us/graph/api/resources/printCertificateSigningRequest?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printCertificateSigningRequest](https://learn.microsoft.com/en-us/graph/api/resources/printCertificateSigningRequest?view=graph-rest-1.0) resource type.",
           "Target": "printCertificateSigningRequest"
         },
         {
@@ -19329,7 +19363,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerLocation",
           "ChangeType": "Addition",
-          "Description": "Added the [printerLocation](https://docs.microsoft.com/en-us/graph/api/resources/printerLocation?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printerLocation](https://learn.microsoft.com/en-us/graph/api/resources/printerLocation?view=graph-rest-1.0) resource type.",
           "Target": "printerLocation"
         },
         {
@@ -19337,7 +19371,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printConnector",
           "ChangeType": "Addition",
-          "Description": "Added the [printConnector](https://docs.microsoft.com/en-us/graph/api/resources/printConnector?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printConnector](https://learn.microsoft.com/en-us/graph/api/resources/printConnector?view=graph-rest-1.0) resource type.",
           "Target": "printConnector"
         },
         {
@@ -19345,7 +19379,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printDocument",
           "ChangeType": "Addition",
-          "Description": "Added the [printDocument](https://docs.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printDocument](https://learn.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-1.0) resource type.",
           "Target": "printDocument"
         },
         {
@@ -19353,7 +19387,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printJobConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [printJobConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/printJobConfiguration?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printJobConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/printJobConfiguration?view=graph-rest-1.0) resource type.",
           "Target": "printJobConfiguration"
         },
         {
@@ -19361,7 +19395,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printMargin",
           "ChangeType": "Addition",
-          "Description": "Added the [printMargin](https://docs.microsoft.com/en-us/graph/api/resources/printMargin?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printMargin](https://learn.microsoft.com/en-us/graph/api/resources/printMargin?view=graph-rest-1.0) resource type.",
           "Target": "printMargin"
         },
         {
@@ -19369,7 +19403,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printDocumentUploadProperties",
           "ChangeType": "Addition",
-          "Description": "Added the [printDocumentUploadProperties](https://docs.microsoft.com/en-us/graph/api/resources/printDocumentUploadProperties?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printDocumentUploadProperties](https://learn.microsoft.com/en-us/graph/api/resources/printDocumentUploadProperties?view=graph-rest-1.0) resource type.",
           "Target": "printDocumentUploadProperties"
         },
         {
@@ -19377,7 +19411,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printJob",
           "ChangeType": "Addition",
-          "Description": "Added the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource type.",
           "Target": "printJob"
         },
         {
@@ -19385,7 +19419,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printJobStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [printJobStatus](https://docs.microsoft.com/en-us/graph/api/resources/printJobStatus?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printJobStatus](https://learn.microsoft.com/en-us/graph/api/resources/printJobStatus?view=graph-rest-1.0) resource type.",
           "Target": "printJobStatus"
         },
         {
@@ -19393,7 +19427,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printService",
           "ChangeType": "Addition",
-          "Description": "Added the [printService](https://docs.microsoft.com/en-us/graph/api/resources/printService?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printService](https://learn.microsoft.com/en-us/graph/api/resources/printService?view=graph-rest-1.0) resource type.",
           "Target": "printService"
         },
         {
@@ -19401,7 +19435,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printServiceEndpoint",
           "ChangeType": "Addition",
-          "Description": "Added the [printServiceEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/printServiceEndpoint?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printServiceEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/printServiceEndpoint?view=graph-rest-1.0) resource type.",
           "Target": "printServiceEndpoint"
         },
         {
@@ -19409,7 +19443,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerShare",
           "ChangeType": "Addition",
-          "Description": "Added the [printerShare](https://docs.microsoft.com/en-us/graph/api/resources/printerShare?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printerShare](https://learn.microsoft.com/en-us/graph/api/resources/printerShare?view=graph-rest-1.0) resource type.",
           "Target": "printerShare"
         },
         {
@@ -19417,7 +19451,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [printOperation](https://docs.microsoft.com/en-us/graph/api/resources/printOperation?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printOperation](https://learn.microsoft.com/en-us/graph/api/resources/printOperation?view=graph-rest-1.0) resource type.",
           "Target": "printOperation"
         },
         {
@@ -19425,7 +19459,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerCreateOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [printerCreateOperation](https://docs.microsoft.com/en-us/graph/api/resources/printerCreateOperation?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printerCreateOperation](https://learn.microsoft.com/en-us/graph/api/resources/printerCreateOperation?view=graph-rest-1.0) resource type.",
           "Target": "printerCreateOperation"
         },
         {
@@ -19433,7 +19467,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printOperationStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [printOperationStatus](https://docs.microsoft.com/en-us/graph/api/resources/printOperationStatus?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printOperationStatus](https://learn.microsoft.com/en-us/graph/api/resources/printOperationStatus?view=graph-rest-1.0) resource type.",
           "Target": "printOperationStatus"
         },
         {
@@ -19441,7 +19475,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printUsageByUser",
           "ChangeType": "Addition",
-          "Description": "Added the [printUsageByUser](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printUsageByUser](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-1.0) resource type.",
           "Target": "printUsageByUser"
         },
         {
@@ -19449,7 +19483,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printUsageByPrinter",
           "ChangeType": "Addition",
-          "Description": "Added the [printUsageByPrinter](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printUsageByPrinter](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-1.0) resource type.",
           "Target": "printUsageByPrinter"
         },
         {
@@ -19457,7 +19491,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "archivedPrintJob",
           "ChangeType": "Addition",
-          "Description": "Added the [archivedPrintJob](https://docs.microsoft.com/en-us/graph/api/resources/archivedPrintJob?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [archivedPrintJob](https://learn.microsoft.com/en-us/graph/api/resources/archivedPrintJob?view=graph-rest-1.0) resource type.",
           "Target": "archivedPrintJob"
         },
         {
@@ -19465,7 +19499,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printTaskDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [printTaskDefinition](https://docs.microsoft.com/en-us/graph/api/resources/printTaskDefinition?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printTaskDefinition](https://learn.microsoft.com/en-us/graph/api/resources/printTaskDefinition?view=graph-rest-1.0) resource type.",
           "Target": "printTaskDefinition"
         },
         {
@@ -19473,7 +19507,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printTask",
           "ChangeType": "Addition",
-          "Description": "Added the [printTask](https://docs.microsoft.com/en-us/graph/api/resources/printTask?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printTask](https://learn.microsoft.com/en-us/graph/api/resources/printTask?view=graph-rest-1.0) resource type.",
           "Target": "printTask"
         },
         {
@@ -19481,7 +19515,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printTaskStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [printTaskStatus](https://docs.microsoft.com/en-us/graph/api/resources/printTaskStatus?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printTaskStatus](https://learn.microsoft.com/en-us/graph/api/resources/printTaskStatus?view=graph-rest-1.0) resource type.",
           "Target": "printTaskStatus"
         },
         {
@@ -19489,7 +19523,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printTaskTrigger",
           "ChangeType": "Addition",
-          "Description": "Added the [printTaskTrigger](https://docs.microsoft.com/en-us/graph/api/resources/printTaskTrigger?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printTaskTrigger](https://learn.microsoft.com/en-us/graph/api/resources/printTaskTrigger?view=graph-rest-1.0) resource type.",
           "Target": "printTaskTrigger"
         },
         {
@@ -19497,7 +19531,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "print",
           "ChangeType": "Addition",
-          "Description": "Added the [print](https://docs.microsoft.com/en-us/graph/api/resources/print?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [print](https://learn.microsoft.com/en-us/graph/api/resources/print?view=graph-rest-1.0) resource type.",
           "Target": "print"
         },
         {
@@ -19505,7 +19539,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [printSettings](https://docs.microsoft.com/en-us/graph/api/resources/printSettings?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printSettings](https://learn.microsoft.com/en-us/graph/api/resources/printSettings?view=graph-rest-1.0) resource type.",
           "Target": "printSettings"
         },
         {
@@ -19633,7 +19667,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "restoreFactoryDefaults",
           "ChangeType": "Addition",
-          "Description": "Added the [restoreFactoryDefaults](https://docs.microsoft.com/en-us/graph/api/printer-restoreFactoryDefaults?view=graph-rest-1.0) method to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [restoreFactoryDefaults](https://learn.microsoft.com/en-us/graph/api/printer-restoreFactoryDefaults?view=graph-rest-1.0) method to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
           "Target": "printer"
         },
         {
@@ -19641,7 +19675,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "create",
           "ChangeType": "Addition",
-          "Description": "Added the [create](https://docs.microsoft.com/en-us/graph/api/printer-create?view=graph-rest-1.0) method to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/printer-create?view=graph-rest-1.0) method to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
           "Target": "printer"
         },
         {
@@ -19649,7 +19683,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "createUploadSession",
           "ChangeType": "Addition",
-          "Description": "Added the [createUploadSession](https://docs.microsoft.com/en-us/graph/api/printDocument-createUploadSession?view=graph-rest-1.0) method to the [printDocument](https://docs.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-1.0) resource.",
+          "Description": "Added the [createUploadSession](https://learn.microsoft.com/en-us/graph/api/printDocument-createUploadSession?view=graph-rest-1.0) method to the [printDocument](https://learn.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-1.0) resource.",
           "Target": "printDocument"
         },
         {
@@ -19657,7 +19691,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "cancel",
           "ChangeType": "Addition",
-          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/printJob-cancel?view=graph-rest-1.0) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/printJob-cancel?view=graph-rest-1.0) method to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
           "Target": "printJob"
         },
         {
@@ -19665,7 +19699,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "abort",
           "ChangeType": "Addition",
-          "Description": "Added the [abort](https://docs.microsoft.com/en-us/graph/api/printJob-abort?view=graph-rest-1.0) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Description": "Added the [abort](https://learn.microsoft.com/en-us/graph/api/printJob-abort?view=graph-rest-1.0) method to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
           "Target": "printJob"
         },
         {
@@ -19673,7 +19707,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "start",
           "ChangeType": "Addition",
-          "Description": "Added the [start](https://docs.microsoft.com/en-us/graph/api/printJob-start?view=graph-rest-1.0) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Description": "Added the [start](https://learn.microsoft.com/en-us/graph/api/printJob-start?view=graph-rest-1.0) method to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
           "Target": "printJob"
         },
         {
@@ -19681,7 +19715,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "redirect",
           "ChangeType": "Addition",
-          "Description": "Added the [redirect](https://docs.microsoft.com/en-us/graph/api/printJob-redirect?view=graph-rest-1.0) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Description": "Added the [redirect](https://learn.microsoft.com/en-us/graph/api/printJob-redirect?view=graph-rest-1.0) method to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
           "Target": "printJob"
         },
         {
@@ -19689,7 +19723,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getUserArchivedPrintJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [getUserArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reportRoot-getUserArchivedPrintJobs?view=graph-rest-1.0) method to the reportRoot resource.",
+          "Description": "Added the [getUserArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reportRoot-getUserArchivedPrintJobs?view=graph-rest-1.0) method to the reportRoot resource.",
           "Target": "reportRoot"
         },
         {
@@ -19697,7 +19731,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getGroupArchivedPrintJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [getGroupArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reportRoot-getGroupArchivedPrintJobs?view=graph-rest-1.0) method to the reportRoot resource.",
+          "Description": "Added the [getGroupArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reportRoot-getGroupArchivedPrintJobs?view=graph-rest-1.0) method to the reportRoot resource.",
           "Target": "reportRoot"
         },
         {
@@ -19705,7 +19739,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPrinterArchivedPrintJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [getPrinterArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reportRoot-getPrinterArchivedPrintJobs?view=graph-rest-1.0) method to the reportRoot resource.",
+          "Description": "Added the [getPrinterArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reportRoot-getPrinterArchivedPrintJobs?view=graph-rest-1.0) method to the reportRoot resource.",
           "Target": "reportRoot"
         }
       ],
@@ -19723,7 +19757,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Printer",
           "ChangeType": "Addition",
-          "Description": "Added the **lastSeenDateTime** property to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Description": "Added the **lastSeenDateTime** property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         }
       ],
@@ -19741,7 +19775,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Printer",
           "ChangeType": "Change",
-          "Description": "Added application permissions to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource.",
+          "Description": "Added application permissions to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource.",
           "Target": "printer"
         }
       ],
@@ -19759,7 +19793,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "printerDefaults",
           "ChangeType": "Addition",
-          "Description": "Added the **inputBin** property to the [printerDefaults](https://docs.microsoft.com/en-us/graph/api/resources/printerDefaults?view=graph-rest-beta) resource.",
+          "Description": "Added the **inputBin** property to the [printerDefaults](https://learn.microsoft.com/en-us/graph/api/resources/printerDefaults?view=graph-rest-beta) resource.",
           "Target": "printerDefaults"
         }
       ],
@@ -19795,7 +19829,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printJob",
           "ChangeType": "Addition",
-          "Description": "Added new PrintJob.Create [delegated permission](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Description": "Added new PrintJob.Create [delegated permission](https://learn.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
           "Target": "printJob"
         },
         {
@@ -19803,7 +19837,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerShare",
           "ChangeType": "Addition",
-          "Description": "Added new PrinterShare.ReadBasic.All [delegated permission](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Description": "Added new PrinterShare.ReadBasic.All [delegated permission](https://learn.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
           "Target": "printerShare"
         },
         {
@@ -19811,7 +19845,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printConnector",
           "ChangeType": "Addition",
-          "Description": "Added new PrintConnector.Read.All [delegated permission](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Description": "Added new PrintConnector.Read.All [delegated permission](https://learn.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
           "Target": "printConnector"
         },
         {
@@ -19819,7 +19853,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printSetting",
           "ChangeType": "Addition",
-          "Description": "Added new PrintSettings.Read.All and PrintSettings.ReadWrite.All [delegated permissions](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Description": "Added new PrintSettings.Read.All and PrintSettings.ReadWrite.All [delegated permissions](https://learn.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
           "Target": "printSetting"
         }
       ],
@@ -19837,7 +19871,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "floorNumber,floor",
           "ChangeType": "Change",
-          "Description": "Changed **floorNumber** (Edm.Int) property on [printerLocation](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **floor** (Edm.String).",
+          "Description": "Changed **floorNumber** (Edm.Int) property on [printerLocation](https://learn.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **floor** (Edm.String).",
           "Target": "printerLocation"
         },
         {
@@ -19845,7 +19879,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "roomNumber,roomName",
           "ChangeType": "Change",
-          "Description": "Changed **roomNumber** (Edm.Int) property on [printerLocation](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **roomName** (Edm.String).",
+          "Description": "Changed **roomNumber** (Edm.Int) property on [printerLocation](https://learn.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **roomName** (Edm.String).",
           "Target": "printerLocation"
         }
       ],
@@ -19863,7 +19897,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printJob",
           "ChangeType": "Addition",
-          "Description": "Added the [update configuration](https://docs.microsoft.com/en-us/graph/api/printjob-update-configuration?view=graph-rest-beta) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Description": "Added the [update configuration](https://learn.microsoft.com/en-us/graph/api/printjob-update-configuration?view=graph-rest-beta) method to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
           "Target": "printJob"
         }
       ],
@@ -19881,7 +19915,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerShare",
           "ChangeType": "Change",
-          "Description": "Changed type of allowedUsers relationship on [printerShare](https://docs.microsoft.com/en-us/graph/api/resources/printershare?view=graph-rest-beta) resource.",
+          "Description": "Changed type of allowedUsers relationship on [printerShare](https://learn.microsoft.com/en-us/graph/api/resources/printershare?view=graph-rest-beta) resource.",
           "Target": "printerShare"
         },
         {
@@ -19889,7 +19923,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printerShare",
           "ChangeType": "Change",
-          "Description": "Changed type of allowedGroups relationship on [printerShare](https://docs.microsoft.com/en-us/graph/api/resources/printershare?view=graph-rest-beta) resource.",
+          "Description": "Changed type of allowedGroups relationship on [printerShare](https://learn.microsoft.com/en-us/graph/api/resources/printershare?view=graph-rest-beta) resource.",
           "Target": "printerShare"
         }
       ],
@@ -20085,7 +20119,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "printer",
           "ChangeType": "Addition",
-          "Description": "Added the **hasPhysicalDevice** property to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Description": "Added the **hasPhysicalDevice** property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         },
         {
@@ -20093,7 +20127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "abort,printJob",
           "ChangeType": "Addition",
-          "Description": "Added the [abort](https://docs.microsoft.com/en-us/graph/api/printjob-abort?view=graph-rest-beta) action to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Description": "Added the [abort](https://learn.microsoft.com/en-us/graph/api/printjob-abort?view=graph-rest-beta) action to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
           "Target": "abort,printJob"
         },
         {
@@ -20101,7 +20135,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "redirect",
           "ChangeType": "Addition",
-          "Description": "Added the configuration property to the [redirect](https://docs.microsoft.com/en-us/graph/api/printjob-redirect?view=graph-rest-beta) action on the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Description": "Added the configuration property to the [redirect](https://learn.microsoft.com/en-us/graph/api/printjob-redirect?view=graph-rest-beta) action on the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
           "Target": "redirect"
         }
       ],
@@ -20119,7 +20153,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Get printUsageSummaryByPrinter,getPrinterArchivedPrintJobs,List dailyPrintUsageSummariesByPrinter,List monthlyPrintUsageSummariesByPrinter,Get printUsageSummaryByUser,getUserArchivedPrintJobs,getGroupArchivedPrintJobs,List dailyPrintUsageSummariesByUser,List monthlyPrintUsageSummariesByUser",
           "ChangeType": "Change",
-          "Description": "Added new permission requirements to: [Get printUsageSummaryByPrinter](https://docs.microsoft.com/en-us/graph/api/printusagesummarybyprinter-get?view=graph-rest-beta), [getPrinterArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta), [List dailyPrintUsageSummariesByPrinter](https://docs.microsoft.com/en-us/graph/api/reportroot-list-dailyprintusagesummariesbyprinter?view=graph-rest-beta), [List monthlyPrintUsageSummariesByPrinter](https://docs.microsoft.com/en-us/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta), [Get printUsageSummaryByUser](https://docs.microsoft.com/en-us/graph/api/printusagesummarybyuser-get?view=graph-rest-beta), [getUserArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta), [getGroupArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta), [List dailyPrintUsageSummariesByUser](https://docs.microsoft.com/en-us/graph/api/reportroot-list-dailyprintusagesummariesbyuser?view=graph-rest-beta), [List monthlyPrintUsageSummariesByUser](https://docs.microsoft.com/en-us/graph/api/reportroot-list-monthlyprintusagesummariesbyuser?view=graph-rest-beta)",
+          "Description": "Added new permission requirements to: [Get printUsageSummaryByPrinter](https://learn.microsoft.com/en-us/graph/api/printusagesummarybyprinter-get?view=graph-rest-beta), [getPrinterArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta), [List dailyPrintUsageSummariesByPrinter](https://learn.microsoft.com/en-us/graph/api/reportroot-list-dailyprintusagesummariesbyprinter?view=graph-rest-beta), [List monthlyPrintUsageSummariesByPrinter](https://learn.microsoft.com/en-us/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta), [Get printUsageSummaryByUser](https://learn.microsoft.com/en-us/graph/api/printusagesummarybyuser-get?view=graph-rest-beta), [getUserArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta), [getGroupArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta), [List dailyPrintUsageSummariesByUser](https://learn.microsoft.com/en-us/graph/api/reportroot-list-dailyprintusagesummariesbyuser?view=graph-rest-beta), [List monthlyPrintUsageSummariesByUser](https://learn.microsoft.com/en-us/graph/api/reportroot-list-monthlyprintusagesummariesbyuser?view=graph-rest-beta)",
           "Target": "Get printUsageSummaryByPrinter,getPrinterArchivedPrintJobs,List dailyPrintUsageSummariesByPrinter,List monthlyPrintUsageSummariesByPrinter,Get printUsageSummaryByUser,getUserArchivedPrintJobs,getGroupArchivedPrintJobs,List dailyPrintUsageSummariesByUser,List monthlyPrintUsageSummariesByUser"
         },
         {
@@ -20127,7 +20161,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedUsers",
           "ChangeType": "Change",
-          "Description": "Removed the **allowedUsers** property on the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Description": "Removed the **allowedUsers** property on the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         },
         {
@@ -20135,7 +20169,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedGroups",
           "ChangeType": "Change",
-          "Description": "Removed the **allowedGroups** property on the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Description": "Removed the **allowedGroups** property on the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         }
       ],
