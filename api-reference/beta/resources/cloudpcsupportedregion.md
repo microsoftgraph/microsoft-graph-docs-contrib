@@ -30,8 +30,8 @@ Represents a supported region to establish an Azure network connection for Cloud
 |regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedregionstatus-values)|The status of the supported region. Possible values are: `available`, `restricted`, `unavailable`, `unknownFutureValue`. Read-only.|
 |supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `rpaBox`,`unknownFutureValue`. Read-only.|
 |regionGroup|[cloudPcRegionGroup](#cloudpcregiongroup-values)|The logic geographic group this region belongs to. Multiple regions could belong to one region group. Customer could select a regionGroup when provision a Cloud PC, 
-the Cloud PC will be put under one of the regions under the group based on resource status. e.g. Europe region group contains North Europe and West Europe regions. Possible values are: 'default', 'australia', 'canada', 'usCentral', 'usEast", 
-'usWest', 'france', 'germany', 'europeUnion', 'unitedKingdom', 'japan', 'asia', 'india', 'southAmerica', 'usGovernment', 'usGovrnmentDod', 'norway', 'switzerland' and 'southKorea'. Read-only.|
+the Cloud PC will be put under one of the regions under the group based on resource status. e.g. Europe region group contains North Europe and West Europe regions. Possible values are: `default`, `australia`, `canada`, `usCentral`, `usEast`, 
+`usWest`, `france`, `germany`, `europeUnion`, `unitedKingdom`, `japan`, `asia`, `india`, `southAmerica`, `usGovernment`, `usGovrnmentDod`, `norway`, `switzerland`，`southKorea` and `uae`. Read-only.|
 
 ### cloudPcSupportedRegionStatus values
 
@@ -66,6 +66,7 @@ the Cloud PC will be put under one of the regions under the group based on resou
 | norway | The region belongs to Norway region group |
 | switzerland | The region belongs to Switzerland region group |
 | southKorea | The region belongs to South Korea region group |
+| uae | The region belongs to UAE region group |
 
 ## Relationships
 
