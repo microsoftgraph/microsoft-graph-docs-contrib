@@ -17,7 +17,7 @@ requestBody.SetBody(body)
 inferenceClassification := graphmodels.OTHER_INFERENCECLASSIFICATIONTYPE 
 requestBody.SetInferenceClassification(&inferenceClassification) 
 
-graphClient.Me().MessagesById("message-id").Patch(requestBody)
+result, err := graphClient.Me().MessagesById("message-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

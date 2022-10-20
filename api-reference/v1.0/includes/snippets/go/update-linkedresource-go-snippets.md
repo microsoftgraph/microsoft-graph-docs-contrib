@@ -15,7 +15,7 @@ requestBody.SetApplicationName(&applicationName)
 displayName := "Microsoft"
 requestBody.SetDisplayName(&displayName) 
 
-graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").LinkedResourcesById("linkedResource-id").Patch(requestBody)
+result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").LinkedResourcesById("linkedResource-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

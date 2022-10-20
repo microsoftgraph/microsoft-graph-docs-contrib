@@ -29,7 +29,7 @@ $requestBody->setSupportedEntities(new WorkforceIntegrationSupportedEntities('su
 
 
 
-$graphServiceClient->teamwork()->workforceIntegrationsById('workforceIntegration-id')->patch($requestBody);
+$requestResult = $graphServiceClient->teamwork()->workforceIntegrationsById('workforceIntegration-id')->patch($requestBody);
 
 
 ```

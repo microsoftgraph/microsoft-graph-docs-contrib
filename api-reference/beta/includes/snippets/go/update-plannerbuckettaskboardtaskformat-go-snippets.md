@@ -18,7 +18,7 @@ requestBody := graphmodels.NewPlannerBucketTaskBoardTaskFormat()
 orderHint := "A6673H Ejkl!"
 requestBody.SetOrderHint(&orderHint) 
 
-graphClient.Planner().TasksById("plannerTask-id").BucketTaskBoardFormat().PatchWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Planner().TasksById("plannerTask-id").BucketTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
 
 
 ```

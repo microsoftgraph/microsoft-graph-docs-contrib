@@ -13,12 +13,9 @@ $requestBody = new DirectorySetting();
 $requestBody->setTemplateId('08d542b9-071f-4e16-94b0-74abb372e3d9');
 
 $valuesSettingValue1 = new SettingValue();
-$additionalData = [
-'name' => 'AllowToAddGuests', 
-'value' => 'false', 
-];
-$valuesSettingValue1->setAdditionalData($additionalData);
+$valuesSettingValue1->setName('AllowToAddGuests');
 
+$valuesSettingValue1->setValue('false');
 
 
 $valuesArray []= $valuesSettingValue1;

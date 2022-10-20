@@ -13,7 +13,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.UsersById("user-id").Teamwork().InstalledApps().Post(requestBody)
+result, err := graphClient.UsersById("user-id").Teamwork().InstalledApps().Post(context.Background(), requestBody, nil)
 
 
 ```

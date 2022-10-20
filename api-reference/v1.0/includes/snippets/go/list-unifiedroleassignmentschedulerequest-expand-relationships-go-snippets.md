@@ -15,7 +15,7 @@ configuration := &graphconfig.RoleAssignmentScheduleRequestsRequestBuilderGetReq
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Get(context.Background(), configuration)
 
 
 ```

@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new AccessPackageAssignmentRequest();
 $requestBody->setRequestType(new AccessPackageRequestType('adminremove'));
 
-$assignment = new Assignment();
+$assignment = new AccessPackageAssignment();
 $assignment->setId('a6bb6942-3ae1-4259-9908-0133aaee9377');
 
 

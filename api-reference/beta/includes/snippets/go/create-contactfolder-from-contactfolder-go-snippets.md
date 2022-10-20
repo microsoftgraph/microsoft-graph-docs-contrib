@@ -11,7 +11,7 @@ requestBody := graphmodels.NewContactFolder()
 displayName := "Family"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().ContactFoldersById("contactFolder-id").ChildFolders().Post(requestBody)
+result, err := graphClient.Me().ContactFoldersById("contactFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

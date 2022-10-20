@@ -29,7 +29,8 @@ $requestBody->setAvailabilityStartDateTime(null);
 
 $requestBody->setAvailabilityEndDateTime(null);
 
-$requestBody->setPlatforms(['windows', ]);
+$requestBody->setPlatforms([$requestBody->setDevicePlatformType(new DevicePlatformType('windows'));
+]);
 
 $targetedVariationsAnswerVariant1 = new AnswerVariant();
 $targetedVariationsAnswerVariant1->setLanguageTag('es-es');

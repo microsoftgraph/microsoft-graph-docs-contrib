@@ -27,7 +27,7 @@ timeZone := "UTC"
 start.SetTimeZone(&timeZone) 
 requestBody.SetStart(start)
 
-graphClient.BookingBusinessesById("bookingBusiness-id").AppointmentsById("bookingAppointment-id").Patch(requestBody)
+result, err := graphClient.BookingBusinessesById("bookingBusiness-id").AppointmentsById("bookingAppointment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

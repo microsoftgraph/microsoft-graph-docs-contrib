@@ -237,9 +237,9 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 
 The preceding limits apply to the following resources:
 
-- [people](/graph/api/resources/person)
+- [people](/graph/api/resources/insightssettings)
 - [sharedInsight](/graph/api/resources/insights-shared)
-- [trending](/graph/api/resources/trending)
+- [trending](/graph/api/resources/insights-trending)
 - [usedInsight](/graph/api/resources/insights-used)
 
 ## Intune service limits
@@ -399,7 +399,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 The preceding limits apply to the following resources:
 
 - [activityHistoryItem](/graph/api/resources/projectrome-historyitem)
-- [userActivity](/graph/api/resources/useractivity)
+- [userActivity](/graph/api/resources/projectrome-activity)
 
 ## Security detections and incidents service limits
 

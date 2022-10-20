@@ -27,4 +27,3 @@ Describes applicability for the mode the device is in
 
 
 
-

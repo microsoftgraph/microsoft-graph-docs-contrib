@@ -48,7 +48,7 @@ requestBody.SetRegulations(regulations)
 siteLocations := graphmodels.NewSubjectRightsRequestSiteLocation()
 requestBody.SetSiteLocations(siteLocations)
 
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(requestBody)
+result, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

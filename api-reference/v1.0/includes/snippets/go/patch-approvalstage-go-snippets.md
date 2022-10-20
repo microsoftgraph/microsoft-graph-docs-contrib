@@ -13,7 +13,7 @@ requestBody.SetReviewResult(&reviewResult)
 justification := "OK"
 requestBody.SetJustification(&justification) 
 
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentApprovalsById("approval-id").StagesById("approvalStage-id").Patch(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentApprovalsById("approval-id").StagesById("approvalStage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

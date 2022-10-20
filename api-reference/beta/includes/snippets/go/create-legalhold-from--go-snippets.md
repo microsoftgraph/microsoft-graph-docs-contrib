@@ -26,7 +26,7 @@ requestBody.SetErrors(errors)
 displayName := "String"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").LegalHolds().Post(requestBody)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").LegalHolds().Post(context.Background(), requestBody, nil)
 
 
 ```

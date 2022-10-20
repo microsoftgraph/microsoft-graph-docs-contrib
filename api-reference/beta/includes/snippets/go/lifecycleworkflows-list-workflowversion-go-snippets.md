@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").Versions().Get()
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").Versions().Get(context.Background(), nil)
 
 
 ```

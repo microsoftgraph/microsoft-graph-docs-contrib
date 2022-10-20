@@ -1,7 +1,7 @@
 ---
 title: "Get educationAssignmentResource"
 description: "Get the properties of a specific resource on an assignment.  "
-author: "sharad-sharma-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -28,7 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /education/classes/{class-id}/assignments/{assignment-id}/resources/{resource-id}
 ```
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 | Header       | Value |
@@ -219,7 +221,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","517b36a6-9ca2-4e7b-9748-3af25f5cd4fd","a2f95693-aea2-4d5e-a936-11ef390f8f20"], 
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80","517b36a6-9ca2-4e7b-9748-3af25f5cd4fd"], 
   "name": "get_educationexcelresource_from_educationassignment"
 }-->
 ```msgraph-interactive
@@ -302,7 +304,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","3cb7968b-082f-4756-bdfb-782b4538cc0a","a2f95693-aea2-4d5e-a936-11ef390f8f20"], 
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80","3cb7968b-082f-4756-bdfb-782b4538cc0a"], 
   "name": "get_educationpowerpointresource_from_educationassignment"
 }-->
 ```msgraph-interactive
@@ -385,7 +387,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","a7a2fec0-2a26-47bf-8d40-2319c0afb1f4","a2f95693-aea2-4d5e-a936-11ef390f8f20"], 
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80","a7a2fec0-2a26-47bf-8d40-2319c0afb1f4"], 
   "name": "get_educationfileresource_from_educationassignment"
 }-->
 ```msgraph-interactive
@@ -468,7 +470,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","f3687fc5-908b-4006-8040-dbba9e04023c","a2f95693-aea2-4d5e-a936-11ef390f8f20"], 
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80","f3687fc5-908b-4006-8040-dbba9e04023c"], 
   "name": "get_educationmediaresource_from_educationassignment"
 }-->
 ```msgraph-interactive

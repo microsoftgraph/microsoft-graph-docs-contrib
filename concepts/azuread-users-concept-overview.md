@@ -63,4 +63,4 @@ Looking for the API reference for this service?
 ## Next steps
 
 - The [user resource type](/graph/api/resources/users).
-- Build your skills and [learn how to work with users through Microsoft Graph](/learn/modules/msgraph-access-user-data).
+- Build your skills and [learn how to work with users through Microsoft Graph](/training/modules/msgraph-access-user-data).

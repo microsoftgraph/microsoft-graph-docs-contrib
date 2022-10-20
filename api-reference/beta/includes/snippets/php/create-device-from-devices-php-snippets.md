@@ -13,13 +13,11 @@ $requestBody = new Device();
 $requestBody->setAccountEnabled(true);
 
 $alternativeSecurityIdsAlternativeSecurityId1 = new AlternativeSecurityId();
-$additionalData = [
-'type' => 99,
-'identityProvider' => 'identityProvider-value', 
-'key' => 'base64Y3YxN2E1MWFlYw==', 
-];
-$alternativeSecurityIdsAlternativeSecurityId1->setAdditionalData($additionalData);
+$alternativeSecurityIdsAlternativeSecurityId1->setType(99);
 
+$alternativeSecurityIdsAlternativeSecurityId1->setIdentityProvider('identityProvider-value');
+
+$alternativeSecurityIdsAlternativeSecurityId1->setKey(base64_decode('base64Y3YxN2E1MWFlYw=='));
 
 
 $alternativeSecurityIdsArray []= $alternativeSecurityIdsAlternativeSecurityId1;

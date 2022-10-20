@@ -11,7 +11,7 @@ requestBody := graphmodels.NewSetVerifiedPublisherPostRequestBody()
 verifiedPublisherId := "1234567"
 requestBody.SetVerifiedPublisherId(&verifiedPublisherId) 
 
-graphClient.ApplicationsById("application-id").SetVerifiedPublisher().Post(requestBody)
+graphClient.ApplicationsById("application-id").SetVerifiedPublisher().Post(context.Background(), requestBody, nil)
 
 
 ```

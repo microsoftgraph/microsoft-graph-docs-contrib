@@ -13,7 +13,7 @@ requestBody.SetName(&name)
 isDefault := false
 requestBody.SetIsDefault(&isDefault) 
 
-result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").ConnectorGroups().Post(requestBody)
+result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").ConnectorGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

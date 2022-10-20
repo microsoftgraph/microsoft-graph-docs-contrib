@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-result, err := graphClient.TeamsById("team-id").Tags().Get()
+result, err := graphClient.TeamsById("team-id").Tags().Get(context.Background(), nil)
 
 
 ```

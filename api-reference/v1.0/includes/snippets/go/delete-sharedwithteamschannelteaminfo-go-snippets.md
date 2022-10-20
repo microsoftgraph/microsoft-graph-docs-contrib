@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").SharedWithTeamsById("sharedWithChannelTeamInfo-id").Delete()
+graphClient.TeamsById("team-id").ChannelsById("channel-id").SharedWithTeamsById("sharedWithChannelTeamInfo-id").Delete(context.Background(), nil)
 
 
 ```

@@ -50,6 +50,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | None  | $0.00075 per notification | |
+| [chat change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | None | $0.00075 per message | Requests returning an empty list, will be charged 1 message. |
 | [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Requests returning an empty list, will be charged 1 message. |
 
@@ -58,7 +59,8 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 |API   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#payment-and-billing-updates) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
-| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A | 
+| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A |
+| [chat change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
 | [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | 500 messages per month per app | N/A |  Requests returning an empty list, will be charged 1 message. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |   N/A |  500 messages per month per app | N/A |
@@ -95,11 +97,11 @@ through the [Microsoft 365 Developer Program](https://developer.microsoft.com/mi
 
 Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is added up and compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;apps won't run out of seeded capacity if another app runs out.
 
-| Billing model | Sample functions | Seeded Capacity | License required | Azure subscription required | 
+| Billing model | Sample functions | Seeded Capacity | License required | Azure subscription required |
 |:-----------|:---------------|:---------------|:-----------|:-----------|
 | `model=A` | Security and Compliance. | See [`model=A` details](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
-| `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | None | No | Yes | 
-| `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | 500 messages per month per app | No | No | 
+| `model=B` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | None | No | Yes |
+| `evaluation model` | Backup and Restore, migration, sentiment analysis, analytics and insights, etc. | 500 messages per month per app | No | No |
 
 
 ## Payment related errors
@@ -126,6 +128,25 @@ In October 2021 we [communicated](https://devblogs.microsoft.com/microsoft365dev
 If your applications are or will be calling any of these APIs, we require you to complete this [request form](https://aka.ms/teamsgraph/protectedApis_az) providing an active Azure subscription. When the [request form](https://aka.ms/teamsgraph/protectedApis_az) has been submitted to register an application, you can continue using these APIs. We will follow up with next steps to onboard your application to billing.
 
 Please note that the organization that owns the app registration is responsible for the payment and the Azure subscription should also be active in the same tenant. For multitenant apps, the organization that registered the app might be different than the organization that runs the app.
+
+## Monitor costs billed for the metered Microsoft Teams APIs
+
+This section describes how to monitor costs billed for the metered Microsoft Teams APIs.
+
+A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Control) permissions](/azure/cost-management-billing/costs/assign-access-acm-data), can use **Cost Analysis** to track metered API consumption, as follows: 
+
+1. Sign in to the Azure portal at https://portal.azure.com. 
+2. Go to [**Cost Management + Billing > Cost Management > Cost analysis**](https://ms.portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/costanalysis). 
+3. For the filter near the top, select **Service name: Microsoft Graph Servies**. 
+4. For the **Group by** dropdown menu near the right, select **Meter**. 
+
+This view offers a convenient way to observe API consumption per day over a period of time. 
+
+You can also use the pie charts near the bottom to further break down the costs for analysis. Note that for Microsoft Graph metered APIs, the **Resource GUID** is the app ID; **Resource Groups** or **Resource Tags** are not supported. 
+
+![Screenshot of the Cost Management and Billing page in the Azure portal](images/cost-analysis-sample.png)
+
+For more details about cost management, see [Cost Management + Billing documentation](/azure/cost-management-billing/).
 
 ## Frequently asked questions
 

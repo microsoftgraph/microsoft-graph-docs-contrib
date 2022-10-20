@@ -14,7 +14,7 @@ configuration := &graphconfig.DelegatedAdminAccessAssignmentRequestBuilderDelete
 	Headers: headers,
 }
 
-graphClient.TenantRelationships().DelegatedAdminRelationshipsById("delegatedAdminRelationship-id").AccessAssignmentsById("delegatedAdminAccessAssignment-id").DeleteWithRequestConfigurationAndResponseHandler(configuration, nil)
+graphClient.TenantRelationships().DelegatedAdminRelationshipsById("delegatedAdminRelationship-id").AccessAssignmentsById("delegatedAdminAccessAssignment-id").Delete(context.Background(), configuration)
 
 
 ```
