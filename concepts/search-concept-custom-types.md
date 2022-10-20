@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Search API to search custom types imported using connectors"
 description: "Use the Microsoft Search API in Microsoft Graph to search across external content ingested and indexed by Microsoft Graph connectors."
-author: "nmoreau"
+author: "njerigrevious"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---

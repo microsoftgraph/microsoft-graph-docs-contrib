@@ -1,5 +1,5 @@
 ---
-title: "Create languages"
+title: "Create or update language"
 description: "Create a custom language in an Azure AD B2C user flow."
 author: "jkdouglas"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create languages
+# Create or update language
 
 Namespace: microsoft.graph
 

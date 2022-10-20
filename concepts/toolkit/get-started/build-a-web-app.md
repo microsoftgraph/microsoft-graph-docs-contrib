@@ -7,7 +7,7 @@ author: sebastienlevert
 
 # Build a web application with the Microsoft Graph Toolkit
 
-This topic describes how to get started with the Microsoft Graph Toolkit in a web application written in vanilla JavaScript. For a step-by-step tutorial, try the [Get started with Microsoft Graph Toolkit module](/learn/modules/msgraph-toolkit-intro/). If you would like to learn how to use the Toolkit with a web framework, see [Build a web app (React)](./use-toolkit-with-react.md) or [Build a web app (Angular)](./use-toolkit-with-angular.md).
+This topic describes how to get started with the Microsoft Graph Toolkit in a web application written in vanilla JavaScript. For a step-by-step tutorial, try the [Get started with Microsoft Graph Toolkit module](/training/modules/msgraph-toolkit-intro/). If you would like to learn how to use the Toolkit with a web framework, see [Build a web app (React)](./use-toolkit-with-react.md) or [Build a web app (Angular)](./use-toolkit-with-angular.md).
 
 Getting started with the Microsoft Graph Toolkit involves the following steps:
 1. Add Microsoft Graph Toolkit to your project.
@@ -170,7 +170,7 @@ Providers.onProviderUpdated(loadAgenda);
 
 ## Next Steps
 
-- Check out the [Get started with Microsoft Graph Toolkit](/learn/modules/msgraph-toolkit-intro/) step-by-step tutorial.
+- Check out the [Get started with Microsoft Graph Toolkit](/training/modules/msgraph-toolkit-intro/) step-by-step tutorial.
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).

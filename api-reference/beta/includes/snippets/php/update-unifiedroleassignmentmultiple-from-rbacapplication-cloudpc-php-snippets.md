@@ -16,7 +16,7 @@ $requestBody->setDescription('A new roleAssignment');
 
 
 
-$graphServiceClient->roleManagement()->cloudPC()->roleAssignmentsById('unifiedRoleAssignmentMultiple-id')->patch($requestBody);
+$requestResult = $graphServiceClient->roleManagement()->cloudPC()->roleAssignmentsById('unifiedRoleAssignmentMultiple-id')->patch($requestBody);
 
 
 ```

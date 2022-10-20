@@ -36,7 +36,7 @@ teamsTab := graphmodels.NewTeamsTab()
 displayName := "A Pinned Website"
 teamsTab.SetDisplayName(&displayName) 
 configuration := graphmodels.NewTeamsTabConfiguration()
-contentUrl := "https://docs.microsoft.com/microsoftteams/microsoft-teams"
+contentUrl := "https://learn.microsoft.com/microsoftteams/microsoft-teams"
 configuration.SetContentUrl(&contentUrl) 
 teamsTab.SetConfiguration(configuration)
 additionalData := map[string]interface{}{

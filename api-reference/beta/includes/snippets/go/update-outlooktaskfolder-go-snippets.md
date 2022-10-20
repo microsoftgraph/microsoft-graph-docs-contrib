@@ -11,7 +11,7 @@ requestBody := graphmodels.NewOutlookTaskFolder()
 name := "Charity work"
 requestBody.SetName(&name) 
 
-graphClient.Me().Outlook().TaskFoldersById("outlookTaskFolder-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Outlook().TaskFoldersById("outlookTaskFolder-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
