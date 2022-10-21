@@ -1,0 +1,45 @@
+---
+title: "chatMessageHistoryItem resource type"
+description: "Represents the edition history of a message in a chat or a channel."
+author: "agnesliu"
+ms.localizationpriority: high
+ms.prod: "microsoft-teams"
+doc_type: resourcePageType
+---
+
+# chatMessageHistoryItem resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the edition history of a message in a chat or a channel.
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|actions|chatMessageActions|The message edition action.The possible values are: `reactionAdded`, `reactionRemoved`, `actionUndefined`, `unknownFutureValue`.|
+|modifiedDateTime|DateTimeOffset|The message modification date time.|
+|reaction|[chatMessageReaction](../resources/chatmessagereaction.md)|The reaction in the modified message.|
+
+## Relationships
+None.
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.chatMessageHistoryItem"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.chatMessageHistoryItem",
+  "modifiedDateTime": "String (timestamp)",
+  "actions": "String",
+  "reaction": {
+    "@odata.type": "microsoft.graph.chatMessageReaction"
+  }
+}
+```
+

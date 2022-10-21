@@ -203,7 +203,8 @@ Content-Type: application/json
   },
   "attachments": [],
   "mentions": [],
-  "reactions": []
+  "reactions": [],
+  "messageHistory": []
 }
 ```
 
