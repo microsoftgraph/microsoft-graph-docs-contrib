@@ -63,33 +63,6 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-setupfeedbackresourcesfolder-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-setupfeedbackresourcesfolder-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/educationassignment-setupfeedbackresourcesfolder-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/educationassignment-setupfeedbackresourcesfolder-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/educationassignment-setupfeedbackresourcesfolder-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/educationassignment-setupfeedbackresourcesfolder-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 ### Response
 The following is an example of the response.
 
@@ -105,31 +78,28 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationAssignment",
     "@odata.type": "#microsoft.graph.educationAssignment",
-    "classId": "155c5142-1716-4c24-b2ac-cd1bcd8ad7ac",
-    "displayName": "2022-02-25T18_57_26_443Z",
+    "classId": "37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+    "displayName": "Feedbackresources",
     "closeDateTime": null,
-    "dueDateTime": "2022-02-25T18:57:26.443Z",
+    "dueDateTime": "2022-05-07T06:59:00Z",
     "assignDateTime": null,
-    "assignedDateTime": null,
+    "assignedDateTime": "2022-05-05T16:15:21.0569507Z",
     "allowLateSubmissions": true,
     "resourcesFolderUrl": null,
-    "feedbackResourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!9i0vapy4v02vPa13nXvmLuPofkLptz5InpCzu0fn0IRzOBm8o5mJQbXuPddtkYG7/items/01PREZ76FARBTP25X74JFISOFAN7QAHOYW",
-    "createdDateTime": "2022-02-24T18:57:27.8611453Z",
-    "lastModifiedDateTime": "2022-02-24T18:57:40.5319603Z",
+    "feedbackResourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ7ONF5UOYTXZVEKCZE43FTQRH2S",
+    "createdDateTime": "2022-05-05T16:13:22.3915176Z",
+    "lastModifiedDateTime": "2022-05-05T17:42:58.8704181Z",
     "allowStudentsToAddResourcesToSubmission": true,
-    "status": "draft",
+    "status": "assigned",
     "notificationChannelUrl": null,
-    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22155c5142-1716-4c24-b2ac-cd1bcd8ad7ac%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22d10f56f7-ba7e-4dfc-b5a2-ae9f10b0d1ad%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22a3cce0ba-2008-4c4d-bf62-079408562d96%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
     "addToCalendarAction": "none",
     "addedStudentAction": "none",
-    "id": "d10f56f7-ba7e-4dfc-b5a2-ae9f10b0d1ad",
+    "id": "a3cce0ba-2008-4c4d-bf62-079408562d96",
+    "grading": null,
     "instructions": {
-        "content": "2022-02-25T18_57_26_443Z",
+        "content": "",
         "contentType": "text"
-    },
-    "grading": {
-        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-        "maxPoints": 100
     },
     "assignTo": {
         "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
@@ -138,7 +108,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
+            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
             "displayName": null
         }
     },

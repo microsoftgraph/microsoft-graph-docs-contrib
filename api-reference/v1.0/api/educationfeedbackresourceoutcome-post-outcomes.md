@@ -72,33 +72,6 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationfeedbackresourceoutcome-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationfeedbackresourceoutcome-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-educationfeedbackresourceoutcome-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-educationfeedbackresourceoutcome-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationfeedbackresourceoutcome-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-educationfeedbackresourceoutcome-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 ### Response
 The following is an example of the response.
 
@@ -116,8 +89,8 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('a3cce0ba-2008-4c4d-bf62-079408562d96')/submissions('2185e6d7-2924-4ed1-dde1-269f89e29184')/outcomes/$entity",
     "@odata.type": "#microsoft.graph.educationFeedbackResourceOutcome",
-    "lastModifiedDateTime": "2022-05-06T00:50:30.0772434Z",
-    "id": "ba12f282-2190-4958-80b3-42b8afb9626a",
+    "lastModifiedDateTime": "2022-10-21T18:58:42.019513Z",
+    "id": "8c3d65c1-eacb-40f7-9360-7e47bb5b7d75",
     "resourceStatus": "notPublished",
     "lastModifiedBy": {
         "application": null,
@@ -130,9 +103,9 @@ Content-type: application/json
     "feedbackResource": {
         "@odata.type": "#microsoft.graph.educationWordResource",
         "displayName": "Document1.docx",
-        "createdDateTime": "2022-05-06T00:50:30.0772177Z",
-        "lastModifiedDateTime": "2022-05-06T00:50:30.0772434Z",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQZQ33I4AJBSURHZJDDQKEJ5TEMJ",
+        "createdDateTime": "2022-10-21T18:58:42.0195022Z",
+        "lastModifiedDateTime": "2022-10-21T18:58:42.019513Z",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ5X3ULNDOWTJJEYSIBXZIK42E5G",
         "createdBy": {
             "application": null,
             "device": null,
@@ -156,7 +129,7 @@ Content-type: application/json
 
 ## See also
 
-* [If you want to upload an existing file, then follow these steps](https://learn.microsoft.com/en-us/graph/education-upload-feedback-resource-overview)
+* [If you want to upload an existing file, then follow these steps](/graph/education-upload-feedback-resource-overview)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2022-05-06 14:57:30 UTC -->
