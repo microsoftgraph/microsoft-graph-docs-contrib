@@ -9,6 +9,7 @@ author: DarrelMiller
 
 The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This default set is customizable, allowing you to change the behavior of the client. For example, you can insert customized logging, or add a test handler to simulate specific scenarios. You can add and remove middleware components. It is important to note that the order in which middleware components run is significant.
 
+<!-- markdownlint-disable MD051 -->
 ## [C#](#tab/csharp)
 
 ```csharp
@@ -257,7 +258,7 @@ const client = MicrosoftGraph.Client.initWithMiddleware({
 
 ## [Java](#tab/java)
 
-```Java
+```java
 final int proxyPort = 8080;
 final InetSocketAddress proxyInetAddress = new InetSocketAddress("proxy.ip.or.hostname", proxyPort);
 
@@ -317,6 +318,38 @@ final GraphServiceClient graphServiceClient =
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
-The Microsoft Graph SDK for Go does not currently support HTTP proxy. See [this GitHub issue](https://github.com/microsoftgraph/msgraph-sdk-go-core/issues/15) for more details.
+```go
+import (
+   a "github.com/microsoft/kiota-authentication-azure-go"
+   khttp "github.com/microsoft/kiota-http-go"
+   msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+   core "github.com/microsoftgraph/msgraph-sdk-go-core"
+)
+
+// Auth provider
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
+
+// Get default middleware from SDK
+defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefaultClientOptions())
+
+// Get instance of custom middleware
+// Implement a custom middleware by implementing the Middleware interface
+// https://github.com/microsoft/kiota-http-go/blob/main/middleware.go
+allMiddleware := append(defaultMiddleware, mycustom.NewCustomHandler())
+
+// Create an HTTP client with the middleware
+httpClient := core.GetClientWithAuthenticatedProxySettings("http:://proxy-url", "username", "password", allMiddleware...)
+
+// A client that does not require user and password auth can use
+httpClient := core.GetClientWithProxySettings("http:://proxy-url", allMiddleware...)
+
+// Create the adapter
+// Passing nil values causes the adapter to use default implementations
+adapter, err :=
+    msgraphsdk.NewGraphRequestAdapterWithParseNodeFactoryAndSerializationWriterFactoryAndHttpClient(
+        auth, nil, nil, httpClient)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
+```
 
 ---
