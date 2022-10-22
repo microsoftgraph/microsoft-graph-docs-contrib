@@ -2,7 +2,7 @@
 title: "searchResponse resource type"
 description: "Description of the searchResponse"
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
