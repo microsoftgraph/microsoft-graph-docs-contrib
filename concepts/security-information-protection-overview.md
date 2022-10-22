@@ -38,13 +38,13 @@ By providing information on the existing and desired sensitivity label, the REST
 
 ### Interpret labels applied to data
 
-Applications consuming information that already has [sensitivity label metadata](/graph/api/resources/security-metadataaction) applied can use the **extractLabel** API to resolve label metadata to a Microsoft Purview Information Protection [sensitivity label](/graph/api/resources/security-informationprotectionlabel). Use the label to identify the actions that should be taken by the application when handling or consuming the labeled data. 
+Applications consuming information that already has [sensitivity label metadata](/graph/api/resources/security-metadataaction) applied can use the **extractLabel** API to resolve label metadata to a Microsoft Purview Information Protection [sensitivity label](/graph/api/resources/security-sensitivitylabel). Use the label to identify the actions that should be taken by the application when handling or consuming the labeled data. 
 
 ## API reference
 
 Looking for the API reference for this service?
 
-- [Microsoft Purview Information Protection API in Microsoft Graph beta](/graph/api/resources/security-informationprotectionlabel)
+- [Microsoft Purview Information Protection API in Microsoft Graph beta](/graph/api/resources/security-sensitivitylabel)
 
 ## Next steps
 
