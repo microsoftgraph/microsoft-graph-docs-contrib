@@ -1,6 +1,6 @@
 ---
 title: "List longRunningOperations"
-description: "Get a list of the longRunningOperation objects and their properties."
+description: "Get a list of long-running operations and their statuses."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [longRunningOperation](../resources/longrunningoperation.md) objects and their properties.
+Get a list of [long-running operations](../resources/longrunningoperation.md) and their statuses.
 
 ## Permissions
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/external/industryData/operations
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

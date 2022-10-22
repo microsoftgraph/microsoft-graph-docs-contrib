@@ -1,6 +1,6 @@
 ---
 title: "industryDataActivity resource type"
-description: "Represents an abstract base type for all activity that are run by the underlying scheduler."
+description: "Represents an abstract base type for all activities that are run by the underlying scheduler."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract base type for all activity that are run by the underlying scheduler.
+Represents an abstract base type for all activities that are run by the underlying scheduler.
 
 ## Properties
 

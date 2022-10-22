@@ -47,9 +47,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property    | Type   | Description                                                                                                                       |
-| :---------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| displayName | String | Name of the data connector. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md). Required. |
+| Property    | Type   | Description                                                                                                                           |
+| :---------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| displayName | String | The name of the data connector. Inherited from [industryDataConnector](../resources/industrydata-industrydataconnector.md). Required. |
 
 ## Response
 

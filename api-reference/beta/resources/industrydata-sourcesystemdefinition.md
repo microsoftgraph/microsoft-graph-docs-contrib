@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an external source of data in the real world. The data that is ingested is associated to a source system to identify the owner of record.
+Represents an external source of data in the real world. The data that is ingested is associated to a source system to identify the record owner.
 
 ## Methods
 

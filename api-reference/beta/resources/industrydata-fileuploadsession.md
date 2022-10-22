@@ -15,7 +15,7 @@ Namespace: microsoft.graph.industryData
 
 Represents the file upload session that contains details about the session and container.
 
-The **industryDataAzureDataLakeConnector** uses CSV files uploaded to a secure container. This container only lives for a finite period of time and is created by calling [azureDataLakeConnector: getUploadSession](../api/industrydata-azuredatalakeconnector-getuploadsession.md). You can then upload the required CSV files to the provided shared access signature (SAS) URI in **sessionUri**.
+The **industryDataAzureDataLakeConnector** uses CSV files uploaded to a secure container that lives only for a finite period of time and is created by calling [azureDataLakeConnector: getUploadSession](../api/industrydata-azuredatalakeconnector-getuploadsession.md). You can then upload the required CSV files to the provided shared access signature (SAS) URI in **sessionUri**.
 
 ## Properties
 

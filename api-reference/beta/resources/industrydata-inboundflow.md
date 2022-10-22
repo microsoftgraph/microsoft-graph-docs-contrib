@@ -53,7 +53,7 @@ By default, your Inbound Flow will activate twice (2x) daily, see [IndustryDataR
 
 | Relationship  | Type                                                                              | Description                                                                                 |
 | :------------ | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| dataConnector | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system |
+| dataConnector | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system. |
 | year          | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. |
 
 ## JSON representation

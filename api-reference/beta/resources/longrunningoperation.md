@@ -15,6 +15,15 @@ Namespace: microsoft.graph
 
 Represents the status of a long-running operation.
 
+## Methods
+
+| Method                                                                                | Return type                                                             | Description                                                                                                                       |
+|:--------------------------------------------------------------------------------------|:------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------|
+| **Common long-running operations** |||
+| [Get longRunningOperation](../api/longrunningoperation-get.md)                        | [longRunningOperation](../resources/longrunningoperation.md)            | Get the status of a long-running operation, represented by a [longRunningOperation](../resources/longrunningoperation.md) object. |
+| **Industry data** |||
+| [List longRunningOperations](../api/industrydata-industrydataroot-list-operations.md) | [longRunningOperation](../resources/longrunningoperation.md) collection | Get a list of [long-running operations](../resources/longrunningoperation.md) and their statuses.                                 |
+
 ## Properties
 
 | Property           | Type                       | Description                                                                                                                          |

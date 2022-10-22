@@ -40,8 +40,8 @@ Inherits from [inboundFlow](../resources/industrydata-inboundflow.md).
 
 | Relationship  | Type                                                                              | Description                                                                                                                                                        |
 | :------------ | :-------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dataConnector | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md) |
-| year          | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md)    |
+| dataConnector | [industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow will pull in data from a source system. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md). |
+| year          | [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).    |
 
 ## JSON representation
 
