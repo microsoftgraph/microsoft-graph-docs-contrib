@@ -81,7 +81,7 @@ If successful, this function returns a `200 OK` response code and a [directoryOb
 
 ## Examples
 
-For the examples in this section, consider the following role assignment scenario. A user named Alice has both direct and transitive role assignments as follows:
+For the examples in this section, consider the following role assignment scenario. A user named User1 has both direct and transitive role assignments as follows:
 
 | User | Group | Role | Scope |
 | :---: | :---: | :---: | :---: |
@@ -108,7 +108,7 @@ For the examples in this section, consider the following role assignment scenari
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=true)/$count
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals(transitive=true)/$count
 ```
 
 #### Response
@@ -147,7 +147,7 @@ Using the same scenario, the following examples show the counts that will be ret
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(directoryScopeType='administrativeUnit', directoryScopeId ='d0c2e067-9ae9-4dbf-a280-51a51c46f432')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals(directoryScopeType='administrativeUnit', directoryScopeId ='d0c2e067-9ae9-4dbf-a280-51a51c46f432')
 ```
 
 #### Response
@@ -182,7 +182,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals
 ```
 
 #### Response
@@ -234,7 +234,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(directoryScopeType='tenant')/microsoft.graph.user
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals(directoryScopeType='tenant')/microsoft.graph.user
 ```
 
 #### Response
@@ -273,7 +273,7 @@ The following example gets the directly assigned principals and displays an inli
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals?$count=true
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals?$count=true
 ```
 
 #### Response
