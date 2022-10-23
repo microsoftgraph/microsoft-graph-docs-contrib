@@ -80,25 +80,25 @@ If the destination storage account needs to be closed for public access, you nee
 
    a. Use the following table to select an Azure storage account that meets the criteria.
 
-        | Office 365 region | Region the destination storage can't be in |
-        |-------------|--------------------------------------| 
-        | NAM         | East US                              |
-        | CAN         | Canada East                          | 
-        | GBR         | UK South                             |
-        | EUR         | West Europe                          |
-        | APAC        | Southeast Asia                       |
-        | AUS         | Australia Southeast                  |
+      | Office 365 region | Region the destination storage can't be in |
+      |:------------------|:-------------------------------------------|
+      | NAM               | East US                                    |
+      | CAN               | Canada East                                |
+      | GBR               | UK South                                   |
+      | EUR               | West Europe                                |
+      | APAC              | Southeast Asia                             |
+      | AUS               | Australia Southeast                        |
 
     b. Add IP addresses to the allow list within your destination storage account that is compatible with the previous table. Use the following table to identify the region. To find IP ranges, see [Azure IP Ranges and Service Tags](https://www.microsoft.com/en-us/download/details.aspx?id=56519).
 
-        | Office 365 region | Region you add to allow list         |
-        |-------------|--------------------------------------| 
-        | NAM         | East US                              |
-        | CAN         | Canada East                          | 
-        | GBR         | UK South                             |
-        | EUR         | West Europe                          |
-        | APAC        | Southeast Asia                       |
-        | AUS         | Australia Southeast                  |
+      | Office 365 region | Region you add to allow list |
+      |:------------------|:-----------------------------|
+      | NAM               | East US                      |
+      | CAN               | Canada East                  |
+      | GBR               | UK South                     |
+      | EUR               | West Europe                  |
+      | APAC              | Southeast Asia               |
+      | AUS               | Australia Southeast          |
 
     > [!NOTE]
     > - At this point, customers can understand and configure the region they want to extract users from (what their Office to Azure region mapping is).

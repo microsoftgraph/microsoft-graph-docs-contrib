@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "17c54352-c87f-47fd-ab92-e19ce2da7bcc",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$filter` and `$orderBy` query parameters for the [List chat messages](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-v1.0) method.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "17c54352-c87f-47fd-ab92-e19ce2da7bcc",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-17T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "35662e55-573c-464e-b999-093a27ff63f7",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$filter` query parameter for the [List chat messages](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-beta) method.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "35662e55-573c-464e-b999-093a27ff63f7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-14T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "04f199ca-74fe-4c67-b39f-2feacad3f304",
           "ApiChange": "Authentication",
           "ChangedApiName": "Messaging",
@@ -329,7 +365,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "LIST",
           "ChangeType": "Addition",
-          "Description": "Enabled the `$orderBy` query option to allow users to choose sorting order between **LastModifiedDateTime** and **CreatedDateTime** when retreiving chat messages.",
+          "Description": "Enabled the `$orderBy` query option to allow users to choose sorting order between **LastModifiedDateTime** and **CreatedDateTime** when retrieving chat messages.",
           "Target": "chatMessage"
         }
       ],
@@ -5957,8 +5993,8 @@
       "CreatedDateTime": "2022-10-04T08:14:02.5231411Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
-    },
-	{
+    },    
+	  {
       "ChangeList": [
         {
           "Id": "65fc6370-ff92-4df0-9134-da7a8759897a",
@@ -5975,6 +6011,24 @@
       "CreatedDateTime": "2022-10-10T18:54:16.6879906Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f30575cf-9eb6-430f-885c-1cec5536d7d7",
+          "ApiChange": "Member",
+          "ChangedApiName": "azureCommunicationServicesUser",
+          "ChangeType": "Addition",
+          "Description": "Added the `azureCommunicationServicesUser` value to the **teamworkUserIdentityType** enumeration.",
+          "Target": "teamworkUserIdentityType"
+        }
+      ],
+      "Id": "f30575cf-9eb6-430f-885c-1cec5536d7d7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-20T20:34:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "" 
     }
   ]
 }
