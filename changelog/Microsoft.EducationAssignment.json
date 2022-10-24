@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "educationFeedbackResourceOutcomeStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **educationFeedbackResourceOutcomeStatus** enumeration type.",
+          "Target": "educationFeedbackResourceOutcomeStatus"
+        },
+        {
+          "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
+          "ApiChange": "Property",
+          "ChangedApiName": "feedbackResourcesFolderUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `feedbackResourcesFolderUrl` property to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationFeedbackResourceOutcome",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationFeedbackResourceOutcome](https://docs.microsoft.com/en-us/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-1.0) resource",
+          "Target": "educationFeedbackResourceOutcome"
+        },
+        {
+          "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
+          "ApiChange": "Method",
+          "ChangedApiName": "setUpFeedbackResourcesFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the [setUpFeedbackResourcesFolder](https://docs.microsoft.com/en-us/graph/api/educationAssignment?view=graph-rest-1.0) method to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/educationAssignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-20T17:22:42.5007887Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
