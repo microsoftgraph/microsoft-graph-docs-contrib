@@ -977,14 +977,14 @@
           "ApiChange": "Method",
           "ChangedApiName": "assignedPrincipals",
           "ChangeType": "Addition",
-          "Description": "Added the [assignedPrincipals](https://docs.microsoft.com/en-us/graph/api/unifiedroledefinition-assignedprincipals) method to the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource. Use this API to retrieve the principals (users, groups, and service principals) directly or transitively assigned to a specific role for different scopes.",
+          "Description": "Added the [assignedPrincipals](https://learn.microsoft.com/en-us/graph/api/unifiedroledefinition-assignedprincipals) method to the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource. Use this API to retrieve the principals (users, groups, and service principals) directly or transitively assigned to a specific role for different scopes.",
           "Target": "unifiedRoleDefinition"
         }
       ],
         "Id": "daa9406f-39d6-48fc-aaa4-452a7494b05c",
         "Cloud": "prd",
         "Version": "beta",
-        "CreatedDateTime": "2022-04-29T00:00:00.000Z",
+        "CreatedDateTime": "2022-11-01T00:00:00.000Z",
         "WorkloadArea": "Identity and Access",
         "SubArea": "Directory management"
     },
