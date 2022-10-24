@@ -50,9 +50,9 @@ PATCH /external/industryData/dataConnectors/{industryDataConnectorId}/sourceSyst
 
 | Property             | Type                                                                                                            | Description                                                    |
 | :------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------- |
-| displayName          | String                                                                                                          | Name of the source system. Required.                           |
-| userMatchingSettings | [microsoft.graph.industryData.userMatchingSetting](../resources/industrydata-usermatchingsetting.md) collection | A collection of user matching settings by roleGroup. Optional. |
-| vendor               | String                                                                                                          | Name of the vendor who supplies the source system. Optional.   |
+| displayName          | String                                                                                                          | The name of the source system. Maximum supported length is 100 characters. Required.                           |
+| userMatchingSettings | [microsoft.graph.industryData.userMatchingSetting](../resources/industrydata-usermatchingsetting.md) collection | A collection of user matching settings by [roleGroup](../resources/industrydata-rolegroup.md). Optional. |
+| vendor               | String                                                                                                          | The name of the vendor who supplies the source system. Maximum supported length is 100 characters. Optional.   |
 
 ## Response
 
@@ -89,7 +89,7 @@ Content-length: 250
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

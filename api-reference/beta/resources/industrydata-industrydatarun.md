@@ -1,6 +1,6 @@
 ---
 title: "industryDataRun resource type"
-description: "Represents an ephemeral run containing data for all subordinate activities."
+description: "Represents an ephemeral run that contains data for all subordinate activities performed by the system."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,37 +13,17 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an ephemeral run containing data for all subordinate activities executed by the system.
+Represents an ephemeral run that contains data for all subordinate activities performed by the system. Industry data automates a run every 12 hours. Each of these operations is represented by an **industryDataRun** resource. All flows that are active at the time of the run start are included in the run. The individual flows are represented by an [industryDataRunActivity](industrydata-industrydatarunactivity.md) resource.
 
-IndustryData automates a Run every 12 hours. Each of these executions is represented by **industryDataRun**. All flows that are active at the time of the Run start are included in the Run.
+During a run, the data supplied is validated, bringing in good data to the data lake and flagging bad data. For more information about data validation, see [Validation rules and descriptions](/schooldatasync/Validation-rules-and-descriptions.md). To determine the health of the data, it's passed through data matching and validation rules to help safeguard required and optional data. Good data goes into the data lake. Data that doesn't pass validation is identified as errors or warnings and isn't sent to the data lake. The following lists possible results for a run:
 
-The individual flows are represented by **industryDataRunActivity**.
+- `running`: Run is actively running.
+- `completed`: Run completed without any errors or warnings.
+- `completedWithErrors`: Run completed but errors were found. Error is a record where the required data didn't pass a data matching and/or validation rule and therefore, was removed and not sent to the data lake.
+- `completedWithWarnings`: Run completed but only warnings were found. Warning is a value on a record where optional data didn't pass a data matching and/or validation rule. The value was removed but the record was sent to the data lake.
+- `failed`: Run canceled by the system.
 
-_For more information, see [IndustryDataRunActivity](industrydata-industrydatarunactivity.md)._
-
-During a Run the data supplied is validated, bringing in good data to the data lake and flagging bad data. For more information about data validation, see [Validation Rules and Descriptions](/schooldatasync/Validation-rules-and-descriptions.md).
-
-To determine the health of the data, it's passed through data matching and validation rules to help safeguard required and optional data. Good data goes into the data lake. Data that doesn't pass validation is identified as errors or warnings and isn't sent to the Data Lake.
-
-If there were no errors or warnings found, the result of the run will be `completed`.
-
-If there are errors and warnings found, the result of the run will be `completedWithErrors`.
-
-- Error is a record where the required data didn't pass a data matching and/or validation rule and therefore, was removed and not sent to the data lake.
-
-If there are only warnings found, the result of the run will be `completedWithWarnings`.
-
-- Warning is a value on a record where optional data didn't pass a data matching and or validation rule. The value was removed but the record was sent to the data lake.
-
-Status:
-
-- `running`: Actively executing
-- `completed`: Completed without any errors or warnings
-- `completedWithErrors`: Completed but errors were found
-- `completedWithWarnings`: Completed but only warnings were found
-- `failed`: Canceled by system
-
-Statistics are available from _[IndustryDataRun-GetStatistics](../api/industrydata-industrydatarun-getstatistics.md)_ to assist with health and monitoring.
+For details about how statistics can assist with health and monitoring a run group, see [industryDataRun: getStatistics](../api/industrydata-industrydatarun-getstatistics.md).
 
 ## Methods
 
@@ -51,24 +31,24 @@ Statistics are available from _[IndustryDataRun-GetStatistics](../api/industryda
 | :------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------ |
 | [List industryDataRuns](../api/industrydata-industrydataroot-list-runs.md) | [microsoft.graph.industryData.industryDataRun](../resources/industrydata-industrydatarun.md) collection                 | Get a list of the [industryDataRun](../resources/industrydata-industrydatarun.md) objects and their properties.     |
 | [Get industryDataRun](../api/industrydata-industrydatarun-get.md)          | [microsoft.graph.industryData.industryDataRun](../resources/industrydata-industrydatarun.md)                            | Read the properties and relationships of an [industryDataRun](../resources/industrydata-industrydatarun.md) object. |
-| [getStatistics](../api/industrydata-industrydatarun-getstatistics.md)      | [microsoft.graph.industryData.industryDataRunStatistics](../resources/industrydata-industrydatarunstatistics.md)        | Calculate statistics for the runGroup.                                                                              |
-| [List activities](../api/industrydata-industrydatarun-list-activities.md)  | [microsoft.graph.industryData.industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md) collection | Get the industryDataRunActivity resources from the activities navigation property.                                  |
+| [getStatistics](../api/industrydata-industrydatarun-getstatistics.md)      | [microsoft.graph.industryData.industryDataRunStatistics](../resources/industrydata-industrydatarunstatistics.md)        | Calculate statistics for a run group.                                                                              |
+| [List activities](../api/industrydata-industrydatarun-list-activities.md)  | [microsoft.graph.industryData.industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md) collection | Get the **industryDataRunActivity** resources from the **activities** navigation property.                                  |
 
 ## Properties
 
 | Property      | Type                                                       | Description                                                                                                                                                 |
 | :------------ | :--------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| blockingError | [microsoft.graph.publicError](../resources/publicerror.md) | An error object to diagnose critical failures in the run.                                                                                                   |
+| blockingError | [publicError](../resources/publicerror.md) | An error object to diagnose critical failures in the run.                                                                                                   |
 | displayName   | String                                                     | The name of the run for rendering in a user interface.                                                                                                      |
-| endDateTime   | DateTimeOffset                                             | The time the run finished in ISO 8601 format, or null if the run is still in-progress.                                                                      |
-| startDateTime | DateTimeOffset                                             | The time the run started in ISO 8601 format.                                                                                                                |
-| status        | industryDataRunStatus                                      | Current status of the run. The possible values are: `running`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
+| endDateTime   | DateTimeOffset                                             | The date and time when the run finished or null if the run is still in-progress. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on `Jan 1, 2014 is 2014-01-01T00:00:00Z`.                                                                     |
+| startDateTime | DateTimeOffset                                             | The date and time when the run started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on `Jan 1, 2014 is 2014-01-01T00:00:00Z`.                                                                                                               |
+| status        | industryDataRunStatus                                      | The current status of the run. The possible values are: `running`, `failed`, `completed`, `completedWithErrors`, `completedWithWarnings`, `unknownFutureValue`. |
 
 ## Relationships
 
-| Relationship | Type                                                                                                                    | Description                                    |
-| :----------- | :---------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------- |
-| activities   | [microsoft.graph.industryData.industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md) collection | The set of activities executed during the run. |
+| Relationship | Type                                                                                                                    | Description                                     |
+| :----------- | :---------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- |
+| activities   | [microsoft.graph.industryData.industryDataRunActivity](../resources/industrydata-industrydatarunactivity.md) collection | The set of activities performed during the run. |
 
 ## JSON representation
 

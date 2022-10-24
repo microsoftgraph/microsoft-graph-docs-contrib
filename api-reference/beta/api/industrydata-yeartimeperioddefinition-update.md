@@ -50,10 +50,10 @@ PATCH /external/industryData/years/{yearTimePeriodDefinitionId}
 
 | Property    | Type                                                                                               | Description                                                              |
 | :---------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
-| displayName | String                                                                                             | The name of the year. Required.                                          |
-| endDate     | Date                                                                                               | The last day of the year. ISO 8601 date. Required.                       |
-| startDate   | Date                                                                                               | The first day of the year. ISO 8601 date. Required.                      |
-| year        | [microsoft.graph.industryData.yearReferenceValue](../resources/industrydata-yearreferencevalue.md) | Pointer to a year entry in the referenceDefinition collection. Required. |
+| displayName | String                                                                                             | The name of the year. Maximum supported length is 100 characters. Required.                                          |
+| endDate     | Date                                                                                               | The last day of the year using ISO 8601 format for date. Required.                       |
+| startDate   | Date                                                                                               | The first day of the year using ISO 8601 format for date. Required.                      |
+| year        | [microsoft.graph.industryData.yearReferenceValue](../resources/industrydata-yearreferencevalue.md) | A pointer to a year entry in the [referenceDefinition](../resources/industrydata-referencedefinition.md) collection. Required. |
 
 ## Response
 
@@ -89,7 +89,7 @@ Content-length: 242
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

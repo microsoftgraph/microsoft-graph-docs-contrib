@@ -1,6 +1,6 @@
 ---
 title: "industryDataRun: getStatistics"
-description: "Calculate statistics for the runGroup."
+description: "Calculate statistics for a run group."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calculate statistics for the runGroup.
+Calculate statistics for a run group.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [industryDataRunStatistics](../resources/industrydata-industrydatarunstatistics.md) in the response body.
+If successful, this function returns a `200 OK` response code and an [industryDataRunStatistics](../resources/industrydata-industrydatarunstatistics.md) in the response body.
 
 ## Examples
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/external/industryData/runs/{industryDataRun
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

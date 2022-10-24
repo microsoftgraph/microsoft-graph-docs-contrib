@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/external/industryData/runs
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
