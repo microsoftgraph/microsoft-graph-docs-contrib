@@ -10488,6 +10488,23 @@ items:
             href: api/virtualendpoint-post-externalpartnersettings.md
           - name: Update
             href: api/cloudpcexternalpartnersetting-update.md
+        - name: Cloud PC reports
+          href: resources/cloudpcreports.md
+          items:
+          - name: Get export job
+            href: api/cloudpcexportjob-get.md
+          - name: Create export job
+            href: api/cloudpcreports-post-exportjobs.md
+          - name: Get daily aggregated remote conneciton reports
+            href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+          - name: Get real time remote connection latency
+            href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
+          - name: Get real time remote connection status
+            href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
+          - name: Get historical remote conneciton reports
+            href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
+          - name: Get total aggregated remote conneciton reports
+            href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
