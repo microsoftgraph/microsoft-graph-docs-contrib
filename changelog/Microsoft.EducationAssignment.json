@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "ChangeList": [
+            {
+              "Id": "392fd7c1-35e6-4162-ad6e-a4754cdf2d95",
+              "ApiChange": "Property",
+              "ChangedApiName": "webUrl",
+              "ChangeType": "Addition",
+              "Description": "Added the `webUrl` property to the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
+              "Target": "educationSubmission"
+            }
+          ],
+          "Id": "392fd7c1-35e6-4162-ad6e-a4754cdf2d95",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2022-10-20T17:50:21.2564873Z",
+          "WorkloadArea": "Education",
+          "SubArea": ""
+        },
+        {
           "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
