@@ -282,7 +282,7 @@ The following is an example of the request.
   "name": "get_submission_expand"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/2be08d97-b140-4eec-8cbd-88238d571060/submissions/d9c09b6e-a84d-139a-1b9d-0fbb0ab0de4a?$expand=*
+GET https://graph.microsoft.com/beta/education/classes/a86a5c30-0437-49d6-9c6b-b1ce0d8d5574/assignments/95da4fd3-2f3a-48d2-a1ea-08eb16e2ae9f/submissions/e1a0240e-f3af-f039-63e7-09c3cbf8d176?$expand=*
 ```
 
 # [C#](#tab/csharp)
@@ -328,24 +328,24 @@ Content-type: application/json
 Content-length: 4492
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('2be08d97-b140-4eec-8cbd-88238d571060')/submissions(outcomes(),resources(),submittedResources())/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('a86a5c30-0437-49d6-9c6b-b1ce0d8d5574')/assignments('95da4fd3-2f3a-48d2-a1ea-08eb16e2ae9f')/submissions(outcomes(),resources(),submittedResources())/$entity",
     "status": "returned",
-    "submittedDateTime": null,
+    "submittedDateTime": "2022-10-24T21:03:53.3664034Z",
     "unsubmittedDateTime": null,
-    "returnedDateTime": "2022-04-13T05:11:50.756165Z",
+    "returnedDateTime": "2022-10-24T21:04:42.7101616Z",
     "reassignedDateTime": null,
     "resourcesFolderUrl": null,
-    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%222003c52e-807a-4186-9b49-60c573095461%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%222be08d97-b140-4eec-8cbd-88238d571060%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%22d9c09b6e-a84d-139a-1b9d-0fbb0ab0de4a%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22%7D%22,%22channelId%22%3Anull%7D",
-    "id": "d9c09b6e-a84d-139a-1b9d-0fbb0ab0de4a",
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22a86a5c30-0437-49d6-9c6b-b1ce0d8d5574%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%2295da4fd3-2f3a-48d2-a1ea-08eb16e2ae9f%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%22e1a0240e-f3af-f039-63e7-09c3cbf8d176%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "id": "e1a0240e-f3af-f039-63e7-09c3cbf8d176",
     "recipient": {
         "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
-        "userId": "61243ddb-6f39-499d-b232-9fa8cef26b3a"
+        "userId": "51cf5a99-d234-4e43-96de-cd65df14bfa1"
     },
     "submittedBy": {
         "application": null,
         "device": null,
         "user": {
-            "id": "61243ddb-6f39-499d-b232-9fa8cef26b3a",
+            "id": "51cf5a99-d234-4e43-96de-cd65df14bfa1",
             "displayName": null
         }
     },
@@ -373,56 +373,167 @@ Content-length: 4492
             "displayName": null
         }
     },
-    "outcomes@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('2be08d97-b140-4eec-8cbd-88238d571060')/submissions('d9c09b6e-a84d-139a-1b9d-0fbb0ab0de4a')/outcomes",
+    "outcomes@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('a86a5c30-0437-49d6-9c6b-b1ce0d8d5574')/assignments('95da4fd3-2f3a-48d2-a1ea-08eb16e2ae9f')/submissions('e1a0240e-f3af-f039-63e7-09c3cbf8d176')/outcomes",
     "outcomes": [
         {
             "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2022-10-24T21:04:42.3073523Z",
             "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
-            "lastModifiedBy": null,
-            "feedback": null,
-            "publishedFeedback": null
-        },
-        {
-            "@odata.type": "#microsoft.graph.educationPointsOutcome",
-            "lastModifiedDateTime": null,
-            "id": "ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
-            "lastModifiedBy": null,
-            "points": null,
-            "publishedPoints": null
-        }
-    ],
-    "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('2be08d97-b140-4eec-8cbd-88238d571060')/submissions('d9c09b6e-a84d-139a-1b9d-0fbb0ab0de4a')/resources",
-    "resources": [
-        {
-            "assignmentResourceUrl": "https://assignments.onenote.com/api/v1.0/edu/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/2be08d97-b140-4eec-8cbd-88238d571060/resources/777c1719-d464-4385-96f5-f031f8bd3b14",
-            "id": "b96975ef-167c-4aaf-8eb4-589c5aa1bc42",
-            "resource": {
-                "@odata.type": "#microsoft.graph.educationExternalResource",
-                "displayName": "Forms Complete (Postman Test Dev)",
-                "createdDateTime": "2022-04-13T05:09:45.0481335Z",
-                "lastModifiedDateTime": "2022-04-13T05:09:45.0481335Z",
-                "webUrl": "https://forms.office.com/Pages/AssignmentsDesignPage.aspx#TopView=Preview&FormId=kowztj5TbU-jJ5lCY3EjmS7FAyB6gIZBm0lgxXMJVGFUQVhTUzlTNE9ITlVRM04xWjMyOVVIM1VVTCQlQCN0PWcu",
-                "createdBy": {
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "feedback": {
+                "feedbackDateTime": "2022-10-24T21:04:42.3073523Z",
+                "text": {
+                    "content": "New feedback!",
+                    "contentType": "text"
+                },
+                "feedbackBy": {
                     "application": null,
                     "device": null,
                     "user": {
-                        "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                         "displayName": null
                     }
+                }
+            },
+            "publishedFeedback": {
+                "feedbackDateTime": "2022-10-24T21:04:25.2783852Z",
+                "text": {
+                    "content": "Feedback",
+                    "contentType": "text"
                 },
-                "lastModifiedBy": {
+                "feedbackBy": {
                     "application": null,
                     "device": null,
                     "user": {
-                        "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                         "displayName": null
                     }
                 }
             }
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationPointsOutcome",
+            "lastModifiedDateTime": "2022-10-24T21:04:42.7101541Z",
+            "id": "ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "points": {
+                "gradedDateTime": "2022-10-24T21:04:42.7101541Z",
+                "points": 456,
+                "gradedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                }
+            },
+            "publishedPoints": {
+                "gradedDateTime": "2022-10-24T21:04:25.6308301Z",
+                "points": 123,
+                "gradedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationRubricOutcome",
+            "lastModifiedDateTime": "2022-10-24T21:04:26.5833776Z",
+            "id": "65a46d78-1a2b-4a7e-bcf8-78a22ac2611b",
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "rubricQualityFeedback": [
+                {
+                    "qualityId": "050f420d-ef93-46fe-a7c0-bf8b24769f5c",
+                    "feedback": null
+                },
+                {
+                    "qualityId": "9bd9fda3-e013-44a5-b373-dfec8b4da80b",
+                    "feedback": {
+                        "content": "Needs improvement",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "qualityId": "c5e07099-4e18-47de-9e71-27504d4e71de",
+                    "feedback": null
+                }
+            ],
+            "rubricQualitySelectedLevels": [
+                {
+                    "qualityId": "050f420d-ef93-46fe-a7c0-bf8b24769f5c",
+                    "columnId": null
+                },
+                {
+                    "qualityId": "9bd9fda3-e013-44a5-b373-dfec8b4da80b",
+                    "columnId": "0f9823a2-174c-4ce0-8f12-e298c291f29b"
+                },
+                {
+                    "qualityId": "c5e07099-4e18-47de-9e71-27504d4e71de",
+                    "columnId": null
+                }
+            ],
+            "publishedRubricQualityFeedback": [
+                {
+                    "qualityId": "050f420d-ef93-46fe-a7c0-bf8b24769f5c",
+                    "feedback": null
+                },
+                {
+                    "qualityId": "9bd9fda3-e013-44a5-b373-dfec8b4da80b",
+                    "feedback": {
+                        "content": "Needs improvement",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "qualityId": "c5e07099-4e18-47de-9e71-27504d4e71de",
+                    "feedback": null
+                }
+            ],
+            "publishedRubricQualitySelectedLevels": [
+                {
+                    "qualityId": "050f420d-ef93-46fe-a7c0-bf8b24769f5c",
+                    "columnId": null
+                },
+                {
+                    "qualityId": "9bd9fda3-e013-44a5-b373-dfec8b4da80b",
+                    "columnId": "0f9823a2-174c-4ce0-8f12-e298c291f29b"
+                },
+                {
+                    "qualityId": "c5e07099-4e18-47de-9e71-27504d4e71de",
+                    "columnId": null
+                }
+            ]
         }
     ],
-    "submittedResources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('2be08d97-b140-4eec-8cbd-88238d571060')/submissions('d9c09b6e-a84d-139a-1b9d-0fbb0ab0de4a')/submittedResources",
+    "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('a86a5c30-0437-49d6-9c6b-b1ce0d8d5574')/assignments('95da4fd3-2f3a-48d2-a1ea-08eb16e2ae9f')/submissions('e1a0240e-f3af-f039-63e7-09c3cbf8d176')/resources",
+    "resources": [],
+    "submittedResources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('a86a5c30-0437-49d6-9c6b-b1ce0d8d5574')/assignments('95da4fd3-2f3a-48d2-a1ea-08eb16e2ae9f')/submissions('e1a0240e-f3af-f039-63e7-09c3cbf8d176')/submittedResources",
     "submittedResources": []
 }
 ```
