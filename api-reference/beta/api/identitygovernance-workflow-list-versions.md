@@ -61,7 +61,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the versions of a workflow
+
+#### Request
 
 The following is an example of a request.
 
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response
 
@@ -123,6 +125,8 @@ Content-Type: application/json
             "category": "joiner",
             "description": "Configure new hire tasks for onboarding employees on their first day",
             "displayName": "Global onboard new hire employee",
+            "isEnabled": true,
+            "isSchedulingEnabled": true,
             "lastModifiedDateTime": "2022-08-24T19:33:03.8664941Z",
             "versionNumber": 3,
             "createdDateTime": "2022-08-24T19:31:33.5534766Z"
@@ -131,6 +135,8 @@ Content-Type: application/json
             "category": "joiner",
             "description": "Configure new hire tasks for onboarding employees on their first day",
             "displayName": "Onboard new hire employee",
+            "isEnabled": true,
+            "isSchedulingEnabled": false,
             "lastModifiedDateTime": "2022-08-24T19:31:33.4303233Z",
             "versionNumber": 2,
             "createdDateTime": "2022-08-24T19:18:18.6841471Z"
@@ -139,9 +145,55 @@ Content-Type: application/json
             "category": "joiner",
             "description": "Configure new hire tasks for onboarding employees on their first day",
             "displayName": "Onboard new hire employee",
+            "isEnabled": true,
+            "isSchedulingEnabled": false,
             "lastModifiedDateTime": "2022-08-24T19:18:18.5633638Z",
             "versionNumber": 1,
             "createdDateTime": "2022-08-24T15:39:17.6496784Z"
+        }
+    ]
+}
+```
+
+### Example 12: Retrieve specific properties of all versions of a workflow
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_list_workflowversion_select"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/versions?$select=category,displayName,versionNumber
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.identityGovernance.workflowVersion)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/versions(category,displayName,versionNumber)",
+    "value": [
+        {
+            "category": "leaver",
+            "displayName": "Post-Offboarding of an employee",
+            "versionNumber": 2
+        },
+        {
+            "category": "leaver",
+            "displayName": "Post-Offboarding of an employee",
+            "versionNumber": 1
         }
     ]
 }

@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Search API to refine queries with aggregations"
 description: "You can use the Microsoft Search API aggregationOption in Microsoft Graph to refine search results and show their distribution in the index."
-author: "nmoreau"
+author: "njerigrevious"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---

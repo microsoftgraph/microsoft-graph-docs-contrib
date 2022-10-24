@@ -36,7 +36,7 @@ Using your favorite [tool for interacting with Microsoft Graph](use-the-api.md#t
 * Privileged authentication administrator
 * Authentication administrator
 
-Next, modify your permissions. We'll use [UserAuthenticationMethod.ReadWrite.All](permissions-reference.md#user-authentication-method-permissions-preview) for this tutorial, so make sure it's enabled in Graph Explorer or your app.
+Next, modify your permissions. We'll use [UserAuthenticationMethod.ReadWrite.All](permissions-reference.md#user-authentication-method-permissions) for this tutorial, so make sure it's enabled in Graph Explorer or your app.
 
 Once the scope is assigned and consented, you can start using the API. The examples here use a standard user named Avery Howard. You should use a preexisting test account or create a new one following [these instructions](/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user). These APIs are live so don't test them on real users.
 

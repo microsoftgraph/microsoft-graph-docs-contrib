@@ -202,7 +202,9 @@ Content-type: application/json
         "termsOfUse": [
             "ce580154-086a-40fd-91df-8a60abac81a0",
             "7f29d675-caff-43e1-8a53-1b8516ed2075"
-        ]
+        ],
+        "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/conditionalAccessPolicies('6b5e999b-0ba8-4186-a106-e0296c1c4358')/grantControls/authenticationStrength/$entity",
+        "authenticationStrength": null
     },
     "sessionControls": {
         "applicationEnforcedRestrictions": null,

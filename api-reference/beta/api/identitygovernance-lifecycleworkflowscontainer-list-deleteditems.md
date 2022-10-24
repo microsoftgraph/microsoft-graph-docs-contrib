@@ -38,7 +38,7 @@ For delegated scenarios, the admin needs one of the following [Azure AD roles](/
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/
+GET /identityGovernance/lifecycleWorkflows/deletedItems/workflows/
 ```
 
 ## Optional query parameters
@@ -61,7 +61,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Retrieve all deleted workflows
+
+#### Request
 
 The following is an example of a request.
 
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/delet
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -138,6 +140,49 @@ Content-Type: application/json
             "deletedDateTime": "2022-08-24T18:25:09.5542954Z",
             "id": "21d2c0fb-dcaa-4abb-88db-891d76c84e9a",
             "version": 1
+        }
+    ]
+}
+```
+
+### Example 2: Retrieve deleted workflows for "leaver" scenarios and return only specific properties
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_list_deleteditemcontainer_select"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows?$select=id,category,displayName,description,version&$filter=category eq 'leaver'
+```
+
+#### Response
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.deletedItemContainer)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows(category,displayName,description,version)",
+    "value": [
+        {
+            "category": "leaver",
+            "description": "Employee offboarding for Contoso Germany.",
+            "displayName": "Germany offboard employees",
+            "id": "952b23c5-cc25-48c9-8848-95da4dd9dc6d",
+            "version": 4
         }
     ]
 }
