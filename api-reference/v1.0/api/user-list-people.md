@@ -36,7 +36,7 @@ GET /users/{id | userPrincipalName}/people
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, as shown in the examples in the article [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview).
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 |Name|Value|Description|
 |:---------------|:--------|:-------|
