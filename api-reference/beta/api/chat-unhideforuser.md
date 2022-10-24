@@ -47,7 +47,6 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to unhide the chat for. **In delegated mode, users can only unhide a chat for themselves**.|
-|tenantId|String|Tenant ID of the user.|
 
 ## Response
 
@@ -70,9 +69,9 @@ Content-Type: application/json
 
 {
   "user": {
-    "id" : "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
-  },
-  "tenantId": "2a690434-97d9-4eed-83a6-f5f13600199a"
+    "id" : "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
+    "tenantId": "2a690434-97d9-4eed-83a6-f5f13600199a"
+  }
 }
 ```
 

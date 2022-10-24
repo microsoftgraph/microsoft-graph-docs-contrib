@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "06a63cc8-a5be-49af-adf7-8c34a822c8d9",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorizationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://learn.microsoft.com/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource. Configure this property to disable protections preventing [user consent for risky apps](/active-directory/manage-apps/configure-risk-based-step-up-consent).",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "06a63cc8-a5be-49af-adf7-8c34a822c8d9",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-14T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
         { 
           "Id": "4bf37336-391f-4ce3-909b-03314160aade",
           "ApiChange": "Method",
@@ -17,6 +35,64 @@
       "CreatedDateTime": "2022-09-08T00:00:00.0000000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "x509CertificateAuthenticationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateAuthenticationMode** enumeration type.",
+          "Target": "x509CertificateAuthenticationMode"
+        },
+        {
+          "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "x509CertificateRuleType",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateRuleType** enumeration type.",
+          "Target": "x509CertificateRuleType"
+        },
+        {
+          "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateAuthenticationModeConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-1.0) resource type and its associated methods. This resource represents the details of the Azure AD native Certificate-Based Authentication (CBA) in the tenant including whether the authentication method is enabled or disabled and the users and groups who are in scope for the auth method.",
+          "Target": "x509CertificateAuthenticationModeConfiguration"
+        },
+        {
+          "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-1.0) resource type.  Use this resource to define the custom authentication configuration rules for the X.509 certificate.",
+          "Target": "x509CertificateRule"
+        },
+        {
+          "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateUserBinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateUserBinding](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateUserBinding?view=graph-rest-1.0) resource type. Use this resource to map the fields in the X.509 certificate to attributes of the Azure AD user object in order to bind the certificate to the user account.",
+          "Target": "x509CertificateUserBinding"
+        },
+        {
+          "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-1.0) resource type and its associated methods. This resource represents the details of the Azure AD native Certificate-Based Authentication (CBA) in the tenant including whether the authentication method is enabled or disabled and the users and groups who are in scope for the auth method.",
+          "Target": "x509CertificateAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "10c162ec-a1ea-4b26-a865-c4d54de08c4a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-12T00:00:00.4434651Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -11648,6 +11724,56 @@
     {
       "ChangeList": [
         {
+          "Id": "249d7bc8-219c-44b5-9738-c1134b4c1e24",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "featureTargetType",
+          "ChangeType": "Addition",
+          "Description": "Added the **featureTargetType** enumeration type.",
+          "Target": "featureTargetType"
+        },
+        {
+          "Id": "249d7bc8-219c-44b5-9738-c1134b4c1e24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethodFeatureConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationMethodFeatureConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodFeatureConfiguration?view=graph-rest-1.0) resource. Use this resource to configure users that are allowed or excluded from using an authentication method.",
+          "Target": "authenticationMethodFeatureConfiguration"
+        },
+        {
+          "Id": "249d7bc8-219c-44b5-9738-c1134b4c1e24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "featureTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [featureTarget](https://learn.microsoft.com/en-us/graph/api/resources/featureTarget?view=graph-rest-1.0) resource type.",
+          "Target": "featureTarget"
+        },
+        {
+          "Id": "249d7bc8-219c-44b5-9738-c1134b4c1e24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorFeatureSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAuthenticatorFeatureSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-1.0) resource type.",
+          "Target": "microsoftAuthenticatorFeatureSettings"
+        },
+        {
+          "Id": "249d7bc8-219c-44b5-9738-c1134b4c1e24",
+          "ApiChange": "Property",
+          "ChangedApiName": "featureSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `featureSettings` property to the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-1.0) resource. This property allows you to configure Microsoft Authenticator settings such as application context and location context, and whether they are enabled for all users or specific users only.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "249d7bc8-219c-44b5-9738-c1134b4c1e24",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-14T22:24:13.4693265Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "58b7beda-c767-4468-914b-23774fe6f181",
           "ApiChange": "EnumType",
           "ChangedApiName": "federatedIdpMfaBehavior",
@@ -11777,6 +11903,48 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-10-04T16:30:13.2808833Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "templateScenarios",
+          "ChangeType": "Addition",
+          "Description": "Added the **templateScenarios** enumeration.",
+          "Target": "templateScenarios"
+        },
+        {
+          "Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessPolicyDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessPolicyDetail](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicyDetail?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessPolicyDetail"
+        },
+        {
+          "Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "templates",
+          "ChangeType": "Addition",
+          "Description": "Added the **templates** relationship to the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-1.0) resource.",
+	  "Target": "conditionalAccessRoot"
+        },
+        {
+          "Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessTemplate](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessTemplate?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessTemplate"
+        }
+      ],
+      "Id": "80ef6eaa-e6a5-4892-ad09-84307611f60a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-14T16:30:13.6218231Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }
