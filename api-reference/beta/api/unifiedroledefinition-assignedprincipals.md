@@ -71,6 +71,7 @@ This method supports the `$count`, `$select`, `$filter`, and `$orderBy` OData qu
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|ConsistencyLevel|eventual. Required. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).|
 
 ## Request body
 Do not supply a request body for this method.
@@ -250,10 +251,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users",
   "value": [
     {
-        "@odata.type": "#microsoft.graph.user",
         "id": "6c62e70d-f5f5-4b9d-9eea-ed517ed9341f",
         "displayName": null,
         "userPrincipalName": null
@@ -290,7 +290,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
-  "@odata.count": 6,
+  "@odata.count": 4,
   "value": [
     {
         "@odata.type": "#microsoft.graph.user",
@@ -299,31 +299,19 @@ Content-Type: application/json
         "userPrincipalName": null
     },
     {
-        "@odata.type": "#microsoft.graph.user",
-        "id": "95024ec5-8e34-47bd-bd7c-ab034b6dc64e",
-        "displayName": null,
-        "userPrincipalName": null
-    },
-    {
-        "@odata.type": "#microsoft.graph.user",
-        "id": "951e631d-11aa-49c3-95d1-4cdad24986d5",
-        "displayName": null,
-        "userPrincipalName": null
-    },
-    {
         "@odata.type": "#microsoft.graph.group",
         "id": "86b38db7-6e8b-4ad2-b2aa-ced7f09486c1",
-        "displayName": "Group 1"
+        "displayName": "Group1"
     },
     {
         "@odata.type": "#microsoft.graph.group",
         "id": "182351a6-d974-4d18-88ae-8a148da44cd2",
-        "displayName": "Group 2"
+        "displayName": "Group2"
     },
     {
         "@odata.type": "#microsoft.graph.group",
         "id": "b93d5379-a464-4db5-b8e1-694910f1e11e",
-        "displayName": "Group 3"
+        "displayName": "Group3"
     }
   ]
 }
