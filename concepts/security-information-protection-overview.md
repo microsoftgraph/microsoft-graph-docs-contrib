@@ -44,7 +44,7 @@ Applications consuming information that already has [sensitivity label metadata]
 
 Looking for the API reference for this service?
 
-- [Microsoft Purview Information Protection API in Microsoft Graph beta](/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta)
+- [Microsoft Purview Information Protection API in Microsoft Graph beta](/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 
