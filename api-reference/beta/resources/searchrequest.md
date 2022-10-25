@@ -40,7 +40,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |sharePointOneDriveOptions|[sharePointOneDriveOptions](sharePointOneDriveOptions.md)|Indicates the kind of contents to be searched when a search is performed using application permissions. Optional.|
 |size|Int32|The size of the page to be retrieved. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
-|collapseProperties|[collapseProperty](collapseProperty.md) collection|Contains the ordered collection of fields and limit to collapse results. Optional.|
+|collapseProperties|[collapseProperty](collapseproperty.md) collection|Contains the ordered collection of fields and limit to collapse results. Optional.|
 |trimDuplicates|Boolean|Indicates whether to trim away the duplicate SharePoint files from search results. Default value is `false`. Optional.|
 |stored_fields (deprecated)|String collection |This is now replaced by the **fields** property. |
 
