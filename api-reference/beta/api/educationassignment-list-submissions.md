@@ -63,7 +63,7 @@ The following is an example of the request.
   "name": "get_submissions"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/f2003c52e-807a-4186-9b49-60c573095461/assignments/2be08d97-b140-4eec-8cbd-88238d571060/submissions
+GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/2be08d97-b140-4eec-8cbd-88238d571060/submissions
 ```
 
 # [C#](#tab/csharp)
