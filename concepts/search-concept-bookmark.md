@@ -76,7 +76,8 @@ Content-type: application/json
 
 ## Known issues
 
-Sorting, aggregation, and pagination are not supported for bookmark searches.
+- Sorting, aggregation and pagination are not supported for bookmark searches.
+- Do not support combination search with other entity types. 
 
 ## Next steps
 
