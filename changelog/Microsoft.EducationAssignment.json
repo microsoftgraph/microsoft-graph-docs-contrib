@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "webUrl",
           "ChangeType": "Addition",
-          "Description": "Added the `webUrl` property to the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the **webUrl** property to the [educationSubmission](https://learn.microsoft.com/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
           "Target": "educationSubmission"
         }
       ],
