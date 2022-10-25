@@ -48,6 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
+|scopedToAllDevices|Boolean|Not yet documented|
 |state|[scheduledRetireState](../resources/intune-deviceconfig-scheduledretirestate.md)|Not yet documented|
 |managedDeviceIds|String collection|Not yet documented|
 
@@ -64,9 +65,10 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/setScheduledRetireState
 
 Content-type: application/json
-Content-length: 95
+Content-length: 126
 
 {
+  "scopedToAllDevices": true,
   "state": "confirmRetire",
   "managedDeviceIds": [
     "Managed Device Ids value"
