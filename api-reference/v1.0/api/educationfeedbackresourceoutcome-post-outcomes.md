@@ -11,11 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new [feedback resource](../resources/educationfeedbackresourceoutcome.md) for a submission.
+Create a new [feedback resource](../resources/educationfeedbackresourceoutcome.md) for a submission. Only a teacher can perform this operation.
 
-Only a teacher can perform this operation.
-
-To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment. If the file doesn't exist or is not in that folder, the `POST` request will fail.
+To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment. If the file doesn't exist or isn't in that folder, the `POST` request will fail.
 
 > [!IMPORTANT]
 > Before you can upload an assignment feedback resource, you must [set up the feedback resources folder](../api/educationassignment-setupfeedbackresourcesfolder.md) for the [educationAssignment](../resources/educationassignment.md) to upload the files to.
@@ -53,8 +51,6 @@ This method returns a `400 Bad Request` when the submission has exceeded more th
 ### Request
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationFeedbackResourceOutcome"

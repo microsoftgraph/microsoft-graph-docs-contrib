@@ -48,8 +48,6 @@ The following example shows how to call this API.
 ### Request
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","a3cce0ba-2008-4c4d-bf62-079408562d96"],  
@@ -64,7 +62,10 @@ Content-type: application/json
 ```
 
 ### Response
+
 The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
