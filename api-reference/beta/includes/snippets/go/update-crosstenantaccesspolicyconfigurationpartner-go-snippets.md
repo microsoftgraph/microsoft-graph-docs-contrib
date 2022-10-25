@@ -17,7 +17,7 @@ isHybridAzureADJoinedDeviceAccepted := true
 inboundTrust.SetIsHybridAzureADJoinedDeviceAccepted(&isHybridAzureADJoinedDeviceAccepted) 
 requestBody.SetInboundTrust(inboundTrust)
 
-graphClient.Policies().CrossTenantAccessPolicy().PartnersById("crossTenantAccessPolicyConfigurationPartner-tenantId").Patch(requestBody)
+result, err := graphClient.Policies().CrossTenantAccessPolicy().PartnersById("crossTenantAccessPolicyConfigurationPartner-tenantId").Patch(context.Background(), requestBody, nil)
 
 
 ```

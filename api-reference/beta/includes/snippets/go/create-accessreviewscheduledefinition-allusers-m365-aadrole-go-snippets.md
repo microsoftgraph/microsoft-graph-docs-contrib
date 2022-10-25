@@ -13,14 +13,10 @@ requestBody.SetDisplayName(&displayName)
 descriptionForAdmins := "Review employee access to LinkedIn"
 requestBody.SetDescriptionForAdmins(&descriptionForAdmins) 
 scope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.principalResourceMembershipsScope"
-scope.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 
 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-.Set"@odata.type"(&"@odata.type") 
 query := "/users"
 .SetQuery(&query) 
 queryType := "MicrosoftGraph"
@@ -33,8 +29,6 @@ queryType := "MicrosoftGraph"
 
 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-.Set"@odata.type"(&"@odata.type") 
 query := "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae"
 .SetQuery(&query) 
 queryType := "MicrosoftGraph"
@@ -117,15 +111,15 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.NUMBERED_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := "2021-05-05"
+startDate := 2021-05-05
 range.SetStartDate(&startDate) 
-endDate := "2022-05-05"
+endDate := 2022-05-05
 range.SetEndDate(&endDate) 
 recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

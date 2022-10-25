@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Functions
 
 # A UPN can also be used as -UserId.
-Get-MgUserCloudPcLaunchInfo -UserId $userId -CloudPCId $cloudPCId -OutFile $outFileId
+Get-MgUserCloudPcLaunchInfo -UserId $userId -CloudPCId $cloudPCId
 
 ```

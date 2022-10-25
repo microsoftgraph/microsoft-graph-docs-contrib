@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource type",
+          "Description": "Added the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource type",
           "Target": "searchRequest"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchQuery",
           "ChangeType": "Addition",
-          "Description": "Added the [searchQuery](https://docs.microsoft.com/en-us/graph/api/resources/searchQuery?view=graph-rest-1.0) resource type",
+          "Description": "Added the [searchQuery](https://learn.microsoft.com/en-us/graph/api/resources/searchQuery?view=graph-rest-1.0) resource type",
           "Target": "searchQuery"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-1.0) resource type",
+          "Description": "Added the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-1.0) resource type",
           "Target": "searchResponse"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchHitsContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [searchHitsContainer](https://docs.microsoft.com/en-us/graph/api/resources/searchHitsContainer?view=graph-rest-1.0) resource type",
+          "Description": "Added the [searchHitsContainer](https://learn.microsoft.com/en-us/graph/api/resources/searchHitsContainer?view=graph-rest-1.0) resource type",
           "Target": "searchHitsContainer"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchHit",
           "ChangeType": "Addition",
-          "Description": "Added the [searchHit](https://docs.microsoft.com/en-us/graph/api/resources/searchHit?view=graph-rest-1.0) resource type",
+          "Description": "Added the [searchHit](https://learn.microsoft.com/en-us/graph/api/resources/searchHit?view=graph-rest-1.0) resource type",
           "Target": "searchHit"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchEntity",
           "ChangeType": "Addition",
-          "Description": "Added the [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource type",
+          "Description": "Added the [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource type",
           "Target": "searchEntity"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "query",
           "ChangeType": "Addition",
-          "Description": "Added the [query](https://docs.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-1.0) method to the [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
+          "Description": "Added the [query](https://learn.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-1.0) method to the [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
           "Target": "searchEntity"
         }
       ],
@@ -81,7 +81,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "queryAlterationResponse",
           "ChangeType": "Addition",
-          "Description": "Added the **queryAlterationResponse** property to the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Description": "Added the **queryAlterationResponse** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
           "Target": "searchResponse"
         },
         {
@@ -89,7 +89,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "value",
           "ChangeType": "Addition",
-          "Description": "Added the **value** property to the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Description": "Added the **value** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
           "Target": "searchResponse"
         },
         {
@@ -97,7 +97,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchAlterationOptions",
           "ChangeType": "Addition",
-          "Description": "Added the [searchAlterationOptions](https://docs.microsoft.com/en-us/graph/api/resources/searchAlterationOptions?view=graph-rest-beta) resource type.",
+          "Description": "Added the [searchAlterationOptions](https://learn.microsoft.com/en-us/graph/api/resources/searchAlterationOptions?view=graph-rest-beta) resource type.",
           "Target": "searchAlterationOptions"
         },
         {
@@ -105,7 +105,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchResultSet",
           "ChangeType": "Addition",
-          "Description": "Added the [searchResultSet](https://docs.microsoft.com/en-us/graph/api/resources/searchResultSet?view=graph-rest-beta) resource type.",
+          "Description": "Added the [searchResultSet](https://learn.microsoft.com/en-us/graph/api/resources/searchResultSet?view=graph-rest-beta) resource type.",
           "Target": "searchResultSet"
         },
         {
@@ -113,7 +113,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "alterationResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [alterationResponse](https://docs.microsoft.com/en-us/graph/api/resources/alterationresponse?view=graph-rest-beta) resource type.",
+          "Description": "Added the [alterationResponse](https://learn.microsoft.com/en-us/graph/api/resources/alterationresponse?view=graph-rest-beta) resource type.",
           "Target": "alterationResponse"
         },
         {
@@ -121,7 +121,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchAlteration",
           "ChangeType": "Addition",
-          "Description": "Added the [searchAlteration](https://docs.microsoft.com/en-us/graph/api/resources/searchAlteration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [searchAlteration](https://learn.microsoft.com/en-us/graph/api/resources/searchAlteration?view=graph-rest-beta) resource type.",
           "Target": "searchAlteration"
         },
         {
@@ -129,7 +129,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "alteredQueryToken",
           "ChangeType": "Addition",
-          "Description": "Added the [alteredQueryToken](https://docs.microsoft.com/en-us/graph/api/resources/alteredQueryToken?view=graph-rest-beta) resource type.",
+          "Description": "Added the [alteredQueryToken](https://learn.microsoft.com/en-us/graph/api/resources/alteredQueryToken?view=graph-rest-beta) resource type.",
           "Target": "alteredQueryToken"
         },
         {
@@ -145,7 +145,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "queryAlterationOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **queryAlterationOptions** parameter to the [query](https://docs.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-beta) method.",
+          "Description": "Added the **queryAlterationOptions** parameter to the [query](https://learn.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-beta) method.",
           "Target": "query"
         },
         {
@@ -153,7 +153,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "searchTerms",
           "ChangeType": "Deletion",
-          "Description": "Removed the **searchTerms** property from the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Description": "Removed the **searchTerms** property from the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
           "Target": "searchResponse"
         },
         {
@@ -161,7 +161,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "hitsContainers",
           "ChangeType": "Deletion",
-          "Description": "Removed the **hitsContainers** property from the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Description": "Removed the **hitsContainers** property from the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
           "Target": "searchResponse"
         },
         {
@@ -169,7 +169,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "query",
           "ChangeType": "Change",
-          "Description": "Changed the return type for the [query](https://docs.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-beta) method.",
+          "Description": "Changed the return type for the [query](https://learn.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-beta) method.",
           "Target": "query"
         }
       ],
@@ -247,7 +247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aggregationOption",
           "ChangeType": "Addition",
-          "Description": "Added the [aggregationOption](https://docs.microsoft.com/en-us/graph/api/resources/aggregationOption?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [aggregationOption](https://learn.microsoft.com/en-us/graph/api/resources/aggregationOption?view=graph-rest-1.0) resource type.",
           "Target": "aggregationOption"
         },
         {
@@ -255,7 +255,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bucketAggregationDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [bucketAggregationDefinition](https://docs.microsoft.com/en-us/graph/api/resources/bucketAggregationDefinition?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [bucketAggregationDefinition](https://learn.microsoft.com/en-us/graph/api/resources/bucketAggregationDefinition?view=graph-rest-1.0) resource type.",
           "Target": "bucketAggregationDefinition"
         },
         {
@@ -263,7 +263,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bucketAggregationRange",
           "ChangeType": "Addition",
-          "Description": "Added the [bucketAggregationRange](https://docs.microsoft.com/en-us/graph/api/resources/bucketAggregationRange?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [bucketAggregationRange](https://learn.microsoft.com/en-us/graph/api/resources/bucketAggregationRange?view=graph-rest-1.0) resource type.",
           "Target": "bucketAggregationRange"
         },
         {
@@ -271,7 +271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchAggregation",
           "ChangeType": "Addition",
-          "Description": "Added the [searchAggregation](https://docs.microsoft.com/en-us/graph/api/resources/searchAggregation?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [searchAggregation](https://learn.microsoft.com/en-us/graph/api/resources/searchAggregation?view=graph-rest-1.0) resource type.",
           "Target": "searchAggregation"
         },
         {
@@ -279,7 +279,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchBucket",
           "ChangeType": "Addition",
-          "Description": "Added the [searchBucket](https://docs.microsoft.com/en-us/graph/api/resources/searchBucket?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [searchBucket](https://learn.microsoft.com/en-us/graph/api/resources/searchBucket?view=graph-rest-1.0) resource type.",
           "Target": "searchBucket"
         },
         {
@@ -287,7 +287,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "aggregations",
           "ChangeType": "Addition",
-          "Description": "Added the **aggregations** property to [searchHitsContainer](https://docs.microsoft.com/en-us/graph/api/resources/searchHitsContainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the **aggregations** property to [searchHitsContainer](https://learn.microsoft.com/en-us/graph/api/resources/searchHitsContainer?view=graph-rest-1.0) resource.",
           "Target": "searchHitsContainer"
         },
         {
@@ -295,7 +295,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "aggregationFilters",
           "ChangeType": "Addition",
-          "Description": "Added the **aggregationFilters** property to [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
+          "Description": "Added the **aggregationFilters** property to [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
           "Target": "searchRequest"
         },
         {
@@ -303,7 +303,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "aggregations",
           "ChangeType": "Addition",
-          "Description": "Added the **aggregations** property to [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
+          "Description": "Added the **aggregations** property to [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
           "Target": "searchRequest"
         },
         {
@@ -311,7 +311,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sortProperties",
           "ChangeType": "Addition",
-          "Description": "Added the **sortProperties** property to [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
+          "Description": "Added the **sortProperties** property to [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
           "Target": "searchRequest"
         },
         {
@@ -319,7 +319,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sortProperty",
           "ChangeType": "Addition",
-          "Description": "Added the [sortProperty](https://docs.microsoft.com/en-us/graph/api/resources/sortProperty?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [sortProperty](https://learn.microsoft.com/en-us/graph/api/resources/sortProperty?view=graph-rest-1.0) resource type.",
           "Target": "sortProperty"
         }
       ],
@@ -337,7 +337,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "queryAlterationOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **queryAlterationOptions** property to the [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **queryAlterationOptions** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-beta) resource.",
           "Target": "searchRequest"
         },
         {
@@ -345,7 +345,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "hitsContainers",
           "ChangeType": "Addition",
-          "Description": "Added the **hitsContainers** property to the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Description": "Added the **hitsContainers** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
           "Target": "searchResponse"
         },
         {
@@ -353,7 +353,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resultTemplates",
           "ChangeType": "Addition",
-          "Description": "Added the **resultTemplates** property to the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Description": "Added the **resultTemplates** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
           "Target": "searchResponse"
         },
         {
@@ -361,7 +361,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "searchTerms",
           "ChangeType": "Addition",
-          "Description": "Added the **searchTerms** property to the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Description": "Added the **searchTerms** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
           "Target": "searchResponse"
         },
         {
@@ -369,7 +369,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "value",
           "ChangeType": "Deletion",
-          "Description": "Removed the **value** property from the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Description": "Removed the **value** property from the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
           "Target": "searchResponse"
         },
         {
@@ -385,7 +385,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "query",
           "ChangeType": "Change",
-          "Description": "Updated the [query](https://docs.microsoft.com/en-us/graph/api/query?view=graph-rest-beta) method to return a collection of [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-beta) objects.",
+          "Description": "Updated the [query](https://learn.microsoft.com/en-us/graph/api/query?view=graph-rest-beta) method to return a collection of [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-beta) objects.",
           "Target": "query"
         }
       ],
@@ -411,7 +411,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "alterationResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [alterationResponse](https://docs.microsoft.com/en-us/graph/api/resources/alterationresponse?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [alterationResponse](https://learn.microsoft.com/en-us/graph/api/resources/alterationresponse?view=graph-rest-1.0) resource type.",
           "Target": "alterationResponse"
         },
         {
@@ -419,7 +419,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "alteredQueryToken",
           "ChangeType": "Addition",
-          "Description": "Added the [alteredQueryToken](https://docs.microsoft.com/en-us/graph/api/resources/alteredquerytoken?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [alteredQueryToken](https://learn.microsoft.com/en-us/graph/api/resources/alteredquerytoken?view=graph-rest-1.0) resource type.",
           "Target": "alteredQueryToken"
         },
         {
@@ -427,7 +427,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "resultTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [resultTemplate](https://docs.microsoft.com/en-us/graph/api/resources/resulttemplate?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [resultTemplate](https://learn.microsoft.com/en-us/graph/api/resources/resulttemplate?view=graph-rest-1.0) resource type.",
           "Target": "resultTemplate"
         },
         {
@@ -435,7 +435,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "resultTemplateOption",
           "ChangeType": "Addition",
-          "Description": "Added the [resultTemplateOption](https://docs.microsoft.com/en-us/graph/api/resources/resulttemplateoption?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [resultTemplateOption](https://learn.microsoft.com/en-us/graph/api/resources/resulttemplateoption?view=graph-rest-1.0) resource type.",
           "Target": "resultTemplateOption"
         },
         {
@@ -443,7 +443,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchAlteration",
           "ChangeType": "Addition",
-          "Description": "Added the [searchAlteration](https://docs.microsoft.com/en-us/graph/api/resources/searchalteration?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [searchAlteration](https://learn.microsoft.com/en-us/graph/api/resources/searchalteration?view=graph-rest-1.0) resource type.",
           "Target": "searchAlteration"
         },
         {
@@ -451,7 +451,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchAlterationOptions",
           "ChangeType": "Addition",
-          "Description": "Added the [searchAlterationOptions](https://docs.microsoft.com/en-us/graph/api/resources/searchalterationoptions?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [searchAlterationOptions](https://learn.microsoft.com/en-us/graph/api/resources/searchalterationoptions?view=graph-rest-1.0) resource type.",
           "Target": "searchAlterationOptions"
         },
         {
@@ -459,7 +459,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resultTemplateId",
           "ChangeType": "Addition",
-          "Description": "Added the **resultTemplateId** property to the [searchHit](https://docs.microsoft.com/en-us/graph/api/resources/searchhit?view=graph-rest-1.0) resource.",
+          "Description": "Added the **resultTemplateId** property to the [searchHit](https://learn.microsoft.com/en-us/graph/api/resources/searchhit?view=graph-rest-1.0) resource.",
           "Target": "searchHit"
         },
         {
@@ -467,7 +467,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "queryAlterationOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **queryAlterationOptions** property to the [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-1.0) resource.",
+          "Description": "Added the **queryAlterationOptions** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-1.0) resource.",
           "Target": "searchRequest"
         },
         {
@@ -475,7 +475,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resultTemplateOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **resultTemplateOptions** property to the [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-1.0) resource.",
+          "Description": "Added the **resultTemplateOptions** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-1.0) resource.",
           "Target": "searchRequest"
         },
         {
@@ -483,7 +483,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "queryAlterationResponse",
           "ChangeType": "Addition",
-          "Description": "Added the **queryAlterationResponse** property to the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-1.0) resource.",
+          "Description": "Added the **queryAlterationResponse** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-1.0) resource.",
           "Target": "searchResponse"
         },
         {
@@ -491,7 +491,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resultTemplates",
           "ChangeType": "Addition",
-          "Description": "Added the **resultTemplates** property to the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-1.0) resource.",
+          "Description": "Added the **resultTemplates** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-1.0) resource.",
           "Target": "searchResponse"
         }
       ],
@@ -509,7 +509,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "Size",
           "ChangeType": "Change",
-          "Description": "Add maximum page size of 1000 results for a [search query](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta).",
+          "Description": "Add maximum page size of 1000 results for a [search query](https://learn.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta).",
           "Target": "searchRequest"
         }
       ],
@@ -527,7 +527,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "Size",
           "ChangeType": "Change",
-          "Description": "Add maximum page size of 1000 results for a [search query](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-1.0).",
+          "Description": "Add maximum page size of 1000 results for a [search query](https://learn.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-1.0).",
           "Target": "searchRequest"
         }
       ],
@@ -545,7 +545,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "hitId",
           "ChangeType": "Change",
-          "Description": "Changed the **hitId** format for the [message](https://docs.microsoft.com/en-us/graph/search-concept-messages) entity from REST syntax to EWS syntax.\nReplace '-' with '/' and replace '_' with '+' can format the EWS-syntax back to REST-syntax",
+          "Description": "Changed the **hitId** format for the [message](https://learn.microsoft.com/en-us/graph/search-concept-messages) entity from REST syntax to EWS syntax.\nReplace '-' with '/' and replace '_' with '+' can format the EWS-syntax back to REST-syntax",
           "Target": "searchResponse"
         }
       ],
@@ -563,7 +563,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "hitId",
           "ChangeType": "Change",
-          "Description": "Changed the **hitId** format for the [message](https://docs.microsoft.com/en-us/graph/search-concept-messages) entity from REST syntax to EWS syntax.\nReplace '-' with '/' and replace '_' with '+' can format the EWS-syntax back to REST-syntax",
+          "Description": "Changed the **hitId** format for the [message](https://learn.microsoft.com/en-us/graph/search-concept-messages) entity from REST syntax to EWS syntax.\nReplace '-' with '/' and replace '_' with '+' can format the EWS-syntax back to REST-syntax",
           "Target": "searchResponse"
         }
       ],
@@ -571,6 +571,76 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-07-14T04:11:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+          "ApiChange": "Member",
+          "ChangedApiName": "acronym",
+          "ChangeType": "Addition",
+          "Description": "Added the **acronym** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+          "ApiChange": "Member",
+          "ChangedApiName": "bookmark",
+          "ChangeType": "Addition",
+          "Description": "Added the **bookmark** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+          "ApiChange": "Member",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatMessage** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        }
+      ],
+      "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-10T12:02:57.3248454Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4a728a91-0c10-4a52-88df-609487321793",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Bookmark.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `Bookmark.Read.All` to access [bookmark](https://learn.microsoft.com/en-us/graph/search-concept-bookmark)",
+          "Target": "bookmark"
+        }
+      ],
+      "Id": "4a728a91-0c10-4a52-88df-609487321793",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T04:11:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9ed09e7e-eb50-4879-9c12-df9f57bb51e1",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Acronym.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `Acronym.Read.All` to access [acronym](https://learn.microsoft.com/en-us/graph/search-concept-acronym)",
+          "Target": "acronym"
+        }
+      ],
+      "Id": "9ed09e7e-eb50-4879-9c12-df9f57bb51e1",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T04:12:04.628237Z",
       "WorkloadArea": "Search",
       "SubArea": ""
     }

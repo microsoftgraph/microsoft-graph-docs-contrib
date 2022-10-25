@@ -39,7 +39,7 @@ additionalData := map[string]interface{}{
 dataSubject.SetAdditionalData(additionalData)
 requestBody.SetDataSubject(dataSubject)
 
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(requestBody)
+result, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

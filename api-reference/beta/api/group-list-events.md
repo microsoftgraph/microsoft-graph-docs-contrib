@@ -1,7 +1,7 @@
 ---
 title: "List events"
 description: "Retrieve a list of event objects."
-author: "Harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType

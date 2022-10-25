@@ -11,8 +11,6 @@ requestBody := graphmodels.NewUpdateAudiencePostRequestBody()
 
 
 updatableAsset := graphmodels.NewUpdatableAsset()
-"@odata.type" := "#microsoft.graph.windowsUpdates.azureADDevice"
-updatableAsset.Set"@odata.type"(&"@odata.type") 
 id := "String (identifier)"
 updatableAsset.SetId(&id) 
 
@@ -24,8 +22,6 @@ requestBody.SetAddMembers(addMembers)
 
 
 updatableAsset := graphmodels.NewUpdatableAsset()
-"@odata.type" := "#microsoft.graph.windowsUpdates.azureADDevice"
-updatableAsset.Set"@odata.type"(&"@odata.type") 
 id := "String (identifier)"
 updatableAsset.SetId(&id) 
 
@@ -37,8 +33,6 @@ requestBody.SetRemoveMembers(removeMembers)
 
 
 updatableAsset := graphmodels.NewUpdatableAsset()
-"@odata.type" := "#microsoft.graph.windowsUpdates.azureADDevice"
-updatableAsset.Set"@odata.type"(&"@odata.type") 
 id := "String (identifier)"
 updatableAsset.SetId(&id) 
 
@@ -50,8 +44,6 @@ requestBody.SetAddExclusions(addExclusions)
 
 
 updatableAsset := graphmodels.NewUpdatableAsset()
-"@odata.type" := "#microsoft.graph.windowsUpdates.azureADDevice"
-updatableAsset.Set"@odata.type"(&"@odata.type") 
 id := "String (identifier)"
 updatableAsset.SetId(&id) 
 
@@ -61,7 +53,7 @@ removeExclusions := []graphmodels.Objectable {
 }
 requestBody.SetRemoveExclusions(removeExclusions)
 
-graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudience().Post(requestBody)
+graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudience().Post(context.Background(), requestBody, nil)
 
 
 ```

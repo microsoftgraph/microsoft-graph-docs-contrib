@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.TeamsById("team-id").Schedule().SchedulingGroupsById("schedulingGroup-id").Delete()
+graphClient.TeamsById("team-id").Schedule().SchedulingGroupsById("schedulingGroup-id").Delete(context.Background(), nil)
 
 
 ```

@@ -9,15 +9,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewTransferPostRequestBody()
 transferTarget := graphmodels.NewInvitationParticipantInfo()
-"@odata.type" := "#microsoft.graph.invitationParticipantInfo"
-transferTarget.Set"@odata.type"(&"@odata.type") 
 identity := graphmodels.NewIdentitySet()
-"@odata.type" := "#microsoft.graph.identitySet"
-identity.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 phone := graphmodels.New()
-"@odata.type" := "#microsoft.graph.identity"
-phone.Set"@odata.type"(&"@odata.type") 
 id := "+12345678901"
 phone.SetId(&id) 
 	identity.SetPhone(phone)
@@ -38,7 +32,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Communications().CallsById("call-id").Transfer().Post(requestBody)
+graphClient.Communications().CallsById("call-id").Transfer().Post(context.Background(), requestBody, nil)
 
 
 ```

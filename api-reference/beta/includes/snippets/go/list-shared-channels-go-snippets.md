@@ -7,14 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFilter := "membershipType eq 'shared'"
+
 requestParameters := &graphconfig.ChannelsRequestBuilderGetQueryParameters{
-	Filter: "membershipType eq 'shared'",
+	Filter: &requestFilter,
 }
 configuration := &graphconfig.ChannelsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Channels().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.TeamsById("team-id").Channels().Get(context.Background(), configuration)
 
 
 ```

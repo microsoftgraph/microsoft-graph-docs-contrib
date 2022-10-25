@@ -7,7 +7,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "azureADRegistrationPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the [azureADRegistrationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/azureADRegistrationPolicy?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [azureADRegistrationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADRegistrationPolicy?view=graph-rest-beta) resource type.",
                     "Target": "azureADRegistrationPolicy"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "azureAdJoinPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the [azureAdJoinPolicy](https://docs.microsoft.com/en-us/graph/api/resources/azureAdJoinPolicy?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [azureAdJoinPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureAdJoinPolicy?view=graph-rest-beta) resource type.",
                     "Target": "azureAdJoinPolicy"
                 },
                 {
@@ -23,7 +23,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "deviceRegistrationPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the [deviceRegistrationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/deviceRegistrationPolicy?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [deviceRegistrationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/deviceRegistrationPolicy?view=graph-rest-beta) resource type.",
                     "Target": "deviceRegistrationPolicy"
                 },
                 {
@@ -31,7 +31,7 @@
                     "ApiChange": "Relationship",
                     "ChangedApiName": "deviceRegistrationPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the **deviceRegistrationPolicy** navigation property to the [policyRoot](https://docs.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-beta) resource.",
+                    "Description": "Added the **deviceRegistrationPolicy** navigation property to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-beta) resource.",
                     "Target": "policyRoot"
                 },
                 {

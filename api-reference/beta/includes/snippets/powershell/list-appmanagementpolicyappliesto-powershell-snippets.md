@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId -OutFile $outFileId
+Get-MgPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId
 
 ```

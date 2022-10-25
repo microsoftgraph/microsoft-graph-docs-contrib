@@ -28,7 +28,7 @@ value := []graphmodels.Objectable {
 }
 requestBody.SetValue(value)
 
-result, err := graphClient.Security().TiIndicators().UpdateTiIndicators().Post(requestBody)
+result, err := graphClient.Security().TiIndicators().UpdateTiIndicators().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -13,42 +13,30 @@ $requestBody = new GroupSetting();
 $requestBody->setTemplateId('62375ab9-6b52-47ed-826b-58e47e0e304b');
 
 $valuesSettingValue1 = new SettingValue();
-$additionalData = [
-'name' => 'GuestUsageGuidelinesUrl', 
-'value' => 'https://privacy.contoso.com/privacystatement', 
-];
-$valuesSettingValue1->setAdditionalData($additionalData);
+$valuesSettingValue1->setName('GuestUsageGuidelinesUrl');
 
+$valuesSettingValue1->setValue('https://privacy.contoso.com/privacystatement');
 
 
 $valuesArray []= $valuesSettingValue1;
 $valuesSettingValue2 = new SettingValue();
-$additionalData = [
-'name' => 'EnableMSStandardBlockedWords', 
-'value' => 'true', 
-];
-$valuesSettingValue2->setAdditionalData($additionalData);
+$valuesSettingValue2->setName('EnableMSStandardBlockedWords');
 
+$valuesSettingValue2->setValue('true');
 
 
 $valuesArray []= $valuesSettingValue2;
 $valuesSettingValue3 = new SettingValue();
-$additionalData = [
-'name' => 'EnableMIPLabels', 
-'value' => 'true', 
-];
-$valuesSettingValue3->setAdditionalData($additionalData);
+$valuesSettingValue3->setName('EnableMIPLabels');
 
+$valuesSettingValue3->setValue('true');
 
 
 $valuesArray []= $valuesSettingValue3;
 $valuesSettingValue4 = new SettingValue();
-$additionalData = [
-'name' => 'PrefixSuffixNamingRequirement', 
-'value' => '[Contoso-][GroupName]', 
-];
-$valuesSettingValue4->setAdditionalData($additionalData);
+$valuesSettingValue4->setName('PrefixSuffixNamingRequirement');
 
+$valuesSettingValue4->setValue('[Contoso-][GroupName]');
 
 
 $valuesArray []= $valuesSettingValue4;

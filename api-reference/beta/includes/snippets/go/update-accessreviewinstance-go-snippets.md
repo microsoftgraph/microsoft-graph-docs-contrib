@@ -9,21 +9,15 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewAccessReviewInstance()
 scope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.principalResourceMembershipsScope"
-scope.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 
 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-.Set"@odata.type"(&"@odata.type") 
 query := "/v1.0/users"
 .SetQuery(&query) 
 queryType := "MicrosoftGraph"
 .SetQueryType(&queryType) 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-.Set"@odata.type"(&"@odata.type") 
 query := "/v1.0/groups"
 .SetQuery(&query) 
 queryType := "MicrosoftGraph"
@@ -37,8 +31,6 @@ queryType := "MicrosoftGraph"
 
 
  := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-.Set"@odata.type"(&"@odata.type") 
 query := "/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
 .SetQuery(&query) 
 queryType := "MicrosoftGraph"
@@ -84,7 +76,7 @@ fallbackReviewers := []graphmodels.Objectable {
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)
 
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").Patch(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

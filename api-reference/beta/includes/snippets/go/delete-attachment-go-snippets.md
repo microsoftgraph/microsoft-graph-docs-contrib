@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 
-graphClient.Me().EventsById("event-id").AttachmentsById("attachment-id").Delete()
+graphClient.Me().EventsById("event-id").AttachmentsById("attachment-id").Delete(context.Background(), nil)
 
 
 ```

@@ -14,7 +14,7 @@ configuration := &graphconfig.HealthOverviewsRequestBuilderGetRequestConfigurati
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviews().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviews().Get(context.Background(), configuration)
 
 
 ```

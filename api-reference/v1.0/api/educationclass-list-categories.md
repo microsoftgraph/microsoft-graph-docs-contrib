@@ -1,7 +1,7 @@
 ---
 title: "List assignmentCategories"
 description: "Retrieve a list of category objects."
-author: "mmast-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -32,7 +32,8 @@ GET /education/classes/{id}/assignmentCategories
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 

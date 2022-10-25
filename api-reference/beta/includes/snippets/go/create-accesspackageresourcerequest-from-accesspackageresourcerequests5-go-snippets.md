@@ -12,12 +12,12 @@ catalogId := "beedadfe-01d5-4025-910b-84abb9369997"
 requestBody.SetCatalogId(&catalogId) 
 requestType := "AdminRemove"
 requestBody.SetRequestType(&requestType) 
-accessPackageResource := graphmodels.NewaccessPackageResource()
+accessPackageResource := graphmodels.NewAccessPackageResource()
 id := "354078e5-dbce-4894-8af4-0ab274d41662"
 accessPackageResource.SetId(&id) 
 requestBody.SetAccessPackageResource(accessPackageResource)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

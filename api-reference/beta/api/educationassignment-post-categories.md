@@ -4,6 +4,7 @@ description: "Add an existing educationCategory to an educationAssignment"
 ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
+ms.collection: "education"
 doc_type: "apiPageType"
 ---
 
