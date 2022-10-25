@@ -1201,6 +1201,56 @@
     {
       "ChangeList": [
         {
+          "Id": "d7e73514-9dad-4c2f-8762-786788ac6984",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "searchContent",
+          "ChangeType": "Addition",
+          "Description": "Added the **searchContent** enumeration type.",
+          "Target": "searchContent"
+        },
+        {
+          "Id": "d7e73514-9dad-4c2f-8762-786788ac6984",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharePointOneDriveOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointOneDriveOptions** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-beta) resource.",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "d7e73514-9dad-4c2f-8762-786788ac6984",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointOneDriveOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointOneDriveOptions](https://learn.microsoft.com/en-us/graph/api/resources/sharePointOneDriveOptions?view=graph-rest-beta) resource type.",
+          "Target": "sharePointOneDriveOptions"
+        },
+        {
+            "Id": "75c49e0c-6150-4c70-b5d1-7da81d22e738",
+            "ApiChange": "Permission",
+            "ChangedApiName": "Files.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the `Files.Read.All` application permission to the [searchEntity: query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method.",
+            "Target": "identity"
+         },
+         {
+            "Id": "75c49e0c-6150-4c70-b5d1-7da81d22e738",
+            "ApiChange": "Permission",
+            "ChangedApiName": "Sites.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the `Sites.Read.All` application permission to the [searchEntity: query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method.",
+            "Target": "identity"
+         }
+      ],
+      "Id": "d7e73514-9dad-4c2f-8762-786788ac6984",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-10T06:50:44.0853657Z",
+      "WorkloadArea": "Search",
+      "SubArea": "Query"
+      },
+      {
+      "ChangeList": [
+        {
           "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
           "ApiChange": "Enum type",
           "ChangedApiName": "externalActivityType",
