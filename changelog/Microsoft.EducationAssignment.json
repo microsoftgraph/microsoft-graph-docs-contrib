@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "educationFeedbackResourceOutcomeStatus",
           "ChangeType": "Addition",
           "Description": "Added the **educationFeedbackResourceOutcomeStatus** enumeration type.",
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "feedbackResourcesFolderUrl",
           "ChangeType": "Addition",
-          "Description": "Added the `feedbackResourcesFolderUrl` property to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
+          "Description": "Added the **feedbackResourcesFolderUrl** property to the [educationAssignment](https://learn.microsoft.com/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
           "Target": "educationAssignment"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationFeedbackResourceOutcome",
           "ChangeType": "Addition",
-          "Description": "Added the [educationFeedbackResourceOutcome](https://docs.microsoft.com/en-us/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-1.0) resource",
+          "Description": "Added the [educationFeedbackResourceOutcome](https://learn.microsoft.com/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-1.0) resource and supported methods.",
           "Target": "educationFeedbackResourceOutcome"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setUpFeedbackResourcesFolder",
           "ChangeType": "Addition",
-          "Description": "Added the [setUpFeedbackResourcesFolder](https://docs.microsoft.com/en-us/graph/api/educationAssignment?view=graph-rest-1.0) method to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/educationAssignment?view=graph-rest-1.0) resource.",
+          "Description": "Added the [setUpFeedbackResourcesFolder](https://learn.microsoft.com/graph/api/educationassignment-setupfeedbackresourcesfolder?view=graph-rest-1.0) method to the [educationAssignment](https://learn.microsoft.com/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
           "Target": "educationAssignment"
         }
       ],
@@ -226,7 +226,7 @@
       "ChangeList": [
         {
           "Id": "0089a052-0ffa-47ba-a8c0-9fad7f1ae0cc",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "educationFeedbackResourceOutcomeStatus",
           "ChangeType": "Addition",
           "Description": "Added the **educationFeedbackResourceOutcomeStatus** enumeration type.",

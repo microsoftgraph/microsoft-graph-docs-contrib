@@ -977,6 +977,7 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### educationAddToCalendarOptions values
+
 |Member|
 |:---|
 |none|
@@ -986,6 +987,7 @@ Namespace: microsoft.graph
 |studentsOnly|
 
 ### educationAssignmentStatus values
+
 |Member|
 |:---|
 |draft|
@@ -994,6 +996,7 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### educationSubmissionStatus values
+
 |Member|
 |:---|
 |working|
@@ -1004,6 +1007,7 @@ Namespace: microsoft.graph
 |reassigned|
 
 ### educationFeedbackResourceOutcomeStatus values
+
 |Member|
 |:---|
 |notPublished|

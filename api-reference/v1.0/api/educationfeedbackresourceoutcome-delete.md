@@ -1,6 +1,6 @@
 ---
 title: "Delete educationFeedbackResourceOutcome"
-description: "Delete a feedback resource from a submission. This can only be done by a teacher."
+description: "Delete a feedback resource from a submission."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -34,7 +34,7 @@ DELETE /education/classes/{classId}/assignments/{assignmentId}/submissions/{subm
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Don't supply a request body for this method.
+Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
@@ -43,8 +43,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 ### Request
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_educationfeedbackresourceoutcome"
