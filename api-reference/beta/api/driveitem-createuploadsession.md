@@ -88,10 +88,10 @@ The following example controls the behavior if the filename is already taken, an
 
 ## Parameters
 
-| Parameter            | Type                          | Description
-|:---------------------|:------------------------------|:---------------------------------
-| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded
-| deferCommit          | Boolean                       | If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business.
+| Parameter   | Type                                                                           | Description                                                                                           |
+|:------------|:-------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
+| deferCommit | Boolean                                                                        | If set to `true`, the final creation of the file in the destination will require an explicit request. |
+| item        | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded.                                                                   |
 
 ### Request
 
@@ -420,6 +420,10 @@ how errors are returned.
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 [mediaSource]: ../resources/mediaSource.md
+
+## See also
+
+[Large file upload](/graph/sdks/large-file-upload)
 
 <!--
 {

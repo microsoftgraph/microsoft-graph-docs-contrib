@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 Delete a specific [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
-When you delete a connection, permissions to the service are removed from the specified Azure resources.
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-You cannot delete an on-premises connection once it passes health check, which is indicated by the `healthCheckStatus` property.
+When you delete an Azure network connection, permissions to the service are removed from the specified Azure resources.
 
-You cannot delete a connection when it's in use either, as indicated by the `inUse` property.
+You cannot delete an Azure network connection when it's in use, as indicated by the `inUse` property.
 
 ## Permissions
 
@@ -71,16 +71,13 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-onpremisesconnections-from-virtualendpoint-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-onpremisesconnections-from-virtualendpoint-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-onpremisesconnections-from-virtualendpoint-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -93,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremi
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-onpremisesconnections-from-virtualendpoint-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-onpremisesconnections-from-virtualendpoint-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

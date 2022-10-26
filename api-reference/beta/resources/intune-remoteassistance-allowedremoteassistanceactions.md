@@ -23,6 +23,9 @@ Flags enumeration indicating whether a helper can establish a "View screen", "Ta
 |viewScreen|1|Helper can view the screen of the sharer's device|
 |takeFullControl|2|Helper can take full control of the sharer's device|
 |elevation|4|Helper can take full control of the sharer's device with elevated privileges|
+|unattended|8|Helper can take unattended control on sharer's device|
+|unknownFutureValue|16|unknownFutureValue - For making the Enum evolvable|
+
 
 
 

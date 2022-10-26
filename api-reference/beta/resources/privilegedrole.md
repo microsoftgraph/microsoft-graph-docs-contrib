@@ -4,7 +4,7 @@ description: "Represents an Azure AD administrator role, such as: Global Adminis
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # privilegedRole resource type (deprecated)

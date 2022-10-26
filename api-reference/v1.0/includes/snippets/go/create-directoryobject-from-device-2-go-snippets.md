@@ -7,16 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+requestBody := graphmodels.NewRegisteredUser()
+additionalData := map[string]interface{}{
+	"@odata.id" : "https://graph.microsoft.com/v1.0/directoryObjects/{id}", 
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderPostOptions{
-	Body: requestBody,
-}
-deviceId := "device-id"
-directoryObjectId := "directoryObject-id"
-graphClient.DevicesById(&deviceId).RegisteredUsersById(&directoryObjectId).Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.DevicesById("device-id").RegisteredUsersById("directoryObject-id").Post(context.Background(), requestBody, nil)
 
 
 ```

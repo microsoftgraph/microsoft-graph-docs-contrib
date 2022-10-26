@@ -7,13 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAuthorizationPolicy()
+requestBody := graphmodels.NewAuthorizationPolicy()
 allowedToUseSSPR := true
-requestBody.SetAllowedToUseSSPR(&allowedToUseSSPR)
-options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Policies().AuthorizationPolicy().Patch(options)
+requestBody.SetAllowedToUseSSPR(&allowedToUseSSPR) 
+
+result, err := graphClient.Policies().AuthorizationPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAccessPackageCatalog()
+requestBody := graphmodels.NewAccessPackageCatalog()
 displayName := "Catalog One"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.AccessPackageCatalogRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-accessPackageCatalogId := "accessPackageCatalog-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).Patch(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById("accessPackageCatalog-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

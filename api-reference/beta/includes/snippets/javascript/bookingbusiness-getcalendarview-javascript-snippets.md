@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let calendarView = await client.api('/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z')
+let calendarView = await client.api('/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z')
 	.version('beta')
 	.get();
 

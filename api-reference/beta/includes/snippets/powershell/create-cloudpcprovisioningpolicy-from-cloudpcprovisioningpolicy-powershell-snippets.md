@@ -19,6 +19,9 @@ $params = @{
 	ImageId = "MicrosoftWindowsDesktop_Windows-10_19h1-evd"
 	ImageType = "gallery"
 	OnPremisesConnectionId = "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
+	WindowsSettings = @{
+		Language = "en-US"
+	}
 }
 
 New-MgDeviceManagementVirtualEndpointProvisioningPolicy -BodyParameter $params

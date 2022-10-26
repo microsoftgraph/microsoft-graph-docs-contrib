@@ -62,21 +62,19 @@ In this example, the specified message has three replies.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_listmessagereplies_1"
+  "name": "get_listmessagereplies_1",
+  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2", "1616989510408"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616989510408/replies
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-listmessagereplies-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-listmessagereplies-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-listmessagereplies-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -89,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-listmessagereplies-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-listmessagereplies-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

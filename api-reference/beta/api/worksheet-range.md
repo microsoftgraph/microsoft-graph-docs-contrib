@@ -65,16 +65,13 @@ Content-type: application/json
   "address": "address-value"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/worksheet-range-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/worksheet-range-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/worksheet-range-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

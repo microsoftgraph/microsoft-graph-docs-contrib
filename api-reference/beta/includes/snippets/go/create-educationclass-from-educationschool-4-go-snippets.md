@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 educationSchoolId := "educationSchool-id"
 educationUserId := "educationUser-id"
-graphClient.Education().SchoolsById(&educationSchoolId).UsersById(&educationUserId).Delete(nil)
+graphClient.Education().SchoolsById(&educationSchoolId).UsersById(&educationUserId).Delete()
 
 
 ```

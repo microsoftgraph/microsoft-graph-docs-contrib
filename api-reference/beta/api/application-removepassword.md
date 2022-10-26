@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account)     | Application.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Application.ReadWrite.All |
 | Application                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -72,16 +72,13 @@ Content-type: application/json
     "keyId": "f0b0b335-1d71-4883-8f98-567911bfdca6"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-removepassword-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/application-removepassword-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/application-removepassword-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstanceDecisionItem: filterByCurrentUser"
 description: "Retrieve all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -13,10 +13,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer. The decision items are presented by a [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) or [accessReviewStage](../resources/accessReviewStage.md) for which the calling user is the reviewer.
-
-
->[!NOTE]
->The default page size for this API is 100 **accessReviewInstanceDecisionItem** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,6 +57,8 @@ The following table shows the query parameters that can be used with this method
 ## Optional query parameters
 This method supports the `$select`, `$filter`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+The default page size for this API is 100 **accessReviewInstanceDecisionItem** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -88,6 +86,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/0185aab8-9a7e-44b5-ae36-41b923c3bf87/instances/1234aab8-9a7e-5678-ae36-41b923c3bf87/decisions/filterByCurrentUser(on='reviewer')
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewinstancedecisionitem-filterbycurrentuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,16 +95,20 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/javascript/accessreviewinstancedecisionitem-filterbycurrentuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/accessreviewinstancedecisionitem-filterbycurrentuser-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstancedecisionitem-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstancedecisionitem-filterbycurrentuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accessreviewinstancedecisionitem-filterbycurrentuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/accessreviewinstancedecisionitem-filterbycurrentuser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -180,6 +183,7 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/0185aab8-9a7e-44b5-ae36-41b923c3bf87/instances/1234aab8-9a7e-5678-ae36-41b923c3bf87/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/filterByCurrentUser(on='reviewer')
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewinstancedecisionitem-filterbycurrentuser-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -188,16 +192,20 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/javascript/accessreviewinstancedecisionitem-filterbycurrentuser-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/accessreviewinstancedecisionitem-filterbycurrentuser-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstancedecisionitem-filterbycurrentuser-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstancedecisionitem-filterbycurrentuser-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accessreviewinstancedecisionitem-filterbycurrentuser-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/accessreviewinstancedecisionitem-filterbycurrentuser-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

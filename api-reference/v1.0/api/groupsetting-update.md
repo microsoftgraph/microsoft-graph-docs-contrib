@@ -1,7 +1,7 @@
 ---
 title: "Update groupSetting"
 description: "Update the properties of a specific group setting object."
-author: "Jordanndahl"
+author: "psaffaie"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -17,39 +17,56 @@ Update the properties of a [groupSetting](../resources/groupsetting.md) object f
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### For all settings except the Consent Policy Settings object
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.ReadWrite.All |
+
+### For the Consent Policy Settings object
+
+The following permissions are required to update the "Consent Policy Settings" **directorySetting** object.
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Policy.ReadWrite.Authorization    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Policy.ReadWrite.Authorization |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 Update a tenant-wide setting.
+
 ```http
 PATCH /groupSettings/{groupSettingId}
 ```
 
 <!-- { "blockType": "ignored" } -->
+
 Update a group-specific setting.
+
 ```http
 PATCH /groups/{groupId}/settings/{groupSettingId}
 ```
 
 ## Request headers
-| Name | Description |
-|:-----------|:-----------|
-| Authorization  | {token}. Required. |
-| Content-Type	| application/json	|
+
+| Name          | Description        |
+| :------------ | :----------------- |
+| Authorization | {token}. Required. |
+| Content-Type  | application/json   |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. 
 
-| Property | Type | Description |
-|:---------------|:--------|:----------|
-| values | [settingValue](../resources/settingvalue.md) collection | The updated set of values. You must include the entire collection set. You cannot update a single set of values. |
+In the request body, supply the values for relevant fields that should be updated.
+
+| Property | Type                                                    | Description                                                                                                      |
+| :------- | :------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------- |
+| values   | [settingValue](../resources/settingvalue.md) collection | The updated set of values. You must include the entire collection set. You cannot update a single set of values. |
 
 ## Response
 
@@ -63,12 +80,13 @@ In this example, `84af2ca5-c274-41bf-86e4-6e374ec4def6` is the identifier of the
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_tenant_groupsetting"
 }-->
+
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groupSettings/84af2ca5-c274-41bf-86e4-6e374ec4def6
 Content-type: application/json
@@ -82,16 +100,13 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-tenant-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-tenant-groupsetting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-tenant-groupsetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -102,8 +117,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-tenant-groupsetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-tenant-groupsetting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -111,6 +129,7 @@ Content-type: application/json
   "blockType": "response",
   "truncated": false
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -122,10 +141,12 @@ In this example, `0167b5af-f3d1-4910-82d2-398747fa381c` is the identifier of the
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
 }-->
+
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groups/0167b5af-f3d1-4910-82d2-398747fa381c/settings/fa6df613-159b-4f94-add2-7093f961900b
 Content-type: application/json
@@ -139,16 +160,13 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-groupsetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -159,8 +177,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-groupsetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-groupsetting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -168,6 +189,7 @@ Content-type: application/json
   "blockType": "response",
   "truncated": false
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -183,4 +205,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

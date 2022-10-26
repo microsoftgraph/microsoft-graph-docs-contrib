@@ -3,7 +3,7 @@ title: Delete allowedUser from printerShare
 description: Revoke the specified user's access to submit print jobs to the associated printer share.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -55,6 +55,7 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers/{id}/$ref
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-alloweduser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -63,12 +64,20 @@ DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers/{i
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-alloweduser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-alloweduser-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-alloweduser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-alloweduser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-alloweduser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-alloweduser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

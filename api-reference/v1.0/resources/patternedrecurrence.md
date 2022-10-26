@@ -2,7 +2,7 @@
 title: "patternedRecurrence resource type"
 description: "The recurrence pattern and range."
 ms.localizationpriority: medium
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -11,7 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The recurrence pattern and range. This shared object is used to define the recurrence of [access reviews](accessreviewscheduledefinition.md), [calendar events](event.md), and [access package assignments](accesspackageassignment.md) in Azure AD.
+The recurrence pattern and range. This shared object is used to define the recurrence of the following objects:
++ [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) objects in Azure AD access reviews APIs
++ [event](event.md) objects in the calendar API
++ [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) and [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) objects in PIM
++ [accessPackageAssignment](accesspackageassignment.md) objects in Azure AD entitlement management.
 
 ## Properties
 | Property	   | Type	|Description|

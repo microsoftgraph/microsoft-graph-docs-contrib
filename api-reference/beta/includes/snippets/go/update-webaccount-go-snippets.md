@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewWebAccount()
+requestBody := graphmodels.NewWebAccount()
 webUrl := "https://github.com/innocenty.popov"
-requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.WebAccountRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-webAccountId := "webAccount-id"
-result, err := graphClient.Me().Profile().WebAccountsById(&webAccountId).Patch(options)
+requestBody.SetWebUrl(&webUrl) 
+
+result, err := graphClient.Me().Profile().WebAccountsById("webAccount-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

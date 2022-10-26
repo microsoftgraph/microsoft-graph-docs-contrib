@@ -3,7 +3,7 @@ title: "cloudAppSecurityState resource type"
 description: "Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp)."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: ""
+ms.prod: cloud-pc
 doc_type: resourcePageType
 ---
 

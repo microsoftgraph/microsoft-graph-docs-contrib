@@ -65,16 +65,13 @@ If successful, this action returns a `204 No Content` response code. To confirm 
 ``` http
 POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/resetToSystemDefault
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -87,6 +84,10 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

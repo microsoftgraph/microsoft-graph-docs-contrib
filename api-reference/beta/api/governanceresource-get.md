@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a governanceResource 
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # Get governanceResource

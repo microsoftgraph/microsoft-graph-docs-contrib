@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/{id}/manager/$ref"]]];
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/10f17b99-784c-4526-8747-aec8a3159d6a/manager/$ref"]]];
 [urlRequest setHTTPMethod:@"PUT"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 

@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 UnifiedRoleAssignment unifiedRoleAssignment = graphClient.roleManagement().directory().roleAssignments("lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1")
 	.buildRequest()
-	.expand("roleDefinition,principal,directoryScope")
+	.expand("roleDefinition")
 	.get();
 
 ```

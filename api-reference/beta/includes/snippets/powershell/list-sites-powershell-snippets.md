@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSite -Property "siteCollection,webUrl" -Filter "siteCollection/root ne null" 
+Get-MgSite -OutFile $outFileId
 
 ```

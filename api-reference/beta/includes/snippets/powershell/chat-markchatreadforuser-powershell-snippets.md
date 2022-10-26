@@ -13,6 +13,6 @@ $params = @{
 	TenantId = "2a690434-97d9-4eed-83a6-f5f13600199a"
 }
 
-Invoke-MgMarkChatRead -ChatId $chatId -BodyParameter $params
+Invoke-MgMarkChatReadForUser -ChatId $chatId -BodyParameter $params
 
 ```

@@ -7,16 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPermission()
-requestBody.SetRoles( []String {
+requestBody := graphmodels.NewPermission()
+roles := []string {
 	"read",
+
 }
-options := &msgraphsdk.PermissionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-siteId := "site-id"
-permissionId := "permission-id"
-result, err := graphClient.SitesById(&siteId).PermissionsById(&permissionId).Patch(options)
+requestBody.SetRoles(roles)
+
+result, err := graphClient.SitesById("site-id").PermissionsById("permission-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

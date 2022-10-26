@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported.  |
 
@@ -69,16 +69,13 @@ Content-type: application/json
 
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-connectorgroup-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-connectorgroup-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-connectorgroup-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -91,6 +88,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-connectorgroup-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-connectorgroup-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

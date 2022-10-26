@@ -2,7 +2,7 @@
 title: "Electron provider"
 description: "The MSAL provider for Electron uses msal-node to sign in users and acquire tokens to use with the Microsoft Graph."
 ms.localizationpriority: medium
-author: amrutha95
+author: sebastienlevert
 ---
 # Electron provider
 
@@ -50,13 +50,13 @@ let config: MsalElectronConfig = {
 ElectronAuthenticator.initialize(config);
 ```
  
-| Attribute    | Description                                                                                                                                                                                                                                                           |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientId    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |                                                                                                                                                                               |
-| scopes       | Comma-separated strings for scopes the user must consent to on sign in. Recommended.                                                                                                                                                                                     |
-| authority    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |                                                                                                                                                                                          |
-| mainWindow  | Instance of the main BrowserWindow that requires authentication.|
-| cachePlugin | Cache plugin you would like to use for persistent storage of tokens. See [Microsoft Authentication Extensions for Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). Optional. | 
+| Attribute   | Description                                                                                                                                                                                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| clientId    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |
+| scopes      | Comma-separated strings for scopes the user must consent to on sign in. Recommended.                                                                                                                                                                                  |
+| authority   | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
+| mainWindow  | Instance of the main BrowserWindow that requires authentication.                                                                                                                                                                                                      |
+| cachePlugin | Cache plugin you would like to use for persistent storage of tokens. See [Microsoft Authentication Extensions for Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). Optional.                       |
 
 >**Note:** Currently, the provider does not support incremental support. As a best practice, be sure to consent to all the scopes that the components require.
     

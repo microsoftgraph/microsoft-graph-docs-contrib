@@ -7,18 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewMakePermanentPostRequestBody()
 reason := "reason-value"
-requestBody.SetReason(&reason)
+requestBody.SetReason(&reason) 
 ticketNumber := "ticketNumber-value"
-requestBody.SetTicketNumber(&ticketNumber)
+requestBody.SetTicketNumber(&ticketNumber) 
 ticketSystem := "ticketSystem-value"
-requestBody.SetTicketSystem(&ticketSystem)
-options := &msgraphsdk.MakePermanentRequestBuilderPostOptions{
-	Body: requestBody,
-}
-privilegedRoleAssignmentId := "privilegedRoleAssignment-id"
-result, err := graphClient.PrivilegedRoleAssignmentsById(&privilegedRoleAssignmentId).MakePermanent(privilegedRoleAssignment-id).Post(options)
+requestBody.SetTicketSystem(&ticketSystem) 
+
+result, err := graphClient.PrivilegedRoleAssignmentsById("privilegedRoleAssignment-id").MakePermanent().Post(context.Background(), requestBody, nil)
 
 
 ```

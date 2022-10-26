@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -48,6 +48,9 @@ The use of `$select` to get **keyCredentials** for service principals has a thro
 | Name           | Description                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Required.  |
+| Accept-Language| Language code. Optional.   |
+
+Providing the **Accept-Language** header with a supported language code, such as `es-ES` or `de-DE`, will return localized values where available. Note that the header is not supported for [list operations](serviceprincipal-list.md).
 
 ## Request body
 Do not supply a request body for this method.
@@ -73,16 +76,13 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-serviceprincipal-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-serviceprincipal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceprincipal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-serviceprincipal-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -166,21 +170,68 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Get servicePrincipal",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
+### Example 2: Retrieve a service principal by its appId and only specific properties
 
-### Example 2: Get the custom security attribute assignments of the specified service principal
+#### Request
+Here is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_serviceprincipal_by_appId_select"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')?$select=id,appId,displayName,appRoles,publishedPermissionScopes
+```
+
+#### Response
+Here is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(id,appId,displayName,appRoles,publishedPermissionScopes)/$entity",
+    "id": "7408235b-7540-4850-82fe-a5f15ed019e2",
+    "appId": "00000003-0000-0000-c000-000000000000",
+    "displayName": "Microsoft Graph",
+    "appRoles": [
+        {
+            "allowedMemberTypes": [
+                "Application"
+            ],
+            "description": "Allows the app to read all class assignments without grades for all users without a signed-in user.",
+            "displayName": "Read all class assignments without grades",
+            "id": "6e0a958b-b7fc-4348-b7c4-a6ab9fd3dd0e",
+            "isEnabled": true,
+            "origin": "Application",
+            "value": "EduAssignments.ReadBasic.All"
+        }
+    ],
+    "publishedPermissionScopes": [
+        {
+            "adminConsentDescription": "Allows the app to see your users' basic profile (e.g., name, picture, user name, email address)",
+            "adminConsentDisplayName": "View users' basic profile",
+            "id": "14dad69e-099b-42c9-810b-d002981feec1",
+            "isEnabled": true,
+            "type": "User",
+            "userConsentDescription": "Allows the app to see your basic profile (e.g., name, picture, user name, email address)",
+            "userConsentDisplayName": "View your basic profile",
+            "value": "profile"
+        }
+    ]
+}
+    
+```
+
+
+### Example 3: Get the custom security attribute assignments of the specified service principal
 
 The following example gets the custom security attributes of the specified service principal.
 
@@ -227,16 +278,13 @@ To get custom security attribute assignments, the calling principal must be assi
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecurityAttributes
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-serviceprincipal-customsecurityattributes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-serviceprincipal-customsecurityattributes-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-serviceprincipal-customsecurityattributes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -248,7 +296,11 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecuri
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceprincipal-customsecurityattributes-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-serviceprincipal-customsecurityattributes-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -301,3 +353,17 @@ Content-type: application/json
     "customSecurityAttributes": null
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Get servicePrincipal",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

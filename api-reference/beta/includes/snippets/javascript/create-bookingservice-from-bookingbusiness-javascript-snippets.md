@@ -53,6 +53,7 @@ const bookingService = {
     displayName: 'Bento',
     isLocationOnline: true,
     smsNotificationsEnabled: true,
+    languageTag: 'en-US',
     isHiddenFromCustomers: false,
     notes: 'Home-cooked special',
     postBuffer: 'PT10M',
@@ -69,10 +70,11 @@ const bookingService = {
     staffMemberIds: [
         'd90d1e8c-5cfe-48cf-a2d5-966267375b6a',
         '2f5f8794-0b29-45b5-b56a-2eb5ff7aa880'
-    ]
+    ],
+    isAnonymousJoinEnabled: false
 };
 
-await client.api('/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services')
+await client.api('/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/services')
 	.version('beta')
 	.post(bookingService);
 

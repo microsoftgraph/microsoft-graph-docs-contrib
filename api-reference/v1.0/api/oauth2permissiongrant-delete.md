@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+|Application | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -59,21 +59,19 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_oAuth2PermissionGrant"
+  "name": "delete_oAuth2PermissionGrant",
+  "sampleKeys": ["l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
+DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-oauth2permissiongrant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-oauth2permissiongrant-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-oauth2permissiongrant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -86,6 +84,10 @@ DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-oauth2permissiongrant-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-oauth2permissiongrant-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

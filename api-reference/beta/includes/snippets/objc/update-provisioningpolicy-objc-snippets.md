@@ -14,7 +14,13 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphCloudPcProvisioningPolicy *cloudPcProvisioningPolicy = [[MSGraphCloudPcProvisioningPolicy alloc] init];
 [cloudPcProvisioningPolicy setDisplayName:@"HR provisioning policy"];
 [cloudPcProvisioningPolicy setDescription:@"Provisioning policy for India HR employees"];
-[cloudPcProvisioningPolicy setOnPremisesConnectionId:@"4e47d0f6-6f77-44f0-8893-c0fe1701b553"];
+[cloudPcProvisioningPolicy setOnPremisesConnectionId:@"4e47d0f6-6f77-44f0-8893-c0fe1701ffff"];
+[cloudPcProvisioningPolicy setImageId:@"Image ID value"];
+[cloudPcProvisioningPolicy setImageDisplayName:@"Image Display Name value"];
+[cloudPcProvisioningPolicy setImageType: [MSGraphCloudPcProvisioningPolicyImageType custom]];
+MSGraphCloudPcWindowsSettings *windowsSettings = [[MSGraphCloudPcWindowsSettings alloc] init];
+[windowsSettings setLanguage:@"en-US"];
+[cloudPcProvisioningPolicy setWindowsSettings:windowsSettings];
 
 NSError *error;
 NSData *cloudPcProvisioningPolicyData = [cloudPcProvisioningPolicy getSerializedDataWithError:&error];

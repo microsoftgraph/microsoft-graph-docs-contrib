@@ -15,6 +15,6 @@ $params = @{
 	TimeRange = "before"
 }
 
-Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc -BodyParameter $params
+Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc -BodyParameter $params
 
 ```

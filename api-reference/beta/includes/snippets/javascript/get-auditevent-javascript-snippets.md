@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let auditEvent = await client.api('/tenantRelationships/managedTenants/auditEvent')
+let auditEvent = await client.api('/tenantRelationships/managedTenants/auditEvents/{auditEventId}')
 	.version('beta')
 	.get();
 

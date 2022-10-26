@@ -25,15 +25,15 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+> **Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsDeviceUsageUserDetail(period='D7')
-GET /reports/getTeamsDeviceUsageUserDetail(date=2017-09-01)
+GET /reports/getTeamsDeviceUsageUserDetail(period='{period_value}')
+GET /reports/getTeamsDeviceUsageUserDetail(date='{date_value}')
 ```
 
 ## Function parameters
@@ -42,12 +42,14 @@ In the request URL, provide one of the following parameters with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
 | date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 28 days, {date_value} should be a date from that range. |
 
-> **Note:** You need to set either period or date in the URL.
+> **Note:** You need to set either **period** or **date** in the URL.
 
-This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
+## Optional query parameters
+
+This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is `text/csv`. However, if you want to specify the output type, you can use the OData `$format` query parameter set to `text/csv` or `application/json`.
 
 ## Request headers
 
@@ -63,7 +65,7 @@ If successful, this method returns a `302 Found` response that redirects to a pr
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
-The CSV file has the following headers for columns.
+The CSV file has the following headers for columns:
 
 - Report Refresh Date
 - User Id
@@ -88,9 +90,9 @@ If successful, this method returns a `200 OK` response code and a JSON object in
 
 The default page size for this request is 2000 items.
 
-## Example
+## Examples
 
-### CSV
+### Example 1: CSV output
 
 The following is an example that outputs CSV.
 
@@ -136,7 +138,7 @@ Content-Type: application/octet-stream
 Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
 ```
 
-### JSON
+### Example 2: JSON output
 
 The following is an example that returns JSON.
 

@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewServicePrincipalIdsRequestBody()
-requestBody.SetServicePrincipalIds( []String {
+requestBody := graphmodels.NewConfirmCompromisedPostRequestBody()
+servicePrincipalIds := []string {
 	"9089a539-a539-9089-39a5-899039a58990",
+
 }
-options := &msgraphsdk.ConfirmCompromisedRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.IdentityProtection().RiskyServicePrincipals().ConfirmCompromised().Post(options)
+requestBody.SetServicePrincipalIds(servicePrincipalIds)
+
+graphClient.IdentityProtection().RiskyServicePrincipals().ConfirmCompromised().Post(context.Background(), requestBody, nil)
 
 
 ```

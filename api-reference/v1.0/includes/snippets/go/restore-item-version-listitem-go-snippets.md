@@ -7,11 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-siteId := "site-id"
-listId := "list-id"
-listItemId := "listItem-id"
-listItemVersionId := "listItemVersion-id"
-graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).VersionsById(&listItemVersionId).RestoreVersion(site-id, list-id, listItem-id, listItemVersion-id).Post(nil)
+
+graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").VersionsById("listItemVersion-id").RestoreVersion().Post(context.Background(), nil)
 
 
 ```

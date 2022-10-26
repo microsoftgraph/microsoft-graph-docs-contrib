@@ -7,15 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewItemPhone()
-type := "other"
-requestBody.SetType(&type)
-options := &msgraphsdk.ItemPhoneRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-itemPhoneId := "itemPhone-id"
-result, err := graphClient.UsersById(&userId).Profile().PhonesById(&itemPhoneId).Patch(options)
+requestBody := graphmodels.NewItemPhone()
+type := graphmodels.OTHER_PHONETYPE 
+requestBody.SetType(&type) 
+
+result, err := graphClient.UsersById("user-id").Profile().PhonesById("itemPhone-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

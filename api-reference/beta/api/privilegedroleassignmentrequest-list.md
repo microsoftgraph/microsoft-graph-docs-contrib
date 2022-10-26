@@ -4,7 +4,7 @@ description: "Retrieve a collection of privilegedRoleAssignmentRequest. "
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # List privilegedRoleAssignmentRequests
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All    |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
@@ -60,16 +60,13 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedroleassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-privilegedroleassignmentrequest-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedroleassignmentrequest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -82,6 +79,10 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignmentrequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-privilegedroleassignmentrequest-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

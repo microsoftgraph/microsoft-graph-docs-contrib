@@ -1,6 +1,6 @@
 ---
 title: "Create plannerTask"
-description: "Use this API to create a new **plannerTask**."
+description: "Create a new plannerTask."
 ms.localizationpriority: high
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -11,7 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to create a new **plannerTask**.
+Create a new **plannerTask**.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,20 +31,21 @@ POST /planner/tasks
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Content-Type   | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.
-The **plannerTask** planId property must be set to an existing [plannerPlan](../resources/plannerplan.md) object's id.
+In the request body, supply a JSON representation of a [plannerTask](../resources/plannertask.md) object.
+The **plannerTask** planId property must be set to an existing [plannerPlan](../resources/plannerplan.md) object's ID.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [plannerTask](../resources/plannertask.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [plannerTask](../resources/plannertask.md) object in the response body.
 
 This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,12 +68,13 @@ Content-type: application/json
   }
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-plannertask-from-planner-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-plannertask-from-planner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-plannertask-from-planner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -82,11 +85,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-plannertask-from-planner-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-plannertask-from-planner-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

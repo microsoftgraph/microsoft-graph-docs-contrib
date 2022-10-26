@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 DELETE /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/assignments/{targetedManagedAppPolicyAssignmentId}
 DELETE /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/assignments/{targetedManagedAppPolicyAssignmentId}
+DELETE /deviceAppManagement/windowsManagedAppProtections/{windowsManagedAppProtectionId}/assignments/{targetedManagedAppPolicyAssignmentId}
 DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/assignments/{targetedManagedAppPolicyAssignmentId}
 DELETE /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/assignments/{targetedManagedAppPolicyAssignmentId}
 DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/assignments/{targetedManagedAppPolicyAssignmentId}
@@ -64,6 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

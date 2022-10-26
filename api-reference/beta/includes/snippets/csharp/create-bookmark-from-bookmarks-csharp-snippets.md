@@ -34,18 +34,10 @@ var bookmark = new Microsoft.Graph.Search.Bookmark
 	{
 		new Microsoft.Graph.Search.AnswerVariant
 		{
-			LanguageTag = "es-ES",
+			LanguageTag = "es-es",
 			DisplayName = "Sitio de instalación Contoso",
 			Description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
 		}
-	},
-	GroupIds = new List<String>()
-	{
-		"groupId"
-	},
-	PowerAppIds = new List<String>()
-	{
-		"powerAppId"
 	},
 	State = Microsoft.Graph.Search.AnswerState.Published
 };

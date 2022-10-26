@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewCustomSecurityAttributeDefinition()
+requestBody := graphmodels.NewCustomSecurityAttributeDefinition()
 description := "Target completion date (YYYY/MM/DD)"
-requestBody.SetDescription(&description)
-options := &msgraphsdk.CustomSecurityAttributeDefinitionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(options)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

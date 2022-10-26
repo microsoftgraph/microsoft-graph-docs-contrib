@@ -7,16 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/beta/users/alexd@contoso.com",
-}
-options := &msgraphsdk.DirectoryObjectRequestBuilderPostOptions{
-	Body: requestBody,
-}
-groupId := "group-id"
-directoryObjectId := "directoryObject-id"
-graphClient.GroupsById(&groupId).RejectedSendersById(&directoryObjectId).Post(options)
+requestBody := graphmodels.NewReferenceCreate()
+"@odata.id" := "https://graph.microsoft.com/beta/users/alexd@contoso.com"
+requestBody.Set"@odata.id"(&"@odata.id") 
+
+graphClient.GroupsById("group-id").RejectedSenders().$ref().Post(context.Background(), requestBody, nil)
 
 
 ```

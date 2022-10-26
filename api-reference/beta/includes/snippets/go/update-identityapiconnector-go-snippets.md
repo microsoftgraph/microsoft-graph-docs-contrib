@@ -7,19 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewIdentityApiConnector()
-authenticationConfiguration := msgraphsdk.NewApiAuthenticationConfigurationBase()
+requestBody := graphmodels.NewIdentityApiConnector()
+authenticationConfiguration := graphmodels.NewApiAuthenticationConfigurationBase()
+"@odata.type" := "#microsoft.graph.pkcs12Certificate"
+authenticationConfiguration.Set"@odata.type"(&"@odata.type") 
+additionalData := map[string]interface{}{
+	"pkcs12Value" : "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA", 
+	"password" : "secret", 
+}
+authenticationConfiguration.SetAdditionalData(additionalData)
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
-authenticationConfiguration.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.pkcs12Certificate",
-	"pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
-	"password": "secret",
-}
-options := &msgraphsdk.IdentityApiConnectorRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-identityApiConnectorId := "identityApiConnector-id"
-result, err := graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).Patch(options)
+
+graphClient.Identity().ApiConnectorsById("identityApiConnector-id").Patch(requestBody)
 
 
 ```

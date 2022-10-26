@@ -2,7 +2,7 @@
 title: "Create an Azure Active Directory app"
 description: "Create an Azure Active Directory application registration for communicating with Microsoft 365"
 ms.localizationpriority: medium
-author: waldekmastykarz
+author: sebastienlevert
 ---
 
 # Create an Azure Active Directory app to use with the Microsoft Graph Toolkit

@@ -2,7 +2,7 @@
 title: "Microsoft Graph Toolkit React components"
 description: "The Microsoft Graph Toolkit React components (`mgt-react`) allow React developers to use the Microsoft Graph Toolkit in their React applications."
 ms.localizationpriority: medium
-author: nmetulev
+author: sebastienlevert
 ---
 
 # Microsoft Graph Toolkit React components

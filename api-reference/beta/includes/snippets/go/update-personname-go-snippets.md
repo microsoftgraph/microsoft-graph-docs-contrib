@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPersonName()
+requestBody := graphmodels.NewPersonName()
 nickname := "Kesha"
-requestBody.SetNickname(&nickname)
-options := &msgraphsdk.PersonNameRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-personNameId := "personName-id"
-result, err := graphClient.Me().Profile().NamesById(&personNameId).Patch(options)
+requestBody.SetNickname(&nickname) 
+
+result, err := graphClient.Me().Profile().NamesById("personName-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var users = await graphClient.Users
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.Filter("endswith(mail,'a@contoso.com')")
 	.OrderBy("userPrincipalName")

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let organizationalBranding = await client.api('/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding')
+let organizationalBranding = await client.api('/organization/dcd219dd-bc68-4b9b-bf0b-4a33a796be35/branding')
 	.header('Accept-Language','fr-FR')
 	.get();
 

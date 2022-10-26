@@ -2,7 +2,7 @@
 title: "searchEntity: query"
 description: "Run a specified search query. Search results are provided in the response."
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Files.Read.All, Sites.Read.All |
 
 ## HTTP request
 
@@ -91,16 +91,13 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/search-query-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/search-query-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/search-query-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -113,6 +110,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/search-query-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/search-query-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

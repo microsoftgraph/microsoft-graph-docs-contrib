@@ -2,7 +2,7 @@
 title: "Create settings"
 description: "Create a new setting, based on the templates available in groupSettingTemplates."
 ms.localizationpriority: medium
-author: "Jordanndahl"
+author: "psaffaie"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -19,43 +19,47 @@ Group settings apply to only Microsoft 365 groups. The template named `Group.Uni
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Directory.ReadWrite.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Directory.ReadWrite.All                     |
 
 ## HTTP request
 
 Create a tenant-wide setting.
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groupSettings
 ```
 
 Create a group-specific setting.
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/settings
 ```
 
 ## Request headers
 
-| Name | Description |
-|:---------------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-| Content-Type | application/json |
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object. The display name, templateId, and description are inherited from the referenced [groupSettingTemplates](../resources/groupsettingtemplate.md) object. Only the value property can be changed from the default value.
 
 The following properties are required when creating the [groupSetting](../resources/groupsetting.md) object.
 
-| Parameter    | Type   |Description|
-|:---------------|:--------|:----------|
-|templateId|String| Unique identifier for the tenant-level [groupSettingTemplates](../resources/groupsettingtemplate.md) object used to create this group-level settings object. Read-only. |
-|values|[settingValue](../resources/settingvalue.md) collection| Collection of name-value pairs corresponding to the **name** and **defaultValue** properties in the referenced [groupSettingTemplates](../resources/groupsettingtemplate.md) object.|
+| Parameter  | Type                                                    | Description                                                                                                                                                                          |
+| :--------- | :------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| templateId | String                                                  | Unique identifier for the tenant-level [groupSettingTemplates](../resources/groupsettingtemplate.md) object used to create this group-level settings object. Read-only.              |
+| values     | [settingValue](../resources/settingvalue.md) collection | Collection of name-value pairs corresponding to the **name** and **defaultValue** properties in the referenced [groupSettingTemplates](../resources/groupsettingtemplate.md) object. |
 
 ## Response
 
@@ -68,10 +72,12 @@ If successful, this method returns `201 Created` response code and [groupSetting
 Only the [groupSettingTemplates](../resources/groupsettingtemplate.md) object named `Group.Unified` can be applied to all Microsoft 365 groups at the tenant-level.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_groupsetting_from_groupsettings"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groupSettings
 Content-type: application/json
@@ -98,16 +104,13 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -118,17 +121,22 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-groupsetting-from-groupsettings-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.groupSetting"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -168,10 +176,12 @@ The **displayName** property and other name-value pairs will be populated with t
 Only the [groupSettingTemplates](../resources/groupsettingtemplate.md) object named `Group.Unified.Guest` can be applied to specific Microsoft 365 groups.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_groupsetting_from_groupsettings_for_guests"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groups/055a5d18-a3a9-4338-b9c5-de92559b7ebf/settings
 Content-type: application/json
@@ -186,16 +196,13 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-for-guests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-for-guests-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-for-guests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -206,19 +213,24 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-for-guests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-groupsetting-from-groupsettings-for-guests-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object.
 
 ### Response
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.groupSetting"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -248,4 +260,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

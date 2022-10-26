@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-tiIndicatorId := "tiIndicator-id"
-result, err := graphClient.Security().TiIndicatorsById(&tiIndicatorId).Delete(nil)
+
+graphClient.Security().TiIndicatorsById("tiIndicator-id").Delete(context.Background(), nil)
 
 
 ```

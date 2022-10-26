@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewRoleRequestBody()
-role := "viewer"
-requestBody.SetRole(&role)
-options := &msgraphsdk.ChangeScreenSharingRoleRequestBuilderPostOptions{
-	Body: requestBody,
-}
-callId := "call-id"
-graphClient.Communications().CallsById(&callId).ChangeScreenSharingRole(call-id).Post(options)
+requestBody := graphmodels.NewChangeScreenSharingRolePostRequestBody()
+role := graphmodels.VIEWER_SCREENSHARINGROLE 
+requestBody.SetRole(&role) 
+
+graphClient.Communications().CallsById("call-id").ChangeScreenSharingRole().Post(context.Background(), requestBody, nil)
 
 
 ```

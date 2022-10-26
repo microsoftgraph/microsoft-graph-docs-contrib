@@ -7,17 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewOrganizationalBrandingLocalization()
+requestBody := graphmodels.NewOrganizationalBrandingLocalization()
 backgroundColor := "#00000F"
-requestBody.SetBackgroundColor(&backgroundColor)
+requestBody.SetBackgroundColor(&backgroundColor) 
 signInPageText := "Welcome to Contoso France"
-requestBody.SetSignInPageText(&signInPageText)
-options := &msgraphsdk.OrganizationalBrandingLocalizationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-organizationId := "organization-id"
-organizationalBrandingLocalizationId := "organizationalBrandingLocalization-id"
-result, err := graphClient.OrganizationById(&organizationId).Branding().LocalizationsById(&organizationalBrandingLocalizationId).Patch(options)
+requestBody.SetSignInPageText(&signInPageText) 
+
+result, err := graphClient.OrganizationById("organization-id").Branding().LocalizationsById("organizationalBrandingLocalization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

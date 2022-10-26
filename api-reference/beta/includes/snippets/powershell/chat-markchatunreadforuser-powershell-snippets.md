@@ -14,6 +14,6 @@ $params = @{
 	LastMessageReadDateTime = [System.DateTime]::Parse("2021-05-27T22:13:01.577Z")
 }
 
-Invoke-MgMarkChatUnread -ChatId $chatId -BodyParameter $params
+Invoke-MgMarkChatUnreadForUser -ChatId $chatId -BodyParameter $params
 
 ```

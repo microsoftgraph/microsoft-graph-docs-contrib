@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var group = await graphClient.Directory.DeletedItems
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.Select("id,displayName,deletedDateTime")
 	.OrderBy("deletedDateTime asc")

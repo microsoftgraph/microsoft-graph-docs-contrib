@@ -7,17 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewPersonAward()
+requestBody := graphmodels.NewPersonAward()
 issuingAuthority := "International Association of Branding Management"
-requestBody.SetIssuingAuthority(&issuingAuthority)
+requestBody.SetIssuingAuthority(&issuingAuthority) 
 thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
-requestBody.SetThumbnailUrl(&thumbnailUrl)
-options := &msgraphsdk.PersonAwardRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-personAwardId := "personAward-id"
-result, err := graphClient.UsersById(&userId).Profile().AwardsById(&personAwardId).Patch(options)
+requestBody.SetThumbnailUrl(&thumbnailUrl) 
+
+result, err := graphClient.UsersById("user-id").Profile().AwardsById("personAward-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -81,7 +81,7 @@ The following is an example of the request.
   "name": "reportroot_getsharepointactivityusercounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityUserCounts(period='D7')
 ```
 

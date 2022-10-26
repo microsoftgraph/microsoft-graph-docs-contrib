@@ -1,33 +1,35 @@
 ---
 
-title: "Working with Graph Explorer"
-description: "Find out how to use some of the important features in Graph Explorer."
+title: "Work with Graph Explorer"
+description: "Use Graph Explorer to make Microsoft Graph REST API requests and view corresponding responses. Learn how to use some of the important features in Graph Explorer."
 ms.localizationpriority: high
 author: RabebOthmani
 
 ---
-# Working with Graph Explorer
+
+# Work with Graph Explorer
 
 [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you conveniently make Microsoft Graph REST API requests and view corresponding responses. This article describes how to use some of the important features in Graph Explorer.
 
+For an overview, see [Use Graph Explorer to try Microsoft Graph APIs](/graph/graph-explorer/graph-explorer-overview).
+
 ## Consent to permissions
 
-The user or administrator must grant Graph Explorer the correct permissions via a consent process to access data in Microsoft Graph. Consent to permissions in Graph Explorer either via the **Modify permissions** tab or the **Select permissions** option in the settings gear next to your profile when you’re signed in. 
-The **Modify permissions** tab lists all permissions you need to run the query in the address bar. 
+The user or administrator must grant Graph Explorer the correct permissions by using a consent process to access data in Microsoft Graph. You can consent to permissions in Graph Explorer by choosing either the **Modify permissions** tab or the **Select permissions** option in the settings gear next to your profile when you’re signed in. The **Modify permissions** tab lists all the permissions that you need to run the query in the address bar. 
 
 To consent to permissions:
 
-1.	Select a sample query and run it.
-2.	Select the **Modify permissions** tab.
-3.	See the list of permissions required to run the query.
-4.	Select the consent button next to the permission you want to consent to. 
+1. Select a sample query and run it.
+2. Select the **Modify permissions** tab.
+3. See the list of permissions required to run the query.
+4. Select the **Consent** button next to the permission that you want to consent to.
 
 ![Screenshot of Graph Explorer with the steps to consent to permissions highlighted](./images/modify-permissions.png)
 
 The **Modify  permissions** feature is currently in preview, and some queries might be missing permissions. If permissions are missing for a query, the **Select permissions** option in the settings gear next to your profile contains the list of all available permissions:
 
-1.	Go the settings gear and click the **Select permissions** option. This option contains the list of all available permissions.
-2.	From the list of all the permissions, consent to the ones you want.
+1. Go the settings gear and choose the **Select permissions** option. This option contains the list of all available permissions.
+2. From the list of all the permissions, consent to the ones you want.
 
 ![Screenshot of Graph Explorer with the Select permissions option highlighted](./images/select-permissions.png)
 
@@ -39,13 +41,13 @@ Graph Explorer includes an **Access token** tab that shows your access token whe
 
 ## Copy code snippets
 
-For each REST API query you select or enter in Graph Explorer, you can find how to call that API in each of the four languages showcased under the **Code snippets** tab - C#, Java, JavaScript, and Objective-C. 
+For each REST API query that you select or enter in Graph Explorer, you can find how to call that API in each of the four languages showcased under the **Code snippets** tab: C#, Java, JavaScript, and Objective-C.
 
 ![Screenshot of Graph Explorer with the code snippets tab highlighted](./images/code-snippets.png)
 
-## UI component integration
+## Integrate UI components
 
-Graph Explorer includes several features to make implementing UI easier. Reuse these components in your apps too.
+Graph Explorer includes several features to make implementing the UI easier. Reuse these components in your apps too.
 
 ### Microsoft Graph Toolkit integration
 
@@ -73,38 +75,38 @@ The following table lists the sample queries that currently include a Toolkit co
 
 ## Customize the theme in Graph Explorer
 
-Choose the theme for Graph Explorer by selecting the **Change theme** option under the settings gear. Theme options are Light, Dark, and High contrast.
+Choose the theme for Graph Explorer by selecting the **Change theme** option under the settings gear. Theme options are **Light**, **Dark**, and **High contrast**.
 
 ![Screenshot of the Change theme option in Graph Explorer with the theme options highlighted](./images/change-theme.png)
 
-## Storing and sharing queries
+## Store and share queries
 
-Queries run in Graph Explorer are saved for 30 days in the **History** tab. On the History tab, you can:
+Queries that are run in Graph Explorer are saved for 30 days on the **History** tab. On the **History** tab, you can:
 
-1.	Export all history items in `.har` format.
-2.	Delete all history items.
-3.	View a history item.
-4.	Run a query.
-5.	Export a history item in `.har` format.
-6.	Delete a history item.
+1. Export all history items in `.har` format.
+2. Delete all history items.
+3. View a history item.
+4. Run a query.
+5. Export a history item in `.har` format.
+6. Delete a history item.
 
 ![Screenshot of the History tab with options highlighted](./images/storing-and-sharing-queries.png)
 
-To share queries that you run, click the share query button in the response pane and click **copy**. This copies a link to share and allow others to see your query and the results.
+To share queries that you run, select the **Share** button in the response pane, and then select **Copy**. This copies a link to share that allows others to see your query and the results.
 
 ![Screenshot of Graph Explorer with the Share and Copy options highlighted](./images/share-query.png)
 
-## Graph Explorer UI features
+## Use Graph Explorer UI features
 
-Collapse and expand the sidebar component in Graph Explorer when you want to widen the request and response area. To collapse the sidebar component, select the hamburger icon on the top left of the sidebar.
+To widen the request and response area, collapse and expand the sidebar component in Graph Explorer. To collapse the sidebar component, select the hamburger icon on the top left of the sidebar.
 
 ![Screenshot of Graph Explorer with the expand and collapse options highlighted](./images/expand-collapse-sidebar-component.png)
 
-Expand and collapse the response preview by selecting the expand arrow in the response preview window.
+To expand and collapse the response preview, select the expand arrow in the response preview window.
 
 ![Screenshot of the response pane with the expand and collapse options highlighted](./images/expand-collapse-response-preview.png)
 
-Conveniently access the Microsoft 365 Developer Program site from the Graph Explorer UI to get a free sandbox with sample data to experiment with. Under the setting gear, select **Get a sandbox with sample data**.
+Conveniently access the Microsoft 365 Developer Program site from the Graph Explorer UI to get a free sandbox with sample data to experiment with. Under the settings gear, select **Get a sandbox with sample data**.
 
 ![Screenshot of Graph Explorer with the Get a sandbox with sample data option highlighted](./images/link-to-m365-dev-program.png)
 

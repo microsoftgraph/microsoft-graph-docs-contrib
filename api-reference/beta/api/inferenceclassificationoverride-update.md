@@ -4,7 +4,7 @@ description: "Change the **classifyAs** field of a Focused Inbox override as spe
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "abheek-das"
-ms.prod: ""
+ms.prod: mail
 ---
 
 # Update inferenceClassificationOverride
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Change the **classifyAs** field of a [Focused Inbox](../resources/manage-focused-inbox.md) override as specified.
+Change the **classifyAs** field of a [focused Inbox](../resources/manage-focused-inbox.md) override as specified.
 
 You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) instance.
 
@@ -55,7 +55,7 @@ In the request body, supply the new value for **classifyAs**. For best performan
 
 If successful, this method returns a `200 OK` response code and updated [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example changes the override for the SMTP address randiw@adatum.onmicrosoft.com from `other` to `focused`.
 
 
@@ -72,16 +72,13 @@ Content-type: application/json
   "classifyAs": "focused"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-inferenceclassificationoverride-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-inferenceclassificationoverride-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-inferenceclassificationoverride-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -96,10 +93,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-inferenceclassificationoverride-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-inferenceclassificationoverride-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

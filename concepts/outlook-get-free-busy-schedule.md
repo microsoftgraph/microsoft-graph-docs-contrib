@@ -1,16 +1,16 @@
 ---
-title: "Get free/busy schedule of users and resources"
-description: "In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period."
+title: "Get free/busy schedule of Outlook calendar users and resources"
+description: "Use the getSchedule action to get the availability information of one or more users, distribution lists, or resources for a specific period of time."
 author: "tariq-sharif"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
-# Get free/busy schedule of users and resources
+# Get free/busy schedule of Outlook calendar users and resources
 
 In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period.
 
-The [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) action lets you get the availability information of one or more entities - users, distribution lists, or resources - for a specific period of time. 
+The [getSchedule](/graph/api/calendar-getschedule) action lets you get the availability information of one or more entities - users, distribution lists, or resources - for a specific period of time. 
 
 ## Example
 
@@ -130,7 +130,7 @@ By default, the length of each time slot is 30 minutes. This example uses the **
 
 ## How does getSchedule compare with findMeetingTimes
 
-The [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) action is similar to **getSchedule** in that both read the free/busy status and working hours of specified users and resources. The two actions differ in a few major ways.
+The [findMeetingTimes](/graph/api/user-findmeetingtimes) action is similar to **getSchedule** in that both read the free/busy status and working hours of specified users and resources. The two actions differ in a few major ways.
 
 ### Application
 
