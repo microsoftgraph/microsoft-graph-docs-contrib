@@ -78,7 +78,7 @@ Content-type: application/json
 ## Known issues
 
 - Sorting, aggregation, and pagination are not supported for acronym searches.
-- Do not support combination search with other entity types.
+- Combination search with other entity types is not supported.
 
 ## Next steps
 
