@@ -407,6 +407,8 @@ items:
           href: api/cloudpc-reprovision.md
         - name: Troubleshoot
           href: api/cloudpc-troubleshoot.md
+        - name: Get shift work cloudPc's access state
+          href: api/cloudpc-getshiftworkcloudpcaccessstate.md
       - name: Delegated permission grant
         items:
         - name: OAuth 2.0 permission grant
