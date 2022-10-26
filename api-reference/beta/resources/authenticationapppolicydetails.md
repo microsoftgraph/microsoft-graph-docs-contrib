@@ -1,6 +1,6 @@
 ---
 title: "authenticationAppPolicyDetails resource type"
-description: "Provides details of the Azure AD policies applied to a user and client authenticator app during an authentication step."
+description: "Provides details of the Azure AD policies applied to a user and client authenticator app during the authentication step."
 author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+"Provides details of the Azure AD policies applied to a user and client authenticator app during the authentication step.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |adminConfiguration|authenticationAppAdminConfiguration|The admin configuration of the policy on the user's Authenticator app. For a policy that does not impact the success/failure of the authentication, the evaluation defaults to `notApplicable`. The possible values are: `notApplicable`, `enabled`, `disabled`, `unknownFutureValue`.|
-|authenticationEvaluation|authenticationAppEvaluation|This evaluates the success/failure of the authentication based on the admin configuration of the policy on the user's authenticator client app. The possible values are: `success`, `failure`, `unknownFutureValue`.|
+|authenticationEvaluation|authenticationAppEvaluation|Evaluates the success/failure of the authentication based on the admin configuration of the policy on the user's authenticator client app. The possible values are: `success`, `failure`, `unknownFutureValue`.|
 |policyName|String|The name of the policy enforced on the user's Authenticator app.|
-|status|authenticationAppPolicyStatus|This status refers to whether the policy executed as expected on the user's authenticator client app.The possible values are: `unknown`, `appLockOutOfDate`, `appLockEnabled`, `appLockDisabled`, `appContextOutOfDate`, `appContextShown`, `appContextNotShown`, `locationContextOutOfDate`, `locationContextShown`, `locationContextNotShown`, `numberMatchOutOfDate`, `numberMatchCorrectNumberEntered`, `numberMatchIncorrectNumberEntered`, `numberMatchDeny`, `tamperResistantHardwareOutOfDate`, `tamperResistantHardwareUsed`, `tamperResistantHardwareNotUsed`, `unknownFutureValue`.|
+|status|authenticationAppPolicyStatus|Refers to whether the policy executed as expected on the user's authenticator client app.The possible values are: `unknown`, `appLockOutOfDate`, `appLockEnabled`, `appLockDisabled`, `appContextOutOfDate`, `appContextShown`, `appContextNotShown`, `locationContextOutOfDate`, `locationContextShown`, `locationContextNotShown`, `numberMatchOutOfDate`, `numberMatchCorrectNumberEntered`, `numberMatchIncorrectNumberEntered`, `numberMatchDeny`, `tamperResistantHardwareOutOfDate`, `tamperResistantHardwareUsed`, `tamperResistantHardwareNotUsed`, `unknownFutureValue`.|
 
 ## Relationships
 None.

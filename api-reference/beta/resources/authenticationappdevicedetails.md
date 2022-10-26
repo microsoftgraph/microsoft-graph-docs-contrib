@@ -1,6 +1,6 @@
 ---
 title: "authenticationAppDeviceDetails resource type"
-description: "Provides details about the app and device used during an Azure AD authentication step."
+description: "Provides details about the app and device used during the Azure AD authentication step."
 author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides details about the authenticator app and device used during an authentication step. 
+Provides details about the app and device used during the Azure AD authentication step.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appVersion|String|Version of the client app used used during the authentication step.|
-|clientApp|String|The name of the client app used used during the authentication step.|
-|deviceId|String|ID of the device the used during the authentication step.|
-|operatingSystem|String|The type of operating system running on the deviced used for the authentication step.|
+|appVersion|String|The version of the client app used during the authentication step.|
+|clientApp|String|The name of the client app used during the authentication step.|
+|deviceId|String|ID of the device used during the authentication step.|
+|operatingSystem|String|The operating system running on the device used for the authentication step.|
 
 ## Relationships
 None.
