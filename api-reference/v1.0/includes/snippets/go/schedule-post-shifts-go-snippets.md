@@ -14,7 +14,7 @@ userId := "c5d0c76b-80c4-481c-be50-923cd8d680a1"
 requestBody.SetUserId(&userId) 
 schedulingGroupId := "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
 requestBody.SetSchedulingGroupId(&schedulingGroupId) 
-sharedShift := graphmodels.NewsharedShift()
+sharedShift := graphmodels.NewShiftItem()
 displayName := "Day shift"
 sharedShift.SetDisplayName(&displayName) 
 notes := "Please do inventory as part of your shift."
@@ -45,7 +45,7 @@ activities := []graphmodels.ShiftActivityable {
 }
 sharedShift.SetActivities(activities)
 requestBody.SetSharedShift(sharedShift)
-draftShift := graphmodels.NewdraftShift()
+draftShift := graphmodels.NewShiftItem()
 displayName := "Day shift"
 draftShift.SetDisplayName(&displayName) 
 notes := "Please do inventory as part of your shift."

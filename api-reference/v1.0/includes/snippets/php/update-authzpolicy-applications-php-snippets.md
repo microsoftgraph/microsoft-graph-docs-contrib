@@ -17,7 +17,7 @@ $defaultUserRolePermissions->setAllowedToCreateApps(false);
 $requestBody->setDefaultUserRolePermissions($defaultUserRolePermissions);
 
 
-$graphServiceClient->policies()->authorizationPolicy()->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->authorizationPolicy()->patch($requestBody);
 
 
 ```

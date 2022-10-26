@@ -67,7 +67,7 @@ Congratulations! You've now set up your repository. You won't need to repeat the
 
 ## Contribute and edit content
 
-Follow the guidance for [Quick edits to existing documents](https://docs.microsoft.com/en-us/contribute/#quick-edits-to-documentation) in our contributor guide.
+Follow the guidance for [Quick edits to existing documents](https://learn.microsoft.com/contribute/#quick-edits-to-documentation) in our contributor guide.
 
 Limit each branch to a single concept/article to streamline the workflow and reduce the chance of merge conflicts. The following types of contribution are appropriate for a new branch:
 
@@ -109,7 +109,7 @@ The following section shows the structure of a complete example. Line numbers ar
  8:    "blockType": "request",
  9:    "name": "get_users"
 10:  } -->
-11:  ```msgraph-interactive
+11:  ```http
 12:  GET https://graph.microsoft.com/v1.0/users
 13:  ```
 14:  
@@ -159,9 +159,11 @@ The following section shows the structure of a complete example. Line numbers ar
 
 ## More resources
 
+- [Microsoft Learn documentation contributor guide overview][Learn contributor guide - public]
 - For more information about Markdown, go to [their site][Markdown Home].
 - For more information about using Git and GitHub, first check out the [GitHub Help] and if necessary contact the site administrators.
 
+[Learn contributor guide - public]: https://learn.microsoft.com/en-us/contribute/
 [GitHub Home]: https://github.com
 [GitHub Help]: https://help.github.com/
 [Set Up Git]: https://help.github.com/win-set-up-git/

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := graphmodels.NewEdiscoveryNoncustodialDataSource()
-dataSource := graphmodels.NewdataSource()
+dataSource := graphmodels.NewDataSource()
 additionalData := map[string]interface{}{
 site := graphmodels.New()
 webUrl := "https://m365x809305.sharepoint.com/sites/Design-topsecret"

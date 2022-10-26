@@ -11,31 +11,27 @@ requestBody := graphmodels.NewInvitePostRequestBody()
 
 
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
-additionalData := map[string]interface{}{
-	"replacesCallId" : "a7ebfb2d-871e-419c-87af-27290b22e8db", 
-identity := graphmodels.New()
-user := graphmodels.New()
+replacesCallId := "a7ebfb2d-871e-419c-87af-27290b22e8db"
+invitationParticipantInfo.SetReplacesCallId(&replacesCallId) 
+identity := graphmodels.NewIdentitySet()
+user := graphmodels.NewIdentity()
 id := "7e1b4346-85a6-4bdd-abe3-d11c5d420efe"
 user.SetId(&id) 
 displayName := "string"
 user.SetDisplayName(&displayName) 
-	identity.SetUser(user)
-	invitationParticipantInfo.SetIdentity(identity)
-}
-invitationParticipantInfo.SetAdditionalData(additionalData)
+identity.SetUser(user)
+invitationParticipantInfo.SetIdentity(identity)
 invitationParticipantInfo1 := graphmodels.NewInvitationParticipantInfo()
-additionalData := map[string]interface{}{
-	"replacesCallId" : "a7ebfb2d-871e-419c-87af-27290b22e8db", 
-identity := graphmodels.New()
-user := graphmodels.New()
+replacesCallId := "a7ebfb2d-871e-419c-87af-27290b22e8db"
+invitationParticipantInfo1.SetReplacesCallId(&replacesCallId) 
+identity := graphmodels.NewIdentitySet()
+user := graphmodels.NewIdentity()
 id := "1e126418-44a0-4a94-a6f8-0efe1ad71acb"
 user.SetId(&id) 
 displayName := "string"
 user.SetDisplayName(&displayName) 
-	identity.SetUser(user)
-	invitationParticipantInfo1.SetIdentity(identity)
-}
-invitationParticipantInfo1.SetAdditionalData(additionalData)
+identity.SetUser(user)
+invitationParticipantInfo1.SetIdentity(identity)
 
 participants := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,

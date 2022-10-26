@@ -74,7 +74,8 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript"
+  "name": "get_callTranscript",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
 ``` http
@@ -135,7 +136,8 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript_content"
+  "name": "get_callTranscript_content",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
 ``` http
@@ -194,7 +196,8 @@ WEBVTT
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript_content_format"
+  "name": "get_callTranscript_content_format",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
 ``` http
@@ -252,7 +255,8 @@ WEBVTT
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript_content_Accept"
+  "name": "get_callTranscript_content_Accept",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
 ``` http
@@ -310,7 +314,8 @@ This is a transcript test.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript_content_format_precedence"
+  "name": "get_callTranscript_content_format_precedence",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
 ``` http
