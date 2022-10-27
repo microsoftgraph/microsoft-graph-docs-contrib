@@ -33,6 +33,11 @@ One of the following permissions is required to call this API. To learn more, in
 GET /devices/{id}/registeredOwners
 ```
 
+**deviceId** can also be used as an alternate key
+```http
+GET /devices/{deviceId}/registeredOwners
+```
+
 > Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.
 
 ## Optional query parameters

@@ -36,6 +36,11 @@ One of the following permissions is required to call this API. To learn more, in
 GET /devices/{id}/transitiveMemberOf
 ```
 
+**deviceId** can also be used as an alternate key
+```http
+GET /devices/{deviceId}/transitiveMemberOf
+```
+
 ## Optional query parameters
 
 This method supports the `$search`, `$count`, and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response. OData cast is also enabled, for example, you can cast to get just the directoryRoles the device is a member of. You can use `$search` on the **displayName** and **description** properties.

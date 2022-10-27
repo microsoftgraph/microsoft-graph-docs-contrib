@@ -30,7 +30,12 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /devices/{objectId}/usageRights
+GET /devices/{id}/usageRights
+```
+
+**deviceId** can also be used as an alternate key
+``` http
+GET /devices/{deviceId}/usageRights
 ```
 
 ## Optional query parameters

@@ -29,8 +29,13 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices/{id}/registeredUsers/$ref
-
 ```
+
+**deviceId** can also be used as an alternate key
+```http
+POST /devices/{deviceId}/registeredUsers/$ref
+```
+
 ## Request headers
 | Name       | Description|
 |:---------------|:--------|

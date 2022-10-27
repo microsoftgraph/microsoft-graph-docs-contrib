@@ -28,8 +28,13 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices/{id}/registeredOwners/$ref
-
 ```
+
+**deviceId** can also be used as an alternate key
+```http
+POST /devices/{deviceId}/registeredOwners/$ref
+```
+
 ## Request headers
 | Name       | Description|
 |:---------------|:--------|
