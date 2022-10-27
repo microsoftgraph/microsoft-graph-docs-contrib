@@ -366,7 +366,8 @@ The following example shows how to list a custom security attribute assignment a
 
 - Attribute set: `Engineering`
 - Attribute: `datacenter`
-- Attribute value: `Redmond`
+- Attribute data type: Collection of Strings
+- Attribute value: ["Redmond"]
 
 #### Request
 
