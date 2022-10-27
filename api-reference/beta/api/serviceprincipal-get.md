@@ -76,8 +76,11 @@ Here is an example of the request.
   "name": "get_serviceprincipal"
 }-->
 
-```msgraph-interactive
+```msgraph-interactive (using id)
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}
+```
+
+```msgraph-interactive (using appId)
 GET https://graph.microsoft.com/beta/servicePrincipals(appId='{appId}')
 ```
 
@@ -232,9 +235,12 @@ To get custom security attribute assignments, the calling principal must be assi
   "blockType": "request",
   "name": "get_serviceprincipal_customsecurityattributes"
 }-->
-```msgraph-interactive
+```msgraph-interactive (using id)
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecurityAttributes
-GET https://graph.microsoft.com/beta/servicePrincipals/(appId='{appId}')?$select=customSecurityAttributes
+```
+
+```msgraph-interactive (using appId)
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecurityAttributes
 ```
 
 # [C#](#tab/csharp)
