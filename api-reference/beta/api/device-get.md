@@ -67,12 +67,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc366
 ```
-# [HTTP - deviceId](#tab/http)
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/(deviceId='f084-05c3-b7a6-4c61-89fc-80bf5ccfc366')
-```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-device-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
