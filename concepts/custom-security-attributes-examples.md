@@ -374,7 +374,7 @@ The following example shows how to list a custom security attribute assignment a
 
 <!-- {
   "blockType": "request",
-  "name": "customsecurityattribute_remove_from_user_singlevalue"
+  "name": "customsecurityattribute_get_for_user"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes 
