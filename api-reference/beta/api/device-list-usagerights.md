@@ -35,7 +35,7 @@ GET /devices/{id}/usageRights
 
 **deviceId** can also be used as an alternate key
 ``` http
-GET /devices/{deviceId}/usageRights
+GET /devices/(deviceId='{deviceId}')/usageRights
 ```
 
 ## Optional query parameters
@@ -76,6 +76,11 @@ Additionally, if there are more pages in the response an @odata.nextLink is retu
 -->
 ``` http
 GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights
+```
+
+# [HTTP - deviceId](#tab/httpdeviceid)
+``` http
+GET https://graph.microsoft.com/beta/devices/(deviceId='{deviceId}')/usageRights
 ```
 
 # [C#](#tab/csharp)

@@ -74,11 +74,8 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 
 ```
-# [HTTP - deviceId](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_device_memberof"
-}-->
+# [HTTP - deviceId](#tab/httpdeviceid)
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/(deviceId='{deviceId}')/memberOf
 ```

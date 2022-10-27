@@ -38,7 +38,7 @@ PATCH /devices/{id}
 
 **deviceId** can also be used as an alternate key
 ```http
-PATCH /devices/{deviceId}
+PATCH /devices/(deviceId='{deviceId}')
 ```
 
 ## Request headers
@@ -80,6 +80,17 @@ If successful, this method returns a `204 No Content` response code.
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/devices/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac
+Content-type: application/json
+
+{
+  "accountEnabled": false
+}
+```
+
+# [HTTP - deviceId](#tab/httpdeviceid)
+
+```http
+PATCH https://graph.microsoft.com/beta/devices/(deviceId='7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac')
 Content-type: application/json
 
 {

@@ -35,7 +35,7 @@ GET /devices/{id}/registeredOwners
 
 **deviceId** can also be used as an alternate key
 ```http
-GET /devices/{deviceId}/registeredOwners
+GET /devices/(deviceId='{deviceId}')/registeredOwners
 ```
 
 > Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.
@@ -70,6 +70,12 @@ The following is an example of the request.
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/registeredOwners
+```
+
+# [HTTP - deviceId](#tab/httpdeviceid)
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices/(deviceId='{deviceId}')/registeredOwners
 ```
 
 # [C#](#tab/csharp)

@@ -66,11 +66,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 DELETE https://graph.microsoft.com/beta/devices/{id}
 ```
 
-# [HTTP - deviceId](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "delete_device"
-}-->
+# [HTTP - deviceId](#tab/httpdeviceid)
+
 ```http
 DELETE https://graph.microsoft.com/beta/devices/(deviceId='{deviceId}')
 ```

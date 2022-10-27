@@ -38,7 +38,7 @@ GET /devices/{id}/transitiveMemberOf
 
 **deviceId** can also be used as an alternate key
 ```http
-GET /devices/{deviceId}/transitiveMemberOf
+GET /devices/(deviceId='{deviceId}')/transitiveMemberOf
 ```
 
 ## Optional query parameters
@@ -80,6 +80,12 @@ Here is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
+```
+
+# [HTTP - deviceId](#tab/httpdeviceid)
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices/(deviceId='{deviceId}')/transitiveMemberOf
 ```
 
 # [C#](#tab/csharp)
