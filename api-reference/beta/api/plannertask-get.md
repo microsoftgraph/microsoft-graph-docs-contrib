@@ -1,6 +1,6 @@
 ---
 title: "Get plannerTask"
-description: "Retrieve the properties and relationships of plannertask object."
+description: "Retrieve the properties and relationships of plannerTask object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
