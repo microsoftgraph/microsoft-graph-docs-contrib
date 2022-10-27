@@ -2320,6 +2320,20 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsAppInstallation.ReadWriteForTeam.All_ | Manage Teams apps for all teams| Allows the app to read, install, upgrade, and uninstall Teams apps in any team, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_ | Allow the Teams app to manage itself for all teams| Allows a Teams app to read, install, upgrade, and uninstall itself in any team, without a signed-in user.| Yes |
 
+## Teams app settings permissions
+
+#### Delegated permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkAppSettings.Read.All_  | Read Teams app settings | Allows the app to read the Teams app settings on behalf of the signed-in user.| No | No |
+| _TeamworkAppSettings.ReadWrite.All_ | Read and write Teams app settings | Allows the app to read and write the Teams app settings on behalf of the signed-in user.| Yes | No |
+
+#### Application permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _TeamworkAppSettings.Read.All_ | Read Teams app settings | Allows the app to read the Teams app settings without a signed-in user.| Yes |
+| _TeamworkAppSettings.ReadWrite.All_ | Read and write Teams app settings| Allows the app to read and write the Teams app settings without a signed-in user.| Yes |
+
 ## Teams device management permissions
 
 #### Delegated permissions
