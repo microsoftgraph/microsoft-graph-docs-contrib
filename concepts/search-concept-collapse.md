@@ -12,7 +12,7 @@ You can use the Microsoft Search API in Microsoft Graph to collapse items in sea
 
 | Scenarios | Description | Sample |
 | :----     | :----       | :----  |
-|**Basic Collapse**|Collapse by any single sortable/refinable property.|"collapseProperties":[{"fields":["title"],"limit":3}]|
+|**Basic Collapse**|Collapse by any single sortable/refinable property. This limit value must be an integer between 1 and 32767.|"collapseProperties":[{"fields":["title"],"limit":3}]|
 |**Compound Collapse**|Collapse by compound fields of properties. There is no built-in maximum size for number of fields, but at least two fields need to be nominated. This limit value must be an integer between 1 and 32767.|"collapseProperties":[{"fields":["title","createdBy"],"limit":2}]|
 |**Multi-level Collapse**|Collapse by level-by-level collapseProperty. There is no built-in maximum size for number of levels, but at least two levels need to be specified. For the limit value of each level must be an integer between 1 and 32767, and must be equal or less than upper-level limit value. |"collapseProperties":[{"fields":["title"],"limit":3},{"fields":["createdBy"],"limit":1}]|
 
@@ -146,7 +146,7 @@ Content-Type: application/json
     ]
 }
 ```
-First, group the items based on **title** and show the top three (hence "limit": 3) for each group. Then, for each **title**, show a corresponding item of **createdBy** (hence second level "limit": 1). In the first level we group by title and keep top three rows, so we exclude row 4 and 5. Then in each title group, we keep row with unique cearedBy, so we exclude row 8 for its duplicate createdBy. The returned order base on ranking.
+First, group the items based on **title** and show the top three (hence "limit": 3) for each group. Then, for each **title**, show a corresponding item of **createdBy** (hence second level "limit": 1). In the first level we group by title and keep top three rows, so we exclude row 4 and 5. Then in each title group, we keep row with unique createdBy, so we exclude row 8 for its duplicate createdBy. The returned order base on ranking.
 | Title | Created By | Subject | Rank |
 | :---- | :---- | :---- | :---- |
 |Note|Andy|Poetry|1|
