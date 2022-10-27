@@ -107,12 +107,48 @@ The following are the supported meeting events:
   "eventType":"Microsoft.Communication.CallRosterUpdate",
   "eventDateTime":"2022-02-28T00:00:00.0000000Z",
   "state":"active",
-  "activeParticipants@delta": ["{meetingParticipantInfo list of users that joined}"],
-  "activeParticipants@remove": ["{meetingParticipantInfo list of users that left}"]
+  "activeParticipants@joined": [
+    {
+      "id": "User",
+      "identity": 
+      {
+        "User": 
+        {
+          "Id": "user-id-guid",
+          "DisplayName": "user-display-name",
+          "TenantId": "tenant-id-guid"
+        }
+      }
+    }
+  ],
+  "activeParticipants@exited": [
+    { // Sample ACS user
+      "id": "ACS user",
+      "identity": 
+      {
+        "AzureCommunicationServicesUser": 
+        {
+          "AzureCommunicationServicesResourceId": "acs-resource-id",
+          "Id": "8:acs:resourceid_userid",
+          "DisplayName": "acs-user-display-name"
+        }
+      }
+    }
+  ]
 }
 ```
 
-**CallRosterUpdate** events include two additional properties, **activeParticipants@delta** to depict participants added to a meeting and **activeParticipants@remove** for participants leaving the online meeting. For more information about participants, see [meetingParticipantInfo resource type](/graph/api/resources/meetingparticipantinfo).
+**CallRosterUpdate** events include two additional properties, **activeParticipants@joined** to depict participants added to a meeting and **activeParticipants@exited** for participants leaving the online meeting. 
+
+An active participant is represented as follows: 
+```json
+{
+  "id": "string",
+  "identity": "Microsoft.Graph.CommunicationsIdentitySet"
+}
+```
+
+For more information about communicationsIdentitySet, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta).
 
 You can choose to omit encryption by not including the property **includeResourceData** or setting this value to `false` in your subscription request body. Doing so adds the properties that would have been part of the encrypted payload to **resourceData**.
 
