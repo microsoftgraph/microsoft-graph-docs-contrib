@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-"Provides details of the Azure AD policies applied to a user and client authenticator app during the authentication step.
+Provides details of the Azure AD policies applied to a user and client authenticator app during the authentication step.
 
 ## Properties
 |Property|Type|Description|
