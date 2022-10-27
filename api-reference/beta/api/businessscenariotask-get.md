@@ -1,0 +1,123 @@
+---
+title: "Get businessScenarioTask"
+description: "Read the properties and relationships of a businessScenarioTask object."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.localizationpriority: medium
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+doc_type: apiPageType
+---
+
+# Get businessScenarioTask
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Read the properties and relationships of a [businessScenarioTask](../resources/businessscenariotask.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Application|**TODO: Provide applicable permissions.**|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /solutions/businessScenarios/{businessScenarioId}/planner/tasks/{businessScenarioTaskId}
+```
+
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a [businessScenarioTask](../resources/businessscenariotask.md) object in the response body.
+
+## Examples
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_businessscenariotask"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/businessScenarios/{businessScenarioId}/planner/tasks/{businessScenarioTaskId}
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.businessScenarioTask"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.businessScenarioTask",
+    "id": "657127e8-b792-bd90-d937-82b7465d1c11",
+    "createdBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "planId": "String",
+    "bucketId": "String",
+    "title": "String",
+    "orderHint": "String",
+    "assigneePriority": "String",
+    "percentComplete": "Integer",
+    "priority": "Integer",
+    "startDateTime": "String (timestamp)",
+    "createdDateTime": "String (timestamp)",
+    "dueDateTime": "String (timestamp)",
+    "hasDescription": "Boolean",
+    "previewType": "String",
+    "completedDateTime": "String (timestamp)",
+    "completedBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "referenceCount": "Integer",
+    "checklistItemCount": "Integer",
+    "activeChecklistItemCount": "Integer",
+    "appliedCategories": {
+      "@odata.type": "microsoft.graph.plannerAppliedCategories"
+    },
+    "assignments": {
+      "@odata.type": "microsoft.graph.plannerAssignments"
+    },
+    "conversationThreadId": "String",
+    "creationSource": {
+      "@odata.type": "microsoft.graph.plannerTaskCreation"
+    },
+    "businessScenarioProperties": {
+      "@odata.type": "microsoft.graph.businessScenarioProperties"
+    },
+    "target": {
+      "@odata.type": "microsoft.graph.businessScenarioTaskTargetBase"
+    }
+  }
+}
+```
+
