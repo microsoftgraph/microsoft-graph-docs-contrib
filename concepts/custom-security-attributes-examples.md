@@ -419,7 +419,7 @@ The following example shows how to remove a custom security attribute assignment
 
 <!-- {
   "blockType": "request",
-  "name": "customsecurityattribute__from_user_singlevalue"
+  "name": "customsecurityattribute_remove_from_user_singlevalue"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
