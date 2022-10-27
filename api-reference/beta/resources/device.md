@@ -52,7 +52,7 @@ This resource is an open type that allows other properties to be passed in. You 
 |approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, and `eq` on `null` values) and `$orderBy`. |
 |complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 |deviceCategory|String|User-defined property set by Intune to automatically add devices to groups and simplify managing devices.|
-|deviceId|String| Identifier set by Azure Device Registration Service at the time of registration. Supports `$filter` (`eq`, `ne`, `not`, `startsWith`). |
+|deviceId|String| Unique Identifier set by Azure Device Registration Service at the time of registration. This is an alternte key, meaning it can be used in the place of `id`. Also Supports `$filter` (`eq`, `ne`, `not`, `startsWith`). |
 |deviceMetadata|String| For internal use only. Set to `null`. |
 |deviceOwnership|String|Ownership of the device. This property is set by Intune. Possible values are: `unknown`, `company`, `personal`.|
 |deviceVersion|Int32| For internal use only. |
