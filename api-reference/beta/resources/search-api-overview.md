@@ -32,7 +32,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Get selected properties](#get-selected-properties) | **fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
-|[Collapse search results](#collapse-search-results)| **collapse**|
+|[Collapse search results](#collapse-search-results)| **collapseProperties**|
 |[Sort search results](#sort-search-results)| **sortProperties** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
 |[Search custom types imported using connectors](/graph/search-concept-custom-types)| **contentSources** |
@@ -116,7 +116,7 @@ Depending on the entity type, the searchable properties vary. For details, see:
 
 ## Collapse search results
 
-The collapseProperties property takes a collection of collapseProperty that can contain multiple fields and limit size, which evaluated together specify a set of criteria used for collapsing. And collapseProperties only impacts the recall but not ranking/sorting.
+The collapseProperties property contains a set of criteria, fields and limit size, which is used for collapsing results in a response body. Using collapseProperties only impacts the recall but not ranking/sorting.
 
 The [query](../api/search-query.md) method lets you customize the collapse property by specifying the **collapseProperties** on the `requests` parameter, which is collection of [collapseProperty](collapseProperty.md). This allows you to specify a set of one or more collapse property.
 
@@ -238,6 +238,7 @@ For backward compatibility, the original properties and types are accessible and
   - [Search person](/graph/search-concept-person)
   - [Search content in Sharepoint and OneDrive](/graph/search-concept-files)
   - [Search custom types imported using connectors](/graph/search-concept-custom-types)
+  - [Collapse search results](/graph/search-concept-collapse)
   - [Sort search results](/graph/search-concept-sort)
   - [Refine search results](/graph/search-concept-aggregation)
   - [Request spelling correction](/graph/search-concept-speller)
