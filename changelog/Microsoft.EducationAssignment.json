@@ -33,6 +33,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [setUpFeedbackResourcesFolder](https://learn.microsoft.com/graph/api/educationassignment-setupfeedbackresourcesfolder?view=graph-rest-1.0) method to the [educationAssignment](https://learn.microsoft.com/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
           "Target": "educationAssignment"
+        },
+        {
+          "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$filter` query parameter for the [List outcomes](https://learn.microsoft.com/graph/api/educationsubmission-list-outcomes?view=graph-rest-1.0) method.",
+          "Target": "educationSubmission"
         }
       ],
       "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
