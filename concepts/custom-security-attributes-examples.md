@@ -362,7 +362,7 @@ HTTP/1.1 204 No Content
 
 ### Example 1: Get the custom security attributes assigned to a user
 
-The following example shows how to list a custom security attribute assignment assigned to the user.
+The following example shows how to list a custom security attribute assignment assigned to the user. The custom security attribute is a multi-string value with the following settings:
 
 - Attribute set: `Engineering`
 - Attribute: `datacenter`
