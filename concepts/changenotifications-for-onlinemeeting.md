@@ -114,23 +114,23 @@ The following are the supported meeting events:
       {
         "User": 
         {
-          "Id": "user-id-guid",
-          "DisplayName": "user-display-name",
-          "TenantId": "tenant-id-guid"
+          "Id": "f92ca67f-0564-414b-8caa-8c95b8099928",
+          "DisplayName": "user display name",
+          "TenantId": "85045508-f5bd-405e-a553-52700f86e29c"
         }
       }
     }
   ],
   "activeParticipants@exited": [
-    { // Sample ACS user
+    {
       "id": "ACS user",
       "identity": 
       {
         "AzureCommunicationServicesUser": 
         {
-          "AzureCommunicationServicesResourceId": "acs-resource-id",
-          "Id": "8:acs:resourceid_userid",
-          "DisplayName": "acs-user-display-name"
+          "AzureCommunicationServicesResourceId": "534c244d-49f8-47a1-9e8e-70d115a2ef4d",
+          "Id": "8:acs:534c244d-49f8-47a1-9e8e-70d115a2ef4d_28f01a7b-42cd-4e37-ae1a-bd653377f4b7",
+          "DisplayName": "acs user display name"
         }
       }
     }
