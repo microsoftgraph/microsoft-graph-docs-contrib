@@ -26,7 +26,7 @@ There is no methods available on this resource.
 | Property  | Type   | Description                                                                          |
 | :-------- | :----- | :----------------------------------------------------------------------------------- |
 | id        | String | Instance identifier of the WebPart. Inherited from [entity](../resources/entity.md). |
-| innerHTML | String | The HTML string in text WebPart.                                                     |
+| innerHtml | String | The HTML string in text WebPart.                                                     |
 
 ## Relationships
 
@@ -49,6 +49,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.textWebPart",
   "id": "String (identifier)",
-  "innerHTML": "String"
+  "innerHtml": "String"
 }
 ```

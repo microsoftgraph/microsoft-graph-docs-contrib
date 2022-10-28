@@ -81,7 +81,7 @@ Content-Type: application/json
             "webparts": [
               {
                 "id": "6f9230af-2a98-4952-b205-9ede4f9ef548",
-                "innerHTML": "<p><b>Hello!</b></p>"
+                "innerHtml": "<p><b>Hello!</b></p>"
               }
             ]
           },
