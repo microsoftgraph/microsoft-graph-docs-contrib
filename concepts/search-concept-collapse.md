@@ -159,5 +159,5 @@ In below table, the ranking is still maintained, but we collapse first on title 
 
 ## Next steps
 
-- [Use the SharePoint to collapse search results](/sharepoint/dev/general-development/customizing-search-results-in-sharepoint#collapse-similar-search-results-using-the-collapsespecification-property)
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)
+- [Collapse search results in SharePoint](/sharepoint/dev/general-development/customizing-search-results-in-sharepoint#collapse-similar-search-results-using-the-collapsespecification-property)
