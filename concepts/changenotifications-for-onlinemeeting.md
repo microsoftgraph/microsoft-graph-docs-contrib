@@ -78,9 +78,9 @@ For details about how to validate tokens and decrypt the payload, see [Set up ch
 ## Event notifications types
 
 The following are the supported meeting events:
-- CallStarted - Occurs when a meeting call is started.
-- CallEnded - Occurs when a meeting call has been concluded.
-- CallRosterUpdate - Occurs when a participant joins or exits a call.
+- CallStarted - Occurs when the meeting call has started.
+- CallEnded - Occurs when the meeting call has ended.
+- CallRosterUpdate - Occurs when a participant joins or exits the meeting call.
 
 ### Decrypted payload examples
 
@@ -90,7 +90,7 @@ The following are the supported meeting events:
   "@odata.type":"#Microsoft.Graph.onlineMeeting",
   "@odata.id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
   "id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-  "eventType":"{Microsoft.Communication.CallStarted or Microsoft.Communication.CallEnded}",
+  "eventType":"{Microsoft.Communication.CallStarted}",
   "eventDateTime":"2022-02-28T00:00:00.0000000Z",
   "state":"active"
 }
@@ -119,8 +119,8 @@ The following are the supported meeting events:
   "eventDateTime":"2022-02-28T00:00:00.0000000Z",
   "activeParticipants@joined": [
     {
-      "id": "a4d67b60-56a5-4202-9f1c-f123ff40621e",
-      "identity": 
+      "Id": "a4d67b60-56a5-4202-9f1c-f123ff40621e",
+      "Identity": 
       {
         "User": 
         {
@@ -133,8 +133,8 @@ The following are the supported meeting events:
   ],
   "activeParticipants@exited": [
     {
-      "id": "11141402-1b62-4795-b540-4ffee8544231",
-      "identity": 
+      "Id": "11141402-1b62-4795-b540-4ffee8544231",
+      "Identity": 
       {
         "AzureCommunicationServicesUser": 
         {
@@ -148,17 +148,17 @@ The following are the supported meeting events:
 }
 ```
 
-**CallRosterUpdate** events include two additional properties, **activeParticipants@joined** to depict participants added to a meeting and **activeParticipants@exited** for participants leaving the online meeting. 
+**CallRosterUpdate** events include two properties, **activeParticipants@joined** to depict participants added to a meeting and **activeParticipants@exited** for participants leaving the meeting call. 
 
 An active participant is represented as follows: 
 ```json
 {
-  "id": "Guid",
-  "identity": "Microsoft.Graph.CommunicationsIdentitySet"
+  "Id": "string",
+  "Identity": "microsoft.graph.communicationsIdentitySet"
 }
 ```
-- The **id** property corresponds to participant ID which is a unique identifier assigned to each participant in the meeting call.
-- The **identity** refers to the communicationsIdentitySet. For more information about communicationsIdentitySet, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta).
+- The **Id** property corresponds to participant ID which is a unique identifier assigned to each participant in the meeting call.
+- The **Identity** refers to the communicationsIdentitySet. For more information about communicationsIdentitySet, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta).
 
 You can choose to omit encryption by not including the property **includeResourceData** or setting this value to `false` in your subscription request body. Doing so adds the properties that would have been part of the encrypted payload to **resourceData**.
 
