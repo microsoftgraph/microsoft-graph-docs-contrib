@@ -6081,6 +6081,40 @@
       "CreatedDateTime": "2022-10-26T20:34:40.595Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
-    }
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "825762b0-5bd9-4838-99b4-74fa6adebf12",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMembersNotificationRecipient",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/chatMembersNotificationRecipient?view=graph-rest-v1.0) resource type.",
+          "Target": "chatMembersNotificationRecipient"
+        },
+        {
+          "Id": "daf9eab3-3479-4fb9-a8fe-3c07ea8acfb4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelMembersNotificationRecipient",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/channelMembersNotificationRecipient?view=graph-rest-v1.0) resource type.",
+          "Target": "channelMembersNotificationRecipient"
+        },
+        {
+          "Id": "1c31d611-cf41-4938-a81f-3e97502c4d92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamMembersNotificationRecipient",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/teammembersnotificationrecipient?view=graph-rest-v1.0) resource type.",
+          "Target": "teamMembersNotificationRecipient"
+        }
+      ],
+      "Id": "ba8b5322-2b16-4853-b0e4-ac3ba9fd2615",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-28T19:48:01.454Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
   ]
 }

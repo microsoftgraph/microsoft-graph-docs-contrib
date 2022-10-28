@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the recipient of a notification sent in a Microsoft Teams activity feed. See also [aadUserNotificationRecipient](aadusernotificationrecipient.md).
+Represents the recipient of a notification sent in a Microsoft Teams activity feed. See also [aadUserNotificationRecipient](aadusernotificationrecipient.md), [teamMembersNotificationRecipient](teammembersnotificationrecipient.md), [channelMembersNotificationRecipient](channelmembersnotificationrecipient.md), and [chatMembersNotificationRecipient](chatmembersnotificationrecipient.md).
 
 ## Properties
 None.
