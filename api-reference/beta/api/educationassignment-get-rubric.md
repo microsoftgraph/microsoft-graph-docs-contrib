@@ -2,7 +2,7 @@
 title: "Get educationRubric attached to educationAssignment"
 description: "Get the educationRubric attached to an educationAssignment, if one exists."
 ms.localizationpriority: medium
-author: "dipakboyed"
+author: "Sureshpadimi88"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
@@ -33,6 +33,11 @@ One of the following permissions is required to call this API. To learn more, in
 GET /education/classes/{id}/assignments/{id}/rubric
 ```
 
+## Optional query parameters
+
+This method supports the `$top`,and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+
 ## Request headers
 
 | Name      |Description|
@@ -60,7 +65,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/rubric
+GET https://graph.microsoft.com/beta/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric
 ```
 
 # [C#](#tab/csharp)

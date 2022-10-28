@@ -2,7 +2,7 @@
 title: "Get riskyUser"
 description: "Retrieve the properties and relationships of a **riskyUser** object."
 ms.localizationpriority: medium
-author: "cloudhandler"
+author: "ebasseri"
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 ---
@@ -116,8 +116,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser_2",
-  "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
+  "name": "get_riskyuser_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProtection/riskyUsers

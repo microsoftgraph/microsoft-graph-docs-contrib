@@ -3,6 +3,186 @@
     {
       "ChangeList": [
         {
+          "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [Update educationOutcome](https://learn.microsoft.com/en-us/graph/api/educationoutcome-update?view=graph-rest-beta).",
+          "Target": "educationOutcome"
+        },
+        {
+          "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [Update educationOutcome](https://learn.microsoft.com/en-us/graph/api/educationoutcome-update?view=graph-rest-beta).",
+          "Target": "educationOutcome"
+        },
+        {
+          "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Notes.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: reassign](https://learn.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-beta).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: reassign](https://learn.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-beta).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: return](https://learn.microsoft.com/en-us/graph/api/educationsubmission-return?view=graph-rest-beta).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: return](https://learn.microsoft.com/en-us/graph/api/educationsubmission-return?view=graph-rest-beta).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Notes.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: submit](https://learn.microsoft.com/en-us/graph/api/educationsubmission-submit?view=graph-rest-beta).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: submit](https://learn.microsoft.com/en-us/graph/api/educationsubmission-submit?view=graph-rest-beta).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Notes.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: unsubmit](https://learn.microsoft.com/en-us/graph/api/educationsubmission-unsubmit?view=graph-rest-beta).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: unsubmit](https://learn.microsoft.com/en-us/graph/api/educationsubmission-unsubmit?view=graph-rest-beta).",
+          "Target": "educationSubmission"
+        }
+      ],
+      "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0e262ff3-3b29-4a2b-a44b-39ed5f2e676d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [Update educationOutcome](https://learn.microsoft.com/en-us/graph/api/educationoutcome-update?view=graph-rest-1.0).",
+          "Target": "educationOutcome"
+        },
+        {
+          "Id": "0e262ff3-3b29-4a2b-a44b-39ed5f2e676d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [Update educationOutcome](https://learn.microsoft.com/en-us/graph/api/educationoutcome-update?view=graph-rest-1.0).",
+          "Target": "educationOutcome"
+        },
+        {
+          "Id": "0e262ff3-3b29-4a2b-a44b-39ed5f2e676d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Notes.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: reassign](https://learn.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-1.0).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "0e262ff3-3b29-4a2b-a44b-39ed5f2e676d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: reassign](https://learn.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-1.0).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "0e262ff3-3b29-4a2b-a44b-39ed5f2e676d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: return](https://learn.microsoft.com/en-us/graph/api/educationsubmission-return?view=graph-rest-1.0).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "0e262ff3-3b29-4a2b-a44b-39ed5f2e676d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: return](https://learn.microsoft.com/en-us/graph/api/educationsubmission-return?view=graph-rest-1.0).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "0e262ff3-3b29-4a2b-a44b-39ed5f2e676d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Notes.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: submit](https://learn.microsoft.com/en-us/graph/api/educationsubmission-submit?view=graph-rest-1.0).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "0e262ff3-3b29-4a2b-a44b-39ed5f2e676d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: submit](https://learn.microsoft.com/en-us/graph/api/educationsubmission-submit?view=graph-rest-1.0).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "0e262ff3-3b29-4a2b-a44b-39ed5f2e676d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Notes.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: unsubmit](https://learn.microsoft.com/en-us/graph/api/educationsubmission-unsubmit?view=graph-rest-1.0).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "0e262ff3-3b29-4a2b-a44b-39ed5f2e676d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [educationSubmission: unsubmit](https://learn.microsoft.com/en-us/graph/api/educationsubmission-unsubmit?view=graph-rest-1.0).",
+          "Target": "educationSubmission"
+        }
+      ],
+      "Id": "0e262ff3-3b29-4a2b-a44b-39ed5f2e676d",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-04T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0089a052-0ffa-47ba-a8c0-9fad7f1ae0cc",
           "ApiChange": "EnumType",
           "ChangedApiName": "educationFeedbackResourceOutcomeStatus",

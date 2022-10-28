@@ -323,7 +323,7 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-> **Note:** The attachment's ID must be unique and can be a new randomly generated GUID. However, the attachment's ID must be the same in the _body_ and _attachments_ elements.
+> **Note:** The attachment ID must be unique and can be a new randomly generated GUID. However, the attachment ID must be the same in the _body_ and _attachments_ elements.
 
 
 # [HTTP](#tab/http)
@@ -575,9 +575,9 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to **1** and the reference in body as `../hostedContents/1/$value`.)
+> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in body as `../hostedContents/1/$value`.).
 
-**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`.
 
 
 # [HTTP](#tab/http)
@@ -688,9 +688,9 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to **1** and the reference in content as `../hostedContents/1/$value`.)
+> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in content as `../hostedContents/1/$value`.).
 
-**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`.
 
 
 # [HTTP](#tab/http)
@@ -757,6 +757,8 @@ Content-type: application/json
 
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -954,7 +956,7 @@ Content-type: application/json
 }
 ```
 
-### Example 8 : @mention a team in a channel message
+### Example 8: @mention a team in a channel message
 
 #### Request
 The following is an example of the request.

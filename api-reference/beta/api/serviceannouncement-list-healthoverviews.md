@@ -211,7 +211,7 @@ Content-Type: application/json
                     "createdDateTime": "2020-11-12T07:07:38.97Z",
                     "postType": "Regular",
                     "description": {
-                        "contentType": "Text",
+                        "contentType": "Html",
                         "content": "Title: Exchange Online service has login issue. We'll provide an update within 30 minutes."
                     }
                   }

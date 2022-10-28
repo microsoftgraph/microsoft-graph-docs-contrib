@@ -353,6 +353,74 @@
 			"CreatedDateTime": "2022-08-17T13:03:13.9213719Z",
 			"WorkloadArea": "Security",
 			"SubArea": ""
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "81de8e8a-4ac0-11ed-b878-0242ac120002",
+					"ApiChange": "Resource",
+					"ChangedApiName": "huntingQueryResults",
+					"ChangeType": "Addition",
+					"Description": "Added the [huntingQueryResults](https://docs.microsoft.com/en-us/graph/api/resources/security-huntingQueryResults?view=graph-rest-beta) resource type.",
+					"Target": "huntingQueryResults"
+				},
+				{
+					"Id": "81de8e8a-4ac0-11ed-b878-0242ac120002",
+					"ApiChange": "Resource",
+					"ChangedApiName": "huntingRowResult",
+					"ChangeType": "Addition",
+					"Description": "Added the [huntingRowResult](https://docs.microsoft.com/en-us/graph/api/resources/security-huntingRowResult?view=graph-rest-beta) resource type.",
+					"Target": "huntingRowResult"
+				},
+				{
+					"Id": "81de8e8a-4ac0-11ed-b878-0242ac120002",
+					"ApiChange": "Resource",
+					"ChangedApiName": "singlePropertySchema",
+					"ChangeType": "Addition",
+					"Description": "Added the [singlePropertySchema](https://docs.microsoft.com/en-us/graph/api/resources/security-singlePropertySchema?view=graph-rest-beta) resource type.",
+					"Target": "singlePropertySchema"
+				},
+				{
+					"Id": "81de8e8a-4ac0-11ed-b878-0242ac120002",
+					"ApiChange": "Method",
+					"ChangedApiName": "runHuntingQuery",
+					"ChangeType": "Addition",
+					"Description": "Added the [runHuntingQuery](https://docs.microsoft.com/en-us/graph/api/security-security-runHuntingQuery?view=graph-rest-beta) method to the [security](https://docs.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+					"Target": "runHuntingQuery"
+				}				
+			],
+			"Id": "81de8e8a-4ac0-11ed-b878-0242ac120002",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-10-14T13:00:00.0000000Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Advanced hunting"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "68579e1b-bf41-47ff-8fde-1e32f960b9b8",
+					"ApiChange": "Method",
+					"ChangedApiName": "POST",
+					"ChangeType": "Addition",
+					"Description": "Added the [create comment](https://docs.microsoft.com/en-us/graph/api/security-alert-post-comments?view=graph-rest-beta) operation to the [alert](https://docs.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
+					"Target": "alert"
+				},
+				{
+					"Id": "68579e1b-bf41-47ff-8fde-1e32f960b9b8",
+					"ApiChange": "Method",
+					"ChangedApiName": "POST",
+					"ChangeType": "Addition",
+					"Description": "Added the [create comment](https://docs.microsoft.com/en-us/graph/api/security-incident-post-comments?view=graph-rest-beta) operation to the [incident](https://docs.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource.",
+					"Target": "incident"
+				}								
+			],
+			"Id": "68579e1b-bf41-47ff-8fde-1e32f960b9b8",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-10-14T13:00:00.0000000Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
 		}
 	]
 }

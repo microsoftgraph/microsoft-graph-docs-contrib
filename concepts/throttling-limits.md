@@ -237,9 +237,9 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 
 The preceding limits apply to the following resources:
 
-- [people](/graph/api/resources/person)
+- [people](/graph/api/resources/insightssettings)
 - [sharedInsight](/graph/api/resources/insights-shared)
-- [trending](/graph/api/resources/trending)
+- [trending](/graph/api/resources/insights-trending)
 - [usedInsight](/graph/api/resources/insights-used)
 
 ## Intune service limits
@@ -412,6 +412,13 @@ The following limits apply to any request on `/security`.
 | Any operation on `secureScore` or `secureScorecontrolProfile` | 10,000 API requests in a 10 minute period |
 | Any operation on `secureScore` or `secureScorecontrolProfile` | 4 concurrent requests |
 
+## Security eDiscovery service limits
+
+The following limits apply to any request on `/security/eDiscoveryCases`.
+
+| Operation                  | Limit per app per tenant     |
+|----------------------------|------------------------------|
+| Any | 5 requests per minute |
 
 ## Service Communications service limits
 The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.

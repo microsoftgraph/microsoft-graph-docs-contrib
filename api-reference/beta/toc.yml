@@ -355,6 +355,8 @@ items:
         items:
         - name: List app role assignments
           href: api/user-list-approleassignments.md
+        - name: List app role assigned resources
+          href: api/user-list-approleassignedresources.md
         - name: Add app role assignment
           href: api/user-post-approleassignments.md
         - name: Remove app role assignment
@@ -611,6 +613,14 @@ items:
             href: api/contactmergesuggestions-get.md
           - name: Update
             href: api/contactmergesuggestions-update.md
+        - name: Org control for contact insights (preview)
+          items:
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: List
+            href: api/organizationsettings-list-contactinsights.md
+          - name: Update
+            href: api/insightssettings-update.md
       - name: Photo
         items:
         - name: Profile photo
@@ -2016,6 +2026,8 @@ items:
             href: api/printershare-post-allowedgroups.md
           - name: Delete allowed group
             href: api/printershare-delete-allowedgroup.md
+          - name: List recent shares
+            href: api/print-list-recentshares.md
         - name: Print task definition
           href: resources/printtaskdefinition.md
           items:
@@ -8173,6 +8185,8 @@ items:
               href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
             - name: triggerConfigurationManagerAction action
               href: api/intune-devices-manageddevice-triggerconfigurationmanageraction.md
+            - name: enrollNowAction action
+              href: api/intune-devices-manageddevice-enrollnowaction.md
             - name: deprovision action
               href: api/intune-devices-manageddevice-deprovision.md
             - name: disable action
@@ -8410,6 +8424,40 @@ items:
             href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
           - name: Update windows device account action parameter
             href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+          - name: User experience analytics anomaly
+            href: resources/intune-devices-userexperienceanalyticsanomaly.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsanomaly-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsanomaly-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsanomaly-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsanomaly-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsanomaly-update.md
+          - name: User experience analytics anomaly device
+            href: resources/intune-devices-userexperienceanalyticsanomalydevice.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsanomalydevice-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsanomalydevice-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsanomalydevice-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsanomalydevice-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsanomalydevice-update.md
+          - name: User experience analytics anomaly severity
+            href: resources/intune-devices-userexperienceanalyticsanomalyseverity.md
+          - name: User experience analytics anomaly severity overview
+            href: resources/intune-devices-userexperienceanalyticsanomalyseverityoverview.md
+          - name: User experience analytics anomaly state
+            href: resources/intune-devices-userexperienceanalyticsanomalystate.md
+          - name: User experience analytics anomaly type
+            href: resources/intune-devices-userexperienceanalyticsanomalytype.md
           - name: User experience analytics app health app performance by app version
             href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md
             items:
@@ -9071,6 +9119,15 @@ items:
               href: api/intune-mam-defaultmanagedappprotection-delete.md
             - name: Update
               href: api/intune-mam-defaultmanagedappprotection-update.md
+          - name: Device management reports
+            href: resources/intune-mam-devicemanagementreports.md
+            items:
+            - name: Get
+              href: api/intune-mam-devicemanagementreports-get.md
+            - name: Update
+              href: api/intune-mam-devicemanagementreports-update.md
+            - name: getMobileApplicationManagementAppRegistrationSummaryReport action
+              href: api/intune-mam-devicemanagementreports-getmobileapplicationmanagementappregistrationsummaryreport.md
           - name: Device platform type
             href: resources/intune-wip-deviceplatformtype.md
           - name: Intune branding profile
@@ -9960,7 +10017,7 @@ items:
             - name: sendCustomNotificationToCompanyPortal action
               href: api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md
           - name: Device management derived credential settings
-            href: resources\intune-shared-devicemanagementderivedcredentialsettings.md
+            href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
             items:
             - name: Get
               href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
@@ -9969,7 +10026,7 @@ items:
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
             - name: Create
-              href: api/resources/intune-shared-devicemanagementderivedcredentialsettings.md
+              href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -10413,6 +10470,13 @@ items:
             href: api/cloudpcorganizationsettings-get.md
           - name: Update
             href: api/cloudpcorganizationsettings-update.md
+        - name: Cloud PC cross-cloud government organization mapping
+          href: resources/cloudpccrosscloudgovernmentorganizationmapping.md
+          items:
+          - name: Get
+            href: api/cloudpccrosscloudgovernmentorganizationmapping-get.md
+          - name: Create
+            href: api/virtualendpoint-post-crosscloudgovernmentorganizationmapping.md
         - name: Cloud PC external partner setting
           href: resources/cloudpcexternalpartnersetting.md
           items:
@@ -10424,6 +10488,23 @@ items:
             href: api/virtualendpoint-post-externalpartnersettings.md
           - name: Update
             href: api/cloudpcexternalpartnersetting-update.md
+        - name: Cloud PC reports
+          href: resources/cloudpcreports.md
+          items:
+          - name: Get export job
+            href: api/cloudpcexportjob-get.md
+          - name: Create export job
+            href: api/cloudpcreports-post-exportjobs.md
+          - name: Get daily aggregated remote conneciton reports
+            href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+          - name: Get real time remote connection latency
+            href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
+          - name: Get real time remote connection status
+            href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
+          - name: Get historical remote conneciton reports
+            href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
+          - name: Get total aggregated remote conneciton reports
+            href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
@@ -10536,7 +10617,33 @@ items:
             - name: Get
               href: api/windowsupdates-operationalinsightsconnection-get.md
             - name: Delete
-              href: api/windowsupdates-operationalinsightsconnection-delete.md
+              href: api/windowsupdates-resourceconnection-delete.md
+      - name: Monitoring (preview)
+        href: resources/devicemanagement-monitoring.md
+        displayName: Overview
+        items:
+        - name: Alert record
+          href: resources/devicemanagement-alertrecord.md
+          items:
+          - name: List
+            href: api/devicemanagement-alertrecord-list.md
+          - name: Get
+            href: api/devicemanagement-alertrecord-get.md
+          - name: Get portal notifications
+            href: api/devicemanagement-alertrecord-getportalnotifications.md
+          - name: Set portal notification as sent
+            href: api/devicemanagement-alertrecord-setportalnotificationassent.md
+        - name: Alert rule
+          href: resources/devicemanagement-alertrule.md
+          items:
+          - name: List
+            href: api/devicemanagement-alertrule-list.md
+          - name: Create
+            href: api/devicemanagement-alertrule-post.md
+          - name: Get
+            href: api/devicemanagement-alertrule-get.md
+          - name: Update
+            href: api/devicemanagement-alertrule-update.md
       - name: Multi-tenant management (preview)
         items:
         - name: Managed tenant
@@ -11401,9 +11508,10 @@ items:
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
     - name: Identity and access
+      displayName: Azure AD, Microsoft identity platform, Identity and access
       items:
       - name: Overview
-        displayName: Azure AD, Microsoft identity platform
+        displayName: Azure AD, Microsoft identity platform, Identity and access
         href: resources/azure-ad-overview.md
       - name: Customer relationship management
         items:
@@ -11728,6 +11836,14 @@ items:
               href: api/organizationsettings-list-microsoftapplicationdataaccess.md
             - name: Update
               href: api/microsoftapplicationdataaccesssettings-update.md
+          - name: Org control for contact insights (preview)
+            items:
+            - name: Insights settings
+              href: resources/insightssettings.md
+            - name: List
+              href: api/organizationsettings-list-contactinsights.md
+            - name: Update
+              href: api/insightssettings-update.md
           - name: Org control for item insights (preview)
             items:
             - name: Insights settings
@@ -11836,7 +11952,7 @@ items:
           - name: Remove included groups
             href: api/mobileappmanagementpolicies-delete-includedgroups.md
         - name: Role management
-          displayName: Unified RBAC, Privileged Identity Management, PIM v3
+          displayName: Unified RBAC
           href: resources/rolemanagement.md
           items:
           - name: Role definition
@@ -11892,100 +12008,6 @@ items:
                 href: api/unifiedrbacresourcenamespace-list-resourceactions.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
-          - name: Privileged identity management
-            displayName: Privileged identity management, PIM
-            href: resources/privilegedidentitymanagementv3-overview.md
-            items:
-            - name: Role assignments
-              items:
-                - name: Schedule requests
-                  href: resources/unifiedroleassignmentschedulerequest.md
-                  items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentschedulerequests.md
-                  - name: Create
-                    href: api/rbacapplication-post-roleassignmentschedulerequests.md
-                  - name: Get
-                    href: api/unifiedroleassignmentschedulerequest-get.md
-                  - name: Cancel
-                    href: api/unifiedroleassignmentschedulerequest-cancel.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
-                - name: Schedules
-                  href: resources/unifiedroleassignmentschedule.md
-                  items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentschedules.md
-                  - name: Get
-                    href: api/unifiedroleassignmentschedule-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
-                - name: Schedule instances
-                  href: resources/unifiedroleassignmentscheduleinstance.md
-                  items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentscheduleinstances.md
-                  - name: Get
-                    href: api/unifiedroleassignmentscheduleinstance-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
-            - name: Role eligibility
-              items:
-              - name: Schedule requests
-                href: resources/unifiedroleeligibilityschedulerequest.md
-                items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityschedulerequests.md
-                - name: Create
-                  href: api/rbacapplication-post-roleeligibilityschedulerequests.md
-                - name: Get
-                  href: api/unifiedroleeligibilityschedulerequest-get.md
-                - name: Cancel
-                  href: api/unifiedroleeligibilityschedulerequest-cancel.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
-              - name: Schedules
-                href: resources/unifiedroleeligibilityschedule.md
-                items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityschedules.md
-                - name: Get
-                  href: api/unifiedroleeligibilityschedule-get.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
-              - name: Schedule instances
-                href: resources/unifiedroleeligibilityscheduleinstance.md
-                items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
-                - name: Get
-                  href: api/unifiedroleeligibilityscheduleinstance-get.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-            - name: Role management policies
-              items:
-              - name: Policies and rules
-                displayName: role management policies, Azure AD role settings
-                href: resources/unifiedrolemanagementpolicy.md
-                items:
-                - name: List
-                  href: api/policyroot-list-rolemanagementpolicies.md
-                - name: Get
-                  href: api/unifiedrolemanagementpolicy-get.md
-                - name: List rules
-                  href: api/unifiedrolemanagementpolicy-list-rules.md
-                - name: Get rule
-                  href: api/unifiedrolemanagementpolicyrule-get.md
-                - name: Update rule
-                  href: api/unifiedrolemanagementpolicyrule-update.md
-              - name: Policy assignments
-                displayName: role managemement policy assignments
-                href: resources/unifiedrolemanagementpolicyassignment.md
-                items:
-                - name: List
-                  href: api/policyroot-list-rolemanagementpolicyassignments.md
-                - name: Get
-                  href: api/unifiedrolemanagementpolicyassignment-get.md
         - name: Tenant information
           href: resources/tenantinformation.md
           items:
@@ -12050,6 +12072,7 @@ items:
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
           - name: Temporary Access Pass
+            displayName: TAP
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
             - name: List
@@ -12101,6 +12124,52 @@ items:
               href: api/authenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/authenticationoperation-get.md
+        - name: Authentication strengths
+          items:
+          - name: Overview
+            href: resources/authenticationstrengths-overview.md
+          - name: Authentication strengths policy
+            href: resources/authenticationstrengthpolicy.md
+            items:
+            - name: List
+              href: api/authenticationstrengthroot-list-policies.md
+            - name: Create
+              href: api/authenticationstrengthroot-post-policies.md
+            - name: Get
+              href: api/authenticationstrengthpolicy-get.md
+            - name: Update
+              href: api/authenticationstrengthpolicy-update.md
+            - name: Delete
+              href: api/authenticationstrengthroot-delete-policies.md
+            - name: Find by method mode
+              href: api/authenticationstrengthpolicy-findbymethodmode.md
+            - name: List usage
+              href: api/authenticationstrengthpolicy-usage.md
+          - name: Authentication combination configurations
+            items: 
+            - name: Authentication combination configuration
+              href: resources/authenticationcombinationconfiguration.md
+            - name: FIDO2 combination configuration
+              href: resources/fido2combinationconfiguration.md
+            - name: Create
+              href: api/authenticationstrengthpolicy-post-combinationconfigurations.md
+            - name: List
+              href: api/authenticationstrengthpolicy-list-combinationconfigurations.md
+            - name: Get
+              href: api/authenticationcombinationconfiguration-get.md
+            - name: Update
+              href: api/authenticationcombinationconfiguration-update.md
+            - name: Delete
+              href: api/authenticationstrengthpolicy-delete-combinationconfigurations.md
+            - name: Update allowed combinations
+              href: api/authenticationstrengthpolicy-updateallowedcombinations.md
+          - name: Authentication method modes
+            href: resources/authenticationmethodmodedetail.md
+            items:
+            - name: List authentication combinations and method modes
+              href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
+            - name: Get authentication method modes
+              href: api/authenticationmethodmodedetail-get.md
         - name: Certificate-based authentication configuration
           displayName: CBA
           href: resources/certificatebasedauthconfiguration.md
@@ -12185,6 +12254,14 @@ items:
               href: api/authenticationcontextclassreference-update.md
             - name: Delete
               href: api/authenticationcontextclassreference-delete.md
+          - name: Templates
+            items:
+            - name: Conditional access template
+              href: resources/conditionalAccessTemplate.md
+            - name: List
+              href: api/conditionalaccessroot-list-templates.md
+            - name: Get
+              href: api/conditionalaccesstemplate-get.md
         - name: Cross-tenant access
           items:
           - name: Overview
@@ -13255,7 +13332,225 @@ items:
               href: api/entitlementmanagementsettings-get.md
             - name: Update
               href: api/entitlementmanagementsettings-update.md
-        - name: Privileged Identity Management
+        - name: Lifecycle Workflows (preview)
+          displayName: LCW, Identity Governance, Joiner, Mover, Leaver
+          href: resources/identitygovernance-lifecycleworkflows-overview.md
+          items:
+          - name: Workflows
+            href: resources/identitygovernance-workflow.md
+            items:
+            - name: List
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md
+            - name: Create
+              href: api/identitygovernance-lifecycleworkflowscontainer-post-workflows.md
+            - name: Get
+              href: api/identitygovernance-workflow-get.md
+            - name: Update
+              href: api/identitygovernance-workflow-update.md
+            - name: Delete
+              href: api/identitygovernance-workflow-delete.md
+            - name: List deleted workflows
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
+            - name: Get a deleted workflow
+              href: api/identitygovernance-deleteditemcontainer-get.md
+            - name: Permanently delete a workflow
+              href: api/identitygovernance-deletedItemcontainer-delete.md
+            - name: Restore
+              href: api/identitygovernance-workflow-restore.md
+            - name: Activate (run on-demand)
+              href: api/identitygovernance-workflow-activate.md
+            - name: Workflow versions
+              items:
+              - name: Workflow version
+                href: resources/identitygovernance-workflowversion.md
+              - name: List
+                href: api/identitygovernance-workflow-list-versions.md
+              - name: Get
+                href: api/identitygovernance-workflowversion-get.md
+              - name: Create
+                href: api/identitygovernance-workflow-createnewversion.md
+              - name: List tasks for a workflow version
+                href: api/identitygovernance-workflowversion-list-tasks.md
+              - name: Get task for a workflow version
+                href: api/identitygovernance-task-get.md
+            - name: Workflow tasks
+              items:
+              - name: Workflow task
+                href: resources/identitygovernance-task.md
+              - name: List tasks
+                href: api/identitygovernance-workflow-list-task.md
+              - name: Get task
+                href: api/identitygovernance-task-get.md
+            - name: Reports
+              displayName: Lifecycle Workflows
+              items:
+              - name: Overview
+                displayName: Lifecycle Workflows reporting
+                href: resources/identitygovernance-lifecycleworkflows-reporting-overview.md
+              - name: User processing results
+                href: resources/identitygovernance-userprocessingresult.md
+                items:
+                - name: List user processing results
+                  href: api/identitygovernance-workflow-list-userprocessingresults.md
+                - name: Get summary
+                  href: api/identitygovernance-userprocessingresult-summary.md
+                - name: List task processing results
+                  href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
+              - name: Task reports
+                href: resources/identitygovernance-taskreport.md
+                items:
+                - name: List task reports
+                  href: api/identitygovernance-workflow-list-taskreports.md
+                - name: Get summary
+                  href: api/identitygovernance-taskreport-summary.md
+                - name: List task processing results
+                  href: api/identitygovernance-taskreport-list-taskprocessingresults.md
+              - name: Workflow runs
+                href: resources/identitygovernance-run.md
+                items:
+                - name: List runs
+                  href: api/identitygovernance-workflow-list-runs.md
+                - name: Get runs
+                  href: api/identitygovernance-run-get.md
+                - name: Get summary
+                  href: api/identitygovernance-run-summary.md
+                - name: List user processing results
+                  href: api/identitygovernance-run-list-userprocessingresults.md
+                - name: Get user processing result
+                  href: api/identitygovernance-userprocessingresult-get.md
+                - name: List task processing results
+                  href: api/identitygovernance-run-list-taskprocessingresults.md
+              - name: Task processing results
+                href: resources/identitygovernance-taskprocessingresult.md
+                items:
+                - name: Resume
+                  href: api/identitygovernance-taskprocessingresult-resume.md
+          - name: Workflow templates
+            items:
+            - name: Workflow templates
+              href: resources/identitygovernance-workflowtemplate.md
+            - name: List
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md
+            - name: Get
+              href: api/identitygovernance-workflowtemplate-get.md
+          - name: Task definition
+            items:
+            - name: Task definition
+              href: resources/identitygovernance-taskdefinition.md
+            - name: List
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
+            - name: Get
+              href: api/identitygovernance-taskdefinition-get.md
+          - name: Custom task extension
+            items:
+            - name: Custom task extension
+              href: resources/identitygovernance-customtaskextension.md
+            - name: List
+              href: api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions.md
+            - name: Get
+              href: api/identitygovernance-customtaskextension-get.md
+            - name: Create
+              href: api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions.md
+            - name: Update
+              href: api/identitygovernance-customtaskextension-update.md
+            - name: Delete
+              href: api/identitygovernance-customtaskextension-delete.md
+          - name: Settings
+            items:
+            - name: Settings
+              href: resources/identitygovernance-lifecyclemanagementsettings.md
+            - name: Get
+              href: api/identitygovernance-lifecyclemanagementsettings-get.md
+            - name: Update
+              href: api/identitygovernance-lifecyclemanagementsettings-update.md
+        - name: Privileged Identity Management v3
+          displayName: Privileged Identity Management, PIM, Identity Governance
+          href: resources/privilegedidentitymanagementv3-overview.md
+          items:
+          - name: Role assignment schedule requests
+            href: resources/unifiedroleassignmentschedulerequest.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleassignmentschedulerequests.md
+            - name: Create
+              href: api/rbacapplication-post-roleassignmentschedulerequests.md
+            - name: Get
+              href: api/unifiedroleassignmentschedulerequest-get.md
+            - name: Cancel
+              href: api/unifiedroleassignmentschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+          - name: Role assignment schedules
+            href: resources/unifiedroleassignmentschedule.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleassignmentschedules.md
+            - name: Get
+              href: api/unifiedroleassignmentschedule-get.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+          - name: Role assignment schedule instances
+            href: resources/unifiedroleassignmentscheduleinstance.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+            - name: Get
+              href: api/unifiedroleassignmentscheduleinstance-get.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+          - name: Role eligibility schedule requests
+            href: resources/unifiedroleeligibilityschedulerequest.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+            - name: Create
+              href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+            - name: Get
+              href: api/unifiedroleeligibilityschedulerequest-get.md
+            - name: Cancel
+              href: api/unifiedroleeligibilityschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+          - name: Role eligibility schedules
+            href: resources/unifiedroleeligibilityschedule.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleeligibilityschedules.md
+            - name: Get
+              href: api/unifiedroleeligibilityschedule-get.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+          - name: Role eligibility schedule instances
+            href: resources/unifiedroleeligibilityscheduleinstance.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+            - name: Get
+              href: api/unifiedroleeligibilityscheduleinstance-get.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+          - name: Role management policies
+            items:
+            - name: Policies and rules
+              href: resources/unifiedrolemanagementpolicy.md
+            - name: List
+              href: api/policyroot-list-rolemanagementpolicies.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicy-get.md
+            - name: List rules
+              href: api/unifiedrolemanagementpolicy-list-rules.md
+            - name: Get rule
+              href: api/unifiedrolemanagementpolicyrule-get.md
+            - name: Update rule
+              href: api/unifiedrolemanagementpolicyrule-update.md
+          - name: Role management policy assignments
+            href: resources/unifiedrolemanagementpolicyassignment.md
+            items:
+            - name: List
+              href: api/policyroot-list-rolemanagementpolicyassignments.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicyassignment-get.md
+        - name: Privileged Identity Management v2
           items:
           - name: Privileged Identity Management
             href: resources/privilegedidentitymanagement-root.md
@@ -13375,134 +13670,6 @@ items:
                 href: api/governanceroleassignmentrequest-update.md
               - name: Cancel
                 href: api/governanceroleassignmentrequest-cancel.md
-        - name: Lifecycle Workflows
-          href: resources/identitygovernance-lifecycleworkflows-overview.md
-          items:
-          - name: Workflows
-            href: resources/identitygovernance-workflow.md
-            items:
-            - name: List
-              href: api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md
-            - name: Create
-              href: api/identitygovernance-lifecycleworkflowscontainer-post-workflows.md
-            - name: Get
-              href: api/identitygovernance-workflow-get.md
-            - name: Update
-              href: api/identitygovernance-workflow-update.md
-            - name: Delete
-              href: api/identitygovernance-workflow-delete.md
-            - name: List deleted workflows
-              href: api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
-            - name: Get a deleted workflow
-              href: api/identitygovernance-deleteditemcontainer-get.md
-            - name: Permanently delete a workflow
-              href: api/identitygovernance-deletedItemcontainer-delete.md
-            - name: Restore
-              href: api/identitygovernance-workflow-restore.md
-            - name: Activate (run on-demand)
-              href: api/identitygovernance-workflow-activate.md
-            - name: Workflow versions
-              items:
-              - name: Workflow version
-                href: resources/identitygovernance-workflowversion.md
-              - name: List
-                href: api/identitygovernance-workflow-list-versions.md
-              - name: Get
-                href: api/identitygovernance-workflowversion-get.md
-              - name: Create
-                href: api/identitygovernance-workflow-createnewversion.md
-              - name: List tasks for a workflow version
-                href: api/identitygovernance-workflowversion-list-tasks.md
-              - name: Get task for a workflow version
-                href: api/identitygovernance-task-get.md
-            - name: Workflow tasks
-              items:
-              - name: Workflow task
-                href: resources/identitygovernance-task.md
-              - name: List tasks
-                href: api/identitygovernance-workflow-list-task.md
-              - name: Get task
-                href: api/identitygovernance-task-get.md
-            - name: Reports
-              items:
-              - name: Overview
-                href: resources/identitygovernance-lifecycleworkflows-reporting-overview.md
-              - name: User processing results
-                href: resources/identitygovernance-userprocessingresult.md
-                items:
-                - name: List
-                  href: api/identitygovernance-workflow-list-userprocessingresults.md
-                - name: Summary
-                  href: api/identitygovernance-userprocessingresult-summary.md
-                - name: List task processing results
-                  href: api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
-              - name: Task reports
-                href: resources/identitygovernance-taskreport.md
-                items:
-                - name: List
-                  href: api/identitygovernance-workflow-list-taskreports.md
-                - name: Summary
-                  href: api/identitygovernance-taskreport-summary.md
-                - name: List task processing results
-                  href: api/identitygovernance-taskreport-list-taskprocessingresults.md
-              - name: Workflow runs
-                href: resources/identitygovernance-run.md
-                items:
-                - name: List
-                  href: api/identitygovernance-workflow-list-runs.md
-                - name: Get
-                  href: api/identitygovernance-run-get.md
-                - name: Summary
-                  href: api/identitygovernance-run-summary.md
-                - name: List user processing results
-                  href: api/identitygovernance-run-list-userprocessingresults.md
-                - name: Get user processing result
-                  href: api/identitygovernance-userprocessingresult-get.md
-                - name: List task processing results
-                  href: api/identitygovernance-run-list-taskprocessingresults.md
-              - name: Task processing results
-                href: resources/identitygovernance-taskprocessingresult.md
-                items:
-                - name: Resume
-                  href: api/identitygovernance-taskprocessingresult-resume.md
-          - name: Workflow templates
-            items:
-            - name: Workflow templates
-              href: resources/identitygovernance-workflowtemplate.md
-            - name: List
-              href: api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md
-            - name: Get
-              href: api/identitygovernance-workflowtemplate-get.md
-          - name: Task definition
-            items:
-            - name: Task definition
-              href: resources/identitygovernance-taskdefinition.md
-            - name: List
-              href: api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md
-            - name: Get
-              href: api/identitygovernance-taskdefinition-get.md
-          - name: Custom task extension
-            items:
-            - name: Custom task extension
-              href: resources/identitygovernance-customtaskextension.md
-            - name: List
-              href: api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions.md
-            - name: Get
-              href: api/identitygovernance-customtaskextension-get.md
-            - name: Create
-              href: api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions.md
-            - name: Update
-              href: api/identitygovernance-customtaskextension-update.md
-            - name: Delete
-              href: api/identitygovernance-customtaskextension-delete.md
-          - name: Settings
-            items:
-            - name: Settings
-              href: resources/identitygovernance-lifecyclemanagementsettings.md
-            - name: Get
-              href: api/identitygovernance-lifecyclemanagementsettings-get.md
-            - name: Update
-              href: api/identitygovernance-lifecyclemanagementsettings-update.md
         - name: Terms of use
           items:
           - name: Agreement
@@ -14258,6 +14425,14 @@ items:
           href: api/contactmergesuggestions-get.md
         - name: Update
           href: api/contactmergesuggestions-update.md
+      - name: Org control for contact insights (preview)
+        items:
+        - name: Insights settings
+          href: resources/insightssettings.md
+        - name: List
+          href: api/organizationsettings-list-contactinsights.md
+        - name: Update
+          href: api/insightssettings-update.md
       - name: Extended properties
         items:
         - name: Overview
@@ -14622,7 +14797,7 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Microsoft Defender for Office 365 security reports (preview)
+      - name: Microsoft Defender for Office 365 security reports
         items:
         - name: Attack simulation reports
           displayname: Attack simulation and training
@@ -14792,6 +14967,16 @@ items:
           href: api/securityaction-get.md
         - name: Cancel security action
           href: api/securityaction-cancelsecurityaction.md
+      - name: Advanced hunting (preview)
+        items:
+        - name: Run hunting query
+          href: api/security-security-runhuntingquery.md
+        - name: Hunting query results
+          href: resources/security-huntingqueryresults.md
+        - name: Hunting row result
+          href: resources/security-huntingrowresult.md
+        - name: Single property schema
+          href: resources/security-singlepropertyschema.md
       - name: Alerts and incidents (preview)
         items:
         - name: Alert
@@ -14804,6 +14989,8 @@ items:
             href: api/security-alert-get.md
           - name: Update alert
             href: api/security-alert-update.md
+          - name: Create comment for alert
+            href: api/security-alert-post-comments.md
         - name: Alert evidence
           items:
           - name: Alert evidence
@@ -14846,14 +15033,18 @@ items:
             href: api/security-incident-get.md
           - name: Update incident
             href: api/security-incident-update.md
-      - name: Attack simulation and training (preview)
+          - name: Create comment for incident
+            href: api/security-incident-post-comments.md
+      - name: Attack simulation and training
         items:
         - name: Simulations
           items:
           - name: Simulation
             href: resources/simulation.md
-          - name: List simulations
+          - name: List
             href: api/attacksimulationroot-list-simulations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulations.md
           - name: List simulation users
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
@@ -14864,6 +15055,8 @@ items:
             href: resources/simulationautomation.md
           - name: List
             href: api/attacksimulationroot-list-simulationautomations.md
+          - name: Get
+            href: api/attacksimulationroot-get-simulationautomations.md
         - name: Simulation automation run
           items:
           - name: Simulation automation run
@@ -15810,11 +16003,11 @@ items:
               href: api/call-keepalive.md
             - name: Log teleconference device quality data
               href: api/call-logteleconferencedevicequality.md
+            - name: Change screen sharing role
+              href: api/call-changescreensharingrole.md
           - name: Content sharing session
             href: resources/contentsharingsession.md
             items:
-            - name: Change screen sharing role
-              href: api/call-changescreensharingrole.md
             - name: List
               href: api/call-list-contentsharingsessions.md
             - name: Get
@@ -15830,14 +16023,15 @@ items:
               href: api/call-cancelmediaprocessing.md
             - name: Subscribe to tone
               href: api/call-subscribetotone.md
-          - name: Large gallery view operation (preview)
+          - name: Large gallery view operation
             items:
             - name: Add large gallery view
               href: api/call-addlargegalleryview.md
             - name: Add large gallery view operation
               href: resources/addlargegalleryviewoperation.md
-            - name: Get large gallery view operation status
-              href: api/addlargegalleryviewoperation-get.md
+              items:
+              - name: Get large gallery view operation status
+                href: api/addlargegalleryviewoperation-get.md
           - name: Participant
             href: resources/participant.md
             items:
@@ -16133,6 +16327,10 @@ items:
             href: api/sharedwithchannelteaminfo-delete.md
           - name: List allowed members
             href: api/sharedwithchannelteaminfo-list-allowedmembers.md
+          - name: Set message reaction
+            href: api/chatmessage-setreaction.md
+          - name: Unset message reaction
+            href: api/chatmessage-unsetreaction.md
         - name: Chat
           href: resources/chat.md
           items:
@@ -16182,6 +16380,10 @@ items:
             href: api/chat-post-pinnedmessages.md
           - name: Unpin message
             href: api/chat-delete-pinnedmessages.md
+          - name: Set message reaction
+            href: api/chatmessage-setreaction.md
+          - name: Unset message reaction
+            href: api/chatmessage-unsetreaction.md
         - name: Chat message
           href: resources/chatmessage.md
           items:
@@ -16213,8 +16415,18 @@ items:
             href: api/chatmessage-list-hostedcontents.md
           - name: Get hosted content
             href: api/chatmessagehostedcontent-get.md
-        - name: Pinned chat message (preview)
-          href: resources/pinnedChatMessageInfo.md
+          - name: List pinned messages
+            href: api/chat-list-pinnedmessages.md
+          - name: Pin message
+            href: api/chat-post-pinnedmessages.md
+          - name: Unpin message
+            href: api/chat-delete-pinnedmessages.md
+          - name: Set message reaction
+            href: api/chatmessage-setreaction.md
+          - name: Unset message reaction
+            href: api/chatmessage-unsetreaction.md
+        - name: Pinned chat message
+          href: resources/pinnedchatmessageinfo.md
           items:
           - name: List pinned messages
             href: api/chat-list-pinnedmessages.md
@@ -16294,7 +16506,7 @@ items:
               href: api/teamwork-list-deletedteams.md
             - name: Get all messages
               href: api/deletedteam-getallmessages.md
-        - name: Tag (preview)
+        - name: Tag
           href: resources/teamworktag.md
           items:
           - name: List
@@ -16307,13 +16519,16 @@ items:
             href: api/teamworktag-update.md
           - name: Delete
             href: api/teamworktag-delete.md
-          - name: List members
+        - name: Tag member
+          href: resources/teamworktagmember.md
+          items:
+          - name: List
             href: api/teamworktagmember-list.md
-          - name: Create member
+          - name: Create
             href: api/teamworktagmember-post.md
-          - name: Get member
+          - name: Get
             href: api/teamworktagmember-get.md
-          - name: Delete member
+          - name: Delete
             href: api/teamworktagmember-delete.md
       - name: Shift management
         items:
@@ -16905,13 +17120,15 @@ items:
       - name: Named item
         href: resources/workbooknameditem.md
         items:
-        - name: List named item
+        - name: List
           href: api/nameditem-get.md
-        - name: Get named item
+        - name: Get
           href: api/nameditem-get.md
-        - name: Update named item
+        - name: Update
           href: api/nameditem-update.md
-        - name: Add named item
+        - name: Delete
+          href: api/nameditem-delete.md
+        - name: Add
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md
