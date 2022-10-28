@@ -34,8 +34,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 DELETE /directoryRoles/{role-id}/members/{id}/$ref
-DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
+
+**roleTemplateId** can also be used in the place of `id` as an alternate key.
+```http
+DELETE /directoryRoles/(roleTemplateId='{roleTemplateId}')/members/{id}/$ref
+```
+
 > [!CAUTION]
 > If `/$ref` is not appended to the request and the calling app has permissions to manage the member object, the object will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md).
 
@@ -69,6 +74,11 @@ In this example, replace `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` with the **id** 
 
 ```http
 DELETE https://graph.microsoft.com/beta/directoryRoles/f8e85ed8-f66f-4058-b170-3efae8b9c6e5/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
+```
+
+# [HTTP - roleTemplateId](#tab/httproleTemplateId)
+```http
+DELETE https://graph.microsoft.com/beta/directoryRoles/(roleTemplateId='f66f-f8e85ed8-4058-b170-3efae8b9c6e5')/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
 ```
 
 # [C#](#tab/csharp)

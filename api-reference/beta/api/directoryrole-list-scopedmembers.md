@@ -27,8 +27,14 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryroles/{role-id}/scopedMembers
-GET /directoryroles/roleTemplateId={roleTemplateId}/scopedMembers
 ```
+
+**roleTemplateId** can also be used in the place of `id` as an alternate key.
+
+```http
+GET /directoryRoles/(roleTemplateId='{roleTemplateId}')/scopedMembers
+```
+
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
@@ -57,6 +63,12 @@ The following is an example of a request for a directory role **id** `41d12a2f-c
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryRoles/41d12a2f-caa8-4e3e-ba14-05e5102ce085/scopedMembers
+```
+
+# [HTTP - roleTemplateId](#tab/httproleTemplateId)
+
+```http
+GET https://graph.microsoft.com/beta/directoryRoles/(roleTemplateId='f66f-f8e85ed8-4058-b170-3efae8b9c6e5')/scopedMembers
 ```
 
 # [C#](#tab/csharp)
