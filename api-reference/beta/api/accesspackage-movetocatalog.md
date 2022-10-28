@@ -66,7 +66,6 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{accessPackageId}/moveToCatalog
 Content-Type: application/json
-Content-length: 57
 
 {
   "catalogId": "3301434b-99bd-46be-923b-d762c30c8e8b"
