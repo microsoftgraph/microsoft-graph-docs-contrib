@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|catalogId|String|ID of the Catalog to which the access package will be moved to.|
+|catalogId|String|ID of the catalog to which the access package will be moved.|
 
 
 
