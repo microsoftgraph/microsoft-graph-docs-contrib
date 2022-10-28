@@ -13,7 +13,9 @@ Change notifications in Microsoft Graph enable you to subscribe to call started/
 
 ## Subscribe to messages across all channels
 
-To get change notifications for a meeting's call events in an application, subscribe to `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`. This resource supports [including resource data](/graph/webhooks-with-resource-data) in the notification.
+To get change notifications for a meeting's call events, subscribe to `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`. 
+
+This resource supports notifications with resource data. For more information about setting up notifications with resource data, see [including resource data](/graph/webhooks-with-resource-data) in the notification.
 
 ### Permissions
 
@@ -148,7 +150,7 @@ The following are the supported meeting events:
 }
 ```
 
-**CallRosterUpdate** events include two properties, **activeParticipants@joined** to depict participants added to a meeting and **activeParticipants@exited** for participants leaving the meeting call. 
+**CallRosterUpdate** events include two properties, **activeParticipants@joined** to depict participants added to a meeting call and **activeParticipants@exited** for participants leaving the meeting call. 
 
 An active participant is represented as follows: 
 ```json
@@ -159,8 +161,6 @@ An active participant is represented as follows:
 ```
 - The **Id** property corresponds to participant ID which is a unique identifier assigned to each participant in the meeting call.
 - The **Identity** refers to the communicationsIdentitySet. For more information about communicationsIdentitySet, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta).
-
-You can choose to omit encryption by not including the property **includeResourceData** or setting this value to `false` in your subscription request body. Doing so adds the properties that would have been part of the encrypted payload to **resourceData**.
 
 ## See also
 
