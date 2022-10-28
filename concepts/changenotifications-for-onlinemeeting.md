@@ -84,8 +84,7 @@ The following are the supported meeting events:
 
 ### Decrypted payload examples
 
-#### CallStarted/CallEnded
-
+#### CallStarted
 ```json
 {
   "@odata.type":"#Microsoft.Graph.onlineMeeting",
@@ -94,6 +93,18 @@ The following are the supported meeting events:
   "eventType":"{Microsoft.Communication.CallStarted or Microsoft.Communication.CallEnded}",
   "eventDateTime":"2022-02-28T00:00:00.0000000Z",
   "state":"active"
+}
+
+```
+#### CallEnded
+```json
+{
+  "@odata.type":"#Microsoft.Graph.onlineMeeting",
+  "@odata.id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
+  "id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
+  "eventType":"{Microsoft.Communication.CallEnded}",
+  "eventDateTime":"2022-02-28T00:00:00.0000000Z",
+  "state":"inactive"
 }
 ```
 
@@ -106,7 +117,6 @@ The following are the supported meeting events:
   "id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
   "eventType":"Microsoft.Communication.CallRosterUpdate",
   "eventDateTime":"2022-02-28T00:00:00.0000000Z",
-  "state":"active",
   "activeParticipants@joined": [
     {
       "id": "a4d67b60-56a5-4202-9f1c-f123ff40621e",
