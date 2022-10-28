@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the localized name of a bucket in a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) .  
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|externalBucketId|String|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
+|externalBucketId|String|Application specified identifier of the bucket.|
+|name|String|Name of the bucket.|
 
 ## Relationships
 None.

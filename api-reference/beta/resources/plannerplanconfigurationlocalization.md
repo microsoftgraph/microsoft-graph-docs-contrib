@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the localized names for a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) for a specific language.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -30,10 +30,10 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|buckets|[plannerPlanConfigurationBucketLocalization](../resources/plannerplanconfigurationbucketlocalization.md) collection|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|languageTag|String|**TODO: Add Description**|
-|planTitle|String|**TODO: Add Description**|
+|buckets|[plannerPlanConfigurationBucketLocalization](../resources/plannerplanconfigurationbucketlocalization.md) collection|Localized names for configured buckets in the plan configuration.|
+|id|String|The identifier of the plan configuration location. Inherited from [entity](../resources/entity.md).|
+|languageTag|String|The language code associated with the localized names in this object.|
+|planTitle|String|Localized title of the plan.|
 
 ## Relationships
 None.

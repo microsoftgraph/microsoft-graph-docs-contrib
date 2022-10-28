@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a reference to a [plannerPlan](../resources/plannerplan.md).
 
 
 Inherits from [entity](../resources/entity.md).
@@ -21,16 +21,14 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List businessScenarioPlanReferences](../api/businessscenarioplanreference-list.md)|[businessScenarioPlanReference](../resources/businessscenarioplanreference.md) collection|Get a list of the [businessScenarioPlanReference](../resources/businessscenarioplanreference.md) objects and their properties.|
-|[Get businessScenarioPlanReference](../api/businessscenarioplanreference-get.md)|[businessScenarioPlanReference](../resources/businessscenarioplanreference.md)|Read the properties and relationships of a [businessScenarioPlanReference](../resources/businessscenarioplanreference.md) object.|
-|[Update businessScenarioPlanReference](../api/businessscenarioplanreference-update.md)|[businessScenarioPlanReference](../resources/businessscenarioplanreference.md)|Update the properties of a [businessScenarioPlanReference](../resources/businessscenarioplanreference.md) object.|
-|[Delete businessScenarioPlanReference](../api/businessscenarioplanreference-delete.md)|None|Delete a [businessScenarioPlanReference](../resources/businessscenarioplanreference.md) object.|
+|[getPlan](../api/businessscenarioplanner-getplan.md)|[businessScenarioPlanReference](../resources/businessscenarioplanreference.md)|Gets the reference to the Plan corresponding to the given target. This plan contains any tasks created for the scenario for this the given target.|
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|title|String|**TODO: Add Description**|
+|id|String|The identifier of the plannerPlan. Inherited from [entity](../resources/entity.md).|
+|title|String|The title property of the plannerPlan|
 
 ## Relationships
 None.

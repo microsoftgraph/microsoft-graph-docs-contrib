@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents targeting a [group](../resources/group.md) for a creating tasks in a scenario.
 
 
 Inherits from [businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md).
@@ -21,8 +21,8 @@ Inherits from [businessScenarioTaskTargetBase](../resources/businessscenariotask
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groupId|String|**TODO: Add Description**|
-|taskTargetKind|plannerTaskTargetKind|**TODO: Add Description** Inherited from [businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md).The possible values are: `group`, `unknownFutureValue`.|
+|groupId|String|The identifier of the group.|
+|taskTargetKind|plannerTaskTargetKind|Represents the kind of the target. The value of this property will be `group`. Inherited from [businessScenarioTaskTargetBase](../resources/businessscenariotasktargetbase.md).The possible values are: `group`, `unknownFutureValue`.|
 
 ## Relationships
 None.

@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a bucket in a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|externalBucketId|String|**TODO: Add Description**|
+|externalBucketId|String|Application specified identifier of the bucket.|
 
 ## Relationships
 None.

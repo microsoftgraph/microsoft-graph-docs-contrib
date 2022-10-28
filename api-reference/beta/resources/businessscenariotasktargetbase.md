@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the base object for all targets that can be specified for creating tasks for a scenario.
 This is an abstract type.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|taskTargetKind|plannerTaskTargetKind|**TODO: Add Description**.The possible values are: `group`, `unknownFutureValue`.|
+|taskTargetKind|plannerTaskTargetKind|The target kind. The possible values are: `group`, `unknownFutureValue`.|
 
 ## Relationships
 None.
