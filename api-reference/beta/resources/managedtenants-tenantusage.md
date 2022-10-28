@@ -3,7 +3,7 @@ title: "tenantUsage resource type"
 description: "Represents the number of monthly active users per service in a managed tenant for the previous month. The time period for the data is a sliding window that takes a snapshot once a day."
 author: "kylewirpel"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 
