@@ -109,7 +109,7 @@ The following are the supported meeting events:
   "state":"active",
   "activeParticipants@joined": [
     {
-      "id": "User",
+      "id": "a4d67b60-56a5-4202-9f1c-f123ff40621e",
       "identity": 
       {
         "User": 
@@ -123,7 +123,7 @@ The following are the supported meeting events:
   ],
   "activeParticipants@exited": [
     {
-      "id": "ACS user",
+      "id": "11141402-1b62-4795-b540-4ffee8544231",
       "identity": 
       {
         "AzureCommunicationServicesUser": 
@@ -143,12 +143,12 @@ The following are the supported meeting events:
 An active participant is represented as follows: 
 ```json
 {
-  "id": "string",
+  "id": "Guid",
   "identity": "Microsoft.Graph.CommunicationsIdentitySet"
 }
 ```
-
-For more information about communicationsIdentitySet, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta).
+- The **id** property corresponds to participant ID which is a unique identifier assigned to each participant in the meeting call.
+- The **identity** refers to the communicationsIdentitySet. For more information about communicationsIdentitySet, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta).
 
 You can choose to omit encryption by not including the property **includeResourceData** or setting this value to `false` in your subscription request body. Doing so adds the properties that would have been part of the encrypted payload to **resourceData**.
 
