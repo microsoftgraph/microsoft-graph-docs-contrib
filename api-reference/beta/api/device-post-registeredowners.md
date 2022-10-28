@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
+
+The `{id}` in the request is the value of the **id** property of the device, not the **deviceId** property.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices/{id}/registeredOwners/$ref
