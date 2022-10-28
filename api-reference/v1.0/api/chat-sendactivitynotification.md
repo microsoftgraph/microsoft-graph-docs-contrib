@@ -401,6 +401,7 @@ This example shows how you can send an activity feed notification to all chat me
 ``` http
 POST https://graph.microsoft.com/v1.0/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2/sendActivityNotification
 Content-Type: application/json
+
 {
     "topic": {
         "source": "entityUrl",

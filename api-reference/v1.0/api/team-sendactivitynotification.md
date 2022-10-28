@@ -400,6 +400,7 @@ This example shows how you can send an activity feed notification to all team me
 ``` http
 POST https://graph.microsoft.com/v1.0/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
 Content-Type: application/json
+
 {
     "topic": {
         "source": "entityUrl",
@@ -446,6 +447,7 @@ This example shows how you can send an activity feed notification to all channel
 ``` http
 POST https://graph.microsoft.com/v1.0/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
 Content-Type: application/json
+
 {
     "topic": {
         "source": "entityUrl",
