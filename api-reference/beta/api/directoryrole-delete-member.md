@@ -37,6 +37,7 @@ DELETE /directoryRoles/{role-id}/members/{id}/$ref
 ```
 
 **roleTemplateId** can also be used in the place of `id` as an alternate key.
+
 ```http
 DELETE /directoryRoles/(roleTemplateId='{roleTemplateId}')/members/{id}/$ref
 ```
@@ -72,13 +73,8 @@ In this example, replace `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` with the **id** 
   "name": "delete_directoryobject_from_directoryrole"
 }-->
 
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/directoryRoles/f8e85ed8-f66f-4058-b170-3efae8b9c6e5/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
-```
-
-# [HTTP - roleTemplateId](#tab/httproleTemplateId)
-```http
-DELETE https://graph.microsoft.com/beta/directoryRoles/(roleTemplateId='f66f-f8e85ed8-4058-b170-3efae8b9c6e5')/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
 ```
 
 # [C#](#tab/csharp)
@@ -131,11 +127,9 @@ The following is an example of the request. Replace `9f06204d-73c1-4d4c-880a-6ed
   "name": "delete_directoryobject_from_directoryrole_templateId"
 }-->
 
-```http
-DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=9f06204d-73c1-4d4c-880a-6edb90606fd8/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
+```msgraph-interactive
+DELETE https://graph.microsoft.com/beta/directoryRoles/(roleTemplateId='f66f-f8e85ed8-4058-b170-3efae8b9c6e5')/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
 ```
-
-
 
 #### Response
 <!-- {

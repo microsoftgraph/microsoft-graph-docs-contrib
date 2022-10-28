@@ -65,12 +65,6 @@ The following is an example of a request for a directory role **id** `41d12a2f-c
 GET https://graph.microsoft.com/beta/directoryRoles/41d12a2f-caa8-4e3e-ba14-05e5102ce085/scopedMembers
 ```
 
-# [HTTP - roleTemplateId](#tab/httproleTemplateId)
-
-```http
-GET https://graph.microsoft.com/beta/directoryRoles/(roleTemplateId='f66f-f8e85ed8-4058-b170-3efae8b9c6e5')/scopedMembers
-```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedmembers-directoryrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -141,7 +135,7 @@ The following is an example of a request for a directory role with **roleTemplat
   "name": "get_scopedmembers_directoryrole_templateId"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=fdd7a751-b60b-444a-984c-02652fe8fa1c/scopedMembers
+GET https://graph.microsoft.com/beta/directoryRoles/(roleTemplateId='fdd7a751-b60b-444a-984c-02652fe8fa1c')/scopedMembers
 ```
 
 # [C#](#tab/csharp)

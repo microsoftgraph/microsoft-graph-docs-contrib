@@ -70,12 +70,6 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/directoryRoles/23f3b4b4-8a29-4420-8052-e4950273bbda/members
 ```
 
-# [HTTP - roleTemplateId](#tab/httproleTemplateId)
-
-```http
-GET https://graph.microsoft.com/beta/directoryRoles/(roleTemplateId='f66f-f8e85ed8-4058-b170-3efae8b9c6e5')/members
-```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -143,7 +137,7 @@ The following is an example of the request.
   "name": "get_directoryrole_members_templateId"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf/members
+GET https://graph.microsoft.com/beta/directoryRoles/(roleTemplateId='4a5d8f65-41da-4de4-8968-e035b65339cf')/members
 ```
 
 
