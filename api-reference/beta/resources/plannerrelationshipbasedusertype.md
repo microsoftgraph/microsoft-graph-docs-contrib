@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a role based on the caller's relationship to the [businessScenarioTask](../resources/businessscenariotask.md) that a [plannerTaskRoleBasedRule](../resources/plannertaskrolebasedrule.md) can be applied to.
 
 
 Inherits from [plannerTaskConfigurationRoleBase](../resources/plannertaskconfigurationrolebase.md).
@@ -21,8 +21,8 @@ Inherits from [plannerTaskConfigurationRoleBase](../resources/plannertaskconfigu
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|role|plannerRelationshipUserRoles|**TODO: Add Description**.The possible values are: `defaultRules`, `groupOwners`, `groupMembers`, `taskAssignees`, `applications`, `unknownFutureValue`.|
-|roleKind|plannerUserRoleKind|**TODO: Add Description** Inherited from [plannerTaskConfigurationRoleBase](../resources/plannertaskconfigurationrolebase.md).The possible values are: `relationship`, `unknownFutureValue`.|
+|role|plannerRelationshipUserRoles|Identifies the relationship of the caller to the task.The possible values are: `defaultRules`, `groupOwners`, `groupMembers`, `taskAssignees`, `applications`, `unknownFutureValue`.|
+|roleKind|plannerUserRoleKind|The kind of the rule. The value must be `relationship`. Inherited from [plannerTaskConfigurationRoleBase](../resources/plannertaskconfigurationrolebase.md).The possible values are: `relationship`, `unknownFutureValue`.|
 
 ## Relationships
 None.

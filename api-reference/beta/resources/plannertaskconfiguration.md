@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the configuration of [plannerTasks](../resources/plannertask.md) created for a [businessScenario](../resources/businessscenario.md)
 
 
 Inherits from [entity](../resources/entity.md).
@@ -21,17 +21,14 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List plannerTaskConfigurations](../api/businessscenarioplanner-list-taskconfiguration.md)|[plannerTaskConfiguration](../resources/plannertaskconfiguration.md) collection|Get a list of the [plannerTaskConfiguration](../resources/plannertaskconfiguration.md) objects and their properties.|
-|[Create plannerTaskConfiguration](../api/businessscenarioplanner-post-taskconfiguration.md)|[plannerTaskConfiguration](../resources/plannertaskconfiguration.md)|Create a new [plannerTaskConfiguration](../resources/plannertaskconfiguration.md) object.|
 |[Get plannerTaskConfiguration](../api/plannertaskconfiguration-get.md)|[plannerTaskConfiguration](../resources/plannertaskconfiguration.md)|Read the properties and relationships of a [plannerTaskConfiguration](../resources/plannertaskconfiguration.md) object.|
 |[Update plannerTaskConfiguration](../api/plannertaskconfiguration-update.md)|[plannerTaskConfiguration](../resources/plannertaskconfiguration.md)|Update the properties of a [plannerTaskConfiguration](../resources/plannertaskconfiguration.md) object.|
-|[Delete plannerTaskConfiguration](../api/businessscenarioplanner-delete-taskconfiguration.md)|None|Delete a [plannerTaskConfiguration](../resources/plannertaskconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|editPolicy|[plannerTaskPolicy](../resources/plannertaskpolicy.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|editPolicy|[plannerTaskPolicy](../resources/plannertaskpolicy.md)|Policy configuration for tasks created for the scenario getting edited outside of the scenario.|
+|id|String|The identifier of the task configuration. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

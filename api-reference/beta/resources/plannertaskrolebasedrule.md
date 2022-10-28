@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the rules for editing [tasks](../resources/businessscenariotask.md) created for the [scenario](../resources/businessscenario.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultRule|String|**TODO: Add Description**|
-|propertyRule|[plannerTaskPropertyRule](../resources/plannertaskpropertyrule.md)|**TODO: Add Description**|
-|role|[plannerTaskConfigurationRoleBase](../resources/plannertaskconfigurationrolebase.md)|**TODO: Add Description**|
+|defaultRule|String|Default rule that applies when property or action specific rule is not provided. Possible values are: `Allow`, `Block`|
+|propertyRule|[plannerTaskPropertyRule](../resources/plannertaskpropertyrule.md)|Rules for specific properties and actions.|
+|role|[plannerTaskConfigurationRoleBase](../resources/plannertaskconfigurationrolebase.md)|The role these rules apply to.|
 
 ## Relationships
 None.

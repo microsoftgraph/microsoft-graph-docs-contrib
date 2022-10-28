@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the policy configuration for [tasks](../resources/businessscenariotask.md) created for a [businessScenario](../resources/businessscenario.md) getting edited outside of the scenario.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|rules|[plannerTaskRoleBasedRule](../resources/plannertaskrolebasedrule.md) collection|**TODO: Add Description**|
+|rules|[plannerTaskRoleBasedRule](../resources/plannertaskrolebasedrule.md) collection|The rules that should be enforced on the tasks when they are being changed outside of the scenario, based on the role of the caller.|
 
 ## Relationships
 None.

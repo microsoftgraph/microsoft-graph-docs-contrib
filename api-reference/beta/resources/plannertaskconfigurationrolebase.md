@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a role that a [plannerTaskRoleBasedRule](../resources/plannertaskrolebasedrule.md) can be applied to.
 This is an abstract type.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|roleKind|plannerUserRoleKind|**TODO: Add Description**.The possible values are: `relationship`, `unknownFutureValue`.|
+|roleKind|plannerUserRoleKind|Type of the role. The possible values are: `relationship`, `unknownFutureValue`.|
 
 ## Relationships
 None.
