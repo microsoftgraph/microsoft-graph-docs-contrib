@@ -395,6 +395,20 @@ Namespace: microsoft.graph
 |allow|
 |block|
 
+### x509CertificateAuthenticationMode values
+|Member|
+|:---|
+|x509CertificateSingleFactor|
+|x509CertificateMultiFactor|
+|unknownFutureValue|
+
+### x509CertificateRuleType values
+|Member|
+|:---|
+|issuerSubject|
+|policyOID|
+|unknownFutureValue|
+
 ### attestationLevel values
 
 |Member|
@@ -564,6 +578,17 @@ Namespace: microsoft.graph
 |failure|
 |notApplied|
 |unknownFutureValue|
+
+### templateScenarios values
+|Member             |
+|:------------------|
+|new                |
+|secureFoundation   |
+|zeroTrust          |
+|remoteWork         |
+|protectAdmins      |
+|emergingThreats    |
+|unknownFutureValue |
 
 ### operationResult values
 
@@ -1947,6 +1972,15 @@ Possible values for user account types (group membership), per Windows definitio
 |microsoft|
 |thirdParty|
 |customer|
+|unknownFutureValue|
+
+### featureTargetType values 
+
+|Member|
+|:---|
+|group|
+|administrativeUnit|
+|role|
 |unknownFutureValue|
 
 ### serviceHealthStatus values 

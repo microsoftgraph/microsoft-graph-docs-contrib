@@ -438,7 +438,7 @@
           "ChangedApiName": "sendActivityNotificationToRecipients",
           "ChangeType": "Addition",
           "Description": "Added the [sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta) method to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
-          "Target": "teamwork and communications"
+          "Target": "teamwork"
         }
       ],
       "Id": "a6ff04dc-bc68-4339-968e-8341b62b6ce9",
@@ -490,7 +490,7 @@
           "ChangedApiName": "deletedTeams",
           "ChangeType": "Addition",
           "Description": "Added the **deletedTeams** relationship to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
-          "Target": "teamwork and communications"
+          "Target": "teamwork"
         }
       ],
       "Id": "33336873-57cc-453e-90da-9e735f550661",
@@ -524,7 +524,7 @@
           "ChangedApiName": "teamsAppSettings",
           "ChangeType": "Addition",
           "Description": "Added the **teamsAppSettings** navigation property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource",
-          "Target": "teamwork and communications"
+          "Target": "teamwork"
         }
       ],
       "Id": "e04528be-94f6-4bc5-9485-9b71da7f4804",
@@ -616,6 +616,122 @@
       "Version": "v1.0",
       "CreatedDateTime": "2022-07-18T11:01:30.771Z",
       "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "teamworkTagType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamworkTagType** enumeration type.",
+          "Target": "teamworkTagType"
+        },
+        {
+          "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tags",
+          "ChangeType": "Addition",
+          "Description": "Added the **tags** relationship to the [team](https://learn.microsoft.com/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkTag](https://learn.microsoft.com/graph/api/resources/teamworkTag?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "teamworkTag"
+        },
+        {
+          "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkTagMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkTagMember](https://learn.microsoft.com/graph/api/resources/teamworkTagMember?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "teamworkTagMember"
+        }
+      ],
+      "Id": "21300de2-68a8-4f39-a937-14d0ae44d887",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-09-08T20:58:15.0058997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatViewpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/chatViewpoint?view=graph-rest-1.0) resource type.",
+          "Target": "chatViewpoint"
+        },
+        {
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
+          "ApiChange": "Property",
+          "ChangedApiName": "viewpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the `viewpoint` property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "lastMessagePreview",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastMessagePreview** relationship to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessageInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatMessageInfo](https://learn.microsoft.com/en-us/graph/api/resources/chatMessageInfo?view=graph-rest-1.0) resource",
+          "Target": "chatMessageInfo"
+        },
+        {
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
+          "ApiChange": "Method",
+          "ChangedApiName": "hideForUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [hideForUser](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
+          "ApiChange": "Method",
+          "ChangedApiName": "markChatReadForUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [markChatReadForUser](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
+          "ApiChange": "Method",
+          "ChangedApiName": "markChatUnreadForUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [markChatUnreadForUser](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
+          "ApiChange": "Method",
+          "ChangedApiName": "unhideForUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [unhideForUser](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "853fa7eb-f4e4-43ba-b7c9-80bbb930bcef",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-11T09:44:21.690374Z",
+      "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
   ]

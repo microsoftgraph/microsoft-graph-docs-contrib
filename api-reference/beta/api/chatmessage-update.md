@@ -13,10 +13,13 @@ ms.prod: "microsoft-teams"
 
 
 Update a [chatMessage](../resources/chatMessage.md) object. 
-With the exception of the **policyViolation** property, all properties of a **chatMessage** can be updated in delegated permissions scenarios.
+All properties of a **chatMessage** can be updated in delegated permissions scenarios, 
+except for read-only properties and the **policyViolation** property.
 Only the **policyViolation** property of a **chatMessage** can be updated in application permissions scenarios.
 
 The update only works for chats where members are Microsoft Teams users. If one of the participants is using Skype, the operation will fail.
+
+This method does not support federation. Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 [!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 

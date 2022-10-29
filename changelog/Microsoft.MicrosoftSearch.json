@@ -573,6 +573,76 @@
       "CreatedDateTime": "2022-07-14T04:11:04.628237Z",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+          "ApiChange": "Member",
+          "ChangedApiName": "acronym",
+          "ChangeType": "Addition",
+          "Description": "Added the **acronym** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+          "ApiChange": "Member",
+          "ChangedApiName": "bookmark",
+          "ChangeType": "Addition",
+          "Description": "Added the **bookmark** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+          "ApiChange": "Member",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatMessage** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        }
+      ],
+      "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-10T12:02:57.3248454Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4a728a91-0c10-4a52-88df-609487321793",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Bookmark.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `Bookmark.Read.All` to access [bookmark](https://learn.microsoft.com/en-us/graph/search-concept-bookmark)",
+          "Target": "bookmark"
+        }
+      ],
+      "Id": "4a728a91-0c10-4a52-88df-609487321793",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T04:11:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9ed09e7e-eb50-4879-9c12-df9f57bb51e1",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Acronym.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `Acronym.Read.All` to access [acronym](https://learn.microsoft.com/en-us/graph/search-concept-acronym)",
+          "Target": "acronym"
+        }
+      ],
+      "Id": "9ed09e7e-eb50-4879-9c12-df9f57bb51e1",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T04:12:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }

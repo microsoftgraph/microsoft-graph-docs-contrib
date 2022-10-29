@@ -5,7 +5,7 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Learn how to use the Microsoft Graph connectors SDK to build a custom connector in C#."
+description: "Learn how to use the Microsoft Graph connectors SDK (preview) to build a custom connector in C#."
 ---
 
 # Build a custom Microsoft Graph connector in C#

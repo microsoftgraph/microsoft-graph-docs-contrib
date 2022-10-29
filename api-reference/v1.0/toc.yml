@@ -3527,8 +3527,6 @@ items:
             href: resources/intune-mam-ipv6range.md
           - name: JSON
             href: resources/intune-mam-json.md
-          - name: Key/value pair
-            href: resources/intune-mam-keyvaluepair.md
           - name: Managed app clipboard sharing level
             href: resources/intune-mam-managedappclipboardsharinglevel.md
           - name: Managed app configuration
@@ -4105,6 +4103,8 @@ items:
             href: resources/intune-shared-groupassignmenttarget.md
           - name: Install intent
             href: resources/intune-shared-installintent.md
+          - name: Key/value pair
+            href: resources/intune-shared-keyvaluepair.md
           - name: MIME content
             href: resources/intune-shared-mimecontent.md
           - name: Saved UI state generation options
@@ -4546,9 +4546,10 @@ items:
         - name: Delete permission
           href: api/permission-delete.md
     - name: Identity and access
-      displayName: Azure AD, Microsoft identity platform
+      displayName: Azure AD, Microsoft identity platform, Identity and access
       items:
       - name: Overview
+        displayName: Azure AD, Microsoft identity platform, Identity and access
         href: resources/azure-ad-overview.md
       - name: Directory management
         items:
@@ -4782,100 +4783,6 @@ items:
               href: api/unifiedroleassignment-get.md
             - name: Delete
               href: api/unifiedroleassignment-delete.md
-          - name: Privileged identity management
-            displayName: Privileged identity management, PIM
-            href: resources/privilegedidentitymanagementv3-overview.md
-            items:
-            - name: Role assignments
-              items:
-                - name: Schedule requests
-                  href: resources/unifiedroleassignmentschedulerequest.md
-                  items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentschedulerequests.md
-                  - name: Create
-                    href: api/rbacapplication-post-roleassignmentschedulerequests.md
-                  - name: Get
-                    href: api/unifiedroleassignmentschedulerequest-get.md
-                  - name: Cancel
-                    href: api/unifiedroleassignmentschedulerequest-cancel.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
-                - name: Schedules
-                  href: resources/unifiedroleassignmentschedule.md
-                  items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentschedules.md
-                  - name: Get
-                    href: api/unifiedroleassignmentschedule-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
-                - name: Schedule instances
-                  href: resources/unifiedroleassignmentscheduleinstance.md
-                  items:
-                  - name: List
-                    href: api/rbacapplication-list-roleassignmentscheduleinstances.md
-                  - name: Get
-                    href: api/unifiedroleassignmentscheduleinstance-get.md
-                  - name: Filter by current user
-                    href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
-            - name: Role eligibility
-              items:
-              - name: Schedule requests
-                href: resources/unifiedroleeligibilityschedulerequest.md
-                items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityschedulerequests.md
-                - name: Create
-                  href: api/rbacapplication-post-roleeligibilityschedulerequests.md
-                - name: Get
-                  href: api/unifiedroleeligibilityschedulerequest-get.md
-                - name: Cancel
-                  href: api/unifiedroleeligibilityschedulerequest-cancel.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
-              - name: Schedules
-                href: resources/unifiedroleeligibilityschedule.md
-                items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityschedules.md
-                - name: Get
-                  href: api/unifiedroleeligibilityschedule-get.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
-              - name: Schedule instances
-                href: resources/unifiedroleeligibilityscheduleinstance.md
-                items:
-                - name: List
-                  href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
-                - name: Get
-                  href: api/unifiedroleeligibilityscheduleinstance-get.md
-                - name: Filter by current user
-                  href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-            - name: Role management policies
-              items:
-              - name: Policies and rules
-                displayName: role management policies, Azure AD role settings
-                href: resources/unifiedrolemanagementpolicy.md
-                items:
-                - name: List
-                  href: api/policyroot-list-rolemanagementpolicies.md
-                - name: Get
-                  href: api/unifiedrolemanagementpolicy-get.md
-                - name: List rules
-                  href: api/unifiedrolemanagementpolicy-list-rules.md
-                - name: Get rule
-                  href: api/unifiedrolemanagementpolicyrule-get.md
-                - name: Update rule
-                  href: api/unifiedrolemanagementpolicyrule-update.md
-              - name: Policy assignments
-                displayName: role managemement policy assignments
-                href: resources/unifiedrolemanagementpolicyassignment.md
-                items:
-                - name: List
-                  href: api/policyroot-list-rolemanagementpolicyassignments.md
-                - name: Get
-                  href: api/unifiedrolemanagementpolicyassignment-get.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
@@ -5058,6 +4965,14 @@ items:
               href: api/authenticationcontextclassreference-get.md
             - name: Delete
               href: api/authenticationcontextclassreference-delete.md  
+          - name: Templates
+            items:
+            - name: Conditional access template
+              href: resources/conditionalAccessTemplate.md
+            - name: List
+              href: api/conditionalaccessroot-list-templates.md
+            - name: Get
+              href: api/conditionalaccesstemplate-get.md
         - name: Cross-tenant access
           items:
           - name: Overview
@@ -5307,6 +5222,16 @@ items:
                 href: api/emailauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/emailauthenticationmethodconfiguration-delete.md
+            - name: X509 certificate
+              displayName: certificate-based authentication, CBA
+              href: resources/x509Certificateauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/x509certificateauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/x509certificateauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/x509certificateauthenticationmethodconfiguration-delete.md
           - name: Authorization policy
             href: resources/authorizationpolicy.md
             items:
@@ -5625,6 +5550,20 @@ items:
               href: api/accesspackage-filterbycurrentuser.md
             - name: Get applicable policy requirements
               href: api/accesspackage-getapplicablepolicyrequirements.md
+            - name: List incompatible access packages
+              href: api/accesspackage-list-incompatibleaccesspackages.md
+            - name: Add incompatible access package
+              href: api/accesspackage-post-incompatibleaccesspackage.md
+            - name: Remove incompatible access package
+              href: api/accesspackage-delete-incompatibleaccesspackage.md
+            - name: List incompatible groups
+              href: api/accesspackage-list-incompatiblegroups.md
+            - name: Add incompatible group
+              href: api/accesspackage-post-incompatiblegroup.md
+            - name: Remove incompatible group
+              href: api/accesspackage-delete-incompatiblegroup.md
+            - name: List access packages incompatible with
+              href: api/accesspackage-list-accesspackagesincompatiblewith.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:
@@ -5632,6 +5571,8 @@ items:
               href: api/entitlementmanagement-list-assignments.md
             - name: Get
               href: api/accesspackageassignment-get.md
+            - name: Check additional access
+              href: api/accesspackageassignment-additionalaccess.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
             - name: Reprocess
@@ -5729,6 +5670,93 @@ items:
               href: api/accesspackageassignmentpolicy-update.md
             - name: Delete
               href: api/accesspackageassignmentpolicy-delete.md
+        - name: Privileged Identity Management
+          displayName: Privileged Identity Management, PIM, Identity Governance
+          href: resources/privilegedidentitymanagementv3-overview.md
+          items:
+          - name: Role assignment schedule requests
+            href: resources/unifiedroleassignmentschedulerequest.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleassignmentschedulerequests.md
+            - name: Create
+              href: api/rbacapplication-post-roleassignmentschedulerequests.md
+            - name: Get
+              href: api/unifiedroleassignmentschedulerequest-get.md
+            - name: Cancel
+              href: api/unifiedroleassignmentschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+          - name: Role assignment schedules
+            href: resources/unifiedroleassignmentschedule.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleassignmentschedules.md
+            - name: Get
+              href: api/unifiedroleassignmentschedule-get.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+          - name: Role assignment schedule instances
+            href: resources/unifiedroleassignmentscheduleinstance.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+            - name: Get
+              href: api/unifiedroleassignmentscheduleinstance-get.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+          - name: Role eligibility schedule requests
+            href: resources/unifiedroleeligibilityschedulerequest.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+            - name: Create
+              href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+            - name: Get
+              href: api/unifiedroleeligibilityschedulerequest-get.md
+            - name: Cancel
+              href: api/unifiedroleeligibilityschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+          - name: Role eligibility schedules
+            href: resources/unifiedroleeligibilityschedule.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleeligibilityschedules.md
+            - name: Get
+              href: api/unifiedroleeligibilityschedule-get.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+          - name: Role eligibility schedule instances
+            href: resources/unifiedroleeligibilityscheduleinstance.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+            - name: Get
+              href: api/unifiedroleeligibilityscheduleinstance-get.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+          - name: Role management policies
+            items:
+            - name: Policies and rules
+              href: resources/unifiedrolemanagementpolicy.md
+            - name: List
+              href: api/policyroot-list-rolemanagementpolicies.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicy-get.md
+            - name: List rules
+              href: api/unifiedrolemanagementpolicy-list-rules.md
+            - name: Get rule
+              href: api/unifiedrolemanagementpolicyrule-get.md
+            - name: Update rule
+              href: api/unifiedrolemanagementpolicyrule-update.md
+          - name: Role management policy assignments
+            href: resources/unifiedrolemanagementpolicyassignment.md
+            items:
+            - name: List
+              href: api/policyroot-list-rolemanagementpolicyassignments.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicyassignment-get.md
         - name: Terms of use
           items:
           - name: Agreement
@@ -5762,100 +5790,6 @@ items:
               href: api/agreement-post-files.md
             - name: List localized files
               href: api/agreement-list-files.md
-        - name: Privileged identity management
-          displayName: Privileged identity management, PIM
-          href: resources/privilegedidentitymanagementv3-overview.md
-          items:
-          - name: Role assignments
-            items:
-              - name: Schedule requests
-                href: resources/unifiedroleassignmentschedulerequest.md
-                items:
-                - name: List
-                  href: api/rbacapplication-list-roleassignmentschedulerequests.md
-                - name: Create
-                  href: api/rbacapplication-post-roleassignmentschedulerequests.md
-                - name: Get
-                  href: api/unifiedroleassignmentschedulerequest-get.md
-                - name: Cancel
-                  href: api/unifiedroleassignmentschedulerequest-cancel.md
-                - name: Filter by current user
-                  href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
-              - name: Schedules
-                href: resources/unifiedroleassignmentschedule.md
-                items:
-                - name: List
-                  href: api/rbacapplication-list-roleassignmentschedules.md
-                - name: Get
-                  href: api/unifiedroleassignmentschedule-get.md
-                - name: Filter by current user
-                  href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
-              - name: Schedule instances
-                href: resources/unifiedroleassignmentscheduleinstance.md
-                items:
-                - name: List
-                  href: api/rbacapplication-list-roleassignmentscheduleinstances.md
-                - name: Get
-                  href: api/unifiedroleassignmentscheduleinstance-get.md
-                - name: Filter by current user
-                  href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
-          - name: Role eligibility
-            items:
-            - name: Schedule requests
-              href: resources/unifiedroleeligibilityschedulerequest.md
-              items:
-              - name: List
-                href: api/rbacapplication-list-roleeligibilityschedulerequests.md
-              - name: Create
-                href: api/rbacapplication-post-roleeligibilityschedulerequests.md
-              - name: Get
-                href: api/unifiedroleeligibilityschedulerequest-get.md
-              - name: Cancel
-                href: api/unifiedroleeligibilityschedulerequest-cancel.md
-              - name: Filter by current user
-                href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
-            - name: Schedules
-              href: resources/unifiedroleeligibilityschedule.md
-              items:
-              - name: List
-                href: api/rbacapplication-list-roleeligibilityschedules.md
-              - name: Get
-                href: api/unifiedroleeligibilityschedule-get.md
-              - name: Filter by current user
-                href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
-            - name: Schedule instances
-              href: resources/unifiedroleeligibilityscheduleinstance.md
-              items:
-              - name: List
-                href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
-              - name: Get
-                href: api/unifiedroleeligibilityscheduleinstance-get.md
-              - name: Filter by current user
-                href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-          - name: Role management policies
-            items:
-            - name: Policies and rules
-              displayName: role management policies, Azure AD role settings
-              href: resources/unifiedrolemanagementpolicy.md
-              items:
-              - name: List
-                href: api/policyroot-list-rolemanagementpolicies.md
-              - name: Get
-                href: api/unifiedrolemanagementpolicy-get.md
-              - name: List rules
-                href: api/unifiedrolemanagementpolicy-list-rules.md
-              - name: Get rule
-                href: api/unifiedrolemanagementpolicyrule-get.md
-              - name: Update rule
-                href: api/unifiedrolemanagementpolicyrule-update.md
-            - name: Policy assignments
-              displayName: role managemement policy assignments
-              href: resources/unifiedrolemanagementpolicyassignment.md
-              items:
-              - name: List
-                href: api/policyroot-list-rolemanagementpolicyassignments.md
-              - name: Get
-                href: api/unifiedrolemanagementpolicyassignment-get.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
@@ -6325,6 +6259,15 @@ items:
             href: api/reportroot-getoffice365activeusercounts.md
           - name: Get services user counts
             href: api/reportroot-getoffice365servicesusercounts.md
+        - name: Microsoft 365 Apps usage
+          href: resources/microsoft-365-apps-usage-report.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getm365appuserdetail.md
+          - name: Get user counts
+            href: api/reportroot-getm365appusercounts.md
+          - name: Get platform user counts
+            href: api/reportroot-getm365appplatformusercounts.md
         - name: Microsoft 365 groups activity
           href: resources/office-365-groups-activity-reports.md
           items:
@@ -7257,11 +7200,11 @@ items:
               href: api/call-keepalive.md
             - name: Log teleconference device quality data
               href: api/call-logteleconferencedevicequality.md
+            - name: Change screen sharing role
+              href: api/call-changescreensharingrole.md
           - name: Content sharing session
             href: resources/contentsharingsession.md
             items:
-            - name: Change screen sharing role
-              href: api/call-changescreensharingrole.md
             - name: List
               href: api/call-list-contentsharingsessions.md
             - name: Get
@@ -7383,6 +7326,8 @@ items:
             href: api/team-sendactivitynotification.md
           - name: Send notification to user
             href: api/userteamwork-sendactivitynotification.md
+          - name: Send notifications to multiple users in bulk
+            href: api/teamwork-sendactivitynotificationtorecipients.md
         - name: Channel
           href: resources/channel.md
           items:
@@ -7477,6 +7422,14 @@ items:
             href: api/chat-post-messages.md
           - name: Get chat between user and app
             href: api/userscopeteamsappinstallation-get-chat.md
+          - name: Mark chat as read
+            href: api/chat-markchatreadforuser.md
+          - name: Mark chat as unread
+            href: api/chat-markchatunreadforuser.md
+          - name: Hide chat
+            href: api/chat-hideforuser.md
+          - name: Unhide chat
+            href: api/chat-unhideforuser.md
           - name: List pinned messages
             href: api/chat-list-pinnedmessages.md
           - name: Pin message
@@ -7570,6 +7523,30 @@ items:
             href: /graph/teams-list-all-teams?context=graph/api/1.0
           - name: Complete migration for team
             href: api/team-completemigration.md
+        - name: Tag
+          href: resources/teamworktag.md
+          items:
+          - name: List
+            href: api/teamworktag-list.md
+          - name: Create
+            href: api/teamworktag-post.md
+          - name: Get
+            href: api/teamworktag-get.md
+          - name: Update
+            href: api/teamworktag-update.md
+          - name: Delete
+            href: api/teamworktag-delete.md
+        - name: Tag member
+          href: resources/teamworktagmember.md
+          items:
+          - name: List
+            href: api/teamworktagmember-list.md
+          - name: Create
+            href: api/teamworktagmember-post.md
+          - name: Get
+            href: api/teamworktagmember-get.md
+          - name: Delete
+            href: api/teamworktagmember-delete.md
       - name: Shift management
         items:
         - name: Offer shift

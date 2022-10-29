@@ -3,6 +3,60 @@
     {
       "ChangeList": [
         {
+          "Id": "17c54352-c87f-47fd-ab92-e19ce2da7bcc",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$filter` and `$orderBy` query parameters for the [List chat messages](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-v1.0) method.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "17c54352-c87f-47fd-ab92-e19ce2da7bcc",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-17T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "35662e55-573c-464e-b999-093a27ff63f7",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$filter` query parameter for the [List chat messages](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-beta) method.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "35662e55-573c-464e-b999-093a27ff63f7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-14T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "04f199ca-74fe-4c67-b39f-2feacad3f304",
+          "ApiChange": "Authentication",
+          "ChangedApiName": "Messaging",
+          "ChangeType": "Change",
+          "Description": "Enabled validation on the sender tenant ID for the [Update chatMessage](https://learn.microsoft.com/en-us/graph/api/update-chatmessage) operation. With this change, only the tenant of the user who sent the message can perform data loss prevention updates on the chat message; that is, change the **policyViolation** property on the chat message.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "04f199ca-74fe-4c67-b39f-2feacad3f304",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-12T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e9194248-72ef-4678-872f-99b59117edb5",
           "ApiChange": "Relationship",
           "ChangedApiName": "chat",
@@ -311,7 +365,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "LIST",
           "ChangeType": "Addition",
-          "Description": "Enabled the `$orderBy` query option to allow users to choose sorting order between **LastModifiedDateTime** and **CreatedDateTime** when retreiving chat messages.",
+          "Description": "Enabled the `$orderBy` query option to allow users to choose sorting order between **LastModifiedDateTime** and **CreatedDateTime** when retrieving chat messages.",
           "Target": "chatMessage"
         }
       ],
@@ -5910,8 +5964,122 @@
       "Id": "d1e505d7-481f-4a6f-aead-578692fa94d5",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2022-10-03T15:04:69.427Z",
+      "CreatedDateTime": "2022-10-03T15:04:49.427Z",
       "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f0bb938f-6606-4da1-8488-5278e6c06f18",
+          "ApiChange": "Method",
+          "ChangedApiName": "setReaction",
+          "ChangeType": "Addition",
+          "Description": "Added the [setReaction](https://learn.microsoft.com/en-us/graph/api/chatmessage-setreaction?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "f0bb938f-6606-4da1-8488-5278e6c06f18",
+          "ApiChange": "Method",
+          "ChangedApiName": "unsetReaction",
+          "ChangeType": "Addition",
+          "Description": "Added the [unsetReaction](https://learn.microsoft.com/en-us/graph/api/chatmessage-unsetreaction?view=graph-rest-beta) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "f0bb938f-6606-4da1-8488-5278e6c06f18",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },    
+	  {
+      "ChangeList": [
+        {
+          "Id": "65fc6370-ff92-4df0-9134-da7a8759897a",
+          "ApiChange": "Method",
+          "ChangedApiName": "sendActivityNotificationToRecipients",
+          "ChangeType": "Addition",
+          "Description": "Added the [sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/teamwork-sendActivityNotificationToRecipients?view=graph-rest-v1.0) method to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Target": "teamwork"
+        }
+      ],
+      "Id": "65fc6370-ff92-4df0-9134-da7a8759897a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-10T18:54:16.6879906Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f30575cf-9eb6-430f-885c-1cec5536d7d7",
+          "ApiChange": "Member",
+          "ChangedApiName": "azureCommunicationServicesUser",
+          "ChangeType": "Addition",
+          "Description": "Added the `azureCommunicationServicesUser` value to the **teamworkUserIdentityType** enumeration.",
+          "Target": "teamworkUserIdentityType"
+        }
+      ],
+      "Id": "f30575cf-9eb6-430f-885c-1cec5536d7d7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-20T20:34:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "" 
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "331f93e1-f1a4-4868-bf74-ee03d0e44599",
+          "ApiChange": "Property",
+          "ChangedApiName": "removeFromDefaultAudioRoutingGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the **removeFromDefaultAudioRoutingGroup** property to the [invitationParticipantInfo](https://learn.microsoft.com/en-us/graph/api/resources/invitationparticipantinfo?view=graph-rest-beta) resource.",
+          "Target": "invitationparticipantinfo"
+        },
+        {
+          "Id": "331f93e1-f1a4-4868-bf74-ee03d0e44599",
+          "ApiChange": "Property",
+          "ChangedApiName": "hidden",
+          "ChangeType": "Addition",
+          "Description": "Added the **hidden** property to the [invitationParticipantInfo](https://learn.microsoft.com/en-us/graph/api/resources/invitationparticipantinfo?view=graph-rest-beta) resource.",
+          "Target": "invitationparticipantinfo"
+        }
+      ],
+      "Id": "331f93e1-f1a4-4868-bf74-ee03d0e44599",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-26T20:34:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "331f93e1-f1a4-4868-bf74-ee03d0e44599",
+          "ApiChange": "Property",
+          "ChangedApiName": "removeFromDefaultAudioRoutingGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the **removeFromDefaultAudioRoutingGroup** property to the [invitationParticipantInfo](https://learn.microsoft.com/en-us/graph/api/resources/invitationparticipantinfo?view=graph-rest-v1.0) resource.",
+          "Target": "invitationparticipantinfo"
+        },
+        {
+          "Id": "331f93e1-f1a4-4868-bf74-ee03d0e44599",
+          "ApiChange": "Property",
+          "ChangedApiName": "hidden",
+          "ChangeType": "Addition",
+          "Description": "Added the **hidden** property to the [invitationParticipantInfo](https://learn.microsoft.com/en-us/graph/api/resources/invitationparticipantinfo?view=graph-rest-v1.0) resource.",
+          "Target": "invitationparticipantinfo"
+        }
+      ],
+      "Id": "331f93e1-f1a4-4868-bf74-ee03d0e44599",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-10-26T20:34:40.595Z",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }
   ]

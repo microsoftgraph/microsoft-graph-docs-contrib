@@ -125,8 +125,8 @@
 			"Cloud": "Prod",
 			"Version": "beta",
 			"CreatedDateTime": "2022-10-03T13:58:56.9132926Z",
-			"WorkloadArea": "People and workplace intelligence",
-			"SubArea": "People"
+			"WorkloadArea": "Personal contacts",
+			"SubArea": "Org control for contact insights"
 		}
 	]
 }
