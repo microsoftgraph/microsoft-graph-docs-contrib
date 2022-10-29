@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-privilegedRoleAssignmentRequestId := "privilegedRoleAssignmentRequest-id"
-result, err := graphClient.PrivilegedRoleAssignmentRequestsById(&privilegedRoleAssignmentRequestId).Get(nil)
+
+result, err := graphClient.PrivilegedRoleAssignmentRequests().My().Get(context.Background(), nil)
 
 
 ```

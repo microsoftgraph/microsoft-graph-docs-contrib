@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewCancelPostRequestBody()
 comment := "Cancelling for this week due to all hands"
-requestBody.SetComment(&comment)
-options := &msgraphsdk.CancelRequestBuilderPostOptions{
-	Body: requestBody,
-}
-eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Cancel().Post(options)
+requestBody.SetComment(&comment) 
+
+graphClient.Me().EventsById("event-id").Cancel().Post(context.Background(), requestBody, nil)
 
 
 ```

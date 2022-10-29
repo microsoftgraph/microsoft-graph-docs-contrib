@@ -12,8 +12,8 @@ var directorySetting = new DirectorySetting
 	{
 		new SettingValue
 		{
-			Name = "name-value",
-			Value = "value-value"
+			Name = "CustomBlockedWordsList",
+			Value = "Contoso"
 		}
 	}
 };

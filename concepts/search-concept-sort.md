@@ -1,17 +1,18 @@
 ---
-title: "Use the Microsoft Search API to sort search results (preview)"
-description: "You sort search results using the Microsoft Search API."
-author: "nmoreau"
+title: "Use the Microsoft Search API to sort search results"
+description: "You can use the Microsoft Search API sortProperties property in Microsoft Graph to sort search results. You can do a single-level or multi-level sort."
+author: "njerigrevious"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
 # Use the Microsoft Search API to sort search results
 
-You can use the Microsoft Search API in Microsoft Graph to sort search results. To sort the results, specify the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object and identify a resource property in **entityTypes** to sort matches by, in ascending or descending order.
+You can use the Microsoft Search API in Microsoft Graph to sort search results. To sort the results, specify the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest) object and identify a resource property in **entityTypes** to sort matches by, in ascending or descending order.
 
-Sorting is supported only for SharePoint and OneDrive items.
-The property to be sorted on should be *Sortable* in the search schema.
+Sorting is supported for SharePoint and OneDrive items. The property of SharePoint and OneDrive items to be sorted on should be *sortable* in the search schema.
+
+Sorting is also supported for [external items](/graph/api/resources/externalconnectors-externalitem). The [property](/graph/api/resources/externalconnectors-property) of external items to be sorted on should be *refinable* in the search schema.
 
 The default sort order is ascending. Set the **isDescending** property to change it.
 
@@ -311,9 +312,9 @@ Content-type: application/json
 
 ## Known limitations
 
-- Sort is not supported for **message**, **event**, and **externalItem**.
+- Sort is not supported for **message** and **event**.
 - Sort by relevance cannot be specified in **sortProperties**.
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

@@ -20,6 +20,7 @@ graphClient.me().drive().items("{item-id}")
 		.withExpirationDateTime(null)
 		.withPassword(password)
 		.withMessage(null)
+		.withRetainInheritedPermissions(null)
 		.build())
 	.buildRequest()
 	.post();

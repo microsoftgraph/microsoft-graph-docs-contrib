@@ -6,9 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Agreement agreement = graphClient.identityGovernance().termsOfUse().agreements("{id}")
+Agreement agreement = graphClient.identityGovernance().termsOfUse().agreements("0ec9f6a6-159d-4dd8-a563-1f0b5935e80b")
 	.buildRequest()
-	.expand("files")
 	.get();
 
 ```

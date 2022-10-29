@@ -7,14 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.MessagesRequestBuilderGetQueryParameters{
-	Top: 2,
+
+requestTop := int32(2)
+
+requestParameters := &graphconfig.MessagesRequestBuilderGetQueryParameters{
+	Top: &requestTop,
+	OrderBy: [] string {"createdDateTime desc"},
 }
-options := &msgraphsdk.MessagesRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.MessagesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Messages().Get(options)
+
+result, err := graphClient.ChatsById("chat-id").Messages().Get(context.Background(), configuration)
 
 
 ```

@@ -11,7 +11,12 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-The identity governance singleton is the container for identity governance resources, including [access reviews](accessreviewsv2-root.md) and [entitlement management](entitlementmanagement.md).
+The identity governance singleton is the container for the following Azure Active Directory identity governance features that are exposed through the following resources and APIs:
+
++ [Access reviews](accessreviewsv2-overview.md)
++ [Entitlement management](entitlementmanagement-overview.md)
++ [App consent](consentrequests-overview.md)
++ [Terms of use](agreement.md)
 
 ## Methods
 
@@ -25,5 +30,8 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|accessReviews|[accessReviewSet](accessreviewset.md)| Container for the base resources that expose the access reviews API and features. Currently exposes only the [definitions](accessreviewscheduledefinition.md) resource.|
+|appConsent|[appConsent](appconsentapprovalroute.md)| Container for base resources that expose the app consent request API and features. Currently exposes only the [appConsentRequests](appconsentrequest.md) resource.|
 |entitlementManagement|[entitlementManagement](entitlementmanagement.md)| Container for entitlement management resources, including [accessPackageCatalog](accesspackagecatalog.md), [connectedOrganization](connectedorganization.md), and [entitlementManagementSettings](entitlementmanagementsettings.md).|
+|termsOfUse|[termsOfUseContainer](termsofusecontainer.md)| Container for the resources that expose the terms of use API and its features, including [agreements](agreement.md) and [agreementAcceptances](agreementacceptance.md). |
 

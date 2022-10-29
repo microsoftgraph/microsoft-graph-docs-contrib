@@ -1,19 +1,22 @@
 ---
-title: "Get device command status"
+title: "Get device command status (deprecated)"
 description: "Get the status of a command on a device. For the  full list of status codes, see List of actionStatus."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ailae"
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
 
-# Get device command status
+# Get device command status (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the status of a command on a device. For the  full list of status codes, see [List of actionStatus](#list-of-actionstatus).
+
+> [!CAUTION]
+> This API is deprecated and stopped returning data on September 30, 2020.
 
 ## Permissions
 

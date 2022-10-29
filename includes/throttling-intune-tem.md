@@ -1,5 +1,5 @@
 ---
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -17,4 +17,4 @@ The preceding limits apply to the following resources:
 
 | <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> [telecomExpenseManagementPartner](/graph/api/resources/telecomexpensemanagementpartner)  </ul> |
+| <ul> <li> [telecomExpenseManagementPartner](/graph/api/resources/intune-tem-telecomexpensemanagementpartner)  </ul> |

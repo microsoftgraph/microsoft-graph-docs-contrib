@@ -101,7 +101,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3368
+Content-length: 3495
 
 {
   "@odata.type": "#microsoft.graph.iosVpnConfiguration",
@@ -180,7 +180,11 @@ Content-length: 3368
       "domains": [
         "Domains value"
       ],
-      "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
+      "probeRequiredUrl": "https://example.com/probeRequiredUrl/",
+      "interfaceTypeMatch": "ethernet",
+      "dnsServerAddressMatch": [
+        "Dns Server Address Match value"
+      ]
     }
   ],
   "providerType": "appProxy",
@@ -224,7 +228,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3540
+Content-Length: 3667
 
 {
   "@odata.type": "#microsoft.graph.iosVpnConfiguration",
@@ -306,7 +310,11 @@ Content-Length: 3540
       "domains": [
         "Domains value"
       ],
-      "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
+      "probeRequiredUrl": "https://example.com/probeRequiredUrl/",
+      "interfaceTypeMatch": "ethernet",
+      "dnsServerAddressMatch": [
+        "Dns Server Address Match value"
+      ]
     }
   ],
   "providerType": "appProxy",
@@ -344,6 +352,7 @@ Content-Length: 3540
   "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
 }
 ```
+
 
 
 

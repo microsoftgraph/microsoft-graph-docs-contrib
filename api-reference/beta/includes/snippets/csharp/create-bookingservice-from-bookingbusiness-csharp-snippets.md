@@ -57,6 +57,7 @@ var bookingService = new BookingService
 	DisplayName = "Bento",
 	IsLocationOnline = true,
 	SmsNotificationsEnabled = true,
+	LanguageTag = "en-US",
 	IsHiddenFromCustomers = false,
 	Notes = "Home-cooked special",
 	PostBuffer = new Duration("PT10M"),
@@ -74,6 +75,7 @@ var bookingService = new BookingService
 		"d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
 		"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
 	},
+	IsAnonymousJoinEnabled = false,
 	AdditionalData = new Dictionary<string, object>()
 	{
 		{"defaultPriceType@odata.type", "#microsoft.graph.bookingPriceType"},

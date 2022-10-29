@@ -95,7 +95,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2895
+Content-length: 3022
 
 {
   "@odata.type": "#microsoft.graph.macOSVpnConfiguration",
@@ -174,7 +174,11 @@ Content-length: 2895
       "domains": [
         "Domains value"
       ],
-      "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
+      "probeRequiredUrl": "https://example.com/probeRequiredUrl/",
+      "interfaceTypeMatch": "ethernet",
+      "dnsServerAddressMatch": [
+        "Dns Server Address Match value"
+      ]
     }
   ],
   "providerType": "appProxy",
@@ -202,7 +206,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3067
+Content-Length: 3194
 
 {
   "@odata.type": "#microsoft.graph.macOSVpnConfiguration",
@@ -284,7 +288,11 @@ Content-Length: 3067
       "domains": [
         "Domains value"
       ],
-      "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
+      "probeRequiredUrl": "https://example.com/probeRequiredUrl/",
+      "interfaceTypeMatch": "ethernet",
+      "dnsServerAddressMatch": [
+        "Dns Server Address Match value"
+      ]
     }
   ],
   "providerType": "appProxy",
@@ -306,6 +314,7 @@ Content-Length: 3067
   "optInToDeviceIdSharing": true
 }
 ```
+
 
 
 

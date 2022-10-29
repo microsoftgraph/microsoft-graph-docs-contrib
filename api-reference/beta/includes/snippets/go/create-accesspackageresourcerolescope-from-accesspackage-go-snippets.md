@@ -7,25 +7,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAccessPackageResourceRoleScope()
-accessPackageResourceRole := msgraphsdk.NewAccessPackageResourceRole()
+requestBody := graphmodels.NewAccessPackageResourceRoleScope()
+accessPackageResourceRole := graphmodels.NewAccessPackageResourceRole()
+originId := "Member_b31fe1f1-3651-488f-bd9a-1711887fd4ca"
+accessPackageResourceRole.SetOriginId(&originId) 
+displayName := "Member"
+accessPackageResourceRole.SetDisplayName(&displayName) 
+originSystem := "AadGroup"
+accessPackageResourceRole.SetOriginSystem(&originSystem) 
+accessPackageResource := graphmodels.NewAccessPackageResource()
+id := "1d08498d-72a1-403f-8511-6b1f875746a0"
+accessPackageResource.SetId(&id) 
+resourceType := "O365 Group"
+accessPackageResource.SetResourceType(&resourceType) 
+originId := "b31fe1f1-3651-488f-bd9a-1711887fd4ca"
+accessPackageResource.SetOriginId(&originId) 
+originSystem := "AadGroup"
+accessPackageResource.SetOriginSystem(&originSystem) 
+accessPackageResourceRole.SetAccessPackageResource(accessPackageResource)
 requestBody.SetAccessPackageResourceRole(accessPackageResourceRole)
-accessPackageResourceRole.SetAdditionalData(map[string]interface{}{
-	"originId": "Member_b31fe1f1-3651-488f-bd9a-1711887fd4ca",
-	"displayName": "Member",
-	"originSystem": "AadGroup",
-}
-accessPackageResourceScope := msgraphsdk.NewAccessPackageResourceScope()
+accessPackageResourceScope := graphmodels.NewAccessPackageResourceScope()
+originId := "b31fe1f1-3651-488f-bd9a-1711887fd4ca"
+accessPackageResourceScope.SetOriginId(&originId) 
+originSystem := "AadGroup"
+accessPackageResourceScope.SetOriginSystem(&originSystem) 
 requestBody.SetAccessPackageResourceScope(accessPackageResourceScope)
-accessPackageResourceScope.SetAdditionalData(map[string]interface{}{
-	"originId": "b31fe1f1-3651-488f-bd9a-1711887fd4ca",
-	"originSystem": "AadGroup",
-}
-options := &msgraphsdk.AccessPackageResourceRoleScopesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-accessPackageId := "accessPackage-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).AccessPackageResourceRoleScopes().Post(options)
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById("accessPackage-id").AccessPackageResourceRoleScopes().Post(context.Background(), requestBody, nil)
 
 
 ```

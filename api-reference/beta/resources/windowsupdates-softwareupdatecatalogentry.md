@@ -1,7 +1,7 @@
 ---
 title: "softwareUpdateCatalogEntry resource type"
 description: "Metadata for a software update that you can approve for deployment."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

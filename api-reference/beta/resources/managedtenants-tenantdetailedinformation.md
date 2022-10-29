@@ -1,9 +1,9 @@
 ---
 title: "tenantDetailedInformation resource type"
 description: "Represents detailed information for a managed tenant."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

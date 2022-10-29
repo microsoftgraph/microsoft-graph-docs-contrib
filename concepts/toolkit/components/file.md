@@ -2,7 +2,7 @@
 title: "File component in the Microsoft Graph Toolkit"
 description: "The file component is used to display a file by showing the icon, and name"
 ms.localizationpriority: medium
-author: beth-panx
+author: sebastienlevert
 ---
 
 # File component in the Microsoft Graph Toolkit

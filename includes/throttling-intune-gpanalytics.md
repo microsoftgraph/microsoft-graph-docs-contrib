@@ -1,5 +1,5 @@
 ---
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -17,5 +17,5 @@ The preceding limits apply to the following resources:
 
 | <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> [groupPolicyMigrationReport](/graph/api/resources/grouppolicymigrationreport) <li> [groupPolicyObjectFile](/graph/api/resources/grouppolicyobjectfile) <li> [groupPolicySettingMapping](/graph/api/resources/grouppolicysettingmapping) <li> [unsupportedGroupPolicyExtension.](/graph/api/resources/unsupportedgrouppolicyextension.)  </ul>
+| <ul> <li> [groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport) <li> [groupPolicyObjectFile](/graph/api/resources/intune-gpanalyticsservice-grouppolicyobjectfile) <li> [groupPolicySettingMapping](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingmapping) <li> [unsupportedGroupPolicyExtension](/graph/api/resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension)  </ul>
  |

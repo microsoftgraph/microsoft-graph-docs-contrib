@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 Profile profile = graphClient.me().profile()
 	.buildRequest()
-	.expand("skills($select=displayName)")
+	.expand("names($select=first,last),skills($select=displayName)")
 	.get();
 
 ```

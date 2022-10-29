@@ -7,16 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ChatMessageRequestBuilderGetQueryParameters{
-	Top: 2,
+
+requestTop := int32(2)
+
+requestParameters := &graphconfig.DeltaRequestBuilderGetQueryParameters{
+	Top: &requestTop,
 }
-options := &msgraphsdk.ChatMessageRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.DeltaRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-teamId := "team-id"
-channelId := "channel-id"
-chatMessageId := "chatMessage-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Get(options)
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Delta().Get(context.Background(), configuration)
 
 
 ```

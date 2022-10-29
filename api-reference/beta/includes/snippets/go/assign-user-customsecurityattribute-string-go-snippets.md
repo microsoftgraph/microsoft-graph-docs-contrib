@@ -7,16 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewUser()
-customSecurityAttributes := msgraphsdk.NewCustomSecurityAttributeValue()
+requestBody := graphmodels.NewUser()
+customSecurityAttributes := graphmodels.NewCustomSecurityAttributeValue()
+additionalData := map[string]interface{}{
+engineering := graphmodels.New()
+projectDate := "2022-10-01"
+engineering.SetProjectDate(&projectDate) 
+	customSecurityAttributes.SetEngineering(engineering)
+}
+customSecurityAttributes.SetAdditionalData(additionalData)
 requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
-customSecurityAttributes.SetAdditionalData(map[string]interface{}{
-}
-options := &msgraphsdk.UserRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-graphClient.UsersById(&userId).Patch(options)
+
+result, err := graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

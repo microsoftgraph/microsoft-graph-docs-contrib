@@ -1,5 +1,5 @@
 ---
-title: "Assign, update, or remove custom security attributes using the Microsoft Graph API (Preview)"
+title: "Assign, update, or remove custom security attributes (preview)"
 description: "Learn how to assign, update, or remove custom security attributes for users and applications (service principals) using the Microsoft Graph API."
 author: "rolyon"
 ms.localizationpriority: medium
@@ -7,14 +7,14 @@ ms.topic: how-to
 ms.prod: "directory-management"
 ---
 
-# Assign, update, or remove custom security attributes using the Microsoft Graph API (Preview)
+# Assign, update, or remove custom security attributes using the Microsoft Graph API (preview)
 
 > [!IMPORTANT]
-> The custom security attributes feature is currently in Preview. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+> The custom security attributes feature is currently in preview. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 [Custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects.
 
-This article provides examples of how to assign, update, or remove different types of custom security attributes for users and applications (service principals). Custom security attributes can be assigned or updated only through a `PATCH` operation in an [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) or [Update servicePrincipal](/graph/api/serviceprincipal-update?view=graph-rest-beta&preserve-view=true) request.
+This article provides examples of how to assign, update, or remove different types of custom security attributes for users and applications (service principals). Custom security attributes can be assigned or updated only through a `PATCH` operation in an [Update user](/graph/api/user-update) or [Update servicePrincipal](/graph/api/serviceprincipal-update) request.
 
 ## Permissions
 
@@ -22,9 +22,12 @@ To manage custom security attributes, the calling principal must be assigned the
 
 - [Attribute Assignment Administrator](/azure/active-directory/roles/permissions-reference#attribute-assignment-administrator)
 
-Also, the calling principal must be granted the following permission.
+Also, the calling principal must be granted the following permissions.
 
 - [CustomSecAttributeAssignment.ReadWrite.All](permissions-reference.md#custom-security-attributes-permissions)
+- [User.Read.All](permissions-reference.md#user-permissions)
+
+Permissions to read, assign, update, or remove attributes for an application is granted by *CustomSecAttributeAssignment.ReadWrite.All*. Permissions to read the resource object, such as users, is granted separately using resource object permissions, such as *User.Read.All*.
 
 ## Assign custom security attributes
 
@@ -42,7 +45,7 @@ The following example shows how to assign a custom security attribute with a str
 
 <!-- {
   "blockType": "request",
-  "name": "assign_user_customsecurityattribute_string"
+  "name": "customsecurityattribute_assign_user_string"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -82,7 +85,7 @@ The following example shows how to assign a custom security attribute with a str
 
 <!-- {
   "blockType": "request",
-  "name": "assign_serviceprincipal_customsecurityattribute_string"
+  "name": "customsecurityattribute_assign_serviceprincipal_string"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
@@ -122,7 +125,7 @@ The following example shows how to assign a custom security attribute with a mul
 
 <!-- {
   "blockType": "request",
-  "name": "assign_user_customsecurityattribute_multistring"
+  "name": "customsecurityattribute_assign_user_multistring"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -163,7 +166,7 @@ The following example shows how to assign a custom security attribute with an in
 
 <!-- {
   "blockType": "request",
-  "name": "assign_user_customsecurityattribute_integer"
+  "name": "customsecurityattribute_assign_user_integer"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -204,7 +207,7 @@ The following example shows how to assign a custom security attribute with a mul
 
 <!-- {
   "blockType": "request",
-  "name": "assign_user_customsecurityattribute_multiinteger"
+  "name": "customsecurityattribute_assign_user_multiinteger"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -245,7 +248,7 @@ The following example shows how to assign a custom security attribute with a Boo
 
 <!-- {
   "blockType": "request",
-  "name": "assign_user_customsecurityattribute_boolean"
+  "name": "customsecurityattribute_assign_user_boolean"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -287,7 +290,7 @@ The following example shows how to update a custom security attribute assignment
 
 <!-- {
   "blockType": "request",
-  "name": "update_user_customsecurityattribute_integer"
+  "name": "customsecurityattribute_update_user_integer"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -329,7 +332,7 @@ The following example shows how to update a custom security attribute assignment
 
 <!-- {
   "blockType": "request",
-  "name": "update_user_customsecurityattribute_boolean"
+  "name": "customsecurityattribute_update_user_boolean"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -370,7 +373,7 @@ The following example shows how to remove a custom security attribute assignment
 
 <!-- {
   "blockType": "request",
-  "name": "remove_user_customsecurityattribute_singlevalue"
+  "name": "customsecurityattribute_remove_from_user_singlevalue"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -409,7 +412,7 @@ The following example shows how to remove a custom security attribute assignment
 
 <!-- {
   "blockType": "request",
-  "name": "remove_user_customsecurityattribute_multivalue"
+  "name": "customsecurityattribute_remove_from_user_multivalue"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/users/{id}
@@ -437,7 +440,5 @@ HTTP/1.1 204 No Content
 
 ## Next steps
 
-- [Overview of custom security attributes using the Microsoft Graph API](/graph/api/resources/custom-security-attributes-overview)
+- [Overview of custom security attributes using the Microsoft Graph API (Preview)](/graph/api/resources/custom-security-attributes-overview)
 - [What are custom security attributes in Azure AD?](/azure/active-directory/fundamentals/custom-security-attributes-overview)
-- [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true)
-- [Update servicePrincipal](/graph/api/serviceprincipal-update?view=graph-rest-beta&preserve-view=true)

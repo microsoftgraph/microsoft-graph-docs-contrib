@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/applications/{id}/extensionProperties"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphExtensionProperty *extensionProperty = [[MSGraphExtensionProperty alloc] init];
-[extensionProperty setName:@"extensionName"];
-[extensionProperty setDataType:@"string"];
+[extensionProperty setName:@"jobGroup"];
+[extensionProperty setDataType:@"String"];
 NSMutableArray *targetObjectsList = [[NSMutableArray alloc] init];
-[targetObjectsList addObject: @"Application"];
+[targetObjectsList addObject: @"User"];
 [extensionProperty setTargetObjects:targetObjectsList];
 
 NSError *error;

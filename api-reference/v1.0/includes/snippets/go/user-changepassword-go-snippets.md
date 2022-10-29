@@ -7,15 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewChangePasswordPostRequestBody()
 currentPassword := "xWwvJ]6NMw+bWH-d"
-requestBody.SetCurrentPassword(&currentPassword)
+requestBody.SetCurrentPassword(&currentPassword) 
 newPassword := "0eM85N54wFxWwvJ]"
-requestBody.SetNewPassword(&newPassword)
-options := &msgraphsdk.ChangePasswordRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Me().ChangePassword().Post(options)
+requestBody.SetNewPassword(&newPassword) 
+
+graphClient.Me().ChangePassword().Post(context.Background(), requestBody, nil)
 
 
 ```

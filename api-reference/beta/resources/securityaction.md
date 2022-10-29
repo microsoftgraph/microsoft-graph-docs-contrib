@@ -1,6 +1,6 @@
 ---
 title: "securityAction resource type"
-description: "Take immediate action to defend against threats using the Microsoft Graph Security securityAction entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with Windows Defender ATP (coming soon) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations."
+description: "Take immediate action to defend against threats using the Microsoft Graph Security securityAction entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with Windows Defender for Endpoint (coming soon) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Take immediate action to defend against threats using the Microsoft Graph Security securityAction entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with [Windows Defender ATP](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations.
+Take immediate action to defend against threats using the Microsoft Graph Security securityAction entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with [Windows Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations.
 
   > **Note:** Currently security actions only support application permissions.
 

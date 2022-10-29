@@ -6,10 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
+String targetServicePlanId = "30d0e128-de93-41dc-89ec-33d84bb662a0";
+
 graphClient.deviceManagement().managedDevices("{managedDeviceId}")
 	.resizeCloudPc(ManagedDeviceResizeCloudPcParameterSet
 		.newBuilder()
-		.withTargetServicePlanId(null)
+		.withTargetServicePlanId(targetServicePlanId)
 		.build())
 	.buildRequest()
 	.post();

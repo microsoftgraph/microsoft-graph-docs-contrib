@@ -1,12 +1,12 @@
 ---
-title: "Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles"
-description: "Learn how to use the Privileged Identity Management (PIM) API in Microsoft Graph to assign Azure AD privileged roles."
+title: "Assign Azure AD roles through Privileged Identity Management (PIM) APIs in Microsoft Graph"
+description: "Learn how to create a role-assignable security group for IT Helpdesk and use the PIM API to assign the security group eligibility to the User Administrator role."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 
-# Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles
+# Assign Azure AD roles through Privileged Identity Management (PIM) APIs in Microsoft Graph
 
 Microsoft Graph PIM API enables organizations to manage privileged access to resources in Azure Active Directory (Azure AD). It also helps to manage the risks of privileged access by limiting when access is active, managing the scope of access, and providing an auditable log of privileged access.
 
@@ -27,27 +27,10 @@ Assigning eligibility instead of a persistently active User Administrator privil
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a Global Administrator role.
-  + [Optional] Start a new incognito or InPrivate browser session, or start a session in an anonymous browser. You'll sign in later in this tutorial.
-+ The following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, and `RoleManagement.ReadWrite.Directory`.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
+  + [Optional] Start a new session in another browser. You'll sign in later in this tutorial.
++ Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, and `RoleManagement.ReadWrite.Directory`.
 + Authenticator app installed on your phone to register a user for multifactor authentication (MFA).
-
-To consent to the required permissions in Graph Explorer:
-1. Select the horizontal ellipses icon to the right of the user account details, and then choose **Select permissions**.
-  
-      :::image type="content" source="/graph/images/GE-Permissions/selectpermissions.png" alt-text="Select Microsoft Graph permissions." border="true":::
-
-2. Scroll through the list of permissions to these permissions:
-    + Group (2), expand and then select **Group.ReadWrite.All**.
-    + Directory (4), expand and then select **Directory.Read.All**.
-    + RoleAssignmentSchedule (2), expand and then select **RoleAssignmentSchedule.ReadWrite.Directory**.
-    + RoleEligibilitySchedule (2), expand and then select **RoleEligibilitySchedule.ReadWrite.Directory**.
-    + RoleManagement (3), expand and then select **RoleManagement.ReadWrite.Directory**.
-    + User (8), expand and then select **User.ReadWrite.All**.
-   
-   Select **Consent**, and then select **Accept** to accept the consent of the permissions. For the `RoleEligibilitySchedule.ReadWrite.Directory` and `RoleAssignmentSchedule.ReadWrite.All` permissions, consent on behalf of your organization.
-
-      :::image type="content" source="/graph/images/GE-Permissions/User.ReadWrite.All-consent.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
 
 ## Step 1: Create a test user
 
@@ -102,7 +85,7 @@ Create a group that’s assignable to an Azure AD role. Assign yourself as the g
 
 ### Request: Create a role-assignable group
 
-Replace `1ed8ac56-4827-4733-8f80-86adc2e67db5` with your **id**.
+Replace `1ed8ac56-4827-4733-8f80-86adc2e67db5` with your ID and `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's ID.
 
 <!-- {
   "blockType": "request",
@@ -121,6 +104,10 @@ Content-type: application/json
     "isAssignableToRole": true,
     "owners@odata.bind": [
         "https://graph.microsoft.com/v1.0/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"
+    ],
+    "members@odata.bind": [
+        "https://graph.microsoft.com/v1.0/users/1ed8ac56-4827-4733-8f80-86adc2e67db5",
+        "https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2"
     ]
 }
 ```
@@ -153,40 +140,6 @@ Content-type: application/json
 }
 ```
 
-### Request
-
-Assign yourself and Aline as the two members to the security group. In the following request, replace:
-+ `e77cbb23-0ff2-4e18-819c-690f58269752` in the URL with the value of the group's **id**.
-+ `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
-+ `1ed8ac56-4827-4733-8f80-86adc2e67db5` with the value of your **id**.
-
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-assignaadroles-addGroupMembers"
-}-->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/groups/e77cbb23-0ff2-4e18-819c-690f58269752
-Content-type: application/json
-
-{
-    "members@odata.bind": [
-        "https://graph.microsoft.com/v1.0/users/1ed8ac56-4827-4733-8f80-86adc2e67db5",
-        "https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2"
-    ]
-}
-```
-
-### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
-} -->
-```
-HTTP/1.1 204 No Content
-```
-
 ## Step 3: Create a unifiedRoleEligibilityScheduleRequest
 
 Now that you have a security group, assign it as eligible for the User Administrator role. In this step:
@@ -203,7 +156,7 @@ Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the value of the **id** of t
   "name": "tutorial-assignaadroles-unifiedRoleEligibilityScheduleRequest_create"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests
 Content-type: application/json
 
 {
@@ -234,7 +187,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
     "id": "64a8bd54-4591-4f6a-9c77-3e9cb1fdd29b",
     "status": "Provisioned",
     "createdDateTime": "2021-09-03T20:45:28.3848182Z",
@@ -276,7 +229,7 @@ In the following request, replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with th
   "name": "tutorial-assignaadroles-roleAssignments_list"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$filter=principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'
 ```
 
 ### Response
@@ -291,7 +244,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleAssignments",
     "value": []
 }
 ```
@@ -304,7 +257,7 @@ An incident ticket CONTOSO: Security-012345 has been raised in Contoso's inciden
 
 First, start the Authenticator app on your phone and open Aline Dupuy's account.
 
-Sign in to Graph Explorer as Aline. You may use an incognito session or an anonymous browser for this step. By doing so, you won't interrupt your current session as a user in the Global Administrator role. Alternatively, you can interrupt your current session by signing out of Graph Explorer and signing back in as Aline.
+Sign in to Graph Explorer as Aline. You may use the another browser for this step. By doing so, you won't interrupt your current session as a user in the Global Administrator role. Alternatively, you can interrupt your current session by signing out of Graph Explorer and signing back in as Aline.
 
 Signed in as Aline, you'll first change your password because this was specified during account creation. Then, because the administrator configured your account for MFA, you'll be prompted to set up your account in the Authenticator app and be challenged for MFA sign-in. This is because PIM requires that MFA for all active role assignments.
 
@@ -323,7 +276,7 @@ To activate a role, call the `roleAssignmentScheduleRequests` endpoint. In this 
   "name": "tutorial-assignaadroles-roleAssignmentScheduleRequests_selfActivate"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests
 Content-type: application/json
 
 {
@@ -359,7 +312,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
     "id": "295edd40-4646-40ca-89b8-ab0b46b6f60e",
     "status": "Granted",
     "createdDateTime": "2021-09-03T21:10:49.6670479Z",
@@ -391,7 +344,7 @@ Content-type: application/json
 }
 ```
 
-You may confirm your assignment by running `GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')`. The response object returns your newly activated role assignment with its status set to `Granted`. With your new privilege, carry out any allowed actions within five hours your assignment is active for. This includes invalidating all employees' refresh tokens. After five hours, the active assignment expires but through your membership in the **IT Support (Users)** group, you still remain eligible for the User Administrator role.
+You may confirm your assignment by running `GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')`. The response object returns your newly activated role assignment with its status set to `Granted`. With your new privilege, carry out any allowed actions within five hours your assignment is active for. This includes invalidating all employees' refresh tokens. After five hours, the active assignment expires but through your membership in the **IT Support (Users)** group, you still remain eligible for the User Administrator role.
 
 Back in the global administrator session, you have received notifications of both the eligible assignment and the role activation. This allows the global administrator to be aware of all elevations to administrator privileges across your organization.
 
@@ -410,7 +363,7 @@ Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Us
   "name": "tutorial-assignaadroles-roleEligibilityScheduleRequests_revoke"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests
 Content-type: application/json
 
 {
@@ -434,7 +387,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
     "id": "dcd11a1c-300f-4d17-8c7a-523830400ec8",
     "status": "Revoked",
     "action": "AdminRemove",
@@ -455,7 +408,7 @@ Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Us
   "name": "tutorial-assignaadroles-group_delete"
 }-->
 ```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/groups/e77cbb23-0ff2-4e18-819c-690f58269752
+DELETE https://graph.microsoft.com/v1.0/groups/e77cbb23-0ff2-4e18-819c-690f58269752
 ```
 
 #### Response
@@ -479,7 +432,7 @@ Replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
   "name": "tutorial-assignaadroles-user_delete"
 }-->
 ```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2
+DELETE https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2
 ```
 
 #### Response
@@ -494,7 +447,5 @@ HTTP/1.1 204 No Content
 
 ## See also
 
-+ [Start using Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started)
-+ [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#all-roles)
-+ [Enable per-user Azure AD multifactor authentication to secure sign-in events](/azure/active-directory/authentication/howto-mfa-userstates)
-+ [unifiedRoleEligibilityScheduleRequest resource type](/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-beta&preserve-view=true)
++ [Tutorial: Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-pim)
++ [Overview of role management through PIM](/graph/api/resources/privilegedidentitymanagementv3-overview)

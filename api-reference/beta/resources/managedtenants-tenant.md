@@ -1,9 +1,9 @@
 ---
 title: "tenant resource type"
 description: "Represents a tenant associated with the managing entity."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

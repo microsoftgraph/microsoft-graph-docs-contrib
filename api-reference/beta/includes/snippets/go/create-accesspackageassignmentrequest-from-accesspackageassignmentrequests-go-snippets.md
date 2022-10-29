@@ -7,18 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewAccessPackageAssignmentRequest()
+requestBody := graphmodels.NewAccessPackageAssignmentRequest()
 requestType := "AdminRemove"
-requestBody.SetRequestType(&requestType)
-accessPackageAssignment := msgraphsdk.NewAccessPackageAssignment()
+requestBody.SetRequestType(&requestType) 
+accessPackageAssignment := graphmodels.NewaccessPackageAssignment()
+id := "a6bb6942-3ae1-4259-9908-0133aaee9377"
+accessPackageAssignment.SetId(&id) 
 requestBody.SetAccessPackageAssignment(accessPackageAssignment)
-accessPackageAssignment.SetAdditionalData(map[string]interface{}{
-	"id": "a6bb6942-3ae1-4259-9908-0133aaee9377",
-}
-options := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(options)
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(requestBody)
 
 
 ```

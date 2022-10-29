@@ -1,9 +1,9 @@
 ---
 title: "managedTenantOperationError resource type"
 description: "An abstract type that represents an error for a managed tenant operation."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

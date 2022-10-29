@@ -1,13 +1,13 @@
 ---
-title: "Set up notifications for changes in user data"
-description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes."
-author: "davidmu1"
+title: "Set up notifications for changes in resource data"
+description: "Microsoft Graph APIs use a webhook mechanism to deliver change notifications to clients. Client apps use change notifications to update their state upon changes."
+author: "jumasure"
 ms.prod: "non-product-specific"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 
-# Set up notifications for changes in user data
+# Set up notifications for changes in resource data
 
 The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
 
@@ -17,7 +17,7 @@ After Microsoft Graph accepts the subscription request, it pushes change notific
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
  
 > [!div class="nextstepaction"]
-> [Tutorial: Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
+> [Learn: Use Change Notifications and Track Changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
@@ -43,39 +43,33 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [chat][]
 - Teams [chatMessage][]
 - Teams [conversationMember][]
-- Teams [presence][] (preview)
+- Teams [presence][]
+- Teams [onlineMeeting][]
 - Teams [team][]
-- [todoTask][] (preview)
+- [To Do task][]
 - [user][]
 
-You can create a subscription to a specific Outlook folder such as the Inbox:
-`me/mailFolders('inbox')/messages`
+### Sample scenarios
 
-Or to a top-level resource:
-`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`
+You can create a subscription for the following scenarios:
 
-Or to a specific resource instance:
-`users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`
 
-Or to any folder in a user's personal OneDrive:
-`/drives/{id}/root`
-`/drives/{id}/root/subfolder`
-
-Or to the root folder of a SharePoint/OneDrive for Business drive:
-`/drive/root`
-
-Or to a new [Security API](security-concept-overview.md) alert:
-`/security/alerts?$filter=status eq 'newAlert'`,
-`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
-
-Or to the tasks in a user's To Do list:
-`/me/todo/lists/{todoTaskListId}/tasks`
+|Scenario  |Query  |
+|---------|---------|
+|To a specific Outlook folder such as the Inbox     |   `me/mailFolders('inbox')/messages`      |
+|To a top-level resource     | `/me/messages` <br/> `/me/contacts` <br/> `/me/events` <br/> `/users` <br/> `/groups` <br/> `/communications/callRecords`        |
+|To a specific resource instance     |  `/users/{id}` <br/> `/groups/{id}` <br/> `/groups/{id}/conversations` <br/> `/sites/{site-id}/lists/{list-id}` <br/> `/communications/presences/{id}` <br/> `/communications/onlinemeetings/{meeting-id}`       |
+|To any folder in a user's personal OneDrive     |  `/drives/{id}/root` <br/> `/drives/{id}/root/subfolder`      |
+|To the root folder of a SharePoint/OneDrive for Business drive     |   `/drive/root`      |
+| Or to a new [Security API](security-concept-overview.md) alert |`/security/alerts?$filter=status eq 'newAlert'` <br/> `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`|
+|To the tasks in a user's To Do list|`/me/todo/lists/{todoTaskListId}/tasks`|
 
 ### Azure AD resource limitations
 
 Certain limits apply to Azure AD based resources (users, groups) and will generate errors when exceeded:
 
-> **Note**: These limits do not apply to resources from services other than Azure AD. For example, an app can create many more subscriptions to `message` or `event` resources, which are supported by the Exchange Online service as part of Microsoft Graph.
+> [!NOTE]
+> These limits do not apply to resources from services other than Azure AD. For example, an app can create many more subscriptions to `message` or `event` resources, which are supported by the Exchange Online service as part of Microsoft Graph.
 
 - Maximum subscription quotas:
 
@@ -93,14 +87,6 @@ When any limit is exceeded, attempts to create a subscription will result in an 
 
 ### Outlook resource limitations
 
-When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using GUID user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
-
-`/users/sh.o'neal@contoso.com/messages`
-
-Use:
-
-`/users/{guid-user-id}/messages`
-
 A maximum of 1000 active subscriptions per mailbox for all applications is allowed.
 
 ### Teams resource limitations
@@ -112,6 +98,22 @@ Each Teams resource has different subscription quotas.
 
 - For subscriptions to **chatMessages** (channels or chats):
   - Per app and channel or chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
+- For subscriptions to **channels**:
+  - Per app and team combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
+- For subscriptions to **chats**:
+  - Per app and chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
+- For subscriptions to **teams**:
+  - Per app and team combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+  
+- For subscriptions to **conversationMembers**:
+  - Per app and team combination: 1 subscription
   - Per organization: 10,000 total subscriptions
 
 ## Subscription lifetime
@@ -163,7 +165,8 @@ Although `clientState` is not required, you must include it to comply with our r
 
 If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription) object in the body.
 
-> **Note:** Any query string parameter included in the **notificationUrl** property will be included in the HTTP POST request when notifications are being delivered.
+> [!NOTE]
+> Any query string parameter included in the **notificationUrl** property will be included in the HTTP POST request when notifications are being delivered.
 
 #### Notification endpoint validation
 
@@ -190,7 +193,8 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
     The client should discard the validation token after providing it in the response.
 
-    > **Important:** If the client returns an encoded validation token, the validation will fail.
+    > [!IMPORTANT]
+    > If the client returns an encoded validation token, the validation fails.
 
 Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.  
 
@@ -227,7 +231,8 @@ If successful, Microsoft Graph returns a `204 No Content` code.
 
 With a client subscribing to changes to a resource, Microsoft Graph sends a `POST` request to the notification URL whenever the resource changes. It sends notifications only for changes of the type that's specified in the subscription, for example, `created`.
 
-> **Note:** If a client has multiple subscriptions that monitor the same resource and use the same notification URL, Microsoft Graph can send multiple change notifications that correspond to different subscriptions, each showing the corresponding subscription ID. There is no guarantee that all change notifications in the `POST` request belong to a single subscription.
+> [!NOTE]
+> If a client has multiple subscriptions that monitor the same resource and use the same notification URL, Microsoft Graph can send multiple change notifications that correspond to different subscriptions, each showing the corresponding subscription ID. There is no guarantee that all change notifications in the `POST` request belong to a single subscription.
 
 ### Change notification example
 
@@ -267,11 +272,12 @@ Your process should process every change notification it receives. The following
 
     If your processing is expected to take more than 3 seconds, you should persist the notification, return a `202 - Accepted` status code in your response to Microsoft Graph, then process the notifications. If the notification is not persisted, return a 5xx class code to indicate an error so the notification will be retried.
 
-    If your processing is expected to take less than 3 seconds, you should process the notifications and return a `200 - Accepted` status code in your response to Microsoft Graph. If the notification is not processes correctly, return a 5xx class code to indicate an error so the notification will be retried.
+    If your processing is expected to take less than 3 seconds, you should process the notifications and return a `200 - OK` status code in your response to Microsoft Graph. If the notification is not processes correctly, return a 5xx class code to indicate an error so the notification will be retried.
 
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
-    > **Note:** If this isn't true, you should not consider this a valid change notification. It is possible that the change notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
+    > [!NOTE]
+    > If this isn't true, you should not consider this a valid change notification. It is possible that the change notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
 
 1. Update your application based on your business logic.
 
@@ -304,7 +310,8 @@ The following code samples are available on GitHub.
 
 You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
-> **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
+> [!NOTE]
+> The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
 ## Latency
 
@@ -325,23 +332,25 @@ The following table lists the latency to expect between an event happening in th
 |[group][] | Less than 2 minutes | 15 minutes |
 |[list][] | Less than 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
-|[presence][] (preview) | Less than 10 seconds | 1 minute |
+|[onlineMeeting][] | Less than 10 seconds | 1 minute |
+|[presence][] | Less than 10 seconds | 1 minute |
 |[printer][] | Less than 1 minute | 5 minutes |
 |[printTaskDefinition][] | Less than 1 minute | 5 minutes |
 |[team][] | Less than 10 seconds | 60 minutes |
 |[todoTask][] | Less than 2 minutes | 15 minutes |
 |[user][] | Less than 2 minutes | 15 minutes |
 
->**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
+> [!NOTE]
+> The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 
 ## See also
 
-- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true)
-- [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0&preserve-view=true)
-- [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true)
-- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true) resource type
-- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true) resource type
-- [Change notifications and change tracking tutorial](/learn/modules/msgraph-changenotifications-trackchanges)
+- [Subscription resource type](/graph/api/resources/subscription)
+- [Get subscription](/graph/api/subscription-get)
+- [Create subscription](/graph/api/subscription-post-subscriptions)
+- [changeNotification](/graph/api/resources/changenotification) resource type
+- [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
+- [Change notifications and change tracking tutorial](/training/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications](./webhooks-lifecycle.md)
 
 [contact]: /graph/api/resources/contact
@@ -358,8 +367,9 @@ The following table lists the latency to expect between an event happening in th
 [list]: /graph/api/resources/list
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
-[todoTask]: /graph/api/resources/todotask
+[To Do task]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team
+[onlineMeeting]: /graph/api/resources/onlinemeeting

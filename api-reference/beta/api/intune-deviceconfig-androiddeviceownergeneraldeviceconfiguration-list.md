@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9759
+Content-Length: 11343
 
 {
   "value": [
@@ -132,6 +132,29 @@ Content-Length: 9759
       "enrollmentProfile": "dedicatedDevice",
       "dataRoamingBlocked": true,
       "dateTimeConfigurationBlocked": true,
+      "detailedHelpText": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+        "localizedMessages": [
+          {
+            "@odata.type": "microsoft.graph.keyValuePair",
+            "name": "Name value",
+            "value": "Value value"
+          }
+        ],
+        "defaultMessage": "Default Message value"
+      },
+      "deviceOwnerLockScreenMessage": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+        "localizedMessages": [
+          {
+            "@odata.type": "microsoft.graph.keyValuePair",
+            "name": "Name value",
+            "value": "Value value"
+          }
+        ],
+        "defaultMessage": "Default Message value"
+      },
+      "securityCommonCriteriaModeEnabled": true,
       "factoryResetDeviceAdministratorEmails": [
         "Factory Reset Device Administrator Emails value"
       ],
@@ -217,6 +240,7 @@ Content-Length: 9759
       "kioskModeManagedHomeScreenSignInBackground": "Kiosk Mode Managed Home Screen Sign In Background value",
       "kioskModeManagedHomeScreenSignInBrandingLogo": "Kiosk Mode Managed Home Screen Sign In Branding Logo value",
       "kioskModeManagedHomeScreenSignInEnabled": true,
+      "kioskModeUseManagedHomeScreenApp": "singleAppMode",
       "microphoneForceMute": true,
       "networkEscapeHatchAllowed": true,
       "nfcBlockOutgoingBeam": true,
@@ -235,11 +259,23 @@ Content-Length: 9759
       "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
       "passwordPreviousPasswordCountToBlock": 4,
       "passwordRequiredType": "required",
+      "passwordRequireUnlock": "daily",
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "playStoreMode": "allowList",
       "screenCaptureBlocked": true,
       "securityDeveloperSettingsEnabled": true,
       "securityRequireVerifyApps": true,
+      "shortHelpText": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+        "localizedMessages": [
+          {
+            "@odata.type": "microsoft.graph.keyValuePair",
+            "name": "Name value",
+            "value": "Value value"
+          }
+        ],
+        "defaultMessage": "Default Message value"
+      },
       "statusBarBlocked": true,
       "stayOnModes": [
         "ac"
@@ -247,6 +283,15 @@ Content-Length: 9759
       "storageAllowUsb": true,
       "storageBlockExternalMedia": true,
       "storageBlockUsbFileTransfer": true,
+      "systemUpdateFreezePeriods": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+          "startMonth": 10,
+          "startDay": 8,
+          "endMonth": 8,
+          "endDay": 6
+        }
+      ],
       "systemUpdateWindowStartMinutesAfterMidnight": 11,
       "systemUpdateWindowEndMinutesAfterMidnight": 9,
       "systemUpdateInstallType": "postpone",
@@ -281,11 +326,13 @@ Content-Length: 9759
       "workProfilePasswordMinimumSymbolCharacters": 10,
       "workProfilePasswordPreviousPasswordCountToBlock": 15,
       "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-      "workProfilePasswordRequiredType": "required"
+      "workProfilePasswordRequiredType": "required",
+      "workProfilePasswordRequireUnlock": "daily"
     }
   ]
 }
 ```
+
 
 
 

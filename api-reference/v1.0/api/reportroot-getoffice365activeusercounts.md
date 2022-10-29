@@ -82,7 +82,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365activeusercounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActiveUserCounts(period='D7')
 ```
 

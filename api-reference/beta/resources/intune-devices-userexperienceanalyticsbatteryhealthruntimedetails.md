@@ -31,6 +31,7 @@ The user experience analytics battery health runtime entity contains count of de
 |batteryRuntimeGood|Int32|Number of devices  whose active runtime is greater than 5 hours. Valid values -2147483648 to 2147483647|
 |batteryRuntimeFair|Int32|Number of devices whose active runtime is greater than 3 hours but lesser than 5 hours. Valid values -2147483648 to 2147483647|
 |batteryRuntimePoor|Int32|Number of devices whose active runtime is lesser than 3 hours. Valid values -2147483648 to 2147483647|
+|lastRefreshedDateTime|DateTimeOffset|Recorded date time of this runtime details instance.|
 
 ## Relationships
 None
@@ -50,9 +51,11 @@ Here is a JSON representation of the resource.
   "activeDevices": 1024,
   "batteryRuntimeGood": 1024,
   "batteryRuntimeFair": 1024,
-  "batteryRuntimePoor": 1024
+  "batteryRuntimePoor": 1024,
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

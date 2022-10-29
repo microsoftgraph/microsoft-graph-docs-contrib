@@ -1,6 +1,6 @@
 ---
 title: "Configure required Azure AD Graph permissions for an app registration"
-description: "Configure required Azure AD Graph permissions for an app registration."
+description: "Before Azure AD Graph is retired, you can use these options to configure required permissions for your app registration."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -8,12 +8,17 @@ ms.prod: "applications"
 
 # Configure required Azure AD Graph permissions for an app registration
 
-Azure Active Directory (Azure AD) Graph is deprecated and will be retired on June 30, 2022. As part of this deprecation path, adding Azure AD Graph permissions to an app registration through the Azure portal is now disabled. We recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you transition your apps to [Microsoft Graph](/graph/overview) API.
+Azure Active Directory (Azure AD) Graph is deprecated and will be retired in the near future. As part of this deprecation path, adding Azure AD Graph permissions to an app registration through the Azure portal is now disabled. We recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you transition your apps to [Microsoft Graph](/graph/overview) API.
 
-However, your app might still temporarily require Azure AD Graph permissions to access resources. This article provides you with guidance to configure required permissions for Azure AD Graph for your app registration.
+However, your app might still temporarily require Azure AD Graph permissions to access resources. This article describes the following four methods for configuring required Azure AD Graph permissions for your app registration:
+
+1. [Use the Azure portal to find the APIs your organization uses](#option-1-use-the-azure-portal-to-find-the-apis-your-organization-uses)
+1. [Update the application manifest on the Azure portal](#option-2-update-the-application-manifest-on-the-azure-portal)
+1. [Use the Microsoft Graph API](#option-3-use-the-microsoft-graph-api)
+1. [Use the Microsoft Graph PowerShell SDK](#option-4-use-the-microsoft-graph-powershell-sdk)
 
 > [!CAUTION]
-> Any app using Azure AD Graph will still stop functioning after June 30, 2022. For more information, see [Migrate Azure AD Graph apps to Microsoft Graph](migrate-azure-ad-graph-overview.md).
+> Any app using Azure AD Graph will still stop functioning after the Azure AD Graph API retirement. For more information, see [Migrate Azure AD Graph apps to Microsoft Graph](migrate-azure-ad-graph-overview.md).
 
 ## Option 1: Use the Azure portal to find the APIs your organization uses
 
@@ -107,7 +112,6 @@ In the response object, details for Azure AD Graph application permissions are l
   "@odata.type": "microsoft.graph.servicePrincipal"
 } -->
 
-```http
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -216,7 +220,7 @@ HTTP/1.1 204 No Content
 
 ### Step 3: Verify that the required Azure AD Graph permissions were added to your app
 
-Verify that your app registration has the required API permissions you added in Step 2 by using the Microsoft Graph API or by checking the **App registrations** page in the Azure portal.
+Verify that your app registration has the required Azure AD Graph API permissions you added in Step 2 by using the Microsoft Graph API or by checking the **App registrations** page in the Azure portal.
 
 #### Use the Microsoft Graph GET /application/{id} API
 
@@ -228,9 +232,9 @@ GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7
 
 >**Note:** Though you've configured the permissions the app requires, these permissions haven't been granted. Many permissions require admin consent before they can be used to access organizational data.
 
-## Option 4: Use Microsoft Graph PowerShell
+## Option 4: Use the Microsoft Graph PowerShell SDK
 
-The [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell includes a **RequiredResourceAccess** parameter that is a collection of **IMicrosoftGraphRequiredResourceAccess** objects. Use this parameter to configure the required Azure AD Graph permissions as described in the following steps.
+The [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell SDK includes a **RequiredResourceAccess** parameter that is a collection of **IMicrosoftGraphRequiredResourceAccess** objects. Use this parameter to configure the required Azure AD Graph permissions as described in the following steps.
 
 ### Prerequisites
 
@@ -250,20 +254,7 @@ Azure AD Graph is identified as a ServicePrincipal object with `00000002-0000-00
 
 Create a new PowerShell script named **fetchPermissions.ps1** and add the following code. This code retrieves Azure AD Graph permission IDs and types. The output displays and formats the output of the **AppRoles** and **Oauth2PermissionScopes** objects.
 
-```powershell
-# Sign in with the required Application.ReadWrite.All scope
-Connect-Graph -Scopes "Application.ReadWrite.All"
-
-# Retrieve the service principal details for Azure AD Graph API.
-$AADGraph = Get-MgServicePrincipal -Filter "appId eq '00000002-0000-0000-c000-000000000000'"
-
-# Format output of the request above and display AppRoles (application permissions) and oauth2PermissionScopes (delegated permissions)
-Echo "Azure AD Graph service principal object and its supported permissions:"
-Echo "Application permissions:"
-$AADGraph.AppRoles | Format-List
-Echo "Delegated permissions:"
-$AADGraph.Oauth2PermissionScopes | Format-List
-```
+[!INCLUDE [fetchPermissions](includes/azure-ad-graph-migration-scripts/fetchpermissions.md)]
 
 Run the script using the following command
 ```powershell
@@ -274,35 +265,7 @@ Run the script using the following command
 
 The following is an example of the output.
 
-```powershell
-Welcome To Microsoft Graph!
-Azure AD Graph service principal object and its supported permissions:
-Application permissions:
-
-
-AllowedMemberTypes   : {Application}
-Description          : Allows the app to read applications and service principals without a signed-in user
-DisplayName          : Read all applications
-Id                   : 3afa6a7d-9b1a-42eb-948e-1650a849e176
-IsEnabled            : True
-Origin               : Application
-Value                : Application.Read.All
-AdditionalProperties : {}
-
-Delegated permissions:
-
-
-AdminConsentDescription : Allows users to sign in to the app, and allows the app to read the profile of signed-in users. It also allow the app to read basic company information of signed-in users.
-AdminConsentDisplayName : Sign in and read user profile
-Id                      : 311a71cc-e848-46a1-bdf8-97ff7156d8e6
-IsEnabled               : True
-Origin                  :
-Type                    : User
-UserConsentDescription  : Allows you to sign in to the app with your work account and let the app read your profile. It also allows the app to read basic company information.
-UserConsentDisplayName  : Sign you in and read your profile
-Value                   : User.Read
-AdditionalProperties    : {}
-```
+[!INCLUDE [fetchPermissions-Response](includes/azure-ad-graph-migration-scripts/fetchpermissions-response.md)]
 
 From this output, `311a71cc-e848-46a1-bdf8-97ff7156d8e6` is the permission ID of the *User.Read* delegated permission while `3afa6a7d-9b1a-42eb-948e-1650a849e176` is the permission ID of the *Application.Read.All* application permission.
 
@@ -315,40 +278,12 @@ Create a new PowerShell script named **updatePermissions.ps1** and add the follo
 
 #### Request
 
-```powershell
-# Sign in with the required Application.ReadWrite.All scope
-Connect-Graph -Scopes "Application.ReadWrite.All" 
+# [Azure AD Graph permissions only](#tab/powershell)
+[!INCLUDE [addAzureADPermissions](includes/azure-ad-graph-migration-scripts/azureadgraphpermissions.md)]
+# [Azure AD and Microsoft Graph permissions](#tab/powershell-1)
+[!INCLUDE [addAzureAD+MicrosoftGraphPermissions](includes/azure-ad-graph-migration-scripts/azureadgraph-microsoftgraph-permissions.md)]
 
-## Replace 581088ba-83c5-4975-b8af-11d2d7a76e98 with the object ID of the app you wish to add new permissions to
-$applicationId = '581088ba-83c5-4975-b8af-11d2d7a76e98' 
-
-$app = Get-MgApplication -ApplicationId $applicationId
-
-## Azure AD Graph's globally unique appId is 00000002-0000-0000-c000-000000000000 identified by the ResourceAppId
-$aadAccess = $app.RequiredResourceAccess | Where-Object { $_.ResourceAppId -eq '00000002-0000-0000-c000-000000000000' } 
-
-if($null -eq $aadAccess){ 
-    $app.RequiredResourceAccess += @{  
-        ResourceAppId = "00000002-0000-0000-c000-000000000000"; 
-        ResourceAccess = @( 
-
-                ## Replace the following with values of ID and type for all permissions - both new and existing permissions - you want to configure for the app
-                @{ 
-                    # User.Read delegated permission Sign in and read user profile 
-                    id = "311a71cc-e848-46a1-bdf8-97ff7156d8e6";  
-                    type = "Scope"; 
-                }, 
-                @{ 
-                    # Application.Read.All app role (application permission) to view application data
-                    id = "3afa6a7d-9b1a-42eb-948e-1650a849e176"; 
-                    type = "Role"; 
-                }
-            ) 
-     } 
-} 
-
-Update-MgApplication -ApplicationId $applicationId -RequiredResourceAccess $app.RequiredResourceAccess 
-```
+---
 
 Run the script using the following command.
 ```powershell

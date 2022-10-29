@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 headers := map[string]string{
-	"Prefer": "odata.maxpagesize=2"
+	"Prefer": "odata.maxpagesize=2",
 }
-options := &msgraphsdk.ContactFolderRequestBuilderGetOptions{
-	H: headers,
+configuration := &graphconfig.DeltaRequestBuilderGetRequestConfiguration{
+	Headers: headers,
 }
-contactFolderId := "contactFolder-id"
-result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Get(options)
+
+result, err := graphClient.Me().ContactFolders().Delta().Get(context.Background(), configuration)
 
 
 ```

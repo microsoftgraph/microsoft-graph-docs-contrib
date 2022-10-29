@@ -24,7 +24,7 @@ The **plannerUser** resource provide access to Planner resources for a [user](us
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. Identifier of the planenrUser|
+|id|String| Read-only. Identifier of the plannerUser|
 
 ## Relationships
 | Relationship | Type	|Description|

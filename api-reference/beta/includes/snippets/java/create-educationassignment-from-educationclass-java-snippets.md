@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 EducationAssignment educationAssignment = new EducationAssignment();
-educationAssignment.dueDateTime = OffsetDateTimeSerializer.deserialize("2021-09-07T00:00:00Z");
-educationAssignment.displayName = "Reading test 09.03 #4";
+educationAssignment.dueDateTime = OffsetDateTimeSerializer.deserialize("2022-09-16T00:00:00Z");
+educationAssignment.displayName = "Reading test 09.14 Beta";
 EducationItemBody instructions = new EducationItemBody();
 instructions.contentType = BodyType.TEXT;
 instructions.content = "Read chapter 4";

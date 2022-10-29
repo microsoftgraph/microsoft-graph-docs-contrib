@@ -15,38 +15,40 @@ Represents details of a system event message.
 
 System messages are messages generated for events such as [members](../resources/conversationMember.md) added to a [channel](../resources/channel.md), **members** added to a [chat](../resources/chat.md), and [team](../resources/team.md) description updated.
 
-List of events supported
+### Supported events
 
 | Event | Description |
 | :---- | :---------- |
-| [callEndedEventMessageDetail](../resources/callStartedEventMessageDetail.md) | A call has ended. |
-| [callRecordingEventMessageDetail](../resources/callRecordingEventMessageDetail.md) | Call recording is available. |
-| [callStartedEventMessageDetail](../resources/callStartedEventMessageDetail.md) | A call has started. |
-| [callTranscriptEventMessageDetail](../resources/callTranscriptEventMessageDetail.md) | Call transcript is available. |
-| [channelAddedEventMessageDetail](../resources/channelAddedEventMessageDetail.md) | A **channel** has been added. |
-| [channelDeletedEventMessageDetail](../resources/channelDeletedEventMessageDetail.md) | A **channel** has been deleted. |
-| [channelDescriptionUpdatedEventMessageDetail](../resources/channelDescriptionUpdatedEventMessageDetail.md) | **Channel's** description has been updated. |
-| [channelRenamedEventMessageDetail](../resources/channelRenamedEventMessageDetail.md) | A **channel** has been renamed. |
-| [channelSetAsFavoriteByDefaultEventMessageDetail](../resources/channelSetAsFavoriteByDefaultEventMessageDetail.md) | A **channel** has been set as favorite by default. |
-| [channelUnsetAsFavoriteByDefaultEventMessageDetail](../resources/channelUnsetAsFavoriteByDefaultEventMessageDetail.md) | A **channel** has been unset as favorite by default. |
-| [chatRenamedEventMessageDetail](../resources/chatRenamedEventMessageDetail.md) | A chat has been renamed. |
-| [conversationMemberRoleUpdatedEventMessageDetail](../resources/conversationMemberRoleUpdatedEventMessageDetail.md) | Role has been updated for a **member**. |
-| [meetingPolicyUpdatedEventMessageDetail](../resources/meetingPolicyUpdatedEventMessageDetail.md) | Meeting policy has been updated. |
-| [membersAddedEventMessageDetail](../resources/membersAddedEventMessageDetail.md) | **Members** have been added. |
-| [membersDeletedEventMessageDetail](../resources/membersDeletedEventMessageDetail.md) | **Members** have been removed. |
-| [membersJoinedEventMessageDetail](../resources/membersJoinedEventMessageDetail.md) | **Members** have joined. |
-| [membersLeftEventMessageDetail](../resources/membersLeftEventMessageDetail.md) | **Members** have left. |
-| [tabUpdatedEventMessageDetail](../resources/tabUpdatedEventMessageDetail.md) | A tab has been updated. |
-| [teamArchivedEventMessageDetail](../resources/teamArchivedEventMessageDetail.md) | A **team** has been archived. |
-| [teamCreatedEventMessageDetail](../resources/teamCreatedEventMessageDetail.md) | A **team** has been created. |
-| [teamDescriptionUpdatedEventMessageDetail](../resources/teamDescriptionUpdatedEventMessageDetail.md) | **Team's** description has been updated. |
-| [teamJoiningDisabledEventMessageDetail](../resources/teamJoiningDisabledEventMessageDetail.md) | **Team** joining has been disabled. |
-| [teamJoiningEnabledEventMessageDetail](../resources/teamJoiningEnabledEventMessageDetail.md) | **Team** joining has been enabled. |
-| [teamRenamedEventMessageDetail](../resources/teamRenamedEventMessageDetail.md) | A **team** has been renamed. |
-| [teamsAppInstalledEventMessageDetail](../resources/teamsAppInstalledEventMessageDetail.md) | [Teams app](../resources/teamsApp.md) has been installed. |
-| [teamsAppRemovedEventMessageDetail](../resources/teamsAppRemovedEventMessageDetail.md) | **Teams app** has been removed. |
-| [teamsAppUpgradedEventMessageDetail](../resources/teamsAppUpgradedEventMessageDetail.md) | **Teams app** has been upgraded. |
-| [teamUnarchivedEventMessageDetail](../resources/teamUnarchivedEventMessageDetail.md) | A **team** has been unarchived. |
+| [callEndedEventMessageDetail](../resources/callendedeventmessagedetail.md) | A call has ended. |
+| [callRecordingEventMessageDetail](../resources/callrecordingeventmessagedetail.md) | Call recording is available. |
+| [callStartedEventMessageDetail](../resources/callstartedeventmessagedetail.md) | A call has started. |
+| [callTranscriptEventMessageDetail](../resources/calltranscripteventmessagedetail.md) | Call transcript is available. |
+| [channelAddedEventMessageDetail](../resources/channeladdedeventmessagedetail.md) | A **channel** has been added. |
+| [channelDeletedEventMessageDetail](../resources/channeldeletedeventmessagedetail.md) | A **channel** has been deleted. |
+| [channelDescriptionUpdatedEventMessageDetail](../resources/channeldescriptionupdatedeventmessagedetail.md) | **Channel's** description has been updated. |
+| [channelRenamedEventMessageDetail](../resources/channelrenamedeventmessagedetail.md) | A **channel** has been renamed. |
+| [channelSetAsFavoriteByDefaultEventMessageDetail](../resources/channelsetasfavoritebydefaulteventmessagedetail.md) | A **channel** has been set as favorite by default. |
+| [channelUnsetAsFavoriteByDefaultEventMessageDetail](../resources/channelunsetasfavoritebydefaulteventmessagedetail.md) | A **channel** has been unset as favorite by default. |
+| [chatRenamedEventMessageDetail](../resources/chatrenamedeventmessagedetail.md) | A chat has been renamed. |
+| [conversationMemberRoleUpdatedEventMessageDetail](../resources/conversationmemberroleupdatedeventmessagedetail.md) | Role has been updated for a **member**. |
+| [meetingPolicyUpdatedEventMessageDetail](../resources/meetingpolicyupdatedeventmessagedetail.md) | Meeting policy has been updated. |
+| [membersAddedEventMessageDetail](../resources/membersaddedeventmessagedetail.md) | **Members** have been added. |
+| [membersDeletedEventMessageDetail](../resources/membersdeletedeventmessagedetail.md) | **Members** have been removed. |
+| [membersJoinedEventMessageDetail](../resources/membersjoinedeventmessagedetail.md) | **Members** have joined. |
+| [membersLeftEventMessageDetail](../resources/memberslefteventmessagedetail.md) | **Members** have left. |
+| [messagePinnedEventMessageDetail](../resources/messagepinnedeventmessagedetail.md) | A message has been pinned. |
+| [messageUnpinnedEventMessageDetail](../resources/messageunpinnedeventmessagedetail.md) | A message has been unpinned. |
+| [tabUpdatedEventMessageDetail](../resources/tabupdatedeventmessagedetail.md) | A tab has been updated. |
+| [teamArchivedEventMessageDetail](../resources/teamarchivedeventmessagedetail.md) | A **team** has been archived. |
+| [teamCreatedEventMessageDetail](../resources/teamcreatedeventmessagedetail.md) | A **team** has been created. |
+| [teamDescriptionUpdatedEventMessageDetail](../resources/teamdescriptionupdatedeventmessagedetail.md) | **Team's** description has been updated. |
+| [teamJoiningDisabledEventMessageDetail](../resources/teamjoiningdisabledeventmessagedetail.md) | **Team** joining has been disabled. |
+| [teamJoiningEnabledEventMessageDetail](../resources/teamjoiningenabledeventmessagedetail.md) | **Team** joining has been enabled. |
+| [teamRenamedEventMessageDetail](../resources/teamrenamedeventmessagedetail.md) | A **team** has been renamed. |
+| [teamsAppInstalledEventMessageDetail](../resources/teamsappinstalledeventmessagedetail.md) | [Teams app](../resources/teamsapp.md) has been installed. |
+| [teamsAppRemovedEventMessageDetail](../resources/teamsappremovedeventmessagedetail.md) | **Teams app** has been removed. |
+| [teamsAppUpgradedEventMessageDetail](../resources/teamsappupgradedeventmessagedetail.md) | **Teams app** has been upgraded. |
+| [teamUnarchivedEventMessageDetail](../resources/teamunarchivedeventmessagedetail.md) | A **team** has been unarchived. |
 
 ## Properties
 None.

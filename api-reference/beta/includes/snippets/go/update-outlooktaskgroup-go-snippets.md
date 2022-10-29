@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-outlookTaskGroupId := "outlookTaskGroup-id"
-graphClient.Me().Outlook().TaskGroupsById(&outlookTaskGroupId).Patch(nil)
+requestBody := graphmodels.NewOutlookTaskGroup()
+name := "Personal Tasks"
+requestBody.SetName(&name) 
+
+result, err := graphClient.Me().Outlook().TaskGroupsById("outlookTaskGroup-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

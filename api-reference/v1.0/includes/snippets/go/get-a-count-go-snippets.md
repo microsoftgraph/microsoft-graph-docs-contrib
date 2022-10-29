@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.GroupsRequestBuilderGetQueryParameters{
-	Filter: "startswith(displayName,%20'a')",
+requestParameters := &msgraphsdk.ContactsRequestBuilderGetQueryParameters{
+	Filter: "startswith(displayName,'A')",
 	Count: true,
 	Top: 1,
 	Orderby: "displayName",
@@ -16,11 +16,11 @@ requestParameters := &msgraphsdk.GroupsRequestBuilderGetQueryParameters{
 headers := map[string]string{
 	"ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.GroupsRequestBuilderGetOptions{
+options := &msgraphsdk.ContactsRequestBuilderGetOptions{
 	Q: requestParameters,
 	H: headers,
 }
-result, err := graphClient.Groups().Get(options)
+result, err := graphClient.Contacts().Get(options)
 
 
 ```

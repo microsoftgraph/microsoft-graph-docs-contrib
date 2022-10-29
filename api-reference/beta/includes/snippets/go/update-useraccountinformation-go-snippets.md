@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewUserAccountInformation()
+requestBody := graphmodels.NewUserAccountInformation()
 countryCode := "NO"
-requestBody.SetCountryCode(&countryCode)
-options := &msgraphsdk.UserAccountInformationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userAccountInformationId := "userAccountInformation-id"
-graphClient.Me().Profile().AccountById(&userAccountInformationId).Patch(options)
+requestBody.SetCountryCode(&countryCode) 
+
+result, err := graphClient.Me().Profile().AccountById("userAccountInformation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

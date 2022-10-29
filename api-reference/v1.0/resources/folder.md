@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Folder
 ms.localizationpriority: medium
 description: "The Folder resource groups folder-related data on an item into a single structure. "
-ms.prod: ""
+ms.prod: files
 doc_type: resourcePageType
 ---
 

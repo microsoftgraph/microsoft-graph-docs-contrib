@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4798
+Content-Length: 4379
 
 {
   "value": [
@@ -76,6 +76,7 @@ Content-Length: 4798
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "deviceEnrollmentConfigurationType": "limit",
       "iosRestriction": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
         "platformBlocked": true,
@@ -154,19 +155,6 @@ Content-Length: 4798
           "Blocked Skus value"
         ]
       },
-      "aospRestriction": {
-        "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
-        "platformBlocked": true,
-        "personalDeviceEnrollmentBlocked": true,
-        "osMinimumVersion": "Os Minimum Version value",
-        "osMaximumVersion": "Os Maximum Version value",
-        "blockedManufacturers": [
-          "Blocked Manufacturers value"
-        ],
-        "blockedSkus": [
-          "Blocked Skus value"
-        ]
-      },
       "macRestriction": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
         "platformBlocked": true,
@@ -197,6 +185,7 @@ Content-Length: 4798
   ]
 }
 ```
+
 
 
 
