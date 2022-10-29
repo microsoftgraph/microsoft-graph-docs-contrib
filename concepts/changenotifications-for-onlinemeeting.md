@@ -15,7 +15,7 @@ Change notifications in Microsoft Graph enable you to subscribe to call started/
 
 To get change notifications for a meeting's call events, subscribe to `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`. 
 
-This resource supports notifications with resource data. For more information about setting up notifications with resource data, see [including resource data](/graph/webhooks-with-resource-data) in the notification.
+This resource supports notifications with resource data. For more information about setting up notifications with resource data, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
 
 ### Permissions
 
