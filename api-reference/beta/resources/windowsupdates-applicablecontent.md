@@ -15,6 +15,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 **TODO: Add Description**
 
+**TODO: Everything below is incorrect. There is a newer schema.**
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
