@@ -1,9 +1,9 @@
 ---
-title: "List deployments"
-description: "Get the deployment resources from the deployments navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "List deploymentAudiences"
+description: "Get a list of deploymentAudience objects and their properties."
+author: "ryanwilliams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the deployment resources from the deployments navigation property.
+Get a list of [deploymentAudience](../resources/windowsupdates-deploymentAudience.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.windowsUpdates.deployment not found
+GET /admin/windows/updates/deploymentAudiences
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.windowsUpdates.deployment not found
+GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
 ```
 
 
@@ -78,19 +78,23 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
+      "@odata.type": "#microsoft.graph.windowsUpdates.deploymentAudience",
+      "applicableContent": [
+        {
+          "@odata.type": "microsoft.graph.windowsUpdates.applicableContent"
+        }
+      ],
+      "exclusions": [
+        {
+          "@odata.type": "microsoft.graph.windowsUpdates.updatableAsset"
+        }
+      ],
       "id": "eacc9a79-884b-a728-91f7-9f3630aa9542",
-      "state": {
-        "@odata.type": "microsoft.graph.windowsUpdates.deploymentState"
-      },
-      "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.deployableContent"
-      },
-      "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
-      },
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)"
+      "members": [
+        {
+          "@odata.type": "microsoft.graph.windowsUpdates.updatableAsset"
+        }
+      ]
     }
   ]
 }
