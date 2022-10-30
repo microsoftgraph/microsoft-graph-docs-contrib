@@ -54,13 +54,22 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deploymentAudience",
-  "id": "String (identifier)",
   "applicableContent": [
     {
       "@odata.type": "microsoft.graph.windowsUpdates.applicableContent"
     }
   ],
-  "reportingDeviceCount": "Integer"
+  "exclusions": [
+    {
+      "@odata.type": "microsoft.graph.windowsUpdates.updatableAsset"
+    }
+  ],
+  "id": "String (identifier)",
+  "members": [
+    {
+      "@odata.type": "microsoft.graph.windowsUpdates.updatableAsset"
+    }
+  ]
 }
 ```
 
