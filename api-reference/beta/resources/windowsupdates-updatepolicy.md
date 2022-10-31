@@ -32,7 +32,6 @@ Namespace: microsoft.graph.windowsUpdates
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|autoEnrollmentUpdateCategories|updateCategory collection|**TODO: Add Description**|
 |complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|**TODO: Add Description**|
 |createdDateTime|DateTimeOffset|**TODO: Add Description**|
 |deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|**TODO: Add Description**|
@@ -56,19 +55,22 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
-  "id": "String (identifier)",
+  "audience": { "@odata.type": "microsoft.graph.windowsUpdates.deploymentAudience" },
   "complianceChangeRules": [
     {
       "@odata.type": "microsoft.graph.windowsUpdates.contentApprovalRule"
+    }
+  ],
+  "complianceChanges": [
+    {
+      "@odata.type": "microsoft.graph.windowsUpdates.complianceChange"
     }
   ],
   "createdDateTime": "String (timestamp)",
   "deploymentSettings": {
     "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
   },
-  "autoEnrollmentUpdateCategories": [
-    "String"
-  ]
+  "id": "String (identifier)"
 }
 ```
 
