@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
-# onPremisesApplicationSegment resource type
+# onPremisesApplicationSegment resource type (deprecated)
 
 Namespace: microsoft.graph
 
