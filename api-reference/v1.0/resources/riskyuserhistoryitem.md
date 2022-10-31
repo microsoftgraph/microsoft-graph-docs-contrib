@@ -44,7 +44,7 @@ Inherits from [riskyUser](../resources/riskyuser.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|history|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection| Inherited from [riskyUser](../resources/riskyuser.md)|
+|history|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection| The activity related to user risk level change. Inherited from [riskyUser](../resources/riskyuser.md).|
 
 ## JSON representation
 The following is a JSON representation of the resource.
