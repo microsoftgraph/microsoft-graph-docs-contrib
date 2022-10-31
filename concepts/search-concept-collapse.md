@@ -101,6 +101,7 @@ Content-Type: application/json
 }
 ```
 In below table, the ranking is still maintained, but we collapse by two properties simultaneously to find unique combinations of title and createdby. This results in keeping the first 4 rows and excluding row 5 because combination of Note (title) and James (createdBy) is only allowed up to 2 times. Additionally, last 3 rows are kept for the same reason.
+
 | Title | Created By | Subject | Rank |
 | :----: | :----: | :----: | :----: |
 |Note|Andy|Poetry|1|
@@ -149,6 +150,8 @@ Content-Type: application/json
 }
 ```
 In below table, the ranking is still maintained, but we collapse first on title and then do a second collapse on createdBy. For the first level collapse on title with a limit of 3, this results in keeping the first 3 rows excluding rows 4 and 5 and keeping the last 3 rows as is. And then for the second level collapse with a limit of 1, we don't need to change the first 3 rows we kept because each has a unique createdBy value, but we do need to exclude row 8 because James is listed again as createdBy and we only need unique values for that property.
+
+| Title | Created By | Subject | Rank |
 | :---- | :---- | :---- | :---- |
 |Note|Andy|Poetry|1|
 |Note|James|History|2|
