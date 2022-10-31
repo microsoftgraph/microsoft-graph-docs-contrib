@@ -398,6 +398,12 @@ This error might also occur when retrieving the **signInActivity** property of t
 This error is due to intermittent license check failures, which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required when the issue is resolved.
 
 
+## Sites and lists (SharePoint)
+
+### Follow/unfollow sites is not in sync with SharePoint following
+
+When querying [followed sites](/graph/api/sites-list-followed) through Microsoft Graph, the response might have incorrect results and those results might not match the results from following content in SharePoint. As a temporary workaround, you can use the [Following people and content REST API](/sharepoint/dev/general-development/following-people-and-content-rest-api-reference-for-sharepoint).
+
 ## Teamwork (Microsoft Teams)
 
 ### Unable to filter team members by roles
