@@ -58,11 +58,7 @@ Assign a calling plan to your application instance. For details, see [Calling pl
 
 Before you can set up users in your organization to make and receive phone calls, you must get phone numbers for them. For details, see [Getting phone numbers for your users](/microsoftteams/getting-phone-numbers-for-your-users#get-new-phone-numbers-for-your-users).
 
-To assign the phone number to the application instance, the tenant admin:
-
-1. Signs in to the Teams admin center as a tenant admin.
-2. Goes to **Teams Admin center** > **Voice** > **Phone Numbers**.
-3. Assigns a service phone number (+11D format) using the following cmdlet:
+To assign the phone number to the application instance, the tenant admin assigns a service phone number (+11D format) using the following cmdlet:
 
    `PS C:\> Set-CsPhoneNumberAssignment -Identity <user@contoso.com> -PhoneNumber <phone_number> -PhoneNumberType <type>`
 
@@ -74,8 +70,6 @@ Use the following cmdlet to unassign a phone number:
 
    `PS C:\> Remove-CsPhoneNumberAssignment -Identity <user@contoso.com> -PhoneNumber <phone_number> -PhoneNumberType <type>`
 
-> [!NOTE]
-> Currently this only works with online numbers and not direct routing (DR) numbers. This is a known issue.
 
 ## Update a bot phone number
 
