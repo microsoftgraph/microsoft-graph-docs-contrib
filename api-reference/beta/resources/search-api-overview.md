@@ -118,7 +118,7 @@ Depending on the entity type, the searchable properties vary. For details, see:
 
 The collapseProperties property contains a set of criteria, fields and limit size, which is used for collapsing results in a response body. Using collapseProperties only impacts the recall but not ranking/sorting.
 
-The [query](../api/search-query.md) method lets you customize the collapse property by specifying the **collapseProperties** on the `requests` parameter, which is collection of [collapseProperty](collapseProperty.md). This allows you to specify a set of one or more collapse property.
+The [query](../api/search-query.md) method lets you customize the collapse property by specifying the **collapseProperties** on the `requests` parameter, which is collection of [collapseProperty](collapseproperty.md). This allows you to specify a set of one or more collapse property.
 
 Note that collapsing results is currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [drive](drive.md), [list](list.md), [site](site.md).
 
