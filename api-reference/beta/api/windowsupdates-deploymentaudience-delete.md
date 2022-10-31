@@ -1,9 +1,9 @@
 ---
 title: "Delete deploymentAudience"
 description: "Delete a deploymentAudience object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,9 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /admin/windows/updates/deployments/{deploymentId}/audience/$ref
-DELETE /admin/windows/updates/updatePolicies/{updatePolicyId}/audience/$ref
-DELETE /admin/windows/updates/deploymentAudiences/{deploymentAudienceId}/$ref
+DELETE /admin/windows/updates/deploymentAudiences/{deploymentAudienceId}
 ```
 
 ## Request headers
@@ -57,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/{deploymentAudienceId}
 ```
 
 

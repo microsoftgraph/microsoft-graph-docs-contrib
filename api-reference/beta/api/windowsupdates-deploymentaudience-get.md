@@ -1,9 +1,9 @@
 ---
 title: "Get deploymentAudience"
 description: "Read the properties and relationships of a deploymentAudience object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,8 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /admin/windows/updates/deployments/{deploymentId}/audience
-GET /admin/windows/updates/updatePolicies/{updatePolicyId}/audience
 GET /admin/windows/updates/deploymentAudiences/{deploymentAudienceId}
 ```
 
@@ -60,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience
+GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/{deploymentAudienceId}
 ```
 
 
@@ -86,7 +84,19 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.windowsUpdates.applicableContent"
       }
     ],
-    "reportingDeviceCount": "Integer"
+    "exclusions": [
+      {
+        "@odata.type": "microsoft.graph.windowsUpdates.updatableAsset",
+        "@odata.id": "/beta/admin/windows/updatableAsset/2"
+      }
+    ],
+    "id": "eacc9a79-884b-a728-91f7-9f3630aa9542",
+    "members": [
+      {
+        "@odata.type": "microsoft.graph.windowsUpdates.updatableAsset",
+        "@odata.id": "/beta/admin/windows/updatableAsset/1"
+      }
+    ]
   }
 }
 ```
