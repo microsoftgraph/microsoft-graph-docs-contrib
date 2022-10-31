@@ -30,7 +30,7 @@ The following table shows a sample list in SharePoint. The next set of examples 
 |Notebook|Andy|Culture|7|
 |Notebook|James|Science|8|
 
-### Example: Basic Collapse
+### Example 1: Basic collapse
 #### Request
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -68,7 +68,7 @@ Group the items based on **title** and show the top three (hence "limit": 3) for
 |Notebook|Andy|Culture|7|
 |Notebook|James|Science|8|
 
-### Example: Compound Collapse
+### Example 2: Compound collapse
 #### Request
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -112,7 +112,7 @@ In below table, the ranking is still maintained, but we collapse by two properti
 |Notebook|Andy|Culture|7|
 |Notebook|James|Science|8|
 
-### Example: Multi-level Collapse
+### Example 3: Multi-level collapse
 #### Request
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
