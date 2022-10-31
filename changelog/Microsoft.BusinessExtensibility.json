@@ -1,0 +1,174 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "plannerRelationshipUserRoles",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerRelationshipUserRoles** enumeration type.",
+          "Target": "plannerRelationshipUserRoles"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "plannerRuleKind",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRuleKind](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "plannerRuleKind"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "plannerUserRoleKind",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerUserRoleKind** enumeration type.",
+          "Target": "plannerUserRoleKind"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerFieldRules",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerFieldRules](https://docs.microsoft.com/en-us/graph/api/resources/plannerFieldRules?view=graph-rest-beta) resource",
+          "Target": "plannerFieldRules"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPlanConfigurationBucketDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerPlanConfigurationBucketDefinition](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanConfigurationBucketDefinition?view=graph-rest-beta) resource",
+          "Target": "plannerPlanConfigurationBucketDefinition"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPlanConfigurationBucketLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerPlanConfigurationBucketLocalization](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanConfigurationBucketLocalization?view=graph-rest-beta) resource type.",
+          "Target": "plannerPlanConfigurationBucketLocalization"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPropertyRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerPropertyRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerPropertyRule?view=graph-rest-beta) resource",
+          "Target": "plannerPropertyRule"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerRelationshipBasedUserType",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRelationshipBasedUserType](https://docs.microsoft.com/en-us/graph/api/resources/plannerRelationshipBasedUserType?view=graph-rest-beta) resource type.",
+          "Target": "plannerRelationshipBasedUserType"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerRuleOverride",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRuleOverride](https://docs.microsoft.com/en-us/graph/api/resources/plannerRuleOverride?view=graph-rest-beta) resource",
+          "Target": "plannerRuleOverride"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskConfigurationRoleBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskConfigurationRoleBase](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskConfigurationRoleBase?view=graph-rest-beta) resource type.",
+          "Target": "plannerTaskConfigurationRoleBase"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskPolicy](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskPolicy?view=graph-rest-beta) resource",
+          "Target": "plannerTaskPolicy"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskPropertyRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskPropertyRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource",
+          "Target": "plannerTaskPropertyRule"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskRoleBasedRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskRoleBasedRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskRoleBasedRule?view=graph-rest-beta) resource",
+          "Target": "plannerTaskRoleBasedRule"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Property",
+          "ChangedApiName": "role",
+          "ChangeType": "Addition",
+          "Description": "Added the `role` property to the [plannerTaskRoleBasedRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskRoleBasedRule?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskRoleBasedRule"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Property",
+          "ChangedApiName": "userType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `userType` property from the [plannerTaskRoleBasedRule](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskRoleBasedRule?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskRoleBasedRule"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "businessScenario",
+          "ChangeType": "Addition",
+          "Description": "Added the [businessScenario](https://docs.microsoft.com/en-us/graph/api/resources/businessScenario?view=graph-rest-beta) resource",
+          "Target": "businessScenario"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "businessScenarioPlanner",
+          "ChangeType": "Addition",
+          "Description": "Added the [businessScenarioPlanner](https://docs.microsoft.com/en-us/graph/api/resources/businessScenarioPlanner?view=graph-rest-beta) resource",
+          "Target": "businessScenarioPlanner"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPlanConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerPlanConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanConfiguration?view=graph-rest-beta) resource",
+          "Target": "plannerPlanConfiguration"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPlanConfigurationLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerPlanConfigurationLocalization](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanConfigurationLocalization?view=graph-rest-beta) resource",
+          "Target": "plannerPlanConfigurationLocalization"
+        },
+        {
+          "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskConfiguration?view=graph-rest-beta) resource",
+          "Target": "plannerTaskConfiguration"
+        }
+      ],
+      "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-26T23:04:43.2913535Z",
+      "WorkloadArea": "Microsoft.BusinessExtensibility",
+      "SubArea": ""
+    }
+  ]
+}
