@@ -18,6 +18,7 @@ You can use the Microsoft Search API in Microsoft Graph to collapse items in sea
 
 ## Examples of using collapseProperties
 The following table shows a sample list in SharePoint. The next set of examples use this list to show how the collapseProperties property works.
+
 | Title | Created By | Subject | Rank |
 | :----: | :----: | :----: | :----: |
 |Note|Andy|Poetry|1|
