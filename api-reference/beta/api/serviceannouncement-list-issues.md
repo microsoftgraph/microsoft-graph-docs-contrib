@@ -135,7 +135,7 @@ Content-Type: application/json
           "createdDateTime": "2020-11-12T07:07:38.97Z",
           "postType": "Regular",
           "description": {
-            "contentType": "Text",
+            "contentType": "Html",
             "content": "Title: Limited number of users unable to send or receive email through the Exchange Online service\n\nUser Impact: Users may be unable to send or receive email through the Exchange Online service."
           }
         }
