@@ -22,7 +22,7 @@ Inherits from [segmentsConfiguration](segmentsConfiguration.md).
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |alternateUrl|String|If you're configuring a traffic manager in front of multiple App Proxy application segments, contains the user-friendly URL that will point to the traffic manager.|
-|corsConfigurations|[corsConfigurationv2](corsconfigurationv2.md) collection|CORS Rule definition for a particular application segment.|
+|corsConfigurations|[corsConfiguration_v2](corsconfigurationv2.md) collection|CORS Rule definition for a particular application segment.|
 |externalUrl|String |The published external URL for the application segment; for example, https://intranet.contoso.com./|
 |internalUrl|String |The internal URL of the application segment; for example, https://intranet/.|
 
@@ -44,7 +44,7 @@ The following is a JSON representation of the resource.
   "alternateUrl": "String",
   "corsConfigurations": [
     {
-      "@odata.type": "microsoft.graph.corsConfiguration"
+      "@odata.type": "microsoft.graph.corsConfiguration_v2"
     }
   ]
 }
