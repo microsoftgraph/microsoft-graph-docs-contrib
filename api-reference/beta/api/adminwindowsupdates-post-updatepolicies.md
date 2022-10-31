@@ -1,9 +1,9 @@
 ---
 title: "Create updatePolicy"
 description: "Create a new updatePolicy object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ryanwilliams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
 
@@ -44,15 +44,12 @@ In the request body, supply a JSON representation of the [updatePolicy](../resou
 
 You can specify the following properties when creating an **updatePolicy**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|**TODO: Add Description** Optional.|
-|autoEnrollmentUpdateCategories|updateCategory collection|**TODO: Add Description**. The possible values are: `feature`, `quality`, `unknownFutureValue`, `driver`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `driver`. Required.|
-
-
+|audience|[microsoft.graph.deployableAudience](../resources/windowsupdates-deployableaudience.md)|Specifies the audience to target.|
+|complianceChanges|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|Compliance changes like content approvals which result in the automatic creation of deployments using the policy's **audience** and **deploymentSettings**.|
+|complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|Rules governing the automatic creation of compliance changes.|
+|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings governing how to deploy **content**.|
 
 ## Response
 
@@ -70,21 +67,37 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
 Content-Type: application/json
-Content-length: 358
+Content-length: 835
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
+  "audience": {
+    "@odata.id": "deploymentAudiences/1"
+  },
+  "complianceChanges": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval"
+    }
+  ],
   "complianceChangeRules": [
     {
-      "@odata.type": "microsoft.graph.windowsUpdates.contentApprovalRule"
+      "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule"
+      "contentFilter": {
+          "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
+      },
+      "durationBeforeDeploymentStart": "P7D"
     }
   ],
   "deploymentSettings": {
     "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
-  },
-  "autoEnrollmentUpdateCategories": [
-    "String"
-  ]
+    "schedule": {
+      "gradualRollout": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+        "durationBetweenOffers": "P1D",
+        "devicePerOffer": 1000
+      }
+    }
+  }
 }
 ```
 
@@ -105,18 +118,36 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
   "id": "a7aa99c1-34a2-850c-5223-7816fde70713",
-  "complianceChangeRules": [
+  "audience": {
+    "@odata.id": "deploymentAudiences/1"
+  },
+  "complianceChanges": [
     {
-      "@odata.type": "microsoft.graph.windowsUpdates.contentApprovalRule"
+      "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval"
     }
   ],
-  "createdDateTime": "String (timestamp)",
+  "complianceChangeRules": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule"
+      "contentFilter": {
+          "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
+      },
+      "durationBeforeDeploymentStart": "P7D",
+      "createdDateTime": "2020-06-09T10:00:00Z",
+      "lastEvaluatedDateTime": "2020-06-09T10:00:00Z",
+      "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+    }
+  ],
   "deploymentSettings": {
     "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
-  },
-  "autoEnrollmentUpdateCategories": [
-    "String"
-  ]
+    "schedule": {
+      "gradualRollout": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+        "durationBetweenOffers": "P1D",
+        "devicePerOffer": 1000
+      }
+    }
+  }
 }
 ```
 
