@@ -1,9 +1,9 @@
 ---
 title: "Create deployment"
 description: "Create a new deployment object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "aarononeal"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new deployment object.
+Create a new [deployment](../resources/windowsupdates-deployment.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
 
@@ -42,16 +42,12 @@ POST /admin/windows/updates/deployments
 ## Request body
 In the request body, supply a JSON representation of the [deployment](../resources/windowsupdates-deployment.md) object.
 
-You can specify the following properties when creating a **deployment**.
+The following table shows the properties that are required when you create the [deployment](../resources/windowsupdates-deployment.md).
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|state|[microsoft.graph.windowsUpdates.deploymentState](../resources/windowsupdates-deploymentstate.md)|**TODO: Add Description** Optional.|
-|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|**TODO: Add Description** Optional.|
-|settings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
+|audience|[microsoft.graph.deployableAudience](../resources/windowsupdates-deployableaudience.md)|Specifies the audience to target.|
+|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [catalogContent](../resources/windowsupdates-catalogcontent.md)|
 
 
 
@@ -59,10 +55,11 @@ You can specify the following properties when creating a **deployment**.
 
 If successful, this method returns a `201 Created` response code and a [deployment](../resources/windowsupdates-deployment.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
-The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_deployment_from_"
@@ -71,26 +68,70 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
 Content-Type: application/json
-Content-length: 344
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
-  "state": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentState"
+  "audience": {
   },
   "content": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deployableContent"
+    "@odata.type": "microsoft.graph.windowsUpdates.catalogContent",
+    "catalogEntry": {
+      "@odata.id": "catalog/entries/1"
+    }
   },
   "settings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
+    "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+    "schedule": {
+      "gradualRollout": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+        "durationBetweenOffers": "P1D",
+        "devicePerOffer": 1000
+      }
+    },
+    "monitoring": {
+      "monitoringRules": [
+        {
+          "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
+          "signal": "rollback",
+          "threshold": 5,
+          "action": "pauseDeployment"
+        }
+      ]
+    }
   }
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-deployment-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-deployment-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-deployment-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-deployment-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-deployment-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-deployment-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,15 +144,50 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
-  "id": "eacc9a79-884b-a728-91f7-9f3630aa9542",
+  "id": "b5171742-1742-b517-4217-17b5421717b5",
   "state": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentState"
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentState",
+    "value": "offering",
+    "reasons": [
+      {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
+        "value": "offeringByRequest"
+      }
+    ],
+    "requestedValue": "none",
+    "effectiveSinceDate": "String (timestamp)"
+  },
+  "audience": {
+    "id": "1"
+    "members": []
   },
   "content": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deployableContent"
+    "@odata.type": "microsoft.graph.windowsUpdates.catalogContent",
+    "catalogEntry": {
+      "@odata.id": "catalog/entries/1"
+    }
   },
   "settings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
+    "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+    "schedule": {
+      "gradualRollout": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+        "durationBetweenOffers": "P1D",
+        "devicePerOffer": 1000
+      }
+    },
+    "monitoring": {
+      "monitoringRules": [
+        {
+          "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
+          "signal": "rollback",
+          "threshold": 5,
+          "action": "pauseDeployment"
+        }
+      ]
+    },
+    "userExperience": null,
+    "safeguard": null
   },
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)"
