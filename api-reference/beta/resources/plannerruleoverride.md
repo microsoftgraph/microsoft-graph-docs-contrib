@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an overriden rule as part of [plannerFieldRules](../resources/plannerfieldrules.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description**|
-|rules|String collection|**TODO: Add Description**|
+|name|String|Name of the override. Allowed override values will be dependent on the property affected by the rule.|
+|rules|String collection|Overridden rules. These are used as rules for the override instead of the default rules.|
 
 ## Relationships
 None.

@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the rules and permissions that apply to a property as part of [plannerTaskPropertyRule](../resources/plannertaskpropertyrule.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultRules|String collection|**TODO: Add Description**|
-|overrides|[plannerRuleOverride](../resources/plannerruleoverride.md) collection|**TODO: Add Description**|
+|defaultRules|String collection|The default rules that apply if no override matches to the current data.|
+|overrides|[plannerRuleOverride](../resources/plannerruleoverride.md) collection|Overrides that specify different rules for specific data associated with the field.|
 
 ## Relationships
 None.
