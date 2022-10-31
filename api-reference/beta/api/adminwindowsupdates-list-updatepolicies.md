@@ -79,22 +79,37 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
-      "audience": { "@odata.type": "microsoft.graph.windowsUpdates.deploymentAudience" },
-      "complianceChangeRules": [
-        {
-          "@odata.type": "microsoft.graph.windowsUpdates.contentApprovalRule"
-        }
-      ],
+      "id": "a7aa99c1-34a2-850c-5223-7816fde70713",
+      "audience": {
+        "@odata.id": "deploymentAudiences/1"
+      },
       "complianceChanges": [
         {
-          "@odata.type": "microsoft.graph.windowsUpdates.complianceChange"
+          "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval"
         }
       ],
-      "createdDateTime": "String (timestamp)",
+      "complianceChangeRules": [
+        {
+          "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule"
+          "contentFilter": {
+              "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
+          },
+          "durationBeforeDeploymentStart": "P7D",
+          "createdDateTime": "2020-06-09T10:00:00Z",
+          "lastEvaluatedDateTime": "2020-06-09T10:00:00Z",
+          "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+        }
+      ],
       "deploymentSettings": {
         "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
-      },
-      "id": "a7aa99c1-34a2-850c-5223-7816fde70713"
+        "schedule": {
+          "gradualRollout": {
+            "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+            "durationBetweenOffers": "P1D",
+            "devicePerOffer": 1000
+          }
+        }
+      }
     }
   ]
 }

@@ -1,9 +1,9 @@
 ---
 title: "Get updatePolicy"
 description: "Read the properties and relationships of an updatePolicy object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
 
@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /admin/windows/updates/updatePolicies/{updatePolicyId}
-GET /admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges/{complianceChangeId}/updatePolicy
 ```
 
 ## Optional query parameters
@@ -80,18 +79,36 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
     "id": "a7aa99c1-34a2-850c-5223-7816fde70713",
-    "complianceChangeRules": [
+    "audience": {
+      "@odata.id": "deploymentAudiences/1"
+    },
+    "complianceChanges": [
       {
-        "@odata.type": "microsoft.graph.windowsUpdates.contentApprovalRule"
+        "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval"
       }
     ],
-    "createdDateTime": "String (timestamp)",
+    "complianceChangeRules": [
+      {
+        "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule"
+        "contentFilter": {
+            "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
+        },
+        "durationBeforeDeploymentStart": "P7D",
+        "createdDateTime": "2020-06-09T10:00:00Z",
+        "lastEvaluatedDateTime": "2020-06-09T10:00:00Z",
+        "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+      }
+    ],
     "deploymentSettings": {
       "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
-    },
-    "autoEnrollmentUpdateCategories": [
-      "String"
-    ]
+      "schedule": {
+        "gradualRollout": {
+          "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+          "durationBetweenOffers": "P1D",
+          "devicePerOffer": 1000
+        }
+      }
+    }
   }
 }
 ```
