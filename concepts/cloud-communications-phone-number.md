@@ -64,7 +64,7 @@ To assign the phone number to the application instance, the tenant admin:
 2. Goes to **Teams Admin center** > **Voice** > **Phone Numbers**.
 3. Assigns a service phone number (+11D format) using the following cmdlet:
 
-   `PS C:\> Set-CsPhoneNumberAssignment -Identity <user@contoso.com> -TelephoneNumber <phone_number> -TelephoneNumberType <type>`
+   `PS C:\> Set-CsPhoneNumberAssignment -Identity <user@contoso.com> -PhoneNumber <phone_number> -PhoneNumberType <type>`
 
 For more information, see [Set-CsPhoneNumberAssignment](/powershell/module/teams/set-csphonenumberassignment).
 
@@ -72,7 +72,7 @@ For more information, see [Set-CsPhoneNumberAssignment](/powershell/module/teams
 
 Use the following cmdlet to unassign a phone number:
 
-   `PS C:\> Remove-CsPhoneNumberAssignment -Identity <user@contoso.com> -TelephoneNumber <phone_number> -TelephoneNumberType <type>`
+   `PS C:\> Remove-CsPhoneNumberAssignment -Identity <user@contoso.com> -PhoneNumber <phone_number> -PhoneNumberType <type>`
 
 > [!NOTE]
 > Currently this only works with online numbers and not direct routing (DR) numbers. This is a known issue.
@@ -81,7 +81,7 @@ Use the following cmdlet to unassign a phone number:
 
 After unassigning the number, you can assign a different number to the bot by using the following cmdlet:
 
-   `PS C:\> Set-CsPhoneNumberAssignment -Identity <user@contoso.com> -TelephoneNumber <phone_number> -TelephoneNumberType <type>`
+   `PS C:\> Set-CsPhoneNumberAssignment -Identity <user@contoso.com> -PhoneNumber <phone_number> -PhoneNumberType <type>`
 
 ## See also
 
