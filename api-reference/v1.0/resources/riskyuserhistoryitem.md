@@ -1,6 +1,6 @@
 ---
 title: "riskyUserHistoryItem resource type"
-description: "risky user history item"
+description: "Represents the risk history of an Azure Active Directory (Azure AD) user as determined by Azure AD Identity Protection."
 author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the risk history of an Azure AD user as determined by Azure AD Identity Protection.
+Represents the risk history of an Azure Active Directory (Azure AD) user as determined by Azure AD Identity Protection.
 
 Inherits from [riskyUser](../resources/riskyuser.md).
 
