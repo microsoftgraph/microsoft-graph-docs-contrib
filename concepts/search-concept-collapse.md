@@ -58,6 +58,7 @@ Content-Type: application/json
 }
 ```
 Group the items based on **title** and show the top three (hence "limit": 3) for each group. As you can see in the below table, the ranking is maintained, and the top three rows and last 3 rows are kept but rows 4 and 5 are excluded because the collapseProperties limit is 3.
+
 | Title | Created By | Subject | Rank |
 | :----: | :----: | :----: | :----: |
 |Note|Andy|Poetry|1|
