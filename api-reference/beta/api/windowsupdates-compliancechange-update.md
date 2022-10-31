@@ -69,7 +69,7 @@ Content-length: 144
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.complianceChange",
-  "isRevoked": "true"
+  "isRevoked": true
 }
 ```
 
@@ -90,8 +90,9 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.windowsUpdates.complianceChange",
   "id": "fcb57826-daaa-c8ac-bf9d-137b74a90a14",
   "createdDateTime": "2020-06-09T10:00:00Z",
-  "isRevoked": "true",
-  "revokedDateTime": "2020-06-09T11:00:00Z"
+  "isRevoked": true,
+  "revokedDateTime": "2020-06-09T11:00:00Z",
+  "updatePolicy": { "@odata.id": "updatePolicies/1" }
 }
 ```
 
