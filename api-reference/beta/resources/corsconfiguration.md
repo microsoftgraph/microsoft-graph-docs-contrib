@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
-# corsConfiguration resource type
+# corsConfiguration resource type (deprecated)
 
 Namespace: microsoft.graph
 
