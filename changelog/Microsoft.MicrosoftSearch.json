@@ -651,7 +651,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "collapseProperty",
           "ChangeType": "Addition",
-          "Description": "Added the [collapseProperty](https://docs.microsoft.com/en-us/graph/api/resources/collapseProperty?view=graph-rest-beta) resource type.",
+          "Description": "Added the [collapseProperty](https://learn.microsoft.com/en-us/graph/api/resources/collapseProperty?view=graph-rest-beta) resource type.",
           "Target": "collapseProperty"
         },
         {
