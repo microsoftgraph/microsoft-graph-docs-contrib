@@ -19,11 +19,11 @@ A submission for a points assignment (one that has a point value assigned) will 
 
 A submission for an assignment with an attached rubric, if the rubric is a credit rubric (no points), will have an [educationFeedbackOutcome](../resources/educationpointsoutcome.md) and an [educationRubricOutcome](../resources/educationrubricoutcome.md). (It might also return an [educationPointsOutcome](../resources/educationpointsoutcome.md), but that outcome is ignored.)
 
-A submission for an assignment with an attached rubric, if the rubric is a points rubric, will have an [educationFeedbackOutcome](../resources/educationpointsoutcome.md), an [educationPointsOutcome](../resources/educationpointsoutcome.md], and an [educationRubricOutcome](../resources/educationrubricoutcome.md).
+A submission for an assignment with an attached rubric, if the rubric is a points rubric, will have an [educationFeedbackOutcome](../resources/educationpointsoutcome.md), an [educationPointsOutcome](../resources/educationpointsoutcome.md), and an [educationRubricOutcome](../resources/educationrubricoutcome.md).
 
 A submission for a feedback resource will have an [educationFeedbackResourceOutcome](../resources/educationfeedbackresourceoutcome.md).
 
-All outcome types have a regular and a published property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**.  The regular property is the most recent value updated by the teacher; the published property is the most recent value returned to the student.
+All outcome types have a regular and a published property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**. The regular property is the most recent value updated by the teacher; the published property is the most recent value returned to the student.
 
 ## Permissions
 
