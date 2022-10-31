@@ -1,9 +1,9 @@
 ---
 title: "Create deploymentAudience"
 description: "Create a new deploymentAudience object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ryanwilliams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new deploymentAudience object.
+Create a new [deploymentAudience](../resources/windowsupdates-deploymentAudience.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
 
@@ -44,13 +44,10 @@ In the request body, supply a JSON representation of the [deploymentAudience](..
 
 You can specify the following properties when creating a **deploymentAudience**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|applicableContent|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection|**TODO: Add Description** Optional.|
-|reportingDeviceCount|Int32|**TODO: Add Description** Optional.|
-
-
+|exclusions|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to exclude from the audience.|
+|members|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to include in the audience.|
 
 ## Response
 
@@ -68,16 +65,16 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
 Content-Type: application/json
-Content-length: 232
+Content-length: 208
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deploymentAudience",
-  "applicableContent": [
-    {
-      "@odata.type": "microsoft.graph.windowsUpdates.applicableContent"
-    }
+  "members": [
+    {"@odata.id": "/beta/directoryObjects/1"}
   ],
-  "reportingDeviceCount": "Integer"
+  "exclusions": [
+    {"@odata.id": "/beta/directoryObjects/2"}
+  ]
 }
 ```
 
@@ -98,12 +95,12 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deploymentAudience",
   "id": "7f960f66-b6ed-6d54-f24a-9b1021a1d17f",
-  "applicableContent": [
-    {
-      "@odata.type": "microsoft.graph.windowsUpdates.applicableContent"
-    }
+  "members": [
+    {"@odata.id": "/beta/directoryObjects/1"}
   ],
-  "reportingDeviceCount": "Integer"
+  "exclusions": [
+    {"@odata.id": "/beta/directoryObjects/2"}
+  ]
 }
 ```
 
