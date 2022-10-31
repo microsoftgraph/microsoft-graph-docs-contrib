@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "defaultUsageLocation",
           "ChangeType": "Addition",
-          "Description": "Added the `defaultUsageLocation` property to the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
+          "Description": "Added the **defaultUsageLocation** property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
           "Target": "organization"
         }
       ],
