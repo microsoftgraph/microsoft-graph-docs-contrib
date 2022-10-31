@@ -1,9 +1,9 @@
 ---
 title: "List complianceChanges"
 description: "Get a list of the complianceChange objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ryanwilliams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
 
@@ -80,9 +80,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.complianceChange",
       "id": "fcb57826-daaa-c8ac-bf9d-137b74a90a14",
-      "createdDateTime": "String (timestamp)",
-      "isRevoked": "Boolean",
-      "revokedDateTime": "String (timestamp)"
+      "createdDateTime": "2020-06-09T10:00:00Z",
+      "isRevoked": true,
+      "revokedDateTime": "2020-06-09T11:00:00Z",
+      "updatePolicy": { "@odata.id": "updatePolicies/1" }
     }
   ]
 }

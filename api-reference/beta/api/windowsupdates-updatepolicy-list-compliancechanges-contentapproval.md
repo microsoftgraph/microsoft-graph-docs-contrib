@@ -1,9 +1,9 @@
 ---
 title: "List contentApprovals"
 description: "Get a list of the contentApproval objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ryanwilliams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.windowsUpdates.contentApproval not found
+GET /admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges/microsoft.graph.windowsUpdates.contentApproval
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.windowsUpdates.contentApproval not found
+GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges/microsoft.graph.windowsUpdates.contentApproval
 ```
 
 
@@ -80,15 +80,28 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
       "id": "bba2a340-1e32-b5ed-186e-678e16033319",
-      "createdDateTime": "String (timestamp)",
-      "isRevoked": "Boolean",
-      "revokedDateTime": "String (timestamp)",
+      "createdDateTime": "2020-06-09T10:00:00Z",
+      "isRevoked": false,
+      "updatePolicy": { "@odata.id": "updatePolicies/1" },
       "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.deployableContent"
+          "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+          "catalogEntry": { "@odata.id": "catalog/entries/1" }
       },
       "deploymentSettings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
-      }
+        "contentApplicability": {
+          "offerWhileRecommendedBy": ["Microsoft"]
+        },
+        "schedule": {
+          "startDateTime": "2020-06-09T10:00:00Z",
+          "gradualRollout": {
+            "@odata.type": "#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings",
+            "endDateTime": "2020-06-16T10:00:00Z"
+          }
+        }
+      },
+      "deployments": [
+          { "@odata.id": "deployments/1" }
+      ]
     }
   ]
 }

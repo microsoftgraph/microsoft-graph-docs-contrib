@@ -1,9 +1,9 @@
 ---
 title: "Update contentApproval"
 description: "Update the properties of a contentApproval object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ryanwilliams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH ** Entity URI for microsoft.graph.windowsUpdates.contentApproval not found
+PATCH /admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges/{complianceChangeId}
 ```
 
 ## Request headers
@@ -43,14 +43,11 @@ PATCH ** Entity URI for microsoft.graph.windowsUpdates.contentApproval not found
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md). Optional.|
-|isRevoked|Boolean|**TODO: Add Description** Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md). Optional.|
-|revokedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [complianceChange](../resources/windowsupdates-compliancechange.md). Optional.|
-|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|**TODO: Add Description** Required.|
-|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|**TODO: Add Description** Required.|
+|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [catalogContent](../resources/windowsupdates-catalogcontent.md)|
+|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings governing how to deploy **content**.|
+|isRevoked|Boolean|Set to **true** to revoke the change and prevent further application. Revoking a compliance change is a final action.|
 
 
 
@@ -68,20 +65,13 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta** Entity URI for microsoft.graph.windowsUpdates.contentApproval not found
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges/{complianceChangeId}
 Content-Type: application/json
-Content-length: 341
+Content-length: 91
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
-  "isRevoked": "Boolean",
-  "revokedDateTime": "String (timestamp)",
-  "content": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deployableContent"
-  },
-  "deploymentSettings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
-  }
+  "isRevoked": true
 }
 ```
 
@@ -101,15 +91,32 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
   "id": "bba2a340-1e32-b5ed-186e-678e16033319",
-  "createdDateTime": "String (timestamp)",
-  "isRevoked": "Boolean",
-  "revokedDateTime": "String (timestamp)",
+  "@odata.context": "https://graph.microsoft.com/beta/admin/windows/updates/$metadata#complianceChange/$entity",
+  "@odata.type": "#microsoft.graph.windowsUpdates.contentApproval",
+  "id": "bba2a340-1e32-b5ed-186e-678e16033319",
+  "createdDateTime": "2020-06-09T10:00:00Z",
+  "isRevoked": true,
+  "revokedDateTime": "2020-06-09T11:00:00Z",
+  "updatePolicy": { "@odata.id": "updatePolicies/1" },
   "content": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deployableContent"
+      "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+      "catalogEntry": { "@odata.id": "catalog/entries/1" }
   },
   "deploymentSettings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
-  }
+    "contentApplicability": {
+      "offerWhileRecommendedBy": ["Microsoft"]
+    },
+    "schedule": {
+      "startDateTime": "2020-06-09T10:00:00Z",
+      "gradualRollout": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings",
+        "endDateTime": "2020-06-16T10:00:00Z"
+      }
+    }
+  },
+  "deployments": [
+      { "@odata.id": "deployments/1" }
+  ]
 }
 ```
 
