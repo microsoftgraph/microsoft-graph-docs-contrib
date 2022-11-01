@@ -22,12 +22,9 @@ Entity that governs the deployment of content to an associated deploymentAudienc
 |[Create updatePolicy](../api/adminwindowsupdates-post-updatepolicies.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|Create a new [updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
 |[Get updatePolicy](../api/windowsupdates-updatepolicy-get.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|Read the properties and relationships of an [updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
 |[Update updatePolicy](../api/windowsupdates-updatepolicy-update.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|Update the properties of an [updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
-|[Delete updatePolicy](../api/adminwindowsupdates-delete-updatepolicies.md)|None|Delete an [updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
-|[List deploymentAudience](../api/windowsupdates-deployment-list-audience.md)|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md) collection|Get the deploymentAudience resources from the audience navigation property.|
-|[Add deploymentAudience](../api/windowsupdates-updatepolicy-post-audience.md)|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Add audience by posting to the audience collection.|
-|[Remove deploymentAudience](../api/windowsupdates-updatepolicy-delete-audience.md)|None|Remove a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.|
+|[Delete updatePolicy](../api/windowsupdates-updatepolicy-delete.md)|None|Delete an [updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
 |[List complianceChanges](../api/windowsupdates-updatepolicy-list-compliancechanges.md)|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|Get the complianceChange resources from the complianceChanges navigation property.|
-|[Create complianceChange](../api/windowsupdates-updatepolicy-post-compliancechanges.md)|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md)|Create a new complianceChange object.|
+|[Create contentApproval](../api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md)|Create a new complianceChange object.|
 
 ## Properties
 |Property|Type|Description|
