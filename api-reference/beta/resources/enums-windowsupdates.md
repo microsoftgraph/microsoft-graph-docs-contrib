@@ -107,6 +107,7 @@ Namespace: microsoft.graph.windowsUpdates
 |feature|
 |quality|
 |unknownFutureValue|
+|driver|
 
 <!--
 {
