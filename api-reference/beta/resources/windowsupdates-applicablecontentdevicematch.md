@@ -7,7 +7,7 @@ ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
-# catalogContent resource type
+# applicableContentDeviceMatch resource type
 
 Namespace: microsoft.graph.windowsUpdates
 
