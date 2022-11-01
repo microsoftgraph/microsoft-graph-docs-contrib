@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|audience|[microsoft.graph.deployableAudience](../resources/windowsupdates-deployableaudience.md)|Specifies the audience to target.|
+|audience|[microsoft.graph.windowsupdates.deployableAudience](../resources/windowsupdates-deployableaudience.md)|Specifies the audience to target.|
 |content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [catalogContent](../resources/windowsupdates-catalogcontent.md)|
 
 

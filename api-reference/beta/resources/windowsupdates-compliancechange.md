@@ -20,10 +20,10 @@ This is an abstract type.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List complianceChanges](../api/windowsupdates-updatepolicy-list-compliancechanges.md)|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|Get a list of the [complianceChange](../resources/windowsupdates-compliancechange.md) objects and their properties.|
-|[Get complianceChange](../api/windowsupdates-compliancechange-get.md)|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md)|Read the properties and relationships of a [complianceChange](../resources/windowsupdates-compliancechange.md) object.|
-|[Update complianceChange](../api/windowsupdates-compliancechange-update.md)|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md)|Update the properties of a [complianceChange](../resources/windowsupdates-compliancechange.md) object.|
-|[Delete complianceChange](../api/windowsupdates-compliancechange-delete.md)|None|Delete a [complianceChange](../resources/windowsupdates-compliancechange.md) object.|
+|[List complianceChanges](../api/windowsupdates-updatepolicy-list-compliancechanges.md)|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|Get a list of the [microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) objects and their properties.|
+|[Get complianceChange](../api/windowsupdates-compliancechange-get.md)|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md)|Read the properties and relationships of a [microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) object.|
+|[Update complianceChange](../api/windowsupdates-compliancechange-update.md)|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md)|Update the properties of a [microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) object.|
+|[Delete complianceChange](../api/windowsupdates-compliancechange-delete.md)|None|Delete a [microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +36,7 @@ This is an abstract type.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|updatePolicy|[updatePolicy](../resources/windowsupdates-updatepolicy.md)|The policy this compliance change is a member of.|
+|updatePolicy|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|The policy this compliance change is a member of.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

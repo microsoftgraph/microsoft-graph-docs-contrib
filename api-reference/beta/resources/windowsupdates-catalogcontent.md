@@ -25,7 +25,7 @@ Inherits from [deployableContent](../resources/windowsupdates-deployablecontent.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|catalogEntry|[catalogEntry](../resources/windowsupdates-catalogentry.md)|Metadata for a piece of content that you can approve for deployment.|
+|catalogEntry|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md)|Metadata for a piece of content that you can approve for deployment.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

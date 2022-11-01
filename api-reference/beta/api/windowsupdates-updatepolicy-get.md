@@ -89,7 +89,7 @@ Content-Type: application/json
     ],
     "complianceChangeRules": [
       {
-        "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule"
+        "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule",
         "contentFilter": {
             "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
         },
@@ -100,7 +100,7 @@ Content-Type: application/json
       }
     ],
     "deploymentSettings": {
-      "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
+      "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
       "schedule": {
         "gradualRollout": {
           "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",

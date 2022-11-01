@@ -46,7 +46,7 @@ You can specify the following properties when creating an **updatePolicy**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|audience|[microsoft.graph.deployableAudience](../resources/windowsupdates-deployableaudience.md)|Specifies the audience to target.|
+|audience|[microsoft.graph.windowsupdates.deployableAudience](../resources/windowsupdates-deployableaudience.md)|Specifies the audience to target.|
 |complianceChanges|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|Compliance changes like content approvals which result in the automatic creation of deployments using the policy's **audience** and **deploymentSettings**.|
 |complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|Rules governing the automatic creation of compliance changes.|
 |deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings governing how to deploy **content**.|
@@ -81,7 +81,7 @@ Content-length: 835
   ],
   "complianceChangeRules": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule"
+      "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule",
       "contentFilter": {
         "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
       },
@@ -89,7 +89,7 @@ Content-length: 835
     }
   ],
   "deploymentSettings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
     "schedule": {
       "gradualRollout": {
         "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",

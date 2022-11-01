@@ -40,20 +40,20 @@ POST /admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [contentApproval](../resources/windowsupdates-contentApproval.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentApproval.md) object.
 
 You can specify the following properties when creating a **contentApproval**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [catalogContent](../resources/windowsupdates-catalogcontent.md)|
+|content|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [microsoft.graph.windowsUpdates.catalogContent](../resources/windowsupdates-catalogcontent.md)|
 |deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings governing how to deploy **content**.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [contentApproval](../resources/windowsupdates-contentapproval.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md) object in the response body.
 
 ## Examples
 

@@ -18,11 +18,11 @@ Entity that governs the deployment of content to an associated deploymentAudienc
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List updatePolicies](../api/adminwindowsupdates-list-updatepolicies.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) collection|Get a list of the [updatePolicy](../resources/windowsupdates-updatepolicy.md) objects and their properties.|
-|[Create updatePolicy](../api/adminwindowsupdates-post-updatepolicies.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|Create a new [updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
-|[Get updatePolicy](../api/windowsupdates-updatepolicy-get.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|Read the properties and relationships of an [updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
-|[Update updatePolicy](../api/windowsupdates-updatepolicy-update.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|Update the properties of an [updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
-|[Delete updatePolicy](../api/windowsupdates-updatepolicy-delete.md)|None|Delete an [updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
+|[List updatePolicies](../api/adminwindowsupdates-list-updatepolicies.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) collection|Get a list of the [microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) objects and their properties.|
+|[Create updatePolicy](../api/adminwindowsupdates-post-updatepolicies.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|Create a new [microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
+|[Get updatePolicy](../api/windowsupdates-updatepolicy-get.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|Read the properties and relationships of an [microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
+|[Update updatePolicy](../api/windowsupdates-updatepolicy-update.md)|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md)|Update the properties of an [microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
+|[Delete updatePolicy](../api/windowsupdates-updatepolicy-delete.md)|None|Delete an [microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) object.|
 |[List complianceChanges](../api/windowsupdates-updatepolicy-list-compliancechanges.md)|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|Get the complianceChange resources from the complianceChanges navigation property.|
 |[Create contentApproval](../api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md)|[microsoft.graph.windowsUpdates.contentApproval](../resources/windowsupdates-contentapproval.md)|Create a new complianceChange object.|
 
@@ -37,7 +37,7 @@ Entity that governs the deployment of content to an associated deploymentAudienc
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|audience|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Specifies the audience to target.|
+|audience|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Specifies the audience to target.|
 |complianceChanges|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|collection|Compliance changes like content approvals which result in the automatic creation of deployments using the policy's **audience** and **deploymentSettings**.|
 
 ## JSON representation

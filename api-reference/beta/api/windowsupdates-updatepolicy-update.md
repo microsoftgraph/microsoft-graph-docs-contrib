@@ -45,7 +45,7 @@ PATCH /admin/windows/updates/updatePolicies/{updatePolicyId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|audience|[microsoft.graph.deployableAudience](../resources/windowsupdates-deployableaudience.md)|Specifies the audience to target. Optional.|
+|audience|[microsoft.graph.windowsUpdates.deployableAudience](../resources/windowsupdates-deployableaudience.md)|Specifies the audience to target. Optional.|
 |complianceChanges|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|Compliance changes like content approvals which result in the automatic creation of deployments using the policy's **audience** and **deploymentSettings**. Optional.|
 |complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|Rules governing the automatic creation of compliance changes. Optional.|
 |deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings governing how to deploy **content**. Optional.|
@@ -54,7 +54,7 @@ PATCH /admin/windows/updates/updatePolicies/{updatePolicyId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [updatePolicy](../resources/windowsupdates-updatepolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) object in the response body.
 
 ## Examples
 
@@ -73,7 +73,7 @@ Content-length: 382
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
   "deploymentSettings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
     "schedule": {
       "gradualRollout": {
         "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
@@ -122,7 +122,7 @@ Content-Type: application/json
     }
   ],
   "deploymentSettings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
     "schedule": {
       "gradualRollout": {
         "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",

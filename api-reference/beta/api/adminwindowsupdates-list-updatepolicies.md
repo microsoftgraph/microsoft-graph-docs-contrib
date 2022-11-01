@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [updatePolicy](../resources/updatepolicy.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [updatePolicy](../resources/windowsupdates-updatePolicy.md) objects in the response body.
 
 ## Examples
 
@@ -90,7 +90,7 @@ Content-Type: application/json
       ],
       "complianceChangeRules": [
         {
-          "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule"
+          "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule",
           "contentFilter": {
               "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
           },
@@ -101,7 +101,7 @@ Content-Type: application/json
         }
       ],
       "deploymentSettings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "schedule": {
           "gradualRollout": {
             "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
