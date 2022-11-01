@@ -139,7 +139,7 @@ Content-Type: application/json
     }
   ],
   "deploymentSettings": {
-    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings"
+    "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
     "schedule": {
       "gradualRollout": {
         "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
