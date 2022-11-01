@@ -1,7 +1,7 @@
 ---
 title: "Update contentApproval"
 description: "Update the properties of a contentApproval object."
-author: "ryanwilliams"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

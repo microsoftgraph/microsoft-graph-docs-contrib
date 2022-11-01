@@ -1,7 +1,7 @@
 ---
 title: "Delete contentApproval"
 description: "Delete a contentApproval object."
-author: "ryanwilliams"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

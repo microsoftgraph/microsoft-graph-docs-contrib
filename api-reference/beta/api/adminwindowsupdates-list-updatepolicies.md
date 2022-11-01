@@ -1,7 +1,7 @@
 ---
 title: "List updatePolicies"
 description: "Get a list of updatePolicy objects and their properties."
-author: "ryanwilliams"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

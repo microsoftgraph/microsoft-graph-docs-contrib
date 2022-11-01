@@ -1,7 +1,7 @@
 ---
 title: "Get complianceChange"
 description: "Read the properties and relationships of a complianceChange object."
-author: "ryanwilliams"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

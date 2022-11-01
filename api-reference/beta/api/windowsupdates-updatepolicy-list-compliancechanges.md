@@ -1,7 +1,7 @@
 ---
 title: "List complianceChanges"
 description: "Get a list of the complianceChange objects and their properties."
-author: "ryanwilliams"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

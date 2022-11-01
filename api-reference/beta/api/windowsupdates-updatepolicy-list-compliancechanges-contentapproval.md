@@ -1,7 +1,7 @@
 ---
 title: "List contentApprovals"
 description: "Get a list of the contentApproval objects and their properties."
-author: "ryanwilliams"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
