@@ -13183,6 +13183,8 @@ items:
               href: api/accesspackage-delete-incompatiblegroup.md
             - name: List access packages incompatible with
               href: api/accesspackage-list-accesspackagesincompatiblewith.md
+            - name: Move to catalog
+              href: api/accesspackage-movetocatalog.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:

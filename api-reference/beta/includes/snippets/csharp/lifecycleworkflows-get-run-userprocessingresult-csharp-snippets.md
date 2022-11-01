@@ -8,6 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var userProcessingResult = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{identityGovernance.workflow-id}"].Runs["{identityGovernance.run-id}"].UserProcessingResults["{identityGovernance.userProcessingResult-id}"]
 	.Request()
+	.Select("id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,subject")
 	.GetAsync();
 
 ```
