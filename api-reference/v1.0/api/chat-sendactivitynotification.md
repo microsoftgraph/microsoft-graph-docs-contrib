@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
 |previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams will only show first 150 characters.|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
-|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) and [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |
+|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. For more details, see [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) and [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityURL`:
 
@@ -388,13 +388,16 @@ HTTP/1.1 204 No Content
 
 ### Example 5: Notify the chat members about a task created in a chat
 
-This example shows how you can send an activity feed notification to all chat members. This example is similar to previous examples. However, in this case, the `recipient` is a [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Note that the `chatId` specified in the `recipient` must match the `chatId` specified in the request URL.
+The following example shows how you can send an activity feed notification to all chat members. This example is similar to previous examples. However, in this case, the **recipient** is a [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Note that the **chatId** specified in the **recipient** must match the **chatId** specified in the request URL.
 
 #### Request
 
+The following example shows the request.
+
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification_4"
+  "name": "chat_sendactivitynotification_5",
+  "sampleKeys": ["19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"]
 }
 -->
 
