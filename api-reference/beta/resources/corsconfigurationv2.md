@@ -1,6 +1,6 @@
 ---
-title: "corsConfiguration resource type"
-description: "Represents the CORS settings for an on-premises application segment published via Application Proxy."
+title: "corsConfigurationv2 resource type"
+description: "Represents the CORS settings for an on-premises web application segment published via Application Proxy."
 ms.localizationpriority: medium
 author: "dhruvinshah"
 ms.prod: "applications"
