@@ -1,9 +1,9 @@
 ---
 title: "windowsUpdateFilter resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "A filter to determine which Windows Update content matches the rule on an ongoing basis"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A filter to determine which Windows Update content matches the rule on an ongoing basis
+
 This is an abstract type.
 
 
