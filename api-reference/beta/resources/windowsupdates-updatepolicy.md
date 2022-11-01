@@ -1,9 +1,9 @@
 ---
 title: "updatePolicy resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Entity that governs the deployment of content to an associated deploymentAudience."
+author: "*ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Entity that governs the deployment of content to an associated deploymentAudience.
 
 ## Methods
 |Method|Return type|Description|
@@ -32,16 +32,16 @@ Namespace: microsoft.graph.windowsUpdates
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
+|complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|collection|Rules governing the automatic creation of compliance changes.|
+|createdDateTime|DateTimeOffset|The date and time when created|
+|deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings governing how to deploy **content**.|
+|id|String|Unique identifier.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|audience|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|**TODO: Add Description**|
-|complianceChanges|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|**TODO: Add Description**|
+|audience|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Specifies the audience to target.|
+|complianceChanges|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|collection|Compliance changes like content approvals which result in the automatic creation of deployments using the policy's **audience** and **deploymentSettings**.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
