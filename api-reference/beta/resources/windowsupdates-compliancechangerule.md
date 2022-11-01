@@ -1,9 +1,9 @@
 ---
 title: "complianceChangeRule resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Rules governing the automatic creation of compliance changes."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,16 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Rules governing the automatic creation of compliance changes.
+
 This is an abstract type.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|lastEvaluatedDateTime|DateTimeOffset|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|The date and time when created.|
+|lastEvaluatedDateTime|DateTimeOffset|The date and time the rule was last evaluated.|
+|lastModifiedDateTime|DateTimeOffset|The date and time last modified.|
 
 ## Relationships
 None.
