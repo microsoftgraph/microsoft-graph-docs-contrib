@@ -1,7 +1,7 @@
 ---
 title: "deploymentState resource type"
 description: "Describes and controls the current state of a deployment."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

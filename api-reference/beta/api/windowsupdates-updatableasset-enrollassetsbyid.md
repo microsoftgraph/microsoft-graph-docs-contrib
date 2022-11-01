@@ -1,7 +1,7 @@
 ---
 title: "updatableAsset: enrollAssetsById"
 description: "Enroll updatableAsset resources of the same type in update management by the deployment service."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

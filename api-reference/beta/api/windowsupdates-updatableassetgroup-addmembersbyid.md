@@ -1,7 +1,7 @@
 ---
 title: "updatableAssetGroup: addMembersById"
 description: "Add members of the same type to an updatableAssetGroup."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

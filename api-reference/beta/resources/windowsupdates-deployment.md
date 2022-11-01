@@ -1,7 +1,7 @@
 ---
 title: "deployment resource type"
 description: "Represents the deployment of content to a set of devices."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

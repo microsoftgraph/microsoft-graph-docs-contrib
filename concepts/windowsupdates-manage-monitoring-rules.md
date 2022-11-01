@@ -1,7 +1,7 @@
 ---
 title: "Manage monitoring rules using the Windows Update for Business deployment service"
 description: "Use the Windows Update for Business deployment service to create a monitoring rule or resume deployments paused by a monitoring rule."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType

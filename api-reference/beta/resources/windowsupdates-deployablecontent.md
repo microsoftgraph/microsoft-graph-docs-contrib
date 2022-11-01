@@ -1,7 +1,7 @@
 ---
 title: "deployableContent resource type"
 description: "Represents content that is deployable by the service."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "Delete deployment"
 description: "Delete a deployment object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "catalogEntry resource type"
 description: "Metadata for a piece of content that you can approve for deployment."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

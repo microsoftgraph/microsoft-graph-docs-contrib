@@ -1,7 +1,7 @@
 ---
 title: "resourceConnection resource type"
 description: "Represents connections to external resources from which more specialized connections will be derived."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

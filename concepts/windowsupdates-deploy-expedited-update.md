@@ -1,7 +1,7 @@
 ---
 title: "Deploy an expedited security update using the Windows Update for Business deployment service"
 description: "Follow these steps to deploy expedited Windows security updates to devices in an Azure AD tenant in case of an emergency by using the Windows Update for Business deployment service."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
