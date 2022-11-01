@@ -78,8 +78,10 @@ Content-type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "20H2"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.id": "catalog/entries/1"
+        }
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
@@ -125,8 +127,10 @@ Content-Type: application/json
         "effectiveSinceDate": "String (timestamp)"
     },
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "20H2"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.id": "catalog/entries/1"
+        }
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",

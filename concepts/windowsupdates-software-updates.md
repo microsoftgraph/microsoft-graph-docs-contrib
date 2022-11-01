@@ -70,7 +70,7 @@ Below are some examples of feature updates in the deployment service catalog.
 | Feature Update to Windows 10, version 1903 | 1903    |
 | Feature Update to Windows 10, version 1809 | 1809    |
 
-Once you identify a desired version, assign it as content to a deployment using a [featureUpdateReference](/graph/api/resources/windowsupdates-featureupdatereference) and specifying the **version** property.
+Once you identify a desired version, assign it as content to a deployment using [catalogContent](/graph/api/resources/windowsupdates-catalogcontent).
 
 ### Quality updates
 
@@ -97,7 +97,7 @@ The entries from the Microsoft Update Catalog corresponding to a quality update 
 | 2021-03 Cumulative Update for Windows 10 Version 1909 for x86-based Systems (KB5000808) | Windows 10, version 1903 and later | Security Updates |
 | 2021-03 Cumulative Update for Windows 10 Version 1809 for x64-based Systems (KB5000822) | Windows 10, Windows 10 LTSB        | Security Updates |
 
-Once you have identified the desired update, assign it as content to a deployment using a [qualityUpdateReference](/graph/api/resources/windowsupdates-qualityupdatereference) and specifying the **releaseDateTime** and **classification** properties.
+Once you have identified the desired update, assign it as content to a deployment using [catalogContent](/graph/api/resources/windowsupdates-catalogContent).
 
 ## Examples
 

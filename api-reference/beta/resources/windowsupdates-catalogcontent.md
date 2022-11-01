@@ -1,9 +1,9 @@
 ---
 title: "catalogContent resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents content that can be deployed from the catalog."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents content that can be deployed from the catalog.
 
 
 Inherits from [deployableContent](../resources/windowsupdates-deployablecontent.md).
@@ -25,7 +25,7 @@ Inherits from [deployableContent](../resources/windowsupdates-deployablecontent.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|catalogEntry|[catalogEntry](../resources/windowsupdates-catalogentry.md)|**TODO: Add Description**|
+|catalogEntry|[catalogEntry](../resources/windowsupdates-catalogentry.md)|Metadata for a piece of content that you can approve for deployment.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -36,7 +36,10 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent"
+  "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+  "catalogEntry": {
+    "@odata.type": "#microsoft.graph.windowsUpdates.catalogEntry"
+  }
 }
 ```
 

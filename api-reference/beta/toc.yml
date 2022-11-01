@@ -18868,10 +18868,8 @@ items:
             href: api/windowsupdates-deployment-delete.md
           - name: Deployable content
             items:
-            - name: Expedited quality update reference
-              href: resources/windowsupdates-expeditedqualityupdatereference.md
-            - name: Feature update reference
-              href: resources/windowsupdates-featureupdatereference.md
+            - name: Catalog content
+              href: resources/windowsupdates-catalogContent.md
           - name: Deployment audience
             items:
             - name: Deployment audience

@@ -98,11 +98,16 @@ Content-type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.expeditedQualityUpdateReference",
-        "releaseDate": "YYYY-MM-DD"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.id": "catalog/entries/1"
+        }
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "expedite": {
+            "isExpedited": true
+        },
         "userExperience": {
             "daysUntilForcedReboot": 2
         }
@@ -132,13 +137,16 @@ Content-Type: application/json
         "effectiveSinceDate": "String (timestamp)"
     },
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.expeditedQualityUpdateReference",
-        "releaseDate": "YYYY-MM-DDT00:00:00Z",
-        "classification": "security",
-        "equivalentContent": "latestSecurity"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.id": "catalog/entries/1"
+        }
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "expedite": {
+            "isExpedited": true
+        },
         "userExperience": {
             "daysUntilForcedReboot": 2
         },
