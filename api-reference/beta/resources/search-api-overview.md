@@ -122,7 +122,7 @@ The [query](../api/search-query.md) method lets you customize the collapse prope
 
 Note that collapsing results is currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [drive](drive.md), [list](list.md), [site](site.md).
 
-The properties on which the collapse clause are applied need to be sortable/refinable in the SharePoint [search schema](/sharepoint/manage-search-schema). If each limit size of property specified in the request is not satisfied with decreased by level, the response will return an error, `HTTP 400 Bad Request`.
+The properties on which the collapse clause are applied need to be queryable and either sortable or refinable in the SharePoint [search schema](/sharepoint/manage-search-schema). For multi-level collapse, each subsequent property limit size specified in a multi-level request should be less than or equal to the previous, otherwise the response will return an error, `HTTP 400 Bad Request`.
 
 For examples that show how to collapse results, see [collapse search results](/graph/search-concept-collapse).
 
