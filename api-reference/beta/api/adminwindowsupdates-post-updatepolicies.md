@@ -83,7 +83,7 @@ Content-length: 835
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.contentApprovalRule"
       "contentFilter": {
-          "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
+        "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateFilter"
       },
       "durationBeforeDeploymentStart": "P7D"
     }
