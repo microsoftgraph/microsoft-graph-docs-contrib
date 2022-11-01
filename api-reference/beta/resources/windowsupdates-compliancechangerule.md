@@ -1,6 +1,6 @@
 ---
 title: "complianceChangeRule resource type"
-description: "Rules governing the automatic creation of compliance changes."
+description: "Rule governing the automatic creation of compliance changes."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rules governing the automatic creation of compliance changes.
+Rule governing the automatic creation of compliance changes.
 
 This is an abstract type.
 
