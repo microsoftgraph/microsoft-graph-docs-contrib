@@ -18851,6 +18851,8 @@ items:
             href: resources/windowsupdates-featureupdatecatalogentry.md
           - name: Quality update catalog entry
             href: resources/windowsupdates-qualityupdatecatalogentry.md
+          - name: Driver update catalog entry
+            href: resources/windowsupdates-driverupdatecatalogentry.md
           - name: List catalog entries
             href: api/windowsupdates-catalog-list-entries.md
         - name: Deployment
@@ -18869,11 +18871,16 @@ items:
           - name: Deployable content
             items:
             - name: Catalog content
-              href: resources/windowsupdates-catalogContent.md
+              href: resources/windowsupdates-catalogcontent.md
           - name: Deployment audience
+            href: resources/windowsupdates-deploymentaudience.md
             items:
-            - name: Deployment audience
-              href: resources/windowsupdates-deploymentaudience.md
+            - name: List deployment audience
+              href: api/adminwindowsupdates-list-deploymentaudiences.md
+            - name: Create deployment audience
+              href: api/adminwindowsupdates-post-deploymentaudiences.md
+            - name: Get deployment audience
+              href: api/windowsupdates-deploymentaudience-get.md
             - name: List members
               href: api/windowsupdates-deploymentaudience-list-members.md
             - name: List exclusions
@@ -18882,6 +18889,44 @@ items:
               href: api/windowsupdates-deploymentaudience-updateaudience.md
             - name: Update by ID
               href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+            - name: Delete deployment audience
+              href: api/windowsupdates-deploymentaudience-delete.md
+        - name: Update policy
+          href: resources/windowsupdates-updatepolicy.md
+          items:
+          - name: List
+            href: api/adminwindowsupdates-list-updatepolicies.md
+          - name: Create
+            href: api/adminwindowsupdates-post-updatepolicies.md
+          - name: Get
+            href: api/windowsupdates-updatepolicy-get.md
+          - name: Update
+            href: api/windowsupdates-updatepolicy-update.md
+          - name: Delete
+            href: api/windowsupdates-updatepolicy-delete.md
+          - name: Compliance change
+            items:
+            - name: List
+              href: api/windowsupdates-updatepolicy-list-compliancechanges.md
+            - name: Get
+              href: api/windowsupdates-compliancechange-get.md
+            - name: Update
+              href: api/windowsupdates-compliancechange-update.md
+            - name: Delete
+              href: api/windowsupdates-compliancechange-delete.md
+            - name: Content approval
+              href: resources/windowsupdates-contentapproval.md
+              items:
+              - name: List
+                href: api/windowsupdates-updatepolicy-list-compliancechanges-contentapproval.md
+              - name: Create
+                href: api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval.md
+              - name: Get
+                href: api/windowsupdates-contentapproval-get.md
+              - name: Update
+                href: api/windowsupdates-contentapproval-update.md
+              - name: Delete
+                href: api/windowsupdates-contentapproval-delete.md
         - name: Updatable asset
           href: resources/windowsupdates-updatableasset.md
           items:
