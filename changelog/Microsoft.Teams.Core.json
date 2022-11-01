@@ -5599,7 +5599,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "pinnedMessages",
           "ChangeType": "Addition",
-          "Description": "Added the **pinnedMessages** relationship to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the **pinnedMessages** relationship to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         },
         {
@@ -5607,7 +5607,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pinnedChatMessageInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [pinnedChatMessageInfo](https://docs.microsoft.com/en-us/graph/api/resources/pinnedChatMessageInfo?view=graph-rest-1.0) resource and supported methods.",
+          "Description": "Added the [pinnedChatMessageInfo](https://learn.microsoft.com/en-us/graph/api/resources/pinnedChatMessageInfo?view=graph-rest-1.0) resource and supported methods.",
           "Target": "pinnedChatMessageInfo"
         },
         {
@@ -5615,7 +5615,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "messagePinnedEventMessageDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [messagePinnedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [messagePinnedEventMessageDetail](https://learn.microsoft.com/en-us/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-1.0) resource type.",
           "Target": "messagePinnedEventMessageDetail"
         },
         {
@@ -5623,7 +5623,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "messageUnpinnedEventMessageDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [messageUnpinnedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [messageUnpinnedEventMessageDetail](https://learn.microsoft.com/en-us/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-1.0) resource type.",
           "Target": "messageUnpinnedEventMessageDetail"
         }
       ],
@@ -6001,7 +6001,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sendActivityNotificationToRecipients",
           "ChangeType": "Addition",
-          "Description": "Added the [sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/teamwork-sendActivityNotificationToRecipients?view=graph-rest-v1.0) method to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [sendActivityNotificationToRecipients](https://learn.microsoft.com/en-us/graph/api/teamwork-sendActivityNotificationToRecipients?view=graph-rest-v1.0) method to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
           "Target": "teamwork"
         }
       ],
@@ -6085,27 +6085,27 @@
     {
       "ChangeList": [
         {
-          "Id": "825762b0-5bd9-4838-99b4-74fa6adebf12",
+          "Id": "ba8b5322-2b16-4853-b0e4-ac3ba9fd2615",
           "ApiChange": "Resource",
           "ChangedApiName": "chatMembersNotificationRecipient",
           "ChangeType": "Addition",
-          "Description": "Added the [chatMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/chatMembersNotificationRecipient?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [chatMembersNotificationRecipient](https://learn.microsoft.com/graph/api/resources/chatMembersNotificationRecipient?view=graph-rest-v1.0) resource type.",
           "Target": "chatMembersNotificationRecipient"
         },
         {
-          "Id": "daf9eab3-3479-4fb9-a8fe-3c07ea8acfb4",
+          "Id": "ba8b5322-2b16-4853-b0e4-ac3ba9fd2615",
           "ApiChange": "Resource",
           "ChangedApiName": "channelMembersNotificationRecipient",
           "ChangeType": "Addition",
-          "Description": "Added the [channelMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/channelMembersNotificationRecipient?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [channelMembersNotificationRecipient](https://learn.microsoft.com/graph/api/resources/channelMembersNotificationRecipient?view=graph-rest-v1.0) resource type.",
           "Target": "channelMembersNotificationRecipient"
         },
         {
-          "Id": "1c31d611-cf41-4938-a81f-3e97502c4d92",
+          "Id": "ba8b5322-2b16-4853-b0e4-ac3ba9fd2615",
           "ApiChange": "Resource",
           "ChangedApiName": "teamMembersNotificationRecipient",
           "ChangeType": "Addition",
-          "Description": "Added the [teamMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/teammembersnotificationrecipient?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [teamMembersNotificationRecipient](https://learn.microsoft.com/graph/api/resources/teammembersnotificationrecipient?view=graph-rest-v1.0) resource type.",
           "Target": "teamMembersNotificationRecipient"
         }
       ],
