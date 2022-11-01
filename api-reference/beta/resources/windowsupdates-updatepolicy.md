@@ -29,7 +29,7 @@ Entity that governs the deployment of content to an associated deploymentAudienc
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|collection|Rules governing the automatic creation of compliance changes.|
+|complianceChangeRules|[microsoft.graph.windowsUpdates.complianceChangeRule](../resources/windowsupdates-compliancechangerule.md) collection|Rules governing the automatic creation of compliance changes.|
 |createdDateTime|DateTimeOffset|The date and time when created.|
 |deploymentSettings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings governing how to deploy **content**.|
 |id|String|Unique identifier.|
@@ -38,7 +38,7 @@ Entity that governs the deployment of content to an associated deploymentAudienc
 |Relationship|Type|Description|
 |:---|:---|:---|
 |audience|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Specifies the audience to target.|
-|complianceChanges|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|collection|Compliance changes like content approvals which result in the automatic creation of deployments using the policy's **audience** and **deploymentSettings**.|
+|complianceChanges|[microsoft.graph.windowsUpdates.complianceChange](../resources/windowsupdates-compliancechange.md) collection|Compliance changes like content approvals which result in the automatic creation of deployments using the policy's **audience** and **deploymentSettings**.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
