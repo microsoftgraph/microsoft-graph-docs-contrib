@@ -1,9 +1,9 @@
 ---
 title: "contentApprovalRule resource type"
-description: "**TODO: Add Description**"
+description: "Rules governing the automatic creation of content approvals."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "w10"
 doc_type: resourcePageType
 ---
 
@@ -13,19 +13,18 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Rules governing the automatic creation of content approvals.
 
 Inherits from [complianceChangeRule](../resources/windowsupdates-compliancechangerule.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|contentFilter|[microsoft.graph.windowsUpdates.contentFilter](../resources/windowsupdates-contentfilter.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [complianceChangeRule](../resources/windowsupdates-compliancechangerule.md).|
-|durationBeforeDeploymentStart|Duration|**TODO: Add Description**|
-|lastEvaluatedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [complianceChangeRule](../resources/windowsupdates-compliancechangerule.md).|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [complianceChangeRule](../resources/windowsupdates-compliancechangerule.md).|
+|contentFilter|[microsoft.graph.windowsUpdates.contentFilter](../resources/windowsupdates-contentfilter.md)|A filter to determine which content matches the rule on an ongoing basis.|
+|createdDateTime|DateTimeOffset|The date and time when created Inherited from [complianceChangeRule](../resources/windowsupdates-compliancechangerule.md).|
+|durationBeforeDeploymentStart|Duration|Time before the deployment starts.|
+|lastEvaluatedDateTime|DateTimeOffset|The date and time the rule was last evaluated. Inherited from [complianceChangeRule](../resources/windowsupdates-compliancechangerule.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time the rule was last modified. Inherited from [complianceChangeRule](../resources/windowsupdates-compliancechangerule.md).|
 
 ## Relationships
 None.
